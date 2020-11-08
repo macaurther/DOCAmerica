@@ -702,6 +702,8 @@ BeginTeam
 	AtWar=48, (Brennus)
 	RevealMap=0
 EndTeam
+BeginTeam
+EndTeam
 BeginPlayer
 	Team=0
 	LeaderType=LEADER_RAMESSES
@@ -1998,6 +2000,31 @@ BeginPlayer
 	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_RECIPROCITY
 	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_ANIMISM
 	CivicOption=CIVICOPTION_TERRITORY, Civic=CIVIC_SOVEREIGNTY
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=50
+	LeaderType=LEADER_WASHINGTON
+	LeaderName=Washington
+	CivDesc=Connecticut Peoples
+	CivShortDesc=TXT_KEY_CIV_CONNECTICUT_SHORT_DESC
+	CivAdjective=TXT_KEY_CIV_CONNECTICUT_ADJECTIVE
+	FlagDecal=Art/Interface/TeamColor/FlagDECAL_13Stars.dds
+	WhiteFlag=0
+	CivType=CIVILIZATION_CONNECTICUT
+	Color=PLAYERCOLOR_VERYDARK_BLUE
+	ArtStyle=ARTSTYLE_EUROPEAN
+	PlayableCiv=1
+	MinorNationStatus=0
+	StartingGold=1500
+	StartingEra=ERA_ANCIENT
+	RandomStartLocation=false
+	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_DEMOCRACY
+	CivicOption=CIVICOPTION_LEGITIMACY, Civic=CIVIC_CONSTITUTION
+	CivicOption=CIVICOPTION_SOCIETY, Civic=CIVIC_INDIVIDUALISM
+	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_FREE_ENTERPRISE
+	CivicOption=CIVICOPTION_RELIGION, Civic=CIVIC_TOLERANCE
+	CivicOption=CIVICOPTION_TERRITORY, Civic=CIVIC_ISOLATIONISM
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginMap

@@ -1364,7 +1364,8 @@ enum PlayerTypes				// Exposed to Python
 	INDEPENDENT2,
 	NATIVE,
 	CELTIA,
-	BARBARIAN
+	BARBARIAN,
+	CONNECTICUT
 };
 
 enum TraitTypes					// Exposed to Python
