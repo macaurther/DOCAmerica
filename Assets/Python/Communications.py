@@ -13,73 +13,23 @@ gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
 
 #scrambled pools
-tPool1 = (iEgypt, -1, -1, -1, -1, -1,
-	iChina, -1, -1, -1, -1, -1,
-	iBabylonia, -1, -1, -1, -1, -1,
-	iGreece, -1, -1, -1, -1, -1,
-	iIndia, -1, -1, -1, -1, -1)
+tPool1 = (
+	iEngland,)
 
-tPool2 = (iEgypt, -1, 
-	iCarthage, -1,
-	iChina, -1,
-	iRome, -1,
-	iBabylonia, iMaya,
-	iGreece, -1,
-	iIndia, iEthiopia,
-	iJapan, -1,	    
-	iPersia, -1)
+tPool2 = (
+	iSpain,)
 
 
-tPool3 = (iEgypt,  
-	iOttomans,
-	iEngland,
-	iInca,
-	iCarthage,
-	iRussia,
-	iChina,
-	iRome,	
-	iVikings,
-	iTurks,
-	iBabylonia,
-	iAztecs,
-	iEthiopia,
-	iNetherlands,
-	iItaly,
-	iMongolia,
-	iKhmer,
-	iIndonesia,
-	iSpain,
-	iGreece,
-	iMali,
-	iMaya,
-	iHolyRome,
-	iIndia,
+tPool3 = (
 	iAmerica,
-	iPortugal,	
-	iJapan,
-	iPersia,
 	iFrance,
-	iByzantium,
-	iKorea,
-	iMughals,
-	iGermany,
-	iThailand,
-	iTamils,
-	iPoland,
-	iMoors,
-	iCongo,
-	iTibet,
-	iBrazil,
-	iArgentina,
-	iCanada,
-	iPolynesia,
-	iHarappa)
+	iCanada,)
 
 
 class Communications:
 
 	def checkTurn(self, iGameTurn):
-		#self.decay(iIndia) #debug
+
 		if utils.isYearIn(-2250, -680):
 			i = (iGameTurn + data.iSeed/10 - 5) % len(tPool1)
 			iCiv = tPool1[i]
