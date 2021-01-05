@@ -16,12 +16,14 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-
+	(-3000, (84, 45), iIndependent, 'Onondaga', 2, iArcher, 3),			# Onondaga
+	(-3000, (92, 46), iIndependent2, 'Mexico City', 1, iArcher, 1),		# Mexico City
 )
 
 # do some research on dates here
 tMinorStates = (
-
+	(633, 1400, (113, 48), [iArcher, iSwordsman]),	# Powhatan
+	(-2500, -600, (88, 50), [iVulture]),		# Algonquin
 )
 
 #handicap level modifier
@@ -96,11 +98,6 @@ class Barbs:
 
 		if iGameTurn < getTurnForYear(tMinorCities[len(tMinorCities)-1][0])+10:
 			self.foundMinorCities(iGameTurn)
-
-		if iGameTurn == getTurnForYear(tBirth[iInca]):
-			if utils.getHumanID() == iInca:
-				utils.makeUnit(iAucac, iNative, (24, 26), 1)
-				utils.makeUnit(iAucac, iNative, (25, 23), 1)
 				
 	def foundMinorCities(self, iGameTurn):
 		for i in range(len(tMinorCities)):

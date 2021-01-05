@@ -128,7 +128,7 @@ def onCityRazed(iPlayer, city):
 	
 	if iOwner == iBarbarian: return
 
-	if utils.getHumanID() == iPlayer and iPlayer != iMongolia:
+	if utils.getHumanID() == iPlayer:
 		iRazePenalty = -10
 		if city.getHighestPopulation() < 5 and not city.isCapital():
 			iRazePenalty = -2 * city.getHighestPopulation()
@@ -285,7 +285,7 @@ def checkLostCoreCollapse(iPlayer):
 	
 	# completely pushed out of core: collapse
 	if len(lCities) == 0:
-		if iPlayer in [iPhoenicia, iKhmer] and not utils.isReborn(iPlayer):
+		if iPlayer in [] and not utils.isReborn(iPlayer):
 			pPlayer.setReborn(True)
 			return
 	
@@ -361,10 +361,6 @@ def checkStability(iPlayer, bPositive = False, iMaster = -1):
 			checkStability(iLoopPlayer, bPositive, iPlayer)
 		
 def getPossibleMinors(iPlayer):
-
-	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and iPlayer in [iMaya, iAztecs, iInca, iMali, iEthiopia, iCongo]:
-		return [iNative]
-		
 	if gc.getGame().getCurrentEra() <= iMedieval:
 		return [iBarbarian, iIndependent, iIndependent2]
 		
@@ -406,10 +402,6 @@ def secedeCities(iPlayer, lCities, bRazeMinorCities = False):
 							lRemovedCities.append(city)
 							continue
 							
-			# always raze Harappan cities
-			if iPlayer == iHarappa and utils.getHumanID() != iPlayer:
-				lRemovedCities.append(city)
-				continue
 						
 		lCededCities.append(city)
 			
@@ -579,15 +571,7 @@ def completeCollapse(iPlayer):
 	gc.getPlayer(iPlayer).killUnits()
 	utils.resetUHV(iPlayer)
 	data.players[iPlayer].iLastTurnAlive = gc.getGame().getGameTurn()
-		
-	# special case: Byzantine collapse: remove Christians in the Turkish core
-	if iPlayer == iByzantium:
-		utils.removeReligionByArea(Areas.getCoreArea(iOttomans), iOrthodoxy)
-		
-	# Chinese collapse: Mongolia's core moves south
-	if iPlayer == iChina:
-		utils.setReborn(iMongolia, True)
-		
+	
 	utils.debugTextPopup('Complete collapse: ' + gc.getPlayer(iPlayer).getCivilizationShortDescription(0))
 	
 	sText = localText.getText("TXT_KEY_STABILITY_COMPLETE_COLLAPSE", (gc.getPlayer(iPlayer).getCivilizationAdjective(0),))
@@ -636,11 +620,6 @@ def downgradeCottages(iPlayer):
 			elif iImprovement == iVillage: plot.setImprovementType(iCottage)
 			elif iImprovement == iHamlet: plot.setImprovementType(iCottage)
 			elif iImprovement == iCottage: plot.setImprovementType(-1)
-			
-			# Destroy all Harappan improvements
-			if iPlayer == iHarappa and utils.getHumanID() != iPlayer:
-				if iImprovement >= 0:
-					plot.setImprovementType(-1)
 				
 	if utils.getHumanID() == iPlayer:
 		sText = localText.getText("TXT_KEY_STABILITY_DOWNGRADE_COTTAGES", ())
@@ -734,7 +713,7 @@ def calculateStability(iPlayer):
 			else:
 				iCulturePercent = 100
 					
-			bExpansionExceptions = ((bHistorical and iPlayer == iMongolia) or bTotalitarianism)
+			bExpansionExceptions = bTotalitarianism
 		
 			# ahistorical tiles
 			if not bHistorical: iModifier += 2
@@ -746,10 +725,9 @@ def calculateStability(iPlayer):
 			if not bExpansionExceptions:
 				if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(25): iModifier += 1
 			
-			# not majority culture (includes foreign core and Persian UP)
-			if iPlayer != iPersia or pPersia.isReborn():
-				if iCulturePercent < 50: iModifier += 1
-				if iCulturePercent < 20: iModifier += 1
+			# MacAurther TODO: Is this needed? Was in with Persia
+			if iCulturePercent < 50: iModifier += 1
+			if iCulturePercent < 20: iModifier += 1
 			
 			# Courthouse
 			if city.hasBuilding(utils.getUniqueBuilding(iPlayer, iCourthouse)): iModifier -= 1
@@ -839,7 +817,6 @@ def calculateStability(iPlayer):
 	# recent expansion stability
 	iConquestModifier = 1
 	if bConquest: iConquestModifier += 1
-	if iPlayer == iPersia and not pPersia.isReborn(): iConquestModifier += 1 # Persian UP
 	
 	iRecentExpansionStability += iRecentlyFounded
 	iRecentExpansionStability += iConquestModifier * iRecentlyConquered
@@ -1499,10 +1476,6 @@ def isTolerated(iPlayer, iReligion):
 	if iStateReligion == iHinduism and iReligion == iBuddhism: return True
 	if iStateReligion == iBuddhism and iReligion == iHinduism: return True
 	
-	# Poland
-	lChristianity = [iOrthodoxy, iCatholicism, iProtestantism]
-	if iPlayer == iPoland and iStateReligion in lChristianity and iReligion in lChristianity: return True
-	
 	return False
 
 def checkResurrection(iGameTurn):
@@ -1764,25 +1737,6 @@ def doResurrection(iPlayer, lCityList, bAskFlip = True):
 	data.players[iPlayer].iPlagueCountdown = -10
 	utils.clearPlague(iPlayer)
 	convertBackCulture(iPlayer)
-	
-	# change the cores of some civs on respawn
-	if iPlayer == iGreece:
-		utils.setReborn(iGreece, True)
-		
-	elif iPlayer == iChina:
-		if gc.getGame().getGameTurn() > getTurnForYear(tBirth[iMongolia]):
-			utils.setReborn(iChina, True)
-			
-	elif iPlayer == iIndia:
-		utils.setReborn(iIndia, gc.getGame().getGameTurn() < getTurnForYear(1900))
-		
-	elif iPlayer == iArabia:
-		utils.setReborn(iArabia, True)
-	
-		
-	# others revert to their old cores instead
-	if iPlayer in [iArabia, iMongolia]:
-		utils.setReborn(iPlayer, False)
 	
 	# resurrection leaders
 	if iPlayer in resurrectionLeaders:

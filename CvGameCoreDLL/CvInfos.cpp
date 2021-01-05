@@ -11442,16 +11442,6 @@ int CvHandicapInfo::getUnitCostPercentByID(PlayerTypes ePlayer) const
 	iUnitCost *= GET_PLAYER(ePlayer).getModifier(MODIFIER_UNIT_UPKEEP);
 	iUnitCost /= 100;
 
-	// bonus for Netherlands and Germany in the beginning
-	if (ePlayer == NETHERLANDS && GC.getGameINLINE().getGameTurnYear() < 1600)
-	{
-	    iUnitCost /= 2;
-	}
-	else if (ePlayer == GERMANY && GC.getGameINLINE().getGameTurnYear() < 1775)
-	{
-	    iUnitCost /= 2;
-	}
-
 	return iUnitCost;
 }
 //Rhye - end
@@ -11620,13 +11610,6 @@ int CvHandicapInfo::getHealthBonusByID(PlayerTypes ePlayer) const
 
 	iHealthBonus += GET_PLAYER(ePlayer).getModifier(MODIFIER_HEALTH);
 
-	// help early civs in late scenarios
-	if (getScenario() >= SCENARIO_600AD)
-	{
-		if (ePlayer < VIKINGS && iHealthBonus < 5) iHealthBonus += 1;
-		if (ePlayer < BABYLONIA && iHealthBonus < 5) iHealthBonus += 1;
-	}
-
 	return iHealthBonus;
 }
 //Rhye - end
@@ -11638,10 +11621,7 @@ int CvHandicapInfo::getHappyBonus() const
 
 int CvHandicapInfo::getHappyBonusByID(PlayerTypes pl) const
 {
-    if (pl == NETHERLANDS)
-        return m_iHappyBonus+3;
-    else
-        return m_iHappyBonus;
+	return m_iHappyBonus;
 }
 
 int CvHandicapInfo::getAttitudeChange() const

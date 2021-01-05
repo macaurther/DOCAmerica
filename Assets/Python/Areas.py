@@ -88,9 +88,6 @@ def isForeignCore(iPlayer, tPlot):
 def isExtendedBirth(iPlayer):
 	if gc.getGame().getActivePlayer() == iPlayer: return False
 	
-	# add special conditions for extended AI flip zones here
-	if iPlayer == iOttomans and pByzantium.isAlive(): return False
-	
 	return True
 			
 def init():

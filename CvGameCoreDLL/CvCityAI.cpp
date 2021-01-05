@@ -1243,7 +1243,7 @@ void CvCityAI::AI_chooseProduction()
 		{
 			int iStartAttackStackRand = 0;
 		//if (pArea->getCitiesPerPlayer(BARBARIAN_PLAYER)) //Rhye
-		if ((pArea->getCitiesPerPlayer(BARBARIAN_PLAYER)) || (pArea->getCitiesPerPlayer((PlayerTypes)CELTIA)) || (pArea->getCitiesPerPlayer((PlayerTypes)NATIVE))) //Rhye
+		if ((pArea->getCitiesPerPlayer(BARBARIAN_PLAYER)) || (pArea->getCitiesPerPlayer((PlayerTypes)NATIVE))) //Rhye
 			{
 				iStartAttackStackRand += 15;
 			}
@@ -1357,7 +1357,7 @@ void CvCityAI::AI_chooseProduction()
 			}
 
 			// Leoreth: more settlers for colonial civs
-			if (getOwner() == ENGLAND || getOwner() == FRANCE || getOwner() == NETHERLANDS || getOwner() == SPAIN || getOwner() == PORTUGAL)
+			if (getOwner() == ENGLAND || getOwner() == FRANCE)
 			{
 				iSettlerSeaNeeded *= 3;
 				iSettlerSeaNeeded /= 2;
@@ -2380,135 +2380,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 
 	switch (getOwnerINLINE())
 	{
-	case EGYPT:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
-		if (GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)FEUDALISM))
-			aiUnitAIVal[UNITAI_SETTLE] /= 3;
-		break;
-	case CHINA:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 4;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 5;
-		aiUnitAIVal[UNITAI_COUNTER] /= 2;
-		aiUnitAIVal[UNITAI_ATTACK] *= 3;
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
-		aiUnitAIVal[UNITAI_SETTLE] /= 2;
-		aiUnitAIVal[UNITAI_MISSIONARY] /= 5;
-		break;
-	case BABYLONIA:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
-		aiUnitAIVal[UNITAI_ATTACK] *= 2;
-        aiUnitAIVal[UNITAI_SETTLE] /= 50;
-		break;
-	case GREECE:
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 3;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		break;
-	case INDIA:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
-		aiUnitAIVal[UNITAI_ICBM] *= 2;
-		//aiUnitAIVal[UNITAI_SETTLE] /= 50;
-		break;
-	case PHOENICIA:
-		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 3;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
-		if (!GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)OPTICS))
-				aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		break;
-	case POLYNESIA:
-		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 2;
-		break;
-	case PERSIA:
-		aiUnitAIVal[UNITAI_ATTACK] *= 2;
-		break;
-	case ROME:      // leave unit AI unchanged so far
-        aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 2;
-        aiUnitAIVal[UNITAI_COUNTER] *= 2;
-		break;
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] /= 3;
-		break;
-	case TAMILS:
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 3;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
-		break;
-	case ETHIOPIA:
-		break;
-    case KOREA:
-        aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-        aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
-        aiUnitAIVal[UNITAI_SETTLE] /= 2;
-        aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 2;
-        break;
-	case MAYA:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		break;
-    case BYZANTIUM:
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 2;
-		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
-		aiUnitAIVal[UNITAI_WORKER] *= 2;
-		aiUnitAIVal[UNITAI_ATTACK_CITY] /= 2;
-		aiUnitAIVal[UNITAI_COUNTER] *= 2;
-        aiUnitAIVal[UNITAI_SETTLE] /= 3;
-		break;
-	case JAPAN:
-		if (!GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)MACHINE_TOOLS))
-				aiUnitAIVal[UNITAI_ATTACK_SEA] /= 3;
-		else
-				aiUnitAIVal[UNITAI_ATTACK_SEA] *= 3;
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 2;
-		aiUnitAIVal[UNITAI_EXPLORE] /= 4;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 4;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] /= 3;
-		break;
-	case VIKINGS:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 3;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 2;
-		aiUnitAIVal[UNITAI_ATTACK_SEA] *= 3;
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 3;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] /= 2;
-		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 2;
-		aiUnitAIVal[UNITAI_COUNTER] *= 2;
-		break;
-	case TURKS:
-		aiUnitAIVal[UNITAI_ATTACK] *= 2;
-		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 3;
-		break;
-	case ARABIA:
-		aiUnitAIVal[UNITAI_ATTACK] *= 2;
-		aiUnitAIVal[UNITAI_CITY_DEFENSE] *= 3;
-		aiUnitAIVal[UNITAI_CITY_DEFENSE] /= 2;
-		aiUnitAIVal[UNITAI_MISSIONARY] *= 2;
-		aiUnitAIVal[UNITAI_ICBM] *= 2;
-		break;
-	case TIBET:
-		aiUnitAIVal[UNITAI_MISSIONARY] *= 5;
-		break;
-	case INDONESIA:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 2;
-		//aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
-		aiUnitAIVal[UNITAI_ESCORT_SEA] *= 2;
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 3;
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] /= 2;
-		aiUnitAIVal[UNITAI_PIRATE_SEA] *= 2;
-		break;
-	case MOORS:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		//aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 2;
-		//aiUnitAIVal[UNITAI_SETTLER_SEA] *= 2;
-		aiUnitAIVal[UNITAI_PIRATE_SEA] *= 2;
-		break;
 	case SPAIN:
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 5;
 		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
@@ -2526,10 +2397,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		if (GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)EXPLORATION))
 			aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
-	case KHMER:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 2;
-		//aiUnitAIVal[UNITAI_SETTLER_SEA] *= 2;
-		break;
 	case ENGLAND:
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 5;
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
@@ -2546,97 +2413,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_DEFENSE_AIR] *= 3;
 		aiUnitAIVal[UNITAI_DEFENSE_AIR] /= 2;
 		break;
-	case HOLY_ROME:
-		aiUnitAIVal[UNITAI_COUNTER] *= 2;
-		aiUnitAIVal[UNITAI_ATTACK_CITY] /= 2;
-		aiUnitAIVal[UNITAI_CITY_DEFENSE] *= 2;
-		break;
-	case RUSSIA:
-		aiUnitAIVal[UNITAI_EXPLORE] *= 3;
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_RESERVE] *= 2;
-		aiUnitAIVal[UNITAI_ICBM] *= 2;
-		break;
-	case MALI:
-		break;
-	case POLAND:
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] /= 3;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] /= 3;
-		break;
-	case MUGHALS:
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] /= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 2;
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] /= 3;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 3;
-		break;
-	case TURKEY:
-		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 2;
-		aiUnitAIVal[UNITAI_ATTACK] *= 2;
-		aiUnitAIVal[UNITAI_COUNTER] *= 3;
-		aiUnitAIVal[UNITAI_COUNTER] /= 2;
-		break;
-	case PORTUGAL:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 5;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
-		aiUnitAIVal[UNITAI_ESCORT_SEA] *= 2;
-		if (GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)CARTOGRAPHY))
-			aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_RESERVE_SEA] *= 2;
-		aiUnitAIVal[UNITAI_WORKER_SEA] *= 3;
-		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
-		break;
-	case INCA:
-		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		break;
-	case ITALY:
-        aiUnitAIVal[UNITAI_SETTLE] *= 2;
-        //aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 2;
-        aiUnitAIVal[UNITAI_EXPLORE] *= 2;
-        aiUnitAIVal[UNITAI_WORKER] *= 2;
-        aiUnitAIVal[UNITAI_ATTACK_CITY] *= 3;
-        aiUnitAIVal[UNITAI_ATTACK_CITY] /= 2;
-		break;
-	case MONGOLIA:
-		aiUnitAIVal[UNITAI_ATTACK] *= 2;
-		break;
-	case AZTECS:
-		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] /= 3;
-		break;
-	case THAILAND:
-		aiUnitAIVal[UNITAI_COUNTER] *= 2;
-		break;
-	case CONGO:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 4;
-		break;
-	case NETHERLANDS:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 5;
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
-		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
-		aiUnitAIVal[UNITAI_ESCORT_SEA] *= 2;
-		if (GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)EXPLORATION))
-			aiUnitAIVal[UNITAI_SETTLE] *= 2;
-		aiUnitAIVal[UNITAI_RESERVE_SEA] *= 2;
-		aiUnitAIVal[UNITAI_WORKER_SEA] *= 3;
-		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 3;
-		aiUnitAIVal[UNITAI_ASSAULT_SEA] /= 2;
-		break;
-	case GERMANY:
-		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 2;
-		aiUnitAIVal[UNITAI_ATTACK_AIR] *= 2;
-		aiUnitAIVal[UNITAI_DEFENSE_AIR] *= 2;
-		aiUnitAIVal[UNITAI_RESERVE_SEA] *= 2;
-		aiUnitAIVal[UNITAI_ICBM] *= 2;
-		break;
 	case AMERICA:
 		aiUnitAIVal[UNITAI_RESERVE] *= 2;
 		aiUnitAIVal[UNITAI_ASSAULT_SEA] *= 2;
@@ -2644,14 +2420,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_CARRIER_AIR] *= 2;
 		aiUnitAIVal[UNITAI_ATTACK_AIR] *= 2;
 		aiUnitAIVal[UNITAI_DEFENSE_AIR] *= 2;
-		break;
-	case ARGENTINA:
-		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 2;
-		break;
-	case BRAZIL:
-		aiUnitAIVal[UNITAI_WORKER] *= 2;
-		aiUnitAIVal[UNITAI_CITY_DEFENSE] *= 3;
-		aiUnitAIVal[UNITAI_CITY_DEFENSE] /= 2;
 		break;
 	case NATIVE:
 		aiUnitAIVal[UNITAI_CITY_DEFENSE] /= 5;
@@ -3094,36 +2862,6 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 								//Rhye - start switch for the UHV
 								//see CvCity::canConstruct
-								if (iI == ORACLE)
-									if (getOwnerINLINE() != GREECE) 
-									{
-										if (GET_PLAYER((PlayerTypes)GREECE).isHuman()) 
-										{
-											if (!GET_PLAYER((PlayerTypes)GREECE).isAlive())
-												bValid = false;
-											else
-											{
-												iValue *= 2;
-												iValue /= 3;
-											}
-										}
-									}
-
-								if (iI == TEMPLE_OF_KUKULKAN)
-									if (getOwnerINLINE() != MAYA)
-									{
-										if (GET_PLAYER((PlayerTypes)MAYA).isHuman())
-										{
-											if (!GET_PLAYER((PlayerTypes)MAYA).isAlive())
-												bValid = false;
-											else
-											{
-												iValue *= 2;
-												iValue /= 3;
-											}
-										}
-									}
-
 								if (iI == NOTRE_DAME) //for the UHV
 									if (getOwnerINLINE() != FRANCE)
 									{
@@ -3178,14 +2916,6 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 					}
 				}
 			}
-		}
-	}
-
-	if (getOwner() == MOORS && isCapital() && getRegionID() == REGION_IBERIA)
-	{
-		if (canConstruct((BuildingTypes)MEZQUITA))
-		{
-			eBestBuilding = (BuildingTypes)MEZQUITA;
 		}
 	}
 
@@ -4024,8 +3754,6 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 					}
 					if (kBuilding.getRiverPlotYieldChange(iI) > 0)
 					{
-						if (getOwner() == CHINA && iI == 2)
-							iTempValue += 100;
 
 						iTempValue += (kBuilding.getRiverPlotYieldChange(iI) * countNumRiverPlots() * 4 * (iI == 0 ? 5 : 1) * (iI == 2 ? 2 : 1)); // Leoreth: emphasize river food / commerce yield more
 					}

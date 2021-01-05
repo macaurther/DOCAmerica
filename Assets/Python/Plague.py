@@ -36,10 +36,6 @@ class Plague:
 			
 		data.lGenericPlagueDates[1] = getTurnForYear(1300) + utils.variation(20)
 		
-		# Avoid interfering with the Indian UHV
-		if utils.getHumanID() == iIndia and data.lGenericPlagueDates[1] <= getTurnForYear(1200):
-			data.lGenericPlagueDates[1] = getTurnForYear(1200) + 1
-		
 		if utils.getScenario != i1700AD:
 			data.lGenericPlagueDates[2] = getTurnForYear(1650) + utils.variation(20)
 			
@@ -441,8 +437,9 @@ class Plague:
 	def onFirstContact(self, iTeamX, iHasMetTeamY):
 		if data.bNoPlagues:
 			return
-
-		if gc.getGame().getGameTurn() > getTurnForYear(tBirth[iAztecs]) + 2 and gc.getGame().getGameTurn() < getTurnForYear(1800):
+		
+		# MacAurther TODO: Native Update
+		if gc.getGame().getGameTurn() > getTurnForYear(tBirth[iSpain]) + 2 and gc.getGame().getGameTurn() < getTurnForYear(1800):
 			iOldWorldCiv = -1
 			iNewWorldCiv = -1
 			if iTeamX in lCivBioNewWorld and iHasMetTeamY in lCivBioOldWorld:

@@ -338,12 +338,6 @@ void CvPlayer::init(PlayerTypes eID)
 				makeSpecialUnitValid((SpecialUnitTypes)iI);
 			}
 		}
-
-		// Leoreth: make sure Phoenicia can always hurry units
-		if (eID == PHOENICIA)
-		{
-			changeHurryCount((HurryTypes)1, 1);
-		}
 	}
 
 	AI_init();
@@ -889,12 +883,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_selectionGroups.removeAll();
 
 	m_eventsTriggered.removeAll();
-
-	// Thai UP: +1 commerce per excess happiness
-	if (getID() == THAILAND)
-	{
-		changeHappinessExtraYield(YIELD_COMMERCE, 1);
-	}
 
 	if (!bConstructorCall)
 	{
@@ -5037,9 +5025,6 @@ void CvPlayer::findNewCapital()
 			iValue += pLoopCity->getCorporationCount();
 			iValue += (pLoopCity->getNumGreatPeople() * 2);
 
-			if (getID() == ARABIA)
-				iValue += (pLoopCity->isHolyCity())? 25 : 0;
-
 			// Leoreth: prefer cities on the same continent
 			if (pLoopCity->getArea() == iOldCapitalArea)
 			{
@@ -5650,7 +5635,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 		return false;
 	}
 
-	if (pPlot->getFeatureType() != NO_FEATURE && getID() != CONGO)	//Leoreth: Congolese UP: can found in jungle
+	if (pPlot->getFeatureType() != NO_FEATURE && getID())
 	{
 		if (GC.getFeatureInfo(pPlot->getFeatureType()).isNoCity())
 		{
@@ -6344,44 +6329,9 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		else if (isHumanVictoryWonder(eBuilding, EIFFEL_TOWER, FRANCE)) return false;
 		else if (isHumanVictoryWonder(eBuilding, STATUE_OF_LIBERTY, FRANCE)) return false;
 
-		else if (isHumanVictoryWonder(eBuilding, BLUE_MOSQUE, TURKEY)) return false;
-		else if (isHumanVictoryWonder(eBuilding, TOPKAPI_PALACE, TURKEY)) return false;
-
 		else if (isHumanVictoryWonder(eBuilding, UNITED_NATIONS, AMERICA)) return false;
 		else if (isHumanVictoryWonder(eBuilding, PENTAGON, AMERICA)) return false;
 		else if (isHumanVictoryWonder(eBuilding, STATUE_OF_LIBERTY, AMERICA)) return false;
-
-		else if (isHumanVictoryWonder(eBuilding, SAN_MARCO_BASILICA, ITALY)) return false;
-		else if (isHumanVictoryWonder(eBuilding, SISTINE_CHAPEL, ITALY)) return false;
-		else if (isHumanVictoryWonder(eBuilding, SANTA_MARIA_DEL_FIORE, ITALY)) return false;
-
-		else if (isHumanVictoryWonder(eBuilding, UNIVERSITY_OF_SANKORE, MALI)) return false;
-
-		else if (isHumanVictoryWonder(eBuilding, MEZQUITA, MOORS)) return false;
-
-		else if (isHumanVictoryWonder(eBuilding, GREAT_COTHON, PHOENICIA)) return false;
-
-		else if (isHumanVictoryWonder(eBuilding, TEMPLE_OF_KUKULKAN, MAYA)) return false;
-
-		else if (isHumanVictoryWonder(eBuilding, WEMBLEY, BRAZIL)) return false;
-		else if (isHumanVictoryWonder(eBuilding, ITAIPU_DAM, BRAZIL)) return false;
-		else if (isHumanVictoryWonder(eBuilding, CRISTO_REDENTOR, BRAZIL)) return false;
-
-		else if (isHumanVictoryWonder(eBuilding, RED_FORT, MUGHALS)) return false;
-		else if (isHumanVictoryWonder(eBuilding, TAJ_MAHAL, MUGHALS)) return false;
-		else if (isHumanVictoryWonder(eBuilding, HARMANDIR_SAHIB, MUGHALS)) return false;
-
-		// Leoreth: delay Babylonia building Pyramids and Sphinx
-		if (getID() == BABYLONIA)
-		{
-			if (eBuilding == (BuildingTypes)PYRAMIDS || eBuilding == (BuildingTypes)GREAT_SPHINX)
-			{
-				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildingInfo((BuildingTypes)HANGING_GARDENS).getPrereqAndTech()) && !GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildingInfo((BuildingTypes)ISHTAR_GATE).getPrereqAndTech()))
-				{
-					return false;
-				}
-			}
-		}
 	}
 
 	return true;
@@ -6703,11 +6653,6 @@ int CvPlayer::getProductionNeeded(BuildingTypes eBuilding) const
 		if (!isHuman())
 		{
 			iProductionNeeded = iProductionNeeded * 3 / 4;
-
-			if (getID() == GREECE || getID() == BABYLONIA)
-			{
-			    iProductionNeeded = iProductionNeeded * 3 / 4;
-			}
 		}
 
 	}
@@ -7169,17 +7114,7 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 	{
 		if (pPlot->getFeatureType() != NO_FEATURE)
 		{
-			bool bKhmerUP = false;
-
-			if (getID() == KHMER)
-			{
-				if (eBuild == GC.getInfoTypeForString("BUILD_FARM") && pPlot->getFeatureType() == GC.getInfoTypeForString("FEATURE_RAINFOREST"))
-				{
-					bKhmerUP = true;
-				}
-			}
-
-			if (!bKhmerUP && !(GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildInfo(eBuild).getFeatureTech(pPlot->getFeatureType()))))
+			if (!(GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildInfo(eBuild).getFeatureTech(pPlot->getFeatureType()))))
 			{
 				return false;
 			}
@@ -7834,12 +7769,6 @@ bool CvPlayer::canEverResearch(TechTypes eTech) const
 		}
 	}
 
-	// Leoreth: give human Ethiopia some time before Orthodoxy is founded
-	if (getID() != ETHIOPIA && GC.getGame().getActivePlayer() == ETHIOPIA && GC.getReligionInfo(ORTHODOXY).getTechPrereq() == eTech && GC.getGame().getGameTurn() < getTurns(GC.getCivilizationInfo(GET_PLAYER(ETHIOPIA).getCivilizationType()).getStartingYear()))
-	{
-		return false;
-	}
-
 	return true;
 }
 
@@ -8104,15 +8033,6 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		long lResult=0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "canDoCivic", argsList.makeFunctionArgs(), &lResult);
 		if (lResult == 1)
-		{
-			return true;
-		}
-	}
-
-	// Egyptian UP: starts with Monarchy, Redistribution and Deification
-	if (getID() == EGYPT)
-	{
-		if (eCivic == CIVIC_MONARCHY || eCivic == CIVIC_REDISTRIBUTION || eCivic == CIVIC_DEIFICATION)
 		{
 			return true;
 		}
@@ -8494,11 +8414,6 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 				if (eReligion == HINDUISM || eReligion == BUDDHISM)
 					iValue *= 4;
 			}
-			if (pLoopCity->getX() == 72 && pLoopCity->getY() == 29 && pLoopCity->getOwner() == (PlayerTypes)ETHIOPIA) //Aksum
-				if (eReligion == ORTHODOXY)
-					iValue *= 4;
-			if (eReligion == (ReligionTypes)ZOROASTRIANISM && pLoopCity->getX() == 82 && pLoopCity->getY() == 39) //Parsa
-				iValue *= 8;
 
 			if (eReligion == ORTHODOXY)
 			{
@@ -8982,16 +8897,6 @@ int CvPlayer::greatSpyThreshold() const
 int CvPlayer::greatPeopleModifier() const
 {
 	int iModifier = getModifier(MODIFIER_GREAT_PEOPLE_THRESHOLD);
-
-	// help Ethiopia with its UHV
-	if (getID() == ETHIOPIA)
-	{
-		if (GET_PLAYER((PlayerTypes)getID()).getCurrentEra() <= 2)
-		{
-			iModifier *= 80;
-			iModifier /= 100;
-		}
-	}
 
 	return iModifier;
 }
@@ -10115,9 +10020,6 @@ void CvPlayer::setHighestNavalUnitLevel(int iNewValue)
 int CvPlayer::getMaxConscript() const
 {
 	int iConscript = m_iMaxConscript;
-
-	// Turkish UP: two extra conscripts (in cities with non-state religions)
-	if (getID() == TURKEY) iConscript += 2;
 
 	return iConscript;
 }
@@ -11696,7 +11598,7 @@ void CvPlayer::verifyAlive()
 
 		if (!bKill)
 		{
-			if (!isBarbarian() && getID() != NATIVE && getID() != CELTIA) // Leoreth: natives and celts should behave like barbarians
+			if (!isBarbarian() && getID() != NATIVE) // Leoreth: natives should behave like barbarians
 			{
 				if (getNumCities() == 0 && getAdvancedStartPoints() < 0)
 				{
@@ -12803,9 +12705,7 @@ int CvPlayer::getStateReligionBuildingCommerce(CommerceTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_COMMERCE_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	if (getID() == PERSIA && (GET_PLAYER((PlayerTypes)PERSIA).isReborn()))
-		if (eIndex == COMMERCE_CULTURE || eIndex == COMMERCE_RESEARCH)
-			return m_aiStateReligionBuildingCommerce[eIndex]+2;
+
 	return m_aiStateReligionBuildingCommerce[eIndex];
 }
 
@@ -13209,18 +13109,6 @@ bool CvPlayer::isUnitClassMaxedOut(UnitClassTypes eIndex, int iExtra) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-
-	// Tibetan UP: unlimited missionaries
-	if (getID() == TIBET)
-	{
-		for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
-		{
-			if (GC.getUnitInfo((UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eIndex)).getReligionSpreads(iI) > 0)
-			{
-				return false;
-			}
-		}
-	}
 
 	if (!isNationalUnitClass(eIndex))
 	{
@@ -23319,19 +23207,6 @@ bool CvPlayer::canHaveTradeRoutesWith(PlayerTypes ePlayer) const
 		return true;
 	}
 
-	// Ethiopian UP: trade connection to all cities with state religion
-	if (getID() == ETHIOPIA)
-	{
-		ReligionTypes eStateReligion = getStateReligion();
-		if (eStateReligion != NO_RELIGION)
-		{
-			if (kOtherPlayer.getHasReligionCount(eStateReligion) > 0)
-			{
-				return true;
-			}
-		}
-	}
-
 	if (GET_TEAM(getTeam()).isFreeTrade(kOtherPlayer.getTeam()))
 	{
 		if (GET_TEAM(getTeam()).isVassal(kOtherPlayer.getTeam()))
@@ -23565,12 +23440,6 @@ int CvPlayer::getNewCityProductionValue() const
 	for (int i = 1; i <= iPopulation; ++i)
 	{
 		iValue += (getGrowthThreshold(i) * GC.getDefineINT("ADVANCED_START_POPULATION_COST")) / 100;
-	}
-
-	// Leoreth: Harappan UU: cheaper settler
-	if (getID() == HARAPPA)
-	{
-		iValue /= 2;
 	}
 
 	return iValue;
@@ -24780,20 +24649,6 @@ EraTypes CvPlayer::getSoundtrackEra()
 		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
 		{
 			return (EraTypes)ERA_EAST_ASIA;
-		}
-	}
-	else if (eStateReligion == BUDDHISM || eStateReligion == HINDUISM)
-	{
-		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
-		{
-			if (getID() == CHINA || getID() == MONGOLIA || getID() == JAPAN || getID() == KOREA)
-			{
-				return (EraTypes)ERA_EAST_ASIA;
-			}
-			else
-			{
-				return (EraTypes)ERA_SOUTH_ASIA;
-			}
 		}
 	}
 	else if (eStateReligion == ISLAM || eStateReligion == ZOROASTRIANISM)

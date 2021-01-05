@@ -123,9 +123,10 @@ lOlderNeighbours = [
 # civ birth dates
 
 # converted to years - edead
+# MacAurther TODO: Get these years right
 tBirth = (
-1600, 		# Spain
-1600, 		# France
+-3000, 		# Spain
+-3000, 		# France
 1600, 		# England
 1600,   	# America
 1600,		# Canada

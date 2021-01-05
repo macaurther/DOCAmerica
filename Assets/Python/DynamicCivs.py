@@ -379,11 +379,8 @@ def isEmpire(iPlayer):
 def getEmpireThreshold(iPlayer):
 	if iPlayer in dEmpireThreshold: return dEmpireThreshold[iPlayer]
 	
-	if iPlayer == iEthiopia and not gc.getGame().isReligionFounded(iIslam):
-		return 4
-	
 	if gc.getPlayer(iPlayer).isReborn():
-		if iPlayer == iPersia: return 4
+		pass
 		
 	return 5
 	
@@ -506,28 +503,13 @@ def specificName(iPlayer):
 	bWar = isAtWar(iPlayer)
 
 	if iPlayer == iSpain:
-		if iReligion == iIslam:
-			return "TXT_KEY_CIV_SPAIN_AL_ANDALUS"
-	
-		bSpain = not pMoors.isAlive() or not utils.isPlotInArea(capitalCoords(iMoors), vic.tIberiaTL, vic.tIberiaBR)
-	
-		if bSpain:
-			if not pPortugal.isAlive() or not utils.isPlotInArea(capitalCoords(iPortugal), vic.tIberiaTL, vic.tIberiaBR):
-				return "TXT_KEY_CIV_SPAIN_IBERIA"
-			
-		if isCapital(iPlayer, ["Barcelona", "Valencia"]):
-			return "TXT_KEY_CIV_SPAIN_ARAGON"
-			
-		if not bSpain:
-			return "TXT_KEY_CIV_SPAIN_CASTILE"
+		pass
 			
 	elif iPlayer == iFrance:
-		if iEra == iMedieval and not pHolyRome.isAlive():
-			return "TXT_KEY_CIV_FRANCE_FRANCIA"
+		pass
 			
 	elif iPlayer == iEngland:
-		if getColumn(iEngland) >= 11 and countPlayerAreaCities(iPlayer, utils.getPlotList(tBritainTL, tBritainBR)) >= 3:
-			return "TXT_KEY_CIV_ENGLAND_GREAT_BRITAIN"
+		pass
 	
 def adjective(iPlayer, bIgnoreVassal = False):
 	if isCapitulated(iPlayer):
@@ -579,25 +561,13 @@ def specificAdjective(iPlayer):
 	bMonarchy = not isCommunist(iPlayer) and not isFascist(iPlayer) and not isRepublic(iPlayer)
 	
 	if iPlayer == iSpain:
-		bSpain = not pMoors.isAlive() or not utils.isPlotInArea(capitalCoords(iMoors), vic.tIberiaTL, vic.tIberiaBR)
-	
-		if bSpain:
-			if not pPortugal.isAlive() or getMaster(iPortugal) == iPlayer or not utils.isPlotInArea(capitalCoords(iPortugal), vic.tIberiaTL, vic.tIberiaBR):
-				return "TXT_KEY_CIV_SPAIN_IBERIAN"
-			
-		if isCapital(iPlayer, ["Barcelona", "Valencia"]):
-			return "TXT_KEY_CIV_SPAIN_ARAGONESE"
-			
-		if not bSpain:
-			return "TXT_KEY_CIV_SPAIN_CASTILIAN"
+		pass
 			
 	elif iPlayer == iFrance:
-		if iEra == iMedieval and not pHolyRome.isAlive():
-			return "TXT_KEY_CIV_FRANCE_FRANKISH"
+		pass
 			
 	elif iPlayer == iEngland:
-		if getColumn(iEngland) >= 11 and countPlayerAreaCities(iPlayer, utils.getPlotList(tBritainTL, tBritainBR)) >= 3:
-			return "TXT_KEY_CIV_ENGLAND_BRITISH"
+		pass
 	
 ### Title methods ###
 
@@ -679,8 +649,6 @@ def republicTitle(iPlayer):
 			
 	if gc.getPlayer(iPlayer).getStateReligion() == iIslam:
 		if iPlayer in lIslamicRepublicOf: return "TXT_KEY_ISLAMIC_REPUBLIC_OF"
-
-		if iPlayer == iOttomans: return key(iPlayer, "ISLAMIC_REPUBLIC")
 		
 	if iPlayer in lRepublicOf: return "TXT_KEY_REPUBLIC_OF"
 	if iPlayer in lRepublicAdj: return "TXT_KEY_REPUBLIC_ADJECTIVE"

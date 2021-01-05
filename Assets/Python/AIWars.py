@@ -143,33 +143,14 @@ class AIWars:
 			iExtra = 0
 			if utils.getHumanID() not in [iPlayer, city.getOwner()]: 
 				iExtra += 1 #max(1, gc.getPlayer(iPlayer).getCurrentEra())
-				
-			if iPlayer == iMongolia and utils.getHumanID() != iPlayer:
-				iExtra += 1
 			
 			tPlot = utils.findNearestLandPlot((city.getX(), city.getY()), iPlayer)
 			
 			iBestInfantry = utils.getBestInfantry(iPlayer)
 			iBestSiege = utils.getBestSiege(iPlayer)
 			
-			if iPlayer == iGreece:
-				iBestInfantry = iHoplite
-				iBestSiege = iCatapult
-			
 			utils.makeUnitAI(iBestInfantry, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iExtra)
 			utils.makeUnitAI(iBestSiege, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1 + 2*iExtra)
-			
-			if iPlayer == iGreece:
-				utils.makeUnitAI(iCompanion, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
-			
-			if iPlayer == iTamils:
-				utils.makeUnitAI(iWarElephant, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1)
-				
-			if iPlayer == iSpain:
-				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 * iExtra)
-				
-			if iPlayer == iTurks:
-				utils.makeUnitAI(utils.getBestCavalry(iPlayer), iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iExtra)
 	
 	def forgetMemory(self, iTech, iPlayer):
 		if iTech in [iPsychology, iTelevision]:

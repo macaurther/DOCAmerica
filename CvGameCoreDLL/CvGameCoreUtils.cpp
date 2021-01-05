@@ -1401,15 +1401,6 @@ bool PUF_canDefend(const CvUnit* pUnit, int iData1, int iData2)
 
 bool PUF_canDefendAgainst(const CvUnit* pUnit, int iData1, int iData2)
 {
-	// Leoreth: Turkic UP
-	if (pUnit->getOwnerINLINE() == BARBARIAN && iData1 == TURKS && GET_TEAM(GET_PLAYER((PlayerTypes)iData1).getTeam()).isAtWarWithMajorPlayer())
-	{
-		if (pUnit->getUnitCombatType() == 2 || pUnit->getUnitCombatType() == 3)
-		{
-			return false;
-		}
-	}
-
 	return pUnit->canDefend();
 }
 
@@ -2391,11 +2382,9 @@ int getGameTurnForMonth(int iTurnMonth, int iStartYear, CalendarTypes eCalendar,
 
 ScenarioTypes getScenario()
 {
-	if (GET_PLAYER((PlayerTypes)EGYPT).isPlayable()) return SCENARIO_3000BC;
 
-	if (GET_PLAYER((PlayerTypes)BYZANTIUM).isPlayable()) return SCENARIO_600AD;
-
-	return SCENARIO_1700AD;
+	// MacAurther TODO: Scenario overhaul
+	return SCENARIO_3000BC;
 }
 
 int getScenarioStartYear()

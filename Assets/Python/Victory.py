@@ -162,10 +162,7 @@ def checkTurn(iGameTurn, iPlayer):
 	
 		# first goal: allow no European colonies in North America, Central America and the Caribbean and control or vassalize Mexico in 1930 AD
 		if iGameTurn == getTurnForYear(1900):
-			if isAreaFreeOfCivs(utils.getPlotList(tNCAmericaTL, tNCAmericaBR), lCivGroups[0]) and isControlledOrVassalized(iAmerica, Areas.getCoreArea(iAztecs, True)):
-				win(iAmerica, 0)
-			else:
-				lose(iAmerica, 0)
+			pass
 				
 		# second goal: build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, the Golden Gate Bridge, the Pentagon and the United Nations by 1950 AD
 		if iGameTurn == getTurnForYear(1950):
@@ -342,7 +339,6 @@ def onTechAcquired(iPlayer, iTech):
 			lTechs = dTechGoals[iLoopPlayer][1]
 			
 			if not isPossible(iLoopPlayer, iGoal): continue
-			if iLoopPlayer == iMaya and pMaya.isReborn(): continue
 			
 			if iTech in lTechs:
 				if iPlayer != iLoopPlayer: lose(iLoopPlayer, iGoal)
@@ -996,7 +992,7 @@ def checkOwnedCiv(iPlayer, iOwnedPlayer):
 	iPlayerCities = getNumCitiesInArea(iPlayer, Areas.getNormalArea(iOwnedPlayer, False))
 	iOwnedCities = getNumCitiesInArea(iOwnedPlayer, Areas.getNormalArea(iOwnedPlayer, False))
 	
-	return (iPlayerCities >= 2 and iPlayerCities > iOwnedCities) or (iPlayerCities >= 1 and not gc.getPlayer(iOwnedPlayer).isAlive()) or (iPlayerCities >= 1 and iOwnedPlayer == iCarthage)
+	return (iPlayerCities >= 2 and iPlayerCities > iOwnedCities) or (iPlayerCities >= 1 and not gc.getPlayer(iOwnedPlayer).isAlive())
 	
 def isControlled(iPlayer, lPlots):
 	lOwners = []
@@ -1862,8 +1858,6 @@ def getPaganGoalHelp(iPlayer):
 	
 	elif paganReligion == "Teotl":
 		iCount = data.iTeotlSacrifices
-		if iPlayer == iMaya:
-			return getIcon(iCount >= 10) + localText.getText("TXT_KEY_VICTORY_FOOD_FROM_COMBAT", (iCount * 5, 50))
 		return getIcon(iCount >= 10) + localText.getText("TXT_KEY_VICTORY_SACRIFICED_SLAVES", (iCount, 10))
 	
 	elif paganReligion == "Vedism":
@@ -1954,9 +1948,7 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iAmerica:
 		if iGoal == 0:
-			bAmericas = isAreaFreeOfCivs(utils.getPlotList(tNCAmericaTL, tNCAmericaBR), lCivGroups[0])
-			bMexico = isControlledOrVassalized(iAmerica, Areas.getCoreArea(iAztecs, True))
-			aHelp.append(getIcon(bAmericas) + localText.getText("TXT_KEY_VICTORY_NO_NORTH_AMERICAN_COLONIES", ()) + ' ' + getIcon(bMexico) + localText.getText("TXT_KEY_CIV_MEXICO_SHORT_DESC", ()))
+			pass
 		elif iGoal == 1:
 			bUnitedNations = data.getWonderBuilder(iUnitedNations) == iAmerica
 			bBrooklynBridge = data.getWonderBuilder(iBrooklynBridge) == iAmerica

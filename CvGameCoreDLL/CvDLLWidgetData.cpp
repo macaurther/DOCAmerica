@@ -2211,13 +2211,6 @@ void CvDLLWidgetData::parseConscriptHelp(CvWidgetDataStruct &widgetDataStruct, C
 
 					int iMaxDraftUnitsNonState = iMaxDraftUnits;
 
-					if (pHeadSelectedCity->getOwnerINLINE() == TURKEY)
-					{
-						if (pHeadSelectedCity->getReligionCount() <= ((!GET_PLAYER(TURKEY).isStateReligion() || !pHeadSelectedCity->isHasReligion(GET_PLAYER(TURKEY).getStateReligion())) ? 0 : 1))
-						{
-							iMaxDraftUnitsNonState -= 2;
-						}
-					}
 					
 					szBuffer.append(NEWLINE);
 
@@ -3124,14 +3117,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						{
 							szBuffer.append(NEWLINE);
 							szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CHANGE_PRODUCTION", iProduction, pCity->getNameKey()));
-						}
-
-						bool bKhmerUP = GC.getGame().getActivePlayer() == KHMER && GC.getBuildInfo(eBuild).getImprovement() == GC.getInfoTypeForString("IMPROVEMENT_FARM") && pMissionPlot->getFeatureType() == GC.getInfoTypeForString("FEATURE_RAINFOREST");
-
-						if (!bKhmerUP)
-						{
-							szBuffer.append(NEWLINE);
-							szBuffer.append(gDLL->getText("TXT_KEY_ACTION_REMOVE_FEATURE", GC.getFeatureInfo(pMissionPlot->getFeatureType()).getTextKeyWide()));
 						}
 					}
 
@@ -4293,7 +4278,7 @@ void CvDLLWidgetData::parseNationalityHelp(CvWidgetDataStruct &widgetDataStruct,
 		// Leoreth: stability effects of cultural control
 		int iOwnCulture = iTotalCulture == 0 ? 100 : 100 * pHeadSelectedCity->plot()->getCulture(pHeadSelectedCity->getOwnerINLINE()) / iTotalCulture;
 
-		if (pHeadSelectedCity->getOwnerINLINE() != PERSIA || (pHeadSelectedCity->getOwnerINLINE() == PERSIA && GET_PLAYER((PlayerTypes)PERSIA).isReborn()))
+		if (pHeadSelectedCity->getOwnerINLINE())
 		{
 			if (iOwnCulture < 20)
 			{

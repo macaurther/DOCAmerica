@@ -2031,13 +2031,6 @@ void CvUnitAI::AI_attackMove()
 					return;
 				}
 			}
-			if (area()->getCitiesPerPlayer((PlayerTypes)CELTIA) > 0)
-			{
-				if (AI_targetMinorCity(CELTIA))
-				{
-					return;
-				}
-			}
 			if (area()->getCitiesPerPlayer((PlayerTypes)INDEPENDENT) > 0)
 			{
 				if (AI_targetMinorCity(INDEPENDENT))
@@ -2378,13 +2371,6 @@ void CvUnitAI::AI_attackCityMove()
 			bool bHuntNatives = true;
 		}
 	}
-	if (area()->getCitiesPerPlayer((PlayerTypes)CELTIA) > 0)
-	{
-		if ((area()->getAreaAIType(getTeam()) != AREAAI_OFFENSIVE) && (area()->getAreaAIType(getTeam()) != AREAAI_DEFENSIVE))
-		{
-			bool bHuntCelts = true;
-		}
-	}
 	if (area()->getCitiesPerPlayer((PlayerTypes)INDEPENDENT) > 0)
 	{
 		if ((area()->getAreaAIType(getTeam()) != AREAAI_OFFENSIVE) && (area()->getAreaAIType(getTeam()) != AREAAI_DEFENSIVE))
@@ -2494,10 +2480,6 @@ void CvUnitAI::AI_attackCityMove()
 		}
 		//Rhye - start
 		else if (bHuntNatives && AI_targetMinorCity(NATIVE))
-		{
-			return;
-		}
-		else if (bHuntCelts && AI_targetMinorCity(CELTIA))
 		{
 			return;
 		}

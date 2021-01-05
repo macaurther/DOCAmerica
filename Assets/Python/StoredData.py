@@ -168,7 +168,6 @@ class GameData:
 		self.iRespawnCiv = -1
 		self.iNewCivFlip = -1
 		self.iOldCivFlip = -1
-		self.iOttomanSpawnTurn = -1
 		
 		self.iSpawnWar = 0
 		self.iBetrayalTurns = 0
@@ -229,25 +228,8 @@ class GameData:
 		self.lFirstGreatPeople = [-1] * len(lGreatPeopleUnits)
 		self.iFirstNewWorldColony = -1
 		
-		self.iChineseGoldenAgeTurns = 0
-		self.iKoreanSinks = 0
-		self.iTamilTradeGold = 0
-		self.iColombianTradeGold = 0
-		self.iVikingGold = 0
-		self.iTurkicPillages = 0
-		self.iMoorishGold = 0
-		self.lHolyRomanShrines = [False] * 3
 		self.iEnglishSinks = 0
-		self.iMongolRazes = 0
-		self.iAztecSlaves = 0
-		self.iCongoSlaveCounter = 0
-		self.iDutchColonies = 0
-		self.iMexicanGreatGenerals = 0
-		self.iArgentineGoldenAgeTurns = 0
 		self.iCanadianPeaceDeals = 0
-		
-		self.tFirstTurkicCapital = None
-		self.tSecondTurkicCapital = None
 		
 		self.iPopeTurns = 0
 		self.iHinduGoldenAgeTurns = 0

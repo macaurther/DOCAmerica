@@ -2502,23 +2502,6 @@ class CvMainInterface:
 						screen.show( "BottomButtonContainer" )
 						
 						iCount = iCount + 1
-						
-					# Leoreth: Aztec UP: sacrifice slaves
-					if pUnit.getUnitType() == iAztecSlave and pUnit.getOwner() == iAztecs:
-						plot = CyMap().plot(pUnit.getX(), pUnit.getY())
-						if plot.isCity():
-							city = plot.getPlotCity()
-							if city.getOwner() == iAztecs and not city.isWeLoveTheKingDay():
-								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(iSacrificialAltar).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
-								screen.show("BottomButtonContainer")
-								iCount = iCount + 1
-						
-					# Leoreth: Byzantine UP: bribe barbarians
-					if pUnit.getUnitType() == iSpy and not pUnit.isMadeAttack() and pUnit.getOwner() == iByzantium and pByzantium.getNumCities() > 0:
-						if utils.canDoByzantineBribery(pUnit):
-							screen.appendMultiListButton("BottomButtonContainer", gc.getTechInfo(iCurrency).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10001, 10001, False)
-							screen.show("BottomButtonContainer")
-							iCount = iCount + 1
 
 		elif (CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY):
 		

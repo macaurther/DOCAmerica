@@ -907,45 +907,19 @@ def getUHVTileInfo(argsList):
 	plot = gc.getMap().plot(x, y)
 	
 	if iPlayer == iSpain:
-		if utils.isPlotInArea((x, y), vic.tEuropeTL, vic.tEuropeBR): return 29
-		elif utils.isPlotInArea((x, y), vic.tEasternEuropeTL, vic.tEasternEuropeBR): return 29
+		pass
 			
 	elif iPlayer == iFrance:
-		if utils.isPlotInArea((x, y), vic.tEuropeTL, vic.tEuropeBR): return 29
-		elif utils.isPlotInArea((x, y), vic.tEasternEuropeTL, vic.tEasternEuropeBR): return 29
-				
-		if utils.isPlotInArea((x, y), vic.tNorthAmericaTL, vic.tNorthAmericaBR):
-			return 30
+		pass
 			
 	elif iPlayer == iEngland:
-		if plot.getRegionID() in lNorthAmerica:
-			return 31
-				
-		if plot.getRegionID() in lSouthAmerica:
-			return 32
-				
-		if plot.getRegionID() in lAfrica:
-			return 33
-				
-		if plot.getRegionID() in lAsia:
-			return 34
-			
-		if plot.getRegionID() in lOceania:
-			return 35
+		pass
 			
 	elif iPlayer == iAmerica:
-		if utils.isPlotInArea((x, y), vic.tNCAmericaTL, vic.tNCAmericaBR):
-			return 54
+		pass
 			
 	elif iPlayer == iCanada:
-		if (x, y) in vic.lAtlanticCoast:
-			return 63
-			
-		if (x, y) in vic.lPacificCoast:
-			return 64
-			
-		if utils.isPlotInArea((x, y), vic.tCanadaWestTL, vic.tCanadaWestBR, vic.tCanadaWestExceptions) or utils.isPlotInArea((x, y), vic.tCanadaEastTL, vic.tCanadaEastBR, vic.tCanadaEastExceptions):
-			return 62
+		pass
 		
 		# MacAurther TODO: Redo all ID's
 		# free IDs: 20

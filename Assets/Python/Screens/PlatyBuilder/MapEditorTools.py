@@ -81,10 +81,6 @@ def exportFlip(iPlayer, dFlipZoneEdits):
 
 	iCiv = gc.getPlayer(iPlayer).getCivilizationType()
 	sName = gc.getCivilizationInfo(iCiv).getShortDescription(0)
-	if iPlayer == iHolyRome:
-		sName = "HolyRome"
-	elif iPlayer == iAztecs:
-		sName = "Aztecs"
 
 	lNewFlipPlotList, lNewAIPlotList = dFlipZoneEdits[iPlayer]
 	if utils.isReborn(iPlayer):
@@ -158,10 +154,6 @@ def exportAllFlip(dFlipZoneEdits):
 	for iPlayer in range(iNumPlayers):
 		iCiv = gc.getPlayer(iPlayer).getCivilizationType()
 		sName = gc.getCivilizationInfo(iCiv).getShortDescription(0)
-		if iPlayer == iHolyRome:
-			sName = "HolyRome"
-		elif iPlayer == iAztecs:
-			sName = "Aztecs"
 			
 		if iPlayer in dFlipZoneEdits.keys():
 			lNewFlipPlotList, lNewAIPlotList = dFlipZoneEdits[iPlayer]
@@ -220,10 +212,6 @@ def exportAllFlip(dFlipZoneEdits):
 def exportCore(iPlayer, bForce = False):
 	iCiv = gc.getPlayer(iPlayer).getCivilizationType()
 	sName = gc.getCivilizationInfo(iCiv).getShortDescription(0)
-	if iPlayer == iHolyRome:
-		sName = "HolyRome"
-	elif iPlayer == iAztecs:
-		sName = "Aztecs"
 
 	lCorePlotList = Areas.getCoreArea(iPlayer)
 	bCoreChanged = bForce
@@ -272,10 +260,6 @@ def exportAllCores():
 	for iPlayer in range(iNumPlayers):
 		iCiv = gc.getPlayer(iPlayer).getCivilizationType()
 		sName = gc.getCivilizationInfo(iCiv).getShortDescription(0)
-		if iPlayer == iHolyRome:
-			sName = "HolyRome"
-		elif iPlayer == iAztecs:
-			sName = "Aztecs"
 
 		lCorePlots = [(x, y) for (x, y) in utils.getWorldPlotsList() if gc.getMap().plot(x, y).isCore(iPlayer)]
 		BL, TR = getTLBR(lCorePlots)
@@ -310,10 +294,6 @@ def exportAllCores():
 def exportSettlerMap(iPlayer, bForce = False, bAll = False):
 	iCiv = gc.getPlayer(iPlayer).getCivilizationType()
 	sName = gc.getCivilizationInfo(iCiv).getShortDescription(0)
-	if iPlayer == iHolyRome:
-		sName = "HolyRome"
-	elif iPlayer == iAztecs:
-		sName = "Aztecs"
 
 	bSettlerValueChanged = bForce
 	if not bSettlerValueChanged:
@@ -357,10 +337,6 @@ def exportSettlerMap(iPlayer, bForce = False, bAll = False):
 def exportWarMap(iPlayer, bForce = False, bAll = False):
 	iCiv = gc.getPlayer(iPlayer).getCivilizationType()
 	sName = gc.getCivilizationInfo(iCiv).getShortDescription(0)
-	if iPlayer == iHolyRome:
-		sName = "HolyRome"
-	elif iPlayer == iAztecs:
-		sName = "Aztecs"
 
 	bWarMapChanged = bForce
 	if not bWarMapChanged:

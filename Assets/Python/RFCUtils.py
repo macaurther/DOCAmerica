@@ -1094,14 +1094,6 @@ class RFCUtils:
 			if plot.getFeatureType() in [iMarsh, iJungle]: return False
 			
 		return True
-		
-	def handleChineseCities(self, pUnit):
-		lCities = [(x, y) for (x, y) in lChineseCities if self.isFree(iChina, (x, y), True, True, True)]
-
-		if lCities:
-			x, y = self.getRandomEntry(lCities)
-			gc.getPlayer(iChina).found(x, y)
-			pUnit.kill(False, iBarbarian)
 				
 	def foundCapital(self, iPlayer, tPlot, sName, iSize, iCulture, lBuildings=[], lReligions=[], iScenario=False):
 	
@@ -1409,7 +1401,7 @@ class RFCUtils:
 		
 	def getScenario(self):
 		
-		return i1700AD
+		return i3000BC
 		
 	def getScenarioStartYear(self):
 		lStartYears = [-3000, 600, 1700]
@@ -1600,25 +1592,6 @@ class RFCUtils:
 		else:
 			return False
 					
-		# Thailand cannot respawn when Khmer is alive and vice versa
-		if iPlayer == iThailand and gc.getPlayer(iKhmer).isAlive(): return False
-		if iPlayer == iKhmer and gc.getPlayer(iThailand).isAlive(): return False
-		
-		# Rome cannot respawn when Italy is alive and vice versa
-		if iPlayer == iRome and gc.getPlayer(iItaly).isAlive(): return False
-		if iPlayer == iItaly and gc.getPlayer(iRome).isAlive(): return False
-		
-		# Greece cannot respawn when Byzantium is alive and vice versa
-		if iPlayer == iGreece and gc.getPlayer(iByzantium).isAlive(): return False
-		if iPlayer == iByzantium and gc.getPlayer(iGreece).isAlive(): return False
-		
-		# India cannot respawn when Mughals are alive (not vice versa -> Pakistan)
-		if iPlayer == iIndia and gc.getPlayer(iMughals).isAlive(): return False
-		
-		# Exception during Japanese UHV
-		if self.getHumanID() == iJapan and iGameTurn >= getTurnForYear(1920) and iGameTurn <= getTurnForYear(1945):
-			if iPlayer in [iChina, iKorea, iIndonesia, iThailand]:
-				return False
 		
 		if not gc.getPlayer(iPlayer).isAlive() and iGameTurn > data.players[iPlayer].iLastTurnAlive + self.getTurns(20):
 			if iPlayer not in dRebirth or iGameTurn > getTurnForYear(dRebirth[iPlayer]) + 10:
@@ -1833,10 +1806,6 @@ class RFCUtils:
 			self.makeUnitAI(iUnit, iPlayer, (pWinningUnit.getX(), pWinningUnit.getY()), UnitAITypes.UNITAI_WORKER, 1)
 			CyInterface().addMessage(pWinningUnit.getOwner(), True, 15, CyTranslator().getText("TXT_KEY_UP_ENSLAVE_WIN", ()), 'SND_REVOLTEND', 1, gc.getUnitInfo(iUnit).getButton(), ColorTypes(8), pWinningUnit.getX(), pWinningUnit.getY(), True, True)
 			CyInterface().addMessage(pLosingUnit.getOwner(), True, 15, CyTranslator().getText("TXT_KEY_UP_ENSLAVE_LOSE", ()), 'SND_REVOLTEND', 1, gc.getUnitInfo(iUnit).getButton(), ColorTypes(7), pWinningUnit.getX(), pWinningUnit.getY(), True, True)
-			
-			if iPlayer == iAztecs:
-				if pLosingUnit.getOwner() not in lCivGroups[5] and pLosingUnit.getOwner() < iNumPlayers:
-					data.iAztecSlaves += 1
 					
 	def triggerMeltdown(self, iPlayer, iCity):
 		print "trigger meltdown"
