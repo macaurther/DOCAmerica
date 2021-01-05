@@ -38,24 +38,9 @@ tQufuBR = (106, 46)
 tMecca = (75, 33)
 
 dCatholicPreference = {
-iEgypt		: 80,
-iGreece		: 80,
-iRome		: 95,
-iEthiopia	: 80,
-iByzantium	: 90,
-iVikings	: 20,
-iArabia		: 80,
 iSpain		: 95,
 iFrance		: 75,
 iEngland	: 30,
-iHolyRome	: 55,
-iRussia		: 80,
-iNetherlands	: 10,
-iPoland		: 80,
-iPortugal	: 95,
-iItaly		: 90,
-iCongo		: 80,
-iGermany	: 25,
 iAmerica	: 20,
 }
 
@@ -64,10 +49,10 @@ def getCatholicPreference(iPlayer):
 		return 50
 	return dCatholicPreference[iPlayer]
 
-lOrthodoxFounders = (iByzantium, iGreece, iRussia, iEthiopia, iEgypt, iCarthage, iPersia, iBabylonia, iRome)
-lOrthodoxEast = [iByzantium, iGreece, iRussia, iEthiopia, iEgypt, iCarthage, iPersia, iBabylonia]
-lOrthodoxMiddle = [iByzantium, iGreece, iRussia, iEthiopia, iEgypt, iCarthage, iPersia, iBabylonia, iRome, iHolyRome, iVikings]
-lOrthodoxWest = [iByzantium, iGreece, iRussia, iEthiopia, iEgypt, iCarthage, iPersia, iBabylonia, iRome, iHolyRome, iVikings, iFrance, iEngland]
+lOrthodoxFounders = ()
+lOrthodoxEast = []
+lOrthodoxMiddle = []
+lOrthodoxWest = [iFrance, iEngland]
 
 class Religions:
 
@@ -77,11 +62,6 @@ class Religions:
 		
 	def checkTurn(self, iGameTurn):
 	
-		if utils.getHumanID() != iIndia:
-			if iGameTurn == getTurnForYear(-2000)+1:
-				if not gc.getGame().isReligionFounded(iHinduism):
-					if not gc.getMap().plot(92, 39).getPlotCity().isNone():
-						self.foundReligion((92, 39), iHinduism)
 				
 		self.checkJudaism(iGameTurn)
 		
@@ -463,12 +443,6 @@ class Religions:
 		for iPlayer in range(iNumPlayers):
 			if [city for city in utils.getCityList(iPlayer) if city.getOwner() == iPlayer]:
 				self.reformationChoice(iPlayer)
-				
-		for iPlayer in range(iNumPlayers):
-			if data.players[iPlayer].iReformationDecision == 2:
-				for iTargetPlayer in range(iNumPlayers):
-					if data.players[iTargetPlayer].iReformationDecision == 0 and utils.getHumanID() != iTargetPlayer and iTargetPlayer != iNetherlands and not utils.isAVassal(iTargetPlayer):
-						gc.getTeam(iPlayer).declareWar(iTargetPlayer, True, WarPlanTypes.WARPLAN_DOGPILE)
 						
 		pHolyCity = gc.getGame().getHolyCity(iProtestantism)
 		if data.players[pHolyCity.getOwner()].iReformationDecision == 0:

@@ -850,7 +850,7 @@ class RFCUtils:
 			
 		tTargetPlot = self.getRandomEntry(lFreePlots)
 		
-		if iCiv in [iSpain, iPortugal, iNetherlands]:
+		if iCiv in [iSpain]:
 			iNumUnits = 2
 		elif iCiv in [iFrance, iEngland]:
 			iNumUnits = 3
@@ -872,7 +872,7 @@ class RFCUtils:
 		x, y = tPlot
 		if iCiv in [iPortugal, iSpain]:
 			iNumUnits = 1
-		elif iCiv in [iFrance, iEngland, iNetherlands]:
+		elif iCiv in [iFrance, iEngland]:
 			iNumUnits = 2
 		if gc.getMap().plot(x, y).isCity():
 			self.flipCity(tPlot, False, True, iCiv, [])
@@ -911,7 +911,7 @@ class RFCUtils:
 		if iPlayer == iPortugal and self.getHumanID() != iPortugal:
 			iNumCities = 5
 
-		lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+		lCivList = [iSpain, iFrance, iEngland, iPortugal]
 		id = lCivList.index(iPlayer)
 
 		lPlotList = tTradingCompanyPlotLists[id][:]
@@ -1408,9 +1408,6 @@ class RFCUtils:
 		return lPlayerNumbers.index(iHighestEntry)
 		
 	def getScenario(self):
-		if gc.getPlayer(iEgypt).isPlayable(): return i3000BC
-		
-		if gc.getPlayer(iByzantium).isPlayable(): return i600AD
 		
 		return i1700AD
 		

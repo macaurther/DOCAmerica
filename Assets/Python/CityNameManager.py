@@ -23,7 +23,7 @@ def isResurrected(iCiv):
 def getLanguages(iCiv):
 	pCiv = gc.getPlayer(iCiv)
 
-	elif iCiv == iSpain: return (iLangSpanish,)
+	if iCiv == iSpain: return (iLangSpanish,)
 	elif iCiv == iFrance: return (iLangFrench,)
 	elif iCiv == iEngland: return (iLangEnglish,)
 	elif iCiv == iAmerica: return (iLangAmerican, iLangEnglish)
@@ -503,6 +503,7 @@ iLangAmerican :
 dIdentifiers = {
 	"San Francisco"		:	"San Francisco",}
 
+tRenames = (
 #Language: Spanish
 {
 	"Almer&#237;a"		:	"Almer&#237;a",

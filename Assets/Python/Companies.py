@@ -15,7 +15,7 @@ PyPlayer = PyHelpers.PyPlayer
 tCompanyTechs = (iCurrency, iExploration, iBiology, iRefrigeration, iThermodynamics, iMetallurgy, iRefining, iConsumerism, iComputers)
 tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10, 12) # kind of arbitrary currently, see how this plays out
 
-lTradingCompanyCivs = [iSpain, iFrance, iEngland, iPortugal, iNetherlands, iVikings] # Vikings too now
+lTradingCompanyCivs = [iSpain, iFrance, iEngland]
 
 tSilkRouteTL = (80, 46)
 tSilkRouteBR = (99, 52)
@@ -143,8 +143,6 @@ class Companies:
 		if iCompany == iTradingCompany:
 			if not iOwner in lTradingCompanyCivs:
 				return -1
-			if iOwner == iNetherlands:
-				iValue += 2
 		elif iCompany == iSilkRoute:
 			if city.getRegionID() in [rCentralAsia, rPersia]:
 				iValue += 2
@@ -253,15 +251,6 @@ class Companies:
 							iTempValue += city.getNumBonuses(iBonus) * 2
 					else:
 						iTempValue += city.getNumBonuses(iBonus) * 2
-		
-		# Brazilian UP: sugar counts as oil for Oil Industry
-		if iOwner == iBrazil and iCompany == iOilIndustry:
-			if city.getNumBonuses(iSugar) > 0:
-				bFound = True
-				iTempValue += city.getNumBonuses(iSugar) * 3
-					
-		if not bFound: return -1
-		iValue += iTempValue
 		
 		# competition
 		if iCompany == iCerealIndustry and city.isHasCorporation(iFishingIndustry): iValue /= 2

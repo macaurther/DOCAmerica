@@ -4307,7 +4307,7 @@ def canTriggerTradingCompanyConquerors(argsList):
 	
 	if utils.getScenario() == i1700AD: return False
 
-	lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+	lCivList = [iSpain, iFrance, iEngland]
 	
 	if iPlayer not in lCivList or utils.getHumanID() != iPlayer:
 		return False
@@ -4327,7 +4327,7 @@ def canChooseTradingCompanyConquerors1(argsList):
 	iPlayer = kTriggeredData.ePlayer
 	pPlayer = gc.getPlayer(iPlayer)
 
-	lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+	lCivList = [iSpain, iFrance, iEngland]
 	id = lCivList.index(iPlayer)
 
 	targetList = data.lTradingCompanyConquerorsTargets[id]
@@ -4347,7 +4347,7 @@ def getTradingCompanyConquerors1HelpText(argsList):
 	sTargetCivs = ''
 	sTargetCities = ''
 
-	lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+	lCivList = [iSpain, iFrance, iEngland]
 	id = lCivList.index(iPlayer)
 
 	targetList = data.lTradingCompanyConquerorsTargets[id]
@@ -4388,7 +4388,7 @@ def doTradingCompanyConquerors1(argsList):
 	iPlayer = kTriggeredData.ePlayer
 	pPlayer = gc.getPlayer(iPlayer)
 
-	lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+	lCivList = [iSpain, iFrance, iEngland]
 	id = lCivList.index(iPlayer)
 
 	targetList = data.lTradingCompanyConquerorsTargets[id]
@@ -4434,7 +4434,7 @@ def canChooseTradingCompanyConquerors2(argsList):
 	kTriggeredData = argsList[1]
 	iPlayer = kTriggeredData.ePlayer
 
-	lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+	lCivList = [iSpain, iFrance, iEngland]
 	id = lCivList.index(iPlayer)
 
 	targetList = data.lTradingCompanyConquerorsTargets[id]
@@ -4455,7 +4455,7 @@ def getTradingCompanyConquerors2HelpText(argsList):
 	sTargetCivs = ''
 	sTargetCities = ''
 
-	lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+	lCivList = [iSpain, iFrance, iEngland]
 	id = lCivList.index(iPlayer)
 
 	targetList = data.lTradingCompanyConquerorsTargets[id]
@@ -4489,7 +4489,7 @@ def doTradingCompanyConquerors2(argsList):
 	kTriggeredData = argsList[1]
 	iPlayer = kTriggeredData.ePlayer
 
-	lCivList = [iSpain, iFrance, iEngland, iPortugal, iNetherlands]
+	lCivList = [iSpain, iFrance, iEngland]
 	id = lCivList.index(iPlayer)
 
 	targetList = data.lTradingCompanyConquerorsTargets[id]
@@ -4508,10 +4508,7 @@ def doTradingCompanyConquerors2(argsList):
 				break
 
 	if tSeaPlot != -1:
-		if iPlayer == iNetherlands:
-			utils.makeUnit(iEastIndiaman, iPlayer, tSeaPlot, 1)
-		else:
-			utils.makeUnit(iGalleon, iPlayer, tSeaPlot, 1)
+		utils.makeUnit(iGalleon, iPlayer, tSeaPlot, 1)
 	
 ######## Reformation (Leoreth) ########
 
@@ -4564,11 +4561,6 @@ def doReformation1(argsList):
 	pHolyCity = gc.getGame().getHolyCity(iProtestantism)
 	if pHolyCity.getOwner() == iPlayer:
 		pHolyCity.setNumRealBuilding(iProtestantShrine, 1)
-	
-	if iPlayer != iNetherlands:
-		for iCiv in range(iNumPlayers):
-			if data.players[iCiv].iReformationDecision == 2:
-				gc.getTeam(iCiv).declareWar(iPlayer, True, WarPlanTypes.WARPLAN_DOGPILE)
 	
 def canChooseReformation2(argsList):
 	return True

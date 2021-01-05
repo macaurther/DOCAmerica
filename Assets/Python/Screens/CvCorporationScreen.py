@@ -7,7 +7,6 @@ import ScreenInput
 import CvScreenEnums
 
 from Consts import iEconomics as iEconomicsTech
-from Consts import iBrazil
 from Consts import iSugar
 import companies
 
@@ -203,9 +202,6 @@ class CvCorporationScreen:
 						szList = u""
 						
 			iActivePlayer = CyGame().getActivePlayer()
-			if iActivePlayer == iBrazil and i == companies.iOilIndustry:
-				eBonus = iSugar
-				szList += u", %c" % (gc.getBonusInfo(eBonus).getChar(), )
 				
 			if len(szList) > 0:
 				szListLabels.append(szList)
@@ -369,14 +365,6 @@ class CvCorporationScreen:
 					iAvailableBonus = (pActivePlayer.getNumAvailableBonuses(eBonus))
 					szList += u"%d" % iAvailableBonus
 					szListLabels.append(szList)
-			if iActivePlayer == iBrazil and iLinkCorporation == companies.iOilIndustry:
-				eBonus = iSugar
-				szList = u""
-				szList += u"%c" % (gc.getBonusInfo(eBonus).getChar(), )
-				szList += u" : "
-				iAvailableBonus = (pActivePlayer.getNumAvailableBonuses(eBonus))
-				szList += u"%d" % iAvailableBonus
-				szListLabels.append(szList)
 			
 			iRow = 0
 			for szList in szListLabels:

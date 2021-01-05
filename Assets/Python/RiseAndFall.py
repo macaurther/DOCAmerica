@@ -259,15 +259,16 @@ class RiseAndFall:
 		
 		self.initScenario()
 		
+		# MacAurther TODO: Why was this required??
 		# Leoreth: make sure to select the Egyptian settler
-		if pEgypt.isHuman():
-			x, y = Areas.getCapital(iEgypt)
-			plotEgypt = gc.getMap().plot(x, y)  
-			for i in range(plotEgypt.getNumUnits()):
-				unit = plotEgypt.getUnit(i)
-				if unit.getUnitType() == iSettler:
-					CyInterface().selectUnit(unit, True, False, False)
-					break
+		#if pEgypt.isHuman():
+		#	x, y = Areas.getCapital(iEgypt)
+		#	plotEgypt = gc.getMap().plot(x, y)  
+		#	for i in range(plotEgypt.getNumUnits()):
+		#		unit = plotEgypt.getUnit(i)
+		#		if unit.getUnitType() == iSettler:
+		#			CyInterface().selectUnit(unit, True, False, False)
+		#			break
 					
 	def initScenario(self):
 		self.updateStartingPlots()
@@ -390,9 +391,6 @@ class RiseAndFall:
 		for x, y in [(62, 51)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iHolyRome, 100, True)
 			
-		for x, y in [(58, 52), (58, 53)]:
-			utils.convertPlotCulture(gc.getMap().plot(x, y), iNetherlands, 100, True)
-			
 		for x, y in [(64, 53), (66, 55)]:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iPoland, 100, True)
 			
@@ -400,15 +398,12 @@ class RiseAndFall:
 			utils.convertPlotCulture(gc.getMap().plot(x, y), iRussia, 100, True)
 			
 	def prepareColonists(self):
-		for iPlayer in [iSpain, iFrance, iEngland, iPortugal, iNetherlands, iGermany, iVikings]:
+		for iPlayer in [iSpain, iFrance, iEngland]:
 			data.players[iPlayer].iExplorationTurn = getTurnForYear(1700)
 			
-		data.players[iVikings].iColonistsAlreadyGiven = 1
 		data.players[iSpain].iColonistsAlreadyGiven = 7
 		data.players[iFrance].iColonistsAlreadyGiven = 3
 		data.players[iEngland].iColonistsAlreadyGiven = 3
-		data.players[iPortugal].iColonistsAlreadyGiven = 6
-		data.players[iNetherlands].iColonistsAlreadyGiven = 4
 		
 	def init1700ADDiplomacy(self):
 		teamEngland.declareWar(iMughals, False, WarPlanTypes.WARPLAN_LIMITED)
@@ -425,41 +420,10 @@ class RiseAndFall:
 					data.players[iPlayer].lGoals[i] = 0
 					
 	def foundCapitals(self):
-		if utils.getScenario() == i600AD:
-		
-			# China
-			self.prepareChina()
-			tCapital = Areas.getCapital(iChina)
-			lBuildings = [iGranary, iConfucianTemple, iTaixue, iBarracks, iForge]
-			utils.foundCapital(iChina, tCapital, "Xi'an", 4, 100, lBuildings, [iConfucianism, iTaoism])
-			
-		elif utils.getScenario() == i1700AD:
-			
-			# Chengdu
-			pChengdu = gc.getMap().plot(99, 41).getPlotCity()
-			pChengdu.setCulture(iChina, 100, True)
+		pass
 
 	def flipStartingTerritory(self):
-	
-		if utils.getScenario() == i600AD:
-			
-			# China
-			tTL, tBR = Areas.tBirthArea[iChina]
-			if utils.getHumanID() != iChina: tTL = (99, 39) # 4 tiles further south
-			self.startingFlip(iChina, [(tTL, tBR)])
-			
-		if utils.getScenario() == i1700AD:
-		
-			# China (Tibet)
-			tTibetTL = (94, 42)
-			tTibetBR = (97, 45)
-			tManchuriaTL = (105, 51)
-			tManchuriaBR = (109, 55)
-			self.startingFlip(iChina, [(tTibetTL, tTibetBR), (tManchuriaTL, tManchuriaBR)])
-			
-			# Russia (Sankt Peterburg)
-			utils.convertPlotCulture(gc.getMap().plot(68, 58), iRussia, 100, True)
-			utils.convertPlotCulture(gc.getMap().plot(67, 57), iRussia, 100, True)
+		pass
 			
 			
 	def startingFlip(self, iPlayer, lRegionList):
@@ -471,238 +435,11 @@ class RiseAndFall:
 			if len(tuple) > 2: tExceptions = tuple[2]
 			self.convertSurroundingCities(iPlayer, utils.getPlotList(tTL, tBR, tExceptions))
 			self.convertSurroundingPlotCulture(iPlayer, utils.getPlotList(tTL, tBR, tExceptions))
-
-
-	def prepareChina(self):
-		pGuiyang = gc.getMap().plot(102, 41)
-		pGuiyang.getPlotCity().kill()
-		pGuiyang.setImprovementType(-1)
-		pGuiyang.setRouteType(-1)
-		pGuiyang.setFeatureType(iForest, 0)
-
-		if utils.getScenario() == i600AD:
-			pXian = gc.getMap().plot(100, 44)
-			pXian.getPlotCity().kill()
-			pXian.setImprovementType(-1)
-			pXian.setRouteType(-1)
-			pXian.setFeatureType(iForest, 0)
-			
-		elif utils.getScenario() == i1700AD:
-			pBeijing = gc.getMap().plot(tBeijing[0], tBeijing[1])
-			pBeijing.getPlotCity().kill()
-			pBeijing.setImprovementType(-1)
-			pBeijing.setRouteType(-1)
-
-		tCultureRegionTL = (98, 37)
-		tCultureRegionBR = (109, 49)
-		for (x, y) in utils.getPlotList(tCultureRegionTL, tCultureRegionBR):
-			pPlot = gc.getMap().plot(x, y)
-			bCity = False
-			for (i, j) in utils.surroundingPlots((x, y)):
-				loopPlot = gc.getMap().plot(i, j)
-				if loopPlot.isCity():
-					bCity = True
-					loopPlot.getPlotCity().setCulture(iIndependent2, 0, False)
-			if bCity:
-				pPlot.setCulture(iIndependent2, 1, True)
-			else:
-				pPlot.setCulture(iIndependent2, 0, True)
-				pPlot.setOwner(-1)
-					
-		pIndependent.found(99, 41)
-		utils.makeUnit(iArcher, iIndependent, (99, 41), 1)
-		pChengdu = gc.getMap().plot(99, 41).getPlotCity()
-		pChengdu.setName("Chengdu", False)
-		pChengdu.setPopulation(2)
-		pChengdu.setHasReligion(iConfucianism, True, False, False)
-		pChengdu.setHasRealBuilding(iGranary, True)
-		pChengdu.setHasRealBuilding(iDujiangyan, True)
-		
-		if utils.getScenario() == i600AD:
-			pBarbarian.found(105, 49)
-			utils.makeUnit(iArcher, iBarbarian, (105, 49), 1)
-			pShenyang = gc.getMap().plot(105, 49).getPlotCity()
-			pShenyang.setName("Simiyan hoton", False)
-			pShenyang.setPopulation(2)
-			pShenyang.setHasReligion(iConfucianism, True, False, False)
-			pShenyang.setHasRealBuilding(iGranary, True)
-			pShenyang.setHasRealBuilding(iWalls, True)
-			pShenyang.setHasRealBuilding(iConfucianTemple, True)
-			
-	def adjust600ADWonders(self):
-		lExpiredWonders = [iOracle, iIshtarGate, iTerracottaArmy, iHangingGardens, iGreatCothon, iApadanaPalace, iColossus, iStatueOfZeus, iGreatMausoleum, iTempleOfArtemis, iAquaAppia, iAlKhazneh, iJetavanaramaya]
-		self.expireWonders(lExpiredWonders)
-		
-		pBeijing = gc.getMap().plot(102, 47).getPlotCity()
-		pBeijing.setBuildingOriginalOwner(iTaoistShrine, iChina)
-		pBeijing.setBuildingOriginalOwner(iGreatWall, iChina)
-		
-		pNanjing = gc.getMap().plot(105, 43).getPlotCity()
-		pNanjing.setBuildingOriginalOwner(iConfucianShrine, iChina)
-		
-		pPataliputra = gc.getMap().plot(94, 40).getPlotCity()
-		pPataliputra.setBuildingOriginalOwner(iHinduShrine, iIndia)
-		pPataliputra.setBuildingOriginalOwner(iBuddhistShrine, iIndia)
-		
-		pSirajis = gc.getMap().plot(82, 38).getPlotCity()
-		pSirajis.setBuildingOriginalOwner(iZoroastrianShrine, iPersia)
-		
-		pAlexandria = gc.getMap().plot(67, 36).getPlotCity()
-		pAlexandria.setBuildingOriginalOwner(iGreatLighthouse, iEgypt)
-		pAlexandria.setBuildingOriginalOwner(iGreatLibrary, iEgypt)
-		
-		pMemphis = gc.getMap().plot(69, 35).getPlotCity()
-		pMemphis.setBuildingOriginalOwner(iPyramids, iEgypt)
-		pMemphis.setBuildingOriginalOwner(iGreatSphinx, iEgypt)
-		
-		pAthens = gc.getMap().plot(67, 41).getPlotCity()
-		pAthens.setBuildingOriginalOwner(iParthenon, iGreece)
-		
-		pRome = gc.getMap().plot(60, 44).getPlotCity()
-		pRome.setBuildingOriginalOwner(iFlavianAmphitheatre, iRome)
-		
-		pChichenItza = gc.getMap().plot(23, 37).getPlotCity()
-		pChichenItza.setBuildingOriginalOwner(iTempleOfKukulkan, iMaya)
-		
-	def adjust1700ADWonders(self):
-		lExpiredWonders = [iOracle, iIshtarGate, iHangingGardens, iGreatCothon, iApadanaPalace, iColossus, iStatueOfZeus, iGreatMausoleum, iTempleOfArtemis, iAquaAppia, iAlKhazneh, iJetavanaramaya, iGreatLighthouse, iMoaiStatues, iFlavianAmphitheatre, iGreatLibrary, iGondeshapur, iSilverTreeFountain, iAlamut]
-		self.expireWonders(lExpiredWonders)
-	
-		pMilan = gc.getMap().plot(59, 47).getPlotCity()
-		pMilan.setBuildingOriginalOwner(iSantaMariaDelFiore, iItaly)
-		pMilan.setBuildingOriginalOwner(iSanMarcoBasilica, iItaly)
-		
-		pDjenne = gc.getMap().plot(51, 29).getPlotCity()
-		pDjenne.setBuildingOriginalOwner(iUniversityOfSankore, iMali)
-		
-		pJerusalem = gc.getMap().plot(73, 38).getPlotCity()
-		pJerusalem.setBuildingOriginalOwner(iJewishShrine, iIndependent)
-		pJerusalem.setBuildingOriginalOwner(iOrthodoxShrine, iByzantium)
-		pJerusalem.setBuildingOriginalOwner(iDomeOfTheRock, iArabia)
-		
-		pBaghdad = gc.getMap().plot(77, 40).getPlotCity()
-		pBaghdad.setBuildingOriginalOwner(iSpiralMinaret, iArabia)
-		
-		pRome = gc.getMap().plot(60, 44).getPlotCity()
-		pRome.setBuildingOriginalOwner(iFlavianAmphitheatre, iRome)
-		pRome.setBuildingOriginalOwner(iSistineChapel, iItaly)
-		
-		pSeville = gc.getMap().plot(51, 41).getPlotCity()
-		pSeville.setBuildingOriginalOwner(iMezquita, iMoors)
-		
-		pBangkok = gc.getMap().plot(101, 33).getPlotCity()
-		pBangkok.setBuildingOriginalOwner(iWatPreahPisnulok, iKhmer)
-		
-		pChichenItza = gc.getMap().plot(23, 37).getPlotCity()
-		pChichenItza.setBuildingOriginalOwner(iTempleOfKukulkan, iMaya)
-		
-		pConstantinople = gc.getMap().plot(68, 45).getPlotCity()
-		pConstantinople.setBuildingOriginalOwner(iTheodosianWalls, iByzantium)
-		pConstantinople.setBuildingOriginalOwner(iHagiaSophia, iByzantium)
-		
-		pJakarta = gc.getMap().plot(104, 25).getPlotCity()
-		pJakarta.setBuildingOriginalOwner(iBorobudur, iIndonesia)
-		
-		pMexicoCity = gc.getMap().plot(18, 37).getPlotCity()
-		pMexicoCity.setBuildingOriginalOwner(iFloatingGardens, iAztecs)
-		
-		pCairo = gc.getMap().plot(69, 35).getPlotCity()
-		pCairo.setBuildingOriginalOwner(iPyramids, iEgypt)
-		pCairo.setBuildingOriginalOwner(iGreatSphinx, iEgypt)
-		
-		pAthens = gc.getMap().plot(67, 41).getPlotCity()
-		pAthens.setBuildingOriginalOwner(iParthenon, iGreece)
-		
-		pShiraz = gc.getMap().plot(82, 38).getPlotCity()
-		pShiraz.setBuildingOriginalOwner(iZoroastrianShrine, iPersia)
-		
-		pPataliputra = gc.getMap().plot(94, 40).getPlotCity()
-		pPataliputra.setBuildingOriginalOwner(iHinduShrine, iIndia)
-		pPataliputra.setBuildingOriginalOwner(iBuddhistShrine, iIndia)
-		
-		pMecca = gc.getMap().plot(75, 33).getPlotCity()
-		pMecca.setBuildingOriginalOwner(iIslamicShrine, iArabia)
 		
 	def expireWonders(self, lWonders):
 		for iWonder in lWonders:
 			gc.getGame().incrementBuildingClassCreatedCount(gc.getBuildingInfo(iWonder).getBuildingClassType())
 			
-	def adjust600ADGreatPeople(self):
-		dGreatPeopleCreated = {
-			iChina: 4,
-			iKorea: 1,
-			iByzantium: 1,
-			iJapan: 0,
-			iVikings: 0,
-			iTurks: 0,
-		}
-		
-		dGreatGeneralsCreated = {
-			iChina: 1,
-			iKorea: 0,
-			iByzantium: 0,
-			iJapan: 0,
-			iVikings: 0,
-			iTurks: 0,
-		}
-		
-		for iPlayer, iGreatPeople in dGreatPeopleCreated.iteritems():
-			gc.getPlayer(iPlayer).changeGreatPeopleCreated(iGreatPeople)
-			
-		for iPlayer, iGreatGenerals in dGreatGeneralsCreated.iteritems():
-			gc.getPlayer(iPlayer).changeGreatGeneralsCreated(iGreatGenerals)
-		
-	def adjust1700ADGreatPeople(self):
-		dGreatPeopleCreated = {
-			iChina: 12,
-			iIndia: 8,
-			iPersia: 4,
-			iTamils: 5,
-			iKorea: 6,
-			iJapan: 6,
-			iVikings: 8,
-			iTurks: 4,
-			iSpain: 8,
-			iFrance: 8,
-			iEngland: 8,
-			iHolyRome: 8,
-			iPoland: 8,
-			iPortugal: 8,
-			iMughals: 8,
-			iOttomans: 8,
-			iThailand: 8,
-			iCongo: 4,
-			iNetherlands: 6,
-		}
-		
-		dGreatGeneralsCreated = {
-			iChina: 4,
-			iIndia: 3,
-			iPersia: 2,
-			iTamils: 2,
-			iKorea: 3,
-			iJapan: 3,
-			iVikings: 3,
-			iTurks: 3,
-			iSpain: 4,
-			iFrance: 3,
-			iEngland: 3,
-			iHolyRome: 4,
-			iPoland: 3,
-			iPortugal: 3,
-			iMughals: 4,
-			iOttomans: 5,
-			iThailand: 3,
-			iCongo: 2,
-			iNetherlands: 3,
-		}
-		
-		for iPlayer, iGreatPeople in dGreatPeopleCreated.iteritems():
-			gc.getPlayer(iPlayer).changeGreatPeopleCreated(iGreatPeople)
-			
-		for iPlayer, iGreatGenerals in dGreatGeneralsCreated.iteritems():
-			gc.getPlayer(iPlayer).changeGreatGeneralsCreated(iGreatGenerals)
-
 	def setupBirthTurnModifiers(self):
 		for iCiv in range(iNumPlayers):
 			if tBirth[iCiv] > -3000 and not gc.getPlayer(iCiv).isHuman():
@@ -807,109 +544,29 @@ class RiseAndFall:
 				utils.updateMinorTechs(iIndependent, iBarbarian)
 			if pIndependent2.isAlive():
 				utils.updateMinorTechs(iIndependent2, iBarbarian)
-
-		#Leoreth: give Phoenicia a settler in Qart-Hadasht in 820BC
-		if not pCarthage.isHuman() and iGameTurn == getTurnForYear(-820) - (data.iSeed % 10):
-			utils.makeUnit(iSettler, iCarthage, (58, 39), 1)
-			utils.makeUnit(iArcher, iCarthage, (58, 39), 2)
-			utils.makeUnit(iWorker, iCarthage, (58, 39), 2)
-			utils.makeUnit(iWarElephant, iCarthage, (58, 39), 2)
 			
-		if iGameTurn == getTurnForYear(476):
-			if pItaly.isHuman() and pRome.isAlive():
-				sta.completeCollapse(iRome)
-				
-		if iGameTurn == getTurnForYear(-50):
-			if pByzantium.isHuman() and pGreece.isAlive():
-				sta.completeCollapse(iGreece)
-				
-		if iGameTurn == getTurnForYear(tBirth[iIndia])-utils.getTurns(1):
-			if pHarappa.isAlive() and not pHarappa.isHuman():
-				sta.completeCollapse(iHarappa)
-			
-		#Colonists
-		if iGameTurn == getTurnForYear(-850):
-			self.giveEarlyColonists(iGreece)
-		elif iGameTurn == getTurnForYear(-700): # removed their colonists because of the Qart-Hadasht spawn
-			self.giveEarlyColonists(iCarthage)
-			
-		elif iGameTurn == getTurnForYear(-600):
-			self.giveEarlyColonists(iRome)
-		elif iGameTurn == getTurnForYear(-400):
-			self.giveEarlyColonists(iRome)
-
-		if utils.isYearIn(860, 1250):
-			if iGameTurn % utils.getTurns(10) == 9:
-				self.giveRaiders(iVikings, Areas.getBroaderArea(iVikings))
 		
 		if utils.isYearIn(1350, 1918):
-			for iPlayer in [iSpain, iEngland, iFrance, iPortugal, iNetherlands, iVikings, iGermany]:
+			for iPlayer in [iSpain, iEngland, iFrance]:
 				if iGameTurn == data.players[iPlayer].iExplorationTurn + 1 + data.players[iPlayer].iColonistsAlreadyGiven * 8:
 					self.giveColonists(iPlayer)
 					
-		if iGameTurn == getTurnForYear(710)-1:
-			x, y = 51, 37
-			if gc.getMap().plot(x,y).isCity():
-				marrakesh = gc.getMap().plot(x,y).getPlotCity()
-				marrakesh.setHasReligion(iIslam, True, False, False)
 				
-				utils.makeUnit(iSettler, marrakesh.getOwner(), (x,y), 1)
-				utils.makeUnit(iWorker, marrakesh.getOwner(), (x,y), 1)
-				
-		# Leoreth: help human with Aztec UHV - prevent super London getting in the way
-		if iGameTurn == getTurnForYear(1500) and utils.getHumanID() == iAztecs:
-			x, y = Areas.getCapital(iEngland)
-			plot = gc.getMap().plot(x, y)
-			if plot.isCity():
-				city = plot.getPlotCity()
-				if city.getPopulation() > 14:
-					city.changePopulation(-3)
-				
-		# Leoreth: make sure Aztecs are dead in 1700 if a civ that spawns from that point is selected
-		if iGameTurn == getTurnForYear(1700)-2:
-			if utils.getHumanID() >= iGermany and pAztecs.isAlive():
-				sta.completeCollapse(iAztecs)
-				#utils.killAndFragmentCiv(iAztecs, iIndependent, iIndependent2, -1, False)
 				
 				
 		for iLoopCiv in [iPlayer for iPlayer in range(iNumMajorPlayers) if tBirth[iPlayer] > utils.getScenarioStartYear()]:
 			if iGameTurn >= getTurnForYear(tBirth[iLoopCiv]) - 2 and iGameTurn <= getTurnForYear(tBirth[iLoopCiv]) + 6:
 				self.initBirth(iGameTurn, tBirth[iLoopCiv], iLoopCiv)
 
-
-
-		if iGameTurn == getTurnForYear(600):
-			if utils.getScenario() == i600AD:  #late start condition
-				tTL, tBR = Areas.tBirthArea[iChina]
-				if utils.getHumanID() != iChina: tTL = (99, 39) # 4 tiles further north
-				lPlots = utils.getPlotList(tTL, tBR)
-				iNumAICitiesConverted, iNumHumanCitiesToConvert = self.convertSurroundingCities(iChina, lPlots)
-				self.convertSurroundingPlotCulture(iChina, lPlots)
-				utils.flipUnitsInArea(lPlots, iChina, iBarbarian, False, True) #remaining barbs in the region now belong to the new civ   
-				utils.flipUnitsInArea(lPlots, iChina, iIndependent, False, False) #remaining independents in the region now belong to the new civ   
-				utils.flipUnitsInArea(lPlots, iChina, iIndependent2, False, False) #remaining independents in the region now belong to the new civ
-
 				
 		#kill the remaining barbs in the region: it's necessary to do this more than once to protect those civs
-		for iPlayer in [iVikings, iSpain, iFrance, iHolyRome, iRussia, iAztecs]:
+		for iPlayer in [iSpain, iFrance]:
 			if iGameTurn >= getTurnForYear(tBirth[iPlayer])+2 and iGameTurn <= getTurnForYear(tBirth[iPlayer])+utils.getTurns(10):
 				utils.killUnitsInArea(iBarbarian, Areas.getBirthArea(iPlayer))
 				
 		#fragment utility
 		if iGameTurn >= getTurnForYear(50) and iGameTurn % utils.getTurns(15) == 6:
 			self.fragmentIndependents()
-#		if (iGameTurn >= getTurnForYear(450) and iGameTurn % utils.getTurns(30) == 12):
-#			self.fragmentBarbarians(iGameTurn)
-			
-		#fall of civs
-		#if (iGameTurn >= getTurnForYear(200) and iGameTurn % utils.getTurns(4) == 0):
-		#	self.collapseByBarbs(iGameTurn)
-		#if (iGameTurn >= getTurnForYear(-2000) and iGameTurn % utils.getTurns(18) == 0): #used to be 15 in vanilla, because we must give some time for vassal states to form
-		#	self.collapseGeneric(iGameTurn)
-		#if (iGameTurn >= getTurnForYear(-2000) and iGameTurn % utils.getTurns(13) == 7): #used to be 8 in vanilla, because we must give some time for vassal states to form
-		#	self.collapseMotherland(iGameTurn)
-		#if (iGameTurn > getTurnForYear(300) and iGameTurn % utils.getTurns(10) == 6):
-		#	self.secession(iGameTurn)
 
 		if iGameTurn % utils.getTurns(10) == 5:
 			sta.checkResurrection(iGameTurn)
@@ -994,9 +651,6 @@ class RiseAndFall:
 		
 		self.createRespawnUnits(iCiv, (x, y))
 		
-		# for colonial civs, set dynamic state religion
-		if iCiv in [iAztecs, iMaya]:
-			self.setStateReligion(iCiv)
 
 		self.assignTechs(iCiv)
 		if gc.getGame().getGameTurn() >= getTurnForYear(tBirth[gc.getGame().getActivePlayer()]):
@@ -1011,12 +665,6 @@ class RiseAndFall:
 		
 		# exclude American territory for Mexico
 		lRemovedPlots = []
-		if iCiv == iAztecs:
-			for tPlot in lRebirthPlots:
-				x, y = tPlot
-				plot = gc.getMap().plot(x, y)
-				if plot.getOwner() == iAmerica and tPlot not in Areas.getCoreArea(iAztecs, True):
-					lRemovedPlots.append(tPlot)
 					
 		for tPlot in lRemovedPlots:
 			lRebirthPlots.remove(tPlot)
@@ -1196,9 +844,6 @@ class RiseAndFall:
 		
 		lConditionalCivs = [iCanada]
 		
-		# Leoreth: extra checks for conditional civs
-		if iCiv in lConditionalCivs and utils.getHumanID() != iCiv:
-			
 				
 		tCapital = Areas.getCapital(iCiv)
 				
@@ -1258,7 +903,7 @@ class RiseAndFall:
 								break
 				print ("bDeleteEverything", bDeleteEverything)
 				if not gc.getMap().plot(x, y).isOwned():
-					if iCiv in [iNetherlands, iPortugal, iByzantium, iKorea, iThailand, iItaly, iCarthage]: #dangerous starts
+					if iCiv in []: #dangerous starts
 						data.lDeleteMode[0] = iCiv
 					if bBirthInCapital:
 						self.birthInCapital(iCiv, iPreviousOwner, tCapital, tTopLeft, tBottomRight)
@@ -1606,7 +1251,6 @@ class RiseAndFall:
 		
 	def warOnSpawn(self, iPlayer, lEnemies):
 		if iPlayer == iCanada: return
-		elif iPlayer == iGermany and utils.getHumanID() != iPlayer: return
 		
 		if gc.getGame().getGameTurn() <= getTurnForYear(tBirth[iPlayer]) + 5:
 			for iEnemy in lEnemies:
@@ -2091,7 +1735,7 @@ class RiseAndFall:
 
 
 	def createStartingUnits(self, iCiv, tPlot):
-		elif iCiv == iSpain:
+		if iCiv == iSpain:
 			iSpanishSettlers = 2
 			if utils.getHumanID() != iSpain: iSpanishSettlers = 3
 			utils.createSettlers(iCiv, iSpanishSettlers)
@@ -2187,7 +1831,7 @@ class RiseAndFall:
 
 				
 	def createStartingWorkers( self, iCiv, tPlot ):
-		elif iCiv == iSpain:
+		if iCiv == iSpain:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iFrance:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)

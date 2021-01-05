@@ -48,7 +48,7 @@ lCivStabilityGroups = [[iSpain, iFrance, iEngland],  #Euros
 lTechGroups = [[iSpain, iFrance, iEngland, iAmerica, iCanada]]  #Western
 
 
-lCivBioOldWorld = [iSpain, iFrance, iEngland, iHolyRome, iAmerica, iCanada, iIndependent, iIndependent2]
+lCivBioOldWorld = [iSpain, iFrance, iEngland, iAmerica, iCanada, iIndependent, iIndependent2]
 lCivBioNewWorld = [iNative, iBarbarian]
 
 
@@ -178,7 +178,7 @@ lEnemyCivsOnSpawn = [
 
 # Leoreth
 lTotalWarOnSpawn = [
-[iMoors], #Spain
+[], #Spain
 [], #France
 [], #England
 [], #America
@@ -519,15 +519,9 @@ iMussolini, iSejong, iBhutto, iPilsudski, iWalesa, iGerhardsen, iVargas, iMacDon
 iGeorge, iKhosrow, iBumin, iTamerlane, iEzana) = range(iNumLeaders)
 
 resurrectionLeaders = {
-	iChina : iHongwu,
-	iIndia : iShahuji,
-	iEgypt : iBaibars,
 }
 
 rebirthLeaders = {
-	iMaya : iBolivar,
-	iPersia : iAbbas,
-	iAztecs : iJuarez,
 }
 
 tTradingCompanyPlotLists = (

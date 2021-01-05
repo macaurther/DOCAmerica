@@ -8,7 +8,7 @@ def getModifier(iPlayer, iModifier):
 	return tDefaults[iModifier]
 	
 def getAdjustedModifier(iPlayer, iModifier):
-	if utils.getScenario() > i3000BC and iPlayer < iVikings:
+	if utils.getScenario() > i3000BC:
 		if iModifier in dLateScenarioModifiers:
 			return getModifier(iPlayer, iModifier) * dLateScenarioModifiers[iModifier] / 100
 	return getModifier(iPlayer, iModifier)
@@ -39,9 +39,6 @@ def updateModifiers(iPlayer):
 def init():
 	for iPlayer in range(iNumTotalPlayersB):
 		updateModifiers(iPlayer)
-		
-		if utils.getScenario() > i3000BC and iPlayer < iVikings:
-			adjustModifiers(iPlayer)
 		
 		gc.getPlayer(iPlayer).updateMaintenance()
 		

@@ -488,8 +488,6 @@ def secedeCities(iPlayer, lCities, bRazeMinorCities = False):
 			if not data.players[iLoopPlayer].bSpawned: continue
 			if gc.getGame().getGameTurn() - data.players[iLoopPlayer].iLastTurnAlive < utils.getTurns(20): continue
 			
-			# Leoreth: Egyptian respawn on Arabian collapse hurts Ottoman expansion
-			if iPlayer == iArabia and iLoopPlayer == iEgypt: continue
 
 			if tCityPlot in Areas.getRespawnArea(iLoopPlayer):
 				bPossible = False
@@ -1538,9 +1536,6 @@ def checkResurrection(iGameTurn):
 	for iLoopCiv in utils.getSortedList(lPossibleResurrections, lambda x: data.players[x].iLastTurnAlive):
 		iMinNumCities = 2
 		
-		# special case Netherlands: need only one city to respawn (Amsterdam)
-		if iLoopCiv == iNetherlands:
-			iMinNumCities = 1
 					
 		iRespawnRoll = gc.getGame().getSorenRandNum(100, 'Respawn Roll')
 		if iRespawnRoll - iNationalismModifier + 10 < tResurrectionProb[iLoopCiv]:
