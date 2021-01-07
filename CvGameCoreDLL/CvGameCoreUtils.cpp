@@ -2342,6 +2342,7 @@ int getGameTurnForYear(int iTurnYear, int iStartYear, CalendarTypes eCalendar, G
 
 int getGameTurnForMonth(int iTurnMonth, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed)
 {
+	// MacAurther TODO: Scenario Overhaul
 	int iMonthCount;
 	int iTurnCount;
 	int iMonthIncrement;
@@ -2384,16 +2385,15 @@ ScenarioTypes getScenario()
 {
 
 	// MacAurther TODO: Scenario overhaul
-	return SCENARIO_3000BC;
+	return SCENARIO_1600AD;
 }
 
 int getScenarioStartYear()
 {
 	ScenarioTypes eScenario = getScenario();
 
-	if (eScenario == SCENARIO_3000BC) return -3000;
-	else if (eScenario == SCENARIO_600AD) return 600;
-	else return 1700;
+	if (eScenario == SCENARIO_1600AD) return 1600;
+	else return 0; // MacAurther TODO: Scenario overhaul
 }
 
 int getScenarioStartTurn()

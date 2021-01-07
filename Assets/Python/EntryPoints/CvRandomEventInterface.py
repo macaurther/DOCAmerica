@@ -3092,15 +3092,6 @@ def canApplyCrusadeDone2(argsList):
 	kTriggeredData = argsList[1]
 	
 	holyCity = gc.getGame().getHolyCity(kTriggeredData.eReligion)
-
-	#Rhye - switch to Jerusalem
-	if utils.getScenario() >= i600AD: #late start condition
-		if (holyCity.getX() == 60 and holyCity.getY() == 44):
-			pJerusalem = gc.getMap().plot(73, 38)
-			if (not pJerusalem.getPlotCity().isNone()):
-				holyCity = pJerusalem.getPlotCity()
-			else:
- 				return false #we don't want a Crusade on Rome
 	
 	if -1 == kTriggeredData.eBuilding or holyCity.isHasBuilding(kTriggeredData.eBuilding):
 		return false			
@@ -4304,8 +4295,6 @@ def canTriggerImpeachmentCity(argsList):
 def canTriggerTradingCompanyConquerors(argsList):
 	kTriggeredData = argsList[0]
 	iPlayer = kTriggeredData.ePlayer
-	
-	if utils.getScenario() == i1700AD: return False
 
 	lCivList = [iSpain, iFrance, iEngland]
 	
@@ -4515,8 +4504,6 @@ def doTradingCompanyConquerors2(argsList):
 def canTriggerReformation(argsList):
 	kTriggeredData = argsList[0]
 	iPlayer = kTriggeredData.ePlayer
-	
-	if utils.getScenario() == i1700AD: return False
 	
 	if utils.getHumanID() != iPlayer: return False
 	

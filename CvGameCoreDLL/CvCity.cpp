@@ -2104,7 +2104,8 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 				iCapitalContinent = 6;	// South America = 6
 				break;
 			default:
-				FAssert(false);
+				//MacAurther TODO: Do Regions
+				//FAssert(false);
 				break;
 		}
 
@@ -2164,7 +2165,8 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 				iCityContinent = 6;	// South America = 6
 				break;
 			default:
-				FAssert(false);
+				//MacAurther TODO: Do Regions
+				//FAssert(false);
 				break;
 		}
 

@@ -116,6 +116,19 @@ lNeighbours = [
 [iFrance, iEngland], #Spain
 [iSpain, iEngland], #France
 [iSpain, iFrance], #England
+[iAmerica, iMaryland, iPennsylvania, iNorthCarolina], # Virginia
+[iAmerica, iNewHampshire, iNewYork, iConnecticut, iRhodeIsland], # Massachusetts
+[iAmerica, iNewYork, iMassachusetts], # New Hampshire
+[iAmerica, iPennsylvania, iVirginia, iDelaware], # Maryland
+[iAmerica, iNewYork, iMassachusetts, iRhodeIsland], # Connecticut
+[iAmerica, iMassachusetts, iConnecticut], # Rhode Island
+[iAmerica, iMaryland, iNewJersey, iPennsylvania], # Delaware
+[iAmerica, iSouthCarolina, iVirginia], # North Carolina
+[iAmerica, iNorthCarolina, iGeorgia], # South Carolina
+[iAmerica, iNewYork, iPennsylvania, iDelaware], # New Jersey
+[iAmerica, iNewHampshire, iConnecticut, iMassachusetts, iPennsylvania, iNewJersey], # New York
+[iAmerica, iNewYork, iVirginia, iNewJersey, iDelaware, iMaryland], # Pennsylvania
+[iAmerica, iSpain, iSouthCarolina], # Georgia
 [], #America
 [], #Canada
 ]
@@ -134,8 +147,8 @@ lOlderNeighbours = [
 # converted to years - edead
 # MacAurther TODO: Get the scenario years right
 tBirth = (
--3000,		# Spain
--3000,		# France
+1600,		# Spain
+1600,		# France
 1600,		# England
 1607,		# Virginia
 1620,		# Massachusetts
@@ -152,11 +165,11 @@ tBirth = (
 1732,		# Georgia
 1787,		# America
 1867,		# Canada
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000, # 0,
--3000
+1600, # 0,
+1600, # 0,
+1600, # 0,
+1600, # 0,
+1600
 )
 
 # Leoreth: stability penalty from this date on
@@ -294,6 +307,9 @@ tAggressionLevel = (
 1, #Georgia
 2, #America
 0, #Canada
+0,
+0,
+0,
 0) #Barbs
 
 
@@ -674,7 +690,8 @@ lSecondaryCivs = []
 
 lMongolCivs = []
 
-(i3000BC, i600AD, i1700AD) = range(3)
+# MacAurther TODO: Add more starting dates?
+(i1600AD, i1770AD, i1850AD) = range(3)
 
 # Stability overlay and editor
 iNumPlotStabilityTypes = 5

@@ -31,13 +31,10 @@ class Plague:
 		data.lGenericPlagueDates[0] = 80
 		data.lGenericPlagueDates[2] = 300 # safe value to prevent plague at start of 1700 AD scenario
 		
-		if utils.getScenario() == i3000BC:
+		if utils.getScenario() == i1600AD:
 			data.lGenericPlagueDates[0] = getTurnForYear(400) + utils.variation(20)
 			
 		data.lGenericPlagueDates[1] = getTurnForYear(1300) + utils.variation(20)
-		
-		if utils.getScenario != i1700AD:
-			data.lGenericPlagueDates[2] = getTurnForYear(1650) + utils.variation(20)
 			
 		data.lGenericPlagueDates[3] = getTurnForYear(1850) + utils.variation(20)
 

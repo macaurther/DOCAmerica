@@ -45,21 +45,6 @@ dReligionGoals = {}
 
 def setup():
 
-	# 1700 AD scenario: handle dates that have already been passed
-	if utils.getScenario() == i1700AD:
-		for iPlayer in [iSpain]:
-			loseAll(iPlayer)
-			
-		win(iFrance, 0)
-		
-		# French goal needs to be winnable
-		data.setWonderBuilder(iNotreDame, iFrance)
-		data.setWonderBuilder(iVersailles, iFrance)
-		data.setWonderBuilder(iLouvre, iFrance)
-		
-		# help Netherlands
-		data.iDutchColonies += 2
-	
 	# ignore AI goals
 	bIgnoreAI = (gc.getDefineINT("NO_AI_UHV_CHECKS") == 1)
 	data.bIgnoreAI = bIgnoreAI

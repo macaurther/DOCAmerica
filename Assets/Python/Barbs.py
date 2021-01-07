@@ -16,8 +16,8 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-	(-3000, (84, 45), iIndependent, 'Onondaga', 2, iArcher, 3),			# Onondaga
-	(-3000, (92, 46), iIndependent2, 'Mexico City', 1, iArcher, 1),		# Mexico City
+	(1600, (84, 45), iIndependent, 'Onondaga', 2, iArcher, 3),			# Onondaga
+	(1600, (92, 46), iIndependent2, 'Mexico City', 1, iArcher, 1),		# Mexico City
 )
 
 # do some research on dates here
@@ -48,15 +48,6 @@ class Barbs:
 						iUnit = utils.getRandomEntry(lUnitList)
 						utils.makeUnit(iUnit, iOwner, tPlot, 1)
 
-		if utils.isYearIn(-3000, -850):
-			if iHandicap >= 0:
-				self.checkSpawn(iBarbarian, iWarrior, 1, (76, 46), (99, 53), self.spawnMinors, iGameTurn, 5, 0)
-			
-			self.checkSpawn(iBarbarian, iWolf, 1, (75, 54), (104, 64), self.spawnNatives, iGameTurn, 5, 2)
-			self.checkSpawn(iBarbarian, iBear, 1, (75, 54), (104, 64), self.spawnNatives, iGameTurn, 5, 4)
-			self.checkLimitedSpawn(iBarbarian, iLion, 1, 5, (60, 10), (72, 28), self.spawnNatives, iGameTurn, 5, 1)
-			self.checkLimitedSpawn(iBarbarian, iPanther, 1, 5, (60, 10), (72, 28), self.spawnNatives, iGameTurn, 5, 3)
-
 		#pirates in Mediterranean
 		if utils.isYearIn(-210, 50):
 			self.checkSpawn(iBarbarian, iWarGalley, 1, (49, 37), (72, 44), self.spawnPirates, iGameTurn, 8, 0)
@@ -64,10 +55,6 @@ class Barbs:
 		#American natives
 		if utils.isYearIn(600, 1100):
 			self.checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 20, 0)
-			if utils.getScenario() == i3000BC:  #late start condition
-				self.checkSpawn(iNative, iJaguar, 3, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
-			else:  #late start condition
-				self.checkSpawn(iNative, iJaguar, 2, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
 		if utils.isYearIn(1300, 1600):
 			self.checkSpawn(iNative, iDogSoldier, 2 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 8, 0)
 		if utils.isYearIn(1400, 1800):

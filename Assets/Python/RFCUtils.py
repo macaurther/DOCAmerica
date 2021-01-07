@@ -1401,10 +1401,10 @@ class RFCUtils:
 		
 	def getScenario(self):
 		
-		return i3000BC
+		return i1600AD
 		
 	def getScenarioStartYear(self):
-		lStartYears = [-3000, 600, 1700]
+		lStartYears = [1600, 1770, 1850]
 		return lStartYears[self.getScenario()]
 		
 	def getScenarioStartTurn(self):
@@ -1956,8 +1956,6 @@ class RFCUtils:
 		
 		fullKey = baseKey
 		
-		if iScenario == i600AD: fullKey += "_600AD"
-		elif iScenario == i1700AD: fullKey += "_1700AD"
 		
 		translation = localText.getText(str(fullKey), ())
 		

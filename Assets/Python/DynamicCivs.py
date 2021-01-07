@@ -135,7 +135,7 @@ dCapitals = {
 dCapitalLocations = findCapitalLocations(dCapitals)
 
 dStartingLeaders = [
-# 3000 BC
+# 1600 AD
 {
 	iSpain : iIsabella,
 	iFrance : iCharlemagne,
@@ -155,16 +155,8 @@ dStartingLeaders = [
 	iGeorgia : iWashington,
 	iAmerica : iWashington,
 	iCanada : iMacDonald,
-},
-# 600 AD
-{
-},
-# 1700 AD
-{
-	iSpain : iPhilip,
-	iFrance : iLouis,
-	iEngland : iVictoria,
-}]
+}
+]
 
 ### Event handlers
 
@@ -746,7 +738,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 def startingLeader(iPlayer):
 	if iPlayer in dStartingLeaders[utils.getScenario()]: return dStartingLeaders[utils.getScenario()][iPlayer]
 
-	return dStartingLeaders[i3000BC][iPlayer]
+	return dStartingLeaders[i1600AD][iPlayer]
 	
 def leader(iPlayer):
 	if iPlayer >= iNumPlayers: return None
@@ -788,8 +780,6 @@ def leader(iPlayer):
 		if iEra >= iGlobal: return iChurchill
 		
 		if iEra >= iIndustrial: return iVictoria
-		
-		if utils.getScenario() == i1700AD: return iVictoria
 		
 		if iEra >= iRenaissance: return iElizabeth
 			

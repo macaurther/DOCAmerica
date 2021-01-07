@@ -3330,9 +3330,9 @@ enum ParameterTypes
 // Leoreth
 enum ScenarioTypes
 {
-	SCENARIO_3000BC,
-	SCENARIO_600AD,
-	SCENARIO_1700AD,
+	SCENARIO_1600AD,
+	SCENARIO_1770AD,	//MacAurther TODO: Make these scenarios
+	SCENARIO_1850AD,	//MacAurther TODO: Make these scenarios
 	NUM_SCENARIO_TYPES,
 };
 

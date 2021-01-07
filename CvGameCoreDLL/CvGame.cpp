@@ -210,24 +210,6 @@ void CvGame::init(HandicapTypes eHandicap)
 		}
 	}
 
-	//edead: start hack to allow late start with different game speeds
-	if (getScenario() == SCENARIO_600AD) //late start condition
-	{
-		if (getGameTurn() == 181)
-		{
-			setGameTurn(getGameTurnForYear(600, -3000, GC.getInitCore().getCalendar(), GC.getInitCore().getGameSpeed()));
-		}
-	}
-
-	if (getScenario() == SCENARIO_1700AD)
-	{
-		if (getGameTurn() == 321)
-		{
-			setGameTurn(getGameTurnForYear(1700, -3000, GC.getInitCore().getCalendar(), GC.getInitCore().getGameSpeed()));
-		}
-	}
-	//edead: end
-
 	if (getGameTurn() == 0)
 	{
 		iStartTurn = 0;
@@ -736,8 +718,7 @@ void CvGame::initDiplomacy()
 				}
 			}*/
 			if (iI == INDEPENDENT || iI == INDEPENDENT2) {
-				if (getScenario() == SCENARIO_600AD) { //late start condition
-				}
+				
 			}
 			else { //barbarian
 				for (iJ = 0; iJ < MAX_CIV_TEAMS; iJ++)
@@ -4281,12 +4262,6 @@ void CvGame::setCircumnavigated(int i)
 bool CvGame::circumnavigationAvailable() const
 {
 	if (isCircumnavigated())
-	{
-		return false;
-	}
-
-	// Leoreth: no circumnavigation in 1700 AD
-	if (getScenario() == SCENARIO_1700AD)
 	{
 		return false;
 	}

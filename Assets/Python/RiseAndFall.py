@@ -270,26 +270,8 @@ class RiseAndFall:
 		
 		Civilizations.initScenarioTechs(utils.getScenario())
 	
-		if utils.getScenario() == i3000BC:
-			self.create4000BCstartingUnits()
-			
-		if utils.getScenario() == i600AD:
-			self.create600ADstartingUnits()
-			self.adjust600ADWonders()
-			self.adjust600ADGreatPeople()
-			
-		if utils.getScenario() == i1700AD:
-			self.create1700ADstartingUnits()
-			self.init1700ADDiplomacy()
-			self.prepareColonists()
-			self.adjust1700ADCulture()
-			self.adjust1700ADWonders()
-			self.adjust1700ADGreatPeople()
-			
-			for iPlayer in [iSpain]:
-				utils.setReborn(iPlayer, True)
-			
-			pChina.updateTradeRoutes()
+		if utils.getScenario() == i1600AD:
+			self.create1600ADstartingUnits()
 			
 		for iPlayer in [iPlayer for iPlayer in range(iNumPlayers) if tBirth[iPlayer] < utils.getScenarioStartYear()]:
 			data.players[iPlayer].bSpawned = True
@@ -385,31 +367,11 @@ class RiseAndFall:
 						
 	def placeGoodyHuts(self):
 			
-		if utils.getScenario() == i3000BC:
+		if utils.getScenario() == i1600AD:
+			#MacAurther TODO: Find some fun places for goody huts
 			self.placeHut((101, 38), (107, 41)) # Southern China
 			self.placeHut((62, 45), (67, 50)) # Balkans
 			self.placeHut((69, 42), (76, 46)) # Asia Minor
-		
-		if utils.getScenario() <= i600AD:
-			self.placeHut((49, 40), (54, 46)) # Iberia
-			self.placeHut((57, 51), (61, 56)) # Denmark / Northern Germany
-			self.placeHut((48, 55), (49, 58)) # Ireland
-			self.placeHut((50, 53), (54, 60)) # Britain
-			self.placeHut((57, 57), (65, 65)) # Scandinavia
-			self.placeHut((73, 53), (81, 58)) # Russia
-			self.placeHut((81, 43), (86, 47)) # Transoxania
-			self.placeHut((88, 30), (94, 36)) # Deccan
-			self.placeHut((110, 40), (113, 43)) # Shikoku
-			self.placeHut((114, 49), (116, 52)) # Hokkaido
-			self.placeHut((85, 53), (99, 59)) # Siberia
-			self.placeHut((103, 24), (109, 29)) # Indonesia
-			self.placeHut((68, 17), (72, 23)) # East Africa
-			self.placeHut((65, 10), (70, 16)) # South Africa
-			self.placeHut((22, 48), (29, 51)) # Great Lakes
-			self.placeHut((18, 44), (22, 52)) # Great Plains
-			self.placeHut((34, 25), (39, 29)) # Amazonas Delta
-			self.placeHut((33, 9), (37, 15)) # Parana Delta
-			self.placeHut((25, 36), (32, 39)) # Caribbean
 		
 		self.placeHut((107, 19), (116, 22)) # Northern Australia
 		self.placeHut((114, 10), (118, 17)) # Western Australia
@@ -424,26 +386,13 @@ class RiseAndFall:
 				gc.getGame().setReligionGameTurnFounded(iReligion, getTurnForYear(lReligionFoundingYears[iReligion]))
 		
 	def initStartingReligions(self):
-	
-		if utils.getScenario() == i600AD:
-			utils.setStateReligionBeforeBirth(lCatholicStart, iCatholicism)
-			utils.setStateReligionBeforeBirth(lProtestantStart, iCatholicism)
-			
-		elif utils.getScenario() == i1700AD:
-			utils.setStateReligionBeforeBirth(lCatholicStart, iCatholicism)
-			utils.setStateReligionBeforeBirth(lProtestantStart, iProtestantism)
+		pass
 			
 	def checkTurn(self, iGameTurn):
 	
 		# Leoreth: randomly place goody huts
 		if iGameTurn == utils.getScenarioStartTurn()+3:
 			self.placeGoodyHuts()
-		
-		if iGameTurn == getTurnForYear(tBirth[iSpain])-1:
-			if utils.getScenario() == i600AD:
-				pMassilia = gc.getMap().plot(56, 46)
-				if pMassilia.isCity():
-					pMassilia.getPlotCity().setCulture(pMassilia.getPlotCity().getOwner(), 1, True)
 					
 		#Trigger betrayal mode
 		if data.iBetrayalTurns > 0:
@@ -1345,9 +1294,7 @@ class RiseAndFall:
 							CyInterface().addMessage(iOldWorldCiv, True, iDuration, CyTranslator().getText("TXT_KEY_FIRST_CONTACT_OLDWORLD", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
 							
 	def lateTradingCompany(self, iCiv):
-		if utils.getHumanID() != iCiv and not utils.isAVassal(iCiv) and utils.getScenario() != i1700AD:
-			if iCiv in [iFrance, iEngland]:
-				self.handleColonialConquest(iCiv)
+		pass
 
 	def earlyTradingCompany(self, iCiv):
 		if utils.getHumanID() != iCiv and not utils.isAVassal(iCiv):
@@ -1640,7 +1587,7 @@ class RiseAndFall:
 		elif iCiv == iVirginia:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
-		elif iCiv == iMasschusetts:
+		elif iCiv == iMassachusetts:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 		elif iCiv == iNewHampshire:
@@ -1756,7 +1703,7 @@ class RiseAndFall:
 		pass
 
 
-	def create4000BCstartingUnits(self):
+	def create1600ADstartingUnits(self):
 		pass
 		
 	def assignTechs(self, iPlayer):

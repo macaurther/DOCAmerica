@@ -8,7 +8,7 @@ def getModifier(iPlayer, iModifier):
 	return tDefaults[iModifier]
 	
 def getAdjustedModifier(iPlayer, iModifier):
-	if utils.getScenario() > i3000BC:
+	if utils.getScenario() > i1600AD:
 		if iModifier in dLateScenarioModifiers:
 			return getModifier(iPlayer, iModifier) * dLateScenarioModifiers[iModifier] / 100
 	return getModifier(iPlayer, iModifier)

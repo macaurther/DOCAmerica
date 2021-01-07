@@ -403,9 +403,6 @@ class Religions:
 			self.counterReformation(iHuman)
 
 	def onTechAcquired(self, iTech, iPlayer):
-		if utils.getScenario() == i1700AD:
-			return
-
 		if iTech == iAcademia:
 			if gc.getPlayer(iPlayer).getStateReligion() == iCatholicism:
 				if not gc.getGame().isReligionFounded(iProtestantism):

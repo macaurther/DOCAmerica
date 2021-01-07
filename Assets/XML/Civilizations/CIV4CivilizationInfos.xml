@@ -7295,10 +7295,10 @@
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_MASSACHUSETTS</Type>
-			<Description>TXT_KEY_CIV_MARYLAND_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_MARYLAND_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_MARYLAND_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_MARYLAND_PEDIA</Civilopedia>
+			<Description>TXT_KEY_CIV_MASSACHUSETTS_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_MASSACHUSETTS_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_MASSACHUSETTS_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_MASSACHUSETTS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
