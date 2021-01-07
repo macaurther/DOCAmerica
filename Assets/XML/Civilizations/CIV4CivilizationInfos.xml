@@ -6922,7 +6922,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>CON</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1635</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -6930,28 +6930,20 @@
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
-				<Production>5</Production>
-				<Culture>1</Culture>
-				<Growth>5</Growth>
+				<Production>1</Production>
+				<Culture>2</Culture>
+				<Growth>2</Growth>
 				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Bridgeport</City>
+				<City>New Haven</City>
+				<City>Stamford</City>
+				<City>Hartford</City>
+				<City>Waterbury</City>
+				<City>Norwalk</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7026,7 +7018,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>DEL</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1638</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7042,20 +7034,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Wilmington</City>
+				<City>Dover</City>
+				<City>Newark</City>
+				<City>Middletown</City>
+				<City>Bear</City>
+				<City>Glasgow</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7129,8 +7113,8 @@
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
-			<Identifier>GER</Identifier>
-			<StartingYear>1</StartingYear>
+			<Identifier>GEO</Identifier>
+			<StartingYear>1732</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7146,20 +7130,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Athens</City>
+				<City>Sandy Springs</City>
+				<City>Roswell</City>
+				<City>Johns Creek</City>
+				<City>Warner Robins</City>
+				<City>Alpharetta</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7234,7 +7210,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>MAR</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1634</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7250,20 +7226,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Columbia</City>
+				<City>Germantown</City>
+				<City>Silver Spring</City>
+				<City>Waldorf</City>
+				<City>Ellicott City</City>
+				<City>Frederick</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7338,7 +7306,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>MAS</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1620</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7354,20 +7322,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Worcester</City>
+				<City>Cambridge</City>
+				<City>Lowell</City>
+				<City>Brockton</City>
+				<City>New Bedford</City>
+				<City>Quincy</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7442,7 +7402,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>NHA</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1632</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7458,20 +7418,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Nashua</City>
+				<City>Derry</City>
+				<City>Dover</City>
+				<City>Rochester</City>
+				<City>Salem</City>
+				<City>Merrimack</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7546,7 +7498,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>NJE</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1664</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7562,20 +7514,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Jersey City</City>
+				<City>Paterson</City>
+				<City>Elizabeth</City>
+				<City>Lakewood</City>
+				<City>Edison</City>
+				<City>Woodbridge</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7650,7 +7594,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>NYO</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1664</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7666,20 +7610,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Hempstead</City>
+				<City>Brookhaven</City>
+				<City>Islip</City>
+				<City>Oyster Bay</City>
+				<City>Babylon</City>
+				<City>Yonkers</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7754,7 +7690,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>NCA</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1653</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7770,20 +7706,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Fayetteville</City>
+				<City>Cary</City>
+				<City>High Point</City>
+				<City>Concord</City>
+				<City>Greenville</City>
+				<City>Gastonia</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7858,7 +7786,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>PEN</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1682</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7874,20 +7802,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Reading City</City>
+				<City>Darby</City>
+				<City>Bensalem</City>
+				<City>Lancaster City</City>
+				<City>Abington</City>
+				<City>Haverford</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -7962,7 +7882,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>RHO</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1636</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -7978,20 +7898,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Cranston</City>
+				<City>Warwick</City>
+				<City>Pawtucket</City>
+				<City>Woonsocket</City>
+				<City>Cumberland</City>
+				<City>Coventry</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -8066,7 +7978,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>SCA</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1663</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -8082,20 +7994,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Mount Pleasant</City>
+				<City>Rock Hill</City>
+				<City>Greenville</City>
+				<City>Summerville</City>
+				<City>Goose Creek</City>
+				<City>Sumter</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -8170,7 +8074,7 @@
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
 			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds</PaganReligionButton>
 			<Identifier>VIR</Identifier>
-			<StartingYear>1</StartingYear>
+			<StartingYear>1607</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
@@ -8186,20 +8090,12 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
-				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
-				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
-				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Virginia Beach</City>
+				<City>Chesapeake</City>
+				<City>Arlington</City>
+				<City>Newport News</City>
+				<City>Alexandria</City>
+				<City>Hampton</City>
 			</Cities>
 			<Buildings>
 				<Building>

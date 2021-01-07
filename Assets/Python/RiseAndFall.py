@@ -1619,16 +1619,11 @@ class RiseAndFall:
 			utils.makeUnit(iCrossbowman, iCiv, tPlot, 1)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iSwordsman, iCiv, tPlot, 4)
-			if data.isPlayerEnabled(iMoors):
-				if utils.getHumanID() != iMoors:
-					utils.makeUnit(iLancer, iCiv, tPlot, 2)
-			else:
-				utils.makeUnit(iSettler, iCiv, tPlot, 1)
+
 			if utils.getHumanID() != iSpain:
 				utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
 			utils.createMissionaries(iCiv, 1)
-			if utils.getScenario() == i600AD: #late start condition
-				utils.makeUnit(iWorker, iCiv, tPlot, 1) #there is no carthaginian city in Iberia and Portugal may found 2 cities otherwise (a settler is too much)
+
 		elif iCiv == iFrance:
 			utils.createSettlers(iCiv, 3)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
@@ -1642,12 +1637,47 @@ class RiseAndFall:
 				utils.makeUnit(iHeavySwordsman, iCiv, tPlot, 2)
 			utils.createMissionaries(iCiv, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			if tSeaPlot:
-				utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 2)
-				pEngland.initUnit(iGalley, tSeaPlot[0], tSeaPlot[1], UnitAITypes.UNITAI_SETTLER_SEA, DirectionTypes.DIRECTION_SOUTH)
-				utils.makeUnit(iSettler, iCiv, tPlot, 1)
-				utils.makeUnit(iCrossbowman, iCiv, tPlot, 1)
-				utils.makeUnit(iGalley, iCiv, tSeaPlot, 2)
+		elif iCiv == iVirginia:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iMasschusetts:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iNewHampshire:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iMaryland:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iConnecticut:  #Macaurther TODO: Flip from Dutch
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iRhodeIsland:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iDelaware:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iNorthCarolina:
+			utils.createSettlers(iCiv, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
+		elif iCiv == iSouthCarolina:
+			utils.createSettlers(iCiv, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
+		elif iCiv == iNewJersey:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iNewYork:  #Macaurther TODO: Flip from Dutch
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+		elif iCiv == iPennsylvania:
+			utils.createSettlers(iCiv, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
+		elif iCiv == iGeorgia:
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+
+
 		elif iCiv == iAmerica:
 			utils.createSettlers(iCiv, 8)
 			utils.makeUnit(iGrenadier, iCiv, tPlot, 2)
