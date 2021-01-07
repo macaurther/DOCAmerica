@@ -20,9 +20,7 @@ def create(iPlayer, iUnit, (x, y)):
 	gc.getPlayer(iPlayer).createGreatPeople(utils.getUniqueUnit(iPlayer, iUnit), True, True, x, y)
 
 def getAlias(iCiv, iType, iEra):
-	if iCiv in [iCivHarappa, iCivTamils]: return iCivIndia
-	elif iCiv == iCivIran: return iCivPersia
-	
+
 	return iCiv
 	
 def getType(iUnit):

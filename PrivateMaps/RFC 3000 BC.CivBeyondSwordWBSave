@@ -19,22 +19,61 @@ BeginTeam
 	TeamID=2, (England)
 EndTeam
 BeginTeam
-	TeamID=3, (America)
+	TeamID=3, (Virginia)
 EndTeam
 BeginTeam
-	TeamID=4, (Canada)
+	TeamID=4, (Massachusetts)
 EndTeam
 BeginTeam
-	TeamID=5, (Independent)
+	TeamID=5, (NewHampshire)
 EndTeam
 BeginTeam
-	TeamID=6, (Independent2)
+	TeamID=6, (Maryland)
 EndTeam
 BeginTeam
-	TeamID=7, (Native)
+	TeamID=7, (Connecticut)
 EndTeam
 BeginTeam
-	TeamID=8, (Barbarian)
+	TeamID=8, (RhodeIsland)
+EndTeam
+BeginTeam
+	TeamID=9, (Delaware)
+EndTeam
+BeginTeam
+	TeamID=10, (NorthCarolina)
+EndTeam
+BeginTeam
+	TeamID=11, (SouthCarolina)
+EndTeam
+BeginTeam
+	TeamID=12, (NewJersey)
+EndTeam
+BeginTeam
+	TeamID=13, (NewYork)
+EndTeam
+BeginTeam
+	TeamID=14, (Pennseylvania)
+EndTeam
+BeginTeam
+	TeamID=15, (Georgia)
+EndTeam
+BeginTeam
+	TeamID=16, (America)
+EndTeam
+BeginTeam
+	TeamID=17, (Canada)
+EndTeam
+BeginTeam
+	TeamID=18, (Independent)
+EndTeam
+BeginTeam
+	TeamID=19, (Independent2)
+EndTeam
+BeginTeam
+	TeamID=20, (Native)
+EndTeam
+BeginTeam
+	TeamID=21, (Barbarian)
 EndTeam
 BeginTeam
 EndTeam
@@ -62,18 +101,96 @@ EndPlayer
 BeginPlayer
 	Team=3
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
-	CivType=CIVILIZATION_AMERICA
+	CivType=CIVILIZATION_VIRGINIA
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=4
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_MASSACHUSETTS
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=5
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_NEW_HAMPSHIRE
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=6
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_MARYLAND
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=7
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_CONNECTICUT
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=8
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_RHODE_ISLAND
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=9
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_DELAWARE
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=10
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_NORTH_CAROLINA
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=11
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_SOUTH_CAROLINA
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=12
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_NEW_JERSEY
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=13
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_NEW_YORK
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=14
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_PENNSYLVANIA
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=15
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_GEORGIA
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=16
+	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	CivType=CIVILIZATION_AMERICA
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=17
 	LeaderType=LEADER_TRUDEAU
 	CivType=CIVILIZATION_CANADA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=5
+	Team=18
 	LeaderType=LEADER_INDEPENDENT
 	CivType=CIVILIZATION_INDEPENDENT
 	PlayableCiv=0
@@ -82,7 +199,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=6
+	Team=19
 	LeaderType=LEADER_INDEPENDENT
 	CivType=CIVILIZATION_INDEPENDENT2
 	PlayableCiv=0
@@ -91,7 +208,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=7
+	Team=20
 	LeaderType=LEADER_NATIVE
 	CivType=CIVILIZATION_NATIVE
 	PlayableCiv=0
@@ -100,7 +217,7 @@ BeginPlayer
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
-	Team=8
+	Team=21
 	LeaderType=LEADER_BARBARIAN
 	CivType=CIVILIZATION_BARBARIAN
 	PlayableCiv=0

@@ -140,6 +140,19 @@ dStartingLeaders = [
 	iSpain : iIsabella,
 	iFrance : iCharlemagne,
 	iEngland : iAlfred,
+	iVirginia : iWashington,
+	iMassachusetts : iWashington,
+	iNewHampshire : iWashington,
+	iMaryland : iWashington,
+	iConnecticut : iWashington,
+	iRhodeIsland : iWashington,
+	iDelaware : iWashington,
+	iNorthCarolina : iWashington,
+	iSouthCarolina : iWashington,
+	iNewJersey : iWashington,
+	iNewYork : iWashington,
+	iPennsylvania : iWashington,
+	iGeorgia : iWashington,
 	iAmerica : iWashington,
 	iCanada : iMacDonald,
 },
@@ -732,7 +745,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 
 def startingLeader(iPlayer):
 	if iPlayer in dStartingLeaders[utils.getScenario()]: return dStartingLeaders[utils.getScenario()][iPlayer]
-	
+
 	return dStartingLeaders[i3000BC][iPlayer]
 	
 def leader(iPlayer):

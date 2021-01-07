@@ -4,16 +4,19 @@
 from CvPythonExtensions import *
 gc = CyGlobalContext()
 
-iWorldX = 124
-iWorldY = 68
+iWorldX = 149
+iWorldY = 79
 
 # initialise player variables to player IDs from WBS
-iNumPlayers = 5
-(iSpain, iFrance, iEngland, iAmerica, iCanada) = range(iNumPlayers)
+iNumPlayers = 18
+(iSpain, iFrance, iEngland, iVirginia, iMassachusetts, iNewHampshire, iMaryland, iConnecticut, iRhodeIsland, 
+iDelaware, iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iPennsylvania, iGeorgia, iAmerica, iCanada) = range(iNumPlayers)
 
-(pSpain, pFrance, pEngland, pAmerica, pCanada) = [gc.getPlayer(i) for i in range(iNumPlayers)]
+(pSpain, pFrance, pEngland, pVirginia, pMassachusetts, pNewHampshire, pMaryland, pConnecticut, pRhodeIsland, 
+pDelaware, pNorthCarolina, pSouthCarolina, pNewJersey, pNewYork, pPennsylvania, pGeorgia, pAmerica, pCanada) = [gc.getPlayer(i) for i in range(iNumPlayers)]
 
-(teamSpain, teamFrance, teamEngland, teamAmerica, teamCanada) = [gc.getTeam(i) for i in range(iNumPlayers)]
+(teamSpain, teamFrance, teamEngland, teamVirginia, teamMassachusetts, teamNewHampshire, teamMaryland, teamConnecticut, teamRhodeIsland, 
+teamDelaware, teamNorthCarolina, teamSouthCarolina, teamNewJersey, teamNewYork, teamPennsylvania, teamGeorgia, teamAmerica, teamCanada) = [gc.getTeam(i) for i in range(iNumPlayers)]
 
 iNumMajorPlayers = iNumPlayers
 iNumActivePlayers = iNumPlayers
@@ -35,17 +38,23 @@ l0ArrayTotal =  [0 for i in range(iNumTotalPlayers)]
 lm1Array =      [-1 for i in range(iNumPlayers)]
 
 # civilizations, not players
-iNumCivilizations = 9
-(iCivAmerica, iCivCanada, iCivEngland, iCivFrance, iCivSpain, iCivIndependent, iCivIndependent2, iCivNative, iCivBarbarian) = range(iNumCivilizations)
+iNumCivilizations = 22
+(iCivAmerica, iCivCanada, iCivConnecticut, iCivDelaware, iCivEngland, iCivFrance, iCivGeorgia, iCivMaryland, iCivMassachusetts,
+iCivNewHampshire, iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivSpain,
+iCivVirginia, iCivIndependent, iCivIndependent2, iCivNative, iCivBarbarian) = range(iNumCivilizations)
 
 #for Congresses and Victory
 lCivGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada]] #American
+		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
+		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
 
 lCivStabilityGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada]] #American
+		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
+		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
 		
-lTechGroups = [[iSpain, iFrance, iEngland, iAmerica, iCanada]]  #Western
+lTechGroups = [[iSpain, iFrance, iEngland],  #Euros
+		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
+		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
 
 
 lCivBioOldWorld = [iSpain, iFrance, iEngland, iAmerica, iCanada, iIndependent, iIndependent2]
@@ -123,13 +132,26 @@ lOlderNeighbours = [
 # civ birth dates
 
 # converted to years - edead
-# MacAurther TODO: Get these years right
+# MacAurther TODO: Get the scenario years right
 tBirth = (
--3000, 		# Spain
--3000, 		# France
-1600, 		# England
-1600,   	# America
-1600,		# Canada
+-3000,		# Spain
+-3000,		# France
+1600,		# England
+1607,		# Virginia
+1620,		# Massachusetts
+1623,		# New Hampshire
+1634,		# Maryland
+1635,		# Connecticut
+1636,		# Rhode Island
+1638,		# Delaware
+1653,		# North Carolina
+1663,		# South Carolina
+1664,		# New Jersey
+1664,		# New York
+1682,		# Pennsylvania
+1732,		# Georgia
+1787,		# America
+1867,		# Canada
 -3000, # 0,
 -3000, # 0,
 -3000, # 0,
@@ -142,6 +164,19 @@ tFall = (
 2020,					# Spain
 2020,					# France
 2020,					# England
+2020,					# Virginia
+2020,					# Massachusetts
+2020,					# New Hampshire
+2020,					# Maryland
+2020,					# Connecticut
+2020,					# Rhode Island
+2020,					# Delaware
+2020,					# North Carolina
+2020,					# South Carolina
+2020,					# New Jersey
+2020,					# New York
+2020,					# Pennsylvania
+2020,					# Georgia
 2020,					# America
 2020)					# Canada
 
@@ -149,6 +184,19 @@ dVictoryYears = {
 iCivSpain : (-1, -1, -1),
 iCivFrance : (-1, -1, -1),
 iCivEngland : (-1, -1, -1),
+iCivVirginia : (1900, 1950, 2000),
+iCivMassachusetts : (1900, 1950, 2000),
+iCivNewHampshire : (1900, 1950, 2000),
+iCivMaryland : (1900, 1950, 2000),
+iCivConnecticut : (1900, 1950, 2000),
+iCivRhodeIsland : (1900, 1950, 2000),
+iCivDelaware : (1900, 1950, 2000),
+iCivNorthCarolina : (1900, 1950, 2000),
+iCivSouthCarolina : (1900, 1950, 2000),
+iCivNewJersey : (1900, 1950, 2000),
+iCivNewYork : (1900, 1950, 2000),
+iCivPennsylvania : (1900, 1950, 2000),
+iCivGeorgia : (1900, 1950, 2000),
 iCivAmerica : (1900, 1950, 2000),
 iCivCanada : (1920, 1950, 2000),
 }
@@ -164,6 +212,19 @@ tResurrectionIntervals = (
 [(1700, 2020)], #Spain
 [(1700, 2020)], #France
 [(1700, 2020)], #England
+[(1700, 2020)], #Virginia
+[(1700, 2020)], #Massachusetts
+[(1700, 2020)], #New Hampshire
+[(1700, 2020)], #Maryland
+[(1700, 2020)], #Connecticut
+[(1700, 2020)], #Rhode Island
+[(1700, 2020)], #Delaware
+[(1700, 2020)], #North Carolina
+[(1700, 2020)], #South Carolina
+[(1700, 2020)], #New Jersey
+[(1700, 2020)], #New York
+[(1700, 2020)], #Pennsylvania
+[(1700, 2020)], #Georgia
 [(1770, 2020)], #America
 [(1867, 2020)], #Canada
 )
@@ -173,6 +234,19 @@ lEnemyCivsOnSpawn = [
 [], #Spain
 [], #France
 [], #England
+[], #Virginia
+[], #Massachusetts
+[], #New Hampshire
+[], #Maryland
+[], #Connecticut
+[], #Rhode Island
+[], #Delaware
+[], #North Carolina
+[], #South Carolina
+[], #New Jersey
+[], #New York
+[], #Pennsylvania
+[], #Georgia
 [], #America
 [], #Canada
 ]
@@ -182,6 +256,19 @@ lTotalWarOnSpawn = [
 [], #Spain
 [], #France
 [], #England
+[], #Virginia
+[], #Massachusetts
+[], #New Hampshire
+[], #Maryland
+[], #Connecticut
+[], #Rhode Island
+[], #Delaware
+[], #North Carolina
+[], #South Carolina
+[], #New Jersey
+[], #New York
+[], #Pennsylvania
+[], #Georgia
 [], #America
 [], #Canada
 ]
@@ -192,6 +279,19 @@ tAggressionLevel = (
 2, #Spain
 1, #France
 1, #England
+1, #Virginia
+1, #Massachusetts
+1, #New Hampshire
+1, #Maryland
+1, #Connecticut
+1, #Rhode Island
+1, #Delaware
+1, #North Carolina
+1, #South Carolina
+1, #New Jersey
+1, #New York
+1, #Pennsylvania
+1, #Georgia
 2, #America
 0, #Canada
 0) #Barbs
@@ -202,6 +302,19 @@ tAIStopBirthThreshold = (
     80, #Spain  #60 in vanilla and Warlords
     80, #France #60 in vanilla and Warlords
     50, #England
+	50, #Virginia
+	50, #Massachusetts
+	50, #New Hampshire
+	50, #Maryland
+	50, #Connecticut
+	50, #Rhode Island
+	50, #Delaware
+	50, #North Carolina
+	50, #South Carolina
+	50, #New Jersey
+	50, #New York
+	50, #Pennsylvania
+	50, #Georgia
     50, #America
     60, #Canada
     100,
@@ -215,6 +328,19 @@ tResurrectionProb = (
 100, #Spain
 100, #France
 100, #England
+100, #Virginia
+100, #Massachusetts
+100, #New Hampshire
+100, #Maryland
+100, #Connecticut
+100, #Rhode Island
+100, #Delaware
+100, #North Carolina
+100, #South Carolina
+100, #New Jersey
+100, #New York
+100, #Pennsylvania
+100, #Georgia
 100, #America
 100, #Canada
 100) #Barbs 
@@ -225,6 +351,19 @@ tPatienceThreshold = (
 20, #Spain
 20, #France
 20, #England
+100, #Virginia
+100, #Massachusetts
+100, #New Hampshire
+100, #Maryland
+100, #Connecticut
+100, #Rhode Island
+100, #Delaware
+100, #North Carolina
+100, #South Carolina
+100, #New Jersey
+100, #New York
+100, #Pennsylvania
+100, #Georgia
 30, #America
 40, #Canada
 100) #Barbs

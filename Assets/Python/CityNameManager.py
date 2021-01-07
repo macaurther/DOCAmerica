@@ -46,11 +46,12 @@ def getFoundName(iCiv, tPlot):
 	tLanguages = getLanguages(iCiv)
 	if not tLanguages: return None
 	
-	for iLanguage in tLanguages:
-		if iLanguage in dFoundMaps:
-			sName = dFoundMaps[iLanguage][67-y][x]
-			if sName != "-1":
-				return sName
+	# MacAurther TODO: Disabled until dFoundMaps is regenerated
+	#for iLanguage in tLanguages:
+	#	if iLanguage in dFoundMaps:
+	#		sName = dFoundMaps[iLanguage][67-y][x]
+	#		if sName != "-1":
+	#			return sName
 				
 	return None
 	
@@ -59,11 +60,12 @@ def getNativeName(iCiv, tPlot):
 	tLanguages = getNativeLanguages(tPlot)
 	if not tLanguages: return None
 	
-	for iLanguage in tLanguages:
-		if iLanguage in dFoundMaps:
-			sName = dFoundMaps[iLanguage][67-y][x]
-			if sName != "-1":
-				return getRenameName(iCiv, sName)
+	# MacAurther TODO: Disabled until dFoundMaps is regenerated
+	#for iLanguage in tLanguages:
+	#	if iLanguage in dFoundMaps:
+	#		sName = dFoundMaps[iLanguage][67-y][x]
+	#		if sName != "-1":
+	#			return getRenameName(iCiv, sName)
 				
 	return None
 	

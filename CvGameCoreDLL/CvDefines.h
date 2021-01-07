@@ -24,7 +24,7 @@
 #define RANDPLOT_NOT_CITY											(0x00000040)
 
 #ifdef _USRDLL
-#define MAX_CIV_PLAYERS												(8) //MacAurther: Spain, France, England, America, Canada, Independent1, Independent2, Native, Barbarian
+#define MAX_CIV_PLAYERS												(21) //MacAurther: Spain, France, <13 Colonies>, England, America, Canada, Independent1, Independent2, Native, (Barbarian)
 #else
 #define MAX_CIV_PLAYERS												(CvGlobals::getInstance().getMaxCivPlayers())
 #endif
