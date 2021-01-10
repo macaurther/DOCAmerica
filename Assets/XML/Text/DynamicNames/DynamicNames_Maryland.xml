@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Maryland -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_DESC</Tag>
+		<English>The Marylanders</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_PEOPLES</Tag>
+		<English>The Maryland Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_DEFAULT</Tag>
+		<English>Maryland</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_REPUBLIC</Tag>
+		<English>Commonwealth of Maryland</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_CSA</Tag>
+		<English>Confederate Maryland</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_ADJECTIVE</Tag>
+		<English>Maryland</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_SHORT_DESC</Tag>
+		<English>Maryland</English>
+	</TEXT>
+</Civ4GameText>

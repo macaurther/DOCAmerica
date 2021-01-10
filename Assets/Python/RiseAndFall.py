@@ -1602,9 +1602,6 @@ class RiseAndFall:
 		elif iCiv == iRhodeIsland:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
-		elif iCiv == iDelaware:
-			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 		elif iCiv == iNorthCarolina:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
@@ -1620,6 +1617,9 @@ class RiseAndFall:
 		elif iCiv == iPennsylvania:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
+		elif iCiv == iDelaware:  #Macaurther TODO: Flip from Swedish
+			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 		elif iCiv == iGeorgia:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)

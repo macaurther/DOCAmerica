@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Delaware -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DELAWARE_DESC</Tag>
+		<English>The Delawareans</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DELAWARE_PEOPLES</Tag>
+		<English>The Lower Counties</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DELAWARE_DEFAULT</Tag>
+		<English>Delaware</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DELAWARE_REPUBLIC</Tag>
+		<English>Commonwealth of Delaware</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DELAWARE_CSA</Tag>
+		<English>Confederate Delaware</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DELAWARE_ADJECTIVE</Tag>
+		<English>Delawarean</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DELAWARE_SHORT_DESC</Tag>
+		<English>Delaware</English>
+	</TEXT>
+</Civ4GameText>

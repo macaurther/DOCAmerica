@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- New York -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_DESC</Tag>
+		<English>The New Yorkers</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_PEOPLES</Tag>
+		<English>The Province of New York</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_DEFAULT</Tag>
+		<English>New York</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_REPUBLIC</Tag>
+		<English>Commonwealth of New York</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_CSA</Tag>
+		<English>Confederate New York</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_ADJECTIVE</Tag>
+		<English>New York</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_SHORT_DESC</Tag>
+		<English>New York</English>
+	</TEXT>
+</Civ4GameText>

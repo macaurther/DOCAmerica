@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- New Hampshire -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_DESC</Tag>
+		<English>The New Hampshirites</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_PEOPLES</Tag>
+		<English>The Upper Plantation</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_DEFAULT</Tag>
+		<English>New Hampshire</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_REPUBLIC</Tag>
+		<English>Commonwealth of New Hampshire</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_CSA</Tag>
+		<English>Confederate New Hampshire</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_ADJECTIVE</Tag>
+		<English>New Hampshire</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_SHORT_DESC</Tag>
+		<English>New Hampshire</English>
+	</TEXT>
+</Civ4GameText>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- North Carolina -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_DESC</Tag>
+		<English>The North Carolinians</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_PEOPLES</Tag>
+		<English>The Albemarle Settlers</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_DEFAULT</Tag>
+		<English>North Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_REPUBLIC</Tag>
+		<English>Commonwealth of North Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_CSA</Tag>
+		<English>Confederate North Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_ADJECTIVE</Tag>
+		<English>North Carolinian</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_SHORT_DESC</Tag>
+		<English>North Carolina</English>
+	</TEXT>
+</Civ4GameText>

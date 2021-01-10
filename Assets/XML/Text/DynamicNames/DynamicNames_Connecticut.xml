@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Connecticut -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CONNECTICUT_DESC</Tag>
+		<English>The Connecticuters</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CONNECTICUT_PEOPLES</Tag>
+		<English>The Saybrook Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CONNECTICUT_DEFAULT</Tag>
+		<English>Connecticut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CONNECTICUT_REPUBLIC</Tag>
+		<English>Commonwealth of Connecticut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CONNECTICUT_CSA</Tag>
+		<English>Confederate Connecticut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CONNECTICUT_ADJECTIVE</Tag>
+		<English>Connecticut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CONNECTICUT_SHORT_DESC</Tag>
+		<English>Connecticut</English>
+	</TEXT>
+</Civ4GameText>

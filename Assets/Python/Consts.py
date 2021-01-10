@@ -10,13 +10,13 @@ iWorldY = 80
 # initialise player variables to player IDs from WBS
 iNumPlayers = 18
 (iSpain, iFrance, iEngland, iVirginia, iMassachusetts, iNewHampshire, iMaryland, iConnecticut, iRhodeIsland, 
-iDelaware, iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iPennsylvania, iGeorgia, iAmerica, iCanada) = range(iNumPlayers)
+iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iPennsylvania, iDelaware, iGeorgia, iAmerica, iCanada) = range(iNumPlayers)
 
 (pSpain, pFrance, pEngland, pVirginia, pMassachusetts, pNewHampshire, pMaryland, pConnecticut, pRhodeIsland, 
-pDelaware, pNorthCarolina, pSouthCarolina, pNewJersey, pNewYork, pPennsylvania, pGeorgia, pAmerica, pCanada) = [gc.getPlayer(i) for i in range(iNumPlayers)]
+pNorthCarolina, pSouthCarolina, pNewJersey, pNewYork, pPennsylvania, pDelaware, pGeorgia, pAmerica, pCanada) = [gc.getPlayer(i) for i in range(iNumPlayers)]
 
 (teamSpain, teamFrance, teamEngland, teamVirginia, teamMassachusetts, teamNewHampshire, teamMaryland, teamConnecticut, teamRhodeIsland, 
-teamDelaware, teamNorthCarolina, teamSouthCarolina, teamNewJersey, teamNewYork, teamPennsylvania, teamGeorgia, teamAmerica, teamCanada) = [gc.getTeam(i) for i in range(iNumPlayers)]
+teamNorthCarolina, teamSouthCarolina, teamNewJersey, teamNewYork, teamPennsylvania, teamDelaware, teamGeorgia, teamAmerica, teamCanada) = [gc.getTeam(i) for i in range(iNumPlayers)]
 
 iNumMajorPlayers = iNumPlayers
 iNumActivePlayers = iNumPlayers
@@ -122,12 +122,12 @@ lNeighbours = [
 [iAmerica, iPennsylvania, iVirginia, iDelaware], # Maryland
 [iAmerica, iNewYork, iMassachusetts, iRhodeIsland], # Connecticut
 [iAmerica, iMassachusetts, iConnecticut], # Rhode Island
-[iAmerica, iMaryland, iNewJersey, iPennsylvania], # Delaware
 [iAmerica, iSouthCarolina, iVirginia], # North Carolina
 [iAmerica, iNorthCarolina, iGeorgia], # South Carolina
 [iAmerica, iNewYork, iPennsylvania, iDelaware], # New Jersey
 [iAmerica, iNewHampshire, iConnecticut, iMassachusetts, iPennsylvania, iNewJersey], # New York
 [iAmerica, iNewYork, iVirginia, iNewJersey, iDelaware, iMaryland], # Pennsylvania
+[iAmerica, iMaryland, iNewJersey, iPennsylvania], # Delaware
 [iAmerica, iSpain, iSouthCarolina], # Georgia
 [], #America
 [], #Canada
@@ -156,12 +156,12 @@ tBirth = (
 1634,		# Maryland
 1635,		# Connecticut
 1636,		# Rhode Island
-1638,		# Delaware
 1653,		# North Carolina
 1663,		# South Carolina
 1664,		# New Jersey
 1664,		# New York
 1682,		# Pennsylvania
+1682,		# Delaware
 1732,		# Georgia
 1787,		# America
 1867,		# Canada
@@ -183,12 +183,12 @@ tFall = (
 2020,					# Maryland
 2020,					# Connecticut
 2020,					# Rhode Island
-2020,					# Delaware
 2020,					# North Carolina
 2020,					# South Carolina
 2020,					# New Jersey
 2020,					# New York
 2020,					# Pennsylvania
+2020,					# Delaware
 2020,					# Georgia
 2020,					# America
 2020)					# Canada
@@ -203,12 +203,12 @@ iCivNewHampshire : (1900, 1950, 2000),
 iCivMaryland : (1900, 1950, 2000),
 iCivConnecticut : (1900, 1950, 2000),
 iCivRhodeIsland : (1900, 1950, 2000),
-iCivDelaware : (1900, 1950, 2000),
 iCivNorthCarolina : (1900, 1950, 2000),
 iCivSouthCarolina : (1900, 1950, 2000),
 iCivNewJersey : (1900, 1950, 2000),
 iCivNewYork : (1900, 1950, 2000),
 iCivPennsylvania : (1900, 1950, 2000),
+iCivDelaware : (1900, 1950, 2000),
 iCivGeorgia : (1900, 1950, 2000),
 iCivAmerica : (1900, 1950, 2000),
 iCivCanada : (1920, 1950, 2000),
@@ -231,12 +231,12 @@ tResurrectionIntervals = (
 [(1700, 2020)], #Maryland
 [(1700, 2020)], #Connecticut
 [(1700, 2020)], #Rhode Island
-[(1700, 2020)], #Delaware
 [(1700, 2020)], #North Carolina
 [(1700, 2020)], #South Carolina
 [(1700, 2020)], #New Jersey
 [(1700, 2020)], #New York
 [(1700, 2020)], #Pennsylvania
+[(1700, 2020)], #Delaware
 [(1700, 2020)], #Georgia
 [(1770, 2020)], #America
 [(1867, 2020)], #Canada
@@ -253,12 +253,12 @@ lEnemyCivsOnSpawn = [
 [], #Maryland
 [], #Connecticut
 [], #Rhode Island
-[], #Delaware
 [], #North Carolina
 [], #South Carolina
 [], #New Jersey
 [], #New York
 [], #Pennsylvania
+[], #Delaware
 [], #Georgia
 [], #America
 [], #Canada
@@ -275,12 +275,12 @@ lTotalWarOnSpawn = [
 [], #Maryland
 [], #Connecticut
 [], #Rhode Island
-[], #Delaware
 [], #North Carolina
 [], #South Carolina
 [], #New Jersey
 [], #New York
 [], #Pennsylvania
+[], #Delaware
 [], #Georgia
 [], #America
 [], #Canada
@@ -298,12 +298,12 @@ tAggressionLevel = (
 1, #Maryland
 1, #Connecticut
 1, #Rhode Island
-1, #Delaware
 1, #North Carolina
 1, #South Carolina
 1, #New Jersey
 1, #New York
 1, #Pennsylvania
+1, #Delaware
 1, #Georgia
 2, #America
 0, #Canada
@@ -324,12 +324,12 @@ tAIStopBirthThreshold = (
 	50, #Maryland
 	50, #Connecticut
 	50, #Rhode Island
-	50, #Delaware
 	50, #North Carolina
 	50, #South Carolina
 	50, #New Jersey
 	50, #New York
 	50, #Pennsylvania
+	50, #Delaware
 	50, #Georgia
     50, #America
     60, #Canada
@@ -350,12 +350,12 @@ tResurrectionProb = (
 100, #Maryland
 100, #Connecticut
 100, #Rhode Island
-100, #Delaware
 100, #North Carolina
 100, #South Carolina
 100, #New Jersey
 100, #New York
 100, #Pennsylvania
+100, #Delaware
 100, #Georgia
 100, #America
 100, #Canada
@@ -373,12 +373,12 @@ tPatienceThreshold = (
 100, #Maryland
 100, #Connecticut
 100, #Rhode Island
-100, #Delaware
 100, #North Carolina
 100, #South Carolina
 100, #New Jersey
 100, #New York
 100, #Pennsylvania
+100, #Delaware
 100, #Georgia
 30, #America
 40, #Canada

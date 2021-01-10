@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Georgia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_DESC</Tag>
+		<English>The Georgians</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_PEOPLES</Tag>
+		<English>The Colony of Georgia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_DEFAULT</Tag>
+		<English>Georgia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_REPUBLIC</Tag>
+		<English>Commonwealth of Georgia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_CSA</Tag>
+		<English>Confederate Georgia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_ADJECTIVE</Tag>
+		<English>Georgian</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_SHORT_DESC</Tag>
+		<English>Georgia</English>
+	</TEXT>
+</Civ4GameText>

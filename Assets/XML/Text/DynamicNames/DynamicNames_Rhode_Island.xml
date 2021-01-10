@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Rhode Island -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RHODE_ISLAND_DESC</Tag>
+		<English>The Rhode Islanders</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RHODE_ISLAND_PEOPLES</Tag>
+		<English>The Providence Plantations</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RHODE_ISLAND_DEFAULT</Tag>
+		<English>Rhode Island</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RHODE_ISLAND_REPUBLIC</Tag>
+		<English>Commonwealth of Rhode Island</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RHODE_ISLAND_CSA</Tag>
+		<English>Confederate Rhode Island</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RHODE_ISLAND_ADJECTIVE</Tag>
+		<English>Rhode Island</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_RHODE_ISLAND_SHORT_DESC</Tag>
+		<English>Rhode Island</English>
+	</TEXT>
+</Civ4GameText>

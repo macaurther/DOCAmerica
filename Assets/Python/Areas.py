@@ -141,12 +141,12 @@ tBirthArea = (
 ((49, 43), 	(53, 46)), 	# Maryland
 ((51, 46), 	(57, 52)), 	# Connecticut
 ((50, 53), 	(54, 60)), 	# Rhode Island
-((49, 43), 	(53, 46)), 	# Delaware
 ((51, 46), 	(57, 52)), 	# North Carolina
 ((50, 53), 	(54, 60)), 	# South Carolina
 ((49, 43), 	(53, 46)), 	# New Jersey
 ((51, 46), 	(57, 52)), 	# New York
 ((50, 53), 	(54, 60)), 	# Pennsylvania
+((49, 43), 	(53, 46)), 	# Delaware
 ((50, 53), 	(54, 60)), 	# Georgia
 ((25, 43), 	(32, 50)), 	# America
 ((20, 50), 	(35, 60)), 	# Canada
@@ -164,12 +164,12 @@ iNewHampshire : [],
 iMaryland : [],
 iConnecticut : [],
 iRhodeIsland : [],
-iDelaware : [],
 iNorthCarolina : [],
 iSouthCarolina : [],
 iNewJersey : [],
 iNewYork : [],
 iPennsylvania : [],
+iDelaware : [],
 iGeorgia : [],
 iAmerica : [(25, 48), (25, 49), (25, 50), (26, 48), (26, 49), (27, 49), (27, 50), (28, 50), (29, 50), (30, 50)],
 iCanada : [(20, 50), (21, 50), (22, 50), (23, 50), (24, 50), (25, 50), (29, 50), (30, 50), (31, 50), (32, 50), (20, 51), (21, 51), (22, 51), (23, 51), (24, 51), (32, 51), (35, 53), (35, 54), (34, 55), (34, 56), (33, 56), (33, 57)],
@@ -188,13 +188,13 @@ tCoreArea = (
 ((122, 42),	(134, 48)),	# Maryland
 ((137, 56),	(140, 59)),	# Connecticut
 ((141, 58),	(142, 59)),	# Rhode Island
-((132, 44),	(134, 48)),	# Delaware
 ((113, 29),	(136, 36)),	# North Carolina
 ((116, 23),	(126, 30)),	# South Carolina
 ((133, 47),	(136, 55)),	# New Jersey
 ((121, 53),	(140, 67)),	# New York
 ((120, 47),	(133, 56)),	# Pennsylvania
-((111, 17),	(122, 29)),	# Georgia	TODO
+((132, 44),	(134, 48)),	# Delaware
+((111, 17),	(122, 29)),	# Georgia
 ((23, 45),	(32, 50)),	# America	TODO
 ((27, 50),	(35, 52)),	# Canada	TODO
 )
@@ -262,7 +262,6 @@ iMaryland : [
 ],
 iConnecticut : [],
 iRhodeIsland : [],
-iDelaware : [(132,44), (134,48)],
 iNorthCarolina : [
 #Northern Border
 (113,36), (114,36), (115,36), (118,36), (119,36), (120,36), (121,36), (122,36), (123,36), (124,36),
@@ -328,6 +327,7 @@ iPennsylvania : [
 (128,48), (129,48), (130,48), (131,48), (132,48),
 (120,47), (125,47), (126,47), (127,47), (128,47), (129,47), (130,47), (131,47), (132,47),
 ],
+iDelaware : [(132,44), (134,48)],
 iGeorgia : [
 #Western Border
 (111,24), (111,23),
@@ -367,12 +367,12 @@ tNormalArea = (
 ((49, 43),	(53, 46)),	# Maryland TODO
 ((51, 46),	(57, 52)),	# Connecticut TODO
 ((50, 53),	(54, 60)),	# Rhode Island TODO
-((49, 43),	(53, 46)),	# Delaware TODO
 ((51, 46),	(57, 52)),	# North Carolina TODO
 ((50, 53),	(54, 60)),	# South Carolina TODO
 ((49, 43),	(53, 46)),	# New Jersey TODO
 ((51, 46),	(57, 52)),	# New York TODO
 ((50, 53),	(54, 60)),	# Pennsylvania TODO
+((49, 43),	(53, 46)),	# Delaware TODO
 ((50, 53),	(54, 60)),	# Georgia TODO
 ((11, 43),	(31, 49)),	# America TODO
 (( 8, 50),	(37, 67)),	# Canada TODO
@@ -390,12 +390,12 @@ iNewHampshire : [],
 iMaryland : [],
 iConnecticut : [],
 iRhodeIsland : [],
-iDelaware : [],
 iNorthCarolina : [],
 iSouthCarolina : [],
 iNewJersey : [],
 iNewYork : [],
 iPennsylvania : [],
+iDelaware : [],
 iGeorgia : [],
 iCanada : [],
 }
@@ -415,12 +415,12 @@ tBroaderArea = (
 ((49, 43),	(53, 46)),	# Maryland TODO
 ((51, 46),	(57, 52)),	# Connecticut TODO
 ((50, 53),	(54, 60)),	# Rhode Island TODO
-((49, 43),	(53, 46)),	# Delaware TODO
 ((51, 46),	(57, 52)),	# North Carolina TODO
 ((50, 53),	(54, 60)),	# South Carolina TODO
 ((49, 43),	(53, 46)),	# New Jersey TODO
 ((51, 46),	(57, 52)),	# New York TODO
 ((50, 53),	(54, 60)),	# Pennsylvania TODO
+((49, 43),	(53, 46)),	# Delaware TODO
 ((50, 53),	(54, 60)),	# Georgia TODO
 ((11, 43),	(31, 49)),	# America TODO
 (( 8, 50),	(37, 67)),	# Canada TODO

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- South Carolina -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_DESC</Tag>
+		<English>The South Carolinians</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_PEOPLES</Tag>
+		<English>The Province of Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_DEFAULT</Tag>
+		<English>South Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_REPUBLIC</Tag>
+		<English>Commonwealth of South Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_CSA</Tag>
+		<English>Confederate South Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_ADJECTIVE</Tag>
+		<English>South Carolinian</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_SHORT_DESC</Tag>
+		<English>South Carolina</English>
+	</TEXT>
+</Civ4GameText>

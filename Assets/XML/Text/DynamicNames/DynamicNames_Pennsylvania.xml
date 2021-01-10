@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pennsylvania -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_DESC</Tag>
+		<English>The Pennsylvanians</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_PEOPLES</Tag>
+		<English>The Province of Pennsylvania</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_DEFAULT</Tag>
+		<English>Pennsylvania</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_REPUBLIC</Tag>
+		<English>Commonwealth of Pennsylvania</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_CSA</Tag>
+		<English>Confederate Pennsylvania</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_ADJECTIVE</Tag>
+		<English>Pennsylvanian</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_SHORT_DESC</Tag>
+		<English>Pennsylvania</English>
+	</TEXT>
+</Civ4GameText>

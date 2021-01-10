@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Virginia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_DESC</Tag>
+		<English>The Virginians</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_PEOPLES</Tag>
+		<English>The Virginia Company</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_DEFAULT</Tag>
+		<English>Dominion of Virginia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_REPUBLIC</Tag>
+		<English>Commonwealth of Virginia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_CSA</Tag>
+		<English>Confederate Virginia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_ADJECTIVE</Tag>
+		<English>Virginian</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_SHORT_DESC</Tag>
+		<English>Virginia</English>
+	</TEXT>
+</Civ4GameText>

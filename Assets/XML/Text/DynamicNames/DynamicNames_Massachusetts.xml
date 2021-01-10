@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Massachusetts -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_DESC</Tag>
+		<English>The Massachusettsans</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_PEOPLES</Tag>
+		<English>The Pilgrims</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_DEFAULT</Tag>
+		<English>Massachusetts</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_REPUBLIC</Tag>
+		<English>Commonwealth of Massachusetts</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_CSA</Tag>
+		<English>Confederate Massachusetts</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_ADJECTIVE</Tag>
+		<English>Massachusetts</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_SHORT_DESC</Tag>
+		<English>Massachusetts</English>
+	</TEXT>
+</Civ4GameText>
