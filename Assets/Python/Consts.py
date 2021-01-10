@@ -4,8 +4,8 @@
 from CvPythonExtensions import *
 gc = CyGlobalContext()
 
-iWorldX = 149
-iWorldY = 79
+iWorldX = 150
+iWorldY = 80
 
 # initialise player variables to player IDs from WBS
 iNumPlayers = 18

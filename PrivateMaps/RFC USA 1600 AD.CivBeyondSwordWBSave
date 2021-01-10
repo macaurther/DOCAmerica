@@ -58388,6 +58388,12 @@ BeginPlot
 	isWOfRiver
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
+	BeginUnit
+		UnitType=UNIT_MILITIA, UnitOwner=2, (England)
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER, UnitOwner=2, (England)
+	EndUnit
 	PlotType=2
 EndPlot
 BeginPlot
@@ -64335,80 +64341,68 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=140,y=62
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=140,y=63
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=140,y=64
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=0,2,
 EndPlot
 BeginPlot
 	x=140,y=65
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,2,
 EndPlot
 BeginPlot
 	x=140,y=66
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,2,
 EndPlot
 BeginPlot
 	x=140,y=67
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,2,
 EndPlot
 BeginPlot
 	x=140,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,2,
 EndPlot
 BeginPlot
 	x=140,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,2,
 EndPlot
 BeginPlot
 	x=140,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,2,
 EndPlot
 BeginPlot
 	x=140,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=72
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=73
@@ -64417,14 +64411,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=75

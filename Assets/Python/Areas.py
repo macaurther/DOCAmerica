@@ -97,9 +97,9 @@ def init():
 ### Capitals ###
 # MacAurther TODO: Right locations
 tCapitals = (
-(52, 44), # Madrid	TODO
-(55, 50), # Paris	TODO
-(53, 54), # London	TODO
+(109, 74), # Madrid	TODO
+(118, 74), # Paris	TODO
+(127, 73), # London	TODO
 (130, 39), # Jamestown
 (143, 61), # Boston
 (141, 65), # Portsmouth
