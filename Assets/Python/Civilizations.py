@@ -139,6 +139,7 @@ def init():
 
 lStartingTechs = [
 {
+iCivNative : 		Techs(column=2),
 iCivSpain : 		Techs([iExploration, iOptics], column=9),
 iCivFrance :		Techs([iExploration, iOptics], column=9),
 iCivEngland :		Techs([iExploration, iOptics], column=9),
@@ -157,7 +158,6 @@ iCivDelaware :		Techs([iExploration, iOptics], column=9),
 iCivGeorgia :		Techs([iExploration, iOptics], column=9),
 iCivAmerica :		Techs([iRepresentation, iChemistry], column=12),
 iCivCanada :		Techs([iBallistics, iEngine, iRailroad, iJournalism], column=13),
-iCivNative : 		Techs(column=2),
 iCivIndependent :	Techs(column=9),
 iCivIndependent2 :	Techs(column=9),
 },

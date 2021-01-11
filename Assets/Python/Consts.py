@@ -138,6 +138,19 @@ lOlderNeighbours = [
 [], #Spain
 [], #France
 [], #England
+[], #Virginia
+[], #Massachusetts
+[], #New Hampshire
+[], #Maryland
+[], #Connecticut
+[], #Rhode Island
+[], #North Carolina
+[], #South Carolina
+[], #New Jersey
+[], #New York
+[], #Pennsylvania
+[], #Delaware
+[], #Georgia
 [iSpain, iFrance, iEngland], #America
 [iFrance, iEngland, iAmerica], #Canada
 ]

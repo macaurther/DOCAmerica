@@ -52,27 +52,29 @@ iModifierInflationRate, iModifierGreatPeopleThreshold, iModifierGrowthThreshold)
 
 ### Sequence of spawns ###
 
-lOrder = [iCivSpain, iCivFrance, iCivEngland, iCivAmerica, iCivCanada, iCivIndependent, iCivIndependent2, iCivNative, iCivBarbarian]
+lOrder = [iCivSpain, iCivFrance, iCivEngland, iCivVirginia, iCivMassachusetts, iCivNewHampshire, iCivMaryland, iCivConnecticut, iCivRhodeIsland,
+iCivNorthCarolina, iCivSouthCarolina, iCivNewJersey, iCivNewYork, iCivPennsylvania, iCivDelaware, iCivGeorgia, iCivAmerica, iCivCanada, 
+iCivIndependent, iCivIndependent2, iCivNative, iCivBarbarian]
 
 ### Modifiers (by civilization!) ###
 
-#                          SPA FRA ENG AME CAN     IND IND NAT SEL BAR 
+#                          SPA FRA ENG VIR MAS NHA MAR CON RHO NCA SCA NJE NYO PEN DEL GEO AME CAN     IND IND NAT SEL BAR 
 
-tCulture =               ( 100,100,100,100,100,    100,100,100,100,100 )
+tCulture =               ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
 
-tUnitUpkeep =            ( 100,100,100,100,100,    100,100,100,100,100 )
-tResearchCost =          ( 100,100,100,100,100,    100,100,100,100,100 )
-tDistanceMaintenance =   ( 100,100,100,100,100,    100,100,100,100,100 )
-tCitiesMaintenance =     ( 100,100,100,100,100,    100,100,100,100,100 )
-tCivicUpkeep =           ( 100,100,100,100,100,    100,100,100,100,100 )
-tHealth =                ( 100,100,100,100,100,    100,100,100,100,100 )
+tUnitUpkeep =            ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tResearchCost =          ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tDistanceMaintenance =   ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tCitiesMaintenance =     ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tCivicUpkeep =           ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tHealth =                ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
 
-tUnitCost =              ( 100,100,100,100,100,    100,100,100,100,100 )
-tWonderCost =            ( 100,100,100,100,100,    100,100,100,100,100 )
-tBuildingCost =          ( 100,100,100,100,100,    100,100,100,100,100 )
-tInflationRate =         ( 100,100,100,100,100,    100,100,100,100,100 )
-tGreatPeopleThreshold =  ( 100,100,100,100,100,    100,100,100,100,100 )
-tGrowthThreshold =       ( 100,100,100,100,100,    100,100,100,100,100 )
+tUnitCost =              ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tWonderCost =            ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tBuildingCost =          ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tInflationRate =         ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tGreatPeopleThreshold =  ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
+tGrowthThreshold =       ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,100,100,100 )
 
 tModifiers = (tCulture, tUnitUpkeep, tResearchCost, tDistanceMaintenance, tCitiesMaintenance, tCivicUpkeep, tHealth, tUnitCost, tWonderCost, tBuildingCost, tInflationRate, tGreatPeopleThreshold, tGrowthThreshold)
 

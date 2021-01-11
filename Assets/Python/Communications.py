@@ -14,16 +14,29 @@ PyPlayer = PyHelpers.PyPlayer
 
 #scrambled pools
 tPool1 = (
-	iEngland,)
+	iEngland,
+	iVirginia,
+	iMassachusetts,
+	iNewHampshire,
+	iMaryland,)
 
 tPool2 = (
-	iSpain,)
+	iSpain,
+	iNewJersey,
+	iNewYork,
+	iPennsylvania,
+	iDelaware,
+	iGeorgia,)
 
 
 tPool3 = (
 	iAmerica,
 	iFrance,
-	iCanada,)
+	iCanada,
+	iConnecticut,
+	iRhodeIsland,
+	iNorthCarolina,
+	iSouthCarolina,)
 
 
 class Communications:

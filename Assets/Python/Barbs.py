@@ -49,10 +49,12 @@ class Barbs:
 						utils.makeUnit(iUnit, iOwner, tPlot, 1)
 
 		#pirates in Mediterranean
+		# MacAurther TODO
 		if utils.isYearIn(-210, 50):
 			self.checkSpawn(iBarbarian, iWarGalley, 1, (49, 37), (72, 44), self.spawnPirates, iGameTurn, 8, 0)
 
 		#American natives
+		# MacAurther TODO
 		if utils.isYearIn(600, 1100):
 			self.checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 20, 0)
 		if utils.isYearIn(1300, 1600):
@@ -80,6 +82,7 @@ class Barbs:
 			utils.makeUnitAI(iHolkan, iNative, (19, 35), UnitAITypes.UNITAI_ATTACK, 2)
 
 		#pirates in the Caribbean
+		# MacAurther TODO
 		if utils.isYearIn(1600, 1800):
 			self.checkSpawn(iNative, iPrivateer, 1, (24, 32), (35, 46), self.spawnPirates, iGameTurn, 5, 0)
 

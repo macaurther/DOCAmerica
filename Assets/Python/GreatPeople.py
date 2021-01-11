@@ -560,6 +560,345 @@ iCivEngland : {
 		"Kim Philby", # 20th
 	],
 },
+#MacAurther TODO : All states great people
+iCivVirginia : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivMassachusetts : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivNewHampshire : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivMaryland : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivConnecticut : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivRhodeIsland : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivNorthCarolina : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivSouthCarolina : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivNewJersey : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivNewYork : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivPennsylvania : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivDelaware : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
+iCivGeorgia : {
+	iGreatProphet : [
+		"Joseph Smith", # 19th
+	],
+	iGreatArtist : [
+		"Edgar Allan Poe", # 19th
+	],
+	iGreatScientist : [
+		"Benjamin Franklin", # 18th
+	],
+	iGreatMerchant : [
+		"Cornelius Vanderbilt", # 19th
+	],
+	iGreatEngineer : [
+		"Thomas Edison", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Paine", # 18th
+	],
+	iGreatGeneral : [
+		"Andrew Jackson", # 19th
+	],
+	iGreatSpy : [
+		"Benjamin Tallmadge", # 18th
+	],
+},
 iCivAmerica : {
 	iGreatProphet : [
 		"Joseph Smith", # 19th

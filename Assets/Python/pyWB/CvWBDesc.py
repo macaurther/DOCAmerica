@@ -1823,7 +1823,8 @@ class CvSignDesc:
 		f.write("BeginSign\n")
 		f.write("\tplotX=%d\n" %(sign.getPlot().getX(),))
 		f.write("\tplotY=%d\n" %(sign.getPlot().getY(),))
-		f.write("\tplayerType=%d, (%s)\n" %(sign.getPlayerType(), gc.getPlayer(sign.getPlayerType()).getName().encode(fileencoding)))
+		# MacAurther TODO: Temp Commenting out to prevent error with non player assigned flags that are temporarily in the scenario file
+		#f.write("\tplayerType=%d, (%s)\n" %(sign.getPlayerType(), gc.getPlayer(sign.getPlayerType()).getName().encode(fileencoding)))
 		f.write("\tcaption=%s\n" %(sign.getCaption(),))
 		f.write("EndSign\n")
 

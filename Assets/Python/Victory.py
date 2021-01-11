@@ -143,6 +143,46 @@ def checkTurn(iGameTurn, iPlayer):
 			
 		# third goal: be the first to enter the Industrial and Modern eras
 			
+	#MacAurther TODO: Add UHVs
+	elif iPlayer == iVirginia:
+		pass
+	
+	elif iPlayer == iMassachusetts:
+		pass
+	
+	elif iPlayer == iNewHampshire:
+		pass
+	
+	elif iPlayer == iMaryland:
+		pass
+	
+	elif iPlayer == iConnecticut:
+		pass
+	
+	elif iPlayer == iRhodeIsland:
+		pass
+	
+	elif iPlayer == iNorthCarolina:
+		pass
+	
+	elif iPlayer == iSouthCarolina:
+		pass
+	
+	elif iPlayer == iNewJersey:
+		pass
+	
+	elif iPlayer == iNewYork:
+		pass
+	
+	elif iPlayer == iPennsylvania:
+		pass
+	
+	elif iPlayer == iDelaware:
+		pass
+	
+	elif iPlayer == iGeorgia:
+		pass
+	
 	elif iPlayer == iAmerica:
 	
 		# first goal: allow no European colonies in North America, Central America and the Caribbean and control or vassalize Mexico in 1930 AD
@@ -1930,6 +1970,110 @@ def getUHVHelp(iPlayer, iGoal):
 			iRenaissanceTechs = countFirstDiscovered(iEngland, iRenaissance)
 			iIndustrialTechs = countFirstDiscovered(iEngland, iIndustrial)
 			aHelp.append(getIcon(iRenaissanceTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iRenaissance).getText(), iRenaissanceTechs, 8)) + ' ' + getIcon(iIndustrialTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 8)))
+
+	elif iPlayer == iVirginia:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iMassachusetts:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iNewHampshire:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iMaryland:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iConnecticut:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iRhodeIsland:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iNorthCarolina:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iSouthCarolina:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iNewJersey:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iNewYork:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iPennsylvania:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iDelaware:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
+
+	elif iPlayer == iGeorgia:
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
+		elif iGoal == 2:
+			aHelp.append("TODO ;)")
 
 	elif iPlayer == iAmerica:
 		if iGoal == 0:

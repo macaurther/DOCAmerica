@@ -915,6 +915,45 @@ def getUHVTileInfo(argsList):
 	elif iPlayer == iEngland:
 		pass
 			
+	elif iPlayer == iVirginia:
+		pass
+		
+	elif iPlayer == iMassachusetts:
+		pass
+		
+	elif iPlayer == iNewHampshire:
+		pass
+		
+	elif iPlayer == iMaryland:
+		pass
+		
+	elif iPlayer == iConnecticut:
+		pass
+		
+	elif iPlayer == iRhodeIsland:
+		pass
+		
+	elif iPlayer == iNorthCarolina:
+		pass
+		
+	elif iPlayer == iSouthCarolina:
+		pass
+		
+	elif iPlayer == iNewJersey:
+		pass
+		
+	elif iPlayer == iNewYork:
+		pass
+		
+	elif iPlayer == iPennsylvania:
+		pass
+		
+	elif iPlayer == iDelaware:
+		pass
+		
+	elif iPlayer == iGeorgia:
+		pass
+		
 	elif iPlayer == iAmerica:
 		pass
 			

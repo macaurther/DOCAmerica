@@ -1691,6 +1691,34 @@ class RiseAndFall:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iEngland:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iEngland:
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iVirginia:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iMassachusetts:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iNewHampshire:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iMaryland:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iConnecticut:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iRhodeIsland:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iNorthCarolina:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iSouthCarolina:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iNewJersey:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+		elif iCiv == iNewYork:
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iPennsylvania:
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
+		elif iCiv == iDelaware:
+			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+		elif iCiv == iGeorgia:
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iAmerica:
 			utils.makeUnit(iWorker, iCiv, tPlot, 4)
 		elif iCiv == iCanada:

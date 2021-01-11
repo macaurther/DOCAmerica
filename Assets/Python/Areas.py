@@ -384,6 +384,7 @@ dChangedNormalArea = {
 dNormalAreaExceptions = {
 iSpain : [(49, 44), (49, 43), (49, 42), (49, 41)],
 iFrance : [],
+iEngland : [],
 iVirginia : [],
 iMassachusetts : [],
 iNewHampshire : [],
@@ -397,6 +398,7 @@ iNewYork : [],
 iPennsylvania : [],
 iDelaware : [],
 iGeorgia : [],
+iAmerica : [],
 iCanada : [],
 }
 
