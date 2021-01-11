@@ -37,22 +37,22 @@ BeginTeam
 	TeamID=8, (RhodeIsland)
 EndTeam
 BeginTeam
-	TeamID=9, (Delaware)
+	TeamID=9, (NorthCarolina)
 EndTeam
 BeginTeam
-	TeamID=10, (NorthCarolina)
+	TeamID=10, (SouthCarolina)
 EndTeam
 BeginTeam
-	TeamID=11, (SouthCarolina)
+	TeamID=11, (NewJersey)
 EndTeam
 BeginTeam
-	TeamID=12, (NewJersey)
+	TeamID=12, (NewYork)
 EndTeam
 BeginTeam
-	TeamID=13, (NewYork)
+	TeamID=13, (Pennseylvania)
 EndTeam
 BeginTeam
-	TeamID=14, (Pennseylvania)
+	TeamID=14, (Delaware)
 EndTeam
 BeginTeam
 	TeamID=15, (Georgia)
@@ -102,84 +102,98 @@ BeginPlayer
 	Team=3
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_VIRGINIA
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=4
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_MASSACHUSETTS
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=5
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_NEW_HAMPSHIRE
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=6
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_MARYLAND
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=7
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_CONNECTICUT
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=8
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_RHODE_ISLAND
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=9
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
-	CivType=CIVILIZATION_DELAWARE
+	CivType=CIVILIZATION_NORTH_CAROLINA
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=10
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
-	CivType=CIVILIZATION_NORTH_CAROLINA
+	CivType=CIVILIZATION_SOUTH_CAROLINA
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=11
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
-	CivType=CIVILIZATION_SOUTH_CAROLINA
+	CivType=CIVILIZATION_NEW_JERSEY
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=12
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
-	CivType=CIVILIZATION_NEW_JERSEY
+	CivType=CIVILIZATION_NEW_YORK
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=13
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
-	CivType=CIVILIZATION_NEW_YORK
+	CivType=CIVILIZATION_PENNSYLVANIA
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=14
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
-	CivType=CIVILIZATION_PENNSYLVANIA
+	CivType=CIVILIZATION_DELAWARE
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=15
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_GEORGIA
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=16
 	LeaderType=LEADER_FRANKLIN_ROOSEVELT
 	CivType=CIVILIZATION_AMERICA
+	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -58388,13 +58402,13 @@ BeginPlot
 	isWOfRiver
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
+	PlotType=2
 	BeginUnit
 		UnitType=UNIT_MILITIA, UnitOwner=2, (England)
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_SETTLER, UnitOwner=2, (England)
 	EndUnit
-	PlotType=2
 EndPlot
 BeginPlot
 	x=127,y=74
