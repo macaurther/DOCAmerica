@@ -30,6 +30,7 @@ tFranceTL = (51, 47)
 ### GOAL CONSTANTS ###
 
 dTechGoals = {
+	iAmerica: (1, [iPrinting]),	# MacAurther TODO: Temp Placeholder
 }
 
 dEraGoals = {}

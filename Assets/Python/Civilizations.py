@@ -28,9 +28,21 @@ class Techs:
 
 def getScenarioTechs(iScenario, iPlayer):
 	iCivilization = gc.getPlayer(iPlayer).getCivilizationType()
+	print "#MacAurther Debug: This is the iCivilization obtained:"
+	print iCivilization
+	print "This is iCivSpain"
+	print iCivSpain
+	print "This is iCivFrance"
+	print iCivFrance
+	print "This is iCivEngland"
+	print iCivEngland
+	print "This is iCivVirginia"
+	print iCivVirginia
 	for iScenarioType in reversed(range(iScenario+1)):
 		if iCivilization in lStartingTechs[iScenarioType]:
 			return lStartingTechs[iScenarioType][iCivilization].list()
+		#else: #debug
+			#return lStartingTechs[iScenarioType][iCivVirginia].list()	#Debug
 			
 def getStartingTechs(iPlayer):
 	return getScenarioTechs(utils.getScenario(), iPlayer)
@@ -49,6 +61,7 @@ def initPlayerTechs(iPlayer):
 def initTechs(iPlayer, lTechs):
 	pPlayer = gc.getPlayer(iPlayer)
 
+	#lTechs = Techs([iExploration, iOptics], column=9).list()	#Debug
 	for iTech in lTechs:
 		initTech(iPlayer, iTech)
 	
@@ -139,8 +152,8 @@ def init():
 
 lStartingTechs = [
 {
-iCivNative : 		Techs(column=2),
-iCivSpain : 		Techs([iExploration, iOptics], column=9),
+iCivNative : 		Techs([iTanning, iMythology]), #MacAurther TODO: Balance this
+iCivSpain :			Techs([iExploration, iOptics], column=9),
 iCivFrance :		Techs([iExploration, iOptics], column=9),
 iCivEngland :		Techs([iExploration, iOptics], column=9),
 iCivVirginia :		Techs([iExploration, iOptics], column=9),
@@ -168,9 +181,9 @@ iCivIndependent2:Techs(column=5),
 {
 iCivIndependent:Techs(column=10),
 iCivIndependent2:Techs(column=10),
-iCivSpain :		Techs([iCombinedArms, iGeography, iHorticulture], column=10),
-iCivFrance :	Techs(column=11, exceptions=[iUrbanPlanning, iEconomics]),
-iCivEngland :	Techs(column=11, exceptions=[iUrbanPlanning, iHorticulture]),
+iCivSpain :		Techs(column=11),
+iCivFrance :	Techs(column=11, exceptions=[iUrbanPlanning]),
+iCivEngland :	Techs(column=11, exceptions=[iUrbanPlanning, iEconomics]),
 }]
 
 ### Tech Preferences ###

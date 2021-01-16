@@ -27,15 +27,24 @@ iMaxIntervalLate = 60
 iThreshold = 100
 iMinValue = 30
 
-# following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
+iMarylandDelawareYear = -220	#MacAurther TODO: Placeholder. Find some interesting conflicts
+tMarylandDelawareTL = (53, 37)	#MacAurther TODO: Placeholder. Find some interesting conflicts
+tMarylandDelawareBR = (61, 40)	#MacAurther TODO: Placeholder. Find some interesting conflicts
 
-lConquests = []
+# following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
+tConquestMarylandDelaware = (0, iMaryland, iDelaware, tMarylandDelawareTL, tMarylandDelawareBR, 2, iMarylandDelawareYear, 10)	#MacAurther TODO: Placeholder. Find some interesting conflicts
+
+lConquests = [tConquestMarylandDelaware]
 
 class AIWars:
 		
 	def setup(self):
-		iTurn = getTurnForYear(-600)
+		iTurn = getTurnForYear(1650)
 		data.iNextTurnAIWar = iTurn + gc.getGame().getSorenRandNum(iMaxIntervalEarly-iMinIntervalEarly, 'random turn')
+		if utils.getScenario() == i1770AD:  #late start condition
+			iTurn = getTurnForYear(1800)
+		elif utils.getScenario() == i1850AD:
+			iTurn = getTurnForYear(1860)
 
 
 	def checkTurn(self, iGameTurn):
@@ -70,7 +79,6 @@ class AIWars:
 		iID, iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIntervalTurns = tConquest
 	
 		if utils.getHumanID() == iPlayer: return
-		if not gc.getPlayer(iPlayer).isAlive() and iPlayer != iTurks: return
 		if data.lConquest[iID]: return
 		if iPreferredTarget >= 0 and gc.getPlayer(iPreferredTarget).isAlive() and gc.getTeam(iPreferredTarget).isVassal(iPlayer): return
 		
@@ -305,11 +313,19 @@ class AIWars:
 				lTargetValues[iLoopPlayer] /= 2
 				
 			# spare smallish civs
-			if iLoopPlayer in []:
+			if iLoopPlayer in [iRhodeIsland, iConnecticut, iDelaware]:
 				lTargetValues[iLoopPlayer] *= 4
 				lTargetValues[iLoopPlayer] /= 5
 				
 			# no suicide
-
+			if iPlayer == iRhodeIsland:
+				if iLoopPlayer in [iMassachusetts, iNewYork]:
+					lTargetValues[iLoopPlayer] /= 2
+			elif iPlayer == iConnecticut:
+				if iLoopPlayer in [iMassachusetts, iNewYork]:
+					lTargetValues[iLoopPlayer] /= 2
+			elif iPlayer == iDelaware:
+				if iLoopPlayer in [iMaryland, iPennsylvania]:
+					lTargetValues[iLoopPlayer] /= 2
 					
 		return utils.getHighestIndex(lTargetValues)

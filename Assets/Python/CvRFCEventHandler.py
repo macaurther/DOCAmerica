@@ -173,7 +173,7 @@ class CvRFCEventHandler:
 		
 		vic.onCityAcquired(iPlayer, iOwner, city, bConquest)
 		
-		lTradingCompanyList = [iSpain, iFrance, iEngland, iPortugal]
+		lTradingCompanyList = [iSpain, iFrance, iEngland]
 		
 		if bTrade and iPlayer in lTradingCompanyList and (city.getX(), city.getY()) in tTradingCompanyPlotLists[lTradingCompanyList.index(iPlayer)]:
 			self.up.tradingCompanyCulture(city, iPlayer, iOwner)
@@ -335,7 +335,7 @@ class CvRFCEventHandler:
 			
 		utils.checkSlaves(iPlayer)
 			
-		if iPlayer in []:
+		if iPlayer in [iVirginia]:	#MacAurther TODO: Find out what to do with this
 			cnm.onRevolution(iPlayer)
 			
 	def onCityGrowth(self, argsList):
@@ -491,6 +491,10 @@ class CvRFCEventHandler:
 		
 		if iGameTurn % 10 == 0:
 			dc.checkTurn(iGameTurn)
+		
+		if utils.getScenario() == i1600AD and iGameTurn == getTurnForYear(1800):		#MacAurther TODO: Balance
+			for iPlayer in range(iGeorgia):
+				Modifiers.adjustInflationModifier(iPlayer)
 			
 		return 0
 

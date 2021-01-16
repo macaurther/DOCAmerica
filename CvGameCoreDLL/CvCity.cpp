@@ -3913,6 +3913,12 @@ void CvCity::hurry(HurryTypes eHurry)
 
 	changeProduction(hurryProduction(eHurry));
 
+	// Leoreth: remember if a unit is being hurried to apply the mercenary promotion, includes Phoenician UP
+	if (isProductionUnit() && iHurryGold > 0)
+	{
+		setUnitHurried(getProductionUnit(), true);
+	}
+
 	GET_PLAYER(getOwnerINLINE()).changeGold(-(iHurryGold));
 	changePopulation(-(iHurryPopulation));
 
@@ -4128,6 +4134,11 @@ bool CvCity::canConscript(bool bForce) const
 	}
 
 	if (getPopulation() <= getConscriptPopulation())
+	{
+		return false;
+	}
+
+	if (plot()->calculateTeamCulturePercent(getTeam()) < GC.getDefineINT("CONSCRIPT_MIN_CULTURE_PERCENT"))
 	{
 		return false;
 	}
@@ -7129,7 +7140,7 @@ int CvCity::calculateColonyMaintenanceTimes100() const
 		case INDEPENDENT:
 		case INDEPENDENT2:
 		case NATIVE:
-			break;
+			return 0;
 	}
 	//Rhye - end
 

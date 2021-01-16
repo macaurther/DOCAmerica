@@ -285,9 +285,9 @@ def checkLostCoreCollapse(iPlayer):
 	
 	# completely pushed out of core: collapse
 	if len(lCities) == 0:
-		if iPlayer in [] and not utils.isReborn(iPlayer):
-			pPlayer.setReborn(True)
-			return
+		#if iPlayer in [iPhoenicia, iKhmer] and not utils.isReborn(iPlayer):
+			#pPlayer.setReborn(True)
+			#return
 	
 		utils.debugTextPopup('Collapse from lost core: ' + pPlayer.getCivilizationShortDescription(0))
 		scheduleCollapse(iPlayer)
@@ -735,9 +735,7 @@ def calculateStability(iPlayer):
 			# Jail
 			if city.hasBuilding(utils.getUniqueBuilding(iPlayer, iJail)): iModifier -= 1
 			
-			# Portuguese UP: reduced instability from overseas colonies
 			if city.isColony():
-				if iPlayer == iPortugal: iModifier -= 2
 				if bColonialism and bHistorical: iModifier -= 1
 					
 			# cap

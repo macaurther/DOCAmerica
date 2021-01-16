@@ -21,9 +21,10 @@ tMinorCities = (
 )
 
 # do some research on dates here
+# MacAurther TODO: Add natives
 tMinorStates = (
-	(633, 1400, (113, 48), [iArcher, iSwordsman]),	# Powhatan
-	(-2500, -600, (88, 50), [iVulture]),		# Algonquin
+	(1600, 1700, (113, 48), [iArcher, iSwordsman]),	# Powhatan
+	(1600, 1700, (88, 50), [iVulture]),		# Algonquin
 )
 
 #handicap level modifier
@@ -116,7 +117,6 @@ class Barbs:
 				data.lMinorCityFounded[i] = True
 		
 	def canFoundCity(self, sName):
-		pass
 		
 		return True
 	

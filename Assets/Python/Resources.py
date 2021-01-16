@@ -67,6 +67,7 @@ class Resources:
        	
 	def checkTurn(self, iGameTurn):
 		
+		#MacAurther TODO: All dynamic resources
 		# Gujarati horses appear later so Harappa cannot benefit too early
 		if iGameTurn == getTurnForYear(-1000):
 			self.createResource(88, 37, iHorse)

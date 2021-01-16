@@ -870,7 +870,7 @@ class RFCUtils:
 
 	def colonialAcquisition(self, iCiv, tPlot):
 		x, y = tPlot
-		if iCiv in [iPortugal, iSpain]:
+		if iCiv in [iSpain]:
 			iNumUnits = 1
 		elif iCiv in [iFrance, iEngland]:
 			iNumUnits = 2
@@ -908,10 +908,8 @@ class RFCUtils:
 		else:
 			iNumCities = 3
 			
-		if iPlayer == iPortugal and self.getHumanID() != iPortugal:
-			iNumCities = 5
 
-		lCivList = [iSpain, iFrance, iEngland, iPortugal]
+		lCivList = [iSpain, iFrance, iEngland]
 		id = lCivList.index(iPlayer)
 
 		lPlotList = tTradingCompanyPlotLists[id][:]
@@ -1400,7 +1398,10 @@ class RFCUtils:
 		return lPlayerNumbers.index(iHighestEntry)
 		
 	def getScenario(self):
-		
+		#if gc.getPlayer(iEgypt).isPlayable(): return i3000BC
+
+		#if gc.getPlayer(iByzantium).isPlayable(): return i600AD
+
 		return i1600AD
 		
 	def getScenarioStartYear(self):
@@ -1912,6 +1913,9 @@ class RFCUtils:
 		baseKey = "TXT_KEY_UHV_" + gc.getCivilizationInfo(iCiv).getIdentifier() + str(iGoal+1)
 		
 		fullKey = baseKey
+		
+		if iScenario == i1770AD: fullKey += "_1770AD"
+		elif iScenario == i1850AD: fullKey += "_1850AD"
 		
 		if bTitle:
 			fullKey += "_TITLE"

@@ -3065,6 +3065,9 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 			case SPAIN:
 			case FRANCE:
 			case ENGLAND:
+				iValue *= 4;
+				iValue /= 3;
+				break;
 			default:
 				break;
 		}

@@ -246,16 +246,16 @@ class RiseAndFall:
 		
 		self.initScenario()
 		
-		# MacAurther TODO: Why was this required??
-		# Leoreth: make sure to select the Egyptian settler
-		#if pEgypt.isHuman():
-		#	x, y = Areas.getCapital(iEgypt)
-		#	plotEgypt = gc.getMap().plot(x, y)  
-		#	for i in range(plotEgypt.getNumUnits()):
-		#		unit = plotEgypt.getUnit(i)
-		#		if unit.getUnitType() == iSettler:
-		#			CyInterface().selectUnit(unit, True, False, False)
-		#			break
+		# MacAurther TODO: Why is this required?? Can delete??
+		# Leoreth: make sure to select the Spanish settler
+		if pSpain.isHuman():
+			x, y = Areas.getCapital(iSpain)
+			plotSpain = gc.getMap().plot(x, y)  
+			for i in range(plotSpain.getNumUnits()):
+				unit = plotSpain.getUnit(i)
+				if unit.getUnitType() == iSettler:
+					CyInterface().selectUnit(unit, True, False, False)
+					break
 					
 	def initScenario(self):
 		self.updateStartingPlots()
@@ -386,7 +386,9 @@ class RiseAndFall:
 				gc.getGame().setReligionGameTurnFounded(iReligion, getTurnForYear(lReligionFoundingYears[iReligion]))
 		
 	def initStartingReligions(self):
-		pass
+		if utils.getScenario() == i1600AD:
+			utils.setStateReligionBeforeBirth(lCatholicStart, iCatholicism)
+			utils.setStateReligionBeforeBirth(lProtestantStart, iCatholicism)
 			
 	def checkTurn(self, iGameTurn):
 	
@@ -766,7 +768,7 @@ class RiseAndFall:
 								break
 				print ("bDeleteEverything", bDeleteEverything)
 				if not gc.getMap().plot(x, y).isOwned():
-					if iCiv in []: #dangerous starts
+					if iCiv in [iGeorgia]: #dangerous starts
 						data.lDeleteMode[0] = iCiv
 					if bBirthInCapital:
 						self.birthInCapital(iCiv, iPreviousOwner, tCapital, tTopLeft, tBottomRight)
@@ -813,6 +815,7 @@ class RiseAndFall:
 		data.players[iCiv].bSpawned = True
 
 	def moveOutInvaders(self, tTL, tBR):
+		#MacAurther TODO: Not doing anything, either delete or repurpose
 		for (x, y) in utils.getPlotList(tTL, tBR):
 			plot = gc.getMap().plot(x, y)
 			for i in range(plot.getNumUnits()):
@@ -1084,6 +1087,11 @@ class RiseAndFall:
 			elif iOwner == iHuman:
 				iNumHumanCities += 1
 				
+			# Case 3: Other
+			else:
+				iCultureChange = 100
+				if iOwner not in lEnemies: lEnemies.append(iOwner)
+			
 			if iCultureChange > 0:
 				utils.completeCityFlip(x, y, iPlayer, iOwner, iCultureChange, True, False, False, True)
 				utils.ensureDefenders(iPlayer, (x, y), 2)
@@ -1724,15 +1732,34 @@ class RiseAndFall:
 		elif iCiv == iCanada:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 			
-	def create1700ADstartingUnits(self):
+	def create1770ADstartingUnits(self):
+		#MacAurther TODO
+		for iPlayer in range(iNumPlayers):
+			tCapital = Areas.getCapital(iPlayer)
+
+			if tBirth[iPlayer] > utils.getScenarioStartYear() and gc.getPlayer(iPlayer).isHuman():
+				utils.makeUnit(iSettler, iPlayer, tCapital, 1)
+				utils.makeUnit(iMilitia, iPlayer, tCapital, 1)
 		pass
 
-	def create600ADstartingUnits( self ):
+	def create1850ADstartingUnits( self ):
+		#MacAurther TODO
+		for iPlayer in range(iNumPlayers):
+			tCapital = Areas.getCapital(iPlayer)
+
+			if tBirth[iPlayer] > utils.getScenarioStartYear() and gc.getPlayer(iPlayer).isHuman():
+				utils.makeUnit(iSettler, iPlayer, tCapital, 1)
+				utils.makeUnit(iMilitia, iPlayer, tCapital, 1)
 		pass
 
 
 	def create1600ADstartingUnits(self):
-		pass
+		for iPlayer in range(iNumPlayers):
+			tCapital = Areas.getCapital(iPlayer)
+
+			if tBirth[iPlayer] > utils.getScenarioStartYear() and gc.getPlayer(iPlayer).isHuman():
+				utils.makeUnit(iSettler, iPlayer, tCapital, 1)
+				utils.makeUnit(iMilitia, iPlayer, tCapital, 1)
 		
 	def assignTechs(self, iPlayer):
 		Civilizations.initPlayerTechs(iPlayer)

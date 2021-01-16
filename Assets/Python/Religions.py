@@ -440,6 +440,12 @@ class Religions:
 		for iPlayer in range(iNumPlayers):
 			if [city for city in utils.getCityList(iPlayer) if city.getOwner() == iPlayer]:
 				self.reformationChoice(iPlayer)
+		
+		for iPlayer in range(iNumPlayers):
+			if data.players[iPlayer].iReformationDecision == 2:
+				for iTargetPlayer in range(iNumPlayers):
+					if data.players[iTargetPlayer].iReformationDecision == 0 and utils.getHumanID() != iTargetPlayer and not utils.isAVassal(iTargetPlayer):
+						gc.getTeam(iPlayer).declareWar(iTargetPlayer, True, WarPlanTypes.WARPLAN_DOGPILE)
 						
 		pHolyCity = gc.getGame().getHolyCity(iProtestantism)
 		if data.players[pHolyCity.getOwner()].iReformationDecision == 0:

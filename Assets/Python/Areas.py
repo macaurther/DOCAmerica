@@ -132,32 +132,32 @@ dRespawnCapitals = {
 ### Birth Area ###
 # MacAurther TODO: Right locations
 tBirthArea = (
-((49, 43), 	(53, 46)), 	# Spain
-((51, 46), 	(57, 52)), 	# France
-((50, 53), 	(54, 60)), 	# England
-((49, 43), 	(53, 46)), 	# Virginia
-((51, 46), 	(57, 52)), 	# Massachusetts
-((50, 53), 	(54, 60)), 	# New Hampshire
-((49, 43), 	(53, 46)), 	# Maryland
-((51, 46), 	(57, 52)), 	# Connecticut
-((50, 53), 	(54, 60)), 	# Rhode Island
-((51, 46), 	(57, 52)), 	# North Carolina
-((50, 53), 	(54, 60)), 	# South Carolina
-((49, 43), 	(53, 46)), 	# New Jersey
-((51, 46), 	(57, 52)), 	# New York
-((50, 53), 	(54, 60)), 	# Pennsylvania
-((49, 43), 	(53, 46)), 	# Delaware
-((50, 53), 	(54, 60)), 	# Georgia
-((25, 43), 	(32, 50)), 	# America
-((20, 50), 	(35, 60)), 	# Canada
+((49, 43),	(53, 46)),	# Spain	TODO
+((51, 46),	(57, 51)),	# France	TODO
+((50, 53),	(54, 60)),	# England	TODO
+((115, 35),	(134, 45)),	# Virginia	TODO
+((136, 59),	(145, 62)),	# Massachusetts	TODO
+((138, 62),	(141, 69)),	# New Hampshire	TODO
+((122, 42),	(134, 48)),	# Maryland	TODO
+((137, 56),	(140, 59)),	# Connecticut	TODO
+((141, 58),	(142, 59)),	# Rhode Island	TODO
+((113, 29),	(136, 36)),	# North Carolina	TODO
+((116, 23),	(126, 30)),	# South Carolina	TODO
+((133, 47),	(136, 55)),	# New Jersey	TODO
+((121, 53),	(140, 67)),	# New York	TODO
+((120, 47),	(133, 56)),	# Pennsylvania	TODO
+((132, 44),	(134, 48)),	# Delaware	TODO
+((111, 17),	(122, 29)),	# Georgia	TODO
+((23, 45),	(32, 50)),	# America	TODO
+((27, 50),	(35, 52)),	# Canada	TODO
 )
 
 dChangedBirthArea = {
 }
 
 dBirthAreaExceptions = {
-iSpain : [(49, 41), (49, 42), (49, 43), (49, 44), (50, 43), (50, 44), (50, 42)],
-iFrance : [(55, 46), (57, 46), (56, 45), (57, 45), (58, 48), (58, 49), (58, 50), (53, 46), (52, 46), (51, 46), (57, 46), (56, 52), (57, 52)],
+iSpain : [],
+iFrance : [],
 iVirginia : [],
 iMassachusetts : [],
 iNewHampshire : [],
@@ -171,8 +171,8 @@ iNewYork : [],
 iPennsylvania : [],
 iDelaware : [],
 iGeorgia : [],
-iAmerica : [(25, 48), (25, 49), (25, 50), (26, 48), (26, 49), (27, 49), (27, 50), (28, 50), (29, 50), (30, 50)],
-iCanada : [(20, 50), (21, 50), (22, 50), (23, 50), (24, 50), (25, 50), (29, 50), (30, 50), (31, 50), (32, 50), (20, 51), (21, 51), (22, 51), (23, 51), (24, 51), (32, 51), (35, 53), (35, 54), (34, 55), (34, 56), (33, 56), (33, 57)],
+iAmerica : [],
+iCanada : [],
 }
 
 ### Core Area ###
@@ -358,31 +358,31 @@ dChangedCoreAreaExceptions = {
 # MacAurther TODO: Right locations
 # BL, TR
 tNormalArea = (
-((49, 40),	(55, 46)),	# Spain TODO
-((51, 46),	(58, 52)),	# France TODO
-((50, 53),	(54, 60)),	# England TODO
-((115, 35),	(134, 45)),	# Virginia TODO
-((51, 46),	(57, 52)),	# Massachusetts TODO
-((50, 53),	(54, 60)),	# New Hampshire TODO
-((49, 43),	(53, 46)),	# Maryland TODO
-((51, 46),	(57, 52)),	# Connecticut TODO
-((50, 53),	(54, 60)),	# Rhode Island TODO
-((51, 46),	(57, 52)),	# North Carolina TODO
-((50, 53),	(54, 60)),	# South Carolina TODO
-((49, 43),	(53, 46)),	# New Jersey TODO
-((51, 46),	(57, 52)),	# New York TODO
-((50, 53),	(54, 60)),	# Pennsylvania TODO
-((49, 43),	(53, 46)),	# Delaware TODO
-((50, 53),	(54, 60)),	# Georgia TODO
-((11, 43),	(31, 49)),	# America TODO
-(( 8, 50),	(37, 67)),	# Canada TODO
+((49, 43),	(53, 46)),	# Spain	TODO
+((51, 46),	(57, 51)),	# France	TODO
+((50, 53),	(54, 60)),	# England	TODO
+((115, 35),	(134, 45)),	# Virginia	TODO
+((136, 59),	(145, 62)),	# Massachusetts	TODO
+((138, 62),	(141, 69)),	# New Hampshire	TODO
+((122, 42),	(134, 48)),	# Maryland	TODO
+((137, 56),	(140, 59)),	# Connecticut	TODO
+((141, 58),	(142, 59)),	# Rhode Island	TODO
+((113, 29),	(136, 36)),	# North Carolina	TODO
+((116, 23),	(126, 30)),	# South Carolina	TODO
+((133, 47),	(136, 55)),	# New Jersey	TODO
+((121, 53),	(140, 67)),	# New York	TODO
+((120, 47),	(133, 56)),	# Pennsylvania	TODO
+((132, 44),	(134, 48)),	# Delaware	TODO
+((111, 17),	(122, 29)),	# Georgia	TODO
+((23, 45),	(32, 50)),	# America	TODO
+((27, 50),	(35, 52)),	# Canada	TODO
 )
 
 dChangedNormalArea = {
 }
 
 dNormalAreaExceptions = {
-iSpain : [(49, 44), (49, 43), (49, 42), (49, 41)],
+iSpain : [],
 iFrance : [],
 iEngland : [],
 iVirginia : [],
@@ -408,24 +408,24 @@ dChangedNormalAreaExceptions = {
 ### Broader Area ###
 # MacAurther TODO: Right locations
 tBroaderArea = (
-((49, 40),	(55, 46)),	# Spain TODO
-((51, 46),	(58, 52)),	# France TODO
-((50, 53),	(54, 60)),	# England TODO
-((15, 35),	(134, 45)),	# Virginia TODO
-((51, 46),	(57, 52)),	# Massachusetts TODO
-((50, 53),	(54, 60)),	# New Hampshire TODO
-((49, 43),	(53, 46)),	# Maryland TODO
-((51, 46),	(57, 52)),	# Connecticut TODO
-((50, 53),	(54, 60)),	# Rhode Island TODO
-((51, 46),	(57, 52)),	# North Carolina TODO
-((50, 53),	(54, 60)),	# South Carolina TODO
-((49, 43),	(53, 46)),	# New Jersey TODO
-((51, 46),	(57, 52)),	# New York TODO
-((50, 53),	(54, 60)),	# Pennsylvania TODO
-((49, 43),	(53, 46)),	# Delaware TODO
-((50, 53),	(54, 60)),	# Georgia TODO
-((11, 43),	(31, 49)),	# America TODO
-(( 8, 50),	(37, 67)),	# Canada TODO
+((49, 43),	(53, 46)),	# Spain	TODO
+((51, 46),	(57, 51)),	# France	TODO
+((50, 53),	(54, 60)),	# England	TODO
+((114, 36),	(135, 46)),	# Virginia	TODO
+((136, 59),	(145, 62)),	# Massachusetts	TODO
+((138, 62),	(141, 69)),	# New Hampshire	TODO
+((122, 42),	(134, 48)),	# Maryland	TODO
+((137, 56),	(140, 59)),	# Connecticut	TODO
+((141, 58),	(142, 59)),	# Rhode Island	TODO
+((113, 29),	(136, 36)),	# North Carolina	TODO
+((116, 23),	(126, 30)),	# South Carolina	TODO
+((133, 47),	(136, 55)),	# New Jersey	TODO
+((121, 53),	(140, 67)),	# New York	TODO
+((120, 47),	(133, 56)),	# Pennsylvania	TODO
+((132, 44),	(134, 48)),	# Delaware	TODO
+((111, 17),	(122, 29)),	# Georgia	TODO
+((23, 45),	(32, 50)),	# America	TODO
+((27, 50),	(35, 52)),	# Canada	TODO
 )
 
 dChangedBroaderArea = {

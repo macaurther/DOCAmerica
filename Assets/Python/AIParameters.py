@@ -46,8 +46,12 @@ def onTechAcquired(iPlayer, iTech):
 		if iCiv in dDistanceSubtrahendExploration: pPlayer.setDistanceSubtrahend(dDistanceSubtrahendExploration[iCiv])
 		if iCiv in dDistanceFactorExploration: pPlayer.setDistanceFactor(dDistanceFactorExploration[iCiv])
 		if iCiv in dCompactnessModifierExploration: pPlayer.setCompactnessModifier(dCompactnessModifierExploration[iCiv])
-	
+
+#MacAurther TODO: All these values \/
 dTakenTilesThreshold = {
+iCivSpain : 10,
+iCivFrance : 10,
+iCivEngland : 10,
 }
 
 dDistanceSubtrahend = {

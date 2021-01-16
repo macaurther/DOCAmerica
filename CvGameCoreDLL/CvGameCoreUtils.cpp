@@ -2383,6 +2383,9 @@ int getGameTurnForMonth(int iTurnMonth, int iStartYear, CalendarTypes eCalendar,
 
 ScenarioTypes getScenario()
 {
+	//if (GET_PLAYER((PlayerTypes)EGYPT).isPlayable()) return SCENARIO_3000BC;
+
+	//if (GET_PLAYER((PlayerTypes)BYZANTIUM).isPlayable()) return SCENARIO_600AD;
 
 	// MacAurther TODO: Scenario overhaul
 	return SCENARIO_1600AD;
@@ -2393,7 +2396,8 @@ int getScenarioStartYear()
 	ScenarioTypes eScenario = getScenario();
 
 	if (eScenario == SCENARIO_1600AD) return 1600;
-	else return 0; // MacAurther TODO: Scenario overhaul
+	else if (eScenario == SCENARIO_1770AD) return 1770;
+	else return 1850; // MacAurther TODO: Scenario overhaul
 }
 
 int getScenarioStartTurn()

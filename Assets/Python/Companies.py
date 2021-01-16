@@ -252,6 +252,9 @@ class Companies:
 					else:
 						iTempValue += city.getNumBonuses(iBonus) * 2
 		
+		if not bFound: return -1
+		iValue += iTempValue
+		
 		# competition
 		if iCompany == iCerealIndustry and city.isHasCorporation(iFishingIndustry): iValue /= 2
 		elif iCompany == iFishingIndustry and city.isHasCorporation(iCerealIndustry): iValue /= 2
