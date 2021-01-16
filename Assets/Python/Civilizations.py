@@ -28,16 +28,6 @@ class Techs:
 
 def getScenarioTechs(iScenario, iPlayer):
 	iCivilization = gc.getPlayer(iPlayer).getCivilizationType()
-	print "#MacAurther Debug: This is the iCivilization obtained:"
-	print iCivilization
-	print "This is iCivSpain"
-	print iCivSpain
-	print "This is iCivFrance"
-	print iCivFrance
-	print "This is iCivEngland"
-	print iCivEngland
-	print "This is iCivVirginia"
-	print iCivVirginia
 	for iScenarioType in reversed(range(iScenario+1)):
 		if iCivilization in lStartingTechs[iScenarioType]:
 			return lStartingTechs[iScenarioType][iCivilization].list()
