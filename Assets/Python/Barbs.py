@@ -24,7 +24,6 @@ tMinorCities = (
 # MacAurther TODO: Add natives
 tMinorStates = (
 	(1600, 1700, (113, 48), [iArcher, iSwordsman]),	# Powhatan
-	(1600, 1700, (88, 50), [iVulture]),		# Algonquin
 )
 
 #handicap level modifier
@@ -48,11 +47,6 @@ class Barbs:
 					if plot.isCity() and plot.getNumUnits() < 4 and iOwner >= iNumPlayers:
 						iUnit = utils.getRandomEntry(lUnitList)
 						utils.makeUnit(iUnit, iOwner, tPlot, 1)
-
-		#pirates in Mediterranean
-		# MacAurther TODO
-		if utils.isYearIn(-210, 50):
-			self.checkSpawn(iBarbarian, iWarGalley, 1, (49, 37), (72, 44), self.spawnPirates, iGameTurn, 8, 0)
 
 		#American natives
 		# MacAurther TODO
@@ -78,9 +72,6 @@ class Barbs:
 			if utils.isYearIn(1500, 1850):
 				self.checkSpawn(iNative, iMohawk, 1, (24, 46), (30, 51), self.spawnUprising, iGameTurn, 8, 4)
 				
-		if iGameTurn == getTurnForYear(-500):
-			gc.getMap().plot(19, 35).setImprovementType(iHut)
-			utils.makeUnitAI(iHolkan, iNative, (19, 35), UnitAITypes.UNITAI_ATTACK, 2)
 
 		#pirates in the Caribbean
 		# MacAurther TODO

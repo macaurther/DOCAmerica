@@ -36,7 +36,7 @@ dTechGoals = {
 dEraGoals = {}
 
 dWonderGoals = {
-	iFrance: (2, [iNotreDame, iVersailles, iLouvre, iEiffelTower, iMetropolitain], True),
+	iFrance: (2, [iStatueOfLiberty], True),
 	iAmerica: (1, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iGoldenGateBridge, iPentagon, iUnitedNations], True),
 }
 
@@ -1922,55 +1922,28 @@ def getUHVHelp(iPlayer, iGoal):
 			return aHelp
 
 	if iPlayer == iSpain:
-		if iGoal == 1:
-			iNumGold = countResources(iSpain, iGold)
-			iNumSilver = countResources(iSpain, iSilver)
-			aHelp.append(getIcon(iNumGold + iNumSilver >= 10) + localText.getText("TXT_KEY_VICTORY_GOLD_SILVER_RESOURCES", (iNumGold + iNumSilver, 10)))
+		if iGoal == 0:
+			aHelp.append("TODO ;)")
+		elif iGoal == 1:
+			aHelp.append("TODO ;)")
 		elif iGoal == 2:
-			fReligionPercent = gc.getGame().calculateReligionPercent(iCatholicism)
-			bNoProtestants = not isStateReligionInArea(iProtestantism, tEuropeTL, tEuropeBR) and not isStateReligionInArea(iProtestantism, tEasternEuropeTL, tEasternEuropeBR)
-			aHelp.append(getIcon(fReligionPercent >= 30.0) + localText.getText("TXT_KEY_VICTORY_SPREAD_RELIGION_PERCENT", (gc.getReligionInfo(iCatholicism).getTextKey(), str(u"%.2f%%" % fReligionPercent), str(30))) + ' ' + getIcon(bNoProtestants) + localText.getText("TXT_KEY_VICTORY_NO_PROTESTANTS", ()))
+			aHelp.append("TODO ;)")
 
 	elif iPlayer == iFrance:
 		if iGoal == 0:
-			iCulture = getCityCulture(iFrance, (55, 50))
-			aHelp.append(getIcon(iCulture >= utils.getTurns(50000)) + localText.getText("TXT_KEY_VICTORY_CITY_CULTURE", ("Paris", iCulture, utils.getTurns(50000))))
+			aHelp.append("TODO ;)")
 		elif iGoal == 1:
-			iEurope, iTotalEurope = countControlledTiles(iFrance, tEuropeTL, tEuropeBR, True)
-			iEasternEurope, iTotalEasternEurope = countControlledTiles(iFrance, tEasternEuropeTL, tEasternEuropeBR, True)
-			iNorthAmerica, iTotalNorthAmerica = countControlledTiles(iFrance, tNorthAmericaTL, tNorthAmericaBR, True)
-			fEurope = (iEurope + iEasternEurope) * 100.0 / (iTotalEurope + iTotalEasternEurope)
-			fNorthAmerica = iNorthAmerica * 100.0 / iTotalNorthAmerica
-			aHelp.append(getIcon(fEurope >= 40.0) + localText.getText("TXT_KEY_VICTORY_EUROPEAN_TERRITORY", (str(u"%.2f%%" % fEurope), str(40))) + ' ' + getIcon(fNorthAmerica >= 40.0) + localText.getText("TXT_KEY_VICTORY_NORTH_AMERICAN_TERRITORY", (str(u"%.2f%%" % fNorthAmerica), str(40))))
+			aHelp.append("TODO ;)")
 		elif iGoal == 2:
-			bNotreDame = data.getWonderBuilder(iNotreDame) == iFrance
-			bVersailles = data.getWonderBuilder(iVersailles) == iFrance
-			bLouvre = data.getWonderBuilder(iLouvre) == iFrance
-			bEiffelTower = data.getWonderBuilder(iEiffelTower) == iFrance
-			bMetropolitain = data.getWonderBuilder(iMetropolitain) == iFrance
-			aHelp.append(getIcon(bNotreDame) + localText.getText("TXT_KEY_BUILDING_NOTRE_DAME", ()) + ' ' + getIcon(bVersailles) + localText.getText("TXT_KEY_BUILDING_VERSAILLES", ()) + ' ' + getIcon(bLouvre) + localText.getText("TXT_KEY_BUILDING_LOUVRE", ()))
-			aHelp.append(getIcon(bEiffelTower) + localText.getText("TXT_KEY_BUILDING_EIFFEL_TOWER", ()) + ' ' + getIcon(bMetropolitain) + localText.getText("TXT_KEY_BUILDING_METROPOLITAIN", ()))
-
+			aHelp.append("TODO ;)")
+			
 	elif iPlayer == iEngland:
 		if iGoal == 0:
-			iNAmerica = getNumCitiesInRegions(iEngland, lNorthAmerica)
-			iSCAmerica = getNumCitiesInRegions(iEngland, lSouthAmerica)
-			iAfrica = getNumCitiesInRegions(iEngland, lAfrica)
-			iAsia = getNumCitiesInRegions(iEngland, lAsia)
-			iOceania = getNumCitiesInRegions(iEngland, lOceania)
-			aHelp.append(getIcon(iNAmerica >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_NORTH_AMERICA", (iNAmerica, 5)) + ' ' + getIcon(iAsia >= 5) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_ASIA", (iAsia, 5)) + ' ' + getIcon(iAfrica >= 4) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_AFRICA", (iAfrica, 4)))
-			aHelp.append(getIcon(iSCAmerica >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_SOUTH_AMERICA", (iSCAmerica, 3)))
-			aHelp.append(getIcon(iOceania >= 3) + localText.getText("TXT_KEY_VICTORY_ENGLAND_CONTROL_OCEANIA", (iOceania, 3)))
+			aHelp.append("TODO ;)")
 		elif iGoal == 1:
-			iEnglishNavy = 0
-			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iFrigate).getUnitClassType())
-			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iShipOfTheLine).getUnitClassType())
-			iEnglishSinks = data.iEnglishSinks
-			aHelp.append(getIcon(iEnglishNavy >= 25) + localText.getText("TXT_KEY_VICTORY_NAVY_SIZE", (iEnglishNavy, 25)) + ' ' + getIcon(iEnglishSinks >= 50) + localText.getText("TXT_KEY_VICTORY_ENEMY_SHIPS_SUNK", (iEnglishSinks, 50)))
+			aHelp.append("TODO ;)")
 		elif iGoal == 2:
-			iRenaissanceTechs = countFirstDiscovered(iEngland, iRenaissance)
-			iIndustrialTechs = countFirstDiscovered(iEngland, iIndustrial)
-			aHelp.append(getIcon(iRenaissanceTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iRenaissance).getText(), iRenaissanceTechs, 8)) + ' ' + getIcon(iIndustrialTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrial).getText(), iIndustrialTechs, 8)))
+			aHelp.append("TODO ;)")
 
 	elif iPlayer == iVirginia:
 		if iGoal == 0:

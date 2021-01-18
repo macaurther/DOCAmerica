@@ -41,7 +41,7 @@
 			<Description>TXT_KEY_CIVIC_MONARCHY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CEREMONY</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -147,7 +147,7 @@
 			<Description>TXT_KEY_CIVIC_ELECTIVE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ELECTIVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ELECTIVE_STRATEGY</Strategy>
-			<TechPrereq>TECH_POLITICS</TechPrereq>
+			<TechPrereq>TECH_PARTIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Oligarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -230,15 +230,11 @@
 			<Description>TXT_KEY_CIVIC_CITIZENSHIP</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CITIZENSHIP_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CITIZENSHIP_STRATEGY</Strategy>
-			<TechPrereq>TECH_LAW</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<BuildingProductionModifiers>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_AQUEDUCT</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_LIBRARY</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
@@ -265,7 +261,7 @@
 			<Description>TXT_KEY_CIVIC_VASSALAGE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_VASSALAGE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_VASSALAGE_STRATEGY</Strategy>
-			<TechPrereq>TECH_NOBILITY</TechPrereq>
+			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Vassalage.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -288,7 +284,7 @@
 			<Description>TXT_KEY_CIVIC_MERITOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MERITOCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERITOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_EDUCATION</TechPrereq>
+			<TechPrereq>TECH_PRINTING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Meritocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -420,7 +416,7 @@
 			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
-			<TechPrereq>TECH_MASONRY</TechPrereq>
+			<TechPrereq>TECH_MINING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -465,7 +461,7 @@
 			<Description>TXT_KEY_CIVIC_MANORIALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MANORIALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MANORIALISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_CALENDAR</TechPrereq>
+			<TechPrereq>TECH_HORTICULTURE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Manorialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -502,7 +498,7 @@
 			<Description>TXT_KEY_CIVIC_CASTE_SYSTEM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CASTE_SYSTEM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CASTE_SYSTEM_STRATEGY</Strategy>
-			<TechPrereq>TECH_LITERATURE</TechPrereq>
+			<TechPrereq>TECH_HUMANITIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Caste System.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -610,7 +606,7 @@
 			<Description>TXT_KEY_CIVIC_REDISTRIBUTION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_REDISTRIBUTION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_REDISTRIBUTION_STRATEGY</Strategy>
-			<TechPrereq>TECH_ARITHMETICS</TechPrereq>
+			<TechPrereq>TECH_PROPERTY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Redistribution.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -653,7 +649,7 @@
 			<Description>TXT_KEY_CIVIC_REGULATED_TRADE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_REGULATED_TRADE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_REGULATED_TRADE_STRATEGY</Strategy>
-			<TechPrereq>TECH_GUILDS</TechPrereq>
+			<TechPrereq>TECH_CURRENCY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Regulated Trade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -845,7 +841,7 @@
 			<Description>TXT_KEY_CIVIC_DEIFICATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DEIFICATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DEIFICATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_DIVINATION</TechPrereq>
+			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Deification.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -865,7 +861,7 @@
 			<Description>TXT_KEY_CIVIC_CLERGY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CLERGY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CLERGY_STRATEGY</Strategy>
-			<TechPrereq>TECH_PRIESTHOOD</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Priesthood.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -878,7 +874,7 @@
 			<Description>TXT_KEY_CIVIC_MONASTICISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MONASTICISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MONASTICISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_ETHICS</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Asceticism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -891,7 +887,7 @@
 			<Description>TXT_KEY_CIVIC_THEOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_THEOCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_THEOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_DOCTRINE</TechPrereq>
+			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Theocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -983,7 +979,7 @@
 			<Description>TXT_KEY_CIVIC_CONQUEST</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONQUEST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONQUEST_STRATEGY</Strategy>
-			<TechPrereq>TECH_GENERALSHIP</TechPrereq>
+			<TechPrereq>TECH_STEEL</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Conquest.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -1002,7 +998,7 @@
 			<Description>TXT_KEY_CIVIC_TRIBUTARIES</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TRIBUTARIES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TRIBUTARIES_STRATEGY</Strategy>
-			<TechPrereq>TECH_FEUDALISM</TechPrereq>
+			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>

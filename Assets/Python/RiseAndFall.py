@@ -749,7 +749,7 @@ class RiseAndFall:
 					bBirthInCapital = True
 				
 				if bBirthInCapital:
-					utils.makeUnit(iCatapult, iCiv, (0, 0), 1)
+					utils.makeUnit(iMilitia, iCiv, (0, 0), 1)
 			
 				bDeleteEverything = False
 				pCapital = gc.getMap().plot(x, y)

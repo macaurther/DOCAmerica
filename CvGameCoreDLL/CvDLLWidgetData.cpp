@@ -2068,11 +2068,6 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 
 		int iHurryAnger = GC.getDefineINT("HURRY_POP_ANGER") * iHurryAngerModifier;
 
-		if (pHeadSelectedCity->isHasBuildingEffect((BuildingTypes)BLUE_MOSQUE))
-		{
-			iHurryAnger = 1;
-		}
-
 		if (iHurryAngerLength > 0)
 		{
 			szBuffer.append(NEWLINE);
@@ -2149,11 +2144,6 @@ void CvDLLWidgetData::parseConscriptHelp(CvWidgetDataStruct &widgetDataStruct, C
 
 			iConscriptAngerLength = pHeadSelectedCity->flatConscriptAngerLength();
 			iConscriptAnger = GC.getDefineINT("CONSCRIPT_POP_ANGER");
-
-			if (pHeadSelectedCity->isHasBuildingEffect((BuildingTypes)BLUE_MOSQUE))
-			{
-				iConscriptAnger = 1;
-			}
 
 			if (iConscriptAngerLength > 0)
 			{
@@ -3283,19 +3273,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					{
 						iNowWorkRate += pSelectedUnit->workRate(false);
 						iThenWorkRate += pSelectedUnit->workRate(true);
-					}
-
-					// Leoreth: Chateau Frontenac effect, turn indication fix by merijn
-					if (GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)FRONTENAC))
-					{
-						if (GC.getBuildInfo(eBuild).getTechPrereq() == RAILROAD)
-						{
-							iNowWorkRate *= 150;
-							iNowWorkRate /= 100;
-							
-							iThenWorkRate *= 150;
-							iThenWorkRate /= 100;
-						}
 					}
 
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);

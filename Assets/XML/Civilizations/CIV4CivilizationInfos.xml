@@ -464,8 +464,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-					<BuildingType>BUILDING_ENGLISH_ROYAL_EXCHANGE</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_DEPARTMENT_STORE</BuildingClassType>
+					<BuildingType>BUILDING_AMERICAN_MALL</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -575,8 +575,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_COFFEEHOUSE</BuildingClassType>
-					<BuildingType>BUILDING_FRENCH_SALON</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_DEPARTMENT_STORE</BuildingClassType>
+					<BuildingType>BUILDING_AMERICAN_MALL</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -584,14 +584,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_CUIRASSIER</UnitClassType>
-					<UnitType>UNIT_FRENCH_GENDARME</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_DRAGOON</UnitClassType>
-					<UnitType>UNIT_FRENCH_GUARD</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1643,8 +1635,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-					<BuildingType>BUILDING_SPANISH_CITADEL</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_DEPARTMENT_STORE</BuildingClassType>
+					<BuildingType>BUILDING_AMERICAN_MALL</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TRADING_COMPANY</BuildingClassType>
@@ -1936,10 +1928,6 @@
 					<BuildingClassType>BUILDINGCLASS_RED_CROSS</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_WALL</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -2163,10 +2151,6 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_RED_CROSS</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_WALL</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>
@@ -2711,10 +2695,6 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_RED_CROSS</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_WALL</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>

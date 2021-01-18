@@ -3567,7 +3567,7 @@ void CvGame::reviveActivePlayer()
 		//Rhye - end
 
 		//GET_PLAYER(getActivePlayer()).initUnit(((UnitTypes)0), 0, 0); //Rhye
-		GET_PLAYER(getActivePlayer()).initUnit(((UnitTypes)GC.getInfoTypeForString("UNIT_CATAPULT")), 0, 0); //Rhye (catapult)
+		GET_PLAYER(getActivePlayer()).initUnit(((UnitTypes)GC.getInfoTypeForString("UNIT_MILITIA")), 0, 0); //Rhye (catapult)  //MacAurther (militia)
 		//logMsg("init catapult in 00"); //Rhye
 	}
 }

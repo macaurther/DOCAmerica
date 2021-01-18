@@ -1210,7 +1210,7 @@ class RFCUtils:
 		
 	def getBestSiege(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
-		lSiegeList = [iHowitzer, iArtillery, iCannon, iBombard, iTrebuchet, iCatapult]
+		lSiegeList = [iHowitzer, iArtillery, iCannon, iBombard]
 		
 		for iBaseUnit in lSiegeList:
 			iUnit = self.getUniqueUnitType(iPlayer, gc.getUnitInfo(iBaseUnit).getUnitClassType())

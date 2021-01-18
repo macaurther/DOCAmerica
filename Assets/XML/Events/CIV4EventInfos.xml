@@ -13133,7 +13133,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_HEAVY_SPEARMAN</UnitClass>
+					<UnitClass>UNITCLASS_PIKEMAN</UnitClass>
 					<UnitPromotion>PROMOTION_SHOCK</UnitPromotion>
 				</UnitClassPromotion>
 			</UnitClassPromotions>
@@ -13219,7 +13219,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_WAR_GALLEY</UnitClass>
+					<UnitClass>UNITCLASS_FRIGATE</UnitClass>
 					<UnitPromotion>PROMOTION_COMBAT1</UnitPromotion>
 				</UnitClassPromotion>
 			</UnitClassPromotions>
@@ -17741,13 +17741,7 @@
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
 			<BuildingExtraYields/>
-			<BuildingExtraCommerces>
-				<BuildingExtraCommerce>
-					<BuildingClass>BUILDINGCLASS_GREAT_WALL</BuildingClass>
-					<CommerceType>COMMERCE_ESPIONAGE</CommerceType>
-					<iExtraCommerce>25</iExtraCommerce>
-				</BuildingExtraCommerce>
-			</BuildingExtraCommerces>
+			<BuildingExtraCommerces/>
 			<BuildingExtraHappies/>
 			<BuildingExtraHealths/>
 			<iHappy>0</iHappy>
@@ -21870,7 +21864,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_CHARIOT</UnitClass>
+					<UnitClass>UNITCLASS_PISTOLIER</UnitClass>
 					<UnitPromotion>PROMOTION_COMBAT1</UnitPromotion>
 				</UnitClassPromotion>
 			</UnitClassPromotions>
@@ -22391,7 +22385,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_WAR_GALLEY</UnitClass>
+					<UnitClass>UNITCLASS_FRIGATE</UnitClass>
 					<UnitPromotion>PROMOTION_COMBAT1</UnitPromotion>
 				</UnitClassPromotion>
 			</UnitClassPromotions>

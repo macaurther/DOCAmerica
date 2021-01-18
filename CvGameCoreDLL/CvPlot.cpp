@@ -759,21 +759,6 @@ void CvPlot::doTurn()
 
 	verifyUnitValidPlot();
 
-	// Leoreth: Great Wall effect
-	if (isWithinGreatWall() && isOwned())
-	{
-		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL))
-		{
-			for (int iI = 0; iI < getNumUnits(); iI++)
-			{
-				if (getUnitByIndex(iI)->getOwnerINLINE() == BARBARIAN)
-				{
-					getUnitByIndex(iI)->changeDamage(10, getOwnerINLINE());
-				}
-			}
-		}
-	}
-
 	/*
 	if (!isOwned())
 	{
@@ -3270,15 +3255,6 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			iRegularCost += GC.getHILLS_EXTRA_MOVEMENT();
 		}
 
-		// Leoreth: Great Wall effect (+1 movement cost for enemies within the great wall)
-		if (isWithinGreatWall() && isOwned())
-		{
-			if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL) && GET_TEAM((TeamTypes)getOwnerINLINE()).isAtWar((TeamTypes)pUnit->getOwner()))
-			{
-				iRegularCost += GC.getHILLS_EXTRA_MOVEMENT();
-			}
-		}
-
 		if (iRegularCost > 0)
 		{
 			iRegularCost = std::max(1, (iRegularCost - pUnit->getExtraMoveDiscount()));
@@ -4240,7 +4216,7 @@ bool CvPlot::isTradeNetwork(TeamTypes eTeam) const
 {
 	FAssertMsg(eTeam != NO_TEAM, "eTeam is not assigned a valid value");
 
-	if (atWar(eTeam, getTeam()) && !GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA) && (getOwner() == NO_PLAYER || !GET_PLAYER(getOwner()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA)))
+	if (atWar(eTeam, getTeam()))
 	{
 		return false;
 	}
@@ -4271,7 +4247,7 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 {
 	FAssertMsg(eTeam != NO_TEAM, "eTeam is not assigned a valid value");
 
-	if ((atWar(eTeam, getTeam()) || atWar(eTeam, pPlot->getTeam())) && !GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA) && (getOwner() == NO_PLAYER || !GET_PLAYER(getOwner()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA)))
+	if ((atWar(eTeam, getTeam()) || atWar(eTeam, pPlot->getTeam())))
 	{
 		return false;
 	}
@@ -6953,26 +6929,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 
 	iYield = calculateNatureYield(eYield, ((ePlayer != NO_PLAYER) ? GET_PLAYER(ePlayer).getTeam() : NO_TEAM));
 	
-	// Leoreth + Merijn: Burj Khalifa effect
-	if (ePlayer != NO_PLAYER)
-	{
-		if (getTerrainType() == TERRAIN_DESERT && !isPeak())
-		{
-			if (eYield == YIELD_FOOD || eYield == YIELD_COMMERCE)
-			{
-				pWorkingCity = getWorkingCity();
-				
-				if (pWorkingCity != NULL)
-				{
-					if (pWorkingCity->isHasBuildingEffect((BuildingTypes)BURJ_KHALIFA))
-					{
-						iYield = std::max(2, iYield);
-					}
-				}
-			}
-		}
-	}
-
 	if (eImprovement != NO_IMPROVEMENT)
 	{
 		iYield += calculateImprovementYieldChange(eImprovement, eYield, ePlayer);
@@ -7108,32 +7064,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			if (iYield >= GET_PLAYER(ePlayer).getExtraYieldThreshold(eYield))
 			{
 				iYield += GC.getDefineINT("EXTRA_YIELD");
-			}
-		}
-
-		// Leoreth: Temple of Kukulkan effect
-		if (getFeatureType() == FEATURE_RAINFOREST && eYield == YIELD_FOOD)
-		{
-			pWorkingCity = getWorkingCity();
-			
-			if (pWorkingCity != NULL)
-			{
-				if (pWorkingCity->isHasBuildingEffect((BuildingTypes)TEMPLE_OF_KUKULKAN))
-				{
-					if (!bDisplay || pWorkingCity->isRevealed(GC.getGameINLINE().getActiveTeam(), false))
-					{
-						iYield += 1;
-					}
-				}
-			}
-		}
-
-		// Leoreth: University of Sankore effect
-		if (GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)UNIVERSITY_OF_SANKORE))
-		{
-			if (getTerrainType() == TERRAIN_DESERT && eYield == YIELD_COMMERCE)
-			{
-				iYield += 1;
 			}
 		}
 

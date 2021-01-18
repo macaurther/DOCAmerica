@@ -607,7 +607,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_INTERSTALLAR_PROBE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_INTERSTELLAR_PROBE_STRATEGY</Strategy>
 			<VictoryPrereq>NONE</VictoryPrereq>
-			<TechPrereq>TECH_UNIFIED_THEORY</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>PROJECT_INTERNATIONAL_SPACE_STATION</AnyonePrereqProject>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
@@ -930,7 +930,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_MARS_LABORATORY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_MARS_LABORATORY_STRATEGY</Strategy>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<TechPrereq>TECH_UNIFIED_THEORY</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>3</iMaxTeamInstances>
@@ -988,7 +988,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_MARS_CONTROL_CENTER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_MARS_CONTROL_CENTER_STRATEGY</Strategy>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<TechPrereq>TECH_ARTIFICIAL_INTELLIGENCE</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>1</iMaxTeamInstances>

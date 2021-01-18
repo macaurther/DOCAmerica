@@ -2725,7 +2725,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	}
 
 	//Rhye - start switch
-	if (GET_TEAM(getTeam()).isHasTech((TechTypes)COMPASS)) {
+	if (GET_TEAM(getTeam()).isHasTech((TechTypes)EXPLORATION)) {
 		iTeamAreaCities = GET_TEAM(getTeam()).countNumCitiesByArea(pArea);
 		if (iTeamAreaCities == 0) {
 			switch (getID())
@@ -4605,12 +4605,12 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 									iValue /= ((iCVValue < 100) ? 400 : 100);
 								}
 
-								if (iI == CONSTRUCTION || iI == ENGINEERING)
+								if (iI == ENGINEERING)
 								{
 									iValue *= 2;
 								}
 
-								if (iI == GUILDS) {
+								if (iI == COMPANIES) {
 									iValue *= 3;
 									iValue /= 2;
 								}

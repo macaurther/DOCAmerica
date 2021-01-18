@@ -158,14 +158,6 @@ class CvRFCEventHandler:
 				if iNationalWonder != iPalace and isNationalWonderClass(gc.getBuildingInfo(iNationalWonder).getBuildingClassType()) and city.hasBuilding(iNationalWonder):
 					city.setHasRealBuilding(iNationalWonder, False)
 					
-		# Leoreth: Escorial effect
-		if gc.getPlayer(iPlayer).isHasBuildingEffect(iEscorial):
-			if city.isColony():
-				capital = gc.getPlayer(iPlayer).getCapitalCity()
-				iGold = utils.getTurns(10 + utils.calculateDistance(capital.getX(), capital.getY(), city.getX(), city.getY()))
-				CyInterface().addMessage(iPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_BUILDING_ESCORIAL_EFFECT", (iGold, city.getName())), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)		
-				gc.getPlayer(iPlayer).changeGold(iGold)
-					
 		self.pla.onCityAcquired(iOwner, iPlayer, city) # Plague
 		self.com.onCityAcquired(city) # Communications
 		self.corp.onCityAcquired(argsList) # Companies
@@ -235,13 +227,6 @@ class CvRFCEventHandler:
 					utils.createGarrisons(tCity, iOwner, 1)
 					utils.makeUnit(iWorker, iOwner, tCity, 1)
 					
-		# Leoreth: Escorial effect
-		if gc.getPlayer(iOwner).isHasBuildingEffect(iEscorial):
-			if city.isColony():
-				capital = gc.getPlayer(iOwner).getCapitalCity()
-				iGold = utils.getTurns(10 + utils.calculateDistance(capital.getX(), capital.getY(), city.getX(), city.getY()))
-				CyInterface().addMessage(iOwner, False, iDuration, CyTranslator().getText("TXT_KEY_BUILDING_ESCORIAL_EFFECT", (iGold, city.getName())), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)		
-				gc.getPlayer(iOwner).changeGold(iGold)
 				
 		# Leoreth: free defender and worker for cities founded by American Pioneer in North America
 		if iOwner == iAmerica:
@@ -347,11 +332,6 @@ class CvRFCEventHandler:
 			iPop = pCity.getPopulation()
 			pCity.setBuildingCommerceChange(gc.getBuildingInfo(iEmpireStateBuilding).getBuildingClassType(), 0, iPop)
 			
-		# Leoreth: Oriental Pearl Tower effect
-		if pCity.isHasBuildingEffect(iOrientalPearlTower):
-			iPop = pCity.getPopulation()
-			pCity.setBuildingCommerceChange(gc.getBuildingInfo(iOrientalPearlTower).getBuildingClassType(), 1, 2 * iPop)
-			
 	def onUnitPillage(self, argsList):
 		unit, iImprovement, iRoute, iPlayer, iGold = argsList
 		
@@ -428,34 +408,11 @@ class CvRFCEventHandler:
 			
 			if city.isHasRealBuilding(iAdministrativeCenter): city.setHasRealBuilding(iAdministrativeCenter, False)
 
-		# Leoreth: update trade routes when Porcelain Tower is built to start its effect
-		if iBuildingType == iPorcelainTower:
-			gc.getPlayer(iOwner).updateTradeRoutes()
-
 		# Leoreth/Voyhkah: Empire State Building
 		if iBuildingType == iEmpireStateBuilding:
 			iPop = city.getPopulation()
 			city.setBuildingCommerceChange(gc.getBuildingInfo(iEmpireStateBuilding).getBuildingClassType(), 0, iPop)
 			
-		# Leoreth: Oriental Pearl Tower
-		if iBuildingType == iOrientalPearlTower:
-			iPop = city.getPopulation()
-			city.setBuildingCommerceChange(gc.getBuildingInfo(iOrientalPearlTower).getBuildingClassType(), 1, 2 * iPop)
-			
-		# Leoreth: Machu Picchu
-		if iBuildingType == iMachuPicchu:
-			iNumPeaks = 0
-			for i in range(21):
-				if city.getCityIndexPlot(i).isPeak():
-					iNumPeaks += 1
-			city.setBuildingCommerceChange(gc.getBuildingInfo(iMachuPicchu).getBuildingClassType(), 0, iNumPeaks * 2)
-			
-		# Leoreth: Great Wall
-		if iBuildingType == iGreatWall:
-			for iPlot in range(gc.getMap().numPlots()):
-				plot = gc.getMap().plotByIndex(iPlot)
-				if plot.getOwner() == iOwner and not plot.isWater():
-					plot.setWithinGreatWall(True)
 					
 	def onPlotFeatureRemoved(self, argsList):
 		plot, city, iFeature = argsList
