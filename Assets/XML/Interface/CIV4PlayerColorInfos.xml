@@ -13,7 +13,7 @@
 			<TextColorType>COLOR_PLAYER_BLACK_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_BLUE</Type> <!-- Babylonia -->
+			<Type>PLAYERCOLOR_BLUE</Type> <!-- Virginia -->
 			<ColorTypePrimary>COLOR_PLAYER_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_BLUE_TEXT</TextColorType>
@@ -25,55 +25,55 @@
 			<TextColorType>COLOR_PLAYER_LIGHT_BROWN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_CYAN</Type> <!-- Greece -->
+			<Type>PLAYERCOLOR_CYAN</Type> <!-- Delaware -->
 			<ColorTypePrimary>COLOR_PLAYER_CYAN</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARKER_GRAY</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_CYAN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_BLUE</Type> <!-- France -->
+			<Type>PLAYERCOLOR_DARK_BLUE</Type> <!-- Pennsylvania -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_BLUE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_CYAN</Type> <!-- Inca -->
+			<Type>PLAYERCOLOR_DARK_CYAN</Type> <!-- New York -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_CYAN</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_CYAN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_GREEN</Type> <!-- Arabia -->
+			<Type>PLAYERCOLOR_DARK_GREEN</Type> <!-- Washington -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_GREEN</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_GREEN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_PINK</Type>
+			<Type>PLAYERCOLOR_DARK_PINK</Type> <!-- Spain -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_PINK</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_PINK_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_PURPLE</Type> <!-- Byzantium -->
+			<Type>PLAYERCOLOR_DARK_PURPLE</Type> <!-- France -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_PURPLE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_PURPLE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_RED</Type> <!-- Rome -->
+			<Type>PLAYERCOLOR_DARK_RED</Type> <!-- Georgia -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_RED</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_RED_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_YELLOW</Type> <!-- Spain -->
+			<Type>PLAYERCOLOR_DARK_YELLOW</Type> <!-- Maryland -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_YELLOW</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_YELLOW_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_GRAY</Type> <!-- Prussia -->
+			<Type>PLAYERCOLOR_GRAY</Type> <!-- Rhode Island -->
 			<ColorTypePrimary>COLOR_PLAYER_GRAY</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_GRAY_TEXT</TextColorType>
@@ -91,7 +91,7 @@
 			<TextColorType>COLOR_PLAYER_ORANGE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_PEACH</Type> <!-- Mali -->
+			<Type>PLAYERCOLOR_PEACH</Type> <!-- New Jersey -->
 			<ColorTypePrimary>COLOR_PLAYER_PEACH</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_PEACH_TEXT</TextColorType>
@@ -115,13 +115,13 @@
 			<TextColorType>COLOR_PLAYER_RED_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_WHITE</Type> <!-- Japan -->
+			<Type>PLAYERCOLOR_WHITE</Type> <!-- Massachusetts -->
 			<ColorTypePrimary>COLOR_PLAYER_WHITE</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLUE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_WHITE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_YELLOW</Type> <!-- Egypt -->
+			<Type>PLAYERCOLOR_YELLOW</Type> <!-- New Mexico -->
 			<ColorTypePrimary>COLOR_PLAYER_YELLOW</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_BLUE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_YELLOW_TEXT</TextColorType>
@@ -133,19 +133,19 @@
 			<TextColorType>COLOR_PLAYER_LIGHT_GREEN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_LIGHT_BLUE</Type> <!-- Tamils -->
+			<Type>PLAYERCOLOR_LIGHT_BLUE</Type> <!-- Minnesota -->
 			<ColorTypePrimary>COLOR_PLAYER_LIGHT_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_LIGHT_BLUE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_VERY_LIGHT_BLUE</Type> <!-- Argentina -->
+			<Type>PLAYERCOLOR_VERY_LIGHT_BLUE</Type> <!-- South Carolina -->
 			<ColorTypePrimary>COLOR_PLAYER_VERY_LIGHT_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_VERY_LIGHT_BLUE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_LIGHT_YELLOW</Type> <!-- China and Zulus-->
+			<Type>PLAYERCOLOR_LIGHT_YELLOW</Type> <!-- Montana -->
 			<ColorTypePrimary>COLOR_PLAYER_LIGHT_YELLOW</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_LIGHT_YELLOW_TEXT</TextColorType>
@@ -223,9 +223,9 @@
 			<TextColorType>COLOR_PLAYER_DARK_LEMON_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_MIDDLE_BLUE</Type> <!-- Thailand -->
+			<Type>PLAYERCOLOR_MIDDLE_BLUE</Type> <!-- New Hampshire -->
 			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_BLUE</ColorTypePrimary>
-			<ColorTypeSecondary>COLOR_PLAYER_RED</ColorTypeSecondary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_MIDDLE_BLUE</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
@@ -343,7 +343,7 @@
 			<TextColorType>COLOR_PLAYER_PALE_RED</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_TEAL</Type> <!-- Indonesia -->
+			<Type>PLAYERCOLOR_TEAL</Type> <!-- Connecticut -->
 			<ColorTypePrimary>COLOR_PLAYER_TEAL</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_DARK_GREEN</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_TEAL</TextColorType>
@@ -409,13 +409,13 @@
 			<TextColorType>COLOR_PLAYER_BROWNISH_RED</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_POLYNESIA</Type> <!-- Polynesia -->
+			<Type>PLAYERCOLOR_POLYNESIA</Type> <!-- Arkansas -->
 			<ColorTypePrimary>COLOR_PLAYER_ROSE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_ROSE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_GREYISH_BLUE</Type> <!-- Turks -->
+			<Type>PLAYERCOLOR_GREYISH_BLUE</Type> <!-- North Carolina -->
 			<ColorTypePrimary>COLOR_PLAYER_GREYISH_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_BLUE_TEXT</TextColorType>

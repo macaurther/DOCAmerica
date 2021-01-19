@@ -559,7 +559,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_LUNAR_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_LUNAR_COLONY_STRATEGY</Strategy>
 			<VictoryPrereq>NONE</VictoryPrereq>
-			<TechPrereq>TECH_FUSION</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>PROJECT_LUNAR_LANDING</AnyonePrereqProject>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
@@ -655,7 +655,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_MARS_FRAMING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_MARS_FRAMING_STRATEGY</Strategy>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<TechPrereq>TECH_SUPERMATERIALS</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>5</iMaxTeamInstances>
@@ -713,7 +713,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_MARS_POWER_SOURCE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_MARS_POWER_SOURCE_STRATEGY</Strategy>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<TechPrereq>TECH_FUSION</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>2</iMaxTeamInstances>
@@ -766,7 +766,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_MARS_EXTRACTOR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_MARS_EXTRACTOR_STRATEGY</Strategy>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<TechPrereq>TECH_NANOTECHNOLOGY</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>1</iMaxTeamInstances>
@@ -814,7 +814,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_MARS_HABITAT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_MARS_HABITAT_STRATEGY</Strategy>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<TechPrereq>TECH_AUTOMATION</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>5</iMaxTeamInstances>
@@ -872,7 +872,7 @@
 			<Civilopedia>TXT_KEY_PROJECT_MARS_HYDROPONICS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_PROJECT_MARS_HYDROPONICS_STRATEGY</Strategy>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<TechPrereq>TECH_BIOTECHNOLOGY</TechPrereq>
+			<TechPrereq>TECH_SPACEFLIGHT</TechPrereq>
 			<AnyonePrereqProject>NONE</AnyonePrereqProject>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>3</iMaxTeamInstances>

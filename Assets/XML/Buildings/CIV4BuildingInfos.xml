@@ -2584,7 +2584,7 @@
 			<Strategy>TXT_KEY_BUILDING_AUTOMATED_FACTORY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AUTOMATED_FACTORY</ArtDefineTag>
-			<PrereqTech>TECH_AUTOMATION</PrereqTech>
+			<PrereqTech>TECH_SPACEFLIGHT</PrereqTech>
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2625,7 +2625,7 @@
 			<Strategy>TXT_KEY_BUILDING_VERTICAL_FARM_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_VERTICAL_FARM</ArtDefineTag>
-			<PrereqTech>TECH_BIOTECHNOLOGY</PrereqTech>
+			<PrereqTech>TECH_SPACEFLIGHT</PrereqTech>
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6397,7 +6397,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SPACE_ELEVATOR</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_SPACE_ELEVATOR</MovieDefineTag>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
-			<PrereqTech>TECH_SUPERMATERIALS</PrereqTech>
+			<PrereqTech>TECH_SPACEFLIGHT</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -6475,7 +6475,7 @@
 			<Help>TXT_KEY_BUILDING_ITER_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ITER</ArtDefineTag>
-			<PrereqTech>TECH_FUSION</PrereqTech>
+			<PrereqTech>TECH_SPACEFLIGHT</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

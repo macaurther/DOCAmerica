@@ -7836,7 +7836,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_AUTOMATION</PrereqTech>
+			<PrereqTech>TECH_SPACEFLIGHT</PrereqTech>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_ALUMINUM</BonusType>

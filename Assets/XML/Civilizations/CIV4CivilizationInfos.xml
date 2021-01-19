@@ -226,7 +226,7 @@
 			<ShortDescription>TXT_KEY_CIV_CONNECTICUT_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_CONNECTICUT_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_CONNECTICUT_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_TEAL</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -322,7 +322,7 @@
 			<ShortDescription>TXT_KEY_CIV_DELAWARE_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_DELAWARE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_DELAWARE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -532,7 +532,7 @@
 			<ShortDescription>TXT_KEY_CIV_FRANCE_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_FRANCE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_FRANCE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_PURPLE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_FRANCE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -635,7 +635,7 @@
 			<ShortDescription>TXT_KEY_CIV_GEORGIA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_GEORGIA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_GEORGIA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_RED</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -731,7 +731,7 @@
 			<ShortDescription>TXT_KEY_CIV_MARYLAND_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_MARYLAND_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MARYLAND_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -827,7 +827,7 @@
 			<ShortDescription>TXT_KEY_CIV_MASSACHUSETTS_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_MASSACHUSETTS_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MASSACHUSETTS_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -923,7 +923,7 @@
 			<ShortDescription>TXT_KEY_CIV_NEW_HAMPSHIRE_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_NEW_HAMPSHIRE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NEW_HAMPSHIRE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1019,7 +1019,7 @@
 			<ShortDescription>TXT_KEY_CIV_NEW_JERSEY_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_NEW_JERSEY_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NEW_JERSEY_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_PEACH</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1115,7 +1115,7 @@
 			<ShortDescription>TXT_KEY_CIV_NEW_YORK_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_NEW_YORK_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NEW_YORK_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1211,7 +1211,7 @@
 			<ShortDescription>TXT_KEY_CIV_NORTH_CAROLINA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_NORTH_CAROLINA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NORTH_CAROLINA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1307,7 +1307,7 @@
 			<ShortDescription>TXT_KEY_CIV_PENNSYLVANIA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_PENNSYLVANIA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_PENNSYLVANIA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1403,7 +1403,7 @@
 			<ShortDescription>TXT_KEY_CIV_RHODE_ISLAND_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_RHODE_ISLAND_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_RHODE_ISLAND_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_GRAY</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1499,7 +1499,7 @@
 			<ShortDescription>TXT_KEY_CIV_SOUTH_CAROLINA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_SOUTH_CAROLINA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_SOUTH_CAROLINA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_VERY_LIGHT_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1595,7 +1595,7 @@
 			<ShortDescription>TXT_KEY_CIV_SPAIN_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_SPAIN_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_SPAIN_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_YELLOW</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_PINK</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_SPAIN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1703,7 +1703,7 @@
 			<ShortDescription>TXT_KEY_CIV_VIRGINIA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_VIRGINIA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_VIRGINIA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERYDARK_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>

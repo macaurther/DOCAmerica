@@ -911,7 +911,7 @@ def calculateStability(iPlayer):
 	if tPlayer.isHasTech(iNationalism):
 		if iCivicTerritory in [iConquest, iTributaries]: iCivicEraTechStability -= 5
 		
-	if tPlayer.isHasTech(iTheology):
+	if tPlayer.isHasTech(iPhilosophy):
 		if iCivicReligion in [iAnimism, iDeification]: iCivicEraTechStability -= 5
 	
 	if iStateReligion == iHinduism:
