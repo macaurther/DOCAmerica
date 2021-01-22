@@ -79,126 +79,126 @@ BeginTeam
 EndTeam
 BeginPlayer
 	Team=0
-	LeaderType=LEADER_ISABELLA
+	LeaderType=LEADER_SPANISH_KING
 	CivType=CIVILIZATION_SPAIN
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=1
-	LeaderType=LEADER_LOUIS_XIV
+	LeaderType=LEADER_FRENCH_KING
 	CivType=CIVILIZATION_FRANCE
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=2
-	LeaderType=LEADER_VICTORIA
+	LeaderType=LEADER_ENGLISH_KING
 	CivType=CIVILIZATION_ENGLAND
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=3
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_ROLFE
 	CivType=CIVILIZATION_VIRGINIA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=4
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_ADAMS
 	CivType=CIVILIZATION_MASSACHUSETTS
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=5
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_WIGGIN
 	CivType=CIVILIZATION_NEW_HAMPSHIRE
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=6
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_CALVERT
 	CivType=CIVILIZATION_MARYLAND
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=7
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_HOOKER
 	CivType=CIVILIZATION_CONNECTICUT
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=8
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_WILLIAMS
 	CivType=CIVILIZATION_RHODE_ISLAND
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=9
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_RALEIGH
 	CivType=CIVILIZATION_NORTH_CAROLINA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=10
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_SAYLE
 	CivType=CIVILIZATION_SOUTH_CAROLINA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=11
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_HYDE
 	CivType=CIVILIZATION_NEW_JERSEY
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=12
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_BURNET
 	CivType=CIVILIZATION_NEW_YORK
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=13
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_PENN
 	CivType=CIVILIZATION_PENNSYLVANIA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=14
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_BIGGS
 	CivType=CIVILIZATION_DELAWARE
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=15
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_OGLETHORPE
 	CivType=CIVILIZATION_GEORGIA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=16
-	LeaderType=LEADER_FRANKLIN_ROOSEVELT
+	LeaderType=LEADER_WASHINGTON
 	CivType=CIVILIZATION_AMERICA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=17
-	LeaderType=LEADER_TRUDEAU
+	LeaderType=LEADER_MACDONALD
 	CivType=CIVILIZATION_CANADA
 	PlayableCiv=1
 	Handicap=HANDICAP_REGENT

@@ -1129,4 +1129,197 @@
 		<Italian>Ezana</Italian>
 		<Spanish>Ezana</Spanish>
 	</TEXT>
+	<!-- MacAurther: DoCUSA Leaders -->
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SPANISH_KING</Tag>
+		<English>King of Spain</English>
+		<French>
+			<Text>King of Spain</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>King of Spain</German>
+		<Italian>King of Spain</Italian>
+		<Spanish>King of Spain</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_FRENCH_KING</Tag>
+		<English>King of France</English>
+		<French>
+			<Text>King of France</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>King of France</German>
+		<Italian>King of France</Italian>
+		<Spanish>King of France</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ENGLISH_KING</Tag>
+		<English>King of England</English>
+		<French>
+			<Text>King of England</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>King of England</German>
+		<Italian>King of England</Italian>
+		<Spanish>King of England</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ROLFE</Tag>
+		<English>John Rolfe</English>
+		<French>
+			<Text>John Rolfe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>John Rolfe</German>
+		<Italian>John Rolfe</Italian>
+		<Spanish>John Rolfe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ADAMS</Tag>
+		<English>John Adams</English>
+		<French>
+			<Text>John Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>John Adams</German>
+		<Italian>John Adams</Italian>
+		<Spanish>John Adams</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_WIGGIN</Tag>
+		<English>Thomas Wiggin</English>
+		<French>
+			<Text>Thomas Wiggin</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Thomas Wiggin</German>
+		<Italian>Thomas Wiggin</Italian>
+		<Spanish>Thomas Wiggin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_CALVERT</Tag>
+		<English>Leonard Calvert</English>
+		<French>
+			<Text>Leonard Calvert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Leonard Calvert</German>
+		<Italian>Leonard Calvert</Italian>
+		<Spanish>Leonard Calvert</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HOOKER</Tag>
+		<English>Thomas Hooker</English>
+		<French>
+			<Text>Thomas Hooker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Thomas Hooker</German>
+		<Italian>Thomas Hooker</Italian>
+		<Spanish>Thomas Hooker</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_WILLIAMS</Tag>
+		<English>Roger Williams</English>
+		<French>
+			<Text>Roger Williams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Roger Williams</German>
+		<Italian>Roger Williams</Italian>
+		<Spanish>Roger Williams</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_RALEIGH</Tag>
+		<English>Walter Raleigh</English>
+		<French>
+			<Text>Walter Raleigh</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Walter Raleigh</German>
+		<Italian>Walter Raleigh</Italian>
+		<Spanish>Walter Raleigh</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SAYLE</Tag>
+		<English>William Sayle</English>
+		<French>
+			<Text>William Sayle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>William Sayle</German>
+		<Italian>William Sayle</Italian>
+		<Spanish>William Sayle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_HYDE</Tag>
+		<English>Edward Hyde</English>
+		<French>
+			<Text>Edward Hyde</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Edward Hyde</German>
+		<Italian>Edward Hyde</Italian>
+		<Spanish>Edward Hyde</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BURNET</Tag>
+		<English>William Burnet</English>
+		<French>
+			<Text>William Burnet</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>William Burnet</German>
+		<Italian>William Burnet</Italian>
+		<Spanish>William Burnet</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_PENN</Tag>
+		<English>William Penn</English>
+		<French>
+			<Text>William Penn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>William Penn</German>
+		<Italian>William Penn</Italian>
+		<Spanish>William Penn</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_BIGGS</Tag>
+		<English>Benjamin Biggs</English>
+		<French>
+			<Text>Benjamin Biggs</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Benjamin Biggs</German>
+		<Italian>Benjamin Biggs</Italian>
+		<Spanish>Benjamin Biggs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_OGLETHORPE</Tag>
+		<English>James Oglethorpe</English>
+		<French>
+			<Text>James Oglethorpe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>James Oglethorpe</German>
+		<Italian>James Oglethorpe</Italian>
+		<Spanish>James Oglethorpe</Spanish>
+	</TEXT>
 </Civ4GameText>
