@@ -4708,11 +4708,6 @@ void CvCity::updateArtStyleType()
 			case REGION_ARABIA:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_ARABIA;
 				break;
-			case REGION_EGYPT:
-				if (isHasReligion((ReligionTypes)ISLAM)) eNewArtStyle = (ArtStyleTypes)ARTSTYLE_ARABIA;
-				else if (GET_PLAYER(eHighestCulture).getCurrentEra() == ERA_ANCIENT) eNewArtStyle = (ArtStyleTypes)ARTSTYLE_EGYPT;
-				else eNewArtStyle = (ArtStyleTypes)ARTSTYLE_GRECO_ROMAN;
-				break;
 			case REGION_INDIA:
 			case REGION_DECCAN:
 				if (isHasReligion((ReligionTypes)ISLAM)) eNewArtStyle = (ArtStyleTypes)ARTSTYLE_CRESCENT;
@@ -4779,15 +4774,6 @@ void CvCity::updateArtStyleType()
 			case REGION_ALASKA:
 			case REGION_UNITED_STATES:
 				eNewArtStyle = ARTSTYLE_EUROPEAN;
-				break;
-			case REGION_ITALY:
-				if (GET_PLAYER(eHighestCulture).getCurrentEra() >= ERA_MEDIEVAL) eNewArtStyle = ARTSTYLE_EUROPEAN;
-				else eNewArtStyle = ARTSTYLE_GRECO_ROMAN_OLD;
-				break;
-			case REGION_IBERIA:
-				if (isHasReligion((ReligionTypes)ISLAM)) eNewArtStyle = ARTSTYLE_MIDDLE_EAST;
-				else if (GET_PLAYER(eHighestCulture).getCurrentEra() >= ERA_MEDIEVAL) eNewArtStyle = ARTSTYLE_EUROPEAN;
-				else eNewArtStyle = ARTSTYLE_GRECO_ROMAN_OLD;
 				break;
 			case REGION_ANATOLIA:
 			case REGION_MAGHREB:

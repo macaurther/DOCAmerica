@@ -1447,15 +1447,6 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
-	// Leoreth: stop China from trading away techs it has monopoly on to make its UP less powerful
-	/*if (iChinaThreshold == 0)
-	{
-		if (getID() == CHINA && GET_PLAYER((PlayerTypes)CHINA).isHuman() && GET_PLAYER((PlayerTypes)CHINA).getCurrentEra() < ERA_RENAISSANCE)
-		{
-			return DENIAL_TECH_WHORE;
-		}
-	}*/
-
 	if (isHuman())
 	{
 		return NO_DENIAL;
@@ -2689,7 +2680,7 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 		iDefensivePactLimit += 1;
 	}
 
-	if (iMaxEra >= ERA_GLOBAL)
+	if (iMaxEra >= ERA_INFORMATION)
 	{
 		iDefensivePactLimit += 1;
 	}

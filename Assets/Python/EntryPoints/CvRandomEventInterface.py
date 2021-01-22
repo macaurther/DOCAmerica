@@ -1083,9 +1083,9 @@ def canTriggerGoldRush(argsList):
 	
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
-	iIndustrial = CvUtil.findInfoTypeNum(gc.getEraInfo,gc.getNumEraInfos(),'ERA_INDUSTRIAL')
+	iIndustrialEra = CvUtil.findInfoTypeNum(gc.getEraInfo,gc.getNumEraInfos(),'ERA_INDUSTRIAL')
 	
-	if player.getCurrentEra() != iIndustrial:
+	if player.getCurrentEra() != iIndustrialEra:
 		return false
 	
 						
@@ -1099,9 +1099,9 @@ def canTriggerInfluenza(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	team = gc.getTeam(player.getTeam())
 	
-	iIndustrial = CvUtil.findInfoTypeNum(gc.getEraInfo,gc.getNumEraInfos(),'ERA_INDUSTRIAL')
+	iIndustrialEra = CvUtil.findInfoTypeNum(gc.getEraInfo,gc.getNumEraInfos(),'ERA_INDUSTRIAL')
 	
-	if player.getCurrentEra() <= iIndustrial:
+	if player.getCurrentEra() <= iIndustrialEra:
 		return false
 	
 	iMicrobiology = CvUtil.findInfoTypeNum(gc.getTechInfo,gc.getNumTechInfos(),'TECH_MICROBIOLOGY')

@@ -616,7 +616,7 @@ class CvRFCEventHandler:
 				#pPlayer.initCity(71, 34)
 				#city = gc.getMap().plot(71, 34).getPlotCity()
 				
-				lEras = [iAncient, iMedieval, iIndustrial]
+				lEras = [iPreColumbianEra, iExplorationEra, iRevolutionaryEra]
 				for iEra in lEras:
 					pPlayer.setCurrentEra(iEra)
 					for iUnit in range(iNumUnits):

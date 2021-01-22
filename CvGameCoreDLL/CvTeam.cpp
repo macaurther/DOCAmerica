@@ -2893,11 +2893,12 @@ int CvTeam::getSpreadResearchModifier(TechTypes eTech) const
 
 int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 {
+	//MacAurther TODO:
 	bool bAllMedievalTechs = true;
 
 	for (int iI = 0; iI < GC.getNumTechInfos(); iI++)
 	{
-		if (GC.getTechInfo((TechTypes)iI).getEra() <= ERA_MEDIEVAL && !isHasTech((TechTypes)iI))
+		if (GC.getTechInfo((TechTypes)iI).getEra() <= ERA_EXPLORATION && !isHasTech((TechTypes)iI))
 		{
 			return 0;
 		}
@@ -2929,7 +2930,7 @@ int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 	if (iCount >= 3)
 	{
 		// account of the base modifier that Japan receives in the global era
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_GLOBAL)
+		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_INFORMATION)
 		{
 			return isHuman() ? -30 : -10;
 		}

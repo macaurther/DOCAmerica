@@ -361,7 +361,7 @@ def checkStability(iPlayer, bPositive = False, iMaster = -1):
 			checkStability(iLoopPlayer, bPositive, iPlayer)
 		
 def getPossibleMinors(iPlayer):
-	if gc.getGame().getCurrentEra() <= iMedieval:
+	if gc.getGame().getCurrentEra() <= iExpansionEra:
 		return [iBarbarian, iIndependent, iIndependent2]
 		
 	return [iIndependent, iIndependent2]
@@ -564,7 +564,7 @@ def completeCollapse(iPlayer):
 	downgradeCottages(iPlayer)
 	
 	# secede all cities, destroy close and less important ones
-	bRazeMinorCities = (gc.getPlayer(iPlayer).getCurrentEra() <= iMedieval)
+	bRazeMinorCities = (gc.getPlayer(iPlayer).getCurrentEra() <= iExpansionEra)
 	secedeCities(iPlayer, lCities, bRazeMinorCities)
 		
 	# take care of the remnants of the civ
@@ -695,7 +695,7 @@ def calculateStability(iPlayer):
 		# Expansion
 		if plot.isCore(iPlayer):
 			iStabilityPopulation = iCorePopulationModifier * iPopulation / 100
-			if bSingleCoreCity and iCurrentEra > iAncient: iStabilityPopulation += iCorePopulationModifier * iPopulation / 100
+			if bSingleCoreCity and iCurrentEra > iPreColumbian: iStabilityPopulation += iCorePopulationModifier * iPopulation / 100
 			
 			iCorePopulation += iStabilityPopulation
 			city.setStabilityPopulation(iStabilityPopulation)
@@ -885,19 +885,19 @@ def calculateStability(iPlayer):
 	
 	# Civics (eras and techs and religions)
 	if iCivicLegitimacy == iVassalage:
-		if iCurrentEra == iMedieval: iCivicEraTechStability += 2
-		elif iCurrentEra >= iIndustrial: iCivicEraTechStability -= 5
+		if iCurrentEra == iExplorationEra: iCivicEraTechStability += 2
+		elif iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 5
 		
 	if iCivicReligion == iDeification:
-		if iCurrentEra <= iClassical: iCivicEraTechStability += 2
-		else: iCivicEraTechStability -= 2 * (iCurrentEra - iClassical)
+		if iCurrentEra <= iPostColumbianEra: iCivicEraTechStability += 2
+		else: iCivicEraTechStability -= 2 * (iCurrentEra - iPostColumbianEra)
 		
 	if iCivicGovernment == iRepublic:
-		if iCurrentEra <= iClassical: iCivicEraTechStability += 2
-		elif iCurrentEra >= iIndustrial: iCivicEraTechStability -= 5
+		if iCurrentEra <= iPostColumbianEra: iCivicEraTechStability += 2
+		elif iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 5
 		
 	if iCivicTerritory == iIsolationism:
-		if iCurrentEra >= iIndustrial: iCivicEraTechStability -= (iCurrentEra - iRenaissance) * 3
+		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= (iCurrentEra - iExpansionEra) * 3
 		
 	if tPlayer.isHasTech(iRepresentation):
 		if iCivicGovernment not in [iRepublic, iDemocracy] and iCivicLegitimacy not in [iRevolutionism, iConstitution]: iCivicEraTechStability -= 5
@@ -1167,7 +1167,7 @@ def getCivicStability(iPlayer, lCivics):
 	if iDeification in civics:
 		if civics.any(iRepublic, iDemocracy): iStability -= 3
 		
-		if iCurrentEra <= iClassical:
+		if iCurrentEra <= iPostColumbianEra:
 			if iRedistribution in civics: iStability += 2
 			if iSlavery in civics: iStability += 2
 		
@@ -1176,7 +1176,7 @@ def getCivicStability(iPlayer, lCivics):
 		if civics.any(iFreeEnterprise, iCentralPlanning, iPublicWelfare): iStability -= 3
 		if iTributaries in civics: iStability += 5
 		
-		if iCurrentEra == iMedieval:
+		if iCurrentEra == iExplorationEra:
 			if iMonarchy in civics: iStability += 2
 			if iManorialism in civics: iStability += 3
 			
@@ -1190,7 +1190,7 @@ def getCivicStability(iPlayer, lCivics):
 		if iRegulatedTrade in civics: iStability += 3
 		if iClergy in civics: iStability += 2
 		
-		if iCurrentEra == iRenaissance:
+		if iCurrentEra == iExplorationEra:
 			if iMonarchy in civics: iStability += 2
 			
 	if iDespotism in civics:

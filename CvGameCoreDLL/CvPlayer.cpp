@@ -6575,12 +6575,13 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	iProductionNeeded /= 100;
 
 	// increase unit cost with era
+	// MacAurther TODO: Figure out what to do with this
 	int iEraModifier = 100;
 	if (GC.getUnitInfo(eUnit).isFoodProduction())
 	{
 		iEraModifier += 5 * getCurrentEra();
 
-		if (getCurrentEra() > ERA_RENAISSANCE) iEraModifier += 5 * getCurrentEra();
+		if (getCurrentEra() > ERA_EXPANSION) iEraModifier += 5 * getCurrentEra();
 	}
 	else
 	{
@@ -24474,27 +24475,14 @@ EraTypes CvPlayer::getSoundtrackEra()
 	ReligionTypes eStateReligion = getStateReligion();
 	EraTypes eCurrentEra = getCurrentEra();
 
-	if (eStateReligion == CONFUCIANISM || eStateReligion == TAOISM)
-	{
-		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
-		{
-			return (EraTypes)ERA_EAST_ASIA;
-		}
-	}
-	else if (eStateReligion == ISLAM || eStateReligion == ZOROASTRIANISM)
-	{
-		if (eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
-		{
-			return (EraTypes)ERA_MIDDLE_EAST;
-		}
-	}
-	else if (eStateReligion == NO_RELIGION)
-	{
-		if (eCurrentEra == ERA_MEDIEVAL)
-		{
-			return (EraTypes)ERA_CLASSICAL;
-		}
-	}
+	//MacAurther TODO: Regional Music
+	//if (eStateReligion == CONFUCIANISM || eStateReligion == TAOISM)
+	//{
+	//	if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
+	//	{
+	//		return (EraTypes)ERA_EAST_ASIA;
+	//	}
+	//}
 
 	return eCurrentEra;
 }
@@ -25173,7 +25161,7 @@ void CvPlayer::setStartingEra(EraTypes eNewValue)
 {
 	m_eStartingEra = eNewValue;
 
-	if (eNewValue > ERA_ANCIENT && GC.getGameINLINE().isFinalInitialized() && !(gDLL->GetWorldBuilderMode()))
+	if (eNewValue > ERA_PRE_COLUMBIAN && GC.getGameINLINE().isFinalInitialized() && !(gDLL->GetWorldBuilderMode()))
 	{
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_PYTHON_SCREEN);
 		if (NULL != pInfo)

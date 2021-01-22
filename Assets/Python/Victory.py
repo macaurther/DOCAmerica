@@ -372,11 +372,11 @@ def onTechAcquired(iPlayer, iTech):
 				
 		# third English goal: be the first to discover ten Renaissance and ten Industrial technologies
 		if isPossible(iEngland, 2):
-			if iEra in [iRenaissance, iIndustrial]:
-				if countFirstDiscovered(iPlayer, iRenaissance) >= 8 and countFirstDiscovered(iPlayer, iIndustrial) >= 8:
+			if iEra in [iExpansionEra, iIndustrialEra]:
+				if countFirstDiscovered(iPlayer, iExpansionEra) >= 8 and countFirstDiscovered(iPlayer, iIndustrialEra) >= 8:
 					if iPlayer == iEngland: win(iEngland, 2)
 					else: lose(iEngland, 2)
-				if not isFirstDiscoveredPossible(iEngland, iRenaissance, 8) or not isFirstDiscoveredPossible(iEngland, iIndustrial, 8):
+				if not isFirstDiscoveredPossible(iEngland, iExpansionEra, 8) or not isFirstDiscoveredPossible(iEngland, iIndustrialEra, 8):
 					lose(iEngland, 2)
 				
 			
@@ -1370,7 +1370,7 @@ def countReligionCities(iPlayer):
 	return iCount
 	
 def isCompleteTechTree(iPlayer):
-	if gc.getPlayer(iPlayer).getCurrentEra() < iGlobal: return False
+	if gc.getPlayer(iPlayer).getCurrentEra() < iInformationEra: return False
 	
 	tPlayer = gc.getTeam(iPlayer)
 	for iTech in range(iNumTechs):

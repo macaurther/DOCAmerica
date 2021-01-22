@@ -18,7 +18,7 @@ typedef list<char*> LISTCHAR;
 #define NUM_MINORS				(4)	 // Independent, Independent2, Natives, Barbarians
 #define NUM_CIVS				(22)
 
-#define NUM_ERAS				(ERA_DIGITAL+1)
+#define NUM_ERAS				(ERA_INFORMATION+1)
 
 #define PAGAN_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PAGAN_TEMPLE"))
 #define BUILDING_PALACE			((BuildingClassTypes)0)
@@ -211,16 +211,16 @@ enum DoCBuildings
 
 enum DoCEras
 {
-	ERA_ANCIENT,
-	ERA_CLASSICAL,
-	ERA_MEDIEVAL,
-	ERA_RENAISSANCE,
+	ERA_PRE_COLUMBIAN,
+	ERA_POST_COLUMBIAN,
+	ERA_EXPLORATION,
+	ERA_COLONIAL,
+	ERA_REVOLUTIONARY,
+	ERA_EXPANSION,
 	ERA_INDUSTRIAL,
-	ERA_GLOBAL,
-	ERA_DIGITAL,
-	ERA_MIDDLE_EAST,
-	ERA_EAST_ASIA,
-	ERA_SOUTH_ASIA,
+	ERA_MODERN,
+	ERA_ATOMIC,
+	ERA_INFORMATION,
 };
 
 enum Regions

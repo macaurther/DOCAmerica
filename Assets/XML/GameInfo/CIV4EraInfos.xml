@@ -15,9 +15,9 @@
 <Civ4EraInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<EraInfos>
 		<EraInfo>
-			<Type>ERA_ANCIENT</Type>
-			<Description>TXT_KEY_ERA_ANCIENT</Description>
-			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
+			<Type>ERA_PRE_COLUMBIAN</Type>
+			<Description>TXT_KEY_ERA_PRE_COLUMBIAN</Description>
+			<Strategy>TXT_KEY_ERA_PRE_COLUMBIAN_STRATEGY</Strategy>
 			<bNoGoodies>0</bNoGoodies>
 			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -67,9 +67,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_CLASSICAL</Type>
-			<Description>TXT_KEY_ERA_CLASSICAL</Description>
-			<Strategy>TXT_KEY_ERA_CLASSICAL_STRATEGY</Strategy>
+			<Type>ERA_POST_COLUMBIAN</Type>
+			<Description>TXT_KEY_ERA_POST_COLUMBIAN</Description>
+			<Strategy>TXT_KEY_ERA_POST_COLUMBIAN_STRATEGY</Strategy>
 			<bNoGoodies>0</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -134,9 +134,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_MEDIEVAL</Type>
-			<Description>TXT_KEY_ERA_MEDIEVAL</Description>
-			<Strategy>TXT_KEY_ERA_MEDIEVAL_STRATEGY</Strategy>
+			<Type>ERA_EXPLORATION</Type>
+			<Description>TXT_KEY_ERA_EXPLORATION</Description>
+			<Strategy>TXT_KEY_ERA_EXPLORATION_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -163,26 +163,11 @@
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_ALLEGRI_MISERERE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ANONYMOUS_AY_SANTA_MARIA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ANONYMOUS_LA_GAMBA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRUMEL_GLORIA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHANT_DEUS</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHANT_LAUDATE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHANT_REGEN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DE_LA_TORRE_ALTA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DESPREZ_EL_GRILLO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DESPREZ_LAMENT</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_LASSUS_ALMA_REDEMPTORIS</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_OCKEGHEM_INTEMERATA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_OCKEGHEM_KYRIE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ORTIZ_RECERCADA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PALESTRINA_CREDO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PALESTRINA_GLORIA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PRAETORIUS_BALLET</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PRAETORIUS_BRANSLE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PRAETORIUS_VOLTE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SHEPPARD_MEDIA_VITA</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_BLOW_YE_WINDS_BLOW</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_COLONIZATION</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_OUT_AT_SEA_001</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_OUT_AT_SEA_002</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_OUT_AT_SEA_003</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -202,9 +187,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_RENAISSANCE</Type>
-			<Description>TXT_KEY_ERA_RENAISSANCE</Description>
-			<Strategy>TXT_KEY_ERA_RENAISSANCE_STRATEGY</Strategy>
+			<Type>ERA_COLONIAL</Type>
+			<Description>TXT_KEY_ERA_COLONIAL</Description>
+			<Strategy>TXT_KEY_ERA_COLONIAL_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>1</bNoBarbUnits>
@@ -231,25 +216,20 @@
 			<iSoundtrackSpace>160</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_BACH_ALLEGRO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_ALLEGRO_ASSAI</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_ALLEMANDE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BOUREE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_2_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_3_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_4_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_6_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_6_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_GIGUE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_LARGO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_MENUET</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_SARABANDE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_ALLEGRETTO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_ANDANTE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_ROMANCE_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MOZART_ADAGIO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MOZART_ANDANTE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MOZART_ROMANCE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_BARBARA_ALLEN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_CHESTER</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_DAUGHTER</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EARL_BRAND</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_LADY_HARRIETT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_LA_ROSSIGNOL</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_LORD_THOMAS_AND_FAIR_ELLINOR</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_MARCHE_TRIOMPHALE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_MATTIE_GROVE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_PHRYGIAN_MUSIC_BULL</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_QUICK_STEP</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_SONATA_DETTA_LA_VITTORIA_UCCELLINI</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_THE_GIRL_I_LEFT_BEHIND_ME</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_YOUNG_LADIES_IN_TOWN</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -269,9 +249,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_INDUSTRIAL</Type>
-			<Description>TXT_KEY_ERA_INDUSTRIAL</Description>
-			<Strategy>TXT_KEY_ERA_INDUSTRIAL_STRATEGY</Strategy>
+			<Type>ERA_REVOLUTIONARY</Type>
+			<Description>TXT_KEY_ERA_REVOLUTIONARY</Description>
+			<Strategy>TXT_KEY_ERA_REVOLUTIONARY_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>1</bNoBarbUnits>
@@ -298,22 +278,22 @@
 			<iSoundtrackSpace>120</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_5_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_6_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_6_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_3_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_3_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_16</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_9_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_AMERICAN_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_7</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_10</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_12</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_RIMSKY_KORSAKOV_SCHEHERAZADE_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SAINT_SAENS_ALLEGRETTO</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_DUKE_OF_YORKS_SHRT_TR</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_GROUND_IN_F_MAJOR_TOLETT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_HOW_HAPPY_THE_SOLDIER</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_JOHNIE_SCOT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_MORELLIS_LESSON</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_PRESIDENTS_MARCH</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_SIR_LIONEL</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_SUMMER_IS_COMING</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_THE_FARMERS_CURST_WIFE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_THE_REVEILLE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_THE_RICH_LADY_OVER_THE_SEA</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_THE_WORLD_TURNED_UPSIDE_DOWN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_WASH_ART_MARCH</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_WELLINGTONS_VICTORY_BATTLE_BEETHOVEN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_WELLINGTONS_VICTORY_VICTORY_BEETHOVEN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_YORK_FUSILIERS</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -333,9 +313,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_GLOBAL</Type>
-			<Description>TXT_KEY_ERA_GLOBAL</Description>
-			<Strategy>TXT_KEY_ERA_GLOBAL_STRATEGY</Strategy>
+			<Type>ERA_EXPANSION</Type>
+			<Description>TXT_KEY_ERA_EXPANSION</Description>
+			<Strategy>TXT_KEY_ERA_EXPANSION_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>1</bNoBarbUnits>
@@ -362,20 +342,19 @@
 			<iSoundtrackSpace>80</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_ANFORTAS_WOUND</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHAIRMAN_DANCES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHCONNE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHRISTIAN_ZEAL</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_COMMON_TONES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_HARMONIELEHRE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_HYMING_SLEWS</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_LOOPS_AND_VERSES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MEISTER_ECKHARDT</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SHAKING_AND_TREMBLING</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_THE_PEOPLE_ARE_HEROES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_TROMBA_LONTANA</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_A_LA_BATTAGLIA_TROMBONES_ISAAC</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_AMERICAN_SALUTE_GOULD</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EGMONT_OVERTURE_BEETHOVEN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EQUALE_IN_F_MINOR_OP15_LAMBEL</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EQUALI_IN_C_MINOR_TROMBONES_I_BRUCKNER</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EQUALI_IN_C_MINOR_TROMBONES_II_BRUCKNER</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EQUALI_WO_O30_I_ANDANTE_BEETHOVEN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EQUALI_WO_O30_III_POCO_SOSTENUTO_BEETHOVEN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_EQUALI_WO_O30_II_POCO_ADAGIO_BEETHOVEN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_FANFARE_WER_ICH_EYN_FALCK_GILBERT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_OP16_PART_1_BERIOT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_OP16_PART_2_BERIOT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SONG_VARIATIONS_ON_AMERICA_IVES</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -395,9 +374,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_DIGITAL</Type>
-			<Description>TXT_KEY_ERA_DIGITAL</Description>
-			<Strategy>TXT_KEY_ERA_DIGITAL_STRATEGY</Strategy>
+			<Type>ERA_INDUSTRIAL</Type>
+			<Description>TXT_KEY_ERA_INDUSTRIAL</Description>
+			<Strategy>TXT_KEY_ERA_INDUSTRIAL_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>1</bNoBarbUnits>
@@ -424,20 +403,22 @@
 			<iSoundtrackSpace>40</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_ANFORTAS_WOUND</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHAIRMAN_DANCES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHCONNE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHRISTIAN_ZEAL</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_COMMON_TONES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_HARMONIELEHRE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_HYMING_SLEWS</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_LOOPS_AND_VERSES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MEISTER_ECKHARDT</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SHAKING_AND_TREMBLING</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_THE_PEOPLE_ARE_HEROES</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_TROMBA_LONTANA</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BEETHOVEN_5_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BEETHOVEN_6_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BEETHOVEN_6_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BRAHMS_3_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BRAHMS_3_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_16</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_DVORAK_9_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_DVORAK_AMERICAN_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_7</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_12</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_RIMSKY_KORSAKOV_SCHEHERAZADE_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SAINT_SAENS_ALLEGRETTO</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -457,9 +438,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_MIDDLE_EAST</Type>
-			<Description>TXT_KEY_ERA_MIDDLE_EAST</Description>
-			<Strategy>TXT_KEY_ERA_MIDDLE_EAST_STRATEGY</Strategy>
+			<Type>ERA_MODERN</Type>
+			<Description>TXT_KEY_ERA_MODERN</Description>
+			<Strategy>TXT_KEY_ERA_MODERN_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -486,10 +467,20 @@
 			<iSoundtrackSpace>600</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_MID_EAST</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_AFRICA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MOD_MID_EAST</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_MID_EAST</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_ANFORTAS_WOUND</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHAIRMAN_DANCES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHCONNE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHRISTIAN_ZEAL</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COMMON_TONES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_HARMONIELEHRE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_HYMING_SLEWS</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_LOOPS_AND_VERSES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEISTER_ECKHARDT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SHAKING_AND_TREMBLING</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_THE_PEOPLE_ARE_HEROES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TROMBA_LONTANA</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -509,9 +500,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_EAST_ASIA</Type>
-			<Description>TXT_KEY_ERA_EAST_ASIA</Description>
-			<Strategy>TXT_KEY_ERA_EAST_ASIA_STRATEGY</Strategy>
+			<Type>ERA_ATOMIC</Type>
+			<Description>TXT_KEY_ERA_ATOMIC</Description>
+			<Strategy>TXT_KEY_ERA_ATOMIC_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -538,14 +529,20 @@
 			<iSoundtrackSpace>500</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_ADAM</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_GENGHIS_KHAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_UNI</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_MID_ORIENTAL</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_ASIAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MOD_ASIAN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_ANFORTAS_WOUND</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHAIRMAN_DANCES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHCONNE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHRISTIAN_ZEAL</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COMMON_TONES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_HARMONIELEHRE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_HYMING_SLEWS</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_LOOPS_AND_VERSES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEISTER_ECKHARDT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SHAKING_AND_TREMBLING</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_THE_PEOPLE_ARE_HEROES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TROMBA_LONTANA</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -565,9 +562,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_SOUTH_ASIA</Type>
-			<Description>TXT_KEY_ERA_SOUTH_ASIA</Description>
-			<Strategy>TXT_KEY_ERA_SOUTH_ASIA_STRATEGY</Strategy>
+			<Type>ERA_INFORMATION</Type>
+			<Description>TXT_KEY_ERA_INFORMATION</Description>
+			<Strategy>TXT_KEY_ERA_INFORMATION_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -594,14 +591,20 @@
 			<iSoundtrackSpace>700</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_ADAM</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_GENGHIS_KHAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_UNI</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_MID_ORIENTAL</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_ASIAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MOD_ASIAN</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_ANFORTAS_WOUND</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHAIRMAN_DANCES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHCONNE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_CHRISTIAN_ZEAL</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COMMON_TONES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_GRAND_PIANOLA_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_HARMONIELEHRE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_HYMING_SLEWS</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_LOOPS_AND_VERSES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_MEISTER_ECKHARDT</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_SHAKING_AND_TREMBLING</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_THE_PEOPLE_ARE_HEROES</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_TROMBA_LONTANA</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>

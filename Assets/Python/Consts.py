@@ -625,8 +625,9 @@ lMarsBaseComponents = [iMarsFraming, iMarsPowerSource, iMarsExtractor, iMarsHabi
 
 #Eras
 
-iNumEras = 7
-(iAncient, iClassical, iMedieval, iRenaissance, iIndustrial, iGlobal, iDigital) = range (iNumEras)
+iNumEras = 10
+(iPreColumbianEra, iPostColumbianEra, iExplorationEra, iColonialEra, iRevolutionaryEra, iExpansionEra, iIndustrialEra,
+iModernEra, iAtomicEra, iInformationEra) = range (iNumEras)
 
 
 #Improvements

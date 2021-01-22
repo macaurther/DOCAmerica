@@ -65,7 +65,7 @@
 		<Spanish>When checked, the game date and era are displayed using a color for each era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_ANCIENT_TEXT</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_PRE_COLUMBIAN_TEXT</Tag>
 		<English>Ancient Era</English>
 		<French>Antiquit&#233;</French>
 		<German>Antike</German>
@@ -73,7 +73,7 @@
 		<Spanish>Ancient Era</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_ANCIENT_HOVER</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_PRE_COLUMBIAN_HOVER</Tag>
 		<English>Color to use for the Ancient era.</English>
 		<French>Couleur pour l'Antiquit&#233;.</French>
 		<German>Bestimmt die Farbe, in der die Epoche "Antike" erscheint</German>
@@ -81,7 +81,7 @@
 		<Spanish>Color to use for the Ancient era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_CLASSICAL_TEXT</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_POST_COLUMBIAN_TEXT</Tag>
 		<English>Classical Era</English>
 		<French>Ere Classique</French>
 		<German>Klassik</German>
@@ -89,7 +89,7 @@
 		<Spanish>Classical Era</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_CLASSICAL_HOVER</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_POST_COLUMBIAN_HOVER</Tag>
 		<English>Color to use for the Classical era.</English>
 		<French>Couleur pour l'Ere Classique.</French>
 		<German>Bestimmt die Farbe, in der die Epoche "Klassik" erscheint</German>
@@ -97,7 +97,7 @@
 		<Spanish>Color to use for the Classical era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_MEDIEVAL_TEXT</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_EXPLORATION_TEXT</Tag>
 		<English>Medieval Era</English>
 		<French>Moyen Age</French>
 		<German>Mittelalter</German>
@@ -105,7 +105,7 @@
 		<Spanish>Medieval Era</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_MEDIEVAL_HOVER</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_EXPLORATION_HOVER</Tag>
 		<English>Color to use for the Medieval era.</English>
 		<French>Couleur pour le Moyen Age.</French>
 		<German>Bestimmt die Farbe, in der die Epoche "Mittelalter" erscheint</German>
@@ -113,7 +113,7 @@
 		<Spanish>Color to use for the Medieval era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_RENAISSANCE_TEXT</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_COLONIAL_TEXT</Tag>
 		<English>Renaissance Era</English>
 		<French>Renaissance</French>
 		<German>Renaissance</German>
@@ -121,7 +121,7 @@
 		<Spanish>Renaissance Era</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_RENAISSANCE_HOVER</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_COLONIAL_HOVER</Tag>
 		<English>Color to use for the Renaissance era.</English>
 		<French>Couleur pour la Renaissance.</French>
 		<German>Bestimmt die Farbe, in der die Epoche "Renaissance" erscheint</German>
@@ -129,7 +129,7 @@
 		<Spanish>Color to use for the Renaissance era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_INDUSTRIAL_TEXT</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_REVOLUTIONARY_TEXT</Tag>
 		<English>Industrial Era</English>
 		<French>Ere Industrielle</French>
 		<German>Industriezeitalter</German>
@@ -137,7 +137,7 @@
 		<Spanish>Industrial Era</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_INDUSTRIAL_HOVER</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_REVOLUTIONARY_HOVER</Tag>
 		<English>Color to use for the Industrial era.</English>
 		<French>Couleur pour l'Ere industrielle.</French>
 		<German>Bestimmt die Farbe, in der die Epoche "Industriezeitalter" erscheint</German>
@@ -145,7 +145,7 @@
 		<Spanish>Color to use for the Industrial era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_GLOBAL_TEXT</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_ATOMIC_TEXT</Tag>
 		<English>Global Era</English>
 		<French>Global Era</French>
 		<German>Globalzeitalter</German>
@@ -153,7 +153,7 @@
 		<Spanish>Global Era</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_GLOBAL_HOVER</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_ATOMIC_HOVER</Tag>
 		<English>Color to use for the Modern era.</English>
 		<French>Couleur pour l'Ere Moderne.</French>
 		<German>Bestimmt die Farbe, in der die Epoche "Moderne" erscheint</German>
@@ -161,7 +161,7 @@
 		<Spanish>Color to use for the Modern era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_DIGITAL_TEXT</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_INFORMATION_TEXT</Tag>
 		<English>Digital Era</English>
 		<French>Digital Era</French>
 		<German>Digitalzeitalter</German>
@@ -169,7 +169,7 @@
 		<Spanish>Digital Era</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_DIGITAL_HOVER</Tag>
+		<Tag>TXT_KEY_BUG_OPT_NJAGC__COLOR_ERA_INFORMATION_HOVER</Tag>
 		<English>Color to use for the Future era.</English>
 		<French>Couleur pour les Temps Futurs.</French>
 		<German>Bestimmt die Farbe, in der die Epoche "Zukunft" erscheint</German>

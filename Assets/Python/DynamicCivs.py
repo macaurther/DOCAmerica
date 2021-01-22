@@ -641,10 +641,10 @@ def republicTitle(iPlayer):
 	
 	if iPlayer == iEngland:
 		iEra = gc.getPlayer(iPlayer).getCurrentEra()
-		if isEmpire(iEngland) and iEra == iIndustrial:
+		if isEmpire(iEngland) and iEra == iIndustrialEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if iEra >= iGlobal:
+		if iEra >= iInformation:
 			return "TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC"
 	
 	if iPlayer == iAmerica:
@@ -691,30 +691,30 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iReligion == iIslam:
 			return "TXT_KEY_SULTANATE_OF"
 			
-		if bEmpire and iEra > iMedieval:
+		if bEmpire and iEra > iExplorationEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if iEra == iMedieval and isCapital(iPlayer, ["Barcelona", "Valencia"]):
+		if iEra == iExplorationEra and isCapital(iPlayer, ["Barcelona", "Valencia"]):
 			return "TXT_KEY_CIV_SPAIN_CROWN_OF"
 			
 	elif iPlayer == iFrance:
 		if not tCapitalCoords in Areas.getNormalArea(iPlayer):
 			return "TXT_KEY_CIV_FRANCE_EXILE"
 			
-		if iEra >= iIndustrial and bEmpire:
+		if iEra >= iIndustrialEra and bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 		if iCivicLegitimacy == iRevolutionism:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if not pHolyRome.isAlive() and iEra == iMedieval:
+		if not pHolyRome.isAlive() and iEra == iExplorationEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iPlayer == iEngland:
 		if not utils.isPlotInCore(iPlayer, tCapitalCoords):
 			return "TXT_KEY_CIV_ENGLAND_EXILE"
 			
-		if iEra == iMedieval and getMaster(iFrance) == iEngland:
+		if iEra == iExplorationEra and getMaster(iFrance) == iEngland:
 			return "TXT_KEY_CIV_ENGLAND_ANGEVIN_EMPIRE"
 			
 		if getColumn(iPlayer) >= 11:

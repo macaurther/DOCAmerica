@@ -4548,10 +4548,6 @@ const CvArtInfoUnit* CvUnitInfo::getArtInfo(int i, EraTypes eEra, UnitArtStyleTy
 	{
 		return ARTFILEMGR.getUnitArtInfo(getLateArtDefineTag(i, eStyle));
 	}
-	else if ((eEra >= ERA_MEDIEVAL) && !CvString(getMiddleArtDefineTag(i, eStyle)).empty())
-	{
-		return ARTFILEMGR.getUnitArtInfo(getMiddleArtDefineTag(i, eStyle));
-	}
 	else
 	{
 		return ARTFILEMGR.getUnitArtInfo(getEarlyArtDefineTag(i, eStyle));

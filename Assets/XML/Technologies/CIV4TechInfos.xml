@@ -16,7 +16,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -46,7 +46,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -75,7 +75,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -104,7 +104,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -135,7 +135,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -164,7 +164,7 @@
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -193,7 +193,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -225,7 +225,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_POST_COLUMBIAN</Era>
 			<iAsset>12</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -261,7 +261,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_CLASSICAL</Era>
+			<Era>ERA_POST_COLUMBIAN</Era>
 			<iAsset>24</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -298,7 +298,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_POST_COLUMBIAN</Era>
 			<iAsset>12</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -331,7 +331,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_CLASSICAL</Era>
+			<Era>ERA_POST_COLUMBIAN</Era>
 			<iAsset>16</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -364,7 +364,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_POST_COLUMBIAN</Era>
 			<iAsset>12</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -410,7 +410,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_CLASSICAL</Era>
+			<Era>ERA_POST_COLUMBIAN</Era>
 			<iAsset>20</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -446,7 +446,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_ANCIENT</Era>
+			<Era>ERA_POST_COLUMBIAN</Era>
 			<iAsset>8</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -486,7 +486,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>800</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -520,7 +520,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>800</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -558,7 +558,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>800</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -588,7 +588,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>900</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -622,7 +622,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>900</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -664,7 +664,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>700</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -706,7 +706,7 @@
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<iCost>700</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_EXPLORATION</Era>
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -746,7 +746,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>1100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -776,7 +776,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>1100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -806,7 +806,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<iPower>2</iPower>
 			<bTrade>1</bTrade>
@@ -844,7 +844,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -884,7 +884,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>1200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -921,7 +921,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>1200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -952,7 +952,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>28</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -986,7 +986,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1015,7 +1015,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1350</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1052,7 +1052,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1350</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1097,7 +1097,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1138,7 +1138,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1180,7 +1180,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
@@ -1214,7 +1214,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iTradeRoutes>1</iTradeRoutes>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
@@ -1251,7 +1251,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_SCIENTIST</FirstFreeUnitClass>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
@@ -1284,7 +1284,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>2250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_COLONIAL</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_STATESMAN</FirstFreeUnitClass>
 			<iAsset>52</iAsset>
 			<bTrade>1</bTrade>
@@ -1322,7 +1322,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>1350</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1363,7 +1363,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>1000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_COLONIAL</Era>
 			<iAsset>40</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1403,7 +1403,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_MEDIEVAL</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>28</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -1441,7 +1441,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -1478,7 +1478,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1511,7 +1511,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1544,7 +1544,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1580,7 +1580,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1613,7 +1613,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1653,7 +1653,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>280</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_CLASSICAL</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>20</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1682,7 +1682,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>280</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_CLASSICAL</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>20</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1719,7 +1719,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1800</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1752,7 +1752,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>1800</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1785,7 +1785,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<iPower>2</iPower>
 			<bTrade>1</bTrade>
@@ -1824,7 +1824,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_REVOLUTIONARY</Era>
 			<iAsset>48</iAsset>
 			<iPower>2</iPower>
 			<bTrade>1</bTrade>
@@ -1862,7 +1862,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1650</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>48</iAsset>
 			<iPower>2</iPower>
 			<bTrade>1</bTrade>
@@ -1901,7 +1901,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_CLASSICAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>20</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -1938,7 +1938,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>52</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1975,7 +1975,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>52</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2006,7 +2006,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>56</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2039,7 +2039,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>2500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>52</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2076,7 +2076,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>52</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -2116,7 +2116,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2153,7 +2153,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>56</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2190,7 +2190,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>56</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2227,7 +2227,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_EXPANSION</Era>
 			<iAsset>56</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2866,7 +2866,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>1350</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_RENAISSANCE</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>44</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -2903,7 +2903,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>4000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -2944,7 +2944,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>3600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2977,7 +2977,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>3600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3021,7 +3021,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_SPY</FirstFreeUnitClass>
 			<iAsset>64</iAsset>
 			<bTrade>1</bTrade>
@@ -3055,7 +3055,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<FirstFreeUnitClass>UNITCLASS_GREAT_SPY</FirstFreeUnitClass>
 			<iAsset>64</iAsset>
 			<bTrade>1</bTrade>
@@ -3092,7 +3092,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3132,7 +3132,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3172,7 +3172,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -3213,7 +3213,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -3251,7 +3251,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -3288,7 +3288,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>64</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -3325,7 +3325,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>68</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -3363,7 +3363,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>68</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -3401,7 +3401,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>68</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -3435,7 +3435,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>60</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3474,7 +3474,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>4000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_MODERN</Era>
 			<iAsset>60</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3517,7 +3517,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>6000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>72</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -3551,7 +3551,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>68</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -3589,7 +3589,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>68</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -3623,7 +3623,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>4500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>68</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3660,7 +3660,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>4000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>68</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3696,7 +3696,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>68</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3728,7 +3728,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>3250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_INDUSTRIAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>64</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3768,7 +3768,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>8000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>76</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -3802,7 +3802,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>6500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>72</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -3840,7 +3840,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>4000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>68</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3885,7 +3885,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>4000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_ATOMIC</Era>
 			<iAsset>68</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -3933,7 +3933,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>8000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>76</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -3967,7 +3967,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>7500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>72</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4003,7 +4003,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>6000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>72</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4036,7 +4036,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>7500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>72</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4073,7 +4073,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>6500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>72</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -4114,7 +4114,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>6500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_GLOBAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>72</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4158,7 +4158,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>9000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>76</iAsset>
 			<iPower>2</iPower>
 			<bTrade>1</bTrade>
@@ -4203,7 +4203,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>10000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>76</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4239,7 +4239,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>9000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>76</iAsset>
 			<iPower>3</iPower>
 			<bTrade>1</bTrade>
@@ -4273,7 +4273,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>9000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>76</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4313,7 +4313,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>8000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>76</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4357,7 +4357,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>9000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iAsset>76</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -4395,7 +4395,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>25000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_DIGITAL</Era>
+			<Era>ERA_INFORMATION</Era>
 			<iHealth>1</iHealth>
 			<iHappiness>1</iHappiness>
 			<iAsset>100</iAsset>
