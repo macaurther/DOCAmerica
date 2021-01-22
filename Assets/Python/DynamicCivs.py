@@ -764,29 +764,18 @@ def leader(iPlayer):
 	iEra = pPlayer.getCurrentEra()
 	iGameEra = gc.getGame().getCurrentEra()
 	
+	#MacAurther TODO: Change of leaders
 	if iPlayer == iSpain:
-		if isFascist(iPlayer): return iFranco
-		
-		if True in data.lFirstContactConquerors: return iPhilip
+		pass
 		
 	elif iPlayer == iFrance:
-		if iEra >= iGlobal: return iDeGaulle
-		
-		if iEra >= iIndustrial: return iNapoleon
-		
-		if iEra >= iRenaissance: return iLouis
+		pass
 		
 	elif iPlayer == iEngland:
-		if iEra >= iGlobal: return iChurchill
-		
-		if iEra >= iIndustrial: return iVictoria
-		
-		if iEra >= iRenaissance: return iElizabeth
+		pass
 			
 	elif iPlayer == iAmerica:
-		if iEra >= iGlobal: return iRoosevelt
-		
-		if iGameTurn >= getTurnForYear(1850): return iLincoln
+		pass
 		
 	return startingLeader(iPlayer)
 		

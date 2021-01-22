@@ -106,12 +106,12 @@ tCapitals = (
 (129, 45), # Annapolis
 (139, 58), # Hartford
 (142, 59), # Providence
-(133, 46), # Dover
 (129, 34), # Raleigh
 (124, 25), # Charleston
 (135, 53), # Newark
 (136, 55), # New York
 (132, 49), # Philadelphia
+(133, 46), # Dover
 (121, 22), # Savannah
 (128, 43), # Washington
 (132, 69), # Montreal

@@ -847,7 +847,7 @@
 			<ShortDescription>TXT_KEY_CIV_NEW_HAMPSHIRE_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_NEW_HAMPSHIRE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NEW_HAMPSHIRE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1111,7 +1111,7 @@
 			<ShortDescription>TXT_KEY_CIV_NORTH_CAROLINA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_NORTH_CAROLINA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NORTH_CAROLINA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>

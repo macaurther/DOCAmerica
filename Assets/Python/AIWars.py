@@ -63,8 +63,6 @@ class AIWars:
 			utils.minorWars(iIndependent)
 		elif iGameTurn % 13 == 11 and iGameTurn > utils.getTurns(50): #1 turn after restorePeace()
 			utils.minorWars(iIndependent2)
-		if iGameTurn % 50 == 24 and iGameTurn > utils.getTurns(50):
-			utils.minorWars(iCeltia)
 			
 		for tConquest in lConquests:
 			self.checkConquest(tConquest)
