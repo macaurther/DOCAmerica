@@ -1188,7 +1188,7 @@ class RFCUtils:
 		
 	def getBestInfantry(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
-		lInfantryList = [iInfantry, iRifleman, iMusketeer, iArquebusier, iPikeman, iHeavySwordsman, iCrossbowman, iSwordsman, iLightSwordsman, iMilitia]
+		lInfantryList = [iInfantry, iRifleman, iMusketeer, iArquebusier, iPikeman, iCrossbowman, iSwordsman, iLightSwordsman, iMilitia]
 		
 		for iBaseUnit in lInfantryList:
 			iUnit = self.getUniqueUnitType(iPlayer, gc.getUnitInfo(iBaseUnit).getUnitClassType())

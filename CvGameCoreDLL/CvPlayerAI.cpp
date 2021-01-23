@@ -3016,11 +3016,12 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 		return 0;
 	}
 
+	//MacAurther TODO: Maybe they should ;)
 	// Leoreth: America shouldn't fight the English all the way to Canada
-	if (getID() == AMERICA && pCity->getRegionID() == REGION_CANADA)
+	/*if (getID() == AMERICA && pCity->getRegionID() == REGION_CANADA)
 	{
 		iValue /= 3;
-	}
+	}*/
 
 	if (!bIgnoreAttackers)
 	{

@@ -1430,8 +1430,9 @@ void CvMap::calculateAreas()
 	scandinavia->init(scandinaviaID, false);
 	denmark->init(denmarkID, false);
 
+	//MacAurther TODO: Find use for this maybe
 	CvPlot* plot;
-	for (int iX = 0; iX < getGridWidth(); iX++)
+	/*for (int iX = 0; iX < getGridWidth(); iX++)
 	{
 		for (int iY = 0; iY < getGridHeight(); iY++)
 		{
@@ -1478,7 +1479,7 @@ void CvMap::calculateAreas()
 				}
 			}
 		}
-	}
+	}*/
 
 	// Leoreth: store closest area of size 30+
 	for (iI = 0; iI < numPlotsINLINE(); iI++)

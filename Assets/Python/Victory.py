@@ -307,22 +307,6 @@ def onCityBuilt(iPlayer, city):
 	
 	iGameTurn = gc.getGame().getGameTurn()
 	
-	# record first colony in the Americas for various UHVs
-	if not data.isFirstWorldColonized():
-		if city.getRegionID() in lNorthAmerica + lSouthAmerica:
-			if iPlayer not in lCivGroups[5]:
-				data.iFirstNewWorldColony = iPlayer
-			
-	# first English goal: colonize every continent by 1730 AD
-	elif iPlayer == iEngland:
-		if isPossible(iEngland, 0):
-			bNAmerica = getNumCitiesInRegions(iEngland, lNorthAmerica) >= 5
-			bSCAmerica = getNumCitiesInRegions(iEngland, lSouthAmerica) >= 3
-			bAfrica = getNumCitiesInRegions(iEngland, lAfrica) >= 4
-			bAsia = getNumCitiesInRegions(iEngland, lAsia) >= 5
-			bOceania = getNumCitiesInRegions(iEngland, lOceania) >= 3
-			if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
-				win(iEngland, 0)
 				
 def onCityAcquired(iPlayer, iOwner, city, bConquest):
 
@@ -330,23 +314,6 @@ def onCityAcquired(iPlayer, iOwner, city, bConquest):
 	
 	
 	if utils.getHumanID() != iPlayer and data.bIgnoreAI: return
-				
-					
-	# first English goal: colonize every continent by 1730 AD
-	elif iPlayer == iEngland:
-		if isPossible(iEngland, 0):
-			bNAmerica = getNumCitiesInRegions(iEngland, lNorthAmerica) >= 5
-			bSCAmerica = getNumCitiesInRegions(iEngland, lSouthAmerica) >= 3
-			bAfrica = getNumCitiesInRegions(iEngland, lAfrica) >= 4
-			bAsia = getNumCitiesInRegions(iEngland, lAsia) >= 5
-			bOceania = getNumCitiesInRegions(iEngland, lOceania) >= 3
-			if bNAmerica and bSCAmerica and bAfrica and bAsia and bOceania:
-				win(iEngland, 0)
-				
-	# second Canadian goal: control all cities and 90% of the territory in Canada by 1950 AD without ever conquering a city
-	elif iPlayer == iCanada:
-		if bConquest:
-			expire(iCanada, 1)
 			
 def onTechAcquired(iPlayer, iTech):
 	if not gc.getGame().isVictoryValid(7): return

@@ -695,7 +695,7 @@ def calculateStability(iPlayer):
 		# Expansion
 		if plot.isCore(iPlayer):
 			iStabilityPopulation = iCorePopulationModifier * iPopulation / 100
-			if bSingleCoreCity and iCurrentEra > iPreColumbian: iStabilityPopulation += iCorePopulationModifier * iPopulation / 100
+			if bSingleCoreCity and iCurrentEra > iPreColumbianEra: iStabilityPopulation += iCorePopulationModifier * iPopulation / 100
 			
 			iCorePopulation += iStabilityPopulation
 			city.setStabilityPopulation(iStabilityPopulation)

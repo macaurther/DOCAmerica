@@ -71,8 +71,6 @@ class Religions:
 						
 		self.checkSchism(iGameTurn)
 
-		self.spreadJudaismEurope(iGameTurn)
-		self.spreadJudaismMiddleEast(iGameTurn)
 		self.spreadJudaismAmerica(iGameTurn)
 		
 
@@ -218,6 +216,7 @@ class Religions:
 		
 		self.foundReligion((city.getX(), city.getY()), iReligion)
 					
+#MacAurther TODO Religion Immigrants
 ## JUDAISM
 
 	def checkJudaism(self, iGameTurn):
@@ -226,15 +225,10 @@ class Religions:
 		if iGameTurn == getTurnForYear(-1500) - utils.getTurns(data.iSeed % 5):
 			self.foundReligion(self.selectHolyCity(tJewishTL, tJewishBR, tJerusalem), iJudaism)
 			
-	def spreadJudaismEurope(self, iGameTurn):
-		self.spreadReligionToRegion(iJudaism, [rIberia, rEurope, rItaly, rBritain, rRussia, rBalkans], iGameTurn, 1000, 10, 0)
-				
-	def spreadJudaismMiddleEast(self, iGameTurn):
-		self.spreadReligionToRegion(iJudaism, [rMesopotamia, rAnatolia, rEgypt], iGameTurn, 600, 20, 5)
-		
 	def spreadJudaismAmerica(self, iGameTurn):
-		self.spreadReligionToRegion(iJudaism, [rCanada, rAlaska, rUnitedStates], iGameTurn, 1850, 10, 4)
-				
+		#self.spreadReligionToRegion(iJudaism, [rCanada, rAlaska, rUnitedStates], iGameTurn, 1850, 10, 4)
+		pass
+		
 	def spreadReligionToRegion(self, iReligion, lRegions, iGameTurn, iStartDate, iInterval, iOffset):
 		if not gc.getGame().isReligionFounded(iReligion): return
 		if iGameTurn < getTurnForYear(iStartDate): return

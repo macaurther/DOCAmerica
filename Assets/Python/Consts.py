@@ -576,43 +576,44 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 38
-(rBritain, rIberia, rItaly, rBalkans, rEurope, rScandinavia, rRussia, rAnatolia, rMesopotamia, rArabia, rEgypt, rMaghreb,
-rPersia, rIndia, rDeccan, rIndochina, rIndonesia, rChina, rKorea, rJapan, rManchuria, rTibet, rCentralAsia, rSiberia,
-rAustralia, rOceania, rEthiopia, rWestAfrica, rSouthAfrica, rCanada, rAlaska, rUnitedStates, rCaribbean, rMesoamerica,
-rBrazil, rArgentina, rPeru, rColombia) = range(iNumRegions)
+iNumRegions = 48
+(rVirginia, rMassachusetts, rNewHampshire, rMaryland, rConnecticut, rRhodeIsland, rNorthCarolina, rSouthCarolina, rNewJersey, rNewYork, 
+rPennsylvania, rDelaware, rGeorgia, rVermont, rKentucky, rTennessee, rOhio, rLouisiana, rIndiana, rMississippi,
+rIllinois, rAlabama, rMaine, rMissouri, rArkansas, rMichigan, rFlorida, rTexas, rIowa, rWisconsin,
+rCalifornia, rMinnesota, rOregon, rKansas, rWestVirginia, rNevada, rNebraska, rColorado, rNorthDakota, rSouthDakota,
+rMontana, rWashington, rIdaho, rWyoming, rUtah, rOklahoma, rNewMexico, rArizona) = range(iNumRegions)
 
-lNewWorld = [rAustralia, rOceania, rCanada, rAlaska, rUnitedStates, rCaribbean, rMesoamerica, rBrazil, rArgentina, rPeru, rColombia]
 
-lEurope = [rBritain, rIberia, rItaly, rBalkans, rEurope, rScandinavia, rRussia]
-lMiddleEast = [rAnatolia, rMesopotamia, rArabia, rPersia, rCentralAsia]
-lIndia = [rIndia, rDeccan]
-lEastAsia = [rIndochina, rIndonesia, rChina, rKorea, rJapan, rManchuria, rTibet]
-lNorthAfrica = [rEgypt, rMaghreb]
-lSubSaharanAfrica = [rEthiopia, rSouthAfrica, rWestAfrica]
-lSouthAmerica = [rCaribbean, rMesoamerica, rBrazil, rArgentina, rPeru, rColombia]
-lNorthAmerica = [rCanada, rAlaska, rUnitedStates]
-lOceania = [rAustralia, rOceania]
+lSouthAtlantic = [rDelaware, rMaryland, rVirginia, rNorthCarolina, rSouthCarolina, rGeorgia, rFlorida]
+lSouthCentral = [rWestVirginia, rKentucky, rTennessee, rAlabama, rMississippi, rLouisiana]
+lWestSouth = [rArkansas, rOklahoma, rTexas, rMissouri, rKansas, rNewMexico]
+lSouth = lSouthCentral + lSouthAtlantic + lWestSouth
 
-lAfrica = lNorthAfrica + lSubSaharanAfrica
-lAsia = lMiddleEast + lIndia + lEastAsia
+lNewEngland = [rMaine, rNewHampshire, rVermont, rMassachusetts, rRhodeIsland, rConnecticut]
+lMiddleAtlantic = [rNewYork, rPennsylvania, rNewJersey]
+lNorthEast = lNewEngland + lMiddleAtlantic
 
-iArea_Europe = 1000
-iArea_MiddleEast = 1001
-iArea_India = 1002
-iArea_EastAsia = 1003
-iArea_Africa = 1004
-iArea_SouthAmerica = 1005
-iArea_NorthAmerica = 1006
+lEastNorthCentral = [rMichigan, rOhio, rIndiana, rIllinois, rWisconsin]
+lWestNorthCentral = [rNorthDakota, rMinnesota, rSouthDakota, rNebraska]
+lMidWest = lEastNorthCentral + lWestNorthCentral
+
+lNorth = lNorthEast + lMidWest
+
+lMountain = [rMontana, rIdaho, rWyoming, rColorado, rUtah, rArizona, rNevada]
+lPacific = [rWashington, rOregon, rCalifornia]
+lWest = lMountain + lPacific
+
+lContiguous = lSouth + lNorth + lWest
+
+
+iArea_South = 1000
+iArea_North = 1001
+iArea_West = 1002
 
 mercRegions = {
-	iArea_Europe : set([rBritain, rIberia, rItaly, rBalkans, rEurope, rScandinavia, rRussia]),
-	iArea_MiddleEast : set([rAnatolia, rMesopotamia, rArabia, rEgypt, rMaghreb, rPersia, rCentralAsia]),
-	iArea_India : set([rIndia, rDeccan]),
-	iArea_EastAsia : set([rIndochina, rIndonesia, rChina, rKorea, rJapan, rManchuria, rTibet]),
-	iArea_Africa : set([rEgypt, rMaghreb, rEthiopia, rSouthAfrica, rWestAfrica]),
-	iArea_SouthAmerica : set([rCaribbean, rMesoamerica, rBrazil, rArgentina, rPeru, rColombia]),
-	iArea_NorthAmerica : set([rCanada, rAlaska, rUnitedStates]),
+	iArea_South : set(lSouth),
+	iArea_North : set(lNorth),
+	iArea_West : set(lWest),
 }
 
 #Projects

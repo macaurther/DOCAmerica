@@ -11368,6 +11368,7 @@ int CvPlot::calculateCultureCost() const
 // Leoreth
 bool CvPlot::canUseSlave(PlayerTypes ePlayer) const
 {
+	//MacAurther TODO:
 	if (GET_PLAYER(ePlayer).isMinorCiv() || GET_PLAYER(ePlayer).isBarbarian()) return false;
 
 	if (GET_PLAYER(ePlayer).getNumCities() == 0) return false;
@@ -11376,7 +11377,7 @@ bool CvPlot::canUseSlave(PlayerTypes ePlayer) const
 
 	int rid = GET_PLAYER(ePlayer).getCapitalCity()->getRegionID();
 
-	switch (getRegionID())
+	/*switch (getRegionID())
 	{
 	case REGION_ALASKA:
 	case REGION_CANADA:
@@ -11394,7 +11395,8 @@ bool CvPlot::canUseSlave(PlayerTypes ePlayer) const
 		if (rid != REGION_ETHIOPIA && rid != REGION_WEST_AFRICA && rid != REGION_SOUTH_AFRICA) return true;
 	default:
 		return false;
-	}
+	}*/
+	return true;
 }
 
 // Leoreth

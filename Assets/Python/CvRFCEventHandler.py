@@ -221,14 +221,15 @@ class CvRFCEventHandler:
 			dc.onCityBuilt(iOwner)
 
 		# Leoreth: free defender and worker for AI colonies
-		if iOwner in lCivGroups[0]:
-			if city.getRegionID() not in mercRegions[iArea_Europe]:
-				if utils.getHumanID() != iOwner:
-					utils.createGarrisons(tCity, iOwner, 1)
-					utils.makeUnit(iWorker, iOwner, tCity, 1)
+		#if iOwner in lCivGroups[0]:
+		#	if city.getRegionID() not in mercRegions[iArea_Europe]:
+		#		if utils.getHumanID() != iOwner:
+		#			utils.createGarrisons(tCity, iOwner, 1)
+		#			utils.makeUnit(iWorker, iOwner, tCity, 1)
 					
 				
 		# Leoreth: free defender and worker for cities founded by American Pioneer in North America
+		#MacAurther TODO: tie to the Pioneer unit somehow?
 		if iOwner == iAmerica:
 			if city.getRegionID() in [rUnitedStates, rCanada, rAlaska]:
 				utils.createGarrisons(tCity, iOwner, 1)

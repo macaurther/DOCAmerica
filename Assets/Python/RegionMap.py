@@ -122,61 +122,67 @@ tRegionMap = (
 tSpreadFactors = (
 # Judaism
 {
-	iMinority :	[rEgypt, rMesopotamia, rPersia, rAnatolia, rBalkans, rItaly, rIberia, rEurope, rRussia, rBritain, rUnitedStates],
+	iHistorical : 	[rNewYork],
+	iPeriphery :	[rNewJersey, rMassachusetts, rMaryland],
+	iMinority :		[rCalifornia, rPennsylvania, rIllinois, rFlorida, rNevada, rConnecticut, rRhodeIsland, rMaine, rVermont, rDelaware, 
+					rVirginia, rOhio, rMissouri, rMinnesota, rGeorgia, rColorado, rArizona, rOregon, rWashington],
 },
 # Orthodoxy
 {
-	iCore :		[rRussia, rEthiopia],
-	iHistorical : 	[rBalkans, rAnatolia, rMesopotamia, rEgypt, rSiberia],
-	iPeriphery : 	[rMaghreb, rItaly, rPersia, rAlaska],
-	iMinority :	[rCentralAsia],
+	# iHistorical :	[rAlaska],	#MacAurther TODO: Add Alaska Region
+	iPeriphery :	[rNewYork, rPennsylvania, rMaryland],
+	iMinority :		[rMassachusetts, rConnecticut, rRhodeIsland, rNewHampshire, rIndiana, rMichigan, rVirginia, rOhio, rIllinois, rMissouri, 
+					rMinnesota, rGeorgia, rFlorida, rColorado, rArizona, rNevada, rCalifornia, rOregon, rWashington, rTennessee, 
+					rLouisiana, rTexas, rNewMexico],
 },
 # Catholicism
 {
-	iCore :		[rEurope, rItaly, rIberia],
-	iHistorical :	[rBritain, rScandinavia, rCanada, rAlaska, rUnitedStates, rCaribbean, rMesoamerica, rColombia, rPeru, rBrazil, rArgentina, rSouthAfrica],
-	iPeriphery :	[rBalkans, rAustralia, rOceania, rWestAfrica],
+	iCore :			[rTexas, rCalifornia, rNewMexico, rLouisiana],
+	iHistorical :	[rArizona, rNevada, rColorado, rFlorida, rNewYork, rConnecticut, rNewJersey, rMassachusetts, rPennsylvania, rNorthDakota, 
+					rSouthDakota, rMontana],
+	iPeriphery :	[rMichigan, rWisconsin, rMinnesota, rWashington],
+	iMinority :		[rMissouri, rIllinois, rOhio, rKansas, rNebraska, rIdaho, rOregon],
 },
 # Protestantism
 {
-	iCore :		[rBritain, rEurope, rScandinavia, rUnitedStates],
-	iHistorical :	[rCanada, rAlaska, rAustralia],
-	iPeriphery :	[rOceania, rSouthAfrica],
+	#MacAurther TODO: Religion Update: Split into Baptism, Pentecostal, Lutheran?
+	iCore :			[rVirginia, rWestVirginia, rKentucky, rMissouri, rNorthCarolina, rTennessee, rArkansas, rOklahoma, rSouthCarolina, rGeorgia,
+					rAlabama, rMississippi],
+	iHistorical :	[rMaine, rPennsylvania, rMaryland, rOhio, rIndiana, rMichigan, rIllinois, rIowa, rMinnesota, rNorthDakota,
+					rSouthDakota, rMontana, rWashington, rOregon, rTexas, rLouisiana, rFlorida],
+	iPeriphery :	[rDelaware, rNewYork, rNewMexico, rColorado, rWyoming, rIdaho, rCalifornia],
+	iMinority :		[rArizona, rNevada, rVermont, rNewHampshire, rMassachusetts, rConnecticut, rRhodeIsland],
 },
+#MacAurther TODO: Religion Update: Mormonism
+# Mormonism
+#{
+#	iCore :			[rUtah, rIdaho],
+#	iPeriphery :	[rArizona, rNevada, rMontana, rWyoming],
+#},
+#MacAurther TODO: Religion Update: Figure out how to best represent Islam, Hiduism, Buddhism (Confucianism, Taoism, Zoroastrianism not to be included)
 # Islam
 {
-	iCore : 	[rArabia, rMesopotamia, rEgypt],
-	iHistorical : 	[rPersia, rMaghreb, rCentralAsia, rIndia, rIndonesia, rWestAfrica],
-	iPeriphery : 	[rEthiopia, rItaly, rIberia, rAnatolia, rBalkans, rDeccan],
-	iMinority : 	[rRussia, rSiberia],
+	iMinority : 	[],
 },
 # Hinduism
 {
-	iCore : 	[rIndia, rDeccan],
-	iHistorical : 	[rIndochina, rIndonesia],
+	iMinority :	[],
 },
 # Buddhism
 {
-	iCore : 	[rIndia, rTibet, rIndochina],
-	iHistorical : 	[rCentralAsia, rChina, rManchuria, rKorea, rJapan, rIndonesia],
-	iMinority :	[rPersia],
+	iMinority :	[],
 },
+#MacAurther TODO: Delete these three
 # Confucianism
 {
-	iCore : 	[rChina, rManchuria],
-	iHistorical :	[rKorea],
-	iPeriphery : 	[rCentralAsia, rTibet],
-	iMinority : 	[rJapan, rIndonesia, rIndochina, rAustralia],
+	iMinority :	[],
 },
 # Taoism
 {
-	iCore : 	[rChina],
-	iHistorical : 	[rManchuria],
-	iPeriphery : 	[rTibet, rCentralAsia],
+	iMinority :	[],
 },
 # Zoroastrianism
 {
-	iCore :		[rPersia],
-	iMinority : 	[rIndia],
+	iMinority :	[],
 },
 )

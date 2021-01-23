@@ -6959,8 +6959,8 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 	}
 
 	// Leoreth: special wonder effects
-	CvCity* pLoopCity;
-	int iLoop;
+	//CvCity* pLoopCity;
+	//int iLoop;
 
 	// World Trade Center
 	if (eBuilding == WORLD_TRADE_CENTER)
@@ -8311,10 +8311,10 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 			if (eReligion == (ReligionTypes)PROTESTANTISM)
 			{
 				int iRegion = pLoopCity->getRegionID();
-				if (iRegion != REGION_BRITAIN || iRegion != REGION_IBERIA || iRegion != REGION_ITALY || iRegion != REGION_BALKANS || iRegion != REGION_EUROPE || iRegion != REGION_SCANDINAVIA || iRegion != REGION_RUSSIA)
+				/*if (iRegion != REGION_BRITAIN || iRegion != REGION_IBERIA || iRegion != REGION_ITALY || iRegion != REGION_BALKANS || iRegion != REGION_EUROPE || iRegion != REGION_SCANDINAVIA || iRegion != REGION_RUSSIA)
 				{
 					iValue = 5;
-				}
+				}*/
 
 				int iCapitalRegion = getCapitalCity()->getRegionID();
 				if (iRegion == iCapitalRegion)
@@ -24753,7 +24753,8 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 	bool bColonialism = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_TERRITORY) == CIVIC_COLONIALISM;
 	bool bNewWorld = false;
 
-	CvCity* pCapital = GET_PLAYER(ePlayer).getCapitalCity();
+	//MacAurther TODO
+	/*CvCity* pCapital = GET_PLAYER(ePlayer).getCapitalCity();
 	if (pCapital != NULL)
 	{
 		switch (pCapital->getRegionID())
@@ -24772,7 +24773,7 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 			default:
 				bNewWorld = true;
 		}
-	}
+	}*/
 
 	// don't buy when not running Colonialism
 	if (!bColonialism && !bNewWorld)
@@ -24886,7 +24887,8 @@ int CvPlayer::countSlaveCities() const
 	
 	int iNumSlaveCities = 0;
 
-	int iLoop, rid;
+	//MacAurther TODO
+	/*int iLoop, rid;
 	CvCity* pLoopCity;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
@@ -24895,7 +24897,7 @@ int CvPlayer::countSlaveCities() const
 		{
 			iNumSlaveCities++;
 		}
-	}
+	}*/
 
 	return iNumSlaveCities;
 }
@@ -25587,8 +25589,8 @@ bool CvPlayer::canBuySlaves() const
 	{
 		return false;
 	}
-
-	if (isSlavery())
+	//MacAurther TODO
+	/*if (isSlavery())
 	{
 		if (getNumCities() > 0)
 		{
@@ -25609,7 +25611,7 @@ bool CvPlayer::canBuySlaves() const
 					;
 			}
 		}
-	}
+	}*/
 
 	if (countColonies() > 0) 
 	{

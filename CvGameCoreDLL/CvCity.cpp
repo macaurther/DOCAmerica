@@ -2020,57 +2020,59 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 
 		switch (iCapitalRegion)
 		{
-			case REGION_BRITAIN:
-			case REGION_IBERIA:
-			case REGION_ITALY:
-			case REGION_BALKANS:
-			case REGION_SCANDINAVIA:
-			case REGION_EUROPE:
-			case REGION_RUSSIA:
-				iCapitalContinent = 0;	// Europe = 0
+			case REGION_VIRGINIA:
+			case REGION_MARYLAND:
+			case REGION_NORTH_CAROLINA:
+			case REGION_SOUTH_CAROLINA:
+			case REGION_DELAWARE:
+			case REGION_GEORGIA:
+			case REGION_KENTUCKY:
+			case REGION_TENNESSEE:
+			case REGION_MISSISSIPPI:
+			case REGION_LOUISIANA:
+			case REGION_ALABAMA:
+			case REGION_MISSOURI:
+			case REGION_ARKANSAS:
+			case REGION_FLORIDA:
+			case REGION_TEXAS:
+			case REGION_WEST_VIRGINIA:
+			case REGION_KANSAS:
+			case REGION_OKLAHOMA:
+			case REGION_NEW_MEXICO:
+				iCapitalContinent = 0;	// South = 0
 				break;
-			case REGION_ANATOLIA:
-			case REGION_MESOPOTAMIA:
-			case REGION_ARABIA:
-			case REGION_EGYPT:
-			case REGION_MAGHREB:
-			case REGION_PERSIA:
-				iCapitalContinent = 1; // Middle East = 1
+			case REGION_MASSACHUSETTS:
+			case REGION_NEW_HAMPSHIRE:
+			case REGION_CONNECTICUT:
+			case REGION_RHODE_ISLAND:
+			case REGION_NEW_JERSEY:
+			case REGION_NEW_YORK:
+			case REGION_PENNSYLVANIA:
+			case REGION_VERMONT:
+			case REGION_OHIO:
+			case REGION_INDIANA:
+			case REGION_ILLINOIS:
+			case REGION_MAINE:
+			case REGION_MICHIGAN:
+			case REGION_IOWA:
+			case REGION_WISCONSIN:
+			case REGION_MINNESOTA:
+			case REGION_NEBRASKA:
+			case REGION_NORTH_DAKOTA:
+			case REGION_SOUTH_DAKOTA:
+				iCapitalContinent = 1;	// North = 1
 				break;
-			case REGION_INDIA:
-			case REGION_DECCAN:
-			case REGION_INDOCHINA:
-			case REGION_INDONESIA:
-			case REGION_CHINA:
-			case REGION_KOREA:
-			case REGION_JAPAN:
-			case REGION_MANCHURIA:
-			case REGION_TIBET:
-			case REGION_CENTRAL_ASIA:
-			case REGION_SIBERIA:
-				iCapitalContinent = 2;	// East Asia = 2
-				break;
-			case REGION_AUSTRALIA:
-			case REGION_OCEANIA:
-				iCapitalContinent = 3;	// Australia = 3
-				break;
-			case REGION_ETHIOPIA:
-			case REGION_WEST_AFRICA:
-			case REGION_SOUTH_AFRICA:
-				iCapitalContinent = 4;	// Africa = 4;
-				break;
-			case REGION_CANADA:
-			case REGION_ALASKA:
-			case REGION_UNITED_STATES:
-			case REGION_CARIBBEAN:
-			case REGION_MESOAMERICA:
-				iCapitalContinent = 5;	// North America = 5
-				break;
-			case REGION_BRAZIL:
-			case REGION_ARGENTINA:
-			case REGION_PERU:
-			case REGION_COLOMBIA:
-				iCapitalContinent = 6;	// South America = 6
+			case REGION_CALIFORNIA:
+			case REGION_OREGON:
+			case REGION_NEVADA:
+			case REGION_COLORADO:
+			case REGION_MONTANA:
+			case REGION_WASHINGTON:
+			case REGION_IDAHO:
+			case REGION_WYOMING:
+			case REGION_UTAH:
+			case REGION_ARIZONA:
+				iCapitalContinent = 2;	// West = 2
 				break;
 			default:
 				//MacAurther TODO: Do Regions
@@ -2081,57 +2083,59 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 		
 		switch (iRegion)
 		{
-			case REGION_BRITAIN:
-			case REGION_IBERIA:
-			case REGION_ITALY:
-			case REGION_BALKANS:
-			case REGION_SCANDINAVIA:
-			case REGION_EUROPE:
-			case REGION_RUSSIA:
-				iCityContinent = 0;	// Europe = 0
+			case REGION_VIRGINIA:
+			case REGION_MARYLAND:
+			case REGION_NORTH_CAROLINA:
+			case REGION_SOUTH_CAROLINA:
+			case REGION_DELAWARE:
+			case REGION_GEORGIA:
+			case REGION_KENTUCKY:
+			case REGION_TENNESSEE:
+			case REGION_MISSISSIPPI:
+			case REGION_LOUISIANA:
+			case REGION_ALABAMA:
+			case REGION_MISSOURI:
+			case REGION_ARKANSAS:
+			case REGION_FLORIDA:
+			case REGION_TEXAS:
+			case REGION_WEST_VIRGINIA:
+			case REGION_KANSAS:
+			case REGION_OKLAHOMA:
+			case REGION_NEW_MEXICO:
+				iCapitalContinent = 0;	// South = 0
 				break;
-			case REGION_ANATOLIA:
-			case REGION_MESOPOTAMIA:
-			case REGION_ARABIA:
-			case REGION_EGYPT:
-			case REGION_MAGHREB:
-			case REGION_PERSIA:
-				iCityContinent = 1; // Middle East = 1
+			case REGION_MASSACHUSETTS:
+			case REGION_NEW_HAMPSHIRE:
+			case REGION_CONNECTICUT:
+			case REGION_RHODE_ISLAND:
+			case REGION_NEW_JERSEY:
+			case REGION_NEW_YORK:
+			case REGION_PENNSYLVANIA:
+			case REGION_VERMONT:
+			case REGION_OHIO:
+			case REGION_INDIANA:
+			case REGION_ILLINOIS:
+			case REGION_MAINE:
+			case REGION_MICHIGAN:
+			case REGION_IOWA:
+			case REGION_WISCONSIN:
+			case REGION_MINNESOTA:
+			case REGION_NEBRASKA:
+			case REGION_NORTH_DAKOTA:
+			case REGION_SOUTH_DAKOTA:
+				iCapitalContinent = 1;	// North = 1
 				break;
-			case REGION_INDIA:
-			case REGION_DECCAN:
-			case REGION_INDOCHINA:
-			case REGION_INDONESIA:
-			case REGION_CHINA:
-			case REGION_KOREA:
-			case REGION_JAPAN:
-			case REGION_MANCHURIA:
-			case REGION_TIBET:
-			case REGION_CENTRAL_ASIA:
-			case REGION_SIBERIA:
-				iCityContinent = 2;	// East Asia = 2
-				break;
-			case REGION_AUSTRALIA:
-			case REGION_OCEANIA:
-				iCityContinent = 3;	// Australia = 3
-				break;
-			case REGION_ETHIOPIA:
-			case REGION_WEST_AFRICA:
-			case REGION_SOUTH_AFRICA:
-				iCityContinent = 4;	// Africa = 4;
-				break;
-			case REGION_CANADA:
-			case REGION_ALASKA:
-			case REGION_UNITED_STATES:
-			case REGION_CARIBBEAN:
-			case REGION_MESOAMERICA:
-				iCityContinent = 5;	// North America = 5
-				break;
-			case REGION_BRAZIL:
-			case REGION_ARGENTINA:
-			case REGION_PERU:
-			case REGION_COLOMBIA:
-				iCityContinent = 6;	// South America = 6
+			case REGION_CALIFORNIA:
+			case REGION_OREGON:
+			case REGION_NEVADA:
+			case REGION_COLORADO:
+			case REGION_MONTANA:
+			case REGION_WASHINGTON:
+			case REGION_IDAHO:
+			case REGION_WYOMING:
+			case REGION_UTAH:
+			case REGION_ARIZONA:
+				iCapitalContinent = 2;	// West = 2
 				break;
 			default:
 				//MacAurther TODO: Do Regions
@@ -2141,22 +2145,10 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 
 		bool bException = false;
 
-		if (iCapitalRegion == REGION_RUSSIA && iRegion == REGION_SIBERIA)
+		/*if (iCapitalRegion == REGION_RUSSIA && iRegion == REGION_SIBERIA)
 		{
 			bException = true;
-		}
-		else if ((iCapitalRegion == REGION_ANATOLIA || iCapitalRegion == REGION_BALKANS) && (iCityContinent == 0 || iCityContinent == 1))
-		{
-			bException = true;
-		}
-		else if ((iCapitalRegion == REGION_IBERIA && iRegion == REGION_MAGHREB) || (iCapitalRegion == REGION_MAGHREB && iRegion == REGION_IBERIA))
-		{
-			bException = true;
-		}
-		else if ((iCapitalRegion == REGION_CENTRAL_ASIA && iRegion == REGION_PERSIA) || (iCapitalRegion == REGION_PERSIA && iRegion == REGION_CENTRAL_ASIA))
-		{
-			bException = true;
-		}
+		}*/
 
 		if (iCapitalContinent != iCityContinent && !bException)
 		{
@@ -4631,7 +4623,8 @@ void CvCity::updateArtStyleType()
 
 	ArtStyleTypes eNewArtStyle = GET_PLAYER(eHighestCulture).getArtStyleType();
 
-	if (bECS)
+	//MacAurther TODO: Dynamic styles? Probably not
+	/*if (bECS)
 	{
 		if (eHighestCulture == NATIVE)
 		{
@@ -4819,7 +4812,7 @@ void CvCity::updateArtStyleType()
 				break;
 			}
 		}
-	}
+	}*/
 
 	if (m_eArtStyle != eNewArtStyle)
 	{
@@ -17569,12 +17562,6 @@ void CvCity::getBuildQueue(std::vector<std::string>& astrQueue) const
 int CvCity::getRegionID() const
 {
 	return plot()->getRegionID();
-}
-
-//Leoreth: to protect Middle Eastern cities from repeated invasions
-bool CvCity::isMiddleEast() const
-{
-	return (getRegionID() == REGION_PERSIA || getRegionID() == REGION_MESOPOTAMIA || getRegionID() == REGION_ANATOLIA || (getX_INLINE() == 68 && getY_INLINE() == 45));
 }
 
 int CvCity::getSpecialistGoodHappiness() const

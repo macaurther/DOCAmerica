@@ -13985,7 +13985,9 @@ int CvUnit::getOriginalArtStyle(int regionID)
 {
 	int id = regionID;
 
-	if (id == REGION_ALASKA || id == REGION_CANADA || id == REGION_UNITED_STATES || id == REGION_BRITAIN)
+	//MacAurther TODO:
+
+	/*if (id == REGION_ALASKA || id == REGION_CANADA || id == REGION_UNITED_STATES || id == REGION_BRITAIN)
 	{
 		return GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)ENGLAND).getCivilizationType()).getUnitArtStyleType();
 	}
@@ -14000,9 +14002,10 @@ int CvUnit::getOriginalArtStyle(int regionID)
 	else if (id == REGION_EUROPE)
 	{
 		return GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)INDEPENDENT).getCivilizationType()).getUnitArtStyleType();
-	}
+	}*/
 
-	return GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)INDEPENDENT).getCivilizationType()).getUnitArtStyleType();
+	return GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)ENGLAND).getCivilizationType()).getUnitArtStyleType();
+	//return GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)INDEPENDENT).getCivilizationType()).getUnitArtStyleType();
 }
 
 // edead: start Relic trade based on Afforess' Advanced Diplomacy (Leoreth)
