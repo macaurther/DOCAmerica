@@ -255,6 +255,7 @@ BeginMap
 EndMap
 
 ### Plot Info ###
+### Plot Info ###
 BeginPlot
 	x=0,y=0
 	TerrainType=TERRAIN_OCEAN
@@ -30115,16 +30116,19 @@ BeginPlot
 	x=70,y=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=4
@@ -30578,27 +30582,32 @@ BeginPlot
 	x=71,y=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=1
 	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=5
@@ -31041,33 +31050,42 @@ BeginPlot
 	x=72,y=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=3
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=4
 	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=5
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=6
@@ -31491,6 +31509,7 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=73,y=1
@@ -31499,26 +31518,40 @@ BeginPlot
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=2
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Mexico City
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=3
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=73,y=5
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=73,y=6
@@ -31932,32 +31965,41 @@ BeginPlot
 	x=74,y=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=74,y=1
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=2
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=4
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=74,y=5
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=74,y=6
@@ -32370,27 +32412,32 @@ BeginPlot
 	x=75,y=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=75,y=1
 	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=75,y=2
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=75,y=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=75,y=4
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=75,y=5
@@ -32817,16 +32864,19 @@ BeginPlot
 	x=76,y=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=76,y=2
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=76,y=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=76,y=4
@@ -34590,16 +34640,19 @@ BeginPlot
 	x=80,y=11
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=12
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=13
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=14
@@ -35026,11 +35079,13 @@ BeginPlot
 	x=81,y=10
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=11
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=12
@@ -35039,18 +35094,21 @@ BeginPlot
 	BonusType=BONUS_MILLET
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=13
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=14
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=15
@@ -35480,12 +35538,15 @@ BeginPlot
 	x=82,y=10
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=11
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=82,y=12
@@ -35494,18 +35555,23 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=82,y=13
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=82,y=14
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=15
@@ -35910,12 +35976,14 @@ BeginPlot
 	x=83,y=5
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=6
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=7
@@ -35923,6 +35991,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=8
@@ -35931,17 +36000,20 @@ BeginPlot
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=9
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=10
 	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=11
@@ -35949,24 +36021,37 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=83,y=12
 	isNOfRiver
 	RiverWEDirection=1
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=San Antonio
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=83,y=13
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=83,y=14
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=15
@@ -36367,12 +36452,15 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=6
 	BonusType=BONUS_CITRUS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=7
@@ -36382,17 +36470,22 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=8
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=9
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=10
@@ -36400,6 +36493,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=11
@@ -36408,11 +36502,15 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=12
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=13
@@ -36421,6 +36519,8 @@ BeginPlot
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=14
@@ -36429,6 +36529,7 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=15
@@ -36436,6 +36537,7 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=16
@@ -36845,12 +36947,20 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=85,y=7
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Corpus Christi
+		CityPopulation=3
+	EndCity
 	TeamReveal=0,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=85,y=8
@@ -36860,6 +36970,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=85,y=9
@@ -36868,6 +36979,7 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=10
@@ -36875,12 +36987,14 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=11
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=12
@@ -36889,6 +37003,7 @@ BeginPlot
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=13
@@ -36896,11 +37011,13 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=14
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=15
@@ -37303,6 +37420,7 @@ BeginPlot
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=86,y=7
@@ -37310,6 +37428,7 @@ BeginPlot
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=86,y=8
@@ -37317,6 +37436,7 @@ BeginPlot
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=86,y=9
@@ -38261,11 +38381,13 @@ BeginPlot
 	x=88,y=6
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=88,y=7
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=88,y=8
@@ -43883,18 +44005,6 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_MILITIA, UnitOwner=1, (King of France)
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_ATTACK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER, UnitOwner=1, (King of France)
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_SETTLE
-	EndUnit
 	TeamReveal=0,1,
 EndPlot
 BeginPlot
@@ -45636,31 +45746,37 @@ BeginPlot
 	x=103,y=72
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=78
@@ -46078,53 +46194,55 @@ BeginPlot
 	x=104,y=71
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=72
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=73
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=104,y=74
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=104,y=75
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=104,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=104,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=104,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=104,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=105,y=0
@@ -46534,18 +46652,20 @@ BeginPlot
 	x=105,y=71
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=72
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=105,y=73
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=105,y=74
@@ -46553,38 +46673,40 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=105,y=75
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=105,y=76
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=105,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=105,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=105,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=106,y=0
@@ -46979,44 +47101,60 @@ BeginPlot
 	x=106,y=70
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=106,y=72
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=106,y=73
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=74
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_MUSKETEER, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Seville
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,1,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=75
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=76
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=77
@@ -47026,7 +47164,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=78
@@ -47034,13 +47173,14 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=107,y=0
@@ -47450,32 +47590,35 @@ BeginPlot
 	x=107,y=70
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=107,y=72
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=107,y=73
 	ImprovementType=IMPROVEMENT_MINE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=74
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=75
@@ -47483,7 +47626,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=76
@@ -47494,7 +47638,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=77
@@ -47503,19 +47648,32 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_MUSKETEER, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Lisbon
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,1,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=108,y=0
@@ -47927,25 +48085,29 @@ BeginPlot
 	x=108,y=70
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=108,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=72
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=73
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=74
@@ -47954,7 +48116,8 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=75
@@ -47965,7 +48128,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=76
@@ -47976,27 +48140,30 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=77
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=109,y=0
@@ -48413,24 +48580,39 @@ BeginPlot
 	x=109,y=69
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=70
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=72
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_MUSKETEER, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Valencia
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,1,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=73
@@ -48439,7 +48621,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=74
@@ -48448,7 +48631,20 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_MUSKETEER, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Madrid
+		CityPopulation=3
+		BuildingType=BUILDING_PALACE
+	EndCity
+	TeamReveal=0,1,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=75
@@ -48456,33 +48652,34 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=76
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=109,y=77
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=109,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=109,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=110,y=0
@@ -48874,37 +49071,42 @@ BeginPlot
 	x=110,y=68
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=69
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=70
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=110,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=72
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=73
 	ImprovementType=IMPROVEMENT_MINE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=74
@@ -48912,14 +49114,16 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=75
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=76
@@ -48927,27 +49131,29 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=110,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=111,y=0
@@ -49346,18 +49552,20 @@ BeginPlot
 	x=111,y=68
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=111,y=70
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=71
@@ -49365,7 +49573,8 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=72
@@ -49373,7 +49582,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=73
@@ -49382,7 +49592,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=111,y=74
@@ -49390,40 +49600,54 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_MINE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=111,y=75
 	ImprovementType=IMPROVEMENT_WINDMILL
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=76
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_MUSKETEER, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Bilbao
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,1,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=77
 	ImprovementType=IMPROVEMENT_WINDMILL
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=111,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=112,y=0
@@ -49835,6 +50059,7 @@ BeginPlot
 	x=112,y=67
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=112,y=68
@@ -49846,39 +50071,53 @@ BeginPlot
 	x=112,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=112,y=70
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=112,y=71
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_MUSKETEER, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=Barcelona
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,1,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=112,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=112,y=73
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=112,y=74
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=112,y=75
@@ -49886,13 +50125,15 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=112,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=112,y=77
@@ -49900,19 +50141,20 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=112,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=112,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=113,y=0
@@ -50321,13 +50563,14 @@ BeginPlot
 	x=113,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=113,y=70
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=113,y=71
@@ -50335,56 +50578,61 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=113,y=72
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=113,y=73
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=113,y=74
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=113,y=75
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=113,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=113,y=77
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=113,y=78
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=113,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=114,y=0
@@ -50783,13 +51031,14 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=114,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=70
@@ -50797,13 +51046,15 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=72
@@ -50811,7 +51062,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=114,y=73
@@ -50819,14 +51070,15 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=114,y=74
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=75
@@ -50835,7 +51087,19 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=1, (King of France)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=1, (King of France)
+		CityName=Bordeaux
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,1,
+	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=76
@@ -50843,13 +51107,14 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
 EndPlot
 BeginPlot
 	x=114,y=78
@@ -51259,14 +51524,27 @@ BeginPlot
 	x=115,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=70
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=1, (King of France)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=1, (King of France)
+		CityName=Marseilles
+		CityPopulation=3
+	EndCity
+	TeamReveal=0,1,
+	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=71
@@ -51278,7 +51556,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=72
@@ -51287,7 +51566,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=0,1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=73
@@ -51297,6 +51577,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=74
@@ -51307,6 +51588,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=75
@@ -51317,12 +51599,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=76
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=77
@@ -51754,12 +52038,14 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=70
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=71
@@ -51767,6 +52053,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=72
@@ -51778,6 +52065,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=73
@@ -51788,7 +52076,19 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=1, (King of France)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=1, (King of France)
+		CityName=Lyon
+		CityPopulation=3
+	EndCity
 	TeamReveal=1,
+	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=74
@@ -51798,6 +52098,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=75
@@ -52274,6 +52575,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=73
@@ -52281,6 +52583,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=74
@@ -52290,6 +52593,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=75
@@ -52299,18 +52603,21 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=76
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=78
@@ -52769,6 +53076,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=118,y=74
@@ -52777,7 +53085,20 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=1, (King of France)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=1, (King of France)
+		CityName=Paris
+		CityPopulation=3
+		BuildingType=BUILDING_PALACE
+	EndCity
 	TeamReveal=1,
+	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=118,y=75
@@ -52787,19 +53108,33 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=118,y=76
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=1, (King of France)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=1, (King of France)
+		CityName=Le Harve
+		CityPopulation=3
+	EndCity
 	TeamReveal=1,
+	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=118,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=118,y=78
@@ -52906,6 +53241,7 @@ BeginPlot
 	FeatureType=FEATURE_MARSH, FeatureVariety=3
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=119,y=16
@@ -52919,12 +53255,14 @@ BeginPlot
 	FeatureType=FEATURE_MARSH, FeatureVariety=3
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=119,y=18
 	FeatureType=FEATURE_MARSH, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=119,y=19
@@ -53270,6 +53608,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=119,y=74
@@ -53277,37 +53616,41 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=119,y=75
 	ImprovementType=IMPROVEMENT_VILLAGE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=119,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=119,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=119,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=119,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=0
@@ -53402,6 +53745,7 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=120,y=16
@@ -53409,17 +53753,20 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=120,y=17
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=120,y=18
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=120,y=19
@@ -53778,32 +54125,32 @@ BeginPlot
 	FeatureType=FEATURE_MARSH, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=78
 	ImprovementType=IMPROVEMENT_MINE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=121,y=0
@@ -53906,24 +54253,20 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=121,y=16
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_MILITIA, UnitOwner=0, (King of Spain)
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_ATTACK
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER, UnitOwner=0, (King of Spain)
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_SETTLE
-	EndUnit
+	BeginCity
+		CityOwner=0, (King of Spain)
+		CityName=San Agust&#237;n
+		CityPopulation=3
+	EndCity
 	TeamReveal=0,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=121,y=17
@@ -53931,6 +54274,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=121,y=18
@@ -54335,7 +54679,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=121,y=76
@@ -54343,13 +54687,15 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=121,y=77
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=121,y=78
@@ -54358,7 +54704,8 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=121,y=79
@@ -54366,7 +54713,7 @@ BeginPlot
 	RiverWEDirection=3
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=122,y=0
@@ -54468,18 +54815,21 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=122,y=16
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=122,y=17
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=122,y=18
@@ -54863,7 +55213,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=122,y=75
@@ -54871,34 +55221,48 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=122,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=122,y=77
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=2, (King of England)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=2, (King of England)
+		CityName=Dublin
+		CityPopulation=3
+	EndCity
+	TeamReveal=1,2,
+	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
 	x=122,y=78
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=122,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=0
@@ -55373,13 +55737,13 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=74
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=75
@@ -55387,19 +55751,21 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=123,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=123,y=78
@@ -55408,7 +55774,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=123,y=79
@@ -55416,7 +55783,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=0
@@ -55531,6 +55898,7 @@ BeginPlot
 	x=124,y=17
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=124,y=18
@@ -55861,56 +56229,59 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=72
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=73
 	ImprovementType=IMPROVEMENT_VILLAGE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=74
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=124,y=75
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=124,y=76
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=124,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=0
@@ -56348,44 +56719,58 @@ BeginPlot
 	x=125,y=73
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=74
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=125,y=75
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=2, (King of England)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=2, (King of England)
+		CityName=Plymouth
+		CityPopulation=3
+	EndCity
+	TeamReveal=1,2,
+	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
 	x=125,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=125,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=78
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=0
@@ -56805,7 +57190,7 @@ BeginPlot
 	x=126,y=70
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=71
@@ -56818,6 +57203,7 @@ BeginPlot
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=126,y=73
@@ -56825,6 +57211,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=126,y=74
@@ -56836,13 +57223,15 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=126,y=75
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=126,y=76
@@ -56851,25 +57240,26 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=126,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=78
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=127,y=0
@@ -57292,6 +57682,7 @@ BeginPlot
 	x=127,y=70
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=127,y=71
@@ -57304,6 +57695,7 @@ BeginPlot
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=127,y=73
@@ -57313,18 +57705,19 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA, UnitOwner=2, (King of England)
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=2, (King of England)
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER, UnitOwner=2, (King of England)
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_SETTLE
-	EndUnit
+	BeginCity
+		CityOwner=2, (King of England)
+		CityName=London
+		CityPopulation=3
+		BuildingType=BUILDING_PALACE
+	EndCity
 	TeamReveal=1,2,
+	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
 	x=127,y=74
@@ -57334,6 +57727,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=127,y=75
@@ -57342,7 +57736,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=127,y=76
@@ -57352,7 +57747,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=127,y=77
@@ -57360,19 +57756,19 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=127,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=127,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=128,y=0
@@ -57780,6 +58176,7 @@ BeginPlot
 	x=128,y=70
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=128,y=71
@@ -57794,6 +58191,7 @@ BeginPlot
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=73
@@ -57801,6 +58199,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=74
@@ -57809,13 +58208,26 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=75
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=2, (King of England)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=2, (King of England)
+		CityName=Manchester
+		CityPopulation=3
+	EndCity
+	TeamReveal=1,2,
+	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=76
@@ -57823,27 +58235,30 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=129,y=0
@@ -58283,33 +58698,48 @@ BeginPlot
 	x=129,y=73
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=129,y=74
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=129,y=75
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=129,y=76
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=129,y=77
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
+	BeginUnit
+		UnitType=UNIT_ARQUEBUSIER, UnitOwner=2, (King of England)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_ATTACK
+	EndUnit
+	BeginCity
+		CityOwner=2, (King of England)
+		CityName=Edinbourgh
+		CityPopulation=3
+	EndCity
+	TeamReveal=1,2,
+	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
 	x=129,y=78
@@ -58318,7 +58748,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=129,y=79
@@ -58327,7 +58758,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=130,y=0
@@ -58736,53 +59167,60 @@ BeginPlot
 	x=130,y=71
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=72
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=75
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=130,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=130,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=130,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
+	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=130,y=79
 	ImprovementType=IMPROVEMENT_MINE
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=131,y=0
@@ -59207,11 +59645,13 @@ BeginPlot
 	x=131,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=76
@@ -59219,6 +59659,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_WHALING_BOATS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=77
@@ -59226,16 +59667,19 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_PASTURE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=79
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=0
@@ -59660,26 +60104,31 @@ BeginPlot
 	x=132,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=133,y=0
@@ -66955,1755 +67404,2106 @@ EndPlot
 BeginSign
 	plotX=133
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=Salisbury
 EndSign
 BeginSign
 	plotX=136
 	plotY=55
+	playerType=0, (King of Spain)
 	caption=New York
 EndSign
 BeginSign
 	plotX=132
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Philadelphia
 EndSign
 BeginSign
 	plotX=136
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=Atlantic City
 EndSign
 BeginSign
 	plotX=134
 	plotY=51
+	playerType=0, (King of Spain)
 	caption=Trenton
 EndSign
 BeginSign
 	plotX=135
 	plotY=53
+	playerType=0, (King of Spain)
 	caption=Newark
 EndSign
 BeginSign
 	plotX=122
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Pittsburgh
 EndSign
 BeginSign
 	plotX=120
 	plotY=53
+	playerType=0, (King of Spain)
 	caption=Erie
 EndSign
 BeginSign
 	plotX=128
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=Washington DC
 EndSign
 BeginSign
 	plotX=132
 	plotY=37
+	playerType=0, (King of Spain)
 	caption=Norfolk
 EndSign
 BeginSign
 	plotX=120
 	plotY=32
+	playerType=0, (King of Spain)
 	caption=Charlotte
 EndSign
 BeginSign
 	plotX=116
 	plotY=31
+	playerType=0, (King of Spain)
 	caption=Asheville
 EndSign
 BeginSign
 	plotX=124
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Charleston
 EndSign
 BeginSign
 	plotX=125
 	plotY=28
+	playerType=0, (King of Spain)
 	caption=Myrtle Beach
 EndSign
 BeginSign
 	plotX=122
 	plotY=28
+	playerType=0, (King of Spain)
 	caption=Columbia
 EndSign
 BeginSign
 	plotX=118
 	plotY=29
+	playerType=0, (King of Spain)
 	caption=Greenville
 EndSign
 BeginSign
 	plotX=121
 	plotY=22
+	playerType=0, (King of Spain)
 	caption=Savannah
 EndSign
 BeginSign
 	plotX=121
 	plotY=19
+	playerType=0, (King of Spain)
 	caption=Brunswick
 EndSign
 BeginSign
 	plotX=117
 	plotY=19
+	playerType=0, (King of Spain)
 	caption=Valdosta
 EndSign
 BeginSign
 	plotX=114
 	plotY=20
+	playerType=0, (King of Spain)
 	caption=Albany
 EndSign
 BeginSign
 	plotX=116
 	plotY=23
+	playerType=0, (King of Spain)
 	caption=Macon
 EndSign
 BeginSign
 	plotX=112
 	plotY=23
+	playerType=0, (King of Spain)
 	caption=Columbus
 EndSign
 BeginSign
 	plotX=118
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Augusta
 EndSign
 BeginSign
 	plotX=113
 	plotY=27
+	playerType=0, (King of Spain)
 	caption=Atlanta
 EndSign
 BeginSign
 	plotX=100
 	plotY=14
+	playerType=0, (King of Spain)
 	caption=New Orleans
 EndSign
 BeginSign
 	plotX=97
 	plotY=15
+	playerType=0, (King of Spain)
 	caption=Baton Rouge
 EndSign
 BeginSign
 	plotX=123
 	plotY=1
+	playerType=0, (King of Spain)
 	caption=Key West
 EndSign
 BeginSign
 	plotX=126
 	plotY=5
+	playerType=0, (King of Spain)
 	caption=Miami
 EndSign
 BeginSign
 	plotX=121
 	plotY=8
+	playerType=0, (King of Spain)
 	caption=Sarasota
 EndSign
 BeginSign
 	plotX=120
 	plotY=11
+	playerType=0, (King of Spain)
 	caption=Tampa
 EndSign
 BeginSign
 	plotX=122
 	plotY=12
+	playerType=0, (King of Spain)
 	caption=Orlando
 EndSign
 BeginSign
 	plotX=120
 	plotY=14
+	playerType=0, (King of Spain)
 	caption=Gainesville
 EndSign
 BeginSign
 	plotX=121
 	plotY=16
+	playerType=0, (King of Spain)
 	caption=Jacksonville
 EndSign
 BeginSign
 	plotX=115
 	plotY=16
+	playerType=0, (King of Spain)
 	caption=Tallahassee
 EndSign
 BeginSign
 	plotX=109
 	plotY=16
+	playerType=0, (King of Spain)
 	caption=Pensacola
 EndSign
 BeginSign
 	plotX=106
 	plotY=17
+	playerType=0, (King of Spain)
 	caption=Mobile
 EndSign
 BeginSign
 	plotX=103
 	plotY=16
+	playerType=0, (King of Spain)
 	caption=Gulfport
 EndSign
 BeginSign
 	plotX=122
 	plotY=6
+	playerType=0, (King of Spain)
 	caption=Fort Myers
 EndSign
 BeginSign
 	plotX=48
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Fresno
 EndSign
 BeginSign
 	plotX=42
 	plotY=44
+	playerType=0, (King of Spain)
 	caption=San Francisco
 EndSign
 BeginSign
 	plotX=45
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=San Jose
 EndSign
 BeginSign
 	plotX=44
 	plotY=46
+	playerType=0, (King of Spain)
 	caption=Oakland
 EndSign
 BeginSign
 	plotX=45
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Sacramento
 EndSign
 BeginSign
 	plotX=42
 	plotY=55
+	playerType=0, (King of Spain)
 	caption=Eureka
 EndSign
 BeginSign
 	plotX=43
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Monterey
 EndSign
 BeginSign
 	plotX=45
 	plotY=36
+	playerType=0, (King of Spain)
 	caption=Santa Maria
 EndSign
 BeginSign
 	plotX=49
 	plotY=33
+	playerType=0, (King of Spain)
 	caption=Los Angeles
 EndSign
 BeginSign
 	plotX=51
 	plotY=28
+	playerType=0, (King of Spain)
 	caption=San Diego
 EndSign
 BeginSign
 	plotX=56
 	plotY=37
+	playerType=0, (King of Spain)
 	caption=Las Vegas
 EndSign
 BeginSign
 	plotX=51
 	plotY=46
+	playerType=0, (King of Spain)
 	caption=Carson City
 EndSign
 BeginSign
 	plotX=50
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Reno
 EndSign
 BeginSign
 	plotX=57
 	plotY=50
+	playerType=0, (King of Spain)
 	caption=Elko
 EndSign
 BeginSign
 	plotX=56
 	plotY=44
+	playerType=0, (King of Spain)
 	caption=Ely
 EndSign
 BeginSign
 	plotX=62
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=Salt Lake City
 EndSign
 BeginSign
 	plotX=85
 	plotY=7
+	playerType=0, (King of Spain)
 	caption=Corpus Christi
 EndSign
 BeginSign
 	plotX=84
 	plotY=15
+	playerType=0, (King of Spain)
 	caption=Austin
 EndSign
 BeginSign
 	plotX=83
 	plotY=12
+	playerType=0, (King of Spain)
 	caption=San Antonio
 EndSign
 BeginSign
 	plotX=89
 	plotY=14
+	playerType=0, (King of Spain)
 	caption=Houston
 EndSign
 BeginSign
 	plotX=89
 	plotY=12
+	playerType=0, (King of Spain)
 	caption=Galveston
 EndSign
 BeginSign
 	plotX=87
 	plotY=22
+	playerType=0, (King of Spain)
 	caption=Dallas
 EndSign
 BeginSign
 	plotX=84
 	plotY=21
+	playerType=0, (King of Spain)
 	caption=Fort Worth
 EndSign
 BeginSign
 	plotX=83
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Wichita Falls
 EndSign
 BeginSign
 	plotX=78
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Lubbock
 EndSign
 BeginSign
 	plotX=78
 	plotY=30
+	playerType=0, (King of Spain)
 	caption=Amarillo
 EndSign
 BeginSign
 	plotX=76
 	plotY=19
+	playerType=0, (King of Spain)
 	caption=Odessa
 EndSign
 BeginSign
 	plotX=70
 	plotY=20
+	playerType=0, (King of Spain)
 	caption=El Paso
 EndSign
 BeginSign
 	plotX=79
 	plotY=33
+	playerType=0, (King of Spain)
 	caption=Guymon
 EndSign
 BeginSign
 	plotX=88
 	plotY=32
+	playerType=0, (King of Spain)
 	caption=Tulsa
 EndSign
 BeginSign
 	plotX=85
 	plotY=30
+	playerType=0, (King of Spain)
 	caption=Oklahoma City
 EndSign
 BeginSign
 	plotX=92
 	plotY=31
+	playerType=0, (King of Spain)
 	caption=Fayetteville
 EndSign
 BeginSign
 	plotX=95
 	plotY=28
+	playerType=0, (King of Spain)
 	caption=Little Rock
 EndSign
 BeginSign
 	plotX=95
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Pine Bluff
 EndSign
 BeginSign
 	plotX=99
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Greenville
 EndSign
 BeginSign
 	plotX=101
 	plotY=27
+	playerType=0, (King of Spain)
 	caption=Oxford
 EndSign
 BeginSign
 	plotX=103
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Tupelo
 EndSign
 BeginSign
 	plotX=98
 	plotY=18
+	playerType=0, (King of Spain)
 	caption=Natchez
 EndSign
 BeginSign
 	plotX=102
 	plotY=18
+	playerType=0, (King of Spain)
 	caption=Hattiesburg
 EndSign
 BeginSign
 	plotX=103
 	plotY=22
+	playerType=0, (King of Spain)
 	caption=Meridian
 EndSign
 BeginSign
 	plotX=106
 	plotY=23
+	playerType=0, (King of Spain)
 	caption=Tuscaloosa
 EndSign
 BeginSign
 	plotX=108
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Birmingham
 EndSign
 BeginSign
 	plotX=108
 	plotY=28
+	playerType=0, (King of Spain)
 	caption=Huntsville
 EndSign
 BeginSign
 	plotX=109
 	plotY=21
+	playerType=0, (King of Spain)
 	caption=Montgomery
 EndSign
 BeginSign
 	plotX=110
 	plotY=19
+	playerType=0, (King of Spain)
 	caption=Dothan
 EndSign
 BeginSign
 	plotX=100
 	plotY=30
+	playerType=0, (King of Spain)
 	caption=Memphis
 EndSign
 BeginSign
 	plotX=111
 	plotY=30
+	playerType=0, (King of Spain)
 	caption=Chattanooga
 EndSign
 BeginSign
 	plotX=114
 	plotY=33
+	playerType=0, (King of Spain)
 	caption=Knoxville
 EndSign
 BeginSign
 	plotX=98
 	plotY=34
+	playerType=0, (King of Spain)
 	caption=Poplar Bluff
 EndSign
 BeginSign
 	plotX=105
 	plotY=36
+	playerType=0, (King of Spain)
 	caption=Owensboro
 EndSign
 BeginSign
 	plotX=105
 	plotY=38
+	playerType=0, (King of Spain)
 	caption=Evansville
 EndSign
 BeginSign
 	plotX=108
 	plotY=38
+	playerType=0, (King of Spain)
 	caption=Louisville
 EndSign
 BeginSign
 	plotX=112
 	plotY=42
+	playerType=0, (King of Spain)
 	caption=Cincinnati
 EndSign
 BeginSign
 	plotX=115
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Columbus
 EndSign
 BeginSign
 	plotX=117
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Cleveland
 EndSign
 BeginSign
 	plotX=119
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Charleston
 EndSign
 BeginSign
 	plotX=121
 	plotY=44
+	playerType=0, (King of Spain)
 	caption=Morgantown
 EndSign
 BeginSign
 	plotX=100
 	plotY=42
+	playerType=0, (King of Spain)
 	caption=Springfield
 EndSign
 BeginSign
 	plotX=107
 	plotY=42
+	playerType=0, (King of Spain)
 	caption=Indianapolis
 EndSign
 BeginSign
 	plotX=108
 	plotY=46
+	playerType=0, (King of Spain)
 	caption=Fort Wayne
 EndSign
 BeginSign
 	plotX=106
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=South Bend
 EndSign
 BeginSign
 	plotX=103
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=Chicago
 EndSign
 BeginSign
 	plotX=102
 	plotY=44
+	playerType=0, (King of Spain)
 	caption=Bloomington
 EndSign
 BeginSign
 	plotX=100
 	plotY=52
+	playerType=0, (King of Spain)
 	caption=Madison
 EndSign
 BeginSign
 	plotX=103
 	plotY=53
+	playerType=0, (King of Spain)
 	caption=Milwaukee
 EndSign
 BeginSign
 	plotX=97
 	plotY=57
+	playerType=0, (King of Spain)
 	caption=Eau Claire
 EndSign
 BeginSign
 	plotX=100
 	plotY=61
+	playerType=0, (King of Spain)
 	caption=Ironwood
 EndSign
 BeginSign
 	plotX=104
 	plotY=61
+	playerType=0, (King of Spain)
 	caption=Marquette
 EndSign
 BeginSign
 	plotX=109
 	plotY=63
+	playerType=0, (King of Spain)
 	caption=Sault Ste. Marie
 EndSign
 BeginSign
 	plotX=107
 	plotY=53
+	playerType=0, (King of Spain)
 	caption=Grand Rapids
 EndSign
 BeginSign
 	plotX=108
 	plotY=50
+	playerType=0, (King of Spain)
 	caption=Kalamazoo
 EndSign
 BeginSign
 	plotX=113
 	plotY=50
+	playerType=0, (King of Spain)
 	caption=Dearborne
 EndSign
 BeginSign
 	plotX=113
 	plotY=52
+	playerType=0, (King of Spain)
 	caption=Detroit
 EndSign
 BeginSign
 	plotX=111
 	plotY=55
+	playerType=0, (King of Spain)
 	caption=Miland
 EndSign
 BeginSign
 	plotX=110
 	plotY=52
+	playerType=0, (King of Spain)
 	caption=Lansing
 EndSign
 BeginSign
 	plotX=108
 	plotY=57
+	playerType=0, (King of Spain)
 	caption=Traverse City
 EndSign
 BeginSign
 	plotX=97
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Dubuque
 EndSign
 BeginSign
 	plotX=95
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=Cedar Rapids
 EndSign
 BeginSign
 	plotX=92
 	plotY=47
+	playerType=0, (King of Spain)
 	caption=Des Moines
 EndSign
 BeginSign
 	plotX=88
 	plotY=50
+	playerType=0, (King of Spain)
 	caption=Sioux City
 EndSign
 BeginSign
 	plotX=94
 	plotY=51
+	playerType=0, (King of Spain)
 	caption=Mason City
 EndSign
 BeginSign
 	plotX=98
 	plotY=39
+	playerType=0, (King of Spain)
 	caption=St. Louis
 EndSign
 BeginSign
 	plotX=94
 	plotY=39
+	playerType=0, (King of Spain)
 	caption=Jefferson City
 EndSign
 BeginSign
 	plotX=90
 	plotY=41
+	playerType=0, (King of Spain)
 	caption=Kansas City
 EndSign
 BeginSign
 	plotX=88
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Topeka
 EndSign
 BeginSign
 	plotX=86
 	plotY=36
+	playerType=0, (King of Spain)
 	caption=Wichita
 EndSign
 BeginSign
 	plotX=81
 	plotY=37
+	playerType=0, (King of Spain)
 	caption=Dodge City
 EndSign
 BeginSign
 	plotX=87
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Lincoln
 EndSign
 BeginSign
 	plotX=88
 	plotY=47
+	playerType=0, (King of Spain)
 	caption=Omaha
 EndSign
 BeginSign
 	plotX=74
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=Cheyene
 EndSign
 BeginSign
 	plotX=67
 	plotY=50
+	playerType=0, (King of Spain)
 	caption=Rock Springs
 EndSign
 BeginSign
 	plotX=72
 	plotY=52
+	playerType=0, (King of Spain)
 	caption=Casper
 EndSign
 BeginSign
 	plotX=73
 	plotY=57
+	playerType=0, (King of Spain)
 	caption=Sheridan
 EndSign
 BeginSign
 	plotX=77
 	plotY=55
+	playerType=0, (King of Spain)
 	caption=Rapid City
 EndSign
 BeginSign
 	plotX=82
 	plotY=55
+	playerType=0, (King of Spain)
 	caption=Pierre
 EndSign
 BeginSign
 	plotX=86
 	plotY=53
+	playerType=0, (King of Spain)
 	caption=Sioux Falls
 EndSign
 BeginSign
 	plotX=94
 	plotY=54
+	playerType=0, (King of Spain)
 	caption=Rochester
 EndSign
 BeginSign
 	plotX=90
 	plotY=54
+	playerType=0, (King of Spain)
 	caption=Mankato
 EndSign
 BeginSign
 	plotX=93
 	plotY=57
+	playerType=0, (King of Spain)
 	caption=Minneapolis
 EndSign
 BeginSign
 	plotX=91
 	plotY=60
+	playerType=0, (King of Spain)
 	caption=St Cloud
 EndSign
 BeginSign
 	plotX=95
 	plotY=63
+	playerType=0, (King of Spain)
 	caption=Duluth
 EndSign
 BeginSign
 	plotX=86
 	plotY=66
+	playerType=0, (King of Spain)
 	caption=Grand Forks
 EndSign
 BeginSign
 	plotX=87
 	plotY=62
+	playerType=0, (King of Spain)
 	caption=Fargo
 EndSign
 BeginSign
 	plotX=81
 	plotY=63
+	playerType=0, (King of Spain)
 	caption=Bismarck
 EndSign
 BeginSign
 	plotX=80
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Minot
 EndSign
 BeginSign
 	plotX=143
 	plotY=61
+	playerType=0, (King of Spain)
 	caption=Boston
 EndSign
 BeginSign
 	plotX=142
 	plotY=59
+	playerType=0, (King of Spain)
 	caption=Providence
 EndSign
 BeginSign
 	plotX=139
 	plotY=54
+	playerType=0, (King of Spain)
 	caption=Hampton
 EndSign
 BeginSign
 	plotX=127
 	plotY=50
+	playerType=0, (King of Spain)
 	caption=Harrisburg
 EndSign
 BeginSign
 	plotX=130
 	plotY=54
+	playerType=0, (King of Spain)
 	caption=Scranton
 EndSign
 BeginSign
 	plotX=125
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Rochester
 EndSign
 BeginSign
 	plotX=128
 	plotY=60
+	playerType=0, (King of Spain)
 	caption=Syracuse
 EndSign
 BeginSign
 	plotX=133
 	plotY=66
+	playerType=0, (King of Spain)
 	caption=Plattsburg
 EndSign
 BeginSign
 	plotX=137
 	plotY=63
+	playerType=0, (King of Spain)
 	caption=Rutland
 EndSign
 BeginSign
 	plotX=135
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Burlington
 EndSign
 BeginSign
 	plotX=137
 	plotY=66
+	playerType=0, (King of Spain)
 	caption=Montpelier
 EndSign
 BeginSign
 	plotX=140
 	plotY=63
+	playerType=0, (King of Spain)
 	caption=Manchester
 EndSign
 BeginSign
 	plotX=141
 	plotY=65
+	playerType=0, (King of Spain)
 	caption=Portsmouth
 EndSign
 BeginSign
 	plotX=142
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Portland
 EndSign
 BeginSign
 	plotX=143
 	plotY=69
+	playerType=0, (King of Spain)
 	caption=Augusta
 EndSign
 BeginSign
 	plotX=146
 	plotY=70
+	playerType=0, (King of Spain)
 	caption=Bar Harbor
 EndSign
 BeginSign
 	plotX=144
 	plotY=72
+	playerType=0, (King of Spain)
 	caption=Bangor
 EndSign
 BeginSign
 	plotX=143
 	plotY=75
+	playerType=0, (King of Spain)
 	caption=Caribou
 EndSign
 BeginSign
 	plotX=46
 	plotY=59
+	playerType=0, (King of Spain)
 	caption=Medford
 EndSign
 BeginSign
 	plotX=50
 	plotY=57
+	playerType=0, (King of Spain)
 	caption=Klamath Falls
 EndSign
 BeginSign
 	plotX=48
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Portland
 EndSign
 BeginSign
 	plotX=46
 	plotY=64
+	playerType=0, (King of Spain)
 	caption=Salem
 EndSign
 BeginSign
 	plotX=51
 	plotY=73
+	playerType=0, (King of Spain)
 	caption=Seattle
 EndSign
 BeginSign
 	plotX=49
 	plotY=71
+	playerType=0, (King of Spain)
 	caption=Olympia
 EndSign
 BeginSign
 	plotX=54
 	plotY=66
+	playerType=0, (King of Spain)
 	caption=Kennewick
 EndSign
 BeginSign
 	plotX=52
 	plotY=69
+	playerType=0, (King of Spain)
 	caption=Yakima
 EndSign
 BeginSign
 	plotX=57
 	plotY=70
+	playerType=0, (King of Spain)
 	caption=Spokane
 EndSign
 BeginSign
 	plotX=59
 	plotY=66
+	playerType=0, (King of Spain)
 	caption=Lewiston
 EndSign
 BeginSign
 	plotX=58
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Boise
 EndSign
 BeginSign
 	plotX=60
 	plotY=54
+	playerType=0, (King of Spain)
 	caption=Twin Falls
 EndSign
 BeginSign
 	plotX=64
 	plotY=56
+	playerType=0, (King of Spain)
 	caption=Idaho Falls
 EndSign
 BeginSign
 	plotX=65
 	plotY=65
+	playerType=0, (King of Spain)
 	caption=Helena
 EndSign
 BeginSign
 	plotX=63
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Missoula
 EndSign
 BeginSign
 	plotX=67
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Great Falls
 EndSign
 BeginSign
 	plotX=69
 	plotY=61
+	playerType=0, (King of Spain)
 	caption=Billings
 EndSign
 BeginSign
 	plotX=74
 	plotY=62
+	playerType=0, (King of Spain)
 	caption=Miles City
 EndSign
 BeginSign
 	plotX=62
 	plotY=23
+	playerType=0, (King of Spain)
 	caption=Tucson
 EndSign
 BeginSign
 	plotX=60
 	plotY=28
+	playerType=0, (King of Spain)
 	caption=Phoenix
 EndSign
 BeginSign
 	plotX=61
 	plotY=32
+	playerType=0, (King of Spain)
 	caption=Flagstaff
 EndSign
 BeginSign
 	plotX=62
 	plotY=36
+	playerType=0, (King of Spain)
 	caption=Marble Canyon
 EndSign
 BeginSign
 	plotX=60
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Cedar City
 EndSign
 BeginSign
 	plotX=65
 	plotY=39
+	playerType=0, (King of Spain)
 	caption=Monticello
 EndSign
 BeginSign
 	plotX=68
 	plotY=22
+	playerType=0, (King of Spain)
 	caption=Las Cruces
 EndSign
 BeginSign
 	plotX=73
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Roswell
 EndSign
 BeginSign
 	plotX=70
 	plotY=30
+	playerType=0, (King of Spain)
 	caption=Albuquerque
 EndSign
 BeginSign
 	plotX=71
 	plotY=33
+	playerType=0, (King of Spain)
 	caption=Santa Fe
 EndSign
 BeginSign
 	plotX=69
 	plotY=37
+	playerType=0, (King of Spain)
 	caption=Durango
 EndSign
 BeginSign
 	plotX=75
 	plotY=37
+	playerType=0, (King of Spain)
 	caption=Pueblo
 EndSign
 BeginSign
 	plotX=75
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Colorado Springs
 EndSign
 BeginSign
 	plotX=69
 	plotY=42
+	playerType=0, (King of Spain)
 	caption=Grand Junction
 EndSign
 BeginSign
 	plotX=72
 	plotY=44
+	playerType=0, (King of Spain)
 	caption=Boulder
 EndSign
 BeginSign
 	plotX=74
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=Denver
 EndSign
 BeginSign
 	plotX=91
 	plotY=16
+	playerType=0, (King of Spain)
 	caption=Beaumont
 EndSign
 BeginSign
 	plotX=91
 	plotY=14
+	playerType=0, (King of Spain)
 	caption=Port Arthur
 EndSign
 BeginSign
 	plotX=93
 	plotY=14
+	playerType=0, (King of Spain)
 	caption=Lake Charles
 EndSign
 BeginSign
 	plotX=95
 	plotY=15
+	playerType=0, (King of Spain)
 	caption=Lafayette
 EndSign
 BeginSign
 	plotX=138
 	plotY=61
+	playerType=0, (King of Spain)
 	caption=Springfield
 EndSign
 BeginSign
 	plotX=129
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Ithaca
 EndSign
 BeginSign
 	plotX=122
 	plotY=56
+	playerType=0, (King of Spain)
 	caption=Buffalo
 EndSign
 BeginSign
 	plotX=129
 	plotY=63
+	playerType=0, (King of Spain)
 	caption=Watertown
 EndSign
 BeginSign
 	plotX=134
 	plotY=60
+	playerType=0, (King of Spain)
 	caption=Albany
 EndSign
 BeginSign
 	plotX=131
 	plotY=52
+	playerType=0, (King of Spain)
 	caption=Allentown
 EndSign
 BeginSign
 	plotX=138
 	plotY=74
+	playerType=0, (King of Spain)
 	caption=Quebec City
 EndSign
 BeginSign
 	plotX=117
 	plotY=56
+	playerType=0, (King of Spain)
 	caption=London
 EndSign
 BeginSign
 	plotX=116
 	plotY=52
+	playerType=0, (King of Spain)
 	caption=Chatham-Kent
 EndSign
 BeginSign
 	plotX=49
 	plotY=76
+	playerType=0, (King of Spain)
 	caption=Victoria
 EndSign
 BeginSign
 	plotX=51
 	plotY=78
+	playerType=0, (King of Spain)
 	caption=Vancouver
 EndSign
 BeginSign
 	plotX=63
 	plotY=75
+	playerType=0, (King of Spain)
 	caption=Calgary
 EndSign
 BeginSign
 	plotX=72
 	plotY=77
+	playerType=0, (King of Spain)
 	caption=Saskatoon
 EndSign
 BeginSign
 	plotX=77
 	plotY=72
+	playerType=0, (King of Spain)
 	caption=Regina
 EndSign
 BeginSign
 	plotX=87
 	plotY=71
+	playerType=0, (King of Spain)
 	caption=Winnipeg
 EndSign
 BeginSign
 	plotX=46
 	plotY=53
+	playerType=0, (King of Spain)
 	caption=Reading
 EndSign
 BeginSign
 	plotX=51
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Tijuana
 EndSign
 BeginSign
 	plotX=54
 	plotY=25
+	playerType=0, (King of Spain)
 	caption=Mexicali
 EndSign
 BeginSign
 	plotX=70
 	plotY=12
+	playerType=0, (King of Spain)
 	caption=Chihuahua
 EndSign
 BeginSign
 	plotX=66
 	plotY=1
+	playerType=0, (King of Spain)
 	caption=Culiacan
 EndSign
 BeginSign
 	plotX=60
 	plotY=0
+	playerType=0, (King of Spain)
 	caption=La Paz
 EndSign
 BeginSign
 	plotX=61
 	plotY=15
+	playerType=0, (King of Spain)
 	caption=Hermasillo
 EndSign
 BeginSign
 	plotX=125
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=Charlottesville
 EndSign
 BeginSign
 	plotX=130
 	plotY=39
+	playerType=0, (King of Spain)
 	caption=Jamestown/Williamsburg
 EndSign
 BeginSign
 	plotX=133
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Onancock
 EndSign
 BeginSign
 	plotX=128
 	plotY=41
+	playerType=0, (King of Spain)
 	caption=Fredericksburg
 EndSign
 BeginSign
 	plotX=128
 	plotY=39
+	playerType=0, (King of Spain)
 	caption=Richmond
 EndSign
 BeginSign
 	plotX=123
 	plotY=37
+	playerType=0, (King of Spain)
 	caption=Roanoke
 EndSign
 BeginSign
 	plotX=125
 	plotY=39
+	playerType=0, (King of Spain)
 	caption=Lynchburg
 EndSign
 BeginSign
 	plotX=139
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Hartford
 EndSign
 BeginSign
 	plotX=138
 	plotY=56
+	playerType=0, (King of Spain)
 	caption=New Haven
 EndSign
 BeginSign
 	plotX=94
 	plotY=21
+	playerType=0, (King of Spain)
 	caption=Shreveport
 EndSign
 BeginSign
 	plotX=134
 	plotY=34
+	playerType=0, (King of Spain)
 	caption=Roanoke
 EndSign
 BeginSign
 	plotX=132
 	plotY=33
+	playerType=0, (King of Spain)
 	caption=Greenville
 EndSign
 BeginSign
 	plotX=129
 	plotY=34
+	playerType=0, (King of Spain)
 	caption=Raleigh
 EndSign
 BeginSign
 	plotX=127
 	plotY=35
+	playerType=0, (King of Spain)
 	caption=Durham
 EndSign
 BeginSign
 	plotX=124
 	plotY=34
+	playerType=0, (King of Spain)
 	caption=Greensboro
 EndSign
 BeginSign
 	plotX=122
 	plotY=34
+	playerType=0, (King of Spain)
 	caption=Winston-Salem
 EndSign
 BeginSign
 	plotX=125
 	plotY=32
+	playerType=0, (King of Spain)
 	caption=Fayetteville
 EndSign
 BeginSign
 	plotX=128
 	plotY=30
+	playerType=0, (King of Spain)
 	caption=Wilmington
 EndSign
 BeginSign
 	plotX=131
 	plotY=35
+	playerType=0, (King of Spain)
 	caption=Edenton
 EndSign
 BeginSign
 	plotX=130
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=St. Mary's
 EndSign
 BeginSign
 	plotX=91
 	plotY=64
+	playerType=0, (King of Spain)
 	caption=Bemidji
 EndSign
 BeginSign
 	plotX=127
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Ottawa
 EndSign
 BeginSign
 	plotX=135
 	plotY=72
+	playerType=0, (King of Spain)
 	caption=Trois Rivieres
 EndSign
 BeginSign
 	plotX=100
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Thunder Bay
 EndSign
 BeginSign
 	plotX=98
 	plotY=55
+	playerType=0, (King of Spain)
 	caption=La Crosse
 EndSign
 BeginSign
 	plotX=102
 	plotY=56
+	playerType=0, (King of Spain)
 	caption=Green Bay
 EndSign
 BeginSign
 	plotX=101
 	plotY=21
+	playerType=0, (King of Spain)
 	caption=Jackson
 EndSign
 BeginSign
 	plotX=99
 	plotY=21
+	playerType=0, (King of Spain)
 	caption=Vicksburg
 EndSign
 BeginSign
 	plotX=112
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Dayton
 EndSign
 BeginSign
 	plotX=112
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=Toledo
 EndSign
 BeginSign
 	plotX=118
 	plotY=47
+	playerType=0, (King of Spain)
 	caption=Akron
 EndSign
 BeginSign
 	plotX=118
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Canton
 EndSign
 BeginSign
 	plotX=116
 	plotY=39
+	playerType=0, (King of Spain)
 	caption=Huntington
 EndSign
 BeginSign
 	plotX=119
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=Parkersburg
 EndSign
 BeginSign
 	plotX=124
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Harper's Ferry
 EndSign
 BeginSign
 	plotX=116
 	plotY=43
+	playerType=0, (King of Spain)
 	caption=Athens
 EndSign
 BeginSign
 	plotX=110
 	plotY=33
+	playerType=0, (King of Spain)
 	caption=Cookeville
 EndSign
 BeginSign
 	plotX=107
 	plotY=32
+	playerType=0, (King of Spain)
 	caption=Nashville
 EndSign
 BeginSign
 	plotX=104
 	plotY=31
+	playerType=0, (King of Spain)
 	caption=Jackson
 EndSign
 BeginSign
 	plotX=103
 	plotY=34
+	playerType=0, (King of Spain)
 	caption=Paducah
 EndSign
 BeginSign
 	plotX=108
 	plotY=35
+	playerType=0, (King of Spain)
 	caption=Bowling Green
 EndSign
 BeginSign
 	plotX=111
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Florence
 EndSign
 BeginSign
 	plotX=114
 	plotY=37
+	playerType=0, (King of Spain)
 	caption=Lexington
 EndSign
 BeginSign
 	plotX=112
 	plotY=38
+	playerType=0, (King of Spain)
 	caption=Frankfort
 EndSign
 BeginSign
 	plotX=97
 	plotY=47
+	playerType=0, (King of Spain)
 	caption=Davenport
 EndSign
 BeginSign
 	plotX=100
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Peoria
 EndSign
 BeginSign
 	plotX=100
 	plotY=48
+	playerType=0, (King of Spain)
 	caption=Rockford
 EndSign
 BeginSign
 	plotX=102
 	plotY=38
+	playerType=0, (King of Spain)
 	caption=Marion
 EndSign
 BeginSign
 	plotX=103
 	plotY=42
+	playerType=0, (King of Spain)
 	caption=Champaign
 EndSign
 BeginSign
 	plotX=93
 	plotY=35
+	playerType=0, (King of Spain)
 	caption=Springfield
 EndSign
 BeginSign
 	plotX=94
 	plotY=41
+	playerType=0, (King of Spain)
 	caption=Columbia
 EndSign
 BeginSign
 	plotX=97
 	plotY=30
+	playerType=0, (King of Spain)
 	caption=Jonesboro
 EndSign
 BeginSign
 	plotX=83
 	plotY=28
+	playerType=0, (King of Spain)
 	caption=Lawton
 EndSign
 BeginSign
 	plotX=92
 	plotY=26
+	playerType=0, (King of Spain)
 	caption=Hot Springs
 EndSign
 BeginSign
 	plotX=88
 	plotY=27
+	playerType=0, (King of Spain)
 	caption=Ardmore
 EndSign
 BeginSign
 	plotX=86
 	plotY=18
+	playerType=0, (King of Spain)
 	caption=Waco
 EndSign
 BeginSign
 	plotX=78
 	plotY=21
+	playerType=0, (King of Spain)
 	caption=Midland
 EndSign
 BeginSign
 	plotX=81
 	plotY=19
+	playerType=0, (King of Spain)
 	caption=Abilene
 EndSign
 BeginSign
 	plotX=79
 	plotY=16
+	playerType=0, (King of Spain)
 	caption=San Angelo
 EndSign
 BeginSign
 	plotX=84
 	plotY=3
+	playerType=0, (King of Spain)
 	caption=Brownsville
 EndSign
 BeginSign
 	plotX=80
 	plotY=3
+	playerType=0, (King of Spain)
 	caption=Monterrey
 EndSign
 BeginSign
 	plotX=83
 	plotY=1
+	playerType=0, (King of Spain)
 	caption=Reynosa
 EndSign
 BeginSign
 	plotX=78
 	plotY=7
+	playerType=0, (King of Spain)
 	caption=Laredo
 EndSign
 BeginSign
 	plotX=77
 	plotY=11
+	playerType=0, (King of Spain)
 	caption=Monclova
 EndSign
 BeginSign
 	plotX=81
 	plotY=41
+	playerType=0, (King of Spain)
 	caption=Colby
 EndSign
 BeginSign
 	plotX=84
 	plotY=40
+	playerType=0, (King of Spain)
 	caption=Hays
 EndSign
 BeginSign
 	plotX=89
 	plotY=35
+	playerType=0, (King of Spain)
 	caption=Pittsburg
 EndSign
 BeginSign
 	plotX=83
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Grand Island
 EndSign
 BeginSign
 	plotX=80
 	plotY=47
+	playerType=0, (King of Spain)
 	caption=North Platte
 EndSign
 BeginSign
 	plotX=77
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Scottsbluff
 EndSign
 BeginSign
 	plotX=86
 	plotY=49
+	playerType=0, (King of Spain)
 	caption=Norfolk
 EndSign
 BeginSign
 	plotX=81
 	plotY=50
+	playerType=0, (King of Spain)
 	caption=Valentine
 EndSign
 BeginSign
 	plotX=85
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Aberdeen
 EndSign
 BeginSign
 	plotX=82
 	plotY=59
+	playerType=0, (King of Spain)
 	caption=Mobridge
 EndSign
 BeginSign
 	plotX=79
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Faith
 EndSign
 BeginSign
 	plotX=78
 	plotY=62
+	playerType=0, (King of Spain)
 	caption=Bowman
 EndSign
 BeginSign
 	plotX=83
 	plotY=66
+	playerType=0, (King of Spain)
 	caption=Rugby
 EndSign
 BeginSign
 	plotX=132
 	plotY=69
+	playerType=0, (King of Spain)
 	caption=Montreal
 EndSign
 BeginSign
 	plotX=10
 	plotY=35
+	playerType=0, (King of Spain)
 	caption=Honolulu
 EndSign
 BeginSign
 	plotX=20
 	plotY=29
+	playerType=0, (King of Spain)
 	caption=Hilo
 EndSign
 BeginSign
 	plotX=1
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Lavrentiya
 EndSign
 BeginSign
 	plotX=13
 	plotY=58
+	playerType=0, (King of Spain)
 	caption=Bethel
 EndSign
 BeginSign
 	plotX=2
 	plotY=73
+	playerType=0, (King of Spain)
 	caption=Barrow
 EndSign
 BeginSign
 	plotX=21
 	plotY=55
+	playerType=0, (King of Spain)
 	caption=Chigali
 EndSign
 BeginSign
 	plotX=23
 	plotY=60
+	playerType=0, (King of Spain)
 	caption=Kodiak
 EndSign
 BeginSign
 	plotX=19
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Anchorage
 EndSign
 BeginSign
 	plotX=21
 	plotY=69
+	playerType=0, (King of Spain)
 	caption=Valdez
 EndSign
 BeginSign
 	plotX=30
 	plotY=76
+	playerType=0, (King of Spain)
 	caption=Juneau
 EndSign
 BeginSign
 	plotX=4
 	plotY=38
+	playerType=0, (King of Spain)
 	caption=Koloa
 EndSign
 BeginSign
 	plotX=16
 	plotY=33
+	playerType=0, (King of Spain)
 	caption=Kahului
 EndSign
 BeginSign
 	plotX=73
 	plotY=2
+	playerType=0, (King of Spain)
 	caption=Mexico City
 EndSign
 BeginSign
 	plotX=120
 	plotY=57
+	playerType=0, (King of Spain)
 	caption=Hamilton
 EndSign
 BeginSign
 	plotX=126
 	plotY=63
+	playerType=0, (King of Spain)
 	caption=Kingston
 EndSign
 BeginSign
 	plotX=122
 	plotY=61
+	playerType=0, (King of Spain)
 	caption=Toronto
 EndSign
 BeginSign
 	plotX=120
 	plotY=59
+	playerType=0, (King of Spain)
 	caption=Mississauga
 EndSign
 BeginSign
 	plotX=82
 	plotY=71
+	playerType=0, (King of Spain)
 	caption=Brandon
 EndSign
 BeginSign
 	plotX=72
 	plotY=72
+	playerType=0, (King of Spain)
 	caption=Swift Current
 EndSign
 BeginSign
 	plotX=67
 	plotY=73
+	playerType=0, (King of Spain)
 	caption=Medicine Hat
 EndSign
 BeginSign
 	plotX=57
 	plotY=76
+	playerType=0, (King of Spain)
 	caption=Kamloops
 EndSign
 BeginSign
 	plotX=122
 	plotY=75
+	playerType=0, (King of Spain)
 	caption=Amsterdam
 EndSign
 BeginSign
 	plotX=118
 	plotY=74
+	playerType=0, (King of Spain)
 	caption=Paris
 EndSign
 BeginSign
 	plotX=114
 	plotY=75
+	playerType=0, (King of Spain)
 	caption=Bordeaux
 EndSign
 BeginSign
 	plotX=115
 	plotY=70
+	playerType=0, (King of Spain)
 	caption=Marseilles
 EndSign
 BeginSign
 	plotX=116
 	plotY=73
+	playerType=0, (King of Spain)
 	caption=Lyon
 EndSign
 BeginSign
 	plotX=116
 	plotY=66
+	playerType=0, (King of Spain)
 	caption=Rome
 EndSign
 BeginSign
 	plotX=118
 	plotY=69
+	playerType=0, (King of Spain)
 	caption=Milan
 EndSign
 BeginSign
 	plotX=121
 	plotY=67
+	playerType=0, (King of Spain)
 	caption=Vienna
 EndSign
 BeginSign
 	plotX=125
 	plotY=70
+	playerType=0, (King of Spain)
 	caption=Berlin
 EndSign
 BeginSign
 	plotX=123
 	plotY=73
+	playerType=0, (King of Spain)
 	caption=Hamburg
 EndSign
 BeginSign
 	plotX=121
 	plotY=72
+	playerType=0, (King of Spain)
 	caption=Frankfurt
 EndSign
 BeginSign
 	plotX=112
 	plotY=71
+	playerType=0, (King of Spain)
 	caption=Barcelona
 EndSign
 BeginSign
 	plotX=106
 	plotY=74
+	playerType=0, (King of Spain)
 	caption=Seville
 EndSign
 BeginSign
 	plotX=107
 	plotY=77
+	playerType=0, (King of Spain)
 	caption=Lisbon
 EndSign
 BeginSign
 	plotX=111
 	plotY=76
+	playerType=0, (King of Spain)
 	caption=Bilbao
 EndSign
 BeginSign
 	plotX=109
 	plotY=74
+	playerType=0, (King of Spain)
 	caption=Madrid
 EndSign
 BeginSign
 	plotX=122
 	plotY=77
+	playerType=0, (King of Spain)
 	caption=Dublin
 EndSign
 BeginSign
 	plotX=127
 	plotY=73
+	playerType=0, (King of Spain)
 	caption=London
 EndSign
 BeginSign
 	plotX=129
 	plotY=77
+	playerType=0, (King of Spain)
 	caption=Edinburgh
 EndSign
 BeginSign
 	plotX=128
 	plotY=75
+	playerType=0, (King of Spain)
 	caption=Manchester
 EndSign
 BeginSign
 	plotX=109
 	plotY=72
+	playerType=0, (King of Spain)
 	caption=Valencia
 EndSign
 BeginSign
 	plotX=148
 	plotY=74
+	playerType=0, (King of Spain)
 	caption=Saint John
 EndSign
 BeginSign
 	plotX=147
 	plotY=77
+	playerType=0, (King of Spain)
 	caption=Fredericton
 EndSign
 BeginSign
 	plotX=142
 	plotY=79
+	playerType=0, (King of Spain)
 	caption=Rimouski
 EndSign
 BeginSign
 	plotX=136
 	plotY=78
+	playerType=0, (King of Spain)
 	caption=Saguenay
 EndSign
 BeginSign
 	plotX=133
 	plotY=46
+	playerType=0, (King of Spain)
 	caption=Dover
 EndSign
 BeginSign
 	plotX=129
 	plotY=47
+	playerType=0, (King of Spain)
 	caption=Baltimore
 EndSign
 BeginSign
 	plotX=129
 	plotY=45
+	playerType=0, (King of Spain)
 	caption=Annapolis
 EndSign
 BeginSign
 	plotX=126
 	plotY=47
+	playerType=0, (King of Spain)
 	caption=Hagerstown
 EndSign
 BeginSign
 	plotX=122
 	plotY=46
+	playerType=0, (King of Spain)
 	caption=Oakland
 EndSign
 BeginSign
 	plotX=116
 	plotY=62
+	playerType=0, (King of Spain)
 	caption=Sudbury
 EndSign

@@ -260,21 +260,17 @@ class RFCUtils:
 					unit = killPlot.getUnit(iUnit)
 					#print ("killplot", x, y, unit.getUnitType(), unit.getOwner(), "j", j)
 					if unit.getOwner() == iOldOwner:
-						# Leoreth: Italy shouldn't flip so it doesn't get too strong by absorbing French or German armies attacking Rome
-						if iNewOwner == iItaly and iOldOwner < iNumPlayers:
-							unit.setXY(oldCapital.getX(), oldCapital.getY(), False, True, False)
-						else:
-							unit.kill(False, iBarbarian)
+						unit.kill(False, iBarbarian)
+						
+						# Leoreth: can't flip naval units anymore
+						if unit.getDomainType() == DomainTypes.DOMAIN_SEA:
+							continue
 							
-							# Leoreth: can't flip naval units anymore
-							if unit.getDomainType() == DomainTypes.DOMAIN_SEA:
-								continue
-								
-							# Leoreth: ignore workers as well
-							if utils.getBaseUnit(unit.getUnitType()) in [iWorker, iLabourer]:
-								continue
-							
-							if not (unit.isFound() and not bKillSettlers) and not unit.isAnimal():
+						# Leoreth: ignore workers as well
+						if utils.getBaseUnit(unit.getUnitType()) in [iWorker, iLabourer]:
+							continue
+						
+						if not (unit.isFound() and not bKillSettlers) and not unit.isAnimal():
 								lPlotUnits.append(unit.getUnitType())
 			if lPlotUnits:
 				for iUnit in lPlotUnits:

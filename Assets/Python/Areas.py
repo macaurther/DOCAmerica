@@ -95,11 +95,10 @@ def init():
 		updateCore(iPlayer)
 	
 ### Capitals ###
-# MacAurther TODO: Right locations
 tCapitals = (
-(109, 74), # Madrid	TODO
-(118, 74), # Paris	TODO
-(127, 73), # London	TODO
+(109, 74), # Madrid
+(118, 74), # Paris
+(127, 73), # London
 (130, 39), # Jamestown
 (143, 61), # Boston
 (141, 65), # Portsmouth
@@ -179,9 +178,9 @@ iCanada : [],
 # MacAurther TODO: Right locations
 # BL, TR
 tCoreArea = (
-((49, 43),	(53, 46)),	# Spain	TODO
-((51, 46),	(57, 51)),	# France	TODO
-((50, 53),	(54, 60)),	# England	TODO
+((105, 71),	(112, 78)),	# Spain
+((114, 70),	(119, 78)),	# France
+((125, 73),	(131, 79)),	# England
 ((115, 35),	(134, 45)),	# Virginia
 ((136, 59),	(145, 62)),	# Massachusetts
 ((138, 62),	(141, 69)),	# New Hampshire
@@ -355,7 +354,7 @@ dChangedCoreAreaExceptions = {
 }
 
 ### Normal Area ###
-# MacAurther TODO: Right locations
+# MacAurther TODO: This is what is revealed on the map on birth
 # BL, TR
 tNormalArea = (
 ((49, 43),	(53, 46)),	# Spain	TODO

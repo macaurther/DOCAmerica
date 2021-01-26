@@ -320,7 +320,7 @@ class RiseAndFall:
 		data.players[iFrance].iColonistsAlreadyGiven = 3
 		data.players[iEngland].iColonistsAlreadyGiven = 3
 		
-	def init1700ADDiplomacy(self):
+	def init1600ADDiplomacy(self):
 		pass
 	
 	def changeAttitudeExtra(self, iPlayer1, iPlayer2, iValue):
@@ -805,10 +805,18 @@ class RiseAndFall:
 				self.birthInFreeRegion(iCiv, tCapital, tTopLeft, tBottomRight)
 				
 		# Leoreth: reveal all normal plots on spawn
+		# MacAurther TODO: Do not do this, reveal new array of RevealArea plots
 		for (x, y) in Areas.getNormalArea(iCiv):
 			gc.getMap().plot(x, y).setRevealed(iCiv, True, True, 0)
 				
-			
+		
+		#MacAurther TODO: Set up British Colony Vassals
+		#MacAurther TODO: Break vassalage automatically upon Revolution event
+		#if iCiv in [iVirginia, iMassachusetts, iNewHampshire, iMaryland, iConnecticut, iRhodeIsland, iNorthCarolina, iSouthCarolina, 
+		#	iNewJersey, iNewYork, iPennsylvania, iDelaware, iGeorgia]:
+		#	print "Setting up British Colony Vassal - " + str(iCiv)
+		#	gc.getTeam(iCiv).setVassal(iEngland, False, False) #gc.getPlayer(iCiv).getCivilizationType()
+		
 		if (iCurrentTurn == iBirthYear + data.players[iCiv].iSpawnDelay) and (gc.getPlayer(iCiv).isAlive()) and (not data.bAlreadySwitched or utils.getReborn(iCiv) == 1 or data.bUnlimitedSwitching) and ((iHuman not in lNeighbours[iCiv] and getTurnForYear(tBirth[iCiv]) - getTurnForYear(tBirth[iHuman]) > 0) or getTurnForYear(tBirth[iCiv]) - getTurnForYear(tBirth[iHuman]) >= utils.getTurns(25) ):
 			startNewCivSwitchEvent(iCiv)
 			
@@ -1590,45 +1598,88 @@ class RiseAndFall:
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
 			utils.createMissionaries(iCiv, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			
 		elif iCiv == iVirginia:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
+			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iMassachusetts:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iNewHampshire:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iMaryland:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iConnecticut:  #Macaurther TODO: Flip from Dutch
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iRhodeIsland:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iNorthCarolina:
 			utils.createSettlers(iCiv, 2)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 		elif iCiv == iSouthCarolina:
 			utils.createSettlers(iCiv, 2)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 		elif iCiv == iNewJersey:
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 		elif iCiv == iNewYork:  #Macaurther TODO: Flip from Dutch
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnit(iExplorer, iCiv, tPlot, 1)
+			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 		elif iCiv == iPennsylvania:
 			utils.createSettlers(iCiv, 2)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 		elif iCiv == iDelaware:  #Macaurther TODO: Flip from Swedish
 			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 		elif iCiv == iGeorgia:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 
 
 		elif iCiv == iAmerica:
@@ -1697,8 +1748,6 @@ class RiseAndFall:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iEngland:
 			utils.makeUnit(iWorker, iCiv, tPlot, 3)
-		elif iCiv == iEngland:
-			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iVirginia:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iMassachusetts:
@@ -1706,15 +1755,15 @@ class RiseAndFall:
 		elif iCiv == iNewHampshire:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iMaryland:
-			utils.makeUnit(iWorker, iCiv, tPlot, 1)
+			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iConnecticut:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iRhodeIsland:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iNorthCarolina:
-			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iSouthCarolina:
-			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iNewJersey:
 			utils.makeUnit(iWorker, iCiv, tPlot, 2)
 		elif iCiv == iNewYork:
@@ -1724,7 +1773,7 @@ class RiseAndFall:
 		elif iCiv == iDelaware:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iGeorgia:
-			utils.makeUnit(iWorker, iCiv, tPlot, 2)
+			utils.makeUnit(iWorker, iCiv, tPlot, 3)
 		elif iCiv == iAmerica:
 			utils.makeUnit(iWorker, iCiv, tPlot, 4)
 		elif iCiv == iCanada:

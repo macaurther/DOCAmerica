@@ -15,9 +15,12 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
+# MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish
 tMinorCities = (
-	(1600, (84, 45), iIndependent, 'Onondaga', 2, iArcher, 3),			# Onondaga
-	(1600, (92, 46), iIndependent2, 'Mexico City', 1, iArcher, 1),		# Mexico City
+	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iArquebusier, 1),		# Fort Orange (Albany)
+	(1625, (136, 55), iIndependent, 'Nieuw Amsterdam', 1, iArquebusier, 1),	# New Amsterdam (New York)
+	(1630, (139, 58), iIndependent, 'Fort de Goede Hoop', 1, iArquebusier, 1),	# Fort de Goede Hoop (Hartford)
+	(1638, (134, 60), iIndependent2, 'Fort Christina', 1, iArquebusier, 1),		# Fort Christina (Wilmington)
 )
 
 # do some research on dates here
