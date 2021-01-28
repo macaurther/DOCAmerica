@@ -30,6 +30,7 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 
+
 	<TEXT>
 		<Tag>TXT_KEY_TECH_AERODYNAMICS</Tag>
 		<English>Aerodynamics</English>
@@ -5026,22 +5027,250 @@
 		<Italian>"La vera gloria consiste nel fare ci&#242; che merita di essere scritto e nello scrivere ci&#242; che merita di essere letto."[PARAGRAPH:2]- Plinio il Vecchio</Italian>
 		<Spanish>"La verdadera gloria consiste en hacer lo que merece escribirse y en escribir lo que merece leerse."[PARAGRAPH:2]- Plinio el Viejo</Spanish>
 	</TEXT>
-	
+
+<!-- MacAurther TODO: Maybe sort these new techs alphabetically -->
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COLONIZATION</Tag>
+		<English>Colonization</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COLONIZATION_QUOTE</Tag>
+		<English>MacAurther TODO: Find quote</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COLONIZATION_PEDIA</Tag>
+		<English>MacAurther TODO: Pedia entry</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CHARTER</Tag>
+		<English>Charter</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CHARTER_QUOTE</Tag>
+		<English>MacAurther TODO: Find quote</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CHARTER_PEDIA</Tag>
+		<English>MacAurther TODO: Pedia entry</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDENTURES</Tag>
+		<English>Indentures</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDENTURES_QUOTE</Tag>
+		<English>MacAurther TODO: Find quote</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDENTURES_PEDIA</Tag>
+		<English>MacAurther TODO: Pedia entry</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMMUNITY</Tag>
+		<English>Community</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMMUNITY_QUOTE</Tag>
+		<English>MacAurther TODO: Find quote</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMMUNITY_PEDIA</Tag>
+		<English>MacAurther TODO: Pedia entry</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRIANGULAR_TRADE</Tag>
+		<English>Triangular Trade</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRIANGULAR_TRADE_QUOTE</Tag>
+		<English>MacAurther TODO: Find quote</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRIANGULAR_TRADE_PEDIA</Tag>
+		<English>MacAurther TODO: Pedia entry</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PIONEERING</Tag>
+		<English>Pioneering</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PIONEERING_QUOTE</Tag>
+		<English>MacAurther TODO: Find quote</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PIONEERING_PEDIA</Tag>
+		<English>MacAurther TODO: Pedia entry</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+<!-- Era Text Keys -->
+	<TEXT>
+		<Tag>TXT_KEY_ERA_PRE_COLUMBIAN</Tag>
+		<English>Pre Columbian</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_POST_COLUMBIAN</Tag>
+		<English>Post Columbian</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_EXPLORATION</Tag>
+		<English>Exploration</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_COLONIAL</Tag>
+		<English>Colonial</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_REVOLUTIONARY</Tag>
+		<English>Revolutionary</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_EXPANSION</Tag>
+		<English>Expansion</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_INDUSTRIAL</Tag>
+		<English>Industrial</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_MODERN</Tag>
+		<English>Modern</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ERA_ATOMIC</Tag>
-		<English>Global</English>
-		<French>&#200;re mondiale</French>
-		<German>Global</German>
-		<Italian>Global</Italian>
-		<Spanish>Global</Spanish>
+		<English>Atomic</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ERA_INFORMATION</Tag>
-		<English>Digital</English>
-		<French>&#200;re num&#233;rique</French>
-		<German>Digital</German>
-		<Italian>Digital</Italian>
-		<Spanish>Digital</Spanish>
+		<English>Information</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
-
 </Civ4GameText>

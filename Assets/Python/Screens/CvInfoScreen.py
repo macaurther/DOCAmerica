@@ -2119,27 +2119,10 @@ class CvInfoScreen:
 					pActivePlayer = gc.getPlayer(iActivePlayer)
 					tActivePlayer = gc.getTeam(pActivePlayer.getTeam())
 					
-					if (tActivePlayer.isHasTech(iCalendar) or iTurnYear < tBirth[iActivePlayer]):
-						if (iTurnYear < 0):
-						    szTurnFounded = localText.getText("TXT_KEY_TIME_BC", (-iTurnYear,))
-						else:
-						    szTurnFounded = localText.getText("TXT_KEY_TIME_AD", (iTurnYear,))
-						
-					elif (iTurnYear >= 1500):
-						szTurnFounded = localText.getText("TXT_KEY_AGE_RENAISSANCE", ())	      
-					elif (iTurnYear >= 450):
-						szTurnFounded = localText.getText("TXT_KEY_AGE_MEDIEVAL", ())    
-					elif (iTurnYear >= -800):
-						szTurnFounded = localText.getText("TXT_KEY_AGE_IRON", ())    
-					elif (iTurnYear >= -2000):
-						szTurnFounded = localText.getText("TXT_KEY_AGE_BRONZE", ())    
-					else:
-						szTurnFounded = localText.getText("TXT_KEY_AGE_STONE", ())
-
+					#MacAurther: Calendar will have always been discovered
+					szTurnFounded = localText.getText("TXT_KEY_TIME_AD", (iTurnYear,))
 					szDateBuilt = (", %s" %(szTurnFounded))
 					#Rhye - end
-
-
 
 				else:
 					szDateBuilt = (", %s" %(localText.getText("TXT_KEY_BEING_BUILT", ())))
@@ -2922,21 +2905,8 @@ class CvInfoScreen:
 		pPlayer = gc.getPlayer(iPlayer)
 		tPlayer = gc.getTeam(pPlayer.getTeam())
 		
-		if (tPlayer.isHasTech(iCalendar) or year < tBirth[iPlayer]):  
-			if (year < 0):
-			    return localText.getText("TXT_KEY_TIME_BC", (-year,))
-			else:
-			    return localText.getText("TXT_KEY_TIME_AD", (year,))	 
-		elif (year >= 1500):
-			return localText.getText("TXT_KEY_AGE_RENAISSANCE", ())  
-		elif (year >= 450):
-			return localText.getText("TXT_KEY_AGE_MEDIEVAL", ())    
-		elif (year >= -800):
-			return localText.getText("TXT_KEY_AGE_IRON", ())    
-		elif (year >= -2000):
-			return localText.getText("TXT_KEY_AGE_BRONZE", ())    
-		else:
-			return localText.getText("TXT_KEY_AGE_STONE", ())    
+		#MacAurther: Calendar will have always been discovered
+		return localText.getText("TXT_KEY_TIME_AD", (year,))
 		#Rhye - end
 
 
