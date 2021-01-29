@@ -150,6 +150,32 @@ class CvRFCEventHandler:
 				if Areas.getRespawnCapital(iPlayer) == tCity:
 					utils.relocateCapital(iPlayer, city)
 
+		# Leoreth: New Haven should spawn with a Palisade and Barracks
+		if iPlayer == iConnecticut and tCity == Areas.getCapital(iConnecticut) and gc.getGame().getGameTurn() <= getTurnForYear(1700)+3:
+			city.setHasRealBuilding(iBarracks, True)
+			city.setHasRealBuilding(iWalls, True)
+			
+			city.setName("New Haven", False)
+			
+			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
+
+		# Leoreth: New York should spawn with some infrastructure
+		if iPlayer == iNewYork and tCity == Areas.getCapital(iNewYork) and gc.getGame().getGameTurn() <= getTurnForYear(1700)+3:
+			if city.getPopulation() < 4:
+				city.setPopulation(4)
+				
+			city.setHasRealBuilding(iBarracks, True)
+			city.setHasRealBuilding(iWalls, True)
+			city.setHasRealBuilding(iLibrary, True)
+			city.setHasRealBuilding(iMarket, True)
+			city.setHasRealBuilding(iGranary, True)
+			city.setHasRealBuilding(iHarbor, True)
+			city.setHasRealBuilding(iForge, True)
+			
+			city.setName("New York", False)
+			
+			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
+
 		if bConquest:
 			pass
 					

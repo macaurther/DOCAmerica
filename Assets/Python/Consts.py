@@ -501,14 +501,14 @@ iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, 
 iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
 # Buildings
 
-iNumBuildings = 145
+iNumBuildings = 146
 (iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument,
 iTotemPole, iWalls, iStable, iLibrary,
 iHarbor, iTheatre,
 iArena, iLighthouse, iWeaver,
 iMarket, iJail, iForge, 
 iPharmacy, iPostOffice,
-iWharf, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity,
+iWharf, iCrabbery, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity,
 iCivicSquare, iSewer, iStarFort, iEstate,
 iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iFactory,
 iDistillery, iPark, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndustrialPark, iCinema, iHospital, 

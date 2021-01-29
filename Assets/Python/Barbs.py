@@ -127,8 +127,9 @@ class Barbs:
 			city.setName(sName, False)
 			city.setPopulation(iPopulation)
 			
-			plot.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
-			city.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
+			# MacAurther: Don't give indies free culture
+			#plot.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
+			#city.changeCulture(iPlayer, 10 * (gc.getGame().getCurrentEra() + 1), True)
 			
 			if iNumUnits > 0 and iUnitType > 0:
 				utils.makeUnit(iUnitType, iPlayer, tPlot, iNumUnits)

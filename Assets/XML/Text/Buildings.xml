@@ -3037,6 +3037,26 @@
 		<Italian>Arena</Italian>
 		<Spanish>Arena</Spanish>
 	</TEXT>
+	
+	<!-- MacAurther TODO: Maybe make these alphabetical -->
+		<TEXT>
+		<Tag>TXT_KEY_BUILDING_MARYLAND_CRABBERY</Tag>
+		<English>Crabbery</English>
+		<French>Crabbery</French>
+		<German>Crabbery</German>
+		<Italian>Crabbery</Italian>
+		<Spanish>Crabbery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHARF_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</English>
+		<French>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</French>
+		<German>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Spanish>
+	</TEXT>
+	
+	
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English></English>

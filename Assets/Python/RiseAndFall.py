@@ -417,10 +417,11 @@ class RiseAndFall:
 				utils.updateMinorTechs(iIndependent2, iBarbarian)
 			
 		
-		if utils.isYearIn(1350, 1918):
-			for iPlayer in [iSpain, iEngland, iFrance]:
-				if iGameTurn == data.players[iPlayer].iExplorationTurn + 1 + data.players[iPlayer].iColonistsAlreadyGiven * 8:
-					self.giveColonists(iPlayer)
+		#MacAurther TODO:
+		#if utils.isYearIn(1350, 1918):
+		#	for iPlayer in [iSpain, iEngland, iFrance]:
+		#		if iGameTurn == data.players[iPlayer].iExplorationTurn + 1 + data.players[iPlayer].iColonistsAlreadyGiven * 8:
+		#			self.giveColonists(iPlayer)
 					
 				
 				
@@ -756,8 +757,10 @@ class RiseAndFall:
 				if pCapital.isOwned():
 					if iCiv == iHuman or not gc.getPlayer(iHuman).isAlive():
 						if not (pCapital.isCity() and pCapital.getPlotCity().isHolyCity()):
-							bDeleteEverything = True
-							print ("bDeleteEverything 1")
+							#MacAurther TODO: Test!
+							pass
+							#bDeleteEverything = True
+							#print ("bDeleteEverything 1")
 					else:
 						bDeleteEverything = True
 						for (i, j) in utils.surroundingPlots(tCapital):
@@ -1628,8 +1631,6 @@ class RiseAndFall:
 		elif iCiv == iConnecticut:  #Macaurther TODO: Flip from Dutch
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
-			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iRhodeIsland:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
@@ -1640,8 +1641,6 @@ class RiseAndFall:
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
-			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 		elif iCiv == iSouthCarolina:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)

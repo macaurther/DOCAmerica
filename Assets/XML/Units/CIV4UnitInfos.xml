@@ -1824,7 +1824,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_COMPANIES</PrereqTech>
-			<BonusType>BONUS_IRON</BonusType>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3569,7 +3568,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_COMPANIES</PrereqTech>
-			<BonusType>BONUS_IRON</BonusType>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

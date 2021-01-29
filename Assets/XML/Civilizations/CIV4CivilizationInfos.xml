@@ -225,7 +225,7 @@
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
-				<LoadingTime>10</LoadingTime>
+				<LoadingTime>5</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
@@ -592,9 +592,9 @@
 			<Identifier>GEO</Identifier>
 			<StartingYear>1732</StartingYear>
 			<LoadingTimes>
+				<LoadingTime>120</LoadingTime>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
-				<LoadingTime>10</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
@@ -682,14 +682,14 @@
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
-				<LoadingTime>10</LoadingTime>
+				<LoadingTime>5</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
-				<Production>5</Production>
+				<Production>3</Production>
 				<Culture>1</Culture>
 				<Growth>5</Growth>
-				<Start>1</Start>
+				<Start>3</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -703,8 +703,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_DEPARTMENT_STORE</BuildingClassType>
-					<BuildingType>BUILDING_AMERICAN_MALL</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_WHARF</BuildingClassType>
+					<BuildingType>BUILDING_MARYLAND_CRABBERY</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>

@@ -259,7 +259,8 @@ class RFCUtils:
 				for iUnit in reversed(range(iNumUnitsInAPlot)):
 					unit = killPlot.getUnit(iUnit)
 					#print ("killplot", x, y, unit.getUnitType(), unit.getOwner(), "j", j)
-					if unit.getOwner() == iOldOwner:
+					#MacAurther: Don't flip human's units because it frustrates them (anecdotal proof)
+					if unit.getOwner() == iOldOwner and unit.getOwner() != self.getHumanID():
 						unit.kill(False, iBarbarian)
 						
 						# Leoreth: can't flip naval units anymore
