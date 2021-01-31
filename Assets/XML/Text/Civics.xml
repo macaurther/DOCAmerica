@@ -833,8 +833,703 @@
 		<Italian>[ICON_BULLET]Can build wonders regardless of State [ICON_RELIGION] requirements</Italian>
 		<Spanish>[ICON_BULLET]Can build wonders regardless of State [ICON_RELIGION] requirements</Spanish>
 	</TEXT>
+	
+	<!-- MacAurther TODO: File cleanup -->
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_</Tag>
+		<Tag>TXT_KEY_CIVICOPTION_IMMIGRATION</Tag>
+		<English>Immigration</English>
+		<French>Immigration</French>
+		<German>Immigration</German>
+		<Italian>Immigration</Italian>
+		<Spanish>Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVICOPTION_DEVELOPMENT</Tag>
+		<English>Development</English>
+		<French>Development</French>
+		<German>Development</German>
+		<Italian>Development</Italian>
+		<Spanish>Development</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SHIRE</Tag>
+		<English>Shire</English>
+		<French>Shire</French>
+		<German>Shire</German>
+		<Italian>Shire</Italian>
+		<Spanish>Shire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SHIRE_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY</Tag>
+		<English>Royal Colony</English>
+		<French>Royal Colony</French>
+		<German>Royal Colony</German>
+		<Italian>Royal Colony</Italian>
+		<Spanish>Royal Colony</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TERRITORY</Tag>
+		<English>Territory</English>
+		<French>Territory</French>
+		<German>Territory</German>
+		<Italian>Territory</Italian>
+		<Spanish>Territory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TERRITORY_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMONWEALTH</Tag>
+		<English>Commonwealth</English>
+		<French>Commonwealth</French>
+		<German>Commonwealth</German>
+		<Italian>Commonwealth</Italian>
+		<Spanish>Commonwealth</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DOMINION</Tag>
+		<English>Dominion</English>
+		<French>Dominion</French>
+		<German>Dominion</German>
+		<Italian>Dominion</Italian>
+		<Spanish>Dominion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DOMINION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATE</Tag>
+		<English>State</English>
+		<French>State</French>
+		<German>State</German>
+		<Italian>State</Italian>
+		<Spanish>State</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATE_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATION</Tag>
+		<English>Nation</English>
+		<French>Nation</French>
+		<German>Nation</German>
+		<Italian>Nation</Italian>
+		<Spanish>Nation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SHERIFFDOM</Tag>
+		<English>Sheriffdom</English>
+		<French>Sheriffdom</French>
+		<German>Sheriffdom</German>
+		<Italian>Sheriffdom</Italian>
+		<Spanish>Sheriffdom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SHERIFFDOM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMON_LAW</Tag>
+		<English>Common Law</English>
+		<French>Common Law</French>
+		<German>Common Law</German>
+		<Italian>Common Law</Italian>
+		<Spanish>Common Law</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMON_LAW_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MARTIAL_LAW</Tag>
+		<English>Martial Law</English>
+		<French>Martial Law</French>
+		<German>Martial Law</German>
+		<Italian>Martial Law</Italian>
+		<Spanish>Martial Law</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MARTIAL_LAW_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATES_RIGHTS</Tag>
+		<English>States' Rights</English>
+		<French>States' Rights</French>
+		<German>States' Rights</German>
+		<Italian>States' Rights</Italian>
+		<Spanish>States' Rights</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATES_RIGHTS_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FEDERALISM</Tag>
+		<English>Federalism</English>
+		<French>Federalism</French>
+		<German>Federalism</German>
+		<Italian>Federalism</Italian>
+		<Spanish>Federalism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FEDERALISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SEGREGATION</Tag>
+		<English>Segregation</English>
+		<French>Segregation</French>
+		<German>Segregation</German>
+		<Italian>Segregation</Italian>
+		<Spanish>Segregation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SEGREGATION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_UNIVERSAL_SUFFERAGE</Tag>
+		<English>Universal Sufferage</English>
+		<French>Universal Sufferage</French>
+		<German>Universal Sufferage</German>
+		<Italian>Universal Sufferage</Italian>
+		<Spanish>Universal Sufferage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_UNIVERSAL_SUFFERAGE_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SERFDOM</Tag>
+		<English>Serfdom</English>
+		<French>Serfdom</French>
+		<German>Serfdom</German>
+		<Italian>Serfdom</Italian>
+		<Spanish>Serfdom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SERFDOM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Tag>
+		<English>Indentured Servitude</English>
+		<French>Indentured Servitude</French>
+		<German>Indentured Servitude</German>
+		<Italian>Indentured Servitude</Italian>
+		<Spanish>Indentured Servitude</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SLAVERY</Tag>
+		<English>Slavery</English>
+		<French>Slavery</French>
+		<German>Slavery</German>
+		<Italian>Slavery</Italian>
+		<Spanish>Slavery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTAINS_OF_INDUSTRY</Tag>
+		<English>Captains of Industry</English>
+		<French>Captains of Industry</French>
+		<German>Captains of Industry</German>
+		<Italian>Captains of Industry</Italian>
+		<Spanish>Captains of Industry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTAINS_OF_INDUSTRY_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WORKERS_RIGHTS</Tag>
+		<English>Workers' Rights</English>
+		<French>Workers' Rights</French>
+		<German>Workers' Rights</German>
+		<Italian>Workers' Rights</Italian>
+		<Spanish>Workers' Rights</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WORKERS_RIGHTS_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_OUTSOURCING</Tag>
+		<English>Outsourcing</English>
+		<French>Outsourcing</French>
+		<German>Outsourcing</German>
+		<Italian>Outsourcing</Italian>
+		<Spanish>Outsourcing</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_OUTSOURCING_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AUTOMATION</Tag>
+		<English>Automation</English>
+		<French>Automation</French>
+		<German>Automation</German>
+		<Italian>Automation</Italian>
+		<Spanish>Automation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AUTOMATION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LAISSEZ_FAIRE</Tag>
+		<English>Laissez-Faire</English>
+		<French>Laissez-Faire</French>
+		<German>Laissez-Faire</German>
+		<Italian>Laissez-Faire</Italian>
+		<Spanish>Laissez-Faire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LAISSEZ_FAIRE_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MERCANTILISM</Tag>
+		<English>Mercantilism</English>
+		<French>Mercantilism</French>
+		<German>Mercantilism</German>
+		<Italian>Mercantilism</Italian>
+		<Spanish>Mercantilism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AGRARIANISM</Tag>
+		<English>Agrarianism</English>
+		<French>Agrarianism</French>
+		<German>Agrarianism</German>
+		<Italian>Agrarianism</Italian>
+		<Spanish>Agrarianism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_AGRARIANISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM</Tag>
+		<English>Industrialism</English>
+		<French>Industrialism</French>
+		<German>Industrialism</German>
+		<Italian>Industrialism</Italian>
+		<Spanish>Industrialism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY</Tag>
+		<English>Manifest Destiny</English>
+		<French>Manifest Destiny</French>
+		<German>Manifest Destiny</German>
+		<Italian>Manifest Destiny</Italian>
+		<Spanish>Manifest Destiny</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONSUMERISM</Tag>
+		<English>Consumerism</English>
+		<French>Consumerism</French>
+		<German>Consumerism</German>
+		<Italian>Consumerism</Italian>
+		<Spanish>Consumerism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONSUMERISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE</Tag>
+		<English>Public Welfare</English>
+		<French>Public Welfare</French>
+		<German>Public Welfare</German>
+		<Italian>Public Welfare</Italian>
+		<Spanish>Public Welfare</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FOR_GLORY_GOD_AND_GOLD</Tag>
+		<English>For Glory, God, and Gold</English>
+		<French>For Glory, God, and Gold</French>
+		<German>For Glory, God, and Gold</German>
+		<Italian>For Glory, God, and Gold</Italian>
+		<Spanish>For Glory, God, and Gold</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FOR_GLORY_GOD_AND_GOLD_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HAVEN</Tag>
+		<English>Haven</English>
+		<French>Haven</French>
+		<German>Haven</German>
+		<Italian>Haven</Italian>
+		<Spanish>Haven</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HAVEN_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PENAL_COLONY</Tag>
+		<English>Penal Colony</English>
+		<French>Penal Colony</French>
+		<German>Penal Colony</German>
+		<Italian>Penal Colony</Italian>
+		<Spanish>Penal Colony</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FREE_RELIGION</Tag>
+		<English>Free Religion</English>
+		<French>Free Religion</French>
+		<German>Free Religion</German>
+		<Italian>Free Religion</Italian>
+		<Spanish>Free Religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FREE_RELIGION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ISOLATIONISM</Tag>
+		<English>Isolationism</English>
+		<French>Isolationism</French>
+		<German>Isolationism</German>
+		<Italian>Isolationism</Italian>
+		<Spanish>Isolationism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MELTING_POT</Tag>
+		<English>Melting Pot</English>
+		<French>Melting Pot</French>
+		<German>Melting Pot</German>
+		<Italian>Melting Pot</Italian>
+		<Spanish>Melting Pot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MELTING_POT_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MULTICULTURISM</Tag>
+		<English>Multiculturism</English>
+		<French>Multiculturism</French>
+		<German>Multiculturism</German>
+		<Italian>Multiculturism</Italian>
+		<Spanish>Multiculturism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MULTICULTURISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMPANIES</Tag>
+		<English>Companies</English>
+		<French>Companies</French>
+		<German>Companies</German>
+		<Italian>Companies</Italian>
+		<Spanish>Companies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMPANIES_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HEADRIGHT</Tag>
+		<English>Headright</English>
+		<French>Headright</French>
+		<German>Headright</German>
+		<Italian>Headright</Italian>
+		<Spanish>Headright</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HEADRIGHT_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RURALISM</Tag>
+		<English>Ruralism</English>
+		<French>Ruralism</French>
+		<German>Ruralism</German>
+		<Italian>Ruralism</Italian>
+		<Spanish>Ruralism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_RURALISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_URBANISM</Tag>
+		<English>Urbanism</English>
+		<French>Urbanism</French>
+		<German>Urbanism</German>
+		<Italian>Urbanism</Italian>
+		<Spanish>Urbanism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_URBANISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HOMESTEADS</Tag>
+		<English>Homesteads</English>
+		<French>Homesteads</French>
+		<German>Homesteads</German>
+		<Italian>Homesteads</Italian>
+		<Spanish>Homesteads</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HOMESTEADS_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SUBURBANISM</Tag>
+		<English>Suburbanism</English>
+		<French>Suburbanism</French>
+		<German>Suburbanism</German>
+		<Italian>Suburbanism</Italian>
+		<Spanish>Suburbanism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SUBURBANISM_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GENTRIFICATION</Tag>
+		<English>Gentrification</English>
+		<French>Gentrification</French>
+		<German>Gentrification</German>
+		<Italian>Gentrification</Italian>
+		<Spanish>Gentrification</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GENTRIFICATION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>>No Translation</Italian>
+		<Spanish>>No Translation</Spanish>
+	</TEXT>
+	
+	
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CIVIC_</Tag>
 		<English></English>
 		<French></French>
 		<German></German>

@@ -6,6 +6,7 @@
 <!-- Vote Infos -->
 <Civ4VoteInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<VoteInfos>
+		<!-- MacAurther TODO: Review and update these -->
 		<VoteInfo>
 			<Type>VOTE_SECRETARY_GENERAL</Type>
 			<Description>TXT_KEY_VOTE_SECRETARY_GENERAL</Description>
@@ -162,7 +163,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_CONSTITUTION</CivicType>
+					<CivicType>CIVIC_FEDERALISM</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -194,7 +195,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_DEMOCRACY</CivicType>
+					<CivicType>CIVIC_UNIVERSAL_SUFFERAGE</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -226,7 +227,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_EGALITARIANISM</CivicType>
+					<CivicType>CIVIC_UNIVERSAL_SUFFERAGE</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -290,7 +291,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_SECULARISM</CivicType>
+					<CivicType>CIVIC_FREE_RELIGION</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -787,7 +788,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_MULTILATERALISM</CivicType>
+					<CivicType>CIVIC_FEDERALISM</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>

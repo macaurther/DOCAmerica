@@ -6122,9 +6122,10 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 
 	bool bStateReligion = GC.getBuildingInfo(eBuilding).getStateReligion() == NO_RELIGION || GC.getBuildingInfo(eBuilding).getStateReligion() == getStateReligion();
 	bool bOrStateReligion = GC.getBuildingInfo(eBuilding).getOrStateReligion() != NO_RELIGION && GC.getBuildingInfo(eBuilding).getOrStateReligion() == getStateReligion();
-	bool bSecularism = getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM;
+	// MacAurther TODO: Civics
+	//bool bSecularism = getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM;
 
-	if (!bStateReligion && !bOrStateReligion && !bSecularism)
+	if (!bStateReligion && !bOrStateReligion)// && !bSecularism)
 	{
 		return false;
 	}
@@ -10216,7 +10217,8 @@ void CvPlayer::changeBuildingBadHealth(int iChange)
 int CvPlayer::getExtraHappiness() const
 {
 	// Leoreth: American UP
-	if (getID() == AMERICA)
+	// MacAurther TODO: Cleanup or reuse
+	/*if (getID() == AMERICA)
 	{
 		int iCivicHappiness = 0;
 
@@ -10226,7 +10228,7 @@ int CvPlayer::getExtraHappiness() const
 		if (getCivics(CIVICOPTION_ECONOMY) == CIVIC_FREE_ENTERPRISE) iCivicHappiness += 2;
 
 		return m_iExtraHappiness + iCivicHappiness;
-	}
+	}*/
 
 	return m_iExtraHappiness;
 }
@@ -24752,11 +24754,12 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 	{
 		return DENIAL_NO_GAIN;
 	}*/
-
-	bool bColonialism = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_TERRITORY) == CIVIC_COLONIALISM;
+	
+	//MacAurther TODO: This entire section
+	//bool bColonialism = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_TERRITORY) == CIVIC_COLONIALISM;
 	bool bNewWorld = false;
 
-	//MacAurther TODO
+	
 	/*CvCity* pCapital = GET_PLAYER(ePlayer).getCapitalCity();
 	if (pCapital != NULL)
 	{
@@ -24779,10 +24782,10 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 	}*/
 
 	// don't buy when not running Colonialism
-	if (!bColonialism && !bNewWorld)
+	/*if (!bColonialism && !bNewWorld)
 	{
 		return DENIAL_NO_GAIN;
-	}
+	}*/
 
 	/*if (getCivics((CivicOptionTypes)2) != CIVIC_SLAVERY)
 	{

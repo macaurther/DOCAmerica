@@ -7705,14 +7705,15 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	}
 
 	// Leoreth: American UP
-	if (GC.getGame().getActivePlayer() == AMERICA)
+	// MacAurther TODO: Cleanup or reuse
+	/*if (GC.getGame().getActivePlayer() == AMERICA)
 	{
 		if (eCivic == CIVIC_DEMOCRACY || eCivic == CIVIC_CONSTITUTION || eCivic == CIVIC_INDIVIDUALISM || eCivic == CIVIC_FREE_ENTERPRISE)
 		{
 			szHelpText.append(NEWLINE);
 			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_AMERICAN_UP_HAPPINESS", 2, gDLL->getSymbolID(HAPPY_CHAR)));
 		}
-	}
+	}*/
 
 	// Capture gold modifier
 	if (GC.getCivicInfo(eCivic).getCaptureGoldModifier() != 0)
@@ -7856,11 +7857,12 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	}
 
 	// Leoreth: ignore state religion requirements with Secularism
-	if (eCivic == CIVIC_SECULARISM)
+	// MacAurther TODO: Cleanup or reuse
+	/*if (eCivic == CIVIC_SECULARISM)
 	{
 		szHelpText.append(NEWLINE);
 		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_IGNORE_STATE_RELIGION"));
-	}
+	}*/
 	
 	int iDoubleModifierCount = 0;
 	CvWStringBuffer szDoubleModifiers;

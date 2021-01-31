@@ -5739,7 +5739,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STATUE_OF_LIBERTY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_STATUE_OF_LIBERTY</MovieDefineTag>
-			<PrereqCivic>CIVIC_DEMOCRACY</PrereqCivic>
+			<PrereqCivic>CIVIC_MELTING_POT</PrereqCivic>
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
 			<PrereqTech>TECH_REPRESENTATION</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
@@ -5799,7 +5799,7 @@
 			<Help>TXT_KEY_BUILDING_TRIUMPHAL_ARCH_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TRIUMPHAL_ARCH</ArtDefineTag>
-			<PrereqCivic>CIVIC_CONSTITUTION</PrereqCivic>
+			<PrereqCivic>CIVIC_MANIFEST_DESTINY</PrereqCivic>
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
 			<PrereqTech>TECH_BALLISTICS</PrereqTech>
 			<ObsoleteTech>TECH_RADAR</ObsoleteTech>
@@ -6391,7 +6391,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_WORLD_TRADE_CENTER</ArtDefineTag>
 			<MaxStartEra>ERA_INFORMATION</MaxStartEra>
 			<PrereqTech>TECH_GLOBALISM</PrereqTech>
-			<PrereqCivic>CIVIC_FREE_ENTERPRISE</PrereqCivic>
+			<PrereqCivic>CIVIC_CONSUMERISM</PrereqCivic>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

@@ -757,10 +757,8 @@ class RiseAndFall:
 				if pCapital.isOwned():
 					if iCiv == iHuman or not gc.getPlayer(iHuman).isAlive():
 						if not (pCapital.isCity() and pCapital.getPlotCity().isHolyCity()):
-							#MacAurther TODO: Test!
-							pass
-							#bDeleteEverything = True
-							#print ("bDeleteEverything 1")
+							bDeleteEverything = True
+							print ("bDeleteEverything 1")
 					else:
 						bDeleteEverything = True
 						for (i, j) in utils.surroundingPlots(tCapital):

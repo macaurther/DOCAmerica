@@ -10692,7 +10692,8 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	}*/
 
 	// Leoreth: some stability related AI help
-	if (eCivic == CIVIC_TOLERANCE || eCivic == CIVIC_SECULARISM)
+	//MacAurther TODO: Civics
+	/*if (eCivic == CIVIC_TOLERANCE || eCivic == CIVIC_SECULARISM)
 	{
 		if (getStabilityParameter(PARAMETER_RELIGION) < 0)
 		{
@@ -10801,15 +10802,16 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	{
 	    iValue /= 10;
 	}
-
+	*/
 	// Leoreth: take American UP into account
-	if (getID() == AMERICA)
+	// MacAurther TODO: Cleanup or reuse
+	/*if (getID() == AMERICA)
 	{
 		if (eCivic == CIVIC_DEMOCRACY || eCivic == CIVIC_CONSTITUTION || eCivic == CIVIC_INDIVIDUALISM || eCivic == CIVIC_FREE_ENTERPRISE)
 		{
 			iValue += 100;
 		}
-	}
+	}*/
 
 	return iValue;
 }
