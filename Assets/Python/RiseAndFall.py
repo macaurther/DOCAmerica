@@ -719,6 +719,14 @@ class RiseAndFall:
 		x, y = tCapital
 		bCapitalSettled = False
 		
+		# MacAurther: Handle colonies that were settled by other Europeans
+		if iCiv == iConnecticut or iCiv == iNewYork or iCiv == iDelaware:
+			for (i, j) in utils.surroundingPlots(tCapital):
+				if gc.getMap().plot(i, j).isCity():
+					bCapitalSettled = True
+					tCapital = (i, j)
+					x, y = tCapital
+					break
 
 		if iCurrentTurn == iBirthYear-1 + data.players[iCiv].iSpawnDelay + data.players[iCiv].iFlipsDelay:
 			if iCiv in lConditionalCivs or bCapitalSettled:

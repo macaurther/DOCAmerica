@@ -152,7 +152,7 @@ class CvRFCEventHandler:
 
 		# MacAurther: Hartford should spawn with a Palisade and Barracks
 		#MacAurther TODO: This isn't working
-		if iPlayer == iConnecticut and tCity == Areas.getCapital(iConnecticut) and gc.getGame().getGameTurn() <= getTurnForYear(1700)+3:
+		if iPlayer == iConnecticut and tCity == Areas.getCapital(iConnecticut):
 			city.setHasRealBuilding(iBarracks, True)
 			city.setHasRealBuilding(iWalls, True)
 			
@@ -161,7 +161,7 @@ class CvRFCEventHandler:
 			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
 
 		# MacAurther: New York should spawn with some infrastructure
-		if iPlayer == iNewYork and tCity == Areas.getCapital(iNewYork) and gc.getGame().getGameTurn() <= getTurnForYear(1700)+3:
+		if iPlayer == iNewYork and tCity == Areas.getCapital(iNewYork):
 			if city.getPopulation() < 5:
 				city.setPopulation(5)
 				

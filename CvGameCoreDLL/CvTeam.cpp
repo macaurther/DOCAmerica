@@ -2893,8 +2893,10 @@ int CvTeam::getSpreadResearchModifier(TechTypes eTech) const
 
 int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 {
-	//MacAurther TODO:
-	bool bAllMedievalTechs = true;
+	//MacAurther TODO: Implement this in some form
+	return 0;
+
+	/*bool bAllMedievalTechs = true;
 
 	for (int iI = 0; iI < GC.getNumTechInfos(); iI++)
 	{
@@ -2938,7 +2940,7 @@ int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 		return -50;
 	}
 
-	return 0;
+	return 0;*/
 }
 
 int CvTeam::getResearchLeft(TechTypes eTech) const

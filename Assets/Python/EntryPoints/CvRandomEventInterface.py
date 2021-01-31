@@ -3210,7 +3210,7 @@ def canTriggerHighWarlord(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
 	# If source civ is operating this Civic, disallow the event to trigger.
-	if player.isCivic(CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_EGALITARIANISM')):
+	if player.isCivic(CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_UNIVERSAL_SUFFERAGE')):
 		return false
 
 	return true
@@ -3566,7 +3566,7 @@ def canApplyEliteSwordsDone2(argsList):
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 		
-	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_MONARCHY')
+	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_ROYAL_COLONY')
 	
 	if not player.isCivic(iCivic):
 		return false
@@ -3673,7 +3673,7 @@ def canApplyGunsButterDone2(argsList):
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 		
-	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_FIREARMS')
+	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_MANIFEST_DESTINY')
 	
 	if not player.isCivic(iCivic):
 		return false
@@ -3753,7 +3753,7 @@ def canApplyNobleKnightsDone2(argsList):
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 		
-	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_CLERGY')
+	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_HAVEN')
 	
 	if not player.isCivic(iCivic):
 		return false

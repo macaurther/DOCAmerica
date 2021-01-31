@@ -2336,7 +2336,6 @@ int getGameTurnForYear(int iTurnYear, int iStartYear, CalendarTypes eCalendar, G
 
 int getGameTurnForMonth(int iTurnMonth, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed)
 {
-	// MacAurther TODO: Scenario Overhaul
 	int iMonthCount;
 	int iTurnCount;
 	int iMonthIncrement;

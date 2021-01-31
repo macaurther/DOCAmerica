@@ -82,6 +82,7 @@ BeginPlayer
 	LeaderType=LEADER_SPANISH_KING
 	CivType=CIVILIZATION_SPAIN
 	PlayableCiv=1
+	StartingGold=1000
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -89,6 +90,7 @@ BeginPlayer
 	LeaderType=LEADER_FRENCH_KING
 	CivType=CIVILIZATION_FRANCE
 	PlayableCiv=1
+	StartingGold=1000
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -96,6 +98,7 @@ BeginPlayer
 	LeaderType=LEADER_ENGLISH_KING
 	CivType=CIVILIZATION_ENGLAND
 	PlayableCiv=1
+	StartingGold=1000
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -103,6 +106,7 @@ BeginPlayer
 	LeaderType=LEADER_ROLFE
 	CivType=CIVILIZATION_VIRGINIA
 	PlayableCiv=1
+	StartingGold=100
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -110,6 +114,7 @@ BeginPlayer
 	LeaderType=LEADER_ADAMS
 	CivType=CIVILIZATION_MASSACHUSETTS
 	PlayableCiv=1
+	StartingGold=100
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -117,6 +122,7 @@ BeginPlayer
 	LeaderType=LEADER_WIGGIN
 	CivType=CIVILIZATION_NEW_HAMPSHIRE
 	PlayableCiv=1
+	StartingGold=100
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -124,6 +130,7 @@ BeginPlayer
 	LeaderType=LEADER_CALVERT
 	CivType=CIVILIZATION_MARYLAND
 	PlayableCiv=1
+	StartingGold=100
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -131,6 +138,7 @@ BeginPlayer
 	LeaderType=LEADER_HOOKER
 	CivType=CIVILIZATION_CONNECTICUT
 	PlayableCiv=1
+	StartingGold=100
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -138,6 +146,7 @@ BeginPlayer
 	LeaderType=LEADER_WILLIAMS
 	CivType=CIVILIZATION_RHODE_ISLAND
 	PlayableCiv=1
+	StartingGold=100
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -145,6 +154,7 @@ BeginPlayer
 	LeaderType=LEADER_RALEIGH
 	CivType=CIVILIZATION_NORTH_CAROLINA
 	PlayableCiv=1
+	StartingGold=200
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -152,6 +162,7 @@ BeginPlayer
 	LeaderType=LEADER_SAYLE
 	CivType=CIVILIZATION_SOUTH_CAROLINA
 	PlayableCiv=1
+	StartingGold=200
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -159,6 +170,7 @@ BeginPlayer
 	LeaderType=LEADER_HYDE
 	CivType=CIVILIZATION_NEW_JERSEY
 	PlayableCiv=1
+	StartingGold=300
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -166,6 +178,7 @@ BeginPlayer
 	LeaderType=LEADER_BURNET
 	CivType=CIVILIZATION_NEW_YORK
 	PlayableCiv=1
+	StartingGold=500
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -173,6 +186,7 @@ BeginPlayer
 	LeaderType=LEADER_PENN
 	CivType=CIVILIZATION_PENNSYLVANIA
 	PlayableCiv=1
+	StartingGold=300
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -180,6 +194,7 @@ BeginPlayer
 	LeaderType=LEADER_BIGGS
 	CivType=CIVILIZATION_DELAWARE
 	PlayableCiv=1
+	StartingGold=200
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -187,6 +202,7 @@ BeginPlayer
 	LeaderType=LEADER_OGLETHORPE
 	CivType=CIVILIZATION_GEORGIA
 	PlayableCiv=1
+	StartingGold=400
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
