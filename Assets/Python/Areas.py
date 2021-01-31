@@ -128,56 +128,10 @@ dNewCapitals = {
 dRespawnCapitals = {
 }
 
-### Birth Area ###
-# MacAurther TODO: Right locations
-tBirthArea = (
-((49, 43),	(53, 46)),	# Spain	TODO
-((51, 46),	(57, 51)),	# France	TODO
-((50, 53),	(54, 60)),	# England	TODO
-((115, 35),	(134, 45)),	# Virginia	TODO
-((136, 59),	(145, 62)),	# Massachusetts	TODO
-((138, 62),	(141, 69)),	# New Hampshire	TODO
-((122, 42),	(134, 48)),	# Maryland	TODO
-((137, 56),	(140, 59)),	# Connecticut	TODO
-((141, 58),	(142, 59)),	# Rhode Island	TODO
-((113, 29),	(136, 36)),	# North Carolina	TODO
-((116, 23),	(126, 30)),	# South Carolina	TODO
-((133, 47),	(136, 55)),	# New Jersey	TODO
-((121, 53),	(140, 67)),	# New York	TODO
-((120, 47),	(133, 56)),	# Pennsylvania	TODO
-((132, 44),	(134, 48)),	# Delaware	TODO
-((111, 17),	(122, 29)),	# Georgia	TODO
-((23, 45),	(32, 50)),	# America	TODO
-((27, 50),	(35, 52)),	# Canada	TODO
-)
-
-dChangedBirthArea = {
-}
-
-dBirthAreaExceptions = {
-iSpain : [],
-iFrance : [],
-iVirginia : [],
-iMassachusetts : [],
-iNewHampshire : [],
-iMaryland : [],
-iConnecticut : [],
-iRhodeIsland : [],
-iNorthCarolina : [],
-iSouthCarolina : [],
-iNewJersey : [],
-iNewYork : [],
-iPennsylvania : [],
-iDelaware : [],
-iGeorgia : [],
-iAmerica : [],
-iCanada : [],
-}
-
-### Core Area ###
-# MacAurther TODO: Right locations
+### Generic Areas ###
+# This is lists of coordinates that are just generically States' boundaries, used in multiple places
 # BL, TR
-tCoreArea = (
+tGenericArea = (
 ((105, 71),	(112, 78)),	# Spain
 ((114, 70),	(119, 78)),	# France
 ((125, 73),	(131, 79)),	# England
@@ -198,11 +152,7 @@ tCoreArea = (
 ((27, 50),	(35, 52)),	# Canada	TODO
 )
 
-dChangedCoreArea = {
-iSpain : 	((49, 40),	(55, 46)),
-}
-
-dCoreAreaExceptions = {
+tGenericAreaExceptions = {
 iSpain : [(49, 43), (49, 44), (50, 43), (50, 44)],
 iFrance : [(51, 46), (52, 46), (55, 46), (57, 46)],
 iVirginia : [
@@ -350,82 +300,47 @@ iAmerica : [(23, 50), (27, 50), (29, 50), (30, 50)],
 iCanada : [(29, 50), (30, 50), (31, 50), (32, 50), (32, 51)],
 }
 
+### Birth Area ###
+# This is Flip Zone
+# BL, TR
+tBirthArea = tGenericArea
+
+dChangedBirthArea = {
+}
+
+dBirthAreaExceptions = tGenericAreaExceptions
+
+### Core Area ###
+# This is Core Area
+# BL, TR
+tCoreArea = tGenericArea
+
+dChangedCoreArea = {
+iSpain : 	((49, 40),	(55, 46)),
+}
+
+dCoreAreaExceptions = tGenericAreaExceptions
+
 dChangedCoreAreaExceptions = {
 }
 
 ### Normal Area ###
-# MacAurther TODO: This is what is revealed on the map on birth
+# This is revealed plots on birth and used for fragmenting Barbarians
+# MacAurther TODO: This is what is revealed on the map on birth, make more interesting
 # BL, TR
-tNormalArea = (
-((49, 43),	(53, 46)),	# Spain	TODO
-((51, 46),	(57, 51)),	# France	TODO
-((50, 53),	(54, 60)),	# England	TODO
-((115, 35),	(134, 45)),	# Virginia	TODO
-((136, 59),	(145, 62)),	# Massachusetts	TODO
-((138, 62),	(141, 69)),	# New Hampshire	TODO
-((122, 42),	(134, 48)),	# Maryland	TODO
-((137, 56),	(140, 59)),	# Connecticut	TODO
-((141, 58),	(142, 59)),	# Rhode Island	TODO
-((113, 29),	(136, 36)),	# North Carolina	TODO
-((116, 23),	(126, 30)),	# South Carolina	TODO
-((133, 47),	(136, 55)),	# New Jersey	TODO
-((121, 53),	(140, 67)),	# New York	TODO
-((120, 47),	(133, 56)),	# Pennsylvania	TODO
-((132, 44),	(134, 48)),	# Delaware	TODO
-((111, 17),	(122, 29)),	# Georgia	TODO
-((23, 45),	(32, 50)),	# America	TODO
-((27, 50),	(35, 52)),	# Canada	TODO
-)
+tNormalArea = tGenericArea
 
 dChangedNormalArea = {
 }
 
-dNormalAreaExceptions = {
-iSpain : [],
-iFrance : [],
-iEngland : [],
-iVirginia : [],
-iMassachusetts : [],
-iNewHampshire : [],
-iMaryland : [],
-iConnecticut : [],
-iRhodeIsland : [],
-iNorthCarolina : [],
-iSouthCarolina : [],
-iNewJersey : [],
-iNewYork : [],
-iPennsylvania : [],
-iDelaware : [],
-iGeorgia : [],
-iAmerica : [],
-iCanada : [],
-}
+dNormalAreaExceptions = tGenericAreaExceptions
 
 dChangedNormalAreaExceptions = {
 }
 
 ### Broader Area ###
-# MacAurther TODO: Right locations
-tBroaderArea = (
-((49, 43),	(53, 46)),	# Spain	TODO
-((51, 46),	(57, 51)),	# France	TODO
-((50, 53),	(54, 60)),	# England	TODO
-((114, 36),	(135, 46)),	# Virginia	TODO
-((136, 59),	(145, 62)),	# Massachusetts	TODO
-((138, 62),	(141, 69)),	# New Hampshire	TODO
-((122, 42),	(134, 48)),	# Maryland	TODO
-((137, 56),	(140, 59)),	# Connecticut	TODO
-((141, 58),	(142, 59)),	# Rhode Island	TODO
-((113, 29),	(136, 36)),	# North Carolina	TODO
-((116, 23),	(126, 30)),	# South Carolina	TODO
-((133, 47),	(136, 55)),	# New Jersey	TODO
-((121, 53),	(140, 67)),	# New York	TODO
-((120, 47),	(133, 56)),	# Pennsylvania	TODO
-((132, 44),	(134, 48)),	# Delaware	TODO
-((111, 17),	(122, 29)),	# Georgia	TODO
-((23, 45),	(32, 50)),	# America	TODO
-((27, 50),	(35, 52)),	# Canada	TODO
-)
+# Used for flipping units on birth in foreign area
+tBroaderArea = tGenericArea
 
 dChangedBroaderArea = {
 }

@@ -707,9 +707,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iCivicLegitimacy == iRevolutionism:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if not pHolyRome.isAlive() and iEra == iExplorationEra:
-			return "TXT_KEY_EMPIRE_ADJECTIVE"
-			
 	elif iPlayer == iEngland:
 		if not utils.isPlotInCore(iPlayer, tCapitalCoords):
 			return "TXT_KEY_CIV_ENGLAND_EXILE"
