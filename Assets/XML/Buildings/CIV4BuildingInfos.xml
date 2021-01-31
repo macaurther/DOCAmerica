@@ -554,7 +554,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
 			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
-			<PrereqTech>TECH_CURRENCY</PrereqTech>
+			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1081,10 +1081,6 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
-			<CommerceModifiers>
-				<iCommerce>0</iCommerce>
-				<iCommerce>50</iCommerce>
-			</CommerceModifiers>
 			<ConstructSound>AS2D_BUILD_UNIVERSITY</ConstructSound>
 			<SpecialistCounts>
 				<SpecialistCount>
@@ -1234,7 +1230,7 @@
 			<Strategy>TXT_KEY_BUILDING_STAR_FORT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STAR_FORT</ArtDefineTag>
-			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
+			<PrereqTech>TECH_FORTIFICATION</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>150</iCost>
 			<iConquestProb>100</iConquestProb>
@@ -4837,7 +4833,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ACADEMY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_ACADEMY</MovieDefineTag>
-			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+			<PrereqTech>TECH_ACADEMIA</PrereqTech>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5275,7 +5271,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NATIONAL_THEATRE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_NATIONAL_THEATRE</MovieDefineTag>
-			<PrereqTech>TECH_HUMANITIES</PrereqTech>
+			<PrereqTech>TECH_INDEPENDENCE</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<iAIWeight>-50</iAIWeight>
@@ -5365,11 +5361,11 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_NATIONAL_COLLEGE</BuildingClass>
-			<Type>BUILDING_NATIONAL_COLLEGE</Type>
-			<Description>TXT_KEY_BUILDING_NATIONAL_COLLEGE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_NATIONAL_COLLEGE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_NATIONAL_COLLEGE_STRATEGY</Strategy>
+			<BuildingClass>BUILDINGCLASS_STATE_COLLEGE</BuildingClass>
+			<Type>BUILDING_STATE_COLLEGE</Type>
+			<Description>TXT_KEY_BUILDING_STATE_COLLEGE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_STATE_COLLEGE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_STATE_COLLEGE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NATIONAL_COLLEGE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_NATIONAL_COLLEGE</MovieDefineTag>
@@ -5741,7 +5737,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_STATUE_OF_LIBERTY</MovieDefineTag>
 			<PrereqCivic>CIVIC_MELTING_POT</PrereqCivic>
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
-			<PrereqTech>TECH_REPRESENTATION</PrereqTech>
+			<PrereqTech>TECH_TRANSCENDENTALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -5906,7 +5902,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BROOKLYN_BRIDGE</ArtDefineTag>
 			<MaxStartEra>ERA_ATOMIC</MaxStartEra>
-			<PrereqTech>TECH_LABOUR_UNIONS</PrereqTech>
+			<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_LEVEE</FreeBuilding>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

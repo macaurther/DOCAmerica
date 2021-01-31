@@ -246,19 +246,15 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Armouries[COLOR_REVERT] increase a city's military unit production.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_NATIONAL_COLLEGE</Tag>
-		<English>National College</English>
-		<French>
-			<Text>Coll&#232;ge national</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Nationale Hochschule</German>
-		<Italian>Collegio nazionale</Italian>
-		<Spanish>Colegio nacional</Spanish>
+		<Tag>TXT_KEY_BUILDING_STATE_COLLEGE</Tag>
+		<English>State College</English>
+		<French>State College</French>
+		<German>State College</German>
+		<Italian>State College</Italian>
+		<Spanish>State College</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_NATIONAL_COLLEGE_STRATEGY</Tag>
+		<Tag>TXT_KEY_BUILDING_STATE_COLLEGE_STRATEGY</Tag>
 		<English>The [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] greatly increases the scientific output of its city. It also allows you to change three citizens into scientists and increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</English>
 		<French>Le [COLOR_BUILDING_TEXT]coll&#232;ge national[COLOR_REVERT] augmente nettement la production scientifique de la ville qui l'abrite. Elle permet aussi de transformer 3 citoyens en scientifiques et augmente les chances d'apparition d'un [COLOR_UNIT_TEXT]savant illustre[COLOR_REVERT].</French>
 		<German>Die [COLOR_BUILDING_TEXT]Nationale Hochschule[COLOR_REVERT] erh&#246;ht den Forschungsaussto&#223; einer Stadt und erh&#246;ht die Chance, einen [COLOR_UNIT_TEXT]Gro&#223;en Wissenschaftler[COLOR_REVERT] hervorzubringen. Dar&#252;ber hinaus k&#246;nnen Sie drei B&#252;rger in Wissenschaftler verwandeln.</German>

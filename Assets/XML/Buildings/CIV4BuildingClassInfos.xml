@@ -1066,13 +1066,13 @@
 			<DefaultBuilding>BUILDING_NATIONAL_GALLERY</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_NATIONAL_COLLEGE</Type>
-			<Description>TXT_KEY_BUILDING_NATIONAL_COLLEGE</Description>
+			<Type>BUILDINGCLASS_STATE_COLLEGE</Type>
+			<Description>TXT_KEY_BUILDING_STATE_COLLEGE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_NATIONAL_COLLEGE</DefaultBuilding>
+			<DefaultBuilding>BUILDING_STATE_COLLEGE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_MILITARY_ACADEMY</Type>

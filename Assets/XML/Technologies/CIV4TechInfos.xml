@@ -262,6 +262,7 @@
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_POST_COLUMBIAN</Era>
+			<iFeatureProductionModifier>50</iFeatureProductionModifier>
 			<iAsset>24</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -335,6 +336,12 @@
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>2</iGridX>
 			<iGridY>7</iGridY>
+			<TerrainTrades>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_COAST</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+			</TerrainTrades>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -369,11 +376,6 @@
 			<bTechTrading>1</bTechTrading>
 			<iGridX>2</iGridX>
 			<iGridY>9</iGridY>
-			<CommerceFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>1</bFlexible>
-			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -434,7 +436,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-				<PrereqTech>TECH_PASTORALISM</PrereqTech>
+				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_PHILOSOPHY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -454,6 +456,7 @@
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
 			<bGoldTrading>1</bGoldTrading>
+			<bOpenBordersTrading>1</bOpenBordersTrading>
 			<iGridX>2</iGridX>
 			<iGridY>13</iGridY>
 			<Flavors>
@@ -470,11 +473,9 @@
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_PASTORALISM</PrereqTech>
+				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_PROPERTY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -530,6 +531,7 @@
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
+			<bIrrigation>1</bIrrigation>
 			<iGridX>3</iGridX>
 			<iGridY>3</iGridY>
 			<Flavors>
@@ -567,6 +569,7 @@
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
+			<bBridgeBuilding>1</bBridgeBuilding>
 			<iGridX>3</iGridX>
 			<iGridY>5</iGridY>
 			<Flavors>
@@ -1073,6 +1076,7 @@
 			<iCost>350</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
+			<iTradeRoutes>1</iTradeRoutes>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1276,7 +1280,6 @@
 			<iCost>425</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1346,7 +1349,6 @@
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iTradeRoutes>1</iTradeRoutes>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2110,6 +2112,11 @@
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>9</iGridX>
 			<iGridY>11</iGridY>
+			<CommerceFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>1</bFlexible>
+			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -2652,9 +2659,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_LABOUR_UNIONS</Type>
-			<Description>TXT_KEY_TECH_LABOUR_UNIONS</Description>
-			<Civilopedia>TXT_KEY_TECH_LABOUR_UNIONS_PEDIA</Civilopedia>
+			<Type>TECH_LABOR_UNIONS</Type>
+			<Description>TXT_KEY_TECH_LABOR_UNIONS</Description>
+			<Civilopedia>TXT_KEY_TECH_LABOR_UNIONS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>2750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2686,7 +2693,7 @@
 				<PrereqTech>TECH_PARTIES</PrereqTech>
 				<PrereqTech>TECH_NATIVISM</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_LABOUR_UNIONS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_LABOR_UNIONS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Labour_Unions.dds</Button>
@@ -2941,7 +2948,7 @@
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_REFRIGERATION</PrereqTech>
-				<PrereqTech>TECH_LABOUR_UNIONS</PrereqTech>
+				<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CONSUMERISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -2977,7 +2984,7 @@
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_JOURNALISM</PrereqTech>
-				<PrereqTech>TECH_LABOUR_UNIONS</PrereqTech>
+				<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CONSERVATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

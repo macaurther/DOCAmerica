@@ -23,7 +23,7 @@
 			<Description>TXT_KEY_CIVIC_ROYAL_COLONY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ROYAL_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Strategy>
-			<TechPrereq>TECH_PROPERTY</TechPrereq>
+			<TechPrereq>TECH_CHARTER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -43,7 +43,7 @@
 			<Description>TXT_KEY_CIVIC_TERRITORY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TERRITORY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TERRITORY_STRATEGY</Strategy>
-			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
+			<TechPrereq>TECH_PIONEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -85,7 +85,7 @@
 			<Description>TXT_KEY_CIVIC_COMMONWEALTH</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COMMONWEALTH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Strategy>
-			<TechPrereq>TECH_WRITING</TechPrereq>
+			<TechPrereq>TECH_TRANSCENDENTALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Republic.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -150,7 +150,7 @@
 			<Description>TXT_KEY_CIVIC_COMMON_LAW</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COMMON_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMON_LAW_STRATEGY</Strategy>
-			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
+			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -175,7 +175,7 @@
 			<Description>TXT_KEY_CIVIC_MARTIAL_LAW</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MARTIAL_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MARTIAL_LAW_STRATEGY</Strategy>
-			<TechPrereq>TECH_JUDICIARY</TechPrereq>
+			<TechPrereq>TECH_STATECRAFT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Vassalage.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -198,7 +198,7 @@
 			<Description>TXT_KEY_CIVIC_STATES_RIGHTS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_STATES_RIGHTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_STATES_RIGHTS_STRATEGY</Strategy>
-			<TechPrereq>TECH_PRINTING</TechPrereq>
+			<TechPrereq>TECH_INDEPENDENCE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Meritocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -215,7 +215,7 @@
 			<Description>TXT_KEY_CIVIC_FEDERALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_FEDERALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_FEDERALISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_STATECRAFT</TechPrereq>
+			<TechPrereq>TECH_FEDERALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Constitution.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -284,7 +284,7 @@
 			<Description>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Strategy>
-			<TechPrereq>TECH_MINING</TechPrereq>
+			<TechPrereq>TECH_INDENTURES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -296,7 +296,7 @@
 			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
-			<TechPrereq>TECH_HORTICULTURE</TechPrereq>
+			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -332,7 +332,7 @@
 			<Description>TXT_KEY_CIVIC_CAPTAINS_OF_INDUSTRY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CAPTAINS_OF_INDUSTRY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CAPTAINS_OF_INDUSTRY_STRATEGY</Strategy>
-			<TechPrereq>TECH_HUMANITIES</TechPrereq>
+			<TechPrereq>TECH_INDUSTRIALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Free Enterprise.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -354,7 +354,7 @@
 			<Description>TXT_KEY_CIVIC_WORKERS_RIGHTS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_WORKERS_RIGHTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_WORKERS_RIGHTS_STRATEGY</Strategy>
-			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
+			<TechPrereq>TECH_LABOR_UNIONS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Individualism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -433,7 +433,7 @@
 			<Description>TXT_KEY_CIVIC_MERCANTILISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MERCANTILISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_PROPERTY</TechPrereq>
+			<TechPrereq>TECH_COLONIZATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Redistribution.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -455,7 +455,7 @@
 			<Description>TXT_KEY_CIVIC_AGRARIANISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_AGRARIANISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_AGRARIANISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_CURRENCY</TechPrereq>
+			<TechPrereq>TECH_HORTICULTURE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Merchant Trade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -535,7 +535,7 @@
 			<Description>TXT_KEY_CIVIC_MANIFEST_DESTINY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MANIFEST_DESTINY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Strategy>
-			<TechPrereq>TECH_ECONOMICS</TechPrereq>
+			<TechPrereq>TECH_MANIFEST_DESTINY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Free Enterprise.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -554,7 +554,7 @@
 			<Description>TXT_KEY_CIVIC_CONSUMERISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONSUMERISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONSUMERISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_LABOUR_UNIONS</TechPrereq>
+			<TechPrereq>TECH_LABOR_UNIONS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/State_Property.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -638,7 +638,7 @@
 			<Description>TXT_KEY_CIVIC_HAVEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HAVEN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HAVEN_STRATEGY</Strategy>
-			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
+			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Deification.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -658,7 +658,7 @@
 			<Description>TXT_KEY_CIVIC_PENAL_COLONY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PENAL_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PENAL_COLONY_STRATEGY</Strategy>
-			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
+			<TechPrereq>TECH_CHARTER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Priesthood.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -678,7 +678,7 @@
 			<Description>TXT_KEY_CIVIC_FREE_RELIGION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_FREE_RELIGION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_FREE_RELIGION_STRATEGY</Strategy>
-			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
+			<TechPrereq>TECH_TRANSCENDENTALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Asceticism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -689,7 +689,7 @@
 			<Description>TXT_KEY_CIVIC_ISOLATIONISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ISOLATIONISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_JUDICIARY</TechPrereq>
+			<TechPrereq>TECH_TRANSCENDENTALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Theocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -713,7 +713,7 @@
 			<Description>TXT_KEY_CIVIC_MELTING_POT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MELTING_POT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MELTING_POT_STRATEGY</Strategy>
-			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
+			<TechPrereq>TECH_TRANSCENDENTALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tolerance.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -784,7 +784,7 @@
 			<Description>TXT_KEY_CIVIC_HEADRIGHT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HEADRIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HEADRIGHT_STRATEGY</Strategy>
-			<TechPrereq>TECH_STEEL</TechPrereq>
+			<TechPrereq>TECH_CHARTER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Conquest.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -795,7 +795,7 @@
 			<Description>TXT_KEY_CIVIC_RURALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_RURALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_RURALISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
+			<TechPrereq>TECH_HERITAGE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Manorialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -856,7 +856,7 @@
 			<Description>TXT_KEY_CIVIC_URBANISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_URBANISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_URBANISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_HERITAGE</TechPrereq>
+			<TechPrereq>TECH_URBAN_PLANNING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -898,7 +898,7 @@
 			<Description>TXT_KEY_CIVIC_HOMESTEADS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HOMESTEADS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HOMESTEADS_STRATEGY</Strategy>
-			<TechPrereq>TECH_GEOGRAPHY</TechPrereq>
+			<TechPrereq>TECH_MANIFEST_DESTINY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Colonialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
