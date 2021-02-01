@@ -330,40 +330,45 @@ def getCivics(iPlayer):
 def isCommunist(iPlayer):
 	iGovernment, iLegitimacy, iSociety, iEconomy, _, _ = getCivics(iPlayer)
 	
-	if iLegitimacy == iVassalage: return False
+	# MacAurther: Communist detected on American soil. Lethal force engaged
+	# i.e. no communist civics
 	
-	if iEconomy == iCentralPlanning: return True
+	#if iLegitimacy == iVassalage: return False
 	
-	if iGovernment == iStateParty and iSociety != iTotalitarianism and iEconomy not in [iMerchantTrade, iFreeEnterprise]: return True
+	#if iEconomy == iCentralPlanning: return True
+	
+	#if iGovernment == iStateParty and iSociety != iTotalitarianism and iEconomy not in [iMerchantTrade, iFreeEnterprise]: return True
 		
 	return False
 	
 def isFascist(iPlayer):
 	iGovernment, _, iSociety, _, _, _ = getCivics(iPlayer)
 	
-	if iSociety == iTotalitarianism: return True
+	# MacAurther: Same deal, no fascist civics
+	#if iSociety == iTotalitarianism: return True
 	
-	if iGovernment == iStateParty: return True
+	#if iGovernment == iStateParty: return True
 		
 	return False
 	
 def isRepublic(iPlayer):
 	iGovernment, iLegitimacy, _, _, _, _ = getCivics(iPlayer)
 	
-	if iGovernment == iDemocracy: return True
+	# MacAurther TODO: Cleanup
+	#if iGovernment == iDemocracy: return True
 	
-	if iGovernment in [iDespotism, iRepublic, iElective] and iLegitimacy == iConstitution: return True
+	#if iGovernment in [iDespotism, iRepublic, iElective] and iLegitimacy == iConstitution: return True
 	
 	return False
 	
 def isCityStates(iPlayer):
 	iGovernment, iLegitimacy, _, _, _, _ = getCivics(iPlayer)
 	
-	if iLegitimacy not in [iAuthority, iCitizenship, iCentralism]: return False
+	#if iLegitimacy not in [iAuthority, iCitizenship, iCentralism]: return False
 	
-	if iGovernment in [iRepublic, iElective, iDemocracy]: return True
+	#if iGovernment in [iRepublic, iElective, iDemocracy]: return True
 	
-	if iGovernment == iChiefdom and iPlayer in lCityStatesStart: return True
+	#if iGovernment == iChiefdom and iPlayer in lCityStatesStart: return True
 	
 	return False
 	
@@ -499,7 +504,7 @@ def specificName(iPlayer):
 	bAnarchy = pPlayer.isAnarchy()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (iCivicReligion == iTheocracy)
+	#bTheocracy = (iCivicReligion == iTheocracy)
 	bResurrected = data.players[iPlayer].iResurrections > 0
 	bCapitulated = isCapitulated(iPlayer)
 	iAnarchyTurns = data.players[iPlayer].iAnarchyTurns
@@ -507,6 +512,7 @@ def specificName(iPlayer):
 	iGameEra = gc.getGame().getCurrentEra()
 	bWar = isAtWar(iPlayer)
 
+	# MacAurther TODO
 	if iPlayer == iSpain:
 		pass
 			
@@ -555,7 +561,7 @@ def specificAdjective(iPlayer):
 	bAnarchy = pPlayer.isAnarchy()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (iCivicReligion == iTheocracy)
+	#bTheocracy = (iCivicReligion == iTheocracy)
 	bResurrected = data.players[iPlayer].iResurrections > 0
 	bCapitulated = isCapitulated(iPlayer)
 	iAnarchyTurns = data.players[iPlayer].iAnarchyTurns
@@ -565,6 +571,7 @@ def specificAdjective(iPlayer):
 	
 	bMonarchy = not isCommunist(iPlayer) and not isFascist(iPlayer) and not isRepublic(iPlayer)
 	
+	# MacAurther TODO
 	if iPlayer == iSpain:
 		pass
 			
@@ -679,7 +686,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	bAnarchy = pPlayer.isAnarchy()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (iCivicReligion == iTheocracy)
+	#bTheocracy = (iCivicReligion == iTheocracy)
 	bResurrected = data.players[iPlayer].iResurrections > 0
 	bCapitulated = isCapitulated(iPlayer)
 	iAnarchyTurns = data.players[iPlayer].iAnarchyTurns
@@ -687,6 +694,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	iGameEra = gc.getGame().getCurrentEra()
 	bWar = isAtWar(iPlayer)
 
+	# MacAurther TODO
 	if iPlayer == iSpain:
 		if iReligion == iIslam:
 			return "TXT_KEY_SULTANATE_OF"
@@ -702,9 +710,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_FRANCE_EXILE"
 			
 		if iEra >= iIndustrialEra and bEmpire:
-			return "TXT_KEY_EMPIRE_ADJECTIVE"
-			
-		if iCivicLegitimacy == iRevolutionism:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iPlayer == iEngland:
@@ -754,7 +759,7 @@ def leader(iPlayer):
 	iGameTurn = gc.getGame().getGameTurn()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (iCivicReligion == iTheocracy)
+	#bTheocracy = (iCivicReligion == iTheocracy)
 	bResurrected = data.players[iPlayer].iResurrections > 0
 	bMonarchy = not (isCommunist(iPlayer) or isFascist(iPlayer) or isRepublic(iPlayer))
 	iAnarchyTurns = data.players[iPlayer].iAnarchyTurns

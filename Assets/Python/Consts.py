@@ -542,15 +542,15 @@ iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
 iNumCivics = 42
-(iChiefdom, iDespotism, iMonarchy, iRepublic, iElective, iStateParty, iDemocracy,
-iAuthority, iCitizenship, iVassalage, iMeritocracy, iCentralism, iRevolutionism, iConstitution,
-iTraditionalism, iSlavery, iManorialism, iCasteSystem, iIndividualism, iTotalitarianism, iEgalitarianism,
-iReciprocity, iRedistribution, iMerchantTrade, iRegulatedTrade, iFreeEnterprise, iCentralPlanning, iPublicWelfare,
-iAnimism, iDeification, iClergy, iMonasticism, iTheocracy, iTolerance, iSecularism,
-iSovereignty, iConquest, iTributaries, iIsolationism, iColonialism, iNationhood, iMultilateralism) = range(iNumCivics)
+(iShire, iRoyalColony, iTerritory, iCommonwealth, iDominion, iState, iNation,
+iSheriffdom, iCommonLaw, iMartialLaw, iStatesRights, iFederalism, iSegregation, iUniversalSufferage,
+iSerfdom, iIndenturedServitude, iSlavery, iCaptainsOfIndustry, iWorkersRights, iOutsourcing, iAutomation,
+iLaissezFaire, iMercantilism, iAgrarianism, iIndustrialism, iManifestDestinyCivic, iConsumerismCivic, iPublicWelfare,
+iForGloryGodAndGold, iHaven, iPenalColony, iFreeReligion, iIsolationism, iMeltingPot, iMulticulturism,
+iCompanies, iHeadright, iRuralism, iUrbanism, iHomesteads, iSuburbanism, iGentrification) = range(iNumCivics)
 
 iNumCivicCategories = 6
-(iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
+(iCivicsGovernment, iCivicsLegal, iCivicsLabor, iCivicsEconomy, iCivicsImmigration, iCivicsDevelopment) = range(iNumCivicCategories)
 
 #Specialists
 iNumSpecialists = 19

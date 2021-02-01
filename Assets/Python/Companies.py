@@ -121,23 +121,24 @@ class Companies:
 		owner = gc.getPlayer(iOwner)
 		ownerTeam = gc.getTeam(owner.getTeam())
 		
+		#MacAurther
 		# Central Planning: only one company per city
-		if owner.getCivics(iCivicsEconomy) == iCentralPlanning:
-			for iLoopCorporation in range(iNumCorporations):
-				if city.isHasCorporation(iLoopCorporation) and iLoopCorporation != iCompany:
-					return -1
+		#if owner.getCivics(iCivicsEconomy) == iCentralPlanning:
+		#	for iLoopCorporation in range(iNumCorporations):
+		#		if city.isHasCorporation(iLoopCorporation) and iLoopCorporation != iCompany:
+		#			return -1
 
 		# Colonialism increases likeliness for trading company
-		if iCompany == iTradingCompany and owner.getCivics(iCivicsTerritory) == iColonialism:
-			iValue += 2
+		#if iCompany == iTradingCompany and owner.getCivics(iCivicsTerritory) == iColonialism:
+		#	iValue += 2
 			
 		# Merchant Trade increases likeliness for silk route
-		if iCompany == iSilkRoute and owner.getCivics(iCivicsEconomy) == iMerchantTrade:
-			iValue += 2
+		#if iCompany == iSilkRoute and owner.getCivics(iCivicsEconomy) == iMerchantTrade:
+		#	iValue += 2
 
 		# Free Enterprise increases likeliness for all companies
-		if owner.getCivics(iCivicsEconomy) == iFreeEnterprise:
-			iValue += 1
+		#if owner.getCivics(iCivicsEconomy) == iFreeEnterprise:
+		#	iValue += 1
 
 		# civilization requirements
 		if iCompany == iTradingCompany:

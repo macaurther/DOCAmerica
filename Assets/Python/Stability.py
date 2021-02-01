@@ -668,7 +668,7 @@ def calculateStability(iPlayer):
 	bTotalitarianism = iCivicSociety == iTotalitarianism
 	bFreeEnterprise = iCivicEconomy == iFreeEnterprise
 	bPublicWelfare = iCivicEconomy == iPublicWelfare
-	bTheocracy = iCivicReligion == iTheocracy
+	#bTheocracy = iCivicReligion == iTheocracy
 	bTolerance = iCivicReligion == iTolerance
 	bConquest = iCivicTerritory == iConquest
 	bTributaries = iCivicTerritory == iTributaries
@@ -874,7 +874,7 @@ def calculateStability(iPlayer):
 	iDomesticStability += iHappinessStability
 	
 	# Civics (combinations)
-	civics = (iCivicGovernment, iCivicLegitimacy, iCivicSociety, iCivicEconomy, iCivicReligion, iCivicTerritory)
+	civics = (iCivicGovernment, iCivicsLegal, iCivicsLabor, iCivicsEconomy, iCivicsImmigration, iCivicsDevelopment)
 	iCivicCombinationStability = getCivicStability(iPlayer, civics)
 		
 	if utils.getHumanID() != iPlayer and iCivicCombinationStability < 0: iCivicCombinationStability /= 2
@@ -884,7 +884,30 @@ def calculateStability(iPlayer):
 	iCivicEraTechStability = 0
 	
 	# Civics (eras and techs and religions)
-	if iCivicLegitimacy == iVassalage:
+	if iCivicGovernment == iRoyalColony:
+		if iCurrentEra <= iColonialEra: iCivicEraTechStability += 3
+		elif iCurrentEra > iRevolutionaryEra: iCivicEraTechStability -= 5
+	
+	if iCivicsLabor == iIndenturedServitude:
+		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 2
+	
+	if iCivicsLabor == iSlavery:
+		if iCurrentEra > iExpansionEra: iCivicEraTechStability -= 5
+		if iCurrentEra > iIndustrialEra: iCivicEraTechStability -= 5
+	
+	if iCivicsEconomy == iMercantilism:
+		if iCurrentEra > iRevolutionaryEra: iCivicEraTechStability -= 4
+	
+	if iCivicsImmigration == iHaven:
+		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 3
+	
+	if iCivicsImmigration == iPenalColony:
+		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 3
+	
+	if iCivicsDevelopment == iHeadright:
+		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 3
+	
+	'''if iCivicLegitimacy == iVassalage:
 		if iCurrentEra == iExplorationEra: iCivicEraTechStability += 2
 		elif iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 5
 		
@@ -930,7 +953,7 @@ def calculateStability(iPlayer):
 		if iCivicReligion == iMonasticism: iCivicEraTechStability += 2
 		
 	elif iStateReligion == iConfucianism:
-		if iCivicTerritory == iIsolationism: iCivicEraTechStability += 3
+		if iCivicTerritory == iIsolationism: iCivicEraTechStability += 3'''
 		
 	if utils.getHumanID() != iPlayer and iCivicEraTechStability < 0: iCivicEraTechStability /= 2
 	
@@ -965,9 +988,10 @@ def calculateStability(iPlayer):
 			
 			iReligionStability += iBelieverStability
 			
-			if bTheocracy:
-				iOnlyStateReligionRatio = 100 * iOnlyStateReligionPopulation / iTotalPopulation
-				iReligionStability += iOnlyStateReligionRatio / 20
+			# MacAurther
+			#if bTheocracy:
+			#	iOnlyStateReligionRatio = 100 * iOnlyStateReligionPopulation / iTotalPopulation
+			#	iReligionStability += iOnlyStateReligionRatio / 20
 	
 	lParameters[iParameterReligion] = iReligionStability
 		
@@ -978,9 +1002,10 @@ def calculateStability(iPlayer):
 	iVassalStability = 0
 	iDefensivePactStability = 0
 	iRelationStability = 0
-	iNationhoodStability = 0
-	iTheocracyStability = 0
-	iMultilateralismStability = 0
+	#MacAuther
+	#iNationhoodStability = 0
+	#iTheocracyStability = 0
+	#iMultilateralismStability = 0
 	
 	iNumContacts = 0
 	iFriendlyRelations = 0
@@ -1029,9 +1054,10 @@ def calculateStability(iPlayer):
 			if utils.isNeighbor(iPlayer, iLoopPlayer):
 				if bNationhood: iNationhoodStability += 2
 				
-				if bTheocracy:
-					if pLoopPlayer.getStateReligion() != iStateReligion: iTheocracyStability += 3
-					else: iTheocracyStability -= 2
+				#MacAurther
+				#if bTheocracy:
+					#if pLoopPlayer.getStateReligion() != iStateReligion: iTheocracyStability += 3
+					#else: iTheocracyStability -= 2
 		
 	# attitude stability
 	lStrongerAttitudes, lEqualAttitudes, lWeakerAttitudes = calculateRankedAttitudes(iPlayer, lContacts)
@@ -1062,11 +1088,12 @@ def calculateStability(iPlayer):
 	lParameters[iParameterVassals] = iVassalStability
 	lParameters[iParameterDefensivePacts] = iDefensivePactStability
 	lParameters[iParameterRelations] = iRelationStability
-	lParameters[iParameterNationhood] = iNationhoodStability
-	lParameters[iParameterTheocracy] = iTheocracyStability
-	lParameters[iParameterMultilateralism] = iMultilateralismStability
+	#MacAurther
+	#lParameters[iParameterNationhood] = iNationhoodStability
+	#lParameters[iParameterTheocracy] = iTheocracyStability
+	#lParameters[iParameterMultilateralism] = iMultilateralismStability
 			
-	iForeignStability += iVassalStability + iDefensivePactStability + iRelationStability + iNationhoodStability + iTheocracyStability + iMultilateralismStability
+	iForeignStability += iVassalStability + iDefensivePactStability + iRelationStability# + iNationhoodStability + iTheocracyStability + iMultilateralismStability
 	
 	# MILITARY
 	
@@ -1134,7 +1161,66 @@ def getCivicStability(iPlayer, lCivics):
 	iCurrentEra = gc.getPlayer(iPlayer).getCurrentEra()
 	iStability = 0
 	
-	if iTotalitarianism in civics:
+	#MacAurther TODO: Balance Civic Stability
+	#MacAurther TODO: Maybe figure out a tool tip that better shows exact values?
+	
+	if iRoyalColony in civics:
+		if iMercantilism in civics: iStability +=5
+		if iPenalColony in civics: iStability +=2
+		if iIsolationism in civics: iStability +=1
+		if iHeadright in civics: iStability +=1
+		if iStatesRights in civics: iStability -=5
+		if iFederalism in civics: iStability -=8
+		if iManifestDestiny in civics: iStability -=3
+		if iHomesteads in civics: iStability -=3
+	
+	if iTerritory in civics:
+		if iHomesteads in civics: iStability +=5
+		if iUrbanism in civics: iStability -=3
+		if iSuburbanism in civics: iStability -=2
+		if iUniversalSufferage in civics: iStability -=5
+	
+	if iMartialLaw in civics:
+		if iTerritory in civics: iStability +=2
+		if iManifestDestiny in civics: iStability +=2
+	
+	if iIndenturedServitude in civics:
+		if iRoyalColony in civics: iStability +=3
+	
+	if iSlavery in civics:
+		if iAgrarianism in civics: iStability +=3
+		if iRuralism in civics: iStability +=3
+		if iStatesRights in civics: iStability +=5
+		if iUrbanism in civics: iStability -=5
+		if iFederalism in civics: iStability -=5
+		if iIndustrialism in civics: iStability -=5
+		if iMeltingPot in civics: iStability -=8
+		if iMulticulturism in civics: iStability -=8
+	
+	if iMercantilism in civics:
+		if iRoyalColony in civics: iStability +=3
+	
+	if iAgrarianism in civics:
+		if iRuralism in civics: iStability +=3
+		if iHomesteads in civics: iStability +=3
+		if iUrbanism in civics: iStability -=3
+		if iSuburbanism in civics: iStability -=3
+	
+	if iPenalColony in civics:
+		if iRoyalColony in civics: iStability +=1
+		if iCommonwealth in civics: iStability -=4
+		if iDominion in civics: iStability -=3
+		if iState in civics: iStability -=3
+	
+	if iHeadright in civics:
+		if iIndenturedServitude in civics: iStability +=2
+		if iAutomation in civics: iStability -=3
+		if iMeltingPot in civics: iStability -=3
+	
+	if iRuralism in civics:
+		if iAgrarianism in civics: iStability +=3
+	
+	'''if iTotalitarianism in civics:
 		if iStateParty in civics: iStability += 5
 		if iDespotism in civics: iStability += 3
 		if iRevolutionism in civics: iStability += 3
@@ -1227,7 +1313,7 @@ def getCivicStability(iPlayer, lCivics):
 	if iIsolationism in civics:
 		if civics.any(iMerchantTrade, iFreeEnterprise): iStability -= 4
 		if civics.any(iRegulatedTrade, iCentralPlanning): iStability += 3
-		if iMeritocracy in civics: iStability += 3
+		if iMeritocracy in civics: iStability += 3'''
 		
 	return iStability
 	
@@ -1291,7 +1377,8 @@ def updateEconomyTrend(iPlayer):
 	if isDecline(iPlayer):
 		iNegativeThreshold = 2
 	
-	if iCivicEconomy == iCentralPlanning: iNegativeThreshold = 0
+	#MacAurther
+	#if iCivicEconomy == iCentralPlanning: iNegativeThreshold = 0
 	
 	iPercentChange = 100 * iCurrentCommerce / iPreviousCommerce - 100
 	

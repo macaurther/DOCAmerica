@@ -221,11 +221,12 @@ def onReligionSpread(iReligion, iCiv, city):
 	pass
 			
 def onRevolution(iCiv):
-
-	if gc.getPlayer(iCiv).getCivics(iCivicsEconomy) == iCentralPlanning:
-		applyCommunistNames(iCiv)
-	else:
-		revertCommunistNames(iCiv)
+	#MacAurther
+	pass
+	#if gc.getPlayer(iCiv).getCivics(iCivicsEconomy) == iCentralPlanning:
+	#	applyCommunistNames(iCiv)
+	#else:
+	#	revertCommunistNames(iCiv)
 
 
 # city coordinates
