@@ -2425,8 +2425,9 @@ def canTriggerTea(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
-	if player.isCivic(CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_COLONIALISM')):
-		return false
+	# MacAurther
+	#if player.isCivic(CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_COLONIALISM')):
+	#	return false
 
 	bCanTrade = false		
 	for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):

@@ -492,7 +492,7 @@ def specificName(iPlayer):
 	iGameTurn = gc.getGame().getGameTurn()
 	pPlayer = gc.getPlayer(iPlayer)
 	tPlayer = gc.getTeam(pPlayer.getTeam())
-	iCivicGovernment, iCivicLegitimacy, iCivicSociety, iCivicEconomy, iCivicReligion, iCivicTerritory = getCivics(iPlayer)
+	iCivicGovernment, iCivicLegal, iCivicLabor, iCivicEconomy, iCivicImmigration, iCivicDevelopment = getCivics(iPlayer)
 	
 	iNumCities = pPlayer.getNumCities()
 	if iNumCities == 0: return short(iPlayer)
@@ -549,7 +549,7 @@ def specificAdjective(iPlayer):
 	iGameTurn = gc.getGame().getGameTurn()
 	pPlayer = gc.getPlayer(iPlayer)
 	tPlayer = gc.getTeam(pPlayer.getTeam())
-	iCivicGovernment, iCivicLegitimacy, iCivicSociety, iCivicEconomy, iCivicReligion, iCivicTerritory = getCivics(iPlayer)
+	iCivicGovernment, iCivicLegal, iCivicLabor, iCivicEconomy, iCivicImmigration, iCivicDevelopment = getCivics(iPlayer)
 	
 	iNumCities = pPlayer.getNumCities()
 	if iNumCities == 0: return gc.getPlayer(iPlayer).getCivilizationAdjective(0)
@@ -654,10 +654,11 @@ def republicTitle(iPlayer):
 		if iEra >= iInformation:
 			return "TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC"
 	
-	if iPlayer == iAmerica:
-		_, _, iCivicSociety, _, _, _ = getCivics(iPlayer)
-		if iCivicSociety in [iManorialism, iSlavery]:
-			return key(iPlayer, "CSA")
+	#MacAurther TODO:
+	#if iPlayer == iAmerica:
+	#	_, _, iCivicLabor, _, _, _ = getCivics(iPlayer)
+	#	if iCivicSociety in [iSlavery]:
+	#		return key(iPlayer, "CSA")
 			
 	if gc.getPlayer(iPlayer).getStateReligion() == iIslam:
 		if iPlayer in lIslamicRepublicOf: return "TXT_KEY_ISLAMIC_REPUBLIC_OF"
@@ -674,7 +675,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	iGameTurn = gc.getGame().getGameTurn()
 	pPlayer = gc.getPlayer(iPlayer)
 	tPlayer = gc.getTeam(pPlayer.getTeam())
-	iCivicGovernment, iCivicLegitimacy, iCivicSociety, iCivicEconomy, iCivicReligion, iCivicTerritory = getCivics(iPlayer)
+	iCivicGovernment, iCivicLegal, iCivicLabor, iCivicEconomy, iCivicImmigration, iCivicDevelopment = getCivics(iPlayer)
 	
 	iNumCities = pPlayer.getNumCities()
 	if iNumCities == 0: return defaultTitle(iPlayer)
@@ -725,11 +726,12 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		
 			if countPlayerAreaCities(iPlayer, utils.getPlotList(tBritainTL, tBritainBR)) >= 3:
 				return "TXT_KEY_CIV_ENGLAND_UNITED_KINGDOM_OF"
-			
-	elif iPlayer == iAmerica:
-		if iCivicSociety in [iSlavery, iManorialism]:
-			if isRegionControlled(iAmerica, rMesoamerica) and isRegionControlled(iAmerica, rCaribbean):
-				return "TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE"
+	
+	#MacAurther TODO
+	#elif iPlayer == iAmerica:
+	#	if iCivicSociety in [iSlavery, iManorialism]:
+	#		if isRegionControlled(iAmerica, rMesoamerica) and isRegionControlled(iAmerica, rCaribbean):
+	#			return "TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE"
 		
 			return "TXT_KEY_CIV_AMERICA_CSA"
 			
@@ -755,7 +757,7 @@ def leader(iPlayer):
 	iReligion = pPlayer.getStateReligion()
 	capital = gc.getPlayer(iPlayer).getCapitalCity()
 	tCapitalCoords = (capital.getX(), capital.getY())
-	iCivicGovernment, iCivicLegitimacy, iCivicSociety, iCivicEconomy, iCivicReligion, iCivicTerritory = getCivics(iPlayer)
+	iCivicGovernment, iCivicLegal, iCivicLabor, iCivicEconomy, iCivicImmigration, iCivicDevelopment = getCivics(iPlayer)
 	iGameTurn = gc.getGame().getGameTurn()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)

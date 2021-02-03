@@ -1634,57 +1634,62 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
-		elif iCiv == iConnecticut:  #Macaurther TODO: Flip from Dutch
+		elif iCiv == iConnecticut:
 			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 		elif iCiv == iRhodeIsland:
 			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iNorthCarolina:
 			utils.createSettlers(iCiv, 2)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 		elif iCiv == iSouthCarolina:
 			utils.createSettlers(iCiv, 2)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iNewJersey:
 			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
-		elif iCiv == iNewYork:  #Macaurther TODO: Flip from Dutch
-			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+		elif iCiv == iNewYork:
+			utils.createSettlers(iCiv, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 3)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iExplorer, iCiv, tPlot, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iPennsylvania:
-			utils.createSettlers(iCiv, 2)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.createSettlers(iCiv, 3)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 3)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
-		elif iCiv == iDelaware:  #Macaurther TODO: Flip from Swedish
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+		elif iCiv == iDelaware:
 			utils.createSettlers(iCiv, 1)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 		elif iCiv == iGeorgia:
-			utils.createSettlers(iCiv, 1)
-			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
+			utils.createSettlers(iCiv, 2)
+			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 
 
 		elif iCiv == iAmerica:

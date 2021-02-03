@@ -274,7 +274,6 @@ class CvRFCEventHandler:
 
 	def onCombatResult(self, argsList):
 		self.rnf.immuneMode(argsList)
-		self.up.vikingUP(argsList) # includes Moorish Corsairs
 		
 		pWinningUnit, pLosingUnit = argsList
 		iWinningPlayer = pWinningUnit.getOwner()
@@ -290,31 +289,16 @@ class CvRFCEventHandler:
 		
 		sta.onCombatResult(iWinningPlayer, iLosingPlayer, iUnitPower)
 		
+		# MacAurther TODO: Might use later
+		#if iLosingPlayer == iNative:
+		#	if iWinningPlayer not in lCivBioNewWorld or True in data.lFirstContactConquerors:
+		#		if gc.getPlayer(iWinningPlayer).isSlavery() or gc.getPlayer(iWinningPlayer).isColonialSlavery():
+		#			if pWinningUnit.getUnitType() == iBandeirante:
+		#				utils.captureUnit(pLosingUnit, pWinningUnit, iSlave, 100)
+		#			else:
+		#				utils.captureUnit(pLosingUnit, pWinningUnit, iSlave, 35)
 		
-		if iLosingPlayer == iNative:
-			if iWinningPlayer not in lCivBioNewWorld or True in data.lFirstContactConquerors:
-				if gc.getPlayer(iWinningPlayer).isSlavery() or gc.getPlayer(iWinningPlayer).isColonialSlavery():
-					if pWinningUnit.getUnitType() == iBandeirante:
-						utils.captureUnit(pLosingUnit, pWinningUnit, iSlave, 100)
-					else:
-						utils.captureUnit(pLosingUnit, pWinningUnit, iSlave, 35)
 		
-		# Brandenburg Gate effect
-		if gc.getPlayer(iLosingPlayer).isHasBuildingEffect(iBrandenburgGate):
-			for iPromotion in range(gc.getNumPromotionInfos()):
-				if gc.getPromotionInfo(iPromotion).isLeader() and pLosingUnit.isHasPromotion(iPromotion):
-					gc.getPlayer(iLosingPlayer).restoreGeneralThreshold()
-					
-		# Motherland Calls effect
-		if gc.getPlayer(iLosingPlayer).isHasBuildingEffect(iMotherlandCalls):
-			if pLosingUnit.getLevel() >= 3:
-				lCities = [city for city in utils.getCityList(iLosingPlayer) if not city.isDrafted()]
-				pCity = utils.getHighestEntry(lCities, lambda city: -utils.calculateDistance(city.getX(), city.getY(), pLosingUnit.getX(), pLosingUnit.getY()))
-				if pCity:
-					pCity.conscript(True)
-					gc.getPlayer(iLosingPlayer).changeConscriptCount(-1)
-					CyInterface().addMessage(iLosingPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_BUILDING_MOTHERLAND_CALLS_EFFECT", (pLosingUnit.getName(), pCity.getName())), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)		
-
 		
 	def onReligionFounded(self, argsList):
 		'Religion Founded'
@@ -369,14 +353,6 @@ class CvRFCEventHandler:
 			
 	def onCityCaptureGold(self, argsList):
 		city, iPlayer, iGold = argsList
-		
-		if iGold > 0:
-			if gc.getPlayer(iPlayer).isHasBuildingEffect(iGurEAmir):
-				for loopCity in utils.getCityList(iPlayer):
-					if loopCity.isHasRealBuilding(iGurEAmir):
-						CyInterface().addMessage(iPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_BUILDING_GUR_E_AMIR_EFFECT", (iGold, city.getName(), loopCity.getName())), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
-						loopCity.changeCulture(iPlayer, iGold, True)
-						break
 			
 	def onPlayerGoldTrade(self, argsList):
 		iFromPlayer, iToPlayer, iGold = argsList
@@ -384,8 +360,6 @@ class CvRFCEventHandler:
 	def onTradeMission(self, argsList):
 		iUnitType, iPlayer, iX, iY, iGold = argsList
 		
-		if iPlayer in [iTamils, iMali]:
-			vic.onTradeMission(iPlayer, iX, iY, iGold)
 		
 	def onPlayerSlaveTrade(self, argsList):
 		iPlayer, iGold = argsList

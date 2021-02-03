@@ -646,11 +646,11 @@ def calculateStability(iPlayer):
 	iPlayerScore = pPlayer.getScoreHistory(iGameTurn)
 	
 	iCivicGovernment = pPlayer.getCivics(0)
-	iCivicLegitimacy = pPlayer.getCivics(1)
-	iCivicSociety = pPlayer.getCivics(2)
+	iCivicLegal = pPlayer.getCivics(1)
+	iCivicLabor = pPlayer.getCivics(2)
 	iCivicEconomy = pPlayer.getCivics(3)
-	iCivicReligion = pPlayer.getCivics(4)
-	iCivicTerritory = pPlayer.getCivics(5)
+	iCivicImmigration = pPlayer.getCivics(4)
+	iCivicDevelopment = pPlayer.getCivics(5)
 	
 	iCorePopulation = 10
 	iPeripheryPopulation = 10
@@ -665,17 +665,18 @@ def calculateStability(iPlayer):
 	iDifferentReligionPopulation = 0
 	iNoReligionPopulation = 0
 	
-	bTotalitarianism = iCivicSociety == iTotalitarianism
-	bFreeEnterprise = iCivicEconomy == iFreeEnterprise
+	# MacAurther TODO: Cleanup:
+	#bTotalitarianism = iCivicSociety == iTotalitarianism
+	#bFreeEnterprise = iCivicEconomy == iFreeEnterprise
 	bPublicWelfare = iCivicEconomy == iPublicWelfare
 	#bTheocracy = iCivicReligion == iTheocracy
-	bTolerance = iCivicReligion == iTolerance
-	bConquest = iCivicTerritory == iConquest
-	bTributaries = iCivicTerritory == iTributaries
-	bIsolationism = iCivicTerritory == iIsolationism
-	bColonialism = iCivicTerritory == iColonialism
-	bNationhood = iCivicTerritory == iNationhood
-	bMultilateralism = iCivicTerritory == iMultilateralism
+	#bTolerance = iCivicReligion == iTolerance
+	#bConquest = iCivicTerritory == iConquest
+	#bTributaries = iCivicTerritory == iTributaries
+	bIsolationism = iCivicDevelopment == iIsolationism
+	#bColonialism = iCivicTerritory == iColonialism
+	#bNationhood = iCivicTerritory == iNationhood
+	#bMultilateralism = iCivicTerritory == iMultilateralism
 	
 	bSingleCoreCity = (len(utils.getOwnedCoreCities(iPlayer)) == 1)
 	
@@ -713,17 +714,17 @@ def calculateStability(iPlayer):
 			else:
 				iCulturePercent = 100
 					
-			bExpansionExceptions = bTotalitarianism
+			#bExpansionExceptions = bTotalitarianism
 		
 			# ahistorical tiles
 			if not bHistorical: iModifier += 2
 			
 			# colonies with Totalitarianism
-			if city.isColony() and bHistorical and bTotalitarianism: iModifier += 1
+			#if city.isColony() and bHistorical and bTotalitarianism: iModifier += 1
 			
 			# not original owner
-			if not bExpansionExceptions:
-				if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(25): iModifier += 1
+			#if not bExpansionExceptions:
+			#	if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(25): iModifier += 1
 			
 			# MacAurther TODO: Is this needed? Was in with Persia
 			if iCulturePercent < 50: iModifier += 1
@@ -735,8 +736,8 @@ def calculateStability(iPlayer):
 			# Jail
 			if city.hasBuilding(utils.getUniqueBuilding(iPlayer, iJail)): iModifier -= 1
 			
-			if city.isColony():
-				if bColonialism and bHistorical: iModifier -= 1
+			#if city.isColony():
+				#if bColonialism and bHistorical: iModifier -= 1
 					
 			# cap
 			if iModifier < -1: iModifier = -1
@@ -814,7 +815,7 @@ def calculateStability(iPlayer):
 	
 	# recent expansion stability
 	iConquestModifier = 1
-	if bConquest: iConquestModifier += 1
+	#if bConquest: iConquestModifier += 1
 	
 	iRecentExpansionStability += iRecentlyFounded
 	iRecentExpansionStability += iConquestModifier * iRecentlyConquered
@@ -845,7 +846,7 @@ def calculateStability(iPlayer):
 	
 	# Economic Growth
 	iEconomicGrowthModifier = 3
-	if bFreeEnterprise: iEconomicGrowthModifier = 4
+	#if bFreeEnterprise: iEconomicGrowthModifier = 4
 	
 	iEconomicGrowthStability = iEconomicGrowthModifier * calculateTrendScore(data.players[iPlayer].lEconomyTrend)
 	if iEconomicGrowthStability < 0 and bPublicWelfare: iEconomicGrowthStability /= 2
@@ -874,7 +875,7 @@ def calculateStability(iPlayer):
 	iDomesticStability += iHappinessStability
 	
 	# Civics (combinations)
-	civics = (iCivicGovernment, iCivicsLegal, iCivicsLabor, iCivicsEconomy, iCivicsImmigration, iCivicsDevelopment)
+	civics = (iCivicGovernment, iCivicLegal, iCivicLabor, iCivicEconomy, iCivicImmigration, iCivicDevelopment)
 	iCivicCombinationStability = getCivicStability(iPlayer, civics)
 		
 	if utils.getHumanID() != iPlayer and iCivicCombinationStability < 0: iCivicCombinationStability /= 2
@@ -888,23 +889,23 @@ def calculateStability(iPlayer):
 		if iCurrentEra <= iColonialEra: iCivicEraTechStability += 3
 		elif iCurrentEra > iRevolutionaryEra: iCivicEraTechStability -= 5
 	
-	if iCivicsLabor == iIndenturedServitude:
+	if iCivicLabor == iIndenturedServitude:
 		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 2
 	
-	if iCivicsLabor == iSlavery:
+	if iCivicLabor == iSlavery:
 		if iCurrentEra > iExpansionEra: iCivicEraTechStability -= 5
 		if iCurrentEra > iIndustrialEra: iCivicEraTechStability -= 5
 	
-	if iCivicsEconomy == iMercantilism:
+	if iCivicEconomy == iMercantilism:
 		if iCurrentEra > iRevolutionaryEra: iCivicEraTechStability -= 4
 	
-	if iCivicsImmigration == iHaven:
+	if iCivicImmigration == iHaven:
 		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 3
 	
-	if iCivicsImmigration == iPenalColony:
+	if iCivicImmigration == iPenalColony:
 		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 3
 	
-	if iCivicsDevelopment == iHeadright:
+	if iCivicDevelopment == iHeadright:
 		if iCurrentEra > iColonialEra: iCivicEraTechStability -= 3
 	
 	'''if iCivicLegitimacy == iVassalage:
@@ -984,7 +985,7 @@ def calculateStability(iPlayer):
 			iCap = 2 * (iBelieverThreshold - 100) / 5
 			if iBelieverStability < iCap: iBelieverStability = iCap
 			
-			if iBelieverStability > 0 and bTolerance: iBelieverStability /= 2
+			#if iBelieverStability > 0 and bTolerance: iBelieverStability /= 2
 			
 			iReligionStability += iBelieverStability
 			
@@ -1032,7 +1033,7 @@ def calculateStability(iPlayer):
 			elif getStabilityLevel(iLoopPlayer) == iStabilityUnstable: iVassalStability -= 1
 			elif getStabilityLevel(iLoopPlayer) == iStabilitySolid: iVassalStability += 2
 			
-			if bTributaries: iVassalStability += 2
+			#if bTributaries: iVassalStability += 2
 			
 		# relations
 		if tPlayer.canContact(iLoopPlayer):
@@ -1041,18 +1042,18 @@ def calculateStability(iPlayer):
 		# defensive pacts
 		if tPlayer.isDefensivePact(iLoopPlayer):
 			if iLoopScore > iPlayerScore: iDefensivePactStability += 3
-			if bMultilateralism: iDefensivePactStability += 3
+			#if bMultilateralism: iDefensivePactStability += 3
 		
 		# worst enemies
 		if pLoopPlayer.getWorstEnemy() == iPlayer:
 			if iLoopScore > iPlayerScore: iRelationStability -= 3
 			
 		# wars
-		if tPlayer.isAtWar(iLoopPlayer):
-			if bMultilateralism: iMultilateralismStability -= 2
+		#if tPlayer.isAtWar(iLoopPlayer):
+			#if bMultilateralism: iMultilateralismStability -= 2
 			
-			if utils.isNeighbor(iPlayer, iLoopPlayer):
-				if bNationhood: iNationhoodStability += 2
+			#if utils.isNeighbor(iPlayer, iLoopPlayer):
+				#if bNationhood: iNationhoodStability += 2
 				
 				#MacAurther
 				#if bTheocracy:
@@ -1553,7 +1554,7 @@ def isTolerated(iPlayer, iReligion):
 	if iStateReligion == iReligion: return True
 	
 	# civics
-	if pPlayer.getCivics(4) in [iTolerance, iSecularism]: return True
+	#if pPlayer.getCivics(4) in [iTolerance, iSecularism]: return True
 	
 	# Exceptions
 	if iStateReligion == iConfucianism and iReligion == iTaoism: return True
