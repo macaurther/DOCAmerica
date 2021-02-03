@@ -3021,8 +3021,16 @@ Your stability level can change during a stability check. As long it is higher t
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_FEATURE_MARSH_PEDIA</Tag>
-		<English>[TAB]A marsh is a type of wetland that is dominated by herbaceous rather than woody plant species. Marshes can often be found at the edges of lakes and streams, where they form a transition between the aquatic and terrestrial ecosystems. They are often dominated by grasses, rushes or reeds. If woody plants are present they tend to be low-growing shrubs. This form of vegetation is what differentiates marshes from other types of wetland such as swamps, which are dominated by trees, and mires, which are wetlands that have accumulated deposits of acidic peat.</English>
+		<Tag>TXT_KEY_FEATURE_BOG_PEDIA</Tag>
+		<English>MacAurther TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SWAMP_PEDIA</Tag>
+		<English>MacAurther TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>

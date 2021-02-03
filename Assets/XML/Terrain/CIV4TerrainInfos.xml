@@ -1374,8 +1374,14 @@
 			<Description>TXT_KEY_TERRAIN_MARSH</Description>
 			<Civilopedia>TXT_KEY_TERRAIN_MARSH_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_TERRAIN_MARSH</ArtDefineTag>
-			<Yields/>
-			<RiverYieldChange/>
+			<Yields>
+				<iYield>1</iYield>
+			</Yields>
+			<RiverYieldChange>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</RiverYieldChange>
 			<HillsYieldChange/>
 			<bWater>0</bWater>
 			<bImpassable>0</bImpassable>
@@ -1978,10 +1984,10 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</TerrainInfo>
 		<TerrainInfo>
-			<Type>TERRAIN_STEPPE</Type>
-			<Description>TXT_KEY_TERRAIN_STEPPE</Description>
-			<Civilopedia>TXT_KEY_TERRAIN_STEPPE_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_TERRAIN_STEPPE</ArtDefineTag>
+			<Type>TERRAIN_PRAIRIE</Type>
+			<Description>TXT_KEY_TERRAIN_PRAIRIE</Description>
+			<Civilopedia>TXT_KEY_TERRAIN_PRAIRIE_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_TERRAIN_PRAIRIE</ArtDefineTag>
 			<Yields>
 				<iYield>0</iYield>
 				<iYield>1</iYield>

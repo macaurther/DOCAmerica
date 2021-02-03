@@ -790,7 +790,7 @@
 			</FeatureVariety>
 		</FeatureArtInfo>
 		<FeatureArtInfo>
-			<Type>ART_DEF_FEATURE_MARSH</Type>
+			<Type>ART_DEF_FEATURE_BOG</Type>
 			<bAnimated>0</bAnimated>
 			<bRiverArt>0</bRiverArt>
 			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
@@ -801,7 +801,7 @@
 			<FeatureVariety>
 				<FeatureArtPieces>
 					<FeatureArtPiece>
-						<ModelFile>Art/Terrain/Features/Marsh/marsh_1.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Marsh/bog_1.nif</ModelFile>
 						<Connections/>
 					</FeatureArtPiece>
 				</FeatureArtPieces>
@@ -812,7 +812,28 @@
 			<FeatureVariety>
 				<FeatureArtPieces>
 					<FeatureArtPiece>
-						<ModelFile>Art/Terrain/Features/Marsh/marsh_2.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Marsh/bog_2.nif</ModelFile>
+						<Connections/>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<FeatureDummyNodes/>
+				<bGenerateRotations>0</bGenerateRotations>
+				<VarietyButton>Art/Interface/Buttons/BaseTerrain/Marsh.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_SWAMP</Type>
+			<bAnimated>0</bAnimated>
+			<bRiverArt>0</bRiverArt>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<LightType>LIGHT_TYPE_SUN</LightType>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Interface/Buttons/BaseTerrain/Marsh.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Marsh/swamp_1.nif</ModelFile>
 						<Connections/>
 					</FeatureArtPiece>
 				</FeatureArtPieces>
@@ -823,18 +844,7 @@
 			<FeatureVariety>
 				<FeatureArtPieces>
 					<FeatureArtPiece>
-						<ModelFile>Art/Terrain/Features/Marsh/marsh_3.nif</ModelFile>
-						<Connections/>
-					</FeatureArtPiece>
-				</FeatureArtPieces>
-				<FeatureDummyNodes/>
-				<bGenerateRotations>0</bGenerateRotations>
-				<VarietyButton>Art/Interface/Buttons/BaseTerrain/Marsh.dds</VarietyButton>
-			</FeatureVariety>
-			<FeatureVariety>
-				<FeatureArtPieces>
-					<FeatureArtPiece>
-						<ModelFile>Art/Terrain/Features/Marsh/marsh_4.nif</ModelFile>
+						<ModelFile>Art/Terrain/Features/Marsh/swamp_2.nif</ModelFile>
 						<Connections/>
 					</FeatureArtPiece>
 				</FeatureArtPieces>
