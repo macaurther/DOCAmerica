@@ -2683,11 +2683,8 @@ UnitTypes getUniqueUnit(CivilizationTypes eCivilization, UnitTypes eUnit)
 
 bool isPrecursor(ReligionTypes ePrecursor, ReligionTypes eReligion)
 {
-	if (ePrecursor == CONFUCIANISM && eReligion == TAOISM) return true;
-	if (ePrecursor == TAOISM && eReligion == CONFUCIANISM) return true;
-	if (ePrecursor == HINDUISM && eReligion == BUDDHISM) return true;
-	if ((ePrecursor == CATHOLICISM || ePrecursor == ORTHODOXY) && eReligion == ISLAM) return true;
-	if (ePrecursor == JUDAISM && (eReligion == CATHOLICISM || eReligion == ORTHODOXY)) return true;
+	if (ePrecursor == ANGLICANISM && (eReligion == BAPTISM || eReligion == METHODISM)) return true;
+	if (ePrecursor == PURITANISM && eReligion == BAPTISM) return true;
 
 	return false;
 }

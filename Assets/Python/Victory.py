@@ -238,7 +238,8 @@ def checkTurn(iGameTurn, iPlayer):
 			
 			
 	# check religious victory (human only)
-	if utils.getHumanID() == iPlayer:
+	#MacAurther TODO: Religious Victories?
+	'''if utils.getHumanID() == iPlayer:
 		iVictoryType = utils.getReligiousVictoryType(iPlayer)
 		
 		if iVictoryType == iCatholicism:
@@ -270,7 +271,7 @@ def checkTurn(iGameTurn, iPlayer):
 						data.iVedicHappiness += 1
 				
 		if checkReligiousGoals(iPlayer):
-			gc.getGame().setWinner(iPlayer, 8)
+			gc.getGame().setWinner(iPlayer, 8)'''
 			
 def checkHistoricalVictory(iPlayer):
 	pPlayer = gc.getPlayer(iPlayer)
@@ -503,7 +504,9 @@ def checkReligiousGoal(iPlayer, iGoal):
 	
 	if iVictoryType == -1: return -1
 	
-	elif iVictoryType == iJudaism:
+	#MacAurther TODO: Religious Victories?
+	
+	'''elif iVictoryType == iJudaism:
 	
 		# first Jewish goal: have a total of 15 Great Prophets, Scientists and Statesmen in Jewish cities
 		if iGoal == 0:
@@ -803,7 +806,7 @@ def checkReligiousGoal(iPlayer, iGoal):
 			for iLoopPlayer in lAdvancedPlayers[:5]:
 				if gc.getPlayer(iLoopPlayer).getCivics(iCivicsReligion) == iSecularism:
 					iCount += 1
-			if iCount >= 5: return 1
+			if iCount >= 5: return 1'''
 			
 	return -1
 
@@ -1603,7 +1606,9 @@ def getURVHelp(iPlayer, iGoal):
 		aHelp.append(getIcon(False) + localText.getText("TXT_KEY_VICTORY_GOAL_FAILED", ()))
 		return aHelp
 	
-	if iVictoryType == iJudaism:
+	# MacAurther TODO: Religious Victories?
+	
+	'''if iVictoryType == iJudaism:
 		if iGoal == 0:
 			iProphets = countSpecialists(iPlayer, iSpecialistGreatProphet)
 			iScientists = countSpecialists(iPlayer, iSpecialistGreatScientist)
@@ -1770,7 +1775,7 @@ def getURVHelp(iPlayer, iGoal):
 			for iLoopPlayer in lAdvancedPlayers[:5]:
 				pLoopPlayer = gc.getPlayer(iLoopPlayer)
 				sString += getIcon(pLoopPlayer.getCivics(iCivicsReligion) == iSecularism) + pLoopPlayer.getCivilizationShortDescription(0) + ' '
-			aHelp.append(sString)
+			aHelp.append(sString)'''
 				
 	return aHelp
 	

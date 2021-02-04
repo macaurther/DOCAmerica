@@ -11286,6 +11286,8 @@ int CvPlot::getSpreadFactor(ReligionTypes eReligion) const
 {
 	int iSpreadFactor = m_aiReligionSpreadFactor[eReligion];
 
+	//MacAurther TODO: revisit
+	/*
 	if (eReligion == JUDAISM)
 	{
 		if (!GC.getGameINLINE().isReligionFounded(ORTHODOXY))
@@ -11322,7 +11324,7 @@ int CvPlot::getSpreadFactor(ReligionTypes eReligion) const
 				return getSpreadFactor(PROTESTANTISM);
 			}
 		}
-	}
+	}*/
 
 	return iSpreadFactor;
 }

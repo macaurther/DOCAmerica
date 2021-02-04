@@ -1381,7 +1381,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_TERRITORY</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_CATHOLICISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -1962,7 +1962,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_TERRITORY</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_CATHOLICISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -2543,7 +2543,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_COMMON_LAW</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_ANGLICANISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -3124,7 +3124,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_AGRARIANISM</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_ANGLICANISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -3705,7 +3705,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_FREE_RELIGION</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_PURITANISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -4286,7 +4286,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_FREE_RELIGION</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_PURITANISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -4867,7 +4867,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_STATES_RIGHTS</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_CATHOLICISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -5448,7 +5448,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_HAVEN</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_BAPTISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -6029,7 +6029,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_HAVEN</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_BAPTISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -6610,7 +6610,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_SLAVERY</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_BAPTISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -7191,7 +7191,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_SLAVERY</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_METHODISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -7772,7 +7772,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_URBANISM</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_METHODISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -8353,7 +8353,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_URBANISM</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_METHODISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -8934,7 +8934,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_FREE_RELIGION</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_PURITANISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -9515,7 +9515,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_RURALISM</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_BAPTISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -10096,7 +10096,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_COMMON_LAW</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_METHODISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -10677,7 +10677,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_FEDERALISM</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_METHODISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>
@@ -11258,7 +11258,7 @@
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
 			<FavoriteCivic>CIVIC_MULTICULTURISM</FavoriteCivic>
-			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
+			<FavoriteReligion>RELIGION_ANGLICANISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
 				<Flavor>

@@ -5364,12 +5364,19 @@ int CvPlayerAI::AI_getSameReligionAttitude(PlayerTypes ePlayer) const
 	iAttitude = 0;
 
 	// edead: begin religions - count Chinese religions as one but with less bonus (below)
-	if ((getStateReligion() != NO_RELIGION) && (getStateReligion() == GET_PLAYER(ePlayer).getStateReligion()))
+	// MacAurther: USA religions
+	// MacAurther TODO: consolidate Protestant check code
+	ReligionTypes ePlayerStateReligion = GET_PLAYER(ePlayer).getStateReligion();
+	ReligionTypes eStateReligion = getStateReligion();
+
+	if ((eStateReligion != NO_RELIGION) && (eStateReligion == ePlayerStateReligion))
 	{
 		bSameReligion = true;
 	}
 
-	if (((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)))
+	bool bPlayerProtestant = (ePlayerStateReligion == ANGLICANISM) || (ePlayerStateReligion == PURITANISM) || (ePlayerStateReligion == BAPTISM) || (ePlayerStateReligion == METHODISM);
+	bool bProtestant = (eStateReligion == ANGLICANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
+	if (bPlayerProtestant && bProtestant)
 	{
 		bSameReligion = true;
 	}
@@ -5393,17 +5400,19 @@ int CvPlayerAI::AI_getSameReligionAttitude(PlayerTypes ePlayer) const
 	}
 
 	// edead: less love between Chinese religions
-	if (((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)))
+	//if (((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)))
+	// MacAurther: less love between Protestants
+	if ((bProtestant && bPlayerProtestant) && (eStateReligion != ePlayerStateReligion))
 	{
 		iAttitude /= 2;
 	}
 	// edead: end
 
-	//Rhye - start (modified by Leoreth)
-	if (getCurrentEra() >= 3) //renaissance and industrial and modern
+	//Rhye - start (modified by Leoreth) (modified by MacAurther)
+	if (getCurrentEra() >= 7) //modern +
 		iAttitude /= 4;
-	else if (getCurrentEra() <= 1) //ancient, classical
-		iAttitude /= 2;
+	//else if (getCurrentEra() <= 1) //ancient, classical
+	//	iAttitude /= 2;
 	//medieval = default
 	//Rhye - end
 
@@ -5418,11 +5427,19 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 
 	iAttitude = 0;
 
+	// MacAurther TODO: consolidate Protestant check code
+	ReligionTypes ePlayerStateReligion = GET_PLAYER(ePlayer).getStateReligion();
+	ReligionTypes eStateReligion = getStateReligion();
+
 	// Leoreth: if state religion, even have negative relations with non-state religion civs
-	if ((getStateReligion() != NO_RELIGION) && (getStateReligion() != GET_PLAYER(ePlayer).getStateReligion()))
+	if ((eStateReligion != NO_RELIGION) && (eStateReligion != ePlayerStateReligion))
 	{
 		// Leoreth: no penalties between Confucianism and Taoism
-		if (((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)))
+		//if (((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)))
+		// MacAurther: no penalties between Protestants
+		bool bPlayerProtestant = (ePlayerStateReligion == ANGLICANISM) || (ePlayerStateReligion == PURITANISM) || (ePlayerStateReligion == BAPTISM) || (ePlayerStateReligion == METHODISM);
+		bool bProtestant = (eStateReligion == ANGLICANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
+		if (bPlayerProtestant && bProtestant)
 		{
 			return 0;
 		}
@@ -5448,7 +5465,7 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 	}
 
 	//Leoreth: Halved penalty for Buddhism to Confucianism, Taoism, Hinduism
-	if (((getStateReligion() == BUDDHISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)) || ((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == BUDDHISM)))
+	/*if (((getStateReligion() == BUDDHISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)) || ((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == BUDDHISM)))
 	{
 		iAttitude /= 2;
 	}
@@ -5459,19 +5476,19 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 	else if (((getStateReligion() == HINDUISM) && (GET_PLAYER(ePlayer).getStateReligion() == BUDDHISM)) || ((getStateReligion() == BUDDHISM) && (GET_PLAYER(ePlayer).getStateReligion() == HINDUISM)))
 	{
 		iAttitude /= 2;
-	}
+	}*/
 
 	// Same with Orthodoxy combined with Catholicism or Protestantism
-	if (((getStateReligion() == ORTHODOXY) && (GET_PLAYER(ePlayer).getStateReligion() == CATHOLICISM)) || ((getStateReligion() == CATHOLICISM) && (GET_PLAYER(ePlayer).getStateReligion() == ORTHODOXY)))
+	/*if (((getStateReligion() == ORTHODOXY) && (GET_PLAYER(ePlayer).getStateReligion() == CATHOLICISM)) || ((getStateReligion() == CATHOLICISM) && (GET_PLAYER(ePlayer).getStateReligion() == ORTHODOXY)))
 	{
 		iAttitude /= 2;
 	}
 	if (((getStateReligion() == ORTHODOXY) && (GET_PLAYER(ePlayer).getStateReligion() == PROTESTANTISM)) || ((getStateReligion() == PROTESTANTISM) && (GET_PLAYER(ePlayer).getStateReligion() == ORTHODOXY)))
 	{
 		iAttitude /= 2;
-	}
+	}*/
 
-	//Rhye - start (modified by Leoreth)
+	//Rhye - start (modified by Leoreth) (modified by MacAurther)
 	if (getCurrentEra() == ERA_EXPLORATION)
 	{
 		iAttitude *= 3;

@@ -907,23 +907,23 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_PROTESTANT_MISSIONARY</Class>
-			<Type>UNIT_PROTESTANT_MISSIONARY</Type>
+			<Class>UNITCLASS_ANGLICAN_MISSIONARY</Class>
+			<Type>UNIT_ANGLICAN_MISSIONARY</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_PROTESTANT_MISSIONARY</Description>
+			<Description>TXT_KEY_UNIT_ANGLICAN_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_PROTESTANT_MISSIONARY_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_UNIT_ANGLICAN_MISSIONARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
-					<ReligionType>RELIGION_PROTESTANTISM</ReligionType>
+					<ReligionType>RELIGION_ANGLICANISM</ReligionType>
 					<iReligionSpread>40</iReligionSpread>
 				</ReligionSpread>
 			</ReligionSpreads>
-			<PrereqReligion>RELIGION_PROTESTANTISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_PROTESTANT_MONASTERY</PrereqBuilding>
+			<PrereqReligion>RELIGION_ANGLICANISM</PrereqReligion>
+			<PrereqBuilding>BUILDING_ANGLICAN_MONASTERY</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -944,23 +944,23 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_ISLAMIC_MISSIONARY</Class>
-			<Type>UNIT_ISLAMIC_MISSIONARY</Type>
+			<Class>UNITCLASS_PURITAN_MISSIONARY</Class>
+			<Type>UNIT_PURITAN_MISSIONARY</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Description>
+			<Description>TXT_KEY_UNIT_PURITAN_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_ISLAMIC_MISSIONARY_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_UNIT_PURITAN_MISSIONARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
-					<ReligionType>RELIGION_ISLAM</ReligionType>
+					<ReligionType>RELIGION_PURITANISM</ReligionType>
 					<iReligionSpread>40</iReligionSpread>
 				</ReligionSpread>
 			</ReligionSpreads>
-			<PrereqReligion>RELIGION_ISLAM</PrereqReligion>
-			<PrereqBuilding>BUILDING_ISLAMIC_MONASTERY</PrereqBuilding>
+			<PrereqReligion>RELIGION_PURITANISM</PrereqReligion>
+			<PrereqBuilding>BUILDING_PURITAN_MONASTERY</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -975,29 +975,29 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_ISLAMIC_MISSIONARY</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_PROTESTANT_MISSIONARY</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_HINDU_MISSIONARY</Class>
-			<Type>UNIT_HINDU_MISSIONARY</Type>
+			<Class>UNITCLASS_BAPTIST_MISSIONARY</Class>
+			<Type>UNIT_BAPTIST_MISSIONARY</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_HINDU_MISSIONARY</Description>
+			<Description>TXT_KEY_UNIT_BAPTIST_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_HINDU_MISSIONARY_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_UNIT_BAPTIST_MISSIONARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
-					<ReligionType>RELIGION_HINDUISM</ReligionType>
+					<ReligionType>RELIGION_BAPTISM</ReligionType>
 					<iReligionSpread>40</iReligionSpread>
 				</ReligionSpread>
 			</ReligionSpreads>
-			<PrereqReligion>RELIGION_HINDUISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_HINDU_MONASTERY</PrereqBuilding>
+			<PrereqReligion>RELIGION_BAPTISM</PrereqReligion>
+			<PrereqBuilding>BUILDING_BAPTIST_MONASTERY</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1012,29 +1012,29 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_HINDU_MISSIONARY</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_PROTESTANT_MISSIONARY</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_BUDDHIST_MISSIONARY</Class>
-			<Type>UNIT_BUDDHIST_MISSIONARY</Type>
+			<Class>UNITCLASS_METHODIST_MISSIONARY</Class>
+			<Type>UNIT_METHODIST_MISSIONARY</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_BUDDHIST_MISSIONARY</Description>
+			<Description>TXT_KEY_UNIT_METHODIST_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_BUDDHIST_MISSIONARY_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_UNIT_METHODIST_MISSIONARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
-					<ReligionType>RELIGION_BUDDHISM</ReligionType>
+					<ReligionType>RELIGION_METHODISM</ReligionType>
 					<iReligionSpread>40</iReligionSpread>
 				</ReligionSpread>
 			</ReligionSpreads>
-			<PrereqReligion>RELIGION_BUDDHISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_BUDDHIST_MONASTERY</PrereqBuilding>
+			<PrereqReligion>RELIGION_METHODISM</PrereqReligion>
+			<PrereqBuilding>BUILDING_METHODIST_MONASTERY</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1049,29 +1049,29 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_BUDDHIST_MISSIONARY</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_PROTESTANT_MISSIONARY</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_CONFUCIAN_MISSIONARY</Class>
-			<Type>UNIT_CONFUCIAN_MISSIONARY</Type>
+			<Class>UNITCLASS_MORMON_MISSIONARY</Class>
+			<Type>UNIT_MORMON_MISSIONARY</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY</Description>
+			<Description>TXT_KEY_UNIT_MORMON_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_UNIT_MORMON_MISSIONARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
-					<ReligionType>RELIGION_CONFUCIANISM</ReligionType>
+					<ReligionType>RELIGION_MORMONISM</ReligionType>
 					<iReligionSpread>40</iReligionSpread>
 				</ReligionSpread>
 			</ReligionSpreads>
-			<PrereqReligion>RELIGION_CONFUCIANISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_CONFUCIAN_MONASTERY</PrereqBuilding>
+			<PrereqReligion>RELIGION_MORMONISM</PrereqReligion>
+			<PrereqBuilding>BUILDING_MORMON_MONASTERY</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1086,81 +1086,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CONFUCIAN_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_TAOIST_MISSIONARY</Class>
-			<Type>UNIT_TAOIST_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_TAOIST_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_TAOIST_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_TAOISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_TAOISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_TAOIST_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>3</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_TAOIST_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_ZOROASTRIAN_MISSIONARY</Class>
-			<Type>UNIT_ZOROASTRIAN_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_ZOROASTRIANISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_ZOROASTRIANISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_ZOROASTRIAN_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>3</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_ZOROASTRIAN_MISSIONARY</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_PROTESTANT_MISSIONARY</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -8063,31 +7989,23 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_PROTESTANT_SHRINE</BuildingType>
+					<BuildingType>BUILDING_ANGLICAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_ISLAMIC_SHRINE</BuildingType>
+					<BuildingType>BUILDING_PURITAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_HINDU_SHRINE</BuildingType>
+					<BuildingType>BUILDING_BAPTIST_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_BUDDHIST_SHRINE</BuildingType>
+					<BuildingType>BUILDING_METHODIST_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_CONFUCIAN_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_TAOIST_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_ZOROASTRIAN_SHRINE</BuildingType>
+					<BuildingType>BUILDING_MORMON_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>
@@ -8676,31 +8594,23 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_PROTESTANT_SHRINE</BuildingType>
+					<BuildingType>BUILDING_ANGLICAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_ISLAMIC_SHRINE</BuildingType>
+					<BuildingType>BUILDING_PURITAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_HINDU_SHRINE</BuildingType>
+					<BuildingType>BUILDING_BAPTIST_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_BUDDHIST_SHRINE</BuildingType>
+					<BuildingType>BUILDING_METHODIST_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_CONFUCIAN_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_TAOIST_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_ZOROASTRIAN_SHRINE</BuildingType>
+					<BuildingType>BUILDING_MORMON_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>

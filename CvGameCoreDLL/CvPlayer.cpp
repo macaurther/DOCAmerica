@@ -8263,13 +8263,13 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		if (pLoopCity->plot()->getSpreadFactor(eReligion) >= REGION_SPREAD_HISTORICAL || eReligion == PROTESTANTISM)
+		if (pLoopCity->plot()->getSpreadFactor(eReligion) >= REGION_SPREAD_HISTORICAL)
 		{
 			iValue = 10;
 			iValue += pLoopCity->getPopulation();
 			iValue += GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("FOUND_RELIGION_CITY_RAND"), "Found Religion");
 
-            if (eReligion != BUDDHISM && eReligion != TAOISM)
+            if (eReligion != BAPTISM && eReligion != METHODISM)
 			{
                 iValue /= (pLoopCity->getReligionCount() + 1);
 			}
@@ -8286,7 +8286,9 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 				iValue *= 3;
 				iValue /= 5;
 			}
-			if ((pLoopCity->getX() == 60 && pLoopCity->getY() == 44) || (pLoopCity->getX() == 73 && pLoopCity->getY() == 38)) //Rome or Jerusalem
+
+			// MacAurther
+			/*if ((pLoopCity->getX() == 60 && pLoopCity->getY() == 44) || (pLoopCity->getX() == 73 && pLoopCity->getY() == 38)) //Rome or Jerusalem
 			{
 				if (eReligion == CATHOLICISM || eReligion == ORTHODOXY || eReligion == ISLAM)
 					iValue *= 2;
@@ -8315,17 +8317,17 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 			if (eReligion == (ReligionTypes)PROTESTANTISM)
 			{
 				int iRegion = pLoopCity->getRegionID();
-				/*if (iRegion != REGION_BRITAIN || iRegion != REGION_IBERIA || iRegion != REGION_ITALY || iRegion != REGION_BALKANS || iRegion != REGION_EUROPE || iRegion != REGION_SCANDINAVIA || iRegion != REGION_RUSSIA)
+				if (iRegion != REGION_BRITAIN || iRegion != REGION_IBERIA || iRegion != REGION_ITALY || iRegion != REGION_BALKANS || iRegion != REGION_EUROPE || iRegion != REGION_SCANDINAVIA || iRegion != REGION_RUSSIA)
 				{
 					iValue = 5;
-				}*/
+				}
 
 				int iCapitalRegion = getCapitalCity()->getRegionID();
 				if (iRegion == iCapitalRegion)
 				{
 					iValue *= 3;
 				}
-			}
+			}*/
 
 			iValue = std::max(1, iValue);
 
@@ -25293,10 +25295,9 @@ bool CvPlayer::isTolerating(ReligionTypes eReligion) const
 
 	if (eStateReligion == eReligion) return true;
 
-	if (eStateReligion == HINDUISM && eReligion == BUDDHISM) return true;
-	if (eStateReligion == BUDDHISM && eReligion == HINDUISM) return true;
-	if (eStateReligion == CONFUCIANISM && eReligion == TAOISM) return true;
-	if (eStateReligion == TAOISM && eReligion == CONFUCIANISM) return true;
+	bool bStateProtestant = (eStateReligion == ANGLICANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
+	bool bProtestant = (eReligion == ANGLICANISM) || (eReligion == PURITANISM) || (eReligion == BAPTISM) || (eReligion == METHODISM);
+	if (bStateProtestant && bProtestant) return true;
 
 	return false;
 }

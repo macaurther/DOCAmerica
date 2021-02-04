@@ -404,21 +404,19 @@ iEngland : 6,
 }
 
 # initialise religion variables to religion indices from XML
-iNumReligions = 10
-(iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam, iHinduism, iBuddhism, iConfucianism, iTaoism, iZoroastrianism) = range(iNumReligions)
+iNumReligions = 8
+(iJudaism, iOrthodoxy, iCatholicism, iAnglicanism, iPuritanism, iBaptism, iMethodism, iMormonism) = range(iNumReligions)
 
 #Persecution preference
 tPersecutionPreference = (
-(iHinduism, iBuddhism, iTaoism, iConfucianism, iZoroastrianism, iIslam, iProtestantism, iCatholicism, iOrthodoxy), # Judaism
-(iIslam, iProtestantism, iCatholicism, iJudaism, iZoroastrianism, iHinduism, iBuddhism, iTaoism, iConfucianism), # Orthodoxy
-(iIslam, iProtestantism, iOrthodoxy, iJudaism, iZoroastrianism, iHinduism, iBuddhism, iTaoism, iConfucianism), # Catholicism
-(iIslam, iCatholicism, iOrthodoxy, iJudaism, iZoroastrianism, iHinduism, iBuddhism, iTaoism, iConfucianism), # Protestantism
-(iHinduism, iProtestantism, iCatholicism, iOrthodoxy, iJudaism, iTaoism, iConfucianism, iZoroastrianism, iBuddhism), # Islam
-(iIslam, iCatholicism, iProtestantism, iOrthodoxy, iJudaism, iZoroastrianism, iTaoism, iConfucianism, iBuddhism), # Hinduism
-(iCatholicism, iProtestantism, iOrthodoxy, iJudaism, iZoroastrianism, iTaoism, iIslam, iConfucianism, iHinduism), # Buddhism
-(iIslam, iCatholicism, iProtestantism, iOrthodoxy, iJudaism, iZoroastrianism, iHinduism, iBuddhism, iTaoism), # Confucianism
-(iIslam, iCatholicism, iProtestantism, iOrthodoxy, iJudaism, iZoroastrianism, iHinduism, iBuddhism, iConfucianism), # Taoism
-(iIslam, iCatholicism, iProtestantism, iOrthodoxy, iJudaism, iBuddhism, iHinduism, iTaoism, iConfucianism), # Zoroastrianism
+(iOrthodoxy, iCatholicism, iAnglicanism, iPuritanism, iBaptism, iMethodism, iMormonism), # Judaism
+(iJudaism, iCatholicism, iAnglicanism, iPuritanism, iBaptism, iMethodism, iMormonism), # Orthodoxy
+(iJudaism, iMormonism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism, iMethodism), # Catholicism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iPuritanism, iBaptism, iMethodism), # Anglicanism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iAnglicanism, iBaptism, iMethodism), # Puritanism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iMethodism), # Baptism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism), # Methodism
+(iJudaism, iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism, iMethodism), # Mormonism
 )
 
 lCatholicStart = [iSpain, iFrance, iEngland, iCanada]
@@ -430,13 +428,13 @@ iNumCorporations = 9
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 120
+iNumTechs = 123
 (iTanning, iMining, iPottery, iSailing, iAgriculture, iMythology, iPastoralism,				#Pre Columbian
 iAlloys, iSteel, iRiding, iNavigation, iWriting, iPhilosophy, iProperty,					#Post Columbian
-iGunpowder, iCompanies, iFinance, iCartography, iHumanities, iPrinting, iJudiciary,			#Exploration
-iFirearms, iCharter, iExploration, iOptics, iAcademia, iColonization,						#Colonial 1
-iFortification, iLogistics, iTriangularTrade, iUrbanPlanning, iStatecraft, iHorticulture,	#Colonial 2
-iEconomics, iGeography, iScientificMethod, iRepresentation, iCivilLiberties, iHeritage,		#Colonial 3
+iGunpowder, iCompanies, iFinance, iCartography, iJudiciary, iPrinting, iHumanities,			#Exploration
+iFirearms, iColonization, iExploration, iOptics, iCharter, iIndentures, iCommunity,						#Colonial 1
+iFortification, iLogistics, iTriangularTrade, iAcademia, iStatecraft, iUrbanPlanning, iHorticulture,	#Colonial 2
+iPioneering, iEconomics, iGeography, iScientificMethod, iRepresentation, iCivilLiberties, iHeritage,	#Colonial 3
 iTactics, iReplaceableParts, iPhysics, iMeasurement, iPostalService, iIndependence, iSocialContract,	#Revolutionary 1
 iCurrency, iMedicine, iGeology, iParties, iSociology, iFederalism, 										#Revolutionary 2
 iManifestDestiny, iEngineering, iChemistry, iTranscendentalism,		#Expansion 1
@@ -456,10 +454,10 @@ iSocialPrograms,) = range(iNumTechs)														#Information 3
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 124
+iNumUnits = 122
 (iLion, iBear, iPanther, iWolf, iSettler, iPioneer, iWorker, iLabourer, 
-iScout, iExplorer, iSpy, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary, 
-iIslamicMissionary, iHinduMissionary, iBuddhistMissionary, iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iMilitia, iAxeman, iLightSwordsman, 
+iScout, iExplorer, iSpy, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iAnglicanMissionary, 
+iPuritanMissionary, iBaptistMissionary, iMethodistMissionary, iMormonMissionary, iWarrior, iMilitia, iAxeman, iLightSwordsman, 
 iDogSoldier, iSwordsman,
 iSpearman, iPikeman, 
 iArquebusier, iTercio, iMohawk, iMusketeer, 
@@ -501,7 +499,7 @@ iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, 
 iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
 # Buildings
 
-iNumBuildings = 146
+iNumBuildings = 138
 (iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument,
 iTotemPole, iWalls, iStable, iLibrary,
 iHarbor, iTheatre,
@@ -515,10 +513,10 @@ iDistillery, iPark, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndus
 iSupermarket, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 
 iBombShelters, iHydroPlant, iSecurityBureau, iStadium, iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, iRecyclingCenter, iLogisticsCenter, 
 iSolarPlant, iFiberNetwork, iAutomatedFactory, iVerticalFarm, iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, 
-iOrthodoxMonastery, iOrthodoxShrine, iCatholicChurch, iCatholicCathedral, iCatholicMonastery, iCatholicShrine, iProtestantTemple, iProtestantCathedral, iProtestantMonastery, iProtestantShrine, 
-iIslamicTemple, iIslamicCathedral, iIslamicMonastery, iIslamicShrine, iHinduTemple, iHinduCathedral, iHinduMonastery, iHinduShrine, iBuddhistTemple, iBuddhistCathedral, 
-iBuddhistMonastery, iBuddhistShrine, iConfucianTemple, iConfucianCathedral, iConfucianMonastery, iConfucianShrine, iTaoistTemple, iTaoistCathedral, iTaoistMonastery, iTaoistShrine, 
-iZoroastrianTemple, iZoroastrianCathedral, iZoroastrianMonastery, iZoroastrianShrine, iAcademy, iAdministrativeCenter, iManufactory, iArmoury, iMuseum, iStockExchange, 
+iOrthodoxMonastery, iOrthodoxShrine, iCatholicChurch, iCatholicCathedral, iCatholicMonastery, iCatholicShrine, iAnglicanTemple, iAnglicanCathedral, iAnglicanMonastery, iAnglicanShrine, 
+iPuritanTemple, iPuritanCathedral, iPuritanMonastery, iPuritanShrine, iBaptistTemple, iBaptistCathedral, iBaptistMonastery, iBaptistShrine, iMethodistTemple, iMethodistCathedral,
+iMethodistMonastery, iMethodistShrine, iMormonTemple, iMormonCathedral, iMormonMonastery, iMormonShrine,
+iAcademy, iAdministrativeCenter, iManufactory, iArmoury, iMuseum, iStockExchange, 
 iTradingCompanyBuilding, iIberianTradingCompanyBuilding, iNationalMonument, iNationalTheatre, iNationalGallery, iNationalCollege, iMilitaryAcademy, iSecretService, iIronworks, iRedCross, 
 iNationalPark, iCentralBank, iSpaceport,
 iStatueOfLiberty,

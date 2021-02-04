@@ -69,7 +69,7 @@ class Religions:
 
 		self.checkChristianity(iGameTurn)
 						
-		self.checkSchism(iGameTurn)
+		#self.checkSchism(iGameTurn)
 
 		self.spreadJudaismAmerica(iGameTurn)
 		
@@ -88,14 +88,15 @@ class Religions:
 		
 		
 	def onReligionFounded(self, iReligion, iFounder):
+		#MacAurther TODO: Religion onFound
 		if gc.getGame().getGameTurn() == utils.getScenarioStartTurn(): return
 	
 		if iReligion == iCatholicism:
 			utils.setStateReligionBeforeBirth(lCatholicStart, iCatholicism)
 			utils.setStateReligionBeforeBirth(lProtestantStart, iCatholicism)
 			
-		elif iReligion == iProtestantism:
-			utils.setStateReligionBeforeBirth(lProtestantStart, iProtestantism)
+		#elif iReligion == iProtestantism:
+		#	utils.setStateReligionBeforeBirth(lProtestantStart, iProtestantism)
 					
 	def getReligionCities(self, iReligion): # Unused
 		lCities = []
@@ -373,11 +374,12 @@ class Religions:
 			self.counterReformation(iHuman)
 
 	def onTechAcquired(self, iTech, iPlayer):
-		if iTech == iAcademia:
-			if gc.getPlayer(iPlayer).getStateReligion() == iCatholicism:
-				if not gc.getGame().isReligionFounded(iProtestantism):
-					gc.getPlayer(iPlayer).foundReligion(iProtestantism, iProtestantism, True)
-					self.reformation()
+		#MacAurther TODO
+		#if iTech == iAcademia:
+		#	if gc.getPlayer(iPlayer).getStateReligion() == iCatholicism:
+		#		if not gc.getGame().isReligionFounded(iProtestantism):
+		#			gc.getPlayer(iPlayer).foundReligion(iProtestantism, iProtestantism, True)
+		#			self.reformation()
 					
 		for iReligion in range(iNumReligions):
 			self.checkLateReligionFounding(iReligion, iTech)
@@ -406,8 +408,9 @@ class Religions:
 		iRand = gc.getGame().getSorenRandNum(100, 'Protestantism anyway')
 		return iRand >= (getCatholicPreference(iCiv)+50)/2
 
-	def reformation(self):				
-		for iPlayer in range(iNumPlayers):
+	def reformation(self):
+		#MacAurther TODO
+		'''for iPlayer in range(iNumPlayers):
 			if [city for city in utils.getCityList(iPlayer) if city.getOwner() == iPlayer]:
 				self.reformationChoice(iPlayer)
 		
@@ -419,7 +422,7 @@ class Religions:
 						
 		pHolyCity = gc.getGame().getHolyCity(iProtestantism)
 		if data.players[pHolyCity.getOwner()].iReformationDecision == 0:
-			pHolyCity.setNumRealBuilding(iProtestantShrine, 1)
+			pHolyCity.setNumRealBuilding(iProtestantShrine, 1)'''
 		
 	def reformationChoice(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)

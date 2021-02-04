@@ -13773,7 +13773,8 @@ void CvGameTextMgr::setReligionHelp(CvWStringBuffer &szBuffer, ReligionTypes eRe
 		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_CANNOT_CONVERT_UNLESS_HOLY_CITY"));
 	}
 
-	if (eReligion == PROTESTANTISM)
+	// MacAurther
+	/*if (eReligion == PROTESTANTISM)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_REFORMATION"));
@@ -13787,7 +13788,7 @@ void CvGameTextMgr::setReligionHelp(CvWStringBuffer &szBuffer, ReligionTypes eRe
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_RELIGION_FOUND_BUDDHISM"));
-	}
+	}*/
 }
 
 void CvGameTextMgr::setReligionHelpCity(CvWStringBuffer &szBuffer, ReligionTypes eReligion, CvCity *pCity, bool bCityBar, bool bForceReligion, bool bForceState, bool bNoStateReligion)
@@ -14917,7 +14918,9 @@ bool CvGameTextMgr::buildFoundReligionString(CvWStringBuffer &szBuffer, TechType
 {
 	CvWString szTempBuffer;
 
-	if (GC.getReligionInfo((ReligionTypes) iReligionType).getTechPrereq() == eTech || (eTech == ACADEMIA && iReligionType == PROTESTANTISM))
+	// MacAurther
+	//if (GC.getReligionInfo((ReligionTypes) iReligionType).getTechPrereq() == eTech || (eTech == ACADEMIA && iReligionType == PROTESTANTISM))
+	if (GC.getReligionInfo((ReligionTypes) iReligionType).getTechPrereq() == eTech)
 	{
 		if (!bPlayerContext || (GC.getGameINLINE().countKnownTechNumTeams(eTech) == 0))
 		{

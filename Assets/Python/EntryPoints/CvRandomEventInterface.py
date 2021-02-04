@@ -4506,7 +4506,10 @@ def doTradingCompanyConquerors2(argsList):
 ######## Reformation (Leoreth) ########
 
 def canTriggerReformation(argsList):
-	kTriggeredData = argsList[0]
+	#MacAurther TODO:
+	return False
+	
+	'''kTriggeredData = argsList[0]
 	iPlayer = kTriggeredData.ePlayer
 	
 	if utils.getHumanID() != iPlayer: return False
@@ -4523,7 +4526,7 @@ def canTriggerReformation(argsList):
 		if gc.getGame().getReligionGameTurnFounded(iProtestantism)+2 < gc.getGame().getGameTurn():
 			return False
 
-	return gc.getGame().isReligionFounded(iProtestantism)
+	return gc.getGame().isReligionFounded(iProtestantism)'''
 
 def canChooseReformation1(argsList):
 	kTriggeredData = argsList[1]
@@ -4544,14 +4547,15 @@ def getReformation1HelpText(argsList):
 	return localText.getText("TXT_KEY_EVENT_REFORMATION_EMBRACE", (iNumCatholicCities * 100,))
 	
 def doReformation1(argsList):
-	kTriggeredData = argsList[1]
+	# MacAurther TODO
+	'''kTriggeredData = argsList[1]
 	iPlayer = kTriggeredData.ePlayer
 	
 	rel.embraceReformation(iPlayer)
 	
 	pHolyCity = gc.getGame().getHolyCity(iProtestantism)
 	if pHolyCity.getOwner() == iPlayer:
-		pHolyCity.setNumRealBuilding(iProtestantShrine, 1)
+		pHolyCity.setNumRealBuilding(iProtestantShrine, 1)'''
 	
 def canChooseReformation2(argsList):
 	return True

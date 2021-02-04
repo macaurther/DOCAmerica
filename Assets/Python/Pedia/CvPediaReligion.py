@@ -72,6 +72,7 @@ class CvPediaReligion:
 		
 		
 	def placeRequires(self):
+		#MacAurther TODO
 		screen = self.top.getScreen()
 		panel = self.top.getNextWidgetName()
 
@@ -84,14 +85,14 @@ class CvPediaReligion:
 		if iTech > -1:
 			screen.attachImageButton(panel, "", gc.getTechInfo(iTech).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iTech, 1, False)
 
-		if self.iReligion == iBuddhism:
-			screen.attachImageButton(panel, "", gc.getBuildingInfo(iHinduTemple).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iHinduTemple, 1, False)
-		elif self.iReligion == iCatholicism:
+		#if self.iReligion == iBuddhism:
+		#	screen.attachImageButton(panel, "", gc.getBuildingInfo(iHinduTemple).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iHinduTemple, 1, False)
+		if self.iReligion == iCatholicism:
 			screen.attachImageButton(panel, "", gc.getReligionInfo(iOrthodoxy).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_RELIGION, iOrthodoxy, 1, False)
 			screen.attachImageButton(panel, "", gc.getBuildingInfo(iOrthodoxCathedral).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iOrthodoxCathedral, 1, False)
-		elif self.iReligion == iProtestantism:
-			screen.attachImageButton(panel, "", gc.getReligionInfo(iCatholicism).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_RELIGION, iCatholicism, 1, False)
-			screen.attachImageButton(panel, "", gc.getTechInfo(iAcademia).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iAcademia, 1, False)
+		#elif self.iReligion == iProtestantism:
+		#	screen.attachImageButton(panel, "", gc.getReligionInfo(iCatholicism).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_RELIGION, iCatholicism, 1, False)
+		#	screen.attachImageButton(panel, "", gc.getTechInfo(iAcademia).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, iAcademia, 1, False)
 			
 	def placeEffects(self):
 		screen = self.top.getScreen()

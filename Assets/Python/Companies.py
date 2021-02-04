@@ -175,7 +175,7 @@ class Companies:
 		
 		# religions
 		if iCompany == iSilkRoute:
-			if owner.getStateReligion() in [iProtestantism, iCatholicism, iOrthodoxy]:
+			if owner.getStateReligion() in [iCatholicism, iOrthodoxy]:
 				iValue -= 1
 		
 		# various bonuses
