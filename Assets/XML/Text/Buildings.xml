@@ -1518,84 +1518,324 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Saint Peter's Basilica[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Catholic Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT]. It also spreads [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_TEMPLE</Tag>
-		<English>Protestant Church</English>
-		<French>
-			<Text>&#201;glise protestante:&#201;glises protestantes</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Protestantische Kirche</German>
-		<Italian>Chiesa Protestante</Italian>
-		<Spanish>Iglesia protestante</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_TEMPLE</Tag>
+		<English>Anglican Church</English>
+		<French>Anglican Church</French>
+		<German>Anglican Church</German>
+		<Italian>Anglican Church</Italian>
+		<Spanish>Anglican Church</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_TEMPLE_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT] building.</English>
-		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT] building.</French>
-		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT] building.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT] building.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT] building.</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</English>
+		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</French>
+		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_MONASTERY</Tag>
-		<English>Protestant Seminary</English>
-		<French>
-			<Text>S&#233;minaire protestant:S&#233;minaires protestants</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Protestantisches Seminar</German>
-		<Italian>Seminario Protestante</Italian>
-		<Spanish>Seminario protestante</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_MONASTERY</Tag>
+		<English>Anglican Seminary</English>
+		<French>Anglican Seminary</French>
+		<German>Anglican Seminary</German>
+		<Italian>Anglican Seminary</Italian>
+		<Spanish>Anglican Seminary</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_MONASTERY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
-		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
-		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
+		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
+		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_CATHEDRAL</Tag>
-		<English>Protestant Cathedral</English>
-		<French>
-			<Text>Cath&#233;drale protestante:Cath&#233;drales protestantes</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Protestantische Kathedrale</German>
-		<Italian>Cattedrale Protestante</Italian>
-		<Spanish>Catedral protestante</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_CATHEDRAL</Tag>
+		<English>Anglican Cathedral</English>
+		<French>Anglican Cathedral</French>
+		<German>Anglican Cathedral</German>
+		<Italian>Anglican Cathedral</Italian>
+		<Spanish>Anglican Cathedral</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_CATHEDRAL_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_CATHEDRAL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_SHRINE</Tag>
-		<English>All Saints' Church</English>
-		<French>
-			<Text>&#201;glise de la Toussaint</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>All Saints' Church</German>
-		<Italian>All Saints' Church</Italian>
-		<Spanish>All Saints' Church</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_SHRINE</Tag>
+		<English>Anglican Shrine</English>
+		<French>Anglican Shrine</French>
+		<German>Anglican Shrine</German>
+		<Italian>Anglican Shrine</Italian>
+		<Spanish>Anglican Shrine</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PROTESTANT_SHRINE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]All Saints' Church[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]All Saints' Church[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]All Saints' Church[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]All Saints' Church[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]All Saints' Church[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_BUILDING_ANGLICAN_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_TEMPLE</Tag>
+		<English>Puritan Church</English>
+		<French>Puritan Church</French>
+		<German>Puritan Church</German>
+		<Italian>Puritan Church</Italian>
+		<Spanish>Puritan Church</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT] building.</English>
+		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT] building.</French>
+		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT] building.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT] building.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT] building.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_MONASTERY</Tag>
+		<English>Puritan Seminary</English>
+		<French>Puritan Seminary</French>
+		<German>Puritan Seminary</German>
+		<Italian>Puritan Seminary</Italian>
+		<Spanish>Puritan Seminary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
+		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
+		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_CATHEDRAL</Tag>
+		<English>Puritan Cathedral</English>
+		<French>Puritan Cathedral</French>
+		<German>Puritan Cathedral</German>
+		<Italian>Puritan Cathedral</Italian>
+		<Spanish>Puritan Cathedral</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_CATHEDRAL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Puritan Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_SHRINE</Tag>
+		<English>Puritan Shrine</English>
+		<French>Puritan Shrine</French>
+		<German>Puritan Shrine</German>
+		<Italian>Puritan Shrine</Italian>
+		<Spanish>Puritan Shrine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PURITAN_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Puritan Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Puritan Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Puritan Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Puritan Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Puritan Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_TEMPLE</Tag>
+		<English>Baptist Church</English>
+		<French>Baptist Church</French>
+		<German>Baptist Church</German>
+		<Italian>Baptist Church</Italian>
+		<Spanish>Baptist Church</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT] building.</English>
+		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT] building.</French>
+		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT] building.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT] building.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT] building.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_MONASTERY</Tag>
+		<English>Baptist Seminary</English>
+		<French>Baptist Seminary</French>
+		<German>Baptist Seminary</German>
+		<Italian>Baptist Seminary</Italian>
+		<Spanish>Baptist Seminary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
+		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
+		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_CATHEDRAL</Tag>
+		<English>Baptist Cathedral</English>
+		<French>Baptist Cathedral</French>
+		<German>Baptist Cathedral</German>
+		<Italian>Baptist Cathedral</Italian>
+		<Spanish>Baptist Cathedral</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_CATHEDRAL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Baptist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Baptistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_SHRINE</Tag>
+		<English>Baptist Shrine</English>
+		<French>Baptist Shrine</French>
+		<German>Baptist Shrine</German>
+		<Italian>Baptist Shrine</Italian>
+		<Spanish>Baptist Shrine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAPTIST_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Baptist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Baptist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Baptist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Baptist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Baptist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_TEMPLE</Tag>
+		<English>Methodist Church</English>
+		<French>Methodist Church</French>
+		<German>Methodist Church</German>
+		<Italian>Methodist Church</Italian>
+		<Spanish>Methodist Church</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT] building.</English>
+		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT] building.</French>
+		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT] building.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT] building.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT] building.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_MONASTERY</Tag>
+		<English>Methodist Seminary</English>
+		<French>Methodist Seminary</French>
+		<German>Methodist Seminary</German>
+		<Italian>Methodist Seminary</Italian>
+		<Spanish>Methodist Seminary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
+		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
+		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_CATHEDRAL</Tag>
+		<English>Methodist Cathedral</English>
+		<French>Methodist Cathedral</French>
+		<German>Methodist Cathedral</German>
+		<Italian>Methodist Cathedral</Italian>
+		<Spanish>Methodist Cathedral</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_CATHEDRAL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Methodist Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Methodistism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_SHRINE</Tag>
+		<English>Methodist Shrine</English>
+		<French>Methodist Shrine</French>
+		<German>Methodist Shrine</German>
+		<Italian>Methodist Shrine</Italian>
+		<Spanish>Methodist Shrine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_METHODIST_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Methodist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Methodist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Methodist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Methodist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Methodist Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_TEMPLE</Tag>
+		<English>Mormon Church</English>
+		<French>Mormon Church</French>
+		<German>Mormon Church</German>
+		<Italian>Mormon Church</Italian>
+		<Spanish>Mormon Church</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT] building.</English>
+		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT] building.</French>
+		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT] building.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT] building.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT] building.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_MONASTERY</Tag>
+		<English>Mormon Seminary</English>
+		<French>Mormon Seminary</French>
+		<German>Mormon Seminary</German>
+		<Italian>Mormon Seminary</Italian>
+		<Spanish>Mormon Seminary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
+		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
+		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_CATHEDRAL</Tag>
+		<English>Mormon Cathedral</English>
+		<French>Mormon Cathedral</French>
+		<German>Mormon Cathedral</German>
+		<Italian>Mormon Cathedral</Italian>
+		<Spanish>Mormon Cathedral</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_CATHEDRAL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Mormon Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_SHRINE</Tag>
+		<English>Mormon Shrine</English>
+		<French>Mormon Shrine</French>
+		<German>Mormon Shrine</German>
+		<Italian>Mormon Shrine</Italian>
+		<Spanish>Mormon Shrine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MORMON_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Mormon Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Mormon Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Mormon Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Mormon Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Mormon Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ISLAMIC_TEMPLE</Tag>

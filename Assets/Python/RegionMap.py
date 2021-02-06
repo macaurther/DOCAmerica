@@ -143,9 +143,31 @@ tSpreadFactors = (
 	iPeriphery :	[rMichigan, rWisconsin, rMinnesota, rWashington],
 	iMinority :		[rMissouri, rIllinois, rOhio, rKansas, rNebraska, rIdaho, rOregon],
 },
-# Protestantism
+# Anglicanism
 {
-	#MacAurther TODO: Religion Update: Split into Baptism, Pentecostal, Lutheran?
+	iCore :			[rVirginia, rSouthDakota, rNorthDakota, rNebraska, rWyoming],
+	iHistorical :	[rMaryland, rNorthCarolina, rSouthCarolina, rGeorgia, rDelaware, rPennsylvania, rConnecticut, rNewYork, rTexas, rAlabama,
+					rColorado, rMontana],
+	iPeriphery :	[rNewMexico, rIdaho, rCalifornia],
+	iMinority :		[rArizona, rNevada, rVermont, rNewHampshire, rMassachusetts, rRhodeIsland],
+},
+#Puritanism
+{
+	iCore :			[rMassachusetts],
+	iHistorical :	[rRhodeIsland, rConnecticut, rNewHampshire],
+	iPeriphery :	[rPennsylvania],
+},
+#Baptism
+{
+	iCore :			[rVirginia, rWestVirginia, rKentucky, rMissouri, rNorthCarolina, rTennessee, rArkansas, rOklahoma, rSouthCarolina, rGeorgia,
+					rAlabama, rMississippi, rRhodeIsland, rConnecticut],
+	iHistorical :	[rMaine, rPennsylvania, rMaryland, rOhio, rIndiana, rMichigan, rIllinois, rIowa, rMinnesota, rNorthDakota,
+					rSouthDakota, rMontana, rWashington, rOregon, rTexas, rLouisiana, rFlorida],
+	iPeriphery :	[rDelaware, rNewYork, rNewMexico, rColorado, rWyoming, rIdaho, rCalifornia],
+	iMinority :		[rArizona, rNevada, rVermont, rNewHampshire, rMassachusetts],
+},
+#Methodism
+{
 	iCore :			[rVirginia, rWestVirginia, rKentucky, rMissouri, rNorthCarolina, rTennessee, rArkansas, rOklahoma, rSouthCarolina, rGeorgia,
 					rAlabama, rMississippi],
 	iHistorical :	[rMaine, rPennsylvania, rMaryland, rOhio, rIndiana, rMichigan, rIllinois, rIowa, rMinnesota, rNorthDakota,
@@ -153,36 +175,22 @@ tSpreadFactors = (
 	iPeriphery :	[rDelaware, rNewYork, rNewMexico, rColorado, rWyoming, rIdaho, rCalifornia],
 	iMinority :		[rArizona, rNevada, rVermont, rNewHampshire, rMassachusetts, rConnecticut, rRhodeIsland],
 },
-#MacAurther TODO: Religion Update: Mormonism
 # Mormonism
-#{
-#	iCore :			[rUtah, rIdaho],
-#	iPeriphery :	[rArizona, rNevada, rMontana, rWyoming],
-#},
+{
+	iCore :			[rUtah, rIdaho],
+	iPeriphery :	[rArizona, rNevada, rMontana, rWyoming],
+},
 #MacAurther TODO: Religion Update: Figure out how to best represent Islam, Hiduism, Buddhism (Confucianism, Taoism, Zoroastrianism not to be included)
 # Islam
-{
-	iMinority : 	[],
-},
+#{
+#	iMinority : 	[],
+#},
 # Hinduism
-{
-	iMinority :	[],
-},
+#{
+#	iMinority :	[],
+#},
 # Buddhism
-{
-	iMinority :	[],
-},
-#MacAurther TODO: Delete these three
-# Confucianism
-{
-	iMinority :	[],
-},
-# Taoism
-{
-	iMinority :	[],
-},
-# Zoroastrianism
-{
-	iMinority :	[],
-},
+#{
+#	iMinority :	[],
+#},
 )

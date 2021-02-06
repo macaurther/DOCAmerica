@@ -70,81 +70,16 @@ def checkTurn(iGameTurn, iPlayer):
 	
 	pPlayer = gc.getPlayer(iPlayer)
 	
+	#MacAurther TODO: Add UHVs
 	if iPlayer == iSpain:
-	
-		# first goal: be the first to found a colony in America
-		
-		# second goal: secure 10 gold or silver resources by 1650 AD
-		if isPossible(iSpain, 1):
-			iNumGold = countResources(iSpain, iGold)
-			iNumSilver = countResources(iSpain, iSilver)
-			
-			if iNumGold + iNumSilver >= 10:
-				win(iSpain, 1)
-				
-		if iGameTurn == getTurnForYear(1650):
-			expire(iSpain, 1)
-			
-		# third goal: spread Catholicism to 30% and allow no Protestant civilizations in Europe in 1650 AD
-		if iGameTurn == getTurnForYear(1650):
-			fReligionPercent = gc.getGame().calculateReligionPercent(iCatholicism)
-			
-			bProtestantsEurope = isStateReligionInArea(iProtestantism, tEuropeTL, tEuropeBR)
-			bProtestantsEasternEurope = isStateReligionInArea(iProtestantism, tEasternEuropeTL, tEasternEuropeBR)
-			
-			if fReligionPercent >= 30.0 and not bProtestantsEurope and not bProtestantsEasternEurope:
-				win(iSpain, 2)
-			else:
-				lose(iSpain, 2)
+		pass
 				
 	elif iPlayer == iFrance:
-	
-		# first goal: have legendary culture in Paris in 1700 AD
-		if iGameTurn == getTurnForYear(1700):
-			if getCityCulture(iFrance, (55, 50)) >= utils.getTurns(50000):
-				win(iFrance, 0)
-			else:
-				lose(iFrance, 0)
-				
-		# second goal: control 40% of Europe and North America in 1800 AD
-		if iGameTurn == getTurnForYear(1800):
-			iEurope, iTotalEurope = countControlledTiles(iFrance, tEuropeTL, tEuropeBR, True)
-			iEasternEurope, iTotalEasternEurope = countControlledTiles(iFrance, tEasternEuropeTL, tEasternEuropeBR, True)
-			iNorthAmerica, iTotalNorthAmerica = countControlledTiles(iFrance, tNorthAmericaTL, tNorthAmericaBR, True)
-			
-			fEurope = (iEurope + iEasternEurope) * 100.0 / (iTotalEurope + iTotalEasternEurope)
-			fNorthAmerica = iNorthAmerica * 100.0 / iTotalNorthAmerica
-			
-			if fEurope >= 40.0 and fNorthAmerica >= 40.0:
-				win(iFrance, 1)
-			else:
-				lose(iFrance, 1)
-				
-		# third goal: build Notre Dame, Versailles, the Louvre, the Eiffel Tower and the Metropolitain by 1900 AD
-		if iGameTurn == getTurnForYear(1900):
-			expire(iFrance, 2)
+		pass
 			
 	elif iPlayer == iEngland:
-	
-		# first goal: colonize every continent by 1730 AD
-		if iGameTurn == getTurnForYear(1730):
-			expire(iEngland, 0)
-			
-		# second goal: control a total of 25 frigates and ships of the line and sink 50 enemy ships by 1800 AD
-		if isPossible(iEngland, 1):
-			iEnglishNavy = 0
-			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iFrigate).getUnitClassType())
-			iEnglishNavy += pEngland.getUnitClassCount(gc.getUnitInfo(iShipOfTheLine).getUnitClassType())
-			
-			if iEnglishNavy >= 25 and data.iEnglishSinks >= 50:
-				win(iEngland, 1)
+		pass
 		
-		if iGameTurn == getTurnForYear(1800):
-			expire(iEngland, 1)
-			
-		# third goal: be the first to enter the Industrial and Modern eras
-			
-	#MacAurther TODO: Add UHVs
 	elif iPlayer == iVirginia:
 		pass
 	

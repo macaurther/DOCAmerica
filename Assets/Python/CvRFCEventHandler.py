@@ -151,7 +151,6 @@ class CvRFCEventHandler:
 					utils.relocateCapital(iPlayer, city)
 
 		# MacAurther: Hartford should spawn with a Palisade and Barracks
-		#MacAurther TODO: This isn't working
 		if iPlayer == iConnecticut and tCity == Areas.getCapital(iConnecticut):
 			city.setHasRealBuilding(iBarracks, True)
 			city.setHasRealBuilding(iWalls, True)
@@ -176,7 +175,7 @@ class CvRFCEventHandler:
 			city.setName("New York", False)
 			
 			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
-
+		
 		if bConquest:
 			pass
 					
@@ -194,8 +193,9 @@ class CvRFCEventHandler:
 		
 		lTradingCompanyList = [iSpain, iFrance, iEngland]
 		
-		if bTrade and iPlayer in lTradingCompanyList and (city.getX(), city.getY()) in tTradingCompanyPlotLists[lTradingCompanyList.index(iPlayer)]:
-			self.up.tradingCompanyCulture(city, iPlayer, iOwner)
+		#MacAurther TODO
+		#if bTrade and iPlayer in lTradingCompanyList and (city.getX(), city.getY()) in tTradingCompanyPlotLists[lTradingCompanyList.index(iPlayer)]:
+		#	self.up.tradingCompanyCulture(city, iPlayer, iOwner)
 		
 		return 0
 		

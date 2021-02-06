@@ -660,10 +660,7 @@ def republicTitle(iPlayer):
 	#	_, _, iCivicLabor, _, _, _ = getCivics(iPlayer)
 	#	if iCivicSociety in [iSlavery]:
 	#		return key(iPlayer, "CSA")
-			
-	if gc.getPlayer(iPlayer).getStateReligion() == iIslam:
-		if iPlayer in lIslamicRepublicOf: return "TXT_KEY_ISLAMIC_REPUBLIC_OF"
-		
+	
 	if iPlayer in lRepublicOf: return "TXT_KEY_REPUBLIC_OF"
 	if iPlayer in lRepublicAdj: return "TXT_KEY_REPUBLIC_ADJECTIVE"
 	
@@ -698,8 +695,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 
 	# MacAurther TODO
 	if iPlayer == iSpain:
-		if iReligion == iIslam:
-			return "TXT_KEY_SULTANATE_OF"
 			
 		if bEmpire and iEra > iExplorationEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"

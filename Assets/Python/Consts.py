@@ -419,8 +419,8 @@ tPersecutionPreference = (
 (iJudaism, iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism, iMethodism), # Mormonism
 )
 
-lCatholicStart = [iSpain, iFrance, iEngland, iCanada]
-lProtestantStart = [iAmerica]
+lCatholicStart = [iSpain, iFrance]
+lAnglicanStart = [iEngland, iVirginia, iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iDelaware, iCanada]
 
 # corporations
 iNumCorporations = 9
@@ -691,9 +691,9 @@ rebirthLeaders = {
 }
 
 tTradingCompanyPlotLists = (
-[(109, 33)], #Spain
-[(101, 37), (101, 36), (102, 36), (102, 35), (103, 35), (103, 34), (104, 34), (104, 33)], #France
-[(95, 37), (94, 37), (94, 36), (94, 35), (94, 34), (93, 34), (93, 33), (92, 33), (92, 32), (88, 33), (88, 34), (88, 35)], #England
+[], #Spain
+[], #France
+[], #England
 )
 
 lSecondaryCivs = []

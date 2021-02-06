@@ -11,7 +11,7 @@
 			<Description>TXT_KEY_RELIGION_JUDAISM</Description>
 			<Adjective>TXT_KEY_RELIGION_JUDAISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_JUDAISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_HUMANITIES</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<FreeUnitClass>UNITCLASS_JEWISH_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>50</iSpreadFactor>
@@ -24,7 +24,7 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
@@ -32,7 +32,7 @@
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
 			<Button>Art/Interface/Buttons/Religions/Jewish.dds</Button>
-			<TechButton>Art/Interface/Buttons/TechTree/Monotheism.dds</TechButton>
+			<TechButton>Art/Interface/Buttons/TechTree/Philosophy.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Judaism.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,4,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Judaism/Jud_Found.nif</MovieFile>
 			<MovieSound>AS2D_BUILD_JEWISH_MOVIE</MovieSound>
@@ -56,7 +56,7 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
@@ -64,7 +64,7 @@
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
 			<Button>Art/Interface/Buttons/Religions/Orthodoxy.dds</Button>
-			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
+			<TechButton>Art/Interface/Buttons/TechTree/Philosophy.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
 			<MovieSound>AS2D_BUILD_CHRISTIAN_MOVIE</MovieSound>
@@ -75,7 +75,7 @@
 			<Description>TXT_KEY_RELIGION_CATHOLICISM</Description>
 			<Adjective>TXT_KEY_RELIGION_CATHOLICISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_CATHOLICISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_JUDICIARY</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<FreeUnitClass>UNITCLASS_CATHOLIC_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>1</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
@@ -88,7 +88,7 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
@@ -96,7 +96,7 @@
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
 			<Button>Art/Interface/Buttons/Religions/Catholicism.dds</Button>
-			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
+			<TechButton>Art/Interface/Buttons/TechTree/Philosophy.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
 			<MovieSound>AS2D_BUILD_CHRISTIAN_MOVIE</MovieSound>
@@ -107,7 +107,7 @@
 			<Description>TXT_KEY_RELIGION_ANGLICANISM</Description>
 			<Adjective>TXT_KEY_RELIGION_ANGLICANISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_ANGLICANISM_PEDIA</Civilopedia>
-			<TechPrereq>NONE</TechPrereq>
+			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
 			<FreeUnitClass>UNITCLASS_ANGLICAN_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
@@ -120,15 +120,15 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Christian.dds</Button>
-			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
+			<Button>Art/Interface/Buttons/Religions/Anglicanism.dds</Button>
+			<TechButton>Art/Interface/Buttons/TechTree/Philosophy.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
 			<MovieSound>AS2D_BUILD_CHRISTIAN_MOVIE</MovieSound>
@@ -139,7 +139,7 @@
 			<Description>TXT_KEY_RELIGION_PURITANISM</Description>
 			<Adjective>TXT_KEY_RELIGION_PURITANISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_PURITANISM_PEDIA</Civilopedia>
-			<TechPrereq>NONE</TechPrereq>
+			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<FreeUnitClass>UNITCLASS_PURITAN_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
@@ -152,7 +152,7 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
@@ -171,7 +171,7 @@
 			<Description>TXT_KEY_RELIGION_BAPTISM</Description>
 			<Adjective>TXT_KEY_RELIGION_BAPTISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_BAPTISM_PEDIA</Civilopedia>
-			<TechPrereq>NONE</TechPrereq>
+			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_BAPTIST_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
@@ -184,14 +184,14 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Christian.dds</Button>
+			<Button>Art/Interface/Buttons/Religions/Baptism.dds</Button>
 			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
@@ -203,7 +203,7 @@
 			<Description>TXT_KEY_RELIGION_METHODISM</Description>
 			<Adjective>TXT_KEY_RELIGION_METHODISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_METHODISM_PEDIA</Civilopedia>
-			<TechPrereq>NONE</TechPrereq>
+			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
 			<FreeUnitClass>UNITCLASS_METHODIST_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
@@ -216,14 +216,14 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Christian.dds</Button>
+			<Button>Art/Interface/Buttons/Religions/Methodism.dds</Button>
 			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
@@ -235,7 +235,7 @@
 			<Description>TXT_KEY_RELIGION_MORMONISM</Description>
 			<Adjective>TXT_KEY_RELIGION_MORMONISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_MORMONISM_PEDIA</Civilopedia>
-			<TechPrereq>NONE</TechPrereq>
+			<TechPrereq>TECH_JOURNALISM</TechPrereq>
 			<FreeUnitClass>UNITCLASS_MORMON_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
@@ -248,14 +248,14 @@
 			<HolyCityCommerces>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
 				<iHolyCityCommerce>0</iHolyCityCommerce>
-				<iHolyCityCommerce>3</iHolyCityCommerce>
+				<iHolyCityCommerce>1</iHolyCityCommerce>
 			</HolyCityCommerces>
 			<StateReligionCommerces>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Christian.dds</Button>
+			<Button>Art/Interface/Buttons/Religions/Mormonism.dds</Button>
 			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>

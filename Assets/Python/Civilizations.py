@@ -51,7 +51,6 @@ def initPlayerTechs(iPlayer):
 def initTechs(iPlayer, lTechs):
 	pPlayer = gc.getPlayer(iPlayer)
 
-	#lTechs = Techs([iExploration, iOptics], column=9).list()	#Debug
 	for iTech in lTechs:
 		initTech(iPlayer, iTech)
 	

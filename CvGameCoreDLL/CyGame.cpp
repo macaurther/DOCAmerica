@@ -845,6 +845,11 @@ bool CyGame::isReligionFounded(int /*ReligionTypes*/ eIndex)
 	return m_pGame ? m_pGame->isReligionFounded((ReligionTypes) eIndex) : false;
 }
 
+void CyGame::makeReligionFounded(int /*ReligionTypes*/ eIndex, int /*PlayerTypes*/ ePlayer)
+{
+	return m_pGame ? m_pGame->makeReligionFounded((ReligionTypes) eIndex, (PlayerTypes) ePlayer) : false;
+}
+
 bool CyGame::isReligionSlotTaken(int /*ReligionTypes*/ eIndex)
 {
 	return m_pGame ? m_pGame->isReligionSlotTaken((ReligionTypes) eIndex) : false;

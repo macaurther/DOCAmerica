@@ -2166,24 +2166,104 @@
 		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Catholic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PROTESTANT_MISSIONARY</Tag>
-		<English>Protestant Missionary</English>
+		<Tag>TXT_KEY_UNIT_ANGLICAN_MISSIONARY</Tag>
+		<English>Anglican Missionary</English>
 		<French>
-			<Text>Missionnaire protestant</Text>
+			<Text>Missionnaire anglican</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Protestantischer Missionar</German>
-		<Italian>Protestant Missionary</Italian>
-		<Spanish>Protestant Missionary</Spanish>
+		<German>Anglican Missionar</German>
+		<Italian>Anglican Missionary</Italian>
+		<Spanish>Anglican Missionary</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PROTESTANT_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
+		<Tag>TXT_KEY_UNIT_ANGLICAN_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
+		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
+		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
+		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PURITAN_MISSIONARY</Tag>
+		<English>Puritan Missionary</English>
+		<French>
+			<Text>Missionnaire Puritan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Puritan Missionar</German>
+		<Italian>Puritan Missionary</Italian>
+		<Spanish>Puritan Missionary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PURITAN_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
+		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
+		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
+		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Puritan Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Puritanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BAPTIST_MISSIONARY</Tag>
+		<English>Baptist Missionary</English>
+		<French>
+			<Text>Missionnaire Baptist</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Baptist Missionar</German>
+		<Italian>Baptist Missionary</Italian>
+		<Spanish>Baptist Missionary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PROTESTANT_BAPTIST_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Baptism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
+		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Baptism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
+		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Baptism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
+		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Baptism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Baptist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Baptism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_METHODIST_MISSIONARY</Tag>
+		<English>Methodist Missionary</English>
+		<French>
+			<Text>Methodist protestant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Methodist Missionar</German>
+		<Italian>Methodist Missionary</Italian>
+		<Spanish>Methodist Missionary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_METHODIST_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Methodism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
+		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Methodism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
+		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Methodism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
+		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Methodism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Methodist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Methodism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MORMON_MISSIONARY</Tag>
+		<English>Mormon Missionary</English>
+		<French>
+			<Text>Mormon protestant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Mormon Missionar</German>
+		<Italian>Mormon Missionary</Italian>
+		<Spanish>Mormon Missionary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MORMON_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
+		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
+		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
+		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Mormon Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Mormonism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Tag>

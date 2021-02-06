@@ -415,7 +415,7 @@ class CvTechChooser:
 			if iTech > -1:
 				self.TechEffects[iTech].append(("Religion", iReligion))
 				
-		self.TechEffects[iAcademia].append(("Religion", iProtestantism))
+		#self.TechEffects[iAcademia].append(("Religion", iProtestantism))
 
 
 

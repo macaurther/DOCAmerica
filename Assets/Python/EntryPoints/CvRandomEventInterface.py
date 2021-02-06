@@ -1384,14 +1384,14 @@ def canTriggerAncientOlympics(argsList):
 
 	stateReligion = player.getStateReligion()
 	
-	if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_PROTESTANTISM'):
-		return false
+	#if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_PROTESTANTISM'):
+	#	return false
 
 	if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_CATHOLICISM'):
 		return false
 
-	if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_ISLAM'):
-		return false
+	#if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_ISLAM'):
+	#	return false
 
 	return true
 

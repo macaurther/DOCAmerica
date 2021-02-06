@@ -388,7 +388,7 @@ class RiseAndFall:
 	def initStartingReligions(self):
 		if utils.getScenario() == i1600AD:
 			utils.setStateReligionBeforeBirth(lCatholicStart, iCatholicism)
-			utils.setStateReligionBeforeBirth(lProtestantStart, iCatholicism)
+			utils.setStateReligionBeforeBirth(lAnglicanStart, iAnglicanism)
 			
 	def checkTurn(self, iGameTurn):
 	
@@ -1595,7 +1595,6 @@ class RiseAndFall:
 			if utils.getHumanID() != iSpain:
 				utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
 			utils.createMissionaries(iCiv, 1)
-
 		elif iCiv == iFrance:
 			utils.createSettlers(iCiv, 3)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
@@ -1615,18 +1614,24 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pVirginia.setLastStateReligion(iAnglicanism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iMassachusetts:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pMassachusetts.setLastStateReligion(iPuritanism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNewHampshire:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pNewHampshire.setLastStateReligion(iPuritanism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iMaryland:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
@@ -1634,21 +1639,29 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pMaryland.setLastStateReligion(iCatholicism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iConnecticut:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
+			pConnecticut.setLastStateReligion(iPuritanism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iRhodeIsland:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pRhodeIsland.setLastStateReligion(iBaptism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNorthCarolina:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			pNorthCarolina.setLastStateReligion(iAnglicanism)
+			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iSouthCarolina:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
@@ -1656,12 +1669,16 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pSouthCarolina.setLastStateReligion(iAnglicanism)
+			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iNewJersey:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pNewJersey.setLastStateReligion(iAnglicanism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNewYork:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 3)
@@ -1670,6 +1687,8 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pNewYork.setLastStateReligion(iAnglicanism)
+			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iPennsylvania:
 			utils.createSettlers(iCiv, 3)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 3)
@@ -1677,12 +1696,16 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pPennsylvania.setLastStateReligion(iPuritanism)
+			utils.createMissionaries(iCiv, 3)
 		elif iCiv == iDelaware:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 1)
 			utils.makeUnitAI(iArquebusier, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pDelaware.setLastStateReligion(iAnglicanism)
+			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iGeorgia:
 			utils.createSettlers(iCiv, 2)
 			utils.makeUnit(iArquebusier, iCiv, tPlot, 2)
@@ -1690,6 +1713,8 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			pGeorgia.setLastStateReligion(iMethodism)
+			utils.createMissionaries(iCiv, 2)
 
 
 		elif iCiv == iAmerica:
@@ -1743,7 +1768,7 @@ class RiseAndFall:
 		iMax = 0
 		iHighestReligion = -1
 		for i in range(iNumReligions):
-			iLoopReligion = (iProtestantism + i) % iNumReligions
+			iLoopReligion = (iJudaism + i) % iNumReligions
 			if lReligions[iLoopReligion] > iMax:
 				iMax = lReligions[iLoopReligion]
 				iHighestReligion = iLoopReligion

@@ -394,7 +394,7 @@ public:
 	int getReligionGameTurnFounded(ReligionTypes eIndex);												// Exposed to Python
 	bool isReligionFounded(ReligionTypes eIndex);																// Exposed to Python
 	void setReligionGameTurnFounded(ReligionTypes eReligion, int iGameTurn); // Leoreth
-	void makeReligionFounded(ReligionTypes eIndex, PlayerTypes ePlayer);
+	void makeReligionFounded(ReligionTypes eIndex, PlayerTypes ePlayer);		// MacAurther: Exposed to Python
 
 	bool isReligionSlotTaken(ReligionTypes eReligion) const;											// Exposed to Python
 	void setReligionSlotTaken(ReligionTypes eReligion, bool bTaken);

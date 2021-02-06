@@ -1202,6 +1202,7 @@
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>
+		<!-- MacAurther TODO: -->
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_BLESSED_SEA</Type>
 			<WorldNewsTexts/>
@@ -1245,9 +1246,7 @@
 			<BonusesRequired/>
 			<RoutesRequired/>
 			<ReligionsRequired>
-				<ReligionType>RELIGION_BUDDHISM</ReligionType>
-				<ReligionType>RELIGION_CONFUCIANISM</ReligionType>
-				<ReligionType>RELIGION_TAOISM</ReligionType>
+				<ReligionType>RELIGION_ORTHODOXY</ReligionType>
 			</ReligionsRequired>
 			<iNumReligions>1</iNumReligions>
 			<CorporationsRequired/>
@@ -16443,6 +16442,7 @@
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>
+		<!-- MacAurther TODO -->
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_GOLDEN_BUDDHA</Type>
 			<WorldNewsTexts>
@@ -16496,7 +16496,7 @@
 				<RouteType>ROUTE_ROAD</RouteType>
 			</RoutesRequired>
 			<ReligionsRequired>
-				<ReligionType>RELIGION_BUDDHISM</ReligionType>
+				<ReligionType>RELIGION_ORTHODOXY</ReligionType>
 			</ReligionsRequired>
 			<iNumReligions>1</iNumReligions>
 			<CorporationsRequired/>
