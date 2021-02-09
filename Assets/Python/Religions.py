@@ -60,15 +60,11 @@ class Religions:
 		
 	def checkTurn(self, iGameTurn):
 
-		self.checkJudaism(iGameTurn)
-
-		self.checkCatholicism(iGameTurn)
-
-		self.checkOrthodoxy(iGameTurn)
-
-		self.checkAnglicanism(iGameTurn)
-
-		self.checkPuritanism(iGameTurn)
+		if iGameTurn == 1:
+			self.foundJudaism()
+			self.foundCatholicism()
+			self.foundOrthodoxy()
+			self.foundAnglicanism()
 
 		self.spreadJudaismAmerica(iGameTurn)
 
@@ -218,11 +214,9 @@ class Religions:
 #MacAurther TODO Religion Immigrants
 ## JUDAISM
 
-	def checkJudaism(self, iGameTurn):
+	def foundJudaism(self):
 		if gc.getGame().isReligionFounded(iJudaism): return
-
-		if iGameTurn <= getTurnForYear(1605):
-			self.foundReligion(self.selectHolyCity(tJewishTL, tJewishBR, tJerusalem, False), iJudaism)
+		self.foundReligion(self.selectHolyCity(tJewishTL, tJewishBR, tJerusalem, False), iJudaism)
 			
 	def spreadJudaismAmerica(self, iGameTurn):
 		#self.spreadReligionToRegion(iJudaism, [rCanada, rAlaska, rUnitedStates], iGameTurn, 1850, 10, 4)
@@ -245,57 +239,48 @@ class Religions:
 		
 ## CATHOLICISM
 
-	def checkCatholicism(self, iGameTurn):
+	def foundCatholicism(self):
 		if gc.getGame().isReligionFounded(iCatholicism): return
-
-		if iGameTurn <= getTurnForYear(1605):
-			self.foundReligion(self.selectHolyCity(tCatholicTL, tCatholicBR, tJerusalem, False), iCatholicism)
+		self.foundReligion(self.selectHolyCity(tCatholicTL, tCatholicBR, tJerusalem, False), iCatholicism)
 
 ## ORTHODOXY
 
-	def checkOrthodoxy(self, iGameTurn):
+	def foundOrthodoxy(self):
 		if gc.getGame().isReligionFounded(iOrthodoxy): return
-
-		if iGameTurn <= getTurnForYear(1605):
-			self.foundReligion(self.selectHolyCity(tOrthodoxTL, tOrthodoxBR, tJerusalem, False), iOrthodoxy)
+		self.foundReligion(self.selectHolyCity(tOrthodoxTL, tOrthodoxBR, tJerusalem, False), iOrthodoxy)
 
 ## ANGLICANISM
 
-	def checkAnglicanism(self, iGameTurn):
+	def foundAnglicanism(self):
 		if gc.getGame().isReligionFounded(iAnglicanism): return
-
-		if iGameTurn <= getTurnForYear(1605):
-			self.foundReligion(self.selectHolyCity(tAnglicanTL, tAnglicanBR, tJerusalem, False), iAnglicanism)
+		self.foundReligion(self.selectHolyCity(tAnglicanTL, tAnglicanBR, tJerusalem, False), iAnglicanism)
 
 ## PURITANISM
 
-	def checkPuritanism(self, iGameTurn):
+	def foundPuritanism(self):
 		if gc.getGame().isReligionFounded(iPuritanism): return
-		
-		if iGameTurn >= getTurnForYear(1621) and iGameTurn <= getTurnForYear(1625):
-			self.foundReligion(self.selectHolyCity(tPuritanTL, tPuritanBR, tBoston, False), iPuritanism)
-			pMassachusetts.setLastStateReligion(iPuritanism)
+
+		self.foundReligion(self.selectHolyCity(tPuritanTL, tPuritanBR, tBoston, False), iPuritanism)
+		pMassachusetts.setLastStateReligion(iPuritanism)
 
 ## BAPTISM
 
-	def checkBaptism(self, iGameTurn):
+	def foundBaptism(self, iGameTurn):
 		if gc.getGame().isReligionFounded(iBaptism): return
 		
-		if iGameTurn >= getTurnForYear(1637) and iGameTurn <= getTurnForYear(1640):
-			self.foundReligion(self.selectHolyCity(tBaptistTL, tBaptistBR, tProvidence, False), iBaptism)
-			pRhodeIsland.setLastStateReligion(iBaptism)
+		self.foundReligion(self.selectHolyCity(tBaptistTL, tBaptistBR, tProvidence, False), iBaptism)
+		pRhodeIsland.setLastStateReligion(iBaptism)
 
 ## METHODISM
 
-	def checkPuritanism(self, iGameTurn):
+	def foundMethodism(self, iGameTurn):
 		if gc.getGame().isReligionFounded(iMethodism): return
-		
-		if iGameTurn <= getTurnForYear(1735):
-			self.foundReligion(self.selectHolyCity(tMethodistTL, tMethodistBR, tSavannah, False), iMethodism)
-			pGeorgia.setLastStateReligion(iMethodism)
+
+		self.foundReligion(self.selectHolyCity(tMethodistTL, tMethodistBR, tSavannah, False), iMethodism)
+		pGeorgia.setLastStateReligion(iMethodism)
 
 ## CATHOLICISM
-
+# MacAurther TODO: Clean Up
 	def checkSchism(self, iGameTurn):
 		if not gc.getGame().isReligionFounded(iOrthodoxy): return
 		if gc.getGame().isReligionFounded(iCatholicism): return

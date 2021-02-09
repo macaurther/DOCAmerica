@@ -246,6 +246,14 @@ class CvRFCEventHandler:
 			
 		if iOwner < iNumPlayers:
 			dc.onCityBuilt(iOwner)
+		
+		# MacAurther: Religion Founding:
+		if iOwner == iMassachusetts:
+			rel.foundPuritanism()
+		elif iOwner == iRhodeIsland:
+			rel.foundBaptism()
+		elif iOwner == iGeorgia:
+			rel.foundMethodism()
 
 		# Leoreth: free defender and worker for AI colonies
 		#if iOwner in lCivGroups[0]:
