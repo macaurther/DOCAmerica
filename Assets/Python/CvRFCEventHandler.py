@@ -253,8 +253,18 @@ class CvRFCEventHandler:
 		#		if utils.getHumanID() != iOwner:
 		#			utils.createGarrisons(tCity, iOwner, 1)
 		#			utils.makeUnit(iWorker, iOwner, tCity, 1)
-					
-				
+		
+		# MacAurther TODO: Somewhere in the code (haven't found where yet), new
+		# city populations are set to the era number. However, I want new cities in
+		# the PreColumbian-Colonization eras to be 1, and then increase by one each
+		# era afterward. This is a hack to quickly reset the population to the desired
+		# level 
+		#MacAurther TODO: There may need to be more safeguards here
+		if gc.getPlayer(iOwner).getCurrentEra() < iRevolutionaryEra:
+			city.setPopulation(1)
+		else:
+			city.setPopulation(gc.getPlayer(iOwner).getCurrentEra() - 3)
+		
 		# Leoreth: free defender and worker for cities founded by American Pioneer in North America
 		#MacAurther TODO: tie to the Pioneer unit somehow?
 		if iOwner == iAmerica:

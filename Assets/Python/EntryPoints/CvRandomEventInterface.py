@@ -4625,4 +4625,4 @@ def canTriggerWedding(argsList):
 	kTriggeredData = argsList[0]
 	iPlayer = kTriggeredData.ePlayer
 	
-	return gc.getPlayer(iPlayer).getCivics(iCivicsGovernment) not in [iStateParty, iDemocracy]
+	return gc.getPlayer(iPlayer).getCivics(iCivicsGovernment) #not in [iStateParty, iDemocracy]

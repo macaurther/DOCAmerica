@@ -272,7 +272,7 @@ class Religions:
 	def checkPuritanism(self, iGameTurn):
 		if gc.getGame().isReligionFounded(iPuritanism): return
 		
-		if iGameTurn <= getTurnForYear(1625):
+		if iGameTurn >= getTurnForYear(1621) and iGameTurn <= getTurnForYear(1625):
 			self.foundReligion(self.selectHolyCity(tPuritanTL, tPuritanBR, tBoston, False), iPuritanism)
 			pMassachusetts.setLastStateReligion(iPuritanism)
 
@@ -281,7 +281,7 @@ class Religions:
 	def checkBaptism(self, iGameTurn):
 		if gc.getGame().isReligionFounded(iBaptism): return
 		
-		if iGameTurn <= getTurnForYear(1640):
+		if iGameTurn >= getTurnForYear(1637) and iGameTurn <= getTurnForYear(1640):
 			self.foundReligion(self.selectHolyCity(tBaptistTL, tBaptistBR, tProvidence, False), iBaptism)
 			pRhodeIsland.setLastStateReligion(iBaptism)
 

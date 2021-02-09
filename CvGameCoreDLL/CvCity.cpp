@@ -7026,6 +7026,10 @@ void CvCity::updateFeatureHealth()
 				{
 					iNewGoodHealth += GC.getFeatureInfo(eFeature).getHealthPercent();
 				}
+				else
+				{
+					iNewBadHealth += GC.getFeatureInfo(eFeature).getHealthPercent();
+				}
 			}
 		}
 	}
@@ -9672,32 +9676,32 @@ int CvCity::totalTradeModifier(CvCity* pOtherCity) const
 
 	if (NULL != pOtherCity)
 	{
-	    if (plot()->getContinentArea() != pOtherCity->plot()->getContinentArea())
+		if (plot()->getContinentArea() != pOtherCity->plot()->getContinentArea())
 		{
 			iModifier += GC.getDefineINT("OVERSEAS_TRADE_MODIFIER");
 		}
 
-        if ((getTeam() != pOtherCity->getTeam() && !GET_PLAYER(getOwner()).isNoForeignTradeModifier()))
+		if ((getTeam() != pOtherCity->getTeam() && !GET_PLAYER(getOwner()).isNoForeignTradeModifier()))
 		{
 			iModifier += getForeignTradeRouteModifier();
 
 			iModifier += getPeaceTradeModifier(pOtherCity->getTeam());
-
-			// Leoreth: new distance modifier
-			iModifier += getDistanceTradeModifier(pOtherCity);
-
-			// Leoreth: new modifier for trade routes with capital
-			iModifier += getCapitalTradeModifier(pOtherCity);
-
-			// Leoreth: new modifier for trade routes with defensive pact partners
-			iModifier += getDefensivePactTradeModifier(pOtherCity);
-
-			// Leoreth: new culture level based modifier
-			iModifier += getCultureTradeRouteModifier() * getCultureLevel();
 		}
 
-		return iModifier;
+		// Leoreth: new distance modifier
+		iModifier += getDistanceTradeModifier(pOtherCity);
+
+		// Leoreth: new modifier for trade routes with capital
+		iModifier += getCapitalTradeModifier(pOtherCity);
+
+		// Leoreth: new modifier for trade routes with defensive pact partners
+		iModifier += getDefensivePactTradeModifier(pOtherCity);
+
+		// Leoreth: new culture level based modifier
+		iModifier += getCultureTradeRouteModifier() * getCultureLevel();
 	}
+
+	return iModifier;
 }
 
 int CvCity::getCapitalTradeModifier(CvCity* pOtherCity) const
