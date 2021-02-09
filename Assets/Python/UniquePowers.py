@@ -25,6 +25,9 @@
 #Turkey HERE + in CvPlayer::canRazeCity()
 #America HERE + in CvCity::getCulturePercentAnger()
 
+#MacAurther: States:
+#Virginia CvCity:getGreatPeopleRate()
+
 from CvPythonExtensions import *
 import CvUtil
 import PyHelpers   

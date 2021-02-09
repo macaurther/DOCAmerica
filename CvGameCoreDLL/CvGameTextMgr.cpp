@@ -18283,6 +18283,14 @@ void CvGameTextMgr::parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city
 		}
 	}
 
+	// Leoreth: Greek UP // MacAurther: Virginian UP
+	if (city.getOwnerINLINE() == VIRGINIA && GET_PLAYER(city.getOwnerINLINE()).getCurrentEra() <= ERA_REVOLUTIONARY)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_UNIQUE_POWER", 100));
+		szBuffer.append(NEWLINE);
+		iModifier += 100;
+	}
+
 	if (owner.isGoldenAge())
 	{
 		int iGoldenAgeMod = GC.getDefineINT("GOLDEN_AGE_GREAT_PEOPLE_MODIFIER");

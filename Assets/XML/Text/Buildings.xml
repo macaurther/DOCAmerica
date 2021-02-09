@@ -2427,11 +2427,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CIVIC_SQUARE_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</English>
-		<French>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French>
-		<German>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</English>
+		<French>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French>
+		<German>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] increase a city's cultural output. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SEWER</Tag>
@@ -3279,7 +3279,7 @@
 	</TEXT>
 	
 	<!-- MacAurther TODO: Maybe make these alphabetical -->
-		<TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MARYLAND_CRABBERY</Tag>
 		<English>Crabbery</English>
 		<French>Crabbery</French>
@@ -3288,15 +3288,29 @@
 		<Spanish>Crabbery</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_WHARF_STRATEGY</Tag>
+		<Tag>TXT_KEY_BUILDING_MARYLAND_CRABBERY_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</English>
 		<French>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</French>
 		<German>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Spanish>
 	</TEXT>
-	
-	
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VIRGINIAN_HOUSE_OF_BURGESSES</Tag>
+		<English>House of Burgesses</English>
+		<French>House of Burgesses</French>
+		<German>House of Burgesses</German>
+		<Italian>House of Burgesses</Italian>
+		<Spanish>House of Burgesses</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VIRGINIAN_HOUSE_OF_BURGESSES_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]House of Burgesses[COLOR_REVERT], the Virginian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate.</English>
+		<French>The [COLOR_BUILDING_TEXT]House of Burgesses[COLOR_REVERT], the Virginian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate.</French>
+		<German>The [COLOR_BUILDING_TEXT]House of Burgesses[COLOR_REVERT], the Virginian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]House of Burgesses[COLOR_REVERT], the Virginian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]House of Burgesses[COLOR_REVERT], the Virginian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate.</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English></English>

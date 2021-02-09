@@ -6310,6 +6310,12 @@ int CvCity::getTotalGreatPeopleRateModifier() const
 		iModifier += GC.getDefineINT("GOLDEN_AGE_GREAT_PEOPLE_MODIFIER");
 	}
 
+	// Leoreth: Greek UP // MacAurther: Virginian UP
+	if (getOwnerINLINE() == VIRGINIA && GET_PLAYER(getOwnerINLINE()).getCurrentEra() <= ERA_REVOLUTIONARY)
+	{
+		iModifier += 100;
+	}
+
 	return std::max(0, (iModifier + 100));
 }
 
