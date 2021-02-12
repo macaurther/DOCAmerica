@@ -454,13 +454,13 @@ iSocialPrograms,) = range(iNumTechs)														#Information 3
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 122
+iNumUnits = 133
 (iLion, iBear, iPanther, iWolf, iSettler, iPioneer, iWorker, iLabourer, 
 iScout, iExplorer, iSpy, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iAnglicanMissionary, 
-iPuritanMissionary, iBaptistMissionary, iMethodistMissionary, iMormonMissionary, iWarrior, iMilitia, iAxeman, iLightSwordsman, 
+iPuritanMissionary, iBaptistMissionary, iMethodistMissionary, iMormonMissionary, iWarrior, iAxeman, iLightSwordsman, 
 iDogSoldier, iSwordsman,
 iSpearman, iPikeman, 
-iArquebusier, iTercio, iMohawk, iMusketeer, 
+iMusketman, iTercio, iMohawk, iMusketeer, 
 iRedcoat, iFusilier, iMinuteman, iRifleman, iGrenadier, iAntiTank, 
 iInfantry, iSamInfantry, iMobileSam, iMarine, iNavySeal, iParatrooper, iMechanizedInfantry, iArcher, 
 iSkirmisher, iCrossbowman, 
@@ -475,7 +475,9 @@ iEastIndiaman, iPrivateer, iCorsair, iFrigate, iShipOfTheLine, iManOfWar, iSteam
 iTransport, iDestroyer, iCorvette, iBattleship, iMissileCruiser, iStealthDestroyer, iSubmarine, iNuclearSubmarine, iCarrier, iBiplane, 
 iFighter, iZero, iJetFighter, iBomber, iStealthBomber, iGuidedMissile, iDrone, iNuclearBomber, iICBM, iSatellite, 
 iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral, iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, 
-iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy, iSlave) = range(iNumUnits)
+iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy, iSlave,
+iBrigantine, iContinental, iCorvette, iLineInfantry, IHeavyArtillery, iHessian, iLightArtillery, iMortar, iRanger, iSeasonedScout,
+iMilitia, iSloop) = range(iNumUnits)
 
 iMissionary = iJewishMissionary # generic
 

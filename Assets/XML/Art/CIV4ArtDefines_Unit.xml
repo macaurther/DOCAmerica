@@ -429,27 +429,6 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA</Type>
-			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Militia/Eurasian/ancientspear.nif</NIF>
-			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
-			<SHADERNIF>Art/Units/Militia/Eurasian/ancientspear.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds/>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_INCAN_AUCAC</Type>
 			<Button>,Art/Interface/Buttons/Units/Quechua.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,4</Button>
 			<fScale>0.44</fScale>
@@ -828,7 +807,7 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ARQUEBUSIER</Type>
+			<Type>ART_DEF_UNIT_MUSKETMAN</Type>
 			<Button>,Art/Interface/Buttons/Units/Musketman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -2490,8 +2469,8 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CANADIAN_CORVETTE</Type>
 			<Button>Art/Interface/Buttons/Units/corvette_btn.dds</Button>
-			<fScale>0.7</fScale>
-			<fInterfaceScale>1.1</fInterfaceScale>
+			<fScale>0.15</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/corvette/corvette.nif</NIF>
@@ -8479,7 +8458,7 @@
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/Man-of-War/Man_O_War.nif</NIF>
 			<KFM>Art/Units/Man-of-War/Man_O_War.kfm</KFM>
-			<SHADERNIF>Art/Units/Man-of-War/Man_O_War_fx.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Man-of-War/Man_O_War.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/FrigateShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9508,6 +9487,343 @@
 			</AudioRunSounds>
 			<SelectionSound>AS3D_UN_TRANSPORT_FORT</SelectionSound>
 			<ActionSound>AS3D_UN_TRANSPORT_FORT</ActionSound>
+		</UnitArtInfo>
+		<!-- MacAurther: New Units -->
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_BRIGANTINE</Type>
+			<Button>,Art/Interface/Buttons/Units/Frigate.dds,Art/Interface/Buttons/colonization_atlas_military.dds,5,17</Button>
+			<fScale>0.14</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Ships_Transport/Brigantine/Brigantine.nif</NIF>
+			<KFM>Art/Units/Galleon/Galleon.kfm</KFM>
+			<SHADERNIF>Art/Units/Ships_Transport/Brigantine/Brigantine.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/TransportShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CONTINENTAL</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/colonization_atlas_military.dds,3,15</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Special_Military/continental_guard/rifleman/Veteran_Musketman.nif</NIF>
+			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<SHADERNIF>Art/Units/Special_Military/continental_guard/rifleman/Veteran_Musketman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CORVETTE</Type>
+			<Button>,Art/Interface/Buttons/Units/Frigate.dds,Art/Interface/Buttons/colonization_atlas_military.dds,2,17</Button>
+			<fScale>0.67</fScale>
+			<fInterfaceScale>0.25</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/units/Ships_Transport/Dutch_East_India_Man/Dutch_East_India_Man.nif</NIF>
+			<KFM>Art/units/Ships_Transport/Dutch_East_India_Man/Dutch_East_India_Man.kfm</KFM>
+			<SHADERNIF>Art/units/Ships_Transport/Dutch_East_India_Man/Dutch_East_India_Man.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/TransportShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LINE_INFANTRY</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/colonization_atlas_military.dds,6,3</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
+			<KFM>Art/Units/Imperial_musketman/Imperial_musketman.kfm</KFM>
+			<SHADERNIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HEAVY_ARTILLERY</Type>
+			<Button>,Art/Interface/Buttons/Units/Cannon.dds,Art/Interface/Buttons/colonization_atlas_military.dds,6,5</Button>
+			<fScale>0.53</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+			<SHADERNIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
+				<ShadowAttachNode/>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1.0</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_HESSIAN</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/colonization_atlas_military.dds,1,16</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Special_Military/Hessian/Veteran_Musketman.nif</NIF>
+			<KFM>Art/Units/Special_Military/Hessian/Veteran_Musketman.kfm</KFM>
+			<SHADERNIF>Art/Units/Special_Military/Hessian/Veteran_Musketman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_LIGHT_ARTILLERY</Type>
+			<Button>,Art/Interface/Buttons/Units/Cannon.dds,Art/Interface/Buttons/colonization_atlas_military.dds,6,6</Button>
+			<fScale>0.53</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+			<SHADERNIF>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
+				<ShadowAttachNode/>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1.0</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MORTAR</Type>
+			<Button>,Art/Interface/Buttons/Units/Cannon.dds,Art/Interface/Buttons/colonization_atlas_military.dds,4,7</Button>
+			<fScale>0.53</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Special_Military/mortar/bombardB.nif</NIF>
+			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+			<SHADERNIF>Art/Units/Special_Military/mortar/bombardB.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
+				<ShadowAttachNode/>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<TrailDefinition>
+				<Texture>Art/Shared/wheeltread.dds</Texture>
+				<fWidth>1.0</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>0.0</fTaper>
+				<fFadeStartTime>0.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.5</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_RANGER</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/colonization_atlas_military.dds,2,16</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Special_Military/Ranger/Native_Musketman.nif</NIF>
+			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<SHADERNIF>Art/Units/Special_Military/Ranger/Native_Musketman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SEASONED_SCOUT</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,3</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Seasoned_Scout/Seasoned_Scout.nif</NIF>
+			<KFM>Art/Units/Seasoned_Scout/Seasoned_Scout.kfm</KFM>
+			<SHADERNIF>Art/Units/Seasoned_Scout/Seasoned_Scout.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MILITIA</Type>
+			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/colonization_atlas_military.dds,4,4</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Special_Military/settler_militia/Imperial_Musketman.nif</NIF>
+			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<SHADERNIF>Art/Units/Special_Military/settler_militia/Imperial_Musketman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SLOOP</Type>
+			<Button>,Art/Interface/Buttons/Units/Frigate.dds,Art/Interface/Buttons/colonization_atlas_military.dds,8,17</Button>
+			<fScale>0.67</fScale>
+			<fInterfaceScale>0.25</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Ships_Transport/Sloop/Sloop.nif</NIF>
+			<KFM>Art/Units/Frigate/Frigate.kfm</KFM>
+			<SHADERNIF>Art/Units/Ships_Transport/Sloop/Sloop.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/TransportShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
 		</UnitArtInfo>
 	</UnitArtInfos>
 </Civ4ArtDefines>

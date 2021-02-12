@@ -475,7 +475,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_PASTORALISM</PrereqTech>
-				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_PROPERTY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

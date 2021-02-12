@@ -17,10 +17,10 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 # MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish
 tMinorCities = (
-	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iArquebusier, 1),		# Fort Orange (Albany)
-	(1625, (136, 55), iIndependent, 'Nieuw Amsterdam', 1, iArquebusier, 1),	# New Amsterdam (New York)
-	(1630, (139, 58), iIndependent, 'Fort de Goede Hoop', 1, iArquebusier, 1),	# Fort de Goede Hoop (Hartford)
-	(1638, (132, 47), iIndependent2, 'Fort Christina', 1, iArquebusier, 1),		# Fort Christina (Wilmington)
+	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iMusketman, 1),		# Fort Orange (Albany)
+	(1625, (136, 55), iIndependent, 'Nieuw Amsterdam', 1, iMusketman, 1),	# New Amsterdam (New York)
+	(1630, (139, 58), iIndependent, 'Fort de Goede Hoop', 1, iMusketman, 1),	# Fort de Goede Hoop (Hartford)
+	(1638, (132, 47), iIndependent2, 'Fort Christina', 1, iMusketman, 1),		# Fort Christina (Wilmington)
 )
 
 # do some research on dates here

@@ -1410,7 +1410,7 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Dog Soldier[COLOR_REVERT] is a Barbarian unit that spawns in Central North America and the Andes Mountains from 600 - 1800 AD.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ARQUEBUSIER_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_MUSKETMAN_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Arquebusiers[COLOR_REVERT] are the first [COLOR_UNIT_TEXT]Gunpowder Unit[COLOR_REVERT] available.</English>
 		<French>[COLOR_UNIT_TEXT]Arquebusiers[COLOR_REVERT] are the first [COLOR_UNIT_TEXT]Gunpowder Unit[COLOR_REVERT] available.</French>
 		<German>[COLOR_UNIT_TEXT]Arquebusiers[COLOR_REVERT] are the first [COLOR_UNIT_TEXT]Gunpowder Unit[COLOR_REVERT] available.</German>
@@ -2574,19 +2574,7 @@
 		<Spanish>[COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_MILITIA</Tag>
-		<English>Militia</English>
-		<French>
-			<Text>Milice</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Militia</German>
-		<Italian>Militia</Italian>
-		<Spanish>Militia</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ARQUEBUSIER</Tag>
+		<Tag>TXT_KEY_UNIT_MUSKETMAN</Tag>
 		<English>Arquebusier</English>
 		<French>
 			<Text>Arquebusier</Text>
@@ -3629,6 +3617,351 @@
 		<Italian>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</Spanish>
 	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BRIGANTINE</Tag>
+        <English>
+            <Text>Brigantine:Brigantines</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Brigantin:Brigantins</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Brigantine:Brigantinen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BRIGANTINE_PEDIA</Tag>
+        <English>[TAB] In sailing, a brigantine is a vessel with two masts, only the forward of which is square rigged. Originally the brigantine was a small ship carrying both oars and sails. It was a favorite of Mediterranean pirates and its name comes from the Italian word brigantino, meaning brigand, and applied by extension to his ship. By the 17th century the term meant a two-masted ship. In the late 17th century, the Royal Navy used the term brigantine to refer to small two-masted vessels designed to be rowed as well as sailed, rigged with square rigs on the foremast and fore-and-aft rigging on the mainmast. By the first half of the 18th century the word had evolved to refer not to a ship type name, but rather to a particular type of rigging: square rigged on the foremast and fore-and-aft rigged on the mainmast. The word "brig" is an 18th century shortening of the word brigantine, which came to mean a vessel square-rigged on both masts. The early Oxford English Dictionary (with citations from 1720 to 1854) still defined brig as being either identical to a brigantine, or alternatively, a vessel of similar sail plan to a modern brig.  </English>
+        <French>[TAB]Un brigantin désigne un petit navire à deux mats gréé comme un brick, et qui n'a qu'un pont, ou un petit vaisseau plat, léger et ouvert, se déplaçant à la voile et à la rame, et qui sert à combattre ou donner la chasse. Ces derniers étaient régulièrement employés lors de mission d'exploration, sur mer pour la reconnaissance des côtes ou sur fleuve.</French>
+        <German>[TAB] Eine Brigantine ist ein Segelschiff mit zwei Masten, deren vorderer mit Fockmast, der hintere mit Großmast bezeichnet werden. Am Fockmast führt eine Brigantine Rahsegel; am Großmast führt sie teilweise oder ausschließlich Schratsegel. Die Brigantine stellt daher eine Mischform aus Brigg und Schoner dar. Sie kann durch ihre Rahsegel Wind von hinten (raumen Wind) besser ausnutzen als ein Schoner; außerdem kann sie durch ihre Schratsegel höher am Wind segeln als eine Brigg, das heißt, sie kann besser "schräg gegen den Wind" segeln. Ende des 17. Jahrhunderts wurde die Bezeichnung in Nordwesteuropa auf zweimastige, rahgetakelte Segelschiffe übertragen. Seit dem 19. Jahrhundert entstand die heutige Bedeutung des Wortes Brigantine. Je nach Takelung werden verschiedene Segelschiffstypen unterschieden, die heute zusammenfassend als Brigantine bezeichnet werden. Der meist einfach als Brigantine bezeichnete Typ führt am Großmast ein Gaffelsegel und darüber weitere Rahsegel.  </German>
+        <Italian>[TAB] In sailing, a brigantine is a vessel with two masts, only the forward of which is square rigged. Originally the brigantine was a small ship carrying both oars and sails. It was a favorite of Mediterranean pirates and its name comes from the Italian word brigantino, meaning brigand, and applied by extension to his ship. By the 17th century the term meant a two-masted ship. In the late 17th century, the Royal Navy used the term brigantine to refer to small two-masted vessels designed to be rowed as well as sailed, rigged with square rigs on the foremast and fore-and-aft rigging on the mainmast. By the first half of the 18th century the word had evolved to refer not to a ship type name, but rather to a particular type of rigging: square rigged on the foremast and fore-and-aft rigged on the mainmast. The word "brig" is an 18th century shortening of the word brigantine, which came to mean a vessel square-rigged on both masts. The early Oxford English Dictionary (with citations from 1720 to 1854) still defined brig as being either identical to a brigantine, or alternatively, a vessel of similar sail plan to a modern brig.  </Italian>
+        <Spanish>[TAB] In sailing, a brigantine is a vessel with two masts, only the forward of which is square rigged. Originally the brigantine was a small ship carrying both oars and sails. It was a favorite of Mediterranean pirates and its name comes from the Italian word brigantino, meaning brigand, and applied by extension to his ship. By the 17th century the term meant a two-masted ship. In the late 17th century, the Royal Navy used the term brigantine to refer to small two-masted vessels designed to be rowed as well as sailed, rigged with square rigs on the foremast and fore-and-aft rigging on the mainmast. By the first half of the 18th century the word had evolved to refer not to a ship type name, but rather to a particular type of rigging: square rigged on the foremast and fore-and-aft rigged on the mainmast. The word "brig" is an 18th century shortening of the word brigantine, which came to mean a vessel square-rigged on both masts. The early Oxford English Dictionary (with citations from 1720 to 1854) still defined brig as being either identical to a brigantine, or alternatively, a vessel of similar sail plan to a modern brig.  </Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CONTINENTAL</Tag>
+        <English>Continental:Continental</English>
+        <French>continentale:continentales</French>
+        <German>Kontinental:Kontinental</German>
+        <Italian>Continental:Continental</Italian>
+        <Spanish>Continental:Continental</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONTINENTAL_PEDIA</Tag>
+        <English>Continental Soldiers are hardened warriors, educated on the field of battle in the ways of war. They received the best training and equipment available. And by the 17th century, there was more than enough "education" going on in Europe to train the budding soldier. Dozens of conflicts, including the Thirty Years' War and the Eighty Years' War, ravaged Europe in this century, making the availability of fresh training for green soldiers an easily-accessed commodity.</English>
+        <French>Les gardistes sont des guerriers endurcis dont l'éducation martiale s'est faite sur le champ de bataille. Et au 17ème siècle, les champs de bataille ne manquent pas pour "éduquer" les soldats débutants. Des dizaines de conflits, dont la Guerre de trente ans et la Guerre de quatre-vingts ans ravagent l'Europe au cours de ce siècle, fournissant matière à entraînement aux soldats inexpérimentés.</French>
+        <German>Die Soldaten der Kontinentalgarde sind abgehärtete Krieger, die auf dem Schlachtfeld in der Kunst des Krieges unterwiesen wurden. Und im 17. Jahrhundert gab es in Europa mehr als genug "Unterrichtsmöglichkeiten" für Soldaten. Dutzende von Konflikten, unter anderem der Dreißigjährige Krieg oder der Achtzigjährige Krieg, wüteten in Europa während dieses Jahrhunderts, so dass es für unerfahrene Soldaten genügend Anfängertrainingsmöglichkeiten gab.</German>
+        <Italian>I soldati guardisti sono guerrieri incalliti, educati sui campi di battaglia. Ed entro il XVII secolo, in Europa c'erano abbastanza "scuole" per educare qualsiasi giovane soldato. Decine di conflitti, tra cui la Guerra dei Trent'anni e la Guerra degli 80 anni, devastarono l'Europa in questo secolo, semplificando l'addestramento dei militari in erba.</Italian>
+        <Spanish>Los Soldados guardia son guerreros curtidos, educados en el arte de la guerra en los campos de batalla. Y, durante el s. XVII, había "educación" más que suficiente en Europa para entrenar al soldado en ciernes. Decenas de conflictos, incluyendo la Guerra de los Treinta Años y la de los Ochenta Años, asolaron Europa durante ese siglo, haciendo que el entrenamiento de los soldados novatos fuera un bien de fácil acceso.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CORVETTE</Tag>
+        <English>
+            <Text>Corvette:Corvettes</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Corvette:Corvettes</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Corvette:Corvetten</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Corvette:Corvettes</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Corvette:Corvettes</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CORVETTE_PEDIA</Tag>
+        <English>During the Age of Sail, corvettes were one of many types of smaller warships. The role of the corvette consisted mostly of coastal patrol, fighting minor wars, supporting large fleets, or participating in show-the-flag missions. The English Navy began using small ships in the 1650s, but described them as sloops-of-war rather than corvettes. The first reference to a corvette was with the French Navy in the 1670s, which may be where the term originated. The Royal Navy did not use the term until after the Napoleonic Wars to describe a small unrated vessel somewhat larger than a sloop and smaller than a frigate.</English>
+        <French>La corvette est une catégorie de petit navire de guerre, léger et rapide, qui apparaît en France à la fin du XVIIe siècle. C'est d'abord un petit trois mâts, qui n'est jamais armé de plus de vingt canons en batterie, qui sert à effectuer des missions de découverte. Il sert aussi de liaison pour transmettre des ordres ou des courriers. De nombreuses corvettes serviront par la suite au transport marchand. Sa taille au fil des siècles augmente au point que les corvettes de l'ère révolutionnaire valent les Frégates légères, de 6 et de 8, du siècle précédent.</French>
+        <German>Während des Zeitalters der Selgelschiffe waren Corvette kleinere bis mittlere Kriegsschiffe. Die Aufgabe der Corvette bestand üblicherweise aus Küstenpatroulien und Unterstüzung grösserer Flotten. Die Englische Navy begann die Nutzung solcher Schiffe in den 1650ern, nannte sie aber zu beginn eher Sloop-Of-War, als Corvette. Die erste namentliche Reference einer Corvette findet sich in der Französichen Marine um 1670 und gilt als der Ursprung dieser Bezeichnugn. Die Bezeichnung Corvette diente ab diesem Zeitpunkt zur Beschreibung eines Schiffes, welches kleiner als eine Frigatte, aber grösser als eine Sloop war.</German>
+        <Italian>During the Age of Sail, corvettes were one of many types of smaller warships. The role of the corvette consisted mostly of coastal patrol, fighting minor wars, supporting large fleets, or participating in show-the-flag missions. The English Navy began using small ships in the 1650s, but described them as sloops-of-war rather than corvettes. The first reference to a corvette was with the French Navy in the 1670s, which may be where the term originated. The Royal Navy did not use the term until after the Napoleonic Wars to describe a small unrated vessel somewhat larger than a sloop and smaller than a frigate.</Italian>
+        <Spanish>During the Age of Sail, corvettes were one of many types of smaller warships. The role of the corvette consisted mostly of coastal patrol, fighting minor wars, supporting large fleets, or participating in show-the-flag missions. The English Navy began using small ships in the 1650s, but described them as sloops-of-war rather than corvettes. The first reference to a corvette was with the French Navy in the 1670s, which may be where the term originated. The Royal Navy did not use the term until after the Napoleonic Wars to describe a small unrated vessel somewhat larger than a sloop and smaller than a frigate.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LINE_INFANTRY</Tag>
+        <English>Line Infantry:Line Infantry</English>
+        <French>
+            <Text>Line Infantry:Line Infantry</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Linieninfanterie:Linieninfanterie</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Line Infantry:Line Infantry</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Line Infantry:Line Infantry</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LINE_INFANTRY_PEDIA</Tag>
+        <English>TXT_KEY_UNIT_VETERAN_PEDIA</English>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY</Tag>
+        <English>
+            <Text>Heavy Artillery:Heavy Artilleries</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Artillerie lourde:Artilleries lourdes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Schwere Artillerie:Schwere Artillerien</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_PEDIA</Tag>
+        <English>Among the earliest inventions that made use of gunpowder, Cannons remained among the most important until the 19th century. By the late 1500s, cannon had become light but powerful weapons that could be easily moved and adjusted to take aim at whatever target the battle might present. Such cannons proved extremely useful against native foes, who had never experienced the devastating effects of such weapons and had no tactics to counter them.</English>
+        <French>Les Canons figurent parmi les armes à poudre les plus utilisées jusqu'au 19ème siècle. A la fin du 16ème siècle, le canon s'est allégé, mais est aussi devenu une arme puissante que l'on peut déplacer facilement pour cibler n'importe quel objectif. Les canons s'avèrent extrêmement utiles contre les ennemis indigènes, qui  n'ont jamais connu les effets dévastateurs de ce genre d'armes et n'ont aucune tactique pour les parer.</French>
+        <German>Die Kanone war eine der ersten Erfindungen, in denen Schießpulver zum Einsatz kam. Bis ins 19. Jahrhundert hinein zählten sie zu den wichtigsten Waffen. Gegen Ende des 16. Jahrhunderts war die Kanone zu einer leichten und mächtigen Waffe geworden, die schnell die Position wechseln konnten, um jedes Ziel ins Visier zu nehmen, das sich während der Schlacht bot. Solche Kanonen erwiesen sich als besonders effektiv gegen eingeborene Gegner, die noch nie mit den verheerenden Auswirkungen dieser Waffen in Berührung gekommen waren und keine taktische Kontermöglichkeit hatten.</German>
+        <Italian>I cannoni furono tra le prime invenzioni a utilizzare la polvere da sparo e rimasero tra le più importanti fino al XIX secolo. Nel tardo XVI secolo, i cannoni erano più leggeri ma potenti che potevano essere facilmente spostate e regolate per prendere di mira i bersagli offerti durante la battaglia. Tali cannoni si dimostrarono estremamente utili contro gli avversari nativi, che non avevano mai provato i devastanti effetti di questo tipo di armi e non avevano tattiche per contrastarle.</Italian>
+        <Spanish>Entre los primeros inventos que hicieron uso de la pólvora, los Cañones siguieron siendo los más importantes hasta el s. XIX. A finales del s. XVI, los Cañones se habían convertido en armas ligeras pero potentes que podían moverse fácilmente para apuntar a cualquier objetivo en la batalla. Estos Cañones demostraron ser extremadamente útiles contra los indígenas enemigos, que nunca habían experimentado los efectos devastadores de tales armas y carecían de tácticas para contrarrestarlas.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HESSIAN</Tag>
+        <English>Hessian:Hessians</English>
+        <French>Hessien:Hessiens</French>
+        <German>Hessischer Söldner:Hessische Söldner</German>
+        <Italian>Hessian:Hessians</Italian>
+        <Spanish>Hessian:Hessians</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HESSIAN_PEDIA</Tag>
+        <English>During the American Revolutionary War, Landgrave Frederick II of Hesse-Kassel (a principality in northern Hesse or Hessia) and other German leaders hired out thousands of conscripted subjects as auxiliaries to Great Britain to fight against the American revolutionaries. The troops were not mercenaries in the modern sense of military professionals who voluntarily hire out their own services for money. As in most armies of the eighteenth century, the men were mainly conscripts, debtors, or the victims of impressment; some were also petty criminals. Pay was low; some soldiers received nothing but their daily food. The officer corps usually consisted of career officers who had served in earlier European wars. The revenues paid for the men's service went back to the German royalty. Nevertheless, some Hessian units were respected for their discipline and excellent military skills.</English>
+        <French>Pendant la guerre d'indépendance Américaine, le Landgrave Frédéric II de Hesse-Cassel (une principauté dans le Nord de la Hesse) et d'autres dirigeants allemands ont recrutés des milliers de conscrits en tant qu'auxiliaire de la Grande Bretagne pour combattre les indépendantistes. Les troupes n'étaient pas des mercenaires dans le sense moderne de militaires professionnels qui vendraient leur service au plus offrant. Comme dans la plupart des armées du XVIIIe siècle, ces hommes étaient surtout des conscrits, des personnes endettées ou des enrolés de force. Quelques uns étaient également des petits criminels. Le salaire était faible. Quelques soldats ne recevaient même rien d'autre que leur nourriture quotidienne. Les officiers de ces corps étaient généralement des militaires de carrière qui avaient déjà services dans des guerres européennes. Les revenus obtenus pour leur recours revenaient aux monarchies allemandes. Néanmoins, les unités d'Hessiens étaient respectés pour leur discipline et leurs excellentes aptitudes militaires.</French>
+        <German>Während des Amerikanischen Unabhängigkeitskrieges kämpften deutsche Söldner aus Hessen auf Seiten der Engländer. Ihr Landesherr, der Landgraf von Hessen-Kassel, besserte dadurch seine Staatskasse auf. Hessen-Kassel mit seiner langen Söldnertradition verfügte über eine große Zahl an gut ausgebildeten Truppen und konnte deshalb große Kontingente in Marsch setzen. In vielen hessischen Familien war es wie in der Schweiz Tradition, daß immer einige Söhne ihr Glück bei den Soldaten versuchten, so daß kein Mangel an Freiwilligen herrschte. Die Söldner erwarben sich in Amerika schnell den Ruf, besonders tüchtige und gefährliche Gegner zu sein. Die amerikanischen Milizen wurden von der disziplinierten europäischen Infanterie förmlich überrannt. Der Feuergeschwindigkeit und vor allem dem gefürchteten Bajonettangriff der Hessen hatten sie nichts entgegenzusetzen. Ein hessischer Oberst schrieb: "Die Riflemans sind mehrentheils mit dem Bajonett an die Bäume gespießt worden; diese Leute verdienen eher Mitleid als Furcht. Sie müssen immer eine Viertelstunde Zeit haben, um ein Gewehr zu laden und in dieser Zeit fühlen sie unsere Kugeln und Bajonette". (Quelle: www.kriegsreisende.de)</German>
+        <Italian>During the American Revolutionary War, Landgrave Frederick II of Hesse-Kassel (a principality in northern Hesse or Hessia) and other German leaders hired out thousands of conscripted subjects as auxiliaries to Great Britain to fight against the American revolutionaries. The troops were not mercenaries in the modern sense of military professionals who voluntarily hire out their own services for money. As in most armies of the eighteenth century, the men were mainly conscripts, debtors, or the victims of impressment; some were also petty criminals. Pay was low; some soldiers received nothing but their daily food. The officer corps usually consisted of career officers who had served in earlier European wars. The revenues paid for the men's service went back to the German royalty. Nevertheless, some Hessian units were respected for their discipline and excellent military skills.</Italian>
+        <Spanish>[TAB]During the American Revolutionary War, Landgrave Frederick II of Hesse-Kassel (a principality in northern Hesse or Hessia) and other German leaders hired out thousands of conscripted subjects as auxiliaries to Great Britain to fight against the American revolutionaries. The troops were not mercenaries in the modern sense of military professionals who voluntarily hire out their own services for money. As in most armies of the eighteenth century, the men were mainly conscripts, debtors, or the victims of impressment; some were also petty criminals. Pay was low; some soldiers received nothing but their daily food. The officer corps usually consisted of career officers who had served in earlier European wars. The revenues paid for the men's service went back to the German royalty. Nevertheless, some Hessian units were respected for their discipline and excellent military skills.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY</Tag>
+        <English>Light Artillery:Light Artillery</English>
+        <French>Artillerie légère:Artilleries légères</French>
+        <German>Leichte Artillerie:Leichte Artillerien</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</Tag>
+        <English>While a time of great advancement in philosophy, science and art, the Renaissance also marked the beginning of a period of rapid development in artillery. Prior to the Renaissance, cannons were essentially thickened pots into which gunpowder and a heavy object were dropped and then fired and - if lucky - hit a target in the general direction the cannon was aimed. (If unlucky, the cannon simply exploded.)[PARAGRAPH:1]Developments from tactical innovators like King Gustavus Adolphus of Sweden turned artillery from uncertain weapons of war into dangerous, highly-trained instruments of destruction deployed on all the major battlefields of Europe. Artillery units in the 18th century were often the elite of any European army, as artillerymen needed a significant amount of knowledge to successfully perform their duties, including training in geometry, chemistry, and physics. At the command of these elite soldiers were a plethora of machines of destruction, ranging from light "swivel" guns that could be fired by a single artilleryman to guns that could fire enormous projectiles over miles, all capable of dealing crushing damage to an enemy.</English>
+        <French>En plus d'être une période d'évolution spectaculaire dans les domaines de la philosophie, la science et l'art, la Renaissance a également marqué le début d'une période de développement rapide de l'artillerie. Avant la Renaissance, les canons avaient surtout l'apparence de pots épais dans lesquels on jetait de la poudre et un objet lourd avant de faire feu, et si le ciel était avec lui, le tireur atteignait une cible qui se trouvait vaguement dans la direction visée. (Pour les moins chanceux et les superstitieux du vendredi 13, le canon explosait.)[PARAGRAPH:1]Un certain nombre d'innovations tactiques, apportées entre autres par le roi Gustave Adolphe de Suède, ont radicalement métamorphosé l'artillerie : d'une arme de guerre incertaine, cette unité s'est transformée pour devenir dangereuse, bien entraînée, et un véritable instrument de destruction déployé sur les principaux champs de bataille européens. Au 18ème siècle, les unités d'artillerie étaient souvent considérées comme l'élite de toute armée européenne tant les artilleurs devaient avoir une connaissance poussée (notamment en géométrie, en chimie et en physique) pour remplir correctement leur devoir. Ces soldats d'élite étaient aux commandes d'une kyrielle de machines de destruction, allant du canon léger monté sur un pied pivotant pouvant être manipulé par un seul artilleur à des canons capables d'envoyer des projectiles à des kilomètres, tous capables d'infliger de gros dégâts à l'ennemi.</French>
+        <German>Die Renaissance war nicht nur eine Zeit großer Fortschritte in Philosophie, Wissenschaft und Kunst; in diese Periode fällt auch der Beginn einer rapiden Entwicklung der Artillerie. Vor der Renaissance waren Kanonen im Prinzip nur dicke Töpfe, die mit Schießpulver und einem schweren Gegenstand gefüllt und dann abgefeuert wurden; mit etwas Glück traf man damit ein Ziel ungefähr in der Richtung, in welche die Kanone zeigte. (Wenn man Pech hatte, flog einem die Kanone selbst um die Ohren.)[PARAGRAPH:1]Die Entwicklungen taktischer Innovatoren wie König Gustav Adolf von Schweden machten aus den unsicheren Artilleriegeschützen gefährliche, präzise Vernichtungswaffen, die auf allen großen Schlachtfeldern Europas zum Einsatz kamen. Im 18. Jahrhundert zählten die Artillerie-Einheiten oft zur Elite der europäischen Armeen, da Artilleristen zur Erfüllung ihrer Aufgaben ein solides Grundwissen brauchten und unter anderem in Geometrie, Chemie und Physik ausgebildet wurden. Diese Elitesoldaten waren Herr über alle möglichen Vernichtungswaffen, von leichten "Drehbassen", die ein einzelner Artillerist abfeuern konnte, bis hin zu Kanonen, deren enorme Geschosse meilenweit fliegen und dem Feind vernichtenden Schaden zufügen konnten.</German>
+        <Italian>Pur essendo stato un periodo di grandi innovazioni nel campo della filosofia, della scienza e dell'arte, il Rinascimento segnò anche l'inizio di un rapido sviluppo dell'artiglieria. Prima del Rinascimento i cannoni erano essenzialmente robusti "pentoloni" in cui erano messi un oggetto pesante e polvere da sparo, a cui veniva poi dato fuoco: se si era fortunati il proiettile colpiva un bersaglio nella direzione generale in cui era puntato il cannone (se si era sfortunati il cannone semplicemente esplodeva).[PARAGRAPH:1]Gli sviluppi di innovatori tattici come re Gustavo Adolfo di Svezia trasformarono l'artiglieria da complesso di armi dall'esito bellico incerto in reparti pericolosi e altamente addestrati, schierati su tutti i maggiori campi di battaglia europei. Le unità d'artiglieria del XVIII secolo erano spesso l'elite di qualsiasi esercito europeo, dato che un artigliere aveva bisogno di una importante quantità di conoscenze per poter svolgere il proprio compito: queste comprendono fondamenti di geometria, chimica e fisica. Sotto il comando di questi soldati d'elite c'erano una pletora di macchine votate alla distruzione, che andavano dalle più leggere, posizionate su piattaforme girevoli, utilizzate anche da un singolo artigliere, a cannoni che potevano sparare enormi proiettili a distanza di miglia, in grado di infliggere al nemico danni ingenti.</Italian>
+        <Spanish>Aunque el Renacimiento fue una época de grandes avances en filosofía, ciencia y arte, también marcó el inicio de un periodo de rápido desarrollo de la artillería. Antes del Renacimiento, los cañones eran en esencia gruesos calderos en los que se embutía pólvora y objeto pesados, se disparaba y, con suerte, se daba a un blanco en la dirección aproximada hacia la que se apuntaba el arma (si no había suerte, el cañón simplemente explotaba).[PARAGRAPH:1]Con los inventos de los innovadores tácticos, como el rey Gustavo Adolfo de Suecia, la artillería pasó de ser un arma de guerra inestable a un conjunto de instrumentos de destrucción muy sofisticados que se desplegaron por todos los campos de batalla europeos. Las unidades de artillería del s. XVIII solían conformar la élite de cualquier ejército europeo, ya que los artilleros necesitaban una gran cantidad de conocimientos para conseguir llevar a cabo su cometido, incluyendo estudios de geometría, química y física. Estos soldados de élite tenían a su cargo una plétora de aparatos de destrucción, que iban desde los ligeros cañones de colisa, que podían ser disparados por un solo artillero, hasta las piezas que podían disparar proyectiles enormes a kilómetros de distancia, capaces de hacer un daño aplastante.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MAN_O_WAR</Tag>
+        <English>Man-o-War:Man-o-Wars</English>
+        <French>
+            <Text>Vaisseau de guerre:Vaisseaux de guerre</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Königliches Linienschiff:Königliche Linienschiffe</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Nave da guerra:Navi da guerra</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Buque de guerra:Buques de guerra</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MAN_O_WAR_PEDIA</Tag>
+        <English>The Man-o-War was the most powerful ship of its era. First created under the reign of the English king Henry VIII in the 16th century, these massive weapons of war quickly became the most feared vessels in the seas. The Great Harry and the Mary Rose were two of the first Man-o-War's, each capable of carrying over four hundred crewmen and over one hundred cannon. Strangely enough, both the Great Harry and the Mary Rose met rather inglorious ends - the Great Harry is thought to have burnt while docked and the Mary Rose was sunk by an inferior French vessel.</English>
+        <French>Les Vaisseaux de guerre sont les navires les plus puissants de leur époque. Créé pour la première fois sous le règne du roi anglais Henry VIII, au 16ème siècle, ces armes de guerre massives deviennent bientôt les navires les plus redoutés des mers. Le Henri Grâce à Dieu et la Mary Rose, deux des premiers Vaisseaux de guerre, sont capables de transporter chacun plus de quatre cents hommes et plus de cent canons. Chose étrange, ils ont tous deux connu une fin peu glorieuse : le Henri Grâce à Dieu aurait brûlé à quai et la Mary Rose a été coulée par un bateau français de moindre puissance.</French>
+        <German>Die Königlichen Linienschiffe der Heimatflotte waren den leichteren Linienschiffen der Kolonien und ihren anderen Schiffen überlegen, weil sie mindestens ein Kampfdeck mehr besaßen und entsprechend mehr Schiffskanonen und Feuerkraft.</German>
+        <Italian>Le navi da guerra (Man-o-War, in inglese) erano i più potenti vascelli della propria era. Furono costruiti per la prima volta sotto il regno di Re Enrico VIII d'Inghilterra nel XVI secolo e divennero ben presto le navi più temute in tutti i mari. Due fra le prime navi da guerra furono la Great Harry e la Mary Rose, ognuna in grado di trasportare oltre 400 uomini di equipaggio e più di 100 cannoni. Stranamente, sia la Great Harry che la Mary Rose subirono sorti piuttosto ingloriose: pare che la Great Harry sia bruciata mentre era attraccata, mentre la Mary Rose è stata affondata da un inferiore vascello francese.</Italian>
+        <Spanish>El Buque de guerra ("Man-o-War") fue el barco más poderoso de su época. Creados en un principio durante el reinado del monarca inglés Enrique VIII en el s. XVI, estas enormes armas de guerra se convirtieron rápidamente en los veleros más temidos de los mares. El "Great Harry" y el "Mary Rose" fueron dos de los primeros Buques de guerra, y cada uno era capaz de llevar cerca de cuatrocientos tripulantes y cien cañones. Aunque, extrañamente, ambos tuvieron un final bastante indigno: se cree que la "Great Harry" se quemó mientras estaba atracada y la "Mary Rose" fue hundida por un velero francés de menor calado.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MORTAR</Tag>
+        <English>
+            <Text>Mortar:Mortars</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Mortier:Mortiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Mörser:Mörser</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MORTAR_PEDIA</Tag>
+        <English>A mortar is an indirect fire weapon that fires explosive projectiles known as (mortar) bombs at low velocities, short ranges, and high-arcing ballistic trajectories. It is typically muzzle-loading (i.e., loading from the forward, open end of the gun's barrel) and has a barrel length less than 15 times its caliber. Mortars have existed for hundreds of years, first seeing use in siege warfare. From the 18th to the early 20th century very heavy, relatively immobile siege mortars were used, of up to one metre calibre, often made of cast iron and with outside barrel diameter many times that of the bore diameter. In the French and Indian War (1754 - 1762) especially the French troops used 15 inch mortars while sieging British fortifications.</English>
+        <French>Un mortier ou lance-mine est une bouche à feu tirant à inclinaison élevée (plus de 45°), pour effectuer des tirs indirects. La trajectoire courbe, en forme de cloche, du projectile permet d'atteindre un objectif placé derrière un obstacle, qu'un canon ne permet pas d'engager car la trajectoire de son projectile est tendue. L'énergie produite par le recul est directement absorbée par le sol ou la plate-forme renforcée d'un véhicule. L'arme a un tube court et généralement lisse, sans rayures.</French>
+        <German>Ein Mörser ist ein Steilfeuergeschütz mit kurzem Rohr, mit dem auf kurze Distanz Explosivgeschosse verschossen werden. Mörser sind typischerweise Vorderlader, deren Rohr im Verhältnis zu ihrem Kaliber deutlich kürzer ist, wodurch sie ihr typisches Aussehen erhalten. Mörser existieren bereits sehr mehreren hundert Jahren. Sie waren in erster Linie Waffen des Festungs- und Stellungskrieges. Als solche hatten sie die Aufgabe eine feindliche Befestigung sturmreif zu schießen. Schwere Mörser wirkten vor allem durch Zerstören von Befestigungswerken, Deckungen und Hindernissen. Im Französisch-Indianischen Krieg (1754-1762) setzen vor allem die Franzosen schwere 15 Zoll Mörser zur Bekämpfung britischer Befestigungsanlagen ein.</German>
+        <Italian>A mortar is an indirect fire weapon that fires explosive projectiles known as (mortar) bombs at low velocities, short ranges, and high-arcing ballistic trajectories. It is typically muzzle-loading (i.e., loading from the forward, open end of the gun's barrel) and has a barrel length less than 15 times its caliber. Mortars have existed for hundreds of years, first seeing use in siege warfare. From the 18th to the early 20th century very heavy, relatively immobile siege mortars were used, of up to one metre calibre, often made of cast iron and with outside barrel diameter many times that of the bore diameter. In the French and Indian War (1754 - 1762) especially the French troops used 15 inch mortars while sieging British fortifications.</Italian>
+        <Spanish>A mortar is an indirect fire weapon that fires explosive projectiles known as (mortar) bombs at low velocities, short ranges, and high-arcing ballistic trajectories. It is typically muzzle-loading (i.e., loading from the forward, open end of the gun's barrel) and has a barrel length less than 15 times its caliber. Mortars have existed for hundreds of years, first seeing use in siege warfare. From the 18th to the early 20th century very heavy, relatively immobile siege mortars were used, of up to one metre calibre, often made of cast iron and with outside barrel diameter many times that of the bore diameter. In the French and Indian War (1754 - 1762) especially the French troops used 15 inch mortars while sieging British fortifications.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_RANGER</Tag>
+        <English>
+            <Text>Ranger:Rangers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Garde-forestier:Gardes-forestiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Ranger:Rangers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Ranger:Rangers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Ranger:Rangers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RANGER_PEDIA</Tag>
+        <English>[TAB] Ranger in the original meaning of the word designates a person who is specially trained to traverse rough terrain, esp. woodland, relatively quickly; and who possesses the according survival skills to live in the wilderness for a prolonged amount of time. The term "Ranger" was first used in North America in the early 17th century; however, the first ranger company was not officially commissioned until King Philip's War (1676) and then they were used in the four French and Indian Wars . Rangers also fought in the American Revolution , the War of 1812 , and the American Civil War.</English>
+        <French>[TAB]Le garde forestier est généralement un fonctionnaire chargé de patrouiller (éventuellement à cheval) dans la forêt et d'autres endroits dans la nature. Il peut aussi dans certains pays s'agir de gardes privés. En Amérique du Nord, les gardes-forestiers constituent une réserve militaire qui peut servir en combat en tant de guerre. Ils furent ainsi utiliser à partir de la guerre du Roi Philippe (1676), puis dans tous les conflits successifs jusqu'à la guerre de Sécession.</French>
+        <German>[TAB] Die Rangers berufen sich auf die Tradition der ersten Siedler in den USA, die unter Ausnutzung des Geländes gegen Indianer und britische oder französische Truppen kämpften. Namenspatron sind Rogers' Rangers, die unter Robert Rogers auf britischer Seite im Franzosen- und Indianerkrieg kämpften. Dessen zusammengestellter Ausbildungsplan aus Berichten der Rogers Ranger sind u.a. bis heute noch Grundlage des Kleinen Krieges. Auch im amerikanischen Bürgerkrieg waren Ranger-Einheiten, vor allem auf konföderierter Seite als Bushwhacker, hinter den feindlichen Linien eingesetzt.</German>
+        <Italian>[TAB] Ranger in the original meaning of the word designates a person who is specially trained to traverse rough terrain, esp. woodland, relatively quickly; and who possesses the according survival skills to live in the wilderness for a prolonged amount of time. The term "Ranger" was first used in North America in the early 17th century; however, the first ranger company was not officially commissioned until King Philip's War (1676) and then they were used in the four French and Indian Wars . Rangers also fought in the American Revolution , the War of 1812 , and the American Civil War.</Italian>
+        <Spanish>[TAB] Ranger in the original meaning of the word designates a person who is specially trained to traverse rough terrain, esp. woodland, relatively quickly; and who possesses the according survival skills to live in the wilderness for a prolonged amount of time. The term "Ranger" was first used in North America in the early 17th century; however, the first ranger company was not officially commissioned until King Philip's War (1676) and then they were used in the four French and Indian Wars . Rangers also fought in the American Revolution , the War of 1812 , and the American Civil War.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SEASONED_SCOUT</Tag>
+        <English>Seasoned Scout:Seasoned Scouts</English>
+        <French>
+            <Text>Eclaireur aguerri:Eclaireurs aguerris</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Routinierter Späher:Routinierte Späher</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Scout esperto:Scout esperti</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Batidor curtido:Batidores curtidos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SEASONED_SCOUT_PEDIA</Tag>
+        <English>The eyes and ears of any colony, Scouts seek out valuable resources and information for those back home. Lone riders capable of crossing vast tracks of territory faster than any other, these isolated adventurers journey across the land, watching enemy troops, exploring native villages, or stumbling upon lost caches of treasure. A colony can survive without Scouts on its side, but only the same sort of existence a man can live without eyes or ears - challenging.</English>
+        <French>Les Eclaireurs sont les yeux et les oreilles de la colonie et sont constamment à la recherche de ressources ou d'information précieuses pour leurs compatriotes. Cavaliers solitaires, capables de traverser de vastes contrées bien plus vite que n'importe quel colon, ces aventuriers voyagent à travers tout le pays, surveillant les troupes ennemies, explorant les villages indigènes ou découvrant des trésors cachés. Une colonie peut survivre sans Eclaireur en son sein, mais à la manière d'un homme dépourvu de yeux et d'oreilles, c'est-à-dire difficilement.</French>
+        <German>Späher, die Augen und Ohren einer Kolonie, suchen nach wertvollen Ressourcen und Informationen für Kolonisten. Diese isoliert lebenden Abenteurer, die als einsame Reiter in der Lage sind, weite Territorien schneller zu durchqueren als alle anderen, ziehen durchs Land, beobachten feindliche Truppen, erforschen die Eingeborenen und stolpern auch durchaus manchmal über versteckte Schätze. Eine Kolonie kann auch ohne Späher überleben, jedoch wäre es so wie ein Leben ohne Ohren und Augen: ziemlich schwierig.</German>
+        <Italian>Gli scout sono gli occhi e le orecchie della colonia, sempre alla ricerca di preziose risorse e informazioni per i propri compagni a casa. Sono cavalieri solitari, in grado di attraversare vaste distese di territorio più rapidamente di chiunque altro; questi avventurieri viaggiano attraverso la terra, osservando le truppe nemiche, esplorando i villaggi dei nativi, o scoprendo perdute riserve di tesori. Una colonia può sopravvivere senza scout, ma sarà un'esistenza come quella di un uomo senza occhi oppure orecchie: difficile.</Italian>
+        <Spanish>Los Batidores son los ojos y los oídos de cualquier colonia y buscan información y recursos valiosos para los que se han quedado en casa. Son jinetes solitarios, capaces de salvar grandes extensiones de terreno con más rapidez que nadie y se adentran en tierra para vigilar a las tropas enemigas, explorar las aldeas indígenas o encontrar tesoros perdidos. Una colonia puede sobrevivir sin contar con Batidores, pero con la misma clase de existencia que llevaría un hombre sin ojos ni oídos: difícil.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MILITIA</Tag>
+        <English>
+            <Text>Militia:Militias</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Milice:Milices</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Miliz:Milizen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Militia:Militias</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Militia:Militias</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MILITIA_PEDIA</Tag>
+        <English>In the British colony of Massachusetts Bay, all able-bodied men between the ages of 16 and 60 were required to participate in their local militia. As early as 1645 in the Massachusetts Bay Colony, some men were selected from the general ranks of town-based "training bands" to be ready for rapid deployment. Men so selected were designated as minutemen. They were usually drawn from settlers of each town, and so it was very common for them to be fighting alongside relatives and friends.</English>
+        <French>Dans les colonies de la Nouvelle-Angleterre, le concept de milice apparaît assez tôt et assure la survie de la jeune colonie lors de conflits contre les Amérindiens. La première milice s'établit en Virginie, en 1632, et repose sur un recrutement local et de courtes périodes de service actif lors d'urgences. Tout homme capable de porter une arme doit l'apporter à l'église et s'exercer après le service religieux. Dès 1645, au sein de la colonie de la baie du Massachusetts, quelques hommes furent sélectionnés parmi les troupes locales pour être prêts à un déploiement rapide. Les minutemen dont le nom deviendra célèbre un siècle plus tard étaient généralement choisis parmi les colons d'une même ville, ainsi il n'était pas rare pour eux de combattre aux côtés de cousins ou de beaux-frères.</French>
+        <German>Schon zu Zeiten der Massachusetts Bay Colony 1645 wurden einige Männer aus dem Aufgebot der verschiedenen örtlichen Milizen für schnellen Einsatz ausgewählt. Die Miliz der Provinz Massachusetts war bereits in vielen Konflikten im Kampf eingesetzt worden, so in König Philipps Krieg, im Franzosen- und Indianerkrieg und schließlich in der Schlacht von Lexington und Concord. Jede Generation der Siedler in Neuengland war mit dem Kämpfen vertraut, jeder Ort besaß eine Miliz, und jeder wehrfähige Mann zwischen 16 und 60 war verpflichtet, seinen Dienst in der Miliz zu leisten. Allerdings gab es hier viele Ausnahmeregelungen, zum Beispiel für bestimmte Berufsgruppen. Der Dienst in der Miliz wurde in sogenannten Militia Acts und nach dem Ausbruch des Unabhängigkeitskrieges in Militia Bills geregelt. Viele dieser Männer waren Landwirte. Viele waren untereinander verwandt, und so war es üblich, neben seinen Cousins und Schwägern zu kämpfen.</German>
+        <Italian>In the British colony of Massachusetts Bay, all able-bodied men between the ages of 16 and 60 were required to participate in their local militia. As early as 1645 in the Massachusetts Bay Colony, some men were selected from the general ranks of town-based "training bands" to be ready for rapid deployment. Men so selected were designated as minutemen. They were usually drawn from settlers of each town, and so it was very common for them to be fighting alongside relatives and friends.</Italian>
+        <Spanish>In the British colony of Massachusetts Bay, all able-bodied men between the ages of 16 and 60 were required to participate in their local militia. As early as 1645 in the Massachusetts Bay Colony, some men were selected from the general ranks of town-based "training bands" to be ready for rapid deployment. Men so selected were designated as minutemen. They were usually drawn from settlers of each town, and so it was very common for them to be fighting alongside relatives and friends.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SLOOP</Tag>
+        <English>
+            <Text>Sloop:Sloops</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Schaluppe:Schaluppen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLOOP_PEDIA</Tag>
+        <English>[TAB] In the 18th and the earlier part of the 19th centuries, a sloop-of-war was a small sailing warship (also known as one of the escort types) with a single gun deck that carried anything up to eighteen cannons. As the rating system covered all vessels with 20 guns and above, this meant that the term sloop-of-war actually encompassed all the unrated combat vessels including the very small gun-brigs and cutters. In technical terms, even the more specialised bomb vessels and fireships were classed as sloops-of-war, and in practice these were actually employed in the sloop role when not carrying out their specialised functions. A ship sloop was generally the equivalent of the smaller corvette of the French Navy (although the French term also covered ships up up to 24 guns, which were classed as 'post ships' within the Sixth Rate of the British Navy). The name corvette was subsequently also applied to British vessels, but not until the 1830s. A sloop-of-war was smaller than a sailing frigate and outside the rating system. In general, a sloop-of-war would be under the command of a master and commander rather than a post captain, although in day-to-day use at sea the commanding officer of any naval vessels would be addressed as "captain". Until 1794 the master and commander strictly speaking held the permenent rank of lieutenant, and reverted to that rank when he gave up command of the sloop-of-war; in 1794 the rank of commander was created.</English>
+        <French>[TAB]Au temps de la marine à voile, le sloop (de la même origine étymologique que le français chaloupe), ou plus exactement le sloop-of-war, désignait en Angleterre, les navires plus petits que les frégates, armés de dix à dix-huit canons sur un seul pont. Les Anglais distinguaient deux variantes principales de sloop : le ship sloop qui, avec ses trois mâts, équivalait à peu près à la corvette française ; le brig sloop avec deux mâts, est appelé brick en France. Au début du XXe siècle, le terme sloop désignait un navire d'escorte anti sous-marin, armé de canon de 102 mm et de grenades sous-marines. Lors de la Seconde Guerre mondiale, il a cédé la place aux corvettes, puis aux frégates.</French>
+        <German>[TAB] Die Kriegsschiffbezeichnung Sloop hat ihren Ursprung in dem gleichnamigen einmastigen Schiffstyp. Sie bildeten im 17. Jahrhundert die kleinsten bewaffneten Marineeinheiten für Unterstützungsaufgaben wie Nachrichtenübermittlung und Aufklärung und waren im Gegensatz zu grösseren Schiffen nicht klassifiziert. Diese Fahrzeuge hatten zunächst einen Leutnant als Kommandanten, jedoch ohne weiteren Offizier, vor allem aber keinen Navigator/Segelmeister (engl. Sailing-Master oder kurz Master). Weil Unterstützungsfahrzeuge in der Seekriegsführung im Verlaufe des 17. Jahrhundert immer bedeutender wurden und vor allem auch abseits der Küsten operierten, wurde auch ein Navigator notwendig. Daraus entstand der Rang des Master and Commander, ein kommandierender Seeoffizier, der zugleich Navigator war.</German>
+        <Italian>[TAB] In the 18th and the earlier part of the 19th centuries, a sloop-of-war was a small sailing warship (also known as one of the escort types) with a single gun deck that carried anything up to eighteen cannons. As the rating system covered all vessels with 20 guns and above, this meant that the term sloop-of-war actually encompassed all the unrated combat vessels including the very small gun-brigs and cutters. In technical terms, even the more specialised bomb vessels and fireships were classed as sloops-of-war, and in practice these were actually employed in the sloop role when not carrying out their specialised functions. A ship sloop was generally the equivalent of the smaller corvette of the French Navy (although the French term also covered ships up up to 24 guns, which were classed as 'post ships' within the Sixth Rate of the British Navy). The name corvette was subsequently also applied to British vessels, but not until the 1830s. A sloop-of-war was smaller than a sailing frigate and outside the rating system. In general, a sloop-of-war would be under the command of a master and commander rather than a post captain, although in day-to-day use at sea the commanding officer of any naval vessels would be addressed as "captain". Until 1794 the master and commander strictly speaking held the permenent rank of lieutenant, and reverted to that rank when he gave up command of the sloop-of-war; in 1794 the rank of commander was created.</Italian>
+        <Spanish>[TAB] In the 18th and the earlier part of the 19th centuries, a sloop-of-war was a small sailing warship (also known as one of the escort types) with a single gun deck that carried anything up to eighteen cannons. As the rating system covered all vessels with 20 guns and above, this meant that the term sloop-of-war actually encompassed all the unrated combat vessels including the very small gun-brigs and cutters. In technical terms, even the more specialised bomb vessels and fireships were classed as sloops-of-war, and in practice these were actually employed in the sloop role when not carrying out their specialised functions. A ship sloop was generally the equivalent of the smaller corvette of the French Navy (although the French term also covered ships up up to 24 guns, which were classed as 'post ships' within the Sixth Rate of the British Navy). The name corvette was subsequently also applied to British vessels, but not until the 1830s. A sloop-of-war was smaller than a sailing frigate and outside the rating system. In general, a sloop-of-war would be under the command of a master and commander rather than a post captain, although in day-to-day use at sea the commanding officer of any naval vessels would be addressed as "captain". Until 1794 the master and commander strictly speaking held the permenent rank of lieutenant, and reverted to that rank when he gave up command of the sloop-of-war; in 1794 the rank of commander was created.</Spanish>
+    </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_</Tag>
 		<English></English>

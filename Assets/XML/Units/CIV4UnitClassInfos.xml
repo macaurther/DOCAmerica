@@ -214,12 +214,12 @@
 			<DefaultUnit>UNIT_PIKEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_ARQUEBUSIER</Type>
-			<Description>TXT_KEY_UNIT_ARQUEBUSIER</Description>
+			<Type>UNITCLASS_MUSKETMAN</Type>
+			<Description>TXT_KEY_UNIT_MUSKETMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_ARQUEBUSIER</DefaultUnit>
+			<DefaultUnit>UNIT_MUSKETMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_MUSKETEER</Type>
@@ -757,5 +757,104 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_SLAVE</DefaultUnit>
 		</UnitClassInfo>
+		<!-- MacAurther TODO: Maybe reorder -->
+		<!-- New Units -->
+		<UnitClassInfo>
+			<Type>UNITCLASS_BRIGANTINE</Type>
+			<Description>TXT_KEY_UNIT_BRIGANTINE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_BRIGANTINE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CONTINENTAL</Type>
+			<Description>TXT_KEY_UNIT_CONTINENTAL</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_CONTINENTAL</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CORVETTE</Type>
+			<Description>TXT_KEY_UNIT_CORVETTE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_CORVETTE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_LINE_INFANTRY</Type>
+			<Description>TXT_KEY_UNIT_LINE_INFANTRY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_LINE_INFANTRY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_HEAVY_ARTILLERY</Type>
+			<Description>TXT_KEY_UNIT_HEAVY_ARTILLERY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_HEAVY_ARTILLERY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_HESSIAN</Type>
+			<Description>TXT_KEY_UNIT_HESSIAN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_HESSIAN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_LIGHT_ARTILLERY</Type>
+			<Description>TXT_KEY_UNIT_LIGHT_ARTILLERY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_LIGHT_ARTILLERY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_MORTAR</Type>
+			<Description>TXT_KEY_UNIT_MORTAR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_MORTAR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_RANGER</Type>
+			<Description>TXT_KEY_UNIT_RANGER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_RANGER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SEASONED_SCOUT</Type>
+			<Description>TXT_KEY_UNIT_SEASONED_SCOUT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_SEASONED_SCOUT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_MILITIA</Type>
+			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_MILITIA</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SLOOP</Type>
+			<Description>TXT_KEY_UNIT_SLOOP</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_SLOOP</DefaultUnit>
+		</UnitClassInfo>
+		<!-- Unique Units -->
 	</UnitClassInfos>
 </Civ4UnitClassInfos>

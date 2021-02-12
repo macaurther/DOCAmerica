@@ -1185,7 +1185,7 @@ class RFCUtils:
 		
 	def getBestInfantry(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
-		lInfantryList = [iInfantry, iRifleman, iMusketeer, iArquebusier, iPikeman, iCrossbowman, iSwordsman, iLightSwordsman, iMilitia]
+		lInfantryList = [iInfantry, iRifleman, iMusketeer, iMusketman, iMilitia, iPikeman, iCrossbowman, iSwordsman, iLightSwordsman]
 		
 		for iBaseUnit in lInfantryList:
 			iUnit = self.getUniqueUnitType(iPlayer, gc.getUnitInfo(iBaseUnit).getUnitClassType())
@@ -1232,7 +1232,7 @@ class RFCUtils:
 		if iPlayer == iBarbarian: iPlayer = iIndependent
 		
 		pPlayer = gc.getPlayer(iPlayer)
-		lDefenderList = [iInfantry, iMachineGun, iRifleman, iMusketeer, iArquebusier, iCrossbowman, iArcher, iMilitia]
+		lDefenderList = [iInfantry, iMachineGun, iRifleman, iMusketeer, iMusketman, iMilitia, iCrossbowman, iArcher]
 		
 		for iBaseUnit in lDefenderList:
 			iUnit = self.getUniqueUnitType(iPlayer, gc.getUnitInfo(iBaseUnit).getUnitClassType())
