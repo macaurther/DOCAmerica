@@ -265,7 +265,7 @@ class Religions:
 
 ## BAPTISM
 
-	def foundBaptism(self, iGameTurn):
+	def foundBaptism(self):
 		if gc.getGame().isReligionFounded(iBaptism): return
 		
 		self.foundReligion(self.selectHolyCity(tBaptistTL, tBaptistBR, tProvidence, False), iBaptism)
@@ -273,7 +273,7 @@ class Religions:
 
 ## METHODISM
 
-	def foundMethodism(self, iGameTurn):
+	def foundMethodism(self):
 		if gc.getGame().isReligionFounded(iMethodism): return
 
 		self.foundReligion(self.selectHolyCity(tMethodistTL, tMethodistBR, tSavannah, False), iMethodism)

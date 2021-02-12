@@ -215,7 +215,7 @@
 			<Adjective>TXT_KEY_CIV_CONNECTICUT_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_CONNECTICUT_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_CONNECTICUT</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_CONNECTICUT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -303,7 +303,7 @@
 			<Adjective>TXT_KEY_CIV_DELAWARE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_DELAWARE_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DELAWARE</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_DELAWARE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -584,7 +584,7 @@
 			<Adjective>TXT_KEY_CIV_GEORGIA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_GEORGIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_GEORGIA</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_GEORGIA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -672,7 +672,7 @@
 			<Adjective>TXT_KEY_CIV_MARYLAND_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MARYLAND_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MARYLAND</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MARYLAND</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -760,7 +760,7 @@
 			<Adjective>TXT_KEY_CIV_MASSACHUSETTS_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MASSACHUSETTS_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_MASSACHUSETTS</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_MASSACHUSETTS</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -848,7 +848,7 @@
 			<Adjective>TXT_KEY_CIV_NEW_HAMPSHIRE_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NEW_HAMPSHIRE_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_NEW_HAMPSHIRE</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_NEW_HAMPSHIRE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -936,7 +936,7 @@
 			<Adjective>TXT_KEY_CIV_NEW_JERSEY_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NEW_JERSEY_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_NEW_JERSEY</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_NEW_JERSEY</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -1024,7 +1024,7 @@
 			<Adjective>TXT_KEY_CIV_NEW_YORK_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NEW_YORK_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_NEW_YORK</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_NEW_YORK</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -1112,7 +1112,7 @@
 			<Adjective>TXT_KEY_CIV_NORTH_CAROLINA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NORTH_CAROLINA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_NORTH_CAROLINA</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_NORTH_CAROLINA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -1200,7 +1200,7 @@
 			<Adjective>TXT_KEY_CIV_PENNSYLVANIA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_PENNSYLVANIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_PENNSYLVANIA</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_PENNSYLVANIA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -1288,7 +1288,7 @@
 			<Adjective>TXT_KEY_CIV_RHODE_ISLAND_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_RHODE_ISLAND_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_RHODE_ISLAND</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_RHODE_ISLAND</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -1376,7 +1376,7 @@
 			<Adjective>TXT_KEY_CIV_SOUTH_CAROLINA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_SOUTH_CAROLINA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_SOUTH_CAROLINA</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_SOUTH_CAROLINA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
@@ -1564,7 +1564,7 @@
 			<Adjective>TXT_KEY_CIV_VIRGINIA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_VIRGINIA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_VIRGINIA</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_AMERICA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_VIRGINIA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>

@@ -1025,7 +1025,7 @@
 		<!-- DOCUSA Leader Heads -->
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_SPANISH_KING</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,3,3</Button>
 			<NIF>art/LeaderHeads/King_Spanish/King_Spanish.nif</NIF>
 			<KFM>art/LeaderHeads/King_Spanish/King_Spanish.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/King_Spanish/King_Spanish.nif</NoShaderNIF>
@@ -1033,7 +1033,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_FRENCH_KING</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,2,3</Button>
 			<NIF>art/LeaderHeads/King_French/King_French.nif</NIF>
 			<KFM>art/LeaderHeads/King_French/King_French.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/King_French/King_French.nif</NoShaderNIF>
@@ -1041,7 +1041,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_ENGLISH_KING</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,1,3</Button>
 			<NIF>art/LeaderHeads/King_English/King_English.nif</NIF>
 			<KFM>art/LeaderHeads/King_English/King_English.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/King_English/King_English.nif</NoShaderNIF>
@@ -1049,7 +1049,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_ROLFE</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders2.dds,6,1</Button>
 			<NIF>art/LeaderHeads/Johan_Printz/Printz.nif</NIF>
 			<KFM>art/LeaderHeads/Johan_Printz/Printz.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Johan_Printz/Printz.nif</NoShaderNIF>
@@ -1057,7 +1057,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_ADAMS</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders2.dds,8,1</Button>
 			<NIF>art/LeaderHeads/Baranov/Baranov.nif</NIF>
 			<KFM>art/LeaderHeads/Baranov/Henry.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Baranov/Baranov.nif</NoShaderNIF>
@@ -1065,7 +1065,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_WIGGIN</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,7,3</Button>
 			<NIF>art/LeaderHeads/cortes/cortes.nif</NIF>
 			<KFM>art/LeaderHeads/cortes/cortes.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/cortes/cortes.nif</NoShaderNIF>
@@ -1073,7 +1073,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_CALVERT</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,6,3</Button>
 			<NIF>art/LeaderHeads/Samuel_de_Champlain/Samuel_de_Champlain.nif</NIF>
 			<KFM>art/LeaderHeads/Samuel_de_Champlain/Samuel_de_Champlain.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Samuel_de_Champlain/Samuel_de_Champlain.nif</NoShaderNIF>
@@ -1081,7 +1081,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_HOOKER</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders2.dds,5,1</Button>
 			<NIF>art/LeaderHeads/Johan_Rising/Rising.nif</NIF>
 			<KFM>art/LeaderHeads/Johan_Rising/Rising.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Johan_Rising/Rising.nif</NoShaderNIF>
@@ -1089,7 +1089,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_WILLIAMS</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,6,16</Button>
 			<NIF>art/LeaderHeads/Jens_Munk/jackson.nif</NIF>
 			<KFM>art/LeaderHeads/Jens_Munk/frederick_the_great.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Jens_Munk/jackson.nif</NoShaderNIF>
@@ -1097,7 +1097,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_RALEIGH</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,2,4</Button>
 			<NIF>art/LeaderHeads/vanderdonck/VanDerDonk.nif</NIF>
 			<KFM>art/LeaderHeads/vanderdonck/VanDerDonk.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/vanderdonck/VanDerDonk.nif</NoShaderNIF>
@@ -1105,7 +1105,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_SAYLE</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,8,10</Button>
 			<NIF>art/LeaderHeads/de_sousa/de_sousa.nif</NIF>
 			<KFM>art/LeaderHeads/de_sousa/de_sousa.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/de_sousa/de_sousa.nif</NoShaderNIF>
@@ -1113,7 +1113,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_HYDE</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,5,16</Button>
 			<NIF>art/LeaderHeads/Kristian_IV/peter.nif</NIF>
 			<KFM>art/LeaderHeads/Kristian_IV/King_English.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Kristian_IV/peter.nif</NoShaderNIF>
@@ -1129,7 +1129,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_PENN</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,6,2</Button>
 			<NIF>art/LeaderHeads/John_Adams/John_Adams.nif</NIF>
 			<KFM>art/LeaderHeads/John_Adams/John_Adams.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/John_Adams/John_Adams.nif</NoShaderNIF>
@@ -1137,7 +1137,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_BIGGS</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders2.dds,7,2</Button>
 			<NIF>art/LeaderHeads/Ermak/Ermak.nif</NIF>
 			<KFM>art/LeaderHeads/Ermak/Ermak.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Ermak/Stuyvesant_noshader.nif</NoShaderNIF>
@@ -1145,7 +1145,7 @@
 		</LeaderheadArtInfo>
 		<LeaderheadArtInfo>
 			<Type>ART_DEF_LEADER_OGLETHORPE</Type>
-			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,12</Button>
+			<Button>,Art/interface/LeaderHeads/Btn_LH_America_Washington.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,1,16</Button>
 			<NIF>art/LeaderHeads/Hans_Egede/King_Dutch.nif</NIF>
 			<KFM>art/LeaderHeads/Hans_Egede/King_Dutch.kfm</KFM>
 			<NoShaderNIF>art/LeaderHeads/Hans_Egede/King_Dutch.nif</NoShaderNIF>

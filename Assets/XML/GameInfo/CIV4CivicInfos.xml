@@ -289,6 +289,16 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iWorkerCostModifier>-50</iWorkerCostModifier>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -463,6 +473,13 @@
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 					<ImprovementYields>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
 						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
