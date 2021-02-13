@@ -62,10 +62,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
@@ -256,10 +252,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
@@ -343,10 +335,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
@@ -625,10 +613,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
@@ -712,10 +696,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
@@ -801,10 +781,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
@@ -888,10 +864,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
@@ -977,10 +949,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
@@ -1064,10 +1032,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
@@ -1153,10 +1117,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
@@ -1240,10 +1200,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
@@ -1329,10 +1285,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
@@ -1416,10 +1368,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
@@ -1604,10 +1552,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>

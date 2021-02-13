@@ -2575,14 +2575,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MUSKETMAN</Tag>
-		<English>Arquebusier</English>
+		<English>Musketman</English>
 		<French>
-			<Text>Arquebusier</Text>
+			<Text>Musketman</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Arquebusier</German>
-		<Italian>Arquebusier</Italian>
+		<German>Musketman</German>
+		<Italian>Musketman</Italian>
 		<Spanish>Arquebusier</Spanish>
 	</TEXT>
 	<TEXT>
@@ -2667,15 +2667,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HUSSAR</Tag>
-		<English>Hussar</English>
+		<English>Carabineer</English>
 		<French>
-			<Text>Hussard</Text>
+			<Text>Carabineer</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Hussar</German>
-		<Italian>Hussar</Italian>
-		<Spanish>Hussar</Spanish>
+		<German>Carabineer</German>
+		<Italian>Carabineer</Italian>
+		<Spanish>Carabineer</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HUSSAR_STRATEGY</Tag>

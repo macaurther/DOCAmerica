@@ -24,7 +24,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_ROYAL_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Strategy>
 			<TechPrereq>TECH_CHARTER</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,8,4</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iBaseFreeUnits>15</iBaseFreeUnits>
@@ -44,7 +44,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_TERRITORY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TERRITORY_STRATEGY</Strategy>
 			<TechPrereq>TECH_PIONEERING</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<UnimprovedTileYields>
@@ -86,7 +86,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_COMMONWEALTH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Strategy>
 			<TechPrereq>TECH_TRANSCENDENTALISM</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Republic.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Republic.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,7,4</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<SpecialistExtraYields>
@@ -151,7 +151,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_COMMON_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMON_LAW_STRATEGY</Strategy>
 			<TechPrereq>TECH_COMMUNITY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,2,6</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<BuildingProductionModifiers>
@@ -176,7 +176,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MARTIAL_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MARTIAL_LAW_STRATEGY</Strategy>
 			<TechPrereq>TECH_STATECRAFT</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Vassalage.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Vassalage.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,5,5</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
@@ -261,7 +261,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_UNIVERSAL_SUFFERAGE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_UNIVERSAL_SUFFERAGE_STRATEGY</Strategy>
 			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Constitution.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Constitution.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,5,4</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
@@ -285,7 +285,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Strategy>
 			<TechPrereq>TECH_INDENTURES</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Slavery.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,3,5</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iWorkerCostModifier>-50</iWorkerCostModifier>
@@ -307,7 +307,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
 			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Slavery.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,6,4</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bSlavery>1</bSlavery>
@@ -444,7 +444,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MERCANTILISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Strategy>
 			<TechPrereq>TECH_COLONIZATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Redistribution.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Regulated Trade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<TradeYieldModifiers>
@@ -466,7 +466,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_AGRARIANISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_AGRARIANISM_STRATEGY</Strategy>
 			<TechPrereq>TECH_HORTICULTURE</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Merchant Trade.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Merchant Trade.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,3,8</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
@@ -553,7 +553,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MANIFEST_DESTINY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Strategy>
 			<TechPrereq>TECH_MANIFEST_DESTINY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Free Enterprise.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Conquest.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<DomainExperienceModifiers>
@@ -644,7 +644,7 @@
 			<Description>TXT_KEY_CIVIC_FOR_GLORY_GOD_AND_GOLD</Description>
 			<Civilopedia>TXT_KEY_CIVIC_FOR_GLORY_GOD_AND_GOLD_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_FOR_GLORY_GOD_AND_GOLD_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civics/Animism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Animism.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,3,6</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>NONE</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -656,7 +656,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_HAVEN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HAVEN_STRATEGY</Strategy>
 			<TechPrereq>TECH_COMMUNITY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Deification.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Deification.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,1,6</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -696,7 +696,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_FREE_RELIGION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_FREE_RELIGION_STRATEGY</Strategy>
 			<TechPrereq>TECH_TRANSCENDENTALISM</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Asceticism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Asceticism.dd,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,2,5s</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
@@ -802,7 +802,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_HEADRIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HEADRIGHT_STRATEGY</Strategy>
 			<TechPrereq>TECH_CHARTER</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Conquest.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Conquest.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,7,9</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<YieldModifiers>
@@ -821,7 +821,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_RURALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_RURALISM_STRATEGY</Strategy>
 			<TechPrereq>TECH_HERITAGE</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Manorialism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Manorialism.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,4,9</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
@@ -882,7 +882,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_URBANISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_URBANISM_STRATEGY</Strategy>
 			<TechPrereq>TECH_URBAN_PLANNING</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Democracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iLargestCityHappiness>2</iLargestCityHappiness>

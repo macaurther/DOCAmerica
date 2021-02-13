@@ -454,30 +454,26 @@ iSocialPrograms,) = range(iNumTechs)														#Information 3
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 133
+iNumUnits = 132
 (iLion, iBear, iPanther, iWolf, iSettler, iPioneer, iWorker, iLabourer, 
-iScout, iExplorer, iSpy, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iAnglicanMissionary, 
+iScout, iExplorer, iSeasonedScout, iSpy, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iAnglicanMissionary, 
 iPuritanMissionary, iBaptistMissionary, iMethodistMissionary, iMormonMissionary, iWarrior, iAxeman, iLightSwordsman, 
 iDogSoldier, iSwordsman,
 iSpearman, iPikeman, 
-iMusketman, iTercio, iMohawk, iMusketeer, 
-iRedcoat, iFusilier, iMinuteman, iRifleman, iGrenadier, iAntiTank, 
-iInfantry, iSamInfantry, iMobileSam, iMarine, iNavySeal, iParatrooper, iMechanizedInfantry, iArcher, 
-iSkirmisher, iCrossbowman, 
-iHorseman, iHorseArcher, 
-iLancer, 
-iPistolier, iMountedBrave, iCuirassier, iConquistador, iHussar, iLlanero, 
-iDragoon, iGrenadierCavalry, iCavalry, iRural, iTank, iMainBattleTank, 
-iGunship, iBombard, iCannon, iArtillery, 
-iMachineGun, iHowitzer, iMobileArtillery, iWorkboat,
-iCaravel, iCarrack, iGalleon, 
-iEastIndiaman, iPrivateer, iCorsair, iFrigate, iShipOfTheLine, iManOfWar, iSteamship, iIronclad, iTorpedoBoat, iCruiser, 
+iMusketman, iTercio, iMohawk, iFusilier, iMilitia, iRanger, 
+iMusketeer, iMinuteman, iHessian, iLineInfantry, iContinental, iRedcoat, iGrenadier, iRifleman, 
+iAntiTank, iInfantry, iSamInfantry, iMobileSam, iMarine, iNavySeal, iParatrooper, iMechanizedInfantry, 
+iArcher, iSkirmisher, iCrossbowman, 
+iHorseman, iHorseArcher, iLancer, iPistolier, iMountedBrave, iCuirassier, iConquistador, 
+iDragoon, iGrenadierCavalry, iCarabineer, iLlanero, iCavalry, iRural, 
+iTank, iMainBattleTank, iGunship, 
+iBombard, iMortar, iCannon, iLightArtillery, iHeavyArtillery, iArtillery, iMachineGun, iHowitzer, iMobileArtillery, 
+iWorkboat, iCaravel, iCarrack, iGalleon, iEastIndiaman, iPrivateer, iCorsair, iSloop, iBrigantine, iFrigate, 
+iShipOfTheLine, iManOfWar, iSteamship, iIronclad, iTorpedoBoat, iCruiser, 
 iTransport, iDestroyer, iCorvette, iBattleship, iMissileCruiser, iStealthDestroyer, iSubmarine, iNuclearSubmarine, iCarrier, iBiplane, 
 iFighter, iZero, iJetFighter, iBomber, iStealthBomber, iGuidedMissile, iDrone, iNuclearBomber, iICBM, iSatellite, 
 iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral, iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, 
-iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy, iSlave,
-iBrigantine, iContinental, iCorvette, iLineInfantry, IHeavyArtillery, iHessian, iLightArtillery, iMortar, iRanger, iSeasonedScout,
-iMilitia, iSloop) = range(iNumUnits)
+iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy, iSlave) = range(iNumUnits)
 
 iMissionary = iJewishMissionary # generic
 
