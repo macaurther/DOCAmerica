@@ -2414,44 +2414,56 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_DEFENSE_AIR] /= 2;
 		break;
 	case VIRGINIA:
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case MASSACHUSETTS:
 		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 2;
 		aiUnitAIVal[UNITAI_ESCORT_SEA] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case NEW_HAMPSHIRE:
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case MARYLAND:
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case CONNECTICUT:
 		aiUnitAIVal[UNITAI_SETTLE] *= 3;
 		aiUnitAIVal[UNITAI_SETTLE] /= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case RHODE_ISLAND:
 		aiUnitAIVal[UNITAI_SETTLE] /= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case NORTH_CAROLINA:
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case SOUTH_CAROLINA:
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case NEW_JERSEY:
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case NEW_YORK:
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case PENNSYLVANIA:
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case DELAWARE:
 		aiUnitAIVal[UNITAI_SETTLE] /= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case GEORGIA:
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] *= 2;
 		break;
 	case AMERICA:
 		aiUnitAIVal[UNITAI_RESERVE] *= 2;

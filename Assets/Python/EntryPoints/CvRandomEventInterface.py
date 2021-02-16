@@ -2844,8 +2844,8 @@ def canTriggerBestDefenseDone(argsList):
 	kTriggeredData = argsList[0]
 	trigger = gc.getEventTriggerInfo(kTriggeredData.eTrigger)
 	player = gc.getPlayer(kTriggeredData.ePlayer)
-		
-	iCastle = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_CASTLE')
+	# MacAurther TODO: Events
+	'''iCastle = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_CASTLE')
 
 	#Rhye - start
 	#iBuildingsRequired = gc.getWorldInfo(gc.getMap().getWorldSize()).getDefaultPlayers()
@@ -2855,7 +2855,8 @@ def canTriggerBestDefenseDone(argsList):
 	if iBuildingsRequired > player.getBuildingClassCount(iCastle):
 		return false
 		
-	return true
+	return true'''
+	return false
 
 def getHelpBestDefenseDone2(argsList):
 	iEvent = argsList[0]
@@ -2922,8 +2923,8 @@ def canTriggerSportsLeagueDone(argsList):
 	kTriggeredData = argsList[0]
 	trigger = gc.getEventTriggerInfo(kTriggeredData.eTrigger)
 	player = gc.getPlayer(kTriggeredData.ePlayer)
-		
-	iCastle = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_ARENA')
+	# MacAurther TODO: Events
+	'''iCastle = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_ARENA')
 
 	#Rhye - start
 	#iBuildingsRequired = gc.getWorldInfo(gc.getMap().getWorldSize()).getDefaultPlayers()
@@ -2933,7 +2934,8 @@ def canTriggerSportsLeagueDone(argsList):
 	if iBuildingsRequired > player.getBuildingClassCount(iCastle):
 		return false
 		
-	return true
+	return true'''
+	return false
 
 def canApplySportsLeagueDone3(argsList):
 	iEvent = argsList[0]

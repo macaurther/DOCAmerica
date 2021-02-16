@@ -1196,7 +1196,7 @@ class RFCUtils:
 		
 	def getBestCavalry(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
-		lCavalryList = [iCavalry, iDragoon, iHussar, iCuirassier, iPistolier, iLancer, iHorseArcher, iHorseman]
+		lCavalryList = [iCavalry, iDragoon, iCarabineer, iCuirassier, iPistolier, iLancer, iHorseArcher, iHorseman]
 		
 		for iBaseUnit in lCavalryList:
 			iUnit = self.getUniqueUnitType(iPlayer, gc.getUnitInfo(iBaseUnit).getUnitClassType())

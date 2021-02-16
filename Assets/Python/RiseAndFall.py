@@ -1694,8 +1694,6 @@ class RiseAndFall:
 			utils.makeUnit(iMusketman, iCiv, tPlot, 3)
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
-			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 			pPennsylvania.setLastStateReligion(iPuritanism)
 			utils.createMissionaries(iCiv, 3)
 		elif iCiv == iDelaware:

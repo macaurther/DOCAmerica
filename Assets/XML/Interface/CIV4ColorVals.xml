@@ -1339,16 +1339,16 @@
 		</ColorVal>
 		<ColorVal>
 			<Type>COLOR_PLAYER_PENNSYLVANIA_PRIMARY</Type>
-			<fRed>0.25</fRed>
-			<fGreen>0.25</fGreen>
-			<fBlue>0.25</fBlue>
+			<fRed>0.03</fRed>
+			<fGreen>0.42</fGreen>
+			<fBlue>0.13</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
 		<ColorVal>
 			<Type>COLOR_PLAYER_PENNSYLVANIA_SECONDARY</Type>
-			<fRed>0.00</fRed>
-			<fGreen>0.16</fGreen>
-			<fBlue>0.53</fBlue>
+			<fRed>0.51</fRed>
+			<fGreen>0.80</fGreen>
+			<fBlue>0.89</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
 		<ColorVal>

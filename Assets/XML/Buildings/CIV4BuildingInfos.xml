@@ -275,8 +275,8 @@
 			<Strategy>TXT_KEY_BUILDING_WALLS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
-			<ObsoleteTech>TECH_BALLISTICS</ObsoleteTech>
-			<PrereqTech>TECH_COLONIZATION</PrereqTech>
+			<ObsoleteTech>TECH_GUNPOWDER</ObsoleteTech>
+			<PrereqTech>TECH_MINING</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>50</iCost>
 			<iConquestProb>100</iConquestProb>
