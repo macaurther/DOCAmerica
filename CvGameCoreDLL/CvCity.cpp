@@ -2143,7 +2143,9 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 				break;
 		}
 
-		bool bException = false;
+		//MacAurther TODO: Until regions are reworked, regions do not prohibit settler construction
+		//bool bException = true;
+		bool bException = true;
 
 		/*if (iCapitalRegion == REGION_RUSSIA && iRegion == REGION_SIBERIA)
 		{
