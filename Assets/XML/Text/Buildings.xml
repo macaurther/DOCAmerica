@@ -3633,15 +3633,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STOCKADE</Tag>
-		<English>Chevaux de Frise</English>
+		<English>Stockade</English>
 		<French>
-			<Text>Cheval de frise:Chevaux de Frise</Text>
+			<Text>Stockade</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
-		<German>Friesische Reiter</German>
-		<Italian>Cavallo di Frisia</Italian>
-		<Spanish>Chevaux de Frise</Spanish>
+		<German>Stockade</German>
+		<Italian>Stockade</Italian>
+		<Spanish>Stockade</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STOCKADE_PEDIA</Tag>

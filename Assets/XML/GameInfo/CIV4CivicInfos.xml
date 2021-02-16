@@ -675,7 +675,7 @@
 			<Description>TXT_KEY_CIVIC_PENAL_COLONY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PENAL_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PENAL_COLONY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CHARTER</TechPrereq>
+			<TechPrereq>TECH_COLONIZATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Priesthood.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>

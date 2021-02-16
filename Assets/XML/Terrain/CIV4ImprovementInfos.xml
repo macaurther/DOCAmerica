@@ -1109,11 +1109,6 @@
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</PrereqNatureYields>
-			<IrrigatedYieldChange>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>1</iYield>
-			</IrrigatedYieldChange>
 			<bActsAsCity>0</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
 			<bFreshWaterMakesValid>1</bFreshWaterMakesValid>
@@ -1287,14 +1282,6 @@
 			<ImprovementPillage/>
 			<ImprovementUpgrade/>
 			<TechYieldChanges>
-				<TechYieldChange>
-					<PrereqTech>TECH_HORTICULTURE</PrereqTech>
-					<TechYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</TechYields>
-				</TechYieldChange>
 				<TechYieldChange>
 					<PrereqTech>TECH_SPACEFLIGHT</PrereqTech>
 					<TechYields>
@@ -1498,16 +1485,6 @@
 			</BonusTypeStructs>
 			<ImprovementPillage/>
 			<ImprovementUpgrade/>
-			<TechYieldChanges>
-				<TechYieldChange>
-					<PrereqTech>TECH_HORTICULTURE</PrereqTech>
-					<TechYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</TechYields>
-				</TechYieldChange>
-			</TechYieldChanges>
 			<RouteYieldChanges>
 				<RouteYieldChange>
 					<RouteType>ROUTE_RAILROAD</RouteType>
@@ -2055,14 +2032,6 @@
 			<ImprovementPillage/>
 			<ImprovementUpgrade/>
 			<TechYieldChanges>
-				<TechYieldChange>
-					<PrereqTech>TECH_HORTICULTURE</PrereqTech>
-					<TechYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</TechYields>
-				</TechYieldChange>
 				<TechYieldChange>
 					<PrereqTech>TECH_SPACEFLIGHT</PrereqTech>
 					<TechYields>
