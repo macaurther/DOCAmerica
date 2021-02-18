@@ -153,7 +153,7 @@ class CvRFCEventHandler:
 		# MacAurther: Hartford should spawn with a Palisade and Barracks
 		if iPlayer == iConnecticut and tCity == Areas.getCapital(iConnecticut):
 			city.setHasRealBuilding(iBarracks, True)
-			city.setHasRealBuilding(iWalls, True)
+			city.setHasRealBuilding(iStockade, True)
 			
 			city.setName("Hartford", False)
 			
@@ -165,7 +165,7 @@ class CvRFCEventHandler:
 				city.setPopulation(5)
 				
 			city.setHasRealBuilding(iBarracks, True)
-			city.setHasRealBuilding(iWalls, True)
+			city.setHasRealBuilding(iStockade, True)
 			city.setHasRealBuilding(iLibrary, True)
 			city.setHasRealBuilding(iMarket, True)
 			city.setHasRealBuilding(iGranary, True)

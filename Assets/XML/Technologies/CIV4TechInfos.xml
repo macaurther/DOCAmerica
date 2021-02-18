@@ -929,7 +929,7 @@
 			<Quote>TXT_KEY_TECH_CHARTER_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Firearms.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Firearms.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,10</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -970,7 +970,7 @@
 			<Quote>TXT_KEY_TECH_CHARTER_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Firearms.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Firearms.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,4,12</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1000,7 +1000,7 @@
 			<Quote>TXT_KEY_TECH_CHARTER_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Firearms.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Firearms.dds,Art/Interface/Buttons/mem_techtree_atlas.dds,5,8</Button>
 		</TechInfo>
 
 <!-- #5 -->
@@ -1103,7 +1103,7 @@
 			<Quote>TXT_KEY_TECH_TRIANGULAR_TRADE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Urban_Planning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Urban_Planning.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,1</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1304,7 +1304,7 @@
 			<Quote>TXT_KEY_TECH_ECONOMICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Economics.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Economics.dds,Art/Interface/Buttons/mem_techtree_atlas.dds,1,1</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2612,7 +2612,7 @@
 			<Quote>TXT_KEY_TECH_INDUSTRIALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Engine.dds,Art/Interface/Buttons/TechTree_Atlas.dds,3,2</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Engine.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,4</Button>
 		</TechInfo>
 
 		<TechInfo>
