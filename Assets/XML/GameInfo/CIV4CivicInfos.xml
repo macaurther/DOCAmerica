@@ -198,7 +198,7 @@
 			<Description>TXT_KEY_CIVIC_STATES_RIGHTS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_STATES_RIGHTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_STATES_RIGHTS_STRATEGY</Strategy>
-			<TechPrereq>TECH_INDEPENDENCE</TechPrereq>
+			<TechPrereq>TECH_BILL_OF_RIGHTS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Meritocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -260,7 +260,7 @@
 			<Description>TXT_KEY_CIVIC_UNIVERSAL_SUFFERAGE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_UNIVERSAL_SUFFERAGE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_UNIVERSAL_SUFFERAGE_STRATEGY</Strategy>
-			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
+			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Constitution.dds,Art/Interface/Buttons/Colonization_Civilizations_Leaders.dds,5,4</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -404,7 +404,7 @@
 			<Description>TXT_KEY_CIVIC_AUTOMATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_AUTOMATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_AUTOMATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_SOCIOLOGY</TechPrereq>
+			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/FinalFrontier1_Atlas.dds,3,14</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -497,7 +497,7 @@
 			<Description>TXT_KEY_CIVIC_INDUSTRIALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INDUSTRIALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INDUSTRIALISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_CURRENCY</TechPrereq>
+			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/FinalFrontier1_Atlas.dds,5,14</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>

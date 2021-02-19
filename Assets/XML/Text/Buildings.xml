@@ -3735,6 +3735,7 @@
 		<Italian>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Spanish>
 	</TEXT>
+	
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VIRGINIAN_HOUSE_OF_BURGESSES</Tag>
 		<English>House of Burgesses</English>
@@ -3751,6 +3752,26 @@
 		<Italian>The [COLOR_BUILDING_TEXT]House of Burgesses[COLOR_REVERT], the Virginian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate.</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]House of Burgesses[COLOR_REVERT], the Virginian replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate.</Spanish>
 	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MASSACHUSETTS_COMMON</Tag>
+		<English>Common</English>
+		<French>Common</French>
+		<German>Common</German>
+		<Italian>Common</Italian>
+		<Spanish>Common</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MASSACHUSETTS_COMMON</Tag>
+		<English>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Spanish>
+	</TEXT>
+	
+	
+	
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English></English>

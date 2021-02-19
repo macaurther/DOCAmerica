@@ -1797,7 +1797,7 @@
 			<ImprovementUpgrade/>
 			<TechYieldChanges>
 				<TechYieldChange>
-					<PrereqTech>TECH_COLONIZATION</PrereqTech>
+					<PrereqTech>TECH_ECONOMICS</PrereqTech>
 					<TechYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
