@@ -41,32 +41,32 @@
 		<Height>1</Height>
 		<!-- LEAF 1x1 GENERICS -->
 		<ArtRef Name="generic:an_eu.nif::1x1_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x1_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x1_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x1_04">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x1_05">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x1_06">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
@@ -93,7 +93,7 @@
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:med_eu.nif::1x1x1_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
@@ -118,31 +118,31 @@
 		</ArtRef>
 		<!-- ORIENTAL -->
 		<ArtRef Name="generic:Oriental.nif::1x1x1_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x1x1_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x1x2_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x1x2_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x1x2_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
@@ -208,62 +208,62 @@
 		</ArtRef>
 		<!-- MESO -->
 		<ArtRef Name="generic:meso_city.nif::1x1_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::1x1_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::1x1_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::1x1_04">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::1x1_05">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<!-- AFRICAN -->
 		<ArtRef Name="generic:africa1.nif::1x1x1_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::1x1x1_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::1x1x2_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::1x1x2_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::1x1x2_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
@@ -296,48 +296,48 @@
 		</ArtRef>
 		<!-- Asian -->
 		<ArtRef Name="generic:asian.nif::1x1_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x1_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x1_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x1_04">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x1_05">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<!-- Roman -->
 		<ArtRef Name="generic:greco_roman.nif::1x1_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x1_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x1_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x1_04">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
@@ -376,43 +376,43 @@
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::2x1_01">
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::2x1_02">
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::2x1_03">
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::2x1_04">
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x2_01">
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x2_02">
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<!-- MEDIEVAL -->
 		<ArtRef Name="generic:med_eu.nif::1x2x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
@@ -447,7 +447,7 @@
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:med_eu.nif::2x1x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
@@ -476,63 +476,63 @@
 		</ArtRef>
 		<!-- ORIENTAL -->
 		<ArtRef Name="generic:Oriental.nif::1x2x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x2x2_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x2x2_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x2x2_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x2x2_05">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::2x1x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::2x1x2_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::2x1x2_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::2x1x2_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
@@ -675,49 +675,49 @@
 		</ArtRef>
 		<!-- MESO -->
 		<ArtRef Name="generic:meso_city.nif::1x2_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::1x2_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::1x2_3">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::2x1_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::2x1_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::2x1_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::2x1_04">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
@@ -725,63 +725,63 @@
 		</ArtRef>
 		<!-- AFRICAN -->
 		<ArtRef Name="generic:africa1.nif::1x2x2_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::1x2x2_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::1x2x2_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x2x2_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:Oriental.nif::1x2x2_05">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::2x1x2_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::2x1x2_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::2x1x2_03">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>0.9</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:africa1.nif::2x1x2_04">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
@@ -858,98 +858,98 @@
 		</ArtRef>
 		<!-- Asian -->
 		<ArtRef Name="generic:asian.nif::2x1_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::2x1_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::2x1_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::2x1_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x2_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x2_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x2_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<!-- Roman -->
 		<ArtRef Name="generic:greco_roman.nif::2x1_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::2x1_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::2x1_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::2x1_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x2_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x2_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x2_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
@@ -983,62 +983,62 @@
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::3x1_01">
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::1x3_01">
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<!-- Asian -->
 		<ArtRef Name="generic:asian.nif::3x1_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::3x1_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x3_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::1x3_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<!-- Roman -->
 		<ArtRef Name="generic:greco_roman.nif::3x1_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::3x1_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x3_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::1x3_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
@@ -1063,20 +1063,20 @@
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:med_eu.nif::2x2x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<!-- ORIENTAL -->
 		<ArtRef Name="generic:Oriental.nif::2x2x2_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>1.1</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:an_eu.nif::2x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_BARBARIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 		</ArtRef>
@@ -1089,7 +1089,7 @@
 		</ArtRef>
 		<!-- ORIENTAL -->
 		<ArtRef Name="generic:Oriental.nif::2x2x2_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>1.1</Scale>
@@ -1109,26 +1109,26 @@
 		</ArtRef>
 		<!-- MESO -->
 		<ArtRef Name="generic:meso_city.nif::2x2x3_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::2x2x4_01">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<ArtRef Name="generic:meso_city.nif::2x2x4_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:0</Attribute>
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<!-- AFRICAN -->
 		<ArtRef Name="generic:africa1.nif::2x2x2_02">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 			<Scale>1.1</Scale>
@@ -1172,38 +1172,38 @@
 		</ArtRef>
 		<!-- Asian -->
 		<ArtRef Name="generic:asian.nif::2x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::2x2_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::2x2_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:asian.nif::2x2_04">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_ASIAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<!-- Roman -->
 		<ArtRef Name="generic:greco_roman.nif::2x2_01">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::2x2_02">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="generic:greco_roman.nif::2x2_03">
-			<Attribute Class="Era">ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
@@ -1371,7 +1371,7 @@
 			<Rotate>45</Rotate>
 		</ArtRef>
 		<ArtRef Name="building:LSYSTEM_LIGHTHOUSE">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="Scalar">bNoWaterTest:1</Attribute>
 			<!-- this bypasses water testing -->
 			<Attribute Class="Scalar">szSpecialLayout:Water</Attribute>
@@ -1392,7 +1392,7 @@
 			<Scale>1.0</Scale>
 		</ArtRef>
 		<ArtRef Name="building:LSYSTEM_HARBOR">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_COLONIAL</Attribute>
 			<Attribute Class="Scalar">bNoWaterTest:1</Attribute>
 			<!-- this bypasses water testing -->
 			<Attribute Class="Scalar">szSpecialLayout:Coast</Attribute>
@@ -1660,7 +1660,7 @@
 		<Attribute Class="Scalar">bGoalOnly:1</Attribute>
 		<To Name="Leaf_4x2"/>
 		<ArtRef Name="decoration:all_city_lot_4x2.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::4x2">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1738,7 +1738,7 @@
 		<Attribute Class="Scalar">bGoalOnly:1</Attribute>
 		<To Name="Leaf_3x2"/>
 		<ArtRef Name="decoration:all_city_lot_3x2.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::3x2">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1783,7 +1783,7 @@
 		</To>
 	</LProduction>
 	<LProduction From="Node_4x1">
-		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		<To Name="Leaf_1x1">
 			<Translate>-1.5,0</Translate>
 		</To>
@@ -1794,7 +1794,7 @@
 			<Translate>1.5,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_4x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::4x1">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1804,7 +1804,7 @@
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_4x1">
-		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		<To Name="Leaf_1x1">
 			<Translate>-1.5,0</Translate>
 		</To>
@@ -1813,7 +1813,7 @@
 		</To>
 	</LProduction>
 	<LProduction From="Node_4x1">
-		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		<To Name="Node_3x1">
 			<Translate>-0.5,0</Translate>
 		</To>
@@ -1823,30 +1823,30 @@
 	</LProduction>
 	<!-- 3x1 node ***************************** -->
 	<LProduction From="Node_3x1">
-		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		<To Name="Leaf_3x1">
 			<Translate>0,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_3x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_3x1">
-		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		<To Name="Leaf_3x1">
 			<Translate>0,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_3x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_3x1">
-		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		<To Name="Leaf_3x1">
 			<Translate>0,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_3x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 	</LProduction>
 	<LProduction From="Node_3x1">
@@ -1857,7 +1857,7 @@
 			<Translate>0.5,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_3x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::3x1">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1874,7 +1874,7 @@
 			<Translate>-0.5,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_3x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::3x1">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1889,7 +1889,7 @@
 			<Translate>0,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_2x2.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x2">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1915,7 +1915,7 @@
 		</To>
 	</LProduction>
 	<LProduction From="Node_2x2">
-		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION,ERA_ATOMIC,ERA_INFORMATION</Attribute>
+		<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION,ERA_ATOMIC,ERA_INFORMATION</Attribute>
 		<To Name="Node_2x1">
 			<Rotate>90</Rotate>
 			<Translate>-0.5,0</Translate>
@@ -1952,7 +1952,7 @@
 			<Translate>0.5,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_2x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x1">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1966,7 +1966,7 @@
 			<Translate>0,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_2x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x1">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>
@@ -1981,7 +1981,7 @@
 			<Translate>0,0</Translate>
 		</To>
 		<ArtRef Name="decoration:all_city_lot_2x1.nif">
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_POST_COLUMBIAN,ERA_EXPLORATION</Attribute>
+			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 		</ArtRef>
 		<ArtRef Name="decoration:ren_city_lot.nif::2x1">
 			<Attribute Class="Era">ERA_COLONIAL</Attribute>

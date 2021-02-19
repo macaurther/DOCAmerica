@@ -7838,9 +7838,6 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 					case ERA_PRE_COLUMBIAN:
 						maxDistance = 15;
 						break;
-					case ERA_POST_COLUMBIAN:
-						maxDistance = 30;
-						break;
 					case ERA_EXPLORATION:
 						maxDistance = 45;
 						break;

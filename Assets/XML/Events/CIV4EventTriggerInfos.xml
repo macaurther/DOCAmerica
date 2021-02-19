@@ -112,10 +112,6 @@
 				</TriggerText>
 				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_CITY_RUINS_ANCIENT_1</Text>
-					<Era>ERA_POST_COLUMBIAN</Era>
-				</TriggerText>
-				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_CITY_RUINS_ANCIENT_1</Text>
 					<Era>ERA_EXPLORATION</Era>
 				</TriggerText>
 				<TriggerText>
@@ -2439,10 +2435,6 @@
 					<Era>ERA_PRE_COLUMBIAN</Era>
 				</TriggerText>
 				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_JOYOUS_WEDDING_1</Text>
-					<Era>ERA_POST_COLUMBIAN</Era>
-				</TriggerText>
-				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_JOYOUS_WEDDING_2</Text>
 					<Era>ERA_EXPLORATION</Era>
 				</TriggerText>
@@ -2545,10 +2537,6 @@
 					<Era>ERA_PRE_COLUMBIAN</Era>
 				</TriggerText>
 				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_WEDDING_FEUD_1</Text>
-					<Era>ERA_POST_COLUMBIAN</Era>
-				</TriggerText>
-				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_WEDDING_FEUD_2</Text>
 					<Era>ERA_EXPLORATION</Era>
 				</TriggerText>
@@ -2649,10 +2637,6 @@
 				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_LEFT_AT_ALTAR_1</Text>
 					<Era>ERA_PRE_COLUMBIAN</Era>
-				</TriggerText>
-				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_LEFT_AT_ALTAR_1</Text>
-					<Era>ERA_POST_COLUMBIAN</Era>
 				</TriggerText>
 				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_LEFT_AT_ALTAR_2</Text>
@@ -2843,10 +2827,6 @@
 				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_TORNADO_1</Text>
 					<Era>ERA_PRE_COLUMBIAN</Era>
-				</TriggerText>
-				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_TORNADO_1</Text>
-					<Era>ERA_POST_COLUMBIAN</Era>
 				</TriggerText>
 				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_TORNADO_1</Text>
@@ -3136,10 +3116,6 @@
 				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_LOOTERS_1</Text>
 					<Era>ERA_PRE_COLUMBIAN</Era>
-				</TriggerText>
-				<TriggerText>
-					<Text>TXT_KEY_EVENT_TRIGGER_LOOTERS_1</Text>
-					<Era>ERA_POST_COLUMBIAN</Era>
 				</TriggerText>
 				<TriggerText>
 					<Text>TXT_KEY_EVENT_TRIGGER_LOOTERS_1</Text>

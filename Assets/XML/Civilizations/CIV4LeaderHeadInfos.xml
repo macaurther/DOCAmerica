@@ -98,9 +98,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -119,10 +116,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_RAGNAR_EARLY</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_RAGNAR_EARLY</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -151,9 +144,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -172,10 +162,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -644,9 +630,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -667,10 +650,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_SHAKA_EARLY</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_SHAKA_EARLY</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -699,9 +678,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -720,10 +696,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -1196,10 +1168,6 @@
 					<DiploScriptId>AS2D_DIPLO_PETER_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_PETER_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId>AS2D_DIPLO_PETER_MIDDLE_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
@@ -1223,10 +1191,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_PETER_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_PETER_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -1255,9 +1219,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -1276,10 +1237,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -1777,10 +1734,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -1804,10 +1757,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -1836,9 +1785,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -1857,10 +1803,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -2358,10 +2300,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -2385,10 +2323,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -2417,9 +2351,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -2438,10 +2369,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -2939,10 +2866,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -2966,10 +2889,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -2998,9 +2917,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -3019,10 +2935,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -3520,10 +3432,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -3547,10 +3455,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -3579,9 +3483,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -3600,10 +3501,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -4101,10 +3998,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -4128,10 +4021,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -4160,9 +4049,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -4181,10 +4067,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -4682,10 +4564,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -4709,10 +4587,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -4741,9 +4615,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -4762,10 +4633,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -5263,10 +5130,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -5290,10 +5153,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -5322,9 +5181,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -5343,10 +5199,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -5844,10 +5696,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -5871,10 +5719,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -5903,9 +5747,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -5924,10 +5765,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -6425,10 +6262,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -6452,10 +6285,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -6484,9 +6313,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -6505,10 +6331,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -7006,10 +6828,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -7033,10 +6851,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -7065,9 +6879,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -7086,10 +6897,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -7587,10 +7394,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -7614,10 +7417,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -7646,9 +7445,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -7667,10 +7463,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -8168,10 +7960,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -8195,10 +7983,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -8227,9 +8011,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -8248,10 +8029,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -8749,10 +8526,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -8776,10 +8549,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -8808,9 +8577,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -8829,10 +8595,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -9330,10 +9092,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -9357,10 +9115,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -9389,9 +9143,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -9410,10 +9161,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -9911,10 +9658,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -9938,10 +9681,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -9970,9 +9709,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -9991,10 +9727,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -10492,10 +10224,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -10519,10 +10247,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -10551,9 +10275,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -10572,10 +10293,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -11073,10 +10790,6 @@
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_INTRO</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 					<DiploScriptId/>
 				</DiploMusicPeaceEra>
@@ -11100,10 +10813,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WASHINGTON_EARLY_LP</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -11132,9 +10841,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -11153,10 +10859,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -11641,9 +11343,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -11662,10 +11361,6 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_CANADA</DiploScriptId>
-				</DiploMusicPeaceEra>
-				<DiploMusicPeaceEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_CANADA</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
@@ -11694,9 +11389,6 @@
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
 					<EraType>ERA_EXPLORATION</EraType>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>
@@ -11715,10 +11407,6 @@
 			<DiplomacyMusicWar>
 				<DiploMusicWarEra>
 					<EraType>ERA_PRE_COLUMBIAN</EraType>
-					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
-				</DiploMusicWarEra>
-				<DiploMusicWarEra>
-					<EraType>ERA_POST_COLUMBIAN</EraType>
 					<DiploScriptId>AS2D_DIPLO_WARDRUMS_EARLY</DiploScriptId>
 				</DiploMusicWarEra>
 				<DiploMusicWarEra>

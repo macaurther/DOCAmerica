@@ -225,7 +225,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_POST_COLUMBIAN</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>12</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -261,7 +261,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_POST_COLUMBIAN</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iFeatureProductionModifier>50</iFeatureProductionModifier>
 			<iAsset>24</iAsset>
 			<iPower>5</iPower>
@@ -296,7 +296,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_POST_COLUMBIAN</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>12</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
@@ -330,7 +330,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_POST_COLUMBIAN</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>16</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -369,7 +369,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_POST_COLUMBIAN</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>12</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
@@ -414,7 +414,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_POST_COLUMBIAN</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>20</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -451,7 +451,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_POST_COLUMBIAN</Era>
+			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>8</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
