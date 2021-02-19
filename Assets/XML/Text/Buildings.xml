@@ -2467,11 +2467,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_DISTILLERY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's unhealthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's unhealthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's unhealthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's unhealthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's unhealthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Distilleries[COLOR_REVERT] increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NEWS_PRESS</Tag>
@@ -3729,11 +3729,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MARYLAND_CRABBERY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</English>
-		<French>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</French>
-		<German>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Crabberies[COLOR_REVERT], the Marylander replacement for the [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT], increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</English>
+		<French>[COLOR_BUILDING_TEXT]Crabberies[COLOR_REVERT], the Marylander replacement for the [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT], increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</French>
+		<German>[COLOR_BUILDING_TEXT]Crabberies[COLOR_REVERT], the Marylander replacement for the [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT], increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Crabberies[COLOR_REVERT], the Marylander replacement for the [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT], increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Crabberies[COLOR_REVERT], the Marylander replacement for the [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT], increase that city's income from trade routes and increase that city's health from access to [COLOR_HIGHLIGHT_TEXT]Clam[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Crab[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Fish[COLOR_REVERT] resources. A [COLOR_BUILDING_TEXT]Wharf[COLOR_REVERT] is required to build the [COLOR_BUILDING_TEXT]Trafalgar Square[COLOR_REVERT] world wonder.</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -3762,16 +3762,116 @@
 		<Spanish>Common</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MASSACHUSETTS_COMMON</Tag>
-		<English>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</English>
-		<French>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</French>
-		<German>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Spanish>
+		<Tag>TXT_KEY_BUILDING_MASSACHUSETTS_COMMON_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT], the Massachusettsan replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT], the Massachusettsan replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT], the Massachusettsan replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT], the Massachusettsan replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT], the Massachusettsan replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], increase a city's cultural output. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Spanish>
 	</TEXT>
 	
-	
-	
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RHODE_ISLAND_CASTLE_HILL</Tag>
+		<English>Castle Hill</English>
+		<French>Castle Hill</French>
+		<German>Castle Hill</German>
+		<Italian>Castle Hill</Italian>
+		<Spanish>Castle Hill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RHODE_ISLAND_CASTLE_HILL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Castle Hill[COLOR_REVERT], the Rhode Islander replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], provides an extra trade route and Happiness.</English>
+		<French>[COLOR_BUILDING_TEXT]Castle Hill[COLOR_REVERT], the Rhode Islander replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], provides an extra trade route and Happiness.</French>
+		<German>[COLOR_BUILDING_TEXT]Castle Hill[COLOR_REVERT], the Rhode Islander replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], provides an extra trade route and Happiness.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Castle Hill[COLOR_REVERT], the Rhode Islander replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], provides an extra trade route and Happiness.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Castle Hill[COLOR_REVERT], the Rhode Islander replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], provides an extra trade route and Happiness.</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NORTH_CAROLINIAN_VINAIRGRERY</Tag>
+		<English>Vinairgrery</English>
+		<French>Vinairgrery</French>
+		<German>Vinairgrery</German>
+		<Italian>Vinairgrery</Italian>
+		<Spanish>Vinairgrery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NORTH_CAROLINIAN_VINAIRGRERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Vinairgreries[COLOR_REVERT], the North Carolinian replacement for the [COLOR_BUILDING_TEXT]Distillery[COLOR_REVERT], increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pig[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Vinairgreries[COLOR_REVERT], the North Carolinian replacement for the [COLOR_BUILDING_TEXT]Distillery[COLOR_REVERT], increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pig[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Vinairgreries[COLOR_REVERT], the North Carolinian replacement for the [COLOR_BUILDING_TEXT]Distillery[COLOR_REVERT], increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pig[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Vinairgreries[COLOR_REVERT], the North Carolinian replacement for the [COLOR_BUILDING_TEXT]Distillery[COLOR_REVERT], increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pig[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Vinairgreries[COLOR_REVERT], the North Carolinian replacement for the [COLOR_BUILDING_TEXT]Distillery[COLOR_REVERT], increase the city's healthiness and increase the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Sugar[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pig[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SOUTH_CAROLINIAN_LOWCOUNTRY_PLANTATION</Tag>
+		<English>Lowcountry Plantation</English>
+		<French>Lowcountry Plantation</French>
+		<German>Lowcountry Plantation</German>
+		<Italian>Lowcountry Plantation</Italian>
+		<Spanish>Lowcountry Plantation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SOUTH_CAROLINIAN_LOWCOUNTRY_PLANTATION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>MacAurther TODO</French>
+		<German>MacAurther TODO</German>
+		<Italian>MacAurther TODO</Italian>
+		<Spanish>MacAurther TODO</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEW_JERSEYAN_GARDEN</Tag>
+		<English>Garden</English>
+		<French>Garden</French>
+		<German>Garden</German>
+		<Italian>Garden</Italian>
+		<Spanish>Garden</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEW_JERSEYAN_GARDEN_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>MacAurther TODO</French>
+		<German>MacAurther TODO</German>
+		<Italian>MacAurther TODO</Italian>
+		<Spanish>MacAurther TODO</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEW_YORK_BOROUGH</Tag>
+		<English>Borough</English>
+		<French>Borough</French>
+		<German>Borough</German>
+		<Italian>Borough</Italian>
+		<Spanish>Borough</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEW_YORK_BOROUGH_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>MacAurther TODO</French>
+		<German>MacAurther TODO</German>
+		<Italian>MacAurther TODO</Italian>
+		<Spanish>MacAurther TODO</Spanish>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GEORGIAN_MILLDAM_PLANTATION</Tag>
+		<English>Milldam Plantation</English>
+		<French>Milldam Plantation</French>
+		<German>Milldam Plantation</German>
+		<Italian>Milldam Plantation</Italian>
+		<Spanish>Milldam Plantation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GEORGIAN_MILLDAM_PLANTATION_STRATEGY</Tag>
+		<English>MacAurther TODO</English>
+		<French>MacAurther TODO</French>
+		<German>MacAurther TODO</German>
+		<Italian>MacAurther TODO</Italian>
+		<Spanish>MacAurther TODO</Spanish>
+	</TEXT>
+
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English></English>
