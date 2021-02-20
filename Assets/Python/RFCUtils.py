@@ -1911,9 +1911,6 @@ class RFCUtils:
 		
 		fullKey = baseKey
 		
-		if iScenario == i1770AD: fullKey += "_1770AD"
-		elif iScenario == i1850AD: fullKey += "_1850AD"
-		
 		if bTitle:
 			fullKey += "_TITLE"
 		elif iGameSpeed < 2:
@@ -1957,6 +1954,8 @@ class RFCUtils:
 		
 		fullKey = baseKey
 		
+		if iScenario == i1770AD: fullKey += "_1770AD"
+		elif iScenario == i1850AD: fullKey += "_1850AD"
 		
 		translation = localText.getText(str(fullKey), ())
 		

@@ -31,8 +31,6 @@ def getScenarioTechs(iScenario, iPlayer):
 	for iScenarioType in reversed(range(iScenario+1)):
 		if iCivilization in lStartingTechs[iScenarioType]:
 			return lStartingTechs[iScenarioType][iCivilization].list()
-		#else: #debug
-			#return lStartingTechs[iScenarioType][iCivVirginia].list()	#Debug
 			
 def getStartingTechs(iPlayer):
 	return getScenarioTechs(utils.getScenario(), iPlayer)

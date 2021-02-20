@@ -313,7 +313,26 @@ dBirthAreaExceptions = tGenericAreaExceptions
 ### Core Area ###
 # This is Core Area
 # BL, TR
-tCoreArea = tGenericArea
+tCoreArea = (
+((105, 71),	(112, 78)),	# Spain
+((114, 70),	(119, 78)),	# France	TODO
+((125, 73),	(131, 79)),	# England	TODO
+((125, 37),	(132, 42)),	# Virginia
+((141, 59),	(145, 61)),	# Massachusetts
+((140, 63),	(141, 65)),	# New Hampshire
+((129, 43),	(131, 47)),	# Maryland
+((137, 56),	(140, 58)),	# Connecticut
+((141, 58),	(142, 59)),	# Rhode Island
+((125, 29),	(136, 36)),	# North Carolina
+((120, 23),	(126, 29)),	# South Carolina
+((133, 49),	(136, 55)),	# New Jersey
+((132, 55),	(136, 62)),	# New York
+((126, 49),	(133, 56)),	# Pennsylvania
+((132, 44),	(134, 48)),	# Delaware
+((116, 18),	(122, 23)),	# Georgia
+((23, 45),	(32, 50)),	# America	TODO
+((27, 50),	(35, 52)),	# Canada	TODO
+)
 
 dChangedCoreArea = {
 iSpain : 	((49, 40),	(55, 46)),

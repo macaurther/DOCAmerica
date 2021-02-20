@@ -81,7 +81,19 @@ def checkTurn(iGameTurn, iPlayer):
 		pass
 		
 	elif iPlayer == iVirginia:
-		pass
+		
+		# second goal: control Virginia, West Virginia, and Kentucky in 1763 AD
+		if iGameTurn == getTurnForYear(1763):
+			bVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iVirginia, False)) >= 5
+			bWestVirginia = False
+			bKentucky = False
+			# MacAurther TODO: Uncomment when WV and KY are added
+			#bWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False)) >= 3
+			#bKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False)) >= 2
+			if bVirginia and bWestVirginia and bKentucky:
+				win(iVirginia, 1)
+			else:
+				lose(iVirginia, 1)
 	
 	elif iPlayer == iMassachusetts:
 		pass
@@ -1856,7 +1868,13 @@ def getUHVHelp(iPlayer, iGoal):
 		if iGoal == 0:
 			aHelp.append("TODO ;)")
 		elif iGoal == 1:
-			aHelp.append("TODO ;)")
+			iCitiesVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iVirginia, False))
+			iCitiesWestVirginia = 0
+			iCitiesKentucky = 0
+			# MacAurther TODO: Uncomment when WV and KY are added
+			#iCitiesWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False))
+			#iCitiesKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False))
+			aHelp.append(getIcon(iCitiesVirginia >= 5) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_VIRGINIA", (iCitiesVirginia, 5)) + ' ' + getIcon(iCitiesWestVirginia >= 3) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_WEST_VIRGINIA", (iCitiesWestVirginia, 3)) + ' ' + getIcon(iCitiesKentucky >= 2) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_KENTUCKY", (iCitiesKentucky, 2)))
 		elif iGoal == 2:
 			aHelp.append("TODO ;)")
 
