@@ -96,7 +96,16 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iVirginia, 1)
 	
 	elif iPlayer == iMassachusetts:
-		pass
+		# first goal: control Massachusetts and Maine in 1660 AD
+		if iGameTurn == getTurnForYear(1660):
+			bMassachusetts = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMassachusetts, False)) >= 2
+			bMaine = False
+			# MacAurther TODO: Uncomment when ME is added
+			#bMaine = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMaine, False)) >= 2
+			if bMassachusetts and bMaine:
+				win(iMassachusetts, 0)
+			else:
+				lose(iMassachusetts, 0)
 	
 	elif iPlayer == iNewHampshire:
 		pass
@@ -111,7 +120,16 @@ def checkTurn(iGameTurn, iPlayer):
 		pass
 	
 	elif iPlayer == iNorthCarolina:
-		pass
+		# first goal: control North Carolina and Tennessee in 1796 AD
+		if iGameTurn == getTurnForYear(1796):
+			bNorthCarolina = getNumCitiesInArea(iNorthCarolina, Areas.getNormalArea(iNorthCarolina, False)) >= 5
+			bTennessee = False
+			# MacAurther TODO: Uncomment when TN is added
+			#bWestVirginia = getNumCitiesInArea(iNorthCarolina, Areas.getNormalArea(iTennessee, False)) >= 3
+			if bNorthCarolina and bTennessee:
+				win(iNorthCarolina, 0)
+			else:
+				lose(iNorthCarolina, 0)
 	
 	elif iPlayer == iSouthCarolina:
 		pass
@@ -129,7 +147,18 @@ def checkTurn(iGameTurn, iPlayer):
 		pass
 	
 	elif iPlayer == iGeorgia:
-		pass
+		# first goal: control Georgia, Alabama, and Mississippi in 1797 AD
+		if iGameTurn == getTurnForYear(1797):
+			bGeorgia = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iGeorgia, False)) >= 5
+			bAlabama = False
+			bMississippi = False
+			# MacAurther TODO: Uncomment when AL and MS are added
+			#bAlabama = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iAlabama, False)) >= 2
+			#bMississippi = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iMississippi, False)) >= 2
+			if bGeorgia and bAlabama and bMississippi:
+				win(iGeorgia, 0)
+			else:
+				lose(iGeorgia, 0)
 	
 	elif iPlayer == iAmerica:
 	
@@ -1880,7 +1909,11 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iMassachusetts:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			iCitiesMassachusetts = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMassachusetts, False))
+			iCitiesMaine = 0
+			# MacAurther TODO: Uncomment when ME is added
+			#iCitiesMaine = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMaine, False))
+			aHelp.append(getIcon(iCitiesMassachusetts >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MASSACHUSETTS", (iCitiesMassachusetts, 2)) + ' ' + getIcon(iCitiesMaine >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MAINE", (iCitiesMaine, 2)))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:
@@ -1920,7 +1953,11 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iNorthCarolina:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			iCitiesNorthCarolina = getNumCitiesInArea(iNorthCarolina, Areas.getNormalArea(iNorthCarolina, False))
+			iCitiesTennessee = 0
+			# MacAurther TODO: Uncomment when TN is added
+			#iCitiesTennessee = getNumCitiesInArea(iNorthCarolina, Areas.getNormalArea(iTennessee, False))
+			aHelp.append(getIcon(iCitiesNorthCarolina >= 5) + localText.getText("TXT_KEY_VICTORY_NORTH_CAROLINA_CONTROL_NORTH_CAROLINA", (iCitiesNorthCarolina, 5)) + ' ' + getIcon(iCitiesTennessee >= 3) + localText.getText("TXT_KEY_VICTORY_NORTH_CAROLINA_CONTROL_TENNESSEE", (iCitiesTennessee, 3)))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:
@@ -1968,7 +2005,13 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iGeorgia:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			iCitiesGeorgia = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iGeorgia, False))
+			iCitiesAlabama = 0
+			iCitiesMississippi = 0
+			# MacAurther TODO: Uncomment when AL and MS are added
+			#iCitiesAlabama = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iAlabama, False))
+			#iCitiesMississippi = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iMississippi, False))
+			aHelp.append(getIcon(iCitiesGeorgia >= 5) + localText.getText("TXT_KEY_VICTORY_GEORGIA_CONTROL_GEORGIA", (iCitiesGeorgia, 5)) + ' ' + getIcon(iCitiesAlabama >= 2) + localText.getText("TXT_KEY_VICTORY_GEORGIA_CONTROL_ALABAMA", (iCitiesAlabama, 2)) + ' ' + getIcon(iCitiesMississippi >= 2) + localText.getText("TXT_KEY_VICTORY_GEORGIA_CONTROL_MISSISSIPPI", (iCitiesMississippi, 2)))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:

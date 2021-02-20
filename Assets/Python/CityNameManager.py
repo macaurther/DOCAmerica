@@ -586,6 +586,7 @@ dIdentifiers = {
 	"Washinton"		:	"Washington",
 	"Waszyngton"		:	"Washington",
 	"Fort Kristina"		:	"Wilmington",
+	"Fort Christina"		:	"Wilmington",
 	"Nieuwer-Amstel"	:	"Wilmington",
 	"Wilmington"		:	"Wilmington",
 	"Fort Rouge"		:	"Winnipeg",
