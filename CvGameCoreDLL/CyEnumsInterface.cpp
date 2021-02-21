@@ -1008,6 +1008,7 @@ void CyEnumsPythonInterface()
 		.value("UNITAI_PARADROP", UNITAI_PARADROP)
 		.value("UNITAI_ATTACK_CITY_LEMMING", UNITAI_ATTACK_CITY_LEMMING)
 		.value("NUM_UNITAI_TYPES", NUM_UNITAI_TYPES)
+		.value("UNITAI_DEFENSE", UNITAI_DEFENSE)
 		;
 
 	python::enum_<InvisibleTypes>("InvisibleTypes")

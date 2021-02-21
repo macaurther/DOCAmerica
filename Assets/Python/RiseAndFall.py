@@ -368,15 +368,43 @@ class RiseAndFall:
 	def placeGoodyHuts(self):
 			
 		if utils.getScenario() == i1600AD:
-			#MacAurther TODO: Find some fun places for goody huts
-			self.placeHut((101, 38), (107, 41)) # Southern China
-			self.placeHut((62, 45), (67, 50)) # Balkans
-			self.placeHut((69, 42), (76, 46)) # Asia Minor
+			#East Coast Tribes
+			self.placeHut((140, 69), (144, 73)) # Pennacook
+			self.placeHut((135, 35), (139, 69)) # Mahican
+			self.placeHut((136, 60), (139, 63)) # Wampanoag
+			self.placeHut((128, 57), (132, 61)) # Mohawk
+			self.placeHut((125, 55), (127, 59)) # Oneida
+			self.placeHut((122, 55), (124, 58)) # Onondaga
+			self.placeHut((120, 47), (125, 51)) # Susquehannock
+			self.placeHut((132, 43), (134, 45)) # Lenni-Lenape
+			self.placeHut((126, 40), (128, 41)) # Powhatan
+			self.placeHut((131, 32), (134, 34)) # Tuscarora
+			self.placeHut((121, 33), (126, 37)) # Tutelo
+			self.placeHut((111, 25), (116, 30)) # Cherokee
+			self.placeHut((119, 26), (122, 30)) # Catawba
+			self.placeHut((118, 21), (120, 24)) # Yamasee
+			self.placeHut((108, 20), (111, 23)) # Creek
+			self.placeHut((117, 15), (118, 17)) # Timucua
+			self.placeHut((112, 16), (114, 19)) # Apalachee
+			self.placeHut((122, 5), (124, 9)) # Calusa
 		
-		self.placeHut((107, 19), (116, 22)) # Northern Australia
-		self.placeHut((114, 10), (118, 17)) # Western Australia
-		self.placeHut((120, 5), (123, 11)) # New Zealand
-		self.placeHut((59, 25), (67, 28)) # Central Africa
+		if utils.getScenario() <= i1770AD:
+			#Mid-West Tribes
+			self.placeHut((107, 54), (110, 58)) # Potawatomi
+			self.placeHut((105, 47), (109, 50)) # Miami
+			self.placeHut((113, 46), (116, 48)) # Erie
+			self.placeHut((105, 34), (108, 37)) # Shawnee
+			self.placeHut((100, 40), (104, 43)) # Illinois
+			self.placeHut((99, 51), (101, 55)) # Winnebago
+			self.placeHut((99, 23), (103, 26)) # Chickasaw
+			self.placeHut((101, 17), (104, 20)) # Biloxi
+			self.placeHut((96, 17), (99, 20)) # Natchez
+			self.placeHut((92, 20), (95, 23)) # Caddo
+			self.placeHut((91, 14), (93, 17)) # Atakapa
+		
+		#Western Tribes
+		# MacAurther TODO
+
 		
 	def adjustReligionFoundingDates(self):
 		lReligionFoundingYears = [-2000, 40, 500, 1521, 622, -1500, 80, -500, -400, -600]
@@ -1869,6 +1897,9 @@ class RiseAndFall:
 		i, j = tPlot
 		
 		gc.getMap().plot(i, j).setImprovementType(iHut)
+		
+		#MacAurther: Also place a defending archer on the hut to make more difficult to get (i.e. need to send a conquering force)
+		utils.makeUnitAI(iArcher, iNative, tPlot, UnitAITypes.UNITAI_DEFENSE, 1)
 		
 	def setStateReligion(self, iCiv):
 		lCities = utils.getAreaCities(Areas.getCoreArea(iCiv))

@@ -29,6 +29,16 @@ tMinorStates = (
 	(1600, 1700, (113, 48), [iArcher, iSwordsman]),	# Powhatan
 )
 
+# Native Spawn Areas
+tEastVABR = (128, 37)
+tEastVATL = (130, 41)
+tEastMABR = (140, 59)
+tEastMATL = (143, 62)
+tEastNHBR = (139, 62)
+tEastNHTL = (142, 66)
+tCNBR = (137, 56)
+tCNTL = (141, 60)
+
 #handicap level modifier
 iHandicapOld = (gc.getGame().getHandicapType() - 1)
 
@@ -53,7 +63,33 @@ class Barbs:
 
 		#American natives
 		# MacAurther TODO
-		if utils.isYearIn(600, 1100):
+		if iGameTurn == getTurnForYear(1610): #Powhatan War I
+			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
+		if iGameTurn == getTurnForYear(1622): #Powhatan War II
+			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
+		if iGameTurn == getTurnForYear(1636): #Pequot War
+			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 1 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
+		if iGameTurn == getTurnForYear(1644): #Powhatan War III
+			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
+		if iGameTurn == getTurnForYear(1675): #King Phillip's War
+			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 2 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastNHBR, tEastNHTL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastNHBR, tEastNHTL, self.spawnUprising, iGameTurn, 1, 0)
+		
+		
+		
+		
+		
+		#MacAurther: Old Natives
+		'''if utils.isYearIn(600, 1100):
 			self.checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 20, 0)
 		if utils.isYearIn(1300, 1600):
 			self.checkSpawn(iNative, iDogSoldier, 2 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 8, 0)
@@ -73,13 +109,13 @@ class Barbs:
 				self.checkSpawn(iNative, iMountedBrave, 1 + iHandicap, (15, 44), (24, 52), self.spawnNomads, iGameTurn, 12 - iHandicap, 2)
 			
 			if utils.isYearIn(1500, 1850):
-				self.checkSpawn(iNative, iMohawk, 1, (24, 46), (30, 51), self.spawnUprising, iGameTurn, 8, 4)
+				self.checkSpawn(iNative, iMohawk, 1, (24, 46), (30, 51), self.spawnUprising, iGameTurn, 8, 4)'''
 				
 
 		#pirates in the Caribbean
 		# MacAurther TODO
-		if utils.isYearIn(1600, 1800):
-			self.checkSpawn(iNative, iPrivateer, 1, (24, 32), (35, 46), self.spawnPirates, iGameTurn, 5, 0)
+		if utils.isYearIn(1650, 1800):
+			self.checkSpawn(iNative, iPrivateer, 1, (122, 0), (126, 2), self.spawnPirates, iGameTurn, 5, 0)
 
 		if iGameTurn < getTurnForYear(tMinorCities[len(tMinorCities)-1][0])+10:
 			self.foundMinorCities(iGameTurn)
@@ -341,7 +377,7 @@ class Barbs:
 		tPlot = utils.getRandomEntry(lPlots)
 		
 		if tPlot:
-			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK, iNumUnits, sAdj)
+			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_PILLAGE, iNumUnits, sAdj)
 			
 	def includesActiveHuman(self, lPlayers):
 		return utils.getHumanID() in lPlayers and tBirth[utils.getHumanID()] <= gc.getGame().getGameTurnYear()

@@ -1549,6 +1549,7 @@ enum UnitAITypes			// Exposed to Python
 	UNITAI_STATESMAN, // Leoreth
 	UNITAI_PERSECUTOR, // Leoreth
 	UNITAI_SATELLITE, // Leoreth
+	UNITAI_DEFENSE, // MacAurther: Just sit where you spawned; do not contribute to warplan
 
 	NUM_UNITAI_TYPES
 };

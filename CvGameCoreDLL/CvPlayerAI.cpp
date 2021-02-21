@@ -1595,6 +1595,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_STATESMAN:
 	case UNITAI_SPY:
 	case UNITAI_ATTACK_CITY_LEMMING:
+	case UNITAI_DEFENSE:
 		return DOMAIN_LAND;
 		break;
 
@@ -8731,6 +8732,10 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 				}
 			}
 
+		case UNITAI_DEFENSE:
+			bValid = false;
+			break;
+
 		default:
 			FAssert(false);
 			break;
@@ -9164,6 +9169,9 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 				iValue += 50;
 			}
 		}
+
+	case UNITAI_DEFENSE:
+		break;
 
 	default:
 		FAssert(false);
@@ -19371,7 +19379,11 @@ int CvPlayerAI::AI_getUnitEnabledValue(UnitTypes eUnit,
 
 		case UNITAI_SATELLITE:
 			iValue += 400;
+			break;
 
+		case UNITAI_DEFENSE:
+			break;
+		
 		default:
 			FAssert(false);
 			break;

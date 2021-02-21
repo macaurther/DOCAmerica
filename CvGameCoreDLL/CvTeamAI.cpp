@@ -4521,6 +4521,9 @@ int CvTeamAI::AI_getTechMonopolyValue(TechTypes eTech, TeamTypes eTeam) const
 						iValue += 50;
 						break;
 
+					case UNITAI_DEFENSE:
+						break;
+					
 					default:
 						FAssert(false);
 						break;

@@ -407,6 +407,9 @@ bool CvUnitAI::AI_update()
 			AI_satelliteMove();
 			break;
 
+		case UNITAI_DEFENSE:
+			break;
+
 		default:
 			FAssert(false);
 			break;
