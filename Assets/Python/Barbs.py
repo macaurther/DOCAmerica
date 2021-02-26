@@ -114,7 +114,7 @@ class Barbs:
 
 		#pirates in the Caribbean
 		# MacAurther TODO
-		if utils.isYearIn(1650, 1800):
+		if utils.isYearIn(1700, 1800):
 			self.checkSpawn(iNative, iPrivateer, 1, (122, 0), (126, 2), self.spawnPirates, iGameTurn, 5, 0)
 
 		if iGameTurn < getTurnForYear(tMinorCities[len(tMinorCities)-1][0])+10:

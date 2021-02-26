@@ -3084,7 +3084,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_HUMANITIES</PrereqTech>
+				<PrereqTech>TECH_HERITAGE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>

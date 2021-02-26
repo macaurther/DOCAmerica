@@ -320,7 +320,7 @@ tCoreArea = (
 ((125, 37),	(132, 42)),	# Virginia
 ((141, 59),	(145, 61)),	# Massachusetts
 ((140, 63),	(141, 65)),	# New Hampshire
-((129, 43),	(131, 47)),	# Maryland
+((127, 43),	(131, 47)),	# Maryland
 ((137, 56),	(140, 58)),	# Connecticut
 ((141, 58),	(142, 59)),	# Rhode Island
 ((125, 29),	(136, 36)),	# North Carolina
