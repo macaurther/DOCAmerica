@@ -923,20 +923,212 @@
 	</TEXT>
 	<!-- MacAurther: States -->
 	<TEXT>
-		<Tag>TXT_KEY_UP_VIR_TITLE</Tag>
+		<Tag>TXT_KEY_UP_VA_TITLE</Tag>
 		<English>The Power of the Old Dominion:</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>The Power of the Old Dominion:</French>
+		<German>The Power of the Old Dominion:</German>
+		<Italian>The Power of the Old Dominion:</Italian>
+		<Spanish>The Power of the Old Dominion:</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UP_VIR</Tag>
+		<Tag>TXT_KEY_UP_VA</Tag>
 		<English>+100% Great People birth rate until the end of the Revolutionary Era</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>+100% Great People birth rate until the end of the Revolutionary Era</French>
+		<German>+100% Great People birth rate until the end of the Revolutionary Era</German>
+		<Italian>+100% Great People birth rate until the end of the Revolutionary Era</Italian>
+		<Spanish>+100% Great People birth rate until the end of the Revolutionary Era</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MA_TITLE</Tag>
+		<English>The Power of the Pilgrim State:</English>
+		<French>The Power of the Pilgrim State:</French>
+		<German>The Power of the Pilgrim State:</German>
+		<Italian>The Power of the Pilgrim State:</Italian>
+		<Spanish>The Power of the Pilgrim State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NH_TITLE</Tag>
+		<English>The Power of the Granite State:</English>
+		<French>The Power of the Granite State:</French>
+		<German>The Power of the Granite State:</German>
+		<Italian>The Power of the Granite State:</Italian>
+		<Spanish>The Power of the Granite State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NH</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MD_TITLE</Tag>
+		<English>The Power of the Free State:</English>
+		<French>The Power of the Free State:</French>
+		<German>The Power of the Free State:</German>
+		<Italian>The Power of the Free State:</Italian>
+		<Spanish>The Power of the Free State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MD</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CN_TITLE</Tag>
+		<English>The Power of the Constitution State:</English>
+		<French>The Power of the Constitution State:</French>
+		<German>The Power of the Constitution State:</German>
+		<Italian>The Power of the Constitution State:</Italian>
+		<Spanish>The Power of the Constitution State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CN</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_RI_TITLE</Tag>
+		<English>The Power of the Ocean State:</English>
+		<French>The Power of the Ocean State:</French>
+		<German>The Power of the Ocean State:</German>
+		<Italian>The Power of the Ocean State:</Italian>
+		<Spanish>The Power of the Ocean State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_RI</Tag>
+		<English>Oceans produce additional Food and Commerce</English>
+		<French>Oceans produce additional Food and Commerce</French>
+		<German>Oceans produce additional Food and Commerce</German>
+		<Italian>Oceans produce additional Food and Commerce</Italian>
+		<Spanish>Oceans produce additional Food and Commerce</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NC_TITLE</Tag>
+		<English>The Power of the Old North:</English>
+		<French>The Power of the Old North:</French>
+		<German>The Power of the Old North:</German>
+		<Italian>The Power of the Old North:</Italian>
+		<Spanish>The Power of the Old North:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NC</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_SC_TITLE</Tag>
+		<English>The Power of the Palmetto State:</English>
+		<French>The Power of the Palmetto State:</French>
+		<German>The Power of the Palmetto State:</German>
+		<Italian>The Power of the Palmetto State:</Italian>
+		<Spanish>The Power of the Palmetto State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_SC</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NJ_TITLE</Tag>
+		<English>The Power of the Garden State:</English>
+		<French>The Power of the Garden State:</French>
+		<German>The Power of the Garden State:</German>
+		<Italian>The Power of the Garden State:</Italian>
+		<Spanish>The Power of the Garden State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NJ</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NY_TITLE</Tag>
+		<English>The Power of the Empire State:</English>
+		<French>The Power of the Empire State:</French>
+		<German>The Power of the Empire State:</German>
+		<Italian>The Power of the Empire State:</Italian>
+		<Spanish>The Power of the Empire State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PA_TITLE</Tag>
+		<English>The Power of the Keystone State:</English>
+		<French>The Power of the Keystone State:</French>
+		<German>The Power of the Keystone State:</German>
+		<Italian>The Power of the Keystone State:</Italian>
+		<Spanish>The Power of the Keystone State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_DE_TITLE</Tag>
+		<English>The Power of the First State:</English>
+		<French>The Power of the First State:</French>
+		<German>The Power of the First State:</German>
+		<Italian>The Power of the First State:</Italian>
+		<Spanish>The Power of the First State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_DE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_GA_TITLE</Tag>
+		<English>The Power of the Peach State:</English>
+		<French>The Power of the Peach State:</French>
+		<German>The Power of the Peach State:</German>
+		<Italian>The Power of the Peach State:</Italian>
+		<Spanish>The Power of the Peach State:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_GA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	
 </Civ4GameText>

@@ -26,7 +26,8 @@
 #America HERE + in CvCity::getCulturePercentAnger()
 
 #MacAurther: States:
-#Virginia CvCity:getGreatPeopleRate()
+#Virginia in CvCity:getGreatPeopleRate()
+#Rhode Island  in CvPlot::calculateNatureYield()
 
 from CvPythonExtensions import *
 import CvUtil

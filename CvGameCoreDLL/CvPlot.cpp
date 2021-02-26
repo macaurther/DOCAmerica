@@ -1684,6 +1684,7 @@ bool CvPlot::isLake() const
 
 	pArea = area();
 
+	//MacAurther TODO:
 	//Rhye - start (salt lake)
 	int saltLakePlots[13][2] = {
 	{76, 43}, //Van
@@ -6780,6 +6781,23 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 			iYield += GC.getFeatureInfo(getFeatureType()).getYieldChange(eYield);
 		}
 	}
+
+	//MacAurther - start Rhode Island UP
+	if (isWater())
+	{
+		if (eTeam == RHODE_ISLAND)
+		{
+			if (eYield == YIELD_FOOD) 
+			{
+				iYield += 1;
+			}
+			if (eYield == YIELD_COMMERCE)
+			{
+				iYield += 1;
+			}
+		}
+	}
+	//MacAurther - end Rhode Island UP
 
 	return std::max(0, iYield);
 }
