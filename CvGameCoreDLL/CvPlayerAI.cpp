@@ -10714,15 +10714,15 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	}*/
 
 	// Leoreth: some stability related AI help
-	//MacAurther TODO: Civics
-	/*if (eCivic == CIVIC_TOLERANCE || eCivic == CIVIC_SECULARISM)
+	// MacAurther: Modified for USA Civics
+	if (eCivic == CIVIC_MELTING_POT || eCivic == CIVIC_MULTICULTURISM)
 	{
 		if (getStabilityParameter(PARAMETER_RELIGION) < 0)
 		{
 			iValue += 15 * -getStabilityParameter(PARAMETER_RELIGION);
 		}
 	}
-	else if (eCivic == CIVIC_CENTRAL_PLANNING)
+	else if (eCivic == CIVIC_OUTSOURCING || CIVIC_AUTOMATION)
 	{
 		if (getStabilityParameter(PARAMETER_ECONOMIC_GROWTH) < 15)
 		{
@@ -10743,48 +10743,52 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 			iValue += 5 * -getStabilityParameter(PARAMETER_ECONOMIC_GROWTH);
 		}
 	}
-	else if (eCivic == CIVIC_VASSALAGE)
-	{
-		if (getCurrentEra() >= ERA_INDUSTRIAL)
-		{
-			iValue *= 3;
-			iValue /= 4;
-		}
-	}
-	else if (eCivic == CIVIC_DEIFICATION)
+	else if (eCivic == CIVIC_ROYAL_COLONY || eCivic == CIVIC_MERCANTILISM)
 	{
 		if (getCurrentEra() >= ERA_EXPANSION)
 		{
 			iValue /= 2;
 		}
 	}
-	else if (eCivic == CIVIC_REDISTRIBUTION)
+	else if (eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_HAVEN || eCivic == CIVIC_PENAL_COLONY || eCivic == CIVIC_HEADRIGHT)
 	{
-		if (getCurrentEra() >= ERA_EXPLORATION)
+		if (getCurrentEra() >= ERA_REVOLUTIONARY)
+		{
+			iValue /= 2;
+		}
+	}
+	else if (eCivic == CIVIC_SLAVERY)
+	{
+		if (getCurrentEra() >= ERA_INDUSTRIAL)
+		{
+			iValue /= 2;
+		}
+		if (getCurrentEra() >= ERA_MODERN)
 		{
 			iValue /= 2;
 		}
 	}
 
 	// Leoreth: boost some modern civics as soon as available
+	// MacAurther: Modified for USA civics
 	switch (eCivic)
 	{
-	case CIVIC_REVOLUTIONISM:
-	case CIVIC_CONSTITUTION:
-	case CIVIC_INDIVIDUALISM:
-	case CIVIC_TOTALITARIANISM:
-	case CIVIC_EGALITARIANISM:
-	case CIVIC_FREE_ENTERPRISE:
-	case CIVIC_CENTRAL_PLANNING:
+	case CIVIC_FEDERALISM:
+	case CIVIC_WORKERS_RIGHTS:
+	case CIVIC_INDUSTRIALISM:
+	case CIVIC_OUTSOURCING:
+	case CIVIC_CONSUMERISM:
+	case CIVIC_MELTING_POT:
+	case CIVIC_MULTICULTURISM:
 	case CIVIC_PUBLIC_WELFARE:
-	case CIVIC_NATIONHOOD:
-	case CIVIC_MULTILATERALISM:
+	case CIVIC_SUBURBANISM:
+	case CIVIC_GENTRIFICATION:
 		iValue *= 6;
 		iValue /= 5;
 		break;
-	case CIVIC_TOLERANCE:
-	case CIVIC_SECULARISM:
-		if (getCurrentEra() >= ERA_INFORMATION)
+	case CIVIC_AUTOMATION:
+	case CIVIC_UNIVERSAL_SUFFERAGE:
+		if (getCurrentEra() >= ERA_MODERN)
 		{
 			iValue *= 6;
 			iValue /= 5;
@@ -10804,6 +10808,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		}
 	}
 
+	/*
 	// Leoreth: prefer deification if no state religion
 	if (eCivic == CIVIC_DEIFICATION)
 	{
@@ -10819,12 +10824,13 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 			break;
 		}
 	}
+	*/
 
 	if (AI_isDoStrategy(AI_STRATEGY_CULTURE2) && (GC.getCivicInfo(eCivic).isNoNonStateReligionSpread()))
 	{
 	    iValue /= 10;
 	}
-	*/
+	
 	// Leoreth: take American UP into account
 	// MacAurther TODO: Cleanup or reuse
 	/*if (getID() == AMERICA)
