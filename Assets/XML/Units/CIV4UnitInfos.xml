@@ -2726,7 +2726,7 @@
 			<FormationType>FORMATION_TYPE_RANGED</FormationType>
 			<FreePromotions>
 				<FreePromotion>
-					<PromotionType>PROMOTION_LEADER</PromotionType>
+					<PromotionType>PROMOTION_LEADERSHIP</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
