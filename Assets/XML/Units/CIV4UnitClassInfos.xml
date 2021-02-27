@@ -470,28 +470,28 @@
 			<DefaultUnit>UNIT_MORTAR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_CANNON</Type>
-			<Description>TXT_KEY_UNIT_CANNON</Description>
+			<Type>UNITCLASS_EARLY_CANNON</Type>
+			<Description>TXT_KEY_UNIT_EARLY_CANNON</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_CANNON</DefaultUnit>
+			<DefaultUnit>UNIT_EARLY_CANNON</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LIGHT_ARTILLERY</Type>
-			<Description>TXT_KEY_UNIT_LIGHT_ARTILLERY</Description>
+			<Type>UNITCLASS_LIGHT_CANNON</Type>
+			<Description>TXT_KEY_UNIT_LIGHT_CANNON</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_LIGHT_ARTILLERY</DefaultUnit>
+			<DefaultUnit>UNIT_LIGHT_CANNON</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_HEAVY_ARTILLERY</Type>
-			<Description>TXT_KEY_UNIT_HEAVY_ARTILLERY</Description>
+			<Type>UNITCLASS_HEAVY_CANNON</Type>
+			<Description>TXT_KEY_UNIT_HEAVY_CANNON</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_HEAVY_ARTILLERY</DefaultUnit>
+			<DefaultUnit>UNIT_HEAVY_CANNON</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_ARTILLERY</Type>

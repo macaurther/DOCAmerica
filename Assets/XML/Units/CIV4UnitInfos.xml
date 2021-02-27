@@ -4224,7 +4224,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_CANNON</FlankingStrikeUnitClass>
+					<FlankingStrikeUnitClass>UNITCLASS_EARLY_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 			</FlankingStrikes>
@@ -4325,7 +4325,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_CANNON</FlankingStrikeUnitClass>
+					<FlankingStrikeUnitClass>UNITCLASS_EARLY_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 			</FlankingStrikes>
@@ -4596,7 +4596,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_CANNON</FlankingStrikeUnitClass>
+					<FlankingStrikeUnitClass>UNITCLASS_EARLY_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
@@ -4653,7 +4653,7 @@
 			<iPlainsDefense>25</iPlainsDefense>
 			<UnitClassAttackMods>
 				<UnitClassAttackMod>
-					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+					<UnitClassType>UNITCLASS_EARLY_CANNON</UnitClassType>
 					<iUnitClassMod>50</iUnitClassMod>
 				</UnitClassAttackMod>
 				<UnitClassAttackMod>
@@ -4878,7 +4878,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_CANNON</FlankingStrikeUnitClass>
+					<FlankingStrikeUnitClass>UNITCLASS_EARLY_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
@@ -4940,7 +4940,7 @@
 					<iUnitClassMod>50</iUnitClassMod>
 				</UnitClassAttackMod>
 				<UnitClassAttackMod>
-					<UnitClassType>UNITCLASS_CANNON</UnitClassType>
+					<UnitClassType>UNITCLASS_EARLY_CANNON</UnitClassType>
 					<iUnitClassMod>50</iUnitClassMod>
 				</UnitClassAttackMod>
 				<UnitClassAttackMod>
@@ -4999,7 +4999,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_CANNON</FlankingStrikeUnitClass>
+					<FlankingStrikeUnitClass>UNITCLASS_EARLY_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
@@ -5108,7 +5108,7 @@
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_CANNON</FlankingStrikeUnitClass>
+					<FlankingStrikeUnitClass>UNITCLASS_EARLY_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
@@ -5373,7 +5373,7 @@
 			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
 			<FlankingStrikes>
 				<FlankingStrike>
-					<FlankingStrikeUnitClass>UNITCLASS_CANNON</FlankingStrikeUnitClass>
+					<FlankingStrikeUnitClass>UNITCLASS_EARLY_CANNON</FlankingStrikeUnitClass>
 					<iFlankingStrength>100</iFlankingStrength>
 				</FlankingStrike>
 				<FlankingStrike>
@@ -5459,7 +5459,7 @@
 			<bMechanized>1</bMechanized>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_CANNON</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_EARLY_CANNON</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5545,7 +5545,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_HEAVY_ARTILLERY</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_HEAVY_CANNON</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5613,14 +5613,14 @@
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_CANNON</Class>
-			<Type>UNIT_CANNON</Type>
+			<Class>UNITCLASS_EARLY_CANNON</Class>
+			<Type>UNIT_EARLY_CANNON</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_CANNON</Description>
-			<Civilopedia>TXT_KEY_UNIT_CANNON_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_CANNON_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_EARLY_CANNON</Description>
+			<Civilopedia>TXT_KEY_UNIT_EARLY_CANNON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_EARLY_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -5695,20 +5695,20 @@
 				<iRangedWaveSize>2</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CANNON</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_EARLY_CANNON</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_LIGHT_ARTILLERY</Class>
-			<Type>UNIT_LIGHT_ARTILLERY</Type>
+			<Class>UNITCLASS_LIGHT_CANNON</Class>
+			<Type>UNIT_LIGHT_CANNON</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_LIGHT_ARTILLERY</Description>
-			<Civilopedia>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_LIGHT_ARTILLERY_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_LIGHT_CANNON</Description>
+			<Civilopedia>TXT_KEY_UNIT_LIGHT_CANNON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_LIGHT_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -5717,7 +5717,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_CANNON</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_EARLY_CANNON</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5782,20 +5782,20 @@
 				<iRangedWaveSize>2</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_LIGHT_ARTILLERY</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_LIGHT_CANNON</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_HEAVY_ARTILLERY</Class>
-			<Type>UNIT_HEAVY_ARTILLERY</Type>
+			<Class>UNITCLASS_HEAVY_CANNON</Class>
+			<Type>UNIT_HEAVY_CANNON</Type>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_HEAVY_ARTILLERY</Description>
-			<Civilopedia>TXT_KEY_UNIT_HEAVY_ARTILLERY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_HEAVY_ARTILLERY_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_HEAVY_CANNON</Description>
+			<Civilopedia>TXT_KEY_UNIT_HEAVY_CANNON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_HEAVY_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -5804,7 +5804,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_CANNON</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_EARLY_CANNON</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -5870,7 +5870,7 @@
 				<iRangedWaveSize>2</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_HEAVY_ARTILLERY</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_HEAVY_CANNON</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>

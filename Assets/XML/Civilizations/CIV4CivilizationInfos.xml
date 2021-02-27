@@ -442,7 +442,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
+					<UnitClassType>UNITCLASS_LINE_INFANTRY</UnitClassType>
 					<UnitType>UNIT_ENGLISH_REDCOAT</UnitType>
 				</Unit>
 				<Unit>

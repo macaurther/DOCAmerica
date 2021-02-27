@@ -382,8 +382,8 @@ class CvRFCEventHandler:
 	def onPlayerSlaveTrade(self, argsList):
 		iPlayer, iGold = argsList
 		
-		if iPlayer == iCongo:
-			vic.onPlayerSlaveTrade(iPlayer, iGold)
+		#if iPlayer == iCongo:
+		#	vic.onPlayerSlaveTrade(iPlayer, iGold)
 			
 	def onUnitGifted(self, argsList):
 		pUnit, iOwner, pPlot = argsList

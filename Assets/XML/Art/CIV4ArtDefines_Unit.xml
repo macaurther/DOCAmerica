@@ -1845,15 +1845,15 @@
 			<ActionSound>AS3D_UN_CATAPULT_FORT</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_CANNON</Type>
+			<Type>ART_DEF_UNIT_EARLY_CANNON</Type>
 			<Button>,Art/Interface/Buttons/Units/Cannon.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,6,8</Button>
 			<fScale>0.53</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Cannon/Cannon.nif</NIF>
+			<NIF>Art/Units/Imperial_Cannon/cannon.nif</NIF>
 			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units/Cannon/Cannon_FX.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Imperial_Cannon/cannon.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
 				<ShadowAttachNode/>
@@ -4407,27 +4407,6 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_ASIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Militia/Asian/koreanspearman.nif</NIF>
-			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
-			<SHADERNIF>Art/Units/Militia/Asian/koreanspearman.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds/>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_WORKER_ANCIENT_ASIAN</Type>
 			<Button>,Art/Interface/Buttons/Units/Worker.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,5</Button>
 			<fScale>0.44</fScale>
@@ -5648,27 +5627,6 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</Type>
-			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Militia/South_American/spearman.nif</NIF>
-			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
-			<SHADERNIF>Art/Units/Militia/South_American/spearman.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds/>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_WORKER_ANCIENT_SOUTH_AMERICAN</Type>
 			<Button>,Art/Interface/Buttons/Units/Worker.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,5</Button>
 			<fScale>0.44</fScale>
@@ -6333,14 +6291,14 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AMERICAN_MINUTEMAN</Type>
-			<Button>Art/Units/Minuteman/Minuteman.dds</Button>
+			<Button>,Art/Interface/Buttons/Units/Militia.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Minuteman/Bluecoat.nif</NIF>
-			<KFM>Art/Units/Minuteman/Bluecoat.kfm</KFM>
-			<SHADERNIF>Art/Units/Minuteman/Bluecoat.nif</SHADERNIF>
+			<NIF>Art/Units/Militia/Browncoat.nif</NIF>
+			<KFM>Art/Units/Militia/Browncoat.kfm</KFM>
+			<SHADERNIF>Art/Units/Militia/Browncoat.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -7643,30 +7601,6 @@
 			<NIF>Art/Units/Aztec Pikeman/AztecPikemanfinal.nif</NIF>
 			<KFM>Art/Units/Charlemagne_HeavySpearman/HeavySpearman.kfm</KFM>
 			<SHADERNIF>Art/Units/Aztec Pikeman/AztecPikemanfinal.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_AFRICAN</Type>
-			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/African_Warrior/warrior2.nif</NIF>
-			<KFM>Art/Units/Warrior/Warrior.kfm</KFM>
-			<SHADERNIF>Art/Units/African_Warrior/warrior2.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9289,7 +9223,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AMERICAN_PIONEER</Type>
-			<Button>Art/Units/Pioneer/Pioneer.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Pioneer.dds</Button>
 			<fScale>0.3</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9496,11 +9430,11 @@
             <fInterfaceScale>0.7</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Ships_Transport/Brigantine/Brigantine.nif</NIF>
+			<NIF>Art/Units/Galleon/Galleon_FX.nif</NIF>
 			<KFM>Art/Units/Galleon/Galleon.kfm</KFM>
-			<SHADERNIF>Art/Units/Ships_Transport/Brigantine/Brigantine.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Galleon/Galleon_FX.nif</SHADERNIF>
 			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/TransportShadow.nif</ShadowNIF>
+				<ShadowNIF>Art/Units/01_UnitShadows/GalleonShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
 				<fShadowScale>1.0</fShadowScale>
 			</ShadowDef>
@@ -9529,18 +9463,18 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CONTINENTAL</Type>
-			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/colonization_atlas_military.dds,3,15</Button>
-			<fScale>0.46</fScale>
-			<fInterfaceScale>0.95</fInterfaceScale>
+			<Button>,Art/Interface/Buttons/Units/Continental_Regular.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Special_Military/continental_guard/rifleman/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
-			<SHADERNIF>Art/Units/Special_Military/continental_guard/rifleman/Veteran_Musketman.nif</SHADERNIF>
+			<NIF>Art/Units/Continental_Regular/Bluecoat.nif</NIF>
+			<KFM>Art/Units/Continental_Regular/Bluecoat.kfm</KFM>
+			<SHADERNIF>Art/Units/Continental_Regular/Bluecoat.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>0.9</fShadowScale>
+				<fShadowScale>1.0</fShadowScale>
 			</ShadowDef>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
@@ -9608,15 +9542,15 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_HEAVY_ARTILLERY</Type>
+			<Type>ART_DEF_UNIT_HEAVY_CANNON</Type>
 			<Button>,Art/Interface/Buttons/Units/Cannon.dds,Art/Interface/Buttons/colonization_atlas_military.dds,6,5</Button>
 			<fScale>0.53</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</SHADERNIF>
+			<NIF>Art/Units/EarlyCannon/cannon.nif</NIF>
+			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
+			<SHADERNIF>Art/Units/EarlyCannon/cannon_fx.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
 				<ShadowAttachNode/>
@@ -9661,15 +9595,15 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_LIGHT_ARTILLERY</Type>
+			<Type>ART_DEF_UNIT_LIGHT_CANNON</Type>
 			<Button>,Art/Interface/Buttons/Units/Cannon.dds,Art/Interface/Buttons/colonization_atlas_military.dds,6,6</Button>
 			<fScale>0.53</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.nif</SHADERNIF>
+			<NIF>Art/Units/CannonAmerican/American Foot.nif</NIF>
+			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
+			<SHADERNIF>Art/Units/CannonAmerican/American Foot.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
 				<ShadowAttachNode/>
@@ -9768,18 +9702,18 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MILITIA</Type>
-			<Button>,Art/Interface/Buttons/Units/Rifleman.dds,Art/Interface/Buttons/colonization_atlas_military.dds,4,4</Button>
+			<Button>,Art/Interface/Buttons/Units/Militia.dds,Art/Interface/Buttons/colonization_atlas_military.dds,4,4</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Special_Military/settler_militia/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
-			<SHADERNIF>Art/Units/Special_Military/settler_militia/Imperial_Musketman.nif</SHADERNIF>
+			<NIF>Art/Units/MinutemanRoland/redcoat.nif</NIF>
+            <KFM>Art/Units/MinutemanRoland/redcoat.kfm</KFM>
+			<SHADERNIF>Art/Units/MinutemanRoland/redcoat.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>0.9</fShadowScale>
+				<fShadowScale>1.0</fShadowScale>
 			</ShadowDef>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
@@ -9790,8 +9724,8 @@
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_SLOOP</Type>
 			<Button>,Art/Interface/Buttons/Units/Frigate.dds,Art/Interface/Buttons/colonization_atlas_military.dds,8,17</Button>
-			<fScale>0.67</fScale>
-			<fInterfaceScale>0.25</fInterfaceScale>
+			<fScale>0.22</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
 			<NIF>Art/Units/Ships_Transport/Sloop/Sloop.nif</NIF>

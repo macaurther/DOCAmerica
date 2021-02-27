@@ -12871,7 +12871,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_CANNON</UnitClass>
+					<UnitClass>UNITCLASS_EARLY_CANNON</UnitClass>
 					<UnitPromotion>PROMOTION_COMBAT1</UnitPromotion>
 				</UnitClassPromotion>
 				<UnitClassPromotion>

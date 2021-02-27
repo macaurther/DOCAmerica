@@ -554,7 +554,7 @@
 		<Spanish>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry three [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_CANNON_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_EARLY_CANNON_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</English>
 		<French>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French>
 		<German>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</German>
@@ -3736,25 +3736,15 @@
         <English>TXT_KEY_UNIT_VETERAN_PEDIA</English>
     </TEXT>
 	<TEXT>
-        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY</Tag>
-        <English>
-            <Text>Heavy Artillery:Heavy Artilleries</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Artillerie lourde:Artilleries lourdes</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Schwere Artillerie:Schwere Artillerien</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </German>
+        <Tag>TXT_KEY_UNIT_HEAVY_CANNON</Tag>
+        <English>Heavy Cannon</English>
+		<French>Heavy Cannon</French>
+		<German>Heavy Cannon</German>
+		<Italian>Heavy Cannon</Italian>
+		<Spanish>Heavy Cannon</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_PEDIA</Tag>
+        <Tag>TXT_KEY_UNIT_HEAVY_CANNON_PEDIA</Tag>
         <English>Among the earliest inventions that made use of gunpowder, Cannons remained among the most important until the 19th century. By the late 1500s, cannon had become light but powerful weapons that could be easily moved and adjusted to take aim at whatever target the battle might present. Such cannons proved extremely useful against native foes, who had never experienced the devastating effects of such weapons and had no tactics to counter them.</English>
         <French>Les Canons figurent parmi les armes à poudre les plus utilisées jusqu'au 19ème siècle. A la fin du 16ème siècle, le canon s'est allégé, mais est aussi devenu une arme puissante que l'on peut déplacer facilement pour cibler n'importe quel objectif. Les canons s'avèrent extrêmement utiles contre les ennemis indigènes, qui  n'ont jamais connu les effets dévastateurs de ce genre d'armes et n'ont aucune tactique pour les parer.</French>
         <German>Die Kanone war eine der ersten Erfindungen, in denen Schießpulver zum Einsatz kam. Bis ins 19. Jahrhundert hinein zählten sie zu den wichtigsten Waffen. Gegen Ende des 16. Jahrhunderts war die Kanone zu einer leichten und mächtigen Waffe geworden, die schnell die Position wechseln konnten, um jedes Ziel ins Visier zu nehmen, das sich während der Schlacht bot. Solche Kanonen erwiesen sich als besonders effektiv gegen eingeborene Gegner, die noch nie mit den verheerenden Auswirkungen dieser Waffen in Berührung gekommen waren und keine taktische Kontermöglichkeit hatten.</German>
@@ -3778,18 +3768,24 @@
         <Spanish>[TAB]During the American Revolutionary War, Landgrave Frederick II of Hesse-Kassel (a principality in northern Hesse or Hessia) and other German leaders hired out thousands of conscripted subjects as auxiliaries to Great Britain to fight against the American revolutionaries. The troops were not mercenaries in the modern sense of military professionals who voluntarily hire out their own services for money. As in most armies of the eighteenth century, the men were mainly conscripts, debtors, or the victims of impressment; some were also petty criminals. Pay was low; some soldiers received nothing but their daily food. The officer corps usually consisted of career officers who had served in earlier European wars. The revenues paid for the men's service went back to the German royalty. Nevertheless, some Hessian units were respected for their discipline and excellent military skills.</Spanish>
     </TEXT>
 	<TEXT>
-        <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY</Tag>
-        <English>Light Artillery:Light Artillery</English>
-        <French>Artillerie légère:Artilleries légères</French>
-        <German>Leichte Artillerie:Leichte Artillerien</German>
+        <Tag>TXT_KEY_UNIT_LIGHT_CANNON</Tag>
+        <English>Light Cannon</English>
+        <French>Light Cannon</French>
+        <German>Light Cannon</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</Tag>
+        <Tag>TXT_KEY_UNIT_LIGHT_CANNON_PEDIA</Tag>
         <English>While a time of great advancement in philosophy, science and art, the Renaissance also marked the beginning of a period of rapid development in artillery. Prior to the Renaissance, cannons were essentially thickened pots into which gunpowder and a heavy object were dropped and then fired and - if lucky - hit a target in the general direction the cannon was aimed. (If unlucky, the cannon simply exploded.)[PARAGRAPH:1]Developments from tactical innovators like King Gustavus Adolphus of Sweden turned artillery from uncertain weapons of war into dangerous, highly-trained instruments of destruction deployed on all the major battlefields of Europe. Artillery units in the 18th century were often the elite of any European army, as artillerymen needed a significant amount of knowledge to successfully perform their duties, including training in geometry, chemistry, and physics. At the command of these elite soldiers were a plethora of machines of destruction, ranging from light "swivel" guns that could be fired by a single artilleryman to guns that could fire enormous projectiles over miles, all capable of dealing crushing damage to an enemy.</English>
         <French>En plus d'être une période d'évolution spectaculaire dans les domaines de la philosophie, la science et l'art, la Renaissance a également marqué le début d'une période de développement rapide de l'artillerie. Avant la Renaissance, les canons avaient surtout l'apparence de pots épais dans lesquels on jetait de la poudre et un objet lourd avant de faire feu, et si le ciel était avec lui, le tireur atteignait une cible qui se trouvait vaguement dans la direction visée. (Pour les moins chanceux et les superstitieux du vendredi 13, le canon explosait.)[PARAGRAPH:1]Un certain nombre d'innovations tactiques, apportées entre autres par le roi Gustave Adolphe de Suède, ont radicalement métamorphosé l'artillerie : d'une arme de guerre incertaine, cette unité s'est transformée pour devenir dangereuse, bien entraînée, et un véritable instrument de destruction déployé sur les principaux champs de bataille européens. Au 18ème siècle, les unités d'artillerie étaient souvent considérées comme l'élite de toute armée européenne tant les artilleurs devaient avoir une connaissance poussée (notamment en géométrie, en chimie et en physique) pour remplir correctement leur devoir. Ces soldats d'élite étaient aux commandes d'une kyrielle de machines de destruction, allant du canon léger monté sur un pied pivotant pouvant être manipulé par un seul artilleur à des canons capables d'envoyer des projectiles à des kilomètres, tous capables d'infliger de gros dégâts à l'ennemi.</French>
         <German>Die Renaissance war nicht nur eine Zeit großer Fortschritte in Philosophie, Wissenschaft und Kunst; in diese Periode fällt auch der Beginn einer rapiden Entwicklung der Artillerie. Vor der Renaissance waren Kanonen im Prinzip nur dicke Töpfe, die mit Schießpulver und einem schweren Gegenstand gefüllt und dann abgefeuert wurden; mit etwas Glück traf man damit ein Ziel ungefähr in der Richtung, in welche die Kanone zeigte. (Wenn man Pech hatte, flog einem die Kanone selbst um die Ohren.)[PARAGRAPH:1]Die Entwicklungen taktischer Innovatoren wie König Gustav Adolf von Schweden machten aus den unsicheren Artilleriegeschützen gefährliche, präzise Vernichtungswaffen, die auf allen großen Schlachtfeldern Europas zum Einsatz kamen. Im 18. Jahrhundert zählten die Artillerie-Einheiten oft zur Elite der europäischen Armeen, da Artilleristen zur Erfüllung ihrer Aufgaben ein solides Grundwissen brauchten und unter anderem in Geometrie, Chemie und Physik ausgebildet wurden. Diese Elitesoldaten waren Herr über alle möglichen Vernichtungswaffen, von leichten "Drehbassen", die ein einzelner Artillerist abfeuern konnte, bis hin zu Kanonen, deren enorme Geschosse meilenweit fliegen und dem Feind vernichtenden Schaden zufügen konnten.</German>
         <Italian>Pur essendo stato un periodo di grandi innovazioni nel campo della filosofia, della scienza e dell'arte, il Rinascimento segnò anche l'inizio di un rapido sviluppo dell'artiglieria. Prima del Rinascimento i cannoni erano essenzialmente robusti "pentoloni" in cui erano messi un oggetto pesante e polvere da sparo, a cui veniva poi dato fuoco: se si era fortunati il proiettile colpiva un bersaglio nella direzione generale in cui era puntato il cannone (se si era sfortunati il cannone semplicemente esplodeva).[PARAGRAPH:1]Gli sviluppi di innovatori tattici come re Gustavo Adolfo di Svezia trasformarono l'artiglieria da complesso di armi dall'esito bellico incerto in reparti pericolosi e altamente addestrati, schierati su tutti i maggiori campi di battaglia europei. Le unità d'artiglieria del XVIII secolo erano spesso l'elite di qualsiasi esercito europeo, dato che un artigliere aveva bisogno di una importante quantità di conoscenze per poter svolgere il proprio compito: queste comprendono fondamenti di geometria, chimica e fisica. Sotto il comando di questi soldati d'elite c'erano una pletora di macchine votate alla distruzione, che andavano dalle più leggere, posizionate su piattaforme girevoli, utilizzate anche da un singolo artigliere, a cannoni che potevano sparare enormi proiettili a distanza di miglia, in grado di infliggere al nemico danni ingenti.</Italian>
         <Spanish>Aunque el Renacimiento fue una época de grandes avances en filosofía, ciencia y arte, también marcó el inicio de un periodo de rápido desarrollo de la artillería. Antes del Renacimiento, los cañones eran en esencia gruesos calderos en los que se embutía pólvora y objeto pesados, se disparaba y, con suerte, se daba a un blanco en la dirección aproximada hacia la que se apuntaba el arma (si no había suerte, el cañón simplemente explotaba).[PARAGRAPH:1]Con los inventos de los innovadores tácticos, como el rey Gustavo Adolfo de Suecia, la artillería pasó de ser un arma de guerra inestable a un conjunto de instrumentos de destrucción muy sofisticados que se desplegaron por todos los campos de batalla europeos. Las unidades de artillería del s. XVIII solían conformar la élite de cualquier ejército europeo, ya que los artilleros necesitaban una gran cantidad de conocimientos para conseguir llevar a cabo su cometido, incluyendo estudios de geometría, química y física. Estos soldados de élite tenían a su cargo una plétora de aparatos de destrucción, que iban desde los ligeros cañones de colisa, que podían ser disparados por un solo artillero, hasta las piezas que podían disparar proyectiles enormes a kilómetros de distancia, capaces de hacer un daño aplastante.</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_EARLY_CANNON</Tag>
+        <English>Early Cannon</English>
+        <French>Early Cannon</French>
+        <German>Early Cannon</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNIT_MAN_O_WAR</Tag>
