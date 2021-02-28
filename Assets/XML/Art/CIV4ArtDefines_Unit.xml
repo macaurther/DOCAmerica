@@ -1851,9 +1851,9 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Imperial_Cannon/cannon.nif</NIF>
+			<NIF>Art/Units/Cannon/Cannon.nif</NIF>
 			<KFM>Art/Units/Cannon/Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units/Imperial_Cannon/cannon.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Cannon/Cannon.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
 				<ShadowAttachNode/>
@@ -6291,7 +6291,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AMERICAN_MINUTEMAN</Type>
-			<Button>,Art/Interface/Buttons/Units/Militia.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Militia.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9463,7 +9463,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CONTINENTAL</Type>
-			<Button>,Art/Interface/Buttons/Units/Continental_Regular.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Continental_Regular.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -9527,9 +9527,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_musketman/Imperial_musketman.kfm</KFM>
-			<SHADERNIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</SHADERNIF>
+			<NIF>Art/Units/Unique/England/Redcoat/RedCoat.nif</NIF>
+			<KFM>Art/Units/Unique/England/Redcoat/RedCoat.kfm</KFM>
+			<SHADERNIF>Art/Units/Unique/England/Redcoat/RedCoat_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9580,9 +9580,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Special_Military/Hessian/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Special_Military/Hessian/Veteran_Musketman.kfm</KFM>
-			<SHADERNIF>Art/Units/Special_Military/Hessian/Veteran_Musketman.nif</SHADERNIF>
+			<NIF>Art/Units/Hessian/Prussian_Grenadier.nif</NIF>
+			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
+			<SHADERNIF>Art/Units/Hessian/Prussian_Grenadier.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9633,9 +9633,9 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Special_Military/mortar/bombardB.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<SHADERNIF>Art/Units/Special_Military/mortar/bombardB.nif</SHADERNIF>
+			<NIF>Art/Units/Bombard/BombardB.nif</NIF>
+			<KFM>Art/Units/Bombard/cannon.kfm</KFM>
+			<SHADERNIF>Art/Units/Bombard/BombardB.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/CannonShadow.nif</ShadowNIF>
 				<ShadowAttachNode/>
@@ -9665,9 +9665,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Special_Military/Ranger/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
-			<SHADERNIF>Art/Units/Special_Military/Ranger/Native_Musketman.nif</SHADERNIF>
+			<NIF>Art/Units/Musketman/Musketman.nif</NIF>
+			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
+			<SHADERNIF>Art/Units/Musketman/Musketman_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9728,9 +9728,9 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Ships_Transport/Sloop/Sloop.nif</NIF>
+			<NIF>Art/Units/Frigate/Frigate.nif</NIF>
 			<KFM>Art/Units/Frigate/Frigate.kfm</KFM>
-			<SHADERNIF>Art/Units/Ships_Transport/Sloop/Sloop.nif</SHADERNIF>
+			<SHADERNIF>Art/Units/Frigate/Frigate_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/TransportShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>

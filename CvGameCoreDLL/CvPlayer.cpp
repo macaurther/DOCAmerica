@@ -2365,6 +2365,9 @@ void CvPlayer::disbandUnit(bool bAnnounce)
 							iValue *= 3;
 							break;
 
+						case UNITAI_DEFENSE:
+							break;
+
 						default:
 							FAssert(false);
 							break;

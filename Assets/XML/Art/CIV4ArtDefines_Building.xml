@@ -3533,7 +3533,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.5</fScale>
 			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Armory/Armory.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,1,1</Button>
 		</BuildingArtInfo>
@@ -3543,7 +3543,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>0.7</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Armory/arsenal.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,2,1</Button>
 		</BuildingArtInfo>
@@ -3553,7 +3553,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/butcher/butchery.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,6,1</Button>
 		</BuildingArtInfo>
@@ -3563,7 +3563,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Schoolhouse/Schoolhouse.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,10</Button>
 		</BuildingArtInfo>
@@ -3573,7 +3573,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>2.5</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/citadel/citadel.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,8,5</Button>
 		</BuildingArtInfo>
@@ -3583,7 +3583,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/College/College.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,10</Button>
 		</BuildingArtInfo>
@@ -3593,7 +3593,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Fortress/Fortress_civilopedia.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,10</Button>
 		</BuildingArtInfo>
@@ -3603,7 +3603,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Lumbermill/Lumbermill.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,7</Button>
 		</BuildingArtInfo>
@@ -3613,7 +3613,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>0.7</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Armory/Magazine.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,1,2</Button>
 		</BuildingArtInfo>
@@ -3623,7 +3623,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.7</fScale>
 			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Newspaper/Newspaper.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,6</Button>
 		</BuildingArtInfo>
@@ -3633,7 +3633,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>2.0</fScale>
 			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Printing_Press/Printing_Press.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,6</Button>
 		</BuildingArtInfo>
@@ -3643,7 +3643,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>0.7</fScale>
 			<fInterfaceScale>0.55</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/tavern/saloon.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,7,9</Button>
 		</BuildingArtInfo>
@@ -3653,7 +3653,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.5</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Shipyard/Shipyard.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,9</Button>
 		</BuildingArtInfo>
@@ -3663,7 +3663,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/butcher/slaughterhouse.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,5,2</Button>
 		</BuildingArtInfo>
@@ -3673,7 +3673,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Stockade/Stockade_civilopedia.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,9</Button>
 		</BuildingArtInfo>
@@ -3683,7 +3683,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.9</fScale>
 			<fInterfaceScale>0.55</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/tavern/tavern.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,2,5</Button>
 		</BuildingArtInfo>
@@ -3693,7 +3693,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/weaver/Textile_Mill/Textile_Mill.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,1,7</Button>
 		</BuildingArtInfo>
@@ -3703,7 +3703,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>0.3</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/standpost/standpost.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,4,15</Button>
 		</BuildingArtInfo>
@@ -3713,7 +3713,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/waystation/postatation.nif</NIF>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,8,8</Button>
 		</BuildingArtInfo>
