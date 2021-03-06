@@ -1309,7 +1309,7 @@
 			<Quote>TXT_KEY_TECH_TACTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Feudalism.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,1,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1563,7 +1563,7 @@
 			<Quote>TXT_KEY_TECH_FABIAN_STRATEGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Feudalism.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,2,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1703,7 +1703,7 @@
 			<Quote>TXT_KEY_TECH_RIGHTS_OF_MAN_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Measurement.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,3,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1736,7 +1736,7 @@
 			<Quote>TXT_KEY_TECH_INDEPENDENCE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Measurement.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,4,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1803,7 +1803,7 @@
 			<Quote>TXT_KEY_TECH_REGIMENTS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Currency.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,5,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1865,7 +1865,7 @@
 			<Quote>TXT_KEY_TECH_POSTAL_SERVICE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Measurement.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,6,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1898,7 +1898,7 @@
 			<Quote>TXT_KEY_TECH_METEOROLOGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Measurement.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,7,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1934,7 +1934,7 @@
 			<Quote>TXT_KEY_TECH_CONFEDERATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Measurement.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,8,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1967,7 +1967,7 @@
 			<Quote>TXT_KEY_TECH_BALANCE_OF_POWERS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Measurement.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,1,7</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2071,7 +2071,7 @@
 			<Quote>TXT_KEY_TECH_NATIONAL_DEBT_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Economics.dds,Art/Interface/Buttons/mem_techtree_atlas.dds,1,1</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,2,7</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2174,7 +2174,7 @@
 			<Quote>TXT_KEY_TECH_FEDERALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Geology.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,3,7</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2207,7 +2207,7 @@
 			<Quote>TXT_KEY_TECH_BILL_OF_RIGHTS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Geology.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,4,7</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2242,7 +2242,7 @@
 			<Quote>TXT_KEY_TECH_JEFFERSONIANISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Geology.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,5,7</Button>
 		</TechInfo>
 
 <!-- #10 -->
