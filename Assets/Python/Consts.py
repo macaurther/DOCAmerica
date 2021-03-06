@@ -497,7 +497,7 @@ iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, 
 iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
 # Buildings
 
-iNumBuildings = 158
+iNumBuildings = 170
 (iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument,
 iTotemPole, iWalls, iStable, iLibrary,
 iHarbor, iTheatre,
@@ -519,6 +519,8 @@ iTradingCompanyBuilding, iIberianTradingCompanyBuilding, iNationalMonument, iNat
 iNationalPark, iCentralBank, iSpaceport,
 iAbbey, iArmory, iArsenal, iButchery, iSchoolhouse, iCitadel, iCollege, iFortress, iLumberMill, iMagazine, 
 iNewspaper, iPrintingPress, iSaloon, iShipyard, iSlaughterhouse, iStockade, iTavern, iTextileMill, iWell, iWaystation, 
+iMountVernon, iMonticello, iCapeHatterasLighthouse, iFortMcHenry, iWestPoint, iSlaterMill, iRainbowRow, iHarvard, iPrinceton, iCapitol, 
+iWhiteHouse, iIndependenceHall, 
 iStatueOfLiberty,
 iTriumphalArch, iMenloPark, iBrooklynBridge, iHollywood, iEmpireStateBuilding, 
 iPalaceOfNations,

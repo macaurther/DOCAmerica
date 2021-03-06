@@ -2589,6 +2589,17 @@ int CvTeamAI::AI_defensivePactTradeVal(TeamTypes eTeam) const
 
 	int iNumCities = getNumCities() + GET_TEAM(eTeam).getNumCities();
 
+	// Leoreth: Amber Room effect -> MacAurther: White House effect
+	if (GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)WHITE_HOUSE))
+	{
+		iModifier -= 60;
+
+		if (2 * GET_TEAM(eTeam).getNumCities() < iNumCities)
+		{
+			iNumCities = 2 * GET_TEAM(eTeam).getNumCities();
+		}
+	}
+
 	return iNumCities * std::max(iModifier, 10) / 100;
 }
 

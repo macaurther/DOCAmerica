@@ -316,7 +316,12 @@ class CvRFCEventHandler:
 		#			else:
 		#				utils.captureUnit(pLosingUnit, pWinningUnit, iSlave, 35)
 		
-		
+		# Brandenburg Gate effect -> MacAurther: West Point Effect
+		if gc.getPlayer(iLosingPlayer).isHasBuildingEffect(iBrandenburgGate):
+			for iPromotion in range(gc.getNumPromotionInfos()):
+				if gc.getPromotionInfo(iPromotion).isLeader() and pLosingUnit.isHasPromotion(iPromotion):
+					gc.getPlayer(iLosingPlayer).restoreGeneralThreshold()
+					
 		
 	def onReligionFounded(self, argsList):
 		'Religion Founded'
@@ -427,6 +432,10 @@ class CvRFCEventHandler:
 			dc.onPalaceMoved(iOwner)
 			
 			if city.isHasRealBuilding(iAdministrativeCenter): city.setHasRealBuilding(iAdministrativeCenter, False)
+			
+		# Leoreth: update trade routes when Porcelain Tower is built to start its effect -> MacAurther: Capitol
+		if iBuildingType == iCapitol:
+			gc.getPlayer(iOwner).updateTradeRoutes()
 
 		# Leoreth/Voyhkah: Empire State Building
 		if iBuildingType == iEmpireStateBuilding:
@@ -499,6 +508,14 @@ class CvRFCEventHandler:
 		gp.onGreatPersonBorn(pUnit, iPlayer, pCity)
 		vic.onGreatPersonBorn(iPlayer, pUnit)
 		sta.onGreatPersonBorn(iPlayer)
+		
+		# Leoreth: Silver Tree Fountain effect -> MacAurther: Mount Vernon Effect
+		if gc.getUnitInfo(pUnit.getUnitType()).getLeaderExperience() > 0 and gc.getPlayer(iPlayer).isHasBuildingEffect(iMountVernon):
+			city = utils.getHighestEntry(utils.getCityList(iPlayer), lambda city: city.getGreatPeopleProgress())
+			if city and city.getGreatPeopleProgress() > 0:
+				iGreatPerson = utils.getHighestEntry(range(iNumUnits), lambda iUnit: city.getGreatPeopleUnitProgress(iUnit))
+				if iGreatPerson >= 0:
+					gc.getPlayer(iPlayer).createGreatPeople(iGreatPerson, False, False, city.getX(), city.getY())
 
 	def onReligionSpread(self, argsList):
 		iReligion, iOwner, pSpreadCity = argsList

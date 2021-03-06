@@ -10103,6 +10103,14 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 	int iWeight = kBuilding.getAIWeight();
 	int iPreference = kPlayer.getBuildingPreference(eBuilding);
 
+	if (eBuilding == RAINBOW_ROW)
+	{
+		if (getCultureLevel() < 3)
+		{
+			return -MAX_INT;
+		}
+	}
+
 	if (iPreference > -MAX_INT)
 	{
 		if (iPreference <= 0)

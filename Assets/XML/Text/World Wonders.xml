@@ -3225,6 +3225,255 @@
 		<Italian>[ICON_BULLET]+1[ICON_COMMERCE] for every [LINK=literal]Satellite[\LINK] constructed[NEWLINE][ICON_BULLET]+5[ICON_COMMERCE] for every space project completed</Italian>
 		<Spanish>[ICON_BULLET]+1[ICON_COMMERCE] for every [LINK=literal]Satellite[\LINK] constructed[NEWLINE][ICON_BULLET]+5[ICON_COMMERCE] for every space project completed</Spanish>
 	</TEXT>
+	<!-- MacAurther Wonders -->
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON</Tag>
+		<English>Mount Vernon</English>
+		<French>Mount Vernon</French>
+		<German>Mount Vernon</German>
+		<Italian>Mount Vernon</Italian>
+		<Spanish>Mount Vernon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_HELP</Tag>
+		<English>[ICON_BULLET]Another great person is born whenever a Great General appears</English>
+		<French>[ICON_BULLET]Un autre personnage illustre na&#238;t lors de l'apparition d'un g&#233;n&#233;ral illustre</French>
+		<German>[ICON_BULLET]Another great person is born whenever a Great General appears</German>
+		<Italian>[ICON_BULLET]Another great person is born whenever a Great General appears</Italian>
+		<Spanish>[ICON_BULLET]Another great person is born whenever a Great General appears</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO</Tag>
+		<English>Monticello</English>
+		<French>Monticello</French>
+		<German>Monticello</German>
+		<Italian>Monticello</Italian>
+		<Spanish>Monticello</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO_HELP</Tag>
+		<English>[ICON_BULLET]At most 1[ICON_UNHAPPY] from temporary effects</English>
+		<French>[ICON_BULLET]Maximum de 1[ICON_UNHAPPY] caus&#233; par des effets temporaires</French>
+		<German>[ICON_BULLET]At most 1[ICON_UNHAPPY] from temporary effects</German>
+		<Italian>[ICON_BULLET]At most 1[ICON_UNHAPPY] from temporary effects</Italian>
+		<Spanish>[ICON_BULLET]At most 1[ICON_UNHAPPY] from temporary effects</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] limits the unhappiness from temporary effects. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] limits the unhappiness from temporary effects. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] limits the unhappiness from temporary effects. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] limits the unhappiness from temporary effects. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] limits the unhappiness from temporary effects. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPE_HATTERAS_LIGHTHOUSE</Tag>
+		<English>Cape Hatteras Lighthouse</English>
+		<French>Cape Hatteras Lighthouse</French>
+		<German>Cape Hatteras Lighthouse</German>
+		<Italian>Cape Hatteras Lighthouse</Italian>
+		<Spanish>Cape Hatteras Lighthouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPE_HATTERAS_LIGHTHOUSE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cape Hatteras Lighthouse[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT] in every coastal city and provides two free trade routes in its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cape Hatteras Lighthouse[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT] in every coastal city and provides two free trade routes in its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cape Hatteras Lighthouse[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT] in every coastal city and provides two free trade routes in its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cape Hatteras Lighthouse[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT] in every coastal city and provides two free trade routes in its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cape Hatteras Lighthouse[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT] in every coastal city and provides two free trade routes in its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT_MCHENRY</Tag>
+		<English>Fort McHenry</English>
+		<French>Fort McHenry</French>
+		<German>Fort McHenry</German>
+		<Italian>Fort McHenry</Italian>
+		<Spanish>Fort McHenry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT_MCHENRY_HELP</Tag>
+		<English>[ICON_BULLET]+1[ICON_MOVES] for civilian units</English>
+		<French>[ICON_BULLET]+1 [ICON_MOVES] pour les unit&#233;s civiles</French>
+		<German>[ICON_BULLET]+1[ICON_MOVES] for civilian units</German>
+		<Italian>[ICON_BULLET]+1[ICON_MOVES] for civilian units</Italian>
+		<Spanish>[ICON_BULLET]+1[ICON_MOVES] for civilian units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT_MCHENRY_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] increases all cities' defenses by 25%% and increases the movement of civilian units by 1. It improves the odds of its city generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] increases all cities' defenses by 25%% and increases the movement of civilian units by 1. It improves the odds of its city generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] increases all cities' defenses by 25%% and increases the movement of civilian units by 1. It improves the odds of its city generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] increases all cities' defenses by 25%% and increases the movement of civilian units by 1. It improves the odds of its city generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] increases all cities' defenses by 25%% and increases the movement of civilian units by 1. It improves the odds of its city generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT</Tag>
+		<English>West Point</English>
+		<French>West Point</French>
+		<German>West Point</German>
+		<Italian>West Point</Italian>
+		<Spanish>West Point</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT_HELP</Tag>
+		<English>[ICON_BULLET]Great general threshold is reset when one of your generals dies in battle</English>
+		<French>[ICON_BULLET]Le seuil d'apparition des g&#233;n&#233;raux illustres est r&#233;initialis&#233; lorsqu'un g&#233;n&#233;ral illustre meurt au combat</French>
+		<German>[ICON_BULLET]Great general threshold is reset when one of your generals dies in battle</German>
+		<Italian>[ICON_BULLET]Great general threshold is reset when one of your generals dies in battle</Italian>
+		<Spanish>[ICON_BULLET]Great general threshold is reset when one of your generals dies in battle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]West Point[COLOR_REVERT] resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]West Point[COLOR_REVERT] resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]West Point[COLOR_REVERT] resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]West Point[COLOR_REVERT] resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]West Point[COLOR_REVERT] resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLATER_MILL</Tag>
+		<English>Slater Mill</English>
+		<French>Slater Mill</French>
+		<German>Slater Mill</German>
+		<Italian>Slater Mill</Italian>
+		<Spanish>Slater Mill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLATER_MILL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases its city's chance of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RAINBOW_ROW</Tag>
+		<English>Rainbow Row</English>
+		<French>Rainbow Row</French>
+		<German>Rainbow Row</German>
+		<Italian>Rainbow Row</Italian>
+		<Spanish>Rainbow Row</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RAINBOW_ROW_HELP</Tag>
+		<English>[ICON_BULLET]+1 trade route per culture level</English>
+		<French>[ICON_BULLET]+1 route commerciale par niveau de culture</French>
+		<German>[ICON_BULLET]+1 Handelsroute pro Kulturstufe</German>
+		<Italian>[ICON_BULLET]+1 trade route per culture level</Italian>
+		<Spanish>[ICON_BULLET]+1 trade route per culture level</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RAINBOW_ROW_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Rainbow Row[COLOR_REVERT] provides 1 trade route per culture level of its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Rainbow Row[COLOR_REVERT] provides 1 trade route per culture level of its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Rainbow Row[COLOR_REVERT] provides 1 trade route per culture level of its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Rainbow Row[COLOR_REVERT] provides 1 trade route per culture level of its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Rainbow Row[COLOR_REVERT] provides 1 trade route per culture level of its city. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARVARD</Tag>
+		<English>Harvard</English>
+		<French>Harvard</French>
+		<German>Harvard</German>
+		<Italian>Harvard</Italian>
+		<Spanish>Harvard</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HARVARD_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Harvard[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialists. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Harvard[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialists. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Harvard[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialists. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Harvard[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialists. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Harvard[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialists. It increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PRINCETON</Tag>
+		<English>Princeton</English>
+		<French>Princeton</French>
+		<German>Princeton</German>
+		<Italian>Princeton</Italian>
+		<Spanish>Princeton</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PRINCETON_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Princeton[COLOR_REVERT] gives 2 free specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Princeton[COLOR_REVERT] gives 2 free specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Princeton[COLOR_REVERT] gives 2 free specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Princeton[COLOR_REVERT] gives 2 free specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Princeton[COLOR_REVERT] gives 2 free specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Scientist[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPITOL</Tag>
+		<English>Capitol</English>
+		<French>Capitol</French>
+		<German>Capitol</German>
+		<Italian>Capitol</Italian>
+		<Spanish>Capitol</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPITOL_HELP</Tag>
+		<English>[ICON_BULLET]No open borders required for trade</English>
+		<French>[ICON_BULLET]Les accords de libre passage ne sont pas n&#233;cessaires pour le commerce</French>
+		<German>[ICON_BULLET]No open borders required for trade</German>
+		<Italian>[ICON_BULLET]No open borders required for trade</Italian>
+		<Spanish>[ICON_BULLET]No open borders required for trade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPITOL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Capitol[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists and removes the open border requirement for trade routes. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Capitol[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists and removes the open border requirement for trade routes. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Capitol[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists and removes the open border requirement for trade routes. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Capitol[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists and removes the open border requirement for trade routes. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Capitol[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists and removes the open border requirement for trade routes. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHITE_HOUSE</Tag>
+		<English>White House</English>
+		<French>White House</French>
+		<German>White House</German>
+		<Italian>White House</Italian>
+		<Spanish>White House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHITE_HOUSE_HELP</Tag>
+		<English>[ICON_BULLET]Other civilization are more willing to enter into defensive pacts[NEWLINE][ICON_BULLET]Shares golden ages of defensive pact partners</English>
+		<French>[ICON_BULLET]Les autres civilisations sont plus enclines &#224; signer des pactes de d&#233;fense[NEWLINE][ICON_BULLET]&#194;ges d'or partag&#233;s entre signataires d'un pacte de d&#233;fense</French>
+		<German>[ICON_BULLET]Other civilization are more willing to enter into defensive pacts[NEWLINE][ICON_BULLET]Shares golden ages of defensive pact partners</German>
+		<Italian>[ICON_BULLET]Other civilization are more willing to enter into defensive pacts[NEWLINE][ICON_BULLET]Shares golden ages of defensive pact partners</Italian>
+		<Spanish>[ICON_BULLET]Other civilization are more willing to enter into defensive pacts[NEWLINE][ICON_BULLET]Shares golden ages of defensive pact partners</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHITE_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]White House[COLOR_REVERT] increases the willingness of other civilizations to enter into defensive pact and shares golden ages with defensive pact partners. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]White House[COLOR_REVERT] increases the willingness of other civilizations to enter into defensive pact and shares golden ages with defensive pact partners. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]White House[COLOR_REVERT] increases the willingness of other civilizations to enter into defensive pact and shares golden ages with defensive pact partners. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]White House[COLOR_REVERT] increases the willingness of other civilizations to enter into defensive pact and shares golden ages with defensive pact partners. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]White House[COLOR_REVERT] increases the willingness of other civilizations to enter into defensive pact and shares golden ages with defensive pact partners. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL</Tag>
+		<English>Independence Hall</English>
+		<French>Independence Hall</French>
+		<German>Independence Hall</German>
+		<Italian>Independence Hall</Italian>
+		<Spanish>Independence Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] increases the length of your Golden Ages by fifty percent. It also increases the odds of its city generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] increases the length of your Golden Ages by fifty percent. It also increases the odds of its city generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] increases the length of your Golden Ages by fifty percent. It also increases the odds of its city generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] increases the length of your Golden Ages by fifty percent. It also increases the odds of its city generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] increases the length of your Golden Ages by fifty percent. It also increases the odds of its city generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English></English>

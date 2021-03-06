@@ -2068,6 +2068,11 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 
 		int iHurryAnger = GC.getDefineINT("HURRY_POP_ANGER") * iHurryAngerModifier;
 
+		if (pHeadSelectedCity->isHasBuildingEffect((BuildingTypes)MONTICELLO))
+		{
+			iHurryAnger = 1;
+		}
+
 		if (iHurryAngerLength > 0)
 		{
 			szBuffer.append(NEWLINE);
@@ -2144,6 +2149,11 @@ void CvDLLWidgetData::parseConscriptHelp(CvWidgetDataStruct &widgetDataStruct, C
 
 			iConscriptAngerLength = pHeadSelectedCity->flatConscriptAngerLength();
 			iConscriptAnger = GC.getDefineINT("CONSCRIPT_POP_ANGER");
+
+			if (pHeadSelectedCity->isHasBuildingEffect((BuildingTypes)MONTICELLO))
+			{
+				iConscriptAnger = 1;
+			}
 
 			if (iConscriptAngerLength > 0)
 			{

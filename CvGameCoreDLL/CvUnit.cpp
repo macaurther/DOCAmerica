@@ -7963,6 +7963,15 @@ int CvUnit::baseMoves() const
 {
 	int iMoves = m_pUnitInfo->getMoves() + getExtraMoves() + GET_TEAM(getTeam()).getExtraMoves(getDomainType());
 
+	// Leoreth: Kremlin effect -> MacAurther: Fort McHenry effect
+	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)FORT_MCHENRY))
+	{
+		if (!canFight() && getDomainType() == DOMAIN_LAND)
+		{
+			iMoves += 1;
+		}
+	}
+
 	return iMoves;
 }
 

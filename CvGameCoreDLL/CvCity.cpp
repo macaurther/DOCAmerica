@@ -4460,8 +4460,14 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		CvCity* pLoopCity;
 		int iLoop;
 
+		// Image of the World Square -> MacAurther: Rainbow Row
+		if (eBuilding == RAINBOW_ROW)
+		{
+			changeExtraTradeRoutes(iChange * getCultureLevel());
+		}
+
 		// ITER
-		if (eBuilding == ITER)
+		else if (eBuilding == ITER)
 		{
 			int iPowerConsumed = 0;
 			for (iI = 0; iI < MAX_PLAYERS; iI++)
@@ -5091,6 +5097,11 @@ int CvCity::getHurryPercentAnger(int iExtra) const
 
 	int iHurryPercentAnger = (((((getHurryAngerTimer() - 1) / flatHurryAngerLength()) + 1) * GC.getDefineINT("HURRY_POP_ANGER") * GC.getPERCENT_ANGER_DIVISOR()) / std::max(1, getPopulation() + iExtra)) + 1;
 
+	if (isHasBuildingEffect((BuildingTypes)MONTICELLO))
+	{
+		return std::min(iHurryPercentAnger, 100);
+	}
+
 	return iHurryPercentAnger;
 }
 
@@ -5109,6 +5120,11 @@ int CvCity::getConscriptPercentAnger(int iExtra) const
 
 	int iConscriptPercentAnger = (((((getConscriptAngerTimer() - 1) / flatConscriptAngerLength()) + 1) * GC.getDefineINT("CONSCRIPT_POP_ANGER") * GC.getPERCENT_ANGER_DIVISOR()) / std::max(1, getPopulation() + iExtra)) + 1;
 
+	if (isHasBuildingEffect((BuildingTypes)MONTICELLO))
+	{
+		return std::min(iConscriptPercentAnger, 100);
+	}
+
 	return iConscriptPercentAnger;
 }
 
@@ -5125,6 +5141,11 @@ int CvCity::getDefyResolutionPercentAnger(int iExtra) const
 	}
 
 	int iDefyResolutionPercentAnger = (((((getDefyResolutionAngerTimer() - 1) / flatDefyResolutionAngerLength()) + 1) * GC.getDefineINT("DEFY_RESOLUTION_POP_ANGER") * GC.getPERCENT_ANGER_DIVISOR()) / std::max(1, getPopulation() + iExtra)) + 1;
+
+	if (isHasBuildingEffect((BuildingTypes)MONTICELLO))
+	{
+		return std::min(iDefyResolutionPercentAnger, 100);
+	}
 
 	return iDefyResolutionPercentAnger;
 }
@@ -9078,6 +9099,11 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue, bool bUpdatePlotGroups
 					changeBaseGreatPeopleRate(iSpecialistCount * (kSpecialist.getCultureLevelGreatPeopleRateChange(eNewValue) - kSpecialist.getCultureLevelGreatPeopleRateChange(eOldValue)));
 				}
 			}*/
+
+			if (isHasBuildingEffect((BuildingTypes)RAINBOW_ROW))
+			{
+				changeExtraTradeRoutes(eNewValue - eOldValue);
+			}
 
 			if ((getCultureLevel() > eOldValue) && (getCultureLevel() > 1))
 			{

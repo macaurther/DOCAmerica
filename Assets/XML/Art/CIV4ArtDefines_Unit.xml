@@ -9489,9 +9489,9 @@
 			<fInterfaceScale>0.25</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/units/Ships_Transport/Dutch_East_India_Man/Dutch_East_India_Man.nif</NIF>
-			<KFM>Art/units/Ships_Transport/Dutch_East_India_Man/Dutch_East_India_Man.kfm</KFM>
-			<SHADERNIF>Art/units/Ships_Transport/Dutch_East_India_Man/Dutch_East_India_Man.nif</SHADERNIF>
+			<NIF>Art/Units/Dutch_East_India_Man/Dutch_East_India_Man.nif</NIF>
+			<KFM>Art/Units/Dutch_East_India_Man/Dutch_East_India_Man.kfm</KFM>
+			<SHADERNIF>Art/Units/Dutch_East_India_Man/Dutch_East_India_Man_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/TransportShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9686,9 +9686,9 @@
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Seasoned_Scout/Seasoned_Scout.nif</NIF>
-			<KFM>Art/Units/Seasoned_Scout/Seasoned_Scout.kfm</KFM>
-			<SHADERNIF>Art/Units/Seasoned_Scout/Seasoned_Scout.nif</SHADERNIF>
+			<NIF>Art/Units/Scout/Scout.nif</NIF>
+			<KFM>Art/Units/Scout/Scout.kfm</KFM>
+			<SHADERNIF>Art/Units/Scout/Scout_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -9728,9 +9728,9 @@
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
 			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Frigate/Frigate.nif</NIF>
-			<KFM>Art/Units/Frigate/Frigate.kfm</KFM>
-			<SHADERNIF>Art/Units/Frigate/Frigate_FX.nif</SHADERNIF>
+			<NIF>Art/Units/Portugal_Carrack/Portugal_Carrack.nif</NIF>
+			<KFM>Art/Units/Portugal_Carrack/Portugal_Carrack.kfm</KFM>
+			<SHADERNIF>Art/Units/Portugal_Carrack/Portugal_Carrack_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/TransportShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
