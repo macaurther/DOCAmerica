@@ -99,13 +99,13 @@ tCapitals = (
 (109, 74), # Madrid
 (118, 74), # Paris
 (127, 73), # London
-(130, 39), # Jamestown
+(131, 39), # Jamestown
 (143, 61), # Boston
 (141, 65), # Portsmouth
-(129, 45), # Annapolis
+(130, 43), # St. Mary's
 (139, 58), # Hartford
 (142, 59), # Providence
-(129, 34), # Raleigh
+(128, 30), # Wilmington
 (124, 25), # Charleston
 (135, 53), # Newark
 (136, 55), # New York

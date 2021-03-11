@@ -1684,7 +1684,7 @@ class RiseAndFall:
 			pRhodeIsland.setLastStateReligion(iBaptism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNorthCarolina:
-			utils.createSettlers(iCiv, 2)
+			utils.createSettlers(iCiv, 1)
 			utils.makeUnit(iMusketman, iCiv, tPlot, 2)
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)

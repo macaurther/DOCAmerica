@@ -54,7 +54,7 @@ class UniquePowers:
 
 
 	def checkTurn(self, iGameTurn):
-		if iGameTurn >= getTurnForYear(tBirth[iAmerica])+utils.getTurns(5):
+		if iGameTurn >= getTurnForYear(tBirth[iMassachusetts])+utils.getTurns(5):
 			self.checkImmigration()
 					
 	def onChangeWar(self, bWar, iTeam, iOtherTeam):
@@ -73,8 +73,8 @@ class UniquePowers:
 	
 		if data.iImmigrationTimer == 0:
 			self.doImmigration()
-			iRandom = gc.getGame().getSorenRandNum(5, 'random')
-			data.iImmigrationTimer = 3 + iRandom # 3-7 turns
+			iRandom = gc.getGame().getSorenRandNum(6, 'random')
+			data.iImmigrationTimer = 5 + iRandom # 5-10 turns
 		else:
 			data.iImmigrationTimer -= 1
 			
@@ -85,84 +85,112 @@ class UniquePowers:
 		lTargetCities = []
 		
 		for iPlayer in range(iNumPlayers):
-			if iPlayer in lCivBioNewWorld and not utils.isReborn(iPlayer): continue # no immigration to natives
+			#if iPlayer in lCivBioNewWorld and not utils.isReborn(iPlayer): continue # no immigration to natives
 			pPlayer = gc.getPlayer(iPlayer)
 			lCities = []
-			bNewWorld = pPlayer.getCapitalCity().getRegionID() in lNewWorld
+			#bNewWorld = pPlayer.getCapitalCity().getRegionID() in lNewWorld
 			for city in utils.getCityList(iPlayer):
 				iFoodDifference = city.foodDifference(False)
 				iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
-				if city.getRegionID() in lNewWorld and bNewWorld:
-					if iFoodDifference <= 0 or iHappinessDifference <= 0: continue
-					iNorthAmericaBonus = 0
-					if city.getRegionID() in [rCanada, rUnitedStates]: iNorthAmericaBonus = 5
-					lCities.append((city, iHappinessDifference + iFoodDifference / 2 + city.getPopulation() / 2 + iNorthAmericaBonus))
-				elif city.getRegionID() not in lNewWorld and not bNewWorld:
+				#if city.getRegionID() in lNewWorld and bNewWorld:
+				if iFoodDifference <= 0 or iHappinessDifference <= 0: continue
+				iHistoricalBonus = 0
+				if city.getRegionID() in [rNewYork, rMassachusetts, rVirginia]: iHistoricalBonus = 3
+				lCities.append((city, iHappinessDifference + iFoodDifference / 2 + city.getPopulation() / 2 + iHistoricalBonus))
+				# MacAurther TODO: No source cities until Western Migration update
+				'''elif city.getRegionID() not in lNewWorld and not bNewWorld:
 					iValue = 0
 					if iFoodDifference < 0:
 						iValue -= iFoodDifference / 2
 					if iHappinessDifference < 0:
 						iValue -= iHappinessDifference
 					if iValue > 0:
-						lCities.append((city, iValue))
+						lCities.append((city, iValue))'''
 			
 			if lCities:
 				lCities.sort(key=itemgetter(1), reverse=True)
 			
-				if bNewWorld:
-					lTargetCities.append(lCities[0])
-				else:
-					lSourceCities.append(lCities[0])
+				#if bNewWorld:
+				lTargetCities.append(lCities[0])
+				# MacAurther TODO: No source cities until Western Migration update
+				'''else:
+					lSourceCities.append(lCities[0])'''
 				
 		# sort highest to lowest for happiness/unhappiness
-		lSourceCities.sort(key=itemgetter(1), reverse=True)
+		#lSourceCities.sort(key=itemgetter(1), reverse=True)
 		lTargetCities.sort(key=itemgetter(1), reverse=True)
 		
 		#utils.debugTextPopup(str([(x.getName(), y) for (x,y) in lTargetCities]))
 		#utils.debugTextPopup("Target city: "+targetCity.getName())
 		#utils.debugTextPopup("Source city: "+sourceCity.getName())
 		
-		iNumMigrations = min(len(lSourceCities) / 4, len(lTargetCities))
+		#iNumMigrations = min(len(lSourceCities) / 4, len(lTargetCities))
+		iNumMigrations = len(lTargetCities)# / 4
 		
 		for iMigration in range(iNumMigrations):
-			sourceCity = lSourceCities[iMigration][0]
+			#sourceCity = lSourceCities[iMigration][0]
 			targetCity = lTargetCities[iMigration][0]
-		
-			sourceCity.changePopulation(-1)
-			targetCity.changePopulation(1)
+			targetCityX = targetCity.getX()
+			targetCityY = targetCity.getY()
+			iTargetPlayer = targetCity.getOwner()
 			
-			if sourceCity.getPopulation() >= 9:
-				sourceCity.changePopulation(-1)
+			pPlayer = gc.getPlayer(iTargetPlayer)
+			iCivicLabor = pPlayer.getCivics(2)
+			iCivicDevelopment = pPlayer.getCivics(5)
+			
+			workerChance = 0
+			settlerChance = 0
+			if iCivicLabor == iIndenturedServitude:
+				workerChance = 40
+			if iCivicDevelopment == iHeadright:
+				settlerChance = 20
+			
+			iRandom = gc.getGame().getSorenRandNum(100, 'random')
+			
+			if iRandom < workerChance:
+				#worker outcome
+				utils.makeUnit(utils.getUniqueUnit(iTargetPlayer, iWorker), iTargetPlayer, (targetCityX, targetCityY), 1)
+			elif iRandom < workerChance + settlerChance:
+				#settler outcome
+				utils.makeUnit(utils.getUniqueUnit(iTargetPlayer, iSettler), iTargetPlayer, (targetCityX, targetCityY), 1)
+			else:
+				#population and cottage outcome
+				#sourceCity.changePopulation(-1)
 				targetCity.changePopulation(1)
 				
-			# extra cottage growth for target city's vicinity
-			x = targetCity.getX()
-			y = targetCity.getY()
-			for (i, j) in utils.surroundingPlots((x, y), 2):
-				pCurrent = gc.getMap().plot(i, j)
-				if pCurrent.getWorkingCity() == targetCity:
-					pCurrent.changeUpgradeProgress(utils.getTurns(10))
-						
-			# migration brings culture
+				#if sourceCity.getPopulation() >= 9:
+				#	sourceCity.changePopulation(-1)
+				#	targetCity.changePopulation(1)
+					
+				# extra cottage growth for target city's vicinity
+				for (i, j) in utils.surroundingPlots((targetCityX, targetCityY), 2):
+					pCurrent = gc.getMap().plot(i, j)
+					if pCurrent.getWorkingCity() == targetCity:
+						pCurrent.changeUpgradeProgress(utils.getTurns(10))
+			
+			
+			
+			# MacAurther TODO: No source cities until Western Migration update
+			'''# migration brings culture
 			targetPlot = gc.getMap().plot(x, y)
-			iTargetPlayer = targetCity.getOwner()
 			iSourcePlayer = sourceCity.getOwner()
 			iCultureChange = targetPlot.getCulture(iTargetPlayer) / targetCity.getPopulation()
-			targetPlot.changeCulture(iSourcePlayer, iCultureChange, False)
+			targetPlot.changeCulture(iSourcePlayer, iCultureChange, False)'''
 			
-			# chance to spread state religion if in source city
+			# MacAurther TODO: No source cities until Western Migration update
+			'''# chance to spread state religion if in source city
 			if gc.getPlayer(iSourcePlayer).isStateReligion():
 				iReligion = gc.getPlayer(iSourcePlayer).getStateReligion()
 				if sourceCity.isHasReligion(iReligion) and not targetCity.isHasReligion(iReligion):
 					iRandom = gc.getGame().getSorenRandNum(3, 'random religion spread')
 					if iRandom == 0:
-						targetCity.setHasReligion(iReligion, True, True, True)
+						targetCity.setHasReligion(iReligion, True, True, True)'''
 						
 			# notify affected players
-			if utils.getHumanID() == iSourcePlayer:
-				CyInterface().addMessage(iSourcePlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_EMIGRATION", (sourceCity.getName(),)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), sourceCity.getX(), sourceCity.getY(), True, True)
-			elif utils.getHumanID() == iTargetPlayer:
-				CyInterface().addMessage(iTargetPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_IMMIGRATION", (targetCity.getName(),)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), x, y, True, True)
+			'''if utils.getHumanID() == iSourcePlayer:
+				CyInterface().addMessage(iSourcePlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_EMIGRATION", (sourceCity.getName(),)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), sourceCity.getX(), sourceCity.getY(), True, True)'''
+			if utils.getHumanID() == iTargetPlayer:
+				CyInterface().addMessage(iTargetPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_IMMIGRATION", (targetCity.getName(),)), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), targetCityX, targetCityY, True, True)
 	
 			if iTargetPlayer == iCanada:
 				self.canadianUP(targetCity)

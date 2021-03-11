@@ -563,28 +563,116 @@ iCivEngland : {
 #MacAurther TODO : All states great people
 iCivVirginia : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iColonialEra,
+		"fPocahontas", # 17th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"John Randolph", # 19th
+		"William McGuffey", # 19th
+		iModernEra,
+		"William Cabell Bruce", # 20th
+		iAtomicEra,
+		"Russell Baker", # 20th
+		iInformationEra,
+		"David Baldacci", # 20th
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iRevolutionaryEra,
+		"George Wythe", # 18th
+		iExpansionEra,
+		"John Tyler", # 19th
+		"Matthew Fontaine Maury", #19th
+		"Ephraim McDowell", # 19th
+		"Edmund Ruffin", # 19th
+		iIndustrialEra,
+		"Walter Reed", # 19th
+		"Booker T. Washington", # 19th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iColonialEra,
+		"John Rolfe", # 17th
+		iModernEra,
+		"Carter Glass", # 20th
+		"fMaggie L. Walker", # 20th
+		iAtomicEra,
+		"Henry. H. Fowler", # 20th
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iRevolutionaryEra,
+		"James Rumsey", # 18th
+		iExpansionEra,
+		"Cyrus McCormick", # 19th
+		iModernEra,
+		"Richard E. Byrd", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iColonialEra,
+		"George Mason", # 18th
+		"John Smith", # 18th
+		"Alexander Spotswood", # 18th
+		iRevolutionaryEra,
+		"George Washington", # 18th
+		"Thomas Jefferson", # 18th
+		"Patrick Henry", # 18th
+		"Richard Henry Lee", # 18th
+		"Peyton Randolph", # 18th
+		iExpansionEra,
+		"James Madison", # 19th
+		"James Monroe", # 19th
+		"William Henry Harrison", # 19th
+		"Philip P. Barbour", # 19th
+		"Henry Clay", # 19th
+		"Peter V. Daniel", # 19th
+		"John B. Floyd", # 19th
+		"Charles Lee", # 19th
+		"John Marshall", # 19th
+		"Edmund Randolph", # 19th
+		"Alexander H. H. Stuart", # 19th
+		"William Wirt", # 19th
+		iIndustrialEra,
+		"Fitzhugh Lee", # 19th
+		iModernEra,
+		"Woodrow Wilson", # 20th
+		iAtomicEra,
+		"Lewis F. Powell Jr.", # 20th
+		"L. Douglas Wilder", # 20th
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iRevolutionaryEra,
+		"George Washington", # 18th
+		"George Rogers Clark", # 18th
+		"Henry Lee", # 18th
+		"Daniel Morgan", # 18th
+		iExpansionEra,
+		"James Barbour", # 19th
+		"Zachary Taylor", # 19th
+		"Thomas W. Gilmer", # 19th
+		"John Y. Mason", # 19th
+		"Winfield Scott", # 19th
+		"Abel P. Upshur", # 19th
+		iIndustrialEra,
+		"Jubal Early", # 19th
+		"A. P. Hill", # 19th
+		"Thomas J. 'Stonewall' Jackson", # 19th
+		"Joseph Johnston", # 19th
+		"Robert E. Lee", # 19th
+		"John Singleton Mosby", # 19th
+		"George Pickett", # 19th
+		"J. E. B. Stuart", # 19th
+		iModernEra,
+		"Claude A. Swanson", # 20th
+		iAtomicEra,
+		"John W. Warner", # 20th
+		iInformationEra,
+		"John O. Marsh Jr.", # 20th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iColonialEra,
+		"Nathaniel Bacon", # 17th
+		iExpansionEra,
+		"William Clark", # 19th
+		"Meriwether Lewis", # 19th
 	],
 },
 iCivMassachusetts : {

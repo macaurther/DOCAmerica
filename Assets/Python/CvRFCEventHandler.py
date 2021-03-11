@@ -317,7 +317,7 @@ class CvRFCEventHandler:
 		#				utils.captureUnit(pLosingUnit, pWinningUnit, iSlave, 35)
 		
 		# Brandenburg Gate effect -> MacAurther: West Point Effect
-		if gc.getPlayer(iLosingPlayer).isHasBuildingEffect(iBrandenburgGate):
+		if gc.getPlayer(iLosingPlayer).isHasBuildingEffect(iWestPoint):
 			for iPromotion in range(gc.getNumPromotionInfos()):
 				if gc.getPromotionInfo(iPromotion).isLeader() and pLosingUnit.isHasPromotion(iPromotion):
 					gc.getPlayer(iLosingPlayer).restoreGeneralThreshold()

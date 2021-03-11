@@ -17,10 +17,11 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 # MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish
 tMinorCities = (
-	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iMusketman, 1),		# Fort Orange (Albany)
-	(1625, (136, 55), iIndependent, 'Nieuw Amsterdam', 1, iMusketman, 1),	# New Amsterdam (New York)
+	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iMusketman, 1),			# Fort Orange (Albany)
+	(1625, (136, 55), iIndependent, 'Nieuw Amsterdam', 1, iMusketman, 1),		# New Amsterdam (New York)
 	(1630, (139, 58), iIndependent, 'Fort de Goede Hoop', 1, iMusketman, 1),	# Fort de Goede Hoop (Hartford)
 	(1638, (132, 47), iIndependent2, 'Fort Kristina', 1, iMusketman, 1),		# Fort Kristina (Wilmington)
+	(1653, (129, 34), iIndependent2, 'Raleigh', 1, iMusketman, 1),				# Albemarle Settlers
 )
 
 # do some research on dates here
@@ -62,8 +63,8 @@ class Barbs:
 						utils.makeUnit(iUnit, iOwner, tPlot, 1)
 
 		#American natives
-		# MacAurther TODO
-		if iGameTurn == getTurnForYear(1610): #Powhatan War I
+		# MacAurther TODO: This is not fun, find something better:
+		'''if iGameTurn == getTurnForYear(1610): #Powhatan War I
 			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
 		if iGameTurn == getTurnForYear(1622): #Powhatan War II
 			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
@@ -82,7 +83,7 @@ class Barbs:
 			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
 			self.checkSpawn(iNative, iArcher, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
 			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastNHBR, tEastNHTL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastNHBR, tEastNHTL, self.spawnUprising, iGameTurn, 1, 0)
+			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastNHBR, tEastNHTL, self.spawnUprising, iGameTurn, 1, 0)'''
 		
 		
 		

@@ -58,7 +58,9 @@ lTechGroups = [[iSpain, iFrance, iEngland],  #Euros
 
 
 lCivBioOldWorld = [iSpain, iFrance, iEngland, iAmerica, iCanada, iIndependent, iIndependent2]
-lCivBioNewWorld = [iNative, iBarbarian]
+lCivBioNewWorld = [iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
+		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia, 
+		iNative, iBarbarian]
 
 
 #for Victory and the handler
@@ -584,6 +586,7 @@ rCalifornia, rMinnesota, rOregon, rKansas, rWestVirginia, rNevada, rNebraska, rC
 rMontana, rWashington, rIdaho, rWyoming, rUtah, rOklahoma, rNewMexico, rArizona) = range(iNumRegions)
 
 
+
 lSouthAtlantic = [rDelaware, rMaryland, rVirginia, rNorthCarolina, rSouthCarolina, rGeorgia, rFlorida]
 lSouthCentral = [rWestVirginia, rKentucky, rTennessee, rAlabama, rMississippi, rLouisiana]
 lWestSouth = [rArkansas, rOklahoma, rTexas, rMissouri, rKansas, rNewMexico]
@@ -605,6 +608,7 @@ lWest = lMountain + lPacific
 
 lContiguous = lSouth + lNorth + lWest
 
+lNewWorld = lContiguous
 
 iArea_South = 1000
 iArea_North = 1001

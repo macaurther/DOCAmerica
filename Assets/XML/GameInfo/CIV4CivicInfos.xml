@@ -150,13 +150,13 @@
 			<Description>TXT_KEY_CIVIC_COMMON_LAW</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COMMON_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMON_LAW_STRATEGY</Strategy>
-			<TechPrereq>TECH_COMMUNITY</TechPrereq>
+			<TechPrereq>TECH_STATECRAFT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,6,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_LIBRARY</BuildingType>
+					<BuildingType>BUILDINGCLASS_SCHOOLHOUSE</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
@@ -167,6 +167,10 @@
 					<BuildingType>BUILDINGCLASS_THEATRE</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_WELL</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -175,7 +179,7 @@
 			<Description>TXT_KEY_CIVIC_MARTIAL_LAW</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MARTIAL_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MARTIAL_LAW_STRATEGY</Strategy>
-			<TechPrereq>TECH_STATECRAFT</TechPrereq>
+			<TechPrereq>TECH_CONFEDERATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,7,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -284,11 +288,11 @@
 			<Description>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_HELP</Help>
 			<TechPrereq>TECH_INDENTURES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,1,2</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iWorkerCostModifier>-50</iWorkerCostModifier>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
@@ -323,7 +327,7 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
@@ -449,12 +453,21 @@
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
-				<iYield>25</iYield>
+				<iYield>0</iYield>
 				<iYield>-50</iYield>
 			</TradeYieldModifiers>
+			<iMilitaryProductionModifier>50</iMilitaryProductionModifier>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_WHARF</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_HARBOR</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
@@ -801,18 +814,11 @@
 			<Description>TXT_KEY_CIVIC_HEADRIGHT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HEADRIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HEADRIGHT_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_HEADRIGHT_HELP</Help>
 			<TechPrereq>TECH_CHARTER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,4,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<YieldModifiers>
-				<iYield>10</iYield>
-			</YieldModifiers>
-			<CommerceModifiers>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>10</iCommerce>
-			</CommerceModifiers>
+			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_DEVELOPMENT</CivicOptionType>
@@ -927,6 +933,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,7,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iWorkerCostModifier>-50</iWorkerCostModifier>
 			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
 		</CivicInfo>
 		<CivicInfo>

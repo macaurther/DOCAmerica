@@ -371,7 +371,8 @@ class Plague:
 			
 		if gc.getTeam(pPlayer.getTeam()).isHasTech(iMicrobiology): return False
 		
-		if iPlayer in lCivBioNewWorld and not data.lFirstContactConquerors[lCivBioNewWorld.index(iPlayer)]: return False
+		# MacAurther TODO: Native Update
+		#if iPlayer in lCivBioNewWorld and not data.lFirstContactConquerors[lCivBioNewWorld.index(iPlayer)]: return False
 			
 		if data.players[iPlayer].iPlagueCountdown == 0: #vulnerable
 			if not gc.getTeam(pPlayer.getTeam()).isHasTech(iMicrobiology):

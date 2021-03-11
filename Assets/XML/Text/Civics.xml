@@ -1100,6 +1100,14 @@
 		<Spanish>Indentured Servitude</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_HELP</Tag>
+		<English>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</English>
+		<French>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</French>
+		<German>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</German>
+		<Italian>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</Italian>
+		<Spanish>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Tag>
 		<English>Reduced worker cost</English>
 		<French>No Translation</French>
@@ -1436,12 +1444,20 @@
 		<Spanish>Headright</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HEADRIGHT_HELP</Tag>
+		<English>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</English>
+		<French>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</French>
+		<German>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</German>
+		<Italian>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</Italian>
+		<Spanish>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HEADRIGHT_STRATEGY</Tag>
-		<English>Increased Growth; Faster Border Growth</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<English>Chance to gain Settlers from Immigration</English>
+		<French>Chance to gain Settlers from Immigration</French>
+		<German>Chance to gain Settlers from Immigration</German>
+		<Italian>Chance to gain Settlers from Immigration</Italian>
+		<Spanish>Chance to gain Settlers from Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_RURALISM</Tag>
