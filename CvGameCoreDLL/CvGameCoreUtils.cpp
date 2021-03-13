@@ -2683,7 +2683,7 @@ UnitTypes getUniqueUnit(CivilizationTypes eCivilization, UnitTypes eUnit)
 
 bool isPrecursor(ReligionTypes ePrecursor, ReligionTypes eReligion)
 {
-	if (ePrecursor == ANGLICANISM && (eReligion == BAPTISM || eReligion == METHODISM)) return true;
+	if (ePrecursor == EPISCOPALIANISM && (eReligion == BAPTISM || eReligion == METHODISM)) return true;
 	if (ePrecursor == PURITANISM && eReligion == BAPTISM) return true;
 
 	return false;

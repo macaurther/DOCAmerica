@@ -103,12 +103,12 @@
 			<Sound>AS2D_BUILD_CHRISTIAN</Sound>
 		</ReligionInfo>
 		<ReligionInfo>
-			<Type>RELIGION_ANGLICANISM</Type>
-			<Description>TXT_KEY_RELIGION_ANGLICANISM</Description>
-			<Adjective>TXT_KEY_RELIGION_ANGLICANISM_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_RELIGION_ANGLICANISM_PEDIA</Civilopedia>
+			<Type>RELIGION_EPISCOPALIANISM</Type>
+			<Description>TXT_KEY_RELIGION_EPISCOPALIANISM</Description>
+			<Adjective>TXT_KEY_RELIGION_EPISCOPALIANISM_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_RELIGION_EPISCOPALIANISM_PEDIA</Civilopedia>
 			<TechPrereq>TECH_PHILOSOPHY</TechPrereq>
-			<FreeUnitClass>UNITCLASS_ANGLICAN_MISSIONARY</FreeUnitClass>
+			<FreeUnitClass>UNITCLASS_EPISCOPALIAN_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
 			<bProselytizing>1</bProselytizing>
@@ -127,7 +127,7 @@
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Anglicanism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,1,15</Button>
 			<TechButton>Art/Interface/Buttons/TechTree/Philosophy.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
@@ -191,7 +191,7 @@
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Baptism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,2,15</Button>
 			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
@@ -223,7 +223,7 @@
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Methodism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,3,15</Button>
 			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>
@@ -255,7 +255,7 @@
 				<iStateReligionCommerce>0</iStateReligionCommerce>
 				<iStateReligionCommerce>1</iStateReligionCommerce>
 			</StateReligionCommerces>
-			<Button>Art/Interface/Buttons/Religions/Mormonism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,4,15</Button>
 			<TechButton>Art/Interface/Buttons/TechTree/Theology.dds</TechButton>
 			<GenericTechButton>,Art/Interface/Buttons/TechTree/Christianity.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,1,3</GenericTechButton>
 			<MovieFile>Art/Movies/Religion/Christianity/Chr_Found.nif</MovieFile>

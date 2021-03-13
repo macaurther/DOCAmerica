@@ -779,7 +779,7 @@
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
-				<BuildingClass>BUILDINGCLASS_ANGLICAN_CATHEDRAL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_CATHEDRAL</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_CATHOLIC_CATHEDRAL</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_ORTHODOX_CATHEDRAL</BuildingClass>
 			</BuildingsRequired>
@@ -1695,7 +1695,7 @@
 				<ReligionType>RELIGION_PURITANISM</ReligionType>
 				<ReligionType>RELIGION_CATHOLICISM</ReligionType>
 				<ReligionType>RELIGION_METHODISM</ReligionType>
-				<ReligionType>RELIGION_ANGLICANISM</ReligionType>
+				<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
 				<ReligionType>RELIGION_BAPTISM</ReligionType>
 			</ReligionsRequired>
 			<iNumReligions>1</iNumReligions>
@@ -7223,7 +7223,7 @@
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
-				<BuildingClass>BUILDINGCLASS_ANGLICAN_MONASTERY</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_MONASTERY</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_CATHOLIC_MONASTERY</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_ORTHODOX_MONASTERY</BuildingClass>
 			</BuildingsRequired>
@@ -9652,7 +9652,7 @@
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
-				<BuildingClass>BUILDINGCLASS_ANGLICAN_TEMPLE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_TEMPLE</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_CATHOLIC_TEMPLE</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_ORTHODOX_TEMPLE</BuildingClass>
 			</BuildingsRequired>
@@ -10021,7 +10021,7 @@
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
-				<BuildingClass>BUILDINGCLASS_ANGLICAN_CATHEDRAL</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_CATHEDRAL</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_CATHOLIC_CATHEDRAL</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_ORTHODOX_CATHEDRAL</BuildingClass>
 			</BuildingsRequired>
@@ -12574,7 +12574,7 @@
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
-				<BuildingClass>BUILDINGCLASS_ANGLICAN_MONASTERY</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_MONASTERY</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_CATHOLIC_MONASTERY</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_ORTHODOX_MONASTERY</BuildingClass>
 			</BuildingsRequired>

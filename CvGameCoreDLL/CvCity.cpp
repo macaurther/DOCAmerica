@@ -7913,8 +7913,8 @@ int CvCity::getReligionHappiness(ReligionTypes eReligion) const
 			// Leoreth: no religion unhappiness from syncretic pairs Hinduism/Buddhism and Confucianism/Taoism
 			//bool bSyncretism = ((eStateReligion == HINDUISM && eReligion == BUDDHISM) || (eStateReligion == BUDDHISM && eReligion == HINDUISM) || (eStateReligion == CONFUCIANISM && eReligion == TAOISM) || (eStateReligion == TAOISM && eReligion == CONFUCIANISM));
 			// MacAurther: no religion unhappiness between Protestants
-			bool bProtestant = (eReligion == ANGLICANISM) || (eReligion == PURITANISM) || (eReligion == BAPTISM) || (eReligion == METHODISM);
-			bool bStateProtestant = (eStateReligion == ANGLICANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
+			bool bProtestant = (eReligion == EPISCOPALIANISM) || (eReligion == PURITANISM) || (eReligion == BAPTISM) || (eReligion == METHODISM);
+			bool bStateProtestant = (eStateReligion == EPISCOPALIANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
 			if (!(bProtestant && bStateProtestant))
 				iHappiness += GET_PLAYER(getOwnerINLINE()).getNonStateReligionHappiness();
 		}
@@ -14878,8 +14878,8 @@ int CvCity::getTurnsToSpread(ReligionTypes eReligion) const
 
 bool CvCity::isHasPrecursor(ReligionTypes eReligion) const
 {
-	if (eReligion == BAPTISM) return isHasReligion(PURITANISM) || isHasReligion(ANGLICANISM);
-	if (eReligion == METHODISM) return isHasReligion(ANGLICANISM);
+	if (eReligion == BAPTISM) return isHasReligion(PURITANISM) || isHasReligion(EPISCOPALIANISM);
+	if (eReligion == METHODISM) return isHasReligion(EPISCOPALIANISM);
 
 	/*if (GET_PLAYER(getOwnerINLINE()).getStateReligion() == eReligion)
 	{
@@ -14894,9 +14894,9 @@ bool CvCity::isHasPrecursor(ReligionTypes eReligion) const
 
 bool CvCity::isHasConflicting(ReligionTypes eReligion) const
 {
-	if (eReligion == ORTHODOXY || eReligion == CATHOLICISM || eReligion == ANGLICANISM || eReligion == PURITANISM)
+	if (eReligion == ORTHODOXY || eReligion == CATHOLICISM || eReligion == EPISCOPALIANISM || eReligion == PURITANISM)
 	{
-		return isHasReligion(ORTHODOXY) || isHasReligion(CATHOLICISM) || isHasReligion(ANGLICANISM) || isHasReligion(PURITANISM);
+		return isHasReligion(ORTHODOXY) || isHasReligion(CATHOLICISM) || isHasReligion(EPISCOPALIANISM) || isHasReligion(PURITANISM);
 	}
 
 	return false;

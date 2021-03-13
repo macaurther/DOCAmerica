@@ -978,23 +978,23 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_ANGLICAN_MISSIONARY</Class>
-			<Type>UNIT_ANGLICAN_MISSIONARY</Type>
+			<Class>UNITCLASS_EPISCOPALIAN_MISSIONARY</Class>
+			<Type>UNIT_EPISCOPALIAN_MISSIONARY</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_ANGLICAN_MISSIONARY</Description>
+			<Description>TXT_KEY_UNIT_EPISCOPALIAN_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_ANGLICAN_MISSIONARY_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_UNIT_EPISCOPALIAN_MISSIONARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
-					<ReligionType>RELIGION_ANGLICANISM</ReligionType>
+					<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
 					<iReligionSpread>40</iReligionSpread>
 				</ReligionSpread>
 			</ReligionSpreads>
-			<PrereqReligion>RELIGION_ANGLICANISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_ANGLICAN_MONASTERY</PrereqBuilding>
+			<PrereqReligion>RELIGION_EPISCOPALIANISM</PrereqReligion>
+			<PrereqBuilding>BUILDING_EPISCOPALIAN_MONASTERY</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8786,7 +8786,7 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_ANGLICAN_SHRINE</BuildingType>
+					<BuildingType>BUILDING_EPISCOPALIAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
@@ -9391,7 +9391,7 @@
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>
-					<BuildingType>BUILDING_ANGLICAN_SHRINE</BuildingType>
+					<BuildingType>BUILDING_EPISCOPALIAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 				<Building>

@@ -143,7 +143,7 @@ tSpreadFactors = (
 	iPeriphery :	[rMichigan, rWisconsin, rMinnesota, rWashington],
 	iMinority :		[rMissouri, rIllinois, rOhio, rKansas, rNebraska, rIdaho, rOregon],
 },
-# Anglicanism
+# Episcopalianism
 {
 	iCore :			[rVirginia, rSouthDakota, rNorthDakota, rNebraska, rWyoming],
 	iHistorical :	[rMaryland, rNorthCarolina, rSouthCarolina, rGeorgia, rDelaware, rPennsylvania, rConnecticut, rNewYork, rTexas, rAlabama,

@@ -2166,24 +2166,24 @@
 		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Catholic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ANGLICAN_MISSIONARY</Tag>
-		<English>Anglican Missionary</English>
+		<Tag>TXT_KEY_UNIT_EPISCOPALIAN_MISSIONARY</Tag>
+		<English>Episcopalian Missionary</English>
 		<French>
-			<Text>Missionnaire anglican</Text>
+			<Text>Missionnaire Episcopalian</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Anglican Missionar</German>
-		<Italian>Anglican Missionary</Italian>
-		<Spanish>Anglican Missionary</Spanish>
+		<German>Episcopalian Missionar</German>
+		<Italian>Episcopalian Missionary</Italian>
+		<Spanish>Episcopalian Missionary</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ANGLICAN_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
+		<Tag>TXT_KEY_UNIT_EPISCOPALIAN_MISSIONARY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
+		<French>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
+		<German>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
+		<Italian>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PURITAN_MISSIONARY</Tag>

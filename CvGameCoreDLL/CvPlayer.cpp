@@ -25312,8 +25312,8 @@ bool CvPlayer::isTolerating(ReligionTypes eReligion) const
 
 	if (eStateReligion == eReligion) return true;
 
-	bool bStateProtestant = (eStateReligion == ANGLICANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
-	bool bProtestant = (eReligion == ANGLICANISM) || (eReligion == PURITANISM) || (eReligion == BAPTISM) || (eReligion == METHODISM);
+	bool bStateProtestant = (eStateReligion == EPISCOPALIANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
+	bool bProtestant = (eReligion == EPISCOPALIANISM) || (eReligion == PURITANISM) || (eReligion == BAPTISM) || (eReligion == METHODISM);
 	if (bStateProtestant && bProtestant) return true;
 
 	return false;

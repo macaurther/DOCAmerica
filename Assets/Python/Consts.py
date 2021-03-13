@@ -407,22 +407,22 @@ iEngland : 6,
 
 # initialise religion variables to religion indices from XML
 iNumReligions = 8
-(iJudaism, iOrthodoxy, iCatholicism, iAnglicanism, iPuritanism, iBaptism, iMethodism, iMormonism) = range(iNumReligions)
+(iJudaism, iOrthodoxy, iCatholicism, iEpiscopalianism, iPuritanism, iBaptism, iMethodism, iMormonism) = range(iNumReligions)
 
 #Persecution preference
 tPersecutionPreference = (
-(iOrthodoxy, iCatholicism, iAnglicanism, iPuritanism, iBaptism, iMethodism, iMormonism), # Judaism
-(iJudaism, iCatholicism, iAnglicanism, iPuritanism, iBaptism, iMethodism, iMormonism), # Orthodoxy
-(iJudaism, iMormonism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism, iMethodism), # Catholicism
-(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iPuritanism, iBaptism, iMethodism), # Anglicanism
-(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iAnglicanism, iBaptism, iMethodism), # Puritanism
-(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iMethodism), # Baptism
-(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism), # Methodism
-(iJudaism, iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism, iMethodism), # Mormonism
+(iOrthodoxy, iCatholicism, iEpiscopalianism, iPuritanism, iBaptism, iMethodism, iMormonism), # Judaism
+(iJudaism, iCatholicism, iEpiscopalianism, iPuritanism, iBaptism, iMethodism, iMormonism), # Orthodoxy
+(iJudaism, iMormonism, iOrthodoxy, iEpiscopalianism, iPuritanism, iBaptism, iMethodism), # Catholicism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iPuritanism, iBaptism, iMethodism), # Episcopalianism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iEpiscopalianism, iBaptism, iMethodism), # Puritanism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iEpiscopalianism, iPuritanism, iMethodism), # Baptism
+(iJudaism, iMormonism, iCatholicism, iOrthodoxy, iEpiscopalianism, iPuritanism, iBaptism), # Methodism
+(iJudaism, iCatholicism, iOrthodoxy, iEpiscopalianism, iPuritanism, iBaptism, iMethodism), # Mormonism
 )
 
 lCatholicStart = [iSpain, iFrance]
-lAnglicanStart = [iEngland, iVirginia, iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iDelaware, iCanada]
+lEpiscopalianStart = [iEngland, iVirginia, iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iDelaware, iCanada]
 
 # corporations
 iNumCorporations = 9
@@ -458,7 +458,7 @@ iSocialPrograms,) = range(iNumTechs)														#Information 3
 
 iNumUnits = 132
 (iLion, iBear, iPanther, iWolf, iSettler, iPioneer, iWorker, iLabourer, 
-iScout, iExplorer, iSeasonedScout, iSpy, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iAnglicanMissionary, 
+iScout, iExplorer, iSeasonedScout, iSpy, iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iEpiscopalianMissionary, 
 iPuritanMissionary, iBaptistMissionary, iMethodistMissionary, iMormonMissionary, iWarrior, iAxeman, iLightSwordsman, 
 iDogSoldier, iSwordsman,
 iSpearman, iPikeman, 
@@ -513,7 +513,7 @@ iDistillery, iPark, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndus
 iSupermarket, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 
 iBombShelters, iHydroPlant, iSecurityBureau, iStadium, iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, iRecyclingCenter, iLogisticsCenter, 
 iSolarPlant, iFiberNetwork, iAutomatedFactory, iVerticalFarm, iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, 
-iOrthodoxMonastery, iOrthodoxShrine, iCatholicChurch, iCatholicCathedral, iCatholicMonastery, iCatholicShrine, iAnglicanTemple, iAnglicanCathedral, iAnglicanMonastery, iAnglicanShrine, 
+iOrthodoxMonastery, iOrthodoxShrine, iCatholicChurch, iCatholicCathedral, iCatholicMonastery, iCatholicShrine, iEpiscopalianTemple, iEpiscopalianCathedral, iEpiscopalianMonastery, iEpiscopalianShrine, 
 iPuritanTemple, iPuritanCathedral, iPuritanMonastery, iPuritanShrine, iBaptistTemple, iBaptistCathedral, iBaptistMonastery, iBaptistShrine, iMethodistTemple, iMethodistCathedral,
 iMethodistMonastery, iMethodistShrine, iMormonTemple, iMormonCathedral, iMormonMonastery, iMormonShrine,
 iAcademy, iAdministrativeCenter, iManufactory, iArmoury, iMuseum, iStockExchange, 

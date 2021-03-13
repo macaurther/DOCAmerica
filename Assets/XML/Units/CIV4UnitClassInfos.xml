@@ -135,12 +135,12 @@
 			<DefaultUnit>UNIT_CATHOLIC_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_ANGLICAN_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_ANGLICAN_MISSIONARY</Description>
+			<Type>UNITCLASS_EPISCOPALIAN_MISSIONARY</Type>
+			<Description>TXT_KEY_UNIT_EPISCOPALIAN_MISSIONARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_ANGLICAN_MISSIONARY</DefaultUnit>
+			<DefaultUnit>UNIT_EPISCOPALIAN_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_PURITAN_MISSIONARY</Type>

@@ -3829,16 +3829,16 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_ANGLICAN_TEMPLE</BuildingClass>
-			<Type>BUILDING_ANGLICAN_TEMPLE</Type>
+			<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_TEMPLE</BuildingClass>
+			<Type>BUILDING_EPISCOPALIAN_TEMPLE</Type>
 			<SpecialBuildingType>SPECIALBUILDING_TEMPLE</SpecialBuildingType>
-			<Description>TXT_KEY_BUILDING_ANGLICAN_TEMPLE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ANGLICAN_TEMPLE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_ANGLICAN_TEMPLE_STRATEGY</Strategy>
+			<Description>TXT_KEY_BUILDING_EPISCOPALIAN_TEMPLE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_EPISCOPALIAN_TEMPLE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_EPISCOPALIAN_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PROTESTANT_TEMPLE</ArtDefineTag>
-			<ReligionType>RELIGION_ANGLICANISM</ReligionType>
-			<PrereqReligion>RELIGION_ANGLICANISM</PrereqReligion>
+			<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
+			<PrereqReligion>RELIGION_EPISCOPALIANISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
 			<iConquestProb>100</iConquestProb>
@@ -3859,7 +3859,7 @@
 			</CommerceChangeDoubleTimes>
 			<ReligionChanges>
 				<ReligionChange>
-					<ReligionType>RELIGION_ANGLICANISM</ReligionType>
+					<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
 					<iReligionChange>1</iReligionChange>
 				</ReligionChange>
 			</ReligionChanges>
@@ -3878,16 +3878,16 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_ANGLICAN_CATHEDRAL</BuildingClass>
-			<Type>BUILDING_ANGLICAN_CATHEDRAL</Type>
+			<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_CATHEDRAL</BuildingClass>
+			<Type>BUILDING_EPISCOPALIAN_CATHEDRAL</Type>
 			<SpecialBuildingType>SPECIALBUILDING_CATHEDRAL</SpecialBuildingType>
-			<Description>TXT_KEY_BUILDING_ANGLICAN_CATHEDRAL</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ANGLICAN_CATHEDRAL_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_ANGLICAN_CATHEDRAL_STRATEGY</Strategy>
+			<Description>TXT_KEY_BUILDING_EPISCOPALIAN_CATHEDRAL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_EPISCOPALIAN_CATHEDRAL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_EPISCOPALIAN_CATHEDRAL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PROTESTANT_CATHEDRAL</ArtDefineTag>
-			<ReligionType>RELIGION_ANGLICANISM</ReligionType>
-			<PrereqReligion>RELIGION_ANGLICANISM</PrereqReligion>
+			<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
+			<PrereqReligion>RELIGION_EPISCOPALIANISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>300</iCost>
 			<iConquestProb>50</iConquestProb>
@@ -3903,7 +3903,7 @@
 			</CommerceModifiers>
 			<ReligionChanges>
 				<ReligionChange>
-					<ReligionType>RELIGION_ANGLICANISM</ReligionType>
+					<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
 					<iReligionChange>3</iReligionChange>
 				</ReligionChange>
 			</ReligionChanges>
@@ -3928,7 +3928,7 @@
 			</BonusProductionModifiers>
 			<PrereqBuildingClasses>
 				<PrereqBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_ANGLICAN_TEMPLE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_EPISCOPALIAN_TEMPLE</BuildingClassType>
 					<iNumBuildingNeeded>2</iNumBuildingNeeded>
 				</PrereqBuildingClass>
 			</PrereqBuildingClasses>
@@ -3940,16 +3940,16 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_ANGLICAN_MONASTERY</BuildingClass>
-			<Type>BUILDING_ANGLICAN_MONASTERY</Type>
+			<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_MONASTERY</BuildingClass>
+			<Type>BUILDING_EPISCOPALIAN_MONASTERY</Type>
 			<SpecialBuildingType>SPECIALBUILDING_MONASTERY</SpecialBuildingType>
-			<Description>TXT_KEY_BUILDING_ANGLICAN_MONASTERY</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ANGLICAN_MONASTERY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_ANGLICAN_MONASTERY_STRATEGY</Strategy>
+			<Description>TXT_KEY_BUILDING_EPISCOPALIAN_MONASTERY</Description>
+			<Civilopedia>TXT_KEY_BUILDING_EPISCOPALIAN_MONASTERY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_EPISCOPALIAN_MONASTERY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PROTESTANT_MONASTERY</ArtDefineTag>
-			<ReligionType>RELIGION_ANGLICANISM</ReligionType>
-			<PrereqReligion>RELIGION_ANGLICANISM</PrereqReligion>
+			<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
+			<PrereqReligion>RELIGION_EPISCOPALIANISM</PrereqReligion>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>60</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -3973,7 +3973,7 @@
 			</CommerceModifiers>
 			<ReligionChanges>
 				<ReligionChange>
-					<ReligionType>RELIGION_ANGLICANISM</ReligionType>
+					<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
 					<iReligionChange>1</iReligionChange>
 				</ReligionChange>
 			</ReligionChanges>
@@ -3986,17 +3986,17 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_ANGLICAN_SHRINE</BuildingClass>
-			<Type>BUILDING_ANGLICAN_SHRINE</Type>
-			<Description>TXT_KEY_BUILDING_ANGLICAN_SHRINE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ANGLICAN_SHRINE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_ANGLICAN_SHRINE_STRATEGY</Strategy>
+			<BuildingClass>BUILDINGCLASS_EPISCOPALIAN_SHRINE</BuildingClass>
+			<Type>BUILDING_EPISCOPALIAN_SHRINE</Type>
+			<Description>TXT_KEY_BUILDING_EPISCOPALIAN_SHRINE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_EPISCOPALIAN_SHRINE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_EPISCOPALIAN_SHRINE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PROTESTANT_SHRINE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_SHRINE_PROTESTANT</MovieDefineTag>
-			<HolyCity>RELIGION_ANGLICANISM</HolyCity>
-			<ReligionType>RELIGION_ANGLICANISM</ReligionType>
-			<GlobalReligionCommerce>RELIGION_ANGLICANISM</GlobalReligionCommerce>
+			<HolyCity>RELIGION_EPISCOPALIANISM</HolyCity>
+			<ReligionType>RELIGION_EPISCOPALIANISM</ReligionType>
+			<GlobalReligionCommerce>RELIGION_EPISCOPALIANISM</GlobalReligionCommerce>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

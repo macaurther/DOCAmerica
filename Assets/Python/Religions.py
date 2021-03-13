@@ -23,8 +23,8 @@ tCatholicTL = (72, 3)
 tCatholicBR = (74, 1)
 tOrthodoxTL = (72, 3)
 tOrthodoxBR = (74, 1)
-tAnglicanTL = (72, 3)
-tAnglicanBR = (74, 1)
+tEpiscopalianTL = (72, 3)
+tEpiscopalianBR = (74, 1)
 tBoston = (143, 61)
 tPuritanTL = (142, 62)
 tPuritanBR = (143, 60)
@@ -64,7 +64,7 @@ class Religions:
 			self.foundJudaism()
 			self.foundCatholicism()
 			self.foundOrthodoxy()
-			self.foundAnglicanism()
+			self.foundEpiscopalianism()
 
 		self.spreadJudaismAmerica(iGameTurn)
 
@@ -89,8 +89,8 @@ class Religions:
 		if iReligion == iCatholicism:
 			utils.setStateReligionBeforeBirth(lCatholicStart, iCatholicism)
 			
-		elif iReligion == iAnglicanism:
-			utils.setStateReligionBeforeBirth(lAnglicanStart, iAnglicanism)
+		elif iReligion == iEpiscopalianism:
+			utils.setStateReligionBeforeBirth(lEpiscopalianStart, iEpiscopalianism)
 					
 	def getReligionCities(self, iReligion): # Unused
 		lCities = []
@@ -249,11 +249,11 @@ class Religions:
 		if gc.getGame().isReligionFounded(iOrthodoxy): return
 		self.foundReligion(self.selectHolyCity(tOrthodoxTL, tOrthodoxBR, tJerusalem, False), iOrthodoxy)
 
-## ANGLICANISM
+## EPISCOPALIANISM
 
-	def foundAnglicanism(self):
-		if gc.getGame().isReligionFounded(iAnglicanism): return
-		self.foundReligion(self.selectHolyCity(tAnglicanTL, tAnglicanBR, tJerusalem, False), iAnglicanism)
+	def foundEpiscopalianism(self):
+		if gc.getGame().isReligionFounded(iEpiscopalianism): return
+		self.foundReligion(self.selectHolyCity(tEpiscopalianTL, tEpiscopalianBR, tJerusalem, False), iEpiscopalianism)
 
 ## PURITANISM
 

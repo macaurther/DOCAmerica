@@ -1518,68 +1518,68 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Saint Peter's Basilica[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Catholic Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT]. It also spreads [COLOR_HIGHLIGHT_TEXT]Catholicism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_TEMPLE</Tag>
-		<English>Anglican Church</English>
-		<French>Anglican Church</French>
-		<German>Anglican Church</German>
-		<Italian>Anglican Church</Italian>
-		<Spanish>Anglican Church</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_TEMPLE</Tag>
+		<English>Episcopalian Church</English>
+		<French>Episcopalian Church</French>
+		<German>Episcopalian Church</German>
+		<Italian>Episcopalian Church</Italian>
+		<Spanish>Episcopalian Church</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_TEMPLE_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</English>
-		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</French>
-		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT] building.</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_TEMPLE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT] building.</English>
+		<French>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT] building.</French>
+		<German>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT] building.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT] building.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Temples[COLOR_REVERT]) increase a city's happiness and culture. [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT] building.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_MONASTERY</Tag>
-		<English>Anglican Seminary</English>
-		<French>Anglican Seminary</French>
-		<German>Anglican Seminary</German>
-		<Italian>Anglican Seminary</Italian>
-		<Spanish>Anglican Seminary</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_MONASTERY</Tag>
+		<English>Episcopalian Seminary</English>
+		<French>Episcopalian Seminary</French>
+		<German>Episcopalian Seminary</German>
+		<Italian>Episcopalian Seminary</Italian>
+		<Spanish>Episcopalian Seminary</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_MONASTERY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
-		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
-		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Anglican Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_MONASTERY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</English>
+		<French>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</French>
+		<German>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Seminaries[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Monasteries[COLOR_REVERT]) allow you to create [COLOR_UNIT_TEXT]Episcopalian Missionaries[COLOR_REVERT], who can spread [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] in other cities. They also provide culture and a slight boost to research.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_CATHEDRAL</Tag>
-		<English>Anglican Cathedral</English>
-		<French>Anglican Cathedral</French>
-		<German>Anglican Cathedral</German>
-		<Italian>Anglican Cathedral</Italian>
-		<Spanish>Anglican Cathedral</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_CATHEDRAL</Tag>
+		<English>Episcopalian Cathedral</English>
+		<French>Episcopalian Cathedral</French>
+		<German>Episcopalian Cathedral</German>
+		<Italian>Episcopalian Cathedral</Italian>
+		<Spanish>Episcopalian Cathedral</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_CATHEDRAL_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Anglican Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Anglicanism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_CATHEDRAL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cathedral[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Episcopalian Cathedral[COLOR_REVERT]) greatly increases a city's cultural output. It increases the city's happiness if [COLOR_HIGHLIGHT_TEXT]Episcopalianism[COLOR_REVERT] is your state religion, or if you have access to [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_SHRINE</Tag>
-		<English>Anglican Shrine</English>
-		<French>Anglican Shrine</French>
-		<German>Anglican Shrine</German>
-		<Italian>Anglican Shrine</Italian>
-		<Spanish>Anglican Shrine</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_SHRINE</Tag>
+		<English>Episcopalian Shrine</English>
+		<French>Episcopalian Shrine</French>
+		<German>Episcopalian Shrine</German>
+		<Italian>Episcopalian Shrine</Italian>
+		<Spanish>Episcopalian Shrine</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANGLICAN_SHRINE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Anglican Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_BUILDING_EPISCOPALIAN_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Episcopalian Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Episcopalian Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Episcopalian Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Episcopalian Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Episcopalian Shrine[COLOR_REVERT] ([COLOR_BUILDING_TEXT]Protestant Shrine[COLOR_REVERT]) produces one gold each turn for every city in the world that practises [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT], with a limit of 20 gold. It also spreads [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] thoughout the world and increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PURITAN_TEMPLE</Tag>
@@ -3301,11 +3301,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ABBEY_PEDIA</Tag>
-		<English>An abbey has historically been a Catholic or, more recently, Anglican, monastery or convent, under the authority of an Abbot or an Abbess, who serves as the spiritual father or mother of the community. [PARAGRAPH:1] The Abbey is not necessarily a place of monastic enclosure. In cities, Abbeys often offers worship services to the citizen community of Christians with the Abbot giving office, thus also serving as a church. As a monastic building though, the Abbey hosts more religious personnel than a simple church, generally monks or nuns. [PARAGRAPH:1] In the New World, Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university.</English>
-		<French>Une abbaye est historiquement un monastère ou un couvent catholique, puis ultérieurement anglican, sous l'autorité d'un Abbé ou d'une Abbesse qui servait de père ou de mère spirituel pour la communauté. [PARAGRAPH :1] L'abbaye n'est pas nécessairement un lieu de clôture monastique. Dans les villes, les abbayes servent souvent de lieux de culte pour la communauté des chrétiens environnants avec l'Abbé rendant l'office, occupant ainsi la fonction remplie par une église. Cependant, en tant qu'édifice monastique, les Abbayes hébergeaient une communauté religieuse plus nombreuse qu'une simple église, généralement constituée de moines ou de bonnes sours. [PARAGRAPH :1] Dans le Nouveau Monde, des moines catholiques voyageant à l'étranger au nom de Dieu et de leur patrie contribuèrent à créer certaines des plus importantes institutions de la Nouvelle-Espagne, y compris des monastères religieux, des cathédrales et la première université du Nouveau monde.</French>
+		<English>An abbey has historically been a Catholic or, more recently, Episcopalian, monastery or convent, under the authority of an Abbot or an Abbess, who serves as the spiritual father or mother of the community. [PARAGRAPH:1] The Abbey is not necessarily a place of monastic enclosure. In cities, Abbeys often offers worship services to the citizen community of Christians with the Abbot giving office, thus also serving as a church. As a monastic building though, the Abbey hosts more religious personnel than a simple church, generally monks or nuns. [PARAGRAPH:1] In the New World, Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university.</English>
+		<French>Une abbaye est historiquement un monastère ou un couvent catholique, puis ultérieurement Episcopalian, sous l'autorité d'un Abbé ou d'une Abbesse qui servait de père ou de mère spirituel pour la communauté. [PARAGRAPH :1] L'abbaye n'est pas nécessairement un lieu de clôture monastique. Dans les villes, les abbayes servent souvent de lieux de culte pour la communauté des chrétiens environnants avec l'Abbé rendant l'office, occupant ainsi la fonction remplie par une église. Cependant, en tant qu'édifice monastique, les Abbayes hébergeaient une communauté religieuse plus nombreuse qu'une simple église, généralement constituée de moines ou de bonnes sours. [PARAGRAPH :1] Dans le Nouveau Monde, des moines catholiques voyageant à l'étranger au nom de Dieu et de leur patrie contribuèrent à créer certaines des plus importantes institutions de la Nouvelle-Espagne, y compris des monastères religieux, des cathédrales et la première université du Nouveau monde.</French>
 		<German>Eine Abtei war historisch gesehen ein katholisches oder später auch anglikanisches Kloser oder ein Konvent, geführt durch die Authorität eines Abtes, der als geistlicher Vater der Gemeinde diente. [PARAGRAPH:1] Eine Abtei ist jedoch nicht zwingend ein Ort mönchische Abkehr. In Gemeinden bieten Abteien oft geistliche Dienstleistungen für die ansässige christliche Gemeinde und dient somit als Kirche. [PARAGRAPH:1] In der Neuen Welt, vorallem in Neu Spanien, halfen katholsiche Mönche dabei viele der wichtigsten Institutionen zu errichten. Darunter zahlreiche Klöster, Kathedralen und die erste Universität der neuen Welt.</German>
-		<Italian>An abbey has historically been a Catholic or, more recently, Anglican, monastery or convent, under the authority of an Abbot or an Abbess, who serves as the spiritual father or mother of the community. [PARAGRAPH:1] The Abbey is not necessarily a place of monastic enclosure. In cities, Abbeys often offers worship services to the citizen community of Christians with the Abbot giving office, thus also serving as a church. As a monastic building though, the Abbey hosts more religious personnel than a simple church, generally monks or nuns. [PARAGRAPH:1] In the New World, Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university.</Italian>
-		<Spanish>An abbey has historically been a Catholic or, more recently, Anglican, monastery or convent, under the authority of an Abbot or an Abbess, who serves as the spiritual father or mother of the community. [PARAGRAPH:1] The Abbey is not necessarily a place of monastic enclosure. In cities, Abbeys often offers worship services to the citizen community of Christians with the Abbot giving office, thus also serving as a church. As a monastic building though, the Abbey hosts more religious personnel than a simple church, generally monks or nuns. [PARAGRAPH:1] In the New World, Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university.</Spanish>
+		<Italian>An abbey has historically been a Catholic or, more recently, Episcopalian, monastery or convent, under the authority of an Abbot or an Abbess, who serves as the spiritual father or mother of the community. [PARAGRAPH:1] The Abbey is not necessarily a place of monastic enclosure. In cities, Abbeys often offers worship services to the citizen community of Christians with the Abbot giving office, thus also serving as a church. As a monastic building though, the Abbey hosts more religious personnel than a simple church, generally monks or nuns. [PARAGRAPH:1] In the New World, Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university.</Italian>
+		<Spanish>An abbey has historically been a Catholic or, more recently, Episcopalian, monastery or convent, under the authority of an Abbot or an Abbess, who serves as the spiritual father or mother of the community. [PARAGRAPH:1] The Abbey is not necessarily a place of monastic enclosure. In cities, Abbeys often offers worship services to the citizen community of Christians with the Abbot giving office, thus also serving as a church. As a monastic building though, the Abbey hosts more religious personnel than a simple church, generally monks or nuns. [PARAGRAPH:1] In the New World, Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ARMORY</Tag>

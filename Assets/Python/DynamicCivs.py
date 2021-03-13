@@ -113,8 +113,8 @@ lCityStatesStart = []
 dEmpireThreshold = {
 }
 
-lChristianity = [iCatholicism, iOrthodoxy, iAnglicanism, iPuritanism, iBaptism, iMethodism, iMormonism]
-lProtestant = [iAnglicanism, iPuritanism, iBaptism, iMethodism]
+lChristianity = [iCatholicism, iOrthodoxy, iEpiscopalianism, iPuritanism, iBaptism, iMethodism, iMormonism]
+lProtestant = [iEpiscopalianism, iPuritanism, iBaptism, iMethodism]
 
 lRespawnNameChanges = []
 lVassalNameChanges = []

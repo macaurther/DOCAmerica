@@ -5375,8 +5375,8 @@ int CvPlayerAI::AI_getSameReligionAttitude(PlayerTypes ePlayer) const
 		bSameReligion = true;
 	}
 
-	bool bPlayerProtestant = (ePlayerStateReligion == ANGLICANISM) || (ePlayerStateReligion == PURITANISM) || (ePlayerStateReligion == BAPTISM) || (ePlayerStateReligion == METHODISM);
-	bool bProtestant = (eStateReligion == ANGLICANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
+	bool bPlayerProtestant = (ePlayerStateReligion == EPISCOPALIANISM) || (ePlayerStateReligion == PURITANISM) || (ePlayerStateReligion == BAPTISM) || (ePlayerStateReligion == METHODISM);
+	bool bProtestant = (eStateReligion == EPISCOPALIANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
 	if (bPlayerProtestant && bProtestant)
 	{
 		bSameReligion = true;
@@ -5438,8 +5438,8 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 		// Leoreth: no penalties between Confucianism and Taoism
 		//if (((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)))
 		// MacAurther: no penalties between Protestants
-		bool bPlayerProtestant = (ePlayerStateReligion == ANGLICANISM) || (ePlayerStateReligion == PURITANISM) || (ePlayerStateReligion == BAPTISM) || (ePlayerStateReligion == METHODISM);
-		bool bProtestant = (eStateReligion == ANGLICANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
+		bool bPlayerProtestant = (ePlayerStateReligion == EPISCOPALIANISM) || (ePlayerStateReligion == PURITANISM) || (ePlayerStateReligion == BAPTISM) || (ePlayerStateReligion == METHODISM);
+		bool bProtestant = (eStateReligion == EPISCOPALIANISM) || (eStateReligion == PURITANISM) || (eStateReligion == BAPTISM) || (eStateReligion == METHODISM);
 		if (bPlayerProtestant && bProtestant)
 		{
 			return 0;
