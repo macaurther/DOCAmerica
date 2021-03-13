@@ -27,6 +27,7 @@
 
 #MacAurther: States:
 #Virginia in CvCity:getGreatPeopleRate()
+#Massachusetts in CvPlayer::canDoCivics() and in WBS
 #Rhode Island  in CvPlot::calculateNatureYield()
 
 from CvPythonExtensions import *
@@ -94,9 +95,16 @@ class UniquePowers:
 				iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
 				#if city.getRegionID() in lNewWorld and bNewWorld:
 				if iFoodDifference <= 0 or iHappinessDifference <= 0: continue
-				iHistoricalBonus = 0
-				if city.getRegionID() in [rNewYork, rMassachusetts, rVirginia]: iHistoricalBonus = 3
-				lCities.append((city, iHappinessDifference + iFoodDifference / 2 + city.getPopulation() / 2 + iHistoricalBonus))
+				iBonus = 0
+				#if city.getRegionID() in [rNewYork, rMassachusetts, rVirginia]: iBonus += 3
+				iCivicImmigration = pPlayer.getCivics(4)
+				if iCivicImmigration == iHaven: iBonus += 2
+				if iCivicImmigration == iPenalColony: iBonus += 5
+				if iCivicImmigration == iIsolationism: iBonus -= 2
+				if iCivicImmigration == iMeltingPot: iBonus += 4
+				
+				lCities.append((city, iHappinessDifference + iFoodDifference / 2 + city.getPopulation() / 2 + iBonus))
+				
 				# MacAurther TODO: No source cities until Western Migration update
 				'''elif city.getRegionID() not in lNewWorld and not bNewWorld:
 					iValue = 0

@@ -1132,6 +1132,14 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
+		<English>[ICON_BULLET]Chance of Slave Revolt</English>
+		<French>[ICON_BULLET]Chance of Slave Revolt</French>
+		<German>[ICON_BULLET]Chance of Slave Revolt</German>
+		<Italian>[ICON_BULLET]Chance of Slave Revolt</Italian>
+		<Spanish>[ICON_BULLET]Chance of Slave Revolt</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTAINS_OF_INDUSTRY</Tag>
 		<English>Captains of Industry</English>
 		<French>Captains of Industry</French>
@@ -1340,6 +1348,14 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HAVEN_HELP</Tag>
+		<English>[ICON_BULLET]Increases Immigration attractives (+2)</English>
+		<French>[ICON_BULLET]Increases Immigration attractives (+2)</French>
+		<German>[ICON_BULLET]Increases Immigration attractives (+2)</German>
+		<Italian>[ICON_BULLET]Increases Immigration attractives (+2)</Italian>
+		<Spanish>[ICON_BULLET]Increases Immigration attractives (+2)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PENAL_COLONY</Tag>
 		<English>Penal Colony</English>
 		<French>Penal Colony</French>
@@ -1354,6 +1370,14 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HAVEN_HELP</Tag>
+		<English>[ICON_BULLET]Greatly increases Immigration attractives (+5)[ICON_BULLET]High chance of unrest</English>
+		<French>[ICON_BULLET]Greatly increases Immigration attractives (+5)</French>
+		<German>[ICON_BULLET]Greatly increases Immigration attractives (+5)</German>
+		<Italian>[ICON_BULLET]Greatly increases Immigration attractives (+5)</Italian>
+		<Spanish>[ICON_BULLET]Greatly increases Immigration attractives (+5)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FREE_RELIGION</Tag>

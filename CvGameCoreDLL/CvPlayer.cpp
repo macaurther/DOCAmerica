@@ -7932,6 +7932,15 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		}
 	}
 
+	// Egyptian UP: starts with Monarchy, Redistribution and Deification -> MacAurther: Massachusetts UP: starts with Haven, Headright, and Common Law
+	if (getID() == MASSACHUSETTS)
+	{
+		if (eCivic == CIVIC_COMMON_LAW || eCivic == CIVIC_HAVEN || eCivic == CIVIC_HEADRIGHT)
+		{
+			return true;
+		}
+	}
+
 	if (!isHasCivicOption((CivicOptionTypes)(GC.getCivicInfo(eCivic).getCivicOptionType())) && !(GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getCivicInfo(eCivic).getTechPrereq()))))
 	{
 		return false;

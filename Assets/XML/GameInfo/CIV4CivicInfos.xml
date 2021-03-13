@@ -206,6 +206,13 @@
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,8,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
+			<CapitalYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>25</iYield>
+			</CapitalYieldModifiers>
+			<CapitalCommerceModifiers>
+				<iCommerce>25</iCommerce>
+			</CapitalCommerceModifiers>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_ESTATE</BuildingType>
@@ -310,6 +317,7 @@
 			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_SLAVERY_HELP</Help>
 			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,2,2</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -668,18 +676,12 @@
 			<Description>TXT_KEY_CIVIC_HAVEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HAVEN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HAVEN_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_HAVEN_HELP</Help>
 			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,8,2</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<CapitalYieldModifiers>
-				<iYield>0</iYield>
-				<iYield>25</iYield>
-			</CapitalYieldModifiers>
-			<CapitalCommerceModifiers>
-				<iCommerce>25</iCommerce>
-			</CapitalCommerceModifiers>
 			<iStateReligionBuildingProductionModifier>25</iStateReligionBuildingProductionModifier>
 		</CivicInfo>
 		<CivicInfo>

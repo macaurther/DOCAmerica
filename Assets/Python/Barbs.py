@@ -401,4 +401,4 @@ class Barbs:
 	def spawnPowhatanWarriorsI(self, iNumUnits):
 		iHandicap = gc.getHandicapInfo(gc.getGame().getHandicapType()).getBarbarianSpawnModifier()
 		#self.spawnNativesTerritory(iNative, iWarrior, iNumUnits + iHandicap, tEastVATL, tEastVABR)
-		utils.makeUnitAI(iWarrior, iNative, (130,40), UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, iNumUnits + iHandicap)
+		utils.makeUnitAI(iWarrior, iNative, (131,40), UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, iNumUnits + iHandicap)

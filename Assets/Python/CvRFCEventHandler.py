@@ -248,7 +248,9 @@ class CvRFCEventHandler:
 			dc.onCityBuilt(iOwner)
 		
 		# MacAurther: Religion Founding:
-		if iOwner == iMassachusetts:
+		if iOwner == iVirginia:
+			rel.foundEpiscopalianism()
+		elif iOwner == iMassachusetts:
 			rel.foundPuritanism()
 		elif iOwner == iRhodeIsland:
 			rel.foundBaptism()

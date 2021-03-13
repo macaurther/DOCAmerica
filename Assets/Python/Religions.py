@@ -23,8 +23,9 @@ tCatholicTL = (72, 3)
 tCatholicBR = (74, 1)
 tOrthodoxTL = (72, 3)
 tOrthodoxBR = (74, 1)
-tEpiscopalianTL = (72, 3)
-tEpiscopalianBR = (74, 1)
+tJamestown = (131, 39)
+tEpiscopalianTL = (130, 38)
+tEpiscopalianBR = (132, 40)
 tBoston = (143, 61)
 tPuritanTL = (142, 62)
 tPuritanBR = (143, 60)
@@ -64,7 +65,6 @@ class Religions:
 			self.foundJudaism()
 			self.foundCatholicism()
 			self.foundOrthodoxy()
-			self.foundEpiscopalianism()
 
 		self.spreadJudaismAmerica(iGameTurn)
 
@@ -253,7 +253,9 @@ class Religions:
 
 	def foundEpiscopalianism(self):
 		if gc.getGame().isReligionFounded(iEpiscopalianism): return
-		self.foundReligion(self.selectHolyCity(tEpiscopalianTL, tEpiscopalianBR, tJerusalem, False), iEpiscopalianism)
+		
+		self.foundReligion(self.selectHolyCity(tEpiscopalianTL, tEpiscopalianBR, tJamestown, False), iEpiscopalianism)
+		pVirginia.setLastStateReligion(iEpiscopalianism)
 
 ## PURITANISM
 
