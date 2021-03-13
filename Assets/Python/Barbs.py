@@ -31,8 +31,9 @@ tMinorStates = (
 )
 
 # Native Spawn Areas
-tEastVABR = (128, 37)
-tEastVATL = (130, 41)
+tEastVATL = (128, 37)
+tEastVABR = (132, 41)
+
 tEastMABR = (140, 59)
 tEastMATL = (143, 62)
 tEastNHBR = (139, 62)
@@ -378,7 +379,26 @@ class Barbs:
 		tPlot = utils.getRandomEntry(lPlots)
 		
 		if tPlot:
-			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_PILLAGE, iNumUnits, sAdj)
+			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK, iNumUnits, sAdj)
+		
 			
 	def includesActiveHuman(self, lPlayers):
 		return utils.getHumanID() in lPlayers and tBirth[utils.getHumanID()] <= gc.getGame().getGameTurnYear()
+
+	
+	def spawnNativesTerritory(self, iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj=""):
+		'''MacAurther: regardless of territory, all dispersed on several plots, out to pillage'''
+		
+		lPlots = self.possibleTiles(tTL, tBR, bTerritory=True, bImpassable=False)
+		
+		for i in range(iNumUnits):
+			tPlot = utils.getRandomEntry(lPlots)
+			if not tPlot: break
+			
+			lPlots.remove(tPlot)
+			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, 1, sAdj)
+
+	def spawnPowhatanWarriorsI(self, iNumUnits):
+		iHandicap = gc.getHandicapInfo(gc.getGame().getHandicapType()).getBarbarianSpawnModifier()
+		#self.spawnNativesTerritory(iNative, iWarrior, iNumUnits + iHandicap, tEastVATL, tEastVABR)
+		utils.makeUnitAI(iWarrior, iNative, (130,40), UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, iNumUnits + iHandicap)

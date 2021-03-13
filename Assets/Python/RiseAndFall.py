@@ -1265,7 +1265,7 @@ class RiseAndFall:
 		iGameTurn = gc.getGame().getGameTurn()
 		
 		# no conquerors for minor civs
-		if iHasMetTeamY >= iNumPlayers: return
+		'''if iHasMetTeamY >= iNumPlayers: return
 		
 		if iGameTurn > getTurnForYear(600) and iGameTurn < getTurnForYear(1800):
 			if iTeamX in lCivBioNewWorld and iHasMetTeamY in lCivBioOldWorld:
@@ -1345,7 +1345,7 @@ class RiseAndFall:
 							CyInterface().addMessage(iNewWorldCiv, True, iDuration, CyTranslator().getText("TXT_KEY_FIRST_CONTACT_NEWWORLD", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
 						elif utils.getHumanID() == iOldWorldCiv:
 							CyInterface().addMessage(iOldWorldCiv, True, iDuration, CyTranslator().getText("TXT_KEY_FIRST_CONTACT_OLDWORLD", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
-							
+							'''
 	def lateTradingCompany(self, iCiv):
 		pass
 
@@ -1898,8 +1898,11 @@ class RiseAndFall:
 		
 		gc.getMap().plot(i, j).setImprovementType(iHut)
 		
+		#MacAurther TODO: These extra archers are messing with the Native player's AI, and any 
+		# uprising event has the units just wander away. Solutions: makes Native Player 1 and 
+		# Native Player 2? Make unit spawn contingent upon good hut collection?
 		#MacAurther: Also place a defending archer on the hut to make more difficult to get (i.e. need to send a conquering force)
-		utils.makeUnitAI(iArcher, iNative, tPlot, UnitAITypes.UNITAI_DEFENSE, 1)
+		#utils.makeUnitAI(iArcher, iNative, tPlot, UnitAITypes.UNITAI_DEFENSE, 1)
 		
 	def setStateReligion(self, iCiv):
 		lCities = utils.getAreaCities(Areas.getCoreArea(iCiv))

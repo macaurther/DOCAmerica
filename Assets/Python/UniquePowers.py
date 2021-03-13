@@ -125,7 +125,7 @@ class UniquePowers:
 		#utils.debugTextPopup("Source city: "+sourceCity.getName())
 		
 		#iNumMigrations = min(len(lSourceCities) / 4, len(lTargetCities))
-		iNumMigrations = len(lTargetCities)# / 4
+		iNumMigrations = len(lTargetCities) / 4
 		
 		for iMigration in range(iNumMigrations):
 			#sourceCity = lSourceCities[iMigration][0]

@@ -138,30 +138,6 @@
 		<Spanish>Ordenad al gobierno que recolecte este nuevo recurso de inmediato.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANTIMONARCHISTS</Tag>
-		<English>Anti-monarchists are claiming that the King has too much power and that religious leaders need to have some, too.</English>
-		<French>Des anti-monarchistes pr&#233;tendent que le roi a trop de pouvoir, et que les autorit&#233;s religieuses devraient en avoir plus.</French>
-		<German>Gl&#228;ubige Menschen protestieren gegen die Ohnmacht religi&#246;ser Institutionen im Vergleich zur Allmacht Eures K&#246;nigshauses.</German>
-		<Italian>Gli antimonarchici rivendicano che il Re ha troppi poteri, e che i leader religiosi debbano avere i propri poteri rafforzati.</Italian>
-		<Spanish>Antimon&#225;rquicos reclaman qu&#233; el rey tiene demasiado poder y qu&#233; los lideres religiosos deberian tener algo tambien.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANTIMONARCHISTS_1</Tag>
-		<English>Our King is the State!</English>
-		<French>L'&#201;tat, c'est moi !</French>
-		<German>Der Staat bin ich!</German>
-		<Italian>Il Re &#232; lo Stato!</Italian>
-		<Spanish>Nuestro rey es el estado!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANTIMONARCHISTS_2</Tag>
-		<English>It's a valid point, our clerics need more influence.</English>
-		<French>Ce sont de justes revendications, notre clerg&#233; a besoin d'&#234;tre plus influent.</French>
-		<German>Nun gut, ich gew&#228;hre den Geistlichen mehr Einfluss.</German>
-		<Italian>Hanno ragione, le organizzazioni ecclesiastiche devono avere pi&#249; influenza.</Italian>
-		<Spanish>Es un argumento v&#225;lido, nuestro clerigos necesitan m&#225;s influencia.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_APPLESEED_1</Tag>
 		<English>How many trees were planted? That's amazing!</English>
 		<French>Combien d'arbres ont &#233;t&#233; plant&#233;s ? C'est impressionnant !</French>
@@ -889,38 +865,6 @@
 		<German>Das ist inakzeptabel. Sorgt f&#252;r einen "Unfall" des Verr&#228;ters...</German>
 		<Italian>&#200; inaccettabile. Il traditore la deve pagare!</Italian>
 		<Spanish>Inaceptable. El traidor debe sufrir un "accidente"!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST</Tag>
-		<English>A dissident priest from %s2_city is doubting the supreme power of Amun-Re in an unprecedented outbreak of heresy.</English>
-		<French>Un pr&#234;tre dissident de %s2_city a mis en doute la puissance supr&#234;me d'Amon-R&#234;, ouvrant la voie &#224; une nouvelle h&#233;r&#233;sie.</French>
-		<German>Ein kritischer Priester der Stadt %s2_city zweifelt in beispielloser Ketzerei an der Macht des Fruchtbarkeitsgottes.</German>
-		<Italian>Un sacerdote dissidente di %s2_city sta dubitando del potere supremo di Amon-Ra, creando una diffusione di eresie senza precedenti.</Italian>
-		<Spanish>En un brote de herejia sin precedentes, un sacerdote disidente de %s2_city duda del poder supremo de Amun-Re.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST_1</Tag>
-		<English>That is disgusting and preposterous. The heresy must be dealt with in the name of Amun-Re, even if the locals won't support it.</English>
-		<French>C'est inadmissible et d&#233;prav&#233;. Cette h&#233;r&#233;sie doit &#234;tre contrecarr&#233;e au nom d'Amon-R&#234; m&#234;me si les autochtones n'approuvent pas.</French>
-		<German>Beendet im Namen des Fruchtbarkeitsgottes diese widerliche Ketzerei, notfalls mit Gewalt gegen die Bev&#246;lkerung.</German>
-		<Italian>Tutto ci&#242; &#232; disgustoso e assurdo. Dovremo occuparci di questa eresia nel nome di Amon-Ra, anche se non avremo l'appoggio delle popolazioni locali.</Italian>
-		<Spanish>Eso es lamentable y absurdo. La herejia debe ser tratada con el nombre de Amun-Re, incluso si la poblaci&#243;n local no lo apoya.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST_2</Tag>
-		<English>We can ignore that nutter, our people will get over it.</English>
-		<French>Ignorons cet imb&#233;cile, notre peuple s'en remettra.</French>
-		<German>Ignoriert den Verr&#252;ckten, das Volk wird dar&#252;ber hinweg kommen.</German>
-		<Italian>Ignoriamo questo pazzo, il nostro popolo si dimenticher&#224; di tutto ci&#242; che ha detto.</Italian>
-		<Spanish>Podemos ignorar esa minucia, nuestra gente se ocupara de ello.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST_3</Tag>
-		<English>Diversity is good. Allow these beliefs to spread and be recorded, though convincing our people that it's nothing to fear won't be easy.</English>
-		<French>La diversit&#233; est positive. Laissons ces croyances se propager, m&#234;me s'il ne sera pas facile de convaincre notre peuple de leur innocuit&#233; !</French>
-		<German>Der Glaube hat viele Gesichter. Zeichnet die neuen &#220;berzeugungen auf und hindert sie nicht an der Ausbreitung, aber helft den Menschen, ihren Glauben zu wahren.</German>
-		<Italian>La diversit&#224; &#232; un bene.Permettiamo a questa credenza di diffondersi e di essere dichiarata ufficialmente, sebbene convincere i nostri cittadini che non c'&#232; nulla da temere sar&#224; difficile.</Italian>
-		<Spanish>La diversidad es buena. Permitid que esas creencias se difundad y sean preservadas, aunque convencer a nuestra gente de que no hay nada que temer no ser&#225; facil.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DUSTBOWL_1</Tag>
@@ -2899,38 +2843,6 @@
 		<Spanish>&#191;Queremos un ca&#241;&#243;n m&#225;s potente? &#191;Es una pregunta con trampa?</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION</Tag>
-		<English>A rogue radio station in %s2_city is broadcasting propaganda against our ruling party in an amazing display of impudence.</English>
-		<French>Une radio pirate de %s2_city diffuse de fa&#231;on ouverte et insolente de la propagande anti-gouvernementale.</French>
-		<German>Ein Piratensender verbreitet ausgehend von der Stadt %s2_city dreiste Propaganda gegen Eure Regierung.</German>
-		<Italian>Una stazione radio dissidente nella citt&#224; di %s2_city sta diffondendo propaganda contro il nostro partito al potere, mostrando una sorprendente impudenza.</Italian>
-		<Spanish>Una emisora pirata en %s2_city est&#225; emitiendo propaganda contra nuestro partido gobernante en una sorprendente muestra de imprudencia.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION_1</Tag>
-		<English>Send a blackops group to destroy the radio tower, we can blame it on an industrial accident.</English>
-		<French>Envoyez une &#233;quipe d'op&#233;rations noires d&#233;truire la station &#233;mettrice. Nous pr&#233;tendrons qu'il s'agit d'un accident industriel.</French>
-		<German>Ein verdecktes Einsatzkommando soll den Sender zerst&#246;ren, aber lasst es wie einen Unfall aussehen.</German>
-		<Italian>Manda una squadra speciale a distruggere la stazione radio, possiamo addossare le cause ad un incidente industriale.</Italian>
-		<Spanish>Envia un grupo encubierto a destruir la torre de radio, podemos disfrazarlo de accidente industrial.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION_2</Tag>
-		<English>Round up the broadcasters, that should send a message.</English>
-		<French>Envoyez les animateurs au trou, &#231;a devrait faire passer le message.</French>
-		<German>Lasst die Betreiber verhaften, das sollte als Warnung gen&#252;gen.</German>
-		<Italian>Catturate gli annunciatori, capiranno il messaggio.</Italian>
-		<Spanish>Apresa a los locutores, eso enviar&#225; un mensaje.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION_3</Tag>
-		<English>Wait for the station to get more listeners, then round them up along with the broadcasters and send them all to do labour at our factories.</English>
-		<French>Attendez que la station gagne des auditeurs, puis arr&#234;tez les animateurs et les diffuseurs et envoyez-les tous travailler dans nos usines.</French>
-		<German>Stellt fest, wer mit dem Piratensender sympathisiert, dann verhaftet die Staatsfeinde und verurteilt sie zur Zwangsarbeit in den Fabriken.</German>
-		<Italian>Attendete che alla stazione radio si radunino vari ascoltatori, poi catturate gli annunciatori e tutti gli ascoltatori che si erano radunati e mandateli ai lavori forzati nelle nostre fabbriche.</Italian>
-		<Spanish>Espera a que la emisora tenga m&#225;s oyentes, entonces apr&#233;salos junto a los locutores y envialos a trabajar a nuestras f&#225;bricas.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUNNING_BULLS_1</Tag>
 		<English>We are glad to see that the local culture is thriving.</English>
 		<French>Nous sommes ravis de constater que la culture locale est en plein essor.</French>
@@ -3361,30 +3273,6 @@
 		<German>Verteilt so viele Schilde an unsere Truppen, wie wir haben.</German>
 		<Italian>Equipaggia le nostre truppe con gli scudi disponibili.</Italian>
 		<Spanish>Que se env&#237;en escudos a nuestras tropas en la medida en que los suministros lo permitan.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TOXCATL</Tag>
-		<English>During the Toxcatl feast, the young man who is Tezcatlipoca's likeness has escaped from the teokalli in %s2_city before he could be sacrificed!</English>
-		<French>Au cours du festival de Toxcatl, le jeune homme qui incarne Tezcatlipoca s'est &#233;chapp&#233; du teokalli de %s2_city avant qu'il puisse &#234;tre sacrifi&#233; !</French>
-		<German>In der Stadt gibt %s2_city gibt es einen religi&#246;sen Skandal, weil das geweihte Opfer vor der heiligen Blutzeremonie entkommen konnte.</German>
-		<Italian>Durante la celebrazione di Toxcatl un giovane uomo avente le sembianze di Tezcalipoca &#232; scappato dai teokalli nella citt&#224; di %s2_city prima che potesse essere sacrificato!</Italian>
-		<Spanish>Durante el festival Toxcatl, el hombre joven favorito de Tezcatlipoca ha huido del teokalli en %s2_city antes de poder ser sacrificado!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TOXCATL_1</Tag>
-		<English>This is horrible news. May the heavens be merciful...</English>
-		<French>Quelle horrible nouvelle. Que les cieux nous soient cl&#233;ments !</French>
-		<German>Schreckliche Nachricht. M&#246;gen uns die G&#246;tter gn&#228;dig sein.</German>
-		<Italian>&#200; una notizia orribile! Che gli dei abbiano piet&#224;...</Italian>
-		<Spanish>Terribles noticias. Que los cielos sean piadosos...</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TOXCATL_2</Tag>
-		<English>Make every effort to recapture him!</English>
-		<French>Que tout soit fait pour le retrouver !</French>
-		<German>Lasst das Opfer verfolgen und gefangen nehmen, koste es, was es wolle!</German>
-		<Italian>Fate ogni sforzo per ricatturarlo!</Italian>
-		<Spanish>Haz lo que sea necesario para capturarlo!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADING_COMPANY_CONQUERORS_1</Tag>
@@ -5387,14 +5275,6 @@
 		<Spanish>Hay tantos ant&#237;lopes en el imperio %s1:1_civ_adjective que pueden servir como nueva fuente de alimento.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_ANTIMONARCHISTS</Tag>
-		<English>%s1_civ_adjective antimonarchists are protesting, saying that the religious institutions don't have enough power compared to the King.</English>
-		<French>Des anti-monarchistes %s1_civ_adjective manifestent car ils trouvent que les institutions religieuses ne sont pas assez puissantes par rapport au roi.</French>
-		<German>Im %s1:2_civ_adjective Reich protestieren gl&#228;ubige Menschen gegen die Ohnmacht religi&#246;ser Institutionen im Vergleich zur Allmacht des K&#246;nigshauses.</German>
-		<Italian>Gli antimonarchici %s1:3_civ_adjective stanno protestando, dicono che le istituzioni religiose non hanno abbastanza poteri rispetto al re.</Italian>
-		<Spanish>Antimon&#225;rquicos %s1_civ_adjective estan protestando, diciendo que las instituciones religiosas apenas tiene poder frente al Rey.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_APPLESEED</Tag>
 		<English>A %s1_civ_adjective folk hero has caused the creation of a new forest of apple trees.</English>
 		<French>Un jeune paysan %s1:1_civ_adjective a plant&#233; toute une for&#234;t de pommiers.</French>
@@ -5697,14 +5577,6 @@
 		<German>Ein hochrangiger %[s1:3_civ_adjective]r Spion ist zum %s4:2_civ_adjective Reich &#252;bergelaufen.</German>
 		<Italian>Un agente di grado elevato dell'intelligence %s1:2_civ_adjective ha defezionato ed &#232; passato al servizio del governo %s4:1_civ_adjective.</Italian>
 		<Spanish>Un agente de inteligencia %s1_civ_adjective de alto rango ha desertado al gobierno %s4_civ_adjective.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_DISSIDENT_PRIEST</Tag>
-		<English>A priest from %s2_city is doubting the supreme power of Amun-Re.</English>
-		<French>Un pr&#234;tre de %s2_city a mis en doute le pouvoir supr&#234;me d'Amon-R&#234;.</French>
-		<German>Ein Hohepriester der Stadt %s2_city zweifelt an der Macht des Fruchtbarkeitsgottes.</German>
-		<Italian>Un sacerdote di %s2_city dubita del potere supremo di Amon-Ra.</Italian>
-		<Spanish>Un sacerdote de %s2_city duda del poder supremo de Amun-Re.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DUSTBOWL</Tag>
@@ -6451,14 +6323,6 @@
 		<Spanish>Ahora, las unidades de ca&#241;ones %s1:4_civ_adjective pueden disparar m&#225;s lejos y con mayor precisi&#243;n gracias a las mejoras en el dise&#241;o del ca&#241;&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_ROGUE_STATION</Tag>
-		<English>A rogue radio station in the %s1_civ_adjective city of %s2_city is broadcasting propaganda against the ruling party.</English>
-		<French>Une radio pirate dans la ville %s1_civ_adjective de %s2_city diffuse de la propagande anti-gouvernementale.</French>
-		<German>Im %s1:2_civ_adjective Reich verbreitet ein Piratensender ausgehend von der Stadt %s2_city Propaganda gegen die Regierung.</German>
-		<Italian>Una stazione radio dissidente nella citt&#224; %s1:2_civ_adjective di %s2_city sta diffondendo propaganda contro il partito al potere</Italian>
-		<Spanish>Una emisora pirata en la ciudad %s1_civ_adjective de %s2_city est&#225; emitiendo propaganda contra el partido gobernante.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RUNNING_BULLS</Tag>
 		<English>"Running With the Bulls", an annual ritual practiced by the people of %s2_city, is gaining worldwide renown.</English>
 		<French>La course "Courons avec les taureaux", pratiqu&#233;e chaque ann&#233;e par les habitants de %s2_city, est en train de se forger une r&#233;putation mondiale.</French>
@@ -6723,14 +6587,6 @@
 		<Spanish>Las unidades de cuerpo a cuerpo %s1:4_civ_adjective ya se han desplegado con nuevos escudos de mayor tama&#241;o, lo que mejora su capacidad defensiva frente a las unidades con armas de proyectil.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_TOXCATL</Tag>
-		<English>The man who is Tezcatlipoca's likeness has escaped during this year's Toxcatl feast in the %s1_civ_adjective Empire.</English>
-		<French>L'homme qui incarne Tezcatlipoca s'est &#233;chapp&#233; au cours du festival annuel de Toxcatl de l'empire %s1_civ_adjective.</French>
-		<German>Im %s1:2_civ_adjective Reich gibt es einen religi&#246;sen Skandal, weil das geweihte Opfer vor der heiligen Blutzeremonie entkommen konnte.</German>
-		<Italian>L'uomo che ha le sembianze di Tezcalipoca &#232; scappato durante la celebrazione di quest'anno di Toxcatl nell'impero %s1:1_civ_adjective</Italian>
-		<Spanish>El hombre que es el favorito de Tezcatlipoca ha huido durante el festival Toxcatl en el imperio %s1_civ_adjective.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADING_COMPANY_CONQUERORS</Tag>
 		<English>The %s1_civ_adjective Trading Company considers to take further actions to enforce its South Asian market position.</English>
 		<French>La compagnie commerciale %s1_civ_adjective consid&#232;re la possibilit&#233; d'agir pour renforcer sa position sur les march&#233;s d'Asie du Sud.</French>
@@ -6929,5 +6785,77 @@
 		<German>[PARAGRAPH:1]Um diese Quest abzuschlie&#223;en, m&#252;ssen Sie %d1 [COLOR_BUILDING_TEXT]Docks[COLOR_REVERT] in Ihren K&#252;stenst&#228;dten bauen. Au&#223;erdem m&#252;ssen Sie %d2 [COLOR_UNIT_TEXT]Karavellen[COLOR_REVERT] bauen.[PARAGRAPH:1]Sie scheitern, wenn eine andere Zivilisation die Quest vor Ihnen abschlie&#223;t oder wenn Sie das Industriezeitalter erreichen, ohne die Bedingungen erf&#252;llt zu haben.</German>
 		<Italian>[PARAGRAPH:1]To complete this quest, you must construct %d1 [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] in your various coastal cities. You will also have to build %d2 [COLOR_UNIT_TEXT]Caravels[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you reach the Industrial Era without having met the conditions.</Italian>
 		<Spanish>[PARAGRAPH:1]To complete this quest, you must construct %d1 [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] in your various coastal cities. You will also have to build %d2 [COLOR_UNIT_TEXT]Caravels[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you reach the Industrial Era without having met the conditions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_POWHATAN_WAR_I</Tag>
+		<English>Cheif Powhatan has taken a Virginian captain captive.</English>
+		<French>Cheif Powhatan has taken a Virginian captain captive.</French>
+		<German>Cheif Powhatan has taken a Virginian captain captive.</German>
+		<Italian>Cheif Powhatan has taken a Virginian captain captive.</Italian>
+		<Spanish>Cheif Powhatan has taken a Virginian captain captive.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_POWHATAN_WAR_I</Tag>
+		<English>One of our captains has been captured by Chief Powhatan! Our men gather to see how you will handle this tense scenario.</English>
+		<French>One of our captains has been captured by Chief Powhatan! Our men gather to see how you will handle this tense scenario.</French>
+		<German>One of our captains has been captured by Chief Powhatan! Our men gather to see how you will handle this tense scenario.</German>
+		<Italian>One of our captains has been captured by Chief Powhatan! Our men gather to see how you will handle this tense scenario.</Italian>
+		<Spanish>One of our captains has been captured by Chief Powhatan! Our men gather to see how you will handle this tense scenario.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_POWHATAN_WAR_I_1</Tag>
+		<English>Savages! Gather the men, burn their crops and villages for this transgression.</English>
+		<French>Savages! Gather the men, burn their crops and villages for this transgression.</French>
+		<German>Savages! Gather the men, burn their crops and villages for this transgression.</German>
+		<Italian>Savages! Gather the men, burn their crops and villages for this transgression.</Italian>
+		<Spanish>Savages! Gather the men, burn their crops and villages for this transgression.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_POWHATAN_WAR_I_1_HELP</Tag>
+		<English>[ICON_BULLET]Recruit a Crossbowman and severly anger your native neighbors.</English>
+		<French>[ICON_BULLET]Recruit a Crossbowman and severly anger your native neighbors.</French>
+		<German>[ICON_BULLET]Recruit a Crossbowman and severly anger your native neighbors.</German>
+		<Italian>[ICON_BULLET]Recruit a Crossbowman and severly anger your native neighbors.</Italian>
+		<Spanish>[ICON_BULLET]Recruit a Crossbowman and severly anger your native neighbors.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_POWHATAN_WAR_I_2</Tag>
+		<English>Calm down men! We can negotiate for the hostage, and perhaps secure a tenuous alliance with a marriage.</English>
+		<French>Calm down men! We can negotiate for the hostage, and perhaps secure a tenuous alliance with a marriage.</French>
+		<German>Calm down men! We can negotiate for the hostage, and perhaps secure a tenuous alliance with a marriage.</German>
+		<Italian>Calm down men! We can negotiate for the hostage, and perhaps secure a tenuous alliance with a marriage.</Italian>
+		<Spanish>Calm down men! We can negotiate for the hostage, and perhaps secure a tenuous alliance with a marriage.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_POWHATAN_WAR_I_2_HELP</Tag>
+		<English>[ICON_BULLET]Raids may continue.</English>
+		<French>[ICON_BULLET]Raids may continue.</French>
+		<German>[ICON_BULLET]Raids may continue.</German>
+		<Italian>[ICON_BULLET]Raids may continue.</Italian>
+		<Spanish>[ICON_BULLET]Raids may continue.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
+		<English>Friendly natives assist starving Massachusetts colonials.</English>
+		<French>Friendly natives assist starving Massachusetts colonials.</French>
+		<German>Friendly natives assist starving Massachusetts colonials.</German>
+		<Italian>Friendly natives assist starving Massachusetts colonials.</Italian>
+		<Spanish>Friendly natives assist starving Massachusetts colonials.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_THANKSGIVING</Tag>
+		<English>A friendly Patuxet offers to help teach your colonists fishing and farming in this strange new land.</English>
+		<French>A friendly Patuxet offers to help teach your colonists fishing and farming in this strange new land.</French>
+		<German>A friendly Patuxet offers to help teach your colonists fishing and farming in this strange new land.</German>
+		<Italian>A friendly Patuxet offers to help teach your colonists fishing and farming in this strange new land.</Italian>
+		<Spanish>A friendly Patuxet offers to help teach your colonists fishing and farming in this strange new land.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_THANKSGIVING_1</Tag>
+		<English>Let us give thanks!</English>
+		<French>Let us give thanks!</French>
+		<German>Let us give thanks!</German>
+		<Italian>Let us give thanks!</Italian>
+		<Spanish>Let us give thanks!</Spanish>
 	</TEXT>
 </Civ4GameText>

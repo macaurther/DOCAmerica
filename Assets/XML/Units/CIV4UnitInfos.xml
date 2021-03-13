@@ -2618,6 +2618,8 @@
 			</UnitClassDefenseMods>
 			<iConscription>5</iConscription>
 			<iCultureGarrison>8</iCultureGarrison>
+			<iPlainsAttack>15</iPlainsAttack>
+			<iPlainsDefense>15</iPlainsDefense>
 			<iAsset>3</iAsset>
 			<iPower>14</iPower>
 			<UnitMeshGroups>
@@ -2710,6 +2712,8 @@
 			</UnitClassDefenseMods>
 			<iConscription>5</iConscription>
 			<iCultureGarrison>8</iCultureGarrison>
+			<iPlainsAttack>15</iPlainsAttack>
+			<iPlainsDefense>15</iPlainsDefense>
 			<iAsset>3</iAsset>
 			<iPower>14</iPower>
 			<UnitMeshGroups>
@@ -2811,6 +2815,8 @@
 			<iCollateralDamageMaxUnits>5</iCollateralDamageMaxUnits>
 			<iConscription>5</iConscription>
 			<iCultureGarrison>8</iCultureGarrison>
+			<iPlainsAttack>15</iPlainsAttack>
+			<iPlainsDefense>15</iPlainsDefense>
 			<iAsset>3</iAsset>
 			<iPower>14</iPower>
 			<UnitMeshGroups>

@@ -16,6 +16,8 @@ from Consts import * #Rhye
 import RFCUtils #Leoreth
 import Religions #Leoreth
 import PyHelpers #Leoreth
+import Barbs  #MacAurther
+import Areas  #MacAurther
 import CityNameManager as cnm
 from StoredData import data
 from RFCUtils import utils
@@ -24,6 +26,7 @@ gc = CyGlobalContext()
 localText = CyTranslator()
 rel = Religions.Religions()
 localText = CyTranslator()
+barb = Barbs.Barbs()
 
 
 ######## BLESSED SEA ###########
@@ -4228,61 +4231,6 @@ def canTriggerPreachingResearcherCity(argsList):
 		return true
 	return false
 
-######## Toxcatl (Aztec event) #########
-
-def canTriggerToxcatl(argsList):
-	'''kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-
-	if (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_AZTEC")):
-		return true'''
-	return false
-
-######## Dissident Priest (Egyptian event) #######
-
-def canTriggerDissidentPriest(argsList):
-	'''kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-
-	if (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_EGYPT")):
-		return true'''
-	return false
-
-def canTriggerDissidentPriestCity(argsList):
-	iCity = argsList[2]
-	
-	player = gc.getPlayer(argsList[1])
-	city = player.getCity(iCity)
-
-	if city.isGovernmentCenter():
-		return false
-	if (city.getCommerceRateTimes100(CommerceTypes.COMMERCE_CULTURE) < 3000):
-		return false
-	if (player.getStateReligion() != -1):
-		return false
-
-	return true
-
-######## Rogue Station  (Russian event) ###########
-
-def canTriggerRogueStation(argsList):
-	'''kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-
-	if (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_RUSSIA")):
-		return true'''
-	return false
-
-######## Antimonarchists (French event) #########
-
-def canTriggerAntiMonarchists(argsList):
-	'''kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-
-	if (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_FRANCE")):
-		return true'''
-	return false
-
 ######## Impeachment (American event) ########
 
 def canTriggerImpeachment(argsList):
@@ -4536,10 +4484,11 @@ def canTriggerReformation(argsList):
 	return false
 
 def canChooseReformation1(argsList):
-	kTriggeredData = argsList[1]
+	'''kTriggeredData = argsList[1]
 	iPlayer = kTriggeredData.ePlayer
 	
-	return (gc.getPlayer(iPlayer).getStateReligion() == iCatholicism)
+	return (gc.getPlayer(iPlayer).getStateReligion() == iCatholicism)'''
+	return false
 	
 def getReformation1HelpText(argsList):
 	kTriggeredData = argsList[1]
@@ -4633,3 +4582,51 @@ def canTriggerWedding(argsList):
 	iPlayer = kTriggeredData.ePlayer
 	
 	return gc.getPlayer(iPlayer).getCivics(iCivicsGovernment) #not in [iStateParty, iDemocracy]
+
+######## Powhatan War I (MacAurther) ########
+
+def canTriggerPowhatanWarI(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if gc.getGame().getGameTurn() == getTurnForYear(1610) and (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_VIRGINIA")):
+		return true
+	return false
+
+def doPowhatanWarI1(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	pPlayer = gc.getPlayer(iPlayer)
+	
+	capital = Areas.getCapital(iPlayer)
+	pPlayer.initUnit(iCrossbowman, capital[0], capital[1], UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
+	barb.spawnPowhatanWarriorsI(2)
+
+def getHelpPowhatanWarI1(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+		
+	szHelp = localText.getText("TXT_KEY_EVENT_POWHATAN_WAR_I_1_HELP", ( 1, ))
+
+	return szHelp
+
+def doPowhatanWarI2(argsList):
+	barb.spawnPowhatanWarriorsI(0)
+
+def getHelpPowhatanWarI2(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+		
+	szHelp = localText.getText("TXT_KEY_EVENT_POWHATAN_WAR_I_2_HELP", ( 1, ))
+
+	return szHelp
+
+######## Thanksgiving (MacAurther) ########
+
+def canTriggerThanksgiving(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if gc.getGame().getGameTurn() == getTurnForYear(1621) and (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_MASSACHUSETTS")):
+		return true
+	return false
