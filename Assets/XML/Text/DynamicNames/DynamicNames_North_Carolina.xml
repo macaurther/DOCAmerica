@@ -14,8 +14,24 @@
 		<English>North Carolina</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_COLONY</Tag>
+		<English>North Carolina Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_TERRITORY</Tag>
+		<English>North Carolina Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_COMMONWEALTH</Tag>
 		<English>Commonwealth of North Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_DOMINION</Tag>
+		<English>Dominion of North Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_STATE</Tag>
+		<English>State of North Carolina</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NORTH_CAROLINA_CSA</Tag>

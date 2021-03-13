@@ -14,8 +14,24 @@
 		<English>Massachusetts</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_MASSACHUSETTS_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_COLONY</Tag>
+		<English>Massachusetts Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_TERRITORY</Tag>
+		<English>Massachusetts Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_COMMONWEALTH</Tag>
 		<English>Commonwealth of Massachusetts</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_DOMINION</Tag>
+		<English>Dominion of Massachusetts</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MASSACHUSETTS_STATE</Tag>
+		<English>State of Massachusetts</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MASSACHUSETTS_CSA</Tag>

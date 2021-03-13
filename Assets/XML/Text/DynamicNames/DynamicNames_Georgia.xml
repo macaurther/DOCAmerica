@@ -14,8 +14,24 @@
 		<English>Georgia</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_GEORGIA_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_GEORGIA_COLONY</Tag>
+		<English>Georgia Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_TERRITORY</Tag>
+		<English>Georgia Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_COMMONWEALTH</Tag>
 		<English>Commonwealth of Georgia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_DOMINION</Tag>
+		<English>Dominion of Georgia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_GEORGIA_STATE</Tag>
+		<English>State of Georgia</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GEORGIA_CSA</Tag>

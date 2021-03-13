@@ -220,8 +220,8 @@
 			<StartingYear>1635</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>3</LoadingTime>
-				<LoadingTime>999</LoadingTime>
-				<LoadingTime>999</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
@@ -307,9 +307,9 @@
 			<Identifier>DE</Identifier>
 			<StartingYear>1682</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>60</LoadingTime>
-				<LoadingTime>30</LoadingTime>
-				<LoadingTime>10</LoadingTime>
+				<LoadingTime>20</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
@@ -588,9 +588,9 @@
 			<Identifier>GA</Identifier>
 			<StartingYear>1732</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>120</LoadingTime>
-				<LoadingTime>60</LoadingTime>
 				<LoadingTime>30</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>

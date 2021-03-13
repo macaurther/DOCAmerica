@@ -6733,7 +6733,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HARVARD</ArtDefineTag>
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
-			<PrereqTech>TECH_REPRESENTATION</PrereqTech>
+			<PrereqTech>TECH_ACADEMIA</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

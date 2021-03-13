@@ -14,8 +14,24 @@
 		<English>New York</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NEW_YORK_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_NEW_YORK_COLONY</Tag>
+		<English>New York Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_TERRITORY</Tag>
+		<English>New York Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_COMMONWEALTH</Tag>
 		<English>Commonwealth of New York</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_DOMINION</Tag>
+		<English>Dominion of New York</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_YORK_STATE</Tag>
+		<English>State of New York</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NEW_YORK_CSA</Tag>

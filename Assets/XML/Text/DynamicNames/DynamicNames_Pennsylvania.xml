@@ -14,8 +14,24 @@
 		<English>Pennsylvania</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PENNSYLVANIA_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_COLONY</Tag>
+		<English>Pennsylvania Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_TERRITORY</Tag>
+		<English>Pennsylvania Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_COMMONWEALTH</Tag>
 		<English>Commonwealth of Pennsylvania</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_DOMINION</Tag>
+		<English>Dominion of Pennsylvania</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PENNSYLVANIA_STATE</Tag>
+		<English>State of Pennsylvania</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PENNSYLVANIA_CSA</Tag>

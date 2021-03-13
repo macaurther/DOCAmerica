@@ -14,8 +14,24 @@
 		<English>New Hampshire</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_COLONY</Tag>
+		<English>New Hampshire Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_TERRITORY</Tag>
+		<English>New Hampshire Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_COMMONWEALTH</Tag>
 		<English>Commonwealth of New Hampshire</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_DOMINION</Tag>
+		<English>Dominion of New Hampshire</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_STATE</Tag>
+		<English>State of New Hampshire</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NEW_HAMPSHIRE_CSA</Tag>

@@ -1667,6 +1667,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
 			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 1)
 			pMaryland.setLastStateReligion(iCatholicism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iConnecticut:
@@ -1688,6 +1689,8 @@ class RiseAndFall:
 			utils.makeUnit(iMusketman, iCiv, tPlot, 2)
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
+			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
+			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
 			pNorthCarolina.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iSouthCarolina:

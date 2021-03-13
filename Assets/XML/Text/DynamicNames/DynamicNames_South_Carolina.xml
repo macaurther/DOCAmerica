@@ -14,8 +14,24 @@
 		<English>South Carolina</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_COLONY</Tag>
+		<English>South Carolina Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_TERRITORY</Tag>
+		<English>South Carolina Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_COMMONWEALTH</Tag>
 		<English>Commonwealth of South Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_DOMINION</Tag>
+		<English>Dominion of South Carolina</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_STATE</Tag>
+		<English>State of South Carolina</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SOUTH_CAROLINA_CSA</Tag>

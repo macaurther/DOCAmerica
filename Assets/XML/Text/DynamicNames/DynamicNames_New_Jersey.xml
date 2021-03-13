@@ -14,8 +14,24 @@
 		<English>New Jersey</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NEW_JERSEY_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_NEW_JERSEY_COLONY</Tag>
+		<English>New Jersey Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_JERSEY_TERRITORY</Tag>
+		<English>New Jersey Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_JERSEY_COMMONWEALTH</Tag>
 		<English>Commonwealth of New Jersey</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_JERSEY_DOMINION</Tag>
+		<English>Dominion of New Jersey</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEW_JERSEY_STATE</Tag>
+		<English>State of New Jersey</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NEW_JERSEY_CSA</Tag>

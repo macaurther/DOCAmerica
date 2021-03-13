@@ -14,8 +14,24 @@
 		<English>Virginia</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_VIRGINIA_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_VIRGINIA_COLONY</Tag>
+		<English>Virginia Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_TERRITORY</Tag>
+		<English>Virginia Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_COMMONWEALTH</Tag>
 		<English>Commonwealth of Virginia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_DOMINION</Tag>
+		<English>Dominion of Virginia</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_STATE</Tag>
+		<English>State of Virginia</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_VIRGINIA_CSA</Tag>

@@ -14,8 +14,24 @@
 		<English>Maryland</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_MARYLAND_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_MARYLAND_COLONY</Tag>
+		<English>Maryland Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_TERRITORY</Tag>
+		<English>Maryland Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_COMMONWEALTH</Tag>
 		<English>Commonwealth of Maryland</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_DOMINION</Tag>
+		<English>Dominion of Maryland</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MARYLAND_STATE</Tag>
+		<English>State of Maryland</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MARYLAND_CSA</Tag>

@@ -582,6 +582,162 @@ def specificAdjective(iPlayer):
 	elif iPlayer == iEngland:
 		pass
 	
+	elif iPlayer == iVirginia:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_VIRGINIA_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_VIRGINIA_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_VIRGINIA_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_VIRGINIA_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_VIRGINIA_STATE"
+	
+	elif iPlayer == iMassachusetts:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_MASSACHUSETTS_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_MASSACHUSETTS_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_MASSACHUSETTS_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_MASSACHUSETTS_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_MASSACHUSETTS_STATE"
+	
+	elif iPlayer == iNewHampshire:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_NEW_HAMPSHIRE_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_NEW_HAMPSHIRE_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_NEW_HAMPSHIRE_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_NEW_HAMPSHIRE_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_NEW_HAMPSHIRE_STATE"
+	
+	elif iPlayer == iMaryland:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_MARYLAND_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_MARYLAND_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_MARYLAND_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_MARYLAND_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_MARYLAND_STATE"
+	
+	elif iPlayer == iConnecticut:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_CONNECTICUT_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_CONNECTICUT_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_CONNECTICUT_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_CONNECTICUT_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_CONNECTICUT_STATE"
+	
+	elif iPlayer == iRhodeIsland:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_RHODE_ISLAND_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_RHODE_ISLAND_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_RHODE_ISLAND_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_RHODE_ISLAND_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_RHODE_ISLAND_STATE"
+	
+	elif iPlayer == iNorthCarolina:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_NORTH_CAROLINA_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_NORTH_CAROLINA_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_NORTH_CAROLINA_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_NORTH_CAROLINA_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_NORTH_CAROLINA_STATE"
+	
+	elif iPlayer == iSouthCarolina:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_SOUTH_CAROLINA_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_SOUTH_CAROLINA_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_SOUTH_CAROLINA_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_SOUTH_CAROLINA_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_SOUTH_CAROLINA_STATE"
+	
+	elif iPlayer == iNewJersey:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_NEW_JERSEY_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_NEW_JERSEY_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_NEW_JERSEY_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_NEW_JERSEY_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_NEW_JERSEY_STATE"
+	
+	elif iPlayer == iNewYork:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_NEW_YORK_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_NEW_YORK_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_NEW_YORK_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_NEW_YORK_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_NEW_YORK_STATE"
+	
+	elif iPlayer == iPennsylvania:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_PENNSYLVANIA_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_PENNSYLVANIA_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_PENNSYLVANIA_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_PENNSYLVANIA_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_PENNSYLVANIA_STATE"
+	
+	elif iPlayer == iDelaware:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_DELAWARE_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_DELAWARE_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_DELAWARE_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_DELAWARE_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_DELAWARE_STATE"
+	
+	elif iPlayer == iGeorgia:
+		if iCivicGovernment == iRoyalColony:
+			return "TXT_KEY_CIV_GEORGIA_COLONY"
+		elif iCivicGovernment == iTerritory:
+			return "TXT_KEY_CIV_GEORGIA_TERRITORY"
+		elif iCivicGovernment == iCommonwealth:
+			return "TXT_KEY_CIV_GEORGIA_COMMONWEALTH"
+		elif iCivicGovernment == iDominion:
+			return "TXT_KEY_CIV_GEORGIA_DOMINION"
+		elif iCivicGovernment == iState:
+			return "TXT_KEY_CIV_GEORGIA_STATE"
+	
 ### Title methods ###
 
 def title(iPlayer):

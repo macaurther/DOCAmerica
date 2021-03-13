@@ -206,6 +206,11 @@ BeginPlayer
 	CivType=CIVILIZATION_GEORGIA
 	PlayableCiv=1
 	StartingGold=400
+	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL_COLONY
+	CivicOption=CIVICOPTION_LABOR, Civic=CIVIC_INDENTURED_SERVITUDE
+	CivicOption=CIVICOPTION_ECONOMY, Civic=CIVIC_MERCANTILISM
+	CivicOption=CIVICOPTION_IMMIGRATION, Civic=CIVIC_PENAL_COLONY
+	CivicOption=CIVICOPTION_DEVELOPMENT, Civic=CIVIC_HEADRIGHT
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -31542,6 +31547,12 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
 	BeginCity
 		CityOwner=0, (King of Spain)
 		CityName=Mexico City
@@ -36039,6 +36050,12 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
 	BeginCity
 		CityOwner=0, (King of Spain)
 		CityName=San Antonio
@@ -36961,6 +36978,12 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
 	BeginCity
 		CityOwner=0, (King of Spain)
 		CityName=Corpus Christi
@@ -43062,14 +43085,13 @@ BeginPlot
 	x=98,y=15
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=98,y=16
 	BonusType=BONUS_SUGAR
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=98,y=17
@@ -43499,7 +43521,7 @@ BeginPlot
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=99,y=14
@@ -43508,21 +43530,19 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=99,y=15
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=99,y=16
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=99,y=17
@@ -43978,7 +43998,7 @@ BeginPlot
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=100,y=14
@@ -43987,14 +44007,14 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=100,y=15
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=100,y=16
@@ -44441,7 +44461,7 @@ BeginPlot
 	FeatureType=FEATURE_BOG, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=101,y=13
@@ -44450,20 +44470,20 @@ BeginPlot
 	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=101,y=14
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=101,y=15
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=101,y=16
@@ -44472,7 +44492,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=101,y=17
@@ -44910,14 +44930,14 @@ BeginPlot
 	x=102,y=12
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=102,y=13
 	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=102,y=14
@@ -44930,14 +44950,14 @@ BeginPlot
 	x=102,y=15
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=102,y=16
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=102,y=17
@@ -46174,47 +46194,47 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=0
@@ -46629,14 +46649,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -46644,14 +46664,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=105,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -46659,28 +46679,28 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=0
@@ -47080,21 +47100,21 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=72
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47102,7 +47122,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -47110,7 +47130,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47118,21 +47138,21 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47140,7 +47160,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=0
@@ -47226,6 +47246,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=107,y=16
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -47556,21 +47577,21 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47578,14 +47599,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47593,7 +47614,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47601,7 +47622,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -47609,7 +47630,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47617,7 +47638,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=108,y=0
@@ -47735,6 +47756,7 @@ BeginPlot
 	x=108,y=21
 	isNOfRiver
 	RiverWEDirection=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -48035,14 +48057,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=72
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48050,7 +48072,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48058,7 +48080,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48066,7 +48088,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48074,7 +48096,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48082,7 +48104,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48090,7 +48112,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48098,7 +48120,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=0
@@ -48190,6 +48212,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=109,y=17
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -48207,6 +48230,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=109,y=20
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -48524,7 +48548,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48532,21 +48556,21 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -48554,35 +48578,35 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=0
@@ -48986,14 +49010,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49001,7 +49025,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49009,7 +49033,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49017,7 +49041,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49025,7 +49049,7 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49033,14 +49057,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49048,14 +49072,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=0
@@ -49463,14 +49487,14 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=70
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49478,7 +49502,7 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49486,7 +49510,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49496,7 +49520,7 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=74
@@ -49505,14 +49529,14 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49520,14 +49544,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49535,13 +49559,13 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=79
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=0
@@ -49654,6 +49678,7 @@ BeginPlot
 	x=112,y=19
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -49951,14 +49976,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=112,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=112,y=69
@@ -49969,7 +49992,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=70
@@ -49978,7 +50001,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49988,7 +50011,7 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -49997,7 +50020,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50006,13 +50029,13 @@ BeginPlot
 	RiverWEDirection=3
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=74
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=75
@@ -50023,7 +50046,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50031,7 +50054,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50039,7 +50062,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50047,13 +50070,13 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=79
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=0
@@ -50167,6 +50190,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=113,y=20
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -50450,27 +50474,25 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=113,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=113,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50478,7 +50500,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50486,7 +50508,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50494,21 +50516,21 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=113,y=75
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -50520,7 +50542,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -50528,20 +50550,20 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=79
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=0
@@ -50924,35 +50946,33 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=114,y=67
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=114,y=68
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -50960,7 +50980,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -50968,34 +50988,34 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=73
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=75
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=76
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51004,19 +51024,17 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=78
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=114,y=79
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=115,y=0
@@ -51153,12 +51171,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=115,y=24
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=115,y=25
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -51395,27 +51417,24 @@ BeginPlot
 	x=115,y=66
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=115,y=67
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=115,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=115,y=69
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51423,7 +51442,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
@@ -51431,7 +51450,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51439,14 +51458,13 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,1,
+	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51454,7 +51472,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51462,33 +51479,28 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=76
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=115,y=77
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=115,y=78
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=115,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=0
@@ -51587,6 +51599,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=116,y=18
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -51618,6 +51631,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=116,y=23
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -51625,6 +51640,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=116,y=24
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -51884,28 +51901,24 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=67
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51913,7 +51926,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51921,7 +51933,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51929,21 +51940,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=116,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51951,32 +51959,27 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=77
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=78
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=116,y=79
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=0
@@ -52080,6 +52083,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=117,y=18
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -52090,22 +52094,31 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=117,y=20
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=117,y=21
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=117,y=22
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=117,y=23
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -52368,48 +52381,41 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=67
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=72
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -52417,7 +52423,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -52425,7 +52430,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -52433,7 +52437,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -52441,27 +52444,23 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=117,y=78
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=117,y=79
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=0
@@ -52581,12 +52580,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=118,y=21
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=118,y=22
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -52855,63 +52860,54 @@ BeginPlot
 	x=118,y=66
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=67
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=68
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=69
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=72
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=118,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
@@ -52919,7 +52915,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -52927,7 +52922,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
@@ -52935,21 +52929,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=118,y=78
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=118,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=0
@@ -53054,6 +53045,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=119,y=17
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -53061,6 +53054,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=119,y=18
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -53079,12 +53074,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=119,y=21
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=119,y=22
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -53355,55 +53354,47 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=67
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=69
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=72
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=119,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -53411,14 +53402,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=119,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -53426,7 +53415,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -53434,21 +53422,18 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=119,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=119,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=0
@@ -53555,6 +53540,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=120,y=17
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -53562,6 +53551,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=120,y=18
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -53580,6 +53572,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=120,y=21
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_CITRUS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
@@ -53858,14 +53852,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=67
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=68
@@ -53873,80 +53865,68 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=69
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=71
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=72
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=120,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=120,y=79
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=121,y=0
@@ -54055,6 +54035,12 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
 	BeginCity
 		CityOwner=0, (King of Spain)
 		CityName=San Agust&#237;n
@@ -54080,6 +54066,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=121,y=19
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -54093,6 +54081,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=121,y=21
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -54135,6 +54125,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=121,y=27
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -54142,6 +54134,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=121,y=28
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -54388,7 +54382,6 @@ BeginPlot
 	x=121,y=66
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=67
@@ -54396,7 +54389,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=68
@@ -54405,62 +54397,53 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=71
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=121,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=121,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -54468,14 +54451,12 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=121,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -54483,7 +54464,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=122,y=0
@@ -54668,6 +54648,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=122,y=28
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -54922,67 +54903,57 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=122,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=122,y=69
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=122,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=122,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=122,y=72
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=122,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=122,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=122,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=122,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -54990,7 +54961,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
@@ -54998,7 +54968,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -55006,7 +54975,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=0
@@ -55171,12 +55139,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=123,y=25
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=123,y=26
+	isNOfRiver
+	RiverWEDirection=3
 	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
@@ -55438,82 +55410,70 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=123,y=69
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=123,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=123,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=123,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=123,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=74
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=123,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=123,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=123,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=123,y=79
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=0
@@ -55743,8 +55703,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=124,y=37
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -55787,6 +55745,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=124,y=44
+	RiverNSDirection=0
+	isWOfRiver
 	BonusType=BONUS_SHEEP
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
@@ -55794,6 +55754,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=124,y=45
+	RiverNSDirection=0
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -55944,41 +55906,35 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=124,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=124,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=72
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=74
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -55986,34 +55942,29 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=124,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=124,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=124,y=79
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=0
@@ -56235,13 +56186,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=125,y=37
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=125,y=38
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -56300,6 +56254,7 @@ BeginPlot
 	x=125,y=47
 	isNOfRiver
 	RiverWEDirection=1
+	BonusType=BONUS_IRON
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -56435,35 +56390,30 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=125,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -56471,7 +56421,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
@@ -56479,27 +56428,23 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=125,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=125,y=79
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=0
@@ -56672,6 +56617,7 @@ EndPlot
 BeginPlot
 	x=126,y=30
 	BonusType=BONUS_TOBACCO
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -56705,8 +56651,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=126,y=36
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -56782,6 +56726,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=126,y=47
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -56920,20 +56865,17 @@ BeginPlot
 	x=126,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -56941,21 +56883,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=126,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=126,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -56963,7 +56902,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -56971,21 +56909,18 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=78
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=126,y=79
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=127,y=0
@@ -57159,6 +57094,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=127,y=32
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -57182,20 +57119,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=127,y=36
-	isNOfRiver
-	RiverWEDirection=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=127,y=37
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=127,y=38
-	FeatureType=FEATURE_FOREST, FeatureVariety=5
+	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -57203,7 +57141,7 @@ BeginPlot
 	x=127,y=39
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_TOBACCO
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -57222,7 +57160,6 @@ EndPlot
 BeginPlot
 	x=127,y=42
 	BonusType=BONUS_WHEAT
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -57238,7 +57175,7 @@ BeginPlot
 	x=127,y=44
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -57246,19 +57183,18 @@ BeginPlot
 	x=127,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=5
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=127,y=46
 	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=127,y=46
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=127,y=47
-	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -57295,6 +57231,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -57405,19 +57342,16 @@ BeginPlot
 	x=127,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=127,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=127,y=72
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -57425,7 +57359,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
@@ -57433,7 +57366,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -57441,14 +57373,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=127,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -57456,21 +57386,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=127,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=127,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=128,y=0
@@ -57628,17 +57555,24 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=128,y=30
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=128,y=31
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=128,y=32
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -57663,13 +57597,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=128,y=36
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=128,y=37
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -57696,6 +57630,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=128,y=41
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -57715,8 +57650,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=128,y=44
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -57740,6 +57674,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=128,y=48
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -57764,6 +57699,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=128,y=52
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -57879,27 +57815,23 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=128,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=128,y=72
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=73
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -57907,7 +57839,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -57915,7 +57846,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
@@ -57923,28 +57853,24 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=128,y=79
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=129,y=0
@@ -58123,32 +58049,35 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=129,y=34
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=129,y=35
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=129,y=36
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=129,y=37
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=129,y=38
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -58189,7 +58118,8 @@ BeginPlot
 	x=129,y=44
 	isNOfRiver
 	RiverWEDirection=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -58201,6 +58131,7 @@ BeginPlot
 	x=129,y=46
 	isNOfRiver
 	RiverWEDirection=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -58367,27 +58298,23 @@ BeginPlot
 	x=129,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=129,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=129,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=129,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -58395,14 +58322,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
 	x=129,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -58410,7 +58335,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 	Player2Culture=2, (King of England)
 EndPlot
 BeginPlot
@@ -58418,7 +58342,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -58426,7 +58349,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=130,y=0
@@ -58597,19 +58519,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=130,y=33
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=130,y=34
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=130,y=35
-	isNOfRiver
-	RiverWEDirection=1
 	BonusType=BONUS_DEER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
@@ -58617,6 +58541,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=130,y=36
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -58637,6 +58563,7 @@ BeginPlot
 	x=130,y=39
 	isNOfRiver
 	RiverWEDirection=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -58648,6 +58575,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=130,y=41
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -58660,7 +58589,7 @@ EndPlot
 BeginPlot
 	x=130,y=43
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -58837,33 +58766,28 @@ BeginPlot
 	x=130,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=73
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=74
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=130,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=130,y=76
@@ -58872,7 +58796,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -58881,7 +58804,6 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -58889,7 +58811,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=1,2,
 	Player2Culture=1, (King of England)
 EndPlot
 BeginPlot
@@ -58897,7 +58818,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=131,y=0
@@ -59067,6 +58987,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=131,y=33
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -59079,20 +59001,20 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=131,y=35
-	isNOfRiver
-	RiverWEDirection=1
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=131,y=36
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=131,y=37
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -59152,11 +59074,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=131,y=48
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=131,y=49
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -59317,13 +59241,11 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=75
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=76
@@ -59332,28 +59254,24 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=77
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=78
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=131,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=0
@@ -59517,11 +59435,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=132,y=32
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=132,y=33
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -59539,11 +59460,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=132,y=36
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=132,y=37
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -59602,6 +59527,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=132,y=47
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -59615,6 +59541,7 @@ BeginPlot
 	x=132,y=49
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -59656,6 +59583,7 @@ BeginPlot
 	x=132,y=55
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -59780,7 +59708,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=76
@@ -59789,27 +59716,23 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=132,y=79
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=133,y=0
@@ -59984,6 +59907,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=133,y=34
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_BOG, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -60033,6 +59958,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=133,y=43
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -60049,6 +59975,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=133,y=46
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -60083,6 +60010,7 @@ BeginPlot
 	x=133,y=51
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -60090,6 +60018,7 @@ BeginPlot
 	x=133,y=52
 	isNOfRiver
 	RiverWEDirection=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -60101,6 +60030,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=133,y=54
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -60476,6 +60406,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=134,y=42
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -60527,16 +60458,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=134,y=51
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=134,y=52
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=134,y=53
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -60966,6 +60900,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=135,y=50
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -60983,6 +60918,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=135,y=53
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -60996,6 +60932,7 @@ BeginPlot
 	x=135,y=55
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -61059,6 +60996,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=135,y=65
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -61070,11 +61008,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=135,y=67
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=135,y=68
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -61393,6 +61333,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=136,y=49
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -61433,6 +61374,7 @@ BeginPlot
 	x=136,y=56
 	isNOfRiver
 	RiverWEDirection=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -61444,6 +61386,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=136,y=58
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -61843,11 +61786,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=137,y=53
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=137,y=54
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -61859,11 +61804,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=137,y=56
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=137,y=57
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -61888,6 +61835,7 @@ BeginPlot
 	x=137,y=61
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -62292,6 +62240,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=138,y=56
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -62421,7 +62370,6 @@ BeginPlot
 	x=138,y=74
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=138,y=75
@@ -62429,28 +62377,24 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=138,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=138,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=138,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=138,y=79
@@ -62760,6 +62704,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=139,y=59
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -62784,6 +62729,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=139,y=63
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -62852,32 +62798,27 @@ BeginPlot
 	x=139,y=74
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=139,y=75
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=139,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=139,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=139,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=139,y=79
@@ -62886,7 +62827,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=140,y=0
@@ -63165,6 +63105,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=140,y=55
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -63193,6 +63134,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=140,y=60
+	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -63279,39 +63221,33 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=140,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=140,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=140,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=140,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=140,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=141,y=0
@@ -63642,6 +63578,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=141,y=63
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -63726,14 +63663,12 @@ BeginPlot
 	x=141,y=76
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=141,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=141,y=78
@@ -63741,13 +63676,11 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=141,y=79
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=142,y=0
@@ -64052,7 +63985,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=142,y=60
-	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -64063,7 +63995,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	BonusType=BONUS_POTATO
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -64085,6 +64017,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=142,y=65
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -64477,6 +64410,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=143,y=60
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -64890,6 +64824,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=144,y=59
+	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

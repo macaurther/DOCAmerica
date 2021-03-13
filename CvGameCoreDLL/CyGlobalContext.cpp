@@ -68,6 +68,9 @@ CyPlayer* CyGlobalContext::getCyPlayer(int idx)
 	}
 
 	FAssert(idx>=0);
+	//MacAurther TODO: Temp debugging
+	char eIndexChar = (char)idx;
+	FAssertMsg(idx>=0, &eIndexChar);
 	FAssert(idx<MAX_PLAYERS);
 
 	return idx < MAX_PLAYERS && idx != NO_PLAYER ? &cyPlayers[idx] : NULL;

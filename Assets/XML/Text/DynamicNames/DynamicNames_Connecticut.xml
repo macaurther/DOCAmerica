@@ -14,8 +14,24 @@
 		<English>Connecticut</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_CONNECTICUT_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_VIRGINIA_COLONY</Tag>
+		<English>Connecticut Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_TERRITORY</Tag>
+		<English>Connecticut Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_COMMONWEALTH</Tag>
 		<English>Commonwealth of Connecticut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_DOMINION</Tag>
+		<English>Dominion of Connecticut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_STATE</Tag>
+		<English>State of Connecticut</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CONNECTICUT_CSA</Tag>

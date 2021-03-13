@@ -14,8 +14,24 @@
 		<English>Delaware</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_DELAWARE_REPUBLIC</Tag>
+		<Tag>TXT_KEY_CIV_VIRGINIA_COLONY</Tag>
+		<English>Delaware Colony</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_TERRITORY</Tag>
+		<English>Delaware Territory</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_COMMONWEALTH</Tag>
 		<English>Commonwealth of Delaware</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_DOMINION</Tag>
+		<English>Dominion of Delaware</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VIRGINIA_STATE</Tag>
+		<English>State of Delaware</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DELAWARE_CSA</Tag>
