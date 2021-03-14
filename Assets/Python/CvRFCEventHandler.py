@@ -153,7 +153,7 @@ class CvRFCEventHandler:
 		# MacAurther: Hartford should spawn with a Palisade and Barracks
 		if iPlayer == iConnecticut and tCity == Areas.getCapital(iConnecticut):
 			city.setHasRealBuilding(iBarracks, True)
-			city.setHasRealBuilding(iStockade, True)
+			#city.setHasRealBuilding(iStockade, True)
 			
 			city.setName("Hartford", False)
 			
@@ -165,7 +165,7 @@ class CvRFCEventHandler:
 				city.setPopulation(5)
 				
 			city.setHasRealBuilding(iBarracks, True)
-			city.setHasRealBuilding(iStockade, True)
+			#city.setHasRealBuilding(iStockade, True)
 			city.setHasRealBuilding(iLibrary, True)
 			city.setHasRealBuilding(iMarket, True)
 			city.setHasRealBuilding(iGranary, True)
@@ -177,6 +177,11 @@ class CvRFCEventHandler:
 			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
 		
 		if bConquest:
+			# Colombian UP: no resistance in conquered cities in Latin America -> MacAurther: Manifest Destiny Civic
+			# MacAurther TODO: Implement Civic check
+			#if iPlayer == iMaya and utils.isReborn(iMaya):
+			#	if utils.isPlotInArea(tCity, tSouthCentralAmericaTL, tSouthCentralAmericaBR):
+			#		city.setOccupationTimer(0)
 			pass
 					
 		if bTrade:
@@ -211,9 +216,14 @@ class CvRFCEventHandler:
 	def onCityRazed(self, argsList):
 		city, iPlayer = argsList
 		
-		#MacAurther TODO: Sometimes getPreviousOwner returns -1 (no civ)
-		if city.getPreviousOwner() >= 0:
-			dc.onCityRazed(city.getPreviousOwner())
+		# MacAurther: Need to check if previous owner exists because somehow the AI is razing their own cities ¯\_(ツ)_/¯
+		#  My hypothesis is that when cities flip to Independents upon a partial collapse, the m_ePreviousOwner member
+		#  variable isn't being set in CvCity.cpp, so when the AI re-conquers their original city, that variable is still
+		#  unset, leaving it at -1. However, it looks like that should be handled correctly in the right methods, so
+		#  I'm not sure. Anyways, this should be a band-aid.
+		iPrevOwner = city.getPreviousOwner()
+		if iPrevOwner >= 0:
+			dc.onCityRazed(iPrevOwner)
 		self.pla.onCityRazed(city, iPlayer) #Plague
 			
 		vic.onCityRazed(iPlayer, city)	
@@ -578,6 +588,21 @@ class CvRFCEventHandler:
 			teamPlayer = gc.getTeam(iPlayer)
 			if teamPlayer.isHasTech(iEconomics) and teamPlayer.isHasTech(iReplaceableParts):
 				self.rnf.lateTradingCompany(iPlayer)
+		
+		#MacAurther TODO: AI Capital changes (get correct coordinates)
+		'''if utils.getHumanID() != iPlayer:
+			if iPlayer == iVirginia and iEra == iIndustrial:
+				utils.moveCapital(iPlayer, (116, 47)) # Richmond
+			elif iPlayer == iMaryland and iEra == iIndustrial:
+				utils.moveCapital(iPlayer, (60, 44)) # Annapolis
+			elif iPlayer == iNewYork and iEra == iRenaissance:
+				utils.moveCapital(iPlayer, (63, 59)) # Albany
+			elif iPlayer == iNewJersey and iEra == iRenaissance:
+				utils.moveCapital(iPlayer, (63, 59)) # Trenton
+			elif iPlayer == iPennsylvania and iEra == iRenaissance:
+				utils.moveCapital(iPlayer, (62, 49)) # Harrisburg
+			elif iPlayer == iGeorgia and iEra == iRenaissance:
+				utils.moveCapital(iPlayer, (62, 49)) # Atlanta'''
 
 	def onPreSave(self, argsList):
 		'called before a game is actually saved'

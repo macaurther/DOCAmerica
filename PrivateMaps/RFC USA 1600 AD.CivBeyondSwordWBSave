@@ -217,14 +217,14 @@ BeginPlayer
 	Team=16
 	LeaderType=LEADER_WASHINGTON
 	CivType=CIVILIZATION_AMERICA
-	PlayableCiv=1
+	PlayableCiv=0
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
 	Team=17
 	LeaderType=LEADER_MACDONALD
 	CivType=CIVILIZATION_CANADA
-	PlayableCiv=1
+	PlayableCiv=0
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer

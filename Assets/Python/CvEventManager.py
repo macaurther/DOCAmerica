@@ -925,22 +925,26 @@ class CvEventManager(object):
 		
 		#Rhye - start bugfix
 		#owner = PyPlayer(city.getOwner())
-		owner = PyPlayer(city.getPreviousOwner())
-		#Rhye - end bugfix
-		
-		razor = PyPlayer(iPlayer)
-		CvUtil.pyPrint('Player %d Civilization %s City %s was razed by Player %d' 
-			%(owner.getID(), owner.getCivilizationName(), city.getName(), razor.getID()))
-		
-		# Partisans!
-		if city.getPopulation > 1 and iOwner != -1 and iPlayer != -1:
-			owner = gc.getPlayer(iOwner)
-			if not owner.isBarbarian() and owner.getNumCities() > 0:
-				if gc.getTeam(owner.getTeam()).isAtWar(gc.getPlayer(iPlayer).getTeam()):
-					if gc.getNumEventTriggerInfos() > 0: # prevents mods that don't have events from getting an error
-						iEvent = CvUtil.findInfoTypeNum(gc.getEventTriggerInfo, gc.getNumEventTriggerInfos(),'EVENTTRIGGER_PARTISANS')
-						if iEvent != -1 and gc.getGame().isEventActive(iEvent) and owner.getEventTriggerWeight(iEvent) < 0:
-							triggerData = owner.initTriggeredData(iEvent, true, -1, city.getX(), city.getY(), iPlayer, city.getID(), -1, -1, -1, -1)
+		# MacAurther: check to see if PreviousOwner exists first
+		#owner = PyPlayer(city.getPreviousOwner())
+		iOwner = city.getPreviousOwner()
+		if iOwner >= 0:
+			owner = PyPlayer(iOwner)
+			#Rhye - end bugfix
+			
+			razor = PyPlayer(iPlayer)
+			CvUtil.pyPrint('Player %d Civilization %s City %s was razed by Player %d' 
+				%(owner.getID(), owner.getCivilizationName(), city.getName(), razor.getID()))
+			
+			# Partisans!
+			if city.getPopulation > 1 and iOwner != -1 and iPlayer != -1:
+				owner = gc.getPlayer(iOwner)
+				if not owner.isBarbarian() and owner.getNumCities() > 0:
+					if gc.getTeam(owner.getTeam()).isAtWar(gc.getPlayer(iPlayer).getTeam()):
+						if gc.getNumEventTriggerInfos() > 0: # prevents mods that don't have events from getting an error
+							iEvent = CvUtil.findInfoTypeNum(gc.getEventTriggerInfo, gc.getNumEventTriggerInfos(),'EVENTTRIGGER_PARTISANS')
+							if iEvent != -1 and gc.getGame().isEventActive(iEvent) and owner.getEventTriggerWeight(iEvent) < 0:
+								triggerData = owner.initTriggeredData(iEvent, true, -1, city.getX(), city.getY(), iPlayer, city.getID(), -1, -1, -1, -1)
 			
 		CvUtil.pyPrint("City Razed Event: %s" %(city.getName(),))
 	

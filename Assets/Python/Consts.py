@@ -21,11 +21,11 @@ teamNorthCarolina, teamSouthCarolina, teamNewJersey, teamNewYork, teamPennsylvan
 iNumMajorPlayers = iNumPlayers
 iNumActivePlayers = iNumPlayers
 
-iIndependent = iNumPlayers
-iIndependent2 = iNumPlayers+1
-iNative = iNumPlayers+2
+iIndependent = iNumPlayers		#18
+iIndependent2 = iNumPlayers+1	#19
+iNative = iNumPlayers+2			#20
 iNumTotalPlayers = iNumPlayers+3
-iBarbarian = iNumPlayers+3
+iBarbarian = iNumPlayers+3		#21
 iNumTotalPlayersB = iBarbarian+1
 
 (pIndependent, pIndependent2, pNative, pBarbarian) = [gc.getPlayer(i) for i in range(iIndependent, iNumTotalPlayersB)]
