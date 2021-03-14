@@ -5476,8 +5476,7 @@ bool CvGame::isBuildingClassMaxedOut(BuildingClassTypes eIndex, int iExtra)
 		return false;
 	}
 
-	//MacAurther TODO: Temp disabled assert
-	//FAssertMsg(getBuildingClassCreatedCount(eIndex) <= GC.getBuildingClassInfo(eIndex).getMaxGlobalInstances(), "Index is expected to be within maximum bounds (invalid Index)");
+	FAssertMsg(getBuildingClassCreatedCount(eIndex) <= GC.getBuildingClassInfo(eIndex).getMaxGlobalInstances(), "Index is expected to be within maximum bounds (invalid Index)");
 
 	return ((getBuildingClassCreatedCount(eIndex) + iExtra) >= GC.getBuildingClassInfo(eIndex).getMaxGlobalInstances());
 }

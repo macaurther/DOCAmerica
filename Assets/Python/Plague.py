@@ -25,6 +25,7 @@ class Plague:
 
 
 	def setup(self):
+		# MacAurther TODO: Plauges
 		for iPlayer in range(iNumMajorPlayers):
 			data.players[iPlayer].iPlagueCountdown = -utils.getTurns(iImmunity)
 			
@@ -32,11 +33,11 @@ class Plague:
 		data.lGenericPlagueDates[2] = 300 # safe value to prevent plague at start of 1700 AD scenario
 		
 		if utils.getScenario() == i1600AD:
-			data.lGenericPlagueDates[0] = getTurnForYear(400) + utils.variation(20)
+			data.lGenericPlagueDates[0] = getTurnForYear(1920) + utils.variation(5)
 			
-		data.lGenericPlagueDates[1] = getTurnForYear(1300) + utils.variation(20)
+		data.lGenericPlagueDates[1] = getTurnForYear(1980) + utils.variation(5)
 			
-		data.lGenericPlagueDates[3] = getTurnForYear(1850) + utils.variation(20)
+		data.lGenericPlagueDates[3] = getTurnForYear(2020) + utils.variation(5)
 
 		undoPlague = gc.getGame().getSorenRandNum(8, 'undo')
 		if undoPlague <= 3:
@@ -60,11 +61,11 @@ class Plague:
 				elif data.players[iPlayer].iPlagueCountdown < 0:
 					data.players[iPlayer].iPlagueCountdown += 1
 
-		for iPlague, iPlagueDate in enumerate(data.lGenericPlagueDates):
+		for iPlagueEvent, iPlagueDate in enumerate(data.lGenericPlagueDates):
 			if iGameTurn == iPlagueDate:
 				#print ("new plague")
-				self.startPlague(iPlague)
-			if iPlague >= 1:
+				self.startPlague(iPlagueEvent)
+			if iPlagueEvent >= 1:
 				#retry if the epidemic is dead too quickly
 				if iGameTurn == iPlagueDate + 4:
 					iInfectedCounter = 0
@@ -73,8 +74,8 @@ class Plague:
 							iInfectedCounter += 1
 					if iInfectedCounter == 1:
 						#print ("new plague again1")
-						self.startPlague(iPlague)
-			if iPlague == 2 or iPlague == 3:
+						self.startPlague(iPlagueEvent)
+			if iPlagueEvent == 2 or iPlagueEvent == 3:
 				if iGameTurn == iPlagueDate + 8:
 					iInfectedCounter = 0
 					for iPlayer in range(iNumTotalPlayersB):
@@ -82,7 +83,7 @@ class Plague:
 							iInfectedCounter += 1
 					if iInfectedCounter <= 2:
 						#print ("new plague again2")
-						self.startPlague(iPlague)
+						self.startPlague(iPlagueEvent)
 
 	def checkPlayerTurn(self, iGameTurn, iPlayer):
 		if data.bNoPlagues:
