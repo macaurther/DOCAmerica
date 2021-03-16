@@ -499,18 +499,18 @@ iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, 
 iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
 # Buildings
 
-iNumBuildings = 170
+iNumBuildings = 178
 (iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument,
 iTotemPole, iWalls, iStable, iLibrary,
 iHarbor, iTheatre,
-iArena, iLighthouse, iWeaver,
+iArena, iLighthouse, iCastleHill, iWeaver,
 iMarket, iJail, iForge, 
 iPharmacy, iPostOffice,
 iWharf, iCrabbery, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity,
-iCivicSquare, iSewer, iStarFort, iEstate,
-iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iFactory,
-iDistillery, iPark, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndustrialPark, iCinema, iHospital, 
-iSupermarket, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 
+iCivicSquare, iCommon, iSewer, iStarFort, iEstate, iLowcountryPlantation, iBorough, 
+iMilldamPlantation, iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iHouseOfBurgesses, iFactory,
+iDistillery, iVinairgrery, iPark, iGarden, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndustrialPark, iCinema, 
+iHospital, iSupermarket, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 
 iBombShelters, iHydroPlant, iSecurityBureau, iStadium, iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, iRecyclingCenter, iLogisticsCenter, 
 iSolarPlant, iFiberNetwork, iAutomatedFactory, iVerticalFarm, iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, 
 iOrthodoxMonastery, iOrthodoxShrine, iCatholicChurch, iCatholicCathedral, iCatholicMonastery, iCatholicShrine, iEpiscopalianTemple, iEpiscopalianCathedral, iEpiscopalianMonastery, iEpiscopalianShrine, 
