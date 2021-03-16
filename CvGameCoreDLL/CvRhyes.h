@@ -15,8 +15,8 @@ typedef list<char*> LISTCHAR;
 #define BEGIN_GREAT_WONDERS			(BEGIN_WONDERS+13) // increment if a national wonder is added
 
 #define NUM_MAJOR_PLAYERS		(18)
-#define NUM_MINORS				(4)	 // Independent, Independent2, Natives, Barbarians
-#define NUM_CIVS				(22)
+#define NUM_MINORS				(5)	 // Independent, Independent2, Native, Native2, Barbarians
+#define NUM_CIVS				(23)
 
 #define NUM_ERAS				(ERA_INFORMATION+1)
 

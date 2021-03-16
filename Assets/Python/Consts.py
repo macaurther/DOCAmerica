@@ -41,10 +41,10 @@ l0ArrayTotal =  [0 for i in range(iNumTotalPlayers)]
 lm1Array =      [-1 for i in range(iNumPlayers)]
 
 # civilizations, not players
-iNumCivilizations = 22
+iNumCivilizations = 23
 (iCivAmerica, iCivCanada, iCivConnecticut, iCivDelaware, iCivEngland, iCivFrance, iCivGeorgia, iCivMaryland, iCivMassachusetts,
 iCivNewHampshire, iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivSpain,
-iCivVirginia, iCivIndependent, iCivIndependent2, iCivNative, iCivBarbarian) = range(iNumCivilizations)
+iCivVirginia, iCivIndependent, iCivIndependent2, iCivNative, iCivNative2, iCivBarbarian) = range(iNumCivilizations)
 
 #for Congresses and Victory
 lCivGroups = [[iSpain, iFrance, iEngland],  #Euros

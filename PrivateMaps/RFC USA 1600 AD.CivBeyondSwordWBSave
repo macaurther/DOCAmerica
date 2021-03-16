@@ -259,7 +259,7 @@ EndPlayer
 BeginPlayer
 	Team=21
 	LeaderType=LEADER_NATIVE
-	CivType=CIVILIZATION_NATIVE
+	CivType=CIVILIZATION_NATIVE2
 	PlayableCiv=0
 	MinorNationStatus=1
 	StartingGold=100
