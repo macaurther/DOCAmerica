@@ -72,7 +72,10 @@ BeginTeam
 	TeamID=20, (Native)
 EndTeam
 BeginTeam
-	TeamID=21, (Barbarian)
+	TeamID=21, (Native2)
+EndTeam
+BeginTeam
+	TeamID=22, (Barbarian)
 EndTeam
 BeginTeam
 EndTeam
@@ -255,6 +258,15 @@ BeginPlayer
 EndPlayer
 BeginPlayer
 	Team=21
+	LeaderType=LEADER_NATIVE
+	CivType=CIVILIZATION_NATIVE
+	PlayableCiv=0
+	MinorNationStatus=1
+	StartingGold=100
+	Handicap=HANDICAP_REGENT
+EndPlayer
+BeginPlayer
+	Team=22
 	LeaderType=LEADER_BARBARIAN
 	CivType=CIVILIZATION_BARBARIAN
 	PlayableCiv=0
