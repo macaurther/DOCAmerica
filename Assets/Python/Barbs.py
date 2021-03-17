@@ -63,7 +63,19 @@ class Barbs:
 						iUnit = utils.getRandomEntry(lUnitList)
 						utils.makeUnit(iUnit, iOwner, tPlot, 1)
 
-		#American natives
+		# FOB - add blocking units
+		if iGameTurn == getTurnForYear(1600):
+			self.trySpawnNativeBlocker(iWarrior, 2, 98, 26)
+			self.trySpawnNativeBlocker(iWarrior, 2, 99, 31)
+			self.trySpawnNativeBlocker(iWarrior, 2, 98, 39)
+			self.trySpawnNativeBlocker(iWarrior, 2, 98, 16)
+
+		# American natives
+		if utils.isYearIn(1600, 1700):
+			print "trying to spawn nomad natives"
+			self.checkSpawn(iNative2, iArcher, 1 + iHandicap, (85, 14), (121, 49), self.spawnNomads, iGameTurn, 3, 0)
+			self.checkSpawn(iNative2, iWarrior, 1 + iHandicap, (85, 14), (121, 49), self.spawnNomads, iGameTurn, 3, 1)
+
 		# MacAurther TODO: This is not fun, find something better:
 		'''if iGameTurn == getTurnForYear(1610): #Powhatan War I
 			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
@@ -313,7 +325,6 @@ class Barbs:
 		
 		# near a city if specified (next to cities excluded above)
 		if bNearCity and not [(i, j) for (i, j) in utils.surroundingPlots(tPlot, 2, lambda (a, b): not gc.getMap().plot(a, b).isCity())]: return False
-		
 		# not on landmasses without cities
 		if not bWater and gc.getMap().getArea(plot.getArea()).getNumCities() == 0: return False
 		
@@ -353,8 +364,8 @@ class Barbs:
 	def spawnNomads(self, iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj=""):
 		'''Leoreth: represents aggressive steppe nomads etc.
 			    outside of territory, not in jungles, in small groups, target cities'''
-		
 		lPlots = self.possibleTiles(tTL, tBR, bTerritory=False)
+
 		tPlot = utils.getRandomEntry(lPlots)
 		
 		if tPlot:
@@ -398,7 +409,12 @@ class Barbs:
 			lPlots.remove(tPlot)
 			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, 1, sAdj)
 
+	def trySpawnNativeBlocker(self, iUnitType, iNumUnits, iX, iY):
+		plot = gc.getMap().plot(iX, iY)
+		if not plot.isOwned():
+			utils.makeUnitAI(iUnitType, iNative2, (iX,iY), UnitAITypes.UNITAI_DEFENSE, iNumUnits)
+
 	def spawnPowhatanWarriorsI(self, iNumUnits):
 		iHandicap = gc.getHandicapInfo(gc.getGame().getHandicapType()).getBarbarianSpawnModifier()
 		#self.spawnNativesTerritory(iNative, iWarrior, iNumUnits + iHandicap, tEastVATL, tEastVABR)
-		utils.makeUnitAI(iWarrior, iNative, (131,40), UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, iNumUnits + iHandicap)
+		utils.makeUnitAI(iWarrior, iNative, (131,40), UnitAITypes.UNITAI_ATTACK, iNumUnits + iHandicap, "Powhatan")
