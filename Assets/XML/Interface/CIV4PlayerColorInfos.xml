@@ -199,6 +199,12 @@
 			<TextColorType>COLOR_PLAYER_DARK_GRAY_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_DARK_GRAY_YELLOW2</Type> <!-- Native2 -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GRAY4</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GRAY_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
 			<Type>PLAYERCOLOR_MIDDLE_PURPLE</Type>
 			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_PURPLE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_GOLDENROD</ColorTypeSecondary>

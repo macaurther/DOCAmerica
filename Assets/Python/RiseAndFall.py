@@ -1904,8 +1904,11 @@ class RiseAndFall:
 		#MacAurther TODO: These extra archers are messing with the Native player's AI, and any 
 		# uprising event has the units just wander away. Solutions: makes Native Player 1 and 
 		# Native Player 2? Make unit spawn contingent upon good hut collection?
+		#FOB - Added native player 2 and random chance to spawn guard
 		#MacAurther: Also place a defending archer on the hut to make more difficult to get (i.e. need to send a conquering force)
-		#utils.makeUnitAI(iArcher, iNative, tPlot, UnitAITypes.UNITAI_DEFENSE, 1)
+		iGuardResult = gc.getGame().getSorenRandNum(100, 'Hut guard chance')
+		if iGuardResult < iGoodyHutGuardChance:
+			utils.makeUnitAI(iArcher, iNative2, tPlot, UnitAITypes.UNITAI_DEFENSE, 1)
 		
 	def setStateReligion(self, iCiv):
 		lCities = utils.getAreaCities(Areas.getCoreArea(iCiv))
