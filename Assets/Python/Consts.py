@@ -7,6 +7,8 @@ gc = CyGlobalContext()
 iWorldX = 150
 iWorldY = 80
 
+iGoodyHutGuardChance = 60
+
 # initialise player variables to player IDs from WBS
 iNumPlayers = 18
 (iSpain, iFrance, iEngland, iVirginia, iMassachusetts, iNewHampshire, iMaryland, iConnecticut, iRhodeIsland, 
@@ -22,14 +24,15 @@ iNumMajorPlayers = iNumPlayers
 iNumActivePlayers = iNumPlayers
 
 iIndependent = iNumPlayers		#18
-iIndependent2 = iNumPlayers+1	#19
+iIndependent2 = iNumPlayers+1	        #19
 iNative = iNumPlayers+2			#20
-iNumTotalPlayers = iNumPlayers+3
-iBarbarian = iNumPlayers+3		#21
+iNative2 = iNumPlayers+3	        #21
+iNumTotalPlayers = iNumPlayers+4
+iBarbarian = iNumPlayers+4		#22
 iNumTotalPlayersB = iBarbarian+1
 
-(pIndependent, pIndependent2, pNative, pBarbarian) = [gc.getPlayer(i) for i in range(iIndependent, iNumTotalPlayersB)]
-(teamIndependent, teamIndependent2, teamNative, teamBarbarian) = [gc.getTeam(i) for i in range(iIndependent, iNumTotalPlayersB)]
+(pIndependent, pIndependent2, pNative, pNative2, pBarbarian) = [gc.getPlayer(i) for i in range(iIndependent, iNumTotalPlayersB)]
+(teamIndependent, teamIndependent2, teamNative, teamNative2, teamBarbarian) = [gc.getTeam(i) for i in range(iIndependent, iNumTotalPlayersB)]
 
 l0Array =       [0 for i in range(iNumPlayers)]
 l0ArrayActive = [0 for i in range(iNumPlayers)]
@@ -38,10 +41,10 @@ l0ArrayTotal =  [0 for i in range(iNumTotalPlayers)]
 lm1Array =      [-1 for i in range(iNumPlayers)]
 
 # civilizations, not players
-iNumCivilizations = 22
+iNumCivilizations = 23
 (iCivAmerica, iCivCanada, iCivConnecticut, iCivDelaware, iCivEngland, iCivFrance, iCivGeorgia, iCivMaryland, iCivMassachusetts,
 iCivNewHampshire, iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivSpain,
-iCivVirginia, iCivIndependent, iCivIndependent2, iCivNative, iCivBarbarian) = range(iNumCivilizations)
+iCivVirginia, iCivIndependent, iCivIndependent2, iCivNative, iCivNative2, iCivBarbarian) = range(iNumCivilizations)
 
 #for Congresses and Victory
 lCivGroups = [[iSpain, iFrance, iEngland],  #Euros
@@ -60,7 +63,7 @@ lTechGroups = [[iSpain, iFrance, iEngland],  #Euros
 lCivBioOldWorld = [iSpain, iFrance, iEngland, iAmerica, iCanada, iIndependent, iIndependent2]
 lCivBioNewWorld = [iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
 		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia, 
-		iNative, iBarbarian]
+		iNative, iNative2, iBarbarian]
 
 
 #for Victory and the handler

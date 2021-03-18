@@ -1231,6 +1231,7 @@ enum PlayerTypes				// Exposed to Python
 	INDEPENDENT,
 	INDEPENDENT2,
 	NATIVE,
+	NATIVE2,
 	BARBARIAN
 };
 
