@@ -18,9 +18,9 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 # MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish
 tMinorCities = (
 	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iMusketman, 1),			# Fort Orange (Albany)
-	(1625, (136, 55), iIndependent, 'Nieuw Amsterdam', 1, iMusketman, 1),		# New Amsterdam (New York)
-	(1630, (139, 58), iIndependent, 'Fort de Goede Hoop', 1, iMusketman, 1),	# Fort de Goede Hoop (Hartford)
-	(1638, (132, 47), iIndependent2, 'Fort Kristina', 1, iMusketman, 1),		# Fort Kristina (Wilmington)
+	(1625, (137, 54), iIndependent, 'Nieuw Amsterdam', 1, iMusketman, 1),		# New Amsterdam (New York)
+	(1630, (140, 57), iIndependent, 'Fort de Goede Hoop', 1, iMusketman, 1),	# Fort de Goede Hoop (Hartford)
+	(1638, (134, 48), iIndependent2, 'Fort Kristina', 1, iMusketman, 1),		# Fort Kristina (Wilmington)
 	(1653, (129, 34), iIndependent2, 'Raleigh', 1, iMusketman, 1),				# Albemarle Settlers
 )
 

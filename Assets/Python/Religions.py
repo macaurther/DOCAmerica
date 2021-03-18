@@ -17,24 +17,24 @@ PyPlayer = PyHelpers.PyPlayer
 # initialise coordinates
 # MacAurther TODO: For now, put all old world religion holy cities in Mexico City, but need to find a better solution
 tJerusalem = (73, 2)
-tJewishTL = (72, 3)
-tJewishBR = (74, 1)
-tCatholicTL = (72, 3)
-tCatholicBR = (74, 1)
-tOrthodoxTL = (72, 3)
-tOrthodoxBR = (74, 1)
-tJamestown = (131, 39)
-tEpiscopalianTL = (130, 38)
-tEpiscopalianBR = (132, 40)
+tJewishBL = (72, 1)
+tJewishTR = (74, 3)
+tCatholicBL = (72, 1)
+tCatholicTR = (74, 3)
+tOrthodoxBL = (72, 1)
+tOrthodoxTR = (74, 3)
+tJamestown = (132, 39)
+tEpiscopalianBL = (130, 38)
+tEpiscopalianTR = (132, 40)
 tBoston = (143, 61)
-tPuritanTL = (142, 62)
-tPuritanBR = (143, 60)
-tProvidence = (142, 59)
-tBaptistTL = (138, 59)
-tBaptistBR = (142, 57)
+tPuritanBL = (143, 59)
+tPuritanTR = (145, 61)
+tProvidence = (143, 57)
+tBaptistBL = (142, 56)
+tBaptistTR = (144, 58)
 tSavannah = (121, 22)
-tMethodistTL = (120, 25)
-tMethodistBR = (124, 21)
+tMethodistBL = (120, 21)
+tMethodistTR = (124, 25)
 
 dCatholicPreference = {
 iSpain		: 95,
@@ -216,7 +216,7 @@ class Religions:
 
 	def foundJudaism(self):
 		if gc.getGame().isReligionFounded(iJudaism): return
-		self.foundReligion(self.selectHolyCity(tJewishTL, tJewishBR, tJerusalem, False), iJudaism)
+		self.foundReligion(self.selectHolyCity(tJewishBL, tJewishTR, tJerusalem, False), iJudaism)
 			
 	def spreadJudaismAmerica(self, iGameTurn):
 		#self.spreadReligionToRegion(iJudaism, [rCanada, rAlaska, rUnitedStates], iGameTurn, 1850, 10, 4)
@@ -241,20 +241,20 @@ class Religions:
 
 	def foundCatholicism(self):
 		if gc.getGame().isReligionFounded(iCatholicism): return
-		self.foundReligion(self.selectHolyCity(tCatholicTL, tCatholicBR, tJerusalem, False), iCatholicism)
+		self.foundReligion(self.selectHolyCity(tCatholicBL, tCatholicTR, tJerusalem, False), iCatholicism)
 
 ## ORTHODOXY
 
 	def foundOrthodoxy(self):
 		if gc.getGame().isReligionFounded(iOrthodoxy): return
-		self.foundReligion(self.selectHolyCity(tOrthodoxTL, tOrthodoxBR, tJerusalem, False), iOrthodoxy)
+		self.foundReligion(self.selectHolyCity(tOrthodoxBL, tOrthodoxTR, tJerusalem, False), iOrthodoxy)
 
 ## EPISCOPALIANISM
 
 	def foundEpiscopalianism(self):
 		if gc.getGame().isReligionFounded(iEpiscopalianism): return
 		
-		self.foundReligion(self.selectHolyCity(tEpiscopalianTL, tEpiscopalianBR, tJamestown, False), iEpiscopalianism)
+		self.foundReligion(self.selectHolyCity(tEpiscopalianBL, tEpiscopalianTR, tJamestown, False), iEpiscopalianism)
 		pVirginia.setLastStateReligion(iEpiscopalianism)
 
 ## PURITANISM
@@ -262,7 +262,7 @@ class Religions:
 	def foundPuritanism(self):
 		if gc.getGame().isReligionFounded(iPuritanism): return
 
-		self.foundReligion(self.selectHolyCity(tPuritanTL, tPuritanBR, tBoston, False), iPuritanism)
+		self.foundReligion(self.selectHolyCity(tPuritanBL, tPuritanTR, tBoston, False), iPuritanism)
 		pMassachusetts.setLastStateReligion(iPuritanism)
 
 ## BAPTISM
@@ -270,7 +270,7 @@ class Religions:
 	def foundBaptism(self):
 		if gc.getGame().isReligionFounded(iBaptism): return
 		
-		self.foundReligion(self.selectHolyCity(tBaptistTL, tBaptistBR, tProvidence, False), iBaptism)
+		self.foundReligion(self.selectHolyCity(tBaptistBL, tBaptistTR, tProvidence, False), iBaptism)
 		pRhodeIsland.setLastStateReligion(iBaptism)
 
 ## METHODISM
@@ -278,7 +278,7 @@ class Religions:
 	def foundMethodism(self):
 		if gc.getGame().isReligionFounded(iMethodism): return
 
-		self.foundReligion(self.selectHolyCity(tMethodistTL, tMethodistBR, tSavannah, False), iMethodism)
+		self.foundReligion(self.selectHolyCity(tMethodistBL, tMethodistTR, tSavannah, False), iMethodism)
 		pGeorgia.setLastStateReligion(iMethodism)
 
 ## CATHOLICISM
