@@ -80,6 +80,8 @@ class CvRFCEventHandler:
 		eventManager.addEventHandler("blockade", self.onBlockade)
 		eventManager.addEventHandler("peaceBrokered", self.onPeaceBrokered)
 		eventManager.addEventHandler("EndPlayerTurn", self.onEndPlayerTurn)
+		eventManager.addEventHandler("improvementDestroyed", self.onImprovementDestroyed)
+		eventManager.addEventHandler("improvementBuilt", self.onImprovementBuilt)
 	       
 		self.eventManager = eventManager
 
@@ -470,8 +472,17 @@ class CvRFCEventHandler:
 			if city:
 				city.changeBuildingYieldChange(gc.getBuildingInfo(iSpaceElevator).getBuildingClassType(), YieldTypes.YIELD_COMMERCE, 5)
 
+	def onImprovementBuilt(self, argsList):
+		iOldImprovement, iImprovement, iX, iY = argsList
+		if iOldImprovement == iNativeVillage: #TODO - change to make sure there is no tile owner
+			print("FOB Native Village Destroyed")
+			self.barb.trySpawnNativePartisans(iX, iY)
+
 	def onImprovementDestroyed(self, argsList):
-		pass
+		iImprovement, iOwner, iX, iY = argsList
+		if iImprovement == iNativeVillage: #TODO - change to make sure there is no tile owner
+			print("FOB Native Village Destroyed")
+			self.barb.trySpawnNativePartisans(iX, iY)
 		
 	def onBeginGameTurn(self, argsList):
 		iGameTurn = argsList[0]

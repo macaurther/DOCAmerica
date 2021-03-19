@@ -491,7 +491,7 @@ class CvEventManager(object):
 		if CyGame().GetWorldBuilderMode() and not CvPlatyBuilderScreen.bPython: return
 	## Platy Builder ##
 		'Improvement Built'
-		iImprovement, iX, iY = argsList
+		iOldImprovement, iImprovement, iX, iY = argsList
 		if (not self.__LOG_IMPROVEMENT):
 			return
 		CvUtil.pyPrint('Improvement %s was built at %d, %d'

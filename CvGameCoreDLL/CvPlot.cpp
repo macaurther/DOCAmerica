@@ -6299,7 +6299,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 
 		if (getImprovementType() != NO_IMPROVEMENT)
 		{
-			CvEventReporter::getInstance().improvementBuilt(getImprovementType(), getX_INLINE(), getY_INLINE());
+			CvEventReporter::getInstance().improvementBuilt(eOldImprovement, getImprovementType(), getX_INLINE(), getY_INLINE());
 		}
 
 		if (getImprovementType() == NO_IMPROVEMENT)

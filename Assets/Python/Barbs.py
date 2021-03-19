@@ -24,6 +24,12 @@ tMinorCities = (
 	(1653, (129, 34), iIndependent2, 'Raleigh', 1, iMusketman, 1),				# Albemarle Settlers
 )
 
+#FoB - Spawn Native American Villages
+tNativeVillages = (
+	(1600, (129, 39), iIndependent),
+	(1610, (127, 40), iIndependent)
+)
+
 # do some research on dates here
 # MacAurther TODO: Add natives
 tMinorStates = (
@@ -131,9 +137,22 @@ class Barbs:
 		#if utils.isYearIn(1700, 1800):
 		#	self.checkSpawn(iNative, iPrivateer, 1, (122, 0), (126, 2), self.spawnPirates, iGameTurn, 5, 0)
 
+		self.foundNativeVillages(iGameTurn)
 		if iGameTurn < getTurnForYear(tMinorCities[len(tMinorCities)-1][0])+10:
 			self.foundMinorCities(iGameTurn)
-				
+
+	# FoB - Villages not guarenteed to spawn, but should be good enough
+	def foundNativeVillages(self, iGameTurn):
+		for i in range(len(tNativeVillages)):
+			iYear, tPlot, iPlayer = tNativeVillages[i]
+			if iGameTurn == getTurnForYear(iYear):
+				x, y = tPlot
+				plot = gc.getMap().plot(x, y)
+				if plot.isCity(): continue
+				if not self.isFreePlot(tPlot, False): continue
+				gc.getMap().plot(x,y).setImprovementType(iNativeVillage)
+
+
 	def foundMinorCities(self, iGameTurn):
 		for i in range(len(tMinorCities)):
 			iYear, tPlot, iPlayer, sName, iPopulation, iUnitType, iNumUnits = tMinorCities[i]
@@ -408,6 +427,12 @@ class Barbs:
 			
 			lPlots.remove(tPlot)
 			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, 1, sAdj)
+
+	#TODO - redo to provide greater unit variation based on era and location
+	def trySpawnNativePartisans(self, iX, iY):
+		lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True)
+		tPlot = utils.getRandomEntry(lPlots)
+		utils.makeUnitAI(iWarrior, iNative, tPlot, UnitAITypes.UNITAI_ATTACK, 3, "Hostile")
 
 	def trySpawnNativeBlocker(self, iUnitType, iNumUnits, iX, iY):
 		plot = gc.getMap().plot(iX, iY)
