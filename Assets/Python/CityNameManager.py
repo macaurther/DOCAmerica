@@ -175,25 +175,33 @@ def revertCommunistNames(iCiv):
 			if sRename: city.setName(sRename, False)
 			
 tEraNames = (
-# ancient
+# precolumbian
 {},
-# classical
+# exploration
 {},
-# medieval
+# colonial
 {
 },
-# renaissance
+# revolutionary
 {
+	'Jamestown'		:	'Williamsburg'
+},
+# expansion
+{
+	'York'			:	'Toronto',
 },
 # industrial
 {
-	'York'			:	'Toronto',
 },
 # modern
 {
 },
-# future
-{},
+# atomic
+{
+},
+# information
+{
+},
 )
 
 def getEraRename(sName, iEra):
@@ -500,6 +508,7 @@ dIdentifiers = {
 	"Hartford"		:	"Hartford",
 	"Fort Caroline"		:	"Jacksonville",
 	"Jacksonville"		:	"Jacksonville",
+	"Jamestown"		:	"Jamestown",
 	"Gavana"		:	"La Habana",
 	"Havana"		:	"La Habana",
 	"Havanna"		:	"La Habana",
@@ -585,6 +594,7 @@ dIdentifiers = {
 	"Washington"		:	"Washington",
 	"Washinton"		:	"Washington",
 	"Waszyngton"		:	"Washington",
+	"Williamsburg"		:	"Williamsburg",
 	"Fort Kristina"		:	"Wilmington",
 	"Fort Christina"		:	"Wilmington",
 	"Nieuwer-Amstel"	:	"Wilmington",

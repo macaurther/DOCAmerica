@@ -24,8 +24,8 @@ lWonders = [i for i in range(iBeginWonders, iNumBuildings)]
 lGreatPeople = [iSpecialistGreatProphet, iSpecialistGreatArtist, iSpecialistGreatScientist, iSpecialistGreatMerchant, iSpecialistGreatEngineer, iSpecialistGreatStatesman, iSpecialistGreatGeneral, iSpecialistGreatSpy]
 
 
-# second Roman goal: control Iberia, Gaul, Britain, Africa, Greece, Asia Minor and Egypt in 320 AD
-tFranceTL = (51, 47)
+# third Virginian goal: settle 10 great generals or statesmen in Richmond by 1860 AD
+tRichmond = ((129, 39),(128, 39),(128, 40))	# Three possible tiles for Richmond
 
 ### GOAL CONSTANTS ###
 
@@ -82,7 +82,7 @@ def checkTurn(iGameTurn, iPlayer):
 		
 	elif iPlayer == iVirginia:
 		
-		# second goal: control Virginia, West Virginia, and Kentucky in 1763 AD
+		# first goal: control Virginia, West Virginia, and Kentucky in 1763 AD
 		if iGameTurn == getTurnForYear(1763):
 			bVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iVirginia, False)) >= 5
 			bWestVirginia = False
@@ -91,9 +91,30 @@ def checkTurn(iGameTurn, iPlayer):
 			#bWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False)) >= 3
 			#bKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False)) >= 2
 			if bVirginia and bWestVirginia and bKentucky:
+				win(iVirginia, 0)
+			else:
+				lose(iVirginia, 0)
+		
+		# second goal: have the largest population in the USA in 1800 AD
+		if iGameTurn == getTurnForYear(1800):
+			if isBestPlayer(iVirginia, playerRealPopulation):
 				win(iVirginia, 1)
 			else:
 				lose(iVirginia, 1)
+		
+		# third goal: settle a total of ten great generals and statesmen in Richmond
+		if isPossible(iVirginia, 2):
+			iGreatGenerals = 0
+			iGreatStatesmen = 0
+			for tCity in tRichmond:
+				iGreatGenerals = max(iGreatGenerals, countCitySpecialists(iVirginia, tCity, iSpecialistGreatGeneral))
+				iGreatStatesmen = max(iGreatStatesmen, countCitySpecialists(iVirginia, tCity, iSpecialistGreatStatesman))
+			
+			if iGreatStatesmen + iGreatStatesmen >= 10:
+				win(iVirginia, 2)
+		
+		if iGameTurn == getTurnForYear(1860):
+			expire(iVirginia, 2)
 	
 	elif iPlayer == iMassachusetts:
 		# first goal: control Massachusetts and Maine in 1660 AD
@@ -1895,8 +1916,6 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iVirginia:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
-		elif iGoal == 1:
 			iCitiesVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iVirginia, False))
 			iCitiesWestVirginia = 0
 			iCitiesKentucky = 0
@@ -1904,8 +1923,17 @@ def getUHVHelp(iPlayer, iGoal):
 			#iCitiesWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False))
 			#iCitiesKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False))
 			aHelp.append(getIcon(iCitiesVirginia >= 5) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_VIRGINIA", (iCitiesVirginia, 5)) + ' ' + getIcon(iCitiesWestVirginia >= 3) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_WEST_VIRGINIA", (iCitiesWestVirginia, 3)) + ' ' + getIcon(iCitiesKentucky >= 2) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_KENTUCKY", (iCitiesKentucky, 2)))
+		elif iGoal == 1:
+			iHighestState = getBestPlayer(iVirginia, playerRealPopulation)
+			bHighest = (iHighestState == iVirginia)
+			aHelp.append(getIcon(bHighest) + localText.getText("TXT_KEY_VICTORY_HIGHEST_POPULATION_STATE", (gc.getPlayer(iHighestState).getCivilizationShortDescription(0),)))
 		elif iGoal == 2:
-			aHelp.append("TODO ;)")
+			iGreatGenerals = 0
+			iGreatStatesmen = 0
+			for tCity in tRichmond:
+				iGreatGenerals = max(iGreatGenerals, countCitySpecialists(iVirginia, tCity, iSpecialistGreatGeneral))
+				iGreatStatesmen = max(iGreatStatesmen, countCitySpecialists(iVirginia, tCity, iSpecialistGreatStatesman))
+			aHelp.append(getIcon(iGreatGenerals + iGreatStatesmen >= 10) + localText.getText("TXT_KEY_VICTORY_GREAT_GENERALS_AND_STATESMEN_SETTLED", ('Richmond', iGreatGenerals + iGreatStatesmen, 10)))
 
 	elif iPlayer == iMassachusetts:
 		if iGoal == 0:

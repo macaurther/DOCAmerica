@@ -5304,46 +5304,6 @@
 	<!-- Virginia -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VA1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_VA1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_VA1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_VA1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_VA1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UHV_VA2_TITLE</Tag>
 		<English>The Wilderness Road</English>
 		<French>The Wilderness Road</French>
 		<German>The Wilderness Road</German>
@@ -5351,52 +5311,116 @@
 		<Spanish>The Wilderness Road</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UHV_VA1</Tag>
+		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</English>
+		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</French>
+		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</German>
+		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Italian>
+		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_VA1_EPIC</Tag>
+		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</English>
+		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</French>
+		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</German>
+		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Italian>
+		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_VA1_MARATHON</Tag>
+		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</English>
+		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</French>
+		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</German>
+		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Italian>
+		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_VA1_NOTURN</Tag>
+		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</English>
+		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</French>
+		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</German>
+		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Italian>
+		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory</Spanish>
+	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_UHV_VA2_TITLE</Tag>
+		<English>Antebellum</English>
+		<French>Antebellum</French>
+		<German>Antebellum</German>
+		<Italian>Antebellum</Italian>
+		<Spanish>Antebellum</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UHV_VA2</Tag>
-		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</English>
-		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</French>
-		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</German>
-		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Italian>
-		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Spanish>
+		<English>Have the largest population in the USA in 1800 AD</English>
+		<French>Have the largest population in the USA in 1800 AD</French>
+		<German>Have the largest population in the USA in 1800 AD</German>
+		<Italian>Have the largest population in the USA in 1800 AD</Italian>
+		<Spanish>Have the largest population in the USA in 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VA2_EPIC</Tag>
-		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</English>
-		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</French>
-		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</German>
-		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Italian>
-		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Spanish>
+		<English>Have the largest population in the USA in 1800 AD</English>
+		<French>Have the largest population in the USA in 1800 AD</French>
+		<German>Have the largest population in the USA in 1800 AD</German>
+		<Italian>Have the largest population in the USA in 1800 AD</Italian>
+		<Spanish>Have the largest population in the USA in 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VA2_MARATHON</Tag>
-		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</English>
-		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</French>
-		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</German>
-		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Italian>
-		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Spanish>
+		<English>Have the largest population in the USA in 1800 AD</English>
+		<French>Have the largest population in the USA in 1800 AD</French>
+		<German>Have the largest population in the USA in 1800 AD</German>
+		<Italian>Have the largest population in the USA in 1800 AD</Italian>
+		<Spanish>Have the largest population in the USA in 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VA2_NOTURN</Tag>
-		<English>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</English>
-		<French>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</French>
-		<German>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</German>
-		<Italian>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Italian>
-		<Spanish>Control in 1763 AD the land of the State of Virginia and the Kentucky Territory.</Spanish>
+		<English>Have the largest population in the USA in 1800 AD</English>
+		<French>Have the largest population in the USA in 1800 AD</French>
+		<German>Have the largest population in the USA in 1800 AD</German>
+		<Italian>Have the largest population in the USA in 1800 AD</Italian>
+		<Spanish>Have the largest population in the USA in 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VA3_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Mother of Presidents</English>
+		<French>Mother of Presidents</French>
+		<German>Mother of Presidents</German>
+		<Italian>Mother of Presidents</Italian>
+		<Spanish>Mother of Presidents</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_VA3</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</English>
+		<French>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</French>
+		<German>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</German>
+		<Italian>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Italian>
+		<Spanish>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_VA3_EPIC</Tag>
+		<English>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</English>
+		<French>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</French>
+		<German>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</German>
+		<Italian>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Italian>
+		<Spanish>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_VA3_MARATHON</Tag>
+		<English>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</English>
+		<French>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</French>
+		<German>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</German>
+		<Italian>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Italian>
+		<Spanish>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_VA3_NOTURN</Tag>
+		<English>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</English>
+		<French>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</French>
+		<German>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</German>
+		<Italian>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Italian>
+		<Spanish>Settle a total of ten Great Generals and Statesmen in Richmond by 1860 AD</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -5423,6 +5447,23 @@
 		<Italian>Kentucky: %d1 / %d2</Italian>
 		<Spanish>Kentucky: %d1 / %d2</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_HIGHEST_POPULATION_STATE</Tag>
+		<English>State with the largest population: %s1</English>
+		<French>State with the largest population: %s1</French>
+		<German>State with the largest population: %s1</German>
+		<Italian>State with the largest population: %s1</Italian>
+		<Spanish>State with the largest population: %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_GREAT_GENERALS_AND_STATESMEN_SETTLED</Tag>
+		<English>Great generals and statesmen settled in %s1: %d2 / %d3</English>
+		<French>Great generals and statesmen settled in %s1: %d2 / %d3</French>
+		<German>Great generals and statesmen settled in %s1: %d2 / %d3</German>
+		<Italian>Great generals and statesmen settled in %s1: %d2 / %d3</Italian>
+		<Spanish>Great generals and statesmen settled in %s1: %d2 / %d3</Spanish>
+	</TEXT>
+	
 	
 	<!-- Massachusetts -->
 	<TEXT>
@@ -5435,35 +5476,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA1</Tag>
-		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</English>
-		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</French>
-		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</German>
-		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Italian>
-		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Spanish>
+		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</English>
+		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</French>
+		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</German>
+		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Italian>
+		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA1_EPIC</Tag>
-		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</English>
-		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</French>
-		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</German>
-		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Italian>
-		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Spanish>
+		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</English>
+		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</French>
+		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</German>
+		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Italian>
+		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA1_MARATHON</Tag>
-		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</English>
-		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</French>
-		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</German>
-		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Italian>
-		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Spanish>
+		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</English>
+		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</French>
+		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</German>
+		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Italian>
+		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA1_NOTURN</Tag>
-		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</English>
-		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</French>
-		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</German>
-		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Italian>
-		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory.</Spanish>
+		<English>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</English>
+		<French>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</French>
+		<German>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</German>
+		<Italian>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Italian>
+		<Spanish>Control in 1660 AD the land of the State of Massachusetts and the Maine Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA2_TITLE</Tag>
@@ -5942,35 +5983,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NC1</Tag>
-		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</English>
-		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</French>
-		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</German>
-		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Italian>
-		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Spanish>
+		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</English>
+		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</French>
+		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</German>
+		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Italian>
+		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NC1_EPIC</Tag>
-		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</English>
-		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</French>
-		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</German>
-		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Italian>
-		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Spanish>
+		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</English>
+		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</French>
+		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</German>
+		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Italian>
+		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NC1_MARATHON</Tag>
-		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</English>
-		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</French>
-		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</German>
-		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Italian>
-		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Spanish>
+		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</English>
+		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</French>
+		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</German>
+		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Italian>
+		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NC1_NOTURN</Tag>
-		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</English>
-		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</French>
-		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</German>
-		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Italian>
-		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory.</Spanish>
+		<English>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</English>
+		<French>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</French>
+		<German>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</German>
+		<Italian>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Italian>
+		<Spanish>Control in 1796 AD the land of the State of North Carolina and the Tennesee Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NC2_TITLE</Tag>
@@ -6547,35 +6588,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA1</Tag>
-		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</English>
-		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</French>
-		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</German>
-		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Italian>
-		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Spanish>
+		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</English>
+		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</French>
+		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</German>
+		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Italian>
+		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA1_EPIC</Tag>
-		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</English>
-		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</French>
-		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</German>
-		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Italian>
-		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Spanish>
+		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</English>
+		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</French>
+		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</German>
+		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Italian>
+		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA1_MARATHON</Tag>
-		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</English>
-		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</French>
-		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</German>
-		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Italian>
-		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Spanish>
+		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</English>
+		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</French>
+		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</German>
+		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Italian>
+		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA1_NOTURN</Tag>
-		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</English>
-		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</French>
-		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</German>
-		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Italian>
-		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory.</Spanish>
+		<English>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</English>
+		<French>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</French>
+		<German>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</German>
+		<Italian>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Italian>
+		<Spanish>Control in 1797 AD the land of the State of Georgia, the Alabama Territory, and the Mississippi Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_TITLE</Tag>
