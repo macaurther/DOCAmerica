@@ -465,7 +465,7 @@ class Barbs:
 	#TODO - redo to provide greater unit variation based on era and location
 	def trySpawnNativePartisans(self, iX, iY, iPlayer=None):
 		plot = (iX,iY)
-		if not self.possibleTile((iX, iY), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True):
+		if not self.possibleTile(plot, bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True):
 			lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True)
 			plot = utils.getRandomEntry(lPlots)
 		if plot == None: return
@@ -473,7 +473,6 @@ class Barbs:
 		if iPlayer:
 			iNumUnits = self.getNumNativeSpawnsFromAttitude(iPlayer)
 		utils.makeUnitAI(iWarrior, iNative, plot, UnitAITypes.UNITAI_ATTACK, iNumUnits, "Hostile")
-		#FoB - make sure the units can't move this turn, otherwise you get some BS where your workers insta-die without warning
 		utils.setUnitsHaveMoved(iNative, (plot[0], plot[1]))
 
 	def trySpawnNativeBlocker(self, iUnitType, iNumUnits, iX, iY):

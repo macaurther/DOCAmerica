@@ -95,6 +95,8 @@ class CvRFCEventHandler:
 		self.com = Communications.Communications()
 		self.corp = Companies.Companies()
 
+		self.improvementTileChanges = [] #FoB - kludge to ensure native units don't move
+
 	def onGameStart(self, argsList):
 		'Called at the start of the game'
 		
@@ -487,9 +489,10 @@ class CvRFCEventHandler:
 		iImprovement, iOwner, iX, iY = argsList
 		if iImprovement == iNativeVillage and iOwner > 0:
 			print("FOB native village enveloped by cultural borders")
+			self.improvementTileChanges.append((iX,iY,iOwner))
 			# TODO - change to add chance of assimilation
-			self.barb.changeNativeAttitudeForPlayer(iOwner, -iNativeVillageAssimilateCost)
-			gc.getMap().plot(iX, iY).setImprovementType(-1)
+			#self.barb.changeNativeAttitudeForPlayer(iOwner, -iNativeVillageAssimilateCost)
+			#gc.getMap().plot(iX, iY).setImprovementType(-1)
 
 	def onImprovementDestroyed(self, argsList):
 		iImprovement, iOwner, iX, iY = argsList
@@ -525,23 +528,34 @@ class CvRFCEventHandler:
 			
 		return 0
 
-	def onBeginPlayerTurn(self, argsList):	
+	def onBeginPlayerTurn(self, argsList):
 		iGameTurn, iPlayer = argsList
 		
 		#if utils.getHumanID() == iPlayer:
 		#	utils.debugTextPopup('Can contact: ' + str([gc.getPlayer(i).getCivilizationShortDescription(0) for i in range(iNumPlayers) if gc.getTeam(iPlayer).canContact(i)]))
-
 		if (data.lDeleteMode[0] != -1):
 			self.rnf.deleteMode(iPlayer)
 			
 		self.pla.checkPlayerTurn(iGameTurn, iPlayer)
 		self.barb.adjustNativeAttitudeForGameTurn(iGameTurn, iPlayer)
+
+		#FoB kludge to ensure units don't move
+		if iPlayer == iNative:
+			self.onNativeTurn()
 		
 		if gc.getPlayer(iPlayer).isAlive():
 			vic.checkTurn(iGameTurn, iPlayer)
 			
 			if iPlayer < iNumPlayers and not gc.getPlayer(iPlayer).isHuman():
 				self.rnf.checkPlayerTurn(iGameTurn, iPlayer) #for leaders switch
+
+	def onNativeTurn(self):
+		for tTileChange in self.improvementTileChanges:
+			print("FOB Preventing Unit Movement")
+			iX, iY, iOwner = tTileChange
+			self.barb.changeNativeAttitudeForPlayer(iOwner, -iNativeVillageAssimilateCost)
+			gc.getMap().plot(iX, iY).setImprovementType(-1)
+		self.improvementTileChanges = []  # FoB clear list
 
 	def onGreatPersonBorn(self, argsList):
 		'Great Person Born'
