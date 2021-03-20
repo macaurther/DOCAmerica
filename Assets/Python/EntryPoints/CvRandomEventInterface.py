@@ -4599,8 +4599,8 @@ def doPowhatanWarI1(argsList):
 	pPlayer = gc.getPlayer(iPlayer)
 	
 	capital = Areas.getCapital(iPlayer)
-	pPlayer.initUnit(iCrossbowman, capital[0], capital[1], UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
-	barb.spawnPowhatanWarriorsI(2)
+	pPlayer.initUnit(iMilitia, capital[0], capital[1], UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
+	barb.spawnPowhatanWarriorsI(1)
 
 def getHelpPowhatanWarI1(argsList):
 	iEvent = argsList[0]

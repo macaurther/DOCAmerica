@@ -58096,7 +58096,7 @@ BeginPlot
 	x=129,y=39
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_TOBACCO
+	BonusType=BONUS_POTATO
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -58580,7 +58580,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=130,y=40
-	BonusType=BONUS_POTATO
+	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

@@ -26,8 +26,11 @@ tMinorCities = (
 
 #FoB - Spawn Native American Villages
 tNativeVillages = (
-	(1600, (129, 39), iIndependent),
-	(1610, (127, 40), iIndependent)
+	(1600, (129, 39), iNative),
+	(1600, (133, 40), iNative),
+	(1600, (127, 38), iNative),
+	(1600, (127, 41), iNative),
+	(1600, (133, 37), iNative)
 )
 
 # do some research on dates here
@@ -75,6 +78,7 @@ class Barbs:
 			self.trySpawnNativeBlocker(iWarrior, 2, 99, 31)
 			self.trySpawnNativeBlocker(iWarrior, 2, 98, 39)
 			self.trySpawnNativeBlocker(iWarrior, 2, 98, 16)
+			self.trySpawnNativeBlocker(iWarrior, 2, 100, 15)
 
 		# American natives
 		if utils.isYearIn(1600, 1700):
@@ -430,9 +434,14 @@ class Barbs:
 
 	#TODO - redo to provide greater unit variation based on era and location
 	def trySpawnNativePartisans(self, iX, iY):
-		lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True)
-		tPlot = utils.getRandomEntry(lPlots)
-		utils.makeUnitAI(iWarrior, iNative, tPlot, UnitAITypes.UNITAI_ATTACK, 3, "Hostile")
+		plot = (iX,iY)
+		if not self.possibleTile((iX, iY), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True):
+			lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True)
+			plot = utils.getRandomEntry(lPlots)
+		if plot == None: return
+		utils.makeUnitAI(iWarrior, iNative, plot, UnitAITypes.UNITAI_ATTACK, 3, "Hostile")
+		#FoB - make sure the units can't move this turn, otherwise you get some BS where your workers insta-die without warning
+		utils.setUnitsHaveMoved(iNative, (plot[0], plot[1]))
 
 	def trySpawnNativeBlocker(self, iUnitType, iNumUnits, iX, iY):
 		plot = gc.getMap().plot(iX, iY)

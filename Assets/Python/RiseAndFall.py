@@ -377,7 +377,6 @@ class RiseAndFall:
 			self.placeHut((122, 55), (124, 58)) # Onondaga
 			self.placeHut((120, 47), (125, 51)) # Susquehannock
 			self.placeHut((132, 43), (134, 45)) # Lenni-Lenape
-			self.placeHut((126, 40), (128, 41)) # Powhatan
 			self.placeHut((131, 32), (134, 34)) # Tuscarora
 			self.placeHut((121, 33), (126, 37)) # Tutelo
 			self.placeHut((111, 25), (116, 30)) # Cherokee
