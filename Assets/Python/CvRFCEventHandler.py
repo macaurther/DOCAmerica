@@ -475,26 +475,30 @@ class CvRFCEventHandler:
 
 	def onImprovementBuilt(self, argsList):
 		iOldImprovement, iImprovement, iX, iY = argsList
-		if iOldImprovement == iNativeVillage: #TODO - change to make sure there is no tile owner
-			print("FOB Native Village Destroyed")
-			self.barb.trySpawnNativePartisans(iX, iY)
-
-	def onImprovementDestroyed(self, argsList):
-		iImprovement, iOwner, iX, iY = argsList
-		sData = gc.getMap().plot(iX, iY).getScriptData()
-		if iImprovement == iNativeVillage and not sData == "noSpawn": #Don't spawn if the tile is owned - assume it has already been taken care of
-			print("FOB Native Village Destroyed")
-			self.barb.trySpawnNativePartisans(iX, iY)
-		elif (sData == "noSpawn"):
-			gc.getMap().plot(iX, iY).setScriptData("")
+		if iOldImprovement == iNativeVillage:
+			print("FOB native village destroyed by improvement")
+			iTileOwner = gc.getMap().plot(iX, iY).getOwner()
+			if iTileOwner == -1:
+				self.barb.trySpawnNativePartisans(iX, iY)
+			else:
+				self.barb.trySpawnNativePartisans(iX, iY, iTileOwner)
 
 	def onImprovementOwnerChange(self, argsList):
 		iImprovement, iOwner, iX, iY = argsList
 		if iImprovement == iNativeVillage and iOwner > 0:
-			print("FOB Native Village enveloped by cultural borders")
+			print("FOB native village enveloped by cultural borders")
 			# TODO - change to add chance of assimilation
+			self.barb.changeNativeAttitudeForPlayer(iOwner, -iNativeVillageAssimilateCost)
 			gc.getMap().plot(iX, iY).setImprovementType(-1)
-			#self.barb.trySpawnNativePartisans(iX, iY)
+
+	def onImprovementDestroyed(self, argsList):
+		iImprovement, iOwner, iX, iY = argsList
+		if iImprovement == iNativeVillage:
+			print("FOB Native Village Destroyed")
+			if iOwner > 0:
+				self.barb.trySpawnNativePartisans(iX, iY, iOwner)
+			else:
+				self.barb.trySpawnNativePartisans(iX, iY)
 		
 	def onBeginGameTurn(self, argsList):
 		iGameTurn = argsList[0]
@@ -531,6 +535,7 @@ class CvRFCEventHandler:
 			self.rnf.deleteMode(iPlayer)
 			
 		self.pla.checkPlayerTurn(iGameTurn, iPlayer)
+		self.barb.adjustNativeAttitudeForGameTurn(iGameTurn, iPlayer)
 		
 		if gc.getPlayer(iPlayer).isAlive():
 			vic.checkTurn(iGameTurn, iPlayer)

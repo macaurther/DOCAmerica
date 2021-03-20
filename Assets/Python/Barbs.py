@@ -145,6 +145,37 @@ class Barbs:
 		if iGameTurn < getTurnForYear(tMinorCities[len(tMinorCities)-1][0])+10:
 			self.foundMinorCities(iGameTurn)
 
+	def changeNativeAttitudeForPlayer(self, iPlayer, iValue):
+		data.players[iPlayer].iNativeAttitude = max(iValue+data.players[iPlayer].iNativeAttitude,
+													self.getMinNativeAttitudeForPlayer(iPlayer))
+
+	def getNumNativeSpawnsFromAttitude(self, iPlayer):
+		iValue = data.getTotalNativeAttitude(iPlayer)
+		if iValue > 0:
+			return 0
+		elif iValue > -3:
+			return 1
+		elif iValue > -7:
+			return 2
+		return 3
+
+	def adjustNativeAttitudeForGameTurn(self, iGameTurn, iPlayer):
+		if iGameTurn % 10 == 5:
+			iMaxValue = self.getMaxNativeAttitudeForPlayer(iPlayer)
+			# FoB - don't adjust attitude if over limit from events
+			if data.players[iPlayer].iNativeAttitude >= iMaxValue:
+				return;
+			data.players[iPlayer].iNativeAttitude = min(data.players[iPlayer].iNativeAttitude+1, iMaxValue)
+			print("FOB Native attutide adjusted to: " + str(data.players[iPlayer].iNativeAttitude))
+
+	def getMinNativeAttitudeForPlayer(self, iPlayer):
+		return -10;
+
+	def getMaxNativeAttitudeForPlayer(self, iPlayer):
+		if gc.getTeam(iPlayer).isHasTech(iManifestDestiny):
+			return 5;
+		return 0;
+
 	# FoB - Villages not guarenteed to spawn, but should be good enough
 	def foundNativeVillages(self, iGameTurn):
 		for i in range(len(tNativeVillages)):
@@ -184,7 +215,6 @@ class Barbs:
 				data.lMinorCityFounded[i] = True
 		
 	def canFoundCity(self, sName):
-		
 		return True
 	
 	def foundCity(self, iPlayer, tPlot, sName, iPopulation, iUnitType = -1, iNumUnits = -1, lReligions = []):
@@ -433,13 +463,16 @@ class Barbs:
 			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, 1, sAdj)
 
 	#TODO - redo to provide greater unit variation based on era and location
-	def trySpawnNativePartisans(self, iX, iY):
+	def trySpawnNativePartisans(self, iX, iY, iPlayer=None):
 		plot = (iX,iY)
 		if not self.possibleTile((iX, iY), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True):
 			lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True)
 			plot = utils.getRandomEntry(lPlots)
 		if plot == None: return
-		utils.makeUnitAI(iWarrior, iNative, plot, UnitAITypes.UNITAI_ATTACK, 3, "Hostile")
+		iNumUnits = iNativePillagePartisans
+		if iPlayer:
+			iNumUnits = self.getNumNativeSpawnsFromAttitude(iPlayer)
+		utils.makeUnitAI(iWarrior, iNative, plot, UnitAITypes.UNITAI_ATTACK, iNumUnits, "Hostile")
 		#FoB - make sure the units can't move this turn, otherwise you get some BS where your workers insta-die without warning
 		utils.setUnitsHaveMoved(iNative, (plot[0], plot[1]))
 

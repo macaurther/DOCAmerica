@@ -4589,7 +4589,7 @@ def canTriggerPowhatanWarI(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 
-	if gc.getGame().getGameTurn() == getTurnForYear(1610) and (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_VIRGINIA")):
+	if gc.getGame().getGameTurn() == getTurnForYear(1609) and (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_VIRGINIA")):
 		return true
 	return false
 
@@ -4600,7 +4600,9 @@ def doPowhatanWarI1(argsList):
 	
 	capital = Areas.getCapital(iPlayer)
 	pPlayer.initUnit(iMilitia, capital[0], capital[1], UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
-	barb.spawnPowhatanWarriorsI(1)
+
+	barb.changeNativeAttitudeForPlayer(iPlayer, -5)
+	#barb.spawnPowhatanWarriorsI(1)
 
 def getHelpPowhatanWarI1(argsList):
 	iEvent = argsList[0]
@@ -4611,7 +4613,9 @@ def getHelpPowhatanWarI1(argsList):
 	return szHelp
 
 def doPowhatanWarI2(argsList):
-	barb.spawnPowhatanWarriorsI(0)
+	#barb.spawnPowhatanWarriorsI(0)
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
 
 def getHelpPowhatanWarI2(argsList):
 	iEvent = argsList[0]

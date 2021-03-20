@@ -8,6 +8,8 @@ iWorldX = 150
 iWorldY = 80
 
 iGoodyHutGuardChance = 60
+iNativePillagePartisans = 4
+iNativeVillageAssimilateCost = 2
 
 # initialise player variables to player IDs from WBS
 iNumPlayers = 18

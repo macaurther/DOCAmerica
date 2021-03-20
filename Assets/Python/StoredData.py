@@ -56,6 +56,9 @@ class PlayerData:
 		self.lGoals = [-1, -1, -1]
 		self.lGoalTurns = [-1, -1, -1]
 		self.bHistoricalGoldenAge = False
+
+		#Native Attitude (for assimilation and partisan strength)
+		self.resetNativeAttitudes()
 		
 		# Stability
 		
@@ -64,7 +67,11 @@ class PlayerData:
 		# Tech Log
 		
 		self.iTechColumn = 0
-	
+
+	def resetNativeAttitudes(self):
+		self.iNativeAttitude = 0
+		self.iNativeAttitudeBase = 0
+
 	def resetStability(self):
 		self.iStabilityLevel = iStabilityShaky
 		
@@ -288,7 +295,10 @@ class GameData:
 		
 	def setFirstContactMongols(self, iPlayer, bValue):
 		self.lFirstContactMongols[lMongolCivs.index(iPlayer)] = bValue
-		
+
+	def getTotalNativeAttitude(self, iPlayer):
+		return self.players[iPlayer].iNativeAttitudeBase + self.players[iPlayer].iNativeAttitude
+
 	def getStabilityLevel(self, iPlayer):
 		return self.players[iPlayer].iStabilityLevel
 		
