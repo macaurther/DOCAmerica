@@ -71,6 +71,7 @@ public:
 	void cityAcquiredAndKept(PlayerTypes ePlayer, CvCity* pCity);
 	void cityLost(CvCity *pCity);
 	void cultureExpansion( CvCity *pCity, PlayerTypes ePlayer);
+	void improvementOwnerChange(int iImprovementType, int iPlayer, int iX, int iY);
 	void cityGrowth(CvCity *pCity, PlayerTypes ePlayer);
 	void cityDoTurn(CvCity *pCity, PlayerTypes ePlayer);
 	void cityBuildingUnit(CvCity* pCity, UnitTypes eUnitType);

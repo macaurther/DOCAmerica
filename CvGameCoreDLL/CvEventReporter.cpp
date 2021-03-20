@@ -213,6 +213,11 @@ void CvEventReporter::cultureExpansion( CvCity *pCity, PlayerTypes ePlayer )
 	m_kPythonEventMgr.reportCultureExpansion(pCity, ePlayer);
 }
 
+void CvEventReporter::improvementOwnerChange(int iImprovementType, int iPlayer, int iX, int iY)
+{
+	m_kPythonEventMgr.reportImprovementOwnerChange(iImprovementType, iPlayer, iX, iY);
+}
+
 void CvEventReporter::cityGrowth(CvCity *pCity, PlayerTypes ePlayer)
 {
 	m_kPythonEventMgr.reportCityGrowth(pCity, ePlayer);

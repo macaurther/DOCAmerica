@@ -544,6 +544,20 @@ void CvDllPythonEvents::reportCultureExpansion( CvCity *pCity, PlayerTypes ePlay
 	}
 }
 
+void CvDllPythonEvents::reportImprovementOwnerChange(int iImprovementType, int iPlayer, int iX, int iY)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("improvementOwnerChange");
+		eventData.add(iImprovementType);
+		eventData.add(iPlayer);
+		eventData.add(iX);
+		eventData.add(iY);
+		postEvent(eventData);
+	}
+}
+
 void CvDllPythonEvents::reportCityGrowth( CvCity *pCity, PlayerTypes ePlayer )
 {
 	if (preEvent())

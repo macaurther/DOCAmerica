@@ -82,6 +82,7 @@ class CvRFCEventHandler:
 		eventManager.addEventHandler("EndPlayerTurn", self.onEndPlayerTurn)
 		eventManager.addEventHandler("improvementDestroyed", self.onImprovementDestroyed)
 		eventManager.addEventHandler("improvementBuilt", self.onImprovementBuilt)
+		eventManager.addEventHandler("improvementOwnerChange", self.onImprovementOwnerChange)
 	       
 		self.eventManager = eventManager
 
@@ -480,9 +481,20 @@ class CvRFCEventHandler:
 
 	def onImprovementDestroyed(self, argsList):
 		iImprovement, iOwner, iX, iY = argsList
-		if iImprovement == iNativeVillage: #TODO - change to make sure there is no tile owner
+		sData = gc.getMap().plot(iX, iY).getScriptData()
+		if iImprovement == iNativeVillage and not sData == "noSpawn": #Don't spawn if the tile is owned - assume it has already been taken care of
 			print("FOB Native Village Destroyed")
 			self.barb.trySpawnNativePartisans(iX, iY)
+		elif (sData == "noSpawn"):
+			gc.getMap().plot(iX, iY).setScriptData("")
+
+	def onImprovementOwnerChange(self, argsList):
+		iImprovement, iOwner, iX, iY = argsList
+		if iImprovement == iNativeVillage and iOwner > 0:
+			print("FOB Native Village enveloped by cultural borders")
+			# TODO - change to add chance of assimilation
+			gc.getMap().plot(iX, iY).setImprovementType(-1)
+			#self.barb.trySpawnNativePartisans(iX, iY)
 		
 	def onBeginGameTurn(self, argsList):
 		iGameTurn = argsList[0]
