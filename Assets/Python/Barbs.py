@@ -30,7 +30,20 @@ tNativeVillages = (
 	(1600, (134, 40), iNative),
 	(1600, (128, 38), iNative),
 	(1600, (128, 41), iNative),
-	(1600, (134, 37), iNative)
+	(1600, (134, 37), iNative),
+	(1600, (130, 35), iNative),
+	(1600, (125, 39), iNative),
+	(1600, (125, 37), iNative),
+	(1600, (123, 39), iNative),
+	(1600, (127, 46), iNative),
+	(1600, (120, 45), iNative),
+	(1600, (118, 42), iNative),
+	(1600, (117, 39), iNative),
+	(1600, (113, 40), iNative),
+	(1600, (117, 47), iNative),
+	(1600, (114, 44), iNative),
+	(1600, (110, 44), iNative),
+	(1600, (122, 49), iNative)
 )
 
 # do some research on dates here
