@@ -311,12 +311,13 @@ void CvDllPythonEvents::reportCombatLogFlanking(CvUnit* pAttacker, CvUnit* pDefe
 }
 // BUG - Combat Events - end
 
-void CvDllPythonEvents::reportImprovementBuilt(int iImprovementType, int iX, int iY)
+void CvDllPythonEvents::reportImprovementBuilt(int iOldImprovementType, int iImprovementType, int iX, int iY)
 {
 	if (preEvent())
 	{
 		CyArgsList eventData;
 		eventData.add("improvementBuilt");				// add key to lookup python handler fxn
+		eventData.add(iOldImprovementType);
 		eventData.add(iImprovementType);
 		eventData.add(iX);
 		eventData.add(iY);
@@ -540,6 +541,20 @@ void CvDllPythonEvents::reportCultureExpansion( CvCity *pCity, PlayerTypes ePlay
 
 		postEvent(eventData);
 		delete pCyCity;
+	}
+}
+
+void CvDllPythonEvents::reportImprovementOwnerChange(int iImprovementType, int iPlayer, int iX, int iY)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("improvementOwnerChange");
+		eventData.add(iImprovementType);
+		eventData.add(iPlayer);
+		eventData.add(iX);
+		eventData.add(iY);
+		postEvent(eventData);
 	}
 }
 

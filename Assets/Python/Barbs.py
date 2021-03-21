@@ -24,6 +24,15 @@ tMinorCities = (
 	(1653, (129, 34), iIndependent2, 'Raleigh', 1, iMusketman, 1),				# Albemarle Settlers
 )
 
+#FoB - Spawn Native American Villages
+tNativeVillages = (
+	(1600, (130, 40), iNative),
+	(1600, (134, 40), iNative),
+	(1600, (128, 38), iNative),
+	(1600, (128, 41), iNative),
+	(1600, (134, 37), iNative)
+)
+
 # do some research on dates here
 # MacAurther TODO: Add natives
 tMinorStates = (
@@ -69,6 +78,7 @@ class Barbs:
 			self.trySpawnNativeBlocker(iWarrior, 2, 99, 31)
 			self.trySpawnNativeBlocker(iWarrior, 2, 98, 39)
 			self.trySpawnNativeBlocker(iWarrior, 2, 98, 16)
+			self.trySpawnNativeBlocker(iWarrior, 2, 100, 15)
 
 		# American natives
 		if utils.isYearIn(1600, 1700):
@@ -131,9 +141,53 @@ class Barbs:
 		#if utils.isYearIn(1700, 1800):
 		#	self.checkSpawn(iNative, iPrivateer, 1, (122, 0), (126, 2), self.spawnPirates, iGameTurn, 5, 0)
 
+		self.foundNativeVillages(iGameTurn)
 		if iGameTurn < getTurnForYear(tMinorCities[len(tMinorCities)-1][0])+10:
 			self.foundMinorCities(iGameTurn)
-				
+
+	def changeNativeAttitudeForPlayer(self, iPlayer, iValue):
+		data.players[iPlayer].iNativeAttitude = max(iValue+data.players[iPlayer].iNativeAttitude,
+													self.getMinNativeAttitudeForPlayer(iPlayer))
+
+	def getNumNativeSpawnsFromAttitude(self, iPlayer):
+		iValue = data.getTotalNativeAttitude(iPlayer)
+		if iValue > 0:
+			return 0
+		elif iValue > -3:
+			return 1
+		elif iValue > -7:
+			return 2
+		return 3
+
+	def adjustNativeAttitudeForGameTurn(self, iGameTurn, iPlayer):
+		if iGameTurn % 10 == 5:
+			iMaxValue = self.getMaxNativeAttitudeForPlayer(iPlayer)
+			# FoB - don't adjust attitude if over limit from events
+			if data.players[iPlayer].iNativeAttitude >= iMaxValue:
+				return;
+			data.players[iPlayer].iNativeAttitude = min(data.players[iPlayer].iNativeAttitude+1, iMaxValue)
+			print("FOB Native attutide adjusted to: " + str(data.players[iPlayer].iNativeAttitude))
+
+	def getMinNativeAttitudeForPlayer(self, iPlayer):
+		return -10;
+
+	def getMaxNativeAttitudeForPlayer(self, iPlayer):
+		if gc.getTeam(iPlayer).isHasTech(iManifestDestiny):
+			return 5;
+		return 0;
+
+	# FoB - Villages not guarenteed to spawn, but should be good enough
+	def foundNativeVillages(self, iGameTurn):
+		for i in range(len(tNativeVillages)):
+			iYear, tPlot, iPlayer = tNativeVillages[i]
+			if iGameTurn == getTurnForYear(iYear):
+				x, y = tPlot
+				plot = gc.getMap().plot(x, y)
+				if plot.isCity(): continue
+				if not self.isFreePlot(tPlot, False): continue
+				gc.getMap().plot(x,y).setImprovementType(iNativeVillage)
+
+
 	def foundMinorCities(self, iGameTurn):
 		for i in range(len(tMinorCities)):
 			iYear, tPlot, iPlayer, sName, iPopulation, iUnitType, iNumUnits = tMinorCities[i]
@@ -161,7 +215,6 @@ class Barbs:
 				data.lMinorCityFounded[i] = True
 		
 	def canFoundCity(self, sName):
-		
 		return True
 	
 	def foundCity(self, iPlayer, tPlot, sName, iPopulation, iUnitType = -1, iNumUnits = -1, lReligions = []):
@@ -289,10 +342,10 @@ class Barbs:
 		if iTurn % utils.getTurns(iPeriod) == iRest:
 			spawnFunction(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj)
 			
-	def possibleTiles(self, tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False):
-		return [tPlot for tPlot in utils.getPlotList(tTL, tBR) if self.possibleTile(tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity)]
+	def possibleTiles(self, tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False, bNextToCity=False):
+		return [tPlot for tPlot in utils.getPlotList(tTL, tBR) if self.possibleTile(tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bNextToCity)]
 		
-	def possibleTile(self, tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity):
+	def possibleTile(self, tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bNextToCity=False):
 		x, y = tPlot
 		plot = gc.getMap().plot(x, y)
 		lSurrounding = utils.surroundingPlots(tPlot)
@@ -306,8 +359,8 @@ class Barbs:
 		# only inside territory if specified
 		if not bTerritory and plot.getOwner() >= 0: return False
 		
-		# never directly next to cities
-		if [(i, j) for (i, j) in lSurrounding if gc.getMap().plot(i, j).isCity()]: return False
+		# directly next to cities
+		if not bNextToCity and [(i, j) for (i, j) in lSurrounding if gc.getMap().plot(i, j).isCity()]: return False
 		
 		# never on tiles with units
 		if plot.isUnit(): return False
@@ -408,6 +461,19 @@ class Barbs:
 			
 			lPlots.remove(tPlot)
 			utils.makeUnitAI(iUnitType, iPlayer, tPlot, UnitAITypes.UNITAI_ATTACK_CITY_LEMMING, 1, sAdj)
+
+	#TODO - redo to provide greater unit variation based on era and location
+	def trySpawnNativePartisans(self, iX, iY, iPlayer=None):
+		plot = (iX,iY)
+		if not self.possibleTile(plot, bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True, bNextToCity=True):
+			lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True, bNextToCity=True)
+			plot = utils.getRandomEntry(lPlots)
+		if plot == None: return
+		iNumUnits = iNativePillagePartisans
+		if iPlayer:
+			iNumUnits = self.getNumNativeSpawnsFromAttitude(iPlayer)
+		utils.makeUnitAI(iWarrior, iNative, plot, UnitAITypes.UNITAI_ATTACK, iNumUnits, "Hostile")
+		utils.setUnitsHaveMoved(iNative, (plot[0], plot[1]))
 
 	def trySpawnNativeBlocker(self, iUnitType, iNumUnits, iX, iY):
 		plot = gc.getMap().plot(iX, iY)

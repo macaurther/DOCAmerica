@@ -121,6 +121,7 @@ class CvEventManager(object):
 			'cityAcquiredAndKept' 	: self.onCityAcquiredAndKept,
 			'cityLost'				: self.onCityLost,
 			'cultureExpansion' 		: self.onCultureExpansion,
+			'improvementOwnerChange': self.onImprovementOwnerChange,
 			'cityGrowth' 			: self.onCityGrowth,
 			'cityDoTurn' 			: self.onCityDoTurn,
 			'cityBuildingUnit'	: self.onCityBuildingUnit,
@@ -491,7 +492,7 @@ class CvEventManager(object):
 		if CyGame().GetWorldBuilderMode() and not CvPlatyBuilderScreen.bPython: return
 	## Platy Builder ##
 		'Improvement Built'
-		iImprovement, iX, iY = argsList
+		iOldImprovement, iImprovement, iX, iY = argsList
 		if (not self.__LOG_IMPROVEMENT):
 			return
 		CvUtil.pyPrint('Improvement %s was built at %d, %d'
@@ -978,6 +979,14 @@ class CvEventManager(object):
 		pCity = argsList[0]
 		iPlayer = argsList[1]
 		CvUtil.pyPrint("City %s's culture has expanded" %(pCity.getName(),))
+
+	def onImprovementOwnerChange(self, argsList):
+	## Platy Builder ##
+		if CyGame().GetWorldBuilderMode() and not CvPlatyBuilderScreen.bPython: return
+	## Platy Builder ##
+		'Improvement tile owner change'
+		iImprovement, iOwner, iX, iY = argsList
+		CvUtil.pyPrint("Owner %s's culture has expanded to encompass an improvement" %(iOwner,))
 	
 	def onCityGrowth(self, argsList):
 		'City Population Growth'

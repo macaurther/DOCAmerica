@@ -141,9 +141,9 @@ void CvEventReporter::combatLogFlanking(CvUnit* pAttacker, CvUnit* pDefender, in
 }
 // BUG - Combat Events - end
 
-void CvEventReporter::improvementBuilt(int iImprovementType, int iX, int iY)
+void CvEventReporter::improvementBuilt(int iOldImprovementType, int iImprovementType, int iX, int iY)
 {
-	m_kPythonEventMgr.reportImprovementBuilt(iImprovementType, iX, iY);
+	m_kPythonEventMgr.reportImprovementBuilt(iOldImprovementType, iImprovementType, iX, iY);
 }
 
 void CvEventReporter::improvementDestroyed(int iImprovementType, int iPlayer, int iX, int iY)
@@ -211,6 +211,11 @@ void CvEventReporter::cityLost( CvCity *pCity)
 void CvEventReporter::cultureExpansion( CvCity *pCity, PlayerTypes ePlayer )
 {
 	m_kPythonEventMgr.reportCultureExpansion(pCity, ePlayer);
+}
+
+void CvEventReporter::improvementOwnerChange(int iImprovementType, int iPlayer, int iX, int iY)
+{
+	m_kPythonEventMgr.reportImprovementOwnerChange(iImprovementType, iPlayer, iX, iY);
 }
 
 void CvEventReporter::cityGrowth(CvCity *pCity, PlayerTypes ePlayer)

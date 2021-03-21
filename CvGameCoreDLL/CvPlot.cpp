@@ -5549,6 +5549,11 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 					GET_PLAYER(getOwnerINLINE()).doGoody(this, NULL);
 				}
 
+				if(getImprovementType() != NO_IMPROVEMENT)
+				{
+					CvEventReporter::getInstance().improvementOwnerChange(getImprovementType(), eNewValue, getX(), getY());
+				}
+
 				for (iI = 0; iI < MAX_CIV_TEAMS; ++iI)
 				{
 					if (GET_TEAM((TeamTypes)iI).isAlive())
@@ -6299,7 +6304,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 
 		if (getImprovementType() != NO_IMPROVEMENT)
 		{
-			CvEventReporter::getInstance().improvementBuilt(getImprovementType(), getX_INLINE(), getY_INLINE());
+			CvEventReporter::getInstance().improvementBuilt(eOldImprovement, getImprovementType(), getX_INLINE(), getY_INLINE());
 		}
 
 		if (getImprovementType() == NO_IMPROVEMENT)

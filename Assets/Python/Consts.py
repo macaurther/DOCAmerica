@@ -8,6 +8,8 @@ iWorldX = 150
 iWorldY = 80
 
 iGoodyHutGuardChance = 60
+iNativePillagePartisans = 4
+iNativeVillageAssimilateCost = 2
 
 # initialise player variables to player IDs from WBS
 iNumPlayers = 18
@@ -640,10 +642,10 @@ iModernEra, iAtomicEra, iInformationEra) = range (iNumEras)
 
 #Improvements
 
-iNumImprovements = 30
+iNumImprovements = 31
 (iLandWorked, iWaterWorked, iCityRuins, iHut, iFarm, iPaddyField, iFishingBoats, iOceanFishery, iWhalingBoats, iMine, 
 iWorkshop, iLumbermill, iWindmill, iWatermill, iPlantation, iSlavePlantation, iQuarry, iPasture, iCamp, iWell, 
-iOffshorePlatform, iWinery, iCottage, iHamlet, iVillage, iTown, iFort, iForestPreserve, iMarinePreserve, iSolarCollector) = range(iNumImprovements)
+iOffshorePlatform, iWinery, iCottage, iHamlet, iVillage, iTown, iFort, iForestPreserve, iMarinePreserve, iSolarCollector, iNativeVillage) = range(iNumImprovements)
 
 iNumRoutes = 4
 (iRouteRoad, iRouteRailroad, iRouteRomanRoad, iRouteHighway) = range(iNumRoutes)

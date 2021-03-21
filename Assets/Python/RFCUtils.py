@@ -240,6 +240,21 @@ class RFCUtils:
 			for unit in lUnits:
 				unit.kill(False, iBarbarian)
 
+	def setUnitsHaveMoved(self, iPlayer, tPlot):
+		x, y = tPlot
+		lUnits = []
+		plot = gc.getMap().plot(x, y)
+		iNumUnits = plot.getNumUnits()
+		if iNumUnits > 0:
+			for iUnit in range(iNumUnits):
+				unit = plot.getUnit(iUnit)
+				if unit.getOwner() == iPlayer:
+					lUnits.append(unit)
+		for unit in lUnits:
+			print("FOB removing unit moves")
+			unit.setMoves(0)
+			unit.setMadeAttack(True)
+
 	#RiseAndFall
 	def flipUnitsInArea(self, lPlots, iNewOwner, iOldOwner, bSkipPlotCity, bKillSettlers):
 		"""Creates a list of all flipping units, deletes old ones and places new ones

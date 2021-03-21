@@ -32,7 +32,7 @@ public:
 	void reportCombatLogCollateral(CvUnit* pAttacker, CvUnit* pDefender, int iDamage);
 	void reportCombatLogFlanking(CvUnit* pAttacker, CvUnit* pDefender, int iDamage);
 // BUG - Combat Events - start
-	void reportImprovementBuilt(int iImprovementType, int iX, int iY);	
+	void reportImprovementBuilt(int iOldImprovementType, int iImprovementType, int iX, int iY);	
 	void reportImprovementDestroyed(int iImprovementType, int iPlayer, int iX, int iY);	
 	void reportRouteBuilt(int iRouteType, int iX, int iY);	
 
@@ -48,6 +48,7 @@ public:
 	void reportCityAcquiredAndKept(PlayerTypes ePlayer, CvCity* pCity);
 	void reportCityLost(CvCity *pCity);
 	void reportCultureExpansion(CvCity *pCity, PlayerTypes ePlayer);
+	void reportImprovementOwnerChange(int iImprovementType, int iOwner, int iX, int iY);
 	void reportCityGrowth(CvCity *pCity, PlayerTypes ePlayer);
 	void reportCityProduction(CvCity *pCity, PlayerTypes ePlayer);
 	void reportCityBuildingUnit(CvCity *pCity, UnitTypes eUnitType);
