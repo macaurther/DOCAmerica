@@ -499,6 +499,12 @@ class CvRFCEventHandler:
 		if iImprovement == iNativeVillage:
 			print("FOB Native Village Destroyed")
 			if iOwner > 0:
+				if utils.getHumanID() == iOwner:
+					CyInterface().addMessage(iOwner, False, iDuration,
+											 CyTranslator().getText("TXT_KEY_NATIVE_UPRISING", ("",)),
+											 "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
+											 gc.getUnitInfo(iWarrior).getButton(), ColorTypes(iDarkPink), iX,
+											 iY, True, True)
 				self.barb.trySpawnNativePartisans(iX, iY, iOwner)
 			else:
 				self.barb.trySpawnNativePartisans(iX, iY)

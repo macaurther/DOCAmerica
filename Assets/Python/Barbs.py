@@ -345,7 +345,7 @@ class Barbs:
 	def possibleTiles(self, tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False):
 		return [tPlot for tPlot in utils.getPlotList(tTL, tBR) if self.possibleTile(tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity)]
 		
-	def possibleTile(self, tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity):
+	def possibleTile(self, tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bNextToCity=False):
 		x, y = tPlot
 		plot = gc.getMap().plot(x, y)
 		lSurrounding = utils.surroundingPlots(tPlot)
@@ -359,8 +359,8 @@ class Barbs:
 		# only inside territory if specified
 		if not bTerritory and plot.getOwner() >= 0: return False
 		
-		# never directly next to cities
-		if [(i, j) for (i, j) in lSurrounding if gc.getMap().plot(i, j).isCity()]: return False
+		# directly next to cities
+		if not bNextToCity and [(i, j) for (i, j) in lSurrounding if gc.getMap().plot(i, j).isCity()]: return False
 		
 		# never on tiles with units
 		if plot.isUnit(): return False
@@ -465,7 +465,7 @@ class Barbs:
 	#TODO - redo to provide greater unit variation based on era and location
 	def trySpawnNativePartisans(self, iX, iY, iPlayer=None):
 		plot = (iX,iY)
-		if not self.possibleTile(plot, bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True):
+		if not self.possibleTile(plot, bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True, bNextToCity=True):
 			lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True)
 			plot = utils.getRandomEntry(lPlots)
 		if plot == None: return
