@@ -1354,8 +1354,9 @@ class RiseAndFall:
 				self.handleColonialAcquisition(iCiv)
 				
 	def onRailroadDiscovered(self, iCiv):
-	
-		if utils.getHumanID() != iCiv:
+		pass
+		#MacAurther TODO
+		'''if utils.getHumanID() != iCiv:
 			if iCiv == iAmerica:
 				iCount = 0
 				lWestCoast = [(11, 50), (11, 49), (11, 48), (11, 47), (11, 46), (12, 45)]
@@ -1387,7 +1388,7 @@ class RiseAndFall:
 					for i in range(2-iCount):
 						tPlot = utils.getRandomEntry(lWestCoast)
 						utils.makeUnit(iSettler, iCiv, tPlot, 1)
-						utils.makeUnit(iMinuteman, iCiv, tPlot, 1)
+						utils.makeUnit(iMinuteman, iCiv, tPlot, 1)'''
 						
 					
 
@@ -1591,49 +1592,26 @@ class RiseAndFall:
 								utils.makeUnit(iUnitType, iNewOwner, tPlot, 1)
 
 	def createAdditionalUnits(self, iCiv, tPlot):
+		#MacAurther TODO
 		if iCiv == iSpain:
-			utils.makeUnit(iCrossbowman, iCiv, tPlot, 3)
-			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
+			pass
 		elif iCiv == iFrance:
-			utils.makeUnit(iCrossbowman, iCiv, tPlot, 3)
-			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
+			pass
 		elif iCiv == iEngland:
-			utils.makeUnit(iCrossbowman, iCiv, tPlot, 3)
-			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
+			pass
 		elif iCiv == iAmerica:
-			utils.makeUnit(iGrenadier, iCiv, tPlot, 3)
-			utils.makeUnit(iMinuteman, iCiv, tPlot, 3)
-			utils.makeUnit(iCannon, iCiv, tPlot, 3)
+			pass
 		elif iCiv == iCanada:
-			utils.makeUnit(iCavalry, iCiv, tPlot, 2)
-			utils.makeUnit(iRifleman, iCiv, tPlot, 4)
-			utils.makeUnit(iCannon, iCiv, tPlot, 2)
+			pass
 
 
 	def createStartingUnits(self, iCiv, tPlot):
 		if iCiv == iSpain:
-			iSpanishSettlers = 2
-			if utils.getHumanID() != iSpain: iSpanishSettlers = 3
-			utils.createSettlers(iCiv, iSpanishSettlers)
-			utils.makeUnit(iCrossbowman, iCiv, tPlot, 1)
-			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
-			utils.makeUnit(iSwordsman, iCiv, tPlot, 4)
-
-			if utils.getHumanID() != iSpain:
-				utils.makeUnit(iCrossbowman, iCiv, tPlot, 2)
-			utils.createMissionaries(iCiv, 1)
+			pass
 		elif iCiv == iFrance:
-			utils.createSettlers(iCiv, 3)
-			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
-			utils.makeUnit(iHeavySpearman, iCiv, tPlot, 2)
-			utils.makeUnit(iSwordsman, iCiv, tPlot, 3)
-			utils.createMissionaries(iCiv, 1)
+			pass
 		elif iCiv == iEngland:
-			utils.createSettlers(iCiv, 3)
-			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 3)
-			utils.createMissionaries(iCiv, 1)
-			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			
+			pass
 		elif iCiv == iVirginia:
 			utils.createSettlers(iCiv, 1)
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
@@ -1746,30 +1724,9 @@ class RiseAndFall:
 
 
 		elif iCiv == iAmerica:
-			utils.createSettlers(iCiv, 8)
-			utils.makeUnit(iGrenadier, iCiv, tPlot, 2)
-			utils.makeUnit(iMinuteman, iCiv, tPlot, 4)
-			utils.makeUnit(iCannon, iCiv, tPlot, 2)
-			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			if tSeaPlot:
-				utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 2)
-				utils.makeUnit(iGalleon, iCiv, tSeaPlot, 2)
-				utils.makeUnit(iFrigate, iCiv, tSeaPlot, 1)
-			if utils.getHumanID() != iAmerica:
-				utils.makeUnitAI(iMinuteman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
-			iReligion = self.findAreaReligion(iCiv, utils.getPlotList((23, 40), (33, 52)))
-			if iReligion >= 0:
-				pAmerica.setLastStateReligion(iReligion)
-				utils.makeUnit(iMissionary + iReligion, iCiv, tPlot, 1)
+			pass
 		elif iCiv == iCanada:
-			utils.createSettlers(iCiv, 5)
-			utils.makeUnit(iDragoon, iCiv, tPlot, 3)
-			utils.makeUnit(iRifleman, iCiv, tPlot, 5)
-			tSeaPlot = self.findSeaPlots(tPlot, 2, iCiv)
-			if tSeaPlot:
-				utils.makeUnit(iSteamship, iCiv, tSeaPlot, 2)
-				utils.makeUnit(iIronclad, iCiv, tSeaPlot, 1)
-				utils.makeUnit(iTorpedoBoat, iCiv, tSeaPlot, 1)
+			pass
 				
 		# Leoreth: start wars on spawn when the spawn actually happens
 		self.startWarsOnSpawn(iCiv)
