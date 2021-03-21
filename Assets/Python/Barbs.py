@@ -342,8 +342,8 @@ class Barbs:
 		if iTurn % utils.getTurns(iPeriod) == iRest:
 			spawnFunction(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj)
 			
-	def possibleTiles(self, tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False):
-		return [tPlot for tPlot in utils.getPlotList(tTL, tBR) if self.possibleTile(tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity)]
+	def possibleTiles(self, tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False, bNextToCity=False):
+		return [tPlot for tPlot in utils.getPlotList(tTL, tBR) if self.possibleTile(tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bNextToCity)]
 		
 	def possibleTile(self, tPlot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bNextToCity=False):
 		x, y = tPlot
@@ -466,7 +466,7 @@ class Barbs:
 	def trySpawnNativePartisans(self, iX, iY, iPlayer=None):
 		plot = (iX,iY)
 		if not self.possibleTile(plot, bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True, bNextToCity=True):
-			lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True)
+			lPlots = self.possibleTiles((iX-1,iY-1), (iX+1,iY+1), bWater=False, bTerritory=True, bBorder=True, bImpassable=False, bNearCity=True, bNextToCity=True)
 			plot = utils.getRandomEntry(lPlots)
 		if plot == None: return
 		iNumUnits = iNativePillagePartisans
