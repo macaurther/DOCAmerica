@@ -48,7 +48,8 @@ public:
 	void reportCityAcquiredAndKept(PlayerTypes ePlayer, CvCity* pCity);
 	void reportCityLost(CvCity *pCity);
 	void reportCultureExpansion(CvCity *pCity, PlayerTypes ePlayer);
-	void reportImprovementOwnerChange(int iImprovementType, int iOwner, int iX, int iY);
+	void reportImprovementOwnerChange(int iImprovementType, int iOwner, int iX, int iY); //Fob
+	void reportNativeIndoctrination(int iPlayer); //Fob
 	void reportCityGrowth(CvCity *pCity, PlayerTypes ePlayer);
 	void reportCityProduction(CvCity *pCity, PlayerTypes ePlayer);
 	void reportCityBuildingUnit(CvCity *pCity, UnitTypes eUnitType);

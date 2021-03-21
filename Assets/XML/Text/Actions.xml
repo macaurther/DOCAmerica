@@ -261,4 +261,28 @@
 		<Italian>[ICON_BULLET]Can rebuild free buildings in cities</Italian>
 		<Spanish>[ICON_BULLET]Can rebuild free buildings in cities</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_NATIVE_INDOCTRINATION</Tag>
+		<English>Set Indigenous Policy</English>
+		<French>Set Indigenous Policy</French>
+		<German>Set Indigenous Policy</German>
+		<Italian>Set Indigenous Policy</Italian>
+		<Spanish>Set Indigenous Policy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_INDOCTRINATE_NATIVES</Tag>
+		<English>This will order the Great Person to reform laws in order to support the integration of the indigenous population into our culture, improving relations and allowing them to join our cities.</English>
+		<French>This will order the Great Person to reform laws in order to support the integration of the indigenous population into our culture, improving relations and allowing them to join our cities.</French>
+		<German>This will order the Great Person to reform laws in order to support the integration of the indigenous population into our culture, improving relations and allowing them to join our cities.</German>
+		<Italian>This will order the Great Person to reform laws in order to support the integration of the indigenous population into our culture, improving relations and allowing them to join our cities.</Italian>
+		<Spanish>This will order the Great Person to reform laws in order to support the integration of the indigenous population into our culture, improving relations and allowing them to join our cities.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_INDOCTRINATE_NATIVES</Tag>
+		<English>[ICON_BULLET]Can Improve Native Relations</English>
+		<French>[ICON_BULLET]Can Improve Native Relations</French>
+		<German>[ICON_BULLET]Can Improve Native Relations</German>
+		<Italian>[ICON_BULLET]Can Improve Native Relations</Italian>
+		<Spanish>[ICON_BULLET]Can Improve Native Relations</Spanish>
+	</TEXT>
 </Civ4GameText>

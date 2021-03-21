@@ -84,6 +84,7 @@ class CvRFCEventHandler:
 		eventManager.addEventHandler("improvementDestroyed", self.onImprovementDestroyed)
 		eventManager.addEventHandler("improvementBuilt", self.onImprovementBuilt)
 		eventManager.addEventHandler("improvementOwnerChange", self.onImprovementOwnerChange)
+		eventManager.addEventHandler("nativeIndoctrination", self.onNativeIndoctrination)
 	       
 		self.eventManager = eventManager
 
@@ -500,6 +501,10 @@ class CvRFCEventHandler:
 		#FoB - do nothing, should be handled in other events now
 		#if iImprovement == iNativeVillage:
 		#self.native.handleNativeVillageDestroyed(iOwner, iX, iY, False)
+
+	def onNativeIndoctrination(self, argsList):
+		iPlayer = argsList[0]
+		data.players[iPlayer].iNativeAttitudeBase = 5
 		
 	def onBeginGameTurn(self, argsList):
 		iGameTurn = argsList[0]

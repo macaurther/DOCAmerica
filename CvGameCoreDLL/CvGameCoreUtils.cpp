@@ -2509,6 +2509,7 @@ void getMissionTypeString(CvWString& szString, MissionTypes eMissionType)
 	case MISSION_GREAT_MISSION: szString = L"MISSION_GREAT_MISSION"; break;
 	case MISSION_SATELLITE_ATTACK: szString = L"MISSION_SATELLITE_ATTACK"; break;
 	case MISSION_REBUILD: szString = L"MISSION_REBUILD"; break;
+	case MISSION_NATIVE_INDOCTRINATION: szString = L"MISSION_NATIVE_INDOCTRINATION"; break;
 
 	case MISSION_DIE_ANIMATION: szString = L"MISSION_DIE_ANIMATION"; break;
 

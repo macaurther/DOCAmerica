@@ -122,6 +122,7 @@ class CvEventManager(object):
 			'cityLost'				: self.onCityLost,
 			'cultureExpansion' 		: self.onCultureExpansion,
 			'improvementOwnerChange': self.onImprovementOwnerChange,
+			'nativeIndoctrination': self.onNativeIndoctrination,
 			'cityGrowth' 			: self.onCityGrowth,
 			'cityDoTurn' 			: self.onCityDoTurn,
 			'cityBuildingUnit'	: self.onCityBuildingUnit,
@@ -987,6 +988,14 @@ class CvEventManager(object):
 		'Improvement tile owner change'
 		iImprovement, iOwner, iX, iY = argsList
 		CvUtil.pyPrint("Owner %s's culture has expanded to encompass an improvement" %(iOwner,))
+
+	def onNativeIndoctrination(self, argsList):
+	## Platy Builder ##
+		if CyGame().GetWorldBuilderMode() and not CvPlatyBuilderScreen.bPython: return
+	## Platy Builder ##
+		'Improvement tile owner change'
+		iPlayer = argsList[0]
+		CvUtil.pyPrint("Player %s has indoctrinated natives" %(iPlayer,))
 	
 	def onCityGrowth(self, argsList):
 		'City Population Growth'

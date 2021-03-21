@@ -8119,6 +8119,7 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
+		case MISSION_NATIVE_INDOCTRINATION: //FoB
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -14143,6 +14144,31 @@ bool CvUnit::reformGovernment()
 		}
 	}
 
+	kill(true);
+
+	return true;
+}
+
+//FoB
+bool CvUnit::canIndoctrinateNatives(const CvPlot* pPlot) const
+{
+	if (!GC.getUnitInfo(getUnitType()).isReformGovernment()) return false; //FoB - reusing government reform tag since I'm lazy and don't want to deal with deserializing xml
+	//TODO - prevent player from doing this twice
+	if (pPlot->getOwner() != getOwner()) return false;
+
+	return true;
+}
+
+//FoB
+bool CvUnit::indoctrinateNatives()
+{
+	if (!canIndoctrinateNatives(plot()))
+	{
+		return false;
+	}
+
+	//Just let python handle it, since that's where the attitudes are defined
+	CvEventReporter::getInstance().nativeIndoctrination(getOwner());
 	kill(true);
 
 	return true;

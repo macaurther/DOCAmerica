@@ -544,6 +544,7 @@ void CvDllPythonEvents::reportCultureExpansion( CvCity *pCity, PlayerTypes ePlay
 	}
 }
 
+//FoB
 void CvDllPythonEvents::reportImprovementOwnerChange(int iImprovementType, int iPlayer, int iX, int iY)
 {
 	if (preEvent())
@@ -554,6 +555,17 @@ void CvDllPythonEvents::reportImprovementOwnerChange(int iImprovementType, int i
 		eventData.add(iPlayer);
 		eventData.add(iX);
 		eventData.add(iY);
+		postEvent(eventData);
+	}
+}
+
+void CvDllPythonEvents::reportNativeIndoctrination(int iPlayer)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("nativeIndoctrination");
+		eventData.add(iPlayer);
 		postEvent(eventData);
 	}
 }

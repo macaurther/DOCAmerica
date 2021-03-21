@@ -733,6 +733,7 @@ CvPlot* CvSelectionGroup::lastMissionPlot()
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
+		case MISSION_NATIVE_INDOCTRINATION: //FoB
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -1134,6 +1135,14 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			}
 			break;
 
+		//FoB
+		case MISSION_NATIVE_INDOCTRINATION:
+			if (pLoopUnit->canIndoctrinateNatives(pPlot))
+			{
+				return true;
+			}
+			break;
+
 		case MISSION_DIE_ANIMATION:
 			return false;
 			break;
@@ -1332,6 +1341,7 @@ void CvSelectionGroup::startMission()
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
+		case MISSION_NATIVE_INDOCTRINATION: //FoB
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -1626,6 +1636,13 @@ void CvSelectionGroup::startMission()
 					}
 					break;
 
+				case MISSION_NATIVE_INDOCTRINATION:
+					if (pLoopUnit->indoctrinateNatives())
+					{
+						bAction = true;
+					}
+					break;
+
 				case MISSION_DIE_ANIMATION:
 					bAction = true;
 					break;
@@ -1900,6 +1917,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 				case MISSION_GREAT_MISSION:
 				case MISSION_SATELLITE_ATTACK:
 				case MISSION_REBUILD:
+				case MISSION_NATIVE_INDOCTRINATION: //FoB
 				case MISSION_DIE_ANIMATION:
 					break;
 
@@ -2006,6 +2024,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_GREAT_MISSION:
 			case MISSION_SATELLITE_ATTACK:
 			case MISSION_REBUILD:
+			case MISSION_NATIVE_INDOCTRINATION: //FoB
 			case MISSION_DIE_ANIMATION:
 				bDone = true;
 				break;

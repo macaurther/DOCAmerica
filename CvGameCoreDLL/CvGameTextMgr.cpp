@@ -8710,6 +8710,13 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_REFORM_GOVERNMENT"));
 	}
 
+	//FoB
+	if (GC.getUnitInfo(eUnit).isReformGovernment()) //Reuse xml tag since I'm lazy
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_INDOCTRINATE_NATIVES"));
+	}
+
 	if (GC.getUnitInfo(eUnit).isResolveCrisis())
 	{
 		szBuffer.append(NEWLINE);

@@ -213,9 +213,15 @@ void CvEventReporter::cultureExpansion( CvCity *pCity, PlayerTypes ePlayer )
 	m_kPythonEventMgr.reportCultureExpansion(pCity, ePlayer);
 }
 
+//FoB
 void CvEventReporter::improvementOwnerChange(int iImprovementType, int iPlayer, int iX, int iY)
 {
 	m_kPythonEventMgr.reportImprovementOwnerChange(iImprovementType, iPlayer, iX, iY);
+}
+
+void CvEventReporter::nativeIndoctrination(int iPlayer)
+{
+	m_kPythonEventMgr.reportNativeIndoctrination(iPlayer);
 }
 
 void CvEventReporter::cityGrowth(CvCity *pCity, PlayerTypes ePlayer)

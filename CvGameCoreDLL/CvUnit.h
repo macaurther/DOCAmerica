@@ -290,6 +290,10 @@ public:
 	bool canRebuild(const CvPlot* pPlot) const;
 	bool rebuild();
 
+	//FoB
+	bool canIndoctrinateNatives(const CvPlot* pPlot) const;
+	bool indoctrinateNatives();
+
 	bool isWorker() const;
 
 	int upgradePrice(UnitTypes eUnit) const;																											// Exposed to Python
