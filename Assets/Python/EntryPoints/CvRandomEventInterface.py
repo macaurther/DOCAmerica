@@ -17,6 +17,7 @@ import RFCUtils #Leoreth
 import Religions #Leoreth
 import PyHelpers #Leoreth
 import Barbs  #MacAurther
+import Natives  #MacAurther
 import Areas  #MacAurther
 import CityNameManager as cnm
 from StoredData import data
@@ -27,7 +28,7 @@ localText = CyTranslator()
 rel = Religions.Religions()
 localText = CyTranslator()
 barb = Barbs.Barbs()
-
+native = Natives.Natives()
 
 ######## BLESSED SEA ###########
 
@@ -4601,7 +4602,7 @@ def doPowhatanWarI1(argsList):
 	capital = Areas.getCapital(iPlayer)
 	pPlayer.initUnit(iMilitia, capital[0], capital[1], UnitAITypes.UNITAI_CITY_DEFENSE, DirectionTypes.DIRECTION_SOUTH)
 
-	barb.changeNativeAttitudeForPlayer(iPlayer, -5)
+	native.changeNativeAttitudeForPlayer(iPlayer, -5)
 	#barb.spawnPowhatanWarriorsI(1)
 
 def getHelpPowhatanWarI1(argsList):

@@ -6,6 +6,7 @@ import Popup as PyPopup
 from StoredData import data # edead
 import RiseAndFall
 import Barbs
+import Natives
 from Religions import rel
 import Resources
 import CityNameManager as cnm
@@ -88,6 +89,7 @@ class CvRFCEventHandler:
 
 		self.rnf = RiseAndFall.RiseAndFall()
 		self.barb = Barbs.Barbs()
+		self.native = Natives.Natives()
 		self.res = Resources.Resources()
 		self.up = UniquePowers.UniquePowers()
 		self.aiw = AIWars.AIWars()
@@ -388,6 +390,8 @@ class CvRFCEventHandler:
 		iUnit = unit.getUnitType()
 		if iImprovement >= 0:
 			vic.onUnitPillage(iPlayer, iGold, iUnit)
+		if iImprovement == iNativeVillage:
+			self.native.handleNativeVillageDestroyed(iPlayer, unit.getX(), unit.getY(), True)
 			
 	def onCityCaptureGold(self, argsList):
 		city, iPlayer, iGold = argsList
@@ -477,33 +481,25 @@ class CvRFCEventHandler:
 			print("FOB native village destroyed by improvement")
 			iTileOwner = gc.getMap().plot(iX, iY).getOwner()
 			if iTileOwner == -1:
-				self.barb.trySpawnNativePartisans(iX, iY)
+				self.native.handleNativeVillageDestroyed(iTileOwner, iX, iY, True)
 			else:
-				self.barb.trySpawnNativePartisans(iX, iY, iTileOwner)
+				self.native.handleNativeVillageDestroyed(iTileOwner, iX, iY, False)
 
 	def onImprovementOwnerChange(self, argsList):
 		iImprovement, iOwner, iX, iY = argsList
 		if iImprovement == iNativeVillage and iOwner > 0:
 			print("FOB native village enveloped by cultural borders")
 			self.improvementTileChanges.append((iX,iY,iOwner))
+			gc.getMap().plot(iX, iY).setImprovementType(-1)
 			# TODO - change to add chance of assimilation
 			#self.barb.changeNativeAttitudeForPlayer(iOwner, -iNativeVillageAssimilateCost)
 			#gc.getMap().plot(iX, iY).setImprovementType(-1)
 
 	def onImprovementDestroyed(self, argsList):
 		iImprovement, iOwner, iX, iY = argsList
-		if iImprovement == iNativeVillage:
-			print("FOB Native Village Destroyed")
-			if iOwner > 0:
-				if utils.getHumanID() == iOwner:
-					CyInterface().addMessage(iOwner, False, iDuration,
-											 CyTranslator().getText("TXT_KEY_NATIVE_UPRISING", ("",)),
-											 "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
-											 gc.getUnitInfo(iWarrior).getButton(), ColorTypes(iDarkPink), iX,
-											 iY, True, True)
-				self.barb.trySpawnNativePartisans(iX, iY, iOwner)
-			else:
-				self.barb.trySpawnNativePartisans(iX, iY)
+		#FoB - do nothing, should be handled in other events now
+		#if iImprovement == iNativeVillage:
+		#self.native.handleNativeVillageDestroyed(iOwner, iX, iY, False)
 		
 	def onBeginGameTurn(self, argsList):
 		iGameTurn = argsList[0]
@@ -539,7 +535,7 @@ class CvRFCEventHandler:
 			self.rnf.deleteMode(iPlayer)
 			
 		self.pla.checkPlayerTurn(iGameTurn, iPlayer)
-		self.barb.adjustNativeAttitudeForGameTurn(iGameTurn, iPlayer)
+		self.native.adjustNativeAttitudeForGameTurn(iGameTurn, iPlayer)
 
 		#FoB kludge to ensure units don't move
 		if iPlayer == iNative:
@@ -555,8 +551,7 @@ class CvRFCEventHandler:
 		for tTileChange in self.improvementTileChanges:
 			print("FOB Preventing Unit Movement")
 			iX, iY, iOwner = tTileChange
-			self.barb.changeNativeAttitudeForPlayer(iOwner, -iNativeVillageAssimilateCost)
-			gc.getMap().plot(iX, iY).setImprovementType(-1)
+			self.native.handleNativeVillageDestroyed(iOwner, iX, iY, False)
 		self.improvementTileChanges = []  # FoB clear list
 
 	def onGreatPersonBorn(self, argsList):
