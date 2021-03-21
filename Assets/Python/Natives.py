@@ -48,18 +48,36 @@ class Natives:
         print("FOB Native Village Destroyed at " + str(iX) + "," + str(iY))
         if iPlayer > 0:
             if bPillage:
-                self.changeNativeAttitudeForPlayer(iPlayer, -iNativeVillagePillageAnger)
-            else:
+                self.changeNativeAttitudeForPlayer(iPlayer, -iNativeVillagePillageAnger) #If pillaged, update attitude before to ensure anger
+            if not bPillage and data.getTotalNativeAttitude(iPlayer) > 0:
+                self.assimilateVillageIntoLocalCity(iPlayer, iX, iY)
                 self.changeNativeAttitudeForPlayer(iPlayer, -iNativeVillageAssimilateCost)
-            if utils.getHumanID() == iPlayer:
-                CyInterface().addMessage(iPlayer, False, iDuration,
-                                         CyTranslator().getText("TXT_KEY_NATIVE_UPRISING", ("",)),
-                                         "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
-                                         gc.getUnitInfo(iWarrior).getButton(), ColorTypes(iRed), iX,
-                                         iY, True, True)
-            self.trySpawnNativePartisans(iX, iY, iPlayer)
+                if utils.getHumanID() == iPlayer:
+                    CyInterface().addMessage(iPlayer, False, iDuration,
+                                             CyTranslator().getText("TXT_KEY_NATIVE_ASSIMILATION", ("",)),
+                                             "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
+                                             gc.getUnitInfo(iSettler).getButton(), ColorTypes(iGreen), iX,
+                                             iY, True, True)
+            else:
+                if utils.getHumanID() == iPlayer:
+                    CyInterface().addMessage(iPlayer, False, iDuration,
+                                             CyTranslator().getText("TXT_KEY_NATIVE_UPRISING", ("",)),
+                                             "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT,
+                                             gc.getUnitInfo(iWarrior).getButton(), ColorTypes(iRed), iX,
+                                             iY, True, True)
+                self.trySpawnNativePartisans(iX, iY, iPlayer)
+            return
+        self.trySpawnNativePartisans(iX, iY)
+
+    def assimilateVillageIntoLocalCity(self, iPlayer, iX, iY):
+        pCity = gc.getMap().findCity(iX, iY, iPlayer, TeamTypes.NO_TEAM, False, False, TeamTypes.NO_TEAM, DirectionTypes.NO_DIRECTION, CyCity())
+        if pCity:
+            pCity.changePopulation(1)
+            iCultureChange = pCity.getCulture(iPlayer) / pCity.getPopulation()
+            #targetPlot.changeCulture(iNative, iCultureChange, False)
+            pCity.changeCulture(iNative, iCultureChange, True)
         else:
-            self.trySpawnNativePartisans(iX, iY)
+            print("FoB Assimilation: Could not find valid city")
 
     # TODO - redo to provide greater unit variation based on era and location
     def trySpawnNativePartisans(self, iX, iY, iPlayer=None):

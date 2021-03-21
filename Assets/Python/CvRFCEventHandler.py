@@ -391,7 +391,7 @@ class CvRFCEventHandler:
 		if iImprovement >= 0:
 			vic.onUnitPillage(iPlayer, iGold, iUnit)
 		if iImprovement == iNativeVillage:
-			self.native.handleNativeVillageDestroyed(iPlayer, unit.getX(), unit.getY(), True)
+			self.native.handleNativeVillageDestroyed(unit.getOwner(), unit.getX(), unit.getY(), True)
 			
 	def onCityCaptureGold(self, argsList):
 		city, iPlayer, iGold = argsList
