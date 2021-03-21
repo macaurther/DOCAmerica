@@ -91,7 +91,9 @@ class Natives:
         iNumUnits = iNativePillagePartisans
         if iPlayer:
             iNumUnits = self.getNumNativeSpawnsFromAttitude(iPlayer)
-        utils.makeUnitAI(iWarrior, iNative, plot, UnitAITypes.UNITAI_ATTACK, iNumUnits, "Hostile")
+        utils.makeUnitAI(iWarrior, iNative, plot, UnitAITypes.UNITAI_ATTACK, 1, "Hostile")
+        if iNumUnits > 1:
+            utils.makeUnitAI(iSkirmisher, iNative, plot, UnitAITypes.UNITAI_ATTACK, iNumUnits-1, "Hostile")
         utils.setUnitsHaveMoved(iNative, (plot[0], plot[1]))
 
     def possibleTiles(self, tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False, bNextToCity=False):

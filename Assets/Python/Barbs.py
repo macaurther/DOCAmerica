@@ -74,11 +74,11 @@ class Barbs:
 
 		# FOB - add blocking units
 		if iGameTurn == getTurnForYear(1600):
-			self.trySpawnNativeBlocker(iWarrior, 2, 98, 26)
-			self.trySpawnNativeBlocker(iWarrior, 2, 99, 31)
-			self.trySpawnNativeBlocker(iWarrior, 2, 98, 39)
-			self.trySpawnNativeBlocker(iWarrior, 2, 98, 16)
-			self.trySpawnNativeBlocker(iWarrior, 2, 100, 15)
+			self.trySpawnNativeBlocker(iSkirmisher, 2, 98, 26)
+			self.trySpawnNativeBlocker(iSkirmisher, 2, 99, 31)
+			self.trySpawnNativeBlocker(iSkirmisher, 2, 98, 39)
+			self.trySpawnNativeBlocker(iSkirmisher, 2, 98, 16)
+			self.trySpawnNativeBlocker(iSkirmisher, 2, 100, 15)
 
 		# American natives
 		if utils.isYearIn(1600, 1700):

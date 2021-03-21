@@ -2415,23 +2415,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SKIRMISHER</Tag>
-		<English>Skirmisher</English>
+		<English>Spear-Thrower</English>
 		<French>
-			<Text>Tirailleur</Text>
+			<Text>Spear-Thrower</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Skirmisher</German>
-		<Italian>Skirmisher</Italian>
-		<Spanish>Skirmisher</Spanish>
+		<German>Spear-Thrower</German>
+		<Italian>Spear-Thrower</Italian>
+		<Spanish>Spear-Thrower</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SKIRMISHER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Spear-throwers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Spear-throwers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Spear-throwers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Spear-throwers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Spear-throwers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HORSEMAN</Tag>
