@@ -129,7 +129,16 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iMassachusetts, 0)
 	
 	elif iPlayer == iNewHampshire:
-		pass
+		# first goal: control New Hampshire and Vermont in 1660 AD
+		if iGameTurn == getTurnForYear(1691):
+			bNewHampshire = getNumCitiesInArea(iNewHampshire, Areas.getNormalArea(iNewHampshire, False)) >= 3
+			bVermont = False
+			# MacAurther TODO: Uncomment when ME is added
+			#bVermont = getNumCitiesInArea(iNewHampshire, Areas.getNormalArea(iVermont, False)) >= 2
+			if bNewHampshire and bVermont:
+				win(iNewHampshire, 0)
+			else:
+				lose(iNewHampshire, 0)
 	
 	elif iPlayer == iMaryland:
 		pass
@@ -1949,7 +1958,11 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iNewHampshire:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			iCitiesNewHampshire = getNumCitiesInArea(iNewHampshire, Areas.getNormalArea(iNewHampshire, False))
+			iCitiesVermont = 0
+			# MacAurther TODO: Uncomment when VT is added
+			#iCitiesVermont = getNumCitiesInArea(iNewHampshire, Areas.getNormalArea(iCitiesVermont, False))
+			aHelp.append(getIcon(iCitiesNewHampshire >= 3) + localText.getText("TXT_KEY_VICTORY_NEW_HAMPSHIRE_CONTROL_NEW_HAMPSHIRE", (iCitiesNewHampshire, 3)) + ' ' + getIcon(iCitiesVermont >= 2) + localText.getText("TXT_KEY_VICTORY_NEW_HAMPSHIRE_CONTROL_VERMONT", (iCitiesVermont, 2)))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:

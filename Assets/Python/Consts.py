@@ -242,10 +242,11 @@ dRebirth = {
 dRebirthCiv = {
 }
 
+#MacAurther TODO
 tResurrectionIntervals = (
-[(1700, 2020)], #Spain
-[(1700, 2020)], #France
-[(1700, 2020)], #England
+[(0, 0)], #Spain
+[(0, 0)], #France
+[(0, 0)], #England
 [(1700, 2020)], #Virginia
 [(1700, 2020)], #Massachusetts
 [(1700, 2020)], #New Hampshire
@@ -259,8 +260,8 @@ tResurrectionIntervals = (
 [(1700, 2020)], #Pennsylvania
 [(1700, 2020)], #Delaware
 [(1700, 2020)], #Georgia
-[(1770, 2020)], #America
-[(1867, 2020)], #Canada
+[(0, 0)], #America
+[(0, 0)], #Canada
 )
 
 #rnf. Some civs have a double entry, for a higher chance
