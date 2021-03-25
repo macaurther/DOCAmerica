@@ -1246,6 +1246,78 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 
 	collateralCombat(pPlot, pDefender);
 
+	//FoB
+	//TODO - refactor to minimize duplicate code
+	int iAttackerBaseDamage;
+	int iDefenderBaseDamage;
+	getBaseDefenderCombatValues(*pDefender, pPlot, iAttackerStrength, iAttackerFirepower, iDefenderStrength, iAttackerBaseDamage, iDefenderBaseDamage, &cdDefenderDetails);
+
+	if (getDamage() + iAttackerBaseDamage >= maxHitPoints() && GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability())
+	{
+		flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderBaseDamage, pDefender);
+
+		changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
+		CvEventReporter::getInstance().combatRetreat(this, pDefender);
+	}
+	else
+	{
+		changeDamage(iAttackerBaseDamage, pDefender->getOwnerINLINE());
+		cdAttackerDetails.iCurrHitPoints = currHitPoints();
+		if (isHuman() || pDefender->isHuman())
+		{
+			CyArgsList pyArgs;
+			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdAttackerDetails));
+			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdDefenderDetails));
+			pyArgs.add(1);
+			pyArgs.add(iAttackerDamage);
+			CvEventReporter::getInstance().genericEvent("combatLogHit", pyArgs.makeFunctionArgs());
+		}
+	}
+
+	if (std::min(GC.getMAX_HIT_POINTS(), pDefender->getDamage() + iDefenderBaseDamage) > combatLimitAgainst(pDefender))
+	{
+		changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
+		pDefender->setDamage(combatLimitAgainst(pDefender), getOwnerINLINE());
+		CvEventReporter::getInstance().combatWithdrawal(this, pDefender);
+	}
+	else
+	{
+		pDefender->changeDamage(iDefenderBaseDamage, getOwnerINLINE());
+		cdDefenderDetails.iCurrHitPoints=pDefender->currHitPoints();
+
+		if (isHuman() || pDefender->isHuman())
+		{
+			CyArgsList pyArgs;
+			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdAttackerDetails));
+			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdDefenderDetails));
+			pyArgs.add(0);
+			pyArgs.add(iDefenderDamage);
+			CvEventReporter::getInstance().genericEvent("combatLogHit", pyArgs.makeFunctionArgs());
+		}
+	}
+
+	if (isDead() || pDefender->isDead())
+	{
+		if (isDead())
+		{
+			int iExperience = defenseXPValue();
+			iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
+			iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+			pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), !isBarbarian());
+		}
+		else
+		{
+			flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+
+			int iExperience = pDefender->attackXPValue();
+			iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
+			iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
+			changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
+		}
+
+		return;
+	}
+
 	while (true)
 	{
 /************************************************************************************************/
@@ -1362,6 +1434,12 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
 			}
 
+			break;
+		}
+
+		//FoB - break combat once first round and all first strikes are complete
+		if(getCombatFirstStrikes() <=0 && pDefender->getCombatFirstStrikes() <= 0)
+		{
 			break;
 		}
 	}
@@ -13609,6 +13687,22 @@ void CvUnit::getDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
+}
+
+//FoB - Probably not worth duplicating, but I did anyway - used to get base damage
+void CvUnit::getBaseDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int iOurStrength, int iOurFirepower, int& iTheirStrength, int& iOurDamage, int& iTheirDamage, CombatDetails* pTheirDetails) const
+{
+	iTheirStrength = kDefender.currCombatStr(pPlot, this, pTheirDetails);
+	int iTheirFirepower = kDefender.currFirepower(pPlot, this);
+
+	FAssert((iOurStrength + iTheirStrength) > 0);
+	FAssert((iOurFirepower + iTheirFirepower) > 0);
+
+	int iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
+
+	//Hardcoded for now
+	iOurDamage = std::max(1, ((35 * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
+	iTheirDamage = std::max(1, ((35 * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
 }
 
 int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, bool bCheckPlot) const
