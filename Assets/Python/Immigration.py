@@ -21,10 +21,9 @@ PyPlayer = PyHelpers.PyPlayer
 # Used for Immigration from areas not represented on the map
 
 tImmDates        =       (1600,1630,1670,1700,1770,1820,1870,1890,1930,1960)
-#iSpain = 0
-#iFrance = 1
-#iEngland = 2
-#tImmSchedule = {iSpain:[1,2,3],iFrance:[4,5,6],iEngland:[7,8,9]}
+
+tMigSchedule     =       (   1,   1,   1,   2,   3,   5,   8,   10,  20,  30)
+
 tImmSchedule     =       {
 iSpain           :       [   0,   0,   0,   0,   0,   0,   0,   0,   0,   0],
 iFrance          :       [   0,   1,   2,   1,   0,   0,   0,   0,   0,   0],
@@ -58,7 +57,7 @@ iEngland         :       [   1,   4,   5,   6,   5,   3,   2,   0,   0,   0],
 #iChina           :       [],
 #iJapan           :       [],
 #iIndia           :       [],
-}
+#}
 
 class Immigration:
 
@@ -67,8 +66,8 @@ class Immigration:
 #####################################  
 
 	def checkTurn(self, iGameTurn):
-		#if iGameTurn >= getTurnForYear(tBirth[iMassachusetts])+utils.getTurns(5):
-		if iGameTurn >= getTurnForYear(tBirth[iVirginia])+utils.getTurns(1):
+		if iGameTurn >= getTurnForYear(tBirth[iMassachusetts])+utils.getTurns(5):
+		#if iGameTurn >= getTurnForYear(tBirth[iVirginia])+utils.getTurns(5):
 			self.checkImmigration(iGameTurn)
 					
 	def setup(self):
@@ -84,7 +83,6 @@ class Immigration:
 			self.doMigration(iGameTurn)
 			iRandom = gc.getGame().getSorenRandNum(6, 'random')
 			data.iImmigrationTimer = 5 + iRandom # 5-10 turns
-			data.iImmigrationTimer = 0
 		else:
 			data.iImmigrationTimer -= 1
 	
@@ -131,9 +129,15 @@ class Immigration:
 		# determine schedule column
 		iCurrentCol = 0
 		for iCol,iDate in enumerate(tImmDates):
-			if iDate >= iGameTurn:
+			if getTurnForYear(iDate) >= iGameTurn:
 				break
 			iCurrentCol = iCol
+		
+		# debug:
+		#print("iGameTurn: " + str(iGameTurn))
+		#print("getTurnForYear(iDate): " + str(getTurnForYear(iDate)))
+		#print("tImmDates: " + str(tImmDates))
+		#print("iCurrentCol: " + str(iCurrentCol))
 		
 		# determine sources
 		lSources = []
@@ -271,7 +275,18 @@ class Immigration:
 		lSourceCities.sort(key=itemgetter(1), reverse=True)
 		lTargetCities.sort(key=itemgetter(1), reverse=True)
 		
-		iNumMigrations = min(len(lSourceCities), len(lTargetCities))
+		# determine schedule column
+		iCurrentCol = 0
+		for iCol,iDate in enumerate(tImmDates):
+			if getTurnForYear(iDate) >= iGameTurn:
+				break
+			iCurrentCol = iCol
+		
+		# determine max migrations
+		# MacAurther TODO: Consider tying this to Technology as opposed to a schedule
+		iMaxMigrations = tMigSchedule[iCol]
+		
+		iNumMigrations = min(min(len(lSourceCities), len(lTargetCities)), iMaxMigrations)
 		
 		#debug:
 		print("Migration: lSourceCities:")
@@ -313,7 +328,7 @@ class Immigration:
 				CyInterface().addMessage(iSourcePlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_EMIGRATION", (sourceCity.getName(),targetCity.getName(),pPlayer.getName())), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), sourceCity.getX(), sourceCity.getY(), True, True)
 			if utils.getHumanID() == iTargetPlayer:
 				pSourcePlayer = gc.getPlayer(iSourcePlayer)
-				CyInterface().addMessage(iTargetPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_MIGRATION", (targetCity.getName(),sourceCity.getName(),pSourcePlayer.getName())), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), targetCityX, targetCityY, True, True)
+				CyInterface().addMessage(iTargetPlayer, False, iDuration, CyTranslator().getText("TXT_KEY_UP_MIGRATION", (targetCity.getName(),sourceCity.getName(),pSourcePlayer.getCivilizationDescription(0))), "", InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, gc.getUnitInfo(iSettler).getButton(), ColorTypes(iYellow), targetCityX, targetCityY, True, True)
 			
 	
 	#MacAurther name change: canadianUP -> immigrantsGPP
