@@ -612,6 +612,7 @@ lMountain = [rMontana, rIdaho, rWyoming, rColorado, rUtah, rArizona, rNevada]
 lPacific = [rWashington, rOregon, rCalifornia]
 lWest = lMountain + lPacific
 
+lColonial = [rMaine, rNewHampshire, rVermont, rMassachusetts, rRhodeIsland, rConnecticut, rNewYork, rNewJersey, rPennsylvania, rMaryland, rDelaware, rVirginia, rNorthCarolina, rSouthCarolina, rGeorgia]
 lContiguous = lSouth + lNorth + lWest
 
 lNewWorld = lContiguous

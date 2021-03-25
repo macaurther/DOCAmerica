@@ -29,6 +29,7 @@ import Areas
 import Civilizations
 import AIParameters
 import GreatPeople as gp
+import Immigration
 
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
@@ -94,6 +95,7 @@ class CvRFCEventHandler:
 		self.pla = Plague.Plague()
 		self.com = Communications.Communications()
 		self.corp = Companies.Companies()
+		self.imm = Immigration.Immigration()
 
 		self.improvementTileChanges = [] #FoB - kludge to ensure native units don't move
 
@@ -110,6 +112,7 @@ class CvRFCEventHandler:
 		
 		vic.setup()
 		cong.setup()
+		self.imm.setup()
 		
 		# Leoreth: set DLL core values
 		Modifiers.init()
@@ -520,6 +523,8 @@ class CvRFCEventHandler:
 		
 		sta.checkTurn(iGameTurn)
 		cong.checkTurn(iGameTurn)
+		
+		self.imm.checkTurn(iGameTurn)
 		
 		if iGameTurn % 10 == 0:
 			dc.checkTurn(iGameTurn)
