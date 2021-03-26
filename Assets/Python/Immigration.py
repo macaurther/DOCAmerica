@@ -165,11 +165,11 @@ class Immigration:
 			
 			bWorker = 0
 			bSettler = 0
+			data.lImmigrantCount[iTargetPlayer] += 1
 			if iCivicLabor == iIndenturedServitude:
 				bWorker = data.lImmigrantCount[iTargetPlayer] % 3 == 0
 			if iCivicDevelopment == iHeadright:
 				bSettler = data.lImmigrantCount[iTargetPlayer] % 5 == 0
-			data.lImmigrantCount[iTargetPlayer] += 1
 			
 			if bWorker:
 				# worker outcome

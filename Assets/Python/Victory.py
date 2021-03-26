@@ -30,13 +30,14 @@ tRichmond = ((129, 39),(128, 39),(128, 40))	# Three possible tiles for Richmond
 ### GOAL CONSTANTS ###
 
 dTechGoals = {
-	iAmerica: (1, [iPrinting]),	# MacAurther TODO: Temp Placeholder
+	iMassachusetts: (1, [iIndependence]),
 }
 
 dEraGoals = {}
 
 dWonderGoals = {
 	iFrance: (2, [iStatueOfLiberty], True),
+	iMassachusetts: (2, [iHarvard], True),
 	iAmerica: (1, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iGoldenGateBridge, iPentagon, iUnitedNations], True),
 }
 
@@ -119,7 +120,7 @@ def checkTurn(iGameTurn, iPlayer):
 	elif iPlayer == iMassachusetts:
 		# first goal: control Massachusetts and Maine in 1660 AD
 		if iGameTurn == getTurnForYear(1660):
-			bMassachusetts = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMassachusetts, False)) >= 2
+			bMassachusetts = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMassachusetts, False)) >= 3
 			bMaine = False
 			# MacAurther TODO: Uncomment when ME is added
 			#bMaine = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMaine, False)) >= 2
@@ -127,6 +128,25 @@ def checkTurn(iGameTurn, iPlayer):
 				win(iMassachusetts, 0)
 			else:
 				lose(iMassachusetts, 0)
+			
+			# second goal: defeat 10 British Units by 1780 AD
+			if isPossible(iMassachusetts, 1):
+				if data.iMassachusettsVsBritain >= 10:
+					win(iEngland, 1)
+			
+			if iGameTurn == getTurnForYear(1780):
+				expire(iEngland, 1)
+			
+			# third goal: build Harvard by 1675 AD
+			if iGameTurn == getTurnForYear(1675):
+				expire(iMassachusetts, 2)
+			
+			# third goal: be the most advanced state in 1800 AD
+			if iGameTurn == getTurnForYear(1800):
+				if isBestPlayer(iMassachusetts, playerTechs):
+					win(iMassachusetts, 0)
+				else:
+					lose(iMassachusetts, 0)
 	
 	elif iPlayer == iNewHampshire:
 		# first goal: control New Hampshire and Vermont in 1660 AD
@@ -456,7 +476,13 @@ def onCombatResult(pWinningUnit, pLosingUnit):
 		if isPossible(iEngland, 1):
 			if pLosingUnitInfo.getDomainType() == iDomainSea:
 				data.iEnglishSinks += 1
-				
+	
+	# second Massachusetts goal:  defeat 10 British Units by 1780 AD
+	if iWinningPlayer == iMassachusetts:
+		if isPossible(iMassachusetts, 1):
+			if pLosingUnit.getOwner() == iEngland:
+				data.iMassachusettsVsBritain += 1
+			
 					
 def onGreatPersonBorn(iPlayer, unit):
 	iUnitType = utils.getBaseUnit(unit.getUnitType())
@@ -1950,11 +1976,18 @@ def getUHVHelp(iPlayer, iGoal):
 			iCitiesMaine = 0
 			# MacAurther TODO: Uncomment when ME is added
 			#iCitiesMaine = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMaine, False))
-			aHelp.append(getIcon(iCitiesMassachusetts >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MASSACHUSETTS", (iCitiesMassachusetts, 2)) + ' ' + getIcon(iCitiesMaine >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MAINE", (iCitiesMaine, 2)))
+			aHelp.append(getIcon(iCitiesMassachusetts >= 3) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MASSACHUSETTS", (iCitiesMassachusetts, 3)) + ' ' + getIcon(iCitiesMaine >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MAINE", (iCitiesMaine, 2)))
 		elif iGoal == 1:
-			aHelp.append("TODO ;)")
+			bIndependence = data.lFirstDiscovered[iIndependence] == iMassachusetts
+			aHelp.append(getIcon(bIndependence) + localText.getText("TXT_KEY_TECH_INDEPENDENCE", ()))
+			iBritsDefeated = data.iMassachusettsVsBritain
+			aHelp.append(getIcon(iBritsDefeated >= 10) + localText.getText("TXT_KEY_VICTORY_BRITISH_UNITS", (iBritsDefeated, 10)))
 		elif iGoal == 2:
-			aHelp.append("TODO ;)")
+			bHarvard = data.getWonderBuilder(iHarvard) == iMassachusetts
+			aHelp.append(getIcon(bHarvard) + localText.getText("TXT_KEY_BUILDING_HARVARD", ()))
+			iMostAdvancedCiv = getBestPlayer(iMassachusetts, playerTechs)
+			aHelp.append(getIcon(iMostAdvancedCiv == iMassachusetts) + localText.getText("TXT_KEY_VICTORY_MOST_ADVANCED_STATE", (str(gc.getPlayer(iMostAdvancedCiv).getCivilizationShortDescriptionKey()),)))
+		
 
 	elif iPlayer == iNewHampshire:
 		if iGoal == 0:
