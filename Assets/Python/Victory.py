@@ -27,6 +27,11 @@ lGreatPeople = [iSpecialistGreatProphet, iSpecialistGreatArtist, iSpecialistGrea
 # third Virginian goal: settle 10 great generals or statesmen in Richmond by 1860 AD
 tRichmond = ((129, 39),(128, 39),(128, 40))	# Three possible tiles for Richmond
 
+# first Maryland goal: control 70% of the Chesapeake by 1700 AD
+tChesapeakeBL = (130, 37)
+tChesapeakeTR = (134, 48)
+tChesapeakeExceptions = ((130,48), (134,48), (134,47), (134,46), (134,45), (134,44), (130,40), (130,39), (130,38), (130,37),)
+
 ### GOAL CONSTANTS ###
 
 dTechGoals = {
@@ -161,7 +166,16 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iNewHampshire, 0)
 	
 	elif iPlayer == iMaryland:
-		pass
+		# first goal: control 70% of the Chesapeake by 1700 AD
+		if isPossible(iMaryland, 0):
+			iChesapeake, iTotalChesapeake = countControlledTiles(iMaryland, tChesapeakeBL, tChesapeakeTR, False, tChesapeakeExceptions, True)
+			fChesapeake = iChesapeake * 100.0 / iTotalChesapeake
+			
+			if fChesapeake >= 70.0:
+				win(iMaryland, 0)
+				
+		if iGameTurn == getTurnForYear(1930):
+			expire(iMaryland, 0)
 	
 	elif iPlayer == iConnecticut:
 		pass
@@ -2003,7 +2017,9 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iMaryland:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			iChesapeake, iTotalChesapeake = countControlledTiles(iMaryland, tChesapeakeBL, tChesapeakeTR, False, tChesapeakeExceptions, True)
+			fChesapeake = iChesapeake * 100.0 / iTotalChesapeake
+			aHelp.append(getIcon(fChesapeake >= 70.0) + localText.getText("TXT_KEY_VICTORY_CHESAPEAKE_TERRITORY", (str(u"%.2f%%" % fChesapeake), str(70))))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:

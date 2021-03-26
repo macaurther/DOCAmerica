@@ -5738,43 +5738,43 @@
 	<!-- Maryland -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Old Bay</English>
+		<French>Old Bay</French>
+		<German>Old Bay</German>
+		<Italian>Old Bay</Italian>
+		<Spanish>Old Bay</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD2_TITLE</Tag>
@@ -5831,6 +5831,15 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CHESAPEAKE_TERRITORY</Tag>
+		<English>Chesapeake territory: %s1 / %s2%%</English>
+		<French>Chesapeake territory: %s1 / %s2%%</French>
+		<German>Chesapeake territory: %s1 / %s2%%</German>
+		<Italian>Chesapeake territory: %s1 / %s2%%</Italian>
+		<Spanish>Chesapeake territory: %s1 / %s2%%</Spanish>
 	</TEXT>
 	
 	<!-- Connecticut -->

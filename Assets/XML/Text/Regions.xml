@@ -12,463 +12,387 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_0</Tag>
-		<English>Britain</English>
-		<French>
-			<Text>Grande-Bretagne</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Britannien</German>
-		<Italian>Britain</Italian>
-		<Spanish>Britain</Spanish>
+		<English>Virginia</English>
+		<French>Virginia</French>
+		<German>Virginia</German>
+		<Italian>Virginia</Italian>
+		<Spanish>Virginia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_1</Tag>
-		<English>Ireland</English>
-		<French>Ireland</French>
-		<German>Irland</German>
-		<Italian>Ireland</Italian>
-		<Spanish>Ireland</Spanish>
+		<English>Massachusetts</English>
+		<French>Massachusetts</French>
+		<German>Massachusetts</German>
+		<Italian>Massachusetts</Italian>
+		<Spanish>Massachusetts</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_2</Tag>
-		<English>France</English>
-		<French>France</French>
-		<German>Frankreich</German>
-		<Italian>France</Italian>
-		<Spanish>France</Spanish>
+		<English>New Hampshire</English>
+		<French>New Hampshire</French>
+		<German>New Hampshire</German>
+		<Italian>New Hampshire</Italian>
+		<Spanish>New Hampshire</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_3</Tag>
-		<English>Iberia</English>
-		<French>
-			<Text>P&#233;ninsule Ib&#233;rique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Iberien</German>
-		<Italian>Iberia</Italian>
-		<Spanish>Iberia</Spanish>
+		<English>Maryland</English>
+		<French>Maryland</French>
+		<German>Maryland</German>
+		<Italian>Maryland</Italian>
+		<Spanish>Maryland</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_4</Tag>
-		<English>Italy</English>
-		<French>
-			<Text>Italie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Italien</German>
-		<Italian>Italy</Italian>
-		<Spanish>Italy</Spanish>
+		<English>Connecticut</English>
+		<French>Connecticut</French>
+		<German>Connecticut</German>
+		<Italian>Connecticut</Italian>
+		<Spanish>Connecticut</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_5</Tag>
-		<English>Lower Germany</English>
-		<French>Lower Germany</French>
-		<German>Niederdeutschland</German>
-		<Italian>Lower Germany</Italian>
-		<Spanish>Lower Germany</Spanish>
+		<English>Rhode Island</English>
+		<French>Rhode Island</French>
+		<German>Rhode Island</German>
+		<Italian>Rhode Island</Italian>
+		<Spanish>Rhode Island</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_6</Tag>
-		<English>Central Europe</English>
-		<French>Central Europe</French>
-		<German>Mitteleuropa</German>
-		<Italian>Central Europe</Italian>
-		<Spanish>Central Europe</Spanish>
+		<English>Delaware</English>
+		<French>Delaware</French>
+		<German>Delaware</German>
+		<Italian>Delaware</Italian>
+		<Spanish>Delaware</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_7</Tag>
-		<English>Balkans</English>
-		<French>
-			<Text>Balkans</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Balkan</German>
-		<Italian>Balkans</Italian>
-		<Spanish>Balkans</Spanish>
+		<English>North Carolina</English>
+		<French>North Carolina</French>
+		<German>North Carolina</German>
+		<Italian>North Carolina</Italian>
+		<Spanish>North Carolina</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_8</Tag>
-		<English>Greece</English>
-		<French>Greece</French>
-		<German>Griechenland</German>
-		<Italian>Greece</Italian>
-		<Spanish>Greece</Spanish>
+		<English>South Carolina</English>
+		<French>South Carolina</French>
+		<German>South Carolina</German>
+		<Italian>South Carolina</Italian>
+		<Spanish>South Carolina</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_9</Tag>
-		<English>Poland</English>
-		<French>Poland</French>
-		<German>Polen</German>
-		<Italian>Poland</Italian>
-		<Spanish>Poland</Spanish>
+		<English>New Jersey</English>
+		<French>New Jersey</French>
+		<German>New Jersey</German>
+		<Italian>New Jersey</Italian>
+		<Spanish>New Jersey</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_10</Tag>
-		<English>Baltics</English>
-		<French>Baltics</French>
-		<German>Baltikum</German>
-		<Italian>Baltics</Italian>
-		<Spanish>Baltics</Spanish>
+		<English>New York</English>
+		<French>New York</French>
+		<German>New York</German>
+		<Italian>New York</Italian>
+		<Spanish>New York</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_11</Tag>
-		<English>Scandinavia</English>
-		<French>
-			<Text>Scandinavie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Skandinavien</German>
-		<Italian>Scandinavia</Italian>
-		<Spanish>Scandinavia</Spanish>
+		<English>Pennsylvania</English>
+		<French>Pennsylvania</French>
+		<German>Pennsylvania</German>
+		<Italian>Pennsylvania</Italian>
+		<Spanish>Pennsylvania</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_12</Tag>
-		<English>Ruthenia</English>
-		<French>Ruthenia</French>
-		<German>Ruthenien</German>
-		<Italian>Ruthenia</Italian>
-		<Spanish>Ruthenia</Spanish>
+		<English>Georgia</English>
+		<French>Georgia</French>
+		<German>Georgia</German>
+		<Italian>Georgia</Italian>
+		<Spanish>Georgia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_13</Tag>
-		<English>Pontic Steppe</English>
-		<French>Pontic Steppe</French>
-		<German>Pontische Steppe</German>
-		<Italian>Pontic Steppe</Italian>
-		<Spanish>Pontic Steppe</Spanish>
+		<English>Vermont</English>
+		<French>Vermont</French>
+		<German>Vermont</German>
+		<Italian>Vermont</Italian>
+		<Spanish>Vermont</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_14</Tag>
-		<English>European Arctic</English>
-		<French>European Arctic</French>
-		<German>Europ&#228;ische Arktis</German>
-		<Italian>European Arctic</Italian>
-		<Spanish>European Arctic</Spanish>
+		<English>Kentucky</English>
+		<French>Kentucky</French>
+		<German>Kentucky</German>
+		<Italian>Kentucky</Italian>
+		<Spanish>Kentucky</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_15</Tag>
-		<English>Urals</English>
-		<French>Urals</French>
-		<German>Ural</German>
-		<Italian>Urals</Italian>
-		<Spanish>Urals</Spanish>
+		<English>Tennessee</English>
+		<French>Tennessee</French>
+		<German>Tennessee</German>
+		<Italian>Tennessee</Italian>
+		<Spanish>Tennessee</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_16</Tag>
-		<English>Anatolia</English>
-		<French>
-			<Text>Anatolie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Anatolien</German>
-		<Italian>Anatolia</Italian>
-		<Spanish>Anatolia</Spanish>
+		<English>Ohio</English>
+		<French>Ohio</French>
+		<German>Ohio</German>
+		<Italian>Ohio</Italian>
+		<Spanish>Ohio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_17</Tag>
-		<English>Caucasus</English>
-		<French>Caucasus</French>
-		<German>Kaukasus</German>
-		<Italian>Caucasus</Italian>
-		<Spanish>Caucasus</Spanish>
+		<English>Louisiana</English>
+		<French>Louisiana</French>
+		<German>Louisiana</German>
+		<Italian>Louisiana</Italian>
+		<Spanish>Louisiana</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_18</Tag>
-		<English>Levant</English>
-		<French>Levant</French>
-		<German>Levante</German>
-		<Italian>Levant</Italian>
-		<Spanish>Levant</Spanish>
+		<English>Indiana</English>
+		<French>Indiana</French>
+		<German>Indiana</German>
+		<Italian>Indiana</Italian>
+		<Spanish>Indiana</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_19</Tag>
-		<English>Mesopotamia</English>
-		<French>
-			<Text>M&#233;sopotamie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mesopotamien</German>
-		<Italian>Mesopotamia</Italian>
-		<Spanish>Mesopotamia</Spanish>
+		<English>Mississippi</English>
+		<French>Mississippi</French>
+		<German>Mississippi</German>
+		<Italian>Mississippi</Italian>
+		<Spanish>Mississippi</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_20</Tag>
-		<English>Arabia</English>
-		<French>
-			<Text>Arabie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Arabien</German>
-		<Italian>Arabia</Italian>
-		<Spanish>Arabia</Spanish>
+		<English>Illinois</English>
+		<French>Illinois</French>
+		<German>Illinois</German>
+		<Italian>Illinois</Italian>
+		<Spanish>Illinois</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_21</Tag>
-		<English>Egypt</English>
-		<French>
-			<Text>&#201;gypte</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>&#196;gypten</German>
-		<Italian>Egypt</Italian>
-		<Spanish>Egypt</Spanish>
+		<English>Alabama</English>
+		<French>Alabama</French>
+		<German>Alabama</German>
+		<Italian>Alabama</Italian>
+		<Spanish>Alabama</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_22</Tag>
-		<English>Nubia</English>
-		<French>Nubia</French>
-		<German>Nubien</German>
-		<Italian>Nubia</Italian>
-		<Spanish>Nubia</Spanish>
+		<English>Maine</English>
+		<French>Maine</French>
+		<German>Maine</German>
+		<Italian>Maine</Italian>
+		<Spanish>Maine</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_23</Tag>
-		<English>Maghreb</English>
-		<French>
-			<Text>Maghreb</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Maghreb</German>
-		<Italian>Maghreb</Italian>
-		<Spanish>Maghreb</Spanish>
+		<English>Missouri</English>
+		<French>Missouri</French>
+		<German>Missouri</German>
+		<Italian>Missouri</Italian>
+		<Spanish>Missouri</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_24</Tag>
-		<English>Persia</English>
-		<French>
-			<Text>Perse</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Persien</German>
-		<Italian>Persia</Italian>
-		<Spanish>Persia</Spanish>
+		<English>Arkansas</English>
+		<French>Arkansas</French>
+		<German>Arkansas</German>
+		<Italian>Arkansas</Italian>
+		<Spanish>Arkansas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_25</Tag>
-		<English>Khorasan</English>
-		<French>Khorasan</French>
-		<German>Chorasan</German>
-		<Italian>Khorasan</Italian>
-		<Spanish>Khorasan</Spanish>
+		<English>Michigan</English>
+		<French>Michigan</French>
+		<German>Michigan</German>
+		<Italian>Michigan</Italian>
+		<Spanish>Michigan</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_26</Tag>
-		<English>Transoxiana</English>
-		<French>Transoxiana</French>
-		<German>Transoxanien</German>
-		<Italian>Transoxiana</Italian>
-		<Spanish>Transoxiana</Spanish>
+		<English>Florida</English>
+		<French>Florida</French>
+		<German>Florida</German>
+		<Italian>Florida</Italian>
+		<Spanish>Florida</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_27</Tag>
-		<English>Sindh</English>
-		<French>Sindh</French>
-		<German>Sindh</German>
-		<Italian>Sindh</Italian>
-		<Spanish>Sindh</Spanish>
+		<English>Texas</English>
+		<French>Texas</French>
+		<German>Texas</German>
+		<Italian>Texas</Italian>
+		<Spanish>Texas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_28</Tag>
-		<English>Punjab</English>
-		<French>Punjab</French>
-		<German>Pandschab</German>
-		<Italian>Punjab</Italian>
-		<Spanish>Punjab</Spanish>
+		<English>Iowa</English>
+		<French>Iowa</French>
+		<German>Iowa</German>
+		<Italian>Iowa</Italian>
+		<Spanish>Iowa</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_29</Tag>
-		<English>Rajputana</English>
-		<French>Rajputana</French>
-		<German>Rajputana</German>
-		<Italian>Rajputana</Italian>
-		<Spanish>Rajputana</Spanish>
+		<English>Wisconsin</English>
+		<French>Wisconsin</French>
+		<German>Wisconsin</German>
+		<Italian>Wisconsin</Italian>
+		<Spanish>Wisconsin</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_30</Tag>
-		<English>Hindustan</English>
-		<French>Hindustan</French>
-		<German>Hindustan</German>
-		<Italian>Hindustan</Italian>
-		<Spanish>Hindustan</Spanish>
+		<English>California</English>
+		<French>California</French>
+		<German>California</German>
+		<Italian>California</Italian>
+		<Spanish>California</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_31</Tag>
-		<English>Bengal</English>
-		<French>Bengal</French>
-		<German>Bengalen</German>
-		<Italian>Bengal</Italian>
-		<Spanish>Bengal</Spanish>
+		<English>Minnesota</English>
+		<French>Minnesota</French>
+		<German>Minnesota</German>
+		<Italian>Minnesota</Italian>
+		<Spanish>Minnesota</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_32</Tag>
-		<English>Deccan</English>
-		<French>
-			<Text>Deccan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Dekkan</German>
-		<Italian>Deccan</Italian>
-		<Spanish>Deccan</Spanish>
+		<English>Oregon</English>
+		<French>Oregon</French>
+		<German>Oregon</German>
+		<Italian>Oregon</Italian>
+		<Spanish>Oregon</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_33</Tag>
-		<English>Dravida</English>
-		<French>Dravida</French>
-		<German>Dravida</German>
-		<Italian>Dravida</Italian>
-		<Spanish>Dravida</Spanish>
+		<English>Kansas</English>
+		<French>Kansas</French>
+		<German>Kansas</German>
+		<Italian>Kansas</Italian>
+		<Spanish>Kansas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_34</Tag>
-		<English>Indochina</English>
-		<French>
-			<Text>Indochine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Indochina</German>
-		<Italian>Indochina</Italian>
-		<Spanish>Indochina</Spanish>
+		<English>West Virginia</English>
+		<French>West Virginia</French>
+		<German>West Virginia</German>
+		<Italian>West Virginia</Italian>
+		<Spanish>West Virginia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_35</Tag>
-		<English>Indonesia</English>
-		<French>
-			<Text>Indon&#233;sie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Indonesien</German>
-		<Italian>Indonesia</Italian>
-		<Spanish>Indonesia</Spanish>
+		<English>Nevada</English>
+		<French>Nevada</French>
+		<German>Nevada</German>
+		<Italian>Nevada</Italian>
+		<Spanish>Nevada</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_36</Tag>
-		<English>Philippines</English>
-		<French>Philippines</French>
-		<German>Philippinen</German>
-		<Italian>Philippines</Italian>
-		<Spanish>Philippines</Spanish>
+		<English>Nebraska</English>
+		<French>Nebraska</French>
+		<German>Nebraska</German>
+		<Italian>Nebraska</Italian>
+		<Spanish>Nebraska</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_37</Tag>
-		<English>South China</English>
-		<French>South China</French>
-		<German>S&#252;dchina</German>
-		<Italian>South China</Italian>
-		<Spanish>South China</Spanish>
+		<English>Colorado</English>
+		<French>Colorado</French>
+		<German>Colorado</German>
+		<Italian>Colorado</Italian>
+		<Spanish>Colorado</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_38</Tag>
-		<English>North China</English>
-		<French>North China</French>
-		<German>Nordchina</German>
-		<Italian>North China</Italian>
-		<Spanish>North China</Spanish>
+		<English>North Dakota</English>
+		<French>North Dakota</French>
+		<German>North Dakota</German>
+		<Italian>North Dakota</Italian>
+		<Spanish>North Dakota</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_39</Tag>
-		<English>Korea</English>
-		<French>
-			<Text>Cor&#233;e</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Korea</German>
-		<Italian>Korea</Italian>
-		<Spanish>Korea</Spanish>
+		<English>South Dakota</English>
+		<French>South Dakota</French>
+		<German>South Dakota</German>
+		<Italian>South Dakota</Italian>
+		<Spanish>South Dakota</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_40</Tag>
-		<English>Japan</English>
-		<French>
-			<Text>Japon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Japan</German>
-		<Italian>Japan</Italian>
-		<Spanish>Japan</Spanish>
+		<English>Montana</English>
+		<French>Montana</French>
+		<German>Montana</German>
+		<Italian>Montana</Italian>
+		<Spanish>Montana</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_41</Tag>
-		<English>Tibet</English>
-		<French>
-			<Text>Tibet</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tibet</German>
-		<Italian>Tibet</Italian>
-		<Spanish>Tibet</Spanish>
+		<English>Washington</English>
+		<French>Washington</French>
+		<German>Washington</German>
+		<Italian>Washington</Italian>
+		<Spanish>Washington</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_42</Tag>
-		<English>Tarim Basin</English>
-		<French>Tarim Basin</French>
-		<German>Tarimbecken</German>
-		<Italian>Tarim Basin</Italian>
-		<Spanish>Tarim Basin</Spanish>
+		<English>Idaho</English>
+		<French>Idaho</French>
+		<German>Idaho</German>
+		<Italian>Idaho</Italian>
+		<Spanish>Idaho</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_43</Tag>
-		<English>Mongolia</English>
-		<French>Mongolia</French>
-		<German>Mongolei</German>
-		<Italian>Mongolia</Italian>
-		<Spanish>Mongolia</Spanish>
+		<English>Wyoming</English>
+		<French>Wyoming</French>
+		<German>Wyoming</German>
+		<Italian>Wyoming</Italian>
+		<Spanish>Wyoming</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_44</Tag>
-		<English>Manchuria</English>
-		<French>
-			<Text>Mandchourie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mandschurei</German>
-		<Italian>Manchuria</Italian>
-		<Spanish>Manchuria</Spanish>
+		<English>Utah</English>
+		<French>Utah</French>
+		<German>Utah</German>
+		<Italian>Utah</Italian>
+		<Spanish>Utah</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_45</Tag>
-		<English>Amur</English>
-		<French>Amur</French>
-		<German>Amur</German>
-		<Italian>Amur</Italian>
-		<Spanish>Amur</Spanish>
+		<English>Oklahoma</English>
+		<French>Oklahoma</French>
+		<German>Oklahoma</German>
+		<Italian>Oklahoma</Italian>
+		<Spanish>Oklahoma</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_46</Tag>
-		<English>Central Asian Steppe</English>
-		<French>Central Asian Steppe</French>
-		<German>Zentralasiatische Steppe</German>
-		<Italian>Central Asian Steppe</Italian>
-		<Spanish>Central Asian Steppe</Spanish>
+		<English>New Mexico</English>
+		<French>New Mexico</French>
+		<German>New Mexico</German>
+		<Italian>New Mexico</Italian>
+		<Spanish>New Mexico</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_47</Tag>
-		<English>Siberia</English>
-		<French>
-			<Text>Sib&#233;rie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Sibirien</German>
-		<Italian>Siberia</Italian>
-		<Spanish>Siberia</Spanish>
+		<English>Arizona</English>
+		<French>Arizona</French>
+		<German>Arizona</German>
+		<Italian>Arizona</Italian>
+		<Spanish>Arizona</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_48</Tag>
@@ -776,99 +700,67 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_0</Tag>
-		<English>Egypt</English>
-		<French>
-			<Text>&#201;gypte</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>&#196;gypten</German>
-		<Italian>Egypt</Italian>
-		<Spanish>Egypt</Spanish>
+		<English>Virginia</English>
+		<French>Virginia</French>
+		<German>Virginia</German>
+		<Italian>Virginia</Italian>
+		<Spanish>Virginia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_1</Tag>
-		<English>Phoenicia</English>
-		<French>
-			<Text>Ph&#233;nicie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ph&#246;nizien</German>
-		<Italian>Phoenicia</Italian>
-		<Spanish>Phoenicia</Spanish>
+		<English>West Virginia</English>
+		<French>West Virginia</French>
+		<German>West Virginia</German>
+		<Italian>West Virginia</Italian>
+		<Spanish>West Virginia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_2</Tag>
-		<English>Babylonia</English>
-		<French>
-			<Text>Babylonie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Babylonien</German>
-		<Italian>Babylonia</Italian>
-		<Spanish>Babylonia</Spanish>
+		<English>Kentucky</English>
+		<French>Kentucky</French>
+		<German>Kentucky</German>
+		<Italian>Kentucky</Italian>
+		<Spanish>Kentucky</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_3</Tag>
-		<English>Persia</English>
-		<French>
-			<Text>Perse</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Persien</German>
-		<Italian>Persia</Italian>
-		<Spanish>Persia</Spanish>
+		<English>Massachusetts</English>
+		<French>Massachusetts</French>
+		<German>Massachusetts</German>
+		<Italian>Massachusetts</Italian>
+		<Spanish>Massachusetts</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_4</Tag>
-		<English>Mesopotamia</English>
-		<French>
-			<Text>M&#233;sopotamie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mesopotamien</German>
-		<Italian>Mesopotamia</Italian>
-		<Spanish>Mesopotamia</Spanish>
+		<English>Maine</English>
+		<French>Maine</French>
+		<German>Maine</German>
+		<Italian>Maine</Italian>
+		<Spanish>Maine</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_5</Tag>
-		<English>Transoxania</English>
-		<French>
-			<Text>Transoxiane</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Transoxanien</German>
-		<Italian>Transoxania</Italian>
-		<Spanish>Transoxania</Spanish>
+		<English>New Hampshire</English>
+		<French>New Hampshire</French>
+		<German>New Hampshire</German>
+		<Italian>New Hampshire</Italian>
+		<Spanish>New Hampshire</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_6</Tag>
-		<English>Northwest India</English>
-		<French>
-			<Text>Nord-ouest de l'Inde</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Nordwestindien</German>
-		<Italian>Northwest India</Italian>
-		<Spanish>Northwest India</Spanish>
+		<English>Vermont</English>
+		<French>Vermont</French>
+		<German>Vermont</German>
+		<Italian>Vermont</Italian>
+		<Spanish>Vermont</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_7</Tag>
-		<English>Mediterranean</English>
-		<French>
-			<Text>M&#233;diterran&#233;e</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mittelmeerk&#252;ste</German>
-		<Italian>Mediterranean</Italian>
-		<Spanish>Mediterranean</Spanish>
+		<English>Chesapeake</English>
+		<French>Chesapeake</French>
+		<German>Chesapeake</German>
+		<Italian>Chesapeake</Italian>
+		<Spanish>Chesapeake</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_8</Tag>
