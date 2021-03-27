@@ -1386,6 +1386,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		//FoB - initiate base combat round once first round and all first strikes are complete
 		if(baseCombatRound)
 		{
+			changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
+			pDefender->changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), !isBarbarian());
 			break;
 		}
 		else if(getCombatFirstStrikes() <=0 && pDefender->getCombatFirstStrikes() <= 0)
