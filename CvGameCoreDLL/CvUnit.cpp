@@ -1247,92 +1247,21 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 	collateralCombat(pPlot, pDefender);
 
 	//FoB
-	//TODO - refactor to minimize duplicate code
 	int iAttackerBaseDamage;
 	int iDefenderBaseDamage;
 	getBaseDefenderCombatValues(*pDefender, pPlot, iAttackerStrength, iAttackerFirepower, iDefenderStrength, iAttackerBaseDamage, iDefenderBaseDamage, &cdDefenderDetails);
 
-	if (getDamage() + iAttackerBaseDamage >= maxHitPoints() && GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability())
-	{
-		flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderBaseDamage, pDefender);
-
-		changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
-		CvEventReporter::getInstance().combatRetreat(this, pDefender);
-	}
-	else
-	{
-		changeDamage(iAttackerBaseDamage, pDefender->getOwnerINLINE());
-		cdAttackerDetails.iCurrHitPoints = currHitPoints();
-		if (isHuman() || pDefender->isHuman())
-		{
-			CyArgsList pyArgs;
-			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdAttackerDetails));
-			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdDefenderDetails));
-			pyArgs.add(1);
-			pyArgs.add(iAttackerDamage);
-			CvEventReporter::getInstance().genericEvent("combatLogHit", pyArgs.makeFunctionArgs());
-		}
-	}
-
-	if (std::min(GC.getMAX_HIT_POINTS(), pDefender->getDamage() + iDefenderBaseDamage) > combatLimitAgainst(pDefender))
-	{
-		changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
-		pDefender->setDamage(combatLimitAgainst(pDefender), getOwnerINLINE());
-		CvEventReporter::getInstance().combatWithdrawal(this, pDefender);
-	}
-	else
-	{
-		pDefender->changeDamage(iDefenderBaseDamage, getOwnerINLINE());
-		cdDefenderDetails.iCurrHitPoints=pDefender->currHitPoints();
-
-		if (isHuman() || pDefender->isHuman())
-		{
-			CyArgsList pyArgs;
-			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdAttackerDetails));
-			pyArgs.add(gDLL->getPythonIFace()->makePythonObject(&cdDefenderDetails));
-			pyArgs.add(0);
-			pyArgs.add(iDefenderDamage);
-			CvEventReporter::getInstance().genericEvent("combatLogHit", pyArgs.makeFunctionArgs());
-		}
-	}
-
-	if (isDead() || pDefender->isDead())
-	{
-		if (isDead())
-		{
-			int iExperience = defenseXPValue();
-			iExperience = ((iExperience * iAttackerStrength) / iDefenderStrength);
-			iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
-			pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), !isBarbarian());
-		}
-		else
-		{
-			flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
-
-			int iExperience = pDefender->attackXPValue();
-			iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
-			iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
-			changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
-		}
-
-		return;
-	}
-
+	bool baseCombatRound = false;
 	while (true)
 	{
-/************************************************************************************************/
-/* BETTER_BTS_AI_MOD                      02/21/10                                jdog5000      */
-/*                                                                                              */
-/* Lead From Behind                                                                             */
-/************************************************************************************************/
-		// From Lead From Behind by UncutDragon
-		// original
-		//if (GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("COMBAT_DIE_SIDES"), "Combat") < iDefenderOdds)
-		// modified
-		if (GC.getGameINLINE().getSorenRandNum(GC.getCOMBAT_DIE_SIDES(), "Combat") < iDefenderOdds)
-/************************************************************************************************/
-/* BETTER_BTS_AI_MOD                       END                                                  */
-/************************************************************************************************/
+		if(baseCombatRound)
+		{
+			iAttackerDamage = iAttackerBaseDamage;
+			iDefenderDamage = iDefenderBaseDamage;
+		}
+
+		bool defenderVictory = GC.getGameINLINE().getSorenRandNum(GC.getCOMBAT_DIE_SIDES(), "Combat") < iDefenderOdds;
+		if (defenderVictory || baseCombatRound)
 		{
 			if (getCombatFirstStrikes() == 0)	// Leoreth: let cavalry with first strikes flank too (side effects??)
 			//if (true)
@@ -1369,7 +1298,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				}
 			}
 		}
-		else
+		if (!defenderVictory || baseCombatRound)
 		{
 			if (pDefender->getCombatFirstStrikes() == 0)
 			{
@@ -1437,10 +1366,15 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			break;
 		}
 
-		//FoB - break combat once first round and all first strikes are complete
-		if(getCombatFirstStrikes() <=0 && pDefender->getCombatFirstStrikes() <= 0)
+		if(baseCombatRound)
 		{
 			break;
+		}
+
+		//FoB - initiate base combat once first round and all first strikes are complete
+		if(getCombatFirstStrikes() <=0 && pDefender->getCombatFirstStrikes() <= 0)
+		{
+			baseCombatRound = true;
 		}
 	}
 }
