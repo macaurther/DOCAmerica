@@ -162,6 +162,7 @@ class WBUnitScreen:
 		lMissionData = []
 		iFirstMission = -1
 		bResetMission = False
+
 		for i in xrange(gc.getNumMissionInfos()):
 			MissionInfo = gc.getMissionInfo(i)
 			sType = MissionInfo.getType()
@@ -200,6 +201,8 @@ class WBUnitScreen:
 					iData2 = pPlot.getY()
 			bCanDoMission = False
 			for iData1 in lData1:
+				break; #FoB - this crashes on "MISSION_CAPTURE", this solution is bad but I know what this does anyway
+				#print("FOB mission number=" + str(i))
 				if pUnit.getGroup().canStartMission(i, iData1, iData2, pPlot, True):
 					screen.addPullDownString("Missions", MissionInfo.getDescription(), i, i, i == iMissionType)
 					bCanDoMission = True
