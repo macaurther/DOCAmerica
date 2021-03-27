@@ -94,8 +94,8 @@ def checkTurn(iGameTurn, iPlayer):
 			bWestVirginia = False
 			bKentucky = False
 			# MacAurther TODO: Uncomment when WV and KY are added
-			#bWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False)) >= 3
-			#bKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False)) >= 2
+			#bWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False)) >= 2
+			#bKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False)) >= 3
 			if bVirginia and bWestVirginia and bKentucky:
 				win(iVirginia, 0)
 			else:
@@ -1971,7 +1971,7 @@ def getUHVHelp(iPlayer, iGoal):
 			# MacAurther TODO: Uncomment when WV and KY are added
 			#iCitiesWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False))
 			#iCitiesKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False))
-			aHelp.append(getIcon(iCitiesVirginia >= 5) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_VIRGINIA", (iCitiesVirginia, 5)) + ' ' + getIcon(iCitiesWestVirginia >= 3) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_WEST_VIRGINIA", (iCitiesWestVirginia, 3)) + ' ' + getIcon(iCitiesKentucky >= 2) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_KENTUCKY", (iCitiesKentucky, 2)))
+			aHelp.append(getIcon(iCitiesVirginia >= 5) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_VIRGINIA", (iCitiesVirginia, 5)) + ' ' + getIcon(iCitiesWestVirginia >= 2) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_WEST_VIRGINIA", (iCitiesWestVirginia, 2)) + ' ' + getIcon(iCitiesKentucky >= 3) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_KENTUCKY", (iCitiesKentucky, 3)))
 		elif iGoal == 1:
 			iHighestState = getBestPlayer(iVirginia, playerRealPopulation)
 			bHighest = (iHighestState == iVirginia)

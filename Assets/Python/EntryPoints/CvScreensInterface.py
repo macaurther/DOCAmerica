@@ -953,7 +953,11 @@ def getUHVTileInfo(argsList):
 		pass
 		
 	elif iPlayer == iNorthCarolina:
-		pass
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iNorthCarolina][0], Areas.tGenericArea[iNorthCarolina][1], Areas.tGenericAreaExceptions[iNorthCarolina]):
+			return 8
+		
+		'''if utils.isPlotInArea((x, y), Areas.tGenericArea[iTennessee][0], Areas.tGenericArea[iTennessee][1], Areas.tGenericAreaExceptions[iTennessee]):
+			return 9'''
 		
 	elif iPlayer == iSouthCarolina:
 		pass
@@ -971,7 +975,14 @@ def getUHVTileInfo(argsList):
 		pass
 		
 	elif iPlayer == iGeorgia:
-		pass
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iGeorgia][0], Areas.tGenericArea[iGeorgia][1], Areas.tGenericAreaExceptions[iGeorgia]):
+			return 10
+		
+		'''if utils.isPlotInArea((x, y), Areas.tGenericArea[iAlabama][0], Areas.tGenericArea[iAlabama][1], Areas.tGenericAreaExceptions[iAlabama]):
+			return 11
+		
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iMississippi][0], Areas.tGenericArea[iMississippi][1], Areas.tGenericAreaExceptions[iMississippi]):
+			return 12'''
 		
 	elif iPlayer == iAmerica:
 		pass
