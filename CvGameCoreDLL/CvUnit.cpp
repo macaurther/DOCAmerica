@@ -1252,6 +1252,8 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 	getBaseDefenderCombatValues(*pDefender, pPlot, iAttackerStrength, iAttackerFirepower, iDefenderStrength, iAttackerBaseDamage, iDefenderBaseDamage, &cdDefenderDetails);
 
 	bool baseCombatRound = false;
+	int totalDefenderDamage = 0;
+	int totalAttackerDamage = 0;
 	while (true)
 	{
 		if(baseCombatRound)
@@ -1278,6 +1280,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				}
 
 				changeDamage(iAttackerDamage, pDefender->getOwnerINLINE());
+				totalAttackerDamage += iAttackerDamage;
 
 				if (pDefender->getCombatFirstStrikes() > 0 && pDefender->isRanged())
 				{
@@ -1313,6 +1316,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				}
 
 				pDefender->changeDamage(iDefenderDamage, getOwnerINLINE());
+				totalDefenderDamage += iDefenderDamage;
 
 				if (getCombatFirstStrikes() > 0 && isRanged())
 				{
@@ -1344,6 +1348,19 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			pDefender->changeCombatFirstStrikes(-1);
 		}
 
+		if(baseCombatRound)
+		{
+			//FoB - kill if one side does critical damage - saves time
+			if(totalAttackerDamage >= 57)
+			{
+				setDamage(GC.getMAX_HIT_POINTS(), pDefender->getOwnerINLINE());
+			}
+			if (totalDefenderDamage >= 57)
+			{
+				pDefender->setDamage(GC.getMAX_HIT_POINTS(), getOwnerINLINE());
+			}
+		}
+
 		if (isDead() || pDefender->isDead())
 		{
 			if (isDead())
@@ -1366,13 +1383,12 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			break;
 		}
 
+		//FoB - initiate base combat round once first round and all first strikes are complete
 		if(baseCombatRound)
 		{
 			break;
 		}
-
-		//FoB - initiate base combat once first round and all first strikes are complete
-		if(getCombatFirstStrikes() <=0 && pDefender->getCombatFirstStrikes() <= 0)
+		else if(getCombatFirstStrikes() <=0 && pDefender->getCombatFirstStrikes() <= 0)
 		{
 			baseCombatRound = true;
 		}
