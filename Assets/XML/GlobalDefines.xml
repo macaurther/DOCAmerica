@@ -395,7 +395,7 @@
 	</Define>
 	<Define>
 		<DefineName>COMBAT_DAMAGE</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
+		<iDefineIntVal>15</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>AIR_COMBAT_DAMAGE</DefineName>

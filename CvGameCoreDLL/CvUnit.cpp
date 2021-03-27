@@ -1351,11 +1351,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		if(baseCombatRound)
 		{
 			//FoB - kill if one side does critical damage - saves time
-			if(totalAttackerDamage >= 57)
+			if(totalAttackerDamage > 70)
 			{
 				setDamage(GC.getMAX_HIT_POINTS(), pDefender->getOwnerINLINE());
 			}
-			if (totalDefenderDamage >= 57)
+			if (totalDefenderDamage > 70)
 			{
 				pDefender->setDamage(GC.getMAX_HIT_POINTS(), getOwnerINLINE());
 			}
@@ -13653,8 +13653,8 @@ void CvUnit::getBaseDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot,
 	int iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
 
 	//Hardcoded for now
-	iOurDamage = std::max(1, ((35 * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
-	iTheirDamage = std::max(1, ((35 * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
+	iOurDamage = std::max(1, ((40 * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
+	iTheirDamage = std::max(1, ((40 * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
 }
 
 int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, bool bCheckPlot) const
