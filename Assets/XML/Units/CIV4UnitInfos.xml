@@ -5628,6 +5628,7 @@
 			<Civilopedia>TXT_KEY_UNIT_EARLY_CANNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_EARLY_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5674,8 +5675,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>8</iCombat>
+			<iCombat>4</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>1</iAirRange>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -5716,6 +5720,7 @@
 			<Civilopedia>TXT_KEY_UNIT_LIGHT_CANNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_LIGHT_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5762,8 +5767,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>10</iCombat>
+			<iCombat>5</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>1</iAirRange>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -5803,6 +5811,7 @@
 			<Civilopedia>TXT_KEY_UNIT_HEAVY_CANNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_HEAVY_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5849,8 +5858,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>8</iCombat>
+			<iCombat>4</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>1</iAirRange>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -5891,6 +5903,7 @@
 			<Civilopedia>TXT_KEY_UNIT_ARTILLERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ARTILLERY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5937,8 +5950,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>12</iCombat>
+			<iCombat>6</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>2</iAirRange>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -6067,6 +6083,7 @@
 			<Civilopedia>TXT_KEY_UNIT_HOWITZER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_HOWITZER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -6114,8 +6131,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>15</iCombat>
+			<iCombat>8</iCombat>
 			<iCombatLimit>60</iCombatLimit>
+			<iAirRange>2</iAirRange>
+			<iAirCombat>15</iAirCombat>
+			<iAirCombatLimit>60</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -6161,6 +6181,7 @@
 			<Civilopedia>TXT_KEY_UNIT_MOBILE_ARTILLERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MOBILE_ARTILLERY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -6205,8 +6226,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>20</iCombat>
+			<iCombat>10</iCombat>
 			<iCombatLimit>70</iCombatLimit>
+			<iAirRange>3</iAirRange>
+			<iAirCombat>20</iAirCombat>
+			<iAirCombatLimit>70</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
