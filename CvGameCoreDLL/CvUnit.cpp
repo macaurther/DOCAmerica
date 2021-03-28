@@ -1273,9 +1273,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
 
 					changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
-// BUG - Combat Events - start
 					CvEventReporter::getInstance().combatRetreat(this, pDefender);
-// BUG - Combat Events - end
 					break;
 				}
 
@@ -1305,6 +1303,12 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		{
 			if (pDefender->getCombatFirstStrikes() == 0)
 			{
+				//FoB - do flanking strikes on attacker victory, not just when the unit is about to die
+				if (GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability() && !baseCombatRound)
+				{
+					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				}
+
 				if (std::min(GC.getMAX_HIT_POINTS(), pDefender->getDamage() + iDefenderDamage) > combatLimitAgainst(pDefender))
 				{
 					changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
