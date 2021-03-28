@@ -5675,7 +5675,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>4</iCombat>
+			<iCombat>6</iCombat>
 			<iCombatLimit>50</iCombatLimit>
 			<iAirRange>1</iAirRange>
 			<iAirCombat>8</iAirCombat>
@@ -5767,7 +5767,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>5</iCombat>
+			<iCombat>7</iCombat>
 			<iCombatLimit>50</iCombatLimit>
 			<iAirRange>1</iAirRange>
 			<iAirCombat>10</iAirCombat>
@@ -5858,7 +5858,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>4</iCombat>
+			<iCombat>6</iCombat>
 			<iCombatLimit>50</iCombatLimit>
 			<iAirRange>1</iAirRange>
 			<iAirCombat>8</iAirCombat>
@@ -5950,7 +5950,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>6</iCombat>
+			<iCombat>9</iCombat>
 			<iCombatLimit>50</iCombatLimit>
 			<iAirRange>2</iAirRange>
 			<iAirCombat>12</iAirCombat>
@@ -6131,7 +6131,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>8</iCombat>
+			<iCombat>12</iCombat>
 			<iCombatLimit>60</iCombatLimit>
 			<iAirRange>2</iAirRange>
 			<iAirCombat>15</iAirCombat>
@@ -6226,7 +6226,7 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>10</iCombat>
+			<iCombat>18</iCombat>
 			<iCombatLimit>70</iCombatLimit>
 			<iAirRange>3</iAirRange>
 			<iAirCombat>20</iAirCombat>
