@@ -1434,7 +1434,6 @@ iCivNewYork : {
 		"Jordan Belfort", # 21st
 		"Alec Baldwin", # 21st
 		"Mike Tyson", # 21st
-		"Sylvester Stallone", # 21st
 		"Joss Whedon", # 21st
 		"Martin Shkreli", # 21st
 		"Steven Mnuchin", # 21st

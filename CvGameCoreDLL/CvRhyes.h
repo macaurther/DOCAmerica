@@ -11,7 +11,7 @@ typedef list<char*> LISTCHAR;
 
 #define MAX_COM_SHRINE			(20)
 
-#define BEGIN_WONDERS				(114) // increment if normal building (not for wonders) is added
+#define BEGIN_WONDERS				(135) // increment if normal building (not for wonders) is added
 #define BEGIN_GREAT_WONDERS			(BEGIN_WONDERS+13) // increment if a national wonder is added
 
 #define NUM_MAJOR_PLAYERS		(18)
@@ -285,6 +285,10 @@ enum Regions
 	REGION_OKLAHOMA,
 	REGION_NEW_MEXICO,
 	REGION_ARIZONA,
+	REGION_ALASKA,
+	REGION_HAWAII,
+	REGION_CANADA,
+	REGION_MEXICO,
 	NUM_REGIONS
 };
 

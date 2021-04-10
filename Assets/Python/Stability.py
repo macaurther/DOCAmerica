@@ -46,6 +46,15 @@ tEraCorePopulationModifiers = (
 	400, # future
 )
 
+# give Europeans a boost in core pop to prevent collapse
+tInternationCorePopulation = {
+iSpain : 50,
+iFrance : 80,
+iEngland : 70,
+#iNetherlands : 30,
+#iSweden : 20,
+}
+
 def checkTurn(iGameTurn):
 	for iPlayer in range(iNumPlayers):
 		if data.players[iPlayer].iTurnsToCollapse == 0:
@@ -665,22 +674,15 @@ def calculateStability(iPlayer):
 	iDifferentReligionPopulation = 0
 	iNoReligionPopulation = 0
 	
-	# MacAurther TODO: Cleanup:
-	#bTotalitarianism = iCivicSociety == iTotalitarianism
-	#bFreeEnterprise = iCivicEconomy == iFreeEnterprise
 	bPublicWelfare = iCivicEconomy == iPublicWelfare
-	#bTheocracy = iCivicReligion == iTheocracy
-	#bTolerance = iCivicReligion == iTolerance
-	#bConquest = iCivicTerritory == iConquest
-	#bTributaries = iCivicTerritory == iTributaries
 	bIsolationism = iCivicDevelopment == iIsolationism
-	#bColonialism = iCivicTerritory == iColonialism
-	#bNationhood = iCivicTerritory == iNationhood
-	#bMultilateralism = iCivicTerritory == iMultilateralism
 	
 	bSingleCoreCity = (len(utils.getOwnedCoreCities(iPlayer)) == 1)
 	
 	iCorePopulationModifier = getCorePopulationModifier(iCurrentEra)
+	
+	# boost European core population
+	if iPlayer in tInternationCorePopulation: iCorePopulation += tInternationCorePopulation[iPlayer]
 	
 	for city in utils.getCityList(iPlayer):
 		iPopulation = city.getPopulation()
@@ -726,7 +728,6 @@ def calculateStability(iPlayer):
 			#if not bExpansionExceptions:
 			#	if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(25): iModifier += 1
 			
-			# MacAurther TODO: Is this needed? Was in with Persia
 			if iCulturePercent < 50: iModifier += 1
 			if iCulturePercent < 20: iModifier += 1
 			

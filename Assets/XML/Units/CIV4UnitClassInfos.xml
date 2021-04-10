@@ -48,7 +48,7 @@
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_PIONEER</Type>
-			<Description>TXT_KEY_UNIT_SETTLER</Description>
+			<Description>TXT_KEY_UNIT_AMERICAN_PIONEER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
