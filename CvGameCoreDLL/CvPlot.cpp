@@ -6894,6 +6894,12 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 
+	// MacAurther: New York UP
+	if(ePlayer == NEW_YORK && eYield == YIELD_COMMERCE && iYield >= 3)
+	{
+		iYield += 2;
+	}
+
 	return iYield;
 }
 

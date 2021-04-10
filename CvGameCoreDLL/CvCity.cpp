@@ -3395,6 +3395,12 @@ int CvCity::getProductionModifier(BuildingTypes eBuilding) const
 		}
 	}
 
+	// MacAurther: New Hampshire UP
+	if (getOwnerINLINE() == NEW_HAMPSHIRE)
+	{
+		iMultiplier += 10;
+	}
+
 	return std::max(0, iMultiplier);
 }
 

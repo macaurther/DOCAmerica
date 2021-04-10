@@ -17129,6 +17129,14 @@ void CvGameTextMgr::setProductionHelp(CvWStringBuffer &szBuffer, CvCity& city)
 				}
 			}
 		}
+
+		// MacAurther: New Hampshire UP
+		if (city.getOwnerINLINE() == NEW_HAMPSHIRE)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_NEW_HAMPSHIRE", 10));
+			szBuffer.append(NEWLINE);
+			iBaseModifier += 10;
+		}
 	}
 
 	ProjectTypes eProject = city.getProductionProject();

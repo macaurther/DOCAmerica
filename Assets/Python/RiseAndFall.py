@@ -605,6 +605,9 @@ class RiseAndFall:
 		# ask human player for flips
 		if iHumanCities > 0 and iCiv != utils.getHumanID():
 			self.scheduleFlipPopup(iCiv, lRebirthPlots)
+		
+		# ensure Vassals are set
+		self.initialVassals(iCiv)
 
 	def checkPlayerTurn(self, iGameTurn, iPlayer):
 		return
@@ -840,15 +843,9 @@ class RiseAndFall:
 		# MacAurther TODO: Do not do this, reveal new array of RevealArea plots
 		for (x, y) in Areas.getNormalArea(iCiv):
 			gc.getMap().plot(x, y).setRevealed(iCiv, True, True, 0)
-				
 		
-		#MacAurther TODO: Set up British Colony Vassals
-		#MacAurther TODO: Break vassalage automatically upon Revolution event
-		#if iCiv in [iVirginia, iMassachusetts, iNewHampshire, iMaryland, iConnecticut, iRhodeIsland, iNorthCarolina, iSouthCarolina, 
-		#	iNewJersey, iNewYork, iPennsylvania, iDelaware, iGeorgia]:
-		#	print "Setting up British Colony Vassal - " + str(iCiv)
-		#	gc.getTeam(iCiv).setVassal(iEngland, False, False) #gc.getPlayer(iCiv).getCivilizationType()
-		
+		self.initialVassals(iCiv)
+
 		if (iCurrentTurn == iBirthYear + data.players[iCiv].iSpawnDelay) and (gc.getPlayer(iCiv).isAlive()) and (not data.bAlreadySwitched or utils.getReborn(iCiv) == 1 or data.bUnlimitedSwitching) and ((iHuman not in lNeighbours[iCiv] and getTurnForYear(tBirth[iCiv]) - getTurnForYear(tBirth[iHuman]) > 0) or getTurnForYear(tBirth[iCiv]) - getTurnForYear(tBirth[iHuman]) >= utils.getTurns(25) ):
 			startNewCivSwitchEvent(iCiv)
 			
@@ -1639,11 +1636,8 @@ class RiseAndFall:
 				
 		# Leoreth: start wars on spawn when the spawn actually happens
 		self.startWarsOnSpawn(iCiv)
-		
-		# MacAurther TODO: Find a better spot for this call:
-		self.initialDiplomacy(iCiv)
 
-	def initialDiplomacy(self, iCiv):
+	def initialVassals(self, iCiv):
 		tCiv = gc.getTeam(iCiv)
 		
 		print("Setting up colonial vassal relationships for: " + str(iCiv))
@@ -1651,7 +1645,6 @@ class RiseAndFall:
 		if iCiv in range(iVirginia, iGeorgia + 1):
 			if not tCiv.canContact(iEngland): tCiv.meet(iEngland, False)
 			if not tCiv.isVassal(iEngland): tCiv.setVassal(iEngland, True, False)
-
 
 	def createRespawnUnits(self, iCiv, tPlot):
 		pass

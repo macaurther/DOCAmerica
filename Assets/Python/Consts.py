@@ -179,7 +179,7 @@ tBirth = (
 1653,		# North Carolina
 1663,		# South Carolina
 1664,		# New Jersey
-1664,		# New York
+1601,		# New York 1664
 1682,		# Pennsylvania
 1682,		# Delaware
 1732,		# Georgia

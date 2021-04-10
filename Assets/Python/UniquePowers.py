@@ -28,7 +28,12 @@
 #MacAurther: States:
 #Virginia in CvCity:getGreatPeopleRate()
 #Massachusetts in CvPlayer::canDoCivics() and in WBS
-#Rhode Island  in CvPlot::calculateNatureYield()
+#New Hampshire in CvCity::getProductionModifier() and CvGameTextMgr::setProductionHelp()
+#Rhode Island in CvPlot::calculateNatureYield()
+#Maryland in CvPlayer::reset()
+#Connecticut in UniquePowers.py getCivicStability()
+#New York in CvPlot::calculateImprovementYieldChange()
+#Pennsylvania in CvPlayer::reset()
 
 from CvPythonExtensions import *
 import CvUtil

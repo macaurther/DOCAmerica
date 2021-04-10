@@ -1118,21 +1118,24 @@ def getCivicStability(iPlayer, lCivics):
 	#MacAurther TODO: Balance Civic Stability
 	#MacAurther TODO: Maybe figure out a tool tip that better shows exact values?
 	
+	# Includes Connecticut UP
 	if iRoyalColony in civics:
 		if iMercantilism in civics: iStability +=5
 		if iPenalColony in civics: iStability +=2
 		if iIsolationism in civics: iStability +=1
 		if iHeadright in civics: iStability +=1
-		if iStatesRights in civics: iStability -=5
-		if iFederalism in civics: iStability -=8
-		if iManifestDestiny in civics: iStability -=3
-		if iHomesteads in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iStatesRights in civics: iStability -=5
+			if iFederalism in civics: iStability -=8
+			if iManifestDestiny in civics: iStability -=3
+			if iHomesteads in civics: iStability -=3
 	
 	if iTerritory in civics:
 		if iHomesteads in civics: iStability +=5
-		if iUrbanism in civics: iStability -=3
-		if iSuburbanism in civics: iStability -=2
-		if iUniversalSufferage in civics: iStability -=5
+		if iPlayer != iConnecticut:
+			if iUrbanism in civics: iStability -=3
+			if iSuburbanism in civics: iStability -=2
+			if iUniversalSufferage in civics: iStability -=5
 	
 	if iMartialLaw in civics:
 		if iTerritory in civics: iStability +=2
@@ -1145,11 +1148,12 @@ def getCivicStability(iPlayer, lCivics):
 		if iAgrarianism in civics: iStability +=3
 		if iRuralism in civics: iStability +=3
 		if iStatesRights in civics: iStability +=5
-		if iUrbanism in civics: iStability -=5
-		if iFederalism in civics: iStability -=5
-		if iIndustrialism in civics: iStability -=5
-		if iMeltingPot in civics: iStability -=8
-		if iMulticulturism in civics: iStability -=8
+		if iPlayer != iConnecticut:
+			if iUrbanism in civics: iStability -=5
+			if iFederalism in civics: iStability -=5
+			if iIndustrialism in civics: iStability -=5
+			if iMeltingPot in civics: iStability -=8
+			if iMulticulturism in civics: iStability -=8
 	
 	if iMercantilism in civics:
 		if iRoyalColony in civics: iStability +=3
@@ -1157,21 +1161,24 @@ def getCivicStability(iPlayer, lCivics):
 	if iAgrarianism in civics:
 		if iRuralism in civics: iStability +=3
 		if iHomesteads in civics: iStability +=3
-		if iUrbanism in civics: iStability -=3
-		if iSuburbanism in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iUrbanism in civics: iStability -=3
+			if iSuburbanism in civics: iStability -=3
 	
 	if iPenalColony in civics:
 		if iRoyalColony in civics: iStability +=1
-		if iCommonwealth in civics: iStability -=4
-		if iDominion in civics: iStability -=3
-		if iState in civics: iStability -=3
-		if iHeadright in civics: iStability -=5
-		if iSerfdom in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iCommonwealth in civics: iStability -=4
+			if iDominion in civics: iStability -=3
+			if iState in civics: iStability -=3
+			if iHeadright in civics: iStability -=5
+			if iSerfdom in civics: iStability -=3
 	
 	if iHeadright in civics:
 		if iIndenturedServitude in civics: iStability +=2
-		if iAutomation in civics: iStability -=3
-		if iMeltingPot in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iAutomation in civics: iStability -=3
+			if iMeltingPot in civics: iStability -=3
 	
 	if iRuralism in civics:
 		if iAgrarianism in civics: iStability +=3

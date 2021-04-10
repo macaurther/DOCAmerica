@@ -164,8 +164,6 @@ class CvRFCEventHandler:
 			city.setHasRealBuilding(iStockade, True)
 			
 			city.setName("Hartford", False)
-			
-			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
 
 		# MacAurther: New York should spawn with some infrastructure
 		if iPlayer == iNewYork and tCity == Areas.getCapital(iNewYork):
@@ -174,15 +172,11 @@ class CvRFCEventHandler:
 				
 			city.setHasRealBuilding(iBarracks, True)
 			city.setHasRealBuilding(iStockade, True)
-			city.setHasRealBuilding(iLibrary, True)
 			city.setHasRealBuilding(iMarket, True)
 			city.setHasRealBuilding(iGranary, True)
 			city.setHasRealBuilding(iHarbor, True)
-			city.setHasRealBuilding(iForge, True)
 			
 			city.setName("New York", False)
-			
-			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
 		
 		if bConquest:
 			# Colombian UP: no resistance in conquered cities in Latin America -> MacAurther: Manifest Destiny Civic

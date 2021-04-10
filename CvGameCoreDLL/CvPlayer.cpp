@@ -884,6 +884,18 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 
 	m_eventsTriggered.removeAll();
 
+	// Thai UP: +1 commerce per excess happiness -> MacAurther: Maryland UP
+	if (getID() == MARYLAND)
+	{
+		changeHappinessExtraYield(YIELD_COMMERCE, 1);
+	}
+
+	// MacAurther: Pennsylvania UP
+	if(getID() == PENNSYLVANIA)
+	{
+		m_iWorkerSpeedModifier += 25;
+	}
+
 	if (!bConstructorCall)
 	{
 		AI_reset(false);
@@ -13723,6 +13735,7 @@ int CvPlayer::getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIn
 	FAssertMsg(eIndex1 < GC.getNumImprovementInfos(), "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
+
 	return m_ppaaiImprovementYieldChange[eIndex1][eIndex2];
 }
 
