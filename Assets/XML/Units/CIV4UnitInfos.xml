@@ -2083,6 +2083,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2329,6 +2330,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2409,6 +2411,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>75</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2495,6 +2498,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2581,6 +2585,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>130</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2675,6 +2680,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2775,6 +2781,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>130</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2872,6 +2879,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_FABIAN_STRATEGY</PrereqTech>
+			<PrereqBuilding>BUILDING_ARMORY</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2967,6 +2975,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_BALLISTICS</PrereqTech>
+			<PrereqBuilding>BUILDING_ARMORY</PrereqBuilding>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3127,6 +3136,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SOCIAL_SERVICES</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>140</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3822,7 +3832,7 @@
 					<iFeatureAttack>25</iFeatureAttack>
 				</FeatureAttack>
 			</FeatureAttacks>
-			<iCombat>4</iCombat>
+			<iCombat>3</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -3982,6 +3992,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_RIDING</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -4073,11 +4084,12 @@
 			</UnitAIs>
 			<PrereqTech>TECH_RIDING</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>70</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
-			<iNukeRange>-1</iNukeRange>
+			<iNukeRange>-1</iNukeRange>			
 			<FeatureImpassables>
 				<FeatureImpassable>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
@@ -4155,6 +4167,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_COMPANIES</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
 			</PrereqBonuses>
@@ -4250,6 +4263,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4351,6 +4365,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_FIREARMS</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4434,6 +4449,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_FIREARMS</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
 			</PrereqBonuses>
@@ -4527,6 +4543,7 @@
 				<PrereqTech>TECH_FIREARMS</PrereqTech>
 			</TechTypes>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
 			</PrereqBonuses>
@@ -4629,6 +4646,7 @@
 				<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
 			</TechTypes>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4722,6 +4740,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_BIOLOGY</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>140</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4813,6 +4832,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>140</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4908,6 +4928,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_NATIONALISM</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5033,6 +5054,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5142,6 +5164,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<iCost>130</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5237,6 +5260,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SYNTHETICS</PrereqTech>
 			<BonusType>BONUS_OIL</BonusType>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5628,6 +5652,7 @@
 			<Civilopedia>TXT_KEY_UNIT_EARLY_CANNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_EARLY_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5655,6 +5680,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_FORTIFICATION</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
+			<PrereqBuilding>BUILDING_ARMORY</PrereqBuilding>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5674,8 +5700,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>8</iCombat>
+			<iCombat>6</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>1</iAirRange>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -5716,6 +5745,7 @@
 			<Civilopedia>TXT_KEY_UNIT_LIGHT_CANNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_LIGHT_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5743,6 +5773,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
+			<PrereqBuilding>BUILDING_ARMORY</PrereqBuilding>
 			<iCost>130</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5762,8 +5793,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>10</iCombat>
+			<iCombat>7</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>1</iAirRange>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -5803,6 +5837,7 @@
 			<Civilopedia>TXT_KEY_UNIT_HEAVY_CANNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_HEAVY_CANNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5830,6 +5865,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
+			<PrereqBuilding>BUILDING_ARMORY</PrereqBuilding>
 			<iCost>140</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5849,8 +5885,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>8</iCombat>
+			<iCombat>6</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>1</iAirRange>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -5891,6 +5930,7 @@
 			<Civilopedia>TXT_KEY_UNIT_ARTILLERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ARTILLERY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -5918,6 +5958,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_BALLISTICS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
+			<PrereqBuilding>BUILDING_ARMORY</PrereqBuilding>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5937,8 +5978,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>12</iCombat>
+			<iCombat>9</iCombat>
 			<iCombatLimit>50</iCombatLimit>
+			<iAirRange>2</iAirRange>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>50</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -6004,6 +6048,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_PNEUMATICS</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>125</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6067,6 +6112,7 @@
 			<Civilopedia>TXT_KEY_UNIT_HOWITZER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_HOWITZER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -6095,6 +6141,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_FLIGHT</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6114,8 +6161,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>15</iCombat>
+			<iCombat>12</iCombat>
 			<iCombatLimit>60</iCombatLimit>
+			<iAirRange>2</iAirRange>
+			<iAirCombat>15</iAirCombat>
+			<iAirCombatLimit>60</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -6161,6 +6211,7 @@
 			<Civilopedia>TXT_KEY_UNIT_MOBILE_ARTILLERY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MOBILE_ARTILLERY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<bNoCapture>1</bNoCapture>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -6186,6 +6237,7 @@
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
 			</PrereqBonuses>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>220</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6205,8 +6257,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>20</iCombat>
+			<iCombat>18</iCombat>
 			<iCombatLimit>70</iCombatLimit>
+			<iAirRange>3</iAirRange>
+			<iAirCombat>20</iAirCombat>
+			<iAirCombatLimit>70</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -8134,6 +8189,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_FLIGHT</PrereqTech>
 			<BonusType>BONUS_OIL</BonusType>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8196,6 +8252,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_AVIATION</PrereqTech>
 			<BonusType>BONUS_OIL</BonusType>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8383,6 +8440,7 @@
 				<PrereqTech>TECH_SYNTHETICS</PrereqTech>
 			</TechTypes>
 			<BonusType>BONUS_OIL</BonusType>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8444,6 +8502,7 @@
 			<PrereqBonuses>
 				<BonusType>BONUS_ALUMINUM</BonusType>
 			</PrereqBonuses>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

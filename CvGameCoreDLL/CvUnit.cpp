@@ -1246,21 +1246,24 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 
 	collateralCombat(pPlot, pDefender);
 
+	//FoB
+	int iAttackerBaseDamage;
+	int iDefenderBaseDamage;
+	getBaseDefenderCombatValues(*pDefender, pPlot, iAttackerStrength, iAttackerFirepower, iDefenderStrength, iAttackerBaseDamage, iDefenderBaseDamage, &cdDefenderDetails);
+
+	bool baseCombatRound = false;
+	int totalDefenderDamage = 0;
+	int totalAttackerDamage = 0;
 	while (true)
 	{
-/************************************************************************************************/
-/* BETTER_BTS_AI_MOD                      02/21/10                                jdog5000      */
-/*                                                                                              */
-/* Lead From Behind                                                                             */
-/************************************************************************************************/
-		// From Lead From Behind by UncutDragon
-		// original
-		//if (GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("COMBAT_DIE_SIDES"), "Combat") < iDefenderOdds)
-		// modified
-		if (GC.getGameINLINE().getSorenRandNum(GC.getCOMBAT_DIE_SIDES(), "Combat") < iDefenderOdds)
-/************************************************************************************************/
-/* BETTER_BTS_AI_MOD                       END                                                  */
-/************************************************************************************************/
+		if(baseCombatRound)
+		{
+			iAttackerDamage = iAttackerBaseDamage;
+			iDefenderDamage = iDefenderBaseDamage;
+		}
+
+		bool defenderVictory = GC.getGameINLINE().getSorenRandNum(GC.getCOMBAT_DIE_SIDES(), "Combat") < iDefenderOdds;
+		if (defenderVictory || baseCombatRound)
 		{
 			if (getCombatFirstStrikes() == 0)	// Leoreth: let cavalry with first strikes flank too (side effects??)
 			//if (true)
@@ -1270,13 +1273,12 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
 
 					changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
-// BUG - Combat Events - start
 					CvEventReporter::getInstance().combatRetreat(this, pDefender);
-// BUG - Combat Events - end
 					break;
 				}
 
 				changeDamage(iAttackerDamage, pDefender->getOwnerINLINE());
+				totalAttackerDamage += iAttackerDamage;
 
 				if (pDefender->getCombatFirstStrikes() > 0 && pDefender->isRanged())
 				{
@@ -1297,10 +1299,16 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				}
 			}
 		}
-		else
+		if (!defenderVictory || baseCombatRound)
 		{
 			if (pDefender->getCombatFirstStrikes() == 0)
 			{
+				//FoB - do flanking strikes on attacker victory, not just when the unit is about to die
+				if (GC.getGameINLINE().getSorenRandNum(100, "Withdrawal") < withdrawalProbability() && !baseCombatRound)
+				{
+					flankingStrikeCombat(pPlot, iAttackerStrength, iAttackerFirepower, iAttackerKillOdds, iDefenderDamage, pDefender);
+				}
+
 				if (std::min(GC.getMAX_HIT_POINTS(), pDefender->getDamage() + iDefenderDamage) > combatLimitAgainst(pDefender))
 				{
 					changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
@@ -1312,6 +1320,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				}
 
 				pDefender->changeDamage(iDefenderDamage, getOwnerINLINE());
+				totalDefenderDamage += iDefenderDamage;
 
 				if (getCombatFirstStrikes() > 0 && isRanged())
 				{
@@ -1343,6 +1352,19 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			pDefender->changeCombatFirstStrikes(-1);
 		}
 
+		if(baseCombatRound)
+		{
+			//FoB - kill if one side does critical damage - saves time
+			if(totalAttackerDamage > 70)
+			{
+				setDamage(GC.getMAX_HIT_POINTS(), pDefender->getOwnerINLINE());
+			}
+			if (totalDefenderDamage > 70)
+			{
+				pDefender->setDamage(GC.getMAX_HIT_POINTS(), getOwnerINLINE());
+			}
+		}
+
 		if (isDead() || pDefender->isDead())
 		{
 			if (isDead())
@@ -1363,6 +1385,18 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 			}
 
 			break;
+		}
+
+		//FoB - initiate base combat round once first round and all first strikes are complete
+		if(baseCombatRound)
+		{
+			changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), !pDefender->isBarbarian());
+			pDefender->changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), !isBarbarian());
+			break;
+		}
+		else if(getCombatFirstStrikes() <=0 && pDefender->getCombatFirstStrikes() <= 0)
+		{
+			baseCombatRound = true;
 		}
 	}
 }
@@ -13609,6 +13643,22 @@ void CvUnit::getDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int
 /************************************************************************************************/
 /* BETTER_BTS_AI_MOD                       END                                                  */
 /************************************************************************************************/
+}
+
+//FoB - Probably not worth duplicating, but I did anyway - used to get base damage
+void CvUnit::getBaseDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int iOurStrength, int iOurFirepower, int& iTheirStrength, int& iOurDamage, int& iTheirDamage, CombatDetails* pTheirDetails) const
+{
+	iTheirStrength = kDefender.currCombatStr(pPlot, this, pTheirDetails);
+	int iTheirFirepower = kDefender.currFirepower(pPlot, this);
+
+	FAssert((iOurStrength + iTheirStrength) > 0);
+	FAssert((iOurFirepower + iTheirFirepower) > 0);
+
+	int iStrengthFactor = ((iOurFirepower + iTheirFirepower + 1) / 2);
+
+	//Hardcoded for now
+	iOurDamage = std::max(1, ((40 * (iTheirFirepower + iStrengthFactor)) / (iOurFirepower + iStrengthFactor)));
+	iTheirDamage = std::max(1, ((40 * (iOurFirepower + iStrengthFactor)) / (iTheirFirepower + iStrengthFactor)));
 }
 
 int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, bool bCheckPlot) const
