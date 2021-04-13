@@ -136,6 +136,8 @@ BeginPlayer
 	CivType=CIVILIZATION_MARYLAND
 	PlayableCiv=1
 	StartingGold=100
+	CivicOption=CIVICOPTION_GOVERNMENT, Civic=CIVIC_ROYAL_COLONY
+	CivicOption=CIVICOPTION_DEVELOPMENT, Civic=CIVIC_HEADRIGHT
 	Handicap=HANDICAP_REGENT
 EndPlayer
 BeginPlayer
@@ -292,27 +294,49 @@ EndMap
 ### Plot Info ###
 BeginPlot
 	x=0,y=0
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=0,y=1
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=0,y=2
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+	BeginUnit
+		UnitType=UNIT_SPY, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_DEFENSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPY, UnitOwner=1, (King of France)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_DEFENSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPY, UnitOwner=2, (King of England)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_DEFENSE
+	EndUnit
+	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=0,y=3
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=0,y=4
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -695,27 +719,31 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=0
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=1,2,
 EndPlot
 BeginPlot
 	x=1,y=1
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=1,y=2
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=1,y=3
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+	TeamReveal=0,1,2,
 EndPlot
 BeginPlot
 	x=1,y=4
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -1098,27 +1126,27 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=2,y=0
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=1
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=2
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=3
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=4
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -27833,6 +27861,7 @@ BeginPlot
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=65,y=1
@@ -27841,6 +27870,7 @@ BeginPlot
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=65,y=2
@@ -27850,11 +27880,13 @@ BeginPlot
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=65,y=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=65,y=4
@@ -28298,19 +28330,37 @@ BeginPlot
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=66,y=1
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+# MacAurther TODO: For some reason, more than one Mexican city crashes to desktop with no error message
+#	BeginCity
+#		CityOwner=0, (King of Spain)
+#		CityName=Caliacan
+#		CityPopulation=1
+#		Player0Culture=2, (King of Spain)
+#	EndCity
 	TeamReveal=0,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=66,y=2
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=66,y=3
@@ -28321,11 +28371,13 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=66,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=66,y=5
@@ -28756,23 +28808,32 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=67,y=1
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=67,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=67,y=3
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=4
@@ -28781,29 +28842,35 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=5
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=6
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=7
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=8
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=9
@@ -28814,11 +28881,13 @@ BeginPlot
 	x=67,y=10
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=11
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=12
@@ -29221,18 +29290,22 @@ EndPlot
 BeginPlot
 	x=68,y=0
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=3
@@ -29243,18 +29316,31 @@ BeginPlot
 	x=68,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=5
 	isNOfRiver
 	RiverWEDirection=3
+	ImprovementType=IMPROVEMENT_FORT
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	BeginUnit
+		UnitType=UNIT_SPANISH_TERCIO, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		PromotionType=PROMOTION_PINCH
+		PromotionType=PROMOTION_FORMATION
+		FacingDirection=4
+		UnitAIType=UNITAI_DEFENSE
+	EndUnit
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=6
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=7
@@ -29262,26 +29348,31 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=8
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=9
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=10
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=11
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=68,y=12
@@ -29685,36 +29776,54 @@ BeginPlot
 	x=69,y=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=1
+	ImprovementType=IMPROVEMENT_FORT
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	BeginUnit
+		UnitType=UNIT_SPANISH_TERCIO, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		PromotionType=PROMOTION_PINCH
+		PromotionType=PROMOTION_FORMATION
+		FacingDirection=4
+		UnitAIType=UNITAI_DEFENSE
+	EndUnit
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=5
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=6
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=7
@@ -29722,26 +29831,34 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=69,y=8
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=69,y=9
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=69,y=10
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=11
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=69,y=12
@@ -30141,8 +30258,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=70,y=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=1
@@ -30166,16 +30285,19 @@ BeginPlot
 	x=70,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=5
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=6
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=7
@@ -30183,15 +30305,34 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=70,y=8
 	RiverNSDirection=0
 	isWOfRiver
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+# MacAurther TODO: For some reason, more than one Mexican city crashes to desktop with no error message
+#	BeginCity
+#		CityOwner=0, (King of Spain)
+#		CityName=Camino Real
+#		CityPopulation=1
+#		Player0Culture=2, (King of Spain)
+#	EndCity
+	TeamReveal=0,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=70,y=9
@@ -30199,6 +30340,8 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=70,y=10
@@ -30208,6 +30351,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=11
@@ -30215,6 +30359,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=70,y=12
@@ -30619,21 +30764,26 @@ EndPlot
 BeginPlot
 	x=71,y=1
 	BonusType=BONUS_GOLD
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=71,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=71,y=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=71,y=4
@@ -30645,31 +30795,40 @@ BeginPlot
 	x=71,y=5
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=6
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=7
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=71,y=8
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=71,y=9
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=71,y=10
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=71,y=11
@@ -31083,35 +31242,41 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=2
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=3
 	BonusType=BONUS_CORN
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=4
 	BonusType=BONUS_IRON
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=72,y=5
@@ -31123,26 +31288,31 @@ BeginPlot
 	x=72,y=6
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=7
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=8
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=9
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=10
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=72,y=11
@@ -31542,6 +31712,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=1
@@ -31551,13 +31722,33 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=2
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_SPANISH_CONQUISTADOR, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_CONQUISTADOR, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_TERCIO, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		PromotionType=PROMOTION_PINCH
+		PromotionType=PROMOTION_FORMATION
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
 		Level=1, Experience=0
@@ -31568,22 +31759,25 @@ BeginPlot
 		CityOwner=0, (King of Spain)
 		CityName=Mexico City
 		CityPopulation=3
+		BuildingType=BUILDING_PALACE
+		Player0Culture=31, (King of Spain)
 	EndCity
 	TeamReveal=0,
-	Player0Culture=2, (King of Spain)
+	Player0Culture=473, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=3
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=73,y=5
@@ -31595,6 +31789,7 @@ BeginPlot
 	x=73,y=6
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=73,y=7
@@ -32004,34 +32199,37 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=1
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=2
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	TeamReveal=0,
-	Player0Culture=1, (King of Spain)
+	Player0Culture=472, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=4
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=74,y=5
@@ -32455,21 +32653,26 @@ EndPlot
 BeginPlot
 	x=75,y=1
 	BonusType=BONUS_GOLD
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=75,y=2
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=75,y=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 	TeamReveal=0,
+	Player0Culture=22, (King of Spain)
 EndPlot
 BeginPlot
 	x=75,y=4
@@ -32894,6 +33097,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=76,y=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 	TeamReveal=0,
@@ -33335,14 +33539,25 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=77,y=1
+	ImprovementType=IMPROVEMENT_FORT
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	BeginUnit
+		UnitType=UNIT_SPANISH_TERCIO, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		PromotionType=PROMOTION_PINCH
+		PromotionType=PROMOTION_FORMATION
+		FacingDirection=4
+		UnitAIType=UNITAI_DEFENSE
+	EndUnit
 	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=77,y=2
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=77,y=3
@@ -33353,11 +33568,13 @@ BeginPlot
 	x=77,y=4
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=77,y=5
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=77,y=6
@@ -33751,33 +33968,40 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=78,y=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=78,y=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=78,y=2
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=78,y=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=78,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=78,y=5
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=78,y=6
@@ -34185,29 +34409,38 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=79,y=1
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=79,y=2
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=79,y=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=79,y=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=79,y=5
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=79,y=6
@@ -34616,38 +34849,63 @@ BeginPlot
 	x=80,y=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=2
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=80,y=3
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	BeginUnit
+		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
+		Level=1, Experience=0
+		FacingDirection=4
+		UnitAIType=UNITAI_CITY_DEFENSE
+	EndUnit
+# MacAurther TODO: For some reason, more than one Mexican city crashes to desktop with no error message
+#	BeginCity
+#		CityOwner=0, (King of Spain)
+#		CityName=Monterrey
+#		CityPopulation=1
+#		Player0Culture=2, (King of Spain)
+#	EndCity
+	TeamReveal=0,
+	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=80,y=4
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=80,y=5
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=6
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=7
@@ -34677,19 +34935,16 @@ BeginPlot
 	x=80,y=11
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=12
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=13
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=80,y=14
@@ -35053,23 +35308,30 @@ BeginPlot
 	x=81,y=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=1
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=2
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=81,y=3
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=81,y=4
@@ -35077,6 +35339,8 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
+	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=81,y=5
@@ -35084,6 +35348,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=6
@@ -35115,13 +35380,11 @@ BeginPlot
 	x=81,y=10
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=11
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=12
@@ -35130,21 +35393,18 @@ BeginPlot
 	BonusType=BONUS_MILLET
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=13
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=14
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=81,y=15
@@ -35517,6 +35777,7 @@ EndPlot
 BeginPlot
 	x=82,y=0
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -35525,16 +35786,19 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=2
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=3
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=4
@@ -35543,11 +35807,13 @@ BeginPlot
 	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=5
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=6
@@ -35573,14 +35839,12 @@ BeginPlot
 	x=82,y=10
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=11
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -35590,7 +35854,6 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -35598,7 +35861,6 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -35606,7 +35868,6 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=82,y=15
@@ -35996,6 +36257,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=4
@@ -36004,6 +36266,7 @@ BeginPlot
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=5
@@ -36024,7 +36287,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=8
@@ -36033,20 +36295,17 @@ BeginPlot
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=9
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=10
 	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=11
@@ -36054,36 +36313,20 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=83,y=12
 	isNOfRiver
 	RiverWEDirection=1
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_CITY_DEFENSE
-	EndUnit
-	BeginCity
-		CityOwner=0, (King of Spain)
-		CityName=San Antonio
-		CityPopulation=3
-		BuildingType=BUILDING_PALACE
-	EndCity
-	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=83,y=13
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -36091,7 +36334,6 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=83,y=15
@@ -36509,7 +36751,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -36517,14 +36758,12 @@ BeginPlot
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=9
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=10
@@ -36532,7 +36771,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=11
@@ -36541,14 +36779,12 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=84,y=12
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -36558,7 +36794,6 @@ BeginPlot
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -36568,7 +36803,6 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=15
@@ -36576,7 +36810,6 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=84,y=16
@@ -36989,20 +37222,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=85,y=7
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN, UnitOwner=0, (King of Spain)
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_CITY_DEFENSE
-	EndUnit
-	BeginCity
-		CityOwner=0, (King of Spain)
-		CityName=Corpus Christi
-		CityPopulation=3
-	EndCity
 	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
@@ -37023,7 +37244,6 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=10
@@ -37031,14 +37251,12 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=11
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=12
@@ -37047,7 +37265,6 @@ BeginPlot
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=13
@@ -37055,13 +37272,11 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=14
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=85,y=15
@@ -37498,7 +37713,6 @@ BeginPlot
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=86,y=11
@@ -37931,25 +38145,21 @@ BeginPlot
 	x=87,y=4
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=87,y=5
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=87,y=6
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=87,y=7
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=87,y=8
@@ -38425,19 +38635,16 @@ BeginPlot
 	x=88,y=6
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=88,y=7
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=88,y=8
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=88,y=9
@@ -38459,7 +38666,6 @@ BeginPlot
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=88,y=12
@@ -39343,7 +39549,6 @@ BeginPlot
 	x=90,y=9
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=90,y=10
@@ -45743,40 +45948,34 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=103,y=78
@@ -46195,60 +46394,51 @@ BeginPlot
 	x=104,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=72
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=104,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=0
@@ -46657,21 +46847,18 @@ BeginPlot
 	x=105,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -46679,14 +46866,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=105,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -46694,28 +46879,24 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=105,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=0
@@ -47108,28 +47289,24 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=72
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=106,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47137,7 +47314,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -47145,7 +47321,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47153,21 +47328,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=106,y=78
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47175,7 +47347,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=0
@@ -47585,28 +47756,24 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=107,y=73
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47614,14 +47781,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=107,y=75
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47629,7 +47794,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47637,7 +47801,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -47645,7 +47808,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -47653,7 +47815,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=108,y=0
@@ -48065,21 +48226,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=108,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=108,y=72
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48087,7 +48245,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48095,7 +48252,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48103,7 +48259,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48111,7 +48266,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48119,7 +48273,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48127,7 +48280,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48135,7 +48287,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=0
@@ -48549,21 +48700,18 @@ BeginPlot
 	x=109,y=69
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -48571,21 +48719,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=73
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=74
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -48593,35 +48738,30 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=109,y=76
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=109,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=0
@@ -49011,28 +49151,24 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49040,7 +49176,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49048,7 +49183,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49056,7 +49190,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49064,7 +49197,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49072,14 +49204,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
 	x=110,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49087,14 +49217,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=110,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=0
@@ -49495,21 +49623,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=69
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=70
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49517,7 +49642,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49525,7 +49649,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49535,7 +49658,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=74
@@ -49544,14 +49666,12 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49559,14 +49679,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
 	x=111,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -49574,13 +49692,11 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=111,y=79
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=0
@@ -50007,7 +50123,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=70
@@ -50016,7 +50131,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50026,7 +50140,6 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
 BeginPlot
@@ -50035,7 +50148,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50044,13 +50156,11 @@ BeginPlot
 	RiverWEDirection=3
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=74
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=75
@@ -50061,7 +50171,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50069,7 +50178,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50077,7 +50185,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50085,13 +50192,11 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=112,y=79
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=0
@@ -50501,13 +50606,11 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50515,7 +50618,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50523,7 +50625,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player0Culture=1, (King of Spain)
 EndPlot
 BeginPlot
@@ -50531,21 +50632,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=113,y=75
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -50557,7 +50655,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -50565,20 +50662,17 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=113,y=79
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=0
@@ -50975,21 +51069,18 @@ BeginPlot
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -50997,7 +51088,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51005,34 +51095,29 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=73
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=75
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
 	x=114,y=76
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51041,7 +51126,6 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=114,y=78
@@ -51459,7 +51543,6 @@ BeginPlot
 	x=115,y=69
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51467,7 +51550,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=2, (King of France)
 EndPlot
 BeginPlot
@@ -51475,7 +51557,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -51483,7 +51564,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=0,
 	Player1Culture=1, (King of France)
 EndPlot
 BeginPlot
@@ -54079,7 +54159,8 @@ BeginPlot
 	BeginCity
 		CityOwner=0, (King of Spain)
 		CityName=San Agust&#237;n
-		CityPopulation=3
+		CityPopulation=2
+		Player0Culture=2, (King of Spain)
 	EndCity
 	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
@@ -54504,19 +54585,16 @@ BeginPlot
 	x=122,y=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=122,y=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=122,y=2
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=122,y=3
@@ -55025,19 +55103,16 @@ BeginPlot
 	x=123,y=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=123,y=1
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=123,y=2
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=123,y=3
@@ -62426,7 +62501,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=138,y=69
@@ -62435,7 +62509,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=138,y=70
@@ -62444,7 +62517,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=138,y=71
@@ -62862,20 +62934,17 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=139,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=139,y=70
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=139,y=71
@@ -62884,14 +62953,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=139,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=139,y=73
@@ -63279,7 +63346,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=67
@@ -63287,7 +63353,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=68
@@ -63295,40 +63360,34 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=70
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=72
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=74
@@ -63337,27 +63396,23 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=77
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=140,y=78
@@ -63715,14 +63770,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=66
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=67
@@ -63730,20 +63783,17 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=68
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=70
@@ -63751,33 +63801,28 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=73
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=75
@@ -63788,7 +63833,6 @@ BeginPlot
 	FeatureType=FEATURE_BOG, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=76
@@ -63796,14 +63840,12 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=141,y=78
@@ -64160,28 +64202,24 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=66
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=67
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=69
@@ -64189,39 +64227,33 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=70
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=72
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=73
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=75
@@ -64229,14 +64261,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=76
 	FeatureType=FEATURE_BOG, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=77
@@ -64246,7 +64276,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=142,y=78
@@ -64594,94 +64623,80 @@ BeginPlot
 	x=143,y=64
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=65
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=66
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=67
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=68
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=72
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=74
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=78
@@ -64692,14 +64707,12 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=143,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=0
@@ -65032,52 +65045,44 @@ BeginPlot
 	x=144,y=64
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=65
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=66
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=67
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=68
 	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=69
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=71
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=72
@@ -65085,33 +65090,28 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=74
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=75
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=76
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=77
@@ -65120,7 +65120,6 @@ BeginPlot
 	FeatureType=FEATURE_BOG, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=78
@@ -65129,7 +65128,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=144,y=79
@@ -65138,7 +65136,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=0
@@ -65476,67 +65473,57 @@ BeginPlot
 	x=145,y=66
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=67
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=68
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=69
 	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=70
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=72
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=75
 	FeatureType=FEATURE_BOG, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=76
@@ -65545,7 +65532,6 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=77
@@ -65554,21 +65540,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=145,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=0
@@ -65913,32 +65896,27 @@ BeginPlot
 	x=146,y=67
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=68
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=70
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=72
@@ -65946,21 +65924,18 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=73
 	FeatureType=FEATURE_BOG, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=74
 	FeatureType=FEATURE_BOG, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=75
@@ -65968,7 +65943,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=76
@@ -65977,14 +65951,12 @@ BeginPlot
 	FeatureType=FEATURE_BOG, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=77
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=146,y=78
@@ -66344,47 +66316,40 @@ BeginPlot
 	x=147,y=68
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=70
 	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=71
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=72
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=73
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=75
@@ -66393,20 +66358,17 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=77
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=147,y=78
@@ -66770,39 +66732,33 @@ BeginPlot
 	x=148,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=148,y=70
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=148,y=71
 	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=148,y=72
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=148,y=73
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=148,y=74
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=148,y=75
@@ -67183,31 +67139,26 @@ BeginPlot
 	x=149,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=149,y=70
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=149,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=149,y=72
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=149,y=73
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=149,y=74
@@ -69249,4 +69200,16 @@ BeginSign
 	plotY=40
 	playerType=0, (King of Spain)
 	caption=Charolettesville
+EndSign
+BeginSign
+	plotX=0
+	plotY=2
+	playerType=0, (King of Spain)
+	caption=The Far-Off lands of Europe
+EndSign
+BeginSign
+	plotX=0
+	plotY=0
+	playerType=0, (King of Spain)
+	caption=(0,0) DO NOT BLOCK!
 EndSign

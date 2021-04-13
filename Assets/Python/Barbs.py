@@ -15,13 +15,18 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
-# MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish
+# MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish/other
+# MacAurther: Using this to help AI settle some hard-to-reach cities as well
 tMinorCities = (
+	(1608, (137, 74), iFrance, 'Quebec City', 1, iMusketman, 1),				# Quebec City
 	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iMusketman, 1),			# Fort Orange (Albany)
 	(1625, (137, 54), iIndependent, 'Nieuw Amsterdam', 1, iMusketman, 1),		# New Amsterdam (New York)
 	(1630, (140, 57), iIndependent, 'Fort de Goede Hoop', 1, iMusketman, 1),	# Fort de Goede Hoop (Hartford)
+	(1632, (142, 68), iMassachusetts, 'Portland', 1, iMusketman, 1),			# Portland, ME
 	(1638, (134, 48), iIndependent2, 'Fort Kristina', 1, iMusketman, 1),		# Fort Kristina (Wilmington)
 	(1653, (129, 34), iIndependent2, 'Raleigh', 1, iMusketman, 1),				# Albemarle Settlers
+	(1718, (100, 14), iFrance, 'New Orleans', 1, iMusketman, 1),				# New Orleans
+	(1732, (134, 43), iMaryland, 'Salisbury', 1, iMusketman, 1),				# Salisbury, MD (help AI maryland settle the Delaware peninsula)
 )
 
 #FoB - Spawn Native American Villages

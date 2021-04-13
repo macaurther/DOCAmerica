@@ -213,17 +213,17 @@ void CvGame::init(HandicapTypes eHandicap)
 	//edead: start hack to allow late start with different game speeds
 	if (getScenario() == SCENARIO_1770AD) //late start condition
 	{
-		if (getGameTurn() == 181) //MacAurther TODO: getGameTurn
+		if (getGameTurn() == 170) //MacAurther TODO: getGameTurn
 		{
-			setGameTurn(getGameTurnForYear(1170, -3000, GC.getInitCore().getCalendar(), GC.getInitCore().getGameSpeed()));
+			setGameTurn(getGameTurnForYear(1770, 1600, GC.getInitCore().getCalendar(), GC.getInitCore().getGameSpeed()));
 		}
 	}
 
 	if (getScenario() == SCENARIO_1850AD)
 	{
-		if (getGameTurn() == 321) //MacAurther TODO: getGameTurn
+		if (getGameTurn() == 250) //MacAurther TODO: getGameTurn
 		{
-			setGameTurn(getGameTurnForYear(1850, -3000, GC.getInitCore().getCalendar(), GC.getInitCore().getGameSpeed()));
+			setGameTurn(getGameTurnForYear(1850, 1600, GC.getInitCore().getCalendar(), GC.getInitCore().getGameSpeed()));
 		}
 	}
 	//edead: end

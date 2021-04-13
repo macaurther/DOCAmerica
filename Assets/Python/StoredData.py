@@ -192,11 +192,15 @@ class GameData:
 		
 		# Unique Powers
 		
-		self.iImmigrationTimer = 0
-		
 		self.lByzantineBribes = []
 		
 		self.lLatestRazeData = [-1] * 5
+		
+		# Immigration
+		
+		self.iImmigrationTimer = 0
+		
+		self.lImmigrantCount = [0] * iNumPlayers
 		
 		# AI Wars
 		
@@ -236,6 +240,7 @@ class GameData:
 		self.iFirstNewWorldColony = -1
 		
 		self.iEnglishSinks = 0
+		self.iMassachusettsVsBritain = 0
 		self.iCanadianPeaceDeals = 0
 		
 		self.iPopeTurns = 0

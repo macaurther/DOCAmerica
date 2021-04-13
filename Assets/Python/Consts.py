@@ -27,9 +27,9 @@ iNumMajorPlayers = iNumPlayers
 iNumActivePlayers = iNumPlayers
 
 iIndependent = iNumPlayers		#18
-iIndependent2 = iNumPlayers+1	        #19
+iIndependent2 = iNumPlayers+1	#19
 iNative = iNumPlayers+2			#20
-iNative2 = iNumPlayers+3	        #21
+iNative2 = iNumPlayers+3		#21
 iNumTotalPlayers = iNumPlayers+4
 iBarbarian = iNumPlayers+4		#22
 iNumTotalPlayersB = iBarbarian+1
@@ -180,7 +180,7 @@ tBirth = (
 1653,		# North Carolina
 1663,		# South Carolina
 1664,		# New Jersey
-1664,		# New York
+1601,		# New York 1664
 1682,		# Pennsylvania
 1682,		# Delaware
 1732,		# Georgia
@@ -507,14 +507,12 @@ iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBo
 # Buildings
 
 iNumBuildings = 178
-(iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument,
-iTotemPole, iWalls, iStable, iLibrary,
-iHarbor, iTheatre,
-iArena, iLighthouse, iCastleHill, iWeaver,
-iMarket, iJail, iForge, 
-iPharmacy, iPostOffice,
-iWharf, iCrabbery, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity,
-iCivicSquare, iCommon, iSewer, iStarFort, iEstate, iLowcountryPlantation, iBorough, 
+(iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument, iTotemPole, iWalls, iStable, iLibrary,
+iHarbor, iTheatre, iArena, iLighthouse, iCastleHill, iWeaver, iMarket, iJail, iForge, iPharmacy, 
+iPostOffice, iWharf, iCrabbery, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity, iCivicSquare, iCommon, 
+iAbbey, iArmory, iArsenal, iButchery, iSchoolhouse, iCitadel, iCollege, iFortress, iLumberMill, iMagazine, 
+iNewspaper, iPrintingPress, iSaloon, iShipyard, iSlaughterhouse, iStockade, iTavern, iTextileMill, iWell, iWaystation, 
+iSewer, iStarFort, iEstate, iLowcountryPlantation, iBorough, 
 iMilldamPlantation, iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iHouseOfBurgesses, iFactory,
 iDistillery, iVinairgrery, iPark, iGarden, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndustrialPark, iCinema, 
 iHospital, iSupermarket, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 
@@ -526,8 +524,6 @@ iMethodistMonastery, iMethodistShrine, iMormonTemple, iMormonCathedral, iMormonM
 iAcademy, iAdministrativeCenter, iManufactory, iArmoury, iMuseum, iStockExchange, 
 iTradingCompanyBuilding, iIberianTradingCompanyBuilding, iNationalMonument, iNationalTheatre, iNationalGallery, iNationalCollege, iMilitaryAcademy, iSecretService, iIronworks, iRedCross, 
 iNationalPark, iCentralBank, iSpaceport,
-iAbbey, iArmory, iArsenal, iButchery, iSchoolhouse, iCitadel, iCollege, iFortress, iLumberMill, iMagazine, 
-iNewspaper, iPrintingPress, iSaloon, iShipyard, iSlaughterhouse, iStockade, iTavern, iTextileMill, iWell, iWaystation, 
 iMountVernon, iMonticello, iCapeHatterasLighthouse, iFortMcHenry, iWestPoint, iSlaterMill, iRainbowRow, iHarvard, iPrinceton, iCapitol, 
 iWhiteHouse, iIndependenceHall, 
 iStatueOfLiberty,
@@ -585,12 +581,13 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 48
+iNumRegions = 52
 (rVirginia, rMassachusetts, rNewHampshire, rMaryland, rConnecticut, rRhodeIsland, rNorthCarolina, rSouthCarolina, rNewJersey, rNewYork, 
 rPennsylvania, rDelaware, rGeorgia, rVermont, rKentucky, rTennessee, rOhio, rLouisiana, rIndiana, rMississippi,
 rIllinois, rAlabama, rMaine, rMissouri, rArkansas, rMichigan, rFlorida, rTexas, rIowa, rWisconsin,
 rCalifornia, rMinnesota, rOregon, rKansas, rWestVirginia, rNevada, rNebraska, rColorado, rNorthDakota, rSouthDakota,
-rMontana, rWashington, rIdaho, rWyoming, rUtah, rOklahoma, rNewMexico, rArizona) = range(iNumRegions)
+rMontana, rWashington, rIdaho, rWyoming, rUtah, rOklahoma, rNewMexico, rArizona, rAlaska, rHawaii,
+rCanada, rMexico) = range(iNumRegions)
 
 
 
@@ -613,6 +610,7 @@ lMountain = [rMontana, rIdaho, rWyoming, rColorado, rUtah, rArizona, rNevada]
 lPacific = [rWashington, rOregon, rCalifornia]
 lWest = lMountain + lPacific
 
+lColonial = [rMaine, rNewHampshire, rVermont, rMassachusetts, rRhodeIsland, rConnecticut, rNewYork, rNewJersey, rPennsylvania, rMaryland, rDelaware, rVirginia, rNorthCarolina, rSouthCarolina, rGeorgia]
 lContiguous = lSouth + lNorth + lWest
 
 lNewWorld = lContiguous

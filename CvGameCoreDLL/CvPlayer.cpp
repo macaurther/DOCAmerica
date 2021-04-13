@@ -884,6 +884,18 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 
 	m_eventsTriggered.removeAll();
 
+	// Thai UP: +1 commerce per excess happiness -> MacAurther: Maryland UP
+	if (getID() == MARYLAND)
+	{
+		changeHappinessExtraYield(YIELD_COMMERCE, 1);
+	}
+
+	// MacAurther: Pennsylvania UP
+	if(getID() == PENNSYLVANIA)
+	{
+		m_iWorkerSpeedModifier += 25;
+	}
+
 	if (!bConstructorCall)
 	{
 		AI_reset(false);
@@ -5634,7 +5646,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 		return false;
 	}
 
-	if (pPlot->getFeatureType() != NO_FEATURE && getID())
+	if (pPlot->getFeatureType() != NO_FEATURE)
 	{
 		if (GC.getFeatureInfo(pPlot->getFeatureType()).isNoCity())
 		{
@@ -5914,8 +5926,7 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 
 	eUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getUnitClassType()));
 
-	//MacAurther TODO: Commenting this out for now to prevent assert during WB edit city details
-	//FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
+	FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
 	if (GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) != eUnit)
 	{
 		return false;
@@ -6582,13 +6593,13 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	iProductionNeeded /= 100;
 
 	// increase unit cost with era
-	// MacAurther TODO: Figure out what to do with this
-	int iEraModifier = 100;
+	//MacAurther TODO: Balance this
+	/*int iEraModifier = 100;
 	if (GC.getUnitInfo(eUnit).isFoodProduction())
 	{
 		iEraModifier += 5 * getCurrentEra();
 
-		if (getCurrentEra() > ERA_EXPANSION) iEraModifier += 5 * getCurrentEra();
+		if (getCurrentEra() > ERA_RENAISSANCE) iEraModifier += 5 * getCurrentEra();
 	}
 	else
 	{
@@ -6596,7 +6607,7 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	}
 
 	iProductionNeeded *= iEraModifier;
-	iProductionNeeded /= 100;
+	iProductionNeeded /= 100;*/
 
 	return std::max(1, iProductionNeeded);
 }
@@ -10244,20 +10255,6 @@ void CvPlayer::changeBuildingBadHealth(int iChange)
 
 int CvPlayer::getExtraHappiness() const
 {
-	// Leoreth: American UP
-	// MacAurther TODO: Cleanup or reuse
-	/*if (getID() == AMERICA)
-	{
-		int iCivicHappiness = 0;
-
-		if (getCivics(CIVICOPTION_GOVERNMENT) == CIVIC_DEMOCRACY) iCivicHappiness += 2;
-		if (getCivics(CIVICOPTION_LEGITIMACY) == CIVIC_CONSTITUTION) iCivicHappiness += 2;
-		if (getCivics(CIVICOPTION_SOCIETY) == CIVIC_INDIVIDUALISM) iCivicHappiness += 2;
-		if (getCivics(CIVICOPTION_ECONOMY) == CIVIC_FREE_ENTERPRISE) iCivicHappiness += 2;
-
-		return m_iExtraHappiness + iCivicHappiness;
-	}*/
-
 	return m_iExtraHappiness;
 }
 
@@ -13738,6 +13735,7 @@ int CvPlayer::getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIn
 	FAssertMsg(eIndex1 < GC.getNumImprovementInfos(), "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
+
 	return m_ppaaiImprovementYieldChange[eIndex1][eIndex2];
 }
 

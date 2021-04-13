@@ -46,6 +46,15 @@ tEraCorePopulationModifiers = (
 	400, # future
 )
 
+# give Europeans a boost in core pop to prevent collapse
+tInternationCorePopulation = {
+iSpain : 50,
+iFrance : 80,
+iEngland : 70,
+#iNetherlands : 30,
+#iSweden : 20,
+}
+
 def checkTurn(iGameTurn):
 	for iPlayer in range(iNumPlayers):
 		if data.players[iPlayer].iTurnsToCollapse == 0:
@@ -665,22 +674,15 @@ def calculateStability(iPlayer):
 	iDifferentReligionPopulation = 0
 	iNoReligionPopulation = 0
 	
-	# MacAurther TODO: Cleanup:
-	#bTotalitarianism = iCivicSociety == iTotalitarianism
-	#bFreeEnterprise = iCivicEconomy == iFreeEnterprise
 	bPublicWelfare = iCivicEconomy == iPublicWelfare
-	#bTheocracy = iCivicReligion == iTheocracy
-	#bTolerance = iCivicReligion == iTolerance
-	#bConquest = iCivicTerritory == iConquest
-	#bTributaries = iCivicTerritory == iTributaries
 	bIsolationism = iCivicDevelopment == iIsolationism
-	#bColonialism = iCivicTerritory == iColonialism
-	#bNationhood = iCivicTerritory == iNationhood
-	#bMultilateralism = iCivicTerritory == iMultilateralism
 	
 	bSingleCoreCity = (len(utils.getOwnedCoreCities(iPlayer)) == 1)
 	
 	iCorePopulationModifier = getCorePopulationModifier(iCurrentEra)
+	
+	# boost European core population
+	if iPlayer in tInternationCorePopulation: iCorePopulation += tInternationCorePopulation[iPlayer]
 	
 	for city in utils.getCityList(iPlayer):
 		iPopulation = city.getPopulation()
@@ -726,7 +728,6 @@ def calculateStability(iPlayer):
 			#if not bExpansionExceptions:
 			#	if city.getOriginalOwner() != iPlayer and iGameTurn - city.getGameTurnAcquired() < utils.getTurns(25): iModifier += 1
 			
-			# MacAurther TODO: Is this needed? Was in with Persia
 			if iCulturePercent < 50: iModifier += 1
 			if iCulturePercent < 20: iModifier += 1
 			
@@ -1117,21 +1118,24 @@ def getCivicStability(iPlayer, lCivics):
 	#MacAurther TODO: Balance Civic Stability
 	#MacAurther TODO: Maybe figure out a tool tip that better shows exact values?
 	
+	# Includes Connecticut UP
 	if iRoyalColony in civics:
 		if iMercantilism in civics: iStability +=5
 		if iPenalColony in civics: iStability +=2
 		if iIsolationism in civics: iStability +=1
 		if iHeadright in civics: iStability +=1
-		if iStatesRights in civics: iStability -=5
-		if iFederalism in civics: iStability -=8
-		if iManifestDestiny in civics: iStability -=3
-		if iHomesteads in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iStatesRights in civics: iStability -=5
+			if iFederalism in civics: iStability -=8
+			if iManifestDestiny in civics: iStability -=3
+			if iHomesteads in civics: iStability -=3
 	
 	if iTerritory in civics:
 		if iHomesteads in civics: iStability +=5
-		if iUrbanism in civics: iStability -=3
-		if iSuburbanism in civics: iStability -=2
-		if iUniversalSufferage in civics: iStability -=5
+		if iPlayer != iConnecticut:
+			if iUrbanism in civics: iStability -=3
+			if iSuburbanism in civics: iStability -=2
+			if iUniversalSufferage in civics: iStability -=5
 	
 	if iMartialLaw in civics:
 		if iTerritory in civics: iStability +=2
@@ -1144,11 +1148,12 @@ def getCivicStability(iPlayer, lCivics):
 		if iAgrarianism in civics: iStability +=3
 		if iRuralism in civics: iStability +=3
 		if iStatesRights in civics: iStability +=5
-		if iUrbanism in civics: iStability -=5
-		if iFederalism in civics: iStability -=5
-		if iIndustrialism in civics: iStability -=5
-		if iMeltingPot in civics: iStability -=8
-		if iMulticulturism in civics: iStability -=8
+		if iPlayer != iConnecticut:
+			if iUrbanism in civics: iStability -=5
+			if iFederalism in civics: iStability -=5
+			if iIndustrialism in civics: iStability -=5
+			if iMeltingPot in civics: iStability -=8
+			if iMulticulturism in civics: iStability -=8
 	
 	if iMercantilism in civics:
 		if iRoyalColony in civics: iStability +=3
@@ -1156,21 +1161,24 @@ def getCivicStability(iPlayer, lCivics):
 	if iAgrarianism in civics:
 		if iRuralism in civics: iStability +=3
 		if iHomesteads in civics: iStability +=3
-		if iUrbanism in civics: iStability -=3
-		if iSuburbanism in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iUrbanism in civics: iStability -=3
+			if iSuburbanism in civics: iStability -=3
 	
 	if iPenalColony in civics:
 		if iRoyalColony in civics: iStability +=1
-		if iCommonwealth in civics: iStability -=4
-		if iDominion in civics: iStability -=3
-		if iState in civics: iStability -=3
-		if iHeadright in civics: iStability -=5
-		if iSerfdom in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iCommonwealth in civics: iStability -=4
+			if iDominion in civics: iStability -=3
+			if iState in civics: iStability -=3
+			if iHeadright in civics: iStability -=5
+			if iSerfdom in civics: iStability -=3
 	
 	if iHeadright in civics:
 		if iIndenturedServitude in civics: iStability +=2
-		if iAutomation in civics: iStability -=3
-		if iMeltingPot in civics: iStability -=3
+		if iPlayer != iConnecticut:
+			if iAutomation in civics: iStability -=3
+			if iMeltingPot in civics: iStability -=3
 	
 	if iRuralism in civics:
 		if iAgrarianism in civics: iStability +=3

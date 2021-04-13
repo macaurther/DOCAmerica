@@ -27,26 +27,26 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_PEOPLES</Tag>
-		<English>Frankish Peoples</English>
+		<English>Kingdom of %s1</English>
 		<French>
-			<Text>Peuplades franques</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Text>Royaume de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
 		</French>
 		<German>
-			<Text>Fr&#228;nkische V&#246;lker:Fr&#228;nkischen V&#246;lker:Fr&#228;nkischen V&#246;lkern</Text>
+			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
 			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>1:1:1</Plural>
+			<Plural>0:0:0</Plural>
 		</German>
 		<Italian>
-			<Text>Popoli Franchi</Text>
+			<Text>Regno del %s1</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Pueblos Francos</Text>
+			<Text>Reino de %s1</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>

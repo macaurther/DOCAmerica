@@ -17,7 +17,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>AME</Identifier>
 			<StartingYear>1775</StartingYear>
 			<LoadingTimes>
@@ -109,7 +109,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>CAN</Identifier>
 			<StartingYear>1867</StartingYear>
 			<LoadingTimes>
@@ -215,7 +215,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>CN</Identifier>
 			<StartingYear>1635</StartingYear>
 			<LoadingTimes>
@@ -303,7 +303,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>DE</Identifier>
 			<StartingYear>1682</StartingYear>
 			<LoadingTimes>
@@ -391,9 +391,9 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>ENG</Identifier>
-			<StartingYear>820</StartingYear>
+			<StartingYear>1600</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -409,26 +409,19 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Cambridge</City>
-				<City>Hastings</City>
-				<City>Coventry</City>
-				<City>Cardiff</City>
-				<City>Liverpool</City>
-				<City>Dover</City>
-				<City>Brighton</City>
-				<City>Leeds</City>
+				<City>Batbados</City>
+				<City>Penobscot</City>
+				<City>New Port</City>
+				<City>Yorktown</City>
+				<City>Halifax</City>
+				<City>Lexington</City>
+				<City>Williamsburg</City>
+				<City>St. Johns</City>
+				<City>Camden</City>
+				<City>Antigua</City>
+				<City>Rupert House</City>
+				<City>Kingston</City>
 				<City>Reading</City>
-				<City>Gloucester</City>
-				<City>Bristol</City>
-				<City>Leicester</City>
-				<City>Ipswich</City>
-				<City>Portsmouth</City>
-				<City>Berwick</City>
-				<City>Middlesbrough</City>
-				<City>Sheffield</City>
-				<City>Lancaster</City>
-				<City>Blackpool</City>
-				<City>Hull</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -493,9 +486,9 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>FRA</Identifier>
-			<StartingYear>750</StartingYear>
+			<StartingYear>1600</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -511,23 +504,38 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Chartres</City>
-				<City>Grenoble</City>
-				<City>Dijon</City>
-				<City>Carcassonne</City>
-				<City>Toulon</City>
-				<City>Caen</City>
-				<City>Arles</City>
-				<City>Le Havre</City>
-				<City>Montpellier</City>
-				<City>Le Mans</City>
-				<City>Nancy</City>
-				<City>Lille</City>
-				<City>Lourdes</City>
-				<City>Cannes</City>
-				<City>La Rochelle</City>
-				<City>Bourges</City>
-				<City>Saint &#201;tienne</City>
+				<City>Fort Caroline</City>
+				<City>Fort Frontenac</City>
+				<City>Fort Pontchartain</City>
+				<City>Fort Tadoussac</City>
+				<City>Fort Canada</City>
+				<City>Fort Niagara</City>
+				<City>Fort Cr&#232;vecoeur</City>
+				<City>Fort Roquelai</City>
+				<City>Fort Laguille</City>
+				<City>Fort Brest</City>
+				<City>Fort Richelieu</City>
+				<City>Fort Louis</City>
+				<City>Fort Prudhome</City>
+				<City>Fort Sandouski</City>
+				<City>Fort du Quesne</City>
+				<City>Fort Maurepas</City>
+				<City>Fort Francois Xavier</City>
+				<City>Fort Saint-Michel</City>
+				<City>Fort Chicago</City>
+				<City>Fort-de-France</City>
+				<City>Fort Frances</City>
+				<City>Fort Saint-Joseph</City>
+				<City>Fort Miannis</City>
+				<City>Fort Orl&#233;ans</City>
+				<City>Fort Saint-Ignace</City>
+				<City>Fort LeRocher</City>
+				<City>Fort Miyamis</City>
+				<City>Fort Rosalie</City>
+				<City>Fort Balise</City>
+				<City>Fort Conde</City>
+				<City>Fort Pensacola</City>
+				<City>Fort Toulouse</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -584,7 +592,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>GA</Identifier>
 			<StartingYear>1732</StartingYear>
 			<LoadingTimes>
@@ -672,7 +680,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>MD</Identifier>
 			<StartingYear>1634</StartingYear>
 			<LoadingTimes>
@@ -760,7 +768,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>MA</Identifier>
 			<StartingYear>1620</StartingYear>
 			<LoadingTimes>
@@ -848,7 +856,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>NH</Identifier>
 			<StartingYear>1632</StartingYear>
 			<LoadingTimes>
@@ -936,7 +944,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>NJ</Identifier>
 			<StartingYear>1664</StartingYear>
 			<LoadingTimes>
@@ -1024,7 +1032,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>NY</Identifier>
 			<StartingYear>1664</StartingYear>
 			<LoadingTimes>
@@ -1112,7 +1120,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>NC</Identifier>
 			<StartingYear>1653</StartingYear>
 			<LoadingTimes>
@@ -1200,7 +1208,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>PA</Identifier>
 			<StartingYear>1682</StartingYear>
 			<LoadingTimes>
@@ -1288,7 +1296,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>RI</Identifier>
 			<StartingYear>1636</StartingYear>
 			<LoadingTimes>
@@ -1376,7 +1384,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>SC</Identifier>
 			<StartingYear>1663</StartingYear>
 			<LoadingTimes>
@@ -1464,9 +1472,9 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>SPA</Identifier>
-			<StartingYear>722</StartingYear>
+			<StartingYear>1600</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -1482,20 +1490,17 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Alicante</City>
-				<City>Jaen</City>
-				<City>Logrono</City>
-				<City>Palma</City>
-				<City>Teruel</City>
-				<City>Zamora</City>
-				<City>Mida</City>
-				<City>Lugo</City>
-				<City>Elche</City>
-				<City>Alcorcon</City>
-				<City>Vigo</City>
-				<City>San Sebastian</City>
-				<City>Ibiza</City>
-				<City>Las Palmas</City>
+				<City>Fuerte de la Pointe</City>
+				<City>Isla Ship</City>
+				<City>Isla Delf&#237;n</City>
+				<City>Fuerte Viejo</City>
+				<City>Santa Mar&#237;a de Ochuse</City>
+				<City>Fuerte Ayenlade</City>
+				<City>Bah&#237;a de San Jos&#233;</City>
+				<City>R&#237;o Ochlockonee</City>
+				<City>San Luis</City>
+				<City>San Marcos</City>
+				<City>Fuerte Las Casas</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -1564,7 +1569,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligionName>TXT_KEY_RELIGION_DRUIDISM</PaganReligionName>
-			<PaganReligionButton>Art/Interface/Buttons/Religions/Druidism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,2,8</PaganReligionButton>
+			<PaganReligionButton>Art/Interface/Buttons/Religions/Catholicism.dds</PaganReligionButton>
 			<Identifier>VA</Identifier>
 			<StartingYear>1607</StartingYear>
 			<LoadingTimes>

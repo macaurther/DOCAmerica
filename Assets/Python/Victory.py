@@ -27,16 +27,22 @@ lGreatPeople = [iSpecialistGreatProphet, iSpecialistGreatArtist, iSpecialistGrea
 # third Virginian goal: settle 10 great generals or statesmen in Richmond by 1860 AD
 tRichmond = ((129, 39),(128, 39),(128, 40))	# Three possible tiles for Richmond
 
+# first Maryland goal: control 70% of the Chesapeake by 1700 AD
+tChesapeakeBL = (130, 37)
+tChesapeakeTR = (134, 48)
+tChesapeakeExceptions = ((130,48), (134,48), (134,47), (134,46), (134,45), (134,44), (130,40), (130,39), (130,38), (130,37),)
+
 ### GOAL CONSTANTS ###
 
 dTechGoals = {
-	iAmerica: (1, [iPrinting]),	# MacAurther TODO: Temp Placeholder
+	iMassachusetts: (1, [iIndependence]),
 }
 
 dEraGoals = {}
 
 dWonderGoals = {
 	iFrance: (2, [iStatueOfLiberty], True),
+	iMassachusetts: (2, [iHarvard], True),
 	iAmerica: (1, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iGoldenGateBridge, iPentagon, iUnitedNations], True),
 }
 
@@ -88,8 +94,8 @@ def checkTurn(iGameTurn, iPlayer):
 			bWestVirginia = False
 			bKentucky = False
 			# MacAurther TODO: Uncomment when WV and KY are added
-			#bWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False)) >= 3
-			#bKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False)) >= 2
+			#bWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False)) >= 2
+			#bKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False)) >= 3
 			if bVirginia and bWestVirginia and bKentucky:
 				win(iVirginia, 0)
 			else:
@@ -119,7 +125,7 @@ def checkTurn(iGameTurn, iPlayer):
 	elif iPlayer == iMassachusetts:
 		# first goal: control Massachusetts and Maine in 1660 AD
 		if iGameTurn == getTurnForYear(1660):
-			bMassachusetts = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMassachusetts, False)) >= 2
+			bMassachusetts = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMassachusetts, False)) >= 3
 			bMaine = False
 			# MacAurther TODO: Uncomment when ME is added
 			#bMaine = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMaine, False)) >= 2
@@ -127,6 +133,25 @@ def checkTurn(iGameTurn, iPlayer):
 				win(iMassachusetts, 0)
 			else:
 				lose(iMassachusetts, 0)
+			
+			# second goal: defeat 10 British Units by 1780 AD
+			if isPossible(iMassachusetts, 1):
+				if data.iMassachusettsVsBritain >= 10:
+					win(iEngland, 1)
+			
+			if iGameTurn == getTurnForYear(1780):
+				expire(iEngland, 1)
+			
+			# third goal: build Harvard by 1675 AD
+			if iGameTurn == getTurnForYear(1675):
+				expire(iMassachusetts, 2)
+			
+			# third goal: be the most advanced state in 1800 AD
+			if iGameTurn == getTurnForYear(1800):
+				if isBestPlayer(iMassachusetts, playerTechs):
+					win(iMassachusetts, 0)
+				else:
+					lose(iMassachusetts, 0)
 	
 	elif iPlayer == iNewHampshire:
 		# first goal: control New Hampshire and Vermont in 1660 AD
@@ -141,7 +166,16 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iNewHampshire, 0)
 	
 	elif iPlayer == iMaryland:
-		pass
+		# first goal: control 70% of the Chesapeake by 1700 AD
+		if isPossible(iMaryland, 0):
+			iChesapeake, iTotalChesapeake = countControlledTiles(iMaryland, tChesapeakeBL, tChesapeakeTR, False, tChesapeakeExceptions, True)
+			fChesapeake = iChesapeake * 100.0 / iTotalChesapeake
+			
+			if fChesapeake >= 70.0:
+				win(iMaryland, 0)
+				
+		if iGameTurn == getTurnForYear(1930):
+			expire(iMaryland, 0)
 	
 	elif iPlayer == iConnecticut:
 		pass
@@ -456,7 +490,13 @@ def onCombatResult(pWinningUnit, pLosingUnit):
 		if isPossible(iEngland, 1):
 			if pLosingUnitInfo.getDomainType() == iDomainSea:
 				data.iEnglishSinks += 1
-				
+	
+	# second Massachusetts goal:  defeat 10 British Units by 1780 AD
+	if iWinningPlayer == iMassachusetts:
+		if isPossible(iMassachusetts, 1):
+			if pLosingUnit.getOwner() == iEngland:
+				data.iMassachusettsVsBritain += 1
+			
 					
 def onGreatPersonBorn(iPlayer, unit):
 	iUnitType = utils.getBaseUnit(unit.getUnitType())
@@ -1931,7 +1971,7 @@ def getUHVHelp(iPlayer, iGoal):
 			# MacAurther TODO: Uncomment when WV and KY are added
 			#iCitiesWestVirginia = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iWestVirginia, False))
 			#iCitiesKentucky = getNumCitiesInArea(iVirginia, Areas.getNormalArea(iKentucky, False))
-			aHelp.append(getIcon(iCitiesVirginia >= 5) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_VIRGINIA", (iCitiesVirginia, 5)) + ' ' + getIcon(iCitiesWestVirginia >= 3) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_WEST_VIRGINIA", (iCitiesWestVirginia, 3)) + ' ' + getIcon(iCitiesKentucky >= 2) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_KENTUCKY", (iCitiesKentucky, 2)))
+			aHelp.append(getIcon(iCitiesVirginia >= 5) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_VIRGINIA", (iCitiesVirginia, 5)) + ' ' + getIcon(iCitiesWestVirginia >= 2) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_WEST_VIRGINIA", (iCitiesWestVirginia, 2)) + ' ' + getIcon(iCitiesKentucky >= 3) + localText.getText("TXT_KEY_VICTORY_VIRGINIA_CONTROL_KENTUCKY", (iCitiesKentucky, 3)))
 		elif iGoal == 1:
 			iHighestState = getBestPlayer(iVirginia, playerRealPopulation)
 			bHighest = (iHighestState == iVirginia)
@@ -1950,11 +1990,18 @@ def getUHVHelp(iPlayer, iGoal):
 			iCitiesMaine = 0
 			# MacAurther TODO: Uncomment when ME is added
 			#iCitiesMaine = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMaine, False))
-			aHelp.append(getIcon(iCitiesMassachusetts >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MASSACHUSETTS", (iCitiesMassachusetts, 2)) + ' ' + getIcon(iCitiesMaine >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MAINE", (iCitiesMaine, 2)))
+			aHelp.append(getIcon(iCitiesMassachusetts >= 3) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MASSACHUSETTS", (iCitiesMassachusetts, 3)) + ' ' + getIcon(iCitiesMaine >= 2) + localText.getText("TXT_KEY_VICTORY_MASSACHUSETTS_CONTROL_MAINE", (iCitiesMaine, 2)))
 		elif iGoal == 1:
-			aHelp.append("TODO ;)")
+			bIndependence = data.lFirstDiscovered[iIndependence] == iMassachusetts
+			aHelp.append(getIcon(bIndependence) + localText.getText("TXT_KEY_TECH_INDEPENDENCE", ()))
+			iBritsDefeated = data.iMassachusettsVsBritain
+			aHelp.append(getIcon(iBritsDefeated >= 10) + localText.getText("TXT_KEY_VICTORY_BRITISH_UNITS", (iBritsDefeated, 10)))
 		elif iGoal == 2:
-			aHelp.append("TODO ;)")
+			bHarvard = data.getWonderBuilder(iHarvard) == iMassachusetts
+			aHelp.append(getIcon(bHarvard) + localText.getText("TXT_KEY_BUILDING_HARVARD", ()))
+			iMostAdvancedCiv = getBestPlayer(iMassachusetts, playerTechs)
+			aHelp.append(getIcon(iMostAdvancedCiv == iMassachusetts) + localText.getText("TXT_KEY_VICTORY_MOST_ADVANCED_STATE", (str(gc.getPlayer(iMostAdvancedCiv).getCivilizationShortDescriptionKey()),)))
+		
 
 	elif iPlayer == iNewHampshire:
 		if iGoal == 0:
@@ -1970,7 +2017,9 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iMaryland:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			iChesapeake, iTotalChesapeake = countControlledTiles(iMaryland, tChesapeakeBL, tChesapeakeTR, False, tChesapeakeExceptions, True)
+			fChesapeake = iChesapeake * 100.0 / iTotalChesapeake
+			aHelp.append(getIcon(fChesapeake >= 70.0) + localText.getText("TXT_KEY_VICTORY_CHESAPEAKE_TERRITORY", (str(u"%.2f%%" % fChesapeake), str(70))))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:

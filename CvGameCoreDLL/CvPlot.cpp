@@ -1684,22 +1684,15 @@ bool CvPlot::isLake() const
 
 	pArea = area();
 
-	//MacAurther TODO:
 	//Rhye - start (salt lake)
-	int saltLakePlots[13][2] = {
-	{76, 43}, //Van
-	{82, 48}, //Aral sea
-	{82, 49},
-	{83, 48},
-	{83, 49},
-	{87, 50}, //eastern Balkhash
-	{88, 50},
-	{88, 48}, //Aydar
-	{72, 49}, //Black Sea
-	{112, 43}, //Japan
-	{113, 44},
-	{112, 14}, //Eyre
-	{14, 48} //Great Salt Lake
+	int saltLakePlots[7][2] = {
+	{61, 50}, //Great Salt Lake
+	{62, 50},
+	{63, 50},
+	{61, 49},
+	{62, 49},
+	{63, 49},
+	{61, 48},
 	};
 
 	for (int i = 0; i < 13; i++) {
@@ -6899,6 +6892,12 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		{
 			iYield += GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eBonus, eYield);
 		}
+	}
+
+	// MacAurther: New York UP
+	if(ePlayer == NEW_YORK && eYield == YIELD_COMMERCE && iYield >= 3)
+	{
+		iYield += 2;
 	}
 
 	return iYield;

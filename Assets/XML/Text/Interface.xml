@@ -33,13 +33,37 @@
 		<Italian>Un'unit&#224; nemica &#232; stata schiavizzata!</Italian>
 		<Spanish>&#161;Una unidad enemiga ha sido esclavizada!</Spanish>
 	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_UP_IMMIGRATION</Tag>
+		<English>Our population in %s1 is growing due to immigrants from %s2!</English>
+		<French>Our population in %s1 is growing due to immigrants from %s2!</French>
+		<German>Our population in %s1 is growing due to immigrants from %s2!</German>
+		<Italian>Our population in %s1 is growing due to immigrants from %s2!</Italian>
+		<Spanish>Our population in %s1 is growing due to immigrants from %s2!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MIGRATION</Tag>
+		<English>Our population in %s1 is growing due to immigrants from %s2, %s3!</English>
+		<French>Our population in %s1 is growing due to immigrants from %s2, %s3!</French>
+		<German>Our population in %s1 is growing due to immigrants from %s2, %s3!</German>
+		<Italian>Our population in %s1 is growing due to immigrants from %s2, %s3!</Italian>
+		<Spanish>Our population in %s1 is growing due to immigrants from %s2, %s3!</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_EMIGRATION</Tag>
-		<English>A part of our population from %s1 is emigrating to the New World!</English>
-		<French>Une partie de la population de %s1 &#233;migre vers le Nouveau Monde !</French>
-		<German>Ein Teil unserer Bev&#246;lkerung aus %s1 wandert in die Neue Welt aus!</German>
-		<Italian>Parte della nostra popolazione emigra in America!</Italian>
-		<Spanish>&#161;Parte de nuestra poblaci&#243;n est&#225; emigrando a Estados Unidos!</Spanish>
+		<English>A part of our population from %s1 is emigrating to %s2, %s3!</English>
+		<French>A part of our population from %s1 is emigrating to %s2, %s3!</French>
+		<German>A part of our population from %s1 is emigrating to %s2, %s3!</German>
+		<Italian>A part of our population from %s1 is emigrating to %s2, %s3!</Italian>
+		<Spanish>A part of our population from %s1 is emigrating to %s2, %s3!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IMMIGRATION_PRISONERS</Tag>
+		<English>New prisoners from the homeland have arrived in %s1!</English>
+		<French>New prisoners from the homeland have arrived in %s1!</French>
+		<German>New prisoners from the homeland have arrived in %s1!</German>
+		<Italian>New prisoners from the homeland have arrived in %s1!</Italian>
+		<Spanish>New prisoners from the homeland have arrived in %s1!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_BASE_COST</Tag>
@@ -3207,6 +3231,14 @@
 		<German>[ICON_BULLET]Fortbewegung auf</German>
 		<Italian>[ICON_BULLET]Pu&#242; entrare nell'</Italian>
 		<Spanish>[ICON_BULLET]Pede entrar en</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_PROD_NEW_HAMPSHIRE</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</English>
+		<French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</French>
+		<German>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</German>
+		<Italian>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</Italian>
+		<Spanish>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>
