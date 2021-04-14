@@ -32,6 +32,11 @@ tChesapeakeBL = (130, 37)
 tChesapeakeTR = (134, 48)
 tChesapeakeExceptions = ((130,48), (134,48), (134,47), (134,46), (134,45), (134,44), (130,40), (130,39), (130,38), (130,37),)
 
+# second Maryland goal: build the B&0 Railway by 1827 AD
+tBaltimore = ((130, 47),(131, 47),(130, 46)) # Three possible tiles for Baltimore
+lOhioWatershed = [(121, 49), (122, 49), (123, 49), (121, 48), (122, 48), (123, 48), (121, 47), (122, 47), (123, 47), 
+(121, 46), (122, 46), (123, 46), (121, 45), (122, 45), (121, 44), (122, 44),]
+
 ### GOAL CONSTANTS ###
 
 dTechGoals = {
@@ -112,9 +117,9 @@ def checkTurn(iGameTurn, iPlayer):
 		if isPossible(iVirginia, 2):
 			iGreatGenerals = 0
 			iGreatStatesmen = 0
-			for tCity in tRichmond:
-				iGreatGenerals = max(iGreatGenerals, countCitySpecialists(iVirginia, tCity, iSpecialistGreatGeneral))
-				iGreatStatesmen = max(iGreatStatesmen, countCitySpecialists(iVirginia, tCity, iSpecialistGreatStatesman))
+			for tPlot in tRichmond:
+				iGreatGenerals = max(iGreatGenerals, countCitySpecialists(iVirginia, tPlot, iSpecialistGreatGeneral))
+				iGreatStatesmen = max(iGreatStatesmen, countCitySpecialists(iVirginia, tPlot, iSpecialistGreatStatesman))
 			
 			if iGreatStatesmen + iGreatStatesmen >= 10:
 				win(iVirginia, 2)
@@ -123,6 +128,7 @@ def checkTurn(iGameTurn, iPlayer):
 			expire(iVirginia, 2)
 	
 	elif iPlayer == iMassachusetts:
+		
 		# first goal: control Massachusetts and Maine in 1660 AD
 		if iGameTurn == getTurnForYear(1660):
 			bMassachusetts = getNumCitiesInArea(iMassachusetts, Areas.getNormalArea(iMassachusetts, False)) >= 3
@@ -134,26 +140,27 @@ def checkTurn(iGameTurn, iPlayer):
 			else:
 				lose(iMassachusetts, 0)
 			
-			# second goal: defeat 10 British Units by 1780 AD
-			if isPossible(iMassachusetts, 1):
-				if data.iMassachusettsVsBritain >= 10:
-					win(iEngland, 1)
-			
-			if iGameTurn == getTurnForYear(1780):
-				expire(iEngland, 1)
-			
-			# third goal: build Harvard by 1675 AD
-			if iGameTurn == getTurnForYear(1675):
-				expire(iMassachusetts, 2)
-			
-			# third goal: be the most advanced state in 1800 AD
-			if iGameTurn == getTurnForYear(1800):
-				if isBestPlayer(iMassachusetts, playerTechs):
-					win(iMassachusetts, 0)
-				else:
-					lose(iMassachusetts, 0)
+		# second goal: defeat 10 British Units by 1780 AD
+		if isPossible(iMassachusetts, 1):
+			if data.iMassachusettsVsBritain >= 10:
+				win(iEngland, 1)
+		
+		if iGameTurn == getTurnForYear(1780):
+			expire(iEngland, 1)
+		
+		# third goal: build Harvard by 1675 AD
+		if iGameTurn == getTurnForYear(1675):
+			expire(iMassachusetts, 2)
+		
+		# third goal: be the most advanced state in 1800 AD
+		if iGameTurn == getTurnForYear(1800):
+			if isBestPlayer(iMassachusetts, playerTechs):
+				win(iMassachusetts, 0)
+			else:
+				lose(iMassachusetts, 0)
 	
 	elif iPlayer == iNewHampshire:
+		
 		# first goal: control New Hampshire and Vermont in 1660 AD
 		if iGameTurn == getTurnForYear(1691):
 			bNewHampshire = getNumCitiesInArea(iNewHampshire, Areas.getNormalArea(iNewHampshire, False)) >= 3
@@ -166,6 +173,7 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iNewHampshire, 0)
 	
 	elif iPlayer == iMaryland:
+		
 		# first goal: control 70% of the Chesapeake by 1700 AD
 		if isPossible(iMaryland, 0):
 			iChesapeake, iTotalChesapeake = countControlledTiles(iMaryland, tChesapeakeBL, tChesapeakeTR, False, tChesapeakeExceptions, True)
@@ -176,6 +184,17 @@ def checkTurn(iGameTurn, iPlayer):
 				
 		if iGameTurn == getTurnForYear(1930):
 			expire(iMaryland, 0)
+		
+		# second goal: connect the Chesapeake to the Ohio Watershed by Rail by 1827 AD
+		# MacAurther TODO: This goal isn't working
+		if isPossible(iMaryland, 1):
+			for tPlot in tBaltimore:
+				if isConnectedByRailroad(iMaryland, tPlot, lOhioWatershed):
+					win(iMaryland, 1)
+					
+		if iGameTurn == getTurnForYear(1827):
+			expire(iMaryland, 1)
+	
 	
 	elif iPlayer == iConnecticut:
 		pass
@@ -184,6 +203,7 @@ def checkTurn(iGameTurn, iPlayer):
 		pass
 	
 	elif iPlayer == iNorthCarolina:
+		
 		# first goal: control North Carolina and Tennessee in 1796 AD
 		if iGameTurn == getTurnForYear(1796):
 			bNorthCarolina = getNumCitiesInArea(iNorthCarolina, Areas.getNormalArea(iNorthCarolina, False)) >= 5
@@ -202,7 +222,28 @@ def checkTurn(iGameTurn, iPlayer):
 		pass
 	
 	elif iPlayer == iNewYork:
-		pass
+		
+		# first goal: make New York the most populous and cultured city in the world in 1900 AD
+		if iGameTurn == getTurnForYear(1900):
+			if isBestCity(iNewYork, (137, 54), cityPopulation) and isBestCity(iNewYork, (137, 54), cityCulture):
+				win(iNewYork, 0)
+			else:
+				lose(iNewYork, 0)
+		
+		# second goal: receive the most cumulative Immigrants in 1900 AD
+		if iGameTurn == getTurnForYear(1900):
+			# If there is a tie, rule in the favor of NY
+			iNumImmigrants = data.lImmigrantCount[iNewYork]
+			iMostImmigrantsCiv = iNewYork	
+			for iCiv in range(iVirginia, iNumPlayers):	# Don't count Euros for now
+				if data.lImmigrantCount[iCiv] > iNumImmigrants:
+					iNumImmigrants = data.lImmigrantCount[iCiv]
+					iMostImmigrantsCiv = iCiv
+			
+			if iMostImmigrantsCiv == iNewYork:
+				win(iNewYork, 1)
+			else:
+				lose(iNewYork, 1)
 	
 	elif iPlayer == iPennsylvania:
 		pass
@@ -211,6 +252,7 @@ def checkTurn(iGameTurn, iPlayer):
 		pass
 	
 	elif iPlayer == iGeorgia:
+		
 		# first goal: control Georgia, Alabama, and Mississippi in 1797 AD
 		if iGameTurn == getTurnForYear(1797):
 			bGeorgia = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iGeorgia, False)) >= 5
@@ -1979,9 +2021,9 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 2:
 			iGreatGenerals = 0
 			iGreatStatesmen = 0
-			for tCity in tRichmond:
-				iGreatGenerals = max(iGreatGenerals, countCitySpecialists(iVirginia, tCity, iSpecialistGreatGeneral))
-				iGreatStatesmen = max(iGreatStatesmen, countCitySpecialists(iVirginia, tCity, iSpecialistGreatStatesman))
+			for tPlot in tRichmond:
+				iGreatGenerals = max(iGreatGenerals, countCitySpecialists(iVirginia, tPlot, iSpecialistGreatGeneral))
+				iGreatStatesmen = max(iGreatStatesmen, countCitySpecialists(iVirginia, tPlot, iSpecialistGreatStatesman))
 			aHelp.append(getIcon(iGreatGenerals + iGreatStatesmen >= 10) + localText.getText("TXT_KEY_VICTORY_GREAT_GENERALS_AND_STATESMEN_SETTLED", ('Richmond', iGreatGenerals + iGreatStatesmen, 10)))
 
 	elif iPlayer == iMassachusetts:
@@ -2021,7 +2063,12 @@ def getUHVHelp(iPlayer, iGoal):
 			fChesapeake = iChesapeake * 100.0 / iTotalChesapeake
 			aHelp.append(getIcon(fChesapeake >= 70.0) + localText.getText("TXT_KEY_VICTORY_CHESAPEAKE_TERRITORY", (str(u"%.2f%%" % fChesapeake), str(70))))
 		elif iGoal == 1:
-			aHelp.append("TODO ;)")
+			# MacAurther TODO: This goal isn't working
+			bBORailway = False
+			for tPlot in tBaltimore:
+				if isConnectedByRailroad(iMaryland, tPlot, lOhioWatershed):
+					bBORailway = True
+			aHelp.append(getIcon(bBORailway) + localText.getText("TXT_KEY_VICTORY_BO_RAILWAY", ()))
 		elif iGoal == 2:
 			aHelp.append("TODO ;)")
 
@@ -2071,9 +2118,21 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iNewYork:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			pBestCity = getBestCity(iNewYork, (137, 54), cityPopulation)
+			bBestCityPop = isBestCity(iNewYork, (137, 54), cityPopulation)
+			aHelp.append(getIcon(bBestCityPop) + localText.getText("TXT_KEY_VICTORY_MOST_POPULOUS_CITY", (pBestCity.getName(),)))
+			bBestCityCul = isBestCity(iNewYork, (137, 54), cityCulture)
+			aHelp.append(getIcon(bBestCityCul) + localText.getText("TXT_KEY_VICTORY_MOST_CULTURED_CITY", (pBestCity.getName(),)))
 		elif iGoal == 1:
-			aHelp.append("TODO ;)")
+			# If there is a tie, rule in the favor of NY
+			iNumImmigrants = data.lImmigrantCount[iNewYork]
+			iMostImmigrantsCiv = iNewYork	
+			for iCiv in range(iVirginia, iNumPlayers):	# Don't count Euros for now
+				if data.lImmigrantCount[iCiv] > iNumImmigrants:
+					iNumImmigrants = data.lImmigrantCount[iCiv]
+					iMostImmigrantsCiv = iCiv
+			bNewYorkMost = iMostImmigrantsCiv == iNewYork
+			aHelp.append(getIcon(bNewYorkMost) + localText.getText("TXT_KEY_VICTORY_MOST_IMMIGRANTS", (gc.getPlayer(iMostImmigrantsCiv).getCivilizationShortDescriptionKey(),)))
 		elif iGoal == 2:
 			aHelp.append("TODO ;)")
 

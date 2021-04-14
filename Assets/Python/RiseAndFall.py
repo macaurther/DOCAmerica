@@ -1644,7 +1644,8 @@ class RiseAndFall:
 		# Set up Vassal colonial relationships
 		if iCiv in range(iVirginia, iGeorgia + 1):
 			if not tCiv.canContact(iEngland): tCiv.meet(iEngland, False)
-			if not tCiv.isVassal(iEngland): tCiv.setVassal(iEngland, True, False)
+			# MacAurther TODO: Disabled for now until there are features relying on it
+			#if not tCiv.isVassal(iEngland): tCiv.setVassal(iEngland, True, False)
 
 	def createRespawnUnits(self, iCiv, tPlot):
 		pass

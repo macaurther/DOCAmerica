@@ -165,7 +165,6 @@ lOlderNeighbours = [
 # civ birth dates
 
 # converted to years - edead
-# MacAurther TODO: Get the scenario years right
 tBirth = (
 1600,		# Spain
 1600,		# France
@@ -173,13 +172,13 @@ tBirth = (
 1607,		# Virginia
 1620,		# Massachusetts
 1623,		# New Hampshire
-1634,		# Maryland
+1634,		# Maryland 
 1635,		# Connecticut
 1636,		# Rhode Island
 1653,		# North Carolina
 1663,		# South Carolina
 1664,		# New Jersey
-1601,		# New York 1664
+1664,		# New York 
 1682,		# Pennsylvania
 1682,		# Delaware
 1732,		# Georgia
