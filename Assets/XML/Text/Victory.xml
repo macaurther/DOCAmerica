@@ -6467,83 +6467,83 @@
 	<!-- Pennsylvania -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Pennsylvania Dutch</English>
+		<French>Pennsylvania Dutch</French>
+		<German>Pennsylvania Dutch</German>
+		<Italian>Pennsylvania Dutch</Italian>
+		<Spanish>Pennsylvania Dutch</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Steel City</English>
+		<French>Steel City</French>
+		<German>Steel City</German>
+		<Italian>Steel City</Italian>
+		<Spanish>Steel City</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA3_TITLE</Tag>
@@ -6560,6 +6560,23 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_IMMIGRANT_COUNT</Tag>
+		<English>Number of immigrants received (does not include Slaves or Prisoners): %d1</English>
+		<French>Number of immigrants received (does not include Slaves or Prisoners): %d1</French>
+		<German>Number of immigrants received (does not include Slaves or Prisoners): %d1</German>
+		<Italian>Number of immigrants received (does not include Slaves or Prisoners): %d1</Italian>
+		<Spanish>Number of immigrants received (does not include Slaves or Prisoners): %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_IRON_COAL_RESOURCES</Tag>
+		<English>Iron and coal resources secured: %d1 / %d2</English>
+		<French>Iron and coal resources secured: %d1 / %d2</French>
+		<German>Iron and coal resources secured: %d1 / %d2</German>
+		<Italian>Iron and coal resources secured: %d1 / %d2</Italian>
+		<Spanish>Iron and coal resources secured: %d1 / %d2</Spanish>
 	</TEXT>
 	
 	<!-- Delaware -->
@@ -6703,43 +6720,43 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>King Cotton</English>
+		<French>King Cotton</French>
+		<German>King Cotton</German>
+		<Italian>King Cotton</Italian>
+		<Spanish>King Cotton</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA3_TITLE</Tag>

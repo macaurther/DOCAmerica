@@ -241,6 +241,7 @@ class GameData:
 		
 		self.iEnglishSinks = 0
 		self.iMassachusettsVsBritain = 0
+		self.iGeorgiaTradeGold = 0
 		self.iCanadianPeaceDeals = 0
 		
 		self.iPopeTurns = 0

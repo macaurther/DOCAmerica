@@ -179,9 +179,9 @@ tBirth = (
 1663,		# South Carolina
 1664,		# New Jersey
 1664,		# New York 
-1682,		# Pennsylvania
+1682,		# Pennsylvania 
 1682,		# Delaware
-1732,		# Georgia
+1601,		# Georgia 1732
 1787,		# America
 1867,		# Canada
 1600, # 0,
@@ -498,10 +498,13 @@ iGreatSpy : iFemaleGreatSpy,
 }
 
 # initialise bonuses variables to bonuses IDs from WBS
-iNumBonuses = 41
-(iAluminium, iCamel, iCoal, iCopper, iHorse, iIron, iMarble, iOil, iStone, iUranium, iBanana, iClam, iCorn, iCow, iCrab,
-iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, iGold, iIncense, iIvory, iPearls, iSilk, iSilver, iSpices,
-iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
+iNumBonuses = 54
+(iAluminium, iAmber, iCamel, iCitris, iCoal, iCopper, iDates, iHorse, iIron, iMarble, 
+iOil, iStone, iUranium, iBanana, iClam, iCorn, iCow, iCrab, iDeer, iFish, 
+iPig, iPotato, iRice, iSheep, iWheat, iCocoa, iCoffee, iCotton, iDye, 
+iFur, iGems, iGold, iIncense, iIvory, iJade, iMillet, iObsidian, iOlives, iOpium, iPearls, 
+iRareEarths, iRubber, iSalt, iSilk, iSilver, iSpices, iSugar, iTea, iTobacco, iWine, 
+iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
 # Buildings
 
 iNumBuildings = 178

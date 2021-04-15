@@ -246,7 +246,25 @@ def checkTurn(iGameTurn, iPlayer):
 				lose(iNewYork, 1)
 	
 	elif iPlayer == iPennsylvania:
-		pass
+		
+		# first goal: receive 15 immigrants by 1800 AD
+		if isPossible(iPennsylvania, 0):
+			if data.lImmigrantCount[iPennsylvania] >= 15:
+				win(iPennsylvania, 0)
+					
+		if iGameTurn == getTurnForYear(1800):
+			expire(iPennsylvania, 0)
+		
+		# second goal: secure 8 iron or coal resources by 1910 AD
+		if isPossible(iPennsylvania, 1):
+			iNumIron = countResources(iPennsylvania, iIron)
+			iNumCoal = countResources(iPennsylvania, iCoal)
+			
+			if iNumIron + iNumCoal >= 8:
+				win(iPennsylvania, 1)
+				
+		if iGameTurn == getTurnForYear(1910):
+			expire(iPennsylvania, 1)
 	
 	elif iPlayer == iDelaware:
 		pass
@@ -265,6 +283,28 @@ def checkTurn(iGameTurn, iPlayer):
 				win(iGeorgia, 0)
 			else:
 				lose(iGeorgia, 0)
+	
+		# second goal: acquire 4000 gold by trade by 1860 AD
+		if isPossible(iGeorgia, 1):
+			iTradeGold = 0
+			
+			# gold from city trade routes
+			iTradeCommerce = 0
+			for city in utils.getCityList(iGeorgia):
+				iTradeCommerce += city.getTradeYield(2)
+			iTradeGold += iTradeCommerce * pGeorgia.getCommercePercent(0)
+			
+			# gold from per turn gold trade
+			for iPlayer in range(iNumPlayers):
+				iTradeGold += pGeorgia.getGoldPerTurnByPlayer(iPlayer) * 100
+			
+			data.iGeorgiaTradeGold += iTradeGold
+			
+			if data.iGeorgiaTradeGold / 100 >= utils.getTurns(4000):
+				win(iGeorgia, 1)
+				
+		if iGameTurn == getTurnForYear(1860):
+			expire(iGeorgia, 1)
 	
 	elif iPlayer == iAmerica:
 	
@@ -2138,9 +2178,12 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iPennsylvania:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			bNumImmigrants = data.lImmigrantCount[iPennsylvania] >= 15
+			aHelp.append(getIcon(bNumImmigrants) + localText.getText("TXT_KEY_VICTORY_IMMIGRANT_COUNT", (data.lImmigrantCount[iPennsylvania],)))
 		elif iGoal == 1:
-			aHelp.append("TODO ;)")
+			iNumIron = countResources(iPennsylvania, iIron)
+			iNumCoal = countResources(iPennsylvania, iCoal)
+			aHelp.append(getIcon(iNumIron + iNumCoal >= 8) + localText.getText("TXT_KEY_VICTORY_IRON_COAL_RESOURCES", (iNumIron + iNumCoal, 8)))
 		elif iGoal == 2:
 			aHelp.append("TODO ;)")
 
@@ -2162,7 +2205,8 @@ def getUHVHelp(iPlayer, iGoal):
 			#iCitiesMississippi = getNumCitiesInArea(iGeorgia, Areas.getNormalArea(iMississippi, False))
 			aHelp.append(getIcon(iCitiesGeorgia >= 5) + localText.getText("TXT_KEY_VICTORY_GEORGIA_CONTROL_GEORGIA", (iCitiesGeorgia, 5)) + ' ' + getIcon(iCitiesAlabama >= 2) + localText.getText("TXT_KEY_VICTORY_GEORGIA_CONTROL_ALABAMA", (iCitiesAlabama, 2)) + ' ' + getIcon(iCitiesMississippi >= 2) + localText.getText("TXT_KEY_VICTORY_GEORGIA_CONTROL_MISSISSIPPI", (iCitiesMississippi, 2)))
 		elif iGoal == 1:
-			aHelp.append("TODO ;)")
+			iTradeGold = data.iGeorgiaTradeGold / 100
+			aHelp.append(getIcon(iTradeGold >= utils.getTurns(4000)) + localText.getText("TXT_KEY_VICTORY_TRADE_GOLD", (iTradeGold, utils.getTurns(4000))))
 		elif iGoal == 2:
 			aHelp.append("TODO ;)")
 
