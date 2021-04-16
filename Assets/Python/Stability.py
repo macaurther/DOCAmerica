@@ -1126,7 +1126,7 @@ def getCivicStability(iPlayer, lCivics):
 		if iHeadright in civics: iStability +=1
 		if iPlayer != iConnecticut:
 			if iStatesRights in civics: iStability -=5
-			if iFederalism in civics: iStability -=8
+			if iFederalismCivic in civics: iStability -=8
 			if iManifestDestiny in civics: iStability -=3
 			if iHomesteads in civics: iStability -=3
 	
@@ -1150,7 +1150,7 @@ def getCivicStability(iPlayer, lCivics):
 		if iStatesRights in civics: iStability +=5
 		if iPlayer != iConnecticut:
 			if iUrbanism in civics: iStability -=5
-			if iFederalism in civics: iStability -=5
+			if iFederalismCivic in civics: iStability -=5
 			if iIndustrialism in civics: iStability -=5
 			if iMeltingPot in civics: iStability -=8
 			if iMulticulturism in civics: iStability -=8

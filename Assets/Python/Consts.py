@@ -173,15 +173,15 @@ tBirth = (
 1620,		# Massachusetts
 1623,		# New Hampshire
 1634,		# Maryland 
-1635,		# Connecticut
+1635,		# Connecticut 
 1636,		# Rhode Island
 1653,		# North Carolina
 1663,		# South Carolina
-1664,		# New Jersey
+1664,		# New Jersey 
 1664,		# New York 
 1682,		# Pennsylvania 
-1682,		# Delaware
-1601,		# Georgia 1732
+1682,		# Delaware 
+1732,		# Georgia 
 1787,		# America
 1867,		# Canada
 1600, # 0,
@@ -549,7 +549,7 @@ iNumBuildingsPlague = iNumBuildings+1
 #Civics
 iNumCivics = 42
 (iShire, iRoyalColony, iTerritory, iCommonwealth, iDominion, iState, iNation,
-iSheriffdom, iCommonLaw, iMartialLaw, iStatesRights, iFederalism, iSegregation, iUniversalSufferage,
+iSheriffdom, iCommonLaw, iMartialLaw, iStatesRights, iFederalismCivic, iSegregation, iUniversalSufferage,
 iSerfdom, iIndenturedServitude, iSlavery, iCaptainsOfIndustry, iWorkersRights, iOutsourcing, iAutomation,
 iLaissezFaire, iMercantilism, iAgrarianism, iIndustrialism, iManifestDestinyCivic, iConsumerismCivic, iPublicWelfare,
 iForGloryGodAndGold, iHaven, iPenalColony, iFreeReligion, iIsolationism, iMeltingPot, iMulticulturism,

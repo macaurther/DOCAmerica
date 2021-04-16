@@ -41,6 +41,7 @@ lOhioWatershed = [(121, 49), (122, 49), (123, 49), (121, 48), (122, 48), (123, 4
 
 dTechGoals = {
 	iMassachusetts: (1, [iIndependence]),
+	iDelaware: (0, [iFederalism]),
 }
 
 dEraGoals = {}
@@ -48,6 +49,7 @@ dEraGoals = {}
 dWonderGoals = {
 	iFrance: (2, [iStatueOfLiberty], True),
 	iMassachusetts: (2, [iHarvard], True),
+	iNewYork: (2, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iWorldTradeCenter]),
 	iAmerica: (1, [iStatueOfLiberty, iBrooklynBridge, iEmpireStateBuilding, iGoldenGateBridge, iPentagon, iUnitedNations], True),
 }
 
@@ -197,6 +199,8 @@ def checkTurn(iGameTurn, iPlayer):
 	
 	
 	elif iPlayer == iConnecticut:
+		
+		# first goal: be the first to research 8 Industrial techs
 		pass
 	
 	elif iPlayer == iRhodeIsland:
@@ -219,7 +223,14 @@ def checkTurn(iGameTurn, iPlayer):
 		pass
 	
 	elif iPlayer == iNewJersey:
-		pass
+		
+		# first goal: have an average city size of 20 in 1950 AD
+		if iGameTurn == getTurnForYear(1950):
+			if isPossible(iNewJersey, 0):
+				if getAverageCitySize(iNewJersey) >= 20.0:
+					win(iNewJersey, 0)
+				else:
+					lose(iNewJersey, 0)
 	
 	elif iPlayer == iNewYork:
 		
@@ -468,6 +479,15 @@ def onTechAcquired(iPlayer, iTech):
 					else: lose(iEngland, 2)
 				if not isFirstDiscoveredPossible(iEngland, iExpansionEra, 8) or not isFirstDiscoveredPossible(iEngland, iIndustrialEra, 8):
 					lose(iEngland, 2)
+		
+		# first Connecticut goal: be the first to discover eight Industrial technologies
+		if isPossible(iConnecticut, 0):
+			if iEra in [iIndustrialEra]:
+				if countFirstDiscovered(iPlayer, iIndustrialEra) >= 8:
+					if iPlayer == iConnecticut: win(iConnecticut, 0)
+					else: lose(iEngland, 0)
+				if not isFirstDiscoveredPossible(iConnecticut, iIndustrialEra, 8):
+					lose(iConnecticut, 0)
 				
 			
 	# handle all "be the first to enter" goals
@@ -2114,7 +2134,8 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iConnecticut:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			iIndustrialTechs = countFirstDiscovered(iConnecticut, iIndustrialEra)
+			aHelp.append(getIcon(iIndustrialTechs >= 8) + localText.getText("TXT_KEY_VICTORY_TECHS_FIRST_DISCOVERED", (gc.getEraInfo(iIndustrialEra).getText(), iIndustrialTechs, 8)))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:
@@ -2154,7 +2175,8 @@ def getUHVHelp(iPlayer, iGoal):
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:
-			aHelp.append("TODO ;)")
+			fPopPerCity = getAverageCitySize(iNewJersey)
+			aHelp.append(getIcon(fPopPerCity >= 20.0) + localText.getText("TXT_KEY_VICTORY_AVERAGE_CITY_POPULATION", (str(u"%.2f" % fPopPerCity), str(20))))
 
 	elif iPlayer == iNewYork:
 		if iGoal == 0:
@@ -2172,9 +2194,16 @@ def getUHVHelp(iPlayer, iGoal):
 					iNumImmigrants = data.lImmigrantCount[iCiv]
 					iMostImmigrantsCiv = iCiv
 			bNewYorkMost = iMostImmigrantsCiv == iNewYork
-			aHelp.append(getIcon(bNewYorkMost) + localText.getText("TXT_KEY_VICTORY_MOST_IMMIGRANTS", (gc.getPlayer(iMostImmigrantsCiv).getCivilizationShortDescriptionKey(),)))
+			aHelp.append(getIcon(bNewYorkMost) + localText.getText("TXT_KEY_VICTORY_MOST_IMMIGRANTS", (gc.getPlayer(iMostImmigrantsCiv).getCivilizationShortDescriptionKey(),
+				iNumImmigrants,gc.getPlayer(iNewYork).getCivilizationShortDescriptionKey(),data.lImmigrantCount[iNewYork])))
 		elif iGoal == 2:
-			aHelp.append("TODO ;)")
+			bBrooklynBridge = data.getWonderBuilder(iBrooklynBridge) == iNewYork
+			bStatueOfLiberty = data.getWonderBuilder(iStatueOfLiberty) == iNewYork
+			bEmpireState = data.getWonderBuilder(iEmpireStateBuilding) == iNewYork
+			bWorldTradeCenter = data.getWonderBuilder(iWorldTradeCenter) == iNewYork
+			aHelp.append(getIcon(bStatueOfLiberty) + localText.getText("TXT_KEY_BUILDING_STATUE_OF_LIBERTY", ()) + ' ' + getIcon(bBrooklynBridge) + localText.getText("TXT_KEY_BUILDING_BROOKLYN_BRIDGE", ()) + ' ')
+			aHelp.append(getIcon(bEmpireState) + localText.getText("TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING", ()) + ' ' + getIcon(bWorldTradeCenter) + localText.getText("TXT_KEY_BUILDING_WORLD_TRADE_CENTER", ()))
+		
 
 	elif iPlayer == iPennsylvania:
 		if iGoal == 0:
@@ -2189,7 +2218,8 @@ def getUHVHelp(iPlayer, iGoal):
 
 	elif iPlayer == iDelaware:
 		if iGoal == 0:
-			aHelp.append("TODO ;)")
+			bFederalism = data.lFirstDiscovered[iFederalism] == iDelaware
+			aHelp.append(getIcon(bFederalism) + localText.getText("TXT_KEY_TECH_FEDERALISM", ()))
 		elif iGoal == 1:
 			aHelp.append("TODO ;)")
 		elif iGoal == 2:
