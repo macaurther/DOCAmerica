@@ -13,6 +13,7 @@ import CvRFCEventHandler
 import RiseAndFall
 import Congresses as cong
 import Religions
+import Revolution
 
 class CvRFCEventManager(CvEventManager.CvEventManager, object):
 
@@ -67,20 +68,21 @@ class CvRFCEventManager(CvEventManager.CvEventManager, object):
             7621 : ('GoldPopupEvent', self.congEventApply7621, self.congEventBegin7621),
             7622 : ('ResurrectionEvent', self.rnfEventApply7622, self.rnfEventBegin7622),
             7623 : ('AskNoCityPopupEvent', self.congEventApply7623, self.congEventBegin7623),
-            #7624 : ('ReformationEvent', self.relEventApply7624, self.relEventBegin7624),
-			7625 : ('AskColonialCityEvent', self.rnfEventApply7625, self.rnfEventBegin7625),
-			#7626 : ('OrthodoxyEvent', self.relEventApply7626, self.relEventBegin7626),
-			#7627 : ('PersecutionEvent', self.rnfEventApply7627, self.rnfEventBegin7627),
-			7628 : ('RespawnPopupEvent', self.rnfEventApply7628, self.rnfEventBegin7628),
-			7629 : ('ByzantineBriberyEvent', self.rnfEventApply7629, self.rnfEventBegin7629),
-			7630 : ('CongressClaimCityEvent', self.congEventApply7630, self.congEventBegin7630),
-			7631 : ('CongressVoteCityEvent', self.congEventApply7631, self.congEventBegin7631),
+            #7624 : ('RevolutionEvent', self.revEventApply7624, self.revEventBegin7624),		#MacAurther
+		7625 : ('AskColonialCityEvent', self.rnfEventApply7625, self.rnfEventBegin7625),
+		#7626 : ('PreRevolutionEvent', self.revEventApply7626, self.revEventBegin7626),	#MacAurther
+		#7627 : ('PersecutionEvent', self.rnfEventApply7627, self.rnfEventBegin7627),
+		7628 : ('RespawnPopupEvent', self.rnfEventApply7628, self.rnfEventBegin7628),
+		7629 : ('ByzantineBriberyEvent', self.rnfEventApply7629, self.rnfEventBegin7629),
+		7630 : ('CongressClaimCityEvent', self.congEventApply7630, self.congEventBegin7630),
+		7631 : ('CongressVoteCityEvent', self.congEventApply7631, self.congEventBegin7631),
         }
 
         # --> INSERT EVENT HANDLER INITIALIZATION HERE <--
         CvRFCEventHandler.CvRFCEventHandler(self)
         self.rnf = RiseAndFall.RiseAndFall()
         self.rel = Religions.Religions()
+		#self.rev = Revolution.Revolution()
         
 
     def addEventHandler(self, eventType, eventHandler):
@@ -254,23 +256,23 @@ class CvRFCEventManager(CvEventManager.CvEventManager, object):
             #self.cong.eventApply7623(popupReturn)
 	    pass
 
-    def relEventBegin7624(self):
+    def revEventBegin7624(self):
             pass
        
-    def relEventApply7624(self, playerID, netUserData, popupReturn):
-            self.rel.eventApply7624(popupReturn)
+    def revEventApply7624(self, playerID, netUserData, popupReturn):
+            self.rev.eventApply7624(popupReturn)
 
     def rnfEventApply7625(self, playerID, netUserData, popupReturn):
 	    self.rnf.eventApply7625(popupReturn)
 
     def rnfEventBegin7625(self):
 	    pass
-	   
-    def relEventApply7626(self, playerID, netUserData, popupReturn):
-	    self.rel.eventApply7626(popupReturn)
+
+    def revEventApply7626(self, playerID, netUserData, popupReturn):
+	    self.rev.eventApply7626(popupReturn)
 	    
-    def relEventBegin7626(self):
-            pass
+    def revEventBegin7626(self):
+		pass
 	    
 #    def rnfEventApply7627(self, playerID, netUserData, popupReturn):
 #	    self.rnf.eventApply7627(popupReturn)

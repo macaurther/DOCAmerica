@@ -17856,6 +17856,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=53
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -19236,6 +19237,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=60
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -20659,6 +20661,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=71
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -22422,6 +22425,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=74
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -28343,13 +28347,6 @@ BeginPlot
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
-# MacAurther TODO: For some reason, more than one Mexican city crashes to desktop with no error message
-#	BeginCity
-#		CityOwner=0, (King of Spain)
-#		CityName=Caliacan
-#		CityPopulation=1
-#		Player0Culture=2, (King of Spain)
-#	EndCity
 	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
@@ -30324,13 +30321,6 @@ BeginPlot
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
-# MacAurther TODO: For some reason, more than one Mexican city crashes to desktop with no error message
-#	BeginCity
-#		CityOwner=0, (King of Spain)
-#		CityName=Camino Real
-#		CityPopulation=1
-#		Player0Culture=2, (King of Spain)
-#	EndCity
 	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
@@ -34877,13 +34867,6 @@ BeginPlot
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
-# MacAurther TODO: For some reason, more than one Mexican city crashes to desktop with no error message
-#	BeginCity
-#		CityOwner=0, (King of Spain)
-#		CityName=Monterrey
-#		CityPopulation=1
-#		Player0Culture=2, (King of Spain)
-#	EndCity
 	TeamReveal=0,
 	Player0Culture=2, (King of Spain)
 EndPlot
@@ -53746,7 +53729,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=120,y=30
-	BonusType=BONUS_GEMS_EMERALDS
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -55307,7 +55289,6 @@ BeginPlot
 	x=123,y=31
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_GEMS_SAPPHIRES
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -55320,7 +55301,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=123,y=33
-	BonusType=BONUS_GEMS_RUBIES
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -58683,6 +58663,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=130,y=38
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -59271,6 +59252,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=131,y=57
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -62432,6 +62414,7 @@ BeginPlot
 	x=138,y=59
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -62876,7 +62859,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=139,y=59
-	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -63297,6 +63279,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=140,y=58
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=5
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -63343,6 +63326,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=140,y=66
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -64647,6 +64631,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=143,y=69
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -65509,6 +65494,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=145,y=73
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -69206,10 +69192,4 @@ BeginSign
 	plotY=2
 	playerType=0, (King of Spain)
 	caption=The Far-Off lands of Europe
-EndSign
-BeginSign
-	plotX=0
-	plotY=0
-	playerType=0, (King of Spain)
-	caption=(0,0) DO NOT BLOCK!
 EndSign

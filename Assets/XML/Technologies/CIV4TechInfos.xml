@@ -1729,6 +1729,10 @@
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_RIGHTS_OF_MAN</PrereqTech>
+				<PrereqTech>TECH_SOCIAL_CONTRACT</PrereqTech>
+			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_HERITAGE</PrereqTech>
 				<PrereqTech>TECH_CIVIL_LIBERTIES</PrereqTech>

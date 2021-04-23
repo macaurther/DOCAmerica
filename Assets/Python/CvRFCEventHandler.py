@@ -30,6 +30,7 @@ import Civilizations
 import AIParameters
 import GreatPeople as gp
 import Immigration
+import Revolution
 
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
@@ -96,6 +97,7 @@ class CvRFCEventHandler:
 		self.com = Communications.Communications()
 		self.corp = Companies.Companies()
 		self.imm = Immigration.Immigration()
+		self.rev = Revolution.Revolution()
 
 		self.improvementTileChanges = [] #FoB - kludge to ensure native units don't move
 
@@ -518,7 +520,9 @@ class CvRFCEventHandler:
 		sta.checkTurn(iGameTurn)
 		cong.checkTurn(iGameTurn)
 		
+		# MacAurther
 		self.imm.checkTurn(iGameTurn)
+		self.rev.checkTurn(iGameTurn)
 		
 		if iGameTurn % 10 == 0:
 			dc.checkTurn(iGameTurn)

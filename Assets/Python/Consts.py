@@ -50,22 +50,25 @@ iCivVirginia, iCivIndependent, iCivIndependent2, iCivNative, iCivNative2, iCivBa
 
 #for Congresses and Victory
 lCivGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
+		[iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia]] #American
 
 lCivStabilityGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
+		[iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia]] #American
 		
 lTechGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
+		[iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia]] #American
 
 
 lCivBioOldWorld = [iSpain, iFrance, iEngland, iAmerica, iCanada, iIndependent, iIndependent2]
-lCivBioNewWorld = [iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia, 
+lCivBioNewWorld = [iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia, 
 		iNative, iNative2, iBarbarian]
+
+lCivStates = [iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, iNewJersey,
+		iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia, ]
 
 
 #for Victory and the handler
@@ -498,13 +501,16 @@ iGreatSpy : iFemaleGreatSpy,
 }
 
 # initialise bonuses variables to bonuses IDs from WBS
-iNumBonuses = 54
+iNumBonuses = 74
 (iAluminium, iAmber, iCamel, iCitris, iCoal, iCopper, iDates, iHorse, iIron, iMarble, 
 iOil, iStone, iUranium, iBanana, iClam, iCorn, iCow, iCrab, iDeer, iFish, 
 iPig, iPotato, iRice, iSheep, iWheat, iCocoa, iCoffee, iCotton, iDye, 
 iFur, iGems, iGold, iIncense, iIvory, iJade, iMillet, iObsidian, iOlives, iOpium, iPearls, 
-iRareEarths, iRubber, iSalt, iSilk, iSilver, iSpices, iSugar, iTea, iTobacco, iWine, 
-iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
+iRareEarths, iRubber, iSalt, iSilk, iSilver, iSpices, iSugar, iTea, iTimber, iTobacco,
+iWine, iWhales, iSoccer, iSongs, iMovies, iDyeCochineal, iDyeMurex, iDyeHenna, iSpicesCinnamon, iSpicesNutmeg,
+iSpicesSaffron, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds, iGemsRubies, iGemsSapphires, iGemsEmeralds, iSheepLlama, iSheepBlack, iCowBrown,
+iPigFurry, iIvoryAfrican, iCitrusOranges, iCrabShrimp) = range(iNumBonuses)
+
 # Buildings
 
 iNumBuildings = 178

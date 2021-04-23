@@ -2109,6 +2109,50 @@
 			</FeatureTerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
+			<Type>BONUS_TIMBER</Type>
+			<Description>TXT_KEY_BONUS_TIMBER</Description>
+			<Civilopedia>TXT_KEY_BONUS_TIMBER_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_TIMBER</ArtDefineTag>
+			<TechCityTrade>TECH_TRIANGULAR_TRADE</TechCityTrade>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>2</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+			</YieldChanges>
+			<iAITradeModifier>10</iAITradeModifier>
+			<iConstAppearance>100</iConstAppearance>
+			<iMinAreaSize>3</iMinAreaSize>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<Rands>
+				<iRandApp1>10</iRandApp1>
+				<iRandApp2>10</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<iPlayer>100</iPlayer>
+			<iTilesPer>128</iTilesPer>
+			<iUnique>7</iUnique>
+			<bHills>1</bHills>
+			<bFlatlands>1</bFlatlands>
+			<bNoRiverSide>1</bNoRiverSide>
+			<TerrainBooleans>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+			</TerrainBooleans>
+		</BonusInfo>
+		<BonusInfo>
 			<Type>BONUS_TOBACCO</Type>
 			<Description>TXT_KEY_BONUS_TOBACCO</Description>
 			<Civilopedia>TXT_KEY_BONUS_TOBACCO_PEDIA</Civilopedia>
@@ -2300,7 +2344,7 @@
 				<iRandApp4>0</iRandApp4>
 			</Rands>
 		</BonusInfo>
-		<BonusInfo>
+		<!--<BonusInfo>
 			<Type>BONUS_DYE_COCHINEAL</Type>
 			<Description>TXT_KEY_BONUS_DYE_COCHINEAL</Description>
 			<Civilopedia>TXT_KEY_BONUS_DYE_COCHINEAL_PEDIA</Civilopedia>
@@ -2641,6 +2685,6 @@
 				<iRandApp4>0</iRandApp4>
 			</Rands>
 			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
+		</BonusInfo>-->
 	</BonusInfos>
 </Civ4BonusInfos>

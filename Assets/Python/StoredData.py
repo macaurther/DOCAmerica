@@ -202,6 +202,10 @@ class GameData:
 		
 		self.lImmigrantCount = [0] * iNumPlayers
 		
+		# Revolution
+		
+		self.iRevolutionTurn = 0
+		
 		# AI Wars
 		
 		self.iNextTurnAIWar = -1

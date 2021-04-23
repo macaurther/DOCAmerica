@@ -358,13 +358,23 @@
 			<FontButtonIndex>37</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_TIMBER</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.25</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Rubber/silk.nif</NIF>
+			<KFM>Art/Terrain/Resources/Rubber/silk.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Rubber/silk.nif</SHADERNIF>
+			<Button>,Art/Interface/Buttons/WorldBuilder/Spices.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,14</Button>
+			<FontButtonIndex>38</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_TOBACCO</Type>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1.6</fInterfaceScale>
 			<NIF>Art/Terrain/Resources/Tobacco/tobacco.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/WorldBuilder/Spices.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,2,14</Button>
-			<FontButtonIndex>38</FontButtonIndex>
+			<FontButtonIndex>39</FontButtonIndex>
 		</BonusArtInfo>
 	 	<BonusArtInfo>
 			<Type>ART_DEF_BONUS_PEARL</Type>
@@ -373,7 +383,7 @@
 			<NIF>Art/Terrain/Resources/Pearl/clam.nif</NIF>
 			<KFM>Art/Terrain/Resources/Pearl/clam.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Pearl.dds</Button>
-			<FontButtonIndex>39</FontButtonIndex>
+			<FontButtonIndex>40</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_CAMEL</Type>
@@ -383,7 +393,7 @@
 			<KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
 			<SHADERNIF>Art/Terrain/Resources/Camel/Camel.nif</SHADERNIF>
 			<Button>Art/Terrain/Resources/Camel/Camel_button.dds</Button>
-			<FontButtonIndex>40</FontButtonIndex>
+			<FontButtonIndex>41</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_OLIVES</Type>
@@ -392,7 +402,7 @@
 			<NIF>Art/Terrain/Resources/Olives/olives.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/WorldBuilder/Spices.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,1,14</Button>
-			<FontButtonIndex>41</FontButtonIndex>
+			<FontButtonIndex>42</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_POTATO</Type>
@@ -401,7 +411,7 @@
 			<NIF>Art/Terrain/Resources/Potato/Wheat.nif</NIF>
 			<KFM>Art/Terrain/Resources/Potato/Wheat.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Potato.dds</Button>
-			<FontButtonIndex>42</FontButtonIndex>
+			<FontButtonIndex>43</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_COCOA</Type>
@@ -410,7 +420,7 @@
 			<NIF>Art/Terrain/Resources/Cocoa/spices.nif</NIF>
 			<KFM>Art/Terrain/Resources/Cocoa/spices.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Cocoa.dds</Button>
-			<FontButtonIndex>43</FontButtonIndex>
+			<FontButtonIndex>44</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_OPIUM</Type>
@@ -419,7 +429,7 @@
 			<NIF>Art/Terrain/Resources/Opium/wheat.nif</NIF>
 			<KFM>Art/Terrain/Resources/Opium/wheat.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Opium.dds</Button>
-			<FontButtonIndex>44</FontButtonIndex>
+			<FontButtonIndex>45</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_RUBBER</Type>
@@ -429,7 +439,7 @@
 			<KFM>Art/Terrain/Resources/Rubber/silk.kfm</KFM>
 			<SHADERNIF>Art/Terrain/Resources/Rubber/silk.nif</SHADERNIF>
 			<Button>Art/Interface/Buttons/Resources/Rubber.dds</Button>
-			<FontButtonIndex>45</FontButtonIndex>
+			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_SALT</Type>
@@ -438,7 +448,7 @@
 			<NIF>Art/Terrain/Resources/Salt/Marble.nif</NIF>
 			<KFM>Art/Terrain/Resources/Salt/Marble.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Salt.dds</Button>
-			<FontButtonIndex>46</FontButtonIndex>
+			<FontButtonIndex>47</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_JADE</Type>
@@ -447,7 +457,7 @@
 			<NIF>Art/Terrain/Resources/Jade/Stone.nif</NIF>
 			<KFM>Art/Terrain/Resources/Jade/Stone.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Jade.dds</Button>
-			<FontButtonIndex>47</FontButtonIndex>
+			<FontButtonIndex>48</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_OBSIDIAN</Type>
@@ -457,7 +467,7 @@
 			<KFM>Art/Terrain/Resources/Obsidian/Gems.kfm</KFM>
 			<SHADERNIF>Art/Terrain/Resources/Obsidian/Gems.nif</SHADERNIF>
 			<Button>Art/Interface/Buttons/Resources/Obsidian.dds</Button>
-			<FontButtonIndex>48</FontButtonIndex>
+			<FontButtonIndex>49</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_RARE_EARTHS</Type>
@@ -466,7 +476,7 @@
 			<NIF>Art/Terrain/Resources/Rare Earths/Aluminum.nif</NIF>
 			<KFM>Art/Terrain/Resources/Rare Earths/Aluminum.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/RareEarths.dds</Button>
-			<FontButtonIndex>49</FontButtonIndex>
+			<FontButtonIndex>50</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_MILLET</Type>
@@ -475,7 +485,7 @@
 			<NIF>Art/Terrain/Resources/Millet/Corn.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Resources/Millet.dds</Button>
-			<FontButtonIndex>50</FontButtonIndex>
+			<FontButtonIndex>51</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_AMBER</Type>
@@ -484,7 +494,7 @@
 			<NIF>Art/Terrain/Resources/Amber/Gems.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Resources/Amber.dds</Button>
-			<FontButtonIndex>51</FontButtonIndex>
+			<FontButtonIndex>52</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_DYE_COCHINEAL</Type>
@@ -644,7 +654,7 @@
 			<NIF>Art/Terrain/Resources/Citrus/Lemqes.nif</NIF>
 			<KFM>Art/Terrain/Resources/Citrus/Lemqes.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Citrus.dds</Button>
-			<FontButtonIndex>52</FontButtonIndex>
+			<FontButtonIndex>53</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_DATES</Type>
@@ -653,7 +663,7 @@
 			<NIF>Art/Terrain/Resources/Dates/date.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Resources/Dates.dds</Button>
-			<FontButtonIndex>53</FontButtonIndex>
+			<FontButtonIndex>54</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_CITRUS_ORANGES</Type>
@@ -662,7 +672,7 @@
 			<NIF>Art/Terrain/Resources/Oranges/Lemqes.nif</NIF>
 			<KFM>Art/Terrain/Resources/Oranges/Lemqes.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Oranges.dds</Button>
-			<FontButtonIndex>52</FontButtonIndex>
+			<FontButtonIndex>53</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_SHEEP_BLACK</Type>

@@ -1526,7 +1526,7 @@ class RiseAndFall:
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pVirginia.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iMassachusetts:
@@ -1534,7 +1534,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pMassachusetts.setLastStateReligion(iPuritanism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNewHampshire:
@@ -1542,7 +1542,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pNewHampshire.setLastStateReligion(iPuritanism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iMaryland:
@@ -1551,7 +1551,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 1)
 			pMaryland.setLastStateReligion(iCatholicism)
 			utils.createMissionaries(iCiv, 1)
@@ -1566,7 +1566,7 @@ class RiseAndFall:
 			utils.makeUnit(iMusketman, iCiv, tPlot, 1)
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pRhodeIsland.setLastStateReligion(iBaptism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNorthCarolina:
@@ -1575,7 +1575,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pNorthCarolina.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iSouthCarolina:
@@ -1584,7 +1584,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pSouthCarolina.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iNewJersey:
@@ -1600,7 +1600,7 @@ class RiseAndFall:
 			utils.makeUnit(iExplorer, iCiv, tPlot, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pNewYork.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iPennsylvania:
@@ -1615,7 +1615,7 @@ class RiseAndFall:
 			utils.makeUnit(iMusketman, iCiv, tPlot, 1)
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pDelaware.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iGeorgia:
@@ -1624,7 +1624,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pGeorgia.setLastStateReligion(iMethodism)
 			utils.createMissionaries(iCiv, 2)
 
