@@ -190,6 +190,18 @@ class Companies:
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iCustomsHouse)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iBank)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iTradingCompanyBuilding)): iValue += 2
+		
+		elif iCompany == iFurTrade:
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iTradingPost)): iValue += 2
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1
+		
+		elif iCompany == iTimberIndustry:
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iLumberMill)): iValue += 2
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1
+		
+		elif iCompany == iTobaccoIndustry:
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iEstate)): iValue += 2
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1
 
 		elif iCompany == iCerealIndustry:
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iGranary)): iValue += 1

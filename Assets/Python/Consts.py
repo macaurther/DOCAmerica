@@ -433,8 +433,9 @@ lCatholicStart = [iSpain, iFrance]
 lEpiscopalianStart = [iEngland, iVirginia, iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iDelaware, iCanada]
 
 # corporations
-iNumCorporations = 9
-(iSilkRoute, iTradingCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry, iComputerIndustry) = range(iNumCorporations)
+iNumCorporations = 12
+(iSilkRoute, iTradingCompany, iFurTrade, iTimberIndustry, iTobaccoIndustry, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry,
+iLuxuryIndustry, iComputerIndustry) = range(iNumCorporations)
 
 # initialise tech variables to unit indices from XML
 
@@ -513,14 +514,14 @@ iPigFurry, iIvoryAfrican, iCitrusOranges, iCrabShrimp) = range(iNumBonuses)
 
 # Buildings
 
-iNumBuildings = 178
+iNumBuildings = 179
 (iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument, iTotemPole, iWalls, iStable, iLibrary,
 iHarbor, iTheatre, iArena, iLighthouse, iCastleHill, iWeaver, iMarket, iJail, iForge, iPharmacy, 
 iPostOffice, iWharf, iCrabbery, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity, iCivicSquare, iCommon, 
 iAbbey, iArmory, iArsenal, iButchery, iSchoolhouse, iCitadel, iCollege, iFortress, iLumberMill, iMagazine, 
 iNewspaper, iPrintingPress, iSaloon, iShipyard, iSlaughterhouse, iStockade, iTavern, iTextileMill, iWell, iWaystation, 
 iSewer, iStarFort, iEstate, iLowcountryPlantation, iBorough, 
-iMilldamPlantation, iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iHouseOfBurgesses, iFactory,
+iTradingPost, iMilldamPlantation, iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iHouseOfBurgesses, iFactory,
 iDistillery, iVinairgrery, iPark, iGarden, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndustrialPark, iCinema, 
 iHospital, iSupermarket, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 
 iBombShelters, iHydroPlant, iSecurityBureau, iStadium, iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, iRecyclingCenter, iLogisticsCenter, 

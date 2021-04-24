@@ -396,6 +396,12 @@
 			<SeaPlotYieldChanges>
 				<iYield>1</iYield>
 			</SeaPlotYieldChanges>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_TIMBER</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -843,6 +849,12 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_TIMBER</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -1742,6 +1754,12 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_TIMBER</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -1789,6 +1807,12 @@
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_WALLS</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_TIMBER</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -1815,6 +1839,12 @@
 			<CommerceModifiers>
 				<iCommerce>10</iCommerce>
 			</CommerceModifiers>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_TIMBER</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<ConstructSound>AS2D_BUILD_THEATRE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -1889,6 +1919,46 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_TRADING_POST</BuildingClass>
+			<Type>BUILDING_TRADING_POST</Type>
+			<Description>TXT_KEY_BUILDING_TRADING_POST</Description>
+			<Civilopedia>TXT_KEY_BUILDING_TRADING_POST_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_TRADING_POST_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_VIKING_TRADING_POST</ArtDefineTag>
+			<PrereqTech>TECH_COMPANIES</PrereqTech>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>60</iConquestProb>
+			<iAsset>3</iAsset>
+			<iTradeRoutes>1</iTradeRoutes>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
+			<BonusYieldChanges>
+				<BonusYieldChange>
+					<BonusType>BONUS_FUR</BonusType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</BonusYieldChange>
+			</BonusYieldChanges>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_FUR</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -2018,7 +2088,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_SOUTH_CAROLINIAN_LOWCOUNTRY_PLANTATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SOUTH_CAROLINIAN_LOWCOUNTRY_PLANTATION_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_ESTATE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_BRAZILIAN_FAZENDA</ArtDefineTag>
 			<FreeStartEra>ERA_ATOMIC</FreeStartEra>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<iCost>120</iCost>
@@ -2079,7 +2149,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_NEW_YORK_BOROUGH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_NEW_YORK_BOROUGH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_ESTATE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_SALON</ArtDefineTag>
 			<FreeStartEra>ERA_ATOMIC</FreeStartEra>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<iCost>120</iCost>
@@ -2128,7 +2198,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_GEORGIAN_MILLDAM_PLANTATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GEORGIAN_MILLDAM_PLANTATION_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_ESTATE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_MOORISH_NORIA</ArtDefineTag>
 			<FreeStartEra>ERA_ATOMIC</FreeStartEra>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<iCost>120</iCost>

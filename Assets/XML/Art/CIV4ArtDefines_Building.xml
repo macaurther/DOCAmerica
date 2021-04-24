@@ -3541,9 +3541,9 @@
 			<Type>ART_DEF_BUILDING_ARSENAL</Type>
 			<LSystem>LSYSTEM_3x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.7</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fScale>1</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Castle/Castle.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,2,1</Button>
 		</BuildingArtInfo>
@@ -3551,9 +3551,9 @@
 			<Type>ART_DEF_BUILDING_BUTCHERY</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.2</fScale>
+			<fScale>1.0</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Distillery/brew.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,6,1</Button>
 		</BuildingArtInfo>
@@ -3561,9 +3561,9 @@
 			<Type>ART_DEF_BUILDING_SCHOOLHOUSE</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.2</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fScale>0.3</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Estate/ts_d_gov.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,10</Button>
 		</BuildingArtInfo>
@@ -3573,7 +3573,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>2.5</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Citadel/Citadel.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,8,5</Button>
 		</BuildingArtInfo>
@@ -3582,8 +3582,8 @@
 			<LSystem>LSYSTEM_2x1</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
-			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fInterfaceScale>1</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Courthouse/Courthouse.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,10</Button>
 		</BuildingArtInfo>
@@ -3591,9 +3591,9 @@
 			<Type>ART_DEF_BUILDING_FORTRESS</Type>
 			<LSystem>LSYSTEM_FORTRESS</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
+			<fScale>13.0</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Wonders/Red_Fort/agra_fort.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,10</Button>
 		</BuildingArtInfo>
@@ -3603,7 +3603,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Stable/Stable.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,7</Button>
 		</BuildingArtInfo>
@@ -3611,9 +3611,9 @@
 			<Type>ART_DEF_BUILDING_MAGAZINE</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.7</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fScale>1</fScale>
+			<fInterfaceScale>1</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Alchemist/caravan.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,1,2</Button>
 		</BuildingArtInfo>
@@ -3633,7 +3633,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>2.0</fScale>
 			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Courthouse/Courthouse.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,6</Button>
 		</BuildingArtInfo>
@@ -3643,7 +3643,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>0.7</fScale>
 			<fInterfaceScale>0.55</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Stable/Stable.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,7,9</Button>
 		</BuildingArtInfo>
@@ -3651,9 +3651,9 @@
 			<Type>ART_DEF_BUILDING_SHIPYARD</Type>
 			<LSystem>LSYSTEM_COAST</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.5</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Shipwright/Shipwright.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,9</Button>
 		</BuildingArtInfo>
@@ -3663,7 +3663,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Smokehouse/Smokehouse (Medieval).nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,5,2</Button>
 		</BuildingArtInfo>
@@ -3681,9 +3681,9 @@
 			<Type>ART_DEF_BUILDING_TAVERN</Type>
 			<LSystem>LSYSTEM_2x1</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.9</fScale>
-			<fInterfaceScale>0.55</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fScale>1.00</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Warehouse/NavalManufacture.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,2,5</Button>
 		</BuildingArtInfo>
@@ -3692,8 +3692,8 @@
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.2</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<fInterfaceScale>1</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/AbbeyMillsPump/AbbeyMillsPump.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,1,7</Button>
 		</BuildingArtInfo>
@@ -3701,9 +3701,9 @@
 			<Type>ART_DEF_BUILDING_WELL</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>0.3</fScale>
+			<fScale>0.4</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Thermae/bad_giebel.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,4,15</Button>
 		</BuildingArtInfo>
@@ -3713,7 +3713,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<NIF>Art/Structures/Buildings/Stable/Stable.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/colonization_atlas_buildings.dds,8,8</Button>
 		</BuildingArtInfo>
@@ -3723,7 +3723,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>2</fScale>
 			<fInterfaceScale>0.55</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/SilverTreeFountain/Silver_Tree.nif</NIF>
+			<NIF>Art/Structures/Wonders/AmberRoom/Sheremetevo01.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,1,1</Button>
 		</BuildingArtInfo>
@@ -3733,7 +3733,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Blue_Mosque/bluemosque.nif</NIF>
+			<NIF>Art/Structures/Wonders/Bourse/konink.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,2,1</Button>
 		</BuildingArtInfo>
@@ -3743,7 +3743,7 @@
 			<bAnimated>1</bAnimated>
 			<fScale>2.2</fScale>
 			<fInterfaceScale>0.36</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/GreatLighthouse/GreatLighthouse.nif</NIF>
+			<NIF>Art/Structures/Wonders/BellRockLighthouse/lighthouse.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,3,1</Button>
 		</BuildingArtInfo>
@@ -3763,7 +3763,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.1</fScale>
 			<fInterfaceScale>0.55</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Brandenburg_Gate/brandenburg_gate.nif</NIF>
+			<NIF>Art/Structures/Wonders/BletchleyPark/Bletch20.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,5,1</Button>
 		</BuildingArtInfo>
@@ -3771,9 +3771,9 @@
 			<Type>ART_DEF_BUILDING_SLATER_MILL</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>1.4</fScale>
-			<fInterfaceScale>0.7</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/CrystalPalace/CrystalPalace4.nif</NIF>
+			<fScale>7</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/OldSynagogue/Kazimierz.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,6,1</Button>
 		</BuildingArtInfo>
@@ -3781,9 +3781,9 @@
 			<Type>ART_DEF_BUILDING_RAINBOW_ROW</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
-			<fScale>2.55</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/ImageOfTheWorldSquare/imamreza.nif</NIF>
+			<fScale>1</fScale>
+			<fInterfaceScale>0.37</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Escorial/Palacio.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,7,1</Button>
 		</BuildingArtInfo>
@@ -3803,7 +3803,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Alhambra/alhambra.nif</NIF>
+			<NIF>Art/Structures/Buildings/Hermitage/Hermitage.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,1,2</Button>
 		</BuildingArtInfo>
@@ -3813,7 +3813,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.4</fScale>
 			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/PorcelainTower/nanjing.nif</NIF>
+			<NIF>Art/Structures/Buildings/GreatLibrary/GreatLibrary.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,2,2</Button>
 		</BuildingArtInfo>
@@ -3823,7 +3823,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>2.25</fScale>
 			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/AmberRoom/Sheremetevo01.nif</NIF>
+			<NIF>Art/Structures/Buildings/GreatLibrary/GreatLibrary.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,3,2</Button>
 		</BuildingArtInfo>
@@ -3833,7 +3833,7 @@
 			<bAnimated>0</bAnimated>
 			<fScale>1.8</fScale>
 			<fInterfaceScale>0.44</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Halicarnassus/Halicarnassus.nif</NIF>
+			<NIF>Art/Structures/Buildings/GreatLibrary/GreatLibrary.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/DOCUSA_Wonders.dds,4,2</Button>
 		</BuildingArtInfo>
