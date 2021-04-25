@@ -2114,7 +2114,7 @@
 			<Civilopedia>TXT_KEY_BONUS_TIMBER_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_TIMBER</ArtDefineTag>
-			<TechCityTrade>TECH_TRIANGULAR_TRADE</TechCityTrade>
+			<TechCityTrade>TECH_SAILING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>2</iYieldChange>
