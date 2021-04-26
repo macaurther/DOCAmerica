@@ -74,28 +74,12 @@
 		<Spanish>Al combinar algunos principios mejorar&#225;s o perjudicar&#225;s la estabilidad de tu imperio.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_10</Tag>
-		<English>You can't see the current year until you discover calendar.</English>
-		<French>Vous ne pouvez pas conna&#238;tre l'ann&#233;e actuelle avant d'avoir d&#233;couvert le calendrier.</French>
-		<German>Das aktuelle Spieljahr ist bis zur Entdeckung des "Kalenders" nicht sichtbar.</German>
-		<Italian>Non puoi sapere in che anno ti trovi fino a quando non scopri il calendario.</Italian>
-		<Spanish>No podr&#225;s ver el a&#241;o actual hasta que descubras el calendario.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_11</Tag>
 		<English>Remember that you can always take control of a newborn civ if you don't like the civilization you started with. You can also use this feature to play from 3000BC even when you want to pick a civ that starts later on.</English>
 		<French>N'oubliez pas que vous pouvez toujours prendre le contr&#244;le d'une civilisation &#233;mergente, si la civilisation avec laquelle vous avez commenc&#233; ne vous pla&#238;t pas. Vous pouvez aussi utiliser cette option pour jouer &#224; partir de 3000 av. J.-C., m&#234;me si vous voulez choisir une civilisation qui commence plus tard.</French>
 		<German>Beachten Sie, dass Sie jederzeit eine neu entstandene Zivilisation &#252;bernehmen k&#246;nnen, wenn Sie mit der Zivilisation, die Sie zuerst gew&#228;hlt haben, nicht zufrieden sind. Sie k&#246;nnen diese M&#246;glichkeit auch nutzen, um bereits ab dem Jahr 3000 v. Chr. zu spielen, obwohl Sie sich eigentlich eine Zivilisation ausgesucht haben, die erst sp&#228;ter im Spiel startet.</German>
 		<Italian>Ricorda che puoi sempre assumere il controllo di una civilt&#224; appena sorta, se non ti piace quella con cui hai iniziato. Inoltre puoi usare questa caratteristica per cominciare a giocare dal 3000 a.C. anche se vuoi scegliere una civilt&#224; che comincia pi&#249; tardi.</Italian>
 		<Spanish>Recuerda que siempre puedes asumir el control de una civilizaci&#243;n reciente si no te gusta la civilizaci&#243;n con la que has empezado. Tambi&#233;n puedes aprovechar esta opci&#243;n para jugar desde el a&#241;o 3000 a. C. si deseas jugar con una civilizaci&#243;n que empiece m&#225;s tarde.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_12</Tag>
-		<English>Combining Totalitarianism and Constitution isn't a good idea.</English>
-		<French>Il est d&#233;conseill&#233; de donner une constitution &#224; un &#201;tat totalitaire.</French>
-		<German>Die Kombination von Totalitarismus und Verfassung ist keine gute Idee.</German>
-		<Italian>Combinare lo stato di polizia con la libert&#224; di parola non &#232; una buona idea.</Italian>
-		<Spanish>Combinar Estado policial y Libertad de expresi&#243;n no es una buena idea.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_13</Tag>
@@ -322,22 +306,6 @@
 		<Spanish>Las civilizaciones rivales que lleva el ordenador plantean una amenaza mucho m&#225;s seria desde el mar. Mayores flotas, invasiones anfibias... ¡Que no te pillen desprevenido! Los l&#226;deres m&#225;s belicosos pueden ser mucho m&#225;s viles con sus planes de ataque, ya que han aprendido a pensar m&#225;s all&#225; de la espada.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_1</Tag>
-		<English>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</English>
-		<French>Lorsqu'ils sont contr&#244;l&#233;s par l'IA, les Mongols re&#231;oivent des arm&#233;es suppl&#233;mentaires pour attaquer la Russie et le Moyen-Orient. Soyez pr&#234;t !</French>
-		<German>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</German>
-		<Italian>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</Italian>
-		<Spanish>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_2</Tag>
-		<English>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</English>
-		<French>Dans Dawn of Civilizations, plusieurs civilisations, comme Byzance, l'Italie et la Tha&#239;lande, naissent seulement lorsque certaines conditions sont remplies. Elles n'apparaissent donc pas dans toutes les parties.</French>
-		<German>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</German>
-		<Italian>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</Italian>
-		<Spanish>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_3</Tag>
 		<English>Several AI civilizations flip larger areas on spawn to help them along.</English>
 		<French>Plusieurs civilisations contr&#244;l&#233;es par l'IA re&#231;oivent un plus grand territoire &#224; leur naissance afin de les aider.</French>
@@ -352,14 +320,6 @@
 		<German>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</German>
 		<Italian>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</Italian>
 		<Spanish>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_5</Tag>
-		<English>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</English>
-		<French>Si vous contr&#244;lez une civilisation d'Europe de l'Ouest, la construction d'une compagnie commerciale vous permettra de prendre de l'expansion en Afrique ou en Asie.</French>
-		<German>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</German>
-		<Italian>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</Italian>
-		<Spanish>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_6</Tag>
@@ -403,19 +363,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_11</Tag>
-		<English>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</English>
-		<French>Les religions apparent&#233;es, comme l'hindouisme et le bouddhisme ou encore le confucianisme et le tao&#239;sme, ne cr&#233;ent pas de malheur si l'une d'elles est votre religion d'&#201;tat.</French>
-		<German>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</German>
-		<Italian>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</Italian>
-		<Spanish>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</Spanish>
+		<English>Protestant religions like Baptism and Methodism or Episcopalianism and Puritanism don't create unhappiness if one of them is your state religion.</English>
+		<French>Protestant religions like Baptism and Methodism or Episcopalianism and Puritanism don't create unhappiness if one of them is your state religion.</French>
+		<German>Protestant religions like Baptism and Methodism or Episcopalianism and Puritanism don't create unhappiness if one of them is your state religion.</German>
+		<Italian>Protestant religions like Baptism and Methodism or Episcopalianism and Puritanism don't create unhappiness if one of them is your state religion.</Italian>
+		<Spanish>Protestant religions like Baptism and Methodism or Episcopalianism and Puritanism don't create unhappiness if one of them is your state religion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_12</Tag>
-		<English>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</English>
-		<French>Les religions apparent&#233;es, comme l'hindouisme et le bouddhisme ou encore le confucianisme et le tao&#239;sme, cr&#233;ent des p&#233;nalit&#233;s diplomatiques moindres.</French>
-		<German>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</German>
-		<Italian>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</Italian>
-		<Spanish>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</Spanish>
+		<English>Protestant religions like aptism and Methodism or Episcopalianism and Puritanism create reduced diplomacy penalties.</English>
+		<French>Protestant religions like aptism and Methodism or Episcopalianism and Puritanism create reduced diplomacy penalties.</French>
+		<German>Protestant religions like aptism and Methodism or Episcopalianism and Puritanism create reduced diplomacy penalties.</German>
+		<Italian>Protestant religions like aptism and Methodism or Episcopalianism and Puritanism create reduced diplomacy penalties.</Italian>
+		<Spanish>Protestant religions like aptism and Methodism or Episcopalianism and Puritanism create reduced diplomacy penalties.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_13</Tag>
@@ -450,14 +410,6 @@
 		<Spanish>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_17</Tag>
-		<English>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</English>
-		<French>La premi&#232;re civilisation catholique &#224; d&#233;couvrir l'universit&#233; d&#233;clenche la R&#233;forme. Toutes les civilisations catholiques doivent alors d&#233;cider si elles se convertissent au protestantisme.</French>
-		<German>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</German>
-		<Italian>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</Italian>
-		<Spanish>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_18</Tag>
 		<English>In Dawn of Civilization, vassals do not have to give up tile control to their masters in the first ring around their cities.</English>
 		<French>Dans Dawn of Civilization, les vassaux ne c&#232;dent pas &#224; leur ma&#238;tre le contr&#244;le des cases adjacentes &#224; leurs villes.</French>
@@ -490,14 +442,6 @@
 		<Spanish>Dawn of Civilization is still actively developed. You can get the latest bugfixes and additions by using the Git version of the mod. Visit the forum under http://forums.civfanatics.com/forumdisplay.php?f=452 to find out how.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_22</Tag>
-		<English>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</English>
-		<French>Le catholicisme est fond&#233; au moment du Grand Schisme, qui se produit lorsque plus de la moiti&#233; des villes orthodoxes tombent hors du contr&#244;le des civilisations orthodoxes.</French>
-		<German>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</German>
-		<Italian>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</Italian>
-		<Spanish>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_23</Tag>
 		<English>The amount of cultures that Great Artists can generate using Great Works depends on the game era.</English>
 		<French>La quantit&#233; de culture engendr&#233;e lorsqu'un artiste illustre cr&#233;e un chef d'&#339;uvre d&#233;pend de l'&#232;re actuelle.</French>
@@ -520,22 +464,6 @@
 		<German>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</German>
 		<Italian>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</Italian>
 		<Spanish>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_26</Tag>
-		<English>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</English>
-		<French>La musique d'ambiance de l'&#232;re classique, du Moyen &#194;ge et de la Renaissance d&#233;pend de votre religion d'&#201;tat.</French>
-		<German>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</German>
-		<Italian>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</Italian>
-		<Spanish>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_27</Tag>
-		<English>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</English>
-		<French>Lorsqu'ils sont contr&#244;l&#233;s par l'IA, les Romains et les Grecs re&#231;oivent des arm&#233;es pour conqu&#233;rir la r&#233;gion m&#233;diterran&#233;enne et la M&#233;sopotamie. Soyez pr&#234;t !</French>
-		<German>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</German>
-		<Italian>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</Italian>
-		<Spanish>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_28</Tag>
@@ -570,14 +498,6 @@
 		<Spanish>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_32</Tag>
-		<English>Tribal villages are placed randomly at the beginning of the game.</English>
-		<French>Les villages tribaux sont plac&#233;s al&#233;atoirement au d&#233;but du jeu.</French>
-		<German>Tribal villages are placed randomly at the beginning of the game.</German>
-		<Italian>Tribal villages are placed randomly at the beginning of the game.</Italian>
-		<Spanish>Tribal villages are placed randomly at the beginning of the game.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_33</Tag>
 		<English>The area certain civilisations flip on spawn is not always identical to their core. Several civilizations can flip larger areas.</English>
 		<French>Lorsqu'une nouvelle civilisation appara&#238;t, la r&#233;gion qui lui revient automatiquement n'est pas forc&#233;ment identique &#224; son c&#156;ur historique. Plusieurs civilisations re&#231;oivent des r&#233;gions beaucoup plus &#233;tendues.</French>
@@ -600,22 +520,6 @@
 		<German>The stability and flip zone maps for all civilizations can be found in the Maps folder.</German>
 		<Italian>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Italian>
 		<Spanish>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_36</Tag>
-		<English>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</English>
-		<French>Les civilisations tamoule, maure, tib&#233;taine, polonaise et congolaise peuvent &#234;tre configur&#233;es de telle sorte qu'elles n'apparaissent pas &#224; chaque partie. Pour ce faire, il faut modifier le fichier XML\GlobalDefinesAlt.xml.</French>
-		<German>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</German>
-		<Italian>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</Italian>
-		<Spanish>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_37</Tag>
-		<English>The Polynesian and Harappan civilizations are intended for the human player only. You can enable them for the AI in XML\GlobalDefinesAlt.xml, however their AI will not be geared towards playing successfully or realistically.</English>
-		<French>Les civilisations polyn&#233;sienne et harapp&#233;enne sont r&#233;serv&#233;es aux joueurs humains. Vous pouvez les activer pour l'IA dans le fichier XML\GlobalDefinesAlt.xml, mais sans garantie que l'IA les incarnera de fa&#231;on r&#233;aliste ou fructueuse.</French>
-		<German>The Polynesian and Harappan civilizations are intended for the human player only. You can enable them for the AI in XML\GlobalDefinesAlt.xml, however their AI will not be geared towards playing successfully or realistically.</German>
-		<Italian>The Polynesian and Harappan civilizations are intended for the human player only. You can enable them for the AI in XML\GlobalDefinesAlt.xml, however their AI will not be geared towards playing successfully or realistically.</Italian>
-		<Spanish>The Polynesian and Harappan civilizations are intended for the human player only. You can enable them for the AI in XML\GlobalDefinesAlt.xml, however their AI will not be geared towards playing successfully or realistically.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_38</Tag>
@@ -778,28 +682,20 @@
 		<Spanish>There is a chance that an existing religion disappears when a new religion spreads to a city. Religions can also disappear when too many of them are present, especially in smaller cities.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_58</Tag>
-		<English>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</English>
-		<French>Seules les religions poss&#233;dant une tradition de pros&#233;lytisme, soit le bouddhisme, le christianisme et l'islam, peuvent &#234;tre propag&#233;es par des missionnaires dans les civilisations ayant adopt&#233; une religion d'&#201;tat diff&#233;rente.</French>
-		<German>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</German>
-		<Italian>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</Italian>
-		<Spanish>Only proselytizing religions, that is Buddhism, Christianity and Islam, can be spread by missionaries in civilizations with a different state religion.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_59</Tag>
-		<English>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</English>
-		<French>Dawn of Civilization poss&#232;de un tout nouvel arbre technologique fait de 141 technologies r&#233;parties sur 7 &#232;res.</French>
-		<German>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</German>
-		<Italian>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Italian>
-		<Spanish>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Spanish>
+		<English>Dawn of Civilization USA features a completely new tech tree, consisting of 154 technologies spread over 9 eras.</English>
+		<French>Dawn of Civilization USA poss&#232;de un tout nouvel arbre technologique fait de 154 technologies r&#233;parties sur 9 &#232;res.</French>
+		<German>Dawn of Civilization USA features a completely new tech tree, consisting of 154 technologies spread over 9 eras.</German>
+		<Italian>Dawn of Civilization USA features a completely new tech tree, consisting of 154 technologies spread over 9 eras.</Italian>
+		<Spanish>Dawn of Civilization USA features a completely new tech tree, consisting of 154 technologies spread over 9 eras.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_60</Tag>
-		<English>The last two eras are now called the Global and Digital eras.</English>
-		<French>Les deux derni&#232;res &#232;res s'appellent d&#233;sormais l'&#232;re mondiale et l'&#232;re num&#233;rique.</French>
-		<German>The last two eras are now called the Global and Digital eras.</German>
-		<Italian>The last two eras are now called the Global and Digital eras.</Italian>
-		<Spanish>The last two eras are now called the Global and Digital eras.</Spanish>
+		<English>Dawn of Civilization USA has completely new eras: the Pre-Columbian, Exploration, Colonial, Revolutionary, Expansion, Industrial, Modern, Atomic, and Information eras.</English>
+		<French>Dawn of Civilization USA has completely new eras: the Pre-Columbian, Exploration, Colonial, Revolutionary, Expansion, Industrial, Modern, Atomic, and Information eras.</French>
+		<German>Dawn of Civilization USA has completely new eras: the Pre-Columbian, Exploration, Colonial, Revolutionary, Expansion, Industrial, Modern, Atomic, and Information eras.</German>
+		<Italian>Dawn of Civilization USA has completely new eras: the Pre-Columbian, Exploration, Colonial, Revolutionary, Expansion, Industrial, Modern, Atomic, and Information eras.</Italian>
+		<Spanish>Dawn of Civilization USA has completely new eras: the Pre-Columbian, Exploration, Colonial, Revolutionary, Expansion, Industrial, Modern, Atomic, and Information eras.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_61</Tag>
@@ -976,6 +872,70 @@
 		<German>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</German>
 		<Italian>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</Italian>
 		<Spanish>You can use a settler to immediately construct buildings in a city. This will give all buildings that a new city would receive for free when founded.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_1</Tag>
+		<English>In DoC USA, most units have received a speed increase due to the much more regional map.</English>
+		<French>In DoC USA, most units have received a speed increase due to the much more regional map.</French>
+		<German>In DoC USA, most units have received a speed increase due to the much more regional map.</German>
+		<Italian>In DoC USA, most units have received a speed increase due to the much more regional map.</Italian>
+		<Spanish>In DoC USA, most units have received a speed increase due to the much more regional map.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_2</Tag>
+		<English>In DoC USA, every state’s flip areas are identical to their real-life geographic boundaries. Expect a city of yours to flip if you found it in a not-yet born State.</English>
+		<French>In DoC USA, every state’s flip areas are identical to their real-life geographic boundaries. Expect a city of yours to flip if you found it in a not-yet born State.</French>
+		<German>In DoC USA, every state’s flip areas are identical to their real-life geographic boundaries. Expect a city of yours to flip if you found it in a not-yet born State.</German>
+		<Italian>In DoC USA, every state’s flip areas are identical to their real-life geographic boundaries. Expect a city of yours to flip if you found it in a not-yet born State.</Italian>
+		<Spanish>In DoC USA, every state’s flip areas are identical to their real-life geographic boundaries. Expect a city of yours to flip if you found it in a not-yet born State.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_3</Tag>
+		<English>Marshes have been expanded in DoCUSA. There is now the base Terrain type of Marsh, which is passable and yields food, and new features that can be found on Marsh: productive Swamp and impassable Bog.</English>
+		<French>Marshes have been expanded in DoCUSA. There is now the base Terrain type of Marsh, which is passable and yields food, and new features that can be found on Marsh: productive Swamp and impassable Bog.</French>
+		<German>Marshes have been expanded in DoCUSA. There is now the base Terrain type of Marsh, which is passable and yields food, and new features that can be found on Marsh: productive Swamp and impassable Bog.</German>
+		<Italian>Marshes have been expanded in DoCUSA. There is now the base Terrain type of Marsh, which is passable and yields food, and new features that can be found on Marsh: productive Swamp and impassable Bog.</Italian>
+		<Spanish>Marshes have been expanded in DoCUSA. There is now the base Terrain type of Marsh, which is passable and yields food, and new features that can be found on Marsh: productive Swamp and impassable Bog.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_4</Tag>
+		<English>In DoC USA, cottages now have an increasing Production bonus as well as Commerce. However, this comes with a small food penalty.</English>
+		<French>In DoC USA, cottages now have an increasing Production bonus as well as Commerce. However, this comes with a small food penalty.</French>
+		<German>In DoC USA, cottages now have an increasing Production bonus as well as Commerce. However, this comes with a small food penalty.</German>
+		<Italian>In DoC USA, cottages now have an increasing Production bonus as well as Commerce. However, this comes with a small food penalty.</Italian>
+		<Spanish>In DoC USA, cottages now have an increasing Production bonus as well as Commerce. However, this comes with a small food penalty.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_5</Tag>
+		<English>In DoC USA, plantations can now be built on any flat Grassland or Plains. Pairing up Civics that boost Plantations can make a powerful Commerce engine without needing to upgrade Hamlets.</English>
+		<French>In DoC USA, plantations can now be built on any flat Grassland or Plains. Pairing up Civics that boost Plantations can make a powerful Commerce engine without needing to upgrade Hamlets.</French>
+		<German>In DoC USA, plantations can now be built on any flat Grassland or Plains. Pairing up Civics that boost Plantations can make a powerful Commerce engine without needing to upgrade Hamlets.</German>
+		<Italian>In DoC USA, plantations can now be built on any flat Grassland or Plains. Pairing up Civics that boost Plantations can make a powerful Commerce engine without needing to upgrade Hamlets.</Italian>
+		<Spanish>In DoC USA, plantations can now be built on any flat Grassland or Plains. Pairing up Civics that boost Plantations can make a powerful Commerce engine without needing to upgrade Hamlets.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_6</Tag>
+		<English>Check the Civilopedia’s entry for your State to see when you can expect scripted events, unless you’d rather be surprised!</English>
+		<French>Check the Civilopedia’s entry for your State to see when you can expect scripted events, unless you’d rather be surprised!</French>
+		<German>Check the Civilopedia’s entry for your State to see when you can expect scripted events, unless you’d rather be surprised!</German>
+		<Italian>Check the Civilopedia’s entry for your State to see when you can expect scripted events, unless you’d rather be surprised!</Italian>
+		<Spanish>Check the Civilopedia’s entry for your State to see when you can expect scripted events, unless you’d rather be surprised!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_7</Tag>
+		<English>In DoC USA, immigration has been split into Immigraiton and Migration. Immigrants will come from Europe and abroad to increase your population while bringing certain benefits based on your Civics. Migrants come from other places in America to just increase your population. Slaves and Prisoners are Immigrants obtained through specific Labor Civics.</English>
+		<French>In DoC USA, immigration has been split into Immigraiton and Migration. Immigrants will come from Europe and abroad to increase your population while bringing certain benefits based on your Civics. Migrants come from other places in America to just increase your population. Slaves and Prisoners are Immigrants obtained through specific Labor Civics.</French>
+		<German>In DoC USA, immigration has been split into Immigraiton and Migration. Immigrants will come from Europe and abroad to increase your population while bringing certain benefits based on your Civics. Migrants come from other places in America to just increase your population. Slaves and Prisoners are Immigrants obtained through specific Labor Civics.</German>
+		<Italian>In DoC USA, immigration has been split into Immigraiton and Migration. Immigrants will come from Europe and abroad to increase your population while bringing certain benefits based on your Civics. Migrants come from other places in America to just increase your population. Slaves and Prisoners are Immigrants obtained through specific Labor Civics.</Italian>
+		<Spanish>In DoC USA, immigration has been split into Immigraiton and Migration. Immigrants will come from Europe and abroad to increase your population while bringing certain benefits based on your Civics. Migrants come from other places in America to just increase your population. Slaves and Prisoners are Immigrants obtained through specific Labor Civics.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_DOC_USA_8</Tag>
+		<English>In DoC USA, Native Villages will no longer grant you free gifts, but instead represent smaller Native American tribes across the continent. If you have poor Native relations, expanding your borders over these Native Villages will result in the villagers rising up against you. If you have good Native relations, the villagers will assimilate into your closest city.</English>
+		<French>In DoC USA, Native Villages will no longer grant you free gifts, but instead represent smaller Native American tribes across the continent. If you have poor Native relations, expanding your borders over these Native Villages will result in the villagers rising up against you. If you have good Native relations, the villagers will assimilate into your closest city.</French>
+		<German>In DoC USA, Native Villages will no longer grant you free gifts, but instead represent smaller Native American tribes across the continent. If you have poor Native relations, expanding your borders over these Native Villages will result in the villagers rising up against you. If you have good Native relations, the villagers will assimilate into your closest city.</German>
+		<Italian>In DoC USA, Native Villages will no longer grant you free gifts, but instead represent smaller Native American tribes across the continent. If you have poor Native relations, expanding your borders over these Native Villages will result in the villagers rising up against you. If you have good Native relations, the villagers will assimilate into your closest city.</Italian>
+		<Spanish>In DoC USA, Native Villages will no longer grant you free gifts, but instead represent smaller Native American tribes across the continent. If you have poor Native relations, expanding your borders over these Native Villages will result in the villagers rising up against you. If you have good Native relations, the villagers will assimilate into your closest city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_</Tag>
