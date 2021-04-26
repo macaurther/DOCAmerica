@@ -30,6 +30,8 @@ import Areas
 import Civilizations
 import AIParameters
 import GreatPeople as gp
+import Immigration
+import Revolution
 
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
@@ -97,6 +99,8 @@ class CvRFCEventHandler:
 		self.pla = Plague.Plague()
 		self.com = Communications.Communications()
 		self.corp = Companies.Companies()
+		self.imm = Immigration.Immigration()
+		self.rev = Revolution.Revolution()
 
 		self.improvementTileChanges = [] #FoB - kludge to ensure native units don't move
 
@@ -113,6 +117,7 @@ class CvRFCEventHandler:
 		
 		vic.setup()
 		cong.setup()
+		self.imm.setup()
 		
 		# Leoreth: set DLL core values
 		Modifiers.init()
@@ -164,8 +169,6 @@ class CvRFCEventHandler:
 			city.setHasRealBuilding(iStockade, True)
 			
 			city.setName("Hartford", False)
-			
-			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
 
 		# MacAurther: New York should spawn with some infrastructure
 		if iPlayer == iNewYork and tCity == Areas.getCapital(iNewYork):
@@ -174,15 +177,11 @@ class CvRFCEventHandler:
 				
 			city.setHasRealBuilding(iBarracks, True)
 			city.setHasRealBuilding(iStockade, True)
-			city.setHasRealBuilding(iLibrary, True)
 			city.setHasRealBuilding(iMarket, True)
 			city.setHasRealBuilding(iGranary, True)
 			city.setHasRealBuilding(iHarbor, True)
-			city.setHasRealBuilding(iForge, True)
 			
 			city.setName("New York", False)
-			
-			city.setHasRealBuilding(iTemple + 4*gc.getPlayer(iPlayer).getStateReligion(), True)
 		
 		if bConquest:
 			# Colombian UP: no resistance in conquered cities in Latin America -> MacAurther: Manifest Destiny Civic
@@ -521,6 +520,10 @@ class CvRFCEventHandler:
 		
 		sta.checkTurn(iGameTurn)
 		cong.checkTurn(iGameTurn)
+		
+		# MacAurther
+		self.imm.checkTurn(iGameTurn)
+		self.rev.checkTurn(iGameTurn)
 		
 		if iGameTurn % 10 == 0:
 			dc.checkTurn(iGameTurn)

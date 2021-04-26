@@ -2010,154 +2010,15 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 	}
 
 	// Leoreth - build settlers only in cities on the same continent as the capital until the discovery of Exploration
+	// -> MacAurther - build settlers only in cities in your home state
 	if((int)eUnit == 4) // settler
 	{
 		int iCapitalRegion = GET_PLAYER(getOwner()).getCapitalCity()->getRegionID();
 		int iRegion = getRegionID();
 
-		int iCapitalContinent = -1;
-		int iCityContinent = -1;
-
-		switch (iCapitalRegion)
+		if (iCapitalRegion != iRegion)
 		{
-			case REGION_VIRGINIA:
-			case REGION_MARYLAND:
-			case REGION_NORTH_CAROLINA:
-			case REGION_SOUTH_CAROLINA:
-			case REGION_DELAWARE:
-			case REGION_GEORGIA:
-			case REGION_KENTUCKY:
-			case REGION_TENNESSEE:
-			case REGION_MISSISSIPPI:
-			case REGION_LOUISIANA:
-			case REGION_ALABAMA:
-			case REGION_MISSOURI:
-			case REGION_ARKANSAS:
-			case REGION_FLORIDA:
-			case REGION_TEXAS:
-			case REGION_WEST_VIRGINIA:
-			case REGION_KANSAS:
-			case REGION_OKLAHOMA:
-			case REGION_NEW_MEXICO:
-				iCapitalContinent = 0;	// South = 0
-				break;
-			case REGION_MASSACHUSETTS:
-			case REGION_NEW_HAMPSHIRE:
-			case REGION_CONNECTICUT:
-			case REGION_RHODE_ISLAND:
-			case REGION_NEW_JERSEY:
-			case REGION_NEW_YORK:
-			case REGION_PENNSYLVANIA:
-			case REGION_VERMONT:
-			case REGION_OHIO:
-			case REGION_INDIANA:
-			case REGION_ILLINOIS:
-			case REGION_MAINE:
-			case REGION_MICHIGAN:
-			case REGION_IOWA:
-			case REGION_WISCONSIN:
-			case REGION_MINNESOTA:
-			case REGION_NEBRASKA:
-			case REGION_NORTH_DAKOTA:
-			case REGION_SOUTH_DAKOTA:
-				iCapitalContinent = 1;	// North = 1
-				break;
-			case REGION_CALIFORNIA:
-			case REGION_OREGON:
-			case REGION_NEVADA:
-			case REGION_COLORADO:
-			case REGION_MONTANA:
-			case REGION_WASHINGTON:
-			case REGION_IDAHO:
-			case REGION_WYOMING:
-			case REGION_UTAH:
-			case REGION_ARIZONA:
-				iCapitalContinent = 2;	// West = 2
-				break;
-			default:
-				//MacAurther TODO: Do Regions
-				//FAssert(false);
-				break;
-		}
-
-		
-		switch (iRegion)
-		{
-			case REGION_VIRGINIA:
-			case REGION_MARYLAND:
-			case REGION_NORTH_CAROLINA:
-			case REGION_SOUTH_CAROLINA:
-			case REGION_DELAWARE:
-			case REGION_GEORGIA:
-			case REGION_KENTUCKY:
-			case REGION_TENNESSEE:
-			case REGION_MISSISSIPPI:
-			case REGION_LOUISIANA:
-			case REGION_ALABAMA:
-			case REGION_MISSOURI:
-			case REGION_ARKANSAS:
-			case REGION_FLORIDA:
-			case REGION_TEXAS:
-			case REGION_WEST_VIRGINIA:
-			case REGION_KANSAS:
-			case REGION_OKLAHOMA:
-			case REGION_NEW_MEXICO:
-				iCapitalContinent = 0;	// South = 0
-				break;
-			case REGION_MASSACHUSETTS:
-			case REGION_NEW_HAMPSHIRE:
-			case REGION_CONNECTICUT:
-			case REGION_RHODE_ISLAND:
-			case REGION_NEW_JERSEY:
-			case REGION_NEW_YORK:
-			case REGION_PENNSYLVANIA:
-			case REGION_VERMONT:
-			case REGION_OHIO:
-			case REGION_INDIANA:
-			case REGION_ILLINOIS:
-			case REGION_MAINE:
-			case REGION_MICHIGAN:
-			case REGION_IOWA:
-			case REGION_WISCONSIN:
-			case REGION_MINNESOTA:
-			case REGION_NEBRASKA:
-			case REGION_NORTH_DAKOTA:
-			case REGION_SOUTH_DAKOTA:
-				iCapitalContinent = 1;	// North = 1
-				break;
-			case REGION_CALIFORNIA:
-			case REGION_OREGON:
-			case REGION_NEVADA:
-			case REGION_COLORADO:
-			case REGION_MONTANA:
-			case REGION_WASHINGTON:
-			case REGION_IDAHO:
-			case REGION_WYOMING:
-			case REGION_UTAH:
-			case REGION_ARIZONA:
-				iCapitalContinent = 2;	// West = 2
-				break;
-			default:
-				//MacAurther TODO: Do Regions
-				//FAssert(false);
-				break;
-		}
-
-		//MacAurther TODO: Until regions are reworked, regions do not prohibit settler construction
-		//bool bException = true;
-		bool bException = true;
-
-		/*if (iCapitalRegion == REGION_RUSSIA && iRegion == REGION_SIBERIA)
-		{
-			bException = true;
-		}*/
-
-		if (iCapitalContinent != iCityContinent && !bException)
-		{
-			if (!GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)EXPLORATION))
-			{
-				return false;
-			}
+			return false;
 		}
 	}
 
@@ -3532,6 +3393,12 @@ int CvCity::getProductionModifier(BuildingTypes eBuilding) const
 		{
 			iMultiplier += GET_PLAYER(getOwnerINLINE()).getStateReligionBuildingProductionModifier();
 		}
+	}
+
+	// MacAurther: New Hampshire UP
+	if (getOwnerINLINE() == NEW_HAMPSHIRE)
+	{
+		iMultiplier += 10;
 	}
 
 	return std::max(0, iMultiplier);

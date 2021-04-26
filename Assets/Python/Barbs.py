@@ -15,17 +15,23 @@ PyPlayer = PyHelpers.PyPlayer	# LOQ
 
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
-# MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish
+# MacAurther TODO: For now, iIndependent is Dutch, iIndependent2 is Swedish/other
+# MacAurther: Using this to help AI settle some hard-to-reach cities as well
 tMinorCities = (
+	(1608, (137, 74), iFrance, 'Quebec City', 1, iMusketman, 1),				# Quebec City
 	(1624, (134, 60), iIndependent, 'Fort Orange', 1, iMusketman, 1),			# Fort Orange (Albany)
 	(1625, (137, 54), iIndependent, 'Nieuw Amsterdam', 1, iMusketman, 1),		# New Amsterdam (New York)
 	(1630, (140, 57), iIndependent, 'Fort de Goede Hoop', 1, iMusketman, 1),	# Fort de Goede Hoop (Hartford)
+	(1632, (142, 68), iMassachusetts, 'Portland', 1, iMusketman, 1),			# Portland, ME
 	(1638, (134, 48), iIndependent2, 'Fort Kristina', 1, iMusketman, 1),		# Fort Kristina (Wilmington)
 	(1653, (129, 34), iIndependent2, 'Raleigh', 1, iMusketman, 1),				# Albemarle Settlers
+	(1718, (100, 14), iFrance, 'New Orleans', 1, iMusketman, 1),				# New Orleans
+	(1732, (134, 43), iMaryland, 'Salisbury', 1, iMusketman, 1),				# Salisbury, MD (help AI maryland settle the Delaware peninsula)
 )
 
 #FoB - Spawn Native American Villages
 tNativeVillages = (
+	#East Coast Tribes
 	(1600, (130, 40), iNative),
 	(1600, (134, 40), iNative),
 	(1600, (128, 38), iNative),
@@ -43,7 +49,39 @@ tNativeVillages = (
 	(1600, (117, 47), iNative),
 	(1600, (114, 44), iNative),
 	(1600, (110, 44), iNative),
-	(1600, (122, 49), iNative)
+	(1600, (122, 49), iNative),
+	#MacAurther TODO: Consolidate below \/
+	(1600, (142, 69), iNative), # Pennacook
+	(1600, (135, 35), iNative), # Mahican
+	(1600, (136, 60), iNative), # Wampanoag
+	(1600, (127, 58), iNative), # Mohawk
+	(1600, (125, 57), iNative), # Oneida
+	(1600, (122, 55), iNative), # Onondaga
+	(1600, (120, 47), iNative), # Susquehannock
+	(1600, (134, 44), iNative), # Lenni-Lenape
+	(1600, (131, 32), iNative), # Tuscarora
+	(1600, (121, 33), iNative), # Tutelo
+	(1600, (114, 26), iNative), # Cherokee
+	(1600, (119, 26), iNative), # Catawba
+	(1600, (118, 21), iNative), # Yamasee
+	(1600, (108, 20), iNative), # Creek
+	(1600, (117, 15), iNative), # Timucua
+	(1600, (112, 16), iNative), # Apalachee
+	(1600, (124, 6), iNative), # Calusa
+	#Mid-West Tribes
+	(1600, (107, 54), iNative), # Potawatomi
+	(1600, (105, 47), iNative), # Miami
+	(1600, (114, 48), iNative), # Erie
+	(1600, (105, 34), iNative), # Shawnee
+	(1600, (100, 40), iNative), # Illinois
+	(1600, (99, 51), iNative), # Winnebago
+	(1600, (99, 23), iNative), # Chickasaw
+	(1600, (101, 17), iNative), # Biloxi
+	(1600, (98, 17), iNative), # Natchez
+	(1600, (92, 20), iNative), # Caddo
+	(1600, (91, 14), iNative), # Atakapa
+	#Western Tribes
+	#TODO
 )
 
 # do some research on dates here
@@ -96,35 +134,9 @@ class Barbs:
 		# American natives
 		if utils.isYearIn(1600, 1700):
 			print "trying to spawn nomad natives"
-			self.checkSpawn(iNative2, iArcher, 1 + iHandicap, (85, 14), (121, 49), self.spawnNomads, iGameTurn, 3, 0)
-			self.checkSpawn(iNative2, iWarrior, 1 + iHandicap, (85, 14), (121, 49), self.spawnNomads, iGameTurn, 3, 1)
+			self.checkSpawn(iNative2, iArcher, 1 + iHandicap, (85, 14), (121, 49), self.spawnNomads, iGameTurn, 5, 0)
+			self.checkSpawn(iNative2, iWarrior, 1 + iHandicap, (85, 14), (121, 49), self.spawnNomads, iGameTurn, 5, 2)
 
-		# MacAurther TODO: This is not fun, find something better:
-		'''if iGameTurn == getTurnForYear(1610): #Powhatan War I
-			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
-		if iGameTurn == getTurnForYear(1622): #Powhatan War II
-			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
-		if iGameTurn == getTurnForYear(1636): #Pequot War
-			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 1 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
-		if iGameTurn == getTurnForYear(1644): #Powhatan War III
-			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastVABR, tEastVATL, self.spawnUprising, iGameTurn, 1, 0)
-		if iGameTurn == getTurnForYear(1675): #King Phillip's War
-			self.checkSpawn(iNative, iWarrior, 2 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 2 + iHandicap, tEastMABR, tEastMATL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 1 + iHandicap, tCNBR, tCNTL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iWarrior, 1 + iHandicap, tEastNHBR, tEastNHTL, self.spawnUprising, iGameTurn, 1, 0)
-			self.checkSpawn(iNative, iArcher, 0 + iHandicap, tEastNHBR, tEastNHTL, self.spawnUprising, iGameTurn, 1, 0)'''
-		
-		
-		
-		
-		
 		#MacAurther: Old Natives
 		'''if utils.isYearIn(600, 1100):
 			self.checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (15, 38), (24, 47), self.spawnNatives, iGameTurn, 20, 0)

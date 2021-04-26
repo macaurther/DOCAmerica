@@ -4,6 +4,7 @@ from sets import Set
 from StoredData import data
 import Victory as vic
 from Religions import rel
+from Revolution import rev
 
 ### Class for easier tech specification ###
 
@@ -55,10 +56,12 @@ def initTechs(iPlayer, lTechs):
 	iCurrentEra = pPlayer.getCurrentEra()
 	pPlayer.setStartingEra(iCurrentEra)
 	
-def initTech(iPlayer, iTech):
+def initTech(iPlayer, iTech, bCheckRevolution = True):
 	gc.getTeam(gc.getPlayer(iPlayer).getTeam()).setHasTech(iTech, True, iPlayer, False, False)
 	vic.onTechAcquired(iPlayer, iTech)
 	rel.onTechAcquired(iPlayer, iTech)
+	if bCheckRevolution:
+		rev.onTechAcquired(iPlayer, iTech)
 
 ### Tech preference functions ###
 

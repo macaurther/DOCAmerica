@@ -366,43 +366,7 @@ class RiseAndFall:
 					data.players[iNextCiv].iBirthTurnModifier += 1
 						
 	def placeGoodyHuts(self):
-			
-		if utils.getScenario() == i1600AD:
-			#East Coast Tribes
-			self.placeHut((140, 69), (144, 73)) # Pennacook
-			self.placeHut((135, 35), (139, 69)) # Mahican
-			self.placeHut((136, 60), (139, 63)) # Wampanoag
-			self.placeHut((128, 57), (132, 61)) # Mohawk
-			self.placeHut((125, 55), (127, 59)) # Oneida
-			self.placeHut((122, 55), (124, 58)) # Onondaga
-			self.placeHut((120, 47), (125, 51)) # Susquehannock
-			self.placeHut((132, 43), (134, 45)) # Lenni-Lenape
-			self.placeHut((131, 32), (134, 34)) # Tuscarora
-			self.placeHut((121, 33), (126, 37)) # Tutelo
-			self.placeHut((111, 25), (116, 30)) # Cherokee
-			self.placeHut((119, 26), (122, 30)) # Catawba
-			self.placeHut((118, 21), (120, 24)) # Yamasee
-			self.placeHut((108, 20), (111, 23)) # Creek
-			self.placeHut((117, 15), (118, 17)) # Timucua
-			self.placeHut((112, 16), (114, 19)) # Apalachee
-			self.placeHut((122, 5), (124, 9)) # Calusa
-		
-		if utils.getScenario() <= i1770AD:
-			#Mid-West Tribes
-			self.placeHut((107, 54), (110, 58)) # Potawatomi
-			self.placeHut((105, 47), (109, 50)) # Miami
-			self.placeHut((113, 46), (116, 48)) # Erie
-			self.placeHut((105, 34), (108, 37)) # Shawnee
-			self.placeHut((100, 40), (104, 43)) # Illinois
-			self.placeHut((99, 51), (101, 55)) # Winnebago
-			self.placeHut((99, 23), (103, 26)) # Chickasaw
-			self.placeHut((101, 17), (104, 20)) # Biloxi
-			self.placeHut((96, 17), (99, 20)) # Natchez
-			self.placeHut((92, 20), (95, 23)) # Caddo
-			self.placeHut((91, 14), (93, 17)) # Atakapa
-		
-		#Western Tribes
-		# MacAurther TODO
+		pass
 
 		
 	def adjustReligionFoundingDates(self):
@@ -422,7 +386,7 @@ class RiseAndFall:
 		# Leoreth: randomly place goody huts
 		if iGameTurn == utils.getScenarioStartTurn()+3:
 			self.placeGoodyHuts()
-					
+		
 		#Trigger betrayal mode
 		if data.iBetrayalTurns > 0:
 			self.initBetrayal()
@@ -443,25 +407,21 @@ class RiseAndFall:
 			if pIndependent2.isAlive():
 				utils.updateMinorTechs(iIndependent2, iBarbarian)
 			
+		'''if utils.isYearIn(1350, 1918):
+			for iPlayer in [iSpain, iEngland, iFrance]:
+				if iGameTurn == data.players[iPlayer].iExplorationTurn + 1 + data.players[iPlayer].iColonistsAlreadyGiven * 8:
+					self.giveColonists(iPlayer)'''
 		
-		#MacAurther TODO:
-		#if utils.isYearIn(1350, 1918):
-		#	for iPlayer in [iSpain, iEngland, iFrance]:
-		#		if iGameTurn == data.players[iPlayer].iExplorationTurn + 1 + data.players[iPlayer].iColonistsAlreadyGiven * 8:
-		#			self.giveColonists(iPlayer)
-					
-				
-				
-				
+		
+		
 		for iLoopCiv in [iPlayer for iPlayer in range(iNumMajorPlayers) if tBirth[iPlayer] > utils.getScenarioStartYear()]:
 			if iGameTurn >= getTurnForYear(tBirth[iLoopCiv]) - 2 and iGameTurn <= getTurnForYear(tBirth[iLoopCiv]) + 6:
 				self.initBirth(iGameTurn, tBirth[iLoopCiv], iLoopCiv)
-
-				
+		
 		#kill the remaining barbs in the region: it's necessary to do this more than once to protect those civs
-		for iPlayer in [iSpain, iFrance]:
+		'''for iPlayer in [iSpain, iFrance]:
 			if iGameTurn >= getTurnForYear(tBirth[iPlayer])+2 and iGameTurn <= getTurnForYear(tBirth[iPlayer])+utils.getTurns(10):
-				utils.killUnitsInArea(iBarbarian, Areas.getBirthArea(iPlayer))
+				utils.killUnitsInArea(iBarbarian, Areas.getBirthArea(iPlayer))'''
 				
 		#fragment utility
 		if iGameTurn >= getTurnForYear(50) and iGameTurn % utils.getTurns(15) == 6:
@@ -609,6 +569,9 @@ class RiseAndFall:
 		# ask human player for flips
 		if iHumanCities > 0 and iCiv != utils.getHumanID():
 			self.scheduleFlipPopup(iCiv, lRebirthPlots)
+		
+		# ensure Vassals are set
+		self.initialVassals(iCiv)
 
 	def checkPlayerTurn(self, iGameTurn, iPlayer):
 		return
@@ -844,15 +807,9 @@ class RiseAndFall:
 		# MacAurther TODO: Do not do this, reveal new array of RevealArea plots
 		for (x, y) in Areas.getNormalArea(iCiv):
 			gc.getMap().plot(x, y).setRevealed(iCiv, True, True, 0)
-				
 		
-		#MacAurther TODO: Set up British Colony Vassals
-		#MacAurther TODO: Break vassalage automatically upon Revolution event
-		#if iCiv in [iVirginia, iMassachusetts, iNewHampshire, iMaryland, iConnecticut, iRhodeIsland, iNorthCarolina, iSouthCarolina, 
-		#	iNewJersey, iNewYork, iPennsylvania, iDelaware, iGeorgia]:
-		#	print "Setting up British Colony Vassal - " + str(iCiv)
-		#	gc.getTeam(iCiv).setVassal(iEngland, False, False) #gc.getPlayer(iCiv).getCivilizationType()
-		
+		self.initialVassals(iCiv)
+
 		if (iCurrentTurn == iBirthYear + data.players[iCiv].iSpawnDelay) and (gc.getPlayer(iCiv).isAlive()) and (not data.bAlreadySwitched or utils.getReborn(iCiv) == 1 or data.bUnlimitedSwitching) and ((iHuman not in lNeighbours[iCiv] and getTurnForYear(tBirth[iCiv]) - getTurnForYear(tBirth[iHuman]) > 0) or getTurnForYear(tBirth[iCiv]) - getTurnForYear(tBirth[iHuman]) >= utils.getTurns(25) ):
 			startNewCivSwitchEvent(iCiv)
 			
@@ -920,7 +877,7 @@ class RiseAndFall:
 				print ("starting units in", x, y)
 				self.createStartingUnits(iCiv, tCapital)
 				
-										
+				
 				lPlots = utils.surroundingPlots(tCapital, 3)
 				utils.flipUnitsInArea(lPlots, iCiv, iBarbarian, True, True) #This is mostly for the AI. During Human player spawn, that area should be already cleaned			
 				utils.flipUnitsInArea(lPlots, iCiv, iIndependent, True, False) #This is mostly for the AI. During Human player spawn, that area should be already cleaned			
@@ -1260,98 +1217,13 @@ class RiseAndFall:
 					
 
 	def onFirstContact(self, iTeamX, iHasMetTeamY):
-	
-		iGameTurn = gc.getGame().getGameTurn()
-		
-		# no conquerors for minor civs
-		'''if iHasMetTeamY >= iNumPlayers: return
-		
-		if iGameTurn > getTurnForYear(600) and iGameTurn < getTurnForYear(1800):
-			if iTeamX in lCivBioNewWorld and iHasMetTeamY in lCivBioOldWorld:
-				iNewWorldCiv = iTeamX
-				iOldWorldCiv = iHasMetTeamY
-				
-				iIndex = lCivBioNewWorld.index(iNewWorldCiv)
-				
-				bAlreadyContacted = data.lFirstContactConquerors[iIndex]
-				
-					
-				if not bAlreadyContacted:
-						
-					lArrivalExceptions = [(25, 32), (26, 40), (25, 42), (23, 42), (21, 42)]
-						
-					data.lFirstContactConquerors[iIndex] = True
-						
-					lContactPlots = []
-					lArrivalPlots = []
-					for (x, y) in utils.getPlotList(tContactZoneTL, tContactZoneBR, lArrivalExceptions):
-						plot = gc.getMap().plot(x, y)
-						if plot.isVisible(iNewWorldCiv, False) and plot.isVisible(iOldWorldCiv, False):
-							lContactPlots.append((x,y))
-						if plot.getOwner() == iNewWorldCiv and not plot.isCity():
-							if plot.isFlatlands() or plot.isHills():
-								if not plot.getFeatureType() in [iJungle, iRainforest] and not plot.getTerrainType() == iMarsh:
-									if gc.getMap().getArea(plot.getArea()).getNumTiles() > 3:
-										lArrivalPlots.append((x,y))
-								
-					if lContactPlots and lArrivalPlots:
-						tContactPlot = utils.getRandomEntry(lContactPlots)
-						lDistancePlots = [(tuple, utils.calculateDistance(tuple[0], tuple[1], tContactPlot[0], tContactPlot[1])) for tuple in lArrivalPlots]
-						lDistancePlots.sort(key=itemgetter(1))
-						tArrivalPlot = lDistancePlots[0][0]
-												
-						pNewWorldCiv = gc.getPlayer(iNewWorldCiv)
-						teamOldWorldCiv = gc.getTeam(gc.getPlayer(iOldWorldCiv).getTeam())
-						
-						iModifier1 = 0
-						iModifier2 = 0
-						
-						if utils.getHumanID() == iNewWorldCiv:
-							if pNewWorldCiv.getNumCities() > 6: iModifier1 = 1
-						else:
-							if pNewWorldCiv.getNumCities() > 4: iModifier1 = 1
-							if utils.getHumanID() != iOldWorldCiv: iModifier2 = 1
-							
-						if gc.getGame().getGameTurnYear() < tBirth[utils.getHumanID()]:
-							iModifier1 += 1
-							iModifier2 += 1
-							
-						teamOldWorldCiv.declareWar(iNewWorldCiv, True, WarPlanTypes.WARPLAN_TOTAL)
-						
-						iInfantry = utils.getBestInfantry(iOldWorldCiv)
-						iCounter = utils.getBestCounter(iOldWorldCiv)
-						iCavalry = utils.getBestCavalry(iOldWorldCiv)
-						iSiege = utils.getBestSiege(iOldWorldCiv)
-						iStateReligion = gc.getPlayer(iOldWorldCiv).getStateReligion()
-						
-						if iInfantry:
-							utils.makeUnitAI(iInfantry, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1 + iModifier2)
-						
-						if iCounter:
-							utils.makeUnitAI(iCounter, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2)
-							
-						if iSiege:
-							utils.makeUnitAI(iSiege, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 1 + iModifier1 + iModifier2)
-							
-						if iCavalry:
-							utils.makeUnitAI(iCavalry, iOldWorldCiv, tArrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY, 2 + iModifier1)
-							
-						if iStateReligion >= 0:
-							utils.makeUnit(iMissionary + iStateReligion, iOldWorldCiv, tArrivalPlot, 1)
-							
-						
-						if utils.getHumanID() == iNewWorldCiv:
-							CyInterface().addMessage(iNewWorldCiv, True, iDuration, CyTranslator().getText("TXT_KEY_FIRST_CONTACT_NEWWORLD", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
-						elif utils.getHumanID() == iOldWorldCiv:
-							CyInterface().addMessage(iOldWorldCiv, True, iDuration, CyTranslator().getText("TXT_KEY_FIRST_CONTACT_OLDWORLD", ()), "", 0, "", ColorTypes(iWhite), -1, -1, True, True)
-							'''
+		pass
+
 	def lateTradingCompany(self, iCiv):
 		pass
 
 	def earlyTradingCompany(self, iCiv):
-		if utils.getHumanID() != iCiv and not utils.isAVassal(iCiv):
-			if iCiv in [iSpain]:
-				self.handleColonialAcquisition(iCiv)
+		pass
 				
 	def onRailroadDiscovered(self, iCiv):
 		pass
@@ -1618,7 +1490,7 @@ class RiseAndFall:
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pVirginia.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iMassachusetts:
@@ -1626,7 +1498,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pMassachusetts.setLastStateReligion(iPuritanism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNewHampshire:
@@ -1634,7 +1506,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iCrossbowman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnit(iPikeman, iCiv, tPlot, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pNewHampshire.setLastStateReligion(iPuritanism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iMaryland:
@@ -1643,7 +1515,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			utils.makeUnit(iWorkboat, iCiv, tSeaPlot, 1)
 			pMaryland.setLastStateReligion(iCatholicism)
 			utils.createMissionaries(iCiv, 1)
@@ -1658,7 +1530,7 @@ class RiseAndFall:
 			utils.makeUnit(iMusketman, iCiv, tPlot, 1)
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pRhodeIsland.setLastStateReligion(iBaptism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iNorthCarolina:
@@ -1667,7 +1539,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pNorthCarolina.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iSouthCarolina:
@@ -1676,7 +1548,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pSouthCarolina.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iNewJersey:
@@ -1692,7 +1564,7 @@ class RiseAndFall:
 			utils.makeUnit(iExplorer, iCiv, tPlot, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pNewYork.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 2)
 		elif iCiv == iPennsylvania:
@@ -1707,7 +1579,7 @@ class RiseAndFall:
 			utils.makeUnit(iMusketman, iCiv, tPlot, 1)
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pDelaware.setLastStateReligion(iEpiscopalianism)
 			utils.createMissionaries(iCiv, 1)
 		elif iCiv == iGeorgia:
@@ -1716,7 +1588,7 @@ class RiseAndFall:
 			utils.makeUnitAI(iMusketman, iCiv, tPlot, UnitAITypes.UNITAI_CITY_DEFENSE, 1)
 			utils.makeUnitAI(iExplorer, iCiv, tPlot, UnitAITypes.UNITAI_EXPLORE, 1)
 			tSeaPlot = self.findSeaPlots(tPlot, 1, iCiv)
-			utils.makeUnit(iCaravel, iCiv, tSeaPlot, 1)
+			utils.makeUnit(iGalleon, iCiv, tSeaPlot, 1)
 			pGeorgia.setLastStateReligion(iMethodism)
 			utils.createMissionaries(iCiv, 2)
 
@@ -1729,9 +1601,19 @@ class RiseAndFall:
 		# Leoreth: start wars on spawn when the spawn actually happens
 		self.startWarsOnSpawn(iCiv)
 
+	def initialVassals(self, iCiv):
+		tCiv = gc.getTeam(iCiv)
+		
+		print("Setting up colonial vassal relationships for: " + str(iCiv))
+		# Set up Vassal colonial relationships
+		if iCiv in range(iVirginia, iGeorgia + 1):
+			if not tCiv.canContact(iEngland): tCiv.meet(iEngland, False)
+			# MacAurther TODO: Disabled for now until there are features relying on it
+			#if not tCiv.isVassal(iEngland): tCiv.setVassal(iEngland, True, False)
+
 	def createRespawnUnits(self, iCiv, tPlot):
 		pass
-				
+	
 	def findAreaReligion(self, iPlayer, lPlots):
 		lReligions = [0 for i in range(iNumReligions)]
 		
@@ -1760,13 +1642,7 @@ class RiseAndFall:
 
 				
 	def createStartingWorkers( self, iCiv, tPlot ):
-		if iCiv == iSpain:
-			utils.makeUnit(iWorker, iCiv, tPlot, 3)
-		elif iCiv == iFrance:
-			utils.makeUnit(iWorker, iCiv, tPlot, 3)
-		elif iCiv == iEngland:
-			utils.makeUnit(iWorker, iCiv, tPlot, 3)
-		elif iCiv == iVirginia:
+		if iCiv == iVirginia:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)
 		elif iCiv == iMassachusetts:
 			utils.makeUnit(iWorker, iCiv, tPlot, 1)

@@ -7704,17 +7704,6 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_SPECIALIST_HAPPINESS", abs(GC.getCivicInfo(eCivic).getSpecialistHappiness()), GC.getCivicInfo(eCivic).getSpecialistHappiness() > 0 ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR)));
 	}
 
-	// Leoreth: American UP
-	// MacAurther TODO: Cleanup or reuse
-	/*if (GC.getGame().getActivePlayer() == AMERICA)
-	{
-		if (eCivic == CIVIC_DEMOCRACY || eCivic == CIVIC_CONSTITUTION || eCivic == CIVIC_INDIVIDUALISM || eCivic == CIVIC_FREE_ENTERPRISE)
-		{
-			szHelpText.append(NEWLINE);
-			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_AMERICAN_UP_HAPPINESS", 2, gDLL->getSymbolID(HAPPY_CHAR)));
-		}
-	}*/
-
 	// Capture gold modifier
 	if (GC.getCivicInfo(eCivic).getCaptureGoldModifier() != 0)
 	{
@@ -7855,14 +7844,6 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 			}
 		}
 	}
-
-	// Leoreth: ignore state religion requirements with Secularism
-	// MacAurther TODO: Cleanup or reuse
-	/*if (eCivic == CIVIC_SECULARISM)
-	{
-		szHelpText.append(NEWLINE);
-		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_IGNORE_STATE_RELIGION"));
-	}*/
 	
 	int iDoubleModifierCount = 0;
 	CvWStringBuffer szDoubleModifiers;
@@ -17154,6 +17135,14 @@ void CvGameTextMgr::setProductionHelp(CvWStringBuffer &szBuffer, CvCity& city)
 					iBaseModifier += iReligionMod;
 				}
 			}
+		}
+
+		// MacAurther: New Hampshire UP
+		if (city.getOwnerINLINE() == NEW_HAMPSHIRE)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_NEW_HAMPSHIRE", 10));
+			szBuffer.append(NEWLINE);
+			iBaseModifier += 10;
 		}
 	}
 

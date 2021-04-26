@@ -818,7 +818,7 @@
 			<Quote>TXT_KEY_TECH_COLONIZATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Academia.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCUSA_Civics_and_Techs.dds,6,7</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1729,6 +1729,10 @@
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_RIGHTS_OF_MAN</PrereqTech>
+				<PrereqTech>TECH_SOCIAL_CONTRACT</PrereqTech>
+			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_HERITAGE</PrereqTech>
 				<PrereqTech>TECH_CIVIL_LIBERTIES</PrereqTech>

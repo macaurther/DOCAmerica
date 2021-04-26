@@ -862,10 +862,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SHIRE_STRATEGY</Tag>
 		<English>The most primitive Government civic</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>The most primitive Government civic</French>
+		<German>The most primitive Government civic</German>
+		<Italian>The most primitive Government civic</Italian>
+		<Spanish>The most primitive Government civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY</Tag>
@@ -878,10 +878,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Tag>
 		<English>15 Free Units; Can Spend Gold to Finish Military Unit Production in a City</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>15 Free Units; Can Spend Gold to Finish Military Unit Production in a City</French>
+		<German>15 Free Units; Can Spend Gold to Finish Military Unit Production in a City</German>
+		<Italian>15 Free Units; Can Spend Gold to Finish Military Unit Production in a City</Italian>
+		<Spanish>15 Free Units; Can Spend Gold to Finish Military Unit Production in a City</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TERRITORY</Tag>
@@ -894,10 +894,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TERRITORY_STRATEGY</Tag>
 		<English>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace; reduced maintenance from distance to Palace</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace; reduced maintenance from distance to Palace</French>
+		<German>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace; reduced maintenance from distance to Palace</German>
+		<Italian>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace; reduced maintenance from distance to Palace</Italian>
+		<Spanish>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace; reduced maintenance from distance to Palace</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH</Tag>
@@ -974,10 +974,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SHERIFFDOM_STRATEGY</Tag>
 		<English>The most primitive Legal civic</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>The most primitive Legal civic</French>
+		<German>The most primitive Legal civic</German>
+		<Italian>The most primitive Legal civic</Italian>
+		<Spanish>The most primitive Legal civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMON_LAW</Tag>
@@ -989,11 +989,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMON_LAW_STRATEGY</Tag>
-		<English>Double production speed for Libraries, Theatres, and Markets</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<English>Double production speed for Schoolhouse, Theatres, Markets, and Wells</English>
+		<French>Double production speed for Schoolhouse, Theatres, Markets, and Wells</French>
+		<German>Double production speed for Schoolhouse, Theatres, Markets, and Wells</German>
+		<Italian>Double production speed for Schoolhouse, Theatres, Markets, and Wells</Italian>
+		<Spanish>Double production speed for Schoolhouse, Theatres, Markets, and Wells</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MARTIAL_LAW</Tag>
@@ -1005,11 +1005,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MARTIAL_LAW_STRATEGY</Tag>
-		<English>Extra happiness from military units; Double production speed for Jails, Constabularies</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<English>Extra happiness from military units; Double production speed for Jails, Constabularies; Extra Unhappiness</English>
+		<French>Extra happiness from military units; Double production speed for Jails, Constabularies; Extra Unhappiness</French>
+		<German>Extra happiness from military units; Double production speed for Jails, Constabularies; Extra Unhappiness</German>
+		<Italian>Extra happiness from military units; Double production speed for Jails, Constabularies; Extra Unhappiness</Italian>
+		<Spanish>Extra happiness from military units; Double production speed for Jails, Constabularies; Extra Unhappiness</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATES_RIGHTS</Tag>
@@ -1086,10 +1086,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SERFDOM_STRATEGY</Tag>
 		<English>The most primitive Labor civic</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>The most primitive Labor civic</French>
+		<German>The most primitive Labor civic</German>
+		<Italian>The most primitive Labor civic</Italian>
+		<Spanish>The most primitive Labor civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Tag>
@@ -1101,19 +1101,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_HELP</Tag>
-		<English>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</English>
-		<French>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</French>
-		<German>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</German>
-		<Italian>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</Italian>
-		<Spanish>[ICON_BULLET]40% chance to Immigrate a Worker instead of a Population</Spanish>
+		<English>[ICON_BULLET]Every third free immigrant is a Worker</English>
+		<French>[ICON_BULLET]Every third free immigrant is a Worker</French>
+		<German>[ICON_BULLET]Every third free immigrant is a Worker</German>
+		<Italian>[ICON_BULLET]Every third free immigrant is a Worker</Italian>
+		<Spanish>[ICON_BULLET]Every third free immigrant is a Worker</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Tag>
-		<English>Reduced worker cost</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<English>Workers occasionally replace immigrants</English>
+		<French>Workers occasionally replace immigrants</French>
+		<German>Workers occasionally replace immigrants</German>
+		<Italian>Workers occasionally replace immigrants</Italian>
+		<Spanish>Workers occasionally replace immigrants</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY</Tag>
@@ -1124,20 +1124,20 @@
 		<Spanish>Slavery</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
-		<English>Can hurry production by sacrificing population; Extra Commerce from Plantations</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
 		<English>[ICON_BULLET]Chance of Slave Revolt</English>
 		<French>[ICON_BULLET]Chance of Slave Revolt</French>
 		<German>[ICON_BULLET]Chance of Slave Revolt</German>
 		<Italian>[ICON_BULLET]Chance of Slave Revolt</Italian>
 		<Spanish>[ICON_BULLET]Chance of Slave Revolt</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
+		<English>Can hurry production by sacrificing population; Extra Commerce from Plantations</English>
+		<French>Can hurry production by sacrificing population; Extra Commerce from Plantations</French>
+		<German>Can hurry production by sacrificing population; Extra Commerce from Plantations</German>
+		<Italian>Can hurry production by sacrificing population; Extra Commerce from Plantations</Italian>
+		<Spanish>Can hurry production by sacrificing population; Extra Commerce from Plantations</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTAINS_OF_INDUSTRY</Tag>
@@ -1214,10 +1214,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_LAISSEZ_FAIRE_STRATEGY</Tag>
 		<English>The most primitive Economic civic</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>The most primitive Economic civic</French>
+		<German>The most primitive Economic civic</German>
+		<Italian>The most primitive Economic civic</Italian>
+		<Spanish>The most primitive Economic civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MERCANTILISM</Tag>
@@ -1229,11 +1229,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Tag>
-		<English>Reduced commerce from Trade Routes; Increase Production from Trade Routes; Faster production of Custom House</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<English>Reduced commerce from Trade Routes; Faster production of Custom House, Wharf, and Harbor; Faster production of Military Units</English>
+		<French>Reduced commerce from Trade Routes; Faster production of Custom House, Wharf, and Harbor; Faster production of Military Units</French>
+		<German>Reduced commerce from Trade Routes; Faster production of Custom House, Wharf, and Harbor; Faster production of Military Units</German>
+		<Italian>Reduced commerce from Trade Routes; Faster production of Custom House, Wharf, and Harbor; Faster production of Military Units</Italian>
+		<Spanish>Reduced commerce from Trade Routes; Faster production of Custom House, Wharf, and Harbor; Faster production of Military Units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AGRARIANISM</Tag>
@@ -1245,11 +1245,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AGRARIANISM_STRATEGY</Tag>
-		<English>Extra Food from Farms; Reduced commerce from Trade Routes</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<English>Extra Food from Farms; Extra Production from Plantations; Reduced commerce from Trade Routes</English>
+		<French>Extra Food from Farms; Extra Production from Plantations; Reduced commerce from Trade Routes</French>
+		<German>Extra Food from Farms; Extra Production from Plantations; Reduced commerce from Trade Routes</German>
+		<Italian>Extra Food from Farms; Extra Production from Plantations; Reduced commerce from Trade Routes</Italian>
+		<Spanish>Extra Food from Farms; Extra Production from Plantations; Reduced commerce from Trade Routes</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM</Tag>
@@ -1326,10 +1326,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FOR_GLORY_GOD_AND_GOLD_STRATEGY</Tag>
 		<English>The most primitive Immigration civic</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>The most primitive Immigration civic</French>
+		<German>The most primitive Immigration civic</German>
+		<Italian>The most primitive Immigration civic</Italian>
+		<Spanish>The most primitive Immigration civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN</Tag>
@@ -1341,11 +1341,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN_STRATEGY</Tag>
-		<English>Increased building production in cities with state religion; Extra yields in Capital</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<English>Increased Immigration attractiveness; Increased building production in cities with state religion</English>
+		<French>Increased Immigration attractiveness; Increased building production in cities with state religion</French>
+		<German>Increased Immigration attractiveness; Increased building production in cities with state religion</German>
+		<Italian>Increased Immigration attractiveness; Increased building production in cities with state religion</Italian>
+		<Spanish>Increased Immigration attractiveness; Increased building production in cities with state religion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN_HELP</Tag>
@@ -1364,20 +1364,20 @@
 		<Spanish>Penal Colony</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_STRATEGY</Tag>
-		<English>Increased Growth; Decreased Culture</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_HELP</Tag>
+		<English>[ICON_BULLET]Bonus immigration from Britain (must be British Royal Colony)</English>
+		<French>[ICON_BULLET]Bonus immigration from Britain (must be British Royal Colony)</French>
+		<German>[ICON_BULLET]Bonus immigration from Britain (must be British Royal Colony)</German>
+		<Italian>[ICON_BULLET]Bonus immigration from Britain (must be British Royal Colony)</Italian>
+		<Spanish>[ICON_BULLET]Bonus immigration from Britain (must be British Royal Colony)</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_HAVEN_HELP</Tag>
-		<English>[ICON_BULLET]Greatly increases Immigration attractives (+5)[ICON_BULLET]High chance of unrest</English>
-		<French>[ICON_BULLET]Greatly increases Immigration attractives (+5)</French>
-		<German>[ICON_BULLET]Greatly increases Immigration attractives (+5)</German>
-		<Italian>[ICON_BULLET]Greatly increases Immigration attractives (+5)</Italian>
-		<Spanish>[ICON_BULLET]Greatly increases Immigration attractives (+5)</Spanish>
+		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_STRATEGY</Tag>
+		<English>Bonus immigrantion from England; Increased Unhappiness; Decreased Culture</English>
+		<French>Bonus immigrantion from England; Increased Unhappiness; Decreased Culture</French>
+		<German>Bonus immigrantion from England; Increased Unhappiness; Decreased Culture</German>
+		<Italian>Bonus immigrantion from England; Increased Unhappiness; Decreased Culture</Italian>
+		<Spanish>Bonus immigrantion from England; Increased Unhappiness; Decreased Culture</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FREE_RELIGION</Tag>
@@ -1404,6 +1404,14 @@
 		<Spanish>Isolationism</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>
+		<English>[ICON_BULLET]Decreases Immigration attractives (-2)</English>
+		<French>[ICON_BULLET]Decreases Immigration attractives (-2)</French>
+		<German>[ICON_BULLET]Decreases Immigration attractives (-2)</German>
+		<Italian>[ICON_BULLET]Decreases Immigration attractives (-2)</Italian>
+		<Spanish>[ICON_BULLET]Decreases Immigration attractives (-2)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Tag>
 		<English>MacAurther TODO</English>
 		<French>No Translation</French>
@@ -1420,6 +1428,14 @@
 		<Spanish>Melting Pot</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MELTING_POT_HELP</Tag>
+		<English>[ICON_BULLET]Increases immigration attractives (+4)</English>
+		<French>[ICON_BULLET]Increases immigration attractives (+4)</French>
+		<German>[ICON_BULLET]Increases immigration attractives (+4)</German>
+		<Italian>[ICON_BULLET]Increases immigration attractives (+4)</Italian>
+		<Spanish>[ICON_BULLET]Increases immigration attractives (+4)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MELTING_POT_STRATEGY</Tag>
 		<English>MacAurther TODO</English>
 		<French>No Translation</French>
@@ -1434,6 +1450,14 @@
 		<German>Multiculturism</German>
 		<Italian>Multiculturism</Italian>
 		<Spanish>Multiculturism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MULTICULTURISM_HELP</Tag>
+		<English>[ICON_BULLET]Immigrants bring [ICON_GREATPEOPLE] to your cities</English>
+		<French>[ICON_BULLET]Immigrants bring [ICON_GREATPEOPLE] to your cities</French>
+		<German>[ICON_BULLET]Immigrants bring [ICON_GREATPEOPLE] to your cities</German>
+		<Italian>[ICON_BULLET]Immigrants bring [ICON_GREATPEOPLE] to your cities</Italian>
+		<Spanish>[ICON_BULLET]Immigrants bring [ICON_GREATPEOPLE] to your cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MULTICULTURISM_STRATEGY</Tag>
@@ -1454,10 +1478,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMPANIES_STRATEGY</Tag>
 		<English>The most primitive Development civic</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>The most primitive Development civic</French>
+		<German>The most primitive Development civic</German>
+		<Italian>The most primitive Development civic</Italian>
+		<Spanish>The most primitive Development civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HEADRIGHT</Tag>
@@ -1469,19 +1493,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HEADRIGHT_HELP</Tag>
-		<English>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</English>
-		<French>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</French>
-		<German>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</German>
-		<Italian>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</Italian>
-		<Spanish>[ICON_BULLET]20% chance to Immigrate a Settler instead of a Population</Spanish>
+		<English>[ICON_BULLET]Every fifth free immigrant is a Settler</English>
+		<French>[ICON_BULLET]Every fifth free immigrant is a Settler</French>
+		<German>[ICON_BULLET]Every fifth free immigrant is a Settler</German>
+		<Italian>[ICON_BULLET]Every fifth free immigrant is a Settler</Italian>
+		<Spanish>[ICON_BULLET]Every fifth free immigrant is a Settler</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HEADRIGHT_STRATEGY</Tag>
-		<English>Chance to gain Settlers from Immigration</English>
-		<French>Chance to gain Settlers from Immigration</French>
-		<German>Chance to gain Settlers from Immigration</German>
-		<Italian>Chance to gain Settlers from Immigration</Italian>
-		<Spanish>Chance to gain Settlers from Immigration</Spanish>
+		<English>Settlers occasionally replace immigrants</English>
+		<French>Settlers occasionally replace immigrants</French>
+		<German>Settlers occasionally replace immigrants</German>
+		<Italian>Settlers occasionally replace immigrants</Italian>
+		<Spanish>Settlers occasionally replace immigrants</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_RURALISM</Tag>
@@ -1494,10 +1518,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_RURALISM_STRATEGY</Tag>
 		<English>Extra Commerce from Plantations, Farms, Orchards, and Rice Paddies; Extra Production from Pastures; Slower growth of Cottages</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>Extra Commerce from Plantations, Farms, Orchards, and Rice Paddies; Extra Production from Pastures; Slower growth of Cottages</French>
+		<German>Extra Commerce from Plantations, Farms, Orchards, and Rice Paddies; Extra Production from Pastures; Slower growth of Cottages</German>
+		<Italian>Extra Commerce from Plantations, Farms, Orchards, and Rice Paddies; Extra Production from Pastures; Slower growth of Cottages</Italian>
+		<Spanish>Extra Commerce from Plantations, Farms, Orchards, and Rice Paddies; Extra Production from Pastures; Slower growth of Cottages</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_URBANISM</Tag>
@@ -1510,10 +1534,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_URBANISM_STRATEGY</Tag>
 		<English>Extra Happiness in Largest Cities, extra food from Specialists, reduced food from Farm, Paddy Field, Plantation, Slave Plantation, faster growth of Hamlets</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
+		<French>Extra Happiness in Largest Cities, extra food from Specialists, reduced food from Farm, Paddy Field, Plantation, Slave Plantation, faster growth of Hamlets</French>
+		<German>Extra Happiness in Largest Cities, extra food from Specialists, reduced food from Farm, Paddy Field, Plantation, Slave Plantation, faster growth of Hamlets</German>
+		<Italian>Extra Happiness in Largest Cities, extra food from Specialists, reduced food from Farm, Paddy Field, Plantation, Slave Plantation, faster growth of Hamlets</Italian>
+		<Spanish>Extra Happiness in Largest Cities, extra food from Specialists, reduced food from Farm, Paddy Field, Plantation, Slave Plantation, faster growth of Hamlets</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOMESTEADS</Tag>

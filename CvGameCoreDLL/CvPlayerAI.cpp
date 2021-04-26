@@ -3017,13 +3017,6 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 		return 0;
 	}
 
-	//MacAurther TODO: Maybe they should ;)
-	// Leoreth: America shouldn't fight the English all the way to Canada
-	/*if (getID() == AMERICA && pCity->getRegionID() == REGION_CANADA)
-	{
-		iValue /= 3;
-	}*/
-
 	if (!bIgnoreAttackers)
 	{
 		iValue += AI_adjacentPotentialAttackers(pCity->plot());
@@ -10121,7 +10114,7 @@ CivicTypes CvPlayerAI::AI_bestCivic(CivicOptionTypes eCivicOption) const
 int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 {
 	PROFILE_FUNC();
-
+	// MacAurther TODO: AI Civic Choices
 	bool bWarPlan;
 	int iConnectedForeignCities;
 	int iTotalReligonCount;
@@ -10808,38 +10801,10 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		}
 	}
 
-	/*
-	// Leoreth: prefer deification if no state religion
-	if (eCivic == CIVIC_DEIFICATION)
-	{
-		switch (getLastStateReligion())
-		{
-		case NO_RELIGION:
-		case JUDAISM:
-		case ORTHODOXY:
-		case CATHOLICISM:
-		case PROTESTANTISM:
-		case ISLAM:
-			iValue /= 5;
-			break;
-		}
-	}
-	*/
-
 	if (AI_isDoStrategy(AI_STRATEGY_CULTURE2) && (GC.getCivicInfo(eCivic).isNoNonStateReligionSpread()))
 	{
 	    iValue /= 10;
 	}
-	
-	// Leoreth: take American UP into account
-	// MacAurther TODO: Cleanup or reuse
-	/*if (getID() == AMERICA)
-	{
-		if (eCivic == CIVIC_DEMOCRACY || eCivic == CIVIC_CONSTITUTION || eCivic == CIVIC_INDIVIDUALISM || eCivic == CIVIC_FREE_ENTERPRISE)
-		{
-			iValue += 100;
-		}
-	}*/
 
 	return iValue;
 }

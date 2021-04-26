@@ -12,8 +12,8 @@ gc = CyGlobalContext()
 localText = CyTranslator()
 PyPlayer = PyHelpers.PyPlayer
 
-tCompanyTechs = (iCurrency, iExploration, iBiology, iRefrigeration, iThermodynamics, iMetallurgy, iRefining, iConsumerism, iComputers)
-tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10, 12) # kind of arbitrary currently, see how this plays out
+tCompanyTechs = (iCurrency, iExploration, iCompanies, iCompanies, iCompanies, iBiology, iRefrigeration, iThermodynamics, iMetallurgy, iRefining, iConsumerism, iComputers)
+tCompaniesLimit = (10, 12, 10, 10, 10, 16, 10, 12, 12, 6, 10, 12) # kind of arbitrary currently, see how this plays out
 
 lTradingCompanyCivs = [iSpain, iFrance, iEngland]
 
@@ -190,6 +190,18 @@ class Companies:
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iCustomsHouse)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iBank)): iValue += 1
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iTradingCompanyBuilding)): iValue += 2
+		
+		elif iCompany == iFurTrade:
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iTradingPost)): iValue += 2
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1
+		
+		elif iCompany == iTimberIndustry:
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iLumberMill)): iValue += 2
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1
+		
+		elif iCompany == iTobaccoIndustry:
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iEstate)): iValue += 2
+			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iHarbor)): iValue += 1
 
 		elif iCompany == iCerealIndustry:
 			if city.hasBuilding(utils.getUniqueBuilding(iOwner, iGranary)): iValue += 1

@@ -5508,59 +5508,83 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA2_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Sons of Liberty</English>
+		<French>Sons of Liberty</French>
+		<German>Sons of Liberty</German>
+		<Italian>Sons of Liberty</Italian>
+		<Spanish>Sons of Liberty</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA2</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Independence and defeat 10 British Units by 1780 AD</English>
+		<French>Be the first to discover Independence and defeat 10 British Units by 1780 AD</French>
+		<German>Be the first to discover Independence and defeat 10 British Units by 1780 AD</German>
+		<Italian>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Italian>
+		<Spanish>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA2_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Independence and defeat 10 British Units by 1780 AD</English>
+		<French>Be the first to discover Independence and defeat 10 British Units by 1780 AD</French>
+		<German>Be the first to discover Independence and defeat 10 British Units by 1780 AD</German>
+		<Italian>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Italian>
+		<Spanish>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA2_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Independence and defeat 10 British Units by 1780 AD</English>
+		<French>Be the first to discover Independence and defeat 10 British Units by 1780 AD</French>
+		<German>Be the first to discover Independence and defeat 10 British Units by 1780 AD</German>
+		<Italian>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Italian>
+		<Spanish>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA2_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Independence and defeat 10 British Units by 1780 AD</English>
+		<French>Be the first to discover Independence and defeat 10 British Units by 1780 AD</French>
+		<German>Be the first to discover Independence and defeat 10 British Units by 1780 AD</German>
+		<Italian>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Italian>
+		<Spanish>Be the first to discover Independence and defeat 10 British Units by 1780 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA3_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>City on a Hill</English>
+		<French>City on a Hill</French>
+		<German>City on a Hill</German>
+		<Italian>City on a Hill</Italian>
+		<Spanish>City on a Hill</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MA3</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</English>
+		<French>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</French>
+		<German>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</German>
+		<Italian>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Italian>
+		<Spanish>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MA2_EPIC</Tag>
+		<English>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</English>
+		<French>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</French>
+		<German>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</German>
+		<Italian>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Italian>
+		<Spanish>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MA2_MARATHON</Tag>
+		<English>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</English>
+		<French>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</French>
+		<German>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</German>
+		<Italian>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Italian>
+		<Spanish>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_MA2_NOTURN</Tag>
+		<English>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</English>
+		<French>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</French>
+		<German>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</German>
+		<Italian>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Italian>
+		<Spanish>Build Harvard by 1675 AD and be the most advanced State in 1800 AD</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -5578,6 +5602,22 @@
 		<German>Maine: %d1 / %d2</German>
 		<Italian>Maine: %d1 / %d2</Italian>
 		<Spanish>Maine: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_BRITISH_UNITS</Tag>
+		<English>British units defeated: %d1 / %d2</English>
+		<French>British units defeated: %d1 / %d2</French>
+		<German>British units defeated: %d1 / %d2</German>
+		<Italian>British units defeated: %d1 / %d2</Italian>
+		<Spanish>British units defeated: %d1 / %d2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_MOST_ADVANCED_STATE</Tag>
+		<English>Most advanced state: %s1</English>
+		<French>Most advanced state: %s1</French>
+		<German>Most advanced state: %s1</German>
+		<Italian>Most advanced state: %s1</Italian>
+		<Spanish>Most advanced state: %s1</Spanish>
 	</TEXT>
 	
 	<!-- New Hampshire -->
@@ -5698,83 +5738,83 @@
 	<!-- Maryland -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Old Bay</English>
+		<French>Old Bay</French>
+		<German>Old Bay</German>
+		<Italian>Old Bay</Italian>
+		<Spanish>Old Bay</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Control 70% of the Chesapeake by 1700</English>
+		<French>Control 70% of the Chesapeake by 1700</French>
+		<German>Control 70% of the Chesapeake by 1700</German>
+		<Italian>Control 70% of the Chesapeake by 1700</Italian>
+		<Spanish>Control 70% of the Chesapeake by 1700</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD2_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>B&#38;O Railroad</English>
+		<French>B&#38;O Railroad</French>
+		<German>B&#38;O Railroad</German>
+		<Italian>B&#38;O Railroad</Italian>
+		<Spanish>B&#38;O Railroad</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD2</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</English>
+		<French>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</French>
+		<German>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</German>
+		<Italian>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Italian>
+		<Spanish>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD2_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</English>
+		<French>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</French>
+		<German>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</German>
+		<Italian>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Italian>
+		<Spanish>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD2_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</English>
+		<French>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</French>
+		<German>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</German>
+		<Italian>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Italian>
+		<Spanish>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD2_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</English>
+		<French>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</French>
+		<German>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</German>
+		<Italian>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Italian>
+		<Spanish>Connect Baltimore to the Ohio Watershed by Rail by 1827 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_MD3_TITLE</Tag>
@@ -5793,46 +5833,63 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CHESAPEAKE_TERRITORY</Tag>
+		<English>Chesapeake territory: %s1 / %s2%%</English>
+		<French>Chesapeake territory: %s1 / %s2%%</French>
+		<German>Chesapeake territory: %s1 / %s2%%</German>
+		<Italian>Chesapeake territory: %s1 / %s2%%</Italian>
+		<Spanish>Chesapeake territory: %s1 / %s2%%</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_BO_RAILWAY</Tag>
+		<English>Railroad from Baltimore to Ohio watershed</English>
+		<French>Railroad from Baltimore to Ohio watershed</French>
+		<German>Railroad from Baltimore to Ohio watershed</German>
+		<Italian>Railroad from Baltimore to Ohio watershed</Italian>
+		<Spanish>Railroad from Baltimore to Ohio watershed</Spanish>
+	</TEXT>
+	
 	<!-- Connecticut -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CN1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Connecticut Industry</English>
+		<French>Connecticut Industry</French>
+		<German>Connecticut Industry</German>
+		<Italian>Connecticut Industry</Italian>
+		<Spanish>Connecticut Industry</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CN1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover eight Industrial technologies</English>
+		<French>Be the first to discover eight Industrial technologies</French>
+		<German>Be the first to discover eight Industrial technologies</German>
+		<Italian>Be the first to discover eight Industrial technologies</Italian>
+		<Spanish>Be the first to discover eight Industrial technologies</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CN1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover eight Industrial technologies</English>
+		<French>Be the first to discover eight Industrial technologies</French>
+		<German>Be the first to discover eight Industrial technologies</German>
+		<Italian>Be the first to discover eight Industrial technologies</Italian>
+		<Spanish>Be the first to discover eight Industrial technologies</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CN1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover eight Industrial technologies</English>
+		<French>Be the first to discover eight Industrial technologies</French>
+		<German>Be the first to discover eight Industrial technologies</German>
+		<Italian>Be the first to discover eight Industrial technologies</Italian>
+		<Spanish>Be the first to discover eight Industrial technologies</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CN1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover eight Industrial technologies</English>
+		<French>Be the first to discover eight Industrial technologies</French>
+		<German>Be the first to discover eight Industrial technologies</German>
+		<Italian>Be the first to discover eight Industrial technologies</Italian>
+		<Spanish>Be the first to discover eight Industrial technologies</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_CN2_TITLE</Tag>
@@ -6285,199 +6342,256 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NJ3_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Northeast Megalopolis</English>
+		<French>Northeast Megalopolis</French>
+		<German>Northeast Megalopolis</German>
+		<Italian>Northeast Megalopolis</Italian>
+		<Spanish>Northeast Megalopolis</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NJ3</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Have an average city size of 20 or more in 1950 AD</English>
+		<French>Have an average city size of 20 or more in 1950 AD</French>
+		<German>Have an average city size of 20 or more in 1950 AD</German>
+		<Italian>Have an average city size of 20 or more in 1950 AD</Italian>
+		<Spanish>Have an average city size of 20 or more in 1950 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NJ3_EPIC</Tag>
+		<English>Have an average city size of 20 or more in 1950 AD</English>
+		<French>Have an average city size of 20 or more in 1950 AD</French>
+		<German>Have an average city size of 20 or more in 1950 AD</German>
+		<Italian>Have an average city size of 20 or more in 1950 AD</Italian>
+		<Spanish>Have an average city size of 20 or more in 1950 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NJ3_MARATHON</Tag>
+		<English>Have an average city size of 20 or more in 1950 AD</English>
+		<French>Have an average city size of 20 or more in 1950 AD</French>
+		<German>Have an average city size of 20 or more in 1950 AD</German>
+		<Italian>Have an average city size of 20 or more in 1950 AD</Italian>
+		<Spanish>Have an average city size of 20 or more in 1950 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NJ3_NOTURN</Tag>
+		<English>Have an average city size of 20 or more in 1950 AD</English>
+		<French>Have an average city size of 20 or more in 1950 AD</French>
+		<German>Have an average city size of 20 or more in 1950 AD</German>
+		<Italian>Have an average city size of 20 or more in 1950 AD</Italian>
+		<Spanish>Have an average city size of 20 or more in 1950 AD</Spanish>
 	</TEXT>
 	
 	<!-- New York -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The Big Apple</English>
+		<French>The Big Apple</French>
+		<German>The Big Apple</German>
+		<Italian>The Big Apple</Italian>
+		<Spanish>The Big Apple</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Make New York City the most populous and culturally advanced city in 1900 AD</English>
+		<French>Make New York City the most populous and culturally advanced city in 1900 AD</French>
+		<German>Make New York City the most populous and culturally advanced city in 1900 AD</German>
+		<Italian>Make New York City the most populous and culturally advanced city in 1900 AD</Italian>
+		<Spanish>Make New York City the most populous and culturally advanced city in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Make New York City the most populous and culturally advanced city in 1900 AD</English>
+		<French>Make New York City the most populous and culturally advanced city in 1900 AD</French>
+		<German>Make New York City the most populous and culturally advanced city in 1900 AD</German>
+		<Italian>Make New York City the most populous and culturally advanced city in 1900 AD</Italian>
+		<Spanish>Make New York City the most populous and culturally advanced city in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Make New York City the most populous and culturally advanced city in 1900 AD</English>
+		<French>Make New York City the most populous and culturally advanced city in 1900 AD</French>
+		<German>Make New York City the most populous and culturally advanced city in 1900 AD</German>
+		<Italian>Make New York City the most populous and culturally advanced city in 1900 AD</Italian>
+		<Spanish>Make New York City the most populous and culturally advanced city in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Make New York City the most populous and culturally advanced city in 1900 AD</English>
+		<French>Make New York City the most populous and culturally advanced city in 1900 AD</French>
+		<German>Make New York City the most populous and culturally advanced city in 1900 AD</German>
+		<Italian>Make New York City the most populous and culturally advanced city in 1900 AD</Italian>
+		<Spanish>Make New York City the most populous and culturally advanced city in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY2_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Land of Opportunity</English>
+		<French>Land of Opportunity</French>
+		<German>Land of Opportunity</German>
+		<Italian>Land of Opportunity</Italian>
+		<Spanish>Land of Opportunity</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY2</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive the most cumulative Immigrants in 1900 AD</English>
+		<French>Receive the most cumulative Immigrants in 1900 AD</French>
+		<German>Receive the most cumulative Immigrants in 1900 AD</German>
+		<Italian>Receive the most cumulative Immigrants in 1900 AD</Italian>
+		<Spanish>Receive the most cumulative Immigrants in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY2_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive the most cumulative Immigrants in 1900 AD</English>
+		<French>Receive the most cumulative Immigrants in 1900 AD</French>
+		<German>Receive the most cumulative Immigrants in 1900 AD</German>
+		<Italian>Receive the most cumulative Immigrants in 1900 AD</Italian>
+		<Spanish>Receive the most cumulative Immigrants in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY2_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive the most cumulative Immigrants in 1900 AD</English>
+		<French>Receive the most cumulative Immigrants in 1900 AD</French>
+		<German>Receive the most cumulative Immigrants in 1900 AD</German>
+		<Italian>Receive the most cumulative Immigrants in 1900 AD</Italian>
+		<Spanish>Receive the most cumulative Immigrants in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY2_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive the most cumulative Immigrants in 1900 AD</English>
+		<French>Receive the most cumulative Immigrants in 1900 AD</French>
+		<German>Receive the most cumulative Immigrants in 1900 AD</German>
+		<Italian>Receive the most cumulative Immigrants in 1900 AD</Italian>
+		<Spanish>Receive the most cumulative Immigrants in 1900 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY3_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>America's City</English>
+		<French>America's City</French>
+		<German>America's City</German>
+		<Italian>America's City</Italian>
+		<Spanish>America's City</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_NY3</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</English>
+		<French>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</French>
+		<German>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</German>
+		<Italian>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Italian>
+		<Spanish>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NY3_EPIC</Tag>
+		<English>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</English>
+		<French>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</French>
+		<German>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</German>
+		<Italian>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Italian>
+		<Spanish>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NY3_MARATHON</Tag>
+		<English>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</English>
+		<French>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</French>
+		<German>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</German>
+		<Italian>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Italian>
+		<Spanish>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UHV_NY3_NOTURN</Tag>
+		<English>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</English>
+		<French>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</French>
+		<German>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</German>
+		<Italian>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Italian>
+		<Spanish>Build the Statue of Liberty, the Brooklyn Bridge, the Empire State Building, and the World Trade Center in New York City by 1975 AD</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_MOST_IMMIGRANTS</Tag>
+		<English>State with the most Immigrants: %s1 (%d2) / %s3 (%d4)</English>
+		<French>State with the most Immigrants: %s1 (%d2) / %s3 (%d4)</French>
+		<German>State with the most Immigrants: %s1 (%d2) / %s3 (%d4)</German>
+		<Italian>State with the most Immigrants: %s1 (%d2) / %s3 (%d4)</Italian>
+		<Spanish>State with the most Immigrants: %s1 (%d2) / %s3 (%d4)</Spanish>
 	</TEXT>
 	
 	<!-- Pennsylvania -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Pennsylvania Dutch</English>
+		<French>Pennsylvania Dutch</French>
+		<German>Pennsylvania Dutch</German>
+		<Italian>Pennsylvania Dutch</Italian>
+		<Spanish>Pennsylvania Dutch</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Receive 15 immigrants by 1800 AD</English>
+		<French>Receive 15 immigrants by 1800 AD</French>
+		<German>Receive 15 immigrants by 1800 AD</German>
+		<Italian>Receive 15 immigrants by 1800 AD</Italian>
+		<Spanish>Receive 15 immigrants by 1800 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Steel City</English>
+		<French>Steel City</French>
+		<German>Steel City</German>
+		<Italian>Steel City</Italian>
+		<Spanish>Steel City</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA2_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Secure a total of 8 iron and coal resources by 1910 AD</English>
+		<French>Secure a total of 8 iron and coal resources by 1910 AD</French>
+		<German>Secure a total of 8 iron and coal resources by 1910 AD</German>
+		<Italian>Secure a total of 8 iron and coal resources by 1910 AD</Italian>
+		<Spanish>Secure a total of 8 iron and coal resources by 1910 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_PA3_TITLE</Tag>
@@ -6496,46 +6610,63 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_IMMIGRANT_COUNT</Tag>
+		<English>Number of immigrants received (does not include Slaves or Prisoners): %d1</English>
+		<French>Number of immigrants received (does not include Slaves or Prisoners): %d1</French>
+		<German>Number of immigrants received (does not include Slaves or Prisoners): %d1</German>
+		<Italian>Number of immigrants received (does not include Slaves or Prisoners): %d1</Italian>
+		<Spanish>Number of immigrants received (does not include Slaves or Prisoners): %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_IRON_COAL_RESOURCES</Tag>
+		<English>Iron and coal resources secured: %d1 / %d2</English>
+		<French>Iron and coal resources secured: %d1 / %d2</French>
+		<German>Iron and coal resources secured: %d1 / %d2</German>
+		<Italian>Iron and coal resources secured: %d1 / %d2</Italian>
+		<Spanish>Iron and coal resources secured: %d1 / %d2</Spanish>
+	</TEXT>
+	
 	<!-- Delaware -->
 	<TEXT>
 		<Tag>TXT_KEY_UHV_DE1_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>First State</English>
+		<French>First State</French>
+		<German>First State</German>
+		<Italian>First State</Italian>
+		<Spanish>First State</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_DE1</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Federalism</English>
+		<French>Be the first to discover Federalism</French>
+		<German>Be the first to discover Federalism</German>
+		<Italian>Be the first to discover Federalism</Italian>
+		<Spanish>Be the first to discover Federalism</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_DE1_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Federalism</English>
+		<French>Be the first to discover Federalism</French>
+		<German>Be the first to discover Federalism</German>
+		<Italian>Be the first to discover Federalism</Italian>
+		<Spanish>Be the first to discover Federalism</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_DE1_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Federalism</English>
+		<French>Be the first to discover Federalism</French>
+		<German>Be the first to discover Federalism</German>
+		<Italian>Be the first to discover Federalism</Italian>
+		<Spanish>Be the first to discover Federalism</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_DE1_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be the first to discover Federalism</English>
+		<French>Be the first to discover Federalism</French>
+		<German>Be the first to discover Federalism</German>
+		<Italian>Be the first to discover Federalism</Italian>
+		<Spanish>Be the first to discover Federalism</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_DE2_TITLE</Tag>
@@ -6637,43 +6768,43 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_TITLE</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>King Cotton</English>
+		<French>King Cotton</French>
+		<German>King Cotton</German>
+		<Italian>King Cotton</Italian>
+		<Spanish>King Cotton</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_EPIC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_MARATHON</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA2_NOTURN</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</English>
+		<French>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</French>
+		<German>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</German>
+		<Italian>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Italian>
+		<Spanish>Acquire 4000 gold by trade (trade routes, diplomacy, trade missions) by 1860 AD</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_GA3_TITLE</Tag>

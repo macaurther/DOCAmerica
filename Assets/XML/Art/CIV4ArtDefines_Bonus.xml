@@ -358,6 +358,16 @@
 			<FontButtonIndex>37</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_TIMBER</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.25</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Rubber/silk.nif</NIF>
+			<KFM>Art/Terrain/Resources/Rubber/silk.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Rubber/silk.nif</SHADERNIF>
+			<Button>,Art/Interface/Buttons/WorldBuilder/Spices.dds,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,14</Button>
+			<FontButtonIndex>38</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_TOBACCO</Type>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1.6</fInterfaceScale>

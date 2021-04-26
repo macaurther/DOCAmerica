@@ -27,15 +27,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_PEOPLES</Tag>
-		<English>Anglo-Saxon Peoples</English>
+		<English>Kingdom of %s1</English>
 		<French>
-			<Text>Peuplades anglo-saxonnes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Text>Royaume d'%s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
 		</French>
-		<German>Anglo-Saxon Peoples</German>
-		<Italian>Anglo-Saxon Peoples</Italian>
-		<Spanish>Anglo-Saxon Peoples</Spanish>
+		<German>
+			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Regno del %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Reino de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_DEFAULT</Tag>

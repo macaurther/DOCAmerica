@@ -2,6 +2,14 @@
 <!-- Improvements -->
 <Civ4GameText>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL</Tag>
+		<English>Logging Camp</English>
+		<French>Logging Camp</French>
+		<German>Logging Camp</German>
+		<Italian>Logging Camp</Italian>
+		<Spanish>Logging Camp</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_OCEAN_FISHERY</Tag>
 		<English>Ocean Fishery</English>
 		<French>

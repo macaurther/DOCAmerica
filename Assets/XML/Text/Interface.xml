@@ -33,13 +33,37 @@
 		<Italian>Un'unit&#224; nemica &#232; stata schiavizzata!</Italian>
 		<Spanish>&#161;Una unidad enemiga ha sido esclavizada!</Spanish>
 	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_UP_IMMIGRATION</Tag>
+		<English>Our population in %s1 is growing due to immigrants from %s2!</English>
+		<French>Our population in %s1 is growing due to immigrants from %s2!</French>
+		<German>Our population in %s1 is growing due to immigrants from %s2!</German>
+		<Italian>Our population in %s1 is growing due to immigrants from %s2!</Italian>
+		<Spanish>Our population in %s1 is growing due to immigrants from %s2!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MIGRATION</Tag>
+		<English>Our population in %s1 is growing due to immigrants from %s2, %s3!</English>
+		<French>Our population in %s1 is growing due to immigrants from %s2, %s3!</French>
+		<German>Our population in %s1 is growing due to immigrants from %s2, %s3!</German>
+		<Italian>Our population in %s1 is growing due to immigrants from %s2, %s3!</Italian>
+		<Spanish>Our population in %s1 is growing due to immigrants from %s2, %s3!</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_EMIGRATION</Tag>
-		<English>A part of our population from %s1 is emigrating to the New World!</English>
-		<French>Une partie de la population de %s1 &#233;migre vers le Nouveau Monde !</French>
-		<German>Ein Teil unserer Bev&#246;lkerung aus %s1 wandert in die Neue Welt aus!</German>
-		<Italian>Parte della nostra popolazione emigra in America!</Italian>
-		<Spanish>&#161;Parte de nuestra poblaci&#243;n est&#225; emigrando a Estados Unidos!</Spanish>
+		<English>A part of our population from %s1 is emigrating to %s2, %s3!</English>
+		<French>A part of our population from %s1 is emigrating to %s2, %s3!</French>
+		<German>A part of our population from %s1 is emigrating to %s2, %s3!</German>
+		<Italian>A part of our population from %s1 is emigrating to %s2, %s3!</Italian>
+		<Spanish>A part of our population from %s1 is emigrating to %s2, %s3!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IMMIGRATION_PRISONERS</Tag>
+		<English>New prisoners from the homeland have arrived in %s1!</English>
+		<French>New prisoners from the homeland have arrived in %s1!</French>
+		<German>New prisoners from the homeland have arrived in %s1!</German>
+		<Italian>New prisoners from the homeland have arrived in %s1!</Italian>
+		<Spanish>New prisoners from the homeland have arrived in %s1!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_BASE_COST</Tag>
@@ -1727,20 +1751,36 @@
 		<Spanish>&#161;Independencia!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REFORMATION_MESSAGE</Tag>
-		<English>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</English>
-		<French>Le d&#233;veloppement des universit&#233; a permis la diffusion de nouvelles id&#233;ologies, et des &#233;glises dites protestantes commencent &#224; s'opposer au pouvoir du pape sur la chr&#233;tient&#233;. Adh&#233;rerons-nous &#224; la R&#233;forme ? Nos villes et b&#226;timents catholiques se convertiront alors &#224; la nouvelle religion. Si nous nous convertissons maintenant, nous recevrons un bonus de 500 or pour avoir rapidement pris le contr&#244;le des biens de l'&#201;glise.</French>
-		<German>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</German>
-		<Italian>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</Italian>
-		<Spanish>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</Spanish>
+		<Tag>TXT_KEY_REVOLUTION_MESSAGE</Tag>
+		<English>The King's message is clear: there will be tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</English>
+		<French>The King's message is clear: there will be tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</French>
+		<German>The King's message is clear: there will be tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</German>
+		<Italian>The King's message is clear: there will be tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</Italian>
+		<Spanish>The King's message is clear: there will be tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REFORMATION_TITLE</Tag>
-		<English>The Reformation!</English>
-		<French>La R&#233;forme !</French>
-		<German>The Reformation!</German>
-		<Italian>The Reformation!</Italian>
-		<Spanish>The Reformation!</Spanish>
+		<Tag>TXT_KEY_REVOLUTION_TITLE</Tag>
+		<English>The Revolution!</English>
+		<French>The Revolution!</French>
+		<German>The Revolution!</German>
+		<Italian>The Revolution!</Italian>
+		<Spanish>The Revolution!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PRE_REVOLUTION_MESSAGE</Tag>
+		<English>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</English>
+		<French>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</French>
+		<German>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</German>
+		<Italian>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</Italian>
+		<Spanish>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PRE_REVOLUTION_TITLE</Tag>
+		<English>Unrest in the Colonies!</English>
+		<French>Unrest in the Colonies!</French>
+		<German>Unrest in the Colonies!</German>
+		<Italian>Unrest in the Colonies!</Italian>
+		<Spanish>Unrest in the Colonies!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RELEASE_CIVILIZATION</Tag>
@@ -3207,6 +3247,14 @@
 		<German>[ICON_BULLET]Fortbewegung auf</German>
 		<Italian>[ICON_BULLET]Pu&#242; entrare nell'</Italian>
 		<Spanish>[ICON_BULLET]Pede entrar en</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_PROD_NEW_HAMPSHIRE</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</English>
+		<French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</French>
+		<German>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</German>
+		<Italian>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</Italian>
+		<Spanish>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of the Granite State</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

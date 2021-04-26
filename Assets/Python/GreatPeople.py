@@ -113,7 +113,26 @@ def setup():
 				
 	print lGreatPeople
 
-		
+	
+	
+# DoC USA Methodology:
+# Great Prophets:
+#	Preachers, Religious Leaders, Spiritual People
+# Great Artists:
+#	Writers, Painters, Artists, Musicians, Actors, Directors
+# Great Scientists:
+#	Teachers, People who contributed to knowledge, Civil Rights activists
+# Great Merchants:
+#	Businesspeople, CEOs, Economists, Advertisers, Brand Names
+# Great Engineers:
+#	People who contributed to how things are made, Inventors, Astronauts
+# Great Statesmen:
+#	Politicians, Judges, Presidents, Governors, Congresspeople
+# Great Generals:
+#	Generals, Admirals, Military Leaders
+# Great Spies:
+# 	Spies, Explorers, Underground railroad
+
 dGreatPeople = {
 iCivSpain : {
 	iGreatProphet : [
@@ -560,38 +579,69 @@ iCivEngland : {
 		"Kim Philby", # 20th
 	],
 },
-#MacAurther TODO : All states great people
 iCivVirginia : {
 	iGreatProphet : [
 		iColonialEra,
 		"fPocahontas", # 17th
+		"Samuel Davies", # 18th
+		iExpansionEra,
+		"Nat Turner", # 19th
+		iIndustrialEra,
+		"John Jasper", # 19th
 	],
 	iGreatArtist : [
+		iColonialEra,
+		"William Byrd II", # 18th
 		iExpansionEra,
 		"John Randolph", # 19th
 		"William McGuffey", # 19th
+		iIndustrialEra,
+		"John A. Elder", # 19th
+		"Sir Moses Ezekiel", # 19th
+		"Thomas Nelson Page", # 19th
 		iModernEra,
 		"William Cabell Bruce", # 20th
+		"James Branch Cabell", # 20th
+		"fWilla Cather", # 20th
+		"fEllen Glasgow", # 20th
+		"fAnn Spencer", # 20th
+		"fMaybelle Carter", # 20th
+		"fElla Fitzgerald", # 20th
+		"fKate Smith", # 20th
 		iAtomicEra,
 		"Russell Baker", # 20th
+		"Earl Hamner Jr.", # 20th
+		"James J. Kilpatrick", # 20th
+		"William Styron", # 20th
+		"Tom Wolfe", # 20th
+		"fPatsy Cline", # 20th
 		iInformationEra,
 		"David Baldacci", # 20th
 	],
 	iGreatScientist : [
+		iColonialEra,
+		"William Stith", # 18th
 		iRevolutionaryEra,
 		"George Wythe", # 18th
 		iExpansionEra,
-		"John Tyler", # 19th
 		"Matthew Fontaine Maury", #19th
 		"Ephraim McDowell", # 19th
 		"Edmund Ruffin", # 19th
 		iIndustrialEra,
 		"Walter Reed", # 19th
 		"Booker T. Washington", # 19th
+		iModernEra,
+		"Virginius Dabney", # 20th
+		"Douglas Southall Freeman", # 20th
+		iAtomicEra,
+		"David J. Mays", # 20th
 	],
 	iGreatMerchant : [
 		iColonialEra,
 		"John Rolfe", # 17th
+		"Robert Carter I", # 18th
+		iIndustrialEra,
+		"R. J. Reynolds", # 19th
 		iModernEra,
 		"Carter Glass", # 20th
 		"fMaggie L. Walker", # 20th
@@ -605,6 +655,10 @@ iCivVirginia : {
 		"Cyrus McCormick", # 19th
 		iModernEra,
 		"Richard E. Byrd", # 20th
+		iInformationEra,
+		"fWendy B. Lawrence", # 21st
+		"John McAfee", #21st
+		"Eric Schmidt", # 21st
 	],
 	iGreatStatesman : [
 		iColonialEra,
@@ -621,15 +675,10 @@ iCivVirginia : {
 		"James Madison", # 19th
 		"James Monroe", # 19th
 		"William Henry Harrison", # 19th
-		"Philip P. Barbour", # 19th
+		"John Tyler", # 19th
 		"Henry Clay", # 19th
-		"Peter V. Daniel", # 19th
-		"John B. Floyd", # 19th
 		"Charles Lee", # 19th
 		"John Marshall", # 19th
-		"Edmund Randolph", # 19th
-		"Alexander H. H. Stuart", # 19th
-		"William Wirt", # 19th
 		iIndustrialEra,
 		"Fitzhugh Lee", # 19th
 		iModernEra,
@@ -652,16 +701,17 @@ iCivVirginia : {
 		"Winfield Scott", # 19th
 		"Abel P. Upshur", # 19th
 		iIndustrialEra,
+		"Robert E. Lee", # 19th
 		"Jubal Early", # 19th
 		"A. P. Hill", # 19th
 		"Thomas J. 'Stonewall' Jackson", # 19th
 		"Joseph Johnston", # 19th
-		"Robert E. Lee", # 19th
 		"John Singleton Mosby", # 19th
 		"George Pickett", # 19th
 		"J. E. B. Stuart", # 19th
 		iModernEra,
 		"Claude A. Swanson", # 20th
+		"Matthew Ridgway", # 20th
 		iAtomicEra,
 		"John W. Warner", # 20th
 		iInformationEra,
@@ -670,376 +720,1028 @@ iCivVirginia : {
 	iGreatSpy : [
 		iColonialEra,
 		"Nathaniel Bacon", # 17th
+		iRevolutionaryEra,
+		"James Armistead Lafayette", # 18th
+		"John Champe", # 18th
+		"Philip Mazzei", # 18th
 		iExpansionEra,
 		"William Clark", # 19th
 		"Meriwether Lewis", # 19th
+		"fElizabeth Van Lew", # 19th
 	],
 },
 iCivMassachusetts : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iColonialEra,
+		"Cotton Mather", # 17th
+		iRevolutionaryEra,
+		"Johnny Appleseed", # 18th
+		"Crispus Attucks", # 18th
+		iAtomicEra,
+		"Abbie Hoffman", # 20th
 	],
 	iGreatArtist : [
+		iExpansionEra,
 		"Edgar Allan Poe", # 19th
+		"Nathaniel Hawthorne", # 19th
+		iIndustrialEra,
+		"Emily Dickinson", # 19th
+		"James Abbott McNeill Whistler", # 19th
+		iModernEra,
+		"fBlack Dahlia", # 20th
+		"Theodore Geisel", # 20th
+		"fBette Davis", # 20th
+		"Buckminster Fuller", # 20th
+		"E. E. Cummings", # 20th
+		iAtomicEra,
+		"Kurt Russell", # 20th
+		"Sylvia Plath", # 20th
+		"Jack Lemmon", # 20th
+		"fTammy Grimes", # 20th
+		"Leonard Bernstein", # 20th
+		iInformationEra,
+		"John Krasinski", # 21st
+		"Chris Evans", # 21st
+		"Mark Wahlberg", # 21st
+		"John Cena", # 21st
+		"Steve Carell", # 21st
+		"Matt Damon", # 21st
+		"fMindy Kaling", # 21st
+		"fAmy Poehler", # 21st
 	],
 	iGreatScientist : [
+		iRevolutionaryEra,
 		"Benjamin Franklin", # 18th
+		iExpansionEra,
+		"Henry David Thoreau", # 19th
+		"Ralph Waldo Emerson", # 19th
+		"fSusan B. Anthony", # 19th
+		"fClara Barton", # 19th
+		"William Lloyd Garrison", # 19th
+		"fLucretia Mott", # 19th
+		iIndustrialEra,
+		"W. E. B. Du Bois", # 19th
+		"fAnne Sullivan", # 19th
+		"Charles Sanders Peirce", # 19th
+		iModernEra,
+		"William Moulton Marston", # 20th
+		"Will Durant", # 20th
+		"fFrances Perkins", # 20th
+		iAtomicEra,
+		"Leonard Nimoy", # 20th		# MacAurther TODO: Easter egg with the Sputnik quote?
+		"fChirlane McCray", # 20th
+		"Jared Diamond", # 20th
+		"A. Bartlett Giamatti", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iIndustrialEra,
+		"fHetty Green", # 19th
+		"William C. Durant", # 19th
+		iModernEra,
+		"Jesse Livermore", # 20th
+		iAtomicEra,
+		"Sheldon Adelson", # 20th
+		"Peter Navarro", # 20th
+		"Robert Kraft", # 20th
+		"fEunice Kennedy Shriver", # 20th
+		"Jack Welch", # 20th
+		iInformationEra,
+		"Rob Zombie", # 21st
+		"Reed Hastings", # 21st
+		"f Abigail Johnson", # 21st
+		"Peter R. Orszag", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iExpansionEra,
+		"Samuel Morse", # 19th
+		"Eli Whitney", # 19th
+		iIndustrialEra,
+		"Lewis Howard Latimer", # 19th
+		iModernEra,
+		"Robert H. Goddard", # 20th
+		"Vannevar Bush", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iRevolutionaryEra,
+		"John Adams", # 18th
+		"Samuel Adams", # 18th
+		"John Hancock", # 18th
+		"Elbridge Gerry", # 18th
+		"Jonathan L. Austin", # 18th
+		iExpansionEra,
+		"John Quincy Adams", # 19th
+		"Charles Sumner", # 19th
+		"Horace Mann", # 19th
+		iIndustrialEra,
+		"Oliver Wendell Holmes Jr.", # 19th
+		iAtomicEra,
+		"John F. Kennedy", # 20th
+		"George H. W. Bush", # 20th
+		"Robert F. Kennedy", # 20th
+		"Ted Kennedy", # 20th
+		iInformationEra,
+		"Michael Bloomberg", # 21st
+		"Adam Schiff", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iRevolutionaryEra,
+		"Henry Knox", # 18th
+		"Joseph Warren", # 18th
+		iExpansionEra,
+		"Robert Gould Shaw", # 19th
+		"Albert Pike", # 19th
+		iAtomicEra,
+		"Creighton Abrams", # 20th
+		iInformationEra,
+		"John F. Kelly", # 21st
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iRevolutionaryEra,
+		"Paul Revere", # 18th
+		"Benjamin Edes", # 18th
+		"David Henley", # 18th
+		"Enoch Crosby", # 18th
+		"John Brown", # 18th
+		iExpansionEra,
+		"Albert D. Richardson", # 19th
+		"Genville M. Dodge", # 19th
 	],
 },
 iCivNewHampshire : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iExpansionEra,
+		"fMary Baker Eddy", # 19th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"Charles Dana", # 19th
+		"Horace Creeley", # 19th
+		"fSarah Joesepha Hale", # 19th
+		iIndustrialEra,
+		"Thomas Bailey Aldrich", # 19th
+		"Daniel Chester French", # 19th
+		"Robert Frost", # 19th
+		"Edward McDowell", # 19th
+		"Augustus Saint Gaudens", # 19th
+		iModernEra,
+		"fAmy Beach", # 20th
+		iAtomicEra,
+		"Donald Hall", # 20th
+		"Grace Metalious", # 20th
+		iInformationEra,
+		"Benjamin Champney", # 20th
+		"Ray LaMontagne", # 20th
+		"fJodi Picoult", # 20th
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iAtomicEra,
+		"Alan B. Shepard Jr", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iColonialEra,
+		"Benning Wentworth", # 18th
+		iRevolutionaryEra,
+		"Josiah Bartlett", # 18th
+		"John Langdon", # 18th
+		iExpansionEra,
+		"Franklin Pierce", # 19th
+		"Daniel Webster", # 19th
+		"Salmon Portland Chase", # 19th
+		"Isaac Hill", # 19th
+		"Levi Woodbury", # 19th
+		iIndustrialEra,
+		"Henry Wilson", # 19th
+		iModernEra,
+		"Harlan Fiske Stone", # 20th
+		"John Gilbert Winant", # 20th
+		iAtomicEra,
+		"Sherman Adams", # 20th
+		"Henry Styles Bridges", # 20th
+		iInformationEra,
+		"David Souter", # 20th
+		"John Sununu", # 20th
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iRevolutionaryEra,
+		"John Stark", # 18th
+		"John Sullivan", # 18th
+		"Matthew Thornton", # 18th
+		"Meschech Weare", # 18th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		
 	],
 },
 iCivMaryland : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iModernEra,
+		"Sam Shoemaker", # 20th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"Francis Scott Key", # 19th
+		iModernEra,
+		"Upton Sinclair", # 20th
+		"James Brown", # 20th
+		"Babe Ruth", # 20th
+		"H. L. Mencken", # 20th
+		iAtomicEra,
+		"Frank Zappa", # 20th
+		"David Hasselhoff", # 20th
+		"fAdrienne Rich", # 20th
+		iInformationEra,
+		"Ta-Nehisi Coates", # 21st
+		"Kevin Clash", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iColonialEra,
+		"Benjamin Banneker", # 18th
+		iExpansionEra,
+		"Frederick Douglass", # 19th
+		iIndustrialEra,
+		"Matthew Henson", # 19th
+		iAtomicEra,
+		"John Rawis", # 20th
+		"Martin Rodbell", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iExpansionEra,
+		"Johns Hopkins", # 19th
+		iAtomicEra,
+		"David Rubenstein", # 20th
+		iInformationEra,
+		"Mike Rowe", # 21st
+		"Shane McMahon", # 21st
+		"Daneil Snyder", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iModernEra,
+		"fEdith Clarke", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iRevolutionaryEra,
+		"John Dickinson", # 18th
+		iModernEra,
+		"Alger Hiss", # 20th
+		iAtomicEra,
+		"Spiro Agnew", # 20th
+		"Thurgood Marshall", # 20th
+		"Sargent Shriver", # 20th
+		iInformationEra,
+		"fNancy Pelosi", # 21st
+		"Michael Steele", # 21st
+		"Elijah Cummings", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iAtomicEra,
+		"John Bolton", # 20th
+		iInformationEra,
+		"Michael Flynn", # 21st
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iExpansionEra,
+		"fHarriet Tubman", # 19th
+		"John Wilkes Booth", # 19th
+		iModernEra,
+		"fVirginia Hall", # 20th
+		"fMarguerite Harrison", # 20th
 	],
 },
 iCivConnecticut : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iColonialEra,
+		"Jonathan Edwards", # 17th
+		iRevolutionaryEra,
+		"Lyman Beecher", # 19th
+		iExpansionEra,
+		"Henry Ward Beecher", # 19th
+		"Charles Grandison Finney", # 19th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"Harriet Beecher Stowe", # 19th
+		"Tom Thumb", # 19th
+		iIndustrialEra,
+		"Frederick Law Olmstead", # 19th
+		"fCharlotte Perkins Gilman", # 19th
+		"Charles Ives", # 19th
+		iModernEra,
+		"fKatharine Hepburn", # 20th
+		"Ernest Borgnine", # 20th
+		iAtomicEra,
+		"fGlenn Close", # 20th
+		"Christopher Lloyd", # 20th
+		"Michael Bolton", # 20th
+		iInformationEra,
+		"fAlexandra Breckenridge", # 21st
+		"fMeg Ryan", # 21st
+		"John Mayer", # 21st
+		"Paul Giamatti", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iRevolutionaryEra,
+		"Noah Webster", # 18th
+		iExpansionEra,
+		"Amos Bronson Alcott", # 19th
+		iModernEra,
+		"Benjamin Spock", # 20th
+		"fBarbara McClintock", # 20th
+		"Adwin H. Land", # 20th
+		"Adam Clayton Powell Jr", # 20th
+		"John Hasbrouck Van Vleck", # 20th
+		"Edward Calvin Kendall", # 20th
+		iAtomicEra,
+		"Roger Wolcott Sperry", # 20th
+		"Alfred G. Gilman", # 20th
+		"August Coppola", # 20th
+		iInformationEra,
+		"fCandace Owens", # 21st
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iIndustrialEra,
+		"J. P. Morgan", # 19th
+		iModernEra,
+		"Alfred P. Sloan", # 20th
+		iAtomicEra,
+		"Peter Schiff", # 20th
+		"John C. Malone", # 20th
+		"Lawrence Summers", # 20th
+		"George Akerlof", # 20th
+		iInformationEra,
+		"Seth MacFarlane", # 21st
+		"Paul Lieberstein", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iColonialEra,
+		"John Wilkinson", # 18th
+		iExpansionEra,
+		"Samuel Colt", # 19th
+		iModernEra,
+		"John Franklin Enders", # 20th
+		iAtomicEra,
+		"Vint Cerf", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iRevolutionaryEra,
+		"Lyman Hall", # 18th
+		iModernEra,
+		"Adam Clayton Powell Jr", # 20th
+		iAtomicEra,
+		"Ralph Nader", # 20th
+		"John Lieberman", # 20th
+		iInformationEra,
+		"George W. Bush", # 21st
+		"Paul Manafort", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iRevolutionaryEra,
+		"Benedict Arnold", # 18th
+		"Ethan Allen", # 18th
+		iExpansionEra,
+		"John Brown", # 19th
+		"Gideon Welles", # 19th
+		iAtomicEra,
+		"Roger Stone", # 20th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iRevolutionaryEra,
+		"Nathan Hale", # 18th
+		"Daniel Bissell", # 18th
+		"Silas Deane", # 18th
+		iInformationEra,
+		"Andrew McCabe", # 20th
 	],
 },
 iCivRhodeIsland : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iRevolutionaryEra,
+		"fJemima Wilkinson", # 18th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iIndustrialEra,
+		"George M. Cohan", # 19th
+		iModernEra,
+		"H. P. Lovecraft", # 20th
+		iInformationEra,
+		"fMeredith Vieira", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iIndustrialEra,
+		"Dana C. Munro", # 19th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iIndustrialEra,
+		"Stephen Wilcox", # 19th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iExpansionEra,
+		"Matthew C. Perry", # 19th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		
 	],
 },
 iCivNorthCarolina : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iAtomicEra,
+		"Billy Graham", # 20th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iIndustrialEra,
+		"O. Henry", # 19th
+		iModernEra,
+		"fAva Gardner", # 20th
+		"Thelonious Monk", # 20th
+		"Tomas Clayton Wolfe", # 20th
+		iAtomicEra,
+		"John Coltrane", # 20th
+		"fNina Simone", # 20th
+		"Charlie Daniels", # 20th
+		iInformationEra,
+		"fEvan Rachel Wood", # 21st
+		"Clay Aiken", # 20th
+		"Jermaine Dupri", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iIndustrialEra,
+		"fAnna Julia Cooper", # 19th
+		iAtomicEra,
+		"Kary B. Mullis", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iIndustrialEra,
+		"James Buchanan Duke", # 19th
+		iAtomicEra,
+		"Daniel McFadden", # 20th
+		iInformationEra,
+		"Vincent McMahon", # 21st
+		"Rick Harrison", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iInformationEra,
+		"Chris Hughes", # 21st
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iExpansionEra,
+		"James K. Polk", # 19th
+		iIndustrialEra,
+		"Andrew Johnson", # 19th
+		iAtomicEra,
+		"Robert Byrd", # 20th
+		"fLinda McMahon", # 20th
+		iInformationEra,
+		"Carolyn Maloney", # 20th
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iExpansionEra,
+		"Braxton Bragg", # 19th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iInformationEra,
+		"Edward Snowden", # 21st
 	],
 },
 iCivSouthCarolina : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iAtomicEra,
+		"fAndie MacDowell", # 20th
+		iInformationEra,
+		"Chadwick Boseman", # 21st
+		"fViola Davis", # 20th
+		"Chris Rock", # 20th
+		"Aziz Ansari", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iExpansionEra,
+		"J. Marion Sims", # 19th
+		"John Snow", # 19th
+		"fAngelina Grimke", # 19th
+		iModernEra,
+		"fMary McLeod Bethune", # 20th
+		"John B. Watson", # 20th
+		"Ernest Everett Just", # 20th
+		"Robert F. Furchgott", # 20th
+		iAtomicEra,
+		"Jesse Jackson", # 20th
+		"Charles H. Townes", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iModernEra,
+		"Bernard Mannes Baruch", # 20th
+		iInformationEra,
+		"Brian Hickerson", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iAtomicEra,
+		"Joseph L. Goldstein", # 20th
+		"Charles Bolden", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iRevolutionaryEra,
+		"Christopher Gadsden", # 18th
+		"John Rutledge", # 18th
+		iExpansionEra,
+		"Andrew Jackson", # 19th
+		"Preston Brooks", # 19th
+		iIndustrialEra,
+		"Robert Smalls", # 19th
+		"Benjamin R. Tillman", # 19th
+		iAtomicEra,
+		"Strom Thurmond", # 20th
+		"John Edwards", # 20th
+		iInformationEra,
+		"fNikki Haley", # 21st
+		"Trey Gowdy", # 20th
+		"Lindsey Graham", # 21st
+		"Tom Scott", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iRevolutionaryEra,
+		"Francis Marion", # 18th
+		iExpansionEra,
+		"James Longstreet", # 19th
+		"William Barret Travis", # 19th
+		iAtomicEra,
+		"William Childs Westmoreland", # 20th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iRevolutionaryEra,
+		"John Laurens", # 18th
 	],
 },
 iCivNewJersey : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"James Fenimore Cooper", # 19th
+		iIndustrialEra,
+		"Alfred Stieglitz", # 19th
+		iModernEra,
+		"Frank Sinatra", # 20th
+		"Jerry Lewis", # 20th
+		"Norman Lloyd", # 20th
+		iAtomicEra,
+		"John Travolta", # 20th
+		"fMeryl Streep", # 20th
+		"Bruce Springsteen", # 20th
+		"Jon Bon Jovi", # 20th
+		iInformationEra,
+		"fWhitney Houston", # 20th
+		"George R. R. Martin", # 21st
+		"fJane Krakowski", # 20th
+		"Danny DeVito", # 21st
+		"Peter Dinklage", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iIndustrialEra,
+		"Nicholas Murray Butler", # 19th
+		iModernEra,
+		"Paul Robeson", # 20th
+		"fAlice Paul", # 20th
+		"fVirginia Apgar", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iAtomicEra,
+		"Michael Douglas", # 20th
+		"Martha Stewart", # 20th
+		"Lawrence Kudlow", # 20th
+		"Wilbur Ross", # 20th
+		iInformationEra,
+		"Shaquille O'Neal", # 20th
+		"Richard Thaler", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iModernEra,
+		"fAnne Morrow Lindbergh", # 20th
+		iAtomicEra,
+		"Buzz Aldrin", # 20th
+		iInformationEra,
+		"Scott Kelly", # 21st
+		"Mark Kelly", # 21st
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iRevolutionaryEra,
+		"Aaron Burr", # 18th
+		"Luther Martin", # 18th
+		iIndustrialEra,
+		"Grover Cleveland", # 19th
+		"Garret Hobart", # 19th
+		iInformationEra,
+		"Jared Kushner", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iModernEra,
+		"William Halsey Jr", # 20th
+		iAtomicEra,
+		"Norman Schwarzkopf Jr", # 20th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iRevolutionaryEra,
+		"John Honeyman", # 18th
+		iAtomicEra,
+		"Louis J. Freeh", # 20th
 	],
 },
 iCivNewYork : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iModernEra,
+		"Menachem Mendel Schneerson", # 20th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"Herman Melville", # 19th
+		iModernEra,
+		"Herman J. Mankiewicz", # 20th
+		"J. D. Salinger", # 20th
+		"fLucille Ball", # 20th
+		"Danny Kaye", # 20th
+		"Humphrey Bogart", # 20th
+		"fRita Hayworth", # 20th
+		"fMarion Davies", # 20th
+		"Jackie Gleason", # 20th
+		iAtomicEra,
+		"Billy Joel", # 20th
+		"Stanley Kubrick", # 20th
+		"Martin Scorsese", # 20th
+		"John Williams", # 20th
+		"Arthur Miller", # 20th
+		"fJane Fonda", # 20th
+		"Stan Lee", # 20th
+		"James Baldwin", # 20th
+		iInformationEra,
+		"fLady Gaga", # 21st
+		"fScarlett Johansson", # 21st
+		"Whoopi Goldberg", # 21st
+		"Tom Cruise", # 21st
+		"Denzel Washington", # 21st
+		"fJennifer Lopez", # 21st
+		"Lin-Maneul Miranda", # 21st
+		"The Notorious B. I. G.", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iExpansionEra,
+		"fSojourner Truth", # 19th
+		iAtomicEra,
+		"Carl Sagan", # 20th
+		"fGrace Hopper", # 20th
+		"Larry King", # 20th
+		"Louis Farrakhan", # 20th
+		iInformationEra,
+		"Neil deGrasse Tyson", # 21st
+		"Anderson Cooper", # 21st
+		"Chris Cuomo", # 21st
 	],
 	iGreatMerchant : [
+		iRevolutionaryEra,
+		"fElizabeth Schuyler", # 18th
+		"John Jacob Astor", # 19th
+		iExpansionEra,
 		"Cornelius Vanderbilt", # 19th
+		"Daniel Drew", # 19th
+		iIndustrialEra,
+		"John D. Rockefeller", # 19th
+		"James Fisk", # 19th
+		"Henry Morrison Flagler", # 19th
+		"Jay Gould", # 19th
+		"E. H. Harriman", # 19th
+		"Henry Huttleston Rogers", # 19th
+		iModernEra,
+		"fHelena Rubinstein", # 20th
+		"Thomas Watson", # 20th
+		iAtomicEra,
+		"Mel Brooks", # 20th
+		"Phil Spector", # 20th
+		"Fred Trump", # 20th
+		iInformationEra,
+		"Michael Jordan", # 21st
+		"Jordan Belfort", # 21st
+		"Alec Baldwin", # 21st
+		"Mike Tyson", # 21st
+		"Joss Whedon", # 21st
+		"Martin Shkreli", # 21st
+		"Steven Mnuchin", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iRevolutionaryEra,
+		"John Stevens", # 19th
+		iModernEra,
+		"Richard Feynman", # 20th
+		"J. Robert Oppenheimer", # 20th
+		iInformationEra,
+		"Mark Zuckerberg", # 21st
+		"Larry Ellison", # 20th
 	],
 	iGreatStatesman : [
+		iRevolutionaryEra,
 		"Thomas Paine", # 18th
+		"Alexander Hamilton", # 18th
+		iExpansionEra,
+		"Martin Van Buren", # 19th
+		"Millard Fillmore", # 19th
+		iModernEra,
+		"Theodore Roosevelt", # 20th
+		"Franklin Delano Roosevelt", # 20th
+		"fEleanor Roosevelt", # 20th
+		"Alan Dershowitz", # 20th
+		iAtomicEra,
+		"Henry Kissinger", # 20th
+		iInformationEra,
+		"fRuth Bader Ginsburg", # 21st
+		"Donald Trump", # 21st
+		"Bernie Sanders", # 21st
+		"Douglas Emhoff", # 21st
+		"fSonia Sotomayor", # 21st
+		"Andrew Cuomo", # 21st
+		"Ronan Farrow", # 21st
+		"Bill de Blasio", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iRevolutionaryEra,
+		"Henry K. Van Rensselaer", # 18th
+		iModernEra,
+		"John Basilone", # 20th
+		iInformationEra,
+		"Colin Powell", # 21st
 	],
 	iGreatSpy : [
+		iRevolutionaryEra,
 		"Benjamin Tallmadge", # 18th
+		"Hercules Mulligan", # 18th
+		"Abraham Woodhull", # 18th
+		"James Rivington", # 18th
+		iExpansionEra,
+		"George Curtis", # 19th
+		"fKate Warne", # 19th
+		"Lafayette C. Baker", # 19th
+		iModernEra,
+		"William J. Donovan", # 20th
+		"Sidney Mashbir", # 20th
+		iInformationEra,
+		"James Comey", # 21st
 	],
 },
 iCivPennsylvania : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iIndustrialEra,
+		"Charles Taze Russell", # 19th
+		iInformationEra,
+		"David Miscavige", # 20th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"Louisa May Alcott", # 19th
+		iIndustrialEra,
+		"fMary Cassatt", # 19th
+		iModernEra,
+		"fBillie Holiday", # 20th
+		"James Stewart", # 20th
+		"Lionel Barrymore", # 20th
+		iAtomicEra,
+		"Andy Warhol", # 20th
+		"Fred Rogers", # 20th
+		"Bob Saget", # 20th
+		iInformationEra,
+		"fTaylor Swift", # 21st
+		"Will Smith", # 21st
+		"Kevin Hart", # 21st
+		"fTina Fey", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iModernEra,
+		"B. F. Skinner", # 20th
+		"Margaret Mead", # 20th
+		iAtomicEra,
+		"Noam Chomsky", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iIndustrialEra,
+		"Andrew Carnegie", # 19th
+		"Jay Cooke", # 19th
+		"Henry Clay Frick", # 19th
+		"Andrew Mellon", # 19th
+		"Charles M. Schwab", # 19th
+		iModernEra,
+		"A. S. W. Rosenbach", # 20th
+		iAtomicEra,
+		"Lee Iacocca", # 20th
+		"David Tepper", # 20th
+		iInformationEra,
+		"Mark Cuban", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iRevolutionaryEra,
+		"John Sellers", # 18th
+		iAtomicEra,
+		"Amar Bose", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iRevolutionaryEra,
+		"William Bingham", # 18th
+		iExpansionEra,
+		"James Buchanan", # 19th
+		iAtomicEra,
+		"Joe Biden", # 20th
+		"Ron Paul", # 20th
+		iInformationEra,
+		"Rand Paul", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iExpansionEra,
+		"George B. McClellan", # 19th
+		iModernEra,
+		"George Marshall", # 20th
+		"Richard Winters", # 20th
+		iInformationEra,
+		"H. R. McMaster", # 21st
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		iRevolutionaryEra,
+		"John Clark", # 18th
+		"fLydia Darragh", # 18th
+		iModernEra,
+		"Eliot Ness", # 20th
+		"Sylvanus Morley", # 20th
 	],
 },
 iCivDelaware : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iColonialEra,
+		"Samuel Davies", # 18th
+		iExpansionEra,
+		"George David Cummins", # 19th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iExpansionEra,
+		"Robert Montgomery Bird", # 19th
+		iIndustrialEra,
+		"Howard Pyle", # 19th
+		iModernEra,
+		"John P. Marquand", # 20th
+		iAtomicEra,
+		"Clifford Brown", # 20th
+		iInformationEra,
+		"Aubrey Plaza", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iExpansionEra,
+		"Mary Ann Shadd", # 19th
+		iIndustrialEra,
+		"Annie Jump Cannon", # 19th
+		iModernEra,
+		"Joseph H. Burchenal", # 20th
+		iAtomicEra,
+		"Henry Heimlich", # 20th
+		"Alfred D. Chandler Jr", # 20th
+		"Henry Stommel", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iIndustrialEra,
+		"Pierre S. du Pont", # 19th
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iRevolutionaryEra,
+		"Oliver Evans", # 18th
+		iExpansionEra,
+		"E. R. Squibb", # 19th
+		iModernEra,
+		"Walter McCrone", # 20th
+		iAtomicEra,
+		"Harry Coover", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iRevolutionaryEra,
+		"Caesar Rodney", # 18th
+		iExpansionEra,
+		"Thomas F. Bayard", # 19th
+		"John M. Clayton", # 19th
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iRevolutionaryEra,
+		"Jacob Jones", # 18th
+		iExpansionEra,
+		"Thomas Macdonough", # 19th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		
 	],
 },
 iCivGeorgia : {
 	iGreatProphet : [
-		"Joseph Smith", # 19th
+		iModernEra,
+		"Elijah Muhammad", # 20th
+		iAtomicEra,
+		"Martin Luther King Jr", # 20th
+		iInformationEra,
+		"Alan Jackson", # 20th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
+		iModernEra,
+		"fMargaret Mitchell", # 20th
+		iAtomicEra,
+		"Jackie Robinson", # 20th
+		"Ray Charles", # 20th
+		"Otis Redding", # 20th
+		"Claude Akins", # 20th
+		iInformationEra,
+		"Kanye West", # 21st
+		"Laurence Fishburne", # 21st
+		"fJulia Roberts", # 21st
+		"fDakota Fanning", # 21st
+		"Hulk Hogan", # 21st
+		"Wayne Brady", # 21st
+		"2 Chainz", # 21st
+		"Chris Tucker", # 21st
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
+		iIndustrialEra,
+		"Doc Holiday", # 19th
+		iModernEra,
+		"Alfred Blalock", # 20th
+		iAtomicEra,
+		"DeForest Kelley", # 20th
+		"Hosea Williams", # 20th
+		iInformationEra,
+		"fNancy Grace", # 21st
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
+		iIndustrialEra,
+		"Asa Griggs Candler", # 19th
+		iAtomicEra,
+		"fLaTanya Richardson", # 20th
+		iInformationEra,
+		"Ben Bernanke", # 21st
+		"Spike Lee", # 21st
+		"Ryan Seacrest", # 21st
 	],
 	iGreatEngineer : [
-		"Thomas Edison", # 19th
+		iModernEra,
+		"George P. Burdell", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
+		iExpansionEra,
+		"Alexander Stephens", # 19th
+		iAtomicEra,
+		"Jimmy Carter", # 20th
+		"Clarence Thomas", # 20th
+		"George Wallace", # 20th
+		iInformationEra,
+		"fSally Yates", # 21st
+		"Nathan Deal", # 21st
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
+		iIndustrialEra,
+		"Henry Ossian Flipper", # 19th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
+		
 	],
 },
 iCivAmerica : {
 	iGreatProphet : [
 		"Joseph Smith", # 19th
-		"fMary Baker Eddy", # 19th
 		"fEllen G. White", # 19th
-		"Charles Taze Russell", # 19th
 		iAtomicEra,
-		"Menachem Mendel Schneerson", # 20th
 		"L. Ron Hubbard", # 20th
-		"Billy Graham", # 20th
 		"Malcolm Little", # 20th
 	],
 	iGreatArtist : [
-		"Edgar Allan Poe", # 19th
 		"Mark Twain", # 19th
-		"fEmily Dickinson", # 19th
-		"Herman Melville", # 19th
-		"fMary Cassatt", # 19th
 		iAtomicEra,
-		"Howard Phillips Lovecraft", # 20th
 		"Ernest Hemingway", # 20th
-		"Charlie Chaplin", # 20th
 		"Elvis Presley", # 20th
 		"fHarper Lee", # 20th
-		"Andy Warhol", # 20th
 		"Miles Davis", # 20th
 		"Jimi Hendrix", # 20th
 	],
 	iGreatScientist : [
-		"Benjamin Franklin", # 18th
 		"fNettie Stevens", # 19th
 		iAtomicEra,
 		"Arthur Compton", # 20th
 		"Edwin Hubble", # 20th
-		"John von Neumann", # 20th
 		"Glenn Seaborg", # 20th
-		"Robert Oppenheimer", # 20th
-		"Richard Feynman", # 20th
-		"fBarbara McClintock", # 20th
-		"fGrace Hopper", # 20th
 	],
 	iGreatMerchant : [
-		"Cornelius Vanderbilt", # 19th
-		"John D. Rockefeller", # 19th
-		"Andrew Carnegie", # 19th
-		"fHetty Green", # 19th
-		"John Pierpont Morgan", # 19th
 		iAtomicEra,
-		"fHelena Rubinstein", # 20th
 		"William Edward Boeing", # 20th
 		"Walt Disney", # 20th
 		"Ray Kroc", # 20th
-		"Thomas Watson", # 20th
 		"Sam Walton", # 20th
 		"Bill Gates", # 20th
 	],
@@ -1056,45 +1758,27 @@ iCivAmerica : {
 		"fMargaret Hutchinson Rousseau", # 20th
 	],
 	iGreatStatesman : [
-		"Thomas Paine", # 18th
-		"Thomas Jefferson", # 18th
-		"Benjamin Franklin", # 18th
 		iIndustrialEra,
-		"Andrew Jackson", # 19th
-		"fSojourner Truth", # 19th
-		"Frederick Douglass", # 19th
 		"fVictoria Claflin Woodhull", # 19th
-		"fSusan B. Anthony", # 19th
 		"fJane Addams", # 19th
 		iAtomicEra,
-		"fEleanor Roosevelt", # 20th
 		"George Kennan", # 20th
 		"Martin Luther King", # 20th
-		"Henry Kissinger", # 20th
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
-		"Winfield Scott", # 19th
 		"Ulysses S. Grant", # 19th
-		"Robert E. Lee", # 19th
 		iAtomicEra,
 		"John J. Pershing", # 20th
 		"Dwight D. Eisenhower", # 20th
 		"George Patton", # 20th
 		"Douglas MacArthur", # 20th
-		"Matthew Ridgway", # 20th
-		"Norman Schwarzkopf", # 20th
 	],
 	iGreatSpy : [
-		"Benjamin Tallmadge", # 18th
 		"Allan Pinkerton", # 19th
 		"fBelle Boyd", # 19th
-		"fElizabeth Van Lew", # 19th
 		iAtomicEra,
-		"William J. Donovan", # 20th
 		"J. Edgar Hoover", # 20th
 		"James Jesus Angleton", # 20th
-		"fVirginia Hall", # 20th
 		"fElizabeth Friedman", # 20th
 	],
 },

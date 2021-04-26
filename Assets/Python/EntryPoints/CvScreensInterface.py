@@ -916,16 +916,38 @@ def getUHVTileInfo(argsList):
 		pass
 			
 	elif iPlayer == iVirginia:
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iVirginia][0], Areas.tGenericArea[iVirginia][1], Areas.tGenericAreaExceptions[iVirginia]):
+			return 0
+		
+		'''if utils.isPlotInArea((x, y), Areas.tGenericArea[iWestVirginia][0], Areas.tGenericArea[iWestVirginia][1], Areas.tGenericAreaExceptions[iWestVirginia]:
+			return 1
+		
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iKentucky][0], Areas.tGenericArea[iKentucky][1], Areas.tGenericAreaExceptions[iKentucky]:
+			return 2'''
 		pass
 		
 	elif iPlayer == iMassachusetts:
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iMassachusetts][0], Areas.tGenericArea[iMassachusetts][1], Areas.tGenericAreaExceptions[iMassachusetts]):
+			return 3
+		
+		'''if utils.isPlotInArea((x, y), Areas.tGenericArea[iMaine][0], Areas.tGenericArea[iMaine][1], Areas.tGenericAreaExceptions[iMaine]):
+			return 4'''
 		pass
 		
 	elif iPlayer == iNewHampshire:
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iNewHampshire][0], Areas.tGenericArea[iNewHampshire][1], Areas.tGenericAreaExceptions[iNewHampshire]):
+			return 5
+		
+		'''if utils.isPlotInArea((x, y), Areas.tGenericArea[iVermont][0], Areas.tGenericArea[iVermont][1], Areas.tGenericAreaExceptions[iVermont]):
+			return 6'''
 		pass
 		
 	elif iPlayer == iMaryland:
-		pass
+		if utils.isPlotInArea((x, y), vic.tChesapeakeBL, vic.tChesapeakeTR, vic.tChesapeakeExceptions) and CyGlobalContext().getMap().plot(x, y).isCoastalLand():
+			return 7
+		
+		if (x,y) in vic.lOhioWatershed:
+			return 8
 		
 	elif iPlayer == iConnecticut:
 		pass
@@ -934,7 +956,11 @@ def getUHVTileInfo(argsList):
 		pass
 		
 	elif iPlayer == iNorthCarolina:
-		pass
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iNorthCarolina][0], Areas.tGenericArea[iNorthCarolina][1], Areas.tGenericAreaExceptions[iNorthCarolina]):
+			return 9
+		
+		'''if utils.isPlotInArea((x, y), Areas.tGenericArea[iTennessee][0], Areas.tGenericArea[iTennessee][1], Areas.tGenericAreaExceptions[iTennessee]):
+			return 10'''
 		
 	elif iPlayer == iSouthCarolina:
 		pass
@@ -952,7 +978,14 @@ def getUHVTileInfo(argsList):
 		pass
 		
 	elif iPlayer == iGeorgia:
-		pass
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iGeorgia][0], Areas.tGenericArea[iGeorgia][1], Areas.tGenericAreaExceptions[iGeorgia]):
+			return 11
+		
+		'''if utils.isPlotInArea((x, y), Areas.tGenericArea[iAlabama][0], Areas.tGenericArea[iAlabama][1], Areas.tGenericAreaExceptions[iAlabama]):
+			return 12
+		
+		if utils.isPlotInArea((x, y), Areas.tGenericArea[iMississippi][0], Areas.tGenericArea[iMississippi][1], Areas.tGenericAreaExceptions[iMississippi]):
+			return 13'''
 		
 	elif iPlayer == iAmerica:
 		pass

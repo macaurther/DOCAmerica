@@ -347,96 +347,11 @@ class Religions:
 				lConvertedCities = [city for city in lReplace if city.getOwner() == iPlayer]
 				if 2 * len(lConvertedCities) >= gc.getPlayer(iPlayer).getNumCities():
 					gc.getPlayer(iPlayer).setLastStateReligion(iCatholicism)
-
-#REFORMATION
-
-	def showPopup(self, popupID, title, message, labels):
-		popup = Popup.PyPopup(popupID, EventContextTypes.EVENTCONTEXT_ALL)
-		popup.setHeaderString(title)
-		popup.setBodyString(message)
-		for i in labels:
-		    popup.addButton( i )
-		popup.launch(len(labels) == 0)
-
-	def reformationPopup(self):
-		self.showPopup(7624, CyTranslator().getText("TXT_KEY_REFORMATION_TITLE", ()), CyTranslator().getText("TXT_KEY_REFORMATION_MESSAGE",()), (CyTranslator().getText("TXT_KEY_REFORMATION_1", ()), CyTranslator().getText("TXT_KEY_REFORMATION_2", ()), CyTranslator().getText("TXT_KEY_REFORMATION_3", ())))
-
-	def eventApply7624(self, popupReturn):
-		iHuman = utils.getHumanID()
-		if popupReturn.getButtonClicked() == 0:
-			self.embraceReformation(iHuman)
-		elif popupReturn.getButtonClicked() == 1:
-			self.tolerateReformation(iHuman)
-		elif popupReturn.getButtonClicked() == 2:
-			self.counterReformation(iHuman)
-
+	
 	def onTechAcquired(self, iTech, iPlayer):
-		#MacAurther TODO
-		#if iTech == iAcademia:
-		#	if gc.getPlayer(iPlayer).getStateReligion() == iCatholicism:
-		#		if not gc.getGame().isReligionFounded(iProtestantism):
-		#			gc.getPlayer(iPlayer).foundReligion(iProtestantism, iProtestantism, True)
-		#			self.reformation()
-					
-		for iReligion in range(iNumReligions):
-			self.checkLateReligionFounding(iReligion, iTech)
-					
+		pass
+	
 	def onBuildingBuilt(self, city, iPlayer, iBuilding):
 		pass
 	
-	def chooseProtestantism(self, iCiv):
-		iRand = gc.getGame().getSorenRandNum(100, 'Protestantism Choice')
-		return iRand >= getCatholicPreference(iCiv)
-		
-	def isProtestantAnyway(self, iCiv):
-		iRand = gc.getGame().getSorenRandNum(100, 'Protestantism anyway')
-		return iRand >= (getCatholicPreference(iCiv)+50)/2
-
-	def reformation(self):
-		#MacAurther TODO
-		'''for iPlayer in range(iNumPlayers):
-			if [city for city in utils.getCityList(iPlayer) if city.getOwner() == iPlayer]:
-				self.reformationChoice(iPlayer)
-		
-		for iPlayer in range(iNumPlayers):
-			if data.players[iPlayer].iReformationDecision == 2:
-				for iTargetPlayer in range(iNumPlayers):
-					if data.players[iTargetPlayer].iReformationDecision == 0 and utils.getHumanID() != iTargetPlayer and not utils.isAVassal(iTargetPlayer):
-						gc.getTeam(iPlayer).declareWar(iTargetPlayer, True, WarPlanTypes.WARPLAN_DOGPILE)
-						
-		pHolyCity = gc.getGame().getHolyCity(iProtestantism)
-		if data.players[pHolyCity.getOwner()].iReformationDecision == 0:
-			pHolyCity.setNumRealBuilding(iProtestantShrine, 1)'''
-		
-	def reformationChoice(self, iPlayer):
-		pPlayer = gc.getPlayer(iPlayer)
-		
-		if utils.getHumanID() == iPlayer: return
-	
-		if pPlayer.getStateReligion() == iCatholicism:
-			if self.chooseProtestantism(iPlayer):
-				self.embraceReformation(iPlayer)
-			elif self.isProtestantAnyway(iPlayer) or utils.isAVassal(iPlayer):
-				self.tolerateReformation(iPlayer)
-			else:
-				self.counterReformation(iPlayer)
-		else:
-			self.tolerateReformation(iPlayer)
-					
-	def embraceReformation(self, iCiv):
-		pass
-		
-	def tolerateReformation(self, iCiv):
-		pass
-					
-	def counterReformation(self, iCiv):
-		pass
-		
-
-	def reformationyes(self, iCiv): # Unused
-		pass
-
-	def reformationno(self, iCiv): # Unused
-		pass
-					
 rel = Religions()

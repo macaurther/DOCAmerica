@@ -206,21 +206,21 @@ class BugEventManager(CvEventManager.CvEventManager):
 
 		self.CustomEvents = {
 		    7614 : ('RiseAndFallPopupEvent', self.rnfEventApply7614, self.rnfEventBegin7614),
-		    7615 : ('FlipPopupEvent', self.rnfEventApply7615, self.rnfEventBegin7615),
-		    7616 : ('VotePopupEvent', self.congEventApply7616, self.congEventBegin7616),
-		    7617 : ('AskCityPopupEvent', self.congEventApply7617, self.congEventBegin7617),
-		    7618 : ('DecisionPopupEvent', self.congEventApply7618, self.congEventBegin7618),
-		    7619 : ('InvitationPopupEvent', self.congEventApply7619, self.congEventBegin7619),
-		    7620 : ('BribePopupEvent', self.congEventApply7620, self.congEventBegin7620),
-		    7621 : ('GoldPopupEvent', self.congEventApply7621, self.congEventBegin7621),
-		    7622 : ('ResurrectionEvent', self.rnfEventApply7622, self.rnfEventBegin7622),
-		    7623 : ('AskNoCityPopupEvent', self.congEventApply7623, self.congEventBegin7623),
-		    #7624 : ('ReformationEvent', self.relEventApply7624, self.relEventBegin7624),
-		    7625 : ('AskColonialCityEvent', self.rnfEventApply7625, self.rnfEventBegin7625),
-		    #7626 : ('OrthodoxyEvent', self.relEventApply7626, self.relEventBegin7626),
-		    #7627 : ('PersecutionEvent', self.rnfEventApply7627, self.rnfEventBegin7627),
-		    7628 : ('RespawnPopupEvent', self.rnfEventApply7628, self.rnfEventBegin7628),
-		    7629 : ('ByzantineBriberyEvent', self.rnfEventApply7629, self.rnfEventBegin7629),
+            7615 : ('FlipPopupEvent', self.rnfEventApply7615, self.rnfEventBegin7615),
+            7616 : ('VotePopupEvent', self.congEventApply7616, self.congEventBegin7616),
+            7617 : ('AskCityPopupEvent', self.congEventApply7617, self.congEventBegin7617),
+            7618 : ('DecisionPopupEvent', self.congEventApply7618, self.congEventBegin7618),
+            7619 : ('InvitationPopupEvent', self.congEventApply7619, self.congEventBegin7619),
+            7620 : ('BribePopupEvent', self.congEventApply7620, self.congEventBegin7620),
+            7621 : ('GoldPopupEvent', self.congEventApply7621, self.congEventBegin7621),
+            7622 : ('ResurrectionEvent', self.rnfEventApply7622, self.rnfEventBegin7622),
+            7623 : ('AskNoCityPopupEvent', self.congEventApply7623, self.congEventBegin7623),
+            #7624 : ('RevolutionEvent', self.revEventApply7624, self.revEventBegin7624),		#MacAurther
+			7625 : ('AskColonialCityEvent', self.rnfEventApply7625, self.rnfEventBegin7625),
+			#7626 : ('PreRevolutionEvent', self.revEventApply7626, self.revEventBegin7626),	#MacAurther
+			#7627 : ('PersecutionEvent', self.rnfEventApply7627, self.rnfEventBegin7627),
+			7628 : ('RespawnPopupEvent', self.rnfEventApply7628, self.rnfEventBegin7628),
+			7629 : ('ByzantineBriberyEvent', self.rnfEventApply7629, self.rnfEventBegin7629),
 		}
 
 		# --> INSERT EVENT HANDLER INITIALIZATION HERE <--
@@ -639,10 +639,10 @@ class BugEventManager(CvEventManager.CvEventManager):
 	def congEventApply7623(self, playerID, netUserData, popupReturn):
 		self.cong.eventApply7623(popupReturn)
 
-	def relEventBegin7624(self):
+	def revEventBegin7624(self):
 		pass
 
-	def relEventApply7624(self, playerID, netUserData, popupReturn):
+	def revEventApply7624(self, playerID, netUserData, popupReturn):
 		self.rel.eventApply7624(popupReturn)
 
 	def rnfEventApply7625(self, playerID, netUserData, popupReturn):
@@ -651,10 +651,10 @@ class BugEventManager(CvEventManager.CvEventManager):
 	def rnfEventBegin7625(self):
 		pass
 	   
-	def relEventApply7626(self, playerID, netUserData, popupReturn):
+	def revEventApply7626(self, playerID, netUserData, popupReturn):
 		self.rel.eventApply7626(popupReturn)
 	    
-	def relEventBegin7626(self):
+	def revEventBegin7626(self):
 		pass
 	    
 	def rnfEventApply7627(self, playerID, netUserData, popupReturn):

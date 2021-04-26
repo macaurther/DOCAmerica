@@ -27,9 +27,9 @@ iNumMajorPlayers = iNumPlayers
 iNumActivePlayers = iNumPlayers
 
 iIndependent = iNumPlayers		#18
-iIndependent2 = iNumPlayers+1	        #19
+iIndependent2 = iNumPlayers+1	#19
 iNative = iNumPlayers+2			#20
-iNative2 = iNumPlayers+3	        #21
+iNative2 = iNumPlayers+3		#21
 iNumTotalPlayers = iNumPlayers+4
 iBarbarian = iNumPlayers+4		#22
 iNumTotalPlayersB = iBarbarian+1
@@ -51,22 +51,25 @@ iCivVirginia, iCivIndependent, iCivIndependent2, iCivNative, iCivNative2, iCivBa
 
 #for Congresses and Victory
 lCivGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
+		[iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia]] #American
 
 lCivStabilityGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
+		[iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia]] #American
 		
 lTechGroups = [[iSpain, iFrance, iEngland],  #Euros
-		[iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia]] #American
+		[iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia]] #American
 
 
 lCivBioOldWorld = [iSpain, iFrance, iEngland, iAmerica, iCanada, iIndependent, iIndependent2]
-lCivBioNewWorld = [iAmerica, iCanada, iCivConnecticut, iCivDelaware, iCivGeorgia, iCivMaryland, iCivMassachusetts, iCivNewHampshire, 
-		iCivNewJersey, iCivNewYork, iCivNorthCarolina, iCivPennsylvania, iCivRhodeIsland, iCivSouthCarolina, iCivVirginia, 
+lCivBioNewWorld = [iAmerica, iCanada, iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, 
+		iNewJersey, iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia, 
 		iNative, iNative2, iBarbarian]
+
+lCivStates = [iConnecticut, iDelaware, iGeorgia, iMaryland, iMassachusetts, iNewHampshire, iNewJersey,
+		iNewYork, iNorthCarolina, iPennsylvania, iRhodeIsland, iSouthCarolina, iVirginia, ]
 
 
 #for Victory and the handler
@@ -166,7 +169,6 @@ lOlderNeighbours = [
 # civ birth dates
 
 # converted to years - edead
-# MacAurther TODO: Get the scenario years right
 tBirth = (
 1600,		# Spain
 1600,		# France
@@ -174,16 +176,16 @@ tBirth = (
 1607,		# Virginia
 1620,		# Massachusetts
 1623,		# New Hampshire
-1634,		# Maryland
-1635,		# Connecticut
+1634,		# Maryland 
+1635,		# Connecticut 
 1636,		# Rhode Island
 1653,		# North Carolina
 1663,		# South Carolina
-1664,		# New Jersey
-1664,		# New York
-1682,		# Pennsylvania
-1682,		# Delaware
-1732,		# Georgia
+1664,		# New Jersey 
+1664,		# New York 
+1682,		# Pennsylvania 
+1682,		# Delaware 
+1732,		# Georgia 
 1787,		# America
 1867,		# Canada
 1600, # 0,
@@ -432,8 +434,9 @@ lCatholicStart = [iSpain, iFrance]
 lEpiscopalianStart = [iEngland, iVirginia, iNorthCarolina, iSouthCarolina, iNewJersey, iNewYork, iDelaware, iCanada]
 
 # corporations
-iNumCorporations = 9
-(iSilkRoute, iTradingCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry, iComputerIndustry) = range(iNumCorporations)
+iNumCorporations = 12
+(iSilkRoute, iTradingCompany, iFurTrade, iTimberIndustry, iTobaccoIndustry, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry,
+iLuxuryIndustry, iComputerIndustry) = range(iNumCorporations)
 
 # initialise tech variables to unit indices from XML
 
@@ -500,22 +503,26 @@ iGreatSpy : iFemaleGreatSpy,
 }
 
 # initialise bonuses variables to bonuses IDs from WBS
-iNumBonuses = 41
-(iAluminium, iCamel, iCoal, iCopper, iHorse, iIron, iMarble, iOil, iStone, iUranium, iBanana, iClam, iCorn, iCow, iCrab,
-iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, iGold, iIncense, iIvory, iPearls, iSilk, iSilver, iSpices,
-iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
+iNumBonuses = 74
+(iAluminium, iAmber, iCamel, iCitris, iCoal, iCopper, iDates, iHorse, iIron, iMarble, 
+iOil, iStone, iUranium, iBanana, iClam, iCorn, iCow, iCrab, iDeer, iFish, 
+iPig, iPotato, iRice, iSheep, iWheat, iCocoa, iCoffee, iCotton, iDye, 
+iFur, iGems, iGold, iIncense, iIvory, iJade, iMillet, iObsidian, iOlives, iOpium, iPearls, 
+iRareEarths, iRubber, iSalt, iSilk, iSilver, iSpices, iSugar, iTea, iTimber, iTobacco,
+iWine, iWhales, iSoccer, iSongs, iMovies, iDyeCochineal, iDyeMurex, iDyeHenna, iSpicesCinnamon, iSpicesNutmeg,
+iSpicesSaffron, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds, iGemsRubies, iGemsSapphires, iGemsEmeralds, iSheepLlama, iSheepBlack, iCowBrown,
+iPigFurry, iIvoryAfrican, iCitrusOranges, iCrabShrimp) = range(iNumBonuses)
+
 # Buildings
 
-iNumBuildings = 178
-(iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument,
-iTotemPole, iWalls, iStable, iLibrary,
-iHarbor, iTheatre,
-iArena, iLighthouse, iCastleHill, iWeaver,
-iMarket, iJail, iForge, 
-iPharmacy, iPostOffice,
-iWharf, iCrabbery, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity,
-iCivicSquare, iCommon, iSewer, iStarFort, iEstate, iLowcountryPlantation, iBorough, 
-iMilldamPlantation, iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iHouseOfBurgesses, iFactory,
+iNumBuildings = 179
+(iPalace, iBarracks, iGranary, iSmokehouse, iPaganTemple, iMonument, iTotemPole, iWalls, iStable, iLibrary,
+iHarbor, iTheatre, iArena, iLighthouse, iCastleHill, iWeaver, iMarket, iJail, iForge, iPharmacy, 
+iPostOffice, iWharf, iCrabbery, iBank, iConstabulary, iMountedPolice, iCustomsHouse, iUniversity, iCivicSquare, iCommon, 
+iAbbey, iArmory, iArsenal, iButchery, iSchoolhouse, iCitadel, iCollege, iFortress, iLumberMill, iMagazine, 
+iNewspaper, iPrintingPress, iSaloon, iShipyard, iSlaughterhouse, iStockade, iTavern, iTextileMill, iWell, iWaystation, 
+iSewer, iStarFort, iEstate, iLowcountryPlantation, iBorough, 
+iTradingPost, iMilldamPlantation, iDrydock, iLevee, iObservatory, iWarehouse, iCourthouse, iHouseOfBurgesses, iFactory,
 iDistillery, iVinairgrery, iPark, iGarden, iCoalPlant, iRailwayStation, iLaboratory, iNewsPress, iIndustrialPark, iCinema, 
 iHospital, iSupermarket, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 
 iBombShelters, iHydroPlant, iSecurityBureau, iStadium, iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, iRecyclingCenter, iLogisticsCenter, 
@@ -526,8 +533,6 @@ iMethodistMonastery, iMethodistShrine, iMormonTemple, iMormonCathedral, iMormonM
 iAcademy, iAdministrativeCenter, iManufactory, iArmoury, iMuseum, iStockExchange, 
 iTradingCompanyBuilding, iIberianTradingCompanyBuilding, iNationalMonument, iNationalTheatre, iNationalGallery, iNationalCollege, iMilitaryAcademy, iSecretService, iIronworks, iRedCross, 
 iNationalPark, iCentralBank, iSpaceport,
-iAbbey, iArmory, iArsenal, iButchery, iSchoolhouse, iCitadel, iCollege, iFortress, iLumberMill, iMagazine, 
-iNewspaper, iPrintingPress, iSaloon, iShipyard, iSlaughterhouse, iStockade, iTavern, iTextileMill, iWell, iWaystation, 
 iMountVernon, iMonticello, iCapeHatterasLighthouse, iFortMcHenry, iWestPoint, iSlaterMill, iRainbowRow, iHarvard, iPrinceton, iCapitol, 
 iWhiteHouse, iIndependenceHall, 
 iStatueOfLiberty,
@@ -552,7 +557,7 @@ iNumBuildingsPlague = iNumBuildings+1
 #Civics
 iNumCivics = 42
 (iShire, iRoyalColony, iTerritory, iCommonwealth, iDominion, iState, iNation,
-iSheriffdom, iCommonLaw, iMartialLaw, iStatesRights, iFederalism, iSegregation, iUniversalSufferage,
+iSheriffdom, iCommonLaw, iMartialLaw, iStatesRights, iFederalismCivic, iSegregation, iUniversalSufferage,
 iSerfdom, iIndenturedServitude, iSlavery, iCaptainsOfIndustry, iWorkersRights, iOutsourcing, iAutomation,
 iLaissezFaire, iMercantilism, iAgrarianism, iIndustrialism, iManifestDestinyCivic, iConsumerismCivic, iPublicWelfare,
 iForGloryGodAndGold, iHaven, iPenalColony, iFreeReligion, iIsolationism, iMeltingPot, iMulticulturism,
@@ -585,12 +590,13 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 48
+iNumRegions = 52
 (rVirginia, rMassachusetts, rNewHampshire, rMaryland, rConnecticut, rRhodeIsland, rNorthCarolina, rSouthCarolina, rNewJersey, rNewYork, 
 rPennsylvania, rDelaware, rGeorgia, rVermont, rKentucky, rTennessee, rOhio, rLouisiana, rIndiana, rMississippi,
 rIllinois, rAlabama, rMaine, rMissouri, rArkansas, rMichigan, rFlorida, rTexas, rIowa, rWisconsin,
 rCalifornia, rMinnesota, rOregon, rKansas, rWestVirginia, rNevada, rNebraska, rColorado, rNorthDakota, rSouthDakota,
-rMontana, rWashington, rIdaho, rWyoming, rUtah, rOklahoma, rNewMexico, rArizona) = range(iNumRegions)
+rMontana, rWashington, rIdaho, rWyoming, rUtah, rOklahoma, rNewMexico, rArizona, rAlaska, rHawaii,
+rCanada, rMexico) = range(iNumRegions)
 
 
 
@@ -613,6 +619,7 @@ lMountain = [rMontana, rIdaho, rWyoming, rColorado, rUtah, rArizona, rNevada]
 lPacific = [rWashington, rOregon, rCalifornia]
 lWest = lMountain + lPacific
 
+lColonial = [rMaine, rNewHampshire, rVermont, rMassachusetts, rRhodeIsland, rConnecticut, rNewYork, rNewJersey, rPennsylvania, rMaryland, rDelaware, rVirginia, rNorthCarolina, rSouthCarolina, rGeorgia]
 lContiguous = lSouth + lNorth + lWest
 
 lNewWorld = lContiguous
