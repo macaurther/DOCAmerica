@@ -3799,14 +3799,11 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_LOGISTICS</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_TANNING</PrereqTech>
-			</TechTypes>
+			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>3</iMoves>
+			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
