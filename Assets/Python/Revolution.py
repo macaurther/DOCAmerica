@@ -10,6 +10,7 @@ import CvTranslator
 from RFCUtils import utils
 from StoredData import data #edead
 import Civilizations
+import Areas
 
 # globals
 gc = CyGlobalContext()
@@ -39,7 +40,7 @@ class Revolution:
 	def eventApply7624(self, popupReturn):
 		iHuman = utils.getHumanID()
 		if popupReturn.getButtonClicked() == 0:
-			self.embraceReformation(iHuman)
+			self.chooseRevolution(iHuman)
 		elif popupReturn.getButtonClicked() == 1:
 			self.chooseLoyalist(iHuman)
 	
@@ -49,57 +50,137 @@ class Revolution:
 		if popupReturn.getButtonClicked() == 0:
 			self.chooseConveneCongress(iHuman)
 		elif popupReturn.getButtonClicked() == 1:
-			self.chooseSurpressRebellion(iHuman)
+			self.chooseSuppressRebellion(iHuman)
 
 	def onTechAcquired(self, iTech, iPlayer):
 		if iTech == iIndependence and iPlayer in lCivStates:
-			if data.iRevolutionTurn == 0:
+			print("Independence Researched")
+			if data.iRevolutionState == -1:
+				data.iRevolutionState = 0
 				# Give all other States Independence tech
 				for iPlayer in lCivStates:
-					Civilizations.initTech(iPlayer, iIndependence, False)
+					print("Giving Civ Independence Tech: ", iPlayer)
+					Civilizations.initTech(iPlayer, iIndependence)
 				
 				self.preRevolution()
 	
 	def onBuildingBuilt(self, city, iPlayer, iBuilding):
 		if iBuilding == iIndependenceHall and iPlayer in lCivStates:
-			if data.iRevolutionTurn == 0:
-				data.iRevolutionTurn = 1
+			print("IndependenceHall Constructed")
+			if data.iRevolutionState == 0:
+				data.iRevolutionState = 1
 				self.revolution()
 	
 	def preRevolution(self):
-		#MacAurther TODO
-		pass
+		print("Starting preRevolution")
+		
+		for iPlayer in lCivStates:
+			self.preRevolutionChoice(iPlayer)
+	
+	def preRevolutionChoice(self, iPlayer):
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		if utils.getHumanID() == iPlayer: return
+		
+		if iPlayer in lCivStates:
+			if self.chooseConveneCongress(iPlayer):
+				self.embraceConveneCongress(iPlayer)
+			elif self.chooseSuppressRebellion(iPlayer):
+				self.embraceSuppressRebellion(iPlayer)
+			else:
+				self.embraceTolerateDisobedience(iPlayer)
+		else:
+			self.embraceTolerateDisobedience(iPlayer)
+	
+	def chooseConveneCongress(self, iPlayer):
+		# MacAurther TODO: Fancy self-assesment logic to see if AI wants to be loyalist ONLY if player did not attend Continental Convention
+		iRand = gc.getGame().getSorenRandNum(100, 'Convene Congress')
+		return data.iPreRevolutionChoice[iPlayer] != 2
+	
+	def chooseSuppressRebellion(self, iPlayer):
+		# MacAurther TODO: Fancy self-assesment logic to see if AI wants to be loyalist ONLY if player did not attend Continental Convention
+		iRand = gc.getGame().getSorenRandNum(100, 'Suppress Rebellion')
+		return data.iPreRevolutionChoice[iPlayer] == 2
+	
+	def embraceConveneCongress(self, iPlayer):
+		print("Civ chose Convene Congress: ", iPlayer)
+		data.iPreRevolutionChoice[iPlayer] = 1
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		#MacAurther TODO: Allows construction of iIndependenceHall
+	
+	def embraceSuppressRebellion(self, iPlayer):
+		print("Civ chose Suppress Rebellion: ", iPlayer)
+		data.iPreRevolutionChoice[iPlayer] = 2
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		# Switch legal civic to iMartialLaw
+		pPlayer = gc.getPlayer(iPlayer)
+		pPlayer.setCivics(iCivicsLegal, iMartialLaw)
+		# Receive a Militia in Capital
+		tPlot = Areas.getCapital(iPlayer)
+		utils.makeUnit(iMilitia, iPlayer, tPlot, 1)
+	
+	def embraceTolerateDisobedience(self, iPlayer):
+		print("Civ chose Tolerate Disobedience: ", iPlayer)
+		data.iPreRevolutionChoice[iPlayer] = 3
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		# 2 turns of Unrest in Capital (handled in CIV4EventInfos.xml)
 	
 	def revolution(self):
-		#MacAurther TODO
-		pass
+		print("Starting Revolution")
+		
+		for iPlayer in lCivStates:
+			self.revolutionChoice(iPlayer)
 		
 	def revolutionChoice(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
 		
 		if utils.getHumanID() == iPlayer: return
 		
-		# MacAurther TODO: Fancy logic for states to choose Loyalists for more variation?
 		if iPlayer in lCivStates:
-			self.chooseRevolution(self, iCiv)
-		else:
-			self.chooseIndependent(self, iCiv)
+			if self.chooseRevolution(iPlayer):
+				self.embraceRevolution(iPlayer)
+			elif self.chooseRevolution(iPlayer):
+				self.embraceLoyalist(iPlayer)
 		
-	def chooseRevolution(self, iCiv):
-		pass
+	def chooseRevolution(self, iPlayer):
+		# MacAurther TODO: Fancy self-assesment logic to see if AI wants to be loyalist ONLY if player did not attend Continental Convention
+		iRand = gc.getGame().getSorenRandNum(100, 'Revolution')
+		return data.iRevolutionChoice[iPlayer] == 1
 		
-	def chooseLoyalist(self, iCiv):
-		pass
+	def chooseLoyalist(self, iPlayer):
+		# MacAurther TODO: Fancy self-assesment logic to see if AI wants to be loyalist ONLY if player did not attend Continental Convention
+		iRand = gc.getGame().getSorenRandNum(100, 'Loyalist')
+		return data.iRevolutionChoice[iPlayer] == 2
 	
-	def chooseIndependent(self, iCiv):
-		pass
-	
-	def chooseConveneCongress(self, iCiv):
-		pass
-	
-	def chooseSurpressRebellion(self, iCiv):
-		pass
+	def embraceRevolution(self, iPlayer):
+		print("Civ chose Revolution: ", iPlayer)
+		data.iRevolutionChoice[iPlayer] = 1
+		pPlayer = gc.getPlayer(iPlayer)
 		
-
+		#MacAurther TODO: expect Expeditionary forces
+		# Become a Commonwealth
+		pPlayer.setCivics(iCivicsGovernment, iCommonwealth)
+		# Break British vassalage
+		gc.getTeam(pPlayer.getTeam()).setVassal(iEngland, False, False)
+		# Free Minuteman in every city
+		for city in utils.getCityList(iPlayer):
+			utils.makeUnit(iMinuteman, iPlayer, (city.getX(), city.getY()), 1)
+		
+	def embraceLoyalist(self, iPlayer):
+		print("Civ chose Loyalist: ", iPlayer)
+		data.iRevolutionChoice[iPlayer] = 2
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		# Declare war on all Partiots
+		for iTargetPlayer in lCivStates:
+			if data.iRevolutionChoice[iTargetPlayer] == 1 and utils.getHumanID() != iTargetPlayer:
+				gc.getTeam(iPlayer).declareWar(iTargetPlayer, True, WarPlanTypes.WARPLAN_DOGPILE)
+		# Receive 2 Militia and one Heavy Cannon in Capital
+		tPlot = Areas.getCapital(iPlayer)
+		utils.makeUnit(iMilitia, iPlayer, tPlot, 2)
+		utils.makeUnit(iHeavyCannon, iPlayer, tPlot, 1)
 
 rev = Revolution()

@@ -2827,6 +2827,86 @@
 		<Spanish>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_PRE_REVOLUTION_1</Tag>
+		<English>Convene the Continental Congress.</English>
+		<French>Convene the Continental Congress.</French>
+		<German>Convene the Continental Congress.</German>
+		<Italian>Convene the Continental Congress.</Italian>
+		<Spanish>Convene the Continental Congress.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PRE_REVOLUTION_2</Tag>
+		<English>Suppress the rebels.</English>
+		<French>Suppress the rebels.</French>
+		<German>Suppress the rebels.</German>
+		<Italian>Suppress the rebels.</Italian>
+		<Spanish>Suppress the rebels.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PRE_REVOLUTION_3</Tag>
+		<English>Tolerate these disobediences.</English>
+		<French>Tolerate these disobediences.</French>
+		<German>Tolerate these disobediences.</German>
+		<Italian>Tolerate these disobediences.</Italian>
+		<Spanish>Tolerate these disobediences.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PRE_REVOLUTION_CONVENE</Tag>
+		<English>Send our delegation to this Continental Congress to confer with the other colonial leadership. Perhaps if we join our voices, the King will have no choice but to listen to our grievances.</English>
+		<French>Send our delegation to this Continental Congress to confer with the other colonial leadership. Perhaps if we join our voices, the King will have no choice but to listen to our grievances.</French>
+		<German>Send our delegation to this Continental Congress to confer with the other colonial leadership. Perhaps if we join our voices, the King will have no choice but to listen to our grievances.</German>
+		<Italian>Send our delegation to this Continental Congress to confer with the other colonial leadership. Perhaps if we join our voices, the King will have no choice but to listen to our grievances.</Italian>
+		<Spanish>Send our delegation to this Continental Congress to confer with the other colonial leadership. Perhaps if we join our voices, the King will have no choice but to listen to our grievances.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PRE_REVOLUTION_SUPPRESS</Tag>
+		<English>Heed not the rabble who scream revolution! Assemble the Royal Marines and enact Martial Law.</English>
+		<French>Heed not the rabble who scream revolution! Assemble the Royal Marines and enact Martial Law.</French>
+		<German>Heed not the rabble who scream revolution! Assemble the Royal Marines and enact Martial Law.</German>
+		<Italian>Heed not the rabble who scream revolution! Assemble the Royal Marines and enact Martial Law.</Italian>
+		<Spanish>Heed not the rabble who scream revolution! Assemble the Royal Marines and enact Martial Law.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PRE_REVOLUTION_TOLERATE</Tag>
+		<English>We have seen this sentiment before. The rioters will lose interest and our duties will be lifted in a few years regardless. There is no need for drastic action.</English>
+		<French>We have seen this sentiment before. The rioters will lose interest and our duties will be lifted in a few years regardless. There is no need for drastic action.</French>
+		<German>We have seen this sentiment before. The rioters will lose interest and our duties will be lifted in a few years regardless. There is no need for drastic action.</German>
+		<Italian>We have seen this sentiment before. The rioters will lose interest and our duties will be lifted in a few years regardless. There is no need for drastic action.</Italian>
+		<Spanish>We have seen this sentiment before. The rioters will lose interest and our duties will be lifted in a few years regardless. There is no need for drastic action.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTION_1</Tag>
+		<English>Declare our Independence!</English>
+		<French>Declare our Independence!</French>
+		<German>Declare our Independence!</German>
+		<Italian>Declare our Independence!</Italian>
+		<Spanish>Declare our Independence!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTION_2</Tag>
+		<English>Remain loyal to the Crown.</English>
+		<French>Remain loyal to the Crown.</French>
+		<German>Remain loyal to the Crown.</German>
+		<Italian>Remain loyal to the Crown.</Italian>
+		<Spanish>Remain loyal to the Crown.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTION_EMBRACE</Tag>
+		<English>There is something absurd, in supposing a continent to be perpetually governed by an island. Raise the militias! Together, we may be able to win our freedom.</English>
+		<French>There is something absurd, in supposing a continent to be perpetually governed by an island. Raise the militias! Together, we may be able to win our freedom.</French>
+		<German>There is something absurd, in supposing a continent to be perpetually governed by an island. Raise the militias! Together, we may be able to win our freedom.</German>
+		<Italian>There is something absurd, in supposing a continent to be perpetually governed by an island. Raise the militias! Together, we may be able to win our freedom.</Italian>
+		<Spanish>There is something absurd, in supposing a continent to be perpetually governed by an island. Raise the militias! Together, we may be able to win our freedom.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTION_LOYALIST</Tag>
+		<English>The delegates speak of treason! The King will have their heads.</English>
+		<French>The delegates speak of treason! The King will have their heads.</French>
+		<German>The delegates speak of treason! The King will have their heads.</German>
+		<Italian>The delegates speak of treason! The King will have their heads.</Italian>
+		<Spanish>The delegates speak of treason! The King will have their heads.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_REINFORCED_HULL_1</Tag>
 		<English>Our existing ships can also be refitted? Begin immediately.</English>
 		<French>Nos navires actuels peuvent &#234;tre modifi&#233;s ? Commencez imm&#233;diatement.</French>
@@ -4617,6 +4697,22 @@
 		<German>Die Erfindung der Druckerpresse hat eine Welle neuer Doktrinen ausgel&#246;st. Reformer aus der gesamten katholischen Welt fordern die Autorit&#228;t des Papstes &#252;ber theologische Fragen heraus. Wie sollen wir reagieren?</German>
 		<Italian>The introduction of academic traditions has unleashed a wave of new doctrines. Reformers all over the Catholic world are challenging the authority of the Pope over Christian theology. How shall we react?</Italian>
 		<Spanish>The introduction of academic traditions has unleashed a wave of new doctrines. Reformers all over the Catholic world are challenging the authority of the Pope over Christian theology. How shall we react?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_PRE_REVOLUTION</Tag>
+		<English>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</English>
+		<French>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</French>
+		<German>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</German>
+		<Italian>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</Italian>
+		<Spanish>The levying of new taxes and laws weigh heavy on the Colonies. New ideas are circulating questioning British rule. Patriots are rising in rebellion, seizing arms, and tarring British officials. In this turbulent time, should we request protection from the King or look to our sister colonies for wisdom?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTION</Tag>
+		<English>The King's message is clear: there will be no tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</English>
+		<French>The King's message is clear: there will be no tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</French>
+		<German>The King's message is clear: there will be no tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</German>
+		<Italian>The King's message is clear: there will be no tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</Italian>
+		<Spanish>The King's message is clear: there will be no tolerance of these thoughts of increased autonomy. Some declare, "Give me liberty, or give me death!" Shall we embrace the Revolution? We will be free from British tyranny and able to choose our own destiny. If we join our brothers and sisters, we might have the strength to defy our former masters.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REINFORCED_HULL_1</Tag>

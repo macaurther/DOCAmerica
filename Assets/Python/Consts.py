@@ -173,9 +173,9 @@ tBirth = (
 1600,		# Spain
 1600,		# France
 1600,		# England
-1607,		# Virginia
-1620,		# Massachusetts
-1623,		# New Hampshire
+1607,		# Virginia 
+1620,		# Massachusetts 
+1623,		# New Hampshire 
 1634,		# Maryland 
 1635,		# Connecticut 
 1636,		# Rhode Island

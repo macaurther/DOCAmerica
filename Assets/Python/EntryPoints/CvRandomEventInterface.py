@@ -19,6 +19,7 @@ import PyHelpers #Leoreth
 import Barbs  #MacAurther
 import Natives  #MacAurther
 import Areas  #MacAurther
+import Revolution  #MacAurther
 import CityNameManager as cnm
 from StoredData import data
 from RFCUtils import utils
@@ -29,6 +30,7 @@ rel = Religions.Religions()
 localText = CyTranslator()
 barb = Barbs.Barbs()
 native = Natives.Natives()
+rev = Revolution.Revolution()
 
 ######## BLESSED SEA ###########
 
@@ -4635,3 +4637,132 @@ def canTriggerThanksgiving(argsList):
 	if gc.getGame().getGameTurn() == getTurnForYear(1621) and (player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_MASSACHUSETTS")):
 		return true
 	return false
+
+######## Pre Revolution (MacAurther) ########
+
+def canTriggerPreRevolutionCity(argsList):
+	kTriggeredData = argsList[0]
+	iPlayer = argsList[1]
+	iCity = argsList[2]
+	
+	if utils.getHumanID() != iPlayer: return False
+	
+	if not iPlayer in lCivStates: return False
+	
+	pPlayer = gc.getPlayer(iPlayer)
+	pCity = pPlayer.getCity(iCity)
+	
+	if pCity.isNone():
+		return False
+	
+	if not pCity.isCapital():
+		return False
+	
+	#MacAurther TODO: this may require more conditions
+	print("Revolution State: ", data.iRevolutionState)
+	return data.iRevolutionState == 0
+
+def canChoosePreRevolution1(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	return iPlayer in lCivStates
+	
+def getPreRevolution1HelpText(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+
+	return localText.getText("TXT_KEY_EVENT_PRE_REVOLUTION_CONVENE", ())
+	
+def doPreRevolution1(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	rev.embraceConveneCongress(iPlayer)
+	
+def canChoosePreRevolution2(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	return iPlayer in lCivStates
+	
+def getPreRevolution2HelpText(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	return localText.getText("TXT_KEY_EVENT_PRE_REVOLUTION_SUPPRESS", ())
+	
+def doPreRevolution2(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	rev.embraceSuppressRebellion(iPlayer)
+	
+def canChoosePreRevolution3(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	return iPlayer in lCivStates
+	
+def getPreRevolution3HelpText(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+
+	return localText.getText("TXT_KEY_EVENT_PRE_REVOLUTION_TOLERATE", ())
+	
+def doPreRevolution3(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	rev.embraceTolerateDisobedience(iPlayer)
+
+######## Revolution (MacAurther) ########
+
+def canTriggerRevolution(argsList):
+	kTriggeredData = argsList[0]
+	iPlayer = kTriggeredData.ePlayer
+	
+	print("Checking Revolution Trigger")
+	if utils.getHumanID() != iPlayer: return False
+	
+	if not iPlayer in lCivStates: return False
+	
+	#MacAurther TODO: this may require more conditions
+	print("Revolution State: ", data.iRevolutionState)
+	return data.iRevolutionState == 1
+
+def canChooseRevolution1(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	return iPlayer in lCivStates and data.iPreRevolutionChoice[iPlayer] != 2
+	
+def getRevolution1HelpText(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+
+	return localText.getText("TXT_KEY_EVENT_REVOLUTION_EMBRACE", ())
+	
+def doRevolution1(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	rev.embraceRevolution(iPlayer)
+	
+def canChooseRevolution2(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	return iPlayer in lCivStates
+	
+def getRevolution2HelpText(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+
+	return localText.getText("TXT_KEY_EVENT_REVOLUTION_LOYALIST", ())
+	
+def doRevolution2(argsList):
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	rev.embraceLoyalist(iPlayer)

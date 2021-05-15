@@ -438,6 +438,7 @@ class CvRFCEventHandler:
 		
 		vic.onBuildingBuilt(iOwner, iBuildingType)
 		rel.onBuildingBuilt(city, iOwner, iBuildingType)
+		self.rev.onBuildingBuilt(city, iOwner, iBuildingType)
 		self.up.onBuildingBuilt(city, iOwner, iBuildingType)
 		
 		if iOwner < iNumPlayers:
@@ -613,6 +614,7 @@ class CvRFCEventHandler:
 
 		if gc.getPlayer(iPlayer).isAlive() and iGameTurn >= getTurnForYear(tBirth[iPlayer]) and iPlayer < iNumPlayers:
 			rel.onTechAcquired(iTech, iPlayer)
+			self.rev.onTechAcquired(iTech, iPlayer)
 			if iGameTurn > getTurnForYear(1700):
 				self.aiw.forgetMemory(iTech, iPlayer)
 

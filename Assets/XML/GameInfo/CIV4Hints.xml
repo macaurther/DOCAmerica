@@ -335,12 +335,6 @@
 			<Description>TXT_KEY_HINT_38</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_39</Description>
-		</HintInfo>
-		<HintInfo>
-			<Description>TXT_KEY_HINT_40</Description>
-		</HintInfo>
-		<HintInfo>
 			<Description>TXT_KEY_HINT_DOC_1</Description>
 		</HintInfo>
 		<HintInfo>
@@ -554,31 +548,34 @@
 			<Description>TXT_KEY_HINT_DOC_71</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_72</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_1</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_73</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_2</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_74</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_3</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_75</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_4</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_76</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_5</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_77</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_6</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_78</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_7</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_79</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_8</Description>
 		</HintInfo>
 		<HintInfo>
-			<Description>TXT_KEY_HINT_DOC_80</Description>
+			<Description>TXT_KEY_HINT_DOC_USA_9</Description>
+		</HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_DOC_USA_10</Description>
 		</HintInfo>
 	</HintInfos>
 </Civ4Hints>

@@ -56,12 +56,11 @@ def initTechs(iPlayer, lTechs):
 	iCurrentEra = pPlayer.getCurrentEra()
 	pPlayer.setStartingEra(iCurrentEra)
 	
-def initTech(iPlayer, iTech, bCheckRevolution = True):
+def initTech(iPlayer, iTech):
 	gc.getTeam(gc.getPlayer(iPlayer).getTeam()).setHasTech(iTech, True, iPlayer, False, False)
 	vic.onTechAcquired(iPlayer, iTech)
 	rel.onTechAcquired(iPlayer, iTech)
-	if bCheckRevolution:
-		rev.onTechAcquired(iPlayer, iTech)
+	rev.onTechAcquired(iPlayer, iTech)
 
 ### Tech preference functions ###
 

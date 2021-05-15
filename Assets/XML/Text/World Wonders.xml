@@ -3467,6 +3467,14 @@
 		<Spanish>Independence Hall</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL_HELP</Tag>
+		<English>[ICON_BULLET]Starts the Revolution</English>
+		<French>[ICON_BULLET]Starts the Revolution</French>
+		<German>[ICON_BULLET]Starts the Revolution</German>
+		<Italian>[ICON_BULLET]Starts the Revolution</Italian>
+		<Spanish>[ICON_BULLET]Starts the Revolution</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Tag>
 		<English>The [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] increases the length of your Golden Ages by fifty percent. It also increases the odds of its city generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</English>
 		<French>The [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] increases the length of your Golden Ages by fifty percent. It also increases the odds of its city generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French>

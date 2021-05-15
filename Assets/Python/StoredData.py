@@ -204,7 +204,9 @@ class GameData:
 		
 		# Revolution
 		
-		self.iRevolutionTurn = 0
+		self.iRevolutionState = -1						# -1: None, 0: PreRevolution, 1: Revolution
+		self.iPreRevolutionChoice = [-1] * iNumPlayers	# -1: None, 0: PreRevolution1, 1: PreRevolution2, 2: PreRevolution3
+		self.iRevolutionChoice = [-1] * iNumPlayers		# -1: None, 0: Revolution1, 1: Revolution2
 		
 		# AI Wars
 		
