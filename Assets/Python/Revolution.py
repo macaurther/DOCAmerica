@@ -11,6 +11,7 @@ from RFCUtils import utils
 from StoredData import data #edead
 import Civilizations
 import Areas
+from Sentiments import sentiments
 
 # globals
 gc = CyGlobalContext()
@@ -21,7 +22,10 @@ class Revolution:
 #######################################
 ### Main methods (Event-Triggered) ###
 #####################################
-		
+	
+	def setup(self):
+		pass
+	
 	def checkTurn(self, iGameTurn):
 		pass
 	
@@ -107,7 +111,8 @@ class Revolution:
 		data.iPreRevolutionChoice[iPlayer] = 1
 		pPlayer = gc.getPlayer(iPlayer)
 		
-		#MacAurther TODO: Allows construction of iIndependenceHall
+		#All cities get the Patriots sentiment, allows construction of iIndependenceHall
+		sentiments.infectAllCities(iPlayer, iPatriots)
 	
 	def embraceSuppressRebellion(self, iPlayer):
 		print("Civ chose Suppress Rebellion: ", iPlayer)

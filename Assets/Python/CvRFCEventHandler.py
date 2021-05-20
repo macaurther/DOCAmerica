@@ -32,6 +32,7 @@ import AIParameters
 import GreatPeople as gp
 import Immigration
 import Revolution
+import Sentiments
 
 gc = CyGlobalContext()
 PyPlayer = PyHelpers.PyPlayer
@@ -101,6 +102,7 @@ class CvRFCEventHandler:
 		self.corp = Companies.Companies()
 		self.imm = Immigration.Immigration()
 		self.rev = Revolution.Revolution()
+		self.sen = Sentiments.Sentiments()
 
 		self.improvementTileChanges = [] #FoB - kludge to ensure native units don't move
 
@@ -118,6 +120,8 @@ class CvRFCEventHandler:
 		vic.setup()
 		cong.setup()
 		self.imm.setup()
+		self.rev.setup()
+		self.sen.setup()
 		
 		# Leoreth: set DLL core values
 		Modifiers.init()

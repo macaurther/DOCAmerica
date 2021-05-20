@@ -278,7 +278,7 @@ class CvTechSplashScreen:
 			bTechFound = 0
 			eLoopBuilding = CyGlobalContext().getCivilizationInfo(CyGlobalContext().getGame().getActiveCivilizationType()).getCivilizationBuildings(j)
 			
-			if eLoopBuilding > iNumBuildingsPlague: continue
+			if eLoopBuilding > iNumBuildingsSentiments: continue
 			
 			if (eLoopBuilding != -1):
 				if (isTechRequiredForBuilding(self.iTech, eLoopBuilding)):

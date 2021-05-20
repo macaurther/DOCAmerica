@@ -1647,6 +1647,38 @@
 		<Spanish>La peste se ha extendido por</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PATRIOTS_SPREAD_CITY</Tag>
+		<English>Patriotic Sentiment has spread in</English>
+		<French>Patriotic Sentiment has spread in</French>
+		<German>Patriotic Sentiment has spread in</German>
+		<Italian>Patriotic Sentiment has spread in</Italian>
+		<Spanish>Patriotic Sentiment has spread in</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WAR_HAWKS_SPREAD_CITY</Tag>
+		<English>War Hawk Sentiment has spread in</English>
+		<French>War Hawk Sentiment has spread in</French>
+		<German>War Hawk Sentiment has spread in</German>
+		<Italian>War Hawk Sentiment has spread in</Italian>
+		<Spanish>War Hawk Sentiment has spread in</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEPRESSION_SPREAD_CITY</Tag>
+		<English>Depression Sentiment has spread in</English>
+		<French>Depression Sentiment has spread in</French>
+		<German>Depression Sentiment has spread in</German>
+		<Italian>Depression Sentiment has spread in</Italian>
+		<Spanish>Depression Sentiment has spread in</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BOOM_SPREAD_CITY</Tag>
+		<English>Boom Sentiment has spread in</English>
+		<French>Boom Sentiment has spread in</French>
+		<German>Boom Sentiment has spread in</German>
+		<Italian>Boom Sentiment has spread in</Italian>
+		<Spanish>Boom Sentiment has spread in</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_MODDER_1</Tag>
 		<English>Display UHV End Turns</English>
 		<French>Montrer le tour final des VHU</French>

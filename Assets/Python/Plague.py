@@ -1,5 +1,4 @@
-# Rhye's and Fall of Civilization - Historical Victory Goals
-
+# Rhye's and Fall of Civilization - Plague
 
 from CvPythonExtensions import *
 import CvUtil
@@ -23,9 +22,8 @@ class Plague:
 ### Main methods (Event-Triggered) ###
 ######################################
 
-
 	def setup(self):
-		# MacAurther TODO: Plauges
+		# MacAurther TODO: Plagues
 		for iPlayer in range(iNumMajorPlayers):
 			data.players[iPlayer].iPlagueCountdown = -utils.getTurns(iImmunity)
 			
@@ -43,8 +41,6 @@ class Plague:
 		if undoPlague <= 3:
 			data.lGenericPlagueDates[undoPlague] = -1
 			
-	
-
 
 	def checkTurn(self, iGameTurn):
 		if data.bNoPlagues:
@@ -93,8 +89,6 @@ class Plague:
 			if data.players[iPlayer].iPlagueCountdown > 0:
 				self.processPlague(iPlayer)
 
-
-
 	def startPlague(self, iPlagueCounter):
 		iWorstCiv = -1
 		iWorstHealth = 200
@@ -121,7 +115,6 @@ class Plague:
 				self.infectCity(city)
 				self.announceForeignPlagueSpread(city)
 
-
 	def preStopPlague(self, iPlayer):
 		cityList = [city for city in utils.getCityList(iPlayer) if city.hasBuilding(iPlague)]
 		if cityList:
@@ -131,7 +124,6 @@ class Plague:
 					city.setHasRealBuilding(iPlague, False)
 					iModifier += 5 #not every city should quit
 
-
 	def stopPlague(self, iPlayer):
 		data.players[iPlayer].iPlagueCountdown = -utils.getTurns(iImmunity)
 		if data.players[iPlayer].bFirstContactPlague:
@@ -139,7 +131,7 @@ class Plague:
 		data.players[iPlayer].bFirstContactPlague = False
 		for city in utils.getCityList(iPlayer):
 			city.setHasRealBuilding(iPlague, False)
-			
+	
 	def losePopulation(self, city):
 		if city.getPopulation() <= 1: return
 		

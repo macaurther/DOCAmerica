@@ -111,5 +111,25 @@
 			<Description>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_IMMIGRATION</Type>
+			<Description>TXT_KEY_CONCEPT_IMMIGRATION</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_IMMIGRATION_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_REVOLUTION</Type>
+			<Description>TXT_KEY_CONCEPT_REVOLUTION</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_REVOLUTION_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_SENTIMENTS</Type>
+			<Description>TXT_KEY_CONCEPT_SENTIMENTS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_SENTIMENTS_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_FEDERAL_GOVERNMENT</Type>
+			<Description>TXT_KEY_CONCEPT_FEDERAL_GOVERNMENT</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_FEDERAL_GOVERNMENT_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

@@ -7048,6 +7048,12 @@
 				<bCommerceChangeOriginalOwner>0</bCommerceChangeOriginalOwner>
 				<bCommerceChangeOriginalOwner>1</bCommerceChangeOriginalOwner>
 			</CommerceChangeOriginalOwners>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_PATRIOTS</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 		</BuildingInfo>
 		<BuildingInfo>
@@ -7926,6 +7932,90 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iHealth>-6</iHealth>
+			<iAsset>20</iAsset>
+			<fVisibilityPriority>10.0</fVisibilityPriority>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_PATRIOTS</BuildingClass>
+			<Type>BUILDING_PATRIOTS</Type>
+			<Description>TXT_KEY_BUILDING_PATRIOTS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PATRIOTS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PATRIOTS_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<bNukeImmune>1</bNukeImmune>
+			<bCenterInCity>1</bCenterInCity>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<YieldModifiers>
+				<iYield>0</iYield>
+				<iYield>25</iYield>
+			</YieldModifiers>
+			<iAsset>20</iAsset>
+			<fVisibilityPriority>10.0</fVisibilityPriority>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_WAR_HAWKS</BuildingClass>
+			<Type>BUILDING_WAR_HAWKS</Type>
+			<Description>TXT_KEY_BUILDING_WAR_HAWKS</Description>
+			<Civilopedia>TXT_KEY_BUILDING_WAR_HAWKS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_WAR_HAWKS_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<bNukeImmune>1</bNukeImmune>
+			<bCenterInCity>1</bCenterInCity>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<DomainFreeExperiences>
+				<DomainFreeExperience>
+					<DomainType>DOMAIN_LAND</DomainType>
+					<iExperience>2</iExperience>
+				</DomainFreeExperience>
+			</DomainFreeExperiences>
+			<iAsset>20</iAsset>
+			<fVisibilityPriority>10.0</fVisibilityPriority>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_DEPRESSION</BuildingClass>
+			<Type>BUILDING_DEPRESSION</Type>
+			<Description>TXT_KEY_BUILDING_DEPRESSION</Description>
+			<Civilopedia>TXT_KEY_BUILDING_DEPRESSION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_DEPRESSION_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<bNukeImmune>1</bNukeImmune>
+			<bCenterInCity>1</bCenterInCity>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<YieldModifiers>
+				<iYield>-25</iYield>
+			</YieldModifiers>
+			<iAsset>20</iAsset>
+			<fVisibilityPriority>10.0</fVisibilityPriority>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_BOOM</BuildingClass>
+			<Type>BUILDING_BOOM</Type>
+			<Description>TXT_KEY_BUILDING_BOOM</Description>
+			<Civilopedia>TXT_KEY_BUILDING_BOOM_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_BOOM_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<bNukeImmune>1</bNukeImmune>
+			<bCenterInCity>1</bCenterInCity>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<YieldModifiers>
+				<iYield>25</iYield>
+			</YieldModifiers>
 			<iAsset>20</iAsset>
 			<fVisibilityPriority>10.0</fVisibilityPriority>
 			<bGraphicalOnly>1</bGraphicalOnly>

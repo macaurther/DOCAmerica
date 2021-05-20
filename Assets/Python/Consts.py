@@ -551,8 +551,13 @@ iShrine = iJewishShrine #generic
 
 iFirstWonder = iStatueOfLiberty
 
+# MacAurther: Sentiments
 iPlague = iNumBuildings
-iNumBuildingsPlague = iNumBuildings+1
+iPatriots = iNumBuildings + 1
+iWarHawks = iNumBuildings + 2
+iDepression = iNumBuildings + 3
+iBoom = iNumBuildings + 4
+iNumBuildingsSentiments = iNumBuildings+5
 
 #Civics
 iNumCivics = 42
