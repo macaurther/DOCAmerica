@@ -26,62 +26,117 @@ tMinorCities = (
 	(1638, (134, 48), iIndependent2, 'Fort Kristina', 1, iMusketman, 1),		# Fort Kristina (Wilmington)
 	(1653, (129, 34), iIndependent2, 'Raleigh', 1, iMusketman, 1),				# Albemarle Settlers
 	(1718, (100, 14), iFrance, 'New Orleans', 1, iMusketman, 1),				# New Orleans
+	(1720, (97, 15), iFrance, 'Baton Rouge', 1, iMusketman, 1),					# Baton Rouge
 	(1732, (134, 43), iMaryland, 'Salisbury', 1, iMusketman, 1),				# Salisbury, MD (help AI maryland settle the Delaware peninsula)
+	(1754, (97, 15), iFrance, 'Fort Duquesne', 1, iMusketman, 1),				# Fort Duquesne
 )
 
 #FoB - Spawn Native American Villages
 tNativeVillages = (
-	#East Coast Tribes
+	# Virginia
 	(1600, (130, 40), iNative),
 	(1600, (134, 40), iNative),
 	(1600, (128, 38), iNative),
 	(1600, (128, 41), iNative),
 	(1600, (134, 37), iNative),
-	(1600, (130, 35), iNative),
 	(1600, (125, 39), iNative),
 	(1600, (125, 37), iNative),
 	(1600, (123, 39), iNative),
+	(1600, (125, 45), iNative),
+	# Massachusetts
+	(1600, (136, 60), iNative),
+	(1600, (147, 59), iNative),
+	(1600, (143, 59), iNative),
+	(1600, (143, 62), iNative),
+	(1600, (140, 61), iNative),
+	# New Hampshire
+	(1600, (142, 63), iNative),
+	(1600, (139, 67), iNative),
+	# Maryland
 	(1600, (127, 46), iNative),
-	(1600, (120, 45), iNative),
-	(1600, (118, 42), iNative),
+	(1600, (129, 45), iNative),
+	(1600, (131, 49), iNative),
+	(1600, (132, 45), iNative),
+	(1600, (135, 43), iNative),
+	(1600, (129, 47), iNative),
+	(1600, (123, 47), iNative),
+	# Connecticut
+	(1600, (138, 57), iNative),
+	# Rhode Island
+	(1600, (144, 56), iNative),
+	# North Carolina
+	(1600, (130, 35), iNative),
+	(1600, (135, 35), iNative),
+	(1600, (130, 31), iNative),
+	(1600, (127, 34), iNative),
+	(1600, (123, 34), iNative),
+	(1600, (120, 33), iNative),
+	(1600, (117, 31), iNative),
+	(1600, (123, 31), iNative),
+	# South Carolina
+	(1600, (122, 25), iNative),
+	(1600, (123, 28), iNative),
+	(1600, (124, 30), iNative),
+	(1600, (121, 30), iNative),
+	(1600, (117, 29), iNative),
+	(1600, (120, 30), iNative),
+	# New Jersey
+	(1600, (134, 52), iNative),
+	(1600, (133, 55), iNative),
+	(1600, (137, 50), iNative),
+	# New York
+	(1600, (135, 57), iNative),
+	(1600, (141, 54), iNative),
+	(1600, (131, 60), iNative),
+	(1600, (133, 64), iNative),
+	(1600, (128, 63), iNative),
+	(1600, (130, 57), iNative),
+	(1600, (127, 58), iNative),
+	(1600, (125, 57), iNative),
+	(1600, (122, 55), iNative),
+	# Pennsylvania
+	(1600, (121, 49), iNative),
+	(1600, (132, 52), iNative),
+	(1600, (129, 49), iNative),
+	(1600, (128, 53), iNative),
+	(1600, (126, 50), iNative),
+	(1600, (121, 52), iNative),
+	(1600, (124, 52), iNative),
+	# Delaware
+	(1600, (136, 45), iNative),
+	# Georgia
+	(1600, (119, 21), iNative),
+	(1600, (117, 24), iNative),
+	(1600, (115, 21), iNative),
+	(1600, (113, 24), iNative),
+	(1600, (114, 28), iNative),
+	(1600, (111, 26), iNative),
+	(1600, (116, 18), iNative),
+	(1600, (118, 20), iNative),
+	# Vermont
+	(1600, (135, 68), iNative),
+	(1600, (136, 63), iNative),
+	# Kentucky
 	(1600, (117, 39), iNative),
 	(1600, (113, 40), iNative),
+	(1600, (104, 34), iNative),
+	(1600, (108, 34), iNative),
+	(1600, (110, 37), iNative),
+	(1600, (114, 35), iNative),
+	# Tennessee
+	
+	# Ohio
 	(1600, (117, 47), iNative),
 	(1600, (114, 44), iNative),
+	
+	# Indiana
 	(1600, (110, 44), iNative),
-	(1600, (122, 49), iNative),
-	#MacAurther TODO: Consolidate below \/
+	
+	# Maine
 	(1600, (142, 69), iNative), # Pennacook
-	(1600, (135, 35), iNative), # Mahican
-	(1600, (136, 60), iNative), # Wampanoag
-	(1600, (127, 58), iNative), # Mohawk
-	(1600, (125, 57), iNative), # Oneida
-	(1600, (122, 55), iNative), # Onondaga
-	(1600, (120, 47), iNative), # Susquehannock
-	(1600, (134, 44), iNative), # Lenni-Lenape
-	(1600, (131, 32), iNative), # Tuscarora
-	(1600, (121, 33), iNative), # Tutelo
-	(1600, (114, 26), iNative), # Cherokee
-	(1600, (119, 26), iNative), # Catawba
-	(1600, (118, 21), iNative), # Yamasee
-	(1600, (108, 20), iNative), # Creek
-	(1600, (117, 15), iNative), # Timucua
-	(1600, (112, 16), iNative), # Apalachee
-	(1600, (124, 6), iNative), # Calusa
-	#Mid-West Tribes
-	(1600, (107, 54), iNative), # Potawatomi
-	(1600, (105, 47), iNative), # Miami
-	(1600, (114, 48), iNative), # Erie
-	(1600, (105, 34), iNative), # Shawnee
-	(1600, (100, 40), iNative), # Illinois
-	(1600, (99, 51), iNative), # Winnebago
-	(1600, (99, 23), iNative), # Chickasaw
-	(1600, (101, 17), iNative), # Biloxi
-	(1600, (98, 17), iNative), # Natchez
-	(1600, (92, 20), iNative), # Caddo
-	(1600, (91, 14), iNative), # Atakapa
-	#Western Tribes
-	#TODO
+	# West Virginia
+	(1600, (120, 45), iNative),
+	(1600, (118, 42), iNative),
 )
 
 # do some research on dates here
