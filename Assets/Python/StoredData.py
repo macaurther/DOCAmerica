@@ -208,6 +208,11 @@ class GameData:
 		self.iPreRevolutionChoice = [-1] * iNumPlayers	# -1: None, 0: PreRevolution1, 1: PreRevolution2, 2: PreRevolution3
 		self.iRevolutionChoice = [-1] * iNumPlayers		# -1: None, 0: Revolution1, 1: Revolution2
 		
+		# Forts
+		
+		self.dFortMap = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
+		self.dFortCulture = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
+		
 		# AI Wars
 		
 		self.iNextTurnAIWar = -1

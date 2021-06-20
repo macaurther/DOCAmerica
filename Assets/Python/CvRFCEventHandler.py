@@ -88,6 +88,10 @@ class CvRFCEventHandler:
 		eventManager.addEventHandler("improvementBuilt", self.onImprovementBuilt)
 		eventManager.addEventHandler("improvementOwnerChange", self.onImprovementOwnerChange)
 		eventManager.addEventHandler("nativeIndoctrination", self.onNativeIndoctrination)
+		
+		# MacAurther
+		eventManager.addEventHandler("unitBuildImprovement", self.onUnitBuildImprovement)
+		eventManager.addEventHandler("EndGameTurn", self.onEndGameTurn)
 	       
 		self.eventManager = eventManager
 
@@ -479,7 +483,17 @@ class CvRFCEventHandler:
 			city = utils.getBuildingEffectCity(iSpaceElevator)
 			if city:
 				city.changeBuildingYieldChange(gc.getBuildingInfo(iSpaceElevator).getBuildingClassType(), YieldTypes.YIELD_COMMERCE, 5)
-
+	
+	def onUnitBuildImprovement(self, argsList):
+		'Unit begins enacting a Build (building an Improvement or Route)'
+		pUnit, iBuild, bFinished = argsList
+		
+		iBuildFortID = CvUtil.findInfoTypeNum(gc.getBuildInfo,gc.getNumBuildInfos(),'BUILD_FORT')
+		
+		# Fort WAS built
+		if (iBuild == iBuildFortID):
+			pUnit.setScriptData("BuildingFort")
+	
 	def onImprovementBuilt(self, argsList):
 		iOldImprovement, iImprovement, iX, iY = argsList
 		if iOldImprovement == iNativeVillage:
@@ -489,6 +503,23 @@ class CvRFCEventHandler:
 				self.native.handleNativeVillageDestroyed(iTileOwner, iX, iY, True)
 			else:
 				self.native.handleNativeVillageDestroyed(iTileOwner, iX, iY, False)
+		
+		# MacAurther: Forts control territory
+		if iImprovement == iFort:
+			pPlot = CyMap().plot(iX, iY)
+			# Look for Worker on this plot
+			bFoundWorker = False
+			for iUnitLoop in range(pPlot.getNumUnits()):
+				pUnit = pPlot.getUnit(iUnitLoop)
+				
+				if (pUnit.getScriptData() == "BuildingFort"):
+					iFortOwner = pUnit.getOwner()
+					self.rnf.obtainFortCulture(iX, iY, iFortOwner)
+					bFoundWorker = True
+			
+			# If no worker built the fort, assume it belongs to a unit in that tile (i.e. forts placed in the map file)
+			if not bFoundWorker and pPlot.getNumUnits() > 0:
+				self.rnf.obtainFortCulture(iX, iY, pPlot.getUnit(0).getOwner())
 
 	def onImprovementOwnerChange(self, argsList):
 		iImprovement, iOwner, iX, iY = argsList
@@ -499,12 +530,22 @@ class CvRFCEventHandler:
 			# TODO - change to add chance of assimilation
 			#self.barb.changeNativeAttitudeForPlayer(iOwner, -iNativeVillageAssimilateCost)
 			#gc.getMap().plot(iX, iY).setImprovementType(-1)
+		
+		# MacAurther: Forts control territory
+		# MacAurther TODO: Should there be anything done here?
+		#if iImprovement == iFort:
+		#	self.rnf.loseFortCulture(iX, iY)
+		#	self.rnf.obtainFortCulture(iX, iY, iOwner)
 
 	def onImprovementDestroyed(self, argsList):
 		iImprovement, iOwner, iX, iY = argsList
 		#FoB - do nothing, should be handled in other events now
 		#if iImprovement == iNativeVillage:
 		#self.native.handleNativeVillageDestroyed(iOwner, iX, iY, False)
+		
+		# MacAurther: Forts control territory
+		if iImprovement == iFort:
+			self.rnf.loseFortCulture(iX, iY)
 
 	def onNativeIndoctrination(self, argsList):
 		iPlayer = argsList[0]
@@ -566,6 +607,12 @@ class CvRFCEventHandler:
 			iX, iY, iOwner = tTileChange
 			self.native.handleNativeVillageDestroyed(iOwner, iX, iY, False)
 		self.improvementTileChanges = []  # FoB clear list
+
+	def onEndGameTurn(self, argsList):
+		'Called at the end of the end of each turn'
+		iGameTurn = argsList[0]
+		
+		self.rnf.updateAllFortCulture()
 
 	def onGreatPersonBorn(self, argsList):
 		'Great Person Born'
