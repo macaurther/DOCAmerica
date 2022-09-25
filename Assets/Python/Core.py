@@ -123,9 +123,6 @@ def log_with_trace(context):
 	stacktrace()
 
 
-# TODO: is there a right equal or right not equal to add to Civ so we can do iPlayer == iEgypt and convert iPlayer to Civ implicitly?
-
-
 def sign(x):
 	if x > 0: return 1
 	elif x < 0: return -1
@@ -441,7 +438,7 @@ def scenarioStartTurn():
 
 
 def scenarioStartYear():
-	lStartYears = [-3000, 600, 1700]
+	lStartYears = [250, 600, 1700]
 	return lStartYears[scenario()]
 
 

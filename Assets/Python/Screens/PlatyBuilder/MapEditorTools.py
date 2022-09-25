@@ -5,7 +5,7 @@ from RFCUtils import *
 import Setup
 import os
 
-IMAGE_LOCATION = os.getcwd() + "\Mods\\RFC Dawn of Civilization\\Export"
+IMAGE_LOCATION = os.getcwd() + "\Mods\\DOCAmerica\\Export"
 iLongestName = len("Netherlands") #Netherlands currently has the longest civ name
 
 gc = CyGlobalContext()
@@ -18,12 +18,6 @@ def getTLBR(lPlots):
 	return TL, BR
 
 def getCivName(iPlayer):
-	if civ(player(iPlayer)) == iHolyRome:
-		return "HolyRome"
-	elif civ(player(iPlayer)) == iTurks:
-		return "Turks"
-	elif civ(player(iPlayer)) == iOttomans:
-		return "Ottomans"
 	return name(iPlayer)
 
 def exportFlip(iPlayer, (lHumanFlipPlot, lAIFlipPlots)):

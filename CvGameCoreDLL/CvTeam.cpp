@@ -2753,22 +2753,6 @@ int CvTeam::getCivilizationResearchModifier() const
 
 	iCivModifier = GET_PLAYER(getLeaderID()).getModifier(MODIFIER_RESEARCH_COST);
 
-	// nerf late game China
-	if (GET_PLAYER(getLeaderID()).getCivilizationType() == CHINA)
-	{
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() == ERA_MEDIEVAL) iCivModifier += 20;
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_RENAISSANCE) iCivModifier += 30;
-	}
-
-	// buff late game Japan
-	else if (GET_PLAYER(getLeaderID()).getCivilizationType() == JAPAN)
-	{
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_INDUSTRIAL)
-		{
-			iCivModifier += isHuman() ? -20 : -40;
-		}
-	}
-
 	return iCivModifier;
 }
 
@@ -2931,58 +2915,6 @@ int CvTeam::getSpreadResearchModifier(TechTypes eTech) const
 
 int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 {
-	if (GET_PLAYER(getLeaderID()).getCivilizationType() != JAPAN) return 0;
-
-	bool bAllMedievalTechs = true;
-
-	for (int iI = 0; iI < GC.getNumTechInfos(); iI++)
-	{
-		if (GC.getTechInfo((TechTypes)iI).getEra() <= ERA_MEDIEVAL && !isHasTech((TechTypes)iI))
-		{
-			return 0;
-		}
-	}
-
-	int iCount = 0;
-
-	for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
-	{
-		TeamTypes eTeam = GET_PLAYER((PlayerTypes)iI).getTeam();
-
-		if (GET_TEAM(eTeam).isMinorCiv())
-		{
-			continue;
-		}
-
-		if (GET_TEAM(eTeam).isHasTech(eTech) && (!isHuman() || canContact(eTeam)) && (GET_TEAM(eTeam).isHuman() || GET_TEAM(eTeam).AI_techTrade(eTech, getID(), true) == NO_DENIAL))
-		{
-			if (!isAtWar(eTeam))
-			{
-				iCount++;
-			}
-			else
-			{
-				int iOurSuccess = AI_getWarSuccess(eTeam);
-				int iTheirSuccess = GET_TEAM(eTeam).AI_getWarSuccess(getID());
-				if (iOurSuccess - iTheirSuccess > 20 + 10 * GET_PLAYER(getLeaderID()).getCurrentEra() + std::max(iOurSuccess, iTheirSuccess) / 10)
-				{
-					iCount++;
-				}
-			}
-		}
-	}
-
-	if (iCount >= 3)
-	{
-		// account of the base modifier that Japan receives in the global era
-		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_GLOBAL)
-		{
-			return isHuman() ? -30 : -10;
-		}
-
-		return -50;
-	}
-
 	return 0;
 }
 

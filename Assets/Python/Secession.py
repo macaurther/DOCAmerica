@@ -70,9 +70,9 @@ def canBeRazed(city):
 	if city.isHolyCity():
 		return False
 
-	# always raze Harappan cities, except holy city
-	if civ(city) == iHarappa and not player(city).isHuman():
-		return True
+	# TODO: always raze Mississippi cities, except holy city
+	#if civ(city) == iMississippi and not player(city).isHuman():
+	#	return True
 	
 	if city.getPopulation() >= 10:
 		return False
@@ -165,7 +165,7 @@ def secedeCity(city, iNewOwner, bRelocate, iArmyPercent):
 def getPossibleMinors(iPlayer):
 	lPossibleMinors = [iIndependent, iIndependent2]
 
-	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and civ(iPlayer) in [iMaya, iAztecs, iInca, iMali, iEthiopia, iCongo]:
+	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and civ(iPlayer) in [iMaya, iAztecs, iInca]:
 		lPossibleMinors = [iNative]
 		
 	if gc.getGame().getCurrentEra() <= iMedieval:

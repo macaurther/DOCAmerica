@@ -9693,31 +9693,14 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 
 	if (isNationalUnitClass(eUnitClass))
 	{
-		bool bTibetanMissionary = false;
-
-		if (eCivilization == TIBET)
+		if (pCity == NULL)
 		{
-			for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
-			{
-				if (GC.getUnitInfo(eUnit).getReligionSpreads(iI) > 0)
-				{
-					bTibetanMissionary = true;
-					break;
-				}
-			}
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_NATIONAL_UNIT_ALLOWED", GC.getUnitClassInfo(eUnitClass).getMaxPlayerInstances()));
 		}
-
-		if (!bTibetanMissionary)
+		else
 		{
-			if (pCity == NULL)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_UNIT_NATIONAL_UNIT_ALLOWED", GC.getUnitClassInfo(eUnitClass).getMaxPlayerInstances()));
-			}
-			else
-			{
-				szBuffer.append(gDLL->getText("TXT_KEY_UNIT_NATIONAL_UNIT_LEFT", (GC.getUnitClassInfo(eUnitClass).getMaxPlayerInstances() - (ePlayer != NO_PLAYER ? GET_PLAYER(ePlayer).getUnitClassCountPlusMaking(eUnitClass) : 0))));
-			}
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_NATIONAL_UNIT_LEFT", (GC.getUnitClassInfo(eUnitClass).getMaxPlayerInstances() - (ePlayer != NO_PLAYER ? GET_PLAYER(ePlayer).getUnitClassCountPlusMaking(eUnitClass) : 0))));
 		}
 	}
 
@@ -11546,20 +11529,6 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 			}
 		}
 
-		// Roman UP
-		if (pCity != NULL && !bCivilopediaText && GC.getGameINLINE().getActiveCivilizationType() == ROME && GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getNumCities() > 0)
-		{
-			CvCity* pCapital = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCapitalCity();
-			if (!isNationalWonderClass((BuildingClassTypes)kBuilding.getBuildingClassType()) && !isWorldWonderClass((BuildingClassTypes)kBuilding.getBuildingClassType()) && kBuilding.getProductionCost() > 0)
-			{
-				szBuffer.append(gDLL->getText(pCapital->isHasRealBuilding(eBuilding) ? "TXT_KEY_COLOR_POSITIVE" : "TXT_KEY_COLOR_NEGATIVE"));
-				szBuffer.append(L" (");
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_BUILDS_FASTER_WITH_ROMAN_UP", 30, kBuilding.getText(), pCapital->getName().c_str()));
-				szBuffer.append(L")");
-				szBuffer.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
-			}
-		}
-
 		if (kBuilding.getObsoleteTech() != NO_TECH)
 		{
 			szBuffer.append(NEWLINE);
@@ -12770,17 +12739,6 @@ void CvGameTextMgr::setGoodHealthHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_MISC_GOOD_HEALTH_FROM_HANDICAP", iHealth));
 			szBuffer.append(NEWLINE);
-		}
-
-		// Leoreth: Indian UP
-		if (city.getCivilizationType() == INDIA)
-		{
-			iHealth = (city.happyLevel() - city.unhappyLevel()) / 3;
-			if (iHealth > 0)
-			{
-				szBuffer.append(gDLL->getText("TXT_KEY_MISC_GOOD_HEALTH_FROM_HAPPINESS", iHealth));
-				szBuffer.append(NEWLINE);
-			}
 		}
 
 		szBuffer.append(L"-----------------------\n");
@@ -16906,23 +16864,6 @@ void CvGameTextMgr::setFoodHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		bNeedSubtotal = true;
 	}
 
-	// Harappan UP: Sanitation (positive health contributes to city growth)
-	int iHealthFood = 0;
-	if (city.getCivilizationType() == HARAPPA && GET_PLAYER(city.getOwnerINLINE()).getCurrentEra() == ERA_ANCIENT)
-	{
-		if (!city.isFoodProduction() && city.getBaseYieldRate(YIELD_FOOD) * city.getBaseYieldRateModifier(YIELD_FOOD) - city.foodConsumption() * 100 > 1 && city.goodHealth() > city.badHealth())
-		{
-			iHealthFood = city.goodHealth() - city.badHealth();
-		}
-	}
-	if (iHealthFood != 0)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_FOOD_FROM_HEALTH", iHealthFood, info.getChar()));
-		iBaseRate += iHealthFood;
-		bNeedSubtotal = true;
-	}
-
 	// Lotus Temple effect
 	int iNonStateReligionFood = 0;
 	if (GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LOTUS_TEMPLE))
@@ -17342,31 +17283,6 @@ void CvGameTextMgr::setProductionHelp(CvWStringBuffer &szBuffer, CvCity& city)
 					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_RELIGION", iReligionMod, GC.getReligionInfo(GET_PLAYER(city.getOwnerINLINE()).getStateReligion()).getTextKeyWide()));
 					szBuffer.append(NEWLINE);
 					iBaseModifier += iReligionMod;
-				}
-			}
-		}
-
-		// Leoreth: display Roman UP
-		if (city.getCivilizationType() == ROME)
-		{
-			if (GET_PLAYER(city.getOwnerINLINE()).getCapitalCity()->isHasRealBuilding(eBuilding))
-			{
-				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_ROME", 30));
-				szBuffer.append(NEWLINE);
-				iBaseModifier += 30;
-			}
-		}
-
-		// Leoreth: display Holy Roman UP
-		if (city.getCivilizationType() == HOLY_ROME)
-		{
-			if (GC.getBuildingInfo(eBuilding).getPrereqReligion() != NO_RELIGION && GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()).getMaxGlobalInstances() != 1)
-			{
-				if (GC.getBuildingInfo(eBuilding).getPrereqReligion() == GET_PLAYER(city.getOwnerINLINE()).getStateReligion())
-				{
-					szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_HOLY_ROME", 100));
-					szBuffer.append(NEWLINE);
-					iBaseModifier += 100;
 				}
 			}
 		}
@@ -18104,15 +18020,6 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 
 	if (eYieldType == YIELD_FOOD)
 	{
-		// Harappan UP: Sanitation (positive health contributes to city growth)
-		if (city.getCivilizationType() == HARAPPA && GET_PLAYER(city.getOwnerINLINE()).getCurrentEra() == ERA_ANCIENT)
-		{
-			if (!city.isFoodProduction() && city.getBaseYieldRate(YIELD_FOOD) * city.getBaseYieldRateModifier(YIELD_FOOD) - city.foodConsumption() * 100 > 1 && city.goodHealth() > city.badHealth())
-			{
-				iBaseProduction += city.goodHealth() - city.badHealth();
-			}
-		}
-
 		// Lotus Temple effect
 		if (GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LOTUS_TEMPLE))
 		{
@@ -18591,14 +18498,6 @@ void CvGameTextMgr::parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city
 				iModifier += iTraitMod;
 			}
 		}
-	}
-
-	// Leoreth: Greek UP
-	if (city.getCivilizationType() == GREECE && GET_PLAYER(city.getOwnerINLINE()).getCurrentEra() <= ERA_CLASSICAL)
-	{
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_UNIQUE_POWER", 150));
-		szBuffer.append(NEWLINE);
-		iModifier += 150;
 	}
 
 	if (owner.isGoldenAge())

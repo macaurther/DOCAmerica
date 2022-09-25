@@ -84,7 +84,8 @@ def handleCivSwitch(iPlayer, netUserData, popupReturn):
 
 def startObserverMode(iTurns):
 	data.iBeforeObserverSlot = active()
-	iObserverCiv = player(iHarappa).isAlive() and iPolynesia or iHarappa
+	#TODO: Observer
+	iObserverCiv = player(iColombia).isAlive() and iArgentina or iColombia
 	iObserverSlot = slot(iObserverCiv)
 	
 	if iObserverSlot < 0:

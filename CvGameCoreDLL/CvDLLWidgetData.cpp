@@ -2218,14 +2218,6 @@ void CvDLLWidgetData::parseConscriptHelp(CvWidgetDataStruct &widgetDataStruct, C
 					int iMaxDraftUnits = GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getMaxConscript();
 
 					int iMaxDraftUnitsNonState = iMaxDraftUnits;
-
-					if (pHeadSelectedCity->getCivilizationType() == OTTOMANS)
-					{
-						if (pHeadSelectedCity->getReligionCount() <= ((!GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isStateReligion() || !pHeadSelectedCity->isHasReligion(GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getStateReligion())) ? 0 : 1))
-						{
-							iMaxDraftUnitsNonState -= 2;
-						}
-					}
 					
 					szBuffer.append(NEWLINE);
 
@@ -3090,13 +3082,8 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 							szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CHANGE_PRODUCTION", iProduction, pCity->getNameKey()));
 						}
 
-						bool bKhmerUP = GC.getGame().getActiveCivilizationType() == KHMER && GC.getBuildInfo(eBuild).getImprovement() == GC.getInfoTypeForString("IMPROVEMENT_FARM") && pMissionPlot->getFeatureType() == GC.getInfoTypeForString("FEATURE_RAINFOREST");
-
-						if (!bKhmerUP)
-						{
-							szBuffer.append(NEWLINE);
-							szBuffer.append(gDLL->getText("TXT_KEY_ACTION_REMOVE_FEATURE", GC.getFeatureInfo(pMissionPlot->getFeatureType()).getTextKeyWide()));
-						}
+						szBuffer.append(NEWLINE);
+						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_REMOVE_FEATURE", GC.getFeatureInfo(pMissionPlot->getFeatureType()).getTextKeyWide()));
 					}
 
 				}
@@ -4344,18 +4331,15 @@ void CvDLLWidgetData::parseNationalityHelp(CvWidgetDataStruct &widgetDataStruct,
 		int iOwnCulture = (pHeadSelectedCity->plot()->isCore(pHeadSelectedCity->getOwner()) ? 2 : 1) * pHeadSelectedCity->plot()->getCulture(pHeadSelectedCity->getOwnerINLINE());
 		int iOwnCulturePercent = iTotalCulture == 0 ? 100 : 100 * iOwnCulture / iTotalCulture;
 
-		if (pHeadSelectedCity->getCivilizationType() != PERSIA)
+		if (iOwnCulturePercent < 20)
 		{
-			if (iOwnCulturePercent < 20)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_HIGH_INSTABILITY_CULTURE"));
-			}
-			else if (iOwnCulturePercent < 50)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_INSTABILITY_CULTURE"));
-			}
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_HIGH_INSTABILITY_CULTURE"));
+		}
+		else if (iOwnCulturePercent < 50)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_INTERFACE_INSTABILITY_CULTURE"));
 		}
 
 		eCulturalOwner = pHeadSelectedCity->plot()->calculateCulturalOwner();

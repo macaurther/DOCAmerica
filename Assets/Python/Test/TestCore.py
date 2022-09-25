@@ -119,8 +119,8 @@ class TestInfos(TestCase):
 		
 	def test_type(self):
 		# given
-		string = 'CIVILIZATION_EGYPT'
-		expected_type = iEgypt
+		string = 'CIVILIZATION_MAYA'
+		expected_type = iMaya
 		
 		# when
 		actual_type = self.infos.type(string)
@@ -159,7 +159,7 @@ class TestInfos(TestCase):
 	def test_civ_player(self):
 		# given
 		player = gc.getPlayer(0)
-		expected_civinfo = gc.getCivilizationInfo(iEgypt)
+		expected_civinfo = gc.getCivilizationInfo(iMaya)
 		
 		# when
 		actual_civinfo = self.infos.civ(player)
@@ -571,10 +571,10 @@ class TestCreatedUnits(TestCase):
 			
 	def test_adjective(self):
 		# given
-		expected_names = ["Egyptian %s" % unit.getName() for unit in self.created_units]
+		expected_names = ["Mayan %s" % unit.getName() for unit in self.created_units]
 		
 		# when
-		created_units = self.created_units.adjective('Egyptian')
+		created_units = self.created_units.adjective('Mayan')
 		actual_names = [unit.getName() for unit in self.created_units]
 		
 		# then
@@ -583,10 +583,10 @@ class TestCreatedUnits(TestCase):
 		
 	def test_adjective_text_key(self):
 		# given
-		expected_names = ["Egyptian %s" % unit.getName() for unit in self.created_units]
+		expected_names = ["Mayan %s" % unit.getName() for unit in self.created_units]
 		
 		# when
-		created_units = self.created_units.adjective('TXT_KEY_CIV_EGYPT_ADJECTIVE')
+		created_units = self.created_units.adjective('TXT_KEY_CIV_MAYA_ADJECTIVE')
 		actual_names = [unit.getName() for unit in self.created_units]
 		
 		# then
@@ -705,7 +705,7 @@ class TestPlayers(TestCase):
 			self.assertEqual(gc.getPlayer(element).getID(), element)
 			
 	def test_string(self):
-		expected_names = ','.join(['Egypt', 'Babylonia', 'Harappa'])
+		expected_names = ','.join(['Maya', 'Babylonia', 'Harappa'])
 		actual_names = str(self.players)
 		self.assertEqual(actual_names, expected_names)
 		

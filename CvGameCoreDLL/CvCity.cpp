@@ -324,12 +324,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeReligionYieldChange(GET_PLAYER(eOwner).getStateReligion(), (YieldTypes)iI, GET_PLAYER(eOwner).getReligionYieldChange((YieldTypes)iI));
 	}
 
-	// Leoreth: Chinese UP: +25% food kept on city growth
-	if (getCivilizationType() == CHINA)
-	{
-		changeMaxFoodKeptPercent(25);
-	}
-
 	// Leoreth: Prambanan effect: +25% food kept on city growth
 	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PRAMBANAN))
 	{
@@ -364,12 +358,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		{
 			iExtraPopulation += 1;
 		}
-	}
-
-    // Leoreth: Harappan UU (City Builder)
-	if (getCivilizationType() == HARAPPA)
-	{
-		iExtraPopulation += 1;
 	}
 
 	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
@@ -3831,27 +3819,6 @@ int CvCity::getProductionModifier(BuildingTypes eBuilding) const
 		}
 	}
 
-	// Leoreth: new Roman UP
-	if (getCivilizationType() == ROME)
-	{
-		if (GET_PLAYER(getOwnerINLINE()).getCapitalCity()->isHasRealBuilding(eBuilding))
-		{
-			iMultiplier += 30;
-		}
-	}
-
-	// Leoreth: Holy Roman UP: +100% production of state religion buildings
-	if (getCivilizationType() == HOLY_ROME)
-	{
-		if (GC.getBuildingInfo(eBuilding).getPrereqReligion() != NO_RELIGION && GC.getBuildingClassInfo((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()).getMaxGlobalInstances() != 1)
-		{
-			if (GC.getBuildingInfo(eBuilding).getPrereqReligion() == GET_PLAYER(getOwnerINLINE()).getStateReligion())
-			{
-				iMultiplier += 100;
-			}
-		}
-	}
-
 	return std::max(0, iMultiplier);
 }
 
@@ -4069,8 +4036,8 @@ void CvCity::hurry(HurryTypes eHurry)
 
 	changeProduction(hurryProduction(eHurry));
 
-	// Leoreth: remember if a unit is being hurried to apply the mercenary promotion, includes Phoenician UP
-	if (isProductionUnit() && iHurryGold > 0 && getCivilizationType() != CARTHAGE)
+	// Leoreth: remember if a unit is being hurried to apply the mercenary promotion
+	if (isProductionUnit() && iHurryGold > 0)
 	{
 		setUnitHurried(getProductionUnit(), true);
 	}
@@ -4287,25 +4254,6 @@ bool CvCity::canConscript(bool bForce) const
 		{
 			return false;
 		}
-
-		// Turkish UP: extra conscript requires non-state religion
-		if (getCivilizationType() == OTTOMANS && GET_PLAYER(getOwnerINLINE()).getConscriptCount() - GET_PLAYER(getOwnerINLINE()).getMaxConscript() >= -2)
-		{
-			if (!GET_PLAYER(getOwnerINLINE()).isStateReligion())
-			{
-				if (getReligionCount() == 0)
-				{
-					return false;
-				}
-			}
-			else
-			{
-				if ((isHasReligion(GET_PLAYER(getOwnerINLINE()).getStateReligion()) && getReligionCount() == 1) || getReligionCount() == 0)
-				{
-					return false;
-				}
-			}
-		}
 	}
 
 	if (getPopulation() <= getConscriptPopulation())
@@ -4318,7 +4266,7 @@ bool CvCity::canConscript(bool bForce) const
 		return false;
 	}
 
-	if (plot()->calculateTeamCulturePercent(getTeam()) < GC.getDefineINT("CONSCRIPT_MIN_CULTURE_PERCENT") && getCivilizationType() != OTTOMANS)
+	if (plot()->calculateTeamCulturePercent(getTeam()) < GC.getDefineINT("CONSCRIPT_MIN_CULTURE_PERCENT"))
 	{
 		return false;
 	}
@@ -5186,7 +5134,7 @@ void CvCity::updateArtStyleType()
 				break;
 			}
 		}
-		else if (GET_PLAYER(eHighestCulture).isIndependent() || GET_PLAYER(eHighestCulture).isBarbarian() || (eHighestCultureCiv == MONGOLS && !isOriginalOwner(eHighestCulture)))
+		else if (GET_PLAYER(eHighestCulture).isIndependent() || GET_PLAYER(eHighestCulture).isBarbarian())
 		{
 			switch (id)
 			{
@@ -5274,10 +5222,6 @@ void CvCity::updateArtStyleType()
 			default:
 				break;
 			}
-		}
-		else if (eHighestCultureCiv == MONGOLS)
-		{
-			if (getPopulation() >= 5) eNewArtStyle = (ArtStyleTypes)GC.getCivilizationInfo(CHINA).getArtStyleType();
 		}
 		else if (eHighestCultureCiv == AZTECS || eHighestCultureCiv == MAYA || eHighestCultureCiv == INCA)
 		{
@@ -6010,16 +5954,6 @@ int CvCity::goodHealth(bool bSpecial) const
 		iTotalHealth += iHealth;
 	}
 
-	// Leoreth: Indian UP: +1 health for every 3 excess happiness
-	if (bSpecial && getCivilizationType() == INDIA)
-	{
-		iHealth = (happyLevel(false) - unhappyLevel()) / 3;
-		if (iHealth > 0)
-		{
-			iTotalHealth += iHealth;
-		}
-	}
-
 	return iTotalHealth;
 }
 
@@ -6272,12 +6206,6 @@ int CvCity::getHurryGold(HurryTypes eHurry, int iHurryCost) const
 	}
 
 	iGold = (iHurryCost * GC.getHurryInfo(eHurry).getGoldPerProduction());
-	
-	// Phoenician UP: -50% mercenary cost
-	if (getCivilizationType() == CARTHAGE && GC.getHurryInfo(eHurry).isUnits())
-	{
-		iGold /= 2;
-	}
 
 	return std::max(1, iGold);
 }
@@ -6906,12 +6834,6 @@ int CvCity::getTotalGreatPeopleRateModifier() const
 	if (GET_PLAYER(getOwnerINLINE()).isGoldenAge())
 	{
 		iModifier += GC.getDefineINT("GOLDEN_AGE_GREAT_PEOPLE_MODIFIER");
-	}
-
-	// Leoreth: Greek UP
-	if (getCivilizationType() == GREECE && GET_PLAYER(getOwnerINLINE()).getCurrentEra() <= ERA_CLASSICAL)
-	{
-		iModifier += 150;
 	}
 
 	return std::max(0, (iModifier + 100));
@@ -7629,10 +7551,9 @@ void CvCity::updateFeatureHealth()
 				else
 				{
 					// Leoreth: Congo UP: no unhealthiness from jungle and marsh
-					bool bCongoUP = (getCivilizationType() == CONGO && (eFeature == GC.getInfoTypeForString("FEATURE_JUNGLE") || eFeature == GC.getInfoTypeForString("FEATURE_MARSH")));
 					bool bHangingGardens = (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)HANGING_GARDENS) && eFeature == GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS"));
 
-					if (!bCongoUP && !bHangingGardens)
+					if (!bHangingGardens)
 					{
 						iNewBadHealth += GC.getFeatureInfo(eFeature).getHealthPercent();
 					}
@@ -9059,13 +8980,7 @@ void CvCity::changeNukeModifier(int iChange)
 int CvCity::getFreeSpecialist() const
 {
     // Leoreth: Italian UP, only until the industrial era
-    int iItalianSpecialists = 0;
 	int iCoreSpecialists = 0;
-
-    if (getCivilizationType() == ITALY && GET_PLAYER(getOwnerINLINE()).getCurrentEra() < 4)
-    {
-		iItalianSpecialists = 1;
-    }
 
 	//Leoreth: handle free specialists for core here for simplicity
 	if (plot()->isCore())
@@ -9073,7 +8988,7 @@ int CvCity::getFreeSpecialist() const
 		iCoreSpecialists += GET_PLAYER(getOwnerINLINE()).getCoreFreeSpecialist();
 	}
 
-	return m_iFreeSpecialist+iItalianSpecialists+iCoreSpecialists;
+	return m_iFreeSpecialist+iCoreSpecialists;
 }
 
 
@@ -10101,15 +10016,6 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 int CvCity::getYieldRate(YieldTypes eIndex) const
 {
 	int iYieldRateTimes100 = getBaseYieldRate(eIndex) * getBaseYieldRateModifier(eIndex);
-
-	// Harappan UP: Sanitation: positive health contributes to city growth
-	if (eIndex == YIELD_FOOD && getCivilizationType() == HARAPPA && GET_PLAYER(getOwnerINLINE()).getCurrentEra() == ERA_ANCIENT  && !isFoodProduction())
-	{
-		if (iYieldRateTimes100 - foodConsumption() * 100 > 1 && goodHealth() - badHealth() > 0)
-		{
-			iYieldRateTimes100 += 100 * (goodHealth() - badHealth());
-		}
-	}
 
 	// Lotus Temple effect
 	if (eIndex == YIELD_FOOD && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LOTUS_TEMPLE))
@@ -13100,12 +13006,6 @@ int CvCity::getMaxSpecialistCount(SpecialistTypes eIndex) const
 		iMaxSpecialistCount *= 2;
 	}
 
-	// Leoreth: Korean UP
-	if (getCivilizationType() == KOREA && isCapital())
-	{
-		iMaxSpecialistCount *= 2;
-	}
-
 	return std::max(std::min(GET_PLAYER(getOwnerINLINE()).getPotentialSpecialistCount(eIndex), GET_PLAYER(getOwnerINLINE()).getMinimalSpecialistCount(eIndex)), iMaxSpecialistCount);
 }
 
@@ -14185,24 +14085,6 @@ bool CvCity::canHaveTradeRouteWith(const CvCity* pCity) const
 	{
 		return true;
 	}
-
-	// Ethiopian UP: cities can trade with other cities of the same state religion
-	if (getCivilizationType() == ETHIOPIA)
-	{
-		ReligionTypes eStateReligion = GET_PLAYER(getOwnerINLINE()).getStateReligion();
-		if (eStateReligion != NO_RELIGION)
-		{
-			if (isHasReligion(eStateReligion) && pCity->isHasReligion(eStateReligion))
-			{
-				return true;
-			}
-		}
-
-		if (!GET_PLAYER(getOwnerINLINE()).canHaveTradeRoutesWith(pCity->getOwnerINLINE()))
-		{
-			return false;
-		}
-	}
 	
 	return pCity->plotGroup(getOwnerINLINE()) == plotGroup(getOwnerINLINE());
 }
@@ -14236,7 +14118,7 @@ void CvCity::updateTradeRoutes()
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
 		{
-			if (GET_PLAYER(getOwnerINLINE()).canHaveTradeRoutesWith((PlayerTypes)iI, getCivilizationType() == ETHIOPIA)) // Leoreth: includes Ethiopian UP
+			if (GET_PLAYER(getOwnerINLINE()).canHaveTradeRoutesWith((PlayerTypes)iI))
 			{
 				for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
 				{
@@ -14244,7 +14126,7 @@ void CvCity::updateTradeRoutes()
 					{
 						if (!(pLoopCity->isTradeRoute(getOwnerINLINE())) || (getTeam() == GET_PLAYER((PlayerTypes)iI).getTeam()))
 						{
-							if (canHaveTradeRouteWith(pLoopCity)) // Leoreth: includes Ethiopian UP
+							if (canHaveTradeRouteWith(pLoopCity))
 							{
 // BUG - Fractional Trade Routes - start
 #ifdef _MOD_FRACTRADE
@@ -15137,7 +15019,7 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 
 						if (pLoopPlot != NULL)
 						{
-							if (pLoopPlot->isPotentialCityWorkForArea(area()) || getCivilizationType() == POLYNESIA)
+							if (pLoopPlot->isPotentialCityWorkForArea(area()))
 							{
 								// Leoreth: culture can only invade foreign core if city itself is in foreign core
 								bool bCanSpreadCore = true;
@@ -15174,11 +15056,6 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 								if (bCanSpreadCore && !bBirthProtected)
 								{
 									int iChange = ((eCultureLevel - iCultureRange) * iFreeCultureRate) + iCultureRate + 1;
-
-									if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == ITALY)
-									{
-										iChange /= 2;
-									}
 
 									pLoopPlot->changeCulture(ePlayer, iChange, (bUpdate || !(pLoopPlot->isOwned())));
 								}
@@ -18396,12 +18273,6 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 
 		// skip already owned tiles - no, only causes problems in case the controlling city is lost
 		//if (pPlot->getOwner() == getOwner()) iCost += 1000;
-
-		// even with Polynesian UP Oceans should still be covered last
-		if (getCivilizationType() == POLYNESIA && pPlot->getTerrainType() == TERRAIN_OCEAN)
-		{
-			iExtraCost += GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
-		}
 	}
 
 	if (pPlot->getBonusType() >= 0 && GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pPlot->getBonusType()).getTechReveal()))
@@ -18424,38 +18295,9 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 	}
 
 	// Leoreth: Inca UP
-	if (getCivilizationType() == INCA && (GET_PLAYER(getOwnerINLINE()).getPeriod() == NO_PERIOD || GET_PLAYER(getOwnerINLINE()).getPeriod() == PERIOD_LATE_INCA) && pPlot->isPeak())
+	if (getCivilizationType() == INCA && (GET_PLAYER(getOwnerINLINE()).getPeriod() == NO_PERIOD) && pPlot->isPeak())
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
-	}
-
-	// Leoreth: Polynesian UP
-	if (getCivilizationType() == POLYNESIA && pPlot->getTerrainType() == TERRAIN_OCEAN)
-	{
-		iExtraCost -= GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
-	}
-
-	// Leoreth: Congolese UP
-	if (getCivilizationType() == CONGO)
-	{
-		if (pPlot->getFeatureType() == FEATURE_MARSH || pPlot->getFeatureType() == FEATURE_JUNGLE || pPlot->getFeatureType() == FEATURE_RAINFOREST)
-		{
-			iExtraCost -= GC.getFeatureInfo(pPlot->getFeatureType()).getCultureCostModifier();
-		}
-	}
-
-	// Leoreth: Steppe Empires (use this for Steppe and Semidesert terrain later)
-	if (getCivilizationType() == TURKS || getCivilizationType() == MONGOLS)
-	{
-		if (pPlot->getTerrainType() == TERRAIN_DESERT)
-		{
-			iExtraCost -= GC.getTerrainInfo(TERRAIN_DESERT).getCultureCostModifier();
-		}
-
-		if (pPlot->getTerrainType() == TERRAIN_PLAINS)
-		{
-			iExtraCost -= 5;
-		}
 	}
 
 	// Leoreth: respect game speed
@@ -19497,12 +19339,6 @@ void CvCity::sack(PlayerTypes eHighestCulturePlayer, int iCaptureGold)
 	changeTotalPopulationLoss(1 + getTotalPopulationLoss() / 2);
 
 	int iSackGold = iCaptureGold / 2;
-
-	// Leoreth: Viking UP
-	if (getCivilizationType() == VIKINGS && GET_PLAYER(getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL)
-	{
-		iSackGold += iCaptureGold + iSackGold;
-	}
 
 	GET_PLAYER(getOwnerINLINE()).changeGold(iSackGold);
 

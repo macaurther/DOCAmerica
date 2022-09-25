@@ -31,10 +31,6 @@ def setup():
 		
 	data.lGenericPlagueDates[1] = year(1300).deviate(20)
 	
-	# Avoid interfering with the Indian UHV
-	if player(iIndia).isHuman() and data.lGenericPlagueDates[1] <= year(1200):
-		data.lGenericPlagueDates[1] = year(1200) + 1
-	
 	if scenario() != i1700AD:
 		data.lGenericPlagueDates[2] = year(1650).deviate(20)
 		
@@ -206,9 +202,6 @@ def startPlague(iPlague):
 
 
 def isVulnerable(iPlayer):
-	# protect some civs from Plague for more predictable UHVs
-	if civ(iPlayer) == iCongo and year() <= year(1650): return
-	elif civ(iPlayer) == iMali and year() <= year(1500): return
 	
 	if is_minor(iPlayer) and -10 < data.players[iPlayer].iPlagueCountdown <= 0: #more vulnerable
 		return True

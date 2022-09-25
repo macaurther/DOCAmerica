@@ -14,79 +14,8 @@ iMaxIntervalLate = 60
 iThreshold = 100
 iMinValue = 30
 
-iRomeCarthageYear = -220
-tRomeCarthageTL = (53, 37)
-tRomeCarthageBR = (61, 40)
 
-iRomeGreeceYear = -150
-tRomeGreeceTL = (64, 40)
-tRomeGreeceBR = (68, 45)
-
-iRomeMesopotamiaYear = -100
-tRomeMesopotamiaTL = (70, 38)
-tRomeMesopotamiaBR = (78, 45)
-
-iRomeAnatoliaYear = -100
-tRomeAnatoliaTL = (70, 38)
-tRomeAnatoliaBR = (75, 45)
-
-iRomeCeltiaYear = -50
-tRomeCeltiaTL = (52, 45)
-tRomeCeltiaBR = (59, 51)
-
-iRomeEgyptYear = 0
-tRomeEgyptTL = (65, 31)
-tRomeEgyptBR = (72, 36)
-
-# following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestRomeCarthage = (0, iRome, iCarthage, tRomeCarthageTL, tRomeCarthageBR, 2, iRomeCarthageYear, 10)
-tConquestRomeGreece = (1, iRome, iGreece, tRomeGreeceTL, tRomeGreeceBR, 2, iRomeGreeceYear, 10)
-tConquestRomeAnatolia = (2, iRome, iGreece, tRomeAnatoliaTL, tRomeAnatoliaBR, 2, iRomeAnatoliaYear, 10)
-tConquestRomeCelts = (3, iRome, iCelts, tRomeCeltiaTL, tRomeCeltiaBR, 2, iRomeCeltiaYear, 10)
-tConquestRomeEgypt = (4, iRome, iEgypt, tRomeEgyptTL, tRomeEgyptBR, 2, iRomeEgyptYear, 10)
-
-iAlexanderYear = -340
-tGreeceMesopotamiaTL = (70, 38)
-tGreeceMesopotamiaBR = (78, 45)
-tGreeceEgyptTL = (65, 31)
-tGreeceEgyptBR = (72, 36)
-tGreecePersiaTL = (79, 37)
-tGreecePersiaBR = (85, 45)
-
-tConquestGreeceMesopotamia = (5, iGreece, iBabylonia, tGreeceMesopotamiaTL, tGreeceMesopotamiaBR, 2, iAlexanderYear, 20)
-tConquestGreeceEgypt = (6, iGreece, iEgypt, tGreeceEgyptTL, tGreeceEgyptBR, 2, iAlexanderYear, 20)
-tConquestGreecePersia = (7, iGreece, iPersia, tGreecePersiaTL, tGreecePersiaBR, 2, iAlexanderYear, 20)
-
-iCholaSumatraYear = 1030
-tCholaSumatraTL = (98, 26)
-tCholaSumatraBR = (101, 28)
-
-tConquestCholaSumatra = (8, iTamils, iIndonesia, tCholaSumatraTL, tCholaSumatraBR, 1, iCholaSumatraYear, 10)
-
-iSpainMoorsYear = 1200
-tSpainMoorsTL = (50, 40)
-tSpainMoorsBR = (54, 42)
-
-tConquestSpainMoors = (9, iSpain, iMoors, tSpainMoorsTL, tSpainMoorsBR, 1, iSpainMoorsYear, 10)
-
-iTurksPersiaYear = 1000
-tTurksPersiaTL = (78, 37)
-tTurksPersiaBR = (85, 43)
-
-iTurksAnatoliaYear = 1100
-tTurksAnatoliaTL = (69, 37)
-tTurksAnatoliaBR = (78, 45)
-
-tConquestTurksPersia = (10, iTurks, iArabia, tTurksPersiaTL, tTurksPersiaBR, 4, iTurksPersiaYear, 20)
-tConquestTurksAnatolia = (11, iTurks, iByzantium, tTurksAnatoliaTL, tTurksAnatoliaBR, 5, iTurksAnatoliaYear, 20)
-
-iMongolsPersiaYear = 1220
-tMongolsPersiaTL = (79, 37)
-tMongolsPersiaBR = (85, 49)
-
-tConquestMongolsPersia = (12, iMongols, iTurks, tMongolsPersiaTL, tMongolsPersiaBR, 7, iMongolsPersiaYear, 10)
-
-lConquests = [tConquestRomeCarthage, tConquestRomeGreece, tConquestRomeAnatolia, tConquestRomeCelts, tConquestRomeEgypt, tConquestGreeceMesopotamia, tConquestGreeceEgypt, tConquestGreecePersia, tConquestCholaSumatra, tConquestSpainMoors, tConquestTurksPersia, tConquestTurksAnatolia, tConquestMongolsPersia]
+lConquests = []
 
 
 @handler("GameStart")
@@ -115,10 +44,6 @@ def restorePeaceMinors(iGameTurn):
 def startMinorWars(iGameTurn):
 	if iGameTurn > turns(50):	
 		iMinor = players.independent().periodic(13)
-		if iMinor:
-			minorWars(iMinor)
-			
-		iMinor = players.civs(iCelts).periodic(50)
 		if iMinor:
 			minorWars(iMinor)
 
@@ -175,7 +100,7 @@ def checkConquest(tConquest, tPrereqConquest = (), iWarPlan = WarPlanTypes.WARPL
 	if player(iPlayer).isHuman():
 		return
 		
-	if not player(iPlayer).isAlive() and iCiv != iTurks: 
+	if not player(iPlayer).isAlive(): 
 		return
 	
 	if team(iPlayer).isAVassal():
@@ -263,8 +188,6 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 		if active() not in [iPlayer, city.getOwner()]: 
 			iExtra += 1
 			
-		if iCiv == iMongols and not player(iPlayer).isHuman():
-			iExtra += 1
 		
 		tPlot = findNearestLandPlot(city, iPlayer)
 		
@@ -274,17 +197,8 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 		}
 		createRoleUnits(iPlayer, tPlot, dConquestUnits.items())
 		
-		if iCiv == iGreece:
-			makeUnit(iPlayer, iCompanion, tPlot, UnitAITypes.UNITAI_ATTACK_CITY)
-		
-		if iCiv == iTamils:
-			makeUnit(iPlayer, iWarElephant, tPlot, UnitAITypes.UNITAI_ATTACK_CITY)
-			
 		if iCiv == iSpain:
 			createRoleUnit(iPlayer, tPlot, iShockCity, 2*iExtra)
-			
-		if iCiv == iTurks:
-			createRoleUnit(iPlayer, tPlot, iShockCity, 2+iExtra)
 
 
 def declareWar(iPlayer, iTarget, iWarPlan):
@@ -433,19 +347,16 @@ def determineTargetPlayer(iPlayer):
 			dTargetValues[iLoopPlayer] /= 2
 			
 		# spare smallish civs
-		if iLoopCiv in [iNetherlands, iPortugal, iItaly]:
+		if iLoopCiv in [iNetherlands, iPortugal]:
 			dTargetValues[iLoopPlayer] *= 4
 			dTargetValues[iLoopPlayer] /= 5
 			
 		# no suicide
 		if iCiv == iNetherlands:
-			if iLoopCiv in [iFrance, iHolyRome, iGermany]:
+			if iLoopCiv in [iFrance]:
 				dTargetValues[iLoopPlayer] /= 2
 		elif iCiv == iPortugal:
 			if iLoopCiv == iSpain:
-				dTargetValues[iLoopPlayer] /= 2
-		elif iCiv == iItaly:
-			if iLoopCiv in [iFrance, iHolyRome, iGermany]:
 				dTargetValues[iLoopPlayer] /= 2
 				
 	return dict_max(dTargetValues)

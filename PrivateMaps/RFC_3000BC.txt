@@ -5,44 +5,22 @@ BeginGame
 	Option=GAMEOPTION_AGGRESSIVE_AI
 	Option=GAMEOPTION_NO_TECH_BROKERING
 	GameTurn=0
-	StartYear=-3000
+	StartYear=250
 	Description=TXT_KEY_RHYES_WB_DESC
-	ModPath=Mods\RFC Dawn of Civilization
+	ModPath=Mods\DOCAmerica
 EndGame
 
 BeginMap
 EndMap
 
 BeginPlot
-	x=69,y=33
+	x=36,y=49
 	BeginUnit
 		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_EGYPT
+		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_SETTLER
-		UnitOwner=CIVILIZATION_EGYPT
-	EndUnit
-EndPlot
-BeginPlot
-	x=76,y=40
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_BABYLONIA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER
-		UnitOwner=CIVILIZATION_BABYLONIA
-	EndUnit
-EndPlot
-BeginPlot
-	x=87,y=40
-	BeginUnit
-		UnitType=UNIT_MILITIA
-		UnitOwner=CIVILIZATION_HARAPPANS
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HARAPPAN_CITY_BUILDER
-		UnitOwner=CIVILIZATION_HARAPPANS
+		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 EndPlot

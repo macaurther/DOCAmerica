@@ -11513,10 +11513,6 @@ int CvHandicapInfo::getUnitCostPercentByID(PlayerTypes ePlayer) const
 	{
 	    iUnitCost /= 2;
 	}
-	else if (GET_PLAYER(ePlayer).getCivilizationType() == GERMANY && GC.getGameINLINE().getGameTurnYear() < 1775)
-	{
-	    iUnitCost /= 2;
-	}
 
 	return iUnitCost;
 }

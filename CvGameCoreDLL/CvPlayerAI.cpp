@@ -1849,57 +1849,17 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		return 0;
 	}
 
-	//Leoreth: prevent France from founding Metz
-	if (iX == 57 && iY == 50)
-	{
-		return 0;
-	}
-
-	//Leoreth: prevent HRE from founding Bremen
-	if (iX == 58 && iY == 53)
-	{
-		return 0;
-	}
-
-	if (iX == 62 && (iY == 51 || iY == 52 || iY == 54))
-	{
-		return 0;
-	}
-
-	//Leoreth: if Poland exists, prevent HRE from founding cities in its core
-	if (getCivilizationType() == HOLY_ROME)
-	{
-	    if (iX >= 63 && iY >= 49)
-	    {
-			for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
-			{
-				if (GET_PLAYER((PlayerTypes)iI).isMinorCiv())
-				{
-					continue;
-				}
-
-				if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == POLAND && GET_PLAYER((PlayerTypes)iI).isPlayable())
-				{
-					return 0;
-				}
-			}
-	    }
-	}
-
 	bIsCoastal = pPlot->isCoastalLand(GC.getMIN_WATER_SIZE_FOR_OCEAN());
 	pArea = pPlot->area();
 	iNumAreaCities = pArea->getCitiesPerPlayer(getID());
 
 	bool bAdvancedStart = (getAdvancedStartPoints() >= 0);
 
-	if (getCivilizationType() != RUSSIA)
+	if (!bStartingLoc && !bAdvancedStart)
 	{
-		if (!bStartingLoc && !bAdvancedStart)
+		if (!bIsCoastal && iNumAreaCities == 0)
 		{
-			if (!bIsCoastal && iNumAreaCities == 0)
-			{
-				return 0;
-			}
+			return 0;
 		}
 	}
 
@@ -3021,22 +2981,9 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 		}
 	}
 
-	if (getCivilizationType() == MONGOLS)
-	{
-		if (pCity->getCivilizationType() == CHINA)
-		{
-			iValue += 2;
-		}
-	}
 /************************************************************************************************/
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
-
-	//Leoreth: more barbarian pressure against India and Rome
-	if (isBarbarian() && (pCity->getCivilizationType() == INDIA || pCity->getCivilizationType() == ROME))
-	{
-		iValue += 2;
-	}
 
 	if (GET_PLAYER(pCity->getOwnerINLINE()).isMinorCiv() || pCity->isBarbarian())
 	{
@@ -4472,8 +4419,6 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 												if (!(GC.getGameINLINE().isReligionSlotTaken((ReligionTypes)iJ)))
 												{
 													if (iJ == JUDAISM) continue;
-													if ((iJ == CONFUCIANISM || iJ == TAOISM) && getCivilizationType() != CHINA) continue;
-													if (iJ == ZOROASTRIANISM && getCivilizationType() != PERSIA) continue;
 
 													int iRoll = 2400;
 													if (!GC.getGame().isOption(GAMEOPTION_PICK_RELIGION))
@@ -4682,14 +4627,6 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 								{
 									iValue *= 10;
 									iValue /= iPreference;
-								}
-
-								if (getCivilizationType() == CHINA && iI == WRITING)
-								{
-									if (GC.getGame().getActiveCivilizationType() != BABYLONIA && GC.getGame().countKnownTechNumTeams((TechTypes)WRITING) > 0)
-									{
-										iValue *= 4;
-									}
 								}
 
 								iValue = std::max(1, iValue);
@@ -11037,13 +10974,6 @@ ReligionTypes CvPlayerAI::AI_bestReligion() const
 			{
 				switch (getCivilizationType())
 				{
-				case OTTOMANS:
-				case ARABIA:
-				case EGYPT:
-				case MALI:
-				case CARTHAGE:
-				case PERSIA:
-					iValue /= 2;
 				}
 			}
 			
@@ -12483,27 +12413,6 @@ void CvPlayerAI::AI_doCommerce()
 
 			iIdealPercent = std::min(iIdealPercent, 20);
 
-			// Leoreth: some civs historically focus on culture
-			if (getCivilizationType() == CHINA && GC.getGame().getTechRank(getTeam()) < 3) 
-			{
-				iIdealPercent = 40 - 10 * GC.getGame().getTeamRank(getTeam());
-			}
-
-			if (getCivilizationType() == JAPAN && getCurrentEra() < ERA_INDUSTRIAL && GC.getGame().getTechRank(getTeam()) < GC.getGame().countCivPlayersAlive() / 2)
-			{
-				iIdealPercent = 40;
-			}
-
-			if ((getCivilizationType() == INDIA || getCivilizationType() == TAMILS) && getCurrentEra() >= ERA_MEDIEVAL)
-			{
-				iIdealPercent = 40;
-			}
-
-			if (getCivilizationType() == EGYPT && getCurrentEra() >= ERA_CLASSICAL)
-			{
-				iIdealPercent = 30;
-			}
-
 			if (AI_isDoStrategy(AI_STRATEGY_CULTURE4))
 			{
 			    iIdealPercent = 100;
@@ -12559,11 +12468,6 @@ void CvPlayerAI::AI_doCommerce()
 			if ((getCommercePercent(COMMERCE_RESEARCH) == 0) && (calculateGoldRate() > 0))
 			{
 				setCommercePercent(COMMERCE_RESEARCH, GC.getDefineINT("COMMERCE_PERCENT_CHANGE_INCREMENTS"));
-			}
-
-			if (getCivilizationType() == MALI)
-			{
-				changeCommercePercent(COMMERCE_RESEARCH, -4 * (GC.getDefineINT("COMMERCE_PERCENT_CHANGE_INCREMENTS"))); //-40%
 			}
 		}
 	}
@@ -15404,12 +15308,6 @@ bool CvPlayerAI::AI_disbandUnit(int iExpThreshold, bool bObsolete)
 		return false;
 	}
 
-	// Leoreth: AI disband all units otherwise, and gets conquered at spawn
-	if (getCivilizationType() == GERMANY)
-	{
-		return false;
-	}
-
 	// Leoreth: do not disband after spawn
 	if (GC.getGame().getGameTurn() < getLastBirthTurn() + getTurns(20))
 	{
@@ -16869,12 +16767,6 @@ int CvPlayerAI::AI_goldTradeValuePercent(PlayerTypes eOtherPlayer) const
 	if (AI_isFinancialTrouble())
 	{
 		iValue += 1;
-	}
-
-	// Leoreth: Byzantine UP: double value of Byzantine gold
-	if (eOtherPlayer != NO_PLAYER && GET_PLAYER(eOtherPlayer).getCivilizationType() == BYZANTIUM)
-	{
-		iValue *= 2;
 	}
 
 	return 100 * iValue;
@@ -19489,11 +19381,6 @@ int CvPlayerAI::AI_slaveTradeVal(CvUnit* pUnit) const
 
 	if (getCivilizationType() != GC.getGame().getActiveCivilizationType())
 	{
-		if (getCivilizationType() == MALI || getCivilizationType() == CONGO || getCivilizationType() == ETHIOPIA)
-		{
-			return 0;
-		}
-
 		if (iRequiredSlaves <= 0)
 		{
 			return 0;

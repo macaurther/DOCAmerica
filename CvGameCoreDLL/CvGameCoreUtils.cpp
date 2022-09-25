@@ -1395,15 +1395,6 @@ bool PUF_canDefend(const CvUnit* pUnit, int iData1, int iData2)
 
 bool PUF_canDefendAgainst(const CvUnit* pUnit, int iData1, int iData2)
 {
-	// Leoreth: Turkic UP
-	if (pUnit->isBarbarian() && GET_PLAYER((PlayerTypes)iData1).getCivilizationType() == TURKS && GET_TEAM(GET_PLAYER((PlayerTypes)iData1).getTeam()).isAtWarWithMajorPlayer())
-	{
-		if (pUnit->getUnitCombatType() == 2 || pUnit->getUnitCombatType() == 3)
-		{
-			return false;
-		}
-	}
-
 	return pUnit->canDefend();
 }
 
@@ -2395,7 +2386,7 @@ int getScenarioStartYear(ScenarioTypes eScenario)
 		eScenario = getScenario();
 	}
 
-	if (eScenario == SCENARIO_3000BC) return -3000;
+	if (eScenario == SCENARIO_3000BC) return 250;
 	else if (eScenario == SCENARIO_600AD) return 600;
 	else return 1700;
 }

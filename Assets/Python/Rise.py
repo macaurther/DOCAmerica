@@ -19,11 +19,9 @@ MainOpt = BugCore.game.MainInterface
 
 
 lExpandedFlipCivs = [
-	iByzantium
 ]
 
 lIndependenceCivs = [
-	iByzantium,
 	iArgentina,
 	iMexico,
 	iColombia,
@@ -32,7 +30,6 @@ lIndependenceCivs = [
 ]
 
 lDynamicReligionCivs = [
-	iByzantium,
 	iAmerica,
 	iArgentina,
 	iMexico,
@@ -42,14 +39,11 @@ lDynamicReligionCivs = [
 ]
 
 dClearedForBirth = {
-	iIndia: iHarappa,
-	iByzantium: iGreece,
-	iItaly: iRome,
 	iMexico: iAztecs,
 }
 
 lAlwaysClear = [
-	iHarappa,
+	# TODO: iMississippi
 ]
 
 
@@ -622,36 +616,6 @@ class Birth(object):
 		if not infos.civ(self.iCiv).isAIPlayable():
 			return False
 		
-		# Byzantium requires Rome to be alive and Greece to be dead (human Rome can avoid Byzantine spawn by being solid)
-		if self.iCiv == iByzantium:
-			if not player(iRome).isAlive():
-				return False
-			elif player(iGreece).isAlive():
-				return False
-			elif player(iRome).isHuman() and stability(iRome) == iStabilitySolid:
-				return False
-		
-		# Italy requires Rome to be dead
-		if self.iCiv == iItaly:
-			if player(iRome).isAlive():
-				return False
-		
-		# Ottomans require that the Turks managed to conquer at least one city in the Near East
-		if self.iCiv == iOttomans:
-			if cities.birth(iOttomans).none(CyCity.isHuman) and cities.rectangle(*tNearEast).none(lambda city: iTurks in [city.getCivilizationType(), city.getPreviousCiv()]):
-				return False
-		
-		# Thailand requires Khmer to be shaky or worse (unstable if Khmer is human)
-		if self.iCiv == iThailand:
-			iRequiredStability = player(iKhmer).isHuman() and iStabilityShaky or iStabilityStable
-			if player(iKhmer).isAlive() and stability(iKhmer) >= iRequiredStability:
-				return False
-		
-		# Iran requires Persia to be dead
-		if self.iCiv == iIran:
-			if player(iPersia).isAlive():
-				return False
-		
 		# Mexico requires Aztecs to be dead
 		if self.iCiv == iMexico:
 			if player(iAztecs).isAlive():
@@ -712,10 +676,6 @@ class Birth(object):
 			iTurns = 10
 		
 		if game.getCurrentEra() >= iRenaissance:
-			iTurns = 10
-		
-		# Mali receives a shorter protection window if the player is Moors, to help with their UHV
-		elif self.iCiv == iMali and civ() == iMoors:
 			iTurns = 10
 		
 		return turns(iTurns)
@@ -908,12 +868,6 @@ class Birth(object):
 		iOwnerCiv = civ(iOwner)
 		
 		if iOwnerCiv == iCanada:
-			return False
-		
-		if iOwnerCiv == iGermany and not player(iOwner).isHuman():
-			return False
-		
-		if iOwnerCiv == iByzantium and self.iCiv == iRome:
 			return False
 		
 		return True

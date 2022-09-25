@@ -8,24 +8,11 @@ from Events import handler, popup_handler
 # initialise coordinates
 
 dCatholicPreference = CivDict({
-iEgypt		: 80,
-iGreece		: 80,
-iRome		: 95,
-iEthiopia	: 80,
-iByzantium	: 90,
-iVikings	: 20,
-iArabia		: 80,
 iSpain		: 95,
 iFrance		: 75,
 iEngland	: 30,
-iHolyRome	: 55,
-iRussia		: 80,
 iNetherlands: 10,
-iPoland		: 80,
 iPortugal	: 95,
-iItaly		: 90,
-iCongo		: 80,
-iGermany	: 25,
 iAmerica	: 20,
 }, 50)
 
@@ -53,22 +40,6 @@ def onBuildingBuilt(city, iBuilding):
 
 			if cities.owner(iPlayer).none(lambda city: city.isHasReligion(iOrthodoxy)):
 				player(city).setLastStateReligion(iCatholicism)
-
-@handler("BeginGameTurn")
-def foundHinduism(iGameTurn):
-	if not player(iIndia).isHuman():
-		if iGameTurn == year(-2000)+1:
-			if not game.isReligionFounded(iHinduism):
-				if plot(92, 39).isCity():
-					foundReligion((92, 39), iHinduism)
-
-
-@handler("cityBuilt")
-def foundIslam(city):
-	if civ(city) == iArabia:
-		if not game.isReligionFounded(iIslam):
-			if at(city, tMecca):
-				foundReligion(location(city), iIslam)
 
 
 @handler("BeginGameTurn")
@@ -136,55 +107,6 @@ def spreadJudaism():
 	spreadReligionToRegion(iJudaism, [rIberia, rEurope, rItaly, rBritain, rRussia, rBalkans], 1000, 10)
 	spreadReligionToRegion(iJudaism, [rMesopotamia, rAnatolia, rEgypt], 600, 20)
 	spreadReligionToRegion(iJudaism, [rCanada, rAlaska, rUnitedStates], 1850, 10)
-
-
-@handler("BeginGameTurn")
-def spreadHinduismSoutheastAsia():
-	lSouthEastAsianCivs = [iKhmer, iIndonesia]
-
-	if not game.isReligionFounded(iHinduism): return
-	if none(player(iCiv).isAlive() for iCiv in lSouthEastAsianCivs): return
-	if not turn().between(500, 1200): return
-	
-	if not periodic(20): return
-	
-	contacts = players.major().where(lambda p: any(player(q).canContact(p) for q in lSouthEastAsianCivs) and player(p).getStateReligion() in [iHinduism, iBuddhism])
-	if not contacts:
-		return
-	
-	southEastAsiaCities = cities.regions(rIndochina, rIndonesia)
-	potentialCities = southEastAsiaCities.where(lambda city: not city.isHasReligion(iHinduism))
-	
-	iMaxCitiesMultiplier = 2
-	if len(potentialCities) * iMaxCitiesMultiplier >= len(southEastAsiaCities):
-		spreadCity = potentialCities.random()
-		if spreadCity:
-			spreadCity.spreadReligion(iHinduism)
-
-
-@handler("BeginGameTurn")
-def spreadIslamIndonesia():
-	if not game.isReligionFounded(iIslam): return
-	if not player(iIndonesia).isAlive(): return
-	if not turn().between(1300, 1600): return
-	
-	if not periodic(15): return
-	
-	indonesianContacts = players.major().where(lambda p: player(iIndonesia).canContact(p) and player(p).getStateReligion() == iIslam)
-	if not indonesianContacts:
-		return
-		
-	indonesianCities = cities.region(rIndonesia)
-	potentialCities = indonesianCities.where(lambda c: not c.isHasReligion(iIslam))
-	
-	iMaxCitiesMultiplier = 2
-	if player(iIndonesia).getStateReligion() == iIslam: iMaxCitiesMultiplier = 5
-	
-	if len(potentialCities) * iMaxCitiesMultiplier >= len(indonesianCities):
-		spreadCity = potentialCities.random()
-		if spreadCity:
-			spreadCity.spreadReligion(iIslam)
-
 
 @handler("techAcquired")
 def checkReformation(iTech, iTeam, iPlayer):

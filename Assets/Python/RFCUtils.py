@@ -740,26 +740,6 @@ def canRespawn(iCiv):
 	if none(year().between(iStart, iEnd) for iStart, iEnd in dResurrections[iCiv]):
 		return False
 				
-	# Thailand cannot respawn when Khmer is alive and vice versa
-	if exclusive(iCiv, iKhmer, iThailand):
-		return False
-	
-	# Rome cannot respawn when Italy is alive and vice versa
-	if exclusive(iCiv, iRome, iItaly):
-		return False
-	
-	# Greece cannot respawn when Byzantium is alive and vice versa
-	if exclusive(iCiv, iGreece, iByzantium):
-		return False
-	
-	# India cannot respawn when Mughals are alive (not vice versa -> Pakistan)
-	if iCiv == iIndia and player(iMughals).isAlive():
-		return False
-	
-	# Exception during Japanese UHV
-	if player(iJapan).isHuman() and year().between(1920, 1945):
-		if iCiv in [iChina, iKorea, iIndonesia, iThailand]:
-			return False
 			
 	return True
 	
@@ -1090,7 +1070,8 @@ def paintPlots(plots, index=1000, color="COLOR_CYAN"):
 # used: Shortcuts
 def startObserverMode(iTurns):
 	data.iBeforeObserverSlot = active()
-	iObserverSlot = player(iHarappa).isAlive() and slot(iPolynesia) or slot(iHarappa)
+	#TODO: Observer
+	iObserverSlot = player(iColombia).isAlive() and slot(iColombia) or slot(iArgentina)
 	
 	makeUnit(iObserverSlot, iCatapult, (0, 0))
 	

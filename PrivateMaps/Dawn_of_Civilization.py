@@ -12,7 +12,7 @@ lCustomMapOptions = [
 	("Starting Date", ["3000 BC", "600 AD", "1700 AD"], "3000 BC"),
 ]
 
-lMinorCivs = [iCelts, iNative, iIndependent, iIndependent2]
+lMinorCivs = [iNative, iIndependent, iIndependent2]
 
 
 def getDescription():
@@ -106,6 +106,8 @@ def afterGeneration():
 def findStartingPlot(args):
 	iPlayer = args[0]
 	startingPlot = is_minor(iPlayer) and plot(0, 0) or plots.capital(civ(iPlayer))
+	#startingPlot = (iPlayer not in lMinorCivs) and plot(0, 0) or plots.capital(civ(iPlayer))
+	#startingPlot = plot(0, 0)
 	
 	return map.plotNum(startingPlot.getX(), startingPlot.getY())
 

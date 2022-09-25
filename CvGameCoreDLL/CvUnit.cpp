@@ -486,8 +486,7 @@ void CvUnit::convert(CvUnit* pUnit)
 	iNewExperience *= iOurModifier;
 	iNewExperience /= iOldModifier;
 
-	// Leoreth: includes German UP
-	if (getLeaderUnitType() == NO_UNIT && getCivilizationType() != GERMANY)
+	if (getLeaderUnitType() == NO_UNIT)
 	{
 		int iOldCombat = GC.getUnitInfo(pUnit->getUnitType()).getCombat();
 		int iNewCombat = GC.getUnitInfo(getUnitType()).getCombat();
@@ -718,16 +717,6 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	eCaptureUnitType = ((eCapturingPlayer != NO_PLAYER) ? getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType()) : NO_UNIT);
 	eCapturingCivilization = (eCapturingPlayer != NO_PLAYER) ? GET_PLAYER(eCapturingPlayer).getCivilizationType() : NO_CIVILIZATION;
 
-	// Leoreth: Turkic UP
-	if (isBarbarian() && eCapturingCivilization == TURKS && GET_TEAM(GET_PLAYER(eCapturingPlayer).getTeam()).isAtWarWithMajorPlayer())
-	{
-		// mounted units
-		if (getUnitCombatType() == 2 || getUnitCombatType() == 3)
-		{
-			eCaptureUnitType = getUnitType();
-		}
-	}
-
 // BUG - Unit Captured Event - start
 	PlayerTypes eFromPlayer = getOwner();
 	UnitTypes eCapturedUnitType = getUnitType();
@@ -892,13 +881,6 @@ void CvUnit::doTurn()
 	setReconPlot(NULL);
 
 	setMoves(0);
-
-	// Leoreth: Turkic UP for the AI
-	if (isBarbarian() && plot()->getOwner() != NO_PLAYER && GET_PLAYER(plot()->getOwner()).getCivilizationType() == TURKS && GC.getGame().getActiveCivilizationType() != TURKS)
-	{
-		setCapturingPlayer(plot()->getOwner());
-		kill(false);
-	}
 
 	m_iStuckLoopCount = 0;
 }
@@ -2447,15 +2429,6 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 		return true;
 	}
 
-	// Leoreth: Turkic UP
-	if (isBarbarian() && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == TURKS)
-	{
-		if (!GET_TEAM(eTeam).isAtWarWithMajorPlayer())
-		{
-			return false;
-		}
-	}
-
 	if (isEnemy(eTeam))
 	{
 		return true;
@@ -2481,18 +2454,6 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 		if (GET_TEAM(getTeam()).isOpenBorders(eTeam))
 		{
 			return true;
-		}
-	}
-
-	//Leoreth: Tibetan UP
-	if (getCivilizationType() == TIBET)
-	{
-		for (int iI = 0; iI < GC.getNumReligionInfos(); iI++)
-		{
-			if (GC.getUnitInfo(getUnitType()).getReligionSpreads(iI) > 0)
-			{
-				return true;
-			}
 		}
 	}
 
@@ -2641,12 +2602,6 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			// Leoreth: impassable feature with improvement can be entered
 			bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && (pPlot->getImprovementType() == NO_IMPROVEMENT);
-
-			// Leoreth: Khmer UP
-			if (getCivilizationType() == KHMER && (pPlot->getFeatureType() == FEATURE_JUNGLE || pPlot->getFeatureType() == FEATURE_RAINFOREST))
-			{
-				bImpassableFeature = false;
-			}
 
 			// Leoreth: attacks on impassable tiles are possible now
 			if (bImpassableFeature && !bAttack)
@@ -5104,13 +5059,6 @@ bool CvUnit::pillage()
 
 			iPillageGold = (int)lPillageGold;
 
-			//Rhye - start UP (Viking)
-			if (getCivilizationType() == VIKINGS && GET_PLAYER(getOwnerINLINE()).getCurrentEra() <= ERA_MEDIEVAL)
-			{
-				iPillageGold *= 5;
-			}
-			//Rhye - end UP
-
 
 			if (iPillageGold > 0)
 			{
@@ -5981,11 +5929,6 @@ int CvUnit::getSpreadChance(ReligionTypes eReligion) const
 	}
 
 	iSpreadChance += (NUM_RELIGIONS - iOtherReligions) * (100 - iSpreadChance) / NUM_RELIGIONS;
-
-	if (getCivilizationType() == TIBET)
-	{
-		iSpreadChance += (100 - iSpreadChance) / 2;
-	}
 
 	if (eSpreadFactor == RELIGION_SPREAD_NONE) iSpreadChance /= 2;
 
@@ -9100,15 +9043,6 @@ bool CvUnit::canDefend(const CvPlot* pPlot) const
 // Leoreth
 bool CvUnit::canDefendAgainst(const CvUnit* pAttacker, const CvPlot* pPlot) const
 {
-	// Leoreth: Turkic UP
-	if (isBarbarian() && pAttacker->getCivilizationType() == TURKS && GET_TEAM(pAttacker->getTeam()).isAtWarWithMajorPlayer())
-	{
-		if (getUnitCombatType() == 2 || getUnitCombatType() == 3)
-		{
-			return false;
-		}
-	}
-
 	return canDefend(pPlot);
 }
 
@@ -10707,28 +10641,6 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
                             {
                                 GET_PLAYER(GET_TEAM((TeamTypes)iI).getPlayerMemberAt(iJ)).AI_invalidatePlotDangerCache(iIndex);
                             }
-
-							// Leoreth: Mongol UP
-							if (getCivilizationType() == MONGOLS && std::abs(iDY) <= 1 && std::abs(iDX) <= 1)
-							{
-								CvPlot* pNeighborPlot = GC.getMap().plotByIndex(iIndex);
-
-								if (pNeighborPlot->isCity())
-								{
-									CvCity* pCity = pNeighborPlot->getPlotCity();
-									if (GET_TEAM(getTeam()).isAtWar(GET_PLAYER(pCity->getOwner()).getTeam()) && !pCity->isMongolUP())
-									{
-										if (pNewPlot->getUnitPower(getOwnerINLINE()) > pNeighborPlot->getUnitPower(pCity->getOwnerINLINE()))
-										{
-											pCity->setOccupationTimer(std::max(3, pCity->getPopulation() / 3));
-											pCity->setMongolUP(true);
-
-											gDLL->getInterfaceIFace()->addMessage(getOwner(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_UP_MONGOL_TERROR", pCity->getNameKey()).GetCString(), "AS2D_CITYCAPTURE", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
-											gDLL->getInterfaceIFace()->addMessage(pCity->getOwner(), true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_UP_MONGOL_TERROR_US", pCity->getNameKey()).GetCString(), "AS2D_CITYCAPTURE", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pCity->getX_INLINE(), pCity->getY_INLINE(), true, true);
-										}
-									}
-								}
-							}
                         }
 					}
 				}
@@ -12917,12 +12829,6 @@ bool CvUnit::canAdvance(const CvPlot* pPlot, int iThreshold) const
 		// Leoreth: impassable feature with improvement can be entered
 		bool bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && (pPlot->getImprovementType() == NO_IMPROVEMENT);
 
-		// Leoreth: Khmer UP
-		if (getCivilizationType() == KHMER && (pPlot->getFeatureType() == 1 || pPlot->getFeatureType() == 8))
-		{
-			bImpassableFeature = false;
-		}
-
 		// Leoreth: attacks on impassable tiles are possible now
 		if (bImpassableFeature)
 		{
@@ -14303,110 +14209,13 @@ int CvUnit::getOriginalArtStyle(int regionID)
 	{
 		return GC.getCivilizationInfo(INCA).getUnitArtStyleType();
 	}
-	else if (id == REGION_ETHIOPIA || id == REGION_WEST_AFRICA || id == REGION_SOUTH_AFRICA)
-	{
-		return GC.getCivilizationInfo(NATIVE).getUnitArtStyleType();
-	}
 	else if (id == REGION_IBERIA)
 	{
 		return GC.getCivilizationInfo(SPAIN).getUnitArtStyleType();
 	}
-	else if (id == REGION_ITALY || id == REGION_BALKANS)
-	{
-		return GC.getCivilizationInfo(ROME).getUnitArtStyleType();
-	}
-	else if (id == REGION_MAGHREB)
-	{
-		if (GC.getGameINLINE().getGameTurnYear() > GC.getCivilizationInfo(ARABIA).getStartingYear())
-		{
-			return GC.getCivilizationInfo(ARABIA).getUnitArtStyleType();
-		}
-		else
-		{
-			return GC.getCivilizationInfo(CARTHAGE).getUnitArtStyleType();
-		}
-	}
 	else if (id == REGION_EUROPE)
 	{
 		return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
-	}
-	else if (id == REGION_SCANDINAVIA)
-	{
-		return GC.getCivilizationInfo(VIKINGS).getUnitArtStyleType();
-	}
-	else if (id == REGION_RUSSIA || id == REGION_SIBERIA)
-	{
-		return GC.getCivilizationInfo(RUSSIA).getUnitArtStyleType();
-	}
-	else if (id == REGION_PERSIA)
-	{
-		return GC.getCivilizationInfo(PERSIA).getUnitArtStyleType();
-	}
-	else if (id == REGION_MESOPOTAMIA)
-	{
-		return GC.getCivilizationInfo(BABYLONIA).getUnitArtStyleType();
-	}
-	else if (id == REGION_ARABIA)
-	{
-		return GC.getCivilizationInfo(ARABIA).getUnitArtStyleType();
-	}
-	else if (id == REGION_EGYPT)
-	{
-		if (GC.getGameINLINE().getGameTurnYear() > GC.getCivilizationInfo(ARABIA).getStartingYear())
-		{
-			return GC.getCivilizationInfo(ARABIA).getUnitArtStyleType();
-		}
-		else
-		{
-			return GC.getCivilizationInfo(EGYPT).getUnitArtStyleType();
-		}
-	}
-	else if (id == REGION_INDIA)
-	{
-		for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
-		{
-			if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == MUGHALS)
-			{
-				if (GET_PLAYER((PlayerTypes)iI).isAlive())
-				{
-					return GC.getCivilizationInfo(MUGHALS).getUnitArtStyleType();
-				}
-				else
-				{
-					break;
-				}
-			}
-		}
-
-		return GC.getCivilizationInfo(INDIA).getUnitArtStyleType();
-	}
-	else if (id == REGION_DECCAN)
-	{
-		return GC.getCivilizationInfo(INDIA).getUnitArtStyleType();
-	}
-	else if (id == REGION_INDOCHINA)
-	{
-		return GC.getCivilizationInfo(KHMER).getUnitArtStyleType();
-	}
-	else if (id == REGION_INDONESIA)
-	{
-		return GC.getCivilizationInfo(INDONESIA).getUnitArtStyleType();
-	}
-	else if (id == REGION_CHINA || id == REGION_MANCHURIA || id == REGION_TIBET)
-	{
-		return GC.getCivilizationInfo(CHINA).getUnitArtStyleType();
-	}
-	else if (id == REGION_KOREA)
-	{
-		return GC.getCivilizationInfo(KOREA).getUnitArtStyleType();
-	}
-	else if (id == REGION_JAPAN)
-	{
-		return GC.getCivilizationInfo(JAPAN).getUnitArtStyleType();
-	}
-	else if (id == REGION_CENTRAL_ASIA)
-	{
-		return GC.getCivilizationInfo(MONGOLS).getUnitArtStyleType();
 	}
 
 	return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
