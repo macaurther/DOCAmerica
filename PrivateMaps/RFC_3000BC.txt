@@ -14,7 +14,7 @@ BeginMap
 EndMap
 
 BeginPlot
-	x=36,y=49
+	x=36,y=58
 	BeginUnit
 		UnitType=UNIT_MILITIA
 		UnitOwner=CIVILIZATION_MAYA
