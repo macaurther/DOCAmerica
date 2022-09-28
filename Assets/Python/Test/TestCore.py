@@ -2863,7 +2863,7 @@ class TestHasCivic(TestCase):
 class TestScenarioUtils(TestCase):
 
 	def test_scenario(self):
-		self.assertEqual(scenario(), i3000BC)
+		self.assertEqual(scenario(), i250AD)
 		
 	def test_scenario_start_turn(self):
 		self.assertEqual(scenarioStartTurn(), 0)

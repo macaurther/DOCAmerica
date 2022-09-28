@@ -437,18 +437,10 @@ class Birth(object):
 				plot.setBirthProtected(self.iPlayer)
 			elif plot.getBirthProtected() == self.iPlayer:
 				plot.resetBirthProtected()
-				
-	def assignAdditionalTechs(self):
-		if self.iCiv == iChina and scenario() == i3000BC and not self.isHuman():
-			for iTech in [iProperty, iAlloys]:
-				self.team.setHasTech(iTech, True, self.iPlayer, False, False)
 	
 	def assignAttributes(self):
 		# civilization attributes
 		self.civ.apply()
-		
-		# additional starting techs
-		self.assignAdditionalTechs()
 		
 		# dynamic starting religion
 		if self.iCiv in lDynamicReligionCivs:

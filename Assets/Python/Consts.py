@@ -561,7 +561,7 @@ iNetherlands : [(99, 28), (99, 27), (100, 27), (100, 26), (101, 26), (104, 25), 
 
 lSecondaryCivs = [iArgentina, iBrazil]
 
-(i3000BC, i600AD, i1700AD) = range(3)
+(i250AD, i1500AD, i1770AD) = range(3)
 
 # Stability overlay and editor
 iNumPlotStabilityTypes = 5

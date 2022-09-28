@@ -27,9 +27,9 @@ lCivilizations = [
 def createStartingUnits():
 	pass
 
-scenario600AD = Scenario(
-	iStartYear = 600,
-	fileName = "RFC_600AD",
+scenario1500AD = Scenario(
+	iStartYear = 1500,
+	fileName = "RFC_1500AD",
 	
 	lCivilizations = lCivilizations,
 	

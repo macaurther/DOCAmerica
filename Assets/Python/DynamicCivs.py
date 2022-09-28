@@ -816,7 +816,7 @@ def startingLeader(identifier):
 	if not isinstance(identifier, Civ):
 		identifier = civ(identifier)
 		
-	return dStartingLeaders[scenario()].get(identifier, dStartingLeaders[i3000BC][identifier])
+	return dStartingLeaders[scenario()].get(identifier, dStartingLeaders[i250AD][identifier])
 	
 def leader(iPlayer):
 	iCiv = civ(iPlayer)
@@ -859,7 +859,7 @@ def leader(iPlayer):
 		
 		if iEra >= iIndustrial: return iVictoria
 		
-		if scenario() == i1700AD: return iVictoria
+		if scenario() == i1770AD: return iVictoria
 		
 		if iEra >= iRenaissance: return iElizabeth
 		

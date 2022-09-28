@@ -60,7 +60,7 @@ def spawnBarbarians(iGameTurn):
 	#American natives
 	if year().between(600, 1100):
 		checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (15, 38), (24, 47), spawnNatives, iGameTurn, 20, 0)
-		if scenario() == i3000BC:  #late start condition
+		if scenario() == i250AD:  #late start condition
 			checkSpawn(iNative, iJaguar, 3, (15, 38), (24, 47), spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
 		else:  #late start condition
 			checkSpawn(iNative, iJaguar, 2, (15, 38), (24, 47), spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)

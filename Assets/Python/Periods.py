@@ -43,11 +43,11 @@ def evacuate(iPlayer):
 def setup():
 	iScenario = scenario()
 	
-	if iScenario >= i600AD:
+	if iScenario >= i1500AD:
 		for iCiv, iPeriod in dPeriods600AD.items():
 			setPeriod(iCiv, iPeriod)
 	
-	if iScenario == i1700AD:
+	if iScenario == i1770AD:
 		for iCiv, iPeriod in dPeriods1700AD.items():
 			setPeriod(iCiv, iPeriod)
 

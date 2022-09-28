@@ -67,7 +67,7 @@ def buildFoundedCapitalInfrastructure(city):
 def placeGoodyHuts(iGameTurn):
 	if iGameTurn == scenarioStartTurn() + 3:
 			
-		if scenario() <= i600AD:
+		if scenario() <= i1500AD:
 			placeHut((22, 48), (29, 51)) # Great Lakes
 			placeHut((18, 44), (22, 52)) # Great Plains
 			placeHut((34, 25), (39, 29)) # Amazonas Delta

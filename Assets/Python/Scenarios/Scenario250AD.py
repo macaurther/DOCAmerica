@@ -10,9 +10,9 @@ lCivilizations = [
 ]
 
 
-scenario3000BC = Scenario(
+scenario250AD = Scenario(
 	iStartYear = 250,
-	fileName = "RFC_3000BC",
+	fileName = "RFC_250AD",
 	
 	lCivilizations = lCivilizations,
 )

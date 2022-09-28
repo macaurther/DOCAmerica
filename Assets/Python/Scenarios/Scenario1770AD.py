@@ -79,9 +79,9 @@ def setupGoals(iCiv, goals):
 		goals[2].requirements[0].accumulate(4)
 	
 
-scenario1700AD = Scenario(
-	iStartYear = 1700,
-	fileName = "RFC_1700AD",
+scenario1770AD = Scenario(
+	iStartYear = 1770,
+	fileName = "RFC_1770AD",
 	
 	lCivilizations = lCivilizations,
 	

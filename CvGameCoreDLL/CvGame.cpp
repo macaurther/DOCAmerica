@@ -4232,7 +4232,7 @@ bool CvGame::circumnavigationAvailable() const
 	}
 
 	// Leoreth: no circumnavigation in 1700 AD
-	if (getScenario() == SCENARIO_1700AD)
+	if (getScenario() == SCENARIO_1770AD)
 	{
 		return false;
 	}

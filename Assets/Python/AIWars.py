@@ -20,11 +20,11 @@ lConquests = []
 
 @handler("GameStart")
 def setup():
-	iTurn = year(-600)
-	if scenario() == i600AD:  #late start condition
-		iTurn = year(900)
-	elif scenario() == i1700AD:
-		iTurn = year(1720)
+	iTurn = year(400)
+	if scenario() == i1500AD:  #late start condition
+		iTurn = year(1550)
+	elif scenario() == i1770AD:
+		iTurn = year(1790)
 	data.iNextTurnAIWar = iTurn + rand(iMaxIntervalEarly-iMinIntervalEarly)
 
 

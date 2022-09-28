@@ -110,7 +110,7 @@ def spreadJudaism():
 
 @handler("techAcquired")
 def checkReformation(iTech, iTeam, iPlayer):
-	if scenario() == i1700AD:
+	if scenario() == i1770AD:
 		return
 
 	if iTech == iAcademia:
@@ -122,7 +122,7 @@ def checkReformation(iTech, iTeam, iPlayer):
 
 @handler("techAcquired")
 def lateReligionFounding(iTech):
-	if scenario() == i1700AD:
+	if scenario() == i1770AD:
 		return
 				
 	for iReligion in range(iNumReligions):

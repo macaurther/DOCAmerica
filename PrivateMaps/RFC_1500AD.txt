@@ -6,7 +6,7 @@ BeginGame
 	Option=GAMEOPTION_AGGRESSIVE_AI
 	Option=GAMEOPTION_NO_TECH_BROKERING
 	GameTurn=181
-	StartYear=250
+	StartYear=1500
 	Description=TXT_KEY_RHYES_WB_DESC
 	ModPath=Mods\DOCAmerica
 EndGame
