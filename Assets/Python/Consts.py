@@ -450,28 +450,24 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 38
-(rBritain, rIberia, rItaly, rBalkans, rEurope, rScandinavia, rRussia, rAnatolia, rMesopotamia, rArabia, rEgypt, rMaghreb,
-rPersia, rIndia, rDeccan, rIndochina, rIndonesia, rChina, rKorea, rJapan, rManchuria, rTibet, rCentralAsia, rSiberia,
-rAustralia, rOceania, rEthiopia, rWestAfrica, rSouthAfrica, rCanada, rAlaska, rUnitedStates, rCaribbean, rMesoamerica,
-rBrazil, rArgentina, rPeru, rColombia) = range(iNumRegions)
+iNumRegions = 35
+(rAlaska, rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland, rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, 
+rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia, rSierraMadre, rBajio, rYucatan, rMesoamerica,
+rCaribbean, rHawaii, rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rAmazon, rBrazilianHighlands, rPantanal, 
+rChile, rParaguay, rUruguay, rPampas, rPatagonia) = range(iNumRegions)
 
-lNewWorld = [rAustralia, rOceania, rCanada, rAlaska, rUnitedStates, rCaribbean, rMesoamerica, rBrazil, rArgentina, rPeru, rColombia]
+lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland]
+lUnitedStates = [rAlaska, rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia, rHawaii]
+lMexico = [rSierraMadre, rBajio, rYucatan]
+lBrazil = [rAmazon, rBrazilianHighlands, rPantanal]
+lArgentina = [rPampas, rPatagonia]
 
-lEurope = [rBritain, rIberia, rItaly, rBalkans, rEurope, rScandinavia, rRussia]
-lMiddleEast = [rAnatolia, rMesopotamia, rArabia, rPersia, rCentralAsia]
-lIndia = [rIndia, rDeccan]
-lEastAsia = [rIndochina, rIndonesia, rChina, rKorea, rJapan, rManchuria, rTibet]
-lNorthAfrica = [rEgypt, rMaghreb]
-lSubSaharanAfrica = [rEthiopia, rSouthAfrica, rWestAfrica]
-lSouthAmerica = [rBrazil, rArgentina, rPeru, rColombia]
-lCentralAmerica = [rCaribbean, rMesoamerica]
-lNorthAmerica = [rCanada, rAlaska, rUnitedStates]
-lOceania = [rAustralia, rOceania]
+lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, lBrazil, rChile, rParaguay, rUruguay, lArgentina]
+lCentralAmerica = [rMesoamerica, rCaribbean]
+lNorthAmerica = [lCanada, lUnitedStates, lMexico]
 
-lAfrica = lNorthAfrica + lSubSaharanAfrica
-lAsia = lMiddleEast + lIndia + lEastAsia
-lAmerica = lSouthAmerica + lCentralAmerica + lNorthAmerica
+lAmerica = [lSouthAmerica, lCentralAmerica, lNorthAmerica]
+
 
 #Projects
 

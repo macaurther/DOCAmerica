@@ -8518,10 +8518,10 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 			if (eReligion == (ReligionTypes)PROTESTANTISM)
 			{
 				int iRegion = pLoopCity->getRegionID();
-				if (iRegion != REGION_BRITAIN && iRegion != REGION_IBERIA && iRegion != REGION_ITALY && iRegion != REGION_BALKANS && iRegion != REGION_EUROPE && iRegion != REGION_SCANDINAVIA && iRegion != REGION_RUSSIA)
+				/*if (iRegion != REGION_BRITAIN && iRegion != REGION_IBERIA && iRegion != REGION_ITALY && iRegion != REGION_BALKANS && iRegion != REGION_EUROPE && iRegion != REGION_SCANDINAVIA && iRegion != REGION_RUSSIA)
 				{
 					iValue = 5;
-				}
+				}*/
 
 				int iCapitalRegion = getCapitalCity()->getRegionID();
 				if (iRegion == iCapitalRegion)
@@ -24358,7 +24358,7 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 	bool bColonialism = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_TERRITORY) == CIVIC_COLONIALISM;
 	bool bNewWorld = false;
 
-	CvCity* pCapital = GET_PLAYER(ePlayer).getCapitalCity();
+	/*CvCity* pCapital = GET_PLAYER(ePlayer).getCapitalCity();
 	if (pCapital != NULL)
 	{
 		switch (pCapital->getRegionID())
@@ -24377,10 +24377,11 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 			default:
 				bNewWorld = true;
 		}
-	}
+	}*/
 
 	// don't buy when not running Colonialism
-	if (!bColonialism && !bNewWorld)
+	//if (!bColonialism && !bNewWorld)
+	if (!bColonialism)
 	{
 		return DENIAL_NO_GAIN;
 	}
@@ -24495,11 +24496,12 @@ int CvPlayer::countSlaveCities() const
 	CvCity* pLoopCity;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		rid = pLoopCity->getRegionID();
+		/*rid = pLoopCity->getRegionID();
 		if (rid != REGION_BRITAIN && rid != REGION_IBERIA && rid != REGION_MAGHREB && rid != REGION_ITALY && rid != REGION_EUROPE && rid != REGION_RUSSIA && rid != REGION_SCANDINAVIA && rid != REGION_BALKANS && rid != REGION_ANATOLIA)
 		{
 			iNumSlaveCities++;
-		}
+		}*/
+		iNumSlaveCities++;
 	}
 
 	return iNumSlaveCities;
@@ -25205,7 +25207,7 @@ bool CvPlayer::canBuySlaves() const
 	{
 		if (getNumCities() > 0)
 		{
-			switch (getCapitalCity()->getRegionID())
+			/*switch (getCapitalCity()->getRegionID())
 			{
 				case REGION_CANADA:
 				case REGION_ALASKA:
@@ -25220,7 +25222,8 @@ bool CvPlayer::canBuySlaves() const
 					break;
 				default:
 					;
-			}
+			}*/
+			return true;
 		}
 	}
 

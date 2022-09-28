@@ -3004,7 +3004,7 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 	}
 
 	// Leoreth: America shouldn't fight the English all the way to Canada
-	if (getCivilizationType() == AMERICA && pCity->getRegionID() == REGION_CANADA)
+	if (getCivilizationType() == AMERICA && pCity->isCanadian())
 	{
 		iValue /= 3;
 	}

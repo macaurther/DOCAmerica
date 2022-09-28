@@ -11459,27 +11459,7 @@ bool CvPlot::canUseSlave(PlayerTypes ePlayer) const
 
 	if (GET_PLAYER(ePlayer).getCapitalCity() == NULL) return false;
 
-	int rid = GET_PLAYER(ePlayer).getCapitalCity()->getRegionID();
-
-	switch (getRegionID())
-	{
-	case REGION_ALASKA:
-	case REGION_CANADA:
-	case REGION_UNITED_STATES:
-	case REGION_CARIBBEAN:
-	case REGION_MESOAMERICA:
-	case REGION_BRAZIL:
-	case REGION_ARGENTINA:
-	case REGION_PERU:
-	case REGION_COLOMBIA:
-		return true;
-	case REGION_ETHIOPIA:
-	case REGION_WEST_AFRICA:
-	case REGION_SOUTH_AFRICA:
-		if (rid != REGION_ETHIOPIA && rid != REGION_WEST_AFRICA && rid != REGION_SOUTH_AFRICA) return true;
-	default:
-		return false;
-	}
+	return true;
 }
 
 // Leoreth

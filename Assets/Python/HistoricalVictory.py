@@ -90,9 +90,6 @@ dGoals = {
 		CityCount(
 			(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 5),
 			(plots.regions(*(lSouthAmerica + lCentralAmerica)).named(SOUTH_CENTRAL_AMERICA), 3),
-			(plots.regions(*lAfrica).named(AMERICA), 4),
-			(plots.regions(*lAsia).named(AMERICA), 5),
-			(plots.regions(*lOceania).named(AMERICA), 3),
 			by=1730,
 		),
 		All(
@@ -107,8 +104,6 @@ dGoals = {
 		ResourceCount(sum(lColonialResources).named(TRADING_COMPANY_RESOURCES), 12, by=1650),
 		CityCount(sum(
 			plots.rectangle(tBrazil).named(BRAZIL),
-			plots.regions(*lAfrica).named(AMERICA),
-			plots.regions(*lAsia).named(AMERICA),
 		), 15, by=1700),
 	),
 	iInca: (
@@ -127,7 +122,6 @@ dGoals = {
 	),
 	iNetherlands: (
 		CitySpecialistCount(start(iNetherlands).named(BUENOS_AIRES), iSpecialistGreatMerchant, 3, at=1745),
-		ConqueredCities(4, civs=group(iCivGroupEurope).named(EUROPEAN), outside=plots.regions(*lEurope).named(AMERICA), by=1745),
 		ResourceCount(iSpices, 7, by=1775),
 	),
 	iAmerica: (

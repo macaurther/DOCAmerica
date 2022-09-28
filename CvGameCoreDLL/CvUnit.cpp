@@ -14197,28 +14197,52 @@ int CvUnit::getOriginalArtStyle(int regionID)
 {
 	int id = regionID;
 
-	if (id == REGION_ALASKA || id == REGION_CANADA || id == REGION_UNITED_STATES || id == REGION_BRITAIN)
+	switch (id)
 	{
+	case REGION_ALASKA:
+	case REGION_NUNAVUT:
+	case REGION_NORTH_PLAINS:
+	case REGION_ONTARIO:
+	case REGION_QUEBEC:
+	case REGION_NEW_FOUNDLAND:
+	case REGION_NEW_ENGLAND:
+	case REGION_MID_ATLANTIC:
+	case REGION_DEEP_SOUTH:
+	case REGION_GULF_COAST:
+	case REGION_MIDWEST:
+	case REGION_GREAT_PLAINS:
+	case REGION_ROCKIES:
+	case REGION_CALIFORNIA:
+	case REGION_CASCADIA:
 		return GC.getCivilizationInfo(ENGLAND).getUnitArtStyleType();
-	}
-	else if (id == REGION_MESOAMERICA || id == REGION_CARIBBEAN)
-	{
+		break;
+	case REGION_SOUTHWEST:
+	case REGION_SIERRA_MADRE:
+	case REGION_BAJIO:
+	case REGION_YUCATAN:
+	case REGION_MESOAMERICA:
+	case REGION_CARIBBEAN:
 		return GC.getCivilizationInfo(AZTECS).getUnitArtStyleType();
-	}
-	else if (id == REGION_BRAZIL || id == REGION_ARGENTINA || id == REGION_PERU || id == REGION_COLOMBIA)
-	{
+		break;
+	case REGION_COLOMBIA:
+	case REGION_VENEZUELA:
+	case REGION_GUYANA:
+	case REGION_PERU:
+	case REGION_BOLIVIA:
+	case REGION_AMAZON:
+	case REGION_BRAZILIAN_HIGHLANDS:
+	case REGION_PANTANAL:
+	case REGION_CHILE:
+	case REGION_PARAGUAY:
+	case REGION_URUGUAY:
+	case REGION_PAMPAS:
+	case REGION_PATAGONIA:
 		return GC.getCivilizationInfo(INCA).getUnitArtStyleType();
-	}
-	else if (id == REGION_IBERIA)
-	{
-		return GC.getCivilizationInfo(SPAIN).getUnitArtStyleType();
-	}
-	else if (id == REGION_EUROPE)
-	{
+		break;
+	default:
 		return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
+		break;
 	}
-
-	return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
 }
 
 // edead: start Relic trade based on Afforess' Advanced Diplomacy (Leoreth)

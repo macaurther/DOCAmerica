@@ -1124,9 +1124,8 @@ class Congress:
 				if not bRecolonise:
 					if civ(iPlayer) in dCivGroups[iCivGroupEurope]:
 						if is_minor(iLoopPlayer) or (civ(iLoopPlayer) not in dCivGroups[iCivGroupEurope] and stability(iLoopPlayer) < iStabilityShaky) or (civ(iLoopPlayer) in dCivGroups[iCivGroupEurope] and not player(iLoopPlayer).isHuman() and pPlayer.AI_getAttitude(iLoopPlayer) < AttitudeTypes.ATTITUDE_PLEASED):
-							if plot.getRegionID() not in lEurope + lMiddleEast + lNorthAfrica:
-								if iSettlerMapValue > 90:
-									iValue += max(1, iSettlerMapValue / 100)
+							if iSettlerMapValue > 90:
+								iValue += max(1, iSettlerMapValue / 100)
 									
 				# weaker and collapsing empires
 				if not is_minor(iLoopPlayer):

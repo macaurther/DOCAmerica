@@ -267,8 +267,6 @@ def onTechAcquired(iTech, iTeam, iPlayer):
 			sIdentifier = getIdentifier(city.getName())
 			if not sIdentifier: 
 				sIdentifier = city.getName()
-			
-			if sIdentifier == 'York' and city.getRegionID() == rBritain: continue # do not rename English York
 		
 			sNewIdentifier = getEraRename(sIdentifier, iEra)
 			if not sNewIdentifier: 

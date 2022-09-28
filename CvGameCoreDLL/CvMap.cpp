@@ -1421,11 +1421,16 @@ void CvMap::calculateAreas()
 
 	// Leoreth: create different continents for Europe, Africa and South America, plus separate Scandinavia and Denmark
 	// MacAurther: Reducing this to just Western Hemisphere
+	CvArea* northAmerica = addArea();
+	CvArea* centralAmerica = addArea();
 	CvArea* southAmerica = addArea();
 
-	int americaID = plot(27, 46)->getArea(); // Washington
+	int northAmericaID = northAmerica->getID();
+	int centralAmericaID = centralAmerica->getID();
 	int southAmericaID = southAmerica->getID();
 
+	northAmerica->init(northAmericaID, false);
+	centralAmerica->init(centralAmericaID, false);
 	southAmerica->init(southAmericaID, false);
 
 	CvPlot* plot;
@@ -1440,11 +1445,45 @@ void CvMap::calculateAreas()
 			{
 				switch (plot->getRegionID())
 				{
-				case REGION_BRAZIL:
-				case REGION_ARGENTINA:
-				case REGION_PERU:
+				case REGION_ALASKA:
+				case REGION_NUNAVUT:
+				case REGION_NORTH_PLAINS:
+				case REGION_ONTARIO:
+				case REGION_QUEBEC:
+				case REGION_NEW_FOUNDLAND:
+				case REGION_NEW_ENGLAND:
+				case REGION_MID_ATLANTIC:
+				case REGION_DEEP_SOUTH:
+				case REGION_GULF_COAST:
+				case REGION_MIDWEST:
+				case REGION_SOUTHWEST:
+				case REGION_GREAT_PLAINS:
+				case REGION_ROCKIES:
+				case REGION_CALIFORNIA:
+				case REGION_CASCADIA:
+					plot->setArea(northAmericaID);
+					break;
+				case REGION_SIERRA_MADRE:
+				case REGION_BAJIO:
+				case REGION_YUCATAN:
+				case REGION_MESOAMERICA:
+				case REGION_CARIBBEAN:
+					plot->setArea(centralAmericaID);
+					break;
 				case REGION_COLOMBIA:
-					if (plot->getArea() == americaID) plot->setArea(southAmericaID);
+				case REGION_VENEZUELA:
+				case REGION_GUYANA:
+				case REGION_PERU:
+				case REGION_BOLIVIA:
+				case REGION_AMAZON:
+				case REGION_BRAZILIAN_HIGHLANDS:
+				case REGION_PANTANAL:
+				case REGION_CHILE:
+				case REGION_PARAGUAY:
+				case REGION_URUGUAY:
+				case REGION_PAMPAS:
+				case REGION_PATAGONIA:
+					plot->setArea(southAmericaID);
 					break;
 				}
 			}

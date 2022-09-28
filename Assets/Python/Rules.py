@@ -99,7 +99,7 @@ def updateFoundValues(city):
 def createColonialDefenders(city):
 	iPlayer = city.getOwner()
 	if not player(iPlayer).isHuman():
-		if civ(iPlayer) in dCivGroups[iCivGroupEurope] and city.getRegionID() not in lEurope:
+		if civ(iPlayer) in dCivGroups[iCivGroupEurope]:
 			createGarrisons(city, iPlayer, 1)
 			createRoleUnit(iPlayer, city, iWork, 1)
 
@@ -166,16 +166,6 @@ def validateSlaves(iPlayer):
 				
 		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) == iSlave):
 			slave.kill(False, iPlayer)
-
-
-### UNIT BUILT ###
-
-@handler("unitBuilt")
-def moveSlavesToNewWorld(city, unit):
-	if base_unit(unit) == iSlave and city.getRegionID() in lEurope + [rMaghreb, rAnatolia] and not city.isHuman():	
-		colony = cities.owner(iPlayer).regions(*(lAmerica + lSubSaharanAfrica)).random()
-		if colony:
-			move(unit, colony)
 
 
 ### CAPITAL MOVED ###

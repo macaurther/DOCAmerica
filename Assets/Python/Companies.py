@@ -120,11 +120,6 @@ def getCityValue(city, iCompany):
 			return -1
 		if iOwnerCiv == iNetherlands:
 			iValue += 2
-	elif iCompany == iSilkRoute:
-		if city.getRegionID() in [rCentralAsia, rPersia]:
-			iValue += 2
-		elif city.getRegionID() == rChina:
-			iValue -= 2
 	
 	# geographical requirements
 	if iCompany == iSilkRoute:

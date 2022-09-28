@@ -104,9 +104,7 @@ def checkSchism(iGameTurn):
 
 @handler("BeginGameTurn")
 def spreadJudaism():
-	spreadReligionToRegion(iJudaism, [rIberia, rEurope, rItaly, rBritain, rRussia, rBalkans], 1000, 10)
-	spreadReligionToRegion(iJudaism, [rMesopotamia, rAnatolia, rEgypt], 600, 20)
-	spreadReligionToRegion(iJudaism, [rCanada, rAlaska, rUnitedStates], 1850, 10)
+	spreadReligionToRegion(iJudaism, [rCentralCanada, rNewEngland, rMidAtlantic], 1850, 10)
 
 @handler("techAcquired")
 def checkReformation(iTech, iTeam, iPlayer):
