@@ -16875,7 +16875,7 @@ void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, i
 
 							if (eImprovement == eLoopImprovement)
 							{
-								if (GC.getBuildInfo((BuildTypes)iI).isFeatureRemove(pPlot->getFeatureType()) && canBuild(pPlot, (BuildTypes)iI))
+								if (GC.getBuildInfo((BuildTypes)iI).isFeatureRemove(pPlot->getFeatureType()) && (!pPlot->isOwned() || canBuild(pPlot, (BuildTypes)iI)))
 								{
 									pPlot->setFeatureType(NO_FEATURE);
 									break;
@@ -17648,6 +17648,11 @@ int CvPlayer::getAdvancedStartImprovementCost(ImprovementTypes eImprovement, boo
 		{
 			// Valid Plot
 			if (!pPlot->canHaveImprovement(eImprovement, getTeam(), false))
+			{
+				return -1;
+			}
+
+			if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_SLAVE_PLANTATION"))
 			{
 				return -1;
 			}

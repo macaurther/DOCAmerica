@@ -4419,6 +4419,8 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 												if (!(GC.getGameINLINE().isReligionSlotTaken((ReligionTypes)iJ)))
 												{
 													if (iJ == JUDAISM) continue;
+													if (iJ == CONFUCIANISM || iJ == TAOISM) continue;
+													if (iJ == ZOROASTRIANISM) continue;
 
 													int iRoll = 2400;
 													if (!GC.getGame().isOption(GAMEOPTION_PICK_RELIGION))
@@ -10968,13 +10970,6 @@ ReligionTypes CvPlayerAI::AI_bestReligion() const
 			{
 				iValue *= 4; //Rhye (5)
 				iValue /= 3; //Rhye (4)
-			}
-
-			if (iI == CATHOLICISM || iI == ORTHODOXY || iI == PROTESTANTISM)
-			{
-				switch (getCivilizationType())
-				{
-				}
 			}
 			
 			if (iValue > iBestValue)

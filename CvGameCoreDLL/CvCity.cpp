@@ -2170,7 +2170,7 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 			return false;
 		}
 	}
-	
+
 	// Leoreth: can't train slaves
 	if (GC.getUnitInfo(eUnit).isSlave())
 	{
@@ -5239,62 +5239,6 @@ bool CvCity::isHeadquarters() const
 
 	return false;
 }
-
-// MacAurther
-bool CvCity::isCanadian() const
-{
-	if(getRegionID() == REGION_NUNAVUT || getRegionID() == REGION_NORTH_PLAINS || getRegionID() == REGION_ONTARIO || getRegionID() == REGION_QUEBEC || getRegionID() == REGION_NEW_FOUNDLAND)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool CvCity::isAmerican() const
-{
-	if(getRegionID() == REGION_NEW_ENGLAND || getRegionID() == REGION_MID_ATLANTIC || getRegionID() == REGION_DEEP_SOUTH || getRegionID() == REGION_GULF_COAST || getRegionID() == REGION_MIDWEST || getRegionID() == REGION_SOUTHWEST || getRegionID() == REGION_GREAT_PLAINS || getRegionID() == REGION_ROCKIES || getRegionID() == REGION_CALIFORNIA || getRegionID() == REGION_CASCADIA || getRegionID() == REGION_HAWAII)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool CvCity::isMexican() const
-{
-	if(getRegionID() == REGION_SIERRA_MADRE || getRegionID() == REGION_BAJIO || getRegionID() == REGION_YUCATAN)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool CvCity::isColombian() const
-{
-	if(getRegionID() == REGION_COLOMBIA || getRegionID() == REGION_VENEZUELA || getRegionID() == REGION_PERU || getRegionID() == REGION_BOLIVIA)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool CvCity::isBrazilian() const
-{
-	if(getRegionID() == REGION_AMAZON || getRegionID() == REGION_BRAZILIAN_HIGHLANDS || getRegionID() == REGION_PANTANAL)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool CvCity::isArgentine() const
-{
-	if(getRegionID() == REGION_PAMPAS || getRegionID() == REGION_PATAGONIA)
-	{
-		return true;
-	}
-	return false;
-}
-
 
 int CvCity::getOvercrowdingPercentAnger(int iExtra) const
 {
@@ -17881,6 +17825,60 @@ int CvCity::getRegionID() const
 	return plot()->getRegionID();
 }
 
+// MacAurther
+bool CvCity::isCanadian() const
+{
+	if(getRegionID() == REGION_NUNAVUT || getRegionID() == REGION_NORTH_PLAINS || getRegionID() == REGION_ONTARIO || getRegionID() == REGION_QUEBEC || getRegionID() == REGION_NEW_FOUNDLAND)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool CvCity::isAmerican() const
+{
+	if(getRegionID() == REGION_NEW_ENGLAND || getRegionID() == REGION_MID_ATLANTIC || getRegionID() == REGION_DEEP_SOUTH || getRegionID() == REGION_GULF_COAST || getRegionID() == REGION_MIDWEST || getRegionID() == REGION_SOUTHWEST || getRegionID() == REGION_GREAT_PLAINS || getRegionID() == REGION_ROCKIES || getRegionID() == REGION_CALIFORNIA || getRegionID() == REGION_CASCADIA || getRegionID() == REGION_HAWAII)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool CvCity::isMexican() const
+{
+	if(getRegionID() == REGION_SIERRA_MADRE || getRegionID() == REGION_BAJIO || getRegionID() == REGION_YUCATAN)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool CvCity::isColombian() const
+{
+	if(getRegionID() == REGION_COLOMBIA || getRegionID() == REGION_VENEZUELA || getRegionID() == REGION_PERU || getRegionID() == REGION_BOLIVIA)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool CvCity::isBrazilian() const
+{
+	if(getRegionID() == REGION_AMAZON || getRegionID() == REGION_BRAZILIAN_HIGHLANDS || getRegionID() == REGION_PANTANAL)
+	{
+		return true;
+	}
+	return false;
+}
+
+bool CvCity::isArgentine() const
+{
+	if(getRegionID() == REGION_PAMPAS || getRegionID() == REGION_PATAGONIA)
+	{
+		return true;
+	}
+	return false;
+}
 int CvCity::getSpecialistGoodHappiness() const
 {
 	return m_iSpecialistGoodHappiness;

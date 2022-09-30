@@ -31,32 +31,32 @@ dNewCapitals = CivDict({
 
 # new capital locations on respawn
 dRespawnCapitals = CivDict({
-iInca :		(36, 49),	# Lima
+iInca :		(36, 58),	# Lima
 })
 
 ### Birth Area ###
 
 dBirthArea = CivDict({
-iMaya : 		((36, 49), 	(36, 49)),
-iInca : 		((36, 49), 	(36, 49)),
-iAztecs : 		((36, 49), 	(36, 49)),
-iSpain : 		((36, 49), 	(36, 49)),
-iPortugal : 	((36, 49), 	(36, 49)),
-iEngland : 		((36, 49), 	(36, 49)),
-iFrance : 		((36, 49), 	(36, 49)),
-iNetherlands :	((36, 49), 	(36, 49)),
-iAmerica : 		((36, 49), 	(36, 49)),
-iArgentina : 	((36, 49), 	(36, 49)),
-iMexico :		((36, 49), 	(36, 49)),
-iColombia :		((36, 49), 	(36, 49)),
-iBrazil : 		((36, 49), 	(36, 49)),
-iCanada : 		((36, 49), 	(36, 49)),
+iMaya : 		((36, 58), 	(36, 58)),
+iInca : 		((49, 36), 	(49, 36)),
+iAztecs : 		((30, 60), 	(30, 60)),
+iSpain : 		((54, 59), 	(54, 59)),
+iPortugal : 	((67, 27), 	(67, 27)),
+iEngland : 		((50, 77), 	(50, 77)),
+iFrance : 		((58, 89), 	(58, 89)),
+iNetherlands :	((56, 81), 	(56, 81)),
+iAmerica : 		((51, 79), 	(51, 79)),
+iArgentina : 	((57, 16), 	(57, 16)),
+iMexico :		((30, 60), 	(30, 60)),
+iColombia :		((48, 49), 	(48, 49)),
+iBrazil : 		((70, 28), 	(70, 28)),
+iCanada : 		((52, 87), 	(52, 87)),
 })
 
 dExtendedBirthArea = CivDict({
-iInca : 	((36, 49), 	(36, 49)),
-iSpain : 	((36, 49), 	(36, 49)), 	# includes Catalonia
-iArgentina :((36, 49), 	(36, 49)), 	# includes Chile
+iInca : 		((49, 36), 	(49, 36)),
+iSpain : 		((54, 59), 	(54, 59)), 	# includes Catalonia
+iArgentina : 	((57, 16), 	(57, 16)), 	# includes Chile
 })
 
 dBirthAreaExceptions = CivDict({
@@ -66,27 +66,27 @@ iSpain :		[],
 ### Core Area ###
 
 dCoreArea = CivDict({
-iMaya : 		((36, 49), 	(36, 49)),
-iInca : 		((36, 49), 	(36, 49)),
-iAztecs : 		((36, 49), 	(36, 49)),
-iSpain : 		((36, 49), 	(36, 49)),
-iPortugal : 	((36, 49), 	(36, 49)),
-iEngland : 		((36, 49), 	(36, 49)),
-iFrance : 		((36, 49), 	(36, 49)),
-iNetherlands :	((36, 49), 	(36, 49)),
-iAmerica : 		((36, 49), 	(36, 49)),
-iArgentina : 	((36, 49), 	(36, 49)),
-iMexico :		((36, 49), 	(36, 49)),
-iColombia :		((36, 49), 	(36, 49)),
-iBrazil : 		((36, 49), 	(36, 49)),
-iCanada : 		((36, 49), 	(36, 49)),
+iMaya : 		((34, 57), 	(37, 59)),
+iInca : 		((49, 36), 	(49, 36)),
+iAztecs : 		((30, 60), 	(30, 60)),
+iSpain : 		((54, 59), 	(54, 59)),
+iPortugal : 	((67, 27), 	(67, 27)),
+iEngland : 		((50, 77), 	(50, 77)),
+iFrance : 		((58, 89), 	(58, 89)),
+iNetherlands :	((56, 81), 	(56, 81)),
+iAmerica : 		((51, 79), 	(51, 79)),
+iArgentina : 	((57, 16), 	(57, 16)),
+iMexico :		((30, 60), 	(30, 60)),
+iColombia :		((48, 49), 	(48, 49)),
+iBrazil : 		((70, 28), 	(70, 28)),
+iCanada : 		((52, 87), 	(52, 87)),
 })
 
 dPeriodCoreArea = {
 }
 
 dCoreAreaExceptions = CivDict({
-iSpain :	[],
+iMaya :	[(34, 57), (37, 57)],
 }, [])
 
 dPeriodCoreAreaExceptions = appenddict({
@@ -95,20 +95,20 @@ dPeriodCoreAreaExceptions = appenddict({
 ### Normal Area ###
 
 dNormalArea = CivDict({
-iMaya : 		((36, 49), 	(36, 49)),
-iInca : 		((36, 49), 	(36, 49)),
-iAztecs : 		((36, 49), 	(36, 49)),
-iSpain : 		((36, 49), 	(36, 49)),
-iPortugal : 	((36, 49), 	(36, 49)),
-iEngland : 		((36, 49), 	(36, 49)),
-iFrance : 		((36, 49), 	(36, 49)),
-iNetherlands :	((36, 49), 	(36, 49)),
-iAmerica : 		((36, 49), 	(36, 49)),
-iArgentina : 	((36, 49), 	(36, 49)),
-iMexico :		((36, 49), 	(36, 49)),
-iColombia :		((36, 49), 	(36, 49)),
-iBrazil : 		((36, 49), 	(36, 49)),
-iCanada : 		((36, 49), 	(36, 49)),
+iMaya : 		((36, 58), 	(36, 58)),
+iInca : 		((49, 36), 	(49, 36)),
+iAztecs : 		((30, 60), 	(30, 60)),
+iSpain : 		((54, 59), 	(54, 59)),
+iPortugal : 	((67, 27), 	(67, 27)),
+iEngland : 		((50, 77), 	(50, 77)),
+iFrance : 		((58, 89), 	(58, 89)),
+iNetherlands :	((56, 81), 	(56, 81)),
+iAmerica : 		((51, 79), 	(51, 79)),
+iArgentina : 	((57, 16), 	(57, 16)),
+iMexico :		((30, 60), 	(30, 60)),
+iColombia :		((48, 49), 	(48, 49)),
+iBrazil : 		((70, 28), 	(70, 28)),
+iCanada : 		((52, 87), 	(52, 87)),
 })
 
 dPeriodNormalArea = {
@@ -124,20 +124,20 @@ dPeriodNormalAreaExceptions = appenddict({
 ### Broader Area ###
 
 dBroaderArea = CivDict({
-iMaya : 		((36, 49), 	(36, 49)),
-iInca : 		((36, 49), 	(36, 49)),
-iAztecs : 		((36, 49), 	(36, 49)),
-iSpain : 		((36, 49), 	(36, 49)),
-iPortugal : 	((36, 49), 	(36, 49)),
-iEngland : 		((36, 49), 	(36, 49)),
-iFrance : 		((36, 49), 	(36, 49)),
-iNetherlands :	((36, 49), 	(36, 49)),
-iAmerica : 		((36, 49), 	(36, 49)),
-iArgentina : 	((36, 49), 	(36, 49)),
-iMexico :		((36, 49), 	(36, 49)),
-iColombia :		((36, 49), 	(36, 49)),
-iBrazil : 		((36, 49), 	(36, 49)),
-iCanada : 		((36, 49), 	(36, 49)),
+iMaya : 		((36, 58), 	(36, 58)),
+iInca : 		((49, 36), 	(49, 36)),
+iAztecs : 		((30, 60), 	(30, 60)),
+iSpain : 		((54, 59), 	(54, 59)),
+iPortugal : 	((67, 27), 	(67, 27)),
+iEngland : 		((50, 77), 	(50, 77)),
+iFrance : 		((58, 89), 	(58, 89)),
+iNetherlands :	((56, 81), 	(56, 81)),
+iAmerica : 		((51, 79), 	(51, 79)),
+iArgentina : 	((57, 16), 	(57, 16)),
+iMexico :		((30, 60), 	(30, 60)),
+iColombia :		((48, 49), 	(48, 49)),
+iBrazil : 		((70, 28), 	(70, 28)),
+iCanada : 		((52, 87), 	(52, 87)),
 })
 
 dPeriodBroaderArea = {
@@ -146,7 +146,6 @@ dPeriodBroaderArea = {
 ### Expansion area ###
 
 dExpansionArea = CivDict({
-iSpain :		((36, 49), 	(36, 49)),
 })
 
 dExpansionAreaExceptions = CivDict({
@@ -155,5 +154,5 @@ dExpansionAreaExceptions = CivDict({
 ### Respawn area ###
 
 dRespawnArea = CivDict({
-iInca :		((36, 49), 	(36, 49)),
+iInca : 		((49, 36), 	(49, 36)),
 })
