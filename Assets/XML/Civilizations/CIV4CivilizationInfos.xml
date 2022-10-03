@@ -792,14 +792,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_CUIRASSIER</UnitClassType>
-					<UnitType>UNIT_FRENCH_GENDARME</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_DRAGOON</UnitClassType>
-					<UnitType>UNIT_FRENCH_GUARD</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
