@@ -13,9 +13,11 @@ iWorldY = 108
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 20
-(iAmerica, iArgentina, iAztecs, iBrazil, iCanada, iColombia, iEngland, iFrance, iInca, iMaya,
-iMexico, iNativeAmericans, iNetherlands, iPortugal, iSpain, iIndependent, iIndependent2, iNative, iMinor, iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iNumCivs = 21
+#				2				3				4				5				6				7				8				9				10
+(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iColombia, 		iEngland, 		iFrance, 		iInca, 			iMaya,
+iMexico, 		iNativeAmericans, iNetherlands, iPortugal, 		iRussia,		iSpain, 		iIndependent, 	iIndependent2, 	iNative, 		iMinor, 
+iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -26,6 +28,7 @@ lBirthOrder = [
 	iEngland,
 	iFrance,
 	iNetherlands,
+	iRussia,
 	iAmerica,
 	iArgentina,
 	iMexico,
@@ -47,7 +50,7 @@ iNumCivGroups = 3
 (iCivGroupEurope, iCivGroupNativeAmerica, iCivGroupAmerica) = range(iNumCivGroups)
 
 dCivGroups = {
-iCivGroupEurope : [iSpain, iFrance, iEngland, iNetherlands, iPortugal],
+iCivGroupEurope : [iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
 iCivGroupNativeAmerica : [iMaya, iInca, iAztecs],
 iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada]
 }
@@ -58,7 +61,7 @@ iNumTechGroups = 2
 (iTechGroupWestern, iTechGroupNativeAmerica) = range(iNumTechGroups)
 
 dTechGroups = {
-iTechGroupWestern : [iSpain, iFrance, iEngland, iNetherlands, iPortugal, iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada],
+iTechGroupWestern : [iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada],
 iTechGroupNativeAmerica : [iMaya, iInca, iAztecs],
 }
 
@@ -96,12 +99,14 @@ lNeighbours = [
 	(iInca, iBrazil),
 	(iAztecs, iAmerica),
 	(iAztecs, iMexico),
+	(iAztecs, iColombia),
 	(iSpain, iFrance),
 	(iSpain, iPortugal),
+	(iEngland, iNetherlands),
 	(iFrance, iEngland),
 	(iFrance, iNetherlands),
-	(iEngland, iNetherlands),
-	(iAztecs, iColombia),
+	(iRussia, iAmerica),
+	(iRussia, iCanada),
 	(iAmerica, iMexico),
 	(iAmerica, iCanada),
 	(iArgentina, iBrazil),
@@ -134,6 +139,7 @@ iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
 iNetherlands : 1625,
+iRussia: 1743,
 iAmerica : 1775,
 iArgentina : 1810,
 iMexico : 1810,
@@ -192,6 +198,7 @@ iAztecs : 2,
 iSpain : 2,
 iEngland : 1,
 iFrance : 1,
+iRussia : 1,
 iAmerica : 2,
 iColombia : 2,
 iMexico : 1,
@@ -207,6 +214,7 @@ iPortugal: 60,
 iEngland: 50,
 iFrance: 20,
 iNetherlands: 60,
+iRussia: 50,
 iAmerica: 50,
 iArgentina: 40,
 iMexico: 40,
