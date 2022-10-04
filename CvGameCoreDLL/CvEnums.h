@@ -1146,9 +1146,10 @@ enum CivilizationTypes		// Exposed to Python
 	COLOMBIA, 
 	ENGLAND,
 	FRANCE,
+	HAWAII,
 	INCA,
+	
 	MAYA,
-
 	MEXICO,
 	NATIVE_AMERICANS,
 	NETHERLANDS,
@@ -1158,8 +1159,8 @@ enum CivilizationTypes		// Exposed to Python
 	INDEPENDENT,
 	INDEPENDENT2,
 	NATIVE,
+	
 	MINOR_CIV,
-
 	BARBARIAN_CIV,
 
 	NUM_TOTAL_CIVILIZATIONS,

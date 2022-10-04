@@ -13,11 +13,11 @@ iWorldY = 108
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 21
+iNumCivs = 22
 #				2				3				4				5				6				7				8				9				10
-(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iColombia, 		iEngland, 		iFrance, 		iInca, 			iMaya,
-iMexico, 		iNativeAmericans, iNetherlands, iPortugal, 		iRussia,		iSpain, 		iIndependent, 	iIndependent2, 	iNative, 		iMinor, 
-iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iColombia, 		iEngland, 		iFrance, 		iHawaii,		iInca,
+iMaya,			iMexico, 		iNativeAmericans, iNetherlands, iPortugal, 		iRussia,		iSpain, 		iIndependent, 	iIndependent2, 	iNative,
+iMinor, iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -323,7 +323,7 @@ iTranshumanism) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 132
+iNumUnits = 133
 #				2				3				4				5				6				7				8				9				10
 (iLion, 		iBear, 			iPanther, 		iWolf, 			iSettler, 		iPioneer, 		iWorker, 		iLabourer, 		iMadeireiro, 	iScout, 
 iExplorer, 		iBandeirante, 	iSpy, 			iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary, iIslamicMissionary, iHinduMissionary, 
@@ -333,12 +333,12 @@ iMohawk, 		iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 	iAlbi
 iMobileSam, 	iMarine, 		iNavySeal, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iNativeArcher, 	iSkirmisher, 	iHolkan, 		iLongbowman, 
 iCrossbowman, 	iHorseArcher,  	iPistolier, 	iMountedBrave, 	iCuirassier, 	iConquistador, 	iHussar, 		iLlanero, 		iDragoon, 		iGrenadierCavalry, 
 iCavalry, 	iRural, 		iTank, 			iMainBattleTank, 	iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		
-iMobileArtillery, iWorkboat, iCaravel, 		iCarrack, 			iGalleon, 		iEastIndiaman, 	iPrivateer, 	iFrigate, 		iShipOfTheLine, iManOfWar, 		
-iSteamship, 	iIronclad, 		iTorpedoBoat, 	iCruiser, 		iTransport, 	iDestroyer, 	iCorvette, 		iBattleship, 	iMissileCruiser, iStealthDestroyer,
-iSubmarine, 	iNuclearSubmarine, iCarrier, 	iBiplane, 		iFighter, 		iJetFighter, 	iBomber, 		iStealthBomber, iGuidedMissile, iDrone, 		
-iNuclearBomber, iICBM, 			iSatellite, 	iGreatProphet, 	iGreatArtist, 	iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral, 
-iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy, 
-iSlave, iAztecSlave) = range(iNumUnits)
+iMobileArtillery, iWorkboat, 	iCaravel, 		iCarrack, 		iWaaKaulua,		iGalleon, 		iEastIndiaman, 	iPrivateer, 	iFrigate, 		iShipOfTheLine, 
+iManOfWar, 		iSteamship, 	iIronclad, 		iTorpedoBoat, 	iCruiser, 		iTransport, 	iDestroyer, 	iCorvette, 		iBattleship, 	iMissileCruiser, 
+iStealthDestroyer,iSubmarine, 	iNuclearSubmarine, iCarrier, 	iBiplane, 		iFighter, 		iJetFighter, 	iBomber, 		iStealthBomber, iGuidedMissile, 
+iDrone, 		iNuclearBomber, iICBM, 			iSatellite, 	iGreatProphet, 	iGreatArtist, 	iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, 
+iGreatGeneral, 	iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, 
+iFemaleGreatSpy, iSlave, 		iAztecSlave) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 

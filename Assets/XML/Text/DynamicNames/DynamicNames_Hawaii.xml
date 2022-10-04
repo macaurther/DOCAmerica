@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Polynesia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAWAII_DESC</Tag>
+		<English>The Hawaiians</English>
+		<French>The Hawaiians</French>
+		<German>The Hawaiians</German>
+		<Italian>The Hawaiians</Italian>
+		<Spanish>The Hawaiians</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAWAII_PEOPLES</Tag>
+		<English>Hawaiian Peoples</English>
+		<French>Hawaiian Peoples</French>
+		<German>Hawaiian Peoples</German>
+		<Italian>Hawaiian Peoples</Italian>
+		<Spanish>Hawaiian Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAWAII_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>
+			<Text>Royaume de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Regno del %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Reino de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAWAII_REPUBLIC</Tag>
+		<English>Hawaiian Republics</English>
+		<French>Hawaiian Republics</French>
+		<German>Hawaiian Republics</German>
+		<Italian>Hawaiian Republics</Italian>
+		<Spanish>Hawaiian Republics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAWAII_FASCIST</Tag>
+		<English>Hawaiian Empire</English>
+		<French>Hawaiian Empire</French>
+		<German>Hawaiian Empire</German>
+		<Italian>Hawaiian Empire</Italian>
+		<Spanish>Hawaiian Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAWAII_ADJECTIVE</Tag>
+		<English>Hawaiian</English>
+		<French>Hawaiian</French>
+		<German>Hawaiian</German>
+		<Italian>Hawaiian</Italian>
+		<Spanish>Hawaiian</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HAWAII_SHORT_DESC</Tag>
+		<English>Hawai'i</English>
+		<French>Hawai'i</French>
+		<German>Hawai'i</German>
+		<Italian>Hawai'i</Italian>
+		<Spanish>Hawai'i</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -906,12 +906,12 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], can transport any unit, has an additional cargo space and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_POLYNESIAN_WAKA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Waka[COLOR_REVERT], the Polynesian replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</English>
-		<French>The [COLOR_UNIT_TEXT]Waka[COLOR_REVERT], the Polynesian replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</French>
-		<German>The [COLOR_UNIT_TEXT]Waka[COLOR_REVERT], the Polynesian replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</German>
-		<Italian>The [COLOR_UNIT_TEXT]Waka[COLOR_REVERT], the Polynesian replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Waka[COLOR_REVERT], the Polynesian replacement for the [COLOR_UNIT_TEXT]Galley[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_UNIT_HAWAIIAN_WAA_KAULUA_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</English>
+		<French>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</French>
+		<German>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</German>
+		<Italian>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PIKEMAN_STRATEGY</Tag>
@@ -922,16 +922,12 @@
 		<Spanish>[COLOR_UNIT_TEXT]Pikemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_POLYNESIAN_WAKA</Tag>
-		<English>Waka</English>
-		<French>
-			<Text>Waka</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Waka</German>
-		<Italian>Waka</Italian>
-		<Spanish>Waka</Spanish>
+		<Tag>TXT_KEY_UNIT_HAWAIIAN_WAA_KAULUA</Tag>
+		<English>Wa'a Kaulua</English>
+		<French>Wa'a Kaulua</French>
+		<German>Wa'a Kaulua</German>
+		<Italian>Wa'a Kaulua</Italian>
+		<Spanish>Wa'a Kaulua</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IRONCLAD_STRATEGY</Tag>
