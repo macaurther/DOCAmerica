@@ -1324,10 +1324,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_LEVEE</BuildingClassType>
-					<BuildingType>BUILDING_DUTCH_DIKE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_ASATRU_HOF</BuildingType>
 				</Building>
@@ -1545,10 +1541,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_CASTLE</BuildingClassType>
-					<BuildingType>BUILDING_SPANISH_CITADEL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_TRADING_COMPANY</BuildingClassType>
 					<BuildingType>BUILDING_IBERIAN_TRADING_COMPANY</BuildingType>
 				</Building>
@@ -1707,10 +1699,6 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_TRIUMPHAL_ARCH</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_NATIONAL_THEATRE</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
@@ -1740,10 +1728,6 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_RED_CROSS</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_WALL</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>
@@ -1936,10 +1920,6 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_TRIUMPHAL_ARCH</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_NATIONAL_THEATRE</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
@@ -1969,10 +1949,6 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_RED_CROSS</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_WALL</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>
@@ -2138,10 +2114,6 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_ADMINISTRATIVE_CENTER</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_TRIUMPHAL_ARCH</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
@@ -2484,10 +2456,6 @@
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_TRIUMPHAL_ARCH</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_NATIONAL_THEATRE</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
@@ -2517,10 +2485,6 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_RED_CROSS</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GREAT_WALL</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 			</Buildings>

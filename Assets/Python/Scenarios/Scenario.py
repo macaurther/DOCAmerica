@@ -59,15 +59,7 @@ RELIGION_FOUNDING_DATES = {
 
 WONDER_ORIGINAL_BUILDERS = {
 	iTempleOfKukulkan : (iMaya, 800),
-	iEscorial : (iSpain, 1584),
-	iNotreDame : (iFrance, 1260),
-	iVersailles : (iFrance, 1661),
-	iLouvre : (iFrance, 1692),
-	iKrakDesChevaliers : (iFrance, 1140),
-	iOxfordUniversity : (iEngland, 1096),
-	iTorreDeBelem : (iPortugal, 1519),
 	iFloatingGardens : (iAztecs, 1350),
-	iBourse : (iNetherlands, 1602),
 }
 
 

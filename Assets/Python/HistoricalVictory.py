@@ -84,7 +84,7 @@ dGoals = {
 			AreaPercent(plots.rectangle(tNorthAmerica).named(NORTH_AMERICA), 40, subject=VASSALS),
 			at=1800,
 		),
-		Wonders(iNotreDame, iVersailles, iLouvre, iEiffelTower, iMetropolitain, by=1900),
+		Wonders(iStatueOfLiberty, by=1900),
 	),
 	iEngland: (
 		CityCount(
@@ -164,7 +164,7 @@ dGoals = {
 	),
 	iBrazil: (
 		ImprovementCount((iSlavePlantation, 8), (iPasture, 4), at=1880),
-		Wonders(iWembley, iCristoRedentor, iItaipuDam),
+		Wonders(iCristoRedentor, iItaipuDam),
 		All(
 			ImprovementCount(iForestPreserve, 20),
 			CityBuilding(capital().named(CAPITAL), iNationalPark),

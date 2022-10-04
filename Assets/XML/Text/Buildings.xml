@@ -46,26 +46,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Administrative Center[COLOR_REVERT] reduces the maintenance costs in nearby cities.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ARABIAN_ALCHEMIST</Tag>
-		<English>Alchemist</English>
-		<French>
-			<Text>Alchimiste:Alchimistes</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Alchemist</German>
-		<Italian>Alchemist</Italian>
-		<Spanish>Alchemist</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ARABIAN_ALCHEMIST_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Alchemist[COLOR_REVERT], the Arabian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], increases the city's science output.</English>
-		<French>The [COLOR_BUILDING_TEXT]Alchemist[COLOR_REVERT], the Arabian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], increases the city's science output.</French>
-		<German>The [COLOR_BUILDING_TEXT]Alchemist[COLOR_REVERT], the Arabian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], increases the city's science output.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Alchemist[COLOR_REVERT], the Arabian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], increases the city's science output.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Alchemist[COLOR_REVERT], the Arabian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], increases the city's science output.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_AQUEDUCT_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Aqueducts[COLOR_REVERT] store food to help increase a city's growth rate. [COLOR_BUILDING_TEXT]Aqueducts[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT].</English>
 		<French>[COLOR_BUILDING_TEXT]Aqueducts[COLOR_REVERT] store food to help increase a city's growth rate. [COLOR_BUILDING_TEXT]Aqueducts[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT].</French>
@@ -202,14 +182,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Royal Mounted Police[COLOR_REVERT], the Canadian replacement for the [COLOR_BUILDING_TEXT]Constabulary[COLOR_REVERT], provides extra happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BYZANTINE_HIPPODROME_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Hippodrome[COLOR_REVERT], the Byzantine replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increases happiness, increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT] and increases the happiness output from using the culture slider.</English>
-		<French>The [COLOR_BUILDING_TEXT]Hippodrome[COLOR_REVERT], the Byzantine replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increases happiness, increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT] and increases the happiness output from using the culture slider.</French>
-		<German>The [COLOR_BUILDING_TEXT]Hippodrome[COLOR_REVERT], the Byzantine replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increases happiness, increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT] and increases the happiness output from using the culture slider.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Hippodrome[COLOR_REVERT], the Byzantine replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increases happiness, increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT] and increases the happiness output from using the culture slider.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Hippodrome[COLOR_REVERT], the Byzantine replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increases happiness, increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT] and increases the happiness output from using the culture slider.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE</Tag>
 		<English>Royal Mounted Police</English>
 		<French>
@@ -228,26 +200,6 @@
 		<German>[COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] increase your cities' defense against pre-gunpowder units, generate a small amount of culture and also grant experience to [COLOR_UNIT_TEXT]Siege Units[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Krak des Chevalier[COLOR_REVERT] world wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] increase your cities' defense against pre-gunpowder units, generate a small amount of culture and also grant experience to [COLOR_UNIT_TEXT]Siege Units[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Krak des Chevalier[COLOR_REVERT] world wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] increase your cities' defense against pre-gunpowder units, generate a small amount of culture and also grant experience to [COLOR_UNIT_TEXT]Siege Units[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Krak des Chevalier[COLOR_REVERT] world wonder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CHINESE_TAIXUE</Tag>
-		<English>Taixue</English>
-		<French>
-			<Text>Taixue</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Taixue</German>
-		<Italian>Taixue</Italian>
-		<Spanish>Taixue</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CHINESE_TAIXUE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Taixue[COLOR_REVERT], the Chinese replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides extra culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] and one more [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Taixue[COLOR_REVERT], the Chinese replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides extra culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] and one more [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Taixue[COLOR_REVERT], the Chinese replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides extra culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] and one more [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Taixue[COLOR_REVERT], the Chinese replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides extra culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] and one more [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Taixue[COLOR_REVERT], the Chinese replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides extra culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] and one more [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_COAL_PLANT_STRATEGY</Tag>
@@ -334,46 +286,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Drydocks[COLOR_REVERT] build [COLOR_UNIT_TEXT]Water Units[COLOR_REVERT] much faster and grant [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] experience points, but also add unhealthiness to the city.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_EGYPTIAN_OBELISK</Tag>
-		<English>Obelisk</English>
-		<French>
-			<Text>Ob&#233;lisque</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Obelisk</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Obelisco:Obelischi</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Obelisco:Obeliscos</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_EGYPTIAN_OBELISK_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Obelisk[COLOR_REVERT], the Egyptian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides a major bonus to Culture output in your city and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Obelisk[COLOR_REVERT], the Egyptian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides a major bonus to Culture output in your city and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Obelisk[COLOR_REVERT], the Egyptian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides a major bonus to Culture output in your city and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Obelisk[COLOR_REVERT], the Egyptian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides a major bonus to Culture output in your city and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Obelisk[COLOR_REVERT], the Egyptian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides a major bonus to Culture output in your city and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CELTIC_DUN_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Dun[COLOR_REVERT], the Celtic replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], gives all eligible units built in this city the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_BUILDING_TEXT]Dun[COLOR_REVERT], the Celtic replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], gives all eligible units built in this city the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_BUILDING_TEXT]Dun[COLOR_REVERT], the Celtic replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], gives all eligible units built in this city the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Dun[COLOR_REVERT], the Celtic replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], gives all eligible units built in this city the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Dun[COLOR_REVERT], the Celtic replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], gives all eligible units built in this city the [COLOR_HIGHLIGHT_TEXT]Guerrilla I[COLOR_REVERT] promotion.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ENGLISH_ROYAL_EXCHANGE</Tag>
 		<English>Royal Exchange</English>
 		<French>
@@ -392,14 +304,6 @@
 		<German>The [COLOR_BUILDING_TEXT]Royal Exchange[COLOR_REVERT], the German replacement for a [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], increases a city's wealth more.</German>
 		<Italian>The [COLOR_BUILDING_TEXT]Royal Exchange[COLOR_REVERT], the Italian replacement for a [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], increases a city's wealth more.</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]Royal Exchange[COLOR_REVERT], the Spanish replacement for a [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], increases a city's wealth more.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ETHIOPIAN_STELE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Stele[COLOR_REVERT], the Ethiopian replacement for the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</English>
-		<French>The [COLOR_BUILDING_TEXT]Stele[COLOR_REVERT], the Ethiopian replacement for the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</French>
-		<German>The [COLOR_BUILDING_TEXT]Stele[COLOR_REVERT], the Ethiopian replacement for the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Stele[COLOR_REVERT], the Ethiopian replacement for the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Stele[COLOR_REVERT], the Ethiopian replacement for the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT], allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FACTORY_STRATEGY</Tag>
@@ -426,26 +330,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] increase the espionage points created by the city and grant experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in their city. [COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Lubyanka[COLOR_REVERT] world wonder.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_IRANIAN_CARAVANSERAI</Tag>
-		<English>Caravanserai</English>
-		<French>
-			<Text>Caravans&#233;rail:Caravans&#233;rails</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Caravanserai</German>
-		<Italian>Caravanserai</Italian>
-		<Spanish>Caravanserai</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_IRANIAN_CARAVANSERAI_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Caravanserai[COLOR_REVERT], the Iranian replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides an extra trade route, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Caravanserai[COLOR_REVERT], the Iranian replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides an extra trade route, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Caravanserai[COLOR_REVERT], the Iranian replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides an extra trade route, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Caravanserai[COLOR_REVERT], the Iranian replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides an extra trade route, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Caravanserai[COLOR_REVERT], the Iranian replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides an extra trade route, increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FORGE_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Forges[COLOR_REVERT] increase production, increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Gems[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], but also add unhealthiness. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Forges[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Eiffel Tower[COLOR_REVERT], [COLOR_BUILDING_TEXT]Iron Pillar[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] world wonders, and the [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT] national wonder.</English>
 		<French>[COLOR_BUILDING_TEXT]Forges[COLOR_REVERT] increase production, increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Gems[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Silver[COLOR_REVERT], but also add unhealthiness. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Forges[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Eiffel Tower[COLOR_REVERT], [COLOR_BUILDING_TEXT]Iron Pillar[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] world wonders, and the [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT] national wonder.</French>
@@ -462,14 +346,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Salon[COLOR_REVERT], the French replacement for the [COLOR_BUILDING_TEXT]Coffee House[COLOR_REVERT], provides a cultural bonus, increases the birthrate of [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT] and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_GERMAN_ASSEMBLY_PLANT_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Assembly Plant[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], grants experience points to armored units built in its city, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist, allows you to hire one more [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and is produced 50% faster with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Assembly Plant[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], grants experience points to armored units built in its city, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist, allows you to hire one more [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and is produced 50% faster with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Assembly Plant[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], grants experience points to armored units built in its city, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist, allows you to hire one more [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and is produced 50% faster with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Assembly Plant[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], grants experience points to armored units built in its city, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist, allows you to hire one more [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and is produced 50% faster with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Assembly Plant[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], grants experience points to armored units built in its city, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist, allows you to hire one more [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and is produced 50% faster with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRANARY_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Granaries[COLOR_REVERT] store food to help increase a city's growth rate and increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Corn[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT].</English>
 		<French>[COLOR_BUILDING_TEXT]Granaries[COLOR_REVERT] store food to help increase a city's growth rate and increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Corn[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT].</French>
@@ -478,68 +354,12 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Granaries[COLOR_REVERT] store food to help increase a city's growth rate and increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Corn[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Wheat[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MONGOLIAN_GER</Tag>
-		<English>Ger</English>
-		<French>
-			<Text>Yourte:Yourtes</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Jurte</German>
-		<Italian>Ger</Italian>
-		<Spanish>Ger:Gers</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MONGOLIAN_GER_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Ger[COLOR_REVERT], the Mongol replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], grant even more experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in its city. It also increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Ger[COLOR_REVERT], the Mongol replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], grant even more experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in its city. It also increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Ger[COLOR_REVERT], the Mongol replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], grant even more experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in its city. It also increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Ger[COLOR_REVERT], the Mongol replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], grant even more experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in its city. It also increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Ger[COLOR_REVERT], the Mongol replacement for the [COLOR_BUILDING_TEXT]Stable[COLOR_REVERT], grant even more experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in its city. It also increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_GREEK_ODEON_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Odeon[COLOR_REVERT], the Greek replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increase a city's happiness and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Odeon[COLOR_REVERT], the Greek replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increase a city's happiness and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Odeon[COLOR_REVERT], the Greek replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increase a city's happiness and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Odeon[COLOR_REVERT], the Greek replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increase a city's happiness and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Odeon[COLOR_REVERT], the Greek replacement for the [COLOR_BUILDING_TEXT]Theatre[COLOR_REVERT], increase a city's happiness and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HARAPPAN_RESERVOIR</Tag>
-		<English>Reservoir</English>
-		<French>
-			<Text>R&#233;servoir:R&#233;servoirs</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Reservoir</German>
-		<Italian>Reservoir</Italian>
-		<Spanish>Reservoir</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HARAPPAN_RESERVOIR_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Harappan replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Masonry[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] technology and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Harappan replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Masonry[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] technology and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Harappan replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Masonry[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] technology and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Harappan replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Masonry[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] technology and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Harappan replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Masonry[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] technology and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HARBOR_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]San Marco Basilica[COLOR_REVERT] world wonder.</English>
 		<French>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]San Marco Basilica[COLOR_REVERT] world wonder.</French>
 		<German>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]San Marco Basilica[COLOR_REVERT] world wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]San Marco Basilica[COLOR_REVERT] world wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]San Marco Basilica[COLOR_REVERT] world wonder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HOLY_ROMAN_RATHAUS_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], lowers city maintenance.</English>
-		<French>The [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], lowers city maintenance.</French>
-		<German>The [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], lowers city maintenance.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], lowers city maintenance.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Rathaus[COLOR_REVERT], the German replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], lowers city maintenance.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HOSPITAL_STRATEGY</Tag>
@@ -568,86 +388,6 @@
 		<German>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Incan replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Engineering[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology, is cheaper and increases trade route yield.</German>
 		<Italian>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Incan replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Engineering[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology, is cheaper and increases trade route yield.</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Incan replacement for the [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Engineering[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology, is cheaper and increases trade route yield.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INDIAN_EDICT</Tag>
-		<English>Edict</English>
-		<French>
-			<Text>&#201;dit:&#201;dits</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Edict</German>
-		<Italian>Edict</Italian>
-		<Spanish>Edict</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INDIAN_EDICT_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Edict[COLOR_REVERT], the Indian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], lowers city maintenance costs.</English>
-		<French>The [COLOR_BUILDING_TEXT]Edict[COLOR_REVERT], the Indian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], lowers city maintenance costs.</French>
-		<German>The [COLOR_BUILDING_TEXT]Edict[COLOR_REVERT], the Indian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], lowers city maintenance costs.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Edict[COLOR_REVERT], the Indian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], lowers city maintenance costs.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Edict[COLOR_REVERT], the Indian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], lowers city maintenance costs.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MUGHAL_MAUSOLEUM</Tag>
-		<English>Mausoleum</English>
-		<French>
-			<Text>Mausol&#233;e:Mausol&#233;es</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Mausoleum</German>
-		<Italian>Mausoleo</Italian>
-		<Spanish>Mausoleo:Mausoleos</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MUGHAL_MAUSOLEUM_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Mausoleum[COLOR_REVERT], the Mughal replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Heritage[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Horticulture[COLOR_REVERT] technology and provides a free [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT]</English>
-		<French>The [COLOR_BUILDING_TEXT]Mausoleum[COLOR_REVERT], the Mughal replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Heritage[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Horticulture[COLOR_REVERT] technology and provides a free [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT]</French>
-		<German>The [COLOR_BUILDING_TEXT]Mausoleum[COLOR_REVERT], the Mughal replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Heritage[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Horticulture[COLOR_REVERT] technology and provides a free [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT]</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Mausoleum[COLOR_REVERT], the Mughal replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Heritage[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Horticulture[COLOR_REVERT] technology and provides a free [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT]</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Mausoleum[COLOR_REVERT], the Mughal replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Heritage[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Horticulture[COLOR_REVERT] technology and provides a free [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT]</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INDONESIAN_CANDI</Tag>
-		<English>Candi</English>
-		<French>
-			<Text>Candi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Candi</German>
-		<Italian>Candi</Italian>
-		<Spanish>Candi</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INDONESIAN_CANDI_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Candi[COLOR_REVERT], the Indonesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides one production.</English>
-		<French>The [COLOR_BUILDING_TEXT]Candi[COLOR_REVERT], the Indonesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides one production.</French>
-		<German>The [COLOR_BUILDING_TEXT]Candi[COLOR_REVERT], the Indonesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides one production.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Candi[COLOR_REVERT], the Indonesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides one production.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Candi[COLOR_REVERT], the Indonesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides one production.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ITALIAN_ART_STUDIO</Tag>
-		<English>Art Studio</English>
-		<French>
-			<Text>Atelier d'artiste:Ateliers d'artiste</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Art Studio</German>
-		<Italian>Art Studio</Italian>
-		<Spanish>Art Studio</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ITALIAN_ART_STUDIO_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Art Studio[COLOR_REVERT], the Italian replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a big culture boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Art Studio[COLOR_REVERT], the Italian replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a big culture boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Art Studio[COLOR_REVERT], the Italian replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a big culture boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Art Studio[COLOR_REVERT], the Italian replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a big culture boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Art Studio[COLOR_REVERT], the Italian replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a big culture boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
@@ -682,76 +422,12 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] increase a city's scientific research and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_JAPANESE_ZAIBATSU_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Zaibatsu[COLOR_REVERT], the Japanese replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and improves the commerce output of water plots.</English>
-		<French>The [COLOR_BUILDING_TEXT]Zaibatsu[COLOR_REVERT], the Japanese replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and improves the commerce output of water plots.</French>
-		<German>The [COLOR_BUILDING_TEXT]Zaibatsu[COLOR_REVERT], the Japanese replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and improves the commerce output of water plots.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Zaibatsu[COLOR_REVERT], the Japanese replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and improves the commerce output of water plots.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Zaibatsu[COLOR_REVERT], the Japanese replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper, gives one free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist and improves the commerce output of water plots.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_JAPANESE_ZAIBATSU</Tag>
-		<English>Zaibatsu</English>
-		<French>
-			<Text>Zaibatsu</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Zaibatsu</German>
-		<Italian>Zaibatsu</Italian>
-		<Spanish>Zaibatsu</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CONGOLESE_MBWADI</Tag>
-		<English>Mbwadi</English>
-		<French>Mbwadi</French>
-		<German>Mbwadi</German>
-		<Italian>Mbwadi</Italian>
-		<Spanish>Mbwadi</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CONGOLESE_MBWADI_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Mbwadi[COLOR_REVERT], the Congolese replacement for the [COLOR_BUILDING_TEXT]Weaver[COLOR_REVERT], increases the city's wealth output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Mbwadi[COLOR_REVERT], the Congolese replacement for the [COLOR_BUILDING_TEXT]Weaver[COLOR_REVERT], increases the city's wealth output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Mbwadi[COLOR_REVERT], the Congolese replacement for the [COLOR_BUILDING_TEXT]Weaver[COLOR_REVERT], increases the city's wealth output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Mbwadi[COLOR_REVERT], the Congolese replacement for the [COLOR_BUILDING_TEXT]Weaver[COLOR_REVERT], increases the city's wealth output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Mbwadi[COLOR_REVERT], the Congolese replacement for the [COLOR_BUILDING_TEXT]Weaver[COLOR_REVERT], increases the city's wealth output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_KHMER_BARAY_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Baray[COLOR_REVERT], the Khmer replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides two extra food.</English>
-		<French>The [COLOR_BUILDING_TEXT]Baray[COLOR_REVERT], the Khmer replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides two extra food.</French>
-		<German>The [COLOR_BUILDING_TEXT]Baray[COLOR_REVERT], the Khmer replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides two extra food.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Baray[COLOR_REVERT], the Khmer replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides two extra food.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Baray[COLOR_REVERT], the Khmer replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides two extra food.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MARKET_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] increase a city's wealth. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Fur[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Whales[COLOR_REVERT] and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT].</English>
 		<French>[COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] increase a city's wealth. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Fur[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Whales[COLOR_REVERT] and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT].</French>
 		<German>[COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] increase a city's wealth. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Fur[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Whales[COLOR_REVERT] and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT].</German>
 		<Italian>[COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] increase a city's wealth. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Fur[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Whales[COLOR_REVERT] and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] increase a city's wealth. They also increase the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Fur[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Ivory[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Whales[COLOR_REVERT] and allow you to hire two [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists. [COLOR_BUILDING_TEXT]Markets[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MANDE_MINT</Tag>
-		<English>Mint</English>
-		<French>
-			<Text>H&#244;tel de la Monnaie:H&#244;tels de la Monnaie</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>M&#252;nzanstalt</German>
-		<Italian>Zecca</Italian>
-		<Spanish>Ceca:Cecas</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MANDE_MINT_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Mint[COLOR_REVERT], the Mandinka replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a small increase in wealth.</English>
-		<French>The [COLOR_BUILDING_TEXT]Mint[COLOR_REVERT], the Mandinka replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a small increase in wealth.</French>
-		<German>The [COLOR_BUILDING_TEXT]Mint[COLOR_REVERT], the Mandinka replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a small increase in wealth.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Mint[COLOR_REVERT], the Mandinka replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a small increase in wealth.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Mint[COLOR_REVERT], the Mandinka replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], provides a small increase in wealth.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEVEE_STRATEGY</Tag>
@@ -770,28 +446,12 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT] provide an extra trade route.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_KOREAN_SEOWON_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Seowon[COLOR_REVERT], the Korean replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology and instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</English>
-		<French>The [COLOR_BUILDING_TEXT]Seowon[COLOR_REVERT], the Korean replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology and instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</French>
-		<German>The [COLOR_BUILDING_TEXT]Seowon[COLOR_REVERT], the Korean replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology and instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Seowon[COLOR_REVERT], the Korean replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology and instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Seowon[COLOR_REVERT], the Korean replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology and instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_UNIVERSITY_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] increase a city's research and provide culture. [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] national wonder.</English>
 		<French>[COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] increase a city's research and provide culture. [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] national wonder.</French>
 		<German>[COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] increase a city's research and provide culture. [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] national wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] increase a city's research and provide culture. [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] national wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] increase a city's research and provide culture. [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]National College[COLOR_REVERT] national wonder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_VIKING_TRADING_POST_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], the Viking replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], gives all ships built in this city the [COLOR_HIGHLIGHT_TEXT]Navigation I[COLOR_REVERT] promotion and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], the Viking replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], gives all ships built in this city the [COLOR_HIGHLIGHT_TEXT]Navigation I[COLOR_REVERT] promotion and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], the Viking replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], gives all ships built in this city the [COLOR_HIGHLIGHT_TEXT]Navigation I[COLOR_REVERT] promotion and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], the Viking replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], gives all ships built in this city the [COLOR_HIGHLIGHT_TEXT]Navigation I[COLOR_REVERT] promotion and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], the Viking replacement for the [COLOR_BUILDING_TEXT]Lighthouse[COLOR_REVERT], gives all ships built in this city the [COLOR_HIGHLIGHT_TEXT]Navigation I[COLOR_REVERT] promotion and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LIBRARY_STRATEGY</Tag>
@@ -862,58 +522,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Charreada Arena[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Arena[COLOR_REVERT], grants experience points to mounted units built in its city and increases happiness from access to [COLOR_HIGHLIGHT_TEXT]Horses[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MOORISH_NORIA</Tag>
-		<English>Noria</English>
-		<French>
-			<Text>Noria:Norias</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Noria</German>
-		<Italian>Noria</Italian>
-		<Spanish>Noria</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MOORISH_NORIA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Noria[COLOR_REVERT], the Moorish replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], is cheaper and provides a production bonus.</English>
-		<French>The [COLOR_BUILDING_TEXT]Noria[COLOR_REVERT], the Moorish replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], is cheaper and provides a production bonus.</French>
-		<German>The [COLOR_BUILDING_TEXT]Noria[COLOR_REVERT], the Moorish replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], is cheaper and provides a production bonus.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Noria[COLOR_REVERT], the Moorish replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], is cheaper and provides a production bonus.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Noria[COLOR_REVERT], the Moorish replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], is cheaper and provides a production bonus.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DUTCH_DIKE</Tag>
-		<English>Dike</English>
-		<French>
-			<Text>Digue:Digues</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Deich</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Diga:Dighe</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Dijk:Dijken</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DUTCH_DIKE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Dike[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Levee[COLOR_REVERT], provides a production bonus from all water tiles worked by a city.</English>
-		<French>The [COLOR_BUILDING_TEXT]Dike[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Levee[COLOR_REVERT], provides a production bonus from all water tiles worked by a city.</French>
-		<German>The [COLOR_BUILDING_TEXT]Dike[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Levee[COLOR_REVERT], provides a production bonus from all water tiles worked by a city.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Dike[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Levee[COLOR_REVERT], provides a production bonus from all water tiles worked by a city.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Dike[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Levee[COLOR_REVERT], provides a production bonus from all water tiles worked by a city.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WALLS_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] increase a city's defenses against pre-gunpowder units. [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT].</English>
 		<French>[COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] increase a city's defenses against pre-gunpowder units. [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT].</French>
@@ -938,52 +546,12 @@
 		<Spanish>Pagan Temple</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PERSIAN_APOTHECARY_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Apothecary[COLOR_REVERT], the Persian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], requires [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Alchemy[COLOR_REVERT], increases a city's health and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Apothecary[COLOR_REVERT], the Persian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], requires [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Alchemy[COLOR_REVERT], increases a city's health and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Apothecary[COLOR_REVERT], the Persian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], requires [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Alchemy[COLOR_REVERT], increases a city's health and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Apothecary[COLOR_REVERT], the Persian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], requires [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Alchemy[COLOR_REVERT], increases a city's health and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Apothecary[COLOR_REVERT], the Persian replacement for the [COLOR_BUILDING_TEXT]Pharmacy[COLOR_REVERT], requires [COLOR_TECH_TEXT]Medicine[COLOR_REVERT] instead of [COLOR_TECH_TEXT]Alchemy[COLOR_REVERT], increases a city's health and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Incense[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Silk[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Spices[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PAGAN_TEMPLE_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] provide a small amount of culture.</English>
 		<French>[COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] provide a small amount of culture.</French>
 		<German>[COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] provide a small amount of culture.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] provide a small amount of culture.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Pagan Temples[COLOR_REVERT] provide a small amount of culture.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_OTTOMAN_HAMMAM_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Hammam[COLOR_REVERT], the Turkish replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], increases a city's happiness.</English>
-		<French>The [COLOR_BUILDING_TEXT]Hammam[COLOR_REVERT], the Turkish replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], increases a city's happiness.</French>
-		<German>The [COLOR_BUILDING_TEXT]Hammam[COLOR_REVERT], the Turkish replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], increases a city's happiness.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Hammam[COLOR_REVERT], the Turkish replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], increases a city's happiness.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Hammam[COLOR_REVERT], the Turkish replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], increases a city's happiness.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PHOENICIAN_GLASSMAKER</Tag>
-		<English>Glassmaker</English>
-		<French>
-			<Text>Verrier:Verriers</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Glasmacher</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>Glassmaker</Italian>
-		<Spanish>Glassmaker</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PHOENICIAN_GLASSMAKER_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Glassmaker[COLOR_REVERT], the Phoenician replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's trade route yield.</English>
-		<French>The [COLOR_BUILDING_TEXT]Glassmaker[COLOR_REVERT], the Phoenician replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's trade route yield.</French>
-		<German>The [COLOR_BUILDING_TEXT]Glassmaker[COLOR_REVERT], the Phoenician replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's trade route yield.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Glassmaker[COLOR_REVERT], the Phoenician replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's trade route yield.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Glassmaker[COLOR_REVERT], the Phoenician replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's trade route yield.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PLAGUE</Tag>
@@ -1030,26 +598,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_POLISH_SEJMIK</Tag>
-		<English>Sejmik</English>
-		<French>
-			<Text>Sejmik</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Sejmik</German>
-		<Italian>Sejmik</Italian>
-		<Spanish>Sejmik</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_POLISH_SEJMIK_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Sejmik[COLOR_REVERT], the Polish replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], provides a small cash and happiness bonus.</English>
-		<French>The [COLOR_BUILDING_TEXT]Sejmik[COLOR_REVERT], the Polish replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], provides a small cash and happiness bonus.</French>
-		<German>The [COLOR_BUILDING_TEXT]Sejmik[COLOR_REVERT], the Polish replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], provides a small cash and happiness bonus.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Sejmik[COLOR_REVERT], the Polish replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], provides a small cash and happiness bonus.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Sejmik[COLOR_REVERT], the Polish replacement for the [COLOR_BUILDING_TEXT]Civic Square[COLOR_REVERT], provides a small cash and happiness bonus.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POLYNESIAN_MALAE</Tag>
 		<English>Mala'e</English>
 		<French>
@@ -1084,14 +632,6 @@
 		<German>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</German>
 		<Italian>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_RUSSIAN_RESEARCH_INSTITUTE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Research Institute[COLOR_REVERT], the Russian replacement for the [COLOR_BUILDING_TEXT]Laboratory[COLOR_REVERT], provides a free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allows you to hire one extra [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Research Institute[COLOR_REVERT], the Russian replacement for the [COLOR_BUILDING_TEXT]Laboratory[COLOR_REVERT], provides a free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allows you to hire one extra [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Research Institute[COLOR_REVERT], the Russian replacement for the [COLOR_BUILDING_TEXT]Laboratory[COLOR_REVERT], provides a free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allows you to hire one extra [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Research Institute[COLOR_REVERT], the Russian replacement for the [COLOR_BUILDING_TEXT]Laboratory[COLOR_REVERT], provides a free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allows you to hire one extra [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Research Institute[COLOR_REVERT], the Russian replacement for the [COLOR_BUILDING_TEXT]Laboratory[COLOR_REVERT], provides a free [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allows you to hire one extra [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SECURITY_BUREAU</Tag>
@@ -1134,14 +674,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Security Bureaus[COLOR_REVERT] increase the cost of enemy espionage missions in their city and grant [COLOR_HIGHLIGHT_TEXT]Informant I[COLOR_REVERT] to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in its city.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SPANISH_CITADEL_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT], the Spanish replacement for the [COLOR_BUILDING_TEXT]Castle[COLOR_REVERT], is half the production cost and lowers city maintenance.</English>
-		<French>The [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT], the Spanish replacement for the [COLOR_BUILDING_TEXT]Castle[COLOR_REVERT], is half the production cost and lowers city maintenance.</French>
-		<German>The [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT], the Spanish replacement for the [COLOR_BUILDING_TEXT]Castle[COLOR_REVERT], is half the production cost and lowers city maintenance.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT], the Spanish replacement for the [COLOR_BUILDING_TEXT]Castle[COLOR_REVERT], is half the production cost and lowers city maintenance.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT], the Spanish replacement for the [COLOR_BUILDING_TEXT]Castle[COLOR_REVERT], is half the production cost and lowers city maintenance.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SMOKEHOUSE</Tag>
 		<English>Smokehouse</English>
 		<French>
@@ -1162,46 +694,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Smokehouses[COLOR_REVERT] increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ROMAN_FORUM_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Forum[COLOR_REVERT], the Roman replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allows you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</English>
-		<French>The [COLOR_BUILDING_TEXT]Forum[COLOR_REVERT], the Roman replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allows you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</French>
-		<German>The [COLOR_BUILDING_TEXT]Forum[COLOR_REVERT], the Roman replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allows you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Forum[COLOR_REVERT], the Roman replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allows you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Forum[COLOR_REVERT], the Roman replacement for the [COLOR_BUILDING_TEXT]Market[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allows you to hire two [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BABYLONIAN_ZIGGURAT</Tag>
-		<English>Ziggurat</English>
-		<French>
-			<Text>Ziggourat:Ziggourats</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Zikkurat</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Ziggurat:Ziggurat</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Zigurat:Zigurats</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BABYLONIAN_ZIGGURAT_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Ziggurat[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in Mesopotamia.</English>
-		<French>La [COLOR_BUILDING_TEXT]Ziggourat[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes des [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] et qui proviennent de M&#233;sopotamie.</French>
-		<German>The [COLOR_BUILDING_TEXT]Ziggurat[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in Mesopotamia.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Ziggurat[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in Mesopotamia.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Ziggurat[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in Mesopotamia.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SUPERMARKET_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</English>
 		<French>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</French>
@@ -1210,72 +702,12 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TAMIL_SANGAM</Tag>
-		<English>Sangam</English>
-		<French>Sangam</French>
-		<German>Sangam</German>
-		<Italian>Sangam</Italian>
-		<Spanish>Sangam</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TAMIL_SANGAM_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT], the Tamil replacement the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides an extra cultural boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT], the Tamil replacement the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides an extra cultural boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT], the Tamil replacement the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides an extra cultural boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT], the Tamil replacement the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides an extra cultural boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Sangam[COLOR_REVERT], the Tamil replacement the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], provides an extra cultural boost and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ZULU_IKHANDA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Ikhanda[COLOR_REVERT], the Zulu replacement for the [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT], are more expensive and lower city maintenance costs.</English>
-		<French>The [COLOR_BUILDING_TEXT]Ikhanda[COLOR_REVERT], the Zulu replacement for the [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT], are more expensive and lower city maintenance costs.</French>
-		<German>The [COLOR_BUILDING_TEXT]Ikhanda[COLOR_REVERT], the Zulu replacement for the [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT], are more expensive and lower city maintenance costs.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Ikhanda[COLOR_REVERT], the Zulu replacement for the [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT], are more expensive and lower city maintenance costs.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Ikhanda[COLOR_REVERT], the Zulu replacement for the [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT], are more expensive and lower city maintenance costs.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_THAI_HO_TRAI</Tag>
-		<English>Ho Trai</English>
-		<French>Ho Trai</French>
-		<German>Ho Trai</German>
-		<Italian>Ho Trai</Italian>
-		<Spanish>Ho Trai</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_THAI_HO_TRAI_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Ho Trai[COLOR_REVERT], the Thai replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], increases happiness and is cheaper.</English>
-		<French>The [COLOR_BUILDING_TEXT]Ho Trai[COLOR_REVERT], the Thai replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], increases happiness and is cheaper.</French>
-		<German>The [COLOR_BUILDING_TEXT]Ho Trai[COLOR_REVERT], the Thai replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], increases happiness and is cheaper.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Ho Trai[COLOR_REVERT], the Thai replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], increases happiness and is cheaper.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Ho Trai[COLOR_REVERT], the Thai replacement for the [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], increases happiness and is cheaper.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THEATRE_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] increase a city's culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Theatre[COLOR_REVERT] national wonder.</English>
 		<French>[COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] increase a city's culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Theatre[COLOR_REVERT] national wonder.</French>
 		<German>[COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] increase a city's culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Theatre[COLOR_REVERT] national wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] increase a city's culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Theatre[COLOR_REVERT] national wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] increase a city's culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Theatres[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Theatre[COLOR_REVERT] national wonder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TIBETAN_GOMPA</Tag>
-		<English>Gompa</English>
-		<French>
-			<Text>Gompa:Gompas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Gompa</German>
-		<Italian>Gompa</Italian>
-		<Spanish>Gompa</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TIBETAN_GOMPA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Gompa[COLOR_REVERT], the Tibetan replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], provides less research, increases a city's defenses against pre-gunpowder units, allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, provides a free [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, doesn't require a [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], and requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</English>
-		<French>The [COLOR_BUILDING_TEXT]Gompa[COLOR_REVERT], the Tibetan replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], provides less research, increases a city's defenses against pre-gunpowder units, allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, provides a free [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, doesn't require a [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], and requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</French>
-		<German>The [COLOR_BUILDING_TEXT]Gompa[COLOR_REVERT], the Tibetan replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], provides less research, increases a city's defenses against pre-gunpowder units, allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, provides a free [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, doesn't require a [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], and requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Gompa[COLOR_REVERT], the Tibetan replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], provides less research, increases a city's defenses against pre-gunpowder units, allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, provides a free [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, doesn't require a [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], and requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Gompa[COLOR_REVERT], the Tibetan replacement for the [COLOR_BUILDING_TEXT]University[COLOR_REVERT], provides less research, increases a city's defenses against pre-gunpowder units, allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, provides a free [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist, doesn't require a [COLOR_BUILDING_TEXT]Library[COLOR_REVERT], and requires the [COLOR_TECH_TEXT]Paper[COLOR_REVERT] technology instead of the [COLOR_TECH_TEXT]Academia[COLOR_REVERT] technology.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_JEWISH_TEMPLE</Tag>
@@ -2454,166 +1886,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BABYLONIAN_EDUBBA</Tag>
-		<English>Edubba</English>
-		<French>
-			<Text>Edubba:Edubbas</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Edubba</German>
-		<Italian>Edubba</Italian>
-		<Spanish>Edubba</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BABYLONIAN_EDUBBA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Edubba[COLOR_REVERT], the Babylonian replacement for the [COLOR_BUILDING_TEXT]Libary[COLOR_REVERT], is half the production cost and increases science output.</English>
-		<French>The [COLOR_BUILDING_TEXT]Edubba[COLOR_REVERT], the Babylonian replacement for the [COLOR_BUILDING_TEXT]Libary[COLOR_REVERT], is half the production cost and increases science output.</French>
-		<German>The [COLOR_BUILDING_TEXT]Edubba[COLOR_REVERT], the Babylonian replacement for the [COLOR_BUILDING_TEXT]Libary[COLOR_REVERT], is half the production cost and increases science output.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Edubba[COLOR_REVERT], the Babylonian replacement for the [COLOR_BUILDING_TEXT]Libary[COLOR_REVERT], is half the production cost and increases science output.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Edubba[COLOR_REVERT], the Babylonian replacement for the [COLOR_BUILDING_TEXT]Libary[COLOR_REVERT], is half the production cost and increases science output.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PESEDJET_TEMPLE</Tag>
-		<English>Pesedjet Temple</English>
-		<French>
-			<Text>Temple pesedjet:Temples pesedjet</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Pesedjet Temple</German>
-		<Italian>Pesedjet Temple</Italian>
-		<Spanish>Pesedjet Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PESEDJET_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Pesedjet Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Pesedjet[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple du Pesedjet[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Pesedjet[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Pesedjet Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Pesedjet[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Pesedjet Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Pesedjet[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Pesedjet Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Pesedjet[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANCESTOR_SHRINE</Tag>
-		<English>Ancestor Shrine</English>
-		<French>
-			<Text>Temple des anc&#234;tres:Temples des anc&#234;tres</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Ancestor Shrine</German>
-		<Italian>Ancestor Shrine</Italian>
-		<Spanish>Ancestor Shrine</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ANCESTOR_SHRINE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Ancestor Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shendao[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple des anc&#234;tres[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Shenisme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Ancestor Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shendao[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Ancestor Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shendao[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Ancestor Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shendao[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_VEDIC_TEMPLE</Tag>
-		<English>Vedic Temple</English>
-		<French>
-			<Text>Temple v&#233;dique:Temples v&#233;diques</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Vedic Temple</German>
-		<Italian>Vedic Temple</Italian>
-		<Spanish>Vedic Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_VEDIC_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Vedic Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Vedism[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple v&#233;dique[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de l'[COLOR_HIGHLIGHT_TEXT]V&#233;disme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Vedic Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Vedism[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Vedic Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Vedism[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Vedic Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Vedism[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_OLYMPIAN_TEMPLE</Tag>
-		<English>Olympian Temple</English>
-		<French>
-			<Text>Temple olympien:Temples olympiens</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Olympian Temple</German>
-		<Italian>Olympian Temple</Italian>
-		<Spanish>Olympian Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_OLYMPIAN_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Olympian Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Olympianism[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple olympien[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de l'[COLOR_HIGHLIGHT_TEXT]Olympisme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Olympian Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Olympianism[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Olympian Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Olympianism[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Olympian Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Olympianism[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BAALIST_TEMPLE</Tag>
-		<English>Baalist Temple</English>
-		<French>
-			<Text>Temple de Baal:Temples de Baal</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Baalist Temple</German>
-		<Italian>Baalist Temple</Italian>
-		<Spanish>Baalist Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BAALIST_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Baalist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Baalism[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple de Baal[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Baalisme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Baalist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Baalism[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Baalist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Baalism[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Baalist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Baalism[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ATUA_SHRINE</Tag>
-		<English>Atua Shrine</English>
-		<French>
-			<Text>Sanctuaire atua:Sanctuaires atua</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Atua Shrine</German>
-		<Italian>Atua Shrine</Italian>
-		<Spanish>Atua Shrine</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ATUA_SHRINE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Sanctuaire atua[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes des [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MAZDAIST_TEMPLE</Tag>
-		<English>Mazdaist Temple</English>
-		<French>
-			<Text>Temple mazd&#233;iste:Temples mazd&#233;istes</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Mazdaist Temple</German>
-		<Italian>Mazdaist Temple</Italian>
-		<Spanish>Mazdaist Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MAZDAIST_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Mazdaist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mazdaism[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple mazd&#233;iste[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Mazd&#233;isme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Mazdaist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mazdaism[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Mazdaist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mazdaism[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Mazdaist Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mazdaism[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEOTL_STEP_PYRAMID</Tag>
 		<English>Teotl Step Pyramid</English>
 		<French>
@@ -2634,252 +1906,12 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Teotl Step Pyramid[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Teotl[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SHINTO_SHRINE</Tag>
-		<English>Shinto Shrine</English>
-		<French>
-			<Text>Sanctuaire shinto:Sanctuaires shinto</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Shinto Shrine</German>
-		<Italian>Shinto Shrine</Italian>
-		<Spanish>Shinto Shrine</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SHINTO_SHRINE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Shinto Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shinto[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Sanctuaire shinto[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Shinto&#239;sme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Shinto Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shinto[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Shinto Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shinto[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Shinto Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Shinto[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ASATRU_HOF</Tag>
-		<English>Asatru Hof</English>
-		<French>
-			<Text>Hof &#193;satr&#250;ar:Hofs &#193;satr&#250;ar</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Asatru Hof</German>
-		<Italian>Asatru Hof</Italian>
-		<Spanish>Asatru Hof</Spanish>
-		</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ASATRU_HOF_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Hof &#193;satr&#250;ar[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de l'[COLOR_HIGHLIGHT_TEXT]&#193;satr&#250;[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DRUIDIC_NEMETON</Tag>
-		<English>Druidic Nemeton</English>
-		<French>
-			<Text>Nemeton druidique:Nemetons druidiques</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Druidic Nemeton</German>
-		<Italian>Druidic Nemeton</Italian>
-		<Spanish>Druidic Nemeton</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DRUIDIC_NEMETON_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Nemeton druidique[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Druidisme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</Spanish>
-</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PERUN_SHRINE</Tag>
-		<English>Shrine of Perun</English>
-		<French>
-			<Text>Sanctuaire de P&#233;roun:Sanctuaires de P&#233;roun</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Shrine of Perun</German>
-		<Italian>Shrine of Perun</Italian>
-		<Spanish>Shrine of Perun</Spanish>	
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PERUN_SHRINE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Sanctuaire de P&#233;roun[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de la [COLOR_HIGHLIGHT_TEXT]Rodnov&#233;rie[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_YORUBA_TEMPLE</Tag>
-		<English>Yoruba Temple</English>
-		<French>
-			<Text>Temple yoruba:Temples yoruba</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Yoruba Temple</German>
-		<Italian>Yoruba Temple</Italian>
-		<Spanish>Yoruba Temple</Spanish>	
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_YORUBA_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple yoruba[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de la religion [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INTI_TEMPLE</Tag>
-		<English>Inti Temple</English>
-		<French>
-			<Text>Temple d'Inti:Temples d'Inti</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Inti Temple</German>
-		<Italian>Inti Temple</Italian>
-		<Spanish>Inti Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INTI_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple d'Inti[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes d'[COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TENGRI_OBO</Tag>
-		<English>Tengri Obo</English>
-		<French>
-			<Text>Ovoo tengriste:Ovoos tengristes</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Tengri Obo</German>
-		<Italian>Tengri Obo</Italian>
-		<Spanish>Tengri Obo</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TENGRI_OBO_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Tengri Obo[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Tengri[COLOR_REVERT].</English>
-		<French>L'[COLOR_BUILDING_TEXT]Ovoo tengriste[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Tengrisme[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Tengri Obo[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Tengri[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Tengri Obo[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Tengri[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Tengri Obo[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Tengri[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HUBAL_TEMPLE</Tag>
-		<English>Hubal Temple</English>
-		<French>
-			<Text>Temple de Houbal:Temples de Houbal</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Hubal Temple</German>
-		<Italian>Hubal Temple</Italian>
-		<Spanish>Hubal Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HUBAL_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Hubal Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in the Arabian peninsula.</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple de Houbal[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes des [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] et qui proviennent de la p&#233;ninsule arabique.</French>
-		<German>The [COLOR_BUILDING_TEXT]Hubal Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in the Arabian peninsula.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Hubal Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in the Arabian peninsula.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Hubal Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Anunnaki[COLOR_REVERT] and originate in the Arabian peninsula.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ASTAR_TEMPLE</Tag>
-		<English>Astar Temple</English>
-		<French>
-			<Text>Temple d'Astar:Temples d'Astar</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Astar Temple</German>
-		<Italian>Astar Temple</Italian>
-		<Spanish>Astar Temple</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ASTAR_TEMPLE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Astar Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of Ethiopia.</English>
-		<French>Le [COLOR_BUILDING_TEXT]Temple d'Astar[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] de l'&#201;thiopie.</French>
-		<German>The [COLOR_BUILDING_TEXT]Astar Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of Ethiopia.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Astar Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of Ethiopia.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Astar Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of Ethiopia.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MUGYO_SADANG</Tag>
-		<English>Sadang</English>
-		<French>Sadang</French>
-		<German>Sadang</German>
-		<Italian>Sadang</Italian>
-		<Spanish>Sadang</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MUGYO_SADANG_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Sadang[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mugyo[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Sadang[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mugyo[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Sadang[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mugyo[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Sadang[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mugyo[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Sadang[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Mugyo[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</English>
 		<French>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</French>
 		<German>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Monuments[COLOR_REVERT] increase a city's cultural output. They are also required to build [COLOR_BUILDING_TEXT]Civic Squares[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]National Monument[COLOR_REVERT] national wonder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TURKIC_DIVAN</Tag>
-		<English>Divan</English>
-		<French>
-			<Text>Divan:Divans</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Divan</German>
-		<Italian>Divan</Italian>
-		<Spanish>Divan</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TURKIC_DIVAN_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Divan[COLOR_REVERT], the Turkic replacement for the [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT], lowers the city's maintenance costs and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Divan[COLOR_REVERT], the Turkic replacement for the [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT], lowers the city's maintenance costs and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Divan[COLOR_REVERT], the Turkic replacement for the [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT], lowers the city's maintenance costs and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Divan[COLOR_REVERT], the Turkic replacement for the [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT], lowers the city's maintenance costs and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Divan[COLOR_REVERT], the Turkic replacement for the [COLOR_BUILDING_TEXT]Jail[COLOR_REVERT], lowers the city's maintenance costs and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BABYLONIAN_GARDEN</Tag>
-		<English>Garden</English>
-		<French>
-			<Text>Jardin:Jardins</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Garten</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Giardino:Giardini</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Jard&#237;n:Jardines</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WAREHOUSE</Tag>

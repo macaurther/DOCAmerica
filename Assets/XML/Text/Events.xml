@@ -1139,14 +1139,6 @@
 		<Spanish>La misi&#243;n El maestro herrero ha fracasado.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_FAIL_NOBLE_KNIGHTS</Tag>
-		<English>You have failed the quest of "Noble Knights!"</English>
-		<French>Vous avez &#233;chou&#233; dans la qu&#234;te des Nobles Chevaliers !</French>
-		<German>Die Quest "Edle Ritter" ist gescheitert!</German>
-		<Italian>Hai fallito nell'impresa dei Nobili cavalieri!</Italian>
-		<Spanish>&#161;La misi&#243;n Caballeros nobles ha fracasado!</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_OLYMPICS</Tag>
 		<English>All records of ancient games have been forever lost.</English>
 		<French>Toutes les informations sur les jeux antiques ont &#233;t&#233; perdues pour toujours.</French>
@@ -2555,46 +2547,6 @@
 		<Spanish>Ge&#243;logos %s1:3_civ_adjective han descubierto una importante fuente de [COLOR_HIGHLIGHT_TEXT]Uranio[COLOR_REVERT] en lo que ha resultado ser un enorme cr&#225;ter dejado por un antiguo impacto.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_NOBLE_KNIGHTS_1</Tag>
-		<English>Noble Knights[PARAGRAPH:1]You are tasked by the mandate of your people to train a sizable force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.</English>
-		<French>Nobles Chevaliers[PARAGRAPH:1]Votre peuple vous charge de former un nombre important d'unit&#233;s de [COLOR_UNIT_TEXT]chevaliers[COLOR_REVERT].</French>
-		<German>Noble Knights[PARAGRAPH:1]You are tasked by the mandate of your people to train a sizable force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.</German>
-		<Italian>Noble Knights[PARAGRAPH:1]You are tasked by the mandate of your people to train a sizable force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.</Italian>
-		<Spanish>Noble Knights[PARAGRAPH:1]You are tasked by the mandate of your people to train a sizable force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NOBLE_KNIGHTS_DONE_1</Tag>
-		<English>With such a large force of Lancers working together, additional training for these units can be achieved.</English>
-		<French>Avec un tel nombre de chevaliers op&#233;rant ensemble, un entra&#238;nement suppl&#233;mentaire pour ces unit&#233;s peut &#234;tre effectu&#233;.</French>
-		<German>With such a large force of Lancers working together, additional training for these units can be achieved.</German>
-		<Italian>With such a large force of Lancers working together, additional training for these units can be achieved.</Italian>
-		<Spanish>With such a large force of Lancers working together, additional training for these units can be achieved.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NOBLE_KNIGHTS_DONE_2</Tag>
-		<English>Enlist our noble Lancers into a drive to spread our faith.</English>
-		<French>Enr&#244;lons nos nobles chevaliers dans une campagne pour propager notre foi.</French>
-		<German>Enlist our noble Lancers into a drive to spread our faith.</German>
-		<Italian>Enlist our noble Lancers into a drive to spread our faith.</Italian>
-		<Spanish>Enlist our noble Lancers into a drive to spread our faith.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NOBLE_KNIGHTS_DONE_3</Tag>
-		<English>From among our most faithful lancers emerges one with holy vision.</English>
-		<French>L'une de nos pieux chevaliers a re&#231;u une vision divine.</French>
-		<German>From among our most faithful lancers emerges one with holy vision.</German>
-		<Italian>From among our most faithful lancers emerges one with holy vision.</Italian>
-		<Spanish>From among our most faithful lancers emerges one with holy vision.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NOBLE_KNIGHTS_HELP_1</Tag>
-		<English>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Clergy[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] without having met the conditions.</English>
-		<French>[PARAGRAPH:1]Pour achever cette qu&#234;te, vous devez former %d1 unit&#233;s de [COLOR_UNIT_TEXT]chevaliers[COLOR_REVERT].[PARAGRAPH:1]Une option de r&#233;compense suppl&#233;mentaire sera disponible si votre civilisation utilise la doctrine du [COLOR_HIGHLIGHT_TEXT]clerg&#233;[COLOR_REVERT].[PARAGRAPH:1]Une option de r&#233;compense suppl&#233;mentaire sera disponible si votre civilisation contr&#244;le le b&#226;timent : [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]Vous &#233;chouerez si une civilisation rivale ach&#232;ve cette qu&#234;te avant vous ou si vous d&#233;couvrez les [COLOR_TECH_TEXT]armes combin&#233;es[COLOR_REVERT] sans avoir rempli les conditions de victoire.</French>
-		<German>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Clergy[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] without having met the conditions.</German>
-		<Italian>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Clergy[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] without having met the conditions.</Italian>
-		<Spanish>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Clergy[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] without having met the conditions.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_NUCLEAR_PROTEST</Tag>
 		<English>Our people are protesting against our nuclear arsenal. They fear that we would use nukes with disastrous consequences.</English>
 		<French>Nos citoyens manifestent contre notre force de frappe nucl&#233;aire. Ils craignent les cons&#233;quences dramatiques qui surviendraient si nous les utilisions.</French>
@@ -2873,14 +2825,6 @@
 		<German>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</German>
 		<Italian>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</Italian>
 		<Spanish>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_REINFORCED_HULL_1</Tag>
-		<English>Our existing ships can also be refitted? Begin immediately.</English>
-		<French>Nos navires actuels peuvent &#234;tre modifi&#233;s ? Commencez imm&#233;diatement.</French>
-		<German>Unsere fertigen Schiffe k&#246;nnen auch aufger&#252;stet werden? Beginnt sofort damit.</German>
-		<Italian>Possiamo migliorare le nostre navi? Cominciate immediatamente.</Italian>
-		<Spanish>&#191;Nuestros barcos actuales tambi&#233;n pueden beneficiarse de esta mejora? Que se haga de inmediato.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RIFLED_CANNON_1</Tag>
@@ -4595,22 +4539,6 @@
 		<Spanish>&#161;La vieja dinast&#237;a se ha extinguido! &#161;No quedan herederos que puedan reclamar el trono!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_NOBLE_KNIGHTS_1</Tag>
-		<English>Our civilization cries out for nobility to lead our people forward into a brighter future.[PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Lancers[COLOR_REVERT], we should be able to find our way forward, through times peaceful or warlike.</English>
-		<French>Notre civilisation implore la noblesse de mener le peuple vers un avenir radieux.[PARAGRAPH:1]Si nous formons assez de [COLOR_UNIT_TEXT]chevaliers[COLOR_REVERT], nous pourrons trouver la bonne voie en temps de paix comme en temps de guerre.</French>
-		<German>Our civilization cries out for nobility to lead our people forward into a brighter future.[PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Lancers[COLOR_REVERT], we should be able to find our way forward, through times peaceful or warlike.</German>
-		<Italian>Our civilization cries out for nobility to lead our people forward into a brighter future.[PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Lancers[COLOR_REVERT], we should be able to find our way forward, through times peaceful or warlike.</Italian>
-		<Spanish>Our civilization cries out for nobility to lead our people forward into a brighter future.[PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Lancers[COLOR_REVERT], we should be able to find our way forward, through times peaceful or warlike.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_NOBLE_KNIGHTS_DONE_1</Tag>
-		<English>Congratulations! You have trained a large enough force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units. Please choose your reward.</English>
-		<French>F&#233;licitations ! Vous avez form&#233; une suffisamment d'unit&#233;s de [COLOR_UNIT_TEXT]chevaliers[COLOR_REVERT]. Veuillez choisir votre r&#233;compense.</French>
-		<German>Congratulations! You have trained a large enough force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units. Please choose your reward.</German>
-		<Italian>Congratulations! You have trained a large enough force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units. Please choose your reward.</Italian>
-		<Spanish>Congratulations! You have trained a large enough force of [COLOR_UNIT_TEXT]Lancer[COLOR_REVERT] units. Please choose your reward.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OVERWHELM_1</Tag>
 		<English>Our brightest admiral has proposed an amphibious assault strategy designed to capture port cities with lightning strikes.[PARAGRAPH:1]If we construct a large enough aircraft carrier battle fleet, we can bring any coastal city to its knees, making it much easier to attack amphibiously. We need a force large enough to disable all defenses with heavy shore bombardment and soften the defenders by bombing from the air. Then our troops may land on the same day the battle begins and thrust inland against a foe who will be in total disarray.</English>
 		<French>Notre amiral le plus brillant a propos&#233; une strat&#233;gie d'assaut amphibie, afin de capturer les villes portuaires lors de frappes &#233;clairs.[PARAGRAPH:1]Si nous construisons une flotte de porte-avions assez importante, nous pouvons soumettre toutes les villes portuaires pour faciliter l'assaut amphibie. Nous devons disposer d'une force assez importante, afin de d&#233;truire toutes les d&#233;fenses avec des bombardements c&#244;tiers et d'affaiblir les d&#233;fenseurs avec des bombardements a&#233;riens. Ensuite, nos troupes accosteront le jour du d&#233;but de la bataille et avanceront dans les terres pour affronter un ennemi en plein d&#233;sarroi.</French>
@@ -4721,14 +4649,6 @@
 		<German>Die Erfindung der Druckerpresse hat eine Welle neuer Doktrinen ausgel&#246;st. Reformer aus der gesamten katholischen Welt fordern die Autorit&#228;t des Papstes &#252;ber theologische Fragen heraus. Wie sollen wir reagieren?</German>
 		<Italian>The introduction of academic traditions has unleashed a wave of new doctrines. Reformers all over the Catholic world are challenging the authority of the Pope over Christian theology. How shall we react?</Italian>
 		<Spanish>The introduction of academic traditions has unleashed a wave of new doctrines. Reformers all over the Catholic world are challenging the authority of the Pope over Christian theology. How shall we react?</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_REINFORCED_HULL_1</Tag>
-		<English>Our shipmasters have devised a way to reinforce the hulls of our war galleys. This will help with both ramming and being rammed.</English>
-		<French>Nos capitaines ont trouv&#233; un moyen de renforcer la coque de nos gal&#232;res de guerre. Cela les aidera &#224; &#233;peronner les navires ennemis, mais aussi &#224; r&#233;sister &#224; l'&#233;peronnage.</French>
-		<German>Our shipmasters have devised a way to reinforce the hulls of our war galleys. This will help with both ramming and being rammed.</German>
-		<Italian>Our shipmasters have devised a way to reinforce the hulls of our war galleys. This will help with both ramming and being rammed.</Italian>
-		<Spanish>Our shipmasters have devised a way to reinforce the hulls of our war galleys. This will help with both ramming and being rammed.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RIFLED_CANNON_1</Tag>
@@ -6323,14 +6243,6 @@
 		<Spanish>La dinast&#237;a hereditaria %s1:2_civ_adjective se ha extinguido. Una nueva facci&#243;n ha reclamado el trono y se prepara para un estridente y exitoso inicio.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_NOBLE_KNIGHTS_DONE</Tag>
-		<English>The %s1_civ_adjective people have trained the largest force of lancers. Advisors across the known world tremble at the thought of facing rows of lances powered by the thundering hooves of a full battle charge.</English>
-		<French>Le peuple %s1_civ_adjective a form&#233; le plus grand nombre de chevaliers. Les conseillers du monde entier tremblent &#224; l'id&#233;e de faire face aux rang&#233;es de lances qui chargent au grand galop au c&#339;ur de la bataille.</French>
-		<German>The %s1_civ_adjective people have trained the largest force of lancers. Advisors across the known world tremble at the thought of facing rows of lances powered by the thundering hooves of a full battle charge.</German>
-		<Italian>The %s1_civ_adjective people have trained the largest force of lancers. Advisors across the known world tremble at the thought of facing rows of lances powered by the thundering hooves of a full battle charge.</Italian>
-		<Spanish>The %s1_civ_adjective people have trained the largest force of lancers. Advisors across the known world tremble at the thought of facing rows of lances powered by the thundering hooves of a full battle charge.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NUCLEAR_PROTEST</Tag>
 		<English>News reports indicate massive %s1_civ_adjective protests over the country's nuclear weapons stockpile.</English>
 		<French>Derni&#232;re minute : manifestions %s1_civ_adjective contre l'arsenal nucl&#233;aire national !</French>
@@ -6425,14 +6337,6 @@
 		<German>Die Reformation hat die %s1:1 Zivilisation erreicht.</German>
 		<Italian>The Reformation has reached the %s1_civ_adjective civilization.</Italian>
 		<Spanish>The Reformation has reached the %s1_civ_adjective civilization.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_REINFORCED_HULL_1</Tag>
-		<English>Rumors abound that %s1_civ_adjective shipmasters are doing extensive refitting work on their war galley fleet.</English>
-		<French>Le bruit court que les capitaines %s1_civ_adjective am&#233;liorent et r&#233;&#233;quipent leur flotte de gal&#232;res de guerre.</French>
-		<German>Rumors abound that %s1_civ_adjective shipmasters are doing extensive refitting work on their war galley fleet.</German>
-		<Italian>Rumors abound that %s1_civ_adjective shipmasters are doing extensive refitting work on their war galley fleet.</Italian>
-		<Spanish>Rumors abound that %s1_civ_adjective shipmasters are doing extensive refitting work on their war galley fleet.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RIFLED_CANNON_1</Tag>
