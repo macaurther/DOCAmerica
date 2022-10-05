@@ -2072,11 +2072,6 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 
 		int iHurryAnger = GC.getDefineINT("HURRY_POP_ANGER") * iHurryAngerModifier;
 
-		if (pHeadSelectedCity->isHasBuildingEffect((BuildingTypes)BLUE_MOSQUE))
-		{
-			iHurryAnger = 1;
-		}
-
 		if (iHurryAngerLength > 0)
 		{
 			szBuffer.append(NEWLINE);
@@ -2155,11 +2150,6 @@ void CvDLLWidgetData::parseConscriptHelp(CvWidgetDataStruct &widgetDataStruct, C
 
 			iConscriptAngerLength = pHeadSelectedCity->flatConscriptAngerLength();
 			iConscriptAnger = GC.getDefineINT("CONSCRIPT_POP_ANGER");
-
-			if (pHeadSelectedCity->isHasBuildingEffect((BuildingTypes)BLUE_MOSQUE))
-			{
-				iConscriptAnger = 1;
-			}
 
 			if (iConscriptAngerLength > 0)
 			{
@@ -2610,11 +2600,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				GAMETEXT.parseSpecialistHelpActual(szBuffer, ((SpecialistTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData())), pMissionCity, true, 1);
 // BUG - Specialist Actual Effects - end
 
-				// House of Wisdom effect
-				if (GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)HOUSE_OF_WISDOM))
-				{
-					parseDiscoverHelp(pMissionPlot, szBuffer);
-				}
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_CONSTRUCT)
 			{

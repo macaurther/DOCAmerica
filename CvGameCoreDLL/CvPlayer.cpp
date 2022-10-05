@@ -1978,12 +1978,6 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		GC.getMapINLINE().verifyUnitValidPlot();
 	}
 
-	// Topkapi Palace effect: initial production in conquered cities
-	if (bConquest && isHasBuildingEffect((BuildingTypes)TOPKAPI_PALACE))
-	{
-		pNewCity->changeProduction(GC.getGameINLINE().getProductionPerPopulation((HurryTypes)0) * getCurrentEra() / 2);
-	}
-
 	pCityPlot->setRevealed(GET_PLAYER(eOldOwner).getTeam(), true, false, NO_TEAM, false);
 
 	pNewCity->updateEspionageVisibility(false);
@@ -6331,15 +6325,6 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 			return false;
 		}
 
-		// Leoreth
-		if (eBuilding == (BuildingTypes)TRAFALGAR_SQUARE)
-		{
-			if (getHighestNavalUnitLevel() < 3)
-			{
-				return false;
-			}
-		}
-
 		for (iI = 0; iI < numBuildingClassInfos; iI++)
 		{
 			if (getBuildingClassCount((BuildingClassTypes)iI) < getBuildingClassPrereqBuilding(eBuilding, ((BuildingClassTypes)iI), ((bContinue) ? 0 : getBuildingClassMaking(eBuildingClass))))
@@ -6352,9 +6337,7 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 	if (!isHuman())
 	{
 		// Leoreth: don't allow UHV wonders before the respective human civ has spawned and some turns after
-		if (isHumanVictoryWonder(eBuilding, NOTRE_DAME, FRANCE)) return false;
-		else if (isHumanVictoryWonder(eBuilding, EIFFEL_TOWER, FRANCE)) return false;
-		else if (isHumanVictoryWonder(eBuilding, STATUE_OF_LIBERTY, FRANCE)) return false;
+		if (isHumanVictoryWonder(eBuilding, STATUE_OF_LIBERTY, FRANCE)) return false;
 
 		else if (isHumanVictoryWonder(eBuilding, UNITED_NATIONS, AMERICA)) return false;
 		else if (isHumanVictoryWonder(eBuilding, PENTAGON, AMERICA)) return false;
@@ -6362,7 +6345,6 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 
 		else if (isHumanVictoryWonder(eBuilding, TEMPLE_OF_KUKULKAN, MAYA)) return false;
 
-		else if (isHumanVictoryWonder(eBuilding, WEMBLEY, BRAZIL)) return false;
 		else if (isHumanVictoryWonder(eBuilding, ITAIPU_DAM, BRAZIL)) return false;
 		else if (isHumanVictoryWonder(eBuilding, CRISTO_REDENTOR, BRAZIL)) return false;
 	}
@@ -6793,15 +6775,6 @@ int CvPlayer::getProductionModifier(BuildingTypes eBuilding) const
 	// Leoreth: civics
 	iMultiplier += getBuildingProductionModifier(eBuilding);
 
-	// Khajuraho effect
-	if (GET_PLAYER((PlayerTypes)getID()).isHasBuilding((BuildingTypes)SHWEDAGON_PAYA))
-	{
-	    if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() != NO_SPECIALBUILDING && GC.getBuildingInfo(eBuilding).getPrereqReligion() == getStateReligion())
-		{
-			iMultiplier += 100;
-		}
-	}
-
 	if (::isWorldWonderClass((BuildingClassTypes)(GC.getBuildingInfo(eBuilding).getBuildingClassType())))
 	{
 		iMultiplier += getMaxGlobalBuildingProductionModifier();
@@ -7020,105 +6993,10 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 	CvCity* pLoopCity;
 	int iLoop;
 
-	// Moai Statues
-	if (eBuilding == MOAI_STATUES)
-	{
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			if (GC.getImprovementInfo((ImprovementTypes)iI).isWater())
-			{
-				changeImprovementYieldChange((ImprovementTypes)iI, YIELD_PRODUCTION, 2 * iChange);
-			}
-		}
-	}
-
-	// Himeji Castle
-	if (eBuilding == HIMEJI_CASTLE)
-	{
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			pLoopCity->changeCommerceRateModifier(COMMERCE_CULTURE, pLoopCity->getBuildingDefense() * iChange);
-		}
-	}
-
-	// Hanging Gardens
-	if (eBuilding == HANGING_GARDENS)
-	{
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			pLoopCity->updateFeatureHealth();
-		}
-	}
-
-	// Prambanan
-	if (eBuilding == PRAMBANAN)
-	{
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			pLoopCity->changeMaxFoodKeptPercent(25 * iChange);
-		}
-	}
-
-	// Salsal Buddha
-	if (eBuilding == SALSAL_BUDDHA)
-	{
-		updatePlotGroups();
-	}
-
-	// University of Sankore
-	else if (eBuilding == UNIVERSITY_OF_SANKORE)
-	{
-		updateYield();
-	}
-
-	// Kremlin
-	else if (eBuilding == KREMLIN)
-	{
-		for (int i = 0; i < GC.getNumUnitClassInfos(); i++)
-		{
-			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)i).getDefaultUnitIndex();
-			if (GC.getUnitInfo(eUnit).getCombat() == 0 && GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_LAND)
-			{
-				setFreePromotion((UnitClassTypes)i, PROMOTION_MORALE, iChange > 0);
-			}
-		}
-
-		int iLoop;
-		for (CvUnit* pLoopUnit = firstUnit(&iLoop); NULL != pLoopUnit; pLoopUnit = nextUnit(&iLoop))
-		{
-			if (!pLoopUnit->canFight() && pLoopUnit->getDomainType() == DOMAIN_LAND)
-			{
-				pLoopUnit->setHasPromotion(PROMOTION_MORALE, iChange > 0);
-			}
-		}
-	}
-
-	// Sagrada Familia
-	else if (eBuilding == SAGRADA_FAMILIA)
-	{
-		changeProcessModifier(iChange * 25);
-	}
-
 	// World Trade Center
-	else if (eBuilding == WORLD_TRADE_CENTER)
+	if (eBuilding == WORLD_TRADE_CENTER)
 	{
 		changeCorporationCommerceModifier(iChange * 50);
-	}
-
-	// Old Synagogue
-	else if (eBuilding == OLD_SYNAGOGUE)
-	{
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			for (int iJ = 0; iJ < GC.getNumBuildingInfos(); iJ++)
-			{
-				CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes)iJ);
-				if (kBuilding.getReligionType() == JUDAISM)
-				{
-					pLoopCity->changeBuildingCommerceChange((BuildingClassTypes)kBuilding.getBuildingClassType(), COMMERCE_GOLD, 2 * iChange);
-				}
-			}
-		}
 	}
 
 	// Las Lajas Sanctuary
@@ -7135,31 +7013,6 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 	{
 		updateCommerce(COMMERCE_RESEARCH);
 		AI_makeAssignWorkDirty();
-	}
-
-	// Harmandir Sahib
-	else if (eBuilding == HARMANDIR_SAHIB)
-	{
-		changeStateReligionFreeExperience(2 * iChange);
-	}
-
-	// Notre Dame
-	else if (eBuilding == NOTRE_DAME)
-	{
-		changeStateReligionBuildingProductionModifier(25 * iChange);
-	}
-
-	// Gardens by the Bay
-	else if (eBuilding == GARDENS_BY_THE_BAY)
-	{
-		for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
-		{
-			CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes)iI);
-			if (kBuilding.getHealth() > 0)
-			{
-				changeExtraBuildingHappiness((BuildingTypes)iI, kBuilding.getHealth());
-			}
-		}
 	}
 }
 
@@ -8766,12 +8619,6 @@ int CvPlayer::unitsRequiredForGoldenAge() const
 {
 	int iNumUnitGoldenAges = getNumUnitGoldenAges();
 
-	// Leoreth: Eiffel Tower effect: golden age cost capped at 3 GPs
-	if (isHasBuildingEffect((BuildingTypes)EIFFEL_TOWER))
-	{
-		iNumUnitGoldenAges = std::min(iNumUnitGoldenAges, 1);
-	}
-
 	return (GC.getDefineINT("BASE_GOLDEN_AGE_UNITS") + (iNumUnitGoldenAges * GC.getDefineINT("GOLDEN_AGE_UNITS_MULTIPLIER")));
 }
 
@@ -9236,20 +9083,6 @@ void CvPlayer::changeGoldenAgeTurns(int iChange)
 
 		m_iGoldenAgeTurns = (m_iGoldenAgeTurns + iChange);
 		FAssert(getGoldenAgeTurns() >= 0);
-
-		// Leoreth: Amber Room effect
-		for (iI = 0; iI < MAX_PLAYERS; iI++)
-		{
-			if (iI != getID() && GET_PLAYER((PlayerTypes)iI).isHasBuildingEffect((BuildingTypes)AMBER_ROOM))
-			{
-				if (GET_TEAM(getTeam()).isDefensivePact(GET_PLAYER((PlayerTypes)iI).getTeam()))
-				{
-					GET_PLAYER((PlayerTypes)iI).changeGoldenAgeTurns(iChange);
-				}
-
-				break;
-			}
-		}
 
 		if (bOldGoldenAge != isGoldenAge())
 		{
@@ -9844,28 +9677,6 @@ void CvPlayer::changeNumNukeUnits(int iChange)
 {
 	m_iNumNukeUnits = (m_iNumNukeUnits + iChange);
 	FAssert(getNumNukeUnits() >= 0);
-
-	// Leoreth: Atomium effect
-	if (GC.getGame().getBuildingClassCreatedCount((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)ATOMIUM).getBuildingClassType()) > 0)
-	{
-		for (int iI = 0; iI < MAX_PLAYERS; iI++)
-		{
-			if (GET_PLAYER((PlayerTypes)iI).isHasBuildingEffect((BuildingTypes)ATOMIUM))
-			{
-				int iLoop;
-				for (CvCity* pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
-				{
-					if (pLoopCity->isHasRealBuilding((BuildingTypes)ATOMIUM))
-					{
-						pLoopCity->changeBuildingCommerceChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)ATOMIUM).getBuildingClassType(), COMMERCE_RESEARCH, iChange);
-						break;
-					}
-				}
-
-				break;
-			}
-		}
-	}
 }
 
 
@@ -10682,7 +10493,7 @@ int CvPlayer::getNoForeignTradeCount() const
 
 bool CvPlayer::isNoForeignTrade() const
 {
-	return (getNoForeignTradeCount() > 0 && !isHasBuildingEffect((BuildingTypes)PORCELAIN_TOWER));
+	return (getNoForeignTradeCount() > 0);
 }
 
 
@@ -13806,13 +13617,6 @@ int CvPlayer::getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const
 		iTotalUpkeep += getSingleCivicUpkeep(paeCivics[iI], bIgnoreAnarchy);
 	}
 
-	// Leoreth: Forbidden Palace effect
-	if (isHasBuildingEffect((BuildingTypes)FORBIDDEN_PALACE))
-	{
-		iTotalUpkeep *= 2;
-		iTotalUpkeep /= 3;
-	}
-
 	return iTotalUpkeep;
 }
 
@@ -15373,13 +15177,6 @@ int CvPlayer::getEspionageMissionBaseCost(EspionageMissionTypes eMission, Player
 			if (canStealTech(eTargetPlayer, eTech))
 			{
 				iMissionCost = iBaseMissionCost + ((100 + kMission.getBuyTechCostFactor()) * iProdCost) / 100;
-
-				// Leoreth: Hermitage effect
-				if (isHasBuildingEffect((BuildingTypes)HERMITAGE))
-				{
-					iMissionCost *= 3;
-					iMissionCost /= 4;
-				}
 			}
 		}
 	}

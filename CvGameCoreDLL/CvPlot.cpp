@@ -761,21 +761,6 @@ void CvPlot::doTurn()
 
 	verifyUnitValidPlot();
 
-	// Leoreth: Great Wall effect
-	if (isWithinGreatWall() && isOwned())
-	{
-		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL))
-		{
-			for (int iI = 0; iI < getNumUnits(); iI++)
-			{
-				if (getUnitByIndex(iI)->isBarbarian())
-				{
-					getUnitByIndex(iI)->changeDamage(10, getOwnerINLINE());
-				}
-			}
-		}
-	}
-
 	/*
 	if (!isOwned())
 	{
@@ -3283,15 +3268,6 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			iRegularCost += GC.getHILLS_EXTRA_MOVEMENT();
 		}
 
-		// Leoreth: Great Wall effect (+1 movement cost for enemies within the great wall)
-		if (isWithinGreatWall() && isOwned())
-		{
-			if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_WALL) && GET_TEAM((TeamTypes)getOwnerINLINE()).isAtWar((TeamTypes)pUnit->getOwner()))
-			{
-				iRegularCost += GC.getHILLS_EXTRA_MOVEMENT();
-			}
-		}
-
 		if (iRegularCost > 0)
 		{
 			iRegularCost = std::max(1, (iRegularCost - pUnit->getExtraMoveDiscount()));
@@ -4228,7 +4204,7 @@ bool CvPlot::isTradeNetwork(TeamTypes eTeam) const
 		return false;
 	}
 
-	if (atWar(eTeam, getTeam()) && !GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA) && (getOwner() == NO_PLAYER || !GET_PLAYER(getOwner()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA)))
+	if (atWar(eTeam, getTeam()) && (getOwner() == NO_PLAYER))
 	{
 		return false;
 	}
@@ -4259,7 +4235,7 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 {
 	FAssertMsg(eTeam != NO_TEAM, "eTeam is not assigned a valid value");
 
-	if ((atWar(eTeam, getTeam()) || atWar(eTeam, pPlot->getTeam())) && !GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA) && (getOwner() == NO_PLAYER || !GET_PLAYER(getOwner()).isHasBuildingEffect((BuildingTypes)SALSAL_BUDDHA)))
+	if ((atWar(eTeam, getTeam()) || atWar(eTeam, pPlot->getTeam())) && (getOwner() == NO_PLAYER))
 	{
 		return false;
 	}
@@ -7009,15 +6985,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 						iYield += 1;
 					}
 				}
-			}
-		}
-
-		// Leoreth: University of Sankore effect
-		if (GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)UNIVERSITY_OF_SANKORE))
-		{
-			if (getTerrainType() == TERRAIN_DESERT && eYield == YIELD_COMMERCE)
-			{
-				iYield += 1;
 			}
 		}
 

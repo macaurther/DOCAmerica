@@ -9459,7 +9459,6 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 			}
 			iExperience = kPlayer.getFreeExperience();
 			iExperience += kPlayer.getDomainFreeExperience((DomainTypes)kUnit.getDomainType()); // Leoreth: free experience per domain
-			if (kPlayer.isStateReligion() && kPlayer.isHasBuildingEffect((BuildingTypes)HARMANDIR_SAHIB) && pCity->isHasReligion(kPlayer.getStateReligion())) iExperience += 2; // Leoreth: Harmandir Sahib effect
 			if (iExperience != 0)
 			{
 				szBuffer.append(NEWLINE);
@@ -9519,12 +9518,6 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 						szBuffer.append(NEWLINE);
 						szBuffer.append(gDLL->getText("TXT_KEY_NO_STATE_RELIGION_FREE_EXPERIENCE", iExperience));
 					}
-				}
-
-				if (pCity->isHasBuildingEffect((BuildingTypes)HARMANDIR_SAHIB))
-				{
-					szBuffer.append(NEWLINE);
-					szBuffer.append(gDLL->getText(pCity->isHasReligion(kPlayer.getStateReligion()) ? "TXT_KEY_BUILDING_FREE_EXPERIENCE" : "TXT_KEY_NO_BUILDING_FREE_EXPERIENCE", 2, GC.getBuildingInfo((BuildingTypes)HARMANDIR_SAHIB).getText()));
 				}
 			}
 
@@ -13206,14 +13199,6 @@ void CvGameTextMgr::setHappyHelp(CvWStringBuffer &szBuffer, CvCity& city)
 			szBuffer.append(NEWLINE);
 		}
 
-		iHappy = city.isHasBuildingEffect((BuildingTypes)SHALIMAR_GARDENS) ? city.goodHealth() - city.badHealth() : 0;
-		if (iHappy > 0)
-		{
-			iTotalHappy += iHappy;
-			szBuffer.append(gDLL->getText("TXT_KEY_HAPPY_HEALTH", iHappy));
-			szBuffer.append(NEWLINE);
-		}
-
 		iHappy = (city.getExtraHappiness() + GET_PLAYER(city.getOwnerINLINE()).getExtraHappiness());
 		if (iHappy > 0)
 		{
@@ -16864,21 +16849,6 @@ void CvGameTextMgr::setFoodHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		bNeedSubtotal = true;
 	}
 
-	// Lotus Temple effect
-	int iNonStateReligionFood = 0;
-	if (GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LOTUS_TEMPLE))
-	{
-		iNonStateReligionFood += city.getReligionCount() - (GET_PLAYER(city.getOwnerINLINE()).getStateReligion() != NO_RELIGION && city.isHasReligion(GET_PLAYER(city.getOwnerINLINE()).getStateReligion()) ? 1 : 0);
-	}
-
-	if (iNonStateReligionFood != 0)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_FOOD_NON_STATE_RELIGIONS", iNonStateReligionFood, info.getChar()));
-		iBaseRate += iNonStateReligionFood;
-		bNeedSubtotal = true;
-	}
-
 	// Base and modifiers (only if there are modifiers since total is always shown)
 	if (city.getBaseYieldRateModifier(YIELD_FOOD) != 100)
 	{
@@ -17769,30 +17739,6 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 // BUG - Base Commerce - end
 	}
 
-	// Leoreth: Himeji Castle effect
-	int iUnitCulture = 0;
-	if (eCommerceType == COMMERCE_CULTURE && city.isHasRealBuilding((BuildingTypes)HIMEJI_CASTLE) && GET_PLAYER(city.getOwner()).isHasBuildingEffect((BuildingTypes)HIMEJI_CASTLE))
-	{
-		CvUnit* pUnit;
-		for (int i = 0; i < city.plot()->getNumUnits(); i++)
-		{
-			pUnit = city.plot()->getUnitByIndex(i);
-
-			if (pUnit->getOwner() == city.getOwner() && pUnit->isFortifyable() && pUnit->getFortifyTurns() >= GC.getDefineINT("MAX_FORTIFY_TURNS"))
-			{
-				iUnitCulture += pUnit->getLevel();
-			}
-		}
-	}
-
-	if (0 != iUnitCulture)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_HIMEJI_UNIT_CULTURE", iUnitCulture, info.getChar()));
-		iBaseCommerceRate += 100 * iUnitCulture;
-		bNeedSubtotal = true;
-	}
-
 // BUG - Base Commerce - start
 		if (bNeedSubtotal && city.getCommerceRateModifier(eCommerceType) != 0 && getBugOptionBOOL("MiscHover__BaseCommerce", true, "BUG_CITY_SCREEN_BASE_COMMERCE_HOVER"))
 		{
@@ -17816,12 +17762,6 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			for (int iLoop = 0; iLoop < city.getNumBuilding((BuildingTypes)i); iLoop++)
 			{
 				iBuildingMod += infoBuilding.getCommerceModifier(eCommerceType);
-			}
-
-			// Leoreth: Himeji Castle effect: defense modifier counts as culture modifier
-			if (eCommerceType == COMMERCE_CULTURE && GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)HIMEJI_CASTLE))
-			{
-				iBuildingMod += infoBuilding.getDefenseModifier();
 			}
 		}
 		for (int j = 0; j < MAX_PLAYERS; j++)
@@ -18017,15 +17957,6 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	CvPlayer& owner = GET_PLAYER(city.getOwnerINLINE());
 
 	int iBaseProduction = city.getBaseYieldRate(eYieldType);
-
-	if (eYieldType == YIELD_FOOD)
-	{
-		// Lotus Temple effect
-		if (GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LOTUS_TEMPLE))
-		{
-			iBaseProduction += city.getReligionCount() - (GET_PLAYER(city.getOwnerINLINE()).getStateReligion() != NO_RELIGION && city.isHasReligion(GET_PLAYER(city.getOwnerINLINE()).getStateReligion()) ? 1 : 0);
-		}
-	}
 
 	szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_YIELD", info.getTextKeyWide(), iBaseProduction, info.getChar()));
 	szBuffer.append(NEWLINE);
@@ -19775,7 +19706,7 @@ void CvGameTextMgr::setTradeRouteHelp(CvWStringBuffer &szBuffer, int iRoute, CvC
 
 			if (NULL != pOtherCity)
 			{
-				if (pCity->plot()->getContinentArea() != pOtherCity->plot()->getContinentArea() || GET_PLAYER(pCity->getOwner()).isHasBuilding((BuildingTypes)PORCELAIN_TOWER))
+				if (pCity->plot()->getContinentArea() != pOtherCity->plot()->getContinentArea())
 				{
 					iNewMod = GC.getDefineINT("OVERSEAS_TRADE_MODIFIER");
 					if (0 != iNewMod)
@@ -19786,7 +19717,7 @@ void CvGameTextMgr::setTradeRouteHelp(CvWStringBuffer &szBuffer, int iRoute, CvC
 					}
 				}
 
-				if ((pCity->getTeam() != pOtherCity->getTeam() && !GET_PLAYER(pCity->getOwner()).isNoForeignTradeModifier()) || GET_PLAYER(pCity->getOwner()).isHasBuilding((BuildingTypes)PORCELAIN_TOWER))
+				if ((pCity->getTeam() != pOtherCity->getTeam() && !GET_PLAYER(pCity->getOwner()).isNoForeignTradeModifier()))
 				{
 					iNewMod = pCity->getForeignTradeRouteModifier();
 					if (0 != iNewMod)
@@ -19802,21 +19733,6 @@ void CvGameTextMgr::setTradeRouteHelp(CvWStringBuffer &szBuffer, int iRoute, CvC
 						szBuffer.append(NEWLINE);
 						szBuffer.append(gDLL->getText("TXT_KEY_TRADE_ROUTE_MOD_PEACE", iNewMod));
 						iModifier += iNewMod;
-					}
-
-					// Leoreth: Channel Tunnel effect
-					if (GET_PLAYER(pCity->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)CHANNEL_TUNNEL))
-					{
-						if (GET_PLAYER(pOtherCity->getOwnerINLINE()).AI_getAttitude(pCity->getOwnerINLINE()) >= ATTITUDE_FRIENDLY)
-						{
-							iNewMod = 100;
-							if (0 != iNewMod)
-							{
-								szBuffer.append(NEWLINE);
-								szBuffer.append(gDLL->getText("TXT_KEY_TRADE_ROUTE_MOD_FRIENDLY_RELATION", iNewMod));
-								iModifier += iNewMod;
-							}
-						}
 					}
 				}
 

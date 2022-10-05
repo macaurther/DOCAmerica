@@ -369,7 +369,7 @@ bool CvCityAI::AI_avoidGrowth()
 		return true;
 	}
 
-	if (isFoodProduction() && !GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PYRAMIDS))
+	if (isFoodProduction())
 	{
 		return true;
 	}
@@ -3159,12 +3159,6 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
 				{
 					iBuildingHappiness += kBuilding.getImprovementHappinessPercent(iI) * aiWorkedImprovementCount[iI] / 100;
-				}
-
-				// Leoreth: Gardens by the Bay
-				if (eBuilding == GARDENS_BY_THE_BAY)
-				{
-					iBuildingHappiness += getBuildingGoodHealth();
 				}
 
 				if (iBuildingHappiness != 0)
@@ -10141,23 +10135,7 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 	int iWeight = kBuilding.getAIWeight();
 	int iPreference = kPlayer.getBuildingClassPreference((BuildingClassTypes)kBuilding.getBuildingClassType());
 
-	if (eBuilding == HANGING_GARDENS)
-	{
-		int iFloodPlainsCount = 0;
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			if (getCityIndexPlot(iI)->getFeatureType() == FEATURE_FLOOD_PLAINS)
-			{
-				iFloodPlainsCount += 1;
-			}
-		}
-
-		if (iFloodPlainsCount < 2)
-		{
-			return -MAX_INT;
-		}
-	}
-	else if (eBuilding == TEMPLE_OF_KUKULKAN)
+	if (eBuilding == TEMPLE_OF_KUKULKAN)
 	{
 		int iRainforestCount = 0;
 		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
@@ -10173,7 +10151,7 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 			return -MAX_INT;
 		}
 	}
-	else if (eBuilding == MACHU_PICCHU || eBuilding == MOLE_ANTONELLIANA)
+	else if (eBuilding == MACHU_PICCHU)
 	{
 		int iPeakCount = 0;
 		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
@@ -10189,87 +10167,9 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 			return -MAX_INT;
 		}
 	}
-	else if (eBuilding == UNIVERSITY_OF_SANKORE)
-	{
-		int iDesertCount = 0;
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			if (getCityIndexPlot(iI)->getTerrainType() == TERRAIN_DESERT)
-			{
-				iDesertCount += 1;
-			}
-		}
-
-		if (iDesertCount < 5)
-		{
-			return -MAX_INT;
-		}
-	}
-	else if (eBuilding == POTALA_PALACE)
-	{
-		int iHillCount = 0;
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			if (getCityIndexPlot(iI)->isHills())
-			{
-				iHillCount += 1;
-			}
-		}
-
-		if (iHillCount < 8)
-		{
-			return -MAX_INT;
-		}
-	}
-	else if (eBuilding == ITSUKUSHIMA_SHRINE)
-	{
-		int iWaterCount = 0;
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			if (getCityIndexPlot(iI)->isWater())
-			{
-				iWaterCount += 1;
-			}
-		}
-
-		if (iWaterCount < 8)
-		{
-			return -MAX_INT;
-		}
-	}
-	else if (eBuilding == IMAGE_OF_THE_WORLD_SQUARE || eBuilding == HERMITAGE || eBuilding == CHAPULTEPEC_CASTLE)
+	else if (eBuilding == CHAPULTEPEC_CASTLE)
 	{
 		if (getCultureLevel() < 3)
-		{
-			return -MAX_INT;
-		}
-	}
-	else if (eBuilding == SHALIMAR_GARDENS)
-	{
-		if (goodHealth() - badHealth() < 4)
-		{
-			return -MAX_INT;
-		}
-	}
-	else if (eBuilding == CHANNEL_TUNNEL)
-	{
-		int iFriendlyRelationCount = 0;
-		for (int iI = 0; iI < MAX_PLAYERS; iI++)
-		{
-			if (getOwnerINLINE() != iI && GET_PLAYER((PlayerTypes)iI).isAlive() && GET_PLAYER((PlayerTypes)iI).AI_getAttitude(getOwnerINLINE()) == ATTITUDE_FRIENDLY)
-			{
-				iFriendlyRelationCount += 1;
-			}
-		}
-
-		if (iFriendlyRelationCount < 1)
-		{
-			return -MAX_INT;
-		}
-	}
-	else if (eBuilding == HARBOUR_OPERA)
-	{
-		if (!GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE2) && !GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE3) && !GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE4))
 		{
 			return -MAX_INT;
 		}
