@@ -56,9 +56,6 @@ def onChangeWar(bWar, iPlayer, iOtherPlayer):
 ### Global Methods ###
 
 def getCongressInterval():
-	if game.getBuildingClassCreatedCount(infos.building(iPalaceOfNations).getBuildingClassType()) > 0:
-		return turns(4)
-		
 	return turns(15)
 
 def isCongressEnabled():
@@ -842,9 +839,6 @@ class Congress:
 				if civ(iClaimant) == iFrance: iFavorClaimant += 10
 				if civ(iOwner) == iFrance: iFavorOwner += 10
 			
-				# Palace of Nations
-				if player(iClaimant).isHasBuildingEffect(iPalaceOfNations): iFavorClaimant += 10
-			
 			# AI memory of human voting behavior
 			if player(iClaimant).isHuman() and iVoter in self.dVotingMemory: iFavorClaimant += 5 * self.dVotingMemory[iVoter]
 			if player(iOwner).isHuman() and iVoter in self.dVotingMemory: iFavorOwner += 5 * self.dVotingMemory[iVoter]
@@ -1080,10 +1074,6 @@ class Congress:
 			
 			# cannot demand cities while at war
 			if team(iPlayer).isAtWar(iLoopPlayer): 
-				continue
-			
-			# Palace of Nations effect
-			if player(iLoopPlayer).isHasBuildingEffect(iPalaceOfNations): 
 				continue
 			
 			for city in cities.owner(iLoopPlayer):

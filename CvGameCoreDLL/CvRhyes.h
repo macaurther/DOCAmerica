@@ -14,7 +14,7 @@ typedef list<char*> LISTCHAR;
 #define BEGIN_WONDERS				(170) // increment if normal building (not for wonders) is added
 #define BEGIN_GREAT_WONDERS			(BEGIN_WONDERS+13) // increment if a national wonder is added
 
-#define NUM_CIVS				(15)
+#define NUM_CIVS				(17)
 
 #define NUM_ERAS				(ERA_DIGITAL+1)
 

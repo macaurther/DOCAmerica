@@ -14,6 +14,8 @@ iPortugal :		(67, 27), # Sao Paulo
 iEngland :		(50, 77), # Jamestown
 iFrance :		(58, 89), # Quebec
 iNetherlands :	(56, 81), # New Amsterdam
+iHawaii :		(56, 81), # Hilo
+iRussia :		(56, 81), # Novo-Arkhangelsk
 iAmerica :		(51, 79), # Washington
 iArgentina :	(57, 16), # Buenos Aires
 iMexico :		(30, 60), # Mexico City
@@ -45,6 +47,8 @@ iPortugal : 	((67, 27), 	(67, 27)),
 iEngland : 		((50, 77), 	(50, 77)),
 iFrance : 		((58, 89), 	(58, 89)),
 iNetherlands :	((56, 81), 	(56, 81)),
+iHawaii :		((56, 81), 	(56, 81)),
+iRussia :		((56, 81), 	(56, 81)),
 iAmerica : 		((51, 79), 	(51, 79)),
 iArgentina : 	((57, 16), 	(57, 16)),
 iMexico :		((30, 60), 	(30, 60)),
@@ -74,6 +78,8 @@ iPortugal : 	((67, 27), 	(67, 27)),
 iEngland : 		((50, 77), 	(50, 77)),
 iFrance : 		((58, 89), 	(58, 89)),
 iNetherlands :	((56, 81), 	(56, 81)),
+iHawaii :		((56, 81), 	(56, 81)),
+iRussia :		((56, 81), 	(56, 81)),
 iAmerica : 		((51, 79), 	(51, 79)),
 iArgentina : 	((57, 16), 	(57, 16)),
 iMexico :		((30, 60), 	(30, 60)),
@@ -103,6 +109,8 @@ iPortugal : 	((67, 27), 	(67, 27)),
 iEngland : 		((50, 77), 	(50, 77)),
 iFrance : 		((58, 89), 	(58, 89)),
 iNetherlands :	((56, 81), 	(56, 81)),
+iHawaii :		((56, 81), 	(56, 81)),
+iRussia :		((56, 81), 	(56, 81)),
 iAmerica : 		((51, 79), 	(51, 79)),
 iArgentina : 	((57, 16), 	(57, 16)),
 iMexico :		((30, 60), 	(30, 60)),
@@ -132,6 +140,8 @@ iPortugal : 	((67, 27), 	(67, 27)),
 iEngland : 		((50, 77), 	(50, 77)),
 iFrance : 		((58, 89), 	(58, 89)),
 iNetherlands :	((56, 81), 	(56, 81)),
+iHawaii :		((56, 81), 	(56, 81)),
+iRussia :		((56, 81), 	(56, 81)),
 iAmerica : 		((51, 79), 	(51, 79)),
 iArgentina : 	((57, 16), 	(57, 16)),
 iMexico :		((30, 60), 	(30, 60)),

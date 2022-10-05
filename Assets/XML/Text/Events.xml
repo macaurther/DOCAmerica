@@ -234,54 +234,6 @@
 		<Spanish>&#191;Nuestra investigaci&#243;n no ha arrojado resultados dignos de menci&#243;n? Esto es muy raro.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BEST_DEFENSE_1</Tag>
-		<English>The Best Defense[PARAGRAPH:1]You are tasked by your armed forces to build enough [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] for them to ward off invasion effectively.</English>
-		<French>La Meilleure D&#233;fense[PARAGRAPH:1]Vos forces arm&#233;es vous chargent de construire suffisamment de [COLOR_BUILDING_TEXT]ch&#226;teaux[COLOR_REVERT] pour qu'ils puissent repousser efficacement les invasions.</French>
-		<German>Die beste Verteidigung[PARAGRAPH:1]Eure Armee hat Euch aufgetragen, genug [COLOR_BUILDING_TEXT]Schl&#246;sser[COLOR_REVERT] zu bauen, um eine Invasion wirkungsvoll abzuwehren.</German>
-		<Italian>Miglior difesa[PARAGRAPH:1]Hai ricevuto il compito, dalle tue forze armate, di costruire abbastanza [COLOR_BUILDING_TEXT]Castelli[COLOR_REVERT] da poter respingere efficacemente un'invasione.</Italian>
-		<Spanish>La mejor defensa[PARAGRAPH:1]Las fuerzas armadas han encargado la construcci&#243;n de [COLOR_BUILDING_TEXT]Castillos[COLOR_REVERT] suficientes para repeler una invasi&#243;n de forma eficaz.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BEST_DEFENSE_DONE_1</Tag>
-		<English>Use our advantage to help better train our forces.</English>
-		<French>Utiliser notre avantage pour mieux entra&#238;ner nos troupes.</French>
-		<German>Setzt unseren Vorteil ein, um unsere Truppen besser auszubilden.</German>
-		<Italian>Usa il nostro vantaggio per addestrare meglio le nostre forze.</Italian>
-		<Spanish>Que nuestra ventaja se utilice para entrenar mejor a nuestras fuerzas.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BEST_DEFENSE_DONE_2</Tag>
-		<English>Leverage our defensive advantage in to political capital.</English>
-		<French>Utiliser notre avantage d&#233;fensif pour notre capitale politique.</French>
-		<German>Setzt unseren defensiven Vorteil zu unserem politischen Nutzen ein.</German>
-		<Italian>Trasforma il nostro vantaggio difensivo in capitale politico.</Italian>
-		<Spanish>Rentabilicemos nuestra ventaja defensiva en forma de capital pol&#237;tico.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BEST_DEFENSE_DONE_3</Tag>
-		<English>Now that we are safe, focus on learning what others are planning.</English>
-		<French>Maintenant que nous sommes en s&#233;curit&#233;, concentrons-nous sur ce que manigancent les autres.</French>
-		<German>Nun, da wir in Sicherheit sind, konzentriert Euch darauf herauszufinden, was die anderen planen.</German>
-		<Italian>Ora che siamo al sicuro, cerca di scoprire cosa pianificano gli altri.</Italian>
-		<Spanish>Ahora que estamos a salvo, concentr&#233;monos en averiguar lo que otros est&#225;n planeando.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BEST_DEFENSE_DONE_HELP_2</Tag>
-		<English>[ICON_BULLET]Receive [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] attitude from all leaders</English>
-		<French>[ICON_BULLET]Recevez [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] attitude des autre dirigeants</French>
-		<German>[ICON_BULLET]Verbessert die Haltung aller Staatsoberh&#228;upter um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT].</German>
-		<Italian>[ICON_BULLET]Ricevi [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] atteggiamento da tutti i leader</Italian>
-		<Spanish>[ICON_BULLET]Recibir [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] de actitud de todos los l&#237;deres.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BEST_DEFENSE_HELP_1</Tag>
-		<English>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] in your cities.[PARAGRAPH:1]An additional reward option will be available if your civilization controls the Great Wall.[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Urban Planning[COLOR_REVERT] without having met the conditions.</English>
-		<French>[PARAGRAPH:1]Pour achever cette qu&#234;te, vous devez construire %d1 [COLOR_BUILDING_TEXT]ch&#226;teaux[COLOR_REVERT] dans vos villes.[PARAGRAPH:1]Une option de r&#233;compense suppl&#233;mentaire sera disponible si votre civilisation contr&#244;le la Grande Muraille.[PARAGRAPH:1]Vous &#233;chouerez si une civilisation rivale ach&#232;ve cette qu&#234;te avant vous ou si vous d&#233;couvrez l'[COLOR_TECH_TEXT]urbanisme[COLOR_REVERT] sans avoir rempli les conditions de victoire.</French>
-		<German>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] in your cities.[PARAGRAPH:1]An additional reward option will be available if your civilization controls the Great Wall.[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Urban Planning[COLOR_REVERT] without having met the conditions.</German>
-		<Italian>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] in your cities.[PARAGRAPH:1]An additional reward option will be available if your civilization controls the Great Wall.[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Urban Planning[COLOR_REVERT] without having met the conditions.</Italian>
-		<Spanish>[PARAGRAPH:1]To complete this quest, you must build %d1 [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] in your cities.[PARAGRAPH:1]An additional reward option will be available if your civilization controls the Great Wall.[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Urban Planning[COLOR_REVERT] without having met the conditions.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_BETTER_COAL</Tag>
 		<English>Our scientists have developed better ways of processing coal fuel. Our economy stands ready to benefit from this development.</English>
 		<French>Nos scientifiques ont trouv&#233; une meilleure fa&#231;on d'exploiter le charbon. Notre &#233;conomie va b&#233;neficier &#233;normement de cette d&#233;couverte.</French>
@@ -1033,14 +985,6 @@
 		<German>Wir sollten uns darum bem&#252;hen, einen Weg zu finden, seine Erfahrung an zuk&#252;nftige Generationen weiterzugeben.</German>
 		<Italian>Dovremmo finanziare il tentativo di trasformare le sue esperienze in un formato che possa essere trasmesso alle generazioni future.</Italian>
 		<Spanish>Deber&#237;amos financiar un plan para que su experiencia quede registrada en alg&#250;n formato que pueda ser transmitido a las futuras generaciones.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_FAIL_BEST_DEFENSE</Tag>
-		<English>You have failed the quest of The Best Defense</English>
-		<French>Vous avez &#233;chou&#233; dans la qu&#234;te de la Meilleure D&#233;fense.</French>
-		<German>Die Quest "Die beste Verteidigung" ist gescheitert.</German>
-		<Italian>Hai fallito nell'impresa della Miglior difesa.</Italian>
-		<Spanish>La misi&#243;n La mejor defensa ha fracasado.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_BLESSED_SEA</Tag>
@@ -3443,22 +3387,6 @@
 		<Spanish>Uno de nuestros nav&#237;os ha desaparecido en el mar un d&#237;a soleado sin ninguna tormenta a la vista. No solo se desconoce la causa de la desaparici&#243;n, sino que, adem&#225;s, no hay ni rastro de la tripulaci&#243;n ni de la carga. Tambi&#233;n han desaparecido sin dejar ni rastro en esa misma regi&#243;n varios peque&#241;os nav&#237;os y aeroplanos. Se han disparado los rumores relativos a este misterio. La prensa ha apodado a esta zona "el Tri&#225;ngulo de las Bermudas", debido a un islote que se encuentra cerca.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_BEST_DEFENSE</Tag>
-		<English>Our generals request government aid in expanding our fortifications.[PARAGRAPH:1]We will need to build enough [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] to satisfy their views on mounting a proper defense for our nation.</English>
-		<French>Nos g&#233;n&#233;raux demandent une aide gouvernementale pour &#233;tendre nos fortifications.[PARAGRAPH:1]Nous devrons construire suffisamment de [COLOR_BUILDING_TEXT]ch&#226;teaux[COLOR_REVERT] pour satisfaire leurs d&#233;sirs d'&#233;riger une d&#233;fense efficace pour notre nation.</French>
-		<German>Unsere Gener&#228;le verlangen die Hilfe der Regierung bei der Ausdehnung unserer Befestigungsanlagen.[PARAGRAPH:1]Wir m&#252;ssen genug [COLOR_BUILDING_TEXT]Schl&#246;sser[COLOR_REVERT] bauen, um unsere Nation ausreichend zu sch&#252;tzen.</German>
-		<Italian>I nostri generali richiedono l'aiuto del governo per espandere le fortificazioni.[PARAGRAPH:1]Abbiamo bisogno di costruire abbastanza [COLOR_BUILDING_TEXT]Castelli[COLOR_REVERT] per soddisfare la loro idea di un'adeguata difesa per la nostra nazione.</Italian>
-		<Spanish>Nuestros generales solicitan la ayuda del gobierno para ampliar nuestras fortificaciones.[PARAGRAPH:1]Necesitamos construir [COLOR_BUILDING_TEXT]Castillos[COLOR_REVERT] suficientes para satisfacer sus planes defensivos para nuestra naci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_BEST_DEFENSE_DONE_1</Tag>
-		<English>Congratulations! You have met the goals of your military planners and built enough [COLOR_BUILDING_TEXT]Castles[COLOR_REVERT] to serve as fortresses against invaders. Please choose a reward from among the benefits your defense is able to provide to you.</English>
-		<French>F&#233;licitations ! Vous avez atteint les objectifs de vos g&#233;n&#233;raux et construit suffisamment de [COLOR_BUILDING_TEXT]ch&#226;teaux[COLOR_REVERT] pour servir de forteresses contre les envahisseurs. Veuillez choisir une r&#233;compense parmi les avantages que votre d&#233;fense peut vous fournir.</French>
-		<German>Gl&#252;ckwunsch! Sie haben die Forderungen Ihrer Milit&#228;rstrategen erf&#252;llt und genug [COLOR_BUILDING_TEXT]Schl&#246;sser[COLOR_REVERT] gebaut, die es Invasoren schwer machen. W&#228;hlen Sie eine Belohnung aus den Vorteilen aus, die Ihre neue Verteidigung Ihnen bieten kann.</German>
-		<Italian>Congratulazioni! Hai raggiunto gli obiettivi dei tuoi militari, costruendo abbastanza [COLOR_BUILDING_TEXT]Castelli[COLOR_REVERT] come fortezze contro gli invasori. Scegli una ricompensa tra quelle messe a disposizione dalla difesa.</Italian>
-		<Spanish>&#161;Felicidades! Se han cumplido los objetivos de los planes militares y se han construido [COLOR_BUILDING_TEXT]Castillos[COLOR_REVERT] suficientes para actuar como fortalezas ante los invasores. Elegid una de las recompensas que vuestra capacidad defensiva puede ofreceros.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BLACK_PEARLS_1</Tag>
 		<English>Locals have figured out a way to obtain a higher yield of black pearls. They are guarding their secret with great care.</English>
 		<French>Certains marchands ont trouv&#233; le moyen d'obtenir une plus grande production de perles noires. Ils gardent farouchement leur secret.</French>
@@ -5377,14 +5305,6 @@
 		<German>%s1:3_civ_adjective Schiffe und Flugzeuge sind spurlos im Bermuda-Dreieck verschwunden!</German>
 		<Italian>Navi e aerei %s1:3_civ_adjective sono spariti senza lasciare traccia nel Triangolo delle Bermuda!</Italian>
 		<Spanish>&#161;En el Tri&#225;ngulo de las Bermudas han desaparecido barcos y aviones %s1:3_civ_adjective sin dejar ni rastro!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_BEST_DEFENSE_DONE</Tag>
-		<English>The sturdy %s1_civ_adjective people have completed The Best Defense quest!</English>
-		<French>Le robuste peuple %s1_civ_adjective a achev&#233; la qu&#234;te de La Meilleure D&#233;fense !</French>
-		<German>Das wehrhafte %s1:3_civ_adjective Volk hat die Quest "Die beste Verteidigung" erf&#252;llt!</German>
-		<Italian>Il vigoroso popolo %s1:1_civ_adjective ha completato l'impresa della Miglior difesa!</Italian>
-		<Spanish>&#161;El robusto pueblo %s1:1_civ_adjective ha completado la misi&#243;n La mejor defensa!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BETTER_COAL</Tag>

@@ -62,42 +62,6 @@ WONDER_ORIGINAL_BUILDERS = {
 	iFloatingGardens : (iAztecs, 1350),
 }
 
-
-class GreatWall(object):
-
-	def __init__(self, *args, **kwargs):
-		self.tGraphicsTL = kwargs.get("tGraphicsTL")
-		self.tGraphicsBR = kwargs.get("tGraphicsBR")
-		self.lGraphicsExceptions = kwargs.get("lGraphicsExceptions", [])
-		self.lBorderExceptions = kwargs.get("lBorderExceptions", [])
-		self.lClearCulture = kwargs.get("lClearCulture", [])
-		
-		self.lEffectAreas = kwargs.get("lEffectAreas", [])
-		
-	def apply(self):
-		city = getBuildingCity(iGreatWall, False)
-		if not city:
-			return
-			
-		iOwner = city.getOwner()
-		iOldArea = city.getArea()
-		iNewArea = plots.capital(iAmerica).getArea()
-		
-		greatWall = plots.rectangle(self.tGraphicsTL, self.tGraphicsBR)
-		
-		for plot in greatWall.expand(1).land().without(self.lBorderExceptions):
-			plot.setArea(iNewArea)
-			
-		for plot in plots.of(self.lClearCulture):
-			plot.setOwner(-1)
-		
-		for plot in greatWall.without(self.lGraphicsExceptions):
-			plot.setOwner(iOwner)
-		
-		for plot in plots.sum(plots.rectangle(*tCorners).without(self.lGraphicsExceptions).land() for tCorners in self.lEffectAreas):
-			plot.setWithinGreatWall(True)
-			
-
 class Scenario(object):
 
 	def __init__(self, *args, **kwargs):
@@ -123,8 +87,6 @@ class Scenario(object):
 		self.setupGoals = kwargs.get("setupGoals", lambda *args: None)
 		
 		self.createStartingUnits = kwargs.get("createStartingUnits", lambda: None)
-		
-		self.greatWall = kwargs.get("greatWall", GreatWall())
 	
 	def adjustTurns(self, bFinal=True):
 		iStartTurn = getGameTurnForYear(self.iStartYear, START_HISTORY, game.getCalendar(), game.getGameSpeedType())
@@ -206,7 +168,6 @@ class Scenario(object):
 		
 		self.createStartingUnits()
 		
-		self.greatWall.apply()
 		self.adjustTerritories()
 		
 		self.adjustReligions()
