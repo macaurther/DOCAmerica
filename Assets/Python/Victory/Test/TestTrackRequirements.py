@@ -752,7 +752,7 @@ class TestEnslaveCountExcluding(ExtendedTestCase):
 class TestEraFirstDiscover(ExtendedTestCase):
 
 	def setUp(self):
-		self.requirement = EraFirstDiscover(iClassical, 2)
+		self.requirement = EraFirstDiscover(iExploration, 2)
 		self.goal = TestGoal()
 		
 		self.requirement.register_handlers(self.goal)
@@ -842,7 +842,7 @@ class TestEraFirstDiscover(ExtendedTestCase):
 			team(0).setHasTech(iFeudalism, False, 0, True, False)
 	
 	def test_not_enough_remaining(self):
-		requirement = EraFirstDiscover(iClassical, 20)
+		requirement = EraFirstDiscover(iExploration, 20)
 		requirement.register_handlers(self.goal)
 		
 		team(1).setHasTech(iLaw, True, 1, True, False)
@@ -860,7 +860,7 @@ class TestEraFirstDiscover(ExtendedTestCase):
 				team(1).setHasTech(iTech, False, 1, True, False)
 	
 	def test_not_enough_remaining_with_discovered(self):
-		requirement = EraFirstDiscover(iClassical, 20)
+		requirement = EraFirstDiscover(iExploration, 20)
 		requirement.register_handlers(self.goal)
 		
 		team(0).setHasTech(iLaw, True, 0, True, False)

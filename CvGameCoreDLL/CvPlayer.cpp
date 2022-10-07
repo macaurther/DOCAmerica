@@ -6612,7 +6612,7 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	{
 		iEraModifier += 5 * getCurrentEra();
 
-		if (getCurrentEra() > ERA_RENAISSANCE) iEraModifier += 5 * getCurrentEra();
+		if (getCurrentEra() > ERA_REVOLUTIONARY) iEraModifier += 5 * getCurrentEra();
 	}
 	else
 	{
@@ -24065,47 +24065,18 @@ EraTypes CvPlayer::getSoundtrackEra()
 	ReligionTypes eStateReligion = getStateReligion();
 	EraTypes eCurrentEra = getCurrentEra();
 
-	if (eStateReligion == CONFUCIANISM || eStateReligion == TAOISM)
+	if (eStateReligion == NO_RELIGION)
 	{
-		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
-		{
-			return (EraTypes)ERA_EAST_ASIA;
-		}
-	}
-	else if (eStateReligion == BUDDHISM || eStateReligion == HINDUISM)
-	{
-		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
-		{
-			switch (getCivilizationType())
-			{
-			default:
-				return (EraTypes)ERA_SOUTH_ASIA;
-			}
-		}
-	}
-	else if (eStateReligion == ISLAM || eStateReligion == ZOROASTRIANISM)
-	{
-		if (eCurrentEra == ERA_MEDIEVAL || eCurrentEra == ERA_RENAISSANCE)
-		{
-			return (EraTypes)ERA_MIDDLE_EAST;
-		}
-	}
-	else if (eStateReligion == NO_RELIGION)
-	{
-		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_MEDIEVAL)
+		if (eCurrentEra == ERA_PRECOLUMBIAN || eCurrentEra == ERA_EXPLORATION || eCurrentEra == ERA_COLONIAL)
 		{
 			switch (getCivilizationType())
 			{
 			case MAYA:
 			case INCA:
 			case AZTECS:
+			case HAWAII:
 				return (EraTypes)ERA_NATIVE_AMERICA;
 			}
-		}
-
-		if (eCurrentEra == ERA_MEDIEVAL)
-		{
-			return (EraTypes)ERA_CLASSICAL;
 		}
 	}
 
@@ -24582,7 +24553,7 @@ void CvPlayer::setStartingEra(EraTypes eNewValue)
 {
 	m_eStartingEra = eNewValue;
 
-	if (eNewValue > ERA_ANCIENT && GC.getGameINLINE().isFinalInitialized() && !(gDLL->GetWorldBuilderMode()))
+	if (eNewValue > ERA_PRECOLUMBIAN && GC.getGameINLINE().isFinalInitialized() && !(gDLL->GetWorldBuilderMode()))
 	{
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_PYTHON_SCREEN);
 		if (NULL != pInfo)
@@ -25343,7 +25314,7 @@ int CvPlayer::getLandHistory(int iTurn) const
 
 bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 {
-	if (getCurrentEra() >= ERA_GLOBAL)
+	if (getCurrentEra() >= ERA_ATOMIC)
 	{
 		if (eCivic == CIVIC_ISOLATIONISM)
 		{
@@ -25359,7 +25330,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 		}
 	}
 
-	if (getCurrentEra() >= ERA_RENAISSANCE)
+	if (getCurrentEra() >= ERA_REVOLUTIONARY)
 	{
 		if (eCivic == CIVIC_DEIFICATION)
 		{

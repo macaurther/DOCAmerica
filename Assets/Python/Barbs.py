@@ -9,8 +9,8 @@ from Locations import *
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-(-250, (19, 35), iNative, 'Danibaan', 2, iHolkan, 1),	# Monte Albán
-(100, (18, 37), iBarbarian, 'Tolan', 2, iJaguar, 2),		# Teotihuacan
+(250, (32, 58), iNative, 'Danibaan', 2, iHolkan, 1),		# Monte Albán
+(250, (30, 60), iBarbarian, 'Tolan', 2, iJaguar, 2),		# Teotihuacan
 )
 
 # do some research on dates here
@@ -36,66 +36,55 @@ def helpMinorStates():
 def spawnBarbarians(iGameTurn):
 	iHandicap = infos.handicap().getBarbarianSpawnModifier()
 
-	if year().between(250, -850):
+	if year().between(250, 1000):
 		if iHandicap >= 0:
-			checkSpawn(iBarbarian, iWarrior, 1, (76, 46), (99, 53), spawnMinors, iGameTurn, 5, 0)
+			checkSpawn(iBarbarian, iWarrior, 1, (30, 44), (46, 57), spawnMinors, iGameTurn, 5, 0)
 		
-		checkSpawn(iBarbarian, iWolf, 1, (75, 54), (104, 64), spawnNatives, iGameTurn, 5, 2)
-		checkSpawn(iBarbarian, iBear, 1, (75, 54), (104, 64), spawnNatives, iGameTurn, 5, 4)
-		checkLimitedSpawn(iBarbarian, iLion, 1, 5, (60, 10), (72, 28), spawnNatives, iGameTurn, 5, 1)
-		checkLimitedSpawn(iBarbarian, iPanther, 1, 5, (60, 10), (72, 28), spawnNatives, iGameTurn, 5, 3)
+		checkSpawn(iBarbarian, iWolf, 1, (39, 74), (59, 92), spawnNatives, iGameTurn, 5, 2)
+		checkSpawn(iBarbarian, iBear, 1, (13, 77), (20, 98), spawnNatives, iGameTurn, 5, 4)
+		checkLimitedSpawn(iBarbarian, iPanther, 1, 5, (30, 44), (46, 57), spawnNatives, iGameTurn, 5, 3)
 	
 	# Holkans in classical Mesoamerica
-	if year().between(-200, 100):
-		checkSpawn(iBarbarian, iHolkan, 1, (17, 31), (25, 37), spawnUprising, iGameTurn, 7, 5)
-	if year().between(100, 600):
-		checkSpawn(iBarbarian, iHolkan, 1, (17, 31), (25, 37), spawnUprising, iGameTurn, 6, 4)	
-	elif year().between(600, 1000):
-		checkSpawn(iBarbarian, iHolkan, 1, (17, 31), (25, 37), spawnUprising, iGameTurn, 4, 2)
-		
-	#pirates in Mediterranean
-	if year().between(-210, 50):
-		checkSpawn(iBarbarian, iWarGalley, 1, (49, 37), (72, 44), spawnPirates, iGameTurn, 8, 0)
+	if year().between(400, 800):
+		checkSpawn(iBarbarian, iHolkan, 1, (32, 57), (40, 62), spawnUprising, iGameTurn, 6, 4)	
+	elif year().between(800, 1000):
+		checkSpawn(iBarbarian, iHolkan, 1, (32, 57), (40, 62), spawnUprising, iGameTurn, 4, 2)
 
 	#American natives
 	if year().between(600, 1100):
-		checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (15, 38), (24, 47), spawnNatives, iGameTurn, 20, 0)
+		checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (26, 72), (35, 83), spawnNatives, iGameTurn, 20, 0)
 		if scenario() == i250AD:  #late start condition
-			checkSpawn(iNative, iJaguar, 3, (15, 38), (24, 47), spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
+			checkSpawn(iNative, iJaguar, 3, (26, 60), (31, 68), spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
 		else:  #late start condition
-			checkSpawn(iNative, iJaguar, 2, (15, 38), (24, 47), spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
+			checkSpawn(iNative, iJaguar, 2, (26, 60), (31, 68), spawnNatives, iGameTurn, 16 - 2*iHandicap, 10)
 	if year().between(1300, 1600):
-		checkSpawn(iNative, iDogSoldier, 2 + iHandicap, (15, 38), (24, 47), spawnNatives, iGameTurn, 8, 0)
+		checkSpawn(iNative, iDogSoldier, 2 + iHandicap, (26, 72), (35, 83), spawnNatives, iGameTurn, 8, 0)
 	if year().between(1400, 1800):
-		checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (11, 44), (33, 51), spawnUprising, iGameTurn, 12, 0)
-		checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (11, 44), (33, 51), spawnUprising, iGameTurn, 12, 6)
+		checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (26, 72), (35, 83), spawnUprising, iGameTurn, 12, 0)
+		checkSpawn(iNative, iDogSoldier, 1 + iHandicap, (26, 72), (35, 83), spawnUprising, iGameTurn, 12, 6)
 	if year().between(1300, 1600):
 		if iGameTurn % 18 == 0:
-			if not plot_(27, 29).isUnit():
-				makeUnits(iNative, iDogSoldier, (27, 29), 2 + iHandicap, UnitAITypes.UNITAI_ATTACK)
+			if not plot_(30, 72).isUnit():
+				makeUnits(iNative, iDogSoldier, (30, 72), 2 + iHandicap, UnitAITypes.UNITAI_ATTACK)
 		elif iGameTurn % 18 == 9:
-			if not plot_(30, 13).isUnit():
-				makeUnits(iNative, iDogSoldier, (30, 13), 2 + iHandicap, UnitAITypes.UNITAI_ATTACK)
+			if not plot_(31, 71).isUnit():
+				makeUnits(iNative, iDogSoldier, (31, 71), 2 + iHandicap, UnitAITypes.UNITAI_ATTACK)
 	
 	if includesActiveHuman(iAmerica, iEngland, iFrance):
 		if year().between(1700, 1900):
-			checkSpawn(iNative, iMountedBrave, 1 + iHandicap, (15, 44), (24, 52), spawnNomads, iGameTurn, 12 - iHandicap, 2)
+			checkSpawn(iNative, iMountedBrave, 1 + iHandicap, (25, 82), (32, 92), spawnNomads, iGameTurn, 12 - iHandicap, 2)
 		
 		if year().between(1500, 1850):
-			checkSpawn(iNative, iMohawk, 1, (24, 46), (30, 51), spawnUprising, iGameTurn, 8, 4)
-			
-	if iGameTurn == year(-500):
-		plot_(19, 35).setImprovementType(iHut)
-		makeUnits(iNative, iHolkan, (19, 35), 2, UnitAITypes.UNITAI_ATTACK)
+			checkSpawn(iNative, iMohawk, 1, (44, 79), (51, 88), spawnUprising, iGameTurn, 8, 4)
 		
 	#pirates in the Caribbean
 	if year().between(1600, 1800):
-		checkSpawn(iNative, iPrivateer, 1, (24, 32), (35, 46), spawnPirates, iGameTurn, 5, 0)
+		checkSpawn(iNative, iPrivateer, 1, (41, 57), (58, 66), spawnPirates, iGameTurn, 5, 0)
 
 	if iGameTurn == year(dBirth[iInca]):
 		if player(iInca).isHuman():
-			makeUnit(iNative, iAucac, (24, 26))
-			makeUnit(iNative, iAucac, (25, 23))
+			makeUnit(iNative, iAucac, (44, 40))
+			makeUnit(iNative, iAucac, (51, 29))
 				
 def foundMinorCities(iGameTurn):
 	for i, (iYear, tPlot, iCiv, sName, iPopulation, iUnitType, iNumUnits) in enumerate(tMinorCities):

@@ -5435,11 +5435,11 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 	}
 
 	//Rhye - start (modified by Leoreth)
-	if (getCurrentEra() == ERA_MEDIEVAL)
+	if (getCurrentEra() == ERA_COLONIAL)
 	{
 		iAttitude *= 3;
 	}
-	else if (getCurrentEra() == ERA_RENAISSANCE)
+	else if (getCurrentEra() == ERA_REVOLUTIONARY)
 	{
 		iAttitude *= 2;
 	}
@@ -7915,13 +7915,13 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 				//Rhye - start
 				int maxDistance = 15;
 				switch (GC.getGameINLINE().getCurrentEra()) {
-					case ERA_ANCIENT:
+					case ERA_PRECOLUMBIAN:
 						maxDistance = 15;
 						break;
-					case ERA_CLASSICAL:
+					case ERA_EXPLORATION:
 						maxDistance = 30;
 						break;
-					case ERA_MEDIEVAL:
+					case ERA_COLONIAL:
 						maxDistance = 45;
 						break;
 					default:
@@ -10841,14 +10841,14 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	}
 	else if (eCivic == CIVIC_DEIFICATION)
 	{
-		if (getCurrentEra() >= ERA_RENAISSANCE)
+		if (getCurrentEra() >= ERA_REVOLUTIONARY)
 		{
 			iValue /= 2;
 		}
 	}
 	else if (eCivic == CIVIC_REDISTRIBUTION)
 	{
-		if (getCurrentEra() >= ERA_MEDIEVAL)
+		if (getCurrentEra() >= ERA_EXPLORATION)
 		{
 			iValue /= 2;
 		}
@@ -10872,7 +10872,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		break;
 	case CIVIC_TOLERANCE:
 	case CIVIC_SECULARISM:
-		if (getCurrentEra() >= ERA_GLOBAL)
+		if (getCurrentEra() >= ERA_ATOMIC)
 		{
 			iValue *= 6;
 			iValue /= 5;
@@ -10898,7 +10898,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		switch (getLastStateReligion())
 		{
 		case NO_RELIGION:
-			if (getCurrentEra() <= ERA_CLASSICAL)
+			if (getCurrentEra() <= ERA_COLONIAL)
 			{
 				iValue *= 2;
 			}

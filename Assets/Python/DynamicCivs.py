@@ -570,7 +570,7 @@ def specificAdjective(iPlayer):
 			return "TXT_KEY_CIV_SPAIN_CASTILIAN"
 			
 	elif iCiv == iFrance:
-		if iEra == iMedieval:
+		if iEra == iColonial:
 			return "TXT_KEY_CIV_FRANCE_FRANKISH"
 	
 	elif iCiv == iEngland:
@@ -662,7 +662,7 @@ def republicTitle(iPlayer):
 		if isEmpire(iPlayer) and iEra == iIndustrial:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if iEra >= iGlobal:
+		if iEra >= iAtomic:
 			return "TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC"
 	
 	if iCiv == iAmerica:
@@ -721,10 +721,10 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iReligion == iIslam:
 			return "TXT_KEY_SULTANATE_OF"
 			
-		if bEmpire and iEra > iMedieval:
+		if bEmpire and iEra > iColonial:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if iEra == iMedieval and isCurrentCapital(iPlayer, "Barcelona", "Valencia"):
+		if iEra == iColonial and isCurrentCapital(iPlayer, "Barcelona", "Valencia"):
 			return "TXT_KEY_CIV_SPAIN_CROWN_OF"
 			
 	elif iCiv == iFrance:
@@ -741,7 +741,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if capital not in cities.core(iEngland):
 			return "TXT_KEY_CIV_ENGLAND_EXILE"
 			
-		if iEra == iMedieval and player(iFrance).isAlive() and team(iFrance).isAVassal() and civ(master(iFrance)) == iEngland:
+		if iEra == iColonial and player(iFrance).isAlive() and team(iFrance).isAVassal() and civ(master(iFrance)) == iEngland:
 			return "TXT_KEY_CIV_ENGLAND_ANGEVIN_EMPIRE"
 			
 		if getColumn(iPlayer) >= 11:
@@ -771,7 +771,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if not capital in plots.rectangle(tIberia):
 			return "TXT_KEY_CIV_PORTUGAL_EXILE"
 			
-		if bEmpire and iEra >= iRenaissance:
+		if bEmpire and iEra >= iRevolutionary:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iInca:
@@ -848,20 +848,20 @@ def leader(iPlayer):
 		if any(data.dFirstContactConquerors.values()): return iPhilip
 		
 	elif iCiv == iFrance:
-		if iEra >= iGlobal: return iDeGaulle
+		if iEra >= iAtomic: return iDeGaulle
 		
 		if iEra >= iIndustrial: return iNapoleon
 		
-		if iEra >= iRenaissance: return iLouis
+		if iEra >= iRevolutionary: return iLouis
 		
 	elif iCiv == iEngland:
-		if iEra >= iGlobal: return iChurchill
+		if iEra >= iAtomic: return iChurchill
 		
 		if iEra >= iIndustrial: return iVictoria
 		
 		if scenario() == i1770AD: return iVictoria
 		
-		if iEra >= iRenaissance: return iElizabeth
+		if iEra >= iRevolutionary: return iElizabeth
 		
 	elif iCiv == iNetherlands:
 		if year() >= year(1650): return iWilliam
@@ -881,21 +881,21 @@ def leader(iPlayer):
 		
 		if isFascist(iPlayer): return iSantaAnna
 		
-		if iEra >= iGlobal: return iCardenas
+		if iEra >= iAtomic: return iCardenas
 			
 	elif iCiv == iAmerica:
-		if iEra >= iGlobal: return iRoosevelt
+		if iEra >= iAtomic: return iRoosevelt
 		
 		if year() >= year(1850): return iLincoln
 		
 	elif iCiv == iArgentina:
-		if iEra >= iGlobal: return iPeron
+		if iEra >= iAtomic: return iPeron
 	
 	elif iCiv == iBrazil:
-		if iEra >= iGlobal: return iVargas
+		if iEra >= iAtomic: return iVargas
 		
 	elif iCiv == iCanada:
-		if iEra >= iGlobal: return iTrudeau
+		if iEra >= iAtomic: return iTrudeau
 		
 	return startingLeader(iPlayer)
 		

@@ -667,7 +667,7 @@ class Birth(object):
 		if self.player.isHuman():
 			iTurns = 10
 		
-		if game.getCurrentEra() >= iRenaissance:
+		if game.getCurrentEra() >= iRevolutionary:
 			iTurns = 10
 		
 		return turns(iTurns)

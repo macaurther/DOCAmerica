@@ -21,7 +21,7 @@ def checkUnitArt(eventType, key):
 		for iPlayer in players.all().barbarian():
 			pPlayer = player(iPlayer)
 			
-			lEras = [iAncient, iMedieval, iIndustrial]
+			lEras = [iPreColumbian, iColonial, iIndustrial]
 			for iEra in lEras:
 				pPlayer.setCurrentEra(iEra)
 				for iUnit in range(iNumUnits):

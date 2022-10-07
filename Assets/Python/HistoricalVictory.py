@@ -97,7 +97,7 @@ dGoals = {
 			SunkShips(50),
 			by=1800,
 		),
-		EraFirstDiscover((iRenaissance, 8), (iIndustrial, 8)),
+		EraFirstDiscover((iRevolutionary, 8), (iIndustrial, 8)),
 	),
 	iPortugal: (
 		OpenBorderCount(14, by=1550),

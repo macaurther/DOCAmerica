@@ -49,7 +49,7 @@ def init(iPlayer, iCivilization):
 
 @handler("BeginGameTurn")
 def updateLateModifiers(iGameTurn):			
-	if scenario() == i250 and iGameTurn == year(600):
+	if scenario() == i250AD and iGameTurn == year(600):
 		for iPlayer in players.major().where(lambda p: dBirth[p] < dBirth[iSpain]):
 			adjustInflationModifier(iPlayer)
 		

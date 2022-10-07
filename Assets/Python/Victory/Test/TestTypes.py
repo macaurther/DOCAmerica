@@ -362,15 +362,15 @@ class TestEra(ExtendedTestCase):
 		self.assertPickleable(ERA)
 	
 	def test_validate(self):
-		self.assertEqual(ERA.validate(iRenaissance), True)
-		self.assertEqual(ERA.validate("Renaissance"), False)
+		self.assertEqual(ERA.validate(iRevolutionary), True)
+		self.assertEqual(ERA.validate("Revolutionary"), False)
 	
 	def test_format(self):
-		self.assertEqual(ERA.format(iRenaissance), "Renaissance")
-		self.assertEqual(ERA.format_repr(iRenaissance), "Renaissance")
+		self.assertEqual(ERA.format(iRevolutionary), "Revolutionary")
+		self.assertEqual(ERA.format_repr(iRevolutionary), "Revolutionary")
 	
 	def test_area(self):
-		self.assertEqual(ERA.area(iRenaissance), None)
+		self.assertEqual(ERA.area(iRevolutionary), None)
 
 
 class TestFeature(ExtendedTestCase):

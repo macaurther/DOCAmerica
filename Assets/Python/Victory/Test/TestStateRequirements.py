@@ -305,7 +305,7 @@ class TestDiscover(ExtendedTestCase):
 class TestEnterEraBefore(ExtendedTestCase):
 
 	def setUp(self):
-		self.requirement = EnterEraBefore(iClassical, iMedieval)
+		self.requirement = EnterEraBefore(iExploration, iColonial)
 		self.goal = TestGoal()
 		
 		self.requirement.register_handlers(self.goal)

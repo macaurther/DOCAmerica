@@ -407,7 +407,7 @@ def calculateAdministration(city):
 	bSingleCoreCity = cities.core(iPlayer).owner(iPlayer).count() == 1
 
 	iAdministration = iAdministrationModifier * iPopulation / 100
-	if bSingleCoreCity and iCurrentEra > iAncient: 
+	if bSingleCoreCity and iCurrentEra > iPreColumbian: 
 		iAdministration *= 2
 	
 	return iAdministration
@@ -641,19 +641,19 @@ def calculateStability(iPlayer):
 	# Civics (eras and techs and religions)
 	# note: make sure to reflect this in CvPlayerAI::isUnstableCivic
 	if iVassalage in civics:
-		if iCurrentEra == iMedieval: iCivicEraTechStability += 2
+		if iCurrentEra == iColonial: iCivicEraTechStability += 2
 		elif iCurrentEra >= iIndustrial: iCivicEraTechStability -= 5
 		
 	if iDeification in civics:
-		if iCurrentEra <= iClassical: iCivicEraTechStability += 2
-		else: iCivicEraTechStability -= 2 * (iCurrentEra - iClassical)
+		if iCurrentEra <= iExploration: iCivicEraTechStability += 2
+		else: iCivicEraTechStability -= 2 * (iCurrentEra - iExploration)
 		
 	if iRepublic in civics:
-		if iCurrentEra <= iClassical: iCivicEraTechStability += 2
+		if iCurrentEra <= iExploration: iCivicEraTechStability += 2
 		elif iCurrentEra >= iIndustrial: iCivicEraTechStability -= 5
 		
 	if iIsolationism in civics:
-		if iCurrentEra >= iIndustrial: iCivicEraTechStability -= (iCurrentEra - iRenaissance) * 3
+		if iCurrentEra >= iIndustrial: iCivicEraTechStability -= (iCurrentEra - iRevolutionary) * 3
 		
 	if tPlayer.isHasTech(iRepresentation):
 		if (iRepublic, iDemocracy) not in civics and (iRevolutionism, iConstitution) not in civics: iCivicEraTechStability -= 5
@@ -932,7 +932,7 @@ def getCivicStability(iPlayer, civics=None):
 	if iDeification in civics:
 		if (iRepublic, iDemocracy) in civics: iStability -= 3
 		
-		if iCurrentEra <= iClassical:
+		if iCurrentEra <= iExploration:
 			if iRedistribution in civics: iStability += 2
 			if iSlavery in civics: iStability += 2
 		
@@ -941,7 +941,7 @@ def getCivicStability(iPlayer, civics=None):
 		if (iFreeEnterprise, iCentralPlanning, iPublicWelfare) in civics: iStability -= 3
 		if iTributaries in civics: iStability += 5
 		
-		if iCurrentEra == iMedieval:
+		if iCurrentEra == iColonial:
 			if iMonarchy in civics: iStability += 2
 			if iManorialism in civics: iStability += 3
 			
@@ -955,7 +955,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iRegulatedTrade in civics: iStability += 3
 		if iClergy in civics: iStability += 2
 		
-		if iCurrentEra == iRenaissance:
+		if iCurrentEra == iRevolutionary:
 			if iMonarchy in civics: iStability += 2
 			
 	if iDespotism in civics:

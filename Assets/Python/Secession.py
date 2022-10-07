@@ -83,9 +83,6 @@ def canBeRazed(city):
 	if city.isCapital():
 		return False
 	
-	if city.at(*tJerusalem):
-		return False
-	
 	closest = closestCity(city, city.getOwner(), same_continent=True)
 	if closest and distance(city, closest) <= 2:
 		if city.getCultureLevel() <= closest.getCultureLevel() and city.getPopulation() < closest.getPopulation():
@@ -168,7 +165,7 @@ def getPossibleMinors(iPlayer):
 	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and civ(iPlayer) in [iMaya, iAztecs, iInca]:
 		lPossibleMinors = [iNative]
 		
-	if gc.getGame().getCurrentEra() <= iMedieval:
+	if gc.getGame().getCurrentEra() <= iColonial:
 		lPossibleMinors = [iBarbarian, iIndependent, iIndependent2]
 		
 	return players.civs(*lPossibleMinors)

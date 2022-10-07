@@ -47,9 +47,6 @@ def checkJudaism(iGameTurn):
 	if game.isReligionFounded(iJudaism):
 		return
 
-	if iGameTurn == year(-1500) - turns(data.iSeed % 5):
-		foundReligion(selectHolyCity(plots.rectangle(tJudaism), tJerusalem), iJudaism)
-
 
 @handler("BeginGameTurn")
 def checkChristianity(iGameTurn):
@@ -104,7 +101,7 @@ def checkSchism(iGameTurn):
 
 @handler("BeginGameTurn")
 def spreadJudaism():
-	spreadReligionToRegion(iJudaism, [rCentralCanada, rNewEngland, rMidAtlantic], 1850, 10)
+	spreadReligionToRegion(iJudaism, [rOntario, rNewEngland, rMidAtlantic], 1850, 10)
 
 @handler("techAcquired")
 def checkReformation(iTech, iTeam, iPlayer):

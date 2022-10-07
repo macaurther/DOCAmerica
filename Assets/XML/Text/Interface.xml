@@ -683,28 +683,20 @@
 		<Spanish>Edad de Hierro</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_AGE_MEDIEVAL</Tag>
-		<English>Medieval Age</English>
-		<French>
-			<Text>Moyen &#194;ge</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mittelalter</German>
-		<Italian>Et&#224; medievale</Italian>
-		<Spanish>Edad Media</Spanish>
+		<Tag>TXT_KEY_AGE_REVOLUTIONARY</Tag>
+		<English>Age of Revolution</English>
+		<French>Age of Revolution</French>
+		<German>Age of Revolution</German>
+		<Italian>Age of Revolution</Italian>
+		<Spanish>Age of Revolution</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_AGE_RENAISSANCE</Tag>
-		<English>Renaissance Age</English>
-		<French>
-			<Text>Renaissance</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Renaissance</German>
-		<Italian>Et&#224; rinascimentale</Italian>
-		<Spanish>Renacimiento</Spanish>
+		<Tag>TXT_KEY_AGE_EXPLORATION</Tag>
+		<English>Age of Exploration</English>
+		<French>Age of Exploration</French>
+		<German>Age of Exploration</German>
+		<Italian>Age of Exploration</Italian>
+		<Spanish>Age of Exploration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AGE_STONE</Tag>

@@ -116,7 +116,7 @@ def setup():
 			for i in range(1, len(lCurrentOffsets)):
 				if lCurrentOffsets[i] < lCurrentOffsets[i-1]: lCurrentOffsets[i] = lCurrentOffsets[i-1]
 				
-			lCurrentOffsets[iDigital] = len(lGreatPeople[iCiv][lTypes.index(iType)])
+			lCurrentOffsets[iAtomic] = len(lGreatPeople[iCiv][lTypes.index(iType)])
 				
 	print lGreatPeople
 
@@ -137,7 +137,7 @@ iMaya : {
 		"Asan Winik Tu'ub", # 8th
 		"Chan Ch'ok Wayib Xok", # 8th
 		"Waj Tan Chak", # 8th
-		iGlobal,
+		iAtomic,
 		"fMarisol Ceh Moo", # 20th
 	],
 	iGreatScientist : [
@@ -162,7 +162,7 @@ iMaya : {
 		"fYohl Ik'nal", # 6th
 		"Yuknoom Ch'een", # 7th
 		"Jasaw Chan K'awiil", # 8th
-		iGlobal,
+		iAtomic,
 		u"fRigoberta Menchú", # 20th
 	],
 	iGreatGeneral : [
@@ -170,7 +170,7 @@ iMaya : {
 		"K'inich Yo'nal Ahk", # 7th
 		"fXochitl", # 9th toltec
 		"Hunac Ceel", # 12th
-		iRenaissance,
+		iRevolutionary,
 		"Napuc Chi", # 16th
 		"Tecun Uman", # 16th
 	],
@@ -179,7 +179,7 @@ iSpain : {
 	iGreatProphet : [
 		"Juan de Ortega", # 11th
 		u"Domingo de Guzmán", # 12th
-		iRenaissance,
+		iRevolutionary,
 		"Ignacio de Loyola", # 16th
 		u"Juan de Sepúlveda", # 16th
 		u"fTeresa de Ávila", # 16th
@@ -188,13 +188,13 @@ iSpain : {
 		iIndustrial,
 		u"Junípero Serra", # 18th
 		"fJoaquima de Vedruna", # 19th
-		iGlobal, 
+		iAtomic, 
 		u"Josemaría Escrivá", # 20th
 	],
 	iGreatArtist : [
 		"Gonzalo de Berceo", # 13th
 		"Juan Manuel", # 14th
-		iRenaissance,
+		iRevolutionary,
 		"Miguel de Cervantes", # 16th
 		"Garcilaso de la Vega", # 16th
 		"Lope de Vega", # 17th
@@ -207,7 +207,7 @@ iSpain : {
 		u"fRosalía de Castro", # 19th
 		u"Isaac Albéniz", # 19th
 		u"Benito Pérez Galdós", # 19th
-		iGlobal,
+		iAtomic,
 		"Pablo Picasso", # 20th
 		u"Joan Miró", # 20th
 		u"Luis Buñuel", # 20th
@@ -217,14 +217,14 @@ iSpain : {
 		"Gerardo de Cremona", # 12th
 		"Yehuda ben Moshe", # 13th
 		"Ramon Llull", # 13th
-		iRenaissance,
+		iRevolutionary,
 		"Miguel Serveto", # 16th
 		u"Carlos de Sigüenza y Góngora", # 17th
 		"Antonio de Ulloa", # 18th
 		iIndustrial,
 		u"José Celestino Mutis", # 18th
 		u"Santiago Ramón y Cajal", # 19th
-		iGlobal, 
+		iAtomic, 
 		"Severo Ochoa", # 20th
 	],
 	iGreatMerchant : [
@@ -235,7 +235,7 @@ iSpain : {
 		u"José Penso de la Vega", # 17th
 		iIndustrial,
 		"Salvador Fidalgo", # 18th
-		iGlobal,
+		iAtomic,
 		"Juan March Ordinas", # 20th
 		"Amancio Ortega", # 20th
 	],
@@ -247,20 +247,20 @@ iSpain : {
 		"Alberto de Palacio y Elissague", # 19th
 		"Esteban Terradas i Illa", # 19th
 		u"Antoni Gaudí", # 19th
-		iGlobal,
+		iAtomic,
 		"Leonardo Torres y Quevedo", # 20th
 		"Juan de la Cierva", # 20th
 	],
 	iGreatStatesman : [
 		"Alfonso el Sabio", # 13th
-		iRenaissance,
+		iRevolutionary,
 		u"Francisco Jiménez de Cisneros", # 15th
 		"Francisco de Vitoria", # 16th
 		iIndustrial,
 		u"José de Gálvez", # 18th
 		u"José Moniño", # 18th
 		"Juan Prim", # 19th
-		iGlobal, 
+		iAtomic, 
 		u"Lluís Companys", # 20th
 		u"fDolores Ibárruri", # 20th
 	],
@@ -268,7 +268,7 @@ iSpain : {
 		"El Cid", # 11th
 		"Alfonso el Bravo", # 11th
 		"Jaume el Conqueridor", # 13th
-		iRenaissance,
+		iRevolutionary,
 		"Francisco Coronado", # 16th
 		u"Hernán Cortés", # 16th
 		"Francisco Pizarro", # 16th
@@ -280,7 +280,7 @@ iSpain : {
 		iIndustrial, 
 		u"fAgustina de Aragón", # 19th
 		"Fernando Villaamil", # 19th
-		iGlobal, 
+		iAtomic, 
 		"Emilio Mola", # 20th
 		"Vicente Rojo Lluch", # 20th
 		"Mohamed ben Mizzian", # 20th
@@ -290,7 +290,7 @@ iSpain : {
 		"Bernardino de Mendoza", # 17th
 		u"fManuela Desvalls Vergós", # 18th
 		"Ali Bey el Abbassi", # 18th 
-		iGlobal,
+		iAtomic,
 		u"Juan Pujol García", # 20th
 		u"Ramón Mercader", # 20th
 	],
@@ -301,7 +301,7 @@ iFrance : {
 		u"Pierre Vaudès", # 12th
 		"Louis IX", # 13th
 		"fJeanne d'Arc", # 15th
-		iRenaissance,
+		iRevolutionary,
 		"Jean Calvin", # 16th
 		"Vincent de Paul", # 17th
 		"fJeanne Mance", # 17th
@@ -310,7 +310,7 @@ iFrance : {
 		iIndustrial,
 		u"fThérèse de Lisieux", # 19th
 		"Auguste Comte", # 19th
-		iGlobal,
+		iAtomic,
 		"Albert Schweitzer", # 20th
 		u"Marcel Légaut", # 20th
 		u"Henri Grouès", # 20th
@@ -320,7 +320,7 @@ iFrance : {
 		u"Chrétien de Troyes", # 12th
 		"fChristine de Pizan", # 15th
 		"Jean Fouquet", # 15th
-		iRenaissance,
+		iRevolutionary,
 		u"François Rabelais", # 16th
 		"Charles Le Brun", # 17th
 		"Jean-Baptiste Lully", # 17th
@@ -338,7 +338,7 @@ iFrance : {
 		"Auguste Rodin", # 19th
 		"Claude Monet", # 19th
 		"Claude Debussy", # 19th
-		iGlobal,
+		iAtomic,
 		"Henri Matisse", # 19th
 		"Maurice Ravel", # 20th
 		"Marcel Proust", # 20th
@@ -349,7 +349,7 @@ iFrance : {
 		"Gerbert d'Aurillac", # 10th
 		"Guy de Chauliac", # 14th
 		"Nicole Oresme", # 14th
-		iRenaissance,
+		iRevolutionary,
 		"Marin Mersenne", # 17th
 		u"René Descartes", # 17th
 		"Pierre de Fermat", # 17th
@@ -363,7 +363,7 @@ iFrance : {
 		"fMarie-Sophie Germain", # 19th
 		"fMarie Curie", # 19th
 		"Antoine Henri Becquerel", # 19th
-		iGlobal,
+		iAtomic,
 		u"fIrène Joliot-Curie", # 20th
 		"Jacques Monod", # 20th
 		u"Benoît Mandelbrot", # 20th
@@ -371,7 +371,7 @@ iFrance : {
 	iGreatMerchant : [
 		u"Éloi de Noyon", # 7th
 		u"fJeanne la Fouacière", # 13th
-		iRenaissance,
+		iRevolutionary,
 		"Jacques Cartier", # 16th
 		"Samuel de Champlain", # 17th
 		"Pierre Le Moyne d'Iberville", # 17th
@@ -381,7 +381,7 @@ iFrance : {
 		u"Frédéric Bastiat", # 19th
 		"Ferdinand de Lesseps", # 19th
 		"Louis Vuitton", # 19th
-		iGlobal,
+		iAtomic,
 		"fCoco Chanel", # 20th
 		"Marcel Dessault", # 20th
 		"fMarie Marvingt", # 20th
@@ -390,7 +390,7 @@ iFrance : {
 		"Suger", # 12th
 		"Villard de Honnecourt", # 13th
 		"Pierre de Montreuil", # 13th
-		iRenaissance,
+		iRevolutionary,
 		u"Sébastien Le Prestre de Vauban", # 17th
 		"Jules Hardouin-Mansart", # 17th
 		"Claude Perrault", # 17th
@@ -402,14 +402,14 @@ iFrance : {
 		"Louis Daguerre", # 19th
 		"Norbert Rillieux", # 19th
 		"Alexandre Gustave Eiffel", # 19th
-		iGlobal,
+		iAtomic,
 		u"Louis Lumière", # 20th
 		"Le Corbusier", # 20th
 	],
 	iGreatStatesman : [
 		u"fAliénor d'Aquitaine", # 12th
 		"Philippe de Beaumanoir", # 13th
-		iRenaissance,
+		iRevolutionary,
 		"Jean Bodin", # 16th
 		"Armand Jean du Plessis de Richelieu", # 17th
 		"Jean-Baptiste Colbert", # 17th
@@ -421,7 +421,7 @@ iFrance : {
 		"Adolphe Thiers", # 19th
 		"Alexis de Tocqueville", # 19th
 		"Pierre-Joseph Proudhon", # 19th
-		iGlobal,
+		iAtomic,
 		u"Léon Blum", # 20th
 		"fSimone de Beauvoir", # 20th
 	],
@@ -431,7 +431,7 @@ iFrance : {
 		"fJeanne de Flandre", # 14th
 		"Charles V", # 14th
 		"fJeanne d'Arc", # 15th
-		iRenaissance,
+		iRevolutionary,
 		u"Louis de Bourbon-Condé", # 17th
 		"Turenne", # 17th
 		"Maurice de Saxe", # 18th
@@ -444,7 +444,7 @@ iFrance : {
 		"Louis-Alexandre Berthier", # 19th
 		"Gilbert de Lafayette", # 19th
 		"Patrice de MacMahon", # 19th
-		iGlobal,
+		iAtomic,
 		"Ferdinand Foch", # 20th
 		"Joseph Joffre", # 20th
 		u"Philippe Pétain", # 20th
@@ -453,7 +453,7 @@ iFrance : {
 	iGreatSpy : [
 		u"Bertrandon de la Broquière", # 15th
 		"fAntoinette de Maignelais", # 15th
-		iRenaissance,
+		iRevolutionary,
 		"fCharlotte de Sauve", # 16th
 		u"fMarie Anne de La Trémoille", # 17th
 		"fCharlotte Corday", # 18th
@@ -462,7 +462,7 @@ iFrance : {
 		iIndustrial,
 		"fMichelle de Bonneuil", # 19th
 		"Charles Schulmeister", # 19th
-		iGlobal,
+		iAtomic,
 		u"fJoséphine Baker", # 20th
 		"Gilbert Renault", # 20th
 	],
@@ -472,7 +472,7 @@ iEngland : {
 		"Bede the Venerable", # 8th
 		"Anselm of Canterbury", # 11th
 		"Thomas Becket", # 12th
-		iRenaissance,
+		iRevolutionary,
 		"Thomas More", # 16th
 		"fAnne Hutchinson", # 17th
 		"John Newton", # 18th
@@ -483,7 +483,7 @@ iEngland : {
 		iIndustrial,
 		"William Booth", # 19th
 		"David Livingstone", # 19th
-		iGlobal,
+		iAtomic,
 		"Gerald Gardner", # 20th
 		"Aleister Crowley", # 20th
 		"John Stott", # 20th
@@ -492,7 +492,7 @@ iEngland : {
 		u"Ælfric of Eynsham", # 10th
 		"Geoffrey Chaucer", # 14th
 		"Thomas Malory", # 15th
-		iRenaissance,
+		iRevolutionary,
 		"William Shakespeare", # 17th
 		"John Milton", # 17th
 		"John Vanbrugh", # 17th
@@ -505,7 +505,7 @@ iEngland : {
 		"Charles Dickens", # 19th
 		"fGeorge Eliot", # 19th
 		"Arthur Conan Doyle", # 19th
-		iGlobal,
+		iAtomic,
 		"fVirginia Woolf", # 20th
 		"James Joyce", # 20th
 		"fAgatha Christie", # 20th
@@ -518,7 +518,7 @@ iEngland : {
 		"Robert Grosseteste", # 13th
 		"Roger Bacon", # 13th
 		"William of Ockham", # 14th
-		iRenaissance,
+		iRevolutionary,
 		"Francis Bacon", # 16th
 		"Robert Boyle", # 17th
 		"Isaac Newton", # 17th
@@ -532,7 +532,7 @@ iEngland : {
 		"Charles Darwin", # 19th
 		"fAda Lovelace", # 19th
 		"James Clerk Maxwell", # 19th
-		iGlobal,
+		iAtomic,
 		"Ernest Rutherford", # 20th
 		"Alexander Fleming", # 20th
 		"Alan Turing", # 20th
@@ -543,7 +543,7 @@ iEngland : {
 		"Alan Rufus", # 11th
 		"Aaron of Lincoln", # 12th
 		"William Caxton", # 15th
-		iRenaissance,
+		iRevolutionary,
 		"Francis Drake", # 16th
 		"William Petty", # 17th
 		"James Cook", # 18th
@@ -554,12 +554,12 @@ iEngland : {
 		"Richard Francis Burton", # 19th
 		"Thomas Sutherland", # 19th
 		"Cecil Rhodes", # 19th
-		iGlobal,
+		iAtomic,
 		"John Maynard Keynes", # 20th
 	],
 	iGreatEngineer : [
 		"Henry Yevele", # 14th
-		iRenaissance,
+		iRevolutionary,
 		"Inigo Jones", # 17th
 		"Robert Hooke", # 17th
 		"Christopher Wren", # 17th
@@ -572,7 +572,7 @@ iEngland : {
 		"Isambard Kingdom Brunel", # 19th
 		"Henry Bessemer", # 19th
 		"William Thomson Kelvin", # 19th
-		iGlobal,
+		iAtomic,
 		"John Logie Baird", # 20th
 		"fVictoria Drummond", # 20th
 		"Frank Whittle", # 20th
@@ -580,7 +580,7 @@ iEngland : {
 	],
 	iGreatStatesman : [
 		"Thomas Becket", # 12th
-		iRenaissance,
+		iRevolutionary,
 		"William Cecil", # 16th
 		"John Locke", # 17th
 		"Thomas Hobbes", # 17th
@@ -593,7 +593,7 @@ iEngland : {
 		"William Gladstone", # 19th
 		"Benjamin Disraeli", # 19th
 		"Robert Gascoyne-Cecil Salisbury", # 19th
-		iGlobal,
+		iAtomic,
 		"Thomas Edward Lawrence", # 20th
 		"fEmmeline Pankhurst", # 20th
 		"Clement Atlee", # 20th
@@ -604,7 +604,7 @@ iEngland : {
 		"Richard the Lionheart", # 12th
 		"Edward III", # 14th
 		"fMargaret of Anjou", # 15th
-		iRenaissance,
+		iRevolutionary,
 		"Oliver Cromwell", # 17th
 		"John Churchill Marlborough", # 17th
 		"Jeffery Amherst", # 18th
@@ -613,7 +613,7 @@ iEngland : {
 		"John Jervis", # 18th
 		"Arthur Wellesley Wellington", # 19th
 		"Edmund Lyons", # 19th
-		iGlobal,
+		iAtomic,
 		"Edmund Allenby", # 19th
 		"Hugh Dowding", # 20th
 		"Bernard Law Montgomery", # 20th
@@ -631,7 +631,7 @@ iEngland : {
 		"William Wickham", # 19th
 		"William Melville", # 19th
 		"Mansfield Smith-Cumming", # 19th
-		iGlobal,
+		iAtomic,
 		"Sidney Reilly", #, 20th
 		"fVera Atkins", #, 20th
 		"fLise de Baissac", # 20th
@@ -644,18 +644,18 @@ iPortugal : {
 	iGreatProphet : [
 		u"António de Lisboa", # 13th
 		u"fIsabel de Aragão", # 14th
-		iRenaissance,
+		iRevolutionary,
 		u"João de Deus", # 16th
 		u"João de Brito", # 17th
 		iIndustrial, 
 		"fRita Lopes de Almeida", # 19th
-		iGlobal, 
+		iAtomic, 
 		"Agostinho da Silva", # 20th
 	],
 	iGreatArtist : [
 		u"Fernão Lopes", # 15th
 		u"Nuno Gonçalves", # 15th
-		iRenaissance,
+		iRevolutionary,
 		u"Luís de Camões", # 16th
 		u"António Ferreira", # 16th
 		u"João de Barros", # 16th
@@ -663,7 +663,7 @@ iPortugal : {
 		iIndustrial, 
 		"Antero de Quental", # 19th
 		u"José Maria de Eça de Queirós", # 19th
-		iGlobal,
+		iAtomic,
 		"Fernando Pessoa", # 20th
 		u"fAmália Rodrigues", # 20th
 		u"José Saramago", # 20th
@@ -673,7 +673,7 @@ iPortugal : {
 		"Pedro Nunes", # 16th
 		"Amato Lusitano", # 16th
 		"Jacob de Castro Sarmento", # 18th
-		iGlobal,
+		iAtomic,
 		"Froilano de Mello", # 20th
 		"Abel Salazar", # 20th
 		u"António Egas Moniz", # 20th
@@ -683,32 +683,32 @@ iPortugal : {
 		"Francisco de Almeida", # 15th
 		"Henrique o Navegador", # 15th
 		"Bartolomeu Dias", # 15th
-		iRenaissance,
+		iRevolutionary,
 		u"Pedro Álvares Cabral", # 15th
 		u"Fernão Pires de Andrade", # 16th
 		"fGracia Mendes Nasi", # 16th
 		u"Fernão Mendes Pinto", # 16th
 		iIndustrial, 
 		"fAntonia Ferreira", # 19th
-		iGlobal, 
+		iAtomic, 
 		u"António Champalimaud", # 20th
 	],
 	iGreatEngineer : [
 		"Mateus Fernandes", # 15th
-		iRenaissance,
+		iRevolutionary,
 		"Diogo de Arruda", # 16th
 		"Diogo de Boitaca", # 16th
 		u"João Antunes", # 17th
 		u"Bartolomeu de Gusmão", # 18th
 		iIndustrial,
 		"Carlos Amarante", # 18th
-		iGlobal,
+		iAtomic,
 		u"José Marques da Silva", # 20th
 		u"Álvaro Siza Vieira", # 20th
 	],
 	iGreatStatesman : [
 		"Henrique de Avis", # 15th
-		iRenaissance,
+		iRevolutionary,
 		u"Tristão da Cunha", # 16th
 		u"João o Restaurador", # 17th
 		u"fLuisa de Guzmán", # 17th
@@ -717,7 +717,7 @@ iPortugal : {
 		iIndustrial,
 		"Mouzinho da Silveira", # 19th
 		u"António Luís de Seabra", # 19th
-		iGlobal,
+		iAtomic,
 		"Afonso Costa", # 20th
 		u"António de Oliveria Salazar", # 20th
 		u"António Guterres", # 20th
@@ -726,17 +726,17 @@ iPortugal : {
 		"Geraldo sem Pavor", # 12th
 		u"Nuno Álvares Pereira", # 14th
 		u"Álvaro Vaz de Almada", # 15th
-		iRenaissance,
+		iRevolutionary,
 		"Afonso de Albuquerque", # 15th
 		"Matias de Albuquerque", # 17th
 		iIndustrial, 
 		u"António José Severim de Noronha", # 19th
-		iGlobal,
+		iAtomic,
 		"Otelo Saraiva de Carvalho", # 20th
 	],
 	iGreatSpy : [
 		"Roderigo Lopez", # 16th
-		iGlobal,
+		iAtomic,
 		u"Agostinho Lourenço", # 20th
 	],
 },
@@ -768,7 +768,7 @@ iInca : {
 	],
 	iGreatStatesman : [
 		u"Mayta Cápac", # 14th
-		iRenaissance,
+		iRevolutionary,
 		"Manco Inca Yupanqui", # 16th
 		"fMama Huaco", # 16th
 		u"Tápac Amaru", # 18th
@@ -780,7 +780,7 @@ iInca : {
 		"Thupaq Amaru", # 16th
 		"Chalcuchimaq", # 16th
 		"Quisquis", # 16th
-		iRenaissance,
+		iRevolutionary,
 		"fBartolina Sisa", # 18th
 		u"Túpac Amaru", # 18th
 		iIndustrial,
@@ -835,14 +835,14 @@ iAztecs : {
 iNetherlands : {
 	iGreatProphet : [
 		"Geert Grote", # 14th
-		iRenaissance,
+		iRevolutionary,
 		"Desiderius Erasmus", # 16th
 		"Menno Simons", # 16th
 		"Jakob Hermanszoon", # 16th
 		"Baruch Spinoza", # 17th
 		iIndustrial,
 		"Abraham Kuyper", # 19th
-		iGlobal,
+		iAtomic,
 		"fAlida Bosshardt", # 20th
 	],
 	iGreatArtist : [
@@ -854,7 +854,7 @@ iNetherlands : {
 		iIndustrial,
 		"Multatuli", # 19th
 		"Vincent van Gogh", # 19th
-		iGlobal,
+		iAtomic,
 		"Piet Mondrian", # 20th
 		"Maurits Cornelis Escher", # 20th
 		"fAnna Maria Geertruida Schmidt", # 20th
@@ -868,7 +868,7 @@ iNetherlands : {
 		iIndustrial, 
 		"Johannes Diderik van der Waals", # 19th
 		"Hendrik Antoon Lorentz", # 19th
-		iGlobal,
+		iAtomic,
 		"Jan Hendrik Oort", # 20th
 		"Gerrit Pieter Kuiper", # 20th
 		"Edsger Wybe Dijkstra", # 20th
@@ -886,7 +886,7 @@ iNetherlands : {
 		iIndustrial,
 		"Clemens Brenninkmeijer", # 19th
 		"August Kessler", # 19th
-		iGlobal,
+		iAtomic,
 		"Jan Tinbergen", # 20th
 		"Freddy Heineken", # 20th
 	],
@@ -901,7 +901,7 @@ iNetherlands : {
 		"Cornelis Lely", # 19th
 		"Hendrik Petrus Berlage", # 19th
 		"Anthony Fokker", # 19th
-		iGlobal,
+		iAtomic,
 		"Anton Philips", # 20th
 		"Gerrit Rietveld", # 20th
 	],
@@ -915,7 +915,7 @@ iNetherlands : {
 		iIndustrial,
 		"Johan Thorbecke", # 19th
 		"fAletta Jacobs", # 19th
-		iGlobal,
+		iAtomic,
 		"Willem Drees", # 20th
 	],
 	iGreatGeneral : [
@@ -934,7 +934,7 @@ iNetherlands : {
 		iIndustrial,
 		"fJohanna Brandt", # 19th
 		"Christiaan Snouck Hurgronje", # 19th
-		iGlobal,
+		iAtomic,
 		"fMata Hari", # 20th
 		"Dirk Klop", # 20th
 		u"François van 't Sant", # 20th
@@ -946,7 +946,7 @@ iAmerica : {
 		"fMary Baker Eddy", # 19th
 		"fEllen G. White", # 19th
 		"Charles Taze Russell", # 19th
-		iGlobal,
+		iAtomic,
 		"Menachem Mendel Schneerson", # 20th
 		"L. Ron Hubbard", # 20th
 		"Billy Graham", # 20th
@@ -958,7 +958,7 @@ iAmerica : {
 		"fEmily Dickinson", # 19th
 		"Herman Melville", # 19th
 		"fMary Cassatt", # 19th
-		iGlobal,
+		iAtomic,
 		"Howard Phillips Lovecraft", # 20th
 		"Ernest Hemingway", # 20th
 		"Charlie Chaplin", # 20th
@@ -971,7 +971,7 @@ iAmerica : {
 	iGreatScientist : [
 		"Benjamin Franklin", # 18th
 		"fNettie Stevens", # 19th
-		iGlobal,
+		iAtomic,
 		"Arthur Compton", # 20th
 		"Edwin Hubble", # 20th
 		"John von Neumann", # 20th
@@ -990,7 +990,7 @@ iAmerica : {
 		"Andrew Carnegie", # 19th
 		"fHetty Green", # 19th
 		"John Pierpont Morgan", # 19th
-		iGlobal,
+		iAtomic,
 		"fHelena Rubinstein", # 20th
 		"William Edward Boeing", # 20th
 		"Walt Disney", # 20th
@@ -1004,7 +1004,7 @@ iAmerica : {
 		"Nikola Tesla", # 19th
 		"Henry Ford", # 19th
 		"Charles Goodyear", # 19th
-		iGlobal,
+		iAtomic,
 		"Orville Wright", # 20th
 		"Frank Lloyd Wright", # 20th
 		"fLillian Moller Gilbreth", # 20th
@@ -1022,7 +1022,7 @@ iAmerica : {
 		"fVictoria Claflin Woodhull", # 19th
 		"fSusan B. Anthony", # 19th
 		"fJane Addams", # 19th
-		iGlobal,
+		iAtomic,
 		"fEleanor Roosevelt", # 20th
 		"George Kennan", # 20th
 		"Martin Luther King", # 20th
@@ -1033,7 +1033,7 @@ iAmerica : {
 		"Winfield Scott", # 19th
 		"Ulysses S. Grant", # 19th
 		"Robert E. Lee", # 19th
-		iGlobal,
+		iAtomic,
 		"John J. Pershing", # 20th
 		"Dwight D. Eisenhower", # 20th
 		"George Patton", # 20th
@@ -1046,7 +1046,7 @@ iAmerica : {
 		"Allan Pinkerton", # 19th
 		"fBelle Boyd", # 19th
 		"fElizabeth Van Lew", # 19th
-		iGlobal,
+		iAtomic,
 		"William J. Donovan", # 20th
 		"J. Edgar Hoover", # 20th
 		"James Jesus Angleton", # 20th
@@ -1059,7 +1059,7 @@ iMexico : {
 		"Juan Diego", # 16th
 		"Francisco Javier Clavijero", # 18th
 		u"Cristóbal Magallanes Jara", # 19th
-		iGlobal,
+		iAtomic,
 		u"Rafael Guízar Valencia", # 20th
 		"Miguel Pro", # 20th
 		"Samuel Ruiz", # 20th
@@ -1067,7 +1067,7 @@ iMexico : {
 	],
 	iGreatArtist : [
 		u"fÁngela Peralta", # 19th
-		iGlobal,
+		iAtomic,
 		u"José Clemente Orozco", # 20th
 		"Diego Rivera", # 20th
 		"fFrida Kahlo", # 20th
@@ -1081,7 +1081,7 @@ iMexico : {
 	iGreatScientist : [
 		"Gabino Barreda", # 19th
 		u"Lucas Alamán", # 19th
-		iGlobal,
+		iAtomic,
 		"Manuel Sandoval Vallarta", # 20th
 		"Ricardo Miledi", # 20th
 		u"Mario José Molina", # 20th
@@ -1106,7 +1106,7 @@ iMexico : {
 	iGreatStatesman : [
 		u"José María Pino Suárez", # 19th
 		"Pascual Orozco", # 19th
-		iGlobal,
+		iAtomic,
 		u"José Vasconcelos", # 20th
 		"Octavio Paz", # 20th
 		"fElvia Carrillo Puerto", # 20th
@@ -1129,7 +1129,7 @@ iMexico : {
 iArgentina : {
 	iGreatProphet : [
 		"Gauchito Gil", # 19th
-		iGlobal,
+		iAtomic,
 		"Enrique Angelelli", # 20th
 		"Carlos Mugica", # 20th
 		"Jorge Mario Bergoglio", # 20th
@@ -1137,7 +1137,7 @@ iArgentina : {
 	iGreatArtist : [
 		u"José Hernández", # 19th
 		"fLola Mora", # 19th
-		iGlobal,
+		iAtomic,
 		"Carlos Gardel", # 20th
 		"fGabriela Mistral", # 20th
 		"Jorge Luis Borges", # 20th
@@ -1149,7 +1149,7 @@ iArgentina : {
 	iGreatScientist : [
 		"Francisco Moreno", # 19th
 		"Florentino Ameghino", # 19th
-		iGlobal,
+		iAtomic,
 		"Luis Federico Leloir", # 20th
 		u"László Bíró", # 20th
 		u"René Favaloro", # 20th
@@ -1158,7 +1158,7 @@ iArgentina : {
 		"Juan Las Heras", # 19th
 		"Otto Bemberg", # 19th
 		"Ernesto Tornquist", # 19th
-		iGlobal,
+		iAtomic,
 		u"José Ber Gelbard", # 20th
 		"Roberto Alemann", # 20th
 		"Jorge Wehbe", # 20th
@@ -1168,7 +1168,7 @@ iArgentina : {
 	iGreatEngineer : [
 		"Luis Huergo", # 19th
 		"Jorge Newbery", # 19th
-		iGlobal,
+		iAtomic,
 		"Amancio Williams", # 20th
 		"Livio Dante Porta", # 20th
 		"Clorindo Testa", # 20th
@@ -1178,7 +1178,7 @@ iArgentina : {
 		"Juan Manuel de Rosas", # 19th
 		"Domingo Faustino Sarmiento", # 19th
 		"Estanislao Zeballos", # 19th
-		iGlobal,
+		iAtomic,
 		"Carlos Saavedra Lamas", # 20th
 		"Juan Atilio Bramuglia", # 20th
 		u"fEva Perón", # 20th
@@ -1192,7 +1192,7 @@ iArgentina : {
 		u"Juan José Castelli", # 18th
 		u"Martín Miguel de Güemes", # 18th
 		u"José Gervasio Artigas", # 19th
-		iGlobal, 
+		iAtomic, 
 		u"Juan Carlos Onganía", # 20th
 		"Jorge Rafael Videla", # 20th
 		"Leopoldo Galtieri", # 20th
@@ -1216,7 +1216,7 @@ iColombia : {
 	iGreatArtist : [
 		"Jorge Isaacs", # 19th
 		u"Andrés de Santa Maria", # 19th
-		iGlobal,
+		iAtomic,
 		"Rodrigo Arenas", # 20th
 		u"Álvaro Mutis", # 20th
 		u"Gabriel García Márquez", # 20th
@@ -1228,13 +1228,13 @@ iColombia : {
 	iGreatScientist : [
 		u"José Jéronimo Triana", # 19th
 		"Julio Garavito Armero", # 19th
-		iGlobal,
+		iAtomic,
 		u"Rodolfo Llinás", # 20th
 		"Jorge Reynolds Pombo", # 20th
 	],
 	iGreatMerchant : [
 		"James Martin Eder", # 19th
-		iGlobal,
+		iAtomic,
 		"Julio Mario Santo Domingo", # 20th
 		u"Carlos Ardila Lülle", # 20th
 		"Luis Carlos Sarmiento Angulo", # 20th
@@ -1242,14 +1242,14 @@ iColombia : {
 	],
 	iGreatEngineer : [
 		u"Carlos Albán", # 19th
-		iGlobal, 
+		iAtomic, 
 		u"Carlos Raúl Villanueva", # 20th
 		"Rogelio Salmona", # 20th
 	],
 	iGreatStatesman : [
 		u"Tomás Cipriano de Mosquera", # 19th
 		u"Rafael Núñez", # 19th
-		iGlobal,
+		iAtomic,
 		u"Jorge Eliécer Gaitán", # 20th
 		u"Nicolás Gómez Dávila", # 20th
 		u"Mario Lanserna Pinzón", # 20th
@@ -1267,7 +1267,7 @@ iColombia : {
 iBrazil : {
 	iGreatProphet : [
 		u"António Conselheiro", # 19th
-		iGlobal,
+		iAtomic,
 		u"Hélder Câmara", # 20th
 		u"fIrmã Dulce Pontes", # 20th
 		"Chico Xavier", # 20th
@@ -1277,7 +1277,7 @@ iBrazil : {
 		"Aleijadinho", # 18th
 		u"António Carlos Gomes", # 19th
 		"Machado de Assis", # 19th
-		iGlobal,
+		iAtomic,
 		"fTarsila do Amaral", # 20th
 		"fCarmen Miranda", # 20th
 		"Tom Jobim", # 20th
@@ -1286,7 +1286,7 @@ iBrazil : {
 	iGreatScientist : [
 		"Oswaldo Cruz", # 19th
 		"Carlos Chagas", # 19th
-		iGlobal,
+		iAtomic,
 		"Alberto Santos-Dumont", # 20th
 		"Urbano Ernesto Stumpf", # 20th
 		u"Aziz Ab'Sáber", # 20th
@@ -1299,7 +1299,7 @@ iBrazil : {
 	],
 	iGreatEngineer : [
 		u"André Rebouças", # 19th
-		iGlobal,
+		iAtomic,
 		u"Cândido Rondon", # 20th
 		"Oscar Niemeyer", # 20th
 		"Norberto Odebrecht", # 20th
@@ -1311,14 +1311,14 @@ iBrazil : {
 		u"José Paranhos", # 19th
 		u"fIsabel Bragança", # 19th
 		"Miguel Reale", # 19th
-		iGlobal,
+		iAtomic,
 		"Roberto Mangabeira Unger", # 20th
 	],
 	iGreatGeneral : [
 		u"Luís Alves de Lima e Silva", # 19th
 		"Joaquim Marques Lisboa", # 19th
 		u"fMaria Quitéria", # 19th
-		iGlobal,
+		iAtomic,
 		u"João Baptista Mascarenhas de Morais", # 20th
 		"Eurico Gaspar Dutra", # 20th
 		"Artur da Costa e Silva", # 20th
@@ -1328,7 +1328,7 @@ iCanada : {
 	iGreatProphet : [
 		"Ignace Bourget", # 19th
 		u"André Bessette", # 20th
-		iGlobal,
+		iAtomic,
 		"Lionel Groulx", # 20th
 		"George C. Pidgeon", # 20th
 		u"fRúhíyyih Khánum", # 20th
@@ -1339,7 +1339,7 @@ iCanada : {
 		u"Calixa Lavallée", # 19th
 		"Tom Thomson", # 19th
 		u"Émile Nelligan", # 19th
-		iGlobal,
+		iAtomic,
 		"fLucy Maud Montgomery", # 20th
 		"Lawren Harris", # 20th
 		"fEmily Carr", # 20th
@@ -1351,7 +1351,7 @@ iCanada : {
 	iGreatScientist : [
 		"John William Dawson", # 19th
 		"fMaude Abbott", # 19th
-		iGlobal,
+		iAtomic,
 		"Frederick Banting", # 20th
 		"Norman Bethune", # 20th
 		"Wilder Penfield", # 20th
@@ -1363,7 +1363,7 @@ iCanada : {
 		"William McMaster", # 19th
 		"Timothy Eaton", # 19th
 		"Alphonse Desjardins", # 19th
-		iGlobal,
+		iAtomic,
 		"fElizabeth Arden", # 20th
 		"Max Aitken", # 20th
 		"Ted Rogers", # 20th
@@ -1374,7 +1374,7 @@ iCanada : {
 		"William Cornelius Van Horne", # 19th
 		"Alexander Graham Bell", # 19th
 		"Reginald Fessenden", # 19th
-		iGlobal,
+		iAtomic,
 		"Ernest Cormier", # 20th
 		"Joseph-Armand Bombardier", # 20th
 		"fElsie MacGill", # 20th
@@ -1383,7 +1383,7 @@ iCanada : {
 		u"George-Étienne Cartier", # 19th
 		"Louis Riel", # 19th
 		"Henri Bourassa", # 19th
-		iGlobal,
+		iAtomic,
 		"Lester B. Pearson", # 20th
 		"fEmily Murphy", # 20th
 		"fNellie McClung", # 20th

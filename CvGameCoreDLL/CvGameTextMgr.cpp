@@ -250,10 +250,10 @@ void CvGameTextMgr::setDateStrPlayer(CvWString& szString, int iGameTurn, bool bS
 {
 	if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isHasTech((TechTypes)CALENDAR) || GC.getGameINLINE().getAIAutoPlay() > 0)
 		setDateStr(szString, iGameTurn, bSave, eCalendar, iStartYear, eSpeed);
-	else if (GET_PLAYER(ePlayer).getCurrentEra() >= ERA_RENAISSANCE)
-		szString = gDLL->getText("TXT_KEY_AGE_RENAISSANCE");
-	else if (GET_PLAYER(ePlayer).getCurrentEra() == ERA_MEDIEVAL)
-		szString = gDLL->getText("TXT_KEY_AGE_MEDIEVAL");
+	else if (GET_PLAYER(ePlayer).getCurrentEra() >= ERA_REVOLUTIONARY)
+		szString = gDLL->getText("TXT_KEY_AGE_REVOLUTIONARY");
+	else if (GET_PLAYER(ePlayer).getCurrentEra() == ERA_EXPLORATION)
+		szString = gDLL->getText("TXT_KEY_AGE_EXPLORATION");
 	else if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isHasTech((TechTypes)BLOOMERY))
 		szString = gDLL->getText("TXT_KEY_AGE_IRON");
 	else if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isHasTech((TechTypes)ALLOYS))
