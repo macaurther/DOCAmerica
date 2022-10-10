@@ -411,7 +411,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL2</PromotionPrereqOr2>
-			<TechPrereq>TECH_GENERALSHIP</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
@@ -516,7 +516,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL1</PromotionPrereqOr2>
-			<TechPrereq>TECH_RIDING</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
 			<UnitCombatMods>
 				<UnitCombatMod>
 					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
@@ -544,7 +544,7 @@
 			<Description>TXT_KEY_PROMOTION_AMPHIBIOUS</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
-			<TechPrereq>TECH_SEAFARING</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
 			<bAmphib>1</bAmphib>
 			<bRiver>1</bRiver>
 			<UnitCombats>

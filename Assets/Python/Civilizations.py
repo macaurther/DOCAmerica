@@ -183,7 +183,19 @@ lCivilizations = [
 		iMaya,
 		iGold=200,
 		lCivics=[iDespotism, iSlavery],
-		techs=techs.column(1).including(iProperty, iMasonry, iSmelting, iCeremony).without(iSailing)
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iInca,
+		iGold=700,
+		lCivics=[iMonarchy, iSlavery, iRedistribution, iDeification],
+		techs=techs.column(1).including(iArtisanry, iMasonry).without(iSailing)
+	),
+	Civilization(
+		iAztecs,
+		iGold=600,
+		lCivics=[iDespotism, iCitizenship, iSlavery, iRedistribution, iDeification],
+		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
 		iSpain,
@@ -191,15 +203,15 @@ lCivilizations = [
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
-		techs=techs.column(6).including(iFeudalism, iAlchemy, iGuilds)
+		techs=techs.column(5)
 	),
 	Civilization(
-		iFrance,
-		iGold=150,
+		iPortugal,
+		iGold=200,
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy, iTributaries],
-		techs=techs.column(6).including(iFeudalism, iTheology)
+		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
+		techs=techs.column(5).including(iFirearms, iLogistics, iExploration)
 	),
 	Civilization(
 		iEngland,
@@ -208,27 +220,15 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
 		lEnemies=[],
-		techs=techs.column(6).including(iFeudalism, iTheology)
+		techs=techs.column(6)
 	),
 	Civilization(
-		iPortugal,
-		iGold=200,
+		iFrance,
+		iGold=150,
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
-		techs=techs.column(7).including(iPatronage)
-	),
-	Civilization(
-		iInca,
-		iGold=700,
-		lCivics=[iMonarchy, iSlavery, iRedistribution, iDeification],
-		techs=techs.column(3).including(iMathematics, iContract, iLiterature, iPriesthood).without(iSeafaring, iAlloys, iRiding, iShipbuilding)
-	),
-	Civilization(
-		iAztecs,
-		iGold=600,
-		lCivics=[iDespotism, iCitizenship, iSlavery, iRedistribution, iDeification],
-		techs=techs.column(3).including(iMathematics, iContract, iLiterature, iPriesthood, iGeneralship, iAesthetics, iCurrency, iLaw).without(iSeafaring, iAlloys, iRiding, iShipbuilding)
+		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy, iTributaries],
+		techs=techs.column(6)
 	),
 	Civilization(
 		iNetherlands,
@@ -236,7 +236,20 @@ lCivilizations = [
 		iAdvancedStartPoints=300,
 		iStateReligion=iProtestantism,
 		lCivics=[iRepublic, iCentralism, iManorialism, iMerchantTrade, iClergy],
-		techs=techs.column(10)
+		techs=techs.column(6).including(iEconomics, iShipbuilding)
+	),
+	Civilization(
+		iHawaii,
+		iGold=700,
+		lCivics=[iMonarchy, iSlavery, iRedistribution, iDeification],
+		techs=techs.column(1).including(iNavigation).without(iTanning)
+	),
+	Civilization(
+		iRussia,
+		iGold=200,
+		iAdvancedStartPoints=50,
+		lCivics=[iElective, iVassalage, iManorialism, iMerchantTrade],
+		techs=techs.column(9)
 	),
 	Civilization(
 		iAmerica,
@@ -244,7 +257,7 @@ lCivilizations = [
 		iAdvancedStartPoints=500,
 		iStateReligion=iProtestantism,
 		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iIsolationism],
-		techs=techs.column(12).including(iRepresentation, iChemistry)
+		techs=techs.column(10).including(iRepresentation, iIndependence)
 	),
 	Civilization(
 		iArgentina,
@@ -252,7 +265,7 @@ lCivilizations = [
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
 		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
-		techs=techs.column(12).including(iRepresentation, iNationalism)
+		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
 		iMexico,
@@ -260,7 +273,7 @@ lCivilizations = [
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
 		lCivics=[iDespotism, iConstitution, iIndividualism, iRegulatedTrade, iClergy, iNationhood],
-		techs=techs.column(12).including(iRepresentation, iNationalism)
+		techs=techs.column(11).including(iFederalism)
 	),
 	Civilization(
 		iColombia,
@@ -268,7 +281,7 @@ lCivilizations = [
 		iAdvancedStartPoints=150,
 		iStateReligion=iCatholicism,
 		lCivics=[iDespotism, iConstitution, iIndividualism, iRegulatedTrade, iClergy, iNationhood],
-		techs=techs.column(12).including(iRepresentation, iNationalism)
+		techs=techs.column(11).including(iRightsOfMan)
 	),
 	Civilization(
 		iBrazil,
@@ -276,7 +289,7 @@ lCivilizations = [
 		iAdvancedStartPoints=200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iConstitution, iSlavery, iFreeEnterprise, iClergy, iColonialism],
-		techs=techs.column(12).including(iRepresentation, iNationalism, iBiology)
+		techs=techs.column(11).including(iMetallurgy, iProtectionism, iHydraulics)
 	),
 	Civilization(
 		iCanada,
@@ -284,7 +297,7 @@ lCivilizations = [
 		iAdvancedStartPoints=250,
 		iStateReligion=iCatholicism,
 		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
-		techs=techs.column(13).including(iBallistics, iEngine, iRailroad, iJournalism)
+		techs=techs.column(14)
 	),
 ]
 
@@ -559,11 +572,8 @@ dTechPreferences = {
 	iSpain : {
 		iCartography: 100,
 		iExploration: 100,
-		iCompass: 100,
 		iFirearms: 100,
-		iPatronage: 50,
 		iReplaceableParts: 30,
-		iGuilds: 15,
 		iGunpowder: 15,
 		iChemistry: 15,
 	},
@@ -573,11 +583,9 @@ dTechPreferences = {
 		iExploration: 20,
 		iGeography: 20,
 		iLogistics: 20,
-		iPatronage: 20,
 		iMeasurement: 20,
 		iAcademia: 20,
 		iEducation: 15,
-		iFeudalism: 15,
 		iChemistry: 15,
 		iSociology: 15,
 		iFission: 12,
@@ -590,35 +598,23 @@ dTechPreferences = {
 		iLogistics: 30,
 		iCivilLiberties: 20,
 		iEducation: 15,
-		iGuilds: 15,
 		iChemistry: 15,
 	},
 	iPortugal : {
 		iCartography: 100,
 		iExploration: 100,
 		iGeography: 100,
-		iCompass: 100,
 		iFirearms: 100,
 		iCompanies: 50,
-		iPatronage: 50,
 		iReplaceableParts: 20,
 	},
 	iInca : {
 		iConstruction: 40,
 		iCalendar: 40,
-		
-		iFeudalism: -40,
-		iMachinery: -20,
 		iGunpowder: -20,
-		iGuilds: -20,
 	},
 	iAztecs : {
 		iConstruction: 40,
-		iLiterature: 20,
-		
-		iGuilds: -40,
-		iFeudalism: -20,
-		iMachinery: -20,
 		iGunpowder: -20,
 	},
 	iNetherlands : {

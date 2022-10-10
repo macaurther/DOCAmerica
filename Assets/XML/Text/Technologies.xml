@@ -62,6 +62,33 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_AERONAUTICS</Tag>
+		<English>Aeronautics</English>
+		<French>Aeronautics</French>
+		<German>Aeronautics</German>
+		<Italian>Aeronautics</Italian>
+		<Spanish>Aeronautics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AERONAUTICS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AERONAUTICS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_AESTHETICS</Tag>
 		<English>Aesthetics</English>
 		<French>
@@ -132,80 +159,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ALCHEMY</Tag>
-		<English>Alchemy</English>
-		<French>
-			<Text>Alchimie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Alchemie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Alchimia</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Alquimia</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALCHEMY_QUOTE</Tag>
-		<English>"All is interrelated. Heaven and earth, air and water. Where they are not together, there is only an incomplete piece."[PARAGRAPH:2]- Paracelsus</English>
-		<French>"Ainsi tout est reli&#233;, le ciel et la terre, l'air et l'eau. L&#224; o&#249; ils ne sont pas tous ensembles, ce n'est qu'un morceau incomplet."[PARAGRAPH:2]- Paracelse</French>
-		<German>"All is interrelated. Heaven and earth, air and water. Where they are not together, there is only an incomplete piece."[PARAGRAPH:2]- Paracelsus</German>
-		<Italian>"All is interrelated. Heaven and earth, air and water. Where they are not together, there is only an incomplete piece."[PARAGRAPH:2]- Paracelsus</Italian>
-		<Spanish>"All is interrelated. Heaven and earth, air and water. Where they are not together, there is only an incomplete piece."[PARAGRAPH:2]- Paracelsus</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALCHEMY_PEDIA</Tag>
-		<English>Alchemy is the study of chemical substances, in its pre-scientific form. This was often an informal art; mysticism and superstition were mixed seamlessly with pragmatic efforts to manipulate flame, metal, and liquids. Many alchemists sought out impossible goals such as the universal solvent, the elixir of youth, the secret of immortality, or means by which common metals like iron or lead might be transmuted into gold. Alchemy was fraught with frauds, cheats, and liars.[PARAGRAPH:2]However, alchemists made real contributions to society. Alchemists were the first to invent many of the basic techniques of processing chemicals, and the equipment needed to do so. Operating on a rough-and-ready empirical basis, they were able to develop substances such as acids, distilled alcoholic spirits, incendiaries, and gunpowder, which had great effects on their societies in both war and peace.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALLOYS</Tag>
-		<English>Alloys</English>
-		<French>
-			<Text>Alliages</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Alloys</German>
-		<Italian>Alloys</Italian>
-		<Spanish>Alloys</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALLOYS_QUOTE</Tag>
-		<English>"It is entirely seemly for a young man killed in battle to lie mangled by the bronze spear. In his death all things appear fair."[PARAGRAPH:2]- Homer, The Iliad</English>
-		<French>"&#192; un jeune guerrier, tu&#233; par Ar&#232;s, d&#233;chir&#233; par le bronze ac&#233;r&#233;, il convient sans r&#233;serve de rester &#233;tendu. Jusque dans la mort, tout en lui reste beau."[PARAGRAPH:2]- Hom&#232;re, l'Iliade</French>
-		<German>"So mancher J&#252;ngling f&#228;llt in der Schlacht, zermalmt von bronzenem Speer. Im Tode so scheint sein Schicksal vollbracht."[PARAGRAPH:2]- Homer</German>
-		<Italian>"Per un giovane &#232; decoroso morire in battaglia trafitto da una lancia di bronzo. Nella morte, tutte le cose sembrano giuste."[PARAGRAPH:2]- Omero</Italian>
-		<Spanish>"Yacer en el suelo, habiendo sido atravesado en la lid por el agudo bronce, es decoroso para un joven, y cuanto de &#233;l pueda verse todo es bello, a pesar de la muerte."[PARAGRAPH:2]- Homero</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALLOYS_PEDIA</Tag>
-		<English>Evidence of the use of bronze, an alloy of copper and tin, dates back to Thailand in 4500 BC. Several hundred years later, bronze working was discovered in the Middle East. Artifacts from this period show that bronze was initially used for decorative purposes only. This is because tin was not readily available. It wasn't until approximately 2000 BC, when tin was regularly imported from neighboring regions, that bronze replaced copper in the construction of larger items. Bronze was harder and less brittle than copper, and it held a sharper edge. Tools, weapons, and armor made from bronze were also cheaper to produce and more durable. The period of time when bronze was the metal of choice for such items was known as the Bronze Age. The Bronze Age lasted until iron working became prevalent in approximately 1200 BC.</English>
-		<French>L'utilisation du bronze, un alliage de cuivre et d'&#233;tain, remonte au moins &#224; 4 500 av. J.-C., en Tha&#239;lande. Des si&#232;cles plus tard, le travail du bronze a &#233;t&#233; d&#233;couvert au Moyen-Orient. Les objets datant de cette p&#233;riode montrent que le bronze &#233;tait uniquement utilis&#233; &#224; l'origine dans un but d&#233;coratif. Il rempla&#231;ait l'&#233;tain, plus difficile &#224; obtenir. Ce n'est que vers 2 000 av. J.-C., quand l'&#233;tain a &#233;t&#233; r&#233;guli&#232;rement import&#233; des r&#233;gions voisines, que le bronze a remplac&#233; le cuivre dans la fabrication d'objets de plus grande taille. Le bronze &#233;tait plus solide et moins cassant que le cuivre et permettait de produire des lames plus tranchantes. Les outils, armes, et armures en bronze &#233;taient aussi moins chers &#224; produire et plus r&#233;sistants. La p&#233;riode au cours de laquelle le bronze a &#233;t&#233; le m&#233;tal privil&#233;gi&#233; pour ce genre d'objets est connue sous le nom de l'&#194;ge de Bronze, p&#233;riode qui a perdur&#233; jusqu'au d&#233;veloppement du travail de fer, vers 1200 av. J.-C.</French>
-		<German>Es wird vermutet, dass Bronze, eine Legierung aus Kupfer und Zinn, bereits im Jahre 4500 vor Christus in Thailand verwendet wurde. Mehrere Jahrhunderte sp&#228;ter wurde die Bronzeverarbeitung im Nahen Osten entdeckt. Kunstwerke dieser Periode zeigen, dass Bronze anfangs nur zu Dekorationszwecken genutzt wurde, weil Zinn schwer zu beschaffen war. Erst um etwa 2000 vor Christus wurde Zinn regelm&#228;&#223;ig von den benachbarten L&#228;ndern importiert. In der Folgezeit wurde das bis dahin verwendete Kupfer bei der Herstellung gr&#246;&#223;erer Objekte durch Bronze ersetzt, die h&#228;rter und weniger spr&#246;de war als Kupfer, so dass sich damit sch&#228;rfere Kanten formen lie&#223;en - dar&#252;ber hinaus waren Werkzeuge, Waffen und R&#252;stungen aus Bronze auch preiswerter und langlebiger. Die Zeit, in der Bronze das bevorzugte Metall f&#252;r die Fertigung dieser Ger&#228;te war, ist als Bronzezeitalter bekannt. Diese Periode dauerte bis etwa 1200 vor Christus, als das noch hochwertigere Eisen verf&#252;gbar wurde.</German>
-		<Italian>Le prime testimonianze sull'uso del bronzo, una lega di rame e stagno, risalgono alla Thailandia del 4500 a. C. Diversi secoli pi&#249; tardi, la lavorazione del bronzo venne scoperta nel Medio Oriente. Gli oggetti risalenti a questo periodo dimostrano che il bronzo veniva inizialmente utilizzato solo a scopo decorativo, questo perch&#233; lo stagno non era facilmente reperibile. Bisogner&#224; aspettare pi&#249; o meno il 2000 a. C. perch&#233;, con l'importazione regolare di stagno dalle regioni confinanti, il bronzo sostituisca il rame nella fabbricazione di oggetti pi&#249; grandi, offrendo anche una maggior resistenza rispetto al rame e la possibilit&#224; di produrre punte pi&#249; acuminate. Strumenti, armi e armature di bronzo erano anche meno costosi da realizzare e pi&#249; duraturi. Il periodo di tempo in cui si preferiva il bronzo per tali prodotti &#232; noto come l'Et&#224; del Bronzo, che dur&#242; fino al 1200 a. C. circa, quando fu soppiantato dalla lavorazione del ferro.</Italian>
-		<Spanish>Las primeras evidencias del uso del bronce, una aleaci&#243;n de cobre y esta&#241;o, se remontan al a&#241;o 4500 a. C. en Tailandia. Varios siglos despu&#233;s, se descubri&#243; la forja del bronce en Oriente Medio. Los artefactos de este periodo demuestran que inicialmente el bronce solo se usaba con fines decorativos, debido a que el esta&#241;o escaseaba. No fue hasta aproximadamente el a&#241;o 2000 a. C., con la importaci&#243;n regular de esta&#241;o de regiones vecinas, que el bronce sustituy&#243; al cobre en la fabricaci&#243;n de objetos grandes. El bronce era m&#225;s duro y menos quebradizo que el cobre, y se pod&#237;a afilar mejor. Las armas y armaduras hechas de bronce tambi&#233;n eran m&#225;s baratas de producir, y m&#225;s resistentes. El periodo que hizo del bronce el metal preferido para dichos objetos se conoce como Edad del Bronce, y dur&#243; hasta el triunfo de la forja del hierro, en torno al 1200 a. C.</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_ARCHITECTURE</Tag>
 		<English>Architecture</English>
 		<French>
@@ -240,37 +193,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_ARCHITECTURE_PEDIA</Tag>
 		<English>Architecture is the discipline of designing structures with an eye to specific goals; usually aesthetic appeal, but also functional features such as defensibility. The architect's trade blends that of the ordinary engineer and the artist. On the one hand, all great architecture must be durable enough to stand natural forces and the test of time; on the other, it is often expected to be pleasant to live in and to behold.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ARITHMETICS</Tag>
-		<English>Arithmetics</English>
-		<French>
-			<Text>Arithm&#233;tique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Arithmetics</German>
-		<Italian>Arithmetics</Italian>
-		<Spanish>Arithmetics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ARITHMETICS_QUOTE</Tag>
-		<English>"All things are numbers."[PARAGRAPH:2]- Pythagoras</English>
-		<French>"Tout est nombre."[PARAGRAPH:2]- Pythagore</French>
-		<German>"All things are numbers."[PARAGRAPH:2]- Pythagoras</German>
-		<Italian>"All things are numbers."[PARAGRAPH:2]- Pythagoras</Italian>
-		<Spanish>"All things are numbers."[PARAGRAPH:2]- Pythagoras</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ARITHMETICS_PEDIA</Tag>
-		<English>Arithmetic is a branch of mathematics that consists of the study of numbers, especially the properties of the traditional operations between them - addition, subtraction, multiplication and division. Arithmetic is an elementary part of number theory, and number theory is considered to be one of the top-level divisions of modern mathematics, along with algebra, geometry, and analysis.[PARAGRAPH:2]The earliest written records indicate the Egyptians and Babylonians used all the elementary arithmetic operations as early as 2000 BC. The hieroglyphic system for Egyptian numerals, like the later Roman numerals, descended from tally marks used for counting. Early number systems that included positional notation were not decimal, including the sexagesimal (base 60) system for Babylonian numerals and the vigesimal (base 20) system that defined Maya numerals. Because of this place-value concept, the ability to reuse the same digits for different values contributed to simpler and more efficient methods of calculation.[PARAGRAPH:2]The continuous historical development of modern arithmetic starts with the Hellenistic civilization of ancient Greece, although it originated much later than the Babylonian and Egyptian examples. Prior to the works of Euclid around 300 BC, Greek studies in mathematics overlapped with philosophical and mystical beliefs. Greek numerals were used by Archimedes, Diophantus and others in a positional notation not very different from ours.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -439,33 +361,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ATOMIC_PHYSICS</Tag>
-		<English>Atomic Physics</English>
-		<French>Physique atomique</French>
-		<German>Atomic Physics</German>
-		<Italian>Atomic Physics</Italian>
-		<Spanish>Atomic Physics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ATOMIC_PHYSICS_QUOTE</Tag>
-		<English>"By convention, sweet; by convention, bitter; by convention, colour; but, in reality, atoms and the void."[PARAGRAPH:2]- Democritus</English>
-		<French>"By convention, sweet; by convention, bitter; by convention, colour; but, in reality, atoms and the void."[PARAGRAPH:2]- Democritus</French>
-		<German>"By convention, sweet; by convention, bitter; by convention, colour; but, in reality, atoms and the void."[PARAGRAPH:2]- Democritus</German>
-		<Italian>"By convention, sweet; by convention, bitter; by convention, colour; but, in reality, atoms and the void."[PARAGRAPH:2]- Democritus</Italian>
-		<Spanish>"By convention, sweet; by convention, bitter; by convention, colour; but, in reality, atoms and the void."[PARAGRAPH:2]- Democritus</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ATOMIC_PHYSICS_PEDIA</Tag>
-			<English>Atomic theory is, in simplest form, the idea that all matter is made up of tiny, indivisible particles called "atoms." The first ancient form of this theory comes from the Greek philosopher Democritus. His atomic theory was founded on the Greek ideas of the geometric order of the universe and of the four elements, which led to some strange ideas. For instance, early supporters of the atomic theory suggested that water might flow because it was made up of icosahedral atoms which, being nearly round, tumbled over each other easily; fire was painful because it was made up of tetrahedral atoms which were sharp and thus damaging. Since there was no evidence for this theory at the time, and no obvious reason to prefer it to the alternatives, it was largely ignored for the following two thousand years.[PARAGRAPH:2]The atomic theory re-emerged around 1800, following early chemists' discovery of new types of chemical elements that seemed more fundamental than things like air and fire. The chemist John Dalton proposed again that all matter was made of atoms, which were neither created nor destroyed in chemical reactions, only reshuffled to form different substances. This theory proved fruitful for 19th century chemistry, although many scientists insisted that it was only a theory.[PARAGRAPH:2]Towards the end of the century, advances in the studies of the spectrum of light emitted by different elements, and the discovery of radioactivity, cast doubt on the premise that atoms were indivisible. Perhaps atoms had some kind of internal structure, and were themselves composed of smaller particles with new and intriguing properties of their own. The first of these particles to be discovered was the electron, a tiny and lightweight particle which carries a strong negative charge, and whose motions form the basis for nearly all electrical, magnetic, and chemical interactions.[PARAGRAPH:2]Further investigation into the structure of the atom using ever more precise and complex instruments and mathematical theories opened up broad vistas of scientific discovery. Various models of atomic structure, such as the "plum pudding" model, the Rutherford atom, and the Bohr atom, were considered, modified, or discarded. Scientists gained more understanding of the mechanisms behind atomic structure, and of how atoms could bind together to form molecules.[PARAGRAPH:2]This led to great advances in practical technology in the latter half of the 20th century. Once the atoms that made them up were understood, chemists could tailor-make molecules to suit their needs. Alloys with strange electrical properties could be used to build advanced calculating machines. And the immense forces locked within the atomic nucleus could be released, for good or for evil.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_AUTOMATION</Tag>
 		<English>Automation</English>
 		<French>
@@ -488,33 +383,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_AUTOMATION_PEDIA</Tag>
 		<English>Automation is the art of making machines which perform tasks on their own, without active input or oversight from a human operator. Automatic constructs have existed as toys for the rich since ancient times, the products of individual craftsmanship, but widespread use of automation to control machines is a twentieth-century phenomenon.[PARAGRAPH:2]The demand for automation first came from the need to make machinery function where humans cannot or will not; be it in an extremely hostile environment, in a factory where machines ran faster than the human eye can follow, or in a job too menial and unstimulating for the average person to be content doing. Over time, automation has become more popular and flexible, especially with the rise of electronic computers.[PARAGRAPH:2]Automatic equipment invariably saves human labor, but it also displaces labour. The simple tasks involved in doing the machine's job are replaced by specialized jobs tending the machines. Or not replaced at all.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AUTOMOBILE</Tag>
-		<English>Automobile</English>
-		<French>Automobile</French>
-		<German>Automobile</German>
-		<Italian>Automobile</Italian>
-		<Spanish>Automobile</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AUTOMOBILE_QUOTE</Tag>
-		<English>"Everything in life is somewhere else, and you get there in a car."[PARAGRAPH:2]- E. B. White</English>
-		<French>"Dans la vie, tout est ailleurs, et on ne peut y aller qu'en voiture !"[PARAGRAPH:2]- E. B. White</French>
-		<German>"Im Leben ist alles irgendwo anders. Und hin kommt man mit dem Auto."[PARAGRAPH:2]- E. B. White</German>
-		<Italian>"Ogni cosa della vita si trova da qualche parte ed &#232; raggiungibile in automobile."[PARAGRAPH:2]- E. B. White</Italian>
-		<Spanish>"Todo en la vida est&#225; en otra parte, y all&#237; se llega en coche."[PARAGRAPH:2]- E. B. White</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AUTOMOBILE_PEDIA</Tag>
-		<English>The earliest attempts at producing a self-propelled vehicle date back to the late 1770s. These early vehicles used bulky steam engines for power. Despite constant improvements, the steam engine ultimately proved impractical for small vehicles. The development of the internal combustion engine in the late 1800s provided a small but powerful replacement for steam engines, and were able to achieve much higher speeds. The first practical automobiles were developed in the late 19th century, by automotive pioneers in France, Germany, and the United States. By the 1920s, a number of automotive manufacturing companies were operating in the U.S., including Ford and General Motors. By 1980, more than 300 million cars and 85 million trucks were in operation throughout the world. The popularity of the automobile has led to massive improvements in the highway systems in most industrialized countries. Unfortunately, automobiles are also one of the primary sources of air pollution, and have resulted in an all time high demand for petrochemical fuels.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -586,29 +454,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_BLOOMERY</Tag>
-		<English>Bloomery</English>
-		<French>
-			<Text>Bas fourneau</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Bloomery</German>
-		<Italian>Bloomery</Italian>
-		<Spanish>Bloomery</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_BLOOMERY_QUOTE</Tag>
-		<English>"You should hammer your iron when it is glowing hot."[PARAGRAPH:2]- Publilius Syrus, Sentences</English>
-		<French>"Il faut battre le fer quand il est rouge au feu."[PARAGRAPH:2]- Publilius Syrus, Sentences</French>
-		<German>"Man muss das Eisen schmieden, solange es hei&#223; ist."[PARAGRAPH:2]- Publius Syrus</German>
-		<Italian>"Dovresti battere il ferro finch&#233; &#232; caldo."[PARAGRAPH:2]- Publilio Siro</Italian>
-		<Spanish>"Debes golpear el hierro cuando a&#250;n est&#225; al rojo vivo."[PARAGRAPH:2]- Publio Siro</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_BIOLOGY</Tag>
 		<English>Biology</English>
 		<French>
@@ -666,6 +511,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_BIOTECHNOLOGY_PEDIA</Tag>
 		<English>Bionics is one name for the effort to create machines that can duplicate functions of human body parts. This has obvious applications in medicine, where it allows people who have lost limbs, sensory organs, or even hearts to survive with mechanical substitutes. Other effects of this growing field, placed as it is at the cutting edge of automation, miniaturization, and our understanding of how brain and body operate, are more subtle but perhaps no less profound.[NEWLINE][NEWLINE]Advanced bionics might allow the creation of synthetic androids whose superficially human appearance lends itself to a variety of roles. They might become popular as replacements or augmentations for functioning body parts - if an artificial eye sees more clearly, some may prefer it to their natural one. Taken to its logical extreme, bionics might even cause us to call into question the very meaning of what it is to be human, an issue mostly considered the province of science fiction to date.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_BONDS</Tag>
+		<English>Bonds</English>
+		<French>Bonds</French>
+		<German>Bonds</German>
+		<Italian>Bonds</Italian>
+		<Spanish>Bonds</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_BONDS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_BONDS_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -784,24 +656,24 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CHARITY</Tag>
-		<English>Charity</English>
-		<French>Charit&#233;</French>
-		<German>Charity</German>
-		<Italian>Charity</Italian>
-		<Spanish>Charity</Spanish>
+		<Tag>TXT_KEY_TECH_CHARTER</Tag>
+		<English>Charter</English>
+		<French>Charter</French>
+		<German>Charter</German>
+		<Italian>Charter</Italian>
+		<Spanish>Charter</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CHARITY_QUOTE</Tag>
-		<English>"If you haven't got any charity in your heart, you have the worst kind of heart trouble."[PARAGRAPH:2]- Bob Hope</English>
-		<French>"If you haven't got any charity in your heart, you have the worst kind of heart trouble."[PARAGRAPH:2]- Bob Hope</French>
-		<German>"If you haven't got any charity in your heart, you have the worst kind of heart trouble."[PARAGRAPH:2]- Bob Hope</German>
-		<Italian>"If you haven't got any charity in your heart, you have the worst kind of heart trouble."[PARAGRAPH:2]- Bob Hope</Italian>
-		<Spanish>"If you haven't got any charity in your heart, you have the worst kind of heart trouble."[PARAGRAPH:2]- Bob Hope</Spanish>
+		<Tag>TXT_KEY_TECH_CHARTER_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CHARITY_PEDIA</Tag>
-		<English>Charity is the virtue of willingness to give, to use one's time, resources, and influence for the benefit of others who need those things. Charity has been an ideal promoted by many cultures and numerous world religions throughout history. In the earliest recorded times and simplest known national governments, the charity of leaders such as kings and priests allowed an orderly redistribution of wealth. This served to take place of the traditional reciprocal behaviours of tribal cultures, implementing sharing and mutual protection on a larger scale.[NEWLINE][NEWLINE]As the complexity of social systems and the philosophical refinement of social mores evolved through the ages, the practice of charity by hierarchies grew more pronounced. In the modern era, virtually all developed societies provide some degree of organized charity to the groups they deem vulnerable, such as children, the elderly, single parents, the unemployed, the sick, workers in economic sectors threatened by social, economic, and technological change, or underdeveloped foreign countries. This practice is augmented by similar charity practiced by private individuals (e.g. the Gates Foundation) and international organizations (e.g. Medicins Sans Frontieres).</English>
+		<Tag>TXT_KEY_TECH_CHARTER_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -908,36 +780,28 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CIVIL_SERVICE</Tag>
-		<English>Civil Service</English>
-		<French>
-			<Text>Administration publique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>&#214;ffentliche Verwaltung</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Pubblica amministrazione</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Administraci&#243;n p&#250;blica</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<Tag>TXT_KEY_TECH_COLONIZATION</Tag>
+		<English>Colonization</English>
+		<French>Colonization</French>
+		<German>Colonization</German>
+		<Italian>Colonization</Italian>
+		<Spanish>Colonization</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CIVIL_SERVICE_QUOTE</Tag>
-		<English>"The bureaucracy is expanding to meet the needs of the expanding bureaucracy."[PARAGRAPH:2]- Oscar Wilde</English>
-		<French>"La bureaucratie grandit pour r&#233;pondre aux besoins croissants de la bureaucratie grandissante."[PARAGRAPH:2]- Oscar Wilde</French>
-		<German>"Die B&#252;rokratie wurde erfunden, um die Bed&#252;rfnisse der B&#252;rokratie zu stillen."[PARAGRAPH:2]- Unbekannt</German>
-		<Italian>"La burocrazia si espande per soddisfare i bisogni di una burocrazia in espansione."[PARAGRAPH:2]- Anonimo</Italian>
-		<Spanish>"La burocracia se expande para satisfacer las necesidades de una burocracia en expansi&#243;n."[PARAGRAPH:2]- An&#243;nimo</Spanish>
+		<Tag>TXT_KEY_TECH_COLONIZATION_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COLONIZATION_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -974,28 +838,24 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ENGINE</Tag>
-		<English>Engine</English>
-		<French>
-			<Text>Moteur</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Engine</German>
-		<Italian>Engine</Italian>
-		<Spanish>Engine</Spanish>
+		<Tag>TXT_KEY_TECH_COMBUSTION</Tag>
+		<English>Combustion</English>
+		<French>Combustion</French>
+		<German>Combustion</German>
+		<Italian>Combustion</Italian>
+		<Spanish>Combustion</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ENGINE_QUOTE</Tag>
-		<English>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</English>
-		<French>"La nature, en nous offrant de toutes parts le combustible, nous a donn&#233; la facult&#233; de faire na&#238;tre en tous temps et en tous lieux la chaleur et la puissance motrice qui en est la suite."[PARAGRAPH:2]- Sadi Carnot, R&#233;flexions sur la puissance motrice du feu</French>
-		<German>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</German>
-		<Italian>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</Italian>
-		<Spanish>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</Spanish>
+		<Tag>TXT_KEY_TECH_COMBUSTION_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ENGINE_PEDIA</Tag>
-		<English>An engine or motor is a machine designed to convert one form of energy into mechanical energy. Heat engines burn a fuel to create heat, which is then used to create a force. Electric motors convert electrical energy into mechanical motion; pneumatic motors use compressed air and clockwork motors in wind-up toys use elastic energy.[PARAGRAPH:2]Internal combustion piston engines  were tested in France in 1807 by de Rivaz and independently, by the Ni&#233;pce brothers. They were theoretically advanced by Carnot in 1824. In 1853-57 Eugenio Barsanti and Felice Matteucci invented and patented an engine using the free-piston principle that was possibly the first 4-cycle engine.[PARAGRAPH:2]The invention of an internal combustion engine which was later commercially successful was made during 1860 by Etienne Lenoir. The Otto cycle in 1877 was capable of giving a far higher power to weight ratio than steam engines and worked much better for many transportation applications such as cars and aircraft.</English>
+		<Tag>TXT_KEY_TECH_COMBUSTION_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1005,75 +865,55 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPASS</Tag>
-		<English>Compass</English>
-		<French>
-			<Text>Boussole</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Kompass</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Magnetismo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Br&#250;jula</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<Tag>TXT_KEY_TECH_COMMUNITY</Tag>
+		<English>Community</English>
+		<French>Community</French>
+		<German>Community</German>
+		<Italian>Community</Italian>
+		<Spanish>Community</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPASS_QUOTE</Tag>
-		<English>"The compass opened the universe."[PARAGRAPH:2]- Montesquieu, The Spirit of the Laws</English>
-		<French>"La boussole ouvrit, pour ainsi dire, l'univers."[PARAGRAPH:2]- Montesquieu, De l'esprit des lois</French>
-		<German>"The compass opened the universe."[PARAGRAPH:2]- Montesquieu, The Spirit of the Laws</German>
-		<Italian>"The compass opened the universe."[PARAGRAPH:2]- Montesquieu, The Spirit of the Laws</Italian>
-		<Spanish>"The compass opened the universe."[PARAGRAPH:2]- Montesquieu, The Spirit of the Laws</Spanish>
+		<Tag>TXT_KEY_TECH_COMMUNITY_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMMUNITY_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPOSITES</Tag>
-		<English>Composites</English>
+		<Tag>TXT_KEY_TECH_COMPANIES</Tag>
+		<English>Companies</English>
 		<French>
-			<Text>Mat&#233;riaux composites</Text>
-			<Gender>Male</Gender>
+			<Text>Compagnies</Text>
+			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</French>
-		<German>
-			<Text>Verbundstoffe</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Composti</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Compuestos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
+		<German>Companies</German>
+		<Italian>Companies</Italian>
+		<Spanish>Companies</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPOSITES_QUOTE</Tag>
-		<English>"The whole is greater than the sum of its parts."[PARAGRAPH:2]- Aristotle</English>
-		<French>"La totalit&#233; est plus que la somme des parties."[PARAGRAPH:2]- Aristote</French>
-		<German>"Das Ganze ist mehr als die Summe seiner Teile."[PARAGRAPH:2]- Aristoteles</German>
-		<Italian>"Il risultato &#232; migliore della somma delle sue parti."[PARAGRAPH:2]- Aristotele</Italian>
-		<Spanish>"Un todo es mayor que la suma de sus partes."[PARAGRAPH:2]- Arist&#243;teles</Spanish>
+		<Tag>TXT_KEY_TECH_COMPANIES_QUOTE</Tag>
+		<English>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</English>
+		<French>"La possession n'est rien, si la jouissance ne s'y joint."[PARAGRAPH:2]- &#201;sope</French>
+		<German>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</German>
+		<Italian>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</Italian>
+		<Spanish>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPOSITES_PEDIA</Tag>
-		<English>The term "composite" refers to any object that is made up of more than one material. Composites were used quite early in human history; composite bows have been discovered dating back to 1300 BC. The composite technology refers the late 20th Century invention of various metal and plastic composites with greater strength, lightness, and other special properties than the base materials.[PARAGRAPH:2]Kevlar, the modern battle armor, is a composite material. Modern tanks are constructed of steel-boron nitride composites. Stealth airplanes use composite materials that are much more difficult to spot on radar. The tungsten-carbide composite is used in drill bits and wedding rings. Composite materials often demand extremely complex and precise manufacturing processes. However expensive the process may be, the resulting material may have superior qualities that make them more than worth the expense.</English>
+		<Tag>TXT_KEY_TECH_COMPANIES_PEDIA</Tag>
+		<English>A company is a legal entity made up of an association of people, be they natural, legal, or a mixture of both, for carrying on a commercial or industrial enterprise. Company members share a common purpose and unite in order to focus their various talents and organize their collectively available skills or resources to achieve specific, declared goals.[PARAGRAPH:2]The Middles Ages saw continuous advances in financial tools, first in China, but later also in the Middle East and Europe. This enabled more successful organised cooperation between people, even over large geographic distances.[PARAGRAPH:2]Companies were often established to engage in trading ventures or for similar business purposes, especially to facilitate long distance trade. A similar development took place in military organisation: private military companies were established who offered their services to various powers in small and large conflicts. The most prominent examples include Swiss mercenaries and Italian condottieri.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1118,28 +958,24 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SOCIAL_CONTRACT</Tag>
-		<English>Social Contract</English>
-		<French>
-			<Text>Contrat social</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Social Contract</German>
-		<Italian>Social Contract</Italian>
-		<Spanish>Social Contract</Spanish>
+		<Tag>TXT_KEY_TECH_CONSERVATION</Tag>
+		<English>Conservation</English>
+		<French>Conservation</French>
+		<German>Conservation</German>
+		<Italian>Conservation</Italian>
+		<Spanish>Conservation</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SOCIAL_CONTRACT_QUOTE</Tag>
-		<English>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</English>
-		<French>"Chaque membre de la soci&#233;t&#233; poss&#232;de une inviolabilit&#233; fond&#233;e sur la justice qui a priorit&#233; sur tout, m&#234;me sur le bien-&#234;tre de tous les autres."[PARAGRAPH:2]- John Rawls, Th&#233;orie de la justice</French>
-		<German>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</German>
-		<Italian>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</Italian>
-		<Spanish>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</Spanish>
+		<Tag>TXT_KEY_TECH_CONSERVATION_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SOCIAL_CONTRACT_PEDIA</Tag>
-		<English>In both moral and political philosophy, the social contract or political contract is a theory or model, originating during the Age of Enlightenment, that typically addresses the questions of the origin of society and the legitimacy of the authority of the state over the individual. Social contract arguments typically posit that individuals have consented, either explicitly or tacitly, to surrender some of their freedoms and submit to the authority of the ruler or magistrate (or to the decision of a majority), in exchange for protection of their remaining rights. The question of the relation between natural and legal rights, therefore, is often an aspect of social contract theory.[PARAGRAPH:2]Although the antecedents of social contract theory are found in antiquity, in Greek and Stoic philosophy and Roman and Canon Law, the heyday of the social contract was the mid-17th to early 19th centuries, when it emerged as the leading doctrine of political legitimacy. The starting point for most social contract theories is an examination of the human condition absent any political order that Thomas Hobbes termed the "state of nature". In this condition, individuals' actions are bound only by their personal power and conscience. From this shared starting point, social contract theorists seek to demonstrate, in different ways, why a rational individual would voluntarily consent to give up their natural freedom to obtain the benefits of political order.</English>
+		<Tag>TXT_KEY_TECH_CONSERVATION_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1184,59 +1020,28 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CONTRACT</Tag>
-		<English>Contract</English>
+		<Tag>TXT_KEY_TECH_CONSUMERISM</Tag>
+		<English>Consumerism</English>
 		<French>
-			<Text>Contrat</Text>
+			<Text>Consum&#233;risme</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Contract</German>
-		<Italian>Contract</Italian>
-		<Spanish>Contract</Spanish>
+		<German>Consumerism</German>
+		<Italian>Consumerism</Italian>
+		<Spanish>Consumerism</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CONTRACT_QUOTE</Tag>
-		<English>"Men keep their agreements when it is an advantage to both parties not to break them; and I shall so frame my laws that it will be evident to the Athenians that it will be for their interest to observe them."[PARAGRAPH:2]- Solon of Athens</English>
-		<French>"On respecte un accord si aucune des parties n'a int&#233;r&#234;t &#224; en transgresser les dispositions. Il en va de m&#234;me pour mes lois : je les adapte &#224; mes concitoyens afin de faire comprendre &#224; tous que respecter la justice vaut mieux que transgresser la loi."[PARAGRAPH:2]- Solon</French>
-		<German>"Men keep their agreements when it is an advantage to both parties not to break them; and I shall so frame my laws that it will be evident to the Athenians that it will be for their interest to observe them."[PARAGRAPH:2]- Solon of Athens</German>
-		<Italian>"Men keep their agreements when it is an advantage to both parties not to break them; and I shall so frame my laws that it will be evident to the Athenians that it will be for their interest to observe them."[PARAGRAPH:2]- Solon of Athens</Italian>
-		<Spanish>"Men keep their agreements when it is an advantage to both parties not to break them; and I shall so frame my laws that it will be evident to the Athenians that it will be for their interest to observe them."[PARAGRAPH:2]- Solon of Athens</Spanish>
+		<Tag>TXT_KEY_TECH_CONSUMERISM_QUOTE</Tag>
+		<English>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</English>
+		<French>"Plus d'une chose insignifiante a pris de l'ampleur gr&#226;ce &#224; une bonne publicit&#233;."[PARAGRAPH:2]- Mark Twain</French>
+		<German>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</German>
+		<Italian>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</Italian>
+		<Spanish>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CONTRACT_PEDIA</Tag>
-		<English>A contract is a voluntary arrangement between two or more parties that is enforceable by law as a binding legal agreement. A contract arises when the parties agree that there is an agreement. Formation of a contract generally requires an offer, acceptance, consideration, and a mutual intent to be bound. Some types of contracts may require formalities, such as a memorialization in writing.[PARAGRAPH:2]In The Laws, Plato recognized the same basic categories for cancelling agreements as exist today. Roman law identified discrete categories of contractual transaction, each with its own requirements, which needed to be fulfilled in order for promises to be enforced. More than appeared from the general rules in Ancient Greece, Roman law represented an early division between specific kinds of contract, depending on the transaction's nature.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_CROP_ROTATION</Tag>
-		<English>Crop Rotation</English>
-		<French>
-			<Text>Rotation des cultures</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Crop Rotation</German>
-		<Italian>Crop Rotation</Italian>
-		<Spanish>Crop Rotation</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_CROP_ROTATION_QUOTE</Tag>
-		<English>"Don't judge each day by the harvest you reap but by the seeds that you plant."[PARAGRAPH:2]- Robert Louis Stevenson</English>
-		<French>"Ne juge pas chaque jour &#224; la r&#233;colte que tu fais mais aux graines que tu s&#232;mes."[PARAGRAPH:2]- Robert Louis Stevenson</French>
-		<German>"Don't judge each day by the harvest you reap but by the seeds that you plant."[PARAGRAPH:2]- Robert Louis Stevenson</German>
-		<Italian>"Don't judge each day by the harvest you reap but by the seeds that you plant."[PARAGRAPH:2]- Robert Louis Stevenson</Italian>
-		<Spanish>"Don't judge each day by the harvest you reap but by the seeds that you plant."[PARAGRAPH:2]- Robert Louis Stevenson</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_CROP_ROTATION_PEDIA</Tag>
-<English>Crop rotation is the practice of planting different species of crops in the same field in a continuous cycle. This is extremely useful as a way to improve farm productivity, because any given crop will absorb certain nutrients from the soil while leaving others in place or even enriching them. Over time, growing the same crops in a field over and over will exhaust its nutrients and make it useless. By rotating crops, a farmer can intersperse these periods of nutrient drain with periods where the crops actively replenish the soil; this is often achieved using legume crops such as beans, which enrich soil with nitrogen that many other plants need to grow.[PARAGRAPH:2]Crop rotation was introduced in various parts of the world during the classical and medieval periods. Over time it has become a more complex practice; each improvement in crop rotation practices provided a boost in agricultural productivity. While today, chemical fertilizers often take the place of crop rotation by replacing soil nutrients artificially, crop rotation remains an important technique for farmers to know, especially if they wish to avoid relying totally on the fertilizer supply.</English>
+		<Tag>TXT_KEY_TECH_CONSUMERISM_PEDIA</Tag>
+		<English>Marketing is the practice of persuading people that an object, idea, or behavior is desirable (and worth paying for). Marketing has existed in some form since prehistoric times; one may speculate that the first marketing activities were invented within five minutes of the first invention of commerce.  The development of mass media such as broadcast radio, print journalism, and film made it possible to market on a larger scale. The rise of a working and middle class in developed societies with enough disposable income to buy luxury goods made it desirable to do so. The growth of modern industrial corporations that could produce goods in immense quantities made it necessary to do so.[PARAGRAPH:2]Common practices in modern marketing include direct personal approaches, flattery of the customer, praise of the product (intellectually honest or otherwise), and efforts to make the seller appear sympathetic and likeable to the prospective buyer. The main difference is that all these things are now transmitted from the individual advertiser to the mass of the population through new communications technology such as printing, broadcasts, or the Internet.[PARAGRAPH:2]The practice of marketing is often criticized for dishonesty, for misleading people into paying for that which is useless to them, for encouraging people to go into debt, and for discouraging people from thrift and from building up savings for the future. It is also criticized for the increasingly intrusive way in which, in the modern computerized era, marketers use "big data" to analyze individuals' purchasing habits and tailor advertisements to them. This is widely regarded as intrusive, and as having ominous implications for the individual's privacy and control over their own life in the future.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1281,86 +1086,24 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CYBERNETICS</Tag>
-		<English>Cybernetics</English>
-		<French>Cybern&#233;tique</French>
-		<German>Cybernetics</German>
-		<Italian>Cybernetics</Italian>
-		<Spanish>Cybernetics</Spanish>
+		<Tag>TXT_KEY_TECH_DIPLOMACY</Tag>
+		<English>Diplomacy</English>
+		<French>Diplomacy</French>
+		<German>Diplomacy</German>
+		<Italian>Diplomacy</Italian>
+		<Spanish>Diplomacy</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CYBERNETICS_QUOTE</Tag>
-		<English>"If the brain were so simple we could understand it, we would be so simple we couldn't."[PARAGRAPH:2]- Lyall Watson</English>
-		<French>"Si notre cerveau &#233;tait suffisamment simple pour que nous le comprenions, nous serions si simples d'esprit que nous ne le comprendrions pas."[PARAGRAPH:2]- Lyall Watson</French>
-		<German>"If the brain were so simple we could understand it, we would be so simple we couldn't."[PARAGRAPH:2]- Lyall Watson</German>
-		<Italian>"If the brain were so simple we could understand it, we would be so simple we couldn't."[PARAGRAPH:2]- Lyall Watson</Italian>
-		<Spanish>"If the brain were so simple we could understand it, we would be so simple we couldn't."[PARAGRAPH:2]- Lyall Watson</Spanish>
+		<Tag>TXT_KEY_TECH_DIPLOMACY_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CYBERNETICS_PEDIA</Tag>
-		<English>Cybernetics is a term coined by pioneering computer scientist Norbert Wiener, referring to the science of studying control systems, organization, and information flow. This is a relatively new field of research, dating to the mid-20th century. Cyberneticists seek to understand how decisions are made, and how to improve the process using systematic, scientific methods. This is particularly important in the fields of automation and computer programming. Setting up a computer to do a job in a human's place cannot be done unless the computer's programmers and users understand how it is to make the necessary decisions: how the computer 'thinks.' Cybernetics also finds use in management of human beings, because its theories can be applied to the flow of information and decisions up and down a chain of command, among a peer group, or through other social structures.[PARAGRAPH:2]More colloquially, "cybernetics" is often used to refer to advanced automation, or to a mixture of organic and machine technology, particularly in the context of the newly-dawning Information Age. Naturally, this is tied into the research described above - one can hardly design an advanced robot without knowing how to build a decision-making computer.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_DIVINATION</Tag>
-		<English>Divination</English>
-		<French>
-			<Text>Divination</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Divination</German>
-		<Italian>Divination</Italian>
-		<Spanish>Divination</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_DIVINATION_QUOTE</Tag>
-		<English>"Our remedies oft in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</English>
-		<French>"Souvent, nous avons en nous les rem&#232;des que nous attendons du ciel."[PARAGRAPH:2]- William Shakespeare, Tout est bien qui finit bien</French>
-		<German>"Our remedies of in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</German>
-		<Italian>"Our remedies of in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</Italian>
-		<Spanish>"Our remedies of in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_DIVINATION_PEDIA</Tag>
-		<English>People of the ancient world were fascinated and awed by the forces of nature surrounding them. Earthquakes, storms and other phenomena were generally regarded as signs from heaven. Individuals and groups arose to formulate explanations for these events, and pass the knowledge along to the tribe. The priests and priestesses of mysticism, often called oracles, claimed union with the divine through meditation and trance-like contemplation.[PARAGRAPH:2]Oracles across the world developed complex rites and rituals to appease and interact with gods and spirits. One of the most common forms of supernatural power invoked was divination - the ability to foretell the future using signs and portents such as dreams, the motions of the stars, the guts of sacrificial animals, the fracture lines in a tortoise's shell, visions experienced while under the influence of various drugs, and so on. Divination served the common human need to obtain information about the unknown future.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_DOCTRINE</Tag>
-		<English>Doctrine</English>
-		<French>
-			<Text>Dogme</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Doctrine</German>
-		<Italian>Doctrine</Italian>
-		<Spanish>Doctrine</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_DOCTRINE_QUOTE</Tag>
-		<English>"Clearly the person who accepts the church as an infallible guide will believe whatever the church teaches."[PARAGRAPH:2]- Thomas Aquinas, Summa Theologica</English>
-		<French>"Il est clair que celui qui adh&#232;re &#224; l'enseignement de l'&#201;glise comme &#224; une r&#232;gle infaillible, donne son assentiment &#224; tout ce que l'&#201;glise enseigne."[PARAGRAPH:2]- Saint Thomas d'Aquin, Somme th&#233;ologique</French>
-		<German>"Clearly the person who accepts the church as an infallible guide will believe whatever the church teaches."[PARAGRAPH:2]- Thomas Aquinas, Summa Theologica</German>
-		<Italian>"Clearly the person who accepts the church as an infallible guide will believe whatever the church teaches."[PARAGRAPH:2]- Thomas Aquinas, Summa Theologica</Italian>
-		<Spanish>"Clearly the person who accepts the church as an infallible guide will believe whatever the church teaches."[PARAGRAPH:2]- Thomas Aquinas, Summa Theologica</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_DOCTRINE_PEDIA</Tag>
-		<English>"Dogma" refers to a firmly established body of beliefs and opinions, generally associated with religion and laid out by respected theologians within the faith. Within that religion, the dogma is considered authoritative and final - it may be clarified or expanded upon, but not contradicted. To call the basic facts of the dogma into question is, by definition, to leave the religion for some other path which may be deemed heretical.[PARAGRAPH:2]Different religions have different core bodies of dogma, which usually focus on key points of doctrine that the religious leaders consider to be of extreme importance. In Christianity, the concept of salvation through faith in Christ is a matter of dogma, although the details of how this salvation may best be achieved can vary. In Islam, it is a point of dogma that Muhammed was the last of the divinely inspired prophets.[PARAGRAPH:2]Dogma is particularly important to organized religions, since it serves to define the limits of what can and cannot be accepted as part of the faith. Learning the basic principles outlined by the dogma is considered the universal foundation of education within the religious tradition, and among the scholarly figures of the religion, all knowledge and all philosophy is likely to be interpreted through the dogma's lens. Groups which defy dogma are often forced to recant, removed from positions of official responsibility, and even violently persecuted until they rejoin the fold, flee, or die.[PARAGRAPH:2]The concept of points of dogma that a society will not tolerate violation of is not unique to religion. Many totalitarian societies feature secular political 'dogma', de facto or de jure, which cannot be violated without the hostile attentions of the state.</English>
+		<Tag>TXT_KEY_TECH_DIPLOMACY_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1507,14 +1250,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ELECTRICITY_HELP</Tag>
-		<English>[ICON_BULLET]Diplomatic contact is maintained indefinitely</English>
-		<French>[ICON_BULLET]Diplomatic contact is maintained indefinitely</French>
-		<German>[ICON_BULLET]Diplomatic contact is maintained indefinitely</German>
-		<Italian>[ICON_BULLET]Diplomatic contact is maintained indefinitely</Italian>
-		<Spanish>[ICON_BULLET]Diplomatic contact is maintained indefinitely</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_TECH_ELECTRICITY_QUOTE</Tag>
 		<English>"We will make electricity so cheap that only the rich will burn candles."[PARAGRAPH:2]- Thomas Edison</English>
 		<French>"L'&#233;lectricit&#233; sera si bon march&#233; que seuls les riches s'&#233;claireront encore &#224; la bougie."[PARAGRAPH:2]- Thomas Edison</French>
@@ -1548,6 +1283,64 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_ELECTRONICS_PEDIA</Tag>
 		<English>The field of electronics deals with the practical application and manipulation of electricity and electromagnetic phenomena. The invention of the vacuum tube in the early 20th century marked the beginning of modern electronics. The vacuum tube was capable of amplifying weak radio signals, allowing them to be transmitted over greater distances. Vacuum tubes also allowed music and voice to be superimposed onto radio waves for transmission. The early study of electronics revolutionized a number of fields, especially the field of communications. Because of the vacuum tube, the technology of radio communications was highly developed by World War II. After the war, electronics research continued to advance rapidly. Post-war advances include the earliest examples of digital computers and, eventually, transistors and integrated circuits: miniaturized replacements for the vacuum tube.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EMANCIPATION</Tag>
+		<English>Emancipation</English>
+		<French>Emancipation</French>
+		<German>Emancipation</German>
+		<Italian>Emancipation</Italian>
+		<Spanish>Emancipation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EMANCIPATION_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EMANCIPATION_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ENGINE</Tag>
+		<English>Engine</English>
+		<French>
+			<Text>Moteur</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Engine</German>
+		<Italian>Engine</Italian>
+		<Spanish>Engine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ENGINE_QUOTE</Tag>
+		<English>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</English>
+		<French>"La nature, en nous offrant de toutes parts le combustible, nous a donn&#233; la facult&#233; de faire na&#238;tre en tous temps et en tous lieux la chaleur et la puissance motrice qui en est la suite."[PARAGRAPH:2]- Sadi Carnot, R&#233;flexions sur la puissance motrice du feu</French>
+		<German>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</German>
+		<Italian>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</Italian>
+		<Spanish>"Nature, in providing us with combustibles on all sides, has given us the power to produce, at all times and in all places, heat and the impelling power which is the result of it."[PARAGRAPH:2]- Sadi Carnot, Reflections on the Motive Power of Heat</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ENGINE_PEDIA</Tag>
+		<English>An engine or motor is a machine designed to convert one form of energy into mechanical energy. Heat engines burn a fuel to create heat, which is then used to create a force. Electric motors convert electrical energy into mechanical motion; pneumatic motors use compressed air and clockwork motors in wind-up toys use elastic energy.[PARAGRAPH:2]Internal combustion piston engines  were tested in France in 1807 by de Rivaz and independently, by the Ni&#233;pce brothers. They were theoretically advanced by Carnot in 1824. In 1853-57 Eugenio Barsanti and Felice Matteucci invented and patented an engine using the free-piston principle that was possibly the first 4-cycle engine.[PARAGRAPH:2]The invention of an internal combustion engine which was later commercially successful was made during 1860 by Etienne Lenoir. The Otto cycle in 1877 was capable of giving a far higher power to weight ratio than steam engines and worked much better for many transportation applications such as cars and aircraft.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1592,37 +1385,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ETHICS</Tag>
-		<English>Ethics</English>
-		<French>
-			<Text>&#201;thique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ethics</German>
-		<Italian>Ethics</Italian>
-		<Spanish>Ethics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ETHICS_QUOTE</Tag>
-		<English>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</English>
-		<French>"Agis uniquement d'apr&#232;s la maxime qui fait que tu peux vouloir en m&#234;me temps qu'elle devienne une loi universelle."[PARAGRAPH:2]- Emmanuel Kant, Fondements de la m&#233;taphysique des m&#339;urs</French>
-		<German>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</German>
-		<Italian>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</Italian>
-		<Spanish>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ETHICS_PEDIA</Tag>
-		<English>Ethics is the philosophical study which addresses moral questions - matters of right and wrong, virtue and vice, justice and injustice. This has preoccupied thinkers since ancient times, but formal discussion and contemplation of ethics as a logic-based endeavour, as distinct from traditions of religious or secular law, are mostly a product of the classical and medieval periods.[PARAGRAPH:2]Different cultures produce widely divergent schools of ethics, ranging from the law-oriented systems common in China to the relatively individualist virtue-ethical schools of the ancient Greeks. Ethics may be highly abstract or applied as a practical matter to questions of professional conduct and personal behavior. They may emphasize the intent of the moral actor, the fulfillment of certain laws and precepts, the consequences of the action itself, or any combination of the above.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_EVANGELISM</Tag>
 		<English>Evangelism</English>
 		<French>&#201;vang&#233;lisme</French>
@@ -1641,6 +1403,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_EVANGELISM_PEDIA</Tag>
 		<English>Evangelism is an interpretation of religion which sees expanding itself as a sacred duty. This view begins with the idea of a specific religion as being at the centre of one's existence. To the evangelist, it isn't simply a matter of appeasing one's own gods, with other people having other gods. It isn't a matter of trying to become personally enlightened. No, this enlightenment must be spread to others, or the reverence of this god must be something that it would be good for everyone to share.[PARAGRAPH:2]Therefore, to the evangelist, the very existence of unbelievers is a disastrous state of the world. It is a crisis facing the souls of the human race, an emptiness in the collective spirit of humanity, and possibly a personal insult as well. Evangelists will go forth and preach to others, converting outsiders to the faith, and to their own specific versions of the faith- by hook or by crook.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EXPLOITATION</Tag>
+		<English>Exploitation</English>
+		<French>Exploitation</French>
+		<German>Exploitation</German>
+		<Italian>Exploitation</Italian>
+		<Spanish>Exploitation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EXPLOITATION_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EXPLOITATION_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1693,94 +1482,24 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_EXPLOSIVES</Tag>
-		<English>Explosives</English>
-		<French>Explosifs</French>
-		<German>Explosives</German>
-		<Italian>Explosives</Italian>
-		<Spanish>Explosives</Spanish>
+		<Tag>TXT_KEY_TECH_FEDERALISM</Tag>
+		<English>Federalism</English>
+		<French>Federalism</French>
+		<German>Federalism</German>
+		<Italian>Federalism</Italian>
+		<Spanish>Federalism</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_EXPLOSIVES_QUOTE</Tag>
-		<English>"You can bomb the world to pieces but you can't bomb it into peace."[PARAGRAPH:2]- Michael Franti</English>
-		<French>"You can bomb the world to pieces but you can't bomb it into peace."[PARAGRAPH:2]- Michael Franti</French>
-		<German>"You can bomb the world to pieces but you can't bomb it into peace."[PARAGRAPH:2]- Michael Franti</German>
-		<Italian>"You can bomb the world to pieces but you can't bomb it into peace."[PARAGRAPH:2]- Michael Franti</Italian>
-		<Spanish>"You can bomb the world to pieces but you can't bomb it into peace."[PARAGRAPH:2]- Michael Franti</Spanish>
+		<Tag>TXT_KEY_TECH_FEDERALISM_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_EXPLOSIVES_PEDIA</Tag>
-		<English>An explosive is a chemical compound or mixture that undergoes rapid combustion and produces heat, gas, and pressure effects. The earliest explosive compound known was gunpowder, which was first used in the13th century, and was the only explosive known for hundreds of years. The first modern explosive, a compound known as nitroglycerin, was discovered in 1846. Compounds similar to nitroglycerin are the most commonly used explosives today. Explosives vary in brisance, or shattering effect, and in their stability under various environmental conditions. Aside from their obvious use in weaponry, explosives are also used in such peaceful applications as rocket propellants and for mining and demolition work.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FERTILIZER</Tag>
-		<English>Fertilizer</English>
-		<French>Engrais</French>
-		<German>Fertilizer</German>
-		<Italian>Fertilizer</Italian>
-		<Spanish>Fertilizer</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FERTILIZER_QUOTE</Tag>
-		<English>"If the grass on the other side of the fence appears greener, it must be all the fertilizer they are using."[PARAGRAPH:2]- Kevin Rodowicz</English>
-		<French>"If the grass on the other side of the fence appears greener, it must be all the fertilizer they are using."[PARAGRAPH:2]- Kevin Rodowicz</French>
-		<German>"If the grass on the other side of the fence appears greener, it must be all the fertilizer they are using."[PARAGRAPH:2]- Kevin Rodowicz</German>
-		<Italian>"If the grass on the other side of the fence appears greener, it must be all the fertilizer they are using."[PARAGRAPH:2]- Kevin Rodowicz</Italian>
-		<Spanish>"If the grass on the other side of the fence appears greener, it must be all the fertilizer they are using."[PARAGRAPH:2]- Kevin Rodowicz</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FERTILIZER_PEDIA</Tag>
-		<English>Fertilizers are substances which increase the fertility of soil by introducing nutrients that are often lacking. Since deficiencies in substances like nitrogen, phosphorus, and potassium are often bottlenecks in plant growth, fertilizer makes plants to grow larger and more quickly. This is especially desirable in agriculture as it allows the same land to feed more people.[PARAGRAPH:2]Fertilization has been a common practice throughout the civilized world since prehistoric times. Farmers in nearly all places fertilized their fields with simple materials like animal (or human) dung, ground-up fish remains, or potsherds (most fertile soil in the Amazon basin is laced with broken pottery, and this appears to have been deliberate on the natives' part).[PARAGRAPH:2]During the 19th and 20th centuries, the range of available fertilizers grew dramatically. Industrial-scale extraction of minerals, particularly nitrates and phosphates, allowed vast increases in farm output. Advances in industrial chemistry allowed factories to create fully synthetic fertilizers too, using customized organic molecules to speed the growth of crops and inhibit the growth of weeds and parasites. This contributes to the success of the "Green Revolution" of the 1960s and 1970s at feeding a world population of seven billion and rising.[PARAGRAPH:2]In general, fertilizer achieves varying success. Used carelessly, it may not contribute to soil fertility (adding more of what's already there is pointless), or even decrease it (adding enough phosphorus to maximize growth may result in all the carbon in the soil being used up quickly). This is a particularly serious problem with "Green Revolution" crops in the modern era. Furthermore, careless or excessive use can lead to fertilizer seeping into waterways, causing oxygen depletion, algal blooms, and other ecological problems.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FEUDALISM</Tag>
-		<English>Feudalism</English>
-		<French>
-			<Text>F&#233;odalisme</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Feudalismus</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Feudalesimo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Feudalismo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FEUDALISM_QUOTE</Tag>
-		<English>"I will to my lord be true and faithful and love all which he loves and shun all which he shuns."[PARAGRAPH:2]- Anglo-Saxon Oath of Fealty</English>
-		<French>"Je jure loyaut&#233; et fid&#233;lit&#233; &#224; mon seigneur, j'aimerai ce qu'il aime et me d&#233;tournerai de ce dont il se d&#233;tourne."[PARAGRAPH:2]- Serment d'all&#233;geance anglo-saxon</French>
-		<German>"Ich werde meinem Herrn treue Dienste leisten. Seine Feinde sollen auch meine Feinde sein."[PARAGRAPH:2]- Angels&#228;chsischer Treueeid</German>
-		<Italian>"Sono devoto e credo nel mio Signore, amo ci&#242; che lui ama e rifuggo ci&#242; che lui rifugge."[PARAGRAPH:2]- Giuramento di fedelt&#224; anglosassone</Italian>
-		<Spanish>"Ser&#233; fiel y sincero para con mi se&#241;or, y amar&#233; todo lo que ame y abominar&#233; de todo lo que abomine."[PARAGRAPH:2]- Juramento de fidelidad anglosaj&#243;n</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FEUDALISM_PEDIA</Tag>
-		<English>Land tenure is the idea of a fixed, legalized ownership of land with a formal relationship between the landowner and their ruler. "Tenure" comes from a root verb meaning "to hold" the land in question. Under a land tenure system, all land is the property of the sovereign by default, but this land is granted to trusted individuals in permanent, usually inherited titles. This forms the foundation of what we now know as feudalism. In exchange for a grant of land for themself and their heirs, a feudal noble might promise to supply their ruler with troops, money, food, or other goods obtained from the productivity of the land itself.[PARAGRAPH:2]This saved the monarch from the burden of administering the territory directly and trying to collect taxes from it, and created a large class of aristocrats who owed their fortune and power to the throne. The pattern of tenancy could be scaled up and down easily, ranging from great territories held by powerful nobles down to individual farmers on their own plots granted to them by a local warlord.[PARAGRAPH:2]A feudal tenure-based system has drawbacks, however. Tenants' loyalty to the sovereign is often conditional, based on complicated webs of mutual obligations and exceptions to the legal code which make it difficult to change or reform the economy. Powerful feudal nobles may defect to an enemy intact to preserve their status in the face of invasion - or even scheme to seize control of the land themselves.</English>
+		<Tag>TXT_KEY_TECH_FEDERALISM_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1883,41 +1602,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_FISHING</Tag>
-		<English>Fishing</English>
-		<French>
-			<Text>P&#234;che</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Fischen</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Pesca</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Pesca</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FISHING_QUOTE</Tag>
-		<English>"Give a man a fish and you feed him for a day. Teach a man to fish and you feed him for a lifetime."[PARAGRAPH:2]- Lao Tzu</English>
-		<French>"Donne un poisson &#224; un homme et tu le nourris pour un jour, apprends-lui &#224; p&#234;cher et tu le nourris pour toujours."[PARAGRAPH:2]- Lao-Tseu</French>
-		<German>"Gib einem Menschen einen Fisch, und du ern&#228;hrst ihn f&#252;r einen Tag. Bring ihm bei zu fischen, und du ern&#228;hrst ihn sein Leben lang."[PARAGRAPH:2]- Laotse</German>
-		<Italian>"Un uomo pu&#242; saziarsi con un pesce al giorno. Un uomo che impara a pescare pu&#242; saziarsi per tutta la vita."[PARAGRAPH:2]- Lao Tzu</Italian>
-		<Spanish>"Si le das a un hombre un pescado, comer&#225; un d&#237;a. Si le ense&#241;as a pescar, comer&#225; toda la vida."[PARAGRAPH:2]- Lao Ts&#233;</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_FISSION</Tag>
 		<English>Fission</English>
 		<French>
@@ -1976,6 +1660,64 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_FORTIFICATION</Tag>
+		<English>Fortification</English>
+		<French>
+			<Text>Fortification</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Fortification</German>
+		<Italian>Fortification</Italian>
+		<Spanish>Fortification</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_FORTIFICATION_QUOTE</Tag>
+		<English>"It is from their foes, not their friends, that cities learn the lesson of building high walls."[PARAGRAPH:2]- Aristophanes, Birds</English>
+		<French>"Les cit&#233;s ont appris de leurs ennemis, et non de leurs amis, &#224; b&#226;tir des murailles &#233;lev&#233;es."[PARAGRAPH:2]- Aristophane, Les Oiseaux</French>
+		<German>"Nicht von ihren Freunden, sondern von ihren Feinden lernen St&#228;dte, hohe Mauern zu bauen."[PARAGRAPH:2]- Aristophanes</German>
+		<Italian>"&#200; dai nemici, non dagli amici, che le citt&#224; imparano la lezione di costruire alte mura."[PARAGRAPH:2]- Aristofane</Italian>
+		<Spanish>"Es de los enemigos, no de los amigos, que las ciudades aprenden la lecci&#243;n de construir murallas altas."[PARAGRAPH:2]- Arist&#243;fanes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_FORTIFICATION_PEDIA</Tag>
+		<English>Fortifications are structures built to aid in the defense of a point or area against attackers. Various types of fortification have existed since prehistoric times: the proto-city of Jericho was protected by a wall over three meters high as early as 9000 BCE, although this may have been as much a flood control measure as a military defense. The growth of civilization and advances in the killing power of weapons made fixed defenses ever more important.[PARAGRAPH:2]The basic concept of walling a city is to deter casual raiders and force even a determined army into a protracted, costly siege. Incorporating defensible features into buildings, such as narrow windows and entryways, provides cover to defenders and make it hard for attackers to push into the building safely.[PARAGRAPH:2]Advances in engineering during medieval times, and larger labor forces made available by advances in agriculture, allowed a great increase in the scale of defensive works. Entire provinces could be protected by walls like the famous Great Wall of China, or Hadrian's Wall in Britain. Individual points could be held with great castles and fortresses, strong enough that it would take years of siege to starve them out, as a mass assault by soldiers using normal means was guaranteed to fail.[PARAGRAPH:2]This goal of demanding multi-year sieges became impractical with the invention of gunpowder-based artillery, but the art of fortification remained prominent. Architects devised new ways to build defenses that would absorb and deflect cannon fire, sheltering troops from enemy guns and channeling attackers into zones where the defenders' guns could be brought to bear.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_FREE_MARKET</Tag>
+		<English>Free Market</English>
+		<French>Free Market</French>
+		<German>Free Market</German>
+		<Italian>Free Market</Italian>
+		<Spanish>Free Market</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_FREE_MARKET_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_FREE_MARKET_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_FUSION</Tag>
 		<English>Fusion</English>
 		<French>
@@ -2006,37 +1748,6 @@
 		<German>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</German>
 		<Italian>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</Italian>
 		<Spanish>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GENERALSHIP</Tag>
-		<English>Generalship</English>
-		<French>
-			<Text>G&#233;n&#233;ralat</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Generalship</German>
-		<Italian>Generalship</Italian>
-		<Spanish>Generalship</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GENERALSHIP_QUOTE</Tag>
-		<English>"Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win."[PARAGRAPH:2]- Sun Tzu, The Art of War</English>
-		<French>"Le vainqueur triomphe avant m&#234;me de partir &#224; la guerre, le vaincu part &#224; la guerre puis r&#234;ve de triomphe."[PARAGRAPH:2]- Sun Tzu, L'Art de la guerre</French>
-		<German>"Der General, der eine Schlacht gewinnt, stellt vor dem Kampf viele Berechnungen an. Der General, der verliert, stellt vorher kaum Berechnungen an."[PARAGRAPH:2]- Sun-Tzu</German>
-		<Italian>"I guerrieri vittoriosi prima vincono e poi vanno in guerra; quelli sconfitti, prima vanno in guerra e poi cercano di vincere."[PARAGRAPH:2]- Sun-Tzu</Italian>
-		<Spanish>"Los guerreros vencedores ganan primero y luego van a la guerra, mientras que los perdedores van a la guerra primero y luego pretenden ganar."[PARAGRAPH:2]- Sun Tzu</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GENERALSHIP_PEDIA</Tag>
-		<English>In the early ancient world, armies mostly consisted of militia and levies that were only raised in the event of war. These armies were usually small enough and the ensuing warfare limited enough to be directly commanded by their political leaders.[PARAGRAPH:2]During the Roman Republic and later Empire, armies became increasingly professionalised, especially after the Marian reforms. The large extent of the Roman Empire also made it impractical for their leadership to exercise direct control over the military. Similar developments also took place in the Chinese Han dynasty.[PARAGRAPH:2]This development conferred more military and political power to the generals entrusted with military command. While this made armies more professional and successful, it also led to a different distribution of power. In the Roman Empire, generals were often the decisive factor in choosing the next emperor or disposing of an unsuccessful sitting emperor, contributing to the empires instability. In China, competing military warlords ultimately caused the collapse of the Han dynasty.[PARAGRAPH:2]This sort of political power based on military authority paved the way for the idea of nobility in the feudal sense and the system of feudalism in the Middle Ages.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -2108,6 +1819,33 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_GOVERNORS</Tag>
+		<English>Governors</English>
+		<French>Governors</French>
+		<German>Governors</German>
+		<Italian>Governors</Italian>
+		<Spanish>Governors</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GOVERNORS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GOVERNORS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_MATHEMATICS</Tag>
 		<English>Mathematics</English>
 		<French>
@@ -2138,6 +1876,33 @@
 		<German>"Nur mithilfe der Mathematik kann man wirklich wissen, denn in jeder Wissenschaft ist nur so viel an Wahrheit enthalten, wie in ihr Mathematik steckt."[PARAGRAPH:2]- Roger Bacon</German>
 		<Italian>"Se in altre scienze &#232; probabile raggiungere la certezza senza dubbio e senza errore, &#232; giusto porre le fondamenta del sapere nella matematica."[PARAGRAPH:2]- Roger Bacon</Italian>
 		<Spanish>"Si en las dem&#225;s ciencias hubi&#233;ramos de obtener la certeza sin dudas y la verdad sin errores, nos corresponder&#237;a basar el conocimiento en las Matem&#225;ticas."[PARAGRAPH:2]- Roger Bacon</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_METEOROLOGY</Tag>
+		<English>Meteorology</English>
+		<French>Meteorology</French>
+		<German>Meteorology</German>
+		<Italian>Meteorology</Italian>
+		<Spanish>Meteorology</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_METEOROLOGY_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_METEOROLOGY_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -2174,40 +1939,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_GUILDS</Tag>
-		<English>Guilds</English>
-		<French>
-			<Text>Guildes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Gilden</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Associazioni</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Gremios</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GUILDS_QUOTE</Tag>
-		<English>"People of the same trade seldom meet together, even for merriment and diversion, but the conversation ends in a conspiracy against the public."[PARAGRAPH:2]- Adam Smith, The Wealth of Nations</English>
-		<French>"Il est rare que des gens du m&#234;me m&#233;tier se trouvent r&#233;unis, f&#251;t-ce pour quelque partie de plaisir ou pour se distraire, sans que la conversation finisse par quelque conspiration contre le public."[PARAGRAPH:2]- Adam Smith, La Richesse des nations</French>
-		<German>"Gesch&#228;ftsleute des gleichen Gewerbes kommen selten, selbst zu Festen und zur Zerstreuung, zusammen, ohne dass das Gespr&#228;ch in einer Verschw&#246;rung gegen die &#214;ffentlichkeit endet."[PARAGRAPH:2]- Adam Smith</German>
-		<Italian>"&#200; raro che quelli che fanno lo stesso lavoro si riuniscano, nemmeno per divertirsi o fare baldoria, ma la conversazione termina sempre con una cospirazione ai danni della clientela."[PARAGRAPH:2]- Adam Smith</Italian>
-		<Spanish>"Gente del mismo oficio rara vez se re&#250;ne, ni tan solo para alegrarse o divertirse, sin que la conversaci&#243;n termine en una conspiraci&#243;n contra el p&#250;blico."[PARAGRAPH:2]- Adam Smith</Spanish>
-	</TEXT>
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_GUNPOWDER</Tag>
 		<English>Gunpowder</English>
 		<French>
@@ -2239,6 +1970,7 @@
 		<Italian>"The real use of gunpowder is to make all men tall."[PARAGRAPH:2]- Thomas Carlyle, Sartor Resartus</Italian>
 		<Spanish>"The real use of gunpowder is to make all men tall."[PARAGRAPH:2]- Thomas Carlyle, Sartor Resartus</Spanish>
 	</TEXT>
+
 
 
 	<TEXT>
@@ -2335,41 +2067,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_HUNTING</Tag>
-		<English>Hunting</English>
-		<French>
-			<Text>Chasse</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Jagd</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Caccia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Caza</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_HUNTING_QUOTE</Tag>
-		<English>"If you chase two rabbits, you will lose them both."[PARAGRAPH:2]- Native American proverb</English>
-		<French>"Chasse deux li&#232;vres &#224; la fois et tu n'en attraperas aucun."[PARAGRAPH:2]- Proverbe am&#233;rindien</French>
-		<German>"Der, der zwei Hasen jagt, l&#228;sst einen zur&#252;ck und verliert den anderen."[PARAGRAPH:2]- Indianisches Sprichwort</German>
-		<Italian>"Se dai la caccia a due conigli, li perderai entrambi."[PARAGRAPH:2]- Proverbio dei Nativi Americani</Italian>
-		<Spanish>"Si persigues a dos conejos al mismo tiempo, los perder&#225;s a ambos."[PARAGRAPH:2]- Dicho de los ind&#237;genas americanos</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_HYDRAULICS</Tag>
 		<English>Hydraulics</English>
 		<French>
@@ -2401,6 +2098,87 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_IMPERIALISM</Tag>
+		<English>Imperialism</English>
+		<French>Imperialism</French>
+		<German>Imperialism</German>
+		<Italian>Imperialism</Italian>
+		<Spanish>Imperialism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IMPERIALISM_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IMPERIALISM_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDEPENDENCE</Tag>
+		<English>Independence</English>
+		<French>Independence</French>
+		<German>Independence</German>
+		<Italian>Independence</Italian>
+		<Spanish>Independence</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDEPENDENCE_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDEPENDENCE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDENTURES</Tag>
+		<English>Indentures</English>
+		<French>Indentures</French>
+		<German>Indentures</German>
+		<Italian>Indentures</Italian>
+		<Spanish>Indentures</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDENTURES_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_INDENTURES_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_INFRASTRUCTURE</Tag>
 		<English>Infrastructure</English>
 		<French>
@@ -2423,33 +2201,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_INFRASTRUCTURE_PEDIA</Tag>
 		<English>Infrastructure is the collective term for all those facilities and systems by which it is possible for human civilizations to carry out productive enterprises and maintain a functional economy. Examples of infrastructure assets include but are not limited to transportation facilities, electrical power grids, financial systems, water supplies, waste disposal facilities, flood control facilities, lighthouses, telecommunication networks, and arguably systems designed to provide services directly to the public such as education systems, law enforcement, public housing, and state-funded hospitals.[PARAGRAPH:2]Some types of infrastructure are nearly always created, maintained, and administered by government agencies. Others lend themselves better to privatization. The question of whether infrastructure should be publicly or privately owned is often hotly debated.[PARAGRAPH:2]The increasingly elaborate nature of infrastructure in advanced, developed societies is one of the main reasons they represent such a vast change in terms of lifestyle and quality of life from pre-industrial times. Industrial-scale projects make it possible to provide basic necessities of life to all citizens with little difficulty, enabling people to concentrate on things other than providing for their sustenance. For instance, a public water system that pipes drinkable water into every home saves a great deal of time and energy compared to requiring every individual to operate their own well, or draw water from a nearby river or lake. It is also possible to make such a water system much healthier and safer than individuals could do alone, and to provide quantities of water that would be an immense laborious undertaking in the absence of the general system of waterworks.[PARAGRAPH:2]While infrastructure makes us safe and prosperous, however, it can also make us vulnerable. Managing infrastructure with safety and reliability can require complex bureaucracy and confining regulations. And in times of war or natural disaster, large parts of a society's infrastructure may be destroyed, forcing thousands or millions of people to do without essential things which they had never lacked before.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_INSURANCE</Tag>
-		<English>Insurance</English>
-		<French>Assurance</French>
-		<German>Insurance</German>
-		<Italian>Insurance</Italian>
-		<Spanish>Insurance</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_INSURANCE_QUOTE</Tag>
-		<English>"Insurance - an ingenious modern game of chance in which the player is permitted to enjoy the comfortable conviction that he is beating the man who keeps the table."[PARAGRAPH:2]- Ambrose Bierce</English>
-		<French>"Insurance - an ingenious modern game of chance in which the player is permitted to enjoy the comfortable conviction that he is beating the man who keeps the table."[PARAGRAPH:2]- Ambrose Bierce</French>
-		<German>"Insurance - an ingenious modern game of chance in which the player is permitted to enjoy the comfortable conviction that he is beating the man who keeps the table."[PARAGRAPH:2]- Ambrose Bierce</German>
-		<Italian>"Insurance - an ingenious modern game of chance in which the player is permitted to enjoy the comfortable conviction that he is beating the man who keeps the table."[PARAGRAPH:2]- Ambrose Bierce</Italian>
-		<Spanish>"Insurance - an ingenious modern game of chance in which the player is permitted to enjoy the comfortable conviction that he is beating the man who keeps the table."[PARAGRAPH:2]- Ambrose Bierce</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_INSURANCE_PEDIA</Tag>
-		<English>Insurance is, at its core, a way of managing risk using contracts and the legal system. An insurance policy guarantees to the individual that, in the event that they suffer some sort of defined loss, they will be compensated for the resulting damages. This is widely desired in the modern world because a single accident can cause life-altering, massive consequences for individuals, or even for large organizations. Durable items of property such as complex machines, homes, and workplaces represent the accumulated hard work of years, and can be lost overnight in case of emergency. It is seldom practical for individuals and corporations to store up enough money to replace the losses quickly, so such emergencies can lead to ruin.[PARAGRAPH:2]Insurance systems operate by collecting small "premiums" of money from a large base of clients, and then pooling this money to use in case a disaster strikes any one of the clients. Since the disasters are generally highly unlikely, spreading the risk of loss and damage among numerous clients can reduce the cost of insurance to a very manageable level. The use of scientific statistical calculations can predict the risk of disaster and allow the insurance provider to tailor their coverage to the individual - those who are deemed 'high risk' typically end up paying larger premiums. This is meant to compensate for the increased danger that the insurer will have to pay to cover the accidents they are likely to suffer.[PARAGRAPH:2]Insurance is an extremely complex field morally, economically, and legally. Insurance companies often hold onto large sums of money, and by the nature of their business tend to extract considerable profit from the fear of crises, from those who fear illness, injury, or property damage. Insurance contracts can be immensely complicated in an attempt to limit the insurance company's payout in case the client acts in ways they deem improper.[PARAGRAPH:2]However, insurance is likely to remain a permanent part of civilized life, a direct result of the human desire to reduce the risks of life in a dangerous world - and to replace them with steady, predictable costs of doing business.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -2521,46 +2272,19 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_JURISPRUDENCE</Tag>
-		<English>Jurisprudence</English>
-		<French>Jurisprudence</French>
-		<German>Jurisprudence</German>
-		<Italian>Jurisprudence</Italian>
-		<Spanish>Jurisprudence</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_JURISPRUDENCE_QUOTE</Tag>
-		<English>"A precedent embalms a principle."[PARAGRAPH:2]- Benjamin Disraeli</English>
-		<French>"A precedent embalms a principle."[PARAGRAPH:2]- Benjamin Disraeli</French>
-		<German>"A precedent embalms a principle."[PARAGRAPH:2]- Benjamin Disraeli</German>
-		<Italian>"A precedent embalms a principle."[PARAGRAPH:2]- Benjamin Disraeli</Italian>
-		<Spanish>"A precedent embalms a principle."[PARAGRAPH:2]- Benjamin Disraeli</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_JURISPRUDENCE_PEDIA</Tag>
-		<English>Jurisprudence is the theory of making legal decisions, and is practiced by judges, juries, magistrates, or other individuals or groups that are empowered to determine the right or wrong in matters of law. Jurisprudence can relate to questions about the law in and of itself, such as whether a particular case contradicts some principle enshrined in a particular nation's law. Or it can relate to questions about whether the laws are just and appropriate, and whether they are being appropriately enforced, in light of their social consequences.[PARAGRAPH:2]Many ancient societies developed bodies of law and particular methods by which a case could be judged according to the law. In many cases the law was supplemented by what is called 'precedent' - the idea that if courts have decided in the past that a certain act is legal or illegal, or that certain responses are appropriate to a certain situation, then those same decisions should be repeated in new cases, rather than changed. Observing precedent has the effect of making law more orderly and predictable, making it easier to be certain whether or not one is obeying the law, and minimizing the risk that a judge will make an inappropriate decision for personal reasons.[PARAGRAPH:2]Jurisprudence was further developed in the Middle Ages as scholarship spread and legal systems grew more complex. In Renaissance-era Europe, in Islam during the Golden Age, in China during the Tang and later dynasties, and so forth. An immense variety of philosophies of jurisprudence then evolved and continued to flourish, as each society pursued its respective concepts of law and justice, in an attempt to establish a benevolent order throught their lands.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_LABOUR_UNIONS</Tag>
-		<English>Labour Unions</English>
+		<Tag>TXT_KEY_TECH_LABOR_UNIONS</Tag>
+		<English>Labor Unions</English>
 		<French>
 			<Text>Syndicats</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
-		<German>Labour Unions</German>
-		<Italian>Labour Unions</Italian>
-		<Spanish>Labour Unions</Spanish>
+		<German>Labor Unions</German>
+		<Italian>Labor Unions</Italian>
+		<Spanish>Labor Unions</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LABOUR_UNIONS_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_LABOR_UNIONS_QUOTE</Tag>
 		<English>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</English>
 		<French>"Que les ouvriers s'organisent, que les travailleurs s'assemblent ! Que leur voix cristallis&#233;e d&#233;nonce l'injustice et exige des privil&#232;ges ! Que chaque citoyen charitable les soutienne !"[PARAGRAPH:2]- John L. Lewis</French>
 		<German>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</German>
@@ -2568,7 +2292,7 @@
 		<Spanish>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LABOUR_UNIONS_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_LABOR_UNIONS_PEDIA</Tag>
 		<English>Labour unions arose in the 18th and 19th century in response to the poor working conditions brought on by an intense competition for jobs, and the increasing dependence of the working class on their employers created by the move toward industrialization. Early labour unions, formed by skilled labourers in specific fields, met with opposition from both employers and the government. In the 19th century, laws were passed legalizing labour unions, and by the 20th century unions were formed in semi- or unskilled fields such as mining, transportation, and dock working. Binding their interests together and bargaining collectively, labour unions forced factory and business owners to provide better working conditions and economic status for their workers.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
@@ -2643,72 +2367,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LEVERAGE</Tag>
-		<English>Leverage</English>
-		<French>
-			<Text>Effet de levier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Leverage</German>
-		<Italian>Leverage</Italian>
-		<Spanish>Leverage</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_LEVERAGE_QUOTE</Tag>
-		<English>"Give me a lever long enough, and a fulcrum on which to place it, and I shall move the world."[PARAGRAPH:2]- Archimedes</English>
-		<French>"Donnez-moi un point fixe et un levier, et je soul&#232;verai la Terre."[PARAGRAPH:2]- Archim&#232;de</French>
-		<German>"Give me a lever long enough, and a fulcrum on which to place it, and I shall move the world."[PARAGRAPH:2]- Archimedes</German>
-		<Italian>"Give me a lever long enough, and a fulcrum on which to place it, and I shall move the world."[PARAGRAPH:2]- Archimedes</Italian>
-		<Spanish>"Give me a lever long enough, and a fulcrum on which to place it, and I shall move the world."[PARAGRAPH:2]- Archimedes</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_LEVERAGE_PEDIA</Tag>
-		<English>Leverage is the general principle behind all early mechanisms that rely on mechanical advantage. The six classical simple machines are: lever, wheel and axle, pulley, inclined plane, wedge and screw. [PARAGRAPH:2]A simple machine uses a single applied force to do work against a single load force. Ignoring friction losses, the work done on the load is equal to the work done by the applied force. The machine can increase the amount of the output force, at the cost of a proportional decrease in the distance moved by the load. The ratio of the output to the applied force is called the mechanical advantage.[PARAGRAPH:2]Simple machines can be regarded as the elementary "building blocks" of which all more complicated machines (sometimes called "compound machines") are composed. For example, wheels, levers, and pulleys are all used in the mechanism of a bicycle. The mechanical advantage of a compound machine is just the product of the mechanical advantages of the simple machines of which it is composed.[PARAGRAPH:2]The idea of a simple machine originated with the Greek philosopher Archimedes around the 3rd century BC, who studied the Archimedean simple machines: lever, pulley, and screw. He discovered the principle of mechanical advantage in the lever. Later Greek philosophers defined the classic five simple machines (excluding the inclined plane) and were able to roughly calculate their mechanical advantage.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_LITERATURE</Tag>
-		<English>Literature</English>
-		<French>
-			<Text>Litt&#233;rature</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Literatur</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Letteratura</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Literatura</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_LITERATURE_QUOTE</Tag>
-		<English>"Some books are to be tasted, others to be swallowed, and some few to be chewed and digested."[PARAGRAPH:2]- Francis Bacon, Of Studies</English>
-		<French>"Certains livres se go&#251;tent, d'autres se d&#233;vorent, d'autres encore se m&#226;chent et se dig&#232;rent lentement."[PARAGRAPH:2]- Francis Bacon, De l'&#233;tude</French>
-		<German>"Manche B&#252;cher m&#252;ssen gekostet werden, manche verschlingt man, und nur einige wenige kaut man und verdaut sie ganz."[PARAGRAPH:2]- Sir Francis Bacon</German>
-		<Italian>"Alcuni libri devono essere gustati, altri inghiottiti, altri divorati e digeriti."[PARAGRAPH:2]- Sir Francis Bacon</Italian>
-		<Spanish>"Algunos libros se han de paladear, otros se han de engullir y unos cuantos m&#225;s se han de masticar y digerir."[PARAGRAPH:2]- Sir Francis Bacon</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_LOGISTICS</Tag>
 		<English>Logistics</English>
 		<French>
@@ -2735,41 +2393,6 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MACHINERY</Tag>
-		<English>Machinery</English>
-		<French>
-			<Text>M&#233;canique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Maschinen</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Meccanica</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Maquinaria</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MACHINERY_QUOTE</Tag>
-		<English>"Instrumental or mechanical science is the noblest and, above all others, the most useful."[PARAGRAPH:2]- Leonardo da Vinci</English>
-		<French>"Les sciences m&#233;caniques sont les plus nobles et les plus utiles d'entre toutes, car par leur biais tous les corps anim&#233;s ex&#233;cutent l'op&#233;ration pour laquelle ils ont &#233;t&#233; con&#231;us."[PARAGRAPH:2]- L&#233;onard de Vinci</French>
-		<German>"Instrumental or mechanical science is the noblest and, above all others, the most useful."[PARAGRAPH:2]- Leonardo da Vinci</German>
-		<Italian>"Instrumental or mechanical science is the noblest and, above all others, the most useful."[PARAGRAPH:2]- Leonardo da Vinci</Italian>
-		<Spanish>"Instrumental or mechanical science is the noblest and, above all others, the most useful."[PARAGRAPH:2]- Leonardo da Vinci</Spanish>
 	</TEXT>
 
 
@@ -2872,37 +2495,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CONSUMERISM</Tag>
-		<English>Consumerism</English>
-		<French>
-			<Text>Consum&#233;risme</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Consumerism</German>
-		<Italian>Consumerism</Italian>
-		<Spanish>Consumerism</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_CONSUMERISM_QUOTE</Tag>
-		<English>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</English>
-		<French>"Plus d'une chose insignifiante a pris de l'ampleur gr&#226;ce &#224; une bonne publicit&#233;."[PARAGRAPH:2]- Mark Twain</French>
-		<German>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</German>
-		<Italian>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</Italian>
-		<Spanish>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_CONSUMERISM_PEDIA</Tag>
-		<English>Marketing is the practice of persuading people that an object, idea, or behavior is desirable (and worth paying for). Marketing has existed in some form since prehistoric times; one may speculate that the first marketing activities were invented within five minutes of the first invention of commerce.  The development of mass media such as broadcast radio, print journalism, and film made it possible to market on a larger scale. The rise of a working and middle class in developed societies with enough disposable income to buy luxury goods made it desirable to do so. The growth of modern industrial corporations that could produce goods in immense quantities made it necessary to do so.[PARAGRAPH:2]Common practices in modern marketing include direct personal approaches, flattery of the customer, praise of the product (intellectually honest or otherwise), and efforts to make the seller appear sympathetic and likeable to the prospective buyer. The main difference is that all these things are now transmitted from the individual advertiser to the mass of the population through new communications technology such as printing, broadcasts, or the Internet.[PARAGRAPH:2]The practice of marketing is often criticized for dishonesty, for misleading people into paying for that which is useless to them, for encouraging people to go into debt, and for discouraging people from thrift and from building up savings for the future. It is also criticized for the increasingly intrusive way in which, in the modern computerized era, marketers use "big data" to analyze individuals' purchasing habits and tailor advertisements to them. This is widely regarded as intrusive, and as having ominous implications for the individual's privacy and control over their own life in the future.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_MEASUREMENT</Tag>
 		<English>Measurement</English>
 		<French>
@@ -3000,37 +2592,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CEMENT</Tag>
-		<English>Cement</English>
-		<French>
-			<Text>Ciment</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Cement</German>
-		<Italian>Cement</Italian>
-		<Spanish>Cement</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_CEMENT_QUOTE</Tag>
-		<English>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</English>
-		<French>"L'homme qui b&#226;tit son propre pi&#233;destal ferait bien de choisir un ciment fort."[PARAGRAPH:2] - Anna Quindlen</French>
-		<German>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</German>
-		<Italian>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</Italian>
-		<Spanish>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_CEMENT_PEDIA</Tag>
-		<English>A cement is a binder, a substance used in construction that sets, hardens and adheres to other materials, binding them together. Cement is seldom used solely, but is used to bind sand and gravel (aggregate) together. Cement is used with fine aggregate to produce mortar for masonry, or with sand and gravel aggregates to produce concrete.[PARAGRAPH:2]Lime was used on Crete and by the ancient Greeks. It is uncertain where it was first discovered that a combination of hydrated non-hydraulic lime and a pozzolan produces a hydraulic mixture, but concrete made from such mixtures was used by the Ancient Macedonians and three centuries later on a large scale by Roman engineers.[PARAGRAPH:2]In the absence of pozzolanic ash, the Romans used powdered brick or pottery as a substitute and they may have used crushed tiles for this purpose before discovering natural sources near Rome. The huge dome of the Pantheon in Rome and the massive Baths of Caracalla are examples of ancient structures made from these concretes, many of which are still standing. The vast system of Roman aqueducts also made extensive use of hydraulic cement.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_METALLURGY</Tag>
 		<English>Metallurgy</English>
 		<French>
@@ -3092,6 +2653,37 @@
 		<German>"Der Mann, der den Berg abtrug, war derselbe, der anfing, kleine Steine wegzutragen."[PARAGRAPH:2]- Konfuzius</German>
 		<Italian>"Un uomo che deve spostare una montagna comincia dalle piccole pietre."[PARAGRAPH:2]- Confucio</Italian>
 		<Spanish>"El hombre que mueve monta&#241;as empieza apartando piedrecitas."[PARAGRAPH:2]- Confucio</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MYTHOLOGY</Tag>
+		<English>Mythology</English>
+		<French>
+			<Text>Mythologie</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Mythology</German>
+		<Italian>Mythology</Italian>
+		<Spanish>Mythology</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MYTHOLOGY_QUOTE</Tag>
+		<English>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</English>
+		<French>"Ne t'&#233;gale point aux Dieux, car la race des Dieux immortels n'est point semblable &#224; celle des hommes qui marchent sur la terre."[PARAGRAPH:2]- Hom&#232;re, l'Iliade</French>
+		<German>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</German>
+		<Italian>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</Italian>
+		<Spanish>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MYTHOLOGY_PEDIA</Tag>
+		<English>Mythology refers variously to the collected myths of a group of people. Myths are the stories people tell to explain nature, history and customs. Myth is a feature of every culture. Many sources for myths have been proposed, ranging from personification of nature or personification of natural phenomena, to truthful or hyperbolic accounts of historical events to explanations of existing rituals. A culture's collective mythology helps convey belonging, shared and religious experiences, behavioral models and moral and practical lessons.[PARAGRAPH:2]One theory claims that myths are distorted accounts of historical events. According to this theory, storytellers repeatedly elaborate upon historical accounts until the figures in those accounts gain the status of gods. Other theories propose that myths began as allegories for natural phenomena: Apollo represents the sun, Poseidon represents water, and so on. According to another theory, myths began as allegories for philosophical or spiritual concepts: Athena represents wise judgment, Aphrodite desire, and so on. Some thinkers claimed that myths result from the personification of inanimate objects and forces. According to these thinkers, the ancients worshiped natural phenomena, such as fire and air, gradually deifying them. According to the myth-ritual theory, myth is tied to ritual. In its most extreme form, this theory claims myths arose to explain rituals.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -3171,28 +2763,24 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_NOBILITY</Tag>
-		<English>Nobility</English>
-		<French>
-			<Text>Noblesse</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Nobility</German>
-		<Italian>Nobility</Italian>
-		<Spanish>Nobility</Spanish>
+		<Tag>TXT_KEY_TECH_NEWSPAPERS</Tag>
+		<English>Newspapers</English>
+		<French>Newspapers</French>
+		<German>Newspapers</German>
+		<Italian>Newspapers</Italian>
+		<Spanish>Newspapers</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_NOBILITY_QUOTE</Tag>
-		<English>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</English>
-		<French>"L'absurdit&#233; est le privil&#232;ge de l'aristocratie. Les soucis de la vie sont pour les gens ordinaires."[PARAGRAPH:2]- George Jean Nathan</French>
-		<German>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</German>
-		<Italian>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</Italian>
-		<Spanish>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</Spanish>
+		<Tag>TXT_KEY_TECH_NEWSPAPERS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_NOBILITY_PEDIA</Tag>
-		<English>Nobility can refer to "the nobility," a class of aristocrats who inherit the right to dominate society at large. Or it can refer to the ideals of "noble" behavior, as favored by this class.[PARAGRAPH:2]Aristocratic elites have been with human civilization for millenia. Any person with enough resources, political influence, or military power would have a great advantage in controlling others, and could use that control to further preserve their power. Naturally, anyone blessed by such a fortunate combination of power and wealth would want to pass it on to their children, so legal systems emerged to make sure that the titles and positions of nobility would be inherited safely.[PARAGRAPH:2]The most common employment for aristocrats in history has been warfare. The nobility can be sure of getting plenty of food and good living conditions, so that their children grow up big and strong. They can afford expensive, carefully crafted weapons like suits of armor, high-quality bows, and fine warhorses. And their political power meant they could easily recruit fighting men from among the people they controlled, making sure they'd have trustworthy retainers to watch their back and handle the supplies while the nobles themselves went off to fight.[PARAGRAPH:2]The ideal of military courage and self-discipline therefore plays a great role in the idea of "nobility." A nobleman is normally expected to be brave in battle, to be prepared to fight either to defend his own interests or the interests of his ruler, and to act in the ways that his society expects of warriors.[PARAGRAPH:2]Noblewomen generally were not expected to fight; for females nobility had relatively fewer attractions, except of course for the freedom it granted from drudge labor like grinding grain or tending crops.</English>
+		<Tag>TXT_KEY_TECH_NEWSPAPERS_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3224,6 +2812,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_NUCLEAR_POWER_PEDIA</Tag>
 		<English>The greatest peacetime use of the power of the atomic nucleus is in nuclear reactors. In the early days after the discovery of atomic fission, this was a subject of great hope and optimism - the ideal was expressed that atomic energy would make electricity "too cheap to meter".[PARAGRAPH:2]A nuclear reactor consists of a number of 'fuel rods' or 'fuel pellets' made up of fissile materials, kept at a concentration below that needed for a critical mass. Thus, the chain reaction cannot run away as in a nuclear bomb, and simply keeps the fuel running at a high temperature, steadily heated by rapid fission of the uranium. The heat is used to power turbines through a variety of media- pressurized water, steam, or liquid sodium, for instance; the turbines power electric generators.[PARAGRAPH:2]Design of a nuclear reactor is extremely challenging. The radiation environment inside the reactor core is intense, and all substances used inside the reactor must be chosen with an eye to their resistance and behavior when faced with radioactive bombardment of neutrons. Beyond this, there are also safety concerns- a nuclear reactor contains enough radioactive materials to contaminate a large area, if those materials were spread across the landscape.[PARAGRAPH:2]Early plant designs, dating to the 1950s, often had serious safety problems associated with the designs. Since then, the nuclear industry has learned much, but its tracks are dogged by anti-nuclear advocates opposed to the use of nuclear energy. This opposition points to nuclear accidents at Chernobyl and Fukushima and questions whether modern plants are truly safe from such disasters; they also object to the fact that nuclear reactors generate radioactive waste which remains dangerous to human life for thousands of years and must be stored under special conditions.[PARAGRAPH:2]Supporters of nuclear energy reply that there are viable ways to store the waste safely, but the controversy continues to rage. The dream of power "too cheap to meter" has foundered on this, along with a host of practical issues that come with designing the heavily reinforced, disaster-resistant facilities required for the reactor and its wastes.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE</Tag>
+		<English>Old World Knowledge</English>
+		<French>Old World Knowledge</French>
+		<German>Old World Knowledge</German>
+		<Italian>Old World Knowledge</Italian>
+		<Spanish>Old World Knowledge</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3268,41 +2883,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_PAPER</Tag>
-		<English>Paper</English>
-		<French>
-			<Text>Papier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Papier</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Carta</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Papel</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PAPER_QUOTE</Tag>
-		<English>"I cannot live without books."[PARAGRAPH:2]- Thomas Jefferson</English>
-		<French>"Je ne peux pas vivre sans livres."[PARAGRAPH:2]- Thomas Jefferson</French>
-		<German>"Ohne B&#252;cher kann ich nicht leben!"[PARAGRAPH:2]- Thomas Jefferson</German>
-		<Italian>"Non potrei vivere senza libri"[PARAGRAPH:2]- Thomas Jefferson</Italian>
-		<Spanish>"No puedo vivir sin libros."[PARAGRAPH:2]- Thomas Jefferson</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_PASTORALISM</Tag>
 		<English>Pastoralism</English>
 		<French>
@@ -3325,99 +2905,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_PASTORALISM_PEDIA</Tag>
 		<English>Pastoralism is a term for the art of raising livestock. It is also used in sociology, to describe a way of life that revolves around herding and caring for domestic animals. Pastoral societies are generally most successful on poorly productive land such as large, dry stretches of desert, savannah, hills, or tundra. In this sort of terrain, dense stands of food crops cannot be grown naturally, so farming is impossible without modern irrigation. However, in such biomes there is a substantial natural supply of grasses and shrubs; humans cannot eat them, but sheep, cattle, goats, or yaks can.[PARAGRAPH:2]It is often but not always the case that a pastoral people 'follows their herds,' moving from one part of the land they occupy to another to ensure that they have access to the best available grazing, water supplies, and a healthy climate for their animals.[PARAGRAPH:2]Pastoral societies present a common alternative to agricultural societies, and were capable of functioning and thriving on equal terms with them up until the rise of modern technology. They could be particularly effective in warfare, especially when leaders took advantage of their self-sufficient, highly mobile lifestyle to create an army of self-sufficient, highly mobile soldiers. In modern times, however, the inability of small pastoral communities to manufacture modern weapons, coupled with overpopulation problems, have made it less sustainable and practical for these peoples to live in their traditional mode.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PATRONAGE</Tag>
-		<English>Patronage</English>
-		<French>
-			<Text>M&#233;c&#233;nat</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Patronage</German>
-		<Italian>Patronage</Italian>
-		<Spanish>Patronage</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PATRONAGE_QUOTE</Tag>
-		<English>"Never respect men merely for their riches, but rather for their philanthropy; we do not value the sun for its height, but for its use."[PARAGRAPH:2]- Gamaliel Bailey</English>
-		<French>"Ne respectez jamais les hommes uniquement pour leurs richesses, mais plut&#244;t pour leur philanthropie ; nous ne valorisons pas le soleil pour sa hauteur, mais pour son usage."[PARAGRAPH:2]- Gamaliel Bailey</French>
-		<German>"Never respect men merely for their riches, but rather for their philanthropy; we do not value the sun for its height, but for its use."[PARAGRAPH:2]- Gamaliel Bailey</German>
-		<Italian>"Never respect men merely for their riches, but rather for their philanthropy; we do not value the sun for its height, but for its use."[PARAGRAPH:2]- Gamaliel Bailey</Italian>
-		<Spanish>"Never respect men merely for their riches, but rather for their philanthropy; we do not value the sun for its height, but for its use."[PARAGRAPH:2]- Gamaliel Bailey</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PATRONAGE_PEDIA</Tag>
-		<English>Patronage is the practice of a wealthy or powerful individual choosing to support an artist, charitable organization, scholar, or other worthy cause. This support generally takes the form of donations of money or the exercise of political influence. Patronage is vital to the survival of the arts, even in the modern era when artists can at least occasionally rely on state grants to support their activities - which arguably is itself a form of patronage.[PARAGRAPH:2]In the medieval and renaissance eras, in particular, the patronage of aristocrats, wealthy merchants, and even kings and emperors had major consequences for the evolution of human knowledge. Emperors and merchant princes funded great voyages of discovery that traveled across continents. Kings and queens adopted radical philosophers into their courts, giving the philosophers the security they needed to publish ideas about human nature, ethics, and political theory.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PHILOSOPHY</Tag>
-		<English>Philosophy</English>
-		<French>
-			<Text>Philosophie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Philosophie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Filosofia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Filosof&#237;a</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PHILOSOPHY_QUOTE</Tag>
-		<English>"I think, therefore I am."[PARAGRAPH:2]- Rene Descartes, Discourse on the Method</English>
-		<French>"Je pense, donc je suis."[PARAGRAPH:2]- Ren&#233; Descartes, Discours de la m&#233;thode</French>
-		<German>"I think, therefore I am."[PARAGRAPH:2]- Rene Descartes, Discourse on the Method</German>
-		<Italian>"I think, therefore I am."[PARAGRAPH:2]- Rene Descartes, Discourse on the Method</Italian>
-		<Spanish>"I think, therefore I am."[PARAGRAPH:2]- Rene Descartes, Discourse on the Method</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PHOTOGRAPHY</Tag>
-		<English>Photography</English>
-		<French>Photographie</French>
-		<German>Photography</German>
-		<Italian>Photography</Italian>
-		<Spanish>Photography</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PHOTOGRAPHY_QUOTE</Tag>
-		<English>"A picture shows me at a glance what it takes a dozen pages to expound."[PARAGRAPH:2]- Ivan Turgenev</English>
-		<French>"A picture shows me at a glance what it takes a dozen pages to expound."[PARAGRAPH:2]- Ivan Turgenev</French>
-		<German>"A picture shows me at a glance what it takes a dozen pages to expound."[PARAGRAPH:2]- Ivan Turgenev</German>
-		<Italian>"A picture shows me at a glance what it takes a dozen pages to expound."[PARAGRAPH:2]- Ivan Turgenev</Italian>
-		<Spanish>"A picture shows me at a glance what it takes a dozen pages to expound."[PARAGRAPH:2]- Ivan Turgenev</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PHOTOGRAPHY_PEDIA</Tag>
-		<English>Photography is the practice of using artifical tools to capture visual images in a durable form. Photography relies on optical devices (usually lenses) to focus incoming light onto a light-sensitive surface, which is then altered by the light so that the effect of the light on the surface can be stored for later reference.[PARAGRAPH:2]Experiments with photography began around 1800 with efforts to capture images created in a camera obscura (pinhole camera) using light-sensitive chemicals. These efforts began to bear fruit in the 1820s with the development of the photographic plate. Early photography required that the photograph be exposed to the image it was meant to record for a period of hours, making it impractical for any purpose other than taking pictures of landscapes or buildings. By the late 1830s, Louis Daguerre had refined the process until the exposure time had fallen to ten minutes, making it practical for an individual person to be photographed. In 1839, the French government presented Daguerre's method, "open source," as a gift of France to the world.[PARAGRAPH:2]Meanwhile, other experimentalists worked on promising avenues, such as the creation of photographic 'film' which would form a 'negative,' reversed version of the image (light parts would be dark and vice versa). Further advances in making photographs durable, reproducible, and quick-exposing continued throughout the 19th century.[PARAGRAPH:2]Around 1900, Eastman and Kodak introduced photographic film - a flexible roll of material that could be used as a backing for light-sensitive chemicals in the camera, removing the need for large, fragile glass photographic plates. Film replaced plates for almost all types of photography other than scientific applications. (Glass plate photography revolutionized astronomy, for instance, by allowing astronomers to record observations or gather up all the light coming to their telescope from the same star onto a single plate for an hours-long exposure).[PARAGRAPH:2]Color photography, meanwhile, had been practiced as early as the 1860s based on improved scientific understanding of light. However, it was impractical for normal applications until the mid-20th century, representing a further advance over the previously monochrome photos of the era. By the 1970s and '80s, the art of photography had largely stabilized on the standard of film cameras capable of imaging multiple colors on the same piece of film, which would then be "developed" in a laboratory using special chemicals to stabilize and desensitize the film. The resulting film would then form 'negatives' from which accurate reproductions of the original image could be reconstructed.[PARAGRAPH:2]However, photography was once again revolutionized by the rise of electronic 'digital' cameras. Today, digital cameras that electronically detect light and send the resulting images into digital storage have largely replaced chemical film. Digital cameras have the advantages of requiring no development, storing nigh-unlimited numbers of photos, and being so easily miniaturized that they can be casually attached to a device the size of a pack of cards, as a cheap extra feature.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3457,6 +2944,33 @@
 		<German>"Jede Aktion erzeugt gleichzeitig eine Reaktion."[PARAGRAPH:2]- Isaac Newton, Philosophiae Naturalis Principia Mathematica</German>
 		<Italian>"Ad ogni azione, corrisponde una reazione uguale ma di segno opposto."[PARAGRAPH:2]- Isaac Newton, Philosophiae Naturalis Principia Mathematica</Italian>
 		<Spanish>"Para cada acci&#243;n existe siempre una reacci&#243;n igual y de sentido contrario."[PARAGRAPH:2]- Isaac Newton, Philosophiae Naturalis Principia Mathematica</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PIONEERING</Tag>
+		<English>Pioneering</English>
+		<French>Pioneering</French>
+		<German>Pioneering</German>
+		<Italian>Pioneering</Italian>
+		<Spanish>Pioneering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PIONEERING_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PIONEERING_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -3515,6 +3029,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_POLITICS_PEDIA</Tag>
 		<English>Politics, from the Greek for "of or pertaining to citizens," is the practice of influencing people, particularly with the aim of acquiring and using power within a government. The tactics and techniques of politics vary depending on the society. In autocratic societies, the key to political success is the personal appeal to the leader and their most trusted subordinates, along with efforts to undermine rivals and make them appear to be threats to the system. In democracies, a massive range of tools and methods are used to appeal to the general public and acquire their support. Likewise, practitioners of politics in democracies also seek to undermine their opponents, generally attacking their popularity - by means both fair and foul.[PARAGRAPH:2]The framework that determines what political methods are allowed in a given society can be viewed as a political 'system.' For example, long-established parliamentary democracies have a system that makes violent overthrow of the government unacceptable, such that even if such a coup succeeded, it is likely that the victorious military leader would have difficulty persuading the public to obey orders. Conversely, autocratic systems generally prohibit any form of politics that would involve organizing the masses to express disapproval of state policy.[PARAGRAPH:2]Formal theorizing on politics dates back to the time of figures such as Plato and Confucius, and represents a major transition in the history of human civilization- because it represents serious, intellectual reflection on the question "how best shall we organize ourselves?"</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_POSTAL_SERVICE</Tag>
+		<English>Postal Service</English>
+		<French>Postal Service</French>
+		<German>Postal Service</German>
+		<Italian>Postal Service</Italian>
+		<Spanish>Postal Service</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_POSTAL_SERVICE_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_POSTAL_SERVICE_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3670,6 +3211,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_PROPERTY_PEDIA</Tag>
 		<English>Property refers to the concept that a certain object, idea, or place is solely under the authority of some specific person or entity, and is not available for the use of others without the consent of that 'owner.' The most basic Neolithic societies known to us usually have concepts of individual ownership of certain items, such as tools and caches of food. This is often combined with widespread sharing of the goods, usually done for purposes of reinforcing social ties.[PARAGRAPH:2]Such a practice results in very cohesive societies. However, such societies often have difficulty organizing their surplus resources to commit to large-scale projects not of immediate use to any one person (such as infrastructure, ceremonial architecture, or military expeditions). Moreover, the system tends to break down in the presence of large numbers of strangers, because it relies on individuals being willing to freely share their belongings with each other. For both these reasons, the rise of cities generally went hand-in-hand with the rise of accumulated property in the hands of social elites, a trend which has persisted throughout recorded history to the present day.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PROTECTIONISM</Tag>
+		<English>Protectionism</English>
+		<French>Protectionism</French>
+		<German>Protectionism</German>
+		<Italian>Protectionism</Italian>
+		<Spanish>Protectionism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PROTECTIONISM_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_PROTECTIONISM_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3846,6 +3414,33 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_REGIMENTS</Tag>
+		<English>Regiments</English>
+		<French>Regiments</French>
+		<German>Regiments</German>
+		<Italian>Regiments</Italian>
+		<Spanish>Regiments</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_REGIMENTS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_REGIMENTS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_RENEWABLE_ENERGY</Tag>
 		<English>Renewable Energy</English>
 		<French>
@@ -3943,67 +3538,28 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_RIDING</Tag>
-		<English>Riding</English>
-		<French>
-			<Text>&#201;quitation</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Riding</German>
-		<Italian>Riding</Italian>
-		<Spanish>Riding</Spanish>
+		<Tag>TXT_KEY_TECH_RIGHTS_OF_MAN</Tag>
+		<English>Rights of Man</English>
+		<French>Rights of Man</French>
+		<German>Rights of Man</German>
+		<Italian>Rights of Man</Italian>
+		<Spanish>Rights of Man</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_RIDING_QUOTE</Tag>
-		<English>"If you speak the truth, have a foot in the stirrup."[PARAGRAPH:2]- Turkish proverb</English>
-		<French>"Si tu dis vrai, mets le pied &#224; l'&#233;trier."[PARAGRAPH:2]- Proverbe turc</French>
-		<German>"Wer die Wahrheit spricht, sollte besser einen Fu&#223; im Steigb&#252;gel haben."[PARAGRAPH:2]- Arabisches Sprichwort</German>
-		<Italian>"Se dici il vero, metti un piede nella staffa."[PARAGRAPH:2]- Proverbio Turco</Italian>
-		<Spanish>"Si dices la verdad, ya tienes un pie en el estribo."[PARAGRAPH:2]- Proverbio turco</Spanish>
+		<Tag>TXT_KEY_TECH_RIGHTS_OF_MAN_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_RIDING_PEDIA</Tag>
-		<English>The horse was first domesticated for transportation and warfare by tribesmen on the Asian steppes. These tribesmen used their superior mobility and speed to overwhelm the proto-civilizations just rising in southeast Europe and the Middle East. In approximately 2000 BCE, domestic horses were introduced into Mesopotamia. Within the next several centuries, horses had spread throughout much of Europe and northern Africa. It was not long before nearly every civilization had put horses to work as field animals and as a means of transportation. Horses also went on to play an important role in the military conflicts of nearly every civilization in the world, both as mounts for horsemen and cavalry, and as draft animals for pulling war chariots and heavy weapons into battle.</English>
+		<Tag>TXT_KEY_TECH_RIGHTS_OF_MAN_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RIFLING</Tag>
-		<English>Rifling</English>
-		<French>
-			<Text>Fusil</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Drall</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Rigatura delle canne</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Fusil</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RIFLING_QUOTE</Tag>
-		<English>"Political power grows out of the barrel of a gun."[PARAGRAPH:2]- Mao Zedong</English>
-		<French>"Le pouvoir politique sort du canon d'un fusil."[PARAGRAPH:2]- Mao Ts&#233;-Tung</French>
-		<German>"Alle politische Macht r&#252;hrt von einem Gewehrlauf."[PARAGRAPH:2]- Mao Tsetung</German>
-		<Italian>"Il potere politico nasce dalla canna di un fucile."[PARAGRAPH:2]- Mao Tse Tung</Italian>
-		<Spanish>"El poder pol&#237;tico nace de los ca&#241;ones de los fusiles."[PARAGRAPH:2]- Mao Zedong</Spanish>
 	</TEXT>
 
 
@@ -4137,37 +3693,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SCHOLARSHIP</Tag>
-		<English>Scholarship</English>
-		<French>
-			<Text>Scolastique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Scholarship</German>
-		<Italian>Scholarship</Italian>
-		<Spanish>Scholarship</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SCHOLARSHIP_QUOTE</Tag>
-		<English>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</English>
-		<French>"Il n'y a pas de plus grande richesse que la science, pas de plus grande pauvret&#233; que l'ignorance."[PARAGRAPH:2]- Ali ibn Abi Talib</French>
-		<German>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</German>
-		<Italian>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</Italian>
-		<Spanish>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SCHOLARSHIP_PEDIA</Tag>
-		<English>The scholarly method or scholarship is the body of principles and practices used by scholars to make their claims about the world as valid and trustworthy as possible, and to make them known to the scholarly public. It is the methods that systemically advance the teaching, research, and practice of a given scholarly or academic field of study through rigorous inquiry. Scholarship is noted by its significance to its particular profession, and is creative, can be documented, can be replicated or elaborated, and can be and is peer-reviewed through various methods.[PARAGRAPH:2]Originally started to reconcile the philosophy of the ancient classical philosophers with medieval theology, scholasticism is not a philosophy or theology in itself but a tool and method for learning which places emphasis on dialectical reasoning. The primary purpose of scholasticism is to find the answer to a question or to resolve a contradiction. It was once well known for its application in medieval theology but was eventually applied to classical philosophy and many other fields of study.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_SCIENTIFIC_METHOD</Tag>
 		<English>Scientific Method</English>
 		<French>
@@ -4203,37 +3728,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SEAFARING</Tag>
-		<English>Seafaring</English>
-		<French>
-			<Text>Marine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Seafaring</German>
-		<Italian>Seafaring</Italian>
-		<Spanish>Seafaring</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SEAFARING_QUOTE</Tag>
-		<English>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</English>
-		<French>"Par temps de bourrasques, hisse tes voiles. Vents et mar&#233;es n'emp&#234;chent point le plaisir."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</French>
-		<German>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</German>
-		<Italian>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</Italian>
-		<Spanish>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SEAFARING_PEDIA</Tag>
-		<English>Seafaring is the art of directing, maintaining, and preserving ships that travel across the ocean. The earliest human vessels such as rafts, small canoes, and reed boats would have been extremely unsafe on the open ocean. However, there is extensive evidence for the practice of seafaring stretching back to the Bronze Age, or the Neolithic in the case of Polynesian long-distance sailing canoes.[PARAGRAPH:2]In general, successful seafarers must make use of some source of power other than their own muscles (in the early days of navigation, a sail) to ensure they were not trapped by ocean currents. They must know how to construct reasonably sturdy craft that would resist ocean waves. They had to make use of a great knowledge of weather conditions to ensure the craft was not caught by a storm too powerful to be survived - which in premodern times weather could be predicted only by experience.[PARAGRAPH:2]All this represented a significant advance over the earliest Stone Age boats and their operations... and yet, all these things were necessary in order for coastal civilizations to make any serious use of maritime travel for trade or exploration.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_SHIPBUILDING</Tag>
 		<English>Shipbuilding</English>
 		<French>
@@ -4256,37 +3750,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SHIPBUILDING_PEDIA</Tag>
 		<English>Shipbuilding is the art of constructing large watergoing vessels for travel on large bodies of water. As the demand for larger, safer vessels to cross the oceans of the ancient world grew, so did knowledge of ship construction. By far the preferred method for building such ships was to make them out of wood - preferably the hardest, strongest timber available, even if this had to be imported over long distances. Great strides in the art of carpentry made it possible to assemble large ships that would be strong enough to withstand the forces of the sea, but flexible enough not to break under heavy impact.[PARAGRAPH:2]Larger, heavier ships were generally more useful for trade because they could carry a greater volume of goods. They were also more useful for warfare. Ancient naval war revolved around deliberate ramming attacks, boarding parties and sailors firing musclepowered missile weapons at each other. A larger ship would be harder to damage by ramming, would have the tactical advantage of being 'the high ground' in combat, and could carry a larger army with which to capture enemy ships.[PARAGRAPH:2]Ongoing advances in shipbuilding continued steadily from the Bronze Age up to the present day in many parts of the world. Nations which enjoyed an advantage in the art at any particular time were usually able to dominate the seas for vast distances around their homeland.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_COMMUNE</Tag>
-		<English>Commune</English>
-		<French>
-			<Text>Commune</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Commune</German>
-		<Italian>Commune</Italian>
-		<Spanish>Commune</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_COMMUNE_QUOTE</Tag>
-		<English>"We shall be a single People of brethren, never to part in danger nor distress."[PARAGRAPH:2]- Friedrich Schiller, William Tell</English>
-		<French>"Nous serons un peuple de fr&#232;res que nul malheur et nul danger ne s&#233;parera."[PARAGRAPH:2]- Friedrich Schiller, Guillaume Tell</French>
-		<German>"We shall be a single People of brethren, never to part in danger nor distress."[PARAGRAPH:2]- Friedrich Schiller, William Tell</German>
-		<Italian>"We shall be a single People of brethren, never to part in danger nor distress."[PARAGRAPH:2]- Friedrich Schiller, William Tell</Italian>
-		<Spanish>"We shall be a single People of brethren, never to part in danger nor distress."[PARAGRAPH:2]- Friedrich Schiller, William Tell</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_COMMUNE_PEDIA</Tag>
-		<English>In the high and late middle ages, increase in agricultural production meant there was an excess of additional population. These people gravitated to urban centers, leading to a degree of urbanisation not seen in Europe since the collapse of the Roman Empire.[PARAGRAPH:2]Within these often fortified cities, a new class of people developed. These so called burghers often engaged in trade and commerce and began to accrue wealth independent of the nobility. As these trends continued, cities began to assert their newfound powers to gain additional privileges.[PARAGRAPH:2]This put them in opposition to the traditional feudal power structure. Where central power was weak and cities were affluent, such as the Netherlands, Switzerland and Northern Italy, cities were successful in defending their sovereignty from feudal overlords. Their success can be linked both to their organisation in regional leagues and alliances as well as innovative military organisation relying on mercenary companies, paving the way to professionalised armies.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4358,6 +3821,37 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_SOCIAL_CONTRACT</Tag>
+		<English>Social Contract</English>
+		<French>
+			<Text>Contrat social</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Social Contract</German>
+		<Italian>Social Contract</Italian>
+		<Spanish>Social Contract</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SOCIAL_CONTRACT_QUOTE</Tag>
+		<English>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</English>
+		<French>"Chaque membre de la soci&#233;t&#233; poss&#232;de une inviolabilit&#233; fond&#233;e sur la justice qui a priorit&#233; sur tout, m&#234;me sur le bien-&#234;tre de tous les autres."[PARAGRAPH:2]- John Rawls, Th&#233;orie de la justice</French>
+		<German>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</German>
+		<Italian>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</Italian>
+		<Spanish>"Each person possesses an inviolability founded on justice that even the welfare of society as a whole cannot override."[PARAGRAPH:2]- John Rawls, A Theory of Justice</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SOCIAL_CONTRACT_PEDIA</Tag>
+		<English>In both moral and political philosophy, the social contract or political contract is a theory or model, originating during the Age of Enlightenment, that typically addresses the questions of the origin of society and the legitimacy of the authority of the state over the individual. Social contract arguments typically posit that individuals have consented, either explicitly or tacitly, to surrender some of their freedoms and submit to the authority of the ruler or magistrate (or to the decision of a majority), in exchange for protection of their remaining rights. The question of the relation between natural and legal rights, therefore, is often an aspect of social contract theory.[PARAGRAPH:2]Although the antecedents of social contract theory are found in antiquity, in Greek and Stoic philosophy and Roman and Canon Law, the heyday of the social contract was the mid-17th to early 19th centuries, when it emerged as the leading doctrine of political legitimacy. The starting point for most social contract theories is an examination of the human condition absent any political order that Thomas Hobbes termed the "state of nature". In this condition, individuals' actions are bound only by their personal power and conscience. From this shared starting point, social contract theorists seek to demonstrate, in different ways, why a rational individual would voluntarily consent to give up their natural freedom to obtain the benefits of political order.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_SOCIAL_SERVICES</Tag>
 		<English>Social Services</English>
 		<French>
@@ -4420,6 +3914,33 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_SURVEYING</Tag>
+		<English>Surveying</English>
+		<French>Surveying</French>
+		<German>Surveying</German>
+		<Italian>Surveying</Italian>
+		<Spanish>Surveying</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SURVEYING_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SURVEYING_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_STATECRAFT</Tag>
 		<English>Statecraft</English>
 		<French>
@@ -4442,37 +3963,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_STATECRAFT_PEDIA</Tag>
 		<English>Statecraft refers to the administration of the internal and external affairs of a state in a professionalised fashion. In the Middle Ages, states were usually administered by feudal rulers who attained their position through birthright, so their approach to administration was mostly guided by tradition and personal experience.[PARAGRAPH:2]The increasing centralisation and bureaucracy of the early modern state meant that rulers increasingly relied on government officials like governors and diplomats. The highest of these officials formed the cabinet or council of their monarch.[PARAGRAPH:2]Internally, this meant that the state was much more effective in accomplishing its goals, such as levying taxes, enforcing laws and raising armies. It also revolutionised international relations. States would transition to maintain ongoing diplomatic contacts and formalise their relationship through a series of treaties.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_STEEL</Tag>
-		<English>Steel</English>
-		<French>
-			<Text>Acier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Steel</German>
-		<Italian>Steel</Italian>
-		<Spanish>Steel</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_STEEL_QUOTE</Tag>
-		<English>"There never was a good knife made of bad steel."[PARAGRAPH:2]- Benjamin Franklin</English>
-		<French>"Jamais il n'y a eu de bon couteau n&#233; d'un mauvais acier."[PARAGRAPH:2]- Benjamin Franklin</French>
-		<German>"There never was a good knife made of bad steel."[PARAGRAPH:2]- Benjamin Franklin</German>
-		<Italian>"There never was a good knife made of bad steel."[PARAGRAPH:2]- Benjamin Franklin</Italian>
-		<Spanish>"There never was a good knife made of bad steel."[PARAGRAPH:2]- Benjamin Franklin</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_STEEL_PEDIA</Tag>
-		<English>The iron alloys produced up until about the 14th century were made by heating a mixture of iron ore and charcoal in a forge, then pounding the molten metal to drive out the impurities or "slag". Occasionally, the iron mixture would absorb more carbon, creating steel rather than wrought iron. Because steel proved to be less brittle and more resistant to corrosion than iron, techniques were developed to produce steel. This was done by blowing a coal derivative called coke through molten iron. Most modern steel making utilizes the "blast furnace", developed by Henry Bessemer in 1855, to accomplish this task on a large-scale basis. The strength and other qualities of steel make it the material of choice for warships, planes, and many other vehicles.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4610,6 +4100,33 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_TACTICS</Tag>
+		<English>Tactics</English>
+		<French>Tactics</French>
+		<German>Tactics</German>
+		<Italian>Tactics</Italian>
+		<Spanish>Tactics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TACTICS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TACTICS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_TANNING</Tag>
 		<English>Tanning</English>
 		<French>
@@ -4672,24 +4189,32 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TELEPHONE</Tag>
-		<English>Telephone</English>
-		<French>T&#233;l&#233;phone</French>
-		<German>Telephone</German>
-		<Italian>Telephone</Italian>
-		<Spanish>Telephone</Spanish>
+		<Tag>TXT_KEY_TECH_TELEGRAPH</Tag>
+		<English>Telegraph</English>
+		<French>Telegraph</French>
+		<German>Telegraph</German>
+		<Italian>Telegraph</Italian>
+		<Spanish>Telegraph</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TELEPHONE_QUOTE</Tag>
-		<English>Mr. Watson, come here - I want to see you."[PARAGRAPH:2]- Alexander Graham Bell</English>
-		<French>Mr. Watson, come here - I want to see you."[PARAGRAPH:2]- Alexander Graham Bell</French>
-		<German>Mr. Watson, come here - I want to see you."[PARAGRAPH:2]- Alexander Graham Bell</German>
-		<Italian>Mr. Watson, come here - I want to see you."[PARAGRAPH:2]- Alexander Graham Bell</Italian>
-		<Spanish>Mr. Watson, come here - I want to see you."[PARAGRAPH:2]- Alexander Graham Bell</Spanish>
+		<Tag>TXT_KEY_TECH_TELEGRAPH_HELP</Tag>
+		<English>[ICON_BULLET]Diplomatic contact is maintained indefinitely</English>
+		<French>[ICON_BULLET]Diplomatic contact is maintained indefinitely</French>
+		<German>[ICON_BULLET]Diplomatic contact is maintained indefinitely</German>
+		<Italian>[ICON_BULLET]Diplomatic contact is maintained indefinitely</Italian>
+		<Spanish>[ICON_BULLET]Diplomatic contact is maintained indefinitely</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TELEPHONE_PEDIA</Tag>
-		<English>A telephone, from the Greek for 'distant voice,' is an device that converts a speaker's voice into electrical impulses, transmits them to a remote receiver, permits the speaker to receive other similar signals, and converts them back into voice. This permits conversations to be had between any two owners of telephones on the same switching network.[PARAGRAPH:2]There is some debate over who invented the telephone. Many individuals were working to design them, with similar tools, throughout the 1860s and '70s. However, it is clear that within a few years of the first commercially successful telephones being created, systems of the devices were beginning to connect distant cities. The telephone allowed infinitely faster and richer exchanges of information than any pre-19th century mode of communication, and had great advantages compared to the slightly earlier telegraph as well.[PARAGRAPH:2]Early telephone technology was highly diverse, but standardized as the 20th century began and as telephone systems became increasingly networked. It was found that while a specific telephone line from one place to another was valuable, a network permitting every user to call every other user was exponentially more valuable. Elaborate systems of manually operated "switchboards" emerged, allowing connections to be made at will between different telephones on the network.[PARAGRAPH:2]Networks grew larger and the individual telephones grew more compact and user-friendly throughout the early and mid-20th centuries. After the computer revolution began in the 1950s and '60s, automated switching took the place of manually operated systems, touch-tone dialing replaced rotary phones, and long distance calls became a cheaper and more common activity connecting the world together.[PARAGRAPH:2]The next great advance, mobile telephony, came in the 1970s and '80s, reaching maturity around the turn of the millenium. Cellular networks of transceiver towers make it possible for every citizen to carry a miniaturized wireless telephone, permitting near-instant communication throughout the world. Over the past decade, this technology has been further refined and combined with further miniaturization, allowing a single handheld device to serve as telephone, camera, appointment book, a portable device for audiovisual entertainment, and a gaming platform.</English>
+		<Tag>TXT_KEY_TECH_TELEGRAPH_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TELEGRAPH_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4717,40 +4242,6 @@
 		<German>"In the age of television, image becomes more important than substance."[PARAGRAPH:2]- S. I. Hayakawa</German>
 		<Italian>"In the age of television, image becomes more important than substance."[PARAGRAPH:2]- S. I. Hayakawa</Italian>
 		<Spanish>"In the age of television, image becomes more important than substance."[PARAGRAPH:2]- S. I. Hayakawa</Spanish>
-	</TEXT>
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_THEOLOGY</Tag>
-		<English>Theology</English>
-		<French>
-			<Text>Th&#233;ologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Theologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Teologia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Teolog&#237;a</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_THEOLOGY_QUOTE</Tag>
-		<English>"Two cities have been formed by two loves: the earthly by the love of self; the heavenly by the love of God."[PARAGRAPH:2]- Augustine of Hippo, The City of God</English>
-		<French>"Deux amours ont fait deux cit&#233;s : l'amour de soi, la cit&#233; terrestre ; l'amour de Dieu, la cit&#233; c&#233;leste."[PARAGRAPH:2]- Augustin d'Hippone, La Cit&#233; de Dieu</French>
-		<German>"Es gibt zwei St&#228;dte auf der Welt. Die eine ist auf der Liebe zu sich selbst, die andere auf der Liebe zu Gott errichtet."[PARAGRAPH:2]- Augustinus</German>
-		<Italian>"Esistono due tipi di citt&#224;, fondate su due tipi d'amore: quello terreno per s&#233; stessi e quello celeste per di Dio."[PARAGRAPH:2]- Sant'Agostino</Italian>
-		<Spanish>"Dos amores han fundado dos ciudades: el amor a uno mismo, la terrenal; y el amor a Dios, la celestial."[PARAGRAPH:2]- San Agust&#237;n</Spanish>
 	</TEXT>
 
 
@@ -4783,6 +4274,61 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TIMEKEEPING</Tag>
+		<English>Timekeeping</English>
+		<French>Timekeeping</French>
+		<German>Timekeeping</German>
+		<Italian>Timekeeping</Italian>
+		<Spanish>Timekeeping</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TIMEKEEPING_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TIMEKEEPING_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRIANGULAR_TRADE</Tag>
+		<English>Triangular Trade</English>
+		<French>Triangular Trade</French>
+		<German>Triangular Trade</German>
+		<Italian>Triangular Trade</Italian>
+		<Spanish>Triangular Trade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRIANGULAR_TRADE_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRIANGULAR_TRADE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
 
 
 	<TEXT>
@@ -4910,99 +4456,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPANIES</Tag>
-		<English>Companies</English>
-		<French>
-			<Text>Compagnies</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Companies</German>
-		<Italian>Companies</Italian>
-		<Spanish>Companies</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPANIES_QUOTE</Tag>
-		<English>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</English>
-		<French>"La possession n'est rien, si la jouissance ne s'y joint."[PARAGRAPH:2]- &#201;sope</French>
-		<German>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</German>
-		<Italian>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</Italian>
-		<Spanish>"Wealth unused might as well not exist."[PARAGRAPH:2]- Aesop</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPANIES_PEDIA</Tag>
-		<English>A company is a legal entity made up of an association of people, be they natural, legal, or a mixture of both, for carrying on a commercial or industrial enterprise. Company members share a common purpose and unite in order to focus their various talents and organize their collectively available skills or resources to achieve specific, declared goals.[PARAGRAPH:2]The Middles Ages saw continuous advances in financial tools, first in China, but later also in the Middle East and Europe. This enabled more successful organised cooperation between people, even over large geographic distances.[PARAGRAPH:2]Companies were often established to engage in trading ventures or for similar business purposes, especially to facilitate long distance trade. A similar development took place in military organisation: private military companies were established who offered their services to various powers in small and large conflicts. The most prominent examples include Swiss mercenaries and Italian condottieri.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FORTIFICATION</Tag>
-		<English>Fortification</English>
-		<French>
-			<Text>Fortification</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Fortification</German>
-		<Italian>Fortification</Italian>
-		<Spanish>Fortification</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FORTIFICATION_QUOTE</Tag>
-		<English>"It is from their foes, not their friends, that cities learn the lesson of building high walls."[PARAGRAPH:2]- Aristophanes, Birds</English>
-		<French>"Les cit&#233;s ont appris de leurs ennemis, et non de leurs amis, &#224; b&#226;tir des murailles &#233;lev&#233;es."[PARAGRAPH:2]- Aristophane, Les Oiseaux</French>
-		<German>"Nicht von ihren Freunden, sondern von ihren Feinden lernen St&#228;dte, hohe Mauern zu bauen."[PARAGRAPH:2]- Aristophanes</German>
-		<Italian>"&#200; dai nemici, non dagli amici, che le citt&#224; imparano la lezione di costruire alte mura."[PARAGRAPH:2]- Aristofane</Italian>
-		<Spanish>"Es de los enemigos, no de los amigos, que las ciudades aprenden la lecci&#243;n de construir murallas altas."[PARAGRAPH:2]- Arist&#243;fanes</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FORTIFICATION_PEDIA</Tag>
-		<English>Fortifications are structures built to aid in the defense of a point or area against attackers. Various types of fortification have existed since prehistoric times: the proto-city of Jericho was protected by a wall over three meters high as early as 9000 BCE, although this may have been as much a flood control measure as a military defense. The growth of civilization and advances in the killing power of weapons made fixed defenses ever more important.[PARAGRAPH:2]The basic concept of walling a city is to deter casual raiders and force even a determined army into a protracted, costly siege. Incorporating defensible features into buildings, such as narrow windows and entryways, provides cover to defenders and make it hard for attackers to push into the building safely.[PARAGRAPH:2]Advances in engineering during medieval times, and larger labor forces made available by advances in agriculture, allowed a great increase in the scale of defensive works. Entire provinces could be protected by walls like the famous Great Wall of China, or Hadrian's Wall in Britain. Individual points could be held with great castles and fortresses, strong enough that it would take years of siege to starve them out, as a mass assault by soldiers using normal means was guaranteed to fail.[PARAGRAPH:2]This goal of demanding multi-year sieges became impractical with the invention of gunpowder-based artillery, but the art of fortification remained prominent. Architects devised new ways to build defenses that would absorb and deflect cannon fire, sheltering troops from enemy guns and channeling attackers into zones where the defenders' guns could be brought to bear.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MYTHOLOGY</Tag>
-		<English>Mythology</English>
-		<French>
-			<Text>Mythologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mythology</German>
-		<Italian>Mythology</Italian>
-		<Spanish>Mythology</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MYTHOLOGY_QUOTE</Tag>
-		<English>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</English>
-		<French>"Ne t'&#233;gale point aux Dieux, car la race des Dieux immortels n'est point semblable &#224; celle des hommes qui marchent sur la terre."[PARAGRAPH:2]- Hom&#232;re, l'Iliade</French>
-		<German>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</German>
-		<Italian>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</Italian>
-		<Spanish>"Not at all similar are the race of the immortal gods and the race of men who walk upon the earth."[PARAGRAPH:2]- Homer, The Iliad</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MYTHOLOGY_PEDIA</Tag>
-		<English>Mythology refers variously to the collected myths of a group of people. Myths are the stories people tell to explain nature, history and customs. Myth is a feature of every culture. Many sources for myths have been proposed, ranging from personification of nature or personification of natural phenomena, to truthful or hyperbolic accounts of historical events to explanations of existing rituals. A culture's collective mythology helps convey belonging, shared and religious experiences, behavioral models and moral and practical lessons.[PARAGRAPH:2]One theory claims that myths are distorted accounts of historical events. According to this theory, storytellers repeatedly elaborate upon historical accounts until the figures in those accounts gain the status of gods. Other theories propose that myths began as allegories for natural phenomena: Apollo represents the sun, Poseidon represents water, and so on. According to another theory, myths began as allegories for philosophical or spiritual concepts: Athena represents wise judgment, Aphrodite desire, and so on. Some thinkers claimed that myths result from the personification of inanimate objects and forces. According to these thinkers, the ancients worshiped natural phenomena, such as fire and air, gradually deifying them. According to the myth-ritual theory, myth is tied to ritual. In its most extreme form, this theory claims myths arose to explain rituals.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_WRITING</Tag>
 		<English>Writing</English>
 		<French>
@@ -5036,20 +4489,52 @@
 	</TEXT>
 	
 	<TEXT>
-		<Tag>TXT_KEY_ERA_GLOBAL</Tag>
-		<English>Global</English>
-		<French>&#200;re mondiale</French>
-		<German>Global</German>
-		<Italian>Global</Italian>
-		<Spanish>Global</Spanish>
+		<Tag>TXT_KEY_ERA_PRE_COLUMBIAN</Tag>
+		<English>Pre Columbian</English>
+		<French>Pre Columbian</French>
+		<German>Pre Columbian</German>
+		<Italian>Pre Columbian</Italian>
+		<Spanish>Pre Columbian</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_ERA_DIGITAL</Tag>
-		<English>Digital</English>
-		<French>&#200;re num&#233;rique</French>
-		<German>Digital</German>
-		<Italian>Digital</Italian>
-		<Spanish>Digital</Spanish>
+		<Tag>TXT_KEY_ERA_EXPLORATION</Tag>
+		<English>Exploration</English>
+		<French>Exploration</French>
+		<German>Exploration</German>
+		<Italian>Exploration</Italian>
+		<Spanish>Exploration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_COLONIAL</Tag>
+		<English>Colonial</English>
+		<French>Colonial</French>
+		<German>Colonial</German>
+		<Italian>Colonial</Italian>
+		<Spanish>Colonial</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_REVOLUTIONARY</Tag>
+		<English>Revolutionary</English>
+		<French>Revolutionary</French>
+		<German>Revolutionary</German>
+		<Italian>Revolutionary</Italian>
+		<Spanish>Revolutionary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_MODERN</Tag>
+		<English>Modern</English>
+		<French>Modern</French>
+		<German>Modern</German>
+		<Italian>Modern</Italian>
+		<Spanish>Modern</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_ATOMIC</Tag>
+		<English>Atomic</English>
+		<French>Atomic</French>
+		<German>Atomic</German>
+		<Italian>Atomic</Italian>
+		<Spanish>Atomic</Spanish>
 	</TEXT>
 
 </Civ4GameText>

@@ -299,28 +299,30 @@ iNumCorporations = 9
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 141
-(iTanning, iMining, iPottery, iPastoralism, iAgriculture, iMythology, iSailing,
-iSmelting, iMasonry, iLeverage, iProperty, iCeremony, iDivination, iSeafaring,
-iAlloys, iConstruction, iRiding, iArithmetics, iWriting, iCalendar, iShipbuilding,
-iBloomery, iCement, iMathematics, iContract, iLiterature, iPriesthood, iNavigation,
-iGeneralship, iEngineering, iAesthetics, iCurrency, iLaw, iPhilosophy, iMedicine,
-iNobility, iSteel, iArchitecture, iArtisanry, iPolitics, iScholarship, iEthics,
-iFeudalism, iFortification, iMachinery, iAlchemy, iGuilds, iCivilService, iTheology,
-iCommune, iCropRotation, iPaper, iCompass, iPatronage, iEducation, iDoctrine,
-iGunpowder, iCompanies, iFinance, iCartography, iHumanities, iPrinting, iJudiciary,
-iFirearms, iLogistics, iExploration, iOptics, iAcademia, iStatecraft, iHeritage,
-iCombinedArms, iEconomics, iGeography, iScientificMethod, iUrbanPlanning, iCivilLiberties, iHorticulture,
-iReplaceableParts, iHydraulics, iPhysics, iGeology, iMeasurement, iSociology, iSocialContract,
-iMachineTools, iThermodynamics, iMetallurgy, iChemistry, iBiology, iRepresentation, iNationalism,
-iBallistics, iEngine, iRailroad, iElectricity, iRefrigeration, iLabourUnions, iJournalism,
-iPneumatics, iAssemblyLine, iRefining, iFilm, iMicrobiology, iConsumerism, iCivilRights,
-iInfrastructure, iFlight, iSynthetics, iRadio, iPsychology, iMacroeconomics, iSocialServices,
-iAviation, iRocketry, iFission, iElectronics, iTelevision, iPowerProjection, iGlobalism,
-iRadar, iSpaceflight, iNuclearPower, iLaser, iComputers, iTourism, iEcology,
-iAerodynamics, iSatellites, iSuperconductors, iRobotics, iTelecommunications, iRenewableEnergy, iGenetics,
-iSupermaterials, iFusion, iNanotechnology, iAutomation, iBiotechnology,
-iUnifiedTheory, iArtificialIntelligence,
+iNumTechs = 143
+#				2				3				4				5				6				7
+(iTanning, 		iMining, 		iPottery, 		iPastoralism, 	iAgriculture, 	iMythology, 	iSailing,
+iArtisanry, 	iMasonry, 		iMathematics, 	iProperty, 		iCeremony, 		iPriesthood, 	iNavigation,
+iSmelting, 		iConstruction, 	iAesthetics, 	iCalendar, 		iWriting, 		iLaw, 			iMedicine,
+iOldWorldKnowledge,
+iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iHumanities, 	iPrinting, 		iJudiciary,
+iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iGovernors,
+iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iCharter, 		iCommunity, 	iIndentures,
+iCombinedArms, 	iTriangularTrade, iExploitation, iTimekeeping, 	iEducation, 	iPolitics, 		iHorticulture,
+iTactics,		iCurrency,		iGeography,		iAcademia,		iUrbanPlanning,	iStatecraft,	iSocialContract,
+iReplaceableParts, iFreeMarket,	iNewspapers,	iScientificMethod, iArchitecture, iSociology,	iHeritage,
+iRegiments, 	iBonds,			iPostalService,	iMeteorology,	iSurveying,		iRepresentation, iIndependence,
+iMetallurgy,	iProtectionism,	iHydraulics,	iPhysics,		iGeology,		iRightsOfMan,	iFederalism,
+iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iPioneering,	iCivilLiberties, iNationalism,
+iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iEmancipation, 	iImperialism,
+iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
+iPneumatics, 	iFlight, 		iRefining, 		iFilm, 			iRefrigeration, iConsumerism, 	iCivilRights,
+iInfrastructure, iAeronautics, 	iSynthetics, 	iRadio, 		iMicrobiology, 	iMacroeconomics, iSocialServices,
+iAviation, 		iRocketry, 		iFission, 		iElectronics, 	iPsychology, 	iPowerProjection, iGlobalism,
+iRadar, 		iSpaceflight, 	iNuclearPower, 	iLaser, 		iTelevision, 	iTourism, 		iEcology,
+iAerodynamics, 	iSatellites, 	iSuperconductors, iTelecommunications, iComputers, iRenewableEnergy, iGenetics,
+iSupermaterials, iFusion, 		iNanotechnology, iRobotics,		iAutomation, 
+iUnifiedTheory, iArtificialIntelligence, iBiotechnology,
 iTranshumanism) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
@@ -523,20 +525,13 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 125
-(iLeaderBarbarian, iNativeLeader, iIndependentLeader, iRamesses, iCleopatra, iBaibars, iNasser, iSargon, iHammurabi, iVatavelli,
-iQinShiHuang, iTaizong, iHongwu, iMao, iPericles, iAlexanderTheGreat, iGeorge, iAsoka, iChandragupta, iShivaji, 
-iGandhi, iHiram, iHannibal, iAhoeitu, iCyrus, iDarius, iKhosrow, iJuliusCaesar, iAugustus, iPacal,
-iRajendra, iKrishnaDevaRaya, iEzana, iZaraYaqob, iMenelik, iWangKon, iSejong, iJustinian, iBasil, iKammu,
-iOdaNobunaga, iMeiji, iRagnar, iGustav, iGerhardsen, iBumin, iAlpArslan, iTamerlane, iHarun, iSaladin,
-iSongtsen, iLobsangGyatso, iDharmasetu, iHayamWuruk, iSuharto, iRahman, iYaqub, iIsabella, iPhilip, iFranco,
-iCharlemagne, iLouis, iNapoleon, iDeGaulle, iSuryavarman, iAlfred, iElizabeth, iVictoria, iChurchill, iBarbarossa,
-iCharles, iFrancis, iIvan, iPeter, iCatherine, iAlexanderI, iStalin, iMansaMusa, iCasimir, iSobieski,
-iPilsudski, iWalesa, iAfonso, iJoao, iMaria, iHuaynaCapac, iCastilla, iLorenzo, iCavour, iMussolini,
-iGenghisKhan, iKublaiKhan, iMontezuma, iTughluq, iAkbar, iBhutto, iMehmed, iSuleiman, iAtaturk, iNaresuan,
-iMongkut, iMbemba, iAbbas, iKhomeini, iWillemVanOranje, iWilliam, iFrederick, iBismarck, iHitler, iWashington,
-iLincoln, iRoosevelt, iSanMartin, iPeron, iJuarez, iSantaAnna, iCardenas, iBolivar, iPedro, iVargas,
-iMacDonald, iTrudeau, iBoudica, iBrennus, iSittingBull) = range(iNumLeaders)
+iNumLeaders = 48
+#				2				3				4				5				6				7				8				9				10
+(iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAhoeitu, iPacal,			iGustav, 		iGerhardsen, 	iIsabella, 		iPhilip, 		iFranco,
+iCharlemagne, 	iLouis, 		iNapoleon, 		iDeGaulle, 		iAlfred, 		iElizabeth, 	iVictoria, 		iChurchill, 	iBarbarossa,	iCharles, 
+iFrancis, 		iIvan, 			iPeter, 		iCatherine, 	iAlexanderI, 	iStalin, 		iAfonso, 		iJoao, 			iMaria, 		iHuaynaCapac, 
+iCastilla, 		iMontezuma, 	iWillemVanOranje, iWilliam, 	iWashington,	iLincoln, 		iRoosevelt, 	iSanMartin, 	iPeron, 		iJuarez, 
+iSantaAnna, 	iCardenas, 		iBolivar, 		iPedro, 		iVargas,		iMacDonald, 	iTrudeau, 		iSittingBull) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 })

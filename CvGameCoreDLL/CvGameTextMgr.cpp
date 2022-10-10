@@ -254,9 +254,9 @@ void CvGameTextMgr::setDateStrPlayer(CvWString& szString, int iGameTurn, bool bS
 		szString = gDLL->getText("TXT_KEY_AGE_REVOLUTIONARY");
 	else if (GET_PLAYER(ePlayer).getCurrentEra() == ERA_EXPLORATION)
 		szString = gDLL->getText("TXT_KEY_AGE_EXPLORATION");
-	else if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isHasTech((TechTypes)BLOOMERY))
+	else if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isHasTech((TechTypes)SMELTING))
 		szString = gDLL->getText("TXT_KEY_AGE_IRON");
-	else if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isHasTech((TechTypes)ALLOYS))
+	else if (GET_TEAM(GET_PLAYER(ePlayer).getTeam()).isHasTech((TechTypes)MINING))
 		szString = gDLL->getText("TXT_KEY_AGE_BRONZE");
 	else szString = gDLL->getText("TXT_KEY_AGE_STONE");
 	if (bSave)

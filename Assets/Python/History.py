@@ -205,12 +205,6 @@ def recordExplorationTurn(iTech, iTeam, iPlayer):
 
 
 @handler("techAcquired")
-def openIcelandRoute(iTech):		
-	if iTech == iCompass:
-		plot(49, 62).setTerrainType(iCoast, True, True)
-
-
-@handler("techAcquired")
 def americanWestCoastSettlement(iTech, iTeam, iPlayer):
 	if iTech == iRailroad and civ(iPlayer) == iAmerica and not player(iPlayer).isHuman():
 		lWestCoast = [(11, 50), (11, 49), (11, 48), (11, 47), (11, 46), (12, 45)]

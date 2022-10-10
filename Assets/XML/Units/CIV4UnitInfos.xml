@@ -480,7 +480,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_LABOUR_UNIONS</PrereqTech>
+			<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
@@ -617,7 +617,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_LABOUR_UNIONS</PrereqTech>
+			<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
@@ -977,7 +977,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_DOCTRINE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1648,7 +1648,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_ALLOYS</PrereqTech>
+			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -1746,7 +1746,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_ALLOYS</PrereqTech>
+			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -1837,7 +1837,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_ALLOYS</PrereqTech>
+			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -1922,7 +1922,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_BLOOMERY</PrereqTech>
+			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2007,7 +2007,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_ALLOYS</PrereqTech>
+			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<iCost>35</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2189,9 +2189,9 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_CIVIL_SERVICE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<TechTypes>
-				<PrereqTech>TECH_STEEL</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			</TechTypes>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
@@ -2452,7 +2452,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_STEEL</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -4251,7 +4251,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_CONTRACT</PrereqTech>
+			<PrereqTech>TECH_ARTISANRY</PrereqTech>
 			<TechTypes>
 				<PrereqTech>TECH_TANNING</PrereqTech>
 			</TechTypes>
@@ -4435,7 +4435,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_COMMUNE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4526,7 +4526,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4615,7 +4615,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_NOBILITY</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>70</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -6744,7 +6744,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<iCost>25</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -6766,7 +6766,7 @@
 			<FeaturePassableTechs>
 				<FeaturePassableTech>
 					<FeatureType>FEATURE_CAPE</FeatureType>
-					<PassableTech>TECH_COMPASS</PassableTech>
+					<PassableTech>TECH_OLD_WORLD_KNOWLEDGE</PassableTech>
 				</FeaturePassableTech>
 			</FeaturePassableTechs>
 			<iCombat>2</iCombat>

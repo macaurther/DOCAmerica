@@ -15,9 +15,9 @@
 <Civ4EraInfos xmlns="x-schema:CIV4GameInfoSchema.xml">
 	<EraInfos>
 		<EraInfo>
-			<Type>ERA_ANCIENT</Type>
-			<Description>TXT_KEY_ERA_ANCIENT</Description>
-			<Strategy>TXT_KEY_ERA_ANCIENT_STRATEGY</Strategy>
+			<Type>ERA_PRE_COLUMBIAN</Type>
+			<Description>TXT_KEY_ERA_PRE_COLUMBIAN</Description>
+			<Strategy>TXT_KEY_ERA_PRE_COLUMBIAN_STRATEGY</Strategy>
 			<bNoGoodies>0</bNoGoodies>
 			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -67,9 +67,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_CLASSICAL</Type>
-			<Description>TXT_KEY_ERA_CLASSICAL</Description>
-			<Strategy>TXT_KEY_ERA_CLASSICAL_STRATEGY</Strategy>
+			<Type>ERA_EXPLORATION</Type>
+			<Description>TXT_KEY_ERA_EXPLORATION</Description>
+			<Strategy>TXT_KEY_ERA_EXPLORATION_STRATEGY</Strategy>
 			<bNoGoodies>0</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -134,9 +134,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_EARLY</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_MEDIEVAL</Type>
-			<Description>TXT_KEY_ERA_MEDIEVAL</Description>
-			<Strategy>TXT_KEY_ERA_MEDIEVAL_STRATEGY</Strategy>
+			<Type>ERA_COLONIAL</Type>
+			<Description>TXT_KEY_ERA_COLONIAL</Description>
+			<Strategy>TXT_KEY_ERA_COLONIAL_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
@@ -202,9 +202,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_RENAISSANCE</Type>
-			<Description>TXT_KEY_ERA_RENAISSANCE</Description>
-			<Strategy>TXT_KEY_ERA_RENAISSANCE_STRATEGY</Strategy>
+			<Type>ERA_REVOLUTIONARY</Type>
+			<Description>TXT_KEY_ERA_REVOLUTIONARY</Description>
+			<Strategy>TXT_KEY_ERA_REVOLUTIONARY_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>1</bNoBarbUnits>
@@ -333,9 +333,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_GLOBAL</Type>
-			<Description>TXT_KEY_ERA_GLOBAL</Description>
-			<Strategy>TXT_KEY_ERA_GLOBAL_STRATEGY</Strategy>
+			<Type>ERA_MODERN</Type>
+			<Description>TXT_KEY_ERA_MODERN</Description>
+			<Strategy>TXT_KEY_ERA_MODERN_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>1</bNoBarbUnits>
@@ -395,9 +395,9 @@
 			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
 		</EraInfo>
 		<EraInfo>
-			<Type>ERA_DIGITAL</Type>
-			<Description>TXT_KEY_ERA_DIGITAL</Description>
-			<Strategy>TXT_KEY_ERA_DIGITAL_STRATEGY</Strategy>
+			<Type>ERA_ATOMIC</Type>
+			<Description>TXT_KEY_ERA_ATOMIC</Description>
+			<Strategy>TXT_KEY_ERA_ATOMIC_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
 			<bNoBarbUnits>1</bNoBarbUnits>

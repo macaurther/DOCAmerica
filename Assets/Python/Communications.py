@@ -25,7 +25,7 @@ def canDecay(iGameTurn, iPlayer):
 	if iGameTurn < player(iPlayer).getLastBirthTurn() + turns(15):
 		return False
 	
-	if team(iPlayer).isHasTech(iElectricity):
+	if team(iPlayer).isHasTech(iTelegraph):
 		return False
 	
 	return True

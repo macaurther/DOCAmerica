@@ -9,7 +9,7 @@
 		<BuildInfo>
 			<Type>BUILD_ROAD</Type>
 			<Description>TXT_KEY_BUILD_ROAD</Description>
-			<PrereqTech>TECH_LEVERAGE</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>400</iTime>
 			<RouteType>ROUTE_ROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
@@ -23,7 +23,7 @@
 		<BuildInfo>
 			<Type>BUILD_ROMAN_ROAD</Type>
 			<Description>TXT_KEY_BUILD_ROMAN_ROAD</Description>
-			<PrereqTech>TECH_LEVERAGE</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>400</iTime>
 			<RouteType>ROUTE_ROMAN_ROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
@@ -87,7 +87,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -131,7 +131,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -169,7 +169,7 @@
 		<BuildInfo>
 			<Type>BUILD_OCEAN_FISHERY</Type>
 			<Description>TXT_KEY_BUILD_OCEAN_FISHERY</Description>
-			<PrereqTech>TECH_COMPASS</PrereqTech>
+			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<iTime>0</iTime>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_OCEAN_FISHERY</ImprovementType>
@@ -213,14 +213,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -257,7 +257,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -273,7 +273,7 @@
 		<BuildInfo>
 			<Type>BUILD_LUMBERMILL</Type>
 			<Description>TXT_KEY_BUILD_LUMBERMILL</Description>
-			<PrereqTech>TECH_STEEL</PrereqTech>
+			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -287,7 +287,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -308,7 +308,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -324,7 +324,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -345,7 +345,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -375,14 +375,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -406,7 +406,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -437,14 +437,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -481,7 +481,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -532,7 +532,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -581,14 +581,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -618,14 +618,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -655,14 +655,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -679,7 +679,7 @@
 		<BuildInfo>
 			<Type>BUILD_FORT</Type>
 			<Description>TXT_KEY_BUILD_FORT</Description>
-			<PrereqTech>TECH_GENERALSHIP</PrereqTech>
+			<PrereqTech>TECH_FORTIFICATION</PrereqTech>
 			<iTime>1000</iTime>
 			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -749,7 +749,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -908,7 +908,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -946,7 +946,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -977,14 +977,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1022,7 +1022,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1039,7 +1039,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -1060,7 +1060,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1077,7 +1077,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_MACHINERY</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -1098,7 +1098,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1129,14 +1129,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1167,14 +1167,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1212,7 +1212,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1250,7 +1250,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1293,7 +1293,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1325,14 +1325,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>

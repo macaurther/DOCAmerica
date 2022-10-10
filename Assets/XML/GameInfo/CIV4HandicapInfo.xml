@@ -92,10 +92,6 @@
 			</Goodies>
 			<FreeTechs>
 				<FreeTech>
-					<TechType>TECH_LEVERAGE</TechType>
-					<bFreeTech>1</bFreeTech>
-				</FreeTech>
-				<FreeTech>
 					<TechType>TECH_AGRICULTURE</TechType>
 					<bFreeTech>1</bFreeTech>
 				</FreeTech>

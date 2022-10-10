@@ -25362,7 +25362,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 		}
 	}
 
-	if (GET_TEAM(getTeam()).isHasTech((TechTypes)DOCTRINE))
+	if (GET_TEAM(getTeam()).isHasTech((TechTypes)EVANGELISM))
 	{
 		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_DEIFICATION)
 		{
