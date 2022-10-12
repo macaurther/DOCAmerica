@@ -336,7 +336,7 @@ iSwordsman, 	iJaguar, 		iAucac, 		iHeavySwordsman,iSpearman, 		iNativeRaider, 	i
 iMohawk, 		iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 	iAlbionLegion, 	iAntiTank, 		iInfantry, 		iSamInfantry, 
 iMobileSam, 	iMarine, 		iNavySeal, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iNativeArcher, 	iSkirmisher, 	iHolkan, 		iLongbowman, 
 iCrossbowman, 	iHorseArcher,  	iPistolier, 	iMountedBrave, 	iCuirassier, 	iConquistador, 	iHussar, 		iLlanero, 		iDragoon, 		iGrenadierCavalry, 
-iCavalry, 	iRural, 		iTank, 			iMainBattleTank, 	iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		
+iCavalry, 		iRural, 		iTank, 			iMainBattleTank, iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		
 iMobileArtillery, iWorkboat, 	iCaravel, 		iCarrack, 		iWaaKaulua,		iGalleon, 		iEastIndiaman, 	iPrivateer, 	iFrigate, 		iShipOfTheLine, 
 iManOfWar, 		iSteamship, 	iIronclad, 		iTorpedoBoat, 	iCruiser, 		iTransport, 	iDestroyer, 	iCorvette, 		iBattleship, 	iMissileCruiser, 
 iStealthDestroyer,iSubmarine, 	iNuclearSubmarine, iCarrier, 	iBiplane, 		iFighter, 		iJetFighter, 	iBomber, 		iStealthBomber, iGuidedMissile, 
@@ -369,18 +369,18 @@ iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, 
 iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
 # Buildings
 
-iNumBuildings = 169
-# Buildings (86)
+iNumBuildings = 166
+# Buildings (83)
 #				2				3				4				5				6				7				8				9				10
 (iPalace, 		iBarracks, 		iGranary,		iTerrace, 		iSmokehouse, 	iPaganTemple, 	iMonument,		iTotemPole, 	iWalls, 		iStable, 
-iLibrary,		iHarbor, 		iAqueduct, 		iTheatre,		iArena, 		iBallCourt, 	iCharreadaArena, iGarden, 		iLighthouse, 	iWeaver,
-iMarket, 		iJail, 			iSacrificialAltar, iBath, 		iForge, 		iMint, 			iCastle, 		iPharmacy, 		iPostOffice, 	iTambo,
-iWharf, 		iCoffeehouse,	iSalon, 		iBank, 			iRoyalExchange, iConstabulary, 	iMountedPolice, iCustomsHouse, 	iFeitoria, 		iUniversity,	
-iCivicSquare, 	iSewer, 		iStarFort, 		iEstate, 		iFazenda, 		iHacienda, 		iDrydock, 		iLevee, 		iObservatory, 	iWarehouse, 	
-iCourthouse, 	iFactory, 		iAssemblyPlant, iDistillery, 	iPark, 			iCoalPlant, 	iRailwayStation, iLaboratory, 	iNewsPress, 	iIndustrialPark, 
-iCinema, 		iHospital, 		iSupermarket, 	iColdStoragePlant, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, 
-iAirport, 		iBunker, 		iBombShelters, 	iHydroPlant, 	iSecurityBureau, iStadium, 		iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, 		
-iRecyclingCenter, iLogisticsCenter, iSolarPlant, iFiberNetwork, iAutomatedFactory, iVerticalFarm, 
+iLibrary,		iHarbor, 		iAqueduct, 		iTheatre,		iArena, 		iBallCourt, 	iCharreadaArena, iLighthouse, 	iWeaver,		iMarket,
+iJail, 			iSacrificialAltar, iBath, 		iForge, 		iCastle, 		iPharmacy, 		iPostOffice, 	iTambo,			iWharf,			iCoffeehouse,
+iSalon, 		iBank, 			iRoyalExchange, iConstabulary, 	iMountedPolice, iCustomsHouse, 	iFeitoria, 		iUniversity,	iCivicSquare, 	iSewer, 
+iStarFort, 		iEstate, 		iFazenda, 		iHacienda, 		iDrydock, 		iLevee, 		iObservatory, 	iWarehouse, 	iCourthouse, 	iFactory, 
+iDistillery, 	iPark, 			iCoalPlant, 	iRailwayStation, iLaboratory, 	iNewsPress, 	iIndustrialPark, iCinema, 		iHospital, 		iSupermarket, 	
+iColdStoragePlant, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 	iBombShelters, 	
+iHydroPlant, 	iSecurityBureau, iStadium, 		iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, 		iRecyclingCenter, iLogisticsCenter, iSolarPlant,
+iFiberNetwork, iAutomatedFactory, iVerticalFarm, 
 # Religious Buildings (40)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
