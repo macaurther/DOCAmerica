@@ -1886,6 +1886,26 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ATUA_SHRINE</Tag>
+		<English>Atua Shrine</English>
+		<French>
+			<Text>Sanctuaire atua:Sanctuaires atua</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Atua Shrine</German>
+		<Italian>Atua Shrine</Italian>
+		<Spanish>Atua Shrine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ATUA_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</English>
+		<French>Le [COLOR_BUILDING_TEXT]Sanctuaire atua[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes des [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Atua Shrine[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Atua[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEOTL_STEP_PYRAMID</Tag>
 		<English>Teotl Step Pyramid</English>
 		<French>
@@ -1904,6 +1924,86 @@
 		<German>The [COLOR_BUILDING_TEXT]Teotl Step Pyramid[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Teotl[COLOR_REVERT].</German>
 		<Italian>The [COLOR_BUILDING_TEXT]Teotl Step Pyramid[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Teotl[COLOR_REVERT].</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]Teotl Step Pyramid[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Teotl[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASATRU_HOF</Tag>
+		<English>Asatru Hof</English>
+		<French>
+			<Text>Hof &#193;satr&#250;ar:Hofs &#193;satr&#250;ar</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Asatru Hof</German>
+		<Italian>Asatru Hof</Italian>
+		<Spanish>Asatru Hof</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASATRU_HOF_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</English>
+		<French>Le [COLOR_BUILDING_TEXT]Hof &#193;satr&#250;ar[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de l'[COLOR_HIGHLIGHT_TEXT]&#193;satr&#250;[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Asatru Hof[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Asatru[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DRUIDIC_NEMETON</Tag>
+		<English>Druidic Nemeton</English>
+		<French>
+			<Text>Nemeton druidique:Nemetons druidiques</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Druidic Nemeton</German>
+		<Italian>Druidic Nemeton</Italian>
+		<Spanish>Druidic Nemeton</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DRUIDIC_NEMETON_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</English>
+		<French>Le [COLOR_BUILDING_TEXT]Nemeton druidique[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes du [COLOR_HIGHLIGHT_TEXT]Druidisme[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Druidic Nemeton[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Druidism[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERUN_SHRINE</Tag>
+		<English>Shrine of Perun</English>
+		<French>
+			<Text>Sanctuaire de P&#233;roun:Sanctuaires de P&#233;roun</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Shrine of Perun</German>
+		<Italian>Shrine of Perun</Italian>
+		<Spanish>Shrine of Perun</Spanish>	
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERUN_SHRINE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</English>
+		<French>Le [COLOR_BUILDING_TEXT]Sanctuaire de P&#233;roun[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de la [COLOR_HIGHLIGHT_TEXT]Rodnov&#233;rie[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INTI_TEMPLE</Tag>
+		<English>Inti Temple</English>
+		<French>
+			<Text>Temple d'Inti:Temples d'Inti</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Inti Temple</German>
+		<Italian>Inti Temple</Italian>
+		<Spanish>Inti Temple</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INTI_TEMPLE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</English>
+		<French>Le [COLOR_BUILDING_TEXT]Temple d'Inti[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes d'[COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Inti Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Inti[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Tag>

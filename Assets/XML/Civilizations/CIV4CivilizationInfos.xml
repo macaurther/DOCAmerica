@@ -1264,9 +1264,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>NAT</Identifier>
-			<StartingYear>250</StartingYear>
+			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -1811,9 +1810,8 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY1</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Identifier>MIN</Identifier>
-			<StartingYear>250</StartingYear>
+			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2032,9 +2030,8 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY2</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Identifier>MIN</Identifier>
-			<StartingYear>250</StartingYear>
+			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2254,9 +2251,8 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>NAT</Identifier>
-			<StartingYear>250</StartingYear>
+			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2448,9 +2444,8 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>MIN</Identifier>
-			<StartingYear>250</StartingYear>
+			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2571,9 +2566,8 @@
 			<DefaultPlayerColor>PLAYERCOLOR_BLACK</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BARBARIAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>BAR</Identifier>
-			<StartingYear>250</StartingYear>
+			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>

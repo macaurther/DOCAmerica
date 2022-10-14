@@ -25,7 +25,7 @@ LEADER_DATES = {
 	iAfonso: 1140,
 	iJoao: 1490,
 	iMaria: 1830,
-	iHuaynaCapac: 1000,
+	iHuaynaCapac: 1500,
 	iMontezuma: 1440,
 	iWillemVanOranje: 1570,
 	iWilliam: 1650,
