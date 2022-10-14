@@ -132,7 +132,7 @@ def onCityRazed(city, iPlayer):
 	if player(iOwner).isBarbarian():
 		return
 
-	if player(iPlayer).isHuman() and civ(iPlayer) != iMongols:
+	if player(iPlayer).isHuman():
 		iRazePenalty = -10
 		if city.getHighestPopulation() < 5 and not city.isCapital():
 			iRazePenalty = -2 * city.getHighestPopulation()
@@ -423,7 +423,7 @@ def getSeparatismModifier(iPlayer, city):
 	bHistorical = plot.getPlayerSettlerValue(iPlayer) >= 90
 	bFall = since(year(dFall[iPlayer])) >= 0
 	bTotalitarianism = civic.iSociety == iTotalitarianism
-	bExpansionExceptions = (bHistorical and iCiv == iMongols and not bFall) or bTotalitarianism
+	bExpansionExceptions = bTotalitarianism
 	
 	iTotalCulture = civs.major().sum(lambda c: plot.isCore(c) and 2 * plot.getCivCulture(c) or plot.getCivCulture(c))
 	iCulturePercent = iTotalCulture != 0 and 100 * plot.getCulture(iPlayer) / iTotalCulture or 0
@@ -667,9 +667,6 @@ def calculateStability(iPlayer):
 	if tPlayer.isHasTech(iNationalism):
 		if (iNationhood, iMultilateralism) in civics: iCivicEraTechStability += 5
 		if (iConquest, iTributaries) in civics: iCivicEraTechStability -= 5
-		
-	if tPlayer.isHasTech(iDoctrine):
-		if (iAnimism, iDeification) in civics: iCivicEraTechStability -= 5
 	
 	if tPlayer.isHasTech(iStatecraft):
 		if (iAuthority, iCitizenship, iVassalage) not in civics: iCivicEraTechStability += 5

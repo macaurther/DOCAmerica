@@ -439,7 +439,7 @@ def placeHut(tTL, tBR):
 	
 	for plot in plots.start(tTL).end(tBR):
 		if plot.isFlatlands() or plot.isHills():
-			if plot.getFeatureType() != iMud:
+			if plot.getFeatureType() != iBog:
 				if plot.getOwner() < 0:
 					plotList.append(location(plot))
 	

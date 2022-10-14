@@ -105,8 +105,8 @@ def afterGeneration():
 	
 def findStartingPlot(args):
 	iPlayer = args[0]
-	startingPlot = is_minor(iPlayer) and plot(0, 0) or plots.capital(civ(iPlayer))
-	#startingPlot = (iPlayer not in lMinorCivs) and plot(0, 0) or plots.capital(civ(iPlayer))
+	#startingPlot = is_minor(iPlayer) and plot(0, 0) or plots.capital(civ(iPlayer))
+	startingPlot = (iPlayer not in lMinorCivs) and plot(0, 0) or plots.capital(civ(iPlayer))
 	#startingPlot = plot(0, 0)
 	
 	return map.plotNum(startingPlot.getX(), startingPlot.getY())

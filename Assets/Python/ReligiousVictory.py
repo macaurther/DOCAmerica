@@ -96,7 +96,7 @@ dAdditionalPaganGoal = {
 	),
 	iBaalism: BestTradeIncomeCity(capital().named(CAPITAL)),
 	iBon: PeakCount(50),
-	iDruidism: FeatureCount(sum(iForest, iMud), 20),
+	iDruidism: FeatureCount(sum(iForest, iBog), 20),
 	iInti: GoldPercent(50),
 	iMazdaism: ResourceCount(iIncense, 6),
 	iMugyo: BestSpecialistCity(capital().named(CAPITAL), great_people()),

@@ -1461,6 +1461,7 @@ void CvMap::calculateAreas()
 				case REGION_ROCKIES:
 				case REGION_CALIFORNIA:
 				case REGION_CASCADIA:
+				case REGION_GREENLAND:
 					plot->setArea(northAmericaID);
 					break;
 				case REGION_SIERRA_MADRE:

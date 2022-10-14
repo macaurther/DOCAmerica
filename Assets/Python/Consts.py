@@ -156,6 +156,8 @@ dFall = CivDict({
 iMaya : 900,
 iInca : 1533,
 iAztecs : 1521,
+iSpain : 1807,
+iPortugal : 1807,
 }, 2020)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
@@ -327,22 +329,38 @@ iTranshumanism) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 133
+iNumUnits = 132
 #				2				3				4				5				6				7				8				9				10
-(iLion, 		iBear, 			iPanther, 		iWolf, 			iSettler, 		iPioneer, 		iWorker, 		iLabourer, 		iMadeireiro, 	iScout, 
-iExplorer, 		iBandeirante, 	iSpy, 			iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary, iIslamicMissionary, iHinduMissionary, 
-iBuddhistMissionary, iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iNativeWarrior, iMilitia, iAxeman, iLightSwordsman, iDogSoldier, 
-iSwordsman, 	iJaguar, 		iAucac, 		iHeavySwordsman,iSpearman, 		iNativeRaider, 	iHeavySpearman, iPikeman, 		iArquebusier, 	iTercio, 
-iMohawk, 		iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 	iAlbionLegion, 	iAntiTank, 		iInfantry, 		iSamInfantry, 
-iMobileSam, 	iMarine, 		iNavySeal, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iNativeArcher, 	iSkirmisher, 	iHolkan, 		iLongbowman, 
-iCrossbowman, 	iHorseArcher,  	iPistolier, 	iMountedBrave, 	iCuirassier, 	iConquistador, 	iHussar, 		iLlanero, 		iDragoon, 		iGrenadierCavalry, 
-iCavalry, 		iRural, 		iTank, 			iMainBattleTank, iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		
-iMobileArtillery, iWorkboat, 	iCaravel, 		iCarrack, 		iWaaKaulua,		iGalleon, 		iEastIndiaman, 	iPrivateer, 	iFrigate, 		iShipOfTheLine, 
-iManOfWar, 		iSteamship, 	iIronclad, 		iTorpedoBoat, 	iCruiser, 		iTransport, 	iDestroyer, 	iCorvette, 		iBattleship, 	iMissileCruiser, 
-iStealthDestroyer,iSubmarine, 	iNuclearSubmarine, iCarrier, 	iBiplane, 		iFighter, 		iJetFighter, 	iBomber, 		iStealthBomber, iGuidedMissile, 
-iDrone, 		iNuclearBomber, iICBM, 			iSatellite, 	iGreatProphet, 	iGreatArtist, 	iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, 
-iGreatGeneral, 	iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, 
-iFemaleGreatSpy, iSlave, 		iAztecSlave) = range(iNumUnits)
+(iBear, 		iPanther, 		iWolf, 			iSettler, 		iPioneer, 		iWorker, 		iLaborer, 		iMadeireiro, 	iScout, 		iExplorer, 
+iBandeirante, 	iSpy, 			iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary, iIslamicMissionary, iHinduMissionary, iBuddhistMissionary,
+iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iNativeWarrior, iMilitia, iAxeman, 	iLightSwordsman, iDogSoldier, 	iSwordsman, 
+iJaguar, 		iAucac, 		iHeavySwordsman,iSpearman, 		iNativeRaider, 	iHeavySpearman, iPikeman, 		iArquebusier, 	iTercio, 		iMohawk, 
+iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 	iAlbionLegion, 	iAntiTank, 		iInfantry, 		iSamInfantry, 	iMobileSam, 
+iMarine, 		iNavySeal, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iNativeArcher, 	iSkirmisher, 	iHolkan, 		iLongbowman, 	iCrossbowman, 
+iHorseArcher,  	iPistolier, 	iMountedBrave, 	iCuirassier, 	iConquistador, 	iHussar, 		iLlanero, 		iDragoon, 		iGrenadierCavalry, iCavalry, 
+iRural, 		iTank, 			iMainBattleTank, iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		iMobileArtillery, 
+iWorkboat, 		iCaravel, 		iCarrack, 		iWaaKaulua,		iGalleon, 		iEastIndiaman, 	iPrivateer, 	iFrigate, 		iShipOfTheLine, iManOfWar, 
+iSteamship, 	iIronclad, 		iTorpedoBoat, 	iCruiser, 		iTransport, 	iDestroyer, 	iCorvette, 		iBattleship, 	iMissileCruiser, iStealthDestroyer,
+iSubmarine, 	iNuclearSubmarine, iCarrier, 	iBiplane, 		iFighter, 		iJetFighter, 	iBomber, 		iStealthBomber, iGuidedMissile, iDrone, 
+iNuclearBomber, iICBM, 			iSatellite, 	iGreatProphet, 	iGreatArtist, 	iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral, 
+iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy,
+iSlave, 		iAztecSlave) = range(iNumUnits)
+
+# Unit enumeration debug
+print('iExplorer: ' + str(iExplorer))
+print('iBuddhistMissionary: ' + str(iBuddhistMissionary))
+print('iSwordsman: ' + str(iSwordsman))
+print('iMohawk: ' + str(iMohawk))
+print('iMobileSam: ' + str(iMobileSam))
+print('iCrossbowman: ' + str(iCrossbowman))
+print('iCavalry: ' + str(iCavalry))
+print('iMobileArtillery: ' + str(iMobileArtillery))
+print('iManOfWar: ' + str(iManOfWar))
+print('iStealthDestroyer: ' + str(iStealthDestroyer))
+print('iDrone: ' + str(iDrone))
+print('iGreatGeneral: ' + str(iGreatGeneral))
+print('iFemaleGreatSpy: ' + str(iFemaleGreatSpy))
+print('iAztecSlave: ' + str(iAztecSlave))
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -400,6 +418,27 @@ iTempleOfKukulkan, iMachuPicchu, iFloatingGardens, iGuadalupeBasilica, iSaltCath
 iEmpireStateBuilding, iLasLajasSanctuary, iFrontenac, iCristoRedentor, iGoldenGateBridge, iItaipuDam, iGraceland, iCNTower, 	iPentagon, 		iUnitedNations, 
 iCrystalCathedral, iWorldTradeCenter,  iHubbleSpaceTelescope, iSpaceElevator) = range(iNumBuildings)
 
+# Building enumeration debug
+print('iStable: ' + str(iStable))
+print('iMarket: ' + str(iMarket))
+print('iCoffeehouse: ' + str(iCoffeehouse))
+print('iSewer: ' + str(iSewer))
+print('iFactory: ' + str(iFactory))
+print('iSupermarket: ' + str(iSupermarket))
+print('iBombShelters: ' + str(iBombShelters))
+print('iSolarPlant: ' + str(iSolarPlant))
+print('iVerticalFarm: ' + str(iVerticalFarm))
+print('iCatholicCathedral: ' + str(iCatholicCathedral))
+print('iIslamicShrine: ' + str(iIslamicShrine))
+print('iConfucianCathedral: ' + str(iConfucianCathedral))
+print('iZoroastrianShrine: ' + str(iZoroastrianShrine))
+print('iStockExchange: ' + str(iStockExchange))
+print('iRedCross: ' + str(iRedCross))
+print('iSpaceport: ' + str(iSpaceport))
+print('iHollywood: ' + str(iHollywood))
+print('iUnitedNations: ' + str(iUnitedNations))
+print('iSpaceElevator: ' + str(iSpaceElevator))
+
 iBeginWonders = iTempleOfKukulkan # different from DLL constant because that includes national wonders
 
 iTemple = iJewishTemple #generic
@@ -452,11 +491,11 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 35
+iNumRegions = 36
 (rAlaska, rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland, rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, 
 rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia, rSierraMadre, rBajio, rYucatan, rMesoamerica,
 rCaribbean, rHawaii, rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rAmazon, rBrazilianHighlands, rPantanal, 
-rChile, rParaguay, rUruguay, rPampas, rPatagonia) = range(iNumRegions)
+rChile, rParaguay, rUruguay, rPampas, rPatagonia, rGreenland) = range(iNumRegions)
 
 lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland]
 lUnitedStates = [rAlaska, rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia, rHawaii]
@@ -502,19 +541,16 @@ iNumRoutes = 4
 
 #feature & terrain
 
-iNumFeatures = 10
-(iSeaIce, iJungle, iOasis, iFloodPlains, iForest, iMud, iCape, iIslands, iRainforest, iFallout) = range(iNumFeatures)
+iNumFeatures = 13
+#				2				3				4				5				6				7				8				9				10
+(iSeaIce, 		iJungle, 		iOasis, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
+iFallout, 		iTaiga, 		iPalmForest) = range(iNumFeatures)
 
-iGrass = 0
-iPlains = 1
-iDesert = 2
-iTundra = 3
-iSnow = 4
-iCoast = 5
-iOcean = 6
-iTerrainPeak = 7
-iTerrainHills = 8
-iMarsh = 9
+iNumTerrains = 19
+#				2				3				4				5				6				7				8				9				10
+(iGrass, 		iPlains, 		iDesert, 		iTundra, 		iSnow, 			iCoast, 		iOcean, 		iTerrainPeak, 	iTerrainHills, 	iMarsh,
+iLagoon,		iArcticCoast,	iSemidesert,	iPrairie,		iMoorland,		iSaltflat,		iSaltlake,		iAtoll,			iSavanna) = range(iNumTerrains)
+
 
 #Plague
 iImmunity = 20

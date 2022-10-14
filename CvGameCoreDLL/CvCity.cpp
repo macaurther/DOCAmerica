@@ -4616,6 +4616,7 @@ void CvCity::updateArtStyleType()
 			case REGION_ROCKIES:
 			case REGION_CALIFORNIA:
 			case REGION_CASCADIA:
+			case REGION_GREENLAND:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NATIVE_AMERICA;
 				break;
 			case REGION_HAWAII:
@@ -4667,6 +4668,7 @@ void CvCity::updateArtStyleType()
 			case REGION_ROCKIES:
 			case REGION_CALIFORNIA:
 			case REGION_CASCADIA:
+			case REGION_GREENLAND:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_ANGLO_AMERICA;
 				break;
 			case REGION_HAWAII:
@@ -4731,6 +4733,7 @@ void CvCity::updateArtStyleType()
 			case REGION_ROCKIES:
 			case REGION_CALIFORNIA:
 			case REGION_CASCADIA:
+			case REGION_GREENLAND:
 				eNewArtStyle = ARTSTYLE_EUROPEAN;
 				break;
 			case REGION_HAWAII:

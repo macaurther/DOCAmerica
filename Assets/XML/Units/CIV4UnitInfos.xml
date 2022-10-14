@@ -7,66 +7,6 @@
 <Civ4UnitInfos xmlns="x-schema:CIV4UnitSchema.xml">
 	<UnitInfos>
 		<UnitInfo>
-			<Class>UNITCLASS_LION</Class>
-			<Type>UNIT_LION</Type>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_LION</Description>
-			<Civilopedia>TXT_KEY_UNIT_LION_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_LION_STRATEGY</Strategy>
-			<bAnimal>1</bAnimal>
-			<bNoDefensiveBonus>1</bNoDefensiveBonus>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<iCost>-1</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<iCombat>2</iCombat>
-			<iCombatLimit>100</iCombatLimit>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<TerrainNatives>
-				<TerrainNative>
-					<TerrainType>TERRAIN_GRASS</TerrainType>
-					<bTerrainNative>1</bTerrainNative>
-				</TerrainNative>
-				<TerrainNative>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bTerrainNative>1</bTerrainNative>
-				</TerrainNative>
-				<TerrainNative>
-					<TerrainType>TERRAIN_DESERT</TerrainType>
-					<bTerrainNative>1</bTerrainNative>
-				</TerrainNative>
-			</TerrainNatives>
-			<iAsset>1</iAsset>
-			<iPower>1</iPower>
-			<UnitMeshGroups>
-				<iGroupSize>3</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>3</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_LION</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
-		</UnitInfo>
-		<UnitInfo>
 			<Class>UNITCLASS_BEAR</Class>
 			<Type>UNIT_BEAR</Type>
 			<Domain>DOMAIN_LAND</Domain>
@@ -335,7 +275,7 @@
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_LABOURER</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_LABORER</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -464,14 +404,14 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_LABOURER</Class>
-			<Type>UNIT_LABOURER</Type>
-			<Capture>UNITCLASS_LABOURER</Capture>
+			<Class>UNITCLASS_LABORER</Class>
+			<Type>UNIT_LABORER</Type>
+			<Capture>UNITCLASS_LABORER</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_LABOURER</Description>
-			<Civilopedia>TXT_KEY_UNIT_LABOURER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_LABOURER_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_LABORER</Description>
+			<Civilopedia>TXT_KEY_UNIT_LABORER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_LABORER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bFood>1</bFood>
 			<UnitAIs>
@@ -600,7 +540,7 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_LABOURER</Class>
+			<Class>UNITCLASS_LABORER</Class>
 			<Type>UNIT_BRAZILIAN_MADEIREIRO</Type>
 			<Capture>UNITCLASS_WORKER</Capture>
 			<Domain>DOMAIN_LAND</Domain>

@@ -1538,6 +1538,16 @@
 			<Button>Art/Structures/Buildings/Central_Bank/CentralBank.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ATUA_SHRINE</Type>
+			<LSystem>LSYSTEM_2x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/fale_tele/southpacificpalace.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/fale_tele/fale_tele.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TEOTL_STEP_PYRAMID</Type>
 			<LSystem>LSYSTEM_3x2</LSystem>
 			<bAnimated>1</bAnimated>
@@ -1546,6 +1556,46 @@
 			<NIF>Art/Structures/Buildings/Teotl_Step_Pyramid/Aztec.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Buildings/Teotl_Step_Pyramid/step_pyramid.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ASATRU_HOF</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>1.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Asatru_Hof/norse_temple.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Asatru_Hof/asatru_hof.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_DRUIDIC_NEMETON</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.15</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Druidic_Nemeton/statue.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Druidic_Nemeton/druidic_nemeton.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PERUN_SHRINE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>28</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Perun_Shrine/perun_temple.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Perun_Shrine/perun_shrine.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_INTI_TEMPLE</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.05</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Inti_Temple/theatre.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Inti_Temple/inti_temple.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_NATIONAL_GALLERY</Type>

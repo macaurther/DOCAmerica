@@ -69,6 +69,10 @@
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_MARINE</UnitClassType>
+					<UnitType>UNIT_AMERICAN_NAVY_SEAL</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -380,7 +384,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_LABOURER</UnitClassType>
+					<UnitClassType>UNITCLASS_LABORER</UnitClassType>
 					<UnitType>UNIT_BRAZILIAN_MADEIREIRO</UnitType>
 				</Unit>
 			</Units>
@@ -1032,10 +1036,6 @@
 					<LeaderName>LEADER_HUAYNA_CAPAC</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
-				<Leader>
-					<LeaderName>LEADER_CASTILLA</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_AZTEC</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_INCA_SELECT</CivilizationSelectionSound>
@@ -1264,6 +1264,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>NAT</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
@@ -1810,6 +1811,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY1</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Identifier>MIN</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
@@ -2030,6 +2032,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY2</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Identifier>MIN</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
@@ -2250,7 +2253,8 @@
 			<Civilopedia>TXT_KEY_CIV_NATIVE_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY_YELLOW</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
+			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>NAT</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
@@ -2444,6 +2448,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>MIN</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
@@ -2566,6 +2571,7 @@
 			<DefaultPlayerColor>PLAYERCOLOR_BLACK</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BARBARIAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Identifier>BAR</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>

@@ -228,9 +228,6 @@ def at(location1, location2):
 def isExtendedBirth(iPlayer):
 	if player(iPlayer).isHuman(): return False
 	
-	# add special conditions for extended AI flip zones here
-	if civ(iPlayer) == iOttomans and player(iByzantium).isAlive(): return False
-	
 	return True
 
 

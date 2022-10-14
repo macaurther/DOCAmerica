@@ -11,7 +11,7 @@ from Parsers import *
 START_HISTORY = 250
 
 LEADER_DATES = {
-	iPacal: 620,
+	iPacal: 250,
 	iIsabella: 1480,
 	iPhilip: 1560,
 	iCharlemagne: 770,
@@ -25,7 +25,7 @@ LEADER_DATES = {
 	iAfonso: 1140,
 	iJoao: 1490,
 	iMaria: 1830,
-	iHuaynaCapac: 1500,
+	iHuaynaCapac: 1000,
 	iMontezuma: 1440,
 	iWillemVanOranje: 1570,
 	iWilliam: 1650,

@@ -675,8 +675,6 @@ def republicTitle(iPlayer):
 			
 	if pPlayer.getStateReligion() == iIslam:
 		if iCiv in lIslamicRepublicOf: return "TXT_KEY_ISLAMIC_REPUBLIC_OF"
-
-		if iCiv == iOttomans: return key(iPlayer, "ISLAMIC_REPUBLIC")
 		
 	if iCiv in lRepublicOf: return "TXT_KEY_REPUBLIC_OF"
 	if iCiv in lRepublicAdj: return "TXT_KEY_REPUBLIC_ADJECTIVE"

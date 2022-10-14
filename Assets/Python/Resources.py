@@ -141,10 +141,9 @@ dPlotTypesDict = {
 }
 
 dFeaturesDict = {
-	(35, 54) : (700,  iMud),         # Newfoundland obstacles
-	(11, 46) : (1850, iFloodPlains), # California
-	(11, 47) : (1850, iFloodPlains), # California
-	(11, 48) : (1850, iFloodPlains), # California
+	(16, 78) : (1850, iFloodPlains), # California
+	(16, 81) : (1850, iFloodPlains), # California
+	(15, 82) : (1850, iFloodPlains), # California
 }
 
 dRemovedFeaturesDict = {

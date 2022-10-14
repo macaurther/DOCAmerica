@@ -7,6 +7,16 @@ lCivilizations = [
 		iMaya,
 		techs=techs.of(iMining, iPottery, iAgriculture)
 	),
+	Civilization(
+		iNative,
+		techs=techs.of(iTanning, iMythology)
+	),
+	Civilization(
+		iIndependent
+	),
+	Civilization(
+		iIndependent2
+	),
 ]
 
 

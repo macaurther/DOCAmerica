@@ -7,14 +7,6 @@
 <Civ4UnitClassInfos xmlns="x-schema:CIV4UnitSchema.xml">
 	<UnitClassInfos>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LION</Type>
-			<Description>TXT_KEY_UNIT_LION</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_LION</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_BEAR</Type>
 			<Description>TXT_KEY_UNIT_BEAR</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -55,12 +47,12 @@
 			<DefaultUnit>UNIT_WORKER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LABOURER</Type>
-			<Description>TXT_KEY_UNIT_LABOURER</Description>
+			<Type>UNITCLASS_LABORER</Type>
+			<Description>TXT_KEY_UNIT_LABORER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_LABOURER</DefaultUnit>
+			<DefaultUnit>UNIT_LABORER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SCOUT</Type>
@@ -103,12 +95,12 @@
 			<DefaultUnit>UNIT_JEWISH_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_PROTESTANT_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_PROTESTANT_MISSIONARY</Description>
+			<Type>UNITCLASS_ORTHODOX_MISSIONARY</Type>
+			<Description>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_PROTESTANT_MISSIONARY</DefaultUnit>
+			<DefaultUnit>UNIT_ORTHODOX_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_CATHOLIC_MISSIONARY</Type>
@@ -119,12 +111,12 @@
 			<DefaultUnit>UNIT_CATHOLIC_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_ORTHODOX_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Description>
+			<Type>UNITCLASS_PROTESTANT_MISSIONARY</Type>
+			<Description>TXT_KEY_UNIT_PROTESTANT_MISSIONARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_ORTHODOX_MISSIONARY</DefaultUnit>
+			<DefaultUnit>UNIT_PROTESTANT_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_ISLAMIC_MISSIONARY</Type>
@@ -191,20 +183,20 @@
 			<DefaultUnit>UNIT_MILITIA</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_LIGHT_SWORDSMAN</Type>
-			<Description>TXT_KEY_UNIT_LIGHT_SWORDSMAN</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_LIGHT_SWORDSMAN</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_AXEMAN</Type>
 			<Description>TXT_KEY_UNIT_AXEMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>0</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_AXEMAN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_LIGHT_SWORDSMAN</Type>
+			<Description>TXT_KEY_UNIT_LIGHT_SWORDSMAN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_LIGHT_SWORDSMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SWORDSMAN</Type>
@@ -279,20 +271,20 @@
 			<DefaultUnit>UNIT_GRENADIER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_INFANTRY</Type>
-			<Description>TXT_KEY_UNIT_INFANTRY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_INFANTRY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_AT_INFANTRY</Type>
 			<Description>TXT_KEY_UNIT_AT_INFANTRY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_AT_INFANTRY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_INFANTRY</Type>
+			<Description>TXT_KEY_UNIT_INFANTRY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_INFANTRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SAM_INFANTRY</Type>
@@ -343,14 +335,6 @@
 			<DefaultUnit>UNIT_ARCHER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_CROSSBOWMAN</Type>
-			<Description>TXT_KEY_UNIT_CROSSBOWMAN</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_CROSSBOWMAN</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_SKIRMISHER</Type>
 			<Description>TXT_KEY_UNIT_SKIRMISHER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -365,6 +349,14 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_LONGBOWMAN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CROSSBOWMAN</Type>
+			<Description>TXT_KEY_UNIT_CROSSBOWMAN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_CROSSBOWMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_HORSE_ARCHER</Type>
@@ -383,20 +375,20 @@
 			<DefaultUnit>UNIT_PISTOLIER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_HUSSAR</Type>
-			<Description>TXT_KEY_UNIT_HUSSAR</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_HUSSAR</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_CUIRASSIER</Type>
 			<Description>TXT_KEY_UNIT_CUIRASSIER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_CUIRASSIER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_HUSSAR</Type>
+			<Description>TXT_KEY_UNIT_HUSSAR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_HUSSAR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_DRAGOON</Type>
@@ -583,14 +575,6 @@
 			<DefaultUnit>UNIT_DESTROYER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_STEALTH_DESTROYER</Type>
-			<Description>TXT_KEY_UNIT_STEALTH_DESTROYER</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_STEALTH_DESTROYER</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_BATTLESHIP</Type>
 			<Description>TXT_KEY_UNIT_BATTLESHIP</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -605,6 +589,14 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_MISSILE_CRUISER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_STEALTH_DESTROYER</Type>
+			<Description>TXT_KEY_UNIT_STEALTH_DESTROYER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_STEALTH_DESTROYER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SUBMARINE</Type>
@@ -671,20 +663,20 @@
 			<DefaultUnit>UNIT_STEALTH_BOMBER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_DRONE</Type>
-			<Description>TXT_KEY_UNIT_DRONE</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_DRONE</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_GUIDED_MISSILE</Type>
 			<Description>TXT_KEY_UNIT_GUIDED_MISSILE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_GUIDED_MISSILE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_DRONE</Type>
+			<Description>TXT_KEY_UNIT_DRONE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_DRONE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_NUCLEAR_BOMBER</Type>

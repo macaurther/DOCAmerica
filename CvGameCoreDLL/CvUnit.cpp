@@ -14123,6 +14123,7 @@ int CvUnit::getOriginalArtStyle(int regionID)
 	case REGION_ROCKIES:
 	case REGION_CALIFORNIA:
 	case REGION_CASCADIA:
+	case REGION_GREENLAND:
 		return GC.getCivilizationInfo(ENGLAND).getUnitArtStyleType();
 		break;
 	case REGION_SOUTHWEST:

@@ -398,7 +398,7 @@ def isFree(iPlayer, tPlot, bNoCity=False, bNoEnemyUnit=False, bCanEnter=False, b
 	if bCanEnter:
 		if plot.isPeak(): return False
 		if plot.isWater(): return False
-		if plot.getFeatureType() in [iMud, iJungle, iRainforest]: return False
+		if plot.getFeatureType() in [iBog, iJungle, iRainforest]: return False
 	
 	if bNoCulture:
 		if plot.isOwned() and plot.getOwner() != iPlayer and plot.getOwner() in players.major():
