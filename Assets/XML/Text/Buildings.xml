@@ -1986,6 +1986,26 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Shrine of Perun[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Rodnovery[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YORUBA_TEMPLE</Tag>
+		<English>Yoruba Temple</English>
+		<French>
+			<Text>Temple yoruba:Temples yoruba</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Yoruba Temple</German>
+		<Italian>Yoruba Temple</Italian>
+		<Spanish>Yoruba Temple</Spanish>	
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_YORUBA_TEMPLE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</English>
+		<French>Le [COLOR_BUILDING_TEXT]Temple yoruba[COLOR_REVERT] est le [COLOR_BUILDING_TEXT]Temple pa&#239;en[COLOR_REVERT] des civilisations adeptes de la religion [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Yoruba Temple[COLOR_REVERT] is the [COLOR_BUILDING_TEXT]Pagan Temple[COLOR_REVERT] of civilizations that follow [COLOR_HIGHLIGHT_TEXT]Yoruba[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_INTI_TEMPLE</Tag>
 		<English>Inti Temple</English>
 		<French>
@@ -2184,6 +2204,106 @@
 		<German>Arena</German>
 		<Italian>Arena</Italian>
 		<Spanish>Arena</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TIWANAKU_KALASASAYA</Tag>
+		<English>Kalasasaya</English>
+		<French>Kalasasaya</French>
+		<German>Kalasasaya</German>
+		<Italian>Kalasasaya</Italian>
+		<Spanish>Kalasasaya</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WARI_COLCAS</Tag>
+		<English>Colcas</English>
+		<French>Colcas</French>
+		<German>Colcas</German>
+		<Italian>Colcas</Italian>
+		<Spanish>Colcas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHIMU_KANCHA</Tag>
+		<English>Kancha</English>
+		<French>Kancha</French>
+		<German>Kancha</German>
+		<Italian>Kancha</Italian>
+		<Spanish>Kancha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MISSISSIPPI_EFFIGY_MOUND</Tag>
+		<English>Effigy Mound</English>
+		<French>Effigy Mound</French>
+		<German>Effigy Mound</German>
+		<Italian>Effigy Mound</Italian>
+		<Spanish>Effigy Mound</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO</Tag>
+		<English>Igloo</English>
+		<French>Igloo</French>
+		<German>Igloo</German>
+		<Italian>Igloo</Italian>
+		<Spanish>Igloo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Tag>
+		<English>[ICON_BULLET]+1 Food and Production from Ice and Tundra</English>
+		<French>[ICON_BULLET]+1 Food and Production from Ice and Tundra</French>
+		<German>[ICON_BULLET]+1 Food and Production from Ice and Tundra</German>
+		<Italian>[ICON_BULLET]+1 Food and Production from Ice and Tundra</Italian>
+		<Spanish>[ICON_BULLET]+1 Food and Production from Ice and Tundra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH</Tag>
+		<English>Goldsmith</English>
+		<French>Goldsmith</French>
+		<German>Goldsmith</German>
+		<Italian>Goldsmith</Italian>
+		<Spanish>Goldsmith</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_HELP</Tag>
+		<English>[ICON_BULLET]+1 Gold per Gold Resource</English>
+		<French>[ICON_BULLET]+1 Gold per Gold Resource</French>
+		<German>[ICON_BULLET]+1 Gold per Gold Resource</German>
+		<Italian>[ICON_BULLET]+1 Gold per Gold Resource</Italian>
+		<Spanish>[ICON_BULLET]+1 Gold per Gold Resource</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEOTIHUACAN_TEMAZCAL</Tag>
+		<English>Temazcal</English>
+		<French>
+			<Text>Temazcal:Temazcals</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Temazcal</German>
+		<Italian>Temazcal</Italian>
+		<Spanish>Temazcal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEOTIHUACAN_TEMAZCAL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], provides additional health and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], provides additional health and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], provides additional health and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], provides additional health and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Reservoir[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_BUILDING_TEXT]Bath[COLOR_REVERT], provides additional health and doesn't require an [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ANGAKKUQ_QARGI</Tag>
+		<English>Qargi</English>
+		<French>Qargi</French>
+		<German>Qargi</German>
+		<Italian>Qargi</Italian>
+		<Spanish>Qargi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MIDEWIWIN_MIDEWIGAAN</Tag>
+		<English>Midewigaan</English>
+		<French>Midewigaan</French>
+		<German>Midewigaan</German>
+		<Italian>Midewigaan</Italian>
+		<Spanish>Midewigaan</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

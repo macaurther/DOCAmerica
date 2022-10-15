@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Inca -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_DESC</Tag>
+		<English>The Wari</English>
+		<French>The Wari</French>
+		<German>The Wari</German>
+		<Italian>The Wari</Italian>
+		<Spanish>El Huari</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_PEOPLES</Tag>
+		<English>Andean Peoples</English>
+		<French>
+			<Text>Peuplades andines</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Andenv&#246;lker:Andenv&#246;lker:Andenv&#246;lkern</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>1:1:1</Plural>
+		</German>
+		<Italian>
+			<Text>Popoli Andini</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pueblos Andinos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_DEFAULT</Tag>
+		<English>Wari Empire</English>
+		<French>Wari Empire</French>
+		<German>Wari Empire</German>
+		<Italian>Wari Empire</Italian>
+		<Spanish>Wari Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_ADJECTIVE</Tag>
+		<English>Wari</English>
+		<French>Wari</French>
+		<German>Wari</German>
+		<Italian>Wari</Italian>
+		<Spanish>Huari</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_SHORT_DESC</Tag>
+		<English>Wari</English>
+		<French>Wari</French>
+		<German>Wari</German>
+		<Italian>Wari</Italian>
+		<Spanish>Huari</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_COMMUNIST</Tag>
+		<English>%s2 Revolutionary Movement</English>
+		<French>
+			<Text>Mouvement r&#233;volutionnaire %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Revolution&#228;re Bewegung der %s2:Revolution&#228;re Bewegung der %s2:Revolution&#228;ren Bewegung der %s2</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Movimento Rivoluzionario %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Movimiento Revolucionario %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_WARI_FASCIST</Tag>
+		<English>Revolutionary Union of %s1</English>
+		<French>
+			<Text>Union r&#233;volutionnaire %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Revolutionary Union of %s1</German>
+		<Italian>Revolutionary Union of %s1</Italian>
+		<Spanish>Revolutionary Union of %s1</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1094,63 +1094,67 @@
 		<Spanish>William III</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_LEADER_GEORGE_I</Tag>
-		<English>George I</English>
-		<French>
-			<Text>Georges Ier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>George I</German>
-		<Italian>George I</Italian>
-		<Spanish>George I</Spanish>
+		<Tag>TXT_KEY_LEADER_MALKU_HUYUSTUS</Tag>
+		<English>Malku Huyustus</English>
+		<French>Malku Huyustus</French>
+		<German>Malku Huyustus</German>
+		<Italian>Malku Huyustus</Italian>
+		<Spanish>Malku Huyustus</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_LEADER_KHOSROW</Tag>
-		<English>Khosrow I</English>
-		<French>
-			<Text>Khosro Ier</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Khosrow I</German>
-		<Italian>Khosrow I</Italian>
-		<Spanish>Khosrow I</Spanish>
+		<Tag>TXT_KEY_LEADER_WARI_CAPAC</Tag>
+		<English>Wari Capac</English>
+		<French>Wari Capac</French>
+		<German>Wari Capac</German>
+		<Italian>Wari Capac</Italian>
+		<Spanish>Wari Capac</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_LEADER_EZANA</Tag>
-		<English>Ezana</English>
-		<French>
-			<Text>Ezana</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ezana</German>
-		<Italian>Ezana</Italian>
-		<Spanish>Ezana</Spanish>
+		<Tag>TXT_KEY_LEADER_TACAYNAMO</Tag>
+		<English>Tacaynamo</English>
+		<French>Tacaynamo</French>
+		<German>Tacaynamo</German>
+		<Italian>Tacaynamo</Italian>
+		<Spanish>Tacaynamo</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_LEADER_MAO_ZEDONG</Tag>
-		<English>Mao Zedong</English>
-		<French>
-			<Text>Mao Ts&#233;-Tung</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Mao Tse-tung</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Mao Tse Tung</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Mao Zedong</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<Tag>TXT_KEY_LEADER_RED_HORN</Tag>
+		<English>Red Horn</English>
+		<French>Red Horn</French>
+		<German>Red Horn</German>
+		<Italian>Red Horn</Italian>
+		<Spanish>Red Horn</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_AUA</Tag>
+		<English>Aua</English>
+		<French>Aua</French>
+		<German>Aua</German>
+		<Italian>Aua</Italian>
+		<Spanish>Aua</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SAGUAMANCHICA</Tag>
+		<English>Saguamanchica</English>
+		<French>Saguamanchica</French>
+		<German>Saguamanchica</German>
+		<Italian>Saguamanchica</Italian>
+		<Spanish>Saguamanchica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_ATLATL_CAUAC</Tag>
+		<English>Atlatl Cauac</English>
+		<French>Atlatl Cauac</French>
+		<German>Atlatl Cauac</German>
+		<Italian>Atlatl Cauac</Italian>
+		<Spanish>Atlatl Cauac</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_PACHACUTI</Tag>
+		<English>Pachacuti</English>
+		<French>Pachacuti</French>
+		<German>Pachacuti</German>
+		<Italian>Pachacuti</Italian>
+		<Spanish>Pachacuti</Spanish>
 	</TEXT>
 </Civ4GameText>

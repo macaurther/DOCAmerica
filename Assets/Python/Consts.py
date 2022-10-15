@@ -13,17 +13,28 @@ iWorldY = 108
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 22
+iNumCivs = 38
 #				2				3				4				5				6				7				8				9				10
-(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iColombia, 		iEngland, 		iFrance, 		iHawaii,		iInca,
-iMaya,			iMexico, 		iNativeAmericans, iNetherlands, iPortugal, 		iRussia,		iSpain, 		iIndependent, 	iIndependent2, 	iNative,
-iMinor, iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+(iAmerica, 		iArgentina, 	iAztecs, 		iBolivia,		iBrazil, 		iCanada, 		iChile,			iChimu,			iColombia, 		iCuba,			
+iEngland, 		iFrance, 		iHaiti,			iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,
+iMuisca,		iNativeAmericans, iNetherlands, iNorse,			iPeru,			iPortugal, 		iPuebloan,		iRussia,		iSpain, 		iTeotihuacan,
+iTiwanaku,		iVenezuela,		iWari,			iIndependent, 	iIndependent2, 	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
+	iTeotihuacan,
+	iTiwanaku,
+	iWari,
+	iMississippi,
+	iPuebloan,
+	iMuisca,
+	iNorse,
+	iChimu,
+	iInuit,
 	iInca,
 	iAztecs,
 	iSpain,
+	iIroquois,
 	iPortugal,
 	iEngland,
 	iFrance,
@@ -31,11 +42,17 @@ lBirthOrder = [
 	iHawaii,
 	iRussia,
 	iAmerica,
+	iHaiti,
+	iBolivia,
 	iArgentina,
 	iMexico,
 	iColombia,
+	iChile,
+	iPeru,
+	iVenezuela,
 	iBrazil,
-	iCanada
+	iCanada,
+	iCuba
 ]
 
 lCivOrder = lBirthOrder + [
@@ -51,22 +68,23 @@ iNumCivGroups = 3
 (iCivGroupEurope, iCivGroupNativeAmerica, iCivGroupAmerica) = range(iNumCivGroups)
 
 dCivGroups = {
-iCivGroupEurope : [iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
-iCivGroupNativeAmerica : [iMaya, iInca, iAztecs],
-iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada]
+iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
+iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois],
+iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iBolivia, iChile, iPeru, iVenezuela, iCuba]
 }
 
 # used in: Stability
 # tech groups share techs within each other on respawn
-iNumTechGroups = 2
-(iTechGroupWestern, iTechGroupNativeAmerica) = range(iNumTechGroups)
+iNumTechGroups = 3
+(iTechGroupWestern, iTechGroupLatinAmerica, iTechGroupNativeAmerica) = range(iNumTechGroups)
 
 dTechGroups = {
-iTechGroupWestern : [iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada],
-iTechGroupNativeAmerica : [iMaya, iInca, iAztecs],
+iTechGroupWestern : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iCanada],
+iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iBolivia, iChile, iPeru, iVenezuela, iCuba],
+iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois],
 }
 
-lBioNewWorld = [iMaya, iInca, iAztecs]
+lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois]
 
 #for messages
 iDuration = 14
@@ -95,12 +113,41 @@ lNeighbours = [
 	(iMaya, iAztecs),
 	(iMaya, iMexico),
 	(iMaya, iColombia),
+	(iMaya, iTeotihuacan),
+	(iTeotihuacan, iAztecs),
+	(iTeotihuacan, iMexico),
+	(iTiwanaku, iWari),
+	(iTiwanaku, iMuisca),
+	(iTiwanaku, iChimu),
+	(iTiwanaku, iInca),
+	(iTiwanaku, iPeru),
+	(iTiwanaku, iColombia),
+	(iWari, iPeru),
+	(iWari, iInca),
+	(iWari, iColombia),
+	(iWari, iMuisca),
+	(iMississippi, iAmerica),
+	(iMississippi, iIroquois),
+	(iPuebloan, iMexico),
+	(iMuisca, iColombia),
+	(iNorse, iInuit),
+	(iNorse, iAmerica),
+	(iNorse, iCanada),
+	(iChimu, iPeru),
+	(iChimu, iBolivia),
+	(iInuit, iRussia),
+	(iInuit, iAmerica),
+	(iInuit, iCanada),
 	(iInca, iArgentina),
 	(iInca, iColombia),
 	(iInca, iBrazil),
+	(iInca, iPeru),
+	(iInca, iChile),
 	(iAztecs, iAmerica),
 	(iAztecs, iMexico),
 	(iAztecs, iColombia),
+	(iIroquois, iAmerica),
+	(iIroquois, iCanada),
 	(iSpain, iFrance),
 	(iSpain, iPortugal),
 	(iEngland, iNetherlands),
@@ -110,31 +157,64 @@ lNeighbours = [
 	(iRussia, iCanada),
 	(iAmerica, iMexico),
 	(iAmerica, iCanada),
+	(iAmerica, iCuba),
+	(iAmerica, iHaiti),
+	(iHaiti, iCuba),
+	(iBolivia, iPeru),
+	(iBolivia, iBrazil),
+	(iBolivia, iChile),
+	(iBolivia, iArgentina),
 	(iArgentina, iBrazil),
+	(iArgentina, iChile),
+	(iColombia, iVenezuela),
+	(iVenezuela, iBrazil),
 	(iMexico, iColombia),
 ]
 
 lInfluences = [
-	(iMaya, iSpain),
-	(iInca, iSpain),
-	(iAztecs, iSpain),
+	(iWari, iTiwanaku),
+	(iChimu, iTiwanaku),
+	(iInca, iTiwanaku),
+	(iAztecs, iTeotihuacan),
 	(iNetherlands, iSpain),
 	(iAmerica, iEngland),
 	(iAmerica, iFrance),
 	(iAmerica, iNetherlands),
+	(iAmerica, iNorse),
+	(iHaiti, iFrance),
+	(iBolivia, iSpain),
+	(iBolivia, iTiwanaku),
 	(iArgentina, iSpain),
 	(iMexico, iSpain),
 	(iMexico, iFrance),
+	(iMexico, iTeotihuacan),
+	(iMexico, iMaya),
 	(iColombia, iSpain),
+	(iColombia, iMuisca),
+	(iChile, iSpain),
+	(iPeru, iSpain),
+	(iPeru, iTiwanaku),
+	(iVenezuela, iSpain),
 	(iBrazil, iPortugal),
 	(iCanada, iFrance),
 	(iCanada, iEngland),
+	(iCuba, iSpain),
 ]
 
 dBirth = CivDict({
 iMaya : 250,
+iTeotihuacan : 250,
+iTiwanaku : 250,
+iWari : 500,
+iMississippi : 600,
+iPuebloan : 750,
+iMuisca : 800,
+iNorse : 874,
+iChimu : 900,
+iInuit : 1050,
 iInca : 1100,
 iAztecs : 1250,
+iIroquois : 1450,
 iSpain : 1496,
 iPortugal : 1532,
 iEngland : 1607,
@@ -143,21 +223,39 @@ iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
 iAmerica : 1775,
+iHaiti : 1804,
+iBolivia : 1810,
 iArgentina : 1810,
 iMexico : 1810,
 iColombia : 1810,
+iChile : 1810,
+iPeru : 1811,
+iVenezuela : 1811,
 iBrazil : 1822,
 iCanada : 1867,
+iCuba : 1898,
 }, 250)
 
 lBirthCivs = dBirth.keys()
 
 dFall = CivDict({
 iMaya : 900,
+iTeotihuacan : 1150,
+iTiwanaku : 1000,
+iWari : 1000,
+iMississippi : 1400,
+iPuebloan : 1600,
+iMuisca : 1540,
+iChimu : 1470,
+iInuit : 1600,
 iInca : 1533,
 iAztecs : 1521,
+iIroquois : 1750,
 iSpain : 1807,
 iPortugal : 1807,
+iFrance : 1805,
+iHawaii : 1893,
+iRussia : 1867,
 }, 2020)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
@@ -165,7 +263,7 @@ dNeighbours = dictFromEdges(lBirthCivs, lNeighbours)
 
 # Leoreth: determine influence lists from pairwise influences for easier lookup
 dInfluences = dictFromEdges(lBirthCivs, lInfluences)
-
+# TODO \/
 dResurrections = CivDict({
 iMaya : [(1800, 2020)],
 iInca : [(1800, 1930)],
@@ -329,22 +427,22 @@ iTranshumanism) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 132
+iNumUnits = 139
 #				2				3				4				5				6				7				8				9				10
-(iBear, 		iPanther, 		iWolf, 			iSettler, 		iPioneer, 		iWorker, 		iLaborer, 		iMadeireiro, 	iScout, 		iExplorer, 
-iBandeirante, 	iSpy, 			iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary, iIslamicMissionary, iHinduMissionary, iBuddhistMissionary,
-iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iNativeWarrior, iMilitia, iAxeman, 	iLightSwordsman, iDogSoldier, 	iSwordsman, 
-iJaguar, 		iAucac, 		iHeavySwordsman,iSpearman, 		iNativeRaider, 	iHeavySpearman, iPikeman, 		iArquebusier, 	iTercio, 		iMohawk, 
-iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 	iAlbionLegion, 	iAntiTank, 		iInfantry, 		iSamInfantry, 	iMobileSam, 
-iMarine, 		iNavySeal, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iNativeArcher, 	iSkirmisher, 	iHolkan, 		iLongbowman, 	iCrossbowman, 
-iHorseArcher,  	iPistolier, 	iMountedBrave, 	iCuirassier, 	iConquistador, 	iHussar, 		iLlanero, 		iDragoon, 		iGrenadierCavalry, iCavalry, 
-iRural, 		iTank, 			iMainBattleTank, iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		iMobileArtillery, 
-iWorkboat, 		iCaravel, 		iCarrack, 		iWaaKaulua,		iGalleon, 		iEastIndiaman, 	iPrivateer, 	iFrigate, 		iShipOfTheLine, iManOfWar, 
-iSteamship, 	iIronclad, 		iTorpedoBoat, 	iCruiser, 		iTransport, 	iDestroyer, 	iCorvette, 		iBattleship, 	iMissileCruiser, iStealthDestroyer,
-iSubmarine, 	iNuclearSubmarine, iCarrier, 	iBiplane, 		iFighter, 		iJetFighter, 	iBomber, 		iStealthBomber, iGuidedMissile, iDrone, 
-iNuclearBomber, iICBM, 			iSatellite, 	iGreatProphet, 	iGreatArtist, 	iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral, 
-iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy,
-iSlave, 		iAztecSlave) = range(iNumUnits)
+(iBear, 		iPanther, 		iWolf, 			iSettler, 		iPioneer, 		iDogSled,		iWorker, 		iArtisan,		iLaborer, 		iMadeireiro, 
+iScout, 		iExplorer, 		iBandeirante, 	iSpy, 			iSisqeno,		iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary,
+iIslamicMissionary, iHinduMissionary, iBuddhistMissionary,iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iNativeWarrior, iMilitia, iFalconDancer,
+iAxeman,		iLightSwordsman, iDogSoldier, 	iSwordsman, 	iJaguar, 		iAucac, 		iHeavySwordsman,iSpearman, 		iNativeRaider, 	iHeavySpearman, 
+iPikeman, 		iArquebusier, 	iTercio, 		iMohawk, 		iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 	iAlbionLegion, 	
+iAntiTank, 		iInfantry, 		iSamInfantry, 	iMobileSam, 	iMarine, 		iNavySeal, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iPictaAucac,
+iNativeArcher, 	iSkirmisher, 	iHolkan, 		iScAucac,		iGuechaWarrior,	iLongbowman, 	iCrossbowman, 	iHorseArcher,  	iPistolier, 	iMountedBrave, 
+iCuirassier, 	iConquistador, 	iHussar, 		iLlanero, 		iDragoon, 		iGrenadierCavalry, iCavalry, 	iRural, 		iTank, 			iMainBattleTank, 
+iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		iMobileArtillery, iWorkboat, 	iCaravel, 		iCarrack, 
+iWaaKaulua,		iGalleon, 		iEastIndiaman, 	iPrivateer, 	iFrigate, 		iShipOfTheLine, iManOfWar, 		iSteamship, 	iIronclad, 		iTorpedoBoat, 
+iCruiser, 		iTransport, 	iDestroyer, 	iCorvette, 		iBattleship, 	iMissileCruiser, iStealthDestroyer,iSubmarine, 	iNuclearSubmarine, iCarrier, 
+iBiplane, 		iFighter, 		iJetFighter, 	iBomber, 		iStealthBomber, iGuidedMissile, iDrone, 		iNuclearBomber, iICBM, 			iSatellite,
+iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral, iGreatSpy, iFemaleGreatProphet, 
+iFemaleGreatArtist, iFemaleGreatScientist, iFemaleGreatMerchant, iFemaleGreatEngineer, iFemaleGreatStatesman, iFemaleGreatGeneral, iFemaleGreatSpy,	iSlave, iAztecSlave) = range(iNumUnits)
 
 # Unit enumeration debug
 print('iExplorer: ' + str(iExplorer))
@@ -387,18 +485,18 @@ iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, 
 iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
 # Buildings
 
-iNumBuildings = 166
-# Buildings (83)
+iNumBuildings = 173
+# Buildings (90)
 #				2				3				4				5				6				7				8				9				10
-(iPalace, 		iBarracks, 		iGranary,		iTerrace, 		iSmokehouse, 	iPaganTemple, 	iMonument,		iTotemPole, 	iWalls, 		iStable, 
-iLibrary,		iHarbor, 		iAqueduct, 		iTheatre,		iArena, 		iBallCourt, 	iCharreadaArena, iLighthouse, 	iWeaver,		iMarket,
-iJail, 			iSacrificialAltar, iBath, 		iForge, 		iCastle, 		iPharmacy, 		iPostOffice, 	iTambo,			iWharf,			iCoffeehouse,
-iSalon, 		iBank, 			iRoyalExchange, iConstabulary, 	iMountedPolice, iCustomsHouse, 	iFeitoria, 		iUniversity,	iCivicSquare, 	iSewer, 
-iStarFort, 		iEstate, 		iFazenda, 		iHacienda, 		iDrydock, 		iLevee, 		iObservatory, 	iWarehouse, 	iCourthouse, 	iFactory, 
-iDistillery, 	iPark, 			iCoalPlant, 	iRailwayStation, iLaboratory, 	iNewsPress, 	iIndustrialPark, iCinema, 		iHospital, 		iSupermarket, 	
-iColdStoragePlant, iPublicTransportation, iDepartmentStore, iMall, iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 	iBombShelters, 	
-iHydroPlant, 	iSecurityBureau, iStadium, 		iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, 		iRecyclingCenter, iLogisticsCenter, iSolarPlant,
-iFiberNetwork, iAutomatedFactory, iVerticalFarm, 
+(iPalace, 		iBarracks, 		iGranary,		iTerrace, 		iColcas,		iIgloo,			iSmokehouse, 	iPaganTemple, 	iMonument,		iTotemPole, 
+iWalls, 		iKancha,		iStable, 		iLibrary,		iHarbor, 		iAqueduct, 		iTheatre,		iArena, 		iBallCourt, 	iCharreadaArena, 
+iLighthouse, 	iWeaver,		iMarket,		iJail, 			iSacrificialAltar, iBath, 		iTemazcal,		iForge, 		iGoldsmith,		iCastle, 		
+iPharmacy, 		iPostOffice, 	iTambo,			iWharf,			iCoffeehouse,	iSalon, 		iBank, 			iRoyalExchange, iConstabulary, 	iMountedPolice, 
+iCustomsHouse, 	iFeitoria, 		iUniversity,	iCivicSquare, 	iKalasasaya, 	iSewer, 		iStarFort, 		iEstate, 		iFazenda, 		iHacienda, 		
+iDrydock, 		iLevee, 		iObservatory, 	iWarehouse, 	iCourthouse, 	iFactory, 		iDistillery, 	iPark,			iEffigyMound,	iCoalPlant, 	
+iRailwayStation, iLaboratory, 	iNewsPress, 	iIndustrialPark, iCinema, 		iHospital, 		iSupermarket, 	iColdStoragePlant, iPublicTransportation, iDepartmentStore, 
+iMall, 			iBroadcastTower, iIntelligenceAgency, iElectricalGrid, iAirport, iBunker, 		iBombShelters, 	iHydroPlant, 	iSecurityBureau, iStadium, 
+iContainerTerminal, iNuclearPlant, iSupercomputer, iHotel, 		iRecyclingCenter, iLogisticsCenter, iSolarPlant,iFiberNetwork, iAutomatedFactory, iVerticalFarm, 
 # Religious Buildings (40)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -561,13 +659,14 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 48
+iNumLeaders = 57
 #				2				3				4				5				6				7				8				9				10
-(iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAhoeitu, iPacal,			iGustav, 		iGerhardsen, 	iIsabella, 		iPhilip, 		iFranco,
-iCharlemagne, 	iLouis, 		iNapoleon, 		iDeGaulle, 		iAlfred, 		iElizabeth, 	iVictoria, 		iChurchill, 	iBarbarossa,	iCharles, 
-iFrancis, 		iIvan, 			iPeter, 		iCatherine, 	iAlexanderI, 	iStalin, 		iAfonso, 		iJoao, 			iMaria, 		iHuaynaCapac, 
-iCastilla, 		iMontezuma, 	iWillemVanOranje, iWilliam, 	iWashington,	iLincoln, 		iRoosevelt, 	iSanMartin, 	iPeron, 		iJuarez, 
-iSantaAnna, 	iCardenas, 		iBolivar, 		iPedro, 		iVargas,		iMacDonald, 	iTrudeau, 		iSittingBull) = range(iNumLeaders)
+(iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAhoeitu, iPacal,			iRagnar,		iGustav, 		iGerhardsen, 	iIsabella, 		iPhilip, 
+iFranco,		iCharlemagne, 	iLouis, 		iNapoleon, 		iDeGaulle, 		iAlfred, 		iElizabeth, 	iVictoria, 		iChurchill, 	iBarbarossa,
+iCharles, 		iFrancis, 		iIvan, 			iPeter, 		iCatherine, 	iAlexanderI, 	iStalin, 		iAfonso, 		iJoao, 			iMaria, 
+iHuaynaCapac, 	iCastilla, 		iMontezuma, 	iWillemVanOranje, iWilliam, 	iWashington,	iLincoln, 		iRoosevelt, 	iSanMartin, 	iPeron, 
+iJuarez, 		iSantaAnna, 	iCardenas, 		iBolivar, 		iPedro, 		iVargas,		iMacDonald, 	iTrudeau, 		iSittingBull,	iMalkuHuyustus,
+iWariCapac,		iTacaynamo,		iRedHorn,		iAua,			iSaguamanchica,	iPachacuti,		iAtlatlCauac) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 })

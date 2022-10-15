@@ -3513,6 +3513,14 @@
 		<Spanish>Our civilization has entered a new period, changing the territory we consider historical.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TEOTIHUACAN_ARTISAN_CULTURE</Tag>
+		<English>Our artisans have created a total of %d1 [ICON_CULTURE] in our cities!</English>
+		<French>Nos artisans ont cr&#233;&#233; un total de %d1 [ICON_CULTURE] dans nos villes!</French>
+		<German>Our artisans have created a total of %d1 [ICON_CULTURE] in our cities!</German>
+		<Italian>Our artisans have created a total of %d1 [ICON_CULTURE] in our cities!</Italian>
+		<Spanish>Our artisans have created a total of %d1 [ICON_CULTURE] in our cities!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_</Tag>
 		<English></English>
 		<French></French>
