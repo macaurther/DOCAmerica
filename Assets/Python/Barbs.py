@@ -9,8 +9,7 @@ from Locations import *
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-(250, (32, 58), iNative, 'Danibaan', 2, iHolkan, 1),		# Monte Albán
-(250, (30, 60), iBarbarian, 'Tolan', 2, iJaguar, 2),		# Teotihuacan
+(255, (32, 58), iNative, 'Danibaan', 2, iHolkan, 1),		# Monte Albán
 )
 
 # do some research on dates here

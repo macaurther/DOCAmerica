@@ -1588,6 +1588,16 @@
 			<Button>Art/Structures/Buildings/Perun_Shrine/perun_shrine.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_YORUBA_TEMPLE</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Yoruba_Temple/sacred.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Yoruba_Temple/yoruba_temple.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_INTI_TEMPLE</Type>
 			<LSystem>LSYSTEM_3x2</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1926,6 +1936,26 @@
 			<NIF>Art/Structures/Buildings/Midewiwin/camp.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Buildings/Midewiwin/Midewiwin.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GAIWIIO_LONGHOUSE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.15</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Druidic_Nemeton/statue.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Druidic_Nemeton/druidic_nemeton.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_KACHIN_PITHOUSE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.15</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Druidic_Nemeton/statue.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Druidic_Nemeton/druidic_nemeton.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

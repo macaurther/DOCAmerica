@@ -32,18 +32,25 @@ lIndependenceCivs = [
 lDynamicReligionCivs = [
 	iAmerica,
 	iArgentina,
-	iMexico,
-	iColombia,
+	iBolivia,
 	iBrazil,
-	iCanada
+	iCanada,
+	iChile,
+	iColombia,
+	iCuba,
+	iHaiti,
+	iMexico,
+	iPeru,
+	iVenezuela,
 ]
 
 dClearedForBirth = {
+	iAztecs: iTeotihuacan,
 	iMexico: iAztecs,
 }
 
 lAlwaysClear = [
-	# TODO: iMississippi
+	iMississippi,
 ]
 
 

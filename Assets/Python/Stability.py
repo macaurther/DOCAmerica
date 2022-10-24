@@ -441,6 +441,10 @@ def getSeparatismModifier(iPlayer, city):
 		if not city.isOriginalOwner(iPlayer) and since(city.getGameTurnAcquired()) < turns(25):
 			iModifier += 1
 	
+	# not majority culture
+	if iCulturePercent < 50: iModifier += 1
+	if iCulturePercent < 20: iModifier += 1
+	
 	# Courthouse
 	if city.hasBuilding(unique_building(iPlayer, iCourthouse)):
 		iModifier -= 1

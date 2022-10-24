@@ -8,6 +8,14 @@ lCivilizations = [
 		techs=techs.of(iMining, iPottery, iAgriculture)
 	),
 	Civilization(
+		iTeotihuacan,
+		techs=techs.of(iMining, iPottery, iAgriculture)
+	),
+	Civilization(
+		iTiwanaku,
+		techs=techs.of(iMining, iPottery, iAgriculture)
+	),
+	Civilization(
 		iNative,
 		techs=techs.of(iTanning, iMythology)
 	),

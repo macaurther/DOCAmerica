@@ -86,29 +86,22 @@ dGoals = {
 	),
 }
 
-
+# MacAurther TODO: Re-evaluate these
 dAdditionalPaganGoal = {
-	iAnunnaki: BestWonderCity(capital().named(CAPITAL)),
+	iAngakkuq: FeatureCount(iSeaIce, 20),
 	iAsatru: UnitLevelCount(5, 5),
 	iAtua: All(
 		ResourceCount(iPearls, 4),
 		TerrainCount(iOcean, 50),
 	),
-	iBaalism: BestTradeIncomeCity(capital().named(CAPITAL)),
-	iBon: PeakCount(50),
 	iDruidism: FeatureCount(sum(iForest, iBog), 20),
+	iGaiwiio: FeatureCount(iForest, 20),
 	iInti: GoldPercent(50),
-	iMazdaism: ResourceCount(iIncense, 6),
-	iMugyo: BestSpecialistCity(capital().named(CAPITAL), great_people()),
-	iOlympianism: BuildingCount(wonders(), 7),
-	iPesedjet: FirstGreatPerson(required=3, desc_key=PESEDJET_GOAL, *lGreatSpecialists),
+	iKachin: FeatureCount(sum(iForest, iBog), 20),
+	iMidewiwin: FeatureCount(sum(iForest, iBog), 20),
 	iRodnovery: ResourceCount(iFur, 7),
-	iShendao: PopulationPercent(25),
-	iShinto: CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatSpy, 3),
-	iTengri: ResourceCount(iHorse, 8),
 	iTeotlMaya: CombatFood(50),
 	iTeotlAztec: SacrificeHappiness(10),
-	iVedism: CelebrateTurns(100),
 	iYoruba: ResourceCount((iIvory, 8), (iGems, 6)),
 }
 

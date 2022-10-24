@@ -1161,7 +1161,6 @@ enum CivilizationTypes		// Exposed to Python
 	MISSISSIPPI,
 	
 	MUISCA,
-	NATIVE_AMERICANS,
 	NETHERLANDS,
 	NORSE,
 	PERU,
@@ -1170,8 +1169,8 @@ enum CivilizationTypes		// Exposed to Python
 	RUSSIA,
 	SPAIN,
 	TEOTIHUACAN,
-	
 	TIWANAKU,
+
 	VENEZUELA,
 	WARI,
 	INDEPENDENT,
@@ -1191,7 +1190,13 @@ enum LeaderHeadTypes			// Exposed to Python
 	LEADER_NATIVE,
 	LEADER_INDEPENDENT,
 
+	AHOEITU,
+
 	PACAL,
+
+	RAGNAR,
+	GUSTAV,
+	GERHARDSEN,
 
 	ISABELLA,
 	PHILIP,
@@ -1207,12 +1212,18 @@ enum LeaderHeadTypes			// Exposed to Python
 	VICTORIA,
 	CHURCHILL,
 
+	IVAN,
+	PETER,
+	CATHERINE,
+	ALEXANDER_I,
+	STALIN,
+
 	AFONSO,
 	JOAO,
 	MARIA,
 
 	HUAYNA_CAPAC,
-	CASTILLA,
+	PACHACUTI,
 
 	MONTEZUMA,
 
@@ -1239,6 +1250,22 @@ enum LeaderHeadTypes			// Exposed to Python
 	TRUDEAU,
 
 	SITTING_BULL,
+
+	MALKU_HUYUSTUS,
+
+	WARI_CAPAC,
+
+	TACAYNAMO,
+
+	RED_HORN,
+
+	AUA,
+
+	SAGUAMANCHICA,
+
+	ATLATL_CAUAC,
+
+	CASTILLA,
 
 	NUM_LEADERHEADS
 };

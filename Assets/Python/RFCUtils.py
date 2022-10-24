@@ -1071,7 +1071,7 @@ def paintPlots(plots, index=1000, color="COLOR_CYAN"):
 def startObserverMode(iTurns):
 	data.iBeforeObserverSlot = active()
 	#TODO: Observer
-	iObserverSlot = player(iColombia).isAlive() and slot(iColombia) or slot(iArgentina)
+	iObserverSlot = player(iMississippi).isAlive() and slot(iMississippi) or slot(iInuit)
 	
 	makeUnit(iObserverSlot, iCatapult, (0, 0))
 	

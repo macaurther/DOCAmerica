@@ -1763,11 +1763,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Pioneer[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], can defend itself and spawns a defender and a worker in when it founds a city in North America.</English>
-		<French>The [COLOR_UNIT_TEXT]Pioneer[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], can defend itself and spawns a defender and a worker in when it founds a city in North America.</French>
-		<German>The [COLOR_UNIT_TEXT]Pioneer[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], can defend itself and spawns a defender and a worker in when it founds a city in North America.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Pioneer[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], can defend itself and spawns a defender and a worker in when it founds a city in North America.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Pioneer[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], can defend itself and spawns a defender and a worker in when it founds a city in North America.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</English>
+		<French>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</French>
+		<German>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</German>
+		<Italian>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENGLISH_MAN_OF_WAR</Tag>
@@ -1879,11 +1879,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER_HELP</Tag>
-		<English>[ICON_BULLET]New cities in North America start with a defender and a worker</English>
-		<French>[ICON_BULLET]Les villes fond&#233;es en Am&#233;rique du Nord re&#231;oivent un d&#233;fenseur et un ouvrier</French>
-		<German>[ICON_BULLET]New cities in North America start with a defender and a worker</German>
-		<Italian>[ICON_BULLET]New cities in North America start with a defender and a worker</Italian>
-		<Spanish>[ICON_BULLET]New cities in North America start with a defender and a worker</Spanish>
+		<English>[ICON_BULLET]New cities start with a defender and a worker</English>
+		<French>[ICON_BULLET]New cities start with a defender and a worker</French>
+		<German>[ICON_BULLET]New cities start with a defender and a worker</German>
+		<Italian>[ICON_BULLET]New cities start with a defender and a worker</Italian>
+		<Spanish>[ICON_BULLET]New cities start with a defender and a worker</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STEAMSHIP</Tag>
@@ -1996,6 +1996,30 @@
 		<German>[ICON_BULLET]Creates 2 [ICON_CULTURE] when it ends its turn in a city</German>
 		<Italian>[ICON_BULLET]Creates 2 [ICON_CULTURE] when it ends its turn in a city</Italian>
 		<Spanish>[ICON_BULLET]Creates 2 [ICON_CULTURE] when it ends its turn in a city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT</Tag>
+		<English>Agent</English>
+		<French>Agent</French>
+		<German>Agent</German>
+		<Italian>Agent</Italian>
+		<Spanish>Agent</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</English>
+		<French>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</French>
+		<German>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT_PEDIA</Tag>
+		<English>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</English>
+		<French>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</French>
+		<German>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</German>
+		<Italian>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</Italian>
+		<Spanish>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_</Tag>

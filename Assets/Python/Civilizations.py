@@ -186,6 +186,60 @@ lCivilizations = [
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
+		iTeotihuacan,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iTiwanaku,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iWari,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iMississippi,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iPuebloan,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iMuisca,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iNorse,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.column(4)
+	),
+	Civilization(
+		iChimu,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
+		iInuit,
+		iGold=200,
+		lCivics=[iDespotism, iSlavery],
+		techs=techs.of(iPottery, iAgriculture, iMythology)
+	),
+	Civilization(
 		iInca,
 		iGold=700,
 		lCivics=[iMonarchy, iSlavery, iRedistribution, iDeification],
@@ -212,6 +266,12 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
 		techs=techs.column(5).including(iFirearms, iLogistics, iExploration)
+	),
+	Civilization(
+		iIroquois,
+		iGold=600,
+		lCivics=[iDespotism, iCitizenship, iSlavery, iRedistribution, iDeification],
+		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
 		iEngland,
@@ -248,6 +308,7 @@ lCivilizations = [
 		iRussia,
 		iGold=200,
 		iAdvancedStartPoints=50,
+		iStateReligion=iOrthodoxy,
 		lCivics=[iElective, iVassalage, iManorialism, iMerchantTrade],
 		techs=techs.column(9)
 	),
@@ -258,6 +319,27 @@ lCivilizations = [
 		iStateReligion=iProtestantism,
 		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iIsolationism],
 		techs=techs.column(10).including(iRepresentation, iIndependence)
+	),
+	Civilization(
+		iAmerica,
+		iGold=1500,
+		iStateReligion=iProtestantism,
+		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iIsolationism],
+		techs=techs.column(10).including(iRepresentation, iIndependence)
+	),
+	Civilization(
+		iHaiti,
+		iGold=100,
+		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy, iTributaries],
+		techs=techs.column(6)
+	),
+	Civilization(
+		iBolivia,
+		iGold=1200,
+		iAdvancedStartPoints=100,
+		iStateReligion=iCatholicism,
+		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
 		iArgentina,
@@ -284,6 +366,30 @@ lCivilizations = [
 		techs=techs.column(11).including(iRightsOfMan)
 	),
 	Civilization(
+		iChile,
+		iGold=1200,
+		iAdvancedStartPoints=100,
+		iStateReligion=iCatholicism,
+		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		techs=techs.column(11).including(iGeology)
+	),
+	Civilization(
+		iPeru,
+		iGold=1200,
+		iAdvancedStartPoints=100,
+		iStateReligion=iCatholicism,
+		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		techs=techs.column(11).including(iGeology)
+	),
+	Civilization(
+		iVenezuela,
+		iGold=1200,
+		iAdvancedStartPoints=100,
+		iStateReligion=iCatholicism,
+		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		techs=techs.column(11).including(iGeology)
+	),
+	Civilization(
 		iBrazil,
 		iGold=1600,
 		iAdvancedStartPoints=200,
@@ -299,6 +405,14 @@ lCivilizations = [
 		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
 		techs=techs.column(14)
 	),
+	Civilization(
+		iCuba,
+		iGold=1200,
+		iAdvancedStartPoints=100,
+		iStateReligion=iCatholicism,
+		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		techs=techs.column(11).including(iGeology)
+	),
 ]
 
 ### Starting units ###
@@ -309,39 +423,50 @@ dStartingUnits = CivDict({
 		iWork: 1,
 		iSkirmish: 2,
 	},
-	iSpain: {
-		iSettle: 2,
-		iWork: 3,
-		iDefend: 2,
-		iAttack: 4,
-		iMissionary: 1,
-	},
-	iFrance: {
-		iSettle: 3,
-		iWork: 3,
-		iDefend: 3,
-		iCounter: 2,
-		iAttack: 3,
-		iMissionary: 1,
-	},
-	iEngland: {
-		iSettle: 2,
-		iSettleSea: 1,
-		iWork: 3,
-		iDefend: 3,
-		iMissionary: 1,
-		iWorkerSea: 2,
-		iFerry: 1,
-	},
-	iPortugal: {
+	iTeotihuacan: {
 		iSettle: 1,
-		iSettleSea: 1,
-		iWork: 3,
-		iDefend: 4,
-		iCounter: 2,
-		iMissionary: 1,
-		iWorkerSea: 2,
-		iEscort: 2,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iTiwanaku: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iWari: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iMississippi: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iPuebloan: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iMuisca: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iNorse: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iChimu: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iInuit: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
 	},
 	iInca: {
 		iSettle: 1,
@@ -356,6 +481,45 @@ dStartingUnits = CivDict({
 		iAttack: 4,
 		iDefend: 2,
 	},
+	iIroquois: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iSpain: {
+		iSettle: 2,
+		iWork: 3,
+		iDefend: 2,
+		iAttack: 4,
+		iMissionary: 1,
+	},
+	iPortugal: {
+		iSettle: 1,
+		iSettleSea: 1,
+		iWork: 3,
+		iDefend: 4,
+		iCounter: 2,
+		iMissionary: 1,
+		iWorkerSea: 2,
+		iEscort: 2,
+	},
+	iEngland: {
+		iSettle: 2,
+		iSettleSea: 1,
+		iWork: 3,
+		iDefend: 3,
+		iMissionary: 1,
+		iWorkerSea: 2,
+		iFerry: 1,
+	},
+	iFrance: {
+		iSettle: 3,
+		iWork: 3,
+		iDefend: 3,
+		iCounter: 2,
+		iAttack: 3,
+		iMissionary: 1,
+	},
 	iNetherlands: {
 		iSettle: 2,
 		iSettleSea: 2,
@@ -367,6 +531,16 @@ dStartingUnits = CivDict({
 		iWorkerSea: 2,
 		iExploreSea: 2,
 	},
+	iHawaii: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
+	iRussia: {
+		iSettle: 1,
+		iWork: 1,
+		iSkirmish: 2,
+	},
 	iAmerica: {
 		iSettle: 8,
 		iWork: 5,
@@ -376,6 +550,16 @@ dStartingUnits = CivDict({
 		iWorkerSea: 2,
 		iFerry: 2,
 		iEscort: 1,
+	},
+	iHaiti: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
+	},
+	iBolivia: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
 	},
 	iArgentina: {
 		iSettle: 2,
@@ -406,6 +590,21 @@ dStartingUnits = CivDict({
 		iFerry: 1,
 		iAttackSea: 1,
 	},
+	iChile: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
+	},
+	iPeru: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
+	},
+	iVenezuela: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
+	},
 	iBrazil: {
 		iSettle: 5,
 		iWork: 3,
@@ -426,7 +625,12 @@ dStartingUnits = CivDict({
 		iFerry: 2,
 		iEscort: 1,
 		iLightEscort: 1,
-	}
+	},
+	iCuba: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
+	},
 }, {})
 
 dExtraAIUnits = CivDict({

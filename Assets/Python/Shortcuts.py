@@ -84,8 +84,7 @@ def handleCivSwitch(iPlayer, netUserData, popupReturn):
 
 def startObserverMode(iTurns):
 	data.iBeforeObserverSlot = active()
-	#TODO: Observer
-	iObserverCiv = player(iColombia).isAlive() and iArgentina or iColombia
+	iObserverCiv = player(iMississippi).isAlive() and iInuit or iMississippi
 	iObserverSlot = slot(iObserverCiv)
 	
 	if iObserverSlot < 0:

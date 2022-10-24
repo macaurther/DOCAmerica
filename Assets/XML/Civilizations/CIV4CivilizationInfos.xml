@@ -62,16 +62,12 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_AMERICAN_PIONEER</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_AMERICAN_MINUTEMAN</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_MARINE</UnitClassType>
-					<UnitType>UNIT_AMERICAN_NAVY_SEAL</UnitType>
+					<UnitClassType>UNITCLASS_SPY</UnitClassType>
+					<UnitType>UNIT_AMERICAN_AGENT</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -125,7 +121,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>ARG</Identifier>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
@@ -400,7 +396,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_BOLIVAR</LeaderName>
+					<LeaderName>LEADER_BARBARIAN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -513,7 +509,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>CAN</Identifier>
 			<StartingYear>1867</StartingYear>
 			<LoadingTimes>
@@ -686,7 +682,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_SAN_MARTIN</LeaderName>
+					<LeaderName>LEADER_BARBARIAN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -705,7 +701,7 @@
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_CRITICAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CHM</Identifier>
 			<StartingYear>900</StartingYear>
 			<LoadingTimes>
@@ -792,7 +788,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>COL</Identifier>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
@@ -944,15 +940,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_CARDENAS</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-				<Leader>
-					<LeaderName>LEADER_JUAREZ</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-				<Leader>
-					<LeaderName>LEADER_SANTA_ANNA</LeaderName>
+					<LeaderName>LEADER_BARBARIAN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -1188,7 +1176,7 @@
 			<ArtStyleType>ARTSTYLE_AFRICAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_AFRICAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_YORUBA</PaganReligion>
-			<Impact>IMPACT_SIGNIFICANT</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAI</Identifier>
 			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
@@ -1497,6 +1485,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INUIT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>
+			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>INU</Identifier>
 			<StartingYear>1050</StartingYear>
 			<LoadingTimes>
@@ -1505,11 +1495,11 @@
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>0</Trade>
-				<Production>0</Production>
-				<Culture>0</Culture>
-				<Growth>0</Growth>
-				<Start>0</Start>
+				<Trade>1</Trade>
+				<Production>1</Production>
+				<Culture>3</Culture>
+				<Growth>1</Growth>
+				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -1586,7 +1576,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE_AMERICA</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -1600,6 +1590,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_IROQUOIS</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRO</Identifier>
 			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
@@ -1619,7 +1611,12 @@
 			<Cities>
 				<City>Cahokia</City>
 			</Cities>
-			<Buildings/>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_GAIWIIO_LONGHOUSE</BuildingType>
+				</Building>
+			</Buildings>
 			<Units/>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1649,7 +1646,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE_AMERICA</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -1668,7 +1665,7 @@
 			<Identifier>MAY</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>1</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
@@ -1780,7 +1777,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>MEX</Identifier>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
@@ -1876,6 +1873,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MISSISSIPPI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
+			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
 			<StartingYear>600</StartingYear>
 			<LoadingTimes>
@@ -1982,7 +1981,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE_AMERICA</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -1997,7 +1996,7 @@
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_CRITICAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MUI</Identifier>
 			<StartingYear>800</StartingYear>
 			<LoadingTimes>
@@ -2074,118 +2073,6 @@
 			<DerivativeCiv>CIVILIZATION_INCA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_INCA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_INCA_ORDER</CivilizationActionSound>
-		</CivilizationInfo>
-		<CivilizationInfo>
-			<Type>CIVILIZATION_NATIVE_AMERICA</Type>
-			<Description>TXT_KEY_CIV_NATIVE_AMERICA_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_NATIVE_AMERICA_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_NATIVE_AMERICA_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_NATIVE_AMERICA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BROWN</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<Identifier>NAT</Identifier>
-			<StartingYear>0</StartingYear>
-			<LoadingTimes>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-			</LoadingTimes>
-			<Rating>
-				<Trade>0</Trade>
-				<Production>0</Production>
-				<Culture>0</Culture>
-				<Growth>0</Growth>
-				<Start>0</Start>
-			</Rating>
-			<bPlayable>0</bPlayable>
-			<bAIPlayable>0</bAIPlayable>
-			<Cities>
-				<City>Cahokia</City>
-				<City>Poverty Point</City>
-				<City>Mound City</City>
-				<City>Chaco Canyon</City>
-				<City>Mesa Verde</City>
-				<City>Snaketown</City>
-				<City>Spiro</City>
-				<City>Moundville</City>
-				<City>Nacogdoches</City>
-				<City>Nanih Waiya</City>
-				<City>Anhaica</City>
-				<City>Etowah</City>
-				<City>Ocmulgee</City>
-				<City>Kituhwa</City>
-				<City>Fort Ancient</City>
-				<City>Onondaga</City>
-				<City>Bawating</City>
-				<City>Acoma</City>
-				<City>Namb&#233;</City>
-				<City>Hovenweep</City>
-				<City>Casa Grande</City>
-				<City>Criel</City>
-				<City>Joara</City>
-				<City>Lake Jackson</City>
-				<City>Chota</City>
-				<City>Oneida</City>
-				<City>Logstown</City>
-				<City>Five Finger Ridge</City>
-				<City>Frijoles Canyon</City>
-				<City>Puye Cliff</City>
-				<City>Kiet Siel</City>
-				<City>Montezuma Castle</City>
-				<City>Wickliffe</City>
-				<City>Aztalan</City>
-				<City>Angel Mounds</City>
-				<City>Tsirege</City>
-				<City>Taos</City>
-				<City>Zuni</City>
-				<City>Tishomingo</City>
-				<City>Shaugawaumikong</City>
-				<City>Allumette</City>
-				<City>Wendake</City>
-				<City>Norridgewock</City>
-				<City>Mutsun</City>
-				<City>Ozette</City>
-				<City>Estipah-skikikini-kots</City>
-				<City>Hueco Tanks</City>
-				<City>Ukpiagvik</City>
-				<City>Ketchikan</City>
-				<City>Kuujjuaq</City>
-			</Cities>
-			<Buildings/>
-			<Units/>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-			</FreeUnitClasses>
-			<FreeBuildingClasses>
-				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<bFreeBuildingClass>1</bFreeBuildingClass>
-				</FreeBuildingClass>
-			</FreeBuildingClasses>
-			<FreeTechs/>
-			<DisableTechs/>
-			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
-			</InitialCivics>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_BARBARIAN</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
-			<DerivativeCiv>CIVILIZATION_AMERICA</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_NETHERLANDS</Type>
@@ -2313,11 +2200,11 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_ASATRU</PaganReligion>
-			<Impact>IMPACT_CRITICAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>NOR</Identifier>
 			<StartingYear>874</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>4</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
@@ -2472,7 +2359,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_BOLIVAR</LeaderName>
+					<LeaderName>LEADER_BARBARIAN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -2615,26 +2502,33 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PUEBLOAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_KACHIN</PaganReligion>
+			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
 			<StartingYear>750</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>0</LoadingTime>
+				<LoadingTime>5</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>0</Trade>
-				<Production>0</Production>
-				<Culture>0</Culture>
-				<Growth>0</Growth>
-				<Start>0</Start>
+				<Trade>2</Trade>
+				<Production>2</Production>
+				<Culture>4</Culture>
+				<Growth>1</Growth>
+				<Start>1</Start>
 			</Rating>
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
 				<City>Cahokia</City>
 			</Cities>
-			<Buildings/>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_KACHIN_PITHOUSE</BuildingType>
+				</Building>
+			</Buildings>
 			<Units/>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2664,7 +2558,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE_AMERICA</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -2679,7 +2573,7 @@
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_RODNOVERY</PaganReligion>
-			<Impact>IMPACT_CRITICAL</Impact>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>RUS</Identifier>
 			<StartingYear>1743</StartingYear>
 			<LoadingTimes>
@@ -2864,93 +2758,6 @@
 			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_TIWANAKU</Type>
-			<Description>TXT_KEY_CIV_TIWANAKU_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_TIWANAKU_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_TIWANAKU_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_TIWANAKU_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_GREEN</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_TIWANAKU</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_CRITICAL</Impact>
-			<Identifier>TIW</Identifier>
-			<StartingYear>250</StartingYear>
-			<LoadingTimes>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-			</LoadingTimes>
-			<Rating>
-				<Trade>4</Trade>
-				<Production>2</Production>
-				<Culture>2</Culture>
-				<Growth>4</Growth>
-				<Start>1</Start>
-			</Rating>
-			<bPlayable>1</bPlayable>
-			<bAIPlayable>1</bAIPlayable>
-			<Cities>
-				<City>El Fuerte</City>
-				<City>Pumapunku</City>
-				<City>Chinkana</City>
-				<City>Chiripa</City>
-				<City>Chipaya</City>
-				<City>Inaq Uyu</City>
-				<City>Iskanwaya</City>
-				<City>Pillkukayna</City>
-				<City>Qhunqhu Wankani</City>
-			</Cities>
-			<Buildings>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_CIVIC_SQUARE</BuildingClassType>
-					<BuildingType>BUILDING_TIWANAKU_KALASASAYA</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
-				</Building>
-			</Buildings>
-			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SPY</UnitClassType>
-					<UnitType>UNIT_TIWANAKU_SISQENO</UnitType>
-				</Unit>
-			</Units>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-			</FreeUnitClasses>
-			<FreeBuildingClasses>
-				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<bFreeBuildingClass>1</bFreeBuildingClass>
-				</FreeBuildingClass>
-			</FreeBuildingClasses>
-			<FreeTechs/>
-			<DisableTechs/>
-			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
-			</InitialCivics>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_MALKU_HUYUSTUS</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
-			<DerivativeCiv>CIVILIZATION_INCA</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_INCA_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_INCA_ORDER</CivilizationActionSound>
-		</CivilizationInfo>
-		<CivilizationInfo>
 			<Type>CIVILIZATION_TEOTIHUACAN</Type>
 			<Description>TXT_KEY_CIV_TEOTIHUACAN_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_TEOTIHUACAN_SHORT_DESC</ShortDescription>
@@ -2961,8 +2768,8 @@
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
-			<Impact>IMPACT_CRITICAL</Impact>
-			<Identifier>TOL</Identifier>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
+			<Identifier>TEO</Identifier>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3062,6 +2869,93 @@
 			<CivilizationActionSound>AS3D_AZTEC_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
+			<Type>CIVILIZATION_TIWANAKU</Type>
+			<Description>TXT_KEY_CIV_TIWANAKU_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_TIWANAKU_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_TIWANAKU_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_TIWANAKU_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_GREEN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_TIWANAKU</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
+			<Identifier>TIW</Identifier>
+			<StartingYear>250</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>4</Trade>
+				<Production>2</Production>
+				<Culture>2</Culture>
+				<Growth>4</Growth>
+				<Start>1</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>El Fuerte</City>
+				<City>Pumapunku</City>
+				<City>Chinkana</City>
+				<City>Chiripa</City>
+				<City>Chipaya</City>
+				<City>Inaq Uyu</City>
+				<City>Iskanwaya</City>
+				<City>Pillkukayna</City>
+				<City>Qhunqhu Wankani</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CIVIC_SQUARE</BuildingClassType>
+					<BuildingType>BUILDING_TIWANAKU_KALASASAYA</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_SPY</UnitClassType>
+					<UnitType>UNIT_TIWANAKU_SISQENO</UnitType>
+				</Unit>
+			</Units>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_CHIEFDOM</CivicType>
+				<CivicType>CIVIC_AUTHORITY</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_MALKU_HUYUSTUS</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_INCA</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_INCA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_INCA_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
 			<Type>CIVILIZATION_VENEZUELA</Type>
 			<Description>TXT_KEY_CIV_VENEZUELA_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_VENEZUELA_SHORT_DESC</ShortDescription>
@@ -3131,7 +3025,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_BOLIVAR</LeaderName>
+					<LeaderName>LEADER_BARBARIAN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -3150,7 +3044,7 @@
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_CRITICAL</Impact>
+			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>WAR</Identifier>
 			<StartingYear>500</StartingYear>
 			<LoadingTimes>
@@ -3668,13 +3562,14 @@
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_NATIVE</Type>
-			<Description>TXT_KEY_CIV_NATIVE_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_NATIVE_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_NATIVE_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_NATIVE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY_YELLOW</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE</ArtDefineTag>
+			<Description>TXT_KEY_CIV_NATIVE_AMERICA_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_NATIVE_AMERICA_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_NATIVE_AMERICA_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_NATIVE_AMERICA_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BROWN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<Identifier>NAT</Identifier>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
@@ -3692,42 +3587,56 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
-				<City>Ulundi</City>
-				<City>uMgungundlovu</City>
-				<City>Nobamba</City>
-				<City>Bulawayo</City>
-				<City>kwaDukuza</City>
-				<City>Nongoma</City>
-				<City>Ondini</City>
-				<City>Nodwengu</City>
-				<City>Ndondakusuka</City>
-				<City>Babanango</City>
-				<City>Khangela</City>
-				<City>kwaHlomendlini</City>
-				<City>Hlobane</City>
-				<City>eThekwini</City>
-				<City>Mlambongwenya</City>
-				<City>Eziqwaqweni</City>
-				<City>Emangweni</City>
-				<City>isiPhezi</City>
-				<City>Masotsheni</City>
-				<City>Mtunzini</City>
-				<City>Nyakamubi</City>
-				<City>DumaZulu</City>
-				<City>Hlatikulu</City>
-				<City>Mthonjaneni</City>
-				<City>Empangeni</City>
-				<City>Pongola</City>
-				<City>Tungela</City>
-				<City>kwaMashu</City>
-				<City>Ingwavuma</City>
-				<City>Hluhluwe</City>
-				<City>Mtubatuba</City>
-				<City>Mhlahlandlela</City>
-				<City>Mthatha</City>
-				<City>Maseru</City>
-				<City>Lobamba</City>
-				<City>Qunu</City>
+				<City>Cahokia</City>
+				<City>Poverty Point</City>
+				<City>Mound City</City>
+				<City>Chaco Canyon</City>
+				<City>Mesa Verde</City>
+				<City>Snaketown</City>
+				<City>Spiro</City>
+				<City>Moundville</City>
+				<City>Nacogdoches</City>
+				<City>Nanih Waiya</City>
+				<City>Anhaica</City>
+				<City>Etowah</City>
+				<City>Ocmulgee</City>
+				<City>Kituhwa</City>
+				<City>Fort Ancient</City>
+				<City>Onondaga</City>
+				<City>Bawating</City>
+				<City>Acoma</City>
+				<City>Namb&#233;</City>
+				<City>Hovenweep</City>
+				<City>Casa Grande</City>
+				<City>Criel</City>
+				<City>Joara</City>
+				<City>Lake Jackson</City>
+				<City>Chota</City>
+				<City>Oneida</City>
+				<City>Logstown</City>
+				<City>Five Finger Ridge</City>
+				<City>Frijoles Canyon</City>
+				<City>Puye Cliff</City>
+				<City>Kiet Siel</City>
+				<City>Montezuma Castle</City>
+				<City>Wickliffe</City>
+				<City>Aztalan</City>
+				<City>Angel Mounds</City>
+				<City>Tsirege</City>
+				<City>Taos</City>
+				<City>Zuni</City>
+				<City>Tishomingo</City>
+				<City>Shaugawaumikong</City>
+				<City>Allumette</City>
+				<City>Wendake</City>
+				<City>Norridgewock</City>
+				<City>Mutsun</City>
+				<City>Ozette</City>
+				<City>Estipah-skikikini-kots</City>
+				<City>Hueco Tanks</City>
+				<City>Ukpiagvik</City>
+				<City>Ketchikan</City>
+				<City>Kuujjuaq</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -3851,13 +3760,13 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_NATIVE</LeaderName>
+					<LeaderName>LEADER_BARBARIAN</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_INDEPENDENT</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_ZULU_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_ZULU_ORDER</CivilizationActionSound>
+			<DerivativeCiv>CIVILIZATION_AMERICA</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_MINOR</Type>

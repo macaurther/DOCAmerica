@@ -180,14 +180,6 @@ public:
 	bool isHeadquarters() const;																			// Exposed to Python				
 	void setHeadquarters(CorporationTypes eIndex);
 
-	//MacAurther
-	bool isCanadian() const;
-	bool isAmerican() const;
-	bool isMexican() const;
-	bool isColombian() const;
-	bool isBrazilian() const;
-	bool isArgentine() const;
-
 	int getOvercrowdingPercentAnger(int iExtra = 0) const;									// Exposed to Python
 	int getNoMilitaryPercentAnger() const;																	// Exposed to Python 
 	int getCulturePercentAnger() const;																			// Exposed to Python
@@ -1075,6 +1067,13 @@ public:
 	bool isAutoRaze() const;
 
 	//Leoreth
+	//MacAurther
+	bool isCanadian() const;
+	bool isAmerican() const;
+	bool isMexican() const;
+	bool isColombian() const;
+	bool isBrazilian() const;
+	bool isArgentine() const;
 	int getSpecialistGoodHappiness() const;
 	int getSpecialistBadHappiness() const;
 	void changeSpecialistGoodHappiness(int iChange);

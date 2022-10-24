@@ -24,3 +24,25 @@ BeginPlot
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 EndPlot
+BeginPlot
+	x=29,y=61
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
+EndPlot
+BeginPlot
+	x=52,y=33
+	BeginUnit
+		UnitType=UNIT_MILITIA
+		UnitOwner=CIVILIZATION_TIWANAKU
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER
+		UnitOwner=CIVILIZATION_TIWANAKU
+	EndUnit
+EndPlot

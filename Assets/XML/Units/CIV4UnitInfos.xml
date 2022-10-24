@@ -183,6 +183,12 @@
 			<Strategy>TXT_KEY_UNIT_SETTLER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bFood>1</bFood>
+			<UnitClassUpgrades>
+				<UnitClassUpgrade>
+					<UnitClassUpgradeType>UNITCLASS_PIONEER</UnitClassUpgradeType>
+					<bUnitClassUpgrade>1</bUnitClassUpgrade>
+				</UnitClassUpgrade>
+			</UnitClassUpgrades>
 			<bFound>1</bFound>
 			<UnitAIs>
 				<UnitAI>
@@ -218,52 +224,6 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
-			<Type>UNIT_AMERICAN_PIONEER</Type>
-			<Capture>UNITCLASS_WORKER</Capture>
-			<Combat>UNITCOMBAT_GUN</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_AMERICAN_PIONEER</Description>
-			<Civilopedia>TXT_KEY_UNIT_AMERICAN_PIONEER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_AMERICAN_PIONEER_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_AMERICAN_PIONEER_HELP</Help>
-			<Advisor>ADVISOR_GROWTH</Advisor>
-			<bFood>1</bFood>
-			<bFound>1</bFound>
-			<bOnlyDefensive>1</bOnlyDefensive>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_SETTLE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>4</iAsset>
-			<iCombat>10</iCombat>
-			<iCombatLimit>100</iCombatLimit>
-			<iPlainsDefense>50</iPlainsDefense>
-			<UnitMeshGroups>
-				<iGroupSize>3</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>3</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_AMERICAN_PIONEER</EarlyArtDefineTag>
-				</UnitMeshGroup>
-				<UnitMeshGroup>
-					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_AMERICAN_PIONEER_ARMED</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_RANGED</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_INUIT_DOG_SLED</Type>
 			<Capture>UNITCLASS_WORKER</Capture>
 			<Domain>DOMAIN_LAND</Domain>
@@ -276,6 +236,12 @@
 			<bFood>1</bFood>
 			<bFound>1</bFound>
 			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
+			<UnitClassUpgrades>
+				<UnitClassUpgrade>
+					<UnitClassUpgradeType>UNITCLASS_LABORER</UnitClassUpgradeType>
+					<bUnitClassUpgrade>1</bUnitClassUpgrade>
+				</UnitClassUpgrade>
+			</UnitClassUpgrades>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_SETTLE</UnitAIType>
@@ -321,6 +287,53 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_PIONEER</Class>
+			<Type>UNIT_PIONEER</Type>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<Combat>UNITCOMBAT_GUN</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_AMERICAN_PIONEER</Description>
+			<Civilopedia>TXT_KEY_UNIT_AMERICAN_PIONEER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_AMERICAN_PIONEER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_AMERICAN_PIONEER_HELP</Help>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<bFood>1</bFood>
+			<bFound>1</bFound>
+			<bOnlyDefensive>1</bOnlyDefensive>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_SETTLE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_COLONIZATION</PrereqTech>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iAsset>4</iAsset>
+			<iCombat>10</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iPlainsDefense>50</iPlainsDefense>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>3</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_AMERICAN_PIONEER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_AMERICAN_PIONEER_ARMED</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_RANGED</FormationType>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_WORKER</Class>
@@ -1144,6 +1157,54 @@
 					<iRequired>1</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_TIWANAKU_SISQENO</EarlyArtDefineTag>
 					<LateArtDefineTag>ART_DEF_UNIT_TIWANAKU_SISQENO</LateArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_SPY</Class>
+			<Type>UNIT_AMERICAN_AGENT</Type>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Combat>UNITCOMBAT_SPY</Combat>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_SPY</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_AMERICAN_AGENT</Description>
+			<Civilopedia>TXT_KEY_UNIT_AMERICAN_AGENT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_AMERICAN_AGENT_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bRivalTerritory>1</bRivalTerritory>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bSpy>1</bSpy>
+			<bCounterSpy>1</bCounterSpy>
+			<bInvisible>1</bInvisible>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_SPY</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_POLITICS</PrereqTech>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCost>40</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>1</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iAsset>2</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SPY_MODERN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -4121,89 +4182,6 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_MARINE</Class>
-			<Type>UNIT_AMERICAN_NAVY_SEAL</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_AMERICAN_NAVY_SEAL</Description>
-			<Civilopedia>TXT_KEY_UNIT_AMERICAN_NAVY_SEAL_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_AMERICAN_NAVY_SEAL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<bMilitaryHappiness>1</bMilitaryHappiness>
-			<bMilitarySupport>1</bMilitarySupport>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bPillage>1</bPillage>
-			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_CITY_DEFENSE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_RESERVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<PrereqTech>TECH_GLOBALISM</PrereqTech>
-			<iCost>160</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iCombat>24</iCombat>
-			<iCombatLimit>100</iCombatLimit>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iFirstStrikes>1</iFirstStrikes>
-			<iChanceFirstStrikes>1</iChanceFirstStrikes>
-			<UnitClassAttackMods>
-				<UnitClassAttackMod>
-					<UnitClassType>UNITCLASS_MACHINE_GUN</UnitClassType>
-					<iUnitClassMod>50</iUnitClassMod>
-				</UnitClassAttackMod>
-				<UnitClassAttackMod>
-					<UnitClassType>UNITCLASS_ARTILLERY</UnitClassType>
-					<iUnitClassMod>50</iUnitClassMod>
-				</UnitClassAttackMod>
-			</UnitClassAttackMods>
-			<iConscription>1</iConscription>
-			<iCultureGarrison>12</iCultureGarrison>
-			<iAsset>4</iAsset>
-			<iPower>24</iPower>
-			<UnitMeshGroups>
-				<iGroupSize>3</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>3</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_AMERICAN_NAVY_SEAL</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_AMPHIBIOUS</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-				<FreePromotion>
-					<PromotionType>PROMOTION_MARCH</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
-			<bGraphicalOnly>1</bGraphicalOnly>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_PARATROOPER</Class>

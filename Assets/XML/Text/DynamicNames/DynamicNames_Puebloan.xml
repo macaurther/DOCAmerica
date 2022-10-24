@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Puebloan -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUEBLOAN_DESC</Tag>
+		<English>The Puebloans</English>
+		<French>The Puebloans</French>
+		<German>The Puebloans</German>
+		<Italian>The Puebloans</Italian>
+		<Spanish>The Puebloans</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUEBLOAN_PEOPLES</Tag>
+		<English>Puebloan Peoples</English>
+		<French>Puebloan Peoples</French>
+		<German>Puebloan Peoples</German>
+		<Italian>Puebloan Peoples</Italian>
+		<Spanish>Puebloan Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUEBLOAN_DEFAULT</Tag>
+		<English>Kingdom of %s1</English>
+		<French>
+			<Text>Royaume d'%s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Regno del %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Reino de %s1</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUEBLOAN_COMMUNIST</Tag>
+		<English>Republic of %s1</English>
+		<French>
+			<Text>R&#233;publique d'%s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Republik %s1:Republik %s1:Republik %s1</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Repubblica di %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Rep&#250;blica de %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUEBLOAN_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>
+			<Text>&#201;tat %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>%s2 Staat:%s2 Staat:%s2 Staat</Text>
+			<Gender>Male:Male:Male</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Stato %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Estado %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUEBLOAN_ADJECTIVE</Tag>
+		<English>Puebloan</English>
+		<French>Puebloan</French>
+		<German>Puebloan</German>
+		<Italian>Puebloan</Italian>
+		<Spanish>Puebloan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUEBLOAN_SHORT_DESC</Tag>
+		<English>Puebloans</English>
+		<French>Puebloans</French>
+		<German>Puebloans</German>
+		<Italian>Puebloans</Italian>
+		<Spanish>Puebloans</Spanish>
+	</TEXT>
+</Civ4GameText>

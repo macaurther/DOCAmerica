@@ -68,43 +68,50 @@ dGoals = {
 		Wonder(iTempleOfKukulkan, by=900),
 		ContactBeforeRevealed(group(iCivGroupEurope).named(EUROPEAN_CIVILIZATION), plots.regions(*lAmerica).named(AMERICA)),
 	),
-	iSpain: (
-		FirstSettle(plots.regions(*lAmerica).named(AMERICA), allowed=dCivGroups[iCivGroupAmerica]),
-		ControlledResourceCount(sum(iSilver, iGold), 10, by=1650),
-		All(
-			ReligionSpreadPercent(iCatholicism, 30),
-			AreaNoStateReligion((plots.rectangle(tEurope) + plots.rectangle(tEasternEurope)).named(AMERICA), iProtestantism),
-			at=1650,
-		),
+	iTeotihuacan: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
 	),
-	iFrance: (
-		CityCultureLevel(start(iFrance).named(BUENOS_AIRES), iCultureLevelLegendary, at=1700),
-		All(
-			AreaPercent((plots.rectangle(tEurope) + plots.rectangle(tEasternEurope)).named(AMERICA), 40, subject=VASSALS),
-			AreaPercent(plots.rectangle(tNorthAmerica).named(NORTH_AMERICA), 40, subject=VASSALS),
-			at=1800,
-		),
-		Wonders(iStatueOfLiberty, by=1900),
+	iTiwanaku: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
 	),
-	iEngland: (
-		CityCount(
-			(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 5),
-			(plots.regions(*(lSouthAmerica + lCentralAmerica)).named(SOUTH_CENTRAL_AMERICA), 3),
-			by=1730,
-		),
-		All(
-			UnitCount(sum(iFrigate, iShipOfTheLine), 25),
-			SunkShips(50),
-			by=1800,
-		),
-		EraFirstDiscover((iRevolutionary, 8), (iIndustrial, 8)),
+	iWari: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
 	),
-	iPortugal: (
-		OpenBorderCount(14, by=1550),
-		ResourceCount(sum(lColonialResources).named(TRADING_COMPANY_RESOURCES), 12, by=1650),
-		CityCount(sum(
-			plots.rectangle(tBrazil).named(BRAZIL),
-		), 15, by=1700),
+	iMississippi: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iPuebloan: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iMuisca: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iNorse: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iChimu: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iInuit: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
 	),
 	iInca: (
 		All(
@@ -120,9 +127,63 @@ dGoals = {
 		BuildingCount((iPaganTemple, 6), (iSacrificialAltar, 6), by=1650),
 		EnslaveCount(20, excluding=group(iCivGroupAmerica).named(EUROPEAN)),
 	),
+	iIroquois: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iSpain: (
+		FirstSettle(plots.regions(*lAmerica).named(AMERICA), allowed=dCivGroups[iCivGroupAmerica]),
+		ControlledResourceCount(sum(iSilver, iGold), 10, by=1650),
+		All(
+			ReligionSpreadPercent(iCatholicism, 30),
+			AreaNoStateReligion((plots.rectangle(tEurope) + plots.rectangle(tEasternEurope)).named(AMERICA), iProtestantism),
+			at=1650,
+		),
+	),
+	iPortugal: (
+		OpenBorderCount(14, by=1550),
+		ResourceCount(sum(lColonialResources).named(TRADING_COMPANY_RESOURCES), 12, by=1650),
+		CityCount(sum(
+			plots.rectangle(tBrazil).named(BRAZIL),
+		), 15, by=1700),
+	),
+	iEngland: (
+		CityCount(
+			(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 5),
+			(plots.regions(*(lSouthAmerica + lCentralAmerica)).named(SOUTH_CENTRAL_AMERICA), 3),
+			by=1730,
+		),
+		All(
+			UnitCount(sum(iFrigate, iShipOfTheLine), 25),
+			SunkShips(50),
+			by=1800,
+		),
+		EraFirstDiscover((iRevolutionary, 8), (iIndustrial, 8)),
+	),
+	iFrance: (
+		CityCultureLevel(start(iFrance).named(BUENOS_AIRES), iCultureLevelLegendary, at=1700),
+		All(
+			AreaPercent((plots.rectangle(tEurope) + plots.rectangle(tEasternEurope)).named(AMERICA), 40, subject=VASSALS),
+			AreaPercent(plots.rectangle(tNorthAmerica).named(NORTH_AMERICA), 40, subject=VASSALS),
+			at=1800,
+		),
+		Wonders(iStatueOfLiberty, by=1900),
+	),
 	iNetherlands: (
 		CitySpecialistCount(start(iNetherlands).named(BUENOS_AIRES), iSpecialistGreatMerchant, 3, at=1745),
 		ResourceCount(iSpices, 7, by=1775),
+		GoldAmount(1, by=2000),
+	),
+	iHawaii: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iRussia: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
 	),
 	iAmerica: (
 		All(
@@ -136,6 +197,16 @@ dGoals = {
 			PowerPercent(75, subject=ALLIES),
 			by=1990,
 		),
+	),
+	iHaiti: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iBolivia: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
 	),
 	iArgentina: (
 		GoldenAges(2, by=1930),
@@ -162,6 +233,21 @@ dGoals = {
 		),
 		ResourceTradeGold(3000, by=1950),
 	),
+	iChile: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iPeru: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
+	iVenezuela: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+	),
 	iBrazil: (
 		ImprovementCount((iSlavePlantation, 8), (iPasture, 4), at=1880),
 		Wonders(iCristoRedentor, iItaipuDam),
@@ -184,6 +270,11 @@ dGoals = {
 			by=1950,
 		),
 		BrokeredPeace(12, by=2000),
+	),
+	iCuba: (
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
+		GoldAmount(1, by=2000),
 	),
 }
 

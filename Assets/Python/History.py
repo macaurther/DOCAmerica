@@ -122,6 +122,7 @@ def conquistadors(iTeamX, iHasMetTeamY):
 					return
 					
 				if not bAlreadyContacted:
+					# MacAurther TODO: coordinate update and other natives too
 					if iNewWorldCiv == iMaya:
 						tContactZoneTL = (15, 30)
 						tContactZoneBR = (34, 42)

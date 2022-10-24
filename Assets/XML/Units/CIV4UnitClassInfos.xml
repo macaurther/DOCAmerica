@@ -39,6 +39,14 @@
 			<DefaultUnit>UNIT_SETTLER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_PIONEER</Type>
+			<Description>TXT_KEY_UNIT_PIONEER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_PIONEER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_WORKER</Type>
 			<Description>TXT_KEY_UNIT_WORKER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

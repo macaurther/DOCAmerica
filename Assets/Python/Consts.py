@@ -13,12 +13,12 @@ iWorldY = 108
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 38
+iNumCivs = 37
 #				2				3				4				5				6				7				8				9				10
 (iAmerica, 		iArgentina, 	iAztecs, 		iBolivia,		iBrazil, 		iCanada, 		iChile,			iChimu,			iColombia, 		iCuba,			
 iEngland, 		iFrance, 		iHaiti,			iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,
-iMuisca,		iNativeAmericans, iNetherlands, iNorse,			iPeru,			iPortugal, 		iPuebloan,		iRussia,		iSpain, 		iTeotihuacan,
-iTiwanaku,		iVenezuela,		iWari,			iIndependent, 	iIndependent2, 	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iMuisca,		iNetherlands, 	iNorse,			iPeru,			iPortugal, 		iPuebloan,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,
+iVenezuela,		iWari,			iIndependent, 	iIndependent2, 	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -33,8 +33,8 @@ lBirthOrder = [
 	iInuit,
 	iInca,
 	iAztecs,
-	iSpain,
 	iIroquois,
+	iSpain,
 	iPortugal,
 	iEngland,
 	iFrance,
@@ -104,7 +104,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 2
+iNumMinorCities = 1
 
 # scripted conquerors
 iNumConquests = 0
@@ -263,48 +263,56 @@ dNeighbours = dictFromEdges(lBirthCivs, lNeighbours)
 
 # Leoreth: determine influence lists from pairwise influences for easier lookup
 dInfluences = dictFromEdges(lBirthCivs, lInfluences)
-# TODO \/
+
 dResurrections = CivDict({
-iMaya : [(1800, 2020)],
-iInca : [(1800, 1930)],
-iSpain : [(1700, 2020)],
-iPortugal : [(1700, 2020)],
-iEngland : [(1700, 2020)],
-iFrance : [(1700, 2020)],
-iNetherlands : [(1700, 2020)],
-iAmerica : [(1776, 2020)],
-iArgentina : [(1810, 2020)],
-iMexico : [(1810, 2020)],
-iColombia : [(1810, 2020)],
-iBrazil : [(1820, 2020)],
-iCanada : [(1867, 2020)],
 }, [])
 
 dEnemyCivsOnSpawn = CivDict({
 iAztecs : [iMaya],
-iAmerica : [iIndependent, iIndependent2],
-iArgentina : [iSpain, iSpain, iIndependent, iIndependent2],
-iMexico : [iSpain, iSpain, iIndependent, iIndependent2],
-iColombia : [iSpain, iSpain, iIndependent, iIndependent2],
+iInca : [iWari],
+iAmerica : [iEngland, iIndependent, iIndependent2, iNative],
+iArgentina : [iSpain, iIndependent, iIndependent2],
+iMexico : [iSpain, iIndependent, iIndependent2],
+iColombia : [iSpain, iIndependent, iIndependent2],
 iBrazil : [iIndependent, iIndependent2],
 }, [])
 
 dTotalWarOnSpawn = CivDict({
-iAztecs : [iMaya],
+iInca : [iWari],
 }, [])
 
 dAggressionLevel = CivDict({
 iMaya : 1,
-iInca : 1,
+iTeotihuacan : 1,
+iTiwanaku : 1,
+iWari : 1,
+iMississippi : 1,
+iPuebloan : 1,
+iMuisca : 1,
+iNorse : 1,
+iChimu : 1,
+iInuit : 1,
+iInca : 2,
 iAztecs : 2,
+iIroquois : 1,
 iSpain : 2,
-iEngland : 1,
-iFrance : 1,
-iRussia : 1,
+iEngland : 2,
+iFrance : 2,
+iNetherlands : 2,
+iHawaii : 1,
+iRussia : 2,
 iAmerica : 2,
-iColombia : 2,
-iMexico : 1,
+iHaiti : 1,
+iBolivia : 1,
 iArgentina : 1,
+iMexico : 1,
+iColombia : 2,
+iChile : 1,
+iPeru : 1,
+iVenezuela : 1,
+iBrazil : 2,
+iCanada : 1,
+iCuba : 1,
 }, 0)
 
 dWarOnFlipProbability = CivDict({
@@ -326,45 +334,51 @@ iCanada: 40,
 }, 0)
 
 dResurrectionProbability = CivDict({
-iMaya : 30,
-iInca : 70,
-iAztecs : 70,
-iSpain : 100,
-iPortugal : 100,
-iEngland : 100,
-iFrance : 100,
-iNetherlands : 100,
-iAmerica : 100,
-iArgentina : 100,
-iMexico : 100,
-iColombia : 80,
-iBrazil : 100,
-iCanada : 100,
 })
 
 dPatienceThreshold = CivDict({
 iMaya : 35,
+iTeotihuacan : 20,
+iTiwanaku : 20,
+iWari : 20,
+iMississippi : 35,
+iPuebloan : 35,
+iMuisca : 35,
+iNorse : 30,
+iChimu : 20,
+iInuit : 35,
 iInca : 35,
 iAztecs : 30,
+iIroquois : 25,
 iSpain : 20,
 iPortugal : 30,
 iEngland : 20,
 iFrance : 20,
 iNetherlands : 30,
+iHawaii : 25,
+iRussia: 35,
 iAmerica : 30,
+iHaiti : 35,
+iBolivia : 30,
 iArgentina : 40,
 iMexico : 40,
 iColombia : 30,
+iChile : 35,
+iPeru : 35,
+iVenezuela : 20,
 iBrazil : 40,
 iCanada : 40,
+iCuba : 25,
 }, 100)
 
 dMaxColonists = CivDict({
+iNorse : 1,
 iSpain : 7,
 iPortugal : 6,
 iEngland : 6, 
 iFrance : 5,
 iNetherlands : 6,
+iRussia : 3,
 })
 
 # initialise religion variables to religion indices from XML
@@ -386,9 +400,10 @@ tPersecutionPreference = (
 )
 
 # pagan religions
-iNumPaganReligions = 19
-(iAnunnaki, iAsatru, iAtua, iBaalism, iBon, iDruidism, iInti, iMazdaism, iMugyo, iOlympianism, 
-iPesedjet, iRodnovery, iShendao, iShinto, iTengri, iTeotlMaya, iTeotlAztec, iVedism, iYoruba) = range(iNumPaganReligions)
+iNumPaganReligions = 12
+#				2				3				4				5				6				7				8				9				10
+(iAngakkuq, 	iAsatru, 		iAtua, 			iDruidism, 		iGaiwiio,		iInti, 			iKachin,		iMidewiwin, 	iRodnovery, 	iTeotlMaya, 
+iTeotlAztec, 	iYoruba) = range(iNumPaganReligions)
 
 iPaganVictory = iNumReligions
 iSecularVictory = iNumReligions + 1
@@ -429,12 +444,12 @@ iTranshumanism) = range(iNumTechs)
 
 iNumUnits = 139
 #				2				3				4				5				6				7				8				9				10
-(iBear, 		iPanther, 		iWolf, 			iSettler, 		iPioneer, 		iDogSled,		iWorker, 		iArtisan,		iLaborer, 		iMadeireiro, 
-iScout, 		iExplorer, 		iBandeirante, 	iSpy, 			iSisqeno,		iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, iProtestantMissionary,
-iIslamicMissionary, iHinduMissionary, iBuddhistMissionary,iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iNativeWarrior, iMilitia, iFalconDancer,
-iAxeman,		iLightSwordsman, iDogSoldier, 	iSwordsman, 	iJaguar, 		iAucac, 		iHeavySwordsman,iSpearman, 		iNativeRaider, 	iHeavySpearman, 
-iPikeman, 		iArquebusier, 	iTercio, 		iMohawk, 		iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 	iAlbionLegion, 	
-iAntiTank, 		iInfantry, 		iSamInfantry, 	iMobileSam, 	iMarine, 		iNavySeal, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iPictaAucac,
+(iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iLaborer, 		iMadeireiro, 
+iScout, 		iExplorer, 		iBandeirante, 	iSpy, 			iSisqeno,		iAgent,			iReligiousPersecutor, iJewishMissionary, iOrthodoxMissionary, iCatholicMissionary, 
+iProtestantMissionary, iIslamicMissionary, iHinduMissionary, iBuddhistMissionary,iConfucianMissionary, iTaoistMissionary, iZoroastrianMissionary, iWarrior, iNativeWarrior, iMilitia,
+iFalconDancer,	iAxeman,		iLightSwordsman, iDogSoldier, 	iSwordsman, 	iJaguar, 		iAucac, 		iHeavySwordsman,iSpearman, 		iNativeRaider, 	
+iHeavySpearman, iPikeman, 		iArquebusier, 	iTercio, 		iMohawk, 		iMusketeer, 	iRedcoat, 		iMinuteman, 	iRifleman, 		iGrenadier, 
+iAlbionLegion, 	iAntiTank, 		iInfantry, 		iSamInfantry, 	iMobileSam, 	iMarine, 		iParatrooper, 	iMechanizedInfantry, iArcher,  	iPictaAucac,
 iNativeArcher, 	iSkirmisher, 	iHolkan, 		iScAucac,		iGuechaWarrior,	iLongbowman, 	iCrossbowman, 	iHorseArcher,  	iPistolier, 	iMountedBrave, 
 iCuirassier, 	iConquistador, 	iHussar, 		iLlanero, 		iDragoon, 		iGrenadierCavalry, iCavalry, 	iRural, 		iTank, 			iMainBattleTank, 
 iGunship, 		iBombard, 		iCannon, 		iArtillery, 	iMachineGun, 	iHowitzer, 		iMobileArtillery, iWorkboat, 	iCaravel, 		iCarrack, 
@@ -659,14 +674,14 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 57
+iNumLeaders = 54
 #				2				3				4				5				6				7				8				9				10
 (iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAhoeitu, iPacal,			iRagnar,		iGustav, 		iGerhardsen, 	iIsabella, 		iPhilip, 
-iFranco,		iCharlemagne, 	iLouis, 		iNapoleon, 		iDeGaulle, 		iAlfred, 		iElizabeth, 	iVictoria, 		iChurchill, 	iBarbarossa,
-iCharles, 		iFrancis, 		iIvan, 			iPeter, 		iCatherine, 	iAlexanderI, 	iStalin, 		iAfonso, 		iJoao, 			iMaria, 
-iHuaynaCapac, 	iCastilla, 		iMontezuma, 	iWillemVanOranje, iWilliam, 	iWashington,	iLincoln, 		iRoosevelt, 	iSanMartin, 	iPeron, 
-iJuarez, 		iSantaAnna, 	iCardenas, 		iBolivar, 		iPedro, 		iVargas,		iMacDonald, 	iTrudeau, 		iSittingBull,	iMalkuHuyustus,
-iWariCapac,		iTacaynamo,		iRedHorn,		iAua,			iSaguamanchica,	iPachacuti,		iAtlatlCauac) = range(iNumLeaders)
+iFranco,		iCharlemagne, 	iLouis, 		iNapoleon, 		iDeGaulle, 		iAlfred, 		iElizabeth, 	iVictoria, 		iChurchill, 	iIvan, 	
+iPeter, 		iCatherine, 	iAlexanderI, 	iStalin, 		iAfonso, 		iJoao, 			iMaria, 		iHuaynaCapac, 	iPachacuti,		iMontezuma, 
+iWillemVanOranje, iWilliam, 	iWashington,	iLincoln, 		iRoosevelt, 	iSanMartin, 	iPeron, 		iJuarez, 		iSantaAnna, 	iCardenas, 
+iBolivar, 		iPedro, 		iVargas,		iMacDonald, 	iTrudeau, 		iSittingBull,	iMalkuHuyustus,	iWariCapac,		iTacaynamo,		iRedHorn,
+iAua,			iSaguamanchica,	iAtlatlCauac,	iCastilla) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 })
@@ -685,7 +700,7 @@ iPortugal : [(82, 34), (89, 31), (101, 29), (105, 39), (93, 28), (93, 27), (71, 
 iNetherlands : [(99, 28), (99, 27), (100, 27), (100, 26), (101, 26), (104, 25), (105, 25), (106, 25), (107, 24), (104, 27), (105, 27), (106, 27), (104, 28), (106, 28), (105, 29), (106, 29)],
 })
 
-lSecondaryCivs = [iArgentina, iBrazil]
+lSecondaryCivs = [iBolivia, iChile, iChimu, iCuba, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari]
 
 (i250AD, i1500AD, i1770AD) = range(3)
 

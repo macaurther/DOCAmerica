@@ -142,19 +142,35 @@ dStartingLeaders = [
 	iIndependent2 : iIndependentLeader,
 	iNative : iNativeLeader,
 	iMaya : iPacal,
+	iTeotihuacan : iAtlatlCauac,
+	iTiwanaku : iMalkuHuyustus,
+	iWari : iWariCapac,
+	iMississippi : iRedHorn,
+	iPuebloan : iLeaderBarbarian,	# TODO
+	iMuisca : iSaguamanchica,
+	iNorse : iRagnar,
+	iChimu : iTacaynamo,
+	iInuit : iAua,
 	iInca : iHuaynaCapac,
 	iAztecs : iMontezuma,
+	iIroquois : iLeaderBarbarian,	# TODO: iHiawatha
 	iSpain : iIsabella,
 	iPortugal : iAfonso,
 	iEngland : iAlfred,
 	iFrance : iCharlemagne,
 	iNetherlands : iWillemVanOranje,
 	iAmerica : iWashington,
+	iHaiti : iLeaderBarbarian,	# TODO: iLouverture
+	iBolivia : iLeaderBarbarian,	# TODO
 	iArgentina : iSanMartin,
 	iMexico : iJuarez,
 	iColombia : iBolivar,
+	iChile : iLeaderBarbarian,	# TODO
+	iPeru : iLeaderBarbarian,	# TODO
+	iVenezuela : iLeaderBarbarian,	# TODO
 	iBrazil : iPedro,
 	iCanada : iMacDonald,
+	iCuba : iLeaderBarbarian,	# TODO
 },
 # 600 AD
 {
