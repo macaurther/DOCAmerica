@@ -24062,24 +24062,7 @@ bool CvPlayer::isHasBuildingEffect(BuildingTypes eIndex) const
 
 EraTypes CvPlayer::getSoundtrackEra()
 {
-	ReligionTypes eStateReligion = getStateReligion();
 	EraTypes eCurrentEra = getCurrentEra();
-
-	if (eStateReligion == NO_RELIGION)
-	{
-		if (eCurrentEra == ERA_PRECOLUMBIAN || eCurrentEra == ERA_EXPLORATION || eCurrentEra == ERA_COLONIAL)
-		{
-			switch (getCivilizationType())
-			{
-			case MAYA:
-			case INCA:
-			case AZTECS:
-			case HAWAII:
-				return (EraTypes)ERA_NATIVE_AMERICA;
-			}
-		}
-	}
-
 	return eCurrentEra;
 }
 

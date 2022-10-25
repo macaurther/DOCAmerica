@@ -105,20 +105,6 @@
 					<Civilizations/>
 					<Leaders>
 						<Leader>
-							<LeaderType>LEADER_CHARLES</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-					</Leaders>
-					<Attitudes/>
-					<DiplomacyPowers/>
-					<DiplomacyText>
-						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_CHARLES_1</Text>
-					</DiplomacyText>
-				</Response>
-				<Response>
-					<Civilizations/>
-					<Leaders>
-						<Leader>
 							<LeaderType>LEADER_ALEXANDER_I</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
@@ -470,10 +456,6 @@
 					<Leaders>
 						<Leader>
 							<LeaderType>LEADER_ALFRED</LeaderType>
-							<bLeaderType>1</bLeaderType>
-						</Leader>
-						<Leader>
-							<LeaderType>LEADER_FRANCIS</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>
 						<Leader>

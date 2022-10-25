@@ -60,11 +60,11 @@ def setup():
 ### Constants ###
 
 # initialise bonuses variables
-
-lNewfoundlandCapes = ['''(34, 52), (34, 53), (34, 54), (35, 52), (36, 52), (35, 55), (35, 56), (35, 57), (36, 51), (36, 58), (36, 59)''']
+# MacAurther TODO
+lNewfoundlandCapes = [(34, 52), (34, 53), (34, 54), (35, 52), (36, 52), (35, 55), (35, 56), (35, 57), (36, 51), (36, 58), (36, 59)]
 
 dResourcesDict = {
-	'''(29, 52)  : (1600,  iCow),     # Montreal
+	(29, 52)  : (1600,  iCow),     # Montreal
 	(18, 53)  : (1600,  iCow),     # Alberta
 	(12, 52)  : (1600,  iCow),     # British Columbia
 	(28, 46)  : (1600,  iCow),     # Washington area
@@ -112,18 +112,18 @@ dResourcesDict = {
 	(12, 49)  : (1850,  iRice),    # California
 	(11, 45)  : (1850,  iFish),    # California
 	(1, 38)   : (1850,  iSugar),   # Hawaii
-	(5, 36)   : (1850,  iBanana),  # Hawaii'''
+	(5, 36)   : (1850,  iBanana),  # Hawaii
 }
 
 dSpawnResourcesDict = {
-	'''(17, 41) : (iMexico,    iHorse),
+	(17, 41) : (iMexico,    iHorse),
 	(16, 42) : (iMexico,    iIron),
 	(28, 31) : (iColombia,  iIron),
 	(31, 10) : (iArgentina, iWine),
 	(31, 6)  : (iArgentina, iSheep),
 	(32, 11) : (iArgentina, iIron),
 	(36, 18) : (iBrazil,    iCorn),
-	(42, 18) : (iBrazil,    iFish),'''
+	(42, 18) : (iBrazil,    iFish),
 }
 
 dRemovedResourcesDict = {
@@ -149,15 +149,15 @@ dRemovedFeaturesDict = {
 }
 
 dConquerorPlotTypesDict = {
-	'''(29, 23) : (iInca, PlotTypes.PLOT_HILLS),
+	(29, 23) : (iInca, PlotTypes.PLOT_HILLS),
 	(31, 13) : (iInca, PlotTypes.PLOT_HILLS),
 	(32, 19) : (iInca, PlotTypes.PLOT_HILLS),
-	(27, 29) : (iInca, PlotTypes.PLOT_HILLS),'''
+	(27, 29) : (iInca, PlotTypes.PLOT_HILLS),
 }
 
 dConquerorRemovedFeaturesDict = {
-	'''(27, 30) : iInca,
-	(28, 31) : iInca,'''
+	(27, 30) : iInca,
+	(28, 31) : iInca,
 }
 
 

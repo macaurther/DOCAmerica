@@ -44,10 +44,19 @@
 			<iSoundtrackSpace>0</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ANCIENT_SOUNDTRACK_4</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_4</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_5</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_6</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_7</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_8</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_12</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_PRE_COLUMBIAN_SOUNDTRACK_13</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -96,25 +105,19 @@
 			<iSoundtrackSpace>400</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_ALEXANDER</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_VIKING</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_ROME</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_PELOPONNESIAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_ROME</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_EUROPE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_ROME</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_EUROPE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MOD_CELTIC</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_FANTASY1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_FANTASY2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_ROMAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_DIP_EC_EARLY_PEACE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_DIP_EC_EARLY_WAR</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_DIP_EU_LATE_PEACE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_DIP_EU_LATE_WAR</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_DIP_GR_EARLY_PEACE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_BARBARIAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_DIP_GR_EARLY_WAR</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_4</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_5</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_6</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_7</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_8</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_12</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_EXPLORATION_SOUNDTRACK_13</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -163,26 +166,23 @@
 			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_ALLEGRI_MISERERE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ANONYMOUS_AY_SANTA_MARIA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ANONYMOUS_LA_GAMBA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRUMEL_GLORIA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHANT_DEUS</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHANT_LAUDATE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_CHANT_REGEN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DE_LA_TORRE_ALTA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DESPREZ_EL_GRILLO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DESPREZ_LAMENT</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_LASSUS_ALMA_REDEMPTORIS</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_OCKEGHEM_INTEMERATA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_OCKEGHEM_KYRIE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_ORTIZ_RECERCADA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PALESTRINA_CREDO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PALESTRINA_GLORIA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PRAETORIUS_BALLET</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PRAETORIUS_BRANSLE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_PRAETORIUS_VOLTE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SHEPPARD_MEDIA_VITA</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_4</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_5</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_6</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_7</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_8</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_12</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_13</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_14</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_15</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_16</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_COLONIAL_SOUNDTRACK_17</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -231,25 +231,24 @@
 			<iSoundtrackSpace>160</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_BACH_ALLEGRO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_ALLEGRO_ASSAI</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_ALLEMANDE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BOUREE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_2_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_3_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_4_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_6_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_BRANDENBURG_6_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_GIGUE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_LARGO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_MENUET</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BACH_SARABANDE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_ALLEGRETTO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_ANDANTE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_ROMANCE_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MOZART_ADAGIO</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MOZART_ANDANTE</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_MOZART_ROMANCE</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_4</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_5</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_6</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_7</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_8</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_11</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_12</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_13</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_14</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_15</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_16</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_17</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_REVOLUTIONARY_SOUNDTRACK_18</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -298,22 +297,17 @@
 			<iSoundtrackSpace>120</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_5_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_6_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BEETHOVEN_6_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_3_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_3_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_BRAHMS_HUNGARIAN_16</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_9_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_AMERICAN_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_7</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_10</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_DVORAK_SLAVONIC_12</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_RIMSKY_KORSAKOV_SCHEHERAZADE_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SAINT_SAENS_ALLEGRETTO</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_1</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_2</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_3</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_4</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_5</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_6</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_7</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_8</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_9</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_10</EraInfoSoundtrack>
+				<EraInfoSoundtrack>AS2D_INDUSTRIAL_SOUNDTRACK_11</EraInfoSoundtrack>
 			</EraInfoSoundtracks>
 			<CitySoundscapes>
 				<CitySoundscape>
@@ -455,222 +449,6 @@
 			</CitySoundscapes>
 			<AudioUnitVictoryScript>AS2D_VICTORY_LATE</AudioUnitVictoryScript>
 			<AudioUnitDefeatScript>AS2D_LOSS_LATE</AudioUnitDefeatScript>
-		</EraInfo>
-		<EraInfo>
-			<Type>ERA_MIDDLE_EAST</Type>
-			<Description>TXT_KEY_ERA_MIDDLE_EAST</Description>
-			<Strategy>TXT_KEY_ERA_MIDDLE_EAST_STRATEGY</Strategy>
-			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
-			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
-			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
-			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
-			<iStartingDefenseUnits>2</iStartingDefenseUnits>
-			<iStartingWorkerUnits>1</iStartingWorkerUnits>
-			<iStartingExploreUnits>1</iStartingExploreUnits>
-			<iStartingGold>25</iStartingGold>
-			<iFreePopulation>0</iFreePopulation>
-			<iStartPercent>25</iStartPercent>
-			<iGrowthPercent>100</iGrowthPercent>
-			<iTrainPercent>100</iTrainPercent>
-			<iConstructPercent>100</iConstructPercent>
-			<iCreatePercent>100</iCreatePercent>
-			<iResearchPercent>100</iResearchPercent>
-			<iBuildPercent>100</iBuildPercent>
-			<iImprovementPercent>100</iImprovementPercent>
-			<iGreatPeoplePercent>100</iGreatPeoplePercent>
-			<iCulturePercent>100</iCulturePercent>
-			<iAnarchyPercent>40</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>600</iSoundtrackSpace>
-			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
-			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_MID_EAST</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_AFRICA</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MOD_MID_EAST</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_MID_EAST</EraInfoSoundtrack>
-			</EraInfoSoundtracks>
-			<CitySoundscapes>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_SMALL</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_LARGE</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_LARGE_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-			</CitySoundscapes>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
-		</EraInfo>
-		<EraInfo>
-			<Type>ERA_EAST_ASIA</Type>
-			<Description>TXT_KEY_ERA_EAST_ASIA</Description>
-			<Strategy>TXT_KEY_ERA_EAST_ASIA_STRATEGY</Strategy>
-			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
-			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
-			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
-			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
-			<iStartingDefenseUnits>2</iStartingDefenseUnits>
-			<iStartingWorkerUnits>1</iStartingWorkerUnits>
-			<iStartingExploreUnits>1</iStartingExploreUnits>
-			<iStartingGold>25</iStartingGold>
-			<iFreePopulation>0</iFreePopulation>
-			<iStartPercent>25</iStartPercent>
-			<iGrowthPercent>100</iGrowthPercent>
-			<iTrainPercent>100</iTrainPercent>
-			<iConstructPercent>100</iConstructPercent>
-			<iCreatePercent>100</iCreatePercent>
-			<iResearchPercent>100</iResearchPercent>
-			<iBuildPercent>100</iBuildPercent>
-			<iImprovementPercent>100</iImprovementPercent>
-			<iGreatPeoplePercent>100</iGreatPeoplePercent>
-			<iCulturePercent>100</iCulturePercent>
-			<iAnarchyPercent>40</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>500</iSoundtrackSpace>
-			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
-			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_ADAM</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_GENGHIS_KHAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_UNI</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_MID_ORIENTAL</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_ASIAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MOD_ASIAN</EraInfoSoundtrack>
-			</EraInfoSoundtracks>
-			<CitySoundscapes>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_SMALL</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_LARGE</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_LARGE_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-			</CitySoundscapes>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
-		</EraInfo>
-		<EraInfo>
-			<Type>ERA_SOUTH_ASIA</Type>
-			<Description>TXT_KEY_ERA_SOUTH_ASIA</Description>
-			<Strategy>TXT_KEY_ERA_SOUTH_ASIA_STRATEGY</Strategy>
-			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
-			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
-			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
-			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
-			<iStartingDefenseUnits>2</iStartingDefenseUnits>
-			<iStartingWorkerUnits>1</iStartingWorkerUnits>
-			<iStartingExploreUnits>1</iStartingExploreUnits>
-			<iStartingGold>25</iStartingGold>
-			<iFreePopulation>0</iFreePopulation>
-			<iStartPercent>25</iStartPercent>
-			<iGrowthPercent>100</iGrowthPercent>
-			<iTrainPercent>100</iTrainPercent>
-			<iConstructPercent>100</iConstructPercent>
-			<iCreatePercent>100</iCreatePercent>
-			<iResearchPercent>100</iResearchPercent>
-			<iBuildPercent>100</iBuildPercent>
-			<iImprovementPercent>100</iImprovementPercent>
-			<iGreatPeoplePercent>100</iGreatPeoplePercent>
-			<iCulturePercent>100</iCulturePercent>
-			<iAnarchyPercent>40</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>700</iSoundtrackSpace>
-			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
-			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_ADAM</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_GENGHIS_KHAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CHINESE_UNI</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CONQUESTS_JAPANESE_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_ANC_MID_ORIENTAL</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MID_ASIAN</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_CIV_III_MOD_ASIAN</EraInfoSoundtrack>
-			</EraInfoSoundtracks>
-			<CitySoundscapes>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_SMALL</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_LARGE</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_LARGE_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-			</CitySoundscapes>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
-		</EraInfo>
-		<EraInfo>
-			<Type>ERA_NATIVE_AMERICA</Type>
-			<Description>TXT_KEY_ERA_NATIVE_AMERICA</Description>
-			<Strategy>TXT_KEY_ERA_NATIVE_AMERICA_STRATEGY</Strategy>
-			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
-			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
-			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
-			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
-			<iStartingDefenseUnits>2</iStartingDefenseUnits>
-			<iStartingWorkerUnits>1</iStartingWorkerUnits>
-			<iStartingExploreUnits>1</iStartingExploreUnits>
-			<iStartingGold>25</iStartingGold>
-			<iFreePopulation>0</iFreePopulation>
-			<iStartPercent>25</iStartPercent>
-			<iGrowthPercent>100</iGrowthPercent>
-			<iTrainPercent>100</iTrainPercent>
-			<iConstructPercent>100</iConstructPercent>
-			<iCreatePercent>100</iCreatePercent>
-			<iResearchPercent>100</iResearchPercent>
-			<iBuildPercent>100</iBuildPercent>
-			<iImprovementPercent>100</iImprovementPercent>
-			<iGreatPeoplePercent>100</iGreatPeoplePercent>
-			<iCulturePercent>100</iCulturePercent>
-			<iAnarchyPercent>40</iAnarchyPercent>
-			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>800</iSoundtrackSpace>
-			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
-			<EraInfoSoundtracks>
-				<EraInfoSoundtrack>AS2D_SONG_NATIVE_AMERICAN_1</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_NATIVE_AMERICAN_2</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_NATIVE_AMERICAN_3</EraInfoSoundtrack>
-				<EraInfoSoundtrack>AS2D_SONG_NATIVE_AMERICAN_4</EraInfoSoundtrack>
-			</EraInfoSoundtracks>
-			<CitySoundscapes>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_SMALL</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_MEDIUM</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_SMALL_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-				<CitySoundscape>
-					<CitySizeType>CITYSIZE_LARGE</CitySizeType>
-					<SoundscapeScript>ASSS_CITY_MIDDLE_LARGE_SELECT_AMB</SoundscapeScript>
-				</CitySoundscape>
-			</CitySoundscapes>
-			<AudioUnitVictoryScript>AS2D_VICTORY_MIDDLE</AudioUnitVictoryScript>
-			<AudioUnitDefeatScript>AS2D_LOSS_MIDDLE</AudioUnitDefeatScript>
 		</EraInfo>
 	</EraInfos>
 </Civ4EraInfos>
