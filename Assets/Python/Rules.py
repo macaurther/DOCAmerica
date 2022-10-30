@@ -128,7 +128,7 @@ def captureSlaves(winningUnit, losingUnit):
 		captureUnit(losingUnit, winningUnit, iSlave, 100)
 		return
 	
-	if players.major().alive().none(lambda p: team(p).isHasTech(iOldWorldKnowledge)):
+	if players.major().alive().none(lambda p: team(p).isHasTech(iOldWorldTactics)):
 		return
 		
 	if civ(losingUnit) == iNative:

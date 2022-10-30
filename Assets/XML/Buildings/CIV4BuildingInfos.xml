@@ -506,7 +506,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STABLE</ArtDefineTag>
 			<ObsoleteTech>TECH_POWER_PROJECTION</ObsoleteTech>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -639,7 +639,7 @@
 			<Strategy>TXT_KEY_BUILDING_THEATRE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_THEATRE</ArtDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			<iCost>60</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1057,7 +1057,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FORGE</ArtDefineTag>
 			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1264,7 +1264,7 @@
 			<Strategy>TXT_KEY_BUILDING_PHARMACY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PHARMACY</ArtDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5882,7 +5882,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ACADEMY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_ACADEMY</MovieDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5976,7 +5976,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MANUFACTORY</ArtDefineTag>
 			<MovieDefineTag>NONE</MovieDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6024,7 +6024,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARMOURY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_ARMOURY</MovieDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>

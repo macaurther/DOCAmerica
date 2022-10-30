@@ -2821,15 +2821,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE</Tag>
-		<English>Old World Knowledge</English>
-		<French>Old World Knowledge</French>
-		<German>Old World Knowledge</German>
-		<Italian>Old World Knowledge</Italian>
-		<Spanish>Old World Knowledge</Spanish>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_TACTICS</Tag>
+		<English>Old World Tactics</English>
+		<French>Old World Tactics</French>
+		<German>Old World Tactics</German>
+		<Italian>Old World Tactics</Italian>
+		<Spanish>Old World Tactics</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_TACTICS_QUOTE</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>
@@ -2837,7 +2837,7 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_TACTICS_PEDIA</Tag>
 		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
@@ -2845,6 +2845,59 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_SCIENCE</Tag>
+		<English>Old World Science</English>
+		<French>Old World Science</French>
+		<German>Old World Science</German>
+		<Italian>Old World Science</Italian>
+		<Spanish>Old World Science</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_SCIENCE_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_SCIENCE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_CULTURE</Tag>
+		<English>Old World Culture</English>
+		<French>Old World Culture</French>
+		<German>Old World Culture</German>
+		<Italian>Old World Culture</Italian>
+		<Spanish>Old World Culture</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_CULTURE_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_CULTURE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 
 
 	<TEXT>

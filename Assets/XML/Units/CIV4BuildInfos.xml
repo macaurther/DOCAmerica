@@ -287,7 +287,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -324,7 +324,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -1039,7 +1039,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -1077,7 +1077,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>

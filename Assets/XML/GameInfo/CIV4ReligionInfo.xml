@@ -11,7 +11,7 @@
 			<Description>TXT_KEY_RELIGION_JUDAISM</Description>
 			<Adjective>TXT_KEY_RELIGION_JUDAISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_JUDAISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_JEWISH_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>50</iSpreadFactor>
@@ -43,7 +43,7 @@
 			<Description>TXT_KEY_RELIGION_ORTHODOXY</Description>
 			<Adjective>TXT_KEY_RELIGION_ORTHODOXY_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_ORTHODOXY_PEDIA</Civilopedia>
-			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_ORTHODOX_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>1</iFreeUnits>
 			<iSpreadFactor>70</iSpreadFactor>
@@ -75,7 +75,7 @@
 			<Description>TXT_KEY_RELIGION_CATHOLICISM</Description>
 			<Adjective>TXT_KEY_RELIGION_CATHOLICISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_CATHOLICISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_CATHOLIC_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>1</iFreeUnits>
 			<iSpreadFactor>100</iSpreadFactor>
@@ -139,7 +139,7 @@
 			<Description>TXT_KEY_RELIGION_ISLAM</Description>
 			<Adjective>TXT_KEY_RELIGION_ISLAM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_ISLAM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_ISLAMIC_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>1</iFreeUnits>
 			<iSpreadFactor>150</iSpreadFactor>
@@ -202,7 +202,7 @@
 			<Description>TXT_KEY_RELIGION_BUDDHISM</Description>
 			<Adjective>TXT_KEY_RELIGION_BUDDHISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_BUDDHISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_BUDDHIST_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>2</iFreeUnits>
 			<iSpreadFactor>140</iSpreadFactor>
@@ -234,7 +234,7 @@
 			<Description>TXT_KEY_RELIGION_CONFUCIANISM</Description>
 			<Adjective>TXT_KEY_RELIGION_CONFUCIANISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_CONFUCIANISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_OLD_WORLD_KNOWLEDGE</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_CONFUCIAN_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>1</iFreeUnits>
 			<iSpreadFactor>70</iSpreadFactor>

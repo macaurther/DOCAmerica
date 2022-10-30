@@ -385,7 +385,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -557,7 +557,7 @@
 			<OrPreReqs/>
 			<AndPreReqs/>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -1095,7 +1095,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -2070,7 +2070,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -2942,7 +2942,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3108,7 +3108,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3383,7 +3383,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3466,7 +3466,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3549,7 +3549,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3632,7 +3632,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3746,7 +3746,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3829,7 +3829,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3916,7 +3916,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -5032,7 +5032,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -5384,7 +5384,7 @@
 				<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</AndPreReqs>
 			<ObsoleteTechs/>
 			<bRecurring>0</bRecurring>
@@ -7101,7 +7101,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -7292,7 +7292,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -7461,7 +7461,7 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -8043,7 +8043,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -8469,7 +8469,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -8815,7 +8815,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -9728,7 +9728,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -11239,7 +11239,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -13261,7 +13261,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -13851,7 +13851,7 @@
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -13936,7 +13936,7 @@
 			<OrPreReqs/>
 			<AndPreReqs/>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -14018,7 +14018,7 @@
 				<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			</AndPreReqs>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -14103,7 +14103,7 @@
 			<OrPreReqs/>
 			<AndPreReqs/>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_OLD_WORLD_KNOWLEDGE</ObsoleteTech>
+				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -15261,7 +15261,7 @@
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs/>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</AndPreReqs>
 			<ObsoleteTechs>
 				<ObsoleteTech>TECH_SCIENTIFIC_METHOD</ObsoleteTech>
@@ -15853,7 +15853,7 @@
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs/>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</AndPreReqs>
 			<ObsoleteTechs>
 				<ObsoleteTech>TECH_TELEVISION</ObsoleteTech>

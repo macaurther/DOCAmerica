@@ -414,12 +414,12 @@ iNumCorporations = 9
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 143
+iNumTechs = 145
 #				2				3				4				5				6				7
 (iTanning, 		iMining, 		iPottery, 		iPastoralism, 	iAgriculture, 	iMythology, 	iSailing,
 iArtisanry, 	iMasonry, 		iMathematics, 	iProperty, 		iCeremony, 		iPriesthood, 	iNavigation,
 iSmelting, 		iConstruction, 	iAesthetics, 	iCalendar, 		iWriting, 		iLaw, 			iMedicine,
-iOldWorldKnowledge,
+iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iHumanities, 	iPrinting, 		iJudiciary,
 iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iGovernors,
 iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iCharter, 		iCommunity, 	iIndentures,

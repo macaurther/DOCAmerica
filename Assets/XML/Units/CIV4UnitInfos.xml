@@ -1226,7 +1226,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2531,10 +2531,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
-			</TechTypes>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -2794,7 +2791,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -4591,10 +4588,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_ARTISANRY</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_TANNING</PrereqTech>
-			</TechTypes>
+			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4685,7 +4679,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_SMELTING</PrereqTech>
+			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4773,7 +4767,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_TANNING</PrereqTech>
 			<TechTypes>
-				<PrereqTech>TECH_TANNING</PrereqTech>
+				<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			</TechTypes>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4876,7 +4870,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<TechTypes>
-				<PrereqTech>TECH_TANNING</PrereqTech>
+				<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			</TechTypes>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4975,7 +4969,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5066,7 +5060,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -5155,7 +5149,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>70</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7284,7 +7278,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<iCost>25</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -7306,7 +7300,7 @@
 			<FeaturePassableTechs>
 				<FeaturePassableTech>
 					<FeatureType>FEATURE_CAPE</FeatureType>
-					<PassableTech>TECH_OLD_WORLD_KNOWLEDGE</PassableTech>
+					<PassableTech>TECH_CARTOGRAPHY</PassableTech>
 				</FeaturePassableTech>
 			</FeaturePassableTechs>
 			<iCombat>2</iCombat>

@@ -1966,7 +1966,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SPICES_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SPICES</ArtDefineTag>
-			<TechCityTrade>TECH_OLD_WORLD_KNOWLEDGE</TechCityTrade>
+			<TechCityTrade>TECH_CARTOGRAPHY</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>

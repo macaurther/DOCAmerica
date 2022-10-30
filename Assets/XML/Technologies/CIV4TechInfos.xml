@@ -453,6 +453,12 @@
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>2</iGridX>
 			<iGridY>13</iGridY>
+			<TerrainTrades>
+				<TerrainTrade>
+					<TerrainType>TERRAIN_COAST</TerrainType>
+					<bTerrainTrade>1</bTerrainTrade>
+				</TerrainTrade>
+			</TerrainTrades>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -630,11 +636,6 @@
 			<bGoodyTech>1</bGoodyTech>
 			<iGridX>3</iGridX>
 			<iGridY>9</iGridY>
-			<CommerceFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>1</bFlexible>
-			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -741,10 +742,45 @@
 <!-- Cost 200/200/225/225/225/250/250, iAsset 16 -->
 
 		<TechInfo>
-			<Type>TECH_OLD_WORLD_KNOWLEDGE</Type>
-			<Description>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE</Description>
-			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_KNOWLEDGE_PEDIA</Civilopedia>
+			<Type>TECH_OLD_WORLD_TACTICS</Type>
+			<Description>TXT_KEY_TECH_OLD_WORLD_TACTICS</Description>
+			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_TACTICS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
+			<iCost>80</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<Era>ERA_EXPLORATION</Era>
+			<iAsset>4</iAsset>
+			<iPower>4</iPower>
+			<bTrade>1</bTrade>
+			<bGoodyTech>1</bGoodyTech>
+			<iGridX>4</iGridX>
+			<iGridY>3</iGridY>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+			</Flavors>
+			<AndPreReqs>
+				<PrereqTech>TECH_SMELTING</PrereqTech>
+				<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+				<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			</AndPreReqs>
+			<Quote>TXT_KEY_TECH_OLD_WORLD_TACTICS_QUOTE</Quote>
+			<Sound>AS2D_TECH_GENERIC</Sound>
+			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,1,6</Button>
+		</TechInfo>
+
+		<TechInfo>
+			<Type>TECH_OLD_WORLD_SCIENCE</Type>
+			<Description>TXT_KEY_TECH_OLD_WORLD_SCIENCE</Description>
+			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_SCIENCE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
@@ -756,7 +792,7 @@
 			<iGridY>7</iGridY>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 				<Flavor>
@@ -764,18 +800,47 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_SMELTING</PrereqTech>
-				<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-				<PrereqTech>TECH_LAW</PrereqTech>
-				<PrereqTech>TECH_MEDICINE</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_AESTHETICS</PrereqTech>
 				<PrereqTech>TECH_CALENDAR</PrereqTech>
 				<PrereqTech>TECH_WRITING</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_TRIANGULAR_TRADE_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_OLD_WORLD_SCIENCE_QUOTE</Quote>
+			<Sound>AS2D_TECH_GENERIC</Sound>
+			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
+			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+		</TechInfo>
+
+		<TechInfo>
+			<Type>TECH_OLD_WORLD_CULTURE</Type>
+			<Description>TXT_KEY_TECH_OLD_WORLD_CULTURE</Description>
+			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_CULTURE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_CULTURE</Advisor>
+			<iCost>80</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<Era>ERA_EXPLORATION</Era>
+			<iAsset>4</iAsset>
+			<iPower>4</iPower>
+			<bTrade>1</bTrade>
+			<bGoodyTech>1</bGoodyTech>
+			<iGridX>4</iGridX>
+			<iGridY>11</iGridY>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+			</Flavors>
+			<AndPreReqs>
+				<PrereqTech>TECH_MEDICINE</PrereqTech>
+				<PrereqTech>TECH_LAW</PrereqTech>
+				<PrereqTech>TECH_WRITING</PrereqTech>
+			</AndPreReqs>
+			<Quote>TXT_KEY_TECH_OLD_WORLD_CULTURE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
@@ -810,7 +875,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_GUNPOWDER_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -846,7 +911,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_COMPANIES_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -874,7 +939,8 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_FINANCE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -907,7 +973,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CARTOGRAPHY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -947,7 +1013,8 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_HUMANITIES_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -966,8 +1033,14 @@
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
+			<bTechTrading>1</bTechTrading>
 			<iGridX>5</iGridX>
 			<iGridY>11</iGridY>
+			<CommerceFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>1</bFlexible>
+			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -987,7 +1060,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_PRINTING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -1023,7 +1096,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_KNOWLEDGE</PrereqTech>
+				<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_JUDICIARY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -1183,8 +1256,15 @@
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
 			<bGoodyTech>1</bGoodyTech>
+			<bGoldTrading>1</bGoldTrading>
 			<iGridX>6</iGridX>
 			<iGridY>9</iGridY>
+			<CommerceFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>1</bFlexible>
+			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -1250,7 +1330,8 @@
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
-			<bGoodyTech>1</bGoodyTech>
+			<bGoodyTech>0</bGoodyTech>
+			<bVassalTrading>1</bVassalTrading>
 			<iGridX>6</iGridX>
 			<iGridY>13</iGridY>
 			<Flavors>
@@ -1377,7 +1458,7 @@
 			<Quote>TXT_KEY_TECH_COLONIZATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,6,7</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1809,7 +1890,7 @@
 			<Quote>TXT_KEY_TECH_TACTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,2,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2145,7 +2226,7 @@
 			<Quote>TXT_KEY_TECH_NEWSPAPERS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,3,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2326,7 +2407,7 @@
 			<Quote>TXT_KEY_TECH_REGIMENTS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,5,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2394,7 +2475,7 @@
 			<Quote>TXT_KEY_TECH_POSTAL_SERVICE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,6,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2428,7 +2509,7 @@
 			<Quote>TXT_KEY_TECH_METEOROLOGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,7,6</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2534,7 +2615,7 @@
 			<Quote>TXT_KEY_TECH_INDEPENDENCE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,4,6</Button>
 		</TechInfo>
 
 
@@ -2624,6 +2705,7 @@
 			<iAsset>48</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
+			<bIrrigation>1</bIrrigation>
 			<iGridX>12</iGridX>
 			<iGridY>5</iGridY>
 			<Flavors>
@@ -2753,7 +2835,7 @@
 			<Quote>TXT_KEY_TECH_RIGHTS_OF_MAN_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,1,7</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2786,7 +2868,7 @@
 			<Quote>TXT_KEY_TECH_FEDERALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,3,7</Button>
 		</TechInfo>
 
 <!-- #13 -->
