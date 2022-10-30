@@ -7,19 +7,19 @@ lPeakExceptions = []
 
 dCapitals = CivDict({
 iMaya :			(36, 58), # Tikal
-iTeotihuacan :	(29, 61), # Teotihuacan
+iTeotihuacan :	(28, 61), # Teotihuacan
 iTiwanaku :		(52, 33), # Tiwanaku
 iWari :			(46, 39), # Huari
 iMississippi :	(36, 78), # Cahokia
 iPuebloan :		(25, 73), # Pueblo Bonito
-iMuisca :		(49, 49), # Hunza
+iMuisca :		(50, 48), # Hunza
 iNorse :		(77, 104), # Reykjavik
-iChimu :		(43, 43), # Chan Chan
+iChimu :		(43, 44), # Chan Chan
 iInuit :		(6, 104), # North Alaska
 iInca :			(49, 36), # Cuzco
 iAztecs :		(30, 60), # Tenochtitlan
 iSpain :		(55, 59), # Santo Domingo
-iIroquois :		(53, 84), # Onondaga
+iIroquois :		(51, 84), # Onondaga
 iPortugal :		(67, 27), # Sao Paulo
 iEngland :		(50, 77), # Jamestown
 iFrance :		(58, 89), # Quebec
@@ -56,13 +56,13 @@ iInca :		(36, 58),	# Lima
 
 dBirthArea = CivDict({
 iMaya : 		((35, 57), 	(37, 59)),
-iTeotihuacan :	((28, 60), 	(30, 62)),
+iTeotihuacan :	((27, 60), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((46, 35), 	(48, 39)),
 iMississippi :	((35, 75), 	(40, 79)),
 iPuebloan :		((24, 72), 	(26, 76)),
-iMuisca :		((48, 48), 	(49, 51)),
-iNorse :		((0, 0), 	(0, 0)),
+iMuisca :		((49, 47), 	(51, 49)),
+iNorse :		((75, 103), (77, 106)),
 iChimu :		((43, 40), 	(44, 44)),
 iInuit :		((4, 103), 	(17, 105)),
 iInca : 		((47, 34), 	(51, 37)),
@@ -100,12 +100,12 @@ iSpain :		[],
 
 dCoreArea = CivDict({
 iMaya : 		((34, 57), 	(37, 59)),
-iTeotihuacan :	((28, 60), 	(30, 62)),
+iTeotihuacan :	((27, 60), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((46, 35), 	(48, 39)),
 iMississippi :	((35, 75), 	(40, 79)),
 iPuebloan :		((24, 72), 	(26, 76)),
-iMuisca :		((48, 48), 	(49, 51)),
+iMuisca :		((49, 47), 	(51, 49)),
 iNorse :		((0, 0), 	(0, 0)),	#No core for colonies
 iChimu :		((43, 40), 	(44, 44)),
 iInuit :		((4, 103), 	(17, 105)),
@@ -147,12 +147,12 @@ dPeriodCoreAreaExceptions = appenddict({
 #TODO
 dNormalArea = CivDict({
 iMaya : 		((36, 58), 	(36, 58)),
-iTeotihuacan :	((28, 60), 	(30, 62)),
+iTeotihuacan :	((27, 60), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((46, 35), 	(48, 39)),
 iMississippi :	((35, 75), 	(40, 79)),
 iPuebloan :		((24, 72), 	(26, 76)),
-iMuisca :		((48, 48), 	(49, 51)),
+iMuisca :		((49, 47), 	(51, 49)),
 iNorse :		((0, 0), 	(0, 0)),
 iChimu :		((43, 40), 	(44, 44)),
 iInuit :		((4, 103), 	(17, 105)),
@@ -194,12 +194,12 @@ dPeriodNormalAreaExceptions = appenddict({
 #TODO
 dBroaderArea = CivDict({
 iMaya : 		((36, 58), 	(36, 58)),
-iTeotihuacan :	((28, 60), 	(30, 62)),
+iTeotihuacan :	((27, 60), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((46, 35), 	(48, 39)),
 iMississippi :	((35, 75), 	(40, 79)),
 iPuebloan :		((24, 72), 	(26, 76)),
-iMuisca :		((48, 48), 	(49, 51)),
+iMuisca :		((49, 47), 	(51, 49)),
 iNorse :		((0, 0), 	(0, 0)),
 iChimu :		((43, 40), 	(44, 44)),
 iInuit :		((4, 103), 	(17, 105)),

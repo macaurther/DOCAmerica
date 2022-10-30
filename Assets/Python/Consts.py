@@ -494,10 +494,14 @@ iAttackSea, iFerry, iEscort, iExplore, iShockCity, iSiege, iCitySiege, iExploreS
 iWork, iMissionary) = range(iNumUnitRoles)
 
 # initialise bonuses variables to bonuses IDs from WBS
-iNumBonuses = 41
-(iAluminium, iCamel, iCoal, iCopper, iHorse, iIron, iMarble, iOil, iStone, iUranium, iBanana, iClam, iCorn, iCow, iCrab,
-iDeer, iFish, iPig, iRice, iSheep, iWheat, iCoffee, iCotton, iDye, iFur, iGems, iGold, iIncense, iIvory, iPearls, iSilk, iSilver, iSpices,
-iSugar, iTea, iTobacco, iWine, iWhales, iSoccer, iSongs, iMovies) = range(iNumBonuses)
+iNumBonuses = 58
+#				2				3				4				5				6				7				8				9				10
+(iAluminium, 	iAmber,			iCamel, 		iCitrus,		iCoal, 			iCopper, 		iDates,			iHorse, 		iIron, 			iMarble, 
+iOil, 			iStone, 		iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iDeer, 			iFish, 
+iPig, 			iPotato,		iRice, 			iSheep, 		iWheat, 		iCocoa,			iCoffee, 		iCotton, 		iDye, 			iFur, 
+iGems, 			iGold, 			iIncense, 		iIvory, 		iJade,			iMillet,		iObsidian,		iOlives,		iOpium,			iPearls, 
+iRareEarths,	iRubber,		iSalt,			iSilk, 			iSilver, 		iSpices,		iSugar, 		iTea, 			iTimber,		iTobacco, 
+iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies, 		iLlama, 		iShrimp, 		iCochineal) = range(iNumBonuses)
 # Buildings
 
 iNumBuildings = 173
