@@ -13133,7 +13133,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_HEAVY_SPEARMAN</UnitClass>
+					<UnitClass>UNITCLASS_PIKEMAN</UnitClass>
 					<UnitPromotion>PROMOTION_SHOCK</UnitPromotion>
 				</UnitClassPromotion>
 			</UnitClassPromotions>
@@ -17213,7 +17213,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_SWORDSMAN</UnitClass>
+					<UnitClass>UNITCLASS_AXEMAN</UnitClass>
 					<UnitPromotion>PROMOTION_SHOCK</UnitPromotion>
 				</UnitClassPromotion>
 			</UnitClassPromotions>
@@ -21434,7 +21434,7 @@
 			<UnitCombatPromotions/>
 			<UnitClassPromotions>
 				<UnitClassPromotion>
-					<UnitClass>UNITCLASS_SWORDSMAN</UnitClass>
+					<UnitClass>UNITCLASS_AXEMAN</UnitClass>
 					<UnitPromotion>PROMOTION_CITY_RAIDER1</UnitPromotion>
 				</UnitClassPromotion>
 			</UnitClassPromotions>

@@ -22,16 +22,12 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ARGENTINE_GRENADIER_CAVALRY</Tag>
-		<English>Grenadier Cavalry</English>
-		<French>
-			<Text>Grenadier &#224; cheval</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Grenadier Cavalry</German>
-		<Italian>Grenadier Cavalry</Italian>
-		<Spanish>Grenadier Cavalry</Spanish>
+		<Tag>TXT_KEY_UNIT_ARGENTINE_MOUNTED_GRENADIER</Tag>
+		<English>Mounted Grenadier</English>
+		<French>Mounted Grenadier</French>
+		<German>Mounted Grenadier</German>
+		<Italian>Mounted Grenadier</Italian>
+		<Spanish>Mounted Grenadier</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARCHER_STRATEGY</Tag>
@@ -42,7 +38,7 @@
 		<Spanish>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, have a defensive bonus in cities, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ARGENTINE_GRENADIER_CAVALRY_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_ARGENTINE_MOUNTED_GRENADIER_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</English>
 		<French>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</French>
 		<German>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</German>
@@ -750,7 +746,7 @@
 		<Spanish>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_DUTCH_EAST_INDIAMAN</Tag>
+		<Tag>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN</Tag>
 		<English>East Indiaman</English>
 		<French>
 			<Text>Indiaman</Text>
@@ -774,12 +770,12 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_DUTCH_EAST_INDIAMAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]East Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</English>
-		<French>The [COLOR_UNIT_TEXT]East Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</French>
-		<German>The [COLOR_UNIT_TEXT]East Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</German>
-		<Italian>The [COLOR_UNIT_TEXT]East Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]East Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</Spanish>
+		<Tag>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</English>
+		<French>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</French>
+		<German>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</German>
+		<Italian>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_AMERICAN_DOG_SOLDIER</Tag>
@@ -822,24 +818,24 @@
 		<Spanish>[COLOR_UNIT_TEXT]Arquebusiers[COLOR_REVERT] are the first [COLOR_UNIT_TEXT]Gunpowder Unit[COLOR_REVERT] available.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_RELIGIOUS_PERSECUTOR</Tag>
-		<English>Religious Persecutor</English>
+		<Tag>TXT_KEY_UNIT_INQUISITOR</Tag>
+		<English>Inquisitor</English>
 		<French>
 			<Text>Inquisiteur religieux</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Religious Persecutor</German>
-		<Italian>Religious Persecutor</Italian>
-		<Spanish>Religious Persecutor</Spanish>
+		<German>Inquisitor</German>
+		<Italian>Inquisitor</Italian>
+		<Spanish>Inquisitor</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_RELIGIOUS_PERSECUTOR_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Religious Persecutors[COLOR_REVERT] can remove non-state religions from a city.</English>
-		<French>[COLOR_UNIT_TEXT]Religious Persecutors[COLOR_REVERT] can remove non-state religions from a city.</French>
-		<German>[COLOR_UNIT_TEXT]Religious Persecutors[COLOR_REVERT] can remove non-state religions from a city.</German>
-		<Italian>[COLOR_UNIT_TEXT]Religious Persecutors[COLOR_REVERT] can remove non-state religions from a city.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Religious Persecutors[COLOR_REVERT] can remove non-state religions from a city.</Spanish>
+		<Tag>TXT_KEY_UNIT_INQUISITOR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Inquisitors[COLOR_REVERT] can remove non-state religions from a city.</English>
+		<French>[COLOR_UNIT_TEXT]Inquisitors[COLOR_REVERT] can remove non-state religions from a city.</French>
+		<German>[COLOR_UNIT_TEXT]Inquisitors[COLOR_REVERT] can remove non-state religions from a city.</German>
+		<Italian>[COLOR_UNIT_TEXT]Inquisitors[COLOR_REVERT] can remove non-state religions from a city.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Inquisitors[COLOR_REVERT] can remove non-state religions from a city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SCOUT_STRATEGY</Tag>
@@ -1790,7 +1786,7 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO</Tag>
+		<Tag>TXT_KEY_UNIT_TERCIO</Tag>
 		<English>Tercio</English>
 		<French>
 			<Text>Tercio</Text>
@@ -1802,7 +1798,7 @@
 		<Spanish>Tercio</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SPANISH_TERCIO_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_TERCIO_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</English>
 		<French>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</French>
 		<German>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</German>
@@ -1810,7 +1806,7 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_GERMAN_FUSILIER</Tag>
+		<Tag>TXT_KEY_UNIT_FUSILIER</Tag>
 		<English>Fusilier</English>
 		<French>
 			<Text>Fusilier prussien</Text>
@@ -1822,7 +1818,7 @@
 		<Spanish>Fusilier</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_GERMAN_FUSILIER_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_FUSILIER_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</English>
 		<French>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</French>
 		<German>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</German>
@@ -1922,20 +1918,20 @@
 		<Spanish>[[ICON_BULLET]+1 [COLOR_UNIT_TEXT]Great Prophet Points[COLOR_REVERT] per turn in the capital when stationed in a foreign city</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_WARI_PICTA_AUCAC</Tag>
-		<English>Picta Aucac</English>
-		<French>Picta Aucac</French>
-		<German>Picta Aucac</German>
-		<Italian>Picta Aucac</Italian>
-		<Spanish>Picta Aucac</Spanish>
+		<Tag>TXT_KEY_UNIT_WARI_PICTA</Tag>
+		<English>Picta</English>
+		<French>Picta</French>
+		<German>Picta</German>
+		<Italian>Picta</Italian>
+		<Spanish>Picta</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_CHIMU_SC_AUCAC</Tag>
-		<English>Suchuc Chiqui Aucac</English>
-		<French>Suchuc Chiqui Aucac</French>
-		<German>Suchuc Chiqui Aucac</German>
-		<Italian>Suchuc Chiqui Aucac</Italian>
-		<Spanish>Suchuc Chiqui Aucac</Spanish>
+		<Tag>TXT_KEY_UNIT_CHIMU_SUCHUC_CHIQUI</Tag>
+		<English>Suchuc Chiqui</English>
+		<French>Suchuc Chiqui</French>
+		<German>Suchuc Chiqui</German>
+		<Italian>Suchuc Chiqui</Italian>
+		<Spanish>Suchuc Chiqui</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER</Tag>
@@ -1962,12 +1958,12 @@
 		<Spanish>[ICON_BULLET]Can settle on Ice (along Coast)</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA_WARRIOR</Tag>
-		<English>Guecha Warrior</English>
-		<French>Guecha Warrior</French>
-		<German>Guecha Warrior</German>
-		<Italian>Guecha Warrior</Italian>
-		<Spanish>Guecha Warrior</Spanish>
+		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA</Tag>
+		<English>Guecha</English>
+		<French>Guecha</French>
+		<German>Guecha</German>
+		<Italian>Guecha</Italian>
+		<Spanish>Guecha</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TEOTIHUACAN_ARTISAN</Tag>
@@ -2020,6 +2016,613 @@
 		<German>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</German>
 		<Italian>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</Italian>
 		<Spanish>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUEBLOAN_CLIFF_DWELLER</Tag>
+		<English>Cliff Dweller</English>
+		<French>Cliff Dweller</French>
+		<German>Cliff Dweller</German>
+		<Italian>Cliff Dweller</Italian>
+		<Spanish>Cliff Dweller</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUEBLOAN_CLIFF_DWELLER_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUEBLOAN_CLIFF_DWELLER_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI</Tag>
+		<English>Promyshlenniki</English>
+		<French>Promyshlenniki</French>
+		<German>Promyshlenniki</German>
+		<Italian>Promyshlenniki</Italian>
+		<Spanish>Promyshlenniki</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS</Tag>
+		<English>Coureur des Bois</English>
+		<French>Coureur des Bois</French>
+		<German>Coureur des Bois</German>
+		<Italian>Coureur des Bois</Italian>
+		<Spanish>Coureur des Bois</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE</Tag>
+		<English>Armed Brave</English>
+		<French>Armed Brave</French>
+		<German>Armed Brave</German>
+		<Italian>Armed Brave</Italian>
+		<Spanish>Armed Brave</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARMED_SLAVE</Tag>
+		<English>Armed Slave</English>
+		<French>Armed Slave</French>
+		<German>Armed Slave</German>
+		<Italian>Armed Slave</Italian>
+		<Spanish>Armed Slave</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARMED_SLAVE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ARMED_SLAVE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES</Tag>
+		<English>Compagnies</English>
+		<French>Compagnies</French>
+		<German>Compagnies</German>
+		<Italian>Compagnies</Italian>
+		<Spanish>Compagnies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LINE_INFANTRY</Tag>
+		<English>Line Infantry</English>
+		<French>Line Infantry</French>
+		<German>Line Infantry</German>
+		<Italian>Line Infantry</Italian>
+		<Spanish>Line Infantry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LINE_INFANTRY_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LINE_INFANTRY_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RPG</Tag>
+		<English>RPG</English>
+		<French>RPG</French>
+		<German>RPG</German>
+		<Italian>RPG</Italian>
+		<Spanish>RPG</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RPG_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RPG_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCAN_SLINGER</Tag>
+		<English>Slinger</English>
+		<French>Slinger</French>
+		<German>Slinger</German>
+		<Italian>Slinger</Italian>
+		<Spanish>Slinger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCAN_SLINGER_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INCAN_SLINGER_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_CANNON</Tag>
+		<English>Light Cannon</English>
+		<French>Light Cannon</French>
+		<German>Light Cannon</German>
+		<Italian>Light Cannon</Italian>
+		<Spanish>Light Cannon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_CANNON_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_CANNON_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FIELD_CANNON</Tag>
+		<English>Field Cannon</English>
+		<French>Field Cannon</French>
+		<German>Field Cannon</German>
+		<Italian>Field Cannon</Italian>
+		<Spanish>Field Cannon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FIELD_CANNON_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FIELD_CANNON_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GATTLING_GUN</Tag>
+		<English>Gattling Gun</English>
+		<French>Gattling Gun</French>
+		<German>Gattling Gun</German>
+		<Italian>Gattling Gun</Italian>
+		<Spanish>Gattling Gun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GATTLING_GUN_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GATTLING_GUN_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ATLATLIST</Tag>
+		<English>Atlatlist</English>
+		<French>Atlatlist</French>
+		<German>Atlatlist</German>
+		<Italian>Atlatlist</Italian>
+		<Spanish>Atlatlist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ATLATLIST_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ATLATLIST_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_TANK</Tag>
+		<English>Light Tank</English>
+		<French>Light Tank</French>
+		<German>Light Tank</German>
+		<Italian>Light Tank</Italian>
+		<Spanish>Light Tank</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_TANK_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_TANK_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CARABINEER</Tag>
+		<English>Carabineer</English>
+		<French>Carabineer</French>
+		<German>Carabineer</German>
+		<Italian>Carabineer</Italian>
+		<Spanish>Carabineer</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CARABINEER_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CARABINEER_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AA_GUN</Tag>
+		<English>AA Gun</English>
+		<French>AA Gun</French>
+		<German>AA Gun</German>
+		<Italian>AA Gun</Italian>
+		<Spanish>AA Gun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AA_GUN_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AA_GUN_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RANGER</Tag>
+		<English>Ranger</English>
+		<French>Ranger</French>
+		<German>Ranger</German>
+		<Italian>Ranger</Italian>
+		<Spanish>Ranger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RANGER_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RANGER_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANOE</Tag>
+		<English>Canoe</English>
+		<French>Canoe</French>
+		<German>Canoe</German>
+		<Italian>Canoe</Italian>
+		<Spanish>Canoe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANOE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CANOE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRIGANTINE</Tag>
+		<English>Brigantine</English>
+		<French>Brigantine</French>
+		<German>Brigantine</German>
+		<Italian>Brigantine</Italian>
+		<Spanish>Brigantine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRIGANTINE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BRIGANTINE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SLOOP</Tag>
+		<English>Sloop</English>
+		<French>Sloop</French>
+		<German>Sloop</German>
+		<Italian>Sloop</Italian>
+		<Spanish>Sloop</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SLOOP_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SLOOP_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_CANNON</Tag>
+		<English>Heavy Cannon</English>
+		<French>Heavy Cannon</French>
+		<German>Heavy Cannon</German>
+		<Italian>Heavy Cannon</Italian>
+		<Spanish>Heavy Cannon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_CANNON_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_CANNON_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RIFLED_CANNON</Tag>
+		<English>Rifled Cannon</English>
+		<French>Rifled Cannon</French>
+		<German>Rifled Cannon</German>
+		<Italian>Rifled Cannon</Italian>
+		<Spanish>Rifled Cannon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RIFLED_CANNON_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RIFLED_CANNON_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GUERILLA</Tag>
+		<English>Guerilla</English>
+		<French>Guerilla</French>
+		<German>Guerilla</German>
+		<Italian>Guerilla</Italian>
+		<Spanish>Guerilla</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GUERILLA_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GUERILLA_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP</Tag>
+		<English>Longship</English>
+		<French>
+			<Text>Drakkar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Langboot</German>
+		<Italian>Longship</Italian>
+		<Spanish>Longship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP_PEDIA</Tag>
+		<English>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</English>
+		<French>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</French>
+		<German>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</German>
+		<Italian>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</Italian>
+		<Spanish>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_</Tag>
+		<English>Example</English>
+		<French>Example</French>
+		<German>Example</German>
+		<Italian>Example</Italian>
+		<Spanish>Example</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT__STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT__PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_</Tag>

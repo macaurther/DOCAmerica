@@ -1160,19 +1160,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_PERSECUTION</Tag>
-		<English>Your persecutor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</English>
+		<English>Your Inquisitor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</English>
 		<French>Votre inquisiteur a r&#233;ussi &#224; purger la ville : %s1_city de la religion : %s2_religion et a confisqu&#233; au passage %d3_gold[ICON_GOLD].</French>
-		<German>Your persecutor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</German>
-		<Italian>Your persecutor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</Italian>
-		<Spanish>Your persecutor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</Spanish>
+		<German>Your Inquisitor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</German>
+		<Italian>Your Inquisitor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</Italian>
+		<Spanish>Your Inquisitor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_PERSECUTION_FAIL</Tag>
-		<English>Your persecutor in %s1_city was unsuccessful.</English>
+		<English>Your Inquisitor in %s1_city was unsuccessful.</English>
 		<French>Votre inquisiteur &#224; %s1_city a &#233;chou&#233;.</French>
-		<German>Your persecutor in %s1_city was unsuccessful.</German>
-		<Italian>Your persecutor in %s1_city was unsuccessful.</Italian>
-		<Spanish>Your persecutor in %s1_city was unsuccessful.</Spanish>
+		<German>Your Inquisitor in %s1_city was unsuccessful.</German>
+		<Italian>Your Inquisitor in %s1_city was unsuccessful.</Italian>
+		<Spanish>Your Inquisitor in %s1_city was unsuccessful.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MEZQUITA_FREE_GP</Tag>

@@ -521,7 +521,7 @@
 			<iAngry>0</iAngry>
 			<iUnhealthy>0</iUnhealthy>
 			<UnitsRequired>
-				<UnitClass>UNITCLASS_SWORDSMAN</UnitClass>
+				<UnitClass>UNITCLASS_AXEMAN</UnitClass>
 			</UnitsRequired>
 			<iNumUnits>1</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
@@ -12968,7 +12968,6 @@
 				<UnitClass>UNITCLASS_FRIGATE</UnitClass>
 				<UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
 				<UnitClass>UNITCLASS_IRONCLAD</UnitClass>
-				<UnitClass>UNITCLASS_TORPEDO_BOAT</UnitClass>
 				<UnitClass>UNITCLASS_CRUISER</UnitClass>
 				<UnitClass>UNITCLASS_TRANSPORT</UnitClass>
 				<UnitClass>UNITCLASS_DESTROYER</UnitClass>

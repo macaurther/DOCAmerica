@@ -16,7 +16,7 @@ EndMap
 BeginPlot
 	x=36,y=58
 	BeginUnit
-		UnitType=UNIT_MILITIA
+		UnitType=UNIT_MILITIA_1
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
@@ -27,7 +27,7 @@ EndPlot
 BeginPlot
 	x=28,y=61
 	BeginUnit
-		UnitType=UNIT_MILITIA
+		UnitType=UNIT_MILITIA_1
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
@@ -38,7 +38,7 @@ EndPlot
 BeginPlot
 	x=52,y=33
 	BeginUnit
-		UnitType=UNIT_MILITIA
+		UnitType=UNIT_MILITIA_1
 		UnitOwner=CIVILIZATION_TIWANAKU
 	EndUnit
 	BeginUnit

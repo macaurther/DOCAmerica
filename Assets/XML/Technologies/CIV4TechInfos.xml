@@ -773,7 +773,7 @@
 			<Quote>TXT_KEY_TECH_OLD_WORLD_TACTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,1,6</Button>
+			<Button>Art/Interface/Buttons/TechTree/Old_world_tactics.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -808,7 +808,7 @@
 			<Quote>TXT_KEY_TECH_OLD_WORLD_SCIENCE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Old_world_science.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -843,7 +843,7 @@
 			<Quote>TXT_KEY_TECH_OLD_WORLD_CULTURE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Old_world_culture.dds</Button>
 		</TechInfo>
 
 
@@ -1282,7 +1282,7 @@
 			<Quote>TXT_KEY_TECH_DIPLOMACY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Diplomacy.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1316,7 +1316,7 @@
 			<Quote>TXT_KEY_TECH_EVANGELISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Evangelism.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1350,7 +1350,7 @@
 			<Quote>TXT_KEY_TECH_GOVERNORS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Governors.dds</Button>
 		</TechInfo>
 
 
@@ -1458,7 +1458,7 @@
 			<Quote>TXT_KEY_TECH_COLONIZATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,6,7</Button>
+			<Button>Art/Interface/Buttons/TechTree/Colonization.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1533,7 +1533,7 @@
 			<Quote>TXT_KEY_TECH_CHARTER_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Charter.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1567,7 +1567,7 @@
 			<Quote>TXT_KEY_TECH_COMMUNITY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Community.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1604,7 +1604,7 @@
 			<Quote>TXT_KEY_TECH_INDENTURES_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Indentures.dds</Button>
 		</TechInfo>
 
 
@@ -1679,7 +1679,7 @@
 			<Quote>TXT_KEY_TECH_TRIANGULAR_TRADE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Triangular_trade.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1713,7 +1713,7 @@
 			<Quote>TXT_KEY_TECH_EXPLOITATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Exploitation.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1747,7 +1747,7 @@
 			<Quote>TXT_KEY_TECH_TIMEKEEPING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Timekeeping.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1890,7 +1890,7 @@
 			<Quote>TXT_KEY_TECH_TACTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,2,6</Button>
+			<Button>Art/Interface/Buttons/TechTree/Tactics.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2192,7 +2192,7 @@
 			<Quote>TXT_KEY_TECH_FREE_MARKET_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Free_market.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2226,7 +2226,7 @@
 			<Quote>TXT_KEY_TECH_NEWSPAPERS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,3,6</Button>
+			<Button>Art/Interface/Buttons/TechTree/Newspapers.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2407,7 +2407,7 @@
 			<Quote>TXT_KEY_TECH_REGIMENTS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,5,6</Button>
+			<Button>Art/Interface/Buttons/TechTree/Regiments.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2441,7 +2441,7 @@
 			<Quote>TXT_KEY_TECH_BONDS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Bonds.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2475,7 +2475,7 @@
 			<Quote>TXT_KEY_TECH_POSTAL_SERVICE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,6,6</Button>
+			<Button>Art/Interface/Buttons/TechTree/Postal_service.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2509,7 +2509,7 @@
 			<Quote>TXT_KEY_TECH_METEOROLOGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,7,6</Button>
+			<Button>Art/Interface/Buttons/TechTree/Meteorology.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2543,7 +2543,7 @@
 			<Quote>TXT_KEY_TECH_SURVEYING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Surveying.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2615,7 +2615,7 @@
 			<Quote>TXT_KEY_TECH_INDEPENDENCE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,4,6</Button>
+			<Button>Art/Interface/Buttons/TechTree/Independence.dds</Button>
 		</TechInfo>
 
 
@@ -2691,7 +2691,7 @@
 			<Quote>TXT_KEY_TECH_PROTECTIONISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Protectionism.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2835,7 +2835,7 @@
 			<Quote>TXT_KEY_TECH_RIGHTS_OF_MAN_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,1,7</Button>
+			<Button>Art/Interface/Buttons/TechTree/Rights_of_man.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2868,7 +2868,7 @@
 			<Quote>TXT_KEY_TECH_FEDERALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Scientific Method.dds,Art/Interface/Buttons/DOCAmerica_Civics_and_Techs.dds,3,7</Button>
+			<Button>Art/Interface/Buttons/TechTree/Federalism.dds</Button>
 		</TechInfo>
 
 <!-- #13 -->
@@ -3041,7 +3041,7 @@
 			<Quote>TXT_KEY_TECH_PIONEERING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Pioneering.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -3303,7 +3303,7 @@
 			<Quote>TXT_KEY_TECH_CONSERVATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Conservation.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -3337,7 +3337,7 @@
 			<Quote>TXT_KEY_TECH_EMANCIPATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Emancipation.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -3370,7 +3370,7 @@
 			<Quote>TXT_KEY_TECH_IMPERIALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Imperialism.dds</Button>
 		</TechInfo>
 
 
@@ -3479,7 +3479,7 @@
 			<Quote>TXT_KEY_TECH_COMBUSTION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Combustion.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -3513,8 +3513,8 @@
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_TELEGRAPH_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
+			<Button>Art/Interface/Buttons/TechTree/Telegraph.dds</Button>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -3984,7 +3984,7 @@
 			<Quote>TXT_KEY_TECH_AERONAUTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Tanning.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Aeronautics.dds</Button>
 		</TechInfo>
 
 		<TechInfo>

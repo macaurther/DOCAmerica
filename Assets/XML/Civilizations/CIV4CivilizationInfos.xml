@@ -165,7 +165,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_DRAGOON</UnitClassType>
-					<UnitType>UNIT_ARGENTINE_GRENADIER_CAVALRY</UnitType>
+					<UnitType>UNIT_ARGENTINE_MOUNTED_GRENADIER</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_GREAT_GENERAL</UnitClassType>
@@ -286,7 +286,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SWORDSMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
 					<UnitType>UNIT_AZTEC_JAGUAR</UnitType>
 				</Unit>
 				<Unit>
@@ -742,7 +742,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
-					<UnitType>UNIT_CHIMU_SC_AUCAC</UnitType>
+					<UnitType>UNIT_CHIMU_SUCHUC_CHIQUI</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1120,6 +1120,14 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_EXPLORER</UnitClassType>
+					<UnitType>UNIT_FRENCH_COUREUR_DES_BOIS</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_FUSILIER</UnitClassType>
+					<UnitType>UNIT_FRENCH_COMPAGNIES</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1435,7 +1443,11 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SWORDSMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+					<UnitType>UNIT_INCAN_SLINGER</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
 					<UnitType>UNIT_INCAN_AUCAC</UnitType>
 				</Unit>
 			</Units>
@@ -1949,7 +1961,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_MILITIA</UnitClassType>
+					<UnitClassType>UNITCLASS_MILITIA_1</UnitClassType>
 					<UnitType>UNIT_MISSISSIPPI_FALCON_DANCER</UnitType>
 				</Unit>
 			</Units>
@@ -2039,7 +2051,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
-					<UnitType>UNIT_MUISCA_GUECHA_WARRIOR</UnitType>
+					<UnitType>UNIT_MUISCA_GUECHA</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2150,7 +2162,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_GALLEON</UnitClassType>
-					<UnitType>UNIT_DUTCH_EAST_INDIAMAN</UnitType>
+					<UnitType>UNIT_DUTCH_WEST_INDIAMAN</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2529,7 +2541,12 @@
 					<BuildingType>BUILDING_KACHIN_PITHOUSE</BuildingType>
 				</Building>
 			</Buildings>
-			<Units/>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<UnitType>UNIT_PUEBLOAN_CLIFF_DWELLER</UnitType>
+				</Unit>
+			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
@@ -2604,6 +2621,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
+					<UnitType>UNIT_RUSSIAN_PROMYSHLENNIKI</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2710,7 +2731,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_ARQUEBUSIER</UnitClassType>
-					<UnitType>UNIT_SPANISH_TERCIO</UnitType>
+					<UnitType>UNIT_TERCIO</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_CUIRASSIER</UnitClassType>
@@ -3084,7 +3105,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
-					<UnitType>UNIT_WARI_PICTA_AUCAC</UnitType>
+					<UnitType>UNIT_WARI_PICTA</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3309,7 +3330,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_RELIGIOUS_PERSECUTOR</UnitClassType>
+					<UnitClassType>UNITCLASS_INQUISITOR</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -3530,7 +3551,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_RELIGIOUS_PERSECUTOR</UnitClassType>
+					<UnitClassType>UNITCLASS_INQUISITOR</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -3738,7 +3759,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_RELIGIOUS_PERSECUTOR</UnitClassType>
+					<UnitClassType>UNITCLASS_INQUISITOR</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4081,7 +4102,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_RELIGIOUS_PERSECUTOR</UnitClassType>
+					<UnitClassType>UNITCLASS_INQUISITOR</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
