@@ -687,6 +687,14 @@
 			<DefaultUnit>UNIT_FRIGATE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_IRONCLAD</Type>
+			<Description>TXT_KEY_UNIT_IRONCLAD</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_IRONCLAD</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_DESTROYER</Type>
 			<Description>TXT_KEY_UNIT_DESTROYER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -711,12 +719,12 @@
 			<DefaultUnit>UNIT_PRIVATEER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_IRONCLAD</Type>
-			<Description>TXT_KEY_UNIT_IRONCLAD</Description>
+			<Type>UNITCLASS_TORPEDO_BOAT</Type>
+			<Description>TXT_KEY_UNIT_TORPEDO_BOAT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_IRONCLAD</DefaultUnit>
+			<DefaultUnit>UNIT_TORPEDO_BOAT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SUBMARINE</Type>
