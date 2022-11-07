@@ -9891,8 +9891,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=87
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -10464,9 +10466,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=87
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
+	RiverNSDirection=0
 	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
@@ -10474,6 +10474,8 @@ EndPlot
 BeginPlot
 	x=18,y=88
 	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
@@ -13336,6 +13338,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=83
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -13363,8 +13367,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=88
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -13891,14 +13895,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=80
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
+	isWOfRiver
 	BonusType=BONUS_COAL
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=81
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
@@ -13932,21 +13940,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=87
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=88
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=89
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
@@ -14523,8 +14531,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=87
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -14540,6 +14546,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=90
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -14951,11 +14959,13 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=26,y=61
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=26,y=62
@@ -14964,6 +14974,7 @@ BeginPlot
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=26,y=63
@@ -15101,28 +15112,24 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=84
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=85
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_COAL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=86
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=87
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -15138,6 +15145,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=90
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -15554,6 +15563,7 @@ BeginPlot
 	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=27,y=61
@@ -15561,6 +15571,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=27,y=62
@@ -15569,11 +15580,13 @@ BeginPlot
 	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=27,y=63
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=27,y=64
@@ -15686,54 +15699,50 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=83
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=84
-	RiverNSDirection=2
-	isWOfRiver
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=85
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=86
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=87
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=88
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
+EndPlot
+BeginPlot
+	x=27,y=89
 	RiverNSDirection=2
 	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
-	x=27,y=89
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
-EndPlot
-BeginPlot
 	x=27,y=90
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
@@ -16138,6 +16147,7 @@ BeginPlot
 	x=28,y=60
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=28,y=61
@@ -16145,11 +16155,13 @@ BeginPlot
 	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=28,y=62
 	TerrainType=TERRAIN_DESERT
 	PlotType=0
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=28,y=63
@@ -16263,13 +16275,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=83
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=84
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -16281,8 +16293,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=86
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=87
@@ -16291,11 +16303,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=88
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=89
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -16712,6 +16728,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=29,y=61
@@ -16720,12 +16737,14 @@ BeginPlot
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=29,y=62
 	BonusType=BONUS_OBSIDIAN
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=29,y=63
@@ -16850,36 +16869,42 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=83
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
-EndPlot
-BeginPlot
-	x=29,y=84
 	isNOfRiver
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
+	x=29,y=84
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
+EndPlot
+BeginPlot
 	x=29,y=85
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=86
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=87
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=88
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -17303,17 +17328,20 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=30,y=61
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=30,y=62
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=30,y=63
@@ -17439,18 +17467,24 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=83
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=84
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=85
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -17481,11 +17515,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=91
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=92
+	RiverNSDirection=0
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
@@ -20184,6 +20222,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=35,y=58
@@ -20192,6 +20231,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=35,y=59
@@ -20200,6 +20240,7 @@ BeginPlot
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=35,y=60
@@ -20755,12 +20796,14 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=36,y=58
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=36,y=59
@@ -20768,6 +20811,7 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=36,y=60
@@ -21339,18 +21383,21 @@ BeginPlot
 	x=37,y=57
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=37,y=58
 	BonusType=BONUS_OBSIDIAN
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=37,y=59
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=37,y=60
@@ -25650,27 +25697,31 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=4
-	TerrainType=TERRAIN_ARCTIC_COAST
+	FeatureType=FEATURE_CAPE, FeatureVariety=0
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=5
+	FeatureType=FEATURE_CAPE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=6
+	FeatureType=FEATURE_CAPE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=7
+	FeatureType=FEATURE_CAPE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=8
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
@@ -26233,28 +26284,32 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=3
+	FeatureType=FEATURE_CAPE, FeatureVariety=0
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=4
-	TerrainType=TERRAIN_ARCTIC_COAST
+	FeatureType=FEATURE_CAPE, FeatureVariety=0
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=5
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=6
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=46,y=7
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=8
@@ -26263,11 +26318,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=9
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=10
+	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -26819,7 +26876,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=2
-	FeatureType=FEATURE_CAPE, FeatureVariety=0
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=1
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -26842,7 +26899,7 @@ EndPlot
 BeginPlot
 	x=47,y=6
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=7
@@ -26852,24 +26909,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=8
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=47,y=9
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=47,y=10
-	BonusType=BONUS_POTATO
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=47,y=11
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=12
@@ -27427,7 +27483,7 @@ EndPlot
 BeginPlot
 	x=48,y=3
 	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -27458,7 +27514,7 @@ EndPlot
 BeginPlot
 	x=48,y=9
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=48,y=10
@@ -27472,7 +27528,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=12
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -27626,7 +27682,7 @@ BeginPlot
 	x=48,y=41
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -27634,7 +27690,7 @@ BeginPlot
 	x=48,y=42
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -28030,17 +28086,17 @@ EndPlot
 BeginPlot
 	x=49,y=3
 	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=49,y=4
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=49,y=5
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -28051,7 +28107,7 @@ EndPlot
 BeginPlot
 	x=49,y=7
 	BonusType=BONUS_OIL
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
 BeginPlot
@@ -28077,7 +28133,7 @@ EndPlot
 BeginPlot
 	x=49,y=12
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=13
@@ -28226,7 +28282,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=40
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -28240,7 +28296,7 @@ BeginPlot
 	x=49,y=42
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -28263,7 +28319,7 @@ BeginPlot
 	x=49,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -28619,8 +28675,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=0
-	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=1
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -28630,30 +28686,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=2
-	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
-	PlotType=3
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=50,y=3
-	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
-	PlotType=3
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=50,y=4
-	TerrainType=TERRAIN_ARCTIC_COAST
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=50,y=5
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=50,y=6
 	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
 BeginPlot
@@ -28668,18 +28722,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=9
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
 BeginPlot
 	x=50,y=10
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=50,y=11
 	BonusType=BONUS_STONE
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
@@ -28690,7 +28744,7 @@ EndPlot
 BeginPlot
 	x=50,y=13
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=14
@@ -28700,7 +28754,7 @@ EndPlot
 BeginPlot
 	x=50,y=15
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=16
@@ -28801,11 +28855,13 @@ BeginPlot
 	x=50,y=34
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=50,y=35
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=50,y=36
@@ -28863,20 +28919,20 @@ BeginPlot
 	x=50,y=44
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=50,y=45
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=50,y=46
 	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -29230,29 +29286,28 @@ EndPlot
 BeginPlot
 	x=51,y=0
 	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=51,y=1
-	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
-	PlotType=3
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=51,y=2
 	FeatureType=FEATURE_CAPE, FeatureVariety=0
-	TerrainType=TERRAIN_ARCTIC_COAST
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=51,y=3
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=51,y=4
-	TerrainType=TERRAIN_ARCTIC_COAST
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -29293,21 +29348,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=12
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=51,y=13
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=51,y=14
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
@@ -29408,28 +29463,33 @@ BeginPlot
 	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=51,y=32
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=51,y=33
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=51,y=34
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=51,y=35
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=51,y=36
@@ -29481,7 +29541,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=44
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -29501,7 +29561,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=47
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -29836,17 +29896,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=0
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=1
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=2
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -29877,8 +29937,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=8
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=9
@@ -29892,8 +29952,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=11
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
@@ -29924,12 +29982,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=16
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=52,y=17
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -30002,26 +30060,31 @@ BeginPlot
 	x=52,y=31
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=52,y=32
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=52,y=33
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=52,y=34
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=52,y=35
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=52,y=36
@@ -30030,7 +30093,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=37
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -30107,7 +30170,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=48
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -30485,7 +30548,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=7
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
@@ -30495,13 +30558,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=9
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=10
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=11
@@ -30510,6 +30573,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=12
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -30609,27 +30674,32 @@ BeginPlot
 	x=53,y=31
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=53,y=32
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=53,y=33
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=53,y=34
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=53,y=35
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=53,y=36
@@ -30646,7 +30716,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -30703,13 +30773,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=47
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=53,y=48
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -31064,17 +31134,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=3
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=54,y=4
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=54,y=5
-	TerrainType=TERRAIN_OCEAN
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=1
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -31089,12 +31160,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=8
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=54,y=9
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -31105,8 +31176,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=11
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=54,y=12
@@ -31223,11 +31294,13 @@ BeginPlot
 	x=54,y=33
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=54,y=34
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=54,y=35
@@ -31253,7 +31326,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -31266,7 +31339,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=40
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -31302,13 +31375,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=46
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=54,y=47
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -31664,17 +31737,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=3
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=55,y=4
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_MOORLAND
+	PlotType=1
 EndPlot
 BeginPlot
 	x=55,y=5
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -31699,7 +31772,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=10
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
@@ -31803,7 +31876,7 @@ EndPlot
 BeginPlot
 	x=55,y=29
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=30
@@ -31813,7 +31886,7 @@ EndPlot
 BeginPlot
 	x=55,y=31
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=32
@@ -31823,7 +31896,7 @@ EndPlot
 BeginPlot
 	x=55,y=33
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=55,y=34
@@ -31862,7 +31935,7 @@ BeginPlot
 	x=55,y=39
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -31906,7 +31979,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=46
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -32260,22 +32333,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=2
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=56,y=3
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=56,y=4
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=56,y=5
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -32512,7 +32585,7 @@ BeginPlot
 	x=56,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -32865,17 +32938,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=2
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=57,y=3
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
+	TerrainType=TERRAIN_MOORLAND
+	PlotType=1
 EndPlot
 BeginPlot
 	x=57,y=4
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -33062,7 +33135,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=37
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -33119,7 +33192,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=46
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -33474,17 +33547,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=2
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=58,y=3
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=58,y=4
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -33684,13 +33757,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=58,y=39
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -33730,7 +33803,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=45
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -34341,7 +34414,7 @@ BeginPlot
 	x=59,y=45
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -34957,7 +35030,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=46
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -35497,7 +35570,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -36089,13 +36162,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=37
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=62,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -36108,7 +36181,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=40
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -36149,7 +36222,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=46
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -36696,7 +36769,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=39
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -36708,7 +36781,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=41
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -36744,7 +36817,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=47
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
