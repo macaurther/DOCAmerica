@@ -74,10 +74,6 @@ class PlayerData:
 		
 		self.colonialAcquisitionCities = []
 		
-		# Religions
-		
-		self.iReformationDecision = -1
-		
 		# AI Wars
 		
 		self.iAggressionLevel = 0

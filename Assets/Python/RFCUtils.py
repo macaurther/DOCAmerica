@@ -330,34 +330,6 @@ def colonialAcquisition(iPlayer, tPlot):
 	iMissionary = missionary(player(iPlayer).getStateReligion())
 	if iMissionary:
 		makeUnit(iPlayer, iMissionary, plot)
-
-# used: CvRandomEventInterface, History
-# this shouldn't be here
-def getColonialTargets(iPlayer, bEmpty=False):
-	iCiv = civ(iPlayer)
-
-	if iCiv in [iSpain, iFrance]:
-		iNumCities = 1
-	elif iCiv == iPortugal and not player(iPortugal).isHuman():
-		iNumCities = 5
-	else:
-		iNumCities = 3
-
-	lPlots = dTradingCompanyPlots[iCiv][:]
-	
-	
-	cityPlots, emptyPlots = plots.of(lPlots).split(lambda p: p.isCity())
-	targetCities = cityPlots.notowner(iPlayer).sample(iNumCities)
-	
-	if bEmpty:
-		nearbyCityPlots, settlePlots = emptyPlots.split(lambda p: plots.surrounding(p).any(CyPlot.isCity))
-		
-		targetPlots = settlePlots.sample(iNumCities - len(targetCities))
-		targetPlots += nearbyCityPlots.expand(1).where(lambda p: p.isCity() and p.getOwner() != iPlayer).sample(iNumCities - len(targetCities) - len(targetPlots))
-		
-		return targetCities + targetPlots
-	
-	return targetCities
 	
 # used: History
 def getBorderPlots(iPlayer, tTL, tBR, iDirection = DirectionTypes.NO_DIRECTION, iNumPlots = 1):

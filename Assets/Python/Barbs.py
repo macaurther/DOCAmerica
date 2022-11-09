@@ -35,7 +35,7 @@ def helpMinorStates():
 def spawnBarbarians(iGameTurn):
 	iHandicap = infos.handicap().getBarbarianSpawnModifier()
 
-	if year().between(250, 1000):
+	if year().between(300, 1000):
 		if iHandicap >= 0:
 			checkSpawn(iBarbarian, iWarrior, 1, (30, 44), (46, 57), spawnMinors, iGameTurn, 5, 0)
 		

@@ -63,39 +63,6 @@ def buildFoundedCapitalInfrastructure(city):
 
 ### BEGIN GAME TURN ###
 
-@handler("BeginGameTurn")
-def placeGoodyHuts(iGameTurn):
-	if iGameTurn == scenarioStartTurn() + 3:
-			
-		if scenario() <= i1500AD:
-			placeHut((22, 48), (29, 51)) # Great Lakes
-			placeHut((18, 44), (22, 52)) # Great Plains
-			placeHut((34, 25), (39, 29)) # Amazonas Delta
-			placeHut((25, 36), (32, 39)) # Caribbean
-
-
-# TODO: revisit how this works
-@handler("BeginGameTurn")
-def checkEarlyColonists():
-	dEarlyColonistYears = {
-	}
-	
-	iYear = game.getGameTurnYear()
-	if iYear in dEarlyColonistYears:
-		iCiv = dEarlyColonistYears[iYear]
-		giveEarlyColonists(iCiv)
-		
-		
-@handler("BeginGameTurn")
-def checkLateColonists():
-	if year().between(1350, 1918):
-		for iCiv in dTradingCompanyPlots:
-			if player(iCiv).isAlive():
-				iPlayer = slot(iCiv)
-				if data.players[iPlayer].iExplorationTurn >= 0:
-					if turn() == data.players[iPlayer].iExplorationTurn + 1 + data.players[iPlayer].iColonistsAlreadyGiven * 8:
-						giveColonists(iPlayer)
-
 
 ### FIRST CONTACT ###
 
@@ -229,34 +196,6 @@ def americanWestCoastSettlement(iTech, iTeam, iPlayer):
 				makeUnit(iPlayer, iMinuteman, plot)
 
 
-@handler("techAcquired")
-def earlyTradingCompany(iTech, iTeam, iPlayer):
-	if turn() == scenarioStartTurn():
-		return
-
-	lCivs = [iSpain, iPortugal]
-	lTechs = [iExploration, iFirearms]
-	
-	if civ(iPlayer) in lCivs:
-		if iTech in lTechs and all(team(iTeam).isHasTech(iTech) for iTech in lTechs):
-			if not player(iPlayer).isHuman() and not team(iTeam).isAVassal():
-				handleColonialAcquisition(iPlayer)
-
-
-@handler("techAcquired")
-def lateTradingCompany(iTech, iTeam, iPlayer):
-	if turn() == scenarioStartTurn():
-		return
-
-	lCivs = [iFrance, iEngland, iNetherlands]
-	lTechs = [iEconomics, iReplaceableParts]
-	
-	if civ(iPlayer) in lCivs:
-		if iTech in lTechs and all(team(iTeam).isHasTech(iTech) for iTech in lTechs):
-			if not player(iPlayer).isHuman() and not team(iTeam).isAVassal():
-				handleColonialConquest(iPlayer)
-
-
 ### COLLAPSE ###
 
 
@@ -294,20 +233,6 @@ def buildCapitalInfrastructure(iPlayer, city):
 			if iStateReligion >= 0:
 				for religiosBuilding in lReligiousBuildings:
 					city.setHasRealBuilding(religiosBuilding(iStateReligion), True)
-					
-					
-def giveEarlyColonists(iCiv):
-	pPlayer = player(iCiv)
-	
-	if pPlayer.isAlive() and not pPlayer.isHuman():
-		capital = pPlayer.getCapitalCity()
-			
-		if capital:
-			tSeaPlot = findSeaPlots(capital, 1, iCiv)
-			if tSeaPlot:
-				makeUnit(iCiv, iGalley, tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-				makeUnit(iCiv, iSettler, tSeaPlot)
-				makeUnit(iCiv, iArcher, tSeaPlot)
 
 
 def giveColonists(iPlayer):

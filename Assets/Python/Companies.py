@@ -116,8 +116,6 @@ def getCityValue(city, iCompany):
 
 	# civilization requirements
 	if iCompany == iTradingCompany:
-		if iOwnerCiv not in dTradingCompanyPlots:
-			return -1
 		if iOwnerCiv == iNetherlands:
 			iValue += 2
 	
@@ -127,7 +125,7 @@ def getCityValue(city, iCompany):
 			return -1
 			
 	elif iCompany == iTradingCompany:
-		if city not in cities.rectangle(tCaribbean) and city not in cities.rectangle(tSubSaharanAfrica) and city not in cities.rectangle(tIndianOcean) and not city.isHasRealBuilding(unique_building(city.getOwner(), iTradingCompanyBuilding)):
+		if city not in cities.rectangle(tCaribbean) and not city.isHasRealBuilding(unique_building(city.getOwner(), iTradingCompanyBuilding)):
 			return -1
 		if city in cities.rectangle(tCaribbean):
 			iValue += 1

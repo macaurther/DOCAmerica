@@ -48,20 +48,6 @@ def resetNationalWonders(iOwner, iPlayer, city, bConquest, bTrade):
 				city.setHasRealBuilding(iNationalWonder, False)
 
 
-@handler("cityAcquired")
-def spreadTradingCompanyCulture(iOwner, iPlayer, city, bConquest, bTrade):
-	if bTrade and iPlayer in dTradingCompanyPlots and location(city) in dTradingCompanyPlots[iPlayer]:
-		for plot in plots.surrounding(city):
-			if location(plot) == location(city):
-				convertPlotCulture(plot, iPlayer, 51, False)
-			elif plot.isCity():
-				pass
-			elif distance(plot, city) == 1:
-				convertPlotCulture(plot, iPlayer, 65, True)
-			elif pPlot.getOwner() == iPreviousOwner:
-				convertPlotCulture(plot, iPlayer, 15, False)
-
-
 ### CITY ACQUIRED AND KEPT ###
 	
 @handler("cityAcquiredAndKept")

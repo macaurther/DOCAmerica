@@ -1695,22 +1695,6 @@
 		<Spanish>[H1]&#161;Independencia![\H1][NEWLINE]%s1 cities are about to declare their independence and break away from our civilization. Shall we let them go peacefully?</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REFORMATION_MESSAGE</Tag>
-		<English>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</English>
-		<French>Le d&#233;veloppement des universit&#233; a permis la diffusion de nouvelles id&#233;ologies, et des &#233;glises dites protestantes commencent &#224; s'opposer au pouvoir du pape sur la chr&#233;tient&#233;. Adh&#233;rerons-nous &#224; la R&#233;forme ? Nos villes et b&#226;timents catholiques se convertiront alors &#224; la nouvelle religion. Si nous nous convertissons maintenant, nous recevrons un bonus de 500 or pour avoir rapidement pris le contr&#244;le des biens de l'&#201;glise.</French>
-		<German>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</German>
-		<Italian>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</Italian>
-		<Spanish>The establishment of Academia has unleashed a wave of new doctrines. Protestant churches are opposing the power of the Pope over Christian affairs. Shall we embrace the Reformation? All our Catholic cities and buildings will be converted to the new religion. If we convert now, we will receive a bonus of 500 gold for rapidly taking control of Church assets.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REFORMATION_TITLE</Tag>
-		<English>The Reformation!</English>
-		<French>La R&#233;forme !</French>
-		<German>The Reformation!</German>
-		<Italian>The Reformation!</Italian>
-		<Spanish>The Reformation!</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_RELEASE_CIVILIZATION</Tag>
 		<English>Release %s1_citylist to %s2</English>
 		<French>Rendre %s1_citylist &#224; : %s2</French>
@@ -1741,30 +1725,6 @@
 		<German>Runde %d1_TurnNum</German>
 		<Italian>Turno %d1_TurnNum</Italian>
 		<Spanish>Turno %d1_TurnNum</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SCHISM_MESSAGE</Tag>
-		<English>While Christianity has since its existence consisted of various sects, our central government could still uphold Christian Orthodoxy. But with worldly control over the Christian world fracturing, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now a theological schism divides Christianity, and several cities outside of our direct control have joined this new Catholic sect.</English>
-		<French>Si le christianisme, depuis sa naissance, est compos&#233; de diverses d&#233;nominations, il a n&#233;anmoins &#233;t&#233; possible pour notre gouvernement de faire respecter une certaine orthodoxie. Mais maintenant que le contr&#244;le temporel du monde chr&#233;tien se fractionne, le patriarche de %s1 s'est d&#233;clar&#233; pape et pr&#233;tend &#234;tre le seul repr&#233;sentant de Dieu sur Terre. Un schisme th&#233;ologique divise la chr&#233;tient&#233;, et de nombreuses villes hors de notre contr&#244;le direct ont adh&#233;r&#233; &#224; cette nouvelle &#201;glise catholique.</French>
-		<German>While Christianity has since its existence consisted of various sects, our central government could still uphold Christian Orthodoxy. But with worldly control over the Christian world fracturing, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now a theological schism divides Christianity, and several cities outside of our direct control have joined this new Catholic sect.</German>
-		<Italian>While Christianity has since its existence consisted of various sects, our central government could still uphold Christian Orthodoxy. But with worldly control over the Christian world fracturing, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now a theological schism divides Christianity, and several cities outside of our direct control have joined this new Catholic sect.</Italian>
-		<Spanish>While Christianity has since its existence consisted of various sects, our central government could still uphold Christian Orthodoxy. But with worldly control over the Christian world fracturing, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now a theological schism divides Christianity, and several cities outside of our direct control have joined this new Catholic sect.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SCHISM_MESSAGE_CATHEDRAL</Tag>
-		<English>With the holy sites in their hands, foreign powers have long been in control of Christian Orthodoxy. Having established his own authority by building our first Cathedral, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now all of our cities follow this new sect.</English>
-		<French>With the holy sites in their hands, foreign powers have long been in control of Christian Orthodoxy. Having established his own authority by building our first Cathedral, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now all of our cities follow this new sect.</French>
-		<German>With the holy sites in their hands, foreign powers have long been in control of Christian Orthodoxy. Having established his own authority by building our first Cathedral, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now all of our cities follow this new sect.</German>
-		<Italian>With the holy sites in their hands, foreign powers have long been in control of Christian Orthodoxy. Having established his own authority by building our first Cathedral, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now all of our cities follow this new sect.</Italian>
-		<Spanish>With the holy sites in their hands, foreign powers have long been in control of Christian Orthodoxy. Having established his own authority by building our first Cathedral, the Patriarch of %s1 has declared himself Pope and claims to be the sole representative of God on Earth. Now all of our cities follow this new sect.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SCHISM_TITLE</Tag>
-		<English>The Great Schism</English>
-		<French>Le Grand Schisme</French>
-		<German>The Great Schism</German>
-		<Italian>The Great Schism</Italian>
-		<Spanish>The Great Schism</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SELJUK_HORDES</Tag>
@@ -3407,102 +3367,6 @@
 		<German></German>
 		<Italian></Italian>
 		<Spanish></Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_ROM_CAR</Tag>
-		<English>We are receiving reports that a Roman army is planning to cross the Strait of Sicily and attack Africa!</English>
-		<French>We are receiving reports that a Roman army is planning to cross the Strait of Sicily and attack Africa!</French>
-		<German>We are receiving reports that a Roman army is planning to cross the Strait of Sicily and attack Africa!</German>
-		<Italian>We are receiving reports that a Roman army is planning to cross the Strait of Sicily and attack Africa!</Italian>
-		<Spanish>We are receiving reports that a Roman army is planning to cross the Strait of Sicily and attack Africa!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_ROM_GRE</Tag>
-		<English>We are receiving reports that a Roman army is planning to intervene in Greece!</English>
-		<French>We are receiving reports that a Roman army is planning to intervene in Greece!</French>
-		<German>We are receiving reports that a Roman army is planning to intervene in Greece!</German>
-		<Italian>We are receiving reports that a Roman army is planning to intervene in Greece!</Italian>
-		<Spanish>We are receiving reports that a Roman army is planning to intervene in Greece!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_ROM_CEL</Tag>
-		<English>We are receiving reports than an ambitious Roman general is planning to conquer Gaul!</English>
-		<French>We are receiving reports than an ambitious Roman general is planning to conquer Gaul!</French>
-		<German>We are receiving reports than an ambitious Roman general is planning to conquer Gaul!</German>
-		<Italian>We are receiving reports than an ambitious Roman general is planning to conquer Gaul!</Italian>
-		<Spanish>We are receiving reports than an ambitious Roman general is planning to conquer Gaul!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_ROM_EGY</Tag>
-		<English>We are receiving reports that a Roman army is planning to turn Egypt into one of its provinces!</English>
-		<French>We are receiving reports that a Roman army is planning to turn Egypt into one of its provinces!</French>
-		<German>We are receiving reports that a Roman army is planning to turn Egypt into one of its provinces!</German>
-		<Italian>We are receiving reports that a Roman army is planning to turn Egypt into one of its provinces!</Italian>
-		<Spanish>We are receiving reports that a Roman army is planning to turn Egypt into one of its provinces!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_GRE_BAB</Tag>
-		<English>We are receiving reports that a Greek leader is planning to unite its armies and conquer Mesopotamia!</English>
-		<French>We are receiving reports that a Greek leader is planning to unite its armies and conquer Mesopotamia!</French>
-		<German>We are receiving reports that a Greek leader is planning to unite its armies and conquer Mesopotamia!</German>
-		<Italian>We are receiving reports that a Greek leader is planning to unite its armies and conquer Mesopotamia!</Italian>
-		<Spanish>We are receiving reports that a Greek leader is planning to unite its armies and conquer Mesopotamia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_GRE_EGY</Tag>
-		<English>We are receiving reports that the Greeks are planning to subdue Egypt!</English>
-		<French>We are receiving reports that the Greeks are planning to subdue Egypt!</French>
-		<German>We are receiving reports that the Greeks are planning to subdue Egypt!</German>
-		<Italian>We are receiving reports that the Greeks are planning to subdue Egypt!</Italian>
-		<Spanish>We are receiving reports that the Greeks are planning to subdue Egypt!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_GRE_PER</Tag>
-		<English>We are receiving reports that the Greek armies intend to capture the heart of Persia!</English>
-		<French>We are receiving reports that the Greek armies intend to capture the heart of Persia!</French>
-		<German>We are receiving reports that the Greek armies intend to capture the heart of Persia!</German>
-		<Italian>We are receiving reports that the Greek armies intend to capture the heart of Persia!</Italian>
-		<Spanish>We are receiving reports that the Greek armies intend to capture the heart of Persia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_TAM_INO</Tag>
-		<English>We are receiving reports that Tamil traders intend to conquer a permanent foothold in Indonesia!</English>
-		<French>We are receiving reports that Tamil traders intend to conquer a permanent foothold in Indonesia!</French>
-		<German>We are receiving reports that Tamil traders intend to conquer a permanent foothold in Indonesia!</German>
-		<Italian>We are receiving reports that Tamil traders intend to conquer a permanent foothold in Indonesia!</Italian>
-		<Spanish>We are receiving reports that Tamil traders intend to conquer a permanent foothold in Indonesia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_SPA_MOO</Tag>
-		<English>The Spanish reconquista is gaining momentum and they are close to attempting to reconquer Andalusia!</English>
-		<French>The Spanish reconquista is gaining momentum and they are close to attempting to reconquer Andalusia!</French>
-		<German>The Spanish reconquista is gaining momentum and they are close to attempting to reconquer Andalusia!</German>
-		<Italian>The Spanish reconquista is gaining momentum and they are close to attempting to reconquer Andalusia!</Italian>
-		<Spanish>The Spanish reconquista is gaining momentum and they are close to attempting to reconquer Andalusia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_TUR_ARA</Tag>
-		<English>Seljuk armies from Central Asia are gathering to push into Persia!</English>
-		<French>Seljuk armies from Central Asia are gathering to push into Persia!</French>
-		<German>Seljuk armies from Central Asia are gathering to push into Persia!</German>
-		<Italian>Seljuk armies from Central Asia are gathering to push into Persia!</Italian>
-		<Spanish>Seljuk armies from Central Asia are gathering to push into Persia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_TUR_BYZ</Tag>
-		<English>Seljuk armies are assembling to further push into Anatolia!</English>
-		<French>Seljuk armies are assembling to further push into Anatolia!</French>
-		<German>Seljuk armies are assembling to further push into Anatolia!</German>
-		<Italian>Seljuk armies are assembling to further push into Anatolia!</Italian>
-		<Spanish>Seljuk armies are assembling to further push into Anatolia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MESSAGE_CONQUERORS_MON_TUR</Tag>
-		<English>Mongol armies from Central Asia are on their way to conquer Persia!</English>
-		<French>Mongol armies from Central Asia are on their way to conquer Persia!</French>
-		<German>Mongol armies from Central Asia are on their way to conquer Persia!</German>
-		<Italian>Mongol armies from Central Asia are on their way to conquer Persia!</Italian>
-		<Spanish>Mongol armies from Central Asia are on their way to conquer Persia!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_PERIOD_AREA_CHANGE</Tag>

@@ -2715,62 +2715,6 @@
 		<Spanish>Mira si el cient&#237;fico desea continuar investigando en el monasterio, d&#225;ndole alguna financiaci&#243;n adicional.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_REFORMATION_1</Tag>
-		<English>Embrace the Reformation.</English>
-		<French>Adh&#233;rer &#224; la R&#233;forme.</French>
-		<German>Nehmt die Reformation an.</German>
-		<Italian>mbrace the Reformation.</Italian>
-		<Spanish>mbrace the Reformation.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_REFORMATION_2</Tag>
-		<English>Tolerate the new sects.</English>
-		<French>Tol&#233;rer les nouveaux cultes.</French>
-		<German>Toleriert die neuen Sekten.</German>
-		<Italian>Tolerate the new sects.</Italian>
-		<Spanish>Tolerate the new sects.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_REFORMATION_3</Tag>
-		<English>Join the Counter-Reformation.</English>
-		<French>Se joindre &#224; la Contre-R&#233;forme.</French>
-		<German>Tretet der Gegen-Reformation bei.</German>
-		<Italian>Join the Counter-Reformation.</Italian>
-		<Spanish>Join the Counter-Reformation.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_REFORMATION_COUNTER</Tag>
-		<English>Your state religion remains Catholic. Protestantism will only spread to some of your larger cities. You will declare war on all civilizations that decided to convert to Protestantism.</English>
-		<French>Le catholicisme demeure votre religion d'&#201;tat. Le protestantisme se propagera seulement &#224; certaines de vos plus grandes villes. Vous d&#233;clarerez la guerre &#224; toutes les civilisations qui se sont converties au protestantisme.</French>
-		<German>Your state religion remains Catholic. Protestantism will only spread to some of your larger cities. You will declare war on all civilizations that decided to convert to Protestantism.</German>
-		<Italian>Your state religion remains Catholic. Protestantism will only spread to some of your larger cities. You will declare war on all civilizations that decided to convert to Protestantism.</Italian>
-		<Spanish>Your state religion remains Catholic. Protestantism will only spread to some of your larger cities. You will declare war on all civilizations that decided to convert to Protestantism.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_REFORMATION_EMBRACE</Tag>
-		<English>State religion and most of your cities will change to Protestantism. Catholicism can remain in larger cities. Seizing control of Church assets in Catholic cities is expected to bring %d1 gold to your treasury. If you have founded Protestantism, a shrine will be built in its holy city. Catholic civilizations may declare war on you to stop the Reformation.</English>
-		<French>Le protestantisme deviendra votre religion d'&#201;tat et la plupart de vos villes s'y convertiront. Le catholicisme peut rester dans les grandes villes. Prendre le contr&#244;le des biens de l'&#201;glise dans les villes catholiques vous rapportera %d1 or. Si vous &#234;tes le fondateur du protestantisme, un lieu saint sera construit dans la ville sainte. Les civilisations catholiques pourront vous d&#233;clarer la guerre pour freiner la R&#233;forme.</French>
-		<German>State religion and most of your cities will change to Protestantism. Catholicism can remain in larger cities. Seizing control of Church assets in Catholic cities is expected to bring %d1 gold to your treasury. If you have founded Protestantism, a shrine will be built in its holy city. Catholic civilizations may declare war on you to stop the Reformation.</German>
-		<Italian>State religion and most of your cities will change to Protestantism. Catholicism can remain in larger cities. Seizing control of Church assets in Catholic cities is expected to bring %d1 gold to your treasury. If you have founded Protestantism, a shrine will be built in its holy city. Catholic civilizations may declare war on you to stop the Reformation.</Italian>
-		<Spanish>State religion and most of your cities will change to Protestantism. Catholicism can remain in larger cities. Seizing control of Church assets in Catholic cities is expected to bring %d1 gold to your treasury. If you have founded Protestantism, a shrine will be built in its holy city. Catholic civilizations may declare war on you to stop the Reformation.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_REFORMATION_TOLERATE</Tag>
-		<English>Protestantism can spread to your cities and even replace Catholicism.</English>
-		<French>Le protestantisme peut se propager dans vos villes et m&#234;me remplacer le catholicisme.</French>
-		<German>Protestantism can spread to your cities and even replace Catholicism.</German>
-		<Italian>Protestantism can spread to your cities and even replace Catholicism.</Italian>
-		<Spanish>Protestantism can spread to your cities and even replace Catholicism.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_REFORMATION_TOLERATE_STATE</Tag>
-		<English>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</English>
-		<French>Le catholicisme demeure votre religion d'&#201;tat. Le protestantisme peut se propager dans vos villes et m&#234;me remplacer le catholicisme.</French>
-		<German>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</German>
-		<Italian>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</Italian>
-		<Spanish>Your state religion remains Catholic. Protestantism can spread to your cities and even replace Catholicism.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_RIFLED_CANNON_1</Tag>
 		<English>Do we want stronger cannon? Is that a trick question?</English>
 		<French>Si nous voulons des canons plus puissants ? C'est une question pi&#232;ge ?</French>
@@ -3099,38 +3043,6 @@
 		<Spanish>&#161;Es un ejemplo a seguir para todo el mundo! Buen trabajo.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TCC_ACQUIRE</Tag>
-		<English>Will offer %d1 gold to %s2 for their cities of %s3. Their refusal will lead to war.</English>
-		<French>Offrir %d1 or &#224; : %s2 pour leurs villes de %s3. Leur refus causera une guerre.</French>
-		<German>Will offer %d1 gold to %s2 for their cities of %s3. Their refusal will lead to war.</German>
-		<Italian>Will offer %d1 gold to %s2 for their cities of %s3. Their refusal will lead to war.</Italian>
-		<Spanish>Will offer %d1 gold to %s2 for their cities of %s3. Their refusal will lead to war.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TCC_COLONIZE</Tag>
-		<English>Will offer %d1 gold to our colonists to settle %s2.</English>
-		<French>Offrir %d1 or &#224; nos colons pour fonder %s2.</French>
-		<German>Will offer %d1 gold to our colonists to settle %s2.</German>
-		<Italian>Will offer %d1 gold to our colonists to settle %s2.</Italian>
-		<Spanish>Will offer %d1 gold to our colonists to settle %s2.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TCC_CONQUEST</Tag>
-		<English>Will draft armies to attack %s1 to conquer their cities of %s2.</English>
-		<French>Lever des arm&#233;es pour attaquer : %s1 et conqu&#233;rir leurs villes de %s2.</French>
-		<German>Will draft armies to attack %s1 to conquer their cities of %s2.</German>
-		<Italian>Will draft armies to attack %s1 to conquer their cities of %s2.</Italian>
-		<Spanish>Will draft armies to attack %s1 to conquer their cities of %s2.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TCC_NO_CITIES</Tag>
-		<English>There are no cities that your armies could conquer.</English>
-		<French>Il n'y a pas de villes disponibles pour la conqu&#234;te.</French>
-		<German>There are no cities that your armies could conquer.</German>
-		<Italian>There are no cities that your armies could conquer.</Italian>
-		<Spanish>There are no cities that your armies could conquer.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TEA_1</Tag>
 		<English>The taxes from these sales should boost our coffers nicely, as well as boosting our relations.</English>
 		<French>Les taxes de ces ventes devraient faire du bien &#224; nos caisses et vont permettre d'am&#233;liorer nos revenus.</French>
@@ -3145,22 +3057,6 @@
 		<German>Teeexporte an %s1:3_civ_adjective Kunden haben einen Bonus f&#252;r unsere Beziehungen eingebracht.</German>
 		<Italian>Le esportazioni di t&#232; a clienti %s1:3_civ_adjective hanno migliorato le nostre relazioni.</Italian>
 		<Spanish>Las exportaciones de t&#233; a los clientes %s1:3_civ_adjective han mejorado notablemente nuestras relaciones.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TEXT_TRADING_COMPANY_CONQUERORS_1</Tag>
-		<English>The %s1_civ_adjective Trading Company has established control over South Asian harbors.</English>
-		<French>La compagnie commerciale %s1_civ_adjective a &#233;tabli son contr&#244;le sur les ports d'Asie du Sud.</French>
-		<German>Die %s1:1_civ_adjective Handelsgesellschaft hat Kontrolle &#252;ber einige s&#252;dasiatische H&#228;fen erlangt.</German>
-		<Italian>The %s1_civ_adjective Trading Company has established control over South Asian harbors.</Italian>
-		<Spanish>The %s1_civ_adjective Trading Company has established control over South Asian harbors.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TEXT_TRADING_COMPANY_CONQUERORS_2</Tag>
-		<English>The %s1_civ_adjective government supports its Trading Company to achieve military control over its South Asian trade routes!</English>
-		<French>Le gouvernement %s1_civ_adjective soutient sa compagnie commerciale afin d'&#233;tablir un contr&#244;le militaire sur les routes commerciales d'Asie du Sud !</French>
-		<German>Die %s1:1_civ_adjective Regierung unterst&#252;tzt ihre Handelsgesellschaft darin, milit&#228;rische Kontrolle &#252;ber ihre s&#252;dasiatischen Handelsrouten zu erlangen!</German>
-		<Italian>The %s1_civ_adjective government supports its Trading Company to achieve military control over its South Asian trade routes!</Italian>
-		<Spanish>The %s1_civ_adjective government supports its Trading Company to achieve military control over its South Asian trade routes!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THE_GOTHS_HELP_1</Tag>
@@ -3265,30 +3161,6 @@
 		<German>Lasst das Opfer verfolgen und gefangen nehmen, koste es, was es wolle!</German>
 		<Italian>Fate ogni sforzo per ricatturarlo!</Italian>
 		<Spanish>Haz lo que sea necesario para capturarlo!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRADING_COMPANY_CONQUERORS_1</Tag>
-		<English>Fund the establishment of contracted harbors out of our treasury.</English>
-		<French>Financer l'&#233;tablissement de concessions portuaires &#224; partir de notre tr&#233;sor.</French>
-		<German>Finanziert die Einrichtung von Vertragsh&#228;fen aus unserer Schatzkammer.</German>
-		<Italian>Fund the establishment of contracted harbors out of our treasury.</Italian>
-		<Spanish>Fund the establishment of contracted harbors out of our treasury.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRADING_COMPANY_CONQUERORS_2</Tag>
-		<English>Draft an army to establish control.</English>
-		<French>Lever une arm&#233;e pour &#233;tablir le contr&#244;le.</French>
-		<German>Stellt eine Armee auf, um die Kontrolle zu erringen.</German>
-		<Italian>Draft an army to establish control.</Italian>
-		<Spanish>Draft an army to establish control.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRADING_COMPANY_CONQUERORS_3</Tag>
-		<English>This is none of our concern.</English>
-		<French>Ce n'est pas de nos affaires.</French>
-		<German>Das geht uns nichts an.</German>
-		<Italian>This is none of our concern.</Italian>
-		<Spanish>This is none of our concern.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AIRLINER_CRASH_1</Tag>
@@ -4571,14 +4443,6 @@
 		<Spanish>Los cuidadores de animales han descubierto c&#243;mo domesticar el abundante suministro de perros de las praderas que tenemos. Ahora los est&#225;n vendiendo como mascotas.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_REFORMATION</Tag>
-		<English>The introduction of academic traditions has unleashed a wave of new doctrines. Reformers all over the Catholic world are challenging the authority of the Pope over Christian theology. How shall we react?</English>
-		<French>Le d&#233;veloppement de nouvelles traditions universitaires a permis la diffusion de nouvelles id&#233;ologies. &#192; travers le monde catholique, des r&#233;formistes d&#233;fient l'autorit&#233; du pape sur des questions de th&#233;ologie. Comment devons-nous r&#233;agir ?</French>
-		<German>Die Erfindung der Druckerpresse hat eine Welle neuer Doktrinen ausgel&#246;st. Reformer aus der gesamten katholischen Welt fordern die Autorit&#228;t des Papstes &#252;ber theologische Fragen heraus. Wie sollen wir reagieren?</German>
-		<Italian>The introduction of academic traditions has unleashed a wave of new doctrines. Reformers all over the Catholic world are challenging the authority of the Pope over Christian theology. How shall we react?</Italian>
-		<Spanish>The introduction of academic traditions has unleashed a wave of new doctrines. Reformers all over the Catholic world are challenging the authority of the Pope over Christian theology. How shall we react?</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RIFLED_CANNON_1</Tag>
 		<English>Our knowledge of rifled barrels has been successfully applied to new cannon designs.</English>
 		<French>Notre connaissance des canons ray&#233;s a &#233;t&#233; appliqu&#233;e avec succ&#232;s aux nouveaux mod&#232;les de canons.</French>
@@ -4833,14 +4697,6 @@
 		<German>Die Erfindung des Turmschildes hat unsere Fu&#223;soldaten mit einem gewissen Schutz gegen Bogensch&#252;tzen ausgestattet.</German>
 		<Italian>L'invenzione dello scudo torre ha fornito ai nostri fanti un po' di protezione contro gli arcieri.</Italian>
 		<Spanish>La invenci&#243;n del escudo de torre ha proporcionado a nuestros soldados de infanter&#237;a cierta protecci&#243;n frente a los arqueros.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_TRADING_COMPANY_CONQUERORS</Tag>
-		<English>With the establishment of our own Trading Company, our country's merchants are approaching you to take action to further assert their position in the South Asian markets.</English>
-		<French>Avec l'&#233;tablissement de notre compagnie commerciale, les marchands de notre pays vous demandent d'agir pour mieux asseoir leur position dans les march&#233;s d'Asie du Sud.</French>
-		<German>Mit der Einrichtung unserer eignenen Handelsgesellschaft treten die Kaufleute unseres Landes an Euch heran, Ma&#223;nahmen zur weiteren Sicherung ihrer Position in den s&#252;dasiatischen M&#228;rkten zu ergreifen.</German>
-		<Italian>With the establishment of our own Trading Company, our country's merchants are approaching you to take action to further assert their position in the South Asian markets.</Italian>
-		<Spanish>With the establishment of our own Trading Company, our country's merchants are approaching you to take action to further assert their position in the South Asian markets.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRUFFLES_1</Tag>
@@ -6251,14 +6107,6 @@
 		<Spanish>Un reputado cient&#237;fico de %s2_city se ha convertido en predicador en el monasterio cristiano local.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_REFORMATION</Tag>
-		<English>The Reformation has reached the %s1_civ_adjective civilization.</English>
-		<French>La R&#233;forme a atteint la civilisation %s1_civ_adjective.</French>
-		<German>Die Reformation hat die %s1:1 Zivilisation erreicht.</German>
-		<Italian>The Reformation has reached the %s1_civ_adjective civilization.</Italian>
-		<Spanish>The Reformation has reached the %s1_civ_adjective civilization.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RIFLED_CANNON_1</Tag>
 		<English>%s1_civ_adjective Cannon units can now shoot farther and more accurately thanks to improved barrel design.</English>
 		<French>Les unit&#233;s d'artillerie %s1:4_civ_adjective peuvent &#224; pr&#233;sent tirer plus loin et plus pr&#233;cis&#233;ment gr&#226;ce aux f&#251;ts am&#233;lior&#233;s.</French>
@@ -6545,14 +6393,6 @@
 		<German>Im %s1:2_civ_adjective Reich gibt es einen religi&#246;sen Skandal, weil das geweihte Opfer vor der heiligen Blutzeremonie entkommen konnte.</German>
 		<Italian>L'uomo che ha le sembianze di Tezcalipoca &#232; scappato durante la celebrazione di quest'anno di Toxcatl nell'impero %s1:1_civ_adjective</Italian>
 		<Spanish>El hombre que es el favorito de Tezcatlipoca ha huido durante el festival Toxcatl en el imperio %s1_civ_adjective.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_TRADING_COMPANY_CONQUERORS</Tag>
-		<English>The %s1_civ_adjective Trading Company considers to take further actions to enforce its South Asian market position.</English>
-		<French>La compagnie commerciale %s1_civ_adjective consid&#232;re la possibilit&#233; d'agir pour renforcer sa position sur les march&#233;s d'Asie du Sud.</French>
-		<German>Die %s1:1 Handelsgesellschaft erw&#228;gt weitere Aktionen zur Festigung ihrer Marketstellung in S&#252;dasien.</German>
-		<Italian>The %s1_civ_adjective Trading Company considers to take further actions to enforce its South Asian market position.</Italian>
-		<Spanish>The %s1_civ_adjective Trading Company considers to take further actions to enforce its South Asian market position.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRUFFLES</Tag>
