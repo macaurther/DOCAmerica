@@ -162,14 +162,6 @@
 		<Spanish>En Rhye's and Fall of Civilization no se permite fundar ciudades en tundra, hielo o desierto si no hay agua cerca.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_21</Tag>
-		<English>In Rhye's and Fall of Civilization, jungle, rainforest and marshes are impassable to most land units.</English>
-		<French>Dans Rhye's and Fall of Civilization, la plupart des unit&#233;s terrestres ne peuvent pas franchir les marais, les for&#234;ts tropicales et les jungles.</French>
-		<German>In Rhye's and Fall of Civilization sind Dschungel-, Regenwald- und Sumpf-Gel&#228;ndefelder f&#252;r die meisten Landeinheiten unpassierbar.</German>
-		<Italian>In Rhye's and Fall giungle e paludi sono impossibili da attraversare per la maggior parte delle unit&#224; terrestri.</Italian>
-		<Spanish>En Rhye's and Fall of Civilization la mayor&#237;a de las unidades terrestres no pueden atravesar junglas ni ci&#233;nagas.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_22</Tag>
 		<English>If you attempt to stop the growth of newborn civs, some of your units will flip to their side.</English>
 		<French>Si vous tentez d'arr&#234;ter le d&#233;veloppement d'une civilisation &#233;mergente, certaines de vos unit&#233;s se rangeront de son c&#244;t&#233;.</French>
@@ -321,22 +313,7 @@
 		<Italian>Le civilt&#224; rivali controllate dal computer costituiscono una minaccia pi&#249; consistente dal mare: flotte pi&#249; forti, invasioni anfibie... Non farti cogliere di sorpresa! I leader pi&#249; bellicosi possono sviluppare piani di attacchi molto subdoli, perch&#233; hanno imparato tattiche diverse dai normali attacchi armati.</Italian>
 		<Spanish>Las civilizaciones rivales que lleva el ordenador plantean una amenaza mucho m&#225;s seria desde el mar. Mayores flotas, invasiones anfibias... ¡Que no te pillen desprevenido! Los l&#226;deres m&#225;s belicosos pueden ser mucho m&#225;s viles con sus planes de ataque, ya que han aprendido a pensar m&#225;s all&#225; de la espada.</Spanish>
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_1</Tag>
-		<English>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</English>
-		<French>Lorsqu'ils sont contr&#244;l&#233;s par l'IA, les Mongols re&#231;oivent des arm&#233;es suppl&#233;mentaires pour attaquer la Russie et le Moyen-Orient. Soyez pr&#234;t !</French>
-		<German>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</German>
-		<Italian>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</Italian>
-		<Spanish>AI Mongols receive additional armies to attack Russia and the Middle East. Be prepared!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_2</Tag>
-		<English>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</English>
-		<French>Dans Dawn of Civilizations, plusieurs civilisations, comme Byzance, l'Italie et la Tha&#239;lande, naissent seulement lorsque certaines conditions sont remplies. Elles n'apparaissent donc pas dans toutes les parties.</French>
-		<German>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</German>
-		<Italian>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</Italian>
-		<Spanish>In Dawn of Civilization, several civilizations like Byzantium, Italy and Thailand have conditional spawns, and don't appear in every game.</Spanish>
-	</TEXT>
+	
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_3</Tag>
 		<English>Several AI civilizations flip larger areas on spawn to help them along.</English>
@@ -347,19 +324,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_4</Tag>
-		<English>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</English>
-		<French>Dans Dawn of Civilization, les technologies gratuites, comme celle que donne l'Oracle, doivent &#234;tre choisies parmi celles de l'&#232;re actuelle ou des &#232;res pass&#233;es.</French>
-		<German>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</German>
-		<Italian>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</Italian>
-		<Spanish>In Dawn of Civilization, free technology effects like the Oracle only allow you to choose technologies of your current or earlier eras.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_5</Tag>
-		<English>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</English>
-		<French>Si vous contr&#244;lez une civilisation d'Europe de l'Ouest, la construction d'une compagnie commerciale vous permettra de prendre de l'expansion en Afrique ou en Asie.</French>
-		<German>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</German>
-		<Italian>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</Italian>
-		<Spanish>If you're playing as a Western European civilization, build a Trading Company to expand to Africa or Asia.</Spanish>
+		<English>In Dawn of Civilization, free technology effects only allow you to choose technologies of your current or earlier eras.</English>
+		<French>In Dawn of Civilization, free technology effects only allow you to choose technologies of your current or earlier eras.</French>
+		<German>In Dawn of Civilization, free technology effects only allow you to choose technologies of your current or earlier eras.</German>
+		<Italian>In Dawn of Civilization, free technology effects only allow you to choose technologies of your current or earlier eras.</Italian>
+		<Spanish>In Dawn of Civilization, free technology effects only allow you to choose technologies of your current or earlier eras.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_6</Tag>
@@ -386,14 +355,6 @@
 		<Spanish>You need to discover Exploration before you can vassalize far away civilizations.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_9</Tag>
-		<English>You need to discover Exploration before you can train settlers on other continents than your capital's.</English>
-		<French>Vous devez d&#233;couvrir l'explorarion pour pouvoir cr&#233;er des colons sur des continents autres que celui o&#249; est situ&#233;e votre capitale.</French>
-		<German>You need to discover Exploration before you can train settlers on other continents than your capital's.</German>
-		<Italian>You need to discover Exploration before you can train settlers on other continents than your capital's.</Italian>
-		<Spanish>You need to discover Exploration before you can train settlers on other continents than your capital's.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_10</Tag>
 		<English>In Dawn of Civilization, military units cannot be killed by the plague, only weakened.</English>
 		<French>Dans Dawn of Civilization, la peste affaiblit les unit&#233;s militaires mais ne les tue pas.</French>
@@ -402,36 +363,12 @@
 		<Spanish>In Dawn of Civilization, military units cannot be killed by the plague, only weakened.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_11</Tag>
-		<English>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</English>
-		<French>Les religions apparent&#233;es, comme l'hindouisme et le bouddhisme ou encore le confucianisme et le tao&#239;sme, ne cr&#233;ent pas de malheur si l'une d'elles est votre religion d'&#201;tat.</French>
-		<German>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</German>
-		<Italian>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</Italian>
-		<Spanish>Related religions like Hinduism and Buddhism or Confucianism and Taoism don't create unhappiness if one of them is your state religion</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_12</Tag>
-		<English>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</English>
-		<French>Les religions apparent&#233;es, comme l'hindouisme et le bouddhisme ou encore le confucianisme et le tao&#239;sme, cr&#233;ent des p&#233;nalit&#233;s diplomatiques moindres.</French>
-		<German>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</German>
-		<Italian>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</Italian>
-		<Spanish>Related religions like Hinduism and Buddhism or Confucianism and Taoism create reduced diplomacy penalties</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_13</Tag>
 		<English>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</English>
 		<French>Les si&#232;ges sociaux des soci&#233;t&#233;s commerciales ont &#233;t&#233; retir&#233;s du jeu ; les soci&#233;t&#233;s commerciales se propagent par elles-m&#234;mes lorsque les conditions sont r&#233;unies.</French>
 		<German>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</German>
 		<Italian>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</Italian>
 		<Spanish>Corporation headquarters and executives have been removed, corporations spread on their own if the prerequisites are met.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_14</Tag>
-		<English>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</English>
-		<French>Les soci&#233;t&#233;s commerciales de la route de la soie et de la compagnie commerciale ne peuvent se propager que dans les r&#233;gions appropri&#233;es d'un point de vue historique.</French>
-		<German>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</German>
-		<Italian>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</Italian>
-		<Spanish>The Silk Route and Trading Company corporations can only spread in historically appropriate regions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_15</Tag>
@@ -448,14 +385,6 @@
 		<German>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</German>
 		<Italian>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</Italian>
 		<Spanish>In Dawn of Civilization, many wonders have religion or civic prerequisites to encourage their historical distribution.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_17</Tag>
-		<English>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</English>
-		<French>La premi&#232;re civilisation catholique &#224; d&#233;couvrir l'universit&#233; d&#233;clenche la R&#233;forme. Toutes les civilisations catholiques doivent alors d&#233;cider si elles se convertissent au protestantisme.</French>
-		<German>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</German>
-		<Italian>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</Italian>
-		<Spanish>Researching Academia as a Catholic civilization starts the Reformation, prompting all Catholic civilizations to decide if they want to convert to Protestantism.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_18</Tag>
@@ -490,14 +419,6 @@
 		<Spanish>Dawn of Civilization is still actively developed. You can get the latest bugfixes and additions by using the Git version of the mod. Visit the forum under http://forums.civfanatics.com/forumdisplay.php?f=452 to find out how.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_22</Tag>
-		<English>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</English>
-		<French>Le catholicisme est fond&#233; au moment du Grand Schisme, qui se produit lorsque plus de la moiti&#233; des villes orthodoxes tombent hors du contr&#244;le des civilisations orthodoxes.</French>
-		<German>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</German>
-		<Italian>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</Italian>
-		<Spanish>Catholicism is founded by the Great Schism, which occurs when more than half of all Orthodox cities fall outside of the control of Orthodox civilisations.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_23</Tag>
 		<English>The amount of cultures that Great Artists can generate using Great Works depends on the game era.</English>
 		<French>La quantit&#233; de culture engendr&#233;e lorsqu'un artiste illustre cr&#233;e un chef d'&#339;uvre d&#233;pend de l'&#232;re actuelle.</French>
@@ -520,22 +441,6 @@
 		<German>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</German>
 		<Italian>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</Italian>
 		<Spanish>Confused about the expansion and civic stability rules? Look them up under the Concepts section in the Civilopedia!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_26</Tag>
-		<English>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</English>
-		<French>La musique d'ambiance de l'&#232;re classique, du Moyen &#194;ge et de la Renaissance d&#233;pend de votre religion d'&#201;tat.</French>
-		<German>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</German>
-		<Italian>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</Italian>
-		<Spanish>The soundtracks you hear during the Classical, Medieval and Renaissance eras depend on your state religion.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_27</Tag>
-		<English>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</English>
-		<French>Lorsqu'ils sont contr&#244;l&#233;s par l'IA, les Romains et les Grecs re&#231;oivent des arm&#233;es pour conqu&#233;rir la r&#233;gion m&#233;diterran&#233;enne et la M&#233;sopotamie. Soyez pr&#234;t !</French>
-		<German>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</German>
-		<Italian>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</Italian>
-		<Spanish>AI Romans and Greeks will receive armies to conquer the Mediterranean and Mesopotamia. Be prepared!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_28</Tag>
@@ -570,14 +475,6 @@
 		<Spanish>If you run Slavery or Colonialism, you can trade slaves when interacting with other civilizations in the diplomacy interface.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_32</Tag>
-		<English>Tribal villages are placed randomly at the beginning of the game.</English>
-		<French>Les villages tribaux sont plac&#233;s al&#233;atoirement au d&#233;but du jeu.</French>
-		<German>Tribal villages are placed randomly at the beginning of the game.</German>
-		<Italian>Tribal villages are placed randomly at the beginning of the game.</Italian>
-		<Spanish>Tribal villages are placed randomly at the beginning of the game.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_33</Tag>
 		<English>The area certain civilisations flip on spawn is not always identical to their core. Several civilizations can flip larger areas.</English>
 		<French>Lorsqu'une nouvelle civilisation appara&#238;t, la r&#233;gion qui lui revient automatiquement n'est pas forc&#233;ment identique &#224; son c&#156;ur historique. Plusieurs civilisations re&#231;oivent des r&#233;gions beaucoup plus &#233;tendues.</French>
@@ -600,22 +497,6 @@
 		<German>The stability and flip zone maps for all civilizations can be found in the Maps folder.</German>
 		<Italian>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Italian>
 		<Spanish>The stability and flip zone maps for all civilizations can be found in the Maps folder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_36</Tag>
-		<English>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</English>
-		<French>Les civilisations tamoule, maure, tib&#233;taine, polonaise et congolaise peuvent &#234;tre configur&#233;es de telle sorte qu'elles n'apparaissent pas &#224; chaque partie. Pour ce faire, il faut modifier le fichier XML\GlobalDefinesAlt.xml.</French>
-		<German>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</German>
-		<Italian>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</Italian>
-		<Spanish>The Tamil, Moorish, Tibetan, Polish and Congolese civilizations can be configured not to appear in every game. Edit the XML\GlobalDefinesAlt.xml file.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_37</Tag>
-		<English>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</English>
-		<French>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</French> <!-- translate -->
-		<German>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</German>
-		<Italian>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</Italian>
-		<Spanish>The Polynesian civilization is intended for the human player only. You can enable it for the AI in XML\GlobalDefinesAlt.xml, however its AI will not be geared towards playing successfully or realistically.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_38</Tag>
@@ -792,22 +673,6 @@
 		<German>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</German>
 		<Italian>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Italian>
 		<Spanish>Dawn of Civilization features a completely new tech tree, consisting of 141 technologies spread over 7 eras.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_60</Tag>
-		<English>The last two eras are now called the Global and Digital eras.</English>
-		<French>Les deux derni&#232;res &#232;res s'appellent d&#233;sormais l'&#232;re mondiale et l'&#232;re num&#233;rique.</French>
-		<German>The last two eras are now called the Global and Digital eras.</German>
-		<Italian>The last two eras are now called the Global and Digital eras.</Italian>
-		<Spanish>The last two eras are now called the Global and Digital eras.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_HINT_DOC_61</Tag>
-		<English>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</English>
-		<French>Les unit&#233;s de si&#232;ge sont d&#233;sormais plus co&#251;teuses, mais leur chance &#233;lev&#233;e de battre en retraite les rend plus durables.</French>
-		<German>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</German>
-		<Italian>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</Italian>
-		<Spanish>Siege units are now much more expensive, but their increased withdrawal chance also makes them less expendable.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_62</Tag>
@@ -1032,6 +897,38 @@
 		<German>NEW: Use ALT L-Click to set up an infinite production queue of units.</German>
 		<Italian>NEW: Use ALT L-Click to set up an infinite production queue of units.</Italian>
 		<Spanish>NEW: Use ALT L-Click to set up an infinite production queue of units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_1</Tag>
+		<English>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</English>
+		<French>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</French>
+		<German>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</German>
+		<Italian>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</Italian>
+		<Spanish>In DoC America, jungles and bogs are impassable to most land units. Marsh is a new terrain type that can be entered, and Rainforests can now be entered as well.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_2</Tag>
+		<English>In DoC America, all post-Columbian resources spawn at 1600 AD.</English>
+		<French>In DoC America, all post-Columbian resources spawn at 1600 AD.</French>
+		<German>In DoC America, all post-Columbian resources spawn at 1600 AD.</German>
+		<Italian>In DoC America, all post-Columbian resources spawn at 1600 AD.</Italian>
+		<Spanish>In DoC America, all post-Columbian resources spawn at 1600 AD.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_3</Tag>
+		<English>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</English>
+		<French>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</French>
+		<German>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</German>
+		<Italian>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</Italian>
+		<Spanish>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_4</Tag>
+		<English>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</English>
+		<French>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</French>
+		<German>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</German>
+		<Italian>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</Italian>
+		<Spanish>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_</Tag>
