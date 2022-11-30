@@ -1267,14 +1267,6 @@
 		<Spanish>Estamos demasiado apurados como para prestarles ayuda.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_FORTY_THIEVES_1</Tag>
-		<English>Excellent.</English>
-		<French>Excellent.</French>
-		<German>Hervorragend.</German>
-		<Italian>Eccellente.</Italian>
-		<Spanish>Excelente.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_FREEDOMCONCERT_1</Tag>
 		<English>Donate the money raised to the local temples.</English>
 		<French>Donner l'argent collect&#233; aux petits lieux de culte locaux.</French>
@@ -3707,14 +3699,6 @@
 		<Spanish>La tragedia se ha cebado con %s2_city, pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_FORTY_THIEVES_1</Tag>
-		<English>The legend of Forty Thieves has attracted treasure hunters and tourists to the area, boosting local commerce.</English>
-		<French>La l&#233;gende des Quarante Voleurs a attir&#233; des chasseurs de tr&#233;sors et des touristes vers cette zone, ce qui aide le commerce local.</French>
-		<German>Die Legende der Vierzig Diebe hat Schatzsucher und Abenteurer in die Gegend gelockt, wodurch die lokale Wirtschaft gesteigert wird.</German>
-		<Italian>La leggenda dei Quaranta ladroni ha attirato in zona cacciatori di tesori e turisti, incrementando il commercio locale.</Italian>
-		<Spanish>La leyenda de los Cuarenta Ladrones ha atra&#237;do a cazatesoros y turistas a la zona, lo que ha aumentado el comercio local.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FREEDOMCONCERT_1</Tag>
 		<English>Musical artists from across our nation have gathered in %s2_city to raise money and awareness for the cause of religious freedom.</English>
 		<French>Des artistes musicaux de toute la nation se sont rassembl&#233;s &#224; %s2_city pour collecter de l'argent et promouvoir la cause de la libert&#233; de culte.</French>
@@ -5521,14 +5505,6 @@
 		<German>Ein Feuer hat ein Waldst&#252;ck nahe der %s1:2_civ_adjective Stadt %s2_city verw&#252;stet.</German>
 		<Italian>Un incendio ha devastato una foresta vicina alla citt&#224; %s1:2_civ_adjective di %s2_city.</Italian>
 		<Spanish>El fuego ha asolado un bosque cerca de la ciudad %s1:2_civ_adjective de %s2_city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_FORTY_THIEVES_1</Tag>
-		<English>The legend of Forty Thieves is luring treasure hunters and adventure seekers to %s2_civ_adjective lands.</English>
-		<French>La l&#233;gende des Quarante Voleurs attire les chasseurs de tr&#233;sors et les aventuriers vers les terres %s2:4_civ_adjective.</French>
-		<German>Die Legende der Vierzig Diebe lockt Schatzsucher und Abenteurer in die %s2:2_civ_adjective Gebiete.</German>
-		<Italian>La leggenda dei Quaranta ladroni sta attirando cacciatori di tesori e avventurieri nelle terre %s2:4_civ_adjective.</Italian>
-		<Spanish>La leyenda de los Cuarenta Ladrones est&#225; atrayendo a cazatesoros y aventureros a las tierras %s2:4_civ_adjective.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FREEDOMCONCERT</Tag>

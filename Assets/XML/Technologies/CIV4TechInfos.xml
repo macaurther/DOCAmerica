@@ -2839,9 +2839,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_FEDERALISM</Type>
-			<Description>TXT_KEY_TECH_FEDERALISM</Description>
-			<Civilopedia>TXT_KEY_TECH_FEDERALISM_PEDIA</Civilopedia>
+			<Type>TECH_BALANCE_OF_POWER</Type>
+			<Description>TXT_KEY_TECH_BALANCE_OF_POWER</Description>
+			<Civilopedia>TXT_KEY_TECH_BALANCE_OF_POWER_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2865,10 +2865,10 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_INDEPENDENCE</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_FEDERALISM_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_BALANCE_OF_POWER_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Federalism.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Constitution.dds</Button>
 		</TechInfo>
 
 <!-- #13 -->
@@ -3077,7 +3077,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_RIGHTS_OF_MAN</PrereqTech>
-				<PrereqTech>TECH_FEDERALISM</PrereqTech>
+				<PrereqTech>TECH_BALANCE_OF_POWER</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CIVIL_LIBERTIES_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -3117,7 +3117,7 @@
 				<PrereqTech>TECH_NEWSPAPERS</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
-				<PrereqTech>TECH_FEDERALISM</PrereqTech>
+				<PrereqTech>TECH_BALANCE_OF_POWER</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_NATIONALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

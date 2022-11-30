@@ -12,7 +12,7 @@ lCivilizations = [
 		iLeader=iPhilip,
 		iGold=400,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iCentralism, iManorialism, iRegulatedTrade, iTheocracy, iColonialism],
+		lCivics=[],
 		techs=techs.column(10).including(iCombinedArms, iGeography, iHorticulture),
 		dAttitudes={iPortugal: 2}
 	),
@@ -21,7 +21,7 @@ lCivilizations = [
 		iLeader=iLouis,
 		iGold=400,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iCentralism, iIndividualism, iRegulatedTrade, iClergy, iColonialism],
+		lCivics=[],
 		techs=techs.column(11).without(iUrbanPlanning, iEconomics),
 		dAttitudes={iEngland: -4, iNetherlands: 2}
 	),
@@ -30,7 +30,7 @@ lCivilizations = [
 		iLeader=iVictoria,
 		iGold=600,
 		iStateReligion=iProtestantism,
-		lCivics=[iMonarchy, iCentralism, iIndividualism, iFreeEnterprise, iTolerance, iColonialism],
+		lCivics=[],
 		techs=techs.column(11).without(iUrbanPlanning, iHorticulture),
 		dAttitudes={iFrance: -4, iPortugal: 2}
 	),
@@ -39,7 +39,7 @@ lCivilizations = [
 		iLeader=iJoao,
 		iGold=450,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iCentralism, iManorialism, iRegulatedTrade, iClergy, iColonialism],
+		lCivics=[],
 		techs=techs.column(10).including(iGeography, iHorticulture),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
 	),
@@ -48,7 +48,7 @@ lCivilizations = [
 		iLeader=iWilliam,
 		iGold=800,
 		iStateReligion=iProtestantism,
-		lCivics=[iRepublic, iCentralism, iIndividualism, iFreeEnterprise, iTolerance, iColonialism],
+		lCivics=[],
 		techs=techs.column(11).without(iHorticulture, iScientificMethod),
 		dAttitudes={iFrance: 2, iPortugal: -2}
 	),

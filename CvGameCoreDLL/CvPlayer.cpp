@@ -6146,9 +6146,8 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 
 	bool bStateReligion = GC.getBuildingInfo(eBuilding).getStateReligion() == NO_RELIGION || GC.getBuildingInfo(eBuilding).getStateReligion() == getStateReligion();
 	bool bOrStateReligion = GC.getBuildingInfo(eBuilding).getOrStateReligion() != NO_RELIGION && GC.getBuildingInfo(eBuilding).getOrStateReligion() == getStateReligion();
-	bool bSecularism = getCivics(CIVICOPTION_RELIGION) == CIVIC_SECULARISM;
 
-	if (!bStateReligion && !bOrStateReligion && !bSecularism)
+	if (!bStateReligion && !bOrStateReligion)
 	{
 		return false;
 	}
@@ -10281,19 +10280,6 @@ void CvPlayer::changeBuildingBadHealth(int iChange)
 
 int CvPlayer::getExtraHappiness() const
 {
-	// Leoreth: American UP
-	if (getCivilizationType() == AMERICA)
-	{
-		int iCivicHappiness = 0;
-
-		if (getCivics(CIVICOPTION_GOVERNMENT) == CIVIC_DEMOCRACY) iCivicHappiness += 2;
-		if (getCivics(CIVICOPTION_LEGITIMACY) == CIVIC_CONSTITUTION) iCivicHappiness += 2;
-		if (getCivics(CIVICOPTION_SOCIETY) == CIVIC_INDIVIDUALISM) iCivicHappiness += 2;
-		if (getCivics(CIVICOPTION_ECONOMY) == CIVIC_FREE_ENTERPRISE) iCivicHappiness += 2;
-
-		return m_iExtraHappiness + iCivicHappiness;
-	}
-
 	return m_iExtraHappiness;
 }
 
@@ -24111,51 +24097,13 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 		return NO_DENIAL;
 	}
 
-	bool bColonialism = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_TERRITORY) == CIVIC_COLONIALISM;
-	bool bNewWorld = false;
+	bool bSlavery = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_LABOR) == CIVIC_SLAVERY;
 
-	/*CvCity* pCapital = GET_PLAYER(ePlayer).getCapitalCity();
-	if (pCapital != NULL)
-	{
-		switch (pCapital->getRegionID())
-		{
-			case REGION_ALASKA:
-			case REGION_CANADA:
-			case REGION_UNITED_STATES:
-			case REGION_MESOAMERICA:
-			case REGION_CARIBBEAN:
-			case REGION_COLOMBIA:
-			case REGION_PERU:
-			case REGION_BRAZIL:
-			case REGION_ARGENTINA:
-				bNewWorld = true;
-				break;
-			default:
-				bNewWorld = true;
-		}
-	}*/
-
-	// don't buy when not running Colonialism
-	//if (!bColonialism && !bNewWorld)
-	if (!bColonialism)
+	// don't buy when not running Slavery
+	if (!bSlavery)
 	{
 		return DENIAL_NO_GAIN;
 	}
-
-	/*if (getCivics((CivicOptionTypes)2) != CIVIC_SLAVERY)
-	{
-		return DENIAL_UNKNOWN;
-	}*/
-	
-	/*if ((GC.getUnitInfo(pUnit->getUnitType()).getStateReligion() != GET_PLAYER(ePlayer).getStateReligion()) && (GC.getUnitInfo(pUnit->getUnitType()).getOrStateReligion() != GET_PLAYER(ePlayer).getStateReligion()))
-	{
-		return DENIAL_UNKNOWN;
-	}
-
-	if ((GC.getUnitInfo(pUnit->getUnitType()).getStateReligion() == getStateReligion()) || (GC.getUnitInfo(pUnit->getUnitType()).getOrStateReligion() == getStateReligion()))
-	{
-		return DENIAL_UNKNOWN;
-	}*/
 
 	if (GET_TEAM(getTeam()).AI_getWorstEnemy() == GET_PLAYER(ePlayer).getTeam())
 	{
@@ -25305,9 +25253,17 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 		}
 	}
 
+	if (getCurrentEra() >= ERA_MODERN)
+	{
+		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_CASTE_SYSTEM)
+		{
+			return true;
+		}
+	}
+
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_REPUBLIC || eCivic == CIVIC_VASSALAGE)
+		if (eCivic == CIVIC_COLONY || eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_MERCANTILISM)
 		{
 			return true;
 		}
@@ -25315,7 +25271,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_REVOLUTIONARY)
 	{
-		if (eCivic == CIVIC_DEIFICATION)
+		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_CHIEFDOM || eCivic == CIVIC_TRADITIONALISM)
 		{
 			return true;
 		}
@@ -25323,7 +25279,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
 	{
-		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_REDISTRIBUTION || eCivic == CIVIC_MERCHANT_TRADE)
+		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_SPECIALIZATION)
 		{
 			return true;
 		}
@@ -25331,7 +25287,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)CIVIL_RIGHTS))
 	{
-		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_MANORIALISM || eCivic == CIVIC_CASTE_SYSTEM)
+		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_CASTE_SYSTEM)
 		{
 			return true;
 		}
@@ -25347,15 +25303,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)EVANGELISM))
 	{
-		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_DEIFICATION)
-		{
-			return true;
-		}
-	}
-
-	if (getStateReligion() == ZOROASTRIANISM || getStateReligion() == ORTHODOXY || getStateReligion() == CATHOLICISM || getStateReligion() == PROTESTANTISM)
-	{
-		if (eCivic == CIVIC_SLAVERY)
+		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_COUNCIL)
 		{
 			return true;
 		}

@@ -10803,14 +10803,14 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	}*/
 
 	// Leoreth: some stability related AI help
-	if (eCivic == CIVIC_TOLERANCE || eCivic == CIVIC_SECULARISM)
+	if (eCivic == CIVIC_TOLERANCE || eCivic == CIVIC_MULTICULTURALISM)
 	{
 		if (getStabilityParameter(PARAMETER_RELIGION) < 0)
 		{
 			iValue += 15 * -getStabilityParameter(PARAMETER_RELIGION);
 		}
 	}
-	else if (eCivic == CIVIC_CENTRAL_PLANNING)
+	else if (eCivic == CIVIC_INDUSTRIALISM)
 	{
 		if (getStabilityParameter(PARAMETER_ECONOMIC_GROWTH) < 15)
 		{
@@ -10831,7 +10831,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 			iValue += 5 * -getStabilityParameter(PARAMETER_ECONOMIC_GROWTH);
 		}
 	}
-	else if (eCivic == CIVIC_VASSALAGE)
+	else if (eCivic == CIVIC_COUNCIL)
 	{
 		if (getCurrentEra() >= ERA_INDUSTRIAL)
 		{
@@ -10839,14 +10839,14 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 			iValue /= 4;
 		}
 	}
-	else if (eCivic == CIVIC_DEIFICATION)
+	else if (eCivic == CIVIC_CASTE_SYSTEM)
 	{
 		if (getCurrentEra() >= ERA_REVOLUTIONARY)
 		{
 			iValue /= 2;
 		}
 	}
-	else if (eCivic == CIVIC_REDISTRIBUTION)
+	else if (eCivic == CIVIC_MERCHANT_TRADE)
 	{
 		if (getCurrentEra() >= ERA_EXPLORATION)
 		{
@@ -10857,13 +10857,13 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	// Leoreth: boost some modern civics as soon as available
 	switch (eCivic)
 	{
-	case CIVIC_REVOLUTIONISM:
-	case CIVIC_CONSTITUTION:
-	case CIVIC_INDIVIDUALISM:
-	case CIVIC_TOTALITARIANISM:
-	case CIVIC_EGALITARIANISM:
+	case CIVIC_REPUBLIC:
+	case CIVIC_FEDERALISM:
+	case CIVIC_CONFEDERACY:
+	case CIVIC_SELF_DETERMINATION:
+	case CIVIC_INDUSTRIALISM:
 	case CIVIC_FREE_ENTERPRISE:
-	case CIVIC_CENTRAL_PLANNING:
+	case CIVIC_CONSUMERISM:
 	case CIVIC_PUBLIC_WELFARE:
 	case CIVIC_NATIONHOOD:
 	case CIVIC_MULTILATERALISM:
@@ -10871,7 +10871,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		iValue /= 5;
 		break;
 	case CIVIC_TOLERANCE:
-	case CIVIC_SECULARISM:
+	case CIVIC_MULTICULTURALISM:
 		if (getCurrentEra() >= ERA_ATOMIC)
 		{
 			iValue *= 6;
@@ -10893,7 +10893,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	}
 
 	// Leoreth: prefer deification if no state religion
-	if (eCivic == CIVIC_DEIFICATION)
+	if (eCivic == CIVIC_COUNCIL)
 	{
 		switch (getLastStateReligion())
 		{
@@ -10927,15 +10927,6 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	if (eCivic == CIVIC_MONARCHY && getCivilizationType() == NETHERLANDS)
 	{
 		iValue /= 2;
-	}
-
-	// Leoreth: take American UP into account
-	if (getCivilizationType() == AMERICA)
-	{
-		if (eCivic == CIVIC_DEMOCRACY || eCivic == CIVIC_CONSTITUTION || eCivic == CIVIC_INDIVIDUALISM || eCivic == CIVIC_FREE_ENTERPRISE)
-		{
-			iValue += 100;
-		}
 	}
 
 	return iValue;

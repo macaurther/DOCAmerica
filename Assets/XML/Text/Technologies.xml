@@ -1482,15 +1482,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_FEDERALISM</Tag>
-		<English>Federalism</English>
-		<French>Federalism</French>
-		<German>Federalism</German>
-		<Italian>Federalism</Italian>
-		<Spanish>Federalism</Spanish>
+		<Tag>TXT_KEY_TECH_BALANCE_OF_POWER</Tag>
+		<English>Balance of Power</English>
+		<French>Balance of Power</French>
+		<German>Balance of Power</German>
+		<Italian>Balance of Power</Italian>
+		<Spanish>Balance of Power</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_FEDERALISM_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_BALANCE_OF_POWER_QUOTE</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>
@@ -1498,7 +1498,7 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_FEDERALISM_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_BALANCE_OF_POWER_PEDIA</Tag>
 		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>

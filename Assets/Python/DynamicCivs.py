@@ -476,7 +476,6 @@ def specificName(iPlayer):
 	bAnarchy = pPlayer.isAnarchy()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (civic.iReligion == iTheocracy)
 	bResurrected = data.civs[iPlayer].iResurrections > 0
 	bCapitulated = isCapitulated(iPlayer)
 	iAnarchyTurns = data.civs[iPlayer].iAnarchyTurns
@@ -562,7 +561,6 @@ def specificAdjective(iPlayer):
 	bAnarchy = pPlayer.isAnarchy()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (civic.iReligion == iTheocracy)
 	bResurrected = data.civs[iPlayer].iResurrections > 0
 	bCapitulated = isCapitulated(iPlayer)
 	iAnarchyTurns = data.civs[iPlayer].iAnarchyTurns
@@ -716,7 +714,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	bAnarchy = pPlayer.isAnarchy()
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (civic.iReligion == iTheocracy)
 	bResurrected = data.civs[iPlayer].iResurrections > 0
 	bCapitulated = isCapitulated(iPlayer)
 	iAnarchyTurns = data.civs[iPlayer].iAnarchyTurns
@@ -849,7 +846,6 @@ def leader(iPlayer):
 	civic = civics(iPlayer)
 	bEmpire = isEmpire(iPlayer)
 	bCityStates = isCityStates(iPlayer)
-	bTheocracy = (civic.iReligion == iTheocracy)
 	bResurrected = data.civs[iPlayer].iResurrections > 0
 	bMonarchy = not (isCommunist(iPlayer) or isFascist(iPlayer) or isRepublic(iPlayer))
 	iAnarchyTurns = data.civs[iPlayer].iAnarchyTurns

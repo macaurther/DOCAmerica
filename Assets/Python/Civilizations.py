@@ -182,73 +182,73 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iTeotihuacan,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iTiwanaku,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iWari,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iMississippi,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iPuebloan,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iMuisca,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iNorse,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.column(4)
 	),
 	Civilization(
 		iChimu,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iInuit,
 		iGold=200,
-		lCivics=[iDespotism, iSlavery],
+		lCivics=[],
 		techs=techs.of(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iMonarchy, iSlavery, iRedistribution, iDeification],
+		lCivics=[],
 		techs=techs.column(1).including(iArtisanry, iMasonry).without(iSailing)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism, iCitizenship, iSlavery, iRedistribution, iDeification],
+		lCivics=[],
 		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
@@ -256,7 +256,7 @@ lCivilizations = [
 		iGold=200,
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
+		lCivics=[],
 		techs=techs.column(5)
 	),
 	Civilization(
@@ -264,13 +264,13 @@ lCivilizations = [
 		iGold=200,
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
+		lCivics=[],
 		techs=techs.column(5).including(iFirearms, iLogistics, iExploration)
 	),
 	Civilization(
 		iIroquois,
 		iGold=600,
-		lCivics=[iDespotism, iCitizenship, iSlavery, iRedistribution, iDeification],
+		lCivics=[],
 		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
@@ -278,7 +278,7 @@ lCivilizations = [
 		iGold=200,
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy],
+		lCivics=[],
 		lEnemies=[],
 		techs=techs.column(6)
 	),
@@ -287,7 +287,7 @@ lCivilizations = [
 		iGold=150,
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy, iTributaries],
+		lCivics=[],
 		techs=techs.column(6)
 	),
 	Civilization(
@@ -295,13 +295,13 @@ lCivilizations = [
 		iGold=600,
 		iAdvancedStartPoints=300,
 		iStateReligion=iProtestantism,
-		lCivics=[iRepublic, iCentralism, iManorialism, iMerchantTrade, iClergy],
+		lCivics=[],
 		techs=techs.column(6).including(iEconomics, iShipbuilding)
 	),
 	Civilization(
 		iHawaii,
 		iGold=700,
-		lCivics=[iMonarchy, iSlavery, iRedistribution, iDeification],
+		lCivics=[],
 		techs=techs.column(1).including(iNavigation).without(iTanning)
 	),
 	Civilization(
@@ -309,7 +309,7 @@ lCivilizations = [
 		iGold=200,
 		iAdvancedStartPoints=50,
 		iStateReligion=iOrthodoxy,
-		lCivics=[iElective, iVassalage, iManorialism, iMerchantTrade],
+		lCivics=[],
 		techs=techs.column(9)
 	),
 	Civilization(
@@ -317,20 +317,13 @@ lCivilizations = [
 		iGold=1500,
 		iAdvancedStartPoints=500,
 		iStateReligion=iProtestantism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iIsolationism],
-		techs=techs.column(10).including(iRepresentation, iIndependence)
-	),
-	Civilization(
-		iAmerica,
-		iGold=1500,
-		iStateReligion=iProtestantism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iIsolationism],
+		lCivics=[],
 		techs=techs.column(10).including(iRepresentation, iIndependence)
 	),
 	Civilization(
 		iHaiti,
 		iGold=100,
-		lCivics=[iMonarchy, iVassalage, iManorialism, iMerchantTrade, iClergy, iTributaries],
+		lCivics=[],
 		techs=techs.column(6)
 	),
 	Civilization(
@@ -338,7 +331,7 @@ lCivilizations = [
 		iGold=1200,
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
@@ -346,7 +339,7 @@ lCivilizations = [
 		iGold=1200,
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
@@ -354,7 +347,7 @@ lCivilizations = [
 		iGold=500,
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
-		lCivics=[iDespotism, iConstitution, iIndividualism, iRegulatedTrade, iClergy, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iFederalism)
 	),
 	Civilization(
@@ -362,7 +355,7 @@ lCivilizations = [
 		iGold=750,
 		iAdvancedStartPoints=150,
 		iStateReligion=iCatholicism,
-		lCivics=[iDespotism, iConstitution, iIndividualism, iRegulatedTrade, iClergy, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iRightsOfMan)
 	),
 	Civilization(
@@ -370,7 +363,7 @@ lCivilizations = [
 		iGold=1200,
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
@@ -378,7 +371,7 @@ lCivilizations = [
 		iGold=1200,
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
@@ -386,7 +379,7 @@ lCivilizations = [
 		iGold=1200,
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
@@ -394,7 +387,7 @@ lCivilizations = [
 		iGold=1600,
 		iAdvancedStartPoints=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iConstitution, iSlavery, iFreeEnterprise, iClergy, iColonialism],
+		lCivics=[],
 		techs=techs.column(11).including(iMetallurgy, iProtectionism, iHydraulics)
 	),
 	Civilization(
@@ -402,7 +395,7 @@ lCivilizations = [
 		iGold=1000,
 		iAdvancedStartPoints=250,
 		iStateReligion=iCatholicism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		lCivics=[],
 		techs=techs.column(14)
 	),
 	Civilization(
@@ -410,7 +403,7 @@ lCivilizations = [
 		iGold=1200,
 		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
-		lCivics=[iDemocracy, iConstitution, iIndividualism, iFreeEnterprise, iTolerance, iNationhood],
+		lCivics=[],
 		techs=techs.column(11).including(iGeology)
 	),
 ]

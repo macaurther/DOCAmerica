@@ -68,13 +68,7 @@ def notcivics(*civics):
 def isCommunist(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iLegitimacy == iVassalage:
-		return False
-	
-	if civic.iEconomy == iCentralPlanning:
-		return True
-	
-	if civic.iGovernment == iStateParty and civic.iSociety != iTotalitarianism and civic.iEconomy not in [iMerchantTrade, iFreeEnterprise]:
+	if civic.iEconomy == iPublicWelfare and civic.iGovernment == iDespotism:
 		return True
 		
 	return False
@@ -82,33 +76,24 @@ def isCommunist(iPlayer):
 def isFascist(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iSociety == iTotalitarianism:
+	if civic.iSociety not in [iTolerance, iMulticulturalism] and civic.iExpansion in [iNationhood, iPuppeteering] and civic.Legal not iDemocracy:
 		return True
 	
-	if civic.iGovernment == iStateParty:
-		return True
-		
 	return False
 	
 def isRepublic(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iGovernment == iDemocracy:
+	if civic.iLegal == iDemocracy:
 		return True
 	
-	if civic.iGovernment in [iDespotism, iRepublic, iElective] and civic.iLegitimacy == iConstitution:
+	if civic.iGovernment in [iDespotism, iRepublic] and civic.iLegitimacy in [iFederalism, iSelfDetermination, iDemocracy]:
 		return True
 	
 	return False
 	
 def isCityStates(iPlayer):
 	civic = civics(iPlayer)
-	
-	if civic.iLegitimacy not in [iAuthority, iCitizenship, iCentralism]:
-		return False
-	
-	if civic.iGovernment in [iRepublic, iElective, iDemocracy]:
-		return True
 	
 	if civic.iGovernment == iChiefdom and civ(iPlayer) in lCityStatesStart:
 		return True

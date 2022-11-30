@@ -567,12 +567,12 @@ iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
 iNumCivics = 42
-(iChiefdom, iDespotism, iMonarchy, iRepublic, iElective, iStateParty, iDemocracy,
-iAuthority, iCitizenship, iVassalage, iMeritocracy, iCentralism, iRevolutionism, iConstitution,
-iTraditionalism, iSlavery, iManorialism, iCasteSystem, iIndividualism, iTotalitarianism, iEgalitarianism,
-iReciprocity, iRedistribution, iMerchantTrade, iRegulatedTrade, iFreeEnterprise, iCentralPlanning, iPublicWelfare,
-iAnimism, iDeification, iClergy, iMonasticism, iTheocracy, iTolerance, iSecularism,
-iSovereignty, iConquest, iTributaries, iIsolationism, iColonialism, iNationhood, iMultilateralism) = range(iNumCivics)
+(iChiefdom, iDespotism, iEmpire, iColony, iMonarchy, iConfederacy, iRepublic,
+iAuthority, iCouncil, iCommonLaw, iViceroyality, iFederalism, iSelfDetermination, iDemocracy,
+iTraditionalism, iSpecialization, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
+iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
+iAnimism, iCasteSystem, iHaven, iPlantation, iTolerance, iIsolationism, iMulticulturalism,
+iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, iMultilateralism) = range(iNumCivics)
 
 iNumCivicCategories = 6
 (iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
