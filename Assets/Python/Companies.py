@@ -95,15 +95,9 @@ def getCityValue(city, iCompany):
 	iOwnerCiv = civ(iOwner)
 	owner = player(city)
 	ownerTeam = team(city)
-	
-	# Central Planning: only one company per city
-	if has_civic(owner, iCentralPlanning):
-		for iLoopCorporation in range(iNumCorporations):
-			if city.isHasCorporation(iLoopCorporation) and iLoopCorporation != iCompany:
-				return -1
 
-	# Colonialism increases likeliness for trading company
-	if iCompany == iTradingCompany and has_civic(owner, iColonialism):
+	# Colony increases likeliness for trading company
+	if iCompany == iTradingCompany and has_civic(owner, iColony):
 		iValue += 2
 		
 	# Merchant Trade increases likeliness for silk route

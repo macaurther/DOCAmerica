@@ -98,7 +98,10 @@ dAdditionalPaganGoal = {
 	iGaiwiio: FeatureCount(iForest, 20),
 	iInti: GoldPercent(50),
 	iKachin: FeatureCount(sum(iForest, iBog), 20),
-	iMidewiwin: FeatureCount(sum(iForest, iBog), 20),
+	iMidewiwin: All(
+		ResourceCount(iCorn, 4),
+		ImprovementCount(iFarm, 20),
+	),
 	iRodnovery: ResourceCount(iFur, 7),
 	iTeotlMaya: CombatFood(50),
 	iTeotlAztec: SacrificeHappiness(10),

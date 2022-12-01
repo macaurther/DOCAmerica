@@ -11316,6 +11316,11 @@ short CvPlot::getWarValue(CivilizationTypes eCivilization) const
 short CvPlot::getWarValue(PlayerTypes ePlayer) const
 {
 	FAssertMsg(ePlayer >= 0, "ePlayer is expected to be non-negative");
+	// MacAurther TODO: Changed to suppress assert
+	if (ePlayer >= NUM_CIVS)
+	{
+		return 0;
+	}
 	FAssertMsg(ePlayer < NUM_CIVS, "ePlayer is expected to be within maximum bounds");
 
 	CivilizationTypes eCivilization = GET_PLAYER(ePlayer).getCivilizationType();

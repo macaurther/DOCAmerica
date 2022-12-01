@@ -38,11 +38,11 @@ class Civics(object):
 		return self[0]
 	
 	@property
-	def iLegitimacy(self):
+	def iLegal(self):
 		return self[1]
 	
 	@property
-	def iSociety(self):
+	def iLabor(self):
 		return self[2]
 	
 	@property
@@ -50,11 +50,11 @@ class Civics(object):
 		return self[3]
 	
 	@property
-	def iReligion(self):
+	def iSociety(self):
 		return self[4]
 	
 	@property
-	def iTerritory(self):
+	def iExpansion(self):
 		return self[5]
 
 
@@ -76,7 +76,7 @@ def isCommunist(iPlayer):
 def isFascist(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iSociety not in [iTolerance, iMulticulturalism] and civic.iExpansion in [iNationhood, iPuppeteering] and civic.Legal not iDemocracy:
+	if civic.iSociety not in [iTolerance, iMulticulturalism] and civic.iExpansion in [iNationhood, iPuppeteering] and civic.Legal != iDemocracy:
 		return True
 	
 	return False

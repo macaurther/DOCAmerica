@@ -453,10 +453,10 @@ def getSeparatismModifier(iPlayer, city):
 	if city.hasBuilding(unique_building(iPlayer, iJail)):
 		iModifier -= 1
 	
-	# overseas colonies with Portuguese UP and Colonialism
+	# overseas colonies with Portuguese UP and Homesteads
 	if city.isColony():
 		if iCiv == iPortugal: iModifier -= 2
-		if civic.iTerritory == iColonialism and bHistorical: iModifier -= 1
+		if civic.iTerritory == iHomesteads and bHistorical: iModifier -= 1
 	
 	# cap
 	if iModifier < -1: iModifier = -1
@@ -807,10 +807,9 @@ def calculateStability(iPlayer):
 	lParameters[iParameterDefensivePacts] = iDefensivePactStability
 	lParameters[iParameterRelations] = iRelationStability
 	lParameters[iParameterNationhood] = iNationhoodStability
-	lParameters[iParameterTheocracy] = iTheocracyStability
 	lParameters[iParameterMultilateralism] = iMultilateralismStability
 			
-	iForeignStability += iVassalStability + iDefensivePactStability + iRelationStability + iNationhoodStability + iTheocracyStability + iMultilateralismStability
+	iForeignStability += iVassalStability + iDefensivePactStability + iRelationStability + iNationhoodStability + iMultilateralismStability
 	
 	# MILITARY
 	
@@ -1083,8 +1082,6 @@ def updateEconomyTrend(iPlayer):
 	
 	if isDecline(iPlayer):
 		iNegativeThreshold = 2
-	
-	if iCivicEconomy == iCentralPlanning: iNegativeThreshold = 0
 	
 	iPercentChange = 100 * iCurrentCommerce / iPreviousCommerce - 100
 	
