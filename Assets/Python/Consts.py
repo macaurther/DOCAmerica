@@ -201,7 +201,7 @@ lInfluences = [
 	(iCuba, iSpain),
 ]
 
-dBirth = CivDict({
+'''dBirth = CivDict({
 iMaya : 250,
 iTeotihuacan : 250,
 iTiwanaku : 250,
@@ -234,6 +234,41 @@ iVenezuela : 1811,
 iBrazil : 1822,
 iCanada : 1867,
 iCuba : 1898,
+}, 250)'''
+
+dBirth = CivDict({
+iMaya : 250,
+iTeotihuacan : 250,
+iTiwanaku : 250,
+iWari : 250,
+iMississippi : 250,
+iPuebloan : 250,
+iMuisca : 250,
+iNorse : 250,
+iChimu : 250,
+iInuit : 250,
+iInca : 250,
+iAztecs : 250,
+iIroquois : 250,
+iSpain : 250,
+iPortugal : 250,
+iEngland : 250,
+iFrance : 250,
+iNetherlands : 250,
+iHawaii : 250,
+iRussia: 250,
+iAmerica : 250,
+iHaiti : 250,
+iBolivia : 250,
+iArgentina : 250,
+iMexico : 250,
+iColombia : 250,
+iChile : 250,
+iPeru : 250,
+iVenezuela : 250,
+iBrazil : 250,
+iCanada : 250,
+iCuba : 250,
 }, 250)
 
 lBirthCivs = dBirth.keys()
@@ -442,35 +477,24 @@ iTranshumanism) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 161
+iNumUnits = 154
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iCliffDweller,	iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,
 iLaborer, 		iMadeireiro, 	iScout, 		iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			iSisqeno,
-iAgent,			iInquisitor,	iJewishMiss, 	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iIslamicMiss, 	iHinduMiss, 	iBuddhistMiss,	iConfucianMiss, 
-iTaoistMiss, 	iZoroastrianMiss, iMilitia1,	iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		
-iMilitia7,		iWarrior, 		iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		iRifleman,		iInfantry,		iMechInfantry,	
-iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	iRedcoat,		
-iMarine,		iSpearman,		iSuchucChiqui,	iPikeman,		iAntiTank,		iRPG,			iArcher,		iPicta,			iSlinger,		iCrossbowman,	
-iLightCannon,	iFieldCannon,	iGattlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iAlbionLegion,	
-iGuerilla,		iHorseArcher,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iLightTank,		iGunship,		iCuirassier,	
-iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iRural,			iTank,			iMainBattleTank,iBombard,		iCannon,		iHeavyCannon,	
-iRifledCannon,	iArtillery,		iHowitzer,		iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		
-iCarrack,		iGalleon,		iWestIndianman,	iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		
-iDestroyer,		iCorvette,		iStealthDestroyer,iPrivateer,	iTorpedoBoat,	iSubmarine,		iNuclearSubmarine,iShipOfTheLine,iManOfWar,		iCruiser,		
-iBattleship,	iMissileCruiser,iBiplane,		iFighter,		iJetFighter,	iDrone,			iBomber,		iStealthBomber,	iNuclearBomber,	iGuidedMissile,	
-iICBM,			iSatellite,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,
-iGreatSpy,iFeGreatProphet,iFeGreatArtist, iFeGreatScientist, iFeGreatMerchant, iFeGreatEngineer, iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,	iSlave,			
-iAztecSlave) = range(iNumUnits)
-
-# Unit enumeration debug
-print('iLaborer: ' + str(iLaborer))
-print('iTaoistMiss: ' + str(iTaoistMiss))
-print('iMechInfantry: ' + str(iMechInfantry))
-print('iPicta: ' + str(iPicta))
-print('iPistolier: ' + str(iPistolier))
-print('iCaravel: ' + str(iCaravel))
-print('iBattleship: ' + str(iBattleship))
-print('iGreatSpy: ' + str(iGreatSpy))
+iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		
+iMinuteman,		iMilitia5,		iMilitia6,		iMilitia7,		iWarrior, 		iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		
+iRifleman,		iInfantry,		iMechInfantry,	iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iTercio,		iMohawk,		iFusilier,		
+iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iPikeman,		iAntiTank,		iRPG,			iArcher,		
+iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldCannon,	iGattlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iGuecha,		
+iSkirmisher,	iGrenadier,		iAlbionLegion,	iGuerilla,		iHorseArcher,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		
+iLightTank,		iGunship,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iRural,			iTank,			iMainBattleTank,
+iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iHowitzer,		iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			
+iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iGalleon,		iWestIndianman,	iBrigantine,	iSteamship,		iTransport,		iCarrier,		
+iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iStealthDestroyer,iPrivateer,	iTorpedoBoat,	iSubmarine,		iNuclearSubmarine,
+iShipOfTheLine,iManOfWar,		iCruiser,		iBattleship,	iMissileCruiser,iBiplane,		iFighter,		iJetFighter,	iDrone,			iBomber,		
+iStealthBomber,	iNuclearBomber,	iGuidedMissile,	iICBM,			iSatellite,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, 
+iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist, iFeGreatScientist, iFeGreatMerchant, iFeGreatEngineer, iFeGreatStatesman,
+iFeGreatGeneral,iFeGreatSpy,	iSlave,			iAztecSlave) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -531,27 +555,6 @@ iNationalPark, 	iCentralBank, 	iSpaceport,
 iTempleOfKukulkan, iMachuPicchu, iFloatingGardens, iGuadalupeBasilica, iSaltCathedral, iStatueOfLiberty, iChapultepecCastle, iMenloPark, iBrooklynBridge, iHollywood, 
 iEmpireStateBuilding, iLasLajasSanctuary, iFrontenac, iCristoRedentor, iGoldenGateBridge, iItaipuDam, iGraceland, iCNTower, 	iPentagon, 		iUnitedNations, 
 iCrystalCathedral, iWorldTradeCenter,  iHubbleSpaceTelescope, iSpaceElevator) = range(iNumBuildings)
-
-# Building enumeration debug
-print('iStable: ' + str(iStable))
-print('iMarket: ' + str(iMarket))
-print('iCoffeehouse: ' + str(iCoffeehouse))
-print('iSewer: ' + str(iSewer))
-print('iFactory: ' + str(iFactory))
-print('iSupermarket: ' + str(iSupermarket))
-print('iBombShelters: ' + str(iBombShelters))
-print('iSolarPlant: ' + str(iSolarPlant))
-print('iVerticalFarm: ' + str(iVerticalFarm))
-print('iCatholicCathedral: ' + str(iCatholicCathedral))
-print('iIslamicShrine: ' + str(iIslamicShrine))
-print('iConfucianCathedral: ' + str(iConfucianCathedral))
-print('iZoroastrianShrine: ' + str(iZoroastrianShrine))
-print('iStockExchange: ' + str(iStockExchange))
-print('iRedCross: ' + str(iRedCross))
-print('iSpaceport: ' + str(iSpaceport))
-print('iHollywood: ' + str(iHollywood))
-print('iUnitedNations: ' + str(iUnitedNations))
-print('iSpaceElevator: ' + str(iSpaceElevator))
 
 iBeginWonders = iTempleOfKukulkan # different from DLL constant because that includes national wonders
 
@@ -645,10 +648,12 @@ iNumCultureLevels = 7
 
 #Improvements
 
-iNumImprovements = 30
-(iLandWorked, iWaterWorked, iCityRuins, iHut, iFarm, iPaddyField, iFishingBoats, iOceanFishery, iWhalingBoats, iMine, 
-iWorkshop, iLumbermill, iWindmill, iWatermill, iPlantation, iSlavePlantation, iQuarry, iPasture, iCamp, iWell, 
-iOffshorePlatform, iWinery, iCottage, iHamlet, iVillage, iTown, iFort, iForestPreserve, iMarinePreserve, iSolarCollector) = range(iNumImprovements)
+iNumImprovements = 31
+#				2				3				4				5				6				7				8				9				10
+(iLandWorked, 	iWaterWorked, 	iCityRuins, 	iFarm, 			iPaddyField, 	iFishingBoats, 	iOceanFishery, 	iWhalingBoats, 	iMine, 			iWorkshop, 
+iLumbermill, 	iWindmill, 		iWatermill, 	iPlantation, 	iSlavePlantation, iQuarry, 		iPasture, 		iCamp, 			iWell, 			iOffshorePlatform, 
+iWinery, 		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve, iSolarCollector, iTribe,
+iContactedTribe) = range(iNumImprovements)
 
 iNumRoutes = 4
 (iRouteRoad, iRouteRailroad, iRouteRomanRoad, iRouteHighway) = range(iNumRoutes)

@@ -410,7 +410,7 @@ class CvEventManager(object):
 	def onUnitPillage(self, argsList):
 		'Unit pillages a plot'
 		pUnit, iImprovement, iRoute, iOwner, iGold = argsList
-	
+
 	def onUnitSpreadReligionAttempt(self, argsList):
 		'Unit tries to spread religion to a city'
 		pUnit, iReligion, bSuccess = argsList
@@ -431,6 +431,11 @@ class CvEventManager(object):
 	def onGoodyReceived(self, argsList):
 		'Goody received'
 		iPlayer, pPlot, pUnit, iGoodyType = argsList
+		
+		# Coureur des Bois ability
+		if pUnit.getUnitType() == CvUtil.findInfoTypeNum(gc.getImprovementInfo,gc.getNumUnitInfos(),'UNIT_FRENCH_COUREUR_DES_BOIS'):
+			iXP = pUnit.getExperience()
+			pUnit.setExperience(iXP + 2, 20)
 	
 	def onGreatPersonBorn(self, argsList):
 		'Unit Promoted'

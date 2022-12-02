@@ -46,7 +46,7 @@
 					<bHurry>1</bHurry>
 				</Hurry>
 			</Hurrys>
-			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
+			<iWarWearinessModifier>-100</iWarWearinessModifier>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_GRANARY</BuildingType>
@@ -187,7 +187,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Viceroyality.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iWarWearinessModifier>-100</iWarWearinessModifier>
+			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
 			<bNoResistance>1</bNoResistance>
 			<UnhappinessExtraYields>
 				<iYield>0</iYield>
@@ -828,6 +828,16 @@
 					<bNotRequired>1</bNotRequired>
 				</SpecialBuildingNotRequired>
 			</SpecialBuildingNotRequireds>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
+					<ImprovementYields>
+						<iYield>2</iYield>
+						<iYield>2</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

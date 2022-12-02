@@ -22,7 +22,13 @@ typedef list<char*> LISTCHAR;
 #define BUILDING_PALACE			((BuildingClassTypes)0)
 #define BUILDING_PLAGUE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PLAGUE"))
 
+#define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))
+#define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))
 #define UNITCLASS_SLAVE			((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))
+
+#define IMPROVEMENT_COTTAGE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE"))
+#define IMPROVEMENT_TRIBE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRIBE"))
+#define IMPROVEMENT_CONTACTED_TRIBE ((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CONTACTED_TRIBE"))
 
 enum DoCTechs
 {

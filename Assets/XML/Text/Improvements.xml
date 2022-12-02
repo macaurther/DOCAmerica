@@ -98,30 +98,6 @@
 		<Spanish>Highway</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMPROVEMENT_TRIBAL_VILLAGE</Tag>
-		<English>Tribal Village</English>
-		<French>
-			<Text>Village tribal</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Stammesdorf</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Villaggio tribale:Villaggi tribali</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Aldea tribal:Aldeas tribales</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_SOLAR_COLLECTOR</Tag>
 		<English>Solar Collector</English>
 		<French>
@@ -134,7 +110,19 @@
 		<Spanish>Solar Collector</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMPROVEMENT_NATIVE_VILLAGE</Tag>
-		<English>Native Village</English>
+		<Tag>TXT_KEY_IMPROVEMENT_TRIBE</Tag>
+		<English>Tribe</English>
+		<French>Tribe</French>
+		<German>Tribe</German>
+		<Italian>Tribe</Italian>
+		<Spanish>Tribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_CONTACTED_TRIBE</Tag>
+		<English>Contacted Tribe</English>
+		<French>Contacted Tribe</French>
+		<German>Contacted Tribe</German>
+		<Italian>Contacted Tribe</Italian>
+		<Spanish>Contacted Tribe</Spanish>
 	</TEXT>
 </Civ4GameText>

@@ -111,5 +111,10 @@
 			<Description>TXT_KEY_CONCEPT_HISTORICAL_IMPACT</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_HISTORICAL_IMPACT_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_TRIBES</Type>
+			<Description>TXT_KEY_CONCEPT_TRIBES</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_TRIBES_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

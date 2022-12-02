@@ -422,8 +422,6 @@ def getSeparatismModifier(iPlayer, city):
 	
 	bHistorical = plot.getPlayerSettlerValue(iPlayer) >= 90
 	bFall = since(year(dFall[iPlayer])) >= 0
-	bTotalitarianism = civic.iSociety == iTotalitarianism
-	bExpansionExceptions = bTotalitarianism
 	
 	iTotalCulture = civs.major().sum(lambda c: plot.isCore(c) and 2 * plot.getCivCulture(c) or plot.getCivCulture(c))
 	iCulturePercent = iTotalCulture != 0 and 100 * plot.getCulture(iPlayer) / iTotalCulture or 0
@@ -431,15 +429,10 @@ def getSeparatismModifier(iPlayer, city):
 	# ahistorical tiles
 	if not bHistorical:
 		iModifier += 2
-	
-	# colonies with Totalitarianism
-	if city.isColony() and bHistorical and civic.iGovernment == iTotalitarianism:
-		iModifier += 1
 		
 	# not original owner
-	if not bExpansionExceptions:
-		if not city.isOriginalOwner(iPlayer) and since(city.getGameTurnAcquired()) < turns(25):
-			iModifier += 1
+	if not city.isOriginalOwner(iPlayer) and since(city.getGameTurnAcquired()) < turns(25):
+		iModifier += 1
 	
 	# not majority culture
 	if iCulturePercent < 50: iModifier += 1

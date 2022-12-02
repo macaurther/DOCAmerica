@@ -111,14 +111,6 @@
 			<DefaultUnit>UNIT_INQUISITOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_JEWISH_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_JEWISH_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_JEWISH_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_ORTHODOX_MISSIONARY</Type>
 			<Description>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -141,54 +133,6 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>3</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_PROTESTANT_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_ISLAMIC_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_ISLAMIC_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_HINDU_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_HINDU_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_HINDU_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_BUDDHIST_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_BUDDHIST_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_BUDDHIST_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_CONFUCIAN_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_CONFUCIAN_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_TAOIST_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_TAOIST_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_TAOIST_MISSIONARY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_ZOROASTRIAN_MISSIONARY</Type>
-			<Description>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>3</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_ZOROASTRIAN_MISSIONARY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_MILITIA_1</Type>

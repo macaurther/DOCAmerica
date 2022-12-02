@@ -1147,6 +1147,7 @@
 			<Description>TXT_KEY_UNIT_EXPLORER</Description>
 			<Civilopedia>TXT_KEY_UNIT_EXPLORER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_EXPLORER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_EXPLORER_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -1229,6 +1230,16 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_MINE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_FORT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1273,6 +1284,7 @@
 			<Description>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS</Description>
 			<Civilopedia>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -1334,6 +1346,7 @@
 			<Description>TXT_KEY_UNIT_RANGER</Description>
 			<Civilopedia>TXT_KEY_UNIT_RANGER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_RANGER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_RANGER_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -1625,43 +1638,6 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_JEWISH_MISSIONARY</Class>
-			<Type>UNIT_JEWISH_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_JEWISH_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_JEWISH_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_JUDAISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_JUDAISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_JEWISH_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_JEWISH_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
 			<Class>UNITCLASS_ORTHODOX_MISSIONARY</Class>
 			<Type>UNIT_ORTHODOX_MISSIONARY</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>
@@ -1670,6 +1646,7 @@
 			<Description>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ORTHODOX_MISSIONARY_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_MISSIONARY_HELP</Help>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
@@ -1707,6 +1684,7 @@
 			<Description>TXT_KEY_UNIT_CATHOLIC_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_CATHOLIC_MISSIONARY_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_MISSIONARY_HELP</Help>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
@@ -1744,6 +1722,7 @@
 			<Description>TXT_KEY_UNIT_PROTESTANT_MISSIONARY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_PROTESTANT_MISSIONARY_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_MISSIONARY_HELP</Help>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ReligionSpreads>
 				<ReligionSpread>
@@ -1768,228 +1747,6 @@
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_PROTESTANT_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_ISLAMIC_MISSIONARY</Class>
-			<Type>UNIT_ISLAMIC_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_ISLAMIC_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_ISLAM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_ISLAM</PrereqReligion>
-			<PrereqBuilding>BUILDING_ISLAMIC_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_ISLAMIC_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_HINDU_MISSIONARY</Class>
-			<Type>UNIT_HINDU_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_HINDU_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_HINDU_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_HINDUISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_HINDUISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_HINDU_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_HINDU_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_BUDDHIST_MISSIONARY</Class>
-			<Type>UNIT_BUDDHIST_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_BUDDHIST_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_BUDDHIST_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_BUDDHISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_BUDDHISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_BUDDHIST_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_BUDDHIST_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_CONFUCIAN_MISSIONARY</Class>
-			<Type>UNIT_CONFUCIAN_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_CONFUCIANISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_CONFUCIANISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_CONFUCIAN_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CONFUCIAN_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_TAOIST_MISSIONARY</Class>
-			<Type>UNIT_TAOIST_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_TAOIST_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_TAOIST_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_TAOISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_TAOISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_TAOIST_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_TAOIST_MISSIONARY</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_ZOROASTRIAN_MISSIONARY</Class>
-			<Type>UNIT_ZOROASTRIAN_MISSIONARY</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY</Description>
-			<Civilopedia>TXT_KEY_UNIT_MISSIONARY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ReligionSpreads>
-				<ReligionSpread>
-					<ReligionType>RELIGION_ZOROASTRIANISM</ReligionType>
-					<iReligionSpread>40</iReligionSpread>
-				</ReligionSpread>
-			</ReligionSpreads>
-			<PrereqReligion>RELIGION_ZOROASTRIANISM</PrereqReligion>
-			<PrereqBuilding>BUILDING_ZOROASTRIAN_MONASTERY</PrereqBuilding>
-			<iCost>40</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_ZOROASTRIAN_MISSIONARY</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>

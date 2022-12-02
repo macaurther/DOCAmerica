@@ -159,6 +159,8 @@ dStartingLeaders = [
 	iEngland : iAlfred,
 	iFrance : iCharlemagne,
 	iNetherlands : iWillemVanOranje,
+	iHawaii : iAhoeitu,
+	iRussia : iPeter,
 	iAmerica : iWashington,
 	iHaiti : iLeaderBarbarian,	# TODO: iLouverture
 	iBolivia : iLeaderBarbarian,	# TODO
@@ -490,9 +492,6 @@ def specificName(iPlayer):
 		if isCurrentCapital(iPlayer, "Barcelona", "Valencia"):
 			return "TXT_KEY_CIV_SPAIN_ARAGON"
 			
-		if not bSpain:
-			return "TXT_KEY_CIV_SPAIN_CASTILE"
-			
 	elif iCiv == iEngland:
 		if getColumn(iPlayer) >= 11 and cities.rectangle(tBritain).owner(iPlayer) >= 3:
 			return "TXT_KEY_CIV_ENGLAND_GREAT_BRITAIN"
@@ -571,17 +570,9 @@ def specificAdjective(iPlayer):
 	bMonarchy = not isCommunist(iPlayer) and not isFascist(iPlayer) and not isRepublic(iPlayer)
 
 	if iCiv == iSpain:
-		bSpain = not player(iMoors).isAlive() or not player(iMoors).getCapitalCity() in plots.rectangle(tIberia)
-	
-		if bSpain:
-			if not player(iPortugal).isAlive() or master(iPortugal) == iPlayer or not player(iPortugal).getCapitalCity() in plots.rectangle(tIberia):
-				return "TXT_KEY_CIV_SPAIN_IBERIAN"
-			
 		if isCurrentCapital(iPlayer, "Barcelona", "Valencia"):
 			return "TXT_KEY_CIV_SPAIN_ARAGONESE"
-			
-		if not bSpain:
-			return "TXT_KEY_CIV_SPAIN_CASTILIAN"
+
 			
 	elif iCiv == iFrance:
 		if iEra == iColonial:
@@ -679,9 +670,6 @@ def republicTitle(iPlayer):
 		if iEra >= iAtomic:
 			return "TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC"
 	
-	if iCiv == iAmerica:
-		if civics(iPlayer).iSociety in [iManorialism, iSlavery]:
-			return key(iPlayer, "CSA")
 			
 	if iCiv == iColombia:
 		if isControlled(iPlayer, plots.region(rPeru)) and isControlled(iPlayer, plots.rectangle(tColombia)):
@@ -745,9 +733,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iEra >= iIndustrial and bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if civic.iLegitimacy == iRevolutionism:
-			return "TXT_KEY_EMPIRE_ADJECTIVE"
-			
 	elif iCiv == iEngland:
 		if capital not in cities.core(iEngland):
 			return "TXT_KEY_CIV_ENGLAND_EXILE"
@@ -798,7 +783,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_AZTECS_ALTEPETL"
 				
 	elif iCiv == iAmerica:
-		if civic.iSociety in [iSlavery, iManorialism]:
+		if civic.iLabor == iSlavery:
 			if isControlled(iPlayer, plots.region(rMesoamerica)) and isControlled(iPlayer, plots.region(rCaribbean)):
 				return "TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE"
 		

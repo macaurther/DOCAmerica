@@ -290,6 +290,14 @@
 		<Spanish>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_EXPLORER_HELP</Tag>
+		<English>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIGHTER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</English>
 		<French>[COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</French>
@@ -1142,26 +1150,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_JEWISH_MISSIONARY</Tag>
-		<English>Jewish Rabbi</English>
-		<French>
-			<Text>Rabbin juif</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>J&#252;discher Rabbi</German>
-		<Italian>Jewish Rabbi</Italian>
-		<Spanish>Jewish Rabbi</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_JEWISH_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Rabbis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Jewish Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Rabbis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Jewish Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Rabbis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Jewish Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Rabbis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Jewish Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Rabbis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Jewish Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Judaism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_ORTHODOX_MISSIONARY</Tag>
 		<English>Orthodox Missionary</English>
 		<French>
@@ -1222,124 +1210,12 @@
 		<Spanish>[COLOR_UNIT_TEXT]Missionaries[COLOR_REVERT] ([COLOR_UNIT_TEXT]Protestant Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Protestantism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ISLAMIC_MISSIONARY</Tag>
-		<English>Islamic Imam</English>
-		<French>
-			<Text>Imam musulman</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Islamischer Imam</German>
-		<Italian>Islamic Imam</Italian>
-		<Spanish>Islamic Imam</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ISLAMIC_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Imams[COLOR_REVERT] ([COLOR_UNIT_TEXT]Islamic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Imams[COLOR_REVERT] ([COLOR_UNIT_TEXT]Islamic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Imams[COLOR_REVERT] ([COLOR_UNIT_TEXT]Islamic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Imams[COLOR_REVERT] ([COLOR_UNIT_TEXT]Islamic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Imams[COLOR_REVERT] ([COLOR_UNIT_TEXT]Islamic Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Islam[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HINDU_MISSIONARY</Tag>
-		<English>Hindu Guru</English>
-		<French>
-			<Text>Gourou hindou</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Hinduistischer Guru</German>
-		<Italian>Hindu Guru</Italian>
-		<Spanish>Hindu Guru</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HINDU_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Gurus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Hindu Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Gurus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Hindu Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Gurus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Hindu Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Gurus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Hindu Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Gurus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Hindu Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Hinduism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BUDDHIST_MISSIONARY</Tag>
-		<English>Buddhist Bhikku</English>
-		<French>
-			<Text>Bonze bouddhiste</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Buddhistischer Bhikku</German>
-		<Italian>Buddhist Bhikku</Italian>
-		<Spanish>Buddhist Bhikku</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BUDDHIST_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Bhikkus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Buddhist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Bhikkus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Buddhist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Bhikkus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Buddhist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Bhikkus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Buddhist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Bhikkus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Buddhist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Buddhism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY</Tag>
-		<English>Confucian Scholar</English>
-		<French>
-			<Text>&#201;rudit confuc&#233;en</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Konfuzianischer Gelehrter</German>
-		<Italian>Confucian Scholar</Italian>
-		<Spanish>Confucian Scholar</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CONFUCIAN_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Scholars[COLOR_REVERT] ([COLOR_UNIT_TEXT]Confucian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Scholars[COLOR_REVERT] ([COLOR_UNIT_TEXT]Confucian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Scholars[COLOR_REVERT] ([COLOR_UNIT_TEXT]Confucian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Scholars[COLOR_REVERT] ([COLOR_UNIT_TEXT]Confucian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Scholars[COLOR_REVERT] ([COLOR_UNIT_TEXT]Confucian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Confucianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_TAOIST_MISSIONARY</Tag>
-		<English>Taoist Daoshi</English>
-		<French>
-			<Text>Daoshi tao&#239;ste</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Taoistischer Daoshi</German>
-		<Italian>Taoist Daoshi</Italian>
-		<Spanish>Taoist Daoshi</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_TAOIST_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Daoshis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Taoist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Daoshis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Taoist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Daoshis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Taoist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Daoshis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Taoist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Daoshis[COLOR_REVERT] ([COLOR_UNIT_TEXT]Taoist Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Taoism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY</Tag>
-		<English>Zoroastrian Magus</English>
-		<French>
-			<Text>Mage zoroastrien</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Zoroastrischer Magu</German>
-		<Italian>Zoroastrian Magu</Italian>
-		<Spanish>Zoroastrian Magu</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ZOROASTRIAN_MISSIONARY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Magi[COLOR_REVERT] ([COLOR_UNIT_TEXT]Zoroastrian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</English>
-		<French>[COLOR_UNIT_TEXT]Magus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Zoroastrian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</French>
-		<German>[COLOR_UNIT_TEXT]Magus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Zoroastrian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</German>
-		<Italian>[COLOR_UNIT_TEXT]Magus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Zoroastrian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Magus[COLOR_REVERT] ([COLOR_UNIT_TEXT]Zoroastrian Missionaries[COLOR_REVERT]) can spread [COLOR_HIGHLIGHT_TEXT]Zoroastrianism[COLOR_REVERT] in friendly cities (or rival cities with whom you have [COLOR_HIGHLIGHT_TEXT]Open Borders[COLOR_REVERT]).</Spanish>
+		<Tag>TXT_KEY_UNIT_MISSIONARY_HELP</Tag>
+		<English>[ICON_BULLET]Can Convert [LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribes[\LINK] to [LINK=IMPROVEMENT_COTTAGE]Cottages[\LINK]</English>
+		<French>[ICON_BULLET]Can Convert [LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribes[\LINK] to [LINK=IMPROVEMENT_COTTAGE]Cottages[\LINK]</French>
+		<German>[ICON_BULLET]Can Convert [LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribes[\LINK] to [LINK=IMPROVEMENT_COTTAGE]Cottages[\LINK]</German>
+		<Italian>[ICON_BULLET]Can Convert [LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribes[\LINK] to [LINK=IMPROVEMENT_COTTAGE]Cottages[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can Convert [LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribes[\LINK] to [LINK=IMPROVEMENT_COTTAGE]Cottages[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPREAD_REQUIRES_GEOGRAPHY</Tag>
@@ -1859,11 +1735,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Tag>
-		<English>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK]</English>
-		<French>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Capture d'[LINK=UNIT_SLAVE]esclaves[\LINK] garantie</French>
-		<German>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK]</German>
-		<Italian>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK]</Spanish>
+		<English>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Capture d'[LINK=UNIT_SLAVE]esclaves[\LINK] garantie[NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>
@@ -2088,6 +1964,14 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_HELP</Tag>
+		<English>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE</Tag>
@@ -2416,6 +2300,14 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RANGER_HELP</Tag>
+		<English>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RANGER_PEDIA</Tag>

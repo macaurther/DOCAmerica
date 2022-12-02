@@ -84,7 +84,16 @@ def spawnBarbarians(iGameTurn):
 		if player(iInca).isHuman():
 			makeUnit(iNative, iAucac, (44, 40))
 			makeUnit(iNative, iAucac, (51, 29))
-				
+
+@handler("unitPillage")
+def onUnitPillage(pUnit, iImprovement, iRoute, iOwner, iGold):
+	# If pillage a tribe, get uprising
+	if iImprovement == iTribe or iImprovement == iContactedTribe:
+		team(pUnit.getOwner()).declareWar(player(iNative).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
+		iX = pUnit.getX()
+		iY = pUnit.getY()
+		spawnTribeUprising(iX, iY)
+
 def foundMinorCities(iGameTurn):
 	for i, (iYear, tPlot, iCiv, sName, iPopulation, iUnitType, iNumUnits) in enumerate(tMinorCities):
 		if iGameTurn < year(iYear): return
@@ -231,3 +240,25 @@ def spawnUprising(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj=""):
 		
 def includesActiveHuman(*civs):
 	return civ() in civs and year(dBirth[active()]) <= year()
+
+def spawnTribeUprising(iX, iY):
+	iHandicap = infos.handicap().getBarbarianSpawnModifier()
+	
+	iRange = 1
+	if year() >= 1650:
+		iRange += 1
+	if year() >= 1800:
+		iRange += 1
+	tTL = (iX - iRange, iY - iRange)
+	tBR = (iX + iRange, iY + iRange)
+	
+	spawnUprising(iNative, iWarrior, 1 + iHandicap, tTL, tBR)
+	spawnUprising(iNative, iArcher, 1 + iHandicap, tTL, tBR)
+	if year() <= 1650:
+		spawnUprising(iNative, iSkirmisher, iHandicap, tTL, tBR)
+		spawnUprising(iNative, iSpearman, iHandicap, tTL, tBR)
+	elif year() <= 1800:
+		spawnUprising(iNative, iMohawk, 1 + iHandicap, tTL, tBR)
+	else:
+		spawnUprising(iNative, iMountedBrave, 1 + iHandicap, tTL, tBR)
+		

@@ -5406,10 +5406,11 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 
 			if (isOwned())
 			{
-				if (isGoody())
+				// MacAurther Goody Update: Huts are not removed by territory anymore
+				/*if (isGoody())
 				{
 					GET_PLAYER(getOwnerINLINE()).doGoody(this, NULL);
-				}
+				}*/
 
 				for (iI = 0; iI < MAX_CIV_TEAMS; ++iI)
 				{

@@ -358,19 +358,3 @@ def handleColonialConquest(iPlayer):
 
 	if seaPlot:
 		makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), seaPlot)
-
-
-def placeHut(tTL, tBR):
-	plotList = []
-	
-	for plot in plots.start(tTL).end(tBR):
-		if plot.isFlatlands() or plot.isHills():
-			if plot.getFeatureType() != iBog:
-				if plot.getOwner() < 0:
-					plotList.append(location(plot))
-	
-	if not plotList:
-		return
-	
-	tPlot = random_entry(plotList)
-	plot_(tPlot).setImprovementType(iHut)

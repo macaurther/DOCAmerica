@@ -5403,7 +5403,7 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	{
 // BUG - Goody Hut Log - start
 		// keep messages in event log forever
-		gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getGoodyInfo(eGoody).getSound(), MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getImprovementArtInfo("ART_DEF_IMPROVEMENT_TRIBAL_VILLAGE")->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+		gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getGoodyInfo(eGoody).getSound(), MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getImprovementArtInfo("ART_DEF_IMPROVEMENT_TRIBE")->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
 // BUG - Goody Hut Log - end
 	}
 
@@ -5580,7 +5580,8 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 
 	FAssertMsg(pPlot->isGoody(), "pPlot->isGoody is expected to be true");
 
-	pPlot->removeGoody();
+	// MacAurther: Don't remove goody
+	//pPlot->removeGoody();
 	if (!isBarbarian() && !isMinorCiv()) // Leoreth: minors cannot take goodies
 	{
 		for (int iI = 0; iI < GC.getDefineINT("NUM_DO_GOODY_ATTEMPTS"); iI++)
@@ -5595,6 +5596,9 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 				if (canReceiveGoody(pPlot, eGoody, pUnit))
 				{
 					receiveGoody(pPlot, eGoody, pUnit);
+
+					// MacAurther: Make Tribe a Contacted Tribe
+					pPlot->setImprovementType(IMPROVEMENT_CONTACTED_TRIBE);
 
 					// Python Event
 					CvEventReporter::getInstance().goodyReceived(getID(), pPlot, pUnit, eGoody);

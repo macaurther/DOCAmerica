@@ -5742,6 +5742,12 @@ bool CvUnit::canSpread(const CvPlot* pPlot, ReligionTypes eReligion, bool bTestV
 		return false;
 	}
 
+	// MacAurther: Missionaries can spread to Contacted Tribes too
+	if (pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	{
+		return true;
+	}
+
 	pCity = pPlot->getPlotCity();
 
 	if (pCity == NULL)
@@ -5821,7 +5827,7 @@ bool CvUnit::spread(ReligionTypes eReligion)
 	}
 
 	pCity = plot()->getPlotCity();
-
+	
 	if (pCity != NULL)
 	{
 		bool bSuccess;
@@ -5840,6 +5846,18 @@ bool CvUnit::spread(ReligionTypes eReligion)
 
 		// Python Event
 		CvEventReporter::getInstance().unitSpreadReligionAttempt(this, eReligion, bSuccess);
+	}
+
+	// MacAurther: Can spread to Contacted Tribes too (which always succeeds)
+	if (plot()->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	{
+		plot()->setImprovementType(IMPROVEMENT_COTTAGE);
+
+		// Python Event
+		CvEventReporter::getInstance().unitSpreadReligionAttempt(this, eReligion, true);
+
+		kill(true);
+		return true;
 	}
 
 	if (plot()->isActiveVisible(false))
@@ -7180,6 +7198,12 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 	if (GC.getUnitInfo(getUnitType()).isSlave() && GC.getBuildInfo(eBuild).isKill())
 	{
 		if (!pPlot->canUseSlave(getOwner())) return false;
+	}
+
+	// MacAurther: Cannot build on top of Tribe or Contacted Tribe
+	if (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	{
+		return false;
 	}
 
 	return true;
@@ -10192,7 +10216,8 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 			}
 		}
 
-		if (pNewPlot->isGoody(getTeam()))
+		// MacAurther Goody Update: Tribes are only contacted by Explorers or Rangers
+		if (pNewPlot->isGoody(getTeam()) && (this->getUnitClassType() == UNITCLASS_EXPLORER || this->getUnitClassType() == UNITCLASS_RANGER))
 		{
 			GET_PLAYER(getOwnerINLINE()).doGoody(pNewPlot, this);
 		}

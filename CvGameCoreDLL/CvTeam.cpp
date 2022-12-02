@@ -7163,7 +7163,7 @@ bool CvTeam::isAllied(TeamTypes eTeam) const
 		{
 			if (isVassal((TeamTypes)iI))
 			{
-				if (GET_TEAM((TeamTypes)iI).isAllied(eTeam));
+				if (GET_TEAM((TeamTypes)iI).isAllied(eTeam))
 				{
 					return true;
 				}
