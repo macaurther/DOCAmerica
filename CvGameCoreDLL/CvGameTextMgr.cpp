@@ -16830,6 +16830,15 @@ void CvGameTextMgr::setFoodHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		szBuffer.append(NEWLINE);
 	}
 
+	// MacAurther: Immigration
+	int iImmigrationFood = city.getImmigrationYieldRate(YIELD_FOOD);
+	if (0 != iImmigrationFood)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION", iImmigrationFood, info.getChar()));
+		szBuffer.append(NEWLINE);
+		iBaseRate += iImmigrationFood;
+	}
+
 	// Total Produced
 	int iBaseModifier = city.getBaseYieldRateModifier(YIELD_FOOD);
 	int iRate = iBaseModifier * iBaseRate / 100;
@@ -17924,21 +17933,23 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	}
 	CvPlayer& owner = GET_PLAYER(city.getOwnerINLINE());
 
-	int iBaseProduction = city.getBaseYieldRate(eYieldType);
-
+	// MacAurther: Immigration
+	int iImmigrationMod = city.getImmigrationYieldRate(eYieldType);
+	
+	int iBaseProduction = city.getBaseYieldRate(eYieldType) - iImmigrationMod; // MacAurther: Take away Immigration values for a moment for the tooltip
+	
 	szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_YIELD", info.getTextKeyWide(), iBaseProduction, info.getChar()));
 	szBuffer.append(NEWLINE);
 
-	int iBaseModifier = 100;
-
-	// Leoreth: Chinese unique power
-	int iPlayerMod = owner.getYieldRateModifier(eYieldType);
-	if (0 != iPlayerMod)
+	// MacAurther: Immigration
+	if (0 != iImmigrationMod)
 	{
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_PLAYER", iPlayerMod, info.getChar()));
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION", iImmigrationMod, info.getChar()));
 		szBuffer.append(NEWLINE);
-		iBaseModifier += iPlayerMod;
+		iBaseProduction += iImmigrationMod; // MacAurther: Add them back in
 	}
+
+	int iBaseModifier = 100;
 
 	// Buildings
 	int iBuildingMod = 0;
@@ -18033,7 +18044,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(NEWLINE);
 		iBaseModifier += iCivicMod;
 	}
-
+	
 	FAssertMsg((iBaseModifier * iBaseProduction) / 100 == city.getYieldRate(eYieldType), "Yield Modifier in setProductionHelp does not agree with actual value");
 }
 

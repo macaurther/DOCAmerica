@@ -112,11 +112,6 @@ def getCityValue(city, iCompany):
 	if iCompany == iTradingCompany:
 		if iOwnerCiv == iNetherlands:
 			iValue += 2
-	
-	# geographical requirements
-	if iCompany == iSilkRoute:
-		if city not in cities.rectangle(tSilkRoute) and city not in cities.rectangle(tMiddleEast).without(lMiddleEastExceptions):
-			return -1
 			
 	elif iCompany == iTradingCompany:
 		if city not in cities.rectangle(tCaribbean) and not city.isHasRealBuilding(unique_building(city.getOwner(), iTradingCompanyBuilding)):

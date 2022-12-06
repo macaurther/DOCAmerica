@@ -30,25 +30,3 @@ def mayanPower(iTech, iTeam, iPlayer):
 				city.changeFood(iFood)
 			
 			message(iPlayer, 'TXT_KEY_MAYA_UP_EFFECT', infos.tech(iTech).getText(), iFood)
-
-
-@handler("immigration")
-def canadianUP(_, city, iPopulation):
-	if civ(city) == iCanada:
-		iProgress = 5 * city.getPopulation() * iPopulation
-		
-		lSpecialists = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
-		lProgress = [city.getGreatPeopleUnitProgress(unique_unit(city.getOwner(), iSpecialist)) for iSpecialist in lSpecialists]
-		bAllZero = all(x <= 0 for x in lProgress)
-			
-		if bAllZero:
-			iGreatPerson = random_entry(lSpecialists)
-		else:
-			iGreatPerson = lSpecialists[find_max(lProgress).index]
-			
-		iGreatPerson = unique_unit(city.getOwner(), iGreatPerson)
-		
-		city.changeGreatPeopleProgress(iProgress)
-		city.changeGreatPeopleUnitProgress(iGreatPerson, iProgress)
-		
-		message(city.getOwner(), 'TXT_KEY_UP_MULTICULTURALISM', city.getName(), infos.unit(iGreatPerson).getText(), iProgress, event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.unit(iGreatPerson).getButton(), color=iGreen, location=city)

@@ -56,7 +56,6 @@ def reset_victory_handlers():
 events.addEvent("firstCity")
 events.addEvent("capitalMoved")
 events.addEvent("wonderBuilt")
-events.addEvent("immigration")
 events.addEvent("collapse")
 events.addEvent("periodChange")
 events.addEvent("playerPeriodChange")

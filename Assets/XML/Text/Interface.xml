@@ -1279,6 +1279,14 @@
 		<Spanish>%D1_Change[ICON_HEALTHY] from Specialists</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_IMMIGRATION</Tag>
+		<English>[ICON_BULLET]%D1%F2 from Immigration</English>
+		<French>[ICON_BULLET]%D1%%%F2 from Immigration</French>
+		<German>[ICON_BULLET]%D1%%%F2 from Immigration</German>
+		<Italian>[ICON_BULLET]%D1%%%F2 from Immigration</Italian>
+		<Spanish>[ICON_BULLET]%D1%%%F2 from Immigration</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_GP_BORN_OUTSIDE</Tag>
 		<English>%s1_GPName has been born near %s2_CityName!</English>
 		<French>%s1_GPName est n&#233; pr&#232;s de : %s2_CityName !</French>

@@ -281,11 +281,6 @@ def onTechAcquired(iTech, iTeam, iPlayer):
 @handler("religionSpread")
 def onReligionSpread(iReligion, iPlayer, city):
 	iCiv = civ(iPlayer)
-
-	if iCiv == iIndonesia:
-		if iReligion == iIslam:
-			if city.getName() == 'Yogyakarta': 
-				renameOwnedCity(city, "Mataram")
 			
 	# easter egg
 	if iReligion == iBuddhism:

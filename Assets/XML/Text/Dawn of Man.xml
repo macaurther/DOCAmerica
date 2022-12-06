@@ -10,6 +10,48 @@
 		<Spanish>DAWN OF A CIVILIZATION</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_DOM_MAYA</Tag>
+		<English>It is the year 250 AD. Urbanization on the peninsula of Yucatan sparks the formation of the Mayan city states, whose technological and architectural advancements would create the first advanced civilization in the Americas.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_TEOTIHUACAN</Tag>
+		<English>It is the year 250 AD. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_TIWANAKU</Tag>
+		<English>It is the year 250 AD. As the invention of ceramics strengthens existing trade routes, the pilgrimige site of Tiwanaku begins growing into a true city and the first great regional power since the fall of the Norte Chican Civilization. With an economy built on the seasonal swelling of visitors from far and wide, the city of Tiwanaku is primed to grow into an empire of great fame and glory.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_WARI</Tag>
+		<English>It is the year 500 AD. North of the flourishing Tiwanaku, the rise of the Wari Empire heralds what will soon become the first major Andean power struggle...</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_MISSISSIPPI</Tag>
+		<English></English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_PUEBLOAN</Tag>
+		<English></English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_MUISCA</Tag>
+		<English>It is the year 800 AD. The formation end of the Hererra period heralds in a new age for the peopel of the Altiplano Cundiboyacense. The rise of the Muisca Confederation marks the start in a new golden age of American trade.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_NORSE</Tag>
+		<English>It is the year 874 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Intrepid explorers set out for either plunder or settlement.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_CHIMU</Tag>
+		<English>It is the year 900 AD. Taking advantage of their neighbor's preoccupation in their cold war with the Tiwanaku, the Chimu people take the first steps towards the formation of an Empire of their own...</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_INUIT</Tag>
+		<English>It is the year 1050 ad. The Inuit's arrival to the Bering Strait marks the beginning of what will become one of the longest lasting cultures of the arctic.</English>
+	</TEXT>
+	
+	
+	<TEXT>
 		<Tag>TXT_KEY_DOM_AMERICA</Tag>
 		<English>It is the year 1776 AD. Discontent with foreign domination, the people in the American colonies have risen up in revolution to found their own nation. However, their fledgling republic is still in danger of being reclaimed by European colonial powers and has to surpass its former masters to fulfill its manifest destiny.</English>
 		<French>Nous sommes en l'an 1776 ap. J.-C. Le m&#233;contentement face &#224; la domination &#233;trang&#232;re a pouss&#233; le peuple des colonies am&#233;ricaines &#224; prendre les armes afin de fonder une nouvelle nation. La jeune r&#233;publique demeure toutefois en danger d'&#234;tre reconquise par les puissance coloniales europ&#233;ennes, et doit surpasser ses anciens ma&#238;tres afin d'accomplir son destin manifeste.</French>
@@ -97,14 +139,7 @@
 		<Italian>It is the year 1150 AD. Manco Capac has just founded the Kingdom of Cuzco, the first Incan kingdom. Even in the harsh environment of the Andes and lacking suitable pack animals, they set out to create an empire never seen before in the Americas.</Italian>
 		<Spanish>It is the year 1150 AD. Manco Capac has just founded the Kingdom of Cuzco, the first Incan kingdom. Even in the harsh environment of the Andes and lacking suitable pack animals, they set out to create an empire never seen before in the Americas.</Spanish>
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_MAYA</Tag>
-		<English>It is the year 400 BC. Urbanization on the peninsula of Yucatan sparks the formation of the Mayan city states, whose technological and architectural advancements would create the first advanced civilization in the Americas.</English>
-		<French>Nous sommes en l'an 400 av. J.-C. L'urbanisation dans la p&#233;ninsule du Yucatan m&#232;ne &#224; la formation des cit&#233;s-&#201;tats mayas, dont les avanc&#233;es technologiques et architecturales marqueront l'&#233;tablissement de la premi&#232;re civilisation avanc&#233;e en Am&#233;rique.</French>
-		<German>It is the year 400 BC. Urbanization on the peninsula of Yucatan sparks the formation of the Mayan city states, whose technological and architectural advancements would create the first advanced civilization in the Americas.</German>
-		<Italian>It is the year 400 BC. Urbanization on the peninsula of Yucatan sparks the formation of the Mayan city states, whose technological and architectural advancements would create the first advanced civilization in the Americas.</Italian>
-		<Spanish>It is the year 400 BC. Urbanization on the peninsula of Yucatan sparks the formation of the Mayan city states, whose technological and architectural advancements would create the first advanced civilization in the Americas.</Spanish>
-	</TEXT>
+	
 	<TEXT>
 		<Tag>TXT_KEY_DOM_MEXICO</Tag>
 		<English>It is the year 1810 AD. Political instability and warfare in the European motherland have strengthened calls for independence in New Spain. Now that even former loyalists have joined the republican cause, the Mexican Republic has established itself.</English>
@@ -161,64 +196,7 @@
 		<Italian>It is the year 1700 AD. The Spanish Empire is in a state of decline. Income from the American colonies is diminishing, the cultural flourishing of the last century has come to an end, and now the ruling Habsburg dynasty is about to die out. The conflict over the Spanish succession is about to consume Europe ...</Italian>
 		<Spanish>It is the year 1700 AD. The Spanish Empire is in a state of decline. Income from the American colonies is diminishing, the cultural flourishing of the last century has come to an end, and now the ruling Habsburg dynasty is about to die out. The conflict over the Spanish succession is about to consume Europe ...</Spanish>
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_VIKINGS</Tag>
-		<English>It is the year 551 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also the Mediterranean and even the New World make good targets for plunder or settlement.</English>
-		<French>Nous sommes en l'an 551 ap. J.-C. La raret&#233; de la nourriture en Scandinavie a fait de ses habitants d'excellents marins, qui comptent avant tout sur la p&#234;che et le commerce. Comme leurs royaumes ne peuvent supporter une plus grande croissance d&#233;mographique, les Vikings se tournent vers les terres au-del&#224; des mers. Les c&#244;tes de la mer du Nord, mais aussi celles de la M&#233;diterran&#233;e et m&#234;me du Nouveau Monde, seront la cible de pillage et de peuplement.</French>
-		<German>It is the year 551 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also the Mediterranean and even the New World make good targets for plunder or settlement.</German>
-		<Italian>It is the year 551 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also the Mediterranean and even the New World make good targets for plunder or settlement.</Italian>
-		<Spanish>It is the year 551 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also the Mediterranean and even the New World make good targets for plunder or settlement.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_VIKINGS_600AD</Tag>
-		<English>It is the year 600 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also those of the Mediterranean and even the New World make good targets for either plunder or settlement.</English>
-		<French>Nous sommes en l'an 600 ap. J.-C. La raret&#233; de la nourriture en Scandinavie a fait de ses habitants d'excellents marins, qui comptent avant tout sur la p&#234;che et le commerce. Comme leurs royaumes ne peuvent supporter une plus grande croissance d&#233;mographique, les Vikings se tournent vers les terres au-del&#224; des mers. Les c&#244;tes de la mer du Nord, mais aussi celles de la M&#233;diterran&#233;e et m&#234;me du Nouveau Monde, seront la cible de pillage et de peuplement.</French>
-		<German>It is the year 600 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also those of the Mediterranean and even the New World make good targets for either plunder or settlement.</German>
-		<Italian>It is the year 600 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also those of the Mediterranean and even the New World make good targets for either plunder or settlement.</Italian>
-		<Spanish>It is the year 600 AD. The scarcity of food makes the inhabitants of Scandinavia excellent sailors that rely on fishing and trade. Their home kingdoms still can't sustain further population growth, and the Vikings have to turn to lands across the sea. Not only the coasts of the North Sea, but also those of the Mediterranean and even the New World make good targets for either plunder or settlement.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_SWEDEN_1700AD</Tag>
-		<English>It is the year 1700 AD. The Kingdom of Sweden is the most formidable of the Scandinavian powers and has managed to establish an empire by acquiring Finland. Still, its expansion has also created enemies, and rivals like Denmark-Norway, Poland and especially Russia might seek to curb Swedish power ...</English>
-		<French>Nous sommes en l'an 1700 ap. J.-C. Le royaume de Su&#232;de est la plus redoutable des puissances scandinaves et est parvenu, en contr&#244;lant la Finlande, &#224; poss&#233;der un empire. Or, son expansion lui a valu des ennemis : le royaume de Danemark-Norv&#232;ge, la Pologne et, surtout, la Russie pourraient chercher &#224; freiner les ambitions des Su&#233;dois...</French>
-		<German>It is the year 1700 AD. The Kingdom of Sweden is the most formidable of the Scandinavian powers and has managed to establish an empire by acquiring Finland. Still, its expansion has also created enemies, and rivals like Denmark-Norway, Poland and especially Russia might seek to curb Swedish power ...</German>
-		<Italian>It is the year 1700 AD. The Kingdom of Sweden is the most formidable of the Scandinavian powers and has managed to establish an empire by acquiring Finland. Still, its expansion has also created enemies, and rivals like Denmark-Norway, Poland and especially Russia might seek to curb Swedish power ...</Italian>
-		<Spanish>It is the year 1700 AD. The Kingdom of Sweden is the most formidable of the Scandinavian powers and has managed to establish an empire by acquiring Finland. Still, its expansion has also created enemies, and rivals like Denmark-Norway, Poland and especially Russia might seek to curb Swedish power ...</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_TIWANAKU</Tag>
-		<English>It is the year 110 AD. As the invention of ceramics strengthens existing trade routes, the pilgrimige site of Tiwanaku begins growing into a true city and the first great regional power since the fall of the Norte Chican Civilization. With an economy built on the seasonal swelling of visitors from far and wide, the city of Tiwanaku is primed to grow into an empire of great fame and glory.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_WARI</Tag>
-		<English>It is the year 400 AD. North of the flourishing Tiwanaku, the rise of the Wari Empire heralds what will soon become the first major Andean power struggle...</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_TIWANAKU_600</Tag>
-		<English>It is the year 600 AD. The Tiwanaku Empire is in the middle of a cold war with their northern neighbors...</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_WARI_600AD</Tag>
-		<English>It is the year 600 AD. The Wari Empire is in the middle of a cold war with their southern neighbors...</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_CHIMU</Tag>
-		<English>It is the year 900 AD. Taking advantage of their neighbor's preoccupation in their cold war with the Tiwanaku, the Chimu people take the first steps towards the formation of an Empire of their own...</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_INUIT</Tag>
-		<English>It is the year 200 BC. The Inuit's arrival to the Bering Strait marks the beginning of what will become one of the longest lasting cultures of the arctic.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_MUISCA</Tag>
-		<English>It is the year 800 AD. The formation end of the Hererra period heralds in a new age for the peopel of the Altiplano Cundiboyacense. The rise of the Muisca Confederation marks the start in a new golden age of American trade.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_TEOTIHUACAN</Tag>
-		<English>It is the year 200 BC. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</English>
-		<French>Nous sommes en l'an 200 av. J.-C. Bien que la vall&#233;e de Mexico soit habit&#233;e depuis des milliers d'ann&#233;es, des civilisations avanc&#233;es ne se sont jusqu'ici d&#233;velop&#233;es qu'&#224; l'est, chez les Olm&#232;ques, les Zapot&#232;ques et les Mayas. Maintenant, des cit&#233;s apparaissent autour du lac Texcoco. L'une d'elles, Teotihuacan, est destin&#233;e &#224; influencer la culture de toute la M&#233;soam&#233;rique.</French>
-		<German>It is the year 200 BC. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</German>
-		<Italian>It is the year 200 BC. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</Italian>
-		<Spanish>It is the year 200 BC. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</Spanish>
-	</TEXT>
+	
+	
+	
 </Civ4GameText>

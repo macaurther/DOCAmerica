@@ -201,7 +201,7 @@ lInfluences = [
 	(iCuba, iSpain),
 ]
 
-'''dBirth = CivDict({
+dBirth = CivDict({
 iMaya : 250,
 iTeotihuacan : 250,
 iTiwanaku : 250,
@@ -234,9 +234,9 @@ iVenezuela : 1811,
 iBrazil : 1822,
 iCanada : 1867,
 iCuba : 1898,
-}, 250)'''
+}, 250)
 
-dBirth = CivDict({
+'''dBirth = CivDict({
 iMaya : 250,
 iTeotihuacan : 250,
 iTiwanaku : 250,
@@ -269,7 +269,7 @@ iVenezuela : 250,
 iBrazil : 250,
 iCanada : 250,
 iCuba : 250,
-}, 250)
+}, 250)'''
 
 lBirthCivs = dBirth.keys()
 
@@ -574,7 +574,7 @@ iNumCivics = 42
 iAuthority, iCouncil, iCommonLaw, iViceroyality, iFederalism, iSelfDetermination, iDemocracy,
 iTraditionalism, iSpecialization, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
-iAnimism, iCasteSystem, iHaven, iPlantation, iTolerance, iIsolationism, iMulticulturalism,
+iAnimism, iCasteSystem, iIsolationism, iHaven, iOpportunity, iTolerance, iMulticulturalism,
 iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, iMultilateralism) = range(iNumCivics)
 
 iNumCivicCategories = 6

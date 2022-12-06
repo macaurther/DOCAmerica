@@ -184,17 +184,6 @@ def brazilianMadeireiroAbility(plot, city, iFeature):
 
 ### BEGIN GAME TURN ###
 
-@handler("BeginGameTurn")
-def checkImmigration(iGameTurn):
-	if iGameTurn < year(dBirth[iAmerica]) + turns(5):
-		return
-
-	data.iImmigrationTimer -= 1
-	
-	if data.iImmigrationTimer == 0:
-		immigration()
-		data.iImmigrationTimer = 3 + rand(turns(5))
-
 
 ### TECH ACQUIRED ###
 
@@ -228,77 +217,3 @@ def updateLastTurnAlive(iPlayer, bAlive):
 
 
 ### IMPLEMENTATIONS ###
-
-def getImmigrationValue(city):
-	iFoodDifference = city.foodDifference(False)
-	iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
-	
-	iValue = 0
-	
-	iValue += max(0, iHappinessDifference)
-	iValue += max(0, iFoodDifference / 2)
-	iValue += city.getPopulation() / 2
-	
-	if city.getRegionID() in lNorthAmerica:
-		iValue += 5
-		
-	return iValue
-	
-	
-def getEmigrationValue(city):
-	iFoodDifference = city.foodDifference(False)
-	iHappinessDifference = city.happyLevel() - city.unhappyLevel(0)
-	
-	iValue -= min(0, iHappinessDifference)
-	iValue -= min(0, iFoodDifference / 2)
-	iValue += city.getPopulation() / 5
-	
-	return iValue
-
-
-def immigration():
-	sourcePlayers = players.major().alive().where(lambda p: player(p).getCapitalCity().getRegionID() not in lNewWorld).where(lambda p: cities.owner(p).any(lambda city: getEmigrationValue(city) > 0))
-	targetPlayers = players.major().alive().where(lambda p: player(p).getCapitalCity().getRegionID() in lNewWorld).where(lambda p: cities.owner(p).any(lambda city: getImmigrationValue(city) > 0))
-	
-	iNumMigrations = min(sourcePlayers.count(), targetPlayers.count())
-	
-	sourceCities = sourcePlayers.cities().where(lambda city: city.getPopulation() > 1).highest(iNumMigrations, getEmigrationValue)
-	targetCities = targetPlayers.cities().highest(iNumMigrations, getImmigrationValue)
-	
-	for sourceCity, targetCity in zip(sourceCities, targetCities):
-		iPopulation = 1
-		if sourceCity.getPopulation() >= 9:
-			iPopulation += 1
-	
-		sourceCity.changePopulation(-iPopulation)
-		targetCity.changePopulation(iPopulation)
-			
-		# extra cottage growth for target city's vicinity
-		for pCurrent in plots.surrounding(targetCity, radius=2):
-			if pCurrent.getWorkingCity() == targetCity:
-				pCurrent.changeUpgradeProgress(turns(10))
-					
-		# migration brings culture
-		targetPlot = plot(city)
-		iTargetPlayer = targetCity.getOwner()
-		iSourcePlayer = sourceCity.getOwner()
-		
-		iCultureChange = targetPlot.getCulture(iTargetPlayer) / targetCity.getPopulation()
-		targetPlot.changeCulture(iSourcePlayer, iCultureChange, False)
-		
-		iCultureChange = targetCity.getCulture(iTargetPlayer) / targetCity.getPopulation()
-		targetCity.changeCulture(iSourcePlayer, iCultureChange, False, False)
-		
-		# chance to spread religions in source city
-		lReligions = [iReligion for iReligion in range(iNumReligions) if sourceCity.isHasReligion(iReligion) and not targetCity.isHasReligion(iReligion)]
-		if player(iSourcePlayer).getStateReligion() in lReligions:
-			lReligions.append(player(iSourcePlayer).getStateReligion())
-		
-		if rand(1, 4) <= len(lReligions):
-			targetCity.setHasReligion(random_entry(lReligions), True, True, True)
-					
-		# notify affected players
-		message(iSourcePlayer, 'TXT_KEY_UP_EMIGRATION', sourceCity.getName(), event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.unit(iSettler).getButton(), color=iYellow, location=sourceCity)
-		message(iTargetPlayer, 'TXT_KEY_UP_IMMIGRATION', targetCity.getName(), event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.unit(iSettler).getButton(), color=iYellow, location=targetCity)
-
-		events.fireEvent("immigration", sourceCity, targetCity, iPopulation, iCultureChange)

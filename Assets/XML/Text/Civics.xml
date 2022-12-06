@@ -419,11 +419,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TOLERANCE_STRATEGY</Tag>
-		<English>Extra happiness from non-state religions; increased culture in capital; can train missionaries without monasteries</English>
-		<French>Les religions non officielles cr&#233;ent du bonheur ; culture augment&#233;e dans la capitale ; vous pouvez produire des missionnaires sans monast&#232;re</French>
-		<German>Extra happiness from non-state religions; increased culture in capital; can train missionaries without monasteries</German>
-		<Italian>Extra happiness from non-state religions; increased culture in capital; can train missionaries without monasteries</Italian>
-		<Spanish>Extra happiness from non-state religions; increased culture in capital; can train missionaries without monasteries</Spanish>
+		<English>Your Immigration is equal to your city's base [ICON_PRODUCTION] (before modifiers) divided by its Population, minus 2 (rounded down). To have positive Immigration, ensure your cities are producing more than 2[ICON_PRODUCTION] for every Population. Tolerance works great for cities that produce a lot of [ICON_PRODUCTION] relative to their size.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOLERANCE_HELP</Tag>
+		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</English>
+		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</French>
+		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</German>
+		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</Italian>
+		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONQUEST</Tag>
@@ -495,11 +499,16 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>
-		<English>[ICON_BULLET]Extra instability for cities outside core</English>
-		<French>[ICON_BULLET]Extra instability for cities outside core</French>
-		<German>[ICON_BULLET]Extra instability for cities outside core</German>
-		<Italian>[ICON_BULLET]Extra instability for cities outside core</Italian>
-		<Spanish>[ICON_BULLET]Extra instability for cities outside core</Spanish>
+		<English>[ICON_BULLET]Extra instability for cities outside core
+[ICON_BULLET]No Immigration</English>
+		<French>[ICON_BULLET]Extra instability for cities outside core
+[ICON_BULLET]No Immigration</French>
+		<German>[ICON_BULLET]Extra instability for cities outside core
+[ICON_BULLET]No Immigration</German>
+		<Italian>[ICON_BULLET]Extra instability for cities outside core
+[ICON_BULLET]No Immigration</Italian>
+		<Spanish>[ICON_BULLET]Extra instability for cities outside core
+[ICON_BULLET]No Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIONHOOD</Tag>
@@ -746,6 +755,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MIGRANT_WORKERS_HELP</Tag>
+		<English>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</English>
+		<French>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</French>
+		<German>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</German>
+		<Italian>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</Italian>
+		<Spanish>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AUTOMATION</Tag>
 		<English>Automation</English>
 		<French>Automation</French>
@@ -803,27 +820,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Your Immigration is equal to your city's [ICON_HAPPY] minus [ICON_UNHAPPY]. Haven gives a lot of Immigration to small cities and cities with large amounts of excess [ICON_HAPPY]. As cities grow and reach [ICON_HAPPY] neutrality, Immigration greatly slows. Unhappy cities grow even slow, and can shrink.</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PLANTATION</Tag>
-		<English>Plantation</English>
-		<French>Plantation</French>
-		<German>Plantation</German>
-		<Italian>Plantation</Italian>
-		<Spanish>Plantation</Spanish>
+		<Tag>TXT_KEY_CIVIC_HAVEN_HELP</Tag>
+		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</English>
+		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</French>
+		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</German>
+		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</Italian>
+		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PLANTATION_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<Tag>TXT_KEY_CIVIC_OPPORTUNITY</Tag>
+		<English>Opportunity</English>
+		<French>Opportunity</French>
+		<German>Opportunity</German>
+		<Italian>Opportunity</Italian>
+		<Spanish>Opportunity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Tag>
+		<English>Your Immigration is equal to your city's base [ICON_COMMERCE] (before modifiers) divided by its Population, minus 2 (rounded down). To have positive Immigration, ensure your cities are producing more than 2[ICON_COMMERCE] for every Population. Opportunity works great for cities that produce a lot of [ICON_COMMERCE] relative to their size.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Tag>
+		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</English>
+		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</French>
+		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</German>
+		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</Italian>
+		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MULTICULTURALISM</Tag>
@@ -835,11 +860,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MULTICULTURALISM_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Your Immigration is equal to your city's base [ICON_CULTURE] (before modifiers) divided by its Population, minus 3 (rounded down). To have positive Immigration, ensure your cities are producing more than 3[ICON_CULTURE] for every Population. Multiculturalism works great for cities that produce a lot of [ICON_CULTURE] relative to their size.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MULTICULTURALISM_HELP</Tag>
+		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</English>
+		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</French>
+		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</German>
+		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</Italian>
+		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOMESTEADS</Tag>

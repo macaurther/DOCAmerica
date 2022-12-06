@@ -52,6 +52,11 @@
 			<Civilopedia>TXT_KEY_CONCEPT_ODDS_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
+			<Type>CONCEPT_DOCINTRO</Type>
+			<Description>TXT_KEY_CONCEPT_DOCINTRO</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_DOCINTRO_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
 			<Type>CONCEPT_NEW_CORPORATIONS</Type>
 			<Description>TXT_KEY_CONCEPT_NEW_CORPORATIONS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_NEW_CORPORATIONS_PEDIA</Civilopedia>
@@ -60,11 +65,6 @@
 			<Type>CONCEPT_RESPAWNS</Type>
 			<Description>TXT_KEY_CONCEPT_RESPAWNS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_RESPAWNS_PEDIA</Civilopedia>
-		</ConceptInfo>
-		<ConceptInfo>
-			<Type>CONCEPT_DOC_ODDS</Type>
-			<Description>TXT_KEY_CONCEPT_DOC_ODDS</Description>
-			<Civilopedia>TXT_KEY_CONCEPT_DOC_ODDS_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
 			<Type>CONCEPT_CONDITIONAL_SPAWNS</Type>
@@ -87,11 +87,6 @@
 			<Civilopedia>TXT_KEY_CONCEPT_DIPLOMATIC_INSTITUTIONS_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
-			<Type>CONCEPT_WORLDBUILDER</Type>
-			<Description>TXT_KEY_CONCEPT_EXTENDED_WORLDBUILDER</Description>
-			<Civilopedia>TXT_KEY_CONCEPT_EXTENDED_WORLDBUILDER_PEDIA</Civilopedia>
-		</ConceptInfo>
-		<ConceptInfo>
 			<Type>CONCEPT_LIMITED_RESOURCE_EFFECTS</Type>
 			<Description>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS_PEDIA</Civilopedia>
@@ -112,9 +107,24 @@
 			<Civilopedia>TXT_KEY_CONCEPT_HISTORICAL_IMPACT_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
+			<Type>CONCEPT_DOC_ODDS</Type>
+			<Description>TXT_KEY_CONCEPT_DOC_ODDS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_DOC_ODDS_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_DOCAINTRO</Type>
+			<Description>TXT_KEY_CONCEPT_DOCAINTRO</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_DOCAINTRO_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
 			<Type>CONCEPT_TRIBES</Type>
 			<Description>TXT_KEY_CONCEPT_TRIBES</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_TRIBES_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_IMMIGRATION</Type>
+			<Description>TXT_KEY_CONCEPT_IMMIGRATION</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_IMMIGRATION_PEDIA</Civilopedia>
 		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

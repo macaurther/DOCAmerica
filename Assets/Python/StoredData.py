@@ -198,10 +198,6 @@ class GameData:
 		
 		self.iSeed = gc.getGame().getSorenRandNum(100, 'random seed')
 		
-		# Unique Powers
-		
-		self.iImmigrationTimer = 0
-		
 		# AI Wars
 		
 		self.iNextTurnAIWar = -1

@@ -672,7 +672,6 @@ public:
 	int getAdditionalYieldBySpecialist(YieldTypes eIndex, SpecialistTypes eSpecialist, int iChange) const;				// Exposed to Python
 	int getAdditionalBaseYieldRateBySpecialist(YieldTypes eIndex, SpecialistTypes eSpecialist, int iChange) const;		// Exposed to Python
 // BUG - Specialist Additional Yield - end
-
 	int getBaseYieldRate(YieldTypes eIndex) const;															// Exposed to Python
 	int getBaseYieldRateModifier(YieldTypes eIndex, int iExtra = 0) const;			// Exposed to Python
 	int getYieldRate(YieldTypes eIndex) const;												// Exposed to Python
@@ -1271,6 +1270,14 @@ public:
 
 	int calculateBaseYieldRate(YieldTypes eYield) const;
 	int calculateBaseGreatPeopleRate() const;
+
+	// MacAurther
+	int* m_aiImmigrationYieldRate;
+	int getImmigrationYieldRate(YieldTypes eYield) const;
+	void setImmigrationYieldRate(YieldTypes eYield, int iValue);
+	int calculateImmigrationYieldRate(YieldTypes eYield);
+	bool processImmigration();
+	void updateImmigrationYieldRate(YieldTypes eYield, int iChange);
 
 protected:
 
