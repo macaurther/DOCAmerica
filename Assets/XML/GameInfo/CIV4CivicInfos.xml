@@ -254,6 +254,15 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -413,7 +422,7 @@
 			<Button>,Art/Interface/Buttons/Civics/MigrantWorkers.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>NONE</Upkeep>
-			<iLargestCityHappiness>-1</iLargestCityHappiness>
+			<iLargestCityHappiness>-2</iLargestCityHappiness>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
@@ -797,25 +806,31 @@
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionBuildingProductionModifier>25</iStateReligionBuildingProductionModifier>
 			<bNoNonStateReligionSpread>1</bNoNonStateReligionSpread>
+			<SpecialBuildingNotRequireds>
+				<SpecialBuildingNotRequired>
+					<SpecialBuildingType>SPECIALBUILDING_MONASTERY</SpecialBuildingType>
+					<bNotRequired>1</bNotRequired>
+				</SpecialBuildingNotRequired>
+			</SpecialBuildingNotRequireds>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
-			<Type>CIVIC_OPPORTUNITY</Type>
-			<Description>TXT_KEY_CIVIC_OPPORTUNITY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_OPPORTUNITY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Help>
+			<Type>CIVIC_PROFITEERING</Type>
+			<Description>TXT_KEY_CIVIC_PROFITEERING</Description>
+			<Civilopedia>TXT_KEY_CIVIC_PROFITEERING_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_PROFITEERING_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_PROFITEERING_HELP</Help>
 			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Plantation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<iStateReligionGreatPeopleRateModifier>25</iStateReligionGreatPeopleRateModifier>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<ImprovementType>IMPROVEMENT_SLAVE_PLANTATION</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
+						<iYield>1</iYield>
 						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
@@ -827,23 +842,18 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
-			<Type>CIVIC_TOLERANCE</Type>
-			<Description>TXT_KEY_CIVIC_TOLERANCE</Description>
-			<Civilopedia>TXT_KEY_CIVIC_TOLERANCE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_TOLERANCE_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_TOLERANCE_HELP</Help>
+			<Type>CIVIC_OPPORTUNITY</Type>
+			<Description>TXT_KEY_CIVIC_OPPORTUNITY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_OPPORTUNITY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Help>
 			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tolerance.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
-			<SpecialBuildingNotRequireds>
-				<SpecialBuildingNotRequired>
-					<SpecialBuildingType>SPECIALBUILDING_MONASTERY</SpecialBuildingType>
-					<bNotRequired>1</bNotRequired>
-				</SpecialBuildingNotRequired>
-			</SpecialBuildingNotRequireds>
+			<iStateReligionGreatPeopleRateModifier>25</iStateReligionGreatPeopleRateModifier>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

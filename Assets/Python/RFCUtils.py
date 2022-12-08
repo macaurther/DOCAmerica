@@ -468,9 +468,9 @@ def isUnitOfRole(iUnit, iRole):
 	iDomainType = unit.getDomainType()
 
 	if iRole == iBase:
-		return base_unit(iUnit) == iMilitia
+		return base_unit(iUnit) == iMilitia1
 	elif iRole == iDefend:
-		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN or base_unit(iUnit) == iMilitia
+		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN or base_unit(iUnit) == iMilitia1
 	elif iRole in [iAttack, iCityAttack]:
 		return iCombatType in [UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_GUN]
 	elif iRole == iCounter:

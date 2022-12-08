@@ -406,23 +406,19 @@
 		<Spanish>[ICON_BULLET]Increases stability gained or lost by economic growth or recession by 33%</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_TOLERANCE</Tag>
-		<English>Tolerance</English>
-		<French>
-			<Text>Tol&#233;rance</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tolerance</German>
-		<Italian>Tolerance</Italian>
-		<Spanish>Tolerance</Spanish>
+		<Tag>TXT_KEY_CIVIC_OPPORTUNITY</Tag>
+		<English>Opportunity</English>
+		<French>Opportunity</French>
+		<German>Opportunity</German>
+		<Italian>Opportunity</Italian>
+		<Spanish>Opportunity</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_TOLERANCE_STRATEGY</Tag>
-		<English>Your Immigration is equal to your city's base [ICON_PRODUCTION] (before modifiers) divided by its Population, minus 2 (rounded down). To have positive Immigration, ensure your cities are producing more than 2[ICON_PRODUCTION] for every Population. Tolerance works great for cities that produce a lot of [ICON_PRODUCTION] relative to their size.</English>
+		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Tag>
+		<English>Your Immigration is equal to your city's base [ICON_PRODUCTION] (before modifiers) divided by its Population, minus 2 (rounded down). To have positive Immigration, ensure your cities are producing more than 2[ICON_PRODUCTION] for every Population. Opportunity works great for cities that produce a lot of [ICON_PRODUCTION] relative to their size.</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_TOLERANCE_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Tag>
 		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</English>
 		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</French>
 		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</German>
@@ -831,19 +827,19 @@
 		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_OPPORTUNITY</Tag>
-		<English>Opportunity</English>
-		<French>Opportunity</French>
-		<German>Opportunity</German>
-		<Italian>Opportunity</Italian>
-		<Spanish>Opportunity</Spanish>
+		<Tag>TXT_KEY_CIVIC_PROFITEERING</Tag>
+		<English>Profiteering</English>
+		<French>Profiteering</French>
+		<German>Profiteering</German>
+		<Italian>Profiteering</Italian>
+		<Spanish>Profiteering</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Tag>
-		<English>Your Immigration is equal to your city's base [ICON_COMMERCE] (before modifiers) divided by its Population, minus 2 (rounded down). To have positive Immigration, ensure your cities are producing more than 2[ICON_COMMERCE] for every Population. Opportunity works great for cities that produce a lot of [ICON_COMMERCE] relative to their size.</English>
+		<Tag>TXT_KEY_CIVIC_PROFITEERING_STRATEGY</Tag>
+		<English>Your Immigration is equal to your city's base [ICON_COMMERCE] (before modifiers) divided by its Population, minus 2 (rounded down). To have positive Immigration, ensure your cities are producing more than 2[ICON_COMMERCE] for every Population. Profiteering works great for cities that produce a lot of [ICON_COMMERCE] relative to their size.</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_PROFITEERING_HELP</Tag>
 		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</English>
 		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</French>
 		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</German>
