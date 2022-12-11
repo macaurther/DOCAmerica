@@ -126,5 +126,15 @@
 			<Description>TXT_KEY_CONCEPT_IMMIGRATION</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_IMMIGRATION_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_DOCA_FORTS</Type>
+			<Description>TXT_KEY_CONCEPT_DOCA_FORTS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_DOCA_FORTS_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_DOCA_ODDS</Type>
+			<Description>TXT_KEY_CONCEPT_DOCA_ODDS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_DOCA_ODDS_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

@@ -163,6 +163,14 @@
 					<TerrainType>TERRAIN_PLAINS</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
@@ -1973,6 +1981,22 @@
 					<TerrainType>TERRAIN_PLAINS</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids>
 				<FeatureMakesValid>
@@ -2165,6 +2189,7 @@
 			<Type>IMPROVEMENT_FORT</Type>
 			<Description>TXT_KEY_IMPROVEMENT_FORT</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_FORT_PEDIA</Civilopedia>
+			<Help>TXT_KEY_IMPROVEMENT_FORT_HELP</Help>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_FORT</ArtDefineTag>
 			<bActsAsCity>1</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
@@ -2210,6 +2235,26 @@
 				</TerrainMakesValid>
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SALTFLAT</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
@@ -2268,6 +2313,10 @@
 				</FeatureMakesValid>
 				<FeatureMakesValid>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<bMakesValid>1</bMakesValid>
 				</FeatureMakesValid>
 			</FeatureMakesValids>

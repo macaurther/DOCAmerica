@@ -73,7 +73,7 @@ class PlayerData:
 		self.iExplorationTurn = -1
 		
 		self.colonialAcquisitionCities = []
-		
+
 		# AI Wars
 		
 		self.iAggressionLevel = 0
@@ -197,6 +197,11 @@ class GameData:
 		# Religions
 		
 		self.iSeed = gc.getGame().getSorenRandNum(100, 'random seed')
+		
+		# Forts
+		
+		self.dFortMap = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
+		self.dFortCulture = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
 		
 		# AI Wars
 		

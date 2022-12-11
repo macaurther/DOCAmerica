@@ -1203,9 +1203,6 @@ def isTolerated(iPlayer, iReligion):
 	if iStateReligion == iHinduism and iReligion == iBuddhism: return True
 	if iStateReligion == iBuddhism and iReligion == iHinduism: return True
 	
-	# Poland
-	lChristianity = [iOrthodoxy, iCatholicism, iProtestantism]
-	if civ(iPlayer) == iPoland and iStateReligion in lChristianity and iReligion in lChristianity: return True
 	
 	return False
 	

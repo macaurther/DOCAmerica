@@ -2569,7 +2569,7 @@
 			<Strategy>TXT_KEY_BUILDING_PARK_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PARK</ArtDefineTag>
-			<PrereqTech>TECH_BIOLOGY</PrereqTech>
+			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

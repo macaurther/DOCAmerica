@@ -3014,6 +3014,7 @@
 			<Type>TECH_PIONEERING</Type>
 			<Description>TXT_KEY_TECH_PIONEERING</Description>
 			<Civilopedia>TXT_KEY_TECH_PIONEERING_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_PIONEERING_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

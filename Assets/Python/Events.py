@@ -2,6 +2,7 @@ from BugEventManager import g_eventManager as events
 import inspect
 
 from Core import *
+from Forts import forts
 
 from GoalHandlers import event_handler_registry
 
@@ -69,6 +70,9 @@ events.addEvent("sacrificeHappiness")
 events.addEvent("prepareBirth")
 events.addEvent("flip")
 events.addEvent("conquerors")
+events.addEvent("improvementBuilt")
+events.addEvent("improvementDestroyed")
+events.addEvent("EndGameTurn")
 
 
 @handler("buildingBuilt")
@@ -105,7 +109,40 @@ def firstCityOnCityBuilt(city):
 def wonderBuiltOnBuildingBuilt(city, iBuilding):
 	if isWorldWonderClass(infos.building(iBuilding).getBuildingClassType()):
 		events.fireEvent("wonderBuilt", city, iBuilding)
+
+
+@handler("improvementBuilt")
+def onFortBuilt(iImprovement, iX, iY):
+	# MacAurther: Forts control territory
+	if iImprovement == iFort:
+		pPlot = CyMap().plot(iX, iY)
+		# Look for Worker on this plot
+		bFoundWorker = False
+		for iUnitLoop in range(pPlot.getNumUnits()):
+			pUnit = pPlot.getUnit(iUnitLoop)
+			
+			if (pUnit.getScriptData() == "BuildingFort"):
+				iFortOwner = pUnit.getOwner()
+				forts.obtainFortCulture(iX, iY, iFortOwner)
+				bFoundWorker = True
 		
+		# If no worker built the fort, assume it belongs to a unit in that tile (i.e. forts placed in the map file)
+		if not bFoundWorker and pPlot.getNumUnits() > 0:
+			forts.obtainFortCulture(iX, iY, pPlot.getUnit(0).getOwner())
+
+
+@handler("improvementDestroyed")
+def onFortDestroyed(iImprovement, iPlayer, iX, iY):
+	# MacAurther: Forts control territory
+	if iImprovement == iFort:
+		forts.loseFortCulture(iX, iY)
+
+
+@handler("EndGameTurn")
+def onEndGameTurn(argsList):
+	# MacAurther: Fort-controlled territory needs update every turn
+	forts.updateAllFortCulture()
+
 
 @handler("PythonReloaded")
 def resetHandlersOnPythonReloaded():
@@ -115,3 +152,5 @@ def resetHandlersOnPythonReloaded():
 @handler("OnLoad")
 def resetHandlersOnLoad():
 	event_handler_registry.reset()
+
+
