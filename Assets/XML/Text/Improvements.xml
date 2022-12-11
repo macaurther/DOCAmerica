@@ -74,16 +74,12 @@
 		<Spanish>Paddy Field</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_ROUTE_ROMAN_ROAD</Tag>
-		<English>Roman Road</English>
-		<French>
-			<Text>Voie romaine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Roman Road</German>
-		<Italian>Roman Road</Italian>
-		<Spanish>Roman Road</Spanish>
+		<Tag>TXT_KEY_ROUTE_INCAN_ROAD</Tag>
+		<English>Incan Road</English>
+		<French>Incan Road</French>
+		<German>Incan Road</German>
+		<Italian>Incan Road</Italian>
+		<Spanish>Incan Road</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ROUTE_HIGHWAY</Tag>

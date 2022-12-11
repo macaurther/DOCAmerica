@@ -38,12 +38,12 @@
 		<Spanish>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_ROMAN_ROAD</Tag>
-		<English>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</English>
-		<French>construire une [LINK=ROUTE_ROMAN_ROAD]voie romaine[\LINK]</French>
-		<German>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</German>
-		<Italian>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</Italian>
-		<Spanish>Build a [LINK=ROUTE_ROMAN_ROAD]Roman Road[\LINK]</Spanish>
+		<Tag>TXT_KEY_BUILD_INCAN_ROAD</Tag>
+		<English>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</English>
+		<French>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</French>
+		<German>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</German>
+		<Italian>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</Italian>
+		<Spanish>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_HIGHWAY</Tag>
@@ -92,6 +92,14 @@
 		<German>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</German>
 		<Italian>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</Italian>
 		<Spanish>Build a [LINK=IMPROVEMENT_HAMLET]Hamlet[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_REMOVE_SWAMP</Tag>
+		<English>Remove a [LINK=FEATURE_SWAMP]Swamp[\LINK]</English>
+		<French>Remove a [LINK=FEATURE_SWAMP]Swamp[\LINK]</French>
+		<German>Remove a [LINK=FEATURE_SWAMP]Swamp[\LINK]</German>
+		<Italian>Remove a [LINK=FEATURE_SWAMP]Swamp[\LINK]</Italian>
+		<Spanish>Remove a [LINK=FEATURE_SWAMP]Swamp[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_SACRIFICE</Tag>

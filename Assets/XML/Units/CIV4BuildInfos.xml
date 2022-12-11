@@ -11,6 +11,7 @@
 			<Description>TXT_KEY_BUILD_ROAD</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>400</iTime>
+			<iCost>10</iCost>
 			<RouteType>ROUTE_ROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
 			<HotKey>KB_R</HotKey>
@@ -21,11 +22,12 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildRoad.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_ROMAN_ROAD</Type>
-			<Description>TXT_KEY_BUILD_ROMAN_ROAD</Description>
+			<Type>BUILD_INCAN_ROAD</Type>
+			<Description>TXT_KEY_BUILD_INCAN_ROAD</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>400</iTime>
-			<RouteType>ROUTE_ROMAN_ROAD</RouteType>
+			<iCost>15</iCost>
+			<RouteType>ROUTE_INCAN_ROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
 			<HotKey>KB_R</HotKey>
 			<bAltDown>0</bAltDown>
@@ -40,6 +42,7 @@
 			<Description>TXT_KEY_BUILD_RAILROAD</Description>
 			<PrereqTech>TECH_RAILROAD</PrereqTech>
 			<iTime>800</iTime>
+			<iCost>25</iCost>
 			<RouteType>ROUTE_RAILROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_RAILROAD</EntityEvent>
 			<HotKey>KB_R</HotKey>
@@ -54,6 +57,7 @@
 			<Description>TXT_KEY_BUILD_HIGHWAY</Description>
 			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
 			<iTime>800</iTime>
+			<iCost>30</iCost>
 			<RouteType>ROUTE_HIGHWAY</RouteType>
 			<EntityEvent>ENTITY_EVENT_RAILROAD</EntityEvent>
 			<HotKey>KB_R</HotKey>
@@ -68,6 +72,7 @@
 			<Description>TXT_KEY_BUILD_FARM</Description>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<iTime>600</iTime>
+			<iCost>15</iCost>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
@@ -99,6 +104,13 @@
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
 			<bAltDown>0</bAltDown>
@@ -112,6 +124,7 @@
 			<Description>TXT_KEY_BUILD_PADDY_FIELD</Description>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<iTime>600</iTime>
+			<iCost>15</iCost>
 			<ImprovementType>IMPROVEMENT_PADDY_FIELD</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
@@ -143,6 +156,13 @@
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
 			<bAltDown>0</bAltDown>
@@ -156,6 +176,7 @@
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<iTime>0</iTime>
+			<iCost>5</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -171,6 +192,7 @@
 			<Description>TXT_KEY_BUILD_OCEAN_FISHERY</Description>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<iTime>0</iTime>
+			<iCost>15</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_OCEAN_FISHERY</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -186,6 +208,7 @@
 			<Description>TXT_KEY_BUILD_WHALING_BOATS</Description>
 			<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			<iTime>0</iTime>
+			<iCost>15</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_WHALING_BOATS</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -201,6 +224,7 @@
 			<Description>TXT_KEY_BUILD_MINE</Description>
 			<PrereqTech>TECH_MINING</PrereqTech>
 			<iTime>600</iTime>
+			<iCost>10</iCost>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
@@ -225,6 +249,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_M</HotKey>
 			<bAltDown>0</bAltDown>
@@ -238,6 +269,7 @@
 			<Description>TXT_KEY_BUILD_WORKSHOP</Description>
 			<PrereqTech>TECH_ARTISANRY</PrereqTech>
 			<iTime>800</iTime>
+			<iCost>20</iCost>
 			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
@@ -262,6 +294,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_K</HotKey>
 			<bAltDown>0</bAltDown>
@@ -275,6 +314,7 @@
 			<Description>TXT_KEY_BUILD_LUMBERMILL</Description>
 			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<iTime>800</iTime>
+			<iCost>5</iCost>
 			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_L</HotKey>
@@ -289,6 +329,7 @@
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
 			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>600</iTime>
+			<iCost>20</iCost>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -313,6 +354,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_W</HotKey>
 			<bAltDown>0</bAltDown>
@@ -326,6 +374,7 @@
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
 			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>800</iTime>
+			<iCost>25</iCost>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -350,6 +399,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_W</HotKey>
 			<bAltDown>0</bAltDown>
@@ -363,6 +419,7 @@
 			<Description>TXT_KEY_BUILD_PLANTATION</Description>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
 			<iTime>800</iTime>
+			<iCost>20</iCost>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -383,6 +440,13 @@
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
 					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -411,6 +475,13 @@
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_P</HotKey>
 			<bAltDown>0</bAltDown>
@@ -425,6 +496,7 @@
 			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>600</iTime>
+			<iCost>10</iCost>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -449,6 +521,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_Q</HotKey>
 			<bAltDown>0</bAltDown>
@@ -462,6 +541,7 @@
 			<Description>TXT_KEY_BUILD_PASTURE</Description>
 			<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			<iTime>500</iTime>
+			<iCost>5</iCost>
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -486,6 +566,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_P</HotKey>
 			<bAltDown>0</bAltDown>
@@ -499,6 +586,7 @@
 			<Description>TXT_KEY_BUILD_CAMP</Description>
 			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iTime>500</iTime>
+			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_H</HotKey>
@@ -513,6 +601,7 @@
 			<Description>TXT_KEY_BUILD_WELL</Description>
 			<PrereqTech>TECH_REFINING</PrereqTech>
 			<iTime>1000</iTime>
+			<iCost>30</iCost>
 			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -537,6 +626,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_W</HotKey>
 			<bAltDown>0</bAltDown>
@@ -550,6 +646,7 @@
 			<Description>TXT_KEY_BUILD_OFFSHORE_PLATFORM</Description>
 			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
 			<iTime>0</iTime>
+			<iCost>50</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -566,7 +663,7 @@
 			<Help/>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iTime>500</iTime>
-			<iCost>0</iCost>
+			<iCost>15</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_ORCHARD</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -593,6 +690,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_O</HotKey>
 			<bAltDown>0</bAltDown>
@@ -606,6 +710,7 @@
 			<Description>TXT_KEY_BUILD_COTTAGE</Description>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<iTime>700</iTime>
+			<iCost>15</iCost>
 			<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -626,6 +731,13 @@
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
 					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -667,6 +779,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_T</HotKey>
 			<bAltDown>0</bAltDown>
@@ -681,6 +800,7 @@
 			<Description>TXT_KEY_BUILD_FORT</Description>
 			<PrereqTech>TECH_FORTIFICATION</PrereqTech>
 			<iTime>1000</iTime>
+			<iCost>50</iCost>
 			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -763,6 +883,27 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
 		</BuildInfo>
 		<BuildInfo>
+			<Type>BUILD_REMOVE_SWAMP</Type>
+			<Description>TXT_KEY_BUILD_REMOVE_SWAMP</Description>
+			<iTime>0</iTime>
+			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_C</HotKey>
+			<bAltDown>1</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
+		</BuildInfo>
+		<BuildInfo>
 			<Type>BUILD_SCRUB_FALLOUT</Type>
 			<Description>TXT_KEY_BUILD_SCRUB_FALLOUT</Description>
 			<iTime>0</iTime>
@@ -787,9 +928,9 @@
 			<Type>BUILD_NATURE_RESERVE</Type>
 			<Description>TXT_KEY_BUILD_NATURE_RESERVE</Description>
 			<Help/>
-			<PrereqTech>TECH_CIVIL_RIGHTS</PrereqTech>
+			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<iTime>800</iTime>
-			<iCost>0</iCost>
+			<iCost>50</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_NATURE_RESERVE</ImprovementType>
 			<RouteType>NONE</RouteType>
