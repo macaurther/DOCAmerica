@@ -201,7 +201,7 @@ lInfluences = [
 	(iCuba, iSpain),
 ]
 
-'''dBirth = CivDict({
+dBirth = CivDict({
 iMaya : 250,
 iTeotihuacan : 250,
 iTiwanaku : 250,
@@ -234,9 +234,9 @@ iVenezuela : 1811,
 iBrazil : 1822,
 iCanada : 1867,
 iCuba : 1898,
-}, 250)'''
+}, 250)
 
-dBirth = CivDict({
+'''dBirth = CivDict({
 iMaya : 250,
 iTeotihuacan : 250,
 iTiwanaku : 250,
@@ -269,7 +269,7 @@ iVenezuela : 250,
 iBrazil : 250,
 iCanada : 250,
 iCuba : 250,
-}, 250)
+}, 250)'''
 
 lBirthCivs = dBirth.keys()
 

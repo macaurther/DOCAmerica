@@ -25357,7 +25357,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=40
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -25941,7 +25941,7 @@ EndPlot
 BeginPlot
 	x=45,y=39
 	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -26536,7 +26536,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=39
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot

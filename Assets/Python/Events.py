@@ -139,7 +139,7 @@ def onFortDestroyed(iImprovement, iPlayer, iX, iY):
 
 
 @handler("EndGameTurn")
-def onEndGameTurn(argsList):
+def onEndGameTurn(iGameTurn):
 	# MacAurther: Fort-controlled territory needs update every turn
 	forts.updateAllFortCulture()
 

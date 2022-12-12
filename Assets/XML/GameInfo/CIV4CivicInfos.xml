@@ -805,7 +805,6 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionBuildingProductionModifier>25</iStateReligionBuildingProductionModifier>
-			<bNoNonStateReligionSpread>1</bNoNonStateReligionSpread>
 			<SpecialBuildingNotRequireds>
 				<SpecialBuildingNotRequired>
 					<SpecialBuildingType>SPECIALBUILDING_MONASTERY</SpecialBuildingType>

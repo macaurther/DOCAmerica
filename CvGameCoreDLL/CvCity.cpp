@@ -395,6 +395,12 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		GC.getGameINLINE().updatePlotGroups();
 	}
 
+	// 1SDAN: Update plot symbols because apparently when the first city is founded those get updated before the city is set to be the capital
+	if (getCivilizationType() == TIWANAKU) 
+	{
+		pPlot->updateSymbols();
+	}
+
 	AI_init();
 }
 
@@ -4372,6 +4378,13 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
 		{
 			changeMaxSpecialistCount(((SpecialistTypes)iI), GC.getBuildingInfo(eBuilding).getSpecialistCount(iI) * iChange);
+
+			// Tiwanaku UP: +1 Priest Slot from Pagan Temples.
+			if (getCivilizationType() == TIWANAKU && (SpecialistTypes)iI == SPECIALIST_PRIEST && eBuilding == getUniqueBuilding(getCivilizationType(), PAGAN_TEMPLE))
+			{
+				changeMaxSpecialistCount(((SpecialistTypes)iI), iChange);
+			}
+
 			changeFreeSpecialistCount(((SpecialistTypes)iI), GC.getBuildingInfo(eBuilding).getFreeSpecialistCount(iI) * iChange);
 		}
 

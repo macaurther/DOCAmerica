@@ -6285,14 +6285,14 @@ void CvPlot::updateCityRoute(bool bUpdatePlotGroup)
 
 		eCityRoute = GET_PLAYER(getOwnerINLINE()).getBestRoute();
 
-		bool bRomanRoadAround = false;
+		bool bIncanRoadAround = false;
 		for (int iI = std::max(0, getX_INLINE()-1); iI < std::min(getX_INLINE()+1, EARTH_X)+1; iI++)
 		{
 			for (int iJ = std::max(0, getY_INLINE()-1); iJ < std::min(getY_INLINE()+1, EARTH_X)+1; iJ++)
 			{
-				if (GC.getMap().plot(iI, iJ)->getRouteType() == (RouteTypes)GC.getInfoTypeForString("ROUTE_ROMAN_ROAD"))
+				if (GC.getMap().plot(iI, iJ)->getRouteType() == (RouteTypes)GC.getInfoTypeForString("ROUTE_INCAN_ROAD"))
 				{
-					bRomanRoadAround = true;
+					bIncanRoadAround = true;
 					break;
 					break;
 				}
@@ -6300,9 +6300,9 @@ void CvPlot::updateCityRoute(bool bUpdatePlotGroup)
 		}
 
 		//Leoreth: no Roman roads for everyone
-		if ((getOwnerINLINE() == NO_PLAYER) && !bRomanRoadAround)
+		if ((getOwnerINLINE() == NO_PLAYER) && !bIncanRoadAround)
 		{
-			if (eCityRoute == GC.getInfoTypeForString("ROUTE_ROMAN_ROAD"))
+			if (eCityRoute == GC.getInfoTypeForString("ROUTE_INCAN_ROAD"))
 			{
 				eCityRoute = (RouteTypes)GC.getInfoTypeForString("ROUTE_ROAD");
 			}
@@ -6643,6 +6643,22 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		iYield += GC.getYieldInfo(eYield).getPeakChange();
 	}
 
+	// Wari UP: The Power of Terraces: +1 Food on tiles adjacent to Mountains
+	if (GET_PLAYER(getOwner()).getCivilizationType() == WARI && eYield == YIELD_FOOD && !isWater())
+	{
+		bool bAdjacentMountain = false;
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+
+			if ((pAdjacentPlot != NULL) && pAdjacentPlot->isPeak())
+			{
+				iYield += 1;
+				break;
+			}
+		}
+	}
+
 	if (isLake())
 	{
 		iYield += GC.getYieldInfo(eYield).getLakeChange();
@@ -6773,6 +6789,15 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		if (eBonus != NO_BONUS)
 		{
 			iYield += GC.getImprovementInfo(eImprovement).getImprovementBonusYield(eBonus, eYield);
+		}
+	}
+
+	// 1SDAN: Muisca UP: +1 Food on Mines.
+	if (GET_PLAYER(getOwner()).getCivilizationType() == MUISCA)
+	{
+		if (eYield == YIELD_FOOD && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_MINE"))
+		{
+			iYield += 1;
 		}
 	}
 
@@ -6957,6 +6982,18 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		if (iAppliedImprovement != -1)
 		{
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
+		}
+		
+		// 1SDAN: Tiwanaku UP: Extra Production in the Capital.
+		if (pCity->getCivilizationType() == TIWANAKU)
+		{
+			if (eYield == YIELD_PRODUCTION)
+			{
+				if (pCity->isCapital())
+				{
+					iYield += 2;
+				}
+			}
 		}
 	}
 
@@ -10894,55 +10931,57 @@ bool CvPlot::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible) const
 			}
 		}
 
-		if (GC.getUnitInfo(eUnit).getPrereqAndBonus() != NO_BONUS)
-		{
-			if (NULL == pCity)
+		if (!(pCity->getCivilizationType() == TEOTIHUACAN && GC.getUnitInfo(eUnit).getUnitCombatType() == 4)) { // Teotihuacan UP: melee units (combat type 4) ignore resource requirements
+			if (GC.getUnitInfo(eUnit).getPrereqAndBonus() != NO_BONUS)
 			{
-				if (!isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
-				{
-					return false;
-				}
-			}
-			else
-			{
-				if (!pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
-				{
-					return false;
-				}
-			}
-		}
-
-		bool bRequiresBonus = false;
-		bool bNeedsBonus = true;
-
-		for (int iI = 0; iI < GC.getNUM_UNIT_PREREQ_OR_BONUSES(); ++iI)
-		{
-			if (GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI) != NO_BONUS)
-			{
-				bRequiresBonus = true;
-
 				if (NULL == pCity)
 				{
-					if (isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
+					if (!isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
 					{
-						bNeedsBonus = false;
-						break;
+						return false;
 					}
 				}
 				else
 				{
-					if (pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
+					if (!pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
 					{
-						bNeedsBonus = false;
-						break;
+						return false;
 					}
 				}
 			}
-		}
 
-		if (bRequiresBonus && bNeedsBonus)
-		{
-			return false;
+			bool bRequiresBonus = false;
+			bool bNeedsBonus = true;
+
+			for (int iI = 0; iI < GC.getNUM_UNIT_PREREQ_OR_BONUSES(); ++iI)
+			{
+				if (GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI) != NO_BONUS)
+				{
+					bRequiresBonus = true;
+
+					if (NULL == pCity)
+					{
+						if (isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
+						{
+							bNeedsBonus = false;
+							break;
+						}
+					}
+					else
+					{
+						if (pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
+						{
+							bNeedsBonus = false;
+							break;
+						}
+					}
+				}
+			}
+
+			if (bRequiresBonus && bNeedsBonus)
+			{
+				return false;
+			}
 		}
 	}
 
