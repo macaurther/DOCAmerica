@@ -6603,10 +6603,10 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	BonusTypes eBonus;
 	int iYield;
 
-	//Rhye - start UP
+	//Rhye - start UP -> MacAurther: Andes RP
 	if (isPeak())
 	{
-		if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES) // MacAurther: Changed to a Regional Power
+		if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES)
 		{
 			if (eYield == YIELD_FOOD) 
 			{
@@ -6644,7 +6644,7 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	}
 
 	// Wari UP: The Power of Terraces: +1 Food on tiles adjacent to Mountains
-	if (GET_PLAYER(getOwner()).getCivilizationType() == WARI && eYield == YIELD_FOOD && !isWater())
+	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == WARI && eYield == YIELD_FOOD && !isWater())
 	{
 		bool bAdjacentMountain = false;
 		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
@@ -6793,7 +6793,7 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 	}
 
 	// 1SDAN: Muisca UP: +1 Food on Mines.
-	if (GET_PLAYER(getOwner()).getCivilizationType() == MUISCA)
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == MUISCA)
 	{
 		if (eYield == YIELD_FOOD && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_MINE"))
 		{

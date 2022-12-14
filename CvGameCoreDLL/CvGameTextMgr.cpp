@@ -6398,6 +6398,7 @@ void CvGameTextMgr::parseCivInfos(CvWStringBuffer &szInfoText, CivilizationTypes
 			swprintf(szTempString, NEWLINE SETCOLR L"%s" ENDCOLR NEWLINE, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"), szText.GetCString());
 		}
 		szInfoText.append(szTempString);
+
 		swprintf(szTempString, L"%s" NEWLINE, gDLL->getText("TXT_KEY_UP_" + GC.getCivilizationInfo(eCivilization).getIdentifier() + "_TITLE").GetCString());
 		szInfoText.append(szTempString);
 

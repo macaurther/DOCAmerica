@@ -17762,7 +17762,7 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 	}
 
 	// Leoreth: Inca UP -> MacAurther: Andes RP
-	if ((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES && pPlot->isPeak())
+	if (getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES && pPlot->isPeak())
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
 	}
