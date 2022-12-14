@@ -1527,6 +1527,9 @@ void CvInitCore::setFlagDecal(PlayerTypes eID, const CvWString & szFlagDecal)
 
 CivilizationTypes CvInitCore::getCiv(PlayerTypes eID) const
 {
+	char buffer[100];
+	sprintf(buffer, "eID is %i", eID);
+	FAssertMsg(false, buffer);
 	FASSERT_BOUNDS(0, MAX_PLAYERS, eID, "CvInitCore::getCiv");
 	if ( checkBounds(eID, 0, MAX_PLAYERS) )
 	{

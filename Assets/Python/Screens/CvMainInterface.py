@@ -2504,12 +2504,12 @@ class CvMainInterface:
 						
 						iCount = iCount + 1
 						
-					# Leoreth: Aztec UP: sacrifice slaves
-					if pUnit.getUnitType() == iAztecSlave and civ(pUnit) == iAztecs:
+					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerica RP
+					if pUnit.getUnitType() == iNativeSlave and civ(pUnit) in (iAztecs, iMaya, iTeotihuacan):
 						plot = plot_(pUnit)
 						if plot.isCity():
 							city = plot.getPlotCity()
-							if civ(city) == iAztecs and not city.isWeLoveTheKingDay():
+							if civ(city) in (iAztecs, iMaya, iTeotihuacan) and not city.isWeLoveTheKingDay():
 								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(iSacrificialAltar).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
 								screen.show("BottomButtonContainer")
 								iCount = iCount + 1

@@ -10758,6 +10758,11 @@ const std::string CvCivilizationInfo::getIdentifier() const
 	return m_szIdentifier;
 }
 
+const std::string CvCivilizationInfo::getRegion() const
+{
+	return m_szRegion;
+}
+
 int CvCivilizationInfo::getRating(RatingTypes eRating) const
 {
 	return m_piRatings[eRating];
@@ -10789,6 +10794,7 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	stream->ReadString(m_szShortDescriptionKey);
 	stream->ReadString(m_szAdjectiveKey);
 	stream->ReadString(m_szIdentifier); // Leoreth
+	stream->ReadString(m_szRegion); // MacAurther
 
 	// Arrays
 
@@ -10864,6 +10870,7 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 	stream->WriteString(m_szShortDescriptionKey);
 	stream->WriteString(m_szAdjectiveKey);
 	stream->WriteString(m_szIdentifier); // Leoreth
+	stream->WriteString(m_szRegion); // MacAurther
 
 	// Arrays
 
@@ -10900,6 +10907,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 
 	// Leoreth
 	pXML->GetChildXmlValByName(m_szIdentifier, "Identifier");
+	pXML->GetChildXmlValByName(m_szRegion, "Region"); // MacAurther
 
 	pXML->GetChildXmlValByName(szTextVal, "DefaultPlayerColor");
 	m_iDefaultPlayerColor = pXML->FindInInfoClass(szTextVal);

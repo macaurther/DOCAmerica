@@ -6367,7 +6367,26 @@ void CvGameTextMgr::parseCivInfos(CvWStringBuffer &szInfoText, CivilizationTypes
 
 		//Rhye - start
 
-		// Unique powers
+		// MacAurther: Regional Powers
+		if (bDawnOfMan)
+		{
+			szText = NEWLINE + gDLL->getText("TXT_KEY_REGIONAL_POWER");
+			swprintf(szTempString, SETCOLR L"%s: " ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), szText.GetCString());
+		}
+		else
+		{
+			szText = gDLL->getText("TXT_KEY_REGIONAL_POWER");
+			swprintf(szTempString, NEWLINE SETCOLR L"%s" ENDCOLR NEWLINE, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"), szText.GetCString());
+		}
+		szInfoText.append(szTempString);
+
+		swprintf(szTempString, L"%s" NEWLINE, gDLL->getText("TXT_KEY_RP_" + GC.getCivilizationInfo(eCivilization).getRegion() + "_TITLE").GetCString());
+		szInfoText.append(szTempString);
+
+		swprintf(szTempString, L"%s" NEWLINE, gDLL->getText("TXT_KEY_RP_" + GC.getCivilizationInfo(eCivilization).getRegion()).GetCString());
+		szInfoText.append(szTempString);
+
+		// Unique Powers
 		if (bDawnOfMan)
 		{
 			szText = NEWLINE + gDLL->getText("TXT_KEY_UNIQUE_POWER");
@@ -6379,7 +6398,6 @@ void CvGameTextMgr::parseCivInfos(CvWStringBuffer &szInfoText, CivilizationTypes
 			swprintf(szTempString, NEWLINE SETCOLR L"%s" ENDCOLR NEWLINE, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"), szText.GetCString());
 		}
 		szInfoText.append(szTempString);
-
 		swprintf(szTempString, L"%s" NEWLINE, gDLL->getText("TXT_KEY_UP_" + GC.getCivilizationInfo(eCivilization).getIdentifier() + "_TITLE").GetCString());
 		szInfoText.append(szTempString);
 
@@ -16380,6 +16398,7 @@ void CvGameTextMgr::buildStabilityParameterString(CvWStringBuffer& szBuffer, int
 		int iParameterRecentExpansion = player.getStabilityParameter(PARAMETER_RECENT_EXPANSION);
 		int iParameterRazedCities = player.getStabilityParameter(PARAMETER_RAZED_CITIES);
 		int iParameterIsolationism = player.getStabilityParameter(PARAMETER_ISOLATIONISM);
+		int iParameterMotherland = player.getStabilityParameter(PARAMETER_MOTHERLAND);
 
 		iTotalStability = iParameterCorePeriphery + iParameterRecentExpansion;
 
@@ -16407,6 +16426,13 @@ void CvGameTextMgr::buildStabilityParameterString(CvWStringBuffer& szBuffer, int
 			CvWString szTemp;
 			szTemp.Format(L"%s: %d / %d", gDLL->getText("TXT_KEY_STABILITY_CORE_PERIPHERY_INFO").GetCString(), iParameterSeparatism, iParameterAdministration);
 			//szTemp.Format(L"+%d: %s (%d / %d)", iParameterCorePeriphery, gDLL->getText("TXT_KEY_STABILITY_CORE_PERIPHERY_POSITIVE").GetCString(), iParameterPeripheryScore, iParameterCoreScore);
+			szStabilityParameters += NEWLINE + szTemp;
+		}
+
+		if (iParameterMotherland > 0)
+		{
+			CvWString szTemp;
+			szTemp.Format(L"%d: %s", iParameterMotherland, gDLL->getText("TXT_KEY_STABILITY_MOTHERLAND").GetCString());
 			szStabilityParameters += NEWLINE + szTemp;
 		}
 

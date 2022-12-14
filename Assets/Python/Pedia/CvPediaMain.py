@@ -963,7 +963,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 		if UnitInfo.isGraphicalOnly() and not base_unit(iUnit) in [iWarrior, iAxeman, iSlave]:
 			return -1
-		elif iDefaultUnit > -1 and iDefaultUnit != iUnit and not iUnit == iAztecSlave:
+		elif iDefaultUnit > -1 and iDefaultUnit != iUnit and not iUnit == iNativeSlave:
 			return 2
 		elif UnitInfo.getCombat() > 0 or UnitInfo.getAirCombat() != 0 or UnitInfo.isSuicide():
 			if not UnitInfo.isAnimal() and not UnitInfo.isFound():

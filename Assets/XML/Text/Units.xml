@@ -1050,24 +1050,20 @@
 		<Spanish>[ICON_BULLET]Can build [LINK=literal]Slave Plantation[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_AZTEC_SLAVE</Tag>
-		<English>Aztec Slave</English>
-		<French>
-			<Text>Esclave azt&#232;que</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Aztec Slave</German>
-		<Italian>Aztec Slave</Italian>
-		<Spanish>Aztec Slave</Spanish>
+		<Tag>TXT_KEY_UNIT_NATIVE_SLAVE</Tag>
+		<English>Native Slave</English>
+		<French>Native Slave</French>
+		<German>Native Slave</German>
+		<Italian>Native Slave</Italian>
+		<Spanish>Native Slave</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_AZTEC_SLAVE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Aztec Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</English>
-		<French>[COLOR_UNIT_TEXT]Aztec Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</French>
-		<German>[COLOR_UNIT_TEXT]Aztec Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</German>
-		<Italian>[COLOR_UNIT_TEXT]Aztec Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Aztec Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</Spanish>
+		<Tag>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</English>
+		<French>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</French>
+		<German>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</German>
+		<Italian>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] build improvements including [COLOR_HIGHLIGHT_TEXT]Slave Plantations[COLOR_REVERT], can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TANK_STRATEGY</Tag>

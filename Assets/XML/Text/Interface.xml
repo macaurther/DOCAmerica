@@ -1807,6 +1807,14 @@
 		<Spanish>Poder &#250;nico:</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_REGIONAL_POWER</Tag>
+		<English>Regional Power</English>
+		<French>Regional Power</French>
+		<German>Regional Power</German>
+		<Italian>Regional Power</Italian>
+		<Spanish>Regional Power</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_VASSALAGE_ALLOWS</Tag>
 		<English>[ICON_BULLET]Required to train [LINK=literal]Levy[\LINK]</English>
 		<French>[ICON_BULLET]N&#233;cessaire pour former une [LINK=literal]Lev&#233;e[\LINK]</French>

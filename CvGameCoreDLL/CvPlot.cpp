@@ -6606,7 +6606,7 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	//Rhye - start UP
 	if (isPeak())
 	{
-		if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == INCA && (GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getPeriod() == NO_PERIOD))
+		if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES) // MacAurther: Changed to a Regional Power
 		{
 			if (eYield == YIELD_FOOD) 
 			{

@@ -25247,6 +25247,66 @@ int CvPlayer::getLandHistory(int iTurn) const
 	return getHistory(HISTORY_LAND, iTurn);
 }
 
+int CvPlayer::getRegionPowers()
+{
+	switch (getCivilizationType())
+	{
+	case CHIMU:
+	case INCA:
+	case MUISCA:
+	case TIWANAKU:
+	case WARI:
+		return RP_ANDES;
+		break;
+	case AMERICA:
+	case CANADA:
+		return RP_ANGLO_AMERICA;
+		break;
+	case INUIT:
+		return RP_ARCTIC;
+		break;
+	case ENGLAND:
+	case FRANCE:
+	case NETHERLANDS:
+	case NORSE:
+	case PORTUGAL:
+	case RUSSIA:
+	case SPAIN:
+		return RP_EUROPE;
+		break;
+	case ARGENTINA:
+	case BOLIVIA:
+	case BRAZIL:
+	case CHILE:
+	case COLOMBIA:
+	case CUBA:
+	case HAITI:
+	case MEXICO:
+	case PERU:
+	case VENEZUELA:
+		return RP_LATIN_AMERICA;
+		break;
+	case AZTECS:
+	case MAYA:
+	case TEOTIHUACAN:
+		return RP_MESOAMERICA;
+		break;
+	case HAWAII:
+		return RP_PACIFIC;
+		break;
+	case PUEBLOAN:
+		return RP_SOUTHWEST;
+		break;
+	case IROQUOIS:
+	case MISSISSIPPI:
+		return RP_WOODLAND;
+		break;
+	default:
+		return NO_RP;
+		break;
+	}
+}
+
 bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 {
 	if (getCurrentEra() >= ERA_ATOMIC)

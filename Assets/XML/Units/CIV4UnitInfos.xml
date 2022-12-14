@@ -11629,13 +11629,13 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SLAVE</Class>
-			<Type>UNIT_AZTEC_SLAVE</Type>
+			<Type>UNIT_NATIVE_SLAVE</Type>
 			<Capture>UNITCLASS_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_AZTEC_SLAVE</Description>
-			<Civilopedia>TXT_KEY_UNIT_AZTEC_SLAVE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_AZTEC_SLAVE_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
+			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
 			<Help>TXT_KEY_UNIT_SLAVE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>

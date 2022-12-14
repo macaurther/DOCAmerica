@@ -19,6 +19,7 @@
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AME</Identifier>
+			<Region>ANG</Region>
 			<StartingYear>1775</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
@@ -123,6 +124,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>ARG</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>45</LoadingTime>
@@ -221,6 +223,7 @@
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AZT</Identifier>
+			<Region>MES</Region>
 			<StartingYear>1250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -291,7 +294,7 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
-					<UnitType>UNIT_AZTEC_SLAVE</UnitType>
+					<UnitType>UNIT_NATIVE_SLAVE</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -339,6 +342,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>BOL</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -417,6 +421,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>BRA</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -511,6 +516,7 @@
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>CAN</Identifier>
+			<Region>ANG</Region>
 			<StartingYear>1867</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
@@ -621,6 +627,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CHL</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>45</LoadingTime>
@@ -703,6 +710,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CHM</Identifier>
+			<Region>AND</Region>
 			<StartingYear>900</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -790,6 +798,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>COL</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -880,6 +889,7 @@
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CUB</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1898</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -961,6 +971,7 @@
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>ENG</Identifier>
+			<Region>EUR</Region>
 			<StartingYear>1607</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>6</LoadingTime>
@@ -1075,6 +1086,7 @@
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>FRA</Identifier>
+			<Region>EUR</Region>
 			<StartingYear>1608</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>6</LoadingTime>
@@ -1186,6 +1198,7 @@
 			<PaganReligion>PAGAN_RELIGION_YORUBA</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAI</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>8</LoadingTime>
@@ -1292,6 +1305,7 @@
 			<PaganReligion>PAGAN_RELIGION_ATUA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>HAW</Identifier>
+			<Region>PAC</Region>
 			<StartingYear>1650</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>1</LoadingTime>
@@ -1403,6 +1417,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>INC</Identifier>
+			<Region>AND</Region>
 			<StartingYear>1100</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -1500,6 +1515,7 @@
 			<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>INU</Identifier>
+			<Region>ARC</Region>
 			<StartingYear>1050</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -1605,6 +1621,7 @@
 			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRO</Identifier>
+			<Region>WOO</Region>
 			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -1675,6 +1692,7 @@
 			<PaganReligion>PAGAN_RELIGION_TEOTL_MAYA</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>MAY</Identifier>
+			<Region>MES</Region>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -1745,6 +1763,10 @@
 					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
 					<UnitType>UNIT_MAYAN_HOLKAN</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1791,6 +1813,7 @@
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>MEX</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -1888,6 +1911,7 @@
 			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
+			<Region>WOO</Region>
 			<StartingYear>600</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>5</LoadingTime>
@@ -2010,6 +2034,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MUI</Identifier>
+			<Region>AND</Region>
 			<StartingYear>800</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2099,6 +2124,7 @@
 			<PaganReligion>PAGAN_RELIGION_ASATRU</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>HOL</Identifier>
+			<Region>EUR</Region>
 			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
@@ -2214,6 +2240,7 @@
 			<PaganReligion>PAGAN_RELIGION_ASATRU</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>NOR</Identifier>
+			<Region>EUR</Region>
 			<StartingYear>874</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2314,6 +2341,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PER</Identifier>
+			<Region>AND</Region>
 			<StartingYear>1811</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -2392,6 +2420,7 @@
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>POR</Identifier>
+			<Region>EUR</Region>
 			<StartingYear>1532</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>8</LoadingTime>
@@ -2517,6 +2546,7 @@
 			<PaganReligion>PAGAN_RELIGION_KACHIN</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
+			<Region>SOU</Region>
 			<StartingYear>750</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>5</LoadingTime>
@@ -2592,6 +2622,7 @@
 			<PaganReligion>PAGAN_RELIGION_RODNOVERY</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>RUS</Identifier>
+			<Region>EUR</Region>
 			<StartingYear>1743</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>6</LoadingTime>
@@ -2687,6 +2718,7 @@
 			<PaganReligion>PAGAN_RELIGION_DRUIDISM</PaganReligion>
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>SPA</Identifier>
+			<Region>EUR</Region>
 			<StartingYear>1496</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>6</LoadingTime>
@@ -2791,6 +2823,7 @@
 			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TEO</Identifier>
+			<Region>MES</Region>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -2856,6 +2889,10 @@
 					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
 					<UnitType>UNIT_TEOTIHUACAN_ARTISAN</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2902,6 +2939,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TIW</Identifier>
+			<Region>AND</Region>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -2989,6 +3027,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>VEN</Identifier>
+			<Region>LAT</Region>
 			<StartingYear>1811</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -3067,6 +3106,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>WAR</Identifier>
+			<Region>AND</Region>
 			<StartingYear>500</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>5</LoadingTime>
@@ -3150,6 +3190,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
 			<Identifier>MIN</Identifier>
+			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3342,6 +3383,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
 			<Identifier>MIN</Identifier>
+			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3536,6 +3578,7 @@
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<Identifier>NAT</Identifier>
+			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3715,6 +3758,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MINOR</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
 			<Identifier>MIN</Identifier>
+			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3837,6 +3881,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_BARBARIAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
 			<Identifier>BAR</Identifier>
+			<Region>MIN</Region>
 			<StartingYear>0</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>

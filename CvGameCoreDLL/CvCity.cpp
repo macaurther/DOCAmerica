@@ -17761,8 +17761,8 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		iExtraCost += GC.getDefineINT("CULTURE_COST_RIVER");
 	}
 
-	// Leoreth: Inca UP
-	if (getCivilizationType() == INCA && (GET_PLAYER(getOwnerINLINE()).getPeriod() == NO_PERIOD) && pPlot->isPeak())
+	// Leoreth: Inca UP -> MacAurther: Andes RP
+	if ((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES && pPlot->isPeak())
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
 	}

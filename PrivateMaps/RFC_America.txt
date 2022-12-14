@@ -27132,7 +27132,7 @@ EndPlot
 BeginPlot
 	x=47,y=38
 	BonusType=BONUS_SHEEP_LLAMA
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -27727,12 +27727,12 @@ EndPlot
 BeginPlot
 	x=48,y=37
 	BonusType=BONUS_POTATO
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=48,y=38
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -28340,13 +28340,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=36
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=49,y=37
 	BonusType=BONUS_GOLD
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -28943,14 +28943,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=35
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=50,y=36
 	BonusType=BONUS_SHEEP_LLAMA
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -29556,13 +29556,13 @@ EndPlot
 BeginPlot
 	x=51,y=32
 	BonusType=BONUS_POTATO
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=51,y=33
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 	TeamReveal=2,
 EndPlot
@@ -29575,13 +29575,13 @@ EndPlot
 BeginPlot
 	x=51,y=35
 	BonusType=BONUS_POTATO
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=51,y=36
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -30153,7 +30153,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=31
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=2,
 EndPlot
@@ -30165,12 +30165,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=33
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=52,y=34
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=2,
 EndPlot
@@ -30780,7 +30780,7 @@ EndPlot
 BeginPlot
 	x=53,y=33
 	BonusType=BONUS_POTATO
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=2,
 EndPlot

@@ -215,7 +215,7 @@ iInuit : 1050,
 iInca : 1100,
 iAztecs : 1250,
 iIroquois : 1450,
-iSpain : 1496,
+iSpain : 250, #1496,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
@@ -494,7 +494,7 @@ iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iStealthDestroyer,iPri
 iShipOfTheLine,iManOfWar,		iCruiser,		iBattleship,	iMissileCruiser,iBiplane,		iFighter,		iJetFighter,	iDrone,			iBomber,		
 iStealthBomber,	iNuclearBomber,	iGuidedMissile,	iICBM,			iSatellite,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, 
 iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist, iFeGreatScientist, iFeGreatMerchant, iFeGreatEngineer, iFeGreatStatesman,
-iFeGreatGeneral,iFeGreatSpy,	iSlave,			iAztecSlave) = range(iNumUnits)
+iFeGreatGeneral,iFeGreatSpy,	iSlave,			iNativeSlave) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -600,8 +600,8 @@ iNumStabilityTypes = 5
 StabilityTypesTexts = ["TXT_KEY_STABILITY_CATEGORY_EXPANSION", "TXT_KEY_STABILITY_CATEGORY_ECONOMY", "TXT_KEY_STABILITY_CATEGORY_DOMESTIC", "TXT_KEY_STABILITY_CATEGORY_FOREIGN", "TXT_KEY_STABILITY_CATEGORY_MILITARY"]
 
 #Stability Parameters
-iNumStabilityParameters = 22
-(iParameterCorePeriphery, iParameterAdministration, iParameterSeparatism, iParameterRecentExpansion, iParameterRazedCities, iParameterIsolationism,	# Expansion
+iNumStabilityParameters = 23
+(iParameterCorePeriphery, iParameterAdministration, iParameterSeparatism, iParameterRecentExpansion, iParameterRazedCities, iParameterIsolationism,	iParameterMotherland, # Expansion
 iParameterEconomicGrowth, iParameterTrade, iParameterMercantilism, iParameterCentralPlanning,								# Economy
 iParameterHappiness, iParameterCivicCombinations, iParameterCivicsEraTech, iParameterReligion,								# Domestic
 iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNationhood, iParameterMultilateralism,			# Foreign

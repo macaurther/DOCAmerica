@@ -2354,6 +2354,7 @@ public:
 	int getRating(RatingTypes eRating) const;
 	int getStartingYear() const;
 	const std::string getIdentifier() const;
+	const std::string getRegion() const;	// MacAurther
 	int getPaganReligion() const;
 	const wchar* getDescriptionKeyPersistent() const;
 	std::wstring pyGetDescriptionKeyPersistent() { return getDescriptionKeyPersistent(); }
@@ -2405,6 +2406,7 @@ protected:
 	CvWString m_szShortDescriptionKey;
 	CvWString m_szAdjectiveKey;
 	std::string m_szIdentifier; // Leoreth
+	std::string m_szRegion; // MacAurther
 	CvWString m_szDescriptionPersistent; // Leoreth
 
 	// Arrays

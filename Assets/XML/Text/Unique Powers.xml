@@ -1,6 +1,196 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Unique Powers -->
+<!-- Unique and Regional Powers :
+	Regions:
+		MES - Mesoamerica
+		AND - Andes
+		WOO - Woodland
+		SOU - Southwest
+		EUR - Europe
+		ARC - Arctic
+		PAC - Pacific
+		ANG - Anglo America
+		LAT - Latin America
+-->
+
 <Civ4GameText>
+	<!-- Regional Powers -->
+	<TEXT>
+		<Tag>TXT_KEY_RP_AND_TITLE</Tag>
+		<English>Andes - The Power of Terraces:</English>
+		<French>Andes - The Power of Terraces:</French>
+		<German>Andes - The Power of Terraces:</German>
+		<Italian>Andes - The Power of Terraces:</Italian>
+		<Spanish>Andes - The Power of Terraces:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_AND</Tag>
+		<English>Mountains produce 2 food and 1 hammer</English>
+		<French>Les montagnes produisent 2 nourritures et 1 marteau</French>
+		<German>Berge gew&#228;hren 2 Nahrung und 1 Hammer</German>
+		<Italian>Le montagne producono 2 cibo e 1 scudo</Italian>
+		<Spanish>Las monta&#241;as producen 2 alimentos y 1 martillo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_ANG_TITLE</Tag>
+		<English>Anglo America - The Power of Melting Pots:</English>
+		<French>Anglo America - The Power of Melting Pots:</French>
+		<German>Anglo America - The Power of Melting Pots:</German>
+		<Italian>Anglo America - The Power of Melting Pots:</Italian>
+		<Spanish>Anglo America - The Power of Melting Pots:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_ANG</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_ARC_TITLE</Tag>
+		<English>Arctic - The Power of TODO:</English>
+		<French>Arctic - The Power of TODO:</French>
+		<German>Arctic - The Power of TODO:</German>
+		<Italian>Arctic - The Power of TODO:</Italian>
+		<Spanish>Arctic - The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_ARC</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_EUR_TITLE</Tag>
+		<English>Europe - The Power of Colonies:</English>
+		<French>Europe - The Power of Colonies:</French>
+		<German>Europe - The Power of Colonies:</German>
+		<Italian>Europe - The Power of Colonies:</Italian>
+		<Spanish>Europe - The Power of Colonies:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_EUR</Tag>
+		<English>No Core area and receive stability and units from home country</English>
+		<French>No Core area and receive stability and units from home country</French>
+		<German>No Core area and receive stability and units from home country</German>
+		<Italian>No Core area and receive stability and units from home country</Italian>
+		<Spanish>No Core area and receive stability and units from home country</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_LAT_TITLE</Tag>
+		<English>Latin America - The Power of Catholic Heritage:</English>
+		<French>Latin America - The Power of Catholic Heritage:</French>
+		<German>Latin America - The Power of Catholic Heritage:</German>
+		<Italian>Latin America - The Power of Catholic Heritage:</Italian>
+		<Spanish>Latin America - The Power of Catholic Heritage:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_LAT</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_MES_TITLE</Tag>
+		<English>Mesoamerica - The Power of Sacrifice:</English>
+		<French>Mesoamerica - The Power of Sacrifice:</French>
+		<German>Mesoamerica - The Power of Sacrifice:</German>
+		<Italian>Mesoamerica - The Power of Sacrifice:</Italian>
+		<Spanish>Mesoamerica - The Power of Sacrifice:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_MES</Tag>
+		<English>Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness</English>
+		<French>Les unit&#233;s militaires peuvent asservir les unit&#233;s vaincues, et il est possible de sacrifier des esclaves pour augmenter le bonheur des villes</French>
+		<German>Versklavung besiegter feindlicher Einheiten durch Milit&#228;reinheiten, can Sklaven opfern, um Zufriedenheit in St&#228;dten zu erh&#246;hen</German>
+		<Italian>Le unit&#224; militari possono schiavizzare le unit&#224; nemiche sconfitte</Italian>
+		<Spanish>Las unidades militares pueden esclavizar a las unidades enemigas derrotadas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_MIN_TITLE</Tag>
+		<English>None</English>
+		<French>None</French>
+		<German>None</German>
+		<Italian>None</Italian>
+		<Spanish>None</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_MIN</Tag>
+		<English>None</English>
+		<French>None</French>
+		<German>None</German>
+		<Italian>None</Italian>
+		<Spanish>None</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_PAC_TITLE</Tag>
+		<English>Pacific - The Power of TODO:</English>
+		<French>Pacific - The Power of TODO:</French>
+		<German>Pacific - The Power of TODO:</German>
+		<Italian>Pacific - The Power of TODO:</Italian>
+		<Spanish>Pacific - The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_PAC</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_SOU_TITLE</Tag>
+		<English>Southwest - The Power of TODO:</English>
+		<French>Southwest - The Power of TODO:</French>
+		<German>Southwest - The Power of TODO:</German>
+		<Italian>Southwest - The Power of TODO:</Italian>
+		<Spanish>Southwest - The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_SOU</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_WOO_TITLE</Tag>
+		<English>Woodlands - The Power of TODO:</English>
+		<French>Woodlands - The Power of TODO:</French>
+		<German>Woodlands - The Power of TODO:</German>
+		<Italian>Woodlands - The Power of TODO:</Italian>
+		<Spanish>Woodlands - The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RP_WOO</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<!-- Unique Powers -->
+	<TEXT>
+		<Tag>TXT_KEY_UP_AME_TITLE</Tag>
+		<English>The Power of the American Dream:</English>
+		<French>Le pouvoir du r&#234;ve am&#233;ricain :</French>
+		<German>Die Macht des Amerikanischen Traums:</German>
+		<Italian>Il potere del sogno americano:</Italian>
+		<Spanish>El poder del sue&#241;o americano:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_AME</Tag>
+		<English>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</English>
+		<French>Bonheur additionnel avec les doctrines d&#233;mocratie, constitution, individualisme et libre entreprise</French>
+		<German>Zus&#228;tzliche Zufriedenheit unter Demokratie, Verfassung, Individualismus und Freiem Unternehmertum</German>
+		<Italian>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</Italian>
+		<Spanish>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</Spanish>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AME_TITLE</Tag>
 		<English>The Power of the American Dream:</English>
@@ -43,19 +233,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AZT_TITLE</Tag>
-		<English>The Power of Flower Wars:</English>
-		<French>Le pouvoir des guerres fleuries :</French>
-		<German>Die Macht der Blumenkriege:</German>
-		<Italian>Il potere del sacrificio:</Italian>
-		<Spanish>El poder del sacrificio:</Spanish>
+		<English>The Power of the Triple Alliance:</English>
+		<French>The Power of the Triple Alliance:</French>
+		<German>The Power of the Triple Alliance:</German>
+		<Italian>The Power of the Triple Alliance:</Italian>
+		<Spanish>The Power of the Triple Alliance:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AZT</Tag>
-		<English>Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness</English>
-		<French>Les unit&#233;s militaires peuvent asservir les unit&#233;s vaincues, et il est possible de sacrifier des esclaves pour augmenter le bonheur des villes</French>
-		<German>Versklavung besiegter feindlicher Einheiten durch Milit&#228;reinheiten, can Sklaven opfern, um Zufriedenheit in St&#228;dten zu erh&#246;hen</German>
-		<Italian>Le unit&#224; militari possono schiavizzare le unit&#224; nemiche sconfitte</Italian>
-		<Spanish>Las unidades militares pueden esclavizar a las unidades enemigas derrotadas</Spanish>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BRA_TITLE</Tag>
@@ -75,19 +265,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAN_TITLE</Tag>
-		<English>The Power of Multiculturalism:</English>
-		<French>Le pouvoir du multiculturalisme :</French>
-		<German>The Power of Multiculturalism:</German>
-		<Italian>The Power of Multiculturalism:</Italian>
-		<Spanish>The Power of Multiculturalism:</Spanish>
+		<English>The Power of TODO:</English>
+		<French>The Power of TODO:</French>
+		<German>The Power of TODO:</German>
+		<Italian>The Power of TODO:</Italian>
+		<Spanish>The Power of TODO:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CAN</Tag>
-		<English>Immigrants bring [ICON_GREATPEOPLE] to your cities</English>
-		<French>Les immigrants apportent des [ICON_GREATPEOPLE] dans vos villes</French>
-		<German>Immigrants bring [ICON_GREATPEOPLE] to your cities</German>
-		<Italian>Immigrants bring [ICON_GREATPEOPLE] to your cities</Italian>
-		<Spanish>Immigrants bring [ICON_GREATPEOPLE] to your cities</Spanish>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MULTICULTURALISM</Tag>
@@ -170,28 +360,20 @@
 		<Spanish>Todas las unidades mar&#237;timas pueden entrar en territorio enemigo</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UP_IMMIGRATION</Tag>
-		<English>Our population in %s1 is growing due to immigrants from the Old World!</English>
-		<French>Notre population augmente gr&#226;ce aux immigrants du Vieux Monde !</French>
-		<German>Unsere Bev&#246;lkerung in %s1 w&#228;chst durch Einwanderer aus der Alten Welt!</German>
-		<Italian>La nostra popolazione sta crescendo grazie agli immigranti dal vecchio mondo!</Italian>
-		<Spanish>&#161;Nuestra poblaci&#243;n est&#225; creciendo como consecuencia de la inmigraci&#243;n procedente del Viejo Mundo!</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UP_INC_TITLE</Tag>
-		<English>The Power of Terraces:</English>
-		<French>Le pouvoir des terrasses :</French>
-		<German>Die Macht der Terrassen:</German>
-		<Italian>Il potere delle terrazze:</Italian>
-		<Spanish>El poder de las terrazas:</Spanish>
+		<English>The Power of Quipu:</English>
+		<French>The Power of Quipu:</French>
+		<German>The Power of Quipu:</German>
+		<Italian>The Power of Quipu:</Italian>
+		<Spanish>The Power of Quipu:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INC</Tag>
-		<English>Mountains produce 2 food and 1 hammer</English>
-		<French>Les montagnes produisent 2 nourritures et 1 marteau</French>
-		<German>Berge gew&#228;hren 2 Nahrung und 1 Hammer</German>
-		<Italian>Le montagne producono 2 cibo e 1 scudo</Italian>
-		<Spanish>Las monta&#241;as producen 2 alimentos y 1 martillo</Spanish>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY_TITLE</Tag>

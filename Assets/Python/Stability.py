@@ -591,6 +591,33 @@ def calculateStability(iPlayer):
 	
 	iExpansionStability += iIsolationismStability
 	
+	# European RP: Extra stability from Motherland
+	iMotherlandStability = 0
+	if iCiv == iEngland:
+		iMotherlandStability = 20
+	elif iCiv == iFrance:
+		iMotherlandStability = 25
+	elif iCiv == iNetherlands:
+		iMotherlandStability = 10
+	elif iCiv == iNorse:
+		iMotherlandStability = 5
+	elif iCiv == iPortugal:
+		iMotherlandStability = 15
+	elif iCiv == iRussia:
+		iMotherlandStability = 10
+	elif iCiv == iSpain:
+		iMotherlandStability = 25
+		
+	if iCurrentEra >= iRevolutionary:
+		iMotherlandStability -= 10
+	
+	if iMotherlandStability < 0:
+		iMotherlandStability = 0
+	
+	lParameters[iParameterMotherland] = iMotherlandStability
+	
+	iExpansionStability += iMotherlandStability
+	
 	# ECONOMY
 	iEconomyStability = 0
 	

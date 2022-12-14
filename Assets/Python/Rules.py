@@ -106,8 +106,9 @@ def captureSlaves(winningUnit, losingUnit):
 	if plot(winningUnit).isWater() and freeCargo(winningUnit, winningUnit) <= 0:
 		return
 
-	if civ(winningUnit) == iAztecs:
-		captureUnit(losingUnit, winningUnit, iAztecSlave, 50)
+	# Mesoamerica RP
+	if civ(winningUnit) in (iAztecs, iMaya, iTeotihuacan):
+		captureUnit(losingUnit, winningUnit, iNativeSlave, 50)
 		return
 	
 	if civ(losingUnit) == iNative and winningUnit.getUnitType() == iBandeirante and player(winningUnit).canUseSlaves():

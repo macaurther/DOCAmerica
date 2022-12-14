@@ -1375,6 +1375,9 @@ public:
 
 	bool m_bTurnPlayed;
 
+	// MacAurther
+	int getRegionPowers();
+
 protected:
 
 	int m_iStartingX;
