@@ -253,7 +253,6 @@ enum DoCEras
 	ERA_INDUSTRIAL,
 	ERA_MODERN,
 	ERA_ATOMIC,
-	ERA_NATIVE_AMERICA
 };
 
 enum Regions

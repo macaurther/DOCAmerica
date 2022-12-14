@@ -53,7 +53,7 @@ class WBTechScreen:
 
 		screen.addDropDownBoxGFC("TechEra", 20, self.iTable_Y - 30, screen.getXResolution()/5, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.GAME_FONT)
 		screen.addPullDownString("TechEra", CyTranslator().getText("TXT_KEY_WB_CITY_ALL", ()), -1, -1, True)
-		for i in xrange(gc.getNumEraInfos()-3): #Merijn: The -3 is for wierd additional eras in erainfos
+		for i in xrange(gc.getNumEraInfos()):
 			screen.addPullDownString("TechEra", gc.getEraInfo(i).getDescription(), i, i, i == iSelectedEra)
 
 		sText = "<font=3b>" + CyTranslator().getText("TXT_KEY_GAME_OPTION_NO_BARBARIANS", ()) + "</font>"
