@@ -10996,7 +10996,7 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 	for (iI = 0; iI < GC.getNumSpecialistInfos(); ++iI)
 	{
 		// Tiwanaku UP: +1 Priest Slot from Pagan Temples.
-		if (pCity->getCivilizationType() == TIWANAKU && kBuilding.getBuildingClassType() == GC.getBuildingInfo(PAGAN_TEMPLE).getBuildingClassType() && iI == SPECIALIST_PRIEST)
+		if (pCity != NULL && pCity->getCivilizationType() == TIWANAKU && kBuilding.getBuildingClassType() == GC.getBuildingInfo(PAGAN_TEMPLE).getBuildingClassType() && iI == SPECIALIST_PRIEST)
 		{
 			if (kBuilding.getSpecialistCount(iI) > 0)
 			{
