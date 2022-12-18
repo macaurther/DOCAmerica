@@ -1512,7 +1512,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INUIT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>
+			<!--<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>-->
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>INU</Identifier>
 			<Region>ARC</Region>
@@ -1908,7 +1909,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MISSISSIPPI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
+			<!--<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>-->
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
 			<Region>WOO</Region>
@@ -2543,7 +2545,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PUEBLOAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_KACHIN</PaganReligion>
+			<!--<PaganReligion>PAGAN_RELIGION_KACHIN</PaganReligion>-->
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
 			<Region>SOU</Region>

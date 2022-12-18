@@ -1272,8 +1272,11 @@ public:
 	int calculateBaseGreatPeopleRate() const;
 
 	// MacAurther
+	int m_iImmigrationRate;
 	int* m_aiImmigrationYieldRate;
+	int getImmigrationRate() const;
 	int getImmigrationYieldRate(YieldTypes eYield) const;
+	void setImmigrationRate(int iValue);
 	void setImmigrationYieldRate(YieldTypes eYield, int iValue);
 	int calculateImmigrationYieldRate(YieldTypes eYield);
 	bool processImmigration();

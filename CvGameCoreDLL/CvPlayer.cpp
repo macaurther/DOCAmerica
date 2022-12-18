@@ -5696,7 +5696,8 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 
 	if (!bValid)
 	{
-		if (GC.getTerrainInfo(pPlot->getTerrainType()).isFound())
+		if (GC.getTerrainInfo(pPlot->getTerrainType()).isFound() || 
+			(getCivilizationType() == INUIT && pPlot->getTerrainType() == GC.getInfoTypeForString("TERRAIN_TUNDRA"))) // Inuit UU: Can settle on Tundra (anywhere)
 		{
 			bValid = true;
 		}
@@ -5704,7 +5705,9 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 
 	if (!bValid)
 	{
-		if (GC.getTerrainInfo(pPlot->getTerrainType()).isFoundCoast())
+		
+		if (GC.getTerrainInfo(pPlot->getTerrainType()).isFoundCoast() || 
+			(getCivilizationType() == INUIT && pPlot->getTerrainType() == GC.getInfoTypeForString("TERRAIN_SNOW"))) // Inuit UU: Can settle on Ice (along Coast)
 		{
 			if (pPlot->isCoastalLand())
 			{

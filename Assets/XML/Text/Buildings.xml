@@ -2247,11 +2247,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Tag>
-		<English>[ICON_BULLET]+1 Food and Production from Ice and Tundra</English>
-		<French>[ICON_BULLET]+1 Food and Production from Ice and Tundra</French>
-		<German>[ICON_BULLET]+1 Food and Production from Ice and Tundra</German>
-		<Italian>[ICON_BULLET]+1 Food and Production from Ice and Tundra</Italian>
-		<Spanish>[ICON_BULLET]+1 Food and Production from Ice and Tundra</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION] from Ice and Tundra</English>
+		<French>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</French>
+		<German>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</German>
+		<Italian>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH</Tag>
@@ -2263,11 +2263,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_HELP</Tag>
-		<English>[ICON_BULLET]+1 Gold per Gold Resource</English>
-		<French>[ICON_BULLET]+1 Gold per Gold Resource</French>
-		<German>[ICON_BULLET]+1 Gold per Gold Resource</German>
-		<Italian>[ICON_BULLET]+1 Gold per Gold Resource</Italian>
-		<Spanish>[ICON_BULLET]+1 Gold per Gold Resource</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_COMMERCE] per Gold Resource</English>
+		<French>[ICON_BULLET]+1 [ICON_COMMERCE] per Gold Resource</French>
+		<German>[ICON_BULLET]+1 [ICON_COMMERCE] per Gold Resource</German>
+		<Italian>[ICON_BULLET]+1 [ICON_COMMERCE] per Gold Resource</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_COMMERCE] per Gold Resource</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEOTIHUACAN_TEMAZCAL</Tag>

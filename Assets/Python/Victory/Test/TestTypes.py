@@ -580,11 +580,11 @@ class TestRoutes(ExtendedTestCase):
 	
 	def test_format(self):
 		self.assertEqual(ROUTES.format([iRouteRoad]), "Road")
-		self.assertEqual(ROUTES.format([iRouteRoad, iRouteRomanRoad]), "Road or Roman Road")
-		self.assertEqual(ROUTES.format([iRouteRoad, iRouteRomanRoad, iRouteRailroad]), "Road, Roman Road or Railroad")
+		self.assertEqual(ROUTES.format([iRouteRoad, iRouteIncanRoad]), "Road or Roman Road")
+		self.assertEqual(ROUTES.format([iRouteRoad, iRouteIncanRoad, iRouteRailroad]), "Road, Roman Road or Railroad")
 		self.assertEqual(ROUTES.format(NamedList(iRouteRoad, iRouteRailroad).named("routes")), "routes")
 		
-		self.assertEqual(ROUTES.format_repr([iRouteRoad, iRouteRomanRoad, iRouteRailroad]), "Road, Roman Road or Railroad")
+		self.assertEqual(ROUTES.format_repr([iRouteRoad, iRouteIncanRoad, iRouteRailroad]), "Road, Roman Road or Railroad")
 	
 	def test_area(self):
 		self.assertEqual(ROUTES.area([iRouteRoad]), None)

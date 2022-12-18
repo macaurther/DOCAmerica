@@ -656,7 +656,7 @@ iWinery, 		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserv
 iContactedTribe) = range(iNumImprovements)
 
 iNumRoutes = 4
-(iRouteRoad, iRouteRailroad, iRouteRomanRoad, iRouteHighway) = range(iNumRoutes)
+(iRouteRoad, iRouteRailroad, iRouteIncanRoad, iRouteHighway) = range(iNumRoutes)
 
 #feature & terrain
 

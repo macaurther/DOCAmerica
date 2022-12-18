@@ -5672,6 +5672,12 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 		return false;
 	}
 
+	// MacAurther: Cannot found on top of Tribe or Contacted Tribe
+	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -5743,7 +5749,7 @@ bool CvUnit::canSpread(const CvPlot* pPlot, ReligionTypes eReligion, bool bTestV
 	}
 
 	// MacAurther: Missionaries can spread to Contacted Tribes too
-	if (pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
 	{
 		return true;
 	}
@@ -5849,7 +5855,7 @@ bool CvUnit::spread(ReligionTypes eReligion)
 	}
 
 	// MacAurther: Can spread to Contacted Tribes too (which always succeeds)
-	if (plot()->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	if (plot() != NULL && plot()->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
 	{
 		plot()->setImprovementType(IMPROVEMENT_COTTAGE);
 
@@ -7201,7 +7207,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 	}
 
 	// MacAurther: Cannot build on top of Tribe or Contacted Tribe
-	if (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
 	{
 		return false;
 	}

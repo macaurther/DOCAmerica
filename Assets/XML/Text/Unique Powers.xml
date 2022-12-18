@@ -24,11 +24,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_AND</Tag>
-		<English>Mountains produce 2 food and 1 hammer</English>
-		<French>Les montagnes produisent 2 nourritures et 1 marteau</French>
-		<German>Berge gew&#228;hren 2 Nahrung und 1 Hammer</German>
-		<Italian>Le montagne producono 2 cibo e 1 scudo</Italian>
-		<Spanish>Las monta&#241;as producen 2 alimentos y 1 martillo</Spanish>
+		<English>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</English>
+		<French>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</French>
+		<German>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</German>
+		<Italian>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</Italian>
+		<Spanish>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ANG_TITLE</Tag>
@@ -40,27 +40,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ANG</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Immigration also provides [ICON_GREATPEOPLE]</English>
+		<French>Immigration also provides [ICON_GREATPEOPLE]</French>
+		<German>Immigration also provides [ICON_GREATPEOPLE]</German>
+		<Italian>Immigration also provides [ICON_GREATPEOPLE]</Italian>
+		<Spanish>Immigration also provides [ICON_GREATPEOPLE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ARC_TITLE</Tag>
-		<English>Arctic - The Power of TODO:</English>
-		<French>Arctic - The Power of TODO:</French>
-		<German>Arctic - The Power of TODO:</German>
-		<Italian>Arctic - The Power of TODO:</Italian>
-		<Spanish>Arctic - The Power of TODO:</Spanish>
+		<English>Arctic - The Power of the Midnight Sun:</English>
+		<French>Arctic - The Power of the Midnight Sun:</French>
+		<German>Arctic - The Power of the Midnight Sun:</German>
+		<Italian>Arctic - The Power of the Midnight Sun:</Italian>
+		<Spanish>Arctic - The Power of the Midnight Sun:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ARC</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Extra [ICON_COMMERCE] on coastal city tiles</English>
+		<French>Extra [ICON_COMMERCE] on coastal city tiles</French>
+		<German>Extra [ICON_COMMERCE] on coastal city tiles</German>
+		<Italian>Extra [ICON_COMMERCE] on coastal city tiles</Italian>
+		<Spanish>Extra [ICON_COMMERCE] on coastal city tiles</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_EUR_TITLE</Tag>
@@ -88,11 +88,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_LAT</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>+3[ICON_HAPPY] from Catholic Church</English>
+		<French>+3[ICON_HAPPY] from Catholic Church</French>
+		<German>+3[ICON_HAPPY] from Catholic Church</German>
+		<Italian>+3[ICON_HAPPY] from Catholic Church</Italian>
+		<Spanish>+3[ICON_HAPPY] from Catholic Church</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_MES_TITLE</Tag>
@@ -128,11 +128,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_PAC_TITLE</Tag>
-		<English>Pacific - The Power of TODO:</English>
-		<French>Pacific - The Power of TODO:</French>
-		<German>Pacific - The Power of TODO:</German>
-		<Italian>Pacific - The Power of TODO:</Italian>
-		<Spanish>Pacific - The Power of TODO:</Spanish>
+		<English>Pacific - The Power of Wayfinding:</English>
+		<French>Pacific - The Power of Wayfinding:</French>
+		<German>Pacific - The Power of Wayfinding:</German>
+		<Italian>Pacific - The Power of Wayfinding:</Italian>
+		<Spanish>Pacific - The Power of Wayfinding:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_PAC</Tag>
@@ -144,35 +144,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_SOU_TITLE</Tag>
-		<English>Southwest - The Power of TODO:</English>
-		<French>Southwest - The Power of TODO:</French>
-		<German>Southwest - The Power of TODO:</German>
-		<Italian>Southwest - The Power of TODO:</Italian>
-		<Spanish>Southwest - The Power of TODO:</Spanish>
+		<English>Southwest - The Power of Adobe:</English>
+		<French>Southwest - The Power of Adobe:</French>
+		<German>Southwest - The Power of Adobe:</German>
+		<Italian>Southwest - The Power of Adobe:</Italian>
+		<Spanish>Southwest - The Power of Adobe:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_SOU</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</English>
+		<French>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</French>
+		<German>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</German>
+		<Italian>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</Italian>
+		<Spanish>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_WOO_TITLE</Tag>
-		<English>Woodlands - The Power of TODO:</English>
-		<French>Woodlands - The Power of TODO:</French>
-		<German>Woodlands - The Power of TODO:</German>
-		<Italian>Woodlands - The Power of TODO:</Italian>
-		<Spanish>Woodlands - The Power of TODO:</Spanish>
+		<English>Woodlands - The Power of Companion Planting:</English>
+		<French>Woodlands - The Power of Companion Planting:</French>
+		<German>Woodlands - The Power of Companion Planting:</German>
+		<Italian>Woodlands - The Power of Companion Planting:</Italian>
+		<Spanish>Woodlands - The Power of Companion Planting:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_WOO</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Improvements do not remove Forests</English>
+		<French>Improvements do not remove Forests</French>
+		<German>Improvements do not remove Forests</German>
+		<Italian>Improvements do not remove Forests</Italian>
+		<Spanish>Improvements do not remove Forests</Spanish>
 	</TEXT>
 	<!-- Unique Powers -->
 	<TEXT>
@@ -513,11 +513,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_WAR</Tag>
-		<English>+1 Food on tiles adjacent to Mountains.</English>
-		<French>+1 Food on tiles adjacent to Mountains.</French>
-		<German>+1 Food on tiles adjacent to Mountains.</German>
-		<Italian>+1 Food on tiles adjacent to Mountains.</Italian>
-		<Spanish>+1 Food on tiles adjacent to Mountains.</Spanish>
+		<English>+1 [ICON_FOOD] on tiles adjacent to Mountains</English>
+		<French>+1 [ICON_FOOD] on tiles adjacent to Mountains</French>
+		<German>+1 [ICON_FOOD] on tiles adjacent to Mountains</German>
+		<Italian>+1 [ICON_FOOD] on tiles adjacent to Mountains</Italian>
+		<Spanish>+1 [ICON_FOOD] on tiles adjacent to MountainS</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CMU_TITLE</Tag>
@@ -545,11 +545,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MIS</Tag>
-		<English>Extra Commerce along Rivers.</English>
-		<French>Extra Commerce along Rivers.</French>
-		<German>Extra Commerce along Rivers.</German>
-		<Italian>Extra Commerce along Rivers.</Italian>
-		<Spanish>Extra Commerce along Rivers.</Spanish>
+		<English>Extra [ICON_COMMERCE] along Rivers</English>
+		<French>Extra [ICON_COMMERCE] along Rivers</French>
+		<German>Extra [ICON_COMMERCE] along Rivers</German>
+		<Italian>Extra [ICON_COMMERCE] along Rivers</Italian>
+		<Spanish>Extra [ICON_COMMERCE] along Rivers</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INU_TITLE</Tag>
@@ -561,11 +561,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INU</Tag>
-		<English>Trade routes do not require roads. Extra Commerce on coastal city tiles.</English>
-		<French>Trade routes do not require roads. Extra Commerce on coastal city tiles.</French>
-		<German>Trade routes do not require roads. Extra Commerce on coastal city tiles.</German>
-		<Italian>Trade routes do not require roads. Extra Commerce on coastal city tiles.</Italian>
-		<Spanish>Trade routes do not require roads. Extra Commerce on coastal city tiles.</Spanish>
+		<English>Trade routes do not require roads</English>
+		<French>Trade routes do not require roads</French>
+		<German>Trade routes do not require roads</German>
+		<Italian>Trade routes do not require roads</Italian>
+		<Spanish>Trade routes do not require roads</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MUI_TITLE</Tag>
@@ -577,10 +577,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MUI</Tag>
-		<English>+1 Food from Mines.</English>
-		<French>+1 Food from Mines.</French>
-		<German>+1 Food from Mines.</German>
-		<Italian>+1 Food from Mines.</Italian>
-		<Spanish>+1 Food from Mines.</Spanish>
+		<English>+1 [ICON_FOOD] from Mines</English>
+		<French>+1 [ICON_FOOD] from Mines</French>
+		<German>+1 [ICON_FOOD] from Mines</German>
+		<Italian>+1 [ICON_FOOD] from Mines</Italian>
+		<Spanish>+1 [ICON_FOOD] from Mines</Spanish>
 	</TEXT>
 </Civ4GameText>

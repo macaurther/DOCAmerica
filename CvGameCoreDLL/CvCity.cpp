@@ -588,6 +588,8 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iTotalPopulationLoss = 0;
 	m_iPopulationLoss = 0;
 
+	m_iImmigrationRate = 0; // MacAurther
+
 	m_bNeverLost = true;
 	m_bBombarded = false;
 	m_bDrafted = false;
@@ -4234,6 +4236,12 @@ void CvCity::processBonus(BonusTypes eBonus, int iChange)
 
 	changeBonusGoodHappiness(iGoodValue * iChange);
 	changeBonusBadHappiness(iBadValue * iChange);
+
+	// Muisca UB: +1 Gold per Gold Resource
+	if (eBonus == BONUS_GOLD && isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_MUISCA_GOLDSMITH")))
+	{
+		updateBuildingCommerce();
+	}
 }
 
 
@@ -4292,6 +4300,18 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			changeFreePromotionCount(((PromotionTypes)(GC.getBuildingInfo(eBuilding).getFreePromotion())), iChange);
 		}
 
+		// Inuit UB: +1 Food, Production, and Commerce from Ice, Sea Ice, and Tundra
+		if (eBuilding == (BuildingTypes)GC.getInfoTypeForString("BUILDING_INUIT_IGLOO"))
+		{
+			updateYield();
+		}
+
+		// Muisca UB: +1 Gold per Gold Resource
+		if (eBuilding == (BuildingTypes)GC.getInfoTypeForString("BUILDING_MUISCA_GOLDSMITH"))
+		{
+			updateBuildingCommerce();
+		}
+
 		changeEspionageDefenseModifier(GC.getBuildingInfo(eBuilding).getEspionageDefenseModifier() * iChange);
 		changeGreatPeopleRateModifier(GC.getBuildingInfo(eBuilding).getGreatPeopleRateModifier() * iChange);
 		changeFreeExperience(GC.getBuildingInfo(eBuilding).getFreeExperience() * iChange);
@@ -4318,6 +4338,12 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		if (GC.getBuildingInfo(eBuilding).getHappiness() > 0)
 		{
 			changeBuildingGoodHappiness(GC.getBuildingInfo(eBuilding).getHappiness() * iChange);
+			
+			// Latin America RP
+			if(getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(getCivilizationType(), CATHOLIC_TEMPLE))
+			{
+				changeBuildingGoodHappiness(3 * iChange);
+			}
 		}
 		else
 		{
@@ -6244,7 +6270,14 @@ void CvCity::changeNumGreatPeople(int iChange)
 
 int CvCity::getBaseGreatPeopleRate() const
 {
-	return m_iBaseGreatPeopleRate;
+	// Anglo America RP
+	int iGreatPeopleImmigrationRate = 0;
+	if(getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANGLO_AMERICA)
+	{
+		iGreatPeopleImmigrationRate += getImmigrationRate();
+	}
+
+	return m_iBaseGreatPeopleRate + iGreatPeopleImmigrationRate;
 }
 
 
@@ -10282,6 +10315,12 @@ int CvCity::getBuildingCommerceByBuilding(CommerceTypes eIndex, BuildingTypes eB
 				if (eBuilding == GUADALUPE_BASILICA && eIndex == COMMERCE_GOLD)
 				{
 					iCommerce += std::min(iShrineLimit, GC.getMap().getArea(getArea())->countHasReligion(CATHOLICISM));
+				}
+
+				// Muisca UB: +1 Gold per Gold Resource
+				if (eIndex == COMMERCE_GOLD && eBuilding == GC.getInfoTypeForString("BUILDING_MUISCA_GOLDSMITH"))
+				{
+					iCommerce += getNumBonuses(BONUS_GOLD);
 				}
 
 				if (GC.getBuildingInfo(eBuilding).getGlobalCorporationCommerce() != NO_CORPORATION)
@@ -15252,6 +15291,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iBuildingDamageChange);
 	pStream->Read(&m_iTotalPopulationLoss);
 	pStream->Read(&m_iPopulationLoss);
+	pStream->Read(&m_iImmigrationRate); // MacAurther
 
 	pStream->Read(&m_bNeverLost);
 	pStream->Read(&m_bBombarded);
@@ -15552,6 +15592,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_iBuildingDamageChange); // Leoreth
 	pStream->Write(m_iTotalPopulationLoss); // Leoreth
 	pStream->Write(m_iPopulationLoss); // Leoreth
+	pStream->Write(&m_iImmigrationRate); // MacAurther
 
 	pStream->Write(m_bNeverLost);
 	pStream->Write(m_bBombarded);
@@ -18983,9 +19024,19 @@ int CvCity::calculateBaseGreatPeopleRate() const
 }
 
 // MacAurther: Immigration
+int CvCity::getImmigrationRate() const
+{
+	return m_iImmigrationRate;
+}
+
 int CvCity::getImmigrationYieldRate(YieldTypes eYield) const
 {
 	return m_aiImmigrationYieldRate[eYield];
+}
+
+void CvCity::setImmigrationRate(int iValue)
+{
+	m_iImmigrationRate = iValue;
 }
 
 void CvCity::setImmigrationYieldRate(YieldTypes eYield, int iValue)
@@ -19004,6 +19055,7 @@ int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
 	// No Immigration with Isolationism
 	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_ISOLATIONISM))
 	{
+		setImmigrationRate(0);
 		return 0;
 	}
 
@@ -19026,6 +19078,8 @@ int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
 	{
 		iImmigrationRate += (getBaseCommerceRate(COMMERCE_CULTURE) / getPopulation()) - 3;
 	}
+
+	setImmigrationRate(iImmigrationRate);
 
 	// Set the yield value
 	if (eYield == YIELD_FOOD)
@@ -19060,6 +19114,7 @@ bool CvCity::processImmigration()
 			setImmigrationYieldRate((YieldTypes)iI, iNewValue);
 
 			updateImmigrationYieldRate((YieldTypes)iI, iChange);
+
 			bChanged = true;
 		}
 	}

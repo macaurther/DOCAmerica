@@ -10150,6 +10150,12 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 			iHappiness = kBuilding.getHappiness();
 		}
 
+		// MacAurther: Latin America RP
+		if(ePlayer != -1 && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(GET_PLAYER(ePlayer).getCivilizationType(), CATHOLIC_TEMPLE))
+		{
+			iHappiness += 3;
+		}
+
 		if (iHappiness != 0)
 		{
 			szTempBuffer.Format(L", +%d%c", abs(iHappiness), ((iHappiness > 0) ? gDLL->getSymbolID(HAPPY_CHAR) : gDLL->getSymbolID(UNHAPPY_CHAR)));
@@ -18362,8 +18368,22 @@ void CvGameTextMgr::parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city
 
 	szBuffer.append(SEPARATOR);
 	szBuffer.append(NEWLINE);
-	szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_BASE_RATE", city.getBaseGreatPeopleRate()));
+	// MacAurther: Immigration (Anglo America RP)
+	int iImmigrationRate = 0;
+	if(city.getOwner() != -1 && (RegionPowers)GET_PLAYER(city.getOwner()).getRegionPowers() == RP_ANGLO_AMERICA)
+	{
+		iImmigrationRate = city.getImmigrationRate();
+	}
+
+	szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_BASE_RATE", city.getBaseGreatPeopleRate() - iImmigrationRate)); // MacAurther: Includes Anglo American RP
 	szBuffer.append(NEWLINE);
+
+	// MacAurther: Anglo American RP
+	if (0 != iImmigrationRate)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION", iImmigrationRate));
+		szBuffer.append(NEWLINE);
+	}
 
 	int iModifier = 100;
 

@@ -1059,7 +1059,7 @@ class TestRoute(ExtendedTestCase):
 
 	def setUp(self):
 		self.area = AreaArgumentFactory().rectangle((60, 30), (61, 31)).named("Test Area")
-		self.requirement = Route(self.area, [iRouteRoad, iRouteRomanRoad])
+		self.requirement = Route(self.area, [iRouteRoad, iRouteIncanRoad])
 		self.goal = TestGoal()
 		
 		self.requirement.register_handlers(self.goal)
@@ -1128,7 +1128,7 @@ class TestRoute(ExtendedTestCase):
 			if index % 2 == 0:
 				plot.setRouteType(iRouteRoad)
 			else:
-				plot.setRouteType(iRouteRomanRoad)
+				plot.setRouteType(iRouteIncanRoad)
 		
 		try:
 			self.assertEqual(self.requirement.fulfilled(self.evaluator), True)

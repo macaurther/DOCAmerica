@@ -19,6 +19,7 @@ typedef list<char*> LISTCHAR;
 #define NUM_ERAS				(ERA_ATOMIC+1)
 
 #define PAGAN_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PAGAN_TEMPLE"))
+#define CATHOLIC_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_CATHOLIC_TEMPLE"))
 #define BUILDING_PALACE			((BuildingClassTypes)0)
 #define BUILDING_PLAGUE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PLAGUE"))
 

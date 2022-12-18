@@ -4176,7 +4176,7 @@ bool CvPlot::isNetworkTerrain(TeamTypes eTeam) const
 
 bool CvPlot::isBonusNetwork(TeamTypes eTeam) const
 {
-	if (isRoute())
+	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == INUIT && !isWater())) // Inuit UP: Trade routes do not require roads
 	{
 		return true;
 	}
@@ -4253,9 +4253,9 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 		}
 	}
 
-	if (isRoute())
+	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == INUIT && !isWater())) // Inuit UP: Trade routes do not require roads
 	{
-		if (pPlot->isRoute())
+		if (pPlot->isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == INUIT && !pPlot->isWater())) // Inuit UP: Trade routes do not require roads
 		{
 			return true;
 		}
@@ -6659,6 +6659,15 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
+	// MacAurther: Southwest RP: +1 Production and +1 Commerce on Semidesert
+	if(eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_SOUTHWEST && getTerrainType() == TERRAIN_SEMIDESERT)
+	{
+		if(eYield == YIELD_PRODUCTION || eYield == YIELD_COMMERCE)
+		{
+			iYield += 1;
+		}
+	}
+
 	if (isLake())
 	{
 		iYield += GC.getYieldInfo(eYield).getLakeChange();
@@ -6682,6 +6691,20 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	if (isHills())
 	{
 		iYield += ((bIgnoreFeature || (getFeatureType() == NO_FEATURE)) ? GC.getTerrainInfo(getTerrainType()).getHillsYieldChange(eYield) : GC.getFeatureInfo(getFeatureType()).getHillsYieldChange(eYield));
+	}
+
+	// Inuit UB: +1 Food and Production from Ice, Sea Ice, and Tundra
+	if (!isCity() && getWorkingCity() != NULL && getWorkingCity()->isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_INUIT_IGLOO")))
+	{
+		if (getTerrainType() == GC.getInfoTypeForString("TERRAIN_SNOW") ||
+			getTerrainType() == GC.getInfoTypeForString("TERRAIN_TUNDRA") ||
+			getFeatureType() == GC.getInfoTypeForString("FEATURE_ICE"))
+		{
+			if (eYield == YIELD_FOOD || eYield == YIELD_PRODUCTION)
+			{
+				iYield += 1;
+			}
+		}
 	}
 
 	if (!bIgnoreFeature)
@@ -6983,9 +7006,21 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		{
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
 		}
+
+		// Arctic RP: Extra Commerce on coastal city tiles.
+		if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ARCTIC)
+		{
+			if (eYield == YIELD_COMMERCE)
+			{
+				if (pCity->isCoastal(20))
+				{
+					iYield += 2;
+				}
+			}
+		}
 		
 		// 1SDAN: Tiwanaku UP: Extra Production in the Capital.
-		if (pCity->getCivilizationType() == TIWANAKU)
+		if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == TIWANAKU)
 		{
 			if (eYield == YIELD_PRODUCTION)
 			{
