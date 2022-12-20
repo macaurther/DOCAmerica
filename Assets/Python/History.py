@@ -9,8 +9,6 @@ dRelocatedCapitals = CivDict({
 })
 
 dCapitalInfrastructure = CivDict({
-	iPortugal : (5, [iLibrary, iMarket, iHarbor, iLighthouse, iForge, iWalls], [temple]),
-	iNetherlands : (9, [iLibrary, iMarket, iWharf, iLighthouse, iBarracks, iPharmacy, iBank, iArena, iTheatre], [temple]),
 })
 
 

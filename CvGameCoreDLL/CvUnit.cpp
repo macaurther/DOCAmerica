@@ -220,13 +220,23 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 		}
 	}
 
-	// Spanish UP
-	if (getCivilizationType() == SPAIN)
+	// Dutch UP
+	if (getCivilizationType() == NETHERLANDS)
 	{
 		if (getUnitCombatType() == 9) //naval
 		{
 			setHasPromotion(PROMOTION_NAVIGATION1, true);
 			setHasPromotion(PROMOTION_NAVIGATION2, true);
+		}
+	}
+
+	// Portuguese UP
+	if (getCivilizationType() == PORTUGAL)
+	{
+		if (getUnitCombatType() == 9) //naval
+		{
+			setHasPromotion(PROMOTION_COMBAT1, true);
+			setHasPromotion(PROMOTION_COMBAT2, true);
 		}
 	}
 

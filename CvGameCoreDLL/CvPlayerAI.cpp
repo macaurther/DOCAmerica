@@ -2995,14 +2995,6 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 	}
 	//Rhye - end
 
-	if (getCivilizationType() == FRANCE && pCity->at(69, 52))
-	{
-		if (GET_PLAYER(pCity->getOwnerINLINE()).isMinorCiv() || pCity->isBarbarian())
-		{
-			return 0;
-		}
-	}
-
 	// Leoreth: America shouldn't fight the English all the way to Canada
 	if (getCivilizationType() == AMERICA && pCity->isCanadian())
 	{
@@ -4807,12 +4799,6 @@ bool CvPlayerAI::AI_isWillingToTalk(PlayerTypes ePlayer) const
 
 		//Rhye
 		if (AI_getMemoryCount(ePlayer, MEMORY_NUKED_US) > 0)
-		{
-			iRefuseDuration /= 2;
-		}
-
-		// Leoreth: new French UP
-		if (GET_PLAYER(ePlayer).getCivilizationType() == FRANCE)
 		{
 			iRefuseDuration /= 2;
 		}
@@ -12247,26 +12233,9 @@ void CvPlayerAI::AI_doCounter()
 					if (GC.getLeaderHeadInfo(getPersonalityType()).getMemoryDecayRand(iJ) > 0)
 					{
 						int iMemoryDecayRand = GC.getLeaderHeadInfo(getPersonalityType()).getMemoryDecayRand(iJ);
-
-						bool bFrenchUP = false;
-
-						// Leoreth: new French UP
-						if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == FRANCE)
-						{
-							if (iJ != MEMORY_GIVE_HELP && iJ != MEMORY_ACCEPT_DEMAND && iJ != MEMORY_ACCEPTED_RELIGION && iJ != MEMORY_ACCEPTED_CIVIC && iJ != MEMORY_ACCEPTED_JOIN_WAR && iJ != MEMORY_ACCEPTED_STOP_TRADING && iJ != MEMORY_TRADED_TECH_TO_US && iJ != MEMORY_VOTED_FOR_US && iJ != MEMORY_EVENT_GOOD_TO_US && iJ != MEMORY_LIBERATED_CITIES)
-							{
-								//iMemoryDecayRand *= 2;
-								//iMemoryDecayRand /= 3;
-								if (AI_getMemoryCount(((PlayerTypes)iI), ((MemoryTypes)iJ)) > 1)
-								{
-									bFrenchUP = true;
-								}
-							}
-						}
-
 						if (GC.getGameINLINE().getSorenRandNum(iMemoryDecayRand, "Memory Decay") == 0)
 						{
-							AI_changeMemoryCount(((PlayerTypes)iI), ((MemoryTypes)iJ), bFrenchUP ? -2 : -1);
+							AI_changeMemoryCount(((PlayerTypes)iI), ((MemoryTypes)iJ), -1);
 						}
 					}
 				}

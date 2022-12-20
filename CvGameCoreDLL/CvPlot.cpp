@@ -6815,10 +6815,64 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 
-	// 1SDAN: Muisca UP: +1 Food on Mines.
+	// 1SDAN: Muisca UP: +1 Food on Mines
 	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == MUISCA)
 	{
 		if (eYield == YIELD_FOOD && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_MINE"))
+		{
+			iYield += 1;
+		}
+	}
+
+	// MacAurther: Spanish UP: +2 Gold on Mines
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == SPAIN)
+	{
+		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_MINE"))
+		{
+			iYield += 2;
+		}
+	}
+
+	// MacAurther: Portuguese UP: +2 Gold on Plantations
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == PORTUGAL)
+	{
+		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_PLANTATION"))
+		{
+			iYield += 2;
+		}
+	}
+
+	// MacAurther: English UP: +2 Gold on Lumbermill
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == ENGLAND)
+	{
+		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_LUMBERMILL"))
+		{
+			iYield += 2;
+		}
+	}
+
+	// MacAurther: French UP: +2 Gold on Forts
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == FRANCE)
+	{
+		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FORT"))
+		{
+			iYield += 2;
+		}
+	}
+
+	// MacAurther: Dutch UP: +2 Gold on Camps
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == NETHERLANDS)
+	{
+		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_CAMP"))
+		{
+			iYield += 2;
+		}
+	}
+
+	// MacAurther: Russian UP: +1 Food on Camps
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == RUSSIA)
+	{
+		if (eYield == YIELD_FOOD && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_CAMP"))
 		{
 			iYield += 1;
 		}
@@ -7007,7 +7061,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
 		}
 
-		// Arctic RP: Extra Commerce on coastal city tiles.
+		// 1SDAN?: Arctic RP: Extra Commerce on coastal city tiles.
 		if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ARCTIC)
 		{
 			if (eYield == YIELD_COMMERCE)
@@ -7019,15 +7073,12 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			}
 		}
 		
-		// 1SDAN: Tiwanaku UP: Extra Production in the Capital.
+		// 1SDAN & MacAurther: Tiwanaku UP: Extra Production in Cities on Hills
 		if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == TIWANAKU)
 		{
-			if (eYield == YIELD_PRODUCTION)
+			if (eYield == YIELD_PRODUCTION && isHills())
 			{
-				if (pCity->isCapital())
-				{
-					iYield += 2;
-				}
+				iYield += 1;
 			}
 		}
 	}

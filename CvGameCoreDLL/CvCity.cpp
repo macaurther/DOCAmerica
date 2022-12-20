@@ -395,12 +395,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		GC.getGameINLINE().updatePlotGroups();
 	}
 
-	// 1SDAN: Update plot symbols because apparently when the first city is founded those get updated before the city is set to be the capital
-	if (getCivilizationType() == TIWANAKU) 
-	{
-		pPlot->updateSymbols();
-	}
-
 	AI_init();
 }
 
@@ -4236,12 +4230,6 @@ void CvCity::processBonus(BonusTypes eBonus, int iChange)
 
 	changeBonusGoodHappiness(iGoodValue * iChange);
 	changeBonusBadHappiness(iBadValue * iChange);
-
-	// Muisca UB: +1 Gold per Gold Resource
-	if (eBonus == BONUS_GOLD && isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_MUISCA_GOLDSMITH")))
-	{
-		updateBuildingCommerce();
-	}
 }
 
 
@@ -4304,12 +4292,6 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		if (eBuilding == (BuildingTypes)GC.getInfoTypeForString("BUILDING_INUIT_IGLOO"))
 		{
 			updateYield();
-		}
-
-		// Muisca UB: +1 Gold per Gold Resource
-		if (eBuilding == (BuildingTypes)GC.getInfoTypeForString("BUILDING_MUISCA_GOLDSMITH"))
-		{
-			updateBuildingCommerce();
 		}
 
 		changeEspionageDefenseModifier(GC.getBuildingInfo(eBuilding).getEspionageDefenseModifier() * iChange);
@@ -10315,12 +10297,6 @@ int CvCity::getBuildingCommerceByBuilding(CommerceTypes eIndex, BuildingTypes eB
 				if (eBuilding == GUADALUPE_BASILICA && eIndex == COMMERCE_GOLD)
 				{
 					iCommerce += std::min(iShrineLimit, GC.getMap().getArea(getArea())->countHasReligion(CATHOLICISM));
-				}
-
-				// Muisca UB: +1 Gold per Gold Resource
-				if (eIndex == COMMERCE_GOLD && eBuilding == GC.getInfoTypeForString("BUILDING_MUISCA_GOLDSMITH"))
-				{
-					iCommerce += getNumBonuses(BONUS_GOLD);
 				}
 
 				if (GC.getBuildingInfo(eBuilding).getGlobalCorporationCommerce() != NO_CORPORATION)
@@ -17721,6 +17697,12 @@ void CvCity::setGameTurnPlayerLost(PlayerTypes ePlayer, int iNewValue)
 // Leoreth
 bool CvCity::isColony() const
 {
+	// MacAurther: In DoCA, anything owned by the Norse, Spain, Portugal, England, France, Netherlands, or Russia is a Colony too
+	if (getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_EUROPE)
+	{
+		return true;
+	}
+
 	CvCity* pCapital = GET_PLAYER(getOwner()).getCapitalCity();
 
 	if (pCapital == NULL) return false;
@@ -18992,7 +18974,7 @@ int CvCity::calculateBaseYieldRate(YieldTypes eYield) const
 
 	iYield += getCorporationYield(eYield);
 
-	iYield += getImmigrationYieldRate(eYield);
+	iYield += getImmigrationYieldRate(eYield); // MacAurther
 
 	return iYield;
 }
@@ -19077,6 +19059,12 @@ int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MULTICULTURALISM))
 	{
 		iImmigrationRate += (getBaseCommerceRate(COMMERCE_CULTURE) / getPopulation()) - 3;
+	}
+
+	// English UP
+	if(isCoastal(20) && getCivilizationType() == ENGLAND)
+	{
+		iImmigrationRate += 2;
 	}
 
 	setImmigrationRate(iImmigrationRate);

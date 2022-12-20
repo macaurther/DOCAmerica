@@ -313,35 +313,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ENG_TITLE</Tag>
-		<English>The Power of Indirect Rule:</English>
-		<French>Le pouvoir de l'indirect rule :</French>
-		<German>Die Macht der Indirekten Herrschaft:</German>
-		<Italian>Il potere della marina reale:</Italian>
-		<Spanish>El poder de la Royal Navy:</Spanish>
+		<English>The Power of Tolerance:</English>
+		<French>The Power of Tolerance:</French>
+		<German>The Power of Tolerance:</German>
+		<Italian>The Power of Tolerance:</Italian>
+		<Spanish>The Power of Tolerance:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ENG</Tag>
-		<English>Faraway Cities incur no extra Maintenance</English>
-		<French>Les villes lointaines ne n&#233;cessitent pas d'entretien suppl&#233;mentaire</French>
-		<German>Weit entfernte St&#228;dte kosten keinen zus&#228;tzlichen Unterhalt</German>
-		<Italian>Le unit&#224; navali hanno 2 possibilit&#224; di Attacchi improvvisi supplementari</Italian>
-		<Spanish>Las unidades navales tienen 2 posibilidades adicionales de ataque de iniciativa</Spanish>
+		<English>+2 Immigration in Coastal Cities and +2 [ICON_COMMERCE] on Lumbermills</English>
+		<French>+2 Immigration in Coastal Cities and +2 [ICON_COMMERCE] on Lumbermills</French>
+		<German>+2 Immigration in Coastal Cities and +2 [ICON_COMMERCE] on Lumbermills</German>
+		<Italian>+2 Immigration in Coastal Cities and +2 [ICON_COMMERCE] on Lumbermills</Italian>
+		<Spanish>+2 Immigration in Coastal Cities and +2 [ICON_COMMERCE] on Lumbermills</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA_TITLE</Tag>
-		<English>The Power of Diplomacy:</English>
-		<French>Le pouvoir de la diplomatie :</French>
-		<German>Die Macht der Diplomatie:</German>
-		<Italian>Il potere dell'entente:</Italian>
-		<Spanish>El poder de la entente:</Spanish>
+		<English>The Power of Voyageurs:</English>
+		<French>The Power of Voyageurs:</French>
+		<German>The Power of Voyageurs:</German>
+		<Italian>The Power of Voyageurs:</Italian>
+		<Spanish>The Power of Voyageurs:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA</Tag>
-		<English>Diplomatic penalties expire faster, more likely to be voted for in congresses</English>
-		<French>Les p&#233;nalit&#233;s diplomatiques expirent plus vite, et les autres civilisations sont plus enclines &#224; voter pour vous lors des congr&#232;s</French>
-		<German>Diplomatische Mali verfallen schneller; h&#246;here Wahrscheinlichkeit, Stimmen in Kongressen zu erhalten</German>
-		<Italian>Le altre civilt&#224; hanno un atteggiamento pi&#249; amichevole</Italian>
-		<Spanish>Las dem&#225;s civilizaciones mantienen una actitud m&#225;s amistosa</Spanish>
+		<English>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</English>
+		<French>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</French>
+		<German>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</German>
+		<Italian>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</Italian>
+		<Spanish>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL_TITLE</Tag>
@@ -353,11 +353,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL</Tag>
-		<English>Doubled yield and commerce from the trading company corporation</English>
-		<French>Les rendements de la Compagnie commerciale sont doubl&#233;s</French>
-		<German>Doppeltes Einkommen durch Handelsgesellschaften</German>
-		<Italian>Tutte le unit&#224; marittime possono entrare in territorio nemico</Italian>
-		<Spanish>Todas las unidades mar&#237;timas pueden entrar en territorio enemigo</Spanish>
+		<English>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</English>
+		<French>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</French>
+		<German>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</German>
+		<Italian>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</Italian>
+		<Spanish>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INC_TITLE</Tag>
@@ -425,51 +425,51 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR_TITLE</Tag>
-		<English>The Power of Exploration:</English>
-		<French>Le pouvoir de l'exploration :</French>
-		<German>Die Macht des Kundschaftens:</German>
-		<Italian>Il potere dell'esplorazione:</Italian>
-		<Spanish>El poder de la exploraci&#243;n:</Spanish>
+		<English>The Power of Captaincies:</English>
+		<French>The Power of Captaincies:</French>
+		<German>The Power of Captaincies:</German>
+		<Italian>The Power of Captaincies:</Italian>
+		<Spanish>The Power of Captaincies:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR</Tag>
-		<English>Ocean Trade allowed with Cartography, reduced instability for overseas colonies</English>
-		<French>Le commerce transoc&#233;anique est permis avec la Cartographie, et l'instabilit&#233; caus&#233;e par les colonies d'outre-mer est r&#233;duite</French>
-		<German>Ozeanhandel erm&#246;glicht durch Kartographie, verringerte Instabilit&#228;t durch &#220;bersee-Kolonien</German>
-		<Italian>Ocean Trade allowed with Cartography, reduced instability for overseas colonies</Italian>
-		<Spanish>Ocean Trade allowed with Cartography, reduced instability for overseas colonies</Spanish>
+		<English>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</English>
+		<French>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</French>
+		<German>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</German>
+		<Italian>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</Italian>
+		<Spanish>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_RUS_TITLE</Tag>
-		<English>The Power of General Winter:</English>
-		<French>Le pouvoir du g&#233;n&#233;ral Hiver :</French>
-		<German>Die Macht von "General Winter":</German>
-		<Italian>Il potere del Generale Inverno:</Italian>
-		<Spanish>El poder del General Invierno:</Spanish>
+		<English>The Power of Monopoly:</English>
+		<French>The Power of Monopoly:</French>
+		<German>The Power of Monopoly:</German>
+		<Italian>The Power of Monopoly:</Italian>
+		<Spanish>The Power of Monopoly:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_RUS</Tag>
-		<English>Enemy units in Russia take damage every turn</English>
-		<French>Les unit&#233;s ennemies en Russie subissent des dommages &#224; chaque tour</French>
-		<German>Schaden in jeder Runde f&#252;r feindliche Einheiten in Russland</German>
-		<Italian>Le unit&#224; nemiche in Russia subiscono danni a ogni turno</Italian>
-		<Spanish>Las unidades enemigas en Rusia sufren da&#241;os cada turno</Spanish>
+		<English>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</English>
+		<French>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</French>
+		<German>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</German>
+		<Italian>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</Italian>
+		<Spanish>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA_TITLE</Tag>
-		<English>The Power of Discovery:</English>
-		<French>Le pouvoir de la d&#233;couverte :</French>
-		<German>Die Macht der Entdeckungen:</German>
-		<Italian>Il potere della scoperta:</Italian>
-		<Spanish>El poder del descubrimiento:</Spanish>
+		<English>The Power of Encomienda:</English>
+		<French>The Power of Encomienda:</French>
+		<German>The Power of Encomienda:</German>
+		<Italian>The Power of Encomienda:</Italian>
+		<Spanish>The Power of Encomienda:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA</Tag>
-		<English>Naval units receive +2 movement points</English>
-		<French>Les unit&#233;s navales re&#231;oivent +2 points de mouvement</French>
-		<German>2 zus&#228;tzliche Fortbewegungspunkte f&#252;r Marineeinheiten</German>
-		<Italian>Le unit&#224; navali ricevono +2 punti di movimento</Italian>
-		<Spanish>Las unidades navales nuevas reciben +2 puntos de movimiento</Spanish>
+		<English>Reduced Instability from Cities and +2 [ICON_COMMERCE] on Mines</English>
+		<French>Reduced Instability from Cities and +2 [ICON_COMMERCE] on Mines</French>
+		<German>Reduced Instability from Cities and +2 [ICON_COMMERCE] on Mines</German>
+		<Italian>Reduced Instability from Cities and +2 [ICON_COMMERCE] on Mines</Italian>
+		<Spanish>Reduced Instability from Cities and +2 [ICON_COMMERCE] on Mines</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TEO_TITLE</Tag>
@@ -497,11 +497,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TIW</Tag>
-		<English>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</English>
-		<French>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</French>
-		<German>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</German>
-		<Italian>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</Italian>
-		<Spanish>Extra Production in the Capital. +1 Priest Slot from Pagan Temples.</Spanish>
+		<English>+1 [ICON_PRODUCTION] from Cities on Hills and +1 Priest Slot from Pagan Temples</English>
+		<French>+1 [ICON_PRODUCTION] from Cities on Hills and +1 Priest Slot from Pagan Temples</French>
+		<German>+1 [ICON_PRODUCTION] from Cities on Hills and +1 Priest Slot from Pagan Temples</German>
+		<Italian>+1 [ICON_PRODUCTION] from Cities on Hills and +1 Priest Slot from Pagan Temples</Italian>
+		<Spanish>+1 [ICON_PRODUCTION] from Cities on Hills and +1 Priest Slot from Pagan Temples</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_WAR_TITLE</Tag>

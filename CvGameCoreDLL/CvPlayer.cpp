@@ -5803,13 +5803,6 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 		}
 	}
 
-	// Leoreth: America/France don't care about Canada until the Canadians spawn
-	if (getID() != GC.getGame().getActivePlayer() && GC.getGameINLINE().getGameTurn() < getTurns(GC.getCivilizationInfo(CANADA).getStartingYear()) + getTurns(5))
-	{
-		if (getCivilizationType() == AMERICA && iY >= 51) return false;
-		if (getCivilizationType() == FRANCE && iX <= 24 && iY >= 51) return false;
-	}
-
 	return true;
 }
 
@@ -7074,7 +7067,21 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 		return 0;
 	}
 
-	return std::max(0, GC.getBuildInfo(eBuild).getCost() * (100 + calculateInflationRate())) / 100;
+	int iCost = GC.getBuildInfo(eBuild).getCost();
+	
+	// MacAurther: French UP
+	CivilizationTypes eCiv = getCivilizationType();
+	if (eCiv == FRANCE && eBuild == (BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))
+	{
+		iCost /= 2;
+	}
+	// MacAurther: Russian UP
+	else if (eCiv == RUSSIA)
+	{
+		iCost /= 2;
+	}
+
+	return std::max(0, iCost * (100 + calculateInflationRate())) / 100;
 }
 
 
