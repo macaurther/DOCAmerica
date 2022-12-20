@@ -241,11 +241,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_AZT</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Can conscript units</English>
+		<French>Can conscript units</French>
+		<German>Can conscript units</German>
+		<Italian>Can conscript units</Italian>
+		<Spanish>Can conscript units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_BRA_TITLE</Tag>
@@ -278,14 +278,6 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_MULTICULTURALISM</Tag>
-		<English>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</English>
-		<French>En s'&#233;tablissant &#224; %s1, des immigrants ont acc&#233;l&#233;r&#233; de %d3 points l'apparition d'un %s2.</French>
-		<German>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</German>
-		<Italian>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</Italian>
-		<Spanish>Immigrants coming to our city of %s1 have brought it %d3 points closer to generating a %s2.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_COL_TITLE</Tag>
@@ -545,11 +537,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MIS</Tag>
-		<English>Extra [ICON_COMMERCE] along Rivers</English>
-		<French>Extra [ICON_COMMERCE] along Rivers</French>
-		<German>Extra [ICON_COMMERCE] along Rivers</German>
-		<Italian>Extra [ICON_COMMERCE] along Rivers</Italian>
-		<Spanish>Extra [ICON_COMMERCE] along Rivers</Spanish>
+		<English>+2 [ICON_COMMERCE] along Rivers</English>
+		<French>+2 [ICON_COMMERCE] along Rivers</French>
+		<German>+2 [ICON_COMMERCE] along Rivers</German>
+		<Italian>+2 [ICON_COMMERCE] along Rivers</Italian>
+		<Spanish>+2 [ICON_COMMERCE] along Rivers</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INU_TITLE</Tag>
@@ -582,5 +574,21 @@
 		<German>+1 [ICON_FOOD] from Mines</German>
 		<Italian>+1 [ICON_FOOD] from Mines</Italian>
 		<Spanish>+1 [ICON_FOOD] from Mines</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IRO_TITLE</Tag>
+		<English>The Power of Haudenosaunee:</English>
+		<French>The Power of Haudenosaunee:</French>
+		<German>The Power of Haudenosaunee:</German>
+		<Italian>The Power of Haudenosaunee:</Italian>
+		<Spanish>The Power of Haudenosaunee:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IRO</Tag>
+		<English>Tribes in your borders give a gift and convert to Cottages</English>
+		<French>Tribes in your borders give a gift and convert to Cottages</French>
+		<German>Tribes in your borders give a gift and convert to Cottages</German>
+		<Italian>Tribes in your borders give a gift and convert to Cottages</Italian>
+		<Spanish>Tribes in your borders give a gift and convert to Cottages</Spanish>
 	</TEXT>
 </Civ4GameText>

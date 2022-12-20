@@ -1413,7 +1413,13 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, CivilizationTypes ePreviousCiv, P
 				}
 			}
 
-            if (GC.getGameINLINE().getSorenRandNum(100, "AI Raze City") < iRazeValue)
+			// 1DSAN?: Minor Players always Raze Mississippian Cities
+			if (isMinorCiv() && pCity->getPreviousCiv() == MISSISSIPPI)
+			{
+				iRazeValue = 100;
+			}
+
+			if (GC.getGameINLINE().getSorenRandNum(100, "AI Raze City") < iRazeValue)
 			{
 				bRaze = true;
 				pCity->raze(iCaptureGold);

@@ -5406,11 +5406,11 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 
 			if (isOwned())
 			{
-				// MacAurther Goody Update: Huts are not removed by territory anymore
-				/*if (isGoody())
+				// MacAurther Tribe Update: Huts are not removed by territory anymore / Iroquois UP
+				if (isGoody() && GET_PLAYER(getOwnerINLINE()).getCivilizationType() == IROQUOIS)
 				{
 					GET_PLAYER(getOwnerINLINE()).doGoody(this, NULL);
-				}*/
+				}
 
 				for (iI = 0; iI < MAX_CIV_TEAMS; ++iI)
 				{
@@ -7109,6 +7109,15 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 						iYield += 1;
 					}
 				}
+			}
+		}
+
+		// 1DSAN?: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce along Rivers
+		if (GET_PLAYER(ePlayer).getCivilizationType() == MISSISSIPPI)
+		{
+			if (!isPeak() && !isWater() && eYield == YIELD_COMMERCE && isRiver())
+			{
+				iYield += 2;
 			}
 		}
 

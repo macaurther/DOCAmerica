@@ -5597,8 +5597,15 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 				{
 					receiveGoody(pPlot, eGoody, pUnit);
 
-					// MacAurther: Make Tribe a Contacted Tribe
-					pPlot->setImprovementType(IMPROVEMENT_CONTACTED_TRIBE);
+					// MacAurther: Make Tribe a Contacted Tribe / Iroquois UP: Cottage
+					if (getCivilizationType() == IROQUOIS)
+					{
+						pPlot->setImprovementType(IMPROVEMENT_COTTAGE);
+					}
+					else
+					{
+						pPlot->setImprovementType(IMPROVEMENT_CONTACTED_TRIBE);
+					}
 
 					// Python Event
 					CvEventReporter::getInstance().goodyReceived(getID(), pPlot, pUnit, eGoody);

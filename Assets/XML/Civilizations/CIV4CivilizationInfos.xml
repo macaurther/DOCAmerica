@@ -1619,7 +1619,8 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_IROQUOIS</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
+			<!--<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>-->
+			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRO</Identifier>
 			<Region>WOO</Region>
