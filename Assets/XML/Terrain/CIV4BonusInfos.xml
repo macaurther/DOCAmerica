@@ -145,6 +145,7 @@
 			<Civilopedia>TXT_KEY_BONUS_CITRUS_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CITRUS</ArtDefineTag>
+			<TechReveal>TECH_COMPANIES</TechReveal>
 			<TechCityTrade>TECH_POTTERY</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -318,7 +319,7 @@
 			<Civilopedia>TXT_KEY_BONUS_HORSE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RUSH</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_HORSE</ArtDefineTag>
-			<TechReveal>TECH_PASTORALISM</TechReveal>
+			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -633,6 +634,7 @@
 			<Civilopedia>TXT_KEY_BONUS_BANANA_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_BANANA</ArtDefineTag>
+			<TechReveal>TECH_COMPANIES</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -743,6 +745,7 @@
 			<Civilopedia>TXT_KEY_BONUS_COW_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_LIVESTOCK</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_COW</ArtDefineTag>
+			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
 			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
 			<YieldChanges>
@@ -902,6 +905,7 @@
 			<Civilopedia>TXT_KEY_BONUS_PIG_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_LIVESTOCK</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_PIG</ArtDefineTag>
+			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
 			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
 			<YieldChanges>
@@ -986,6 +990,7 @@
 			<Civilopedia>TXT_KEY_BONUS_RICE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GRAIN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_RICE</ArtDefineTag>
+			<TechReveal>TECH_HORTICULTURE</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -1033,6 +1038,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SHEEP_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_LIVESTOCK</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SHEEP</ArtDefineTag>
+			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
 			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
 			<YieldChanges>
@@ -1074,6 +1080,7 @@
 			<Civilopedia>TXT_KEY_BONUS_WHEAT_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GRAIN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_WHEAT</ArtDefineTag>
+			<TechReveal>TECH_HORTICULTURE</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -2018,6 +2025,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SUGAR_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SUGAR</ArtDefineTag>
+			<TechReveal>TECH_TRIANGULAR_TRADE</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -2220,6 +2228,7 @@
 			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_WINE</ArtDefineTag>
+			<TechReveal>TECH_HERITAGE</TechReveal>
 			<TechCityTrade>TECH_POTTERY</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -2348,7 +2357,7 @@
 			<Type>BONUS_SHEEP_LLAMA</Type>
 			<Description>TXT_KEY_BONUS_SHEEP_LLAMA</Description>
 			<Civilopedia>TXT_KEY_BONUS_SHEEP_LLAMA_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
+			<BonusClassType>BONUSCLASS_LIVESTOCK</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SHEEP_LLAMA</ArtDefineTag>
 			<iPlacementOrder>-1</iPlacementOrder>
 			<iMinAreaSize>-1</iMinAreaSize>
