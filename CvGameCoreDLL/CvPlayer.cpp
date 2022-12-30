@@ -5582,35 +5582,43 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 
 	// MacAurther: Don't remove goody
 	//pPlot->removeGoody();
-	if (!isBarbarian() && !isMinorCiv()) // Leoreth: minors cannot take goodies
+
+	// Leoreth: minors cannot take goodies
+	if (isBarbarian() || isMinorCiv())
 	{
-		for (int iI = 0; iI < GC.getDefineINT("NUM_DO_GOODY_ATTEMPTS"); iI++)
+		return;
+	}
+
+	for (int iI = 0; iI < GC.getDefineINT("NUM_DO_GOODY_ATTEMPTS"); iI++)
+	{
+		if (GC.getHandicapInfo(getHandicapType()).getNumGoodies() > 0)
 		{
-			if (GC.getHandicapInfo(getHandicapType()).getNumGoodies() > 0)
+			GoodyTypes eGoody = (GoodyTypes)GC.getHandicapInfo(getHandicapType()).getGoodies(GC.getGameINLINE().getSorenRandNum(GC.getHandicapInfo(getHandicapType()).getNumGoodies(), "Goodies"));
+
+			FAssert(eGoody >= 0);
+			FAssert(eGoody < GC.getNumGoodyInfos());
+
+			if (canReceiveGoody(pPlot, eGoody, pUnit))
 			{
-				GoodyTypes eGoody = (GoodyTypes)GC.getHandicapInfo(getHandicapType()).getGoodies(GC.getGameINLINE().getSorenRandNum(GC.getHandicapInfo(getHandicapType()).getNumGoodies(), "Goodies"));
-
-				FAssert(eGoody >= 0);
-				FAssert(eGoody < GC.getNumGoodyInfos());
-
-				if (canReceiveGoody(pPlot, eGoody, pUnit))
+				// MacAurther: Native techs: Only get Goody if you have the Linguistics Tech
+				if (GET_TEAM(getTeam()).isHasTech(TECH_LINGUISTICS))
 				{
 					receiveGoody(pPlot, eGoody, pUnit);
-
-					// MacAurther: Make Tribe a Contacted Tribe / Iroquois UP: Cottage
-					if (getCivilizationType() == IROQUOIS)
-					{
-						pPlot->setImprovementType(IMPROVEMENT_COTTAGE);
-					}
-					else
-					{
-						pPlot->setImprovementType(IMPROVEMENT_CONTACTED_TRIBE);
-					}
-
-					// Python Event
-					CvEventReporter::getInstance().goodyReceived(getID(), pPlot, pUnit, eGoody);
-					break;
 				}
+
+				// MacAurther: Make Tribe a Contacted Tribe / Iroquois UP: Cottage
+				if (getCivilizationType() == IROQUOIS)
+				{
+					pPlot->setImprovementType(IMPROVEMENT_COTTAGE);
+				}
+				else
+				{
+					pPlot->setImprovementType(IMPROVEMENT_CONTACTED_TRIBE);
+				}
+
+				// Python Event
+				CvEventReporter::getInstance().goodyReceived(getID(), pPlot, pUnit, eGoody);
+				break;
 			}
 		}
 	}
@@ -7706,6 +7714,12 @@ bool CvPlayer::canEverResearch(TechTypes eTech) const
 	}
 
 	if (GC.getCivilizationInfo(getCivilizationType()).isCivilizationDisableTechs(eTech))
+	{
+		return false;
+	}
+
+	// MacAurther: Native Techs cannot be researched, they have to be known from spawn, traded, or gifted
+	if (eTech < NUM_NATIVE_TECHS)
 	{
 		return false;
 	}

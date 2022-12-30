@@ -265,7 +265,7 @@
 			<Description>TXT_KEY_RELIGION_TAOISM</Description>
 			<Adjective>TXT_KEY_RELIGION_TAOISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_TAOISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_AESTHETICS</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_ORTHODOX_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>70</iSpreadFactor>
@@ -297,7 +297,7 @@
 			<Description>TXT_KEY_RELIGION_ZOROASTRIANISM</Description>
 			<Adjective>TXT_KEY_RELIGION_ZOROASTRIANISM_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_RELIGION_ZOROASTRIANISM_PEDIA</Civilopedia>
-			<TechPrereq>TECH_PRIESTHOOD</TechPrereq>
+			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<FreeUnitClass>UNITCLASS_ORTHODOX_MISSIONARY</FreeUnitClass>
 			<iFreeUnits>0</iFreeUnits>
 			<iSpreadFactor>50</iSpreadFactor>

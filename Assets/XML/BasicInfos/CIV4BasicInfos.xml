@@ -122,6 +122,11 @@
 			<Civilopedia>TXT_KEY_CONCEPT_TRIBES_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
+			<Type>CONCEPT_NATIVE_TECHS</Type>
+			<Description>TXT_KEY_CONCEPT_NATIVE_TECHS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_NATIVE_TECHS_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
 			<Type>CONCEPT_IMMIGRATION</Type>
 			<Description>TXT_KEY_CONCEPT_IMMIGRATION</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_IMMIGRATION_PEDIA</Civilopedia>

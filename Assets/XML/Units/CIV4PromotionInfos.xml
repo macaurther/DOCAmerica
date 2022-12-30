@@ -694,7 +694,7 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL1</PromotionPrereqOr2>
-			<TechPrereq>TECH_MEDICINE</TechPrereq>
+			<TechPrereq>TECH_HERBALISM</TechPrereq>
 			<iSameTileHealChange>10</iSameTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -737,6 +737,7 @@
 			<Description>TXT_KEY_PROMOTION_MEDIC2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_MEDIC1</PromotionPrereqOr1>
+			<TechPrereq>TECH_MEDICINE</TechPrereq>
 			<iAdjacentTileHealChange>10</iAdjacentTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -845,6 +846,7 @@
 			<Description>TXT_KEY_PROMOTION_GUERILLA2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_GUERILLA1</PromotionPrereqOr1>
+			<TechPrereq>TECH_PATHFINDING</TechPrereq>
 			<bHillsDoubleMove>1</bHillsDoubleMove>
 			<iHillsDefense>30</iHillsDefense>
 			<UnitCombats>
@@ -872,6 +874,7 @@
 			<Description>TXT_KEY_PROMOTION_GUERILLA3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_GUERILLA2</PromotionPrereqOr1>
+			<TechPrereq>TECH_PATHFINDING</TechPrereq>
 			<iWithdrawalChange>50</iWithdrawalChange>
 			<iHillsAttack>25</iHillsAttack>
 			<UnitCombats>
@@ -929,6 +932,7 @@
 			<Description>TXT_KEY_PROMOTION_WOODSMAN2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_WOODSMAN1</PromotionPrereqOr1>
+			<TechPrereq>TECH_PATHFINDING</TechPrereq>
 			<FeatureDefenses>
 				<FeatureDefense>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
@@ -978,6 +982,7 @@
 			<Description>TXT_KEY_PROMOTION_WOODSMAN3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_WOODSMAN2</PromotionPrereqOr1>
+			<TechPrereq>TECH_PATHFINDING</TechPrereq>
 			<iFirstStrikesChange>2</iFirstStrikesChange>
 			<iSameTileHealChange>15</iSameTileHealChange>
 			<FeatureAttacks>

@@ -102,15 +102,19 @@
 		<English>3a) Tribes</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_NATIVE_TECHS</Tag>
+		<English>3b) Native Technologies</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMMIGRATION</Tag>
-		<English>3b) Immigration</English>
+		<English>3c) Immigration</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_FORTS</Tag>
-		<English>3c) Forts in DOCA</English>
+		<English>3d) Forts in DOCA</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_ODDS</Tag>
-		<English>3b) Odds and Ends in DOCA</English>
+		<English>3e) Odds and Ends in DOCA</English>
 	</TEXT>
 </Civ4GameText>

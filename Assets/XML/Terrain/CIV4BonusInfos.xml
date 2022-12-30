@@ -676,6 +676,7 @@
 			<Civilopedia>TXT_KEY_BONUS_CLAM_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CLAM</ArtDefineTag>
+			<TechReveal>TECH_FISHING</TechReveal>
 			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -709,6 +710,7 @@
 			<Civilopedia>TXT_KEY_BONUS_CORN_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GRAIN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CORN</ArtDefineTag>
+			<TechReveal>TECH_CULTIVATION</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -786,6 +788,41 @@
 			<Civilopedia>TXT_KEY_BONUS_CRAB_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CRAB</ArtDefineTag>
+			<TechReveal>TECH_FISHING</TechReveal>
+			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
+			<YieldChanges>
+				<iYieldChange>1</iYieldChange>
+			</YieldChanges>
+			<iHealth>1</iHealth>
+			<iAffectedCities>2</iAffectedCities>
+			<iPlacementOrder>6</iPlacementOrder>
+			<iConstAppearance>50</iConstAppearance>
+			<iMinAreaSize>10</iMinAreaSize>
+			<iMinLatitude>40</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<Rands>
+				<iRandApp1>25</iRandApp1>
+				<iRandApp2>25</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<iTilesPer>32</iTilesPer>
+			<iUnique>1</iUnique>
+			<bNormalize>1</bNormalize>
+			<TerrainBooleans>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_COAST</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+			</TerrainBooleans>
+		</BonusInfo>
+		<BonusInfo>
+			<Type>BONUS_CRAB_SHRIMP</Type>
+			<Description>TXT_KEY_BONUS_CRAB_SHRIMP</Description>
+			<Civilopedia>TXT_KEY_BONUS_CRAB_SHRIMP_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_CRAB_SHRIMP</ArtDefineTag>
+			<TechReveal>TECH_FISHING</TechReveal>
 			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -819,6 +856,7 @@
 			<Civilopedia>TXT_KEY_BONUS_DEER_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_DEER</ArtDefineTag>
+			<TechReveal>TECH_HUNTING</TechReveal>
 			<TechCityTrade>TECH_TANNING</TechCityTrade>
 			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
 			<YieldChanges>
@@ -868,6 +906,7 @@
 			<Civilopedia>TXT_KEY_BONUS_FISH_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_FISH</ArtDefineTag>
+			<TechReveal>TECH_FISHING</TechReveal>
 			<TechPlayerTrade>TECH_REFRIGERATION</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -955,6 +994,7 @@
 			<Civilopedia>TXT_KEY_BONUS_POTATO_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GRAIN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_POTATO</ArtDefineTag>
+			<TechReveal>TECH_CULTIVATION</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -1075,6 +1115,24 @@
 			</TerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
+			<Type>BONUS_SHEEP_LLAMA</Type>
+			<Description>TXT_KEY_BONUS_SHEEP_LLAMA</Description>
+			<Civilopedia>TXT_KEY_BONUS_SHEEP_LLAMA_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_LIVESTOCK</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_SHEEP_LLAMA</ArtDefineTag>
+			<iPlacementOrder>-1</iPlacementOrder>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<Rands>
+				<iRandApp1>0</iRandApp1>
+				<iRandApp2>0</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BonusInfo>
+		<BonusInfo>
 			<Type>BONUS_WHEAT</Type>
 			<Description>TXT_KEY_BONUS_WHEAT</Description>
 			<Civilopedia>TXT_KEY_BONUS_WHEAT_PEDIA</Civilopedia>
@@ -1116,6 +1174,7 @@
 			<Civilopedia>TXT_KEY_BONUS_COCOA_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_COCOA</ArtDefineTag>
+			<TechReveal>TECH_CULTIVATION</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -1285,11 +1344,56 @@
 			</FeatureTerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
+			<Type>BONUS_DYE_COCHINEAL</Type>
+			<Description>TXT_KEY_BONUS_DYE_COCHINEAL</Description>
+			<Civilopedia>TXT_KEY_BONUS_DYE_COCHINEAL_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_DYE_COCHINEAL</ArtDefineTag>
+			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<YieldChanges>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>1</iYieldChange>
+			</YieldChanges>
+			<iHappiness>1</iHappiness>
+			<iAffectedCities>3</iAffectedCities>
+			<iPlacementOrder>5</iPlacementOrder>
+			<iConstAppearance>50</iConstAppearance>
+			<iMinAreaSize>3</iMinAreaSize>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<Rands>
+				<iRandApp1>25</iRandApp1>
+				<iRandApp2>25</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<iPlayer>100</iPlayer>
+			<iGroupRange>1</iGroupRange>
+			<iGroupRand>50</iGroupRand>
+			<bArea>1</bArea>
+			<bFlatlands>1</bFlatlands>
+			<bNormalize>1</bNormalize>
+			<FeatureBooleans>
+				<FeatureBoolean>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bFeature>1</bFeature>
+				</FeatureBoolean>
+			</FeatureBooleans>
+			<FeatureTerrainBooleans>
+				<FeatureTerrainBoolean>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bFeatureTerrain>1</bFeatureTerrain>
+				</FeatureTerrainBoolean>
+			</FeatureTerrainBooleans>
+		</BonusInfo>
+		<BonusInfo>
 			<Type>BONUS_FUR</Type>
 			<Description>TXT_KEY_BONUS_FUR</Description>
 			<Civilopedia>TXT_KEY_BONUS_FUR_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
+			<TechReveal>TECH_HUNTING</TechReveal>
 			<TechCityTrade>TECH_TANNING</TechCityTrade>
 			<TechObsolete>TECH_SYNTHETICS</TechObsolete>
 			<YieldChanges>
@@ -1395,6 +1499,7 @@
 			<Civilopedia>TXT_KEY_BONUS_GOLD_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_GOLD</ArtDefineTag>
+			<TechReveal>TECH_LANDMARKS</TechReveal>
 			<TechCityTrade>TECH_MINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1931,6 +2036,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SILVER_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SILVER</ArtDefineTag>
+			<TechReveal>TECH_LANDMARKS</TechReveal>
 			<TechCityTrade>TECH_MINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -2353,347 +2459,5 @@
 				<iRandApp4>0</iRandApp4>
 			</Rands>
 		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_SHEEP_LLAMA</Type>
-			<Description>TXT_KEY_BONUS_SHEEP_LLAMA</Description>
-			<Civilopedia>TXT_KEY_BONUS_SHEEP_LLAMA_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_LIVESTOCK</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_SHEEP_LLAMA</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_CRAB_SHRIMP</Type>
-			<Description>TXT_KEY_BONUS_CRAB_SHRIMP</Description>
-			<Civilopedia>TXT_KEY_BONUS_CRAB_SHRIMP_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_CRAB_SHRIMP</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_DYE_COCHINEAL</Type>
-			<Description>TXT_KEY_BONUS_DYE_COCHINEAL</Description>
-			<Civilopedia>TXT_KEY_BONUS_DYE_COCHINEAL_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_DYE_COCHINEAL</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<!--<BonusInfo>
-			<Type>BONUS_DYE_MUREX</Type>
-			<Description>TXT_KEY_BONUS_DYE_MUREX</Description>
-			<Civilopedia>TXT_KEY_BONUS_DYE_MUREX_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_DYE_MUREX</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_DYE_HENNA</Type>
-			<Description>TXT_KEY_BONUS_DYE_HENNA</Description>
-			<Civilopedia>TXT_KEY_BONUS_DEY_HENNA_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_DYE_HENNA</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_SPICES_CINNAMON</Type>
-			<Description>TXT_KEY_BONUS_SPICES_CINNAMON</Description>
-			<Civilopedia>TXT_KEY_BONUS_SPICES_CINNAMON_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_SPICES_CINNAMON</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_SPICES_NUTMEG</Type>
-			<Description>TXT_KEY_BONUS_SPICES_NUTMEG</Description>
-			<Civilopedia>TXT_KEY_BONUS_SPICES_NUTMEG_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_SPICES_NUTMEG</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_SPICES_SAFFRON</Type>
-			<Description>TXT_KEY_BONUS_SPICES_SAFFRON</Description>
-			<Civilopedia>TXT_KEY_BONUS_SPICES_SAFFRON_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_SPICES_SAFFRON</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_SPICES_VANILLA</Type>
-			<Description>TXT_KEY_BONUS_SPICES_VANILLA</Description>
-			<Civilopedia>TXT_KEY_BONUS_SPICES_VANILLA_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_SPICES_VANILLA</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_GEMS_TURQUOISE</Type>
-			<Description>TXT_KEY_BONUS_GEMS_TURQUOISE</Description>
-			<Civilopedia>TXT_KEY_BONUS_GEMS_TURQUOISE_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_GEMS_TURQUOISE</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_GEMS_DIAMONDS</Type>
-			<Description>TXT_KEY_BONUS_GEMS_DIAMONDS</Description>
-			<Civilopedia>TXT_KEY_BONUS_GEMS_DIAMONDS_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_GEMS_DIAMONDS</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_GEMS_RUBIES</Type>
-			<Description>TXT_KEY_BONUS_GEMS_RUBIES</Description>
-			<Civilopedia>TXT_KEY_BONUS_GEMS_RUBIES_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_GEMS_RUBIES</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_GEMS_SAPPHIRES</Type>
-			<Description>TXT_KEY_BONUS_GEMS_SAPPHIRES</Description>
-			<Civilopedia>TXT_KEY_BONUS_GEMS_SAPPHIRES_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_GEMS_SAPPHIRES</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_GEMS_EMERALDS</Type>
-			<Description>TXT_KEY_BONUS_GEMS_EMERALDS</Description>
-			<Civilopedia>TXT_KEY_BONUS_GEMS_EMERALDS_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_GEMS_EMERALDS</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_SHEEP_BLACK</Type>
-			<Description>TXT_KEY_BONUS_SHEEP_BLACK</Description>
-			<Civilopedia>TXT_KEY_BONUS_SHEEP_BLACK_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_SHEEP_BLACK</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_COW_BROWN</Type>
-			<Description>TXT_KEY_BONUS_COW_BROWN</Description>
-			<Civilopedia>TXT_KEY_BONUS_COW_BROWN_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_COW_BROWN</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_PIG_FURRY</Type>
-			<Description>TXT_KEY_BONUS_PIG_FURRY</Description>
-			<Civilopedia>TXT_KEY_BONUS_PIG_FURRY_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_PIG_FURRY</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_IVORY_AFRICAN</Type>
-			<Description>TXT_KEY_BONUS_IVORY_AFRICAN</Description>
-			<Civilopedia>TXT_KEY_BONUS_IVORY_AFRICAN_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_IVORY_AFRICAN</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_CITRUS_ORANGES</Type>
-			<Description>TXT_KEY_BONUS_CITRUS_ORANGES</Description>
-			<Civilopedia>TXT_KEY_BONUS_CITRUS_ORANGES_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_CITRUS_ORANGES</ArtDefineTag>
-			<iPlacementOrder>-1</iPlacementOrder>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>90</iMaxLatitude>
-			<Rands>
-				<iRandApp1>0</iRandApp1>
-				<iRandApp2>0</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BonusInfo>-->
 	</BonusInfos>
 </Civ4BonusInfos>

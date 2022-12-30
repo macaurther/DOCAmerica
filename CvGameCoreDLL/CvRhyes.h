@@ -31,6 +31,9 @@ typedef list<char*> LISTCHAR;
 #define IMPROVEMENT_TRIBE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRIBE"))
 #define IMPROVEMENT_CONTACTED_TRIBE ((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CONTACTED_TRIBE"))
 
+#define NUM_NATIVE_TECHS		((TechTypes)GC.getInfoTypeForString("TECH_FISHING") + 1)
+#define TECH_LINGUISTICS		((TechTypes)GC.getInfoTypeForString("TECH_LINGUISTICS"))
+
 enum DoCTechs
 {
 	TANNING,
