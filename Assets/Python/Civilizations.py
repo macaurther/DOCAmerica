@@ -866,7 +866,6 @@ dBuildingPreferences = {
 		iGuadalupeBasilica: 30,
 		iChapultepecCastle: 30,
 		iCristoRedentor: 20,
-		iIberianTradingCompanyBuilding: 20,
 	},
 	iFrance : {
 		iTradingCompanyBuilding: 40,
@@ -877,7 +876,6 @@ dBuildingPreferences = {
 	},
 	iPortugal : {
 		iCristoRedentor: 40,
-		iIberianTradingCompanyBuilding: 40,
 	},
 	iInca : {
 		iMachuPicchu: 40,
@@ -924,7 +922,7 @@ dBuildingPreferences = {
 		iItaipuDam: 30,
 	},
 	iCanada : {
-		iFrontenac: 30,
+		iChateauFrontenac: 30,
 		iCNTower: 30,
 	}
 }

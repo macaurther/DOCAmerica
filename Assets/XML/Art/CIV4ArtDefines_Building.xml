@@ -1957,5 +1957,25 @@
 			<KFM/>
 			<Button>Art/Structures/Buildings/Druidic_Nemeton/druidic_nemeton.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TRADING_POST</Type>
+			<LSystem>LSYSTEM_COAST</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.38</fScale>
+			<fInterfaceScale>0.48</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Viking Trading Post/Viking_Post.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Lighthouse.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,3,4</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_DUTCH_DIKE</Type>
+			<LSystem>LSYSTEM_COAST</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Dutch_Dike/Dutch_Dike.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Wall.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,1,8</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

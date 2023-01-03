@@ -14,6 +14,8 @@ class Forts:
 		if iPlayer == -1:
 			return
 		print ("NEW Fort obtained by " + str(iPlayer) + " through fort construction on : " + str(iX) + "," + str(iY))
+		data.bCheckForts = True
+		
 		# If fort is already owned by the right player, return
 		if data.dFortMap[iX][iY] == iPlayer:
 			return
@@ -122,10 +124,11 @@ class Forts:
 
 
 	def updateAllFortCulture(self):
-		for iXLoop in range(0, iWorldX):
-			for iYLoop in range(0, iWorldY):
-				if data.dFortCulture[iXLoop][iYLoop] > -1:
-					gc.getMap().plot(iXLoop, iYLoop).setOwnerNoUnitCheck(data.dFortCulture[iXLoop][iYLoop])
+		if data.bCheckForts:
+			for iXLoop in range(0, iWorldX):
+				for iYLoop in range(0, iWorldY):
+					if data.dFortCulture[iXLoop][iYLoop] > -1:
+						gc.getMap().plot(iXLoop, iYLoop).setOwnerNoUnitCheck(data.dFortCulture[iXLoop][iYLoop])
 
 
 	def wipeFortCultureInArea(self, tArea):

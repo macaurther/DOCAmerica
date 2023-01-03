@@ -200,6 +200,7 @@ class GameData:
 		
 		# Forts
 		
+		self.bCheckForts = False
 		self.dFortMap = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
 		self.dFortCulture = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
 		

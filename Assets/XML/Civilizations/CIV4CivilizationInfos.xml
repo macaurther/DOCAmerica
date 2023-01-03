@@ -53,6 +53,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_MEETING_HALL</BuildingClassType>
+					<BuildingType>BUILDING_AMERICAN_STATE_HOUSE</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_DEPARTMENT_STORE</BuildingClassType>
 					<BuildingType>BUILDING_AMERICAN_MALL</BuildingType>
 				</Building>
@@ -279,8 +283,12 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
-					<BuildingType>BUILDING_AZTEC_SACRIFICIAL_ALTAR</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingType>BUILDING_AZTEC_CHINAMPA</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ALTAR</BuildingClassType>
+					<BuildingType>BUILDING_AZTEC_TZOMPANTLI</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -1011,8 +1019,12 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_BANK</BuildingClassType>
-					<BuildingType>BUILDING_ENGLISH_ROYAL_EXCHANGE</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_LUMBERMILL</BuildingClassType>
+					<BuildingType>BUILDING_ENGLISH_SAWMILL</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_ENGLISH_ASSEMBLY</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -1123,8 +1135,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_COFFEEHOUSE</BuildingClassType>
-					<BuildingType>BUILDING_FRENCH_SALON</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_LEVEE</BuildingClassType>
+					<BuildingType>BUILDING_FRENCH_SEIGNEUR</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -1448,7 +1460,11 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_POST_OFFICE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+					<BuildingType>BUILDING_INCA_KALLANKA</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
 					<BuildingType>BUILDING_INCAN_TAMBO</BuildingType>
 				</Building>
 				<Building>
@@ -1851,8 +1867,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_ARENA</BuildingClassType>
-					<BuildingType>BUILDING_MEXICAN_CHARREADA</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_RODEO</BuildingClassType>
+					<BuildingType>BUILDING_MEXICAN_LIENZO_CHARRO</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -1978,7 +1994,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PARK</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
 					<BuildingType>BUILDING_MISSISSIPPI_EFFIGY_MOUND</BuildingType>
 				</Building>
 				<Building>
@@ -2068,7 +2084,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_STONEWORKS</BuildingClassType>
 					<BuildingType>BUILDING_MUISCA_GOLDSMITH</BuildingType>
 				</Building>
 				<Building>
@@ -2183,6 +2199,10 @@
 				<City>Almere</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
+					<BuildingType>BUILDING_DUTCH_TRADING_FORT</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_ASATRU_HOF</BuildingType>
@@ -2478,10 +2498,6 @@
 					<BuildingType>BUILDING_PORTUGUESE_FEITORIA</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_TRADING_COMPANY</BuildingClassType>
-					<BuildingType>BUILDING_IBERIAN_TRADING_COMPANY</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
 				</Building>
@@ -2756,8 +2772,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_TRADING_COMPANY</BuildingClassType>
-					<BuildingType>BUILDING_IBERIAN_TRADING_COMPANY</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_CATHOLIC_MONASTERY</BuildingClassType>
+					<BuildingType>BUILDING_SPANISH_MISSION</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -2972,7 +2988,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_CIVIC_SQUARE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
 					<BuildingType>BUILDING_TIWANAKU_KALASASAYA</BuildingType>
 				</Building>
 				<Building>

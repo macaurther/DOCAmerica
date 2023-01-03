@@ -19,20 +19,20 @@ typedef list<char*> LISTCHAR;
 #define NUM_ERAS				(ERA_ATOMIC+1)
 
 #define PAGAN_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PAGAN_TEMPLE"))
-#define CATHOLIC_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_CATHOLIC_TEMPLE"))
+#define CATHOLIC_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_CATHOLIC_TEMPLE"))				// MacAurther
 #define BUILDING_PALACE			((BuildingClassTypes)0)
 #define BUILDING_PLAGUE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PLAGUE"))
 
-#define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))
-#define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))
+#define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
+#define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther
 #define UNITCLASS_SLAVE			((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))
 
-#define IMPROVEMENT_COTTAGE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE"))
-#define IMPROVEMENT_TRIBE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRIBE"))
-#define IMPROVEMENT_CONTACTED_TRIBE ((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CONTACTED_TRIBE"))
+#define IMPROVEMENT_COTTAGE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE"))					// MacAurther
+#define IMPROVEMENT_TRIBE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRIBE"))					// MacAurther
+#define IMPROVEMENT_CONTACTED_TRIBE ((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CONTACTED_TRIBE"))		// MacAurther
 
-#define NUM_NATIVE_TECHS		((TechTypes)GC.getInfoTypeForString("TECH_FISHING") + 1)
-#define TECH_LINGUISTICS		((TechTypes)GC.getInfoTypeForString("TECH_LINGUISTICS"))
+#define NUM_NATIVE_TECHS		((TechTypes)GC.getInfoTypeForString("TECH_FISHING") + 1)							// MacAurther
+#define TECH_LINGUISTICS		((TechTypes)GC.getInfoTypeForString("TECH_LINGUISTICS"))							// MacAurther
 
 enum DoCTechs
 {
