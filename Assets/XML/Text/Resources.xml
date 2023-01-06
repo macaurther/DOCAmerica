@@ -265,11 +265,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_DYE_COCHINEAL</Tag>
-		<English>Dye (Cochineal)</English>
-		<French>Dye (Cochineal)</French>
-		<German>Farbmittel (Cochenille)</German>
-		<Italian>Dye (Cochineal)</Italian>
-		<Spanish>Dye (Cochineal)</Spanish>
+		<English>Cochineal</English>
+		<French>Cochineal</French>
+		<German>Cochineal</German>
+		<Italian>Cochineal</Italian>
+		<Spanish>Cochineal</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_DYE_MUREX</Tag>
@@ -360,12 +360,12 @@
 		<Spanish>Gems (Emeralds)</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_SHEEP_LLAMA</Tag>
-		<English>Sheep (Llama)</English>
-		<French>Sheep (Llama)</French>
-		<German>Schaf (Llama)</German>
-		<Italian>Sheep (Llama)</Italian>
-		<Spanish>Sheep (Llama)</Spanish>
+		<Tag>TXT_KEY_BONUS_LLAMA</Tag>
+		<English>Llama</English>
+		<French>Llama</French>
+		<German>Llama</German>
+		<Italian>Llama</Italian>
+		<Spanish>Llama</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_COW_BROWN</Tag>
@@ -424,11 +424,11 @@
 		<Spanish>Citrus (Oranges)</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BONUS_CRAB_SHRIMP</Tag>
-		<English>Crab (Shrimps)</English>
-		<French>Crab (Shrimps)</French>
-		<German>Crab (Shrimps)</German>
-		<Italian>Crab (Shrimps)</Italian>
-		<Spanish>Crab (Shrimps)</Spanish>
+		<Tag>TXT_KEY_BONUS_CRUSTACEANS</Tag>
+		<English>Crustaceans</English>
+		<French>Crustaceans</French>
+		<German>Crustaceans</German>
+		<Italian>Crustaceans</Italian>
+		<Spanish>Crustaceans</Spanish>
 	</TEXT>
 </Civ4GameText>

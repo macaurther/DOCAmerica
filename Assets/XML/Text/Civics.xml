@@ -158,6 +158,14 @@
 		<Spanish>Can capture Workers; extra production from Quarries; extra commerce from Mines and Plantations</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
+		<English>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</English>
+		<French>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</French>
+		<German>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</German>
+		<Italian>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</Italian>
+		<Spanish>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_THEOCRACY_STRATEGY</Tag>
 		<English>Double available slots for priests; cities with state religion give extra experience; no spread of non-state religions</English>
 		<French>Vous pouvez embaucher deux fois plus de pr&#234;tres ; les unit&#233;s construites dans les villes avec la religion d'&#201;tat re&#231;oivent de l'exp&#233;rience additionnelle ; les autres religions ne se propagent pas</French>
@@ -752,11 +760,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MIGRANT_WORKERS_HELP</Tag>
-		<English>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</English>
-		<French>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</French>
-		<German>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</German>
-		<Italian>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</Italian>
-		<Spanish>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides production</Spanish>
+		<English>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</English>
+		<French>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</French>
+		<German>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</German>
+		<Italian>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</Italian>
+		<Spanish>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AUTOMATION</Tag>

@@ -1278,6 +1278,7 @@ public:
 	int getImmigrationYieldRate(YieldTypes eYield) const;
 	void setImmigrationRate(int iValue);
 	void setImmigrationYieldRate(YieldTypes eYield, int iValue);
+	int calculateImmigrationRate();
 	int calculateImmigrationYieldRate(YieldTypes eYield);
 	bool processImmigration();
 	void updateImmigrationYieldRate(YieldTypes eYield, int iChange);

@@ -438,9 +438,17 @@ def getSeparatismModifier(iPlayer, city):
 	if iCulturePercent < 50: iModifier += 1
 	if iCulturePercent < 20: iModifier += 1
 	
+	# Stocks
+	if city.hasBuilding(unique_building(iPlayer, iStocks)):
+		iModifier -= 1
+	
 	# Courthouse
 	if city.hasBuilding(unique_building(iPlayer, iCourthouse)):
-		iModifier -= 1
+		# English Assembly UB
+		if iCiv == iEngland:
+			iModifier -= 2
+		else:
+			iModifier -= 1
 	
 	# Jail
 	if city.hasBuilding(unique_building(iPlayer, iJail)):

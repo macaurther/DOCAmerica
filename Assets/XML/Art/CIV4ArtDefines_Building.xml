@@ -1977,5 +1977,55 @@
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/Wall.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,1,8</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PYRAMID_OF_THE_SUN</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.53</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/PyramidOfTheSun/pyramid.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/PyramidOfTheSun/PyramidOfTheSun.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GATE_OF_THE_SUN</Type>
+			<LSystem>LSYSTEM_1x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Gate_of_the_Sun/brana01.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/Gate_of_the_Sun/gate.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SERPENT_MOUND</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.58</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Serpent Mound/serpent.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/Serpent Mound/Button_SerpentMound.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_AQUA_APPIA</Type>
+			<LSystem>LSYSTEM_2x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.65</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Aqueduct/Pedia_Aqueduct.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Wonders/AquaAppia/aqua_appia.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_HARAPPAN_RESERVOIR</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Bath/bath_southamerika.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Bath/Button_Bath.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

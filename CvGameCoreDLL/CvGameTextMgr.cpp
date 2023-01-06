@@ -11292,6 +11292,24 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 		}
 	}
 
+	// MacAurther: Civic Requirements
+	if (eBuilding == BUILDING_SLAVE_MARKET)
+	{
+		if (ePlayer != NO_PLAYER)
+		{
+			if (!GET_PLAYER(ePlayer).hasCivic(CIVIC_SLAVERY))
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_CIVIC_REQUIREMENTS",  GC.getCivicInfo(CIVIC_SLAVERY).getTextKeyWide()));
+			}
+		}
+		else
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_CIVIC_REQUIREMENTS",  GC.getCivicInfo(CIVIC_SLAVERY).getTextKeyWide()));
+		}
+	}
+
 	//Rhye - start comment
 	/*if (bCivilopediaText)
 	{

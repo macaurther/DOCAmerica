@@ -388,7 +388,7 @@ lCivilizations = [
 		iAdvancedStartPoints=200,
 		iStateReligion=iCatholicism,
 		lCivics=[],
-		techs=techs.column(11).including(iMetallurgy, iProtectionism, iHydraulics)
+		techs=techs.column(11).including(iMetallurgy, iProtectionism, iHydrology)
 	),
 	Civilization(
 		iCanada,

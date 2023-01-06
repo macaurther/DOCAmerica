@@ -11606,6 +11606,7 @@
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
+			<PrereqBuilding>BUILDING_SLAVE_MARKET</PrereqBuilding>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -11661,6 +11662,7 @@
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
+			<PrereqBuilding>BUILDING_SLAVE_MARKET</PrereqBuilding>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

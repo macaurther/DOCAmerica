@@ -2391,6 +2391,14 @@
 		<Spanish>[ICON_BULLET]%D1_Mod%% Trade Route Yield per Culture Level</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CIVIC_REQUIREMENTS</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires %s1_CivicName[COLOR_REVERT]</English>
+		<French>[COLOR_WARNING_TEXT]Requires %s1_CivicName[COLOR_REVERT]</French>
+		<German>[COLOR_WARNING_TEXT]Requires %s1_CivicName[COLOR_REVERT]</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires %s1_CivicName[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires %s1_CivicName[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WORLD_WONDERS_PER_CULTURE_LEVEL</Tag>
 		<English>[COLOR_WARNING_TEXT]Can only Construct %d1_Num World Wonders with %s2_LevelName Culture[COLOR_REVERT]</English>
 		<French>[COLOR_WARNING_TEXT]Possible de construire un maximum de %d1_Num merveilles du monde avec une culture %s2_LevelName[COLOR_REVERT]</French>

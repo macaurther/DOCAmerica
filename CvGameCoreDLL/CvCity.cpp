@@ -2137,11 +2137,11 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 		}
 	}
 
-	// Leoreth: can't train slaves
-	if (GC.getUnitInfo(eUnit).isSlave())
+	// Leoreth: can't train slaves -> MacAurther: Actually now you can with a Slave Market
+	/*if (GC.getUnitInfo(eUnit).isSlave())
 	{
 		return false;
-	}
+	}*/
 
 	return true;
 }
@@ -2284,6 +2284,11 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		{
 			return false;
 		}
+	}
+
+	if (eBuilding == BUILDING_SLAVE_MARKET && !GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
+	{
+		return false;
 	}
 
 	// Leoreth: Guadalupe Basilica needs to be on different continent than Catholic holy city
@@ -19026,10 +19031,8 @@ void CvCity::setImmigrationYieldRate(YieldTypes eYield, int iValue)
 	m_aiImmigrationYieldRate[eYield] = iValue;
 }
 
-int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
+int CvCity::calculateImmigrationRate()
 {
-	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "eYield expected to be < NUM_YIELD_TYPES");
 	FAssertMsg(getPopulation() > 0, "Population expected to be > 0");
 
 	int iImmigrationRate = 0;
@@ -19062,19 +19065,54 @@ int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
 	}
 
 	// English UP
-	if(isCoastal(20) && getCivilizationType() == ENGLAND)
+	if (isCoastal(20) && getCivilizationType() == ENGLAND)
 	{
 		iImmigrationRate += 2;
 	}
 
+	// Immigration Modifiers
+	if (isHasBuildingEffect(BUILDING_HEADRIGHT))
+	{
+		iImmigrationRate *= 5;
+		iImmigrationRate /= 4;
+	}
+	if (isHasBuildingEffect(BUILDING_SLAVE_MARKET) && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
+	{
+		iImmigrationRate *= 3;
+		iImmigrationRate /= 2;
+	}
+	if (isHasBuildingEffect(BUILDING_WHEELWRIGHT))
+	{
+		iImmigrationRate *= 5;
+		iImmigrationRate /= 4;
+	}
+	if (isHasBuildingEffect(BUILDING_IMMIGRATION_OFFICE))
+	{
+		iImmigrationRate *= 3;
+		iImmigrationRate /= 2;
+	}
+
 	setImmigrationRate(iImmigrationRate);
 
-	// Set the yield value
+	return iImmigrationRate;
+}
+
+int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
+{
+	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "eYield expected to be < NUM_YIELD_TYPES");
+
+	int iImmigrationRate = calculateImmigrationRate();
+
 	if (eYield == YIELD_FOOD)
 	{
 		return iImmigrationRate;
 	}
 	else if(eYield == YIELD_PRODUCTION && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MIGRANT_WORKERS))
+	{
+		return iImmigrationRate;
+	}
+	else if(eYield == YIELD_PRODUCTION && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
 	{
 		return iImmigrationRate;
 	}

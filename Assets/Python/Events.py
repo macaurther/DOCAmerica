@@ -79,6 +79,9 @@ events.addEvent("EndGameTurn")
 def capitalMovedOnPalaceBuilt(city, iBuilding):
 	if iBuilding == iPalace:
 		events.fireEvent("capitalMoved", city)
+	
+	if iBuilding == iMission:
+		makeUnits(city.getOwner(), iCatholicMiss, city.plot(), 2, UnitAITypes.UNITAI_MISSIONARY).adjective("")
 
 
 @handler("firstCity")

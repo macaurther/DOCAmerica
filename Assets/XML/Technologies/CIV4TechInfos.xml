@@ -2909,9 +2909,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_HYDRAULICS</Type>
-			<Description>TXT_KEY_TECH_HYDRAULICS</Description>
-			<Civilopedia>TXT_KEY_TECH_HYDRAULICS_PEDIA</Civilopedia>
+			<Type>TECH_HYDROLOGY</Type>
+			<Description>TXT_KEY_TECH_HYDROLOGY</Description>
+			<Civilopedia>TXT_KEY_TECH_HYDROLOGY_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2943,7 +2943,7 @@
 				<PrereqTech>TECH_POSTAL_SERVICE</PrereqTech>
 				<PrereqTech>TECH_METEOROLOGY</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_HYDRAULICS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_HYDROLOGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Hydraulics.dds</Button>
@@ -3145,7 +3145,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_METALLURGY</PrereqTech>
-				<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+				<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_THERMODYNAMICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -3178,7 +3178,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+				<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 				<PrereqTech>TECH_PHYSICS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ENGINEERING_QUOTE</Quote>

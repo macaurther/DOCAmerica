@@ -246,6 +246,14 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] lower city maintenance costs, provide you with a bonus to espionage and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Westminster Palace[COLOR_REVERT] world wonder.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COURTHOUSE_HELP</Tag>
+		<English>[ICON_BULLET]-1 Local Instability</English>
+		<French>[ICON_BULLET]-1 Local Instability</French>
+		<German>[ICON_BULLET]-1 Local Instability</German>
+		<Italian>[ICON_BULLET]-1 Local Instability</Italian>
+		<Spanish>[ICON_BULLET]-1 Local Instability</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CUSTOMS_HOUSE</Tag>
 		<English>Customs House</English>
 		<French>
@@ -396,6 +404,14 @@
 		<German>[COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] lower city maintenance costs and increase espionage. [COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Constabularies[COLOR_REVERT].</German>
 		<Italian>[COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] lower city maintenance costs and increase espionage. [COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Constabularies[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] lower city maintenance costs and increase espionage. [COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Constabularies[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAIL_HELP</Tag>
+		<English>[ICON_BULLET]-1 Local Instability</English>
+		<French>[ICON_BULLET]-1 Local Instability</French>
+		<German>[ICON_BULLET]-1 Local Instability</German>
+		<Italian>[ICON_BULLET]-1 Local Instability</Italian>
+		<Spanish>[ICON_BULLET]-1 Local Instability</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HYDRO_PLANT_STRATEGY</Tag>
@@ -2247,11 +2263,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Tag>
-		<English>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION] from Ice and Tundra</English>
-		<French>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</French>
-		<German>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</German>
-		<Italian>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</Italian>
-		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from Ice and Tundra</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION] from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</English>
+		<French>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</French>
+		<German>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</German>
+		<Italian>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MUISCA_GOLDSMITH</Tag>
@@ -2312,6 +2328,1134 @@
 		<German>Pithouse</German>
 		<Italian>Pithouse</Italian>
 		<Spanish>Pithouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALTAR</Tag>
+		<English>Altar</English>
+		<French>Altar</French>
+		<German>Altar</German>
+		<Italian>Altar</Italian>
+		<Spanish>Altar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALTAR_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARSENAL</Tag>
+		<English>Arsenal</English>
+		<French>Arsenal</French>
+		<German>Arsenal</German>
+		<Italian>Arsenal</Italian>
+		<Spanish>Arsenal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARSENAL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COMMON</Tag>
+		<English>Common</English>
+		<French>Common</French>
+		<German>Common</German>
+		<Italian>Common</Italian>
+		<Spanish>Common</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_COMMON_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HEADRIGHT</Tag>
+		<English>Headright</English>
+		<French>Headright</French>
+		<German>Headright</German>
+		<Italian>Headright</Italian>
+		<Spanish>Headright</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HEADRIGHT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HEADRIGHT_HELP</Tag>
+		<English>[ICON_BULLET]+25% Immigration</English>
+		<French>[ICON_BULLET]+25% Immigration</French>
+		<German>[ICON_BULLET]+25% Immigration</German>
+		<Italian>[ICON_BULLET]+25% Immigration</Italian>
+		<Spanish>[ICON_BULLET]+25% Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HERBALIST</Tag>
+		<English>Herbalist</English>
+		<French>Herbalist</French>
+		<German>Herbalist</German>
+		<Italian>Herbalist</Italian>
+		<Spanish>Herbalist</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HERBALIST_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMMIGRATION_OFFICE</Tag>
+		<English>Immigration Office</English>
+		<French>Immigration Office</French>
+		<German>Immigration Office</German>
+		<Italian>Immigration Office</Italian>
+		<Spanish>Immigration Office</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_HELP</Tag>
+		<English>[ICON_BULLET]+50% Immigration</English>
+		<French>[ICON_BULLET]+50% Immigration</French>
+		<German>[ICON_BULLET]+50% Immigration</German>
+		<Italian>[ICON_BULLET]+50% Immigration</Italian>
+		<Spanish>[ICON_BULLET]+50% Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LUMBERMILL</Tag>
+		<English>Lumbermill</English>
+		<French>Lumbermill</French>
+		<German>Lumbermill</German>
+		<Italian>Lumbermill</Italian>
+		<Spanish>Lumbermill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LUMBERMILL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAGAZINE</Tag>
+		<English>Magazine</English>
+		<French>Magazine</French>
+		<German>Magazine</German>
+		<Italian>Magazine</Italian>
+		<Spanish>Magazine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAGAZINE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEWSPAPER</Tag>
+		<English>Newspaper</English>
+		<French>Newspaper</French>
+		<German>Newspaper</German>
+		<Italian>Newspaper</Italian>
+		<Spanish>Newspaper</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NEWSPAPER_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PALISADE</Tag>
+		<English>Palisade</English>
+		<French>Palisade</French>
+		<German>Palisade</German>
+		<Italian>Palisade</Italian>
+		<Spanish>Palisade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PALISADE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PRINTING_PRESS</Tag>
+		<English>Printing Press</English>
+		<French>Printing Press</French>
+		<German>Printing Press</German>
+		<Italian>Printing Press</Italian>
+		<Spanish>Printing Press</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PRINTING_PRESS_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RODEO</Tag>
+		<English>Rodeo</English>
+		<French>Rodeo</French>
+		<German>Rodeo</German>
+		<Italian>Rodeo</Italian>
+		<Spanish>Rodeo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RODEO_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SCHOOLHOUSE</Tag>
+		<English>Schoolhouse</English>
+		<French>Schoolhouse</French>
+		<German>Schoolhouse</German>
+		<Italian>Schoolhouse</Italian>
+		<Spanish>Schoolhouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SCHOOLHOUSE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SHIPYARD</Tag>
+		<English>Shipyard</English>
+		<French>Shipyard</French>
+		<German>Shipyard</German>
+		<Italian>Shipyard</Italian>
+		<Spanish>Shipyard</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SHIPYARD_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SILVERSMITH</Tag>
+		<English>Silversmith</English>
+		<French>Silversmith</French>
+		<German>Silversmith</German>
+		<Italian>Silversmith</Italian>
+		<Spanish>Silversmith</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SILVERSMITH_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLAUGHTERHOUSE</Tag>
+		<English>Slaughterhouse</English>
+		<French>Slaughterhouse</French>
+		<German>Slaughterhouse</German>
+		<Italian>Slaughterhouse</Italian>
+		<Spanish>Slaughterhouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLAUGHTERHOUSE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLAVE_MARKET</Tag>
+		<English>Slave Market</English>
+		<French>Slave Market</French>
+		<German>Slave Market</German>
+		<Italian>Slave Market</Italian>
+		<Spanish>Slave Market</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Tag>
+		<English>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</English>
+		<French>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</French>
+		<German>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</German>
+		<Italian>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STEEL_MILL</Tag>
+		<English>Steel Mill</English>
+		<French>Steel Mill</French>
+		<German>Steel Mill</German>
+		<Italian>Steel Mill</Italian>
+		<Spanish>Steel Mill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STEEL_MILL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STOCKS</Tag>
+		<English>Stocks</English>
+		<French>Stocks</French>
+		<German>Stocks</German>
+		<Italian>Stocks</Italian>
+		<Spanish>Stocks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STOCKS_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HEADRIGHT_HELP</Tag>
+		<English>[ICON_BULLET]-1 Local Instability</English>
+		<French>[ICON_BULLET]-1 Local Instability</French>
+		<German>[ICON_BULLET]-1 Local Instability</German>
+		<Italian>[ICON_BULLET]-1 Local Instability</Italian>
+		<Spanish>[ICON_BULLET]-1 Local Instability</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STONEWORKS</Tag>
+		<English>Stoneworks</English>
+		<French>Stoneworks</French>
+		<German>Stoneworks</German>
+		<Italian>Stoneworks</Italian>
+		<Spanish>Stoneworks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STONEWORKS_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEXTILE_MILL</Tag>
+		<English>Textile Mill</English>
+		<French>Textile Mill</French>
+		<German>Textile Mill</German>
+		<Italian>Textile Mill</Italian>
+		<Spanish>Textile Mill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEXTILE_MILL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRADING_POST</Tag>
+		<English>Trading Post</English>
+		<French>Trading Post</French>
+		<German>Trading Post</German>
+		<Italian>Trading Post</Italian>
+		<Spanish>Trading Post</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRADING_POST_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WELL</Tag>
+		<English>Well</English>
+		<French>Well</French>
+		<German>Well</German>
+		<Italian>Well</Italian>
+		<Spanish>Well</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WELL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHEELWRIGHT</Tag>
+		<English>Wheelwright</English>
+		<French>Wheelwright</French>
+		<German>Wheelwright</German>
+		<Italian>Wheelwright</Italian>
+		<Spanish>Wheelwright</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHEELWRIGHT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WHEELWRIGHT_HELP</Tag>
+		<English>[ICON_BULLET]+25% Immigration</English>
+		<French>[ICON_BULLET]+25% Immigration</French>
+		<German>[ICON_BULLET]+25% Immigration</German>
+		<Italian>[ICON_BULLET]+25% Immigration</Italian>
+		<Spanish>[ICON_BULLET]+25% Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPANISH_MISSION</Tag>
+		<English>Mission</English>
+		<French>Mission</French>
+		<German>Mission</German>
+		<Italian>Mission</Italian>
+		<Spanish>Mission</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SPANISH_MISSION_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MISSION_HELP</Tag>
+		<English>[ICON_BULLET]Receive 2 Free Catholic Missionaries</English>
+		<French>[ICON_BULLET]Receive 2 Free Catholic Missionaries</French>
+		<German>[ICON_BULLET]Receive 2 Free Catholic Missionaries</German>
+		<Italian>[ICON_BULLET]Receive 2 Free Catholic Missionaries</Italian>
+		<Spanish>[ICON_BULLET]Receive 2 Free Catholic Missionaries</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AMERICAN_STATE_HOUSE</Tag>
+		<English>State House</English>
+		<French>State House</French>
+		<German>State House</German>
+		<Italian>State House</Italian>
+		<Spanish>State House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AMERICAN_STATE_HOUSE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_CHINAMPA</Tag>
+		<English>Chinampa</English>
+		<French>Chinampa</French>
+		<German>Chinampa</German>
+		<Italian>Chinampa</Italian>
+		<Spanish>Chinampa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_CHINAMPA_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI</Tag>
+		<English>Tzompantli</English>
+		<French>Tzompantli</French>
+		<German>Tzompantli</German>
+		<Italian>Tzompantli</Italian>
+		<Spanish>Tzompantli</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUTCH_TRADING_FORT</Tag>
+		<English>Trading Fort</English>
+		<French>Trading Fort</French>
+		<German>Trading Fort</German>
+		<Italian>Trading Fort</Italian>
+		<Spanish>Trading Fort</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DUTCH_TRADING_FORT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLISH_ASSEMBLY</Tag>
+		<English>Assembly</English>
+		<French>Assembly</French>
+		<German>Assembly</German>
+		<Italian>Assembly</Italian>
+		<Spanish>Assembly</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLISH_ASSEMBLY_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ASSEMBLY_HELP</Tag>
+		<English>[ICON_BULLET]-2 Local Instability</English>
+		<French>[ICON_BULLET]-2 Local Instability</French>
+		<German>[ICON_BULLET]-2 Local Instability</German>
+		<Italian>[ICON_BULLET]-2 Local Instability</Italian>
+		<Spanish>[ICON_BULLET]-2 Local Instability</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLISH_SAWMILL</Tag>
+		<English>Sawmill</English>
+		<French>Sawmill</French>
+		<German>Sawmill</German>
+		<Italian>Sawmill</Italian>
+		<Spanish>Sawmill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ENGLISH_SAWMILL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_SEIGNEUR</Tag>
+		<English>Seigneur</English>
+		<French>Seigneur</French>
+		<German>Seigneur</German>
+		<Italian>Seigneur</Italian>
+		<Spanish>Seigneur</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_SEIGNEUR_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INCA_KALLANKA</Tag>
+		<English>Kallanka</English>
+		<French>Kallanka</French>
+		<German>Kallanka</German>
+		<Italian>Kallanka</Italian>
+		<Spanish>Kallanka</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INCA_KALLANKA_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEETING_HALL</Tag>
+		<English>Meeting Hall</English>
+		<French>Meeting Hall</French>
+		<German>Meeting Hall</German>
+		<Italian>Meeting Hall</Italian>
+		<Spanish>Meeting Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEETING_HALL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICAN_LIENZO_CHARRO</Tag>
+		<English>Lienzo Charro</English>
+		<French>Lienzo Charro</French>
+		<German>Lienzo Charro</German>
+		<Italian>Lienzo Charro</Italian>
+		<Spanish>Lienzo Charro</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICAN_LIENZO_CHARRO_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAVERN</Tag>
+		<English>Tavern</English>
+		<French>Tavern</French>
+		<German>Tavern</German>
+		<Italian>Tavern</Italian>
+		<Spanish>Tavern</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAVERN_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRAND_CENTRAL_STATION</Tag>
+		<English>Grand Central Station</English>
+		<French>Grand Central Station</French>
+		<German>Grand Central Station</German>
+		<Italian>Grand Central Station</Italian>
+		<Spanish>Grand Central Station</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRAND_CENTRAL_STATION_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
+		<English>Supreme Court</English>
+		<French>Supreme Court</French>
+		<German>Supreme Court</German>
+		<Italian>Supreme Court</Italian>
+		<Spanish>Supreme Court</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALCATRAZ</Tag>
+		<English>Alcatraz</English>
+		<French>Alcatraz</French>
+		<German>Alcatraz</German>
+		<Italian>Alcatraz</Italian>
+		<Spanish>Alcatraz</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALCATRAZ_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY</Tag>
+		<English>Arecibo Observatory</English>
+		<French>Arecibo Observatory</French>
+		<German>Arecibo Observatory</German>
+		<Italian>Arecibo Observatory</Italian>
+		<Spanish>Arecibo Observatory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE</Tag>
+		<English>Biltmore Estate</English>
+		<French>Biltmore Estate</French>
+		<German>Biltmore Estate</German>
+		<Italian>Biltmore Estate</Italian>
+		<Spanish>Biltmore Estate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_PARK</Tag>
+		<English>Central Park</English>
+		<French>Central Park</French>
+		<German>Central Park</German>
+		<Italian>Central Park</Italian>
+		<Spanish>Central Park</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_PARK_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELLIS_ISLAND</Tag>
+		<English>Ellis Island</English>
+		<French>Ellis Island</French>
+		<German>Ellis Island</German>
+		<Italian>Ellis Island</Italian>
+		<Spanish>Ellis Island</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELLIS_ISLAND_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FANEUIL_HALL</Tag>
+		<English>Faneuil Hall</English>
+		<French>Faneuil Hall</French>
+		<German>Faneuil Hall</German>
+		<Italian>Faneuil Hall</Italian>
+		<Spanish>Faneuil Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FANEUIL_HALL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT_MCHENRY</Tag>
+		<English>Fort McHenry</English>
+		<French>Fort McHenry</French>
+		<German>Fort McHenry</German>
+		<Italian>Fort McHenry</Italian>
+		<Spanish>Fort McHenry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT_MCHENRY_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_QUARTER</Tag>
+		<English>French Quarter</English>
+		<French>French Quarter</French>
+		<German>French Quarter</German>
+		<Italian>French Quarter</Italian>
+		<Spanish>French Quarter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_QUARTER_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATEWAY_ARCH</Tag>
+		<English>Gateway Arch</English>
+		<French>Gateway Arch</French>
+		<German>Gateway Arch</German>
+		<Italian>Gateway Arch</Italian>
+		<Spanish>Gateway Arch</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATEWAY_ARCH_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATE_OF_THE_SUN</Tag>
+		<English>Gate of the Sun</English>
+		<French>Gate of the Sun</French>
+		<German>Gate of the Sun</German>
+		<Italian>Gate of the Sun</Italian>
+		<Spanish>Gate of the Sun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATE_OF_THE_SUN_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM</Tag>
+		<English>Hoover Dam</English>
+		<French>Hoover Dam</French>
+		<German>Hoover Dam</German>
+		<Italian>Hoover Dam</Italian>
+		<Spanish>Hoover Dam</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOSPICIO_CABANAS</Tag>
+		<English>Hospicio Cabanas</English>
+		<French>Hospicio Cabanas</French>
+		<German>Hospicio Cabanas</German>
+		<Italian>Hospicio Cabanas</Italian>
+		<Spanish>Hospicio Cabanas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOSPICIO_CABANAS_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HUEY_TEOCALLI</Tag>
+		<English>Huey Teocalli</English>
+		<French>Huey Teocalli</French>
+		<German>Huey Teocalli</German>
+		<Italian>Huey Teocalli</Italian>
+		<Spanish>Huey Teocalli</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HUEY_TEOCALLI_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LA_FORTALEZA</Tag>
+		<English>La Fortaleza</English>
+		<French>La Fortaleza</French>
+		<German>La Fortaleza</German>
+		<Italian>La Fortaleza</Italian>
+		<Spanish>La Fortaleza</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LA_FORTALEZA_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANZANA_JESUITICA</Tag>
+		<English>Manzana Jesuitica</English>
+		<French>Manzana Jesuitica</French>
+		<German>Manzana Jesuitica</German>
+		<Italian>Manzana Jesuitica</Italian>
+		<Spanish>Manzana Jesuitica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANZANA_JESUITICA_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO</Tag>
+		<English>Monticello</English>
+		<French>Monticello</French>
+		<German>Monticello</German>
+		<Italian>Monticello</Italian>
+		<Spanish>Monticello</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_RUSHMORE</Tag>
+		<English>Mount Rushmore</English>
+		<French>Mount Rushmore</French>
+		<German>Mount Rushmore</German>
+		<Italian>Mount Rushmore</Italian>
+		<Spanish>Mount Rushmore</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_RUSHMORE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON</Tag>
+		<English>Mount Vernon</English>
+		<French>Mount Vernon</French>
+		<German>Mount Vernon</German>
+		<Italian>Mount Vernon</Italian>
+		<Spanish>Mount Vernon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NASA</Tag>
+		<English>NASA</English>
+		<French>NASA</French>
+		<German>NASA</German>
+		<Italian>NASA</Italian>
+		<Spanish>NASA</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NASA_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN</Tag>
+		<English>Pyramid of the Sun</English>
+		<French>Pyramid of the Sun</French>
+		<German>Pyramid of the Sun</German>
+		<Italian>Pyramid of the Sun</Italian>
+		<Spanish>Pyramid of the Sun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN</Tag>
+		<English>Sacsayhuaman</English>
+		<French>Sacsayhuaman</French>
+		<German>Sacsayhuaman</German>
+		<Italian>Sacsayhuaman</Italian>
+		<Spanish>Sacsayhuaman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE</Tag>
+		<English>Sao Francisco Square</English>
+		<French>Sao Francisco Square</French>
+		<German>Sao Francisco Square</German>
+		<Italian>Sao Francisco Square</Italian>
+		<Spanish>Sao Francisco Square</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND</Tag>
+		<English>Serpent Mound</English>
+		<French>Serpent Mound</French>
+		<German>Serpent Mound</German>
+		<Italian>Serpent Mound</Italian>
+		<Spanish>Serpent Mound</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLATER_MILL</Tag>
+		<English>Slater Mill</English>
+		<French>Slater Mill</French>
+		<German>Slater Mill</German>
+		<Italian>Slater Mill</Italian>
+		<Spanish>Slater Mill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLATER_MILL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEMBLEQUE_AQUEDUCT</Tag>
+		<English>Tembleque Aqueduct</English>
+		<French>Tembleque Aqueduct</French>
+		<German>Tembleque Aqueduct</German>
+		<Italian>Tembleque Aqueduct</Italian>
+		<Spanish>Tembleque Aqueduct</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEMBLEQUE_AQUEDUCT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THE_STRIP</Tag>
+		<English>The Strip</English>
+		<French>The Strip</French>
+		<German>The Strip</German>
+		<Italian>The Strip</Italian>
+		<Spanish>The Strip</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THE_STRIP_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TLACHIHUALTEPETL</Tag>
+		<English>Tlachihualtepetl</English>
+		<French>Tlachihualtepetl</French>
+		<German>Tlachihualtepetl</German>
+		<Italian>Tlachihualtepetl</Italian>
+		<Spanish>Tlachihualtepetl</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TLACHIHUALTEPETL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WASHINGTON_MONUMENT</Tag>
+		<English>Washington Monument</English>
+		<French>Washington Monument</French>
+		<German>Washington Monument</German>
+		<Italian>Washington Monument</Italian>
+		<Spanish>Washington Monument</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WASHINGTON_MONUMENT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL</Tag>
+		<English>Independence Hall</English>
+		<French>Independence Hall</French>
+		<German>Independence Hall</German>
+		<Italian>Independence Hall</Italian>
+		<Spanish>Independence Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

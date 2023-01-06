@@ -106,7 +106,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -158,7 +158,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -251,7 +251,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -296,7 +296,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -356,7 +356,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -401,7 +401,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -446,7 +446,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -477,7 +477,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -523,7 +523,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -568,7 +568,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -628,7 +628,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -692,7 +692,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -737,7 +737,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -781,7 +781,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -890,7 +890,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDRAULICS</PrereqTech>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>

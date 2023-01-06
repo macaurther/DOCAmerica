@@ -609,7 +609,7 @@
 			<FontButtonIndex>22</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_SHEEP_LLAMA</Type>
+			<Type>ART_DEF_BONUS_LLAMA</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Terrain/Resources/llama/llama.nif</NIF>
@@ -685,7 +685,7 @@
 			<FontButtonIndex>18</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_CRAB_SHRIMP</Type>
+			<Type>ART_DEF_BONUS_CRUSTACEANS</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.1</fInterfaceScale>
 			<NIF>Art/Terrain/Resources/Shrimp/Shrimp.nif</NIF>

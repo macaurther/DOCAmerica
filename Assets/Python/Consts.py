@@ -463,7 +463,7 @@ iCombinedArms, 	iTriangularTrade, iExploitation, iTimekeeping, 	iEducation, 	iPo
 iTactics,		iCurrency,		iGeography,		iAcademia,		iUrbanPlanning,	iStatecraft,	iSocialContract,
 iReplaceableParts, iFreeMarket,	iNewspapers,	iScientificMethod, iArchitecture, iSociology,	iHeritage,
 iRegiments, 	iBonds,			iPostalService,	iMeteorology,	iSurveying,		iRepresentation, iIndependence,
-iMetallurgy,	iProtectionism,	iHydraulics,	iPhysics,		iGeology,		iRightsOfMan,	iFederalism,
+iMetallurgy,	iProtectionism,	iHydrology,		iPhysics,		iGeology,		iRightsOfMan,	iFederalism,
 iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iPioneering,	iCivilLiberties, iNationalism,
 iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iEmancipation, 	iImperialism,
 iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
@@ -519,7 +519,7 @@ iWork, iMissionary) = range(iNumUnitRoles)
 iNumBonuses = 58
 #				2				3				4				5				6				7				8				9				10
 (iAluminium, 	iAmber,			iCamel, 		iCitrus,		iCoal, 			iCopper, 		iDates,			iHorse, 		iIron, 			iMarble, 
-iOil, 			iStone, 		iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iShrimp,		iDeer, 
+iOil, 			iStone, 		iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 
 iFish, 			iPig, 			iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,
 iDye, 			iCochineal,		iFur,			iGems, 			iGold, 			iIncense, 		iIvory, 		iJade,			iMillet,		iObsidian,
 iOlives,		iOpium,			iPearls, 		iRareEarths,	iRubber,		iSalt,			iSilk, 			iSilver, 		iSpices,		iSugar,

@@ -18,6 +18,10 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_ERAS				(ERA_ATOMIC+1)
 
+#define BUILDING_HEADRIGHT		((BuildingTypes)GC.getInfoTypeForString("BUILDING_HEADRIGHT"))						// MacAurther
+#define BUILDING_SLAVE_MARKET	((BuildingTypes)GC.getInfoTypeForString("BUILDING_SLAVE_MARKET"))					// MacAurther
+#define BUILDING_WHEELWRIGHT	((BuildingTypes)GC.getInfoTypeForString("BUILDING_WHEELWRIGHT"))					// MacAurther
+#define BUILDING_IMMIGRATION_OFFICE	((BuildingTypes)GC.getInfoTypeForString("BUILDING_IMMIGRATION_OFFICE"))			// MacAurther
 #define PAGAN_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_PAGAN_TEMPLE"))
 #define CATHOLIC_TEMPLE			((BuildingTypes)GC.getInfoTypeForString("BUILDING_CATHOLIC_TEMPLE"))				// MacAurther
 #define BUILDING_PALACE			((BuildingClassTypes)0)
@@ -120,7 +124,7 @@ enum DoCTechs
 
 	METALLURGY,
 	PROTECTIONISM,
-	HYDRAULICS,
+	HYDROLOGY,
 	PHYSICS,
 	GEOLOGY,
 	RIGHTS_OF_MAN,

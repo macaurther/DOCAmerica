@@ -22699,7 +22699,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=69
-	BonusType=BONUS_CRAB_SHRIMP
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -26032,7 +26032,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=43
-	BonusType=BONUS_SHEEP_LLAMA
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -27204,7 +27204,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=38
-	BonusType=BONUS_SHEEP_LLAMA
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -28948,7 +28948,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=20
-	BonusType=BONUS_SHEEP_LLAMA
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -29036,7 +29036,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=36
-	BonusType=BONUS_SHEEP_LLAMA
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -29615,7 +29615,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=27
-	BonusType=BONUS_SHEEP_LLAMA
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -31494,7 +31494,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=32
-	BonusType=BONUS_SHEEP_LLAMA
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
@@ -37285,7 +37285,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=85
-	BonusType=BONUS_CRAB_SHRIMP
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot

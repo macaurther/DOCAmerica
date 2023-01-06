@@ -2121,19 +2121,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_HYDRAULICS</Tag>
-		<English>Hydraulics</English>
-		<French>
-			<Text>Hydraulique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Hydraulics</German>
-		<Italian>Hydraulics</Italian>
-		<Spanish>Hydraulics</Spanish>
+		<Tag>TXT_KEY_TECH_HYDROLOGY</Tag>
+		<English>Hydrology</English>
+		<French>Hydrology</French>
+		<German>Hydrology</German>
+		<Italian>Hydrology</Italian>
+		<Spanish>Hydrology</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_HYDRAULICS_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_HYDROLOGY_QUOTE</Tag>
 		<English>"Water is the driving force of all nature."[PARAGRAPH:2]- Leonardo da Vinci</English>
 		<French>"L'eau est la force motrice de toute la nature."[PARAGRAPH:2]- L&#233;onard de Vinci</French>
 		<German>"Water is the driving force of all nature."[PARAGRAPH:2]- Leonardo da Vinci</German>
@@ -2141,8 +2137,8 @@
 		<Spanish>"Water is the driving force of all nature."[PARAGRAPH:2]- Leonardo da Vinci</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_HYDRAULICS_PEDIA</Tag>
-		<English>The word "hydraulics" comes from a root word for "water". Hydraulic technology manipulates water or another fluid, for a variety of purposes.[NEWLINE][NEWLINE]Civilization is intimately tied to water. People need water to live, to raise crops, to move cargo along rivers, canals, and the sea. As the understanding of water and water pressure became more complete and mathematical in late pre-industrial times, traditional projects of water-manipulation grew more ambitious. Many civilizations built or improved great canals, for instance, making artificial waterways where nature did not provide an easy path. In areas where river valleys posed a flooding hazard, great levees and dikes were built to stem the flow of water. Existing innovations like waterwheels were used on a larger and larger scale, to provide greater reserves of power for manufacturing.</English>
+		<Tag>TXT_KEY_TECH_HYDROLOGY_PEDIA</Tag>
+		<English>The word "Hydrology" comes from a root word for "water". Hydraulic technology manipulates water or another fluid, for a variety of purposes.[NEWLINE][NEWLINE]Civilization is intimately tied to water. People need water to live, to raise crops, to move cargo along rivers, canals, and the sea. As the understanding of water and water pressure became more complete and mathematical in late pre-industrial times, traditional projects of water-manipulation grew more ambitious. Many civilizations built or improved great canals, for instance, making artificial waterways where nature did not provide an easy path. In areas where river valleys posed a flooding hazard, great levees and dikes were built to stem the flow of water. Existing innovations like waterwheels were used on a larger and larger scale, to provide greater reserves of power for manufacturing.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
