@@ -10135,7 +10135,7 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 	int iWeight = kBuilding.getAIWeight();
 	int iPreference = kPlayer.getBuildingClassPreference((BuildingClassTypes)kBuilding.getBuildingClassType());
 
-	if (eBuilding == TEMPLE_OF_KUKULKAN)
+	if (eBuilding == (BuildingTypes)BUILDING_TEMPLE_OF_KUKULKAN)
 	{
 		int iRainforestCount = 0;
 		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
@@ -10151,7 +10151,7 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 			return -MAX_INT;
 		}
 	}
-	else if (eBuilding == MACHU_PICCHU)
+	else if (eBuilding == (BuildingTypes)BUILDING_MACHU_PICCHU)
 	{
 		int iPeakCount = 0;
 		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
@@ -10167,7 +10167,14 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 			return -MAX_INT;
 		}
 	}
-	else if (eBuilding == CHAPULTEPEC_CASTLE)
+	else if (eBuilding == (BuildingTypes)BUILDING_CENTRAL_PARK)
+	{
+		if (goodHealth() - badHealth() < 4)
+		{
+			return -MAX_INT;
+		}
+	}
+	else if (eBuilding == (BuildingTypes)BUILDING_CHAPULTEPEC_CASTLE)
 	{
 		if (getCultureLevel() < 3)
 		{

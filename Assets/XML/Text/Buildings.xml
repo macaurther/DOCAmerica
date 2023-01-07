@@ -3042,6 +3042,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE_HELP</Tag>
+		<English>[ICON_BULLET]+50% building speed for Railroads</English>
+		<French>[ICON_BULLET]+50% building speed for Railroads</French>
+		<German>[ICON_BULLET]+50% building speed for Railroads</German>
+		<Italian>[ICON_BULLET]+50% building speed for Railroads</Italian>
+		<Spanish>[ICON_BULLET]+50% building speed for Railroads</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CENTRAL_PARK</Tag>
 		<English>Central Park</English>
 		<French>Central Park</French>
@@ -3058,6 +3066,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_PARK_HELP</Tag>
+		<English>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</English>
+		<French>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</French>
+		<German>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</German>
+		<Italian>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</Italian>
+		<Spanish>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ELLIS_ISLAND</Tag>
 		<English>Ellis Island</English>
 		<French>Ellis Island</French>
@@ -3072,6 +3088,14 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELLIS_ISLAND_HELP</Tag>
+		<English>+50% Immigration in all cities</English>
+		<French>+50% Immigration in all cities</French>
+		<German>+50% Immigration in all cities</German>
+		<Italian>+50% Immigration in all cities</Italian>
+		<Spanish>+50% Immigration in all cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FANEUIL_HALL</Tag>
@@ -3122,6 +3146,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_QUARTER_HELP</Tag>
+		<English>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</English>
+		<French>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</French>
+		<German>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</German>
+		<Italian>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</Italian>
+		<Spanish>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GATEWAY_ARCH</Tag>
 		<English>Gateway Arch</English>
 		<French>Gateway Arch</French>
@@ -3170,6 +3202,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM_HELP</Tag>
+		<English>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</English>
+		<French>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</French>
+		<German>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</German>
+		<Italian>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</Italian>
+		<Spanish>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HOSPICIO_CABANAS</Tag>
 		<English>Hospicio Cabanas</English>
 		<French>Hospicio Cabanas</French>
@@ -3184,6 +3224,14 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOSPICIO_CABANAS_HELP</Tag>
+		<English>[ICON_BULLET]+25% Food kept on City Growth in all cities</English>
+		<French>[ICON_BULLET]+25% Food kept on City Growth in all cities</French>
+		<German>[ICON_BULLET]+25% Food kept on City Growth in all cities</German>
+		<Italian>[ICON_BULLET]+25% Food kept on City Growth in all cities</Italian>
+		<Spanish>[ICON_BULLET]+25% Food kept on City Growth in all cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HUEY_TEOCALLI</Tag>
@@ -3250,6 +3298,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO_HELP</Tag>
+		<English>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
+		<French>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
+		<German>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
+		<Italian>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
+		<Spanish>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOUNT_RUSHMORE</Tag>
 		<English>Mount Rushmore</English>
 		<French>Mount Rushmore</French>
@@ -3280,6 +3336,19 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_HELP</Tag>
+		<English>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
+		<French>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
+		<German>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
+		<Italian>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
+		<Spanish>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NASA</Tag>
@@ -3314,6 +3383,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN_HELP</Tag>
+		<English>[ICON_BULLET]Golden Ages require 1 fewer Great Person</English>
+		<French>[ICON_BULLET]Golden Ages require 1 fewer Great Person</French>
+		<German>[ICON_BULLET]Golden Ages require 1 fewer Great Person</German>
+		<Italian>[ICON_BULLET]Golden Ages require 1 fewer Great Person</Italian>
+		<Spanish>[ICON_BULLET]Golden Ages require 1 fewer Great Person</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN</Tag>
 		<English>Sacsayhuaman</English>
 		<French>Sacsayhuaman</French>
@@ -3330,6 +3407,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN_HELP</Tag>
+		<English>[ICON_BULLET]Military Units can enter Peaks</English>
+		<French>[ICON_BULLET]Military Units can enter Peaks</French>
+		<German>[ICON_BULLET]Military Units can enter Peaks</German>
+		<Italian>[ICON_BULLET]Military Units can enter Peaks</Italian>
+		<Spanish>[ICON_BULLET]Military Units can enter Peaks</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE</Tag>
 		<English>Sao Francisco Square</English>
 		<French>Sao Francisco Square</French>
@@ -3344,6 +3429,14 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_HELP</Tag>
+		<English>[ICON_BULLET]-33% Civic Upkeep</English>
+		<French>[ICON_BULLET]-33% Civic Upkeep</French>
+		<German>[ICON_BULLET]-33% Civic Upkeep</German>
+		<Italian>[ICON_BULLET]-33% Civic Upkeep</Italian>
+		<Spanish>[ICON_BULLET]-33% Civic Upkeep</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND</Tag>
@@ -3410,6 +3503,14 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THE_STRIP_HELP</Tag>
+		<English>[ICON_BULLET]Requires 10 Desert tiles in city radius</English>
+		<French>[ICON_BULLET]Requires 10 Desert tiles in city radius</French>
+		<German>[ICON_BULLET]Requires 10 Desert tiles in city radius</German>
+		<Italian>[ICON_BULLET]Requires 10 Desert tiles in city radius</Italian>
+		<Spanish>[ICON_BULLET]Requires 10 Desert tiles in city radius</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TLACHIHUALTEPETL</Tag>
 		<English>Tlachihualtepetl</English>
 		<French>Tlachihualtepetl</French>
@@ -3456,6 +3557,51 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT</Tag>
+		<English>West Point</English>
+		<French>West Point</French>
+		<German>West Point</German>
+		<Italian>West Point</Italian>
+		<Spanish>West Point</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT_HELP</Tag>
+		<English>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</English>
+		<French>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</French>
+		<German>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</German>
+		<Italian>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Italian>
+		<Spanish>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_HELP</Tag>
+		<English>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</English>
+		<French>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</French>
+		<German>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</German>
+		<Italian>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</Italian>
+		<Spanish>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PENTAGON_HELP</Tag>
+		<English>[ICON_BULLET]+50% buildling speed for Highway</English>
+		<French>[ICON_BULLET]+50% buildling speed for Highway</French>
+		<German>[ICON_BULLET]+50% buildling speed for Highway</German>
+		<Italian>[ICON_BULLET]+50% buildling speed for Highway</Italian>
+		<Spanish>[ICON_BULLET]+50% buildling speed for Highway</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

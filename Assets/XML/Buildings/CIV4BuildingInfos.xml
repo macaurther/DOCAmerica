@@ -1612,6 +1612,8 @@
 			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
+			<PrereqCivic>CIVIC_SLAVERY</PrereqCivic>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1764,6 +1766,7 @@
 			<Strategy>TXT_KEY_BUILDING_LUMBERMILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1802,6 +1805,7 @@
 			<Strategy>TXT_KEY_BUILDING_ENGLISH_SAWMILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2529,6 +2533,7 @@
 			<Help>TXT_KEY_BUILDING_WHEELWRIGHT_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<PrereqTech>TECH_SURVEYING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2815,6 +2820,7 @@
 			<Strategy>TXT_KEY_BUILDING_SILVERSMITH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<PrereqTech>TECH_BONDS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3563,6 +3569,7 @@
 			<Strategy>TXT_KEY_BUILDING_ARSENAL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<PrereqTech>TECH_BALLISTICS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -8122,27 +8129,50 @@
 			<Description>TXT_KEY_BUILDING_SACSAYHUAMAN</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SACSAYHUAMAN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SACSAYHUAMAN_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_SACSAYHUAMAN_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>350</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iDefense>50</iDefense>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8158,7 +8188,6 @@
 			<Strategy>TXT_KEY_BUILDING_HUEY_TEOCALLI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
@@ -8215,7 +8244,6 @@
 			<Strategy>TXT_KEY_BUILDING_TLACHIHUALTEPETL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
@@ -8335,7 +8363,7 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>6</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
@@ -8378,7 +8406,7 @@
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>300</iCost>
+			<iCost>250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8390,7 +8418,7 @@
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
+				<iCommerce>6</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
@@ -8418,8 +8446,8 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AQUA_APPIA</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_ENGINEERING</PrereqTech>
-			<ObsoleteTech>TECH_HYDROLOGY</ObsoleteTech>
+			<PrereqTech>TECH_GOVERNORS</PrereqTech>
+			<ObsoleteTech>TECH_ELECTRICITY</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8471,26 +8499,48 @@
 			<Strategy>TXT_KEY_BUILDING_LA_FORTALEZA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_GOVERNORS</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
+			<bWater>1</bWater>
+			<iCoastalTradeRoutes>1</iCoastalTradeRoutes>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>400</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iDefense>50</iDefense>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</CommerceChanges>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8504,20 +8554,17 @@
 			<Description>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<PrereqTech>TECH_POLITICS</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>500</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8525,6 +8572,16 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -8590,18 +8647,16 @@
 			<Strategy>TXT_KEY_BUILDING_MANZANA_JESUITICA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
+			<StateReligion>RELIGION_CATHOLICISM</StateReligion>
+			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_ACADEMIA</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>400</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8609,7 +8664,32 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>3</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<SpecialistYieldChanges>
+				<SpecialistYieldChange>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistYieldChange>
+			</SpecialistYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8623,20 +8703,17 @@
 			<Description>TXT_KEY_BUILDING_INDEPENDENCE_HALL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_INDEPENDENCE_HALL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_INDEPENDENCE</PrereqTech>
+			<FreeBuilding>BUILDINGCLASS_COURTHOUSE</FreeBuilding>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>800</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8644,6 +8721,22 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -8658,20 +8751,17 @@
 			<Description>TXT_KEY_BUILDING_HOSPICIO_CABANAS</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HOSPICIO_CABANAS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HOSPICIO_CABANAS_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Help>TXT_KEY_BUILDING_HOSPICIO_CABANAS_HELP</Help>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_SCIENTIFIC_METHOD</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>800</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8679,7 +8769,23 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8693,20 +8799,17 @@
 			<Description>TXT_KEY_BUILDING_MOUNT_VERNON</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MOUNT_VERNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MOUNT_VERNON_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_BALANCE_OF_POWER</PrereqTech>
+			<PrereqBonuses>BONUS_TOBACCO</PrereqBonuses>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>600</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8714,7 +8817,23 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_ESTATE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8728,20 +8847,18 @@
 			<Description>TXT_KEY_BUILDING_MONTICELLO</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MONTICELLO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_RIGHTS_OF_MAN</PrereqTech>
+			<PrereqBonuses>BONUS_TOBACCO</PrereqBonuses>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+			<bNoUnhappiness>1</bNoUnhappiness>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>600</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8749,7 +8866,23 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_ESTATE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8765,18 +8898,15 @@
 			<Strategy>TXT_KEY_BUILDING_SLATER_MILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_PHYSICS</PrereqTech>
+			<PrereqBonuses>BONUS_COTTON</PrereqBonuses>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>800</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8784,6 +8914,22 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<FreeSpecialistCounts>
+				<FreeSpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iFreeSpecialistCount>2</iFreeSpecialistCount>
+				</FreeSpecialistCount>
+			</FreeSpecialistCounts>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -8803,7 +8949,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_CHAPULTEPEC_CASTLE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_CHAPULTEPEC_CASTLE</MovieDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_NATIONALISM</PrereqTech>
+			<PrereqTech>TECH_ARCHITECTURE</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8853,18 +8999,14 @@
 			<Strategy>TXT_KEY_BUILDING_WEST_POINT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>600</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8872,6 +9014,16 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -8888,26 +9040,51 @@
 			<Strategy>TXT_KEY_BUILDING_FORT_MCHENRY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqTech>TECH_PROTECTIONISM</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>650</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iEnemyWarWearinessModifier>100</iEnemyWarWearinessModifier>
+			<iDefense>25</iDefense>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_STAR_FORT</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8921,28 +9098,41 @@
 			<Description>TXT_KEY_BUILDING_WASHINGTON_MONUMENT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_WASHINGTON_MONUMENT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WASHINGTON_MONUMENT_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_MODERN</MaxStartEra>
+			<PrereqTech>TECH_GEOLOGY</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>600</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iGoldenAgeModifier>50</iGoldenAgeModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>10</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_MARBLE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8956,28 +9146,41 @@
 			<Description>TXT_KEY_BUILDING_FANEUIL_HALL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FANEUIL_HALL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FANEUIL_HALL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
+			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>500</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_MEETING_HALL</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -8991,13 +9194,14 @@
 			<Description>TXT_KEY_BUILDING_STATUE_OF_LIBERTY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STATUE_OF_LIBERTY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_STATUE_OF_LIBERTY</MovieDefineTag>
-			<PrereqCivic>CIVIC_DEMOCRACY</PrereqCivic>
-			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
+			<PrereqCivic>CIVIC_OPPORTUNITY</PrereqCivic>
+			<MaxStartEra>ERA_MODERN</MaxStartEra>
 			<PrereqTech>TECH_REPRESENTATION</PrereqTech>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bWater>1</bWater>
@@ -9007,7 +9211,6 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>15</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
-			<iGlobalFreeSpecialist>1</iGlobalFreeSpecialist>
 			<iAsset>16</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -9051,28 +9254,41 @@
 			<Description>TXT_KEY_BUILDING_CENTRAL_PARK</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CENTRAL_PARK_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_CENTRAL_PARK_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Help>TXT_KEY_BUILDING_CENTRAL_PARK_HELP</Help>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>1000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iHealth>5</iHealth>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_PARK</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -9086,20 +9302,17 @@
 			<Description>TXT_KEY_BUILDING_ELLIS_ISLAND</Description>
 			<Civilopedia>TXT_KEY_BUILDING_ELLIS_ISLAND_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ELLIS_ISLAND_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Help>TXT_KEY_BUILDING_ELLIS_ISLAND_HELP</Help>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
+			<bWater>1</bWater>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>1250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9107,7 +9320,27 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>8</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_HARBOR</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_IMMIGRATION_OFFICE</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -9160,6 +9393,10 @@
 					<BonusType>BONUS_STONE</BonusType>
 					<iProductonModifier>50</iProductonModifier>
 				</BonusProductionModifier>
+				<BonusProductionModifier>
+					<BonusType>BONUS_IRON</BonusType>
+					<iProductonModifier>50</iProductonModifier>
+				</BonusProductionModifier>
 			</BonusProductionModifiers>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
@@ -9182,28 +9419,28 @@
 			<Civilopedia>TXT_KEY_BUILDING_FRONTENAC_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FRONTENAC_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_FRONTENAC_HELP</Help>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRONTENAC</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_FRONTENAC</MovieDefineTag>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
 			<PrereqTech>TECH_REFINING</PrereqTech>
-			<FreeBuilding>BUILDINGCLASS_RAILWAY_STATION</FreeBuilding>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<iAIWeight>100</iAIWeight>
-			<iCost>1000</iCost>
+			<iCost>1250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>16</iAsset>
+			<iGlobalFreeSpecialist>1</iGlobalFreeSpecialist>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>6</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
@@ -9215,12 +9452,6 @@
 				<bCommerceChangeOriginalOwner>0</bCommerceChangeOriginalOwner>
 				<bCommerceChangeOriginalOwner>1</bCommerceChangeOriginalOwner>
 			</CommerceChangeOriginalOwners>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_RAILWAY_STATION</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<ConstructSound>AS2D_BUILD_CASTLE</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
@@ -9241,7 +9472,7 @@
 			<Description>TXT_KEY_BUILDING_MENLO_PARK</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MENLO_PARK_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MENLO_PARK_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MENLO_PARK</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_MENLO_PARK</MovieDefineTag>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
@@ -9272,10 +9503,14 @@
 				<bCommerceChangeOriginalOwner>0</bCommerceChangeOriginalOwner>
 				<bCommerceChangeOriginalOwner>1</bCommerceChangeOriginalOwner>
 			</CommerceChangeOriginalOwners>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
 			<PowerYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>25</iYield>
+				<iYield>50</iYield>
 			</PowerYieldModifiers>
 			<ConstructSound>AS2D_BUILD_LABORATORY</ConstructSound>
 			<Flavors>
@@ -9295,20 +9530,18 @@
 			<Description>TXT_KEY_BUILDING_BILTMORE_ESTATE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_BILTMORE_ESTATE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_BILTMORE_ESTATE_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Help>TXT_KEY_BUILDING_BILTMORE_ESTATE_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_MODERN</MaxStartEra>
+			<PrereqTech>TECH_RAILROAD</PrereqTech>
+			<FreeBuilding>BUILDINGCLASS_RAILWAY_STATION</FreeBuilding>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>1000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9316,7 +9549,23 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_RAILWAY_STATION</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -9330,20 +9579,17 @@
 			<Description>TXT_KEY_BUILDING_FRENCH_QUARTER</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FRENCH_QUARTER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FRENCH_QUARTER_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_FRENCH_QUARTER_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<MaxStartEra>ERA_MODERN</MaxStartEra>
+			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>1200</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9351,6 +9597,16 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>8</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -9515,20 +9771,18 @@
 			<Description>TXT_KEY_BUILDING_HOOVER_DAM</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HOOVER_DAM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HOOVER_DAM_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Help>TXT_KEY_BUILDING_HOOVER_DAM_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+			<bPower>1</bPower>
+			<bRiver>1</bRiver>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>2000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9536,6 +9790,16 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -9552,18 +9816,13 @@
 			<Strategy>TXT_KEY_BUILDING_ALCATRAZ_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<PrereqTech>TECH_PSYCHOLOGY</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>1000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9571,7 +9830,25 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</CommerceChanges>
+			<SpecialistExtraCommerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</SpecialistExtraCommerces>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -9586,26 +9863,32 @@
 			<Civilopedia>TXT_KEY_BUILDING_MOUNT_RUSHMORE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MOUNT_RUSHMORE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<ArtDefineTag>ART_DEF_BUILDING_MT_RUSHMORE</ArtDefineTag>
+			<PrereqTech>TECH_POWER_PROJECTION</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>1000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iGlobalWarWearinessModifier>-50</iGlobalWarWearinessModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -9813,20 +10096,15 @@
 			<Description>TXT_KEY_BUILDING_GATEWAY_ARCH</Description>
 			<Civilopedia>TXT_KEY_BUILDING_GATEWAY_ARCH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GATEWAY_ARCH_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<PrereqTech>TECH_TOURISM</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>2000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9927,18 +10205,14 @@
 			<Description>TXT_KEY_BUILDING_THE_STRIP</Description>
 			<Civilopedia>TXT_KEY_BUILDING_THE_STRIP_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_THE_STRIP_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Help>TXT_KEY_BUILDING_THE_STRIP_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
 			<iCost>450</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
@@ -9947,7 +10221,33 @@
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
+			<iGlobalHappiness>2</iGlobalHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>6</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<PowerYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>50</iYield>
+			</PowerYieldModifiers>
+			<SpecialistYieldChanges>
+				<SpecialistYieldChange>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistYieldChange>
+			</SpecialistYieldChanges>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
@@ -9962,6 +10262,7 @@
 			<Description>TXT_KEY_BUILDING_PENTAGON</Description>
 			<Civilopedia>TXT_KEY_BUILDING_PENTAGON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_PENTAGON_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_PENTAGON_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PENTAGON</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_PENTAGON</MovieDefineTag>
@@ -10079,20 +10380,15 @@
 			<Description>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
-			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_EXPLORATION</ObsoleteTech>
-			<PrereqBonuses>BONUS_CORN</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<PrereqTech>TECH_RADAR</PrereqTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
-			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>2000</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

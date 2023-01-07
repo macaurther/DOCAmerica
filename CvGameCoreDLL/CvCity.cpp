@@ -326,8 +326,14 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeReligionYieldChange(GET_PLAYER(eOwner).getStateReligion(), (YieldTypes)iI, GET_PLAYER(eOwner).getReligionYieldChange((YieldTypes)iI));
 	}
 
+	// Leoreth: Prambanan effect: +25% food kept on city growth -> MacAurther: Hospicio Cabanas Effect
+	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_HOSPICIO_CABANAS))
+	{
+		changeMaxFoodKeptPercent(25);
+	}
+
 	// Leoreth: Las Lajas Sanctuary effect: +10% heal rate in all cities
-	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)LAS_LAJAS_SANCTUARY))
+	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY))
 	{
 		changeHealRate(10);
 	}
@@ -2286,13 +2292,8 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
-	if (eBuilding == BUILDING_SLAVE_MARKET && !GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
-	{
-		return false;
-	}
-
 	// Leoreth: Guadalupe Basilica needs to be on different continent than Catholic holy city
-	if (eBuilding == GUADALUPE_BASILICA)
+	if (eBuilding == (BuildingTypes)BUILDING_GUADALUPE_BASILICA)
 	{
 		CvCity* pHolyCity = GC.getGame().getHolyCity(CATHOLICISM);
 		if (pHolyCity == NULL)
@@ -2301,6 +2302,44 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 
 		if (getArea() == pHolyCity->getArea())
+		{
+			return false;
+		}
+	}
+
+	// Leoreth: Burj Khalifa -> MacAurther: The Strip requires ten desert tiles
+	if (eBuilding == (BuildingTypes)BUILDING_THE_STRIP)
+	{
+		int iNumDesertTiles = 0;
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			if (getCityIndexPlot(iI)->getTerrainType() == TERRAIN_DESERT)
+			{
+				iNumDesertTiles++;
+				break;
+			}
+		}
+
+		if (iNumDesertTiles < 10)
+		{
+			return false;
+		}
+	}
+
+	// MacAurther: Mount Vernon and Monticello need a Plantation/Slave Plantation in city radius
+	if (eBuilding == BUILDING_MOUNT_VERNON || eBuilding == BUILDING_MONTICELLO)
+	{
+		bool bFound = false;
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			if (getCityIndexPlot(iI)->getImprovementType() == IMPROVEMENT_PLANTATION || getCityIndexPlot(iI)->getImprovementType() == IMPROVEMENT_SLAVE_PLANTATION)
+			{
+				bFound = true;
+				break;
+			}
+		}
+
+		if (!bFound)
 		{
 			return false;
 		}
@@ -2743,7 +2782,7 @@ int CvCity::getProductionExperience(UnitTypes eUnit)
 	// Leoreth: Chapultepec Castle
 	if (eUnit != NO_UNIT)
 	{
-		if (GC.getUnitInfo(eUnit).getCombat() > 0 && isHasBuildingEffect((BuildingTypes)CHAPULTEPEC_CASTLE))
+		if (GC.getUnitInfo(eUnit).getCombat() > 0 && isHasBuildingEffect((BuildingTypes)BUILDING_CHAPULTEPEC_CASTLE))
 		{
 			iExperience += getCultureLevel();
 		}
@@ -4327,7 +4366,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			changeBuildingGoodHappiness(GC.getBuildingInfo(eBuilding).getHappiness() * iChange);
 			
 			// Latin America RP
-			if(getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(getCivilizationType(), CATHOLIC_TEMPLE))
+			if(getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_CATHOLIC_TEMPLE))
 			{
 				changeBuildingGoodHappiness(3 * iChange);
 			}
@@ -4392,8 +4431,14 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		{
 			changeMaxSpecialistCount(((SpecialistTypes)iI), GC.getBuildingInfo(eBuilding).getSpecialistCount(iI) * iChange);
 
-			// Tiwanaku UP: +1 Priest Slot from Pagan Temples.
-			if (getCivilizationType() == TIWANAKU && (SpecialistTypes)iI == SPECIALIST_PRIEST && eBuilding == getUniqueBuilding(getCivilizationType(), PAGAN_TEMPLE))
+			// 1SDAN?: Tiwanaku UP: +1 Priest Slot from Pagan Temples.
+			if (getCivilizationType() == TIWANAKU && (SpecialistTypes)iI == SPECIALIST_PRIEST && eBuilding == getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_PAGAN_TEMPLE))
+			{
+				changeMaxSpecialistCount(((SpecialistTypes)iI), iChange);
+			}
+
+			// 1SDAN?: Serpent Mound: +1 Merchant slot from Parks
+			if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && eBuilding == getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_COMMON))
 			{
 				changeMaxSpecialistCount(((SpecialistTypes)iI), iChange);
 			}
@@ -4477,7 +4522,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		int iLoop;
 
 		// Temple of Kukulkan
-		if (eBuilding == TEMPLE_OF_KUKULKAN)
+		if (eBuilding == (BuildingTypes)BUILDING_TEMPLE_OF_KUKULKAN)
 		{
 			updateYield();
 		}
@@ -5255,6 +5300,12 @@ int CvCity::happyLevel(bool bSpecial) const
 	if (getHappinessTimer() > 0)
 	{
 		iHappiness += GC.getDefineINT("TEMP_HAPPY");
+	}
+
+	// Leoreth: Shalimar Gardens effect -> MacAurther: Central Park effect
+	if (bSpecial && isHasBuildingEffect((BuildingTypes)BUILDING_CENTRAL_PARK))
+	{
+		iHappiness += std::max(0, goodHealth(false) - badHealth());
 	}
 
 	return std::max(0, iHappiness);
@@ -10142,6 +10193,12 @@ int CvCity::getBaseCommerceRateTimes100(CommerceTypes eIndex) const
 	iBaseCommerceRate += 100 * (getBuildingCommerce(eIndex) + getSpecialistCommerce(eIndex) + getReligionCommerce(eIndex) + getCorporationCommerce(eIndex) + GET_PLAYER(getOwnerINLINE()).getFreeCityCommerce(eIndex));
 	iBaseCommerceRate += 100 * countSatellites() * GET_PLAYER(getOwnerINLINE()).getSatelliteExtraCommerce(eIndex);
 
+	// MacAurther: Statue of Liberty Effect
+	if (eIndex == COMMERCE_CULTURE && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
+	{
+		iBaseCommerceRate += 100 * getImmigrationRate();
+	}
+
 	return iBaseCommerceRate;
 }
 
@@ -10299,7 +10356,7 @@ int CvCity::getBuildingCommerceByBuilding(CommerceTypes eIndex, BuildingTypes eB
 				}
 
 				// Leoreth: Guadalupe Basilica effect
-				if (eBuilding == GUADALUPE_BASILICA && eIndex == COMMERCE_GOLD)
+				if (eBuilding == (BuildingTypes)BUILDING_GUADALUPE_BASILICA && eIndex == COMMERCE_GOLD)
 				{
 					iCommerce += std::min(iShrineLimit, GC.getMap().getArea(getArea())->countHasReligion(CATHOLICISM));
 				}
@@ -16037,7 +16094,7 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 	// if both the river and water flags are set, we require one of the two conditions, not both
 	if (GC.getBuildingInfo(eBuilding).isWater())
 	{
-		if (eBuilding == GOLDEN_GATE_BRIDGE || eBuilding == BROOKLYN_BRIDGE)
+		if (eBuilding == (BuildingTypes)BUILDING_GOLDEN_GATE_BRIDGE || eBuilding == (BuildingTypes)BUILDING_BROOKLYN_BRIDGE)
 		{
 			if (!plot()->isRiver() || !plot()->isCoastalLand(GC.getBuildingInfo(eBuilding).getMinAreaSize()))
 			{
@@ -18112,9 +18169,9 @@ void CvCity::spreadReligion(ReligionTypes eReligion, bool bMissionary)
 		removeReligion(eDisappearingReligion);
 	}
 
-	if (isHasRealBuilding(getUniqueBuilding(getCivilizationType(), PAGAN_TEMPLE)) && !GC.getReligionInfo(eReligion).isLocal())
+	if (isHasRealBuilding(getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_PAGAN_TEMPLE)) && !GC.getReligionInfo(eReligion).isLocal())
 	{
-		setHasRealBuilding(getUniqueBuilding(getCivilizationType(), PAGAN_TEMPLE), false);
+		setHasRealBuilding(getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_PAGAN_TEMPLE), false);
 
 		ReligionTypes eStateReligion = GET_PLAYER(getOwnerINLINE()).getStateReligion();
 		if (eStateReligion != NO_RELIGION && eStateReligion == eReligion)
@@ -19061,7 +19118,13 @@ int CvCity::calculateImmigrationRate()
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MULTICULTURALISM))
 	{
-		iImmigrationRate += (getBaseCommerceRate(COMMERCE_CULTURE) / getPopulation()) - 3;
+		int iBaseCulture = getBaseCommerceRate(COMMERCE_CULTURE);
+		// Don't let Immigration commerce feedback
+		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
+		{
+			iBaseCulture -= getImmigrationRate();
+		}
+		iImmigrationRate += (iBaseCulture / getPopulation()) - 3;
 	}
 
 	// English UP
@@ -19070,27 +19133,35 @@ int CvCity::calculateImmigrationRate()
 		iImmigrationRate += 2;
 	}
 
-	// Immigration Modifiers
-	if (isHasBuildingEffect(BUILDING_HEADRIGHT))
+	// Immigration Modifiers (in twelfths)
+	int iImmigrationModifier = 100;
+	if (isHasBuildingEffect((BuildingTypes)BUILDING_HEADRIGHT))
 	{
-		iImmigrationRate *= 5;
-		iImmigrationRate /= 4;
+		iImmigrationModifier += 25;
 	}
-	if (isHasBuildingEffect(BUILDING_SLAVE_MARKET) && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
+	if (isHasBuildingEffect((BuildingTypes)BUILDING_SLAVE_MARKET) && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
 	{
-		iImmigrationRate *= 3;
-		iImmigrationRate /= 2;
+		iImmigrationModifier += 50;
 	}
-	if (isHasBuildingEffect(BUILDING_WHEELWRIGHT))
+	if (isHasBuildingEffect((BuildingTypes)BUILDING_WHEELWRIGHT))
 	{
-		iImmigrationRate *= 5;
-		iImmigrationRate /= 4;
+		iImmigrationModifier += 25;
 	}
-	if (isHasBuildingEffect(BUILDING_IMMIGRATION_OFFICE))
+	if (isHasBuildingEffect((BuildingTypes)BUILDING_IMMIGRATION_OFFICE))
 	{
-		iImmigrationRate *= 3;
-		iImmigrationRate /= 2;
+		iImmigrationModifier += 50;
 	}
+	if (isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
+	{
+		iImmigrationModifier += 100;
+	}
+	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_ELLIS_ISLAND))
+	{
+		iImmigrationModifier += 50;
+	}
+
+	iImmigrationRate *= iImmigrationModifier;
+	iImmigrationRate /= 100;
 
 	setImmigrationRate(iImmigrationRate);
 
@@ -19112,7 +19183,7 @@ int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
 	{
 		return iImmigrationRate;
 	}
-	else if(eYield == YIELD_PRODUCTION && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
+	else if(eYield == YIELD_COMMERCE && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
 	{
 		return iImmigrationRate;
 	}

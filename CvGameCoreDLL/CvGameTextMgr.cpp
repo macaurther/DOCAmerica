@@ -9523,10 +9523,10 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 				}
 			}
 
-			if (kUnit.getCombat() > 0 && pCity->isHasBuildingEffect((BuildingTypes)CHAPULTEPEC_CASTLE))
+			if (kUnit.getCombat() > 0 && pCity->isHasBuildingEffect((BuildingTypes)BUILDING_CHAPULTEPEC_CASTLE))
 			{
 				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_EXPERIENCE", pCity->getCultureLevel(), GC.getBuildingInfo((BuildingTypes)CHAPULTEPEC_CASTLE).getText()));
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_FREE_EXPERIENCE", pCity->getCultureLevel(), GC.getBuildingInfo((BuildingTypes)BUILDING_CHAPULTEPEC_CASTLE).getText()));
 			}
 		}
 	}
@@ -10151,7 +10151,7 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 		}
 
 		// MacAurther: Latin America RP
-		if(ePlayer != -1 && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(GET_PLAYER(ePlayer).getCivilizationType(), CATHOLIC_TEMPLE))
+		if(ePlayer != -1 && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_LATIN_AMERICA && eBuilding == getUniqueBuilding(GET_PLAYER(ePlayer).getCivilizationType(), (BuildingTypes)BUILDING_CATHOLIC_TEMPLE))
 		{
 			iHappiness += 3;
 		}
@@ -11001,8 +11001,8 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 
 	for (iI = 0; iI < GC.getNumSpecialistInfos(); ++iI)
 	{
-		// Tiwanaku UP: +1 Priest Slot from Pagan Temples.
-		if (pCity != NULL && pCity->getCivilizationType() == TIWANAKU && kBuilding.getBuildingClassType() == GC.getBuildingInfo(PAGAN_TEMPLE).getBuildingClassType() && iI == SPECIALIST_PRIEST)
+		// 1SDAN?: Tiwanaku UP: +1 Priest Slot from Pagan Temples.
+		if (pCity != NULL && pCity->getCivilizationType() == TIWANAKU && kBuilding.getBuildingClassType() == GC.getBuildingInfo((BuildingTypes)BUILDING_PAGAN_TEMPLE).getBuildingClassType() && iI == SPECIALIST_PRIEST)
 		{
 			if (kBuilding.getSpecialistCount(iI) > 0)
 			{
@@ -11014,6 +11014,22 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO", GC.getSpecialistInfo((SpecialistTypes) iI).getTextKeyWide()));
 			}
+		}
+
+		// 1SDAN?: Serpent Mound: +1 Merchant Slot from Common
+		if (bActual && ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)BUILDING_SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && kBuilding.getBuildingClassType() == GC.getBuildingInfo((BuildingTypes)BUILDING_COMMON).getBuildingClassType())
+		{
+			if (kBuilding.getSpecialistCount(iI) > 0)
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZENS_INTO", kBuilding.getSpecialistCount(iI) + 1, GC.getSpecialistInfo((SpecialistTypes) iI).getTextKeyWide()));
+			}
+			else
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO", GC.getSpecialistInfo((SpecialistTypes) iI).getTextKeyWide()));
+			}
+			
 		}
 
 		if (kBuilding.getSpecialistCount(iI) > 0)
@@ -11289,24 +11305,6 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 					bFirst = false;
 				}
 			}
-		}
-	}
-
-	// MacAurther: Civic Requirements
-	if (eBuilding == BUILDING_SLAVE_MARKET)
-	{
-		if (ePlayer != NO_PLAYER)
-		{
-			if (!GET_PLAYER(ePlayer).hasCivic(CIVIC_SLAVERY))
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_CIVIC_REQUIREMENTS",  GC.getCivicInfo(CIVIC_SLAVERY).getTextKeyWide()));
-			}
-		}
-		else
-		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_CIVIC_REQUIREMENTS",  GC.getCivicInfo(CIVIC_SLAVERY).getTextKeyWide()));
 		}
 	}
 
@@ -13237,6 +13235,14 @@ void CvGameTextMgr::setHappyHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		{
 			iTotalHappy += iHappy;
 			szBuffer.append(gDLL->getText("TXT_KEY_HAPPY_BUILDINGS", iHappy));
+			szBuffer.append(NEWLINE);
+		}
+
+		iHappy = city.isHasBuildingEffect((BuildingTypes)BUILDING_CENTRAL_PARK) ? city.goodHealth() - city.badHealth() : 0;
+		if (iHappy > 0)
+		{
+			iTotalHappy += iHappy;
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPY_HEALTH", iHappy));
 			szBuffer.append(NEWLINE);
 		}
 
@@ -17790,6 +17796,18 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_COMMERCE_SUBTOTAL_YIELD_FLOAT", info.getTextKeyWide(), szYield.GetCString(), info.getChar()));
 		}
 // BUG - Base Commerce - end
+
+	// MacAurther: Statue of Liberty effect
+	if (eCommerceType == COMMERCE_CULTURE && GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
+	{
+		int iImmigrationRate = city.getImmigrationRate();
+		if (iImmigrationRate != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION", iImmigrationRate));
+			iBaseCommerceRate += 100 * iImmigrationRate;
+		}
+	}
 
 	FAssertMsg(city.getBaseCommerceRateTimes100(eCommerceType) == iBaseCommerceRate, "Base Commerce rate does not agree with actual value");
 	

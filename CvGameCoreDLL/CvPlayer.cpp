@@ -6351,16 +6351,16 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 	if (!isHuman())
 	{
 		// Leoreth: don't allow UHV wonders before the respective human civ has spawned and some turns after
-		if (isHumanVictoryWonder(eBuilding, STATUE_OF_LIBERTY, FRANCE)) return false;
+		if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_STATUE_OF_LIBERTY, FRANCE)) return false;
 
-		else if (isHumanVictoryWonder(eBuilding, UNITED_NATIONS, AMERICA)) return false;
-		else if (isHumanVictoryWonder(eBuilding, PENTAGON, AMERICA)) return false;
-		else if (isHumanVictoryWonder(eBuilding, STATUE_OF_LIBERTY, AMERICA)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_UNITED_NATIONS, AMERICA)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_PENTAGON, AMERICA)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_STATUE_OF_LIBERTY, AMERICA)) return false;
 
-		else if (isHumanVictoryWonder(eBuilding, TEMPLE_OF_KUKULKAN, MAYA)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_TEMPLE_OF_KUKULKAN, MAYA)) return false;
 
-		else if (isHumanVictoryWonder(eBuilding, ITAIPU_DAM, BRAZIL)) return false;
-		else if (isHumanVictoryWonder(eBuilding, CRISTO_REDENTOR, BRAZIL)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_ITAIPU_DAM, BRAZIL)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_CRISTO_REDENTOR, BRAZIL)) return false;
 	}
 
 	return true;
@@ -6694,7 +6694,7 @@ int CvPlayer::getProductionNeeded(BuildingTypes eBuilding) const
 	iProductionNeeded /= 100;
 
 	// Leoreth: cheaper palace in earlier eras, more expensive later
-	if (eBuilding == GC.getInfoTypeForString("BUILDING_PALACE"))
+	if (eBuilding == GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))
 	{
 		// half in ancient, the same in medieval, +50% in industrial, +100% in future
 		iProductionNeeded = iProductionNeeded * (2 + getCurrentEra()) / 4;
@@ -7007,14 +7007,23 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 	CvCity* pLoopCity;
 	int iLoop;
 
+	// Hospicio Cabanas
+	if (eBuilding == BUILDING_HOSPICIO_CABANAS)
+	{
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			pLoopCity->changeMaxFoodKeptPercent(25 * iChange);
+		}
+	}
+
 	// World Trade Center
-	if (eBuilding == WORLD_TRADE_CENTER)
+	if (eBuilding == (BuildingTypes)BUILDING_WORLD_TRADE_CENTER)
 	{
 		changeCorporationCommerceModifier(iChange * 50);
 	}
 
 	// Las Lajas Sanctuary
-	else if (eBuilding == LAS_LAJAS_SANCTUARY)
+	else if (eBuilding == (BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY)
 	{
 		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 		{
@@ -7023,7 +7032,7 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 	}
 
 	// Hubble Space Telescope
-	else if (eBuilding == HUBBLE_SPACE_TELESCOPE)
+	else if (eBuilding == (BuildingTypes)BUILDING_HUBBLE_SPACE_TELESCOPE)
 	{
 		updateCommerce(COMMERCE_RESEARCH);
 		AI_makeAssignWorkDirty();
@@ -8652,6 +8661,12 @@ int CvPlayer::getReligionAnarchyLength() const
 int CvPlayer::unitsRequiredForGoldenAge() const
 {
 	int iNumUnitGoldenAges = getNumUnitGoldenAges();
+
+	// Pyramid of the Sun: requires 1 less GP for a golden age
+	if (iNumUnitGoldenAges > 1 && isHasBuildingEffect((BuildingTypes)BUILDING_PYRAMID_OF_THE_SUN))
+	{
+		return (GC.getDefineINT("BASE_GOLDEN_AGE_UNITS") + (iNumUnitGoldenAges * GC.getDefineINT("GOLDEN_AGE_UNITS_MULTIPLIER")) - 1);
+	}
 
 	return (GC.getDefineINT("BASE_GOLDEN_AGE_UNITS") + (iNumUnitGoldenAges * GC.getDefineINT("GOLDEN_AGE_UNITS_MULTIPLIER")));
 }
@@ -11051,7 +11066,7 @@ void CvPlayer::setCapitalCity(CvCity* pNewCapitalCity)
 
 		if (pOldCapitalCity != NULL)
 		{
-			pOldCapitalCity->changeBuildingYieldChange(BUILDING_PALACE, YIELD_COMMERCE, -getCapitalCommerce());
+			pOldCapitalCity->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, -getCapitalCommerce());
 			pOldCapitalCity->updateCommerce();
 
 			pOldCapitalCity->setInfoDirty(true);
@@ -11059,7 +11074,7 @@ void CvPlayer::setCapitalCity(CvCity* pNewCapitalCity)
 
 		if (pNewCapitalCity != NULL)
 		{
-			pNewCapitalCity->changeBuildingYieldChange(BUILDING_PALACE, YIELD_COMMERCE, getCapitalCommerce());
+			pNewCapitalCity->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, getCapitalCommerce());
 			pNewCapitalCity->updateCommerce();
 
 			pNewCapitalCity->setInfoDirty(true);
@@ -13636,6 +13651,13 @@ int CvPlayer::getCivicUpkeep(CivicTypes* paeCivics, bool bIgnoreAnarchy) const
 	for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 	{
 		iTotalUpkeep += getSingleCivicUpkeep(paeCivics[iI], bIgnoreAnarchy);
+	}
+
+	// Leoreth: Forbidden Palace effect -> MacAurther: Sao Francisco Square Effect
+	if (isHasBuildingEffect((BuildingTypes)BUILDING_SAO_FRANCISCO_SQUARE))
+	{
+		iTotalUpkeep *= 2;
+		iTotalUpkeep /= 3;
 	}
 
 	return iTotalUpkeep;
@@ -24906,7 +24928,7 @@ void CvPlayer::applyCapitalCommerce(int iChange)
 {
 	if (getCapitalCity() != NULL)
 	{
-		getCapitalCity()->changeBuildingYieldChange(BUILDING_PALACE, YIELD_COMMERCE, iChange);
+		getCapitalCity()->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, iChange);
 	}
 }
 
@@ -25115,7 +25137,7 @@ int CvPlayer::getSatelliteExtraCommerce(CommerceTypes eCommerce) const
 
 	if (eCommerce == COMMERCE_RESEARCH)
 	{
-		if (isHasBuildingEffect((BuildingTypes)HUBBLE_SPACE_TELESCOPE))
+		if (isHasBuildingEffect((BuildingTypes)BUILDING_HUBBLE_SPACE_TELESCOPE))
 		{
 			iCommerce += 3;
 		}

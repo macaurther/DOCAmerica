@@ -3236,8 +3236,8 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						iThenWorkRate += pSelectedUnit->workRate(true);
 					}
 
-					// Leoreth: Chateau Frontenac effect, turn indication fix by merijn
-					if (GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)FRONTENAC))
+					// Leoreth: Chateau Frontenac effect, turn indication fix by merijn -> MacAurther: Biltmore Estate Effect
+					if (GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_BILTMORE_ESTATE))
 					{
 						if (GC.getBuildInfo(eBuild).getTechPrereq() == RAILROAD)
 						{

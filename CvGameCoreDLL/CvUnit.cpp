@@ -2518,7 +2518,9 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (pPlot->isImpassable())
 	{
-		if (!canMoveImpassable())
+		// MacAurther: Sacsayhuaman effect
+		bool bCanEnterPeaks = pPlot->isPeak() && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_SACSAYHUAMAN) && getUnitCombatType() != NO_UNITCOMBAT;
+		if (!canMoveImpassable() && !bCanEnterPeaks)
 		{
 			return false;
 		}
@@ -6152,6 +6154,15 @@ bool CvUnit::join(SpecialistTypes eSpecialist)
 	if (pCity != NULL)
 	{
 		pCity->changeFreeSpecialistCount(eSpecialist, 1);
+
+		// Leoreth: Neuschwanstein Castle effect -> MacAurther: French Quarter effect
+		if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_FRENCH_QUARTER))
+		{
+			if (!GC.getSpecialistInfo(eSpecialist).isNoGlobalEffects())
+			{
+				pCity->changeGreatPeopleProgress(GET_PLAYER(getOwnerINLINE()).greatPeopleThreshold(false) / 4);
+			}
+		}
 	}
 
 	if (plot()->isActiveVisible(false))
@@ -6973,17 +6984,6 @@ bool CvUnit::testSpyIntercepted(PlayerTypes eTargetPlayer, int iModifier)
 		return false;
 	}
 
-	// Leoreth: Bletchley Park effect
-	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BLETCHLEY_PARK))
-	{
-		iModifier += 50;
-	}
-
-	if (GET_PLAYER(eTargetPlayer).isHasBuildingEffect((BuildingTypes)BLETCHLEY_PARK))
-	{
-		iModifier -= 50;
-	}
-
 	if (GC.getGameINLINE().getSorenRandNum(10000, "Spy Interception") >= getSpyInterceptPercent(kTargetPlayer.getTeam()) * (100 + iModifier))
 	{
 		return false;
@@ -7245,10 +7245,20 @@ bool CvUnit::build(BuildTypes eBuild)
 
 	int iWorkRate = workRate(false);
 
-	// Leoreth: Chateau Frontenac effect
-	if (eBuild != NO_BUILD && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)FRONTENAC))
+	// Leoreth: Chateau Frontenac effect -> MacAurther: Biltmore Estate effect
+	if (eBuild != NO_BUILD && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_BILTMORE_ESTATE))
 	{
 		if (GC.getBuildInfo(eBuild).getTechPrereq() == RAILROAD)
+		{
+			iWorkRate *= 150;
+			iWorkRate /= 100;
+		}
+	}
+
+	// MacAurther: Pentagon effect
+	if (eBuild != NO_BUILD && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_PENTAGON))
+	{
+		if (GC.getBuildInfo(eBuild).getTechPrereq() == INFRASTRUCTURE)
 		{
 			iWorkRate *= 150;
 			iWorkRate /= 100;

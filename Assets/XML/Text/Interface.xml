@@ -1295,6 +1295,14 @@
 		<Spanish>[ICON_BULLET]%D1[ICON_GREATPEOPLE] from Immigration</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION</Tag>
+		<English>[ICON_BULLET]%D1[ICON_CULTURE] from Immigration</English>
+		<French>[ICON_BULLET]%D1[ICON_CULTURE] from Immigration</French>
+		<German>[ICON_BULLET]%D1[ICON_CULTURE] from Immigration</German>
+		<Italian>[ICON_BULLET]%D1[ICON_CULTURE] from Immigration</Italian>
+		<Spanish>[ICON_BULLET]%D1[ICON_CULTURE] from Immigration</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_GP_BORN_OUTSIDE</Tag>
 		<English>%s1_GPName has been born near %s2_CityName!</English>
 		<French>%s1_GPName est n&#233; pr&#232;s de : %s2_CityName !</French>

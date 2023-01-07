@@ -6715,6 +6715,15 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
+	// MacAurther: Hoover Dam effect
+	if (eTeam != NO_TEAM && !isPeak() && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)BUILDING_HOOVER_DAM))
+	{
+		if (iYield < 1 && (getTerrainType() == TERRAIN_DESERT || getTerrainType() == TERRAIN_SEMIDESERT))
+		{
+			iYield = 1;
+		}
+	}
+
 	return std::max(0, iYield);
 }
 
@@ -7102,7 +7111,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			
 			if (pWorkingCity != NULL)
 			{
-				if (pWorkingCity->isHasBuildingEffect((BuildingTypes)TEMPLE_OF_KUKULKAN))
+				if (pWorkingCity->isHasBuildingEffect((BuildingTypes)BUILDING_TEMPLE_OF_KUKULKAN))
 				{
 					if (!bDisplay || pWorkingCity->isRevealed(GC.getGameINLINE().getActiveTeam(), false))
 					{
@@ -7112,7 +7121,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			}
 		}
 
-		// 1DSAN?: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce along Rivers
+		// 1SDAN?: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce along Rivers
 		if (GET_PLAYER(ePlayer).getCivilizationType() == MISSISSIPPI)
 		{
 			if (!isPeak() && !isWater() && eYield == YIELD_COMMERCE && isRiver())
