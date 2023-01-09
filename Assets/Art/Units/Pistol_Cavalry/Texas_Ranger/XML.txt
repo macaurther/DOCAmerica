@@ -1,0 +1,51 @@
+//////////////////////////
+Use the "Pistol_Cavalry.kfm" in parent folder.
+//////////////////////////
+<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CAVALRY_RANGER_A</Type>
+			<Button>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_Button.dds</Button>
+			<fScale>0.34</fScale>
+			<fInterfaceScale>.95</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_A.nif</NIF>
+			<KFM>Art/Units/Pistol_Cavalry/Pistol_Cavalry.kfm</KFM>
+			<SHADERNIF>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_A_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CAVALRY_RANGER_B</Type>
+			<Button>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_Button.dds</Button>
+			<fScale>0.34</fScale>
+			<fInterfaceScale>.95</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_B.nif</NIF>
+			<KFM>Art/Units/Pistol_Cavalry/Pistol_Cavalry.kfm</KFM>
+			<SHADERNIF>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_B_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/HorseShadow.nif</ShadowNIF>
+				<ShadowAttachNode>HorseBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>

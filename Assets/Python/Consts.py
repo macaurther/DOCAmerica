@@ -486,7 +486,7 @@ iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia
 iMinuteman,		iMilitia5,		iMilitia6,		iMilitia7,		iWarrior, 		iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		
 iRifleman,		iInfantry,		iMechInfantry,	iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iTercio,		iMohawk,		iFusilier,		
 iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iPikeman,		iAntiTank,		iRPG,			iArcher,		
-iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldCannon,	iGattlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iGuecha,		
+iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,		iGattlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iGuecha,		
 iSkirmisher,	iGrenadier,		iAlbionLegion,	iGuerilla,		iHorseArcher,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		
 iLightTank,		iGunship,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iRural,			iTank,			iMainBattleTank,
 iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iHowitzer,		iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			

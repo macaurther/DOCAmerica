@@ -2138,15 +2138,15 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_FIELD_CANNON</Tag>
-		<English>Field Cannon</English>
-		<French>Field Cannon</French>
-		<German>Field Cannon</German>
-		<Italian>Field Cannon</Italian>
-		<Spanish>Field Cannon</Spanish>
+		<Tag>TXT_KEY_UNIT_FIELD_GUN</Tag>
+		<English>Field Gun</English>
+		<French>Field Gun</French>
+		<German>Field Gun</German>
+		<Italian>Field Gun</Italian>
+		<Spanish>Field Gun</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_FIELD_CANNON_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_FIELD_GUN_STRATEGY</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>
@@ -2154,7 +2154,7 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_FIELD_CANNON_PEDIA</Tag>
+		<Tag>TXT_KEY_UNIT_FIELD_GUN_PEDIA</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>
