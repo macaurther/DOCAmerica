@@ -455,7 +455,7 @@
 			<Civilopedia>TXT_KEY_BONUS_OIL_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_MODERN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_OIL</ArtDefineTag>
-			<TechReveal>TECH_THERMODYNAMICS</TechReveal>
+			<TechReveal>TECH_ENGINE</TechReveal>
 			<TechCityTrade>TECH_REFINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

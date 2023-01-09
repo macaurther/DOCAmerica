@@ -1443,7 +1443,7 @@
 			<Strategy>TXT_KEY_BUILDING_SCHOOLHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
-			<PrereqTech>TECH_EVANGELISM</PrereqTech>
+			<PrereqTech>TECH_EDUCATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3366,7 +3366,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
 			<FreeStartEra>ERA_ATOMIC</FreeStartEra>
-			<PrereqTech>TECH_MACHINE_TOOLS</PrereqTech>
+			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
 			<PrereqBonuses>
 				<Bonus>BONUS_COTTON</Bonus>
 			</PrereqBonuses>
@@ -4121,7 +4121,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
 			<FreeStartEra>ERA_ATOMIC</FreeStartEra>
-			<PrereqTech>TECH_MACHINE_TOOLS</PrereqTech>
+			<PrereqTech>TECH_PNEUMATICS</PrereqTech>
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7024,7 +7024,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ACADEMY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_ACADEMY</MovieDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+			<PrereqTech>TECH_CHARTER</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7118,7 +7118,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MANUFACTORY</ArtDefineTag>
 			<MovieDefineTag>NONE</MovieDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+			<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7166,7 +7166,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARMOURY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_ARMOURY</MovieDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_FIREARMS</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8024,7 +8024,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8131,7 +8131,7 @@
 			<Strategy>TXT_KEY_BUILDING_SACSAYHUAMAN_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_SACSAYHUAMAN_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_SACSAYHUAMAN</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
@@ -8187,9 +8187,9 @@
 			<Civilopedia>TXT_KEY_BUILDING_HUEY_TEOCALLI_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HUEY_TEOCALLI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_HUEY_TEOCALLI</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<FreePromotion>PROMOTION_LEADERSHIP</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
@@ -8242,10 +8242,10 @@
 			<Description>TXT_KEY_BUILDING_TLACHIHUALTEPETL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_TLACHIHUALTEPETL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TLACHIHUALTEPETL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_TLACHIHUALTEPETL</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8296,7 +8296,7 @@
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GATE_OF_THE_SUN</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
-			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<PrereqTech>TECH_AESTHETICS</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8345,7 +8345,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_PYRAMID_OF_THE_SUN</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_PYRAMID_OF_THE_SUN</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
-			<PrereqTech>TECH_MASONRY</PrereqTech>
+			<PrereqTech>TECH_AESTHETICS</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8399,7 +8399,7 @@
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SERPENT_MOUND</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
-			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8555,8 +8555,8 @@
 			<Civilopedia>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SAO_FRANCISCO_SQUARE</ArtDefineTag>
 			<PrereqTech>TECH_POLITICS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8645,8 +8645,8 @@
 			<Description>TXT_KEY_BUILDING_MANZANA_JESUITICA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MANZANA_JESUITICA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MANZANA_JESUITICA_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<Advisor>ADVISOR_RELIGION</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_MANZANA_JESUITICA</ArtDefineTag>
 			<StateReligion>RELIGION_CATHOLICISM</StateReligion>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
@@ -8704,7 +8704,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_INDEPENDENCE_HALL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_INDEPENDENCE_HALL</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_INDEPENDENCE</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_COURTHOUSE</FreeBuilding>
@@ -8896,8 +8896,8 @@
 			<Description>TXT_KEY_BUILDING_SLATER_MILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SLATER_MILL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SLATER_MILL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SLATER_MILL</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<PrereqBonuses>BONUS_COTTON</PrereqBonuses>
@@ -8931,6 +8931,12 @@
 				</FreeSpecialistCount>
 			</FreeSpecialistCounts>
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_TEXTILE_MILL</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -9147,9 +9153,9 @@
 			<Civilopedia>TXT_KEY_BUILDING_FANEUIL_HALL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FANEUIL_HALL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_FANEUIL_HALL</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<PrereqTech>TECH_NEWSPAPERS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9257,7 +9263,7 @@
 			<Help>TXT_KEY_BUILDING_CENTRAL_PARK_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9305,7 +9311,7 @@
 			<Help>TXT_KEY_BUILDING_ELLIS_ISLAND_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9418,7 +9424,6 @@
 			<Description>TXT_KEY_BUILDING_FRONTENAC</Description>
 			<Civilopedia>TXT_KEY_BUILDING_FRONTENAC_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FRONTENAC_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_FRONTENAC_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRONTENAC</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_FRONTENAC</MovieDefineTag>
@@ -9580,7 +9585,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_FRENCH_QUARTER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FRENCH_QUARTER_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_FRENCH_QUARTER_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
 			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
@@ -9815,7 +9820,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_ALCATRAZ_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ALCATRAZ_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_ALCATRAZ</ArtDefineTag>
 			<PrereqTech>TECH_PSYCHOLOGY</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -10097,7 +10102,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_GATEWAY_ARCH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GATEWAY_ARCH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_GATEWAY_ARCH</ArtDefineTag>
 			<PrereqTech>TECH_TOURISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -10207,8 +10212,8 @@
 			<Strategy>TXT_KEY_BUILDING_THE_STRIP_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_THE_STRIP_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<ArtDefineTag>ART_DEF_BUILDING_THE_STRIP</ArtDefineTag>
+			<PrereqTech>TECH_TOURISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
