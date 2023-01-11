@@ -112,15 +112,18 @@ dRemovedFeaturesDict = {
 }
 
 dConquerorPlotTypesDict = {
-	(29, 23) : (iInca, PlotTypes.PLOT_HILLS),
-	(31, 13) : (iInca, PlotTypes.PLOT_HILLS),
-	(32, 19) : (iInca, PlotTypes.PLOT_HILLS),
-	(27, 29) : (iInca, PlotTypes.PLOT_HILLS),
+	(55, 33) : (iInca, PlotTypes.PLOT_HILLS),
+	(55, 29) : (iInca, PlotTypes.PLOT_HILLS),
+	(52, 22) : (iInca, PlotTypes.PLOT_HILLS),
+	(49, 12) : (iInca, PlotTypes.PLOT_HILLS),
+	(47, 43) : (iInca, PlotTypes.PLOT_HILLS),
+	(49, 39) : (iInca, PlotTypes.PLOT_HILLS),
+	(47, 45) : (iInca, PlotTypes.PLOT_HILLS),
 }
 
 dConquerorRemovedFeaturesDict = {
-	(27, 30) : iInca,
-	(28, 31) : iInca,
+	(52, 37) : iInca,
+	(45, 51) : iInca,
 }
 
 

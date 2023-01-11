@@ -419,7 +419,7 @@
 			<Strategy>TXT_KEY_CIVIC_MIGRANT_WORKERS_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_MIGRANT_WORKERS_HELP</Help>
 			<TechPrereq>TECH_LABOR_UNIONS</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/MigrantWorkers.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Migrant_Workers.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>NONE</Upkeep>
 			<iLargestCityHappiness>-2</iLargestCityHappiness>
@@ -847,7 +847,7 @@
 			<Strategy>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Help>
 			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Tolerance.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Opportunity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>

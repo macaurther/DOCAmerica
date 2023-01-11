@@ -10,7 +10,7 @@ iMaya :			(36, 58), # Tikal
 iTeotihuacan :	(28, 61), # Teotihuacan
 iTiwanaku :		(52, 33), # Tiwanaku
 iWari :			(46, 39), # Huari
-iMississippi :	(36, 78), # Cahokia
+iMississippi :	(44, 79), # Sunwatch
 iPuebloan :		(25, 73), # Pueblo Bonito
 iMuisca :		(50, 48), # Hunza
 iNorse :		(77, 104), # Reykjavik
@@ -33,10 +33,10 @@ iArgentina :	(57, 16), # Buenos Aires
 iMexico :		(30, 60), # Mexico City
 iColombia :		(48, 49), # Bogota
 iChile :		(49, 17), # Santiago
-iPeru :			(46, 36), # Lima
+iPeru :			(47, 36), # Lima
 iVenezuela :	(52, 53), # Caracas
 iBrazil :		(70, 28), # Rio de Janeiro
-iCanada :		(52, 87), # Ottawa
+iCanada :		(52, 88), # Ottawa
 iCuba : 		(43, 62), # Havana
 })
 
@@ -59,7 +59,7 @@ iMaya : 		((35, 57), 	(37, 59)),
 iTeotihuacan :	((27, 60), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((45, 36), 	(47, 40)),
-iMississippi :	((35, 75), 	(40, 79)),
+iMississippi :	((43, 78), 	(45, 79)),
 iPuebloan :		((24, 72), 	(26, 76)),
 iMuisca :		((49, 47), 	(51, 49)),
 iNorse :		((75, 103), (77, 106)),
@@ -95,6 +95,12 @@ dExtendedBirthArea = CivDict({
 dBirthAreaExceptions = CivDict({
 iAmerica :		[(46, 86), (48, 86), (49, 86), (50, 86), (52, 86), (53, 86), (54, 86), (55, 86), (56, 86), (46, 85), (47, 85), (48, 85), (46, 84), (47, 84), (48, 84)],
 iArgentina :	[(58, 17), (59, 17), (59, 18), (59, 19), (59, 20), (59, 21)],
+iCanada :		[(49, 83), (50, 83), (51, 83), (52, 83), (53, 83), (54, 83), (55, 83), (56, 83), (57, 83), (58, 83), (59, 83), 
+				(49, 84), (50, 84), (51, 84), (52, 84), (53, 84), (54, 84), (55, 84), (56, 84), (57, 84), (58, 84), (59, 84), 
+				(52, 85), (53, 85), (54, 85), (55, 85), (56, 85), (57, 85), (58, 85), (59, 85), (60, 85), (61, 85), 
+				(58, 86), (59, 86), (60, 86), (61, 86), (62, 86), (63, 86), 
+				(61, 87), (62, 87), (63, 87), 
+				(61, 88)],
 }, [])
 
 ### Core Area ###
@@ -104,31 +110,31 @@ iMaya : 		((34, 57), 	(37, 59)),
 iTeotihuacan :	((27, 60), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((45, 36), 	(47, 40)),
-iMississippi :	((35, 75), 	(40, 79)),#TODO - fix pagan religion
-iPuebloan :		((24, 72), 	(26, 76)),#TODO - fix pagan religion
+iMississippi :	((34, 77), 	(31, 46)),# fix pagan religion
+iPuebloan :		((24, 72), 	(26, 76)),# fix pagan religion
 iMuisca :		((49, 47), 	(50, 49)),
-iNorse :		((0, 0), 	(0, 0)),	#No core for colonies
+iNorse :		((0, 0), 	(0, 0)),	#No core for Europeans
 iChimu :		((43, 40), 	(44, 44)),
-iInuit :		((4, 103), 	(17, 105)),#TODO - fix pagan religion
+iInuit :		((4, 103), 	(17, 105)),# fix pagan religion
 iInca : 		((46, 33), 	(52, 38)),
 iAztecs : 		((27, 59), 	(31, 61)),
-iIroquois :		((50, 83), 	(53, 85)),#TODO - fix pagan religion
-iSpain : 		((0, 0), 	(0, 0)),	#No core for colonies
-iPortugal : 	((0, 0), 	(0, 0)),#PROCESS	#No core for colonies
-iEngland : 		((0, 0), 	(0, 0)),#PROCESS	#No core for colonies
-iFrance : 		((0, 0), 	(0, 0)),#PROCESS	#No core for colonies
-iNetherlands :	((0, 0), 	(0, 0)),#TODO	#No core for colonies
-iHawaii :		((12, 47), 	(14, 50)),#TODO
-iRussia :		((0, 0), 	(0, 0)),#TODO	#No core for colonies
-iAmerica : 		((47, 79), 	(60, 84)),#TODO
-iHaiti :		((51, 58), 	(53, 60)),#TODO
-iBolivia :		((51, 32), 	(55, 35)),#TODO
-iArgentina : 	((53, 15), 	(58, 20)),#TODO
+iIroquois :		((50, 83), 	(53, 86)),# fix pagan religion
+iSpain : 		((0, 0), 	(0, 0)),	#No core for Europeans
+iPortugal : 	((0, 0), 	(0, 0)),	#No core for Europeans
+iEngland : 		((0, 0), 	(0, 0)),	#No core for Europeans
+iFrance : 		((0, 0), 	(0, 0)),	#No core for Europeans
+iNetherlands :	((0, 0), 	(0, 0)),	#No core for Europeans
+iHawaii :		((12, 47), 	(14, 50)),
+iRussia :		((0, 0), 	(0, 0)),	#No core for Europeans
+iAmerica : 		((47, 79), 	(60, 84)),
+iHaiti :		((51, 58), 	(53, 60)),
+iBolivia :		((51, 32), 	(55, 35)),
+iArgentina : 	((53, 15), 	(58, 20)),
 iMexico :		((26, 57), 	(32, 64)),#TODO
 iColombia :		((46, 49), 	(49, 54)),#TODO
 iChile :		((48, 15), 	(50, 23)),#TODO
 iPeru :			((45, 34), 	(49, 38)),#TODO
-iVenezuela :	((50, 50), 	(54, 53)),#TODO
+iVenezuela :	((49, 50), 	(54, 53)),#TODO
 iBrazil : 		((65, 26), 	(72, 32)),#TODO
 iCanada : 		((45, 83), 	(59, 90)),#TODO
 iCuba : 		((41, 60), 	(50, 62)),#TODO
@@ -140,8 +146,15 @@ dPeriodCoreArea = {
 dCoreAreaExceptions = CivDict({
 iMaya :			[(34, 57), (37, 57)],
 iInca :			[(51, 38), (52, 38), (52, 37), (52, 33)],
+iIroquois :		[(50,86)],
 iAmerica :		[(47, 84), (48, 84)],
 iArgentina :	[(58, 17)],
+iColombia :		[(49, 53), (49, 52), (49, 51)],
+iVenezuela :	[(49, 50), (50, 50)],
+iCanada :		[(49, 83), (50, 83), (52, 83), (54, 83), (55, 83), (57, 83), (58, 83), (59, 83), 
+				(49, 84), (50, 84), (51, 84), (52, 84), (53, 84), (54, 84), (55, 84), (57, 84), (58, 84), (59, 84), 
+				(52, 85), (53, 85), (56, 85), (57, 85), (59, 85), 
+				(58, 86), (59, 86)],
 }, [])
 
 dPeriodCoreAreaExceptions = appenddict({
