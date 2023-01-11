@@ -599,7 +599,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_INCA_KALLANKAS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_INCA_KALLANKA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_INCA_KALLANKA</ArtDefineTag>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -770,7 +770,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_HERBALIST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HERBALIST_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_HERBALIST</ArtDefineTag>
 			<PrereqTech>TECH_HERBALISM</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -860,7 +860,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_TZOMPANTLI</ArtDefineTag>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<iHurryAngerModifier>-50</iHurryAngerModifier>
@@ -1165,7 +1165,7 @@
 			<Strategy>TXT_KEY_BUILDING_STOCKS_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_HEADRIGHT_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_STOCKS</ArtDefineTag>
 			<PrereqTech>TECH_GOVERNORS</PrereqTech>
 			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -1197,7 +1197,7 @@
 			<Strategy>TXT_KEY_BUILDING_HEADRIGHT_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_HEADRIGHT_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_HEADRIGHT</ArtDefineTag>
 			<PrereqTech>TECH_DIPLOMACY</PrereqTech>
 			<ObsoleteTech>TECH_PIONEERING</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -1263,7 +1263,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_DUTCH_TRADING_FORT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_DUTCH_TRADING_FORT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TRADING_POST</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_DUTCH_TRADING_FORT</ArtDefineTag>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			<ObsoleteTech>TECH_CHEMISTRY</ObsoleteTech>
 			<iCost>50</iCost>
@@ -1381,7 +1381,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_PALISADE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_PALISADE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_PALISADE</ArtDefineTag>
 			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
@@ -1453,7 +1453,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_SCHOOLHOUSE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SCHOOLHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_SCHOOLHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
@@ -1494,7 +1494,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_WELL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WELL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_WELL</ArtDefineTag>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
@@ -1622,7 +1622,7 @@
 			<Strategy>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_MARKET</ArtDefineTag>
 			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
 			<PrereqCivic>CIVIC_SLAVERY</PrereqCivic>
 			<bNeverCapture>1</bNeverCapture>
@@ -2548,7 +2548,7 @@
 			<Strategy>TXT_KEY_BUILDING_WHEELWRIGHT_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_WHEELWRIGHT_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_WHEELWRIGHT</ArtDefineTag>
 			<PrereqTech>TECH_SURVEYING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>150</iCost>
@@ -2842,7 +2842,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_SILVERSMITH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SILVERSMITH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_SILVERSMITH</ArtDefineTag>
 			<PrereqTech>TECH_BONDS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>50</iCost>
@@ -2886,7 +2886,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_MAGAZINE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MAGAZINE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_MAGAZINE</ArtDefineTag>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2928,7 +2928,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_SHIPYARD_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SHIPYARD_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_SHIPYARD</ArtDefineTag>
 			<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>100</iCost>
@@ -3013,7 +3013,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_PRINTING_PRESS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_PRINTING_PRESS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_PRINTING_PRESS</ArtDefineTag>
 			<PrereqTech>TECH_NEWSPAPERS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>150</iCost>
@@ -3111,7 +3111,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_AMERICAN_STATE_HOUSE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_AMERICAN_STATE_HOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_CIVIC_SQUARE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_STATE_HOUSE</ArtDefineTag>
 			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>100</iCost>
@@ -3362,7 +3362,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_TEXTILE_MILL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_TEXTILE_MILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_TEXTILE_MILL</ArtDefineTag>
 			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
 			<PrereqBonuses>
 				<Bonus>BONUS_COTTON</Bonus>
@@ -3482,7 +3482,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_RODEO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_RODEO_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_MEXICAN_CHARREADA</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_RODEO</ArtDefineTag>
 			<PrereqTech>TECH_PIONEERING</PrereqTech>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3580,7 +3580,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_ARSENAL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ARSENAL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_ARSENAL</ArtDefineTag>
 			<PrereqTech>TECH_BALLISTICS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>250</iCost>
@@ -5476,7 +5476,7 @@
 			<Strategy>TXT_KEY_BUILDING_SPANISH_MISSION_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_MISSION_HELP</Help>
 			<Advisor>ADVISOR_RELIGION</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_CATHOLIC_MONASTERY</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_SPANISH_MISSION</ArtDefineTag>
 			<ReligionType>RELIGION_CATHOLICISM</ReligionType>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<iCost>60</iCost>
@@ -7907,7 +7907,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_SUPREME_COURT</ArtDefineTag>
 			<PrereqTech>TECH_TELEGRAPH</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_JAIL</FreeBuilding>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
@@ -9315,7 +9315,7 @@
 			<Strategy>TXT_KEY_BUILDING_ELLIS_ISLAND_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_ELLIS_ISLAND_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_ELLIS_ISLAND</ArtDefineTag>
 			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
