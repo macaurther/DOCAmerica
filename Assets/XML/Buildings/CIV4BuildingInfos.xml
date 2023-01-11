@@ -398,8 +398,8 @@
 			<Description>TXT_KEY_BUILDING_STONEWORKS</Description>
 			<Civilopedia>TXT_KEY_BUILDING_STONEWORKS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_STONEWORKS_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_STONEWORKS</ArtDefineTag>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
@@ -420,7 +420,7 @@
 			<ConstructSound>AS2D_BUILD_WALLS</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -504,6 +504,12 @@
 					<iProductonModifier>100</iProductonModifier>
 				</BonusProductionModifier>
 			</BonusProductionModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_ARENA</BuildingClass>
@@ -544,6 +550,12 @@
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_BARRACKS</BuildingClass>
@@ -742,7 +754,7 @@
 			<ConstructSound>AS2D_BUILD_WALLS</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 				<Flavor>
@@ -757,7 +769,7 @@
 			<Description>TXT_KEY_BUILDING_HERBALIST</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HERBALIST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HERBALIST_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_HERBALISM</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
@@ -796,11 +808,15 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_GRANARY</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -810,7 +826,7 @@
 			<Description>TXT_KEY_BUILDING_ALTAR</Description>
 			<Civilopedia>TXT_KEY_BUILDING_ALTAR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ALTAR_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
@@ -825,13 +841,14 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</CommerceChanges>
+			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>6</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -842,7 +859,7 @@
 			<Description>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI</Description>
 			<Civilopedia>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
@@ -858,13 +875,14 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</CommerceChanges>
+			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>6</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -875,7 +893,7 @@
 			<Description>TXT_KEY_BUILDING_COMMON</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COMMON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_COMMON_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CIVIC_SQUARE</ArtDefineTag>
 			<PrereqTech>TECH_LAW</PrereqTech>
 			<iCost>80</iCost>
@@ -902,10 +920,10 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -943,6 +961,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -992,7 +1011,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_COLOSSEUM</ConstructSound>
+			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
@@ -1005,23 +1024,11 @@
 					<iFlavor>5</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ADMIN</FlavorType>
-					<iFlavor>3</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_SCIENCE</FlavorType>
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1157,7 +1164,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_STOCKS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_STOCKS_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_HEADRIGHT_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_GOVERNORS</PrereqTech>
 			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
@@ -1174,10 +1181,10 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1</iCommerce>
 			</CommerceChanges>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1189,7 +1196,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_HEADRIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HEADRIGHT_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_HEADRIGHT_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_DIPLOMACY</PrereqTech>
 			<ObsoleteTech>TECH_PIONEERING</ObsoleteTech>
@@ -1203,10 +1210,10 @@
 			<CommerceModifiers>
 				<iCommerce>-15</iCommerce>
 			</CommerceModifiers>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_HEADRIGHT</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1285,6 +1292,10 @@
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -1387,7 +1398,7 @@
 					<iProductonModifier>100</iProductonModifier>
 				</BonusProductionModifier>
 			</BonusProductionModifiers>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_CASTLE</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -1441,7 +1452,7 @@
 			<Description>TXT_KEY_BUILDING_SCHOOLHOUSE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SCHOOLHOUSE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SCHOOLHOUSE_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -1452,7 +1463,7 @@
 			<iPower>3</iPower>
 			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -1471,7 +1482,7 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1482,7 +1493,7 @@
 			<Description>TXT_KEY_BUILDING_WELL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_WELL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WELL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -1493,10 +1504,10 @@
 			<iPower>3</iPower>
 			<iHealth>1</iHealth>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_AQUEDUCT</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1544,7 +1555,7 @@
 					<iFlavor>5</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1598,7 +1609,7 @@
 					<iFlavor>5</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
 					<iFlavor>3</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1610,7 +1621,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_SLAVE_MARKET_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
 			<PrereqCivic>CIVIC_SLAVERY</PrereqCivic>
@@ -1622,11 +1633,15 @@
 			<iPower>3</iPower>
 			<iHappiness>-2</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -1678,11 +1693,11 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1764,10 +1779,11 @@
 			<Description>TXT_KEY_BUILDING_LUMBERMILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_LUMBERMILL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_LUMBERMILL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_LUMBERMILL</ArtDefineTag>
 			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
+			<bRiver>1</bRiver>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1789,10 +1805,10 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1803,10 +1819,11 @@
 			<Description>TXT_KEY_BUILDING_ENGLISH_SAWMILL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_ENGLISH_SAWMILL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ENGLISH_SAWMILL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SAWMILL</ArtDefineTag>
 			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
+			<bRiver>1</bRiver>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1837,10 +1854,10 @@
 					</YieldChanges>
 				</BonusYieldChange>
 			</BonusYieldChanges>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -1874,12 +1891,8 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-					<iFlavor>3</iFlavor>
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -2004,6 +2017,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -2014,7 +2028,7 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -2113,6 +2127,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -2123,7 +2138,7 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -2223,6 +2238,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -2233,7 +2249,7 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -2265,19 +2281,11 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 				<SpecialistCount>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
 					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
@@ -2297,6 +2305,10 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_SCIENCE</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -2418,6 +2430,10 @@
 					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>6</iFlavor>
 				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>6</iFlavor>
+				</Flavor>
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
@@ -2531,7 +2547,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_WHEELWRIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WHEELWRIGHT_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_WHEELWRIGHT_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_SURVEYING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -2545,11 +2561,14 @@
 				<iYield>0</iYield>
 				<iYield>10</iYield>
 			</YieldModifiers>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>2</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>8</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2676,7 +2695,11 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>8</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2818,7 +2841,7 @@
 			<Description>TXT_KEY_BUILDING_SILVERSMITH</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SILVERSMITH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SILVERSMITH_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_BONDS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -2848,10 +2871,10 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_FORGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -2926,7 +2949,7 @@
 					<iExperience>2</iExperience>
 				</DomainFreeExperience>
 			</DomainFreeExperiences>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_WHARF</BuildingClassType>
@@ -2942,7 +2965,11 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -2985,7 +3012,7 @@
 			<Description>TXT_KEY_BUILDING_PRINTING_PRESS</Description>
 			<Civilopedia>TXT_KEY_BUILDING_PRINTING_PRESS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_PRINTING_PRESS_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_NEWSPAPERS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -3006,7 +3033,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_GREAT_LIBRARY</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_IRON</BonusType>
@@ -3015,7 +3042,7 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -3027,7 +3054,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_MEETING_HALL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MEETING_HALL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_CIVIC_SQUARE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_HOLY_ROMAN_RATHAUS</ArtDefineTag>
 			<PrereqTech>TECH_SOCIOLOGY</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>100</iCost>
@@ -3059,7 +3086,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_COLOSSEUM</ConstructSound>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
@@ -3074,22 +3101,6 @@
 				<Flavor>
 					<FlavorType>FLAVOR_ADMIN</FlavorType>
 					<iFlavor>3</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -3132,7 +3143,7 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_COLOSSEUM</ConstructSound>
+			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_MONUMENT</BuildingClassType>
@@ -3152,18 +3163,6 @@
 					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>2</iFlavor>
 				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
@@ -3172,8 +3171,8 @@
 			<Description>TXT_KEY_BUILDING_SLAUGHTERHOUSE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SLAUGHTERHOUSE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SLAUGHTERHOUSE_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_GROCER</ArtDefineTag>
 			<PrereqTech>TECH_BIOLOGY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>120</iCost>
@@ -3204,10 +3203,10 @@
 					</YieldChanges>
 				</BonusYieldChange>
 			</BonusYieldChanges>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_FACTORY</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -3244,7 +3243,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_JAIL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_JAIL_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_JAIL_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_JAIL</ArtDefineTag>
 			<FreeStartEra>ERA_MODERN</FreeStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
@@ -3269,7 +3268,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
 					<iFlavor>6</iFlavor>
 				</Flavor>
 				<Flavor>
@@ -3285,7 +3284,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_SALON</ArtDefineTag>
 			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
@@ -3302,10 +3301,9 @@
 					<iSpecialistCount>1</iSpecialistCount>
 				</SpecialistCount>
 			</SpecialistCounts>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -3365,7 +3363,6 @@
 			<Strategy>TXT_KEY_BUILDING_TEXTILE_MILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
-			<FreeStartEra>ERA_ATOMIC</FreeStartEra>
 			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
 			<PrereqBonuses>
 				<Bonus>BONUS_COTTON</Bonus>
@@ -3416,7 +3413,11 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -3427,8 +3428,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_STEEL_MILL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_STEEL_MILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_FACTORY</ArtDefineTag>
-			<FreeStartEra>ERA_ATOMIC</FreeStartEra>
+			<ArtDefineTag>ART_DEF_BUILDING_GERMAN_ASSEMBLY_PLANT</ArtDefineTag>
 			<PrereqTech>TECH_MACHINE_TOOLS</PrereqTech>
 			<PrereqBonuses>
 				<Bonus>BONUS_IRON</Bonus>
@@ -3512,6 +3512,12 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_RODEO</BuildingClass>
@@ -3560,6 +3566,12 @@
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_ARSENAL</BuildingClass>
@@ -3741,23 +3753,7 @@
 					<iFlavor>3</iFlavor>
 				</Flavor>
 				<Flavor>
-					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>2</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_SCIENCE</FlavorType>
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -7869,8 +7865,8 @@
 			<Description>TXT_KEY_BUILDING_GRAND_CENTRAL_STATION</Description>
 			<Civilopedia>TXT_KEY_BUILDING_GRAND_CENTRAL_STATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_GRAND_CENTRAL_STATION_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_RUSSIAN_RESEARCH_INSTITUTE</ArtDefineTag>
 			<PrereqTech>TECH_TELEGRAPH</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
@@ -7899,7 +7895,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -7910,7 +7906,7 @@
 			<Description>TXT_KEY_BUILDING_SUPREME_COURT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BARRACKS</ArtDefineTag>
 			<PrereqTech>TECH_TELEGRAPH</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_JAIL</FreeBuilding>
@@ -7950,7 +7946,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8064,7 +8060,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8175,7 +8171,7 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8231,7 +8227,7 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8281,7 +8277,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8498,7 +8494,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_LA_FORTALEZA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_LA_FORTALEZA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_LA_FORTALEZA</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_GOVERNORS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
@@ -8543,8 +8539,12 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>10</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -8585,7 +8585,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8692,7 +8692,7 @@
 			</SpecialistYieldChanges>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8740,7 +8740,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8753,7 +8753,7 @@
 			<Strategy>TXT_KEY_BUILDING_HOSPICIO_CABANAS_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_HOSPICIO_CABANAS_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_HOSPICIO_CABANAS</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_SCIENTIFIC_METHOD</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
@@ -8788,7 +8788,7 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8800,7 +8800,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_MOUNT_VERNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MOUNT_VERNON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_MOUNT_VERNON</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_BALANCE_OF_POWER</PrereqTech>
 			<PrereqBonuses>BONUS_TOBACCO</PrereqBonuses>
@@ -8836,7 +8836,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8848,7 +8848,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_MONTICELLO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_MONTICELLO</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_RIGHTS_OF_MAN</PrereqTech>
 			<PrereqBonuses>BONUS_TOBACCO</PrereqBonuses>
@@ -8885,7 +8885,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9003,8 +9003,9 @@
 			<Description>TXT_KEY_BUILDING_WEST_POINT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_WEST_POINT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WEST_POINT_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_WEST_POINT_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_WEST_POINT</ArtDefineTag>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9033,7 +9034,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9045,7 +9046,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_FORT_MCHENRY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_FORT_MCHENRY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_FORT_MCHENRY</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_PROTECTIONISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
@@ -9093,8 +9094,12 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -9105,7 +9110,7 @@
 			<Civilopedia>TXT_KEY_BUILDING_WASHINGTON_MONUMENT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_WASHINGTON_MONUMENT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_WASHINGTON_MONUMENT</ArtDefineTag>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
 			<PrereqTech>TECH_GEOLOGY</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
@@ -9141,7 +9146,7 @@
 			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9189,7 +9194,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9262,7 +9267,7 @@
 			<Strategy>TXT_KEY_BUILDING_CENTRAL_PARK_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_CENTRAL_PARK_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_CENTRAL_PARK</ArtDefineTag>
 			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9297,7 +9302,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9349,7 +9354,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9537,7 +9542,7 @@
 			<Strategy>TXT_KEY_BUILDING_BILTMORE_ESTATE_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_BILTMORE_ESTATE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_BILTMORE_ESTATE</ArtDefineTag>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
 			<PrereqTech>TECH_RAILROAD</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_RAILWAY_STATION</FreeBuilding>
@@ -9573,7 +9578,7 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9586,7 +9591,7 @@
 			<Strategy>TXT_KEY_BUILDING_FRENCH_QUARTER_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_FRENCH_QUARTER_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_QUARTER</ArtDefineTag>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
 			<PrereqTech>TECH_ELECTRICITY</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
@@ -9615,7 +9620,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_CULTURE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -9778,7 +9783,7 @@
 			<Strategy>TXT_KEY_BUILDING_HOOVER_DAM_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_HOOVER_DAM_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_TEMPLE_OF_KUKULKAN</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_HOOVER_DAM</ArtDefineTag>
 			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -9808,8 +9813,16 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -9856,8 +9869,12 @@
 			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_ADMIN</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -9897,8 +9914,12 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>10</iFlavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -10120,7 +10141,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -10256,7 +10277,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -10347,7 +10368,7 @@
 			<Strategy>TXT_KEY_BUILDING_NASA_STRATEGY</Strategy>
 			<Help>TXT_KEY_BUILDING_NASA_HELP</Help>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_SPACE_ELEVATOR</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_NASA</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_SPACE_ELEVATOR</MovieDefineTag>
 			<VictoryPrereq>VICTORY_SPACE_RACE</VictoryPrereq>
 			<PrereqTech>TECH_SUPERMATERIALS</PrereqTech>
@@ -10404,7 +10425,7 @@
 			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
 					<iFlavor>10</iFlavor>
 				</Flavor>
 			</Flavors>

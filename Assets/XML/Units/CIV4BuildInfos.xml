@@ -315,7 +315,7 @@
 			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<iTime>800</iTime>
 			<iCost>5</iCost>
-			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
+			<ImprovementType>IMPROVEMENT_LOGGING_CAMP</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_L</HotKey>
 			<bAltDown>0</bAltDown>

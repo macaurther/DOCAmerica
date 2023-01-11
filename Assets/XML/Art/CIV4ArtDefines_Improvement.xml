@@ -88,13 +88,13 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildWorkshop.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,8</Button>
 		</ImprovementArtInfo>
 		<ImprovementArtInfo>
-			<Type>ART_DEF_IMPROVEMENT_LUMBERMILL</Type>
+			<Type>ART_DEF_IMPROVEMENT_LOGGING_CAMP</Type>
 			<bExtraAnimations>0</bExtraAnimations>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Lumbermill/Lumbermill.nif</NIF>
-			<KFM>Art/Structures/Improvements/Lumbermill/Lumbermill.kfm</KFM>
-			<Button>,Art/Interface/Buttons/Builds/BuildLumberMill.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,7</Button>
+			<NIF>Art/Structures/Improvements/Camp/Camp.nif</NIF>
+			<KFM>Art/Structures/Improvements/Camp/Camp.kfm</KFM>
+			<Button>Art/Interface/Buttons/Builds/BuildLoggingCamp.dds</Button>
 		</ImprovementArtInfo>
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_WINDMILL</Type>
