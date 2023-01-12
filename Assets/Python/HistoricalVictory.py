@@ -243,11 +243,6 @@ dGoals = {
 		GoldAmount(999999, by=2000),
 		GoldAmount(999999, by=2000),
 	),
-	iVenezuela: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-	),
 	iBrazil: (
 		ImprovementCount((iSlavePlantation, 8), (iPasture, 4), at=1880),
 		Wonders(iCristoRedentor, iItaipuDam),
@@ -256,6 +251,11 @@ dGoals = {
 			CityBuilding(capital().named(CAPITAL), iNationalPark),
 			by=1950,
 		),
+	),
+	iVenezuela: (
+		GoldAmount(999999, by=2000),
+		GoldAmount(999999, by=2000),
+		GoldAmount(999999, by=2000),
 	),
 	iCanada: (
 		All(

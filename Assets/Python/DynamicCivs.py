@@ -140,39 +140,39 @@ dStartingLeaders = [
 {
 	iIndependent : iIndependentLeader,
 	iIndependent2 : iIndependentLeader,
-	iNative : iNativeLeader,
+	iNative : iSittingBull,
 	iMaya : iPacal,
 	iTeotihuacan : iAtlatlCauac,
 	iTiwanaku : iMalkuHuyustus,
 	iWari : iWariCapac,
 	iMississippi : iRedHorn,
-	iPuebloan : iLeaderBarbarian,	# TODO
+	iPuebloan : iItzukuma,
 	iMuisca : iSaguamanchica,
 	iNorse : iRagnar,
 	iChimu : iTacaynamo,
 	iInuit : iAua,
 	iInca : iHuaynaCapac,
 	iAztecs : iMontezuma,
-	iIroquois : iLeaderBarbarian,	# TODO: iHiawatha
+	iIroquois : iHiawatha,
 	iSpain : iIsabella,
-	iPortugal : iAfonso,
-	iEngland : iAlfred,
-	iFrance : iCharlemagne,
+	iPortugal : iJoao,
+	iEngland : iElizabeth,
+	iFrance : iLouis,
 	iNetherlands : iWillemVanOranje,
-	iHawaii : iAhoeitu,
-	iRussia : iPeter,
+	iHawaii : iKamehameha,
+	iRussia : iCatherine,
 	iAmerica : iWashington,
-	iHaiti : iLeaderBarbarian,	# TODO: iLouverture
+	iHaiti : iLOuverture,
 	iBolivia : iLeaderBarbarian,	# TODO
 	iArgentina : iSanMartin,
 	iMexico : iJuarez,
 	iColombia : iBolivar,
 	iChile : iLeaderBarbarian,	# TODO
-	iPeru : iLeaderBarbarian,	# TODO
-	iVenezuela : iLeaderBarbarian,	# TODO
+	iPeru : iCastilla,
 	iBrazil : iPedro,
+	iVenezuela : iChavez,
 	iCanada : iMacDonald,
-	iCuba : iLeaderBarbarian,	# TODO
+	iCuba : iCastro,
 },
 # 600 AD
 {
@@ -843,20 +843,16 @@ def leader(iPlayer):
 		if any(data.dFirstContactConquerors.values()): return iPhilip
 		
 	elif iCiv == iFrance:
-		if iEra >= iAtomic: return iDeGaulle
+		if iEra >= iModern: return iDeGaulle
 		
 		if iEra >= iIndustrial: return iNapoleon
 		
-		if iEra >= iRevolutionary: return iLouis
-		
 	elif iCiv == iEngland:
-		if iEra >= iAtomic: return iChurchill
+		if iEra >= Modern: return iChurchill
 		
 		if iEra >= iIndustrial: return iVictoria
 		
 		if scenario() == i1770AD: return iVictoria
-		
-		if iEra >= iRevolutionary: return iElizabeth
 		
 	elif iCiv == iNetherlands:
 		if year() >= year(1650): return iWilliam
@@ -864,24 +860,30 @@ def leader(iPlayer):
 	elif iCiv == iPortugal:
 		if iEra >= iIndustrial: return iMaria
 		
-		if tPlayer.isHasTech(iCartography): return iJoao
-		
 	elif iCiv == iInca:
-		if iEra >= iIndustrial: return iCastilla
-		
-		if bResurrected and year() >= year(1600): return iCastilla
+		if year() >= year(1490): return iPachacuti
 	
 	elif iCiv == iMexico:
 		if bMonarchy: return iSantaAnna
 		
 		if isFascist(iPlayer): return iSantaAnna
 		
-		if iEra >= iAtomic: return iCardenas
+		if iEra >= iModern: return iCardenas
 			
 	elif iCiv == iAmerica:
-		if iEra >= iAtomic: return iRoosevelt
+		if year() >= year(2000): return iObama
+		
+		if year() >= year(1980): return iReagan
+		
+		if year() >= year(1960): return iKennedy
+		
+		if year() >= year(1940): return iFDR
+		
+		if year() >= year(1900): return iRoosevelt
 		
 		if year() >= year(1850): return iLincoln
+		
+		if year() >= year(1820): return iJackson
 		
 	elif iCiv == iArgentina:
 		if iEra >= iAtomic: return iPeron
@@ -891,7 +893,17 @@ def leader(iPlayer):
 		
 	elif iCiv == iCanada:
 		if iEra >= iAtomic: return iTrudeau
+	
+	elif iCiv == iNorse:
+		if iEra >= iModern: return iGerhardsen
 		
+		if iEra >= iRevolutionary: return iGustav
+	
+	elif iCiv == iRussia:
+		if iEra >= iModern: return iStalin
+		
+		if iEra >= iIndustrial: return iAlexanderI
+	
 	return startingLeader(iPlayer)
 		
 	

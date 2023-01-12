@@ -1190,85 +1190,131 @@ enum LeaderHeadTypes			// Exposed to Python
 	NO_LEADER = -1,
 
 	LEADER_BARBARIAN,
-	LEADER_NATIVE,
+	LEADER_SITTING_BULL,
 	LEADER_INDEPENDENT,
 
-	AHOEITU,
+	// America
+	WASHINGTON,
+	JACKSON,
+	LINCOLN,
+	ROOSEVELT,
+	FDR,
+	KENNEDY,
+	REAGAN,
+	OBAMA,
+	// Too many for America you say? Nonsense
 
-	PACAL,
+	// Argentina
+	SAN_MARTIN,
+	PERON,
 
-	RAGNAR,
-	GUSTAV,
-	GERHARDSEN,
+	// Aztec
+	MONTEZUMA,
 
-	ISABELLA,
-	PHILIP,
-	FRANCO,
+	// Bolivia
 
-	CHARLEMAGNE,
-	LOUIS,
-	NAPOLEON,
-	DE_GAULLE,
 
-	ALFRED,
+	// Brazil
+	DOM_PEDRO,
+	VARGAS,
+
+	// Canada
+	MACDONALD,
+	TRUDEAU,
+
+	// Chile
+
+
+	// Chimu
+	TACAYNAMO,
+
+	// Colombia
+	BOLIVAR,
+
+	// Cuba
+	CASTRO,
+
+	// England
 	ELIZABETH,
 	VICTORIA,
 	CHURCHILL,
 
-	IVAN,
-	PETER,
-	CATHERINE,
-	ALEXANDER_I,
-	STALIN,
+	// French
+	LOUIS,
+	NAPOLEON,
+	DE_GAULLE,
+	
+	// Haiti
+	LOUVERTURE,
 
-	AFONSO,
-	JOAO,
-	MARIA,
+	// Hawaii
+	KAMEHAMEHA,
 
+	// Inca
 	HUAYNA_CAPAC,
 	PACHACUTI,
 
-	MONTEZUMA,
+	// Inuit
+	AUA,
 
-	WILLEM,
-	WILLIAM,
+	// Iroquois
+	HIAWATHA,
 
-	WASHINGTON,
-	LINCOLN,
-	ROOSEVELT,
+	// Maya
+	PACAL,
 
-	SAN_MARTIN,
-	PERON,
-
+	// Mexico
 	JUAREZ,
 	SANTA_ANNA,
 	CARDENAS,
 
-	BOLIVAR,
-
-	DOM_PEDRO,
-	VARGAS,
-
-	MACDONALD,
-	TRUDEAU,
-
-	SITTING_BULL,
-
-	MALKU_HUYUSTUS,
-
-	WARI_CAPAC,
-
-	TACAYNAMO,
-
+	// Mississippi
 	RED_HORN,
 
-	AUA,
-
+	// Muisca
 	SAGUAMANCHICA,
 
-	ATLATL_CAUAC,
+	// Netherlands
+	WILLEM,
+	WILLIAM,
 
+	// Norse
+	RAGNAR,
+	GUSTAV,
+	GERHARDSEN,
+
+	// Peru
 	CASTILLA,
+
+	// Portugal
+	JOAO,
+	MARIA,
+	
+	// Puebloan
+	ITZUKUMA,
+
+	// Russia
+	CATHERINE,
+	ALEXANDER_I,
+	STALIN,
+
+	// Spanish
+	ISABELLA,
+	PHILIP,
+	FRANCO,
+	
+	// Teotihuacan
+	ATLATL_CAUAC,
+	
+	// Tiwanaku
+	MALKU_HUYUSTUS,
+	
+	// Venezuela
+	CHAVEZ,
+	
+	// Wari
+	WARI_CAPAC,
+	
 
 	NUM_LEADERHEADS
 };

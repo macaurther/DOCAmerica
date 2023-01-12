@@ -49,8 +49,8 @@ lBirthOrder = [
 	iColombia,
 	iChile,
 	iPeru,
-	iVenezuela,
 	iBrazil,
+	iVenezuela,
 	iCanada,
 	iCuba
 ]
@@ -230,8 +230,8 @@ iMexico : 1810,
 iColombia : 1810,
 iChile : 1810,
 iPeru : 1811,
-iVenezuela : 1811,
 iBrazil : 1822,
+iVenezuela : 1831,
 iCanada : 1867,
 iCuba : 1898,
 }, 250)
@@ -344,8 +344,8 @@ iMexico : 1,
 iColombia : 2,
 iChile : 1,
 iPeru : 1,
-iVenezuela : 1,
 iBrazil : 2,
+iVenezuela : 1,
 iCanada : 1,
 iCuba : 1,
 }, 0)
@@ -400,8 +400,8 @@ iMexico : 40,
 iColombia : 30,
 iChile : 35,
 iPeru : 35,
-iVenezuela : 20,
 iBrazil : 40,
+iVenezuela : 20,
 iCanada : 40,
 iCuba : 25,
 }, 100)
@@ -688,14 +688,14 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 54
+iNumLeaders = 58
 #				2				3				4				5				6				7				8				9				10
-(iLeaderBarbarian, iNativeLeader, iIndependentLeader, iAhoeitu, iPacal,			iRagnar,		iGustav, 		iGerhardsen, 	iIsabella, 		iPhilip, 
-iFranco,		iCharlemagne, 	iLouis, 		iNapoleon, 		iDeGaulle, 		iAlfred, 		iElizabeth, 	iVictoria, 		iChurchill, 	iIvan, 	
-iPeter, 		iCatherine, 	iAlexanderI, 	iStalin, 		iAfonso, 		iJoao, 			iMaria, 		iHuaynaCapac, 	iPachacuti,		iMontezuma, 
-iWillemVanOranje, iWilliam, 	iWashington,	iLincoln, 		iRoosevelt, 	iSanMartin, 	iPeron, 		iJuarez, 		iSantaAnna, 	iCardenas, 
-iBolivar, 		iPedro, 		iVargas,		iMacDonald, 	iTrudeau, 		iSittingBull,	iMalkuHuyustus,	iWariCapac,		iTacaynamo,		iRedHorn,
-iAua,			iSaguamanchica,	iAtlatlCauac,	iCastilla) = range(iNumLeaders)
+(iLeaderBarbarian,iSittingBull, iIndependentLeader,iWashington,	iJackson,		iLincoln,		iRoosevelt,		iFDR,			iKennedy,			iReagan,
+iObama,			iSanMartin,		iPeron,			iMontezuma,		iPedro,			iVargas,		iMacDonald,		iTrudeau,		iTacaynamo,		iBolivar,
+iCastro,		iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		iDeGaulle,		iLOuverture,	iKamehameha,	iHuaynaCapac,
+iPachacuti,		iAua,			iHiawatha,		iPacal,			iJuarez,		iSantaAnna,		iCardenas,		iRedHorn,		iSaguamanchica,	iWillemVanOranje,
+iWilliam,		iRagnar,		iGustav,		iGerhardsen,	iCastilla,		iJoao,			iMaria,			iItzukuma,		iCatherine,		iAlexanderI,	
+iStalin,		iIsabella,		iPhilip,		iFranco,		iAtlatlCauac,	iMalkuHuyustus,	iChavez,		iWariCapac) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 })

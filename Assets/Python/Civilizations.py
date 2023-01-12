@@ -375,20 +375,20 @@ lCivilizations = [
 		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
-		iVenezuela,
-		iGold=1200,
-		iAdvancedStartPoints=100,
-		iStateReligion=iCatholicism,
-		lCivics=[],
-		techs=techs.column(11).including(iGeology)
-	),
-	Civilization(
 		iBrazil,
 		iGold=1600,
 		iAdvancedStartPoints=200,
 		iStateReligion=iCatholicism,
 		lCivics=[],
 		techs=techs.column(11).including(iMetallurgy, iProtectionism, iHydrology)
+	),
+	Civilization(
+		iVenezuela,
+		iGold=1200,
+		iAdvancedStartPoints=100,
+		iStateReligion=iCatholicism,
+		lCivics=[],
+		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
 		iCanada,
@@ -593,11 +593,6 @@ dStartingUnits = CivDict({
 		iWork: 1,
 		iDefend: 2,
 	},
-	iVenezuela: {
-		iSettle: 1,
-		iWork: 1,
-		iDefend: 2,
-	},
 	iBrazil: {
 		iSettle: 5,
 		iWork: 3,
@@ -608,6 +603,11 @@ dStartingUnits = CivDict({
 		iWorkerSea: 2,
 		iFerry: 2,
 		iEscort: 3,
+	},
+	iVenezuela: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
 	},
 	iCanada: {
 		iSettle: 5,

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Firaxis Games (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Leaderhead art path information -->
+<Civ4ArtDefines xmlns="x-schema:LH_CIV4ArtDefinesSchema.xml">
+	<LeaderheadArtInfos>
+		<LeaderheadArtInfo>
+			<Type>ART_DEF_LEADER_KENNEDY</Type>
+			<Button>modules/Custom Leaderheads/Kennedy/Btn_LH_kennedy.dds</Button>
+			<NIF>modules/Custom Leaderheads/Kennedy/fdr.nif</NIF>
+			<KFM>modules/Custom Leaderheads/Kennedy/fdr.kfm</KFM>
+			<NoShaderNIF>modules/Custom Leaderheads/Kennedy/fdr
+.nif</NoShaderNIF>
+			<BackgroundKFM>modules/Custom Leaderheads/Kennedy/fdr_bg.kfm</BackgroundKFM>
+		</LeaderheadArtInfo>		
+	</LeaderheadArtInfos>
+</Civ4ArtDefines>

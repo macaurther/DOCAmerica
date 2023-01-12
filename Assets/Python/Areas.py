@@ -34,8 +34,8 @@ iMexico :		(30, 60), # Mexico City
 iColombia :		(48, 49), # Bogota
 iChile :		(49, 17), # Santiago
 iPeru :			(47, 36), # Lima
-iVenezuela :	(52, 53), # Caracas
 iBrazil :		(70, 28), # Rio de Janeiro
+iVenezuela :	(52, 53), # Caracas
 iCanada :		(52, 88), # Ottawa
 iCuba : 		(43, 62), # Havana
 })
@@ -83,8 +83,8 @@ iMexico :		((15, 57), 	(38, 75)),
 iColombia :		((45, 47), 	(49, 54)),
 iChile :		((48, 15), 	(50, 23)),
 iPeru :			((45, 34), 	(49, 38)),
-iVenezuela :	((50, 50), 	(54, 53)),
 iBrazil : 		((62, 22), 	(77, 40)),
+iVenezuela :	((50, 50), 	(54, 53)),
 iCanada : 		((45, 83), 	(64, 97)),
 iCuba : 		((41, 60), 	(50, 62)),
 })
@@ -131,12 +131,12 @@ iHaiti :		((51, 58), 	(53, 60)),
 iBolivia :		((51, 32), 	(55, 35)),
 iArgentina : 	((53, 15), 	(58, 20)),
 iMexico :		((26, 57), 	(32, 64)),#TODO
-iColombia :		((46, 49), 	(49, 54)),#TODO
-iChile :		((48, 15), 	(50, 23)),#TODO
-iPeru :			((45, 34), 	(49, 38)),#TODO
-iVenezuela :	((49, 50), 	(54, 53)),#TODO
-iBrazil : 		((65, 26), 	(72, 32)),#TODO
-iCanada : 		((45, 83), 	(59, 90)),#TODO
+iColombia :		((46, 49), 	(49, 54)),
+iChile :		((48, 15), 	(50, 23)),
+iPeru :			((45, 34), 	(49, 38)),
+iBrazil : 		((65, 26), 	(72, 32)),
+iVenezuela :	((49, 50), 	(54, 53)),
+iCanada : 		((45, 83), 	(59, 90)),
 iCuba : 		((41, 60), 	(50, 62)),#TODO
 })
 
@@ -191,8 +191,8 @@ iMexico :		((30, 60), 	(30, 60)),
 iColombia :		((48, 49), 	(48, 49)),
 iChile :		((48, 15), 	(50, 23)),
 iPeru :			((45, 34), 	(49, 38)),
-iVenezuela :	((50, 50), 	(54, 53)),
 iBrazil : 		((70, 28), 	(70, 28)),
+iVenezuela :	((50, 50), 	(54, 53)),
 iCanada : 		((52, 87), 	(52, 87)),
 iCuba : 		((41, 60), 	(50, 62)),
 })
@@ -238,8 +238,8 @@ iMexico :		((30, 60), 	(30, 60)),
 iColombia :		((48, 49), 	(48, 49)),
 iChile :		((48, 15), 	(50, 23)),
 iPeru :			((45, 34), 	(49, 38)),
-iVenezuela :	((50, 50), 	(54, 53)),
 iBrazil : 		((70, 28), 	(70, 28)),
+iVenezuela :	((50, 50), 	(54, 53)),
 iCanada : 		((52, 87), 	(52, 87)),
 iCuba : 		((41, 60), 	(50, 62)),
 })

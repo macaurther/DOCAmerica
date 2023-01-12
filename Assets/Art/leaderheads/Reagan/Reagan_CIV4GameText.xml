@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_REAGAN_PEDIA</Tag>
+		<English>
+			[H1]Ronald Wilson Reagan[\H1][NEWLINE][BOLD]40th President of the United States and the 33rd Governor of California [\BOLD][NEWLINE][BOLD]Lived: [\BOLD]  February 6, 1911 - June 5, 2004[NEWLINE][PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE][TAB] Reagan's terms as Califonia's governor helped to shape the policies he would pursue in his later political career as president. By campaigning on a platform of sending "the welfare bums back to work", he spoke out against the idea of the welfare state. He also strongly advocated the Republican ideal of less government regulation of the economy, including that of undue federal taxation. Reagan's legacy includes a more efficient and prosperous economy, a peaceful end to the Cold War, and a world safer from the threat of nuclear war.			
+		</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_REAGAN</Tag>
+		<English>Reagan</English>
+	</TEXT>
+</Civ4GameText>

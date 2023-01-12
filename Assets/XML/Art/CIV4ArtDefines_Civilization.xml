@@ -182,8 +182,8 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_PUEBLOAN</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Minor.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,6</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_X.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Anasazi.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Anasazi.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
@@ -218,14 +218,14 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_VENEZUELA</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Minor.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,6</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_X.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Venezuela_Button.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Venezuela.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_CUBA</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Minor.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,6</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_X.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/btn_cuba.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Cuba.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>
