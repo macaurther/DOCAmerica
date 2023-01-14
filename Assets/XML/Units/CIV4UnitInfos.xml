@@ -438,7 +438,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<BuildType>BUILD_LOGGING_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -580,7 +580,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<BuildType>BUILD_LOGGING_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -718,7 +718,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<BuildType>BUILD_LOGGING_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -855,7 +855,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<BuildType>BUILD_LOGGING_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -992,7 +992,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<BuildType>BUILD_LOGGING_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -1617,7 +1617,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
+			<PrereqTech>TECH_EVANGELISM</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2015,7 +2015,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</NotUnitAIs>
-			<PrereqTech>TECH_COMMUNITY</PrereqTech>
+			<PrereqTech>TECH_INDENTURES</PrereqTech>
 			<iCost>45</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6072,7 +6072,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_SURVEYING</PrereqTech>
+			<PrereqTech>TECH_POSTAL_SERVICE</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7410,7 +7410,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_PHYSICS</PrereqTech>
+			<PrereqTech>TECH_METALLURGY</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>165</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9270,7 +9270,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</NotUnitAIs>
-			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
+			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
 			<TechTypes>
 				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
 			</TechTypes>
@@ -9532,6 +9532,72 @@
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 		</UnitInfo>
 		<UnitInfo>
+			<Class>UNITCLASS_BARQUE</Class>
+			<Type>UNIT_BARQUE</Type>
+			<Combat>UNITCOMBAT_NAVAL</Combat>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_ATTACK_SEA</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_BARQUE</Description>
+			<Civilopedia>TXT_KEY_UNIT_BARQUE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_BARQUE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
+			<bMechanized>1</bMechanized>
+			<bRenderBelowWater>1</bRenderBelowWater>
+			<UnitClassUpgrades>
+				<UnitClassUpgrade>
+					<UnitClassUpgradeType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassUpgradeType>
+					<bUnitClassUpgrade>1</bUnitClassUpgrade>
+				</UnitClassUpgrade>
+			</UnitClassUpgrades>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_RESERVE_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_TIMEKEEPING</PrereqTech>
+			<BonusType>BONUS_IRON</BonusType>
+			<iCost>120</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>20</iMinAreaSize>
+			<iMoves>5</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iCombat>18</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iCollateralDamage>40</iCollateralDamage>
+			<iCollateralDamageLimit>40</iCollateralDamageLimit>
+			<iCollateralDamageMaxUnits>2</iCollateralDamageMaxUnits>
+			<iBombardRate>4</iBombardRate>
+			<iAsset>3</iAsset>
+			<iPower>15</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>2.25</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_BARQUE</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+		</UnitInfo>
+		<UnitInfo>
 			<Class>UNITCLASS_SHIP_OF_THE_LINE</Class>
 			<Type>UNIT_SHIP_OF_THE_LINE</Type>
 			<Combat>UNITCOMBAT_NAVAL</Combat>
@@ -9569,12 +9635,12 @@
 			</UnitAIs>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
-			<iCost>120</iCost>
+			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>6</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iCombat>15</iCombat>
+			<iCombat>20</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -9635,12 +9701,12 @@
 			</UnitAIs>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
-			<iCost>120</iCost>
+			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>7</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iCombat>18</iCombat>
+			<iCombat>22</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>

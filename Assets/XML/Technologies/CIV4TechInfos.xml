@@ -629,6 +629,7 @@
 			<iCost>225</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
+			<FirstFreeUnitClass>UNITCLASS_GREAT_PROPHET</FirstFreeUnitClass>
 			<iAsset>16</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -848,6 +849,7 @@
 			<iAsset>12</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
+			<bVassalTrading>1</bVassalTrading>
 			<iGridX>4</iGridX>
 			<iGridY>9</iGridY>
 			<Flavors>
@@ -1545,7 +1547,6 @@
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bVassalTrading>1</bVassalTrading>
 			<iGridX>7</iGridX>
 			<iGridY>13</iGridY>
 			<Flavors>
@@ -1612,7 +1613,6 @@
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2383,6 +2383,7 @@
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
+			<FirstFreeUnitClass>UNITCLASS_GREAT_MERCHANT</FirstFreeUnitClass>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -2451,7 +2452,6 @@
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
-			<FirstFreeUnitClass>UNITCLASS_GREAT_SCIENTIST</FirstFreeUnitClass>
 			<iAsset>44</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -2806,6 +2806,7 @@
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_REVOLUTIONARY</Era>
+			<FirstFreeUnitClass>UNITCLASS_GREAT_GENERAL</FirstFreeUnitClass>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -3195,6 +3196,7 @@
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_INDUSTRIAL</Era>
+			<FirstFreeUnitClass>UNITCLASS_GREAT_SCIENTIST</FirstFreeUnitClass>
 			<iAsset>52</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>

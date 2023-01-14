@@ -779,7 +779,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_ISOLATIONISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Help>
-			<TechPrereq>TECH_NATIONALISM</TechPrereq>
+			<TechPrereq>TECH_AESTHETICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>

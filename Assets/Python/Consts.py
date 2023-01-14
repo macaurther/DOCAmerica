@@ -478,7 +478,7 @@ iTranshumanism) = range(iNumTechs)
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 154
+iNumUnits = 155
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iCliffDweller,	iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,
 iLaborer, 		iMadeireiro, 	iScout, 		iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			iSisqeno,
@@ -492,10 +492,10 @@ iLightTank,		iGunship,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCaval
 iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iHowitzer,		iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			
 iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iGalleon,		iWestIndianman,	iBrigantine,	iSteamship,		iTransport,		iCarrier,		
 iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iStealthDestroyer,iPrivateer,	iTorpedoBoat,	iSubmarine,		iNuclearSubmarine,
-iShipOfTheLine,iManOfWar,		iCruiser,		iBattleship,	iMissileCruiser,iBiplane,		iFighter,		iJetFighter,	iDrone,			iBomber,		
-iStealthBomber,	iNuclearBomber,	iGuidedMissile,	iICBM,			iSatellite,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, 
-iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist, iFeGreatScientist, iFeGreatMerchant, iFeGreatEngineer, iFeGreatStatesman,
-iFeGreatGeneral,iFeGreatSpy,	iSlave,			iNativeSlave) = range(iNumUnits)
+iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iBattleship,	iMissileCruiser,iBiplane,		iFighter,		iJetFighter,	iDrone,			
+iBomber,		iStealthBomber,	iNuclearBomber,	iGuidedMissile,	iICBM,			iSatellite,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, 
+iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist, iFeGreatScientist, iFeGreatMerchant, iFeGreatEngineer, 
+iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,	iSlave,			iNativeSlave) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 

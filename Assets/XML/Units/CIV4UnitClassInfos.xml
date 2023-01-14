@@ -687,6 +687,14 @@
 			<DefaultUnit>UNIT_NUCLEAR_SUBMARINE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_BARQUE</Type>
+			<Description>TXT_KEY_BARQUE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_BARQUE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_SHIP_OF_THE_LINE</Type>
 			<Description>TXT_KEY_SHIP_OF_THE_LINE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

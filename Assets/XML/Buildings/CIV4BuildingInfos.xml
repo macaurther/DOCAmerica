@@ -1166,7 +1166,7 @@
 			<Help>TXT_KEY_BUILDING_HEADRIGHT_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STOCKS</ArtDefineTag>
-			<PrereqTech>TECH_GOVERNORS</PrereqTech>
+			<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
@@ -1495,7 +1495,7 @@
 			<Strategy>TXT_KEY_BUILDING_WELL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WELL</ArtDefineTag>
-			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
+			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2321,7 +2321,7 @@
 			<Strategy>TXT_KEY_BUILDING_PHARMACY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PHARMACY</ArtDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+			<PrereqTech>TECH_SCIENTIFIC_METHOD</PrereqTech>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2627,7 +2627,7 @@
 			<Strategy>TXT_KEY_BUILDING_CUSTOMS_HOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CUSTOMS_HOUSE</ArtDefineTag>
-			<PrereqTech>TECH_FREE_MARKET</PrereqTech>
+			<PrereqTech>TECH_PROTECTIONISM</PrereqTech>
 			<bWater>1</bWater>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3055,7 +3055,7 @@
 			<Strategy>TXT_KEY_BUILDING_MEETING_HALL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HOLY_ROMAN_RATHAUS</ArtDefineTag>
-			<PrereqTech>TECH_SOCIOLOGY</PrereqTech>
+			<PrereqTech>TECH_REPRESENTATION</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>100</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -7254,7 +7254,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STOCK_EXCHANGE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_STOCK_EXCHANGE</MovieDefineTag>
-			<PrereqTech>TECH_ECONOMICS</PrereqTech>
+			<PrereqTech>TECH_CURRENCY</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7548,7 +7548,7 @@
 			<Strategy>TXT_KEY_BUILDING_MILITARY_ACADEMY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MILITARY_ACADEMY</ArtDefineTag>
-			<PrereqTech>TECH_SOCIOLOGY</PrereqTech>
+			<PrereqTech>TECH_TACTICS</PrereqTech>
 			<FreePromotion>PROMOTION_LEADERSHIP</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
@@ -8557,7 +8557,7 @@
 			<Help>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SAO_FRANCISCO_SQUARE</ArtDefineTag>
-			<PrereqTech>TECH_POLITICS</PrereqTech>
+			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8799,6 +8799,7 @@
 			<Description>TXT_KEY_BUILDING_MOUNT_VERNON</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MOUNT_VERNON_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MOUNT_VERNON_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_MOUNT_VERNON_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MOUNT_VERNON</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
@@ -8847,6 +8848,7 @@
 			<Description>TXT_KEY_BUILDING_MONTICELLO</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MONTICELLO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_MONTICELLO_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONTICELLO</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
@@ -9112,7 +9114,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WASHINGTON_MONUMENT</ArtDefineTag>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
-			<PrereqTech>TECH_GEOLOGY</PrereqTech>
+			<PrereqTech>TECH_NATIONALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9211,7 +9213,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_STATUE_OF_LIBERTY</MovieDefineTag>
 			<PrereqCivic>CIVIC_OPPORTUNITY</PrereqCivic>
 			<MaxStartEra>ERA_MODERN</MaxStartEra>
-			<PrereqTech>TECH_REPRESENTATION</PrereqTech>
+			<PrereqTech>TECH_JOURNALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

@@ -310,8 +310,8 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildWorkshop.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,8,8</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_LUMBERMILL</Type>
-			<Description>TXT_KEY_BUILD_LUMBERMILL</Description>
+			<Type>BUILD_LOGGING_CAMP</Type>
+			<Description>TXT_KEY_BUILD_LOGGING_CAMP</Description>
 			<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			<iTime>800</iTime>
 			<iCost>5</iCost>
@@ -322,7 +322,7 @@
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildLumberMill.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,7</Button>
+			<Button>Art/Interface/Buttons/Builds/BuildLoggingCamp.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_WINDMILL</Type>
@@ -599,7 +599,7 @@
 		<BuildInfo>
 			<Type>BUILD_WELL</Type>
 			<Description>TXT_KEY_BUILD_WELL</Description>
-			<PrereqTech>TECH_REFINING</PrereqTech>
+			<PrereqTech>TECH_COMBUSTION</PrereqTech>
 			<iTime>1000</iTime>
 			<iCost>30</iCost>
 			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>

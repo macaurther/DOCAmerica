@@ -24,7 +24,7 @@
 			<TechPrereqAnyone>NONE</TechPrereqAnyone>
 			<bValid>1</bValid>
 			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/Temple.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/catholic_temple.dds</Button>
 		</SpecialBuildingInfo>
 		<SpecialBuildingInfo>
 			<Type>SPECIALBUILDING_CATHEDRAL</Type>
@@ -44,7 +44,7 @@
 			<TechPrereqAnyone>NONE</TechPrereqAnyone>
 			<bValid>1</bValid>
 			<ProductionTraits/>
-			<Button>Art/Interface/Buttons/Buildings/Monastery_Hindu.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/catholic_monastery.dds</Button>
 		</SpecialBuildingInfo>
 	</SpecialBuildingInfos>
 </Civ4SpecialBuildingInfos>

@@ -455,7 +455,7 @@
 			<Civilopedia>TXT_KEY_BONUS_OIL_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_MODERN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_OIL</ArtDefineTag>
-			<TechReveal>TECH_ENGINE</TechReveal>
+			<TechReveal>TECH_COMBUSTION</TechReveal>
 			<TechCityTrade>TECH_REFINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1885,7 +1885,7 @@
 			<Civilopedia>TXT_KEY_BONUS_RARE_EARTHS_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_MODERN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_RARE_EARTHS</ArtDefineTag>
-			<TechReveal>TECH_METALLURGY</TechReveal>
+			<TechReveal>TECH_FLIGHT</TechReveal>
 			<TechCityTrade>TECH_ELECTRONICS</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

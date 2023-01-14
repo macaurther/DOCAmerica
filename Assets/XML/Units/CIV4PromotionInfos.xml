@@ -211,6 +211,7 @@
 			<Description>TXT_KEY_PROMOTION_COMBAT5</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT4</PromotionPrereqOr1>
+			<TechPrereq>TECH_COMBINED_ARMS</TechPrereq>
 			<iEnemyHealChange>10</iEnemyHealChange>
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
@@ -654,7 +655,7 @@
 			<Description>TXT_KEY_PROMOTION_COMMANDO</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT4</PromotionPrereqOr1>
-			<TechPrereq>TECH_COMBINED_ARMS</TechPrereq>
+			<TechPrereq>TECH_TACTICS</TechPrereq>
 			<bEnemyRoute>1</bEnemyRoute>
 			<UnitCombats>
 				<UnitCombat>
@@ -1210,6 +1211,7 @@
 			<Description>TXT_KEY_PROMOTION_GARRISON3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_CITY_GARRISON2</PromotionPrereqOr1>
+			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
 			<iCityDefense>30</iCityDefense>
 			<UnitCombatMods>
 				<UnitCombatMod>
