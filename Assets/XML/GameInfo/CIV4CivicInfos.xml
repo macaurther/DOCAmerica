@@ -552,6 +552,7 @@
 			<Description>TXT_KEY_CIVIC_MERCHANT_TRADE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MERCHANT_TRADE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_MERCHANT_TRADE_HELP</Help>
 			<TechPrereq>TECH_WRITING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/MerchantTrade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

@@ -1214,6 +1214,14 @@
 		<Italian>"The engine which drives enterprise is not thrift but profit."[PARAGRAPH:2]- John Maynard Keynes</Italian>
 		<Spanish>"The engine which drives enterprise is not thrift but profit."[PARAGRAPH:2]- John Maynard Keynes</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ECONOMICS_HELP</Tag>
+		<English>[ICON_BULLET]Allows players with the Merchant Trade civic to train Musketmen</English>
+		<French>[ICON_BULLET]Allows players with the Merchant Trade civic to train Musketmen</French>
+		<German>[ICON_BULLET]Allows players with the Merchant Trade civic to train Musketmen</German>
+		<Italian>[ICON_BULLET]Allows players with the Merchant Trade civic to train Musketmen</Italian>
+		<Spanish>[ICON_BULLET]Allows players with the Merchant Trade civic to train Musketmen</Spanish>
+	</TEXT>
 
 
 
@@ -2956,6 +2964,14 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_OLD_WORLD_TACTICS_HELP</Tag>
+		<English>[ICON_BULLET]Allows all players to train Horse Archers</English>
+		<French>[ICON_BULLET]Allows all players to train Horse Archers</French>
+		<German>[ICON_BULLET]Allows all players to train Horse Archers</German>
+		<Italian>[ICON_BULLET]Allows all players to train Horse Archers</Italian>
+		<Spanish>[ICON_BULLET]Allows all players to train Horse Archers</Spanish>
 	</TEXT>
 
 

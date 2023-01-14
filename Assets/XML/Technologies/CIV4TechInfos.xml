@@ -961,6 +961,7 @@
 			<Type>TECH_OLD_WORLD_TACTICS</Type>
 			<Description>TXT_KEY_TECH_OLD_WORLD_TACTICS</Description>
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_TACTICS_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_OLD_WORLD_TACTICS_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1609,6 +1610,7 @@
 			<Type>TECH_ECONOMICS</Type>
 			<Description>TXT_KEY_TECH_ECONOMICS</Description>
 			<Civilopedia>TXT_KEY_TECH_ECONOMICS_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_ECONOMICS_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

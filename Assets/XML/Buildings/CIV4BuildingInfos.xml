@@ -1342,7 +1342,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STABLE</ArtDefineTag>
 			<ObsoleteTech>TECH_POWER_PROJECTION</ObsoleteTech>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1382,7 +1382,7 @@
 			<Strategy>TXT_KEY_BUILDING_PALISADE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PALISADE</ArtDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_COMPANIES</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2887,6 +2887,7 @@
 			<Strategy>TXT_KEY_BUILDING_MAGAZINE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAGAZINE</ArtDefineTag>
+			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

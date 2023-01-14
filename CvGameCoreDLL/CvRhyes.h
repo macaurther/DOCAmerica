@@ -23,6 +23,8 @@ typedef list<char*> LISTCHAR;
 
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther
+#define UNITCLASS_HORSE_ARCHER	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_HORSE_ARCHER"))					// MacAurther
+#define UNITCLASS_MUSKETMAN		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_MUSKETMAN"))					// MacAurther
 #define UNITCLASS_SLAVE			((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))
 
 #define IMPROVEMENT_COTTAGE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE"))					// MacAurther
@@ -33,6 +35,8 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_NATIVE_TECHS		((TechTypes)GC.getInfoTypeForString("TECH_FISHING") + 1)							// MacAurther
 #define TECH_LINGUISTICS		((TechTypes)GC.getInfoTypeForString("TECH_LINGUISTICS"))							// MacAurther
+#define TECH_OLD_WORLD_TACTICS	((TechTypes)GC.getInfoTypeForString("TECH_OLD_WORLD_TACTICS"))							// MacAurther
+#define TECH_ECONOMICS			((TechTypes)GC.getInfoTypeForString("TECH_ECONOMICS"))							// MacAurther
 
 enum DoCTechs
 {
