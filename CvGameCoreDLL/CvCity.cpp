@@ -4338,6 +4338,12 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			updateYield();
 		}
 
+		// MacAurther: American UB, need to update Capital commerce on construction
+		if (eBuilding == (BuildingTypes)BUILDING_STATE_HOUSE)
+		{
+			GET_PLAYER(getOwner()).updateCapitalCommerce();
+		}
+
 		changeEspionageDefenseModifier(GC.getBuildingInfo(eBuilding).getEspionageDefenseModifier() * iChange);
 		changeGreatPeopleRateModifier(GC.getBuildingInfo(eBuilding).getGreatPeopleRateModifier() * iChange);
 		changeFreeExperience(GC.getBuildingInfo(eBuilding).getFreeExperience() * iChange);
@@ -4627,6 +4633,12 @@ void CvCity::processSpecialist(SpecialistTypes eSpecialist, int iChange)
 	int iHappinessChange = GC.getSpecialistInfo(eSpecialist).getHappiness();
 
 	iHappinessChange += GET_PLAYER(getOwnerINLINE()).getSpecialistHappiness();
+
+	// MacAurther: American UP
+	if (GET_PLAYER(getOwnerINLINE()).getCivilizationType() == AMERICA && eSpecialist >= SPECIALIST_GREAT_PRIEST && eSpecialist <= SPECIALIST_GREAT_SPY)
+	{
+		iHappinessChange += 1;
+	}
 
 	if (iHappinessChange > 0)
 	{

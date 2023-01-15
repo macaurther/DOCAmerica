@@ -19,7 +19,8 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_ERAS				(ERA_ATOMIC+1)
 
-#define BUILDINGCLASS_PALACE			((BuildingClassTypes)0)
+#define BUILDINGCLASS_PALACE	((BuildingClassTypes)0)
+#define BUILDINGCLASS_MEETING_HALL ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_MEETING_HALL"))		// MacAurther
 
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther

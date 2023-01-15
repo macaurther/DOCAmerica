@@ -24925,6 +24925,12 @@ void CvPlayer::updateCapitalCommerce()
 		iNewCapitalCommerce += countColonies() * getColonyCommerce();
 	}
 
+	// MacAurther: American UP: +1 Gold in Capital from each State House
+	if (getCivilizationType() == AMERICA)
+	{
+		iNewCapitalCommerce += getBuildingClassCount(BUILDINGCLASS_MEETING_HALL);
+	}
+
 	if (iNewCapitalCommerce != iOldCapitalCommerce)
 	{
 		m_iCapitalCommerce = iNewCapitalCommerce;

@@ -753,6 +753,12 @@ def createSpecificUnits(iPlayer, tile):
 	elif iCiv == iInca:
 		if not bHuman:
 			makeUnit(iPlayer, iSettler, tile)
+	elif iCiv == iAmerica:	# American UP
+		makeUnit(iPlayer, iGreatStatesman, tile)
+		makeUnit(iPlayer, iGreatGeneral, tile)
+		makeUnit(iPlayer, iGreatScientist, tile)
+		makeUnit(iPlayer, iGreatMerchant, tile)
+		makeUnit(iPlayer, iGreatArtist, tile)
 	elif iCiv == iColombia:
 		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
 
