@@ -429,6 +429,9 @@ def group(iGroup):
 def start(identifier):
 	return LocationCityArgument(dCapitals[identifier])
 
+def resources():
+	return SumAggregate(iResource for iResource in infos.bonuses()).named("TXT_KEY_VICTORY_NAME_RESOURCES")
+
 def happiness_resources():
 	return [iResource for iResource in infos.bonuses() if infos.bonus(iResource).getHappiness() > 0]
 

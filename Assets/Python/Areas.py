@@ -21,7 +21,7 @@ iAztecs :		(30, 60), # Tenochtitlan
 iSpain :		(55, 59), # Santo Domingo
 iIroquois :		(51, 84), # Onondaga
 iPortugal :		(67, 26), # Sao Paulo
-iEngland :		(50, 77), # Jamestown
+iEngland :		(51, 77), # Jamestown
 iFrance :		(58, 89), # Quebec
 iNetherlands :	(56, 81), # New Amsterdam
 iHawaii :		(14, 49), # Hilo

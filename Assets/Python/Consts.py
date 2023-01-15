@@ -617,23 +617,25 @@ iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range
 
 #Regions
 iNumRegions = 36
-(rAlaska, rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland, rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, 
-rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia, rSierraMadre, rBajio, rYucatan, rMesoamerica,
-rCaribbean, rHawaii, rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rAmazon, rBrazilianHighlands, rPantanal, 
-rChile, rParaguay, rUruguay, rPampas, rPatagonia, rGreenland) = range(iNumRegions)
+#				2				3				4				5				6				7				8				9				10
+(rAlaska, 		rNunavut, 		rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	rNewEngland, 	rMidAtlantic, 	rDeepSouth, 	rGulfCoast, 
+rMidwest, 		rSouthwest, 	rGreatPlains, 	rRockies, 		rCalifornia, 	rCascadia, 		rSierraMadre, 	rBajio, 		rYucatan, 		rMesoamerica,
+rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia, 		rAmazon, 		rBrazilianHighlands, rPantanal, 
+rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland) = range(iNumRegions)
 
 lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland]
-lUnitedStates = [rAlaska, rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia, rHawaii]
+lContinentalUS = [rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia]
+lUnitedStates = lContinentalUS + [rAlaska, rHawaii]
 lMexico = [rSierraMadre, rBajio, rYucatan]
 lBrazil = [rAmazon, rBrazilianHighlands, rPantanal]
 lArgentina = [rPampas, rPatagonia]
 
-lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, lBrazil, rChile, rParaguay, rUruguay, lArgentina]
+lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rChile, rParaguay, rUruguay] + lArgentina + lBrazil
 lCentralAmerica = [rMesoamerica, rCaribbean]
-lNorthAmerica = [lCanada, lUnitedStates, lMexico]
+lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico 
 
-lAmerica = [lSouthAmerica, lCentralAmerica, lNorthAmerica]
-
+lAmerica = lSouthAmerica + lCentralAmerica + lNorthAmerica
+lWest = lAmerica + [rHawaii, rGreenland]
 
 #Projects
 

@@ -6851,10 +6851,10 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 
-	// MacAurther: English UP: +2 Gold on Lumbermill
+	// MacAurther: English UP: +2 Gold on Logging Camp
 	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == ENGLAND)
 	{
-		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_LUMBERMILL"))
+		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_LOGGING_CAMP"))
 		{
 			iYield += 2;
 		}

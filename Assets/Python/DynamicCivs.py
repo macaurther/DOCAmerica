@@ -848,7 +848,7 @@ def leader(iPlayer):
 		if iEra >= iIndustrial: return iNapoleon
 		
 	elif iCiv == iEngland:
-		if iEra >= Modern: return iChurchill
+		if iEra >= iModern: return iChurchill
 		
 		if iEra >= iIndustrial: return iVictoria
 		
