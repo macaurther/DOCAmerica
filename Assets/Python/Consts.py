@@ -222,7 +222,7 @@ iFrance : 1608,
 iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
-iAmerica : 250,#1775,
+iAmerica : 1775,
 iHaiti : 1804,
 iBolivia : 1810,
 iArgentina : 1810,
@@ -475,6 +475,9 @@ iAerodynamics, 	iSatellites, 	iSuperconductors, iTelecommunications, iComputers,
 iSupermaterials, iFusion, 		iNanotechnology, iRobotics,		iAutomation, 
 iUnifiedTheory, iArtificialIntelligence, iBiotechnology,
 iTranshumanism) = range(iNumTechs)
+
+# Techs that Natives start the game with, but Europeans have to trade for
+iNativeTechs = (iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iFishing)
 
 # initialise unit variables to unit indices from XML
 

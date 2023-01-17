@@ -5,15 +5,18 @@ from Core import *
 lCivilizations = [
 	Civilization(
 		iMaya,
-		techs=techs.of(iMining, iPottery, iAgriculture)
+		iGold=200,
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iTeotihuacan,
-		techs=techs.of(iMining, iPottery, iAgriculture)
+		iGold=50,
+		techs=techs.column(1).including(iPottery, iAgriculture, iMining)
 	),
 	Civilization(
 		iTiwanaku,
-		techs=techs.of(iMining, iPottery, iAgriculture)
+		iGold=50,
+		techs=techs.column(1).including(iPottery, iAgriculture, iPastoralism)
 	),
 	Civilization(
 		iNative,

@@ -777,7 +777,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
+					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
 					<UnitType>UNIT_CHIMU_SUCHUC_CHIQUI</UnitType>
 				</Unit>
 			</Units>
@@ -1790,7 +1790,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
+					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
 					<UnitType>UNIT_MAYAN_HOLKAN</UnitType>
 				</Unit>
 				<Unit>
@@ -2106,7 +2106,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_SKIRMISHER</UnitClassType>
+					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
 					<UnitType>UNIT_MUISCA_GUECHA</UnitType>
 				</Unit>
 			</Units>

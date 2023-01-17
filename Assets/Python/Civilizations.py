@@ -156,6 +156,7 @@ class Civilization(object):
 		
 		if self.techs:
 			for iTech in self.techs:
+				print ("NEW Tech " + str(iTech) + " obtained")
 				self.team.setHasTech(iTech, True, self.player.getID(), False, False)
 			
 			self.player.setStartingEra(self.player.getCurrentEra())
@@ -182,62 +183,59 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=200,
-		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iTeotihuacan,
-		iGold=200,
-		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		iGold=50,
+		techs=techs.column(1).including(iPottery, iAgriculture, iMining)
 	),
 	Civilization(
 		iTiwanaku,
-		iGold=200,
-		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		iGold=50,
+		techs=techs.column(1).including(iPottery, iAgriculture, iPastoralism)
 	),
 	Civilization(
 		iWari,
 		iGold=200,
 		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iMississippi,
 		iGold=200,
 		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iPuebloan,
 		iGold=200,
 		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iMuisca,
 		iGold=200,
 		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iNorse,
 		iGold=200,
 		lCivics=[],
-		techs=techs.column(4)
+		techs=techs.column(4).without(*iNativeTechs)
 	),
 	Civilization(
 		iChimu,
 		iGold=200,
 		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iInuit,
 		iGold=200,
 		lCivics=[],
-		techs=techs.of(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iInca,
@@ -412,19 +410,7 @@ lCivilizations = [
 
 dStartingUnits = CivDict({
 	iMaya: {
-		iSettle: 1,
 		iWork: 1,
-		iSkirmish: 2,
-	},
-	iTeotihuacan: {
-		iSettle: 1,
-		iWork: 1,
-		iSkirmish: 2,
-	},
-	iTiwanaku: {
-		iSettle: 1,
-		iWork: 1,
-		iSkirmish: 2,
 	},
 	iWari: {
 		iSettle: 1,

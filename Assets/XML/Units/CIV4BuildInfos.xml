@@ -661,7 +661,7 @@
 			<Type>BUILD_ORCHARD</Type>
 			<Description>TXT_KEY_BUILD_ORCHARD</Description>
 			<Help/>
-			<PrereqTech>TECH_POTTERY</PrereqTech>
+			<PrereqTech>TECH_GEOGRAPHY</PrereqTech>
 			<iTime>500</iTime>
 			<iCost>15</iCost>
 			<bKill>0</bKill>

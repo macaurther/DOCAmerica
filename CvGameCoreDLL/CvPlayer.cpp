@@ -4365,7 +4365,7 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 							{
 								FAssertMsg(item.m_iData >= 0, "item.m_iData is expected to be non-negative (invalid Index)");
 
-								if (GET_PLAYER(eWhoTo).canResearch(((TechTypes)item.m_iData), true))
+								if (GET_PLAYER(eWhoTo).canResearch(((TechTypes)item.m_iData), true) || (TechTypes)item.m_iData < NUM_NATIVE_TECHS) // MacAurther: Can always trade Native Techs
 								{
 									return true;
 								}
@@ -5289,11 +5289,12 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				if (canResearch((TechTypes)iI))
-				{
+				// MacAurther: Can get goody techs that you can't normally research, so we just need to check whether or not we have it already
+				//if (canResearch((TechTypes)iI))
+				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
 					bTechFound = true;
 					break;
-				}
+				//}
 			}
 		}
 
@@ -5487,7 +5488,9 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				if (canResearch((TechTypes)iI))
+				// MacAurther: Can get goody techs that you can't normally research, so we just need to check whether or not we have it already
+				//if (canResearch((TechTypes)iI))
+				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
 				{
 					iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "Goody Tech"));
 
@@ -7736,12 +7739,6 @@ bool CvPlayer::canEverResearch(TechTypes eTech) const
 		return false;
 	}
 
-	// MacAurther: Native Techs cannot be researched, they have to be known from spawn, traded, or gifted
-	if (eTech < NUM_NATIVE_TECHS)
-	{
-		return false;
-	}
-
 	if(GC.getUSE_CANNOT_RESEARCH_CALLBACK())
 	{
 		CyArgsList argsList;
@@ -7754,6 +7751,12 @@ bool CvPlayer::canEverResearch(TechTypes eTech) const
 		{
 			return false;
 		}
+	}
+
+	// MacAurther: Native Techs cannot be researched, they have to be known from spawn, traded, or gifted
+	if (eTech < NUM_NATIVE_TECHS)
+	{
+		return false;
 	}
 
 	return true;
@@ -22726,7 +22729,7 @@ bool CvPlayer::canStealTech(PlayerTypes eTarget, TechTypes eTech) const
 {
 	if (GET_TEAM(GET_PLAYER(eTarget).getTeam()).isHasTech(eTech))
 	{
-		if (canResearch(eTech))
+		if (canResearch(eTech) || eTech < NUM_NATIVE_TECHS) // MacAurther: Can steal Native Techs
 		{
 			return true;
 		}
