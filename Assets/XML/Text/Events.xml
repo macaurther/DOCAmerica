@@ -6267,54 +6267,6 @@
 		<Spanish>La metr&#243;polis %s1:2_civ_adjective de %s2_city ha construido una maravilla de los transportes p&#250;blicos: una red subterr&#225;nea de ferrocarriles. La han llamado "metropolitano" o "metro".</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_TEA</Tag>
-		<English>%s1_civ_adjective citizens who are socially advanced have adopted imported %s4_civ_adjective tea as their beverage of choice.</English>
-		<French>Les citoyens %s1:2_civ_adjective, qui sont socialement avanc&#233;s, ont adopt&#233; le th&#233; %s4_civ_adjective d'importation comme boisson pr&#233;f&#233;r&#233;e.</French>
-		<German>%s1:3_civ_adjective B&#252;rger der gehobenen sozialen Schicht trinken nun am liebsten importierten %s4:2_civ_adjective Tee.</German>
-		<Italian>I cittadini %s1:3_civ_adjective, socialmente avanzati, hanno adottato il t&#232; %s4:1_civ_adjective d'importazione come bevanda preferita.</Italian>
-		<Spanish>Los ciudadanos %s1:3_civ_adjective m&#225;s avanzados socialmente han adoptado el t&#233; %s4:1_civ_adjective de importaci&#243;n como bebida predilecta.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_THE_GOTHS</Tag>
-		<English>A massive barbarian uprising is occurring. The Goths have gathered an army and their axemen seek to plunder civilizations.</English>
-		<French>Un soul&#232;vement massif de barbares est en cours. Les Goths ont rassembl&#233; une arm&#233;e et leurs soldats avec hache veulent mettre &#224; sac toute civilisation.</French>
-		<German>Es gibt einen Barbarenaufstand. Die Goten haben eine Armee versammelt und ihre Axtk&#228;mpfer gieren nach den Sch&#228;tzen der Zivilisation.</German>
-		<Italian>&#200; in corso una gigantesca rivolta di barbari. I Goti hanno formato un esercito e i loro guerrieri con ascia vogliono distruggere la civilt&#224;.</Italian>
-		<Spanish>Se est&#225; produciendo un levantamiento b&#225;rbaro masivo. Los godos han reunido un ej&#233;rcito y sus soldados con hacha pretenden saquear civilizaciones.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_THE_HUNS</Tag>
-		<English>A massive barbarian uprising is occurring. Attila the Hun leads his forces in a crusade against the very concept of civilization.</English>
-		<French>Un soul&#232;vement massif de barbares est en cours. Les troupes d'Attila le Hun luttent contre le concept m&#234;me de la civilisation.</French>
-		<German>Es gibt einen Barbarenaufstand. Attila der Hunne f&#252;hrt seine Truppen auf einen Kreuzzug gegen die Grundz&#252;ge der Zivilisation.</German>
-		<Italian>&#200; in corso una gigantesca rivolta di barbari. Attila l'Unno guida le sue forze in una crociata contro il concetto stesso di civilt&#224;.</Italian>
-		<Spanish>Se est&#225; produciendo un levantamiento b&#225;rbaro masivo. Atila el Huno lidera a sus fuerzas en una cruzada contra el concepto mismo de civilizaci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_THE_PHILISTINES</Tag>
-		<English>A massive barbarian uprising is occurring. The Philistines have gathered an army of spearmen and are on the march.</English>
-		<French>Un soul&#232;vement massif de barbares est en cours. Les Philistins ont rassembl&#233; une arm&#233;e de lanciers et sont en marche.</French>
-		<German>Es gibt einen Barbarenaufstand. Die Philister haben eine Armee von Speerk&#228;mpfern versammelt und marschieren in die Schlacht.</German>
-		<Italian>&#200; in corso una gigantesca rivolta di barbari. I Filistei hanno formato un esercito di lancieri e si sono messi in marcia.</Italian>
-		<Spanish>Se est&#225; produciendo un levantamiento b&#225;rbaro masivo. Los filisteos han reunido un ej&#233;rcito de lanceros y &#233;ste ha iniciado su marcha.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_THE_VANDALS</Tag>
-		<English>A massive barbarian uprising is occurring. The Vandals strike out against civilization, seeking to claim its prizes with their swords.</English>
-		<French>Un soul&#232;vement massif de barbares est en cours. Les Vandales attaquent la civilisation et leur d&#251; avec leurs &#233;p&#233;es.</French>
-		<German>Es gibt einen Barbarenaufstand. Die Wandalen ziehen auf einen Kreuzzug gegen die Zivilisation und fordern die Beute mit dem blanken Schwert ein.</German>
-		<Italian>&#200; in corso una gigantesca rivolta di barbari. I Vandali si scagliano contro la civilt&#224;, cercando di conquistarne i vantaggi con le spade.</Italian>
-		<Spanish>Se est&#225; produciendo un levantamiento b&#225;rbaro masivo. Los v&#225;ndalos atacan la civilizaci&#243;n y utilizan sus espadas para conseguir su bot&#237;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_THE_VEDIC_ARYANS</Tag>
-		<English>A massive barbarian uprising is occurring. The Vedic Aryans seek to plunder the riches of civilization.</English>
-		<French>Un soul&#232;vement massif de barbares est en cours. Les Aryens v&#233;diques veulent piller les richesses de la civilisation.</French>
-		<German>Es gibt einen Barbarenaufstand. Die vedischen Arier wollen die Sch&#228;tze der Zivilisation pl&#252;ndern.</German>
-		<Italian>&#200; in corso una gigantesca rivolta di barbari. Gli Ariani vedici vogliono saccheggiare le ricchezze della civilt&#224;.</Italian>
-		<Spanish>Se est&#225; produciendo un levantamiento b&#225;rbaro masivo. Los arios v&#233;dicos pretenden saquear las riquezas de la civilizaci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THOROUGHBRED</Tag>
 		<English>Thoroughbred race horses raised by %s1_civ_adjective breeders have generated extra revenue for their treasury.</English>
 		<French>Les chevaux pur-sang des &#233;leveurs %s1:2_civ_adjective ont g&#233;n&#233;r&#233; des revenus suppl&#233;mentaires pour leur tr&#233;sorerie.</French>
@@ -6561,5 +6513,85 @@
 		<German>[PARAGRAPH:1]Um diese Quest abzuschlie&#223;en, m&#252;ssen Sie %d1 [COLOR_BUILDING_TEXT]Docks[COLOR_REVERT] in Ihren K&#252;stenst&#228;dten bauen. Au&#223;erdem m&#252;ssen Sie %d2 [COLOR_UNIT_TEXT]Karavellen[COLOR_REVERT] bauen.[PARAGRAPH:1]Sie scheitern, wenn eine andere Zivilisation die Quest vor Ihnen abschlie&#223;t oder wenn Sie das Industriezeitalter erreichen, ohne die Bedingungen erf&#252;llt zu haben.</German>
 		<Italian>[PARAGRAPH:1]To complete this quest, you must construct %d1 [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] in your various coastal cities. You will also have to build %d2 [COLOR_UNIT_TEXT]Caravels[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you reach the Industrial Era without having met the conditions.</Italian>
 		<Spanish>[PARAGRAPH:1]To complete this quest, you must construct %d1 [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] in your various coastal cities. You will also have to build %d2 [COLOR_UNIT_TEXT]Caravels[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you reach the Industrial Era without having met the conditions.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AWAKENING</Tag>
+		<English>Firebrand preachers in %s2_city are leading increasingly popular sermons, reviving the people's faith.</English>
+		<French>Firebrand preachers in %s2_city are leading increasingly popular sermons, reviving the people's faith.</French>
+		<German>Firebrand preachers in %s2_city are leading increasingly popular sermons, reviving the people's faith.</German>
+		<Italian>Firebrand preachers in %s2_city are leading increasingly popular sermons, reviving the people's faith.</Italian>
+		<Spanish>Firebrand preachers in %s2_city are leading increasingly popular sermons, reviving the people's faith.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AWAKENING_1</Tag>
+		<English>This should make them happy.</English>
+		<French>This should make them happy.</French>
+		<German>This should make them happy.</German>
+		<Italian>This should make them happy.</Italian>
+		<Spanish>This should make them happy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AWAKENING_2</Tag>
+		<English>Make a donation to the parish.</English>
+		<French>Make a donation to the parish.</French>
+		<German>Make a donation to the parish.</German>
+		<Italian>Make a donation to the parish.</Italian>
+		<Spanish>Make a donation to the parish.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AWAKENING_3</Tag>
+		<English>Fully fund the evangelicals.</English>
+		<French>Fully fund the evangelicals.</French>
+		<German>Fully fund the evangelicals.</German>
+		<Italian>Fully fund the evangelicals.</Italian>
+		<Spanish>Fully fund the evangelicals.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_WITCH_HUNT</Tag>
+		<English>The %s2_city Witch Trials have caused great disorder.</English>
+		<French>The %s2_city Witch Trials have caused great disorder.</French>
+		<German>The %s2_city Witch Trials have caused great disorder.</German>
+		<Italian>The %s2_city Witch Trials have caused great disorder.</Italian>
+		<Spanish>The %s2_city Witch Trials have caused great disorder.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WITCH_HUNT_1</Tag>
+		<English>The townsfolk of %s2_city have begun trying their neighbors for crimes of witchcraft.</English>
+		<French>The townsfolk of %s2_city have begun trying their neighbors for crimes of witchcraft.</French>
+		<German>The townsfolk of %s2_city have begun trying their neighbors for crimes of witchcraft.</German>
+		<Italian>The townsfolk of %s2_city have begun trying their neighbors for crimes of witchcraft.</Italian>
+		<Spanish>The townsfolk of %s2_city have begun trying their neighbors for crimes of witchcraft.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_TEA_PARTY</Tag>
+		<English>The %s2_city Tea Party has left officials mired.</English>
+		<French>The %s2_city Tea Party has left officials mired.</French>
+		<German>The %s2_city Tea Party has left officials mired.</German>
+		<Italian>The %s2_city Tea Party has left officials mired.</Italian>
+		<Spanish>The %s2_city Tea Party has left officials mired.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TEA_PARTY</Tag>
+		<English>The citizens of %s2_city are rioting over new taxes! They have destroyed crates of goods throughout the city.</English>
+		<French>The citizens of %s2_city are rioting over new taxes! They have destroyed crates of goods throughout the city.</French>
+		<German>The citizens of %s2_city are rioting over new taxes! They have destroyed crates of goods throughout the city.</German>
+		<Italian>The citizens of %s2_city are rioting over new taxes! They have destroyed crates of goods throughout the city.</Italian>
+		<Spanish>The citizens of %s2_city are rioting over new taxes! They have destroyed crates of goods throughout the city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TEA_PARTY_1</Tag>
+		<English>The taxes shall stand! We need that revenue.</English>
+		<French>The taxes shall stand! We need that revenue.</French>
+		<German>The taxes shall stand! We need that revenue.</German>
+		<Italian>The taxes shall stand! We need that revenue.</Italian>
+		<Spanish>The taxes shall stand! We need that revenue.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TEA_PARTY_2</Tag>
+		<English>Repeal the tax, it's clear it was too much to bear.</English>
+		<French>Repeal the tax, it's clear it was too much to bear.</French>
+		<German>Repeal the tax, it's clear it was too much to bear.</German>
+		<Italian>Repeal the tax, it's clear it was too much to bear.</Italian>
+		<Spanish>Repeal the tax, it's clear it was too much to bear.</Spanish>
 	</TEXT>
 </Civ4GameText>
