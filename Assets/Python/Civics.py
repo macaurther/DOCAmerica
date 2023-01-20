@@ -76,7 +76,7 @@ def isCommunist(iPlayer):
 def isFascist(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iSociety not in [iTolerance, iMulticulturalism] and civic.iExpansion in [iNationhood, iPuppeteering] and civic.iLegal != iDemocracy:
+	if civic.iSociety not in [iOpportunity, iMulticulturalism] and civic.iExpansion in [iNationhood, iPuppeteering] and civic.iLegal != iDemocracy:
 		return True
 	
 	return False

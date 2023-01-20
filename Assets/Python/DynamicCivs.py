@@ -509,8 +509,6 @@ def specificName(iPlayer):
 		if bCityStates:
 			return short(iPlayer)
 			
-		if isCurrentCapital(iPlayer, "Brussels", "Antwerpen"):
-			return "TXT_KEY_CIV_NETHERLANDS_BELGIUM"
 			
 def adjective(iPlayer, bIgnoreVassal = False):
 	iCiv = civ(iPlayer)
@@ -586,10 +584,6 @@ def specificAdjective(iPlayer):
 		if bResurrected:
 			if isCurrentCapital(iPlayer, "La Paz"):
 				return "TXT_KEY_CIV_INCA_BOLIVIAN"
-				
-	elif iCiv == iNetherlands:
-		if isCurrentCapital(iPlayer, "Brussels", "Antwerpen"):
-			return "TXT_KEY_CIV_NETHERLANDS_BELGIAN"
 			
 	
 ### Title methods ###

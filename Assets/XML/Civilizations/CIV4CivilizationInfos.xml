@@ -1668,7 +1668,21 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Cahokia</City>
+				<City>Wenro</City>
+				<City>Osinika</City>
+				<City>Grand River</City>
+				<City>Akwesasne</City>
+				<City>Buffalo Creek</City>
+				<City>Brantford</City>
+				<City>Genesse River</City>
+				<City>Canandaigua Lake</City>
+				<City>Lake Simcoe</City>
+				<City>Salamanca</City>
+				<City>Gowanda</City>
+				<City>Akron</City>
+				<City>Kanesatake</City>
+				<City>Ganienkeh</City>
+				<City>Chondote</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -1739,20 +1753,14 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Uxmal</City>
-				<City>Mayapan</City>
 				<City>Oxte'tuun</City>
 				<City>Xukpi</City>
 				<City>Quirigua</City>
 				<City>Izancanac</City>
 				<City>Altun Ha</City>
 				<City>Izamal</City>
-				<City>Coba</City>
 				<City>Dzibilchaltun</City>
-				<City>Edzna</City>
 				<City>Lamanain</City>
-				<City>Kaminaljuyu</City>
-				<City>Nim Li Punit</City>
 				<City>Cozumel</City>
 				<City>Oxkintok</City>
 				<City>Becan</City>
@@ -2082,7 +2090,6 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Hunza</City>
 				<City>Tundama</City>
 				<City>Suamox</City>
 				<City>Arcabuco</City>
@@ -2172,43 +2179,73 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Maastricht</City>
-				<City>Middelburg</City>
-				<City>Delft</City>
-				<City>Leiden</City>
-				<City>Haarlem</City>
-				<City>'s-Hertogenbosch</City>
-				<City>Deventer</City>
-				<City>Kampen</City>
-				<City>Leeuwarden</City>
-				<City>Enkhuizen</City>
-				<City>Hoorn</City>
-				<City>Tiel</City>
-				<City>Breda</City>
-				<City>Eindhoven</City>
-				<City>Dordrecht</City>
+				<City>Fort Nassau</City>
+				<City>Fort Oranje</City>
+				<City>Rensselaerswyck</City>
+				<City>Hoboken</City>
+				<City>Nieuw Haarlem</City>
+				<City>Harsimus</City>
+				<City>Pavonia</City>
+				<City>Communipaw</City>
+				<City>Fort Huys de Goede Hoop</City>
+				<City>De Punt</City>
+				<City>Vriessendael</City>
+				<City>'s Gravesande</City>
 				<City>Vlissingen</City>
-				<City>Kampvere</City>
-				<City>Roermond</City>
-				<City>Zutphen</City>
-				<City>Amersfoort</City>
-				<City>Gouda</City>
-				<City>Alkmaar</City>
-				<City>Medemblik</City>
-				<City>Gorkum</City>
-				<City>Tilburg</City>
-				<City>Bergen op Zoom</City>
-				<City>Zwolle</City>
-				<City>Harderwijk</City>
-				<City>Venlo</City>
-				<City>Franeker</City>
-				<City>Harlingen</City>
-				<City>Stavoren</City>
-				<City>Assen</City>
-				<City>Enschede</City>
-				<City>Apeldoorn</City>
-				<City>Lelystad</City>
-				<City>Almere</City>
+				<City>Yonkers</City>
+				<City>Nieuw Amersfoort</City>
+				<City>Fort Schoonenborch</City>
+				<City>Midwout</City>
+				<City>Nieuw Utrecht</City>
+				<City>Wiltwijk</City>
+				<City>Bergen</City>
+				<City>Boswijck</City>
+				<City>Oud Tappan</City>
+				<City>Fort Saratoga</City>
+				<City>Fort Sint Andries</City>
+				<City>Rustdorp</City>
+				<City>Noortwijck</City>
+				<City>Lampsinsburg</City>
+				<City>Fort Altena</City>
+				<City>Nieuw Walcheren</City>
+				<City>Saba</City>
+				<City>Roodenbergh</City>
+				<City>Nieuw Brunswijck</City>
+				<City>Nieuw Amstel</City>
+				<City>Middelburgh</City>
+				<City>Staten Eylant</City>
+				<City>Beverwijck</City>
+				<City>Colen Donck</City>
+				<City>Fort Sterreschans</City>
+				<City>Heemstede</City>
+				<City>Fort Wilhelmus</City>
+				<City>Oude Dorpe</City>
+				<City>Vriedelandt</City>
+				<City>Achter Col</City>
+				<City>Roode Hoek</City>
+				<City>Kievets Hoek</City>
+				<City>Fort Amsterdam</City>
+				<City>Fort Beveren</City>
+				<City>Maspat</City>
+				<City>Stabroek</City>
+				<City>Fort Keulen</City>
+				<City>Jemseq</City>
+				<City>De Bouwerij</City>
+				<City>Oester Baai</City>
+				<City>Noten Eylant</City>
+				<City>De Wal</City>
+				<City>Ter Tholen</City>
+				<City>Pomeroon</City>
+				<City>Peekskill</City>
+				<City>Fort Bennet</City>
+				<City>Broncks</City>
+				<City>Brouwershaven</City>
+				<City>Nieuw Dorp</City>
+				<City>Nieuw Holland</City>
+				<City>Santa Catharina</City>
+				<City>Nederhorst</City>
+				<City>Fort Elsenburgh</City>
+				<City>Naiack</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -2292,28 +2329,69 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Birka</City>
-				<City>Sigtuna</City>
-				<City>Odense</City>
-				<City>Ribe</City>
-				<City>Lindholm</City>
-				<City>V&#228;ster&#229;s</City>
-				<City>Lund</City>
-				<City>Kaupang</City>
-				<City>Thingvellir</City>
-				<City>Stamford</City>
-				<City>Vadrefjord</City>
-				<City>Rowane</City>
-				<City>Tynwald</City>
-				<City>Leirvik</City>
-				<City>Tinganes</City>
-				<City>Brattahlid</City>
-				<City>Thunderfall</City>
-				<City>Vorbasse</City>
-				<City>Bj&#248;rgvin</City>
-				<City>T&#248;nsberg</City>
-				<City>Kirkjub&#248;ur</City>
-				<City>L&#246;d&#246;se</City>
+				<City>Nya G&#246;teborg</City>
+				<City>Fort Trefaldighet</City>
+				<City>Nya &#196;lfsborg</City>
+				<City>Sveaborg</City>
+				<City>Uppland</City>
+				<City>Minquas</City>
+				<City>Tenakonk</City>
+				<City>Provins</City>
+				<City>Printztorp</City>
+				<City>Finlandia</City>
+				<City>Nya Korsholm</City>
+				<City>Nya Vaasa</City>
+				<City>Fort Mylndal</City>
+				<City>Torne</City>
+				<City>Fort Nassau</City>
+				<City>Fort Casimir</City>
+				<City>Sidoland</City>
+				<City>Ammansland</City>
+				<City>Fort Mecoponacka</City>
+				<City>Fort William</City>
+				<City>Fort Batenstein</City>
+				<City>Christiansborg</City>
+				<City>Fort Witsen</City>
+				<City>Fort Apollonia</City>
+				<City>Strandviken</City>
+				<City>Timmer&#246;n</City>
+				<City>Carolusborg</City>
+				<City>Gemoree Faktori</City>
+				<City>Accara Faktori</City>
+				<City>Saint-Bartholemy</City>
+				<City>Guadeloupe</City>
+				<City>Fort Frederiksborg</City>
+				<City>Tequirassy</City>
+				<City>Kingsessing</City>
+				<City>M&#246;lndal</City>
+				<City>&#214;versidolandet</City>
+				<City>Gustavia</City>
+				<City>Lillefolls</City>
+				<City>Sk&#246;ldpadde Kill</City>
+				<City>Druwee&#255;land</City>
+				<City>Aronaneck</City>
+				<City>Manaiping</City>
+				<City>Chamassungh</City>
+				<City>Marikens Hook</City>
+				<City>Mantes Kill</City>
+				<City>Sassaekon</City>
+				<City>Rode Udden</City>
+				<City>Fort Elsingborg</City>
+				<City>Christinehamn</City>
+				<City>Fort Korsholra</City>
+				<City>Henlopen</City>
+				<City>Tinicum</City>
+				<City>Darby</City>
+				<City>Moyamensing</City>
+				<City>Nitapkung</City>
+				<City>Wicaco</City>
+				<City>Shackamaxon</City>
+				<City>Mill Dorp</City>
+				<City>Swanwyck</City>
+				<City>Gripsholm</City>
+				<City>G&#246;tepori</City>
+				<City>Prinzinhovi</City>
+				<City>R&#228;s&#228;l&#228;</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -2591,7 +2669,15 @@
 			<bPlayable>0</bPlayable>
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
-				<City>Cahokia</City>
+				<City>Pueblo Bonito</City>
+				<City>Bandelier</City>
+				<City>Casa Rinconada</City>
+				<City>Kayenta</City>
+				<City>Hovenweep</City>
+				<City>Keresans</City>
+				<City>Hopi</City>
+				<City>Tanoans</City>
+				<City>Mogollon</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -2667,11 +2753,57 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Vladimir</City>
-				<City>Starajarussa</City>
-				<City>Suzdal</City>
-				<City>Jelets</City>
-				<City>Ribinsk</City>
+                <City>Elizavetinsk</City>
+                <City>Balabanovo</City>
+                <City>Mikhailovsk</City>
+                <City>Petropavlovsk</City>
+                <City>Nikolaevsk</City>
+                <City>Belogorsk</City>
+                <City>Slavorossia</City>
+                <City>Okhotsk</City>
+                <City>Belgorod</City>
+                <City>Egorovsk</City>
+                <City>Mednorechinsk</City>
+                <City>Slavyansk</City>
+                <City>Novo Moskva</City>
+                <City>Yakutat</City>
+                <City>Dezhnev</City>
+                <City>Fort Kolmakov</City>
+                <City>Tmutarakan</City>
+                <City>Novo Vasyuki</City>
+                <City>Abakan</City>
+                <City>Noyabrsk</City>
+                <City>Marunitch</City>
+                <City>Polovina</City>
+                <City>Zapadni</City>
+                <City>Pribylovsk</City>
+                <City>Kasilov</City>
+                <City>Gavan Trekh Svyatitelyei</City>
+                <City>Pavlovskaya</City>
+                <City>Svyataya Nikolaya</City>
+                <City>Fort Arkhangela Mikhaila</City>
+                <City>Pokrovskaya</City>
+                <City>Svyataya Dionisiya</City>
+                <City>Novo Alexandrovsk</City>
+                <City>Ninilchik</City>
+                <City>Georgievskaya</City>
+                <City>Fort Nushagak</City>
+                <City>Fort Wrangel</City>
+                <City>Fort Suvarov</City>
+                <City>Konstantinovsk</City>
+                <City>Fort Andreavski</City>
+                <City>Fort Batzulnetas</City>
+                <City>Chitina</City>
+                <City>Fort Delarov</City>
+                <City>Georgiyevsk</City>
+                <City>Fort Pavlosk</City>
+                <City>Ozerskoye</City>
+                <City>Fort Kusilov</City>
+                <City>Katlianski</City>
+                <City>Fort Derabin</City>
+                <City>Saint Simeon</City>
+                <City>Fort Stikine</City>
+                <City>Fort Naknek</City>
 			</Cities>
 			<Buildings>
 				<Building>

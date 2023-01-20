@@ -585,7 +585,7 @@ iNumCivics = 42
 iAuthority, iCouncil, iCommonLaw, iViceroyality, iFederalism, iSelfDetermination, iDemocracy,
 iTraditionalism, iSpecialization, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
-iAnimism, iCasteSystem, iIsolationism, iHaven, iOpportunity, iTolerance, iMulticulturalism,
+iAnimism, iCasteSystem, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,
 iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, iMultilateralism) = range(iNumCivics)
 
 iNumCivicCategories = 6

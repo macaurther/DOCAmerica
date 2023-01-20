@@ -7,7 +7,7 @@ lPeakExceptions = []
 
 dCapitals = CivDict({
 iMaya :			(36, 58), # Tikal
-iTeotihuacan :	(28, 61), # Teotihuacan
+iTeotihuacan :	(29, 62), # Teotihuacan
 iTiwanaku :		(52, 33), # Tiwanaku
 iWari :			(46, 39), # Huari
 iMississippi :	(44, 79), # Sunwatch
@@ -17,7 +17,7 @@ iNorse :		(77, 104), # Reykjavik
 iChimu :		(43, 41), # Chan Chan
 iInuit :		(6, 104), # North Alaska
 iInca :			(49, 36), # Cuzco
-iAztecs :		(30, 60), # Tenochtitlan
+iAztecs :		(29, 60), # Tenochtitlan
 iSpain :		(55, 59), # Santo Domingo
 iIroquois :		(51, 84), # Onondaga
 iPortugal :		(67, 26), # Sao Paulo
@@ -28,9 +28,9 @@ iHawaii :		(14, 49), # Hilo
 iRussia :		(15, 96), # Novo-Arkhangelsk
 iAmerica :		(51, 79), # Washington
 iHaiti :		(53, 58), # Port-au-Prince
-iBolivia :		(52, 34), # La Paz
+iBolivia :		(52, 33), # La Paz
 iArgentina :	(57, 16), # Buenos Aires
-iMexico :		(30, 60), # Mexico City
+iMexico :		(29, 60), # Mexico City
 iColombia :		(48, 49), # Bogota
 iChile :		(49, 17), # Santiago
 iPeru :			(47, 36), # Lima
@@ -56,7 +56,7 @@ iInca :		(36, 58),	# Lima
 
 dBirthArea = CivDict({
 iMaya : 		((35, 57), 	(37, 59)),
-iTeotihuacan :	((27, 60), 	(29, 62)),
+iTeotihuacan :	((28, 60), 	(30, 63)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((45, 36), 	(47, 40)),
 iMississippi :	((43, 78), 	(45, 79)),
@@ -107,7 +107,7 @@ iCanada :		[(49, 83), (50, 83), (51, 83), (52, 83), (53, 83), (54, 83), (55, 83)
 
 dCoreArea = CivDict({
 iMaya : 		((34, 57), 	(37, 59)),
-iTeotihuacan :	((27, 60), 	(29, 62)),
+iTeotihuacan :	((28, 31), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((45, 36), 	(47, 40)),
 iMississippi :	((34, 77), 	(31, 46)),# fix pagan religion

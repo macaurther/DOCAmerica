@@ -735,8 +735,6 @@ def calculateStability(iPlayer):
 			iCap = 2 * (iBelieverThreshold - 100) / 5
 			if iBelieverStability < iCap: iBelieverStability = iCap
 			
-			if iBelieverStability > 0 and iTolerance in civics: iBelieverStability /= 2
-			
 			iReligionStability += iBelieverStability
 			
 	
@@ -963,7 +961,7 @@ def getCivicStability(iPlayer, civics=None):
 	if iDemocracy in civics: 
 		if iPublicWelfare in civics: iStability += 2
 		if iFreeEnterprise in civics: iStability += 2
-		if iTolerance in civics: iStability += 2
+		if iOpportunity in civics: iStability += 2
 		if iMultilateralism in civics: iStability += 3
 		if iMercantilism in civics: iStability -= 2
 		if iSlavery in civics: iStability -= 4
@@ -993,7 +991,7 @@ def getCivicStability(iPlayer, civics=None):
 	
 	if iMigrantWorkers in civics:
 		if iMulticulturalism in civics: iStability += 3
-		if iTolerance in civics: iStability += 2
+		if iOpportunity in civics: iStability += 2
 		if iIsolationism in civics: iStability -= 2
 		if iPublicWelfare in civics: iStability -= 3
 	
@@ -1047,7 +1045,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iMultilateralism in civics: iStability += 2
 		if iNationhood in civics: iStability -= 2
 	
-	if iTolerance in civics:
+	if iProfiteering in civics:
 		pass
 	
 	if iOpportunity in civics:
@@ -1228,7 +1226,7 @@ def isTolerated(iPlayer, iReligion):
 	if iStateReligion == iReligion: return True
 	
 	# civics
-	if pPlayer.getCivics(4) in [iTolerance]: return True
+	if pPlayer.getCivics(4) in [iOpportunity]: return True
 	
 	# Exceptions
 	if iStateReligion == iConfucianism and iReligion == iTaoism: return True

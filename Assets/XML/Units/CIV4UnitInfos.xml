@@ -1425,6 +1425,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_AVIATION</PrereqTech>
+			<PrereqBuilding>BUILDING_AIRPORT</PrereqBuilding>
 			<iCost>175</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3069,6 +3070,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_TELECOMMUNICATIONS</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3151,6 +3153,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SMELTING</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -3241,6 +3244,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_MINING</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3418,6 +3422,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_ARTISANRY</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3493,6 +3498,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_FIREARMS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3671,6 +3677,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3753,6 +3760,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_COLONIZATION</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3845,6 +3853,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>115</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3927,6 +3936,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>115</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4017,6 +4027,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_GLOBALISM</PrereqTech>
+			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>175</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6495,6 +6506,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REFINING</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<iCost>140</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -6600,6 +6612,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_AERODYNAMICS</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<iCost>160</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -6681,6 +6694,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_FIREARMS</PrereqTech>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
@@ -6767,6 +6781,7 @@
 				</UnitAI>
 			</NotUnitAIs>
 			<PrereqTech>TECH_COMPANIES</PrereqTech>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<TechTypes>
 				<PrereqTech>TECH_FIREARMS</PrereqTech>
 			</TechTypes>
@@ -6851,6 +6866,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
@@ -6932,6 +6948,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>130</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7009,6 +7026,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_RAILROAD</PrereqTech>
+			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7083,6 +7101,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SYNTHETICS</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7157,6 +7176,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_ROBOTICS</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_ALUMINUM</BonusType>
@@ -7239,6 +7259,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
+			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -7326,6 +7347,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
+			<PrereqBuilding>BUILDING_FORGE</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7411,6 +7433,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_METALLURGY</PrereqTech>
+			<PrereqBuilding>BUILDING_MAGAZINE</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>165</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7496,6 +7519,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_MEASUREMENT</PrereqTech>
+			<PrereqBuilding>BUILDING_MAGAZINE</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7582,6 +7606,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_FLIGHT</PrereqTech>
+			<PrereqBuilding>BUILDING_ARSENAL</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7661,6 +7686,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_COMPUTERS</PrereqTech>
+			<PrereqBuilding>BUILDING_ARSENAL</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
@@ -7822,6 +7848,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_ROCKETRY</PrereqTech>
 			</TechTypes>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<iCost>240</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -8432,6 +8459,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
 			</TechTypes>
+			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -8503,6 +8531,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
 			</TechTypes>
+			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -8566,6 +8595,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_METEOROLOGY</PrereqTech>
+			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -8625,6 +8655,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
+			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_COAL</BonusType>
 			</PrereqBonuses>
@@ -8681,6 +8712,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_REFINING</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 				<BonusType>BONUS_URANIUM</BonusType>
@@ -8737,6 +8769,7 @@
 			<TechTypes>
 				<PrereqTech>TECH_FLIGHT</PrereqTech>
 			</TechTypes>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 				<BonusType>BONUS_URANIUM</BonusType>
@@ -8805,6 +8838,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_TIMEKEEPING</PrereqTech>
+			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
 			<TechTypes>
 				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
 			</TechTypes>
@@ -8870,6 +8904,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_METEOROLOGY</PrereqTech>
+			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -8928,6 +8963,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
+			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
 			<BonusType>BONUS_COAL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
@@ -8998,6 +9034,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_RADIO</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 				<BonusType>BONUS_URANIUM</BonusType>
@@ -9089,6 +9126,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_RADIO</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 				<BonusType>BONUS_URANIUM</BonusType>
@@ -9178,6 +9216,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SUPERCONDUCTORS</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 				<BonusType>BONUS_URANIUM</BonusType>
@@ -9423,6 +9462,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_PNEUMATICS</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 			</PrereqBonuses>
@@ -9490,6 +9530,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_NUCLEAR_POWER</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<BonusType>BONUS_URANIUM</BonusType>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9568,6 +9609,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_TIMEKEEPING</PrereqTech>
+			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9634,6 +9676,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
+			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9700,6 +9743,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
+			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9762,6 +9806,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_ENGINE</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_COAL</BonusType>
 				<BonusType>BONUS_OIL</BonusType>
@@ -9827,6 +9872,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 				<BonusType>BONUS_URANIUM</BonusType>
@@ -9890,6 +9936,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SATELLITES</PrereqTech>
+			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
 				<BonusType>BONUS_URANIUM</BonusType>
@@ -10021,6 +10068,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_AVIATION</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -10077,6 +10125,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_AERODYNAMICS</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_ALUMINUM</BonusType>
@@ -10135,6 +10184,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_AUTOMATION</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_ALUMINUM</BonusType>
@@ -10194,6 +10244,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_AVIATION</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<TechTypes>
 				<PrereqTech>TECH_SYNTHETICS</PrereqTech>
 			</TechTypes>
@@ -10255,6 +10306,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SUPERCONDUCTORS</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<BonusType>BONUS_OIL</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_ALUMINUM</BonusType>
@@ -10317,6 +10369,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_FISSION</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<TechTypes>
 				<PrereqTech>TECH_AVIATION</PrereqTech>
 			</TechTypes>
@@ -10366,6 +10419,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_LASER</PrereqTech>
+			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
 			<TechTypes>
 				<PrereqTech>TECH_ROCKETRY</PrereqTech>
 			</TechTypes>
@@ -10476,6 +10530,7 @@
 				</GreatPeople>
 			</GreatPeoples>
 			<PrereqTech>TECH_SATELLITES</PrereqTech>
+			<PrereqBuilding>BUILDING_LABORATORY</PrereqBuilding>
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
