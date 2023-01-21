@@ -22,6 +22,9 @@ typedef list<char*> LISTCHAR;
 #define BUILDINGCLASS_PALACE	((BuildingClassTypes)0)
 #define BUILDINGCLASS_MEETING_HALL ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_MEETING_HALL"))		// MacAurther
 
+#define UNIT_RUSSIAN_PROMYSHLENNIKI	((UnitClassTypes)GC.getInfoTypeForString("UNIT_RUSSIAN_PROMYSHLENNIKI"))		// MacAurther
+#define UNIT_TIWANAKU_SISQENO	((UnitClassTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))					// MacAurther
+
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther
 #define UNITCLASS_HORSE_ARCHER	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_HORSE_ARCHER"))					// MacAurther

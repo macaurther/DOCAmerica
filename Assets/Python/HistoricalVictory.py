@@ -73,7 +73,7 @@ dGoals = {
 	iMaya: (
 		FirstDiscover(iMathematics, iCalendar),
 		Wonder(iTempleOfKukulkan, by=900),
-		ContactBeforeRevealed(group(iCivGroupEurope).named(EUROPEAN_CIVILIZATION), plots.regions(*lAmerica).named(AMERICA)),
+		BestTechPlayer(at=1500),
 	),
 	iTeotihuacan: (
 		CultureAmount(500, at=550),

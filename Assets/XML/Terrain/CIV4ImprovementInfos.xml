@@ -175,6 +175,10 @@
 					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_LAGOON</TerrainType>
+					<bMakesValid>0</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
@@ -756,6 +760,10 @@
 					<TerrainType>TERRAIN_PLAINS</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_LAGOON</TerrainType>
+					<bMakesValid>0</bMakesValid>
+				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids/>
 			<ImprovementPillage/>
@@ -1032,7 +1040,12 @@
 			<iHappinessPercent>0</iHappinessPercent>
 			<iPillageGold>5</iPillageGold>
 			<bOutsideBorders>0</bOutsideBorders>
-			<TerrainMakesValids/>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_LAGOON</TerrainType>
+					<bMakesValid>0</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
@@ -1227,7 +1240,12 @@
 			<iHappinessPercent>-100</iHappinessPercent>
 			<iPillageGold>5</iPillageGold>
 			<bOutsideBorders>0</bOutsideBorders>
-			<TerrainMakesValids/>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_LAGOON</TerrainType>
+					<bMakesValid>0</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
@@ -1981,6 +1999,10 @@
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
 					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_LAGOON</TerrainType>
+					<bMakesValid>0</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids>

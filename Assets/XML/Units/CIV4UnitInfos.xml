@@ -651,6 +651,8 @@
 			<iNukeRange>-1</iNukeRange>
 			<iWorkRate>100</iWorkRate>
 			<iAsset>2</iAsset>
+			<iBaseHurry>50</iBaseHurry>
+			<iHurryMultiplier>0</iHurryMultiplier>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>
@@ -674,6 +676,7 @@
 			<Description>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI</Description>
 			<Civilopedia>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bFood>1</bFood>
 			<UnitClassUpgrades>

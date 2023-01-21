@@ -2518,8 +2518,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (pPlot->isImpassable())
 	{
-		// MacAurther: Sacsayhuaman effect
-		bool bCanEnterPeaks = pPlot->isPeak() && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_SACSAYHUAMAN) && getUnitCombatType() != NO_UNITCOMBAT;
+		// MacAurther: Sacsayhuaman effect and Tiwanaku UU: Sisqeno
+		bool bCanEnterPeaks = pPlot->isPeak() && (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_SACSAYHUAMAN) && getUnitCombatType() != NO_UNITCOMBAT) || getUnitType() == UNIT_TIWANAKU_SISQENO;
 		if (!canMoveImpassable() && !bCanEnterPeaks)
 		{
 			return false;
@@ -7261,6 +7261,16 @@ bool CvUnit::build(BuildTypes eBuild)
 		if (GC.getBuildInfo(eBuild).getTechPrereq() == INFRASTRUCTURE)
 		{
 			iWorkRate *= 150;
+			iWorkRate /= 100;
+		}
+	}
+
+	// MacAurther: Russian UU: Promyshlenniki
+	if (eBuild != NO_BUILD && getUnitType() == UNIT_RUSSIAN_PROMYSHLENNIKI)
+	{
+		if (plot()->getTerrainType() == TERRAIN_TUNDRA || plot()->getTerrainType() == TERRAIN_MOORLAND)
+		{
+			iWorkRate *= 150;	// Yes, this is multiplicative with Highway or Railroad if Russia has one of the above Wonders, oh well
 			iWorkRate /= 100;
 		}
 	}

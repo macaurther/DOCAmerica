@@ -206,7 +206,7 @@ iMaya : 250,
 iTeotihuacan : 250,
 iTiwanaku : 250,
 iWari : 500,
-iMississippi : 600,
+iMississippi : 250,#600,
 iPuebloan : 750,
 iMuisca : 800,
 iNorse : 874,
@@ -635,6 +635,7 @@ lArgentina = [rPampas, rPatagonia]
 
 lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rChile, rParaguay, rUruguay] + lArgentina + lBrazil
 lCentralAmerica = [rMesoamerica, rCaribbean]
+lLatinAmerica = lCentralAmerica + lMexico
 lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico 
 
 lAmerica = lSouthAmerica + lCentralAmerica + lNorthAmerica
@@ -678,10 +679,10 @@ iNumFeatures = 13
 (iSeaIce, 		iJungle, 		iOasis, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
 iFallout, 		iTaiga, 		iPalmForest) = range(iNumFeatures)
 
-iNumTerrains = 19
+iNumTerrains = 20
 #				2				3				4				5				6				7				8				9				10
 (iGrass, 		iPlains, 		iDesert, 		iTundra, 		iSnow, 			iCoast, 		iOcean, 		iTerrainPeak, 	iTerrainHills, 	iMarsh,
-iLagoon,		iArcticCoast,	iSemidesert,	iPrairie,		iMoorland,		iSaltflat,		iSaltlake,		iAtoll,			iSavanna) = range(iNumTerrains)
+iLagoon,		iArcticCoast,	iSemidesert,	iPrairie,		iMoorland,		iSaltflat,		iSaltlake,		iAtoll,			iSavanna,		iWideRiver,) = range(iNumTerrains)
 
 
 #Plague

@@ -1682,32 +1682,15 @@ bool CvPlot::isWithinTeamCityRadius(TeamTypes eTeam, PlayerTypes eIgnorePlayer) 
 
 bool CvPlot::isLake() const
 {
+	// MacAurther: Wide Rivers are not Lakes, don't increase yield
+	if (getTerrainType() == TERRAIN_WIDE_RIVER)
+	{
+		return false;
+	}
+
 	CvArea* pArea;
 
 	pArea = area();
-
-	//Rhye - start (salt lake)
-	int saltLakePlots[13][2] = {
-	{76, 43}, //Van
-	{82, 48}, //Aral sea
-	{82, 49},
-	{83, 48},
-	{83, 49},
-	{87, 50}, //eastern Balkhash
-	{88, 50},
-	{88, 48}, //Aydar
-	{72, 49}, //Black Sea
-	{112, 43}, //Japan
-	{113, 44},
-	{112, 14}, //Eyre
-	{14, 48} //Great Salt Lake
-	};
-
-	for (int i = 0; i < 13; i++) {
-		if (getX() == saltLakePlots[i][0] && getY() == saltLakePlots[i][1])
-			return false;
-	}
-	//Rhye - end
 
 	if (pArea != NULL)
 	{
@@ -1936,7 +1919,27 @@ bool CvPlot::isRiverSide() const
 
 bool CvPlot::isRiver() const
 {
-	return (getRiverCrossingCount() > 0);
+	if (getRiverCrossingCount() > 0)
+	{
+		return true;
+	}
+	// MacAurther: Check if adjacent to a Wide River terrain plot; if so, you're next to a river too
+	CvPlot* pLoopPlot;
+	int iI;
+	for (iI = 0; iI < NUM_CARDINALDIRECTION_TYPES; ++iI)
+	{
+		pLoopPlot = plotCardinalDirection(getX_INLINE(), getY_INLINE(), ((CardinalDirectionTypes)iI));
+
+		if (pLoopPlot != NULL)
+		{
+			if (pLoopPlot->getTerrainType() == TERRAIN_WIDE_RIVER)
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+	
 }
 
 
@@ -7124,7 +7127,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		// 1SDAN?: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce along Rivers
 		if (GET_PLAYER(ePlayer).getCivilizationType() == MISSISSIPPI)
 		{
-			if (!isPeak() && !isWater() && eYield == YIELD_COMMERCE && isRiver())
+			if (eYield == YIELD_COMMERCE && isRiver() && !isPeak() && (!isWater() || getTerrainType() == TERRAIN_WIDE_RIVER))
 			{
 				iYield += 2;
 			}
