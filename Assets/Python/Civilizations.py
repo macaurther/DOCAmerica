@@ -222,7 +222,7 @@ lCivilizations = [
 		iNorse,
 		iGold=50,
 		lCivics=[iColony, iCommonLaw, iMerchantTrade],
-		techs=techs.column(4).without(*iNativeTechs)
+		techs=techs.column(4).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iChimu,
@@ -254,7 +254,7 @@ lCivilizations = [
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iConquest],
-		techs=techs.column(5)
+		techs=techs.column(5).without(*lNativeTechs)
 	),
 	Civilization(
 		iPortugal,
@@ -262,7 +262,7 @@ lCivilizations = [
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iSlavery, iMerchantTrade, iTributaries],
-		techs=techs.column(5).including(iFirearms, iLogistics, iExploration)
+		techs=techs.column(5).including(iFirearms, iLogistics, iExploration).without(*lNativeTechs)
 	),
 	Civilization(
 		iIroquois,
@@ -277,7 +277,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iMerchantTrade],
 		lEnemies=[],
-		techs=techs.column(6)
+		techs=techs.column(6).without(*lNativeTechs)
 	),
 	Civilization(
 		iFrance,
@@ -285,7 +285,7 @@ lCivilizations = [
 		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iMerchantTrade],
-		techs=techs.column(6)
+		techs=techs.column(6).without(*lNativeTechs)
 	),
 	Civilization(
 		iNetherlands,
@@ -293,7 +293,7 @@ lCivilizations = [
 		iAdvancedStartPoints=300,
 		iStateReligion=iProtestantism,
 		lCivics=[iColony, iMercantilism],
-		techs=techs.column(6).including(iEconomics, iShipbuilding)
+		techs=techs.column(6).including(iEconomics, iShipbuilding).without(*lNativeTechs)
 	),
 	Civilization(
 		iHawaii,
@@ -307,7 +307,7 @@ lCivilizations = [
 		iAdvancedStartPoints=50,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iColony, iIndenturedServitude, iAgrarianism],
-		techs=techs.column(9)
+		techs=techs.column(9).without(*lNativeTechs)
 	),
 	Civilization(
 		iAmerica,

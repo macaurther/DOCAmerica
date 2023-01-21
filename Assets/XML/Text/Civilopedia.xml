@@ -2736,46 +2736,47 @@ Your stability level can change during a stability check. As long it is higher t
 		<English>[H1]Tribes[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Tribal Villages (also known as Goody Huts or just Huts) are replaced with Tribes. There are two types of Tribes:
 [NEWLINE][ICON_BULLET][LINK=IMPROVEMENT_TRIBE]Tribe[\LINK]: An Amerindian tribe that has yet to be contacted by Europeans
 [ICON_BULLET][LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribe[\LINK]: An Amerindian tribe that has been contacted by Europeans
-[PARAGRAPH:1]At the beginning of the game, the map is fairly densely populated by Tribes, roughly corresponding to known Amerindian tribes at the time they were contacted by Europeans, usually between 1500 and 1600 AD (no attempt was made to project tribe locations back in time to the year 250 AD). The main notable features of Tribes are:
+[PARAGRAPH:1]At the beginning of the game, the map is fairly densely populated by Tribes, roughly corresponding to known Amerindian tribes at the time they were contacted by Europeans, usually between 1500 and 1600 AD. The main features of Tribes are:
 [NEWLINE][ICON_BULLET]Tribes are no longer simply removed by moving a unit onto them, nor are they removed by cultural border growth. A Tribe can exist within your borders.
 [ICON_BULLET]Tribes and Contacted Tribes can be removed by pillaging; however, the inhabitants of that Tribe will rise up to resist you.
 [ICON_BULLET]Contacted Tribes can be removed by expending a Missionary to convert the Tribe into a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK].
 [ICON_BULLET]Tribes work the land they're on, decreasing yields available to civilizations with Tribes within their borders.
 [ICON_BULLET]Later in the game, Civics become available to negate Tribes' decrease in yields.
 [ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them. The Tribe then becomes a Contacted Tribe.
-[ICON_BULLET]If you have the [LINK=TECH_LINGUISTICS]Linguistics[\LINK] [LINK=CONCEPT_NATIVE_TECHS]Native Technology[\LINK], a uncontacted Tribe will give you a gift (equivalent to Goody rewards) when you contact them. 
-[ICON_BULLET]Pre-Columbian Native Civilizations have no tools to interact with Tribes other than pillaging them.
+[ICON_BULLET]If you have the [LINK=TECH_LINGUISTICS]Linguistics[\LINK] [LINK=CONCEPT_NATIVE_TECHS]Native Technology[\LINK], an uncontacted Tribe will give you a gift (equivalent to Goody rewards) when you contact them. 
+[ICON_BULLET]Pre-Columbian Native Civilizations (other than the [LINK=CIVILIZATION_IROQUOIS]Iroqouis[\LINK]) have no tools to interact with Tribes other than pillaging them.
 		</English>
 	</TEXT>
 		<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NATIVE_TECHS_PEDIA</Tag>
-		<English>[H1]Native Technologies[\H1][PARAGRAPH:2]Amerindian peoples had lived in the Americas for at least 14,000 years prior to the arrival of Europeans, and they know their land well. They posses knowledge of the locations of mineral deposits, how to track certain animals, and how to cultivate certain crops. This knowledge is inherant to a Native Civilization, but, as a European, you will need to obtain it somehow.
+		<English>[H1]Native Technologies[\H1][PARAGRAPH:2]Amerindian peoples had lived in the Americas for at least 14,000 years prior to the arrival of Europeans, and they know their land well. They posses knowledge of the locations of mineral deposits, how to track certain animals, and how to cultivate certain crops. This knowledge is inherant to a Native Civilization; however, if you are playing as a European civilization, you will need to obtain it somehow.
 		[PARAGRAPH:1]In Dawn of Civilization: America, the first column of Technologies are the "Native Technologies", which represent generational knowledge Native civilizations have about their land.
 [NEWLINE][ICON_BULLET]Native Techs cannot be researched, have no prerequisite technologies, and lead to no other technologies.
-[ICON_BULLET]Each Native American civilization starts with each of the Native Techs.
-[ICON_BULLET]Native Techs can be traded from Native civilizations.
+[ICON_BULLET]Each Native American civilization starts with all of the Native Techs.
+[ICON_BULLET]Native Techs can be traded.
 [PARAGRAPH:1]Native Techs confer one of three types of advantages:
 [ICON_BULLET]Reveals the location of certain resources, such Gold and Corn.
 [ICON_BULLET]Allows additional promotions.
-[ICON_BULLET]Contacting [LINK=CONCEPT_TRIBES]Tribes[\LINK] will grant you gifts from the villagers ([LINK=TECH_LINGUISTICS]Linguistics[\LINK]). These gifts have a chance of being additional Native Techs.
+[ICON_BULLET]Allows [LINK=CONCEPT_TRIBES]Tribes[\LINK] to give you gifts (Goody rewards) when you contact them. These gifts have a chance of being additional Native Techs.
 [PARAGRAPH:1](Hint): As a European exploring the content, it might be wise to first get the Linguistics tech from a Native civilization, then go around contacting Tribes.
 		</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMMIGRATION_PEDIA</Tag>
 		<English>[H1]Immigration[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Immigration has be reworked from regular Dawn of Civilization. Previously, every few turns, Immigrant populations moved from a less desireable city to a more desirable one; however, in DoC: America, there are no Old World cities for citizens to emmigrate from (Modder's note: while I like the DoC system in theory, in practice the player has little control over gaining Immigrants. They just see an event message every now and then saying they either lost or gained population because their city was overcrowded/prosperous. It was a nice bit of flavor, but not something easy to strategize around).
-[PARAGRAPH:2]The new Immigration system no longer moves population around. Instead, it directly gives [ICON_FOOD] and/or [ICON_PRODUCTION] in cities based on their "Immigration". Immigration is calculated whenever a city's yields are adjusted, reflected in tooltips, and dependent on:
+[PARAGRAPH:2]The new Immigration system no longer moves population around. Instead, it directly gives [ICON_FOOD] in cities based on their "Immigration" rate. Immigration rate is independent to each city, calculated whenever a city's yields are adjusted, reflected in tooltips, and dependent on:
 [NEWLINE][ICON_BULLET]Buildings - certain buildings and Wonders can increase Immigration
 [ICON_BULLET]Civics - Society Civics determine which city yield contributes to Immigration
+[ICON_BULLET]Unique Powers - Some Unique Powers increase or modify Immigration
 [PARAGRAPH:1]Society Civics represent if your Civilization's culture is exclusive or inclusive and what motivates Immigrants to come across the sea to your colony or nation. Do they come seeking wealth? Or do they come seeking religious sanctuary? Or perhaps they come because of your vibrant culture? This is how Immigration is determined for each of the Society Civics:
-[NEWLINE][ICON_BULLET][LINK=CIVIC_ANIMISM]Animism[\LINK]: No additional Immigration | Your cities will only receive Immigrantion due to buildings and Wonders
-[ICON_BULLET][LINK=CIVIC_CASTE_SYSTEM]Caste System[\LINK]: No additional Immigration | Your cities will only receive Immigrantion due to buildings and Wonders
-[ICON_BULLET][LINK=CIVIC_ISOLATIONISM]Isolationism[\LINK]: No Immigration | Even if you have Immigration buildings and Wonders, your cities will not receive Immigrantion.
+[NEWLINE][ICON_BULLET][LINK=CIVIC_ANIMISM]Animism[\LINK]: No additional Immigration | Your cities will only receive Immigrantion due to Buildings, Wonders, or Unique Powers
+[ICON_BULLET][LINK=CIVIC_CASTE_SYSTEM]Caste System[\LINK]: No additional Immigration | Your cities will only receive Immigrantion due to Buildings, Wonders, or Unique Powers
+[ICON_BULLET][LINK=CIVIC_ISOLATIONISM]Isolationism[\LINK]: No Immigration | Even if you have Immigration Buildings, Wonders, or Unique Powers, your cities will not receive Immigrantion.
 [ICON_BULLET][LINK=CIVIC_HAVEN]Haven[\LINK]: [ICON_HAPPY] - [ICON_UNHAPPY] | Your Immigration is equal to your city's [ICON_HAPPY] minus [ICON_UNHAPPY].
 [ICON_BULLET][LINK=CIVIC_PROFITEERING]Profiteering[\LINK]: ([ICON_COMMERCE] / Population) - 2 | Your Immigration is equal to your city's base [ICON_COMMERCE] (before modifiers) divided by its Population, minus 2 (rounded down).
 [ICON_BULLET][LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK]: ([ICON_PRODUCTION] / Population) - 2 | Your Immigration is equal to your city's base [ICON_PRODUCTION] (before modifiers) divided by its Population, minus 2 (rounded down).
 [ICON_BULLET][LINK=CIVIC_MULTICULTURALISM]Multiculturalism[\LINK]: ([ICON_CULTURE] / Population) - 3 | Your Immigration is equal to your city's base [ICON_CULTURE] (before modifiers) divided by its Population, minus 3 (rounded down).
-[PARAGRAPH:1]Each city's Immigration value is added to its growth as [ICON_FOOD]. With the [LINK=CIVIC_MIGRANT_WORKERS]Migrant Workers[\LINK] Civic, each of your city's Immigration is also added to your production as [ICON_PRODUCTION]. Note that it is possible to have negative Immigration (Emmigration) with Haven, Opportunity, Tolerance, and Multiculturalism. If your society values [ICON_COMMERCE], for example, and you don't produce enough, your growth will slow and you might even lose population.
+[PARAGRAPH:1]Each city's Immigration value is added to its [ICON_FOOD]. With the [LINK=CIVIC_SLAVERY]Slavery[\LINK] Civic, each city's Immigration is also added to its [ICON_COMMERCE]. With the [LINK=CIVIC_MIGRANT_WORKERS]Migrant Workers[\LINK] Civic, each city's Immigration is also added to its [ICON_PRODUCTION]. Note that it is possible to have negative Immigration (Emmigration) with Haven, Opportunity, Tolerance, and Multiculturalism. If your society values [ICON_COMMERCE], for example, and you don't produce enough, your growth will slow and you might even lose population.
 		</English>
 	</TEXT>
 	<TEXT>
@@ -2785,7 +2786,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]At first, it only claims adjacent tiles, but it can claim a Big-Fat-Cross once [LINK=TECH_PIONEERING]Pioneering[\LINK] is researched. 
 [ICON_BULLET]Any territory claimed by a Fort remains in control of the Fort constructor until that Fort is destroyed (by razing). Even overwhelming Culture cannot override a Fort's claim.
 [ICON_BULLET]Occupying an enemy Fort will not switch the Fort's ownership either; the Fort must be destroyed.
-[PARAGRAPH:1]Use Forts to claim territory that is not worth spending maintenance for cities. Forts can help you gain control of remote resources, maintain vision of tracks of land, build defensive networks far from your cities that still allow units to heal faster, and claim tracks of land for Unique Historical Victories.
+[PARAGRAPH:1]Use Forts to claim territory that is not worth spending maintenance for cities. Forts can help you gain control of remote resources, maintain vision, build defensive networks far from your cities that still allow units to heal faster, and claim tracks of land for Unique Historical Victories.
 		</English>
 	</TEXT>
 	<TEXT>
@@ -2801,8 +2802,8 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]Certain Seige units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.
 [ICON_BULLET]Most units now have at least 2 Movement. This is to reflect the scale of the new DOCA map. Some units (such as heavy siege units) still only have 1 movement.
 [ICON_BULLET][LINK=UNIT_MILITIA_1]Militia[\LINK] is now its own upgrade path. Each Era has its own Militia. They are generally cheap to build and weak, with bonus defense in Cities.
-[ICON_BULLET]PLANNED: New buildings have been added.
-[ICON_BULLET]PLANNED: New Wonders have been added.
+[ICON_BULLET]New Buildings have been added.
+[ICON_BULLET]New Wonders have been added.
 [ICON_BULLET]PLANNED: Each Civilization now has a Regional Power (RP) in addition to a Unique Power (UP). Multiple Civilizations can share a single RP. RPs are unique to certain regions, such as the Andes, Mesoamerica, Europe, Anglosphere, or Latin America.
 [ICON_BULLET]PLANNED: After a certain date, European Civilizations become more likely to sell their land.
 		</English>

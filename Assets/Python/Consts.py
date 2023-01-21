@@ -206,10 +206,10 @@ iMaya : 250,
 iTeotihuacan : 250,
 iTiwanaku : 250,
 iWari : 500,
-iMississippi : 250,#600,
+iMississippi : 600,
 iPuebloan : 750,
 iMuisca : 800,
-iNorse : 874,
+iNorse : 250,#874,
 iChimu : 900,
 iInuit : 1050,
 iInca : 1100,
@@ -477,7 +477,7 @@ iUnifiedTheory, iArtificialIntelligence, iBiotechnology,
 iTranshumanism) = range(iNumTechs)
 
 # Techs that Natives start the game with, but Europeans have to trade for
-iNativeTechs = (iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iFishing)
+lNativeTechs = (iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iFishing)
 
 # initialise unit variables to unit indices from XML
 

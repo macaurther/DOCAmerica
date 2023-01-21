@@ -40,6 +40,9 @@ YUCATAN = "TXT_KEY_VICTORY_NAME_YUCATAN"
 BAJIO = "TXT_KEY_VICTORY_NAME_BAJIO"
 MISSISSIPPI_RIVER = "TXT_KEY_VICTORY_NAME_MISSISSIPPI_RIVER"
 OHIO_RIVER = "TXT_KEY_VICTORY_NAME_OHIO_RIVER"
+GREENLAND = "TXT_KEY_VICTORY_NAME_GREENLAND"
+VINLAND = "TXT_KEY_VICTORY_NAME_VINLAND"
+DELAWARE = "TXT_KEY_VICTORY_NAME_DELAWARE"
 
 # area descriptors
 ANDEAN_COAST = "TXT_KEY_VICTORY_NAME_ANDEAN_COAST"
@@ -134,9 +137,9 @@ dGoals = {
 		GoldAmount(999999, by=2000),
 	),
 	iNorse: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		Settle(plots.rectangle(tGreenland).named(GREENLAND), by=1000),
+		Settle(plots.rectangle(tVinland).named(VINLAND), by=1100),
+		Settle(plots.rectangle(tDelaware).named(DELAWARE), by=1640),
 	),
 	iChimu: (
 		BuildingCount((iKancha, 2), by=1300),
@@ -253,14 +256,14 @@ dGoals = {
 	iColombia: (
 		AllowNone(
 			group(iCivGroupEurope).named(EUROPEAN),
-			plots.rectangle(tPeru).named(PERU),
-			plots.rectangle(tGranColombia).named(GRAN_COLOMBIA),
-			plots.rectangle(tGuayanas).named(GUAYANAS),
-			plots.rectangle(tCaribbean).named(CARIBBEAN),
+			plots.region(rPeru).named(PERU),
+			plots.regions(*(rColombia, rVenezuela)).named(GRAN_COLOMBIA),
+			plots.region(rGuyana).named(GUAYANAS),
+			plots.region(rCaribbean).named(CARIBBEAN),
 			at=1870,
 		),
 		Control(
-			plots.rectangle(tSouthAmerica).without(lSouthAmericaExceptions).named(SOUTH_AMERICA),
+			plots.regions(*lSouthAmerica).named(SOUTH_AMERICA),
 			at=1920,
 		),
 		ResourceTradeGold(3000, by=1950),
@@ -290,17 +293,8 @@ dGoals = {
 		GoldAmount(999999, by=2000),
 	),
 	iCanada: (
-		All(
-			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.of(lAtlanticCoast).named(ATLANTIC_COAST)),
-			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.of(lPacificCoast).named(PACIFIC_COAST)),
-			by=1920,
-		),
-		All(
-			Control((plots.rectangle(tCanadaWest).without(lCanadaWestExceptions) + plots.rectangle(tCanadaEast).without(lCanadaEastExceptions)).named(CITIES_IN_CANADA)),
-			AreaPercent((plots.rectangle(tCanadaWest).without(lCanadaWestExceptions) + plots.rectangle(tCanadaEast).without(lCanadaEastExceptions)).named(CANADIAN_TERRITORY), 90),
-			NoCityConquered(),
-			by=1950,
-		),
+		GoldAmount(999999, by=2000),
+		GoldAmount(999999, by=2000),
 		BrokeredPeace(12, by=2000),
 	),
 	iCuba: (

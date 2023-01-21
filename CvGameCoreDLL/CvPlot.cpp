@@ -6662,6 +6662,12 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
+	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Coast and Arctic Coast
+	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && eYield == YIELD_FOOD && (getTerrainType() == TERRAIN_COAST || getTerrainType() == TERRAIN_ARCTIC_COAST))
+	{
+		iYield += 1;
+	}
+
 	// MacAurther: Southwest RP: +1 Production and +1 Commerce on Semidesert
 	if(eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_SOUTHWEST && getTerrainType() == TERRAIN_SEMIDESERT)
 	{
