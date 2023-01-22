@@ -185,19 +185,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_ENG2</Tag>
+		<English>Havens and Harbors</English>
+		<French>Havens and Harbors</French>
+		<German>Havens and Harbors</German>
+		<Italian>Havens and Harbors</Italian>
+		<Spanish>Havens and Harbors</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ENG3</Tag>
 		<English>Britannia Rule the Waves</English>
 		<French>Grande-Bretagne, r&#232;gne sur les flots </French>
 		<German>Britannia Rule the Waves</German>
 		<Italian>Britannia Rule the Waves</Italian>
 		<Spanish>Britannia Rule the Waves</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_ENG3</Tag>
-		<English>The Industrial Revolution</English>
-		<French>La r&#233;volution industrielle </French>
-		<German>Die industrielle Revolution</German>
-		<Italian>The Industrial Revolution</Italian>
-		<Spanish>The Industrial Revolution</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -326,6 +326,31 @@
 	</TEXT>
 	
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_IRO1</Tag>
+		<English>Beaver Wars</English>
+		<French>Beaver Wars</French>
+		<German>Beaver Wars</German>
+		<Italian>Beaver Wars</Italian>
+		<Spanish>Beaver Wars</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_IRO2</Tag>
+		<English>The Five Nations</English>
+		<French>The Five Nations</French>
+		<German>The Five Nations</German>
+		<Italian>The Five Nations</Italian>
+		<Spanish>The Five Nations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_IRO3</Tag>
+		<English>Shining Waters</English>
+		<French>Shining Waters</French>
+		<German>Shining Waters</German>
+		<Italian>Shining Waters</Italian>
+		<Spanish>Shining Waters</Spanish>
+	</TEXT>
+	
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_MAY1</Tag>
 		<English>The Sun</English>
 		<French>Le soleil </French>
@@ -451,17 +476,8 @@
 		<Spanish>Nya Sverige</Spanish>
 	</TEXT>
 	
-	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_POR1</Tag>
-		<English>Cartaz</English>
-		<French>Cartaz </French>
-		<German>Cartaz</German>
-		<Italian>Cartaz</Italian>
-		<Spanish>Cartaz</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_POR2</Tag>
 		<English>Age of Discovery</English>
 		<French>L'&#226;ge des d&#233;couvertes </French>
 		<German>Zeitalter der Entdeckungen</German>
@@ -469,12 +485,45 @@
 		<Spanish>Age of Discovery</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_POR3</Tag>
+		<Tag>TXT_KEY_VICTORY_TITLE_POR2</Tag>
 		<English>Treaty of Tordesilhas</English>
 		<French>Le trait&#233; de Tordesilhas</French>
 		<German>Vertrag von Tordesilhas</German>
 		<Italian>Treaty of Tordesilhas</Italian>
 		<Spanish>Treaty of Tordesilhas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_POR3</Tag>
+		<English>Slave Trade</English>
+		<French>Slave Trade</French>
+		<German>Slave Trade</German>
+		<Italian>Slave Trade</Italian>
+		<Spanish>Slave Trade</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PUE1</Tag>
+		<English>Mogollon</English>
+		<French>Mogollon </French>
+		<German>Mogollon</German>
+		<Italian>Mogollon</Italian>
+		<Spanish>Mogollon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PUE2</Tag>
+		<English>Desert People</English>
+		<French>Desert People </French>
+		<German>Desert People</German>
+		<Italian>Desert People</Italian>
+		<Spanish>Desert People</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PUE3</Tag>
+		<English>Pueblo Bonito</English>
+		<French>Pueblo Bonito </French>
+		<German>Pueblo Bonito</German>
+		<Italian>Pueblo Bonito</Italian>
+		<Spanish>Pueblo Bonito</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -504,19 +553,19 @@
 	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_SPA1</Tag>
-		<English>Plus Ultra</English>
-		<French>Plus ultra </French>
-		<German>Plus Ultra</German>
-		<Italian>Plus Ultra</Italian>
-		<Spanish>Plus Ultra</Spanish>
+		<English>Adelantados</English>
+		<French>Adelantados</French>
+		<German>Adelantados</German>
+		<Italian>Adelantados</Italian>
+		<Spanish>Adelantados</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_SPA2</Tag>
-		<English>The Treasure Fleet</English>
-		<French>La flotte des Indes </French>
-		<German>Die Schatzflotte</German>
-		<Italian>The Treasure Fleet</Italian>
-		<Spanish>The Treasure Fleet</Spanish>
+		<English>Gold, God, and Glory</English>
+		<French>Gold, God, and Glory</French>
+		<German>Gold, God, and Glory</German>
+		<Italian>Gold, God, and Glory</Italian>
+		<Spanish>Gold, God, and Glory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_SPA3</Tag>

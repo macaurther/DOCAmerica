@@ -2739,7 +2739,7 @@ Your stability level can change during a stability check. As long it is higher t
 [PARAGRAPH:1]At the beginning of the game, the map is fairly densely populated by Tribes, roughly corresponding to known Amerindian tribes at the time they were contacted by Europeans, usually between 1500 and 1600 AD. The main features of Tribes are:
 [NEWLINE][ICON_BULLET]Tribes are no longer simply removed by moving a unit onto them, nor are they removed by cultural border growth. A Tribe can exist within your borders.
 [ICON_BULLET]Tribes and Contacted Tribes can be removed by pillaging; however, the inhabitants of that Tribe will rise up to resist you.
-[ICON_BULLET]Contacted Tribes can be removed by expending a Missionary to convert the Tribe into a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK].
+[ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary to convert the Tribe into a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK]. This counts as a religion spread.
 [ICON_BULLET]Tribes work the land they're on, decreasing yields available to civilizations with Tribes within their borders.
 [ICON_BULLET]Later in the game, Civics become available to negate Tribes' decrease in yields.
 [ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them. The Tribe then becomes a Contacted Tribe.

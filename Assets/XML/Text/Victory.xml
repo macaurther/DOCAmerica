@@ -177,7 +177,7 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_DESC_CONVERT</Tag>
+		<Tag>TXT_KEY_VICTORY_DESC_CONVERT_TO</Tag>
 		<English>convert to %s1</English>
 		<French></French>
 		<German></German>
@@ -3011,6 +3011,62 @@
 		<Spanish>We have accomplished our second Historical Goal. A Golden Age has begun for our civilization!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_RESOURCES</Tag>
+		<English>Resources</English>
+		<French>Resources</French>
+		<German>Resources</German>
+		<Italian>Resources</Italian>
+		<Spanish>Resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_CONTACT</Tag>
+		<English>contact %s1</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_CONTACT_TRIBE</Tag>
+		<English>%s1 Tribes</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PROGR_CONTACT_TRIBE</Tag>
+		<English>Tribes contacted</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_CONVERT</Tag>
+		<English>convert %s1</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_SPREAD_RELIGION</Tag>
+		<English>%s1 Cities or Tribes</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PROGR_SPREAD_RELIGION</Tag>
+		<English>successful conversions</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_MESOAMERICA</Tag>
 		<English>Mesoamerica</English>
 		<French>Mesoamerica</French>
@@ -3099,17 +3155,111 @@
 		<Spanish>Delaware</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_NAME_RESOURCES</Tag>
-		<English>Resources</English>
-		<French>Resources</French>
-		<German>Resources</German>
-		<Italian>Resources</Italian>
-		<Spanish>Resources</Spanish>
+		<Tag>TXT_KEY_VICTORY_NAME_GREAT_LAKES</Tag>
+		<English>the Greak Lakes</English>
+		<French>the Greak Lakes</French>
+		<German>the Greak Lakes</German>
+		<Italian>the Greak Lakes</Italian>
+		<Spanish>the Greak Lakes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_LAKE_SUPERIOR</Tag>
+		<English>Lake Superior</English>
+		<French>Lake Superior</French>
+		<German>Lake Superior</German>
+		<Italian>Lake Superior</Italian>
+		<Spanish>Lake Superior</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_LAKE_MICHIGAN</Tag>
+		<English>Lake Michigan</English>
+		<French>Lake Michigan</French>
+		<German>Lake Michigan</German>
+		<Italian>Lake Michigan</Italian>
+		<Spanish>Lake Michigan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_LAKE_HURON</Tag>
+		<English>Lake Huron</English>
+		<French>Lake Huron</French>
+		<German>Lake Huron</German>
+		<Italian>Lake Huron</Italian>
+		<Spanish>Lake Huron</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_LAKE_ERIE</Tag>
+		<English>Lake Erie</English>
+		<French>Lake Erie</French>
+		<German>Lake Erie</German>
+		<Italian>Lake Erie</Italian>
+		<Spanish>Lake Erie</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_LAKE_ONTARIO</Tag>
+		<English>Lake Ontario</English>
+		<French>Lake Ontario</French>
+		<German>Lake Ontario</German>
+		<Italian>Lake Ontario</Italian>
+		<Spanish>Lake Ontario</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_KIVALLIQ</Tag>
+		<English>Kivalliq</English>
+		<French>Kivalliq</French>
+		<German>Kivalliq</German>
+		<Italian>Kivalliq</Italian>
+		<Spanish>Kivalliq</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_QIKIQTAALUK</Tag>
+		<English>Qikiqtaaluk</English>
+		<French>Qikiqtaaluk</French>
+		<German>Qikiqtaaluk</German>
+		<Italian>Qikiqtaaluk</Italian>
+		<Spanish>Qikiqtaaluk</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_NUNAVIK</Tag>
+		<English>Nunavik</English>
+		<French>Nunavik</French>
+		<German>Nunavik</German>
+		<Italian>Nunavik</Italian>
+		<Spanish>Nunavik</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_KALAALLIT</Tag>
+		<English>Kalaallit</English>
+		<French>Kalaallit</French>
+		<German>Kalaallit</German>
+		<Italian>Kalaallit</Italian>
+		<Spanish>Kalaallit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_MID_ATLANTIC</Tag>
+		<English>the Mid Atlantic</English>
+		<French>the Mid Atlantic</French>
+		<German>the Mid Atlantic</German>
+		<Italian>the Mid Atlantic</Italian>
+		<Spanish>the Mid Atlantic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_VENEZUELA</Tag>
+		<English>Venezuela</English>
+		<French>Venezuela</French>
+		<German>Venezuela</German>
+		<Italian>Venezuela</Italian>
+		<Spanish>Venezuela</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_BRAZILIAN_HIGHLANDS</Tag>
+		<English>the Brazilian Highlands</English>
+		<French>the Brazilian Highlands</French>
+		<German>the Brazilian Highlands</German>
+		<Italian>the Brazilian Highlands</Italian>
+		<Spanish>the Brazilian Highlands</Spanish>
 	</TEXT>
 	
-	
-	
-	
+
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_ACCOMPLISHED</Tag>
 		<English>Accomplished:</English>

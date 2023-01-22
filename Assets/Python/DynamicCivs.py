@@ -485,18 +485,8 @@ def specificName(iPlayer):
 	iGameEra = game.getCurrentEra()
 	bWar = isAtWar(iPlayer)
 			
-	if iCiv == iSpain:
-		if iReligion == iIslam:
-			return "TXT_KEY_CIV_SPAIN_AL_ANDALUS"
 			
-		if isCurrentCapital(iPlayer, "Barcelona", "Valencia"):
-			return "TXT_KEY_CIV_SPAIN_ARAGON"
-			
-	elif iCiv == iEngland:
-		if getColumn(iPlayer) >= 11 and cities.rectangle(tBritain).owner(iPlayer) >= 3:
-			return "TXT_KEY_CIV_ENGLAND_GREAT_BRITAIN"
-			
-	elif iCiv == iInca:
+	if iCiv == iInca:
 		if bResurrected:
 			if isCurrentCapital(iPlayer, "La Paz"):
 				return "TXT_KEY_CIV_INCA_BOLIVIA"
@@ -567,12 +557,8 @@ def specificAdjective(iPlayer):
 	
 	bMonarchy = not isCommunist(iPlayer) and not isFascist(iPlayer) and not isRepublic(iPlayer)
 
-	if iCiv == iSpain:
-		if isCurrentCapital(iPlayer, "Barcelona", "Valencia"):
-			return "TXT_KEY_CIV_SPAIN_ARAGONESE"
-
 			
-	elif iCiv == iFrance:
+	if iCiv == iFrance:
 		if iEra == iColonial:
 			return "TXT_KEY_CIV_FRANCE_FRANKISH"
 	
@@ -716,9 +702,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			
 		if bEmpire and iEra > iColonial:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
-			
-		if iEra == iColonial and isCurrentCapital(iPlayer, "Barcelona", "Valencia"):
-			return "TXT_KEY_CIV_SPAIN_CROWN_OF"
 			
 	elif iCiv == iFrance:
 		if not capital in cities.normal(iFrance):

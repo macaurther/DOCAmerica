@@ -565,4 +565,39 @@ class TradeGold(TrackRequirement):
 
 	def evaluate(self, evaluator):
 		return self.iValue / 100
+
+
+class ContactTribe(TrackRequirement):
+
+	TYPES = (COUNT,)
 	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTACT"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTACT_TRIBE"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_CONTACT_TRIBE"
+	
+	def __init__(self, *parameters, **options):
+		TrackRequirement.__init__(self, *parameters, **options)
+		
+		self.handle("goodyReceived", self.increment_tribes_contacted)
+		
+	def increment_tribes_contacted(self, goal):
+		self.increment()
+		goal.check()
+
+
+class ReligionSpreads(TrackRequirement):
+
+	TYPES = (COUNT,)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONVERT"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_SPREAD_RELIGION"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_SPREAD_RELIGION"
+	
+	def __init__(self, *parameters, **options):
+		TrackRequirement.__init__(self, *parameters, **options)
+		
+		self.handle("religionSpread", self.increment_religion_spreads)
+		
+	def increment_religion_spreads(self, goal):
+		self.increment()
+		goal.check()

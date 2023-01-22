@@ -251,7 +251,19 @@ class EventHandlerRegistry(object):
 				func(goal)
 		
 		return vassalState
+	
+	def goodyReceived(self, goal, applicable, func):
+		def goodyReceived((iPlayer, pPlot, pUnit, iGoodyType)):
+			if applicable(goal, iPlayer):
+				func(goal)
 		
+		return goodyReceived
+	
+	def religionSpread(self, goal, applicable, func):
+		def religionSpread((iReligion, iOwner, pSpreadCity)):
+			if applicable(goal, iOwner):
+				func(goal)
 		
-		
+		return religionSpread
+	
 event_handler_registry = EventHandlerRegistry()

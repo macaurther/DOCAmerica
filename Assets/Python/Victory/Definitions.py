@@ -134,6 +134,8 @@ SettledCities = GoalDefinition(req.SettledCities)
 SlaveTradeGold = GoalDefinition(req.SlaveTradeGold)
 SunkShips = GoalDefinition(req.SunkShips)
 TradeGold = GoalDefinition(req.TradeGold)
+ContactTribe = GoalDefinition(req.ContactTribe)
+ReligionSpreads = GoalDefinition(req.ReligionSpreads)
 
 
 ### ARGUMENTS ###

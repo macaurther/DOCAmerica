@@ -43,6 +43,19 @@ OHIO_RIVER = "TXT_KEY_VICTORY_NAME_OHIO_RIVER"
 GREENLAND = "TXT_KEY_VICTORY_NAME_GREENLAND"
 VINLAND = "TXT_KEY_VICTORY_NAME_VINLAND"
 DELAWARE = "TXT_KEY_VICTORY_NAME_DELAWARE"
+GREAT_LAKES = "TXT_KEY_VICTORY_NAME_GREAT_LAKES"
+LAKE_SUPERIOR = "TXT_KEY_VICTORY_NAME_LAKE_SUPERIOR"
+LAKE_MICHIGAN = "TXT_KEY_VICTORY_NAME_LAKE_MICHIGAN"
+LAKE_HURON = "TXT_KEY_VICTORY_NAME_LAKE_HURON"
+LAKE_ERIE = "TXT_KEY_VICTORY_NAME_LAKE_ERIE"
+LAKE_ONTARIO = "TXT_KEY_VICTORY_NAME_LAKE_ONTARIO"
+KIVALLIQ =  "TXT_KEY_VICTORY_NAME_KIVALLIQ"
+QIKIQTAALUK =  "TXT_KEY_VICTORY_NAME_QIKIQTAALUK"
+NUNAVIK =  "TXT_KEY_VICTORY_NAME_NUNAVIK"
+KALAALLIT =  "TXT_KEY_VICTORY_NAME_KALAALLIT"
+MID_ATLANTIC =  "TXT_KEY_VICTORY_NAME_MID_ATLANTIC"
+VENEZUELA =  "TXT_KEY_VICTORY_NAME_VENEZUELA"
+BRAZILIAN_HIGHLANDS =  "TXT_KEY_VICTORY_NAME_BRAZILIAN_HIGHLANDS"
 
 # area descriptors
 ANDEAN_COAST = "TXT_KEY_VICTORY_NAME_ANDEAN_COAST"
@@ -127,19 +140,19 @@ dGoals = {
 		),
 	),
 	iPuebloan: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		CultureAmount(500, at=1000),
+		ImprovementCount((iFarm, 10), at=1200),
+		BuildingCount((iCommon, 5), by=1300), # MacAurther TODO: Puelboan Kiva
 	),
 	iMuisca: (
 		AveragePopulation(10, at=1500),
 		TradeGold(2000, by=1540),
-		GoldAmount(999999, by=2000),
+		ControlledResourceCount(iGold, 5, at=1600),
 	),
 	iNorse: (
-		Settle(plots.rectangle(tGreenland).named(GREENLAND), by=1000),
-		Settle(plots.rectangle(tVinland).named(VINLAND), by=1100),
-		Settle(plots.rectangle(tDelaware).named(DELAWARE), by=1640),
+		FirstSettle(plots.rectangle(tGreenland).named(GREENLAND), by=1000),
+		FirstSettle(plots.rectangle(tVinland).named(VINLAND), by=1100),
+		Control(plots.rectangle(tDelaware).named(DELAWARE), at=1640),
 	),
 	iChimu: (
 		BuildingCount((iKancha, 2), by=1300),
@@ -147,7 +160,13 @@ dGoals = {
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 3, by=1500),
 	),
 	iInuit: (
-		GoldAmount(999999, by=2000),
+		All(
+			Settle(plots.rectangle(tKivalliq).named(KIVALLIQ)),								# Western Hudson Bay
+			Settle(plots.rectangle(tQikiqtaaluk).named(QIKIQTAALUK)),						# Baffin Island and islands
+			Settle(plots.rectangle(tNunavik).without(lNunavikExceptions).named(NUNAVIK)),	# Northern Quebec/ Eastern Hudson Bay
+			Settle(plots.rectangle(tKalaallit).named(KALAALLIT)),							# Greenland
+			by=1100
+		),
 		ResourceCount(resources(), 25),
 		GoldAmount(999999, by=2000),
 	),
@@ -158,7 +177,7 @@ dGoals = {
 			by=1550,
 		),
 		GoldAmount(2500, by=1550),
-		AreaPopulationPercent(plots.regions(*lSouthAmerica).named(SOUTH_AMERICA), 90, by=1775),
+		AreaPopulationPercent(plots.regions(*lSouthAmerica).named(SOUTH_AMERICA), 90, by=1600),
 	),
 	iAztecs: (
 		BestPopulationCity(start(iAztecs).named(TENOCHTITLAN), at=1520),
@@ -166,13 +185,23 @@ dGoals = {
 		EnslaveCount(20, excluding=group(iCivGroupAmerica).named(EUROPEAN)),
 	),
 	iIroquois: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		ControlledResourceCount(iFur, 10, by=1670),
+		ContactTribe(10, by=1725),
+		Control(
+			plots.of(lLakeSuperior).named(LAKE_SUPERIOR),
+			plots.of(lLakeMichigan).named(LAKE_MICHIGAN),
+			plots.of(lLakeHuron).named(LAKE_HURON),
+			plots.of(lLakeErie).named(LAKE_ERIE),
+			plots.of(lLakeOntario).named(LAKE_ONTARIO),
+			at=1750),
 	),
 	iSpain: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		RaidGold(3000, by=1600),
+		All(
+			ContactTribe(25),
+			ReligionSpreads(50),
+			by=1700
+		),
 		All(
 			ControlledResourceCount(sum(iSilver, iGold), 15),
 			LandPercent(50),
@@ -180,11 +209,11 @@ dGoals = {
 		)
 	),
 	iPortugal: (
-		OpenBorderCount(14, by=1550),
 		ResourceCount(sum(lColonialResources).named(TRADING_COMPANY_RESOURCES), 20, by=1650),
 		CityCount(sum(
 			plots.regions(*lBrazil).named(BRAZIL),
 		), 15, by=1700),
+		SpecialistCount(iSpecialistSlave, 40, by=1800),
 	),
 	iEngland: (
 		CityCount(
@@ -192,22 +221,29 @@ dGoals = {
 			(plots.regions(*(lSouthAmerica + lCentralAmerica)).named(SOUTH_CENTRAL_AMERICA), 5),
 			by=1730,
 		),
+		PopulationCount(100, by=1760),
 		All(
 			UnitCount(sum(iFrigate, iShipOfTheLine), 25),
 			SunkShips(50),
 			by=1800,
 		),
-		EraFirstDiscover((iRevolutionary, 8), (iIndustrial, 8)),
 	),
 	iFrance: (
 		ControlledResourceCount(iFur, 15, by=1650),
-		AreaPercent(plots.regions(lNorthAmerica).named(NORTH_AMERICA), 50, subject=VASSALS, at=1800),
+		AreaPercent(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 50, subject=VASSALS, at=1800),
 		UnitCount(iSatellite, 1, by=1968),
 	),
 	iNetherlands: (
-		CitySpecialistCount(city(tNewAmsterdam).named(NEW_AMSTERDAM), iSpecialistGreatMerchant, 1, at=1664),
-		ResourceCount(iSpices, 7, by=1775),
-		GoldAmount(1, by=2000),
+		CitySpecialistCount(city(tNewAmsterdam).named(NEW_AMSTERDAM), iSpecialistGreatMerchant, 1, at=1660),
+		Settle(
+			plots.region(rMidAtlantic).named(MID_ATLANTIC),
+			plots.region(rCaribbean).named(CARIBBEAN),
+			plots.region(rVenezuela).named(VENEZUELA),
+			plots.region(rGuyana).named(GUAYANAS),
+			plots.region(rBrazilianHighlands).named(BRAZILIAN_HIGHLANDS),
+			by=1700,
+		),
+		TradeGold(5000, by=1800),
 	),
 	iHawaii: (
 		UnitCount(iCannon, 1, by=1790),
@@ -293,8 +329,17 @@ dGoals = {
 		GoldAmount(999999, by=2000),
 	),
 	iCanada: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		All(
+			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.of(lAtlanticCoast).named(ATLANTIC_COAST)),
+			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.of(lPacificCoast).named(PACIFIC_COAST)),
+			by=1920,
+		),
+		All(
+			Control((plots.regions(*lCanada)).named(CITIES_IN_CANADA)),
+			AreaPercent((plots.regions(*lCanada)).named(CANADIAN_TERRITORY), 90),
+			NoCityConquered(),
+			by=1950,
+		),
 		BrokeredPeace(12, by=2000),
 	),
 	iCuba: (
