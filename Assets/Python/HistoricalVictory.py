@@ -167,8 +167,8 @@ dGoals = {
 			Settle(plots.rectangle(tKalaallit).named(KALAALLIT)),							# Greenland
 			by=1100
 		),
-		ResourceCount(resources(), 25),
-		GoldAmount(999999, by=2000),
+		ResourceCount(resources(), 25, at=1200),
+		TerrainCount(sum(iOcean, iCoast), 100, at=1300),
 	),
 	iInca: (
 		All(
@@ -229,7 +229,7 @@ dGoals = {
 		),
 	),
 	iFrance: (
-		ControlledResourceCount(iFur, 15, by=1650),
+		ControlledResourceCount(iFur, 15, by=1750),
 		AreaPercent(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 50, subject=VASSALS, at=1800),
 		UnitCount(iSatellite, 1, by=1968),
 	),
@@ -270,7 +270,7 @@ dGoals = {
 		),
 	),
 	iHaiti: (
-		GoldAmount(999999, by=2000),
+		FirstDiscover(iEmancipation),
 		GoldAmount(999999, by=2000),
 		GoldAmount(999999, by=2000),
 	),
@@ -306,7 +306,7 @@ dGoals = {
 	),
 	iChile: (
 		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		SpecialistCount(iSpecialistGreatArtist, 2, by=1950),
 		GoldAmount(999999, by=2000),
 	),
 	iPeru: (
@@ -325,7 +325,7 @@ dGoals = {
 	),
 	iVenezuela: (
 		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		ControlledResourceCount(iOil, 5, by=1950),
 		GoldAmount(999999, by=2000),
 	),
 	iCanada: (
@@ -345,7 +345,7 @@ dGoals = {
 	iCuba: (
 		GoldAmount(999999, by=2000),
 		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		UnitCount(iICBM, 1, by=1962),
 	),
 }
 

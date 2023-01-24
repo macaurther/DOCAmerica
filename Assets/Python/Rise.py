@@ -4,6 +4,7 @@ from DynamicCivs import *
 from Locations import *
 from RFCUtils import *
 from Slots import *
+from History import *
 
 from Events import events, handler
 from Collapse import completeCollapse
@@ -520,8 +521,11 @@ class Birth(object):
 		createRoleUnits(self.iPlayer, self.location, getStartingUnits(self.iPlayer))
 		createSpecificUnits(self.iPlayer, self.location)
 		
+		# MacAurther: Europeans spawn at sea
+		if self.iCiv in dColonistSpawnDates:
+			giveColonists(self.iPlayer)
 		# select a settler if available
-		if self.isHuman():
+		elif self.isHuman():
 			settler = units.at(self.location).owner(self.iPlayer).where(lambda unit: unit.isFound()).last()
 			if settler:
 				interface.selectUnit(settler, True, False, False)

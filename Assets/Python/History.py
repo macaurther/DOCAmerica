@@ -60,7 +60,15 @@ def buildFoundedCapitalInfrastructure(city):
 
 
 ### BEGIN GAME TURN ###
-
+@handler("BeginGameTurn")
+def checkColonists():
+	if year().between(250, 1800):
+		for iCiv in dColonistSpawnDates:
+			if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
+				if player(iCiv).isAlive():
+					iPlayer = slot(iCiv)
+					if turn() == turn(dColonistSpawnDates[iCiv][data.players[iPlayer].iColonistsAlreadyGiven - 1]):
+						giveColonists(iPlayer)
 
 ### FIRST CONTACT ###
 
@@ -238,27 +246,18 @@ def giveColonists(iPlayer):
 	pTeam = team(iPlayer)
 	iCiv = civ(iPlayer)
 	
-	if pPlayer.isAlive() and not pPlayer.isHuman() and iCiv in dMaxColonists:
-		if pTeam.isHasTech(iExploration) and data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
-			sourceCities = cities.core(iCiv).owner(iPlayer)
+	# MacAurther: This covers starting European colonists and later colonists as well
+	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dMaxColonists:
+		if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
 			
-			# help England with settling Canada and Australia
-			if iCiv == iEngland:
-				colonialCities = cities.regions(rCanada, rAustralia).owner(iPlayer)
-				if colonialCities:
-					sourceCities = colonialCities
-					
-			city = sourceCities.coastal().random()
-			if city:
-				tSeaPlot = findSeaPlots(city, 1, iCiv)
-				if not tSeaPlot: tSeaPlot = city
-				
-				makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-				makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
-				createRoleUnit(iPlayer, tSeaPlot, iDefend, 1)
-				makeUnit(iPlayer, iWorker, tSeaPlot)
-				
-				data.players[iPlayer].iColonistsAlreadyGiven += 1
+			tSeaPlot = dColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
+			
+			makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+			makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
+			createRoleUnit(iPlayer, tSeaPlot, iDefend, 1)
+			makeUnit(iPlayer, iWorker, tSeaPlot)
+			
+			data.players[iPlayer].iColonistsAlreadyGiven += 1
 
 
 def giveRaiders(iCiv):

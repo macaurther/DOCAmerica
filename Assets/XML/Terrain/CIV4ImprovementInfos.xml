@@ -1040,12 +1040,7 @@
 			<iHappinessPercent>0</iHappinessPercent>
 			<iPillageGold>5</iPillageGold>
 			<bOutsideBorders>0</bOutsideBorders>
-			<TerrainMakesValids>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_LAGOON</TerrainType>
-					<bMakesValid>0</bMakesValid>
-				</TerrainMakesValid>
-			</TerrainMakesValids>
+			<TerrainMakesValids/>
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
@@ -1240,12 +1235,7 @@
 			<iHappinessPercent>-100</iHappinessPercent>
 			<iPillageGold>5</iPillageGold>
 			<bOutsideBorders>0</bOutsideBorders>
-			<TerrainMakesValids>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_LAGOON</TerrainType>
-					<bMakesValid>0</bMakesValid>
-				</TerrainMakesValid>
-			</TerrainMakesValids>
+			<TerrainMakesValids/>
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
 				<BonusTypeStruct>

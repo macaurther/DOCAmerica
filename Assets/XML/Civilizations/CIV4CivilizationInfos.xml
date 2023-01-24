@@ -2914,10 +2914,6 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ARQUEBUSIER</UnitClassType>
-					<UnitType>UNIT_TERCIO</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_CUIRASSIER</UnitClassType>
 					<UnitType>UNIT_SPANISH_CONQUISTADOR</UnitType>
 				</Unit>

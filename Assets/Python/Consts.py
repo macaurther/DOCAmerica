@@ -406,14 +406,34 @@ iCanada : 40,
 iCuba : 25,
 }, 100)
 
+# Colonists - European Regional Power
+dColonistSpawnPoints = CivDict({
+iNorse : [(78, 103)],
+iSpain : [(65, 64), (65, 64), (65, 64)],
+iPortugal : [(79, 35), (79, 35)],
+iEngland : [(61, 76), (66, 81), (73, 86)], 
+iFrance : [(75, 86), (75, 86), (40, 66)],
+iNetherlands : [(63, 78), (66, 59)],
+iRussia : [(12, 94)],
+})
+
+# Only need to specify colonists past the first given, since the first is given on initial spawn
+dColonistSpawnDates = CivDict({
+iSpain : [1525, 1575],
+iPortugal : [1550, 1600],
+iEngland : [1620, 1650],
+iFrance : [1650, 1718],
+iNetherlands : [1650],
+})
+
 dMaxColonists = CivDict({
 iNorse : 1,
-iSpain : 7,
-iPortugal : 6,
-iEngland : 6, 
-iFrance : 5,
-iNetherlands : 6,
-iRussia : 3,
+iSpain : 3,
+iPortugal : 2,
+iEngland : 3, 
+iFrance : 3,
+iNetherlands : 2,
+iRussia : 1,
 })
 
 # initialise religion variables to religion indices from XML
