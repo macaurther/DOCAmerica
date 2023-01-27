@@ -2703,11 +2703,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GUADALUPE_BASILICA_HELP</Tag>
-		<English>[ICON_BULLET]Cannot be built on the same continent as the Catholic Shrine[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</English>
-		<French>[ICON_BULLET]Ne peut &#234;tre construite sur le m&#234;me continent que le sanctuaire catholique[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] par ville catholique sur le m&#234;me continent</French>
-		<German>[ICON_BULLET]Cannot be built on the same continent as the Catholic Shrine[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</German>
-		<Italian>[ICON_BULLET]Cannot be built on the same continent as the Catholic Shrine[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</Italian>
-		<Spanish>[ICON_BULLET]Cannot be built on the same continent as the Catholic Shrine[NEWLINE][ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</Spanish>
+		<English>[ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</English>
+		<French>[ICON_BULLET]+1 [ICON_GOLD] par ville catholique sur le m&#234;me continent</French>
+		<German>[ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</German>
+		<Italian>[ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</Italian>
+		<Spanish>[ICON_BULLET]+1 [ICON_GOLD] per Catholic city on the same continent</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GUADALUPE_BASILICA_STRATEGY</Tag>

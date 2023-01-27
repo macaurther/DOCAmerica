@@ -35,20 +35,20 @@
 			<iVictoryDelayPercent>300</iVictoryDelayPercent>
 			<GameTurnInfos>
 				<GameTurnInfo>
-					<iMonthIncrement>50</iMonthIncrement>
-					<iTurnsPerIncrement>300</iTurnsPerIncrement> <!-- 300 = 1250 -->
+					<iMonthIncrement>40</iMonthIncrement>
+					<iTurnsPerIncrement>375</iTurnsPerIncrement> <!-- 375 = 1250 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>8</iMonthIncrement>
 					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 100 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>6</iMonthIncrement>
-					<iTurnsPerIncrement>300</iTurnsPerIncrement> <!-- 300 = 150 -->
+					<iMonthIncrement>8</iMonthIncrement>
+					<iTurnsPerIncrement>225</iTurnsPerIncrement> <!-- 225 = 150 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>4</iMonthIncrement>
-					<iTurnsPerIncrement>225</iTurnsPerIncrement> <!-- 225 = 75 -->
+					<iMonthIncrement>6</iMonthIncrement>
+					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 75 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>4</iMonthIncrement>
@@ -59,8 +59,8 @@
 					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 50 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>6</iMonthIncrement>
-					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 75 -->
+					<iMonthIncrement>4</iMonthIncrement>
+					<iTurnsPerIncrement>225</iTurnsPerIncrement> <!-- 225 = 75 -->
 				</GameTurnInfo>
 				<!-- 1500 turns = 1775 years -->
 			</GameTurnInfos>
@@ -93,20 +93,20 @@
 			<iVictoryDelayPercent>150</iVictoryDelayPercent>
 			<GameTurnInfos>
 				<GameTurnInfo>
-					<iMonthIncrement>100</iMonthIncrement>
-					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 1250 -->
+					<iMonthIncrement>80</iMonthIncrement>
+					<iTurnsPerIncrement>188</iTurnsPerIncrement> <!-- 188 = 1250 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>16</iMonthIncrement>
 					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 100 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>150</iTurnsPerIncrement> <!-- 150 = 150 -->
+					<iMonthIncrement>16</iMonthIncrement>
+					<iTurnsPerIncrement>112</iTurnsPerIncrement> <!-- 112 = 150 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>8</iMonthIncrement>
-					<iTurnsPerIncrement>112</iTurnsPerIncrement> <!-- 112 = 75 -->
+					<iMonthIncrement>12</iMonthIncrement>
+					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 75 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>8</iMonthIncrement>
@@ -117,8 +117,8 @@
 					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 50 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 75 -->
+					<iMonthIncrement>8</iMonthIncrement>
+					<iTurnsPerIncrement>112</iTurnsPerIncrement> <!-- 112 = 75 -->
 				</GameTurnInfo>
 				<!-- 750 turns = 1775 years -->
 			</GameTurnInfos>
@@ -151,20 +151,20 @@
 			<iVictoryDelayPercent>100</iVictoryDelayPercent>
 			<GameTurnInfos>
 				<GameTurnInfo>
-					<iMonthIncrement>150</iMonthIncrement>
-					<iTurnsPerIncrement>100</iTurnsPerIncrement> <!-- 100 = 1250 -->
+					<iMonthIncrement>120</iMonthIncrement>
+					<iTurnsPerIncrement>125</iTurnsPerIncrement> <!-- 125 = 1250 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>24</iMonthIncrement>
 					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 100 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>18</iMonthIncrement>
-					<iTurnsPerIncrement>100</iTurnsPerIncrement> <!-- 100 = 150 -->
+					<iMonthIncrement>24</iMonthIncrement>
+					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 150 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>12</iMonthIncrement>
-					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 75 -->
+					<iMonthIncrement>18</iMonthIncrement>
+					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 75 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
 					<iMonthIncrement>12</iMonthIncrement>
@@ -175,8 +175,8 @@
 					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 50 -->
 				</GameTurnInfo>
 				<GameTurnInfo>
-					<iMonthIncrement>18</iMonthIncrement>
-					<iTurnsPerIncrement>50</iTurnsPerIncrement> <!-- 50 = 75 -->
+					<iMonthIncrement>12</iMonthIncrement>
+					<iTurnsPerIncrement>75</iTurnsPerIncrement> <!-- 75 = 75 -->
 				</GameTurnInfo>
 				<!-- 500 turns = 1775 years -->
 			</GameTurnInfos>

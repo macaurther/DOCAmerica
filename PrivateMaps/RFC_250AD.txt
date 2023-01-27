@@ -14,6 +14,30 @@ BeginMap
 EndMap
 
 BeginPlot
+	x=0,y=0
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT3
+		CityName=Holy City
+		CityPopulation=1
+		BuildingType=BUILDING_PALACE
+		YearFounded=-3000
+		YearAcquired=-3000
+		PreviousOwner=CIVILIZATION_INDEPENDENT3
+		HolyCityReligionType=RELIGION_JUDAISM
+		HolyCityReligionType=RELIGION_ORTHODOXY
+		HolyCityReligionType=RELIGION_CATHOLICISM
+		HolyCityReligionType=RELIGION_ISLAM
+		HolyCityReligionType=RELIGION_HINDUISM
+		HolyCityReligionType=RELIGION_BUDDHISM
+		HolyCityReligionType=RELIGION_CONFUCIANISM
+		HolyCityReligionType=RELIGION_TAOISM
+		HolyCityReligionType=RELIGION_ZOROASTRIANISM
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT3, Culture=10
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
 	x=36,y=58
 	BeginUnit
 		UnitType=UNIT_MILITIA_1

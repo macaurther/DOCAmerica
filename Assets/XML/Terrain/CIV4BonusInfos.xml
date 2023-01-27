@@ -318,7 +318,7 @@
 			<Civilopedia>TXT_KEY_BONUS_HORSE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RUSH</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_HORSE</ArtDefineTag>
-			<TechReveal>TECH_COLONIZATION</TechReveal>
+			<TechReveal>TECH_OLD_WORLD_SCIENCE</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

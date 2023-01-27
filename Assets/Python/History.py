@@ -62,13 +62,13 @@ def buildFoundedCapitalInfrastructure(city):
 ### BEGIN GAME TURN ###
 @handler("BeginGameTurn")
 def checkColonists():
-	if year().between(250, 1800):
+	if year().between(1500, 1800):
 		for iCiv in dColonistSpawnDates:
-			if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
 				if player(iCiv).isAlive():
 					iPlayer = slot(iCiv)
-					if turn() == turn(dColonistSpawnDates[iCiv][data.players[iPlayer].iColonistsAlreadyGiven - 1]):
-						giveColonists(iPlayer)
+					if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
+						if turn() == turn(dColonistSpawnDates[iCiv][data.players[iPlayer].iColonistsAlreadyGiven - 1]):
+							giveColonists(iPlayer)
 
 ### FIRST CONTACT ###
 
@@ -77,36 +77,42 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		if is_minor(iTeamX) or is_minor(iHasMetTeamY):
 			return
 		
-		if year().between(600, 1800):
+		if year().between(1490, 1800):
 			if civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:
 				iNewWorldPlayer = iTeamX
 				iOldWorldPlayer = iHasMetTeamY
-				
-				if civ(iOldWorldPlayer) == iPolynesia:
-					return
 				
 				iNewWorldCiv = civ(iNewWorldPlayer)
 				
 				bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
 				
-				# avoid "return later" exploit
-				if year() <= year(dBirth[iAztecs]) + turns(10):
-					data.dFirstContactConquerors[iNewWorldCiv] = True
-					return
-					
 				if not bAlreadyContacted:
-					# MacAurther TODO: coordinate update and other natives too
 					if iNewWorldCiv == iMaya:
-						tContactZoneTL = (15, 30)
-						tContactZoneBR = (34, 42)
+						tContactZoneTL = (33, 54)
+						tContactZoneBR = (40, 64)
+					elif iNewWorldCiv == iTeotihuacan:
+						tContactZoneTL = (28, 60)
+						tContactZoneBR = (33, 66)
+					elif iNewWorldCiv == iTiwanaku:
+						tContactZoneTL = (49, 28)
+						tContactZoneBR = (55, 36)
+					elif iNewWorldCiv == iWari:
+						tContactZoneTL = (40, 31)
+						tContactZoneBR = (49, 45)
+					elif iNewWorldCiv == iChimu:
+						tContactZoneTL = (40, 31)
+						tContactZoneBR = (49, 45)
+					elif iNewWorldCiv == iMuisca:
+						tContactZoneTL = (42, 43)
+						tContactZoneBR = (53, 54)
 					elif iNewWorldCiv == iAztecs:
-						tContactZoneTL = (11, 31)
-						tContactZoneBR = (34, 43)
+						tContactZoneTL = (25, 55)
+						tContactZoneBR = (33, 66)
 					elif iNewWorldCiv == iInca:
-						tContactZoneTL = (21, 11)
-						tContactZoneBR = (36, 40)
+						tContactZoneTL = (41, 18)
+						tContactZoneBR = (55, 44)
 						
-					lArrivalExceptions = [(25, 32), (26, 40), (25, 42), (23, 42), (21, 42)]
+					lArrivalExceptions = []
 						
 					data.dFirstContactConquerors[iNewWorldCiv] = True
 					
@@ -252,10 +258,46 @@ def giveColonists(iPlayer):
 			
 			tSeaPlot = dColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
 			
-			makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-			makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
-			createRoleUnit(iPlayer, tSeaPlot, iDefend, 1)
-			makeUnit(iPlayer, iWorker, tSeaPlot)
+			iReligion = player(iPlayer).getStateReligion()
+			
+			for iExpeditionType in dColonistExpeditions[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]:
+				if iExpeditionType == iCanoeSettle:		# Canoe, Settler
+					makeUnit(iPlayer, unique_unit(iPlayer, iCanoe), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
+				elif iExpeditionType == iCaravelSettle:	# Caravel, Settler, Defender
+					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
+					createRoleUnit(iPlayer, tSeaPlot, iDefend, 1)
+				elif iExpeditionType == iCaravelSupport:	# Caravel, Work, Missionary
+					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
+					if iReligion > -1:
+						makeUnits(iPlayer, missionary(iReligion), tSeaPlot, 1)
+				elif iExpeditionType == iCaravelExplore:	# Caravel, Explore, Missionary
+					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					createRoleUnit(iPlayer, tSeaPlot, iExplore, 1)
+					if iReligion > -1:
+						makeUnits(iPlayer, missionary(iReligion), tSeaPlot, 1)
+				elif iExpeditionType == iCaravelConquer:	# Caravel, Attack, CitySiege
+					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					createRoleUnit(iPlayer, tSeaPlot, iAttack, 1)
+					createRoleUnit(iPlayer, tSeaPlot, iCitySiege, 1)
+				elif iExpeditionType == iGalleonSettle:	# Galleon, Settler, Defender, Work
+					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
+					createRoleUnit(iPlayer, tSeaPlot, iDefend, 1)
+					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
+				elif iExpeditionType == iGalleonSupport:	# Galleon, Explore, Work, Missionary
+					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					createRoleUnit(iPlayer, tSeaPlot, iExplore, 1)
+					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
+					if iReligion > -1:
+						makeUnits(iPlayer, missionary(iReligion), tSeaPlot, 1)
+				elif iExpeditionType == iGalleonConquer:	# Galleon, Attack, Shock, CitySiege
+					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+					createRoleUnit(iPlayer, tSeaPlot, iAttack, 1)
+					createRoleUnit(iPlayer, tSeaPlot, iShock, 1)
+					createRoleUnit(iPlayer, tSeaPlot, iCitySiege, 1)
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
 

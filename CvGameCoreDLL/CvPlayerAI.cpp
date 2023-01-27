@@ -1363,7 +1363,8 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, CivilizationTypes ePreviousCiv, P
 		//Rhye - moved here
 
 		//Rhye - start
-		int iX = pCity->getX_INLINE();
+		// MacAurther TODO: Re-do these for America map
+		/*int iX = pCity->getX_INLINE();
 		int iY = pCity->getY_INLINE();
 		if ((iX == 58 && iY == 39) || //Carthage
 			//(iX == 76 && iY == 40) || //Babylon
@@ -1400,7 +1401,7 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity, CivilizationTypes ePreviousCiv, P
 			(iX == 75 && iY == 44) ||	//Trabzon
 			(iX == 72 && iY == 43)){	//Konya
 				iRazeValue -= 30;
-			}
+			}*/
 
 		if (iRazeValue > 0)
 		{
@@ -2730,14 +2731,14 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		}
 	}
 
-	// Leoreth: more English settlements in North America
-	if (getCivilizationType() == ENGLAND)
+	// Leoreth: more English settlements in North America -> MacAurther: nope
+	/*if (getCivilizationType() == ENGLAND)
 	{
 		if (pArea->getID() == GC.getMap().plot(27, 46)->getArea()) // Washington tile
 		{
 			iValue *= 2;
 		}
-	}
+	}*/
 
 	if (!bStartingLoc)
 	{
@@ -2781,7 +2782,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	}
 
 	iValue /= (std::max(0, (iBadTile - (NUM_CITY_PLOTS / 4))) + 3);
-	if (!(iX >= 67 && iX <= 70 && iY >= 43 && iY <= 46) && !(iX >= 79 && iX <= 18 && iY >= 110 && iY <= 10)) { //Rhye (exclude Turkey and Siberia)
+	//if (!(iX >= 67 && iX <= 70 && iY >= 43 && iY <= 46) && !(iX >= 79 && iX <= 18 && iY >= 110 && iY <= 10)) { //Rhye (exclude Turkey and Siberia)-> MacAurther: Nope
 	if (bStartingLoc)
 	{
 		iDifferentAreaTile = 0;
@@ -2798,7 +2799,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 		iValue /= (std::max(0, (iDifferentAreaTile - ((NUM_CITY_PLOTS * 2) / 3))) + 2);
 	}
-	} //Rhye
+	//} //Rhye
 
 	//Rhye - start
 

@@ -468,17 +468,17 @@ def isUnitOfRole(iUnit, iRole):
 	iDomainType = unit.getDomainType()
 
 	if iRole == iBase:
-		return base_unit(iUnit) == iMilitia1
+		return base_unit(iUnit) == iMilitia1 or base_unit(iUnit) == iMilitia2
 	elif iRole == iDefend:
-		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN or base_unit(iUnit) == iMilitia1
+		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN or base_unit(iUnit) == iMilitia1 or base_unit(iUnit) == iMilitia2
 	elif iRole in [iAttack, iCityAttack]:
 		return iCombatType in [UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_GUN]
 	elif iRole == iCounter:
 		return iCombatType == UnitCombatTypes.UNITCOMBAT_MELEE and unit.getUnitCombatModifier(UnitCombatTypes.UNITCOMBAT_HEAVY_CAVALRY) > 0
 	elif iRole in [iShock, iShockCity]:
-		return iCombatType == UnitCombatTypes.UNITCOMBAT_HEAVY_CAVALRY or iUnit == iKeshik
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_HEAVY_CAVALRY
 	elif iRole == iHarass:
-		return iCombatType == UnitCombatTypes.UNITCOMBAT_LIGHT_CAVALRY and not iUnit == iKeshik
+		return iCombatType == UnitCombatTypes.UNITCOMBAT_LIGHT_CAVALRY
 	elif iRole == iWorkerSea:
 		return iDomainType == DomainTypes.DOMAIN_SEA and unit.getCombat() == 0
 	elif iRole == iSettle:

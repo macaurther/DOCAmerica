@@ -27,39 +27,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_PEOPLES</Tag>
-		<English>Asturian Peoples</English>
-		<French>
-			<Text>Peuplades asturiennes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Asturian Peoples</German>
-		<Italian>Asturian Peoples</Italian>
-		<Spanish>Asturian Peoples</Spanish>
+		<English>Columbus' Voyage</English>
+		<French>Columbus' Voyage</French>
+		<German>Columbus' Voyage</German>
+		<Italian>Columbus' Voyage</Italian>
+		<Spanish>Columbus' Voyage</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume d'%s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Regno del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Reino de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<English>New %s1</English>
+		<French>New %s1</French>
+		<German>New %s1</German>
+		<Italian>New %s1</Italian>
+		<Spanish>New %s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_COMMUNIST</Tag>

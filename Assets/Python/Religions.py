@@ -18,7 +18,7 @@ iAmerica	: 20,
 
 def getCatholicPreference(iPlayer):
 	return dCatholicPreference[iPlayer]
-	
+
 
 @handler("buildingBuilt")	
 def onBuildingBuilt(city, iBuilding):
@@ -27,6 +27,12 @@ def onBuildingBuilt(city, iBuilding):
 	if iBuilding == iHinduTemple:
 		if game.isReligionFounded(iBuddhism): return
 		player(city).foundReligion(iBuddhism, iBuddhism, True)
+
+
+@handler("BeginGameTurn")
+def foundProtestantism():
+	if turn() == turn(1521):
+		foundReligion(tHolyCity, iProtestantism)
 
 
 @handler("BeginGameTurn")

@@ -35,39 +35,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_PEOPLES</Tag>
-		<English>Anglo-Saxon Peoples</English>
-		<French>
-			<Text>Peuplades anglo-saxonnes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Anglo-Saxon Peoples</German>
-		<Italian>Anglo-Saxon Peoples</Italian>
-		<Spanish>Anglo-Saxon Peoples</Spanish>
+		<English>Virginia Company</English>
+		<French>Virginia Company</French>
+		<German>Virginia Company</German>
+		<Italian>Virginia Company</Italian>
+		<Spanish>Virginia Company</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume d'%s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Regno del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Reino de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<English>New %s1</English>
+		<French>New %s1</French>
+		<German>New %s1</German>
+		<Italian>New %s1</Italian>
+		<Spanish>New %s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_REPUBLIC</Tag>

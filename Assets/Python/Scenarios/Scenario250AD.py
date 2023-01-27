@@ -28,6 +28,9 @@ lCivilizations = [
 	Civilization(
 		iIndependent2
 	),
+	Civilization(
+		iIndependent3
+	),
 ]
 
 

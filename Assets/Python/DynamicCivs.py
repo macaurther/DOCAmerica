@@ -140,6 +140,7 @@ dStartingLeaders = [
 {
 	iIndependent : iIndependentLeader,
 	iIndependent2 : iIndependentLeader,
+	iIndependent3 : iIndependentLeader,
 	iNative : iSittingBull,
 	iMaya : iPacal,
 	iTeotihuacan : iAtlatlCauac,

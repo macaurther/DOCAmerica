@@ -13,12 +13,12 @@ iWorldY = 108
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 37
+iNumCivs = 38
 #				2				3				4				5				6				7				8				9				10
 (iAmerica, 		iArgentina, 	iAztecs, 		iBolivia,		iBrazil, 		iCanada, 		iChile,			iChimu,			iColombia, 		iCuba,			
 iEngland, 		iFrance, 		iHaiti,			iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,
 iMuisca,		iNetherlands, 	iNorse,			iPeru,			iPortugal, 		iPuebloan,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,
-iVenezuela,		iWari,			iIndependent, 	iIndependent2, 	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iVenezuela,		iWari,			iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -236,41 +236,6 @@ iCanada : 1867,
 iCuba : 1898,
 }, 250)
 
-'''dBirth = CivDict({
-iMaya : 250,
-iTeotihuacan : 250,
-iTiwanaku : 250,
-iWari : 250,
-iMississippi : 250,
-iPuebloan : 250,
-iMuisca : 250,
-iNorse : 250,
-iChimu : 250,
-iInuit : 250,
-iInca : 250,
-iAztecs : 250,
-iIroquois : 250,
-iSpain : 250,
-iPortugal : 250,
-iEngland : 250,
-iFrance : 250,
-iNetherlands : 250,
-iHawaii : 250,
-iRussia: 250,
-iAmerica : 250,
-iHaiti : 250,
-iBolivia : 250,
-iArgentina : 250,
-iMexico : 250,
-iColombia : 250,
-iChile : 250,
-iPeru : 250,
-iVenezuela : 250,
-iBrazil : 250,
-iCanada : 250,
-iCuba : 250,
-}, 250)'''
-
 lBirthCivs = dBirth.keys()
 
 dFall = CivDict({
@@ -420,20 +385,33 @@ iRussia : [(12, 94)],
 # Only need to specify colonists past the first given, since the first is given on initial spawn
 dColonistSpawnDates = CivDict({
 iSpain : [1525, 1575],
-iPortugal : [1550, 1600],
+iPortugal : [1550],
 iEngland : [1620, 1650],
 iFrance : [1650, 1718],
 iNetherlands : [1650],
 })
 
+iNumExpeditionTypes = 8
+(iCanoeSettle, iCaravelSettle, iCaravelSupport, iCaravelExplore, iCaravelConquer, iGalleonSettle, iGalleonSupport, iGalleonConquer) = range(iNumExpeditionTypes)
+
+dColonistExpeditions = CivDict({
+iNorse : [[iCanoeSettle]],
+iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelConquer], [iGalleonSettle, iGalleonConquer]],
+iPortugal : [[iCaravelSettle, iCaravelSupport], [iCaravelSettle, iCaravelSupport]],
+iEngland : [[iGalleonSettle, iGalleonSupport], [iGalleonSettle], [iGalleonSettle]],
+iFrance : [[iGalleonSettle, iGalleonSupport], [iGalleonSettle], [iGalleonSettle]],
+iNetherlands : [[iGalleonSettle, iGalleonSupport], [iGalleonSettle]],
+iRussia : [[iGalleonSettle, iGalleonSupport]],
+})
+
 dMaxColonists = CivDict({
-iNorse : 1,
-iSpain : 3,
-iPortugal : 2,
-iEngland : 3, 
-iFrance : 3,
-iNetherlands : 2,
-iRussia : 1,
+iNorse : len(dColonistExpeditions[iNorse]),
+iSpain : len(dColonistExpeditions[iSpain]),
+iPortugal : len(dColonistExpeditions[iPortugal]),
+iEngland : len(dColonistExpeditions[iEngland]), 
+iFrance : len(dColonistExpeditions[iFrance]),
+iNetherlands : len(dColonistExpeditions[iNetherlands]),
+iRussia : len(dColonistExpeditions[iRussia]),
 })
 
 # initialise religion variables to religion indices from XML
@@ -639,12 +617,12 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 36
+iNumRegions = 37
 #				2				3				4				5				6				7				8				9				10
 (rAlaska, 		rNunavut, 		rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	rNewEngland, 	rMidAtlantic, 	rDeepSouth, 	rGulfCoast, 
 rMidwest, 		rSouthwest, 	rGreatPlains, 	rRockies, 		rCalifornia, 	rCascadia, 		rSierraMadre, 	rBajio, 		rYucatan, 		rMesoamerica,
 rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia, 		rAmazon, 		rBrazilianHighlands, rPantanal, 
-rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland) = range(iNumRegions)
+rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland,		rOldWorld) = range(iNumRegions)
 
 lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland]
 lContinentalUS = [rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia]

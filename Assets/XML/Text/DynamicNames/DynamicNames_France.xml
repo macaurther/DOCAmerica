@@ -27,51 +27,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_PEOPLES</Tag>
-		<English>Frankish Peoples</English>
-		<French>
-			<Text>Peuplades franques</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Fr&#228;nkische V&#246;lker:Fr&#228;nkischen V&#246;lker:Fr&#228;nkischen V&#246;lkern</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Popoli Franchi</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Pueblos Francos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
+		<English>Champlain's Voyage</English>
+		<French>Champlain's Voyage</French>
+		<German>Champlain's Voyage</German>
+		<Italian>Champlain's Voyage</Italian>
+		<Spanish>Champlain's Voyage</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Regno del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Reino de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<English>Nouvelle-%s1</English>
+		<French>Nouvelle-%s1</French>
+		<German>Nouvelle-%s1</German>
+		<Italian>Nouvelle-%s1</Italian>
+		<Spanish>Nouvelle-%s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_COMMUNIST</Tag>

@@ -7135,7 +7135,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		{
 			if (eYield == YIELD_COMMERCE && isRiver() && !isPeak() && (!isWater() || getTerrainType() == TERRAIN_WIDE_RIVER))
 			{
-				iYield += 2;
+				iYield += 1;
 			}
 		}
 

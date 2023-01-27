@@ -1424,14 +1424,17 @@ void CvMap::calculateAreas()
 	CvArea* northAmerica = addArea();
 	CvArea* centralAmerica = addArea();
 	CvArea* southAmerica = addArea();
+	CvArea* oldWorld = addArea();
 
 	int northAmericaID = northAmerica->getID();
 	int centralAmericaID = centralAmerica->getID();
 	int southAmericaID = southAmerica->getID();
+	int oldWorldID = oldWorld->getID();
 
 	northAmerica->init(northAmericaID, false);
 	centralAmerica->init(centralAmericaID, false);
 	southAmerica->init(southAmericaID, false);
+	oldWorld->init(oldWorldID, false);
 
 	CvPlot* plot;
 	for (int iX = 0; iX < getGridWidth(); iX++)
@@ -1485,6 +1488,9 @@ void CvMap::calculateAreas()
 				case REGION_PAMPAS:
 				case REGION_PATAGONIA:
 					plot->setArea(southAmericaID);
+					break;
+				case REGION_OLD_WORLD:
+					plot->setArea(oldWorldID);
 					break;
 				}
 			}

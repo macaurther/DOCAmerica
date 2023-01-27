@@ -2400,6 +2400,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_CANOE</UnitClassType>
+					<UnitType>UNIT_VIKING_LONGSHIP</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -3608,6 +3612,141 @@
 				<City>Sakae</City>
 				<City>Uzbek</City>
 				<City>Tartar</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SECURITY_BUREAU</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ADMINISTRATIVE_CENTER</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_NATIONAL_THEATRE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TRADING_COMPANY</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_STOCK_EXCHANGE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_NATIONAL_GALLERY</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_IRONWORKS</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SECRET_SERVICE</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_NATIONAL_PARK</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_RED_CROSS</BuildingClassType>
+					<BuildingType>NONE</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EXPLORER</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_SPY</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_PROTESTANT_MISSIONARY</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CATHOLIC_MISSIONARY</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_ORTHODOX_MISSIONARY</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_INQUISITOR</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_GREAT_SPY</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+			</Units>
+			<FreeUnitClasses/>
+			<FreeBuildingClasses/>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_CHIEFDOM</CivicType>
+				<CivicType>CIVIC_AUTHORITY</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_INDEPENDENT</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_INDEPENDENT</DerivativeCiv>
+			<CivilizationSelectionSound/>
+			<CivilizationActionSound/>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_INDEPENDENT3</Type>
+			<Description>TXT_KEY_CIV_INDEPENDENT_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_INDEPENDENT_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_INDEPENDENT_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_GRAY2</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_INDEPENDENT</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_BARBARIAN</ArtStyleType>
+			<Identifier>MIN</Identifier>
+			<Region>MIN</Region>
+			<StartingYear>0</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>0</Trade>
+				<Production>0</Production>
+				<Culture>0</Culture>
+				<Growth>0</Growth>
+				<Start>0</Start>
+			</Rating>
+			<bPlayable>0</bPlayable>
+			<bAIPlayable>0</bAIPlayable>
+			<Cities>
+				<City>Holy City</City>
 			</Cities>
 			<Buildings>
 				<Building>

@@ -297,9 +297,6 @@ def killUnitsByPlague(city, pPlot, baseValue, iDamage, iPreserveDefenders):
 					iDamage *= 3
 					iDamage /= 4
 				
-			if data.players[city.getOwner()].bFirstContactPlague:
-				if civ(unit) not in lNewWorld and not is_minor(unit):
-					iDamage /= 2
 					
 			if rand(100) > iThreshold:
 				iMaxDamage = 50

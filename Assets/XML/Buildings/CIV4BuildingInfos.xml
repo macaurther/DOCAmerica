@@ -1163,7 +1163,7 @@
 			<Description>TXT_KEY_BUILDING_STOCKS</Description>
 			<Civilopedia>TXT_KEY_BUILDING_STOCKS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_STOCKS_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_HEADRIGHT_HELP</Help>
+			<Help>TXT_KEY_BUILDING_STOCKS_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STOCKS</ArtDefineTag>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>

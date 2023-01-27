@@ -198,25 +198,25 @@ lCivilizations = [
 		iWari,
 		iGold=100,
 		lCivics=[iMerchantTrade],
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2)
 	),
 	Civilization(
 		iMississippi,
 		iGold=50,
 		lCivics=[iCouncil, iSpecialization],
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2)
 	),
 	Civilization(
 		iPuebloan,
 		iGold=50,
 		lCivics=[iCouncil],
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2)
 	),
 	Civilization(
 		iMuisca,
 		iGold=200,
 		lCivics=[iMerchantTrade],
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2)
 	),
 	Civilization(
 		iNorse,
@@ -228,19 +228,19 @@ lCivilizations = [
 		iChimu,
 		iGold=300,
 		lCivics=[iDespotism, iSpecialization, iMerchantTrade, iCasteSystem],
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2)
 	),
 	Civilization(
 		iInuit,
 		iGold=25,
 		lCivics=[iCouncil],
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2)
 	),
 	Civilization(
 		iInca,
 		iGold=700,
 		lCivics=[iEmpire, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
-		techs=techs.column(1).including(iArtisanry, iMasonry).without(iSailing)
+		techs=techs.column(2).including(iArtisanry, iMasonry).without(iSailing)
 	),
 	Civilization(
 		iAztecs,
@@ -251,15 +251,13 @@ lCivilizations = [
 	Civilization(
 		iSpain,
 		iGold=200,
-		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iConquest],
-		techs=techs.column(5).without(*lNativeTechs)
+		techs=techs.column(5).including(iCartography, iPrinting, iCompanies).without(*lNativeTechs)
 	),
 	Civilization(
 		iPortugal,
 		iGold=200,
-		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iSlavery, iMerchantTrade, iTributaries],
 		techs=techs.column(5).including(iFirearms, iLogistics, iExploration).without(*lNativeTechs)
@@ -273,7 +271,6 @@ lCivilizations = [
 	Civilization(
 		iEngland,
 		iGold=200,
-		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iMerchantTrade],
 		lEnemies=[],
@@ -282,7 +279,6 @@ lCivilizations = [
 	Civilization(
 		iFrance,
 		iGold=150,
-		iAdvancedStartPoints=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iMerchantTrade],
 		techs=techs.column(6).without(*lNativeTechs)
@@ -290,7 +286,6 @@ lCivilizations = [
 	Civilization(
 		iNetherlands,
 		iGold=600,
-		iAdvancedStartPoints=300,
 		iStateReligion=iProtestantism,
 		lCivics=[iColony, iMercantilism],
 		techs=techs.column(6).including(iEconomics, iShipbuilding).without(*lNativeTechs)
@@ -304,7 +299,6 @@ lCivilizations = [
 	Civilization(
 		iRussia,
 		iGold=200,
-		iAdvancedStartPoints=50,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iColony, iIndenturedServitude, iAgrarianism],
 		techs=techs.column(9).without(*lNativeTechs)
@@ -414,34 +408,34 @@ dStartingUnits = CivDict({
 	iWari: {
 		iSettle: 1,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iMississippi: {
-		iSettle: 1,
+		iSettle: 2,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iPuebloan: {
 		iSettle: 1,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iMuisca: {
 		iSettle: 1,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iNorse: {
 	},
 	iChimu: {
 		iSettle: 1,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iInuit: {
-		iSettle: 1,
+		iSettle: 2,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iInca: {
 		iSettle: 1,
@@ -459,7 +453,7 @@ dStartingUnits = CivDict({
 	iIroquois: {
 		iSettle: 1,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iSpain: {
 	},
@@ -474,7 +468,7 @@ dStartingUnits = CivDict({
 	iHawaii: {
 		iSettle: 1,
 		iWork: 1,
-		iSkirmish: 2,
+		iDefend: 2,
 	},
 	iRussia: {
 	},
@@ -690,11 +684,7 @@ def createSpecificUnits(iPlayer, tile):
 	iCiv = civ(iPlayer)
 	bHuman = player(iPlayer).isHuman()
 	
-	if iCiv == iSpain:
-		if not bHuman:
-			makeUnit(iPlayer, iSettler, tile)
-			makeUnits(iPlayer, iLancer, tile, 2)
-	elif iCiv == iInca:
+	if iCiv == iInca:
 		if not bHuman:
 			makeUnit(iPlayer, iSettler, tile)
 	elif iCiv == iAmerica:	# American UP

@@ -7,6 +7,7 @@
 # DynamicCivs
 
 # Religions
+tHolyCity = (0, 0)	# MacAurther: faux city to be the Holy City for all old world religions (in the bottom left of the map surrounded by peaks)
 
 ## Victory
 

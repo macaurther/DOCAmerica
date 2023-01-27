@@ -1179,6 +1179,7 @@ enum CivilizationTypes		// Exposed to Python
 	WARI,
 	INDEPENDENT,
 	INDEPENDENT2,
+	INDEPENDENT3,
 	NATIVE,
 	MINOR_CIV,
 	BARBARIAN_CIV,

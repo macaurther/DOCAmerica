@@ -2292,21 +2292,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
-	// Leoreth: Guadalupe Basilica needs to be on different continent than Catholic holy city
-	if (eBuilding == (BuildingTypes)BUILDING_GUADALUPE_BASILICA)
-	{
-		CvCity* pHolyCity = GC.getGame().getHolyCity(CATHOLICISM);
-		if (pHolyCity == NULL)
-		{
-			return false;
-		}
-
-		if (getArea() == pHolyCity->getArea())
-		{
-			return false;
-		}
-	}
-
 	// Leoreth: Burj Khalifa -> MacAurther: The Strip requires ten desert tiles
 	if (eBuilding == (BuildingTypes)BUILDING_THE_STRIP)
 	{

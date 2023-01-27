@@ -27,39 +27,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_PEOPLES</Tag>
-		<English>Lusitanian Peoples</English>
-		<French>
-			<Text>Peuplades lusitaniennes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Lusitanische V&#246;lker:Lusitanischen V&#246;lker:Lusitanischen V&#246;lkern</Text>
-			<Gender>Female:Female:Female</Gender>
-			<Plural>1:1:1</Plural>
-		</German>
-		<Italian>
-			<Text>Popoli Lusitani</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Pueblos Lusitanos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
+		<English>Cabral's Voyage</English>
+		<French>Cabral's Voyage</French>
+		<German>Cabral's Voyage</German>
+		<Italian>Cabral's Voyage</Italian>
+		<Spanish>Cabral's Voyage</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume du %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Kingdom of %s1</German>
-		<Italian>Kingdom of %s1</Italian>
-		<Spanish>Kingdom of %s1</Spanish>
+		<English>Brasil Colonial</English>
+		<French>Brasil Colonial</French>
+		<German>Brasil Colonial</German>
+		<Italian>Brasil Colonial</Italian>
+		<Spanish>Brasil Colonial</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_COMMUNIST</Tag>

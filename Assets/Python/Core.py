@@ -1183,6 +1183,8 @@ class PlotFactory:
 		return self.normal(identifier)
 	
 	def capital(self, identifier):
+		if is_minor(identifier):	# MacAurther: Don't try to find minor capitals
+			return plot(0 ,0)
 		iPeriod = player(identifier).getPeriod()
 		if iPeriod in dPeriodCapitals:
 			return plot(dPeriodCapitals[iPeriod])
@@ -1636,7 +1638,7 @@ class PlayerFactory:
 		return self.all().where(lambda p: civ(p) in civs)
 		
 	def independent(self):
-		return self.civs(iIndependent, iIndependent2)
+		return self.civs(iIndependent, iIndependent2, iIndependent3)
 		
 	def barbarian(self):
 		return self.civs(iBarbarian)

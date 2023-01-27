@@ -138,78 +138,78 @@ tRegionMap = (
 (	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	34,	34,	34,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
 (	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	30,	34,	-1,	-1,	-1,	-1,	-1,	-1,	34,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
 (	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	30,	-1,	-1,	34,	-1,	-1,	-1,	-1,	-1,	-1,	34,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
-(	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	34,	34,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
-(	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	34,	34,	34,	34,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
-(	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
+(	36,	36,	36,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	34,	34,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
+(	36,	36,	36,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	34,	34,	34,	34,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
+(	36,	36,	36,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	-1,	),
 )
 
 tSpreadFactors = (
 # Judaism
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical :	[],
 	iPeriphery :	[],
 	iMinority :		[rOntario, rNewEngland, rMidAtlantic, rCalifornia, rBrazilianHighlands, rPampas],
 },
 # Orthodoxy
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical : 	[rAlaska],
 	iPeriphery : 	[rNorthPlains],
 	iMinority :		[rMidAtlantic],
 },
 # Catholicism
 {
-	iCore :			[rBajio, rColombia, rPeru, rParaguay],
+	iCore :			[rBajio, rColombia, rPeru, rParaguay, rOldWorld],
 	iHistorical :	[rQuebec, rGulfCoast, rSierraMadre, rYucatan, rMesoamerica, rCaribbean, rVenezuela, rGuyana, rBolivia, rGuyana, rAmazon, rBrazilianHighlands, rPantanal, rChile, rUruguay, rPampas, rPatagonia],
 	iPeriphery :	[rOntario, rNewEngland, rMidAtlantic, rSouthwest, rCalifornia, rRockies, rCascadia],
 	iMinority :		[],
 },
 # Protestantism
 {
-	iCore :			[rOntario, rNewEngland, rMidAtlantic, rDeepSouth, rMidwest],
+	iCore :			[rOntario, rNewEngland, rMidAtlantic, rDeepSouth, rMidwest, rOldWorld],
 	iHistorical :	[rAlaska, rNunavut, rNorthPlains, rNewFoundland, rSouthwest, rGreatPlains, rCalifornia, rRockies, rCascadia, rHawaii, rGuyana],
 	iPeriphery :	[rQuebec, rMesoamerica, rPeru, rChile, rBrazilianHighlands, rGreenland],
 	iMinority :		[],
 },
 # Islam
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical :	[],
 	iPeriphery :	[],
 	iMinority : 	[rOntario, rMidAtlantic, rGuyana],
 },
 # Hinduism
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical :	[],
 	iPeriphery :	[rGuyana],
 	iMinority :		[],
 },
 # Buddhism
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical :	[],
 	iPeriphery :	[],
 	iMinority :		[rCalifornia],
 },
 # Confucianism
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical :	[],
 	iPeriphery :	[],
 	iMinority :		[],
 },
 # Taoism
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical :	[],
 	iPeriphery :	[],
 	iMinority :		[],
 },
 # Zoroastrianism
 {
-	iCore :			[],
+	iCore :			[rOldWorld],
 	iHistorical :	[],
 	iPeriphery :	[],
 	iMinority :		[],

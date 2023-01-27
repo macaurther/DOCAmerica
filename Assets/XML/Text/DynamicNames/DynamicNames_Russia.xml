@@ -27,27 +27,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_PEOPLES</Tag>
-		<English>Rus' Peoples</English>
-		<French>
-			<Text>Peuplades de la Rus'</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Rus' Peoples</German>
-		<Italian>Rus' Peoples</Italian>
-		<Spanish>Rus' Peoples</Spanish>
+		<English>Shelikhov's Voyage</English>
+		<French>Shelikhov's Voyage</French>
+		<German>Shelikhov's Voyage</German>
+		<Italian>Shelikhov's Voyage</Italian>
+		<Spanish>Shelikhov's Voyage</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_DEFAULT</Tag>
-		<English>Grand Duchy of %s1</English>
-		<French>
-			<Text>Grande-principaut&#233; de %s1</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Grand Duchy of %s1</German>
-		<Italian>Grand Duchy of %s1</Italian>
-		<Spanish>Grand Duchy of %s1</Spanish>
+		<English>Russkaya Amerika</English>
+		<French>Russkaya Amerika</French>
+		<German>Russkaya Amerika</German>
+		<Italian>Russkaya Amerika</Italian>
+		<Spanish>Russkaya Amerika</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_REPUBLIC</Tag>

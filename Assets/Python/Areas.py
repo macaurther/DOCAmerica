@@ -110,7 +110,7 @@ iMaya : 		((34, 57), 	(37, 59)),
 iTeotihuacan :	((28, 31), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((45, 36), 	(47, 40)),
-iMississippi :	((34, 77), 	(31, 46)),# fix pagan religion
+iMississippi :	((34, 77), 	(46, 79)),# fix pagan religion
 iPuebloan :		((24, 72), 	(26, 76)),# fix pagan religion
 iMuisca :		((49, 47), 	(50, 49)),
 iNorse :		((0, 0), 	(0, 0)),	#No core for Europeans

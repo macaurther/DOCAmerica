@@ -27,39 +27,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NETHERLANDS_PEOPLES</Tag>
-		<English>Dutch Peoples</English>
-		<French>
-			<Text>Peuplades n&#233;erlandaises</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Dutch Peoples</German>
-		<Italian>Dutch Peoples</Italian>
-		<Spanish>Dutch Peoples</Spanish>
+		<English>Dutch West India Company</English>
+		<French>Dutch West India Company</French>
+		<German>Dutch West India Company</German>
+		<Italian>Dutch West India Company</Italian>
+		<Spanish>Dutch West India Company</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NETHERLANDS_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume des %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Regno del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Reino de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<English>Nieuw %s1</English>
+		<French>Nieuw %s1</French>
+		<German>Nieuw %s1</German>
+		<Italian>Nieuw %s1</Italian>
+		<Spanish>Nieuw %s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NETHERLANDS_REPUBLIC</Tag>
