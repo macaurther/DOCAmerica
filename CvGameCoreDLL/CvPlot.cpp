@@ -4410,7 +4410,9 @@ int CvPlot::calculateMinutes(int iPlotIndex, int iPlotCount, bool bWrap, int iDe
 
 		if (iZero > 0)
 		{
-			return (iPlotIndex - iZero) * (iPlotIndex < iZero ? abs(iDegreeMin) : abs(iDegreeMax)) * MINUTES_PER_DEGREE / (iPlotIndex < iZero ? iZero : iPlotCount - iZero);
+			// MacAurther: Protect against divide by zero (i.e. the Prime Meridian is the eastmost column of plots)
+			bool bUseZeroAsDenominator = (iPlotIndex < iZero) || (iPlotCount == iZero);
+			return (iPlotIndex - iZero) * (iPlotIndex < iZero ? abs(iDegreeMin) : abs(iDegreeMax)) * MINUTES_PER_DEGREE / (bUseZeroAsDenominator ? iZero : iPlotCount - iZero);
 		}
 	}
 
@@ -11384,7 +11386,11 @@ CvWString CvPlot::getRegionName() const
 bool CvPlot::isCore(CivilizationTypes eCivilization) const
 {
 	FAssertMsg(eCivilization >= 0, "eCivilization is expected to be non-negative");
-	FAssertMsg(eCivilization < NUM_CIVS, "eCivilization is expected to be a playable civilization");
+	//FAssertMsg(eCivilization < NUM_CIVS, "eCivilization is expected to be a playable civilization");	// MacAurther: Somebody keeps calling isCore() on a minor civ
+	if (eCivilization >= NUM_CIVS)
+	{
+		return false;
+	}
 
 	return m_abCore[eCivilization];
 }

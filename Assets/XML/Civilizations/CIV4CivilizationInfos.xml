@@ -2670,8 +2670,8 @@
 				<Growth>1</Growth>
 				<Start>1</Start>
 			</Rating>
-			<bPlayable>0</bPlayable>
-			<bAIPlayable>0</bAIPlayable>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
 			<Cities>
 				<City>Pueblo Bonito</City>
 				<City>Bandelier</City>

@@ -19087,9 +19087,12 @@ void CvCity::setImmigrationYieldRate(YieldTypes eYield, int iValue)
 
 int CvCity::calculateImmigrationRate()
 {
-	FAssertMsg(getPopulation() > 0, "Population expected to be > 0");
-
-	int iImmigrationRate = 0;
+	// No Immigration with 0 population, to prevent divide by 0
+	if (getPopulation() < 1)
+	{
+		setImmigrationRate(0);
+		return 0;
+	}
 
 	// No Immigration with Isolationism
 	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_ISOLATIONISM))
@@ -19097,6 +19100,8 @@ int CvCity::calculateImmigrationRate()
 		setImmigrationRate(0);
 		return 0;
 	}
+
+	int iImmigrationRate = 0;
 
 	// Get Immigration value based on Civics
 	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_HAVEN))
