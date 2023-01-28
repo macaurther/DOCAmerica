@@ -1145,16 +1145,14 @@ enum CivilizationTypes		// Exposed to Python
 	AMERICA,
 	ARGENTINA,
 	AZTECS,
-	BOLIVIA,
 	BRAZIL,
 	CANADA,
-	CHILE,
 	CHIMU,
 	COLOMBIA,
 	CUBA,
-	
 	ENGLAND,
 	FRANCE,
+	
 	HAITI,
 	HAWAII,
 	INCA,
@@ -1163,9 +1161,9 @@ enum CivilizationTypes		// Exposed to Python
 	MAYA,
 	MEXICO,
 	MISSISSIPPI,
-	
 	MUISCA,
 	NETHERLANDS,
+	
 	NORSE,
 	PERU,
 	PORTUGAL,
@@ -1174,9 +1172,9 @@ enum CivilizationTypes		// Exposed to Python
 	SPAIN,
 	TEOTIHUACAN,
 	TIWANAKU,
-
 	VENEZUELA,
 	WARI,
+	
 	INDEPENDENT,
 	INDEPENDENT2,
 	INDEPENDENT3,
@@ -1213,9 +1211,6 @@ enum LeaderHeadTypes			// Exposed to Python
 	// Aztec
 	MONTEZUMA,
 
-	// Bolivia
-
-
 	// Brazil
 	DOM_PEDRO,
 	VARGAS,
@@ -1223,9 +1218,6 @@ enum LeaderHeadTypes			// Exposed to Python
 	// Canada
 	MACDONALD,
 	TRUDEAU,
-
-	// Chile
-
 
 	// Chimu
 	TACAYNAMO,

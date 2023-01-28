@@ -318,14 +318,6 @@ lCivilizations = [
 		techs=techs.column(6)
 	),
 	Civilization(
-		iBolivia,
-		iGold=1200,
-		iAdvancedStartPoints=100,
-		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iGeology)
-	),
-	Civilization(
 		iArgentina,
 		iGold=1200,
 		iAdvancedStartPoints=100,
@@ -348,14 +340,6 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iRightsOfMan)
-	),
-	Civilization(
-		iChile,
-		iGold=1200,
-		iAdvancedStartPoints=100,
-		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iGeology)
 	),
 	Civilization(
 		iPeru,
@@ -487,11 +471,6 @@ dStartingUnits = CivDict({
 		iWork: 1,
 		iDefend: 2,
 	},
-	iBolivia: {
-		iSettle: 1,
-		iWork: 1,
-		iDefend: 2,
-	},
 	iArgentina: {
 		iSettle: 2,
 		iWork: 2,
@@ -520,11 +499,6 @@ dStartingUnits = CivDict({
 		iMissionary: 1,
 		iFerry: 1,
 		iAttackSea: 1,
-	},
-	iChile: {
-		iSettle: 1,
-		iWork: 1,
-		iDefend: 2,
 	},
 	iPeru: {
 		iSettle: 1,

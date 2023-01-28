@@ -13,12 +13,12 @@ iWorldY = 108
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 38
+iNumCivs = 36
 #				2				3				4				5				6				7				8				9				10
-(iAmerica, 		iArgentina, 	iAztecs, 		iBolivia,		iBrazil, 		iCanada, 		iChile,			iChimu,			iColombia, 		iCuba,			
-iEngland, 		iFrance, 		iHaiti,			iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,
-iMuisca,		iNetherlands, 	iNorse,			iPeru,			iPortugal, 		iPuebloan,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,
-iVenezuela,		iWari,			iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iCuba,			iEngland, 		iFrance, 		
+iHaiti,			iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
+iNorse,			iPeru,			iPortugal, 		iPuebloan,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		iWari,			
+iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -43,11 +43,9 @@ lBirthOrder = [
 	iRussia,
 	iAmerica,
 	iHaiti,
-	iBolivia,
 	iArgentina,
 	iMexico,
 	iColombia,
-	iChile,
 	iPeru,
 	iBrazil,
 	iVenezuela,
@@ -70,7 +68,7 @@ iNumCivGroups = 3
 dCivGroups = {
 iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
 iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois],
-iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iBolivia, iChile, iPeru, iVenezuela, iCuba]
+iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCuba]
 }
 
 # used in: Stability
@@ -80,7 +78,7 @@ iNumTechGroups = 3
 
 dTechGroups = {
 iTechGroupWestern : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iCanada],
-iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iBolivia, iChile, iPeru, iVenezuela, iCuba],
+iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela, iCuba],
 iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois],
 }
 
@@ -134,7 +132,6 @@ lNeighbours = [
 	(iNorse, iAmerica),
 	(iNorse, iCanada),
 	(iChimu, iPeru),
-	(iChimu, iBolivia),
 	(iInuit, iRussia),
 	(iInuit, iAmerica),
 	(iInuit, iCanada),
@@ -142,7 +139,6 @@ lNeighbours = [
 	(iInca, iColombia),
 	(iInca, iBrazil),
 	(iInca, iPeru),
-	(iInca, iChile),
 	(iAztecs, iAmerica),
 	(iAztecs, iMexico),
 	(iAztecs, iColombia),
@@ -160,12 +156,7 @@ lNeighbours = [
 	(iAmerica, iCuba),
 	(iAmerica, iHaiti),
 	(iHaiti, iCuba),
-	(iBolivia, iPeru),
-	(iBolivia, iBrazil),
-	(iBolivia, iChile),
-	(iBolivia, iArgentina),
 	(iArgentina, iBrazil),
-	(iArgentina, iChile),
 	(iColombia, iVenezuela),
 	(iVenezuela, iBrazil),
 	(iMexico, iColombia),
@@ -182,8 +173,6 @@ lInfluences = [
 	(iAmerica, iNetherlands),
 	(iAmerica, iNorse),
 	(iHaiti, iFrance),
-	(iBolivia, iSpain),
-	(iBolivia, iTiwanaku),
 	(iArgentina, iSpain),
 	(iMexico, iSpain),
 	(iMexico, iFrance),
@@ -191,7 +180,6 @@ lInfluences = [
 	(iMexico, iMaya),
 	(iColombia, iSpain),
 	(iColombia, iMuisca),
-	(iChile, iSpain),
 	(iPeru, iSpain),
 	(iPeru, iTiwanaku),
 	(iVenezuela, iSpain),
@@ -224,12 +212,10 @@ iHawaii : 1650,
 iRussia: 1743,
 iAmerica : 1775,
 iHaiti : 1804,
-iBolivia : 1810,
 iArgentina : 1810,
 iMexico : 1810,
 iColombia : 1810,
-iChile : 1810,
-iPeru : 1811,
+iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
 iCanada : 1867,
@@ -303,11 +289,9 @@ iHawaii : 1,
 iRussia : 2,
 iAmerica : 2,
 iHaiti : 1,
-iBolivia : 1,
 iArgentina : 1,
 iMexico : 1,
 iColombia : 2,
-iChile : 1,
 iPeru : 1,
 iBrazil : 2,
 iVenezuela : 1,
@@ -359,11 +343,9 @@ iHawaii : 25,
 iRussia: 35,
 iAmerica : 30,
 iHaiti : 35,
-iBolivia : 30,
 iArgentina : 40,
 iMexico : 40,
 iColombia : 30,
-iChile : 35,
 iPeru : 35,
 iBrazil : 40,
 iVenezuela : 20,
@@ -710,7 +692,7 @@ iNumPeriods = 0
 iNumImpacts = 5
 (iImpactMarginal, iImpactLimited, iImpactSignificant, iImpactCritical, iImpactPlayer) = range(iNumImpacts)
 
-lSecondaryCivs = [iBolivia, iChile, iChimu, iCuba, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari]
+lSecondaryCivs = [iChimu, iCuba, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari]
 
 (i250AD, i1500AD, i1770AD) = range(3)
 

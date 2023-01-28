@@ -33,10 +33,8 @@ lIndependenceCivs = [
 lDynamicReligionCivs = [
 	iAmerica,
 	iArgentina,
-	iBolivia,
 	iBrazil,
 	iCanada,
-	iChile,
 	iColombia,
 	iCuba,
 	iHaiti,

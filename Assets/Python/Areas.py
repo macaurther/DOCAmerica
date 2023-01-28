@@ -28,11 +28,9 @@ iHawaii :		(14, 49), # Hilo
 iRussia :		(15, 96), # Novo-Arkhangelsk
 iAmerica :		(51, 79), # Washington
 iHaiti :		(53, 58), # Port-au-Prince
-iBolivia :		(52, 33), # La Paz
 iArgentina :	(57, 16), # Buenos Aires
 iMexico :		(29, 60), # Mexico City
 iColombia :		(48, 49), # Bogota
-iChile :		(49, 17), # Santiago
 iPeru :			(47, 36), # Lima
 iBrazil :		(70, 28), # Rio de Janeiro
 iVenezuela :	(52, 53), # Caracas
@@ -77,11 +75,9 @@ iHawaii :		((12, 47), 	(14, 50)),
 iRussia :		((14, 95), 	(16, 97)),
 iAmerica : 		((46, 72), 	(63, 86)),
 iHaiti :		((51, 58), 	(53, 60)),
-iBolivia :		((51, 32), 	(55, 35)),
 iArgentina : 	((52, 10), 	(59, 22)),
 iMexico :		((15, 57), 	(38, 75)),
 iColombia :		((45, 47), 	(49, 54)),
-iChile :		((48, 15), 	(50, 23)),
 iPeru :			((45, 34), 	(49, 38)),
 iBrazil : 		((62, 22), 	(77, 40)),
 iVenezuela :	((50, 50), 	(54, 53)),
@@ -128,11 +124,9 @@ iHawaii :		((12, 47), 	(14, 50)),
 iRussia :		((0, 0), 	(0, 0)),	#No core for Europeans
 iAmerica : 		((47, 79), 	(60, 84)),
 iHaiti :		((51, 58), 	(53, 60)),
-iBolivia :		((51, 32), 	(55, 35)),
 iArgentina : 	((53, 15), 	(58, 20)),
 iMexico :		((26, 57), 	(32, 64)),#TODO
 iColombia :		((46, 49), 	(49, 54)),
-iChile :		((48, 15), 	(50, 23)),
 iPeru :			((45, 34), 	(49, 38)),
 iBrazil : 		((65, 26), 	(72, 32)),
 iVenezuela :	((49, 50), 	(54, 53)),
@@ -185,11 +179,9 @@ iHawaii :		((56, 81), 	(56, 81)),
 iRussia :		((56, 81), 	(56, 81)),
 iAmerica : 		((51, 79), 	(51, 79)),
 iHaiti :		((51, 58), 	(53, 60)),
-iBolivia :		((51, 32), 	(55, 35)),
 iArgentina : 	((57, 16), 	(57, 16)),
 iMexico :		((30, 60), 	(30, 60)),
 iColombia :		((48, 49), 	(48, 49)),
-iChile :		((48, 15), 	(50, 23)),
 iPeru :			((45, 34), 	(49, 38)),
 iBrazil : 		((70, 28), 	(70, 28)),
 iVenezuela :	((50, 50), 	(54, 53)),
@@ -232,11 +224,9 @@ iHawaii :		((56, 81), 	(56, 81)),
 iRussia :		((56, 81), 	(56, 81)),
 iAmerica : 		((51, 79), 	(51, 79)),
 iHaiti :		((51, 58), 	(53, 60)),
-iBolivia :		((51, 32), 	(55, 35)),
 iArgentina : 	((57, 16), 	(57, 16)),
 iMexico :		((30, 60), 	(30, 60)),
 iColombia :		((48, 49), 	(48, 49)),
-iChile :		((48, 15), 	(50, 23)),
 iPeru :			((45, 34), 	(49, 38)),
 iBrazil : 		((70, 28), 	(70, 28)),
 iVenezuela :	((50, 50), 	(54, 53)),

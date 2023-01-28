@@ -164,11 +164,9 @@ dStartingLeaders = [
 	iRussia : iCatherine,
 	iAmerica : iWashington,
 	iHaiti : iLOuverture,
-	iBolivia : iLeaderBarbarian,	# TODO
 	iArgentina : iSanMartin,
 	iMexico : iJuarez,
 	iColombia : iBolivar,
-	iChile : iLeaderBarbarian,	# TODO
 	iPeru : iCastilla,
 	iBrazil : iPedro,
 	iVenezuela : iChavez,

@@ -358,85 +358,6 @@
 			<CivilizationActionSound>AS3D_AZTEC_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_BOLIVIA</Type>
-			<Description>TXT_KEY_CIV_BOLIVIA_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_BOLIVIA_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_BOLIVIA_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_BOLIVIA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_MIDDLE_INDIGO</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_BOLIVIA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
-			<Identifier>BOL</Identifier>
-			<Region>LAT</Region>
-			<StartingYear>1810</StartingYear>
-			<LoadingTimes>
-				<LoadingTime>55</LoadingTime>
-				<LoadingTime>40</LoadingTime>
-				<LoadingTime>10</LoadingTime>
-			</LoadingTimes>
-			<Rating>
-				<Trade>3</Trade>
-				<Production>2</Production>
-				<Culture>2</Culture>
-				<Growth>3</Growth>
-				<Start>3</Start>
-			</Rating>
-			<bPlayable>1</bPlayable>
-			<bAIPlayable>1</bAIPlayable>
-			<Cities>
-				<City>Santo Tomas</City>
-				<City>Magangue</City>
-				<City>Puerto Cabello</City>
-				<City>Popayan</City>
-				<City>Angostura</City>
-				<City>Santiago de Cali</City>
-				<City>Tuja</City>
-				<City>Medellin</City>
-			</Cities>
-			<Buildings>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
-				</Building>
-			</Buildings>
-			<Units>
-			</Units>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-			</FreeUnitClasses>
-			<FreeBuildingClasses>
-				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<bFreeBuildingClass>1</bFreeBuildingClass>
-				</FreeBuildingClass>
-			</FreeBuildingClasses>
-			<FreeTechs/>
-			<DisableTechs/>
-			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
-			</InitialCivics>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_BARBARIAN</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
-			<DerivativeCiv>CIVILIZATION_SPAIN</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_SPAIN_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
-		</CivilizationInfo>
-		<CivilizationInfo>
 			<Type>CIVILIZATION_BRAZIL</Type>
 			<Description>TXT_KEY_CIV_BRAZIL_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_BRAZIL_SHORT_DESC</ShortDescription>
@@ -641,89 +562,6 @@
 			<DerivativeCiv>CIVILIZATION_ENGLAND</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_ENGLAND_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_ENGLAND_ORDER</CivilizationActionSound>
-		</CivilizationInfo>
-		<CivilizationInfo>
-			<Type>CIVILIZATION_CHILE</Type>
-			<Description>TXT_KEY_CIV_CHILE_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_CHILE_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_CHILE_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_CHILE_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERY_LIGHT_BLUE</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_CHILE</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
-			<Identifier>CHL</Identifier>
-			<Region>LAT</Region>
-			<StartingYear>1810</StartingYear>
-			<LoadingTimes>
-				<LoadingTime>45</LoadingTime>
-				<LoadingTime>35</LoadingTime>
-				<LoadingTime>8</LoadingTime>
-			</LoadingTimes>
-			<Rating>
-				<Trade>3</Trade>
-				<Production>2</Production>
-				<Culture>4</Culture>
-				<Growth>4</Growth>
-				<Start>2</Start>
-			</Rating>
-			<bPlayable>1</bPlayable>
-			<bAIPlayable>1</bAIPlayable>
-			<Cities>
-				<City>La Pampa</City>
-				<City>Entre Rios</City>
-				<City>Misiones</City>
-				<City>Chaco</City>
-				<City>Formosa</City>
-				<City>Jujuy</City>
-				<City>Santiago del Estero</City>
-				<City>Catamarca</City>
-				<City>La Rioja</City>
-				<City>Neuquen</City>
-				<City>Rio Negro</City>
-				<City>Tierra del Fuego</City>
-			</Cities>
-			<Buildings>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
-				</Building>
-			</Buildings>
-			<Units>
-			</Units>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-			</FreeUnitClasses>
-			<FreeBuildingClasses>
-				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<bFreeBuildingClass>1</bFreeBuildingClass>
-				</FreeBuildingClass>
-			</FreeBuildingClasses>
-			<FreeTechs/>
-			<DisableTechs/>
-			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
-			</InitialCivics>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_BARBARIAN</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
-			<DerivativeCiv>CIVILIZATION_SPAIN</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_SPAIN_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_CHIMU</Type>
@@ -2459,7 +2297,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PER</Identifier>
 			<Region>AND</Region>
-			<StartingYear>1811</StartingYear>
+			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
 				<LoadingTime>40</LoadingTime>

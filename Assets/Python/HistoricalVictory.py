@@ -274,11 +274,6 @@ dGoals = {
 		GoldAmount(999999, by=2000),
 		GoldAmount(999999, by=2000),
 	),
-	iBolivia: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-	),
 	iArgentina: (
 		GoldenAges(2, by=1930),
 		CityCultureLevel(start(iArgentina).named(BUENOS_AIRES), iCultureLevelLegendary, by=1960),
@@ -303,11 +298,6 @@ dGoals = {
 			at=1920,
 		),
 		ResourceTradeGold(3000, by=1950),
-	),
-	iChile: (
-		GoldAmount(999999, by=2000),
-		SpecialistCount(iSpecialistGreatArtist, 2, by=1950),
-		GoldAmount(999999, by=2000),
 	),
 	iPeru: (
 		GoldAmount(999999, by=2000),

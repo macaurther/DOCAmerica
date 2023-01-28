@@ -3,19 +3,19 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MISSISSIPPI_DESC</Tag>
-		<English>The Hopewell</English>
-		<French>The Hopewell</French>
-		<German>The Hopewell</German>
-		<Italian>The Hopewell</Italian>
-		<Spanish>The Hopewell</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_HOPEWELL_DESC</Tag>
 		<English>The Mississippi</English>
 		<French>The Mississippi</French>
 		<German>The Mississippi</German>
 		<Italian>The Mississippi</Italian>
 		<Spanish>The Mississippi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_HOPEWELL_DESC</Tag>
+		<English>The Hopewell</English>
+		<French>The Hopewell</French>
+		<German>The Hopewell</German>
+		<Italian>The Hopewell</Italian>
+		<Spanish>The Hopewell</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_HOPEWELL_PEOPLES</Tag>

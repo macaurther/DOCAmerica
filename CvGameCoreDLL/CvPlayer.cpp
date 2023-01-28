@@ -25346,9 +25346,7 @@ int CvPlayer::getRegionPowers()
 		return RP_EUROPE;
 		break;
 	case ARGENTINA:
-	case BOLIVIA:
 	case BRAZIL:
-	case CHILE:
 	case COLOMBIA:
 	case CUBA:
 	case HAITI:
