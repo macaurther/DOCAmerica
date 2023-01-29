@@ -1481,7 +1481,7 @@
 			<ShortDescription>TXT_KEY_CIV_IROQUOIS_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_IROQUOIS_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_IROQUOIS_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BROWN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_IROQUOIS</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_IROQUOIS</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
@@ -1506,21 +1506,70 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Wenro</City>
-				<City>Osinika</City>
-				<City>Grand River</City>
+				<City>Mohawk</City>
+				<City>Cayuga</City>
+				<City>Onondaga</City>
+				<City>Seneca</City>
+				<City>Oneida</City>
+				<City>Tuscarora</City>
+				<City>Caughnawaga</City>
+				<City>Susquehannock</City>
+				<City>Tionontati</City>
+				<City>Erie</City>
+				<City>Powhaten</City>
+				<City>Mingo</City>
+				<City>Narragansett</City>
+				<City>Nowadaga</City>
+				<City>Saratoga</City>
+				<City>Gewauga</City>
+				<City>Owego</City>
+				<City>Dyosyowan</City>
+				<City>Yoroonwago</City>
+				<City>Awegen</City>
+				<City>Cowassalon</City>
+				<City>Tueadasso</City>
+				<City>Gadoquat</City>
+				<City>Canajoharie</City>
+				<City>Kanadaseagea</City>
+				<City>Osquake</City>
+				<City>Neodakheat</City>
+				<City>Kawauka</City>
+				<City>Skoiyase</City>
+				<City>Joneadih</City>
+				<City>Ganadoga</City>
+				<City>Hostayuntwa</City>
+				<City>Ahaouet</City>
+				<City>Touenho</City>
+				<City>Shawiangto</City>
+				<City>Gandasetaigon</City>
+				<City>Keinthe</City>
+				<City>Oka</City>
+				<City>Tyendenaga</City>
+				<City>Teyagon</City>
+				<City>Ganaraske</City>
 				<City>Akwesasne</City>
-				<City>Buffalo Creek</City>
-				<City>Brantford</City>
-				<City>Genesse River</City>
-				<City>Canandaigua Lake</City>
-				<City>Lake Simcoe</City>
+				<City>Canienga</City>
+				<City>Oswegatchie</City>
+				<City>Cattaraugus</City>
+				<City>Tonawanda</City>
+				<City>Kanagaro</City>
+				<City>Opolopong</City>
+				<City>Deseroken</City>
+				<City>Allegany</City>
 				<City>Salamanca</City>
-				<City>Gowanda</City>
-				<City>Akron</City>
-				<City>Kanesatake</City>
-				<City>Ganienkeh</City>
+				<City>Geneseo</City>
 				<City>Chondote</City>
+				<City>Buckaloon</City>
+				<City>Onnontare</City>
+				<City>Skohare</City>
+				<City>Ganogeh</City>
+				<City>Skannayutenate</City>
+				<City>Oriska</City>
+				<City>Gannentaha</City>
+				<City>Venango</City>
+				<City>Chemung</City>
+				<City>Cittenango</City>
+				<City>Onnahee</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -2528,10 +2577,6 @@
 				</Building>
 			</Buildings>
 			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<UnitType>UNIT_PUEBLOAN_CLIFF_DWELLER</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>

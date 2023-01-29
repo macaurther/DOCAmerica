@@ -210,7 +210,7 @@ lCivilizations = [
 		iPuebloan,
 		iGold=50,
 		lCivics=[iCouncil],
-		techs=techs.column(2)
+		techs=techs.column(2).including(iMasonry).without(iSailing)
 	),
 	Civilization(
 		iMuisca,

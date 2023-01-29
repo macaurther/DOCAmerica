@@ -224,56 +224,6 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SETTLER</Class>
-			<Type>UNIT_PUEBLOAN_CLIFF_DWELLER</Type>
-			<Capture>UNITCLASS_WORKER</Capture>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_SETTLE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_PUEBLOAN_CLIFF_DWELLER</Description>
-			<Civilopedia>TXT_KEY_UNIT_PUEBLOAN_CLIFF_DWELLER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_PUEBLOAN_CLIFF_DWELLER_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
-			<bFood>1</bFood>
-			<UnitClassUpgrades>
-				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_PIONEER</UnitClassUpgradeType>
-					<bUnitClassUpgrade>1</bUnitClassUpgrade>
-				</UnitClassUpgrade>
-			</UnitClassUpgrades>
-			<bFound>1</bFound>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_SETTLE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>4</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>4</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>4</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_MALE</EarlyArtDefineTag>
-				</UnitMeshGroup>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_FEMALE</EarlyArtDefineTag>
-				</UnitMeshGroup>
-				<UnitMeshGroup>
-					<iRequired>2</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_SETTLER_CHILD</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_SETTLER</Class>
 			<Type>UNIT_INUIT_DOG_SLED</Type>
 			<Capture>UNITCLASS_WORKER</Capture>
 			<Domain>DOMAIN_LAND</Domain>

@@ -7141,6 +7141,12 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			}
 		}
 
+		// MacAurther: Woodland RP: +1 Production on unimproved forests
+		if (getFeatureType() == FEATURE_FOREST && getImprovementType() == NO_IMPROVEMENT && eYield == YIELD_PRODUCTION && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_WOODLAND)
+		{
+			iYield += 1;
+		}
+
 		if (GET_PLAYER(ePlayer).isGoldenAge())
 		{
 			if (iYield >= GC.getYieldInfo(eYield).getGoldenAgeYieldThreshold())

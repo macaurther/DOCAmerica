@@ -1267,5 +1267,19 @@
 			<fBlue>0.56</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_IROQUOIS_PURPLE</Type>
+			<fRed>0.51</fRed>
+			<fGreen>0.40</fGreen>
+			<fBlue>0.89</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_IROQUOIS_PURPLE_TEXT</Type>
+			<fRed>0.51</fRed>
+			<fGreen>0.40</fGreen>
+			<fBlue>0.89</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
 	</ColorVals>
 </Civ4ColorVals>

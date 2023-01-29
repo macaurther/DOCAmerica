@@ -1120,9 +1120,9 @@
 			<Civilopedia>TXT_KEY_BUILDING_SMOKEHOUSE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SMOKEHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_SMOKEHOUSE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_LOGISTICS</ArtDefineTag>
 			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
-			<PrereqTech>TECH_PASTORALISM</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

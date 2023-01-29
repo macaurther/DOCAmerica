@@ -160,19 +160,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_WOO_TITLE</Tag>
-		<English>Woodlands - The Power of Companion Planting:</English>
-		<French>Woodlands - The Power of Companion Planting:</French>
-		<German>Woodlands - The Power of Companion Planting:</German>
-		<Italian>Woodlands - The Power of Companion Planting:</Italian>
-		<Spanish>Woodlands - The Power of Companion Planting:</Spanish>
+		<English>Woodlands - The Power of Harmony:</English>
+		<French>Woodlands - The Power of Harmony:</French>
+		<German>Woodlands - The Power of Harmony:</German>
+		<Italian>Woodlands - The Power of Harmony:</Italian>
+		<Spanish>Woodlands - The Power of Harmony:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_WOO</Tag>
-		<English>Improvements do not remove Forests</English>
-		<French>Improvements do not remove Forests</French>
-		<German>Improvements do not remove Forests</German>
-		<Italian>Improvements do not remove Forests</Italian>
-		<Spanish>Improvements do not remove Forests</Spanish>
+		<English>+1 [ICON_PRODUCTION] on unimproved Forests</English>
+		<French>+1 [ICON_PRODUCTION] on unimproved Forests</French>
+		<German>+1 [ICON_PRODUCTION] on unimproved Forests</German>
+		<Italian>+1 [ICON_PRODUCTION] on unimproved Forests</Italian>
+		<Spanish>+1 [ICON_PRODUCTION] on unimproved Forests</Spanish>
 	</TEXT>
 	<!-- Unique Powers -->
 	<TEXT>
@@ -190,30 +190,6 @@
 		<German>Start with five free Great People and extra [ICON_HAPPY] from settled Great People</German>
 		<Italian>Start with five free Great People and extra [ICON_HAPPY] from settled Great People</Italian>
 		<Spanish>AStart with five free Great People and extra [ICON_HAPPY] from settled Great People</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_AME_TITLE</Tag>
-		<English>The Power of the American Dream:</English>
-		<French>Le pouvoir du r&#234;ve am&#233;ricain :</French>
-		<German>Die Macht des Amerikanischen Traums:</German>
-		<Italian>Il potere del sogno americano:</Italian>
-		<Spanish>El poder del sue&#241;o americano:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_AME</Tag>
-		<English>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</English>
-		<French>Bonheur additionnel avec les doctrines d&#233;mocratie, constitution, individualisme et libre entreprise</French>
-		<German>Zus&#228;tzliche Zufriedenheit unter Demokratie, Verfassung, Individualismus und Freiem Unternehmertum</German>
-		<Italian>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</Italian>
-		<Spanish>Additional happiness from running Democracy, Constitution, Individualism and Free Enterprise</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_AMERICAN_UP_HAPPINESS</Tag>
-		<English>[ICON_BULLET]%D1_Change%F2_HappyOrUn In All Cities</English>
-		<French>[ICON_BULLET]%D1_Change%F2_HappyOrUn dans toutes les villes</French>
-		<German>[ICON_BULLET]%D1_Change%F2_HappyOrUn In Allen St&#228;dten</German>
-		<Italian>[ICON_BULLET]%D1_Change%F2_HappyOrUn In All Cities</Italian>
-		<Spanish>[ICON_BULLET]%D1_Change%F2_HappyOrUn In All Cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ARG_TITLE</Tag>
@@ -280,6 +256,22 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_CMI_TITLE</Tag>
+		<English>The Power of the Mochica Heritage:</English>
+		<French>Le pouvoir des mochica heritage:</French>
+		<German>Die Macht der Mochica Heritage:</German>
+		<Italian>Il potere delle mochica heritage:</Italian>
+		<Spanish>El poder de las mochica heritage:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CMI</Tag>
+		<English>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</English>
+		<French>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</French>
+		<German>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</German>
+		<Italian>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</Italian>
+		<Spanish>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_COL_TITLE</Tag>
 		<English>The Power of the Liberator:</English>
 		<French>Le pouvoir du lib&#233;rateur :</French>
@@ -294,6 +286,22 @@
 		<German>Keinen Widerstand in eroberten St&#228;dten in Lateinamerika</German>
 		<Italian>No City Resistance on Conquest in Latin America</Italian>
 		<Spanish>No City Resistance on Conquest in Latin America</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CUB_TITLE</Tag>
+		<English>The Power of TODO:</English>
+		<French>The Power of TODO:</French>
+		<German>The Power of TODO:</German>
+		<Italian>The Power of TODO:</Italian>
+		<Spanish>The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CUB</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_CONQUESTS_TARGET</Tag>
@@ -336,6 +344,38 @@
 		<Spanish>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_HAI_TITLE</Tag>
+		<English>The Power of TODO:</English>
+		<French>The Power of TODO:</French>
+		<German>The Power of TODO:</German>
+		<Italian>The Power of TODO:</Italian>
+		<Spanish>The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HAI</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HAW_TITLE</Tag>
+		<English>The Power of Navigation:</English>
+		<French>Le pouvoir de la navigation :</French>
+		<German>The Power of Navigation:</German>
+		<Italian>The Power of Navigation:</Italian>
+		<Spanish>The Power of Navigation:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HAW</Tag>
+		<English>No penalties for cultural expansion over Ocean tiles</English>
+		<French>Pas de p&#233;nalit&#233; pour l'expansion culturelle sur les cases d'oc&#233;an</French>
+		<German>No penalties for cultural expansion over Ocean tiles</German>
+		<Italian>No penalties for cultural expansion over Ocean tiles</Italian>
+		<Spanish>No penalties for cultural expansion over Ocean tiles</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_HOL_TITLE</Tag>
 		<English>The Power of Trading Companies:</English>
 		<French>Le pouvoir des compagnies commerciales :</French>
@@ -366,6 +406,38 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_INU_TITLE</Tag>
+		<English>The Power of Inuksuk:</English>
+		<French>Le pouvoir de inuksuk:</French>
+		<German>Die Macht des Inuksuk:</German>
+		<Italian>Il potere della inuksuk:</Italian>
+		<Spanish>El poder de la inuksuk:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_INU</Tag>
+		<English>Trade routes do not require roads</English>
+		<French>Trade routes do not require roads</French>
+		<German>Trade routes do not require roads</German>
+		<Italian>Trade routes do not require roads</Italian>
+		<Spanish>Trade routes do not require roads</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IRO_TITLE</Tag>
+		<English>The Power of Haudenosaunee:</English>
+		<French>The Power of Haudenosaunee:</French>
+		<German>The Power of Haudenosaunee:</German>
+		<Italian>The Power of Haudenosaunee:</Italian>
+		<Spanish>The Power of Haudenosaunee:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_IRO</Tag>
+		<English>Tribes in your borders are automatically contacted and convert to Cottages</English>
+		<French>Tribes in your borders are automatically contacted and convert to Cottages</French>
+		<German>Tribes in your borders are automatically contacted and convert to Cottages</German>
+		<Italian>Tribes in your borders are automatically contacted and convert to Cottages</Italian>
+		<Spanish>Tribes in your borders are automatically contacted and convert to Cottages</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY_TITLE</Tag>
@@ -400,20 +472,68 @@
 		<Spanish>Can build farms on hills</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UP_HAW_TITLE</Tag>
-		<English>The Power of Navigation:</English>
-		<French>Le pouvoir de la navigation :</French>
-		<German>The Power of Navigation:</German>
-		<Italian>The Power of Navigation:</Italian>
-		<Spanish>The Power of Navigation:</Spanish>
+		<Tag>TXT_KEY_UP_MIS_TITLE</Tag>
+		<English>The Power of Mshi-Ziibi:</English>
+		<French>Le pouvoir de mshi-ziibi:</French>
+		<German>Die Macht des Mshi-Ziibi:</German>
+		<Italian>Il potere della mshi-ziibi:</Italian>
+		<Spanish>El poder de la mshi-ziibi:</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UP_HAW</Tag>
-		<English>No penalties for cultural expansion over Ocean tiles</English>
-		<French>Pas de p&#233;nalit&#233; pour l'expansion culturelle sur les cases d'oc&#233;an</French>
-		<German>No penalties for cultural expansion over Ocean tiles</German>
-		<Italian>No penalties for cultural expansion over Ocean tiles</Italian>
-		<Spanish>No penalties for cultural expansion over Ocean tiles</Spanish>
+		<Tag>TXT_KEY_UP_MIS</Tag>
+		<English>+1 [ICON_COMMERCE] along Rivers</English>
+		<French>+1 [ICON_COMMERCE] along Rivers</French>
+		<German>+1 [ICON_COMMERCE] along Rivers</German>
+		<Italian>+1 [ICON_COMMERCE] along Rivers</Italian>
+		<Spanish>+1 [ICON_COMMERCE] along Rivers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MUI_TITLE</Tag>
+		<English>The Power of Salt:</English>
+		<French>Le pouvoir de sel:</French>
+		<German>Die Macht des Salz-:</German>
+		<Italian>Il potere della sale:</Italian>
+		<Spanish>El poder de la sal:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_MUI</Tag>
+		<English>+1 [ICON_FOOD] from Mines</English>
+		<French>+1 [ICON_FOOD] from Mines</French>
+		<German>+1 [ICON_FOOD] from Mines</German>
+		<Italian>+1 [ICON_FOOD] from Mines</Italian>
+		<Spanish>+1 [ICON_FOOD] from Mines</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NOR_TITLE</Tag>
+		<English>The Power of Seafarers:</English>
+		<French>The Power of Seafarers:</French>
+		<German>The Power of Seafarers:</German>
+		<Italian>The Power of Seafarers:</Italian>
+		<Spanish>The Power of Seafarers:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_NOR</Tag>
+		<English>+1 [ICON_FOOD] on Coast and Arctic Coast</English>
+		<French>+1 [ICON_FOOD] on Coast and Arctic Coast</French>
+		<German>+1 [ICON_FOOD] on Coast and Arctic Coast</German>
+		<Italian>+1 [ICON_FOOD] on Coast and Arctic Coast</Italian>
+		<Spanish>+1 [ICON_FOOD] on Coast and Arctic Coast</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PER_TITLE</Tag>
+		<English>The Power of TODO:</English>
+		<French>The Power of TODO:</French>
+		<German>The Power of TODO:</German>
+		<Italian>The Power of TODO:</Italian>
+		<Spanish>The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PER</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR_TITLE</Tag>
@@ -430,6 +550,22 @@
 		<German>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</German>
 		<Italian>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</Italian>
 		<Spanish>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PUE_TITLE</Tag>
+		<English>The Power of Cliff Dwellers:</English>
+		<French>The Power of Cliff Dwellers:</French>
+		<German>The Power of Cliff Dwellers:</German>
+		<Italian>The Power of Cliff Dwellers:</Italian>
+		<Spanish>The Power of Cliff Dwellers:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PUE</Tag>
+		<English>Cities founded on Hills start with improved infrastructure</English>
+		<French>Cities founded on Hills start with improved infrastructure</French>
+		<German>Cities founded on Hills start with improved infrastructure</German>
+		<Italian>Cities founded on Hills start with improved infrastructure</Italian>
+		<Spanish>Cities founded on Hills start with improved infrastructure</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_RUS_TITLE</Tag>
@@ -496,6 +632,22 @@
 		<Spanish>+1 [ICON_PRODUCTION] from Cities on Hills and +1 Priest Slot from Pagan Temples</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_VEN_TITLE</Tag>
+		<English>The Power of TODO:</English>
+		<French>The Power of TODO:</French>
+		<German>The Power of TODO:</German>
+		<Italian>The Power of TODO:</Italian>
+		<Spanish>The Power of TODO:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_VEN</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_WAR_TITLE</Tag>
 		<English>The Power of Andenes:</English>
 		<French>The Power of Andenes:</French>
@@ -510,101 +662,5 @@
 		<German>+1 [ICON_FOOD] on tiles adjacent to Mountains</German>
 		<Italian>+1 [ICON_FOOD] on tiles adjacent to Mountains</Italian>
 		<Spanish>+1 [ICON_FOOD] on tiles adjacent to MountainS</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_CMU_TITLE</Tag>
-		<English>The Power of the Mochica Heritage:</English>
-		<French>Le pouvoir des mochica heritage:</French>
-		<German>Die Macht der Mochica Heritage:</German>
-		<Italian>Il potere delle mochica heritage:</Italian>
-		<Spanish>El poder de las mochica heritage:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_CMU</Tag>
-		<English>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</English>
-		<French>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</French>
-		<German>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</German>
-		<Italian>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</Italian>
-		<Spanish>Recieves a Free Artist in the capital for every other improved resource in Northwestern South American.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_MIS_TITLE</Tag>
-		<English>The Power of Mshi-Ziibi:</English>
-		<French>Le pouvoir de mshi-ziibi:</French>
-		<German>Die Macht des Mshi-Ziibi:</German>
-		<Italian>Il potere della mshi-ziibi:</Italian>
-		<Spanish>El poder de la mshi-ziibi:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_MIS</Tag>
-		<English>+1 [ICON_COMMERCE] along Rivers</English>
-		<French>+1 [ICON_COMMERCE] along Rivers</French>
-		<German>+1 [ICON_COMMERCE] along Rivers</German>
-		<Italian>+1 [ICON_COMMERCE] along Rivers</Italian>
-		<Spanish>+1 [ICON_COMMERCE] along Rivers</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_INU_TITLE</Tag>
-		<English>The Power of Inuksuk:</English>
-		<French>Le pouvoir de inuksuk:</French>
-		<German>Die Macht des Inuksuk:</German>
-		<Italian>Il potere della inuksuk:</Italian>
-		<Spanish>El poder de la inuksuk:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_INU</Tag>
-		<English>Trade routes do not require roads</English>
-		<French>Trade routes do not require roads</French>
-		<German>Trade routes do not require roads</German>
-		<Italian>Trade routes do not require roads</Italian>
-		<Spanish>Trade routes do not require roads</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_MUI_TITLE</Tag>
-		<English>The Power of Salt:</English>
-		<French>Le pouvoir de sel:</French>
-		<German>Die Macht des Salz-:</German>
-		<Italian>Il potere della sale:</Italian>
-		<Spanish>El poder de la sal:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_MUI</Tag>
-		<English>+1 [ICON_FOOD] from Mines</English>
-		<French>+1 [ICON_FOOD] from Mines</French>
-		<German>+1 [ICON_FOOD] from Mines</German>
-		<Italian>+1 [ICON_FOOD] from Mines</Italian>
-		<Spanish>+1 [ICON_FOOD] from Mines</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_IRO_TITLE</Tag>
-		<English>The Power of Haudenosaunee:</English>
-		<French>The Power of Haudenosaunee:</French>
-		<German>The Power of Haudenosaunee:</German>
-		<Italian>The Power of Haudenosaunee:</Italian>
-		<Spanish>The Power of Haudenosaunee:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_IRO</Tag>
-		<English>Tribes in your borders are automatically contacted and convert to Cottages</English>
-		<French>Tribes in your borders are automatically contacted and convert to Cottages</French>
-		<German>Tribes in your borders are automatically contacted and convert to Cottages</German>
-		<Italian>Tribes in your borders are automatically contacted and convert to Cottages</Italian>
-		<Spanish>Tribes in your borders are automatically contacted and convert to Cottages</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_NOR_TITLE</Tag>
-		<English>The Power of Seafarers:</English>
-		<French>The Power of Seafarers:</French>
-		<German>The Power of Seafarers:</German>
-		<Italian>The Power of Seafarers:</Italian>
-		<Spanish>The Power of Seafarers:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_NOR</Tag>
-		<English>+1 [ICON_FOOD] on Coast and Arctic Coast</English>
-		<French>+1 [ICON_FOOD] on Coast and Arctic Coast</French>
-		<German>+1 [ICON_FOOD] on Coast and Arctic Coast</German>
-		<Italian>+1 [ICON_FOOD] on Coast and Arctic Coast</Italian>
-		<Spanish>+1 [ICON_FOOD] on Coast and Arctic Coast</Spanish>
 	</TEXT>
 </Civ4GameText>

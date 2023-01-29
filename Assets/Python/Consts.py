@@ -202,7 +202,7 @@ iChimu : 900,
 iInuit : 1050,
 iInca : 1100,
 iAztecs : 1250,
-iIroquois : 1450,
+iIroquois : 275,#1450,
 iSpain : 1496,
 iPortugal : 1532,
 iEngland : 1607,
@@ -461,9 +461,9 @@ lNativeTechs = (iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, 
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 155
+iNumUnits = 154
 #				2				3				4				5				6				7				8				9				10
-(iBear, 		iPanther, 		iWolf, 			iSettler, 		iCliffDweller,	iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,
+(iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,
 iLaborer, 		iMadeireiro, 	iScout, 		iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			iSisqeno,
 iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		
 iMinuteman,		iMilitia5,		iMilitia6,		iMilitia7,		iWarrior, 		iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		

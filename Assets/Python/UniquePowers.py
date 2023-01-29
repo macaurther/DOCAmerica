@@ -13,6 +13,7 @@ from Core import *
 
 
 @handler("cityAcquired")
+# Colombian UP
 def colombianPower(iOwner, iPlayer, city, bConquest):
 	if civ(iPlayer) == iColombia and bConquest:
 		if city in cities.regions(*lLatinAmerica):
@@ -20,6 +21,7 @@ def colombianPower(iOwner, iPlayer, city, bConquest):
 
 
 @handler("techAcquired")
+# Mayan UP
 def mayanPower(iTech, iTeam, iPlayer):
 	iEra = player(iPlayer).getCurrentEra()
 	if civ(iPlayer) == iMaya and iEra < iColonial:
@@ -30,3 +32,15 @@ def mayanPower(iTech, iTeam, iPlayer):
 				city.changeFood(iFood)
 			
 			message(iPlayer, 'TXT_KEY_MAYA_UP_EFFECT', infos.tech(iTech).getText(), iFood)
+
+@handler("cityBuilt")
+# Puelboan UP
+def puebloanPower(city):
+	if civ(city.getOwner()) == iPuebloan and city.plot().isHills():
+		lFreeBuildings = [iGranary, iMarket, iStoneworks, iWalls]
+		for iBuilding in lFreeBuildings:
+			if not city.isHasRealBuilding(iBuilding):
+				city.setHasRealBuilding(iBuilding, True)
+				return
+
+
