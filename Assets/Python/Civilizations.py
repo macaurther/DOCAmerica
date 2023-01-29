@@ -392,52 +392,52 @@ dStartingUnits = CivDict({
 	iWari: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iMississippi: {
 		iSettle: 2,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iPuebloan: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iMuisca: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iNorse: {
 	},
 	iChimu: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iInuit: {
 		iSettle: 2,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iInca: {
 		iSettle: 1,
 		iWork: 4,
 		iAttack: 4,
-		iDefend: 2,
+		iBase: 2,
 		# if not human: 1 Settler
 	},
 	iAztecs: {
 		iSettle: 2,
 		iWork: 3,
 		iAttack: 4,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iIroquois: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iSpain: {
 	},
@@ -452,7 +452,7 @@ dStartingUnits = CivDict({
 	iHawaii: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iRussia: {
 	},
@@ -469,13 +469,13 @@ dStartingUnits = CivDict({
 	iHaiti: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iArgentina: {
 		iSettle: 2,
 		iWork: 2,
 		iAttack: 1,
-		iDefend: 2,
+		iBase: 2,
 		iSiege: 2,
 		iMissionary: 1,
 		iFerry: 1,
@@ -485,7 +485,7 @@ dStartingUnits = CivDict({
 		iSettle: 1,
 		iWork: 2,
 		iShock: 4,
-		iDefend: 3,
+		iBase: 3,
 		iAttack: 2,
 		iSkirmish: 2,
 		iMissionary: 1,
@@ -493,7 +493,7 @@ dStartingUnits = CivDict({
 	iColombia: {
 		iSettle: 1,
 		iWork: 3,
-		iDefend: 2,
+		iBase: 2,
 		iAttack: 3,
 		iSiege: 3,
 		iMissionary: 1,
@@ -503,13 +503,13 @@ dStartingUnits = CivDict({
 	iPeru: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iBrazil: {
 		iSettle: 5,
 		iWork: 3,
 		iSkirmish: 3,
-		iDefend: 3,
+		iBase: 3,
 		iSiege: 2,
 		iMissionary: 1,
 		iWorkerSea: 2,
@@ -519,13 +519,13 @@ dStartingUnits = CivDict({
 	iVenezuela: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 	iCanada: {
 		iSettle: 5,
 		iWork: 3,
 		iShock: 3,
-		iDefend: 5,
+		iBase: 5,
 		iMissionary: 1,
 		iFerry: 2,
 		iEscort: 1,
@@ -534,7 +534,7 @@ dStartingUnits = CivDict({
 	iCuba: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iBase: 2,
 	},
 }, {})
 
@@ -543,46 +543,46 @@ dExtraAIUnits = CivDict({
 		iAttack: 2,
 	},
 	iAmerica: {
-		iDefend: 1,
+		iBase: 1,
 	},
 	iArgentina: {
-		iDefend: 3,
+		iBase: 3,
 		iShock: 2,
 		iSiege: 2,
 	},
 	iBrazil: {
-		iDefend: 1,
+		iBase: 1,
 	}
 }, {})
 
 dAdditionalUnits = CivDict({
 	iMaya: {
-		iDefend: 2,
+		iBase: 2,
 		iAttack: 2,
 	},
 	iSpain: {
-		iDefend: 3,
+		iBase: 3,
 		iAttack: 3,
 	},
 	iFrance: {
-		iDefend: 3,
+		iBase: 3,
 		iAttack: 3,
 	},
 	iEngland: {
-		iDefend: 3,
+		iBase: 3,
 		iAttack: 3,
 	},
 	iPortugal: {
-		iDefend: 3,
+		iBase: 3,
 		iCounter: 3,
 	},
 	iInca: {
 		iAttack: 5,
-		iDefend: 3,
+		iBase: 3,
 	},
 	iAztecs: {
 		iAttack: 5,
-		iDefend: 3,
+		iBase: 3,
 	},
 	iNetherlands: {
 		iAttack: 3,
@@ -622,12 +622,12 @@ dStartingExperience = CivDict({
 	iArgentina: {
 		iAttack: 2,
 		iShock: 2,
-		iDefend: 2,
+		iBase: 2,
 		iSiege: 2,
 	},
 	iMexico: {
 		iShock: 2,
-		iDefend: 2,
+		iBase: 2,
 		iAttack: 2,
 		iSkirmish: 2,
 	},

@@ -6615,18 +6615,34 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	BonusTypes eBonus;
 	int iYield;
 
-	//Rhye - start UP -> MacAurther: Andes RP
+	//Rhye - start UP 
 	if (isPeak())
 	{
-		if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES)
+		if (eTeam != NO_TEAM)
 		{
-			if (eYield == YIELD_FOOD) 
+			// MacAurther: Andes RP
+			if ((RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES)
 			{
-				return 2;
+				if (eYield == YIELD_FOOD) 
+				{
+					return 2;
+				}
+				if (eYield == YIELD_PRODUCTION)
+				{
+					return 1;
+				}
 			}
-			if (eYield == YIELD_PRODUCTION)
+			// MacAurther: Peru UP
+			else if (GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == PERU)
 			{
-				return 1;
+				if (eYield == YIELD_FOOD) 
+				{
+					return 2;
+				}
+				if (eYield == YIELD_COMMERCE)
+				{
+					return 2;
+				}
 			}
 		}
 		else

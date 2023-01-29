@@ -267,7 +267,7 @@ def giveColonists(iPlayer):
 				elif iExpeditionType == iCaravelSettle:	# Caravel, Settler, Defender
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tSeaPlot, iDefend, 1)
+					createRoleUnit(iPlayer, tSeaPlot, iBase, 1)
 				elif iExpeditionType == iCaravelSupport:	# Caravel, Work, Missionary
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
@@ -285,7 +285,7 @@ def giveColonists(iPlayer):
 				elif iExpeditionType == iGalleonSettle:	# Galleon, Settler, Defender, Work
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tSeaPlot, iDefend, 1)
+					createRoleUnit(iPlayer, tSeaPlot, iBase, 1)
 					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
 				elif iExpeditionType == iGalleonSupport:	# Galleon, Explore, Work, Missionary
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)

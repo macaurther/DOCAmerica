@@ -17843,8 +17843,8 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		iExtraCost += GC.getDefineINT("CULTURE_COST_RIVER");
 	}
 
-	// Leoreth: Inca UP -> MacAurther: Andes RP
-	if (getOwner() != -1 && (RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES && pPlot->isPeak())
+	// Leoreth: Inca UP -> MacAurther: Andes RP and Peru UP
+	if (getOwner() != -1 && pPlot->isPeak() && ((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES || GET_PLAYER(getOwner()).getCivilizationType() == PERU))
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
 	}
@@ -19111,12 +19111,12 @@ int CvCity::calculateImmigrationRate()
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_OPPORTUNITY))
 	{
 		int iCommerceRate = getBaseYieldRate(YIELD_COMMERCE) - getImmigrationYieldRate(YIELD_COMMERCE); // Don't let Immigration yields feedback
-		iImmigrationRate += (iCommerceRate / getPopulation()) - 2;
+		iImmigrationRate += iCommerceRate / getPopulation();
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_TOLERANCE))
 	{
 		int iProductionRate = getBaseYieldRate(YIELD_PRODUCTION) - getImmigrationYieldRate(YIELD_PRODUCTION); // Don't let Immigration yields feedback
-		iImmigrationRate += (iProductionRate / getPopulation()) - 2;
+		iImmigrationRate += iProductionRate / getPopulation();
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MULTICULTURALISM))
 	{
@@ -19126,7 +19126,7 @@ int CvCity::calculateImmigrationRate()
 		{
 			iBaseCulture -= getImmigrationRate();
 		}
-		iImmigrationRate += (iBaseCulture / getPopulation()) - 3;
+		iImmigrationRate += iBaseCulture / getPopulation();
 	}
 
 	// English UP
@@ -19203,12 +19203,6 @@ bool CvCity::processImmigration()
 
 		if (iOldValue != iNewValue)
 		{
-			/*char buffer[100];
-			sprintf(buffer, "Old Immigration: %i", iOldValue);
-			FAssertMsg(false, buffer);
-			sprintf(buffer, "New Immigration: %i", iNewValue);
-			FAssertMsg(false, buffer);*/
-
 			int iChange = iNewValue - iOldValue;
 			setImmigrationYieldRate((YieldTypes)iI, iNewValue);
 

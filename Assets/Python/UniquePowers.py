@@ -46,9 +46,5 @@ def puebloanPower(city):
 @handler("cityAcquiredAndKept")
 # Chimu UP
 def chimuPower(iOwner, city):
-	print ("City aquired and kept by player " + str(iOwner) + ", or civ " + str(civ(iOwner)))
 	if civ(iOwner) == iChimu:
-		print ("Chimu will get 1 artist in capital at: x=" + str(player(iOwner).getCapitalCity().getX()) + ", y=" + str(player(iOwner).getCapitalCity().getY()))
 		player(iOwner).getCapitalCity().changeFreeSpecialistCount(iSpecialistArtist, 1)
-
-

@@ -1063,16 +1063,16 @@
 			<Region>LAT</Region>
 			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>8</LoadingTime>
-				<LoadingTime>2</LoadingTime>
-				<LoadingTime>0</LoadingTime>
+				<LoadingTime>20</LoadingTime>
+				<LoadingTime>10</LoadingTime>
+				<LoadingTime>5</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>5</Trade>
+				<Trade>1</Trade>
 				<Production>1</Production>
 				<Culture>3</Culture>
 				<Growth>3</Growth>
-				<Start>3</Start>
+				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -1151,8 +1151,8 @@
 				</Leader>
 			</Leaders>
 			<DerivativeCiv>CIVILIZATION_FRANCE</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_MALI_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_MALI_ORDER</CivilizationActionSound>
+			<CivilizationSelectionSound>AS3D_FRANCE_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_FRANCE_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_HAWAII</Type>
@@ -2345,7 +2345,7 @@
 			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PER</Identifier>
-			<Region>AND</Region>
+			<Region>LAT</Region>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>

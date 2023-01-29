@@ -243,7 +243,7 @@ def relocateSeaGarrisons(tCityPlot, iOldOwner):
 
 # used: Congresses, RFCUtils, Rules
 def createGarrisons(tCityPlot, iNewOwner, iNumUnits):
-	createRoleUnit(iNewOwner, tCityPlot, iDefend, iNumUnits)
+	createRoleUnit(iNewOwner, tCityPlot, iBase, iNumUnits)
 
 # used: Rise, Stability
 def clearPlague(iPlayer):
@@ -407,8 +407,12 @@ def freeSlaves(city, iPlayer):
 	iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
 	if iNumSlaves:
 		city.setFreeSpecialistCount(iSpecialistSlave, 0)
-		makeUnits(iPlayer, base_unit(iSlave), city, iNumSlaves)
-	
+		# MacAurther: Haiti UP: freed slaves turn into soldiers
+		if civ(iPlayer) == iHaiti:
+			createRoleUnit(iPlayer, city, iBase, iNumSlaves, 0)
+		else:
+			makeUnits(iPlayer, base_unit(iSlave), city, iNumSlaves)
+
 # used: GreatPeople
 def replace(unit, iUnitType):
 	replaced = makeUnit(unit.getOwner(), iUnitType, unit)
@@ -468,9 +472,9 @@ def isUnitOfRole(iUnit, iRole):
 	iDomainType = unit.getDomainType()
 
 	if iRole == iBase:
-		return base_unit(iUnit) == iMilitia1 or base_unit(iUnit) == iMilitia2
+		return base_unit(iUnit) == iMilitia1 or base_unit(iUnit) == iMilitia2 or base_unit(iUnit) == iMilitia3 or base_unit(iUnit) == iMilitia4 or base_unit(iUnit) == iMilitia5 or base_unit(iUnit) == iMilitia6 or base_unit(iUnit) == iMilitia7
 	elif iRole == iDefend:
-		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN or base_unit(iUnit) == iMilitia1 or base_unit(iUnit) == iMilitia2
+		return (iCombatType == UnitCombatTypes.UNITCOMBAT_ARCHER and unit.getCityDefenseModifier() > 0) or iCombatType == UnitCombatTypes.UNITCOMBAT_GUN
 	elif iRole in [iAttack, iCityAttack]:
 		return iCombatType in [UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_GUN]
 	elif iRole == iCounter:
@@ -948,7 +952,7 @@ def flipOrCreateDefenders(iNewOwner, units, tPlot, iNumDefenders):
 		flipUnit(unit, iNewOwner, tPlot)
 
 	if len(units) < iNumDefenders and active() != iNewOwner:
-		createRoleUnit(iNewOwner, tPlot, iDefend, iNumDefenders - len(units))
+		createRoleUnit(iNewOwner, tPlot, iBase, iNumDefenders - len(units))
 		
 # used: Congresses, Stability
 def killUnits(lUnits):
@@ -960,7 +964,7 @@ def killUnits(lUnits):
 def ensureDefenders(iPlayer, tPlot, iNumDefenders):
 	defenders = units.at(tPlot).owner(iPlayer).where(lambda unit: isUnitOfRole(unit, iDefend))
 	iNumRequired = max(0, iNumDefenders - defenders.count())
-	return createRoleUnit(iPlayer, tPlot, iDefend, iNumRequired)
+	return createRoleUnit(iPlayer, tPlot, iBase, iNumRequired)
 	
 # used: CvDawnOfMan
 def getDawnOfManText(iPlayer):

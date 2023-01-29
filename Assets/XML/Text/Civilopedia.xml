@@ -2773,10 +2773,10 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET][LINK=CIVIC_CASTE_SYSTEM]Caste System[\LINK]: No additional Immigration | Your cities will only receive Immigrantion due to Buildings, Wonders, or Unique Powers
 [ICON_BULLET][LINK=CIVIC_ISOLATIONISM]Isolationism[\LINK]: No Immigration | Even if you have Immigration Buildings, Wonders, or Unique Powers, your cities will not receive Immigrantion.
 [ICON_BULLET][LINK=CIVIC_HAVEN]Haven[\LINK]: [ICON_HAPPY] - [ICON_UNHAPPY] | Your Immigration is equal to your city's [ICON_HAPPY] minus [ICON_UNHAPPY].
-[ICON_BULLET][LINK=CIVIC_PROFITEERING]Profiteering[\LINK]: ([ICON_COMMERCE] / Population) - 2 | Your Immigration is equal to your city's base [ICON_COMMERCE] (before modifiers) divided by its Population, minus 2 (rounded down).
-[ICON_BULLET][LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK]: ([ICON_PRODUCTION] / Population) - 2 | Your Immigration is equal to your city's base [ICON_PRODUCTION] (before modifiers) divided by its Population, minus 2 (rounded down).
-[ICON_BULLET][LINK=CIVIC_MULTICULTURALISM]Multiculturalism[\LINK]: ([ICON_CULTURE] / Population) - 3 | Your Immigration is equal to your city's base [ICON_CULTURE] (before modifiers) divided by its Population, minus 3 (rounded down).
-[PARAGRAPH:1]Each city's Immigration value is added to its [ICON_FOOD]. With the [LINK=CIVIC_SLAVERY]Slavery[\LINK] Civic, each city's Immigration is also added to its [ICON_COMMERCE]. With the [LINK=CIVIC_MIGRANT_WORKERS]Migrant Workers[\LINK] Civic, each city's Immigration is also added to its [ICON_PRODUCTION]. Note that it is possible to have negative Immigration (Emmigration) with Haven, Opportunity, Tolerance, and Multiculturalism. If your society values [ICON_COMMERCE], for example, and you don't produce enough, your growth will slow and you might even lose population.
+[ICON_BULLET][LINK=CIVIC_PROFITEERING]Profiteering[\LINK]: [ICON_COMMERCE] / Population | Your Immigration is equal to your city's base [ICON_COMMERCE] (before modifiers) divided by its Population (rounded down).
+[ICON_BULLET][LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK]: [ICON_PRODUCTION] / Population | Your Immigration is equal to your city's base [ICON_PRODUCTION] (before modifiers) divided by its Population (rounded down).
+[ICON_BULLET][LINK=CIVIC_MULTICULTURALISM]Multiculturalism[\LINK]: [ICON_CULTURE] / Population | Your Immigration is equal to your city's base [ICON_CULTURE] (before modifiers) divided by its Population (rounded down).
+[PARAGRAPH:1]Each city's Immigration value is added to its [ICON_FOOD]. With the [LINK=CIVIC_SLAVERY]Slavery[\LINK] Civic, each city's Immigration is also added to its [ICON_COMMERCE]. With the [LINK=CIVIC_MIGRANT_WORKERS]Migrant Workers[\LINK] Civic, each city's Immigration is also added to its [ICON_PRODUCTION].
 		</English>
 	</TEXT>
 	<TEXT>
