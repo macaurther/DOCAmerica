@@ -211,7 +211,7 @@ iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
 iAmerica : 1775,
-iHaiti : 1804,
+iHaiti : 275,#1804,
 iArgentina : 1810,
 iMexico : 1810,
 iColombia : 1810,
@@ -219,7 +219,7 @@ iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
 iCanada : 1867,
-iCuba : 275,#1898,
+iCuba : 1898,
 }, 250)
 
 lBirthCivs = dBirth.keys()

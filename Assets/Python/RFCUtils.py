@@ -405,13 +405,16 @@ def foundCapital(iPlayer, tPlot, sName, iSize, iCulture, lBuildings=[], lReligio
 # used: Rules
 def freeSlaves(city, iPlayer):
 	iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
-	if iNumSlaves:
-		city.setFreeSpecialistCount(iSpecialistSlave, 0)
-		# MacAurther: Haiti UP: freed slaves turn into soldiers
-		if civ(iPlayer) == iHaiti:
-			createRoleUnit(iPlayer, city, iBase, iNumSlaves, 0)
-		else:
-			makeUnits(iPlayer, base_unit(iSlave), city, iNumSlaves)
+	city.setFreeSpecialistCount(iSpecialistSlave, 0)
+	# MacAurther: Haiti UP: freed slaves turn into soldiers
+	if civ(iPlayer) == iHaiti:
+		createRoleUnit(iPlayer, city, iBase, iNumSlaves, 0)
+		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
+	elif player(iPlayer).canUseSlaves():
+		makeUnits(iPlayer, base_unit(iSlave), city, iNumSlaves)
+	else:
+		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
+	
 
 # used: GreatPeople
 def replace(unit, iUnitType):

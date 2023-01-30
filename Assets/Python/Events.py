@@ -73,6 +73,7 @@ events.addEvent("conquerors")
 events.addEvent("improvementBuilt")
 events.addEvent("improvementDestroyed")
 events.addEvent("EndGameTurn")
+events.addEvent("freedSlaves")
 
 
 @handler("buildingBuilt")

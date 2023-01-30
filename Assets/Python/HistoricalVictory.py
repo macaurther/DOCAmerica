@@ -141,8 +141,8 @@ dGoals = {
 	),
 	iPuebloan: (
 		CultureAmount(500, at=1000),
+		TradeConnection(by=1100),
 		ImprovementCount((iFarm, 10), at=1200),
-		BuildingCount((iCommon, 5), by=1300), # MacAurther TODO: Puelboan Kiva
 	),
 	iMuisca: (
 		AveragePopulation(10, at=1500),
@@ -271,7 +271,7 @@ dGoals = {
 	),
 	iHaiti: (
 		FirstDiscover(iEmancipation),
-		GoldAmount(999999, by=2000),
+		FreedSlaves(20),
 		GoldAmount(999999, by=2000),
 	),
 	iArgentina: (

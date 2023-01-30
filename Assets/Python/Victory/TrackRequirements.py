@@ -601,3 +601,17 @@ class ReligionSpreads(TrackRequirement):
 	def increment_religion_spreads(self, goal):
 		self.increment()
 		goal.check()
+
+
+class FreedSlaves(TrackRequirement):
+
+	TYPES = (COUNT,)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_FREE"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_FREED_SLAVES"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_FREED_SLAVES"
+	
+	def __init__(self, *parameters, **options):
+		TrackRequirement.__init__(self, *parameters, **options)
+		
+		self.accumulated("freedSlaves")

@@ -266,4 +266,11 @@ class EventHandlerRegistry(object):
 		
 		return religionSpread
 	
+	def freedSlaves(self, goal, applicable, func):
+		def freedSlaves((iPlayer, iNumSlaves)):
+			if applicable(goal, iPlayer):
+				func(goal, iNumSlaves)
+		
+		return freedSlaves
+	
 event_handler_registry = EventHandlerRegistry()

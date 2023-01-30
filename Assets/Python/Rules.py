@@ -14,11 +14,9 @@ dRelocatedCapitals = {
 
 @handler("cityAcquired")
 def resetSlaves(iOwner, iPlayer, city):
-	if player(iPlayer).canUseSlaves():
-		freeSlaves(city, iPlayer)
-	else:
-		city.setFreeSpecialistCount(iSpecialistSlave, 0)
-		
+	freeSlaves(city, iPlayer)
+	
+
 
 @handler("cityAcquired")
 def resetAdminCenter(iOwner, iPlayer, city):
