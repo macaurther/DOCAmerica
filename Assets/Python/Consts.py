@@ -218,8 +218,8 @@ iColombia : 1810,
 iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
-iCanada : 275,#1867,
-iCuba : 1898,
+iCanada : 1867,
+iCuba : 275,#1898,
 }, 250)
 
 lBirthCivs = dBirth.keys()

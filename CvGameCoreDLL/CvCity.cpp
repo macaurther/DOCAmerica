@@ -5646,6 +5646,13 @@ int CvCity::getHurryCostModifier(int iBaseModifier, int iProduction, bool bIgnor
 {
 	int iModifier = 100;
 	iModifier *= std::max(0, iBaseModifier + 100);
+
+	// MacAurther: Cuban UP: Half hurry costs
+	if (GET_PLAYER(getOwner()).getCivilizationType() == CUBA)
+	{
+		iModifier /= 2;
+	}
+
 	iModifier /= 100;
 
 	if (iProduction == 0 && !bIgnoreNew)
