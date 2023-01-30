@@ -187,8 +187,6 @@ def onCityAcquired(iOwner, iNewOwner, city):
 	sOldName = city.getName()
 	sNewName = None
 	
-	if sOldName == 'York' and iNewOwnerCiv == iCanada and city.getRegionID() == rCanada: sNewName = 'Toronto'
-	
 	if sNewName:
 		city.setName(sNewName, False)
 		return

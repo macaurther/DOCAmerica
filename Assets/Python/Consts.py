@@ -218,7 +218,7 @@ iColombia : 1810,
 iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
-iCanada : 1867,
+iCanada : 275,#1867,
 iCuba : 1898,
 }, 250)
 
