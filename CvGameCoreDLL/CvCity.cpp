@@ -15389,6 +15389,7 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	pStream->Read(NUM_CITY_PLOTS_3, m_aiCulturePlots); // Leoreth
 	pStream->Read(NUM_CITY_PLOTS_3, m_aiCultureCosts); // Leoreth
+	pStream->Read(NUM_YIELD_TYPES, m_aiImmigrationYieldRate); // MacAurther
 
 	pStream->ReadString(m_szName);
 	pStream->ReadString(m_szScriptData);
@@ -15634,7 +15635,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_iBuildingDamageChange); // Leoreth
 	pStream->Write(m_iTotalPopulationLoss); // Leoreth
 	pStream->Write(m_iPopulationLoss); // Leoreth
-	pStream->Write(&m_iImmigrationRate); // MacAurther
+	pStream->Write(m_iImmigrationRate); // MacAurther
 
 	pStream->Write(m_bNeverLost);
 	pStream->Write(m_bBombarded);
@@ -15690,6 +15691,7 @@ void CvCity::write(FDataStreamBase* pStream)
 
 	pStream->Write(NUM_CITY_PLOTS_3, m_aiCulturePlots); // Leoreth
 	pStream->Write(NUM_CITY_PLOTS_3, m_aiCultureCosts); // Leoreth
+	pStream->Write(NUM_YIELD_TYPES, m_aiImmigrationYieldRate); // Leoreth
 
 	pStream->WriteString(m_szName);
 	pStream->WriteString(m_szScriptData);

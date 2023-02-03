@@ -1272,8 +1272,6 @@ public:
 	int calculateBaseGreatPeopleRate() const;
 
 	// MacAurther
-	int m_iImmigrationRate;
-	int* m_aiImmigrationYieldRate;
 	int getImmigrationRate() const;
 	int getImmigrationYieldRate(YieldTypes eYield) const;
 	void setImmigrationRate(int iValue);
@@ -1409,6 +1407,9 @@ protected:
 	int m_iTotalPopulationLoss;
 	int m_iPopulationLoss;
 
+	// MacAurther
+	int m_iImmigrationRate;
+
 	bool m_bNeverLost;
 	bool m_bBombarded;
 	bool m_bDrafted;
@@ -1469,6 +1470,9 @@ protected:
 	int* m_aiGameTurnCivLost;
 	int* m_aiCulturePlots;
 	int* m_aiCultureCosts;
+
+	// MacAurther
+	int* m_aiImmigrationYieldRate;
 
 	bool* m_abEverOwned;
 	bool* m_abTradeRoute;
