@@ -703,7 +703,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_GRENADIER</UnitClassType>
-					<UnitType>UNIT_COLOMBIAN_ALBION_LEGION</UnitType>
+					<UnitType>UNIT_COLOMBIAN_VOLTIGEROS</UnitType>
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_HUSSAR</UnitClassType>
@@ -796,6 +796,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_INFANTRY</UnitClassType>
+					<UnitType>UNIT_CUBAN_FARS</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses/>
 			<FreeBuildingClasses>
@@ -1121,6 +1125,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_GRENADIER</UnitClassType>
+					<UnitType>UNIT_HAITIAN_CACOS</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1232,6 +1240,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<UnitType>UNIT_HAWAIIAN_WAA_KAULUA</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<UnitType>UNIT_HAWAIIAN_KOA</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1577,7 +1589,12 @@
 					<BuildingType>BUILDING_GAIWIIO_LONGHOUSE</BuildingType>
 				</Building>
 			</Buildings>
-			<Units/>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_TERCIO</UnitClassType>
+					<UnitType>UNIT_IROQOUIS_MOHAWK</UnitType>
+				</Unit>
+			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
@@ -2378,6 +2395,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
+					<UnitType>UNIT_PERUVIAN_GUARDIA</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2577,6 +2598,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_SCOUT</UnitClassType>
+					<UnitType>UNIT_PUEBLOAN_PATHFINDER</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -3095,6 +3120,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType>
+					<UnitType>UNIT_VENEZUELAN_VENCEDORES</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
