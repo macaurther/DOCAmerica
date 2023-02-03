@@ -9486,6 +9486,7 @@ int CvCity::getBaseYieldRate(YieldTypes eIndex)	const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+
 	return m_aiBaseYieldRate[eIndex];
 }
 
@@ -9540,11 +9541,12 @@ void CvCity::setBaseYieldRate(YieldTypes eIndex, int iNewValue)
 
 	if (getBaseYieldRate(eIndex) != iNewValue)
 	{
-		FAssertMsg(iNewValue >= 0, "iNewValue expected to be >= 0");
-		FAssertMsg(((iNewValue * 100) / 100) >= 0, "((iNewValue * 100) / 100) expected to be >= 0");
+		// MacAurther: Base Yield Rate can now be negative (with Immigration). Might cause unintended consequences
+		//FAssertMsg(iNewValue >= 0, "iNewValue expected to be >= 0");
+		//FAssertMsg(((iNewValue * 100) / 100) >= 0, "((iNewValue * 100) / 100) expected to be >= 0");
 
 		m_aiBaseYieldRate[eIndex] = iNewValue;
-		FAssert(getYieldRate(eIndex) >= 0);
+		//FAssert(getYieldRate(eIndex) >= 0);
 
 		updateCommerce();
 
@@ -19042,7 +19044,7 @@ int CvCity::calculateBaseYieldRate(YieldTypes eYield) const
 
 	iYield += getCorporationYield(eYield);
 
-	iYield += getImmigrationYieldRate(eYield); // MacAurther
+	iYield += getImmigrationYieldRate(eYield); // MacAurther: Immigration
 
 	return iYield;
 }
@@ -19092,6 +19094,51 @@ void CvCity::setImmigrationRate(int iValue)
 void CvCity::setImmigrationYieldRate(YieldTypes eYield, int iValue)
 {
 	m_aiImmigrationYieldRate[eYield] = iValue;
+}
+
+bool CvCity::processImmigration()
+{
+	bool bChanged = false;
+	int oldImmigrationYieldRate[] = {getImmigrationYieldRate(YIELD_FOOD), 
+									getImmigrationYieldRate(YIELD_PRODUCTION), 
+									getImmigrationYieldRate(YIELD_COMMERCE)};
+
+	calculateImmigrationYieldRate();
+
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	{
+		if (oldImmigrationYieldRate[iI] != getImmigrationYieldRate((YieldTypes)iI))
+		{
+			changeBaseYieldRate((YieldTypes)iI, getImmigrationYieldRate((YieldTypes)iI) - oldImmigrationYieldRate[iI]);
+			bChanged = true;
+		}
+	}
+	if (bChanged)
+	{
+		updateCommerce();
+	}
+	return bChanged;
+}
+
+void CvCity::calculateImmigrationYieldRate()
+{
+	int iImmigrationRate = calculateImmigrationRate();
+
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	{
+		if (iI == YIELD_FOOD)
+		{
+			setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+		}
+		else if(iI == YIELD_PRODUCTION && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MIGRANT_WORKERS))
+		{
+			setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+		}
+		else if(iI == YIELD_COMMERCE && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
+		{
+			setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+		}
+	}
 }
 
 int CvCity::calculateImmigrationRate()
@@ -19144,7 +19191,7 @@ int CvCity::calculateImmigrationRate()
 		iImmigrationRate += 2;
 	}
 
-	// Immigration Modifiers (in twelfths)
+	// Immigration Modifiers
 	int iImmigrationModifier = 100;
 	if (isHasBuildingEffect((BuildingTypes)BUILDING_HEADRIGHT))
 	{
@@ -19177,55 +19224,6 @@ int CvCity::calculateImmigrationRate()
 	setImmigrationRate(iImmigrationRate);
 
 	return iImmigrationRate;
-}
-
-int CvCity::calculateImmigrationYieldRate(YieldTypes eYield)
-{
-	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "eYield expected to be < NUM_YIELD_TYPES");
-
-	int iImmigrationRate = calculateImmigrationRate();
-
-	if (eYield == YIELD_FOOD)
-	{
-		return iImmigrationRate;
-	}
-	else if(eYield == YIELD_PRODUCTION && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MIGRANT_WORKERS))
-	{
-		return iImmigrationRate;
-	}
-	else if(eYield == YIELD_COMMERCE && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
-	{
-		return iImmigrationRate;
-	}
-
-	return 0;
-}
-
-bool CvCity::processImmigration()
-{
-	bool bChanged = false;
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		int iOldValue = getImmigrationYieldRate((YieldTypes)iI);
-		int iNewValue = calculateImmigrationYieldRate((YieldTypes)iI);
-
-		if (iOldValue != iNewValue)
-		{
-			int iChange = iNewValue - iOldValue;
-			setImmigrationYieldRate((YieldTypes)iI, iNewValue);
-
-			updateImmigrationYieldRate((YieldTypes)iI, iChange);
-
-			bChanged = true;
-		}
-	}
-	return bChanged;
-}
-
-void CvCity::updateImmigrationYieldRate(YieldTypes eYield, int iChange)
-{
-	changeBaseYieldRate(eYield, iChange);
 }
 
 // MacAurther: End Immigration
