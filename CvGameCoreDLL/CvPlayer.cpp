@@ -15127,6 +15127,12 @@ bool CvPlayer::canDoEspionageMission(EspionageMissionTypes eMission, PlayerTypes
 		}
 	}
 
+	// MacAurther: American UU
+	if (eMission == ESPIONAGEMISSION_COUP && getCivilizationType() != AMERICA)
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -15542,6 +15548,11 @@ int CvPlayer::getEspionageMissionBaseCost(EspionageMissionTypes eMission, Player
 	else if (kMission.isPassive())
 	{
 		iMissionCost = (iBaseMissionCost * (100 + GET_TEAM(GET_PLAYER(eTargetPlayer).getTeam()).getEspionagePointsAgainstTeam(getTeam()))) / 100;
+	}
+	// MacAurther: American UU: Agent - Can perform Coup which makes the target player a Vassal if successful
+	else if (eMission == ESPIONAGEMISSION_COUP)
+	{
+		iMissionCost = iBaseMissionCost * (5 * GET_PLAYER(eTargetPlayer).getNumCities() + GET_PLAYER(eTargetPlayer).getNumUnits());
 	}
 	else
 	{
@@ -16196,6 +16207,21 @@ bool CvPlayer::doEspionageMission(EspionageMissionTypes eMission, PlayerTypes eT
 
 		}
 	}
+
+	//////////////////////////////
+	// Coup
+
+	if (eMission == ESPIONAGEMISSION_COUP)
+	{
+		FAssertMsg((getCivilizationType() == AMERICA),  "A Civilization other than America is performing a Coup");
+		if (NO_PLAYER != eTargetPlayer)
+		{
+			szBuffer = gDLL->getText("TXT_KEY_ESPIONAGE_COUP", GET_PLAYER(eTargetPlayer).getCivilizationDescription()).GetCString();
+			GET_TEAM(eTargetTeam).setVassal(getTeam(), true, false);
+			bSomethingHappened = true;
+		}
+	}
+	
 
 	int iHave = 0;
 	if (NO_TEAM != eTargetTeam)

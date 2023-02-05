@@ -5671,7 +5671,6 @@ bool CvUnit::stealPlans()
 	return true;
 }
 
-
 bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 {
 	if (!isFound())
@@ -8229,6 +8228,7 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
+		case MISSION_COMMANDEER: // MacAurther
 		case MISSION_DIE_ANIMATION:
 			break;
 

@@ -3409,6 +3409,22 @@
 		<Spanish>Our artisans have created a total of %d1 [ICON_CULTURE] in our cities!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISSION_COUP</Tag>
+		<English>Coup</English>
+		<French>Coup</French>
+		<German>Coup</German>
+		<Italian>Coup</Italian>
+		<Spanish>Coup</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ESPIONAGE_COUP</Tag>
+		<English>An American coup has succeeded in %s1.</English>
+		<French>An American coup has succeeded in %s1.</French>
+		<German>An American coup has succeeded in %s1.</German>
+		<Italian>An American coup has succeeded in %s1.</Italian>
+		<Spanish>An American coup has succeeded in %s1.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_</Tag>
 		<English></English>
 		<French></French>

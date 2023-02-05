@@ -22,8 +22,11 @@ typedef list<char*> LISTCHAR;
 #define BUILDINGCLASS_PALACE	((BuildingClassTypes)0)
 #define BUILDINGCLASS_MEETING_HALL ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_MEETING_HALL"))		// MacAurther
 
-#define UNIT_RUSSIAN_PROMYSHLENNIKI	((UnitClassTypes)GC.getInfoTypeForString("UNIT_RUSSIAN_PROMYSHLENNIKI"))		// MacAurther
-#define UNIT_TIWANAKU_SISQENO	((UnitClassTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))					// MacAurther
+#define UNIT_RUSSIAN_PROMYSHLENNIKI	((UnitTypes)GC.getInfoTypeForString("UNIT_RUSSIAN_PROMYSHLENNIKI"))				// MacAurther
+#define UNIT_TIWANAKU_SISQENO	((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther
+#define UNIT_HAWAIIAN_WAA_KAULUA	((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))				// MacAurther
+#define UNIT_AMERICAN_AGENT		((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))							// MacAurther
+#define UNIT_CANNON				((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))									// MacAurther
 
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther
@@ -39,8 +42,10 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_NATIVE_TECHS		((TechTypes)GC.getInfoTypeForString("TECH_FISHING") + 1)							// MacAurther
 #define TECH_LINGUISTICS		((TechTypes)GC.getInfoTypeForString("TECH_LINGUISTICS"))							// MacAurther
-#define TECH_OLD_WORLD_TACTICS	((TechTypes)GC.getInfoTypeForString("TECH_OLD_WORLD_TACTICS"))							// MacAurther
-#define TECH_ECONOMICS			((TechTypes)GC.getInfoTypeForString("TECH_ECONOMICS"))							// MacAurther
+#define TECH_OLD_WORLD_TACTICS	((TechTypes)GC.getInfoTypeForString("TECH_OLD_WORLD_TACTICS"))						// MacAurther
+#define TECH_ECONOMICS			((TechTypes)GC.getInfoTypeForString("TECH_ECONOMICS"))								// MacAurther
+
+#define ESPIONAGEMISSION_COUP	((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
 
 enum DoCTechs
 {

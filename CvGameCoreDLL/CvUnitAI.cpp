@@ -688,6 +688,7 @@ int CvUnitAI::AI_groupFirstVal()
 		break;
 
 	case UNITAI_MISSIONARY:
+	case UNITAI_PERSECUTOR:
 		return 10;
 		break;
 
@@ -697,6 +698,7 @@ int CvUnitAI::AI_groupFirstVal()
 	case UNITAI_GENERAL:
 	case UNITAI_MERCHANT:
 	case UNITAI_ENGINEER:
+	case UNITAI_STATESMAN:
 		return 11;
 		break;
 
@@ -705,6 +707,7 @@ int CvUnitAI::AI_groupFirstVal()
 		break;
 
 	case UNITAI_ICBM:
+	case UNITAI_SATELLITE:
 		break;
 
 	case UNITAI_WORKER_SEA:

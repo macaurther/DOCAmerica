@@ -287,6 +287,8 @@ class CvEventManager(object):
 	def onCombatResult(self, argsList):
 		'Combat Result'
 		pWinner,pLoser = argsList
+		iWinner = pWinner.getOwner()
+
 
 	def onCombatLogCalc(self, argsList):
 		'Combat Result'	

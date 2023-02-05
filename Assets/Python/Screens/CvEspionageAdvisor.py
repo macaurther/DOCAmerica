@@ -348,7 +348,7 @@ class CvEspionageAdvisor:
 
 			for iLoopMission in xrange(gc.getNumEspionageMissionInfos()):
 				pMission = gc.getEspionageMissionInfo(iLoopMission)
-				if iLoopMission == gc.getInfoTypeForString('ESPIONAGEMISSION_SABOTAGE_PROJECT'):
+				if iLoopMission == gc.getInfoTypeForString('ESPIONAGEMISSION_DESTROY_PROJECT'):
 					continue
 
 				if pMission.getCost() > -1:

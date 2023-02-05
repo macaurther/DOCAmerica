@@ -189,5 +189,13 @@
 			<iBuyUnitCostFactor>1</iBuyUnitCostFactor>
 			<iBaseExperience>1</iBaseExperience>
 		</EspionageMissionInfo>
+		<EspionageMissionInfo>
+			<Type>ESPIONAGEMISSION_COUP</Type>
+			<Description>TXT_KEY_MISSION_COUP</Description>
+			<iCost>250</iCost>
+			<bTargetsCity>1</bTargetsCity>
+			<iDifficultyMod>25</iDifficultyMod>
+			<iBaseExperience>5</iBaseExperience>
+		</EspionageMissionInfo>
 	</EspionageMissionInfos>
 </Civ4EspionageMissionInfo>

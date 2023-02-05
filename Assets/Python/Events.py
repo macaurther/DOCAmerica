@@ -74,6 +74,7 @@ events.addEvent("improvementBuilt")
 events.addEvent("improvementDestroyed")
 events.addEvent("EndGameTurn")
 events.addEvent("freedSlaves")
+events.addEvent("combatResult")
 
 
 @handler("buildingBuilt")
@@ -156,5 +157,16 @@ def resetHandlersOnPythonReloaded():
 @handler("OnLoad")
 def resetHandlersOnLoad():
 	event_handler_registry.reset()
+
+
+@handler("combatResult")
+def onCombatResult(pWinner, pLoser):
+	iWinner = pWinner.getOwner()
+	
+	if pWinner.getUnitType() == iWaaKaulua:
+		if pLoser.getUnitType() in (iCaravel, iCarrack, iGalleon, iWestIndianman, iBrigantine, iSloop, iFrigate, iBarque, iShipOfTheLine, iManOfWar):
+			if not pWinner.isFull():
+				pCannon = makeUnit(iWinner, unique_unit(iWinner, iCannon), (pWinner.getX(), pWinner.getY()), UnitAITypes.UNITAI_ATTACK)
+				pCannon.setTransportUnit(pWinner)
 
 

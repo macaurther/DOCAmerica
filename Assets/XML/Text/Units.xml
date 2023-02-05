@@ -930,6 +930,14 @@
 		<Spanish>Wa'a Kaulua</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_HAWAIIAN_WAA_KAULUA_HELP</Tag>
+		<English>[ICON_BULLET]Steals cannon from sunk vessels if cargo space allows</English>
+		<French>[ICON_BULLET]Steals cannon from sunk vessels if cargo space allows</French>
+		<German>[ICON_BULLET]Steals cannon from sunk vessels if cargo space allows</German>
+		<Italian>[ICON_BULLET]Steals cannon from sunk vessels if cargo space allows</Italian>
+		<Spanish>[ICON_BULLET]Steals cannon from sunk vessels if cargo space allows</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_IRONCLAD_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Ironclads[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial age.</English>
 		<French>[COLOR_UNIT_TEXT]Ironclads[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial age.</French>

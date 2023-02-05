@@ -309,7 +309,7 @@ lCivilizations = [
 		iAdvancedStartPoints=500,
 		iStateReligion=iProtestantism,
 		lCivics=[iConfederacy, iCommonLaw, iSlavery, iAgrarianism, iHaven, iHomesteads],
-		techs=techs.column(10).including(iRepresentation, iIndependence)
+		techs=techs.column(11).including(iRepresentation, iIndependence)
 	),
 	Civilization(
 		iHaiti,
