@@ -509,21 +509,22 @@ iOlives,		iOpium,			iPearls, 		iRareEarths,	iRubber,		iSalt,			iSilk, 			iSilver
 iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 # Buildings
 
-iNumBuildings = 228
-# Buildings (114)
+iNumBuildings = 234
+# Buildings (122)
 #				2				3				4				5				6				7				8				9				10
 (iPalace, 		iGranary,		iChinampa,		iColcas,		iIgloo,			iBath,			iTemazcal,		iMarket,		iWeaver,		iStoneworks,	
 iGoldsmith,		iArena,			iBallCourt,		iBarracks,		iKallanka,		iWalls,			iKancha,		iTambo,			iHerbalist,		iAltar,	
-iTzompantli,	iCommon,		iEffigyMound,	iKalasasay,		iPaganTemple,	iHarbor,		iSmokehouse,	iStocks,		iHeadright,		iTradingPost,	
-iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,
-iWharf,			iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		iEstate,		iFazenda,		iHacienda,		
-iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iWheelwright,	iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			
-iLevee,			iSeigneur,		iTheatre,		iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	
-iSlaughterhouse,iSewer,			iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iSteelMill,		iRodeo,			iLienzoCharro,	iArsenal,		
-iDrydock,		iLibrary,		iNewspaper,		iSupermarket,	iColdStoragePlant,iHospital,	iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,
-iMall,			iElectricalGrid,iFactory,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iPark,			iBunker,		iLaboratory,	iBroadcastTower,
-iVerticalFarm,	iPublicTransportation,iRecyclingCenter,iSecurityBureau,iContainerTerminal,iFiberNetwork,iLogisticsCenter,iAutomatedFactory,iNuclearPlant,iSolarPlant,	
-iStadium,		iBombShelters,	iSupercomputer,	iCinema,		
+iTzompantli,	iCommon,		iEffigyMound,	iKalasasay,		iKiva,			iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iStocks,		
+iHeadright,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			
+iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		
+iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	
+iWheelwright,	iPostOffice,	iCustomsHouse,	iChancery,		iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	
+iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iSewer,			iJail,			iImmigrationOffice,
+iRailwayStation,iTextileMill,	iWoolMill,		iSteelMill,		iRodeo,			iLienzoCharro,	iArsenal,		iDrydock,		iLibrary,		iNewspaper,		
+iSupermarket,	iColdStoragePlant,iHospital,	iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		
+iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iPark,			iBunker,		iLaboratory,	iBroadcastTower,iVerticalFarm,	iPublicTransportation,
+iRecyclingCenter,iSecurityBureau,iContainerTerminal,iFiberNetwork,iLogisticsCenter,iAutomatedFactory,iNuclearPlant,iSolarPlant,	iStadium,		iBombShelters,	
+iSupercomputer,	iCinema,		
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -544,8 +545,8 @@ iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iSacsayhuaman,	iHueyTeocalli,	iT
 iLaFortaleza,	iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,iMountVernon,iMonticello,iSlaterMill,iChapultepecCastle,
 iWestPoint,		iFortMcHenry,	iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	iEllisIsland,	iBrooklynBridge,iChateauFrontenac,iMenloPark,
 iBiltmoreEstate,iFrenchQuarter,	iUnitedNations,	iEmpireStateBuilding,iGoldenGateBridge,iHooverDam,iAlcatraz,	iMountRushmore,	iHollywood,		iSaltCathedral,
-iLasLajasSanctuary,iCristoRedentor,iGatewayArch,iWorldTradeCenter,iItaipuDam,	iStrip,			iPentagon,		iHubbleSpaceTelescope,iNASA,	iAreciboObservatory,
-iCNTower,		iGraceland,		iCrystalCathedral) = range(iNumBuildings)
+iLasLajasSanctuary,iCristoRedentor,iWorldTradeCenter,iItaipuDam,iStrip,			iPentagon,		iHubbleSpaceTelescope,iNASA,	iCNTower,		iGraceland,		
+iCrystalCathedral) = range(iNumBuildings)
 
 iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
 

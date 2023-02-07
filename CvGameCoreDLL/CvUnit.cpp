@@ -8228,7 +8228,6 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
-		case MISSION_COMMANDEER: // MacAurther
 		case MISSION_DIE_ANIMATION:
 			break;
 

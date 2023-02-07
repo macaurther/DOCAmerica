@@ -3018,22 +3018,6 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY</Tag>
-		<English>Arecibo Observatory</English>
-		<French>Arecibo Observatory</French>
-		<German>Arecibo Observatory</German>
-		<Italian>Arecibo Observatory</Italian>
-		<Spanish>Arecibo Observatory</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE</Tag>
 		<English>Biltmore Estate</English>
 		<French>Biltmore Estate</French>
@@ -3618,6 +3602,150 @@
 		<German>[ICON_BULLET]+50% buildling speed for Highway</German>
 		<Italian>[ICON_BULLET]+50% buildling speed for Highway</Italian>
 		<Spanish>[ICON_BULLET]+50% buildling speed for Highway</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUEBLOAN_KIVA</Tag>
+		<English>Kiva</English>
+		<French>Kiva</French>
+		<German>Kiva</German>
+		<Italian>Kiva</Italian>
+		<Spanish>Kiva</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUEBLOAN_KIVA_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IROQUOIS_LONGHOUSE</Tag>
+		<English>Longhouse</English>
+		<French>Longhouse</French>
+		<German>Longhouse</German>
+		<Italian>Longhouse</Italian>
+		<Spanish>Longhouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_IROQUOIS_LONGHOUSE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HAWAIIAN_LUAU</Tag>
+		<English>Lu'au</English>
+		<French>Lu'au</French>
+		<German>Lu'au</German>
+		<Italian>Lu'au</Italian>
+		<Spanish>Lu'au</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HAWAIIAN_LUAU_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RUSSIAN_HUNTING_POST</Tag>
+		<English>Hunting Post</English>
+		<French>Hunting Post</French>
+		<German>Hunting Post</German>
+		<Italian>Hunting Post</Italian>
+		<Spanish>Hunting Post</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_RUSSIAN_HUNTING_POST_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HAITIAN_CITADELLE</Tag>
+		<English>Citadelle</English>
+		<French>Citadelle</French>
+		<German>Citadelle</German>
+		<Italian>Citadelle</Italian>
+		<Spanish>Citadelle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HAITIAN_CITADELLE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NORSE_THINGVELLIR</Tag>
+		<English>&#222;ingvellir</English>
+		<French>&#222;ingvellir</French>
+		<German>&#222;ingvellir</German>
+		<Italian>&#222;ingvellir</Italian>
+		<Spanish>&#222;ingvellir</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NORSE_THINGVELLIR_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CUBAN_CHANCERY</Tag>
+		<English>Chancery</English>
+		<French>Chancery</French>
+		<German>Chancery</German>
+		<Italian>Chancery</Italian>
+		<Spanish>Chancery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CUBAN_CHANCERY_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERUVIAN_WOOL_MILL</Tag>
+		<English>Wool Mill</English>
+		<French>Wool Mill</French>
+		<German>Wool Mill</German>
+		<Italian>Wool Mill</Italian>
+		<Spanish>Wool Mill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PERUVIAN_WOOL_MILL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VENEZUELAN_REFINERY</Tag>
+		<English>Refinery</English>
+		<French>Refinery</French>
+		<German>Refinery</German>
+		<Italian>Refinery</Italian>
+		<Spanish>Refinery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VENEZUELAN_REFINERY_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

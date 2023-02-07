@@ -1758,7 +1758,7 @@
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<DefaultBuilding>BUILDING_CRISTO_REDENTOR</DefaultBuilding>
 		</BuildingClassInfo>
-		<BuildingClassInfo>
+		<!--<BuildingClassInfo> # MacAurther TODO: maybe later
 			<Type>BUILDINGCLASS_GATEWAY_ARCH</Type>
 			<Description>TXT_KEY_BUILDING_GATEWAY_ARCH</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
@@ -1766,7 +1766,7 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<DefaultBuilding>BUILDING_GATEWAY_ARCH</DefaultBuilding>
-		</BuildingClassInfo>
+		</BuildingClassInfo>-->
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_WORLD_TRADE_CENTER</Type>
 			<Description>TXT_KEY_BUILDING_WORLD_TRADE_CENTER</Description>
@@ -1820,15 +1820,6 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<DefaultBuilding>BUILDING_NASA</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_ARECIBO_OBSERVATORY</Type>
-			<Description>TXT_KEY_BUILDING_ARECIBO_OBSERVATORY</Description>
-			<iMaxGlobalInstances>1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_ARECIBO_OBSERVATORY</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_CN_TOWER</Type>

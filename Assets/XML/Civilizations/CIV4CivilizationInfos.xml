@@ -791,6 +791,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
+					<BuildingType>BUILDING_CUBAN_CHANCERY</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
 				</Building>
@@ -1081,44 +1085,33 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Wadan</City>
-				<City>Taodeni</City>
-				<City>Ngazargumu</City>
-				<City>Kangaba</City>
-				<City>Dia</City>
-				<City>Tiraqqa</City>
-				<City>Awkar</City>
-				<City>Kukiya</City>
-				<City>Takrur</City>
-				<City>Sya</City>
-				<City>Taoudenni</City>
-				<City>Bambouk</City>
-				<City>Kirina</City>
-				<City>Kurussa</City>
-				<City>Bassikinu</City>
-				<City>Nioro</City>
-				<City>Tichit</City>
-				<City>Koukya</City>
-				<City>Diara</City>
-				<City>Bamba</City>
-				<City>Njima</City>
-				<City>Manan</City>
-				<City>Bornu</City>
-				<City>Wudi</City>
-				<City>Birni Kimi</City>
-				<City>Yamia</City>
-				<City>Idaban</City>
-				<City>Abeokuta</City>
-				<City>Akure</City>
-				<City>Ilorin</City>
-				<City>Ijebu Odi</City>
-				<City>Ogbomoso</City>
-				<City>Ondo</City>
-				<City>Ota</City>
-				<City>Shagamu</City>
-				<City>Iseyin</City>
+				<City>La Croix</City>
+				<City>Jean-Rabel</City>
+				<City>Bombardopolis</City>
+				<City>Port-de-Paix</City>
+				<City>Basse-Terre</City>
+				<City>Cap-Haitien</City>
+				<City>Gonaives</City>
+				<City>Saint-Marc</City>
+				<City>Petite Riviere</City>
+				<City>Croix-des-Bouquets</City>
+				<City>Petion-Ville</City>
+				<City>Carrefour</City>
+				<City>Jacmel</City>
+				<City>Petit Goave</City>
+				<City>Grenodiere</City>
+				<City>Piaisance-du-Sud</City>
+				<City>Les Cayes</City>
+				<City>Port Salut</City>
+				<City>Jeremie</City>
+				<City>Moron</City>
+				<City>Sassier</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_STAR_FORT</BuildingClassType>
+					<BuildingType>BUILDING_HAITIAN_CITADELLE</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_YORUBA_TEMPLE</BuildingType>
@@ -1231,6 +1224,10 @@
 				<City>Otakou</City>				<!-- Otago -->
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SMOKEHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_HAWAIIAN_LUAU</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_ATUA_SHRINE</BuildingType>
@@ -1584,6 +1581,10 @@
 				<City>Onnahee</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
+					<BuildingType>BUILDING_IROQUOIS_LONGHOUSE</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_GAIWIIO_LONGHOUSE</BuildingType>
@@ -2299,6 +2300,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
+					<BuildingType>BUILDING_NORSE_THINGVELLIR</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_ASATRU_HOF</BuildingType>
 				</Building>
@@ -2389,6 +2394,10 @@
 				<City>Medellin</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TEXTILE_MILL</BuildingClassType>
+					<BuildingType>BUILDING_PERUVIAN_WOOL_MILL</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
@@ -2593,6 +2602,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
+					<BuildingType>BUILDING_PUEBLOAN_KIVA</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_KACHIN_PITHOUSE</BuildingType>
 				</Building>
@@ -2718,6 +2731,10 @@
                 <City>Fort Naknek</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
+					<BuildingType>BUILDING_RUSSIAN_HUNTING_POST</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_PERUN_SHRINE</BuildingType>
@@ -3114,6 +3131,10 @@
 				<City>Medellin</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+					<BuildingType>BUILDING_VENEZUELAN_REFINERY</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
