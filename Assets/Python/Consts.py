@@ -62,13 +62,14 @@ lCivOrder = lBirthOrder + [
 
 # used in: Congresses, DynamicCivs, Plague, RFCUtils, UniquePowers, Victory
 # a civilisation can be in multiple civ groups
-iNumCivGroups = 3
-(iCivGroupEurope, iCivGroupNativeAmerica, iCivGroupAmerica) = range(iNumCivGroups)
+iNumCivGroups = 4
+(iCivGroupEurope, iCivGroupNativeAmerica, iCivGroupAmerica, iCivGroupNATO) = range(iNumCivGroups)
 
 dCivGroups = {
 iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
 iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois],
-iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCuba]
+iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCuba],
+iCivGroupNATO : [iAmerica, iCanada, iNorse, iEngland, iFrance, iSpain, iPortugal, iNetherlands],
 }
 
 # used in: Stability
@@ -507,24 +508,24 @@ iFish, 			iPig, 			iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			i
 iDye, 			iCochineal,		iFur,			iGems, 			iGold, 			iIncense, 		iIvory, 		iJade,			iMillet,		iObsidian,
 iOlives,		iOpium,			iPearls, 		iRareEarths,	iRubber,		iSalt,			iSilk, 			iSilver, 		iSpices,		iSugar,
 iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
-# Buildings
 
-iNumBuildings = 234
-# Buildings (122)
+# Buildings
+iNumBuildings = 235
+# Buildings (123)
 #				2				3				4				5				6				7				8				9				10
 (iPalace, 		iGranary,		iChinampa,		iColcas,		iIgloo,			iBath,			iTemazcal,		iMarket,		iWeaver,		iStoneworks,	
 iGoldsmith,		iArena,			iBallCourt,		iBarracks,		iKallanka,		iWalls,			iKancha,		iTambo,			iHerbalist,		iAltar,	
-iTzompantli,	iCommon,		iEffigyMound,	iKalasasay,		iKiva,			iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iStocks,		
-iHeadright,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			
-iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		
-iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	
-iWheelwright,	iPostOffice,	iCustomsHouse,	iChancery,		iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	
-iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iSewer,			iJail,			iImmigrationOffice,
-iRailwayStation,iTextileMill,	iWoolMill,		iSteelMill,		iRodeo,			iLienzoCharro,	iArsenal,		iDrydock,		iLibrary,		iNewspaper,		
-iSupermarket,	iColdStoragePlant,iHospital,	iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		
-iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iPark,			iBunker,		iLaboratory,	iBroadcastTower,iVerticalFarm,	iPublicTransportation,
-iRecyclingCenter,iSecurityBureau,iContainerTerminal,iFiberNetwork,iLogisticsCenter,iAutomatedFactory,iNuclearPlant,iSolarPlant,	iStadium,		iBombShelters,	
-iSupercomputer,	iCinema,		
+iTzompantli,	iCommon,		iEffigyMound,	iKalasasay,		iKiva,			iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iLuau,			
+iStocks,		iHeadright,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	
+iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		
+iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
+iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iChancery,		iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		
+iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iSewer,			iJail,			
+iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRodeo,			iLienzoCharro,	iArsenal,		iDrydock,		iLibrary,		
+iNewspaper,		iSupermarket,	iColdStoragePlant,iHospital,	iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,
+iFactory,		iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iPark,			iBunker,		iLaboratory,	iBroadcastTower,iVerticalFarm,	
+iPublicTransportation,iRecyclingCenter,iSecurityBureau,iContainerTerminal,iFiberNetwork,iLogisticsCenter,iAutomatedFactory,iNuclearPlant,iSolarPlant,iStadium,		
+iBombShelters,	iSupercomputer,	iCinema,		
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 

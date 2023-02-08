@@ -176,6 +176,31 @@
 	</TEXT>
 	
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_CUB1</Tag>
+		<English>Decolonization</English>
+		<French>Decolonization</French>
+		<German>Decolonization</German>
+		<Italian>Decolonization</Italian>
+		<Spanish>Decolonization</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_CUB2</Tag>
+		<English>Ciudad de las Columnas</English>
+		<French>Ciudad de las Columnas</French>
+		<German>Ciudad de las Columnas</German>
+		<Italian>Ciudad de las Columnas</Italian>
+		<Spanish>Ciudad de las Columnas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_CUB3</Tag>
+		<English>October Crisis</English>
+		<French>October Crisis</French>
+		<German>October Crisis</German>
+		<Italian>October Crisis</Italian>
+		<Spanish>October Crisis</Spanish>
+	</TEXT>
+	
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_ENG1</Tag>
 		<English>The Sun Never Sets</English>
 		<French>Le soleil ne se couche jamais </French>
@@ -223,6 +248,31 @@
 		<German>Stadt der Lichter</German>
 		<Italian>City of Lights</Italian>
 		<Spanish>City of Lights</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_HAI1</Tag>
+		<English>Black Republic</English>
+		<French>Black Republic</French>
+		<German>Black Republic</German>
+		<Italian>Black Republic</Italian>
+		<Spanish>Black Republic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_HAI1</Tag>
+		<English>Abolitionism</English>
+		<French>Abolitionism</French>
+		<German>Abolitionism</German>
+		<Italian>Abolitionism</Italian>
+		<Spanish>Abolitionism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_HAI1</Tag>
+		<English>Pearl of the Antilles</English>
+		<French>Pearl of the Antilles</French>
+		<German>Pearl of the Antilles</German>
+		<Italian>Pearl of the Antilles</Italian>
+		<Spanish>Pearl of the Antilles</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -477,6 +527,31 @@
 	</TEXT>
 	
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PER1</Tag>
+		<English>Guayaquil Conference</English>
+		<French>Guayaquil Conference</French>
+		<German>Guayaquil Conference</German>
+		<Italian>Guayaquil Conference</Italian>
+		<Spanish>Guayaquil Conference</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PER1</Tag>
+		<English>Guano Era</English>
+		<French>Guano Era</French>
+		<German>Guano Era</German>
+		<Italian>Guano Era</Italian>
+		<Spanish>Guano Era</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PER1</Tag>
+		<English>Cuidad de los Reyes</English>
+		<French>Cuidad de los Reyes</French>
+		<German>Cuidad de los Reyes</German>
+		<Italian>Cuidad de los Reyes</Italian>
+		<Spanish>Cuidad de los Reyes</Spanish>
+	</TEXT>
+	
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_POR1</Tag>
 		<English>Age of Discovery</English>
 		<French>L'&#226;ge des d&#233;couvertes </French>
@@ -504,7 +579,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_PUE1</Tag>
 		<English>Mogollon</English>
-		<French>Mogollon </French>
+		<French>Mogollon</French>
 		<German>Mogollon</German>
 		<Italian>Mogollon</Italian>
 		<Spanish>Mogollon</Spanish>
@@ -512,43 +587,43 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_PUE2</Tag>
 		<English>Mesoamerican Traders</English>
-		<French>Mesoamerican Traders </French>
+		<French>Mesoamerican Traders</French>
 		<German>Mesoamerican Traders</German>
 		<Italian>Mesoamerican Traders</Italian>
 		<Spanish>Mesoamerican Traders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_PUE3</Tag>
-		<English>Desert People</English>
-		<French>Desert People </French>
-		<German>Desert People</German>
-		<Italian>Desert People</Italian>
-		<Spanish>Desert People</Spanish>
+		<English>Horse Whispering</English>
+		<French>Horse Whispering</French>
+		<German>Horse Whispering</German>
+		<Italian>Horse Whispering</Italian>
+		<Spanish>Horse Whispering</Spanish>
 	</TEXT>
 	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_RUS1</Tag>
-		<English>Eastward Expansion</English>
-		<French>Expansion vers l'est </French>
-		<German>Expansion nach Osten</German>
-		<Italian>Eastward Expansion</Italian>
-		<Spanish>Eastward Expansion</Spanish>
+		<English>Shelekhov-Golikov</English>
+		<French>Shelekhov-Golikov</French>
+		<German>Shelekhov-Golikov</German>
+		<Italian>Shelekhov-Golikov</Italian>
+		<Spanish>Shelekhov-Golikov</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_RUS2</Tag>
-		<English>The Cold War</English>
-		<French>La Guerre froide </French>
-		<German>Der Kalte Krieg</German>
-		<Italian>The Cold War</Italian>
-		<Spanish>The Cold War</Spanish>
+		<English>Russkaya Amerika</English>
+		<French>Russkaya Amerika</French>
+		<German>Russkaya Amerika</German>
+		<Italian>Russkaya Amerika</Italian>
+		<Spanish>Russkaya Amerika</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_RUS3</Tag>
-		<English>The Iron Curtain</English>
-		<French>Le rideau de fer </French>
-		<German>Der Eiserne Vorhang</German>
-		<Italian>The Iron Curtain</Italian>
-		<Spanish>The Iron Curtain</Spanish>
+		<English>Prodazha Alyaski</English>
+		<French>Prodazha Alyaski</French>
+		<German>Prodazha Alyaski</German>
+		<Italian>Prodazha Alyaski</Italian>
+		<Spanish>Prodazha Alyaski</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -624,6 +699,31 @@
 		<German>The Splendor of Tiwanaku</German>
 		<Italian>The Splendor of Tiwanaku</Italian>
 		<Spanish>The Splendor of Tiwanaku</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_VEN1</Tag>
+		<English>La Sucursal del Dielo</English>
+		<French>La Sucursal del Dielo</French>
+		<German>La Sucursal del Dielo</German>
+		<Italian>La Sucursal del Dielo</Italian>
+		<Spanish>La Sucursal del Dielo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_VEN2</Tag>
+		<English>OPEC</English>
+		<French>OPEC</French>
+		<German>OPEC</German>
+		<Italian>OPEC</Italian>
+		<Spanish>OPEC</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_VEN3</Tag>
+		<English>Boliburguesia</English>
+		<French>Boliburguesia</French>
+		<German>Boliburguesia</German>
+		<Italian>Boliburguesia</Italian>
+		<Spanish>Boliburguesia</Spanish>
 	</TEXT>
 	
 	<TEXT>

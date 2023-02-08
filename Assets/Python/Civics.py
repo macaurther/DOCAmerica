@@ -72,6 +72,11 @@ def isCommunist(iPlayer):
 		return True
 		
 	return False
+
+def isAmerican(iPlayer):
+	if gc.getPlayer(iPlayer).getCivilizationType() == iAmerica:
+		return True
+	return False
 	
 def isFascist(iPlayer):
 	civic = civics(iPlayer)

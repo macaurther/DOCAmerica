@@ -121,7 +121,7 @@ class Communist(Requirement):
 
 	def fulfilled(self, evaluator):
 		return evaluator.any(lambda p: isCommunist(p))
-	
+
 
 # Second Greek UHV goal
 # Second Phoenician UHV goal

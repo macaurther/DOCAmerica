@@ -53,7 +53,6 @@ class AttitudeCount(ThresholdRequirement):
 		
 		return [civilizations]
 
-
 # Second Khmer UHV goal
 class AveragePopulation(ThresholdRequirement):
 

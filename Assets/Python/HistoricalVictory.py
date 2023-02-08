@@ -56,6 +56,8 @@ KALAALLIT =  "TXT_KEY_VICTORY_NAME_KALAALLIT"
 MID_ATLANTIC =  "TXT_KEY_VICTORY_NAME_MID_ATLANTIC"
 VENEZUELA =  "TXT_KEY_VICTORY_NAME_VENEZUELA"
 BRAZILIAN_HIGHLANDS =  "TXT_KEY_VICTORY_NAME_BRAZILIAN_HIGHLANDS"
+ALASKA = "TXT_KEY_VICTORY_NAME_ALASKA"
+NATO = "TXT_KEY_VICTORY_NAME_NATO"
 
 # area descriptors
 ANDEAN_COAST = "TXT_KEY_VICTORY_NAME_ANDEAN_COAST"
@@ -142,7 +144,7 @@ dGoals = {
 	iPuebloan: (
 		CultureAmount(500, at=1000),
 		TradeConnection(by=1100),
-		ImprovementCount((iFarm, 10), at=1200),
+		UnitCount(iHorseArcher, 1, by=1680),
 	),
 	iMuisca: (
 		AveragePopulation(10, at=1500),
@@ -256,9 +258,9 @@ dGoals = {
 		)
 	),
 	iRussia: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		ImprovementCount(iCamp, 10, by=1800),
+		Control(plots.region(rAlaska).named(ALASKA), at=1860),
+		TradeGold(1000, by=1870),
 	),
 	iAmerica: (
 		BuildingCount(iStateHouse, 50, by=1959),
@@ -272,7 +274,7 @@ dGoals = {
 	iHaiti: (
 		FirstDiscover(iEmancipation),
 		FreedSlaves(20),
-		GoldAmount(999999, by=2000),
+		Control(plots.region(rCaribbean).named(CARIBBEAN), at=1890),
 	),
 	iArgentina: (
 		GoldenAges(2, by=1930),
@@ -293,16 +295,13 @@ dGoals = {
 			plots.region(rCaribbean).named(CARIBBEAN),
 			at=1870,
 		),
-		Control(
-			plots.regions(*lSouthAmerica).named(SOUTH_AMERICA),
-			at=1920,
-		),
+		Control(plots.regions(*lSouthAmerica).named(SOUTH_AMERICA), at=1920),
 		ResourceTradeGold(3000, by=1950),
 	),
 	iPeru: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		Control(plots.region(rPeru).named(PERU), at=1850),
+		GoldAmount(5000, by=1866),
+		PopulationCityCount(20, 1, by=1950),
 	),
 	iBrazil: (
 		ImprovementCount((iSlavePlantation, 8), (iPasture, 4), at=1880),
@@ -314,9 +313,12 @@ dGoals = {
 		),
 	),
 	iVenezuela: (
-		GoldAmount(999999, by=2000),
+		BuildingCount(iCatholicCathedral, 1, by=1860),
 		ControlledResourceCount(iOil, 5, by=1950),
-		GoldAmount(999999, by=2000),
+		All(
+			AttitudeCount(AttitudeTypes.ATTITUDE_FRIENDLY, 5, civs=group(iCivGroupNATO).named(NATO), bIndependent=True, at=1990),
+			AttitudeCount(AttitudeTypes.ATTITUDE_FURIOUS, 5, civs=group(iCivGroupNATO).named(NATO), bIndependent=True, at=2000),
+		),
 	),
 	iCanada: (
 		All(
@@ -333,8 +335,8 @@ dGoals = {
 		BrokeredPeace(12, by=2000),
 	),
 	iCuba: (
-		GoldAmount(999999, by=2000),
-		GoldAmount(999999, by=2000),
+		AllowNone(group(iCivGroupEurope).named(EUROPEAN), plots.region(rCaribbean).named(CARIBBEAN), at=1910),
+		CityCultureLevel(capital().named(CAPITAL), iCultureLevelRefined, by=1950),
 		UnitCount(iICBM, 1, by=1962),
 	),
 }
