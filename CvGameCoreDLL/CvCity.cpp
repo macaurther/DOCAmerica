@@ -17835,7 +17835,7 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		//if (pPlot->getOwner() == getOwner()) iCost += 1000;
 	}
 
-	if (pPlot->getBonusType() >= 0 && GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pPlot->getBonusType()).getTechReveal()))
+	if (pPlot->getBonusType() >= 0 && (GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pPlot->getBonusType()).getTechReveal()) || GET_PLAYER(getOwner()).getCivilizationType() == HAWAII)) // MacAurther: Includes Hawaii UP
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_BONUS");
 	}

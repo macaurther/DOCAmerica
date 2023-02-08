@@ -6862,7 +6862,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=50
-	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1

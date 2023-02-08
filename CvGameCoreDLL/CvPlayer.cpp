@@ -7116,6 +7116,11 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	{
 		iCost /= 2;
 	}
+	// MacAurther: Russian UP
+	else if (eCiv == VENEZUELA)
+	{
+		return 0;
+	}
 
 	return std::max(0, iCost * (100 + calculateInflationRate())) / 100;
 }
@@ -20069,7 +20074,7 @@ bool CvPlayer::canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggere
 
 	if (NO_BONUS != kEvent.getBonusRevealed())
 	{
-		if (GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBonusInfo((BonusTypes)kEvent.getBonusRevealed()).getTechReveal()))
+		if (GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBonusInfo((BonusTypes)kEvent.getBonusRevealed()).getTechReveal()) || getCivilizationType() == HAWAII) // MacAurther: Includes Hawaii UP
 		{
 			return false;
 		}
