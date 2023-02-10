@@ -386,9 +386,6 @@ lCivilizations = [
 ### Starting units ###
 
 dStartingUnits = CivDict({
-	iMaya: {
-		iWork: 1,
-	},
 	iWari: {
 		iSettle: 1,
 		iWork: 1,

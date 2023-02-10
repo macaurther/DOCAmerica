@@ -44,9 +44,24 @@ BeginPlot
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_MILITIA_1
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_MAYA
+		CityName=Tikal
+		CityPopulation=2
+		YearFounded=100
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_MAYA, Culture=5
+		EndCulture
+	EndCity
 EndPlot
 BeginPlot
 	x=29,y=62
@@ -55,9 +70,24 @@ BeginPlot
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_MILITIA_1
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_TEOTIHUACAN_ARTISAN
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_TEOTIHUACAN
+		CityName=Teotihuacan
+		CityPopulation=3
+		YearFounded=-200
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=15
+		EndCulture
+	EndCity
 EndPlot
 BeginPlot
 	x=52,y=33

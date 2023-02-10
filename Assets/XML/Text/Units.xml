@@ -1862,14 +1862,6 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can be stationed in a city to provide it with two culture points per turn.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_TEOTIHUACAN_ARTISAN_HELP</Tag>
-		<English>[ICON_BULLET]Creates 2 [ICON_CULTURE] when it ends its turn in a city</English>
-		<French>[ICON_BULLET]Cr&#233;e 2 [ICON_CULTURE] lorsqu'il termine son tour dans une ville</French>
-		<German>[ICON_BULLET]Creates 2 [ICON_CULTURE] when it ends its turn in a city</German>
-		<Italian>[ICON_BULLET]Creates 2 [ICON_CULTURE] when it ends its turn in a city</Italian>
-		<Spanish>[ICON_BULLET]Creates 2 [ICON_CULTURE] when it ends its turn in a city</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT</Tag>
 		<English>Agent</English>
 		<French>Agent</French>

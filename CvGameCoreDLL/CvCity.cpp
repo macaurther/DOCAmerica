@@ -17447,6 +17447,12 @@ bool CvCity::isAutoRaze() const
 		{
 			return true;
 		}
+
+		// MacAurther: Cities are razed without the owner having the Construction tech
+		if (!GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)CONSTRUCTION))
+		{
+			return true;
+		}
 	}
 
 	if (GC.getGameINLINE().isOption(GAMEOPTION_ONE_CITY_CHALLENGE) && isHuman())

@@ -155,10 +155,10 @@ def checkSpawn(iCiv, iUnitType, iNumUnits, tTL, tBR, spawnFunction, iTurn, iPeri
 	if periodic(iPeriod):
 		spawnFunction(slot(iCiv), iUnitType, iNumUnits, tTL, tBR, random_entry(lAdj))
 			
-def possibleTiles(tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False):
-	return plots.start(tTL).end(tBR).where(lambda p: possibleTile(p, bWater, bTerritory, bBorder, bImpassable, bNearCity))
+def possibleTiles(tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False, bForceSpawn=False):
+	return plots.start(tTL).end(tBR).where(lambda p: possibleTile(p, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn))
 	
-def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity):
+def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn):
 	# never on peaks
 	if plot.isPeak(): return False
 	
@@ -168,14 +168,14 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity):
 	# only inside territory if specified
 	if not bTerritory and plot.isOwned(): return False
 	
-	# never directly next to cities
-	if cities.surrounding(plot): return False
+	# never directly next to cities, (MacAurther) unless Force Spawn
+	if not bForceSpawn and cities.surrounding(plot): return False
 	
 	# never on tiles with units
 	if plot.isUnit(): return False
 	
-	# never in marsh (impassable)
-	if plot.getFeatureType() == iMarsh: return False
+	# never in bog (impassable)
+	if plot.getFeatureType() == iBog: return False
 	
 	# allow other impassable terrain (ocean, jungle)
 	if not bImpassable:
@@ -188,8 +188,8 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity):
 	# near a city if specified (next to cities excluded above)
 	if bNearCity and not plots.surrounding(plot, radius=2).where(lambda p: not p.isCity()): return False
 	
-	# not on landmasses without cities
-	if not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
+	# not on landmasses without cities, (MacAurther): except if Force Spawn
+	if not bForceSpawn and not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
 	
 	return True
 
@@ -237,7 +237,15 @@ def spawnUprising(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj=""):
 	
 	if plot:
 		makeUnits(iPlayer, iUnitType, plot, iNumUnits, UnitAITypes.UNITAI_ATTACK).adjective(sAdj)
-		
+
+def spawnDefenders(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj=""):
+	''' MacAurther: represents Native defenders against tribe pillagers. CAN be next to cities,
+	in territory, and in areas with no cities present'''
+	plot = possibleTiles(tTL, tBR, bTerritory=True, bForceSpawn=True).random()
+	
+	if plot:
+		makeUnits(iPlayer, iUnitType, plot, iNumUnits, UnitAITypes.UNITAI_ATTACK).adjective(sAdj)
+
 def includesActiveHuman(*civs):
 	return civ() in civs and year(dBirth[active()]) <= year()
 
@@ -245,20 +253,20 @@ def spawnTribeUprising(iX, iY):
 	iHandicap = infos.handicap().getBarbarianSpawnModifier()
 	
 	iRange = 1
-	if year() >= 1650:
+	if year() >= year(1650):
 		iRange += 1
-	if year() >= 1800:
+	if year() >= year(1800):
 		iRange += 1
 	tTL = (iX - iRange, iY - iRange)
 	tBR = (iX + iRange, iY + iRange)
 	
-	spawnUprising(iNative, iWarrior, 1 + iHandicap, tTL, tBR)
-	spawnUprising(iNative, iArcher, 1 + iHandicap, tTL, tBR)
-	if year() <= 1650:
-		spawnUprising(iNative, iSkirmisher, iHandicap, tTL, tBR)
-		spawnUprising(iNative, iSpearman, iHandicap, tTL, tBR)
-	elif year() <= 1800:
-		spawnUprising(iNative, iMohawk, 1 + iHandicap, tTL, tBR)
+	spawnDefenders(iNative, iWarrior, 1 + iHandicap, tTL, tBR)
+	spawnDefenders(iNative, iArcher, 1 + iHandicap, tTL, tBR)
+	if year() <= year(1650):
+		spawnDefenders(iNative, iSkirmisher, iHandicap, tTL, tBR)
+		spawnDefenders(iNative, iSpearman, iHandicap, tTL, tBR)
+	elif year() <= year(1800):
+		spawnDefenders(iNative, iMohawk, 1 + iHandicap, tTL, tBR)
 	else:
-		spawnUprising(iNative, iMountedBrave, 1 + iHandicap, tTL, tBR)
+		spawnDefenders(iNative, iMountedBrave, 1 + iHandicap, tTL, tBR)
 		

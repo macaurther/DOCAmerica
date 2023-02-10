@@ -106,32 +106,32 @@ iMaya : 		((34, 57), 	(37, 59)),
 iTeotihuacan :	((28, 31), 	(29, 62)),
 iTiwanaku :		((51, 32), 	(53, 34)),
 iWari :			((45, 36), 	(47, 40)),
-iMississippi :	((34, 77), 	(46, 79)),# fix pagan religion
-iPuebloan :		((24, 72), 	(26, 76)),# fix pagan religion
+iMississippi :	((34, 77), 	(46, 79)),	# MacAurther TODO: fix pagan religion
+iPuebloan :		((24, 72), 	(26, 76)),	# MacAurther TODO: fix pagan religion
 iMuisca :		((49, 47), 	(50, 49)),
-iNorse :		((0, 0), 	(0, 0)),	#No core for Europeans
+iNorse :		((0, 0), 	(0, 0)),	# No core for Europeans
 iChimu :		((43, 40), 	(44, 44)),
-iInuit :		((4, 103), 	(17, 105)),# fix pagan religion
+iInuit :		((4, 103), 	(17, 105)),	# MacAurther TODO: fix pagan religion
 iInca : 		((46, 33), 	(52, 38)),
 iAztecs : 		((27, 59), 	(31, 61)),
-iIroquois :		((50, 83), 	(53, 86)),# fix pagan religion
-iSpain : 		((0, 0), 	(0, 0)),	#No core for Europeans
-iPortugal : 	((0, 0), 	(0, 0)),	#No core for Europeans
-iEngland : 		((0, 0), 	(0, 0)),	#No core for Europeans
-iFrance : 		((0, 0), 	(0, 0)),	#No core for Europeans
-iNetherlands :	((0, 0), 	(0, 0)),	#No core for Europeans
+iIroquois :		((50, 83), 	(53, 86)),	# MacAurther TODO: fix pagan religion
+iSpain : 		((0, 0), 	(0, 0)),	# No core for Europeans
+iPortugal : 	((0, 0), 	(0, 0)),	# No core for Europeans
+iEngland : 		((0, 0), 	(0, 0)),	# No core for Europeans
+iFrance : 		((0, 0), 	(0, 0)),	# No core for Europeans
+iNetherlands :	((0, 0), 	(0, 0)),	# No core for Europeans
 iHawaii :		((12, 47), 	(14, 50)),
-iRussia :		((0, 0), 	(0, 0)),	#No core for Europeans
+iRussia :		((0, 0), 	(0, 0)),	# No core for Europeans
 iAmerica : 		((47, 79), 	(60, 84)),
 iHaiti :		((51, 58), 	(53, 60)),
 iArgentina : 	((53, 15), 	(58, 20)),
-iMexico :		((26, 57), 	(32, 64)),#TODO
+iMexico :		((26, 57), 	(32, 64)),
 iColombia :		((46, 49), 	(49, 54)),
 iPeru :			((45, 34), 	(49, 38)),
 iBrazil : 		((65, 26), 	(72, 32)),
 iVenezuela :	((49, 50), 	(54, 53)),
 iCanada : 		((45, 83), 	(59, 90)),
-iCuba : 		((41, 60), 	(50, 62)),#TODO
+iCuba : 		((41, 60), 	(50, 62)),
 })
 
 dPeriodCoreArea = {

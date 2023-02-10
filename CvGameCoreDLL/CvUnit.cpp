@@ -5000,7 +5000,7 @@ bool CvUnit::pillage()
 	{
 		eTempImprovement = pPlot->getImprovementType();
 
-		if (pPlot->getTeam() != getTeam())
+		if (pPlot->getTeam() != getTeam() || eTempImprovement == IMPROVEMENT_TRIBE || eTempImprovement == IMPROVEMENT_CONTACTED_TRIBE) // MacAurther: Get gold and trigger callback for tribes pillaged inside borders
 		{
 			// Use python to determine pillage amounts...
 			lPillageGold = 0;
