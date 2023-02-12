@@ -94,8 +94,8 @@ dGoals = {
 		BestTechPlayer(at=1500),
 	),
 	iTeotihuacan: (
-		CultureAmount(500, at=550),
-		GoldenAges(1, by=550),
+		CultureAmount(500, at=850),
+		GoldenAges(1, by=850),
 		Control(
 			plots.region(rBajio).named(BAJIO),
 			plots.region(rYucatan).named(YUCATAN),

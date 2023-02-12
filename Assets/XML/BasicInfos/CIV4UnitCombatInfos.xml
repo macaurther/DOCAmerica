@@ -66,5 +66,10 @@
 			<Description>TXT_KEY_UNITCOMBAT_SPY</Description>
 			<Button>,Art/Interface/Buttons/Promotions/Spy_Units.dds</Button>
 		</UnitCombatInfo>
+		<UnitCombatInfo>
+			<Type>UNITCOMBAT_MILITIA</Type>
+			<Description>TXT_KEY_UNITCOMBAT_MILITIA</Description>
+			<Button>,Art/Interface/Buttons/Promotions/CityGarrison1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,2,2</Button>
+		</UnitCombatInfo>
 	</UnitCombatInfos>
 </Civ4UnitCombatInfos>

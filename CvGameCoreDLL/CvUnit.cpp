@@ -7221,6 +7221,12 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		return false;
 	}
 
+	// MacAurther: Cannot build on Lagoons
+	if (pPlot != NULL && pPlot->getTerrainType() == TERRAIN_LAGOON)
+	{
+		return false;
+	}
+
 	return true;
 }
 

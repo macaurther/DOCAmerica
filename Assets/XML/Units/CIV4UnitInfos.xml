@@ -1756,7 +1756,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_1</Class>
 			<Type>UNIT_MILITIA_1</Type>
-			<Combat>UNITCOMBAT_MELEE</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -1833,7 +1833,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_1</Class>
 			<Type>UNIT_MISSISSIPPI_FALCON_DANCER</Type>
-			<Combat>UNITCOMBAT_MELEE</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER</Description>
@@ -1918,7 +1918,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_2</Class>
 			<Type>UNIT_MILITIA_2</Type>
-			<Combat>UNITCOMBAT_MELEE</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -1988,7 +1988,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_3</Class>
 			<Type>UNIT_MILITIA_3</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -2058,7 +2058,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_4</Class>
 			<Type>UNIT_MILITIA_4</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -2128,7 +2128,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_4</Class>
 			<Type>UNIT_AMERICAN_MINUTEMAN</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_AMERICAN_MINUTEMAN</Description>
@@ -2222,7 +2222,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_5</Class>
 			<Type>UNIT_MILITIA_5</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -2304,7 +2304,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_6</Class>
 			<Type>UNIT_MILITIA_6</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -2378,7 +2378,7 @@
 		<UnitInfo>
 			<Class>UNITCLASS_MILITIA_7</Class>
 			<Type>UNIT_MILITIA_7</Type>
-			<Combat>UNITCOMBAT_GUN</Combat>
+			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -5586,9 +5586,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_MATHEMATICS</PrereqTech>
-			</TechTypes>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -6216,9 +6213,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_BIOLOGY</PrereqTech>
-			</TechTypes>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7117,9 +7111,6 @@
 			</NotUnitAIs>
 			<PrereqTech>TECH_COMPANIES</PrereqTech>
 			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
-			<TechTypes>
-				<PrereqTech>TECH_FIREARMS</PrereqTech>
-			</TechTypes>
 			<BonusType>BONUS_HORSE</BonusType>
 			<PrereqBonuses>
 				<BonusType>BONUS_IRON</BonusType>
@@ -8792,9 +8783,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			</TechTypes>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -8864,9 +8852,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			</TechTypes>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9175,9 +9160,6 @@
 			</UnitAIs>
 			<PrereqTech>TECH_TIMEKEEPING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
-			<TechTypes>
-				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			</TechTypes>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9646,9 +9628,6 @@
 				</UnitAI>
 			</NotUnitAIs>
 			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_GUNPOWDER</PrereqTech>
-			</TechTypes>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -9713,9 +9692,6 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_BALLISTICS</PrereqTech>
-			<TechTypes>
-				<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
-			</TechTypes>
 			<PrereqBonuses>
 				<BonusType>BONUS_COAL</BonusType>
 				<BonusType>BONUS_OIL</BonusType>
@@ -10581,9 +10557,6 @@
 			</UnitAIs>
 			<PrereqTech>TECH_AVIATION</PrereqTech>
 			<PrereqBuilding>BUILDING_FACTORY</PrereqBuilding>
-			<TechTypes>
-				<PrereqTech>TECH_SYNTHETICS</PrereqTech>
-			</TechTypes>
 			<BonusType>BONUS_OIL</BonusType>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

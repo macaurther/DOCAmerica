@@ -2463,6 +2463,14 @@
 		<Spanish>Light Cavalry Units</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNITCOMBAT_MILITIA</Tag>
+		<English>Militia Units</English>
+		<French>Militia Units</French>
+		<German>Militia Units</German>
+		<Italian>Militia Units</Italian>
+		<Spanish>Militia Units</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_PLAINS_STRENGTH</Tag>
 		<English>[ICON_BULLET]%D1_Change%% Open Terrain Strength</English>
 		<French>[ICON_BULLET]%D1_Change%% de puissance en terrain d&#233;gag&#233;</French>

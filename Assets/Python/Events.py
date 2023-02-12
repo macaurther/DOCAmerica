@@ -104,6 +104,20 @@ def firstCityOnCityAcquiredAndKept(iPlayer, city):
 		events.fireEvent("firstCity", city)
 
 
+@handler("cityAcquiredAndKept")
+def giveNativeTech(iPlayer, city):
+	if city.getPreviousCiv() in dCivGroups[iCivGroupNativeAmerica] and not civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
+		lPossibleTechs = []
+		for iTech in lNativeTechs:
+			print("Checking tech: " + str(iTech))
+			if not team(iPlayer).isHasTech(iTech):
+				print("Tech: " + str(iTech) + " is Possible")
+				lPossibleTechs.append(iTech)
+		
+		if len(lPossibleTechs) > 0:
+			team(iPlayer).setHasTech(random.choice(lPossibleTechs), true, iPlayer, False, True)
+
+
 @handler("cityBuilt")
 def firstCityOnCityBuilt(city):
 	if city.isCapital():

@@ -175,10 +175,6 @@
 					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_LAGOON</TerrainType>
-					<bMakesValid>0</bMakesValid>
-				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids/>
 			<BonusTypeStructs>
@@ -759,10 +755,6 @@
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_PLAINS</TerrainType>
 					<bMakesValid>1</bMakesValid>
-				</TerrainMakesValid>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_LAGOON</TerrainType>
-					<bMakesValid>0</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids/>
@@ -1989,10 +1981,6 @@
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
 					<bMakesValid>1</bMakesValid>
-				</TerrainMakesValid>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_LAGOON</TerrainType>
-					<bMakesValid>0</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
 			<FeatureMakesValids>

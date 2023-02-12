@@ -458,7 +458,7 @@ iUnifiedTheory, iArtificialIntelligence, iBiotechnology,
 iTranshumanism) = range(iNumTechs)
 
 # Techs that Natives start the game with, but Europeans have to trade for
-lNativeTechs = (iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iFishing)
+lNativeTechs = [iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iFishing]
 
 # initialise unit variables to unit indices from XML
 

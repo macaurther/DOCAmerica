@@ -2754,6 +2754,7 @@ Your stability level can change during a stability check. As long it is higher t
 [NEWLINE][ICON_BULLET]Native Techs cannot be researched, have no prerequisite technologies, and lead to no other technologies.
 [ICON_BULLET]Each Native American civilization starts with all of the Native Techs.
 [ICON_BULLET]Native Techs can be traded.
+[ICON_BULLET]One random Native Tech is granted to the conqueror of a Native city (if it is not razed).
 [PARAGRAPH:1]Native Techs confer one of three types of advantages:
 [ICON_BULLET]Reveals the location of certain resources, such Gold and Corn.
 [ICON_BULLET]Allows additional promotions.

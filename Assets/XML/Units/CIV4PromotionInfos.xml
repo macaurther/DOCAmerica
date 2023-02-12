@@ -13,6 +13,10 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -62,6 +66,10 @@
 			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -113,6 +121,10 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -163,6 +175,10 @@
 			<iNeutralHealChange>10</iNeutralHealChange>
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -216,6 +232,10 @@
 			<iCombatPercent>10</iCombatPercent>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -266,6 +286,10 @@
 			<PromotionPrereqOr1>PROMOTION_COMBAT5</PromotionPrereqOr1>
 			<iCombatPercent>25</iCombatPercent>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -319,6 +343,10 @@
 			</UnitCombatMods>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -346,6 +374,10 @@
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -589,6 +621,10 @@
 			<bAlwaysHeal>1</bAlwaysHeal>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -699,6 +735,10 @@
 			<iSameTileHealChange>10</iSameTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -741,6 +781,10 @@
 			<TechPrereq>TECH_MEDICINE</TechPrereq>
 			<iAdjacentTileHealChange>10</iAdjacentTileHealChange>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -787,6 +831,10 @@
 			<iAdjacentTileHealChange>15</iAdjacentTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -828,6 +876,10 @@
 			<iHillsDefense>20</iHillsDefense>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -851,6 +903,10 @@
 			<bHillsDoubleMove>1</bHillsDoubleMove>
 			<iHillsDefense>30</iHillsDefense>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -879,6 +935,10 @@
 			<iWithdrawalChange>50</iWithdrawalChange>
 			<iHillsAttack>25</iHillsAttack>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -913,6 +973,10 @@
 				</FeatureDefense>
 			</FeatureDefenses>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -949,6 +1013,10 @@
 				</FeatureDefense>
 			</FeatureDefenses>
 			<FeatureDoubleMoves>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<FeatureDoubleMove>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<bFeatureDoubleMove>1</bFeatureDoubleMove>
@@ -1001,6 +1069,10 @@
 				</FeatureAttack>
 			</FeatureAttacks>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -1178,6 +1250,10 @@
 			<iCityDefense>20</iCityDefense>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1195,6 +1271,10 @@
 			<PromotionPrereqOr1>PROMOTION_CITY_GARRISON1</PromotionPrereqOr1>
 			<iCityDefense>25</iCityDefense>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
@@ -1220,6 +1300,10 @@
 				</UnitCombatMod>
 			</UnitCombatMods>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>

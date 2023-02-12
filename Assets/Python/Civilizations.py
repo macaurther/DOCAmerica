@@ -253,14 +253,14 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iConquest],
-		techs=techs.column(5).including(iCartography, iPrinting, iCompanies).without(*lNativeTechs)
+		techs=techs.column(6).without(*lNativeTechs)
 	),
 	Civilization(
 		iPortugal,
 		iGold=200,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iSlavery, iMerchantTrade, iTributaries],
-		techs=techs.column(5).including(iFirearms, iLogistics, iExploration).without(*lNativeTechs)
+		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration).without(*lNativeTechs)
 	),
 	Civilization(
 		iIroquois,
