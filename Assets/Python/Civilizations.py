@@ -306,7 +306,6 @@ lCivilizations = [
 	Civilization(
 		iAmerica,
 		iGold=1500,
-		iAdvancedStartPoints=500,
 		iStateReligion=iProtestantism,
 		lCivics=[iConfederacy, iCommonLaw, iSlavery, iAgrarianism, iHaven, iHomesteads],
 		techs=techs.column(11).including(iRepresentation, iIndependence)
@@ -320,7 +319,6 @@ lCivilizations = [
 	Civilization(
 		iArgentina,
 		iGold=1200,
-		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iGeology)
@@ -328,7 +326,6 @@ lCivilizations = [
 	Civilization(
 		iMexico,
 		iGold=500,
-		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iFederalism)
@@ -336,7 +333,6 @@ lCivilizations = [
 	Civilization(
 		iColombia,
 		iGold=750,
-		iAdvancedStartPoints=150,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iRightsOfMan)
@@ -344,7 +340,6 @@ lCivilizations = [
 	Civilization(
 		iPeru,
 		iGold=1200,
-		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iGeology)
@@ -352,7 +347,6 @@ lCivilizations = [
 	Civilization(
 		iBrazil,
 		iGold=1600,
-		iAdvancedStartPoints=200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iMetallurgy, iProtectionism, iHydrology)
@@ -360,7 +354,6 @@ lCivilizations = [
 	Civilization(
 		iVenezuela,
 		iGold=1200,
-		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iGeology)
@@ -368,7 +361,6 @@ lCivilizations = [
 	Civilization(
 		iCanada,
 		iGold=1000,
-		iAdvancedStartPoints=250,
 		iStateReligion=iProtestantism,
 		lCivics=[iConfederacy, iCommonLaw, iIndenturedServitude, iAgrarianism, iHaven, iHomesteads],
 		techs=techs.column(14)
@@ -376,7 +368,6 @@ lCivilizations = [
 	Civilization(
 		iCuba,
 		iGold=1200,
-		iAdvancedStartPoints=100,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
 		techs=techs.column(11).including(iGeology)
@@ -436,22 +427,40 @@ dStartingUnits = CivDict({
 		iWork: 1,
 		iBase: 2,
 	},
-	iSpain: {
+	iSpain: {		# ONLY for AI
+		iSettle: 1,
+		iWork: 1,
+		iBase: 2,
 	},
-	iPortugal: {
+	iPortugal: {	# ONLY for AI
+		iSettle: 1,
+		iWork: 1,
+		iBase: 2,
 	},
-	iEngland: {
+	iEngland: {		# ONLY for AI
+		iSettle: 1,
+		iWork: 1,
+		iBase: 2,
 	},
-	iFrance: {
+	iFrance: {		# ONLY for AI
+		iSettle: 1,
+		iWork: 1,
+		iBase: 2,
 	},
-	iNetherlands: {
+	iNetherlands: {	# ONLY for AI
+		iSettle: 1,
+		iWork: 1,
+		iBase: 2,
 	},
 	iHawaii: {
 		iSettle: 1,
 		iWork: 1,
 		iBase: 2,
 	},
-	iRussia: {
+	iRussia: {		# ONLY for AI
+		iSettle: 1,
+		iWork: 1,
+		iBase: 2,
 	},
 	iAmerica: {
 		iSettle: 8,

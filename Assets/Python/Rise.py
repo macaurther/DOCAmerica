@@ -516,8 +516,9 @@ class Birth(object):
 			plot.setRevealed(self.team.getID(), True, False, -1)
 	
 	def createUnits(self):
-		createRoleUnits(self.iPlayer, self.location, getStartingUnits(self.iPlayer))
-		createSpecificUnits(self.iPlayer, self.location)
+		if (not player(self.iPlayer).isHuman()) or (not self.iCiv in dMaxColonists):	# Give AI starting units on Capital plot to help them along
+			createRoleUnits(self.iPlayer, self.location, getStartingUnits(self.iPlayer))
+			createSpecificUnits(self.iPlayer, self.location)
 		
 		# MacAurther: Europeans spawn at sea
 		if self.iCiv in dMaxColonists:

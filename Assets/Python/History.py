@@ -54,8 +54,18 @@ def relocateFoundedCapital(city):
 @handler("cityBuilt")
 def buildFoundedCapitalInfrastructure(city):
 	buildCapitalInfrastructure(city.getOwner(), city)
-			
-			
+
+
+# Help AI by removing nearby Tribes when they settle cities
+@handler("cityBuilt")
+def convertTribesAroundCity(pCity):
+	iPlayer = pCity.getOwner()
+	if not player(iPlayer).isHuman():
+		for i in range(gc.getNUM_CITY_PLOTS()):
+			pPlot = pCity.getCityIndexPlot(i)
+			if pPlot.getImprovementType() == iTribe or pPlot.getImprovementType() == iContactedTribe:
+				pPlot.setImprovementType(iCottage)
+
 ### UNIT BUILT ###
 
 
@@ -111,6 +121,8 @@ def conquistadors(iTeamX, iHasMetTeamY):
 					elif iNewWorldCiv == iInca:
 						tContactZoneTL = (41, 18)
 						tContactZoneBR = (55, 44)
+					else:
+						return	# Some natives don't generate conquerors
 						
 					lArrivalExceptions = []
 						
@@ -185,9 +197,9 @@ def recordExplorationTurn(iTech, iTeam, iPlayer):
 
 
 @handler("techAcquired")
-def americanWestCoastSettlement(iTech, iTeam, iPlayer):
+def americanWesternSettlement(iTech, iTeam, iPlayer):
 	if iTech == iRailroad and civ(iPlayer) == iAmerica and not player(iPlayer).isHuman():
-		lWestCoast = [(11, 50), (11, 49), (11, 48), (11, 47), (11, 46), (12, 45)]
+		lWestCoast = plots.region(rCalifornia)
 				
 		enemyCities = cities.of(lWestCoast).notowner(iAmerica)
 		
@@ -197,15 +209,15 @@ def americanWestCoastSettlement(iTech, iTeam, iPlayer):
 		for city in enemyCities:
 			plot = plots.surrounding(city).without(city).land().passable().no_enemies(iPlayer).random()
 			if plot:
-				makeUnits(iPlayer, iMinuteman, plot, 3, UnitAITypes.UNITAI_ATTACK_CITY)
-				makeUnits(iPlayer, iCannon, plot, 2, UnitAITypes.UNITAI_ATTACK_CITY)
+				createRoleUnit(iPlayer, plot, iAttack, 3)
+				createRoleUnit(iPlayer, plot, iCitySiege, 2)
 				
 				message(city.getOwner(), "TXT_KEY_MESSAGE_AMERICAN_WEST_COAST_CONQUERORS", adjective(iPlayer), city.getName(), color=iRed, location=city, button=infos.unit(iMinuteman).getButton())
 				
 		if enemyCities.count() < 2:
 			for plot in plots.of(lWestCoast).without(enemyCities).sample(2 - enemyCities.count()):
 				makeUnit(iPlayer, iSettler, plot)
-				makeUnit(iPlayer, iMinuteman, plot)
+				createRoleUnit(iPlayer, plot, iBase)
 
 
 ### COLLAPSE ###

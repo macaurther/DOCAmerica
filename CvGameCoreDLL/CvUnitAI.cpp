@@ -14603,7 +14603,7 @@ bool CvUnitAI::AI_irrigateTerritory()
 	return false;
 }
 
-bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)
+bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)	// MacAurther TODO: AI Fort building
 {
 	int iBestValue = 0;
 	BuildTypes eBestBuild = NO_BUILD;
@@ -14618,7 +14618,7 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal, bool bAirbase)
 		{
 			if (pLoopPlot->getOwnerINLINE() == getOwnerINLINE()) // XXX team???
 			{
-				if (pLoopPlot->getImprovementType() == NO_IMPROVEMENT)
+				if (!pLoopPlot->isWater() && pLoopPlot->getImprovementType() == NO_IMPROVEMENT)	// MacAurther: Shouldn't consider building on water
 				{
 					int iValue = 0;
 					iValue += bCanal ? kOwner.AI_getPlotCanalValue(pLoopPlot) : 0;

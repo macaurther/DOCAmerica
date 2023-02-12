@@ -485,16 +485,8 @@ def specificName(iPlayer):
 	bWar = isAtWar(iPlayer)
 			
 			
-	if iCiv == iInca:
-		if bResurrected:
-			if isCurrentCapital(iPlayer, "La Paz"):
-				return "TXT_KEY_CIV_INCA_BOLIVIA"
-				
-		else:
-			if not bEmpire:
-				return capitalName(iPlayer)
 			
-	elif iCiv == iNetherlands:
+	if iCiv == iNetherlands:
 		if bCityStates:
 			return short(iPlayer)
 			
@@ -565,10 +557,6 @@ def specificAdjective(iPlayer):
 		if getColumn(iPlayer) >= 11 and cities.rectangle(tBritain).owner(iPlayer) >= 3:
 			return "TXT_KEY_CIV_ENGLAND_BRITISH"
 			
-	elif iCiv == iInca:
-		if bResurrected:
-			if isCurrentCapital(iPlayer, "La Paz"):
-				return "TXT_KEY_CIV_INCA_BOLIVIAN"
 			
 	
 ### Title methods ###

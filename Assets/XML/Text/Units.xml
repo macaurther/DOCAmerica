@@ -1635,11 +1635,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</English>
-		<French>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</French>
-		<German>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</German>
-		<Italian>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT]. They can defend themselves and spawn a defender and a worker in when they founds a city.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT] that can defend themselves.</English>
+		<French>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT] that can defend themselves.</French>
+		<German>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT] that can defend themselves.</German>
+		<Italian>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT] that can defend themselves.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Pioneers[COLOR_REVERT] are improved [COLOR_UNIT_TEXT]Settlers[COLOR_REVERT] that can defend themselves.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENGLISH_MAN_OF_WAR</Tag>
@@ -1748,14 +1748,6 @@
 		<German>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER_HELP</Tag>
-		<English>[ICON_BULLET]New cities start with a defender and a worker</English>
-		<French>[ICON_BULLET]New cities start with a defender and a worker</French>
-		<German>[ICON_BULLET]New cities start with a defender and a worker</German>
-		<Italian>[ICON_BULLET]New cities start with a defender and a worker</Italian>
-		<Spanish>[ICON_BULLET]New cities start with a defender and a worker</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STEAMSHIP</Tag>

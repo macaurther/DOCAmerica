@@ -259,14 +259,18 @@ def removeReligionByArea(area, iReligion):
 def removeReligion(city, iReligion):
 	if city.isHasReligion(iReligion) and not city.isHolyCity():
 		city.setHasReligion(iReligion, False, False, False)
-		
-	if city.hasBuilding(temple(iReligion)):
+	
+	# MacAurther: not every religion may have each building
+	iTemple = temple(iReligion)
+	iMonastery = monastery(iReligion)
+	iCathedral = cathedral(iReligion)
+	if iTemple != -1 and city.hasBuilding(iTemple):
 		city.setHasRealBuilding(temple(iReligion), False)
 		
-	if city.hasBuilding(monastery(iReligion)):
+	if iMonastery != -1 and city.hasBuilding(iMonastery):
 		city.setHasRealBuilding(monastery(iReligion), False)
 		
-	if city.hasBuilding(cathedral(iReligion)):
+	if iCathedral != -1 and city.hasBuilding(iCathedral):
 		city.setHasRealBuilding(cathedral(iReligion), False)
 
 # used: CvRandomEventInterface, History, Rules

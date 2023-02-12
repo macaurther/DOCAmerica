@@ -3120,7 +3120,7 @@ def canTriggerHighWarlord(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
 	# If source civ is operating this Civic, disallow the event to trigger.
-	if player.isCivic(CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_EGALITARIANISM')):
+	if player.isCivic(CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_MULTICULTURALISM')):
 		return false
 
 	return true
@@ -3481,61 +3481,6 @@ def canApplyEliteSwordsDone2(argsList):
 	if not player.isCivic(iCivic):
 		return false
 	
-	return true	
-
-######## GUNS NOT BUTTER ###########
-
-def getHelpGunsButter1(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-		
-	#Rhye - start
-	#iNumUnits = gc.getWorldInfo(gc.getMap().getWorldSize()).getDefaultPlayers() + 1
-	iNumUnits = 7 + 1
-	#Rhye - end
-	iBuilding = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_TAJ_MAHAL')
-	
-	szHelp = localText.getText("TXT_KEY_EVENT_GUNS_BUTTER_HELP_1", (iNumUnits, gc.getBuildingInfo(iBuilding).getTextKey()))
-
-	return szHelp
-
-def canTriggerGunsButterDone(argsList):
-	kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-	
-	#Rhye - start
-	#iNumUnits = gc.getWorldInfo(gc.getMap().getWorldSize()).getDefaultPlayers() + 1
-	iNumUnits = 7 + 1
-	#Rhye - end
-	iUnitClassType = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_ARQUEBUSIER')
-
-	if player.getUnitClassCount(iUnitClassType) < iNumUnits:
-		return false
-			
-	return true
-
-
-def canApplyGunsButterDone2(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-		
-	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_VASSALAGE')
-	
-	if not player.isCivic(iCivic):
-		return false
-	
-	return true	
-
-def canApplyGunsButterDone3(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-		
-	iBuilding = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_TAJ_MAHAL')
-	if player.getBuildingClassCount(gc.getBuildingInfo(iBuilding).getBuildingClassType()) == 0:
-		return false
-
 	return true	
 
 ######## NOBLE KNIGHTS ###########
@@ -4124,4 +4069,4 @@ def canTriggerWedding(argsList):
 	kTriggeredData = argsList[0]
 	iPlayer = kTriggeredData.ePlayer
 	
-	return gc.getPlayer(iPlayer).getCivics(iCivicsGovernment) not in [iStateParty, iDemocracy]
+	return gc.getPlayer(iPlayer).getCivics(iCivicsGovernment) not in [iDemocracy]

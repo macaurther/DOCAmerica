@@ -1017,13 +1017,13 @@
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_PLANTATION</ArtDefineTag>
 			<bActsAsCity>0</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
-			<bFreshWaterMakesValid>1</bFreshWaterMakesValid>
+			<bFreshWaterMakesValid>0</bFreshWaterMakesValid>
 			<bRiverSideMakesValid>0</bRiverSideMakesValid>
 			<bNoFreshWater>0</bNoFreshWater>
-			<bRequiresFlatlands>1</bRequiresFlatlands>
+			<bRequiresFlatlands>0</bRequiresFlatlands>
 			<bRequiresRiverSide>0</bRequiresRiverSide>
-			<bRequiresIrrigation>1</bRequiresIrrigation>
-			<bCarriesIrrigation>1</bCarriesIrrigation>
+			<bRequiresIrrigation>0</bRequiresIrrigation>
+			<bCarriesIrrigation>0</bCarriesIrrigation>
 			<bRequiresFeature>0</bRequiresFeature>
 			<bWater>0</bWater>
 			<bGoody>0</bGoody>

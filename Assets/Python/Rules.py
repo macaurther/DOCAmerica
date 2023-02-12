@@ -89,12 +89,11 @@ def createColonialDefenders(city):
 
 
 @handler("cityBuilt")
-def americanPioneerAbility(city):
+def pioneeringAbility(city):
 	iPlayer = city.getOwner()
-	if civ(iPlayer) == iAmerica:
-		if city.getRegionID() in lNorthAmerica:
-			createGarrisons(city, iPlayer, 1)
-			createRoleUnit(iPlayer, city, iWork, 1)
+	if team(iPlayer).isHasTech(iPioneering):
+		createGarrisons(city, iPlayer, 1)
+		createRoleUnit(iPlayer, city, iWork, 1)
 
 
 ### COMBAT RESULT ###

@@ -7654,7 +7654,7 @@
 			<Strategy>TXT_KEY_BUILDING_MUSEUM_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MUSEUM</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_MUSEUM</MovieDefineTag>
+			<MovieDefineTag/>
 			<PrereqTech>TECH_HERITAGE</PrereqTech>
 			<bNukeImmune>1</bNukeImmune>
 			<iCost>-1</iCost>

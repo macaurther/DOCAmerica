@@ -1035,14 +1035,6 @@
 		<Spanish>La misi&#243;n Avaricia ha fracasado.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_FAIL_GUNS_BUTTER</Tag>
-		<English>You have failed the quest of "Guns not Butter!"</English>
-		<French>Vous avez &#233;chou&#233; dans la qu&#234;te Pas de beurre mais des canons.</French>
-		<German>Die Quest "Feuer statt Butter" ist gescheitert!</German>
-		<Italian>Hai fallito nell'impresa Fucili, non banane!</Italian>
-		<Spanish>&#161;La misi&#243;n Armas de fuego, no mantequilla ha fracasado!</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_HARBORMASTER</Tag>
 		<English>You have failed the quest of the Harbormaster</English>
 		<French>Vous avez &#233;chou&#233; dans la qu&#234;te du Capitaine de port</French>
@@ -1489,54 +1481,6 @@
 		<German>[PARAGRAPH:1]Um diese Quest abzuschlie&#223;en, m&#252;ssen Sie nach %s1_civ vordringen und die Kontrolle &#252;ber die Ressource %s2_resource erlangen.[PARAGRAPH:1]Sie scheitern, wenn eine gegnerische Zivilisation die Zielstadt zuerst einnimmt, die Stadt zerst&#246;rt wird oder wenn das Ziel %d3 Runden lang nicht erreicht wird.</German>
 		<Italian>[PARAGRAPH:1]Per completare l'impresa devi invadere %s1_civ e prendere il controllo della risorsa %s2_resource.[PARAGRAPH:1]Fallirai nell'impresa se una civilt&#224; rivale la cattura per prima, se viene distrutta o se passano %d3 turni senza che tu raggiunga l'obiettivo.</Italian>
 		<Spanish>[PARAGRAPH:1]Para completar esta misi&#243;n, es necesario invadir el %s1_civ y hacerse con el control [NUM2:del:de la:de los:de las] %s2_resource.[PARAGRAPH:1]Esta misi&#243;n fracasar&#225; si una civilizaci&#243;n rival se apodera antes de la ciudad objetivo, si la ciudad es destruida o si pasan %d3 turno(s) sin que se alcance el objetivo.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_GUNS_BUTTER_1</Tag>
-		<English>Guns Not Butter[PARAGRAPH:1]You are tasked by your military leaders to train a sizable force of arquebus units.</English>
-		<French>Pas de beurre, mais des canons[PARAGRAPH:1]Vos dirigeants militaires vous chargent de former un nombre important d'unit&#233;s d'arquebusiers.</French>
-		<German>Guns Not Butter[PARAGRAPH:1]You are tasked by your military leaders to train a sizable force of arquebus units.</German>
-		<Italian>Guns Not Butter[PARAGRAPH:1]You are tasked by your military leaders to train a sizable force of arquebus units.</Italian>
-		<Spanish>Guns Not Butter[PARAGRAPH:1]You are tasked by your military leaders to train a sizable force of arquebus units.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_GUNS_BUTTER_DONE_1</Tag>
-		<English>With such a large force of arquebusiers working together, additional training for these units can be achieved.</English>
-		<French>Avec un tel nombre d'arquebusiers op&#233;rant ensemble, un entra&#238;nement suppl&#233;mentaire pour ces unit&#233;s peut &#234;tre effectu&#233;.</French>
-		<German>With such a large force of arquebusiers working together, additional training for these units can be achieved.</German>
-		<Italian>With such a large force of arquebusiers working together, additional training for these units can be achieved.</Italian>
-		<Spanish>With such a large force of arquebusiers working together, additional training for these units can be achieved.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_GUNS_BUTTER_DONE_2</Tag>
-		<English>Leverage our military advantage to collect harsh taxes from our feudal lords and their counties.</English>
-		<French>Utiliser notre avantage militaire pour collecter des imp&#244;ts &#233;lev&#233;s aupr&#232;s de nos seigneurs f&#233;odaux et de leurs provinces.</French>
-		<German>Setzt unseren milit&#228;rischen Vorteil geschickt ein, um von unseren Feudalherren und ihren L&#228;ndereien erbarmungslos hohe Steuern einzutreiben.</German>
-		<Italian>Sfrutta il nostro vantaggio militare per esigere pesanti tasse dai nostri signori feudali e dalle loro contee.</Italian>
-		<Spanish>Que nuestra ventaja militar se utilice para recaudar impuestos onerosos de nuestros se&#241;ores feudales y sus condados.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_GUNS_BUTTER_DONE_3</Tag>
-		<English>Enjoy our Golden Age of Gunpowder.</English>
-		<French>Profitons de notre &#194;ge d'or de la poudre &#224; canon.</French>
-		<German>Enjoy our Golden Age of Gunpowder.</German>
-		<Italian>Enjoy our Golden Age of Gunpowder.</Italian>
-		<Spanish>Enjoy our Golden Age of Gunpowder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_GUNS_BUTTER_HELP_1</Tag>
-		<English>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT] Arquebusier[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Vassalage[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Replaceable Parts[COLOR_REVERT] without having met the conditions.</English>
-		<French>[PARAGRAPH:1]Pour achever cette qu&#234;te, vous devez former %d1 unit&#233;s d'[COLOR_UNIT_TEXT]arquebusiers[COLOR_REVERT].[PARAGRAPH:1]Une option de r&#233;compense suppl&#233;mentaire sera disponible si votre civilisation utilise la [COLOR_HIGHLIGHT_TEXT]vassalit&#233;[COLOR_REVERT].[PARAGRAPH:1]Une option de r&#233;compense suppl&#233;mentaire sera disponible si votre civilisation contr&#244;le le b&#226;timent [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]Vous &#233;chouerez si une civilisation rivale ach&#232;ve cette qu&#234;te avant vous ou si vous d&#233;couvrez les [COLOR_TECH_TEXT]pi&#232;ces de rechange[COLOR_REVERT] sans avoir rempli les conditions de victoire.</French>
-		<German>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT] Arquebusier[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Vassalage[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Replaceable Parts[COLOR_REVERT] without having met the conditions.</German>
-		<Italian>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT] Arquebusier[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Vassalage[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Replaceable Parts[COLOR_REVERT] without having met the conditions.</Italian>
-		<Spanish>[PARAGRAPH:1]To complete this quest, you must train %d1 [COLOR_UNIT_TEXT] Arquebusier[COLOR_REVERT] units.[PARAGRAPH:1]An additional reward option will be available if your civilization is operating in the [COLOR_HIGHLIGHT_TEXT]Vassalage[COLOR_REVERT] civic.[PARAGRAPH:1]An additional reward option will be available if your civilization controls [COLOR_BUILDING_TEXT]%s2_building[COLOR_REVERT].[PARAGRAPH:1]You will fail this quest if a rival civilization completes it first, or if you discover [COLOR_TECH_TEXT]Replaceable Parts[COLOR_REVERT] without having met the conditions.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_HALBERD_1</Tag>
-		<English>Issue the new weapons to all of our heavy spearmen.</English>
-		<French>Donner les nouvelles armes &#224; tous nos hallebardiers.</French>
-		<German>Issue the new weapons to all of our heavy spearmen.</German>
-		<Italian>Issue the new weapons to all of our heavy spearmen.</Italian>
-		<Spanish>Issue the new weapons to all of our heavy spearmen.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HAMBURGER_JOINT_1</Tag>
@@ -3795,30 +3739,6 @@
 		<Spanish>&#161;Felicidades! &#161;Tu avaricia no tiene par! &#161;Has logrado hacerte con el control [NUM9:del codiciado:de la codiciada:de los codiciados:de las codiciadas] [COLOR_HIGHLIGHT_TEXT]%s9_resource[COLOR_REVERT]! Vuestros generales ya est&#225;n ampliando sus planes militares.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_GUNS_BUTTER_1</Tag>
-		<English>Our generals request that we focus on making guns. These are the weapons of the future![PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT] units, we should be able to command any battlefield.</English>
-		<French>Nos g&#233;n&#233;raux demandent que nous fabriquions plus de fusils. Ce sont les armes du futur ![PARAGRAPH:1]Si nous formons assez d'unit&#233;s d'[COLOR_UNIT_TEXT]arquebusiers[COLOR_REVERT], nous pourrons dominer n'importe quel champ de bataille.</French>
-		<German>Our generals request that we focus on making guns. These are the weapons of the future![PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT] units, we should be able to command any battlefield.</German>
-		<Italian>Our generals request that we focus on making guns. These are the weapons of the future![PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT] units, we should be able to command any battlefield.</Italian>
-		<Spanish>Our generals request that we focus on making guns. These are the weapons of the future![PARAGRAPH:1]If we train enough [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT] units, we should be able to command any battlefield.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_GUNS_BUTTER_DONE_1</Tag>
-		<English>Congratulations! You have trained a large enough force of arquebus units. Please choose your reward.</English>
-		<French>F&#233;licitations ! Vous avez form&#233; suffisamment d'arquebusiers. Veuillez choisir votre r&#233;compense.</French>
-		<German>Congratulations! You have trained a large enough force of arquebus units. Please choose your reward.</German>
-		<Italian>Congratulations! You have trained a large enough force of arquebus units. Please choose your reward.</Italian>
-		<Spanish>Congratulations! You have trained a large enough force of arquebus units. Please choose your reward.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_HALBERD_1</Tag>
-		<English>Our weapon masters have devised a halberd design that remains fully effective versus mounted units but will boost effectiveness versus foot soldiers.</English>
-		<French>Nos ma&#238;tres armuriers ont invent&#233; un mod&#232;le de hallebarde qui reste pleinement efficace contre les unit&#233;s mont&#233;es et qui augmente l'efficacit&#233; contre les soldats &#224; pied.</French>
-		<German>Unsere Waffenmeister haben eine Hellebarde entwickelt, die bei gleicher Effektivit&#228;t gegen&#252;ber berittenen Einheiten viel st&#228;rker gegen Fu&#223;soldaten ist.</German>
-		<Italian>I nostri armaioli hanno creato un progetto di alabarda che rimane totalmente efficace contro le unit&#224; montate, ma raggiunge il massimo dell'efficacia contro la fanteria.</Italian>
-		<Spanish>Nuestros expertos en armas han dise&#241;ado un tipo de alabarda que conserva toda su eficacia contra unidades montadas y que aumenta su efectividad frente a los soldados de infanter&#237;a.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HAMBURGER_JOINT_1</Tag>
 		<English>A new type of rapid-service restaurant selling primarily hamburgers was launched recently. Thanks to successful radio advertising, the chain is now expanding across the nation.</English>
 		<French>Un nouveau type de restauration rapide vendant principalement des hamburgers a &#233;t&#233; lanc&#233; r&#233;cemment. Gr&#226;ce &#224; une bonne publicit&#233; radiophonique, la cha&#238;ne s'&#233;tend dans tout le pays.</French>
@@ -5609,14 +5529,6 @@
 		<German>Die habgierige %s1:3_civ_adjective Armee hat auf Suche nach strategischen Ressourcen das %s4:3_civ_adjective Reich angegriffen und die Kontrolle &#252;ber Ressourcen &#252;bernommen, die innerhalb der eigenen Grenzen nicht vorhanden sind.</German>
 		<Italian>L'esercito %s1:1_civ_adjective, in un avido tentativo di recuperare risorse strategiche, ha attaccato i %s4:2_civ_adjective e preso il controllo di risorse che mancano all'interno dei loro confini.</Italian>
 		<Spanish>El ej&#233;rcito %s1:1_civ_adjective, en una codiciosa maniobra para hacerse con recursos estrat&#233;gicos, ha atacado a los %s4:3_civ_adjective y se ha apoderado de los recursos que no pose&#237;a dentro de sus propias fronteras.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_GUNS_BUTTER_DONE</Tag>
-		<English>The %s1_civ_adjective people have trained the largest force of arquebus units. Advisors across the known world are panicking at the thought of their nation being ground under the thundering clatter and deadly terror of an endless hail of bullets.</English>
-		<French>Le peuple %s1_civ_adjective a form&#233; le plus grand nombre d'unit&#233;s d'arquebusiers. Les conseillers de tout le monde connu paniquent &#224; la pens&#233;e de leur nation mise &#224; terre par le fracas assourdissant et la terreur mortelle d'une gr&#234;le de balles sans fin.</French>
-		<German>The %s1_civ_adjective people have trained the largest force of arquebus units. Advisors across the known world are panicking at the thought of their nation being ground under the thundering clatter and deadly terror of an endless hail of bullets.</German>
-		<Italian>The %s1_civ_adjective people have trained the largest force of arquebus units. Advisors across the known world are panicking at the thought of their nation being ground under the thundering clatter and deadly terror of an endless hail of bullets.</Italian>
-		<Spanish>The %s1_civ_adjective people have trained the largest force of arquebus units. Advisors across the known world are panicking at the thought of their nation being ground under the thundering clatter and deadly terror of an endless hail of bullets.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HALBERD_1</Tag>
