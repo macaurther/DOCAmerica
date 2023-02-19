@@ -29,9 +29,9 @@
 			<Rating>
 				<Trade>4</Trade>
 				<Production>5</Production>
-				<Culture>1</Culture>
+				<Culture>2</Culture>
 				<Growth>5</Growth>
-				<Start>1</Start>
+				<Start>3</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -157,7 +157,7 @@
 			</LoadingTimes>
 			<Rating>
 				<Trade>3</Trade>
-				<Production>2</Production>
+				<Production>3</Production>
 				<Culture>4</Culture>
 				<Growth>4</Growth>
 				<Start>2</Start>
@@ -250,8 +250,8 @@
 			<Region>MES</Region>
 			<StartingYear>1250</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>10</LoadingTime>
-				<LoadingTime>6</LoadingTime>
+				<LoadingTime>15</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
@@ -477,7 +477,7 @@
 				<Production>3</Production>
 				<Culture>3</Culture>
 				<Growth>4</Growth>
-				<Start>4</Start>
+				<Start>3</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -587,7 +587,7 @@
 				<Trade>4</Trade>
 				<Production>2</Production>
 				<Culture>2</Culture>
-				<Growth>4</Growth>
+				<Growth>3</Growth>
 				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
@@ -767,7 +767,7 @@
 				<Production>4</Production>
 				<Culture>3</Culture>
 				<Growth>4</Growth>
-				<Start>3</Start>
+				<Start>2</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -848,14 +848,14 @@
 			<Region>EUR</Region>
 			<StartingYear>1607</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>6</LoadingTime>
-				<LoadingTime>2</LoadingTime>
+				<LoadingTime>25</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
 				<Production>3</Production>
-				<Culture>3</Culture>
+				<Culture>2</Culture>
 				<Growth>4</Growth>
 				<Start>3</Start>
 			</Rating>
@@ -963,37 +963,135 @@
 			<Region>EUR</Region>
 			<StartingYear>1608</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>6</LoadingTime>
-				<LoadingTime>1</LoadingTime>
+				<LoadingTime>25</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>3</Trade>
-				<Production>3</Production>
-				<Culture>4</Culture>
+				<Production>2</Production>
+				<Culture>3</Culture>
 				<Growth>4</Growth>
-				<Start>2</Start>
+				<Start>3</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Chartres</City>
-				<City>Grenoble</City>
-				<City>Dijon</City>
-				<City>Carcassonne</City>
-				<City>Toulon</City>
-				<City>Caen</City>
-				<City>Arles</City>
-				<City>Le Havre</City>
-				<City>Montpellier</City>
-				<City>Le Mans</City>
-				<City>Nancy</City>
-				<City>Lille</City>
-				<City>Lourdes</City>
-				<City>Cannes</City>
-				<City>La Rochelle</City>
-				<City>Bourges</City>
-				<City>Saint &#201;tienne</City>
+				<City>Petit-Go&#226;ve</City>
+                <City>Ville d'Etroit</City>
+                <City>Fort Caroline</City>
+                <City>Fort de Rocher</City>
+                <City>Fort-Royal</City>
+                <City>Fort Richelieu</City>
+                <City>Charlesbourg</City>
+                <City>Sault-Sainte-Marie</City>
+                <City>Saint Ignace</City>
+                <City>Fort Cr&#232;vecoeur</City>
+                <City>Pesaquid</City>
+                <City>Fort Saint Joseph</City>
+                <City>La Mobile</City>
+                <City>Louisbourg</City>
+                <City>Port-la-Joye</City>
+                <City>Fort des Miamis</City>
+                <City>Basse-Terre</City>
+                <City>Sainte Genevi&#232;ve</City>
+                <City>Fort Maurepas</City>
+                <City>Castries</City>
+                <City>Fort Conti</City>
+                <City>Cap-Fran&#231;ais</City>
+                <City>Martinique</City>
+                <City>Fort Coligny</City>
+                <City>Plaisance</City>
+                <City>Fort Presque Isle</City>
+                <City>Fort Balize</City>
+                <City>Chambly</City>
+                <City>Fort Rosalie</City>
+                <City>Fort Toulouse</City>
+                <City>Saint Philippe</City>
+                <City>Prairie du Rocher</City>
+                <City>Acadie</City>
+                <City>Fort Rouill&#233;</City>
+                <City>Kaskaskia</City>
+                <City>Lafayette</City>
+                <City>Bonaire</City>
+                <City>Fort Rouge</City>
+                <City>Saint Alexis</City>
+                <City>Fort Orl&#233;ans</City>
+                <City>Saint Croix</City>
+                <City>Saint Vincent</City>
+                <City>Saint Thomas</City>
+                <City>Montserrat</City>
+                <City>Miquelon</City>
+                <City>Fort Libert&#233;</City>
+                <City>Car&#233;nage</City>
+                <City>Vieux Fort</City>
+                <City>Fort D&#233;troit</City>
+                <City>Port-de-Paix</City>
+                <City>Cap-Ha&#239;tien</City>
+                <City>Fort Saint-Michel</City>
+                <City>Marigot</City>
+                <City>Fort Prud'homme</City>
+                <City>Saint Marc</City>
+                <City>Rimouski</City>
+                <City>Pointe-Sainte-Anne</City>
+                <City>Fort Pontchartain</City>
+                <City>Vincennes</City>
+                <City>Pointe-à-Pitre</City>
+                <City>Fort Bourbon</City>
+                <City>Florissant</City>
+                <City>Beauport</City>
+                <City>Fort Saint-Pierre</City>
+                <City>Sillery</City>
+                <City>Fort Brest</City>
+                <City>Fort Michillamakinac</City>
+                <City>Sainte Foy</City>
+                <City>Sorel</City>
+                <City>Fort Beauharnois</City>
+                <City>Ch&#226;teau-Richer</City>
+                <City>La Prairie</City>
+                <City>Fort La Reine</City>
+                <City>Fort des Moines</City>
+                <City>Saint Ours</City>
+                <City>Fort Sandouski</City>
+                <City>Cap de la Madeleine</City>
+                <City>Fort de Chartres</City>
+                <City>Sainte Anne de Beaupr&#233;</City>
+                <City>Cap-Saint-Ignace</City>
+                <City>Fort La Baye</City>
+                <City>Longueuil</City>
+                <City>Fort Saint-Charles</City>
+                <City>L'Ange-Gardien</City>
+                <City>Boucherville</City>
+                <City>Fort Kaministiquia</City>
+                <City>Saint Nicolas</City>
+                <City>Fort Roquelai</City>
+                <City>Neuville</City>
+                <City>Repentigny</City>
+                <City>Varennes</City>
+                <City>Fort-de-France</City>
+                <City>Verch&#232;res</City>
+                <City>L'Ancienne-Lorette</City>
+                <City>Pointe-aux-Trembles</City>
+                <City>Fort l'Aguille</City>
+                <City>Fort Saint-Antoine</City>
+                <City>Lachine</City>
+                <City>Lavaltrie</City>
+                <City>Fort Fran&#231;ois Xavier</City>
+                <City>Contrecoeur</City>
+                <City>Loretteville</City>
+                <City>La Pocati&#232;re</City>
+                <City>Montmagny</City>
+                <City>L&#233;vis</City>
+                <City>L'Islet</City>
+                <City>Saint Augustin de Desmaures</City>
+                <City>Fort Saint-Joseph</City>
+                <City>Baie-Saint-Paul</City>
+                <City>Berthierville</City>
+                <City>Saint Fran&#231;ois</City>
+                <City>Fort Conde</City>
+                <City>Lachenaie</City>
+                <City>Rivi&#232;re-du-Loup</City>
+                <City>B&#233;cancour</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -1071,15 +1169,15 @@
 			<Region>LAT</Region>
 			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>20</LoadingTime>
+				<LoadingTime>50</LoadingTime>
+				<LoadingTime>30</LoadingTime>
 				<LoadingTime>10</LoadingTime>
-				<LoadingTime>5</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>1</Trade>
 				<Production>1</Production>
 				<Culture>3</Culture>
-				<Growth>3</Growth>
+				<Growth>2</Growth>
 				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
@@ -1171,57 +1269,39 @@
 			<Region>PAC</Region>
 			<StartingYear>1650</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>1</LoadingTime>
-				<LoadingTime>0</LoadingTime>
+				<LoadingTime>30</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>2</Trade>
+				<Trade>1</Trade>
 				<Production>1</Production>
 				<Culture>3</Culture>
 				<Growth>3</Growth>
-				<Start>2</Start>
+				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Havaiki</City>
-				<!-- Central Polynesia -->
-				<City>Samoa</City>
-				<City>Tonga</City>
-				<City>Rotuma</City>
-				<City>Uvea</City>				<!-- Wallis -->
-				<City>Futuna</City>
-				<!-- East Polynesia -->
-				<City>Rai'atea</City>
-				<!-- North Polynesia -->
-				<City>Oahu</City>
-				<!-- Aotearoa/New Zealand -->
-				<City>Okiato</City>
-				<City>Waitangi</City>
-				<City>Hokianga</City>
-				<City>Hauraki</City>			<!-- Auckland -->
-				<City>Tamaki</City>
-				<City>Manukau</City>
-				<City>Kawhia</City>
-				<City>Waikato</City>
-				<City>Tauranga</City>
-				<City>Rotorua</City>
-				<City>Whakatane</City>
-				<City>Urewera</City>
-				<City>Tairawhiti</City>			<!-- Gisborne -->
-				<City>Heretaunga</City>			<!-- Hawke's Bay -->
-				<City>Taupo</City>
-				<City>Taranaki</City>
-				<City>Whanganui</City>
-				<City>Manawatu</City>
-				<City>Otaki</City>
-				<City>Wairarapa</City>
-				<City>Wairau</City>
-				<City>Kaikoura</City>
-				<City>Hokitika</City>
-				<City>Waitaha</City>			<!-- Canterbury -->
-				<City>Otakou</City>				<!-- Otago -->
+				<City>Honokaa</City>
+				<City>Pahoa</City>
+				<City>Pahala</City>
+				<City>Kailua</City>
+				<City>Waimea</City>
+				<City>Hawi</City>
+				<City>Hana</City>
+				<City>Lanai City</City>
+				<City>Kaunakakai</City>
+				<City>Kalaupapa</City>
+				<City>Maunaloa</City>
+				<City>Kailua</City>
+				<City>Kaneohe</City>
+				<City>Laie</City>
+				<City>Haleiwa</City>
+				<City>Waialua</City>
+				<City>Wahiawa</City>
+				<City>Puuwai</City>
+				<City>Hanalei</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -1291,16 +1371,16 @@
 			<Region>AND</Region>
 			<StartingYear>1100</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>10</LoadingTime>
-				<LoadingTime>4</LoadingTime>
+				<LoadingTime>20</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>4</Trade>
-				<Production>2</Production>
+				<Production>3</Production>
 				<Culture>2</Culture>
-				<Growth>4</Growth>
-				<Start>1</Start>
+				<Growth>3</Growth>
+				<Start>3</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -1394,7 +1474,7 @@
 			<Region>ARC</Region>
 			<StartingYear>1050</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>10</LoadingTime>
+				<LoadingTime>15</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
@@ -1501,16 +1581,16 @@
 			<Region>WOO</Region>
 			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>0</LoadingTime>
+				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>0</Trade>
-				<Production>0</Production>
-				<Culture>0</Culture>
-				<Growth>0</Growth>
-				<Start>0</Start>
+				<Trade>1</Trade>
+				<Production>3</Production>
+				<Culture>1</Culture>
+				<Growth>3</Growth>
+				<Start>2</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -1649,11 +1729,11 @@
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>3</Trade>
-				<Production>3</Production>
+				<Trade>2</Trade>
+				<Production>2</Production>
 				<Culture>3</Culture>
 				<Growth>3</Growth>
-				<Start>1</Start>
+				<Start>4</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -1761,7 +1841,7 @@
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
 				<LoadingTime>35</LoadingTime>
-				<LoadingTime>8</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>2</Trade>
@@ -1858,7 +1938,7 @@
 			<Region>WOO</Region>
 			<StartingYear>600</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>5</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
@@ -1920,7 +2000,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
-					<BuildingType>BUILDING_MISSISSIPPI_EFFIGY_MOUND</BuildingType>
+					<BuildingType>BUILDING_MISSISSIPPI_PLATFORM_MOUND</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -1986,7 +2066,7 @@
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>4</Trade>
+				<Trade>2</Trade>
 				<Production>2</Production>
 				<Culture>2</Culture>
 				<Growth>4</Growth>
@@ -2070,8 +2150,8 @@
 			<Region>EUR</Region>
 			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>25</LoadingTime>
-				<LoadingTime>12</LoadingTime>
+				<LoadingTime>50</LoadingTime>
+				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
@@ -2079,7 +2159,7 @@
 				<Production>2</Production>
 				<Culture>2</Culture>
 				<Growth>5</Growth>
-				<Start>1</Start>
+				<Start>2</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -2220,16 +2300,16 @@
 			<Region>EUR</Region>
 			<StartingYear>874</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>10</LoadingTime>
+				<LoadingTime>15</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>2</Trade>
-				<Production>3</Production>
-				<Culture>2</Culture>
-				<Growth>3</Growth>
-				<Start>4</Start>
+				<Production>2</Production>
+				<Culture>1</Culture>
+				<Growth>2</Growth>
+				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -2457,8 +2537,8 @@
 			<Region>EUR</Region>
 			<StartingYear>1532</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>8</LoadingTime>
-				<LoadingTime>4</LoadingTime>
+				<LoadingTime>30</LoadingTime>
+				<LoadingTime>5</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
@@ -2466,7 +2546,7 @@
 				<Production>2</Production>
 				<Culture>2</Culture>
 				<Growth>5</Growth>
-				<Start>1</Start>
+				<Start>3</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -2576,14 +2656,14 @@
 			<Region>SOU</Region>
 			<StartingYear>750</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>5</LoadingTime>
+				<LoadingTime>10</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>2</Trade>
+				<Trade>1</Trade>
 				<Production>2</Production>
-				<Culture>4</Culture>
+				<Culture>3</Culture>
 				<Growth>1</Growth>
 				<Start>1</Start>
 			</Rating>
@@ -2664,16 +2744,16 @@
 			<Region>EUR</Region>
 			<StartingYear>1743</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>6</LoadingTime>
-				<LoadingTime>2</LoadingTime>
+				<LoadingTime>40</LoadingTime>
+				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>1</Trade>
-				<Production>4</Production>
+				<Production>3</Production>
 				<Culture>2</Culture>
-				<Growth>4</Growth>
-				<Start>5</Start>
+				<Growth>2</Growth>
+				<Start>1</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -2802,8 +2882,8 @@
 			<Region>EUR</Region>
 			<StartingYear>1496</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>6</LoadingTime>
-				<LoadingTime>1</LoadingTime>
+				<LoadingTime>30</LoadingTime>
+				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
@@ -2811,7 +2891,7 @@
 				<Production>3</Production>
 				<Culture>3</Culture>
 				<Growth>4</Growth>
-				<Start>3</Start>
+				<Start>5</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -2912,7 +2992,7 @@
 				<Production>3</Production>
 				<Culture>3</Culture>
 				<Growth>4</Growth>
-				<Start>1</Start>
+				<Start>3</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -3024,11 +3104,11 @@
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
-				<Trade>4</Trade>
-				<Production>2</Production>
+				<Trade>3</Trade>
+				<Production>3</Production>
 				<Culture>2</Culture>
-				<Growth>4</Growth>
-				<Start>1</Start>
+				<Growth>3</Growth>
+				<Start>2</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -3116,7 +3196,7 @@
 				<Production>2</Production>
 				<Culture>2</Culture>
 				<Growth>3</Growth>
-				<Start>3</Start>
+				<Start>2</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
@@ -3203,7 +3283,7 @@
 				<Production>2</Production>
 				<Culture>2</Culture>
 				<Growth>4</Growth>
-				<Start>1</Start>
+				<Start>2</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>

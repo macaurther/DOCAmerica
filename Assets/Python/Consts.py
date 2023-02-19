@@ -205,7 +205,7 @@ iInca : 1100,
 iAztecs : 1250,
 iIroquois : 1450,
 iSpain : 1496,
-iPortugal : 1532,
+iPortugal : 275,#1532,
 iEngland : 1607,
 iFrance : 1608,
 iNetherlands : 1625,
@@ -515,7 +515,7 @@ iNumBuildings = 235
 #				2				3				4				5				6				7				8				9				10
 (iPalace, 		iGranary,		iChinampa,		iColcas,		iIgloo,			iBath,			iTemazcal,		iMarket,		iWeaver,		iStoneworks,	
 iGoldsmith,		iArena,			iBallCourt,		iBarracks,		iKallanka,		iWalls,			iKancha,		iTambo,			iHerbalist,		iAltar,	
-iTzompantli,	iCommon,		iEffigyMound,	iKalasasay,		iKiva,			iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iLuau,			
+iTzompantli,	iCommon,		iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iLuau,			
 iStocks,		iHeadright,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	
 iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		
 iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
@@ -634,7 +634,7 @@ lMarsBaseComponents = [iMarsFraming, iMarsPowerSource, iMarsExtractor, iMarsHabi
 #Eras
 
 iNumEras = 7
-(iPreColumbian, iExploration, iColonial, iRevolutionary, iIndustrial, iModern, iAtomic) = range (iNumEras)
+(iPreColumbianEra, iExplorationEra, iColonialEra, iRevolutionaryEra, iIndustrialEra, iModernEra, iAtomicEra) = range (iNumEras)
 
 # Culture
 

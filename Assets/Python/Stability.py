@@ -407,7 +407,7 @@ def calculateAdministration(city):
 	bSingleCoreCity = cities.core(iPlayer).owner(iPlayer).count() == 1
 
 	iAdministration = iAdministrationModifier * iPopulation / 100
-	if bSingleCoreCity and iCurrentEra > iPreColumbian: 
+	if bSingleCoreCity and iCurrentEra > iPreColumbianEra: 
 		iAdministration *= 2
 	
 	return iAdministration
@@ -614,7 +614,7 @@ def calculateStability(iPlayer):
 	elif iCiv == iSpain:
 		iMotherlandStability = 25
 		
-	if iCurrentEra >= iRevolutionary:
+	if iCurrentEra >= iRevolutionaryEra:
 		iMotherlandStability -= 10
 	
 	if iMotherlandStability < 0:
@@ -671,31 +671,31 @@ def calculateStability(iPlayer):
 	# Civics (eras and techs and religions)
 	# note: make sure to reflect this in CvPlayerAI::isUnstableCivic
 	if iIsolationism in civics:
-		if iCurrentEra >= iIndustrial: iCivicEraTechStability -= (iCurrentEra - iRevolutionary) * 3
+		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= (iCurrentEra - iRevolutionaryEra) * 3
 	
 	if iSlavery in civics:
-		if iCurrentEra >= iModern: iCivicEraTechStability -= 5
+		if iCurrentEra >= iModernEra: iCivicEraTechStability -= 5
 	
 	if iCasteSystem in civics:
-		if iCurrentEra >= iModern: iCivicEraTechStability -= 5
+		if iCurrentEra >= iModernEra: iCivicEraTechStability -= 5
 	
 	if iColony in civics:
-		if iCurrentEra >= iIndustrial: iCivicEraTechStability -= 3
+		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 3
 	
 	if iIndenturedServitude in civics:
-		if iCurrentEra >= iIndustrial: iCivicEraTechStability -= 2
+		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 2
 	
 	if iMercantilism in civics:
-		if iCurrentEra >= iIndustrial: iCivicEraTechStability -= 3
+		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 3
 	
 	if iAnimism in civics:
-		if iCurrentEra >= iRevolutionary: iCivicEraTechStability -= 4
+		if iCurrentEra >= iRevolutionaryEra: iCivicEraTechStability -= 4
 	
 	if iChiefdom in civics:
-		if iCurrentEra >= iRevolutionary: iCivicEraTechStability -= 5
+		if iCurrentEra >= iRevolutionaryEra: iCivicEraTechStability -= 5
 	
 	if iTraditionalism in civics:
-		if iCurrentEra >= iRevolutionary: iCivicEraTechStability -= 5
+		if iCurrentEra >= iRevolutionaryEra: iCivicEraTechStability -= 5
 	
 	if tPlayer.isHasTech(iCivilRights):
 		if iSlavery in civics or iCasteSystem in civics: iCivicEraTechStability -= 5

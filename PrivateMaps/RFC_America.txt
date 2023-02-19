@@ -30,13 +30,16 @@ EndMap
 ### Plot Info ###
 BeginPlot
 	x=0,y=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=0,y=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=0,y=2
@@ -572,11 +575,13 @@ BeginPlot
 	x=1,y=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=1,y=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=1,y=2
@@ -15001,6 +15006,7 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=26,y=61
@@ -15008,6 +15014,7 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=26,y=62
@@ -15017,6 +15024,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=26,y=63
@@ -15610,6 +15618,7 @@ BeginPlot
 	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=27,y=61
@@ -15617,12 +15626,14 @@ BeginPlot
 	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=27,y=62
 	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=27,y=63
@@ -16191,6 +16202,7 @@ BeginPlot
 	x=28,y=59
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=28,y=60
@@ -16224,11 +16236,13 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=28,y=65
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=28,y=66
@@ -16771,6 +16785,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=29,y=60
@@ -16789,8 +16804,10 @@ BeginPlot
 	x=29,y=62
 	RiverNSDirection=2
 	isWOfRiver
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=29,y=63
@@ -16808,11 +16825,13 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=29,y=65
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=29,y=66
@@ -17371,6 +17390,7 @@ BeginPlot
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=30,y=60
@@ -17408,12 +17428,14 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=30,y=65
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=30,y=66
@@ -17422,6 +17444,7 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=30,y=67
@@ -17971,12 +17994,14 @@ BeginPlot
 	x=31,y=59
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=31,y=60
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=31,y=61
@@ -18005,12 +18030,14 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=31,y=65
 	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=31,y=66
@@ -18018,6 +18045,7 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=31,y=67
@@ -18574,21 +18602,25 @@ BeginPlot
 	x=32,y=61
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=32,y=62
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=32,y=63
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=32,y=64
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=32,y=65
@@ -19119,11 +19151,13 @@ BeginPlot
 	x=33,y=55
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=33,y=56
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=33,y=57
@@ -19135,6 +19169,7 @@ BeginPlot
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=33,y=59
@@ -19142,17 +19177,20 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=33,y=60
 	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=33,y=61
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=33,y=62
@@ -19714,22 +19752,26 @@ BeginPlot
 	x=34,y=55
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=34,y=56
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=34,y=57
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=34,y=58
 	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=34,y=59
@@ -19737,17 +19779,20 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=34,y=60
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=34,y=61
 	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=34,y=62
@@ -20295,11 +20340,13 @@ BeginPlot
 	x=35,y=55
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=35,y=56
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=35,y=57
@@ -20332,6 +20379,7 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=35,y=61
@@ -20870,11 +20918,13 @@ BeginPlot
 	x=36,y=55
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=36,y=56
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=36,y=57
@@ -20885,9 +20935,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=58
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=36,y=59
@@ -20903,6 +20954,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=36,y=61
@@ -21467,6 +21519,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=37,y=57
@@ -21494,6 +21547,7 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=37,y=61
@@ -22054,21 +22108,25 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=38,y=58
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=38,y=59
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=38,y=60
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=38,y=61
@@ -22076,6 +22134,7 @@ BeginPlot
 	FeatureType=FEATURE_SAVANNA, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=38,y=62
@@ -22632,27 +22691,32 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=39,y=58
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=39,y=59
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=39,y=60
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=39,y=61
 	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
+	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=39,y=62
@@ -30262,6 +30326,7 @@ BeginPlot
 	x=52,y=33
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
+	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=52,y=34
@@ -36379,8 +36444,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=18
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=62,y=19
@@ -36981,13 +37046,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=18
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=63,y=19
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=63,y=20
@@ -37564,7 +37629,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=17
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -37574,13 +37639,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=19
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=64,y=20
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=64,y=21
@@ -38153,7 +38218,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=18
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot

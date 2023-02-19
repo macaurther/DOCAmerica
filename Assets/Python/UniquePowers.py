@@ -24,7 +24,7 @@ def colombianPower(iOwner, iPlayer, city, bConquest):
 # Mayan UP
 def mayanPower(iTech, iTeam, iPlayer):
 	iEra = player(iPlayer).getCurrentEra()
-	if civ(iPlayer) == iMaya and iEra < iColonial:
+	if civ(iPlayer) == iMaya and iEra < iColonialEra:
 		iNumCities = player(iPlayer).getNumCities()
 		if iNumCities > 0:
 			iFood = scale(20) / iNumCities

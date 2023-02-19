@@ -46,7 +46,7 @@ def completeCollapse(iPlayer):
 	downgradeCottages(iPlayer)
 	
 	# secede all cities, destroy close and less important ones
-	bRazeMinorCities = (player(iPlayer).getCurrentEra() <= iColonial)
+	bRazeMinorCities = (player(iPlayer).getCurrentEra() <= iColonialEra)
 	secedeCities(iPlayer, cities.owner(iPlayer), bRazeMinorCities)
 		
 	# take care of the remnants of the civ

@@ -131,7 +131,7 @@ dGoals = {
 			by=1000,
 		),
 		All(
-			BuildingCount(iEffigyMound, 5),
+			BuildingCount(iPlatformMound, 5),
 			Wonder(iSerpentMound),
 			by=1070,
 		),

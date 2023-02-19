@@ -93,5 +93,5 @@ def onTechAcquired(iTech, iTeam, iPlayer):
 	
 	if iCiv == iInca:
 		if player(iCiv).getPeriod() == -1:
-			if iEra == iRevolutionary:
+			if iEra == iRevolutionaryEra:
 				setPeriod(iInca, iPeriodLateInca)

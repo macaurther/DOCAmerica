@@ -550,7 +550,7 @@ def specificAdjective(iPlayer):
 
 			
 	if iCiv == iFrance:
-		if iEra == iColonial:
+		if iEra == iColonialEra:
 			return "TXT_KEY_CIV_FRANCE_FRANKISH"
 	
 	elif iCiv == iEngland:
@@ -631,10 +631,10 @@ def republicTitle(iPlayer):
 
 	if iCiv == iEngland:
 		iEra = pPlayer.getCurrentEra()
-		if isEmpire(iPlayer) and iEra == iIndustrial:
+		if isEmpire(iPlayer) and iEra == iIndustrialEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if iEra >= iAtomic:
+		if iEra >= iAtomicEra:
 			return "TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC"
 	
 			
@@ -687,21 +687,17 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if iReligion == iIslam:
 			return "TXT_KEY_SULTANATE_OF"
 			
-		if bEmpire and iEra > iColonial:
+		if bEmpire and iEra > iColonialEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iFrance:
-		if not capital in cities.normal(iFrance):
-			return "TXT_KEY_CIV_FRANCE_EXILE"
 			
-		if iEra >= iIndustrial and bEmpire:
+		if iEra >= iIndustrialEra and bEmpire:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iEngland:
-		if capital not in cities.core(iEngland):
-			return "TXT_KEY_CIV_ENGLAND_EXILE"
 			
-		if iEra == iColonial and player(iFrance).isAlive() and team(iFrance).isAVassal() and civ(master(iFrance)) == iEngland:
+		if iEra == iColonialEra and player(iFrance).isAlive() and team(iFrance).isAVassal() and civ(master(iFrance)) == iEngland:
 			return "TXT_KEY_CIV_ENGLAND_ANGEVIN_EMPIRE"
 			
 		if getColumn(iPlayer) >= 11:
@@ -714,12 +710,9 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	elif iCiv == iNetherlands:
 		if bCityStates:
 			return "TXT_KEY_CIV_NETHERLANDS_REPUBLIC"
-		
-		if capital not in cities.core(iNetherlands):
-			return "TXT_KEY_CIV_NETHERLANDS_EXILE"
 			
 		if bEmpire:
-			if iEra >= iIndustrial:
+			if iEra >= iIndustrialEra:
 				return "TXT_KEY_EMPIRE_ADJECTIVE"
 				
 			return "TXT_KEY_CIV_NETHERLANDS_UNITED_KINGDOM_OF"
@@ -728,10 +721,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if capital in cities.core(iBrazil) and not player(iBrazil).isAlive():
 			return "TXT_KEY_CIV_PORTUGAL_BRAZIL"
 			
-		if not capital in plots.rectangle(tIberia):
-			return "TXT_KEY_CIV_PORTUGAL_EXILE"
-			
-		if bEmpire and iEra >= iRevolutionary:
+		if bEmpire and iEra >= iRevolutionaryEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iInca:
@@ -807,14 +797,14 @@ def leader(iPlayer):
 		if any(data.dFirstContactConquerors.values()): return iPhilip
 		
 	elif iCiv == iFrance:
-		if iEra >= iModern: return iDeGaulle
+		if iEra >= iModernEra: return iDeGaulle
 		
-		if iEra >= iIndustrial: return iNapoleon
+		if iEra >= iIndustrialEra: return iNapoleon
 		
 	elif iCiv == iEngland:
-		if iEra >= iModern: return iChurchill
+		if iEra >= iModernEra: return iChurchill
 		
-		if iEra >= iIndustrial: return iVictoria
+		if iEra >= iIndustrialEra: return iVictoria
 		
 		if scenario() == i1770AD: return iVictoria
 		
@@ -822,7 +812,7 @@ def leader(iPlayer):
 		if year() >= year(1650): return iWilliam
 			
 	elif iCiv == iPortugal:
-		if iEra >= iIndustrial: return iMaria
+		if iEra >= iIndustrialEra: return iMaria
 		
 	elif iCiv == iInca:
 		if year() >= year(1490): return iPachacuti
@@ -832,7 +822,7 @@ def leader(iPlayer):
 		
 		if isFascist(iPlayer): return iSantaAnna
 		
-		if iEra >= iModern: return iCardenas
+		if iEra >= iModernEra: return iCardenas
 			
 	elif iCiv == iAmerica:
 		if year() >= year(2000): return iObama
@@ -850,23 +840,23 @@ def leader(iPlayer):
 		if year() >= year(1820): return iJackson
 		
 	elif iCiv == iArgentina:
-		if iEra >= iAtomic: return iPeron
+		if iEra >= iAtomicEra: return iPeron
 	
 	elif iCiv == iBrazil:
-		if iEra >= iAtomic: return iVargas
+		if iEra >= iAtomicEra: return iVargas
 		
 	elif iCiv == iCanada:
-		if iEra >= iAtomic: return iTrudeau
+		if iEra >= iAtomicEra: return iTrudeau
 	
 	elif iCiv == iNorse:
-		if iEra >= iModern: return iGerhardsen
+		if iEra >= iModernEra: return iGerhardsen
 		
-		if iEra >= iRevolutionary: return iGustav
+		if iEra >= iRevolutionaryEra: return iGustav
 	
 	elif iCiv == iRussia:
-		if iEra >= iModern: return iStalin
+		if iEra >= iModernEra: return iStalin
 		
-		if iEra >= iIndustrial: return iAlexanderI
+		if iEra >= iIndustrialEra: return iAlexanderI
 	
 	return startingLeader(iPlayer)
 		

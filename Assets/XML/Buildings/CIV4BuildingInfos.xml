@@ -930,12 +930,12 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_COMMON</BuildingClass>
-			<Type>BUILDING_MISSISSIPPI_EFFIGY_MOUND</Type>
-			<Description>TXT_KEY_BUILDING_MISSISSIPPI_EFFIGY_MOUND</Description>
-			<Civilopedia>TXT_KEY_BUILDING_MISSISSIPPI_EFFIGY_MOUND_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_MISSISSIPPI_EFFIGY_MOUND_STRATEGY</Strategy>
+			<Type>BUILDING_MISSISSIPPI_PLATFORM_MOUND</Type>
+			<Description>TXT_KEY_BUILDING_MISSISSIPPI_PLATFORM_MOUND</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MISSISSIPPI_PLATFORM_MOUND_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_MISSISSIPPI_PLATFORM_MOUND_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_MISSISSIPPI_EFFIGY_MOUND</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_MISSISSIPPI_PLATFORM_MOUND</ArtDefineTag>
 			<PrereqTech>TECH_LAW</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3230,7 +3230,7 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iDefense>10</iDefense>
+			<iUnignorableBombardDefense>10</iUnignorableBombardDefense>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<DomainFreeExperiences>
 				<DomainFreeExperience>
@@ -3999,7 +3999,7 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iDefense>10</iDefense>
+			<iUnignorableBombardDefense>10</iUnignorableBombardDefense>
 			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<DomainFreeExperiences>
@@ -8370,7 +8370,7 @@
 			<Strategy>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SUPREME_COURT</ArtDefineTag>
-			<PrereqTech>TECH_TELEGRAPH</PrereqTech>
+			<PrereqTech>TECH_BALANCE_OF_POWER</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_JAIL</FreeBuilding>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
@@ -9526,7 +9526,7 @@
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<iEnemyWarWearinessModifier>100</iEnemyWarWearinessModifier>
-			<iDefense>25</iDefense>
+			<iUnignorableBombardDefense>25</iUnignorableBombardDefense>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>

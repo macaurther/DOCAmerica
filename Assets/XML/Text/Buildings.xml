@@ -2246,7 +2246,7 @@
 		<Spanish>Kancha</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MISSISSIPPI_EFFIGY_MOUND</Tag>
+		<Tag>TXT_KEY_BUILDING_MISSISSIPPI_PLATFORM_MOUND</Tag>
 		<English>Effigy Mound</English>
 		<French>Effigy Mound</French>
 		<German>Effigy Mound</German>
@@ -3332,15 +3332,15 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_HELP</Tag>
 		<English>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
 		<French>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
 		<German>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
 		<Italian>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
 		<Spanish>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[NEWLINE][ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NASA</Tag>
