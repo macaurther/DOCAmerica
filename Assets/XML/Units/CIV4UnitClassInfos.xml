@@ -351,12 +351,12 @@
 			<DefaultUnit>UNIT_FIELD_GUN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_GATTLING_GUN</Type>
-			<Description>TXT_KEY_UNIT_GATTLING_GUN</Description>
+			<Type>UNITCLASS_GATLING_GUN</Type>
+			<Description>TXT_KEY_UNIT_GATLING_GUN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_GATTLING_GUN</DefaultUnit>
+			<DefaultUnit>UNIT_GATLING_GUN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_MACHINE_GUN</Type>

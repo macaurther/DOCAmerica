@@ -190,7 +190,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_DRAGOON</UnitClassType>
+					<UnitClassType>UNITCLASS_CARABINEER</UnitClassType>
 					<UnitType>UNIT_ARGENTINE_MOUNTED_GRENADIER</UnitType>
 				</Unit>
 				<Unit>
@@ -615,7 +615,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
+					<UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
 					<UnitType>UNIT_CHIMU_SUCHUC_CHIQUI</UnitType>
 				</Unit>
 			</Units>
@@ -703,10 +703,10 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_GRENADIER</UnitClassType>
-					<UnitType>UNIT_COLOMBIAN_VOLTIGEROS</UnitType>
+					<UnitType>UNIT_COLOMBIAN_ALBION_LEGION</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_HUSSAR</UnitClassType>
+					<UnitClassType>UNITCLASS_DRAGOON</UnitClassType>
 					<UnitType>UNIT_COLOMBIAN_LLANERO</UnitType>
 				</Unit>
 			</Units>
@@ -1882,7 +1882,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_CAVALRY</UnitClassType>
+					<UnitClassType>UNITCLASS_PISTOLIER</UnitClassType>
 					<UnitType>UNIT_MEXICAN_RURAL</UnitType>
 				</Unit>
 			</Units>

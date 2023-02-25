@@ -678,7 +678,7 @@ dStartingExperience = CivDict({
 dAlwaysTrain = CivDict({
 	iAztecs: [iJaguar],
 	iMexico: [iGrenadier],
-	iColombia: [iVoltigeros],
+	iColombia: [iAlbionLegion],
 	iBrazil: [iGrenadier],
 }, [])
 
@@ -705,7 +705,7 @@ def createSpecificUnits(iPlayer, tile):
 		makeUnit(iPlayer, iGreatMerchant, tile)
 		makeUnit(iPlayer, iGreatArtist, tile)
 	elif iCiv == iColombia:
-		makeUnits(iPlayer, iVoltigeros, tile, 5).experience(2)
+		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
 
 dSpecificAdditionalUnits = CivDict({
 }, {})

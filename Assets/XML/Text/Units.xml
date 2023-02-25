@@ -15,11 +15,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_MINUTEMAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for the the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], is cheaper and begins with the [COLOR_HIGHLIGHT_TEXT]March[COLOR_REVERT] promotion.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], is stronger and is likely to withdraw from combat.</English>
+		<French>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], is stronger and is likely to withdraw from combat.</French>
+		<German>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], is stronger and is likely to withdraw from combat.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], is stronger and is likely to withdraw from combat.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Minuteman[COLOR_REVERT], the American replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], is stronger and is likely to withdraw from combat.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARGENTINE_MOUNTED_GRENADIER</Tag>
@@ -31,27 +31,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARCHER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, have a defensive bonus in cities, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, have a defensive bonus in cities, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, have a defensive bonus in cities, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, have a defensive bonus in cities, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, have a defensive bonus in cities, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Archers[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARGENTINE_MOUNTED_GRENADIER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</English>
-		<French>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</French>
-		<German>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Grenadier Cavalry[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Mounted Grenadier[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Carabineer[COLOR_REVERT], has extra strength versus Gunpowder units.</English>
+		<French>The [COLOR_UNIT_TEXT]Mounted Grenadier[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Carabineer[COLOR_REVERT], has extra strength versus Gunpowder units.</French>
+		<German>The [COLOR_UNIT_TEXT]Mounted Grenadier[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Carabineer[COLOR_REVERT], has extra strength versus Gunpowder units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Mounted Grenadier[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Carabineer[COLOR_REVERT], has extra strength versus Gunpowder units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Mounted Grenadier[COLOR_REVERT], the Argentine replacement for the [COLOR_UNIT_TEXT]Carabineer[COLOR_REVERT], has extra strength versus Gunpowder units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARTILLERY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</English>
-		<French>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French>
-		<German>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</German>
-		<Italian>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</English>
+		<French>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</French>
+		<German>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</German>
+		<Italian>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
@@ -127,11 +127,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BOMBARD_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</English>
-		<French>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French>
-		<German>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</German>
-		<Italian>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</English>
+		<French>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</French>
+		<German>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</German>
+		<Italian>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Bombards[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BOMBER_STRATEGY</Tag>
@@ -215,19 +215,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAVALRY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, has a combat bonus against [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units and has a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Atillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units.</English>
-		<French>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, has a combat bonus against [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units and has a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Atillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units.</French>
-		<German>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, has a combat bonus against [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units and has a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Atillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units.</German>
-		<Italian>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, has a combat bonus against [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units and has a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Atillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, has a combat bonus against [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units and has a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Atillery[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</English>
+		<French>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</French>
+		<German>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</German>
+		<Italian>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CROSSBOWMAN_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANADIAN_CORVETTE_STRATEGY</Tag>
@@ -238,28 +238,28 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Corvette[COLOR_REVERT], the Canadian replacement for the [COLOR_UNIT_TEXT]Destroyer[COLOR_REVERT], is cheaper, has four less strength points, has two additional movement points, loses the ability to bombard cities and starts with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_COLOMBIAN_VOLTIGEROS</Tag>
-		<English>Voltigeros</English>
-		<French>Voltigeros</French>
-		<German>Voltigeros</German>
-		<Italian>Voltigeros</Italian>
-		<Spanish>Voltigeros</Spanish>
+		<Tag>TXT_KEY_UNIT_COLOMBIAN_ALBION_LEGION</Tag>
+		<English>Albion Legion</English>
+		<French>Albion Legion</French>
+		<German>Albion Legion</German>
+		<Italian>Albion Legion</Italian>
+		<Spanish>Albion Legion</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_COLOMBIAN_VOLTIGEROS_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Voltigeros[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has an additional movement point and is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Voltigeros[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has an additional movement point and is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Voltigeros[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has an additional movement point and is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Voltigeros[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has an additional movement point and is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Voltigeros[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], has an additional movement point and is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_UNIT_COLOMBIAN_ALBION_LEGION_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Albion Legion[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], is stronger and faster.</English>
+		<French>The [COLOR_UNIT_TEXT]Albion Legion[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], is stronger and faster.</French>
+		<German>The [COLOR_UNIT_TEXT]Albion Legion[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], is stronger and faster.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Albion Legion[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], is stronger and faster.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Albion Legion[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], is stronger and faster.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CUIRASSIER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities and can withdraw from combat.</English>
-		<French>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities and can withdraw from combat.</French>
-		<German>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities and can withdraw from combat.</German>
-		<Italian>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities and can withdraw from combat.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities and can withdraw from combat.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</English>
+		<French>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</French>
+		<German>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</German>
+		<Italian>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Cuirassiers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DESTROYER_STRATEGY</Tag>
@@ -279,11 +279,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EXPLORER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</English>
-		<French>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</French>
-		<German>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</German>
-		<Italian>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</English>
+		<French>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</French>
+		<German>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</German>
+		<Italian>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EXPLORER_HELP</Tag>
@@ -303,43 +303,43 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARRIER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry three [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry three [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry three [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry three [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry three [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry five [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry five [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry five [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry five [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Carriers[COLOR_REVERT] can carry five [COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT], [COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] or [COLOR_UNIT_TEXT]Jet Fighters[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANNON_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</English>
-		<French>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French>
-		<German>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</German>
-		<Italian>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Cannons[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</English>
+		<French>[COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</French>
+		<German>[COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</German>
+		<Italian>[COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARAVEL_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and carry one [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], [COLOR_UNIT_TEXT]Missionary[COLOR_REVERT], [COLOR_UNIT_TEXT]Spy[COLOR_REVERT] or [COLOR_UNIT_TEXT]Great Person[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and carry one [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], [COLOR_UNIT_TEXT]Missionary[COLOR_REVERT], [COLOR_UNIT_TEXT]Spy[COLOR_REVERT] or [COLOR_UNIT_TEXT]Great Person[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and carry one [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], [COLOR_UNIT_TEXT]Missionary[COLOR_REVERT], [COLOR_UNIT_TEXT]Spy[COLOR_REVERT] or [COLOR_UNIT_TEXT]Great Person[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and carry one [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], [COLOR_UNIT_TEXT]Missionary[COLOR_REVERT], [COLOR_UNIT_TEXT]Spy[COLOR_REVERT] or [COLOR_UNIT_TEXT]Great Person[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and carry one [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], [COLOR_UNIT_TEXT]Missionary[COLOR_REVERT], [COLOR_UNIT_TEXT]Spy[COLOR_REVERT] or [COLOR_UNIT_TEXT]Great Person[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and have two cargo spaces.</English>
+		<French>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and have two cargo spaces.</French>
+		<German>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and have two cargo spaces.</German>
+		<Italian>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and have two cargo spaces.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] can explore rival territory and have two cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRIGATE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the early Renaissance.</English>
-		<French>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the early Renaissance.</French>
-		<German>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the early Renaissance.</German>
-		<Italian>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the early Renaissance.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the early Renaissance.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</English>
+		<French>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</French>
+		<German>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</German>
+		<Italian>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GALLEON_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</English>
-		<French>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</French>
-		<German>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</German>
-		<Italian>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</English>
+		<French>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</French>
+		<German>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</German>
+		<Italian>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GREAT_STATESMAN_STRATEGY</Tag>
@@ -356,14 +356,6 @@
 		<German>[COLOR_UNIT_TEXT]Great Spies[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Spy[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Secret Service[COLOR_REVERT] building, is invisible to all units, can explore rival territory and can infiltrate another player's city.</German>
 		<Italian>[COLOR_UNIT_TEXT]Great Spies[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Spy[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Secret Service[COLOR_REVERT] building, is invisible to all units, can explore rival territory and can infiltrate another player's city.</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Great Spies[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Great Spy[COLOR_REVERT] specialist, can construct the [COLOR_BUILDING_TEXT]Secret Service[COLOR_REVERT] building, is invisible to all units, can explore rival territory and can infiltrate another player's city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_FRENCH_HEAVY_CANNON_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Culverin[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
-		<French>The [COLOR_UNIT_TEXT]Culverin[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
-		<German>The [COLOR_UNIT_TEXT]Culverin[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
-		<Italian>The [COLOR_UNIT_TEXT]Culverin[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Culverin[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], has a combat bonus against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GREAT_SCIENTIST_STRATEGY</Tag>
@@ -435,11 +427,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GUNSHIP_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], cannot capture enemy cities or units, don't receive defensive bonuses, ignore terrain movement costs, can withdraw from combat, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT], have a flank attack against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</English>
-		<French>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], cannot capture enemy cities or units, don't receive defensive bonuses, ignore terrain movement costs, can withdraw from combat, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT], have a flank attack against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</French>
-		<German>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], cannot capture enemy cities or units, don't receive defensive bonuses, ignore terrain movement costs, can withdraw from combat, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT], have a flank attack against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</German>
-		<Italian>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], cannot capture enemy cities or units, don't receive defensive bonuses, ignore terrain movement costs, can withdraw from combat, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT], have a flank attack against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], cannot capture enemy cities or units, don't receive defensive bonuses, ignore terrain movement costs, can withdraw from combat, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT], have a flank attack against [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units, have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT], and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, and start with the Amphibious promotion.</English>
+		<French>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units, have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT], and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, and start with the Amphibious promotion.</French>
+		<German>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units, have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT], and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, and start with the Amphibious promotion.</German>
+		<Italian>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units, have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT], and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, and start with the Amphibious promotion.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Gunships[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units, have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT], and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, and start with the Amphibious promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GUIDED_MISSILE_STRATEGY</Tag>
@@ -451,11 +443,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GRENADIER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage, have an attack bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]City Raider I[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage, have an attack bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]City Raider I[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage, have an attack bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]City Raider I[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage, have an attack bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]City Raider I[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage, have an attack bonus against [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]City Raider I[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Grenadiers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HORSE_ARCHER_STRATEGY</Tag>
@@ -499,11 +491,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAYAN_HOLKAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a higher chance to withdraw from combat.</English>
-		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a higher chance to withdraw from combat.</French>
-		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a higher chance to withdraw from combat.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a higher chance to withdraw from combat.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Skirmisher[COLOR_REVERT], is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT], provides food to the nearest city when it wins a fight and has a higher chance to withdraw from combat.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</English>
+		<French>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</French>
+		<German>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Holkan[COLOR_REVERT], the Mayan replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], provides food to the nearest city when it wins a fight.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INCAN_AUCAC_STRATEGY</Tag>
@@ -559,11 +551,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MARINE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Machine Gun[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</English>
-		<French>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Machine Gun[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</French>
-		<German>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Machine Gun[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</German>
-		<Italian>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Machine Gun[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Machine Gun[COLOR_REVERT] and [COLOR_UNIT_TEXT]Howitzer[COLOR_REVERT] units, are able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Amphibious[COLOR_REVERT] promotion.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] and start with the Amphibious promotion.</English>
+		<French>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] and start with the Amphibious promotion.</French>
+		<German>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] and start with the Amphibious promotion.</German>
+		<Italian>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] and start with the Amphibious promotion.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Marines[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT] and start with the Amphibious promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEAVY_SWORDSMAN</Tag>
@@ -587,11 +579,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MACHINE_GUN_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] can only defend, have one first strike, can intercept aircraft, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] can only defend, have one first strike, can intercept aircraft, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] can only defend, have one first strike, can intercept aircraft, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] can only defend, have one first strike, can intercept aircraft, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] can only defend, have one first strike, can intercept aircraft, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Machine Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LONGBOWMAN_STRATEGY</Tag>
@@ -611,11 +603,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAIN_BATTLE_TANK_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] have one first strike, don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</English>
-		<French>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] have one first strike, don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</French>
-		<German>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] have one first strike, don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</German>
-		<Italian>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] have one first strike, don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] have one first strike, don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</English>
+		<French>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</French>
+		<German>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</German>
+		<Italian>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Main Battle Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOBILE_SAM_STRATEGY</Tag>
@@ -663,11 +655,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MEXICAN_RURAL_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT], is cheaper, receives a defensive bonus and begins with the [COLOR_HIGHLIGHT_TEXT]Combat I[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT], is cheaper, receives a defensive bonus and begins with the [COLOR_HIGHLIGHT_TEXT]Combat I[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT], is cheaper, receives a defensive bonus and begins with the [COLOR_HIGHLIGHT_TEXT]Combat I[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT], is cheaper, receives a defensive bonus and begins with the [COLOR_HIGHLIGHT_TEXT]Combat I[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Cavalry[COLOR_REVERT], is cheaper, receives a defensive bonus and begins with the [COLOR_HIGHLIGHT_TEXT]Combat I[COLOR_REVERT] promotion.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Pistolier[COLOR_REVERT], starts with the Combat I promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Pistolier[COLOR_REVERT], starts with the Combat I promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Pistolier[COLOR_REVERT], starts with the Combat I promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Pistolier[COLOR_REVERT], starts with the Combat I promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Rural[COLOR_REVERT], the Mexican replacement for the [COLOR_UNIT_TEXT]Pistolier[COLOR_REVERT], starts with the Combat I promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAIN_BATTLE_TANK</Tag>
@@ -707,11 +699,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT] is a barbarian unit that spawns in Western North America from 1500 to 1850 AD.</English>
-		<French>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT] is a barbarian unit that spawns in Western North America from 1500 to 1850 AD.</French>
-		<German>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT] is a barbarian unit that spawns in Western North America from 1500 to 1850 AD.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT] is a barbarian unit that spawns in Western North America from 1500 to 1850 AD.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT] is a barbarian unit that spawns in Western North America from 1500 to 1850 AD.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SIOUX_MOUNTED_BRAVE</Tag>
@@ -751,27 +743,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN</Tag>
-		<English>East Indiaman</English>
-		<French>
-			<Text>Indiaman</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Ostindienfahrer</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>East Indiaman:East Indiaman</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Nav&#237;o de las Indias Orientales:Nav&#237;os de las Indias Orientales</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
+		<English>West Indiaman</English>
+		<French>West Indiaman</French>
+		<German>West Indiaman</German>
+		<Italian>West Indiaman</Italian>
+		<Spanish>West Indiaman</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN_STRATEGY</Tag>
@@ -899,19 +875,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_CARRACK_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], can transport any unit, has an additional cargo space and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], can transport any unit, has an additional cargo space and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], can transport any unit, has an additional cargo space and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], can transport any unit, has an additional cargo space and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], can transport any unit, has an additional cargo space and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], is stronger, has an additional cargo space, and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], is stronger, has an additional cargo space, and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], is stronger, has an additional cargo space, and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], is stronger, has an additional cargo space, and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Carrack[COLOR_REVERT], the Portuguese replacement for the the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], is stronger, has an additional cargo space, and begins with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAWAIIAN_WAA_KAULUA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</English>
-		<French>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</French>
-		<German>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</German>
-		<Italian>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has two additional movement points, is cheaper, has one less cargo space and can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has an additional movement point, can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], and can steal cannon from sunk enemy vessels.</English>
+		<French>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has an additional movement point, can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], and can steal cannon from sunk enemy vessels.</French>
+		<German>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has an additional movement point, can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], and can steal cannon from sunk enemy vessels.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has an additional movement point, can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], and can steal cannon from sunk enemy vessels.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Wa'a Kaulua[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT], has an additional movement point, can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], and can steal cannon from sunk enemy vessels.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PIKEMAN_STRATEGY</Tag>
@@ -947,11 +923,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SHIP_OF_THE_LINE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the late Renaissance.</English>
-		<French>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the late Renaissance.</French>
-		<German>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the late Renaissance.</German>
-		<Italian>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the late Renaissance.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the late Renaissance.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</English>
+		<French>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</French>
+		<German>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</German>
+		<Italian>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Ship of the Lines[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NUCLEAR_BOMBER_STRATEGY</Tag>
@@ -1011,11 +987,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPANISH_CONQUISTADOR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Exploration[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] technology, receives a defensive bonus, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] except for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Militia[COLOR_REVERT].</English>
-		<French>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Exploration[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] technology, receives a defensive bonus, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] except for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Militia[COLOR_REVERT].</French>
-		<German>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Exploration[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] technology, receives a defensive bonus, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] except for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Militia[COLOR_REVERT].</German>
-		<Italian>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Exploration[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] technology, receives a defensive bonus, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] except for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Militia[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Exploration[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Combined Arms[COLOR_REVERT] technology, receives a defensive bonus, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Marsh[COLOR_REVERT], has an attack bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] except for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT] and [COLOR_UNIT_TEXT]Militia[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</English>
+		<French>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</French>
+		<German>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Conquistador[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Cuirassier[COLOR_REVERT], receives a defensive bonus, and has an attack bonus against cities.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SETTLER_STRATEGY</Tag>
@@ -1071,19 +1047,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TANK_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</English>
-		<French>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</French>
-		<German>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</German>
-		<Italian>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses and begin with the [COLOR_HIGHLIGHT_TEXT]Blitz[COLOR_REVERT] promotion.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</English>
+		<French>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</French>
+		<German>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</German>
+		<Italian>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Tanks[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, have a combat penalty in cities, and start with the Blitz promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRANSPORT_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have four cargo spaces and can withdraw from combat.</English>
-		<French>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have four cargo spaces and can withdraw from combat.</French>
-		<German>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have four cargo spaces and can withdraw from combat.</German>
-		<Italian>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have four cargo spaces and can withdraw from combat.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have four cargo spaces and can withdraw from combat.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have six cargo spaces.</English>
+		<French>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have six cargo spaces.</French>
+		<German>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have six cargo spaces.</German>
+		<Italian>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have six cargo spaces.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Transports[COLOR_REVERT] have six cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WORKER_STRATEGY</Tag>
@@ -1259,11 +1235,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SKIRMISHER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, cause collateral damage and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TORPEDO_BOAT</Tag>
@@ -1299,11 +1275,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CRUISER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</English>
-		<French>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</French>
-		<German>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</German>
-		<Italian>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses and are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</English>
+		<French>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</French>
+		<German>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</German>
+		<Italian>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Cruisers[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Industrial Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BIPLANE</Tag>
@@ -1383,11 +1359,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOWITZER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</English>
-		<French>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</French>
-		<German>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</German>
-		<Italian>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT] and can bombard city defenses.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</English>
+		<French>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</French>
+		<German>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</German>
+		<Italian>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Howitzers[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DRAGOON</Tag>
@@ -1403,11 +1379,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DRAGOON_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses and are basic [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] in the Industrial Era.</English>
-		<French>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses and are basic [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] in the Industrial Era.</French>
-		<German>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses and are basic [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] in the Industrial Era.</German>
-		<Italian>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses and are basic [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] in the Industrial Era.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses and are basic [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] in the Industrial Era.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] units.</English>
+		<French>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] units.</French>
+		<German>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] units.</German>
+		<Italian>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] units.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PISTOLIER</Tag>
@@ -1423,11 +1399,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PISTOLIER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Pistoliers[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</English>
-		<French>[COLOR_UNIT_TEXT]Pistoliers[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</French>
-		<German>[COLOR_UNIT_TEXT]Pistoliers[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</German>
-		<Italian>[COLOR_UNIT_TEXT]Pistoliers[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Pistoliers[COLOR_REVERT] are immune to first strikes, don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</English>
+		<French>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</French>
+		<German>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</German>
+		<Italian>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Dragoons[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HUSSAR</Tag>
@@ -1443,11 +1419,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HUSSAR_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</English>
-		<French>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</French>
-		<German>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</German>
-		<Italian>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Catapult[COLOR_REVERT], [COLOR_UNIT_TEXT]Trebuchet[COLOR_REVERT], [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</English>
+		<French>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</French>
+		<German>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</German>
+		<Italian>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Hussars[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT] and [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT] units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_SWORDSMAN</Tag>
@@ -1675,11 +1651,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TERCIO_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</English>
-		<French>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</French>
-		<German>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Arquebusier[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Pinch[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Formation[COLOR_REVERT] promotions.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUSILIER</Tag>
@@ -1695,11 +1671,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUSILIER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</English>
-		<French>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</French>
-		<German>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], the Prussian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], begins with the [COLOR_HIGHLIGHT_TEXT]Drill I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Drill II[COLOR_REVERT] promotions.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Fusiliers[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Fusiliers[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Fusiliers[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Fusiliers[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Fusiliers[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLOMBIAN_LLANERO</Tag>
@@ -1715,11 +1691,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLOMBIAN_LLANERO_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Hussar[COLOR_REVERT], doesn't require the [COLOR_TECH_TEXT]Biology[COLOR_REVERT] technology, has a combat bonus against the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] and [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] units and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Hussar[COLOR_REVERT], doesn't require the [COLOR_TECH_TEXT]Biology[COLOR_REVERT] technology, has a combat bonus against the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] and [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] units and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Hussar[COLOR_REVERT], doesn't require the [COLOR_TECH_TEXT]Biology[COLOR_REVERT] technology, has a combat bonus against the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] and [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] units and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Hussar[COLOR_REVERT], doesn't require the [COLOR_TECH_TEXT]Biology[COLOR_REVERT] technology, has a combat bonus against the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] and [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] units and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Hussar[COLOR_REVERT], doesn't require the [COLOR_TECH_TEXT]Biology[COLOR_REVERT] technology, has a combat bonus against the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT] and [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT] units and begins with the [COLOR_HIGHLIGHT_TEXT]Mobility[COLOR_REVERT] promotion.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE</Tag>
@@ -1763,11 +1739,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STEAMSHIP_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</English>
-		<French>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</French>
-		<German>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</German>
-		<Italian>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Steamships[COLOR_REVERT] have three cargo spaces and can withdraw from combat.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</English>
+		<French>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</French>
+		<German>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</German>
+		<Italian>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TIWANAKU_SISQENO</Tag>
@@ -1786,12 +1762,28 @@
 		<Spanish>[[ICON_BULLET]+1 [COLOR_UNIT_TEXT]Great Prophet Points[COLOR_REVERT] per turn in the capital when stationed in a foreign city</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_TIWANAKU_SISQENO_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Sisqeno[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], is available earlier and grants Great Prophet Points when stationed in foreign cities.</English>
+		<French>The [COLOR_UNIT_TEXT]Sisqeno[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], is available earlier and grants Great Prophet Points when stationed in foreign cities.</French>
+		<German>The [COLOR_UNIT_TEXT]Sisqeno[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], is available earlier and grants Great Prophet Points when stationed in foreign cities.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Sisqeno[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], is available earlier and grants Great Prophet Points when stationed in foreign cities.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Sisqeno[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], is available earlier and grants Great Prophet Points when stationed in foreign cities.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_WARI_PICTA</Tag>
 		<English>Picta</English>
 		<French>Picta</French>
 		<German>Picta</German>
 		<Italian>Picta</Italian>
 		<Spanish>Picta</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WARI_PICTA_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Picta[COLOR_REVERT], the Wari replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHIMU_SUCHUC_CHIQUI</Tag>
@@ -1802,6 +1794,14 @@
 		<Spanish>Suchuc Chiqui</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHIMU_SUCHUC_CHIQUI_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</English>
+		<French>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</French>
+		<German>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Suchuc Chiqui[COLOR_REVERT], the Chimu replacement for the [COLOR_UNIT_TEXT]Spearman[COLOR_REVERT], is stronger and has extra strength versus Archery units.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER</Tag>
 		<English>Falcon Dancer</English>
 		<French>Falcon Dancer</French>
@@ -1810,12 +1810,20 @@
 		<Spanish>Falcon Dancer</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</English>
+		<French>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</French>
+		<German>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED</Tag>
-		<English>Inuit Dog Sled</English>
-		<French>Inuit Dog Sled</French>
-		<German>Inuit Dog Sled</German>
-		<Italian>Inuit Dog Sled</Italian>
-		<Spanish>Inuit Dog Sled</Spanish>
+		<English>Dog Sled</English>
+		<French>Dog Sled</French>
+		<German>Dog Sled</German>
+		<Italian>Dog Sled</Italian>
+		<Spanish>Dog Sled</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED_HELP</Tag>
@@ -1826,12 +1834,28 @@
 		<Spanish>[ICON_BULLET]Can settle on Ice (along Coast)</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</English>
+		<French>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</French>
+		<German>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA</Tag>
 		<English>Guecha</English>
 		<French>Guecha</French>
 		<German>Guecha</German>
 		<Italian>Guecha</Italian>
 		<Spanish>Guecha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Guecha[COLOR_REVERT], the Muisca replacement for the [COLOR_UNIT_TEXT]Atlatlist[COLOR_REVERT], is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TEOTIHUACAN_ARTISAN</Tag>
@@ -1847,11 +1871,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TEOTIHUACAN_ARTISAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can be stationed in a city to provide it with two culture points per turn.</English>
-		<French>The [COLOR_UNIT_TEXT]artisan[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can be stationed in a city to provide it with two culture points per turn.</French>
-		<German>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can be stationed in a city to provide it with two culture points per turn.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can be stationed in a city to provide it with two culture points per turn.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacano replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can be stationed in a city to provide it with two culture points per turn.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</English>
+		<French>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</French>
+		<German>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT</Tag>
@@ -1862,20 +1886,20 @@
 		<Spanish>Agent</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT_HELP</Tag>
+		<English>[ICON_BULLET]Can perform the Coup espionage action</English>
+		<French>[ICON_BULLET]Can perform the Coup espionage action</French>
+		<German>[ICON_BULLET]Can perform the Coup espionage action</German>
+		<Italian>[ICON_BULLET]Can perform the Coup espionage action</Italian>
+		<Spanish>[ICON_BULLET]Can perform the Coup espionage action</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</English>
 		<French>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</French>
 		<German>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Agent[COLOR_REVERT], the American replacement for the [COLOR_UNIT_TEXT]Spy[COLOR_REVERT], can perform [COLOR_HIGHLIGHT_TEXT]Install Regime[COLOR_REVERT], a special espionage mission that, if successful, make the target civilization your vassal.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT_PEDIA</Tag>
-		<English>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</English>
-		<French>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</French>
-		<German>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</German>
-		<Italian>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</Italian>
-		<Spanish>Employing spies to aid against the British during the Revolution, the United States has used its agents since even before its international recognition. In 1947, Preseident Truman created the Central Intelligence Agency to centralize American international espionage. Since then, agents have acted in counts missions across the world, especially in Latin America. In attempts to solidify American hegemony, covert operations even overthrew entire governments to further the interests of the United States.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI</Tag>
@@ -1887,11 +1911,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</English>
+		<French>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</French>
+		<German>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_HELP</Tag>
@@ -1900,14 +1924,6 @@
 		<German>[ICON_BULLET]Builds faster on Tundra and Moorland</German>
 		<Italian>[ICON_BULLET]Builds faster on Tundra and Moorland</Italian>
 		<Spanish>[ICON_BULLET]Builds faster on Tundra and Moorland</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS</Tag>
@@ -1919,19 +1935,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</English>
+		<French>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</French>
+		<German>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Coureur des Bois[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], starts with the Woodsman II promotion and gain experience from contacting Tribes.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_HELP</Tag>
@@ -1958,14 +1966,6 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARMED_SLAVE</Tag>
 		<English>Armed Slave</English>
 		<French>Armed Slave</French>
@@ -1982,14 +1982,6 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_ARMED_SLAVE_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES</Tag>
 		<English>Compagnies</English>
 		<French>Compagnies</French>
@@ -1999,19 +1991,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINE_INFANTRY</Tag>
@@ -2023,19 +2007,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINE_INFANTRY_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LINE_INFANTRY_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Line Infantry[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Line Infantry[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Line Infantry[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Line Infantry[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Line Infantry[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RPG</Tag>
@@ -2047,19 +2023,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RPG_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_RPG_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]RPGs[COLOR_REVERT] can intercept aircraft, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Ambush[COLOR_REVERT] promotion.</English>
+		<French>[COLOR_UNIT_TEXT]RPGs[COLOR_REVERT] can intercept aircraft, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Ambush[COLOR_REVERT] promotion.</French>
+		<German>[COLOR_UNIT_TEXT]RPGs[COLOR_REVERT] can intercept aircraft, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Ambush[COLOR_REVERT] promotion.</German>
+		<Italian>[COLOR_UNIT_TEXT]RPGs[COLOR_REVERT] can intercept aircraft, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Ambush[COLOR_REVERT] promotion.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]RPGs[COLOR_REVERT] can intercept aircraft, have a combat bonus against [COLOR_UNIT_TEXT]Armored Units[COLOR_REVERT] and begin with the [COLOR_HIGHLIGHT_TEXT]Ambush[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INCAN_SLINGER</Tag>
@@ -2071,19 +2039,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INCAN_SLINGER_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_INCAN_SLINGER_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</English>
+		<French>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</French>
+		<German>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Slinger[COLOR_REVERT], the Incan replacement for the [COLOR_UNIT_TEXT]Archer[COLOR_REVERT], is cheaper and has extra strength when defending in hills.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_CANNON</Tag>
@@ -2095,19 +2055,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_CANNON_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_CANNON_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Light Cannon[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIELD_GUN</Tag>
@@ -2119,43 +2071,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIELD_GUN_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Field Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_FIELD_GUN_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<Tag>TXT_KEY_UNIT_GATLING_GUN</Tag>
+		<English>Gatling Gun</English>
+		<French>Gatling Gun</French>
+		<German>Gatling Gun</German>
+		<Italian>Gatling Gun</Italian>
+		<Spanish>Gatling Gun</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_GATTLING_GUN</Tag>
-		<English>Gattling Gun</English>
-		<French>Gattling Gun</French>
-		<German>Gattling Gun</German>
-		<Italian>Gattling Gun</Italian>
-		<Spanish>Gattling Gun</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_GATTLING_GUN_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_GATTLING_GUN_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<Tag>TXT_KEY_UNIT_GATLING_GUN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Gatling Guns[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ATLATLIST</Tag>
@@ -2167,19 +2103,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ATLATLIST_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ATLATLIST_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Atlatlists[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_TANK</Tag>
@@ -2191,19 +2119,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_TANK_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_TANK_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Light Tanks[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</English>
+		<French>[COLOR_UNIT_TEXT]Light Tanks[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</French>
+		<German>[COLOR_UNIT_TEXT]Light Tanks[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</German>
+		<Italian>[COLOR_UNIT_TEXT]Light Tanks[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Light Tanks[COLOR_REVERT] don't receive defensive bonuses, can withdraw from combat, have a combat bonus on open terrain, have a attack bonus against [COLOR_UNIT_TEXT]Siege[COLOR_REVERT] units and have a flank attack against [COLOR_UNIT_TEXT]Bombard[COLOR_REVERT], [COLOR_UNIT_TEXT]Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT], [COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT], and [COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARABINEER</Tag>
@@ -2215,19 +2135,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARABINEER_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CARABINEER_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Carabineers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</English>
+		<French>[COLOR_UNIT_TEXT]Carabineers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</French>
+		<German>[COLOR_UNIT_TEXT]Carabineers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</German>
+		<Italian>[COLOR_UNIT_TEXT]Carabineers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Carabineers[COLOR_REVERT] don't receive defensive bonuses, are immune to first strikes, and have a combat penalty in cities.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AA_GUN</Tag>
@@ -2239,19 +2151,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AA_GUN_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_AA_GUN_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]AA Guns[COLOR_REVERT] cannot capture enemy cities and units and can intercept aircraft.</English>
+		<French>[COLOR_UNIT_TEXT]AA Guns[COLOR_REVERT] cannot capture enemy cities and units and can intercept aircraft.</French>
+		<German>[COLOR_UNIT_TEXT]AA Guns[COLOR_REVERT] cannot capture enemy cities and units and can intercept aircraft.</German>
+		<Italian>[COLOR_UNIT_TEXT]AA Guns[COLOR_REVERT] cannot capture enemy cities and units and can intercept aircraft.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]AA Guns[COLOR_REVERT] cannot capture enemy cities and units and can intercept aircraft.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RANGER</Tag>
@@ -2263,11 +2167,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RANGER_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</English>
+		<French>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</French>
+		<German>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</German>
+		<Italian>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RANGER_HELP</Tag>
@@ -2276,14 +2180,6 @@
 		<German>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
 		<Italian>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
 		<Spanish>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_RANGER_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANOE</Tag>
@@ -2295,19 +2191,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANOE_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CANOE_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Canoes[COLOR_REVERT] have one cargo space and cannot enter ocean.</English>
+		<French>[COLOR_UNIT_TEXT]Canoes[COLOR_REVERT] have one cargo space and cannot enter ocean.</French>
+		<German>[COLOR_UNIT_TEXT]Canoes[COLOR_REVERT] have one cargo space and cannot enter ocean.</German>
+		<Italian>[COLOR_UNIT_TEXT]Canoes[COLOR_REVERT] have one cargo space and cannot enter ocean.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Canoes[COLOR_REVERT] have one cargo space and cannot enter ocean.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRIGANTINE</Tag>
@@ -2319,19 +2207,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRIGANTINE_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BRIGANTINE_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</English>
+		<French>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</French>
+		<German>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</German>
+		<Italian>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Brigantines[COLOR_REVERT] have four cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLOOP</Tag>
@@ -2343,19 +2223,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLOOP_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_SLOOP_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</English>
+		<French>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</French>
+		<German>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</German>
+		<Italian>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Sloops[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEAVY_CANNON</Tag>
@@ -2367,19 +2239,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEAVY_CANNON_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HEAVY_CANNON_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</English>
+		<French>[COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</French>
+		<German>[COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</German>
+		<Italian>[COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Heavy Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RIFLED_CANNON</Tag>
@@ -2391,19 +2255,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RIFLED_CANNON_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_RIFLED_CANNON_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</English>
+		<French>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</French>
+		<German>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</German>
+		<Italian>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GUERILLA</Tag>
@@ -2415,19 +2271,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GUERILLA_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_GUERILLA_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP</Tag>
@@ -2443,19 +2291,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Heavy Galley[COLOR_REVERT] has two extra movement points, can bombard city defenses, has two cargo spaces and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP_PEDIA</Tag>
-		<English>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</English>
-		<French>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</French>
-		<German>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</German>
-		<Italian>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</Italian>
-		<Spanish>[TAB]Longships (aka longboats) were sea vessels made and used by the Vikings from the Nordic countries for trade, commerce, exploration, and warfare during the Viking Age although scientific analysis of the oak timber shows at least one well known ship was built in Dublin, Ireland. The longship's design evolved over many years, beginning in the Stone Age with the invention of the umiak and continuing up to the 9th century with the Nydam and Kvalsund ships. The longship appeared in its complete form between the 9th and 13th centuries. The character and appearance of these ships have been reflected in Scandinavian boat-building traditions until today. The particular skills and methods employed in making longships are still used world wide, often with modern adaptations. They were all made out of wood, with cloth flags and had lots of details and carvings on the hull.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Longship[COLOR_REVERT], the Viking replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT] has two extra movement points, is stronger, can bombard city defenses, and begins with the [COLOR_HIGHLIGHT_TEXT]Disengage I[COLOR_REVERT] promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BARQUE</Tag>
@@ -2467,19 +2307,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BARQUE_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BARQUE_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</English>
+		<French>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</French>
+		<German>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</German>
+		<Italian>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Barques[COLOR_REVERT] can bombard city defenses, cause collateral damage, and are the advanced [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Colonial Era.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER</Tag>
@@ -2491,19 +2323,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</English>
+		<French>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</French>
+		<German>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAWAIIAN_KOA</Tag>
@@ -2515,19 +2339,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAWAIIAN_KOA_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HAWAIIAN_KOA_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</English>
+		<French>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</French>
+		<German>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PERUVIAN_GUARDIA</Tag>
@@ -2539,19 +2355,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PERUVIAN_GUARDIA_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_PERUVIAN_GUARDIA_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Guardia[COLOR_REVERT], the Peruvian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], starts with the City Garrison I and City Garrison II promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Guardia[COLOR_REVERT], the Peruvian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], starts with the City Garrison I and City Garrison II promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Guardia[COLOR_REVERT], the Peruvian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], starts with the City Garrison I and City Garrison II promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Guardia[COLOR_REVERT], the Peruvian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], starts with the City Garrison I and City Garrison II promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Guardia[COLOR_REVERT], the Peruvian replacement for the [COLOR_UNIT_TEXT]Musketeer[COLOR_REVERT], starts with the City Garrison I and City Garrison II promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VENEZUELAN_VENCEDORES</Tag>
@@ -2563,19 +2371,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VENEZUELAN_VENCEDORES_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_VENEZUELAN_VENCEDORES_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Vencedores[COLOR_REVERT], the Venezuelan replacement for the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], starts with the Leadership promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Vencedores[COLOR_REVERT], the Venezuelan replacement for the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], starts with the Leadership promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Vencedores[COLOR_REVERT], the Venezuelan replacement for the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], starts with the Leadership promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Vencedores[COLOR_REVERT], the Venezuelan replacement for the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], starts with the Leadership promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Vencedores[COLOR_REVERT], the Venezuelan replacement for the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], starts with the Leadership promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CUBAN_FARS</Tag>
@@ -2587,19 +2387,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CUBAN_FARS_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CUBAN_FARS_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</English>
+		<French>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</French>
+		<German>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</German>
+		<Italian>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAITIAN_CACOS</Tag>
@@ -2611,20 +2403,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAITIAN_CACOS_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Spanish>
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HAITIAN_CACOS_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
+	
 	
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_</Tag>
@@ -2635,7 +2420,7 @@
 		<Spanish>Example</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT__STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_REPLACE_STRATEGY</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>
