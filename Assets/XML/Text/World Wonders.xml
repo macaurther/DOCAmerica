@@ -987,11 +987,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] gives all cities in your civilization one free specialist. It increases its city's chances of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</English>
-		<French>La [COLOR_BUILDING_TEXT]Statue de la Libert&#233;[COLOR_REVERT] fait appara&#238;tre un sp&#233;cialiste dans toutes vos villes et augmente les chances d'apparition d'un [COLOR_UNIT_TEXT]marchand illustre[COLOR_REVERT].</French>
-		<German>Durch den Bau der [COLOR_BUILDING_TEXT]Freiheitsstatue[COLOR_REVERT] erhalten alle St&#228;dte Ihrer Zivilisation einen Spezialisten. Dar&#252;ber hinaus erh&#246;hen sich die Chancen der Stadt, einen [COLOR_UNIT_TEXT]Gro&#223;en H&#228;ndler[COLOR_REVERT] hervorzubringen.</German>
-		<Italian>La [COLOR_BUILDING_TEXT]Statua della Libert&#224;[COLOR_REVERT] concede a tutte le citt&#224; della tua civilt&#224; uno specialista gratis. Inoltre, aumenta la probabilit&#224; di generare un [COLOR_UNIT_TEXT]Grande Mercante[COLOR_REVERT].</Italian>
-		<Spanish>La [COLOR_BUILDING_TEXT]Estatua de la Libertad[COLOR_REVERT] otorga un especialista gratis a todas las ciudades de la civilizaci&#243;n. Incrementa tambi&#233;n las posibilidades de que en su ciudad se genere un [COLOR_UNIT_TEXT]Gran mercader[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</English>
+		<French>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</French>
+		<German>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Statue of Liberty[COLOR_REVERT] greatly increases immigration rate in its city and provides additional culture from immigration in all cities.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STATUE_OF_ZEUS_HELP</Tag>
@@ -3195,11 +3195,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FRONTENAC_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Artist[COLOR_REVERT].</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] gives all cities in your civilization one free specialist.</English>
+		<French>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] gives all cities in your civilization one free specialist.</French>
+		<German>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] gives all cities in your civilization one free specialist.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] gives all cities in your civilization one free specialist.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] gives all cities in your civilization one free specialist.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OXFORD_UNIVERSITY_STRATEGY</Tag>
@@ -3232,6 +3232,600 @@
 		<German>[ICON_BULLET]Disables cascading defensive pacts</German>
 		<Italian>[ICON_BULLET]Disables cascading defensive pacts</Italian>
 		<Spanish>[ICON_BULLET]Disables cascading defensive pacts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALCATRAZ</Tag>
+		<English>Alcatraz</English>
+		<French>Alcatraz</French>
+		<German>Alcatraz</German>
+		<Italian>Alcatraz</Italian>
+		<Spanish>Alcatraz</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALCATRAZ_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE</Tag>
+		<English>Biltmore Estate</English>
+		<French>Biltmore Estate</French>
+		<German>Biltmore Estate</German>
+		<Italian>Biltmore Estate</Italian>
+		<Spanish>Biltmore Estate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Biltmore Estate[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads.</English>
+		<French>The [COLOR_BUILDING_TEXT]Biltmore Estate[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads.</French>
+		<German>The [COLOR_BUILDING_TEXT]Biltmore Estate[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Biltmore Estate[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Biltmore Estate[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Railway Station[COLOR_REVERT] in every city and increases the building speed for railroads.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BILTMORE_ESTATE_HELP</Tag>
+		<English>[ICON_BULLET]+50% building speed for Railroads</English>
+		<French>[ICON_BULLET]+50% building speed for Railroads</French>
+		<German>[ICON_BULLET]+50% building speed for Railroads</German>
+		<Italian>[ICON_BULLET]+50% building speed for Railroads</Italian>
+		<Spanish>[ICON_BULLET]+50% building speed for Railroads</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_PARK</Tag>
+		<English>Central Park</English>
+		<French>Central Park</French>
+		<German>Central Park</German>
+		<Italian>Central Park</Italian>
+		<Spanish>Central Park</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_PARK_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Central Park[COLOR_REVERT] Increases a city’s health and provides happiness for excessive health in its city.</English>
+		<French>[COLOR_BUILDING_TEXT]Central Park[COLOR_REVERT] Increases a city’s health and provides happiness for excessive health in its city.</French>
+		<German>[COLOR_BUILDING_TEXT]Central Park[COLOR_REVERT] Increases a city’s health and provides happiness for excessive health in its city.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Central Park[COLOR_REVERT] Increases a city’s health and provides happiness for excessive health in its city.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Central Park[COLOR_REVERT] Increases a city’s health and provides happiness for excessive health in its city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_PARK_HELP</Tag>
+		<English>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</English>
+		<French>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</French>
+		<German>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</German>
+		<Italian>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</Italian>
+		<Spanish>[ICON_BULLET]Excess [ICON_HEALTHY] counts as [ICON_HAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELLIS_ISLAND</Tag>
+		<English>Ellis Island</English>
+		<French>Ellis Island</French>
+		<German>Ellis Island</German>
+		<Italian>Ellis Island</Italian>
+		<Spanish>Ellis Island</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELLIS_ISLAND_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Ellis Island[COLOR_REVERT] increases immigration rate in all cities.</English>
+		<French>[COLOR_BUILDING_TEXT]Ellis Island[COLOR_REVERT] increases immigration rate in all cities.</French>
+		<German>[COLOR_BUILDING_TEXT]Ellis Island[COLOR_REVERT] increases immigration rate in all cities.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Ellis Island[COLOR_REVERT] increases immigration rate in all cities.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Ellis Island[COLOR_REVERT] increases immigration rate in all cities.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ELLIS_ISLAND_HELP</Tag>
+		<English>+50% Immigration in all cities</English>
+		<French>+50% Immigration in all cities</French>
+		<German>+50% Immigration in all cities</German>
+		<Italian>+50% Immigration in all cities</Italian>
+		<Spanish>+50% Immigration in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FANEUIL_HALL</Tag>
+		<English>Faneuil Hall</English>
+		<French>Faneuil Hall</French>
+		<German>Faneuil Hall</German>
+		<Italian>Faneuil Hall</Italian>
+		<Spanish>Faneuil Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FANEUIL_HALL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Faneuil Hall[COLOR_REVERT] greatly increases the rate at which its city produces [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Faneuil Hall[COLOR_REVERT] greatly increases the rate at which its city produces [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Faneuil Hall[COLOR_REVERT] greatly increases the rate at which its city produces [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Faneuil Hall[COLOR_REVERT] greatly increases the rate at which its city produces [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Faneuil Hall[COLOR_REVERT] greatly increases the rate at which its city produces [COLOR_HIGHLIGHT_TEXT]Great People[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT_MCHENRY</Tag>
+		<English>Fort McHenry</English>
+		<French>Fort McHenry</French>
+		<German>Fort McHenry</German>
+		<Italian>Fort McHenry</Italian>
+		<Spanish>Fort McHenry</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT_MCHENRY_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] reduces damage from bombardments from all units and increases war weariness in the cities of those who go to war against its builder.</English>
+		<French>[COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] reduces damage from bombardments from all units and increases war weariness in the cities of those who go to war against its builder.</French>
+		<German>[COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] reduces damage from bombardments from all units and increases war weariness in the cities of those who go to war against its builder.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] reduces damage from bombardments from all units and increases war weariness in the cities of those who go to war against its builder.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Fort McHenry[COLOR_REVERT] reduces damage from bombardments from all units and increases war weariness in the cities of those who go to war against its builder.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_QUARTER</Tag>
+		<English>French Quarter</English>
+		<French>French Quarter</French>
+		<German>French Quarter</German>
+		<Italian>French Quarter</Italian>
+		<Spanish>French Quarter</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_QUARTER_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]French Quarter[COLOR_REVERT] restores the Great People Points when settling Great People.</English>
+		<French>The [COLOR_BUILDING_TEXT]French Quarter[COLOR_REVERT] restores the Great People Points when settling Great People.</French>
+		<German>The [COLOR_BUILDING_TEXT]French Quarter[COLOR_REVERT] restores the Great People Points when settling Great People.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]French Quarter[COLOR_REVERT] restores the Great People Points when settling Great People.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]French Quarter[COLOR_REVERT] restores the Great People Points when settling Great People.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FRENCH_QUARTER_HELP</Tag>
+		<English>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</English>
+		<French>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</French>
+		<German>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</German>
+		<Italian>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</Italian>
+		<Spanish>[ICON_BULLET]Settling a Great Person restores 25% [ICON_GREATPEOPLE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATEWAY_ARCH</Tag>
+		<English>Gateway Arch</English>
+		<French>Gateway Arch</French>
+		<German>Gateway Arch</German>
+		<Italian>Gateway Arch</Italian>
+		<Spanish>Gateway Arch</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATEWAY_ARCH_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATE_OF_THE_SUN</Tag>
+		<English>Gate of the Sun</English>
+		<French>Gate of the Sun</French>
+		<German>Gate of the Sun</German>
+		<Italian>Gate of the Sun</Italian>
+		<Spanish>Gate of the Sun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GATE_OF_THE_SUN_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Gate of the Sun[COLOR_REVERT] allows you to begin golden ages with one fewer great person.</English>
+		<French>The [COLOR_BUILDING_TEXT]Gate of the Sun[COLOR_REVERT] allows you to begin golden ages with one fewer great person.</French>
+		<German>The [COLOR_BUILDING_TEXT]Gate of the Sun[COLOR_REVERT] allows you to begin golden ages with one fewer great person.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Gate of the Sun[COLOR_REVERT] allows you to begin golden ages with one fewer great person.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Gate of the Sun[COLOR_REVERT] allows you to begin golden ages with one fewer great person.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM</Tag>
+		<English>Hoover Dam</English>
+		<French>Hoover Dam</French>
+		<German>Hoover Dam</German>
+		<Italian>Hoover Dam</Italian>
+		<Spanish>Hoover Dam</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</English>
+		<French>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</French>
+		<German>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM_HELP</Tag>
+		<English>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</English>
+		<French>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</French>
+		<German>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</German>
+		<Italian>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</Italian>
+		<Spanish>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOSPICIO_CABANAS</Tag>
+		<English>Hospicio Cabanas</English>
+		<French>Hospicio Cabanas</French>
+		<German>Hospicio Cabanas</German>
+		<Italian>Hospicio Cabanas</Italian>
+		<Spanish>Hospicio Cabanas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOSPICIO_CABANAS_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Hospicio Cabanas[COLOR_REVERT] stores additional food during growth in all cities.</English>
+		<French>[COLOR_BUILDING_TEXT]Hospicio Cabanas[COLOR_REVERT] stores additional food during growth in all cities.</French>
+		<German>[COLOR_BUILDING_TEXT]Hospicio Cabanas[COLOR_REVERT] stores additional food during growth in all cities.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Hospicio Cabanas[COLOR_REVERT] stores additional food during growth in all cities.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Hospicio Cabanas[COLOR_REVERT] stores additional food during growth in all cities.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOSPICIO_CABANAS_HELP</Tag>
+		<English>[ICON_BULLET]+25% Food kept on City Growth in all cities</English>
+		<French>[ICON_BULLET]+25% Food kept on City Growth in all cities</French>
+		<German>[ICON_BULLET]+25% Food kept on City Growth in all cities</German>
+		<Italian>[ICON_BULLET]+25% Food kept on City Growth in all cities</Italian>
+		<Spanish>[ICON_BULLET]+25% Food kept on City Growth in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HUEY_TEOCALLI</Tag>
+		<English>Huey Teocalli</English>
+		<French>Huey Teocalli</French>
+		<German>Huey Teocalli</German>
+		<Italian>Huey Teocalli</Italian>
+		<Spanish>Huey Teocalli</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HUEY_TEOCALLI_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</English>
+		<French>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</French>
+		<German>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LA_FORTALEZA</Tag>
+		<English>La Fortaleza</English>
+		<French>La Fortaleza</French>
+		<German>La Fortaleza</German>
+		<Italian>La Fortaleza</Italian>
+		<Spanish>La Fortaleza</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LA_FORTALEZA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</English>
+		<French>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</French>
+		<German>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</German>
+		<Italian>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANZANA_JESUITICA</Tag>
+		<English>Manzana Jesuitica</English>
+		<French>Manzana Jesuitica</French>
+		<German>Manzana Jesuitica</German>
+		<Italian>Manzana Jesuitica</Italian>
+		<Spanish>Manzana Jesuitica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MANZANA_JESUITICA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Manzana Jesuitica[COLOR_REVERT] adds additional production to all of your [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and allows you to train three [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]Manzana Jesuitica[COLOR_REVERT] adds additional production to all of your [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and allows you to train three [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]Manzana Jesuitica[COLOR_REVERT] adds additional production to all of your [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and allows you to train three [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Manzana Jesuitica[COLOR_REVERT] adds additional production to all of your [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and allows you to train three [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Manzana Jesuitica[COLOR_REVERT] adds additional production to all of your [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and allows you to train three [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO</Tag>
+		<English>Monticello</English>
+		<French>Monticello</French>
+		<German>Monticello</German>
+		<Italian>Monticello</Italian>
+		<Spanish>Monticello</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</English>
+		<French>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</French>
+		<German>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MONTICELLO_HELP</Tag>
+		<English>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
+		<French>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
+		<German>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
+		<Italian>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
+		<Spanish>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_RUSHMORE</Tag>
+		<English>Mount Rushmore</English>
+		<French>Mount Rushmore</French>
+		<German>Mount Rushmore</German>
+		<Italian>Mount Rushmore</Italian>
+		<Spanish>Mount Rushmore</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON</Tag>
+		<English>Mount Vernon</English>
+		<French>Mount Vernon</French>
+		<German>Mount Vernon</German>
+		<Italian>Mount Vernon</Italian>
+		<Spanish>Mount Vernon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born.</English>
+		<French>[COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born.</French>
+		<German>[COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Mount Vernon[COLOR_REVERT] creates a free Great Person when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] is born.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_HELP</Tag>
+		<English>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
+		<French>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
+		<German>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
+		<Italian>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
+		<Spanish>[ICON_BULLET]Another Great Person is born whenever a Great General appears
+[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NASA</Tag>
+		<English>NASA</English>
+		<French>NASA</French>
+		<German>NASA</German>
+		<Italian>NASA</Italian>
+		<Spanish>NASA</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NASA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]NASA[COLOR_REVERT] increases spaceship part production in all of your cities and produces commerce for every constructed satellite and space project.</English>
+		<French>[COLOR_BUILDING_TEXT]NASA[COLOR_REVERT] increases spaceship part production in all of your cities and produces commerce for every constructed satellite and space project.</French>
+		<German>[COLOR_BUILDING_TEXT]NASA[COLOR_REVERT] increases spaceship part production in all of your cities and produces commerce for every constructed satellite and space project.</German>
+		<Italian>[COLOR_BUILDING_TEXT]NASA[COLOR_REVERT] increases spaceship part production in all of your cities and produces commerce for every constructed satellite and space project.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]NASA[COLOR_REVERT] increases spaceship part production in all of your cities and produces commerce for every constructed satellite and space project.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN</Tag>
+		<English>Pyramid of the Sun</English>
+		<French>Pyramid of the Sun</French>
+		<German>Pyramid of the Sun</German>
+		<Italian>Pyramid of the Sun</Italian>
+		<Spanish>Pyramid of the Sun</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN_HELP</Tag>
+		<English>[ICON_BULLET]Golden Ages require 1 fewer Great Person</English>
+		<French>[ICON_BULLET]Golden Ages require 1 fewer Great Person</French>
+		<German>[ICON_BULLET]Golden Ages require 1 fewer Great Person</German>
+		<Italian>[ICON_BULLET]Golden Ages require 1 fewer Great Person</Italian>
+		<Spanish>[ICON_BULLET]Golden Ages require 1 fewer Great Person</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN</Tag>
+		<English>Sacsayhuaman</English>
+		<French>Sacsayhuaman</French>
+		<German>Sacsayhuaman</German>
+		<Italian>Sacsayhuaman</Italian>
+		<Spanish>Sacsayhuaman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</English>
+		<French>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</French>
+		<German>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN_HELP</Tag>
+		<English>[ICON_BULLET]Military Units can enter Peaks</English>
+		<French>[ICON_BULLET]Military Units can enter Peaks</French>
+		<German>[ICON_BULLET]Military Units can enter Peaks</German>
+		<Italian>[ICON_BULLET]Military Units can enter Peaks</Italian>
+		<Spanish>[ICON_BULLET]Military Units can enter Peaks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE</Tag>
+		<English>Sao Francisco Square</English>
+		<French>Sao Francisco Square</French>
+		<German>Sao Francisco Square</German>
+		<Italian>Sao Francisco Square</Italian>
+		<Spanish>Sao Francisco Square</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</English>
+		<French>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</French>
+		<German>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</German>
+		<Italian>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]La Fortaleza[COLOR_REVERT] provides a free trade route in all coastal cities and reduces damage from bombardments from all units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE_HELP</Tag>
+		<English>[ICON_BULLET]-33% Civic Upkeep</English>
+		<French>[ICON_BULLET]-33% Civic Upkeep</French>
+		<German>[ICON_BULLET]-33% Civic Upkeep</German>
+		<Italian>[ICON_BULLET]-33% Civic Upkeep</Italian>
+		<Spanish>[ICON_BULLET]-33% Civic Upkeep</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND</Tag>
+		<English>Serpent Mound</English>
+		<French>Serpent Mound</French>
+		<German>Serpent Mound</German>
+		<Italian>Serpent Mound</Italian>
+		<Spanish>Serpent Mound</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city’s health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city’s health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city’s health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city’s health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city’s health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND_HELP</Tag>
+		<English>[ICON_BULLET]+1 Merchant slot from Commons</English>
+		<French>[ICON_BULLET]+1 Merchant slot from Commons</French>
+		<German>[ICON_BULLET]+1 Merchant slot from Commons</German>
+		<Italian>[ICON_BULLET]+1 Merchant slot from Commons</Italian>
+		<Spanish>[ICON_BULLET]+1 Merchant slot from Commons</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLATER_MILL</Tag>
+		<English>Slater Mill</English>
+		<French>Slater Mill</French>
+		<German>Slater Mill</German>
+		<Italian>Slater Mill</Italian>
+		<Spanish>Slater Mill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SLATER_MILL_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</English>
+		<French>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</French>
+		<German>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Slater Mill[COLOR_REVERT] gives its city two free [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEMBLEQUE_AQUEDUCT</Tag>
+		<English>Tembleque Aqueduct</English>
+		<French>Tembleque Aqueduct</French>
+		<German>Tembleque Aqueduct</German>
+		<Italian>Tembleque Aqueduct</Italian>
+		<Spanish>Tembleque Aqueduct</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TEMBLEQUE_AQUEDUCT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Tembleque Aqueduct[COLOR_REVERT] improves the health of your cities.</English>
+		<French>The [COLOR_BUILDING_TEXT]Tembleque Aqueduct[COLOR_REVERT] improves the health of your cities.</French>
+		<German>The [COLOR_BUILDING_TEXT]Tembleque Aqueduct[COLOR_REVERT] improves the health of your cities.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Tembleque Aqueduct[COLOR_REVERT] improves the health of your cities.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Tembleque Aqueduct[COLOR_REVERT] improves the health of your cities.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THE_STRIP</Tag>
+		<English>The Strip</English>
+		<French>The Strip</French>
+		<German>The Strip</German>
+		<Italian>The Strip</Italian>
+		<Spanish>The Strip</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THE_STRIP_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]The Strip[COLOR_REVERT] increases a city’s wealth with access to power, increases happiness in every city, and adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]The Strip[COLOR_REVERT] increases a city’s wealth with access to power, increases happiness in every city, and adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]The Strip[COLOR_REVERT] increases a city’s wealth with access to power, increases happiness in every city, and adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]The Strip[COLOR_REVERT] increases a city’s wealth with access to power, increases happiness in every city, and adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]The Strip[COLOR_REVERT] increases a city’s wealth with access to power, increases happiness in every city, and adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_THE_STRIP_HELP</Tag>
+		<English>[ICON_BULLET]Requires 10 Desert tiles in city radius</English>
+		<French>[ICON_BULLET]Requires 10 Desert tiles in city radius</French>
+		<German>[ICON_BULLET]Requires 10 Desert tiles in city radius</German>
+		<Italian>[ICON_BULLET]Requires 10 Desert tiles in city radius</Italian>
+		<Spanish>[ICON_BULLET]Requires 10 Desert tiles in city radius</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TLACHIHUALTEPETL</Tag>
+		<English>Tlachihualtepetl</English>
+		<French>Tlachihualtepetl</French>
+		<German>Tlachihualtepetl</German>
+		<Italian>Tlachihualtepetl</Italian>
+		<Spanish>Tlachihualtepetl</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TLACHIHUALTEPETL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Tlachihualtepetl[COLOR_REVERT] gives two free technologies of your current or previous era.</English>
+		<French>[COLOR_BUILDING_TEXT]Tlachihualtepetl[COLOR_REVERT] gives two free technologies of your current or previous era.</French>
+		<German>[COLOR_BUILDING_TEXT]Tlachihualtepetl[COLOR_REVERT] gives two free technologies of your current or previous era.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Tlachihualtepetl[COLOR_REVERT] gives two free technologies of your current or previous era.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Tlachihualtepetl[COLOR_REVERT] gives two free technologies of your current or previous era.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WASHINGTON_MONUMENT</Tag>
+		<English>Washington Monument</English>
+		<French>Washington Monument</French>
+		<German>Washington Monument</German>
+		<Italian>Washington Monument</Italian>
+		<Spanish>Washington Monument</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WASHINGTON_MONUMENT_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Washington Monument[COLOR_REVERT] increases the length of your Golden Ages by fifty percent.</English>
+		<French>The [COLOR_BUILDING_TEXT]Washington Monument[COLOR_REVERT] increases the length of your Golden Ages by fifty percent.</French>
+		<German>The [COLOR_BUILDING_TEXT]Washington Monument[COLOR_REVERT] increases the length of your Golden Ages by fifty percent.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Washington Monument[COLOR_REVERT] increases the length of your Golden Ages by fifty percent.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Washington Monument[COLOR_REVERT] increases the length of your Golden Ages by fifty percent.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL</Tag>
+		<English>Independence Hall</English>
+		<French>Independence Hall</French>
+		<German>Independence Hall</German>
+		<Italian>Independence Hall</Italian>
+		<Spanish>Independence Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_INDEPENDENCE_HALL_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] provides a free [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT] in every city.</English>
+		<French>[COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] provides a free [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT] in every city.</French>
+		<German>[COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] provides a free [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT] in every city.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] provides a free [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT] in every city.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] provides a free [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT] in every city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT</Tag>
+		<English>West Point</English>
+		<French>West Point</French>
+		<German>West Point</German>
+		<Italian>West Point</Italian>
+		<Spanish>West Point</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</English>
+		<French>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</French>
+		<German>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</German>
+		<Italian>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WEST_POINT_HELP</Tag>
+		<English>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</English>
+		<French>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</French>
+		<German>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</German>
+		<Italian>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Italian>
+		<Spanish>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_HELP</Tag>
+		<English>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</English>
+		<French>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</French>
+		<German>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</German>
+		<Italian>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</Italian>
+		<Spanish>[ICON_BULLET]+100% Immigration
+[ICON_BULLET]Immigration also provides [ICON_CULTURE] in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PENTAGON_HELP</Tag>
+		<English>[ICON_BULLET]+50% buildling speed for Highway</English>
+		<French>[ICON_BULLET]+50% buildling speed for Highway</French>
+		<German>[ICON_BULLET]+50% buildling speed for Highway</German>
+		<Italian>[ICON_BULLET]+50% buildling speed for Highway</Italian>
+		<Spanish>[ICON_BULLET]+50% buildling speed for Highway</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

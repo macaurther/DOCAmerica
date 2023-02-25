@@ -521,7 +521,7 @@ iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	i
 iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
 iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iChancery,		iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		
 iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iSewer,			iJail,			
-iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRodeo,			iLienzoCharro,	iArsenal,		iDrydock,		iLibrary,		
+iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		
 iNewspaper,		iSupermarket,	iColdStoragePlant,iHospital,	iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,
 iFactory,		iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iPark,			iBunker,		iLaboratory,	iBroadcastTower,iVerticalFarm,	
 iPublicTransportation,iRecyclingCenter,iSecurityBureau,iContainerTerminal,iFiberNetwork,iLogisticsCenter,iAutomatedFactory,iNuclearPlant,iSolarPlant,iStadium,		
