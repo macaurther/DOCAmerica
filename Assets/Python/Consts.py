@@ -563,7 +563,7 @@ iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
 iNumCivics = 42
-(iChiefdom, iCouncil, iDespotism, iMonarchy, iViceroyality, iSelfDetermination, iDemocracy,
+(iChiefdom, iCouncil, iDespotism, iMonarchy, iViceroyalty, iSelfDetermination, iDemocracy,
 iAuthority, iEmpire, iColony, iCommonLaw, iConfederacy, iFederalism, iRepublic,
 iTraditionalism, iSpecialization, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,

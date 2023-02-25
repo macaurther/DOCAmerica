@@ -921,14 +921,14 @@ def getCivicStability(iPlayer, civics=None):
 		if iFederalism in civics: iStability -= 4
 	
 	if iMonarchy in civics:
-		if iViceroyality in civics: iStability += 2
+		if iViceroyalty in civics: iStability += 2
 		if iCommonLaw in civics: iStability += 2
 		if iDemocracy in civics: iStability -= 3
 		if iMultilateralism in civics: iStability -= 2
 	
 	if iColony in civics:
 		if iCommonLaw in civics: iStability += 2
-		if iViceroyality in civics: iStability += 4
+		if iViceroyalty in civics: iStability += 4
 		if iIndenturedServitude in civics: iStability += 2
 		if iMercantilism in civics: iStability += 3
 		if iHaven in civics: iStability += 2
@@ -939,7 +939,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iDemocracy in civics: iStability -= 3
 	
 	if iEmpire in civics:
-		if iViceroyality in civics: iStability += 2
+		if iViceroyalty in civics: iStability += 2
 		if iSlavery in civics: iStability += 2
 		if iCasteSystem in civics: iStability += 3
 		if iTributaries in civics: iStability += 2
@@ -970,7 +970,7 @@ def getCivicStability(iPlayer, civics=None):
 	if iFederalism in civics:
 		pass
 	
-	if iViceroyality in civics:
+	if iViceroyalty in civics:
 		if iMercantilism in civics: iStability += 2
 		if iConquest in civics: iStability += 2
 		if iNationhood in civics: iStability -= 2
