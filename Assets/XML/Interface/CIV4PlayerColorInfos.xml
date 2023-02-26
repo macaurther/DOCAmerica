@@ -217,7 +217,7 @@
 			<TextColorType>COLOR_PLAYER_MIDDLE_GREEN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_LEMON</Type> 
+			<Type>PLAYERCOLOR_DARK_LEMON</Type>
 			<ColorTypePrimary>COLOR_PLAYER_DARK_LEMON</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_LEMON_TEXT</TextColorType>
@@ -361,7 +361,7 @@
 			<TextColorType>COLOR_SILVER</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_ITALY</Type>
+			<Type>PLAYERCOLOR_ITALY</Type> <!-- Wari -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_RED_ITALY</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_RED_TEXT</TextColorType>
@@ -373,7 +373,7 @@
 			<TextColorType>COLOR_PLAYER_MIDDLE_PINK_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_KHAKI</Type>
+			<Type>PLAYERCOLOR_KHAKI</Type> 
 			<ColorTypePrimary>COLOR_PLAYER_KHAKI</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_LIGHT_BROWN</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_KHAKI_TEXT</TextColorType>
@@ -397,7 +397,7 @@
 			<TextColorType>COLOR_PLAYER_MIDDLE_INDIGO</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_PALE_ORANGE</Type> 
+			<Type>PLAYERCOLOR_PALE_ORANGE</Type>
 			<ColorTypePrimary>COLOR_PLAYER_PALE_ORANGE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_PALE_ORANGE</TextColorType>
@@ -415,19 +415,19 @@
 			<TextColorType>COLOR_PLAYER_ROSE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_GREYISH_BLUE</Type>
+			<Type>PLAYERCOLOR_GREYISH_BLUE</Type> <!-- Chimu -->
 			<ColorTypePrimary>COLOR_PLAYER_GREYISH_BLUE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_BLUE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_OCHRE</Type> <!-- Wari -->
+			<Type>PLAYERCOLOR_OCHRE</Type>
 			<ColorTypePrimary>COLOR_PLAYER_OCHRE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_MAROON</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_OCHRE</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_RED_AND_BLACK</Type> <!-- Chimu -->
+			<Type>PLAYERCOLOR_DARK_RED_AND_BLACK</Type>
 			<ColorTypePrimary>COLOR_PLAYER_BLACK</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_RED</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_BLACK_TEXT</TextColorType>
@@ -461,6 +461,30 @@
 			<ColorTypePrimary>COLOR_PLAYER_IROQUOIS_PURPLE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_IROQUOIS_PURPLE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_VENEZUELA</Type> <!-- Venezuela -->
+			<ColorTypePrimary>COLOR_PLAYER_GOLDENROD</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLUE</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_GOLDENROD</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_PERU</Type> <!-- Peru -->
+			<ColorTypePrimary>COLOR_PLAYER_WHITE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_MAROON</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_WHITE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_CUBA</Type> <!-- Cuba -->
+			<ColorTypePrimary>COLOR_PLAYER_MIDDLE_BLUE</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_YELLOW</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_MIDDLE_BLUE_TEXT</TextColorType>
+		</PlayerColorInfo>
+		<PlayerColorInfo>
+			<Type>PLAYERCOLOR_HAITI</Type> <!-- Haiti -->
+			<ColorTypePrimary>COLOR_PLAYER_DARK_GREEN</ColorTypePrimary>
+			<ColorTypeSecondary>COLOR_PLAYER_BLACK</ColorTypeSecondary>
+			<TextColorType>COLOR_PLAYER_DARK_GREEN</TextColorType>
 		</PlayerColorInfo>
 	</PlayerColorInfos>
 </Civ4PlayerColorInfos>

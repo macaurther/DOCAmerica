@@ -147,7 +147,7 @@
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_CHIMU</Type>
 			<Button>Art/Interface/Buttons/Civilizations/Chimu.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Collar.dds</Path>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Chimu.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
@@ -188,31 +188,31 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
             <Type>ART_DEF_CIVILIZATION_IROQUOIS</Type>
-            <Button>,Art/Colonization_Civilizations_Leaders.dds,3,1</Button>
+            <Button>Art/Interface/Buttons/Civilizations/Iroquois.dds</Button>
             <Path>Art/Interface/TeamColor/FlagDECAL_Iroquois.dds</Path>
             <bWhiteFlag>1</bWhiteFlag>
         </CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_HAITI</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Minor.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,6</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_X.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Haiti.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Haiti.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_PERU</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Minor.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,6</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_X.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Peru.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Peru.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_VENEZUELA</Type>
-			<Button>Art/Interface/Buttons/Civilizations/Venezuela_Button.dds</Button>
+			<Button>Art/Interface/Buttons/Civilizations/Venezuela.dds</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Venezuela.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_CUBA</Type>
-			<Button>Art/Interface/Buttons/Civilizations/btn_cuba.dds</Button>
+			<Button>Art/Interface/Buttons/Civilizations/Cuba.dds</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Cuba.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
