@@ -274,21 +274,21 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iMerchantTrade],
 		lEnemies=[],
-		techs=techs.column(6).without(*lNativeTechs)
+		techs=techs.column(7).including(iShipbuilding, iCharter).without(*lNativeTechs)
 	),
 	Civilization(
 		iFrance,
 		iGold=150,
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iMerchantTrade],
-		techs=techs.column(6).without(*lNativeTechs)
+		techs=techs.column(7).including(iShipbuilding, iFortification).without(*lNativeTechs)
 	),
 	Civilization(
 		iNetherlands,
 		iGold=600,
 		iStateReligion=iProtestantism,
 		lCivics=[iColony, iMercantilism],
-		techs=techs.column(6).including(iEconomics, iShipbuilding).without(*lNativeTechs)
+		techs=techs.column(7).including(iEconomics, iShipbuilding).without(*lNativeTechs)
 	),
 	Civilization(
 		iHawaii,

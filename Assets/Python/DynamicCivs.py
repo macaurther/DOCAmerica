@@ -30,6 +30,8 @@ dDefaultInsertAdjectives = {
 dSpecificVassalTitles = deepdict({
 	iSpain : {
 		iMaya : "TXT_KEY_CIV_SPANISH_MAYA",
+		iInca : "TXT_KEY_CIV_SPANISH_INCA",
+		iAztecs : "TXT_KEY_CIV_SPANISH_AZTECS",
 		iFrance : "TXT_KEY_CIV_SPANISH_FRANCE",
 		iNetherlands : "TXT_KEY_ADJECTIVE_TITLE",
 		iPortugal : "TXT_KEY_CIV_SPANISH_PORTUGAL",
@@ -45,6 +47,7 @@ dSpecificVassalTitles = deepdict({
 		iInca : "TXT_KEY_CIV_FRENCH_INCA",
 		iAztecs : "TXT_KEY_CIV_FRENCH_AZTECS",
 		iAmerica : "TXT_KEY_CIV_FRENCH_AMERICA",
+		iHaiti : "TXT_KEY_CIV_FRENCH_HAITI",
 	},
 	iEngland : {
 		iMaya : "TXT_KEY_CIV_ENGLISH_MAYA",
@@ -740,8 +743,9 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 		if civic.iLabor == iSlavery:
 			if isControlled(iPlayer, plots.region(rMesoamerica)) and isControlled(iPlayer, plots.region(rCaribbean)):
 				return "TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE"
-		
-			return "TXT_KEY_CIV_AMERICA_CSA"
+			
+			if civic.iLegal == iConfederacy:
+				return "TXT_KEY_CIV_AMERICA_CSA"
 			
 	elif iCiv == iArgentina:
 		if bEmpire:

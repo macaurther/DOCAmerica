@@ -120,7 +120,7 @@ def checkConquest(tConquest, tPrereqConquest = (), iWarPlan = WarPlanTypes.WARPL
 	if turn() == iStartTurn - turns(5):
 		warnConquest(iPlayer, iCiv, iPreferredTargetCiv, tTL, tBR)
 	
-	if turn() < player(iCiv).getLastBirthTurn() + turns(3): 
+	if turn() < player(iPlayer).getLastBirthTurn() + turns(3): 
 		return
 	
 	if not (iStartTurn <= turn() <= iStartTurn + iIntervalTurns):

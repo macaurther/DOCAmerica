@@ -3003,23 +3003,6 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 		iValue += std::max(1, ((GC.getMapINLINE().maxStepDistance() * 2) - GC.getMapINLINE().calculatePathDistance(pNearestCity->plot(), pCity->plot())) * AI_getTargetDistanceValueModifier() / 100);
 	}
 
-	if (pCity->getX_INLINE() <= 43) //wars in America
-	{ 
-		switch (getCivilizationType())
-		{
-			case SPAIN:
-			case FRANCE:
-			case ENGLAND:
-			case NETHERLANDS:
-			case PORTUGAL:
-				iValue *= 4;
-				iValue /= 3;
-				break;
-			default:
-				break;
-		}
-	}
-
 	if (pCity->plot()->getBirthProtected() == pCity->getOwner())
 	{
 		iValue /= 5;

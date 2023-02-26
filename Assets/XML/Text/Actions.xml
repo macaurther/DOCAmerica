@@ -38,14 +38,6 @@
 		<Spanish>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_INCAN_ROAD</Tag>
-		<English>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</English>
-		<French>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</French>
-		<German>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</German>
-		<Italian>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</Italian>
-		<Spanish>Build an [LINK=ROUTE_INCAN_ROAD]Incan Road[\LINK]</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILD_HIGHWAY</Tag>
 		<English>Build a [LINK=ROUTE_HIGHWAY]Highway[\LINK]</English>
 		<French>construire une [LINK=ROUTE_HIGHWAY]autoroute[\LINK]</French>
@@ -271,10 +263,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_LOGGING_CAMP</Tag>
-		<English>Build a [LINK=ROUTE_INCAN_ROAD]Logging Camp[\LINK]</English>
-		<French>Build a [LINK=ROUTE_INCAN_ROAD]Logging Camp[\LINK]</French>
-		<German>Build a [LINK=ROUTE_INCAN_ROAD]Logging Camp[\LINK]</German>
-		<Italian>Build a [LINK=ROUTE_INCAN_ROAD]Logging Camp[\LINK]</Italian>
-		<Spanish>Build a [LINK=ROUTE_INCAN_ROAD]Logging Camp[\LINK]</Spanish>
+		<English>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</English>
+		<French>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</French>
+		<German>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</German>
+		<Italian>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</Italian>
+		<Spanish>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</Spanish>
 	</TEXT>
 </Civ4GameText>

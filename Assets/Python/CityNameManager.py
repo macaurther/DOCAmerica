@@ -263,15 +263,6 @@ def onTechAcquired(iTech, iTeam, iPlayer):
 			
 			renameOwnedCity(city, sNewName)
 
-@handler("religionSpread")
-def onReligionSpread(iReligion, iPlayer, city):
-	iCiv = civ(iPlayer)
-			
-	# easter egg
-	if iReligion == iBuddhism:
-		if city.getName() in ['Buda', 'Budapest', 'Aquincum', 'Akin']: 
-			renameOwnedCity(city, "Buddhapest")
-
 @handler("revolution")
 def onRevolution(iPlayer):
 	if isCommunist(iPlayer):

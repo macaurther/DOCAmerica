@@ -600,22 +600,22 @@ def calculateStability(iPlayer):
 	# European RP: Extra stability from Motherland
 	iMotherlandStability = 0
 	if iCiv == iEngland:
-		iMotherlandStability = 20
+		iMotherlandStability = 100
 	elif iCiv == iFrance:
-		iMotherlandStability = 25
+		iMotherlandStability = 100
 	elif iCiv == iNetherlands:
-		iMotherlandStability = 10
+		iMotherlandStability = 25
 	elif iCiv == iNorse:
 		iMotherlandStability = 5
 	elif iCiv == iPortugal:
-		iMotherlandStability = 15
+		iMotherlandStability = 75
 	elif iCiv == iRussia:
 		iMotherlandStability = 10
 	elif iCiv == iSpain:
-		iMotherlandStability = 25
+		iMotherlandStability = 90
 		
 	if iCurrentEra >= iRevolutionaryEra:
-		iMotherlandStability -= 10
+		iMotherlandStability -= 50
 	
 	if iMotherlandStability < 0:
 		iMotherlandStability = 0

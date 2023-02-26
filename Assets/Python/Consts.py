@@ -84,6 +84,7 @@ iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari
 }
 
 lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iHawaii]
+lRevolutionaries = [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru]	# Europeans get expeditionary force at the spawn of these civs
 
 #for messages
 iDuration = 14
@@ -651,8 +652,8 @@ iLoggingCamp, 	iWindmill, 		iWatermill, 	iPlantation, 	iSlavePlantation, iQuarry
 iWinery, 		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve, iSolarCollector, iTribe,
 iContactedTribe) = range(iNumImprovements)
 
-iNumRoutes = 4
-(iRouteRoad, iRouteRailroad, iRouteIncanRoad, iRouteHighway) = range(iNumRoutes)
+iNumRoutes = 3
+(iRouteRoad, iRouteRailroad, iRouteHighway) = range(iNumRoutes)
 
 #feature & terrain
 

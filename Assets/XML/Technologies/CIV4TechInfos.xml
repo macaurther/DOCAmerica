@@ -5,14 +5,14 @@
 <!-- TODO: admin flavor -->
 	
 <!-- #1 -->
-<!-- Cost 900, iAsset 4 -->
+<!-- Cost 100, iAsset 4 -->
 
 		<TechInfo>
 			<Type>TECH_HUNTING</Type>
 			<Description>TXT_KEY_TECH_HUNTING</Description>
 			<Civilopedia>TXT_KEY_TECH_HUNTING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>900</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
@@ -42,7 +42,7 @@
 			<Description>TXT_KEY_TECH_LANDMARKS</Description>
 			<Civilopedia>TXT_KEY_TECH_LANDMARKS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>900</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
@@ -73,7 +73,7 @@
 			<Civilopedia>TXT_KEY_TECH_LINGUISTICS_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_LINGUISTICS_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>900</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
@@ -103,7 +103,7 @@
 			<Description>TXT_KEY_TECH_PATHFINDING</Description>
 			<Civilopedia>TXT_KEY_TECH_PATHFINDING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>900</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
@@ -133,7 +133,7 @@
 			<Description>TXT_KEY_TECH_CULTIVATION</Description>
 			<Civilopedia>TXT_KEY_TECH_CULTIVATION_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>900</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
@@ -163,7 +163,7 @@
 			<Description>TXT_KEY_TECH_HERBALISM</Description>
 			<Civilopedia>TXT_KEY_TECH_HERBALISM_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>900</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>
@@ -193,7 +193,7 @@
 			<Description>TXT_KEY_TECH_FISHING</Description>
 			<Civilopedia>TXT_KEY_TECH_FISHING_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>900</iCost>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_PRE_COLUMBIAN</Era>
 			<iAsset>4</iAsset>

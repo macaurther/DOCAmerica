@@ -366,7 +366,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -453,7 +452,6 @@
 			<BonusesRequired/>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -1433,7 +1431,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -1530,7 +1527,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -3642,7 +3638,6 @@
 			<BonusesRequired/>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -4072,7 +4067,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -4329,7 +4323,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -5786,7 +5779,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -8294,7 +8286,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -8563,7 +8554,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -8742,7 +8732,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -9171,7 +9160,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -9264,7 +9252,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -9357,7 +9344,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -9448,7 +9434,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>
@@ -9537,7 +9522,6 @@
 			</BonusesRequired>
 			<RoutesRequired>
 				<RouteType>ROUTE_ROAD</RouteType>
-				<RouteType>ROUTE_INCAN_ROAD</RouteType>
 				<RouteType>ROUTE_RAILROAD</RouteType>
 				<RouteType>ROUTE_HIGHWAY</RouteType>
 			</RoutesRequired>

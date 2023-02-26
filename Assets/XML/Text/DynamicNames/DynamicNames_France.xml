@@ -90,30 +90,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_FRANCE_FRANCIA</Tag>
-		<English>Francia</English>
-		<French>
-			<Text>Francie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Francia</German>
-		<Italian>Francia</Italian>
-		<Spanish>Francia</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRANCE_FRANKISH</Tag>
-		<English>Frankish</English>
-		<French>
-			<Text>franc:franque:francs:franques</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Frankish</German>
-		<Italian>Frankish</Italian>
-		<Spanish>Frankish</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_EXILE</Tag>
 		<English>Free %s1</English>
 		<French>
@@ -150,18 +126,6 @@
 		<Spanish>Qu&#233;bec</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_BABYLONIA</Tag>
-		<English>French Mandate of Mesopotamia</English>
-		<French>
-			<Text>Mandat fran&#231;ais de M&#233;sopotamie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>French Mandate of Mesopotamia</German>
-		<Italian>French Mandate of Mesopotamia</Italian>
-		<Spanish>French Mandate of Mesopotamia</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_DEPARTEMENTS_OF</Tag>
 		<English>D&#233;partements of %s1</English>
 		<French>
@@ -172,66 +136,6 @@
 		<German>D&#233;partements of %s1</German>
 		<Italian>D&#233;partements of %s1</Italian>
 		<Spanish>D&#233;partements of %s1</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_PHOENICIA</Tag>
-		<English>French Mandate of Lebanon</English>
-		<French>
-			<Text>Mandat fran&#231;ais sur le Liban</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>French Mandate of Lebanon</German>
-		<Italian>French Mandate of Lebanon</Italian>
-		<Spanish>French Mandate of Lebanon</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_ITALY</Tag>
-		<English>Cisalpine Republic</English>
-		<French>
-			<Text>R&#233;publique cisalpine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Cisalpine Republic</German>
-		<Italian>Cisalpine Republic</Italian>
-		<Spanish>Cisalpine Republic</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_ETHIOPIA</Tag>
-		<English>%s2 East Africa</English>
-		<French>
-			<Text>Afrique-Orientale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2-Ostafrika:%s2-Ostafrika:%s2-Ostafrika</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Africa Orientale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>&#193;frica Oriental %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_BYZANTIUM</Tag>
-		<English>Latin Empire</English>
-		<French>
-			<Text>Empire latin d'Orient</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Latin Empire</German>
-		<Italian>Latin Empire</Italian>
-		<Spanish>Latin Empire</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRENCH_ENGLAND</Tag>
@@ -258,30 +162,6 @@
 		<Spanish>Spanish March</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_HOLY_ROME</Tag>
-		<English>Confederation of the Rhine</English>
-		<French>
-			<Text>Conf&#233;d&#233;ration du Rhin</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Rheinbund:Rheinbund:Rheinbund</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Confederazione del Reno</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Confederaci&#243;n del Rin</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_FRENCH_NETHERLANDS</Tag>
 		<English>Batavian Republic</English>
 		<French>
@@ -292,42 +172,6 @@
 		<German>Batavian Republic</German>
 		<Italian>Batavian Republic</Italian>
 		<Spanish>Batavian Republic</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_MALI</Tag>
-		<English>%s2 West Africa</English>
-		<French>
-			<Text>Afrique-Occidentale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2-Westafrika:%s2-Westafrika:%s2-Westafrika</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Africa Occidentale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>&#193;frica Occidental %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_POLAND</Tag>
-		<English>Duchy of Warsaw</English>
-		<French>
-			<Text>Duch&#233; de Varsovie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Duchy of Warsaw</German>
-		<Italian>Duchy of Warsaw</Italian>
-		<Spanish>Duchy of Warsaw</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRENCH_INCA</Tag>
@@ -402,52 +246,12 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_NAME_KHMER</Tag>
-		<English>Indochina</English>
-		<French>
-			<Text>Indochine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Indochina:Indochina:Indochina</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Indocina</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Indochina</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_NAME_MUGHALS</Tag>
-		<English>West India</English>
-		<French>
-			<Text>Inde de l'ouest</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>West India</German>
-		<Italian>West India</Italian>
-		<Spanish>West India</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_FRENCH_CONGO</Tag>
-		<English>%s2 Equatorial Africa</English>
-		<French>
-			<Text>Afrique-&#201;quatoriale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 Equatorial Africa</German>
-		<Italian>%s2 Equatorial Africa</Italian>
-		<Spanish>%s2 Equatorial Africa</Spanish>
+		<Tag>TXT_KEY_CIV_FRENCH_HAITI</Tag>
+		<English>Saint-Domingue</English>
+		<French>Saint-Domingue</French>
+		<German>Saint-Domingue</German>
+		<Italian>Saint-Domingue</Italian>
+		<Spanish>Saint-Domingue</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_ADJECTIVE</Tag>

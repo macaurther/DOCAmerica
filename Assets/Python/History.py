@@ -188,6 +188,91 @@ def conquistadors(iTeamX, iHasMetTeamY):
 						message(iNewWorldPlayer, 'TXT_KEY_FIRST_CONTACT_NEWWORLD')
 						message(iOldWorldPlayer, 'TXT_KEY_FIRST_CONTACT_OLDWORLD')
 
+### REVOLUTION ###
+def expeditionaryForce(iRevolutionaryPlayer):
+	if civ(iRevolutionaryPlayer) in lRevolutionaries:
+		iRevolutionaryCiv = civ(iRevolutionaryPlayer)
+		bAlreadyExpeditioned = data.dExpeditionaryConquerors[iRevolutionaryCiv]
+		
+		if not bAlreadyExpeditioned:
+			if iRevolutionaryCiv == iAmerica:
+				tExpeditionarySpawn = (66, 81)
+				iExpeditionaryPlayer = slot(iEngland)
+			elif iRevolutionaryCiv == iHaiti:
+				tExpeditionarySpawn = (56, 65)
+				iExpeditionaryPlayer = slot(iFrance)
+			elif iRevolutionaryCiv == iArgentina:
+				tExpeditionarySpawn = (66, 13)
+				iExpeditionaryPlayer = slot(iSpain)
+			elif iRevolutionaryCiv == iMexico:
+				tExpeditionarySpawn = (37, 65)
+				iExpeditionaryPlayer = slot(iSpain)
+			elif iRevolutionaryCiv == iColombia:
+				tExpeditionarySpawn = (45, 56)
+				iExpeditionaryPlayer = slot(iSpain)
+			elif iRevolutionaryCiv == iPeru:
+				tExpeditionarySpawn = (41, 32)
+				iExpeditionaryPlayer = slot(iSpain)
+			else:
+				return
+		
+		data.dExpeditionaryConquerors[iRevolutionaryCiv] = True
+		
+		if not player(iExpeditionaryPlayer).isAlive():
+			return
+		
+		iModifier1 = 0
+		iModifier2 = 0
+		
+		if player(iRevolutionaryPlayer).isHuman() and player(iRevolutionaryPlayer).getNumCities() > 6:
+			iModifier1 = 2
+		else:
+			if iRevolutionaryCiv == iAmerica or player(iRevolutionaryPlayer).getNumCities() > 4:
+				iModifier1 = 3
+			if not player(iRevolutionaryPlayer).isHuman():
+				iModifier2 = 1
+				
+		if year() < year(dBirth[active()]):
+			iModifier1 += 1
+			iModifier2 += 1
+		
+		if iRevolutionaryCiv == iHaiti or iRevolutionaryCiv == iPeru:
+			iModifier1 -= 2
+			iModifier2 -= 2
+		
+		# disable birth protection if still active
+		player(iRevolutionaryPlayer).setBirthProtected(False)
+		for p in plots.all():
+			if p.getBirthProtected() == iRevolutionaryPlayer:
+				p.resetBirthProtected()
+			
+		team(iExpeditionaryPlayer).declareWar(iRevolutionaryPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
+		
+		dExpeditionSeaUnits = {
+			iAttackSea: 8 + iModifier1 + iModifier2,
+			iFerry: 6 + iModifier1 + iModifier2,
+		}
+		
+		dExpeditionUnits = {
+			iAttack: 6 + iModifier2,
+			iCounter: 4,
+			iSiege: 3 + iModifier1 + iModifier2,
+			iShockCity: 4 + iModifier1,
+		}
+		
+		seaUnits = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionSeaUnits.items())
+		seaUnits.promotion(infos.type("PROMOTION_MERCENARY"))
+		
+		units = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionUnits.items())
+		units.promotion(infos.type("PROMOTION_MERCENARY"))
+		
+		if iRevolutionaryCiv == iAmerica:
+			message(iRevolutionaryPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES_AMERICA')
+		else:
+			message(iRevolutionaryPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES')
+		message(iExpeditionaryPlayer, 'TXT_KEY_EXPEDITIONARY_EXPEDITIONARIES')
+
+
 ### TECH ACQUIRED ###
 
 @handler("techAcquired")

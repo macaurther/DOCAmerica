@@ -912,3 +912,6 @@ class Birth(object):
 		self.civ.advancedStart()
 		
 		events.fireEvent("flip", self.iPlayer)
+		
+		# MacAurther: Prepare European expeditionary force if it's a revolutionary civ being born
+		expeditionaryForce(self.iPlayer)

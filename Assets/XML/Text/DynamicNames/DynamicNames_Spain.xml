@@ -90,30 +90,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SPAIN_AL_ANDALUS</Tag>
-		<English>Al-Andalus</English>
-		<French>
-			<Text>Al-Andalus</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Al-Andalus:Al-Andalus:Al-Andalus</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Al-Andalus</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Al-Andalus</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_CASTILE</Tag>
 		<English>Castile</English>
 		<French>
@@ -186,30 +162,6 @@
 		<Spanish>Crown of %s1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SPAIN_ARAGON</Tag>
-		<English>Aragon</English>
-		<French>
-			<Text>Aragon</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Aragon</German>
-		<Italian>Aragon</Italian>
-		<Spanish>Aragon</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPAIN_ARAGONESE</Tag>
-		<English>Aragonese</English>
-		<French>
-			<Text>aragonais:aragonais:aragonaise:aragonaises</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
-		<German>Aragonese</German>
-		<Italian>Aragonese</Italian>
-		<Spanish>Aragonese</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_SPANISH_VASSAL</Tag>
 		<English>Viceroyalty of %s1</English>
 		<French>
@@ -229,42 +181,6 @@
 		</Italian>
 		<Spanish>
 			<Text>Virreinato de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_CARTHAGE</Tag>
-		<English>%s2 Lebanon</English>
-		<French>
-			<Text>Liban %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 Lebanon</German>
-		<Italian>%s2 Lebanon</Italian>
-		<Spanish>%s2 Lebanon</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_ETHIOPIA</Tag>
-		<English>%s2 East Africa</English>
-		<French>
-			<Text>Afrique orientale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2-Ostafrika:%s2-Ostafrika:%s2-Ostafrika</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Africa Orientale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>&#193;frica Oriental %s2</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
@@ -294,52 +210,20 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_BYZANTIUM</Tag>
-		<English>Latin Empire</English>
-		<French>
-			<Text>Empire latin d'Orient</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Latin Empire</German>
-		<Italian>Latin Empire</Italian>
-		<Spanish>Latin Empire</Spanish>
+		<Tag>TXT_KEY_CIV_SPANISH_INCA</Tag>
+		<English>Viceroyalty of Peru</English>
+		<French>Viceroyalty of Peru</French>
+		<German>Viceroyalty of Peru</German>
+		<Italian>Viceroyalty of Peru</Italian>
+		<Spanish>Viceroyalty of Peru</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_INDONESIA</Tag>
-		<English>%s2 East Indies</English>
-		<French>
-			<Text>Indes orientales %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>%s2 East Indies</German>
-		<Italian>%s2 East Indies</Italian>
-		<Spanish>%s2 East Indies</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_MOORS</Tag>
-		<English>%s2 Protectorate of %s1</English>
-		<French>
-			<Text>Protectorat %s2 du %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2 Protektorat %s1:%s2 Protektorat %s1:%s2 Protektorat %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Protettorato %s2 di %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Protectorado %s2 de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<Tag>TXT_KEY_CIV_SPANISH_INCA</Tag>
+		<English>Viceroyalty of New Spain</English>
+		<French>Viceroyalty of New Spain</French>
+		<German>Viceroyalty of New Spain</German>
+		<Italian>Viceroyalty of New Spain</Italian>
+		<Spanish>Viceroyalty of New Spain</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPANISH_FRANCE</Tag>
