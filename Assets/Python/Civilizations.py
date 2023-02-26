@@ -435,30 +435,15 @@ dStartingUnits = CivDict({
 		iSkirmish: 1,
 		iBase: 2,
 	},
-	iSpain: {		# ONLY for AI
-		iSettle: 1,
-		iWork: 1,
-		iBase: 2,
+	iSpain: {	
 	},
-	iPortugal: {	# ONLY for AI
-		iSettle: 1,
-		iWork: 1,
-		iBase: 2,
+	iPortugal: {
 	},
-	iEngland: {		# ONLY for AI
-		iSettle: 1,
-		iWork: 1,
-		iBase: 2,
+	iEngland: {	
 	},
-	iFrance: {		# ONLY for AI
-		iSettle: 1,
-		iWork: 1,
-		iBase: 2,
+	iFrance: {
 	},
-	iNetherlands: {	# ONLY for AI
-		iSettle: 1,
-		iWork: 1,
-		iBase: 2,
+	iNetherlands: {
 	},
 	iHawaii: {
 		iSettle: 1,
@@ -466,10 +451,7 @@ dStartingUnits = CivDict({
 		iDefend: 1,
 		iBase: 2,
 	},
-	iRussia: {		# ONLY for AI
-		iSettle: 1,
-		iWork: 1,
-		iBase: 2,
+	iRussia: {
 	},
 	iAmerica: {
 		iSettle: 8,

@@ -359,11 +359,22 @@ iCuba : 25,
 dColonistSpawnPoints = CivDict({
 iNorse : [(78, 103)],
 iSpain : [(65, 64), (65, 64), (65, 64)],
-iPortugal : [(79, 35), (79, 35)],
+iPortugal : [(72, 22), (79, 35)],
 iEngland : [(61, 76), (66, 81), (73, 86)], 
 iFrance : [(75, 86), (75, 86), (40, 66)],
 iNetherlands : [(63, 78), (66, 59)],
 iRussia : [(12, 94)],
+})
+
+# The AI had a hard time with spawning at sea, so they get to spawn on land
+dAIColonistSpawnPoints = CivDict({
+iNorse : [(77, 104)],
+iSpain : [(55, 59), (43, 62), (46, 70)],
+iPortugal : [(67, 26), (74, 46)],
+iEngland : [(51, 77), (59, 83), (67, 86)], 
+iFrance : [(58, 89), (58, 89), (38, 69)],
+iNetherlands : [(56, 81), (60, 49)],
+iRussia : [(15, 96)],
 })
 
 # Only need to specify colonists past the first given, since the first is given on initial spawn

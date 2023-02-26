@@ -353,56 +353,63 @@ def giveColonists(iPlayer):
 	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dMaxColonists:
 		if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
 			
-			tSeaPlot = dColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
+			
+			if pPlayer.isHuman():
+				tUnitPlot = dColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
+				tSeaPlot = tUnitPlot
+			else:
+				# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
+				tUnitPlot = dAIColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
+				tSeaPlot = getRoleLocation(iFerry, location(tUnitPlot))
 			
 			iReligion = player(iPlayer).getStateReligion()
 			
 			for iExpeditionType in dColonistExpeditions[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]:
 				if iExpeditionType == iCanoeSettle:		# Canoe, Settler
 					makeUnit(iPlayer, unique_unit(iPlayer, iCanoe), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
+					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
 				elif iExpeditionType == iCaravelSettle:	# Caravel, Settler, Militia (Portugal: Carrack, Settler, Settler, Militia)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tSeaPlot, iBase, 1)
+					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
+					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
 					if iCiv == iPortugal:
-						makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
+						makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
 				elif iExpeditionType == iCaravelSupport:	# Caravel, Work, Missionary (Portugal: Carrack, Work, Missionary, Militia)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
 					if iReligion > -1:
-						makeUnits(iPlayer, missionary(iReligion), tSeaPlot, 1)
+						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 					if iCiv == iPortugal:
-						createRoleUnit(iPlayer, tSeaPlot, iBase, 1)
+						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
 				elif iExpeditionType == iCaravelExplore:	# Caravel, Explore, Missionary (Portugal: Carrack, Explore, Missionary, Missionary)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tSeaPlot, iExplore, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iExplore, 1)
 					if iReligion > -1:
-						makeUnits(iPlayer, missionary(iReligion), tSeaPlot, 1)
+						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 						if iCiv == iPortugal:
-							makeUnits(iPlayer, missionary(iReligion), tSeaPlot, 1)
+							makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 				elif iExpeditionType == iCaravelConquer:	# Caravel, Attack, CitySiege (Portugal: Carrack, Attack, Attack, CitySiege)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tSeaPlot, iAttack, 1)
-					createRoleUnit(iPlayer, tSeaPlot, iCitySiege, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iCitySiege, 1)
 					if iCiv == iPortugal:
-						createRoleUnit(iPlayer, tSeaPlot, iAttack, 1)
+						createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
 				elif iExpeditionType == iGalleonSettle:	# Galleon, Settler, Militia, Work
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					makeUnit(iPlayer, iSettler, tSeaPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tSeaPlot, iBase, 1)
-					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
+					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
+					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
 				elif iExpeditionType == iGalleonSupport:	# Galleon, Explore, Work, Missionary
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tSeaPlot, iExplore, 1)
-					createRoleUnit(iPlayer, tSeaPlot, iWork, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iExplore, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
 					if iReligion > -1:
-						makeUnits(iPlayer, missionary(iReligion), tSeaPlot, 1)
+						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 				elif iExpeditionType == iGalleonConquer:	# Galleon, Attack, Shock, CitySiege
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tSeaPlot, iAttack, 1)
-					createRoleUnit(iPlayer, tSeaPlot, iShock, 1)
-					createRoleUnit(iPlayer, tSeaPlot, iCitySiege, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iCitySiege, 1)
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
 
