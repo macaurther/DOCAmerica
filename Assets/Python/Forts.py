@@ -10,6 +10,21 @@ PyPlayer = PyHelpers.PyPlayer
 
 class Forts:
 
+	def getFortTileOwner(self, iX, iY):
+		return data.dFortCulture[iX][iY]
+	
+	def getFortOwner(self, iX, iY):
+		return data.dFortMap[iX][iY]
+	
+	def convertForts(self, iPlayer, plots):
+		# Remove previous owners of forts
+		self.wipeFortCultureInArea(plots)
+		
+		# Reassign any forts to rising player
+		for plot in plots:
+			if plot.getImprovementType() == iFort:
+				self.obtainFortCulture(plot.getX(), plot.getY(), iPlayer)
+
 	def obtainFortCulture(self, iX, iY, iPlayer):
 		if iPlayer == -1:
 			return
@@ -31,6 +46,7 @@ class Forts:
 				if not self.isInBounds(iX, iY, iXLoop, iYLoop): continue
 				
 				pLoopPlot = gc.getMap().plot(iX + iXLoop, iY + iYLoop)
+				if pLoopPlot.isWater():	continue # Fort's can't control water
 				
 				if pLoopPlot.getOwner() == iPlayer or pLoopPlot.getOwner() == -1:
 					# If the tile is owned by the fort owner or unclaimed, give it to the fort owner
@@ -131,9 +147,9 @@ class Forts:
 						gc.getMap().plot(iXLoop, iYLoop).setOwnerNoUnitCheck(data.dFortCulture[iXLoop][iYLoop])
 
 
-	def wipeFortCultureInArea(self, tArea):
-		for tPlot in tArea:
-			data.dFortCulture[tPlot[0]][tPlot[1]] = -1
-			data.dFortMap[tPlot[0]][tPlot[1]] = -1
+	def wipeFortCultureInArea(self, plots):
+		for plot in plots:
+			data.dFortCulture[plot.getX()][plot.getY()] = -1
+			data.dFortMap[plot.getX()][plot.getY()] = -1
 
 forts = Forts()

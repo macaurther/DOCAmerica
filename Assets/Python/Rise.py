@@ -5,6 +5,7 @@ from Locations import *
 from RFCUtils import *
 from Slots import *
 from History import *
+from Forts import forts
 
 from Events import events, handler
 from Collapse import completeCollapse
@@ -900,6 +901,9 @@ class Birth(object):
 		
 		convertSurroundingPlotCulture(self.iPlayer, flippedPlots.land())
 		convertSurroundingPlotCulture(self.iPlayer, flippedPlots.water().where(lambda p: p.getPlayerCityRadiusCount(self.iPlayer) > 0))
+		
+		# MacAurther: Flip forts
+		forts.convertForts(self.iPlayer, flippedPlots.land())
 		
 		for iOwner, cityNames in flippedPlayerCities.items():
 			self.warOnFlip(iOwner, cityNames)
