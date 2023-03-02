@@ -1363,52 +1363,6 @@ def getHelpIndependentFilms(argsList):
 
 	return szHelp
 
-######## ANCIENT OLYMPICS ###########
-
-def canTriggerAncientOlympics(argsList):
-
-	kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-
-	stateReligion = player.getStateReligion()
-	
-	if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_PROTESTANTISM'):
-		return false
-
-	if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_CATHOLICISM'):
-		return false
-
-	if stateReligion == CvUtil.findInfoTypeNum(gc.getReligionInfo,gc.getNumReligionInfos(),'RELIGION_ISLAM'):
-		return false
-
-	return true
-
-def doAncientOlympics2(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-
-	map = gc.getMap()
-
-	for j in range(gc.getMAX_CIV_PLAYERS()):
-		loopPlayer = gc.getPlayer(j)
-		if j != kTriggeredData.ePlayer and loopPlayer.isAlive() and not loopPlayer.isMinorCiv():
-
-			for i in range(map.numPlots()):
-				plot = map.plotByIndex(i)
-				if not plot.isWater() and plot.getOwner() == kTriggeredData.ePlayer and plot.isAdjacentPlayer(j, true):
-					loopPlayer.AI_changeMemoryCount(kTriggeredData.ePlayer, MemoryTypes.MEMORY_EVENT_GOOD_TO_US, 1)
-					break
-		
-	return 1
-
-def getHelpAncientOlympics2(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-		
-	szHelp = localText.getText("TXT_KEY_EVENT_ANCIENTOLYMPICS_HELP_2", ( 1, ))
-
-	return szHelp
-
 
 ######## MODERN OLYMPICS ###########
 
@@ -1417,16 +1371,6 @@ def canTriggerModernOlympics(argsList):
 	kTriggeredData = argsList[0]
 	trigger = gc.getEventTriggerInfo(kTriggeredData.eTrigger)
 	player = gc.getPlayer(kTriggeredData.ePlayer)
-	
-	kOrigTriggeredData = player.getEventOccured(trigger.getPrereqEvent(0))
-	
-	if (kOrigTriggeredData == None):
-		return false
-
-	kActualTriggeredDataObject = player.getEventTriggered(kTriggeredData.iId)
-	kActualTriggeredDataObject.iCityId = kOrigTriggeredData.iCityId
-	kActualTriggeredDataObject.iPlotX = kOrigTriggeredData.iPlotX
-	kActualTriggeredDataObject.iPlotY = kOrigTriggeredData.iPlotY
 	
 	return true
 

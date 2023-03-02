@@ -155,7 +155,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_SKIRMISHER</UnitType>
+					<UnitType>UNIT_ATLATLIST</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</MiddleArtDefineTag>

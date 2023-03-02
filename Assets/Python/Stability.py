@@ -554,7 +554,7 @@ def calculateStability(iPlayer):
 	elif iCiv == iNorse:
 		iAdministration += 5
 	elif iCiv == iPortugal:
-		iAdministration += 50
+		iAdministration += 70
 	elif iCiv == iRussia:
 		iAdministration += 75
 	elif iCiv == iSpain:

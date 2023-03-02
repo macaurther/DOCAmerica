@@ -314,63 +314,63 @@ lCivilizations = [
 		iHaiti,
 		iGold=100,
 		lCivics=[iMonarchy, iCouncil, iSpecialization, iAgrarianism, iIsolationism],
-		techs=techs.column(6)
+		techs=techs.column(12)
 	),
 	Civilization(
 		iArgentina,
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iGeology)
+		techs=techs.column(12).including(iGeology)
 	),
 	Civilization(
 		iMexico,
 		iGold=500,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iFederalism)
+		techs=techs.column(12).including(iFederalism)
 	),
 	Civilization(
 		iColombia,
 		iGold=750,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iRightsOfMan)
+		techs=techs.column(12).including(iRightsOfMan)
 	),
 	Civilization(
 		iPeru,
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iGeology)
+		techs=techs.column(12).including(iGeology)
 	),
 	Civilization(
 		iBrazil,
 		iGold=1600,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iMetallurgy, iProtectionism, iHydrology)
+		techs=techs.column(12).including(iMetallurgy, iProtectionism, iHydrology)
 	),
 	Civilization(
 		iVenezuela,
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iGeology)
+		techs=techs.column(12).including(iGeology)
 	),
 	Civilization(
 		iCanada,
 		iGold=1000,
 		iStateReligion=iProtestantism,
 		lCivics=[iConfederacy, iCommonLaw, iIndenturedServitude, iAgrarianism, iHaven, iHomesteads],
-		techs=techs.column(14)
+		techs=techs.column(15)
 	),
 	Civilization(
 		iCuba,
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
-		techs=techs.column(11).including(iGeology)
+		techs=techs.column(16)
 	),
 ]
 

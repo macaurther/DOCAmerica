@@ -90,8 +90,3 @@ def onCapitalMoved(city):
 def onTechAcquired(iTech, iTeam, iPlayer):
 	iCiv = civ(iPlayer)
 	iEra = infos.tech(iTech).getEra()
-	
-	if iCiv == iInca:
-		if player(iCiv).getPeriod() == -1:
-			if iEra == iRevolutionaryEra:
-				setPeriod(iInca, iPeriodLateInca)

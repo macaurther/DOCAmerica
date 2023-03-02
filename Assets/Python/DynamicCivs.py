@@ -551,17 +551,7 @@ def specificAdjective(iPlayer):
 	
 	bMonarchy = not isCommunist(iPlayer) and not isFascist(iPlayer) and not isRepublic(iPlayer)
 
-			
-	if iCiv == iFrance:
-		if iEra == iColonialEra:
-			return "TXT_KEY_CIV_FRANCE_FRANKISH"
-	
-	elif iCiv == iEngland:
-		if getColumn(iPlayer) >= 11 and cities.rectangle(tBritain).owner(iPlayer) >= 3:
-			return "TXT_KEY_CIV_ENGLAND_BRITISH"
-			
-			
-	
+
 ### Title methods ###
 
 def title(iPlayer):
@@ -707,8 +697,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			if bEmpire:
 				return "TXT_KEY_EMPIRE_ADJECTIVE"
 		
-			if cities.rectangle(tBritain).owner(iPlayer) >= 3:
-				return "TXT_KEY_CIV_ENGLAND_UNITED_KINGDOM_OF"
 			
 	elif iCiv == iNetherlands:
 		if bCityStates:
