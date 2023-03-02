@@ -56,6 +56,7 @@ lBirthOrder = [
 lCivOrder = lBirthOrder + [
 	iIndependent,
 	iIndependent2,
+	iIndependent3,
 	iNative,
 	iBarbarian
 ]
@@ -104,7 +105,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 1
+iNumMinorCities = 3
 
 # scripted conquerors
 iNumConquests = 0
@@ -229,15 +230,15 @@ lBirthCivs = dBirth.keys()
 dFall = CivDict({
 iMaya : 900,
 iTeotihuacan : 1150,
-iTiwanaku : 1000,
-iWari : 1000,
+iTiwanaku : 1200,
+iWari : 1200,
 iMississippi : 1400,
 iPuebloan : 1650,
-iMuisca : 1540,
-iChimu : 1470,
+iMuisca : 1600,
+iChimu : 1500,
 iInuit : 1600,
-iInca : 1533,
-iAztecs : 1521,
+iInca : 1600,
+iAztecs : 1600,
 iIroquois : 1750,
 iSpain : 1807,
 iPortugal : 1807,

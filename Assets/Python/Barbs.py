@@ -9,7 +9,9 @@ from Locations import *
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-(255, (32, 58), iNative, 'Danibaan', 2, iHolkan, 1),		# Monte Albán
+(250, (31, 58), iIndependent, 'Monte Alban', 2, iArcher, 3),		# Zapotec
+(250, (47, 36), iIndependent2, 'Nazca', 2, iArcher, 2),				# Nazca
+(1836, (33, 70), iIndependent2, 'Houston', 3, iMilitia5, 4),		# Republic of Texas
 )
 
 # do some research on dates here
@@ -30,16 +32,6 @@ def helpMinorStates():
 				if plot.isCity() and is_minor(iOwner) and plot.getNumUnits() < 4:
 					makeUnit(iOwner, random_entry(lUnits), plot)
 
-
-@handler("BeginGameTurn")
-def spawnBarbarians(iGameTurn):
-	iHandicap = infos.handicap().getBarbarianSpawnModifier()
-
-	#pirates in the Caribbean
-	if year().between(1600, 1800):
-		checkSpawn(iNative, iPrivateer, 1, (41, 57), (58, 66), spawnPirates, iGameTurn, 5, 0)
-
-
 @handler("unitPillage")
 def onUnitPillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 	# If pillage a tribe, get uprising
@@ -48,24 +40,37 @@ def onUnitPillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 		iX = pUnit.getX()
 		iY = pUnit.getY()
 		spawnTribeDefenders(iX, iY)
+		
+
+@handler("BeginGameTurn")
+def spawnBarbarians(iGameTurn):
+	iHandicap = infos.handicap().getBarbarianSpawnModifier()
+
+	#pirates in the Caribbean
+	if year().between(1600, 1800):
+		checkSpawn(iBarbarian, iPrivateer, 1, (41, 57), (58, 66), spawnPirates, iGameTurn, 5, 0)
+	
+	if iGameTurn < year(tMinorCities[len(tMinorCities)-1][0])+10:
+		foundMinorCities(iGameTurn)
+
 
 def foundMinorCities(iGameTurn):
 	for i, (iYear, tPlot, iCiv, sName, iPopulation, iUnitType, iNumUnits) in enumerate(tMinorCities):
 		if iGameTurn < year(iYear): return
 		if iGameTurn > year(iYear)+10: continue
-		
+
 		if data.lMinorCityFounded[i]: continue
-		
+
 		if plot(tPlot).isCity(): continue
-		
+
 		# special cases
 		if not canFoundCity(sName): continue
-		
+
 		lReligions = []
 		bForceSpawn = False
-		
+
 		if not isFree(iCiv, tPlot, bNoCity=True, bNoCulture=not bForceSpawn): continue
-		
+
 		evacuate(slot(iCiv), tPlot)
 	
 		if foundCity(iCiv, tPlot, sName, iPopulation, iUnitType, iNumUnits, lReligions):

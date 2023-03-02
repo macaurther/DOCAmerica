@@ -19197,6 +19197,11 @@ int CvCity::calculateImmigrationRate()
 		iImmigrationRate += 2;
 	}
 
+	if (iImmigrationRate < 0)
+	{
+		iImmigrationRate = 0;
+	}
+
 	// Immigration Modifiers
 	int iImmigrationModifier = 100;
 	if (isHasBuildingEffect((BuildingTypes)BUILDING_HEADRIGHT))

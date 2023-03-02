@@ -2580,7 +2580,7 @@ bool CvPlayer::isBarbarian() const
 // Leoreth
 bool CvPlayer::isIndependent() const
 {
-	return getCivilizationType() == INDEPENDENT || getCivilizationType() == INDEPENDENT2;
+	return getCivilizationType() == INDEPENDENT || getCivilizationType() == INDEPENDENT2 || getCivilizationType() == INDEPENDENT3;
 }
 
 
@@ -11600,7 +11600,7 @@ void CvPlayer::verifyAlive()
 
 		if (!bKill)
 		{
-			if (!isBarbarian() && !isNative()) // Leoreth: natives should behave like barbarians
+			if (!isBarbarian() && !isNative() && !isIndependent()) // Leoreth: natives should behave like barbarians -> MacAurther: Independents too?
 			{
 				if (getNumCities() == 0 /*&& getAdvancedStartPoints() < 0*/)
 				{

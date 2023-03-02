@@ -544,6 +544,22 @@ def calculateStability(iPlayer):
 	iAdministrationImprovements = plots.core(iPlayer).owner(iPlayer).where(lambda plot: plot.getWorkingCity() and plot.getImprovementType() in [iVillage, iTown]).count()
 	iAdministration += getAdministrationModifier(iCurrentEra) * iAdministrationImprovements / 100
 	
+	# MacAurther: Europeans RP: Increased Administration (i.e. their core cities are off of the map)
+	if iCiv == iEngland:
+		iAdministration += 100
+	elif iCiv == iFrance:
+		iAdministration += 110
+	elif iCiv == iNetherlands:
+		iAdministration += 25
+	elif iCiv == iNorse:
+		iAdministration += 5
+	elif iCiv == iPortugal:
+		iAdministration += 50
+	elif iCiv == iRussia:
+		iAdministration += 75
+	elif iCiv == iSpain:
+		iAdministration += 90
+	
 	iCurrentPower = pPlayer.getPower()
 	iPreviousPower = pPlayer.getPowerHistory(since(turns(10)))
 	
@@ -600,22 +616,22 @@ def calculateStability(iPlayer):
 	# European RP: Extra stability from Motherland
 	iMotherlandStability = 0
 	if iCiv == iEngland:
-		iMotherlandStability = 100
+		iMotherlandStability = 10
 	elif iCiv == iFrance:
-		iMotherlandStability = 100
+		iMotherlandStability = 10
 	elif iCiv == iNetherlands:
-		iMotherlandStability = 25
+		iMotherlandStability = 10
 	elif iCiv == iNorse:
 		iMotherlandStability = 5
 	elif iCiv == iPortugal:
-		iMotherlandStability = 75
+		iMotherlandStability = 5
 	elif iCiv == iRussia:
 		iMotherlandStability = 10
 	elif iCiv == iSpain:
-		iMotherlandStability = 90
+		iMotherlandStability = 15
 		
 	if iCurrentEra >= iRevolutionaryEra:
-		iMotherlandStability -= 50
+		iMotherlandStability -= 20
 	
 	if iMotherlandStability < 0:
 		iMotherlandStability = 0

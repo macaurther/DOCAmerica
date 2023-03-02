@@ -23,15 +23,16 @@ def colombianPower(iOwner, iPlayer, city, bConquest):
 @handler("techAcquired")
 # Mayan UP
 def mayanPower(iTech, iTeam, iPlayer):
-	iEra = player(iPlayer).getCurrentEra()
-	if civ(iPlayer) == iMaya and iEra < iColonialEra:
-		iNumCities = player(iPlayer).getNumCities()
-		if iNumCities > 0:
-			iFood = scale(20) / iNumCities
-			for city in cities.owner(iPlayer):
-				city.changeFood(iFood)
-			
-			message(iPlayer, 'TXT_KEY_MAYA_UP_EFFECT', infos.tech(iTech).getText(), iFood)
+	if turn() > 0: # MacAurther: don't give food for starting techs
+		iEra = player(iPlayer).getCurrentEra()
+		if civ(iPlayer) == iMaya and iEra < iColonialEra:
+			iNumCities = player(iPlayer).getNumCities()
+			if iNumCities > 0:
+				iFood = scale(20) / iNumCities
+				for city in cities.owner(iPlayer):
+					city.changeFood(iFood)
+				
+				message(iPlayer, 'TXT_KEY_MAYA_UP_EFFECT', infos.tech(iTech).getText(), iFood)
 
 @handler("cityBuilt")
 # Puelboan UP

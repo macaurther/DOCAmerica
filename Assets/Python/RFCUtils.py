@@ -260,7 +260,7 @@ def removeReligion(city, iReligion):
 	if city.isHasReligion(iReligion) and not city.isHolyCity():
 		city.setHasReligion(iReligion, False, False, False)
 	
-	# MacAurther: not every religion may have each building
+	# MacAurther: not every religion may have each building, check that the value is set before calling
 	iTemple = temple(iReligion)
 	iMonastery = monastery(iReligion)
 	iCathedral = cathedral(iReligion)

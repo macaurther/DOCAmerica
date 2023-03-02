@@ -135,12 +135,8 @@ def getCityValue(city, iCompany):
 			iValue -= 1
 	
 	# various bonuses
-	if iCompany == iSilkRoute:
-		if city.hasBuilding(unique_building(iOwner, iWeaver)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iMarket)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iStable)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iPostOffice)): iValue += 1
+	if iCompany == iSilkRoute:	# MacAurther TODO: Remove Silk Road Company
+		pass
 
 	elif iCompany == iTradingCompany:
 		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1

@@ -17986,7 +17986,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=58
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -18584,6 +18583,7 @@ BeginPlot
 	x=32,y=58
 	BonusType=BONUS_STONE
 	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot

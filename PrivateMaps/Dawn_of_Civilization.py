@@ -12,7 +12,7 @@ lCustomMapOptions = [
 	("Starting Date", ["250 AD", "1500 AD", "1770 AD"], "250 AD"),
 ]
 
-lMinorCivs = [iNative, iIndependent, iIndependent2]
+lMinorCivs = [iNative, iIndependent, iIndependent2, iIndependent3]
 
 
 def getDescription():

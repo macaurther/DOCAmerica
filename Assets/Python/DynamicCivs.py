@@ -721,10 +721,10 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_NETHERLANDS_UNITED_KINGDOM_OF"
 			
 	elif iCiv == iPortugal:
-		if capital in cities.core(iBrazil) and not player(iBrazil).isAlive():
+		if capital in cities.core(iBrazil) and not player(iBrazil).isAlive() and year() > year(dBirth[iBrazil]):
 			return "TXT_KEY_CIV_PORTUGAL_BRAZIL"
 			
-		if bEmpire and iEra >= iRevolutionaryEra:
+		if bEmpire and iEra >= iColonialEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iInca:
