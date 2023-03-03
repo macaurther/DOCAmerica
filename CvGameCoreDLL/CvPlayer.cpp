@@ -5604,7 +5604,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 			if (canReceiveGoody(pPlot, eGoody, pUnit))
 			{
 				// MacAurther: Native techs: Only get Goody if you have the Linguistics Tech
-				if (GET_TEAM(getTeam()).isHasTech(TECH_LINGUISTICS))
+				if (GET_TEAM(getTeam()).isHasTech((TechTypes)LINGUISTICS))
 				{
 					receiveGoody(pPlot, eGoody, pUnit);
 				}
@@ -5987,10 +5987,10 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 	if (!(GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getUnitInfo(eUnit).getPrereqAndTech()))))
 	{
 		// MacAurther: Merchant Trade Civic
-		bool bMerhcantTradeAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_MUSKETMAN && hasCivic(CIVIC_MERCHANT_TRADE) && GC.getGameINLINE().countKnownTechNumTeams(TECH_ECONOMICS) > 0;
+		bool bMerhcantTradeAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_MUSKETMAN && hasCivic(CIVIC_MERCHANT_TRADE) && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)ECONOMICS) > 0;
 
 		// MacAurther: Old World Tactics Tech
-		bool bOldWorldTacticsAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_HORSE_ARCHER && GC.getGameINLINE().countKnownTechNumTeams(TECH_OLD_WORLD_TACTICS) > 0;
+		bool bOldWorldTacticsAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_HORSE_ARCHER && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)OLD_WORLD_TACTICS) > 0;
 
 		if (!bMerhcantTradeAllows && !bOldWorldTacticsAllows)
 		{
@@ -25474,4 +25474,21 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 	}
 
 	return false;
+}
+
+// MacAurther: Forts
+int CvPlayer::getFortRange()
+{
+	if(GET_TEAM(getTeam()).isHasTech((TechTypes)PIONEERING))
+	{
+		return 2;
+	}
+
+	// French UP
+	if(getCivilizationType() == FRANCE)
+	{
+		return 2;
+	}
+
+	return 1;
 }

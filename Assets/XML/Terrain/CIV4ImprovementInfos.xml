@@ -1900,7 +1900,7 @@
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
-					<BonusType>BONUS_COCHINEAL</BonusType>
+					<BonusType>BONUS_DYE_COCHINEAL</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>

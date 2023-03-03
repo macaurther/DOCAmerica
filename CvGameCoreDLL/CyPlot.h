@@ -305,6 +305,8 @@ public:
 	int getExpansion();
 	bool isExpansion();
 
+	void updateFortClaims(int ePlayer);	// MacAurther
+
 private:
 	CvPlot* m_pPlot;
 };

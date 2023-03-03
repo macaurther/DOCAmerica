@@ -37,18 +37,24 @@ typedef list<char*> LISTCHAR;
 #define IMPROVEMENT_COTTAGE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE"))					// MacAurther
 #define IMPROVEMENT_PLANTATION	((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_PLANTATION"))				// MacAurther
 #define IMPROVEMENT_SLAVE_PLANTATION	((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_SLAVE_PLANTATION"))	// MacAurther
+#define IMPROVEMENT_FORT		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FORT"))						// MacAurther
 #define IMPROVEMENT_TRIBE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRIBE"))					// MacAurther
 #define IMPROVEMENT_CONTACTED_TRIBE ((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CONTACTED_TRIBE"))		// MacAurther
 
-#define NUM_NATIVE_TECHS		((TechTypes)GC.getInfoTypeForString("TECH_FISHING") + 1)							// MacAurther
-#define TECH_LINGUISTICS		((TechTypes)GC.getInfoTypeForString("TECH_LINGUISTICS"))							// MacAurther
-#define TECH_OLD_WORLD_TACTICS	((TechTypes)GC.getInfoTypeForString("TECH_OLD_WORLD_TACTICS"))						// MacAurther
-#define TECH_ECONOMICS			((TechTypes)GC.getInfoTypeForString("TECH_ECONOMICS"))								// MacAurther
+#define NUM_NATIVE_TECHS		((TechTypes)FISHING + 1)															// MacAurther
 
 #define ESPIONAGEMISSION_COUP	((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
 
 enum DoCTechs
 {
+	HUNTING,
+	LANDMARKS,
+	LINGUISTICS,
+	PATHFINDING,
+	CULTIVATION,
+	HERBALISM,
+	FISHING,
+
 	TANNING,
 	MINING,
 	POTTERY,
@@ -73,7 +79,9 @@ enum DoCTechs
 	LAW,
 	MEDICINE,
 
-	OLD_WORLD_KNOWLEDGE,
+	OLD_WORLD_TACTICS,
+	OLD_WORLD_SCIENCE,
+	OLD_WORLD_CULTURE,
 
 	GUNPOWDER,
 	COMPANIES,
@@ -137,7 +145,7 @@ enum DoCTechs
 	PHYSICS,
 	GEOLOGY,
 	RIGHTS_OF_MAN,
-	FEDERALISM,
+	BALANCE_OF_POWER,
 
 	MACHINE_TOOLS,
 	THERMODYNAMICS,

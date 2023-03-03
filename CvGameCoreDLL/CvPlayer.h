@@ -1377,6 +1377,7 @@ public:
 
 	// MacAurther
 	int getRegionPowers();
+	int getFortRange();
 
 protected:
 

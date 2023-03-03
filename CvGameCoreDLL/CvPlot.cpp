@@ -215,6 +215,10 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	m_iCultureConversionRate = 0;
 	m_iTotalCulture = 0;
 
+	// MacAurther
+	m_fortClaimer = NULL;
+	m_fortOwner = NO_PLAYER;
+
 	m_bStartingPlot = false;
 	m_bHills = false;
 	m_bNOfRiver = false;
@@ -3464,57 +3468,65 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 	iBestCulture = 0;
 	eBestPlayer = NO_PLAYER;
 
-	for (iI = 0; iI < MAX_PLAYERS; ++iI)
+	// MacAurther: Forts take precedence
+	if(getFortOwner() != NO_PLAYER)
 	{
-		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		eBestPlayer = getFortOwner();
+	}
+	else
+	{
+		for (iI = 0; iI < MAX_PLAYERS; ++iI)
 		{
-			iCulture = bActual ? getActualCulture((PlayerTypes)iI) : getCulture((PlayerTypes)iI);
-
-			if (iCulture > 0)
+			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
-				// MacAurther: Canadian UP: Receive cultural dominance on any Historical tile with your culture
-				if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == CANADA)
-				{
-					if (getSettlerValue((PlayerTypes)iI) >= 90) // Great than or equal to 90 is a historical tile
-					{
-						eBestPlayer = ((PlayerTypes)iI);
-						break;
-					}
-				}
+				iCulture = bActual ? getActualCulture((PlayerTypes)iI) : getCulture((PlayerTypes)iI);
 
-				// All major civilizations have easier control over their own core (80% rule)
-				if (!GET_PLAYER((PlayerTypes)iI).isMinorCiv() && !GET_PLAYER((PlayerTypes)iI).isBarbarian()) 
+				if (iCulture > 0)
 				{
-					if (isCore((PlayerTypes)iI)) 
+					// MacAurther: Canadian UP: Receive cultural dominance on any Historical tile with your culture
+					if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == CANADA)
 					{
-						iCulture *= 4;
-					}
-				}
-
-				// Independents get the same advantage over a civ's core if that civ is dead
-				if (GET_PLAYER((PlayerTypes)iI).isIndependent())
-				{
-					for (int iJ = 0; iJ < MAX_CIV_PLAYERS; iJ++)
-					{
-						if (GET_PLAYER((PlayerTypes)iJ).isMinorCiv())
+						if (getSettlerValue((PlayerTypes)iI) >= 90) // Great than or equal to 90 is a historical tile
 						{
-							continue;
-						}
-
-						if (isCore((PlayerTypes)iI) && GC.getGame().getGameTurn() > GET_PLAYER((PlayerTypes)iJ).getInitialBirthTurn() && !GET_PLAYER((PlayerTypes)iI).isAlive())
-						{
-							iCulture *= 4;
+							eBestPlayer = ((PlayerTypes)iI);
 							break;
 						}
 					}
-				}
 
-				if (isWithinCultureRange((PlayerTypes)iI))
-				{
-					if ((iCulture > iBestCulture) || ((iCulture == iBestCulture) && (getOwnerINLINE() == iI)))
+					// All major civilizations have easier control over their own core (80% rule)
+					if (!GET_PLAYER((PlayerTypes)iI).isMinorCiv() && !GET_PLAYER((PlayerTypes)iI).isBarbarian()) 
 					{
-						iBestCulture = iCulture;
-						eBestPlayer = ((PlayerTypes)iI);
+						if (isCore((PlayerTypes)iI)) 
+						{
+							iCulture *= 4;
+						}
+					}
+
+					// Independents get the same advantage over a civ's core if that civ is dead
+					if (GET_PLAYER((PlayerTypes)iI).isIndependent())
+					{
+						for (int iJ = 0; iJ < MAX_CIV_PLAYERS; iJ++)
+						{
+							if (GET_PLAYER((PlayerTypes)iJ).isMinorCiv())
+							{
+								continue;
+							}
+
+							if (isCore((PlayerTypes)iI) && GC.getGame().getGameTurn() > GET_PLAYER((PlayerTypes)iJ).getInitialBirthTurn() && !GET_PLAYER((PlayerTypes)iI).isAlive())
+							{
+								iCulture *= 4;
+								break;
+							}
+						}
+					}
+
+					if (isWithinCultureRange((PlayerTypes)iI))
+					{
+						if ((iCulture > iBestCulture) || ((iCulture == iBestCulture) && (getOwnerINLINE() == iI)))
+						{
+							iBestCulture = iCulture;
+							eBestPlayer = ((PlayerTypes)iI);
+						}
 					}
 				}
 			}
@@ -6192,6 +6204,9 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		{
 			CvEventReporter::getInstance().improvementDestroyed(eOldImprovement, getOwnerINLINE(), getX_INLINE(), getY_INLINE());
 		}
+
+		// MacAurther: Forts
+		updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
 
 		CvCity* pWorkingCity = getWorkingCity();
 		if (NULL != pWorkingCity)
@@ -9824,6 +9839,10 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iTotalCulture);
 	pStream->Read(&m_iContinentArea);
 
+	// MacAurther
+	pStream->Read((int*)&m_fortClaimer);
+	pStream->Read((int*)&m_fortOwner);
+
 	pStream->Read(&bVal);
 	m_bStartingPlot = bVal;
 	pStream->Read(&bVal);
@@ -10092,6 +10111,10 @@ void CvPlot::write(FDataStreamBase* pStream)
 	pStream->Write(m_iCultureConversionRate); // Leoreth
 	pStream->Write(m_iTotalCulture); // Leoreth
 	pStream->Write(m_iContinentArea); // Leoreth
+
+	// MacAurther
+	pStream->Write(m_fortClaimer);
+	pStream->Write(m_fortOwner);
 
 	pStream->Write(m_bStartingPlot);
 	pStream->Write(m_bHills);
@@ -11767,4 +11790,135 @@ bool CvPlot::isExpansion() const
 bool CvPlot::isExpansionEffect(PlayerTypes ePlayer) const
 {
 	return getExpansion() == ePlayer && (getBirthProtected() == ePlayer || getBirthProtected() == NO_PLAYER);
+}
+
+
+// MacAurther: Forts
+PlayerTypes CvPlot::getFortOwner() const
+{
+	return m_fortOwner;
+}
+
+CvPlot* CvPlot::getFortClaimer() const
+{
+	return m_fortClaimer;
+}
+
+void CvPlot::setFortOwner(PlayerTypes ePlayer)
+{
+	m_fortOwner = ePlayer;
+}
+
+void CvPlot::setFortClaimer(CvPlot* pPlot)
+{
+	m_fortClaimer = pPlot;
+}
+
+void CvPlot::addFortClaims(PlayerTypes ePlayer)
+{
+	// Find out the range of the fort that's claiming
+	int range = GET_PLAYER(ePlayer).getFortRange();
+	// Check surrounding area for plots not already claimed
+	for(int iI = -range; iI < range + 1; iI++){
+		for(int iJ = -range; iJ < range + 1; iJ++){
+			// Exclude corners of BFC
+			if(range == 2 && (abs(iI) == 2 && abs(iJ) == 2))
+			{
+				continue;
+			}
+
+			CvPlot* pLoopPlot = GC.getMap().plot(getX() + iI, getY() + iJ);
+			if(pLoopPlot != NULL)
+			{
+				// Forts can't claim water tiles
+				if(pLoopPlot->isWater())
+				{
+					continue;
+				}
+
+				// If this plot was unclaimed by forts or other players, claim it
+				if(pLoopPlot->getOwner() == NO_PLAYER || (iI == 0 && iJ == 0))	// Make sure to set the plot the fort is built on to be claimed by itself (useful in the case of overlapping fort claims)
+				{
+					pLoopPlot->setFortOwner(ePlayer);
+					pLoopPlot->setFortClaimer(this);
+					pLoopPlot->updateCulture(true, true);
+				}
+			}
+		}
+	}
+}
+
+void CvPlot::removeFortClaims()
+{
+	// Check surrounding area for plots claimed by forts
+	for(int iI = -2; iI < 3; iI++){
+		for(int iJ = -2; iJ < 3; iJ++){
+			CvPlot* pLoopPlot = GC.getMap().plot(getX() + iI, getY() + iJ);
+			if(pLoopPlot != NULL)
+			{
+				// Forts can't claim water tiles
+				if(pLoopPlot->isWater())
+				{
+					continue;
+				}
+
+				// If this plot was claimed by us, set it free
+				if(pLoopPlot->getFortClaimer() == this)
+				{
+					pLoopPlot->setFortOwner(NO_PLAYER);
+					pLoopPlot->setFortClaimer(NULL);
+					pLoopPlot->updateCulture(true, true);
+				}
+			}
+		}
+	}
+}
+
+void CvPlot::updateFortClaims(PlayerTypes ePlayer)
+{
+	// See if the fort was destroyed
+	if(getImprovementType() == NO_IMPROVEMENT && getFortClaimer() == this)
+	{
+		removeFortClaims();
+	}
+
+	// See if the fort needs to be re-assigned
+	if(ePlayer != NO_PLAYER && getFortClaimer() == this)
+	{
+		removeFortClaims();
+	}
+
+	// Check to see who should own the fort
+	if(ePlayer == NO_PLAYER)
+	{
+		ePlayer = getOwner();
+	}
+
+	// Forts can be built in neutral territory, so find out who should own it if that is the case
+	if(ePlayer == NO_PLAYER)
+	{
+		bool bFoundWorker = false;
+		// Search through units on this tile that is building a fort
+		for(int iI = 0; iI < getNumUnits(); iI++)
+		{
+			CvUnit* pUnit = getUnitByIndex(iI);
+			if(pUnit->getScriptData().compare("BuildingFort"))
+			{
+				ePlayer = pUnit->getOwner();
+				bFoundWorker = true;
+			}
+		}
+
+		// If no worker was found, give the fort to a unit on that tile (MacAurther TODO: This could fail sometimes)
+		if(!bFoundWorker && getNumUnits() > 0)
+		{
+			ePlayer = getUnitByIndex(0)->getOwner();
+		}
+	}
+
+	// Finally, assign fort claims
+	if(getImprovementType() == IMPROVEMENT_FORT && ePlayer != NO_PLAYER)
+	{
+		addFortClaims(ePlayer);
+	}
 }

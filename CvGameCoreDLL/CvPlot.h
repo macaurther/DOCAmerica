@@ -571,6 +571,15 @@ public:
 	bool isExpansion() const;
 	bool isExpansionEffect(PlayerTypes ePlayer) const;
 
+	// MacAurther: Forts
+	PlayerTypes getFortOwner() const;
+	CvPlot* getFortClaimer() const;
+	void setFortOwner(PlayerTypes ePlayer);
+	void setFortClaimer(CvPlot* pPlot);
+	void addFortClaims(PlayerTypes ePlayer);
+	void removeFortClaims();
+	void updateFortClaims(PlayerTypes ePlayer);
+
 	// Leoreth: graphics paging
 	static void EvictGraphicsIfNecessary();
 	void pageGraphicsOut();
@@ -601,6 +610,10 @@ protected:
 	int m_iContinentArea;
 	short m_iCultureConversionRate;
 	int m_iTotalCulture;
+
+	// MacAurther: Forts
+	CvPlot* m_fortClaimer;		// pointer to the tile where the fort that exerts control over this tile
+	PlayerTypes m_fortOwner;	// the player ID of who owns this tile via Forts
 
 	bool m_bStartingPlot:1;
 	bool m_bHills:1;

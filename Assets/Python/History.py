@@ -218,7 +218,7 @@ def expeditionaryForce(iRevolutionaryPlayer):
 		
 		data.dExpeditionaryConquerors[iRevolutionaryCiv] = True
 		
-		if not player(iExpeditionaryPlayer) is None:
+		if iExpeditionaryPlayer == -1 or player(iExpeditionaryPlayer) is None:
 			return
 		
 		iModifier1 = 0

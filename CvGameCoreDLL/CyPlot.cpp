@@ -1219,3 +1219,8 @@ bool CyPlot::isExpansion()
 {
 	return m_pPlot ? m_pPlot->isExpansion() : -1;
 }
+
+void CyPlot::updateFortClaims(int ePlayer)
+{
+	if (m_pPlot) m_pPlot->updateFortClaims((PlayerTypes)ePlayer);
+}

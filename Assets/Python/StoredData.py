@@ -199,12 +199,6 @@ class GameData:
 		
 		self.iSeed = gc.getGame().getSorenRandNum(100, 'random seed')
 		
-		# Forts
-		
-		self.bCheckForts = False
-		self.dFortMap = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
-		self.dFortCulture = [[-1 for i in range(iWorldY)] for j in range(iWorldX)]
-		
 		# AI Wars
 		
 		self.iNextTurnAIWar = -1
