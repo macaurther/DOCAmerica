@@ -75,19 +75,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_8</Tag>
-		<English>Deep South</English>
-		<French>Deep South</French>
-		<German>Deep South</German>
-		<Italian>Deep South</Italian>
-		<Spanish>Deep South</Spanish>
+		<English>South East</English>
+		<French>South East</French>
+		<German>South East</German>
+		<Italian>South East</Italian>
+		<Spanish>South East</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_9</Tag>
-		<English>Gulf Coast</English>
-		<French>Gulf Coast</French>
-		<German>Gulf Coast</German>
-		<Italian>Gulf Coast</Italian>
-		<Spanish>Gulf Coast</Spanish>
+		<English>Florida</English>
+		<French>Florida</French>
+		<German>Florida</German>
+		<Italian>Florida</Italian>
+		<Spanish>Florida</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_10</Tag>
@@ -131,11 +131,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_15</Tag>
-		<English>Cascadia</English>
-		<French>Cascadia</French>
-		<German>Cascadia</German>
-		<Italian>Cascadia</Italian>
-		<Spanish>Cascadia</Spanish>
+		<English>South Cascadia</English>
+		<French>South Cascadia</French>
+		<German>South Cascadia</German>
+		<Italian>South Cascadia</Italian>
+		<Spanish>South Cascadia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_16</Tag>
@@ -304,6 +304,30 @@
 		<German>Old World</German>
 		<Italian>Old World</Italian>
 		<Spanish>Old World</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_37</Tag>
+		<English>North Cascadia</English>
+		<French>North Cascadia</French>
+		<German>North Cascadia</German>
+		<Italian>North Cascadia</Italian>
+		<Spanish>North Cascadia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_38</Tag>
+		<English>South Central</English>
+		<French>South Central</French>
+		<German>South Central</German>
+		<Italian>South Central</Italian>
+		<Spanish>South Central</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_39</Tag>
+		<English>Texas</English>
+		<French>Texas</French>
+		<German>Texas</German>
+		<Italian>Texas</Italian>
+		<Spanish>Texas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_</Tag>

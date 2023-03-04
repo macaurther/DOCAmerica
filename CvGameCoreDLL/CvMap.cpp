@@ -1456,14 +1456,17 @@ void CvMap::calculateAreas()
 				case REGION_NEW_FOUNDLAND:
 				case REGION_NEW_ENGLAND:
 				case REGION_MID_ATLANTIC:
-				case REGION_DEEP_SOUTH:
-				case REGION_GULF_COAST:
+				case REGION_SOUTH_EAST:
+				case REGION_FLORIDA:
+				case REGION_SOUTH_CENTRAL:
+				case REGION_TEXAS:
 				case REGION_MIDWEST:
 				case REGION_SOUTHWEST:
 				case REGION_GREAT_PLAINS:
 				case REGION_ROCKIES:
 				case REGION_CALIFORNIA:
-				case REGION_CASCADIA:
+				case REGION_SOUTH_CASCADIA:
+				case REGION_NORTH_CASCADIA:
 				case REGION_GREENLAND:
 					plot->setArea(northAmericaID);
 					break;

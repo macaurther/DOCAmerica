@@ -4686,13 +4686,16 @@ void CvCity::updateArtStyleType()
 			case REGION_NEW_FOUNDLAND:
 			case REGION_NEW_ENGLAND:
 			case REGION_MID_ATLANTIC:
-			case REGION_DEEP_SOUTH:
-			case REGION_GULF_COAST:
+			case REGION_SOUTH_EAST:
+			case REGION_FLORIDA:
+			case REGION_SOUTH_CENTRAL:
+			case REGION_TEXAS:
 			case REGION_MIDWEST:
 			case REGION_GREAT_PLAINS:
 			case REGION_ROCKIES:
 			case REGION_CALIFORNIA:
-			case REGION_CASCADIA:
+			case REGION_SOUTH_CASCADIA:
+			case REGION_NORTH_CASCADIA:
 			case REGION_GREENLAND:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NATIVE_AMERICA;
 				break;
@@ -4738,13 +4741,16 @@ void CvCity::updateArtStyleType()
 			case REGION_NEW_FOUNDLAND:
 			case REGION_NEW_ENGLAND:
 			case REGION_MID_ATLANTIC:
-			case REGION_DEEP_SOUTH:
-			case REGION_GULF_COAST:
+			case REGION_SOUTH_EAST:
+			case REGION_FLORIDA:
+			case REGION_SOUTH_CENTRAL:
+			case REGION_TEXAS:
 			case REGION_MIDWEST:
 			case REGION_GREAT_PLAINS:
 			case REGION_ROCKIES:
 			case REGION_CALIFORNIA:
-			case REGION_CASCADIA:
+			case REGION_SOUTH_CASCADIA:
+			case REGION_NORTH_CASCADIA:
 			case REGION_GREENLAND:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_ANGLO_AMERICA;
 				break;
@@ -4803,13 +4809,16 @@ void CvCity::updateArtStyleType()
 			case REGION_NEW_FOUNDLAND:
 			case REGION_NEW_ENGLAND:
 			case REGION_MID_ATLANTIC:
-			case REGION_DEEP_SOUTH:
-			case REGION_GULF_COAST:
+			case REGION_SOUTH_EAST:
+			case REGION_FLORIDA:
+			case REGION_SOUTH_CENTRAL:
+			case REGION_TEXAS:
 			case REGION_MIDWEST:
 			case REGION_GREAT_PLAINS:
 			case REGION_ROCKIES:
 			case REGION_CALIFORNIA:
-			case REGION_CASCADIA:
+			case REGION_SOUTH_CASCADIA:
+			case REGION_NORTH_CASCADIA:
 			case REGION_GREENLAND:
 				eNewArtStyle = ARTSTYLE_EUROPEAN;
 				break;
@@ -17557,7 +17566,7 @@ int CvCity::getRegionID() const
 // MacAurther
 bool CvCity::isCanadian() const
 {
-	if(getRegionID() == REGION_NUNAVUT || getRegionID() == REGION_NORTH_PLAINS || getRegionID() == REGION_ONTARIO || getRegionID() == REGION_QUEBEC || getRegionID() == REGION_NEW_FOUNDLAND)
+	if(getRegionID() == REGION_NUNAVUT || getRegionID() == REGION_NORTH_PLAINS || getRegionID() == REGION_ONTARIO || getRegionID() == REGION_QUEBEC || getRegionID() == REGION_NEW_FOUNDLAND || getRegionID() == REGION_NORTH_CASCADIA)
 	{
 		return true;
 	}
@@ -17566,7 +17575,7 @@ bool CvCity::isCanadian() const
 
 bool CvCity::isAmerican() const
 {
-	if(getRegionID() == REGION_NEW_ENGLAND || getRegionID() == REGION_MID_ATLANTIC || getRegionID() == REGION_DEEP_SOUTH || getRegionID() == REGION_GULF_COAST || getRegionID() == REGION_MIDWEST || getRegionID() == REGION_SOUTHWEST || getRegionID() == REGION_GREAT_PLAINS || getRegionID() == REGION_ROCKIES || getRegionID() == REGION_CALIFORNIA || getRegionID() == REGION_CASCADIA || getRegionID() == REGION_HAWAII)
+	if(getRegionID() == REGION_NEW_ENGLAND || getRegionID() == REGION_MID_ATLANTIC || getRegionID() == REGION_SOUTH_EAST || getRegionID() == REGION_FLORIDA || getRegionID() == REGION_SOUTH_CENTRAL || getRegionID() == REGION_TEXAS || getRegionID() == REGION_MIDWEST || getRegionID() == REGION_SOUTHWEST || getRegionID() == REGION_GREAT_PLAINS || getRegionID() == REGION_ROCKIES || getRegionID() == REGION_CALIFORNIA || getRegionID() == REGION_SOUTH_CASCADIA || getRegionID() == REGION_HAWAII)
 	{
 		return true;
 	}

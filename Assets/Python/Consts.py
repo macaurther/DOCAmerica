@@ -614,16 +614,16 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 37
+iNumRegions = 40
 #				2				3				4				5				6				7				8				9				10
-(rAlaska, 		rNunavut, 		rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	rNewEngland, 	rMidAtlantic, 	rDeepSouth, 	rGulfCoast, 
-rMidwest, 		rSouthwest, 	rGreatPlains, 	rRockies, 		rCalifornia, 	rCascadia, 		rSierraMadre, 	rBajio, 		rYucatan, 		rMesoamerica,
+(rAlaska, 		rNunavut, 		rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	rNewEngland, 	rMidAtlantic, 	rSouthEast, 	rFlorida, 
+rMidwest, 		rSouthwest, 	rGreatPlains, 	rRockies, 		rCalifornia, 	rSouthCascadia, rSierraMadre, 	rBajio, 		rYucatan, 		rMesoamerica,
 rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia, 		rAmazon, 		rBrazilianHighlands, rPantanal, 
-rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland,		rOldWorld) = range(iNumRegions)
+rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland,		rOldWorld,		rNorthCascadia,	rSouthCentral,	rTexas) = range(iNumRegions)
 
-lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland]
-lSouthernUS = [rDeepSouth, rGulfCoast, rSouthwest]
-lContinentalUS = [rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia]
+lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland, rNorthCascadia]
+lSouthernUS = [rSouthEast, rFlorida, rTexas, rSouthCentral]
+lContinentalUS = [rNewEngland, rMidAtlantic, rSouthEast, rSouthCentral, rTexas, rFlorida, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rSouthCascadia]
 lUnitedStates = lContinentalUS + [rAlaska, rHawaii]
 lMexico = [rSierraMadre, rBajio, rYucatan]
 lBrazil = [rAmazon, rBrazilianHighlands, rPantanal]
