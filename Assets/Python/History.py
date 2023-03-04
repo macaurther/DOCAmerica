@@ -3,6 +3,7 @@ from RFCUtils import *
 from Core import *
 from Locations import *
 from Popups import popup
+from Secession import *
 
 
 dRelocatedCapitals = CivDict({
@@ -306,7 +307,14 @@ def americanWesternSettlement(iTech, iTeam, iPlayer):
 
 
 ### COLLAPSE ###
-
+@handler("civicChanged")
+def doAmericanCivilWar(iPlayer, iOldCivic, iNewCivic):
+	if civ(iPlayer) == iAmerica and iOldCivic == iSlavery:
+		secedeCitiesByRegions(iPlayer, lSouthernUS, slot(iIndependent))
+		
+		# Let the player decided whether or not to declare war, but make the AI declare war on secession
+		if not player(iPlayer).isHuman():
+			team(iPlayer).declareWar(slot(iIndependent), True, WarPlanTypes.WARPLAN_TOTAL)
 
 ### BIRTH ###
 			

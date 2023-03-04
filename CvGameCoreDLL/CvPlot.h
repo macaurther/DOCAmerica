@@ -612,8 +612,9 @@ protected:
 	int m_iTotalCulture;
 
 	// MacAurther: Forts
-	CvPlot* m_fortClaimer;		// pointer to the tile where the fort that exerts control over this tile
-	PlayerTypes m_fortOwner;	// the player ID of who owns this tile via Forts
+	int m_iFortClaimerX;				// x coord of the tile where the fort that exerts control over this tile (I wanted these to be pointers, but I couldn't figure out how to properly READ and WRITE tile pointers to the save file)
+	int m_iFortClaimerY;
+	char /*PlayerTypes*/ m_eFortOwner;	// the player ID of who owns this tile via Forts
 
 	bool m_bStartingPlot:1;
 	bool m_bHills:1;

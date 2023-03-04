@@ -191,3 +191,18 @@ def balanceStability(iPlayer, iNewStabilityLevel):
 	playerData.resetEconomyTrend()
 	playerData.resetHappinessTrend()
 	playerData.resetWarTrends()
+
+# MacAurther
+def secedeCitiesByRegions(iPlayer, lRegions, iNewOwner):
+	iNumCities = player(iPlayer).getNumCities()
+	if iNumCities <= 0:
+		return
+	
+	lCities = plots.regions(*lRegions).cities()
+	
+	bComplete = len(lCities) == iNumCities
+	iArmyPercent = 100 - 100 * len(lCities) / iNumCities
+	
+	for city in lCities:
+		if city.getOwner() == iPlayer:
+			secedeCity(city, iNewOwner, not bComplete, iArmyPercent)

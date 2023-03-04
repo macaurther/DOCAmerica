@@ -301,19 +301,21 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iColony, iIndenturedServitude, iAgrarianism],
-		techs=techs.column(9).without(*lNativeTechs)
+		techs=techs.column(9).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iAmerica,
 		iGold=1500,
 		iStateReligion=iProtestantism,
 		lCivics=[iConfederacy, iCommonLaw, iSlavery, iAgrarianism, iHaven, iHomesteads],
+		lEnemies=[iEngland],
 		techs=techs.column(11).including(iRepresentation, iIndependence)
 	),
 	Civilization(
 		iHaiti,
 		iGold=100,
 		lCivics=[iMonarchy, iCouncil, iSpecialization, iAgrarianism, iIsolationism],
+		lEnemies=[iFrance],
 		techs=techs.column(12)
 	),
 	Civilization(
@@ -321,6 +323,7 @@ lCivilizations = [
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
+		lEnemies=[iSpain],
 		techs=techs.column(12).including(iGeology)
 	),
 	Civilization(
@@ -328,6 +331,7 @@ lCivilizations = [
 		iGold=500,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
+		lEnemies=[iSpain],
 		techs=techs.column(12).including(iFederalism)
 	),
 	Civilization(
@@ -335,6 +339,7 @@ lCivilizations = [
 		iGold=750,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
+		lEnemies=[iSpain],
 		techs=techs.column(12).including(iRightsOfMan)
 	),
 	Civilization(
@@ -342,6 +347,7 @@ lCivilizations = [
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
+		lEnemies=[iSpain],
 		techs=techs.column(12).including(iGeology)
 	),
 	Civilization(
@@ -356,6 +362,7 @@ lCivilizations = [
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
+		lEnemies=[iColombia],
 		techs=techs.column(12).including(iGeology)
 	),
 	Civilization(
@@ -370,6 +377,7 @@ lCivilizations = [
 		iGold=1200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering],
+		lEnemies=[iSpain],
 		techs=techs.column(16)
 	),
 ]

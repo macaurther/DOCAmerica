@@ -622,6 +622,7 @@ rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia,
 rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland,		rOldWorld) = range(iNumRegions)
 
 lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland]
+lSouthernUS = [rDeepSouth, rGulfCoast, rSouthwest]
 lContinentalUS = [rNewEngland, rMidAtlantic, rDeepSouth, rGulfCoast, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rCascadia]
 lUnitedStates = lContinentalUS + [rAlaska, rHawaii]
 lMexico = [rSierraMadre, rBajio, rYucatan]

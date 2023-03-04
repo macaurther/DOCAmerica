@@ -216,8 +216,9 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	m_iTotalCulture = 0;
 
 	// MacAurther
-	m_fortClaimer = NULL;
-	m_fortOwner = NO_PLAYER;
+	m_iFortClaimerX = -1;
+	m_iFortClaimerY = -1;
+	m_eFortOwner = NO_PLAYER;
 
 	m_bStartingPlot = false;
 	m_bHills = false;
@@ -9840,8 +9841,9 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iContinentArea);
 
 	// MacAurther
-	pStream->Read((int*)&m_fortClaimer);
-	pStream->Read((int*)&m_fortOwner);
+	pStream->Read(&m_iFortClaimerX);
+	pStream->Read(&m_iFortClaimerY);
+	pStream->Read(&m_eFortOwner);
 
 	pStream->Read(&bVal);
 	m_bStartingPlot = bVal;
@@ -10113,8 +10115,9 @@ void CvPlot::write(FDataStreamBase* pStream)
 	pStream->Write(m_iContinentArea); // Leoreth
 
 	// MacAurther
-	pStream->Write(m_fortClaimer);
-	pStream->Write(m_fortOwner);
+	pStream->Write(m_iFortClaimerX);
+	pStream->Write(m_iFortClaimerY);
+	pStream->Write(m_eFortOwner);
 
 	pStream->Write(m_bStartingPlot);
 	pStream->Write(m_bHills);
@@ -11796,22 +11799,33 @@ bool CvPlot::isExpansionEffect(PlayerTypes ePlayer) const
 // MacAurther: Forts
 PlayerTypes CvPlot::getFortOwner() const
 {
-	return m_fortOwner;
+	return (PlayerTypes)m_eFortOwner;
 }
 
 CvPlot* CvPlot::getFortClaimer() const
 {
-	return m_fortClaimer;
+	if(m_iFortClaimerX == -1 || m_iFortClaimerY == -1)
+	{
+		return NULL;
+	}
+	return GC.getMapINLINE().plotINLINE(m_iFortClaimerX, m_iFortClaimerY);
 }
 
 void CvPlot::setFortOwner(PlayerTypes ePlayer)
 {
-	m_fortOwner = ePlayer;
+	m_eFortOwner = ePlayer;
 }
 
 void CvPlot::setFortClaimer(CvPlot* pPlot)
 {
-	m_fortClaimer = pPlot;
+	if(pPlot == NULL)
+	{
+		m_iFortClaimerX = -1;
+		m_iFortClaimerY = -1;
+		return;
+	}
+	m_iFortClaimerX = pPlot->getX();
+	m_iFortClaimerY = pPlot->getY();
 }
 
 void CvPlot::addFortClaims(PlayerTypes ePlayer)
