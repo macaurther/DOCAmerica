@@ -402,22 +402,28 @@ def giveColonists(iPlayer):
 					createRoleUnit(iPlayer, tUnitPlot, iCitySiege, 1)
 					if iCiv == iPortugal:
 						createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
-				elif iExpeditionType == iGalleonSettle:	# Galleon, Settler, Militia, Work
+				elif iExpeditionType == iGalleonSettle:	# Galleon, Settler, Militia, Work (Netherlands: Indiaman, Settler, Militia, Work, Settler)
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
 					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
-				elif iExpeditionType == iGalleonSupport:	# Galleon, Explore, Work, Missionary
+					if iCiv == iNetherlands:
+						makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
+				elif iExpeditionType == iGalleonSupport:	# Galleon, Explore, Work, Missionary (Netherlands: Indiaman, Explore, Work, Missionary, Militia)
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					createRoleUnit(iPlayer, tUnitPlot, iExplore, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
 					if iReligion > -1:
 						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-				elif iExpeditionType == iGalleonConquer:	# Galleon, Attack, Shock, CitySiege
+					if iCiv == iNetherlands:
+						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
+				elif iExpeditionType == iGalleonConquer:	# Galleon, Attack, Shock, CitySiege (Netherlands: Indiaman, Attack, Shock, CitySiege, Attack)
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iCitySiege, 1)
+					if iCiv == iNetherlands:
+						createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
 

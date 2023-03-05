@@ -642,9 +642,8 @@
 			<Strategy>TXT_KEY_BUILDING_WALLS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
-			<ObsoleteTech>TECH_BALLISTICS</ObsoleteTech>
-			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>50</iCost>
 			<iConquestProb>100</iConquestProb>
@@ -1622,6 +1621,7 @@
 			<Strategy>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONUMENT</ArtDefineTag>
+			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
 			<PrereqTech>TECH_GOVERNORS</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -1703,6 +1703,7 @@
 			<Strategy>TXT_KEY_BUILDING_WELL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WELL</ArtDefineTag>
+			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>

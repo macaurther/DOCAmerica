@@ -162,14 +162,14 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iMarket)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iWeaver)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iWarehouse)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iFactory)): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iTextileMill)): iValue += 3
 		if city.hasBuilding(unique_building(iOwner, iManufactory)): iValue += 2
 
 	elif iCompany == iSteelIndustry:
 		if city.hasBuilding(unique_building(iOwner, iFactory)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iCoalPlant)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iRailwayStation)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iIndustrialPark)): iValue += 1
+		if city.hasBuilding(unique_building(iOwner, iSteelMill)): iValue += 3
 		if city.hasBuilding(unique_building(iOwner, iIronworks)): iValue += 3
 
 	elif iCompany == iOilIndustry:
