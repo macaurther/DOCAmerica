@@ -62,7 +62,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_SKIRMISHER</UnitType>
+					<UnitType>UNIT_ATLATLIST</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_EUROPEAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_EUROPEAN</MiddleArtDefineTag>
@@ -238,7 +238,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_SKIRMISHER</UnitType>
+					<UnitType>UNIT_ATLATLIST</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER_AFRICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_SKIRMISHER_AFRICAN</MiddleArtDefineTag>

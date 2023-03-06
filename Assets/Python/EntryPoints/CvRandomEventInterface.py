@@ -2524,7 +2524,7 @@ def getHelpClassicLiteratureDone3(argsList):
 	szCityName = u""
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
-		if (loopCity.isHasBuilding(iGreatLibrary)):
+		if (loopCity.isHasBuilding(iGreatLibrary)):	# MacAurther TODO
 			szCityName = loopCity.getNameKey()
 			break
 				
@@ -2543,7 +2543,7 @@ def canApplyClassicLiteratureDone3(argsList):
 
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
-		if (loopCity.isHasBuilding(iGreatLibrary)):
+		if (loopCity.isHasBuilding(iGreatLibrary)):	# MacAurther TODO
 			return true
 				
 		(loopCity, iter) = player.nextCity(iter, false)
@@ -2560,7 +2560,7 @@ def applyClassicLiteratureDone3(argsList):
 
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
-		if (loopCity.isHasBuilding(iGreatLibrary)):
+		if (loopCity.isHasBuilding(iGreatLibrary)):	# MacAurther TODO
 			loopCity.changeFreeSpecialistCount(iSpecialist, 1)
 			return
 				
@@ -2730,11 +2730,11 @@ def canApplySportsLeagueDone3(argsList):
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
-	iZeus = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_STATUE_OF_ZEUS')
+	iZeus = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_STATUE_OF_ZEUS')	# MacAurther TODO
 
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
-		if (loopCity.isHasBuilding(iZeus)):
+		if (loopCity.isHasBuilding(iZeus)):	# MacAurther TODO
 			return true
 				
 		(loopCity, iter) = player.nextCity(iter, false)

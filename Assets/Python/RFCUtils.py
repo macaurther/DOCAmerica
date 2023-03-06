@@ -260,17 +260,13 @@ def removeReligion(city, iReligion):
 	if city.isHasReligion(iReligion) and not city.isHolyCity():
 		city.setHasReligion(iReligion, False, False, False)
 	
-	# MacAurther: not every religion may have each building, check that the value is set before calling
-	iTemple = temple(iReligion)
-	iMonastery = monastery(iReligion)
-	iCathedral = cathedral(iReligion)
-	if iTemple != -1 and city.hasBuilding(iTemple):
+	if city.hasBuilding(temple(iReligion)):
 		city.setHasRealBuilding(temple(iReligion), False)
 		
-	if iMonastery != -1 and city.hasBuilding(iMonastery):
+	if city.hasBuilding(monastery(iReligion)):
 		city.setHasRealBuilding(monastery(iReligion), False)
 		
-	if iCathedral != -1 and city.hasBuilding(iCathedral):
+	if city.hasBuilding(cathedral(iReligion)):
 		city.setHasRealBuilding(cathedral(iReligion), False)
 
 # used: CvRandomEventInterface, History, Rules

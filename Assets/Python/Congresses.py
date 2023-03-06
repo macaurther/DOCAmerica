@@ -801,7 +801,7 @@ class Congress:
 		
 		# everyone agrees on AI American claims in the west, unless owner is native to the Americas
 		if civ(iClaimant) == iAmerica and iVoter != iOwner and civ(iOwner) not in dCivGroups[iCivGroupAmerica]:
-			if plot in plots.rectangle(tAmericanClaims):
+			if plot in plots.regions(*lUnitedStates):
 				self.vote(iVoter, iClaimant, 1)
 				return
 			
@@ -1138,7 +1138,7 @@ class Congress:
 					
 				# AI America receives extra value for claims in the west
 				if civ(iPlayer) == iAmerica and not player(iPlayer).isHuman():
-					if city in plots.rectangle(tAmericanClaims):
+					if city in plots.regions(*lUnitedStates):
 						iValue += 5
 						
 				# help Canada gain Labrador and Newfoundland
@@ -1152,7 +1152,7 @@ class Congress:
 		# extra spots for colonial civs -> will be settled
 		# not available after wars because these congresses are supposed to reassign cities
 		if civ(iPlayer) in dCivGroups[iCivGroupEurope] and not self.bPostWar:
-			for plot in plots.all().where(lambda p: not p.isCity() and not p.isPeak() and not p.isWater() and pPlayer.canFound(p.getX(), p.getY())).regions(rWestAfrica, rSouthAfrica, rEthiopia, rAustralia, rOceania):
+			for plot in plots.all().where(lambda p: not p.isCity() and not p.isPeak() and not p.isWater() and pPlayer.canFound(p.getX(), p.getY())).regions(rBrazilianHighlands, rPatagonia, rCaribbean, rMesoamerica):
 				if pPlayer.isHuman() and not plot.isRevealed(iPlayer, False): continue
 				iSettlerMapValue = plot.getPlayerSettlerValue(iPlayer)
 				if iSettlerMapValue >= 90 and cnm.getFoundName(iPlayer, plot):
@@ -1192,7 +1192,7 @@ class Congress:
 		
 		# America receives an invite if there are still claims in the west
 		if player(iAmerica).isAlive() and iAmerica not in self.invites and not self.bPostWar:
-			if cities.rectangle(tAmericanClaims).notowner(iAmerica):
+			if cities.regions(*lUnitedStates).notowner(iAmerica):
 				if len(self.invites) == getNumInvitations():
 					self.invites = self.invites.limit(len(self.invites)-1)
 				self.invites = self.invites.including(slot(iAmerica))

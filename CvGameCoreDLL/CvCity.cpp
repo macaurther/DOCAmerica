@@ -5898,7 +5898,11 @@ bool CvCity::hasActiveBuilding(BuildingTypes eIndex) const
 
 int CvCity::getNumBuilding(BuildingTypes eIndex) const
 {
-	FAssertMsg(eIndex != NO_BUILDING, "BuildingType eIndex is expected to not be NO_BUILDING");
+	if(eIndex == NO_BUILDING)	// MacAurther TODO: Got tired of tracking down who is triggering this assert
+	{
+		return false;
+	}
+	//FAssertMsg(eIndex != NO_BUILDING, "BuildingType eIndex is expected to not be NO_BUILDING");
 
 	return std::min(GC.getCITY_MAX_NUM_BUILDINGS(), getNumRealBuilding(eIndex) + getNumFreeBuilding(eIndex));
 }

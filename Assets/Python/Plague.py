@@ -23,18 +23,18 @@ def setup():
 	for iPlayer in players.major():
 		data.players[iPlayer].iPlagueCountdown = -turns(iImmunity)
 		
-	data.lGenericPlagueDates[0] = 80
-	data.lGenericPlagueDates[2] = 300 # safe value to prevent plague at start of 1700 AD scenario
+	data.lGenericPlagueDates[0] = 1500
+	data.lGenericPlagueDates[2] = 1920 # safe value to prevent plague at start of 1700 AD scenario
 	
 	if scenario() == i250AD:
-		data.lGenericPlagueDates[0] = year(400).deviate(20)
+		data.lGenericPlagueDates[0] = year(1500).deviate(20)
 		
-	data.lGenericPlagueDates[1] = year(1300).deviate(20)
+	data.lGenericPlagueDates[1] = year(1770).deviate(20)
 	
 	if scenario() != i1770AD:
-		data.lGenericPlagueDates[2] = year(1650).deviate(20)
+		data.lGenericPlagueDates[2] = year(1920).deviate(20)
 		
-	data.lGenericPlagueDates[3] = year(1850).deviate(20)
+	data.lGenericPlagueDates[3] = year(2020).deviate(20)
 
 	undoPlague = rand(8)
 	if undoPlague <= 3:
@@ -80,11 +80,11 @@ def startPlagues(iGameTurn):
 	if data.bNoPlagues:
 		return
 
-	for iPlague, iPlagueDate in enumerate(data.lGenericPlagueDates):
+	for iPlagueID, iPlagueDate in enumerate(data.lGenericPlagueDates):
 		if iGameTurn == iPlagueDate:
-			startPlague(iPlague)
+			startPlague(iPlagueID)
 
-		if iPlague >= 1:
+		if iPlagueID >= 1:
 			#retry if the epidemic is dead too quickly
 			if iGameTurn == iPlagueDate + 4:
 				iInfectedCounter = 0
@@ -92,16 +92,16 @@ def startPlagues(iGameTurn):
 					if data.players[iPlayer].iPlagueCountdown > 0:
 						iInfectedCounter += 1
 				if iInfectedCounter == 1:
-					startPlague(iPlague)
+					startPlague(iPlagueID)
 
-		if iPlague == 2 or iPlague == 3:
+		if iPlagueID == 2 or iPlagueID == 3:
 			if iGameTurn == iPlagueDate + 8:
 				iInfectedCounter = 0
 				for iPlayer in players.all().barbarian():
 					if data.players[iPlayer].iPlagueCountdown > 0:
 						iInfectedCounter += 1
 				if iInfectedCounter <= 2:
-					startPlague(iPlague)
+					startPlague(iPlagueID)
 
 
 @handler("BeginPlayerTurn")
@@ -177,23 +177,23 @@ def acquireVaccine(iTech, iTeam, iPlayer):
 			data.players[iPlayer].iPlagueCountdown = 1
 
 
-def calculateTotalPlagueHealth(iPlayer, iPlague):
+def calculateTotalPlagueHealth(iPlayer, iPlagueID):
 	iHealth = calculateHealth(iPlayer) / 2
 	
 	if player(iPlayer).calculateTotalCityHealthiness() > 0:
 		iHealth += rand(40)
 		
-		if iPlague == 2: # medieval Black Death
-			if civ(iPlayer) in dCivGroups[iCivGroupEurope]:
+		if iPlagueID == 0: # Columbian exchange plague
+			if civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
 				iHealth -= 5
 	
 	return iHealth
 
 
-def startPlague(iPlague):
-	iPlayer = players.major().alive().where(isVulnerable).minimum(lambda iPlayer: calculateTotalPlagueHealth(iPlayer, iPlague))
+def startPlague(iPlagueID):
+	iPlayer = players.major().alive().where(isVulnerable).minimum(lambda iPlayer: calculateTotalPlagueHealth(iPlayer, iPlagueID))
 	
-	if iPlayer and calculateTotalPlagueHealth(iPlayer, iPlague) <= 200:
+	if iPlayer and calculateTotalPlagueHealth(iPlayer, iPlagueID) <= 200:
 		city = cities.owner(iPlayer).random()
 		if city:
 			spreadPlague(iPlayer)

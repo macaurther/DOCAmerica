@@ -213,7 +213,7 @@ iFrance : 1608,
 iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
-iAmerica : 275,#1775,
+iAmerica : 1775,
 iHaiti : 1804,
 iArgentina : 1810,
 iMexico : 1810,
@@ -622,6 +622,7 @@ rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia,
 rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland,		rOldWorld,		rNorthCascadia,	rSouthCentral,	rTexas) = range(iNumRegions)
 
 lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland, rNorthCascadia]
+lThirteenColonies = [rNewEngland, rMidAtlantic, rSouthEast]
 lSouthernUS = [rSouthEast, rFlorida, rTexas, rSouthCentral]
 lContinentalUS = [rNewEngland, rMidAtlantic, rSouthEast, rSouthCentral, rTexas, rFlorida, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rSouthCascadia]
 lUnitedStates = lContinentalUS + [rAlaska, rHawaii]

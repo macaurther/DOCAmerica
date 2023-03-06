@@ -7032,7 +7032,10 @@ int CvPlayerAI::AI_bonusActualHappinessChange(BonusTypes eBonus, int iChange) co
 	int iNumCities = getNumCities();
 
 	int iCurrentAffectedCities = std::min(iNumBonuses * kBonus.getAffectedCities(), iNumCities);
-	int iChangedAffectedCities = range(0, iCurrentAffectedCities + iChange * kBonus.getAffectedCities(), iNumCities);
+
+	int iChangedLow = std::min(iCurrentAffectedCities + iChange * kBonus.getAffectedCities(), iNumCities);
+	int iChangedHigh = std::max(iCurrentAffectedCities + iChange * kBonus.getAffectedCities(), iNumCities);
+	int iChangedAffectedCities = range(0, iChangedLow, iChangedHigh);	// MacAurther: It was possible that low was greater than high
 
 	int iHappinessChange = 0;
 

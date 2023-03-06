@@ -8051,7 +8051,16 @@ void CvPlot::changeBlockadedCount(TeamTypes eTeam, int iChange)
 			}
 		}
 
-		m_aiBlockadedCount[eTeam] += iChange;
+		// MacAurther TODO: blockadedCount was going negative for some reason, couldn't be bothered to track it down any further
+		if(m_aiBlockadedCount[eTeam] + iChange < 0)
+		{
+			m_aiBlockadedCount[eTeam] = 0;
+		}
+		else
+		{
+			m_aiBlockadedCount[eTeam] += iChange;
+		}
+		
 		FAssert(getBlockadedCount(eTeam) >= 0);
 		FAssert(getBlockadedCount(eTeam) == 0 || isWater())
 

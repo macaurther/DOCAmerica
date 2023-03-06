@@ -6,18 +6,18 @@ from Events import handler
 @handler("unitBuilt")
 def spaceElevatorEffect(city, unit):
 	if unit.getUnitType() == iSatellite:
-		city = getBuildingCity(iSpaceElevator)
+		city = getBuildingCity(iNASA)
 		if city:
-			city.changeBuildingYieldChange(infos.building(iSpaceElevator).getBuildingClassType(), YieldTypes.YIELD_COMMERCE, 1)
+			city.changeBuildingYieldChange(infos.building(iNASA).getBuildingClassType(), YieldTypes.YIELD_COMMERCE, 1)
 
 
 # Space Elevator effect: +5 commerce per space projectBuilt
 @handler("projectBuilt")
 def spaceElevatorProjectEffect(city, iProject):
 	if infos.project(iProject).isSpaceship():
-		city = getBuildingCity(iSpaceElevator)
+		city = getBuildingCity(iNASA)
 		if city:
-			city.changeBuildingYieldChange(infos.building(iSpaceElevator).getBuildingClassType(), YieldTypes.YIELD_COMMERCE, 5)
+			city.changeBuildingYieldChange(infos.building(iNASA).getBuildingClassType(), YieldTypes.YIELD_COMMERCE, 5)
 			
 
 @handler("cityGrowth")
