@@ -20,7 +20,7 @@ iInca :			(49, 36), # Cuzco
 iAztecs :		(29, 60), # Tenochtitlan
 iSpain :		(55, 59), # Santo Domingo
 iIroquois :		(51, 84), # Onondaga
-iPortugal :		(67, 26), # Sao Paulo
+iPortugal :		(67, 27), # Sao Paulo
 iEngland :		(51, 77), # Jamestown
 iFrance :		(58, 89), # Quebec
 iNetherlands :	(56, 81), # New Amsterdam

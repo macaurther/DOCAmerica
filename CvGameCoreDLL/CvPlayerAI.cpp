@@ -7075,7 +7075,9 @@ int CvPlayerAI::AI_bonusActualHealthChange(BonusTypes eBonus, int iChange) const
 	int iNumCities = getNumCities();
 
 	int iCurrentAffectedCities = std::min(iNumBonuses * kBonus.getAffectedCities(), iNumCities);
-	int iChangedAffectedCities = range(0, iCurrentAffectedCities + iChange * kBonus.getAffectedCities(), iNumCities);
+	int iChangedLow = std::min(iCurrentAffectedCities + iChange * kBonus.getAffectedCities(), iNumCities);
+	int iChangedHigh = std::max(iCurrentAffectedCities + iChange * kBonus.getAffectedCities(), iNumCities);
+	int iChangedAffectedCities = range(0, iChangedLow, iChangedHigh);	// MacAurther: It was possible that low was greater than high
 
 	int iHealthChange = 0;
 

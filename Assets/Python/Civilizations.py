@@ -249,6 +249,12 @@ lCivilizations = [
 		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
+		iIroquois,
+		iGold=600,
+		lCivics=[iConfederacy, iCouncil],
+		techs=techs.column(2).including(iCalendar).without(iNavigation)
+	),
+	Civilization(
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,
@@ -261,12 +267,6 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iColony, iSlavery, iMerchantTrade, iTributaries],
 		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration, iOptics, iGovernors).without(*lNativeTechs)
-	),
-	Civilization(
-		iIroquois,
-		iGold=600,
-		lCivics=[iConfederacy, iCouncil],
-		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
 		iEngland,

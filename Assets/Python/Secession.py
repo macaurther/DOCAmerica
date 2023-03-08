@@ -165,8 +165,8 @@ def getPossibleMinors(iPlayer):
 	if gc.getGame().countKnownTechNumTeams(iNationalism) == 0 and civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
 		lPossibleMinors = [iNative]
 		
-	if gc.getGame().getCurrentEra() <= iColonialEra:
-		lPossibleMinors = [iBarbarian, iIndependent, iIndependent2]
+	if gc.getGame().getCurrentEra() < iExplorationEra:
+		lPossibleMinors = [iBarbarian, iNative]
 		
 	return players.civs(*lPossibleMinors)
 	
