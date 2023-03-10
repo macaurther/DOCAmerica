@@ -11,7 +11,7 @@
 			<Description>TXT_KEY_BUILD_ROAD</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>400</iTime>
-			<iCost>10</iCost>
+			<iCost>0</iCost>
 			<RouteType>ROUTE_ROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
 			<HotKey>KB_R</HotKey>
@@ -26,7 +26,7 @@
 			<Description>TXT_KEY_BUILD_RAILROAD</Description>
 			<PrereqTech>TECH_RAILROAD</PrereqTech>
 			<iTime>800</iTime>
-			<iCost>25</iCost>
+			<iCost>10</iCost>
 			<RouteType>ROUTE_RAILROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_RAILROAD</EntityEvent>
 			<HotKey>KB_R</HotKey>
@@ -41,7 +41,7 @@
 			<Description>TXT_KEY_BUILD_HIGHWAY</Description>
 			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
 			<iTime>800</iTime>
-			<iCost>30</iCost>
+			<iCost>15</iCost>
 			<RouteType>ROUTE_HIGHWAY</RouteType>
 			<EntityEvent>ENTITY_EVENT_RAILROAD</EntityEvent>
 			<HotKey>KB_R</HotKey>
@@ -56,7 +56,7 @@
 			<Description>TXT_KEY_BUILD_FARM</Description>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>15</iCost>
+			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
@@ -108,7 +108,7 @@
 			<Description>TXT_KEY_BUILD_PADDY_FIELD</Description>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>15</iCost>
+			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_PADDY_FIELD</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
@@ -160,7 +160,7 @@
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>5</iCost>
+			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -176,7 +176,7 @@
 			<Description>TXT_KEY_BUILD_OCEAN_FISHERY</Description>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>15</iCost>
+			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_OCEAN_FISHERY</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -192,7 +192,7 @@
 			<Description>TXT_KEY_BUILD_WHALING_BOATS</Description>
 			<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>15</iCost>
+			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_WHALING_BOATS</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -208,7 +208,7 @@
 			<Description>TXT_KEY_BUILD_MINE</Description>
 			<PrereqTech>TECH_MINING</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>10</iCost>
+			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
@@ -253,7 +253,7 @@
 			<Description>TXT_KEY_BUILD_WORKSHOP</Description>
 			<PrereqTech>TECH_ARTISANRY</PrereqTech>
 			<iTime>800</iTime>
-			<iCost>20</iCost>
+			<iCost>5</iCost>
 			<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
@@ -313,7 +313,7 @@
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
 			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>20</iCost>
+			<iCost>10</iCost>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -358,7 +358,7 @@
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
 			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iTime>800</iTime>
-			<iCost>25</iCost>
+			<iCost>10</iCost>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -403,7 +403,7 @@
 			<Description>TXT_KEY_BUILD_PLANTATION</Description>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
 			<iTime>800</iTime>
-			<iCost>20</iCost>
+			<iCost>15</iCost>
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -480,7 +480,7 @@
 			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>10</iCost>
+			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -525,7 +525,7 @@
 			<Description>TXT_KEY_BUILD_PASTURE</Description>
 			<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			<iTime>500</iTime>
-			<iCost>5</iCost>
+			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -585,7 +585,7 @@
 			<Description>TXT_KEY_BUILD_WELL</Description>
 			<PrereqTech>TECH_COMBUSTION</PrereqTech>
 			<iTime>1000</iTime>
-			<iCost>30</iCost>
+			<iCost>15</iCost>
 			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -630,7 +630,7 @@
 			<Description>TXT_KEY_BUILD_OFFSHORE_PLATFORM</Description>
 			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>50</iCost>
+			<iCost>25</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_OFFSHORE_PLATFORM</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -647,7 +647,7 @@
 			<Help/>
 			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			<iTime>500</iTime>
-			<iCost>15</iCost>
+			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_ORCHARD</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -694,7 +694,7 @@
 			<Description>TXT_KEY_BUILD_COTTAGE</Description>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<iTime>700</iTime>
-			<iCost>15</iCost>
+			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -914,7 +914,7 @@
 			<Help/>
 			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<iTime>800</iTime>
-			<iCost>50</iCost>
+			<iCost>25</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_NATURE_RESERVE</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -933,7 +933,7 @@
 			<Help/>
 			<PrereqTech>TECH_ECOLOGY</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>0</iCost>
+			<iCost>25</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_MARINE_RESERVE</ImprovementType>
 			<RouteType>NONE</RouteType>

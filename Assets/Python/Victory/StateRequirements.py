@@ -34,7 +34,7 @@ class ConvertAfterFounding(StateRequirement):
 
 	TYPES = (RELIGION, TURNS)
 	
-	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONVERT_TO"
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONVERT"
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_CONVERT_AFTER_FOUNDING"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_CONVERT_AFTER_FOUNDING"
 	
@@ -45,15 +45,19 @@ class ConvertAfterFounding(StateRequirement):
 		self.iTurns = iTurns
 		
 		self.handle("playerChangeStateReligion", self.check_convert)
+		self.handle("BeginPlayerTurn", self.check_expire)
 		
 	def check_convert(self, goal, iReligion):
 		if self.iReligion == iReligion and game.isReligionFounded(iReligion):
 			if turn() <= game.getReligionGameTurnFounded(iReligion) + scale(self.iTurns):
 				self.succeed()
-			else:
+				goal.check()
+	
+	def check_expire(self, goal, iGameTurn, iPlayer):
+		if game.isReligionFounded(self.iReligion) and self.state == POSSIBLE:
+			if iGameTurn > game.getReligionGameTurnFounded(self.iReligion) + scale(self.iTurns):
 				self.fail()
-			
-			goal.final_check()
+				goal.expire()
 
 
 # First Mayan UHV goal
@@ -210,6 +214,9 @@ class NoCityConquered(StateRequirement):
 		
 		self.handle("cityAcquired", self.fail_on_city_conquered)
 	
+	def init(self, goal):
+		goal.check()
+	
 	def fail_on_city_conquered(self, goal, city, bConquest):
 		if bConquest and self.state == POSSIBLE:
 			self.fail()
@@ -230,6 +237,9 @@ class NoCityLost(StateRequirement):
 		StateRequirement.__init__(self, **options)
 		
 		self.handle("cityLost", self.fail_on_city_lost)
+	
+	def init(self, goal):
+		goal.check()
 		
 	def fail_on_city_lost(self, goal):
 		if self.state == POSSIBLE:

@@ -2,6 +2,7 @@ from Core import *
 from BaseRequirements import *
 
 from Civics import isCommunist
+from Arguments import base_building
 
 
 # Third Holy Roman UHV goal
@@ -53,6 +54,7 @@ class AttitudeCount(ThresholdRequirement):
 		
 		return [civilizations]
 
+
 # Second Khmer UHV goal
 class AveragePopulation(ThresholdRequirement):
 
@@ -99,10 +101,14 @@ class BuildingCount(ThresholdRequirement):
 	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTROL"
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_COUNT"
 	
+	SUBJECT_DESC_KEYS = {
+		WORLD: "TXT_KEY_VICTORY_DESC_MAKE_SURE_IN_THE_WORLD"
+	}
+	
 	def __init__(self, iBuilding, *args, **options):
 		ThresholdRequirement.__init__(self, iBuilding, *args, **options)
 		
-		self.iBuilding = iBuilding
+		self.iBuilding = base_building(iBuilding)
 		
 		self.handle("cityAcquired", self.check)
 		self.handle("buildingBuilt", self.check_building_built)
@@ -242,6 +248,10 @@ class ControlledResourceCount(ThresholdRequirement):
 	
 	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTROL"
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTROLLED_RESOURCE_COUNT"
+	
+	SUBJECT_DESC_KEYS = {
+		VASSALS: "TXT_KEY_VICTORY_DESC_CONTROL_DIRECTLY_OR_THROUGH_VASSALS"
+	}
 	
 	def value(self, iPlayer, iResource):
 		return player(iPlayer).getNumAvailableBonuses(iResource) - player(iPlayer).getBonusImport(iResource)

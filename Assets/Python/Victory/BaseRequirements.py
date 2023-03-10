@@ -33,6 +33,9 @@ class Requirement(object):
 		formatted_parameters = [parameter_type.format_repr(parameter) for parameter_type, parameter in zip(self.GLOBAL_TYPES + self.TYPES, self.parameters)]
 		return "%s(%s)" % (type(self).__name__, ", ".join(formatted_parameters))
 	
+	def init(self, goal):
+		pass
+	
 	def handle(self, event, func):
 		self.handlers.add(event, func)
 	
@@ -62,6 +65,9 @@ class Requirement(object):
 		
 	def fulfilled(self, evaluator):
 		raise NotImplementedError()
+	
+	def fulfillable(self):
+		return True
 		
 	def additional_formats(self):
 		return []
@@ -189,6 +195,9 @@ class StateRequirement(Requirement):
 	
 	def fulfilled(self, evaluator):
 		return self.state == SUCCESS
+	
+	def fulfillable(self):
+		return self.state != FAILURE
 
 
 class TrackRequirement(ThresholdRequirement): 
@@ -256,7 +265,11 @@ class BestEntitiesRequirement(Requirement):
 		return count(self.valid_entity(entity, evaluator) for entity in self.required_ranks(evaluator)) >= self.iNumEntities
 	
 	def next_rank(self, evaluator):
-		return self.fulfilled(evaluator) and self.ranked(evaluator)[self.iNumEntities] or next(entity for entity in self.ranked(evaluator)[self.iNumEntities:] if self.valid_entity(entity, evaluator))
+		ranked = self.ranked(evaluator)
+		if len(ranked) <= 1:
+			return None
+		
+		return self.fulfilled(evaluator) and ranked[self.iNumEntities] or next(entity for entity in ranked[self.iNumEntities:] if self.valid_entity(entity, evaluator))
 	
 	def rank_word(self, iRank):
 		word = text(self.PROGR_KEY, *self.format_parameters())
