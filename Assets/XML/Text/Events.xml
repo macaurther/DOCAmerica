@@ -6506,4 +6506,52 @@
 		<Italian>Repeal the tax, it's clear it was too much to bear.</Italian>
 		<Spanish>Repeal the tax, it's clear it was too much to bear.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CALAKMUL_WAR_I</Tag>
+		<English>Our people have long viewed the city of Calakmul as a natural rival. Recent events have granted Calakmul control of additional land to our east and west. The rulers of Calakmul seek to erode our authority with each passing day! We must act!</English>
+		<French>Our people have long viewed the city of Calakmul as a natural rival. Recent events have granted Calakmul control of additional land to our east and west. The rulers of Calakmul seek to erode our authority with each passing day! We must act!</French>
+		<German>Our people have long viewed the city of Calakmul as a natural rival. Recent events have granted Calakmul control of additional land to our east and west. The rulers of Calakmul seek to erode our authority with each passing day! We must act!</German>
+		<Italian>Our people have long viewed the city of Calakmul as a natural rival. Recent events have granted Calakmul control of additional land to our east and west. The rulers of Calakmul seek to erode our authority with each passing day! We must act!</Italian>
+		<Spanish>Our people have long viewed the city of Calakmul as a natural rival. Recent events have granted Calakmul control of additional land to our east and west. The rulers of Calakmul seek to erode our authority with each passing day! We must act!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CALAKMUL_WAR_I_1</Tag>
+		<English>We must assert ourselves as a regional power, even if it means war!</English>
+		<French>We must assert ourselves as a regional power, even if it means war!</French>
+		<German>We must assert ourselves as a regional power, even if it means war!</German>
+		<Italian>We must assert ourselves as a regional power, even if it means war!</Italian>
+		<Spanish>We must assert ourselves as a regional power, even if it means war!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CALAKMUL_WAR_I_2</Tag>
+		<English>We cannot risk a war at this time. Turn a blind eye.</English>
+		<French>We cannot risk a war at this time. Turn a blind eye.</French>
+		<German>We cannot risk a war at this time. Turn a blind eye.</German>
+		<Italian>We cannot risk a war at this time. Turn a blind eye.</Italian>
+		<Spanish>We cannot risk a war at this time. Turn a blind eye.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CALAKMUL_WAR_I</Tag>
+		<English>Tensions have worsened between rival Mayan city states Tikal and Calakmul.</English>
+		<French>Tensions have worsened between rival Mayan city states Tikal and Calakmul.</French>
+		<German>Tensions have worsened between rival Mayan city states Tikal and Calakmul.</German>
+		<Italian>Tensions have worsened between rival Mayan city states Tikal and Calakmul.</Italian>
+		<Spanish>Tensions have worsened between rival Mayan city states Tikal and Calakmul.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CALAKMUL_WAR_I_1_HELP</Tag>
+		<English>Calakmul will become hostile.</English>
+		<French>Calakmul will become hostile.</French>
+		<German>Calakmul will become hostile.</German>
+		<Italian>Calakmul will become hostile.</Italian>
+		<Spanish>Calakmul will become hostile.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CALAKMUL_WAR_I_2_HELP</Tag>
+		<English>Calakmul's borders will expand.</English>
+		<French>Calakmul's borders will expand.</French>
+		<German>Calakmul's borders will expand.</German>
+		<Italian>Calakmul's borders will expand.</Italian>
+		<Spanish>Calakmul's borders will expand.</Spanish>
+	</TEXT>
 </Civ4GameText>
