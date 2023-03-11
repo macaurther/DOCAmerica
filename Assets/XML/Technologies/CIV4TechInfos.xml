@@ -321,7 +321,7 @@
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>2</iGridX>
-			<iGridY>7</iGridY>
+			<iGridY>11</iGridY>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
@@ -379,7 +379,7 @@
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>2</iGridX>
-			<iGridY>11</iGridY>
+			<iGridY>7</iGridY>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -535,12 +535,46 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_POTTERY</PrereqTech>
-				<PrereqTech>TECH_PASTORALISM</PrereqTech>
+				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MATHEMATICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>,Art/Interface/Buttons/TechTree/Geometry.dds</Button>
+		</TechInfo>
+
+		<TechInfo>
+			<Type>TECH_PRIESTHOOD</Type>
+			<Description>TXT_KEY_TECH_PRIESTHOOD</Description>
+			<Civilopedia>TXT_KEY_TECH_PRIESTHOOD_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_RELIGION</Advisor>
+			<iCost>200</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<Era>ERA_PRE_COLUMBIAN</Era>
+			<FirstFreeUnitClass>UNITCLASS_GREAT_PROPHET</FirstFreeUnitClass>
+			<iAsset>16</iAsset>
+			<bTrade>1</bTrade>
+			<bGoodyTech>0</bGoodyTech>
+			<iGridX>3</iGridX>
+			<iGridY>7</iGridY>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>3</iFlavor>
+				</Flavor>
+			</Flavors>
+			<AndPreReqs>
+				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
+			</AndPreReqs>
+			<Quote>TXT_KEY_TECH_PRIESTHOOD_QUOTE</Quote>
+			<Sound>AS2D_TECH_GENERIC</Sound>
+			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
+			<Button>Art/Interface/Buttons/TechTree/Priesthood.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -556,7 +590,7 @@
 			<bGoodyTech>0</bGoodyTech>
 			<bOpenBordersTrading>1</bOpenBordersTrading>
 			<iGridX>3</iGridX>
-			<iGridY>7</iGridY>
+			<iGridY>9</iGridY>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -572,7 +606,6 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_PASTORALISM</PrereqTech>
 				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_PROPERTY_QUOTE</Quote>
@@ -580,7 +613,7 @@
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Property.dds</Button>
 		</TechInfo>
-
+		
 		<TechInfo>
 			<Type>TECH_CEREMONY</Type>
 			<Description>TXT_KEY_TECH_CEREMONY</Description>
@@ -593,7 +626,7 @@
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>3</iGridX>
-			<iGridY>9</iGridY>
+			<iGridY>11</iGridY>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_RELIGION</FlavorType>
@@ -614,46 +647,12 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_AGRICULTURE</PrereqTech>
-				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+				<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CEREMONY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>,Art/Interface/Buttons/TechTree/Ceremony.dds</Button>
-		</TechInfo>
-
-		<TechInfo>
-			<Type>TECH_PRIESTHOOD</Type>
-			<Description>TXT_KEY_TECH_PRIESTHOOD</Description>
-			<Civilopedia>TXT_KEY_TECH_PRIESTHOOD_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_RELIGION</Advisor>
-			<iCost>200</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<Era>ERA_PRE_COLUMBIAN</Era>
-			<FirstFreeUnitClass>UNITCLASS_GREAT_PROPHET</FirstFreeUnitClass>
-			<iAsset>16</iAsset>
-			<bTrade>1</bTrade>
-			<bGoodyTech>0</bGoodyTech>
-			<iGridX>3</iGridX>
-			<iGridY>11</iGridY>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>5</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>3</iFlavor>
-				</Flavor>
-			</Flavors>
-			<AndPreReqs>
-				<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-				<PrereqTech>TECH_SAILING</PrereqTech>
-			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_PRIESTHOOD_QUOTE</Quote>
-			<Sound>AS2D_TECH_GENERIC</Sound>
-			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Priesthood.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -832,7 +831,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_MATHEMATICS</PrereqTech>
-				<PrereqTech>TECH_PROPERTY</PrereqTech>
+				<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CALENDAR_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -873,8 +872,8 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
+				<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 				<PrereqTech>TECH_PROPERTY</PrereqTech>
-				<PrereqTech>TECH_CEREMONY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_WRITING_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -911,7 +910,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_CEREMONY</PrereqTech>
-				<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+				<PrereqTech>TECH_PROPERTY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_LAW_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -947,7 +946,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+				<PrereqTech>TECH_CEREMONY</PrereqTech>
 				<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MEDICINE_QUOTE</Quote>
