@@ -90,6 +90,31 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
+	x=36,y=60
+	BeginUnit
+		UnitType=UNIT_MAYAN_HOLKAN
+		UnitOwner=CIVILIZATION_INDEPENDENT2
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDEPENDENT2
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_INDEPENDENT2
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT2
+		CityName=Calakmul
+		CityPopulation=2
+		YearFounded=100
+		BuildingType=BUILDING_TEOTL_STEP_PYRAMID
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT2, Culture=5
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
 	x=52,y=33
 	BeginUnit
 		UnitType=UNIT_MILITIA_1

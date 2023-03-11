@@ -4049,14 +4049,14 @@ def doCalakmulWarI2(argsList):
 	plot = map.plot(36, 60)
 
 	pTikal = player(iPlayer).getCapitalCity();
-	pTikal.changeCulture(iMinorPlayer, 1000, true)
+	pTikal.setCultureTimes100(iMinorPlayer, 1000, true)
 
 	map.plot(36, 59).setOwner(iMinorPlayer)
 	map.plot(36, 59).setCulture(iMayaId, 0, true)
-	map.plot(36, 59).setCulture(iMinorPlayer, 200, true)
+	map.plot(36, 59).setCulture(iMinorPlayer, 1000, true)
 	map.plot(37, 59).setOwner(iMinorPlayer)
 	map.plot(37, 59).setCulture(iMayaId, 0, true)
-	map.plot(37, 59).setCulture(iMinorPlayer, 200, true)
+	map.plot(37, 59).setCulture(iMinorPlayer, 1000, true)
 	map.plot(37, 58).setOwner(iMinorPlayer)
 	map.plot(37, 58).setCulture(iMayaId, 0, true)
 	map.plot(37, 58).setCulture(iMinorPlayer, 200, true)
