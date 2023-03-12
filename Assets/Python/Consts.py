@@ -446,9 +446,9 @@ iNumCorporations = 9
 iNumTechs = 152
 #				2				3				4				5				6				7
 (iHunting,		iLandmarks,		iLinguistics,	iPathfinding,	iCultivation,	iHerbalism,		iFishing,
-iTanning, 		iMining, 		iPottery, 		iPastoralism, 	iAgriculture, 	iMythology, 	iSailing,
-iArtisanry, 	iMasonry, 		iMathematics, 	iProperty, 		iCeremony, 		iPriesthood, 	iNavigation,
-iSmelting, 		iConstruction, 	iAesthetics, 	iCalendar, 		iWriting, 		iLaw, 			iMedicine,
+iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iSailing,
+iArtisanry, 	iMasonry, 		iMathematics, 	iWriting, 		iProperty, 		iCeremony, 		iNavigation,
+iSmelting, 		iConstruction, 	iAesthetics, 	iCalendar,		iLaw,			iPriesthood, 	iMedicine,
 iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iHumanities, 	iPrinting, 		iJudiciary,
 iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iGovernors,
