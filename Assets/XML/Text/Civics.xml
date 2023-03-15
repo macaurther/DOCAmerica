@@ -543,12 +543,12 @@
 		<Spanish>No maintenance costs from number of cities; less experience needed to promote units</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_COUNCIL</Tag>
-		<English>Council</English>
-		<French>Council</French>
-		<German>Council</German>
-		<Italian>Council</Italian>
-		<Spanish>Council</Spanish>
+			<Tag>TXT_KEY_CIVIC_COUNCIL</Tag>
+			<English>Council</English>
+			<French>Council</French>
+			<German>Council</German>
+			<Italian>Council</Italian>
+			<Spanish>Council</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COUNCIL_STRATEGY</Tag>
@@ -557,6 +557,26 @@
 		<German>Faster Wonder production; extra unhappiness from Religion; extra happiness from Pagan Temples</German>
 		<Italian>Faster Wonder production; extra unhappiness from Religion; extra happiness from Pagan Temples</Italian>
 		<Spanish>Faster Wonder production; extra unhappiness from Religion; extra happiness from Pagan Temples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATE_PARTY</Tag>
+		<English>State Party</English>
+		<French>
+			<Text>Parti unique</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>State Party</German>
+		<Italian>State Party</Italian>
+		<Spanish>State Party</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STATE_PARTY_STRATEGY</Tag>
+		<English>No maintenance costs from number of cities; extra espionage from specialists</English>
+		<French>Pas de co&#251;t d'entretien li&#233; au nombre de villes ; les sp&#233;cialistes rapportent des points d'espionnage</French>
+		<German>No maintenance costs from number of cities; extra espionage from specialists</German>
+		<Italian>No maintenance costs from number of cities; extra espionage from specialists</Italian>
+		<Spanish>No maintenance costs from number of cities; extra espionage from specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMON_LAW</Tag>
@@ -607,20 +627,24 @@
 		<Spanish>More Statesman slots; extra commerce and production in Capital; faster production for Courthouses</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_SELF_DETERMINATION</Tag>
-		<English>Self Determination</English>
-		<French>Self Determination</French>
-		<German>Self Determination</German>
-		<Italian>Self Determination</Italian>
-		<Spanish>Self Determination</Spanish>
+		<Tag>TXT_KEY_CIVIC_ELECTIVE</Tag>
+		<English>Elective</English>
+		<French>
+			<Text>Monarchie &#233;lective</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Elective</German>
+		<Italian>Elective</Italian>
+		<Spanish>Elective</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_SELF_DETERMINATION_STRATEGY</Tag>
-		<English>More Priest slots; additional experience for units trained in cities with state religion; no stability changes from Civic combinations</English>
-		<French>More Priest slots; additional experience for units trained in cities with state religion; no stability changes from Civic combinations</French>
-		<German>More Priest slots; additional experience for units trained in cities with state religion; no stability changes from Civic combinations</German>
-		<Italian>More Priest slots; additional experience for units trained in cities with state religion; no stability changes from Civic combinations</Italian>
-		<Spanish>More Priest slots; additional experience for units trained in cities with state religion; no stability changes from Civic combinations</Spanish>
+		<Tag>TXT_KEY_CIVIC_ELECTIVE_STRATEGY</Tag>
+		<English>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace</English>
+		<French>Les cases non am&#233;lior&#233;es, les camps et les p&#226;turages rapportent du commerce additionnel ; vitesse de production doubl&#233;e pour le palais</French>
+		<German>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace</German>
+		<Italian>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace</Italian>
+		<Spanish>Extra commerce from tiles without improvement; extra commerce from camps and pastures; double production speed for Palace</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SELF_DETERMINATION_HELP</Tag>
@@ -632,19 +656,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SPECIALIZATION</Tag>
-		<English>Specialization</English>
-		<French>Specialization</French>
-		<German>Specialization</German>
-		<Italian>Specialization</Italian>
-		<Spanish>Specialization</Spanish>
+		<English>Craftsmen</English>
+		<French>Craftsmen</French>
+		<German>Craftsmen</German>
+		<Italian>Craftsmen</Italian>
+		<Spanish>Craftsmen</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SPECIALIZATION_STRATEGY</Tag>
-		<English>Minimum one slot for Artists, Scientists, Merchants, or Statesmen</English>
-		<French>Minimum one slot for Artists, Scientists, Merchants, or Statesmen</French>
-		<German>Minimum one slot for Artists, Scientists, Merchants, or Statesmen</German>
-		<Italian>Minimum one slot for Artists, Scientists, Merchants, or Statesmen</Italian>
-		<Spanish>Minimum one slot for Artists, Scientists, Merchants, or Statesmen</Spanish>
+		<English>Unemployed specialists grant extra production.</English>
+		<French>Unemployed specialists grant extra production.</French>
+		<German>Unemployed specialists grant extra production.</German>
+		<Italian>Unemployed specialists grant extra production.</Italian>
+		<Spanish>Unemployed specialists grant extra production.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Tag>

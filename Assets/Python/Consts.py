@@ -575,8 +575,8 @@ iPlague = iNumBuildings
 iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
-iNumCivics = 42
-(iChiefdom, iCouncil, iDespotism, iMonarchy, iViceroyalty, iSelfDetermination, iDemocracy,
+iNumCivics = 43
+(iChiefdom, iCouncil, iDespotism, iMonarchy, iElective, iViceroyalty, iSelfDetermination, iDemocracy,
 iAuthority, iEmpire, iColony, iCommonLaw, iConfederacy, iFederalism, iRepublic,
 iTraditionalism, iSpecialization, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
@@ -585,6 +585,8 @@ iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, 
 
 iNumCivicCategories = 6
 (iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
+
+iCivicCountInCategory = [8, 7, 7, 7, 7, 7];
 
 #Specialists
 iNumSpecialists = 19

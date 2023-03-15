@@ -625,6 +625,11 @@ bool CyPlayer::canDoCivics(int /*CivicTypes*/ eCivic)
 	return m_pPlayer ? m_pPlayer->canDoCivics((CivicTypes)eCivic) : false;
 }
 
+bool CyPlayer::isCivicValid(int /*CivicTypes*/ eCivic)
+{
+	return m_pPlayer ? m_pPlayer->isCivicValid((CivicTypes)eCivic) : false;
+}
+
 bool CyPlayer::canRevolution(int /*CivicTypes**/ paeNewCivics)
 {
 	return m_pPlayer ? m_pPlayer->canRevolution((CivicTypes*)paeNewCivics) : false;

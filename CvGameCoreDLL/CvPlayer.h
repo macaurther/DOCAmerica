@@ -265,6 +265,7 @@ public:
 
 	bool isCivic(CivicTypes eCivic) const;																																// Exposed to Python
 	bool canDoCivics(CivicTypes eCivic) const;																														// Exposed to Python
+	bool isCivicValid(CivicTypes eCivic) const;	//FoB																				// Exposed to Python
 	DllExport bool canRevolution(CivicTypes* paeNewCivics) const;																					// Exposed to Python
 	DllExport void revolution(CivicTypes* paeNewCivics, bool bForce = false);												// Exposed to Python
 	int getCivicPercentAnger(CivicTypes eCivic, bool bIgnore = false) const;																										// Exposed to Python

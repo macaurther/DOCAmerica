@@ -162,6 +162,7 @@ public:
 
 	bool isCivic(int /*CivicTypes*/ eCivic);
 	bool canDoCivics(int /*CivicTypes*/ eCivic);
+	bool isCivicValid(int /*CivicTypes*/ eCivic);
 	bool canRevolution(int /*CivicTypes**/ paeNewCivics);
 	void revolution(int /*CivicTypes**/ paeNewCivics, bool bForce);
 	int getCivicPercentAnger(int /*CivicTypes*/ eCivic);

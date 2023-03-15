@@ -75,6 +75,7 @@ class CvCivicsScreen:
 		self.Categories = []
 		self.PlayerCivics = []
 		self.SelectedCivics = []
+		self.ValidCivics = []
 		self.DisplayedCivics = []
 
 
@@ -233,10 +234,15 @@ class CvCivicsScreen:
 		iX, iY = self.getPosition(iCategory)
 
 		iLine = iY + self.MARGIN
-		
+
+		self.ValidCivics = [];
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory:
-				if iCivic % 7 == 0: continue
+				#iCivicOptionCount = iCivicCountInCategory[iCategory]
+				if isDefaultCivic(iCivic): continue
+				if not player.isCivicValid(iCivic): continue;
+
+				self.ValidCivics.append(iCivic)
 			
 				sName = "CivicButton" + str(iCivic)
 				sButton = gc.getCivicInfo(iCivic).getButton()
@@ -356,16 +362,20 @@ class CvCivicsScreen:
 		screen = self.getScreen()
 		player = gc.getPlayer(self.iActivePlayer)
 		iHoverCategory = gc.getCivicInfo(iHoverCivic).getCivicOptionType()
-		
-		for iCivic in range(iNumCivics):
-			if iCivic % 7 == 0: continue
-		
+
+		#for iCivic in range(iNumCivics):
+		iCategoryIndices = [0,0,0,0,0,0];
+		for iCivic in self.ValidCivics:
 			iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
+			if isDefaultCivic(iCivic): continue
+			if not player.isCivicValid(iCivic): continue;
 			if iCategory == iHoverCategory:
 				continue
 			iX, iY = self.getPosition(iCategory)
 			xPos = iX + self.W_CIVIC_CATEGORY - self.BUTTON_SMALL - self.MARGIN
-			iLine = iY + self.MARGIN + (iCivic % 7 - 1) * self.LINE
+
+			iLine = iY + self.MARGIN + iCategoryIndices[iCategory] * self.LINE
+			iCategoryIndices[iCategory] = iCategoryIndices[iCategory]+1;
 			
 			sName = "CivicName" + str(iCivic)
 			sText = gc.getCivicInfo(iCivic).getDescription()
@@ -463,7 +473,20 @@ class CvCivicsScreen:
 
 		return 0
 
-
-
 	def update(self, fDelta):
 		return
+
+def getFirstCivicIndexForCategory(iCategory):
+	iIndex = 0;
+	for i,count in enumerate(iCivicCountInCategory):
+		if(iCategory == i):
+			return iIndex;
+		iIndex += count;
+
+def isDefaultCivic(iCivic):
+	iIndex = 0;
+	for i in iCivicCountInCategory:
+		if iCivic == iIndex:
+			return True;
+		iIndex += i;
+	return False;

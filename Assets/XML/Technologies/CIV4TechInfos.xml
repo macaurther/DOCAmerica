@@ -553,7 +553,7 @@
 			<iAsset>12</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bVassalTrading>1</bVassalTrading>
+			<bTechTrading>1</bTechTrading>
 			<iGridX>3</iGridX>
 			<iGridY>7</iGridY>
 			<Flavors>
@@ -1251,7 +1251,7 @@
 			<iAsset>36</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bTechTrading>1</bTechTrading>
+			<bVassalTrading>1</bVassalTrading>
 			<iGridX>6</iGridX>
 			<iGridY>11</iGridY>
 			<CommerceFlexible>

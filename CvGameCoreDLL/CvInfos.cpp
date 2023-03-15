@@ -5778,6 +5778,7 @@ m_iExpInBorderModifier(0),
 m_iLevelExperienceModifier(0), // Leoreth
 m_iUnhappinessDecayModifier(0), // Leoreth
 m_iVassalTradeModifier(0), // Leoreth
+m_iCultureGroup(0), // FoB
 m_bMilitaryFoodProduction(false),
 m_bNoUnhealthyPopulation(false),
 m_bBuildingOnlyHealthy(false),
@@ -6430,6 +6431,11 @@ int CvCivicInfo::getVassalTradeModifier() const
 	return m_iVassalTradeModifier;
 }
 
+int CvCivicInfo::getCultureGroup() const
+{
+	return m_iCultureGroup;
+}
+
 void CvCivicInfo::read(FDataStreamBase* stream)
 {
 	CvInfoBase::read(stream);
@@ -6489,6 +6495,8 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iLevelExperienceModifier); // Leoreth
 	stream->Read(&m_iUnhappinessDecayModifier); // Leoreth
 	stream->Read(&m_iVassalTradeModifier); // Leoreth
+
+	stream->Read(&m_iCultureGroup); // FoB
 
 	stream->Read(&m_bMilitaryFoodProduction);
 	stream->Read(&m_bNoUnhealthyPopulation);
@@ -6674,6 +6682,8 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iUnhappinessDecayModifier); // Leoreth
 	stream->Write(m_iVassalTradeModifier); // Leoreth
 
+	stream->Write(m_iCultureGroup); // FoB
+
 	stream->Write(m_bMilitaryFoodProduction);
 	stream->Write(m_bNoUnhealthyPopulation);
 	stream->Write(m_bBuildingOnlyHealthy);
@@ -6783,6 +6793,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCapitalTradeModifier, "iCapitalTradeModifier"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iDefensivePactTradeModifier, "iDefensivePactTradeModifier"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iVassalTradeModifier, "iVassalTradeModifier"); // Leoreth
+	pXML->GetChildXmlValByName(&m_iCultureGroup, "iCultureGroup"); // FoB
 	pXML->GetChildXmlValByName(&m_iVassalCityCommerce, "iVassalCityCommerce"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iColonyCommerce, "iColonyCommerce"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iCaptureGoldModifier, "iCaptureGoldModifier"); // Leoreth
@@ -10477,6 +10488,7 @@ m_iSelectionSoundScriptId(0),
 m_iActionSoundScriptId(0),
 m_iDerivativeCiv(NO_CIVILIZATION),
 m_iStartingYear(0), // Leoreth
+m_iCultureGroup(0), // FoB
 m_iPaganReligion(0), // Leoreth
 m_iImpact(0), // Leoreth
 m_bPlayable(false),
@@ -10763,6 +10775,11 @@ const std::string CvCivilizationInfo::getRegion() const
 	return m_szRegion;
 }
 
+int CvCivilizationInfo::getCultureGroup() const
+{
+	return m_iCultureGroup;
+}
+
 int CvCivilizationInfo::getRating(RatingTypes eRating) const
 {
 	return m_piRatings[eRating];
@@ -10795,6 +10812,7 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	stream->ReadString(m_szAdjectiveKey);
 	stream->ReadString(m_szIdentifier); // Leoreth
 	stream->ReadString(m_szRegion); // MacAurther
+	stream->Read(&m_iCultureGroup); // FoB
 
 	// Arrays
 
@@ -10871,6 +10889,7 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 	stream->WriteString(m_szAdjectiveKey);
 	stream->WriteString(m_szIdentifier); // Leoreth
 	stream->WriteString(m_szRegion); // MacAurther
+	stream->Write(m_iCultureGroup); // FoB
 
 	// Arrays
 
@@ -10908,6 +10927,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	// Leoreth
 	pXML->GetChildXmlValByName(m_szIdentifier, "Identifier");
 	pXML->GetChildXmlValByName(m_szRegion, "Region"); // MacAurther
+	pXML->GetChildXmlValByName(&m_iCultureGroup, "CultureGroup"); // FoB
 
 	pXML->GetChildXmlValByName(szTextVal, "DefaultPlayerColor");
 	m_iDefaultPlayerColor = pXML->FindInInfoClass(szTextVal);

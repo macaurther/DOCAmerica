@@ -8033,6 +8033,11 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		}
 	}
 
+	if (!isCivicValid(eCivic))
+	{
+		return false;
+	}
+
 	if (!isHasCivicOption((CivicOptionTypes)(GC.getCivicInfo(eCivic).getCivicOptionType())) && !(GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getCivicInfo(eCivic).getTechPrereq()))))
 	{
 		return false;
@@ -8052,6 +8057,12 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	}
 
 	return true;
+}
+
+bool CvPlayer::isCivicValid(CivicTypes eCivic) const
+{
+	int cultureGroup = GC.getCivicInfo(eCivic).getCultureGroup();
+	return (cultureGroup == GC.getCivilizationInfo(getCivilizationType()).getCultureGroup()) || cultureGroup == 0;
 }
 
 

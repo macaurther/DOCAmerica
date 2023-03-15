@@ -19,25 +19,6 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_COUNCIL</Type>
-			<Description>TXT_KEY_CIVIC_COUNCIL</Description>
-			<Civilopedia>TXT_KEY_CIVIC_COUNCIL_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_COUNCIL_STRATEGY</Strategy>
-			<TechPrereq>TECH_PRIESTHOOD</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Council.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iWonderProductionModifier>25</iWonderProductionModifier>
-			<iStateReligionHappiness>-1</iStateReligionHappiness>
-			<BuildingHappinessChanges>
-				<BuildingHappinessChange>
-					<BuildingType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingType>
-					<iHappinessChange>1</iHappinessChange>
-				</BuildingHappinessChange>
-			</BuildingHappinessChanges>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
 			<Type>CIVIC_DESPOTISM</Type>
 			<Description>TXT_KEY_CIVIC_DESPOTISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DESPOTISM_PEDIA</Civilopedia>
@@ -46,7 +27,51 @@
 			<Button>,Art/Interface/Buttons/Civics/Despotism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
+			<iImprovementUpgradeRateModifier>-100</iImprovementUpgradeRateModifier>
+			<Hurrys>
+				<Hurry>
+					<HurryType>HURRY_POPULATION</HurryType>
+					<bHurry>1</bHurry>
+				</Hurry>
+			</Hurrys>
+			<UnimprovedTileYields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</UnimprovedTileYields>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_HAMLET</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_VILLAGE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DESPOT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -59,10 +84,72 @@
 			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
 			<CapitalYieldModifiers>
 				<iYield>25</iYield>
 			</CapitalYieldModifiers>
 			<iMilitaryProductionModifier>25</iMilitaryProductionModifier>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_COUNCIL</Type>
+			<Description>TXT_KEY_CIVIC_COUNCIL</Description>
+			<Civilopedia>TXT_KEY_CIVIC_COUNCIL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_COUNCIL_STRATEGY</Strategy>
+			<TechPrereq>TECH_POLITICS</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Council.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<iStateReligionHappiness>-2</iStateReligionHappiness>
+			<iLargestCityHappiness>3</iLargestCityHappiness>
+			<BuildingHappinessChanges>
+				<BuildingHappinessChange>
+					<BuildingType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingType>
+					<iHappinessChange>1</iHappinessChange>
+				</BuildingHappinessChange>
+			</BuildingHappinessChanges>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_ELECTIVE</Type>
+			<Description>TXT_KEY_CIVIC_ELECTIVE</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ELECTIVE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ELECTIVE_STRATEGY</Strategy>
+			<TechPrereq>TECH_POLITICS</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Oligarchy.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<iCultureGroup>1</iCultureGroup>
+			<UnimprovedTileYields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</UnimprovedTileYields>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -75,31 +162,13 @@
 			<Button>,Art/Interface/Buttons/Civics/Viceroyality.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iCultureGroup>2</iCultureGroup>
 			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
 			<bNoResistance>1</bNoResistance>
 			<UnhappinessExtraYields>
 				<iYield>0</iYield>
 				<iYield>2</iYield>
 			</UnhappinessExtraYields>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_SELF_DETERMINATION</Type>
-			<Description>TXT_KEY_CIVIC_SELF_DETERMINATION</Description>
-			<Civilopedia>TXT_KEY_CIVIC_SELF_DETERMINATION_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_SELF_DETERMINATION_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_SELF_DETERMINATION_HELP</Help>
-			<TechPrereq>TECH_RIGHTS_OF_MAN</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Individualism.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iStateReligionFreeExperience>2</iStateReligionFreeExperience>
-			<SpecialistValids>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
@@ -124,6 +193,31 @@
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_STATE_PARTY</Type>
+			<Description>TXT_KEY_CIVIC_STATE_PARTY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_STATE_PARTY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_STATE_PARTY_STRATEGY</Strategy>
+			<TechPrereq>TECH_MACROECONOMICS</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/State Party.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iNumCitiesMaintenanceModifier>-100</iNumCitiesMaintenanceModifier>
+			<SpecialistExtraCommerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>3</iCommerce>
+			</SpecialistExtraCommerces>
+			<Hurrys>
+				<Hurry>
+					<HurryType>HURRY_POPULATION</HurryType>
+					<bHurry>1</bHurry>
+				</Hurry>
+			</Hurrys>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DICTATOR</WeLoveTheKing>
+		</CivicInfo>
+		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
 			<Type>CIVIC_AUTHORITY</Type>
 			<Description>TXT_KEY_CIVIC_AUTHORITY</Description>
@@ -139,23 +233,25 @@
 			<Description>TXT_KEY_CIVIC_EMPIRE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_EMPIRE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_EMPIRE_STRATEGY</Strategy>
-			<TechPrereq>TECH_CONSTRUCTION</TechPrereq>
+			<TechPrereq>TECH_LAW</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Empire.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<Hurrys>
-				<Hurry>
-					<HurryType>HURRY_POPULATION</HurryType>
-					<bHurry>1</bHurry>
-				</Hurry>
-			</Hurrys>
-			<iWarWearinessModifier>-100</iWarWearinessModifier>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_GRANARY</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_BARRACKS</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_MARKET</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+			<iStateReligionHappiness>-2</iStateReligionHappiness>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -285,56 +381,19 @@
 			<Button>,Art/Interface/Buttons/Civics/Specialization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<MinimalSpecialists>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-			</MinimalSpecialists>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-			<Type>CIVIC_SLAVERY</Type>
-			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_SLAVERY_HELP</Help>
-			<TechPrereq>TECH_MASONRY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_LOW</Upkeep>
-			<bSlavery>1</bSlavery>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_ALTAR</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_SLAVE_PLANTATION</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
@@ -372,6 +431,46 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+			<Type>CIVIC_SLAVERY</Type>
+			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_SLAVERY_HELP</Help>
+			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<bSlavery>1</bSlavery>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_SLAVE_PLANTATION</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -554,7 +653,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MERCHANT_TRADE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_MERCHANT_TRADE_HELP</Help>
-			<TechPrereq>TECH_WRITING</TechPrereq>
+			<TechPrereq>TECH_NAVIGATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/MerchantTrade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -767,12 +866,33 @@
 			<Description>TXT_KEY_CIVIC_CASTE_SYSTEM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CASTE_SYSTEM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CASTE_SYSTEM_STRATEGY</Strategy>
-			<TechPrereq>TECH_CEREMONY</TechPrereq>
+			<TechPrereq>TECH_PRIESTHOOD</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Deification.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
+			<MinimalSpecialists>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+			</MinimalSpecialists>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -786,12 +906,12 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
+			<iWonderProductionModifier>25</iWonderProductionModifier>
 			<CapitalCommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>50</iCommerce>
 			</CapitalCommerceModifiers>
-			<iFreeSpecialist>1</iFreeSpecialist>
 			<bNoForeignTrade>1</bNoForeignTrade>
 		</CivicInfo>
 		<CivicInfo>
@@ -821,7 +941,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_PROFITEERING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PROFITEERING_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_PROFITEERING_HELP</Help>
-			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
+			<TechPrereq>TECH_EXPLOITATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Plantation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -924,7 +1044,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_CONQUEST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONQUEST_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_CONQUEST_HELP</Help>
-			<TechPrereq>TECH_LAW</TechPrereq>
+			<TechPrereq>TECH_SMELTING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Conquest.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -995,6 +1115,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Nationhood.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iWarWearinessModifier>-100</iWarWearinessModifier>
 			<bNoSlavery>1</bNoSlavery>
 			<iMaxConscript>3</iMaxConscript>
 			<iGreatGeneralRateModifier>100</iGreatGeneralRateModifier>
