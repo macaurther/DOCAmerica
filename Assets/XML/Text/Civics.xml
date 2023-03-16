@@ -191,23 +191,23 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY</Tag>
-		<English>Monarchy</English>
+		<English>Constitutional Monarchy</English>
 		<French>
-			<Text>Monarchie</Text>
+			<Text>Constitutional Monarchie</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>Monarchy</German>
-		<Italian>Monarchy</Italian>
-		<Spanish>Monarchy</Spanish>
+		<German>Constitutional Monarchy</German>
+		<Italian>Constitutional Monarchy</Italian>
+		<Spanish>Constitutional Monarchy</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Tag>
-		<English>Faster military unit production; extra food in capital</English>
-		<French>Faster military unit production; extra food in capital</French>
-		<German>Faster military unit production; extra food in capital</German>
-		<Italian>Faster military unit production; extra food in capital</Italian>
-		<Spanish>Faster military unit production; extra food in capital</Spanish>
+		<English>Military garrisons provide happiness; extra food in capital</English>
+		<French>Military garrisons provide happiness; extra food in capital</French>
+		<German>Military garrisons provide happiness; extra food in capital</German>
+		<Italian>Military garrisons provide happiness; extra food in capital</Italian>
+		<Spanish>Military garrisons provide happiness; extra food in capital</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AUTHORITY</Tag>
@@ -248,6 +248,42 @@
 		<German>Increased great people birth rate; extra production from Towns</German>
 		<Italian>Increased great people birth rate; extra production from Towns</Italian>
 		<Spanish>Increased great people birth rate; extra production from Towns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PARLIAMENT</Tag>
+		<English>Parliament</English>
+		<French>Parliament</French>
+		<German>Parliament</German>
+		<Italian>Parliament</Italian>
+		<Spanish>Parliament</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PARLIAMENT_STRATEGY</Tag>
+		<English>Towns provide more food</English>
+		<French>Towns provide more food</French>
+		<German>Towns provide more food</German>
+		<Italian>Towns provide more food</Italian>
+		<Spanish>Towns provide more food</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DICTATORSHIP</Tag>
+		<English>Dictatorship</English>
+		<French>
+			<Text>Dictatorship</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Dictatorship</German>
+		<Italian>Dictatorship</Italian>
+		<Spanish>Dictatorship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DICTATORSHIP_STRATEGY</Tag>
+		<English>Increased military production; extra production from angry faces</English>
+		<French>Increased military production; extra production from angry faces</French>
+		<German>Increased military production; extra production from angry faces</German>
+		<Italian>Increased military production; extra production from angry faces</Italian>
+		<Spanish>Increased military production; extra production from angry faces</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADITIONALISM</Tag>
@@ -557,6 +593,70 @@
 		<German>Faster Wonder production; extra unhappiness from Religion; extra happiness from Pagan Temples</German>
 		<Italian>Faster Wonder production; extra unhappiness from Religion; extra happiness from Pagan Temples</Italian>
 		<Spanish>Faster Wonder production; extra unhappiness from Religion; extra happiness from Pagan Temples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY</Tag>
+		<English>Royal Colony</English>
+		<French>Royal Colony</French>
+		<German>Royal Colony</German>
+		<Italian>Royal Colony</Italian>
+		<Spanish>Royal Colony</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Tag>
+		<English>Military Police</English>
+		<French>Military Police</French>
+		<German>Military Police</German>
+		<Italian>Military Police</Italian>
+		<Spanish>Military Police</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CHARTER_COLONY</Tag>
+		<English>Charter Colony</English>
+		<French>Charter Colony</French>
+		<German>Charter Colony</German>
+		<Italian>Charter Colony</Italian>
+		<Spanish>Charter Colony</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CHARTER_COLONY_STRATEGY</Tag>
+		<English>Idk</English>
+		<French>Military Police</French>
+		<German>Military Police</German>
+		<Italian>Military Police</Italian>
+		<Spanish>Military Police</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRADE_COMPANY</Tag>
+		<English>Trade Company</English>
+		<French>Trade Company</French>
+		<German>Trade Company</German>
+		<Italian>Trade Company</Italian>
+		<Spanish>Trade Company</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRADE_COMPANY_STRATEGY</Tag>
+		<English>More gold</English>
+		<French>More gold</French>
+		<German>More gold</German>
+		<Italian>More gold</Italian>
+		<Spanish>More gold</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMONWEALTH_REALM</Tag>
+		<English>Commonwealth Realm</English>
+		<French>Commonwealth Realm</French>
+		<German>Commonwealth Realm</German>
+		<Italian>Commonwealth Realm</Italian>
+		<Spanish>Commonwealth Realm</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMONWEALTH_REALM_STRATEGY</Tag>
+		<English>Care for some tea an' crummpets?</English>
+		<French>Care for some tea an' crummpets?</French>
+		<German>Care for some tea an' crummpets?</German>
+		<Italian>Care for some tea an' crummpets?</Italian>
+		<Spanish>Care for some tea an' crummpets?</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATE_PARTY</Tag>

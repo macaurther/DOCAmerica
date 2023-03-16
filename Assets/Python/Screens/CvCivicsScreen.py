@@ -476,13 +476,6 @@ class CvCivicsScreen:
 	def update(self, fDelta):
 		return
 
-def getFirstCivicIndexForCategory(iCategory):
-	iIndex = 0;
-	for i,count in enumerate(iCivicCountInCategory):
-		if(iCategory == i):
-			return iIndex;
-		iIndex += count;
-
 def isDefaultCivic(iCivic):
 	iIndex = 0;
 	for i in iCivicCountInCategory:

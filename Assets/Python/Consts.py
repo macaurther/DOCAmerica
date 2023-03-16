@@ -586,7 +586,7 @@ iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, 
 iNumCivicCategories = 6
 (iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
 
-iCivicCountInCategory = [8, 7, 7, 7, 7, 7];
+iCivicCountInCategory = [13, 7, 7, 7, 7, 7];
 
 #Specialists
 iNumSpecialists = 19
