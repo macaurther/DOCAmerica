@@ -287,14 +287,8 @@
 			<bNoResistance>1</bNoResistance>
 			<UnhappinessExtraYields>
 				<iYield>0</iYield>
-				<iYield>2</iYield>
+				<iYield>3</iYield>
 			</UnhappinessExtraYields>
-			<Hurrys>
-				<Hurry>
-					<HurryType>HURRY_POPULATION</HurryType>
-					<bHurry>1</bHurry>
-				</Hurry>
-			</Hurrys>
 			<iMilitaryProductionModifier>25</iMilitaryProductionModifier>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DICTATOR</WeLoveTheKing>
 		</CivicInfo>
@@ -327,18 +321,13 @@
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iCultureGroup>1</iCultureGroup>
 			<iNumCitiesMaintenanceModifier>-100</iNumCitiesMaintenanceModifier>
+			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
 			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>3</iCommerce>
 			</SpecialistExtraCommerces>
-			<Hurrys>
-				<Hurry>
-					<HurryType>HURRY_POPULATION</HurryType>
-					<bHurry>1</bHurry>
-				</Hurry>
-			</Hurrys>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DICTATOR</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -462,8 +451,13 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iNumCitiesMaintenanceModifier>-100</iNumCitiesMaintenanceModifier>
-			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
+			<iGoldPerUnit>3</iGoldPerUnit>
+			<iBaseFreeMilitaryUnits>0</iBaseFreeMilitaryUnits>
+			<SpecialistExtraCommerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</SpecialistExtraCommerces>
+			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -479,22 +473,24 @@
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>50</iYield>
+				<iYield>50</iYield>
 			</CapitalYieldModifiers>
-			<CapitalCommerceModifiers>
-				<iCommerce>50</iCommerce>
-			</CapitalCommerceModifiers>
-			<SpecialistValids>
-				<SpecialistValid>
+			<Hurrys>
+				<Hurry>
+					<HurryType>HURRY_GOLD_BUILDINGS</HurryType>
+					<bHurry>1</bHurry>
+				</Hurry>
+				<Hurry>
+					<HurryType>HURRY_GOLD_UNITS</HurryType>
+					<bHurry>1</bHurry>
+				</Hurry>
+			</Hurrys>
+			<MinimalSpecialists>
+				<MinimalSpecialist>
 					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
-			<BuildingProductionModifiers>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_COURTHOUSE</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-			</BuildingProductionModifiers>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+			</MinimalSpecialists>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -527,7 +523,7 @@
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iFreeSpecialist>1</iFreeSpecialist>
-			<iLargestCityHappiness>2</iLargestCityHappiness>
+			<iSpecialistHappiness>1</iSpecialistHappiness>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CONSUL</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -566,8 +562,13 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iWarWearinessModifier>-50</iWarWearinessModifier>
 			<iMilitaryProductionModifier>25</iMilitaryProductionModifier>
+			<Hurrys>
+				<Hurry>
+					<HurryType>HURRY_POPULATION</HurryType>
+					<bHurry>1</bHurry>
+				</Hurry>
+			</Hurrys>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>

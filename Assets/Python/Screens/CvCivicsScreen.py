@@ -129,6 +129,7 @@ class CvCivicsScreen:
 		player = gc.getPlayer(self.iActivePlayer)
 		screen = self.getScreen()
 
+		self.ValidCivics = [];
 		for i in xrange(len(self.Categories)):
 			iCategory = self.Categories[i]
 			iX, iY = self.getPosition(iCategory)
