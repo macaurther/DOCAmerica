@@ -110,6 +110,22 @@
 		<Spanish>One free specialist in each city; extra happiness in largest cities</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_POLICE_STATE</Tag>
+		<English>Police State</English>
+		<French>Police State</French>
+		<German>Police State</German>
+		<Italian>Police State</Italian>
+		<Spanish>Police State</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_POLICE_STATE_STRATEGY</Tag>
+		<English></English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
 		<English>Can capture Workers; extra commerce from Mines and Plantations; immigration also provides commerce</English>
 		<French>Can capture Workers; extra commerce from Mines and Plantations; immigration also provides commerce</French>
@@ -250,15 +266,15 @@
 		<Spanish>Increased great people birth rate; extra production from Towns</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PARLIAMENT</Tag>
-		<English>Parliament</English>
-		<French>Parliament</French>
-		<German>Parliament</German>
-		<Italian>Parliament</Italian>
-		<Spanish>Parliament</Spanish>
+		<Tag>TXT_KEY_CIVIC_DOMINION</Tag>
+		<English>Dominion</English>
+		<French>Dominion</French>
+		<German>Dominion</German>
+		<Italian>Dominion</Italian>
+		<Spanish>Dominion</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PARLIAMENT_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_DOMINION_STRATEGY</Tag>
 		<English>Towns provide more food</English>
 		<French>Towns provide more food</French>
 		<German>Towns provide more food</German>
@@ -547,20 +563,36 @@
 		<Spanish>No war weariness; faster production of Granary; can hurry production by sacrificing population</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_COLONY</Tag>
-		<English>Colony</English>
-		<French>Colony</French>
-		<German>Colony</German>
-		<Italian>Colony</Italian>
-		<Spanish>Colony</Spanish>
+		<Tag>TXT_KEY_CIVIC_MARITIME_LAW</Tag>
+		<English>Maritime Law</English>
+		<French>Maritime Law</French>
+		<German>Maritime Law</German>
+		<Italian>Maritime Law</Italian>
+		<Spanish>Maritime Law</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_COLONY_STRATEGY</Tag>
-		<English>Extra experience for naval units; can hurry unit produciton with gold</English>
-		<French>Extra experience for naval units; can hurry unit produciton with gold</French>
-		<German>Extra experience for naval units; can hurry unit produciton with gold</German>
-		<Italian>Extra experience for naval units; can hurry unit produciton with gold</Italian>
-		<Spanish>Extra experience for naval units; can hurry unit produciton with gold</Spanish>
+		<Tag>TXT_KEY_CIVIC_MARITIME_LAW_STRATEGY</Tag>
+		<English>Extra experience for naval units</English>
+		<French>Extra experience for naval units</French>
+		<German>Extra experience for naval units</German>
+		<Italian>Extra experience for naval units</Italian>
+		<Spanish>Extra experience for naval units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTAINCIES</Tag>
+		<English>Captaincies</English>
+		<French>Captaincies</French>
+		<German>Captaincies</German>
+		<Italian>Captaincies</Italian>
+		<Spanish>Captaincies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTAINCIES_STRATEGY</Tag>
+		<English>Double production speed for defensive buildings</English>
+		<French>Double production speed for defensive buildings</French>
+		<German>Double production speed for defensive buildings</German>
+		<Italian>Double production speed for defensive buildings</Italian>
+		<Spanish>Double production speed for defensive buildings</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY</Tag>
@@ -577,6 +609,54 @@
 		<German>No maintenance costs from number of cities; less experience needed to promote units</German>
 		<Italian>No maintenance costs from number of cities; less experience needed to promote units</Italian>
 		<Spanish>No maintenance costs from number of cities; less experience needed to promote units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOVERNORS</Tag>
+		<English>Governors</English>
+		<French>Governors</French>
+		<German>Governors</German>
+		<Italian>Governors</Italian>
+		<Spanish>Governors</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOVERNORS_STRATEGY</Tag>
+		<English>Bonus yields in capital</English>
+		<French>Bonus yields in capital</French>
+		<German>Bonus yields in capital</German>
+		<Italian>Bonus yields in capital</Italian>
+		<Spanish>Bonus yields in capital</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY</Tag>
+		<English>Colonial Assembly</English>
+		<French>Colonial Assembly</French>
+		<German>Colonial Assembly</German>
+		<Italian>Colonial Assembly</Italian>
+		<Spanish>Colonial Assembly</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY_STRATEGY</Tag>
+		<English>Double specialists in cities</English>
+		<French>Double specialists in cities</French>
+		<German>Double specialists in cities</German>
+		<Italian>Double specialists in cities</Italian>
+		<Spanish>Double specialists in cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROVINCES</Tag>
+		<English>Provinces</English>
+		<French>Provinces</French>
+		<German>Provinces</German>
+		<Italian>Provinces</Italian>
+		<Spanish>Provinces</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROVINCES_STRATEGY</Tag>
+		<English>Free specialists in cities</English>
+		<French>Free specialists in cities</French>
+		<German>Free specialists in cities</German>
+		<Italian>Free specialists in cities</Italian>
+		<Spanish>Free specialists in cities</Spanish>
 	</TEXT>
 	<TEXT>
 			<Tag>TXT_KEY_CIVIC_COUNCIL</Tag>

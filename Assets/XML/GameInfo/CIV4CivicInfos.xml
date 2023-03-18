@@ -120,7 +120,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_CHARTER_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CHARTER_COLONY_STRATEGY</Strategy>
 			<TechPrereq>TECH_DIPLOMACY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Oligarchy.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Centralism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iCultureGroup>2</iCultureGroup>
@@ -246,12 +246,12 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_PARLIAMENT</Type>
-			<Description>TXT_KEY_CIVIC_PARLIAMENT</Description>
-			<Civilopedia>TXT_KEY_CIVIC_PARLIAMENT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_PARLIAMENT_STRATEGY</Strategy>
+			<Type>CIVIC_DOMINION</Type>
+			<Description>TXT_KEY_CIVIC_DOMINION</Description>
+			<Civilopedia>TXT_KEY_CIVIC_DOMINION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_DOMINION_STRATEGY</Strategy>
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Constitution.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Representation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,6,2</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iCultureGroup>2</iCultureGroup>
@@ -360,6 +360,7 @@
 			<TechPrereq>TECH_LAW</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Empire.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
@@ -380,28 +381,22 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-			<Type>CIVIC_COLONY</Type>
-			<Description>TXT_KEY_CIVIC_COLONY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_COLONY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_COLONY_STRATEGY</Strategy>
+			<Type>CIVIC_MARITIME_LAW</Type>
+			<Description>TXT_KEY_CIVIC_MARITIME_LAW</Description>
+			<Civilopedia>TXT_KEY_CIVIC_MARITIME_LAW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_MARITIME_LAW_STRATEGY</Strategy>
 			<TechPrereq>TECH_COLONIZATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Colonialism.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Sailing.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<Hurrys>
-				<Hurry>
-					<HurryType>HURRY_GOLD_UNITS</HurryType>
-					<bHurry>1</bHurry>
-				</Hurry>
-			</Hurrys>
 			<DomainExperienceModifiers>
 				<DomainExperienceModifier>
 					<DomainType>DOMAIN_SEA</DomainType>
 					<iExperienceModifier>4</iExperienceModifier>
 				</DomainExperienceModifier>
 			</DomainExperienceModifiers>
-			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DICTATOR</WeLoveTheKing>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -431,6 +426,33 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_CAPTAINCIES</Type>
+			<Description>TXT_KEY_CIVIC_CAPTAINCIES</Description>
+			<Civilopedia>TXT_KEY_CIVIC_CAPTAINCIES_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_CAPTAINCIES_STRATEGY</Strategy>
+			<TechPrereq>TECH_COLONIZATION</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Captain.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_PALISADE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_WALLS</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_STAR_FORT</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
 			<Type>CIVIC_CONFEDERACY</Type>
 			<Description>TXT_KEY_CIVIC_CONFEDERACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONFEDERACY_PEDIA</Civilopedia>
@@ -438,6 +460,7 @@
 			<TechPrereq>TECH_STATECRAFT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Confederacy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iNumCitiesMaintenanceModifier>-100</iNumCitiesMaintenanceModifier>
 			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
@@ -451,6 +474,7 @@
 			<TechPrereq>TECH_BALANCE_OF_POWER</TechPrereq>
 			<Button>Art/Interface/Buttons/Civics/Federalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
@@ -474,6 +498,25 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_GOVERNORS</Type>
+			<Description>TXT_KEY_CIVIC_GOVERNORS</Description>
+			<Civilopedia>TXT_KEY_CIVIC_GOVERNORS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_GOVERNORS_STRATEGY</Strategy>
+			<TechPrereq>TECH_GOVERNORS</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Egalitarianism.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<CapitalYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>50</iYield>
+			</CapitalYieldModifiers>
+			<CapitalCommerceModifiers>
+				<iCommerce>50</iCommerce>
+			</CapitalCommerceModifiers>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
 			<Type>CIVIC_REPUBLIC</Type>
 			<Description>TXT_KEY_CIVIC_REPUBLIC</Description>
 			<Civilopedia>TXT_KEY_CIVIC_REPUBLIC_PEDIA</Civilopedia>
@@ -481,10 +524,63 @@
 			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Republic.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iFreeSpecialist>1</iFreeSpecialist>
 			<iLargestCityHappiness>2</iLargestCityHappiness>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CONSUL</WeLoveTheKing>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_COLONIAL_ASSEMBLY</Type>
+			<Description>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY_STRATEGY</Strategy>
+			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Oligarchy.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_MEETING_HALL</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
+			<SpecialistValids>
+				<SpecialistValid>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<bValid>1</bValid>
+				</SpecialistValid>
+			</SpecialistValids>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_POLICE_STATE</Type>
+			<Description>TXT_KEY_CIVIC_POLICE_STATE</Description>
+			<Civilopedia>TXT_KEY_CIVIC_POLICE_STATE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_POLICE_STATE_STRATEGY</Strategy>
+			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Police_State.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,2</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>1</iCultureGroup>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iWarWearinessModifier>-50</iWarWearinessModifier>
+			<iMilitaryProductionModifier>25</iMilitaryProductionModifier>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_PROVINCES</Type>
+			<Description>TXT_KEY_CIVIC_PROVINCES</Description>
+			<Civilopedia>TXT_KEY_CIVIC_PROVINCES_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_PROVINCES_STRATEGY</Strategy>
+			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Provinces.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iFreeSpecialist>1</iFreeSpecialist>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
