@@ -918,25 +918,24 @@ def getCivicStability(iPlayer, civics=None):
 	iCurrentEra = player(iPlayer).getCurrentEra()
 	iStability = 0
 	
-	if iRepublic in civics:
-		if iDemocracy in civics: iStability += 3
-		if iPublicWelfare in civics: iStability += 4
-		if iNationhood in civics: iStability += 2
-		if iFederalism in civics: iStability += 2
-		if iOpportunity in civics: iStability += 2
-		if iMercantilism in civics: iStability -= 2
+	if iSpoilsSystem in civics:
+		if iStateParty in civics: iStability += 2
+		if iPuppeteering in civics: iStability += 2
+		if iDemocracy in civics: iStability -= 3
 	
 	if iConfederacy in civics:
 		if iMultilateralism in civics: iStability += 3
 		if iMulticulturalism in civics: iStability += 2
-		if iNationhood in civics: iStability -= 2
-		if iIsolationism in civics: iStability -= 2
-		if iFederalism in civics: iStability -= 4
+		if iDespotism in civics: iStability -= 2
+		if iStateParty in civics: iStability -= 2
+		if iMonarchy in civics: iStability -= 2
+		if iDictatorship in civics: iStability -= 4
+		if iNationhood in civics: iStability -= 3
+		if iConquest in civics: iStability -= 3
 	
 	if iMonarchy in civics:
 		if iViceroyalty in civics: iStability += 2
 		if iCommonLaw in civics: iStability += 2
-		if iRepublic in civics: iStability -= 3
 		if iMultilateralism in civics: iStability -= 2
 	
 	if iMaritimeLaw in civics:
@@ -969,7 +968,6 @@ def getCivicStability(iPlayer, civics=None):
 		if iPublicWelfare in civics: iStability -= 2
 		if iFreeEnterprise in civics: iStability -= 2
 		if iCommonLaw in civics: iStability -= 3
-		if iRepublic in civics: iStability -= 4
 	
 	if iDemocracy in civics: 
 		if iPublicWelfare in civics: iStability += 2

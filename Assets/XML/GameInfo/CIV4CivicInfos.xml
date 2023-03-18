@@ -233,15 +233,7 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCultureGroup>1</iCultureGroup>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
+			<iImprovementUpgradeRateModifier>100</iImprovementUpgradeRateModifier>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -451,13 +443,14 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iGoldPerUnit>3</iGoldPerUnit>
+			<iGoldPerUnit>2</iGoldPerUnit>
 			<iBaseFreeMilitaryUnits>0</iBaseFreeMilitaryUnits>
+			<iWarWearinessModifier>100</iWarWearinessModifier>
 			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
+				<iCommerce>3</iCommerce>
 			</SpecialistExtraCommerces>
-			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
+			<iNumCitiesMaintenanceModifier>25</iNumCitiesMaintenanceModifier>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -472,16 +465,21 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
-				<iYield>50</iYield>
-				<iYield>50</iYield>
+				<iYield>25</iYield>
+				<iYield>25</iYield>
 			</CapitalYieldModifiers>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 			<Hurrys>
 				<Hurry>
-					<HurryType>HURRY_GOLD_BUILDINGS</HurryType>
-					<bHurry>1</bHurry>
-				</Hurry>
-				<Hurry>
-					<HurryType>HURRY_GOLD_UNITS</HurryType>
+					<HurryType>HURRY_GOLD_FEDERALISM</HurryType>
 					<bHurry>1</bHurry>
 				</Hurry>
 			</Hurrys>
@@ -513,17 +511,23 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-			<Type>CIVIC_REPUBLIC</Type>
-			<Description>TXT_KEY_CIVIC_REPUBLIC</Description>
-			<Civilopedia>TXT_KEY_CIVIC_REPUBLIC_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_REPUBLIC_STRATEGY</Strategy>
-			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Republic.dds</Button>
+			<Type>CIVIC_SPOILS_SYSTEM</Type>
+			<Description>TXT_KEY_CIVIC_SPOILS_SYSTEM</Description>
+			<Civilopedia>TXT_KEY_CIVIC_SPOILS_SYSTEM_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_SPOILS_SYSTEM_STRATEGY</Strategy>
+			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Decentralization.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iFreeSpecialist>1</iFreeSpecialist>
-			<iSpecialistHappiness>1</iSpecialistHappiness>
+			<iCoreFreeSpecialist>1</iCoreFreeSpecialist>
+			<iCapitalTradeModifier>100</iCapitalTradeModifier>
+			<MinimalSpecialists>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+			</MinimalSpecialists>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CONSUL</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1001,7 +1005,6 @@
 			<Button>,Art/Interface/Buttons/Civics/Consumerism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iImprovementUpgradeRateModifier>100</iImprovementUpgradeRateModifier>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_VILLAGE</ImprovementType>
@@ -1180,7 +1183,7 @@
 			</ImprovementYieldChanges>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
-				<iCommerce>10</iCommerce>
+				<iCommerce>15</iCommerce>
 			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -1195,7 +1198,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
+			<iSpecialistHappiness>1</iSpecialistHappiness>
 			<iStateReligionGreatPeopleRateModifier>25</iStateReligionGreatPeopleRateModifier>
 		</CivicInfo>
 		<CivicInfo>
@@ -1210,6 +1213,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bNoSlavery>1</bNoSlavery>
+			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
@@ -1333,7 +1337,7 @@
 			<Description>TXT_KEY_CIVIC_NATIONHOOD</Description>
 			<Civilopedia>TXT_KEY_CIVIC_NATIONHOOD_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_NATIONHOOD_STRATEGY</Strategy>
-			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
+			<TechPrereq>TECH_NATIONALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Nationhood.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>

@@ -67,7 +67,7 @@ def notcivics(*civics):
 def isCommunist(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iEconomy == iPublicWelfare and civic.iGovernment == iDespotism:
+	if civic.iEconomy == iPublicWelfare and civic.iGovernment == iStateParty:
 		return True
 		
 	return False
@@ -79,8 +79,11 @@ def isAmerican(iPlayer):
 	
 def isFascist(iPlayer):
 	civic = civics(iPlayer)
-	
-	if civic.iSociety not in [iOpportunity, iMulticulturalism] and civic.iExpansion in [iNationhood, iPuppeteering] and civic.iLegal != iDemocracy:
+
+	if civic.iGovernment == iDictatorship:
+		return True
+
+	if civic.iLegal == iPoliceState and civic.iGovernment not in [iMonarchy, iStateParty]:
 		return True
 	
 	return False
@@ -88,10 +91,7 @@ def isFascist(iPlayer):
 def isRepublic(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iLegal == iDemocracy:
-		return True
-	
-	if civic.iGovernment in [iDespotism, iRepublic] and civic.iLegal in [iFederalism, iSelfDetermination, iDemocracy]:
+	if civic.iGovernment == iDemocracy:
 		return True
 	
 	return False
