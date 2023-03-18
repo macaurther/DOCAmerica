@@ -235,7 +235,6 @@ class CvCivicsScreen:
 
 		iLine = iY + self.MARGIN
 
-		self.ValidCivics = [];
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory:
 				#iCivicOptionCount = iCivicCountInCategory[iCategory]

@@ -15,7 +15,7 @@ lCivilizations = [
 	Civilization(
 		iNorse,
 		iGold=50,
-		lCivics=[iColony, iCommonLaw, iMerchantTrade],
+		lCivics=[iMaritimeLaw, iCommonLaw, iMerchantTrade],
 		techs=techs.column(4).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
@@ -46,7 +46,7 @@ lCivilizations = [
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iColony, iConquest],
+		lCivics=[iMaritimeLaw, iConquest],
 		techs=techs.column(6).without(*lNativeTechs)
 	),
 	Civilization(

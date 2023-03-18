@@ -575,10 +575,10 @@ iPlague = iNumBuildings
 iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
-iNumCivics = 43
-(iChiefdom, iCouncil, iDespotism, iMonarchy, iElective, iViceroyalty, iSelfDetermination, iDemocracy,
-iAuthority, iEmpire, iColony, iCommonLaw, iConfederacy, iFederalism, iRepublic,
-iTraditionalism, iSpecialization, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
+iNumCivics = 53
+(iChiefdom, iDespotism, iViceroyalty, iCouncil, iCharterColony, iRoyalColony, iMonarchy, iTradeCompany, iDemocracy, iDominion, iDictatorship, iCommonwealth, iStateParty,
+iAuthority, iEmpire, iMaritimeLaw, iCommonLaw, iCaptaincies, iConfederacy, iFederalism, iGovernors, iRepublic, iColonialAssembly, iPoliceState, iProvinces,
+iTraditionalism, iCraftsmen, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
 iAnimism, iCasteSystem, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,
 iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, iMultilateralism) = range(iNumCivics)

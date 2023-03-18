@@ -25438,7 +25438,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_COLONY || eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_MERCANTILISM)
+		if (eCivic == CIVIC_MARITIME_LAW || eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_MERCANTILISM)
 		{
 			return true;
 		}
@@ -25454,7 +25454,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
 	{
-		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_SPECIALIZATION)
+		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_CRAFTSMEN)
 		{
 			return true;
 		}
