@@ -119,43 +119,17 @@
 			<Description>TXT_KEY_CIVIC_CHARTER_COLONY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CHARTER_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CHARTER_COLONY_STRATEGY</Strategy>
-			<TechPrereq>TECH_DIPLOMACY</TechPrereq>
+			<TechPrereq>TECH_CHARTER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Centralism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iCultureGroup>2</iCultureGroup>
+			<UnimprovedTileYields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</UnimprovedTileYields>
 			<iStateReligionHappiness>2</iStateReligionHappiness>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_ROYAL_COLONY</Type>
-			<Description>TXT_KEY_CIVIC_ROYAL_COLONY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_ROYAL_COLONY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Strategy>
-			<TechPrereq>TECH_HERITAGE</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iCultureGroup>2</iCultureGroup>
-			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
-			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_MONARCHY</Type>
-			<Description>TXT_KEY_CIVIC_MONARCHY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
-			<TechPrereq>TECH_HERITAGE</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iCultureGroup>1</iCultureGroup>
-			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
-			<CapitalYieldModifiers>
-				<iYield>25</iYield>
-			</CapitalYieldModifiers>
-			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
@@ -163,7 +137,7 @@
 			<Description>TXT_KEY_CIVIC_TRADE_COMPANY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TRADE_COMPANY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TRADE_COMPANY_STRATEGY</Strategy>
-			<TechPrereq>TECH_EXPLOITATION</TechPrereq>
+			<TechPrereq>TECH_ECONOMICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Colonialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -223,6 +197,37 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_ROYAL_COLONY</Type>
+			<Description>TXT_KEY_CIVIC_ROYAL_COLONY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ROYAL_COLONY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Strategy>
+			<TechPrereq>TECH_HERITAGE</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,3</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iCultureGroup>2</iCultureGroup>
+			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
+			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
+			<Type>CIVIC_MONARCHY</Type>
+			<Description>TXT_KEY_CIVIC_MONARCHY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
+			<TechPrereq>TECH_HERITAGE</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iCultureGroup>1</iCultureGroup>
+			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
+			<CapitalYieldModifiers>
+				<iYield>25</iYield>
+			</CapitalYieldModifiers>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
 			<Type>CIVIC_DEMOCRACY</Type>
 			<Description>TXT_KEY_CIVIC_DEMOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DEMOCRACY_PEDIA</Civilopedia>
@@ -242,7 +247,7 @@
 			<Description>TXT_KEY_CIVIC_DOMINION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DOMINION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DOMINION_STRATEGY</Strategy>
-			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
+			<TechPrereq>TECH_INDEPENDENCE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Representation.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,6,2</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -366,7 +371,7 @@
 			<Description>TXT_KEY_CIVIC_MARITIME_LAW</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MARITIME_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MARITIME_LAW_STRATEGY</Strategy>
-			<TechPrereq>TECH_COLONIZATION</TechPrereq>
+			<TechPrereq>TECH_CARTOGRAPHY</TechPrereq>
 			<Button>,Art/Interface/Buttons/TechTree/Sailing.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -377,6 +382,16 @@
 					<iExperienceModifier>4</iExperienceModifier>
 				</DomainExperienceModifier>
 			</DomainExperienceModifiers>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_HARBOR</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_LIGHTHOUSE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -504,8 +519,8 @@
 			<Description>TXT_KEY_CIVIC_GOVERNORS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_GOVERNORS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_GOVERNORS_STRATEGY</Strategy>
-			<TechPrereq>TECH_GOVERNORS</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Egalitarianism.dds</Button>
+			<TechPrereq>TECH_POLITICS</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Governors.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<CapitalYieldModifiers>
@@ -545,7 +560,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY_STRATEGY</Strategy>
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Oligarchy.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Assembly.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -588,11 +603,12 @@
 			<Description>TXT_KEY_CIVIC_PROVINCES</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PROVINCES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PROVINCES_STRATEGY</Strategy>
-			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
+			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Provinces.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<bNoSlavery>1</bNoSlavery>
 			<iFreeSpecialist>1</iFreeSpecialist>
 		</CivicInfo>
 		<CivicInfo>
@@ -899,7 +915,7 @@
 			<Description>TXT_KEY_CIVIC_MERCANTILISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MERCANTILISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_CHARTER</TechPrereq>
+			<TechPrereq>TECH_FINANCE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Regulated Trade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -1301,12 +1317,15 @@
 			<Button>,Art/Interface/Buttons/Civics/Homesteads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<UnimprovedTileYields>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>1</iYield>
-			</UnimprovedTileYields>
 			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 					<ImprovementYields>
