@@ -1,8 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
-MinimumVisualStudioVersion = 10.0.40219.1
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CvGameCoreDLL", "CvGameCoreDLL.vcxproj", "{0839103A-3707-457B-A5A2-BEB34D674844}"
 EndProject
 Global
@@ -16,8 +14,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Assert|Win32.ActiveCfg = Profile|Win32
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Assert|Win32.Build.0 = Profile|Win32
-		{0839103A-3707-457B-A5A2-BEB34D674844}.Debug|Win32.ActiveCfg = Release|Win32
-		{0839103A-3707-457B-A5A2-BEB34D674844}.Debug|Win32.Build.0 = Release|Win32
+		{0839103A-3707-457B-A5A2-BEB34D674844}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0839103A-3707-457B-A5A2-BEB34D674844}.Debug|Win32.Build.0 = Debug|Win32
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Final_Release|Win32.ActiveCfg = Final_Release|Win32
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Final_Release|Win32.Build.0 = Final_Release|Win32
 		{0839103A-3707-457B-A5A2-BEB34D674844}.Profile|Win32.ActiveCfg = Profile|Win32
@@ -27,8 +25,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {89D094FB-8EEC-42F8-A69E-08EDDD564EE7}
 	EndGlobalSection
 EndGlobal
