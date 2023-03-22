@@ -163,10 +163,10 @@ def conquistadors(iTeamX, iHasMetTeamY):
 						team(iOldWorldPlayer).declareWar(iNewWorldPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
 						
 						dConquerorUnits = {
-							iAttack: 1 + iModifier2,
+							iShock: 1 + iModifier2,
 							iCounter: 2,
-							iSiege: 1 + iModifier1 + iModifier2,
-							iShockCity: 2 + iModifier1,
+							iSiegeCity: 1 + iModifier1 + iModifier2,
+							iShockCav: 2 + iModifier1,
 						}
 						units = createRoleUnits(iOldWorldPlayer, arrivalPlot, dConquerorUnits.items())
 						units.promotion(infos.type("PROMOTION_MERCENARY"))
@@ -250,15 +250,15 @@ def expeditionaryForce(iRevolutionaryPlayer):
 		team(iExpeditionaryPlayer).declareWar(iRevolutionaryPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
 		
 		dExpeditionSeaUnits = {
-			iAttackSea: 8 + iModifier1 + iModifier2,
-			iFerry: 6 + iModifier1 + iModifier2,
+			iEscortSea: 8 + iModifier1 + iModifier2,
+			iFerrySea: 6 + iModifier1 + iModifier2,
 		}
 		
 		dExpeditionUnits = {
-			iAttack: 6 + iModifier2,
-			iCounter: 4,
+			iBase: 6 + iModifier2,
+			iShock: 4,
 			iSiege: 3 + iModifier1 + iModifier2,
-			iShockCity: 4 + iModifier1,
+			iSiegeCity: 4 + iModifier1,
 		}
 		
 		seaUnits = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionSeaUnits.items())
@@ -295,8 +295,8 @@ def americanWesternSettlement(iTech, iTeam, iPlayer):
 		for city in enemyCities:
 			plot = plots.surrounding(city).without(city).land().passable().no_enemies(iPlayer).random()
 			if plot:
-				createRoleUnit(iPlayer, plot, iAttack, 3)
-				createRoleUnit(iPlayer, plot, iCitySiege, 2)
+				createRoleUnit(iPlayer, plot, iBase, 3)
+				createRoleUnit(iPlayer, plot, iSiegeCity, 2)
 				
 				message(city.getOwner(), "TXT_KEY_MESSAGE_AMERICAN_WEST_COAST_CONQUERORS", adjective(iPlayer), city.getName(), color=iRed, location=city, button=infos.unit(iMinuteman).getButton())
 				
@@ -368,7 +368,7 @@ def giveColonists(iPlayer):
 			else:
 				# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
 				tUnitPlot = dAIColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
-				tSeaPlot = getRoleLocation(iFerry, location(tUnitPlot))
+				tSeaPlot = getRoleLocation(iFerrySea, location(tUnitPlot))
 			
 			iReligion = player(iPlayer).getStateReligion()
 			
@@ -379,7 +379,7 @@ def giveColonists(iPlayer):
 				elif iExpeditionType == iCaravelSettle:	# Caravel, Settler, Militia (Portugal: Carrack, Settler, Settler, Militia)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
 					if iCiv == iPortugal:
 						makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
 				elif iExpeditionType == iCaravelSupport:	# Caravel, Work, Missionary (Portugal: Carrack, Work, Missionary, Militia)
@@ -388,42 +388,42 @@ def giveColonists(iPlayer):
 					if iReligion > -1:
 						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 					if iCiv == iPortugal:
-						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
-				elif iExpeditionType == iCaravelExplore:	# Caravel, Explore, Missionary (Portugal: Carrack, Explore, Missionary, Missionary)
+						createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
+				elif iExpeditionType == iCaravelExplore:	# Caravel, Recon, Missionary (Portugal: Carrack, Recon, Missionary, Missionary)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iExplore, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iRecon, 1)
 					if iReligion > -1:
 						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 						if iCiv == iPortugal:
 							makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-				elif iExpeditionType == iCaravelConquer:	# Caravel, Attack, CitySiege (Portugal: Carrack, Attack, Attack, CitySiege)
+				elif iExpeditionType == iCaravelConquer:	# Caravel, Shock, CitySiege (Portugal: Carrack, Shock, Shock, CitySiege)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
-					createRoleUnit(iPlayer, tUnitPlot, iCitySiege, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
 					if iCiv == iPortugal:
-						createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
+						createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
 				elif iExpeditionType == iGalleonSettle:	# Galleon, Settler, Militia, Work (Netherlands: Indiaman, Settler, Militia, Work, Settler)
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
 					if iCiv == iNetherlands:
 						makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-				elif iExpeditionType == iGalleonSupport:	# Galleon, Explore, Work, Missionary (Netherlands: Indiaman, Explore, Work, Missionary, Militia)
+				elif iExpeditionType == iGalleonSupport:	# Galleon, Recon, Work, Missionary (Netherlands: Indiaman, Recon, Work, Missionary, Militia)
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iExplore, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iRecon, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
 					if iReligion > -1:
 						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 					if iCiv == iNetherlands:
-						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
-				elif iExpeditionType == iGalleonConquer:	# Galleon, Attack, Shock, CitySiege (Netherlands: Indiaman, Attack, Shock, CitySiege, Attack)
+						createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
+				elif iExpeditionType == iGalleonConquer:	# Galleon, Shock, ShockCav, CitySiege (Netherlands: Indiaman, Shock, ShockCav, CitySiege, Shock)
 					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
-					createRoleUnit(iPlayer, tUnitPlot, iCitySiege, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iShockCav, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
 					if iCiv == iNetherlands:
-						createRoleUnit(iPlayer, tUnitPlot, iAttack, 1)
+						createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
 

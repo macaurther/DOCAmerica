@@ -747,70 +747,6 @@
 		<Spanish>Confiaremos en que la autoridad judicial haga cumplir el texto de la constituci&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_1</Tag>
-		<English>Crusade[PARAGRAPH:1]You are tasked by your religious leaders to capture and occupy the Holy City.</English>
-		<French>Croisade[PARAGRAPH:1]Vos dirigeants religieux vous chargent de capturer et d'occuper la ville sainte.</French>
-		<German>Kreuzzug[PARAGRAPH:1]Eure religi&#246;sen F&#252;hrer fordern Euch auf, die Heilige Stadt zu erobern und zu besetzen.</German>
-		<Italian>Crociata[PARAGRAPH:1]I capi religiosi ti hanno incaricato di catturare e occupare la Citt&#224; Santa.</Italian>
-		<Spanish>Cruzada[PARAGRAPH:1]Los l&#237;deres religiosos han encargado capturar y ocupar la ciudad santa.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_DONE_1</Tag>
-		<English>The Holy City needs more protection. Recruit and train capable units from among the faithful.</English>
-		<French>La ville sainte a besoin d'&#234;tre davantage prot&#233;g&#233;e. Recrutons et entra&#238;nons des unit&#233;s comp&#233;tentes parmi les fid&#232;les.</French>
-		<German>Die Heilige Stadt muss besser gesch&#252;tzt werden. Bildet die Gl&#228;ubigen zu f&#228;higen Einheiten aus.</German>
-		<Italian>La Citt&#224; Santa ha bisogno di pi&#249; protezione. Recluta e addestra unit&#224; tra i fedeli.</Italian>
-		<Spanish>La ciudad santa necesita m&#225;s protecci&#243;n. Que se recluten y entrenen unidades capacitadas entre los fieles.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_DONE_2</Tag>
-		<English>Harness the fervor of the believers to construct a Holy Shrine to honor the sacred sites where our faith was born.</English>
-		<French>Exploiter la ferveur des croyants pour construire un lieu saint afin d'honorer les sites sacr&#233;s o&#249; notre foi est n&#233;e.</French>
-		<German>Nutzt den Eifer der Gl&#228;ubigen, um einen Heiligen Schrein an den geweihten Orten zu errichten, an denen unser Glaube entstand.</German>
-		<Italian>Sfrutta il fervore dei credenti per costruire un santuario, per onorare i sacri siti dove &#232; nata la nostra religione.</Italian>
-		<Spanish>Explota el fervor de los creyentes para construir un santuario que honre los lugares sagrados en los que naci&#243; nuestra fe.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_DONE_3</Tag>
-		<English>Spread the word of our success and of the blessings of our faith as far and wide as possible.</English>
-		<French>R&#233;pandre la nouvelle de notre r&#233;ussite et des bienfaits de notre foi aussi loin que possible.</French>
-		<German>Verbreitet die Nachricht unseres Erfolges und des Segens unseres Glaubens weit und breit.</German>
-		<Italian>Diffondi la notizia del nostro successo e le benedizioni della nostra fede il pi&#249; possibile.</Italian>
-		<Spanish>Que la noticia de nuestro &#233;xito y la bendici&#243;n de nuestra fe se difundan tan lejos como sea posible.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_DONE_HELP_1</Tag>
-		<English>[ICON_BULLET]Add %d1 [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM1:defender:defenders] to %s3_city.</English>
-		<French>[ICON_BULLET]Ajouter %d1 [NUM1:d&#233;fenseur:d&#233;fenseurs] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] dans la ville : %s3_city.</French>
-		<German>[ICON_BULLET]F&#252;gt der Stadt %s3_city %d1 Einheiten [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] als [NUM1:Verteidiger:Verteidiger] hinzu.</German>
-		<Italian>[ICON_BULLET]Aggiungi %d1 [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM1:difensore:difensori] a %s3_city.</Italian>
-		<Spanish>[ICON_BULLET]A&#241;adir %d1 [NUM1:unidad:unidades] de [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] a la defensa de %s3_city</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_DONE_HELP_2</Tag>
-		<English>[ICON_BULLET]Build [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] in %s2_city.</English>
-		<French>[ICON_BULLET]Construire le b&#226;timent : [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] dans la ville : %s2_city.</French>
-		<German>[ICON_BULLET]Errichtet das Geb&#228;ude [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] in %s2_city.</German>
-		<Italian>[ICON_BULLET]Costruisci [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] a %s2_city.</Italian>
-		<Spanish>[ICON_BULLET]Que se realice la construcci&#243;n de [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] en %s2_city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_DONE_HELP_3</Tag>
-		<English>[ICON_BULLET]Spread [COLOR_HIGHLIGHT_TEXT]%s1_religion[COLOR_REVERT] to up to %d2 new [NUM2:city:cities].</English>
-		<French>[ICON_BULLET]R&#233;pandre la religion : [COLOR_HIGHLIGHT_TEXT]%s1_religion[COLOR_REVERT] jusqu'&#224; %d2 [NUM2:nouvelle ville:nouvelles villes].</French>
-		<German>[ICON_BULLET]Verbreitet die Religion [COLOR_HIGHLIGHT_TEXT]%s1_religion[COLOR_REVERT] in bis zu %d2 [NUM2:neuen Stadt: neuen St&#228;dten].</German>
-		<Italian>[ICON_BULLET]Diffondi [COLOR_HIGHLIGHT_TEXT]%s1_religion[COLOR_REVERT] in %d2 [NUM2:nuova citt&#224;:nuove citt&#224;].</Italian>
-		<Spanish>[ICON_BULLET]Extiende el [COLOR_HIGHLIGHT_TEXT]%s1_religion[COLOR_REVERT] a un total de %d2 [NUM2:nueva ciudad:nuevas ciudades].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_CRUSADE_HELP_1</Tag>
-		<English>[PARAGRAPH:1]You will fail this quest if a rival civilization captures %s1_city first, if you change your state religion, or if your war ends for any reason prior to your success.</English>
-		<French>[PARAGRAPH:1]Vous &#233;chouerez si une civilisation rivale capture %s1_city en premier, si vous changez de religion d'&#201;tat ou si, pour une raison quelconque, votre guerre se termine avant votre r&#233;ussite.</French>
-		<German>[PARAGRAPH:1]Sie scheitern, wenn eine andere Zivilisation die Stadt %s1_city vor Ihnen erobert, wenn Sie Ihre Staatsreligion wechseln oder wenn der Krieg endet, ehe Sie Erfolg hatten.</German>
-		<Italian>[PARAGRAPH:1]Fallirai nell'impresa se una civilt&#224; rivale cattura per prima %s1_city, se cambi religione di stato o se la guerra finisce per qualsiasi motivo prima del successo.</Italian>
-		<Spanish>[PARAGRAPH:1]Esta misi&#243;n fracasar&#225; si una civilizaci&#243;n rival toma antes %s1_city, si cambia la religi&#243;n oficial o si la guerra termina por cualquier motivo antes de que la misi&#243;n haya tenido &#233;xito.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_DEFECTING_AGENT</Tag>
 		<English>One of our high-ranking intelligence agents has defected to the %s1_civ_adjective empire.</English>
 		<French>Un de nos agents haut plac&#233; a d&#233;sert&#233; nos rangs pour rejoindre l'empire %s1_civ_adjective.</French>
@@ -1009,14 +945,6 @@
 		<German>Die Quest "Unternehmensexpansion" ist gescheitert!</German>
 		<Italian>Hai fallito nell'impresa dell'Espansione corporativa!</Italian>
 		<Spanish>&#161;La misi&#243;n Expansi&#243;n corporativa ha fracasado!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_FAIL_CRUSADE</Tag>
-		<English>Your Crusade has ended. The quest has failed.</English>
-		<French>Votre Croisade est termin&#233;e. La qu&#234;te a &#233;chou&#233;.</French>
-		<German>Euer Kreuzzug ist beendet, die Quest ist gescheitert.</German>
-		<Italian>La tua crociata &#232; terminata. Hai fallito nell'impresa.</Italian>
-		<Spanish>La cruzada ha terminado. La misi&#243;n ha fracasado.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_ELITE_SWORDS</Tag>
@@ -3419,22 +3347,6 @@
 		<Spanish>El senador de mayor edad del principal partido opositor ha ca&#237;do en desgracia por un esc&#225;ndalo. El senado al completo se encuentra sumido en el caos.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_CRUSADE</Tag>
-		<English>Our war against the %s1:2_civ_adjective continues. Our spiritual leaders cry out for us to wage a crusade to wrest control of %s6_city away from them.</English>
-		<French>Notre guerre contre les %s1:2_civ_adjective continue. Nos dirigeants spirituels r&#233;clament que nous lancions une croisade pour leur arracher le contr&#244;le de la ville : %s6_city.</French>
-		<German>Unser Krieg gegen das %s1:3_civ_adjective Volk geht weiter. Unsere religi&#246;sen F&#252;hrer fordern, das wir uns einem Kreuzzug anschlie&#223;en, um ihnen die Stadt %s6_city zu entrei&#223;en.</German>
-		<Italian>La nostra guerra contro i nemici %s1:3_civ_adjective continua. I nostri leader spirituali chiedono a gran voce che promuoviamo una crociata per togliere al nemico il controllo di %s6_city.</Italian>
-		<Spanish>Nuestra guerra contra los %s1:2_civ_adjective contin&#250;a. Nuestros l&#237;deres espirituales suplican que libremos una cruzada para arrebatarles el control de %s6_city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_CRUSADE_DONE_1</Tag>
-		<English>Congratulations! Your Crusade to secure the sacred lands of %s2_city has wrested control of the city away from the infidels! Please choose a reward from among the benefits that may accrue from the joy your people feel in this successful Crusade.</English>
-		<French>F&#233;licitations ! Votre croisade pour s&#233;curiser les terres saintes de la ville : %s2_city vous a permis d'arracher le contr&#244;le de la ville aux %s1:2_civ_adjective ! Veuillez choisir une r&#233;compense parmi les avantages dus &#224; la joie du peuple.</French>
-		<German>Gl&#252;ckwunsch! Ihr Kreuzzug zur Sicherung des heiligen Gebietes der Stadt %s2_city hat die Stadt dem %s1:2_civ_adjective Volk entrissen! W&#228;hlen Sie eine Belohnung aus den Vorteilen aus, die die Freude Ihres Volkes &#252;ber diesen erfolgreichen Kreuzzug Ihnen bieten kann.</German>
-		<Italian>Congratulazioni! La crociata per conquistare le sacre terre di %s2_city ha tolto il controllo della citt&#224; ai nemici %s1:3_civ_adjective! Scegli una ricompensa tra i benefici derivati dalla gioia del tuo popolo per questa vittoriosa crociata.</Italian>
-		<Spanish>&#161;Felicidades! &#161;La cruzada para asegurar las tierras sagradas de %s2_city ha arrebatado a los %s1:2_civ_adjective el control de la ciudad! Elegid una de las recompensas resultantes del gozo popular que ha producido esta exitosa cruzada.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CYCLONE_1</Tag>
 		<English>A powerful cyclone originating in the southern hemisphere has made landfall at %s2_city.</English>
 		<French>Un puissant cyclone s'est form&#233; dans l'h&#233;misph&#232;re sud et s'est abattu sur %s2_city</French>
@@ -5265,14 +5177,6 @@
 		<German>Ein Skandal hat im %s1:2_civ_adjective Senat Chaos verursacht. Dadurch wurde eine konstitutionelle Krise ausgel&#246;st. Allerdings &#246;ffnen sich jetzt auch neue Wege f&#252;r politische Reformen.</German>
 		<Italian>Uno scandalo ha fatto cadere nel caos il senato %s1_civ_adjective. Ne &#232; nata una crisi costituzionale. Questo per&#242; apre la porta alle riforme politiche.</Italian>
 		<Spanish>Un esc&#225;ndalo ha sumido en el caos al senado %s1:1_civ_adjective. Se ha producido una crisis institucional. Pero esto tambi&#233;n abre la puerta a reformas pol&#237;ticas.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_CRUSADE_DONE</Tag>
-		<English>%s1_civ_adjective armies have completed their Crusade, wresting control of the Holy City of %s2_city away from the %s4_civ_adjective people!</English>
-		<French>Les arm&#233;es %s1:4_civ_adjective ont achev&#233; leur Croisade et ont arrach&#233; le contr&#244;le de la Ville Sainte : %s2_city aux %s4:2_civ_adjective !</French>
-		<German>%s1:3_civ_adjective Armeen haben ihren Kreuzzug beendet und dem %s4:2_civ_adjective Volk die Heilige Stadt %s2_city entrissen!</German>
-		<Italian>Gli eserciti %s1:3_civ_adjective hanno completato la crociata, sottraendo il controllo della Citt&#224; Santa di %s2_city al popolo %s4_civ_adjective!</Italian>
-		<Spanish>&#161;Los ej&#233;rcitos %s1:3_civ_adjective han completado su cruzada y han arrebatado a los %s4:3_civ_adjective el control de la ciudad santa!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CYCLONE</Tag>

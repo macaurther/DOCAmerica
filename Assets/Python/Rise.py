@@ -225,8 +225,8 @@ def createExpansionUnits(bWar, iAttacker, iDefender):
 				iExtraAI = 1
 		
 		dExpansionUnits = {
-			iAttack: 2 + iExtraAI + iExtraTargets,
-			iSiege: 1 + 2*iExtraAI + iExtraTargets,
+			iShock: 2 + iExtraAI + iExtraTargets,
+			iSiegeCity: 1 + 2*iExtraAI + iExtraTargets,
 		}
 		createRoleUnits(iAttacker, spawn, dExpansionUnits.items())
 		

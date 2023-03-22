@@ -246,7 +246,7 @@ def doResurrection(iCiv, lCityList, bAskFlip=True, bDisplay=False):
 	capital = pPlayer.getCapitalCity()
 	
 	dStartingUnits = {
-		iAttack: 2 * iArmySize + iNumCities,
+		iBase: 2 * iArmySize + iNumCities,
 		iShock: iArmySize,
 		iCounter: iArmySize,
 		iSiege: iArmySize + iNumCities,

@@ -507,10 +507,10 @@ iGreatGeneral : iFeGreatGeneral,
 iGreatSpy : iFeGreatSpy,
 }
 
-iNumUnitRoles = 22
-(iBase, iDefend, iAttack, iCounter, iShock, iHarass, iCityAttack, iWorkerSea, iSettle, iSettleSea, 
-iAttackSea, iFerry, iEscort, iExplore, iShockCity, iSiege, iCitySiege, iExploreSea, iSkirmish, iLightEscort,
-iWork, iMissionary) = range(iNumUnitRoles)
+iNumUnitRoles = 19
+#				2				3				4				5				6				7				8				9				10
+(iSettle,		iWork,			iRecon,			iMissionary,	iDefend,		iBase,			iShock,			iCounter,		iSiege,			iHarass,
+iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea) = range(iNumUnitRoles)
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 58
