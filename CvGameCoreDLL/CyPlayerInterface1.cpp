@@ -150,6 +150,7 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("getResearchTurnsLeft", &CyPlayer::getResearchTurnsLeft, "int (int /*TechTypes*/ eTech, bool bOverflow)")
 
 		.def("isCivic", &CyPlayer::isCivic, "bool (int (CivicTypes) eCivic)")
+		.def("isCivicValid", &CyPlayer::isCivicValid, "bool (int (CivicTypes) eCivic)")
 		.def("canDoCivics", &CyPlayer::canDoCivics, "bool (int (CivicTypes) eCivic)")
 		.def("canRevolution", &CyPlayer::canRevolution, "bool (int (CivicTypes*) paeNewCivics)")
 		.def("revolution", &CyPlayer::revolution, "void (int (CivicTypes*) paeNewCivics, bool bForce)")

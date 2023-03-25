@@ -1413,6 +1413,8 @@ public:
 	int getUnhappinessDecayModifier() const; // Leoreth
 	int getVassalTradeModifier() const; // Leoreth
 
+	int getCultureGroup() const; // FoB
+
 	bool isMilitaryFoodProduction() const;				// Exposed to Python
 	bool isNoUnhealthyPopulation() const;				// Exposed to Python
 	bool isBuildingOnlyHealthy() const;				// Exposed to Python
@@ -1531,6 +1533,8 @@ protected:
 	int m_iLevelExperienceModifier; // Leoreth
 	int m_iUnhappinessDecayModifier; // Leoreth
 	int m_iVassalTradeModifier; // Leoreth
+
+	int m_iCultureGroup; // FoB
 
 	bool m_bMilitaryFoodProduction;
 	bool m_bNoUnhealthyPopulation;
@@ -2355,6 +2359,7 @@ public:
 	int getStartingYear() const;
 	const std::string getIdentifier() const;
 	const std::string getRegion() const;	// MacAurther
+	int getCultureGroup() const;	// FoB
 	int getPaganReligion() const;
 	const wchar* getDescriptionKeyPersistent() const;
 	std::wstring pyGetDescriptionKeyPersistent() { return getDescriptionKeyPersistent(); }
@@ -2407,6 +2412,7 @@ protected:
 	CvWString m_szAdjectiveKey;
 	std::string m_szIdentifier; // Leoreth
 	std::string m_szRegion; // MacAurther
+	int m_iCultureGroup; // FoB
 	CvWString m_szDescriptionPersistent; // Leoreth
 
 	// Arrays

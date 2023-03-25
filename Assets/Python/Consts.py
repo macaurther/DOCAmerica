@@ -446,9 +446,9 @@ iNumCorporations = 9
 iNumTechs = 152
 #				2				3				4				5				6				7
 (iHunting,		iLandmarks,		iLinguistics,	iPathfinding,	iCultivation,	iHerbalism,		iFishing,
-iTanning, 		iMining, 		iPottery, 		iPastoralism, 	iAgriculture, 	iMythology, 	iSailing,
-iArtisanry, 	iMasonry, 		iMathematics, 	iProperty, 		iCeremony, 		iPriesthood, 	iNavigation,
-iSmelting, 		iConstruction, 	iAesthetics, 	iCalendar, 		iWriting, 		iLaw, 			iMedicine,
+iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iSailing,
+iArtisanry, 	iMasonry, 		iMathematics, 	iWriting, 		iProperty, 		iCeremony, 		iNavigation,
+iSmelting, 		iConstruction, 	iAesthetics, 	iCalendar,		iLaw,			iPriesthood, 	iMedicine,
 iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iHumanities, 	iPrinting, 		iJudiciary,
 iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iGovernors,
@@ -575,16 +575,18 @@ iPlague = iNumBuildings
 iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
-iNumCivics = 42
-(iChiefdom, iCouncil, iDespotism, iMonarchy, iViceroyalty, iSelfDetermination, iDemocracy,
-iAuthority, iEmpire, iColony, iCommonLaw, iConfederacy, iFederalism, iRepublic,
-iTraditionalism, iSpecialization, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
+iNumCivics = 53
+(iChiefdom, iDespotism, iViceroyalty, iCouncil, iCharterColony, iTradeCompany, iRoyalColony, iMonarchy, iDemocracy, iDominion, iDictatorship, iCommonwealth, iStateParty,
+iAuthority, iEmpire, iMaritimeLaw, iCommonLaw, iCaptaincies, iConfederacy, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
+iTraditionalism, iCraftsmen, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
 iAnimism, iCasteSystem, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,
 iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, iMultilateralism) = range(iNumCivics)
 
 iNumCivicCategories = 6
 (iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
+
+iCivicCountInCategory = [13, 12, 7, 7, 7, 7];
 
 #Specialists
 iNumSpecialists = 19

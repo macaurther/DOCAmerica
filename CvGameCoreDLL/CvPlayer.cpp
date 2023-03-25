@@ -8033,6 +8033,11 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		}
 	}
 
+	if (!isCivicValid(eCivic))
+	{
+		return false;
+	}
+
 	if (!isHasCivicOption((CivicOptionTypes)(GC.getCivicInfo(eCivic).getCivicOptionType())) && !(GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getCivicInfo(eCivic).getTechPrereq()))))
 	{
 		return false;
@@ -8052,6 +8057,12 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	}
 
 	return true;
+}
+
+bool CvPlayer::isCivicValid(CivicTypes eCivic) const
+{
+	int cultureGroup = GC.getCivicInfo(eCivic).getCultureGroup();
+	return (cultureGroup == GC.getCivilizationInfo(getCivilizationType()).getCultureGroup()) || cultureGroup == 0;
 }
 
 
@@ -25427,7 +25438,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_COLONY || eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_MERCANTILISM)
+		if (eCivic == CIVIC_MARITIME_LAW || eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_MERCANTILISM)
 		{
 			return true;
 		}
@@ -25443,7 +25454,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
 	{
-		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_SPECIALIZATION)
+		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_CRAFTSMEN)
 		{
 			return true;
 		}

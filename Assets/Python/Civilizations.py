@@ -203,7 +203,7 @@ lCivilizations = [
 	Civilization(
 		iMississippi,
 		iGold=50,
-		lCivics=[iCouncil, iSpecialization],
+		lCivics=[iCouncil, iCraftsmen],
 		techs=techs.column(2)
 	),
 	Civilization(
@@ -221,13 +221,13 @@ lCivilizations = [
 	Civilization(
 		iNorse,
 		iGold=50,
-		lCivics=[iColony, iCommonLaw, iMerchantTrade],
+		lCivics=[iMaritimeLaw, iCommonLaw, iMerchantTrade],
 		techs=techs.column(4).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iChimu,
 		iGold=300,
-		lCivics=[iDespotism, iSpecialization, iMerchantTrade, iCasteSystem],
+		lCivics=[iDespotism, iCraftsmen, iMerchantTrade, iCasteSystem],
 		techs=techs.column(2)
 	),
 	Civilization(
@@ -258,21 +258,21 @@ lCivilizations = [
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iColony, iConquest],
+		lCivics=[iMaritimeLaw, iConquest],
 		techs=techs.column(6).without(*lNativeTechs)
 	),
 	Civilization(
 		iPortugal,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iColony, iSlavery, iMerchantTrade, iTributaries],
+		lCivics=[iMaritimeLaw, iSlavery, iMerchantTrade, iTributaries],
 		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration, iOptics, iGovernors).without(*lNativeTechs)
 	),
 	Civilization(
 		iEngland,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iColony, iMerchantTrade],
+		lCivics=[iMaritimeLaw, iMerchantTrade],
 		lEnemies=[],
 		techs=techs.column(7).including(iShipbuilding, iCharter).without(*lNativeTechs)
 	),
@@ -280,14 +280,14 @@ lCivilizations = [
 		iFrance,
 		iGold=150,
 		iStateReligion=iCatholicism,
-		lCivics=[iColony, iMerchantTrade],
+		lCivics=[iMaritimeLaw, iMerchantTrade],
 		techs=techs.column(7).including(iShipbuilding, iFortification).without(*lNativeTechs)
 	),
 	Civilization(
 		iNetherlands,
 		iGold=600,
 		iStateReligion=iProtestantism,
-		lCivics=[iColony, iMercantilism],
+		lCivics=[iMaritimeLaw, iMercantilism],
 		techs=techs.column(7).including(iEconomics, iShipbuilding).without(*lNativeTechs)
 	),
 	Civilization(
@@ -300,7 +300,7 @@ lCivilizations = [
 		iRussia,
 		iGold=200,
 		iStateReligion=iOrthodoxy,
-		lCivics=[iColony, iIndenturedServitude, iAgrarianism],
+		lCivics=[iMaritimeLaw, iIndenturedServitude, iAgrarianism],
 		techs=techs.column(9).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
@@ -314,7 +314,7 @@ lCivilizations = [
 	Civilization(
 		iHaiti,
 		iGold=100,
-		lCivics=[iMonarchy, iCouncil, iSpecialization, iAgrarianism, iIsolationism],
+		lCivics=[iMonarchy, iCouncil, iCraftsmen, iAgrarianism, iIsolationism],
 		lEnemies=[iFrance],
 		techs=techs.column(12)
 	),

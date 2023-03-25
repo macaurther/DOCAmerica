@@ -20,6 +20,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AME</Identifier>
 			<Region>ANG</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1775</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
@@ -149,6 +150,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>ARG</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>45</LoadingTime>
@@ -248,6 +250,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AZT</Identifier>
 			<Region>MES</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
@@ -371,6 +374,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>BRA</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -466,6 +470,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>CAN</Identifier>
 			<Region>ANG</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1867</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
@@ -577,6 +582,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CHM</Identifier>
 			<Region>AND</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>900</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -665,6 +671,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>COL</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -756,6 +763,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CUB</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1898</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -846,6 +854,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>ENG</Identifier>
 			<Region>EUR</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1607</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
@@ -961,6 +970,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>FRA</Identifier>
 			<Region>EUR</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1608</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
@@ -1167,6 +1177,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAI</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -1267,6 +1278,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>HAW</Identifier>
 			<Region>PAC</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1650</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
@@ -1369,6 +1381,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>INC</Identifier>
 			<Region>AND</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1100</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
@@ -1472,6 +1485,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>INU</Identifier>
 			<Region>ARC</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1050</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
@@ -1579,6 +1593,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRO</Identifier>
 			<Region>WOO</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
@@ -1722,6 +1737,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>MAY</Identifier>
 			<Region>MES</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -1837,6 +1853,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>MEX</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -1936,6 +1953,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
 			<Region>WOO</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>600</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2056,6 +2074,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MUI</Identifier>
 			<Region>AND</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>800</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2145,6 +2164,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>HOL</Identifier>
 			<Region>EUR</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -2295,6 +2315,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>NOR</Identifier>
 			<Region>EUR</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>874</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
@@ -2445,6 +2466,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PER</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -2532,6 +2554,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>POR</Identifier>
 			<Region>EUR</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1532</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
@@ -2651,6 +2674,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
 			<Region>SOU</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>750</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2739,6 +2763,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>RUS</Identifier>
 			<Region>EUR</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1743</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
@@ -2877,6 +2902,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>SPA</Identifier>
 			<Region>EUR</Region>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1496</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
@@ -2978,6 +3004,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TEO</Identifier>
 			<Region>MES</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3094,6 +3121,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TIW</Identifier>
 			<Region>AND</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3182,6 +3210,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>VEN</Identifier>
 			<Region>LAT</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1831</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -3269,6 +3298,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>WAR</Identifier>
 			<Region>AND</Region>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>500</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>5</LoadingTime>
