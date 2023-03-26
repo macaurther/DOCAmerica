@@ -575,8 +575,8 @@ iPlague = iNumBuildings
 iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
-iNumCivics = 53
-(iChiefdom, iDespotism, iViceroyalty, iCouncil, iCharterColony, iTradeCompany, iRoyalColony, iMonarchy, iDemocracy, iDominion, iDictatorship, iCommonwealth, iStateParty,
+iNumCivics = 54
+(iChiefdom, iExpeditionaries, iDespotism, iViceroyalty, iCouncil, iCharterColony, iMonarchy, iTradeCompany, iDemocracy, iRoyalColony, iDictatorship, iDominion, iStateParty, iCommonwealth,
 iAuthority, iEmpire, iMaritimeLaw, iCommonLaw, iProprietaries, iConfederacy, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
 iTraditionalism, iCraftsmen, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
@@ -586,7 +586,9 @@ iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, 
 iNumCivicCategories = 6
 (iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
 
-iCivicCountInCategory = [13, 12, 7, 7, 7, 7];
+lCivicCountInCategory = [14, 12, 7, 7, 7, 7];
+lCivicDefaultsInCateogry = [2, 1, 1, 1, 1, 1];
+
 
 #Specialists
 iNumSpecialists = 19

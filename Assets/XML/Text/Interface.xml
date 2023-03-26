@@ -3465,6 +3465,30 @@
 		<Spanish>An American coup has succeeded in %s1.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_CHIEF</Tag>
+		<English>"We Love the Chief Day"</English>
+		<French>"We Love the Chief Day"</French>
+		<German>"We Love the Chief Day"</German>
+		<Italian>"We Love the Chief Day"</Italian>
+		<Spanish>"We Love the Chief Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_CAPTAIN</Tag>
+		<English>"We Love the Captain Day"</English>
+		<French>"We Love the Captain Day"</French>
+		<German>"We Love the Captain Day"</German>
+		<Italian>"We Love the Captain Day"</Italian>
+		<Spanish>"We Love the Captain Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LIKE_PARTY</Tag> <!-- Easter Egg? -->
+		<English>"We Like - We Like to Party"</English>
+		<French>"We Like - We Like to Party"</French>
+		<German>"We Like - We Like to Party"</German>
+		<Italian>"We Like - We Like to Party"</Italian>
+		<Spanish>"We Like - We Like to Party"</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_</Tag>
 		<English></English>
 		<French></French>

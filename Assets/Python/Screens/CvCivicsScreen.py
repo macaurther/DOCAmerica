@@ -238,7 +238,7 @@ class CvCivicsScreen:
 
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory:
-				#iCivicOptionCount = iCivicCountInCategory[iCategory]
+				#iCivicOptionCount = lCivicCountInCategory[iCategory]
 				if isDefaultCivic(iCivic): continue
 				if not player.isCivicValid(iCivic): continue;
 
@@ -477,9 +477,9 @@ class CvCivicsScreen:
 		return
 
 def isDefaultCivic(iCivic):
-	iIndex = 0;
-	for i in iCivicCountInCategory:
-		if iCivic == iIndex:
-			return True;
-		iIndex += i;
+	iIndex = 0
+	for iCategory in range(iNumCivicCategories):
+		if iCivic < iIndex + lCivicDefaultsInCateogry[iCategory] and iCivic >= iIndex:
+			return True
+		iIndex += lCivicCountInCategory[iCategory]
 	return False;
