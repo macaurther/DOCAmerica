@@ -1622,7 +1622,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONUMENT</ArtDefineTag>
 			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
-			<PrereqTech>TECH_GOVERNORS</PrereqTech>
+			<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
 			<iConquestProb>65</iConquestProb>
@@ -4182,7 +4182,7 @@
 			<Strategy>TXT_KEY_BUILDING_SUPERMARKET_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SUPERMARKET</ArtDefineTag>
-			<PrereqTech>TECH_CONSUMERISM</PrereqTech>
+			<PrereqTech>TECH_COMMERCIALISM</PrereqTech>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4214,7 +4214,7 @@
 			<Strategy>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARGENTINE_REFRIGERATION_PLANT</ArtDefineTag>
-			<PrereqTech>TECH_CONSUMERISM</PrereqTech>
+			<PrereqTech>TECH_COMMERCIALISM</PrereqTech>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8909,7 +8909,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AQUA_APPIA</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_GOVERNORS</PrereqTech>
+			<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			<ObsoleteTech>TECH_ELECTRICITY</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8963,7 +8963,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LA_FORTALEZA</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_GOVERNORS</PrereqTech>
+			<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -10133,7 +10133,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_EMPIRE_STATE_BUILDING</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_EMPIRE_STATE_BUILDING</MovieDefineTag>
 			<MaxStartEra>ERA_ATOMIC</MaxStartEra>
-			<PrereqTech>TECH_CONSUMERISM</PrereqTech>
+			<PrereqTech>TECH_COMMERCIALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

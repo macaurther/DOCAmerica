@@ -266,7 +266,7 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iCatholicism,
 		lCivics=[iMaritimeLaw, iSlavery, iMerchantTrade, iTributaries],
-		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration, iOptics, iGovernors).without(*lNativeTechs)
+		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration, iOptics, iOfficials).without(*lNativeTechs)
 	),
 	Civilization(
 		iEngland,

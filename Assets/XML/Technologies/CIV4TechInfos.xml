@@ -1538,9 +1538,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_GOVERNORS</Type>
-			<Description>TXT_KEY_TECH_GOVERNORS</Description>
-			<Civilopedia>TXT_KEY_TECH_GOVERNORS_PEDIA</Civilopedia>
+			<Type>TECH_OFFICIALS</Type>
+			<Description>TXT_KEY_TECH_OFFICIALS</Description>
+			<Civilopedia>TXT_KEY_TECH_OFFICIALS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1564,7 +1564,7 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_GOVERNORS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_OFFICIALS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Governors.dds</Button>
@@ -1666,7 +1666,7 @@
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_GOVERNORS</PrereqTech>
+				<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_LOGISTICS</PrereqTech>
@@ -1741,7 +1741,7 @@
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_GOVERNORS</PrereqTech>
+				<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_OPTICS</PrereqTech>
@@ -1816,7 +1816,7 @@
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_EVANGELISM</PrereqTech>
-				<PrereqTech>TECH_GOVERNORS</PrereqTech>
+				<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_INDENTURES_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -4059,9 +4059,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_CONSUMERISM</Type>
-			<Description>TXT_KEY_TECH_CONSUMERISM</Description>
-			<Civilopedia>TXT_KEY_TECH_CONSUMERISM_PEDIA</Civilopedia>
+			<Type>TECH_COMMERCIALISM</Type>
+			<Description>TXT_KEY_TECH_COMMERCIALISM</Description>
+			<Civilopedia>TXT_KEY_TECH_COMMERCIALISM_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4088,7 +4088,7 @@
 				<PrereqTech>TECH_JOURNALISM</PrereqTech>
 				<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_CONSUMERISM_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_COMMERCIALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Consumerism.dds</Button>
@@ -4236,7 +4236,7 @@
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_CONSUMERISM</PrereqTech>
+				<PrereqTech>TECH_COMMERCIALISM</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_FLIGHT</PrereqTech>
@@ -4354,7 +4354,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
-				<PrereqTech>TECH_CONSUMERISM</PrereqTech>
+				<PrereqTech>TECH_COMMERCIALISM</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MACROECONOMICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -4390,7 +4390,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_CONSUMERISM</PrereqTech>
+				<PrereqTech>TECH_COMMERCIALISM</PrereqTech>
 				<PrereqTech>TECH_CIVIL_RIGHTS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_SOCIAL_SERVICES_QUOTE</Quote>

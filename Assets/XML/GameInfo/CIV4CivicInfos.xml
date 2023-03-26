@@ -81,7 +81,7 @@
 			<Description>TXT_KEY_CIVIC_VICEROYALTY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_VICEROYALTY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_VICEROYALTY_STRATEGY</Strategy>
-			<TechPrereq>TECH_GOVERNORS</TechPrereq>
+			<TechPrereq>TECH_OFFICIALS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Viceroyality.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -430,10 +430,10 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-			<Type>CIVIC_CAPTAINCIES</Type>
-			<Description>TXT_KEY_CIVIC_CAPTAINCIES</Description>
-			<Civilopedia>TXT_KEY_CIVIC_CAPTAINCIES_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_CAPTAINCIES_STRATEGY</Strategy>
+			<Type>CIVIC_PROPRIETARIES</Type>
+			<Description>TXT_KEY_CIVIC_PROPRIETARIES</Description>
+			<Civilopedia>TXT_KEY_CIVIC_PROPRIETARIES_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Strategy>
 			<TechPrereq>TECH_COLONIZATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Captain.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1025,7 +1025,7 @@
 			<Description>TXT_KEY_CIVIC_CONSUMERISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONSUMERISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONSUMERISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_CONSUMERISM</TechPrereq>
+			<TechPrereq>TECH_COMMERCIALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Consumerism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>

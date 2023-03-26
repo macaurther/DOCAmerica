@@ -451,7 +451,7 @@ iArtisanry, 	iMasonry, 		iMathematics, 	iWriting, 		iProperty, 		iCeremony, 		iN
 iSmelting, 		iConstruction, 	iAesthetics, 	iCalendar,		iLaw,			iPriesthood, 	iMedicine,
 iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iHumanities, 	iPrinting, 		iJudiciary,
-iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iGovernors,
+iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iOfficials,
 iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iCharter, 		iCommunity, 	iIndentures,
 iCombinedArms, 	iTriangularTrade, iExploitation, iTimekeeping, 	iEducation, 	iPolitics, 		iHorticulture,
 iTactics,		iCurrency,		iGeography,		iAcademia,		iUrbanPlanning,	iStatecraft,	iSocialContract,
@@ -461,7 +461,7 @@ iMetallurgy,	iProtectionism,	iHydrology,		iPhysics,		iGeology,		iRightsOfMan,	iF
 iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iPioneering,	iCivilLiberties, iNationalism,
 iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iEmancipation, 	iImperialism,
 iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
-iPneumatics, 	iFlight, 		iRefining, 		iFilm, 			iRefrigeration, iConsumerism, 	iCivilRights,
+iPneumatics, 	iFlight, 		iRefining, 		iFilm, 			iRefrigeration, iCommercialism,	iCivilRights,
 iInfrastructure, iAeronautics, 	iSynthetics, 	iRadio, 		iMicrobiology, 	iMacroeconomics, iSocialServices,
 iAviation, 		iRocketry, 		iFission, 		iElectronics, 	iPsychology, 	iPowerProjection, iGlobalism,
 iRadar, 		iSpaceflight, 	iNuclearPower, 	iLaser, 		iTelevision, 	iTourism, 		iEcology,
@@ -577,7 +577,7 @@ iNumBuildingsPlague = iNumBuildings+1
 #Civics
 iNumCivics = 53
 (iChiefdom, iDespotism, iViceroyalty, iCouncil, iCharterColony, iTradeCompany, iRoyalColony, iMonarchy, iDemocracy, iDominion, iDictatorship, iCommonwealth, iStateParty,
-iAuthority, iEmpire, iMaritimeLaw, iCommonLaw, iCaptaincies, iConfederacy, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
+iAuthority, iEmpire, iMaritimeLaw, iCommonLaw, iProprietaries, iConfederacy, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
 iTraditionalism, iCraftsmen, iSlavery, iIndenturedServitude, iIndustrialism, iMigrantWorkers, iAutomation,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
 iAnimism, iCasteSystem, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,

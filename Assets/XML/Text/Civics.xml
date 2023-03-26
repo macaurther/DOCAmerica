@@ -595,15 +595,15 @@
 		<Spanish>Extra experience for naval units</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CAPTAINCIES</Tag>
-		<English>Captaincies</English>
-		<French>Captaincies</French>
-		<German>Captaincies</German>
-		<Italian>Captaincies</Italian>
-		<Spanish>Captaincies</Spanish>
+		<Tag>TXT_KEY_CIVIC_PROPRIETARIES</Tag>
+		<English>Proprietaries</English>
+		<French>Proprietaries</French>
+		<German>Proprietaries</German>
+		<Italian>Proprietaries</Italian>
+		<Spanish>Proprietaries</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CAPTAINCIES_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Tag>
 		<English>Double production speed for defensive buildings</English>
 		<French>Double production speed for defensive buildings</French>
 		<German>Double production speed for defensive buildings</German>

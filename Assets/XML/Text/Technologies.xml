@@ -1028,19 +1028,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CONSUMERISM</Tag>
-		<English>Consumerism</English>
-		<French>
-			<Text>Consum&#233;risme</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Consumerism</German>
-		<Italian>Consumerism</Italian>
-		<Spanish>Consumerism</Spanish>
+		<Tag>TXT_KEY_TECH_COMMERCIALISM</Tag>
+		<English>Commercialism</English>
+		<French>Commercialism</French>
+		<German>Commercialism</German>
+		<Italian>Commercialism</Italian>
+		<Spanish>Commercialism</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CONSUMERISM_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_COMMERCIALISM_QUOTE</Tag>
 		<English>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</English>
 		<French>"Plus d'une chose insignifiante a pris de l'ampleur gr&#226;ce &#224; une bonne publicit&#233;."[PARAGRAPH:2]- Mark Twain</French>
 		<German>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</German>
@@ -1048,7 +1044,7 @@
 		<Spanish>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_CONSUMERISM_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_COMMERCIALISM_PEDIA</Tag>
 		<English>Marketing is the practice of persuading people that an object, idea, or behavior is desirable (and worth paying for). Marketing has existed in some form since prehistoric times; one may speculate that the first marketing activities were invented within five minutes of the first invention of commerce.  The development of mass media such as broadcast radio, print journalism, and film made it possible to market on a larger scale. The rise of a working and middle class in developed societies with enough disposable income to buy luxury goods made it desirable to do so. The growth of modern industrial corporations that could produce goods in immense quantities made it necessary to do so.[PARAGRAPH:2]Common practices in modern marketing include direct personal approaches, flattery of the customer, praise of the product (intellectually honest or otherwise), and efforts to make the seller appear sympathetic and likeable to the prospective buyer. The main difference is that all these things are now transmitted from the individual advertiser to the mass of the population through new communications technology such as printing, broadcasts, or the Internet.[PARAGRAPH:2]The practice of marketing is often criticized for dishonesty, for misleading people into paying for that which is useless to them, for encouraging people to go into debt, and for discouraging people from thrift and from building up savings for the future. It is also criticized for the increasingly intrusive way in which, in the modern computerized era, marketers use "big data" to analyze individuals' purchasing habits and tailor advertisements to them. This is widely regarded as intrusive, and as having ominous implications for the individual's privacy and control over their own life in the future.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
@@ -1862,15 +1858,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_GOVERNORS</Tag>
-		<English>Governors</English>
-		<French>Governors</French>
-		<German>Governors</German>
-		<Italian>Governors</Italian>
-		<Spanish>Governors</Spanish>
+		<Tag>TXT_KEY_TECH_OFFICIALS</Tag>
+		<English>Officials</English>
+		<French>Officials</French>
+		<German>Officials</German>
+		<Italian>Officials</Italian>
+		<Spanish>Officials</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_GOVERNORS_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_OFFICIALS_QUOTE</Tag>
 		<English>"It is my hope that, through your good example, the settlement of Georgia may prove a blessing and not a curse to the native inhabitants."[PARAGRAPH:2]- James Oglethorpe</English>
 		<French>"It is my hope that, through your good example, the settlement of Georgia may prove a blessing and not a curse to the native inhabitants."[PARAGRAPH:2]- James Oglethorpe</French>
 		<German>"It is my hope that, through your good example, the settlement of Georgia may prove a blessing and not a curse to the native inhabitants."[PARAGRAPH:2]- James Oglethorpe</German>
@@ -1878,7 +1874,7 @@
 		<Spanish>"It is my hope that, through your good example, the settlement of Georgia may prove a blessing and not a curse to the native inhabitants."[PARAGRAPH:2]- James Oglethorpe</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_GOVERNORS_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_OFFICIALS_PEDIA</Tag>
 		<English>During the colonial period in the Americas, colonial governors were appointed by European powers to oversee the administration of colonies. These governors were typically men of wealth and influence who were loyal to the European power that appointed them. They held significant power over their colonies, including the ability to create laws, levy taxes, and control the military. The governors were often seen as distant and detached from the colonists they governed, leading to tensions between the two groups. This was particularly true in the British colonies, where the governor was often seen as representing the interests of the British crown rather than the colonists themselves. Despite these tensions, colonial governors played an important role in the development of the colonies. They oversaw the establishment of new settlements, promoted economic growth, and helped to shape the social and political structures of the colonies. As the colonies grew and became more prosperous, the role of the colonial governor evolved, with some governors working to promote greater autonomy for their colonies while others sought to maintain tighter control.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
