@@ -35,14 +35,20 @@ def helpMinorStates():
 					makeUnit(iOwner, random_entry(lUnits), plot)
 
 @handler("unitPillage")
-def onUnitPillage(pUnit, iImprovement, iRoute, iOwner, iGold):
+def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 	# If pillage a tribe, get uprising
 	if iImprovement == iTribe or iImprovement == iContactedTribe:
 		team(pUnit.getOwner()).declareWar(player(iNative).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
 		iX = pUnit.getX()
 		iY = pUnit.getY()
 		spawnTribeDefenders(iX, iY)
-		
+	
+		# If pillage a tribe with the Encomienda or Captives Civics, get Native Slaves
+		iPlayer = pUnit.getOwner()
+		if player(iPlayer).hasCivic(iEncomienda) or player(iPlayer).hasCivic(iCaptives):
+			makeUnit(iPlayer, iNativeSlave, pUnit, UnitAITypes.UNITAI_WORKER)
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=pUnit)
+	
 
 @handler("BeginGameTurn")
 def spawnBarbarians(iGameTurn):
@@ -225,7 +231,7 @@ def spawnTribeDefenders(iX, iY):
 	spawnDefenders(iNative, iWarrior, 1 + iHandicap, tTL, tBR)
 	spawnDefenders(iNative, iArcher, 1 + iHandicap, tTL, tBR)
 	if year() <= year(1650):
-		spawnDefenders(iNative, iSkirmisher, iHandicap, tTL, tBR)
+		spawnDefenders(iNative, iAtlatlist, iHandicap, tTL, tBR)
 		spawnDefenders(iNative, iSpearman, iHandicap, tTL, tBR)
 	elif year() <= year(1800):
 		spawnDefenders(iNative, iMohawk, 1 + iHandicap, tTL, tBR)

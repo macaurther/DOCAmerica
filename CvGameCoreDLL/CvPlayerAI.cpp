@@ -10743,7 +10743,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	}*/
 
 	// Leoreth: some stability related AI help
-	if (eCivic == CIVIC_TOLERANCE || eCivic == CIVIC_MULTICULTURALISM)
+	if (eCivic == CIVIC_OPPORTUNITY || eCivic == CIVIC_MULTICULTURALISM)
 	{
 		if (getStabilityParameter(PARAMETER_RELIGION) < 0)
 		{
@@ -10809,7 +10809,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		iValue *= 6;
 		iValue /= 5;
 		break;
-	case CIVIC_TOLERANCE:
+	case CIVIC_OPPORTUNITY:
 	case CIVIC_MULTICULTURALISM:
 		if (getCurrentEra() >= ERA_ATOMIC)
 		{

@@ -104,17 +104,30 @@ def firstCityOnCityAcquiredAndKept(iPlayer, city):
 
 
 @handler("cityAcquiredAndKept")
-def giveNativeTech(iPlayer, city):
-	if city.getPreviousCiv() in dCivGroups[iCivGroupNativeAmerica] and not civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
-		lPossibleTechs = []
-		for iTech in lNativeTechs:
-			print("Checking tech: " + str(iTech))
-			if not team(iPlayer).isHasTech(iTech):
-				print("Tech: " + str(iTech) + " is Possible")
-				lPossibleTechs.append(iTech)
+def nativeCityConquered(iPlayer, pCity):
+	# Check if city was taken from a Native
+	if pCity.getPreviousCiv() in dCivGroups[iCivGroupNativeAmerica]:
+		# If a non-native captured it, give a Native Tech
+		if not civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
+			lPossibleTechs = []
+			for iTech in lNativeTechs:
+				if not team(iPlayer).isHasTech(iTech):
+					lPossibleTechs.append(iTech)
+			
+			if len(lPossibleTechs) > 0:
+				team(iPlayer).setHasTech(random.choice(lPossibleTechs), true, iPlayer, False, True)
 		
-		if len(lPossibleTechs) > 0:
-			team(iPlayer).setHasTech(random.choice(lPossibleTechs), true, iPlayer, False, True)
+		# If the conquerer has the Captives or Encomienda Civic, give Native Slave based on the population
+		if player(iPlayer).hasCivic(iEncomienda) or player(iPlayer).hasCivic(iCaptives):
+			makeUnits(iPlayer, iNativeSlave, pCity, int(pCity.getPopulation() / 3), UnitAITypes.UNITAI_WORKER)
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=pCity)
+
+
+@handler("cityAcquiredAndKept")
+def convertOnCityAcquired(iPlayer, pCity):
+	if player(iPlayer).hasCivic(iGloriaInDeo):
+		if player(iPlayer).getStateReligion() != -1:
+			pCity.spreadReligion(player(iPlayer).getStateReligion())
 
 
 @handler("cityBuilt")

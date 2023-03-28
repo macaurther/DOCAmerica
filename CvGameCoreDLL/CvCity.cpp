@@ -17460,12 +17460,6 @@ bool CvCity::isAutoRaze() const
 		{
 			return true;
 		}
-
-		// MacAurther: Cities are razed without the owner having the Construction tech
-		if (!GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)CONSTRUCTION))
-		{
-			return true;
-		}
 	}
 
 	if (GC.getGameINLINE().isOption(GAMEOPTION_ONE_CITY_CHALLENGE) && isHuman())
@@ -19179,16 +19173,20 @@ int CvCity::calculateImmigrationRate()
 	int iImmigrationRate = 0;
 
 	// Get Immigration value based on Civics
-	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_HAVEN))
+	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_JESUITS) && isHasReligion(GET_PLAYER(getOwner()).getStateReligion()))
+	{
+		iImmigrationRate += 2;
+	}
+	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_HAVEN))
 	{
 		iImmigrationRate += happyLevel() - unhappyLevel();
 	}
-	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_OPPORTUNITY))
+	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_PROFITEERING))
 	{
 		int iCommerceRate = getBaseYieldRate(YIELD_COMMERCE) - getImmigrationYieldRate(YIELD_COMMERCE); // Don't let Immigration yields feedback
 		iImmigrationRate += iCommerceRate / getPopulation();
 	}
-	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_TOLERANCE))
+	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_OPPORTUNITY))
 	{
 		int iProductionRate = getBaseYieldRate(YIELD_PRODUCTION) - getImmigrationYieldRate(YIELD_PRODUCTION); // Don't let Immigration yields feedback
 		iImmigrationRate += iProductionRate / getPopulation();

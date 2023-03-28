@@ -742,7 +742,6 @@
 			<Type>TECH_CONSTRUCTION</Type>
 			<Description>TXT_KEY_TECH_CONSTRUCTION</Description>
 			<Civilopedia>TXT_KEY_TECH_CONSTRUCTION_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TECH_CONSTRUCTION_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

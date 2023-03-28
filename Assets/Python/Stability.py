@@ -418,7 +418,7 @@ def getSeparatismModifier(iPlayer, city):
 	iCiv = civ(iPlayer)
 	
 	plot = city.plot()
-	civic = civics(iPlayer)
+	civics = Civics.player(iPlayer)
 	
 	bHistorical = plot.getPlayerSettlerValue(iPlayer) >= 90
 	bFall = since(year(dFall[iPlayer])) >= 0
@@ -456,6 +456,9 @@ def getSeparatismModifier(iPlayer, city):
 	
 	# Spanish UP
 	if iCiv == iSpain: iModifier -= 2
+	
+	# Empire Civic
+	if iEmpire in civics: iModifier -= 1
 	
 	# cap
 	if iModifier < -1: iModifier = -1
