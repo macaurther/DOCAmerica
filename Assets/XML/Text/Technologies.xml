@@ -623,7 +623,6 @@
 	</TEXT>
 
 
-
 	<TEXT>
 		<Tag>TXT_KEY_TECH_CEREMONY</Tag>
 		<English>Ceremony</English>
@@ -887,6 +886,14 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMMUNITY_HELP</Tag>
+		<English>[ICON_BULLET]Ships with free capacity provide Immigration to the city they are in</English>
+		<French>[ICON_BULLET]Ships with free capacity provide Immigration to the city they are in</French>
+		<German>[ICON_BULLET]Ships with free capacity provide Immigration to the city they are in</German>
+		<Italian>[ICON_BULLET]Ships with free capacity provide Immigration to the city they are in</Italian>
+		<Spanish>[ICON_BULLET]Ships with free capacity provide Immigration to the city they are in</Spanish>
 	</TEXT>
 
 

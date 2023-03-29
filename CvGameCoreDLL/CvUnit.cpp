@@ -3080,6 +3080,19 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 		}
 	}
 
+	// MacAurther: If a ship with free cargo space moves into a city, update Immigration
+	if (cargoSpace() > 0 && pPlot->getPlotCity() != NULL)
+	{
+		pPlot->getPlotCity()->processImmigration();
+	}
+
+	// MacAurther: If a ship with free cargo space moves out of a city, update Immigration
+	if (cargoSpace() > 0 && pOldPlot->getPlotCity() != NULL)
+	{
+		pOldPlot->getPlotCity()->processImmigration();
+	}
+
+
 /*************************************************************************************************/
 /**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
 /**	If you want to allow modmodders to enable this Callback, see CvCity::cancreate for example  **/
@@ -10961,6 +10974,12 @@ void CvUnit::changeCargo(int iChange)
 {
 	m_iCargo += iChange;
 	FAssert(getCargo() >= 0);
+
+	// MacAurther: Check if this updates Immigration
+	if (cargoSpace() > 0 && plot()->getPlotCity() != NULL)
+	{
+		plot()->getPlotCity()->processImmigration();
+	}
 }
 
 void CvUnit::getCargoUnits(std::vector<CvUnit*>& aUnits) const

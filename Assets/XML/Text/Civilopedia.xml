@@ -2905,14 +2905,14 @@ Your stability level can change during a stability check. As long it is higher t
 [NEWLINE][ICON_BULLET]Buildings - certain buildings and Wonders can increase Immigration
 [ICON_BULLET]Civics - Society Civics determine which city yield contributes to Immigration
 [ICON_BULLET]Unique Powers - Some Unique Powers increase or modify Immigration
+[ICON_BULLET]Ships - After researching Community, ships with extra capacity stationed in cities contribute to Immigration. The city gets +1 Immigration for each extra capacity, up to +5 Immigration (up to +10 Immigration for England)
 [PARAGRAPH:1]Society Civics represent if your Civilization's culture is exclusive or inclusive and what motivates Immigrants to come across the sea to your colony or nation. Do they come seeking wealth? Or do they come seeking religious sanctuary? Or perhaps they come because of your vibrant culture? This is how Immigration is determined for each of the Society Civics:
-[NEWLINE][ICON_BULLET][LINK=CIVIC_ANIMISM]Animism[\LINK]: No additional Immigration | Your cities will only receive Immigrantion due to Buildings, Wonders, or Unique Powers
-[ICON_BULLET][LINK=CIVIC_CASTE_SYSTEM]Caste System[\LINK]: No additional Immigration | Your cities will only receive Immigrantion due to Buildings, Wonders, or Unique Powers
-[ICON_BULLET][LINK=CIVIC_ISOLATIONISM]Isolationism[\LINK]: No Immigration | Even if you have Immigration Buildings, Wonders, or Unique Powers, your cities will not receive Immigrantion.
-[ICON_BULLET][LINK=CIVIC_HAVEN]Haven[\LINK]: [ICON_HAPPY] - [ICON_UNHAPPY] | Your Immigration is equal to your city's [ICON_HAPPY] minus [ICON_UNHAPPY].
-[ICON_BULLET][LINK=CIVIC_PROFITEERING]Profiteering[\LINK]: [ICON_COMMERCE] / Population | Your Immigration is equal to your city's base [ICON_COMMERCE] (before modifiers) divided by its Population (rounded down).
-[ICON_BULLET][LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK]: [ICON_PRODUCTION] / Population | Your Immigration is equal to your city's base [ICON_PRODUCTION] (before modifiers) divided by its Population (rounded down).
-[ICON_BULLET][LINK=CIVIC_MULTICULTURALISM]Multiculturalism[\LINK]: [ICON_CULTURE] / Population | Your Immigration is equal to your city's base [ICON_CULTURE] (before modifiers) divided by its Population (rounded down).
+[NEWLINE][ICON_BULLET][LINK=CIVIC_ISOLATIONISM]Isolationism[\LINK]: No Immigration | Even if you have Immigration Buildings, Wonders, or Unique Powers, your cities will not receive Immigrantion.
+[ICON_BULLET][LINK=CIVIC_JESUITS]Jesuits[\LINK]: +2 with State [ICON_RELIGION]  | +2 Immigration in each of your cities with your State [ICON_RELIGION]
+[ICON_BULLET][LINK=CIVIC_HAVEN]Haven[\LINK]: +[ICON_HAPPY] - [ICON_UNHAPPY] | Extra Immigration for excess [ICON_HAPPY]
+[ICON_BULLET][LINK=CIVIC_PROFITEERING]Profiteering[\LINK]: +[ICON_COMMERCE] / Population | Extra Immigration for [ICON_COMMERCE] (before modifiers) per Citizen (rounded down).
+[ICON_BULLET][LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK]: +[ICON_PRODUCTION] / Population | Extra Immigration for [ICON_PRODUCTION] (before modifiers) per Citizen(rounded down).
+[ICON_BULLET][LINK=CIVIC_MULTICULTURALISM]Multiculturalism[\LINK]: +[ICON_CULTURE] / Population | Extra Immigration for [ICON_CULTURE] (before modifiers) per Citizen (rounded down).
 [PARAGRAPH:1]Each city's Immigration value is added to its [ICON_FOOD]. With the [LINK=CIVIC_SLAVERY]Slavery[\LINK] Civic, each city's Immigration is also added to its [ICON_COMMERCE]. With the [LINK=CIVIC_MIGRANT_WORKERS]Migrant Workers[\LINK] Civic, each city's Immigration is also added to its [ICON_PRODUCTION].
 		</English>
 	</TEXT>

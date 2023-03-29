@@ -45,6 +45,8 @@ typedef list<char*> LISTCHAR;
 
 #define ESPIONAGEMISSION_COUP	((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
 
+#define MAX_IMMIGRATION_FROM_SHIPS 5																				// MacAurther
+
 enum DoCTechs
 {
 	HUNTING,

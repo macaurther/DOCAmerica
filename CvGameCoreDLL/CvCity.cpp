@@ -19202,10 +19202,27 @@ int CvCity::calculateImmigrationRate()
 		iImmigrationRate += iBaseCulture / getPopulation();
 	}
 
-	// English UP
-	if (isCoastal(20) && getCivilizationType() == ENGLAND)
+	// Get Immigration Value from Ships if owner has Community Tech
+	if (GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)COMMUNITY))
 	{
-		iImmigrationRate += 2;
+		int iFreeCapacity = 0;
+		for(int iI = 0; iI < plot()->getNumUnits(); iI ++)
+		{
+			if (plot()->getUnitByIndex(iI)->getOwner() == getOwner())
+			{
+				iFreeCapacity += plot()->getUnitByIndex(iI)->cargoSpaceAvailable(NO_SPECIALUNIT, DOMAIN_LAND);
+			}
+		}
+
+		int iMaxShipImmigration = MAX_IMMIGRATION_FROM_SHIPS;
+		// English UP
+		if (getCivilizationType() == ENGLAND)
+		{
+			iMaxShipImmigration *= 2;
+		}
+
+		iFreeCapacity = std::min(iFreeCapacity, iMaxShipImmigration);
+		iImmigrationRate += iFreeCapacity;
 	}
 
 	if (iImmigrationRate < 0)

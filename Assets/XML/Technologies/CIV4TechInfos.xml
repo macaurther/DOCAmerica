@@ -1756,6 +1756,7 @@
 			<Type>TECH_COMMUNITY</Type>
 			<Description>TXT_KEY_TECH_COMMUNITY</Description>
 			<Civilopedia>TXT_KEY_TECH_COMMUNITY_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_COMMUNITY_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
