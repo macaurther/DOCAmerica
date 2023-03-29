@@ -7107,7 +7107,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
 		}
 
-		// 1SDAN?: Arctic RP: Extra Commerce on coastal city tiles.
+		// 1SDAN? & MacAurther: Arctic RP: Extra Commerce on coastal city tiles.
 		if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ARCTIC)
 		{
 			if (eYield == YIELD_COMMERCE)
@@ -7125,6 +7125,15 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			if (eYield == YIELD_PRODUCTION && isHills())
 			{
 				iYield += 1;
+			}
+		}
+
+		// MacAurther: Spain UP: +1 Gold per Culture Level
+		if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == SPAIN)
+		{
+			if (eYield == YIELD_COMMERCE)
+			{
+				iYield += pCity->getCultureLevel();
 			}
 		}
 	}

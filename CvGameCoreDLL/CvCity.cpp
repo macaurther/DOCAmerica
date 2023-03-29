@@ -19210,7 +19210,8 @@ int CvCity::calculateImmigrationRate()
 
 	if (iImmigrationRate < 0)
 	{
-		iImmigrationRate = 0;
+		setImmigrationRate(0);
+		return 0;
 	}
 
 	// Immigration Modifiers
