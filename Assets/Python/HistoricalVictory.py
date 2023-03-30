@@ -170,7 +170,7 @@ dGoals = {
 			by=1100
 		),
 		ResourceCount(resources(), 25, at=1200),
-		TerrainCount(sum(iOcean, iCoast), 100, at=1300),
+		TerrainCount(sum(iOcean, iCoast, iArcticCoast), 100, at=1300),
 	),
 	iInca: (
 		All(

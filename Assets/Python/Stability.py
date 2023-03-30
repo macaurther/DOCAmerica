@@ -456,7 +456,7 @@ def getSeparatismModifier(iPlayer, city):
 	
 	# Spanish UP
 	if iCiv == iSpain: 
-		iModifier -= city.getCultureLevel()
+		iModifier -= city.getCultureLevel() - 1
 	
 	# Empire Civic
 	if iEmpire in civics: iModifier -= 1

@@ -3816,13 +3816,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=102
-	BonusType=BONUS_DEER
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=6,y=103
+	BonusType=BONUS_DEER
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -4377,6 +4377,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=104
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -4936,7 +4937,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=105
-	BonusType=BONUS_FUR
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2

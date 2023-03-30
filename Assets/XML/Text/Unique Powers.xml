@@ -56,11 +56,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ARC</Tag>
-		<English>Extra [ICON_COMMERCE] on coastal city tiles</English>
-		<French>Extra [ICON_COMMERCE] on coastal city tiles</French>
-		<German>Extra [ICON_COMMERCE] on coastal city tiles</German>
-		<Italian>Extra [ICON_COMMERCE] on coastal city tiles</Italian>
-		<Spanish>Extra [ICON_COMMERCE] on coastal city tiles</Spanish>
+		<English>Trade routes do not require roads</English>
+		<French>Trade routes do not require roads</French>
+		<German>Trade routes do not require roads</German>
+		<Italian>Trade routes do not require roads</Italian>
+		<Spanish>Trade routes do not require roads</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_EUR_TITLE</Tag>
@@ -417,11 +417,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INU</Tag>
-		<English>Trade routes do not require roads</English>
-		<French>Trade routes do not require roads</French>
-		<German>Trade routes do not require roads</German>
-		<Italian>Trade routes do not require roads</Italian>
-		<Spanish>Trade routes do not require roads</Spanish>
+		<English>Nearby camp resources are improved on city founding</English>
+		<French>Nearby camp resources are improved on city founding</French>
+		<German>Nearby camp resources are improved on city founding</German>
+		<Italian>Nearby camp resources are improved on city founding</Italian>
+		<Spanish>Nearby camp resources are improved on city founding</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_IRO_TITLE</Tag>

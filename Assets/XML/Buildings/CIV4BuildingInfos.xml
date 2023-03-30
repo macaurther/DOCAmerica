@@ -192,8 +192,8 @@
 			<Help>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INUIT_IGLOO</ArtDefineTag>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
-			<PrereqTech>TECH_POTTERY</PrereqTech>
+			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
+			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

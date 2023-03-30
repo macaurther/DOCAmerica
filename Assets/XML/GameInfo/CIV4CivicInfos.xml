@@ -724,6 +724,7 @@
 			<TechPrereq>TECH_INDENTURES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/IndenturedServitude.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iWorkerCostModifier>-50</iWorkerCostModifier>
 			<ImprovementYieldChanges>
@@ -1204,7 +1205,7 @@
 			</ImprovementYieldChanges>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
-				<iCommerce>-15</iCommerce>
+				<iCommerce>-50</iCommerce>
 			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>

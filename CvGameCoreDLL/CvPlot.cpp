@@ -4209,7 +4209,7 @@ bool CvPlot::isNetworkTerrain(TeamTypes eTeam) const
 
 bool CvPlot::isBonusNetwork(TeamTypes eTeam) const
 {
-	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == INUIT && !isWater())) // Inuit UP: Trade routes do not require roads
+	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && !isWater())) // Arctic RP: Trade routes do not require roads
 	{
 		return true;
 	}
@@ -4286,9 +4286,9 @@ bool CvPlot::isTradeNetworkConnected(const CvPlot* pPlot, TeamTypes eTeam) const
 		}
 	}
 
-	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == INUIT && !isWater())) // Inuit UP: Trade routes do not require roads
+	if (isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && !isWater())) // Arctic RP: Trade routes do not require roads
 	{
-		if (pPlot->isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == INUIT && !pPlot->isWater())) // Inuit UP: Trade routes do not require roads
+		if (pPlot->isRoute() || (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ARCTIC && !pPlot->isWater())) // Arctic RP: Trade routes do not require roads
 		{
 			return true;
 		}
@@ -7177,18 +7177,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			iYield += calculateImprovementYieldChange((ImprovementTypes)iAppliedImprovement, eYield, ePlayer);
 		}
 
-		// 1SDAN? & MacAurther: Arctic RP: Extra Commerce on coastal city tiles.
-		if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ARCTIC)
-		{
-			if (eYield == YIELD_COMMERCE)
-			{
-				if (pCity->isCoastal(20))
-				{
-					iYield += 2;
-				}
-			}
-		}
-		
 		// 1SDAN & MacAurther: Tiwanaku UP: Extra Production in Cities on Hills
 		if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == TIWANAKU)
 		{
@@ -7203,7 +7191,7 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 		{
 			if (eYield == YIELD_COMMERCE)
 			{
-				iYield += pCity->getCultureLevel();
+				iYield += pCity->getCultureLevel() - 1;
 			}
 		}
 	}

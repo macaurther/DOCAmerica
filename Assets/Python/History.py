@@ -57,15 +57,25 @@ def buildFoundedCapitalInfrastructure(city):
 	buildCapitalInfrastructure(city.getOwner(), city)
 
 
-# Help AI by removing nearby Tribes when they settle cities
+# MacAurther: Help AI by removing nearby Tribes when they settle cities
 @handler("cityBuilt")
 def convertTribesAroundCity(pCity):
 	iPlayer = pCity.getOwner()
-	if not player(iPlayer).isHuman():
+	if not player(iPlayer).isHuman() and player(iPlayer).getCivilizationType() != iIroquois:	# Don't make AI Iroquois sad
 		for i in range(gc.getNUM_CITY_PLOTS()):
 			pPlot = pCity.getCityIndexPlot(i)
-			if pPlot.getImprovementType() == iTribe or pPlot.getImprovementType() == iContactedTribe:
+			if pPlot.getImprovementType() in [iTribe, iContactedTribe]:
 				pPlot.setImprovementType(iCottage)
+
+# MacAurther: Inuit UP
+@handler("cityBuilt")
+def inuitUP(pCity):
+	iPlayer = pCity.getOwner()
+	if player(iPlayer).getCivilizationType() == iInuit:
+		for i in range(gc.getNUM_CITY_PLOTS()):
+			pPlot = pCity.getCityIndexPlot(i)
+			if pPlot.getImprovementType() == -1 and pPlot.getBonusType(player(iPlayer).getTeam()) in [iFur, iDeer]:
+				pPlot.setImprovementType(iCamp)
 
 ### UNIT BUILT ###
 
