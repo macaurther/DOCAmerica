@@ -220,26 +220,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 		}
 	}
 
-	// Dutch UP
-	if (getCivilizationType() == NETHERLANDS)
-	{
-		if (getUnitCombatType() == 9) //naval
-		{
-			setHasPromotion(PROMOTION_NAVIGATION1, true);
-			setHasPromotion(PROMOTION_NAVIGATION2, true);
-		}
-	}
-
-	// Portuguese UP
-	if (getCivilizationType() == PORTUGAL)
-	{
-		if (getUnitCombatType() == 9) //naval
-		{
-			setHasPromotion(PROMOTION_COMBAT1, true);
-			setHasPromotion(PROMOTION_COMBAT2, true);
-		}
-	}
-
 	if (getDomainType() == DOMAIN_LAND)
 	{
 		if (baseCombatStr() > 0)
@@ -5079,6 +5059,16 @@ bool CvUnit::pillage()
 	    }
 	}
 
+	// MacAurther: When Russia loses an Improvement, check if they lose their UP
+	if (plot()->getOwner() != NO_PLAYER && GET_PLAYER(plot()->getOwner()).getCivilizationType() == RUSSIA && plot()->getBonusType() != NO_BONUS)
+	{
+		if (GET_PLAYER(getOwner()).getNumAvailableBonuses(plot()->getBonusType()) < 4 )
+		{
+			// If Russia now has less than 4 of that resource, update the whole map
+			GC.getMapINLINE().updateYield();
+		}
+	}
+
 	return true;
 }
 
@@ -7293,6 +7283,12 @@ bool CvUnit::build(BuildTypes eBuild)
 		}
 	}
 
+	// MacAurther: Portuguese UP
+	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && (eBuild == GC.getInfoTypeForString("BUILD_PLANTATION") || eBuild == GC.getInfoTypeForString("BUILD_PLANTATION_DEFORESTATION")))
+	{
+		iWorkRate = 1000;
+	}
+
 	bFinished = plot()->changeBuildProgress(eBuild, iWorkRate, getTeam());
 
 	finishMoves(); // needs to be at bottom because movesLeft() can affect workRate()...
@@ -7308,6 +7304,16 @@ bool CvUnit::build(BuildTypes eBuild)
 	// Python Event
 	CvEventReporter::getInstance().unitBuildImprovement(this, eBuild, bFinished);
 
+	// MacAurther: When Russia finishes an Improvement, check if they trigger their UP
+	if (GET_PLAYER(getOwner()).getCivilizationType() == RUSSIA && plot()->getBonusType() != NO_BONUS)
+	{
+		if (GET_PLAYER(getOwner()).getNumAvailableBonuses(plot()->getBonusType()) >= 4 )
+		{
+			// If Russia now has at least 4 of that resource, update the whole map
+			GC.getMapINLINE().updateYield();
+		}
+	}
+	
 	return bFinished;
 }
 

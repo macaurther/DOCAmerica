@@ -3237,7 +3237,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 
 					// Leoreth: Chateau Frontenac effect, turn indication fix by merijn -> MacAurther: Biltmore Estate Effect
-					if (GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_BILTMORE_ESTATE))
+					if (eBuild != NO_BUILD && GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_BILTMORE_ESTATE))
 					{
 						if (GC.getBuildInfo(eBuild).getTechPrereq() == RAILROAD)
 						{
@@ -3247,6 +3247,40 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 							iThenWorkRate *= 150;
 							iThenWorkRate /= 100;
 						}
+					}
+
+					// MacAurther: Pentagon Effect
+					if (eBuild != NO_BUILD && GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_PENTAGON))
+					{
+						if (GC.getBuildInfo(eBuild).getTechPrereq() == INFRASTRUCTURE)
+						{
+							iNowWorkRate *= 150;
+							iNowWorkRate /= 100;
+							
+							iThenWorkRate *= 150;
+							iThenWorkRate /= 100;
+						}
+					}
+
+					// MacAurther: Russian UU: Promyshlenniki
+					if (eBuild != NO_BUILD && pSelectedUnit->getUnitType() == UNIT_RUSSIAN_PROMYSHLENNIKI)
+					{
+						if (pSelectedUnit->plot()->getTerrainType() == TERRAIN_TUNDRA || pSelectedUnit->plot()->getTerrainType() == TERRAIN_MOORLAND)
+						{
+							iNowWorkRate *= 150;
+							iNowWorkRate /= 100;
+							
+							iThenWorkRate *= 150;
+							iThenWorkRate /= 100;
+						}
+					}
+
+					// MacAurther: Portuguese UP
+					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && (eBuild == GC.getInfoTypeForString("BUILD_PLANTATION") || eBuild == GC.getInfoTypeForString("BUILD_PLANTATION_DEFORESTATION")))
+					{
+						iNowWorkRate = 1000;
+						
+						iThenWorkRate = 1000;
 					}
 
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);

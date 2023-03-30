@@ -5002,7 +5002,6 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				if (pPlot->getBuildProgress((BuildTypes)iI) > 0 && pPlot->canBuild((BuildTypes)iI, ePlayer))
 				{
 					int iTurns = pPlot->getBuildTurnsLeft((BuildTypes)iI, GC.getGame().getActivePlayer());
-					
 					if (iTurns > 0 && iTurns < MAX_INT)
 					{
 						szString.append(NEWLINE);
@@ -14081,12 +14080,6 @@ void CvGameTextMgr::setCorporationHelp(CvWStringBuffer &szBuffer, CorporationTyp
 			iYieldProduced /= 100;
 		}
 
-		// Leoreth: display the Dutch UP
-		if (GC.getGameINLINE().getActiveCivilizationType() == NETHERLANDS && eCorporation == (CorporationTypes)1)
-		{
-			iYieldProduced *= 2;
-		}
-
 		if (iYieldProduced != 0)
 		{
 			if (!szTempBuffer.empty())
@@ -14125,12 +14118,6 @@ void CvGameTextMgr::setCorporationHelp(CvWStringBuffer &szBuffer, CorporationTyp
 		{
 			iCommerceProduced *= GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent();
 			iCommerceProduced /= 100;
-		}
-
-		// Leoreth: display the Dutch UP
-		if (GC.getGameINLINE().getActiveCivilizationType() == NETHERLANDS && eCorporation == (CorporationTypes)1)
-		{
-			iCommerceProduced *= 2;
 		}
 
 		if (iCommerceProduced != 0)

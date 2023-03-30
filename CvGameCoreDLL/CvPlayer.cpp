@@ -7111,12 +7111,12 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	{
 		iCost /= 2;
 	}
-	// MacAurther: Russian UP
-	else if (eCiv == RUSSIA)
+	// MacAurther: Portuguese UP
+	else if (eCiv == PORTUGAL && eBuild == (BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))
 	{
-		iCost /= 2;
+		iCost = 0;
 	}
-	// MacAurther: Russian UP
+	// MacAurther: Venezuelan UP
 	else if (eCiv == VENEZUELA)
 	{
 		return 0;

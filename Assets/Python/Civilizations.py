@@ -1,5 +1,6 @@
 from RFCUtils import *
 from Core import *
+from GreatPeople import assignGreatPersonName
 
 from Events import events, handler
 
@@ -706,11 +707,16 @@ def createSpecificUnits(iPlayer, tile):
 		if not bHuman:
 			makeUnit(iPlayer, iSettler, tile)
 	elif iCiv == iAmerica:	# American UP
-		makeUnit(iPlayer, iGreatStatesman, tile)
-		makeUnit(iPlayer, iGreatGeneral, tile)
-		makeUnit(iPlayer, iGreatScientist, tile)
-		makeUnit(iPlayer, iGreatMerchant, tile)
-		makeUnit(iPlayer, iGreatArtist, tile)
+		unit = makeUnit(iPlayer, iGreatStatesman, tile)
+		assignGreatPersonName(unit, iPlayer, None, False)
+		unit = makeUnit(iPlayer, iGreatGeneral, tile)
+		assignGreatPersonName(unit, iPlayer, None, False)
+		unit = makeUnit(iPlayer, iGreatScientist, tile)
+		assignGreatPersonName(unit, iPlayer, None, False)
+		unit = makeUnit(iPlayer, iGreatMerchant, tile)
+		assignGreatPersonName(unit, iPlayer, None, False)
+		unit = makeUnit(iPlayer, iGreatArtist, tile)
+		assignGreatPersonName(unit, iPlayer, None, False)
 	elif iCiv == iColombia:
 		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
 

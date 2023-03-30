@@ -321,11 +321,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ENG</Tag>
-		<English>Ships in Cities can provide twice as much Immigration</English>
-		<French>Ships in Cities can provide twice as much Immigration</French>
-		<German>Ships in Cities can provide twice as much Immigration</German>
-		<Italian>Ships in Cities can provide twice as much Immigration</Italian>
-		<Spanish>Ships in Cities can provide twice as much Immigration</Spanish>
+		<English>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</English>
+		<French>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</French>
+		<German>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</German>
+		<Italian>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</Italian>
+		<Spanish>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA_TITLE</Tag>
@@ -337,11 +337,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA</Tag>
-		<English>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</English>
-		<French>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</French>
-		<German>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</German>
-		<Italian>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</Italian>
-		<Spanish>Forts claim more territory, are 50% cheaper to construct, and +2 [ICON_COMMERCE] on Forts</Spanish>
+		<English>Forts claim more territory and are 50% cheaper to construct</English>
+		<French>Forts claim more territory and are 50% cheaper to construct</French>
+		<German>Forts claim more territory and are 50% cheaper to construct</German>
+		<Italian>Forts claim more territory and are 50% cheaper to construct</Italian>
+		<Spanish>Forts claim more territory and are 50% cheaper to construct</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAI_TITLE</Tag>
@@ -377,19 +377,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL_TITLE</Tag>
-		<English>The Power of Trading Companies:</English>
-		<French>Le pouvoir des compagnies commerciales :</French>
-		<German>Die Macht der Handelsgesellschaften:</German>
-		<Italian>Il potere delle compagnie commerciali:</Italian>
-		<Spanish>El poder de la Compa&#241;&#237;a de las Indias:</Spanish>
+		<English>The Power of Joint Stock:</English>
+		<French>The Power of Joint Stock:</French>
+		<German>The Power of Joint Stock:</German>
+		<Italian>The Power of Joint Stock:</Italian>
+		<Spanish>The Power of Joint Stock:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL</Tag>
-		<English>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</English>
-		<French>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</French>
-		<German>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</German>
-		<Italian>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</Italian>
-		<Spanish>Naval Units start with Navigation II and +2 [ICON_COMMERCE] on Camps</Spanish>
+		<English>More likely to attract Corporations and Corporations in the same city do not compete with each other</English>
+		<French>More likely to attract Corporations and Corporations in the same city do not compete with each other</French>
+		<German>More likely to attract Corporations and Corporations in the same city do not compete with each other</German>
+		<Italian>More likely to attract Corporations and Corporations in the same city do not compete with each other</Italian>
+		<Spanish>More likely to attract Corporations and Corporations in the same city do not compete with each other</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_INC_TITLE</Tag>
@@ -545,11 +545,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR</Tag>
-		<English>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</English>
-		<French>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</French>
-		<German>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</German>
-		<Italian>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</Italian>
-		<Spanish>Ships start with Combat II and +2 [ICON_COMMERCE] on Plantations</Spanish>
+		<English>Plantations are free to build and build instantly</English>
+		<French>Plantations are free to build and build instantly</French>
+		<German>Plantations are free to build and build instantly</German>
+		<Italian>Plantations are free to build and build instantly</Italian>
+		<Spanish>Plantations are free to build and build instantly</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PUE_TITLE</Tag>
@@ -577,11 +577,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_RUS</Tag>
-		<English>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</English>
-		<French>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</French>
-		<German>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</German>
-		<Italian>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</Italian>
-		<Spanish>Improvements are 50% cheaper to construct and +1 [ICON_FOOD] on Camps</Spanish>
+		<English>Extra yields on Resources of which you have 4 or more</English>
+		<French>Extra yields on Resources of which you have 4 or more</French>
+		<German>Extra yields on Resources of which you have 4 or more</German>
+		<Italian>Extra yields on Resources of which you have 4 or more</Italian>
+		<Spanish>Extra yields on Resources of which you have 4 or more</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA_TITLE</Tag>

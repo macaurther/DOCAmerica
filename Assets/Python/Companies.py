@@ -96,8 +96,8 @@ def getCityValue(city, iCompany):
 	owner = player(city)
 	ownerTeam = team(city)
 
-	# Colony increases likeliness for trading company
-	if iCompany == iTradingCompany and has_civic(owner, iColony):
+	# Trade Company Civic increases likeliness for trading company
+	if iCompany == iTradingCompany and has_civic(owner, iTradeCompany):
 		iValue += 2
 		
 	# Merchant Trade increases likeliness for silk route
@@ -108,15 +108,17 @@ def getCityValue(city, iCompany):
 	if has_civic(owner, iFreeEnterprise):
 		iValue += 1
 
-	# civilization requirements
-	if iCompany == iTradingCompany:
-		if iOwnerCiv == iNetherlands:
-			iValue += 2
+	# Dutch UP
+	if iOwnerCiv == iNetherlands:
+		if iCompany == iTradingCompany:
+			iValue += 5
+		else:
+			iValue += 3
 			
 	elif iCompany == iTradingCompany:
-		if city not in cities.rectangle(tCaribbean) and not city.isHasRealBuilding(unique_building(city.getOwner(), iTradingCompanyBuilding)):
+		if city not in cities.region(rCaribbean) and not city.isHasRealBuilding(unique_building(city.getOwner(), iTradingCompanyBuilding)):
 			return -1
-		if city in cities.rectangle(tCaribbean):
+		if city in cities.region(rCaribbean):
 			iValue += 1
 	
 	# trade companies and fishing industry - coastal cities only
@@ -232,12 +234,13 @@ def getCityValue(city, iCompany):
 	iValue += iTempValue
 	
 	# competition
-	if iCompany == iCerealIndustry and city.isHasCorporation(iFishingIndustry): iValue /= 2
-	elif iCompany == iFishingIndustry and city.isHasCorporation(iCerealIndustry): iValue /= 2
-	elif iCompany == iSteelIndustry and city.isHasCorporation(iTextileIndustry): iValue /= 2
-	elif iCompany == iTextileIndustry and city.isHasCorporation(iSteelIndustry): iValue /= 2
-	elif iCompany == iOilIndustry and city.isHasCorporation(iComputerIndustry): iValue /= 2
-	elif iCompany == iComputerIndustry and city.isHasCorporation(iOilIndustry): iValue /= 2
+	if not iOwnerCiv == iNetherlands:	# Netherlands UP
+		if iCompany == iCerealIndustry and city.isHasCorporation(iFishingIndustry): iValue /= 2
+		elif iCompany == iFishingIndustry and city.isHasCorporation(iCerealIndustry): iValue /= 2
+		elif iCompany == iSteelIndustry and city.isHasCorporation(iTextileIndustry): iValue /= 2
+		elif iCompany == iTextileIndustry and city.isHasCorporation(iSteelIndustry): iValue /= 2
+		elif iCompany == iOilIndustry and city.isHasCorporation(iComputerIndustry): iValue /= 2
+		elif iCompany == iComputerIndustry and city.isHasCorporation(iOilIndustry): iValue /= 2
 	
 	# threshold
 	if iValue < 4:

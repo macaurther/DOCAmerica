@@ -1029,7 +1029,6 @@ iAmerica : {
 		"Henry Kissinger", # 20th
 	],
 	iGreatGeneral : [
-		"Andrew Jackson", # 19th
 		"Winfield Scott", # 19th
 		"Ulysses S. Grant", # 19th
 		"Robert E. Lee", # 19th

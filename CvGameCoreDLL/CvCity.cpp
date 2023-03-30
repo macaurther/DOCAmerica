@@ -6676,12 +6676,6 @@ int CvCity::calculateDistanceMaintenanceTimes100() const
 	{
 		iDistance = plotDistance(getX_INLINE(), getY_INLINE(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
 
-		// Leoreth: English UP: distance capped at 10
-		if (getCivilizationType() == ENGLAND)
-		{
-			iDistance = std::min(10, iDistance);
-		}
-
 		iTempMaintenance = 100 * (GC.getDefineINT("MAX_DISTANCE_CITY_MAINTENANCE") * iDistance);
 
 		iTempMaintenance *= (getPopulation() + 7);
@@ -19206,22 +19200,32 @@ int CvCity::calculateImmigrationRate()
 	if (GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)COMMUNITY))
 	{
 		int iFreeCapacity = 0;
-		for(int iI = 0; iI < plot()->getNumUnits(); iI ++)
-		{
-			if (plot()->getUnitByIndex(iI)->getOwner() == getOwner())
-			{
-				iFreeCapacity += plot()->getUnitByIndex(iI)->cargoSpaceAvailable(NO_SPECIALUNIT, DOMAIN_LAND);
-			}
-		}
-
 		int iMaxShipImmigration = MAX_IMMIGRATION_FROM_SHIPS;
+
 		// English UP
 		if (getCivilizationType() == ENGLAND)
 		{
 			iMaxShipImmigration *= 2;
 		}
 
-		iFreeCapacity = std::min(iFreeCapacity, iMaxShipImmigration);
+		for(int iI = 0; iI < plot()->getNumUnits(); iI ++)
+		{
+			if (plot()->getUnitByIndex(iI)->getOwner() == getOwner())
+			{
+				iFreeCapacity += plot()->getUnitByIndex(iI)->cargoSpaceAvailable(NO_SPECIALUNIT, DOMAIN_LAND);
+				// English UP
+				if (getCivilizationType() == ENGLAND && plot()->getUnitByIndex(iI)->cargoSpace() > 0)
+				{
+					iFreeCapacity += 1;
+				}
+			}
+
+			if (iFreeCapacity >= iMaxShipImmigration)
+			{
+				iFreeCapacity = iMaxShipImmigration;
+				break;
+			}
+		}
 		iImmigrationRate += iFreeCapacity;
 	}
 

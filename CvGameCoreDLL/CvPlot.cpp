@@ -6705,6 +6705,131 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
+	// MacAurther: Russian UP: Extra yields on Resources of which you have 4 or more
+	if(eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == RUSSIA)
+	{
+		BonusTypes eBonus = getBonusType(eTeam);
+		if(eBonus != NO_BONUS && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getNumAvailableBonuses(eBonus) >= 4)
+		{
+			if(eYield == YIELD_FOOD)
+			{
+				switch(eBonus)
+				{
+					// Food
+					case BONUS_BANANA:
+					case BONUS_CLAM:
+					case BONUS_CORN:
+					case BONUS_COW:
+					case BONUS_CRAB:
+					case BONUS_CRUSTACEANS:
+					case BONUS_DEER:
+					case BONUS_FISH:
+					case BONUS_PIG:
+					case BONUS_POTATO:
+					case BONUS_RICE:
+					case BONUS_MILLET:
+					case BONUS_WHEAT:
+						iYield += 2;
+						break;
+					// Food & Production
+					case BONUS_HORSE:
+						iYield += 1;
+						break;
+					// Food & Commerce
+					case BONUS_OLIVES:
+					case BONUS_SHEEP:
+					case BONUS_CITRUS:
+					case BONUS_DATES:
+					case BONUS_CAMEL:
+					case BONUS_LLAMA:
+					case BONUS_WINE:
+					case BONUS_WHALE:
+					case BONUS_SALT:
+					case BONUS_SPICES:
+					case BONUS_SUGAR:
+					case BONUS_TEA:
+						iYield += 1;
+						break;
+				}
+			}
+			else if(eYield == YIELD_PRODUCTION)
+			{
+				switch(eBonus)
+				{
+					// Production
+					case BONUS_ALUMINUM:
+					case BONUS_COAL:
+					case BONUS_COPPER:
+					case BONUS_IRON:
+					case BONUS_MARBLE:
+					case BONUS_OIL:
+					case BONUS_STONE:
+					case BONUS_URANIUM:
+						iYield += 2;
+						break;
+					// Food & Production
+					case BONUS_HORSE:
+						iYield += 1;
+						break;
+					// Production & Commerce
+					case BONUS_IVORY:
+					case BONUS_JADE:
+					case BONUS_OBSIDIAN:
+					case BONUS_RARE_EARTHS:
+					case BONUS_RUBBER:
+						iYield += 1;
+						break;
+				}
+			}
+			else if(eYield == YIELD_COMMERCE)
+			{
+				switch(eBonus)
+				{
+					// Commerce
+					case BONUS_AMBER:
+					case BONUS_COCOA:
+					case BONUS_COFFEE:
+					case BONUS_COTTON:
+					case BONUS_DYE:
+					case BONUS_COCHINEAL:
+					case BONUS_FUR:
+					case BONUS_GEMS:
+					case BONUS_GOLD:
+					case BONUS_INCENSE:
+					case BONUS_OPIUM:
+					case BONUS_PEARL:
+					case BONUS_SILK:
+					case BONUS_SILVER:
+					case BONUS_TIMBER:
+					case BONUS_TOBACCO:
+						iYield += 2;
+						break;
+					// Food & Commerce
+					case BONUS_OLIVES:
+					case BONUS_SHEEP:
+					case BONUS_CITRUS:
+					case BONUS_DATES:
+					case BONUS_CAMEL:
+					case BONUS_LLAMA:
+					case BONUS_WINE:
+					case BONUS_WHALE:
+					case BONUS_SALT:
+					case BONUS_SPICES:
+					case BONUS_SUGAR:
+					case BONUS_TEA:
+					// Production & Commerce
+					case BONUS_IVORY:
+					case BONUS_JADE:
+					case BONUS_OBSIDIAN:
+					case BONUS_RARE_EARTHS:
+					case BONUS_RUBBER:
+						iYield += 1;
+						break;
+				}
+			}
+		}
+	}
+
 	if (isLake())
 	{
 		iYield += GC.getYieldInfo(eYield).getLakeChange();
@@ -6869,61 +6994,6 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 			iYield += 1;
 		}
 	}
-
-	// MacAurther: Spanish UP: +2 Gold on Mines
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == SPAIN)
-	{
-		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_MINE"))
-		{
-			iYield += 2;
-		}
-	}
-
-	// MacAurther: Portuguese UP: +2 Gold on Plantations
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == PORTUGAL)
-	{
-		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_PLANTATION"))
-		{
-			iYield += 2;
-		}
-	}
-
-	// MacAurther: English UP: +2 Gold on Logging Camp
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == ENGLAND)
-	{
-		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_LOGGING_CAMP"))
-		{
-			iYield += 2;
-		}
-	}
-
-	// MacAurther: French UP: +2 Gold on Forts
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == FRANCE)
-	{
-		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FORT"))
-		{
-			iYield += 2;
-		}
-	}
-
-	// MacAurther: Dutch UP: +2 Gold on Camps
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == NETHERLANDS)
-	{
-		if (eYield == YIELD_COMMERCE && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_CAMP"))
-		{
-			iYield += 2;
-		}
-	}
-
-	// MacAurther: Russian UP: +1 Food on Camps
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == RUSSIA)
-	{
-		if (eYield == YIELD_FOOD && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_CAMP"))
-		{
-			iYield += 1;
-		}
-	}
-
 	return iYield;
 }
 
