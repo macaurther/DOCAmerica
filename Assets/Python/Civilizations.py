@@ -1,9 +1,9 @@
 from RFCUtils import *
 from Core import *
-from GreatPeople import assignGreatPersonName
 
 from Events import events, handler
 
+import GreatPeople as GP
 
 ### Unit spawn functions ###
 
@@ -707,15 +707,15 @@ def createSpecificUnits(iPlayer, tile):
 			makeUnit(iPlayer, iSettler, tile)
 	elif iCiv == iAmerica:	# American UP
 		unit = makeUnit(iPlayer, iGreatStatesman, tile)
-		assignGreatPersonName(unit, iPlayer, None, False)
+		GP.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatGeneral, tile)
-		assignGreatPersonName(unit, iPlayer, None, False)
+		GP.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatScientist, tile)
-		assignGreatPersonName(unit, iPlayer, None, False)
+		GP.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatMerchant, tile)
-		assignGreatPersonName(unit, iPlayer, None, False)
+		GP.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatArtist, tile)
-		assignGreatPersonName(unit, iPlayer, None, False)
+		GP.assignGreatPersonName(unit, iPlayer, None, False)
 	elif iCiv == iColombia:
 		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
 
