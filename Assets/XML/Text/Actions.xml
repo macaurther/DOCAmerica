@@ -38,6 +38,14 @@
 		<Spanish>Remove [LINK=FEATURE_RAINFOREST]Rainforest[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILD_REMOVE_PALM_FOREST</Tag>
+		<English>Remove [LINK=FEATURE_PALM_FOREST]Palm Forest[\LINK]</English>
+		<French>Remove [LINK=FEATURE_PALM_FOREST]Palm Forest[\LINK]</French>
+		<German>Remove [LINK=FEATURE_PALM_FOREST]Palm Forest[\LINK]</German>
+		<Italian>Remove [LINK=FEATURE_PALM_FOREST]Palm Forest[\LINK]</Italian>
+		<Spanish>Remove [LINK=FEATURE_PALM_FOREST]Palm Forest[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILD_HIGHWAY</Tag>
 		<English>Build a [LINK=ROUTE_HIGHWAY]Highway[\LINK]</English>
 		<French>construire une [LINK=ROUTE_HIGHWAY]autoroute[\LINK]</French>

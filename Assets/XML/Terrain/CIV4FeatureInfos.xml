@@ -1347,10 +1347,10 @@
 			<iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
 		</FeatureInfo>
 		<FeatureInfo>
-			<Type>FEATURE_SAVANNA</Type>
-			<Description>TXT_KEY_FEATURE_SAVANNA</Description>
-			<Civilopedia>TXT_KEY_FEATURE_SAVANNA_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_FEATURE_SAVANNA</ArtDefineTag>
+			<Type>FEATURE_PALM_FOREST</Type>
+			<Description>TXT_KEY_FEATURE_PALM_FOREST</Description>
+			<Civilopedia>TXT_KEY_FEATURE_PALM_FOREST_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_FEATURE_PALM_FOREST</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -1373,7 +1373,7 @@
 			<bAddsFreshWater>0</bAddsFreshWater>
 			<bImpassable>0</bImpassable>
 			<bNoCity>0</bNoCity>
-			<bNoImprovement>0</bNoImprovement>
+			<bNoImprovement>1</bNoImprovement>
 			<bVisibleAlways>0</bVisibleAlways>
 			<bNukeImmune>0</bNukeImmune>
 			<OnUnitChangeTo/>
