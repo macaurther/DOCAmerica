@@ -412,27 +412,27 @@ def giveColonists(iPlayer):
 					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
 					if iCiv == iPortugal:
 						createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
-				elif iExpeditionType == iGalleonSettle:	# Galleon, Settler, Militia, Work (Netherlands: Indiaman, Settler, Militia, Work, Settler)
-					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+				elif iExpeditionType == iIndiamanSettle:	# Indiaman, Settler, Militia, Work (Netherlands/Spain: Fluyt/Galleon, Settler, Militia, Work, Settler)
+					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
 					createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
-					if iCiv == iNetherlands:
+					if iCiv in [iNetherlands, iSpain]:
 						makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-				elif iExpeditionType == iGalleonSupport:	# Galleon, Recon, Work, Missionary (Netherlands: Indiaman, Recon, Work, Missionary, Militia)
-					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+				elif iExpeditionType == iIndiamanSupport:	# Indiaman, Recon, Work, Missionary (Netherlands/Spain: Fluyt/Galleon, Recon, Work, Missionary, Militia)
+					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					createRoleUnit(iPlayer, tUnitPlot, iRecon, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
 					if iReligion > -1:
 						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-					if iCiv == iNetherlands:
+					if iCiv in [iNetherlands, iSpain]:
 						createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
-				elif iExpeditionType == iGalleonConquer:	# Galleon, Shock, ShockCav, CitySiege (Netherlands: Indiaman, Shock, ShockCav, CitySiege, Shock)
-					makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
+				elif iExpeditionType == iIndiamanConquer:	# Indiaman, Shock, ShockCav, CitySiege (Netherlands/Spain: Fluyt/Galleon, Shock, ShockCav, CitySiege, Shock)
+					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iShockCav, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
-					if iCiv == iNetherlands:
+					if iCiv in [iNetherlands, iSpain]:
 						createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
@@ -532,4 +532,4 @@ def handleColonialConquest(iPlayer):
 	seaPlot = plots.surrounding(targets[0]).water().random()
 
 	if seaPlot:
-		makeUnit(iPlayer, unique_unit(iPlayer, iGalleon), seaPlot)
+		makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), seaPlot)

@@ -8655,7 +8655,7 @@
 			<bRenderBelowWater>1</bRenderBelowWater>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_GALLEON</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_INDIAMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -8725,7 +8725,7 @@
 			<bRenderBelowWater>1</bRenderBelowWater>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_GALLEON</UnitClassUpgradeType>
+					<UnitClassUpgradeType>UNITCLASS_INDIAMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -8793,14 +8793,14 @@
 			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_GALLEON</Class>
-			<Type>UNIT_GALLEON</Type>
+			<Class>UNITCLASS_INDIAMAN</Class>
+			<Type>UNIT_INDIAMAN</Type>
 			<Combat>UNITCOMBAT_NAVAL</Combat>
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_GALLEON</Description>
-			<Civilopedia>TXT_KEY_UNIT_GALLEON_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_GALLEON_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_INDIAMAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_INDIAMAN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_INDIAMAN_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
@@ -8851,20 +8851,86 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_GALLEON</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_INDIAMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_GALLEON</Class>
-			<Type>UNIT_DUTCH_WEST_INDIAMAN</Type>
+			<Class>UNITCLASS_INDIAMAN</Class>
+			<Type>UNIT_SPANISH_GALLEON</Type>
 			<Combat>UNITCOMBAT_NAVAL</Combat>
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN</Description>
-			<Civilopedia>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_SPANISH_GALLEON</Description>
+			<Civilopedia>TXT_KEY_UNIT_SPANISH_GALLEON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SPANISH_GALLEON_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<bMilitarySupport>1</bMilitarySupport>
+			<bMilitaryProduction>1</bMilitaryProduction>
+			<bPillage>1</bPillage>
+			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
+			<bMechanized>1</bMechanized>
+			<bRenderBelowWater>1</bRenderBelowWater>
+			<UnitClassUpgrades>
+				<UnitClassUpgrade>
+					<UnitClassUpgradeType>UNITCLASS_BRIGANTINE</UnitClassUpgradeType>
+					<bUnitClassUpgrade>1</bUnitClassUpgrade>
+				</UnitClassUpgrade>
+			</UnitClassUpgrades>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_SETTLER_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
+			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
+			<iCost>100</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>20</iMinAreaSize>
+			<iMoves>5</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iCombat>11</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<DomainCargo>DOMAIN_LAND</DomainCargo>
+			<iCargo>4</iCargo>
+			<iBaseTrade>250</iBaseTrade>
+			<iTradeMultiplier>100</iTradeMultiplier>
+			<iAsset>3</iAsset>
+			<iPower>8</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>2.25</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SPANISH_GALLEON</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_INDIAMAN</Class>
+			<Type>UNIT_DUTCH_FLUYT</Type>
+			<Combat>UNITCOMBAT_NAVAL</Combat>
+			<Domain>DOMAIN_SEA</Domain>
+			<DefaultUnitAI>UNITAI_ASSAULT_SEA</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_DUTCH_FLUYT</Description>
+			<Civilopedia>TXT_KEY_UNIT_DUTCH_FLUYT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_DUTCH_FLUYT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bRivalTerritory>1</bRivalTerritory>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -8902,9 +8968,9 @@
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>5</iMoves>
+			<iMoves>7</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iCombat>10</iCombat>
+			<iCombat>8</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -8920,7 +8986,7 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_DUTCH_WEST_INDIAMAN</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_DUTCH_FLUYT</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_MACHINE</FormationType>

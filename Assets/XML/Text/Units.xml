@@ -334,12 +334,20 @@
 		<Spanish>[COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] are basic [COLOR_UNIT_TEXT]Naval Units[COLOR_REVERT] in the Revolutionary Era.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_GALLEON_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</English>
-		<French>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</French>
-		<German>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</German>
-		<Italian>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] have three cargo spaces.</Spanish>
+		<Tag>TXT_KEY_UNIT_INDIAMAN</Tag>
+		<English>Indiaman</English>
+		<French>Indiaman</French>
+		<German>Indiaman</German>
+		<Italian>Indiaman</Italian>
+		<Spanish>Indiaman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INDIAMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Indiamen[COLOR_REVERT] have three cargo spaces.</English>
+		<French>[COLOR_UNIT_TEXT]Indiamen[COLOR_REVERT] have three cargo spaces.</French>
+		<German>[COLOR_UNIT_TEXT]Indiamen[COLOR_REVERT] have three cargo spaces.</German>
+		<Italian>[COLOR_UNIT_TEXT]Indiamen[COLOR_REVERT] have three cargo spaces.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Indiamen[COLOR_REVERT] have three cargo spaces.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GREAT_STATESMAN_STRATEGY</Tag>
@@ -742,20 +750,20 @@
 		<Spanish>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN</Tag>
-		<English>West Indiaman</English>
-		<French>West Indiaman</French>
-		<German>West Indiaman</German>
-		<Italian>West Indiaman</Italian>
-		<Spanish>West Indiaman</Spanish>
+		<Tag>TXT_KEY_UNIT_DUTCH_FLUYT</Tag>
+		<English>Fluyt</English>
+		<French>Fluyt</French>
+		<German>Fluyt</German>
+		<Italian>Fluyt</Italian>
+		<Spanish>Fluyt</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_DUTCH_WEST_INDIAMAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</English>
-		<French>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</French>
-		<German>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</German>
-		<Italian>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]West Indianman[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], has two additional strength points, has an additional cargo space and can explore rival territory.</Spanish>
+		<Tag>TXT_KEY_UNIT_DUTCH_FLUYT_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Fluyt[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], has two additional movement points, has an additional cargo space and can explore rival territory.</English>
+		<French>The [COLOR_UNIT_TEXT]Fluyt[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], has two additional movement points, has an additional cargo space and can explore rival territory.</French>
+		<German>The [COLOR_UNIT_TEXT]Fluyt[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], has two additional movement points, has an additional cargo space and can explore rival territory.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Fluyt[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], has two additional movement points, has an additional cargo space and can explore rival territory.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Fluyt[COLOR_REVERT], the Dutch replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], has two additional movement points, has an additional cargo space and can explore rival territory.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_AMERICAN_DOG_SOLDIER</Tag>
@@ -2409,7 +2417,22 @@
 		<Italian>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Cacos[COLOR_REVERT], the Haitian replacement for the [COLOR_UNIT_TEXT]Grenadier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Spanish>
 	</TEXT>
-	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPANISH_GALLEON</Tag>
+		<English>Galleon</English>
+		<French>Galleon</French>
+		<German>Galleon</German>
+		<Italian>Galleon</Italian>
+		<Spanish>Galleon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SPANISH_GALLEON_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</English>
+		<French>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</French>
+		<German>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</Spanish>
+	</TEXT>
 	
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_</Tag>

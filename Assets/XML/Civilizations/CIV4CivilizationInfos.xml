@@ -2261,8 +2261,8 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_GALLEON</UnitClassType>
-					<UnitType>UNIT_DUTCH_WEST_INDIAMAN</UnitType>
+					<UnitClassType>UNITCLASS_INDIAMAN</UnitClassType>
+					<UnitType>UNIT_DUTCH_FLUYT</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2948,6 +2948,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_CUIRASSIER</UnitClassType>
 					<UnitType>UNIT_SPANISH_CONQUISTADOR</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_INDIAMAN</UnitClassType>
+					<UnitType>UNIT_SPANISH_GALLEON</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>

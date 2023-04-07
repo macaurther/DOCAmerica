@@ -505,7 +505,7 @@ def isUnitOfRole(iUnit, iRole):
 	elif iRole == iWorkSea:
 		return base_unit(iUnit) in [iWorkboat]
 	elif iRole == iFerrySea:
-		return base_unit(iUnit) in [iCanoe, iCaravel, iGalleon, iBrigantine, iSteamship, iTransport, iCarrier]
+		return base_unit(iUnit) in [iCanoe, iCaravel, iIndiaman, iBrigantine, iSteamship, iTransport, iCarrier]
 	elif iRole == iEscortSea:
 		return base_unit(iUnit) in [iSloop, iFrigate, iIronclad, iDestroyer, iStealthDestroyer]
 	elif iRole == iHarassSea:

@@ -575,12 +575,12 @@
 			<DefaultUnit>UNIT_CARAVEL</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_GALLEON</Type>
-			<Description>TXT_KEY_UNIT_GALLEON</Description>
+			<Type>UNITCLASS_INDIAMAN</Type>
+			<Description>TXT_KEY_UNIT_INDIAMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_GALLEON</DefaultUnit>
+			<DefaultUnit>UNIT_INDIAMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_BRIGANTINE</Type>

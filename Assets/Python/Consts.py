@@ -388,16 +388,16 @@ iNetherlands : [1650],
 })
 
 iNumExpeditionTypes = 8
-(iCanoeSettle, iCaravelSettle, iCaravelSupport, iCaravelExplore, iCaravelConquer, iGalleonSettle, iGalleonSupport, iGalleonConquer) = range(iNumExpeditionTypes)
+(iCanoeSettle, iCaravelSettle, iCaravelSupport, iCaravelExplore, iCaravelConquer, iIndiamanSettle, iIndiamanSupport, iIndiamanConquer) = range(iNumExpeditionTypes)
 
 dColonistExpeditions = CivDict({
 iNorse : [[iCanoeSettle]],
-iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelConquer], [iGalleonSettle, iGalleonConquer]],
+iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelConquer], [iIndiamanSettle, iIndiamanConquer]],
 iPortugal : [[iCaravelSettle, iCaravelSupport], [iCaravelSettle, iCaravelSupport]],
-iEngland : [[iGalleonSettle, iGalleonSupport], [iGalleonSettle], [iGalleonSettle]],
-iFrance : [[iGalleonSettle, iGalleonSupport], [iGalleonSettle], [iGalleonSettle]],
-iNetherlands : [[iGalleonSettle, iGalleonSupport], [iGalleonSettle]],
-iRussia : [[iGalleonSettle, iGalleonSupport]],
+iEngland : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle]],
+iFrance : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle]],
+iNetherlands : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle]],
+iRussia : [[iIndiamanSettle, iIndiamanSupport]],
 })
 
 dMaxColonists = CivDict({
@@ -475,7 +475,7 @@ lNativeTechs = [iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, 
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 159
+iNumUnits = 160
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			iSisqeno,
@@ -487,12 +487,12 @@ iAntiTank,		iRPG,			iArcher,		iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	i
 iAtlatlist,		iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iGuerilla,		iHorseArcher,	iHussar,		
 iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iLightTank,		iGunship,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,
 iCavalry,		iRural,			iTank,			iMainBattleTank,iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iHowitzer,		
-iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iGalleon,		iWestIndianman,	
-iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iStealthDestroyer,
-iPrivateer,		iTorpedoBoat,	iSubmarine,		iNuclearSubmarine,iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iBattleship,	iMissileCruiser,
-iBiplane,		iFighter,		iJetFighter,	iDrone,			iBomber,		iStealthBomber,	iNuclearBomber,	iGuidedMissile,	iICBM,			iSatellite,		
-iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
-iFeGreatArtist, iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iSlave,		iNativeSlave) = range(iNumUnits)
+iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iIndiaman,
+iFluyt,			iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		
+iStealthDestroyer, iPrivateer,	iTorpedoBoat,	iSubmarine,		iNuclearSubmarine,iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iBattleship,
+iMissileCruiser, iBiplane,		iFighter,		iJetFighter,	iDrone,			iBomber,		iStealthBomber,	iNuclearBomber,	iGuidedMissile,	iICBM,			
+iSatellite,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,
+iFeGreatProphet,iFeGreatArtist, iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iSlave,		iNativeSlave) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 

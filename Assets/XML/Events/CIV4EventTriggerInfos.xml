@@ -11364,7 +11364,7 @@
 			<iUnhealthy>0</iUnhealthy>
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_CARAVEL</UnitClass>
-				<UnitClass>UNITCLASS_GALLEON</UnitClass>
+				<UnitClass>UNITCLASS_INDIAMAN</UnitClass>
 				<UnitClass>UNITCLASS_PRIVATEER</UnitClass>
 				<UnitClass>UNITCLASS_FRIGATE</UnitClass>
 				<UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
