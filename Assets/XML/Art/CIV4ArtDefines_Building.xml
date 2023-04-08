@@ -1948,7 +1948,7 @@
 			<Button>Art/Structures/Buildings/Druidic_Nemeton/druidic_nemeton.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_KACHIN_PITHOUSE</Type>
+			<Type>ART_DEF_BUILDING_KACHINA_PITHOUSE</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>1</bAnimated>
 			<fScale>0.15</fScale>

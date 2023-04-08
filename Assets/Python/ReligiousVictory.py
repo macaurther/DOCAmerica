@@ -97,7 +97,7 @@ dAdditionalPaganGoal = {
 	iDruidism: FeatureCount(sum(iForest, iBog), 20),
 	iGaiwiio: FeatureCount(iForest, 20),
 	iInti: GoldPercent(50),
-	iKachin: FeatureCount(sum(iForest, iBog), 20),
+	iKachina: FeatureCount(sum(iForest, iBog), 20),
 	iMidewiwin: All(
 		ResourceCount(iCorn, 4),
 		ImprovementCount(iFarm, 20),

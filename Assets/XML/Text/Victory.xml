@@ -49,6 +49,14 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_CONTROL_DIRECTLY_OR_THROUGH_VASSALS</Tag>
+		<English>control %s1 directly or through vassals</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DESC_HAVE</Tag>
 		<English>have %s1</English>
 		<French></French>
@@ -411,6 +419,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DESC_MAKE_SURE_CONTROLLED</Tag>
 		<English>make sure that %s1 is controlled by %s2 civilizations</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_MAKE_SURE_IN_THE_WORLD</Tag>
+		<English>make sure there are %s1 in the world</English>
 		<French></French>
 		<German></German>
 		<Italian></Italian>

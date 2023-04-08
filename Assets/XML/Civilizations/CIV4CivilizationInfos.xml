@@ -1480,8 +1480,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INUIT</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<!--<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>-->
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
+			<PaganReligion>PAGAN_RELIGION_ANGAKKUQ</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>INU</Identifier>
 			<Region>ARC</Region>
@@ -1588,8 +1587,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_IROQUOIS</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<!--<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>-->
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
+			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRO</Identifier>
 			<Region>WOO</Region>
@@ -1948,8 +1946,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MISSISSIPPI</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<!--<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>-->
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
+			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
 			<Region>WOO</Region>
@@ -2669,8 +2666,7 @@
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PUEBLOAN</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<!--<PaganReligion>PAGAN_RELIGION_KACHIN</PaganReligion>-->
-			<PaganReligion>PAGAN_RELIGION_INTI</PaganReligion>
+			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
 			<Region>SOU</Region>
@@ -2708,7 +2704,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_KACHIN_PITHOUSE</BuildingType>
+					<BuildingType>BUILDING_KACHINA_PITHOUSE</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>

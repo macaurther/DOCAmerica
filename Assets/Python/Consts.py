@@ -431,7 +431,7 @@ tPersecutionPreference = (
 # pagan religions
 iNumPaganReligions = 12
 #				2				3				4				5				6				7				8				9				10
-(iAngakkuq, 	iAsatru, 		iAtua, 			iDruidism, 		iGaiwiio,		iInti, 			iKachin,		iMidewiwin, 	iRodnovery, 	iTeotlMaya, 
+(iAngakkuq, 	iAsatru, 		iAtua, 			iDruidism, 		iGaiwiio,		iInti, 			iKachina,		iMidewiwin, 	iRodnovery, 	iTeotlMaya, 
 iTeotlAztec, 	iYoruba) = range(iNumPaganReligions)
 
 iPaganVictory = iNumReligions

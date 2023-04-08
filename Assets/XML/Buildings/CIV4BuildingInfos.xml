@@ -11507,12 +11507,12 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClass>
-			<Type>BUILDING_KACHIN_PITHOUSE</Type>
-			<Description>TXT_KEY_BUILDING_KACHIN_PITHOUSE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_KACHIN_PITHOUSE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_KACHIN_PITHOUSE_STRATEGY</Strategy>
+			<Type>BUILDING_KACHINA_PITHOUSE</Type>
+			<Description>TXT_KEY_BUILDING_KACHINA_PITHOUSE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_KACHINA_PITHOUSE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_KACHINA_PITHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_KACHIN_PITHOUSE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_KACHINA_PITHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
