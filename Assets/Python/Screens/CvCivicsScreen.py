@@ -141,7 +141,7 @@ class CvCivicsScreen:
 			sName = "CivicTextPanel" + str(iCategory)
 			screen.addPanel(sName, "", "", True, True, iX + self.BUTTON_LARGE + (iSpacing * 2), iY + self.MARGIN, self.W_CIVIC_TEXT, self.H_CIVIC_TEXT, PanelStyles.PANEL_STYLE_IN)
 
-			self.updateCivicOptions(iCategory)
+			self.updateCivicOptions(iCategory, True)
 			self.showCivic(iCategory)
 
 
@@ -228,7 +228,7 @@ class CvCivicsScreen:
 
 
 
-	def updateCivicOptions(self, iCategory):
+	def updateCivicOptions(self, iCategory, bUpdateValidCivicList=False):
 		''
 		player = gc.getPlayer(self.iActivePlayer)
 		screen = self.getScreen()
@@ -242,7 +242,8 @@ class CvCivicsScreen:
 				if isDefaultCivic(iCivic): continue
 				if not player.isCivicValid(iCivic): continue;
 
-				self.ValidCivics.append(iCivic)
+				if bUpdateValidCivicList:
+					self.ValidCivics.append(iCivic)
 			
 				sName = "CivicButton" + str(iCivic)
 				sButton = gc.getCivicInfo(iCivic).getButton()
