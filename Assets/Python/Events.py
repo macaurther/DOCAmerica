@@ -119,8 +119,10 @@ def nativeCityConquered(iPlayer, pCity):
 		
 		# If the conquerer has the Captives or Encomienda Civic, give Native Slave based on the population
 		if player(iPlayer).hasCivic(iEncomienda) or player(iPlayer).hasCivic(iCaptives):
-			makeUnits(iPlayer, iNativeSlave, pCity, int(pCity.getPopulation() / 3), UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=pCity)
+			iNumSlaves = int(pCity.getPopulation() / 3)
+			if iNumSlaves > 0:
+				makeUnits(iPlayer, iNativeSlave, pCity, iNumSlaves, UnitAITypes.UNITAI_WORKER)
+				message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=pCity)
 
 
 @handler("cityAcquiredAndKept")
