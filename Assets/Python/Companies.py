@@ -6,7 +6,7 @@ from Events import handler
 
 
 dCompanyTechs = {
-	iSilkRoute        : [iCurrency],
+	iFurTrade         : [iExploration],
 	iTradingCompany   : [iExploration],
 	iCerealIndustry   : [iEconomics, iBiology],
 	iFishingIndustry  : [iEconomics, iRefrigeration],
@@ -20,7 +20,7 @@ dCompanyTechs = {
 tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10, 12) # kind of arbitrary currently, see how this plays out
 
 dCompanyExpiry = defaultdict({
-	iSilkRoute : 1500,
+	iFurTrade : 1900,
 	iTradingCompany : 1800,
 	iTextileIndustry : 1920,
 }, 2020)
@@ -98,11 +98,7 @@ def getCityValue(city, iCompany):
 
 	# Trade Company Civic increases likeliness for trading company
 	if iCompany == iTradingCompany and has_civic(owner, iTradeCompany):
-		iValue += 2
-		
-	# Merchant Trade increases likeliness for silk route
-	if iCompany == iSilkRoute and has_civic(owner, iMerchantTrade):
-		iValue += 2
+		iValue += 4
 
 	# Free Enterprise increases likeliness for all companies
 	if has_civic(owner, iFreeEnterprise):
@@ -125,20 +121,10 @@ def getCityValue(city, iCompany):
 	if iCompany in [iTradingCompany, iFishingIndustry]:
 		if not city.isCoastal(20):
 			return -1
-
-	# penalty for silk route if coastal (mitigatable by harbor)
-	if iCompany == iSilkRoute:
-		if city.isCoastal(20):
-			iValue -= 1
 	
-	# religions
-	if iCompany == iSilkRoute:
-		if owner.getStateReligion() in [iProtestantism, iCatholicism, iOrthodoxy]:
-			iValue -= 1
-	
-	# various bonuses
-	if iCompany == iSilkRoute:	# MacAurther TODO: Remove Silk Road Company
-		pass
+	# various bonuses	
+	if iCompany == iFurTrade:
+		if city.hasBuilding(unique_building(iOwner, iTradingPost)): iValue += 3
 
 	elif iCompany == iTradingCompany:
 		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
@@ -212,13 +198,8 @@ def getCityValue(city, iCompany):
 				bFound = True
 				if iCompany in [iFishingIndustry, iCerealIndustry, iTextileIndustry]:
 					iTempValue += city.getNumBonuses(iBonus)
-				elif iCompany == iOilIndustry:
+				elif iCompany in [iFurTrade, iOilIndustry]:
 					iTempValue += city.getNumBonuses(iBonus) * 4
-				elif iCompany == iSilkRoute:
-					if iBonus == iSilk:
-						iTempValue += city.getNumBonuses(iBonus) * 4
-					else:
-						iTempValue += city.getNumBonuses(iBonus) * 2
 				else:
 					iTempValue += city.getNumBonuses(iBonus) * 2
 	

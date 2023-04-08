@@ -10556,7 +10556,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=98
-	BonusType=BONUS_AMBER
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -11015,7 +11014,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=78
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -11559,7 +11557,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=72
-	BonusType=BONUS_DYE_COCHINEAL
+	BonusType=BONUS_DYE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -12156,7 +12154,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=75
-	BonusType=BONUS_DYE_COCHINEAL
+	BonusType=BONUS_DYE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -12680,7 +12678,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=67
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -14407,7 +14404,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=63
-	BonusType=BONUS_DYE_COCHINEAL
+	BonusType=BONUS_DYE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -15032,7 +15029,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=68
-	BonusType=BONUS_DYE_COCHINEAL
+	BonusType=BONUS_DYE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -19746,7 +19743,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=61
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=0,
@@ -23425,7 +23421,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=95
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -25140,7 +25135,6 @@ BeginPlot
 	x=43,y=93
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -26234,7 +26228,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -26584,7 +26577,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=36
-	BonusType=BONUS_DYE_COCHINEAL
+	BonusType=BONUS_DYE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -28990,7 +28983,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=32
-	BonusType=BONUS_DYE_COCHINEAL
+	BonusType=BONUS_DYE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -29221,7 +29214,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=72
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -31369,7 +31361,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=13
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -37967,7 +37958,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=102
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -42145,7 +42135,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=28
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -43332,7 +43321,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=74,y=41
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -43840,7 +43828,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=75,y=34
-	BonusType=BONUS_AMBER
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot

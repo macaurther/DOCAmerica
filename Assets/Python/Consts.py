@@ -439,7 +439,7 @@ iSecularVictory = iNumReligions + 1
 
 # corporations
 iNumCorporations = 9
-(iSilkRoute, iTradingCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry, iComputerIndustry) = range(iNumCorporations)
+(iFurTrade, iTradingCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry, iComputerIndustry) = range(iNumCorporations)
 
 # initialise tech variables to unit indices from XML
 
@@ -513,14 +513,14 @@ iNumUnitRoles = 19
 iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea) = range(iNumUnitRoles)
 
 # initialise bonuses variables to bonuses IDs from WBS
-iNumBonuses = 58
+iNumBonuses = 51
 #				2				3				4				5				6				7				8				9				10
-(iAluminium, 	iAmber,			iCamel, 		iCitrus,		iCoal, 			iCopper, 		iDates,			iHorse, 		iIron, 			iMarble, 
-iOil, 			iStone, 		iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 
-iFish, 			iPig, 			iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,
-iDye, 			iCochineal,		iFur,			iGems, 			iGold, 			iIncense, 		iIvory, 		iJade,			iMillet,		iObsidian,
-iOlives,		iOpium,			iPearls, 		iRareEarths,	iRubber,		iSalt,			iSilk, 			iSilver, 		iSpices,		iSugar,
-iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
+(iAluminium, 	iCitrus,		iCoal, 			iCopper, 		iDates,			iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
+iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 			iFish, 			iPig, 			
+iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			
+iGems, 			iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			
+iSilver, 		iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		
+iMovies) = range(iNumBonuses)
 
 # Buildings
 iNumBuildings = 235

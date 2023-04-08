@@ -2000,62 +2000,6 @@
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Scale>0.6</Scale>
 		</ArtRef>
-		<!-- OLIVES crops -->
-		<ArtRef Name="art:olives_crop">
-			<!-- when worked by plantation -->
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Olives/Olives.nif::2x2_01_Olives_Worked</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION,IMPROVEMENT_SLAVE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">bCutTrees:1</Attribute>
-			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Scalar">szBatchGroup:olives_crop</Attribute>
-			<Scale>0.8</Scale>
-			<Rotate>+45</Rotate>
-		</ArtRef>
-		<ArtRef Name="art:Olives_crop">
-			<!-- when improved but not worked by plantation -->
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Olives/Olives.nif::2x2_01_Olives_NotWorked</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION,IMPROVEMENT_SLAVE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">bApplyRotation:0</Attribute>
-			<Attribute Class="Scalar">bCutTrees:1</Attribute>
-			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Scalar">szBatchGroup:olives_crop</Attribute>
-			<Scale>0.6</Scale>
-			<Rotate>+45</Rotate>
-		</ArtRef>
-		<ArtRef Name="art:Olives_crop">
-			<!-- when in the rough ... there's anotehr in 3x2 for farms -->
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Olives/Olives.nif::2x2_01_Olives_Normal</Attribute>
-			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_LAND_WORKED,IMPROVEMENT_FARM</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">bCutTrees:1</Attribute>
-			<Attribute Class="Scalar">bBonusImprovedOnly:0</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Scalar">szBatchGroup:olives_crop</Attribute>
-			<Scale>0.8</Scale>
-			<Rotate>+45</Rotate>
-		</ArtRef>
-		<!-- Olives improvement crap -->
-		<ArtRef Name="art:OLIVES_PLANTATION_PRESS">
-			<!-- worked Press -->
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Olives/Olive_press.nif</Attribute>
-			<Attribute Class="Scalar">KFM:Art/Terrain/Resources/Olives/Olive_press.kfm</Attribute>
-			<Attribute Class="Scalar">iPlayAnimationID:0</Attribute>
-			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">bCutTrees:1</Attribute>
-			<Attribute Class="Scalar">szForceContourGeometry:Shadow</Attribute>
-		</ArtRef>
-		<ArtRef Name="art:OLIVES_PLANTATION_PRESS">
-			<!-- unworked Press -->
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Olives/Olives.nif::2x2_01_Press_NotWorked</Attribute>
-			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">bCutTrees:1</Attribute>
-		</ArtRef>
 		<!-- COTTON crops -->
 		<ArtRef Name="art:cotton_crop">
 			<!-- when worked by plantation -->
@@ -2695,92 +2639,6 @@
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Scale>0.9</Scale>
-		</ArtRef>
-		<!-- Olives -->
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<!-- worked ancient olives plantation -->
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION,IMPROVEMENT_SLAVE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">iCropArea:16</Attribute>
-			<Attribute Class="Scalar">szExtra:art:OLIVES_PLANTATION_PRESS</Attribute>
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation_Plain/Plantation.nif</Attribute>
-			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/Plantation_Plain/Plantation.kfm</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<!-- worked ancient olives plantation -->
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION,IMPROVEMENT_SLAVE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">iCropArea:16</Attribute>
-			<Attribute Class="Scalar">szExtra:art:OLIVES_PLANTATION_PRESS</Attribute>
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN,ERA_ATOMIC</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation_Plain/Plantation_Modern.nif</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<!-- unworked ancient olives plantation -->
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION,IMPROVEMENT_SLAVE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">iCropArea:8</Attribute>
-			<Attribute Class="Scalar">szExtra:art:OLIVES_PLANTATION_PRESS</Attribute>
-			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation_Plain/Plantation.nif</Attribute>
-			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/Plantation_Plain/Plantation.kfm</Attribute>
-			<Scale>0.9</Scale>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<!-- unworked modern olives plantation -->
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION,IMPROVEMENT_SLAVE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">iCropArea:8</Attribute>
-			<Attribute Class="Scalar">szExtra:art:OLIVES_PLANTATION_PRESS</Attribute>
-			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN,ERA_ATOMIC</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation_Plain/Plantation_Modern.nif</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.9</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:BONUS_OLIVES">
-			<!-- unworked olives -->
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM</Attribute>
-			<Attribute Class="Scalar">bGoalOnly:1</Attribute>
-			<Attribute Class="Scalar">bPlace:0</Attribute>
-			<Attribute Class="Scalar">iCropArea:12</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="art:Olives_crop">
-			<!-- when in the rough -->
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Olives/Olives.nif::2x2_01_Olives_Normal</Attribute>
-			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_LAND_WORKED,IMPROVEMENT_FARM</Attribute>
-			<Attribute Class="Bonus">BONUS_OLIVES</Attribute>
-			<Attribute Class="Scalar">bCutTrees:1</Attribute>
-			<Attribute Class="Scalar">bBonusImprovedOnly:0</Attribute>
-			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
-			<Attribute Class="Scalar">szBatchGroup:olives_crop</Attribute>
-			<Scale>0.8</Scale>
-			<Rotate>+45</Rotate>
 		</ArtRef>
 		<!-- Cotton -->
 		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
@@ -3768,29 +3626,19 @@
 		<!-- Pasture -->
 		<ArtRef Name="goal:IMPROVEMENT_PASTURE">
 			<Attribute Class="Improvement">IMPROVEMENT_PASTURE</Attribute>
-			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_CAMEL</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL</Attribute>
 			<Attribute Class="Era">ERA_PRE_COLUMBIAN,ERA_EXPLORATION</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 		</ArtRef>
 		<ArtRef Name="goal:IMPROVEMENT_PASTURE">
 			<Attribute Class="Improvement">IMPROVEMENT_PASTURE</Attribute>
-			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_CAMEL</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL</Attribute>
 			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN,ERA_ATOMIC</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Pasture/mod_pasture.nif</Attribute>
 			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/Pasture/mod_pasture.kfm</Attribute>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PASTURE">
-			<Attribute Class="Improvement">IMPROVEMENT_PASTURE</Attribute>
-			<Attribute Class="Bonus">BONUS_CAMEL</Attribute>
-			<Attribute Class="Era">ERA_ALL</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Camp/Camp.nif</Attribute>
-			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/Camp/Camp.kfm</Attribute>
-			<Scale>0.9</Scale> 
 		</ArtRef>
 		
 		<!-- Quarry -->

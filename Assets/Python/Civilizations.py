@@ -247,13 +247,13 @@ lCivilizations = [
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespotism, iSlavery, iMerchantTrade, iCasteSystem, iTributaries],
-		techs=techs.column(2).including(iCalendar).without(iNavigation)
+		techs=techs.column(3).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
 		iIroquois,
 		iGold=600,
 		lCivics=[iConfederacy, iCouncil],
-		techs=techs.column(2).including(iCalendar).without(iNavigation)
+		techs=techs.column(2)
 	),
 	Civilization(
 		iSpain,
