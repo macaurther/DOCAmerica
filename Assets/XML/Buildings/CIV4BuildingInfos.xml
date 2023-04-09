@@ -1393,7 +1393,7 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<ConstructSound>AS2D_BUILD_LIGHTHOUSE</ConstructSound>
+			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_FUR</BonusType>
@@ -1449,7 +1449,7 @@
 					</YieldChanges>
 				</BonusYieldChange>
 			</BonusYieldChanges>
-			<ConstructSound>AS2D_BUILD_LIGHTHOUSE</ConstructSound>
+			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_FUR</BonusType>
@@ -1488,7 +1488,13 @@
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>
-			<ConstructSound>AS2D_BUILD_LIGHTHOUSE</ConstructSound>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_CASTLE</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_FUR</BonusType>

@@ -272,7 +272,7 @@ lCivilizations = [
 	Civilization(
 		iEngland,
 		iGold=200,
-		iStateReligion=iCatholicism,
+		iStateReligion=iProtestantism,
 		lCivics=[iExpeditionaries, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
 		lEnemies=[],
 		techs=techs.column(7).including(iShipbuilding, iCharter).without(*lNativeTechs)
@@ -288,7 +288,7 @@ lCivilizations = [
 		iNetherlands,
 		iGold=600,
 		iStateReligion=iProtestantism,
-		lCivics=[iExpeditionaries, iMaritimeLaw, iSerfdom, iMercantilism, iDivineRight],
+		lCivics=[iExpeditionaries, iTradeCompany, iSerfdom, iMerchantTrade, iDivineRight],
 		techs=techs.column(7).including(iEconomics, iShipbuilding).without(*lNativeTechs)
 	),
 	Civilization(

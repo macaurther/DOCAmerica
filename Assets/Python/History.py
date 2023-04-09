@@ -123,9 +123,6 @@ def conquistadors(iTeamX, iHasMetTeamY):
 					elif iNewWorldCiv == iChimu:
 						tContactZoneTL = (40, 31)
 						tContactZoneBR = (49, 45)
-					elif iNewWorldCiv == iMuisca:
-						tContactZoneTL = (42, 43)
-						tContactZoneBR = (53, 54)
 					elif iNewWorldCiv == iAztecs:
 						tContactZoneTL = (25, 55)
 						tContactZoneBR = (33, 66)
