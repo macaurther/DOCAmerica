@@ -11,35 +11,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_IROQUOIS_PEOPLES</Tag>
-		<English>Iroquois Peoples</English>
-		<French>Iroquois Peoples</French>
-		<German>Iroquois Peoples</German>
-		<Italian>Iroquois Peoples</Italian>
-		<Spanish>Iroquois Peoples</Spanish>
+		<English>Onondaga Peoples</English>
+		<French>Onondaga Peoples</French>
+		<German>Onondaga Peoples</German>
+		<Italian>Onondaga Peoples</Italian>
+		<Spanish>Onondaga Peoples</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_IROQUOIS_DEFAULT</Tag>
-		<English>Kingdom of %s1</English>
-		<French>
-			<Text>Royaume d'%s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>K&#246;nigreich %s1:K&#246;nigreich %s1:K&#246;nigreich %s1</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Regno del %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Reino de %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<English>%s1 Confederacy</English>
+		<French>%s1 Confederacy</French>
+		<German>%s1 Confederacy</German>
+		<Italian>%s1 Confederacy</Italian>
+		<Spanish>%s1 Confederacy</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_IROQUOIS_COMMUNIST</Tag>

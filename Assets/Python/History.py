@@ -123,9 +123,6 @@ def conquistadors(iTeamX, iHasMetTeamY):
 					elif iNewWorldCiv == iChimu:
 						tContactZoneTL = (40, 31)
 						tContactZoneBR = (49, 45)
-					elif iNewWorldCiv == iMuisca:
-						tContactZoneTL = (42, 43)
-						tContactZoneBR = (53, 54)
 					elif iNewWorldCiv == iAztecs:
 						tContactZoneTL = (25, 55)
 						tContactZoneBR = (33, 66)
@@ -173,7 +170,7 @@ def conquistadors(iTeamX, iHasMetTeamY):
 						team(iOldWorldPlayer).declareWar(iNewWorldPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
 						
 						dConquerorUnits = {
-							iShock: 1 + iModifier2,
+							iBase: 1 + iModifier2,
 							iCounter: 2,
 							iSiegeCity: 1 + iModifier1 + iModifier2,
 							iShockCav: 2 + iModifier1,
@@ -181,12 +178,6 @@ def conquistadors(iTeamX, iHasMetTeamY):
 						units = createRoleUnits(iOldWorldPlayer, arrivalPlot, dConquerorUnits.items())
 						units.promotion(infos.type("PROMOTION_MERCENARY"))
 						
-						iStateReligion = player(iOldWorldPlayer).getStateReligion()
-						iMissionary = missionary(iStateReligion)
-						
-						if iMissionary:
-							makeUnit(iOldWorldPlayer, iMissionary, arrivalPlot)
-							
 						if iNewWorldCiv == iInca:
 							makeUnits(iOldWorldPlayer, iAucac, arrivalPlot, 3, UnitAITypes.UNITAI_ATTACK_CITY)
 						elif iNewWorldCiv == iAztecs:
@@ -406,12 +397,12 @@ def giveColonists(iPlayer):
 						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 						if iCiv == iPortugal:
 							makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-				elif iExpeditionType == iCaravelConquer:	# Caravel, Shock, CitySiege (Portugal: Carrack, Shock, Shock, CitySiege)
+				elif iExpeditionType == iCaravelConquer:	# Caravel, Base, CitySiege (Portugal: Carrack, Base, Base, CitySiege)
 					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
 					if iCiv == iPortugal:
-						createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
+						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
 				elif iExpeditionType == iIndiamanSettle:	# Indiaman, Settler, Militia, Work (Netherlands/Spain: Fluyt/Galleon, Settler, Militia, Work, Settler)
 					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
 					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
@@ -427,13 +418,13 @@ def giveColonists(iPlayer):
 						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
 					if iCiv in [iNetherlands, iSpain]:
 						createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
-				elif iExpeditionType == iIndiamanConquer:	# Indiaman, Shock, ShockCav, CitySiege (Netherlands/Spain: Fluyt/Galleon, Shock, ShockCav, CitySiege, Shock)
+				elif iExpeditionType == iIndiamanConquer:	# Indiaman, Base, ShockCav, CitySiege (Netherlands/Spain: Fluyt/Galleon, Base, ShockCav, CitySiege, Base)
 					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
+					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iShockCav, 1)
 					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
 					if iCiv in [iNetherlands, iSpain]:
-						createRoleUnit(iPlayer, tUnitPlot, iShock, 1)
+						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
 
