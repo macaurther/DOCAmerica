@@ -449,18 +449,17 @@
 			<Civilopedia>TXT_KEY_CIVIC_CONFEDERACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONFEDERACY_STRATEGY</Strategy>
 			<TechPrereq>TECH_STATECRAFT</TechPrereq>
+			<Help>TXT_KEY_CIVIC_CONFEDERACY_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/Confederacy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iGoldPerUnit>2</iGoldPerUnit>
-			<iBaseFreeMilitaryUnits>0</iBaseFreeMilitaryUnits>
+			<Upkeep>NONE</Upkeep>
 			<iWarWearinessModifier>100</iWarWearinessModifier>
-			<SpecialistExtraCommerces>
-				<iCommerce>0</iCommerce>
-				<iCommerce>1</iCommerce>
-			</SpecialistExtraCommerces>
-			<iNumCitiesMaintenanceModifier>25</iNumCitiesMaintenanceModifier>
+			<CommerceModifiers>
+				<iCommerce>-20</iCommerce>
+			</CommerceModifiers>
+			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
+			<iFreeUnitsPopulationPercent>29</iFreeUnitsPopulationPercent>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>

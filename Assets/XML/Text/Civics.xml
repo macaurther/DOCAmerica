@@ -491,6 +491,14 @@
 [ICON_BULLET]No Immigration</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
+		<English>[ICON_BULLET]No instability for cities outside core</English>
+		<French>[ICON_BULLET]No instability for cities outside core</French>
+		<German>[ICON_BULLET]No instability for cities outside core</German>
+		<Italian>[ICON_BULLET]No instability for cities outside core</Italian>
+		<Spanish>[ICON_BULLET]No instability for cities outside core</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIONHOOD</Tag>
 		<English>Nationhood</English>
 		<French>

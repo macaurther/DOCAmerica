@@ -578,6 +578,8 @@ def calculateStability(iPlayer):
 	iSeparatismExcess = 100 * iSeparatism / iAdministration - 100
 	
 	if iSeparatismExcess > 200: iSeparatismExcess = 200
+	if iConfederacy in civics:
+		iSeparatismExcess = 0
 		
 	if iSeparatismExcess > 0:
 		iCorePeripheryStability -= int(25 * sigmoid(1.0 * iSeparatismExcess / 100))
