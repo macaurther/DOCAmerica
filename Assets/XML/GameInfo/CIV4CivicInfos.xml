@@ -453,13 +453,16 @@
 			<Button>,Art/Interface/Buttons/Civics/Confederacy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<Upkeep>NONE</Upkeep>
-			<iWarWearinessModifier>100</iWarWearinessModifier>
-			<CommerceModifiers>
-				<iCommerce>-20</iCommerce>
-			</CommerceModifiers>
+			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
-			<iFreeUnitsPopulationPercent>29</iFreeUnitsPopulationPercent>
+			<iCoreFreeSpecialist>1</iCoreFreeSpecialist>
+			<MinimalSpecialists>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+			</MinimalSpecialists>
+			<iGoldPerMilitaryUnit>1</iGoldPerMilitaryUnit>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -556,14 +559,11 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iCoreFreeSpecialist>1</iCoreFreeSpecialist>
 			<iCapitalTradeModifier>100</iCapitalTradeModifier>
-			<MinimalSpecialists>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-			</MinimalSpecialists>
+			<CommerceModifiers>
+				<iCommerce>-33</iCommerce>
+			</CommerceModifiers>
+			<iFreeUnitsPopulationPercent>29</iFreeUnitsPopulationPercent>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CONSUL</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
