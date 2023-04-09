@@ -487,7 +487,7 @@ iAntiTank,		iRPG,			iArcher,		iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	i
 iAtlatlist,		iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iGuerilla,		iHorseArcher,	iHussar,		
 iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iLightTank,		iGunship,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,
 iCavalry,		iRural,			iTank,			iMainBattleTank,iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iHowitzer,		
-iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iIndiaman,
+iAAGun,			iMobileSAM,		iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,
 iFluyt,			iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		
 iStealthDestroyer, iPrivateer,	iTorpedoBoat,	iSubmarine,		iNuclearSubmarine,iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iBattleship,
 iMissileCruiser, iBiplane,		iFighter,		iJetFighter,	iDrone,			iBomber,		iStealthBomber,	iNuclearBomber,	iGuidedMissile,	iICBM,			
