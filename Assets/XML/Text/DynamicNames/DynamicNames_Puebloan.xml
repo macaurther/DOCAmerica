@@ -2,7 +2,7 @@
 <!-- Puebloan -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_DESC</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLOANS_DESC</Tag>
 		<English>The Puebloans</English>
 		<French>The Puebloans</French>
 		<German>The Puebloans</German>
@@ -10,7 +10,7 @@
 		<Spanish>The Puebloans</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_PEOPLES</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLOANS_PEOPLES</Tag>
 		<English>Hohokam Peoples</English>
 		<French>Hohokam Peoples</French>
 		<German>Hohokam Peoples</German>
@@ -18,7 +18,7 @@
 		<Spanish>Hohokam Peoples</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_DEFAULT</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLOANS_DEFAULT</Tag>
 		<English>Kingdom of %s1</English>
 		<French>
 			<Text>Royaume d'%s1</Text>
@@ -42,7 +42,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_COMMUNIST</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLOANS_COMMUNIST</Tag>
 		<English>Republic of %s1</English>
 		<French>
 			<Text>R&#233;publique d'%s1</Text>
@@ -66,7 +66,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_FASCIST</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLOANS_FASCIST</Tag>
 		<English>%s2 State</English>
 		<French>
 			<Text>&#201;tat %s2</Text>
@@ -90,7 +90,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_ADJECTIVE</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLOANS_ADJECTIVE</Tag>
 		<English>Puebloan</English>
 		<French>Puebloan</French>
 		<German>Puebloan</German>
@@ -98,7 +98,7 @@
 		<Spanish>Puebloan</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_PUEBLOAN_SHORT_DESC</Tag>
+		<Tag>TXT_KEY_CIV_PUEBLOANS_SHORT_DESC</Tag>
 		<English>Puebloans</English>
 		<French>Puebloans</French>
 		<German>Puebloans</German>

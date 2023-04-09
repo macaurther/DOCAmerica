@@ -82,7 +82,7 @@ def capitalMovedOnPalaceBuilt(city, iBuilding):
 		events.fireEvent("capitalMoved", city)
 	
 	if iBuilding == iMission:
-		makeUnits(city.getOwner(), iCatholicMiss, city.plot(), 2, UnitAITypes.UNITAI_MISSIONARY).adjective("")
+		makeUnits(city.getOwner(), iCatholicMiss, city.plot(), 1, UnitAITypes.UNITAI_MISSIONARY).adjective("")
 
 
 @handler("firstCity")
@@ -119,10 +119,9 @@ def nativeCityConquered(iPlayer, pCity):
 		
 		# If the conquerer has the Captives or Encomienda Civic, give Native Slave based on the population
 		if player(iPlayer).hasCivic(iEncomienda) or player(iPlayer).hasCivic(iCaptives):
-			iNumSlaves = int(pCity.getPopulation() / 3)
-			if iNumSlaves > 0:
-				makeUnits(iPlayer, iNativeSlave, pCity, iNumSlaves, UnitAITypes.UNITAI_WORKER)
-				message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=pCity)
+			iNumSlaves = max(1, int(pCity.getPopulation() / 3))
+			makeUnits(iPlayer, iNativeSlave, pCity, iNumSlaves, UnitAITypes.UNITAI_WORKER)
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=pCity)
 
 
 @handler("cityAcquiredAndKept")

@@ -1192,7 +1192,7 @@
 			<Description>TXT_KEY_BONUS_DYE</Description>
 			<Civilopedia>TXT_KEY_BONUS_DYE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_DYE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BONUS_COCHINEAL</ArtDefineTag>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

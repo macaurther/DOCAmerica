@@ -380,7 +380,7 @@ iRussia : [(15, 96)],
 
 # Only need to specify colonists past the first given, since the first is given on initial spawn
 dColonistSpawnDates = CivDict({
-iSpain : [1525, 1575],
+iSpain : [1525, 1600],
 iPortugal : [1550],
 iEngland : [1620, 1650],
 iFrance : [1650, 1718],
@@ -392,7 +392,7 @@ iNumExpeditionTypes = 8
 
 dColonistExpeditions = CivDict({
 iNorse : [[iCanoeSettle]],
-iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelConquer], [iIndiamanSettle, iIndiamanConquer]],
+iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelSupport], [iIndiamanSettle, iIndiamanSupport]],
 iPortugal : [[iCaravelSettle, iCaravelSupport], [iCaravelSettle, iCaravelSupport]],
 iEngland : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle]],
 iFrance : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle]],
@@ -513,14 +513,13 @@ iNumUnitRoles = 19
 iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea) = range(iNumUnitRoles)
 
 # initialise bonuses variables to bonuses IDs from WBS
-iNumBonuses = 51
+iNumBonuses = 50
 #				2				3				4				5				6				7				8				9				10
-(iAluminium, 	iCitrus,		iCoal, 			iCopper, 		iDates,			iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
-iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 			iFish, 			iPig, 			
-iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			
-iGems, 			iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			
-iSilver, 		iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		
-iMovies) = range(iNumBonuses)
+(iAluminium, 	iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		iUranium, 		
+iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 			iFish, 			iPig, 			iPotato,		
+iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			iGems, 			
+iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			iSilver, 		
+iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
 iNumBuildings = 235

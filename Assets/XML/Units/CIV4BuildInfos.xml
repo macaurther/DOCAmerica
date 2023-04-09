@@ -82,6 +82,13 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
 					<iTime>300</iTime>
@@ -131,6 +138,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -234,6 +248,13 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
@@ -276,6 +297,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -339,6 +367,13 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
@@ -381,6 +416,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -429,6 +471,13 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
@@ -457,6 +506,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>0</iTime>
 					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -506,6 +562,13 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
@@ -548,6 +611,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -608,6 +678,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -675,6 +752,13 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
@@ -720,6 +804,13 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
 					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
 					<iTime>400</iTime>
@@ -761,6 +852,13 @@
 					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
