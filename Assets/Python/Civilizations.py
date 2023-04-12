@@ -198,7 +198,7 @@ lCivilizations = [
 	Civilization(
 		iWari,
 		iGold=100,
-		lCivics=[iMerchantTrade],
+		lCivics=[],
 		techs=techs.column(2)
 	),
 	Civilization(
@@ -241,12 +241,14 @@ lCivilizations = [
 		iInca,
 		iGold=700,
 		lCivics=[iEmpire, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
+		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(2).including(iArtisanry, iMasonry).without(iSailing)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespotism, iSlavery, iMerchantTrade, iCasteSystem, iTributaries],
+		lEnemies=[iTeotihuacan],
 		techs=techs.column(3).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
@@ -274,7 +276,7 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iProtestantism,
 		lCivics=[iExpeditionaries, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
-		lEnemies=[],
+		lEnemies=[iSpain],
 		techs=techs.column(7).including(iShipbuilding, iCharter).without(*lNativeTechs)
 	),
 	Civilization(

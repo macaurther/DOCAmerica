@@ -956,7 +956,7 @@
 		</TechInfo>
 
 <!-- #4 -->
-<!-- Cost 2000, iAsset 16 -->
+<!-- Cost 3000, iAsset 16 -->
 
 		<TechInfo>
 			<Type>TECH_OLD_WORLD_TACTICS</Type>
@@ -964,7 +964,7 @@
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_TACTICS_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_OLD_WORLD_TACTICS_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>2000</iCost>
+			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>4</iAsset>
@@ -999,7 +999,7 @@
 			<Description>TXT_KEY_TECH_OLD_WORLD_SCIENCE</Description>
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_SCIENCE_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<iCost>2000</iCost>
+			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>4</iAsset>
@@ -1034,7 +1034,7 @@
 			<Description>TXT_KEY_TECH_OLD_WORLD_CULTURE</Description>
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_CULTURE_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<iCost>2000</iCost>
+			<iCost>3000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>4</iAsset>
