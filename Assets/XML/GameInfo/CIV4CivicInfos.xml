@@ -502,32 +502,28 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<CapitalYieldModifiers>
-				<iYield>0</iYield>
-				<iYield>25</iYield>
-				<iYield>25</iYield>
-			</CapitalYieldModifiers>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>1</iYield>
+						<iYield>0</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
+			<PopulationCapitalBonus>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</PopulationCapitalBonus>
+			<iCapitalTradeModifier>100</iCapitalTradeModifier>
 			<Hurrys>
 				<Hurry>
 					<HurryType>HURRY_GOLD_FEDERALISM</HurryType>
 					<bHurry>1</bHurry>
 				</Hurry>
 			</Hurrys>
-			<MinimalSpecialists>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-			</MinimalSpecialists>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -559,10 +555,14 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iCapitalTradeModifier>100</iCapitalTradeModifier>
 			<CommerceModifiers>
 				<iCommerce>-33</iCommerce>
 			</CommerceModifiers>
+			<CapitalYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>50</iYield>
+				<iYield>50</iYield>
+			</CapitalYieldModifiers>
 			<iFreeUnitsPopulationPercent>29</iFreeUnitsPopulationPercent>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CONSUL</WeLoveTheKing>
 		</CivicInfo>

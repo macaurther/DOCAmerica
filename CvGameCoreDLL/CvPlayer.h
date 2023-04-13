@@ -960,6 +960,14 @@ public:
 	int getUnimprovedTileYield(YieldTypes eIndex) const;
 	void changeUnimprovedTileYield(YieldTypes eIndex, int iChange);
 
+	//FoB
+	int getCapitalBonusYieldFromCivics(YieldTypes eIndex) const;
+	void changeCapitalBonusYieldFromCivics(YieldTypes eIndex, int iChange);
+	int getCapitalBonusYield(YieldTypes eIndex) const;
+	void changeCapitalBonusYield(YieldTypes eIndex, int iChange);
+	void updateCapitalPopulationBonusYields();
+	void applyCapitalBonusYield(YieldTypes yieldIndex, int iChange);
+
 	// Leoreth
 	void updateHappinessExtraYield();
 
@@ -1470,6 +1478,7 @@ protected:
 	int m_iDefensivePactTradeModifier; // Leoreth
 	int m_iVassalTradeModifier; // Leoreth
 	int m_iVassalCityCommerce; // Leoreth
+	int m_iCapitalPopulationCivicCombinedYield; // FoB
 	int m_iColonyCommerce; // Leoreth
 	int m_iCaptureGoldModifier; // Leoreth
 	int m_iSlaveryCount; // Leoreth
@@ -1580,6 +1589,8 @@ protected:
 	int* m_aiHappinessExtraYield; // Leoreth
 	int* m_aiUnhappinessExtraYield; // Leoreth
 	int* m_aiUnimprovedTileYield; // Leoreth
+	int* m_aiCapitalPopulationBonusYield; // FoB
+	int* m_aiCapitalBonusYields; // FoB
 	int* m_aiCommerceFlexibleCount;
 	int* m_aiGoldPerTurnByPlayer;
 	int* m_aiEspionageSpendingWeightAgainstTeam;

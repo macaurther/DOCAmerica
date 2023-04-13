@@ -1440,6 +1440,8 @@ public:
 	int* getYieldModifierArray() const;
 	int getCapitalYieldModifier(int i) const;				// Exposed to Python
 	int* getCapitalYieldModifierArray() const;
+	int getCapitalPopulationYieldModifier(int i) const; // FoB
+	int* getCapitalPopulationYieldModifierArray() const; // FoB
 	int getTradeYieldModifier(int i) const;				// Exposed to Python
 	int* getTradeYieldModifierArray() const;
 	int getCommerceModifier(int i) const;				// Exposed to Python
@@ -1535,6 +1537,7 @@ protected:
 	int m_iVassalTradeModifier; // Leoreth
 
 	int m_iCultureGroup; // FoB
+	int m_iMinPopForCapitalBonus; // FoB
 
 	bool m_bMilitaryFoodProduction;
 	bool m_bNoUnhealthyPopulation;
@@ -1557,6 +1560,7 @@ protected:
 
 	int* m_piYieldModifier;
 	int* m_piCapitalYieldModifier;
+	int* m_piCapitalPopExtraYield; // FoB
 	int* m_piTradeYieldModifier;
 	int* m_piCommerceModifier;
 	int* m_piCapitalCommerceModifier;

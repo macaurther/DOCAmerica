@@ -842,6 +842,10 @@
 	<ElementType name="ImprovementYieldChanges" content="eltOnly">
 		<element type="ImprovementYieldChange" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<!-- FoB start -->
+	<ElementType name="PopulationCapitalBonus" content="eltOnly">
+		<element type="iYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<!-- Leoreth start -->
 	<ElementType name="DomainType" content="textOnly"/>
 	<ElementType name="DomainProductionModifier" content="eltOnly">
@@ -969,6 +973,7 @@
 		<element type="BuildingProductionModifiers" minOccurs="0"/> <!-- Leoreth -->
 		<element type="FeatureHappinessChanges" minOccurs="0"/>
 		<element type="ImprovementYieldChanges" minOccurs="0"/>
+		<element type="PopulationCapitalBonus" minOccurs="0"/> <!-- FoB -->
 		<element type="DomainProductionModifiers" minOccurs="0"/> <!-- Leoreth -->
 		<element type="DomainExperienceModifiers" minOccurs="0"/> <!-- Leoreth -->
 		<element type="WeLoveTheKing" minOccurs="0"/>
