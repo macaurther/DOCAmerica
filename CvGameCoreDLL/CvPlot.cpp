@@ -6727,7 +6727,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 					case BONUS_PIG:
 					case BONUS_POTATO:
 					case BONUS_RICE:
-					case BONUS_MILLET:
 					case BONUS_WHEAT:
 						iYield += 2;
 						break;
@@ -6736,11 +6735,8 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 						iYield += 1;
 						break;
 					// Food & Commerce
-					case BONUS_OLIVES:
 					case BONUS_SHEEP:
 					case BONUS_CITRUS:
-					case BONUS_DATES:
-					case BONUS_CAMEL:
 					case BONUS_LLAMA:
 					case BONUS_WINE:
 					case BONUS_WHALE:
@@ -6775,7 +6771,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 					case BONUS_IVORY:
 					case BONUS_JADE:
 					case BONUS_OBSIDIAN:
-					case BONUS_RARE_EARTHS:
 					case BONUS_RUBBER:
 						iYield += 1;
 						break;
@@ -6786,17 +6781,14 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 				switch(eBonus)
 				{
 					// Commerce
-					case BONUS_AMBER:
 					case BONUS_COCOA:
 					case BONUS_COFFEE:
 					case BONUS_COTTON:
 					case BONUS_DYE:
-					case BONUS_COCHINEAL:
 					case BONUS_FUR:
 					case BONUS_GEMS:
 					case BONUS_GOLD:
 					case BONUS_INCENSE:
-					case BONUS_OPIUM:
 					case BONUS_PEARL:
 					case BONUS_SILK:
 					case BONUS_SILVER:
@@ -6805,11 +6797,8 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 						iYield += 2;
 						break;
 					// Food & Commerce
-					case BONUS_OLIVES:
 					case BONUS_SHEEP:
 					case BONUS_CITRUS:
-					case BONUS_DATES:
-					case BONUS_CAMEL:
 					case BONUS_LLAMA:
 					case BONUS_WINE:
 					case BONUS_WHALE:
@@ -6821,7 +6810,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 					case BONUS_IVORY:
 					case BONUS_JADE:
 					case BONUS_OBSIDIAN:
-					case BONUS_RARE_EARTHS:
 					case BONUS_RUBBER:
 						iYield += 1;
 						break;
