@@ -199,7 +199,7 @@ lCivilizations = [
 		iWari,
 		iGold=100,
 		lCivics=[],
-		techs=techs.column(2)
+		techs=techs.column(2).without(iSailing)
 	),
 	Civilization(
 		iMississippi,
