@@ -601,7 +601,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>

@@ -2397,30 +2397,37 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	case MAYA:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case TEOTIHUACAN:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case TIWANAKU:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case WARI:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case MISSISSIPPI:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 4;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case PUEBLOAN:
 		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case MUISCA:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case NORSE:
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
@@ -2428,6 +2435,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	case CHIMU:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
 	case INUIT:
 		aiUnitAIVal[UNITAI_SETTLE] *= 5;
@@ -2435,11 +2443,13 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	case INCA:
 		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 3;
 		break;
 	case AZTECS:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
+		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case IROQUOIS:

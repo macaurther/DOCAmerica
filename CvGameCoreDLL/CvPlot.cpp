@@ -6691,9 +6691,12 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	}
 
 	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Coast and Arctic Coast
-	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && eYield == YIELD_FOOD && (getTerrainType() == TERRAIN_COAST || getTerrainType() == TERRAIN_ARCTIC_COAST))
+	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && (getTerrainType() == TERRAIN_COAST || getTerrainType() == TERRAIN_ARCTIC_COAST))
 	{
-		iYield += 1;
+		if(eYield == YIELD_FOOD)
+		{
+			iYield += 1;
+		}
 	}
 
 	// MacAurther: Southwest RP: +1 Production and +1 Commerce on Semidesert
@@ -7182,6 +7185,15 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 				iYield += pCity->getCultureLevel() - 1;
 			}
 		}
+
+		// MacAurther: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce for Cities along Rivers
+		if (GET_PLAYER(ePlayer).getCivilizationType() == MISSISSIPPI)
+		{
+			if (eYield == YIELD_COMMERCE && isRiver())
+			{
+				iYield += 2;
+			}
+		}
 	}
 
 	iYield += GC.getGameINLINE().getPlotExtraYield(m_iX, m_iY, eYield);
@@ -7211,21 +7223,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 					}
 				}
 			}
-		}
-
-		// 1SDAN?: Mississippi UP: Power of Mshi-Ziibi - Extra Commerce along Rivers
-		if (GET_PLAYER(ePlayer).getCivilizationType() == MISSISSIPPI)
-		{
-			if (eYield == YIELD_COMMERCE && isRiver() && !isPeak() && (!isWater() || getTerrainType() == TERRAIN_WIDE_RIVER))
-			{
-				iYield += 1;
-			}
-		}
-
-		// MacAurther: Woodland RP: +1 Production on unimproved forests
-		if (getFeatureType() == FEATURE_FOREST && getImprovementType() == NO_IMPROVEMENT && eYield == YIELD_PRODUCTION && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_WOODLAND)
-		{
-			iYield += 1;
 		}
 
 		if (GET_PLAYER(ePlayer).isGoldenAge())

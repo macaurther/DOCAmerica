@@ -24,11 +24,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_AND</Tag>
-		<English>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</English>
-		<French>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</French>
-		<German>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</German>
-		<Italian>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</Italian>
-		<Spanish>Mountains produce 2 [ICON_FOOD] and 1 [ICON_PRODUCTION]</Spanish>
+		<English>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</English>
+		<French>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</French>
+		<German>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</German>
+		<Italian>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</Italian>
+		<Spanish>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ANG_TITLE</Tag>
@@ -128,19 +128,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_PAC_TITLE</Tag>
-		<English>Pacific - The Power of Kapu:</English>
-		<French>Pacific - The Power of Kapu:</French>
-		<German>Pacific - The Power of Kapu:</German>
-		<Italian>Pacific - The Power of Kapu:</Italian>
-		<Spanish>Pacific - The Power of Kapu:</Spanish>
+		<English>Pacific - The Power of Wayfinding:</English>
+		<French>Pacific - The Power of Wayfinding:</French>
+		<German>Pacific - The Power of Wayfinding:</German>
+		<Italian>Pacific - The Power of Wayfinding:</Italian>
+		<Spanish>Pacific - The Power of Wayfinding:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_PAC</Tag>
-		<English>Resources do not require Technologies to be revealed</English>
-		<French>Resources do not require Technologies to be revealed</French>
-		<German>Resources do not require Technologies to be revealed</German>
-		<Italian>Resources do not require Technologies to be revealed</Italian>
-		<Spanish>Resources do not require Technologies to be revealed</Spanish>
+		<English>No penalties for cultural expansion over water tiles</English>
+		<French>No penalties for cultural expansion over water tiles</French>
+		<German>No penalties for cultural expansion over water tiles</German>
+		<Italian>No penalties for cultural expansion over water tiles</Italian>
+		<Spanish>No penalties for cultural expansion over water tiles</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_SOU_TITLE</Tag>
@@ -160,19 +160,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_WOO_TITLE</Tag>
-		<English>Woodlands - The Power of Harmony:</English>
-		<French>Woodlands - The Power of Harmony:</French>
-		<German>Woodlands - The Power of Harmony:</German>
-		<Italian>Woodlands - The Power of Harmony:</Italian>
-		<Spanish>Woodlands - The Power of Harmony:</Spanish>
+		<English>The Power of Sacred Waters:</English>
+		<French>The Power of Sacred Waters:</French>
+		<German>The Power of Sacred Waters:</German>
+		<Italian>The Power of Sacred Waters:</Italian>
+		<Spanish>The Power of Sacred Waters:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_WOO</Tag>
-		<English>+1 [ICON_PRODUCTION] on unimproved Forests</English>
-		<French>+1 [ICON_PRODUCTION] on unimproved Forests</French>
-		<German>+1 [ICON_PRODUCTION] on unimproved Forests</German>
-		<Italian>+1 [ICON_PRODUCTION] on unimproved Forests</Italian>
-		<Spanish>+1 [ICON_PRODUCTION] on unimproved Forests</Spanish>
+		<English>No penalties for cultural expansion over water tiles</English>
+		<French>No penalties for cultural expansion over water tiles</French>
+		<German>No penalties for cultural expansion over water tiles</German>
+		<Italian>No penalties for cultural expansion over water tiles</Italian>
+		<Spanish>No penalties for cultural expansion over water tiles</Spanish>
 	</TEXT>
 	<!-- Unique Powers -->
 	<TEXT>
@@ -361,19 +361,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAW_TITLE</Tag>
-		<English>The Power of Navigation:</English>
-		<French>Le pouvoir de la navigation :</French>
-		<German>The Power of Navigation:</German>
-		<Italian>The Power of Navigation:</Italian>
-		<Spanish>The Power of Navigation:</Spanish>
+		<English>Pacific - The Power of Kapu:</English>
+		<French>Pacific - The Power of Kapu:</French>
+		<German>Pacific - The Power of Kapu:</German>
+		<Italian>Pacific - The Power of Kapu:</Italian>
+		<Spanish>Pacific - The Power of Kapu:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAW</Tag>
-		<English>No penalties for cultural expansion over Ocean tiles</English>
-		<French>Pas de p&#233;nalit&#233; pour l'expansion culturelle sur les cases d'oc&#233;an</French>
-		<German>No penalties for cultural expansion over Ocean tiles</German>
-		<Italian>No penalties for cultural expansion over Ocean tiles</Italian>
-		<Spanish>No penalties for cultural expansion over Ocean tiles</Spanish>
+		<English>Resources do not require Technologies to be revealed</English>
+		<French>Resources do not require Technologies to be revealed</French>
+		<German>Resources do not require Technologies to be revealed</German>
+		<Italian>Resources do not require Technologies to be revealed</Italian>
+		<Spanish>Resources do not require Technologies to be revealed</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL_TITLE</Tag>
@@ -481,11 +481,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MIS</Tag>
-		<English>+1 [ICON_COMMERCE] along Rivers</English>
-		<French>+1 [ICON_COMMERCE] along Rivers</French>
-		<German>+1 [ICON_COMMERCE] along Rivers</German>
-		<Italian>+1 [ICON_COMMERCE] along Rivers</Italian>
-		<Spanish>+1 [ICON_COMMERCE] along Rivers</Spanish>
+		<English>+2[ICON_COMMERCE] for Cities along Rivers</English>
+		<French>+2[ICON_COMMERCE] for Cities along Rivers</French>
+		<German>+2[ICON_COMMERCE] for Cities along Rivers</German>
+		<Italian>+2[ICON_COMMERCE] for Cities along Rivers</Italian>
+		<Spanish>+2[ICON_COMMERCE] for Cities along Rivers</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MUI_TITLE</Tag>
@@ -529,11 +529,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PER</Tag>
-		<English>Mountains produce 2 [ICON_FOOD] and 2 [ICON_COMMERCE]</English>
-		<French>Mountains produce 2 [ICON_FOOD] and 2 [ICON_COMMERCE]</French>
-		<German>Mountains produce 2 [ICON_FOOD] and 2 [ICON_COMMERCE]</German>
-		<Italian>Mountains produce 2 [ICON_FOOD] and 2 [ICON_COMMERCE]</Italian>
-		<Spanish>Mountains produce 2 [ICON_FOOD] and 2 [ICON_COMMERCE]</Spanish>
+		<English>+2 [ICON_FOOD] and +2 [ICON_COMMERCE] on Mountains</English>
+		<French>+2 [ICON_FOOD] and +2 [ICON_COMMERCE] on Mountains</French>
+		<German>+2 [ICON_FOOD] and +2 [ICON_COMMERCE] on Mountains</German>
+		<Italian>+2 [ICON_FOOD] and +2 [ICON_COMMERCE] on Mountains</Italian>
+		<Spanish>+2 [ICON_FOOD] and +2 [ICON_COMMERCE] on Mountains</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR_TITLE</Tag>
