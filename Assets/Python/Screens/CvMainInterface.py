@@ -2246,8 +2246,10 @@ class CvMainInterface:
 				iBtnW = 32
 				iBtnH = 28
 				
-				# Hurry Buttons		
-				screen.setButtonGFC( "Hurry0", "", "", iBtnX, iBtnY, iBtnW, iBtnH, WidgetTypes.WIDGET_HURRY, 0, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
+				# Hurry Buttons
+				i = 0
+				if pHeadSelectedCity.canHurry(3, False): i = 3
+				screen.setButtonGFC( "Hurry0", "", "", iBtnX, iBtnY, iBtnW, iBtnH, WidgetTypes.WIDGET_HURRY, i, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
 				screen.setStyle( "Hurry0", "Button_CityC1_Style" )
 				screen.hide( "Hurry0" )
 
@@ -2255,6 +2257,7 @@ class CvMainInterface:
 
 				i = 2
 				if pHeadSelectedCity.isProductionUnit(): i = 1
+				if pHeadSelectedCity.canHurry(4, False): i = 4
 				screen.setButtonGFC( "Hurry1", "", "", iBtnX, iBtnY, iBtnW, iBtnH, WidgetTypes.WIDGET_HURRY, i, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
 				screen.setStyle( "Hurry1", "Button_CityC2_Style" )
 				screen.hide( "Hurry1" )
@@ -2351,14 +2354,16 @@ class CvMainInterface:
 				# Slavery button
 				szButtonID = "Hurry0"
 				screen.show(szButtonID)
-				screen.enable(szButtonID, pHeadSelectedCity.canHurry(0, False))
+				bCanWhip = pHeadSelectedCity.canHurry(0, False) or pHeadSelectedCity.canHurry(3, False)
+				screen.enable(szButtonID, bCanWhip)
 				
 				# Mercenary/Public Welfare button
 				szButtonID = "Hurry1"
 				screen.show(szButtonID)
 				i = 2
 				if pHeadSelectedCity.isProductionUnit(): i = 1
-				screen.enable(szButtonID, pHeadSelectedCity.canHurry(i, False))
+				bCanBuy = pHeadSelectedCity.canHurry(i, False) or pHeadSelectedCity.canHurry(4, False)
+				screen.enable(szButtonID, bCanBuy)
 
 				# Conscript Button Show
 				screen.show( "Conscript" )
@@ -3706,9 +3711,17 @@ class CvMainInterface:
 						HURRY_WHIP = gc.getInfoTypeForString("HURRY_POPULATION")
 						HURRY_BUY_UNIT = gc.getInfoTypeForString("HURRY_GOLD_UNITS")
 						HURRY_BUY_BUILDING = gc.getInfoTypeForString("HURRY_GOLD_BUILDINGS")
-						if (CityScreenOpt.isShowWhipAssist() and pHeadSelectedCity.canHurry(HURRY_WHIP, False)):
-							iHurryPop = pHeadSelectedCity.hurryPopulation(HURRY_WHIP)
-							iOverflow = pHeadSelectedCity.hurryProduction(HURRY_WHIP) - pHeadSelectedCity.productionLeft()
+						HURRY_POLICE_STATE = gc.getInfoTypeForString("HURRY_POLICE_STATE")
+						HURRY_FEDERALISM = gc.getInfoTypeForString("HURRY_GOLD_FEDERALISM")
+						if (CityScreenOpt.isShowWhipAssist() and (pHeadSelectedCity.canHurry(HURRY_WHIP, False) or pHeadSelectedCity.canHurry(HURRY_POLICE_STATE, False))):
+							iHurryPop = 0;
+							iOverflow = 0;
+							if pHeadSelectedCity.canHurry(HURRY_POLICE_STATE, False):
+								iHurryPop = pHeadSelectedCity.hurryPopulation(HURRY_POLICE_STATE)
+								iOverflow = pHeadSelectedCity.hurryProduction(HURRY_POLICE_STATE) - pHeadSelectedCity.productionLeft()
+							elif pHeadSelectedCity.canHurry(HURRY_WHIP, False):
+								iHurryPop = pHeadSelectedCity.hurryPopulation(HURRY_WHIP)
+								iOverflow = pHeadSelectedCity.hurryProduction(HURRY_WHIP) - pHeadSelectedCity.productionLeft()
 							if CityScreenOpt.isWhipAssistOverflowCountCurrentProduction():
 								iOverflow += pHeadSelectedCity.getCurrentProductionDifference(False, True)
 							iMaxOverflow = max(pHeadSelectedCity.getProductionNeeded(), pHeadSelectedCity.getCurrentProductionDifference(False, False))
@@ -3733,6 +3746,9 @@ class CvMainInterface:
 								szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_WHIP_PLUS_GOLD", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryPop, iOverflow, iOverflowGold))
 							else:
 								szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_WHIP", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryPop, iOverflow))
+						elif (CityScreenOpt.isShowWhipAssist() and pHeadSelectedCity.canHurry(HURRY_FEDERALISM, False)):
+							iHurryCost = pHeadSelectedCity.hurryGold(HURRY_FEDERALISM)
+							szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_BUY", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryCost))
 						elif (CityScreenOpt.isShowWhipAssist() and pHeadSelectedCity.canHurry(HURRY_BUY_UNIT, False)):
 							iHurryCost = pHeadSelectedCity.hurryGold(HURRY_BUY_UNIT)
 							szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_BUY", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryCost))
