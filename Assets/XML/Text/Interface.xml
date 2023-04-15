@@ -299,11 +299,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPITAL_BONUS_YIELD_POPULATION</Tag>
-		<English>[SPACE] in capital for every city with more than 12 population</English>
-		<French>[SPACE] in capital for every city with more than 12 population</French>
-		<German>[SPACE] in capital for every city with more than 12 population</German>
-		<Italian>[SPACE] in capital for every city with more than 12 population</Italian>
-		<Spanish>[SPACE] in capital for every city with more than 12 population</Spanish>
+		<English>[SPACE] in capital for every city with more than 9 population</English>
+		<French>[SPACE] in capital for every city with more than 9 population</French>
+		<German>[SPACE] in capital for every city with more than 9 population</German>
+		<Italian>[SPACE] in capital for every city with more than 9 population</Italian>
+		<Spanish>[SPACE] in capital for every city with more than 9 population</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AT_LEAST_ONE_SPECIALIST</Tag>

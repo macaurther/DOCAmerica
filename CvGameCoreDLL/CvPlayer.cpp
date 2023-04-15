@@ -25068,7 +25068,7 @@ void CvPlayer::updateCapitalPopulationBonusYields()
 			//TODO - Change to not be hardcoded
 			if (!pLoopCity->isCapital())
 			{
-				if (pLoopCity->getPopulation() > 12)
+				if (pLoopCity->getPopulation() > 9)
 				{
 					iNumCities++;
 				}
