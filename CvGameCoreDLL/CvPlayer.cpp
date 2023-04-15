@@ -61,7 +61,7 @@ CvPlayer::CvPlayer()
 	m_aiHappinessExtraYield = new int[NUM_YIELD_TYPES]; // Leoreth
 	m_aiUnhappinessExtraYield = new int[NUM_YIELD_TYPES]; // Leoreth
 	m_aiUnimprovedTileYield = new int[NUM_YIELD_TYPES]; // Leoreth
-	m_aiCapitalPopulationBonusYield = new int[NUM_YIELD_TYPES]; // FoB
+	m_aiCapitalBonusYieldFromCivic = new int[NUM_YIELD_TYPES]; // FoB
 	m_aiCapitalBonusYields = new int[NUM_YIELD_TYPES]; // FoB
 	m_aiCommerceFlexibleCount = new int[NUM_COMMERCE_TYPES];
 	m_aiGoldPerTurnByPlayer = new int[MAX_PLAYERS];
@@ -143,7 +143,7 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_aiHappinessExtraYield); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiUnhappinessExtraYield); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiUnimprovedTileYield); // Leoreth
-	SAFE_DELETE_ARRAY(m_aiCapitalPopulationBonusYield); // FoB
+	SAFE_DELETE_ARRAY(m_aiCapitalBonusYieldFromCivic); // FoB
 	SAFE_DELETE_ARRAY(m_aiCapitalBonusYields); // FoB
 	SAFE_DELETE_ARRAY(m_aiCommerceFlexibleCount);
 	SAFE_DELETE_ARRAY(m_aiGoldPerTurnByPlayer);
@@ -620,7 +620,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_aiHappinessExtraYield[iI] = 0; // Leoreth
 		m_aiUnhappinessExtraYield[iI] = 0; // Leoreth
 		m_aiUnimprovedTileYield[iI] = 0; // Leoreth
-		m_aiCapitalPopulationBonusYield[iI] = 0; // FoB
+		m_aiCapitalBonusYieldFromCivic[iI] = 0; // FoB
 		m_aiCapitalBonusYields[iI] = 0; // FoB
 	}
 
@@ -13928,8 +13928,8 @@ void CvPlayer::changeCapitalBonusYieldFromCivics(YieldTypes eYield, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiCapitalPopulationBonusYield[eYield] += iChange;
-		updateCapitalPopulationBonusYields();
+		m_iCapitalPopulationCivicCombinedYield += iChange;
+		m_aiCapitalBonusYieldFromCivic[eYield] += iChange;
 	}
 }
 
@@ -13939,7 +13939,7 @@ int CvPlayer::getCapitalBonusYieldFromCivics(YieldTypes eYield) const
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(eYield > -1, "Index out of bounds");
 
-	return m_aiCapitalPopulationBonusYield[eYield];
+	return m_aiCapitalBonusYieldFromCivic[eYield];
 }
 
 // FoB
@@ -18079,7 +18079,6 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeLevelExperienceModifier(GC.getCivicInfo(eCivic).getLevelExperienceModifier() * iChange); // Leoreth
 	changeUnhappinessDecayModifier(GC.getCivicInfo(eCivic).getUnhappinessDecayModifier() * iChange); // Leoreth
 
-	m_iCapitalPopulationCivicCombinedYield = 0;
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		changeYieldRateModifier(((YieldTypes)iI), (GC.getCivicInfo(eCivic).getYieldModifier(iI) * iChange));
@@ -18093,10 +18092,8 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 		{
 			changeSpecialistExtraYield(((SpecialistTypes)iJ), ((YieldTypes)iI), (GC.getCivicInfo(eCivic).getSpecialistExtraYield(iI) * iChange)); // Leoreth
 		}
-
-		//FoB
-		m_iCapitalPopulationCivicCombinedYield = m_iCapitalPopulationCivicCombinedYield | (GC.getCivicInfo(eCivic).getCapitalPopulationYieldModifier(iI) * iChange);
 	}
+	updateCapitalPopulationBonusYields();
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
@@ -18554,7 +18551,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_aiHappinessExtraYield); // Leoreth
 	pStream->Read(NUM_YIELD_TYPES, m_aiUnhappinessExtraYield); // Leoreth
 	pStream->Read(NUM_YIELD_TYPES, m_aiUnimprovedTileYield); // Leoreth
-	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalPopulationBonusYield); // FoB
+	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalBonusYieldFromCivic); // FoB
 	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalBonusYields); // FoB
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiFreeCityCommerce);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommercePercent);
@@ -18991,7 +18988,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_YIELD_TYPES, m_aiHappinessExtraYield); // Leoreth
 	pStream->Write(NUM_YIELD_TYPES, m_aiUnhappinessExtraYield); // Leoreth
 	pStream->Write(NUM_YIELD_TYPES, m_aiUnimprovedTileYield); // Leoreth
-	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalPopulationBonusYield); // FoB
+	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalBonusYieldFromCivic); // FoB
 	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalBonusYields); // FoB
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiFreeCityCommerce);
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiCommercePercent);

@@ -1589,7 +1589,7 @@ protected:
 	int* m_aiHappinessExtraYield; // Leoreth
 	int* m_aiUnhappinessExtraYield; // Leoreth
 	int* m_aiUnimprovedTileYield; // Leoreth
-	int* m_aiCapitalPopulationBonusYield; // FoB
+	int* m_aiCapitalBonusYieldFromCivic; // FoB
 	int* m_aiCapitalBonusYields; // FoB
 	int* m_aiCommerceFlexibleCount;
 	int* m_aiGoldPerTurnByPlayer;

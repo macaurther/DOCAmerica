@@ -17,6 +17,16 @@
 			<Button>Art/Interface/MainScreen/CityScreen/hurry_slavery.dds</Button>
 		</HurryInfo>
 		<HurryInfo>
+			<Type>HURRY_POLICE_STATE</Type>
+			<Description>TXT_KEY_HURRY_POPULATION</Description>
+			<iGoldPerProduction>0</iGoldPerProduction>
+			<iProductionPerPopulation>50</iProductionPerPopulation>
+			<bAnger>1</bAnger>
+			<bUnits>1</bUnits>
+			<bBuildings>1</bBuildings>
+			<Button>Art/Interface/MainScreen/CityScreen/hurry_slavery.dds</Button>
+		</HurryInfo>
+		<HurryInfo>
 			<Type>HURRY_GOLD_UNITS</Type>
 			<Description>TXT_KEY_HURRY_GOLD_UNITS</Description>
 			<iGoldPerProduction>2</iGoldPerProduction>
