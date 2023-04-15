@@ -1,0 +1,54 @@
+TABLE OF CONTENTS
+* Major Features
+* Game Rules
+* Languages
+* Technologies
+* Buildings
+* Unique Buildings
+* National Wonders
+* Wonders
+* Projects
+* Units
+* Unique Units
+* Civics
+* Specialists
+* Religion
+* Corporations
+* Civilizations
+* Leaders
+* Unique Powers
+* Unique Historical Victories
+* Improvements
+* Events
+* Stability
+* Balance
+* Artificial Intelligence
+* Scenarios
+* Historical Immersion
+* Interface
+* Bugfixes
+* Codebase
+
+MAJOR FEATURES
+* Removed many civilizations and 13 more, see civilisations section for details
+    * Added 13 new civilizations
+    * Refactored 2 civilizations
+* Removed many wonders and added more, see wonders section for details: 
+    * Added 26 new wonders
+* Additional early-mid game content: 
+    * More expensive exploration, colonial, and revolutionary era technologies
+    * Additional buildings from the exploration, colonial, and revolutionary eras, see building section for details
+* Extensive unit expansion, see units section for details:
+    * Added new units
+    * Added new unique units
+    * Many major civilisations received a second unique unit
+* Forts control territory
+* Immigration rework
+* Native Tribes resist aggression, and give gifts to friends
+* Added Regional Powers (RP), in addition to Unique Powers (UP)
+    * Multiple civilizations can share one RP
+* New Terrain types
+* New Resources
+* Added Regional Civics system
+    * The list of available Civics to each civilization is now different
+    * Civilizations native to the Americas use one set of civics, while civilizations from Europe use a different set
