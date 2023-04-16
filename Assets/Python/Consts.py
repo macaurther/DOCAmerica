@@ -257,7 +257,7 @@ dResurrections = CivDict({
 }, [])
 
 dEnemyCivsOnSpawn = CivDict({
-iAztecs : [iMaya],
+iAztecs : [iMaya, iTeotihuacan],
 iInca : [iWari],
 iAmerica : [iEngland, iIndependent, iIndependent2, iNative],
 iArgentina : [iSpain, iIndependent, iIndependent2],
