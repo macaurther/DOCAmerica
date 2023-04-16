@@ -4614,7 +4614,14 @@ void CvCity::processSpecialist(SpecialistTypes eSpecialist, int iChange)
 	updateExtraSpecialistYield();
 
 	changeSpecialistFreeExperience(GC.getSpecialistInfo(eSpecialist).getExperience() * iChange);
+	changeSpecialistHappiness(eSpecialist, iChange);
 
+	// MacAurther: Immigration calculated after all else
+	processImmigration();
+}
+
+void CvCity::changeSpecialistHappiness(SpecialistTypes eSpecialist, int iChange)
+{
 	int iHappinessChange = GC.getSpecialistInfo(eSpecialist).getHappiness();
 
 	iHappinessChange += GET_PLAYER(getOwnerINLINE()).getSpecialistHappiness();
@@ -4633,9 +4640,19 @@ void CvCity::processSpecialist(SpecialistTypes eSpecialist, int iChange)
 	{
 		changeSpecialistBadHappiness(-iHappinessChange * iChange);
 	}
+}
 
-	// MacAurther: Immigration calculated after all else
-	processImmigration();
+void CvCity::recalculateSpecialistHappiness()
+{
+	m_iSpecialistGoodHappiness = 0;
+	m_iSpecialistBadHappiness = 0;
+
+	for (int i = 0; i < NUM_SPECIALIST_TYPES; i++)
+	{
+		SpecialistTypes eSpecialist = ((SpecialistTypes)i);
+		int iNumSpecialists = getSpecialistCount(eSpecialist);
+		changeSpecialistHappiness(eSpecialist, iNumSpecialists);
+	}
 }
 
 

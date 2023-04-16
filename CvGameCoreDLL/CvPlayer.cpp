@@ -3308,6 +3308,17 @@ void CvPlayer::updateExtraSpecialistYield()
 	}
 }
 
+void CvPlayer::updateSpecialistHappiness()
+{
+	CvCity* pLoopCity;
+	int iLoop;
+
+	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		pLoopCity->recalculateSpecialistHappiness();
+	}
+}
+
 
 void CvPlayer::updateCommerce(CommerceTypes eCommerce)
 {
@@ -10431,6 +10442,7 @@ void CvPlayer::changeSpecialistHappiness(int iChange)
 	{
 		m_iSpecialistHappiness += iChange;
 
+		updateSpecialistHappiness();
 		AI_makeAssignWorkDirty();
 	}
 }

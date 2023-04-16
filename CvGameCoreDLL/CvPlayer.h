@@ -121,6 +121,7 @@ public:
 	void updateFeatureHappiness();
 	void updateReligionHappiness();
 	void updateExtraSpecialistYield();
+	void updateSpecialistHappiness();
 	void updateCommerce(CommerceTypes eCommerce);
 	void updateCommerce();
 	void updateBuildingCommerce();
