@@ -124,6 +124,16 @@ def nativeCityConquered(iPlayer, pCity):
 			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=pCity)
 
 
+@handler("BeginGameTurn")
+def giveAINativeTechs(iGameTurn):
+	# If European AI hasn't gotten Native Techs by 1700, help them out
+	if iGameTurn == year(1700):
+		for iPlayer in dCivGroups[iCivGroupEurope]:
+			for iTech in lNativeTechs:
+				if not team(iPlayer).isHasTech(iTech):
+					team(iPlayer).setHasTech(iTech, true, iPlayer, False, True)
+
+
 @handler("cityAcquiredAndKept")
 def convertOnCityAcquired(iPlayer, pCity):
 	if player(iPlayer).hasCivic(iGloriaInDeo):

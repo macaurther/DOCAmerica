@@ -76,7 +76,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -135,7 +135,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -235,14 +235,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -294,7 +294,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -361,7 +361,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -413,7 +413,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -458,14 +458,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -503,7 +503,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -549,14 +549,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -601,14 +601,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -675,7 +675,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -739,14 +739,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -791,14 +791,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -842,14 +842,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -951,7 +951,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1152,7 +1152,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1197,7 +1197,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1235,14 +1235,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1287,7 +1287,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1332,7 +1332,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1377,7 +1377,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1415,14 +1415,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1460,14 +1460,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1512,7 +1512,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1557,7 +1557,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1607,7 +1607,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1646,14 +1646,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>

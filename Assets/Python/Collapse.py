@@ -69,11 +69,14 @@ def downgradeCottages(iPlayer):
 		elif iImprovement == iCottage: 
 			plot.setImprovementType(-1)
 		
-		# Destroy all Mississippi improvements
+		# Destroy all Mississippi improvements and routes
 		if civ(iPlayer) == iMississippi and not player(iPlayer).isHuman():
 			if iImprovement >= 0:
 				plot.setImprovementType(-1)
-				
+			iRoute = plot.getRouteType()
+			if iRoute >= 0:
+				plot.setRouteType(-1)
+			
 	message(iPlayer, 'TXT_KEY_STABILITY_DOWNGRADE_COTTAGES', color=iRed)
 		
 def collapseToCore(iPlayer):

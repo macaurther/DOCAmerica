@@ -109,26 +109,29 @@ def conquistadors(iTeamX, iHasMetTeamY):
 				
 				if not bAlreadyContacted:
 					if iNewWorldCiv == iMaya:
-						tContactZoneTL = (33, 54)
-						tContactZoneBR = (40, 64)
+						tContactZoneTL = (31, 53)
+						tContactZoneBR = (42, 65)
 					elif iNewWorldCiv == iTeotihuacan:
-						tContactZoneTL = (28, 60)
-						tContactZoneBR = (33, 66)
+						tContactZoneTL = (25, 54)
+						tContactZoneBR = (40, 66)
 					elif iNewWorldCiv == iTiwanaku:
-						tContactZoneTL = (49, 28)
-						tContactZoneBR = (55, 36)
+						tContactZoneTL = (47, 24)
+						tContactZoneBR = (57, 37)
 					elif iNewWorldCiv == iWari:
-						tContactZoneTL = (40, 31)
-						tContactZoneBR = (49, 45)
+						tContactZoneTL = (40, 29)
+						tContactZoneBR = (57, 45)
+					elif iNewWorldCiv == iMuisca:
+						tContactZoneTL = (43, 42)
+						tContactZoneBR = (56, 56)
 					elif iNewWorldCiv == iChimu:
 						tContactZoneTL = (40, 31)
-						tContactZoneBR = (49, 45)
+						tContactZoneBR = (52, 48)
 					elif iNewWorldCiv == iAztecs:
-						tContactZoneTL = (25, 55)
-						tContactZoneBR = (33, 66)
+						tContactZoneTL = (23, 54)
+						tContactZoneBR = (40, 67)
 					elif iNewWorldCiv == iInca:
-						tContactZoneTL = (41, 18)
-						tContactZoneBR = (55, 44)
+						tContactZoneTL = (40, 13)
+						tContactZoneBR = (57, 45)
 					else:
 						return	# Some natives don't generate conquerors
 						
@@ -158,6 +161,11 @@ def conquistadors(iTeamX, iHasMetTeamY):
 								iModifier2 = 1
 								
 						if year() < year(dBirth[active()]):
+							iModifier1 += 1
+							iModifier2 += 1
+						
+						# Help AI
+						if not player(iOldWorldPlayer).isHuman():
 							iModifier1 += 1
 							iModifier2 += 1
 						
