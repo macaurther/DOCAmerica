@@ -234,7 +234,7 @@
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Democracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iCultureGroup>1</iCultureGroup>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
 			<iImprovementUpgradeRateModifier>100</iImprovementUpgradeRateModifier>
@@ -311,7 +311,7 @@
 			<TechPrereq>TECH_MACROECONOMICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/State Party.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCultureGroup>1</iCultureGroup>
 			<iNumCitiesMaintenanceModifier>-50</iNumCitiesMaintenanceModifier>
 			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
@@ -454,7 +454,6 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
 			<iCoreFreeSpecialist>1</iCoreFreeSpecialist>
 			<MinimalSpecialists>
 				<MinimalSpecialist>
@@ -501,7 +500,7 @@
 			<Button>Art/Interface/Buttons/Civics/Federalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
@@ -513,7 +512,7 @@
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
 			<PopulationCapitalBonus>
-				<iYield>0</iYield>
+				<iYield>1</iYield>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</PopulationCapitalBonus>
@@ -553,7 +552,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Decentralization.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<CommerceModifiers>
 				<iCommerce>-33</iCommerce>
 			</CommerceModifiers>
@@ -760,7 +759,7 @@
 			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_LOW</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bSlavery>1</bSlavery>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -1452,7 +1451,7 @@
 			<TechPrereq>TECH_SURVEYING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Homesteads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
