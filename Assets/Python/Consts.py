@@ -105,7 +105,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 3
+iNumMinorCities = 4
 
 # scripted conquerors
 iNumConquests = 0
@@ -366,7 +366,7 @@ iCuba : 25,
 
 dColonistSpawnPoints = CivDict({
 iNorse : [(78, 103)],
-iSpain : [(65, 64), (65, 64), (65, 64), (68, 13)],
+iSpain : [(65, 64), (52, 68), (52, 68), (68, 13)],
 iPortugal : [(72, 22), (79, 35)],
 iEngland : [(61, 76), (66, 81), (73, 86), (61, 76), (61, 76)],
 iFrance : [(75, 86), (75, 86), (40, 66)],
