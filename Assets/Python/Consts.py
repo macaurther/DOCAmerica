@@ -357,11 +357,18 @@ iCuba : 25,
 }, 100)
 
 # Colonists - European Regional Power
+# Norse - Reykajavik
+# Spain - Santo Domingo, Havana, St. Augustine, Buenos Aires
+# England - Jamestown, Boston, St. John, Charleston, Philadelphia
+# France - Quebec, Montreal (x2), New Orleans (x2)
+# Netherlands - New Amsterdam, Suriname
+# Russia - Sitka
+
 dColonistSpawnPoints = CivDict({
 iNorse : [(78, 103)],
-iSpain : [(65, 64), (65, 64), (65, 64)],
+iSpain : [(65, 64), (65, 64), (65, 64), (68, 13)],
 iPortugal : [(72, 22), (79, 35)],
-iEngland : [(61, 76), (66, 81), (73, 86)], 
+iEngland : [(61, 76), (66, 81), (73, 86), (61, 76), (61, 76)],
 iFrance : [(75, 86), (75, 86), (40, 66)],
 iNetherlands : [(63, 78), (66, 59)],
 iRussia : [(12, 94)],
@@ -370,9 +377,9 @@ iRussia : [(12, 94)],
 # The AI had a hard time with spawning at sea, so they get to spawn on land
 dAIColonistSpawnPoints = CivDict({
 iNorse : [(77, 104)],
-iSpain : [(55, 59), (43, 62), (46, 70)],
+iSpain : [(55, 59), (43, 62), (46, 70), (57, 16)],
 iPortugal : [(67, 26), (74, 46)],
-iEngland : [(51, 77), (59, 83), (67, 86)], 
+iEngland : [(51, 77), (59, 83), (67, 86), (48, 74), (53, 80)], 
 iFrance : [(58, 89), (58, 89), (38, 69)],
 iNetherlands : [(56, 81), (60, 49)],
 iRussia : [(15, 96)],
@@ -380,9 +387,9 @@ iRussia : [(15, 96)],
 
 # Only need to specify colonists past the first given, since the first is given on initial spawn
 dColonistSpawnDates = CivDict({
-iSpain : [1525, 1600],
+iSpain : [1525, 1565, 1580],
 iPortugal : [1550],
-iEngland : [1620, 1650],
+iEngland : [1620, 1650, 1670, 1690],
 iFrance : [1650, 1718],
 iNetherlands : [1650],
 })
@@ -392,10 +399,10 @@ iNumExpeditionTypes = 8
 
 dColonistExpeditions = CivDict({
 iNorse : [[iCanoeSettle]],
-iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelSupport], [iIndiamanSettle, iIndiamanSupport]],
+iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelSupport], [iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle, iIndiamanSupport]],
 iPortugal : [[iCaravelSettle, iCaravelSupport], [iCaravelSettle, iCaravelSupport]],
-iEngland : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle]],
-iFrance : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle]],
+iEngland : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle], [iIndiamanSettle], [iIndiamanSettle]],
+iFrance : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle, iIndiamanSettle], [iIndiamanSettle, iIndiamanSettle]],
 iNetherlands : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle]],
 iRussia : [[iIndiamanSettle, iIndiamanSupport]],
 })

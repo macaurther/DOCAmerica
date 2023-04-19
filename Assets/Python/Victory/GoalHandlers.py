@@ -259,12 +259,12 @@ class EventHandlerRegistry(object):
 		
 		return goodyReceived
 	
-	def religionSpread(self, goal, applicable, func):
-		def religionSpread((iReligion, iOwner, pSpreadCity)):
-			if applicable(goal, iOwner):
-				func(goal)
+	def unitSpreadReligionAttempt(self, goal, applicable, func):
+		def unitSpreadReligionAttempt((pUnit, iReligion, bSuccess)):
+			if applicable(goal, pUnit.getOwner()):
+				func(goal, bSuccess)
 		
-		return religionSpread
+		return unitSpreadReligionAttempt
 	
 	def freedSlaves(self, goal, applicable, func):
 		def freedSlaves((iPlayer, iNumSlaves)):

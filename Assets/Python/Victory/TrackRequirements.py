@@ -596,11 +596,12 @@ class ReligionSpreads(TrackRequirement):
 	def __init__(self, *parameters, **options):
 		TrackRequirement.__init__(self, *parameters, **options)
 		
-		self.handle("religionSpread", self.increment_religion_spreads)
+		self.handle("unitSpreadReligionAttempt", self.increment_religion_spreads)
 		
-	def increment_religion_spreads(self, goal):
-		self.increment()
-		goal.check()
+	def increment_religion_spreads(self, goal, bSuccess):
+		if bSuccess:
+			self.increment()
+			goal.check()
 
 
 class FreedSlaves(TrackRequirement):
