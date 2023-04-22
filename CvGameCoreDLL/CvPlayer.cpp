@@ -25565,7 +25565,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_REVOLUTIONARY)
 	{
-		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_CHIEFDOM || eCivic == CIVIC_TRADITIONALISM)
+		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_CHIEFDOM || eCivic == CIVIC_TRADITIONALISM || eCivic == CIVIC_ARISTOCRACY)
 		{
 			return true;
 		}

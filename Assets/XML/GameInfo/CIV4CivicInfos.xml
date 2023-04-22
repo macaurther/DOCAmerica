@@ -418,6 +418,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Vassalage.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iCultureGroup>2</iCultureGroup>
 			<SpecialistExtraYields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -441,6 +442,23 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_ARISTOCRACY</Type>
+			<Description>TXT_KEY_CIVIC_ARISTOCRACY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ARISTOCRACY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Strategy>
+			<TechPrereq>TECH_HUMANITIES</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Barbarism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,1,1</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iCultureGroup>1</iCultureGroup>
+			<CapitalYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>50</iYield>
+				<iYield>50</iYield>
+			</CapitalYieldModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -557,11 +575,6 @@
 				<iCommerce>-33</iCommerce>
 			</CommerceModifiers>
 			<iCapitalTradeModifier>100</iCapitalTradeModifier>
-			<CapitalYieldModifiers>
-				<iYield>0</iYield>
-				<iYield>50</iYield>
-				<iYield>50</iYield>
-			</CapitalYieldModifiers>
 			<iFreeUnitsPopulationPercent>29</iFreeUnitsPopulationPercent>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CONSUL</WeLoveTheKing>
 		</CivicInfo>

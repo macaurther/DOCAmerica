@@ -1042,6 +1042,12 @@ def getCivicStability(iPlayer, civics=None):
 		if iHaven in civics: iStability += 2
 		if iGloriaInDeo in civics: iStability -= 2
 		if iEncomienda in civics: iStability -= 2
+
+	if iAristocracy in civics:
+		if iDespotism in civics: iStability += 2
+		if iDemocracy in civics: iStability -= 4
+		if iStateParty in civics: iStability -= 4
+		if iOpportunity in civics: iStability -= 2
 	
 	if iConfederacy in civics:
 		if iMultilateralism in civics: iStability += 3
