@@ -7403,7 +7403,7 @@ EndPlot
 BeginPlot
 	x=13,y=47
 	BonusType=BONUS_SUGAR
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -7973,7 +7973,7 @@ EndPlot
 BeginPlot
 	x=14,y=48
 	BonusType=BONUS_PIG
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -24881,6 +24881,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=50
+	FeatureType=FEATURE_CAPE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

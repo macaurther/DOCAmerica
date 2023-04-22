@@ -198,8 +198,8 @@ lCivilizations = [
 	Civilization(
 		iWari,
 		iGold=100,
-		lCivics=[iMerchantTrade],
-		techs=techs.column(2)
+		lCivics=[],
+		techs=techs.column(2).without(iSailing)
 	),
 	Civilization(
 		iMississippi,
@@ -241,12 +241,14 @@ lCivilizations = [
 		iInca,
 		iGold=700,
 		lCivics=[iEmpire, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
+		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(2).including(iArtisanry, iMasonry).without(iSailing)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespotism, iSlavery, iMerchantTrade, iCasteSystem, iTributaries],
+		lEnemies=[iTeotihuacan],
 		techs=techs.column(3).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
@@ -274,7 +276,7 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iProtestantism,
 		lCivics=[iExpeditionaries, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
-		lEnemies=[],
+		lEnemies=[iSpain],
 		techs=techs.column(7).including(iShipbuilding, iCharter).without(*lNativeTechs)
 	),
 	Civilization(
@@ -295,7 +297,7 @@ lCivilizations = [
 		iHawaii,
 		iGold=700,
 		lCivics=[iDespotism, iIsolationism],
-		techs=techs.column(1).including(iNavigation).without(iTanning)
+		techs=techs.column(2).including(iNavigation).without(iTanning)
 	),
 	Civilization(
 		iRussia,
@@ -457,7 +459,7 @@ dStartingUnits = CivDict({
 	},
 	iHawaii: {
 		iSettle: 2,
-		iWork: 2,
+		iWork: 1,
 		iDefend: 2,
 		iBase: 2,
 		iFerrySea: 1,

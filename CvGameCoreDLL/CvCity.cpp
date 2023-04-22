@@ -4509,9 +4509,6 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		updateExtraBuildingHealth();
 
 		// Leoreth: special wonder effects
-		CvCity* pLoopCity;
-		int iLoop;
-
 		// Temple of Kukulkan
 		if (eBuilding == (BuildingTypes)BUILDING_TEMPLE_OF_KUKULKAN)
 		{
@@ -14550,12 +14547,28 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 
 						if (pLoopPlot != NULL)
 						{
-							if (pLoopPlot->isPotentialCityWorkForArea(area()))
+							if (pLoopPlot->isPotentialCityWorkForArea(area()) || GET_PLAYER(getOwner()).getRegionPowers() == RP_WOODLAND || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC)
 							{
-								// Leoreth: culture can only invade foreign core if city itself is in foreign core
-								bool bCanSpreadCore = true;
-								bool bBirthProtected = pLoopPlot->getBirthProtected() != NO_PLAYER && pLoopPlot->getBirthProtected() != ePlayer;
+								// Leoreth: cannot spread culture into birth protected civilizations
+								PlayerTypes eBirthProtectionPlayer = pLoopPlot->getBirthProtected();
+								bool bBirthProtected = eBirthProtectionPlayer != NO_PLAYER && eBirthProtectionPlayer != ePlayer;
 
+								// Leoreth: however only if it is actually within culture range of one of their cities
+								if (bBirthProtected)
+								{
+									for (int iDistance = 2; iDistance >= 0; iDistance--)
+									{
+										if (pLoopPlot->getCultureRangeCities(eBirthProtectionPlayer, iDistance) > 0)
+										{
+											break;
+										}
+									}
+
+									bBirthProtected = false;
+								}
+
+								// Leoreth: culture can only spread into foreign core if city itself is in foreign core
+								bool bCanSpreadCore = true;
 								if (!pLoopPlot->isCore(ePlayer) && iCultureRange > 2)
 								{
 									for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
@@ -14571,15 +14584,17 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 											continue;
 										}
 
-										if (pLoopPlot->isCore((PlayerTypes)iI) && !plot()->isCore((PlayerTypes)iI))
+										if (pLoopPlot->isCore((PlayerTypes)iI))
 										{
-											bCanSpreadCore = false;
-										}
-
-										if (pLoopPlot->isCore((PlayerTypes)iI) && plot()->isCore((PlayerTypes)iI))
-										{
-											bCanSpreadCore = true;
-											break;
+											if (plot()->isCore((PlayerTypes)iI))
+											{
+												bCanSpreadCore = true;
+												break;
+											}
+											else 
+											{
+												bCanSpreadCore = false;
+											}
 										}
 									}
 								}
@@ -17857,6 +17872,12 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 
 		// skip already owned tiles - no, only causes problems in case the controlling city is lost
 		//if (pPlot->getOwner() == getOwner()) iCost += 1000;
+
+		// even with Woodland/Pacific RP water tiles should still be covered last
+		if ((GET_PLAYER(getOwner()).getRegionPowers() == RP_WOODLAND || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC) && pPlot->isWater())
+		{
+			iExtraCost += GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
+		}
 	}
 
 	if (pPlot->getBonusType() >= 0 && (GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pPlot->getBonusType()).getTechReveal()) || GET_PLAYER(getOwner()).getCivilizationType() == HAWAII)) // MacAurther: Includes Hawaii UP
@@ -17882,6 +17903,12 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 	if (getOwner() != -1 && pPlot->isPeak() && ((RegionPowers)GET_PLAYER(getOwner()).getRegionPowers() == RP_ANDES || GET_PLAYER(getOwner()).getCivilizationType() == PERU))
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
+	}
+
+	// Leoreth: Woodland and Pacific RPs
+	if ((GET_PLAYER(getOwner()).getRegionPowers() == RP_WOODLAND || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC) && pPlot->isWater())
+	{
+		iExtraCost -= GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
 	}
 
 	// Leoreth: respect game speed

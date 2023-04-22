@@ -424,7 +424,7 @@ def replace(unit, iUnitType):
 
 # used: RFCUtils
 def getRoleDomain(iRole):
-	if iRole in [iWorkSea, iFerrySea, iEscortSea, iFerrySea, iHarassSea, iCapitalSea]:
+	if iRole in [iWorkSea, iFerrySea, iEscortSea, iHarassSea, iCapitalSea]:
 		return DomainTypes.DOMAIN_SEA
 	return DomainTypes.DOMAIN_LAND
 
@@ -537,12 +537,6 @@ def getUnitForRole(iPlayer, iRole):
 def getUnitsForRole(iPlayer, iRole):
 	iUnit, iUnitAI = getUnitForRole(iPlayer, iRole)
 	units = [(iUnit, iUnitAI)]
-	
-	if iRole == iFerrySea:
-		units.append(getUnitForRole(iPlayer, iSettle))
-		
-		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
-			units.append(getUnitForRole(iPlayer, iDefend))
 	
 	return units
 
