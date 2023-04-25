@@ -386,7 +386,11 @@ EndPlot
 
 
 BeginPlot
-	x=2,y=55
+	x=1,y=56
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=4,y=54
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -394,7 +398,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
-	x=10,y=53
+	x=11,y=53
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot

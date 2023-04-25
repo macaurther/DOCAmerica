@@ -71,7 +71,7 @@ iPortugal : 	((66, 26), 	(68, 28)),
 iEngland : 		((49, 76), 	(51, 78)),
 iFrance : 		((57, 88), 	(59, 90)),
 iNetherlands :	((55, 80), 	(57, 82)),
-iHawaii :		((12, 47), 	(14, 50)),
+iHawaii :		((12, 46), 	(15, 50)),
 iRussia :		((14, 95), 	(16, 97)),
 iAmerica :		((43, 71),	(63, 88)),
 iHaiti :		((51, 58), 	(53, 60)),
@@ -120,7 +120,7 @@ iPortugal : 	((0, 0), 	(0, 0)),	# No core for Europeans
 iEngland : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iFrance : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iNetherlands :	((0, 0), 	(0, 0)),	# No core for Europeans
-iHawaii :		((12, 47), 	(14, 50)),
+iHawaii :		((12, 46), 	(15, 50)),
 iRussia :		((0, 0), 	(0, 0)),	# No core for Europeans
 iAmerica :		((48, 77),	(63, 88)),
 iHaiti :		((51, 58), 	(53, 60)),
