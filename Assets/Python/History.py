@@ -12,6 +12,49 @@ dRelocatedCapitals = CivDict({
 dCapitalInfrastructure = CivDict({
 })
 
+# Colonists - European Regional Power
+dColonistSpawns = CivDict({
+iNorse : 
+		[[dBirth[iNorse], tColonistReykjavik, [iColonistSettle]]],
+iSpain : 
+		[[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
+		[1525, tColonistCuba, [iColonistSettle, iColonistSupport]], 
+		[1565, tColonistBermuda, [iColonistSettle, iColonistSupport]], 
+		[1580, tColonistArgentina, [iColonistSettle, iColonistSupport]]],
+iPortugal : 
+		[[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSupport]], 
+		[1550, tColonistBrazil2, [iColonistSettle, iColonistSupport]],
+		[1630, tColonistBrazil2, [iColonistSlave]],
+		[1730, tColonistBrazil2, [iColonistSlave]],
+		[1770, tColonistBrazil1, [iColonistSlave]]],
+iEngland : 
+		[[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 
+		[1620, tColonistMassachusetts, [iColonistSettle]], 
+		[1650, tColonistNovaScotia, [iColonistSettle]], 
+		[1670, tColonistCarolina, [iColonistSettle, iColonistSlave]], 
+		[1690, tColonistPennsylvania, [iColonistSettle]],
+		[1750, tColonistCarolina, [iColonistSlave, iColonistSlave]]], 
+iFrance : 
+		[[dBirth[iFrance], tColonistQuebec, [iColonistSettle, iColonistSupport]], 
+		[1650, tColonistQuebec, [iColonistSettle, iColonistSettle]], 
+		[1718, tColonistLouisiana, [iColonistSettle, iColonistSettle]]],
+iNetherlands : 
+		[[dBirth[iNetherlands], tColonistNewNetherlands, [iColonistSettle, iColonistSupport]], 
+		[1650, tColonistSuriname, [iColonistSettle]]],
+iRussia : 
+		[[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]]],
+})
+
+dMaxColonists = CivDict({
+iNorse : len(dColonistSpawns[iNorse]),
+iSpain : len(dColonistSpawns[iSpain]),
+iPortugal : len(dColonistSpawns[iPortugal]),
+iEngland : len(dColonistSpawns[iEngland]), 
+iFrance : len(dColonistSpawns[iFrance]),
+iNetherlands : len(dColonistSpawns[iNetherlands]),
+iRussia : len(dColonistSpawns[iRussia]),
+})
+
 
 @handler("GameStart")
 def updateCulture():
@@ -84,12 +127,12 @@ def inuitUP(pCity):
 @handler("BeginGameTurn")
 def checkColonists():
 	if year().between(1500, 1800):
-		for iCiv in dColonistSpawnDates:
-				if player(iCiv).isAlive():
-					iPlayer = slot(iCiv)
-					if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
-						if turn() == turn(dColonistSpawnDates[iCiv][data.players[iPlayer].iColonistsAlreadyGiven - 1]):
-							giveColonists(iPlayer)
+		for iCiv in dCivGroups[iCivGroupEurope]:
+			if player(iCiv).isAlive():
+				iPlayer = slot(iCiv)
+				if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
+					if turn() == turn(dColonistSpawns[iCiv][data.players[iPlayer].iColonistsAlreadyGiven][0]):
+						giveColonists(iPlayer)
 
 ### FIRST CONTACT ###
 
@@ -368,71 +411,19 @@ def giveColonists(iPlayer):
 	
 	# MacAurther: This covers starting European colonists and later colonists as well
 	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dMaxColonists:
-		if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
-			
-			
+		iColonistIndex = data.players[iPlayer].iColonistsAlreadyGiven
+		if iColonistIndex < dMaxColonists[iCiv]:
 			if pPlayer.isHuman():
-				tUnitPlot = dColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
-				tSeaPlot = tUnitPlot
+				tPlot = dColonistSpawns[iCiv][iColonistIndex][1][0]
 			else:
 				# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
-				tUnitPlot = dAIColonistSpawnPoints[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]
-				tSeaPlot = getRoleLocation(iFerrySea, location(tUnitPlot))
+				tPlot = dColonistSpawns[iCiv][iColonistIndex][1][1]
 			
 			iReligion = player(iPlayer).getStateReligion()
 			
-			for iExpeditionType in dColonistExpeditions[iCiv][data.players[iPlayer].iColonistsAlreadyGiven]:
-				if iExpeditionType == iCanoeSettle:		# Canoe, Settler
-					makeUnit(iPlayer, unique_unit(iPlayer, iCanoe), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-				elif iExpeditionType == iCaravelSettle:	# Caravel, Settler, Militia (Portugal: Carrack, Settler, Settler, Militia)
-					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
-					if iCiv == iPortugal:
-						makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-				elif iExpeditionType == iCaravelSupport:	# Caravel, Work, Missionary (Portugal: Carrack, Work, Missionary, Militia)
-					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
-					if iReligion > -1:
-						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-					if iCiv == iPortugal:
-						createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
-				elif iExpeditionType == iCaravelExplore:	# Caravel, Recon, Missionary (Portugal: Carrack, Recon, Missionary, Missionary)
-					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iRecon, 1)
-					if iReligion > -1:
-						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-						if iCiv == iPortugal:
-							makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-				elif iExpeditionType == iCaravelConquer:	# Caravel, Base, CitySiege (Portugal: Carrack, Base, Base, CitySiege)
-					makeUnit(iPlayer, unique_unit(iPlayer, iCaravel), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
-					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
-					if iCiv == iPortugal:
-						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
-				elif iExpeditionType == iIndiamanSettle:	# Indiaman, Settler, Militia, Work (Netherlands/Spain: Fluyt/Galleon, Settler, Militia, Work, Settler)
-					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-					createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
-					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
-					if iCiv in [iNetherlands, iSpain]:
-						makeUnit(iPlayer, iSettler, tUnitPlot, UnitAITypes.UNITAI_SETTLE)
-				elif iExpeditionType == iIndiamanSupport:	# Indiaman, Recon, Work, Missionary (Netherlands/Spain: Fluyt/Galleon, Recon, Work, Missionary, Militia)
-					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iRecon, 1)
-					createRoleUnit(iPlayer, tUnitPlot, iWork, 1)
-					if iReligion > -1:
-						makeUnits(iPlayer, missionary(iReligion), tUnitPlot, 1)
-					if iCiv in [iNetherlands, iSpain]:
-						createRoleUnit(iPlayer, tUnitPlot, iDefend, 1)
-				elif iExpeditionType == iIndiamanConquer:	# Indiaman, Base, ShockCav, CitySiege (Netherlands/Spain: Fluyt/Galleon, Base, ShockCav, CitySiege, Base)
-					makeUnit(iPlayer, unique_unit(iPlayer, iIndiaman), tSeaPlot, UnitAITypes.UNITAI_SETTLER_SEA)
-					createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
-					createRoleUnit(iPlayer, tUnitPlot, iShockCav, 1)
-					createRoleUnit(iPlayer, tUnitPlot, iSiegeCity, 1)
-					if iCiv in [iNetherlands, iSpain]:
-						createRoleUnit(iPlayer, tUnitPlot, iBase, 1)
+			for iRole in dColonistSpawns[iCiv][iColonistIndex][2]:
+				units = createRoleUnit(iPlayer, tPlot, iRole, 1)
+				units.promotion(infos.type("PROMOTION_MERCENARY"))
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
 

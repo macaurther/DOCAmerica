@@ -584,11 +584,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Tag>
-		<English>Double production speed for defensive buildings</English>
-		<French>Double production speed for defensive buildings</French>
-		<German>Double production speed for defensive buildings</German>
-		<Italian>Double production speed for defensive buildings</Italian>
-		<Spanish>Double production speed for defensive buildings</Spanish>
+		<English>Double production speed for defensive buildings; no extra maintenance for Mercenaries</English>
+		<French>Double production speed for defensive buildings; no extra maintenance for Mercenaries</French>
+		<German>Double production speed for defensive buildings; no extra maintenance for Mercenaries</German>
+		<Italian>Double production speed for defensive buildings; no extra maintenance for Mercenaries</Italian>
+		<Spanish>Double production speed for defensive buildings; no extra maintenance for Mercenaries</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_HELP</Tag>
+		<English>[ICON_BULLET]Mercenaries do not cost additional upkeep</English>
+		<French>[ICON_BULLET]Mercenaries do not cost additional upkeep</French>
+		<German>[ICON_BULLET]Mercenaries do not cost additional upkeep</German>
+		<Italian>[ICON_BULLET]Mercenaries do not cost additional upkeep</Italian>
+		<Spanish>[ICON_BULLET]Mercenaries do not cost additional upkeep</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY</Tag>
@@ -728,11 +736,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Tag>
-		<English>Faster Great People birthrate; reduced maintanence from number of cities and distance to palace; extra trade route in every city</English>
-		<French>Faster Great People birthrate; reduced maintanence from number of cities and distance to palace; extra trade route in every city</French>
-		<German>Faster Great People birthrate; reduced maintanence from number of cities and distance to palace; extra trade route in every city</German>
-		<Italian>Faster Great People birthrate; reduced maintanence from number of cities and distance to palace; extra trade route in every city</Italian>
-		<Spanish>Faster Great People birthrate; reduced maintanence from number of cities and distance to palace; extra trade route in every city</Spanish>
+		<English>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</English>
+		<French>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</French>
+		<German>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</German>
+		<Italian>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</Italian>
+		<Spanish>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATE_PARTY</Tag>
@@ -748,11 +756,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATE_PARTY_STRATEGY</Tag>
-		<English>No maintenance costs from number of cities; reduced maintanence from distance to palace; extra espionage from specialists</English>
-		<French>No maintenance costs from number of cities; reduced maintanence from distance to palace; extra espionage from specialists</French>
-		<German>No maintenance costs from number of cities; reduced maintanence from distance to palace; extra espionage from specialists</German>
-		<Italian>No maintenance costs from number of cities; reduced maintanence from distance to palace; extra espionage from specialists</Italian>
-		<Spanish>No maintenance costs from number of cities; reduced maintanence from distance to palace; extra espionage from specialists</Spanish>
+		<English>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</English>
+		<French>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</French>
+		<German>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</German>
+		<Italian>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</Italian>
+		<Spanish>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMON_LAW</Tag>

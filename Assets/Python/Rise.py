@@ -520,7 +520,7 @@ class Birth(object):
 		createSpecificUnits(self.iPlayer, self.location)
 		
 		# MacAurther: Europeans spawn at sea
-		if self.iCiv in dMaxColonists:
+		if self.iCiv in dCivGroups[iCivGroupEurope]:
 			giveColonists(self.iPlayer)
 		# select a settler if available
 		elif self.isHuman():

@@ -102,25 +102,17 @@ scenario1770AD = Scenario(
 	
 	dGreatPeopleCreated = {
 		iSpain: 8,
-		iFrance: 8,
+		iFrance: 5,
 		iEngland: 8,
-		iPortugal: 8,
-		iNetherlands: 6,
+		iPortugal: 5,
+		iNetherlands: 4,
 	},
 	dGreatGeneralsCreated = {
 		iSpain: 4,
 		iFrance: 3,
 		iEngland: 3,
-		iPortugal: 3,
-		iNetherlands: 3,
-	},
-	
-	dColonistsAlreadyGiven = {
-		iSpain : 7,
-		iFrance : 3,
-		iEngland : 3,
-		iPortugal : 6,
-		iNetherlands : 4,
+		iPortugal: 2,
+		iNetherlands: 1,
 	},
 	
 	lInitialWars = [

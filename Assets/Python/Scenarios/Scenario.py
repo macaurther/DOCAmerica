@@ -7,6 +7,8 @@ from Core import *
 from RFCUtils import *
 from Parsers import *
 
+from History import dColonistSpawns
+
 
 START_HISTORY = 250
 
@@ -276,9 +278,11 @@ class Scenario(object):
 	def adjustColonists(self):
 		iStartTurn = scenarioStartTurn()
 		
-		for iCiv, iColonists in self.dColonistsAlreadyGiven.items():
-			data.players[iCiv].iExplorationTurn = iStartTurn
-			data.players[iCiv].iColonistsAlreadyGiven = iColonists
+		for iCiv, lColonistSpawns in dColonistSpawns.items():
+			if dBirth[iCiv] < self.iStartYear:
+				for lColonistSpawn in lColonistSpawns:
+					if lColonistSpawn[0] < self.iStartYear:
+						data.players[iCiv].iColonistsAlreadyGiven += 1
 	
 	def initDiplomacy(self):
 		for iAttacker, iDefender, iWarPlan in self.lInitialWars:

@@ -356,67 +356,6 @@ iCanada : 40,
 iCuba : 25,
 }, 100)
 
-# Colonists - European Regional Power
-# Norse - Reykajavik
-# Spain - Santo Domingo, Havana, St. Augustine, Buenos Aires
-# England - Jamestown, Boston, St. John, Charleston, Philadelphia
-# France - Quebec, Montreal (x2), New Orleans (x2)
-# Netherlands - New Amsterdam, Suriname
-# Russia - Sitka
-
-dColonistSpawnPoints = CivDict({
-iNorse : [(78, 103)],
-iSpain : [(65, 64), (52, 68), (52, 68), (68, 13)],
-iPortugal : [(72, 22), (79, 35)],
-iEngland : [(61, 76), (66, 81), (73, 86), (61, 76), (61, 76)],
-iFrance : [(75, 86), (75, 86), (40, 66)],
-iNetherlands : [(63, 78), (66, 59)],
-iRussia : [(12, 94)],
-})
-
-# The AI had a hard time with spawning at sea, so they get to spawn on land
-dAIColonistSpawnPoints = CivDict({
-iNorse : [(77, 104)],
-iSpain : [(55, 59), (43, 62), (46, 70), (57, 16)],
-iPortugal : [(67, 26), (74, 46)],
-iEngland : [(51, 77), (59, 83), (67, 86), (48, 74), (53, 80)], 
-iFrance : [(58, 89), (58, 89), (38, 69)],
-iNetherlands : [(56, 81), (60, 49)],
-iRussia : [(15, 96)],
-})
-
-# Only need to specify colonists past the first given, since the first is given on initial spawn
-dColonistSpawnDates = CivDict({
-iSpain : [1525, 1565, 1580],
-iPortugal : [1550],
-iEngland : [1620, 1650, 1670, 1690],
-iFrance : [1650, 1718],
-iNetherlands : [1650],
-})
-
-iNumExpeditionTypes = 8
-(iCanoeSettle, iCaravelSettle, iCaravelSupport, iCaravelExplore, iCaravelConquer, iIndiamanSettle, iIndiamanSupport, iIndiamanConquer) = range(iNumExpeditionTypes)
-
-dColonistExpeditions = CivDict({
-iNorse : [[iCanoeSettle]],
-iSpain : [[iCaravelSettle, iCaravelSupport, iCaravelExplore], [iCaravelSettle, iCaravelSupport], [iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle, iIndiamanSupport]],
-iPortugal : [[iCaravelSettle, iCaravelSupport], [iCaravelSettle, iCaravelSupport]],
-iEngland : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle], [iIndiamanSettle], [iIndiamanSettle], [iIndiamanSettle]],
-iFrance : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle, iIndiamanSettle], [iIndiamanSettle, iIndiamanSettle]],
-iNetherlands : [[iIndiamanSettle, iIndiamanSupport], [iIndiamanSettle]],
-iRussia : [[iIndiamanSettle, iIndiamanSupport]],
-})
-
-dMaxColonists = CivDict({
-iNorse : len(dColonistExpeditions[iNorse]),
-iSpain : len(dColonistExpeditions[iSpain]),
-iPortugal : len(dColonistExpeditions[iPortugal]),
-iEngland : len(dColonistExpeditions[iEngland]), 
-iFrance : len(dColonistExpeditions[iFrance]),
-iNetherlands : len(dColonistExpeditions[iNetherlands]),
-iRussia : len(dColonistExpeditions[iRussia]),
-})
-
 # initialise religion variables to religion indices from XML
 iNumReligions = 10
 (iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam, iHinduism, iBuddhism, iConfucianism, iTaoism, iZoroastrianism) = range(iNumReligions)
@@ -514,10 +453,11 @@ iGreatGeneral : iFeGreatGeneral,
 iGreatSpy : iFeGreatSpy,
 }
 
-iNumUnitRoles = 19
+iNumUnitRoles = 24
 #				2				3				4				5				6				7				8				9				10
 (iSettle,		iWork,			iRecon,			iMissionary,	iDefend,		iBase,			iShock,			iCounter,		iSiege,			iHarass,
-iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea) = range(iNumUnitRoles)
+iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,
+iColonistSupport, iColonistExplore, iColonistConquer, iColonistSlave) = range(iNumUnitRoles)
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 50

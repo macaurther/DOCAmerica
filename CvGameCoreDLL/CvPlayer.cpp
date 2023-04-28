@@ -7376,7 +7376,9 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 
 	iBaseUnitCost = iPaidUnits * getGoldPerUnit();
 	iMilitaryCost = iPaidMilitaryUnits * getGoldPerMilitaryUnit();
-	iExtraCost = getExtraUnitCost();
+
+	// MacAurther: Proprietaries Civic
+	iExtraCost = hasCivic(CIVIC_PROPRIETARIES) ? 0 : getExtraUnitCost();
 
 	iSupport = iMilitaryCost + iBaseUnitCost + iExtraCost;
 

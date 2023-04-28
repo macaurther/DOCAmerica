@@ -1,5 +1,31 @@
 ### Areas ###
 
+# Colonists
+# The first tuple is where the player will spawn, the second is where the AI will spawn
+#  Norse
+tColonistReykjavik = 	((78, 103), (77, 104))
+#  Spain
+tColonistCaribbean = 	((65, 64), (55, 59))
+tColonistCuba = 		((52, 68), (43, 62))
+tColonistBermuda = 		((52, 68), (46, 70))
+tColonistArgentina = 	((68, 13), (57, 16))
+#  Portugal
+tColonistBrazil1 = 		((72, 22), (67, 26))
+tColonistBrazil2 = 		((79, 35), (74, 36))
+#  England
+tColonistVirginia = 	((61, 76), (51, 77))
+tColonistMassachusetts = ((66, 81), (59, 83))
+tColonistNovaScotia = 	((73, 86), (67, 86))
+tColonistCarolina = 	((61, 76), (48, 74))
+tColonistPennsylvania = ((61, 76), (53, 80))
+#  France
+tColonistQuebec = 		((75, 86), (58, 89)) #(x2)
+tColonistLouisiana = 	((40, 66), (38, 69))
+#  Netherlands
+tColonistNewNetherlands =((63, 78), (56, 81))
+tColonistSuriname = 	((66, 59), (60, 49))
+#  Russia
+tColonistAlaska = 		((12, 94), (15, 96))
 # Companies
 
 # Congresses

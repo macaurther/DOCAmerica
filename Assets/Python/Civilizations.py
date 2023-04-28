@@ -268,7 +268,7 @@ lCivilizations = [
 		iPortugal,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpeditionaries, iMaritimeLaw, iSlavery, iMerchantTrade, iDivineRight, iTributaries],
+		lCivics=[iExpeditionaries, iProprietaries, iSlavery, iMerchantTrade, iDivineRight, iTributaries],
 		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration, iOptics, iOfficials).without(*lNativeTechs)
 	),
 	Civilization(
