@@ -10,7 +10,7 @@
 			<Type>CORPORATION_FUR_TRADE</Type>
 			<Description>TXT_KEY_CORPORATION_FUR_TRADE</Description>
 			<Civilopedia>TXT_KEY_CORPORATION_FUR_TRADE_PEDIA</Civilopedia>
-			<TechPrereq>TECH_EXPLORATION</TechPrereq>
+			<TechPrereq>TECH_COMPANIES</TechPrereq>
 			<FreeUnitClass>NONE</FreeUnitClass>
 			<iSpreadFactor>200</iSpreadFactor>
 			<iSpreadCost>50</iSpreadCost>

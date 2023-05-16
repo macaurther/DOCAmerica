@@ -469,7 +469,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_PROPRIETARIES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_PROPRIETARIES_HELP</Help>
-			<TechPrereq>TECH_COLONIZATION</TechPrereq>
+			<TechPrereq>TECH_EXPLORATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Captain.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>

@@ -15,34 +15,37 @@ dCapitalInfrastructure = CivDict({
 # Colonists - European Regional Power
 dColonistSpawns = CivDict({
 iNorse : 
-		[[dBirth[iNorse], tColonistReykjavik, [iColonistSettle]]],
+		[[dBirth[iNorse], tColonistReykjavik, [iColonistSettle, iColonistSupport]],
+		[950, tColonistReykjavik, [iColonistDefend]]],
 iSpain : 
 		[[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
 		[1525, tColonistCuba, [iColonistSettle, iColonistSupport]], 
 		[1565, tColonistBermuda, [iColonistSettle, iColonistSupport]], 
 		[1580, tColonistArgentina, [iColonistSettle, iColonistSupport]]],
 iPortugal : 
-		[[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSupport]], 
-		[1550, tColonistBrazil2, [iColonistSettle, iColonistSupport]],
+		[[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSettle, iColonistExplore]], 
+		[1550, tColonistBrazil2, [iColonistSettle, iColonistSettle, iColonistExplore]],
 		[1630, tColonistBrazil2, [iColonistSlave]],
 		[1730, tColonistBrazil2, [iColonistSlave]],
 		[1770, tColonistBrazil1, [iColonistSlave]]],
 iEngland : 
 		[[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 
-		[1620, tColonistMassachusetts, [iColonistSettle]], 
-		[1650, tColonistNovaScotia, [iColonistSettle]], 
+		[1620, tColonistMassachusetts, [iColonistSettle, iColonistSupport]], 
+		[1650, tColonistNovaScotia, [iColonistSettle]],
+		[1664, tColonistNewNetherlands, [iColonistConquer]],
 		[1670, tColonistCarolina, [iColonistSettle, iColonistSlave]], 
 		[1690, tColonistPennsylvania, [iColonistSettle]],
-		[1750, tColonistCarolina, [iColonistSlave, iColonistSlave]]], 
+		[1750, tColonistCarolina, [iColonistSlave]]], 
 iFrance : 
 		[[dBirth[iFrance], tColonistQuebec, [iColonistSettle, iColonistSupport]], 
-		[1650, tColonistQuebec, [iColonistSettle, iColonistSettle]], 
-		[1718, tColonistLouisiana, [iColonistSettle, iColonistSettle]]],
+		[1650, tColonistQuebec, [iColonistSettle, iColonistSettle, iColonistSupport]], 
+		[1718, tColonistLouisiana, [iColonistSettle, iColonistSettle, iColonistSupport]]],
 iNetherlands : 
 		[[dBirth[iNetherlands], tColonistNewNetherlands, [iColonistSettle, iColonistSupport]], 
 		[1650, tColonistSuriname, [iColonistSettle]]],
 iRussia : 
-		[[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]]],
+		[[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]],
+		[1780, tColonistAlaska, [iColonistSettle, iColonistSupport]]],
 })
 
 dMaxColonists = CivDict({
@@ -126,7 +129,7 @@ def inuitUP(pCity):
 ### BEGIN GAME TURN ###
 @handler("BeginGameTurn")
 def checkColonists():
-	if year().between(1500, 1800):
+	if year().between(1500, 1800) or turn() == turn(dColonistSpawns[iNorse][1][0]):	# Special check for Norse spawn, don't need to check otherwise
 		for iCiv in dCivGroups[iCivGroupEurope]:
 			if player(iCiv).isAlive():
 				iPlayer = slot(iCiv)
@@ -154,27 +157,35 @@ def conquistadors(iTeamX, iHasMetTeamY):
 					if iNewWorldCiv == iMaya:
 						tContactZoneTL = (31, 53)
 						tContactZoneBR = (42, 65)
+						tContactPlot = (37, 59)
 					elif iNewWorldCiv == iTeotihuacan:
 						tContactZoneTL = (25, 54)
 						tContactZoneBR = (40, 66)
+						tContactPlot = (30, 63)
 					elif iNewWorldCiv == iTiwanaku:
 						tContactZoneTL = (47, 24)
 						tContactZoneBR = (57, 37)
+						tContactPlot = (50, 32)
 					elif iNewWorldCiv == iWari:
 						tContactZoneTL = (40, 29)
 						tContactZoneBR = (57, 45)
-					elif iNewWorldCiv == iMuisca:
-						tContactZoneTL = (43, 42)
-						tContactZoneBR = (56, 56)
+						tContactPlot = (45, 38)
+					#elif iNewWorldCiv == iMuisca:
+					#	tContactZoneTL = (43, 42)
+					#	tContactZoneBR = (56, 56)
+					#	tContactPlot = (51, 51)
 					elif iNewWorldCiv == iChimu:
 						tContactZoneTL = (40, 31)
 						tContactZoneBR = (52, 48)
+						tContactPlot = (44, 41)
 					elif iNewWorldCiv == iAztecs:
 						tContactZoneTL = (23, 54)
 						tContactZoneBR = (40, 67)
+						tContactPlot = (31, 61)
 					elif iNewWorldCiv == iInca:
 						tContactZoneTL = (40, 13)
 						tContactZoneBR = (57, 45)
+						tContactPlot = (46, 36)
 					else:
 						return	# Some natives don't generate conquerors
 						
@@ -187,6 +198,10 @@ def conquistadors(iTeamX, iHasMetTeamY):
 					newWorldPlots = plots.start(tContactZoneTL).end(tContactZoneBR).without(lArrivalExceptions)
 					contactPlots = newWorldPlots.where(lambda p: p.isVisible(iNewWorldPlayer, False) and p.isVisible(iOldWorldPlayer, False))
 					arrivalPlots = newWorldPlots.owner(iNewWorldPlayer).where(lambda p: not p.isCity() and isFree(iOldWorldPlayer, p, bCanEnter=True) and map.getArea(p.getArea()).getCitiesPerPlayer(iNewWorldPlayer) > 0)
+					
+					# MacAurther: if OldWorldPlayer meets an AI NewWorldPlayer before seeing their territory, spawn the OldWorldPlayer's units on a pre-determined plot. This is to prevent random units/work boats cancelling the Conquistadors event
+					if not player(iNewWorldPlayer).isHuman() and not contactPlots:
+						contactPlots = plots.start(tContactPlot).end(tContactPlot)
 					
 					if contactPlots and arrivalPlots:
 						contactPlot = contactPlots.random()

@@ -50,13 +50,13 @@
 			<Strategy>TXT_KEY_BUILDING_GRANARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
-			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
-			<iFoodKept>15</iFoodKept>
+			<iFoodKept>25</iFoodKept>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<BonusHealthChanges>
@@ -89,13 +89,13 @@
 			<Strategy>TXT_KEY_BUILDING_AZTEC_CHINAMPA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HARAPPAN_RESERVOIR</ArtDefineTag>
-			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
-			<iFoodKept>25</iFoodKept>
+			<iFoodKept>35</iFoodKept>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -138,13 +138,13 @@
 			<Strategy>TXT_KEY_BUILDING_WARI_COLCAS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WARI_COLCAS</ArtDefineTag>
-			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
-			<iFoodKept>15</iFoodKept>
+			<iFoodKept>25</iFoodKept>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<YieldModifiers>
@@ -192,13 +192,13 @@
 			<Help>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INUIT_IGLOO</ArtDefineTag>
-			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
-			<iFoodKept>15</iFoodKept>
+			<iFoodKept>25</iFoodKept>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<BonusHealthChanges>
@@ -311,7 +311,7 @@
 			<Strategy>TXT_KEY_BUILDING_MARKET_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -319,7 +319,7 @@
 			<iConquestProb>60</iConquestProb>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<iTradeRouteModifier>15</iTradeRouteModifier>
+			<iTradeRouteModifier>25</iTradeRouteModifier>
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
@@ -358,7 +358,7 @@
 			<iAsset>2</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<CommerceModifiers>
-				<iCommerce>15</iCommerce>
+				<iCommerce>25</iCommerce>
 			</CommerceModifiers>
 			<SpecialistCounts>
 				<SpecialistCount>
@@ -413,7 +413,7 @@
 					<BonusType>BONUS_STONE</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>15</iYield>
+						<iYield>25</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>
 			</BonusYieldModifiers>
@@ -433,7 +433,6 @@
 			<Strategy>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MUISCA_GOLDSMITH</ArtDefineTag>
-			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
 			<PrereqTech>TECH_ARTISANRY</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -447,7 +446,7 @@
 					<BonusType>BONUS_GOLD</BonusType>
 					<YieldModifiers>
 						<iYield>0</iYield>
-						<iYield>15</iYield>
+						<iYield>25</iYield>
 					</YieldModifiers>
 				</BonusYieldModifier>
 			</BonusYieldModifiers>
@@ -1179,7 +1178,7 @@
 			<Strategy>TXT_KEY_BUILDING_HARBOR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HARBOR</ArtDefineTag>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
+			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			<bWater>1</bWater>
 			<iCost>60</iCost>
@@ -1592,7 +1591,7 @@
 			<Strategy>TXT_KEY_BUILDING_PALISADE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PALISADE</ArtDefineTag>
-			<PrereqTech>TECH_COMPANIES</PrereqTech>
+			<PrereqTech>TECH_GUNPOWDER</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1706,7 +1705,7 @@
 			<Strategy>TXT_KEY_BUILDING_WELL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WELL</ArtDefineTag>
-			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_URBAN_PLANNING</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>

@@ -166,7 +166,7 @@
 		<Spanish>National Gathering of %s1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_PEOPLES</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_PEOPLES</Tag>
 		<English>Norse Peoples</English>
 		<French>Norse Peoples</French>
 		<German>Norse Peoples</German>
@@ -174,7 +174,7 @@
 		<Spanish>Norse Peoples</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_DEFAULT</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_DEFAULT</Tag>
 		<English>Kingdom of %s1</English>
 		<French>
 			<Text>Royaume de %s1</Text>
@@ -198,7 +198,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_COMMUNIST</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_COMMUNIST</Tag>
 		<English>Democratic Republic of %s1</English>
 		<French>
 			<Text>R&#233;publique d&#233;mocratique de %s1</Text>
@@ -222,7 +222,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_FASCIST</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_FASCIST</Tag>
 		<English>National Gathering of %s1</English>
 		<French>
 			<Text>Rassemblement national de %s1</Text>
@@ -234,7 +234,7 @@
 		<Spanish>National Gathering of %s1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_NORSE_KINGDOMS</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_KINGDOMS</Tag>
 		<English>Norse Kingdoms</English>
 		<French>
 			<Text>Royaumes scandinaves</Text>
@@ -246,7 +246,7 @@
 		<Spanish>Norse Kingdoms</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_KALMAR_UNION</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_KALMAR_UNION</Tag>
 		<English>Kalmar Union</English>
 		<French>
 			<Text>Union de Kalmar</Text>
@@ -258,31 +258,7 @@
 		<Spanish>Kalmar Union</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_ALTHINGS</Tag>
-		<English>%s2 Althings</English>
-		<French>
-			<Text>Althings %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>%s2 Althings</German>
-		<Italian>%s2 Althings</Italian>
-		<Spanish>%s2 Althings</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_NORTH_SEA_EMPIRE</Tag>
-		<English>North Sea Empire</English>
-		<French>
-			<Text>Empire de la mer du Nord</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>North Sea Empire</German>
-		<Italian>North Sea Empire</Italian>
-		<Spanish>North Sea Empire</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_SWEDISH</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_SWEDISH</Tag>
 		<English>Swedish</English>
 		<French>
 			<Text>su&#233;dois:su&#233;doise:su&#233;dois:su&#233;doises</Text>
@@ -294,7 +270,7 @@
 		<Spanish>Swedish</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_DENMARK_NORWAY</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_DENMARK_NORWAY</Tag>
 		<English>Denmark-Norway</English>
 		<French>
 			<Text>Danemark-Norv&#232;ge</Text>
@@ -306,7 +282,7 @@
 		<Spanish>Denmark-Norway</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_NORWAY</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_NORWAY</Tag>
 		<English>Norway</English>
 		<French>
 			<Text>Norv&#232;ge</Text>
@@ -318,7 +294,7 @@
 		<Spanish>Norway</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_SWEDEN</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_SWEDEN</Tag>
 		<English>Sweden</English>
 		<French>
 			<Text>Su&#232;de</Text>
@@ -330,7 +306,7 @@
 		<Spanish>Sweden</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_DENMARK</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_DENMARK</Tag>
 		<English>Denmark</English>
 		<French>
 			<Text>Danemark</Text>
@@ -342,7 +318,7 @@
 		<Spanish>Denmark</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_SCANDINAVIA</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_SCANDINAVIA</Tag>
 		<English>Scandinavia</English>
 		<French>
 			<Text>Scandinavie</Text>
@@ -366,7 +342,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_NORSES_SCANDINAVIAN</Tag>
+		<Tag>TXT_KEY_CIV_NORSE_SCANDINAVIAN</Tag>
 		<English>Scandinavian</English>
 		<French>
 			<Text>scandinave:scandinave:scandinaves:scandinaves</Text>

@@ -504,7 +504,7 @@ def isUnitOfRole(iUnit, iRole):
 		return base_unit(iUnit) in [iAAGun, iMobileSAM]
 	elif iRole == iWorkSea:
 		return base_unit(iUnit) in [iWorkboat]
-	elif iRole in [iFerrySea, iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistSlave]:
+	elif iRole in [iFerrySea, iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]:
 		return base_unit(iUnit) in [iCanoe, iCaravel, iIndiaman, iBrigantine, iSteamship, iTransport, iCarrier]
 	elif iRole == iEscortSea:
 		return base_unit(iUnit) in [iSloop, iFrigate, iIronclad, iDestroyer, iStealthDestroyer]
@@ -542,16 +542,22 @@ def getUnitsForRole(iPlayer, iRole):
 	iUnit, iUnitAI = getUnitForRole(iPlayer, iRole)
 	units = [(iUnit, iUnitAI)]
 	
-	if iRole == iColonistSettle:	# Settler + N-1 Defenders
+	if iRole == iColonistSettle:	# Settler + Defender + Worker + N-3 Defenders
 		units.append(getUnitForRole(iPlayer, iSettle))
-		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
+		if infos.unit(iUnit).getCargoSpace() > 1:
 			units.append(getUnitForRole(iPlayer, iDefend))
+			if infos.unit(iUnit).getCargoSpace() > 2:
+				units.append(getUnitForRole(iPlayer, iWork))
+				if infos.unit(iUnit).getCargoSpace() > 3:
+					for _ in range(infos.unit(iUnit).getCargoSpace()-3):
+						units.append(getUnitForRole(iPlayer, iDefend))
 	
 	elif iRole == iColonistSupport:	# Work + Missionary + N-2 Defenders
 		units.append(getUnitForRole(iPlayer, iWork))
-		units.append(getUnitForRole(iPlayer, iMissionary))
-		for _ in range(infos.unit(iUnit).getCargoSpace()-2):
-			units.append(getUnitForRole(iPlayer, iDefend))
+		if infos.unit(iUnit).getCargoSpace() > 1:
+			units.append(getUnitForRole(iPlayer, iMissionary))
+			for _ in range(infos.unit(iUnit).getCargoSpace()-2):
+				units.append(getUnitForRole(iPlayer, iDefend))
 	
 	elif iRole == iColonistExplore:	# Recon + N-1 Missionaries
 		units.append(getUnitForRole(iPlayer, iRecon))
@@ -562,6 +568,10 @@ def getUnitsForRole(iPlayer, iRole):
 		units.append(getUnitForRole(iPlayer, iCitySiege))
 		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
 			units.append(getUnitForRole(iPlayer, iBase))
+	
+	elif iRole == iColonistDefend:	# N Defend
+		for _ in range(infos.unit(iUnit).getCargoSpace()):
+			units.append(getUnitForRole(iPlayer, iDefend))
 	
 	elif iRole == iColonistSlave:	# N Slaves
 		for _ in range(infos.unit(iUnit).getCargoSpace()):

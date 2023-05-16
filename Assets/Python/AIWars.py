@@ -354,11 +354,14 @@ def determineTargetPlayer(iPlayer):
 			
 		# no suicide
 		if iCiv == iNetherlands:
-			if iLoopCiv in [iFrance]:
+			if iLoopCiv in [iEngland]:
 				dTargetValues[iLoopPlayer] /= 2
-		elif iCiv == iPortugal:
-			if iLoopCiv == iSpain:
-				dTargetValues[iLoopPlayer] /= 2
+		
+		# Treaty of Tordesillas
+		if iCiv in [iSpain, iPortugal]:
+			if iLoopCiv in [iSpain, iPortugal]:
+				dTargetValues[iLoopPlayer] /= 4
+		
 				
 	return dict_max(dTargetValues)
 				

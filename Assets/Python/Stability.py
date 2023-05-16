@@ -617,28 +617,27 @@ def calculateStability(iPlayer):
 	
 	iExpansionStability += iIsolationismStability
 	
-	# European RP: Extra stability from Motherland
+	# MacAurther: European RP: Extra stability from Motherland
 	iMotherlandStability = 0
-	if iCiv == iEngland:
-		iMotherlandStability = 10
-	elif iCiv == iFrance:
-		iMotherlandStability = 10
-	elif iCiv == iNetherlands:
-		iMotherlandStability = 10
-	elif iCiv == iNorse:
-		iMotherlandStability = 5
-	elif iCiv == iPortugal:
-		iMotherlandStability = 5
-	elif iCiv == iRussia:
-		iMotherlandStability = 10
-	elif iCiv == iSpain:
-		iMotherlandStability = 15
-		
-	if iCurrentEra >= iRevolutionaryEra:
-		iMotherlandStability -= 20
+	if iCurrentEra < iRevolutionaryEra:
+		if iCiv == iEngland:
+			iMotherlandStability = 10
+		elif iCiv == iFrance:
+			iMotherlandStability = 10
+		elif iCiv == iNetherlands:
+			iMotherlandStability = 10
+		elif iCiv == iNorse:
+			iMotherlandStability = 5
+		elif iCiv == iPortugal:
+			iMotherlandStability = 5
+		elif iCiv == iRussia:
+			iMotherlandStability = 10
+		elif iCiv == iSpain:
+			iMotherlandStability = 15
 	
-	if iMotherlandStability < 0:
-		iMotherlandStability = 0
+	# MacAurther: Make Mississippi AI collapse because they like to stick around too long
+	if not pPlayer.isHuman() and iCiv == iMississippi and turn() > turn(dFall[iMississippi]):
+		iMotherlandStability = -25
 	
 	lParameters[iParameterMotherland] = iMotherlandStability
 	

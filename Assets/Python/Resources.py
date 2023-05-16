@@ -80,7 +80,7 @@ dResourcesDict = {
 	(30, 85)  : (1600,  iPotato),  # Idaho
 	(18, 87)  : (1600,  iPotato),  # Oregon
 	(23, 83)  : (1600,  iPotato),  # Utah
-	(49, 77)  : (1600,  iTobacco), # Virginia
+	(50, 78)  : (1600,  iTobacco), # Virginia
 	(47, 74)  : (1600,  iTobacco), # South Carolina
 	(21, 41)  : (1600,  iTobacco), # Alabama
 	(44, 77)  : (1600,  iTobacco), # Kentucky

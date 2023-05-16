@@ -232,7 +232,7 @@ iMaya : 900,
 iTeotihuacan : 1150,
 iTiwanaku : 1200,
 iWari : 1200,
-iMississippi : 1400,
+iMississippi : 1350,
 iPuebloan : 1650,
 iMuisca : 1600,
 iChimu : 1500,
@@ -453,11 +453,11 @@ iGreatGeneral : iFeGreatGeneral,
 iGreatSpy : iFeGreatSpy,
 }
 
-iNumUnitRoles = 24
+iNumUnitRoles = 25
 #				2				3				4				5				6				7				8				9				10
 (iSettle,		iWork,			iRecon,			iMissionary,	iDefend,		iBase,			iShock,			iCounter,		iSiege,			iHarass,
 iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,
-iColonistSupport, iColonistExplore, iColonistConquer, iColonistSlave) = range(iNumUnitRoles)
+iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave) = range(iNumUnitRoles)
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 50

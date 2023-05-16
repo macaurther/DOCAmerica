@@ -222,8 +222,8 @@ lCivilizations = [
 	Civilization(
 		iNorse,
 		iGold=50,
-		lCivics=[iMaritimeLaw, iCommonLaw, iMerchantTrade],
-		techs=techs.column(4).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
+		lCivics=[iExpeditionaries, iSerfdom, iMerchantTrade],
+		techs=techs.column(5).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iChimu,
@@ -253,7 +253,7 @@ lCivilizations = [
 	),
 	Civilization(
 		iIroquois,
-		iGold=600,
+		iGold=200,
 		lCivics=[iConfederacy, iCouncil],
 		techs=techs.column(2)
 	),
@@ -268,16 +268,16 @@ lCivilizations = [
 		iPortugal,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpeditionaries, iProprietaries, iSlavery, iMerchantTrade, iDivineRight, iTributaries],
+		lCivics=[iExpeditionaries, iProprietaries, iEncomienda, iMerchantTrade, iDivineRight, iTributaries],
 		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration, iOptics, iOfficials).without(*lNativeTechs)
 	),
 	Civilization(
 		iEngland,
 		iGold=200,
 		iStateReligion=iProtestantism,
-		lCivics=[iExpeditionaries, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
+		lCivics=[iCharterColony, iCommonLaw, iSerfdom, iMercantilism, iHaven],
 		lEnemies=[iSpain],
-		techs=techs.column(7).including(iShipbuilding, iCharter).without(*lNativeTechs)
+		techs=techs.column(7).including(iShipbuilding, iCharter, iCommunity).without(*lNativeTechs)
 	),
 	Civilization(
 		iFrance,
@@ -434,24 +434,24 @@ dStartingUnits = CivDict({
 	iAztecs: {
 		iSettle: 2,
 		iWork: 3,
-		iDefend: 2,
-		iBase: 2,
-		iShock: 4,
-		iHarass: 2,
+		iDefend: 3,
+		iBase: 4,
+		iShock: 6,
+		iHarass: 3,
 	},
 	iIroquois: {
 		iSettle: 1,
-		iWork: 2,
+		iWork: 1,
 		iDefend: 1,
 		iBase: 1,
 		iShock: 1,
 		iHarass: 1,
 	},
-	iSpain: {	
+	iSpain: {
 	},
 	iPortugal: {
 	},
-	iEngland: {	
+	iEngland: {
 	},
 	iFrance: {
 	},
