@@ -5265,6 +5265,12 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 	bool bTechFound;
 	int iI;
 
+	// MacAurther: Only a subset of units can receive goody
+	if(pUnit != NULL && !pUnit->canReceiveGoody())
+	{
+		return false;
+	}
+
 	if (GC.getGoodyInfo(eGoody).getExperience() > 0)
 	{
 		if ((pUnit == NULL) || !(pUnit->canAcquirePromotionAny()) || (GC.getGameINLINE().getElapsedGameTurns() < 10))

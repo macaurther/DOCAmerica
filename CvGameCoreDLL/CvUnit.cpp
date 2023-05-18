@@ -10276,8 +10276,8 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 			}
 		}
 
-		// MacAurther Goody Update: Tribes are only contacted by Explorers or Rangers
-		if (pNewPlot->isGoody(getTeam()) && (this->getUnitClassType() == UNITCLASS_EXPLORER || this->getUnitClassType() == UNITCLASS_RANGER))
+		// MacAurther: Tribes are only contacted by a subset of units
+		if (pNewPlot->isGoody(getTeam()) && canReceiveGoody())
 		{
 			GET_PLAYER(getOwnerINLINE()).doGoody(pNewPlot, this);
 		}
@@ -14788,5 +14788,14 @@ bool CvUnit::rebuild()
 		return true;
 	}
 
+	return false;
+}
+
+bool CvUnit::canReceiveGoody()
+{
+	if(getUnitClassType() == UNITCLASS_EXPLORER || getUnitClassType() == UNITCLASS_RANGER)
+	{
+		return true;
+	}
 	return false;
 }

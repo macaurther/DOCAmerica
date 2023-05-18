@@ -292,6 +292,9 @@ public:
 
 	bool isWorker() const;
 
+	// MacAurther
+	bool canReceiveGoody();
+
 	int upgradePrice(UnitTypes eUnit) const;																											// Exposed to Python
 	bool upgradeAvailable(UnitTypes eFromUnit, UnitClassTypes eToUnitClass, int iCount = 0) const;					// Exposed to Python
 	bool canUpgrade(UnitTypes eUnit, bool bTestVisible = false) const;														// Exposed to Python

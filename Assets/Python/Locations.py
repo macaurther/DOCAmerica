@@ -19,7 +19,7 @@ tColonistNovaScotia = 	((73, 86), (67, 86))
 tColonistCarolina = 	((57, 70), (48, 74))
 tColonistPennsylvania = ((61, 76), (53, 80))
 #  France
-tColonistQuebec = 		((75, 86), (58, 89)) #(x2)
+tColonistQuebec = 		((64, 91), (58, 89)) #(x2)
 tColonistLouisiana = 	((40, 66), (38, 69))
 #  Netherlands
 tColonistNewNetherlands =((63, 78), (56, 81))

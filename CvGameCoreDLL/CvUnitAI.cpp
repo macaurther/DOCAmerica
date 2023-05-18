@@ -10934,6 +10934,12 @@ bool CvUnitAI::AI_goody(int iRange)
 		return false;
 	}
 
+	// MacAurther: Only a subset of units can claim goodies
+	if (!canReceiveGoody())
+	{
+		return false;
+	}
+
 	iSearchRange = AI_searchRange(iRange);
 
 	iBestValue = 0;

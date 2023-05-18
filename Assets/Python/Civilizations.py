@@ -578,10 +578,8 @@ dStartingUnits = CivDict({
 	},
 }, {})
 
+# Extra units for AI
 dExtraAIUnits = CivDict({
-	iEngland: {
-		iShock: 2,
-	},
 	iAmerica: {
 		iBase: 1,
 	},
@@ -595,26 +593,11 @@ dExtraAIUnits = CivDict({
 	}
 }, {})
 
+# Extra units if civ starts at war
 dAdditionalUnits = CivDict({
 	iMaya: {
 		iBase: 2,
 		iShock: 2,
-	},
-	iSpain: {
-		iBase: 3,
-		iShock: 3,
-	},
-	iFrance: {
-		iBase: 3,
-		iShock: 3,
-	},
-	iEngland: {
-		iBase: 3,
-		iShock: 3,
-	},
-	iPortugal: {
-		iBase: 3,
-		iCounter: 3,
 	},
 	iInca: {
 		iShock: 5,
@@ -623,10 +606,6 @@ dAdditionalUnits = CivDict({
 	iAztecs: {
 		iShock: 5,
 		iBase: 3,
-	},
-	iNetherlands: {
-		iShock: 3,
-		iCounter: 3,
 	},
 	iAmerica: {
 		iShock: 3,
