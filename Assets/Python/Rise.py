@@ -161,7 +161,8 @@ def balanceMilitary(bWar, iAttacker, iDefender, bFromDefensivePact):
 		for _ in range(iAdditionalUnitsRequired):
 			createRoleUnits(iDefender, capital(iDefender), additionalUnits)
 			for iUnit, iAmount in specificAdditionalUnits:
-				iExperience = max(iRoleExperience for iRole, iRoleExperience in dStartingExperience[iDefender].items() if isUnitOfRole(iUnit, iRole))
+				lExperiences = [iRoleExperience for iRole, iRoleExperience in dStartingExperience[iDefender].items() if isUnitOfRole(iUnit, iRole)]
+				iExperience = lExperiences and max(lExperiences) or 0
 				makeUnits(iDefender, iUnit, capital(iDefender), iAmount).experience(iExperience)
 
 
@@ -469,6 +470,7 @@ class Birth(object):
 		return closePlots
 	
 	def revealTerritory(self):
+		# MacAurther Note: Peer and Neighbor Reveal were great features, but they slowed the spawn turn for later Europeans way down on a large map, so they were removed.
 		# reset visibility
 		for plot in plots.all():
 			plot.setRevealed(self.player.getID(), False, False, -1)
@@ -481,35 +483,7 @@ class Birth(object):
 		if self.isIndependence():
 			independenceRevealed = plots.sum(plots.owner(iOwner) for iOwner in self.area.cities().owners().major())
 		
-		# revealed by enough neighbours
-		neighbours = self.area.expand(3).owners().major().without(self.iPlayer)
-		neighbourRevealed = plots.sum(self.closeNeighbourPlots(iNeighbour) for iNeighbour in neighbours)
-		
-		# revealed by enough civilizations in your tech group
-		iTechGroup = next(iGroup for iGroup in dTechGroups if self.iCiv in dTechGroups[iGroup])
-		peers = players.major().alive().without(self.iPlayer).where(lambda p: civ(p) in dTechGroups[iTechGroup])
-		peerRevealed = plots.none()
-		
-		def isPeerRevealed(plot):
-			iRequiredPeers = plot.isWater() and peers.count() / 2 or peers.count() * 2 / 3
-			return count(peer for peer in peers if plot.isRevealed(player(peer).getTeam(), False)) >= min(iRequiredPeers, peers.count()-1)
-		
-		if peers.count() > 2:
-			peerRevealed += plots.all().where(isPeerRevealed).expand(1)
-		
-		bCanNeighbourReveal = revealed.intersect(neighbourRevealed)
-		bCanPeerReveal = revealed.intersect(peerRevealed)
-		
 		revealed += independenceRevealed
-		
-		if bCanNeighbourReveal:
-			revealed += neighbourRevealed
-			
-		iVisionRange = self.player.getCurrentEra() / 2 + 1
-		revealed = revealed.expand(iVisionRange)
-		
-		if bCanPeerReveal:
-			revealed += peerRevealed
 		
 		# reveal tiles
 		for plot in revealed:
@@ -670,19 +644,8 @@ class Birth(object):
 	def prepare(self):
 		events.fireEvent("prepareBirth", self.iCiv)
 	
-	def birthProtectionTurns(self):
-		iTurns = 20
-		
-		if self.player.isHuman():
-			iTurns = 10
-		
-		if game.getCurrentEra() >= iRevolutionaryEra:
-			iTurns = 10
-		
-		return turns(iTurns)
-	
 	def protect(self):
-		self.protectionEnd = self.iTurn + self.birthProtectionTurns()
+		self.protectionEnd = self.iTurn + turns(10)
 		self.player.setBirthProtected(True)
 	
 		for plot in self.area:
