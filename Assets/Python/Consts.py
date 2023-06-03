@@ -459,6 +459,8 @@ iNumUnitRoles = 25
 iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,
 iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave) = range(iNumUnitRoles)
 
+lColonistRoles = [iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]
+
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 50
 #				2				3				4				5				6				7				8				9				10

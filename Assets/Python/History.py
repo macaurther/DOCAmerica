@@ -434,8 +434,6 @@ def giveColonists(iPlayer):
 				# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
 				tPlot = dColonistSpawns[iCiv][iColonistIndex][1][1]
 			
-			iReligion = player(iPlayer).getStateReligion()
-			
 			for iRole in dColonistSpawns[iCiv][iColonistIndex][2]:
 				units = createRoleUnit(iPlayer, tPlot, iRole, 1)
 				units.promotion(infos.type("PROMOTION_MERCENARY"))

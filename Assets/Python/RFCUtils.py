@@ -449,14 +449,16 @@ def getRoleAI(iRole):
 		return UnitAITypes.UNITAI_WORKER_SEA
 	elif iRole == iSettle:
 		return UnitAITypes.UNITAI_SETTLE
-	elif iRole == iFerrySea:
+	elif iRole in [iFerrySea, iColonistSettle, iColonistSupport, iColonistDefend, iColonistSlave]:
 		return UnitAITypes.UNITAI_SETTLER_SEA
 	elif iRole == iCapitalSea:
 		return UnitAITypes.UNITAI_ATTACK_SEA
-	elif iRole == iHarassSea:
+	elif iRole in [iHarassSea, iColonistConquer]:
 		return UnitAITypes.UNITAI_ASSAULT_SEA
 	elif iRole == iEscortSea:
 		return UnitAITypes.UNITAI_ESCORT_SEA
+	elif iRole == iColonistExplore:
+		return UnitAITypes.UNITAI_EXPLORE_SEA
 	elif iRole == iRecon:
 		return UnitAITypes.UNITAI_EXPLORE
 	elif iRole in [iHarass, iHarassCav, iSiege]:
@@ -542,40 +544,48 @@ def getUnitsForRole(iPlayer, iRole):
 	iUnit, iUnitAI = getUnitForRole(iPlayer, iRole)
 	units = [(iUnit, iUnitAI)]
 	
-	if iRole == iColonistSettle:	# Settler + Defender + Worker + N-3 Defenders
-		units.append(getUnitForRole(iPlayer, iSettle))
-		if infos.unit(iUnit).getCargoSpace() > 1:
-			units.append(getUnitForRole(iPlayer, iDefend))
-			if infos.unit(iUnit).getCargoSpace() > 2:
-				units.append(getUnitForRole(iPlayer, iWork))
-				if infos.unit(iUnit).getCargoSpace() > 3:
-					for _ in range(infos.unit(iUnit).getCargoSpace()-3):
-						units.append(getUnitForRole(iPlayer, iDefend))
-	
-	elif iRole == iColonistSupport:	# Work + Missionary + N-2 Defenders
-		units.append(getUnitForRole(iPlayer, iWork))
-		if infos.unit(iUnit).getCargoSpace() > 1:
-			units.append(getUnitForRole(iPlayer, iMissionary))
-			for _ in range(infos.unit(iUnit).getCargoSpace()-2):
-				units.append(getUnitForRole(iPlayer, iDefend))
-	
-	elif iRole == iColonistExplore:	# Recon + N-1 Missionaries
-		units.append(getUnitForRole(iPlayer, iRecon))
-		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
-			units.append(getUnitForRole(iPlayer, iMissionary))
-	
-	elif iRole == iColonistConquer:	# CitySiege + N-1 Base
-		units.append(getUnitForRole(iPlayer, iCitySiege))
-		for _ in range(infos.unit(iUnit).getCargoSpace()-1):
-			units.append(getUnitForRole(iPlayer, iBase))
-	
-	elif iRole == iColonistDefend:	# N Defend
-		for _ in range(infos.unit(iUnit).getCargoSpace()):
-			units.append(getUnitForRole(iPlayer, iDefend))
-	
-	elif iRole == iColonistSlave:	# N Slaves
-		for _ in range(infos.unit(iUnit).getCargoSpace()):
-			units.append([iSlave, UnitAITypes.UNITAI_WORKER])
+	if iRole in lColonistRoles:
+		iCargoSpace = infos.unit(iUnit).getCargoSpace()
+		
+		if iRole == iColonistSettle:	# Settler + Ferry + Defender + Worker + N-3 Defenders
+			units.append(getUnitForRole(iPlayer, iSettle))
+			if iCargoSpace > 1:
+				tDefend = getUnitForRole(iPlayer, iDefend)
+				units.append(tDefend)
+				if iCargoSpace > 2:
+					units.append(getUnitForRole(iPlayer, iWork))
+					if iCargoSpace > 3:
+						for _ in range(iCargoSpace - 3):
+							units.append(tDefend)
+		
+		elif iRole == iColonistSupport:	# Work + Ferry + Missionary + N-2 Defenders
+			units.append(getUnitForRole(iPlayer, iWork))
+			if iCargoSpace > 1:
+				units.append(getUnitForRole(iPlayer, iMissionary))
+				tDefend = getUnitForRole(iPlayer, iDefend)
+				for _ in range(iCargoSpace - 2):
+					units.append(tDefend)
+		
+		elif iRole == iColonistExplore:	# Recon + Ferry + N-1 Missionaries
+			units.append(getUnitForRole(iPlayer, iRecon))
+			tMissionary = getUnitForRole(iPlayer, iMissionary)
+			for _ in range(iCargoSpace - 1):
+				units.append(tMissionary)
+		
+		elif iRole == iColonistConquer:	# CitySiege + Ferry + N-1 Base
+			units.append(getUnitForRole(iPlayer, iCitySiege))
+			tBase = getUnitForRole(iPlayer, iBase)
+			for _ in range(iCargoSpace - 1):
+				units.append(tBase)
+		
+		elif iRole == iColonistDefend:	# Ferry + N Defend
+			tDefend = getUnitForRole(iPlayer, iDefend)
+			for _ in range(iCargoSpace):
+				units.append(tDefend)
+		
+		elif iRole == iColonistSlave:	# Ferry + N Slaves
+			for _ in range(iCargoSpace):
+				units.append([iSlave, UnitAITypes.UNITAI_WORKER])
 	
 	return units
 
