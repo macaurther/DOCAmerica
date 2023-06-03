@@ -338,16 +338,25 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeHealRate(10);
 	}
 
+	// MacAurther: Starting population per era:
+	//  Pre Columbian:  1
+	//  Exploration:    2
+	//  Colonial:       2
+	//  Revolutionary:  3
+	//  Industrial:     3
+	//  Modern:         4
+	//  Atomic:         4
 	int iCurrentEra = GET_PLAYER(eOwner).getCurrentEra();
-	int iExtraPopulation = iCurrentEra > 0 ? iCurrentEra : 0;
+	int iExtraPopulation = iCurrentEra > 0 ? (iCurrentEra + 1) / 2 : 0;
 
-	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)EXPLORATION))
+	// MacAurther: No extra population for colonies
+	/*if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)EXPLORATION))
 	{
 		if (isColony())
 		{
 			iExtraPopulation += 1;
 		}
-	}
+	}*/
 
 	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
 	//changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPop);

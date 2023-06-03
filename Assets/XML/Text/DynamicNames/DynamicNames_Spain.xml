@@ -262,30 +262,6 @@
 		<Spanish>%s2 %s1</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_MALI</Tag>
-		<English>%s2 West Africa</English>
-		<French>
-			<Text>Afrique occidentale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2-Westafrika:%s2-Westafrika:%s2-Westafrika</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Africa Occidentale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>&#193;frica Occidental %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_SPANISH_PORTUGAL</Tag>
 		<English>Autonomous Community of %s1</English>
 		<French>
@@ -358,52 +334,12 @@
 		<Spanish>Viceroyalty of New Granada</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_NAME_KHMER</Tag>
-		<English>Indochina</English>
-		<French>
-			<Text>Indochine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Indochina:Indochina:Indochina</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Indocina</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Indochina</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_NAME_AZTECS</Tag>
-		<English>New Spain</English>
-		<French>
-			<Text>Nouvelle-Espagne</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>New Spain</German>
-		<Italian>New Spain</Italian>
-		<Spanish>New Spain</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_SPANISH_NAME_MUGHALS</Tag>
-		<English>West India</English>
-		<French>
-			<Text>Inde de l'ouest</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>West India</German>
-		<Italian>West India</Italian>
-		<Spanish>West India</Spanish>
+		<Tag>TXT_KEY_CIV_SPANISH_AZTECS</Tag>
+		<English>Provincia de M&#233;xico</English>
+		<French>Provincia de M&#233;xico</French>
+		<German>Provincia de M&#233;xico</German>
+		<Italian>Provincia de M&#233;xico</Italian>
+		<Spanish>Provincia de M&#233;xico</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>
