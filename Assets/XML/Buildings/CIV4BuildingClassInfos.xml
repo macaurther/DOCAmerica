@@ -154,15 +154,6 @@
 			<DefaultBuilding>BUILDING_STOCKS</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_HEADRIGHT</Type>
-			<Description>TXT_KEY_BUILDING_HEADRIGHT</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_HEADRIGHT</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_TRADING_POST</Type>
 			<Description>TXT_KEY_BUILDING_TRADING_POST</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

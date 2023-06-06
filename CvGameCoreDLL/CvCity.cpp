@@ -19273,10 +19273,6 @@ int CvCity::calculateImmigrationRate()
 
 	// Immigration Modifiers
 	int iImmigrationModifier = 100;
-	if (isHasBuildingEffect((BuildingTypes)BUILDING_HEADRIGHT))
-	{
-		iImmigrationModifier += 25;
-	}
 	if (isHasBuildingEffect((BuildingTypes)BUILDING_SLAVE_MARKET) && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
 	{
 		iImmigrationModifier += 50;

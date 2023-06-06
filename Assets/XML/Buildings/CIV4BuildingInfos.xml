@@ -1340,32 +1340,6 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_HEADRIGHT</BuildingClass>
-			<Type>BUILDING_HEADRIGHT</Type>
-			<Description>TXT_KEY_BUILDING_HEADRIGHT</Description>
-			<Civilopedia>TXT_KEY_BUILDING_HEADRIGHT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_HEADRIGHT_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_HEADRIGHT_HELP</Help>
-			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_HEADRIGHT</ArtDefineTag>
-			<PrereqTech>TECH_DIPLOMACY</PrereqTech>
-			<ObsoleteTech>TECH_PIONEERING</ObsoleteTech>
-			<bNeverCapture>1</bNeverCapture>
-			<iCost>50</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iAsset>2</iAsset>
-			<iPower>3</iPower>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ConstructSound>AS2D_BUILD_HEADRIGHT</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>10</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_TRADING_POST</BuildingClass>
 			<Type>BUILDING_TRADING_POST</Type>
 			<Description>TXT_KEY_BUILDING_TRADING_POST</Description>
