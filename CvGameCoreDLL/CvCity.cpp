@@ -19232,8 +19232,8 @@ int CvCity::calculateImmigrationRate()
 		iImmigrationRate += iBaseCulture / getPopulation();
 	}
 
-	// Get Immigration Value from Ships if owner has Community Tech
-	if (GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)COMMUNITY))
+	// Get Immigration Value from Ships if city has a Harbor
+	if (hasBuilding((BuildingTypes)BUILDING_HARBOR))
 	{
 		int iFreeCapacity = 0;
 		int iMaxShipImmigration = MAX_IMMIGRATION_FROM_SHIPS;
