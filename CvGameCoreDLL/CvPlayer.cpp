@@ -6377,6 +6377,10 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_TEMPLE_OF_KUKULKAN, MAYA)) return false;
 
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_SERPENT_MOUND, MISSISSIPPI)) return false;
+
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_GATE_OF_THE_SUN, TIWANAKU)) return false;
+
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_ITAIPU_DAM, BRAZIL)) return false;
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_CRISTO_REDENTOR, BRAZIL)) return false;
 	}

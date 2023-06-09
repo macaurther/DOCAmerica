@@ -195,15 +195,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY</Tag>
-		<English>Constitutional Monarchy</English>
-		<French>
-			<Text>Constitutional Monarchie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Constitutional Monarchy</German>
-		<Italian>Constitutional Monarchy</Italian>
-		<Spanish>Constitutional Monarchy</Spanish>
+		<English>Monarchy</English>
+		<French>Monarchy</French>
+		<German>Monarchy</German>
+		<Italian>Monarchy</Italian>
+		<Spanish>Monarchy</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Tag>

@@ -235,7 +235,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -458,7 +458,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -549,7 +549,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -739,7 +739,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -791,7 +791,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -842,7 +842,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_SMELTING</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -965,16 +965,16 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_REMOVE_SWAMP</Type>
-			<Description>TXT_KEY_BUILD_REMOVE_SWAMP</Description>
+			<Type>BUILD_REMOVE_PALM_FOREST</Type>
+			<Description>TXT_KEY_BUILD_REMOVE_PALM_FOREST</Description>
 			<iTime>0</iTime>
 			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
-					<iTime>400</iTime>
-					<iProduction>30</iProduction>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_MINING</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -986,16 +986,16 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_REMOVE_PALM_FOREST</Type>
-			<Description>TXT_KEY_BUILD_REMOVE_PALM_FOREST</Description>
+			<Type>BUILD_REMOVE_SWAMP</Type>
+			<Description>TXT_KEY_BUILD_REMOVE_SWAMP</Description>
 			<iTime>0</iTime>
 			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
-					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>10</iProduction>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>

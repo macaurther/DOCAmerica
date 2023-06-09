@@ -193,25 +193,22 @@ lCivilizations = [
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(1).including(iAgriculture, iPastoralism)
+		techs=techs.column(1).including(iAgriculture, iPastoralism, iMining)
 	),
 	Civilization(
 		iWari,
 		iGold=100,
-		lCivics=[],
 		techs=techs.column(2).without(iSailing)
 	),
 	Civilization(
 		iMississippi,
-		iGold=50,
-		lCivics=[iCouncil, iCraftsmen],
-		techs=techs.column(2)
+		iGold=25,
+		techs=techs.column(2).without(iSailing, iPastoralism, iMining)
 	),
 	Civilization(
 		iPuebloan,
 		iGold=50,
-		lCivics=[iCouncil],
-		techs=techs.column(2).including(iMasonry).without(iSailing)
+		techs=techs.column(2).including(iMasonry).without(iSailing, iPastoralism)
 	),
 	Civilization(
 		iMuisca,
@@ -228,8 +225,8 @@ lCivilizations = [
 	Civilization(
 		iChimu,
 		iGold=300,
-		lCivics=[iDespotism, iCraftsmen, iMerchantTrade, iCasteSystem],
-		techs=techs.column(2)
+		lCivics=[iDespotism, iCraftsmen, iMerchantTrade],
+		techs=techs.column(2).including(iArtisanry, iProperty, iNavigation)
 	),
 	Civilization(
 		iInuit,
@@ -247,7 +244,7 @@ lCivilizations = [
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism, iSlavery, iMerchantTrade, iCasteSystem, iTributaries],
+		lCivics=[iDespotism, iCaptives, iTributaries],
 		lEnemies=[iTeotihuacan],
 		techs=techs.column(3).including(iCalendar).without(iNavigation)
 	),
@@ -290,7 +287,7 @@ lCivilizations = [
 		iNetherlands,
 		iGold=600,
 		iStateReligion=iProtestantism,
-		lCivics=[iExpeditionaries, iTradeCompany, iSerfdom, iMerchantTrade, iDivineRight],
+		lCivics=[iTradeCompany, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
 		techs=techs.column(7).including(iEconomics, iShipbuilding).without(*lNativeTechs)
 	),
 	Civilization(
@@ -401,7 +398,8 @@ dStartingUnits = CivDict({
 	iPuebloan: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iDefend: 1,
+		iRecon: 1,
 	},
 	iMuisca: {
 		iSettle: 1,
@@ -412,7 +410,7 @@ dStartingUnits = CivDict({
 	iNorse: {
 	},
 	iChimu: {
-		iSettle: 1,
+		iSettle: 2,
 		iWork: 1,
 		iDefend: 2,
 		iBase: 1,
@@ -805,6 +803,13 @@ dDefaultWonderPreferences = {
 dBuildingPreferences = {
 	iMaya : {
 		iTempleOfKukulkan: 40,
+		iMachuPicchu: -40,
+	},
+	iTiwanaku : {
+		iGateOfTheSun: 40,
+	},
+	iMississippi : {
+		iSerpentMound: 40,
 	},
 	iSpain : {
 		iGuadalupeBasilica: 30,
@@ -823,12 +828,11 @@ dBuildingPreferences = {
 	},
 	iInca : {
 		iMachuPicchu: 40,
-		iTempleOfKukulkan: 20,
+		iSacsayhuaman: 40,
 	},
 	iAztecs : {
 		iFloatingGardens: 40,
-		iTempleOfKukulkan: 30,
-		
+		iHueyTeocalli: 30,
 		iMachuPicchu: -40,
 	},
 	iNetherlands : {

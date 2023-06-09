@@ -11084,6 +11084,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=89
+	BonusType=BONUS_FUR
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
@@ -18552,7 +18553,6 @@ EndPlot
 BeginPlot
 	x=32,y=58
 	BonusType=BONUS_STONE
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -20512,6 +20512,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=91
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -20539,6 +20540,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=96
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -24864,6 +24866,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=43
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25437,6 +25440,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=40
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -26018,7 +26022,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=39
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -26049,7 +26052,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=44
-	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -26643,6 +26645,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=44
+	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -27530,6 +27533,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=92
+	BonusType=BONUS_FUR
 	isNOfRiver
 	RiverWEDirection=1
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
@@ -30613,6 +30617,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=93
+	BonusType=BONUS_FUR
 	isNOfRiver
 	RiverWEDirection=3
 	TerrainType=TERRAIN_TUNDRA
@@ -34923,6 +34928,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=90
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -36158,6 +36164,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=93
+	BonusType=BONUS_FUR
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -37371,6 +37378,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=97
+	BonusType=BONUS_FUR
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -38496,6 +38504,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=88
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2

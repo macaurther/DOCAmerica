@@ -650,6 +650,42 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+			<Type>CIVIC_CAPTIVES</Type>
+			<Description>TXT_KEY_CIVIC_CAPTIVES</Description>
+			<Civilopedia>TXT_KEY_CIVIC_CAPTIVES_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_CAPTIVES_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_CAPTIVES_HELP</Help>
+			<TechPrereq>TECH_MINING</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Captives.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>1</iCultureGroup>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+			<Type>CIVIC_ENCOMIENDA</Type>
+			<Description>TXT_KEY_CIVIC_ENCOMIENDA</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ENCOMIENDA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ENCOMIENDA_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Help>
+			<TechPrereq>TECH_JUDICIARY</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Encomienda.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_CRAFTSMEN</Type>
 			<Description>TXT_KEY_CIVIC_CRAFTSMEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CRAFTSMEN_PEDIA</Civilopedia>
@@ -679,42 +715,6 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-			<Type>CIVIC_ENCOMIENDA</Type>
-			<Description>TXT_KEY_CIVIC_ENCOMIENDA</Description>
-			<Civilopedia>TXT_KEY_CIVIC_ENCOMIENDA_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_ENCOMIENDA_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Help>
-			<TechPrereq>TECH_JUDICIARY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Encomienda.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
-			<Upkeep>UPKEEP_LOW</Upkeep>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-			<Type>CIVIC_CAPTIVES</Type>
-			<Description>TXT_KEY_CIVIC_CAPTIVES</Description>
-			<Civilopedia>TXT_KEY_CIVIC_CAPTIVES_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_CAPTIVES_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_CAPTIVES_HELP</Help>
-			<TechPrereq>TECH_MINING</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Captives.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
-			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>

@@ -19,19 +19,18 @@ from Core import *
 
 ### Event Handlers ###
 
-@handler("GameStart")
-def setup():
-	data.iCongressTurns = getCongressInterval()
-
 @handler("BeginActivePlayerTurn")
 def checkTurn(iPlayer, iGameTurn):
 	if isCongressEnabled():
-		if data.iCongressTurns > 0:
-			data.iCongressTurns -= 1
-	
-		if data.iCongressTurns == 0:
-			data.iCongressTurns = getCongressInterval()
+		if turn() == data.iCongressTurn:
 			Congress().start()
+			scheduleCongress()
+
+
+@handler("techAcquired")
+def onTechAcquired(iTech):
+	if iTech == iNationalism and game.countKnownTechNumTeams(iNationalism) == 1:
+		scheduleCongress()
 
 
 @handler("changeWar")
@@ -57,6 +56,12 @@ def onChangeWar(bWar, iPlayer, iOtherPlayer):
 
 def getCongressInterval():
 	return turns(15)
+	
+def scheduleCongress():
+	if data.iCongressTurn <= turn():
+		data.iCongressTurn = turn() + getCongressInterval()
+	else:
+		data.iCongressTurn = min(data.iCongressTurn, turn() + getCongressInterval())
 
 def isCongressEnabled():
 	if data.bNoCongressOption:
@@ -89,7 +94,7 @@ def endGlobalWar(iAttacker, iDefender):
 	if not player(iAttacker).isAlive() or not player(iDefender).isAlive():
 		return
 		
-	if data.iCongressTurns == getCongressInterval():
+	if data.iCongressTurn == turn() + getCongressInterval():
 		return
 	
 	lAttackers = [iAttacker]
@@ -537,13 +542,13 @@ class Congress:
 			
 		# normal congresses during war time may be too small because all civilisations are tied up in global wars
 		if len(self.invites) < 3:
-			data.iCongressTurns /= 2
+			data.iCongressTurn = turn() + getCongressInterval() / 2
 			data.currentCongress = None
 			return
 		
 		# if a war congress would be followed by a normal congress, delay it
-		if self.bPostWar and data.iCongressTurns <= 1:
-			data.iCongressTurns = getCongressInterval()
+		if self.bPostWar and data.iCongressTurn <= turn() + 1:
+			data.iCongressTurn = turn() + getCongressInterval()
 		
 		# establish contact between all participants
 		for iThisPlayer in self.invites:
@@ -551,8 +556,12 @@ class Congress:
 				if iThisPlayer != iThatPlayer:
 					tThisPlayer = team(iThisPlayer)
 					if not tThisPlayer.canContact(iThatPlayer): tThisPlayer.meet(iThatPlayer, False)
-
-		self.sHostCityName = cities.core(iHostPlayer).owner(iHostPlayer).random().getName()
+		
+		# MacAurther: Handle the case where the host does not have core cities
+		pHostCity = cities.core(iHostPlayer).owner(iHostPlayer).random()
+		if pHostCity == None:
+			pHostCity = cities.owner(iHostPlayer).random()
+		self.sHostCityName = pHostCity.getName()
 		
 		# moved selection of claims after the introduction event so claims and their resolution take place at the same time
 		if active() in self.invites:
@@ -790,6 +799,8 @@ class Congress:
 		bCity = plot.isCity()
 		bOwner = (iOwner >= 0)
 		bOwnClaim = (iClaimant == iVoter)
+		
+		print("iClaimant: " + str(iClaimant))
 		
 		bRecolonise = plot.getRegionID() in lAmerica and civ(iClaimant) in dCivGroups[iCivGroupEurope] and civ(iOwner) in dCivGroups[iCivGroupAmerica] and civ(iOwner) in dTechGroups[iTechGroupWestern]
 		
@@ -1188,7 +1199,7 @@ class Congress:
 			self.invites = self.invites.without(lAttackers)
 			self.invites = self.invites.without(lDefenders)
 			
-		self.invites = self.invites.alive()
+		self.invites = self.invites.alive().where(lambda p: player(p).getNumCities() > 0)
 		
 		# America receives an invite if there are still claims in the west
 		if player(iAmerica).isAlive() and iAmerica not in self.invites and not self.bPostWar:

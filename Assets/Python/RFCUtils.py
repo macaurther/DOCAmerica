@@ -572,8 +572,8 @@ def getUnitsForRole(iPlayer, iRole):
 			for _ in range(iCargoSpace - 1):
 				units.append(tMissionary)
 		
-		elif iRole == iColonistConquer:	# CitySiege + Ferry + N-1 Base
-			units.append(getUnitForRole(iPlayer, iCitySiege))
+		elif iRole == iColonistConquer:	# SiegeCity + Ferry + N-1 Base
+			units.append(getUnitForRole(iPlayer, iSiegeCity))
 			tBase = getUnitForRole(iPlayer, iBase)
 			for _ in range(iCargoSpace - 1):
 				units.append(tBase)

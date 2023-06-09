@@ -2183,9 +2183,9 @@ enum CivicTypes						// Exposed to Python
 
 	CIVIC_TRADITIONALISM,			// Culture Group 1
 	CIVIC_SERFDOM,					// Culture Group 2
-	CIVIC_CRAFTSMEN,				// Culture Group 1
-	CIVIC_ENCOMIENDA,				// Culture Group 2
 	CIVIC_CAPTIVES,					// Culture Group 1
+	CIVIC_ENCOMIENDA,				// Culture Group 2
+	CIVIC_CRAFTSMEN,				// Culture Group 1
 	CIVIC_INDENTURED_SERVITUDE,		// Culture Group 2
 	CIVIC_SLAVERY,					// Culture Group 0
 	CIVIC_INDUSTRIALISM,			// Culture Group 0

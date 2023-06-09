@@ -1139,7 +1139,6 @@
 			<Civilopedia>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
 			<UnitClassUpgrades>
@@ -1268,6 +1267,10 @@
 					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<Builds>
@@ -1342,7 +1345,17 @@
 					<UnitAIType>UNITAI_EXPLORE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
 			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_CAMP</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1351,6 +1364,7 @@
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>4</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iWorkRate>100</iWorkRate>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iAsset>2</iAsset>

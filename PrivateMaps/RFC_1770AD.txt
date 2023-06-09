@@ -394,6 +394,10 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=6,y=102
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
 	x=8,y=98
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -431,6 +435,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=88
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=17,y=98
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -482,6 +490,10 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=25,y=102
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
 	x=26,y=62
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -519,6 +531,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=82
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=100
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -563,6 +579,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=80
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=35,y=97
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -614,6 +634,10 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=41,y=95
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
 	x=42,y=77
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -627,10 +651,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=85
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
-EndPlot
-BeginPlot
-	x=44,y=41
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -651,6 +671,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=52
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=92
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -718,6 +742,10 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=53,y=94
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
 	x=54,y=16
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -727,6 +755,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=59
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=96
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -803,6 +835,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=46
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=96
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot

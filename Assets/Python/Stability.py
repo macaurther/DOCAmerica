@@ -1077,10 +1077,10 @@ def getCivicStability(iPlayer, civics=None):
 		if iNationhood in civics: iStability -= 2
 	
 	# Labor
-	if iCraftsmen in civics:
-		if iMerchantTrade in civics: iStability += 1
-		if iMercantilism in civics: iStability += 3
+	if iCaptives in civics:
 		if iCasteSystem in civics: iStability += 2
+		if iConquest in civics: iStability += 3
+		if iOpportunity in civics: iStability -= 2
 	
 	if iEncomienda in civics:
 		if iGloriaInDeo in civics: iStability += 2
@@ -1089,10 +1089,10 @@ def getCivicStability(iPlayer, civics=None):
 		if iOpportunity in civics: iStability -= 3
 		if iMulticulturalism in civics: iStability -= 3
 	
-	if iCaptives in civics:
+	if iCraftsmen in civics:
+		if iMerchantTrade in civics: iStability += 1
+		if iMercantilism in civics: iStability += 3
 		if iCasteSystem in civics: iStability += 2
-		if iConquest in civics: iStability += 3
-		if iOpportunity in civics: iStability -= 2
 	
 	if iIndenturedServitude in civics:
 		if iHomesteads in civics: iStability += 2
