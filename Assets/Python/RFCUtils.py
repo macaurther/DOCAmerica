@@ -243,7 +243,7 @@ def relocateSeaGarrisons(tCityPlot, iOldOwner):
 
 # used: Congresses, RFCUtils, Rules
 def createGarrisons(tCityPlot, iNewOwner, iNumUnits):
-	createRoleUnit(iNewOwner, tCityPlot, iBase, iNumUnits)
+	createRoleUnit(iNewOwner, tCityPlot, iDefend, iNumUnits)
 
 # used: Rise, Stability
 def clearPlague(iPlayer):
@@ -1006,7 +1006,7 @@ def flipOrCreateDefenders(iNewOwner, units, tPlot, iNumDefenders):
 		flipUnit(unit, iNewOwner, tPlot)
 
 	if len(units) < iNumDefenders and active() != iNewOwner:
-		createRoleUnit(iNewOwner, tPlot, iBase, iNumDefenders - len(units))
+		createRoleUnit(iNewOwner, tPlot, iDefend, iNumDefenders - len(units))
 		
 # used: Congresses, Stability
 def killUnits(lUnits):
@@ -1018,7 +1018,7 @@ def killUnits(lUnits):
 def ensureDefenders(iPlayer, tPlot, iNumDefenders):
 	defenders = units.at(tPlot).owner(iPlayer).where(lambda unit: isUnitOfRole(unit, iDefend))
 	iNumRequired = max(0, iNumDefenders - defenders.count())
-	return createRoleUnit(iPlayer, tPlot, iBase, iNumRequired)
+	return createRoleUnit(iPlayer, tPlot, iDefend, iNumRequired)
 	
 # used: CvDawnOfMan
 def getDawnOfManText(iPlayer):

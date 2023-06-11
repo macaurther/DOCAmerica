@@ -31,7 +31,7 @@ typedef list<char*> LISTCHAR;
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther
 #define UNITCLASS_HORSE_ARCHER	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_HORSE_ARCHER"))					// MacAurther
-#define UNITCLASS_MUSKETMAN		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_MUSKETMAN"))					// MacAurther
+#define UNITCLASS_ARQUEBUSIER	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_ARQUEBUSIER"))					// MacAurther
 #define UNITCLASS_SLAVE			((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))
 
 #define IMPROVEMENT_COTTAGE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE"))					// MacAurther

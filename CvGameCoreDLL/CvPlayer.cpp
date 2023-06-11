@@ -5993,7 +5993,7 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 	if (!(GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getUnitInfo(eUnit).getPrereqAndTech()))))
 	{
 		// MacAurther: Merchant Trade Civic
-		bool bMerhcantTradeAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_MUSKETMAN && hasCivic(CIVIC_MERCHANT_TRADE) && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)ECONOMICS) > 0;
+		bool bMerhcantTradeAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_ARQUEBUSIER && hasCivic(CIVIC_MERCHANT_TRADE) && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)ECONOMICS) > 0;
 
 		// MacAurther: Old World Tactics Tech
 		bool bOldWorldTacticsAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_HORSE_ARCHER && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)OLD_WORLD_TACTICS) > 0;

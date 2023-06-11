@@ -578,12 +578,6 @@
 					<iExperience>2</iExperience>
 				</DomainFreeExperience>
 			</DomainFreeExperiences>
-			<BonusProductionModifiers>
-				<BonusProductionModifier>
-					<BonusType>BONUS_STONE</BonusType>
-					<iProductonModifier>100</iProductonModifier>
-				</BonusProductionModifier>
-			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -1635,24 +1629,28 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SCHOOLHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>30</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_LIBRARY</ConstructSound>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1</iCommerce>
+				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_TIMBER</BonusType>
@@ -2478,17 +2476,17 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_UNIVERSITY</ArtDefineTag>
 			<PrereqTech>TECH_ACADEMIA</PrereqTech>
-			<iCost>300</iCost>
+			<iCost>240</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>4</iAsset>
-			<iGreatPeopleRateModifier>35</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
-				<iCommerce>15</iCommerce>
-				<iCommerce>15</iCommerce>
+				<iCommerce>25</iCommerce>
+				<iCommerce>25</iCommerce>
 			</CommerceModifiers>
 			<SpecialistCounts>
 				<SpecialistCount>
