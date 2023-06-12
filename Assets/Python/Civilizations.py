@@ -368,7 +368,7 @@ lCivilizations = [
 		iCanada,
 		iGold=1000,
 		iStateReligion=iProtestantism,
-		lCivics=[iDominion, iFederalism, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
+		lCivics=[iMonarchy, iFederalism, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
 		techs=techs.column(15)
 	),
 	Civilization(
@@ -555,7 +555,7 @@ dStartingUnits = CivDict({
 		iEscortSea: 1,
 	},
 	iCanada: {
-		iSettle: 6,
+		iSettle: 8,
 		iWork: 3,
 		iDefend: 6,
 		iBase: 5,

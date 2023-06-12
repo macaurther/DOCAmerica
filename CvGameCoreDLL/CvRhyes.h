@@ -34,13 +34,6 @@ typedef list<char*> LISTCHAR;
 #define UNITCLASS_ARQUEBUSIER	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_ARQUEBUSIER"))					// MacAurther
 #define UNITCLASS_SLAVE			((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))
 
-#define IMPROVEMENT_COTTAGE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_COTTAGE"))					// MacAurther
-#define IMPROVEMENT_PLANTATION	((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_PLANTATION"))				// MacAurther
-#define IMPROVEMENT_SLAVE_PLANTATION	((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_SLAVE_PLANTATION"))	// MacAurther
-#define IMPROVEMENT_FORT		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_FORT"))						// MacAurther
-#define IMPROVEMENT_TRIBE		((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_TRIBE"))					// MacAurther
-#define IMPROVEMENT_CONTACTED_TRIBE ((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_CONTACTED_TRIBE"))		// MacAurther
-
 #define NUM_NATIVE_TECHS		((TechTypes)FISHING + 1)															// MacAurther
 
 #define ESPIONAGEMISSION_COUP	((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther

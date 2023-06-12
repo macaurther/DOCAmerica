@@ -817,7 +817,7 @@
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_TIMBER</BonusType>
-					<bBonusMakesValid>0</bBonusMakesValid>
+					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
@@ -2280,7 +2280,6 @@
 			<RouteYieldChanges/>
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</ImprovementInfo>
-
 		<ImprovementInfo>
 			<Type>IMPROVEMENT_MARINE_RESERVE</Type>
 			<Description>TXT_KEY_IMPROVEMENT_MARINE_RESERVE</Description>
@@ -2349,7 +2348,6 @@
 			<RouteYieldChanges/>
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</ImprovementInfo>
-		
 		<ImprovementInfo>
 			<Type>IMPROVEMENT_SOLAR_COLLECTOR</Type>
 			<Description>TXT_KEY_IMPROVEMENT_SOLAR_COLLECTOR</Description>

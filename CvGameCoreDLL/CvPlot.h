@@ -571,6 +571,9 @@ public:
 	bool isExpansion() const;
 	bool isExpansionEffect(PlayerTypes ePlayer) const;
 
+	// MacAurther
+	void improveTile();
+
 	// MacAurther: Forts
 	PlayerTypes getFortOwner() const;
 	CvPlot* getFortClaimer() const;

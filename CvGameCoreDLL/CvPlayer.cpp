@@ -5615,10 +5615,10 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 					receiveGoody(pPlot, eGoody, pUnit);
 				}
 
-				// MacAurther: Make Tribe a Contacted Tribe / Iroquois UP: Cottage
+				// MacAurther: Iroquois UP: Tribes in your borders give you a gift and improve their tile
 				if (getCivilizationType() == IROQUOIS)
 				{
-					pPlot->setImprovementType(IMPROVEMENT_COTTAGE);
+					pPlot->improveTile();
 				}
 				else
 				{

@@ -11856,6 +11856,30 @@ bool CvPlot::isExpansionEffect(PlayerTypes ePlayer) const
 }
 
 
+// MacAurther: If the tile has a resource, build the appropriate improvement. If not, build a cottage
+void CvPlot::improveTile()
+{
+	BonusTypes eBonus = getBonusType();
+	
+	if(eBonus == NO_BONUS)
+	{
+		setImprovementType(IMPROVEMENT_COTTAGE);
+		return;
+	}
+
+	ImprovementTypes eImprovement = NO_IMPROVEMENT;
+	for (int iLoopImprovement = IMPROVEMENT_FARM; iLoopImprovement < NUM_IMPROVEMENTS; iLoopImprovement++)
+	{
+		if (GC.getImprovementInfo((ImprovementTypes)iLoopImprovement).isImprovementBonusMakesValid(eBonus))
+		{
+			eImprovement = (ImprovementTypes)iLoopImprovement;
+			setImprovementType(eImprovement);
+			return;
+		}
+	}
+}
+
+
 // MacAurther: Forts
 PlayerTypes CvPlot::getFortOwner() const
 {
