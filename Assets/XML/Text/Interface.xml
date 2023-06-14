@@ -1335,12 +1335,44 @@
 		<Spanish>[ICON_BULLET]%D1%F2 from Immigration</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION_BASE</Tag>
+		<English>[TAB]%D1[ICON_GREATPEOPLE] base Immigration</English>
+		<French>[TAB]%D1[ICON_GREATPEOPLE] base Immigration</French>
+		<German>[TAB]%D1[ICON_GREATPEOPLE] base Immigration</German>
+		<Italian>[TAB]%D1[ICON_GREATPEOPLE] base Immigration</Italian>
+		<Spanish>[TAB]%D1[ICON_GREATPEOPLE] base Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION_MODIFIER</Tag>
+		<English>[TAB]%D1% Immigration</English>
+		<French>[TAB]%D1% Immigration</French>
+		<German>[TAB]%D1% Immigration</German>
+		<Italian>[TAB]%D1% Immigration</Italian>
+		<Spanish>[TAB]%D1% Immigration</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION</Tag>
 		<English>[ICON_BULLET]%D1[ICON_GREATPEOPLE] from Immigration</English>
 		<French>[ICON_BULLET]%D1[ICON_GREATPEOPLE] from Immigration</French>
 		<German>[ICON_BULLET]%D1[ICON_GREATPEOPLE] from Immigration</German>
 		<Italian>[ICON_BULLET]%D1[ICON_GREATPEOPLE] from Immigration</Italian>
 		<Spanish>[ICON_BULLET]%D1[ICON_GREATPEOPLE] from Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION_BASE</Tag>
+		<English>[TAB]%D1[ICON_CULTURE] base Immigration</English>
+		<French>[TAB]%D1[ICON_CULTURE] base Immigration</French>
+		<German>[TAB]%D1[ICON_CULTURE] base Immigration</German>
+		<Italian>[TAB]%D1[ICON_CULTURE] base Immigration</Italian>
+		<Spanish>[TAB]%D1[ICON_CULTURE] base Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION_MODIFIER</Tag>
+		<English>[TAB]%D1% Immigration</English>
+		<French>[TAB]%D1% Immigration</French>
+		<German>[TAB]%D1% Immigration</German>
+		<Italian>[TAB]%D1% Immigration</Italian>
+		<Spanish>[TAB]%D1% Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION</Tag>

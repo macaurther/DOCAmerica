@@ -17806,6 +17806,16 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION", iImmigrationRate));
 			iBaseCommerceRate += 100 * iImmigrationRate;
+
+			int iImmigrationRateModifier = city.getImmigrationRateModifier();
+			if (iImmigrationRateModifier > 0)
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION_BASE", city.getBaseImmigrationRate()));
+				
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
+			}
 		}
 	}
 
@@ -18429,6 +18439,16 @@ void CvGameTextMgr::parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city
 	{
 		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION", iImmigrationRate));
 		szBuffer.append(NEWLINE);
+
+		int iImmigrationRateModifier = city.getImmigrationRateModifier();
+		if (iImmigrationRateModifier > 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION_BASE", city.getBaseImmigrationRate()));
+			szBuffer.append(NEWLINE);
+
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
+			szBuffer.append(NEWLINE);
+		}
 	}
 
 	int iModifier = 100;
