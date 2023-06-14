@@ -2897,7 +2897,7 @@ Your stability level can change during a stability check. As long it is higher t
 [NEWLINE][ICON_BULLET]Buildings - certain buildings and Wonders can increase Immigration
 [ICON_BULLET]Civics - Society Civics determine which city yield contributes to Immigration
 [ICON_BULLET]Unique Powers - Some Unique Powers increase or modify Immigration
-[ICON_BULLET]Ships - After researching Community, ships with extra capacity stationed in cities contribute to Immigration. The city gets +1 Immigration for each extra capacity, up to +5 Immigration (up to +10 Immigration for England)
+[ICON_BULLET]Ships - Harbors allow cargo ships stationed in cities contribute to Immigration. The city gets +1 Immigration for each capacity, up to +5 Immigration (up to +10 Immigration for England).
 [PARAGRAPH:1]Society Civics represent if your Civilization's culture is exclusive or inclusive and what motivates Immigrants to come across the sea to your colony or nation. Do they come seeking wealth? Or do they come seeking religious sanctuary? Or perhaps they come because of your vibrant culture? This is how Immigration is determined for each of the Society Civics:
 [NEWLINE][ICON_BULLET][LINK=CIVIC_ISOLATIONISM]Isolationism[\LINK]: No Immigration | Even if you have Immigration Buildings, Wonders, or Unique Powers, your cities will not receive Immigrantion.
 [ICON_BULLET][LINK=CIVIC_JESUITS]Jesuits[\LINK]: +2 with State [ICON_RELIGION]  | +2 Immigration in each of your cities with your State [ICON_RELIGION]

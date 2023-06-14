@@ -586,6 +586,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iFreeTechsOnDiscovery = 0;
 	m_eFreeTechChosen = NO_TECH;
 
+	m_iGlobalImmigrationRateModifier = 0;
+
 	m_eID = eID;
 	updateTeamType();
 	updateHuman();
@@ -13797,6 +13799,9 @@ void CvPlayer::setCivics(CivicOptionTypes eIndex, CivicTypes eNewValue)
 		{
 			CvEventReporter::getInstance().civicChanged(getID(), eOldCivic, eNewValue);
 		}
+
+		// MacAurther: Check if this changes Immigration
+		processChangedImmigrationCivic(eIndex);
 	}
 }
 
@@ -18487,6 +18492,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 	pStream->Read(&m_iFreeTechsOnDiscovery);
 
+	pStream->Read(&m_iGlobalImmigrationRateModifier); // MacAurther
+
 	pStream->Read((int*)&m_eID);
 	pStream->Read((int*)&m_ePersonalityType);
 	pStream->Read((int*)&m_eCurrentEra);
@@ -18922,6 +18929,8 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iReligiousTolerance);
 
 	pStream->Write(m_iFreeTechsOnDiscovery);
+
+	pStream->Write(m_iGlobalImmigrationRateModifier); // MacAurther
 
 	pStream->Write(m_eID);
 	pStream->Write(m_ePersonalityType);
@@ -25514,4 +25523,45 @@ int CvPlayer::getFortRange()
 	}
 
 	return 1;
+}
+
+// MacAurther: Immigration
+int CvPlayer::getGlobalImmigrationRateModifier() const
+{
+	return m_iGlobalImmigrationRateModifier;
+}
+
+void CvPlayer::setGlobalImmigrationRateModifier(int iValue)
+{
+	m_iGlobalImmigrationRateModifier = iValue;
+}
+
+void CvPlayer::changeGlobalImmigrationRateModifier(int iChange)
+{
+	setGlobalImmigrationRateModifier(getGlobalImmigrationRateModifier() + iChange);
+}
+
+void CvPlayer::processChangedGlobalImmigrationRateModifier()
+{
+	CvCity* pLoopCity;
+	int iLoop;
+
+	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		pLoopCity->processImmigration();
+	}
+}
+
+void CvPlayer::processChangedImmigrationCivic(CivicOptionTypes eCivicOption)
+{
+	if(eCivicOption == CIVICOPTION_LABOR || eCivicOption == CIVICOPTION_SOCIETY)
+	{
+		CvCity* pLoopCity;
+		int iLoop;
+
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			pLoopCity->processImmigrationCivic(true);
+		}
+	}
 }

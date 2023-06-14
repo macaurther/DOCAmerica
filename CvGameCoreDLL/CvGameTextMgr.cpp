@@ -16899,6 +16899,16 @@ void CvGameTextMgr::setFoodHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION", iImmigrationFood, info.getChar()));
 		szBuffer.append(NEWLINE);
 		iBaseRate += iImmigrationFood;
+
+		int iImmigrationRateModifier = city.getImmigrationRateModifier();
+		if (iImmigrationRateModifier > 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_BASE", city.getBaseImmigrationRate(), info.getChar()));
+			szBuffer.append(NEWLINE);
+
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
+			szBuffer.append(NEWLINE);
+		}
 	}
 
 	// Total Produced
@@ -18021,6 +18031,16 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION", iImmigrationMod, info.getChar()));
 		szBuffer.append(NEWLINE);
 		iBaseProduction += iImmigrationMod; // MacAurther: Add them back in
+
+		int iImmigrationRateModifier = city.getImmigrationRateModifier();
+		if (iImmigrationRateModifier > 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_BASE", city.getBaseImmigrationRate(), info.getChar()));
+			szBuffer.append(NEWLINE);
+
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
+			szBuffer.append(NEWLINE);
+		}
 	}
 
 	int iBaseModifier = 100;

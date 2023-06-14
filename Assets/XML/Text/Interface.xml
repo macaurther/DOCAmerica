@@ -1311,12 +1311,28 @@
 		<Spanish>%D1_Change[ICON_HEALTHY] from Specialists</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_BASE</Tag>
+		<English>[TAB]%D1%F2 base Immigration</English>
+		<French>[TAB]%D1%F2 base Immigration</French>
+		<German>[TAB]%D1%F2 base Immigration</German>
+		<Italian>[TAB]%D1%F2 base Immigration</Italian>
+		<Spanish>[TAB]%D1%F2 base Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_MODIFIER</Tag>
+		<English>[TAB]%D1% Immigration</English>
+		<French>[TAB]%D1% Immigration</French>
+		<German>[TAB]%D1% Immigration</German>
+		<Italian>[TAB]%D1% Immigration</Italian>
+		<Spanish>[TAB]%D1% Immigration</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_IMMIGRATION</Tag>
 		<English>[ICON_BULLET]%D1%F2 from Immigration</English>
-		<French>[ICON_BULLET]%D1%%%F2 from Immigration</French>
-		<German>[ICON_BULLET]%D1%%%F2 from Immigration</German>
-		<Italian>[ICON_BULLET]%D1%%%F2 from Immigration</Italian>
-		<Spanish>[ICON_BULLET]%D1%%%F2 from Immigration</Spanish>
+		<French>[ICON_BULLET]%D1%F2 from Immigration</French>
+		<German>[ICON_BULLET]%D1%F2 from Immigration</German>
+		<Italian>[ICON_BULLET]%D1%F2 from Immigration</Italian>
+		<Spanish>[ICON_BULLET]%D1%F2 from Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION</Tag>

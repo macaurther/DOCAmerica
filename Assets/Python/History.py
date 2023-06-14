@@ -111,7 +111,7 @@ def convertTribesAroundCity(pCity):
 		for i in range(gc.getNUM_CITY_PLOTS()):
 			pPlot = pCity.getCityIndexPlot(i)
 			if pPlot.getImprovementType() in [iTribe, iContactedTribe]:
-				pPlot.setImprovementType(iCottage)
+				pPlot.setImprovementType(-1)
 
 # MacAurther: Inuit UP
 @handler("cityBuilt")

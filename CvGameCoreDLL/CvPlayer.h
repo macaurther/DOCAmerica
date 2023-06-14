@@ -1380,6 +1380,14 @@ public:
 	int getRegionPowers();
 	int getFortRange();
 
+	// Immigration
+	int getGlobalImmigrationRateModifier() const;
+	void setGlobalImmigrationRateModifier(int iValue);
+	void changeGlobalImmigrationRateModifier(int iChange);
+	void processChangedGlobalImmigrationRateModifier();
+	void processChangedImmigrationCivic(CivicOptionTypes eCivicOption);
+
+
 protected:
 
 	int m_iStartingX;
@@ -1554,6 +1562,9 @@ protected:
 	int m_iCapitalCommerce;
 
 	int m_iFreeTechsOnDiscovery;
+
+	// MacAurther
+	int m_iGlobalImmigrationRateModifier;
 
 	PlayerTypes m_eID;
 	LeaderHeadTypes m_ePersonalityType;

@@ -597,7 +597,14 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iTotalPopulationLoss = 0;
 	m_iPopulationLoss = 0;
 
-	m_iImmigrationRate = 0; // MacAurther
+	m_iBuildingImmigrationRate = 0;
+	m_iUnitImmigrationRate = 0;
+	m_iCivicImmigrationRate = 0;
+	m_iBaseImmigrationRate = 0;
+	m_iBuildingImmigrationRateModifier = 0;
+	m_iCivicImmigrationRateModifier = 0;
+	m_iImmigrationRateModifier = 0;
+	m_iImmigrationRate = 0;
 
 	m_bNeverLost = true;
 	m_bBombarded = false;
@@ -4572,7 +4579,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 	updateBuildingCommerce();
 
 	// MacAurther: Immigration calculated after all else
-	processImmigration();
+	processImmigrationBuilding(eBuilding);
 
 	setLayoutDirty(true);
 }
@@ -4641,7 +4648,7 @@ void CvCity::processSpecialist(SpecialistTypes eSpecialist, int iChange)
 	}
 
 	// MacAurther: Immigration calculated after all else
-	processImmigration();
+	processImmigrationCivic(false);
 }
 
 
@@ -10034,7 +10041,7 @@ void CvCity::setTradeYield(YieldTypes eIndex, int iNewValue)
 		changeBaseYieldRate(eIndex, (iNewValue - iOldValue));
 
 		// MacAurther: Immigration calculated after all else
-		processImmigration();
+		processImmigrationCivic(false);
 	}
 }
 
@@ -10083,7 +10090,7 @@ void CvCity::updateExtraSpecialistYield(YieldTypes eYield)
 		changeBaseYieldRate(eYield, (iNewYield - iOldYield));
 
 		// MacAurther: Immigration calculated after all else
-		processImmigration();
+		processImmigrationCivic(false);
 	}
 }
 
@@ -10131,7 +10138,7 @@ void CvCity::updateHappinessYield()
 	}
 
 	// MacAurther: Immigration calculated after all else
-	processImmigration();
+	processImmigrationCivic(false);
 }
 
 int CvCity::getCommerceRate(CommerceTypes eIndex) const
@@ -10801,7 +10808,7 @@ void CvCity::setCorporationYield(YieldTypes eIndex, int iNewValue)
 		changeBaseYieldRate(eIndex, (iNewValue - iOldValue));
 
 		// MacAurther: Immigration calculated after all else
-		processImmigration();
+		processImmigrationCivic(false);
 	}
 }
 
@@ -10946,7 +10953,7 @@ void CvCity::updateCorporationYield(YieldTypes eIndex)
 		changeBaseYieldRate(eIndex, (iNewYield - iOldYield));
 
 		// MacAurther: Immigration calculated after all else
-		processImmigration();
+		processImmigrationCivic(false);
 	}
 }
 
@@ -12926,7 +12933,7 @@ void CvCity::setWorkingPlot(int iIndex, bool bNewValue)
 	}
 
 	// MacAurther: Immigration calculated after all else
-	processImmigration();
+	processImmigrationCivic(false);
 }
 
 
@@ -15366,7 +15373,14 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iBuildingDamageChange);
 	pStream->Read(&m_iTotalPopulationLoss);
 	pStream->Read(&m_iPopulationLoss);
-	pStream->Read(&m_iImmigrationRate); // MacAurther
+	pStream->Read(&m_iBuildingImmigrationRate);
+	pStream->Read(&m_iUnitImmigrationRate);
+	pStream->Read(&m_iCivicImmigrationRate);
+	pStream->Read(&m_iBaseImmigrationRate);
+	pStream->Read(&m_iBuildingImmigrationRateModifier);
+	pStream->Read(&m_iCivicImmigrationRateModifier);
+	pStream->Read(&m_iImmigrationRateModifier);
+	pStream->Read(&m_iImmigrationRate);
 
 	pStream->Read(&m_bNeverLost);
 	pStream->Read(&m_bBombarded);
@@ -15668,6 +15682,13 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_iBuildingDamageChange); // Leoreth
 	pStream->Write(m_iTotalPopulationLoss); // Leoreth
 	pStream->Write(m_iPopulationLoss); // Leoreth
+	pStream->Write(m_iBuildingImmigrationRate); // MacAurther
+	pStream->Write(m_iUnitImmigrationRate); // MacAurther
+	pStream->Write(m_iCivicImmigrationRate); // MacAurther
+	pStream->Write(m_iBaseImmigrationRate); // MacAurther
+	pStream->Write(m_iBuildingImmigrationRateModifier); // MacAurther
+	pStream->Write(m_iCivicImmigrationRateModifier); // MacAurther
+	pStream->Write(m_iImmigrationRateModifier); // MacAurther
 	pStream->Write(m_iImmigrationRate); // MacAurther
 
 	pStream->Write(m_bNeverLost);
@@ -16812,7 +16833,7 @@ void CvCity::updateBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldT
 	}
 
 	// MacAurther: Immigration calculated after all else
-	processImmigration();
+	processImmigrationCivic(false);
 }
 
 void CvCity::changeReligionYieldChange(ReligionTypes eReligion, YieldTypes eYield, int iChange)
@@ -19119,6 +19140,41 @@ int CvCity::calculateBaseGreatPeopleRate() const
 }
 
 // MacAurther: Immigration
+int CvCity::getBuildingImmigrationRate() const
+{
+	return m_iBuildingImmigrationRate;
+}
+
+int CvCity::getUnitImmigrationRate() const
+{
+	return m_iUnitImmigrationRate;
+}
+
+int CvCity::getCivicImmigrationRate() const
+{
+	return m_iCivicImmigrationRate;
+}
+
+int CvCity::getBaseImmigrationRate() const
+{
+	return m_iBaseImmigrationRate;
+}
+
+int CvCity::getBuildingImmigrationRateModifier() const
+{
+	return m_iBuildingImmigrationRateModifier;
+}
+
+int CvCity::getCivicImmigrationRateModifier() const
+{
+	return m_iCivicImmigrationRateModifier;
+}
+
+int CvCity::getImmigrationRateModifier() const
+{
+	return m_iImmigrationRateModifier;
+}
+
 int CvCity::getImmigrationRate() const
 {
 	return m_iImmigrationRate;
@@ -19129,6 +19185,42 @@ int CvCity::getImmigrationYieldRate(YieldTypes eYield) const
 	return m_aiImmigrationYieldRate[eYield];
 }
 
+void CvCity::setBuildingImmigrationRate(int iValue)
+{
+	m_iBuildingImmigrationRate = iValue;
+}
+
+void CvCity::setUnitImmigrationRate(int iValue)
+{
+	int iMaxImmigrationFromUnits = getCivilizationType() == ENGLAND ? MAX_IMMIGRATION_FROM_UNITS_ENGLAND : MAX_IMMIGRATION_FROM_UNITS; // English UP
+	m_iUnitImmigrationRate = std::max(0, std::min(iValue, iMaxImmigrationFromUnits));
+}
+
+void CvCity::setCivicImmigrationRate(int iValue)
+{
+	m_iCivicImmigrationRate = iValue;
+}
+
+void CvCity::setBaseImmigrationRate(int iValue)
+{
+	m_iBaseImmigrationRate = iValue;
+}
+
+void CvCity::setBuildingImmigrationRateModifier(int iValue)
+{
+	m_iBuildingImmigrationRateModifier = iValue;
+}
+
+void CvCity::setCivicImmigrationRateModifier(int iValue)
+{
+	m_iCivicImmigrationRateModifier = iValue;
+}
+
+void CvCity::setImmigrationRateModifier(int iValue)
+{
+	m_iImmigrationRateModifier = iValue;
+}
+
 void CvCity::setImmigrationRate(int iValue)
 {
 	m_iImmigrationRate = iValue;
@@ -19137,6 +19229,46 @@ void CvCity::setImmigrationRate(int iValue)
 void CvCity::setImmigrationYieldRate(YieldTypes eYield, int iValue)
 {
 	m_aiImmigrationYieldRate[eYield] = iValue;
+}
+
+void CvCity::changeBuildingImmigrationRate(int iChange)
+{
+	setBuildingImmigrationRate(getBuildingImmigrationRate() + iChange);
+}
+
+void CvCity::changeUnitImmigrationRate(int iChange)
+{
+	setUnitImmigrationRate(getUnitImmigrationRate() + iChange);
+}
+
+void CvCity::changeCivicImmigrationRate(int iChange)
+{
+	setCivicImmigrationRate(getCivicImmigrationRate() + iChange);
+}
+
+void CvCity::changeBaseImmigrationRate(int iChange)
+{
+	setBaseImmigrationRate(getBaseImmigrationRate() + iChange);
+}
+
+void CvCity::changeBuildingImmigrationRateModifier(int iChange)
+{
+	setBuildingImmigrationRateModifier(getBuildingImmigrationRate() + iChange);
+}
+
+void CvCity::changeCivicImmigrationRateModifier(int iChange)
+{
+	setCivicImmigrationRateModifier(getCivicImmigrationRate() + iChange);
+}
+
+void CvCity::changeImmigrationRateModifier(int iChange)
+{
+	setImmigrationRateModifier(getImmigrationRateModifier() + iChange);
+}
+
+void CvCity::changeImmigrationYieldRate(YieldTypes eYield, int iChange)
+{
+	setImmigrationYieldRate(eYield, getImmigrationYieldRate(eYield) + iChange);
 }
 
 bool CvCity::processImmigration()
@@ -19173,13 +19305,15 @@ void CvCity::calculateImmigrationYieldRate()
 		{
 			setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
 		}
-		else if(iI == YIELD_PRODUCTION && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MIGRANT_WORKERS))
+		else if(iI == YIELD_PRODUCTION)
 		{
-			setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+			if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MIGRANT_WORKERS)) setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+			else setImmigrationYieldRate((YieldTypes)iI, 0);
 		}
-		else if(iI == YIELD_COMMERCE && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
+		else if(iI == YIELD_COMMERCE)
 		{
-			setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+			if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY)) setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+			else setImmigrationYieldRate((YieldTypes)iI, 0);
 		}
 	}
 }
@@ -19200,26 +19334,166 @@ int CvCity::calculateImmigrationRate()
 		return 0;
 	}
 
-	int iImmigrationRate = 0;
+	// Calculate Base Immigration Rate
+	int iBaseImmigrationRate = 0;
+	iBaseImmigrationRate += getBuildingImmigrationRate();
+	iBaseImmigrationRate += getUnitImmigrationRate();
+	iBaseImmigrationRate += getCivicImmigrationRate();
+	setBaseImmigrationRate(iBaseImmigrationRate);
 
-	// Get Immigration value based on Civics
+	// Calculate Immigration Rate Modifier
+	int iImmigrationRateModifier = 0;
+	iImmigrationRateModifier += getBuildingImmigrationRateModifier();
+	iImmigrationRateModifier += getCivicImmigrationRateModifier();
+	iImmigrationRateModifier += GET_PLAYER(getOwnerINLINE()).getGlobalImmigrationRateModifier();
+	setImmigrationRateModifier(iImmigrationRateModifier);
+
+	// MacAurther TODO: Figure out how to get negative Immigration to work?
+	if (getBaseImmigrationRate() < 0)
+	{
+		setBaseImmigrationRate(0);
+		return 0;
+	}
+
+	// Calculate Immigration Rate
+	setImmigrationRate((getBaseImmigrationRate() * (100 + getImmigrationRateModifier())) / 100);
+	
+	return getImmigrationRate();
+}
+
+void CvCity::processImmigrationBuilding(BuildingTypes eBuilding)
+{
+	bool bChanged = false;
+	bool bGlobalChanged = false;
+
+	int iBuildingChange = pollBuildingImmigrationRate(eBuilding);
+	if(iBuildingChange != 0)
+	{
+		changeBuildingImmigrationRate(iBuildingChange);
+		bChanged = true;
+	}
+
+	int iModifierChange = pollBuildingImmigrationRateModifier(eBuilding);
+	if(iModifierChange != 0)
+	{
+		changeBuildingImmigrationRateModifier(iModifierChange);
+		bChanged = true;
+	}
+
+	int iGlobalModifierChange = pollBuildingGlobalImmigrationRateModifier(eBuilding);
+	if(iGlobalModifierChange != 0)
+	{
+		GET_PLAYER(getOwnerINLINE()).changeGlobalImmigrationRateModifier(iGlobalModifierChange);
+		bGlobalChanged = true;
+	}
+
+	// When Harbor is built, check if there are units that contribute to Immigration in the city
+	if(eBuilding == (BuildingTypes)BUILDING_HARBOR)
+	{
+		reprocessImmigrationUnits();
+	}
+
+	if(bGlobalChanged)
+	{
+		GET_PLAYER(getOwnerINLINE()).processChangedGlobalImmigrationRateModifier();
+	}
+	else if(bChanged)
+	{
+		processImmigration();
+	}
+}
+
+void CvCity::reprocessImmigrationUnits()
+{
+	int iOldUnitImmigrationRate = getUnitImmigrationRate();
+	setUnitImmigrationRate(0);
+
+	for(int iI = 0; iI < plot()->getNumUnits(); iI++)
+	{
+		processImmigrationUnit(plot()->getUnitByIndex(iI), false);
+	}
+	if (getUnitImmigrationRate() != iOldUnitImmigrationRate)
+	{
+		processImmigration();
+	}
+}
+
+bool CvCity::processImmigrationUnit(CvUnit* pUnit, bool bProcess)
+{
+	// Get Immigration Value from Ships if city has a Harbor
+	if (hasBuilding((BuildingTypes)BUILDING_HARBOR))
+	{
+		if (pUnit->getOwner() == getOwner())
+		{
+			int iUnitImmigration = pUnit->getImmigrationRate();
+			if (iUnitImmigration > 0)
+			{
+				changeUnitImmigrationRate(iUnitImmigration);
+				if (bProcess)
+				{
+					processImmigration();
+				}
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+void CvCity::processImmigrationCivic(bool bForceChange)
+{
+	bool bChanged = false || bForceChange;
+
+	CivicTypes eImmigrationCivic = GET_PLAYER(getOwnerINLINE()).getCivics(CIVICOPTION_SOCIETY);
+
+	int iOldCivicImmigrationRate = getCivicImmigrationRate();
+	int iCivicImmigrationRate = pollCivicImmigrationRate(eImmigrationCivic);
+	if(iCivicImmigrationRate != iOldCivicImmigrationRate)
+	{
+		setCivicImmigrationRate(iCivicImmigrationRate);
+		bChanged = true;
+	}
+
+	int iOldCivicImmigrationRateModifier = getCivicImmigrationRateModifier();
+	int iCivicImmigrationRateModifier = pollCivicImmigrationRateModifier(eImmigrationCivic);
+	if(iCivicImmigrationRateModifier != iOldCivicImmigrationRateModifier)
+	{
+		setCivicImmigrationRateModifier(iCivicImmigrationRateModifier);
+		bChanged = true;
+	}
+
+	if(bChanged)
+	{
+		processImmigration();
+	}
+}
+
+// MacAurther TODO: Replace this with XML field?
+int CvCity::pollBuildingImmigrationRate(BuildingTypes eBuilding)
+{
+	return 0;
+}
+
+// MacAurther TODO: Replace this with XML field?
+int CvCity::pollCivicImmigrationRate(CivicTypes eCivic)
+{
 	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_JESUITS) && isHasReligion(GET_PLAYER(getOwner()).getStateReligion()))
 	{
-		iImmigrationRate += 2;
+		return 2;
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_HAVEN))
 	{
-		iImmigrationRate += happyLevel() - unhappyLevel();
+		return happyLevel() - unhappyLevel();
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_PROFITEERING))
 	{
 		int iCommerceRate = getBaseYieldRate(YIELD_COMMERCE) - getImmigrationYieldRate(YIELD_COMMERCE); // Don't let Immigration yields feedback
-		iImmigrationRate += iCommerceRate / getPopulation();
+		return iCommerceRate / getPopulation();
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_OPPORTUNITY))
 	{
 		int iProductionRate = getBaseYieldRate(YIELD_PRODUCTION) - getImmigrationYieldRate(YIELD_PRODUCTION); // Don't let Immigration yields feedback
-		iImmigrationRate += iProductionRate / getPopulation();
+		return iProductionRate / getPopulation();
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MULTICULTURALISM))
 	{
@@ -19229,78 +19503,53 @@ int CvCity::calculateImmigrationRate()
 		{
 			iBaseCulture -= getImmigrationRate();
 		}
-		iImmigrationRate += iBaseCulture / getPopulation();
+		return iBaseCulture / getPopulation();
 	}
 
-	// Get Immigration Value from Ships if city has a Harbor
-	if (hasBuilding((BuildingTypes)BUILDING_HARBOR))
-	{
-		int iFreeCapacity = 0;
-		int iMaxShipImmigration = MAX_IMMIGRATION_FROM_SHIPS;
-
-		// English UP
-		if (getCivilizationType() == ENGLAND)
-		{
-			iMaxShipImmigration *= 2;
-		}
-
-		for(int iI = 0; iI < plot()->getNumUnits(); iI ++)
-		{
-			if (plot()->getUnitByIndex(iI)->getOwner() == getOwner())
-			{
-				iFreeCapacity += plot()->getUnitByIndex(iI)->cargoSpaceAvailable(NO_SPECIALUNIT, DOMAIN_LAND);
-				// English UP
-				if (getCivilizationType() == ENGLAND && plot()->getUnitByIndex(iI)->cargoSpace() > 0)
-				{
-					iFreeCapacity += 1;
-				}
-			}
-
-			if (iFreeCapacity >= iMaxShipImmigration)
-			{
-				iFreeCapacity = iMaxShipImmigration;
-				break;
-			}
-		}
-		iImmigrationRate += iFreeCapacity;
-	}
-
-	if (iImmigrationRate < 0)
-	{
-		setImmigrationRate(0);
-		return 0;
-	}
-
-	// Immigration Modifiers
-	int iImmigrationModifier = 100;
-	if (isHasBuildingEffect((BuildingTypes)BUILDING_SLAVE_MARKET) && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
-	{
-		iImmigrationModifier += 50;
-	}
-	if (isHasBuildingEffect((BuildingTypes)BUILDING_WHEELWRIGHT))
-	{
-		iImmigrationModifier += 25;
-	}
-	if (isHasBuildingEffect((BuildingTypes)BUILDING_IMMIGRATION_OFFICE))
-	{
-		iImmigrationModifier += 50;
-	}
-	if (isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
-	{
-		iImmigrationModifier += 100;
-	}
-	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_ELLIS_ISLAND))
-	{
-		iImmigrationModifier += 50;
-	}
-
-	iImmigrationRate *= iImmigrationModifier;
-	iImmigrationRate /= 100;
-
-	setImmigrationRate(iImmigrationRate);
-
-	return iImmigrationRate;
+	return 0;
 }
+
+// MacAurther TODO: Replace this with XML field?
+int CvCity::pollBuildingImmigrationRateModifier(BuildingTypes eBuilding)
+{
+	if (eBuilding == BUILDING_SLAVE_MARKET && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_SLAVERY))
+	{
+		return 50;
+	}
+	else if (eBuilding == BUILDING_WHEELWRIGHT)
+	{
+		return 25;
+	}
+	else if (eBuilding == BUILDING_IMMIGRATION_OFFICE)
+	{
+		return 50;
+	}
+	else if (eBuilding == BUILDING_STATUE_OF_LIBERTY)
+	{
+		return 100;
+	}
+
+	return 0;
+}
+
+// MacAurther TODO: Replace this with XML field?
+int CvCity::pollCivicImmigrationRateModifier(CivicTypes eCivic)
+{
+	return 0;
+}
+
+// MacAurther TODO: Replace this with XML field?
+int CvCity::pollBuildingGlobalImmigrationRateModifier(BuildingTypes eBuilding)
+{
+	if (eBuilding == BUILDING_ELLIS_ISLAND)
+	{
+		return 50;
+	}
+
+	return 0;
+}
+
+
 
 // MacAurther: End Immigration
 

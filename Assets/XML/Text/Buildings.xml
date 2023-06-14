@@ -339,19 +339,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HARBOR_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow ships with free capacity to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow ships with free capacity to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow ships with free capacity to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow ships with free capacity to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow ships with free capacity to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow cargo ships to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow cargo ships to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow cargo ships to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow cargo ships to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] improve the food output of water plots and allow cargo ships to increase Immigration rate. [COLOR_BUILDING_TEXT]Harbors[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Customs Houses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Wharfs[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Lighthouses[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HARBOR_HELP</Tag>
-		<English>[ICON_BULLET]Garrisoned ships with free capacity increase Immigration</English>
-		<French>[ICON_BULLET]Garrisoned ships with free capacity increase Immigration</French>
-		<German>[ICON_BULLET]Garrisoned ships with free capacity increase Immigration</German>
-		<Italian>[ICON_BULLET]Garrisoned ships with free capacity increase Immigration</Italian>
-		<Spanish>[ICON_BULLET]Garrisoned ships with free capacity increase Immigration</Spanish>
+		<English>[ICON_BULLET]Garrisoned cargo ships increase Immigration</English>
+		<French>[ICON_BULLET]Garrisoned cargo ships increase Immigration</French>
+		<German>[ICON_BULLET]Garrisoned cargo ships increase Immigration</German>
+		<Italian>[ICON_BULLET]Garrisoned cargo ships increase Immigration</Italian>
+		<Spanish>[ICON_BULLET]Garrisoned cargo ships increase Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HOSPITAL_STRATEGY</Tag>
