@@ -117,6 +117,11 @@
 			<Civilopedia>TXT_KEY_CONCEPT_DOCAINTRO_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
+			<Type>CONCEPT_REGIONAL_POWERS</Type>
+			<Description>TXT_KEY_CONCEPT_REGIONAL_POWERS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_REGIONAL_POWERS_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
 			<Type>CONCEPT_TRIBES</Type>
 			<Description>TXT_KEY_CONCEPT_TRIBES</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_TRIBES_PEDIA</Civilopedia>

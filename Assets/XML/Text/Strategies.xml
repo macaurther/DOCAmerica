@@ -98,23 +98,27 @@
 		<English>3) Welcome to Dawn of Civilization: America</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_REGIONAL_POWERS</Tag>
+		<English>3a) Regional Powers</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRIBES</Tag>
-		<English>3a) Tribes</English>
+		<English>3b) Tribes</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NATIVE_TECHS</Tag>
-		<English>3b) Native Technologies</English>
+		<English>3c) Native Technologies</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMMIGRATION</Tag>
-		<English>3c) Immigration</English>
+		<English>3d) Immigration</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_FORTS</Tag>
-		<English>3d) Forts in DOCA</English>
+		<English>3e) Forts in DOCA</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_ODDS</Tag>
-		<English>3e) Odds and Ends in DOCA</English>
+		<English>3f) Odds and Ends in DOCA</English>
 	</TEXT>
 </Civ4GameText>

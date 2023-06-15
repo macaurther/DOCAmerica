@@ -282,7 +282,6 @@ class Scenario(object):
 			if dBirth[iCiv] < self.iStartYear:
 				for lColonistSpawn in lColonistSpawns:
 					if lColonistSpawn[0] < self.iStartYear:
-						print("iCiv: " + str(iCiv))
 						data.players[slot(iCiv)].iColonistsAlreadyGiven += 1
 	
 	def initDiplomacy(self):

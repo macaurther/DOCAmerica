@@ -2860,6 +2860,114 @@ Your stability level can change during a stability check. As long it is higher t
 		<English>[H1]Welcome to Dawn of Civilization: America[\H1][PARAGRAPH:2]Dawn of Civilzation: America (DoCA) is a ModModMod of Dawn of Civilization and Rhye's and Fall of Civilization. It focuses on the time period between 250 AD and 2020 AD in the Western Hemisphere. It includes a custom map, custom civilizations, unique powers, buildings, units, technologies, civics, and mechanics. Read up on the new mechanics in DoCA in Section 3 of the Concepts pages.</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_REGIONAL_POWERS_PEDIA</Tag>
+		<English>[H1]Regional Powers[\H1][PARAGRAPH:2]In Dawn of Civilization: America, every Civilization has a [BOLD]Unique Power[\BOLD] as well as a [BOLD]Regional Power[\BOLD]. Unlike [BOLD]Unique Powers[\BOLD], [BOLD]Regional Powers[\BOLD] are not unique a Civilization and are grouped based on the regions where Civilizations are from. The different [BOLD]Regional Powers[\BOLD] are:
+[NEWLINE][ICON_BULLET][BOLD]Andes[\BOLD]: +2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains
+[TAB]Details: Identical to the Inca UP from base RFC. Now, all native Andean Civilizations share this power.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_CHIMU]Chimu[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_INCA]Inca[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_MUISCA]Muisca[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_TIWANAKU]Tiwanaku[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_WARI]Wari[\LINK]
+[ICON_BULLET][BOLD]Anglo America[\BOLD]: Immigration also provides [ICON_GREATPEOPLE]
+[TAB]Details: The value of a city's [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] rate is added to that city's Great People generation.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_AMERICA]America[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_CANADA]Canada[\LINK]
+[ICON_BULLET]Arctic: Trade routes do not require roads
+[TAB]Details: All that is needed to estabilish a trade route between your cities is a revealed path of contiguous land tiles.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_INUIT]Inuit[\LINK]
+[ICON_BULLET]Europe: No Core area and receive stability and units from home country
+[TAB]Details: You have no Core area. Instead, you are given bonus [LINK=CONCEPT_STABILITY]stability[\LINK] based on your home country's historical size. After the Revolutionary Era, this stability bonus decreases. Additionally, you will periodically receive free units from your home nation. These free units count as Mercenaries, and have additional maintenance costs. Use the [LINK=CIVIC_PROPRIETARIES]Proprietaries[\LINK] Civic to reduce these costs.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_ENGLAND]England[\LINK]
+[TAB][TAB][ICON_BULLET]Bonus Stability: 10
+[TAB][TAB][ICON_BULLET]Administration Cap: 100
+[TAB][TAB][ICON_BULLET]Unit Spawns:
+[TAB][TAB][TAB][ICON_BULLET]Birth: Virginia - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1620: Massachusetts - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1650: Nova Scotia - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1664: New York - Conquerors
+[TAB][TAB][TAB][ICON_BULLET]1670: Carolina - Colonists, Slaves
+[TAB][TAB][TAB][ICON_BULLET]1690: Pennsylvania - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1750: Carolina - Slaves
+[TAB][ICON_BULLET][LINK=CIVILIZATION_FRANCE]France[\LINK]
+[TAB][TAB][ICON_BULLET]Bonus Stability: 10
+[TAB][TAB][ICON_BULLET]Administration Cap: 110
+[TAB][TAB][ICON_BULLET]Unit Spawns:
+[TAB][TAB][TAB][ICON_BULLET]Birth: Quebec - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1650: Quebec - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1718: Louisiana - Colonists
+[TAB][ICON_BULLET][LINK=CIVILIZATION_NETHERLANDS]Netherlands[\LINK]
+[TAB][TAB][ICON_BULLET]Bonus Stability: 10
+[TAB][TAB][ICON_BULLET]Administration Cap: 25
+[TAB][TAB][ICON_BULLET]Unit Spawns:
+[TAB][TAB][TAB][ICON_BULLET]Birth: New Netherlands - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1650: Suriname - Colonists
+[TAB][ICON_BULLET][LINK=CIVILIZATION_NORSE]Norse[\LINK]
+[TAB][TAB][ICON_BULLET]Bonus Stability: 5
+[TAB][TAB][ICON_BULLET]Administration Cap: 5
+[TAB][TAB][ICON_BULLET]Unit Spawns:
+[TAB][TAB][TAB][ICON_BULLET]Birth: Reykjavik - Colonists
+[TAB][TAB][TAB][ICON_BULLET]950: Reykjavik - Defenders
+[TAB][ICON_BULLET][LINK=CIVILIZATION_PORTUGAL]Portugal[\LINK]
+[TAB][TAB][ICON_BULLET]Bonus Stability: 5
+[TAB][TAB][ICON_BULLET]Administration Cap: 70
+[TAB][TAB][ICON_BULLET]Unit Spawns:
+[TAB][TAB][TAB][ICON_BULLET]Birth: South Brazil - Colonists, Explorers
+[TAB][TAB][TAB][ICON_BULLET]1550: North Brazil - Colonists, Slaves
+[TAB][TAB][TAB][ICON_BULLET]1630: North Brazil - Slaves
+[TAB][TAB][TAB][ICON_BULLET]1730: North Brazil - Slaves
+[TAB][TAB][TAB][ICON_BULLET]1770: South Brazil - Slaves
+[TAB][ICON_BULLET][LINK=CIVILIZATION_RUSSIA]Russia[\LINK]
+[TAB][TAB][ICON_BULLET]Bonus Stability: 10
+[TAB][TAB][ICON_BULLET]Administration Cap: 75
+[TAB][TAB][ICON_BULLET]Unit Spawns:
+[TAB][TAB][TAB][ICON_BULLET]Birth: Alaska - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1780: Alaska - Colonists
+[TAB][ICON_BULLET][LINK=CIVILIZATION_SPAIN]Spain[\LINK]
+[TAB][TAB][ICON_BULLET]Bonus Stability: 15
+[TAB][TAB][ICON_BULLET]Administration Cap: 90
+[TAB][TAB][ICON_BULLET]Unit Spawns:
+[TAB][TAB][TAB][ICON_BULLET]Birth: Caribbean - Colonists, Explorers
+[TAB][TAB][TAB][ICON_BULLET]1525: Cuba - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1565: Bermuda - Colonists
+[TAB][TAB][TAB][ICON_BULLET]1580: Argentina - Colonists
+[ICON_BULLET]Latin America: +3[ICON_HAPPY] from Catholic Church
+[TAB]Details: Catholic Churches provide extra Happiness. Your State Religion does not have to be Catholicism.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_ARGENTINA]Argentina[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_BRAZIL]Brazil[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_COLOMBIA]Colombia[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_CUBA]Cuba[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_HAITI]Haiti[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_MEXICO]Mexico[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_PERU]Peru[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_VENEZUELA]Venezuela[\LINK]
+[ICON_BULLET]Mesoamerica: Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness
+[TAB]Details: Identical to the Aztec UP from base RFC. Now, all native Mesoamerican Civilizations share this power.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_AZTEC]Aztec[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_MAYA]Maya[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_TEOTIHUACAN]Teotihuacan[\LINK]
+[ICON_BULLET]Pacific: No penalties for cultural expansion over water tiles
+[TAB]Details: Identical to the Polynesian UP from base RFC. Borders grown at unimpeded rate over water tiles.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_HAWAII]Hawaii[\LINK]
+[ICON_BULLET]Southwest: +1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert
+[TAB]Details: Extra hammers and commerce from the [LINK=TERRAIN_SEMIDESERT]Semidesert[\LINK] terrain.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_PUEBLOAN]Puebloan[\LINK]
+[ICON_BULLET]Woodland: No penalties for cultural expansion over water tiles
+[TAB]Details: Identical to the Polynesian UP from base RFC. Borders grown at unimpeded rate over water tiles.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_IROQUOIS]Iroquois[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_MISSISSIPPI]Mississippi[\LINK]
+		</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRIBES_PEDIA</Tag>
 		<English>[H1]Tribes[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Tribal Villages (also known as Goody Huts or just Huts) are replaced with Tribes. There are two types of Tribes:
 [NEWLINE][ICON_BULLET][LINK=IMPROVEMENT_TRIBE]Tribe[\LINK]: An Amerindian tribe that has yet to be contacted by Europeans
@@ -2933,7 +3041,6 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET][LINK=UNIT_MILITIA_1]Militia[\LINK] is now its own upgrade path. Each Era has its own Militia. They are generally cheap to build and weak, with bonus defense in Cities.
 [ICON_BULLET]New Buildings have been added.
 [ICON_BULLET]New Wonders have been added.
-[ICON_BULLET]Each Civilization now has a Regional Power (RP) in addition to a Unique Power (UP). Multiple Civilizations can share a single RP. RPs are unique to certain regions, such as the Andes, Mesoamerica, Europe, Anglosphere, or Latin America.
 [ICON_BULLET]PLANNED: After a certain date, European Civilizations become more likely to sell their land.
 [ICON_BULLET]Not every Civilization has access to the same list of Civics. Some Civics only European Civilizations can use, others can only be used by Civilizations native to the Americas, and all the rest are shared between the two. 
 		</English>
