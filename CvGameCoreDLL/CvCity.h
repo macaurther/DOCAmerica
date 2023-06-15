@@ -1281,6 +1281,7 @@ public:
 	int getImmigrationRateModifier() const;
 	int getImmigrationRate() const;
 	int getImmigrationYieldRate(YieldTypes eYield) const;
+	int getImmigrationBadHappiness() const;
 
 	void setBuildingImmigrationRate(int iValue);
 	void setUnitImmigrationRate(int iValue);
@@ -1291,6 +1292,7 @@ public:
 	void setImmigrationRateModifier(int iValue);
 	void setImmigrationRate(int iValue);
 	void setImmigrationYieldRate(YieldTypes eYield, int iValue);
+	void setImmigrationBadHappiness(int iValue);
 
 	void changeBuildingImmigrationRate(int iChange);
 	void changeUnitImmigrationRate(int iChange);
@@ -1450,6 +1452,7 @@ protected:
 	int m_iCivicImmigrationRateModifier;
 	int m_iImmigrationRateModifier;
 	int m_iImmigrationRate;
+	int m_iImmigrationBadHappiness;
 
 	bool m_bNeverLost;
 	bool m_bBombarded;

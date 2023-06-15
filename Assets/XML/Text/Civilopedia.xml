@@ -3014,6 +3014,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET][LINK=CIVIC_OPPORTUNITY]Opportunity[\LINK]: +[ICON_PRODUCTION] / Population | Extra Immigration for [ICON_PRODUCTION] (before modifiers) per Citizen(rounded down).
 [ICON_BULLET][LINK=CIVIC_MULTICULTURALISM]Multiculturalism[\LINK]: +[ICON_CULTURE] / Population | Extra Immigration for [ICON_CULTURE] (before modifiers) per Citizen (rounded down).
 [PARAGRAPH:1]Each city's Immigration value is added to its [ICON_FOOD]. With the [LINK=CIVIC_SLAVERY]Slavery[\LINK] Civic, each city's Immigration is also added to its [ICON_COMMERCE]. With the [LINK=CIVIC_MIGRANT_WORKERS]Migrant Workers[\LINK] Civic, each city's Immigration is also added to its [ICON_PRODUCTION].
+[PARAGRAPH:1]Immigration also brings [ICON_UNHAPPY]. For every 5 Immigration a city has, it gets 1 [ICON_UNHAPPY]. Immigration can bring a great deal of [ICON_FOOD], [ICON_PRODUCTION], and/or [ICON_COMMERCE], at the expense of [ICON_HAPPY].
 		</English>
 	</TEXT>
 	<TEXT>

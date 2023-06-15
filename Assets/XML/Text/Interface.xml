@@ -202,6 +202,14 @@
 		<Spanish>%D1_Change[ICON_UNHAPPY]: "Our workers are being exploited!"</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_ANGER_IMMIGRATION</Tag>
+		<English>%D1_Change[ICON_UNHAPPY]: "There are too many immigrants!"</English>
+		<French>%D1_Change[ICON_UNHAPPY] : "There are too many immigrants!"</French>
+		<German>%D1_Change[ICON_UNHAPPY]: "There are too many immigrants!"</German>
+		<Italian>%D1_Change[ICON_UNHAPPY]: "There are too many immigrants!"</Italian>
+		<Spanish>%D1_Change[ICON_UNHAPPY]: "There are too many immigrants!"</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_ANGER_SPECIALISTS</Tag>
 		<English>%D1_Change[ICON_UNHAPPY]: "Our slaves are longing for freedom!"</English>
 		<French>%D1_Change[ICON_UNHAPPY] : "Nos esclaves r&#233;clament leur libert&#233; !"</French>

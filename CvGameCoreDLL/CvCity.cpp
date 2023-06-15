@@ -605,6 +605,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iCivicImmigrationRateModifier = 0;
 	m_iImmigrationRateModifier = 0;
 	m_iImmigrationRate = 0;
+	m_iImmigrationBadHappiness = 0;
 
 	m_bNeverLost = true;
 	m_bBombarded = false;
@@ -5285,6 +5286,7 @@ int CvCity::unhappyLevel(int iExtra) const
 		iUnhappiness += std::max(0, getEspionageHappinessCounter());
 		iUnhappiness += std::max(0, getSpecialistBadHappiness()); // Leoreth
 		iUnhappiness += std::max(0, getCorporationBadHappiness()); // Leoreth
+		iUnhappiness += std::max(0, getImmigrationBadHappiness()); // MacAurther
 	}
 
 	return std::max(0, iUnhappiness);
@@ -15381,6 +15383,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iCivicImmigrationRateModifier);
 	pStream->Read(&m_iImmigrationRateModifier);
 	pStream->Read(&m_iImmigrationRate);
+	pStream->Read(&m_iImmigrationBadHappiness);
 
 	pStream->Read(&m_bNeverLost);
 	pStream->Read(&m_bBombarded);
@@ -15690,6 +15693,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_iCivicImmigrationRateModifier); // MacAurther
 	pStream->Write(m_iImmigrationRateModifier); // MacAurther
 	pStream->Write(m_iImmigrationRate); // MacAurther
+	pStream->Write(m_iImmigrationBadHappiness); // MacAurther
 
 	pStream->Write(m_bNeverLost);
 	pStream->Write(m_bBombarded);
@@ -19185,6 +19189,11 @@ int CvCity::getImmigrationYieldRate(YieldTypes eYield) const
 	return m_aiImmigrationYieldRate[eYield];
 }
 
+int CvCity::getImmigrationBadHappiness() const
+{
+	return m_iImmigrationBadHappiness;
+}
+
 void CvCity::setBuildingImmigrationRate(int iValue)
 {
 	m_iBuildingImmigrationRate = iValue;
@@ -19229,6 +19238,11 @@ void CvCity::setImmigrationRate(int iValue)
 void CvCity::setImmigrationYieldRate(YieldTypes eYield, int iValue)
 {
 	m_aiImmigrationYieldRate[eYield] = iValue;
+}
+
+void CvCity::setImmigrationBadHappiness(int iValue)
+{
+	m_iImmigrationBadHappiness = iValue;
 }
 
 void CvCity::changeBuildingImmigrationRate(int iChange)
@@ -19324,6 +19338,7 @@ int CvCity::calculateImmigrationRate()
 	if (getPopulation() < 1)
 	{
 		setImmigrationRate(0);
+		setImmigrationBadHappiness(0);
 		return 0;
 	}
 
@@ -19331,6 +19346,7 @@ int CvCity::calculateImmigrationRate()
 	if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_ISOLATIONISM))
 	{
 		setImmigrationRate(0);
+		setImmigrationBadHappiness(0);
 		return 0;
 	}
 
@@ -19341,6 +19357,12 @@ int CvCity::calculateImmigrationRate()
 	iBaseImmigrationRate += getCivicImmigrationRate();
 	setBaseImmigrationRate(iBaseImmigrationRate);
 
+	// MacAurther TODO: Figure out how to get negative Immigration to work?
+	if (getBaseImmigrationRate() < 0)
+	{
+		setBaseImmigrationRate(0);
+	}
+
 	// Calculate Immigration Rate Modifier
 	int iImmigrationRateModifier = 0;
 	iImmigrationRateModifier += getBuildingImmigrationRateModifier();
@@ -19348,15 +19370,9 @@ int CvCity::calculateImmigrationRate()
 	iImmigrationRateModifier += GET_PLAYER(getOwnerINLINE()).getGlobalImmigrationRateModifier();
 	setImmigrationRateModifier(iImmigrationRateModifier);
 
-	// MacAurther TODO: Figure out how to get negative Immigration to work?
-	if (getBaseImmigrationRate() < 0)
-	{
-		setBaseImmigrationRate(0);
-		return 0;
-	}
-
 	// Calculate Immigration Rate
 	setImmigrationRate((getBaseImmigrationRate() * (100 + getImmigrationRateModifier())) / 100);
+	setImmigrationBadHappiness(getImmigrationRate() / 5);	// 1 Unhappiness for every 5 Immigration rate
 	
 	return getImmigrationRate();
 }

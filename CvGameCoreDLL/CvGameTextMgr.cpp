@@ -13053,6 +13053,13 @@ void CvGameTextMgr::setAngerHelp(CvWStringBuffer &szBuffer, CvCity& city)
 			szBuffer.append(NEWLINE);
 		}
 
+		iAnger = city.getImmigrationBadHappiness();
+		if (iAnger > 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_ANGER_IMMIGRATION", iAnger));
+			szBuffer.append(NEWLINE);
+		}
+
 		iNewAnger -= std::min(0, city.getCommerceHappiness());
 		iAnger = ((iNewAnger - iOldAnger) + std::min(0, iOldAnger));
 		if (iAnger > 0)
@@ -13100,6 +13107,7 @@ void CvGameTextMgr::setAngerHelp(CvWStringBuffer &szBuffer, CvCity& city)
 
 		iOldAnger += city.getSpecialistBadHappiness();
 		iOldAnger += city.getCorporationBadHappiness();
+		iOldAnger += city.getImmigrationBadHappiness();
 
 		szBuffer.append(L"-----------------------\n");
 
