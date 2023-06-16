@@ -266,7 +266,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	AI_init(eUnitAI);
 
 	// MacAurther: If this unit can carry cargo, update Immigration
-	if (cargoSpace() > 0 && GC.getMap().plot(iX, iY)->getPlotCity() != NULL)
+	if (cargoSpace() > 0 && GC.getMap().plot(iX, iY)->isCity())
 	{
 		GC.getMap().plot(iX, iY)->getPlotCity()->processImmigrationUnit(this, true);
 	}
@@ -3076,13 +3076,13 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	}
 
 	// MacAurther: If a ship with cargo space moves into a city, update Immigration
-	if (cargoSpace() > 0 && pPlot->getPlotCity() != NULL)
+	if (cargoSpace() > 0 && pPlot->isCity())
 	{
 		pPlot->getPlotCity()->processImmigrationUnit(this, true);
 	}
 
 	// MacAurther: If a ship with cargo space moves out of a city, update Immigration
-	if (cargoSpace() > 0 && pOldPlot->getPlotCity() != NULL)
+	if (cargoSpace() > 0 && pOldPlot->isCity())
 	{
 		pOldPlot->getPlotCity()->reprocessImmigrationUnits();
 	}

@@ -19504,12 +19504,12 @@ int CvCity::pollCivicImmigrationRate(CivicTypes eCivic)
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_PROFITEERING))
 	{
 		int iCommerceRate = getBaseYieldRate(YIELD_COMMERCE) - getImmigrationYieldRate(YIELD_COMMERCE); // Don't let Immigration yields feedback
-		return iCommerceRate / getPopulation();
+		return iCommerceRate / (getPopulation() > 0 ? getPopulation() : 1); // Handle Pop = 0 bug on flip
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_OPPORTUNITY))
 	{
 		int iProductionRate = getBaseYieldRate(YIELD_PRODUCTION) - getImmigrationYieldRate(YIELD_PRODUCTION); // Don't let Immigration yields feedback
-		return iProductionRate / getPopulation();
+		return iProductionRate / (getPopulation() > 0 ? getPopulation() : 1); // Handle Pop = 0 bug on flip
 	}
 	else if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MULTICULTURALISM))
 	{
@@ -19519,7 +19519,7 @@ int CvCity::pollCivicImmigrationRate(CivicTypes eCivic)
 		{
 			iBaseCulture -= getImmigrationRate();
 		}
-		return iBaseCulture / getPopulation();
+		return iBaseCulture / (getPopulation() > 0 ? getPopulation() : 1); // Handle Pop = 0 bug on flip
 	}
 
 	return 0;

@@ -308,7 +308,7 @@ lCivilizations = [
 		iStateReligion=iProtestantism,
 		lCivics=[iDemocracy, iConfederacy, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iEngland],
-		techs=techs.column(11).including(iRepresentation, iIndependence)
+		techs=techs.column(11).including(iRepresentation, iIndependence, iSurveying)
 	),
 	Civilization(
 		iHaiti,
