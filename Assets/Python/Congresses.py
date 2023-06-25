@@ -756,6 +756,12 @@ class Congress:
 			
 	def voteOnClaimsAI(self):
 		for iClaimant in self.dCityClaims:
+			# MacAurther: do not check claims for Civs that have fallen
+			try:
+				iCiv = civ(iClaimant)
+			except:
+				print("Skipping iClaimant: " + str(iClaimant))
+			
 			x, y, iValue = self.dCityClaims[iClaimant]
 			
 			lVoters = self.invites.entities()
@@ -799,8 +805,6 @@ class Congress:
 		bCity = plot.isCity()
 		bOwner = (iOwner >= 0)
 		bOwnClaim = (iClaimant == iVoter)
-		
-		print("iClaimant: " + str(iClaimant))
 		
 		bRecolonise = plot.getRegionID() in lAmerica and civ(iClaimant) in dCivGroups[iCivGroupEurope] and civ(iOwner) in dCivGroups[iCivGroupAmerica] and civ(iOwner) in dTechGroups[iTechGroupWestern]
 		
@@ -856,9 +860,6 @@ class Congress:
 			
 		# if we don't dislike them, agree with the value of their claim
 		if pVoter.AI_getAttitude(iClaimant) >= AttitudeTypes.ATTITUDE_CAUTIOUS: iClaimValidity += iClaimValue
-			
-		# French UP
-		if civ(iClaimant) == iFrance: iClaimValidity += 5
 		
 		if not bRecolonise:
 		
@@ -1154,7 +1155,7 @@ class Congress:
 						
 				# help Canada gain Labrador and Newfoundland
 				if civ(iPlayer) == iCanada:
-					if city in plots.rectangle(tNewfoundland):
+					if city in plots.region(rNewFoundland):
 						iValue += 5
 					
 				if iValue > 0:

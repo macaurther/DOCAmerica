@@ -24434,7 +24434,7 @@ int CvPlayer::countRequiredSlaves() const
 				{
 					pLoopPlot = plotCity(pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), iJ);
 
-					if (pLoopPlot->getBonusType() == eBonus && pLoopPlot->getImprovementType() != eSlavePlantation)
+					if (pLoopPlot != NULL && pLoopPlot->getBonusType() == eBonus && pLoopPlot->getImprovementType() != eSlavePlantation)	// MacAurther: Check for NULL plot, i.e. the city is on the border of the map
 					{
 						if (pLoopPlot->canUseSlave(getID()))
 						{
