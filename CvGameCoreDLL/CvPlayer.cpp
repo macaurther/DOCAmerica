@@ -8703,14 +8703,15 @@ int CvPlayer::getReligionAnarchyLength() const
 int CvPlayer::unitsRequiredForGoldenAge() const
 {
 	int iNumUnitGoldenAges = getNumUnitGoldenAges();
+	int iNumUnitsNeeded = (GC.getDefineINT("BASE_GOLDEN_AGE_UNITS") + (iNumUnitGoldenAges * GC.getDefineINT("GOLDEN_AGE_UNITS_MULTIPLIER")));
 
-	// Pyramid of the Sun: requires 1 less GP for a golden age
-	if (iNumUnitGoldenAges > 1 && isHasBuildingEffect((BuildingTypes)BUILDING_PYRAMID_OF_THE_SUN))
+	// MacAurther: Pyramid of the Sun: requires 1 less GP for a golden age
+	if (iNumUnitsNeeded > 1 && isHasBuildingEffect((BuildingTypes)BUILDING_PYRAMID_OF_THE_SUN))
 	{
-		return (GC.getDefineINT("BASE_GOLDEN_AGE_UNITS") + (iNumUnitGoldenAges * GC.getDefineINT("GOLDEN_AGE_UNITS_MULTIPLIER")) - 1);
+		return iNumUnitsNeeded - 1;
 	}
 
-	return (GC.getDefineINT("BASE_GOLDEN_AGE_UNITS") + (iNumUnitGoldenAges * GC.getDefineINT("GOLDEN_AGE_UNITS_MULTIPLIER")));
+	return iNumUnitsNeeded;
 }
 
 

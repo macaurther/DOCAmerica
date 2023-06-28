@@ -804,41 +804,75 @@ dBuildingPreferences = {
 	iMaya : {
 		iTempleOfKukulkan: 40,
 		iMachuPicchu: -40,
+		iSerpentMound: -40,
+	},
+	iTeotihuacan : {
+		iTlachihualtepetl: 40,
+		iSerpentMound: -40,
 	},
 	iTiwanaku : {
 		iGateOfTheSun: 40,
+		iSerpentMound: -40,
+	},
+	iWari : {
+		iSerpentMound: -40,
 	},
 	iMississippi : {
 		iSerpentMound: 40,
 	},
-	iSpain : {
-		iGuadalupeBasilica: 30,
-		iChapultepecCastle: 30,
-		iCristoRedentor: 20,
+	iPuebloan : {
+		iSerpentMound: -40,
 	},
-	iFrance : {
-		iTradingCompanyBuilding: 40,
+	iMuisca : {
+		iSerpentMound: -40,
 	},
-	iEngland : {
-		iTradingCompanyBuilding: 50,
-		iNationalGallery: 20,
-	},
-	iPortugal : {
-		iCristoRedentor: 40,
+	iChimu : {
+		iSerpentMound: -40,
 	},
 	iInca : {
 		iMachuPicchu: 40,
 		iSacsayhuaman: 40,
+		iSerpentMound: -40,
 	},
 	iAztecs : {
 		iFloatingGardens: 40,
 		iHueyTeocalli: 30,
 		iMachuPicchu: -40,
+		iSerpentMound: -40,
+	},
+	iSpain : {
+		iTemblequeAqueduct: 20,
+		iLaFortaleza: 40,
+		iGuadalupeBasilica: 30,
+		iChapultepecCastle: 30,
+		iCristoRedentor: 20,
+	},
+	iPortugal : {
+		iSaoFranciscoSquare: 40,
+		iCristoRedentor: 20,
+	},
+	iEngland : {
+		iTradingCompanyBuilding: 50,
+		iNationalGallery: 20,
+	},
+	iFrance : {
+		iChateauFrontenac: 20,
+		iFrenchQuarter: 20,
+		iTradingCompanyBuilding: 40,
 	},
 	iNetherlands : {
 		iTradingCompanyBuilding: 60,
 	},
 	iAmerica : {
+		iIndendenceHall: 40,
+		iMountVernon: 20,
+		iMonticello: 20,
+		iWestPoint: 20,
+		iFortMcHenry: 20,
+		iWashingtonMonument: 40,
+		iFaneuilHall: 20,
+		iCentralPark: 20,
+		iEllisIsland: 20,
 		iStatueOfLiberty: 30,
 		iHollywood: 30,
 		iPentagon: 30,
@@ -847,8 +881,10 @@ dBuildingPreferences = {
 		iGoldenGateBridge: 30,
 		iWorldTradeCenter: 30,
 		iHubbleSpaceTelescope: 20,
+		iNASA: 40,
 		iCrystalCathedral: 20,
 		iMenloPark: 20,
+		iBiltmoreEstate: 20,
 		iUnitedNations: 20,
 		iGraceland: 20,
 	},
