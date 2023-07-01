@@ -306,6 +306,14 @@
 		<Spanish>[ICON_BULLET]At least %D1 for[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPITAL_BONUS_YIELD_POPULATION</Tag>
+		<English>[SPACE]in capital for every city with more than 9 population</English>
+		<French>[SPACE]in capital for every city with more than 9 population</French>
+		<German>[SPACE]in capital for every city with more than 9 population</German>
+		<Italian>[SPACE]in capital for every city with more than 9 population</Italian>
+		<Spanish>[SPACE]in capital for every city with more than 9 population</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AT_LEAST_ONE_SPECIALIST</Tag>
 		<English>[ICON_BULLET]At least one slot for[SPACE]</English>
 		<French>[ICON_BULLET]Capacité minimale d'un[SPACE]</French>

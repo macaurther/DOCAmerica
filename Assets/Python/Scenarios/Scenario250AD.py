@@ -6,12 +6,12 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=50,
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology, iMining)
 	),
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(1).including(iPottery, iAgriculture)
+		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iTiwanaku,

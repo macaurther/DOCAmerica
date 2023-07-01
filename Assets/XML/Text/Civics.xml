@@ -487,6 +487,14 @@
 [ICON_BULLET]No Immigration</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
+		<English>[ICON_BULLET]No instability for cities outside core</English>
+		<French>[ICON_BULLET]No instability for cities outside core</French>
+		<German>[ICON_BULLET]No instability for cities outside core</German>
+		<Italian>[ICON_BULLET]No instability for cities outside core</Italian>
+		<Spanish>[ICON_BULLET]No instability for cities outside core</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIONHOOD</Tag>
 		<English>Nationhood</English>
 		<French>
@@ -773,6 +781,22 @@
 		<German>Extra commerce from specialists; faster production of Constabulary, Jail, Courthouse, Library</German>
 		<Italian>Extra commerce from specialists; faster production of Constabulary, Jail, Courthouse, Library</Italian>
 		<Spanish>Extra commerce from specialists; faster production of Constabulary, Jail, Courthouse, Library</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ARISTOCRACY</Tag>
+		<English>Aristocracy</English>
+		<French>Aristocracy</French>
+		<German>Aristocracy</German>
+		<Italian>Aristocracy</Italian>
+		<Spanish>Aristocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Tag>
+		<English>Extra yields in capital</English>
+		<French>Extra yields in capital</French>
+		<German>Extra yields in capital</German>
+		<Italian>Extra yields in capital</Italian>
+		<Spanish>Extra yields in capital</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_VICEROYALTY</Tag>

@@ -5779,6 +5779,7 @@ m_iLevelExperienceModifier(0), // Leoreth
 m_iUnhappinessDecayModifier(0), // Leoreth
 m_iVassalTradeModifier(0), // Leoreth
 m_iCultureGroup(0), // FoB
+m_iMinPopForCapitalBonus(0), // FoB
 m_bMilitaryFoodProduction(false),
 m_bNoUnhealthyPopulation(false),
 m_bBuildingOnlyHealthy(false),
@@ -5798,6 +5799,7 @@ m_piCapitalYieldModifier(NULL),
 m_piTradeYieldModifier(NULL),
 m_piCommerceModifier(NULL),
 m_piCapitalCommerceModifier(NULL),
+m_piCapitalPopExtraYield(NULL), //FoB
 m_piSpecialistExtraCommerce(NULL),
 m_piSpecialistExtraYield(NULL), //Leoreth
 m_piHappinessExtraYield(NULL), // Leoreth
@@ -5830,6 +5832,7 @@ CvCivicInfo::~CvCivicInfo()
 
 	SAFE_DELETE_ARRAY(m_piYieldModifier);
 	SAFE_DELETE_ARRAY(m_piCapitalYieldModifier);
+	SAFE_DELETE_ARRAY(m_piCapitalPopExtraYield); //FoB
 	SAFE_DELETE_ARRAY(m_piTradeYieldModifier);
 	SAFE_DELETE_ARRAY(m_piCommerceModifier);
 	SAFE_DELETE_ARRAY(m_piCapitalCommerceModifier);
@@ -6220,6 +6223,18 @@ int* CvCivicInfo::getCapitalYieldModifierArray() const
 	return m_piCapitalYieldModifier;
 }
 
+int CvCivicInfo::getCapitalPopulationYieldModifier(int i) const
+{
+	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_piCapitalPopExtraYield ? m_piCapitalPopExtraYield[i] : -1;
+}
+
+int* CvCivicInfo::getCapitalPopulationYieldModifierArray() const
+{
+	return m_piCapitalPopExtraYield;
+}
+
 int CvCivicInfo::getTradeYieldModifier(int i) const
 {
 	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
@@ -6497,6 +6512,7 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iVassalTradeModifier); // Leoreth
 
 	stream->Read(&m_iCultureGroup); // FoB
+	stream->Read(&m_iMinPopForCapitalBonus); // FoB
 
 	stream->Read(&m_bMilitaryFoodProduction);
 	stream->Read(&m_bNoUnhealthyPopulation);
@@ -6522,6 +6538,11 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_piCapitalYieldModifier);
 	m_piCapitalYieldModifier = new int[NUM_YIELD_TYPES];
 	stream->Read(NUM_YIELD_TYPES, m_piCapitalYieldModifier);
+
+	// FoB
+	SAFE_DELETE_ARRAY(m_piCapitalPopExtraYield);
+	m_piCapitalPopExtraYield = new int[NUM_YIELD_TYPES];
+	stream->Read(NUM_YIELD_TYPES, m_piCapitalPopExtraYield);
 
 	SAFE_DELETE_ARRAY(m_piTradeYieldModifier);
 	m_piTradeYieldModifier = new int[NUM_YIELD_TYPES];
@@ -6683,6 +6704,7 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iVassalTradeModifier); // Leoreth
 
 	stream->Write(m_iCultureGroup); // FoB
+	stream->Write(m_iMinPopForCapitalBonus); // FoB
 
 	stream->Write(m_bMilitaryFoodProduction);
 	stream->Write(m_bNoUnhealthyPopulation);
@@ -6703,6 +6725,7 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 
 	stream->Write(NUM_YIELD_TYPES, m_piYieldModifier);
 	stream->Write(NUM_YIELD_TYPES, m_piCapitalYieldModifier);
+	stream->Write(NUM_YIELD_TYPES, m_piCapitalPopExtraYield); // FoB
 	stream->Write(NUM_YIELD_TYPES, m_piTradeYieldModifier);
 	stream->Write(NUM_COMMERCE_TYPES, m_piCommerceModifier);
 	stream->Write(NUM_COMMERCE_TYPES, m_piCapitalCommerceModifier);
@@ -6940,6 +6963,53 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	// Leoreth
 	pXML->SetVariableListTagPair(&m_paiDomainProductionModifiers, "DomainProductionModifiers", sizeof(GC.getDomainInfo((DomainTypes)0)), NUM_DOMAIN_TYPES);
 	pXML->SetVariableListTagPair(&m_paiDomainExperienceModifiers, "DomainExperienceModifiers", sizeof(GC.getDomainInfo((DomainTypes)0)), NUM_DOMAIN_TYPES);
+
+	// FoB
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "PopulationCapitalBonus"))
+	{
+		pXML->SetYields(&m_piCapitalPopExtraYield);
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	else
+	{
+		pXML->InitList(&m_piCapitalPopExtraYield, NUM_YIELD_TYPES);
+	}
+
+	//if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "PopulationCapitalBonus"))
+	//{
+	//	if (pXML->SkipToNextVal())
+	//	{
+	//		iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
+	//		if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
+	//		{
+	//			if (iNumSibs > 0)
+	//			{
+	//				for (j = 0;j < iNumSibs;j++)
+	//				{
+	//					pXML->GetChildXmlValByName(&m_iMinPopForCapitalBonus, "iMinPop");
+
+	//					if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "CapitalBonusYields"))
+	//					{
+	//						pXML->SetYields(&m_piCapitalPopExtraYield);
+	//						gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	//					}
+	//					else
+	//					{
+	//						pXML->InitList(&m_piCapitalPopExtraYield, NUM_YIELD_TYPES);
+	//					}
+
+	//					if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()))
+	//					{
+	//						break;
+	//					}
+	//				}
+	//			}
+
+	//			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	//		}
+	//	}
+	//	gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	//}
 
 	// initialize the boolean list to the correct size and all the booleans to false
 	FAssertMsg((GC.getNumImprovementInfos() > 0) && (NUM_YIELD_TYPES) > 0,"either the number of improvement infos is zero or less or the number of yield types is zero or less");

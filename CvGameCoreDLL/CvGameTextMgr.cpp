@@ -7695,6 +7695,9 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	//	Capital Yield Modifiers
 	setYieldChangeHelp(szHelpText, L"", L"", gDLL->getText("TXT_KEY_CIVIC_IN_CAPITAL").GetCString(), GC.getCivicInfo(eCivic).getCapitalYieldModifierArray(), true);
 
+	//FoB
+	setYieldChangeHelp(szHelpText, L"", L"", gDLL->getText("TXT_KEY_CIVIC_CAPITAL_BONUS_YIELD_POPULATION").GetCString(), GC.getCivicInfo(eCivic).getCapitalPopulationYieldModifierArray());
+
 	//	Trade Yield Modifiers
 	setYieldChangeHelp(szHelpText, L"", L"", gDLL->getText("TXT_KEY_CIVIC_FROM_TRADE_ROUTES").GetCString(), GC.getCivicInfo(eCivic).getTradeYieldModifierArray(), true);
 
@@ -7779,6 +7782,16 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 			szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_UNHAPPINESS_DECAY_MODIFIER", GC.getCivicInfo(eCivic).getUnhappinessDecayModifier()));
 		}
 	}
+
+	//FoB - to delete
+	//for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+	//{
+	//	if (GC.getCivicInfo(eCivic).getCapitalPopulationYieldModifier(iI) != 0)
+	//	{
+	//		szHelpText.append(NEWLINE);
+	//		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_VASSAL_CITY_COMMERCE", GC.getCivicInfo(eCivic).getCapitalPopulationYieldModifier(iI)));
+	//	}
+	//}
 
 	//	Improvement Yields
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)

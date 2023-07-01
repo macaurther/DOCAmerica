@@ -67,6 +67,9 @@ def foundMinorCities(iGameTurn):
 		if iGameTurn < year(iYear): return
 		if iGameTurn > year(iYear)+10: continue
 
+		if i >= len(data.lMinorCityFounded):
+			print("ERROR: Number of independent city definitions exceeds iNumMinorCities. Did you forget to update consts.py?")
+			data.lMinorCityFounded.append(False);
 		if data.lMinorCityFounded[i]: continue
 
 		if plot(tPlot).isCity(): continue

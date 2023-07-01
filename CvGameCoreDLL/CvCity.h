@@ -157,6 +157,9 @@ public:
 	void processProcess(ProcessTypes eProcess, int iChange);
 	void processSpecialist(SpecialistTypes eSpecialist, int iChange);
 
+	void changeSpecialistHappiness(SpecialistTypes eSpecialist, int iChange);
+	void recalculateSpecialistHappiness();
+
 	HandicapTypes getHandicapType() const;												// Exposed to Python
 	CivilizationTypes getCivilizationType() const;								// Exposed to Python
 	LeaderHeadTypes getPersonalityType() const;															// Exposed to Python

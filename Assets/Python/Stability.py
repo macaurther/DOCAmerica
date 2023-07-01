@@ -578,6 +578,8 @@ def calculateStability(iPlayer):
 	iSeparatismExcess = 100 * iSeparatism / iAdministration - 100
 	
 	if iSeparatismExcess > 200: iSeparatismExcess = 200
+	if iConfederacy in civics:
+		iSeparatismExcess = 0
 		
 	if iSeparatismExcess > 0:
 		iCorePeripheryStability -= int(25 * sigmoid(1.0 * iSeparatismExcess / 100))
@@ -1039,6 +1041,12 @@ def getCivicStability(iPlayer, civics=None):
 		if iHaven in civics: iStability += 2
 		if iGloriaInDeo in civics: iStability -= 2
 		if iEncomienda in civics: iStability -= 2
+
+	if iAristocracy in civics:
+		if iDespotism in civics: iStability += 2
+		if iDemocracy in civics: iStability -= 4
+		if iStateParty in civics: iStability -= 4
+		if iOpportunity in civics: iStability -= 2
 	
 	if iConfederacy in civics:
 		if iMultilateralism in civics: iStability += 3

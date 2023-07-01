@@ -61,6 +61,8 @@ CvPlayer::CvPlayer()
 	m_aiHappinessExtraYield = new int[NUM_YIELD_TYPES]; // Leoreth
 	m_aiUnhappinessExtraYield = new int[NUM_YIELD_TYPES]; // Leoreth
 	m_aiUnimprovedTileYield = new int[NUM_YIELD_TYPES]; // Leoreth
+	m_aiCapitalBonusYieldFromCivic = new int[NUM_YIELD_TYPES]; // FoB
+	m_aiCapitalBonusYields = new int[NUM_YIELD_TYPES]; // FoB
 	m_aiCommerceFlexibleCount = new int[NUM_COMMERCE_TYPES];
 	m_aiGoldPerTurnByPlayer = new int[MAX_PLAYERS];
 	m_aiEspionageSpendingWeightAgainstTeam = new int[MAX_TEAMS];
@@ -141,6 +143,8 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_aiHappinessExtraYield); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiUnhappinessExtraYield); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiUnimprovedTileYield); // Leoreth
+	SAFE_DELETE_ARRAY(m_aiCapitalBonusYieldFromCivic); // FoB
+	SAFE_DELETE_ARRAY(m_aiCapitalBonusYields); // FoB
 	SAFE_DELETE_ARRAY(m_aiCommerceFlexibleCount);
 	SAFE_DELETE_ARRAY(m_aiGoldPerTurnByPlayer);
 	SAFE_DELETE_ARRAY(m_aiEspionageSpendingWeightAgainstTeam);
@@ -519,6 +523,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iVassalTradeModifier = 0; // Leoreth
 	m_iCapitalCommerce = 0; // Leoreth
 	m_iVassalCityCommerce = 0; // Leoreth
+	m_iCapitalPopulationCivicCombinedYield = 0; // FoB
 	m_iColonyCommerce = 0; // Leoreth
 	m_iCaptureGoldModifier = 0; // Leoreth
 	m_iSlaveryCount = 0; // Leoreth
@@ -617,6 +622,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_aiHappinessExtraYield[iI] = 0; // Leoreth
 		m_aiUnhappinessExtraYield[iI] = 0; // Leoreth
 		m_aiUnimprovedTileYield[iI] = 0; // Leoreth
+		m_aiCapitalBonusYieldFromCivic[iI] = 0; // FoB
+		m_aiCapitalBonusYields[iI] = 0; // FoB
 	}
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
@@ -3030,6 +3037,9 @@ void CvPlayer::doTurn()
 	// Leoreth
 	updateCapitalCommerce();
 
+	// FoB
+	updateCapitalPopulationBonusYields();
+
 	verifyGoldCommercePercent();
 
 	doGold();
@@ -3297,6 +3307,17 @@ void CvPlayer::updateExtraSpecialistYield()
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		pLoopCity->updateExtraSpecialistYield();
+	}
+}
+
+void CvPlayer::updateSpecialistHappiness()
+{
+	CvCity* pLoopCity;
+	int iLoop;
+
+	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		pLoopCity->recalculateSpecialistHappiness();
 	}
 }
 
@@ -10436,6 +10457,7 @@ void CvPlayer::changeSpecialistHappiness(int iChange)
 	{
 		m_iSpecialistHappiness += iChange;
 
+		updateSpecialistHappiness();
 		AI_makeAssignWorkDirty();
 	}
 }
@@ -13926,6 +13948,50 @@ void CvPlayer::changeUnimprovedTileYield(YieldTypes eYield, int iChange)
 
 		AI_updateAssignWork();
 	}
+}
+
+// FoB
+void CvPlayer::changeCapitalBonusYieldFromCivics(YieldTypes eYield, int iChange)
+{
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(eYield > -1, "Index out of bounds");
+
+	if (iChange != 0)
+	{
+		m_iCapitalPopulationCivicCombinedYield += iChange;
+		m_aiCapitalBonusYieldFromCivic[eYield] += iChange;
+	}
+}
+
+// FoB
+int CvPlayer::getCapitalBonusYieldFromCivics(YieldTypes eYield) const
+{
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(eYield > -1, "Index out of bounds");
+
+	return m_aiCapitalBonusYieldFromCivic[eYield];
+}
+
+// FoB
+void CvPlayer::changeCapitalBonusYield(YieldTypes eYield, int iChange)
+{
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(eYield > -1, "Index out of bounds");
+
+	if (iChange != 0)
+	{
+		m_aiCapitalBonusYields[eYield] += iChange;
+		AI_updateAssignWork();
+	}
+}
+
+// FoB
+int CvPlayer::getCapitalBonusYield(YieldTypes eYield) const
+{
+	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
+	FAssertMsg(eYield > -1, "Index out of bounds");
+
+	return m_aiCapitalBonusYields[eYield];
 }
 
 int CvPlayer::getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIndex2) const
@@ -18051,11 +18117,13 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 		changeHappinessExtraYield((YieldTypes)iI, GC.getCivicInfo(eCivic).getHappinessExtraYield(iI) * iChange);
 		changeUnhappinessExtraYield((YieldTypes)iI, GC.getCivicInfo(eCivic).getUnhappinessExtraYield(iI) * iChange);
 		changeUnimprovedTileYield((YieldTypes)iI, GC.getCivicInfo(eCivic).getUnimprovedTileYield(iI) * iChange);
+		changeCapitalBonusYieldFromCivics((YieldTypes)iI, GC.getCivicInfo(eCivic).getCapitalPopulationYieldModifier(iI) * iChange); //FoB
 		for (iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
 		{
 			changeSpecialistExtraYield(((SpecialistTypes)iJ), ((YieldTypes)iI), (GC.getCivicInfo(eCivic).getSpecialistExtraYield(iI) * iChange)); // Leoreth
 		}
 	}
+	updateCapitalPopulationBonusYields();
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
@@ -18428,6 +18496,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iVassalTradeModifier); // Leoreth
 	pStream->Read(&m_iCapitalCommerce); // Leoreth
 	pStream->Read(&m_iVassalCityCommerce); // Leoreth
+	pStream->Read(&m_iCapitalPopulationCivicCombinedYield); // FoB
 	pStream->Read(&m_iColonyCommerce); // Leoreth
 	pStream->Read(&m_iCaptureGoldModifier); // Leoreth
 	pStream->Read(&m_iSlaveryCount); // Leoreth
@@ -18514,6 +18583,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_aiHappinessExtraYield); // Leoreth
 	pStream->Read(NUM_YIELD_TYPES, m_aiUnhappinessExtraYield); // Leoreth
 	pStream->Read(NUM_YIELD_TYPES, m_aiUnimprovedTileYield); // Leoreth
+	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalBonusYieldFromCivic); // FoB
+	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalBonusYields); // FoB
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiFreeCityCommerce);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommercePercent);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommerceRate);
@@ -18865,6 +18936,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iVassalTradeModifier); // Leoreth
 	pStream->Write(m_iCapitalCommerce); // Leoreth
 	pStream->Write(m_iVassalCityCommerce); // Leoreth
+	pStream->Write(m_iCapitalPopulationCivicCombinedYield); // FoB
 	pStream->Write(m_iColonyCommerce); // Leoreth
 	pStream->Write(m_iCaptureGoldModifier); // Leoreth
 	pStream->Write(m_iSlaveryCount); // Leoreth
@@ -18906,7 +18978,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_bFoundedFirstCity);
 	pStream->Write(m_bStrike);
 	pStream->Write(m_bBirthProtected);
-
 
 	//Rhye (jdog) -  start ---------------------
 	//pStream->WriteString(m_szName);
@@ -18951,6 +19022,8 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_YIELD_TYPES, m_aiHappinessExtraYield); // Leoreth
 	pStream->Write(NUM_YIELD_TYPES, m_aiUnhappinessExtraYield); // Leoreth
 	pStream->Write(NUM_YIELD_TYPES, m_aiUnimprovedTileYield); // Leoreth
+	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalBonusYieldFromCivic); // FoB
+	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalBonusYields); // FoB
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiFreeCityCommerce);
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiCommercePercent);
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiCommerceRate);
@@ -25014,6 +25087,52 @@ void CvPlayer::applyCapitalCommerce(int iChange)
 	}
 }
 
+// FoB
+void CvPlayer::updateCapitalPopulationBonusYields()
+{
+	//Loop cities to calculate number of cities over necessary population
+	int iNumCities = 0;
+
+	if (m_iCapitalPopulationCivicCombinedYield != 0)
+	{
+		CvCity* pLoopCity;
+		int iLoop;
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			//TODO - Change to not be hardcoded
+			if (!pLoopCity->isCapital())
+			{
+				if (pLoopCity->getPopulation() > 9)
+				{
+					iNumCities++;
+				}
+			}
+		}
+	}
+
+	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	{
+		int iCivicYield = getCapitalBonusYieldFromCivics((YieldTypes)iI);
+		int iOldCapitalYield = getCapitalBonusYield((YieldTypes)iI);
+		int iNewCapitalYield = iNumCities * iCivicYield;
+
+		if (iNewCapitalYield != iOldCapitalYield)
+		{
+			changeCapitalBonusYield((YieldTypes)iI, iNewCapitalYield - iOldCapitalYield);
+			applyCapitalBonusYield((YieldTypes)iI, iNewCapitalYield - iOldCapitalYield);
+		}
+	}
+}
+
+// FoB
+void CvPlayer::applyCapitalBonusYield(YieldTypes yieldIndex, int iChange)
+{
+	if (getCapitalCity() != NULL)
+	{
+		getCapitalCity()->changeBuildingYieldChange(BUILDINGCLASS_PALACE, yieldIndex, iChange);
+	}
+}
+
 int CvPlayer::getFreeTechsOnDiscovery() const
 {
 	return m_iFreeTechsOnDiscovery;
@@ -25468,7 +25587,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_REVOLUTIONARY)
 	{
-		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_CHIEFDOM || eCivic == CIVIC_TRADITIONALISM)
+		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_CHIEFDOM || eCivic == CIVIC_TRADITIONALISM || eCivic == CIVIC_ARISTOCRACY)
 		{
 			return true;
 		}
