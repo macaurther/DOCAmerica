@@ -1921,7 +1921,7 @@
 			</TerrainMakesValids>
 			<FeatureMakesValids>
 				<FeatureMakesValid>
-					<FeatureType>FEATURE_OASIS</FeatureType>
+					<FeatureType>FEATURE_CENOTE</FeatureType>
 					<bMakesValid>1</bMakesValid>
 				</FeatureMakesValid>
 			</FeatureMakesValids>
@@ -1981,7 +1981,7 @@
 			</TerrainMakesValids>
 			<FeatureMakesValids>
 				<FeatureMakesValid>
-					<FeatureType>FEATURE_OASIS</FeatureType>
+					<FeatureType>FEATURE_CENOTE</FeatureType>
 					<bMakesValid>1</bMakesValid>
 				</FeatureMakesValid>
 			</FeatureMakesValids>

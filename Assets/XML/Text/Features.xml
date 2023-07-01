@@ -86,6 +86,14 @@
 		<Spanish>Palm Forest</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_FEATURE_CENOTE</Tag>
+		<English>Cenote</English>
+		<French>Cenote</French>
+		<German>Cenote</German>
+		<Italian>Cenote</Italian>
+		<Spanish>Cenote</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_FEATURE_NO_IMPROVEMENT</Tag>
 		<English>[NEWLINE][ICON_BULLET]Cannot build any improvements on this feature</English>
 		<French>[NEWLINE][ICON_BULLET]Les am&#233;nagements ne peuvent &#234;tre construits ici</French>

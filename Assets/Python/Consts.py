@@ -625,7 +625,7 @@ iNumRoutes = 3
 
 iNumFeatures = 13
 #				2				3				4				5				6				7				8				9				10
-(iSeaIce, 		iJungle, 		iOasis, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
+(iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
 iFallout, 		iTaiga, 		iPalmForest) = range(iNumFeatures)
 
 iNumTerrains = 20

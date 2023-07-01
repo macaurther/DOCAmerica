@@ -359,7 +359,7 @@ def determineTargetPlayer(iPlayer):
 		# Treaty of Tordesillas
 		if iCiv in [iSpain, iPortugal]:
 			if iLoopCiv in [iSpain, iPortugal]:
-				dTargetValues[iLoopPlayer] /= 4
+				dTargetValues[iLoopPlayer] /= 8
 		
 				
 	return dict_max(dTargetValues)

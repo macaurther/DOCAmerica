@@ -20926,6 +20926,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=61
+	FeatureType=FEATURE_CENOTE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=5,
@@ -21498,7 +21499,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=58
-	BonusType=BONUS_OBSIDIAN
+	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,
@@ -26781,8 +26782,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=68
-	BonusType=BONUS_CITRUS
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_CENOTE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -27386,7 +27386,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=68
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	BonusType=BONUS_CITRUS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
