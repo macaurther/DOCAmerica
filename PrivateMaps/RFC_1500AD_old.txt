@@ -1,0 +1,814 @@
+Platy Builder
+Version=11
+
+BeginGame
+	Calendar=CALENDAR_DEFAULT
+	Option=GAMEOPTION_AGGRESSIVE_AI
+	Option=GAMEOPTION_NO_TECH_BROKERING
+	GameTurn=181
+	StartYear=1500
+	Description=TXT_KEY_RHYES_WB_DESC
+	ModPath=Mods\DOCAmerica
+EndGame
+
+BeginMap
+EndMap
+
+BeginPlot
+	x=0,y=0
+	BeginCity
+		CityOwner=CIVILIZATION_INDEPENDENT3
+		CityName=Holy City
+		CityPopulation=1
+		BuildingType=BUILDING_PALACE
+		YearFounded=-3000
+		YearAcquired=-3000
+		PreviousOwner=CIVILIZATION_INDEPENDENT3
+		HolyCityReligionType=RELIGION_JUDAISM
+		HolyCityReligionType=RELIGION_ORTHODOXY
+		HolyCityReligionType=RELIGION_CATHOLICISM
+		HolyCityReligionType=RELIGION_ISLAM
+		HolyCityReligionType=RELIGION_HINDUISM
+		HolyCityReligionType=RELIGION_BUDDHISM
+		HolyCityReligionType=RELIGION_CONFUCIANISM
+		HolyCityReligionType=RELIGION_TAOISM
+		HolyCityReligionType=RELIGION_ZOROASTRIANISM
+		BeginCulture
+			Civilization=CIVILIZATION_INDEPENDENT3, Culture=10
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=6,y=104
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INUIT
+		CityName=Atqasuk
+		CityPopulation=2
+		YearFounded=1050
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_INUIT, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=36,y=58
+	BeginUnit
+		UnitType=UNIT_MAYAN_HOLKAN
+		UnitOwner=CIVILIZATION_NATIVE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MAYAN_HOLKAN
+		UnitOwner=CIVILIZATION_NATIVE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MAYAN_HOLKAN
+		UnitOwner=CIVILIZATION_NATIVE
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_NATIVE
+		CityName=Yax Mutal
+		CityPopulation=4
+		YearFounded=-400
+		PreviousOwner=CIVILIZATION_MAYA
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_MAYAN_BALL_COURT
+		BeginCulture
+			Civilization=CIVILIZATION_NATIVE, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=29,y=60
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_AZTEC
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_AZTEC
+		CityName=Tenochtitlan
+		CityPopulation=10
+		YearFounded=1250
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_AZTEC, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=29,y=62
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_AZTEC
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_AZTEC
+		CityName=Teotihuacan
+		CityPopulation=3
+		YearFounded=-200
+		PreviousOwner=CIVILIZATION_TEOTIHUACAN
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_AZTEC, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=49,y=36
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_INCA
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_INCA
+		CityName=Cuzco
+		CityPopulation=6
+		YearFounded=1100
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_INCA, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=50,y=48
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_MUISCA
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_MUISCA
+		CityName=Hunza
+		CityPopulation=5
+		YearFounded=800
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_MUISCA, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=51,y=84
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_IROQUOIS
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_IROQUOIS
+		CityName=Onondaga
+		CityPopulation=3
+		YearFounded=1450
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_IROQUOIS, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=55,y=59
+	BeginUnit
+		UnitType=UNIT_MILITIA_2
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_SPAIN
+		CityName=Santo Domingo
+		CityPopulation=2
+		YearFounded=1496
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		ReligionType=RELIGION_CATHOLICISM
+	EndCity
+EndPlot
+BeginPlot
+	x=77,y=104
+	BeginUnit
+		UnitType=UNIT_MILITIA_2
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_NORSE
+		CityName=Reykjav&#237;k
+		CityPopulation=3
+		YearFounded=874
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_NORSE, Culture=15
+		EndCulture
+	EndCity
+EndPlot
+
+BeginPlot
+	x=1,y=56
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=4,y=54
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=6,y=102
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=8,y=98
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=11,y=53
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=11,y=99
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=13,y=104
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=14,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=14,y=87
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=15,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=16,y=77
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=16,y=81
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=17,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=17,y=98
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=18,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=19,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=21,y=73
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=21,y=86
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=21,y=93
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=22,y=68
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=22,y=78
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=23,y=83
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=23,y=98
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=24,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=25,y=72
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=25,y=92
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=25,y=102
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=26,y=62
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=26,y=67
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=26,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=27,y=83
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=28,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=28,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=29,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=64
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=77
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=30,y=100
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=31,y=61
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=31,y=72
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=31,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=32,y=58
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=32,y=70
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=32,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=33,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=33,y=87
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=34,y=43
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=34,y=72
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=34,y=80
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=35,y=97
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=36,y=76
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=36,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=37,y=61
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=72
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=83
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=39,y=53
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=39,y=75
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=40,y=57
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=40,y=73
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=40,y=81
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=41,y=71
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=41,y=95
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=42,y=77
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=43,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=43,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=43,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=44,y=40
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=44,y=52
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=44,y=72
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=44,y=74
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=10
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=52
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=79
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=46,y=92
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=47,y=4
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=47,y=47
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=47,y=67
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=47,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=48,y=40
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=48,y=58
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=48,y=75
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=48,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=48,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=1
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=23
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=33
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=54
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=49,y=78
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=50,y=6
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=50,y=25
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=50,y=74
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=9
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=51
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=52,y=11
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=14
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=52
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=89
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=53,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=16
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=39
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=59
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=78
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=81
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=87
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=54,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=55,y=22
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=55,y=49
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=56,y=12
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=56,y=16
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=56,y=52
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=20
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=23
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=34
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=45
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=82
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=57,y=90
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=58,y=28
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=58,y=49
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=58,y=84
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=59,y=25
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=59,y=41
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=59,y=59
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=60,y=54
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=22
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=32
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=37
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=46
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=86
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=61,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=63,y=93
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=64,y=47
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=65,y=32
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=66,y=26
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=66,y=88
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=66,y=96
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=68,y=33
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=68,y=38
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=68,y=44
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=68,y=101
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=69,y=31
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=70,y=91
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=72,y=29
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=72,y=42
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=73,y=34
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=76,y=38
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
