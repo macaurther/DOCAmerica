@@ -38,9 +38,6 @@ def setup():
 	global dFeatures
 	dFeatures = TileDict(dFeaturesDict, year)
 	
-	for tile in lNewfoundlandCapes:
-		dFeatures[tile] = (700, iCape)
-	
 	global dRemovedFeatures
 	dRemovedFeatures = TileDict(dRemovedFeaturesDict, year)
 	
@@ -49,9 +46,6 @@ def setup():
 	
 	global dConquerorRemovedFeatures
 	dConquerorRemovedFeatures = TileDict(dConquerorRemovedFeaturesDict)
-	
-	for tile in lNewfoundlandCapes:
-		dRemovedFeatures[tile] = 1500
 		
 	global dRoutes
 	dRoutes = appenddict(dict((year(iYear), tiles) for iYear, tiles in dRoutesDict.items()))
@@ -60,30 +54,24 @@ def setup():
 ### Constants ###
 
 # initialise bonuses variables
-# MacAurther TODO: Put these capes on the map
-lNewfoundlandCapes = [(68, 82), (69, 93), (68, 93), (67, 93), (71, 91), (71, 90), (38, 91)]
-
 dResourcesDict = {
-	(45, 72)  : (1600,  iCotton),  # Georgia
-	(48, 74)  : (1600,  iCotton),  # South Carolina
-	(50, 75)  : (1600,  iCotton),  # North Carolina
-	(41, 71)  : (1600,  iCotton),  # Alabama
-	(39, 74)  : (1600,  iCotton),  # Mississippi
-	(33, 72)  : (1600,  iCotton),  # Texas
-	(31, 69)  : (1600,  iCotton),  # Texas
-	(64, 87)  : (1600,  iPotato),  # New Brunswick
-	(42, 84)  : (1600,  iPotato),  # Michigan
-	(37, 85)  : (1600,  iPotato),  # Wisconsin
-	(27, 88)  : (1600,  iPotato),  # North Dakota
-	(31, 89)  : (1600,  iPotato),  # North Dakota
-	(32, 92)  : (1600,  iPotato),  # Manitoba
-	(30, 85)  : (1600,  iPotato),  # Idaho
-	(18, 87)  : (1600,  iPotato),  # Oregon
-	(23, 83)  : (1600,  iPotato),  # Utah
-	(50, 78)  : (1600,  iTobacco), # Virginia
-	(47, 74)  : (1600,  iTobacco), # South Carolina
-	(21, 41)  : (1600,  iTobacco), # Alabama
-	(44, 77)  : (1600,  iTobacco), # Kentucky
+	(32, 72)  : (1600,  iCotton),  # Georgia
+	(35, 73)  : (1600,  iCotton),  # South Carolina
+	(34, 75)  : (1600,  iCotton),  # North Carolina
+	(29, 73)  : (1600,  iCotton),  # Alabama
+	(27, 77)  : (1600,  iCotton),  # Mississippi
+	(22, 76)  : (1600,  iCotton),  # Texas
+	(17, 73)  : (1600,  iCotton),  # Texas
+	(50, 87)  : (1600,  iPotato),  # New Brunswick
+	(33, 87)  : (1600,  iPotato),  # Michigan
+	(24, 96)  : (1600,  iPotato),  # North Dakota
+	(16, 95)  : (1600,  iPotato),  # Idaho
+	(11, 96)  : (1600,  iPotato),  # Oregon
+	(15, 89)  : (1600,  iPotato),  # Utah
+	(37, 77)  : (1600,  iTobacco), # Virginia
+	(37, 74)  : (1600,  iTobacco), # South Carolina
+	(29, 75)  : (1600,  iTobacco), # Alabama
+	(33, 80)  : (1600,  iTobacco), # Kentucky
 }
 
 dSpawnResourcesDict = {
@@ -103,27 +91,24 @@ dPlotTypesDict = {
 }
 
 dFeaturesDict = {
-	(16, 78) : (1850, iFloodPlains), # California
-	(16, 81) : (1850, iFloodPlains), # California
-	(15, 82) : (1850, iFloodPlains), # California
+	(8, 92) : (1850, iFloodPlains), # California
+	(9, 92) : (1850, iFloodPlains), # California
+	(8, 91) : (1850, iFloodPlains), # California
+    (9, 90) : (1850, iFloodPlains), # California
+	(9, 89) : (1850, iFloodPlains), # California
 }
 
 dRemovedFeaturesDict = {
 }
 
 dConquerorPlotTypesDict = {
-	(55, 33) : (iInca, PlotTypes.PLOT_HILLS),
-	(55, 29) : (iInca, PlotTypes.PLOT_HILLS),
-	(52, 22) : (iInca, PlotTypes.PLOT_HILLS),
-	(49, 12) : (iInca, PlotTypes.PLOT_HILLS),
-	(47, 43) : (iInca, PlotTypes.PLOT_HILLS),
-	(49, 39) : (iInca, PlotTypes.PLOT_HILLS),
-	(47, 45) : (iInca, PlotTypes.PLOT_HILLS),
+	(25, 34) : (iInca, PlotTypes.PLOT_HILLS), # Peru
+	(30, 25) : (iInca, PlotTypes.PLOT_HILLS), # Bolivia
+	(23, 19) : (iInca, PlotTypes.PLOT_HILLS), # Argentina
 }
 
 dConquerorRemovedFeaturesDict = {
-	(52, 37) : iInca,
-	(45, 51) : iInca,
+	(28, 44) : iInca,
 }
 
 
@@ -144,12 +129,6 @@ def removeResourcesOnCollapse(iPlayer):
 	iCiv = civ(iPlayer)
 	for (x, y), iResource in dSpawnResources[iCiv]:
 		removeResource(x, y)
-
-
-@handler("birth")
-def removeColombianJungle(iPlayer):
-	if civ(iPlayer) == iColombia:
-		plot(28, 31).setFeatureType(-1, 0)
 
 
 @handler("BeginGameTurn")
