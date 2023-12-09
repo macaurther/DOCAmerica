@@ -6,36 +6,36 @@ lPeakExceptions = []
 ### Capitals ### - MacAurther: The area where a civilization spawns
 
 dCapitals = CivDict({
-iMaya :			(36, 58), # Tikal
-iTeotihuacan :	(29, 62), # Teotihuacan
-iTiwanaku :		(52, 33), # Tiwanaku
-iWari :			(46, 39), # Huari
-iMississippi :	(44, 79), # Sunwatch
-iPuebloan :		(25, 73), # Pueblo Bonito
-iMuisca :		(50, 48), # Hunza
-iNorse :		(77, 104), # Reykjavik
-iChimu :		(43, 41), # Chan Chan
-iInuit :		(6, 104), # North Alaska
-iInca :			(49, 36), # Cuzco
-iAztecs :		(29, 60), # Tenochtitlan
-iSpain :		(55, 59), # Santo Domingo
-iIroquois :		(51, 84), # Onondaga
-iPortugal :		(67, 27), # Sao Paulo
-iEngland :		(51, 77), # Jamestown
-iFrance :		(58, 89), # Quebec
-iNetherlands :	(56, 81), # New Amsterdam
-iHawaii :		(14, 49), # Hilo
-iRussia :		(15, 96), # Novo-Arkhangelsk
-iAmerica :		(51, 79), # Washington
-iHaiti :		(53, 58), # Port-au-Prince
-iArgentina :	(57, 16), # Buenos Aires
-iMexico :		(29, 60), # Mexico City
-iColombia :		(48, 49), # Bogota
-iPeru :			(47, 36), # Lima
-iBrazil :		(70, 28), # Rio de Janeiro
-iVenezuela :	(52, 53), # Caracas
-iCanada :		(52, 88), # Ottawa
-iCuba : 		(43, 62), # Havana
+iMaya :			(22, 59), # Tikal
+iTeotihuacan :	(14, 66), # Teotihuacan
+iTiwanaku :		(26, 25), # Tiwanaku
+iWari :			(23, 33), # Huari
+iMississippi :	(33, 82), # Sunwatch
+iPuebloan :		(18, 84), # Chaco Canyon
+iMuisca :		(31, 42), # Hunza
+iNorse :		(55, 114), # Reykjavik
+iChimu :		(20, 36), # Chan Chan
+iInuit :		(14, 111), # North Alaska
+iInca :			(24, 29), # Cuzco
+iAztecs :		(14, 64), # Tenochtitlan
+iSpain :		(40, 54), # Santo Domingo
+iIroquois :		(39, 85), # Onondaga
+iPortugal :		(39, 16), # Sao Paulo
+iEngland :		(38, 77), # Jamestown
+iFrance :		(46, 92), # Quebec
+iNetherlands :	(42, 83), # New Amsterdam
+iHawaii :		(15, 48), # Hilo
+iRussia :		(12, 108), # Novo-Arkhangelsk
+iAmerica :		(40, 81), # Philadelphia
+iHaiti :		(37, 55), # Port-au-Prince
+iArgentina :	(23, 10), # Buenos Aires
+iMexico :		(14, 64), # Mexico City
+iColombia :		(31, 42), # Bogota
+iPeru :			(20, 32), # Lima
+iBrazil :		(44, 16), # Rio de Janeiro
+iVenezuela :	(39, 47), # Caracas
+iCanada :		(40, 89), # Ottawa
+iCuba : 		(30, 62), # Havana
 })
 
 dPeriodCapitals = {

@@ -2912,8 +2912,8 @@
 			<Civilopedia>TXT_KEY_TERRAIN_WIDE_RIVER_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_TERRAIN_COAST</ArtDefineTag>
 			<Yields>
-				<iYield>2</iYield>
-				<iYield>0</iYield>
+				<iYield>1</iYield>
+				<iYield>1</iYield>
 				<iYield>2</iYield>
 			</Yields>
 			<RiverYieldChange/>
