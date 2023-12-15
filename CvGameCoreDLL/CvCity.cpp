@@ -4709,33 +4709,42 @@ void CvCity::updateArtStyleType()
 		{
 			switch (id)
 			{
+			case REGION_ICELAND:
+				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NORSE;
+				break;
 			case REGION_ALASKA:
+			case REGION_YUKON:
 			case REGION_NUNAVUT:
+			case REGION_GREENLAND:
+			case REGION_NORTH_CASCADIA:
 			case REGION_NORTH_PLAINS:
 			case REGION_ONTARIO:
 			case REGION_QUEBEC:
 			case REGION_NEW_FOUNDLAND:
+			case REGION_SOUTH_CASCADIA:
+			case REGION_CALIFORNIA:
+			case REGION_ROCKIES:
+			case REGION_TEXAS:
+			case REGION_GREAT_PLAINS:
+			case REGION_GREAT_LAKES:
 			case REGION_NEW_ENGLAND:
 			case REGION_MID_ATLANTIC:
-			case REGION_SOUTH_EAST:
+			case REGION_MARYLAND:
+			case REGION_RIVER_VALLEY:
+			case REGION_COASTAL_PLAIN:
+			case REGION_DEEP_SOUTH:
 			case REGION_FLORIDA:
-			case REGION_SOUTH_CENTRAL:
-			case REGION_TEXAS:
-			case REGION_MIDWEST:
-			case REGION_GREAT_PLAINS:
-			case REGION_ROCKIES:
-			case REGION_CALIFORNIA:
-			case REGION_SOUTH_CASCADIA:
-			case REGION_NORTH_CASCADIA:
-			case REGION_GREENLAND:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NATIVE_AMERICA;
 				break;
 			case REGION_HAWAII:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_PACIFIC;
 				break;
 			case REGION_SOUTHWEST:
-			case REGION_SIERRA_MADRE:
+			case REGION_BAJA_CALIFORNIA:
+			case REGION_SIERRA_MADRES:
 			case REGION_BAJIO:
+			case REGION_VERACRUZ:
+			case REGION_OAXACA:
 			case REGION_YUCATAN:
 			case REGION_MESOAMERICA:
 			case REGION_CARIBBEAN:
@@ -4746,12 +4755,17 @@ void CvCity::updateArtStyleType()
 			case REGION_GUYANA:
 			case REGION_PERU:
 			case REGION_BOLIVIA:
-			case REGION_AMAZON:
-			case REGION_BRAZILIAN_HIGHLANDS:
-			case REGION_PANTANAL:
+			case REGION_AMAZONAS:
+			case REGION_PARA:
+			case REGION_BAHIA:
+			case REGION_MINAS_GERAIS:
+			case REGION_MATO_GROSSO:
+			case REGION_PARANA:
 			case REGION_CHILE:
 			case REGION_PARAGUAY:
 			case REGION_URUGUAY:
+			case REGION_CHACO:
+			case REGION_CUYO:
 			case REGION_PAMPAS:
 			case REGION_PATAGONIA:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_AMERICA;
@@ -4764,33 +4778,42 @@ void CvCity::updateArtStyleType()
 		{
 			switch (id)
 			{
+			case REGION_ICELAND:
+				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NORSE;
+				break;
 			case REGION_ALASKA:
+			case REGION_YUKON:
 			case REGION_NUNAVUT:
+			case REGION_GREENLAND:
+			case REGION_NORTH_CASCADIA:
 			case REGION_NORTH_PLAINS:
 			case REGION_ONTARIO:
 			case REGION_QUEBEC:
 			case REGION_NEW_FOUNDLAND:
+			case REGION_SOUTH_CASCADIA:
+			case REGION_CALIFORNIA:
+			case REGION_ROCKIES:
+			case REGION_TEXAS:
+			case REGION_GREAT_PLAINS:
+			case REGION_GREAT_LAKES:
 			case REGION_NEW_ENGLAND:
 			case REGION_MID_ATLANTIC:
-			case REGION_SOUTH_EAST:
+			case REGION_MARYLAND:
+			case REGION_RIVER_VALLEY:
+			case REGION_COASTAL_PLAIN:
+			case REGION_DEEP_SOUTH:
 			case REGION_FLORIDA:
-			case REGION_SOUTH_CENTRAL:
-			case REGION_TEXAS:
-			case REGION_MIDWEST:
-			case REGION_GREAT_PLAINS:
-			case REGION_ROCKIES:
-			case REGION_CALIFORNIA:
-			case REGION_SOUTH_CASCADIA:
-			case REGION_NORTH_CASCADIA:
-			case REGION_GREENLAND:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_ANGLO_AMERICA;
 				break;
 			case REGION_HAWAII:
 				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_PACIFIC;
 				break;
 			case REGION_SOUTHWEST:
-			case REGION_SIERRA_MADRE:
+			case REGION_BAJA_CALIFORNIA:
+			case REGION_SIERRA_MADRES:
 			case REGION_BAJIO:
+			case REGION_VERACRUZ:
+			case REGION_OAXACA:
 			case REGION_YUCATAN:
 			case REGION_MESOAMERICA:
 			case REGION_CARIBBEAN:
@@ -4802,12 +4825,17 @@ void CvCity::updateArtStyleType()
 			case REGION_GUYANA:
 			case REGION_PERU:
 			case REGION_BOLIVIA:
-			case REGION_AMAZON:
-			case REGION_BRAZILIAN_HIGHLANDS:
-			case REGION_PANTANAL:
+			case REGION_AMAZONAS:
+			case REGION_PARA:
+			case REGION_BAHIA:
+			case REGION_MINAS_GERAIS:
+			case REGION_MATO_GROSSO:
+			case REGION_PARANA:
 			case REGION_CHILE:
 			case REGION_PARAGUAY:
 			case REGION_URUGUAY:
+			case REGION_CHACO:
+			case REGION_CUYO:
 			case REGION_PAMPAS:
 			case REGION_PATAGONIA:
 				if (eHighestCultureCiv == INCA) eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_AMERICA;
@@ -4832,33 +4860,40 @@ void CvCity::updateArtStyleType()
 		{
 			switch (id)
 			{
+			case REGION_ICELAND:
 			case REGION_ALASKA:
+			case REGION_YUKON:
 			case REGION_NUNAVUT:
+			case REGION_GREENLAND:
+			case REGION_NORTH_CASCADIA:
 			case REGION_NORTH_PLAINS:
 			case REGION_ONTARIO:
 			case REGION_QUEBEC:
 			case REGION_NEW_FOUNDLAND:
+			case REGION_SOUTH_CASCADIA:
+			case REGION_CALIFORNIA:
+			case REGION_ROCKIES:
+			case REGION_TEXAS:
+			case REGION_GREAT_PLAINS:
+			case REGION_GREAT_LAKES:
 			case REGION_NEW_ENGLAND:
 			case REGION_MID_ATLANTIC:
-			case REGION_SOUTH_EAST:
+			case REGION_MARYLAND:
+			case REGION_RIVER_VALLEY:
+			case REGION_COASTAL_PLAIN:
+			case REGION_DEEP_SOUTH:
 			case REGION_FLORIDA:
-			case REGION_SOUTH_CENTRAL:
-			case REGION_TEXAS:
-			case REGION_MIDWEST:
-			case REGION_GREAT_PLAINS:
-			case REGION_ROCKIES:
-			case REGION_CALIFORNIA:
-			case REGION_SOUTH_CASCADIA:
-			case REGION_NORTH_CASCADIA:
-			case REGION_GREENLAND:
 				eNewArtStyle = ARTSTYLE_EUROPEAN;
 				break;
 			case REGION_HAWAII:
 				eNewArtStyle = ARTSTYLE_BARBARIAN_OLD;
 				break;
 			case REGION_SOUTHWEST:
-			case REGION_SIERRA_MADRE:
+			case REGION_BAJA_CALIFORNIA:
+			case REGION_SIERRA_MADRES:
 			case REGION_BAJIO:
+			case REGION_VERACRUZ:
+			case REGION_OAXACA:
 			case REGION_YUCATAN:
 			case REGION_MESOAMERICA:
 			case REGION_CARIBBEAN:
@@ -4867,12 +4902,17 @@ void CvCity::updateArtStyleType()
 			case REGION_GUYANA:
 			case REGION_PERU:
 			case REGION_BOLIVIA:
-			case REGION_AMAZON:
-			case REGION_BRAZILIAN_HIGHLANDS:
-			case REGION_PANTANAL:
+			case REGION_AMAZONAS:
+			case REGION_PARA:
+			case REGION_BAHIA:
+			case REGION_MINAS_GERAIS:
+			case REGION_MATO_GROSSO:
+			case REGION_PARANA:
 			case REGION_CHILE:
 			case REGION_PARAGUAY:
 			case REGION_URUGUAY:
+			case REGION_CHACO:
+			case REGION_CUYO:
 			case REGION_PAMPAS:
 			case REGION_PATAGONIA:
 				if (isHasReligion((ReligionTypes)CATHOLICISM) || isHasReligion((ReligionTypes)PROTESTANTISM)) eNewArtStyle = ARTSTYLE_EUROPEAN;
@@ -17624,7 +17664,7 @@ int CvCity::getRegionID() const
 // MacAurther
 bool CvCity::isCanadian() const
 {
-	if(getRegionID() == REGION_NUNAVUT || getRegionID() == REGION_NORTH_PLAINS || getRegionID() == REGION_ONTARIO || getRegionID() == REGION_QUEBEC || getRegionID() == REGION_NEW_FOUNDLAND || getRegionID() == REGION_NORTH_CASCADIA)
+	if(getRegionID() == REGION_YUKON || getRegionID() == REGION_NUNAVUT || getRegionID() == REGION_NORTH_PLAINS || getRegionID() == REGION_ONTARIO || getRegionID() == REGION_QUEBEC || getRegionID() == REGION_NEW_FOUNDLAND || getRegionID() == REGION_NORTH_CASCADIA)
 	{
 		return true;
 	}
@@ -17633,7 +17673,9 @@ bool CvCity::isCanadian() const
 
 bool CvCity::isAmerican() const
 {
-	if(getRegionID() == REGION_NEW_ENGLAND || getRegionID() == REGION_MID_ATLANTIC || getRegionID() == REGION_SOUTH_EAST || getRegionID() == REGION_FLORIDA || getRegionID() == REGION_SOUTH_CENTRAL || getRegionID() == REGION_TEXAS || getRegionID() == REGION_MIDWEST || getRegionID() == REGION_SOUTHWEST || getRegionID() == REGION_GREAT_PLAINS || getRegionID() == REGION_ROCKIES || getRegionID() == REGION_CALIFORNIA || getRegionID() == REGION_SOUTH_CASCADIA || getRegionID() == REGION_HAWAII)
+	if(getRegionID() == REGION_NEW_ENGLAND || getRegionID() == REGION_MID_ATLANTIC || getRegionID() == REGION_MARYLAND || getRegionID() == REGION_COASTAL_PLAIN || getRegionID() == REGION_FLORIDA || getRegionID() == REGION_DEEP_SOUTH || 
+		getRegionID() == REGION_TEXAS || getRegionID() == REGION_GREAT_LAKES || getRegionID() == REGION_SOUTHWEST || getRegionID() == REGION_GREAT_PLAINS || getRegionID() == REGION_ROCKIES || getRegionID() == REGION_CALIFORNIA || 
+		getRegionID() == REGION_SOUTH_CASCADIA || getRegionID() == REGION_HAWAII)
 	{
 		return true;
 	}
@@ -17642,7 +17684,7 @@ bool CvCity::isAmerican() const
 
 bool CvCity::isMexican() const
 {
-	if(getRegionID() == REGION_SIERRA_MADRE || getRegionID() == REGION_BAJIO || getRegionID() == REGION_YUCATAN)
+	if(getRegionID() == REGION_BAJA_CALIFORNIA || getRegionID() == REGION_VERACRUZ || getRegionID() == REGION_SIERRA_MADRES || getRegionID() == REGION_OAXACA || getRegionID() == REGION_BAJIO || getRegionID() == REGION_YUCATAN)
 	{
 		return true;
 	}
@@ -17651,7 +17693,7 @@ bool CvCity::isMexican() const
 
 bool CvCity::isColombian() const
 {
-	if(getRegionID() == REGION_COLOMBIA || getRegionID() == REGION_VENEZUELA || getRegionID() == REGION_PERU || getRegionID() == REGION_BOLIVIA)
+	if(getRegionID() == REGION_COLOMBIA || getRegionID() == REGION_VENEZUELA || getRegionID() == REGION_PERU || getRegionID() == REGION_BOLIVIA || getRegionID() == REGION_VENEZUELA)
 	{
 		return true;
 	}
@@ -17660,7 +17702,7 @@ bool CvCity::isColombian() const
 
 bool CvCity::isBrazilian() const
 {
-	if(getRegionID() == REGION_AMAZON || getRegionID() == REGION_BRAZILIAN_HIGHLANDS || getRegionID() == REGION_PANTANAL)
+	if(getRegionID() == REGION_AMAZONAS || getRegionID() == REGION_PARA || getRegionID() == REGION_BAHIA || getRegionID() == REGION_MINAS_GERAIS || getRegionID() == REGION_MATO_GROSSO || getRegionID() == REGION_PARANA)
 	{
 		return true;
 	}
@@ -17669,7 +17711,7 @@ bool CvCity::isBrazilian() const
 
 bool CvCity::isArgentine() const
 {
-	if(getRegionID() == REGION_PAMPAS || getRegionID() == REGION_PATAGONIA)
+	if(getRegionID() == getRegionID() == REGION_CHACO|| getRegionID() == REGION_CUYO || REGION_PAMPAS || getRegionID() == REGION_PATAGONIA)
 	{
 		return true;
 	}

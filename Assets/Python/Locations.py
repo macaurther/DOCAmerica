@@ -3,29 +3,29 @@
 # Colonists
 # The first tuple is where the player will spawn, the second is where the AI will spawn
 #  Norse
-tColonistReykjavik = 	((78, 103), (77, 104))
+tColonistReykjavik = 	((58, 118), (55, 114))
 #  Spain
-tColonistCaribbean = 	((65, 64), (55, 59))
-tColonistCuba = 		((52, 68), (43, 62))
-tColonistBermuda = 		((52, 68), (46, 70))
-tColonistArgentina = 	((68, 13), (57, 16))
+tColonistCaribbean = 	((47, 57), (40, 54))
+tColonistCuba = 		((37, 62), (30, 62))
+tColonistBermuda = 		((40, 69), (32, 70))
+tColonistArgentina = 	((30, 5), (23, 10))
 #  Portugal
-tColonistBrazil1 = 		((72, 22), (67, 26))
-tColonistBrazil2 = 		((79, 35), (74, 36))
+tColonistBrazil1 = 		((42, 11), (38, 16))
+tColonistBrazil2 = 		((58, 21), (55, 24))
 #  England
-tColonistVirginia = 	((61, 76), (51, 77))
-tColonistMassachusetts = ((66, 81), (59, 83))
-tColonistNovaScotia = 	((73, 86), (67, 86))
-tColonistCarolina = 	((57, 70), (48, 74))
-tColonistPennsylvania = ((61, 76), (53, 80))
+tColonistVirginia = 	((46, 77), (38, 77))
+tColonistMassachusetts = ((36, 51), (44, 85))
+tColonistNovaScotia = 	((56, 85), (49, 87))
+tColonistCarolina = 	((44, 71), (36, 73))
+tColonistPennsylvania = ((44, 79), (40, 81))
 #  France
-tColonistQuebec = 		((64, 91), (58, 89)) #(x2)
-tColonistLouisiana = 	((40, 66), (38, 69))
+tColonistQuebec = 		((55, 95), (46, 92)) #(x2)
+tColonistLouisiana = 	((27, 67), (25, 72))
 #  Netherlands
-tColonistNewNetherlands =((63, 78), (56, 81))
-tColonistSuriname = 	((66, 59), (60, 49))
+tColonistNewNetherlands =((49, 79), (42, 83))
+tColonistSuriname = 	((52, 45), (47, 40))
 #  Russia
-tColonistAlaska = 		((12, 94), (15, 96))
+tColonistAlaska = 		((4, 106), (12, 108))
 # Companies
 
 # Congresses
@@ -33,47 +33,76 @@ tColonistAlaska = 		((12, 94), (15, 96))
 # DynamicCivs
 
 # Religions
-tHolyCity = (0, 0)	# MacAurther: faux city to be the Holy City for all old world religions (in the bottom left of the map surrounded by peaks)
+tHolyCity = (58, 0)	# MacAurther: faux city to be the Holy City for all old world religions (in the bottom left of the map surrounded by peaks)
 
 ## Victory
 
 # first Mississippi goal: Control the Mississippi and Ohio Rivers by 500 AD
-tMississippiRiver = ((35, 69), (38, 86))
-lMississippiRiverAdditional = [(34, 83), (34, 84), (34, 85), (34, 86)]
-lMississippiRiverExceptions = [(35, 70), (35, 71), (35, 72), (35, 73), (35, 74), (35, 75), (35, 76), (35, 77), (38, 78), (38, 79), (38, 80), (38, 81), (38, 82), (38, 83), (38, 84), (38, 85), (38, 86), (37, 86)]
-tOhioRiver = ((38, 76), (46, 79))
-lOhioRiverExceptions = [(38, 76), (41, 76), (42, 76), (43, 76), (44, 76), (45, 76), (46, 76)]
+tMississippiRiver = ((27, 79), (29, 85))
+lMississippiRiverAdditional = [
+(27, 91), (28, 91), 
+(27, 90), (29, 90), 
+(28, 89), (30, 89), 
+(28, 88), (30, 88), 
+(28, 87), (30, 87), 
+(28, 86), (30, 86), 
+(26, 79), 
+(25, 78), (27, 78), 
+(24, 77), (26, 77), 
+(24, 76), (26, 76), 
+(23, 75), (25, 75), 
+(24, 74), (26, 74), 
+(24, 73), (26, 73), 
+(25, 72), 
+]
+
+tOhioRiver = ((29, 80), (35, 82))
+lOhioRiverExceptions = [(32, 80), (35, 80)]
+lOhioRiverAdditional = [(32, 83), (35, 83)]
 
 # first Norse goal: Settle Greenland by 1000 AD
-tGreenland = ((60, 100), (71, 107))
+tGreenland = ((50, 100), (57, 113))
 # second Norse goal: Settle Vinland by 1100 AD
-tVinland = ((68, 89), (71, 93))
+tVinland = ((50, 95), (52, 97))
 # third Norse goal: Settle Delaware by 1640 AD
-tDelaware = ((53, 78), (54, 81))
+tDelaware = ((39, 79), (40, 82))
 
 # first Inuit goal: Settle Kivalliq (Western Hudson Bay), Qikiqtaaluk (Baffin Island), Nunavik (Eastern Hudson Bay), and Kalaallit (Greenland) by 1100 AD
-tKivalliq = ((34, 97), (42, 100))
-tQikiqtaaluk = ((43, 102), (54, 107))
-tNunavik = ((50, 97), (60, 102))
-lNunavikExceptions = [(50, 102)]
-tKalaallit = ((60, 100), (71, 107))
+tKivalliq = ((32, 97), (35, 103))
+tQikiqtaaluk = ((38, 102), (49, 109))
+lQikiqtaalukExceptions = [(39, 104), (40, 104), (40, 102), (42, 102), (43, 102)]
+tNunavik = ((41, 96), (42, 101))
+tKalaallit = ((50, 100), (57, 113))
 
 # first Incan goal: build five Tambos and a road along the Andean coast by 1500 AD
-lAndeanCoast = [(44, 42), (43, 41), (44, 40), (45, 39), (45, 38), (46, 37), (46, 36), (47, 35), (48, 34), (49, 33), (50, 32), (50, 31), (51, 30), (50, 29), (50, 28), (50, 27), (50, 26), (50, 25), (50, 24), (49, 23), (49, 22), (49, 21)]
+lAndeanCoast = [(15, 16), (16, 17), (17, 18), (18, 19), (19, 20), (20, 21), (21, 22), (23, 24), (23, 25), (24, 26), (23, 27), (21, 29), (20, 30), (21, 31), (20, 32), (20, 33)]
 
 # third Iroquois goal: control the Great Lakes in 1750 AD
-lLakeSuperior = [(35, 87), (36, 87), (37, 87), (38, 88), (39, 88), (34, 88), (35, 89), (36, 90), (37, 90), (37, 91), (38, 92), (39, 92), (40, 91), (41, 91), (42, 90), (42, 89), (43, 88)]
-lLakeMichigan = [(40, 81), (39, 82), (39, 83), (39, 84), (40, 85), (39, 86), (38, 85), (40, 87), (41, 87), (42, 87), (43, 86), (42, 85), (42, 84), (42, 83), (81, 82)]
-lLakeHuron = [(43, 85), (44, 84), (45, 83), (46, 84), (46, 85), (46, 86), (47, 85), (48, 86), (48, 87), (47, 88), (46, 88), (45, 89), (44, 89)]
-lLakeErie = [(44, 83), (43, 82), (44, 81), (45, 81), (46, 81), (47, 82), (48, 82), (49, 83), (48, 84), (47, 84)]
-lLakeOntario = [(49, 84), (50, 84), (51, 84), (52, 84), (52, 85), (52, 86), (52, 87), (51, 87), (50, 86), (49, 86), (48, 85)]
+tLakeSuperior = ((30, 90), (35, 93))
+lLakeSuperiorExceptions = [(35, 93), (30, 90), (32, 90)]
+lLakeSuperiorAdditional = [(29, 92), (33, 94)]
+tLakeMichigan = ((31, 86), (33, 89))
+lLakeMichiganExceptions = [(31, 89)]
+lLakeMichiganAdditional = [(32, 85), (34, 88)]
+tLakeHuron = ((35, 87), (37, 90))
+lLakeHuronExceptions = [(37, 87), (37, 90)]
+lLakeHuronAdditional = [(34, 87)]
+tLakeErie = ((35, 84), (37, 86))
+lLakeErieAdditional = [(34, 85)]
+tLakeOntario = ((38, 85), (40, 87))
+lLakeOntarioExceptions = [(40, 85)]
+lLakeOntarioAdditional = [(39, 88)]
 
 # first Canadian goal: connect your capital to an Atlantic and a Pacific port by 1920 AD
-lAtlanticCoast = [(64, 86), (65, 87), (64, 87), (66, 88), (65, 88), (65, 89), (64, 89), (64, 90), (66, 85), (66, 86), (67, 86), (67, 87), (68, 87), (68, 88), (64, 92), (64, 93), (65, 93), (66, 93), (66, 94), (67, 94), (68, 94), (68, 95), (67, 95), (67, 96), (66, 96), (65, 96), (65, 97), (64, 97), (63, 97), (63, 98), (62, 98), (61, 98), (61, 99)]
-lPacificCoast = [(17, 91), (17, 92), (19, 93), (16, 93), (15, 92), (16, 94)]
+lAtlanticCoast = [
+(48, 86), (49, 87), (50, 87), (51, 88), 
+(47, 88), (48, 88), (48, 89), (49, 89), (49, 90), (48, 91), (49, 92),
+(49, 94), (50, 94), (51, 94), (51, 95), (52, 95), (52, 96), (51, 96), 
+(52, 96), (50, 97), (49, 97), (49, 98), (48, 98), (48, 99), (48, 100), 
+]
+lPacificCoast = [(10, 102), (11, 103), (12, 102), (11, 104), (10, 105), ]
 
 ### Tiles ###
-tMexico = (30, 60)
-tTenochtitlan = (30, 60)
-tCahokia = (36, 78)
-tNewAmsterdam = (56, 81)
+tTenochtitlan = (14, 64)
+tCahokia = (28, 84)
+tNewAmsterdam = (42, 83)

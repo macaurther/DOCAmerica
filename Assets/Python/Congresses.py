@@ -1164,7 +1164,7 @@ class Congress:
 		# extra spots for colonial civs -> will be settled
 		# not available after wars because these congresses are supposed to reassign cities
 		if civ(iPlayer) in dCivGroups[iCivGroupEurope] and not self.bPostWar:
-			for plot in plots.all().where(lambda p: not p.isCity() and not p.isPeak() and not p.isWater() and pPlayer.canFound(p.getX(), p.getY())).regions(rBrazilianHighlands, rPatagonia, rCaribbean, rMesoamerica):
+			for plot in plots.all().where(lambda p: not p.isCity() and not p.isPeak() and not p.isWater() and pPlayer.canFound(p.getX(), p.getY())).regions(rGuyana, rBahia, rPatagonia, rCaribbean, rMesoamerica):
 				if pPlayer.isHuman() and not plot.isRevealed(iPlayer, False): continue
 				iSettlerMapValue = plot.getPlayerSettlerValue(iPlayer)
 				if iSettlerMapValue >= 90 and cnm.getFoundName(iPlayer, plot):

@@ -55,7 +55,7 @@ NUNAVIK =  "TXT_KEY_VICTORY_NAME_NUNAVIK"
 KALAALLIT =  "TXT_KEY_VICTORY_NAME_KALAALLIT"
 MID_ATLANTIC =  "TXT_KEY_VICTORY_NAME_MID_ATLANTIC"
 VENEZUELA =  "TXT_KEY_VICTORY_NAME_VENEZUELA"
-BRAZILIAN_HIGHLANDS =  "TXT_KEY_VICTORY_NAME_BRAZILIAN_HIGHLANDS"
+BAHIA =  "TXT_KEY_VICTORY_NAME_BAHIA"
 ALASKA = "TXT_KEY_VICTORY_NAME_ALASKA"
 NATO = "TXT_KEY_VICTORY_NAME_NATO"
 
@@ -126,8 +126,8 @@ dGoals = {
 	),
 	iMississippi: (
 		All(
-			Control((plots.rectangle(tMississippiRiver).without(lMississippiRiverExceptions) + plots.of(lMississippiRiverAdditional)).named(MISSISSIPPI_RIVER)),
-			Control((plots.rectangle(tOhioRiver).without(lOhioRiverExceptions)).named(OHIO_RIVER)),
+			Control((plots.rectangle(tMississippiRiver) + plots.of(lMississippiRiverAdditional)).named(MISSISSIPPI_RIVER)),
+			Control((plots.rectangle(tOhioRiver).without(lOhioRiverExceptions) + plots.of(lOhioRiverAdditional)).named(OHIO_RIVER)),
 			by=1000,
 		),
 		All(
@@ -164,8 +164,8 @@ dGoals = {
 	iInuit: (
 		All(
 			Settle(plots.rectangle(tKivalliq).named(KIVALLIQ)),								# Western Hudson Bay
-			Settle(plots.rectangle(tQikiqtaaluk).named(QIKIQTAALUK)),						# Baffin Island and islands
-			Settle(plots.rectangle(tNunavik).without(lNunavikExceptions).named(NUNAVIK)),	# Northern Quebec/ Eastern Hudson Bay
+			Settle(plots.rectangle(tQikiqtaaluk).without(lQikiqtaalukExceptions).named(QIKIQTAALUK)),						# Baffin Island and islands
+			Settle(plots.rectangle(tNunavik).named(NUNAVIK)),	# Northern Quebec/ Eastern Hudson Bay
 			Settle(plots.rectangle(tKalaallit).named(KALAALLIT)),							# Greenland
 			by=1100
 		),
@@ -190,11 +190,11 @@ dGoals = {
 		ControlledResourceCount(iFur, 10, by=1670),
 		ContactTribe(10, by=1725),
 		Control(
-			plots.of(lLakeSuperior).named(LAKE_SUPERIOR),
-			plots.of(lLakeMichigan).named(LAKE_MICHIGAN),
-			plots.of(lLakeHuron).named(LAKE_HURON),
-			plots.of(lLakeErie).named(LAKE_ERIE),
-			plots.of(lLakeOntario).named(LAKE_ONTARIO),
+            (plots.rectangle(tLakeSuperior).without(lLakeSuperiorExceptions) + plots.of(lLakeSuperiorAdditional)).named(LAKE_SUPERIOR),
+            (plots.rectangle(tLakeMichigan).without(lLakeSuperiorExceptions) + plots.of(lLakeMichiganAdditional)).named(LAKE_MICHIGAN),
+            (plots.rectangle(tLakeHuron).without(lLakeHuronExceptions) + plots.of(lLakeHuronAdditional)).named(LAKE_HURON),
+            (plots.rectangle(tLakeErie) + plots.of(lLakeErieAdditional)).named(LAKE_ERIE),
+            (plots.rectangle(tLakeOntario).without(lLakeOntarioExceptions) + plots.of(lLakeOntarioAdditional)).named(LAKE_ONTARIO),
 			at=1750),
 	),
 	iSpain: (
@@ -242,7 +242,7 @@ dGoals = {
 			plots.region(rCaribbean).named(CARIBBEAN),
 			plots.region(rVenezuela).named(VENEZUELA),
 			plots.region(rGuyana).named(GUAYANAS),
-			plots.region(rBrazilianHighlands).named(BRAZILIAN_HIGHLANDS),
+			plots.region(rBahia).named(BAHIA),
 			by=1700,
 		),
 		TradeGold(5000, by=1800),

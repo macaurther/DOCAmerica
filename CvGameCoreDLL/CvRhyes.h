@@ -477,46 +477,58 @@ enum DoCEras
 
 enum Regions
 {
-	REGION_ALASKA,
-	REGION_NUNAVUT,
-	REGION_NORTH_PLAINS,
-	REGION_ONTARIO,
-	REGION_QUEBEC,
-	REGION_NEW_FOUNDLAND,
-	REGION_NEW_ENGLAND,
-	REGION_MID_ATLANTIC,
-	REGION_SOUTH_EAST, //REGION_DEEP_SOUTH
-	REGION_FLORIDA, //REGION_GULF_COAST
-	REGION_MIDWEST,
-	REGION_SOUTHWEST,
-	REGION_GREAT_PLAINS,
-	REGION_ROCKIES,
-	REGION_CALIFORNIA,
-	REGION_SOUTH_CASCADIA, //REGION_CASCADIA
-	REGION_SIERRA_MADRE,
-	REGION_BAJIO,
-	REGION_YUCATAN,
-	REGION_MESOAMERICA,
-	REGION_CARIBBEAN,
-	REGION_HAWAII,
-	REGION_COLOMBIA,
-	REGION_VENEZUELA,
-	REGION_GUYANA,
-	REGION_PERU,
-	REGION_BOLIVIA,
-	REGION_AMAZON,
-	REGION_BRAZILIAN_HIGHLANDS,
-	REGION_PANTANAL,
-	REGION_CHILE,
-	REGION_PARAGUAY,
-	REGION_URUGUAY,
-	REGION_PAMPAS,
-	REGION_PATAGONIA,
-	REGION_GREENLAND,
+	REGION_ALASKA, // Alaska
+	REGION_YUKON,	// Yukon, Northwest Territory
+	REGION_NUNAVUT, // Nunavut
+	REGION_GREENLAND, // Greenland
+	REGION_ICELAND, // Iceland
+	REGION_NORTH_CASCADIA, // British Columbia, Alberta
+	REGION_NORTH_PLAINS, // Manitoba, Saskatchewan
+	REGION_ONTARIO, // Ontario
+	REGION_QUEBEC, // Quebec
+	REGION_NEW_FOUNDLAND, // New Foundland, Labrador, New Brunswick
+	REGION_SOUTH_CASCADIA, // Oregon, Washington
+	REGION_CALIFORNIA, // California
+	REGION_ROCKIES, // Idaho, Montana, Wyoming, Colorado, Nevada, Utah
+	REGION_SOUTHWEST, //Arizona, New Mexico
+	REGION_TEXAS, // Texas, Oklahoma
+	REGION_GREAT_PLAINS, // N/S Dakota, Nebraska, Kansas, Iowa
+	REGION_GREAT_LAKES, // Minnesota, Wisconsin, Illinois, Michigan, Indiana, Ohio
+	REGION_NEW_ENGLAND, // Maine, New Hampshire, Vermont, Mass., Rhode Island, Connecticut
+	REGION_MID_ATLANTIC, // New York, Pennsylvania, New Jersey
+	REGION_MARYLAND, // Maryland, Delaware
+	REGION_RIVER_VALLEY, // West Virginia, Kentucky, Missouri
+	REGION_COASTAL_PLAIN, // Virginia, North Carolina, South Carolina, Georgia
+	REGION_DEEP_SOUTH, // Louisiana, Arkansas, Alabama, Mississippi
+	REGION_FLORIDA, // Florida
+	REGION_BAJA_CALIFORNIA, //Baja California
+	REGION_SIERRA_MADRES, // North Mexico
+	REGION_BAJIO, // Central Mexico
+	REGION_VERACRUZ, // Mexican Atlantic Coast
+	REGION_OAXACA, // Mexican Pacific Coast
+	REGION_YUCATAN, // Yucatan
+	REGION_MESOAMERICA, // Central America
+	REGION_CARIBBEAN, // Caribbean
+	REGION_HAWAII, // Hawaii
+	REGION_COLOMBIA, // Colombia, Ecuador
+	REGION_VENEZUELA, // Venezuela
+	REGION_GUYANA, // Guyana, Suriname, French Guyana
+	REGION_PERU, // Peru
+	REGION_BOLIVIA, // Bolivia
+	REGION_AMAZONAS, // Upper Amazon
+	REGION_PARA, // Lower Amazon
+	REGION_BAHIA, // North East Brazil
+	REGION_MINAS_GERAIS, // East Central Brazil
+	REGION_MATO_GROSSO, // West Central Brazil
+	REGION_PARANA, // South Brazil
+	REGION_CHILE, // Chile
+	REGION_PARAGUAY, // Paraguay
+	REGION_URUGUAY, // Uruguay
+	REGION_CHACO, // North Argentina
+	REGION_CUYO, // West Argentina
+	REGION_PAMPAS, // Central Argentina
+	REGION_PATAGONIA, // South Argentina, Falklands
 	REGION_OLD_WORLD,
-	REGION_NORTH_CASCADIA,
-	REGION_SOUTH_CENTRAL,
-	REGION_TEXAS,
 	NUM_REGIONS
 };
 

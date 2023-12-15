@@ -14208,48 +14208,70 @@ int CvUnit::getOriginalArtStyle(int regionID)
 
 	switch (id)
 	{
+	case REGION_ICELAND:
+		return GC.getCivilizationInfo(NORSE).getUnitArtStyleType();
+		break;
 	case REGION_ALASKA:
+		return GC.getCivilizationInfo(NORSE).getUnitArtStyleType();
+		break;
+	case REGION_YUKON:
 	case REGION_NUNAVUT:
+	case REGION_GREENLAND:
+	case REGION_NORTH_CASCADIA:
 	case REGION_NORTH_PLAINS:
 	case REGION_ONTARIO:
-	case REGION_QUEBEC:
 	case REGION_NEW_FOUNDLAND:
+	case REGION_SOUTH_CASCADIA:
+	case REGION_CALIFORNIA:
+	case REGION_ROCKIES:
+	case REGION_GREAT_PLAINS:
 	case REGION_NEW_ENGLAND:
 	case REGION_MID_ATLANTIC:
-	case REGION_SOUTH_EAST:
-	case REGION_FLORIDA:
-	case REGION_SOUTH_CENTRAL:
-	case REGION_TEXAS:
-	case REGION_MIDWEST:
-	case REGION_GREAT_PLAINS:
-	case REGION_ROCKIES:
-	case REGION_CALIFORNIA:
-	case REGION_SOUTH_CASCADIA:
-	case REGION_NORTH_CASCADIA:
-	case REGION_GREENLAND:
+	case REGION_MARYLAND:
+	case REGION_COASTAL_PLAIN:
 		return GC.getCivilizationInfo(ENGLAND).getUnitArtStyleType();
 		break;
+	case REGION_QUEBEC:
+	case REGION_GREAT_LAKES:
+	case REGION_RIVER_VALLEY:
+	case REGION_DEEP_SOUTH:
+		return GC.getCivilizationInfo(FRANCE).getUnitArtStyleType();
+		break;
+	case REGION_FLORIDA:
+	case REGION_TEXAS:
 	case REGION_SOUTHWEST:
-	case REGION_SIERRA_MADRE:
+	case REGION_BAJA_CALIFORNIA:
+	case REGION_SIERRA_MADRES:
+	case REGION_CHACO:
+	case REGION_CUYO:
+	case REGION_PAMPAS:
+	case REGION_PATAGONIA:
+	case REGION_PARAGUAY:
+	case REGION_URUGUAY:
+	case REGION_COLOMBIA:
+	case REGION_VENEZUELA:
+	case REGION_GUYANA:
+		return GC.getCivilizationInfo(SPAIN).getUnitArtStyleType();
+		break;
+	case REGION_AMAZONAS:
+	case REGION_PARA:
+	case REGION_BAHIA:
+	case REGION_MINAS_GERAIS:
+	case REGION_MATO_GROSSO:
+	case REGION_PARANA:
+		return GC.getCivilizationInfo(PORTUGAL).getUnitArtStyleType();
+		break;
 	case REGION_BAJIO:
+	case REGION_VERACRUZ:
+	case REGION_OAXACA:
 	case REGION_YUCATAN:
 	case REGION_MESOAMERICA:
 	case REGION_CARIBBEAN:
 		return GC.getCivilizationInfo(AZTECS).getUnitArtStyleType();
 		break;
-	case REGION_COLOMBIA:
-	case REGION_VENEZUELA:
-	case REGION_GUYANA:
 	case REGION_PERU:
 	case REGION_BOLIVIA:
-	case REGION_AMAZON:
-	case REGION_BRAZILIAN_HIGHLANDS:
-	case REGION_PANTANAL:
 	case REGION_CHILE:
-	case REGION_PARAGUAY:
-	case REGION_URUGUAY:
-	case REGION_PAMPAS:
-	case REGION_PATAGONIA:
 		return GC.getCivilizationInfo(INCA).getUnitArtStyleType();
 		break;
 	default:

@@ -566,25 +566,28 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)						# Military
 
 #Regions
-iNumRegions = 40
+iNumRegions = 52
 #				2				3				4				5				6				7				8				9				10
-(rAlaska, 		rNunavut, 		rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	rNewEngland, 	rMidAtlantic, 	rSouthEast, 	rFlorida, 
-rMidwest, 		rSouthwest, 	rGreatPlains, 	rRockies, 		rCalifornia, 	rSouthCascadia, rSierraMadre, 	rBajio, 		rYucatan, 		rMesoamerica,
-rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia, 		rAmazon, 		rBrazilianHighlands, rPantanal, 
-rChile, 		rParaguay, 		rUruguay, 		rPampas, 		rPatagonia, 	rGreenland,		rOldWorld,		rNorthCascadia,	rSouthCentral,	rTexas) = range(iNumRegions)
+(rAlaska, 		rYukon,         rNunavut, 		rGreenland,     rIceland,       rNorthCascadia, rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	
+rSouthCascadia, rCalifornia,    rRockies,       rSouthwest,     rTexas,         rGreatPlains,   rGreatLakes,    rNewEngland,    rMidAtlantic,   rMaryland,
+rRiverValley,    rCoastalPlain,  rDeepSouth,     rFlorida,       rBajaCalifornia,rSierraMadres,  rBajio,         rVeracruz,      rOaxaca,        rYucatan,       
+rMesoamerica,   rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia, 		rAmazonas, 		rPara,          
+rBahia,         rMinasGerais,   rMatoGrosso,    rParana,        rChile, 		rParaguay, 		rUruguay, 		rChaco,         rCuyo,          rPampas, 		
+rPatagonia, 	rOldWorld		) = range(iNumRegions)
 
-lCanada = [rNunavut, rNorthPlains, rOntario, rQuebec, rNewFoundland, rNorthCascadia]
-lThirteenColonies = [rNewEngland, rMidAtlantic, rSouthEast]
-lSouthernUS = [rSouthEast, rFlorida, rTexas, rSouthCentral]
-lContinentalUS = [rNewEngland, rMidAtlantic, rSouthEast, rSouthCentral, rTexas, rFlorida, rMidwest, rSouthwest, rGreatPlains, rRockies, rCalifornia, rSouthCascadia]
+lCanada = [rYukon, rNunavut, rNorthCascadia, rNorthPlains, rOntario, rQuebec, rNewFoundland]
+lThirteenColonies = [rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain]
+lSouthernUS = [rCoastalPlain, rFlorida, rTexas, rDeepSouth]
+lBorderStates = [rMaryland, rRiverValley]
+lContinentalUS = [rSouthCascadia, rCalifornia, rRockies, rSouthwest, rTexas, rGreatPlains, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rRiverValley, rCoastalPlain, rDeepSouth, rFlorida]
 lUnitedStates = lContinentalUS + [rAlaska, rHawaii]
-lMexico = [rSierraMadre, rBajio, rYucatan]
-lBrazil = [rAmazon, rBrazilianHighlands, rPantanal]
-lArgentina = [rPampas, rPatagonia]
+lMexico = [rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, rYucatan]
+lBrazil = [rAmazonas, rPara, rBahia, rMinasGerais, rMatoGrosso, rParana,]
+lArgentina = [rChaco, rCuyo, rPampas, rPatagonia]
 
 lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rChile, rParaguay, rUruguay] + lArgentina + lBrazil
 lCentralAmerica = [rMesoamerica, rCaribbean]
-lLatinAmerica = lCentralAmerica + lMexico
+lLatinAmerica = lCentralAmerica + lMexico + lSouthAmerica
 lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico 
 
 lAmerica = lSouthAmerica + lCentralAmerica + lNorthAmerica

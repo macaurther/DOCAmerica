@@ -19,6 +19,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_1</Tag>
+		<English>Yukon</English>
+		<French>Yukon</French>
+		<German>Yukon</German>
+		<Italian>Yukon</Italian>
+		<Spanish>Yukon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_2</Tag>
 		<English>Nunavut</English>
 		<French>Nunavut</French>
 		<German>Nunavut</German>
@@ -26,287 +34,23 @@
 		<Spanish>Nunavut</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_2</Tag>
-		<English>North Plains</English>
-		<French>North Plains</French>
-		<German>North Plains</German>
-		<Italian>North Plains</Italian>
-		<Spanish>North Plains</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_REGION_3</Tag>
-		<English>Ontario</English>
-		<French>Ontario</French>
-		<German>Ontario</German>
-		<Italian>Ontario</Italian>
-		<Spanish>Ontario</Spanish>
+		<English>Greenland</English>
+		<French>Greenland</French>
+		<German>Greenland</German>
+		<Italian>Greenland</Italian>
+		<Spanish>Greenland</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_4</Tag>
-		<English>Quebec</English>
-		<French>Quebec</French>
-		<German>Quebec</German>
-		<Italian>Quebec</Italian>
-		<Spanish>Quebec</Spanish>
+		<English>Iceland</English>
+		<French>Iceland</French>
+		<German>Iceland</German>
+		<Italian>Iceland</Italian>
+		<Spanish>Iceland</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_5</Tag>
-		<English>New Foundland</English>
-		<French>New Foundland</French>
-		<German>New Foundland</German>
-		<Italian>New Foundland</Italian>
-		<Spanish>New Foundland</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_6</Tag>
-		<English>New England</English>
-		<French>New England</French>
-		<German>New England</German>
-		<Italian>New England</Italian>
-		<Spanish>New England</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_7</Tag>
-		<English>Mid Atlantic</English>
-		<French>Mid Atlantic</French>
-		<German>Mid Atlantic</German>
-		<Italian>Mid Atlantic</Italian>
-		<Spanish>Mid Atlantic</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_8</Tag>
-		<English>South East</English>
-		<French>South East</French>
-		<German>South East</German>
-		<Italian>South East</Italian>
-		<Spanish>South East</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_9</Tag>
-		<English>Florida</English>
-		<French>Florida</French>
-		<German>Florida</German>
-		<Italian>Florida</Italian>
-		<Spanish>Florida</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_10</Tag>
-		<English>Midwest</English>
-		<French>Midwest</French>
-		<German>Midwest</German>
-		<Italian>Midwest</Italian>
-		<Spanish>Midwest</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_11</Tag>
-		<English>Southwest</English>
-		<French>Southwest</French>
-		<German>Southwest</German>
-		<Italian>Southwest</Italian>
-		<Spanish>Southwest</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_12</Tag>
-		<English>Great Plains</English>
-		<French>Great Plains</French>
-		<German>Great Plains</German>
-		<Italian>Great Plains</Italian>
-		<Spanish>Great Plains</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_13</Tag>
-		<English>Rockies</English>
-		<French>Rockies</French>
-		<German>Rockies</German>
-		<Italian>Rockies</Italian>
-		<Spanish>Rockies</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_14</Tag>
-		<English>California</English>
-		<French>California</French>
-		<German>California</German>
-		<Italian>California</Italian>
-		<Spanish>California</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_15</Tag>
-		<English>South Cascadia</English>
-		<French>South Cascadia</French>
-		<German>South Cascadia</German>
-		<Italian>South Cascadia</Italian>
-		<Spanish>South Cascadia</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_16</Tag>
-		<English>Sierra Madre</English>
-		<French>Sierra Madre</French>
-		<German>Sierra Madre</German>
-		<Italian>Sierra Madre</Italian>
-		<Spanish>Sierra Madre</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_17</Tag>
-		<English>Bajio</English>
-		<French>Bajio</French>
-		<German>Bajio</German>
-		<Italian>Bajio</Italian>
-		<Spanish>Bajio</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_18</Tag>
-		<English>Yucatan</English>
-		<French>Yucatan</French>
-		<German>Yucatan</German>
-		<Italian>Yucatan</Italian>
-		<Spanish>Yucatan</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_19</Tag>
-		<English>Mesoamerica</English>
-		<French>Mesoamerica</French>
-		<German>Mesoamerica</German>
-		<Italian>Mesoamerica</Italian>
-		<Spanish>Mesoamerica</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_20</Tag>
-		<English>Caribbean</English>
-		<French>Caribbean</French>
-		<German>Caribbean</German>
-		<Italian>Caribbean</Italian>
-		<Spanish>Caribbean</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_21</Tag>
-		<English>Hawaii</English>
-		<French>Hawaii</French>
-		<German>Hawaii</German>
-		<Italian>Hawaii</Italian>
-		<Spanish>Hawaii</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_22</Tag>
-		<English>Colombia</English>
-		<French>Colombia</French>
-		<German>Colombia</German>
-		<Italian>Colombia</Italian>
-		<Spanish>Colombia</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_23</Tag>
-		<English>Venezuela</English>
-		<French>Venezuela</French>
-		<German>Venezuela</German>
-		<Italian>Venezuela</Italian>
-		<Spanish>Venezuela</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_24</Tag>
-		<English>Guyana</English>
-		<French>Guyana</French>
-		<German>Guyana</German>
-		<Italian>Guyana</Italian>
-		<Spanish>Guyana</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_25</Tag>
-		<English>Peru</English>
-		<French>Peru</French>
-		<German>Peru</German>
-		<Italian>Peru</Italian>
-		<Spanish>Peru</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_26</Tag>
-		<English>Bolivia</English>
-		<French>Bolivia</French>
-		<German>Bolivia</German>
-		<Italian>Bolivia</Italian>
-		<Spanish>Bolivia</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_27</Tag>
-		<English>Amazon</English>
-		<French>Amazon</French>
-		<German>Amazon</German>
-		<Italian>Amazon</Italian>
-		<Spanish>Amazon</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_28</Tag>
-		<English>Brazilian Highlands</English>
-		<French>Brazilian Highlands</French>
-		<German>Brazilian Highlands</German>
-		<Italian>Brazilian Highlands</Italian>
-		<Spanish>Brazilian Highlands</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_29</Tag>
-		<English>Pantanal</English>
-		<French>Pantanal</French>
-		<German>Pantanal</German>
-		<Italian>Pantanal</Italian>
-		<Spanish>Pantanal</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_30</Tag>
-		<English>Chile</English>
-		<French>Chile</French>
-		<German>Chile</German>
-		<Italian>Chile</Italian>
-		<Spanish>Chile</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_31</Tag>
-		<English>Paraguay</English>
-		<French>Paraguay</French>
-		<German>Paraguay</German>
-		<Italian>Paraguay</Italian>
-		<Spanish>Paraguay</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_32</Tag>
-		<English>Uruguay</English>
-		<French>Uruguay</French>
-		<German>Uruguay</German>
-		<Italian>Uruguay</Italian>
-		<Spanish>Uruguay</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_33</Tag>
-		<English>Pampas</English>
-		<French>Pampas</French>
-		<German>Pampas</German>
-		<Italian>Pampas</Italian>
-		<Spanish>Pampas</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_34</Tag>
-		<English>Patagonia</English>
-		<French>Patagonia</French>
-		<German>Patagonia</German>
-		<Italian>Patagonia</Italian>
-		<Spanish>Patagonia</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_35</Tag>
-		<English>Greenland and Iceland</English>
-		<French>Greenland and Iceland</French>
-		<German>Greenland and Iceland</German>
-		<Italian>Greenland and Iceland</Italian>
-		<Spanish>Greenland and Iceland</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_36</Tag>
-		<English>Old World</English>
-		<French>Old World</French>
-		<German>Old World</German>
-		<Italian>Old World</Italian>
-		<Spanish>Old World</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_REGION_37</Tag>
 		<English>North Cascadia</English>
 		<French>North Cascadia</French>
 		<German>North Cascadia</German>
@@ -314,20 +58,372 @@
 		<Spanish>North Cascadia</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_38</Tag>
-		<English>South Central</English>
-		<French>South Central</French>
-		<German>South Central</German>
-		<Italian>South Central</Italian>
-		<Spanish>South Central</Spanish>
+		<Tag>TXT_KEY_REGION_6</Tag>
+		<English>North Plains</English>
+		<French>North Plains</French>
+		<German>North Plains</German>
+		<Italian>North Plains</Italian>
+		<Spanish>North Plains</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_39</Tag>
+		<Tag>TXT_KEY_REGION_7</Tag>
+		<English>Ontario</English>
+		<French>Ontario</French>
+		<German>Ontario</German>
+		<Italian>Ontario</Italian>
+		<Spanish>Ontario</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_8</Tag>
+		<English>Quebec</English>
+		<French>Quebec</French>
+		<German>Quebec</German>
+		<Italian>Quebec</Italian>
+		<Spanish>Quebec</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_9</Tag>
+		<English>New Foundland</English>
+		<French>New Foundland</French>
+		<German>New Foundland</German>
+		<Italian>New Foundland</Italian>
+		<Spanish>New Foundland</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_10</Tag>
+		<English>South Cascadia</English>
+		<French>South Cascadia</French>
+		<German>South Cascadia</German>
+		<Italian>South Cascadia</Italian>
+		<Spanish>South Cascadia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_11</Tag>
+		<English>California</English>
+		<French>California</French>
+		<German>California</German>
+		<Italian>California</Italian>
+		<Spanish>California</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_12</Tag>
+		<English>Rockies</English>
+		<French>Rockies</French>
+		<German>Rockies</German>
+		<Italian>Rockies</Italian>
+		<Spanish>Rockies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_13</Tag>
+		<English>Southwest</English>
+		<French>Southwest</French>
+		<German>Southwest</German>
+		<Italian>Southwest</Italian>
+		<Spanish>Southwest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_14</Tag>
 		<English>Texas</English>
 		<French>Texas</French>
 		<German>Texas</German>
 		<Italian>Texas</Italian>
 		<Spanish>Texas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_15</Tag>
+		<English>Great Plains</English>
+		<French>Great Plains</French>
+		<German>Great Plains</German>
+		<Italian>Great Plains</Italian>
+		<Spanish>Great Plains</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_16</Tag>
+		<English>Great Lakes</English>
+		<French>Great Lakes</French>
+		<German>Great Lakes</German>
+		<Italian>Great Lakes</Italian>
+		<Spanish>Great Lakes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_17</Tag>
+		<English>New England</English>
+		<French>New England</French>
+		<German>New England</German>
+		<Italian>New England</Italian>
+		<Spanish>New England</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_18</Tag>
+		<English>Mid Atlantic</English>
+		<French>Mid Atlantic</French>
+		<German>Mid Atlantic</German>
+		<Italian>Mid Atlantic</Italian>
+		<Spanish>Mid Atlantic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_19</Tag>
+		<English>Maryland</English>
+		<French>Maryland</French>
+		<German>Maryland</German>
+		<Italian>Maryland</Italian>
+		<Spanish>Maryland</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_20</Tag>
+		<English>River Valley</English>
+		<French>River Valley</French>
+		<German>River Valley</German>
+		<Italian>River Valley</Italian>
+		<Spanish>River Valley</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_21</Tag>
+		<English>Coastal Plain</English>
+		<French>Coastal Plain</French>
+		<German>Coastal Plain</German>
+		<Italian>Coastal Plain</Italian>
+		<Spanish>Coastal Plain</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_22</Tag>
+		<English>Deep South</English>
+		<French>Deep South</French>
+		<German>Deep South</German>
+		<Italian>Deep South</Italian>
+		<Spanish>Deep South</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_23</Tag>
+		<English>Florida</English>
+		<French>Florida</French>
+		<German>Florida</German>
+		<Italian>Florida</Italian>
+		<Spanish>Florida</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_24</Tag>
+		<English>Baja California</English>
+		<French>Baja California</French>
+		<German>Baja California</German>
+		<Italian>Baja California</Italian>
+		<Spanish>Baja California</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_25</Tag>
+		<English>Sierra Madres</English>
+		<French>Sierra Madres</French>
+		<German>Sierra Madres</German>
+		<Italian>Sierra Madres</Italian>
+		<Spanish>Sierra Madres</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_26</Tag>
+		<English>Bajio</English>
+		<French>Bajio</French>
+		<German>Bajio</German>
+		<Italian>Bajio</Italian>
+		<Spanish>Bajio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_27</Tag>
+		<English>Veracruz</English>
+		<French>Veracruz</French>
+		<German>Veracruz</German>
+		<Italian>Veracruz</Italian>
+		<Spanish>Veracruz</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_28</Tag>
+		<English>Oaxaca</English>
+		<French>Oaxaca</French>
+		<German>Oaxaca</German>
+		<Italian>Oaxaca</Italian>
+		<Spanish>Oaxaca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_29</Tag>
+		<English>Yucatan</English>
+		<French>Yucatan</French>
+		<German>Yucatan</German>
+		<Italian>Yucatan</Italian>
+		<Spanish>Yucatan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_30</Tag>
+		<English>Mesoamerica</English>
+		<French>Mesoamerica</French>
+		<German>Mesoamerica</German>
+		<Italian>Mesoamerica</Italian>
+		<Spanish>Mesoamerica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_31</Tag>
+		<English>Caribbean</English>
+		<French>Caribbean</French>
+		<German>Caribbean</German>
+		<Italian>Caribbean</Italian>
+		<Spanish>Caribbean</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_32</Tag>
+		<English>Hawaii</English>
+		<French>Hawaii</French>
+		<German>Hawaii</German>
+		<Italian>Hawaii</Italian>
+		<Spanish>Hawaii</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_33</Tag>
+		<English>Colombia</English>
+		<French>Colombia</French>
+		<German>Colombia</German>
+		<Italian>Colombia</Italian>
+		<Spanish>Colombia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_34</Tag>
+		<English>Venezuela</English>
+		<French>Venezuela</French>
+		<German>Venezuela</German>
+		<Italian>Venezuela</Italian>
+		<Spanish>Venezuela</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_35</Tag>
+		<English>Guyana</English>
+		<French>Guyana</French>
+		<German>Guyana</German>
+		<Italian>Guyana</Italian>
+		<Spanish>Guyana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_36</Tag>
+		<English>Peru</English>
+		<French>Peru</French>
+		<German>Peru</German>
+		<Italian>Peru</Italian>
+		<Spanish>Peru</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_37</Tag>
+		<English>Bolivia</English>
+		<French>Bolivia</French>
+		<German>Bolivia</German>
+		<Italian>Bolivia</Italian>
+		<Spanish>Bolivia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_38</Tag>
+		<English>Amazonas</English>
+		<French>Amazonas</French>
+		<German>Amazonas</German>
+		<Italian>Amazonas</Italian>
+		<Spanish>Amazonas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_39</Tag>
+		<English>Para</English>
+		<French>Para</French>
+		<German>Para</German>
+		<Italian>Para</Italian>
+		<Spanish>Para</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_40</Tag>
+		<English>Bahia</English>
+		<French>Bahia</French>
+		<German>Bahia</German>
+		<Italian>Bahia</Italian>
+		<Spanish>Bahia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_41</Tag>
+		<English>Minas Gerais</English>
+		<French>Minas Gerais</French>
+		<German>Minas Gerais</German>
+		<Italian>Minas Gerais</Italian>
+		<Spanish>Minas Gerais</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_42</Tag>
+		<English>Mato Grosso</English>
+		<French>Mato Grosso</French>
+		<German>Mato Grosso</German>
+		<Italian>Mato Grosso</Italian>
+		<Spanish>Mato Grosso</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_43</Tag>
+		<English>Parana</English>
+		<French>Parana</French>
+		<German>Parana</German>
+		<Italian>Parana</Italian>
+		<Spanish>Parana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_44</Tag>
+		<English>Chile</English>
+		<French>Chile</French>
+		<German>Chile</German>
+		<Italian>Chile</Italian>
+		<Spanish>Chile</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_45</Tag>
+		<English>Paraguay</English>
+		<French>Paraguay</French>
+		<German>Paraguay</German>
+		<Italian>Paraguay</Italian>
+		<Spanish>Paraguay</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_46</Tag>
+		<English>Uruguay</English>
+		<French>Uruguay</French>
+		<German>Uruguay</German>
+		<Italian>Uruguay</Italian>
+		<Spanish>Uruguay</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_47</Tag>
+		<English>Chaco</English>
+		<French>Chaco</French>
+		<German>Chaco</German>
+		<Italian>Chaco</Italian>
+		<Spanish>Chaco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_48</Tag>
+		<English>Cuyo</English>
+		<French>Cuyo</French>
+		<German>Cuyo</German>
+		<Italian>Cuyo</Italian>
+		<Spanish>Cuyo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_49</Tag>
+		<English>Pampas</English>
+		<French>Pampas</French>
+		<German>Pampas</German>
+		<Italian>Pampas</Italian>
+		<Spanish>Pampas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_50</Tag>
+		<English>Patagonia</English>
+		<French>Patagonia</French>
+		<German>Patagonia</German>
+		<Italian>Patagonia</Italian>
+		<Spanish>Patagonia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_51</Tag>
+		<English>Old World</English>
+		<French>Old World</French>
+		<German>Old World</German>
+		<Italian>Old World</Italian>
+		<Spanish>Old World</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_</Tag>
