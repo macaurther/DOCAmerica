@@ -924,7 +924,6 @@ EndPlot
 BeginPlot
 	x=1,y=56
 	BonusType=BONUS_BANANA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -7930,24 +7929,18 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=12,y=66
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=12,y=67
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=12,y=68
@@ -8601,15 +8594,11 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=13,y=65
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=13,y=66
@@ -8617,16 +8606,12 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=13,y=67
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=13,y=68
@@ -8634,8 +8619,6 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=13,y=69
@@ -9292,15 +9275,11 @@ BeginPlot
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_LAGOON
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=14,y=65
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=14,y=66
@@ -9308,8 +9287,6 @@ BeginPlot
 	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=23, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=14,y=67
@@ -9319,16 +9296,12 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=14,y=68
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=14,y=69
@@ -9337,13 +9310,11 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=14,y=70
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=14,y=71
@@ -9992,30 +9963,22 @@ BeginPlot
 	x=15,y=64
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=15,y=65
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=15,y=66
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=15,y=67
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=0
-	TeamReveal=1,
-	Player1Culture=22, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=15,y=68
@@ -10027,8 +9990,6 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=15,y=69
@@ -10692,31 +10653,24 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=16,y=66
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=16,y=67
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,
-	Player1Culture=1, (Atlatl Cauac)
 EndPlot
 BeginPlot
 	x=16,y=68
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=16,y=69
@@ -10725,13 +10679,11 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=16,y=70
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=16,y=71
@@ -14004,8 +13956,6 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=21,y=59
@@ -14013,22 +13963,17 @@ BeginPlot
 	RiverWEDirection=3
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=21,y=60
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=21,y=61
 	TerrainType=TERRAIN_ATOLL
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=21,y=62
@@ -14697,23 +14642,17 @@ BeginPlot
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=22,y=59
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
-	Player0Culture=3, (Pacal II)
 EndPlot
 BeginPlot
 	x=22,y=60
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=22,y=61
@@ -14721,7 +14660,6 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=22,y=62
@@ -15405,16 +15343,12 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=23,y=59
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=23,y=60
@@ -15422,15 +15356,12 @@ BeginPlot
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
-	Player0Culture=2, (Pacal II)
 EndPlot
 BeginPlot
 	x=23,y=61
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=23,y=62
@@ -16063,7 +15994,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=51
-	BonusType=BONUS_ALUMINUM
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -17263,6 +17193,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=22
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
@@ -17280,6 +17213,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=25
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=2,
@@ -17414,6 +17349,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=49
+	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -17935,6 +17871,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=22
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
@@ -17951,6 +17891,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=25
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=2,
@@ -18616,17 +18558,27 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=23
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=24
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=28,y=25
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -18634,6 +18586,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=26
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 	TeamReveal=2,
@@ -37292,13 +37246,11 @@ BeginPlot
 	x=56,y=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	Player6Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=56,y=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	Player6Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=56,y=2
@@ -37913,20 +37865,17 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=6,
-	Player6Culture=22, (Barbarian)
 EndPlot
 BeginPlot
 	x=57,y=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=6,
-	Player6Culture=22, (Barbarian)
 EndPlot
 BeginPlot
 	x=57,y=2
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	Player6Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=57,y=3
@@ -38531,21 +38480,16 @@ BeginPlot
 	x=58,y=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=6,
-	Player6Culture=23, (Barbarian)
 EndPlot
 BeginPlot
 	x=58,y=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=6,
-	Player6Culture=22, (Barbarian)
 EndPlot
 BeginPlot
 	x=58,y=2
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	Player6Culture=1, (Barbarian)
 EndPlot
 BeginPlot
 	x=58,y=3
