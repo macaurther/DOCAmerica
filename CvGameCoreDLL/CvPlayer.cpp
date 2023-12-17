@@ -8965,7 +8965,7 @@ int CvPlayer::specialistYield(SpecialistTypes eSpecialist, YieldTypes eYield) co
 int CvPlayer::specialistCommerce(SpecialistTypes eSpecialist, CommerceTypes eCommerce) const
 {
 	CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
-	return (kSpecialist.getCommerceChange(eCommerce) + (kSpecialist.isNoGlobalEffects() ? 0 : getSpecialistExtraCommerce(eCommerce)));
+	return (kSpecialist.getCommerceChange(eCommerce) + (kSpecialist.isNoGlobalEffects() ? 0 : getSpecialistExtraCommerce(eCommerce)) + (kSpecialist.isSatellite() ? getSatelliteExtraCommerce(eCommerce) : 0));
 }
 
 
@@ -13831,7 +13831,7 @@ int CvPlayer::getSpecialistExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex
 	// Leoreth: limit additional food from various sources
 	if (eIndex2 == YIELD_FOOD)
 	{
-		// slaves cannot benefit from bonus food effects
+		// satellites and slaves cannot benefit from bonus food effects
 		if (GC.getSpecialistInfo(eIndex1).isNoGlobalEffects())
 		{
 			return 0;
@@ -25317,6 +25317,13 @@ void CvPlayer::makeSpecialUnitValid(SpecialUnitTypes eSpecialUnit)
 	FAssertMsg(eSpecialUnit >= 0, "eSpecialUnit is expected to be non-negative (invalid Index)");
 	FAssertMsg(eSpecialUnit < GC.getNumSpecialUnitInfos(), "eSpecialUnit is expected to be within maximum bounds (invalid Index)");
 	m_pabSpecialUnitValid[eSpecialUnit] = true;
+}
+
+int CvPlayer::getSatelliteExtraCommerce(CommerceTypes eCommerce) const
+{
+	int iCommerce = 0;
+
+	return iCommerce;
 }
 
 int CvPlayer::getPotentialSpecialistCount(SpecialistTypes eSpecialist) const

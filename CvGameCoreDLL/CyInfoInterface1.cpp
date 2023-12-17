@@ -52,6 +52,8 @@ void CyInfoPythonInterface1()
 		.def("getCultureLevelGreatPeopleRateChange", &CvSpecialistInfo::getCultureLevelGreatPeopleRateChange, "int (CultureLevelTypes eCultureLevel")
 
 		.def("getTexture", &CvSpecialistInfo::getTexture, "string ()")
+
+		.def("isSatellite", &CvSpecialistInfo::isSatellite, "bool ()")
 		;
 
 	python::class_<CvTechInfo, python::bases<CvInfoBase> >("CvTechInfo")

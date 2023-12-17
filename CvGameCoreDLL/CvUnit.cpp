@@ -4227,6 +4227,22 @@ bool CvUnit::nuke(int iX, int iY)
 	{
 		if (abTeamsAffected[iI])
 		{
+			if (GET_TEAM((TeamTypes)iI).canSatelliteIntercept())
+			{
+				for (int iJ = NO_DIRECTION; iJ < NUM_DIRECTION_TYPES; iJ++)
+				{
+					CvPlot* pPlot = plotDirection(iX, iY, (DirectionTypes)iJ);
+					for (int iK = 0; iK < pPlot->getNumUnits(); iK++)
+					{
+						CvUnit* pUnit = pPlot->getUnitByIndex(iK);
+						if (pUnit != this && pUnit->getTeam() == iI && pUnit->getSpecialUnitType() == SPECIALUNIT_SATELLITE)
+						{
+							bestInterceptor = pUnit;
+							break;
+						}
+					}
+				}
+			}
 
 			if (bestInterceptor != NULL)
 			{
@@ -6124,6 +6140,14 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 		}
 
 		if (!pCity->canSlaveJoin())
+		{
+			return false;
+		}
+	}
+
+	if (GC.getSpecialistInfo(eSpecialist).isSatellite())
+	{
+		if (!pCity->canSatelliteJoin())
 		{
 			return false;
 		}
@@ -8252,6 +8276,7 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_DIPLOMATIC_MISSION: // Leoreth
 		case MISSION_PERSECUTE: // Leoreth
 		case MISSION_GREAT_MISSION:
+		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
 		case MISSION_CONTACT:
 		case MISSION_DIE_ANIMATION:
@@ -14651,6 +14676,63 @@ bool CvUnit::greatMission()
 	kill(true);
 
 	return true;
+}
+
+bool CvUnit::canSatelliteAttack(const CvPlot* pPlot) const
+{
+	if (getSpecialUnitType() != SPECIALUNIT_SATELLITE)
+	{
+		return false;
+	}
+
+	if (!GET_TEAM(getTeam()).canSatelliteAttack())
+	{
+		return false;
+	}
+
+	for (int iI = 0; iI < pPlot->getNumUnits(); iI++)
+	{
+		CvUnit* pUnit = pPlot->getUnitByIndex(iI);
+		if (pUnit != this && pUnit->getSpecialUnitType() == SPECIALUNIT_SATELLITE)
+		{
+			if (atWar(getTeam(), pUnit->getTeam()))
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+
+bool CvUnit::satelliteAttack()
+{
+	if (!canSatelliteAttack(plot()))
+	{
+		return false;
+	}
+
+	for (int iI = 0; iI < plot()->getNumUnits(); iI++)
+	{
+		CvUnit* pUnit = plot()->getUnitByIndex(iI);
+		if (pUnit != this && pUnit->getSpecialUnitType() == SPECIALUNIT_SATELLITE)
+		{
+			if (atWar(getTeam(), pUnit->getTeam()))
+			{
+				pUnit->kill(true, getOwnerINLINE());
+
+				if (plot()->isActiveVisible(false))
+				{
+					NotifyEntity(MISSION_SATELLITE_ATTACK);
+				}
+
+				finishMoves();
+				return true;
+			}
+		}
+	}
+
+	return false;
 }
 
 SpecialistTypes CvUnit::getSettledSpecialist() const

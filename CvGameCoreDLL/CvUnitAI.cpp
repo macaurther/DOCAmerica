@@ -403,6 +403,10 @@ bool CvUnitAI::AI_update()
 			AI_persecutorMove();
 			break;
 
+		case UNITAI_SATELLITE:
+			AI_satelliteMove();
+			break;
+
 		default:
 			FAssert(false);
 			break;
@@ -703,6 +707,7 @@ int CvUnitAI::AI_groupFirstVal()
 		break;
 
 	case UNITAI_ICBM:
+	case UNITAI_SATELLITE:
 		break;
 
 	case UNITAI_WORKER_SEA:
@@ -18444,6 +18449,129 @@ bool CvUnitAI::AI_greatMission(int iCityPercent)
 		{
 			FAssert(!atPlot(pBestPlot));
 			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_SPREAD, pBestSpreadPlot);
+			return true;
+		}
+	}
+
+	return false;
+}
+
+// Leoreth
+void CvUnitAI::AI_satelliteMove() 
+{
+	if (GET_TEAM(getTeam()).isAtWarWithMajorPlayer())
+	{
+		if (AI_satelliteDefendMove())
+		{
+			return;
+		}
+
+		if (AI_satelliteAttackMove())
+		{
+			return;
+		}
+	}
+
+	if (AI_join(3))
+	{
+		return;
+	}
+
+	if (AI_satelliteDefendMove())
+	{
+		return;
+	}
+
+	if (AI_join())
+	{
+		return;
+	}
+
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
+}
+
+
+// Leoreth
+bool CvUnitAI::AI_satelliteDefendMove()
+{
+	if (!GC.getGameINLINE().isNukesValid())
+	{
+		return false;
+	}
+
+	if (!GET_TEAM(getTeam()).canSatelliteIntercept())
+	{
+		return false;
+	}
+
+	int iNukeValue = 8;
+	CvCity* pDefendedCity = NULL;
+
+	int iLoop, iCurrentNukeValue;
+	for (CvCity* pCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pCity != NULL; pCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
+	{
+		int iSatellites = pCity->plot()->plotCount(PUF_isUnitAIType, UNITAI_SATELLITE, -1, getOwnerINLINE());
+
+		if (iSatellites == 0 || (atPlot(pCity->plot()) && iSatellites == 1))
+		{
+			iCurrentNukeValue = 1;
+
+			iCurrentNukeValue += GC.getGameINLINE().getSorenRandNum((pCity->getPopulation() + 1), "AI Nuke City Value");
+			iCurrentNukeValue += std::max(0, pCity->getPopulation() - 10);
+
+			iCurrentNukeValue += ((pCity->getPopulation() * (100 + pCity->calculateCulturePercent(pCity->getOwnerINLINE()))) / 100);
+
+			if (iCurrentNukeValue > iNukeValue)
+			{
+				iNukeValue = iCurrentNukeValue;
+				pDefendedCity = pCity;
+			}
+		}
+	}
+
+	if (pDefendedCity != NULL)
+	{
+		if (atPlot(pDefendedCity->plot()))
+		{
+			getGroup()->pushMission(MISSION_FORTIFY);
+			return true;
+		}
+
+		getGroup()->pushMission(MISSION_MOVE_TO, pDefendedCity->getX(), pDefendedCity->getY());
+		return true;
+	}
+
+	return false;
+}
+
+
+// Leoreth
+bool CvUnitAI::AI_satelliteAttackMove()
+{
+	if (!GC.getGameINLINE().isNukesValid())
+	{
+		return false;
+	}
+
+	if (!GET_TEAM(getTeam()).canSatelliteAttack())
+	{
+		return false;
+	}
+
+	CvCity* pNukeTarget = AI_nukeTarget();
+
+	if (pNukeTarget != NULL)
+	{
+		if (canSatelliteAttack(pNukeTarget->plot()))
+		{
+			if (!atPlot(pNukeTarget->plot()))
+			{
+				getGroup()->pushMission(MISSION_MOVE_TO, pNukeTarget->getX(), pNukeTarget->getY());
+				return true;
+			}
+
+			getGroup()->pushMission(MISSION_SATELLITE_ATTACK);
 			return true;
 		}
 	}

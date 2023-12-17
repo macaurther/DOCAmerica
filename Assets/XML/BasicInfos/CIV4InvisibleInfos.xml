@@ -14,5 +14,9 @@
 			<Type>INVISIBLE_STEALTH</Type>
 			<Description>TXT_KEY_INVISIBLE_STEALTH_NAVY</Description>
 		</InvisibleInfo>
+		<InvisibleInfo>
+			<Type>INVISIBLE_SATELLITE</Type>
+			<Description>TXT_KEY_INVISIBLE_SATELLITE</Description>
+		</InvisibleInfo>
 	</InvisibleInfos>
 </Civ4InvisibleInfos>

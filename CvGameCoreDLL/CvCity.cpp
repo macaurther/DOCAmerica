@@ -10240,6 +10240,7 @@ int CvCity::getBaseCommerceRateTimes100(CommerceTypes eIndex) const
 
 	iBaseCommerceRate += 100 * ((getSpecialistPopulation() + getNumGreatPeople() - countNoGlobalEffectsFreeSpecialists()) * GET_PLAYER(getOwnerINLINE()).getSpecialistExtraCommerce(eIndex));
 	iBaseCommerceRate += 100 * (getBuildingCommerce(eIndex) + getSpecialistCommerce(eIndex) + getReligionCommerce(eIndex) + getCorporationCommerce(eIndex) + GET_PLAYER(getOwnerINLINE()).getFreeCityCommerce(eIndex));
+	iBaseCommerceRate += 100 * countSatellites() * GET_PLAYER(getOwnerINLINE()).getSatelliteExtraCommerce(eIndex);
 
 	// MacAurther: Statue of Liberty Effect
 	if (eIndex == COMMERCE_CULTURE && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
@@ -10718,6 +10719,11 @@ int CvCity::getAdditionalBaseCommerceRateBySpecialistImpl(CommerceTypes eIndex, 
 	if (!kSpecialist.isNoGlobalEffects())
 	{
 		iCommerceRate += GET_PLAYER(getOwnerINLINE()).getSpecialistExtraCommerce(eIndex);
+	}
+
+	if (kSpecialist.isSatellite())
+	{
+		iCommerceRate += GET_PLAYER(getOwnerINLINE()).getSatelliteExtraCommerce(eIndex);
 	}
 
 	return iChange * iCommerceRate;
@@ -18673,19 +18679,56 @@ void CvCity::changeCorporationUnhealthModifier(int iChange)
 	m_iCorporationUnhealthModifier += iChange;
 }
 
+int CvCity::countSatellites() const
+{
+	int iCount = 0;
+	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	{
+		if (GC.getSpecialistInfo((SpecialistTypes)iI).isSatellite())
+		{
+			iCount += getFreeSpecialistCount((SpecialistTypes)iI);
+		}
+	}
+
+	return iCount;
+}
+
+int CvCity::getSatelliteSlots() const
+{
+	//if (!GET_TEAM(getTeam()).isHasTech((TechTypes)SATELLITES))
+	if (true)
+	{
+		return 0;
+	}
+
+	int iSpecialistSlots = 0;
+
+	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+	{
+		iSpecialistSlots += getMaxSpecialistCount((SpecialistTypes)iI);
+	}
+
+	return iSpecialistSlots / 5;
+}
+
+bool CvCity::canSatelliteJoin() const
+{
+	return countSatellites() < getSatelliteSlots();
+}
+
 int CvCity::getSpecialistGreatPeopleRateChange(SpecialistTypes eSpecialist) const
 {
-       CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
-       int iGreatPeopleRate = kSpecialist.getGreatPeopleRateChange();
+    CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
+	int iGreatPeopleRate = kSpecialist.getGreatPeopleRateChange();
 
-       /*if (!kSpecialist.isNoGlobalEffects())
-       {
-               int iCultureLevelRate = kSpecialist.getCultureLevelGreatPeopleRateChange(getCultureLevel());
-               FAssert(iCultureLevelRate == 0);
-               iGreatPeopleRate += iCultureLevelRate;
-       }*/
+	/*if (!kSpecialist.isNoGlobalEffects())
+	{
+		int iCultureLevelRate = kSpecialist.getCultureLevelGreatPeopleRateChange(getCultureLevel());
+		FAssert(iCultureLevelRate == 0);
+		iGreatPeopleRate += iCultureLevelRate;
+	}*/
 
-       return iGreatPeopleRate;
+	return iGreatPeopleRate;
 }
 
 

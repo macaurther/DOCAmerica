@@ -711,6 +711,12 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_HELP_WONDER_LIMIT:
 		parseWonderLimitHelp(widgetDataStruct, szBuffer);
 		break;
+
+	// Leoreth
+	case WIDGET_HELP_SATELLITE_LIMIT:
+		parseSatelliteLimitHelp(widgetDataStruct, szBuffer);
+		break;
+
 	}
 }
 
@@ -2828,6 +2834,11 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				{
 					szBuffer.append(gDLL->getText("TXT_KEY_ACTION_DIPLOMATIC_MISSION_PEACE"));
 				}
+			}
+			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_SATELLITE_ATTACK)
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_ACTION_SATELLITE_ATTACK"));
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_REBUILD)
 			{
@@ -5499,5 +5510,14 @@ void CvDLLWidgetData::parseWonderLimitHelp(CvWidgetDataStruct& widgetDataStruct,
 	if (NULL != pHeadSelectedCity)
 	{
 		GAMETEXT.setWonderLimitHelp(szBuffer, *pHeadSelectedCity, widgetDataStruct.m_iData1);
+	}
+}
+
+void CvDLLWidgetData::parseSatelliteLimitHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer)
+{
+	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+	if (NULL != pHeadSelectedCity)
+	{
+		GAMETEXT.setSatelliteLimitHelp(szBuffer, *pHeadSelectedCity);
 	}
 }

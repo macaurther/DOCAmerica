@@ -179,6 +179,8 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 	m_iEspionagePointsEver = 0;
 
 	m_iTotalTechValue = 0; // Leoreth
+	m_iSatelliteInterceptCount = 0; // Leoreth
+	m_iSatelliteAttackCount = 0; // Leoreth
 
 	m_bMapCentering = false;
 	m_bCapitulated = false;
@@ -4758,6 +4760,18 @@ void CvTeam::changeProjectCount(ProjectTypes eIndex, int iChange)
 			}
 
 			// Leoreth
+			if (kProject.isSatelliteIntercept())
+			{
+				changeSatelliteInterceptCount(iChange);
+			}
+
+			// Leoreth
+			if (kProject.isSatelliteAttack())
+			{
+				changeSatelliteAttackCount(iChange);
+			}
+
+			// Leoreth
 			if (bFirst)
 			{
 				if (kProject.isFirstEnemyAnarchy())
@@ -6614,6 +6628,8 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iEspionagePointsEver);
 
 	pStream->Read(&m_iTotalTechValue); // Leoreth
+	pStream->Read(&m_iSatelliteInterceptCount); // Leoreth
+	pStream->Read(&m_iSatelliteAttackCount); // Leoreth
 
 	pStream->Read(&m_bMapCentering);
 	pStream->Read(&m_bCapitulated);
@@ -6727,6 +6743,8 @@ void CvTeam::write(FDataStreamBase* pStream)
 	pStream->Write(m_iEspionagePointsEver);
 
 	pStream->Write(m_iTotalTechValue); // Leoreth
+	pStream->Write(m_iSatelliteInterceptCount); // Leoreth
+	pStream->Write(m_iSatelliteAttackCount); // Leoreth
 
 	pStream->Write(m_bMapCentering);
 	pStream->Write(m_bCapitulated);
@@ -7036,6 +7054,26 @@ std::set<TeamTypes> CvTeam::determineDefensivePactPartners(std::set<TeamTypes> v
 	}
 
 	return partners;
+}
+
+bool CvTeam::canSatelliteIntercept() const
+{
+	return m_iSatelliteInterceptCount > 0;
+}
+
+void CvTeam::changeSatelliteInterceptCount(int iChange)
+{
+	m_iSatelliteInterceptCount += iChange;
+}
+
+bool CvTeam::canSatelliteAttack() const
+{
+	return m_iSatelliteAttackCount > 0;
+}
+
+void CvTeam::changeSatelliteAttackCount(int iChange)
+{
+	m_iSatelliteAttackCount += iChange;
 }
 
 bool CvTeam::isAllied(TeamTypes eTeam) const

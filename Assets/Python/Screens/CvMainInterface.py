@@ -3479,6 +3479,7 @@ class CvMainInterface:
 		screen.hide( "DefenseText" )
 		screen.hide( "NationalWonderLimitText" )
 		screen.hide( "WorldWonderLimitText" )
+		screen.hide( "SatelliteLimitText" )
 		screen.hide( "AdministrationText" )
 		screen.hide( "SeparatismText" )
 		screen.hide( "CityScrollMinus" )
@@ -4577,6 +4578,14 @@ class CvMainInterface:
 				szBuffer = localText.getText("INTERFACE_CITY_WONDER_LIMIT", (iNationalWonders, iNationalWondersLimit, CyGame().getSymbolID(FontSymbols.SILVER_STAR_CHAR)))
 				screen.setLabel( "NationalWonderLimitText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - iIndicatorOffset, 40, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_WONDER_LIMIT, 0, -1 )
 				screen.show( "NationalWonderLimitText" )
+				
+				iSatellites = pHeadSelectedCity.countSatellites()
+				iSatelliteLimit = pHeadSelectedCity.getSatelliteSlots()
+				if iSatelliteLimit > 0:
+					iIndicatorOffset += 40
+					szBuffer = localText.getText("INTERFACE_CITY_SATELLITE_LIMIT", (iSatellites, iSatelliteLimit, CyGame().getSymbolID(FontSymbols.SATELLITE_CHAR)))
+					screen.setLabel("SatelliteLimitText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - iIndicatorOffset, 40, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_SATELLITE_LIMIT, -1, -1)
+					screen.show("SatelliteLimitText")
 				
 				iIndicatorOffset += 40
 				if pHeadSelectedCity.isOwnerCore():

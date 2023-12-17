@@ -598,6 +598,8 @@ public:
 	bool isOwnerCore();
 	int getActualCulture(int iPlayer);
 	int getPopulationLoss();
+	int countSatellites();
+	int getSatelliteSlots();
 	int getArea();
 	bool rebuild();
 	bool isValidBuildingLocation(int eBuilding);

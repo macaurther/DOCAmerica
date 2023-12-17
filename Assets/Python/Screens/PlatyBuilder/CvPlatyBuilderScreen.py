@@ -45,17 +45,17 @@ localText = CyTranslator()
 
 gc = CyGlobalContext()
 
-iNumModes = 44
+iNumModes = 45
 (iModeOwnership, iModeUnits, iModeBuildings, iModeCity, iModeStartingPlot, iModeAddLandMark, iModePlotData, iModeRiver, iModeImprovements, iModeBonus,
 iModePlotType, iModeTerrain, iModeRoutes, iModeFeatures, iModeFlip, iModeCore, iModeSettlerValue, iModeWarMap, iModeReligionMap, iModeRegionMap,
-iModeVictoryMap, iModeRevealPlot, iModeInvisibleSubmarine, iModeInvisibleStealth, iModeBlockade, iModeAreaExporter1, iModeAreaExporter2, iModeAreaExporter3, iModeMoveMap,
+iModeVictoryMap, iModeRevealPlot, iModeInvisibleSubmarine, iModeInvisibleStealth, iModeBlockade, iModeInvisibleSatellite, iModeAreaExporter1, iModeAreaExporter2, iModeAreaExporter3, iModeMoveMap,
 iModeMoveMap2, iModeEditUnit, iModeEditCity, iModeEraseAll, iModeCityDataI, iModePromotions, iModeCityDataII, iModeCityBuildings, iModeMoveCity, iModeMoveCityPlus,
 iModeDuplicateCity, iModeDuplicateCityPlus, iModeTargetPlot, iModeMoveUnits, iModeEvents) = range(iNumModes)
 
 lPlayerModes = [iModeOwnership, iModeUnits, iModeBuildings, iModeCity, iModeStartingPlot]
 lMapModes = [iModeAddLandMark, iModePlotData, iModeRiver, iModeImprovements, iModeBonus, iModePlotType, iModeTerrain, iModeRoutes, iModeFeatures]
 lDoCMapModes = [iModeFlip, iModeCore, iModeSettlerValue, iModeWarMap, iModeReligionMap, iModeRegionMap, iModeVictoryMap]
-lRevealModes = [iModeRevealPlot, iModeInvisibleSubmarine, iModeInvisibleStealth, iModeBlockade]
+lRevealModes = [iModeRevealPlot, iModeInvisibleSubmarine, iModeInvisibleStealth, iModeBlockade, iModeInvisibleSatellite]
 lAreaExportModes = [iModeAreaExporter1, iModeAreaExporter2, iModeAreaExporter3]
 lMoveMapModes = [iModeMoveMap, iModeMoveMap2]
 
@@ -1547,6 +1547,7 @@ class CvWorldBuilderScreen:
 				screen.addPullDownString("RevealMode", CyTranslator().getText("TXT_KEY_REVEAL_SUBMARINE",()), 1, 1, self.iPlayerAddMode == lRevealModes[1])
 				screen.addPullDownString("RevealMode", CyTranslator().getText("TXT_KEY_REVEAL_STEALTH",()), 2, 2, self.iPlayerAddMode == lRevealModes[2])
 				screen.addPullDownString("RevealMode", gc.getMissionInfo(gc.getInfoTypeForString("MISSION_PLUNDER")).getDescription(), 3, 3, self.iPlayerAddMode == lRevealModes[3])
+				screen.addPullDownString("RevealMode", CyTranslator().getText("TXT_KEY_REVEAL_SATELLITE",()), 4, 4, self.iPlayerAddMode == lRevealModes[4])
 
 				iY += iAdjust
 				screen.setImageButton("WorldBuilderRevealAll", CyArtFileMgr().getInterfaceArtInfo("WORLDBUILDER_REVEAL_ALL_TILES").getPath(), iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_WB_REVEAL_ALL_BUTTON, -1, -1)
@@ -1877,7 +1878,8 @@ class CvWorldBuilderScreen:
 		
 		dRevealTypes = {iModeRevealPlot : "RevealPlot",
 						iModeInvisibleSubmarine :  "INVISIBLE_SUBMARINE",
-						iModeInvisibleStealth : "INVISIBLE_STEALTH"}
+						iModeInvisibleStealth : "INVISIBLE_STEALTH",
+						iModeInvisibleSatellite : "INVISIBLE_SATELLITE"}
 		
 		iType = gc.getInfoTypeForString(dRevealTypes[self.iPlayerAddMode])
 		if iType == -1:
@@ -1900,6 +1902,9 @@ class CvWorldBuilderScreen:
 		elif self.iPlayerAddMode == iModeInvisibleStealth:
 			if pPlot.getInvisibleVisibilityCount(self.m_iCurrentTeam, gc.getInfoTypeForString("INVISIBLE_STEALTH")) == 0:
 				CyEngine().fillAreaBorderPlotAlt(pPlot.getX(), pPlot.getY(), AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS, "COLOR_BLUE", 1.0)
+		elif self.iPlayerAddMode == iModeInvisibleSatellite:
+			if pPlot.getInvisibleVisibilityCount(self.m_iCurrentTeam, gc.getInfoTypeForString("INVISIBLE_SATELLITE")) == 0:
+				CyEngine().fillAreaBorderPlotAlt(pPlot.getX(), pPlot.getY(), AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS, "COLOR_PLAYER_DARK_GREEN", 1.0)
 		elif self.iPlayerAddMode == iModeBlockade:
 			if pPlot.isTradeNetwork(self.m_iCurrentTeam): return
 			if gc.getTeam(self.m_iCurrentTeam).isAtWar(pPlot.getTeam()): return

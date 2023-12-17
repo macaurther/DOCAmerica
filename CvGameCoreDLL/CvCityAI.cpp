@@ -4609,6 +4609,14 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 	bool bWarPlan = (GET_TEAM(getTeam()).getAnyWarPlanCount(true) > 0);
 	int iWarmongerPercent = 25000 / std::max(100, (100 + GC.getLeaderHeadInfo(getPersonalityType()).getMaxWarRand()));
 
+	int iSatelliteCount = 0;
+
+	int iLoop;
+	for (CvCity* pCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pCity != NULL; pCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
+	{
+		iSatelliteCount += pCity->countSatellites();
+	}
+
 	iValue = 0;
 
 	if (kProject.getNukeInterception() > 0)
@@ -4644,6 +4652,25 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 	if (kProject.isRevealsMap())
 	{
 		iValue += 5;
+	}
+
+	if (kProject.isSatelliteAttack())
+	{
+		for (iI = 0; iI < GC.getNumProjectInfos(); iI++)
+		{
+			if (GC.getProjectInfo((ProjectTypes)iI).isSatelliteAttack() || GC.getProjectInfo((ProjectTypes)iI).isSatelliteIntercept())
+			{
+				iValue += GC.getGameINLINE().getProjectCreatedCount((ProjectTypes)iI) * 5;
+			}
+		}
+	}
+
+	if (kProject.isSatelliteIntercept())
+	{
+		if (GC.getGameINLINE().canTrainNukes())
+		{
+			iValue += 10;
+		}
 	}
 
 	if (kProject.isFirstEnemyAnarchy())

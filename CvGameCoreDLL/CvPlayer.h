@@ -1359,6 +1359,8 @@ public:
 	bool isSpecialUnitValid(SpecialUnitTypes eSpecialUnit) const;
 	void makeSpecialUnitValid(SpecialUnitTypes eSpecialUnit);
 
+	int getSatelliteExtraCommerce(CommerceTypes eCommerce) const;
+
 	// Leoreth
 	void verifyCommerceRates(CommerceTypes eCommerce) const;
 
