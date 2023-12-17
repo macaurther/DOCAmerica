@@ -310,6 +310,22 @@
 		<Spanish>The [COLOR_PROJECT_TEXT]Apollo Program[COLOR_REVERT] is required to create the [COLOR_PROJECT_TEXT]SS Cockpit[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Life Support[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Stasis Chamber[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Docking Bay[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Engines[COLOR_REVERT], [COLOR_PROJECT_TEXT]SS Casings[COLOR_REVERT] and [COLOR_PROJECT_TEXT]SS Thrusters[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROJECT_WORLDS_FAIR</Tag>
+		<English>World's Fair</English>
+		<French>World's Fair</French>
+		<German>World's Fair</German>
+		<Italian>World's Fair</Italian>
+		<Spanish>World's Fair</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_WORLDS_FAIR_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROJECT_PERSECUTION</Tag>
 		<English>Persecution</English>
 		<French>

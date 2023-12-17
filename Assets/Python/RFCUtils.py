@@ -437,7 +437,7 @@ def getRoleLocation(iRole, location):
 
 # used: RFCUtils
 def getRoleAI(iRole):
-	if iRole in [iDefend, iAA]:
+	if iRole in [iDefend]:
 		return UnitAITypes.UNITAI_CITY_DEFENSE
 	elif iRole in [iBase, iShockCav]:
 		return UnitAITypes.UNITAI_ATTACK
@@ -481,39 +481,37 @@ def isUnitOfRole(iUnit, iRole):
 	elif iRole == iWork:
 		return base_unit(iUnit) in [iWorker, iLaborer]
 	elif iRole == iRecon:
-		return base_unit(iUnit) in [iScout, iExplorer, iRanger, iParatrooper]
+		return base_unit(iUnit) in [iScout, iExplorer, iRanger]
 	elif iRole == iMissionary:
 		return base_unit(iUnit) in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 	elif iRole == iDefend:
-		return base_unit(iUnit) in [iMilitia1, iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6, iMilitia7]
+		return base_unit(iUnit) in [iMilitia1, iMilitia2, iMilitia3, iMilitia4, iMilitia5]
 	elif iRole == iBase:
-		return base_unit(iUnit) in [iWarrior, iArquebusier, iMusketman, iMusketeer, iRifleman, iInfantry, iMechInfantry]
+		return base_unit(iUnit) in [iWarrior, iArquebusier, iMusketman, iMusketeer, iRifleman]
 	elif iRole == iShock:
 		return base_unit(iUnit) in [iAxeman, iTercio, iFusilier, iLineInfantry, iMarine]
 	elif iRole == iCounter:
-		return base_unit(iUnit) in [iSpearman, iPikeman, iAntiTank, iRPG]
+		return base_unit(iUnit) in [iSpearman, iPikeman]
 	elif iRole == iSiege:
-		return base_unit(iUnit) in [iArcher, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]
+		return base_unit(iUnit) in [iArcher, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun]
 	elif iRole == iHarass:
-		return base_unit(iUnit) in [iAtlatlist, iSkirmisher, iGrenadier, iGuerilla]
+		return base_unit(iUnit) in [iAtlatlist, iSkirmisher, iGrenadier]
 	elif iRole == iHarassCav:
-		return base_unit(iUnit) in [iHorseArcher, iHussar, iDragoon, iPistolier, iLightTank, iGunship]
+		return base_unit(iUnit) in [iHorseArcher, iHussar, iDragoon, iPistolier]
 	elif iRole == iShockCav:
-		return base_unit(iUnit) in [iCuirassier, iCarabineer, iCavalry, iTank, iMainBattleTank]
+		return base_unit(iUnit) in [iCuirassier, iCarabineer, iCavalry]
 	elif iRole == iSiegeCity:
-		return base_unit(iUnit) in [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery, iHowitzer]
-	elif iRole == iAA:
-		return base_unit(iUnit) in [iAAGun, iMobileSAM]
+		return base_unit(iUnit) in [iBombard, iCannon, iArtillery, iHowitzer]
 	elif iRole == iWorkSea:
 		return base_unit(iUnit) in [iWorkboat]
 	elif iRole in [iFerrySea, iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]:
-		return base_unit(iUnit) in [iCanoe, iCaravel, iIndiaman, iBrigantine, iSteamship, iTransport, iCarrier]
+		return base_unit(iUnit) in [iCanoe, iCaravel, iIndiaman, iBrigantine, iSteamship]
 	elif iRole == iEscortSea:
-		return base_unit(iUnit) in [iSloop, iFrigate, iIronclad, iDestroyer, iStealthDestroyer]
+		return base_unit(iUnit) in [iSloop, iFrigate, iIronclad]
 	elif iRole == iHarassSea:
-		return base_unit(iUnit) in [iPrivateer, iTorpedoBoat, iSubmarine, iNuclearSubmarine]
+		return base_unit(iUnit) in [iPrivateer, iTorpedoBoat]
 	elif iRole == iCapitalSea:
-		return base_unit(iUnit) in [iBarque, iShipOfTheLine, iCruiser, iBattleship, iMissileCruiser]
+		return base_unit(iUnit) in [iBarque, iShipOfTheLine, iCruiser]
 	
 	raise Exception("Unexpected unit role: %d" % iRole)
 	

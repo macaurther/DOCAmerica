@@ -183,17 +183,17 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=50,
-		techs=techs.column(1).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology)
 	),
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(1).including(iPottery, iAgriculture)
+		techs=techs.column(2).including(iPottery, iAgriculture)
 	),
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(1).including(iAgriculture, iPastoralism, iMining)
+		techs=techs.column(2).including(iAgriculture, iPastoralism, iMining)
 	),
 	Civilization(
 		iWari,
@@ -220,7 +220,7 @@ lCivilizations = [
 		iNorse,
 		iGold=50,
 		lCivics=[iExpeditionaries, iSerfdom, iMerchantTrade],
-		techs=techs.column(5).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
+		techs=techs.column(8).without(*lNativeTechs)
 	),
 	Civilization(
 		iChimu,
@@ -232,7 +232,7 @@ lCivilizations = [
 		iInuit,
 		iGold=25,
 		lCivics=[iCouncil],
-		techs=techs.column(1).including(iTanning, iMythology, iSailing)
+		techs=techs.column(2).including(iTanning, iMythology, iSailing)
 	),
 	Civilization(
 		iInca,
@@ -258,14 +258,14 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iCatholicism,
 		lCivics=[iExpeditionaries, iMaritimeLaw, iEncomienda, iMerchantTrade, iGloriaInDeo, iConquest],
-		techs=techs.column(6).without(*lNativeTechs)
+		techs=techs.column(9).without(*lNativeTechs)
 	),
 	Civilization(
 		iPortugal,
 		iGold=200,
 		iStateReligion=iCatholicism,
 		lCivics=[iExpeditionaries, iProprietaries, iEncomienda, iMerchantTrade, iDivineRight, iTributaries],
-		techs=techs.column(6).including(iDiplomacy, iLogistics, iExploration, iOptics, iOfficials).without(*lNativeTechs)
+		techs=techs.column(9).including(iDiplomacy, iLogistics, iExploration, iOptics, iOfficials).without(*lNativeTechs)
 	),
 	Civilization(
 		iEngland,
@@ -273,21 +273,21 @@ lCivilizations = [
 		iStateReligion=iProtestantism,
 		lCivics=[iCharterColony, iCommonLaw, iSerfdom, iMercantilism, iHaven],
 		lEnemies=[iSpain],
-		techs=techs.column(7).including(iShipbuilding, iCharter, iCommunity).without(*lNativeTechs)
+		techs=techs.column(10).including(iShipbuilding, iCharter, iCommunity).without(*lNativeTechs)
 	),
 	Civilization(
 		iFrance,
 		iGold=150,
 		iStateReligion=iCatholicism,
 		lCivics=[iExpeditionaries, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
-		techs=techs.column(7).including(iShipbuilding, iFortification).without(*lNativeTechs)
+		techs=techs.column(10).including(iShipbuilding, iFortification).without(*lNativeTechs)
 	),
 	Civilization(
 		iNetherlands,
 		iGold=600,
 		iStateReligion=iProtestantism,
 		lCivics=[iTradeCompany, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
-		techs=techs.column(7).including(iEconomics, iShipbuilding).without(*lNativeTechs)
+		techs=techs.column(10).including(iEconomics, iShipbuilding).without(*lNativeTechs)
 	),
 	Civilization(
 		iHawaii,
@@ -300,7 +300,7 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iExpeditionaries, iMaritimeLaw, iIndenturedServitude, iAgrarianism, iProfiteering],
-		techs=techs.column(9).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
+		techs=techs.column(12).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iAmerica,
@@ -308,14 +308,14 @@ lCivilizations = [
 		iStateReligion=iProtestantism,
 		lCivics=[iDemocracy, iConfederacy, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iEngland],
-		techs=techs.column(11).including(iRepresentation, iIndependence, iSurveying)
+		techs=techs.column(14).including(iRepresentation, iIndependence, iSurveying)
 	),
 	Civilization(
 		iHaiti,
 		iGold=100,
 		lCivics=[iMonarchy, iCommonLaw, iCraftsmen, iAgrarianism, iIsolationism],
 		lEnemies=[iFrance],
-		techs=techs.column(12)
+		techs=techs.column(15)
 	),
 	Civilization(
 		iArgentina,
@@ -323,7 +323,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iConfederacy, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
-		techs=techs.column(12).including(iGeology)
+		techs=techs.column(15).including(iGeology)
 	),
 	Civilization(
 		iMexico,
@@ -331,7 +331,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
-		techs=techs.column(12)
+		techs=techs.column(15)
 	),
 	Civilization(
 		iColombia,
@@ -339,7 +339,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
-		techs=techs.column(12).including(iRightsOfMan)
+		techs=techs.column(15).including(iRightsOfMan)
 	),
 	Civilization(
 		iPeru,
@@ -347,14 +347,14 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iSpain],
-		techs=techs.column(12).including(iGeology)
+		techs=techs.column(15).including(iGeology)
 	),
 	Civilization(
 		iBrazil,
 		iGold=1600,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
-		techs=techs.column(12).including(iMetallurgy, iProtectionism, iHydrology)
+		techs=techs.column(15).including(iMetallurgy, iProtectionism, iHydrology)
 	),
 	Civilization(
 		iVenezuela,
@@ -362,14 +362,14 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
 		lEnemies=[iColombia],
-		techs=techs.column(12).including(iGeology)
+		techs=techs.column(15).including(iGeology)
 	),
 	Civilization(
 		iCanada,
 		iGold=1000,
 		iStateReligion=iProtestantism,
 		lCivics=[iMonarchy, iFederalism, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
-		techs=techs.column(15)
+		techs=techs.column(18)
 	),
 	Civilization(
 		iCuba,
@@ -377,7 +377,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering],
 		lEnemies=[iSpain],
-		techs=techs.column(16)
+		techs=techs.column(19)
 	),
 ]
 

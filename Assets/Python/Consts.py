@@ -414,7 +414,8 @@ iInfrastructure,iMacroeconomics,iCivilRights,
 iPowerProjection) = range(iNumTechs)
 
 # Techs that Natives start the game with, but Europeans have to trade for
-lNativeTechs = [iHunting, iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iFishing]
+lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing,
+                iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism, iFishing]
 
 # initialise unit variables to unit indices from XML
 
@@ -447,11 +448,11 @@ iGreatGeneral : iFeGreatGeneral,
 iGreatSpy : iFeGreatSpy,
 }
 
-iNumUnitRoles = 25
+iNumUnitRoles = 24
 #				2				3				4				5				6				7				8				9				10
 (iSettle,		iWork,			iRecon,			iMissionary,	iDefend,		iBase,			iShock,			iCounter,		iSiege,			iHarass,
-iHarassCav,		iShockCav,		iSiegeCity,		iAA,			iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,
-iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave) = range(iNumUnitRoles)
+iHarassCav,		iShockCav,		iSiegeCity,		iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,iColonistSupport, 
+iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave) = range(iNumUnitRoles)
 
 lColonistRoles = [iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]
 
@@ -585,8 +586,8 @@ lWest = lAmerica + [rHawaii, rGreenland]
 
 #Projects
 
-iNumProjects = 0
-#(iWorldsFair) = range(iNumProjects)
+iNumProjects = 1
+(iWorldsFair) = range(iNumProjects)
 
 #Eras
 

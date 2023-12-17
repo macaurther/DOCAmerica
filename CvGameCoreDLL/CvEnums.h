@@ -1476,6 +1476,8 @@ enum ProjectTypes				// Exposed to Python
 {
 	NO_PROJECT = -1,
 
+	PROJECT_WORLDS_FAIR,
+
 	NUM_PROJECTS,
 };
 

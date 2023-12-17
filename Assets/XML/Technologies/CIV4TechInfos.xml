@@ -1317,9 +1317,6 @@
 					<iFlavor>1</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_ENGINEERING</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 				<PrereqTech>TECH_ASTRONOMY</PrereqTech>
@@ -1804,7 +1801,7 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_LAW</PrereqTech>
 				<PrereqTech>TECH_ETHICS</PrereqTech>
-				<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
+				<PrereqTech>TECH_MEDICINE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_OLD_WORLD_CULTURE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -4731,7 +4728,8 @@
 			<Era>ERA_INDUSTRIAL</Era>
 			<iHealth>1</iHealth>
 			<iHappiness>1</iHappiness>
-			<iAsset>68</iAsset>
+			<iAsset>100</iAsset>
+			<iPower>1</iPower>
 			<bRepeat>1</bRepeat>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>

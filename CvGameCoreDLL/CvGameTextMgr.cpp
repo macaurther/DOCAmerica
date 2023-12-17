@@ -18636,7 +18636,8 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		}
 
 // BUG - Airport Icon - start
-		if (getBugOptionBOOL("CityBar__AirportIcon", true, "BUG_CITYBAR_AIRPORT_ICONS"))
+		// MacAurther: No Airports
+		/*if (getBugOptionBOOL("CityBar__AirportIcon", true, "BUG_CITYBAR_AIRPORT_ICONS"))
 		{
 			int eAirportClass = GC.getInfoTypeForString("BUILDINGCLASS_AIRPORT");
 			if (eAirportClass != -1)
@@ -18647,7 +18648,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 					szBuffer.append(CvWString::format(L"%c", gDLL->getSymbolID(AIRPORT_CHAR)));
 				}
 			}
-		}
+		}*/
 // BUG - Airport Icon - start
 	}
 
