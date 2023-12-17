@@ -733,6 +733,7 @@ CvPlot* CvSelectionGroup::lastMissionPlot()
 		case MISSION_PERSECUTE:
 		case MISSION_GREAT_MISSION:
 		case MISSION_REBUILD:
+		case MISSION_CONTACT:
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -1127,6 +1128,13 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			}
 			break;
 
+		case MISSION_CONTACT:
+			if (pLoopUnit->canContact(pPlot))
+			{
+				return true;
+			}
+			break;
+
 		case MISSION_DIE_ANIMATION:
 			return false;
 			break;
@@ -1324,6 +1332,7 @@ void CvSelectionGroup::startMission()
 		case MISSION_PERSECUTE: // Leoreth
 		case MISSION_GREAT_MISSION:
 		case MISSION_REBUILD:
+		case MISSION_CONTACT: // MacAurther
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -1611,6 +1620,13 @@ void CvSelectionGroup::startMission()
 					}
 					break;
 
+				case MISSION_CONTACT:
+					if (pLoopUnit->contact())
+					{
+						bAction = true;
+					}
+					break;
+
 				case MISSION_DIE_ANIMATION:
 					bAction = true;
 					break;
@@ -1884,6 +1900,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 				case MISSION_PERSECUTE: // Leoreth
 				case MISSION_GREAT_MISSION:
 				case MISSION_REBUILD:
+				case MISSION_CONTACT:
 				case MISSION_DIE_ANIMATION:
 					break;
 
@@ -1989,6 +2006,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_PERSECUTE: // Leoreth
 			case MISSION_GREAT_MISSION:
 			case MISSION_REBUILD:
+			case MISSION_CONTACT:
 			case MISSION_DIE_ANIMATION:
 				bDone = true;
 				break;

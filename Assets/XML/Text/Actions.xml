@@ -246,11 +246,43 @@
 		<Spanish>[ICON_BULLET]Can rebuild free buildings in cities</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISSION_CONTACT</Tag>
+		<English>Contact</English>
+		<French>Contact</French>
+		<German>Contact</German>
+		<Italian>Contact</Italian>
+		<Spanish>Contact</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_CONTACT</Tag>
+		<English>A Tribe will be contacted and given valuable gifts</English>
+		<French>A Tribe will be contacted and given valuable gifts</French>
+		<German>A Tribe will be contacted and given valuable gifts</German>
+		<Italian>A Tribe will be contacted and given valuable gifts</Italian>
+		<Spanish>A Tribe will be contacted and given valuable gifts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CONTACT</Tag>
+		<English>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILD_LOGGING_CAMP</Tag>
 		<English>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</English>
 		<French>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</French>
 		<German>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</German>
 		<Italian>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</Italian>
 		<Spanish>Build a [LINK=IMPROVEMENT_LOGGING_CAMP]Logging Camp[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_CONTACT_TRIBE</Tag>
+		<English>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK] and give them valuable gifts</English>
+		<French>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK] and give them valuable gifts</French>
+		<German>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK] and give them valuable gifts</German>
+		<Italian>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK] and give them valuable gifts</Italian>
+		<Spanish>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK] and give them valuable gifts</Spanish>
 	</TEXT>
 </Civ4GameText>

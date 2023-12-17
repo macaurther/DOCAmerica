@@ -1150,7 +1150,7 @@
 			<Description>TXT_KEY_UNIT_EXPLORER</Description>
 			<Civilopedia>TXT_KEY_UNIT_EXPLORER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_EXPLORER_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_EXPLORER_HELP</Help>
+			<Help>TXT_KEY_UNIT_CONTACT</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -1168,6 +1168,12 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_CONTACT_TRIBE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1246,6 +1252,10 @@
 					<BuildType>BUILD_FORT</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_CONTACT_TRIBE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1319,6 +1329,10 @@
 					<BuildType>BUILD_CAMP</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_CONTACT_TRIBE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
 			<iCost>40</iCost>
@@ -1365,7 +1379,7 @@
 			<Description>TXT_KEY_UNIT_RANGER</Description>
 			<Civilopedia>TXT_KEY_UNIT_RANGER_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_RANGER_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_RANGER_HELP</Help>
+			<Help>TXT_KEY_UNIT_CONTACT</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bNoBadGoodies>1</bNoBadGoodies>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -1377,6 +1391,12 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_CONTACT_TRIBE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
 			<PrereqTech>TECH_SURVEYING</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

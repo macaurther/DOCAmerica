@@ -1844,6 +1844,7 @@ enum MissionTypes				// Exposed to Python
 	MISSION_PERSECUTE,
 	MISSION_GREAT_MISSION,
 	MISSION_REBUILD,
+	MISSION_CONTACT,
 // BUG - Sentry Actions - start
 #ifdef _MOD_SENTRY
 	MISSION_MOVE_TO_SENTRY,

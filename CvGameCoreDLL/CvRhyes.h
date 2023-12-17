@@ -41,6 +41,10 @@ typedef list<char*> LISTCHAR;
 #define MAX_IMMIGRATION_FROM_UNITS 5																				// MacAurther
 #define MAX_IMMIGRATION_FROM_UNITS_ENGLAND (2 * MAX_IMMIGRATION_FROM_UNITS)											// MacAurther
 
+#define BUILD_CONTACT_TRIBE		((BuildTypes)GC.getInfoTypeForString("BUILD_CONTACT_TRIBE"))						// MacAurther
+#define BUILD_FORT				((BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))									// MacAurther
+#define BUILD_PLANTATION		((BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))							// MacAurther
+
 enum DoCTechs
 {
 	HUNTING,

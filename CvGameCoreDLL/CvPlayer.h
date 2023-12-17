@@ -1386,6 +1386,7 @@ public:
 	// MacAurther
 	int getRegionPowers();
 	int getFortRange();
+	int getContactCost();
 
 	// Immigration
 	int getGlobalImmigrationRateModifier() const;

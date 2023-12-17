@@ -7209,8 +7209,18 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		if (!pPlot->canUseSlave(getOwner())) return false;
 	}
 
-	// MacAurther: Cannot build on top of Tribe or Contacted Tribe
-	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	// MacAurther: Cannot build on top of Tribe, unless it is to contact them
+	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_TRIBE)
+	{
+		if(eBuild == BUILD_CONTACT_TRIBE && canContact(pPlot))
+		{
+			return true;
+		}
+		return false;
+	}
+
+	// MacAurther: Cannot build on top of Contacted Tribe
+	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
 	{
 		return false;
 	}
@@ -8243,6 +8253,7 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_PERSECUTE: // Leoreth
 		case MISSION_GREAT_MISSION:
 		case MISSION_REBUILD:
+		case MISSION_CONTACT:
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -10264,12 +10275,6 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 					}
 				}
 			}
-		}
-
-		// MacAurther: Tribes are only contacted by a subset of units
-		if (pNewPlot->isGoody(getTeam()) && canReceiveGoody())
-		{
-			GET_PLAYER(getOwnerINLINE()).doGoody(pNewPlot, this);
 		}
 	}
 
@@ -14740,13 +14745,34 @@ bool CvUnit::rebuild()
 	return false;
 }
 
-bool CvUnit::canReceiveGoody()
+bool CvUnit::canContact(const CvPlot* pPlot) const
+{
+	if(pPlot->getImprovementType() == IMPROVEMENT_TRIBE && canUnitContact())
+	{
+		return true;
+	}
+	return false;
+}
+
+bool CvUnit::canUnitContact() const
 {
 	if(getUnitClassType() == UNITCLASS_EXPLORER || getUnitClassType() == UNITCLASS_RANGER)
 	{
 		return true;
 	}
 	return false;
+}
+
+bool CvUnit::contact()
+{
+	if (!canContact(plot()))
+	{
+		return false;
+	}
+
+	GET_PLAYER(getOwnerINLINE()).doGoody(plot(), this);
+
+	return true;
 }
 
 int CvUnit::getImmigrationRate()

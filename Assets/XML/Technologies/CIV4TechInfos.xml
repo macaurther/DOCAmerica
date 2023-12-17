@@ -753,7 +753,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>12</iAsset>
 			<bTrade>1</bTrade>
-			<bGoodyTech>1</bGoodyTech>
+			<bGoodyTech>0</bGoodyTech>
 			<bOpenBordersTrading>1</bOpenBordersTrading>
 			<iGridX>4</iGridX>
 			<iGridY>7</iGridY>
@@ -845,7 +845,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<bTrade>1</bTrade>
-			<bGoodyTech>1</bGoodyTech>
+			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>11</iGridY>
 			<Flavors>
@@ -882,7 +882,7 @@
 			<Era>ERA_ANCIENT</Era>
 			<iAsset>8</iAsset>
 			<bTrade>1</bTrade>
-			<bGoodyTech>1</bGoodyTech>
+			<bGoodyTech>0</bGoodyTech>
 			<iGridX>4</iGridX>
 			<iGridY>13</iGridY>
 			<TerrainTrades>
@@ -927,7 +927,7 @@
 			<iAsset>12</iAsset>
 			<iPower>5</iPower>
 			<bTrade>1</bTrade>
-			<bGoodyTech>1</bGoodyTech>
+			<bGoodyTech>0</bGoodyTech>
 			<iGridX>5</iGridX>
 			<iGridY>1</iGridY>
 			<Flavors>

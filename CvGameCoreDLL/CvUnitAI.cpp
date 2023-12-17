@@ -3356,6 +3356,11 @@ void CvUnitAI::AI_exploreMove()
 			return;
 		}
 	}
+	
+	if (AI_contact())
+	{
+		return;
+	}
 
 	if (AI_goody(4))
 	{
@@ -10930,7 +10935,13 @@ bool CvUnitAI::AI_goody(int iRange)
 	}
 
 	// MacAurther: Only a subset of units can claim goodies
-	if (!canReceiveGoody())
+	if (!canUnitContact())
+	{
+		return false;
+	}
+
+	// MacAurther: Has to be able to afford it
+	if (GET_PLAYER(getOwnerINLINE()).getContactCost() > GET_PLAYER(getOwnerINLINE()).getGold())	
 	{
 		return false;
 	}
@@ -18472,6 +18483,22 @@ bool CvUnitAI::AI_rebuildMove(int iMinimumCost)
 	if (pBestCity != NULL)
 	{
 		getGroup()->pushMission(MISSION_MOVE_TO, pBestCity->getX(), pBestCity->getY());
+		return true;
+	}
+
+	return false;
+}
+
+bool CvUnitAI::AI_contact()
+{
+	if (plot()->getImprovementType() != IMPROVEMENT_TRIBE)
+	{
+		return false;
+	}
+
+	if (GET_PLAYER(getOwnerINLINE()).getContactCost() <= GET_PLAYER(getOwnerINLINE()).getGold())	// Has to be able to afford it
+	{
+		getGroup()->pushMission(MISSION_CONTACT, plot()->getX(), plot()->getY());
 		return true;
 	}
 

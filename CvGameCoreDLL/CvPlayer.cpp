@@ -5289,7 +5289,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 	int iI;
 
 	// MacAurther: Only a subset of units can receive goody
-	if(pUnit != NULL && !pUnit->canReceiveGoody())
+	if(pUnit != NULL && !pUnit->canUnitContact())
 	{
 		return false;
 	}
@@ -7115,22 +7115,37 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 
 	int iCost = GC.getBuildInfo(eBuild).getCost();
 	
+	int iCostReduction = 0;	// Out of 100%
+
 	// MacAurther: French UP
 	CivilizationTypes eCiv = getCivilizationType();
-	if (eCiv == FRANCE && eBuild == (BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))
+	if (eCiv == FRANCE && eBuild == BUILD_FORT)
 	{
-		iCost /= 2;
+		iCostReduction += 50;
 	}
 	// MacAurther: Portuguese UP
-	else if (eCiv == PORTUGAL && eBuild == (BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))
+	else if (eCiv == PORTUGAL && eBuild == BUILD_PLANTATION)
 	{
-		iCost = 0;
+		iCostReduction += 100;
 	}
 	// MacAurther: Venezuelan UP
 	else if (eCiv == VENEZUELA)
 	{
-		return 0;
+		iCostReduction += 100;
 	}
+	
+	// MacAurther: Tribe Contacting
+	if (eBuild == BUILD_CONTACT_TRIBE && GET_TEAM(getTeam()).isHasTech((TechTypes)LINGUISTICS))
+	{
+		iCostReduction += 25;
+	}
+
+	if (eBuild == BUILD_CONTACT_TRIBE && GET_TEAM(getTeam()).isHasTech((TechTypes)LOCALIZATION))
+	{
+		iCostReduction += 25;
+	}
+
+	iCost -= (iCost * iCostReduction) / 100;
 
 	return std::max(0, iCost * (100 + calculateInflationRate())) / 100;
 }
@@ -25592,6 +25607,23 @@ int CvPlayer::getFortRange()
 	}
 
 	return 1;
+}
+
+int CvPlayer::getContactCost()
+{
+	int iCost = 40;
+
+	if(GET_TEAM(getTeam()).isHasTech((TechTypes)LINGUISTICS))
+	{
+		iCost -= 10;
+	}
+
+	if(GET_TEAM(getTeam()).isHasTech((TechTypes)LOCALIZATION))
+	{
+		iCost -= 10;
+	}
+
+	return iCost;
 }
 
 // MacAurther: Immigration

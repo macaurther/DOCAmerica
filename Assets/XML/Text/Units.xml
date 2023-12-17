@@ -286,14 +286,6 @@
 		<Spanish>[COLOR_UNIT_TEXT]Explorers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_EXPLORER_HELP</Tag>
-		<English>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
-		<French>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
-		<German>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
-		<Italian>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIGHTER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</English>
 		<French>[COLOR_UNIT_TEXT]Fighters[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</French>
@@ -1719,11 +1711,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Tag>
-		<English>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
-		<French>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Capture d'[LINK=UNIT_SLAVE]esclaves[\LINK] garantie[NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
-		<German>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
-		<Italian>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
+		<English>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Capture d'[LINK=UNIT_SLAVE]esclaves[\LINK] garantie[NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>
@@ -1951,11 +1943,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_HELP</Tag>
-		<English>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
-		<French>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
-		<German>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
-		<Italian>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
+		<English>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE</Tag>
@@ -2180,14 +2172,6 @@
 		<German>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</German>
 		<Italian>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Rangers[COLOR_REVERT] can enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Bog[COLOR_REVERT], gain only positive bonuses from Tribal villages, can only defend, ignores terrain movement costs and begins with the [COLOR_HIGHLIGHT_TEXT]Guerilla I[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotions.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_RANGER_HELP</Tag>
-		<English>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
-		<French>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
-		<German>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
-		<Italian>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]Can contact uncontacted [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANOE</Tag>

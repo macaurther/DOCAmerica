@@ -216,6 +216,9 @@ protected:
 	bool AI_greatMission(int iCityPercent);
 	bool AI_rebuildMove(int iMinimumCost);
 
+	// MacAurther
+	bool AI_contact();
+
 	bool AI_followBombard();
 
 	bool AI_potentialEnemy(TeamTypes eTeam, const CvPlot* pPlot = NULL);

@@ -1634,5 +1634,20 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildHamlet.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,10</Button>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_CONTACT_TRIBE</Type>
+			<Description>TXT_KEY_BUILD_CONTACT_TRIBE</Description>
+			<PrereqTech>TECH_EXPLORATION</PrereqTech>
+			<iTime>0</iTime>
+			<iCost>40</iCost>
+			<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_GREAT_EVENT</EntityEvent>
+			<HotKey>KB_C</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildTribalVillage.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,4,10</Button>
+		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>

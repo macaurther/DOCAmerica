@@ -290,7 +290,9 @@ public:
 	bool isWorker() const;
 
 	// MacAurther
-	bool canReceiveGoody();
+	bool canContact(const CvPlot* pPlot) const;
+	bool canUnitContact() const;
+	bool contact();
 	int getImmigrationRate();
 
 	int upgradePrice(UnitTypes eUnit) const;																											// Exposed to Python
