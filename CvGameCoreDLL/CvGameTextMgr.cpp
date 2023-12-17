@@ -8809,7 +8809,6 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 	}
 
 	bFirst = true;
-	bool bSatellite = false;
 
 	for (iI = 0; iI < GC.getNumSpecialistInfos(); ++iI)
 	{
@@ -8819,11 +8818,6 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 			CvWString szSpecialistLink = CvWString::format(L"<link=literal>%s</link>", GC.getSpecialistInfo((SpecialistTypes) iI).getDescription());
 			setListHelp(szBuffer, szTempBuffer, szSpecialistLink.GetCString(), L", ", bFirst);
 			bFirst = false;
-
-			if (GC.getSpecialistInfo((SpecialistTypes)iI).isSatellite())
-			{
-				bSatellite = true;
-			}
 		}
 	}
 
@@ -8831,12 +8825,6 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_SLAVE_LIMIT"));
-	}
-
-	if (bSatellite)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_SATELLITE_LIMIT"));
 	}
 
 	bFirst = true;
@@ -12174,20 +12162,6 @@ void CvGameTextMgr::setProjectHelp(CvWStringBuffer &szBuffer, ProjectTypes eProj
 	}
 
 	// Leoreth
-	if (kProject.isSatelliteIntercept())
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_SATELLITE_INTERCEPT"));
-	}
-
-	// Leoreth
-	if (kProject.isSatelliteAttack())
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_SATELLITE_ATTACK"));
-	}
-
-	// Leoreth
 	if (kProject.isGoldenAge())
 	{
 		szBuffer.append(NEWLINE);
@@ -12239,46 +12213,6 @@ void CvGameTextMgr::setProjectHelp(CvWStringBuffer &szBuffer, ProjectTypes eProj
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_FREE_PROMOTION", GC.getPromotionInfo((PromotionTypes)kProject.getFreePromotion()).getTextKeyWide()));
-	}
-
-	// Leoreth
-	if (eProject == PROJECT_GOLDEN_RECORD)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GOLDEN_RECORD_HELP"));
-	}
-
-	if (eProject == PROJECT_THE_INTERNET)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_THE_INTERNET_HELP"));
-	}
-
-	if (eProject == PROJECT_HUMAN_GENOME_PROJECT)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_HUMAN_GENOME_PROJECT_HELP"));
-	}
-
-	if (eProject == PROJECT_INTERNATIONAL_SPACE_STATION)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_INTERNATIONAL_SPACE_STATION_HELP"));
-	}
-
-	if (eProject == PROJECT_GREAT_FIREWALL)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_GREAT_FIREWALL_HELP"));
-	}
-
-	if (eProject == PROJECT_LUNAR_COLONY)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_SPACESHIP_MOD_ALL_CITIES", 100));
-
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROJECT_LUNAR_COLONY_HELP"));
 	}
 
 	for (iI = 0; iI < GC.getNumVictoryInfos(); ++iI)
@@ -17753,7 +17687,6 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 // BUG - Base Commerce - end
 
 	int iSpecialistCommerce = city.getSpecialistCommerce(eCommerceType) + (city.getSpecialistPopulation() + city.getNumGreatPeople() - city.countNoGlobalEffectsFreeSpecialists()) * owner.getSpecialistExtraCommerce(eCommerceType);
-	iSpecialistCommerce += city.countSatellites() * owner.getSatelliteExtraCommerce(eCommerceType);
 
 	if (0 != iSpecialistCommerce)
 	{
@@ -17904,19 +17837,6 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_POWER", iPowerMod, info.getChar()));
 			iModifier += iPowerMod;
-		}
-	}
-
-
-	// Spaceship production (with Golden Record)
-	if (eCommerceType == COMMERCE_CULTURE && GET_TEAM(city.getTeam()).getProjectCount(PROJECT_GOLDEN_RECORD) > 0)
-	{
-		int iSpaceshipMod = city.getSpaceProductionModifier() / 2;
-		if (0 != iSpaceshipMod)
-		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_COMMERCE_SPACE_PRODUCTION", iSpaceshipMod, info.getChar()));
-			iModifier += iSpaceshipMod;
 		}
 	}
 
@@ -21517,20 +21437,6 @@ bool CvGameTextMgr::setBuildingAdditionalBombardDefenseHelp(CvWStringBuffer &szB
 void CvGameTextMgr::parsePaganReligionHelp(CvWStringBuffer &szBuffer, PaganReligionTypes ePaganReligion)
 {
 	szBuffer.append(CvWString::format(SETCOLR L"%s (%s)" ENDCOLR , TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getPaganReligionInfo(ePaganReligion).getText(), gDLL->getText("TXT_KEY_PEDIA_MINOR_RELIGION_PAGANISM").c_str()));
-}
-
-void CvGameTextMgr::setSatelliteLimitHelp(CvWStringBuffer& szBuffer, CvCity& city)
-{
-	int iSatellites = city.countSatellites();
-	int iSatelliteLimit = city.getSatelliteSlots();
-
-	int iSpecialistSlots = 0;
-	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
-	{
-		iSpecialistSlots += city.getMaxSpecialistCount((SpecialistTypes)iI);
-	}
-
-	szBuffer.append(gDLL->getText("INTERFACE_CITY_SATELLITE_LIMIT_HELP", iSatellites, iSatelliteLimit, iSpecialistSlots));
 }
 
 void CvGameTextMgr::setWonderLimitHelp(CvWStringBuffer &szBuffer, CvCity& city, int iWonderType)

@@ -627,7 +627,7 @@ def republicTitle(iPlayer):
 		if isEmpire(iPlayer) and iEra == iIndustrialEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
-		if iEra >= iAtomicEra:
+		if year() >= year(1900):
 			return "TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC"
 	
 			
@@ -789,12 +789,12 @@ def leader(iPlayer):
 		if any(data.dFirstContactConquerors.values()): return iPhilip
 		
 	elif iCiv == iFrance:
-		if iEra >= iModernEra: return iDeGaulle
+		if year() >= year(1900): return iDeGaulle
 		
-		if iEra >= iIndustrialEra: return iNapoleon
+		if  year() >= year(1800): return iNapoleon
 		
 	elif iCiv == iEngland:
-		if iEra >= iModernEra: return iChurchill
+		if year() >= year(1900): return iChurchill
 		
 		if iEra >= iIndustrialEra: return iVictoria
 		
@@ -814,7 +814,7 @@ def leader(iPlayer):
 		
 		if isFascist(iPlayer): return iSantaAnna
 		
-		if iEra >= iModernEra: return iCardenas
+		if year() >= year(1900): return iCardenas
 			
 	elif iCiv == iAmerica:
 		if year() >= year(2000): return iObama
@@ -832,21 +832,21 @@ def leader(iPlayer):
 		if year() >= year(1820): return iJackson
 		
 	elif iCiv == iArgentina:
-		if iEra >= iAtomicEra: return iPeron
+		if year() >= year(1900): return iPeron
 	
 	elif iCiv == iBrazil:
-		if iEra >= iAtomicEra: return iVargas
+		if year() >= year(1900): return iVargas
 		
 	elif iCiv == iCanada:
-		if iEra >= iAtomicEra: return iTrudeau
+		if year() >= year(1900): return iTrudeau
 	
 	elif iCiv == iNorse:
-		if iEra >= iModernEra: return iGerhardsen
+		if year() >= year(1900): return iGerhardsen
 		
 		if iEra >= iRevolutionaryEra: return iGustav
 	
 	elif iCiv == iRussia:
-		if iEra >= iModernEra: return iStalin
+		if year() >= year(1900): return iStalin
 		
 		if iEra >= iIndustrialEra: return iAlexanderI
 	

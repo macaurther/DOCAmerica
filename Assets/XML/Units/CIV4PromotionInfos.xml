@@ -41,19 +41,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -95,19 +83,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -149,19 +125,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -204,19 +168,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -260,19 +212,7 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -312,14 +252,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -423,24 +355,12 @@
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Buttons/Promotions/Pinch.dds,Art/Interface/Buttons/Promotions_Atlas.dds,3,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FORMATION</Type>
-			<Description>TXT_KEY_PROMOTION_FORMATION</Description>
+			<Type>PROMOTION_GUERILLA</Type>
+			<Description>TXT_KEY_PROMOTION_GUERILLA</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL2</PromotionPrereqOr2>
@@ -495,27 +415,19 @@
 					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Buttons/Promotions/Charge.dds,Art/Interface/Buttons/Promotions_Atlas.dds,1,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_AMBUSH</Type>
-			<Description>TXT_KEY_PROMOTION_AMBUSH</Description>
+			<Type>PROMOTION_FLANKING</Type>
+			<Description>TXT_KEY_PROMOTION_FLANKING</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL2</PromotionPrereqOr2>
-			<TechPrereq>TECH_ROCKETRY</TechPrereq>
+			<TechPrereq>TECH_TACTICS</TechPrereq>
 			<UnitCombatMods>
 				<UnitCombatMod>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<iUnitCombatMod>25</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
@@ -526,18 +438,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -577,7 +477,7 @@
 			<Description>TXT_KEY_PROMOTION_AMPHIBIOUS</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
-			<TechPrereq>TECH_EXPLORATION</TechPrereq>
+			<TechPrereq>TECH_SHALLOW_FISHING</TechPrereq>
 			<bAmphib>1</bAmphib>
 			<bRiver>1</bRiver>
 			<UnitCombats>
@@ -603,10 +503,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -672,14 +568,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -716,10 +604,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -870,8 +754,8 @@
 			<Button>,Art/Interface/Buttons/Promotions/Combat5.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,8,16</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_GUERILLA1</Type>
-			<Description>TXT_KEY_PROMOTION_GUERILLA1</Description>
+			<Type>PROMOTION_MOUNTAINEER1</Type>
+			<Description>TXT_KEY_PROMOTION_MOUNTAINEER1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iHillsDefense>20</iHillsDefense>
 			<UnitCombats>
@@ -895,11 +779,11 @@
 			<Button>,Art/Interface/Buttons/Promotions/Guerilla1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,5,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_GUERILLA2</Type>
-			<Description>TXT_KEY_PROMOTION_GUERILLA2</Description>
+			<Type>PROMOTION_MOUNTAINEER2</Type>
+			<Description>TXT_KEY_PROMOTION_MOUNTAINEER2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_GUERILLA1</PromotionPrereqOr1>
-			<TechPrereq>TECH_PATHFINDING</TechPrereq>
+			<PromotionPrereqOr1>PROMOTION_MOUNTAINEER1</PromotionPrereqOr1>
+			<TechPrereq>TECH_LANDMARKS</TechPrereq>
 			<bHillsDoubleMove>1</bHillsDoubleMove>
 			<iHillsDefense>30</iHillsDefense>
 			<UnitCombats>
@@ -927,10 +811,10 @@
 			<Button>,Art/Interface/Buttons/Promotions/Guerilla2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,6,5</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_GUERILLA3</Type>
-			<Description>TXT_KEY_PROMOTION_GUERILLA3</Description>
+			<Type>PROMOTION_MOUNTAINEER3</Type>
+			<Description>TXT_KEY_PROMOTION_MOUNTAINEER3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_GUERILLA2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_MOUNTAINEER2</PromotionPrereqOr1>
 			<TechPrereq>TECH_PATHFINDING</TechPrereq>
 			<iWithdrawalChange>50</iWithdrawalChange>
 			<iHillsAttack>25</iHillsAttack>
@@ -997,7 +881,7 @@
 			<Description>TXT_KEY_PROMOTION_WOODSMAN2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_WOODSMAN1</PromotionPrereqOr1>
-			<TechPrereq>TECH_PATHFINDING</TechPrereq>
+			<TechPrereq>TECH_HUNTING</TechPrereq>
 			<FeatureDefenses>
 				<FeatureDefense>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
@@ -1051,7 +935,7 @@
 			<Description>TXT_KEY_PROMOTION_WOODSMAN3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_WOODSMAN2</PromotionPrereqOr1>
-			<TechPrereq>TECH_PATHFINDING</TechPrereq>
+			<TechPrereq>TECH_TRAPPING</TechPrereq>
 			<iFirstStrikesChange>2</iFirstStrikesChange>
 			<iSameTileHealChange>15</iSameTileHealChange>
 			<FeatureAttacks>
@@ -1085,11 +969,11 @@
 			<Button>,Art/Interface/Buttons/Promotions/Woodsman2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,8,6</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FLANKING1</Type>
-			<Description>TXT_KEY_PROMOTION_FLANKING1</Description>
+			<Type>PROMOTION_FORMATION1</Type>
+			<Description>TXT_KEY_PROMOTION_FORMATION1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
-			<PromotionPrereqOr2>PROMOTION_DISENGAGE1</PromotionPrereqOr2>
+			<PromotionPrereqOr2>PROMOTION_FEINT1</PromotionPrereqOr2>
 			<iPlainsAttack>20</iPlainsAttack>
 			<UnitCombats>
 				<UnitCombat>
@@ -1098,24 +982,17 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Flanking1.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FLANKING2</Type>
-			<Description>TXT_KEY_PROMOTION_FLANKING2</Description>
+			<Type>PROMOTION_FORMATION2</Type>
+			<Description>TXT_KEY_PROMOTION_FORMATION2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FLANKING1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FORMATION1</PromotionPrereqOr1>
+			<TechPrereq>TECH_IRRIGATION</TechPrereq>
 			<iPlainsAttack>20</iPlainsAttack>
 			<UnitCombats>
 				<UnitCombat>
@@ -1126,22 +1003,15 @@
 					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Flanking2.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_FLANKING3</Type>
-			<Description>TXT_KEY_PROMOTION_FLANKING3</Description>
+			<Type>PROMOTION_FORMATION3</Type>
+			<Description>TXT_KEY_PROMOTION_FORMATION3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_FLANKING2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FORMATION2</PromotionPrereqOr1>
+			<TechPrereq>TECH_EARTHWORKS</TechPrereq>
 			<iWithdrawalChange>25</iWithdrawalChange>
 			<iPlainsDefense>25</iPlainsDefense>
 			<UnitCombats>
@@ -1153,20 +1023,12 @@
 					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 			</UnitCombats>
 			<Button>Art/Interface/Buttons/Promotions/Flanking3.dds</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_CITY_RAIDER1</Type>
-			<Description>TXT_KEY_PROMOTION_CITYRAIDER1</Description>
+			<Type>PROMOTION_RAIDER1</Type>
+			<Description>TXT_KEY_PROMOTION_RAIDER1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iCityAttack>20</iCityAttack>
 			<UnitCombats>
@@ -1178,18 +1040,14 @@
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 			</UnitCombats>
-			<Button>,Art/Interface/Buttons/Promotions/CityRaider1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,5,2</Button>
+			<Button>,Art/Interface/Buttons/Promotions/RAIDER1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,5,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_CITY_RAIDER2</Type>
 			<Description>TXT_KEY_PROMOTION_CITYRAIDER2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_CITY_RAIDER1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_RAIDER1</PromotionPrereqOr1>
 			<iCityAttack>25</iCityAttack>
 			<UnitCombats>
 				<UnitCombat>
@@ -1202,10 +1060,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 			</UnitCombats>
@@ -1236,15 +1090,11 @@
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Buttons/Promotions/CityRaider3.dds,Art/Interface/Buttons/Promotions_Atlas.dds,7,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_CITY_GARRISON1</Type>
+			<Type>PROMOTION_GARRISON1</Type>
 			<Description>TXT_KEY_PROMOTION_GARRISON1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iCityDefense>20</iCityDefense>
@@ -1265,10 +1115,10 @@
 			<Button>,Art/Interface/Buttons/Promotions/CityGarrison1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,2,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_CITY_GARRISON2</Type>
+			<Type>PROMOTION_GARRISON2</Type>
 			<Description>TXT_KEY_PROMOTION_GARRISON2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_CITY_GARRISON1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_GARRISON1</PromotionPrereqOr1>
 			<iCityDefense>25</iCityDefense>
 			<UnitCombats>
 				<UnitCombat>
@@ -1287,10 +1137,10 @@
 			<Button>,Art/Interface/Buttons/Promotions/CityGarrison2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,3,2</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_CITY_GARRISON3</Type>
+			<Type>PROMOTION_GARRISON3</Type>
 			<Description>TXT_KEY_PROMOTION_GARRISON3</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_CITY_GARRISON2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_GARRISON2</PromotionPrereqOr1>
 			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
 			<iCityDefense>30</iCityDefense>
 			<UnitCombatMods>
@@ -1334,14 +1184,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1369,14 +1211,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1401,14 +1235,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1445,14 +1271,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1467,10 +1285,6 @@
 			<UnitCombats>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1498,10 +1312,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1526,10 +1336,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1540,7 +1346,7 @@
 			<Type>PROMOTION_ACCURACY</Type>
 			<Description>TXT_KEY_PROMOTION_ACCURACY</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_CITY_RAIDER1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_RAIDER1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_BARRAGE1</PromotionPrereqOr2>
 			<iBombardRateChange>8</iBombardRateChange>
 			<UnitCombats>
@@ -1552,8 +1358,8 @@
 			<Button>,Art/Interface/Buttons/Promotions/Accuracy.dds,Art/Interface/Buttons/Promotions_Atlas.dds,1,1</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_DISENGAGE1</Type>
-			<Description>TXT_KEY_PROMOTION_DISENGAGE1</Description>
+			<Type>PROMOTION_FEINT1</Type>
+			<Description>TXT_KEY_PROMOTION_FEINT1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<iWithdrawalChange>10</iWithdrawalChange>
 			<UnitCombats>
@@ -1566,14 +1372,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1581,10 +1379,10 @@
 			<Button>,Art/Interface/Buttons/Promotions/Flanking1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,6,3</Button>
 		</PromotionInfo>
 		<PromotionInfo>
-			<Type>PROMOTION_DISENGAGE2</Type>
-			<Description>TXT_KEY_PROMOTION_DISENGAGE2</Description>
+			<Type>PROMOTION_FEINT2</Type>
+			<Description>TXT_KEY_PROMOTION_FEINT2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_DISENGAGE1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FEINT1</PromotionPrereqOr1>
 			<bImmuneToFirstStrikes>1</bImmuneToFirstStrikes>
 			<iWithdrawalChange>20</iWithdrawalChange>
 			<UnitCombats>
@@ -1594,14 +1392,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -1615,7 +1405,7 @@
 			<Type>PROMOTION_SENTRY</Type>
 			<Description>TXT_KEY_PROMOTION_SENTRY</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_DISENGAGE1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FEINT1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_COMBAT3</PromotionPrereqOr2>
 			<iVisibilityChange>1</iVisibilityChange>
 			<UnitCombats>
@@ -1632,10 +1422,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -1646,7 +1432,7 @@
 			<Type>PROMOTION_MOBILITY</Type>
 			<Description>TXT_KEY_PROMOTION_MOBILITY</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_DISENGAGE2</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FEINT2</PromotionPrereqOr1>
 			<iMoveDiscountChange>1</iMoveDiscountChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -1657,10 +1443,6 @@
 					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Buttons/Promotions/Mobility1.dds,Art/Interface/Buttons/Promotions_Atlas.dds,5,4</Button>
 		</PromotionInfo>
@@ -1668,7 +1450,7 @@
 			<Type>PROMOTION_NAVIGATION1</Type>
 			<Description>TXT_KEY_PROMOTION_NAVIGATION1</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_DISENGAGE1</PromotionPrereqOr1>
+			<PromotionPrereqOr1>PROMOTION_FEINT1</PromotionPrereqOr1>
 			<iMovesChange>1</iMovesChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -1682,7 +1464,7 @@
 			<Type>PROMOTION_NAVIGATION2</Type>
 			<Description>TXT_KEY_PROMOTION_NAVIGATION2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereq>PROMOTION_DISENGAGE1</PromotionPrereq>
+			<PromotionPrereq>PROMOTION_FEINT1</PromotionPrereq>
 			<PromotionPrereqOr1>PROMOTION_NAVIGATION1</PromotionPrereqOr1>
 			<iMovesChange>1</iMovesChange>
 			<UnitCombats>
@@ -1692,83 +1474,6 @@
 				</UnitCombat>
 			</UnitCombats>
 			<Button>,Art/Interface/Buttons/Promotions/Navigation2.dds,Art/Interface/Buttons/Promotions_Atlas.dds,8,4</Button>
-		</PromotionInfo>
-		<PromotionInfo>
-			<Type>PROMOTION_RANGE1</Type>
-			<Description>TXT_KEY_PROMOTION_RANGE1</Description>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
-			<iAirRangeChange>1</iAirRangeChange>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-			</UnitCombats>
-			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,1,15</Button>
-		</PromotionInfo>
-		<PromotionInfo>
-			<Type>PROMOTION_RANGE2</Type>
-			<Description>TXT_KEY_PROMOTION_RANGE2</Description>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_RANGE1</PromotionPrereqOr1>
-			<iAirRangeChange>1</iAirRangeChange>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-			</UnitCombats>
-			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,2,15</Button>
-		</PromotionInfo>
-		<PromotionInfo>
-			<Type>PROMOTION_INTERCEPTION1</Type>
-			<Description>TXT_KEY_PROMOTION_INTERCEPTION1</Description>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<iInterceptChange>10</iInterceptChange>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-			</UnitCombats>
-			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,15</Button>
-		</PromotionInfo>
-		<PromotionInfo>
-			<Type>PROMOTION_INTERCEPTION2</Type>
-			<Description>TXT_KEY_PROMOTION_INTERCEPTION2</Description>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_INTERCEPTION1</PromotionPrereqOr1>
-			<iInterceptChange>20</iInterceptChange>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-			</UnitCombats>
-			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,15</Button>
-		</PromotionInfo>
-		<PromotionInfo>
-			<Type>PROMOTION_ACE</Type>
-			<Description>TXT_KEY_PROMOTION_ACE</Description>
-			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereqOr1>PROMOTION_COMBAT3</PromotionPrereqOr1>
-			<iEvasionChange>25</iEvasionChange>
-			<UnitCombats>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_AIR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-			</UnitCombats>
-			<Button>,Art/Interface/Buttons/TechTree/Corporation.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,5,15</Button>
 		</PromotionInfo>
 		<PromotionInfo>
 			<Type>PROMOTION_LOGISTICS1</Type>
@@ -2113,14 +1818,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -2160,14 +1857,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
@@ -2213,14 +1902,6 @@
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_NAVAL</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -2260,14 +1941,6 @@
 				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_ARMOR</UnitCombatType>
-					<bUnitCombat>1</bUnitCombat>
-				</UnitCombat>
-				<UnitCombat>
-					<UnitCombatType>UNITCOMBAT_HELICOPTER</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
 				<UnitCombat>

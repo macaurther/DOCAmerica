@@ -2823,16 +2823,6 @@ int CyCity::getPopulationLoss()
 {
 	return m_pCity ? m_pCity->getPopulationLoss() : -1;
 }
-
-int CyCity::countSatellites()
-{
-	return m_pCity ? m_pCity->countSatellites() : -1;
-}
-
-int CyCity::getSatelliteSlots()
-{
-	return m_pCity ? m_pCity->getSatelliteSlots() : -1;
-}
 	
 int CyCity::getArea()
 {

@@ -233,7 +233,7 @@ dGoals = {
 	iFrance: (
 		ControlledResourceCount(iFur, 15, by=1750),
 		AreaPercent(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 50, subject=VASSALS, at=1800),
-		UnitCount(iSatellite, 1, by=1968),
+		UnitCount(iWorker, 1, by=1968),
 	),
 	iNetherlands: (
 		CitySpecialistCount(city(tNewAmsterdam).named(NEW_AMSTERDAM), iSpecialistGreatMerchant, 1, at=1660),
@@ -305,7 +305,7 @@ dGoals = {
 	),
 	iBrazil: (
 		ImprovementCount((iSlavePlantation, 8), (iPasture, 4), at=1880),
-		Wonders(iCristoRedentor, iItaipuDam),
+		Wonders(iCristoRedentor),
 		All(
 			ImprovementCount(iForestPreserve, 20),
 			CityBuilding(capital().named(CAPITAL), iNationalPark),
@@ -337,7 +337,7 @@ dGoals = {
 	iCuba: (
 		AllowNone(group(iCivGroupEurope).named(EUROPEAN), plots.region(rCaribbean).named(CARIBBEAN), at=1910),
 		CityCultureLevel(capital().named(CAPITAL), iCultureLevelRefined, by=1950),
-		UnitCount(iICBM, 1, by=1962),
+		UnitCount(iWorker, 1, by=1962),
 	),
 }
 

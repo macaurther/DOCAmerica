@@ -157,7 +157,7 @@ def newWorldPlague(iTeamX, iHasMetTeamY):
 		return
 	
 	if data.players[iNewWorld].iPlagueCountdown == 0:
-		if not team(iNewWorld).isHasTech(iMicrobiology):
+		if not team(iNewWorld).isHasTech(iBiology):
 			city = cities.owner(iNewWorld).random()
 			
 			if city:
@@ -172,7 +172,7 @@ def newWorldPlague(iTeamX, iHasMetTeamY):
 
 @handler("techAcquired")
 def acquireVaccine(iTech, iTeam, iPlayer):
-	if iTech == iMicrobiology:
+	if iTech == iBiology:
 		if data.players[iPlayer].iPlagueCountdown > 1:
 			data.players[iPlayer].iPlagueCountdown = 1
 
@@ -208,12 +208,12 @@ def isVulnerable(iPlayer):
 			
 	pPlayer = player(iPlayer)
 		
-	if team(iPlayer).isHasTech(iMicrobiology): return False
+	if team(iPlayer).isHasTech(iBiology): return False
 	
 	if civ(iPlayer) in lBioNewWorld and not data.dFirstContactConquerors[civ(iPlayer)]: return False
 		
 	if data.players[iPlayer].iPlagueCountdown == 0: #vulnerable
-		if not team(iPlayer).isHasTech(iMicrobiology):
+		if not team(iPlayer).isHasTech(iBiology):
 			iHealth = calculateHealth(iPlayer)
 			if iHealth < 14: #no spread for iHealth >= 74 years
 				return True

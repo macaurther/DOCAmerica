@@ -988,7 +988,7 @@
 			<Button>,Art/Interface/Buttons/Buildings/Pentagon.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,5</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_UNITED_NATIONS</Type>
+			<Type>ART_DEF_BUILDING_LEAGUE_OF_NATIONS</Type>
 			<LSystem>LSYSTEM_4x2</LSystem>
 			<bAnimated>1</bAnimated>
 			<fScale>1.25</fScale>

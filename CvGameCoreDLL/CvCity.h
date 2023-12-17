@@ -1160,9 +1160,6 @@ public:
 	void changeCorporationUnhealthModifier(int iChange);
 
 	int countNoGlobalEffectsFreeSpecialists() const;
-	int countSatellites() const;
-	int getSatelliteSlots() const;
-	bool canSatelliteJoin() const;
 
 	int getSpecialistGreatPeopleRateChange(SpecialistTypes eSpecialist) const;
 

@@ -6394,7 +6394,7 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		// Leoreth: don't allow UHV wonders before the respective human civ has spawned and some turns after
 		if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_STATUE_OF_LIBERTY, FRANCE)) return false;
 
-		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_UNITED_NATIONS, AMERICA)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_LEAGUE_OF_NATIONS, AMERICA)) return false;
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_PENTAGON, AMERICA)) return false;
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_STATUE_OF_LIBERTY, AMERICA)) return false;
 
@@ -6404,7 +6404,6 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_GATE_OF_THE_SUN, TIWANAKU)) return false;
 
-		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_ITAIPU_DAM, BRAZIL)) return false;
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_CRISTO_REDENTOR, BRAZIL)) return false;
 	}
 
@@ -7059,28 +7058,6 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 		{
 			pLoopCity->changeMaxFoodKeptPercent(25 * iChange);
 		}
-	}
-
-	// World Trade Center
-	if (eBuilding == (BuildingTypes)BUILDING_WORLD_TRADE_CENTER)
-	{
-		changeCorporationCommerceModifier(iChange * 50);
-	}
-
-	// Las Lajas Sanctuary
-	else if (eBuilding == (BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY)
-	{
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			pLoopCity->changeHealRate(10 * iChange);
-		}
-	}
-
-	// Hubble Space Telescope
-	else if (eBuilding == (BuildingTypes)BUILDING_HUBBLE_SPACE_TELESCOPE)
-	{
-		updateCommerce(COMMERCE_RESEARCH);
-		AI_makeAssignWorkDirty();
 	}
 }
 
@@ -7847,7 +7824,7 @@ bool CvPlayer::canResearch(TechTypes eTech, bool bTrade, TechTypes eGivenTech) c
 			{
 				//Rhye
 				//if (!bTrade || GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || !GET_TEAM(getTeam()).isNoTradeTech(ePrereq))
-				if (!bTrade || (GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) && !GET_TEAM(getTeam()).isHasTech((TechTypes)GLOBALISM)) || !GET_TEAM(getTeam()).isNoTradeTech(ePrereq))
+				if (!bTrade || (GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) && !GET_TEAM(getTeam()).isHasTech((TechTypes)POWER_PROJECTION)) || !GET_TEAM(getTeam()).isNoTradeTech(ePrereq))
 				{
 					bFoundValid = true;
 					break;
@@ -7873,7 +7850,7 @@ bool CvPlayer::canResearch(TechTypes eTech, bool bTrade, TechTypes eGivenTech) c
 
 			//Rhye
 			//if (bTrade && !GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) && GET_TEAM(getTeam()).isNoTradeTech(ePrereq))
-			if (bTrade && (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || GET_TEAM(getTeam()).isHasTech((TechTypes)GLOBALISM)) && GET_TEAM(getTeam()).isNoTradeTech(ePrereq))
+			if (bTrade && (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || GET_TEAM(getTeam()).isHasTech((TechTypes)POWER_PROJECTION)) && GET_TEAM(getTeam()).isNoTradeTech(ePrereq))
 			{
 				return false;
 			}
@@ -8973,7 +8950,7 @@ int CvPlayer::specialistYield(SpecialistTypes eSpecialist, YieldTypes eYield) co
 int CvPlayer::specialistCommerce(SpecialistTypes eSpecialist, CommerceTypes eCommerce) const
 {
 	CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
-	return (kSpecialist.getCommerceChange(eCommerce) + (kSpecialist.isNoGlobalEffects() ? 0 : getSpecialistExtraCommerce(eCommerce)) + (kSpecialist.isSatellite() ? getSatelliteExtraCommerce(eCommerce) : 0));
+	return (kSpecialist.getCommerceChange(eCommerce) + (kSpecialist.isNoGlobalEffects() ? 0 : getSpecialistExtraCommerce(eCommerce)));
 }
 
 
@@ -13839,7 +13816,7 @@ int CvPlayer::getSpecialistExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex
 	// Leoreth: limit additional food from various sources
 	if (eIndex2 == YIELD_FOOD)
 	{
-		// satellites and slaves cannot benefit from bonus food effects
+		// slaves cannot benefit from bonus food effects
 		if (GC.getSpecialistInfo(eIndex1).isNoGlobalEffects())
 		{
 			return 0;
@@ -15774,11 +15751,6 @@ int CvPlayer::getEspionageMissionCostModifier(EspionageMissionTypes eMission, Pl
 	// Counterespionage Mission Mod
 	CvTeam& kTargetTeam = GET_TEAM(GET_PLAYER(eTargetPlayer).getTeam());
 	int iCounterespionageModifier = kTargetTeam.getCounterespionageModAgainstTeam(getTeam());
-
-	if (kTargetTeam.getProjectCount(PROJECT_GREAT_FIREWALL))
-	{
-		iCounterespionageModifier += 200;
-	}
 
 	if (iCounterespionageModifier > 0)
 	{
@@ -25330,29 +25302,6 @@ void CvPlayer::makeSpecialUnitValid(SpecialUnitTypes eSpecialUnit)
 	FAssertMsg(eSpecialUnit >= 0, "eSpecialUnit is expected to be non-negative (invalid Index)");
 	FAssertMsg(eSpecialUnit < GC.getNumSpecialUnitInfos(), "eSpecialUnit is expected to be within maximum bounds (invalid Index)");
 	m_pabSpecialUnitValid[eSpecialUnit] = true;
-}
-
-int CvPlayer::getSatelliteExtraCommerce(CommerceTypes eCommerce) const
-{
-	int iCommerce = 0;
-
-	if (eCommerce == COMMERCE_RESEARCH)
-	{
-		if (isHasBuildingEffect((BuildingTypes)BUILDING_HUBBLE_SPACE_TELESCOPE))
-		{
-			iCommerce += 3;
-		}
-	}
-
-	else if (eCommerce == COMMERCE_CULTURE)
-	{
-		if (GET_TEAM(getTeam()).getProjectCount(PROJECT_GOLDEN_RECORD) > 0)
-		{
-			iCommerce += 3;
-		}
-	}
-
-	return iCommerce;
 }
 
 int CvPlayer::getPotentialSpecialistCount(SpecialistTypes eSpecialist) const

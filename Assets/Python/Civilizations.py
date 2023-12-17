@@ -728,7 +728,6 @@ dTechPreferences = {
 		iEducation: 15,
 		iChemistry: 15,
 		iSociology: 15,
-		iFission: 12,
 	},
 	iEngland : {
 		iExploration: 40,
@@ -775,19 +774,11 @@ dTechPreferences = {
 		iRepresentation: 30,
 		iEconomics: 20,
 		iAssemblyLine: 20,
-		iFission: 12,
 	},
 	iArgentina : {
-		iRefrigeration: 30,
-		iTelevision: 20,
-		iElectricity: 20,
-		iPsychology: 20,
 	},
 	iBrazil : {
-		iRadio: 20,
-		iSynthetics: 20,
 		iElectricity: 20,
-		iEngine: 20,
 	},
 }
 
@@ -874,39 +865,27 @@ dBuildingPreferences = {
 		iCentralPark: 20,
 		iEllisIsland: 20,
 		iStatueOfLiberty: 30,
-		iHollywood: 30,
 		iPentagon: 30,
-		iEmpireStateBuilding: 30,
 		iBrooklynBridge: 30,
 		iGoldenGateBridge: 30,
-		iWorldTradeCenter: 30,
-		iHubbleSpaceTelescope: 20,
-		iNASA: 40,
-		iCrystalCathedral: 20,
 		iMenloPark: 20,
 		iBiltmoreEstate: 20,
-		iUnitedNations: 20,
-		iGraceland: 20,
+		iLeagueOfNations: 20,
 	},
 	iMexico : {
 		iGuadalupeBasilica: 40,
 		iChapultepecCastle: 40,
-		iLasLajasSanctuary: 20,
 	},
 	iArgentina : {
 		iGuadalupeBasilica: 30,
-		iLasLajasSanctuary: 30,
 	},
 	iColombia : {
-		iLasLajasSanctuary: 40,
 		iGuadalupeBasilica: 30,
 	},
 	iBrazil : {
 		iCristoRedentor: 30,
-		iItaipuDam: 30,
 	},
 	iCanada : {
 		iChateauFrontenac: 30,
-		iCNTower: 30,
 	}
 }

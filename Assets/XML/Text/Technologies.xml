@@ -155,6 +155,68 @@
 		<Italian>"When tillage begins, other arts follow. The farmers therefore are the founders of human civilization."[PARAGRAPH:2]- Daniel Webster, Remarks on Agriculture</Italian>
 		<Spanish>"When tillage begins, other arts follow. The farmers therefore are the founders of human civilization."[PARAGRAPH:2]- Daniel Webster, Remarks on Agriculture</Spanish>
 	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ARITHMETICS</Tag>
+		<English>Arithmetics</English>
+		<French>
+			<Text>Arithm&#233;tique</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Arithmetics</German>
+		<Italian>Arithmetics</Italian>
+		<Spanish>Arithmetics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ARITHMETICS_QUOTE</Tag>
+		<English>"All things are numbers."[PARAGRAPH:2]- Pythagoras</English>
+		<French>"Tout est nombre."[PARAGRAPH:2]- Pythagore</French>
+		<German>"All things are numbers."[PARAGRAPH:2]- Pythagoras</German>
+		<Italian>"All things are numbers."[PARAGRAPH:2]- Pythagoras</Italian>
+		<Spanish>"All things are numbers."[PARAGRAPH:2]- Pythagoras</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ARITHMETICS_PEDIA</Tag>
+		<English>Arithmetic is a branch of mathematics that consists of the study of numbers, especially the properties of the traditional operations between them - addition, subtraction, multiplication and division. Arithmetic is an elementary part of number theory, and number theory is considered to be one of the top-level divisions of modern mathematics, along with algebra, geometry, and analysis.[PARAGRAPH:2]The earliest written records indicate the Egyptians and Babylonians used all the elementary arithmetic operations as early as 2000 BC. The hieroglyphic system for Egyptian numerals, like the later Roman numerals, descended from tally marks used for counting. Early number systems that included positional notation were not decimal, including the sexagesimal (base 60) system for Babylonian numerals and the vigesimal (base 20) system that defined Maya numerals. Because of this place-value concept, the ability to reuse the same digits for different values contributed to simpler and more efficient methods of calculation.[PARAGRAPH:2]The continuous historical development of modern arithmetic starts with the Hellenistic civilization of ancient Greece, although it originated much later than the Babylonian and Egyptian examples. Prior to the works of Euclid around 300 BC, Greek studies in mathematics overlapped with philosophical and mystical beliefs. Greek numerals were used by Archimedes, Diophantus and others in a positional notation not very different from ours.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALLOYS</Tag>
+		<English>Alloys</English>
+		<French>
+			<Text>Alliages</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Alloys</German>
+		<Italian>Alloys</Italian>
+		<Spanish>Alloys</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALLOYS_QUOTE</Tag>
+		<English>"It is entirely seemly for a young man killed in battle to lie mangled by the bronze spear. In his death all things appear fair."[PARAGRAPH:2]- Homer, The Iliad</English>
+		<French>"&#192; un jeune guerrier, tu&#233; par Ar&#232;s, d&#233;chir&#233; par le bronze ac&#233;r&#233;, il convient sans r&#233;serve de rester &#233;tendu. Jusque dans la mort, tout en lui reste beau."[PARAGRAPH:2]- Hom&#232;re, l'Iliade</French>
+		<German>"So mancher J&#252;ngling f&#228;llt in der Schlacht, zermalmt von bronzenem Speer. Im Tode so scheint sein Schicksal vollbracht."[PARAGRAPH:2]- Homer</German>
+		<Italian>"Per un giovane &#232; decoroso morire in battaglia trafitto da una lancia di bronzo. Nella morte, tutte le cose sembrano giuste."[PARAGRAPH:2]- Omero</Italian>
+		<Spanish>"Yacer en el suelo, habiendo sido atravesado en la lid por el agudo bronce, es decoroso para un joven, y cuanto de &#233;l pueda verse todo es bello, a pesar de la muerte."[PARAGRAPH:2]- Homero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALLOYS_PEDIA</Tag>
+		<English>Evidence of the use of bronze, an alloy of copper and tin, dates back to Thailand in 4500 BC. Several hundred years later, bronze working was discovered in the Middle East. Artifacts from this period show that bronze was initially used for decorative purposes only. This is because tin was not readily available. It wasn't until approximately 2000 BC, when tin was regularly imported from neighboring regions, that bronze replaced copper in the construction of larger items. Bronze was harder and less brittle than copper, and it held a sharper edge. Tools, weapons, and armor made from bronze were also cheaper to produce and more durable. The period of time when bronze was the metal of choice for such items was known as the Bronze Age. The Bronze Age lasted until iron working became prevalent in approximately 1200 BC.</English>
+		<French>L'utilisation du bronze, un alliage de cuivre et d'&#233;tain, remonte au moins &#224; 4 500 av. J.-C., en Tha&#239;lande. Des si&#232;cles plus tard, le travail du bronze a &#233;t&#233; d&#233;couvert au Moyen-Orient. Les objets datant de cette p&#233;riode montrent que le bronze &#233;tait uniquement utilis&#233; &#224; l'origine dans un but d&#233;coratif. Il rempla&#231;ait l'&#233;tain, plus difficile &#224; obtenir. Ce n'est que vers 2 000 av. J.-C., quand l'&#233;tain a &#233;t&#233; r&#233;guli&#232;rement import&#233; des r&#233;gions voisines, que le bronze a remplac&#233; le cuivre dans la fabrication d'objets de plus grande taille. Le bronze &#233;tait plus solide et moins cassant que le cuivre et permettait de produire des lames plus tranchantes. Les outils, armes, et armures en bronze &#233;taient aussi moins chers &#224; produire et plus r&#233;sistants. La p&#233;riode au cours de laquelle le bronze a &#233;t&#233; le m&#233;tal privil&#233;gi&#233; pour ce genre d'objets est connue sous le nom de l'&#194;ge de Bronze, p&#233;riode qui a perdur&#233; jusqu'au d&#233;veloppement du travail de fer, vers 1200 av. J.-C.</French>
+		<German>Es wird vermutet, dass Bronze, eine Legierung aus Kupfer und Zinn, bereits im Jahre 4500 vor Christus in Thailand verwendet wurde. Mehrere Jahrhunderte sp&#228;ter wurde die Bronzeverarbeitung im Nahen Osten entdeckt. Kunstwerke dieser Periode zeigen, dass Bronze anfangs nur zu Dekorationszwecken genutzt wurde, weil Zinn schwer zu beschaffen war. Erst um etwa 2000 vor Christus wurde Zinn regelm&#228;&#223;ig von den benachbarten L&#228;ndern importiert. In der Folgezeit wurde das bis dahin verwendete Kupfer bei der Herstellung gr&#246;&#223;erer Objekte durch Bronze ersetzt, die h&#228;rter und weniger spr&#246;de war als Kupfer, so dass sich damit sch&#228;rfere Kanten formen lie&#223;en - dar&#252;ber hinaus waren Werkzeuge, Waffen und R&#252;stungen aus Bronze auch preiswerter und langlebiger. Die Zeit, in der Bronze das bevorzugte Metall f&#252;r die Fertigung dieser Ger&#228;te war, ist als Bronzezeitalter bekannt. Diese Periode dauerte bis etwa 1200 vor Christus, als das noch hochwertigere Eisen verf&#252;gbar wurde.</German>
+		<Italian>Le prime testimonianze sull'uso del bronzo, una lega di rame e stagno, risalgono alla Thailandia del 4500 a. C. Diversi secoli pi&#249; tardi, la lavorazione del bronzo venne scoperta nel Medio Oriente. Gli oggetti risalenti a questo periodo dimostrano che il bronzo veniva inizialmente utilizzato solo a scopo decorativo, questo perch&#233; lo stagno non era facilmente reperibile. Bisogner&#224; aspettare pi&#249; o meno il 2000 a. C. perch&#233;, con l'importazione regolare di stagno dalle regioni confinanti, il bronzo sostituisca il rame nella fabbricazione di oggetti pi&#249; grandi, offrendo anche una maggior resistenza rispetto al rame e la possibilit&#224; di produrre punte pi&#249; acuminate. Strumenti, armi e armature di bronzo erano anche meno costosi da realizzare e pi&#249; duraturi. Il periodo di tempo in cui si preferiva il bronzo per tali prodotti &#232; noto come l'Et&#224; del Bronzo, che dur&#242; fino al 1200 a. C. circa, quando fu soppiantato dalla lavorazione del ferro.</Italian>
+		<Spanish>Las primeras evidencias del uso del bronce, una aleaci&#243;n de cobre y esta&#241;o, se remontan al a&#241;o 4500 a. C. en Tailandia. Varios siglos despu&#233;s, se descubri&#243; la forja del bronce en Oriente Medio. Los artefactos de este periodo demuestran que inicialmente el bronce solo se usaba con fines decorativos, debido a que el esta&#241;o escaseaba. No fue hasta aproximadamente el a&#241;o 2000 a. C., con la importaci&#243;n regular de esta&#241;o de regiones vecinas, que el bronce sustituy&#243; al cobre en la fabricaci&#243;n de objetos grandes. El bronce era m&#225;s duro y menos quebradizo que el cobre, y se pod&#237;a afilar mejor. Las armas y armaduras hechas de bronce tambi&#233;n eran m&#225;s baratas de producir, y m&#225;s resistentes. El periodo que hizo del bronce el metal preferido para dichos objetos se conoce como Edad del Bronce, y dur&#243; hasta el triunfo de la forja del hierro, en torno al 1200 a. C.</Spanish>
+	</TEXT>
 
 
 
@@ -321,6 +383,37 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_NAVIGATION_PEDIA</Tag>
 		<English>In the early days of seafaring, sailors operated solely through a process known as "piloting", in which the position and course of the ship was determined by referring to geographical landmarks. The need to stay in view of the shore severely limited the extent of sea voyages. Through experience, sailors learned to apply the science of astronomy to their profession, noting the positions and movement of particular stars. They realized that even when the shore was out of sight, they could steer by certain reliable stars. This crude, yet practical application of astronomy allowed the adventurous to sail into the unknown with a reasonable chance of finding their way. As a result, ship building technology quickly improved, producing larger, more stable ships designed for longer voyages.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NOBILITY</Tag>
+		<English>Nobility</English>
+		<French>
+			<Text>Noblesse</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Nobility</German>
+		<Italian>Nobility</Italian>
+		<Spanish>Nobility</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NOBILITY_QUOTE</Tag>
+		<English>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</English>
+		<French>"L'absurdit&#233; est le privil&#232;ge de l'aristocratie. Les soucis de la vie sont pour les gens ordinaires."[PARAGRAPH:2]- George Jean Nathan</French>
+		<German>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</German>
+		<Italian>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</Italian>
+		<Spanish>"Nonsense is the privilege of the aristocracy. The worries of the world are for the common people."[PARAGRAPH:2]- George Jean Nathan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NOBILITY_PEDIA</Tag>
+		<English>Nobility can refer to "the nobility," a class of aristocrats who inherit the right to dominate society at large. Or it can refer to the ideals of "noble" behavior, as favored by this class.[PARAGRAPH:2]Aristocratic elites have been with human civilization for millenia. Any person with enough resources, political influence, or military power would have a great advantage in controlling others, and could use that control to further preserve their power. Naturally, anyone blessed by such a fortunate combination of power and wealth would want to pass it on to their children, so legal systems emerged to make sure that the titles and positions of nobility would be inherited safely.[PARAGRAPH:2]The most common employment for aristocrats in history has been warfare. The nobility can be sure of getting plenty of food and good living conditions, so that their children grow up big and strong. They can afford expensive, carefully crafted weapons like suits of armor, high-quality bows, and fine warhorses. And their political power meant they could easily recruit fighting men from among the people they controlled, making sure they'd have trustworthy retainers to watch their back and handle the supplies while the nobles themselves went off to fight.[PARAGRAPH:2]The ideal of military courage and self-discipline therefore plays a great role in the idea of "nobility." A nobleman is normally expected to be brave in battle, to be prepared to fight either to defend his own interests or the interests of his ruler, and to act in the ways that his society expects of warriors.[PARAGRAPH:2]Noblewomen generally were not expected to fight; for females nobility had relatively fewer attractions, except of course for the freedom it granted from drudge labor like grinding grain or tending crops.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -621,6 +714,38 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CEMENT</Tag>
+		<English>Cement</English>
+		<French>
+			<Text>Ciment</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Cement</German>
+		<Italian>Cement</Italian>
+		<Spanish>Cement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CEMENT_QUOTE</Tag>
+		<English>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</English>
+		<French>"L'homme qui b&#226;tit son propre pi&#233;destal ferait bien de choisir un ciment fort."[PARAGRAPH:2] - Anna Quindlen</French>
+		<German>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</German>
+		<Italian>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</Italian>
+		<Spanish>"A man who builds his own pedestal had better use strong cement."[PARAGRAPH:2] - Anna Quindlen</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CEMENT_PEDIA</Tag>
+		<English>A cement is a binder, a substance used in construction that sets, hardens and adheres to other materials, binding them together. Cement is seldom used solely, but is used to bind sand and gravel (aggregate) together. Cement is used with fine aggregate to produce mortar for masonry, or with sand and gravel aggregates to produce concrete.[PARAGRAPH:2]Lime was used on Crete and by the ancient Greeks. It is uncertain where it was first discovered that a combination of hydrated non-hydraulic lime and a pozzolan produces a hydraulic mixture, but concrete made from such mixtures was used by the Ancient Macedonians and three centuries later on a large scale by Roman engineers.[PARAGRAPH:2]In the absence of pozzolanic ash, the Romans used powdered brick or pottery as a substitute and they may have used crushed tiles for this purpose before discovering natural sources near Rome. The huge dome of the Pantheon in Rome and the massive Baths of Caracalla are examples of ancient structures made from these concretes, many of which are still standing. The vast system of Roman aqueducts also made extensive use of hydraulic cement.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
 
 
 	<TEXT>
@@ -779,6 +904,33 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_CODICES</Tag>
+		<English>Codices</English>
+		<French>Codices</French>
+		<German>Codices</German>
+		<Italian>Codices</Italian>
+		<Spanish>Codices</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CODICES_QUOTE</Tag>
+		<English>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</English>
+		<French>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</French>
+		<German>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</German>
+		<Italian>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</Italian>
+		<Spanish>"Codices, like ancient whispers on pages of bark and parchment, cradle the visions of civilizations, revealing not just history but the sacred dance of ink and insight that connects humanity with the mysteries of time."[PARAGRAPH:2]-ChatGPT</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CODICES_PEDIA</Tag>
+		<English>In the rich tapestry of Pre-Columbian America, codices served as intricate vessels of knowledge, capturing the essence of civilizations through the delicate strokes of indigenous scribes. These illustrated manuscripts were not mere records; they were portals to the cosmologies, histories, and sacred traditions of diverse cultures across the continent.[PARAGRAPH:2]In Mesoamerica, the Maya civilization crafted codices that unfolded the mysteries of their intricate calendrical systems, hieroglyphic writing, and astronomical knowledge. These beautifully illustrated manuscripts, often made of bark paper, encapsulated the intellectual achievements of the Maya, offering insights into their understanding of the cosmos and their complex society. The Aztecs, dwelling in the heart of the Valley of Mexico, also created codices to record their history and traditions. The Codex Mendoza, for example, provides a visual narrative of Aztec life, encompassing tributes, conquests, and social organization. Through vibrant pictorial representations, these codices became a means of transmitting cultural knowledge across generations.[PARAGRAPH:2]Further south, the Mixtec and Zapotec cultures of Oaxaca left behind illuminated codices that depicted genealogies, rituals, and historical events. These intricate manuscripts, blending images and glyphs, became enduring expressions of identity and heritage. In the Andean region, the Inca civilization, although primarily reliant on the quipu (a system of knotted strings) for record-keeping, is believed to have used some form of illustrated manuscripts. Unfortunately, the majority of Inca codices were destroyed during the Spanish conquest, leaving gaps in our understanding of their written traditions.[PARAGRAPH:2]These codices, ranging from the intricate paintings of the Mixtecs to the mathematical precision of Maya glyphs, constituted a diverse library of indigenous knowledge. They were not only repositories of practical information but sacred texts, conveying the spiritual essence of these cultures. The history of codices in Pre-Columbian America whispers through the ages, inviting contemporary minds to unravel the wisdom inscribed on pages crafted from nature's own parchment.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_COLONIZATION</Tag>
 		<English>Colonization</English>
 		<French>Colonization</French>
@@ -913,6 +1065,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_COMPANIES_PEDIA</Tag>
 		<English>A company is a legal entity made up of an association of people, be they natural, legal, or a mixture of both, for carrying on a commercial or industrial enterprise. Company members share a common purpose and unite in order to focus their various talents and organize their collectively available skills or resources to achieve specific, declared goals.[PARAGRAPH:2]The Middles Ages saw continuous advances in financial tools, first in China, but later also in the Middle East and Europe. This enabled more successful organised cooperation between people, even over large geographic distances.[PARAGRAPH:2]Companies were often established to engage in trading ventures or for similar business purposes, especially to facilitate long distance trade. A similar development took place in military organisation: private military companies were established who offered their services to various powers in small and large conflicts. The most prominent examples include Swiss mercenaries and Italian condottieri.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMPANION_PLANTING</Tag>
+		<English>Companion Planting</English>
+		<French>Companion Planting</French>
+		<German>Companion Planting</German>
+		<Italian>Companion Planting</Italian>
+		<Spanish>Companion Planting</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMPANION_PLANTING_QUOTE</Tag>
+		<English>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</English>
+		<French>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</French>
+		<German>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</German>
+		<Italian>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</Italian>
+		<Spanish>"Companion planting is nature's symphony in the garden, where each plant lends its unique melody, creating a harmonious composition that transcends the individual notes of cultivation."[PARAGRAPH:2]-ChatGPT</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMPANION_PLANTING_PEDIA</Tag>
+		<English>In the intricate tapestry of Pre-Columbian America, the history of companion planting unveils a story of agricultural ingenuity woven by indigenous peoples across diverse landscapes. In the absence of modern technology, these ancient cultivators practiced a harmonious dance with the earth, recognizing the interdependencies that could be cultivated between different plant species.[PARAGRAPH:2]In the heartland of Mesoamerica, the Three Sisters planting method showcased a remarkable synergy. Corn, beans, and squash were interplanted, each providing unique benefits to the others. Corn served as a natural trellis for beans to climb, while beans enriched the soil with nitrogen. Squash, with its broad leaves, shaded the soil, reducing weed growth. This trinity formed a sustainable, mutually supportive agricultural system. On the arid plateaus of the American Southwest, the ancient Puebloans embraced companion planting techniques suited to their challenging environment. Corn, beans, and squash, known as the "Four Sisters" when sunflowers were included, created a resilient and interdependent ecosystem that maximized resource efficiency and enhanced agricultural productivity.[PARAGRAPH:2]In the expansive plains of the Midwest, Native American tribes practiced companion planting by integrating diverse crops. Sunflowers, for example, were strategically planted alongside corn and beans, providing support for climbing beans and attracting pollinators to enhance overall crop yield. On the fertile coastal plains of the Southeast, indigenous communities engaged in companion planting by cultivating the "Three Sisters" alongside other complementary crops like sunflowers and tobacco. These practices not only sustained their communities but also nurtured a deep understanding of the interconnectedness of plant life.[PARAGRAPH:2]Companion planting in Pre-Columbian America reflects a profound wisdom-a realization that plant communities, like human communities, thrive through cooperation and symbiosis. These ancient horticulturists, without the aid of modern science, observed, adapted, and cultivated harmonious relationships in their agricultural practices, leaving an enduring legacy in the annals of sustainable farming.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1126,6 +1305,64 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_DIPLOMACY_PEDIA</Tag>
 		<English>Diplomacy in the New World was complex and varied, as the indigenous peoples of the Americas had their own rich traditions of diplomacy and negotiation that differed greatly from European approaches. In the early years of contact, Europeans struggled to understand and navigate the intricacies of indigenous diplomacy, often interpreting it through the lens of their own cultural norms. One of the earliest examples of indigenous diplomacy occurred in the early 16th century, when the Aztecs in central Mexico welcomed Spanish conquistador Hernán Cortés as a potential ally against their enemies. The Aztecs offered gifts and performed elaborate ceremonies to welcome Cortés, but he ultimately betrayed their trust and conquered their empire.[PARAGRAPH:2]In the northeastern region of North America, Native American diplomacy often revolved around forming alliances between neighboring tribes in order to strengthen their position against common enemies. The Iroquois Confederacy, for example, was a powerful alliance of six Native American tribes that formed in the 16th century to defend their territories against European encroachment and to conduct diplomacy with European powers. European colonizers in North America also employed diplomacy in their relations with Native American tribes. In some cases, treaties were negotiated between European colonial powers and Native American leaders in order to establish borders and trade relations. However, these treaties were often disregarded or broken by the colonizers, leading to conflict and displacement of indigenous peoples from their lands. Overall, diplomacy in the New World was a complex and evolving process that involved negotiation, alliance-building, and power dynamics between different groups with vastly different cultural and historical backgrounds.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIVINATION</Tag>
+		<English>Divination</English>
+		<French>
+			<Text>Divination</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Divination</German>
+		<Italian>Divination</Italian>
+		<Spanish>Divination</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIVINATION_QUOTE</Tag>
+		<English>"Our remedies oft in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</English>
+		<French>"Souvent, nous avons en nous les rem&#232;des que nous attendons du ciel."[PARAGRAPH:2]- William Shakespeare, Tout est bien qui finit bien</French>
+		<German>"Our remedies of in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</German>
+		<Italian>"Our remedies of in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</Italian>
+		<Spanish>"Our remedies of in ourselves do lie, which we ascribe to heaven: the fated sky."[PARAGRAPH:2]- William Shakespeare, All's Well That Ends Well</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIVINATION_PEDIA</Tag>
+		<English>People of the ancient world were fascinated and awed by the forces of nature surrounding them. Earthquakes, storms and other phenomena were generally regarded as signs from heaven. Individuals and groups arose to formulate explanations for these events, and pass the knowledge along to the tribe. The priests and priestesses of mysticism, often called oracles, claimed union with the divine through meditation and trance-like contemplation.[PARAGRAPH:2]Oracles across the world developed complex rites and rituals to appease and interact with gods and spirits. One of the most common forms of supernatural power invoked was divination - the ability to foretell the future using signs and portents such as dreams, the motions of the stars, the guts of sacrificial animals, the fracture lines in a tortoise's shell, visions experienced while under the influence of various drugs, and so on. Divination served the common human need to obtain information about the unknown future.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EARTHWORKS</Tag>
+		<English>Earthworks</English>
+		<French>Earthworks</French>
+		<German>Earthworks</German>
+		<Italian>Earthworks</Italian>
+		<Spanish>Earthworks</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EARTHWORKS_QUOTE</Tag>
+		<English>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</English>
+		<French>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</French>
+		<German>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</German>
+		<Italian>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</Italian>
+		<Spanish>"Earthworks stand as silent storytellers, their ancient mounds and sculpted landscapes echoing the aspirations and spiritual essence of civilizations etched into the very soil they shaped."[PARAGRAPH:2]-ChatGPT</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EARTHWORKS_PEDIA</Tag>
+		<English>In the expansive canvas of Pre-Columbian America, earthworks emerged as profound expressions of human ingenuity, shaping the landscapes in ways both practical and symbolic. Across diverse regions, indigenous peoples sculpted the earth to create mounds, embankments, and effigies that transcended mere functionality.[PARAGRAPH:2]In the heartland of ancient North America, the Mississippian cultures etched their presence upon the earth with monumental mounds. Rising from the fertile floodplains, these earthen structures served multifaceted roles-ceremonial platforms, burial sites, and communal centers. Mound-building was a collective endeavor, a testament to the cohesion of societies that wove spiritual beliefs into the very fabric of the land. On the undulating plains of the Midwest, effigy mounds rose like sacred creatures, embodying the spiritual connections of the indigenous people with the animal kingdom. These sculpted forms, often shaped in the likeness of animals or birds, echoed a reverence for nature, a profound acknowledgment of the intertwined destinies of humans and the creatures that roamed the expansive grasslands.[PARAGRAPH:2]In the earthen tapestry of the Ohio River Valley, geometric earthworks unfolded as expressions of mathematical precision and cosmological significance. Circles, octagons, and squares adorned the landscape, aligning with celestial events and suggesting a sophisticated understanding of the cosmos. The earth became a canvas for mapping not just the physical, but the metaphysical. Far to the south, the ancient city of Teotihuacan in Mesoamerica bore witness to the creation of monumental pyramids and intricate urban planning. The elevated platforms and grand structures spoke of a complex society where earthly and divine power converged. The earth was not just a foundation but a canvas for the aspirations of a civilization reaching for the heavens.[PARAGRAPH:2]In the vast deserts of the American Southwest, ancestral Puebloan peoples carved cliff dwellings and constructed intricate stone structures. The earth became both canvas and shelter, a medium for survival and spiritual expression in an arid landscape. Across this diverse tapestry, the history of earthworks in Pre-Columbian America tells a story of civilizations molding the land not just for practical purposes but as a profound act of cultural expression. The earth bore witness to the ambitions, beliefs, and interconnectedness of indigenous peoples, shaping the contours of history with the hands that shaped the soil.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1347,6 +1584,33 @@
 	</TEXT>
 
 
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EMPIRE</Tag>
+		<English>Empire</English>
+		<French>Empire</French>
+		<German>Empire</German>
+		<Italian>Empire</Italian>
+		<Spanish>Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EMPIRE_QUOTE</Tag>
+		<English>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</English>
+		<French>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</French>
+		<German>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</German>
+		<Italian>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</Italian>
+		<Spanish>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_EMPIRE_PEDIA</Tag>
+		<English>In the pre-Columbian Americas, the concept of empires manifested in complex and sophisticated societies that wielded considerable influence over vast territories. One prominent example is the Aztec Empire in Mesoamerica, characterized by its monumental capital city, Tenochtitlan, situated in the heart of present-day Mexico. The Aztecs forged a powerful state through military conquest, tribute collection, and strategic alliances. Their society was organized hierarchically, with an emperor at the pinnacle, overseeing a complex administrative structure.[PARAGRAPH:2]In the Andean region of South America, the Inca Empire emerged as a formidable political entity. Centered in Cusco (modern-day Peru), the Incas expanded their dominion through military conquest and strategic statecraft. Their highly centralized government, led by the Sapa Inca, controlled a vast and diverse territory, managing it through a sophisticated system of roads, agricultural terraces, and administrative centers. The Mississippian culture in North America, particularly Cahokia in present-day Illinois, represented another manifestation of pre-Columbian imperial complexity. Cahokia served as a cultural, religious, and economic center, overseeing a regional network of trade and influence.[PARAGRAPH:2]These pre-Columbian empires were not only defined by their territorial expanse but also by their cultural achievements, architectural marvels, and intricate social structures. They reflect the ability of indigenous peoples to organize and govern complex societies long before the arrival of Europeans. The history of empires in pre-Columbian America speaks to the diverse and sophisticated civilizations that flourished across the continent, each leaving a unique imprint on the historical narrative.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
 
 	<TEXT>
 		<Tag>TXT_KEY_TECH_ENGINE</Tag>
@@ -1410,6 +1674,37 @@
 		<German>"Perfektion ist nicht dann erreicht, wenn es nichts mehr hinzuzuf&#252;gen gibt, sondern wenn man nichts mehr weglassen kann."[PARAGRAPH:2]- Antoine de Saint-Exup&#233;ry</German>
 		<Italian>"Un progettista sa di aver raggiunto la perfezione non quando non c'&#232; pi&#249; niente da aggiungere, ma quando non c'&#232; pi&#249; nulla da eliminare."[PARAGRAPH:2]- Antoine de Saint-Exupry</Italian>
 		<Spanish>"Un dise&#241;ador sabe que ha alcanzado la perfecci&#243;n no cuando ya no tiene nada m&#225;s que a&#241;adir, sino cuando no le queda nada m&#225;s que quitar."[PARAGRAPH:2]- Antoine de Saint-Exup&#233;ry</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ETHICS</Tag>
+		<English>Ethics</English>
+		<French>
+			<Text>&#201;thique</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Ethics</German>
+		<Italian>Ethics</Italian>
+		<Spanish>Ethics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ETHICS_QUOTE</Tag>
+		<English>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</English>
+		<French>"Agis uniquement d'apr&#232;s la maxime qui fait que tu peux vouloir en m&#234;me temps qu'elle devienne une loi universelle."[PARAGRAPH:2]- Emmanuel Kant, Fondements de la m&#233;taphysique des m&#339;urs</French>
+		<German>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</German>
+		<Italian>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</Italian>
+		<Spanish>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ETHICS_PEDIA</Tag>
+		<English>Ethics is the philosophical study which addresses moral questions - matters of right and wrong, virtue and vice, justice and injustice. This has preoccupied thinkers since ancient times, but formal discussion and contemplation of ethics as a logic-based endeavour, as distinct from traditions of religious or secular law, are mostly a product of the classical and medieval periods.[PARAGRAPH:2]Different cultures produce widely divergent schools of ethics, ranging from the law-oriented systems common in China to the relatively individualist virtue-ethical schools of the ancient Greeks. Ethics may be highly abstract or applied as a practical matter to questions of professional conduct and personal behavior. They may emphasize the intent of the moral actor, the fulfillment of certain laws and precepts, the consequences of the action itself, or any combination of the above.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -1778,6 +2073,37 @@
 		<German>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</German>
 		<Italian>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</Italian>
 		<Spanish>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GENERALSHIP</Tag>
+		<English>Generalship</English>
+		<French>
+			<Text>G&#233;n&#233;ralat</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Generalship</German>
+		<Italian>Generalship</Italian>
+		<Spanish>Generalship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GENERALSHIP_QUOTE</Tag>
+		<English>"Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win."[PARAGRAPH:2]- Sun Tzu, The Art of War</English>
+		<French>"Le vainqueur triomphe avant m&#234;me de partir &#224; la guerre, le vaincu part &#224; la guerre puis r&#234;ve de triomphe."[PARAGRAPH:2]- Sun Tzu, L'Art de la guerre</French>
+		<German>"Der General, der eine Schlacht gewinnt, stellt vor dem Kampf viele Berechnungen an. Der General, der verliert, stellt vorher kaum Berechnungen an."[PARAGRAPH:2]- Sun-Tzu</German>
+		<Italian>"I guerrieri vittoriosi prima vincono e poi vanno in guerra; quelli sconfitti, prima vanno in guerra e poi cercano di vincere."[PARAGRAPH:2]- Sun-Tzu</Italian>
+		<Spanish>"Los guerreros vencedores ganan primero y luego van a la guerra, mientras que los perdedores van a la guerra primero y luego pretenden ganar."[PARAGRAPH:2]- Sun Tzu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GENERALSHIP_PEDIA</Tag>
+		<English>In the early ancient world, armies mostly consisted of militia and levies that were only raised in the event of war. These armies were usually small enough and the ensuing warfare limited enough to be directly commanded by their political leaders.[PARAGRAPH:2]During the Roman Republic and later Empire, armies became increasingly professionalised, especially after the Marian reforms. The large extent of the Roman Empire also made it impractical for their leadership to exercise direct control over the military. Similar developments also took place in the Chinese Han dynasty.[PARAGRAPH:2]This development conferred more military and political power to the generals entrusted with military command. While this made armies more professional and successful, it also led to a different distribution of power. In the Roman Empire, generals were often the decisive factor in choosing the next emperor or disposing of an unsuccessful sitting emperor, contributing to the empires instability. In China, competing military warlords ultimately caused the collapse of the Han dynasty.[PARAGRAPH:2]This sort of political power based on military authority paved the way for the idea of nobility in the feudal sense and the system of feudalism in the Middle Ages.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -2261,6 +2587,32 @@
 	</TEXT>
 
 
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IRRIGATION</Tag>
+		<English>Irrigation</English>
+		<French>Irrigation</French>
+		<German>Irrigation</German>
+		<Italian>Irrigation</Italian>
+		<Spanish>Irrigation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IRRIGATION_QUOTE</Tag>
+		<English>"Irrigation of the soul is a necessity for growth. Like a well-tended garden, it flourishes when nurtured with the waters of wisdom and compassion."[PARAGRAPH:2]-Wilferd Peterson</English>
+		<French>"Irrigation of the soul is a necessity for growth. Like a well-tended garden, it flourishes when nurtured with the waters of wisdom and compassion."[PARAGRAPH:2]-Wilferd Peterson</French>
+		<German>"Irrigation of the soul is a necessity for growth. Like a well-tended garden, it flourishes when nurtured with the waters of wisdom and compassion."[PARAGRAPH:2]-Wilferd Peterson</German>
+		<Italian>"Irrigation of the soul is a necessity for growth. Like a well-tended garden, it flourishes when nurtured with the waters of wisdom and compassion."[PARAGRAPH:2]-Wilferd Peterson</Italian>
+		<Spanish>"Irrigation of the soul is a necessity for growth. Like a well-tended garden, it flourishes when nurtured with the waters of wisdom and compassion."[PARAGRAPH:2]-Wilferd Peterson</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_IRRIGATION_PEDIA</Tag>
+		<English>In Pre-Columbian America, diverse indigenous civilizations showcased remarkable ingenuity in developing sophisticated irrigation systems to support their agricultural practices. These advanced techniques emerged in various regions, contributing to the success and sustainability of indigenous societies long before the arrival of Europeans.[PARAGRAPH:2]The ancient Maya, situated in present-day Mexico, Guatemala, Belize, Honduras, and El Salvador, crafted intricate irrigation systems. They ingeniously constructed canals and raised fields known as chinampas in swampy areas, significantly enhancing agricultural productivity. Similarly, the Aztecs, centered in the Valley of Mexico, utilized artificial islands called chinampas in Lake Texcoco. These islands were surrounded by canals, forming an advanced irrigation system that facilitated efficient cultivation. In the arid regions of present-day Arizona, the Hohokam people implemented an extensive network of canals to channel water from rivers to their fields. This innovative approach enabled agriculture to thrive in a challenging environment.[PARAGRAPH:2]The Nazca culture, known for the famous Nazca Lines in Peru, designed underground aqueducts and surface canals to transport water for irrigation in the arid Nazca Desert. These systems allowed them to harness water from the Andes Mountains for agricultural purposes. The Ancestral Puebloans in the southwestern United States employed diverse irrigation techniques, including check dams, terraces, and canals. These methods facilitated the capture and distribution of water across their fields, particularly in the Four Corners area. In the Andean region of South America, the Inca civilization implemented extensive agricultural terracing and irrigation systems. Through the use of terraced fields and canals, the Inca maximized the utilization of mountain water for agriculture. In Eastern North America, various indigenous groups, collectively known as the Mound Builders, established complex societies with large earthen mounds. Some of these groups, like the Mississippian culture, incorporated irrigation systems to support their agricultural endeavors.[PARAGRAPH:2]Collectively, these diverse Pre-Columbian irrigation systems underscore the resourcefulness and adaptability of indigenous peoples. Their ability to manipulate water resources for agriculture played a pivotal role in the development of advanced and sustainable civilizations across the Americas.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
 
 	<TEXT>
 		<Tag>TXT_KEY_TECH_JOURNALISM</Tag>
@@ -2457,11 +2809,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_LINGUISTICS_HELP</Tag>
-		<English>[ICON_BULLET]Tribes give you gifts when you are the first to contact them</English>
-		<French>[ICON_BULLET]Tribes give you gifts when you are the first to contact them</French>
-		<German>[ICON_BULLET]Tribes give you gifts when you are the first to contact them</German>
-		<Italian>[ICON_BULLET]Tribes give you gifts when you are the first to contact them</Italian>
-		<Spanish>[ICON_BULLET]Tribes give you gifts when you are the first to contact them</Spanish>
+		<English>[ICON_BULLET]Contacting Tribes costs 25% less</English>
+		<French>[ICON_BULLET]Contacting Tribes costs 25% less</French>
+		<German>[ICON_BULLET]Contacting Tribes costs 25% less</German>
+		<Italian>[ICON_BULLET]Contacting Tribes costs 25% less</Italian>
+		<Spanish>[ICON_BULLET]Contacting Tribes costs 25% less</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_LINGUISTICS_QUOTE</Tag>
@@ -2478,6 +2830,41 @@
 		<German>The history of Native American languages is a complex and varied one, shaped by the diverse cultures and geographic regions of the many tribes and nations that have inhabited the Americas for thousands of years. Linguistic research suggests that Native American languages are unrelated to each other and to other languages of the world. Before the arrival of Europeans in the 15th century, there were an estimated 300 to 600 different Native American languages spoken across North and South America. These languages were often spoken within small tribes or bands, and many were in danger of extinction due to the pressures of colonialism and cultural assimilation.[PARAGRAPH:2]During the 19th and early 20th centuries, efforts were made to preserve Native American languages and culture through ethnographic research, the establishment of Indian schools, and the creation of language revitalization programs. Many Native American communities have worked to revive their languages in recent decades, recognizing their importance as a link to their cultural heritage and identity. Today, there are an estimated 150 to 175 indigenous languages still spoken in the Americas, but many are endangered and face the threat of extinction. Efforts to document and preserve these languages continue, as they are an important part of the cultural heritage of the Americas and the world.</German>
 		<Italian>The history of Native American languages is a complex and varied one, shaped by the diverse cultures and geographic regions of the many tribes and nations that have inhabited the Americas for thousands of years. Linguistic research suggests that Native American languages are unrelated to each other and to other languages of the world. Before the arrival of Europeans in the 15th century, there were an estimated 300 to 600 different Native American languages spoken across North and South America. These languages were often spoken within small tribes or bands, and many were in danger of extinction due to the pressures of colonialism and cultural assimilation.[PARAGRAPH:2]During the 19th and early 20th centuries, efforts were made to preserve Native American languages and culture through ethnographic research, the establishment of Indian schools, and the creation of language revitalization programs. Many Native American communities have worked to revive their languages in recent decades, recognizing their importance as a link to their cultural heritage and identity. Today, there are an estimated 150 to 175 indigenous languages still spoken in the Americas, but many are endangered and face the threat of extinction. Efforts to document and preserve these languages continue, as they are an important part of the cultural heritage of the Americas and the world.</Italian>
 		<Spanish>The history of Native American languages is a complex and varied one, shaped by the diverse cultures and geographic regions of the many tribes and nations that have inhabited the Americas for thousands of years. Linguistic research suggests that Native American languages are unrelated to each other and to other languages of the world. Before the arrival of Europeans in the 15th century, there were an estimated 300 to 600 different Native American languages spoken across North and South America. These languages were often spoken within small tribes or bands, and many were in danger of extinction due to the pressures of colonialism and cultural assimilation.[PARAGRAPH:2]During the 19th and early 20th centuries, efforts were made to preserve Native American languages and culture through ethnographic research, the establishment of Indian schools, and the creation of language revitalization programs. Many Native American communities have worked to revive their languages in recent decades, recognizing their importance as a link to their cultural heritage and identity. Today, there are an estimated 150 to 175 indigenous languages still spoken in the Americas, but many are endangered and face the threat of extinction. Efforts to document and preserve these languages continue, as they are an important part of the cultural heritage of the Americas and the world.</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_LOCALIZATION</Tag>
+		<English>Localization</English>
+		<French>Localization</French>
+		<German>Localization</German>
+		<Italian>Localization</Italian>
+		<Spanish>Localization</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_LOCALIZATION_HELP</Tag>
+		<English>[ICON_BULLET]Contacting Tribes costs 25% less</English>
+		<French>[ICON_BULLET]Contacting Tribes costs 25% less</French>
+		<German>[ICON_BULLET]Contacting Tribes costs 25% less</German>
+		<Italian>[ICON_BULLET]Contacting Tribes costs 25% less</Italian>
+		<Spanish>[ICON_BULLET]Contacting Tribes costs 25% less</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_LOCALIZATION_QUOTE</Tag>
+		<English>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</English>
+		<French>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</French>
+		<German>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</German>
+		<Italian>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</Italian>
+		<Spanish>"Localization is the art of listening to the whispers of the land, understanding its unique dialect, and crafting sustainable narratives that harmonize with the wisdom written in the soils of our existence." [PARAGRAPH:2]-ChatGPT</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_LOCALIZATION_PEDIA</Tag>
+		<English>In the diverse landscapes of Pre-Columbian America, the concept of localization was inherent to the ways indigenous societies interacted with their environments. This historical perspective is not only a narrative of survival but a testament to the deep understanding and respect these cultures had for their surroundings.[PARAGRAPH:2]In the heart of Mesoamerica, ancient civilizations like the Aztecs and Maya epitomized localization in their agricultural practices. They implemented sophisticated techniques such as terracing, chinampas, and milpas, adapting their farming methods to the specific characteristics of the land. These localized approaches not only sustained their communities but also showcased a profound connection between people and place. The sprawling deserts of the American Southwest witnessed the intricate localization efforts of the Ancestral Puebloans. Through the construction of cliff dwellings, ingenious water management systems, and the strategic use of natural resources, these societies not only thrived in a challenging environment but also left enduring imprints on the landscape.[PARAGRAPH:2]In the Great Plains, where the buffalo roamed freely, Plains Indians showcased a mobile form of localization. They followed the seasonal movements of herds, setting up temporary dwellings and utilizing every part of the buffalo for sustenance and material needs. This nomadic lifestyle harmonized with the rhythms of the land. On the Pacific Northwest coast, indigenous peoples engaged in a rich tradition of localization, relying on the abundant marine resources available to them. The construction of intricate cedar plank houses, the development of specialized tools, and the creation of complex social structures reflected a deep understanding of and adaptation to the coastal environment.[PARAGRAPH:2]The history of localization in Pre-Columbian America unveils a narrative of diversity and adaptability. It is a story of communities that, through generations of observation and experimentation, became attuned to the nuances of their ecosystems. The land, in turn, bore witness to the unique expressions of cultures that thrived by embracing the wisdom of local adaptation.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -3906,6 +4293,37 @@
 		<Italian>"La Terra &#232; la culla della mente... ma non si pu&#242; vivere sempre in una culla..."[PARAGRAPH:2]- Konstantin Tsiolkovksy</Italian>
 		<Spanish>"La Tierra es la cuna de la Humanidad, pero no puedes vivir en una cuna eternamente."[PARAGRAPH:2]- Konstant&#237;n Tsiolkovksi</Spanish>
 	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SCHOLARSHIP</Tag>
+		<English>Scholarship</English>
+		<French>
+			<Text>Scolastique</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Scholarship</German>
+		<Italian>Scholarship</Italian>
+		<Spanish>Scholarship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SCHOLARSHIP_QUOTE</Tag>
+		<English>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</English>
+		<French>"Il n'y a pas de plus grande richesse que la science, pas de plus grande pauvret&#233; que l'ignorance."[PARAGRAPH:2]- Ali ibn Abi Talib</French>
+		<German>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</German>
+		<Italian>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</Italian>
+		<Spanish>"There is no wealth like knowledge, no poverty like ignorance."[PARAGRAPH:2]- Ali ibn Abi-Talib, Regarding Knowledge and Wisdom</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SCHOLARSHIP_PEDIA</Tag>
+		<English>The scholarly method or scholarship is the body of principles and practices used by scholars to make their claims about the world as valid and trustworthy as possible, and to make them known to the scholarly public. It is the methods that systemically advance the teaching, research, and practice of a given scholarly or academic field of study through rigorous inquiry. Scholarship is noted by its significance to its particular profession, and is creative, can be documented, can be replicated or elaborated, and can be and is peer-reviewed through various methods.[PARAGRAPH:2]Originally started to reconcile the philosophy of the ancient classical philosophers with medieval theology, scholasticism is not a philosophy or theology in itself but a tool and method for learning which places emphasis on dialectical reasoning. The primary purpose of scholasticism is to find the answer to a question or to resolve a contradiction. It was once well known for its application in medieval theology but was eventually applied to classical philosophy and many other fields of study.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 
 
 
@@ -3941,7 +4359,65 @@
 		<Italian>"Non sono obbligato a credere che lo stesso Dio che ci ha donato il senso, la ragione e l'intelligenza voleva che ne dimenticassimo l_uso."[PARAGRAPH:2]- Galileo Galilei</Italian>
 		<Spanish>"No me siento obligado a creer que el mismo Dios que nos ha dotado de sentido com&#250;n, raciocinio e intelecto tuviera como intenci&#243;n privarnos de su uso."[PARAGRAPH:2]- Galileo Galilei</Spanish>
 	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SEAFARING</Tag>
+		<English>Seafaring</English>
+		<French>
+			<Text>Marine</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Seafaring</German>
+		<Italian>Seafaring</Italian>
+		<Spanish>Seafaring</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SEAFARING_QUOTE</Tag>
+		<English>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</English>
+		<French>"Par temps de bourrasques, hisse tes voiles. Vents et mar&#233;es n'emp&#234;chent point le plaisir."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</French>
+		<German>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</German>
+		<Italian>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</Italian>
+		<Spanish>"Hoist up sail while the gale doth last. Tide and wind stay no man's pleasure."[PARAGRAPH:2]- Robert Southwell, Loss in Delay</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SEAFARING_PEDIA</Tag>
+		<English>Seafaring is the art of directing, maintaining, and preserving ships that travel across the ocean. The earliest human vessels such as rafts, small canoes, and reed boats would have been extremely unsafe on the open ocean. However, there is extensive evidence for the practice of seafaring stretching back to the Bronze Age, or the Neolithic in the case of Polynesian long-distance sailing canoes.[PARAGRAPH:2]In general, successful seafarers must make use of some source of power other than their own muscles (in the early days of navigation, a sail) to ensure they were not trapped by ocean currents. They must know how to construct reasonably sturdy craft that would resist ocean waves. They had to make use of a great knowledge of weather conditions to ensure the craft was not caught by a storm too powerful to be survived - which in premodern times weather could be predicted only by experience.[PARAGRAPH:2]All this represented a significant advance over the earliest Stone Age boats and their operations... and yet, all these things were necessary in order for coastal civilizations to make any serious use of maritime travel for trade or exploration.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
 
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SHALLOW_FISHING</Tag>
+		<English>Shallow Fishing</English>
+		<French>Shallow Fishing</French>
+		<German>Shallow Fishing</German>
+		<Italian>Shallow Fishing</Italian>
+		<Spanish>Shallow Fishing</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SHALLOW_FISHING_QUOTE</Tag>
+		<English>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</English>
+		<French>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</French>
+		<German>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</German>
+		<Italian>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</Italian>
+		<Spanish>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SHALLOW_FISHING_PEDIA</Tag>
+		<English>In the tapestry of Pre-Columbian America, the practice of shallow fishing wove a vital thread in the fabric of daily life. Indigenous communities across the continent engaged in the art of extracting sustenance from rivers, lakes, and coastal waters, employing methods that reflected a profound understanding of aquatic ecosystems.[PARAGRAPH:2]In the lush waterways of Mesoamerica, civilizations like the Maya demonstrated a nuanced approach to shallow fishing. Nets and weirs, crafted from local materials, became extensions of human ingenuity, seamlessly integrated into the ebb and flow of rivers and wetlands. These fishing techniques were not mere survival strategies but rather a harmonious dance with the aquatic realm, sustaining communities and fostering a deep respect for the interconnectedness of life.[PARAGRAPH:2]On the expansive coastal stretches of North America, indigenous peoples honed their skills in shallow fishing. From the Aleutian Islands to the Gulf of Mexico, communities devised traps, hooks, and spears tailored to the diverse marine life that graced their shores. These coastal societies navigated the delicate balance between human sustenance and ecological preservation, understanding that the bounty of the sea was a gift that required thoughtful stewardship.[PARAGRAPH:2]In the heartland of the continent, where rivers carved through the landscape, Native American cultures embraced shallow fishing as a seasonal rhythm. Techniques like dip netting and fish weirs, ingeniously positioned in river currents, allowed for efficient catches while demonstrating an intimate knowledge of fish behavior and migratory patterns. The rivers, teeming with life, became both a source of nourishment and a sacred conduit linking earthly existence with spiritual realms.[PARAGRAPH:2]The history of shallow fishing in Pre-Columbian America is a tale of resourcefulness and symbiosis. It narrates the stories of communities who, attuned to the rhythms of nature, cast their nets upon the waters with a profound understanding that sustenance was not extracted from the environment but coaxed from a relationship built on reciprocity. In these ancient practices, the echoes of a sustainable coexistence with the natural world resonate across the ages.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
 
 
 	<TEXT>
@@ -4122,6 +4598,32 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SPACEFLIGHT_PEDIA</Tag>
 		<English>Utilizing the now well-developed science of rocketry, the modern exploration of space began in October 1957 when the Soviet Union launched Sputnik 1. This tiny satellite orbited the earth for 57 days, providing information on radiation and other phenomena in the upper atmosphere. In less than a year, the United States had also launched a satellite, Explorer 1. This started the "space race", years of competition between the U.S. and the U.S.S.R. to achieve new frontiers in space exploration. Space flight advanced rapidly from the simple sub-orbital flights of the 1950s, to manned missions to Earth's moon in the late 1960s. The rapid growth of space technology led to many practical applications, such as weather and surveillance satellites, and vastly improved worldwide communications. Today, although hindered by severe government budget cuts, the exploration of space continues.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SPIRITUALISM</Tag>
+		<English>Spiritualism</English>
+		<French>Spiritualism</French>
+		<German>Spiritualism</German>
+		<Italian>Spiritualism</Italian>
+		<Spanish>Spiritualism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SPIRITUALISM_QUOTE</Tag>
+		<English>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</English>
+		<French>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</French>
+		<German>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</German>
+		<Italian>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</Italian>
+		<Spanish>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SPIRITUALISM_PEDIA</Tag>
+		<English>In the ancient civilizations of Pre-Columbian America, spirituality permeated every aspect of life. From the sophisticated rituals of the Maya to the complex pantheon of the Aztecs, and the reverence for nature among various Native American cultures, a profound connection to the spiritual realm shaped these societies.[PARAGRAPH:2]The Maya, dwelling in the dense jungles of Mesoamerica, conducted intricate ceremonies and rituals to honor a diverse array of deities. Their belief system incorporated ancestor veneration and a profound connection to the cosmos. Across the Valley of Mexico, the Aztecs engaged in elaborate religious practices, including human sacrifice, to appease their numerous gods. The cosmic order, intertwined with the calendar and celestial events, played a pivotal role in their spiritual beliefs. In the Andean region, the Inca civilization worshipped the sun god Inti. The Sapa Inca, their ruler, held a divine status as the son of Inti. Ancestor worship and mummification were integral aspects of Inca spirituality.[PARAGRAPH:2]Native American cultures, dispersed across the continent, shared a deep respect for nature and the spiritual significance of animals. Rituals, dances, and ceremonies were vital for maintaining harmony within the community and acknowledging spiritual forces. In the southeastern United States, the Mississippian culture constructed monumental earthen mounds for ceremonial purposes, underscoring the spiritual significance of the landscape. While the term "spiritualism" may not precisely capture the essence of these indigenous belief systems, the profound spiritual practices of Pre-Columbian America were interwoven into the fabric of daily life, influencing social structures, governance, and community cohesion.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4522,6 +5024,60 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_TRAPPING</Tag>
+		<English>Trapping</English>
+		<French>Trapping</French>
+		<German>Trapping</German>
+		<Italian>Trapping</Italian>
+		<Spanish>Trapping</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRAPPING_QUOTE</Tag>
+		<English>"You can only catch em once"[PARAGRAPH:2]-Anonymous</English>
+		<French>"You can only catch em once"[PARAGRAPH:2]-Anonymous</French>
+		<German>"You can only catch em once"[PARAGRAPH:2]-Anonymous</German>
+		<Italian>"You can only catch em once"[PARAGRAPH:2]-Anonymous</Italian>
+		<Spanish>"You can only catch em once"[PARAGRAPH:2]-Anonymous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRAPPING_PEDIA</Tag>
+		<English>In the rich tapestry of Pre-Columbian America, the history of trapping unfolds as a testament to the intimate relationship between indigenous peoples and their natural environments. Across diverse landscapes, from the dense Eastern Woodlands to the vast Great Plains and the challenging Arctic regions, Native American tribes crafted ingenious trapping methods deeply intertwined with their daily lives.[PARAGRAPH:2]In the Eastern Woodlands, amid the whispering leaves and rustling underbrush, tribes employed subtle yet effective trapping techniques. Snares delicately fashioned from natural materials captured small game, providing sustenance and furs for clothing. Each trap reflected an intimate knowledge of the habits and habitats of the creatures that shared their wooded domains. On the Great Plains, where the wind danced across endless grasslands and buffalo roamed freely, tribes perfected communal trapping methods. Ingenious pitfalls and strategically orchestrated hunts allowed them to secure the immense herds, ensuring not only food but also materials for shelter, clothing, and tools. The vastness of the Plains echoed with the resilience of a people harmonizing with the rhythm of the land.[PARAGRAPH:2]In the unforgiving Arctic and Subarctic regions, where icy winds swept across a stark and breathtaking landscape, indigenous communities devised trapping techniques to navigate the challenges of survival. Cunningly designed traps and communal strategies were employed to secure the furs and meats vital for their existence. Here, the art of trapping was a dance with the elements, a nuanced understanding of the delicate balance between humans and the harsh beauty of the frozen world. Trapping in Pre-Columbian America was not merely a means of acquiring resources; it was a reflection of a deep reciprocity between humanity and nature. In the quiet mastery of trap-setting and the patient observation of animal behavior, indigenous peoples carved out sustenance and survival from the vast, untamed canvas of the Americas.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRADE</Tag>
+		<English>Trade</English>
+		<French>Trade</French>
+		<German>Trade</German>
+		<Italian>Trade</Italian>
+		<Spanish>Trade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRADE_QUOTE</Tag>
+		<English>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</English>
+		<French>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</French>
+		<German>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</German>
+		<Italian>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</Italian>
+		<Spanish>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_TRADE_PEDIA</Tag>
+		<English>The history of trade in Pre-Columbian America is a rich tapestry woven by the diverse cultures that populated the continent long before the arrival of Europeans. These indigenous societies engaged in intricate networks of exchange, connecting distant regions and fostering economic, social, and cultural interactions.[PARAGRAPH:2]In Mesoamerica, the Aztec civilization established a vast and sophisticated trade network. The city of Tenochtitlan, situated in the middle of Lake Texcoco, became a bustling hub of commerce. The Aztecs traded a wide array of goods, including agricultural products, textiles, obsidian, and luxury items like cacao and feathers. The extensive road systems and waterways facilitated the flow of goods within the empire. The ancient Maya, located in present-day Mexico and Central America, were active participants in long-distance trade. They exchanged products such as jade, obsidian, and cacao with distant regions. Coastal trade routes connected the Maya to other Mesoamerican cultures, and overland trade routes reached as far as the highlands of present-day Guatemala and Honduras.[PARAGRAPH:2]In the American Southwest, the Ancestral Puebloans engaged in trade networks that spanned the region. They exchanged goods such as pottery, turquoise, and cotton with neighboring communities. The famous Chaco Canyon was a central trading hub, linking various Puebloan villages across the arid landscape. On the Pacific Coast, indigenous peoples such as the Chinook in the Northwest were skilled maritime traders. They navigated the coastal waters and rivers, exchanging goods like salmon, cedar, and shells. The intricate network of waterways facilitated trade among coastal and inland communities.[PARAGRAPH:2]In the Eastern Woodlands, extensive trade networks existed among Native American tribes. The Hopewell and Adena cultures engaged in long-distance trade, exchanging materials like copper, mica, and marine shells. These trade routes facilitated cultural exchange and the movement of ideas. Trade in Pre-Columbian America was not merely an economic activity but also a mechanism for cultural diffusion. It facilitated the exchange of ideas, technologies, and artistic influences, contributing to the rich tapestry of indigenous cultures. These trade networks underscore the complexity and sophistication of Pre-Columbian societies, dispelling the notion of a pristine, isolated existence before the arrival of Europeans.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_TRIANGULAR_TRADE</Tag>
 		<English>Triangular Trade</English>
 		<French>Triangular Trade</French>
@@ -4706,12 +5262,20 @@
 	</TEXT>
 	
 	<TEXT>
-		<Tag>TXT_KEY_ERA_PRE_COLUMBIAN</Tag>
-		<English>Pre Columbian</English>
-		<French>Pre Columbian</French>
-		<German>Pre Columbian</German>
-		<Italian>Pre Columbian</Italian>
-		<Spanish>Pre Columbian</Spanish>
+		<Tag>TXT_KEY_ERA_ANCIENT</Tag>
+		<English>Ancient</English>
+		<French>Ancient</French>
+		<German>Ancient</German>
+		<Italian>Ancient</Italian>
+		<Spanish>Ancient</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_CLASSICAL</Tag>
+		<English>Classical</English>
+		<French>Classical</French>
+		<German>Classical</German>
+		<Italian>Classical</Italian>
+		<Spanish>Classical</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ERA_EXPLORATION</Tag>
@@ -4736,22 +5300,6 @@
 		<German>Revolutionary</German>
 		<Italian>Revolutionary</Italian>
 		<Spanish>Revolutionary</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ERA_MODERN</Tag>
-		<English>Modern</English>
-		<French>Modern</French>
-		<German>Modern</German>
-		<Italian>Modern</Italian>
-		<Spanish>Modern</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ERA_ATOMIC</Tag>
-		<English>Atomic</English>
-		<French>Atomic</French>
-		<German>Atomic</German>
-		<Italian>Atomic</Italian>
-		<Spanish>Atomic</Spanish>
 	</TEXT>
 
 </Civ4GameText>

@@ -254,7 +254,6 @@ public:
 	void doPediaRouteJump(CvWidgetDataStruct &widgetDataStruct);
 
 	void parseWonderLimitHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
-	void parseSatelliteLimitHelp(CvWidgetDataStruct& widgetDataStruct, CvWStringBuffer& szBuffer);
 
 protected:
 	

@@ -67,7 +67,7 @@ def isCongressEnabled():
 	if data.bNoCongressOption:
 		return False
 
-	if game.getBuildingClassCreatedCount(infos.building(iUnitedNations).getBuildingClassType()) > 0:
+	if game.getBuildingClassCreatedCount(infos.building(iLeagueOfNations).getBuildingClassType()) > 0:
 		return False
 		
 	return (game.countKnownTechNumTeams(iNationalism) > 0)

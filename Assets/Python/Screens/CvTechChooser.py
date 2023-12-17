@@ -33,7 +33,7 @@ class CvTechChooser:
 		self.bResearched = False
 		self.bBuilt = False
 		self.iFromEra = 0
-		self.iHideEra = iAtomicEra
+		self.iHideEra = iIndustrialEra
 
 		# Advanced Start
 		self.iSelectedTech = -1
@@ -154,7 +154,7 @@ class CvTechChooser:
 		screen.setButtonGFC("RightArrow", "", "", self.W_SCREEN - 155, 10, 24, 24, WidgetTypes.WIDGET_GENERAL, -1, -1, ButtonStyles.BUTTON_STYLE_ARROW_RIGHT)
 		screen.setHitTest("RightArrow", HitTestTypes.HITTEST_NOHIT)
 
-		for iEra in xrange(iAtomicEra+1):
+		for iEra in xrange(iIndustrialEra+1):
 			if iEra <= self.iHideEra:
 				screen.addPullDownString("FilterFromEra", gc.getEraInfo(iEra).getDescription(), iEra, iEra, iEra == self.iFromEra)
 			if iEra >= self.iFromEra:

@@ -1103,11 +1103,6 @@ def canTriggerInfluenza(argsList):
 	if player.getCurrentEra() <= iIndustrialEra:
 		return false
 	
-	iMicrobiology = CvUtil.findInfoTypeNum(gc.getTechInfo,gc.getNumTechInfos(),'TECH_MICROBIOLOGY')
-	
-	if team.isHasTech(iMicrobiology):
-		return false
-						
 	return true
 	
 def applyInfluenza2(argsList):
@@ -3626,37 +3621,6 @@ def getHelpSpyDiscovered3(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_SPY_DISCOVERED_3_HELP", (iNumUnits, ))
 
 	return szHelp
-
-####### Nuclear Protest #######
-
-def canTriggerNuclearProtest(argsList):
-	kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-	
-	iICBMClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_ICBM')
-	iNuclearBomberClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_NUCLEAR_BOMBER')
-	if player.getUnitClassCount(iICBMClass) + player.getUnitClassCount(iNuclearBomberClass) < 10:
-		return false
-
-	return true
-
-def doNuclearProtest1(argsList):
-	kTriggeredData = argsList[1]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-
-	iICBMClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_ICBM')
-	iNuclearBomberClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_NUCLEAR_BOMBER')
-
-	(loopUnit, iter) = player.firstUnit(false)
-	while (loopUnit):
-		if loopUnit.getUnitClassType() == iICBMClass or loopUnit.getUnitClassType() == iNuclearBomberClass:
-			loopUnit.kill(false, -1)
-		(loopUnit, iter) = player.nextUnit(iter, false)
-
-def getHelpNuclearProtest1(argsList):
-	szHelp = localText.getText("TXT_KEY_EVENT_NUCLEAR_PROTEST_1_HELP", ())
-	return szHelp
-
 
 ######## Preaching Researcher #######
 

@@ -102,7 +102,6 @@ protected:
 	void AI_carrierAirMove();
 	void AI_missileAirMove();
 	void AI_persecutorMove(); // Leoreth
-	void AI_satelliteMove(); // Leoreth
 
 	void AI_networkAutomated();
 	void AI_cityAutomated();
@@ -215,8 +214,6 @@ protected:
 	bool AI_diplomaticMission(int iPowerMultiplier);
 	bool AI_persecute();
 	bool AI_greatMission(int iCityPercent);
-	bool AI_satelliteDefendMove();
-	bool AI_satelliteAttackMove();
 	bool AI_rebuildMove(int iMinimumCost);
 
 	bool AI_followBombard();

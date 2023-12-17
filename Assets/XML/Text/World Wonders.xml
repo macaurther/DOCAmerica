@@ -1258,12 +1258,20 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Versailles[COLOR_REVERT] creates a free [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT] in every city and gives its city two free [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_UNITED_NATIONS_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]United Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]United Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]United Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]United Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]United Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_BUILDING_LEAGUE_OF_NATIONS</Tag>
+		<English>League of Nations</English>
+		<French>League of Nations</French>
+		<German>League of Nations</German>
+		<Italian>League of Nations</Italian>
+		<Spanish>League of Nations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEAGUE_OF_NATIONS_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]League of Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]League of Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]League of Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]League of Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]League of Nations[COLOR_REVERT] triggers [COLOR_HIGHLIGHT_TEXT]Diplomatic Victory[COLOR_REVERT] elections. It guarantees that you will be a candidate in those elections and increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Statesman[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WESTMINSTER_PALACE</Tag>
@@ -3226,7 +3234,7 @@
 		<Spanish>[ICON_BULLET]+1[ICON_COMMERCE] for every [LINK=literal]Satellite[\LINK] constructed[NEWLINE][ICON_BULLET]+5[ICON_COMMERCE] for every space project completed</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_UNITED_NATIONS_HELP</Tag>
+		<Tag>TXT_KEY_BUILDING_LEAGUE_OF_NATIONS_HELP</Tag>
 		<English>[ICON_BULLET]Disables cascading defensive pacts</English>
 		<French>[ICON_BULLET]Disables cascading defensive pacts</French>
 		<German>[ICON_BULLET]Disables cascading defensive pacts</German>

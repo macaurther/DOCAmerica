@@ -62,14 +62,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -121,7 +121,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -228,7 +228,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -280,14 +280,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -347,14 +347,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -399,14 +399,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -451,7 +451,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -542,7 +542,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -594,7 +594,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -661,14 +661,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -705,7 +705,7 @@
 		<BuildInfo>
 			<Type>BUILD_OFFSHORE_PLATFORM</Type>
 			<Description>TXT_KEY_BUILD_OFFSHORE_PLATFORM</Description>
-			<PrereqTech>TECH_ELECTRONICS</PrereqTech>
+			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
 			<iTime>0</iTime>
 			<iCost>25</iCost>
 			<bKill>1</bKill>
@@ -732,7 +732,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -784,7 +784,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -835,7 +835,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -888,7 +888,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -909,7 +909,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -930,7 +930,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -1007,27 +1007,6 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_SCRUB_FALLOUT</Type>
-			<Description>TXT_KEY_BUILD_SCRUB_FALLOUT</Description>
-			<iTime>0</iTime>
-			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FALLOUT</FeatureType>
-					<PrereqTech>TECH_NUCLEAR_POWER</PrereqTech>
-					<iTime>4000</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_S</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildScrubFallout.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,8</Button>
-		</BuildInfo>
-		<BuildInfo>
 			<Type>BUILD_NATURE_RESERVE</Type>
 			<Description>TXT_KEY_BUILD_NATURE_RESERVE</Description>
 			<Help/>
@@ -1050,7 +1029,7 @@
 			<Type>BUILD_MARINE_RESERVE</Type>
 			<Description>TXT_KEY_BUILD_MARINE_RESERVE</Description>
 			<Help/>
-			<PrereqTech>TECH_ECOLOGY</PrereqTech>
+			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<iTime>0</iTime>
 			<iCost>25</iCost>
 			<bKill>1</bKill>
@@ -1066,25 +1045,6 @@
 			<Button>Art/Interface/Buttons/Builds/BuildMarineReserve.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_SOLAR_COLLECTOR</Type>
-			<Description>TXT_KEY_BUILD_SOLAR_COLLECTOR</Description>
-			<Help/>
-			<PrereqTech>TECH_RENEWABLE_ENERGY</PrereqTech>
-			<iTime>3000</iTime>
-			<iCost>20</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_SOLAR_COLLECTOR</ImprovementType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs/>
-			<HotKey>KB_T</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Structures/Improvements/Solar_Collector/Button_SolarPlant.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
 			<Type>BUILD_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_REMOVE_JUNGLE</Description>
 			<iTime>0</iTime>
@@ -1092,7 +1052,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1114,7 +1074,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1138,14 +1098,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1183,14 +1143,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1228,7 +1188,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1273,14 +1233,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1318,14 +1278,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1363,14 +1323,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1453,7 +1413,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1498,14 +1458,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1536,21 +1496,21 @@
 		<BuildInfo>
 			<Type>BUILD_WELL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WELL</Description>
-			<PrereqTech>TECH_REFINING</PrereqTech>
+			<PrereqTech>TECH_COMBUSTION</PrereqTech>
 			<iTime>1000</iTime>
 			<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1593,14 +1553,14 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>
@@ -1639,7 +1599,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<PrereqTech>TECH_MICROBIOLOGY</PrereqTech>
+					<PrereqTech>TECH_BIOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
 					<bRemove>1</bRemove>

@@ -1395,7 +1395,7 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 
 	//Rhye
 	//if (GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING))
-	if (!bIgnoreProgress && GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) && !GET_TEAM(eTeam).isHasTech((TechTypes)GLOBALISM))
+	if (!bIgnoreProgress && GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) && !GET_TEAM(eTeam).isHasTech((TechTypes)POWER_PROJECTION))
 	{
 		CvTeam& kTeam = GET_TEAM(eTeam);
 
@@ -4479,10 +4479,6 @@ int CvTeamAI::AI_getTechMonopolyValue(TechTypes eTech, TeamTypes eTeam) const
 
 					case UNITAI_MISSILE_AIR:
 						iValue += bWarPlan ? 40 : 20;
-						break;
-
-					case UNITAI_SATELLITE:
-						iValue += 50;
 						break;
 
 					default:

@@ -122,7 +122,7 @@
 		<Spanish>Skirmish</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PROMOTION_DISENGAGE1</Tag>
+		<Tag>TXT_KEY_PROMOTION_FEINT1</Tag>
 		<English>Disengage I</English>
 		<French>
 			<Text>D&#233;sengagement I</Text>
@@ -134,7 +134,7 @@
 		<Spanish>Disengage I</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PROMOTION_DISENGAGE2</Tag>
+		<Tag>TXT_KEY_PROMOTION_FEINT2</Tag>
 		<English>Disengage II</English>
 		<French>
 			<Text>D&#233;sengagement II</Text>
@@ -146,7 +146,7 @@
 		<Spanish>Disengage II</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PROMOTION_FLANKING3</Tag>
+		<Tag>TXT_KEY_PROMOTION_FORMATION3</Tag>
 		<English>Flanking III</English>
 		<French>
 			<Text>Contournement III</Text>
@@ -157,4 +157,135 @@
 		<Italian>Flanking III</Italian>
 		<Spanish>Flanking III</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FLANKING</Tag>
+		<English>Flanking</English>
+		<French>Flanking</French>
+		<German>Flanking</German>
+		<Italian>Flanking</Italian>
+		<Spanish>Flanking</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GUERILLA</Tag>
+		<English>Guerilla</English>
+		<French>Guerilla</French>
+		<German>Guerilla</German>
+		<Italian>Guerilla</Italian>
+		<Spanish>Guerilla</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORMATION1</Tag>
+		<English>Formation I</English>
+		<French>Formation I</French>
+		<German>Formation I</German>
+		<Italian>Formation I</Italian>
+		<Spanish>Formation I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORMATION2</Tag>
+		<English>Formation II</English>
+		<French>Formation II</French>
+		<German>Formation II</German>
+		<Italian>Formation II</Italian>
+		<Spanish>Formation II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORMATION3</Tag>
+		<English>Formation III</English>
+		<French>Formation III</French>
+		<German>Formation III</German>
+		<Italian>Formation III</Italian>
+		<Spanish>Formation III</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOUNTAINEER1</Tag>
+		<English>Mountaineer I</English>
+		<French>Mountaineer I</French>
+		<German>Mountaineer I</German>
+		<Italian>Mountaineer I</Italian>
+		<Spanish>Mountaineer I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOUNTAINEER2</Tag>
+		<English>Mountaineer II</English>
+		<French>Mountaineer II</French>
+		<German>Mountaineer II</German>
+		<Italian>Mountaineer II</Italian>
+		<Spanish>Mountaineer II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_MOUNTAINEER3</Tag>
+		<English>Mountaineer III</English>
+		<French>Mountaineer III</French>
+		<German>Mountaineer III</German>
+		<Italian>Mountaineer III</Italian>
+		<Spanish>Mountaineer III</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FEINT1</Tag>
+		<English>Feint I</English>
+		<French>Feint I</French>
+		<German>Feint I</German>
+		<Italian>Feint I</Italian>
+		<Spanish>Feint I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FEINT2</Tag>
+		<English>Feint II</English>
+		<French>Feint II</French>
+		<German>Feint II</German>
+		<Italian>Feint II</Italian>
+		<Spanish>Feint II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GARRISON1</Tag>
+		<English>Garrison I</English>
+		<French>Garrison I</French>
+		<German>Garrison I</German>
+		<Italian>Garrison I</Italian>
+		<Spanish>Garrison I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GARRISON2</Tag>
+		<English>Garrison II</English>
+		<French>Garrison II</French>
+		<German>Garrison II</German>
+		<Italian>Garrison II</Italian>
+		<Spanish>Garrison II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_GARRISON3</Tag>
+		<English>Garrison III</English>
+		<French>Garrison III</French>
+		<German>Garrison III</German>
+		<Italian>Garrison III</Italian>
+		<Spanish>Garrison III</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RAIDER1</Tag>
+		<English>Raider I</English>
+		<French>Raider I</French>
+		<German>Raider I</German>
+		<Italian>Raider I</Italian>
+		<Spanish>Raider I</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RAIDER2</Tag>
+		<English>Raider II</English>
+		<French>Raider II</French>
+		<German>Raider II</German>
+		<Italian>Raider II</Italian>
+		<Spanish>Raider II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RAIDER3</Tag>
+		<English>Raider III</English>
+		<French>Raider III</French>
+		<German>Raider III</German>
+		<Italian>Raider III</Italian>
+		<Spanish>Raider III</Spanish>
+	</TEXT>
 </Civ4GameText>
+
+
+

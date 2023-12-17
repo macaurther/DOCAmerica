@@ -4609,14 +4609,6 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 	bool bWarPlan = (GET_TEAM(getTeam()).getAnyWarPlanCount(true) > 0);
 	int iWarmongerPercent = 25000 / std::max(100, (100 + GC.getLeaderHeadInfo(getPersonalityType()).getMaxWarRand()));
 
-	int iSatelliteCount = 0;
-
-	int iLoop;
-	for (CvCity* pCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pCity != NULL; pCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
-	{
-		iSatelliteCount += pCity->countSatellites();
-	}
-
 	iValue = 0;
 
 	if (kProject.getNukeInterception() > 0)
@@ -4652,25 +4644,6 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 	if (kProject.isRevealsMap())
 	{
 		iValue += 5;
-	}
-
-	if (kProject.isSatelliteAttack())
-	{
-		for (iI = 0; iI < GC.getNumProjectInfos(); iI++)
-		{
-			if (GC.getProjectInfo((ProjectTypes)iI).isSatelliteAttack() || GC.getProjectInfo((ProjectTypes)iI).isSatelliteIntercept())
-			{
-				iValue += GC.getGameINLINE().getProjectCreatedCount((ProjectTypes)iI) * 5;
-			}
-		}
-	}
-
-	if (kProject.isSatelliteIntercept())
-	{
-		if (GC.getGameINLINE().canTrainNukes())
-		{
-			iValue += 10;
-		}
 	}
 
 	if (kProject.isFirstEnemyAnarchy())
@@ -4755,59 +4728,6 @@ int CvCityAI::AI_projectValue(ProjectTypes eProject)
 				}
 			}
 		}
-	}
-
-	if (eProject == PROJECT_GOLDEN_RECORD)
-	{
-		if (GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE2))
-		{
-			iValue += 5;
-			iValue += iSatelliteCount / 5;
-		}
-
-		if (GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE4))
-		{
-			iValue += 10;
-			iValue += iSatelliteCount / 2;
-		}
-	}
-
-	if (eProject == PROJECT_THE_INTERNET)
-	{
-		iValue += GET_PLAYER(getOwnerINLINE()).AI_averageYieldMultiplier(YIELD_COMMERCE) * GET_PLAYER(getOwnerINLINE()).getTotalPopulation() / 15 / 1000;
-	}
-
-	if (eProject == PROJECT_HUMAN_GENOME_PROJECT)
-	{
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			if (GC.getImprovementInfo((ImprovementTypes)iI).getYieldChange(YIELD_COMMERCE) > 3)
-			{
-				iValue += GET_PLAYER(getOwnerINLINE()).AI_averageYieldMultiplier(YIELD_FOOD) * GET_PLAYER(getOwnerINLINE()).getImprovementCount((ImprovementTypes)iI) / 1000;
-			}
-		}
-	}
-
-	if (eProject == PROJECT_INTERNATIONAL_SPACE_STATION)
-	{
-		iValue += 5;
-		iValue += GET_PLAYER(getOwnerINLINE()).AI_averageCommerceMultiplier(COMMERCE_RESEARCH) * iSatelliteCount * 2 / 1000;
-	}
-
-	if (eProject == PROJECT_GREAT_FIREWALL)
-	{
-		iValue += 5;
-		if (GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_BIG_ESPIONAGE))
-		{
-			iValue += 5;
-		}
-	}
-
-	if (eProject == PROJECT_LUNAR_COLONY)
-	{
-		iValue += 5;
-		iValue += GET_PLAYER(getOwnerINLINE()).AI_averageYieldMultiplier(YIELD_PRODUCTION) * iSatelliteCount * 2 / 1000;
-		iValue += GET_PLAYER(getOwnerINLINE()).getNumCities() / 2;
 	}
 
 	return iValue;

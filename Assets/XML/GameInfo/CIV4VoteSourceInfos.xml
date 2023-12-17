@@ -8,7 +8,7 @@
 	<VoteSourceInfos>
 		<VoteSourceInfo>
 			<Type>DIPLOVOTE_UN</Type>
-			<Description>TXT_KEY_BUILDING_UNITED_NATIONS</Description>
+			<Description>TXT_KEY_BUILDING_LEAGUE_OF_NATIONS</Description>
 			<PopupText>TXT_KEY_POPUP_CHOOSE_ELECTION</PopupText>
 			<SecretaryGeneralText>TXT_KEY_SECRETARY_GENERAL</SecretaryGeneralText>
 			<iVoteInterval>5</iVoteInterval>

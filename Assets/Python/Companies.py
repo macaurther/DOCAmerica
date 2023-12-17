@@ -9,15 +9,14 @@ dCompanyTechs = {
 	iFurTrade         : [iExploration],
 	iTradingCompany   : [iExploration],
 	iCerealIndustry   : [iEconomics, iBiology],
-	iFishingIndustry  : [iEconomics, iRefrigeration],
+	iFishingIndustry  : [iEconomics],
 	iTextileIndustry  : [iEconomics, iThermodynamics],
 	iSteelIndustry    : [iEconomics, iMetallurgy],
-	iOilIndustry      : [iEconomics, iRefining],
-	iLuxuryIndustry   : [iEconomics, iConsumerism],
-	iComputerIndustry : [iEconomics, iComputers],
+	iOilIndustry      : [iEconomics],
+	iLuxuryIndustry   : [iEconomics],
 }
 
-tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10, 12) # kind of arbitrary currently, see how this plays out
+tCompaniesLimit = (10, 12, 16, 10, 12, 12, 6, 10) # kind of arbitrary currently, see how this plays out
 
 dCompanyExpiry = defaultdict({
 	iFurTrade : 1900,
@@ -173,13 +172,6 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iDepartmentStore)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iHotel)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iNationalGallery)): iValue += 3
-
-	elif iCompany == iComputerIndustry:
-		if city.hasBuilding(unique_building(iOwner, iFactory)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iLaboratory)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iUniversity)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iSupercomputer)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iFiberNetwork)): iValue += 1
 	
 	# needs at least a few requirements
 	if iValue <= 0:
@@ -220,8 +212,6 @@ def getCityValue(city, iCompany):
 		elif iCompany == iFishingIndustry and city.isHasCorporation(iCerealIndustry): iValue /= 2
 		elif iCompany == iSteelIndustry and city.isHasCorporation(iTextileIndustry): iValue /= 2
 		elif iCompany == iTextileIndustry and city.isHasCorporation(iSteelIndustry): iValue /= 2
-		elif iCompany == iOilIndustry and city.isHasCorporation(iComputerIndustry): iValue /= 2
-		elif iCompany == iComputerIndustry and city.isHasCorporation(iOilIndustry): iValue /= 2
 	
 	# threshold
 	if iValue < 4:

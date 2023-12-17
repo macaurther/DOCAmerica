@@ -10,54 +10,6 @@
 		<Spanish>[H1]The %s1 Trading Company[\H1][NEWLINE]The %s2 Trading Company asks for the control of %s4 and offers %d3 gold. Refusal will lead to war. Shall we accept their offer?</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_AIRLINER_CRASH_1</Tag>
-		<English>Allow their recovery teams unfettered access to the crash site.</English>
-		<French>Autoriser leurs &#233;quipes de secours &#224; acc&#233;der au site de l'accident.</French>
-		<German>Gew&#228;hrt ihren Bergungstrupps uneingeschr&#228;nkten Zugang zur Absturzstelle.</German>
-		<Italian>Lascia libero accesso alle loro squadre di soccorso fino al luogo dello schianto.</Italian>
-		<Spanish>Dar acceso sin l&#237;mite al lugar del siniestro a sus equipos de rescate.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_AIRLINER_CRASH_2</Tag>
-		<English>Stall them for time while your own team learns what it can first.</English>
-		<French>Gagner du temps pendant que votre propre &#233;quipe essaye d'en savoir plus.</French>
-		<German>Haltet sie eine Weile hin, bis unsere eigenen Leute mehr &#252;ber die Sache herausgefunden haben.</German>
-		<Italian>Tieni occupate le loro squadre di soccorso mentre la tua raccoglie pi&#249; informazioni possibile.</Italian>
-		<Spanish>Entretenerlos el tiempo suficiente para que nuestro propio equipo averig&#252;e primero cuanto pueda.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_AIRLINER_CRASH_3</Tag>
-		<English>Deny access. Claim the wreckage and let your engineers pore over it.</English>
-		<French>Refuser l'acc&#232;s. Revendiquer la propri&#233;t&#233; de l'&#233;pave et laisser vos ing&#233;nieurs l'&#233;tudier.</French>
-		<German>Verweigert ihnen den Zutritt zur Absturzstelle. Sichert das Wrack und lasst es von Euren Ingenieuren untersuchen.</German>
-		<Italian>Nega l'accesso. Rivendica i relitti e lascia che i tuoi ingegneri li studino.</Italian>
-		<Spanish>Denegarles el acceso. Apoderarse de los restos y que nuestros ingenieros los estudien minuciosamente.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_AIRLINER_CRASH_OTHER_1</Tag>
-		<English>One of your passenger airliners has crashed in %s1_civ_adjective territory. They have allowed unrestricted access to your recovery teams, building trust between your two nations.</English>
-		<French>Un de vos avions commerciaux s'est &#233;cras&#233; en territoire %s1:1_civ_adjective. Les %s1:3_civ_adjective ont autoris&#233; vos &#233;quipes de secours &#224; acc&#233;der au site de l'accident, renfor&#231;ant ainsi la confiance entre vos deux nations.</French>
-		<German>Eine Eurer Passagiermaschinen ist auf dem Territorium des %s1:2_civ_adjective Volkes abgest&#252;rzt. Sie gew&#228;hren Euren Bergungstrupps uneingeschr&#228;nkten Zugang, wodurch das Vertrauensverh&#228;ltnis zwischen den beiden Nationen steigt.</German>
-		<Italian>Uno dei tuoi aerei passeggeri &#232; precipitato nel territorio %s1:1_civ_adjective. Hanno concesso il libero accesso alle tue squadre di soccorso, creando fiducia tra le due nazioni.</Italian>
-		<Spanish>Uno de nuestros aviones de pasajeros se ha estrellado en territorio %s1:1_civ_adjective. Se les ha concedido acceso total a nuestros equipos de rescate, lo que ha alimentado la confianza entre nuestras dos naciones.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_AIRLINER_CRASH_OTHER_2</Tag>
-		<English>One of your passenger airliners has crashed in %s1_civ_adjective territory. They seemed to be unsure how to react at first, but finally allowed your recovery teams access to the crash site.</English>
-		<French>Un de vos avions commerciaux s'est &#233;cras&#233; en territoire %s1:1_civ_adjective. Apr&#232;s quelques h&#233;sitations, ils ont finalement laiss&#233; vos &#233;quipes de secours acc&#233;der au site de l'accident.</French>
-		<German>Eine Eurer Passagiermaschinen ist auf dem Territorium des %s1:2_civ_adjective Volkes abgest&#252;rzt. Sie schienen zun&#228;chst unsicher, wie sie reagieren sollten, gew&#228;hren Euren Bergungstrupps nun aber uneingeschr&#228;nkten Zugang zur Absturzstelle.</German>
-		<Italian>Uno dei tuoi aerei passeggeri &#232; precipitato nel territorio %s1:1_civ_adjective. Sembravano insicuri su come reagire, all'inizio, ma poi hanno permesso alle tue squadre di soccorso di accedere al luogo dello schianto.</Italian>
-		<Spanish>Uno de nuestros aviones de pasajeros se ha estrellado en territorio %s1:1_civ_adjective. Al principio no sab&#237;an muy bien c&#243;mo reaccionar, pero finalmente han concedido acceso a nuestros equipos de rescate al lugar del siniestro.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_AIRLINER_CRASH_OTHER_3</Tag>
-		<English>One of your passenger airliners has crashed in %s1_civ_adjective territory. They are denying all access and have claimed the wreckage as their own. This outrage has angered your people and driven a diplomatic wedge between your two nations.</English>
-		<French>Un de vos avions commerciaux s'est &#233;cras&#233; en territoire %s1:1_civ_adjective. Ils refusent tout acc&#232;s et ont revendiqu&#233; la propri&#233;t&#233; de l'&#233;pave. Cet outrage a provoqu&#233; la col&#232;re de votre peuple et une tension diplomatique entre vos deux nations.</French>
-		<German>Eine Eurer Passagiermaschinen ist auf dem Hoheitsgebiet des %s1:2_civ_adjective Volkes abgest&#252;rzt. Sie verwehren unseren Bergungstrupps den Zugang zur Absturzstelle und beanspruchen das Wrack f&#252;r sich selbst. Dieses Vorgehen l&#246;st Emp&#246;rung in unserer Bev&#246;lkerung aus und treibt einen Keil in die diplomatischen Beziehungen zwischen unseren Nationen.</German>
-		<Italian>Uno dei tuoi aerei passeggeri &#232; precipitato nel territorio %s1:1_civ_adjective. Ti hanno negato l'accesso e hanno rivendicato come loro il relitto. Questo oltraggio ha incollerito il tuo popolo e creato un abisso diplomatico tra le due nazioni.</Italian>
-		<Spanish>Uno de nuestros aviones de pasajeros se ha estrellado en territorio %s1:1_civ_adjective. Nos deniegan cualquier derecho de acceso y se han apoderado de los restos. Este ultraje ha inflamado a nuestro pueblo y ha provocado un punto de quiebra en las relaciones diplom&#225;ticas entre nuestras dos naciones.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_ANCIENT_TEXTS_1</Tag>
 		<English>Disperse the texts to various researchers and specialists, to see what we might learn.</English>
 		<French>Distribuer les textes &#224; plusieurs chercheurs et sp&#233;cialistes pour voir ce que nous pourrions apprendre.</French>
@@ -338,38 +290,6 @@
 		<Spanish>&#161;Buen trabajo, el conocimiento es poder!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_BROKEN_DAM</Tag>
-		<English>The dam in %s2_city has broken. The city's suburbs are flooded and deaths have been reported.</English>
-		<French>Le barrage de %s2_city a rompu. Les banlieues de la ville sont inond&#233;es et il y a de nombreuses victimes.</French>
-		<German>Ein Bruch des Wasserschutzwalls in der Stadt %s2_city verursacht &#220;berflutungen von Stadtbezirken und fordert Todesopfer.</German>
-		<Italian>La diga di %s2_city &#232; crollata. I sobborghi della citt&#224; sono stati inondati e sono state segnalate diverse persone che hanno perso la vita.</Italian>
-		<Spanish>La presa en %s2_city ha cedido. Las afueras de la ciudad est&#225;n inundadas y se informa de muertes.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BROKEN_DAM_1</Tag>
-		<English>That is very unfortunate, but we can not help. Tell the local authorities they'll have to handle the situation.</English>
-		<French>C'est malheureux, mais nous ne pouvons rien y faire. Mettez les autorit&#233;s locales en charge de la situation.</French>
-		<German>Wir k&#246;nnen uns derzeit keine Hilfsma&#223;nahmen leisten. Die lokalen Beh&#246;rden m&#252;ssen mit dieser Situation selbst fertig werden.</German>
-		<Italian>&#200; una cosa molto spiacevole, ma non possiamo fare nulla. Dici alle autorit&#224; locali che dovranno occuparsi della situazione.</Italian>
-		<Spanish>Eso es muy desafortunado, pero no podemos ayudar. Decir a las autoridades locales que tendr&#225;n que manejar la situaci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BROKEN_DAM_2</Tag>
-		<English>Repair the dam from our emergency funds.</English>
-		<French>R&#233;parez le barrage &#224; l'aide de nos fonds d'urgence.</French>
-		<German>Organisiert einen Wiederaufbau des Wasserschutzwalles.</German>
-		<Italian>Ripara la diga con i nostri fondi destinati alle emergenze</Italian>
-		<Spanish>Reparar la presa con nuestros fondos de emergencia.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_BROKEN_DAM_3</Tag>
-		<English>Repair the dam and provide compensation to the affected families.</English>
-		<French>Remettez le barrage en &#233;tat et payez des r&#233;parations aux familles touch&#233;es par le drame.</French>
-		<German>Organisiert einen Wiederaufbau des Wasserschutzwalles und Hilfsma&#223;nahmen f&#252;r die Betroffenen.</German>
-		<Italian>Ripara la diga e provvedi a un risarcimento per le famiglie coinvolte dal disastro</Italian>
-		<Spanish>Reparar la presa y dar compensaciones a las familias afectadas</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_BROTHERS_IN_NEED_1</Tag>
 		<English>Although our brothers are in need, it is best not to get involved at this time.</English>
 		<French>Bien que nos fr&#232;res soient dans le besoin, mieux vaut ne pas nous en m&#234;ler cette fois-ci.</French>
@@ -530,14 +450,6 @@
 		<Spanish>Que se le recomiende concentrarse en la armon&#237;a interna y en erradicar todo tipo de oposici&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_CHILLY_FLIGHT_1</Tag>
-		<English>Set up a monument at the airport to produce tourism.</English>
-		<French>&#201;riger un monument &#224; l'a&#233;roport pour encourager le tourisme.</French>
-		<German>Errichtet ein Denkmal am Flughafen, um den Tourismus anzukurbeln.</German>
-		<Italian>Erigi un monumento all'aeroporto per produrre turismo.</Italian>
-		<Spanish>Que se coloque un monumento en el aeropuerto para que genere turismo.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIGARETTE_SMOKER_1</Tag>
 		<English>Organize a rebuilding effort.</English>
 		<French>Organiser la reconstruction.</French>
@@ -659,14 +571,6 @@
 		<Spanish>&#191;Carb&#243;n de turba? Qu&#233; desastre. Bueno, cada tonelada vale menos, pero sigue quemando, &#191;no? Tendremos que conformarnos.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_COMET_FRAGMENT_1</Tag>
-		<English>What if something even bigger is out there, on a collision course with our world? If so, we must find it. We must get into space!</English>
-		<French>Et si quelque chose de plus gros risquait de s'&#233;craser sur notre monde ? Si c'est le cas, nous devons le d&#233;couvrir. Nous devons aller dans l'espace !</French>
-		<German>Was, wenn es da drau&#223;en noch etwas Gr&#246;&#223;eres gibt, das sich auf Kollisionskurs mit unserer Welt befindet? Wir m&#252;ssen in den Weltraum!</German>
-		<Italian>E se qualcosa di pi&#249; grosso fosse l&#224; fuori, in rotta di collisione con il nostro pianeta? Se &#232; cos&#236; dobbiamo trovarlo. Dobbiamo andare nello spazio!</Italian>
-		<Spanish>&#191;Y qu&#233; pasar&#237;a si algo m&#225;s grande estuviera en trayectoria de colisi&#243;n contra nuestro mundo? Tenemos que averiguarlo. &#161;Debemos ir al espacio!</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONTROVERSIAL_PHILOSOPHER</Tag>
 		<English>A philosopher from %s2_city is stirring up controversy among our population. Our people are highly distrustful of his teachings.</English>
 		<French>Un philosophe de %s2_city casuse une controverse parmi nos gens qui se m&#233;fient fortement de ses enseignements.</French>
@@ -745,30 +649,6 @@
 		<German>Verlasst Euch darauf, dass die Justiz die Verfassung durchsetzt.</German>
 		<Italian>Affidati all'autorit&#224; giudiziaria affinch&#233; sostenga la costituzione.</Italian>
 		<Spanish>Confiaremos en que la autoridad judicial haga cumplir el texto de la constituci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DEFECTING_AGENT</Tag>
-		<English>One of our high-ranking intelligence agents has defected to the %s1_civ_adjective empire.</English>
-		<French>Un de nos agents haut plac&#233; a d&#233;sert&#233; nos rangs pour rejoindre l'empire %s1_civ_adjective.</French>
-		<German>Einer unserer hochrangigen Spione ist zum %s1:2_civ_adjective Reich &#252;bergelaufen.</German>
-		<Italian>Uno dei nostri agenti dell'intelligence di grado elevato ha defezionato ed &#232; passato al servizio dell'impero %s1:1_civ_adjective</Italian>
-		<Spanish>Uno de nuestros agentes de inteligencia de alto rango ha desertado al imperio %s1_civ_adjective</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DEFECTING_AGENT_1</Tag>
-		<English>That's regrettable. We'll need to review our security procedures.</English>
-		<French>C'est regrettable. Il nous faut revoir nos proc&#233;dures de s&#233;curit&#233;.</French>
-		<German>Das ist bedauerlich. Lasst die Sicherheitsma&#223;nahmen &#252;berpr&#252;fen.</German>
-		<Italian>&#200; una cosa deplorevole. Dovremo rivedere le nostre misure di sicurezza.</Italian>
-		<Spanish>Es lamentable. Tendremos que revisar nuestros procedimientos de seguridad.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_DEFECTING_AGENT_2</Tag>
-		<English>Unacceptable. An "accident" should happen to the traitor!</English>
-		<French>Intol&#233;rable. Un "accident" devrait arriver au tra&#238;tre!</French>
-		<German>Das ist inakzeptabel. Sorgt f&#252;r einen "Unfall" des Verr&#228;ters...</German>
-		<Italian>&#200; inaccettabile. Il traditore la deve pagare!</Italian>
-		<Spanish>Inaceptable. El traidor debe sufrir un "accidente"!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISSIDENT_PRIEST</Tag>
@@ -1219,14 +1099,6 @@
 		<Spanish>Se espera que esta ayuda contribuya a que nuestra unidad recupere su fuerza.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_FUEL_ADDITIVES_1</Tag>
-		<English>Reduced costs, lower pollution and improved revenues are always welcome news.</English>
-		<French>Des co&#251;ts r&#233;duits, une pollution moindre et des revenus en hausse sont toujours de bonnes nouvelles.</French>
-		<German>Geringere Kosten, weniger Verschmutzung und gesteigertes Einkommen sind immer gute Neuigkeiten.</German>
-		<Italian>Costi pi&#249; bassi, inquinamento ridotto ed entrate aumentate sono sempre buone notizie.</Italian>
-		<Spanish>Costes reducidos, menor poluci&#243;n y mayores ingresos son siempre una buena noticia.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_FUGITIVE_1</Tag>
 		<English>Extradite the offender back to his homeland.</English>
 		<French>Extrader le criminel.</French>
@@ -1587,22 +1459,6 @@
 		<Spanish>&#161;Prodigioso! Que todos nuestros reclutas militares de esa ciudad se sometan al r&#233;gimen de entrenamiento de la nueva academia.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_HINDENBERG_1</Tag>
-		<English>Outlaw the use of hydrogen in lighter-than-air vehicles.</English>
-		<French>Interdire l'utilisation d'hydrog&#232;ne dans les v&#233;hicules volants.</French>
-		<German>Stellt die Verwendung von Wasserstoff in derartig leichten Luftfahrzeugen unter Strafe.</German>
-		<Italian>Rendi illegale l'uso di idrogeno nei dirigibili.</Italian>
-		<Spanish>Que se proh&#237;ba el uso de hidr&#243;geno en los veh&#237;culos m&#225;s ligeros que el aire.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_HINDENBERG_2</Tag>
-		<English>Fund a drive to regulate air traffic, improve safety and ensure the viability of commercial air travel.</English>
-		<French>Financer une campagne pour r&#233;guler le trafic a&#233;rien, am&#233;liorer la s&#233;curit&#233; et assurer la viabilit&#233; des voyages a&#233;riens commerciaux.</French>
-		<German>Finanziert Ma&#223;nahmen zur Regulierung des Luftverkehrs, zur Verbesserung der Sicherheit und zur Sicherstellung der Durchf&#252;hrbarkeit kommerzieller Luftfahrt.</German>
-		<Italian>Finanzia un programma per regolarizzare il traffico aereo, migliorare la sicurezza e assicurare l'attuabilit&#224; del traffico aereo commerciale.</Italian>
-		<Spanish>Que se financie una campa&#241;a de regulaci&#243;n del tr&#225;fico a&#233;reo, se mejore la seguridad y se asegure la viabilidad de los viajes comerciales a&#233;reos.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_HIYOSILVER_1</Tag>
 		<English>That sounds like welcome news for our economy.</English>
 		<French>Cela semble &#234;tre une bonne nouvelle pour notre &#233;conomie.</French>
@@ -1843,22 +1699,6 @@
 		<Spanish>Eso es una exageraci&#243;n. El presidente debe captar el mensaje de que su administraci&#243;n debe mejorar.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_INDEPENDENTFILMS_1</Tag>
-		<English>That sounds like welcome news for our economy.</English>
-		<French>C'est une bonne nouvelle pour notre &#233;conomie.</French>
-		<German>Das klingt nach guten Neuigkeiten f&#252;r unsere Wirtschaft.</German>
-		<Italian>Sembrano buone notizie per la nostra economia.</Italian>
-		<Spanish>Parecen ser buenas nuevas para nuestra econom&#237;a.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_INDEPENDENTFILMS_HELP_1</Tag>
-		<English>[ICON_BULLET]%D1%F2 in %s3_city</English>
-		<French>[ICON_BULLET]%D1%F2 &#224; %s3_city</French>
-		<German>[ICON_BULLET]%D1%F2 in %s3_city</German>
-		<Italian>[ICON_BULLET]%D1%F2 a %s3_city</Italian>
-		<Spanish>[ICON_BULLET]%D1 %F2 en %s3_city</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_INDUSTRIAL_FIRE_1</Tag>
 		<English>Emphasize improved safety so that this particular type of accident should never happen again.</English>
 		<French>Souligner le besoin de s&#233;curit&#233; accrue pour que ce type d'accident ne se reproduise plus.</French>
@@ -2041,14 +1881,6 @@
 		<German>Die %s5:3_religion_adjective Eheschlie&#223;ung zwischen einem unserer Landsleute und einem %s1:2_civ_adjective B&#252;rger wurde durch die Ausrufung eines Nationalfeiertages sowie die Entsendung ausgefallener Hochzeitsgeschenke und die Entrichtung von Spenden an unsere religi&#246;sen Einrichtungen gew&#252;rdigt. Unsere Bev&#246;lkerung ist angesichts dieser Geste hoch erfreut.</German>
 		<Italian>Un matrimonio %s5:1_religion_adjective tra uno dei nostri cittadini e una dell'impero %s1:1_civ_adjective &#232; stato onorato con una festa nazionale, con tanto di esotico regalo nuziale e donazioni alle nostre istituzioni religiose. La nostra popolazione &#232; entusiasta del gesto.</Italian>
 		<Spanish>Un matrimonio %s5:1_religion_adjective entre una de nuestras familias y otra %s1:2_civ_adjective ha sido honrado con una fiesta nacional, incluyendo regalos de bodas incre&#237;bles y generosas donaciones a nuestras instituciones religiosas. Nuestro pueblo est&#225; emocionado con ese gesto.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_LABORATORY_1</Tag>
-		<English>This should speed our current research.</English>
-		<French>Cela devrait acc&#233;l&#233;rer nos recherches actuelles.</French>
-		<German>Damit sollte unsere aktuelle Forschung beschleunigt werden.</German>
-		<Italian>Dovrebbe velocizzare la nostra ricerca in corso.</Italian>
-		<Spanish>Esto acelerar&#225; nuestras investigaciones.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LEFT_AT_ALTAR_1</Tag>
@@ -2587,38 +2419,6 @@
 		<Spanish>&#191;Queremos un ca&#241;&#243;n m&#225;s potente? &#191;Es una pregunta con trampa?</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION</Tag>
-		<English>A rogue radio station in %s2_city is broadcasting propaganda against our ruling party in an amazing display of impudence.</English>
-		<French>Une radio pirate de %s2_city diffuse de fa&#231;on ouverte et insolente de la propagande anti-gouvernementale.</French>
-		<German>Ein Piratensender verbreitet ausgehend von der Stadt %s2_city dreiste Propaganda gegen Eure Regierung.</German>
-		<Italian>Una stazione radio dissidente nella citt&#224; di %s2_city sta diffondendo propaganda contro il nostro partito al potere, mostrando una sorprendente impudenza.</Italian>
-		<Spanish>Una emisora pirata en %s2_city est&#225; emitiendo propaganda contra nuestro partido gobernante en una sorprendente muestra de imprudencia.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION_1</Tag>
-		<English>Send a blackops group to destroy the radio tower, we can blame it on an industrial accident.</English>
-		<French>Envoyez une &#233;quipe d'op&#233;rations noires d&#233;truire la station &#233;mettrice. Nous pr&#233;tendrons qu'il s'agit d'un accident industriel.</French>
-		<German>Ein verdecktes Einsatzkommando soll den Sender zerst&#246;ren, aber lasst es wie einen Unfall aussehen.</German>
-		<Italian>Manda una squadra speciale a distruggere la stazione radio, possiamo addossare le cause ad un incidente industriale.</Italian>
-		<Spanish>Envia un grupo encubierto a destruir la torre de radio, podemos disfrazarlo de accidente industrial.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION_2</Tag>
-		<English>Round up the broadcasters, that should send a message.</English>
-		<French>Envoyez les animateurs au trou, &#231;a devrait faire passer le message.</French>
-		<German>Lasst die Betreiber verhaften, das sollte als Warnung gen&#252;gen.</German>
-		<Italian>Catturate gli annunciatori, capiranno il messaggio.</Italian>
-		<Spanish>Apresa a los locutores, eso enviar&#225; un mensaje.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ROGUE_STATION_3</Tag>
-		<English>Wait for the station to get more listeners, then round them up along with the broadcasters and send them all to do labour at our factories.</English>
-		<French>Attendez que la station gagne des auditeurs, puis arr&#234;tez les animateurs et les diffuseurs et envoyez-les tous travailler dans nos usines.</French>
-		<German>Stellt fest, wer mit dem Piratensender sympathisiert, dann verhaftet die Staatsfeinde und verurteilt sie zur Zwangsarbeit in den Fabriken.</German>
-		<Italian>Attendete che alla stazione radio si radunino vari ascoltatori, poi catturate gli annunciatori e tutti gli ascoltatori che si erano radunati e mandateli ai lavori forzati nelle nostre fabbriche.</Italian>
-		<Spanish>Espera a que la emisora tenga m&#225;s oyentes, entonces apr&#233;salos junto a los locutores y envialos a trabajar a nuestras f&#225;bricas.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUNNING_BULLS_1</Tag>
 		<English>We are glad to see that the local culture is thriving.</English>
 		<French>Nous sommes ravis de constater que la culture locale est en plein essor.</French>
@@ -2755,22 +2555,6 @@
 		<Spanish>Que nuestros mosquetes se adapten a la nueva p&#243;lvora.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_SOLO_FLIGHT_1</Tag>
-		<English>This grand achievement has won admiration from people across the globe!</English>
-		<French>Cet exploit a suscit&#233; l'admiration de nombreuses personnes &#224; travers le globe !</French>
-		<German>Diese gro&#223;artige Leistung erf&#228;hrt weltweite Anerkennung!</German>
-		<Italian>Questa grande impresa ha attirato l'ammirazione della gente di tutto il mondo!</Italian>
-		<Spanish>&#161;Esta gran gesta le ha valido la admiraci&#243;n de toda la gente del mundo!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_SOLO_FLIGHT_HELP_1</Tag>
-		<English>[ICON_BULLET]Receive [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] attitude from all leaders</English>
-		<French>[ICON_BULLET]Susciter : [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] de la part de tous les dirigeants</French>
-		<German>[ICON_BULLET]Verbessert die Haltung aller Staatsoberh&#228;upter um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</German>
-		<Italian>[ICON_BULLET]Ricevi [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] atteggiamento da tutti i leader</Italian>
-		<Spanish>[ICON_BULLET]Recibir [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] de actitud de todos los l&#237;deres.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_SOUR_CRUDE_1</Tag>
 		<English>Sour crude? What a mess. Less valuable per barrel, but it still burns, right? Just deal with it.</English>
 		<French>Du p&#233;trole brut acide ? Ah, zut. Bon d'accord, il a moins de valeur, mais il br&#251;le, non ? Vendez-le !</French>
@@ -2897,14 +2681,6 @@
 		<German>Verteilt die neuen Beschl&#228;ge an alle unsere Armbrustsch&#252;tzen.</German>
 		<Italian>Commissiona i nuovi materiali per tutte le nostre unit&#224; di balestrieri.</Italian>
 		<Spanish>Que los nuevos elementos lleguen a todas nuestras unidades de ballesteros.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_SUBWAY_1</Tag>
-		<English>This is a model for the entire world to follow! Great work.</English>
-		<French>Voil&#224; un mod&#232;le &#224; suivre pour le monde entier ! Beau travail.</French>
-		<German>Dieses Modell wird in der ganzen Welt Schule machen! Gute Arbeit!</German>
-		<Italian>Un modello da seguire per il mondo intero! Bel lavoro.</Italian>
-		<Spanish>&#161;Es un ejemplo a seguir para todo el mundo! Buen trabajo.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TEA_1</Tag>
@@ -3235,14 +3011,6 @@
 		<Spanish>&#161;Un dictador m&#225;s carism&#225;tico y fuerte se ha hecho con el control del partido y de la naci&#243;n!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_CHILLY_FLIGHT_1</Tag>
-		<English>A pilot from %s2_city has become the first to fly solo over the North Pole and return safely.</English>
-		<French>Un pilote de la ville : %s2_city est devenu le premier homme &#224; voler en solitaire au-dessus du P&#244;le Nord et &#224; revenir sain et sauf.</French>
-		<German>Ein Pilot aus %s2_city ist erstmals alleine &#252;ber den Nordpol geflogen und sicher zur&#252;ckgekehrt.</German>
-		<Italian>Un pilota di %s2_city ha sorvolato il Polo Nord in solitaria ed &#232; tornato tutto intero.</Italian>
-		<Spanish>Un piloto de %s2_city se ha convertido en el primero que sobrevuela el Polo Norte en solitario y regresa sano y salvo.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CIGARETTE_SMOKER_1</Tag>
 		<English>A careless cigarette smoker started a fire at the Theatre in %s2_city, during which the building was destroyed and numerous patrons died.</English>
 		<French>Un fumeur n&#233;gligent a mis le feu au Th&#233;&#226;tre, &#224; %s2_city. Le b&#226;timent a &#233;t&#233; d&#233;truit et de nombreuses personnes ont p&#233;ri lors de l'incendie.</French>
@@ -3305,14 +3073,6 @@
 		<German>Der gr&#246;&#223;te Teil der Kohle, die in einer unserer Minen abgebaut wird, ist mit Ger&#246;ll, Schiefer und anderen Verunreinigungen durchsetzt. Wir sitzen auf einem Vorkommen minderwertiger Kohle!</German>
 		<Italian>La maggior parte del carbone estratto da una delle nostre miniere &#232; pieno di roccia, scisto e altre impurit&#224;. Ci &#232; capitata una fonte di carbone di scarto!</Italian>
 		<Spanish>La mayor parte del carb&#243;n extra&#237;do de uno de nuestros emplazamientos est&#225; lleno de roca, esquisto y otras impurezas. &#161;Hemos dado con un fil&#243;n de carb&#243;n de turba!</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_COMET_FRAGMENT_1</Tag>
-		<English>A comet fragment has crashed to earth in a remote tundra region, obliterating an entire forest and speeding the earth's rotation by two seconds.</English>
-		<French>Un morceau de com&#232;te a heurt&#233; la Terre dans une toundra lointaine, an&#233;antissant la for&#234;t enti&#232;re et acc&#233;l&#233;rant la rotation de la Terre de deux secondes.</French>
-		<German>Ein Kometenbruchst&#252;ck ist in einer entlegenen Region der Tundra in die Erde eingeschlagen und hat ein ganzes Waldgebiet vernichtet sowie die Erdrotation um zwei Sekunden beschleunigt.</German>
-		<Italian>Il frammento di una cometa &#232; precipitato in una regione remota della tundra, distruggendo un'intera foresta e velocizzando di due secondi la rotazione del pianeta.</Italian>
-		<Spanish>El fragmento de un cometa ha impactado contra la Tierra en una remota regi&#243;n de la Tundra, ha arrasado todo un bosque y ha aumentando en dos segundos la velocidad de rotaci&#243;n del planeta.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CORPORATE_EXPANSION_1</Tag>
@@ -3571,14 +3331,6 @@
 		<Spanish>Una peque&#241;a tribu de lugare&#241;os amistosos ha concedido asilo a [NUM3:nuestro:nuestra:nuestros:nuestras] %s3_unit en dificultades.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_FUEL_ADDITIVES_1</Tag>
-		<English>The mass transit system in %s2_city has implemented a city-wide program of using fuel additives to reduce pollution and improve on maintenance costs and fuel efficiency.</English>
-		<French>Le syst&#232;me de transport en commun de la ville : %s2_city a mis en place un programme d'utilisation d'additifs pour carburant afin de r&#233;duire la pollution et d'am&#233;liorer les co&#251;ts de maintenance et l'efficacit&#233; du carburant.</French>
-		<German>Das Transportsystem in %s2_city unterst&#252;tzt ein stadtweites Programm zu Verwendung von Treibstoffzus&#228;tzen, um die Verschmutzung zu reduzieren, die Kosten zu minimieren und die Leistungsf&#228;higkeit zu verbessern.</German>
-		<Italian>Il sistema di trasporti di massa a %s2_city ha introdotto l'utilizzo a livello cittadino di additivi per carburante per migliorarne la resa e ridurre inquinamento e costi di mantenimento.</Italian>
-		<Spanish>El sistema de transporte de masas de %s2_city ha implementado en toda la ciudad un programa de aditivos de combustible para reducir la poluci&#243;n y los costes de mantenimiento y aumentar la eficiencia del combustible.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_1</Tag>
 		<English>A fugitive from justice, wanted for crimes in the %s1_civ_adjective Empire, has been discovered hiding out in our territory.</English>
 		<French>Un fugitif poursuivi pour des crimes perp&#233;tr&#233;s dans l'empire %s1:1_civ_adjective a &#233;t&#233; d&#233;couvert sur notre territoire.</French>
@@ -3721,22 +3473,6 @@
 		<German>Ein angesehener Kriegsherr, der vom Schloss in %s2_city aus regiert, hat angeboten, auf eigene Kosten eine spezielle Milit&#228;rakademie zu gr&#252;nden.</German>
 		<Italian>Uno stimato signore della guerra, che opera dal castello di %s2_city, si &#232; offerto di istituire a proprie spese una speciale accademia militare.</Italian>
 		<Spanish>Un apreciado caudillo que opera desde el castillo de %s2_city se ha ofrecido a sufragar la creaci&#243;n de una academia militar especial.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_HINDENBERG_1</Tag>
-		<English>Reckless merchants used hydrogen instead of helium to fill their dirigibles and one has caught fire and crashed in a spectacularly fatal accident.</English>
-		<French>Des marchands ont imprudemment utilis&#233; de l'hydrog&#232;ne au lieu de l'h&#233;lium pour remplir leurs dirigeables. L'un d'eux a pris feu et s'est &#233;cras&#233; au cours d'un accident aussi spectaculaire que mortel.</French>
-		<German>Skrupellose H&#228;ndler haben Wasserstoff statt Helium als F&#252;llmittel f&#252;r ihre Luftschiffe verwendet. Eines von ihnen hat Feuer gefangen und ist fatalerweise abgest&#252;rzt.</German>
-		<Italian>Dei mercanti sconsiderati hanno usato l'idrogeno, invece dell'elio, per riempire i loro dirigibili: uno di questi ha preso fuoco ed &#232; precipitato con un fatale e spettacolare incidente.</Italian>
-		<Spanish>Los imprudentes mercaderes han usado hidr&#243;geno en vez de helio para llenar sus dirigibles, y uno de ellos se ha incendiado y estrellado en un accidente tan espectacular como mortal.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_HIYOSILVER_1</Tag>
-		<English>Prospectors have discovered rich new veins of Silver ore.</English>
-		<French>Des chercheurs d'or ont d&#233;couvert une nouvelle veine riche en minerai d'argent.</French>
-		<German>Sch&#252;rfer haben reichhaltige neue Silbererzadern entdeckt.</German>
-		<Italian>I prospettori hanno scoperto nuovi filoni ricchi di argento.</Italian>
-		<Spanish>Los prospectores han descubierto nuevos filones de plata.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HOLY_MOUNTAIN_1</Tag>
@@ -3883,14 +3619,6 @@
 		<Spanish>Los investigadores han descubierto una gran formaci&#243;n natural de gl&#243;bulos de cristal en una zona que rodea un amplio valle circular.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_INDEPENDENTFILMS_1</Tag>
-		<English>A community of independent film producers based in %s2_city has managed to secure a slice of the Hit Movies market.</English>
-		<French>Une communaut&#233; de producteurs de cin&#233;ma ind&#233;pendants, bas&#233;e dans la ville : %s2_city, a r&#233;ussi &#224; s&#233;curiser des parts du march&#233; des films.</French>
-		<German>Ein Team unabh&#228;ngiger Filmproduzenten aus %s2_city konnte sich einen Teil des Filmhits-Marktes sichern.</German>
-		<Italian>Una comunit&#224; di produttori indipendenti di film, a %s2_city, &#232; riuscita ad assicurarsi il controllo di parte dell'industria cinematografica.</Italian>
-		<Spanish>Una comunidad de productores de cine independientes con sede en %s2_city se ha hecho con una parte del mercado de pel&#237;culas de &#233;xito.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_INDUSTRIAL_FIRE_1</Tag>
 		<English>A fire at the Factory in %s2_city, which was started by a worker's mistake, has gutted the building.</English>
 		<French>Suite &#224; l'erreur d'un ouvrier, l'usine de la ville : %s2_city a &#233;t&#233; d&#233;truite par un incendie.</French>
@@ -3953,14 +3681,6 @@
 		<German>Einer unserer prominentesten Gro&#223;industriellen hat einer %s1:2_civ_adjective Industrieerbin einen Heiratsantrag gemacht. Die %s4:3_religion_adjective Trauungszeremonie soll noch in diesem Jahr stattfinden.</German>
 		<Italian>Un'ereditiera industriale %s1:2_civ_adjective ha ricevuto una proposta di matrimonio da uno dei nostri importanti magnati. Il loro matrimonio %s4_religion_adjective sar&#224; celebrato quest'anno.</Italian>
 		<Spanish>Uno de nuestros magnates ha pedido en matrimonio a la heredera de una familia industrial %s1:2_civ_adjective. La boda, que se celebrar&#225; seg&#250;n el rito %s4:1_religion_adjective, se espera para este mismo a&#241;o.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_LABORATORY_1</Tag>
-		<English>A scientific breakthrough has occurred at the Laboratory in %s2_city.</English>
-		<French>Une d&#233;couverte scientifique a eu lieu au laboratoire de la ville : %s2_city.</French>
-		<German>Im Labor in %s2_city hat es einen wissenschaftlichen Durchbruch gegeben.</German>
-		<Italian>C'&#232; stata una scoperta scientifica nel laboratorio di %s2_city.</Italian>
-		<Spanish>Un avance cient&#237;fico ha tenido lugar en el laboratorio de %s2_city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_LEFT_AT_ALTAR_1</Tag>
@@ -4379,14 +4099,6 @@
 		<Spanish>La invenci&#243;n de la p&#243;lvora sin humo ha mejorado la efectividad de nuestros mosquetes en el campo de batalla.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_SOLO_FLIGHT_1</Tag>
-		<English>A daring pilot has successfully flown around the globe in a single person airplane.</English>
-		<French>Un courageux pilote a r&#233;ussi &#224; faire le tour du monde dans un avion monoplace.</French>
-		<German>Ein waghalsiger Pilot hat in einem Einsitzer erfolgreich die Erde umrundet.</German>
-		<Italian>Un coraggioso pilota &#232; riuscito a volare attorno al mondo in un aereo monoposto.</Italian>
-		<Spanish>Un audaz piloto ha conseguido dar la vuelta al mundo en un aeroplano monoplaza.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SOUR_CRUDE_1</Tag>
 		<English>Most of the crude oil being pumped from one of our sites is thick with sulfur and other impurities. We are stuck with a source of sour crude!</English>
 		<French>La majeure partie du p&#233;trole extrait de l'un de nos sites est charg&#233;e de sulfure et autres impuret&#233;s. Nous ne savons pas quoi faire de ce p&#233;trole brut acide !</French>
@@ -4441,14 +4153,6 @@
 		<German>Die Waffenschmiede haben die St&#228;rke und Haltbarkeit der Armbrustbeschl&#228;ge verbessert. So halten sie eine h&#246;here Zugkraft aus und k&#246;nnen mehr Kraft entwickeln.</German>
 		<Italian>Gli armaioli hanno migliorato forza e resistenza dei materiali utilizzati per fare balestre. Ci&#242; permette una maggiore tensione e pi&#249; potenza.</Italian>
 		<Spanish>Los forjadores de armas han mejorado la fuerza y durabilidad de los elementos empleados en la confecci&#243;n de las ballestas. Esto permite una mayor tensi&#243;n y una potencia mejorada.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_SUBWAY_1</Tag>
-		<English>The glorious city of %s2_city has added an underground railroad network to its mass transit system, greatly boosting commercial traffic.</English>
-		<French>La glorieuse ville de %s2_city a ajout&#233; un r&#233;seau de transport ferr&#233; &#224; son syst&#232;me de transport en commun, augmentant consid&#233;rablement le trafic commercial.</French>
-		<German>Die prachtvolle Stadt %s2_city hat ihr Nahverkehrssystem durch ein unterirdisches Schienennetz erweitert, wodurch der Handelsverkehr erheblichen Auftrieb erh&#228;lt.</German>
-		<Italian>La gloriosa citt&#224; di %s2_city ha aggiunto al proprio sistema di trasporti pubblici una rete ferroviaria sotterranea, aumentando di molto il traffico commerciale.</Italian>
-		<Spanish>La gloriosa ciudad de %s2_city ha a&#241;adido una red de ferrocarriles subterr&#225;neos a sus transportes p&#250;blicos, lo que ha impulsado mucho el tr&#225;fico comercial.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TEA_1</Tag>
@@ -5051,14 +4755,6 @@
 		<Spanish>Los descubrimientos realizados por el imperio %s1:1_civ_adjective han impulsado sus avances en el actual proyecto de investigaci&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_BROKEN_DAM</Tag>
-		<English>The dam in %s2_city has broken, flooding the city's suburbs and killing people.</English>
-		<French>Le barrage de %s2_city a rompu, inondant les faubourgs de la ville et faisant de nombreuses victimes.</French>
-		<German>Ein Bruch des Wasserschutzwalls in der Stadt %s2_city verursacht &#220;berflutungen von Stadtbezirken und fordert Todesopfer.</German>
-		<Italian>La diga di %s2_city &#232; crollata. I sobborghi della citt&#224; sono stati inondati e sono state segnalate diverse persone uccise.</Italian>
-		<Spanish>La presa en %s2_city ha cedido, inundando las afueras de la ciudad y matando gente.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BROTHERS_IN_NEED</Tag>
 		<English>%s1_civ_adjective leaders have met with their %s4_civ_adjective %s3_religion_adjective brothers to discuss the possibility of sending them strategic resources to aid in their war effort.</English>
 		<French>Les dirigeants %s1:3_civ_adjective ont rencontr&#233; leurs fr&#232;res %s3:3_religion_adjective %s4:3_civ_adjective pour discuter de la possibilit&#233; de leur envoyer des ressources strat&#233;giques, afin de soutenir leur effort de guerre.</French>
@@ -5089,14 +4785,6 @@
 		<German>Ein charismatischer %s1:3_civ_adjectiver Diktator hat die Kontrolle &#252;ber die Partei &#252;bernommen. Dieser m&#228;chtige Mann bildet die Regierung zu seinen Gunsten neu.</German>
 		<Italian>Un carismatico dittatore %s1:1_civ_adjective &#232; arrivato al controllo del partito. Questo forte uomo sta cambiando il governo secondo i propri piani.</Italian>
 		<Spanish>Un carism&#225;tico dictador %s1:1_civ_adjective se ha hecho con el control del partido. Este hombre fuerte est&#225; remodelando el gobierno para adaptarlo a sus planes.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_CHILLY_FLIGHT</Tag>
-		<English>A pilot from %s2_city has inspired pride amongst the %s1_civ_adjective people by becoming the first to fly solo over the North Pole.</English>
-		<French>Un pilote de la ville : %s2_city a inspir&#233; la fiert&#233; des %s1:2_civ_adjective en devenant le premier homme &#224; voler en solitaire au-dessus du p&#244;le Nord.</French>
-		<German>Ein Pilot aus %s2_city hat den Stolz des %s1:2_civ_adjective Volks erweckt, als er im Alleingang &#252;ber den Nordpol geflogen ist.</German>
-		<Italian>Un pilota di %s2_city ha inorgoglito la popolazione %s1:2_civ_adjective avendo sorvolato per primo il Polo Nord da solo.</Italian>
-		<Spanish>Un piloto de %s2_city ha despertado el orgullo del pueblo %s1:1_civ_adjective al convertirse en el primero en sobrevolar el Polo Norte en solitario.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CIGARETTE_SMOKER</Tag>
@@ -5139,14 +4827,6 @@
 		<Spanish>Los mercaderes %s1:3_civ_adjective est&#225;n ofreciendo descuentos por la compra al por mayor de carb&#243;n de turba, que est&#225; lleno de impurezas.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_COMET_FRAGMENT</Tag>
-		<English>A comet fragment has struck the earth in a remote tundra region, obliterating a whole forest. %s1_civ_adjective scientists are scrambling like mad to learn more about potential threats posed to our planet by other rogue heavenly bodies: comets, asteroids, meteors, and whatever else may be lurking out there.</English>
-		<French>Un morceau de com&#232;te a heurt&#233; la Terre dans une toundra lointaine, an&#233;antissant la for&#234;t enti&#232;re. Des scientifiques %s1:3_civ_adjective essayent d&#233;sesp&#233;rement d'en savoir plus sur les &#233;ventuelles menaces pos&#233;es &#224; notre plan&#232;te par d'autres corps astraux : com&#232;tes, ast&#233;ro&#239;des, m&#233;t&#233;ores et tout ce qui pourrait errer dans l'espace.</French>
-		<German>Ein Kometenbruchst&#252;ck ist in einer entlegenen Region der Tundra in die Erde eingeschlagen und hat ein ganzes Waldgebiet vernichtet. %s1:3_civ_adjective Wissenschaftler arbeiten fieberhaft daran, mehr &#252;ber die von diversen instabilen Himmelsk&#246;rpern ausgehenden potenziellen Gefahren f&#252;r unseren Planeten in Erfahrung zu bringen - wie Kometen, Asteroiden, Meteoriten und was sonst noch so da drau&#223;en lauern mag.</German>
-		<Italian>Il frammento di una cometa &#232; precipitato in una regione remota della tundra, distruggendo un'intera foresta. Gli scienziati %s1:3_civ_adjective stanno impazzendo per scoprire di pi&#249; sulle potenziali minacce per il nostro pianeta rappresentate da altri corpi celesti: comete, asteroidi, meteoriti e qualsiasi altra cosa si nasconda l&#224; fuori.</Italian>
-		<Spanish>Un fragmento de un cometa ha impactado contra la Tierra en una remota regi&#243;n de la Tundra, y ha arrasado todo un bosque. Los cient&#237;ficos %s1:3_civ_adjective se est&#225;n devanando los sesos para aprender m&#225;s de los peligros potenciales que presentan para nuestro planeta otros cuerpos celestes errantes: cometas, meteoritos, asteroides y lo que sea que pulule por ah&#237; fuera.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CONTROVERSIAL_PHILOSOPHER</Tag>
 		<English>A %s1_civ_adjective philosopher has stirred up controversy among the religious population.</English>
 		<French>Un philosophe %s1_civ_adjective est &#224; l'origine d'une controverse au sein de la population religieuse.</French>
@@ -5185,14 +4865,6 @@
 		<German>Ein heftiger Wirbelsturm hat in der %s1:2_civ_adjective Stadt %s2_city gew&#252;tet und schwere Sch&#228;den verursacht.</German>
 		<Italian>Un gigantesco ciclone ha colpito la citt&#224; %s1:2_civ_adjective di %s2_city, causando diffusi danni da vento e inondazioni.</Italian>
 		<Spanish>Un cicl&#243;n enorme ha ca&#237;do sobre la ciudad %s1:2_civ de %s2_city, lo que ha provocado fuertes rachas de vientos y grandes da&#241;os.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_DEFECTING_AGENT</Tag>
-		<English>A high-ranking %s1_civ_adjective intelligence agent has defected to the %s4_civ_adjective government.</English>
-		<French>Un agent %s1_civ_adjective haut plac&#233; a d&#233;sert&#233; et a rejoint le gouvernement %s4_civ_adjective.</French>
-		<German>Ein hochrangiger %[s1:3_civ_adjective]r Spion ist zum %s4:2_civ_adjective Reich &#252;bergelaufen.</German>
-		<Italian>Un agente di grado elevato dell'intelligence %s1:2_civ_adjective ha defezionato ed &#232; passato al servizio del governo %s4:1_civ_adjective.</Italian>
-		<Spanish>Un agente de inteligencia %s1_civ_adjective de alto rango ha desertado al gobierno %s4_civ_adjective.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISSIDENT_PRIEST</Tag>
@@ -5361,14 +5033,6 @@
 		<German>Ein frommes Volk, das an Barmherzigkeit glaubt, hat seinen religi&#246;sen Schutz auf eine verwundete %s1:3_civ_adjective Einheit ausgedehnt.</German>
 		<Italian>Una trib&#249; misericordiosa ha esteso la propria protezione religiosa a un'unit&#224; ferita di origine %s1:2_civ_adjective.</Italian>
 		<Spanish>Una devota tribu que cree en la misericordia ha proporcionado protecci&#243;n religiosa a una unidad herida de origen %s1:1_civ_adjective.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_FUEL_ADDITIVES</Tag>
-		<English>The %s1_civ_adjective mass transit system in %s2_city has begun to use advanced fuel additives to reduce pollution, cut costs, and improve vehicle performance.</English>
-		<French>Le syst&#232;me %s1_civ_adjective de transports en commun a commenc&#233; &#224; utiliser des additifs pour carburant avanc&#233;s afin de r&#233;duire la pollution, les co&#251;ts et d'am&#233;liorer la performance des v&#233;hicules.</French>
-		<German>Das %s1:3_civ_adjective Transportsystem der Stadt %s2_city nutzt nun verbesserte Treibstoffzus&#228;tze, um die Verschmutzung zu reduzieren, die Kosten zu minimieren und die Leistungsf&#228;higkeit zu verbessern.</German>
-		<Italian>Il sistema di trasporti di massa %s1_civ_adjective a %s2_city ha cominciato a utilizzare additivi per il carburante in modo da ridurre inquinamento e costi e migliorare le prestazioni.</Italian>
-		<Spanish>El sistema de transporte de masas %s1:1_civ_adjective de %s2_city ha empezado a utilizar aditivos de combustible avanzados para reducir la poluci&#243;n y los costes y mejorar el rendimiento de los veh&#237;culos.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FUGITIVE</Tag>
@@ -5595,14 +5259,6 @@
 		<Spanish>El presidente %s1_civ_adjective se enfrente a una moci&#243;n de censura.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_INDEPENDENTFILMS</Tag>
-		<English>%s1_civ_adjective filmmakers from %s2_city have managed to wrest control over a slice of the Hit Movies market.</English>
-		<French>Des cin&#233;astes ind&#233;pendants %s1:2_civ_adjective de la ville : %s2_city de ont pris le contr&#244;le de certaines parts du march&#233; des films.</French>
-		<German>Unabh&#228;ngige Filmproduzenten aus %s2_city im %s1:2_civ_adjective Reich konnten einen Teil des Filmhits-Marktes f&#252;r sich beanspruchen.</German>
-		<Italian>Produttori indipendenti di film di %s2_city, nella civilt&#224; %s1:2_civ_adjective sono riusciti a ottenere il controllo di parte dell'industria cinematografica.</Italian>
-		<Spanish>Cineastas independientes de %s2_city, poblaci&#243;n del imperio %s1:1_civ_adjective, han logrado hacerse con el control de una parte del mercado de pel&#237;culas de &#233;xito.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_INDUSTRIAL_FIRE</Tag>
 		<English>An industrial accident started a fire that gutted the Factory in %s2_city.</English>
 		<French>Un accident industriel a d&#233;clench&#233; un incendie qui a ravag&#233; l'usine de la ville : %s2_city.</French>
@@ -5657,14 +5313,6 @@
 		<German>Durch eine fr&#246;hliche %s3:3_religion_adjective Hochzeit wurde ein neues Band zwischen der %s1:2_civ_adjective und der %s4:2_civ_adjective Bev&#246;lkerung gekn&#252;pft. Das Brautpaar wird auf beiden Seiten gleicherma&#223;en verehrt und man freut sich &#252;ber die neu hinzugewonnene Schwiegerverwandtschaft in der jeweils anderen Nation.</German>
 		<Italian>Un felice matrimonio nella tradizione religiosa %s3:2_religion_adjective ha creato nuovi legami tra la popolazione %s1:2_civ_adjective e quella %s4:2_civ_adjective, che adorano la nuova coppia e sono compiaciute del comportamento dei suoceri dell'altra nazione.</Italian>
 		<Spanish>Un alegre matrimonio en la tradici&#243;n %s3:2_religion_adjective ha forjado nuevos v&#237;nculos entre los pueblos %s1:1_civ_adjective y %s4:1_civ_adjective, que adoran a la nueva pareja y est&#225;n encantados con el comportamiento de la familia de la otra naci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_LABORATORY</Tag>
-		<English>A scientific breakthrough at the laboratory in %s2_city is credited in part to the free flow of ideas and information nurtured by the %s1_civ_adjective government.</English>
-		<French>Une d&#233;couverte scientifique au laboratoire de la ville : %s2_city est en partie attribu&#233;e au flot d'id&#233;es et d'informations encourag&#233;es par le gouvernement %s1_civ_adjective.</French>
-		<German>Ein wissenschaftlicher Durchbruch im Labor in %s2_city wird zum Teil dem freien Ideen- und Informationsfluss zugeschrieben, der von der %s1:2_civ_adjective Regierung gef&#246;rdert wird.</German>
-		<Italian>Una scoperta scientifica nel laboratorio di %s2_city &#232; dovuta in parte alla libera circolazione di idee e informazioni alimentata dal governo %s1_civ_adjective.</Italian>
-		<Spanish>Un gran avance cient&#237;fico que ha tenido lugar en el laboratorio de %s2_city se atribuye en parte al libre flujo de ideas e informaci&#243;n fomentado por el gobierno %s1:1_civ_adjective</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_LEFT_AT_ALTAR</Tag>
@@ -5907,14 +5555,6 @@
 		<Spanish>Ahora, las unidades de ca&#241;ones %s1:4_civ_adjective pueden disparar m&#225;s lejos y con mayor precisi&#243;n gracias a las mejoras en el dise&#241;o del ca&#241;&#243;n.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_ROGUE_STATION</Tag>
-		<English>A rogue radio station in the %s1_civ_adjective city of %s2_city is broadcasting propaganda against the ruling party.</English>
-		<French>Une radio pirate dans la ville %s1_civ_adjective de %s2_city diffuse de la propagande anti-gouvernementale.</French>
-		<German>Im %s1:2_civ_adjective Reich verbreitet ein Piratensender ausgehend von der Stadt %s2_city Propaganda gegen die Regierung.</German>
-		<Italian>Una stazione radio dissidente nella citt&#224; %s1:2_civ_adjective di %s2_city sta diffondendo propaganda contro il partito al potere</Italian>
-		<Spanish>Una emisora pirata en la ciudad %s1_civ_adjective de %s2_city est&#225; emitiendo propaganda contra el partido gobernante.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RUNNING_BULLS</Tag>
 		<English>"Running With the Bulls", an annual ritual practiced by the people of %s2_city, is gaining worldwide renown.</English>
 		<French>La course "Courons avec les taureaux", pratiqu&#233;e chaque ann&#233;e par les habitants de %s2_city, est en train de se forger une r&#233;putation mondiale.</French>
@@ -6011,14 +5651,6 @@
 		<Spanish>Los forjadores de armas %s1:3_civ_adjective han inventado p&#243;lvora sin humo, lo que proporciona a sus mosquetes una importante ventaja.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_SOLO_FLIGHT</Tag>
-		<English>A daring %s1_civ_adjective pilot is the first to fly solo around the world, lifting spirits across the globe and winning admiration from all of humanity.</English>
-		<French>Un courageux citoyen %s1:1_civ_adjective est devenu le premier pilote &#224; faire le tour du monde en solitaire, suscitant l'enthousiasme et l'admiration de nombreuses personnes &#224; travers le globe.</French>
-		<German>Einem waghalsigen %s1:2_civ_adjective Piloten ist erstmals die Umrundung der Erde mit dem Flugzeug gelungen. Diese Leistung erf&#228;hrt weltweite Anerkennung und verbessert die Stimmung der Menschen.</German>
-		<Italian>Un coraggioso pilota %s1:1_civ_adjective &#232; il primo a volare da solo intorno al mondo, elevando gli spiriti della popolazione mondiale e guadagnandosi l'ammirazione di tutta l'umanit&#224;.</Italian>
-		<Spanish>Un audaz piloto %s1:1_civ_adjective ha sido el primero en dar la vuelta al globo en solitario, ha inspirado a todo el mundo y se ha ganado la admiraci&#243;n de la humanidad.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SOUR_CRUDE</Tag>
 		<English>%s1_civ_adjective merchants are offering discounts on barrels of their sour crude oil, which is filled with impurities.</English>
 		<French>Les marchands %s1:3_civ_adjective proposent des r&#233;ductions sur des tonnes de p&#233;trole brut acide, infest&#233; d'impuret&#233;s.</French>
@@ -6073,14 +5705,6 @@
 		<German>%s1:3_civ_adjective Armbrustsch&#252;tzen haben angeblich verbesserte Waffen. Wie oder warum ihre Armbr&#252;ste st&#228;rker sind, ist unklar.</German>
 		<Italian>Pare che i balestrieri %s1:3_civ_adjective abbiano armi migliorate. I motivi per cui le loro balestre risultino pi&#249; forti rimangono un mistero.</Italian>
 		<Spanish>Se rumorea que las unidades de ballesteros %s1:4_civ_adjective llevan armas mejoradas. Sigue siendo un misterio qu&#233; es exactamente lo que hace m&#225;s potentes sus ballestas.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_SUBWAY</Tag>
-		<English>The %s1_civ_adjective metropolis of %s2_city has constructed a mass transit marvel: an underground railroad network. They are calling it the Subway.</English>
-		<French>La m&#233;tropole %s1:2_civ_adjective de %s2_city a construit une merveille destin&#233;e aux transports de masse : un r&#233;seau ferr&#233; souterrain. Ils appellent &#231;a "le m&#233;tropolitain".</French>
-		<German>Die %s1:3_civ_adjective Metropole %s2_city hat ein Wunderwerk des Nahverkehrs errichtet: ein unterirdisches Schienennetz, U-Bahn genannt.</German>
-		<Italian>La metropoli %s1:2_civ_adjective di %s2_city ha costruito una meraviglia per il trasporto di massa: una rete ferroviaria sotterranea. L'hanno chiamata Metropolitana.</Italian>
-		<Spanish>La metr&#243;polis %s1:2_civ_adjective de %s2_city ha construido una maravilla de los transportes p&#250;blicos: una red subterr&#225;nea de ferrocarriles. La han llamado "metropolitano" o "metro".</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THOROUGHBRED</Tag>
@@ -6225,94 +5849,6 @@
 		<German>Die M&#246;nche des %s1:2_civ_adjective Reichs, die schon seit Jahren Wein anbauen, produzieren erstaunliche Mengen.</German>
 		<Italian>I monaci %s1:3_civ_adjective hanno coltivato per anni i propri vigneti e ora producono vini in quantit&#224; significative.</Italian>
 		<Spanish>Monjes %s1:3_civ_adjective que llevan a&#241;os cultivando vi&#241;as producen ahora vinos en cantidades significativas.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_NUCLEAR_REACTOR_LEAK</Tag>
-		<English>Radiation leaks have been discovered in the reactor of the Nuclear Plant in the %s1_civ_adjective city of %s2_city.</English>
-		<French>Des fuites radioactives ont &#233;t&#233; d&#233;couvertes dans le r&#233;acteur de la centrale nucl&#233;aire de la ville %s1_civ_adjective de %s2_city.</French>
-		<German>Im Atomkraftwerk der %s1:2_civ_adjective Stadt %s2_city wurden Strahlungslecks im Reaktor entdeckt.</German>
-		<Italian>Radiation leaks have been discovered in the reactor of the Nuclear Plant in the %s1_civ_adjective city of %s2_city.</Italian>
-		<Spanish>Radiation leaks have been discovered in the reactor of the Nuclear Plant in the %s1_civ_adjective city of %s2_city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_NUCLEAR_REACTOR_LEAK_1</Tag>
-		<English>Radiation leaks have been discovered in the reactor of the Nuclear Plant in %s2_city.</English>
-		<French>Des fuites radioactives ont &#233;t&#233; d&#233;couvertes dans le r&#233;acteur de la centrale nucl&#233;aire de %s2_city.</French>
-		<German>Im Atomkraftwerk von %s2_city wurden Strahlungsleck im Reaktor entdeckt.</German>
-		<Italian>Radiation leaks have been discovered in the reactor of the Nuclear Plant in %s2_city.</Italian>
-		<Spanish>Radiation leaks have been discovered in the reactor of the Nuclear Plant in %s2_city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENTTRIGGER_NUCLEAR_REACTOR_LEAK_AGAIN</Tag>
-		<English>The radioactive leaks in Nuclear Plant in the %s1_civ_adjective city of %s2_city are still not contained.</English>
-		<French>Les fuites radioactives de la centrale nucl&#233;aire de la ville %s1_civ_adjective de %s2_city ne sont toujours pas colmat&#233;es.</French>
-		<German>Die Strahlungslecks im Atomkraftwerk der %s1:2_civ_adjective Stadt %s2_city sind immer noch nicht einged&#228;mmt.</German>
-		<Italian>The radioactive leaks in Nuclear Plant in the %s1_civ_adjective city of %s2_city are still not contained.</Italian>
-		<Spanish>The radioactive leaks in Nuclear Plant in the %s1_civ_adjective city of %s2_city are still not contained.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_NUCLEAR_REACTOR_LEAK_AGAIN_1</Tag>
-		<English>Our inspectors are still reporting radiation leaks in the Nuclear Plant in %s2_city.</English>
-		<French>Nos inspecteurs rapportent toujours des fuites radioactives dans la centrale nucl&#233;aire de %s2_city.</French>
-		<German>Unsere Inspektoren berichten immer noch von Strahlungslecks im Atomkraftwerk von %s2_city.</German>
-		<Italian>Our inspectors are still reporting radiation leaks in the Nuclear Plant in %s2_city.</Italian>
-		<Spanish>Our inspectors are still reporting radiation leaks in the Nuclear Plant in %s2_city.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_1</Tag>
-		<English>Our reactors are safe. Contain the leaks, but there is no need for further action.</English>
-		<French>Nos r&#233;acteurs sont s&#233;curitaires. Colmatez les fuites, mais nous n'avons pas besoin d'en faire plus.</French>
-		<German>Unsere Reaktoren sind sicher. D&#228;mmt das Leck ein, aber es besteht kein Bedarf f&#252;r weitere Ma&#223;nahmen.</German>
-		<Italian>Our reactors are safe. Contain the leaks, but there is no need for further action.</Italian>
-		<Spanish>Our reactors are safe. Contain the leaks, but there is no need for further action.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_2</Tag>
-		<English>Leaks like these are dangerous. We must invest in modernizing our reactors to keep them safe for the future.</English>
-		<French>De telles fuites sont dangereuses. Nous devons investir dans la modernisation de nos r&#233;acteurs afin d'assurer leur s&#251;ret&#233; future.</French>
-		<German>Diese Lecks sind gef&#228;hrlich. Wir m&#252;ssen in die Modernisierung unserer Reaktoren investieren, um sie auch in Zukunft sicher zu halten.</German>
-		<Italian>Leaks like these are dangerous. We must invest in modernizing our reactors to keep them safe for the future.</Italian>
-		<Spanish>Leaks like these are dangerous. We must invest in modernizing our reactors to keep them safe for the future.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_3</Tag>
-		<English>This shows that nuclear energy is too dangerous for our society. Make plans to transition out of nuclear power as soon as possible.</English>
-		<French>Le danger que pose l'&#233;nergie nucl&#233;aire pour notre soci&#233;t&#233; n'est plus &#224; d&#233;montrer. Nous devons sortir du nucl&#233;aire aussit&#244;t que possible.</French>
-		<German>Dies zeigt, dass Atomenergie zu gef&#228;hrlich f&#252;r unsere Gesellschaft ist. Fasst Pl&#228;ne, so schnell wie m&#246;glich aus der Atomkraft auszusteigen.</German>
-		<Italian>This shows that nuclear energy is too dangerous for our society. Make plans to transition out of nuclear power as soon as possible.</Italian>
-		<Spanish>This shows that nuclear energy is too dangerous for our society. Make plans to transition out of nuclear power as soon as possible.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_1_HELP</Tag>
-		<English>[ICON_BULLET]Medium risk of a nuclear meltdown.[NEWLINE][ICON_BULLET]Radiation leaks may continue.</English>
-		<French>[ICON_BULLET]Risque mod&#233;r&#233; de fusion du c&#339;ur du r&#233;acteur.[NEWLINE][ICON_BULLET]Les fuites radioactives pourraient continuer.</French>
-		<German>[ICON_BULLET]Mittleres Risiko einer Kernschmelze.[NEWLINE][ICON_BULLET]Strahlungslecks k&#246;nnen sich fortsetzen.</German>
-		<Italian>[ICON_BULLET]Medium risk of a nuclear meltdown.[NEWLINE][ICON_BULLET]Radiation leaks may continue.</Italian>
-		<Spanish>[ICON_BULLET]Medium risk of a nuclear meltdown.[NEWLINE][ICON_BULLET]Radiation leaks may continue.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_2_HELP</Tag>
-		<English>[ICON_BULLET]Low risk of a nuclear meltdown.[NEWLINE][ICON_BULLET]Radiation leaks may continue.</English>
-		<French>[ICON_BULLET]Faible risque de fusion du c&#339;ur du r&#233;acteur.[NEWLINE][ICON_BULLET]Les fuites radioactives pourraient continuer.</French>
-		<German>[ICON_BULLET]Geringes Risiko einer Kernschmelze.[NEWLINE][ICON_BULLET]Strahlungslecks k&#246;nnen sich fortsetzen.</German>
-		<Italian>[ICON_BULLET]Low risk of a nuclear meltdown.[NEWLINE][ICON_BULLET]Radiation leaks may continue.</Italian>
-		<Spanish>[ICON_BULLET]Low risk of a nuclear meltdown.[NEWLINE][ICON_BULLET]Radiation leaks may continue.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_3_HELP</Tag>
-		<English>[ICON_BULLET]Nuclear Plants will become obsolete.</English>
-		<French>[ICON_BULLET]Les centrales nucl&#233;aires deviendront obsol&#232;tes.</French>
-		<German>[ICON_BULLET]Atomkraftwerke werden veraltet.</German>
-		<Italian>[ICON_BULLET]Nuclear Plants will become obsolete.</Italian>
-		<Spanish>[ICON_BULLET]Nuclear Plants will become obsolete.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_NUCLEAR_MELTDOWN</Tag>
-		<English>The worst has occurred! One of our reactors has suffered a nuclear meltdown!</English>
-		<French>Le pire est arriv&#233; ! L'un de nos r&#233;acteurs a subi une fusion du c&#339;ur !</French>
-		<German>Der Schlimmstfall ist eingetreten! Einer unserer Reaktoren hat eine Kernschmelze erlittern!</German>
-		<Italian>The worst has occurred! One of our reactors has suffered a nuclear meltdown!</Italian>
-		<Spanish>The worst has occurred! One of our reactors has suffered a nuclear meltdown!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HARBORMASTER_1</Tag>

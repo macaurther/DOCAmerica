@@ -70,14 +70,5 @@
 			</CarrierUnitAIs>
 			<ProductionTraits/>
 		</SpecialUnitInfo>
-		<SpecialUnitInfo>
-			<Type>SPECIALUNIT_SATELLITE</Type>
-			<Description>TXT_KEY_SPECIALUNIT_SATELLITE</Description>
-			<bValid>1</bValid>
-			<bPlayerValid>0</bPlayerValid>
-			<bCityLoad>1</bCityLoad>
-			<CarrierUnitAIs/>
-			<ProductionTraits/>
-		</SpecialUnitInfo>
 	</SpecialUnitInfos>
 </Civ4SpecialUnitInfos>

@@ -329,7 +329,7 @@
 			<Description>TXT_KEY_CIVIC_COMMONWEALTH</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COMMONWEALTH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Strategy>
-			<TechPrereq>TECH_GLOBALISM</TechPrereq>
+			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Individualism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -825,10 +825,6 @@
 					<BuildingType>BUILDINGCLASS_TEXTILE_MILL</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_FACTORY</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -901,7 +897,7 @@
 			<Description>TXT_KEY_CIVIC_AUTOMATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_AUTOMATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_AUTOMATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_COMPUTERS</TechPrereq>
+			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Automation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -935,23 +931,11 @@
 			</ImprovementYieldChanges>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_FACTORY</BuildingType>
+					<BuildingType>BUILDINGCLASS_STEEL_MILL</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_COAL_PLANT</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_HYDRO_PLANT</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_ELECTRICAL_GRID</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_AUTOMATED_FACTORY</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
@@ -1095,7 +1079,7 @@
 			<Description>TXT_KEY_CIVIC_CONSUMERISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONSUMERISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONSUMERISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_COMMERCIALISM</TechPrereq>
+			<TechPrereq>TECH_MACROECONOMICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Consumerism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -1126,7 +1110,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_PUBLIC_WELFARE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PUBLIC_WELFARE_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_PUBLIC_WELFARE_HELP</Help>
-			<TechPrereq>TECH_SOCIAL_SERVICES</TechPrereq>
+			<TechPrereq>TECH_CIVIL_RIGHTS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Public Welfare.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -1543,16 +1527,6 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>50</iCommerce>
 			</CapitalCommerceModifiers>
-			<BuildingProductionModifiers>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_SECURITY_BUREAU</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_INTELLIGENCE_AGENCY</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-			</BuildingProductionModifiers>
 			<iVassalTradeModifier>50</iVassalTradeModifier>
 		</CivicInfo>
 		<CivicInfo>
@@ -1561,7 +1535,7 @@
 			<Description>TXT_KEY_CIVIC_MULTILATERALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MULTILATERALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MULTILATERALISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_GLOBALISM</TechPrereq>
+			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Multilateralism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>>

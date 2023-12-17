@@ -298,11 +298,6 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeCommerceHappinessPer(((CommerceTypes)iI), GC.getCommerceInfo((CommerceTypes)iI).getInitialHappiness());
 	}
 
-	if (GET_TEAM(getTeam()).getProjectCount(PROJECT_GREAT_FIREWALL) > 0)
-	{
-		changeCommerceHappinessPer(COMMERCE_ESPIONAGE, 5);
-	}
-
 	for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 	{
 		if (GET_PLAYER(getOwnerINLINE()).isBuildingFree((BuildingTypes)iI))
@@ -332,20 +327,13 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeMaxFoodKeptPercent(25);
 	}
 
-	// Leoreth: Las Lajas Sanctuary effect: +10% heal rate in all cities
-	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY))
-	{
-		changeHealRate(10);
-	}
-
 	// MacAurther: Starting population per era:
-	//  Pre Columbian:  1
+	//  Ancient:		1
+	//  Classical:		2
 	//  Exploration:    2
-	//  Colonial:       2
+	//  Colonial:       3
 	//  Revolutionary:  3
-	//  Industrial:     3
-	//  Modern:         4
-	//  Atomic:         4
+	//  Industrial:     4
 	int iCurrentEra = GET_PLAYER(eOwner).getCurrentEra();
 	int iExtraPopulation = iCurrentEra > 0 ? (iCurrentEra + 1) / 2 : 0;
 
@@ -2304,25 +2292,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	if (GC.getBuildingInfo(eBuilding).isGovernmentCenter())
 	{
 		if (isGovernmentCenter())
-		{
-			return false;
-		}
-	}
-
-	// Leoreth: Burj Khalifa -> MacAurther: The Strip requires ten desert tiles
-	if (eBuilding == (BuildingTypes)BUILDING_THE_STRIP)
-	{
-		int iNumDesertTiles = 0;
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			if (getCityIndexPlot(iI)->getTerrainType() == TERRAIN_DESERT)
-			{
-				iNumDesertTiles++;
-				break;
-			}
-		}
-
-		if (iNumDesertTiles < 10)
 		{
 			return false;
 		}
@@ -8374,11 +8343,6 @@ int CvCity::getSpaceProductionModifier() const
 void CvCity::changeSpaceProductionModifier(int iChange)
 {
 	m_iSpaceProductionModifier = (m_iSpaceProductionModifier + iChange);
-
-	if (iChange != 0 && GET_TEAM(getTeam()).getProjectCount(PROJECT_GOLDEN_RECORD) > 0)
-	{
-		updateCommerce(COMMERCE_CULTURE);
-	}
 }
 
 
@@ -10276,7 +10240,6 @@ int CvCity::getBaseCommerceRateTimes100(CommerceTypes eIndex) const
 
 	iBaseCommerceRate += 100 * ((getSpecialistPopulation() + getNumGreatPeople() - countNoGlobalEffectsFreeSpecialists()) * GET_PLAYER(getOwnerINLINE()).getSpecialistExtraCommerce(eIndex));
 	iBaseCommerceRate += 100 * (getBuildingCommerce(eIndex) + getSpecialistCommerce(eIndex) + getReligionCommerce(eIndex) + getCorporationCommerce(eIndex) + GET_PLAYER(getOwnerINLINE()).getFreeCityCommerce(eIndex));
-	iBaseCommerceRate += 100 * countSatellites() * GET_PLAYER(getOwnerINLINE()).getSatelliteExtraCommerce(eIndex);
 
 	// MacAurther: Statue of Liberty Effect
 	if (eIndex == COMMERCE_CULTURE && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
@@ -10308,12 +10271,6 @@ int CvCity::getTotalCommerceRateModifier(CommerceTypes eIndex) const
 	if (isPower())
 	{
 		iTotalModifier += getPowerCommerceRateModifier(eIndex);
-	}
-
-	// Leoreth
-	if (eIndex == COMMERCE_CULTURE && GET_TEAM(getTeam()).getProjectCount(PROJECT_GOLDEN_RECORD) > 0)
-	{
-		iTotalModifier += getSpaceProductionModifier() / 2;
 	}
 
 	return std::max(0, iTotalModifier); // Leoreth
@@ -10761,11 +10718,6 @@ int CvCity::getAdditionalBaseCommerceRateBySpecialistImpl(CommerceTypes eIndex, 
 	if (!kSpecialist.isNoGlobalEffects())
 	{
 		iCommerceRate += GET_PLAYER(getOwnerINLINE()).getSpecialistExtraCommerce(eIndex);
-	}
-
-	if (kSpecialist.isSatellite())
-	{
-		iCommerceRate += GET_PLAYER(getOwnerINLINE()).getSatelliteExtraCommerce(eIndex);
 	}
 
 	return iChange * iCommerceRate;
@@ -17711,7 +17663,7 @@ bool CvCity::isBrazilian() const
 
 bool CvCity::isArgentine() const
 {
-	if(getRegionID() == getRegionID() == REGION_CHACO|| getRegionID() == REGION_CUYO || REGION_PAMPAS || getRegionID() == REGION_PATAGONIA)
+	if(getRegionID() == REGION_CHACO|| getRegionID() == REGION_CUYO || REGION_PAMPAS || getRegionID() == REGION_PATAGONIA)
 	{
 		return true;
 	}
@@ -18721,64 +18673,21 @@ void CvCity::changeCorporationUnhealthModifier(int iChange)
 	m_iCorporationUnhealthModifier += iChange;
 }
 
-int CvCity::countSatellites() const
-{
-	int iCount = 0;
-	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
-	{
-		if (GC.getSpecialistInfo((SpecialistTypes)iI).isSatellite())
-		{
-			iCount += getFreeSpecialistCount((SpecialistTypes)iI);
-		}
-	}
-
-	return iCount;
-}
-
-int CvCity::getSatelliteSlots() const
-{
-	if (!GET_TEAM(getTeam()).isHasTech((TechTypes)SATELLITES))
-	{
-		return 0;
-	}
-
-	int iSpecialistSlots = 0;
-
-	for (int iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
-	{
-		iSpecialistSlots += getMaxSpecialistCount((SpecialistTypes)iI);
-	}
-
-	return iSpecialistSlots / 5;
-}
-
-bool CvCity::canSatelliteJoin() const
-{
-	return countSatellites() < getSatelliteSlots();
-}
-
 int CvCity::getSpecialistGreatPeopleRateChange(SpecialistTypes eSpecialist) const
 {
-	CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
-	int iGreatPeopleRate = kSpecialist.getGreatPeopleRateChange();
+       CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
+       int iGreatPeopleRate = kSpecialist.getGreatPeopleRateChange();
 
-	/*if (!kSpecialist.isNoGlobalEffects())
-	{
-		int iCultureLevelRate = kSpecialist.getCultureLevelGreatPeopleRateChange(getCultureLevel());
-		FAssert(iCultureLevelRate == 0);
-		iGreatPeopleRate += iCultureLevelRate;
-	}*/
+       /*if (!kSpecialist.isNoGlobalEffects())
+       {
+               int iCultureLevelRate = kSpecialist.getCultureLevelGreatPeopleRateChange(getCultureLevel());
+               FAssert(iCultureLevelRate == 0);
+               iGreatPeopleRate += iCultureLevelRate;
+       }*/
 
-	if (kSpecialist.isSatellite())
-	{
-		if (GET_TEAM(getTeam()).getProjectCount(PROJECT_INTERNATIONAL_SPACE_STATION))
-		{
-			iGreatPeopleRate += 2;
-		}
-	}
-
-	return iGreatPeopleRate;
+       return iGreatPeopleRate;
 }
+
 
 int CvCity::getActualTotalCultureTimes100() const
 {

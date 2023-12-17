@@ -265,7 +265,6 @@ public:
 // BUG - Building Additional Bombard Defense - end
 
 	void setWonderLimitHelp(CvWStringBuffer &szBuffer, CvCity& city, int iWonderType);
-	void setSatelliteLimitHelp(CvWStringBuffer& szBuffer, CvCity& city);
 
 	DllExport void getGlobeLayerName(GlobeLayerTypes eType, int iOption, CvWString& strName);
 

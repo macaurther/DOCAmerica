@@ -407,7 +407,7 @@ def calculateAdministration(city):
 	bSingleCoreCity = cities.core(iPlayer).owner(iPlayer).count() == 1
 
 	iAdministration = iAdministrationModifier * iPopulation / 100
-	if bSingleCoreCity and iCurrentEra > iPreColumbianEra: 
+	if bSingleCoreCity and iCurrentEra > iClassicalEra: 
 		iAdministration *= 2
 	
 	return iAdministration
@@ -695,10 +695,10 @@ def calculateStability(iPlayer):
 		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= (iCurrentEra - iRevolutionaryEra) * 3
 	
 	if iSlavery in civics:
-		if iCurrentEra >= iModernEra: iCivicEraTechStability -= 5
+		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 5
 	
 	if iCasteSystem in civics:
-		if iCurrentEra >= iModernEra: iCivicEraTechStability -= 5
+		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 5
 	
 	if iMaritimeLaw in civics:
 		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 3

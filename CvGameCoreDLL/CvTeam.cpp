@@ -179,8 +179,6 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 	m_iEspionagePointsEver = 0;
 
 	m_iTotalTechValue = 0; // Leoreth
-	m_iSatelliteInterceptCount = 0; // Leoreth
-	m_iSatelliteAttackCount = 0; // Leoreth
 
 	m_bMapCentering = false;
 	m_bCapitulated = false;
@@ -969,7 +967,7 @@ void CvTeam::doTurn()
 
 	//Rhye
 	//if (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING))
-	if (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)GLOBALISM))
+	if (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)POWER_PROJECTION))
 	{
 		for (iI = 0; iI < GC.getNumTechInfos(); iI++)
 		{
@@ -4760,18 +4758,6 @@ void CvTeam::changeProjectCount(ProjectTypes eIndex, int iChange)
 			}
 
 			// Leoreth
-			if (kProject.isSatelliteIntercept())
-			{
-				changeSatelliteInterceptCount(iChange);
-			}
-
-			// Leoreth
-			if (kProject.isSatelliteAttack())
-			{
-				changeSatelliteAttackCount(iChange);
-			}
-
-			// Leoreth
 			if (bFirst)
 			{
 				if (kProject.isFirstEnemyAnarchy())
@@ -4854,70 +4840,6 @@ void CvTeam::changeProjectCount(ProjectTypes eIndex, int iChange)
 								if (GC.getPromotionInfo((PromotionTypes)kProject.getFreePromotion()).getUnitCombat(iJ))
 								{
 									GET_PLAYER((PlayerTypes)iI).setFreePromotion((UnitCombatTypes)iJ, (PromotionTypes)kProject.getFreePromotion(), iChange > 0);
-								}
-							}
-						}
-
-						// Leoreth
-						if (eIndex == PROJECT_GOLDEN_RECORD)
-						{
-							GET_PLAYER((PlayerTypes)iI).updateCommerce(COMMERCE_CULTURE);
-						}
-
-						// Leoreth
-						else if (eIndex == PROJECT_THE_INTERNET)
-						{
-							for (int iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
-							{
-								if (!GC.getSpecialistInfo((SpecialistTypes)iJ).isNoGlobalEffects())
-								{
-									GET_PLAYER((PlayerTypes)iI).changeSpecialistExtraYield((SpecialistTypes)iJ, YIELD_COMMERCE, iChange);
-								}
-							}
-						}
-
-						// Leoreth
-						else if (eIndex == PROJECT_HUMAN_GENOME_PROJECT)
-						{
-							for (int iJ = 0; iJ < GC.getNumImprovementInfos(); iJ++)
-							{
-								if (GC.getImprovementInfo((ImprovementTypes)iJ).getYieldChange(YIELD_COMMERCE) > 3)
-								{
-									GET_PLAYER((PlayerTypes)iI).changeImprovementYieldChange((ImprovementTypes)iJ, YIELD_FOOD, iChange);
-								}
-							}
-						}
-
-						// Leoreth
-						else if (eIndex == PROJECT_INTERNATIONAL_SPACE_STATION)
-						{
-							int iLoop;
-							for (CvCity* pCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pCity != NULL; pCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
-							{
-								pCity->changeBaseGreatPeopleRate(pCity->countSatellites() * iChange * 2);
-							}
-						}
-
-						// Leoreth
-						else if (eIndex == PROJECT_GREAT_FIREWALL)
-						{
-							int iLoop;
-							for (CvCity* pCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pCity != NULL; pCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
-							{
-								pCity->changeCommerceHappinessPer(COMMERCE_ESPIONAGE, iChange * 5);
-							}
-						}
-
-						// Leoreth
-						else if (eIndex == PROJECT_LUNAR_COLONY)
-						{
-							GET_PLAYER((PlayerTypes)iI).changeSpaceProductionModifier(100);
-							
-							for (iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
-							{
-								if (GC.getSpecialistInfo((SpecialistTypes)iJ).isSatellite())
-								{
-									GET_PLAYER((PlayerTypes)iI).changeSpecialistExtraYield((SpecialistTypes)iJ, YIELD_PRODUCTION, iChange * 2);
 								}
 							}
 						}
@@ -5149,7 +5071,7 @@ void CvTeam::setResearchProgress(TechTypes eIndex, int iNewValue, PlayerTypes eP
 			setHasTech(eIndex, true, ePlayer, true, true);
 			//Rhye
 			//if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && !GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING))
-			if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)GLOBALISM)))
+			if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)POWER_PROJECTION)))
 			{
 				setNoTradeTech(eIndex, true);
 			}
@@ -6692,8 +6614,6 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iEspionagePointsEver);
 
 	pStream->Read(&m_iTotalTechValue); // Leoreth
-	pStream->Read(&m_iSatelliteInterceptCount); // Leoreth
-	pStream->Read(&m_iSatelliteAttackCount); // Leoreth
 
 	pStream->Read(&m_bMapCentering);
 	pStream->Read(&m_bCapitulated);
@@ -6807,8 +6727,6 @@ void CvTeam::write(FDataStreamBase* pStream)
 	pStream->Write(m_iEspionagePointsEver);
 
 	pStream->Write(m_iTotalTechValue); // Leoreth
-	pStream->Write(m_iSatelliteInterceptCount); // Leoreth
-	pStream->Write(m_iSatelliteAttackCount); // Leoreth
 
 	pStream->Write(m_bMapCentering);
 	pStream->Write(m_bCapitulated);
@@ -7118,26 +7036,6 @@ std::set<TeamTypes> CvTeam::determineDefensivePactPartners(std::set<TeamTypes> v
 	}
 
 	return partners;
-}
-
-bool CvTeam::canSatelliteIntercept() const
-{
-	return m_iSatelliteInterceptCount > 0;
-}
-
-void CvTeam::changeSatelliteInterceptCount(int iChange)
-{
-	m_iSatelliteInterceptCount += iChange;
-}
-
-bool CvTeam::canSatelliteAttack() const
-{
-	return m_iSatelliteAttackCount > 0;
-}
-
-void CvTeam::changeSatelliteAttackCount(int iChange)
-{
-	m_iSatelliteAttackCount += iChange;
 }
 
 bool CvTeam::isAllied(TeamTypes eTeam) const
