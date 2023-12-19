@@ -2978,24 +2978,24 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus. 
 [ICON_BULLET]Tribes work the land they're on, decreasing yields available to civilizations with Tribes within their borders.
 [ICON_BULLET]Later in the game, Civics become available to negate Tribes' decrease in yields.
-[ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them. The Tribe then becomes a Contacted Tribe.
-[ICON_BULLET]If you have the [LINK=TECH_LINGUISTICS]Linguistics[\LINK] [LINK=CONCEPT_NATIVE_TECHS]Native Technology[\LINK], an uncontacted Tribe will give you a gift (equivalent to Goody rewards) when you contact them. 
+[ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them, and performing the Contact action. The Tribe then becomes a Contacted Tribe and gives you a gift (equivalent to Goody rewards).
+[ICON_BULLET]Contacting Tribes costs [ICON_COMMERCE]. The [LINK=TECH_LINGUISTICS]Linguistics[\LINK] and the [LINK=TECH_LINGUISTICS]Localization[\LINK] [LINK=CONCEPT_NATIVE_TECHS]Native Technologies[\LINK] reduce the cost to Contact. 
 [ICON_BULLET]Pre-Columbian Native Civilizations (other than the [LINK=CIVILIZATION_IROQUOIS]Iroqouis[\LINK]) have no tools to interact with Tribes other than pillaging them.
 		</English>
 	</TEXT>
 		<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NATIVE_TECHS_PEDIA</Tag>
 		<English>[H1]Native Technologies[\H1][PARAGRAPH:2]Amerindian peoples had lived in the Americas for at least 14,000 years prior to the arrival of Europeans, and they know their land well. They posses knowledge of the locations of mineral deposits, how to track certain animals, and how to cultivate certain crops. This knowledge is inherant to a Native Civilization; however, if you are playing as a European civilization, you will need to obtain it somehow.
-		[PARAGRAPH:1]In Dawn of Civilization: America, the first column of Technologies are the "Native Technologies", which represent generational knowledge Native civilizations have about their land.
-[NEWLINE][ICON_BULLET]Native Techs cannot be researched, have no prerequisite technologies, and lead to no other technologies.
-[ICON_BULLET]Each Native American civilization starts with all of the Native Techs.
-[ICON_BULLET]Native Techs can be traded.
+		[PARAGRAPH:1]In Dawn of Civilization: America, the first two columns of Technologies are the "Native Technologies", which represent generational knowledge Native civilizations have about their land and peoples.
+[NEWLINE][ICON_BULLET]Native Techs cannot be researched.
+[ICON_BULLET]Each Native American civilization starts with some of the Native Techs.
+[ICON_BULLET]Native Techs can be traded and stolen by spies.
 [ICON_BULLET]One random Native Tech is granted to the conqueror of a Native city (if it is not razed).
 [PARAGRAPH:1]Native Techs confer one of three types of advantages:
 [ICON_BULLET]Reveals the location of certain resources, such Gold and Corn.
 [ICON_BULLET]Allows additional promotions.
-[ICON_BULLET]Allows [LINK=CONCEPT_TRIBES]Tribes[\LINK] to give you gifts (Goody rewards) when you contact them. These gifts have a chance of being additional Native Techs.
-[PARAGRAPH:1](Hint): As a European exploring the content, it might be wise to first get the Linguistics tech from a Native civilization, then go around contacting Tribes.
+[ICON_BULLET]Reduces the [ICON_COMMERCE] cost to contact [LINK=CONCEPT_TRIBES]Tribes[\LINK].
+[PARAGRAPH:1](Hint): As a European exploring the content, it might be wise to seek out the [LINK=TECH_LINGUISTICS]Linguistics[\LINK] and the [LINK=TECH_LINGUISTICS]Localization[\LINK] techs to make exploration cheaper.
 		</English>
 	</TEXT>
 	<TEXT>
