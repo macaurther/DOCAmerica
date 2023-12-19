@@ -1077,6 +1077,22 @@ enum RiverTypes						// Exposed to Python
 enum GoodyTypes						// Exposed to Python
 {
 	NO_GOODY = -1,
+
+	GOODY_LOW_GOLD,
+	GOODY_HIGH_GOLD,
+	GOODY_MAP,
+	GOODY_SETTLER,
+	GOODY_WARRIOR,
+	GOODY_SCOUT,
+	GOODY_WORKER,
+	GOODY_EXPERIENCE,
+	GOODY_HEALING,
+	GOODY_TECH,
+	GOODY_BARBARIANS_WEAK,
+	GOODY_BARBARIANS_STRONG,
+	GOODY_SLAVE,
+
+	NUM_GOODIES
 };
 
 enum BuildTypes						// Exposed to Python
@@ -1854,7 +1870,6 @@ enum MissionTypes				// Exposed to Python
 	MISSION_GREAT_MISSION,
 	MISSION_SATELLITE_ATTACK,
 	MISSION_REBUILD,
-	MISSION_CONTACT,
 // BUG - Sentry Actions - start
 #ifdef _MOD_SENTRY
 	MISSION_MOVE_TO_SENTRY,

@@ -148,7 +148,7 @@ def validateSlaves(iPlayer):
 		for city in cities.owner(iPlayer):
 			city.setFreeSpecialistCount(iSpecialistSlave, 0)
 				
-		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) == iSlave):
+		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) == iAfricanSlave):
 			slave.kill(False, iPlayer)
 
 

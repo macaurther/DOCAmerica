@@ -954,7 +954,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 		UnitClassInfo = gc.getUnitClassInfo(UnitInfo.getUnitClassType())
 		iDefaultUnit = UnitClassInfo.getDefaultUnitIndex()
 
-		if UnitInfo.isGraphicalOnly() and not base_unit(iUnit) in [iWarrior, iAxeman, iSlave]:
+		if UnitInfo.isGraphicalOnly() and not base_unit(iUnit) in [iNativeSlave, iAfricanSlave]:
 			return -1
 		elif iDefaultUnit > -1 and iDefaultUnit != iUnit and not iUnit == iNativeSlave:
 			return 2

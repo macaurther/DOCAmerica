@@ -293,9 +293,9 @@ public:
 	bool isWorker() const;
 
 	// MacAurther
-	bool canContact(const CvPlot* pPlot) const;
-	bool canUnitContact() const;
-	bool contact();
+	bool canContactTribe(const CvPlot* pPlot) const;
+	bool canUnitContactTribe() const;
+	bool contactTribe();
 	int getImmigrationRate();
 
 	int upgradePrice(UnitTypes eUnit) const;																											// Exposed to Python

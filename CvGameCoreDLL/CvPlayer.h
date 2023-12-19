@@ -1389,6 +1389,7 @@ public:
 	int getRegionPowers();
 	int getFortRange();
 	int getContactCost();
+	bool canResearchNativeTech(TechTypes eTech) const;
 
 	// Immigration
 	int getGlobalImmigrationRateModifier() const;

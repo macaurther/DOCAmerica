@@ -206,7 +206,7 @@ iInuit : 1050,
 iInca : 1100,
 iAztecs : 1250,
 iIroquois : 1450,
-iSpain : 275, #1496,
+iSpain : 1496,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
@@ -433,7 +433,7 @@ iBombard,		iCannon,		iArtillery,		iHowitzer,		iWorkboat,		iCanoe,			iLongship,		
 iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iSloop,			iFrigate,		iIronclad,		iPrivateer,	    iTorpedoBoat,	
 iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,
 iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,
-iFeGreatSpy,    iSlave,		    iNativeSlave) = range(iNumUnits)
+iFeGreatSpy,    iAfricanSlave,  iNativeSlave) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 

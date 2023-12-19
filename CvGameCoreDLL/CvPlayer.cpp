@@ -5288,12 +5288,6 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 	bool bTechFound;
 	int iI;
 
-	// MacAurther: Only a subset of units can receive goody
-	if(pUnit != NULL && !pUnit->canUnitContact())
-	{
-		return false;
-	}
-
 	if (GC.getGoodyInfo(eGoody).getExperience() > 0)
 	{
 		if ((pUnit == NULL) || !(pUnit->canAcquirePromotionAny()) || (GC.getGameINLINE().getElapsedGameTurns() < 10))
@@ -5318,12 +5312,11 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				// MacAurther: Can get goody techs that you can't normally research, so we just need to check whether or not we have it already
-				//if (canResearch((TechTypes)iI))
-				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
+				if (canResearchNativeTech((TechTypes)iI))
+				{
 					bTechFound = true;
 					break;
-				//}
+				}
 			}
 		}
 
@@ -5517,9 +5510,7 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				// MacAurther: Can get goody techs that you can't normally research, so we just need to check whether or not we have it already
-				//if (canResearch((TechTypes)iI))
-				if (!GET_TEAM(getTeam()).isHasTech((TechTypes)iI))
+				if (canResearchNativeTech((TechTypes)iI))
 				{
 					iValue = (1 + GC.getGameINLINE().getSorenRandNum(10000, "Goody Tech"));
 
@@ -5610,7 +5601,8 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 		return;
 	}
 
-	FAssertMsg(pPlot->isGoody(), "pPlot->isGoody is expected to be true");
+	// MacAurther: isGoody check no longer works, because the Tribe has been replaced by a Contacted Tribe by this point
+	//FAssertMsg(pPlot->isGoody(), "pPlot->isGoody is expected to be true");
 
 	// MacAurther: Don't remove goody
 	//pPlot->removeGoody();
@@ -5632,20 +5624,12 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 
 			if (canReceiveGoody(pPlot, eGoody, pUnit))
 			{
-				// MacAurther: Native techs: Only get Goody if you have the Linguistics Tech
-				if (GET_TEAM(getTeam()).isHasTech((TechTypes)LINGUISTICS))
-				{
-					receiveGoody(pPlot, eGoody, pUnit);
-				}
+				receiveGoody(pPlot, eGoody, pUnit);
 
 				// MacAurther: Iroquois UP: Tribes in your borders give you a gift and improve their tile
 				if (getCivilizationType() == IROQUOIS)
 				{
 					pPlot->improveTile();
-				}
-				else
-				{
-					pPlot->setImprovementType(IMPROVEMENT_CONTACTED_TRIBE);
 				}
 
 				// Python Event
@@ -7392,7 +7376,7 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 		}
 	}
 
-	int iSlaveUnits = getUnitClassCount(UNITCLASS_SLAVE);
+	int iSlaveUnits = getUnitClassCount(UNITCLASS_AFRICAN_SLAVE) + getUnitClassCount(UNITCLASS_NATIVE_SLAVE);
 
 	iPaidUnits = std::max(0, getNumUnits() - iSlaveUnits - iFreeUnits);
 	iPaidMilitaryUnits = std::max(0, getNumMilitaryUnits() - iFreeMilitaryUnits);
@@ -25631,6 +25615,21 @@ int CvPlayer::getContactCost()
 	}
 
 	return iCost;
+}
+
+bool CvPlayer::canResearchNativeTech(TechTypes eTech) const
+{
+	// Can get goody techs that you can't normally research, so we just need to check whether or not we have it already
+	if (!GET_TEAM(getTeam()).isHasTech(eTech))
+	{
+		// Also check that we have its prereq, if applicable
+		TechTypes ePrereq = (TechTypes)GC.getTechInfo(eTech).getPrereqAndTechs(0);
+		if (ePrereq == NO_TECH || GET_TEAM(getTeam()).isHasTech(ePrereq))
+		{
+			return true;
+		}
+	}
+	return false;
 }
 
 // MacAurther: Immigration

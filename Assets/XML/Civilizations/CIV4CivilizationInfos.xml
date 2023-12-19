@@ -319,10 +319,6 @@
 					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
 					<UnitType>UNIT_AZTEC_JAGUAR</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1786,10 +1782,6 @@
 					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
 					<UnitType>UNIT_MAYAN_HOLKAN</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -3054,10 +3046,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
 					<UnitType>UNIT_TEOTIHUACAN_ARTISAN</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>

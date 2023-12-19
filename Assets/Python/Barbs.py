@@ -9,10 +9,10 @@ from Locations import *
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-(250, (31, 58), iIndependent, 'Monte Alb&#225;n', 2, iArcher, 3),		# Zapotec
+(250, (15, 61), iIndependent, 'Monte Alb&#225;n', 2, iArcher, 3),		# Zapotec
 #(250, (36, 60), iIndependent2, 'Calakmul', 2, iHolkan, 3),		# Calakmul
-(410, (38, 56), iIndependent3, 'Copan', 2, iMilitia1, 2),		# Copan
-(250, (47, 36), iIndependent2, 'Nazca', 2, iArcher, 2),				# Nazca
+(410, (22, 56), iIndependent3, 'Copan', 2, iMilitia1, 2),		# Copan
+(250, (23, 25), iIndependent2, 'Nazca', 2, iArcher, 2),				# Nazca
 (1836, (33, 70), iIndependent2, 'Houston', 3, iMilitia5, 4),		# Republic of Texas
 )
 

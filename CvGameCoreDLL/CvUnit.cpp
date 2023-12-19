@@ -7236,7 +7236,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 	// MacAurther: Cannot build on top of Tribe, unless it is to contact them
 	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_TRIBE)
 	{
-		if(eBuild == BUILD_CONTACT_TRIBE && canContact(pPlot))
+		if(eBuild == BUILD_CONTACT_TRIBE && canContactTribe(pPlot))
 		{
 			return true;
 		}
@@ -7323,6 +7323,12 @@ bool CvUnit::build(BuildTypes eBuild)
 		if (GC.getBuildInfo(eBuild).isKill())
 		{
 			kill(true);
+		}
+
+		// MacAurther: Trigger Tribe Goodies
+		if (eBuild == BUILD_CONTACT_TRIBE)
+		{
+			GET_PLAYER(getOwner()).doGoody(plot(), this);
 		}
 	}
 
@@ -8278,7 +8284,6 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
-		case MISSION_CONTACT:
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -14827,16 +14832,16 @@ bool CvUnit::rebuild()
 	return false;
 }
 
-bool CvUnit::canContact(const CvPlot* pPlot) const
+bool CvUnit::canContactTribe(const CvPlot* pPlot) const
 {
-	if(pPlot->getImprovementType() == IMPROVEMENT_TRIBE && canUnitContact())
+	if(pPlot->getImprovementType() == IMPROVEMENT_TRIBE && canUnitContactTribe())
 	{
 		return true;
 	}
 	return false;
 }
 
-bool CvUnit::canUnitContact() const
+bool CvUnit::canUnitContactTribe() const
 {
 	if(getUnitClassType() == UNITCLASS_EXPLORER || getUnitClassType() == UNITCLASS_RANGER)
 	{
@@ -14845,9 +14850,9 @@ bool CvUnit::canUnitContact() const
 	return false;
 }
 
-bool CvUnit::contact()
+bool CvUnit::contactTribe()
 {
-	if (!canContact(plot()))
+	if (!canContactTribe(plot()))
 	{
 		return false;
 	}

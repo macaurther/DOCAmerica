@@ -411,7 +411,7 @@ def freeSlaves(city, iPlayer):
 		createRoleUnit(iPlayer, city, iBase, iNumSlaves, 0)
 		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
 	elif player(iPlayer).canUseSlaves():
-		makeUnits(iPlayer, base_unit(iSlave), city, iNumSlaves)
+		makeUnits(iPlayer, base_unit(iAfricanSlave), city, iNumSlaves)
 	else:
 		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
 	
@@ -583,7 +583,7 @@ def getUnitsForRole(iPlayer, iRole):
 		
 		elif iRole == iColonistSlave:	# Ferry + N Slaves
 			for _ in range(iCargoSpace):
-				units.append([iSlave, UnitAITypes.UNITAI_WORKER])
+				units.append([iAfricanSlave, UnitAITypes.UNITAI_WORKER])
 	
 	return units
 

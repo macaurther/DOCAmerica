@@ -147,15 +147,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORMATION3</Tag>
-		<English>Flanking III</English>
-		<French>
-			<Text>Contournement III</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Flanking III</German>
-		<Italian>Flanking III</Italian>
-		<Spanish>Flanking III</Spanish>
+		<English>Formation III</English>
+		<French>Formation III</French>
+		<German>Formation III</German>
+		<Italian>Formation III</Italian>
+		<Spanish>Formation III</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FLANKING</Tag>

@@ -1638,7 +1638,7 @@
 			<Type>BUILD_CONTACT_TRIBE</Type>
 			<Description>TXT_KEY_BUILD_CONTACT_TRIBE</Description>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
-			<iTime>0</iTime>
+			<iTime>300</iTime>
 			<iCost>40</iCost>
 			<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_GREAT_EVENT</EntityEvent>

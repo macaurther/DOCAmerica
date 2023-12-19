@@ -996,17 +996,5 @@
 			<bVisible>1</bVisible>
 			<Button>,Art/Interface/Buttons/Builds/BuildCity.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,10</Button>
 		</MissionInfo>
-		<MissionInfo>
-			<Type>MISSION_CONTACT</Type>
-			<Description>TXT_KEY_MISSION_CONTACT</Description>
-			<Help>TXT_KEY_ACTION_CONTACT</Help>
-			<Waypoint>NONE</Waypoint>
-			<EntityEventType>ENTITY_EVENT_GREAT_EVENT</EntityEventType>
-			<iTime>1</iTime>
-			<bTarget>0</bTarget>
-			<bBuild>0</bBuild>
-			<bSound>1</bSound>
-			<Button>,Art/Interface/Buttons/Builds/BuildTribalVillage.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,4,10</Button>
-		</MissionInfo>
 	</MissionInfos>
 </Civ4MissionInfos>

@@ -2871,12 +2871,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 				}
 			}
-			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_CONTACT)
-			{
-				szBuffer.append(NEWLINE);
-
-				szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CONTACT"));
-			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_BUILD)
 			{
 				eBuild = ((BuildTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData()));
@@ -3049,7 +3043,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 				if (eImprovement != NO_IMPROVEMENT)
 				{
-					if (pMissionPlot->getImprovementType() != NO_IMPROVEMENT)
+					if (pMissionPlot->getImprovementType() != NO_IMPROVEMENT && pMissionPlot->getImprovementType() != IMPROVEMENT_TRIBE) // MacAurther: Don't complain about contacting Tribes
 					{
 						szBuffer.append(NEWLINE);
 						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_WILL_DESTROY_IMP", GC.getImprovementInfo(pMissionPlot->getImprovementType()).getTextKeyWide()));

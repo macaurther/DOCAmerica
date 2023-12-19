@@ -183,17 +183,17 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=50,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(2).including(iPottery, iAgriculture)
+		techs=techs.column(2).including(iPottery, iAgriculture).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(2).including(iAgriculture, iPastoralism, iMining)
+		techs=techs.column(2).including(iAgriculture, iPastoralism, iMining).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iWari,
