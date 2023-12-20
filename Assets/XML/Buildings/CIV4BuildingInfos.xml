@@ -8726,7 +8726,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BROOKLYN_BRIDGE</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_BROOKLYN_BRIDGE</MovieDefineTag>
-			<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
+			<PrereqTech>TECH_ORGANIZED_LABOR</PrereqTech>
 			<FreeBuilding>BUILDINGCLASS_LEVEE</FreeBuilding>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

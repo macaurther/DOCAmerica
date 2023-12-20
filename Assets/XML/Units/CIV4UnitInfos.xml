@@ -779,7 +779,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
+			<PrereqTech>TECH_ORGANIZED_LABOR</PrereqTech>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_ROAD</BuildType>
@@ -916,7 +916,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
+			<PrereqTech>TECH_ORGANIZED_LABOR</PrereqTech>
 			<Builds>
 				<Build>
 					<BuildType>BUILD_ROAD</BuildType>

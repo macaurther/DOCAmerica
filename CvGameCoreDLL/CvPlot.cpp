@@ -1955,6 +1955,12 @@ bool CvPlot::isRiverConnection(DirectionTypes eDirection) const
 		return false;
 	}
 
+	// MacAurther: Just assume if you're a wide river, you're connected
+	if (isWideRiver())
+	{
+		return true;
+	}
+
 	switch (eDirection)
 	{
 	case DIRECTION_NORTH:
@@ -11879,6 +11885,10 @@ void CvPlot::improveTile()
 	}
 }
 
+bool CvPlot::isWideRiver() const
+{
+	return getTerrainType() == TERRAIN_WIDE_RIVER;
+}
 
 // MacAurther: Forts
 PlayerTypes CvPlot::getFortOwner() const

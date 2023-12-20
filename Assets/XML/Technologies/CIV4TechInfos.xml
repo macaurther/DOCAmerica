@@ -1736,7 +1736,7 @@
 			<Quote>TXT_KEY_TECH_OLD_WORLD_TACTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Old_world_tactics.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/OldWorldTactics.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -3436,7 +3436,7 @@
 			<Quote>TXT_KEY_TECH_POSTAL_SERVICE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Postal_service.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/PostalService.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -4519,9 +4519,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_LABOR_UNIONS</Type>
-			<Description>TXT_KEY_TECH_LABOR_UNIONS</Description>
-			<Civilopedia>TXT_KEY_TECH_LABOR_UNIONS_PEDIA</Civilopedia>
+			<Type>TECH_ORGANIZED_LABOR</Type>
+			<Description>TXT_KEY_TECH_ORGANIZED_LABOR</Description>
+			<Civilopedia>TXT_KEY_TECH_ORGANIZED_LABOR_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>2500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4553,7 +4553,7 @@
 				<PrereqTech>TECH_EMANCIPATION</PrereqTech>
 				<PrereqTech>TECH_IMPERIALISM</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_LABOR_UNIONS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_ORGANIZED_LABOR_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Labour_Unions.dds</Button>
@@ -4706,7 +4706,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_BIOLOGY</PrereqTech>
-				<PrereqTech>TECH_LABOR_UNIONS</PrereqTech>
+				<PrereqTech>TECH_ORGANIZED_LABOR</PrereqTech>
 				<PrereqTech>TECH_JOURNALISM</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CIVIL_RIGHTS_QUOTE</Quote>

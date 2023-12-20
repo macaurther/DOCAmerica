@@ -834,7 +834,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MIGRANT_WORKERS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MIGRANT_WORKERS_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_MIGRANT_WORKERS_HELP</Help>
-			<TechPrereq>TECH_LABOR_UNIONS</TechPrereq>
+			<TechPrereq>TECH_ORGANIZED_LABOR</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Migrant_Workers.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>NONE</Upkeep>
