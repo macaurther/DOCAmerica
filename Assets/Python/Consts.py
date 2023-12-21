@@ -513,18 +513,18 @@ iPlague = iNumBuildings
 iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
-iNumCivics = 62
+iNumCivics = 63
 (iChiefdom, iExpeditionaries, iDespotism, iViceroyalty, iCouncil, iCharterColony, iMonarchy, iTradeCompany, iDemocracy, iRoyalColony, iDictatorship, iDominion, iStateParty, iCommonwealth,
 iAuthority, iEmpire, iMaritimeLaw, iCommonLaw, iAristocracy, iConfederacy, iProprietaries, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
-iTraditionalism, iSerfdom, iCaptives, iEncomienda, iCraftsmen, iIndenturedServitude, iSlavery, iIndustrialism, iMigrantWorkers, iAutomation,
+iTraditionalism, iSerfdom, iCaptives, iEncomienda, iCraftsmen, iIndenturedServitude, iSlavery, iApprenticeship, iIndustrialism, iLaborUnions,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
 iAnimism, iDivineRight, iHarmony, iGloriaInDeo, iCasteSystem, iJesuits, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,
-iSovereignty, iTributaries, iConquest, iHomesteads, iNationhood, iPuppeteering, iMultilateralism) = range(iNumCivics)
+iSovereignty, iTributaries, iConquest, iOutposts, iHomesteads, iDecolonization, iIntervention, iNationhood) = range(iNumCivics)
 
 iNumCivicCategories = 6
 (iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
 
-lCivicCountInCategory = [14, 13, 10, 7, 11, 7];
+lCivicCountInCategory = [14, 13, 10, 7, 11, 8];
 lCivicDefaultsInCateogry = [2, 1, 2, 1, 2, 1];
 
 

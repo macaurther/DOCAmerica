@@ -5096,7 +5096,7 @@
 			<VassalRefuseAttitudeThreshold>ATTITUDE_PLEASED</VassalRefuseAttitudeThreshold>
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
-			<FavoriteCivic>CIVIC_MULTILATERALISM</FavoriteCivic>
+			<FavoriteCivic>CIVIC_PUBLIC_WELFARE</FavoriteCivic>
 			<FavoriteReligion>RELIGION_PROTESTANTISM</FavoriteReligion>
 			<Traits/>
 			<Flavors>
@@ -8887,7 +8887,7 @@
 			<VassalRefuseAttitudeThreshold>ATTITUDE_PLEASED</VassalRefuseAttitudeThreshold>
 			<iVassalPowerModifier>0</iVassalPowerModifier>
 			<iFreedomAppreciation>10</iFreedomAppreciation>
-			<FavoriteCivic>CIVIC_MULTILATERALISM</FavoriteCivic>
+			<FavoriteCivic>CIVIC_LABOR_UNIONS</FavoriteCivic>
 			<FavoriteReligion>NONE</FavoriteReligion>
 			<Traits/>
 			<Flavors>

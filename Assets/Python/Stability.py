@@ -769,7 +769,6 @@ def calculateStability(iPlayer):
 	iDefensivePactStability = 0
 	iRelationStability = 0
 	iNationhoodStability = 0
-	iMultilateralismStability = 0
 	
 	iNumContacts = 0
 	iFriendlyRelations = 0
@@ -805,7 +804,6 @@ def calculateStability(iPlayer):
 		# defensive pacts
 		if tPlayer.isDefensivePact(iLoopPlayer):
 			if iLoopScore > iPlayerScore: iDefensivePactStability += 3
-			if iMultilateralism in civics: iDefensivePactStability += 3
 		
 		# worst enemies
 		if pLoopPlayer.getWorstEnemy() == iPlayer:
@@ -813,8 +811,6 @@ def calculateStability(iPlayer):
 			
 		# wars
 		if tPlayer.isAtWar(iLoopPlayer):
-			if iMultilateralism in civics: iMultilateralismStability -= 2
-			
 			if game.isNeighbors(iPlayer, iLoopPlayer):
 				if iNationhood in civics: iNationhoodStability += 2
 		
@@ -852,9 +848,9 @@ def calculateStability(iPlayer):
 	lParameters[iParameterDefensivePacts] = iDefensivePactStability
 	lParameters[iParameterRelations] = iRelationStability
 	lParameters[iParameterNationhood] = iNationhoodStability
-	lParameters[iParameterMultilateralism] = iMultilateralismStability
+	lParameters[iParameterMultilateralism] = 0
 			
-	iForeignStability += iVassalStability + iDefensivePactStability + iRelationStability + iNationhoodStability + iMultilateralismStability
+	iForeignStability += iVassalStability + iDefensivePactStability + iRelationStability + iNationhoodStability + 0
 	
 	# MILITARY
 	
@@ -919,7 +915,11 @@ def calculateStability(iPlayer):
 def getCivicStability(iPlayer, civics=None):
 	if civics is None:
 		civics = Civics.player(iPlayer)
-
+    
+    # Confederacy doesn't care about synergies
+	if iConfederacy in civics:
+		return 0
+	
 	iCurrentEra = player(iPlayer).getCurrentEra()
 	iStability = 0
 	
@@ -931,7 +931,6 @@ def getCivicStability(iPlayer, civics=None):
 		if iPublicWelfare in civics: iStability -= 2
 		if iFreeEnterprise in civics: iStability -= 2
 		if iCommonLaw in civics: iStability -= 3
-		if iConfederacy in civics: iStability -= 2
 	
 	if iViceroyalty in civics:
 		if iMercantilism in civics: iStability += 2
@@ -944,7 +943,6 @@ def getCivicStability(iPlayer, civics=None):
 	
 	if iCouncil in civics:
 		if iCasteSystem in civics: iStability += 2
-		if iConfederacy in civics: iStability += 2
 		if iAgrarianism in civics: iStability += 2
 		if iHarmony in civics: iStability += 1
 		if iMercantilism in civics: iStability -= 2
@@ -963,8 +961,6 @@ def getCivicStability(iPlayer, civics=None):
 	
 	if iMonarchy in civics:
 		if iCommonLaw in civics: iStability += 2
-		if iMultilateralism in civics: iStability -= 2
-		if iConfederacy in civics: iStability -= 2
 	
 	if iTradeCompany in civics:
 		if iMaritimeLaw in civics: iStability += 2
@@ -978,7 +974,6 @@ def getCivicStability(iPlayer, civics=None):
 		if iPublicWelfare in civics: iStability += 2
 		if iFreeEnterprise in civics: iStability += 2
 		if iOpportunity in civics: iStability += 2
-		if iMultilateralism in civics: iStability += 3
 		if iMercantilism in civics: iStability -= 2
 		if iPoliceState in civics: iStability -= 2
 		if iSlavery in civics: iStability -= 4
@@ -998,20 +993,18 @@ def getCivicStability(iPlayer, civics=None):
 		if iConsumerism in civics: iStability -= 2
 		if iOpportunity in civics: iStability -= 3
 		if iMulticulturalism in civics: iStability -= 4
-		if iConfederacy in civics: iStability -= 4
 	
 	if iDominion in civics:
 		if iHomesteads in civics: iStability += 2
 		if iAgrarianism in civics: iStability += 2
-		if iMultilateralism in civics: iStability -= 2
+		if iNationhood in civics: iStability -= 2
 	
 	if iStateParty in civics:
 		if iPoliceState in civics: iStability += 2
 		if iPublicWelfare in civics: iStability += 2
-		if iPuppeteering in civics: iStability += 2
+		if iNationhood in civics: iStability += 2
 		if iConsumerism in civics: iStability -= 2
 		if iProfiteering in civics: iStability -= 3
-		if iConfederacy in civics: iStability -= 2
 		if iSpoilsSystem in civics: iStability += 2
 	
 	if iCommonwealth in civics:
@@ -1026,7 +1019,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iTributaries in civics: iStability += 2
 		if iConquest in civics: iStability += 3
 		if iNationhood in civics: iStability += 2
-		if iPuppeteering in civics: iStability += 2
+		if iIntervention in civics: iStability += 2
 		if iMulticulturalism in civics: iStability += 2
 		if iIsolationism in civics: iStability -= 4
 	
@@ -1049,7 +1042,6 @@ def getCivicStability(iPlayer, civics=None):
 		if iOpportunity in civics: iStability -= 2
 	
 	if iConfederacy in civics:
-		if iMultilateralism in civics: iStability += 3
 		if iMulticulturalism in civics: iStability += 2
 		if iNationhood in civics: iStability -= 3
 		if iConquest in civics: iStability -= 3
@@ -1069,19 +1061,18 @@ def getCivicStability(iPlayer, civics=None):
 		if iMercantilism in civics: iStability += 2
 	
 	if iSpoilsSystem in civics:
-		if iPuppeteering in civics: iStability += 2
+		if iDecolonization in civics: iStability += 2
 	
 	if iColonialAssembly in civics:
 		pass
 	
 	if iPoliceState in civics:
 		if iIsolationism in civics: iStability += 3
-		if iPuppeteering in civics: iStability += 3
+		if iNationhood in civics: iStability += 3
 	
 	if iProvinces in civics:
 		if iAgrarianism in civics: iStability += 2
 		if iMulticulturalism in civics: iStability += 2
-		if iMultilateralism in civics: iStability += 2
 		if iNationhood in civics: iStability -= 2
 	
 	# Labor
@@ -1111,6 +1102,11 @@ def getCivicStability(iPlayer, civics=None):
 		if iHaven in civics: iStability -= 2
 		if iMulticulturalism in civics: iStability -= 5
 		if iPublicWelfare in civics: iStability -= 5
+    
+	if iApprenticeship in civics:
+		if iOpportunity in civics: iStability += 2
+		if iPublicWelfare in civics: iStability -= 3
+        if iAgrarianism in civics: iStability -= 2
 	
 	if iIndustrialism in civics:
 		if iConsumerism in civics: iStability += 2
@@ -1119,18 +1115,13 @@ def getCivicStability(iPlayer, civics=None):
 		if iHomesteads in civics: iStability -= 2
 		if iPublicWelfare in civics: iStability -= 3
 	
-	if iMigrantWorkers in civics:
-		if iMulticulturalism in civics: iStability += 3
-		if iOpportunity in civics: iStability += 2
-		if iIsolationism in civics: iStability -= 2
-		if iPublicWelfare in civics: iStability -= 3
-	
-	if iAutomation in civics:
-		if iConsumerism in civics: iStability += 4
-		if iIsolationism in civics: iStability -= 2
+	if iLaborUnions in civics:
+		if iPublicWelfare in civics: iStability += 4
 		if iMerchantTrade in civics: iStability -= 4
 		if iMercantilism in civics: iStability -= 3
-		if iAgrarianism in civics: iStability -= 4
+		if iAgrarianism in civics: iStability -= 2
+        if iFreeEnterprise in civics: iStability -= 4
+        if iConsumerism in civics: iStability -= 4
 	
 	if iMerchantTrade in civics:
 		if iIsolationism in civics: iStability -= 3
@@ -1138,7 +1129,7 @@ def getCivicStability(iPlayer, civics=None):
 	if iMercantilism in civics:
 		if iIsolationism in civics: iStability += 2
 		if iConquest in civics: iStability -= 2
-		if iMultilateralism in civics: iStability -= 4
+		if iNationhood in civics: iStability -= 4
 	
 	if iAgrarianism in civics:
 		if iHomesteads in civics: iStability += 2
@@ -1172,7 +1163,8 @@ def getCivicStability(iPlayer, civics=None):
 	if iIsolationism in civics:
 		if iNationhood in civics: iStability += 4
 		if iConquest in civics: iStability -= 2
-		if iMultilateralism in civics: iStability -= 2
+		if iDecolonization in civics: iStability -= 2
+        if iIntervention in civics: iStability -= 2
 	
 	if iHaven in civics:
 		if iHomesteads in civics: iStability += 2
@@ -1185,7 +1177,6 @@ def getCivicStability(iPlayer, civics=None):
 		if iHomesteads in civics: iStability += 3
 	
 	if iMulticulturalism in civics:
-		if iMultilateralism in civics: iStability += 2
 		if iNationhood in civics: iStability -= 2
 	
 	return iStability

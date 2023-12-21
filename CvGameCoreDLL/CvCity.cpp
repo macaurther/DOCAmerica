@@ -19332,7 +19332,7 @@ void CvCity::calculateImmigrationYieldRate()
 		}
 		else if(iI == YIELD_PRODUCTION)
 		{
-			if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_MIGRANT_WORKERS)) setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
+			if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_INDUSTRIALISM)) setImmigrationYieldRate((YieldTypes)iI, iImmigrationRate);
 			else setImmigrationYieldRate((YieldTypes)iI, 0);
 		}
 		else if(iI == YIELD_COMMERCE)

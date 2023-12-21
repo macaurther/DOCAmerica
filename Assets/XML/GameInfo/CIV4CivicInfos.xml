@@ -559,6 +559,12 @@
 			<CapitalCommerceModifiers>
 				<iCommerce>50</iCommerce>
 			</CapitalCommerceModifiers>
+			<MinimalSpecialists>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+			</MinimalSpecialists>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -676,6 +682,16 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -797,6 +813,19 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
+			<Type>CIVIC_APPRENTICESHIP</Type>
+			<Description>TXT_KEY_CIVIC_APPRENTICESHIP</Description>
+			<Civilopedia>TXT_KEY_CIVIC_APPRENTICESHIP_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_APPRENTICESHIP_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_APPRENTICESHIP_HELP</Help>
+			<TechPrereq>TECH_ORGANIZED_LABOR</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Apprenticeship.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iFreeSpecialist>1</iFreeSpecialist>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
 			<Type>CIVIC_INDUSTRIALISM</Type>
 			<Description>TXT_KEY_CIVIC_INDUSTRIALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INDUSTRIALISM_PEDIA</Civilopedia>
@@ -829,76 +858,12 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-			<Type>CIVIC_MIGRANT_WORKERS</Type>
-			<Description>TXT_KEY_CIVIC_MIGRANT_WORKERS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MIGRANT_WORKERS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MIGRANT_WORKERS_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_MIGRANT_WORKERS_HELP</Help>
-			<TechPrereq>TECH_ORGANIZED_LABOR</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Migrant_Workers.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>NONE</Upkeep>
-			<iLargestCityHappiness>-2</iLargestCityHappiness>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_ORCHARD</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_WELL</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-			<Type>CIVIC_AUTOMATION</Type>
-			<Description>TXT_KEY_CIVIC_AUTOMATION</Description>
-			<Civilopedia>TXT_KEY_CIVIC_AUTOMATION_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_AUTOMATION_STRATEGY</Strategy>
+			<Type>CIVIC_LABOR_UNIONS</Type>
+			<Description>TXT_KEY_CIVIC_LABOR_UNIONS</Description>
+			<Civilopedia>TXT_KEY_CIVIC_LABOR_UNIONS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_LABOR_UNIONS_STRATEGY</Strategy>
 			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Automation.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/LaborUnions.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<SpecialistExtraCommerces>
@@ -1196,7 +1161,6 @@
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
 					<ImprovementYields>
-						<iYield>2</iYield>
 						<iYield>0</iYield>
 						<iYield>2</iYield>
 					</ImprovementYields>
@@ -1336,8 +1300,8 @@
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
 			<CommerceModifiers>
-				<iCommerce>0</iCommerce>
 				<iCommerce>15</iCommerce>
+				<iCommerce>-15</iCommerce>
 			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -1439,6 +1403,35 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
+			<Type>CIVIC_OUTPOSTS</Type>
+			<Description>TXT_KEY_CIVIC_OUTPOSTS</Description>
+			<Civilopedia>TXT_KEY_CIVIC_OUTPOSTS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_OUTPOSTS_STRATEGY</Strategy>
+			<TechPrereq>TECH_JOURNALISM</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Outposts.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
 			<Type>CIVIC_HOMESTEADS</Type>
 			<Description>TXT_KEY_CIVIC_HOMESTEADS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HOMESTEADS_PEDIA</Civilopedia>
@@ -1447,40 +1440,6 @@
 			<Button>,Art/Interface/Buttons/Civics/Homesteads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
-					<ImprovementYields>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_HAMLET</ImprovementType>
-					<ImprovementYields>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
@@ -1498,6 +1457,39 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
+			<Type>CIVIC_DECOLONIZATION</Type>
+			<Description>TXT_KEY_CIVIC_DECOLONIZATION</Description>
+			<Civilopedia>TXT_KEY_CIVIC_DECOLONIZATIONPEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_DECOLONIZATION_STRATEGY</Strategy>
+			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Decolonization.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iCultureGroup>1</iCultureGroup>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>15</iCommerce>
+			</CommerceModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
+			<Type>CIVIC_INTERVENTION</Type>
+			<Description>TXT_KEY_CIVIC_INTERVENTION</Description>
+			<Civilopedia>TXT_KEY_CIVIC_INTERVENTION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_INTERVENTION_STRATEGY</Strategy>
+			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Intervention.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iCultureGroup>2</iCultureGroup>
+			<CommerceModifiers>
+				<iCommerce>15</iCommerce>
+				<iCommerce>0</iCommerce>
+			</CommerceModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
 			<Type>CIVIC_NATIONHOOD</Type>
 			<Description>TXT_KEY_CIVIC_NATIONHOOD</Description>
 			<Civilopedia>TXT_KEY_CIVIC_NATIONHOOD_PEDIA</Civilopedia>
@@ -1510,48 +1502,6 @@
 			<bNoSlavery>1</bNoSlavery>
 			<iMaxConscript>3</iMaxConscript>
 			<iGreatGeneralRateModifier>100</iGreatGeneralRateModifier>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
-			<Type>CIVIC_PUPPETEERING</Type>
-			<Description>TXT_KEY_CIVIC_PUPPETEERING</Description>
-			<Civilopedia>TXT_KEY_CIVIC_PUPPETEERING_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_PUPPETEERING_STRATEGY</Strategy>
-			<TechPrereq>TECH_JOURNALISM</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Puppeteering.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<CapitalCommerceModifiers>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>50</iCommerce>
-			</CapitalCommerceModifiers>
-			<iVassalTradeModifier>50</iVassalTradeModifier>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
-			<Type>CIVIC_MULTILATERALISM</Type>
-			<Description>TXT_KEY_CIVIC_MULTILATERALISM</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MULTILATERALISM_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MULTILATERALISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Multilateralism.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>>
-			<bNoSlavery>1</bNoSlavery>
-			<iWarWearinessModifier>100</iWarWearinessModifier>
-			<iDefensivePactTradeModifier>100</iDefensivePactTradeModifier>
-			<TradeYieldModifiers>
-				<iYield>0</iYield>
-				<iYield>25</iYield>
-			</TradeYieldModifiers>
-			<DomainExperienceModifiers>
-				<DomainExperienceModifier>
-					<DomainType>DOMAIN_AIR</DomainType>
-					<iExperienceModifier>4</iExperienceModifier>
-				</DomainExperienceModifier>
-			</DomainExperienceModifiers>
 		</CivicInfo>
 	</CivicInfos>
 </Civ4CivicInfos>

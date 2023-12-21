@@ -2221,9 +2221,9 @@ enum CivicTypes						// Exposed to Python
 	CIVIC_CRAFTSMEN,				// Culture Group 1
 	CIVIC_INDENTURED_SERVITUDE,		// Culture Group 2
 	CIVIC_SLAVERY,					// Culture Group 0
+	CIVIC_APPRENTICESHIP,			// Culture Group 0
 	CIVIC_INDUSTRIALISM,			// Culture Group 0
-	CIVIC_MIGRANT_WORKERS,			// Culture Group 0
-	CIVIC_AUTOMATION,				// Culture Group 0
+	CIVIC_LABOR_UNIONS,				// Culture Group 0
 
 	CIVIC_RECIPROCITY,				// Culture Group 0
 	CIVIC_MERCHANT_TRADE,			// Culture Group 0
@@ -2248,10 +2248,11 @@ enum CivicTypes						// Exposed to Python
 	CIVIC_SOVEREIGNTY,				// Culture Group 0
 	CIVIC_TRIBUTARIES,				// Culture Group 0
 	CIVIC_CONQUEST,					// Culture Group 0
+	CIVIC_OUTPOSTS,					// Culture Group 0
 	CIVIC_HOMESTEADS,				// Culture Group 0
+	CIVIC_DECOLONIZATION,			// Culture Group 1
+	CIVIC_INTERVENTION,				// Culture Group 2
 	CIVIC_NATIONHOOD,				// Culture Group 0
-	CIVIC_PUPPETEERING,				// Culture Group 0
-	CIVIC_MULTILATERALISM,			// Culture Group 0
 };
 
 enum WarPlanTypes					// Exposed to Python

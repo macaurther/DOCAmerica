@@ -78,24 +78,36 @@
 		<Spanish>The most primitive Society civic</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MULTILATERALISM</Tag>
-		<English>Multilateralism</English>
-		<French>
-			<Text>Multilat&#233;ralisme</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Multilateralism</German>
-		<Italian>Multilateralism</Italian>
-		<Spanish>Multilateralism</Spanish>
+		<Tag>TXT_KEY_CIVIC_DECOLONIZATION</Tag>
+		<English>Decolonization</English>
+		<French>Decolonization</French>
+		<German>Decolonization</German>
+		<Italian>Decolonization</Italian>
+		<Spanish>Decolonization</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MULTILATERALISM_STRATEGY</Tag>
-		<English>Extra experience for air units; extra yield from trade routes with defensive pact partners; trade routes yield production; extra war weariness; cannot use slaves</English>
-		<French>Exp&#233;rience additionnelle pour les unit&#233;s a&#233;riennes ; les routes commerciales avec les civilisations li&#233;es par un pacte de d&#233;fense rapportent davantage ; les routes commerciales rapportent de la production ; lassitude de guerre additionnelle ; impossible d'utiliser des esclaves</French>
-		<German>Extra experience for air units; extra yield from trade routes with defensive pact partners; trade routes yield production; extra war weariness; cannot use slaves</German>
-		<Italian>Extra experience for air units; extra yield from trade routes with defensive pact partners; trade routes yield production; extra war weariness; cannot use slaves</Italian>
-		<Spanish>Extra experience for air units; extra yield from trade routes with defensive pact partners; trade routes yield production; extra war weariness; cannot use slaves</Spanish>
+		<Tag>TXT_KEY_CIVIC_DECOLONIZATION_STRATEGY</Tag>
+		<English>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</English>
+		<French>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</French>
+		<German>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</German>
+		<Italian>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</Italian>
+		<Spanish>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INTERVENTION</Tag>
+		<English>Intervention</English>
+		<French>Intervention</French>
+		<German>Intervention</German>
+		<Italian>Intervention</Italian>
+		<Spanish>Intervention</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INTERVENTION_STRATEGY</Tag>
+		<English>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</English>
+		<French>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</French>
+		<German>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</German>
+		<Italian>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</Italian>
+		<Spanish>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE</Tag>
@@ -879,39 +891,39 @@
 		<Spanish>More Engineer slots; extra production for specialists; extra commerce on Windmills and Watermills</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MIGRANT_WORKERS</Tag>
-		<English>Migrant Workers</English>
-		<French>Migrant Workers</French>
-		<German>Migrant Workers</German>
-		<Italian>Migrant Workers</Italian>
-		<Spanish>Migrant Workers</Spanish>
+		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP</Tag>
+		<English>Apprenticeship</English>
+		<French>Apprenticeship</French>
+		<German>Apprenticeship</German>
+		<Italian>Apprenticeship</Italian>
+		<Spanish>Apprenticeship</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MIGRANT_WORKERS_STRATEGY</Tag>
-		<English>Extra unhappiness in largest cities; extra production on improvements; immigration also provides production</English>
-		<French>Extra unhappiness in largest cities; extra production on improvements; immigration also provides production</French>
-		<German>Extra unhappiness in largest cities; extra production on improvements; immigration also provides production</German>
-		<Italian>Extra unhappiness in largest cities; extra production on improvements; immigration also provides production</Italian>
-		<Spanish>Extra unhappiness in largest cities; extra production on improvements; immigration also provides production</Spanish>
+		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP_STRATEGY</Tag>
+		<English>Free specialist in every city; maximum of 2 of each kind of specialist per city</English>
+		<French>Free specialist in every city; maximum of 2 of each kind of specialist per city</French>
+		<German>Free specialist in every city; maximum of 2 of each kind of specialist per city</German>
+		<Italian>Free specialist in every city; maximum of 2 of each kind of specialist per city</Italian>
+		<Spanish>Free specialist in every city; maximum of 2 of each kind of specialist per city</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MIGRANT_WORKERS_HELP</Tag>
-		<English>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</English>
-		<French>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</French>
-		<German>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</German>
-		<Italian>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</Italian>
-		<Spanish>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_PRODUCTION]</Spanish>
+		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP_HELP</Tag>
+		<English>[ICON_BULLET]Max 2 of any one kind of specialist per city</English>
+		<French>[ICON_BULLET]Max 2 of any one kind of specialist per city</French>
+		<German>[ICON_BULLET]Max 2 of any one kind of specialist per city</German>
+		<Italian>[ICON_BULLET]Max 2 of any one kind of specialist per city</Italian>
+		<Spanish>[ICON_BULLET]Max 2 of any one kind of specialist per city</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_AUTOMATION</Tag>
-		<English>Automation</English>
-		<French>Automation</French>
-		<German>Automation</German>
-		<Italian>Automation</Italian>
-		<Spanish>Automation</Spanish>
+		<Tag>TXT_KEY_CIVIC_LABOR_UNIONS</Tag>
+		<English>Labor Unions</English>
+		<French>Labor Unions</French>
+		<German>Labor Unions</German>
+		<Italian>Labor Unions</Italian>
+		<Spanish>Labor Unions</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_AUTOMATION_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_LABOR_UNIONS_STRATEGY</Tag>
 		<English>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</English>
 		<French>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</French>
 		<German>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</German>
@@ -1032,27 +1044,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOMESTEADS_STRATEGY</Tag>
-		<English>Extra commerce from tiles with no improvements; extra commerce from Pastures, Camps; faster production of Palace, Barracks, Stable</English>
-		<French>Extra commerce from tiles with no improvements; extra commerce from Pastures, Camps; faster production of Palace, Barracks, Stable</French>
-		<German>Extra commerce from tiles with no improvements; extra commerce from Pastures, Camps; faster production of Palace, Barracks, Stable</German>
-		<Italian>Extra commerce from tiles with no improvements; extra commerce from Pastures, Camps; faster production of Palace, Barracks, Stable</Italian>
-		<Spanish>Extra commerce from tiles with no improvements; extra commerce from Pastures, Camps; faster production of Palace, Barracks, Stable</Spanish>
+		<English>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</English>
+		<French>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</French>
+		<German>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</German>
+		<Italian>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</Italian>
+		<Spanish>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PUPPETEERING</Tag>
-		<English>Puppeteering</English>
-		<French>Puppeteering</French>
-		<German>Puppeteering</German>
-		<Italian>Puppeteering</Italian>
-		<Spanish>Puppeteering</Spanish>
+		<Tag>TXT_KEY_CIVIC_OUTPOSTS</Tag>
+		<English>Outposts</English>
+		<French>Outposts</French>
+		<German>Outposts</German>
+		<Italian>Outposts</Italian>
+		<Spanish>Outposts</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PUPPETEERING_STRATEGY</Tag>
-		<English>Extra income from trade routes with Vassals; extra espionage in Capital; extra espionage from specialists</English>
-		<French>Extra income from trade routes with Vassals; extra espionage in Capital; extra espionage from specialists</French>
-		<German>Extra income from trade routes with Vassals; extra espionage in Capital; extra espionage from specialists</German>
-		<Italian>Extra income from trade routes with Vassals; extra espionage in Capital; extra espionage from specialists</Italian>
-		<Spanish>Extra income from trade routes with Vassals; extra espionage in Capital; extra espionage from specialists</Spanish>
+		<Tag>TXT_KEY_CIVIC_OUTPOSTS_STRATEGY</Tag>
+		<English>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</English>
+		<French>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</French>
+		<German>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</German>
+		<Italian>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</Italian>
+		<Spanish>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EXPEDITIONARIES</Tag>

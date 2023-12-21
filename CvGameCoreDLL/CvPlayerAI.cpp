@@ -10805,7 +10805,6 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	case CIVIC_CONSUMERISM:
 	case CIVIC_PUBLIC_WELFARE:
 	case CIVIC_NATIONHOOD:
-	case CIVIC_MULTILATERALISM:
 		iValue *= 6;
 		iValue /= 5;
 		break;
