@@ -219,7 +219,7 @@ lCivilizations = [
 	Civilization(
 		iNorse,
 		iGold=50,
-		lCivics=[iExpeditionaries, iSerfdom, iMerchantTrade],
+		lCivics=[iExpedition, iSerfdom, iMerchantTrade],
 		techs=techs.column(8).without(*lNativeTechs)
 	),
 	Civilization(
@@ -257,14 +257,14 @@ lCivilizations = [
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpeditionaries, iMaritimeLaw, iEncomienda, iMerchantTrade, iGloriaInDeo, iConquest],
+		lCivics=[iExpedition, iMaritimeLaw, iEncomienda, iMerchantTrade, iGloriaInDeo, iConquest],
 		techs=techs.column(9).without(*lNativeTechs)
 	),
 	Civilization(
 		iPortugal,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpeditionaries, iProprietaries, iEncomienda, iMerchantTrade, iDivineRight, iTributaries],
+		lCivics=[iExpedition, iProprietaries, iEncomienda, iMerchantTrade, iDivineRight, iTributaries],
 		techs=techs.column(9).including(iDiplomacy, iLogistics, iExploration, iOptics, iOfficials).without(*lNativeTechs)
 	),
 	Civilization(
@@ -279,7 +279,7 @@ lCivilizations = [
 		iFrance,
 		iGold=150,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpeditionaries, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
+		lCivics=[iExpedition, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
 		techs=techs.column(10).including(iShipbuilding, iFortification).without(*lNativeTechs)
 	),
 	Civilization(
@@ -299,7 +299,7 @@ lCivilizations = [
 		iRussia,
 		iGold=200,
 		iStateReligion=iOrthodoxy,
-		lCivics=[iExpeditionaries, iMaritimeLaw, iIndenturedServitude, iAgrarianism, iProfiteering],
+		lCivics=[iExpedition, iMaritimeLaw, iIndenturedServitude, iAgrarianism, iProfiteering],
 		techs=techs.column(12).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(

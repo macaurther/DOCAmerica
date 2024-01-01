@@ -1067,15 +1067,15 @@
 		<Spanish>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_EXPEDITIONARIES</Tag>
-		<English>Expeditionaries</English>
-		<French>Expeditionaries</French>
-		<German>Expeditionaries</German>
-		<Italian>Expeditionaries</Italian>
-		<Spanish>Expeditionaries</Spanish>
+		<Tag>TXT_KEY_CIVIC_EXPEDITION</Tag>
+		<English>Expedition</English>
+		<French>Expedition</French>
+		<German>Expedition</German>
+		<Italian>Expedition</Italian>
+		<Spanish>Expedition</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_EXPEDITIONARIES_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_EXPEDITION_STRATEGY</Tag>
 		<English>The most primitive Government civic</English>
 		<French>The most primitive Government civic</French>
 		<German>The most primitive Government civic</German>

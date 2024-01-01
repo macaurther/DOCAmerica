@@ -42,8 +42,8 @@ PyPlayer = PyHelpers.PyPlayer
 PyGame = PyHelpers.PyGame()
 PyInfo = PyHelpers.PyInfo
 
-AVAILABLE_MERCENARIES = "AvailableMercenaries"
-HIRED_MERCENARIES = "HiredMercenaries"
+AVAILABLE_COLONISTS = "AvailableColonists"
+AVAILABLE_EXPEDITIONARIES = "AvailableExpeditionaries"
 MERCENARY_GROUPS = "MercenaryGroups"
 MERCENARY_NAMES = "MercenaryNames"
 UNPLACED_MERCENARIES = "UnplacedMercenaries"
@@ -1493,8 +1493,8 @@ class MercenaryUtils:
 		mercenaryNames = {}
 		
 		mercenaryData = {
-							AVAILABLE_MERCENARIES : availableMercenaries,
-							HIRED_MERCENARIES : hiredMercenaries,
+							AVAILABLE_COLONISTS : availableMercenaries,
+							AVAILABLE_EXPEDITIONARIES : hiredMercenaries,
 							MERCENARY_NAMES: mercenaryNames,
 							MERCENARY_GROUPS : mercenaryGroups,
 							UNPLACED_MERCENARIES : unplacedMercenaries }

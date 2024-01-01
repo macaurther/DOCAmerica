@@ -132,7 +132,7 @@ class CvMercenaryManager:
 			if (not mercenary.canHireUnit(iPlayer)):
 				continue
 						
-			screen.attachPanel(AVAILABLE_MERCENARIES_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
+			screen.attachPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
 			screen.attachImageButton( mercenaryName, mercenaryName+"_InfoButton", 
 										mercenary.objUnitInfo.getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
@@ -171,7 +171,7 @@ class CvMercenaryManager:
 		if((4-mercenaryCount)>0):
 
 			for i in range(4-mercenaryCount):
-				screen.attachPanel(AVAILABLE_MERCENARIES_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
+				screen.attachPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
@@ -208,7 +208,7 @@ class CvMercenaryManager:
 			if (not mercenary.canHireUnit(iPlayer)):
 				continue
 						
-			screen.attachPanel(HIRED_MERCENARIES_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
+			screen.attachPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
 			screen.attachImageButton( mercenaryName, mercenaryName+"_InfoButton", 
 										mercenary.objUnitInfo.getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
@@ -247,7 +247,7 @@ class CvMercenaryManager:
 		if((4-mercenaryCount)>0):
 
 			for i in range(4-mercenaryCount):
-				screen.attachPanel(HIRED_MERCENARIES_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
+				screen.attachPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
@@ -466,15 +466,15 @@ class CvMercenaryManager:
 		# Draw the bottom bar
 		self.drawScreenBottom(screen)
 				
-		screen.addPanel(AVAILABLE_MERCENARIES_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y], self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
-		screen.addPanel(AVAILABLE_MERCENARIES_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
-		screen.addPanel(AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
-		screen.setText(AVAILABLE_MERCENARIES_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addPanel(AVAILABLE_COLONISTS_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y], self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
+		screen.addPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+		screen.addPanel(AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
+		screen.setText(AVAILABLE_COLONISTS_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
-		screen.addPanel(HIRED_MERCENARIES_PANEL_ID, "", "", True, True, self.screenWidgetData[HIRED_MERCENARIES_PANEL_X], self.screenWidgetData[HIRED_MERCENARIES_PANEL_Y], self.screenWidgetData[HIRED_MERCENARIES_PANEL_WIDTH], self.screenWidgetData[HIRED_MERCENARIES_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
-		screen.addPanel(HIRED_MERCENARIES_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_X], self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_Y], self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_WIDTH], self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
-		screen.addPanel(HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
-		screen.setText(HIRED_MERCENARIES_TEXT_PANEL_ID, "Background", self.screenWidgetData[HIRED_MERCENARIES_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[HIRED_MERCENARIES_TEXT_PANEL_X], self.screenWidgetData[HIRED_MERCENARIES_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addPanel(AVAILABLE_EXPEDITIONARIES_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
+		screen.addPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+		screen.addPanel(AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
+		screen.setText(AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		screen.addPanel(MERCENARY_INFORMATION_PANEL_ID, "", "", True, True, self.screenWidgetData[MERCENARY_INFORMATION_PANEL_X], self.screenWidgetData[MERCENARY_INFORMATION_PANEL_Y], self.screenWidgetData[MERCENARY_INFORMATION_PANEL_WIDTH], self.screenWidgetData[MERCENARY_INFORMATION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		screen.addPanel(MERCENARY_INFORMATION_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[MERCENARY_INFORMATION_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[MERCENARY_INFORMATION_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[MERCENARY_INFORMATION_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[MERCENARY_INFORMATION_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
@@ -557,7 +557,7 @@ class CvMercenaryManager:
 		# Add the padding to the available mercenaries panel to improve the look of the screen
 		if((4-len(mercenaries))>0):
 			for i in range(4-len(mercenaries)):
-				screen.attachPanel(AVAILABLE_MERCENARIES_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
+				screen.attachPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
@@ -876,45 +876,45 @@ class CvMercenaryManager:
 
 		
 		# Available Colonists panel information
-		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] = 450
-		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
-		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] - (self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
-		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
-		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_COLONISTS", ()) + "</font>"
-		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH]/2)
-		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_Y] + 4		
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] = 450
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] - (self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_COLONISTS", ()) + "</font>"
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_WIDTH]/2)
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_Y] + 4		
 		
 		
 		# Available Expeditionaries panel information
-		self.screenWidgetData[HIRED_MERCENARIES_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[HIRED_MERCENARIES_PANEL_Y] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y] + self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[HIRED_MERCENARIES_PANEL_WIDTH] = 450
-		self.screenWidgetData[HIRED_MERCENARIES_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
-		self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_X] = self.screenWidgetData[HIRED_MERCENARIES_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_Y] = self.screenWidgetData[HIRED_MERCENARIES_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_WIDTH] = self.screenWidgetData[HIRED_MERCENARIES_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[HIRED_MERCENARIES_INNER_PANEL_HEIGHT] = self.screenWidgetData[HIRED_MERCENARIES_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[HIRED_MERCENARIES_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[HIRED_MERCENARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[HIRED_MERCENARIES_PANEL_WIDTH] - (self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
-		self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
-		self.screenWidgetData[HIRED_MERCENARIES_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_EXPEDITIONARIES", ()) + "</font>"
-		self.screenWidgetData[HIRED_MERCENARIES_TEXT_PANEL_X] = self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH]/2)
-		self.screenWidgetData[HIRED_MERCENARIES_TEXT_PANEL_Y] = self.screenWidgetData[HIRED_MERCENARIES_TEXT_BACKGROUND_PANEL_Y] + 4
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] = 450
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_EXPEDITIONARIES", ()) + "</font>"
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH]/2)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y] + 4
 		
 		
 		# Mercenary information panel information
-		self.screenWidgetData[MERCENARY_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[MERCENARY_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[MERCENARY_INFORMATION_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[MERCENARY_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[MERCENARY_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
 		self.screenWidgetData[MERCENARY_INFORMATION_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*2) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
 		self.screenWidgetData[MERCENARY_INFORMATION_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[MERCENARY_INFORMATION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[MERCENARY_INFORMATION_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[MERCENARY_INFORMATION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
@@ -1069,9 +1069,9 @@ class CvMercenaryManager:
 		self.screenWidgetData[HIRED_MERCENARY_GROUPS_TEXT_PANEL_Y] = self.screenWidgetData[HIRED_MERCENARY_GROUPS_TEXT_BACKGROUND_PANEL_Y] + 4
 
 		# Mercenary groups information panel information
-		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
 		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*2) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
 		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[MERCENARY_GROUP_INFORMATION_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[MERCENARY_GROUP_INFORMATION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]

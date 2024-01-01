@@ -20,10 +20,10 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_GOVERNMENT</CivicOptionType>
-			<Type>CIVIC_EXPEDITIONARIES</Type>
-			<Description>TXT_KEY_CIVIC_EXPEDITIONARIES</Description>
-			<Civilopedia>TXT_KEY_CIVIC_EXPEDITIONARIES_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_EXPEDITIONARIES_STRATEGY</Strategy>
+			<Type>CIVIC_EXPEDITION</Type>
+			<Description>TXT_KEY_CIVIC_EXPEDITION</Description>
+			<Civilopedia>TXT_KEY_CIVIC_EXPEDITION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_EXPEDITION_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Expeditionaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>

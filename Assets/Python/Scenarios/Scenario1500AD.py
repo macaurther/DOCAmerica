@@ -46,7 +46,7 @@ lCivilizations = [
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpeditionaries, iMaritimeLaw, iConquest],
+		lCivics=[iExpedition, iMaritimeLaw, iConquest],
 		techs=techs.column(6).without(*lNativeTechs)
 	),
 	Civilization(

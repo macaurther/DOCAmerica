@@ -2187,7 +2187,7 @@ enum CivicTypes						// Exposed to Python
 	NO_CIVIC = -1,
 
 	CIVIC_CHIEFDOM,					// Culture Group 1
-	CIVIC_EXPEDITIONARIES,			// Culture Group 2
+	CIVIC_EXPEDITION,				// Culture Group 2
 	CIVIC_DESPOTISM,				// Culture Group 1
 	CIVIC_VICEROYALITY,				// Culture Group 2
 	CIVIC_COUNCIL,					// Culture Group 1
