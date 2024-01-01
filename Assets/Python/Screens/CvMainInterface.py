@@ -67,13 +67,13 @@ import WidgetUtil
 import FontUtil
 
 # < Mercenaries Start >
-import CvMercenaryManager
+import CvImmigrationManager
 #import CvConfigParser #Rhye
-import MercenaryUtils
+import ImmigrationUtils
 #import CvMercenaryModGameUtils #Rhye
 import CvGameInterface
 
-objMercenaryUtils = MercenaryUtils.MercenaryUtils()
+objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
 gameUtils = CvGameInterface.gameUtils()
 
 # < Mercenaries End   >
@@ -247,7 +247,7 @@ tStabilitySymbols = (
 
 # < Mercenaries Start >
 
-mercenaryManager = CvMercenaryManager.CvMercenaryManager(CvScreenEnums.MERCENARY_MANAGER)
+mercenaryManager = CvImmigrationManager.CvImmigrationManager(CvScreenEnums.IMMIGRATION_MANAGER)
 
 # This value also controls the "Mercenary Manager" button and when it should be displayed.
 # Default value is "ERA_ANCIENT"
@@ -594,9 +594,9 @@ class CvMainInterface:
 		# < Mercenaries Start >
 		iBtnX += iBtnAdvance
 		# Set the mercenary manager button in the interface
-		screen.setImageButton( "MercenaryManagerButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_MERCENARIES_MANAGER").getPath(), iBtnX + 3, iBtnY - 2, iBtnWidth, iBtnWidth, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_MERCENARIES_MANAGER).getActionInfoIndex(), -1 )
+		screen.setImageButton( "ImmigrationManagerButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_IMMIGRATION_MANAGER").getPath(), iBtnX + 3 - 8, iBtnY - 2 - 6, iBtnWidth + 15, iBtnWidth + 15, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_IMMIGRATION_MANAGER).getActionInfoIndex(), -1 )
 		# Hide the mercenary manager button 
-		screen.hide( "MercenaryManagerButton" )
+		screen.hide( "ImmigrationManagerButton" )
 		# < Mercenaries End >
 		
 		iBtnX = xResolution - 277
@@ -1512,7 +1512,7 @@ class CvMainInterface:
 			screen.hide( "InterfaceTopRight" )
 			screen.hide( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.hide( "MercenaryManagerButton" )
+			screen.hide( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.hide( "EspionageAdvisorButton" )
 			screen.hide( "DomesticAdvisorButton" )
@@ -1548,7 +1548,7 @@ class CvMainInterface:
 			screen.hide( "InterfaceTopRight" )
 			screen.hide( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.hide( "MercenaryManagerButton" )
+			screen.hide( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.hide( "EspionageAdvisorButton" )
 			screen.hide( "DomesticAdvisorButton" )
@@ -1584,7 +1584,9 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.show( "MercenaryManagerButton" )				
+			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
+			if teamPlayer.isHasTech(iOldWorldTactics): 
+				screen.show( "ImmigrationManagerButton" )				
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
 			screen.show( "DomesticAdvisorButton" )
@@ -1612,7 +1614,9 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.moveToFront( "MercenaryManagerButton" )
+			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
+			if teamPlayer.isHasTech(iOldWorldTactics): 
+				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
 			screen.moveToFront( "DomesticAdvisorButton" )
@@ -1670,7 +1674,9 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.show( "MercenaryManagerButton" )
+			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
+			if teamPlayer.isHasTech(iOldWorldTactics): 
+				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
 			screen.show( "DomesticAdvisorButton" )
@@ -1698,7 +1704,9 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.moveToFront( "MercenaryManagerButton" )
+			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
+			if teamPlayer.isHasTech(iOldWorldTactics): 
+				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
 			screen.moveToFront( "DomesticAdvisorButton" )
@@ -1726,7 +1734,9 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.show( "MercenaryManagerButton" )
+			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
+			if teamPlayer.isHasTech(iOldWorldTactics): 
+				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
 			screen.show( "DomesticAdvisorButton" )
@@ -1762,7 +1772,9 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			screen.moveToFront( "MercenaryManagerButton" )
+			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
+			if teamPlayer.isHasTech(iOldWorldTactics): 
+				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
 			screen.moveToFront( "DomesticAdvisorButton" )
@@ -5758,7 +5770,7 @@ class CvMainInterface:
 	def handleInput (self, inputClass):
 		# < Mercenaries Start >
 		# Handle the case where the "Mercenary Manager" button is pressed. 
-		if(inputClass.getFunctionName() == "MercenaryManagerButton"):
+		if(inputClass.getFunctionName() == "ImmigrationManagerButton"):
 			mercenaryManager.interfaceScreen()
 		# < Mercenaries End   >
 		

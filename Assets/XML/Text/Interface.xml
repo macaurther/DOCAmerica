@@ -1031,7 +1031,7 @@
 		<Spanish>%D1_Change[ICON_HAPPY]: "Our specialists increase the prestige of our city!"</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HIRED_MERCENARIES</Tag>
+		<Tag>TXT_KEY_HIRED_IMMIGRATION</Tag>
 		<English>Hired Mercenaries</English>
 		<French>Mercenaires recrut&#233;s</French>
 		<German>Angeheuerte S&#246;ldner</German>
@@ -1135,60 +1135,28 @@
 		<Spanish>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MERCENARIES_DISABLED</Tag>
-		<English>Nationalism has changed the conception of armies: Mercenaries no longer fit in!</English>
-		<French>Le Nationalisme a chang&#233; la conception des arm&#233;es : les mercenaires ne sont plus utilis&#233;s !</French>
-		<German>Der Nationalismus ver&#228;nderte das Prinzip des strukturellen Aufbaus einer Armee so grundlegend, dass S&#246;ldner nicht mehr in das Konzept passen.</German>
-		<Italian>Il nazionalismo ha cambiato la concezione degli eserciti: non c'&#232; pi&#249; posto per i mercenari!</Italian>
-		<Spanish>El nacionalismo ha cambiado la concepci&#243;n de los ej&#233;rcitos: &#161;los mercenarios ya no encajan en ellos!</Spanish>
+		<Tag>TXT_KEY_IMMIGRATION_SCREEN_TITLE</Tag>
+		<English>Immigration Manager</English>
+		<French>Immigration Manager</French>
+		<German>Immigration Manager</German>
+		<Italian>Immigration Manager</Italian>
+		<Spanish>Immigration Manager</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MERCENARIES_SCREEN_TITLE</Tag>
-		<English>Mercenary Manager</English>
-		<French>Responsable des mercenaires</French>
-		<German>S&#246;ldner-Verwaltung</German>
-		<Italian>Gestione mercenari</Italian>
-		<Spanish>Gestor de mercenarios</Spanish>
+		<Tag>TXT_KEY_IMMIGRANT_INFORMATION</Tag>
+		<English>Immigrant Information</English>
+		<French>Immigrant Information</French>
+		<German>Immigrant Information</German>
+		<Italian>Immigrant Information</Italian>
+		<Spanish>Immigrant Information</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MERCENARY_CONTRACTS_SCREEN_TITLE</Tag>
-		<English>Mercenary Contracts</English>
-		<French>Contrats de mercenaires</French>
-		<German>S&#246;ldner-Vertr&#228;ge</German>
-		<Italian>Contratti mercenari</Italian>
-		<Spanish>Contratos de mercenarios</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MERCENARY_GROUP_INFORMATION</Tag>
-		<English>Mercenary Group Information</English>
-		<French>Informations sur les groupes de mercenaires</French>
-		<German>S&#246;ldner-Gruppen-Informationen</German>
-		<Italian>Informazioni sui gruppi mercenari</Italian>
-		<Spanish>Informaci&#243;n del grupo de mercenarios</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MERCENARY_GROUPS_SCREEN_TITLE</Tag>
-		<English>Mercenary Groups</English>
-		<French>Groupes de mercenaires</French>
-		<German>S&#246;ldner-Gruppen</German>
-		<Italian>Gruppi mercenari</Italian>
-		<Spanish>Grupos de mercenarios</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MERCENARY_INFORMATION</Tag>
-		<English>Mercenary Information</English>
-		<French>Informations sur les mercenaires</French>
-		<German>S&#246;ldner-Informationen</German>
-		<Italian>Informazioni sui mercenari</Italian>
-		<Spanish>Informaci&#243;n de mercenarios</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MERCENARY_SCREEN_TITLE</Tag>
-		<English>Mercenaries</English>
-		<French>Mercenaires</French>
-		<German>S&#246;ldner</German>
-		<Italian>Mercenari</Italian>
-		<Spanish>Mercenarios</Spanish>
+		<Tag>TXT_KEY_IMMIGRATION_SCREEN_TITLE</Tag>
+		<English>Immigrants</English>
+		<French>Immigrants</French>
+		<German>Immigrants</German>
+		<Italian>Immigrants</Italian>
+		<Spanish>Immigrants</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_PERSECUTION</Tag>
@@ -1599,7 +1567,7 @@
 		<Spanish>The Mongol hordes have invaded our territory!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_NEW_MERCENARIES</Tag>
+		<Tag>TXT_KEY_NEW_IMMIGRATION</Tag>
 		<English>There are new mercenaries available for hiring.</English>
 		<French>De nouveaux mercenaires sont disponibles.</French>
 		<German>There are new mercenaries available for hiring.</German>
@@ -3543,6 +3511,14 @@
 		<German>The villagers have provided you with a Slave!</German>
 		<Italian>The villagers have provided you with a Slave!</Italian>
 		<Spanish>The villagers have provided you with a Slave!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_TITLE</Tag>
+		<English>Immigration</English>
+		<French>Immigration</French>
+		<German>Immigration</German>
+		<Italian>Immigration</Italian>
+		<Spanish>Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

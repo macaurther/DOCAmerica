@@ -1254,8 +1254,8 @@
 		</InterfaceArtInfo>
 		<!-- Mercenaries Start -->
 		<InterfaceArtInfo>
-			<Type>INTERFACE_MERCENARIES_MANAGER</Type>
-			<Path>Art/Interface/Mainscreen/MercenariesManager.dds</Path>
+			<Type>INTERFACE_IMMIGRATION_MANAGER</Type>
+			<Path>Art/Interface/Mainscreen/Immigration.dds</Path>
 		</InterfaceArtInfo>
 		<!-- Mercenaries End   -->
 		<InterfaceArtInfo>

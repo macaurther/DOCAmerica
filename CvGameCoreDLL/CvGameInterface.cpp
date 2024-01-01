@@ -1399,7 +1399,7 @@ bool CvGame::canDoControl(ControlTypes eControl) const
 	case CONTROL_INFO:
 	case CONTROL_DETAILS:
 	case CONTROL_SAVE_NORMAL:
-	case CONTROL_MERCENARIES_MANAGER:
+	case CONTROL_IMMIGRATION_MANAGER:
 		return true;
 		break;
 	case CONTROL_ESPIONAGE_SCREEN:
@@ -1916,8 +1916,8 @@ void CvGame::doControl(ControlTypes eControl)
 		}
 		break;
 
-	case CONTROL_MERCENARIES_MANAGER:
-		gDLL->getPythonIFace()->callFunction(PYScreensModule, "showMercenaryManager");
+	case CONTROL_IMMIGRATION_MANAGER:
+		gDLL->getPythonIFace()->callFunction(PYScreensModule, "showImmigrationManager");
 		break;
 		
 	case CONTROL_DIPLOMACY:

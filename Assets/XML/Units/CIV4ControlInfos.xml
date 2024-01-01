@@ -955,8 +955,8 @@
 		<!-- Rhye -->
 		<!-- Mercenaries Start -->
 		<ControlInfo>
-			<Type>CONTROL_MERCENARIES_MANAGER</Type>
-			<Description>TXT_KEY_MERCENARIES_TITLE</Description>
+			<Type>CONTROL_IMMIGRATION_MANAGER</Type>
+			<Description>TXT_KEY_IMMIGRATION_TITLE</Description>
 			<Help/>
 			<HotKey>KB_M</HotKey>
 			<bAltDown>0</bAltDown>

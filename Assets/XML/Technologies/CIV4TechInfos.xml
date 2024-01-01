@@ -1778,6 +1778,7 @@
 			<Type>TECH_OLD_WORLD_CULTURE</Type>
 			<Description>TXT_KEY_TECH_OLD_WORLD_CULTURE</Description>
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_CULTURE_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_OLD_WORLD_CULTURE_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

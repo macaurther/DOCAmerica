@@ -42,7 +42,7 @@ from CvScreenEnums import *
 from CvPythonExtensions import *
 
 # < Mercenaries Mod Start >
-import CvMercenaryManager
+import CvImmigrationManager
 # < Mercenaries Mod End >
 
 # BUG - Options - end
@@ -308,8 +308,8 @@ def showVictoryScreen():
 		victoryScreen.interfaceScreen()
 
 # < Mercenaries Mod Start >
-mercenaryManager = CvMercenaryManager.CvMercenaryManager(MERCENARY_MANAGER)
-def showMercenaryManager():
+mercenaryManager = CvImmigrationManager.CvImmigrationManager(IMMIGRATION_MANAGER)
+def showImmigrationManager():
 	mercenaryManager.interfaceScreen()	
 # < Mercenaries Mod End   >
 
@@ -1031,7 +1031,7 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 					
 					# add new screens here
 					# < Mercenaries Mod Start > 
-					MERCENARY_MANAGER: mercenaryManager,
+					IMMIGRATION_MANAGER: mercenaryManager,
 					# < Mercenaries Mod End   >
 				}
 
