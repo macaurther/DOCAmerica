@@ -1252,6 +1252,12 @@
 			<Type>SCREEN_UN_BG</Type>
 			<Path>Art/Interface/Screens/Reward/UN_BG.dds</Path>
 		</InterfaceArtInfo>
+		<!-- Mercenaries Start -->
+		<InterfaceArtInfo>
+			<Type>INTERFACE_MERCENARIES_MANAGER</Type>
+			<Path>Art/Interface/Mainscreen/MercenariesManager.dds</Path>
+		</InterfaceArtInfo>
+		<!-- Mercenaries End   -->
 		<InterfaceArtInfo>
 			<Type>SCROLL_UP_ARROW</Type>
 			<Path>Art/Interface/Buttons/up_arrow.dds</Path>

@@ -66,6 +66,18 @@ import BugUnitPlot
 import WidgetUtil
 import FontUtil
 
+# < Mercenaries Start >
+import CvMercenaryManager
+#import CvConfigParser #Rhye
+import MercenaryUtils
+#import CvMercenaryModGameUtils #Rhye
+import CvGameInterface
+
+objMercenaryUtils = MercenaryUtils.MercenaryUtils()
+gameUtils = CvGameInterface.gameUtils()
+
+# < Mercenaries End   >
+
 # globals
 gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
@@ -233,8 +245,25 @@ tStabilitySymbols = (
 	FontSymbols.SOLID_CHAR,
 )
 
+# < Mercenaries Start >
+
+mercenaryManager = CvMercenaryManager.CvMercenaryManager(CvScreenEnums.MERCENARY_MANAGER)
+
+# This value also controls the "Mercenary Manager" button and when it should be displayed.
+# Default value is "ERA_ANCIENT"
+#Rhye - start (was causing an assert)
+#g_iStartingEra = gc.getInfoTypeForString("ERA_ANCIENT")
+g_iStartingEra = 0
+#Rhye - end
+
+# < Mercenaries End >
+
 class CvMainInterface:
 	"Main Interface Screen"
+	
+	# < Mercenaries Start >
+	repainting = false
+	# < Mercenaries End   >
 	
 	def __init__(self):
 	
@@ -443,6 +472,12 @@ class CvMainInterface:
 		self.BupPanel = BugUnitPlot.BupPanel(screen, screen.getXResolution(), screen.getYResolution(), iMultiListXL+iMultiListXR, self.numPlotListButtonsPerRow(), self.numPlotListRows())
 # BUG - BUG unit plot draw method - end
 
+		# < Mercenaries Start >
+		global g_iStartingEra
+
+		self.repainting=false
+		# < Mercenaries End   >
+
 	def interfaceScreen (self):
 		"""
 		Draw all of the screen elements.
@@ -555,6 +590,14 @@ class CvMainInterface:
 		screen.setImageButton( "TurnLogButton", "", iBtnX, iBtnY - 2, iBtnWidth, iBtnWidth, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TURN_LOG).getActionInfoIndex(), -1 )
 		screen.setStyle( "TurnLogButton", "Button_HUDLog_Style" )
 		screen.hide( "TurnLogButton" )
+		
+		# < Mercenaries Start >
+		iBtnX += iBtnAdvance
+		# Set the mercenary manager button in the interface
+		screen.setImageButton( "MercenaryManagerButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_MERCENARIES_MANAGER").getPath(), iBtnX + 3, iBtnY - 2, iBtnWidth, iBtnWidth, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_MERCENARIES_MANAGER).getActionInfoIndex(), -1 )
+		# Hide the mercenary manager button 
+		screen.hide( "MercenaryManagerButton" )
+		# < Mercenaries End >
 		
 		iBtnX = xResolution - 277
 		
@@ -1019,6 +1062,7 @@ class CvMainInterface:
 		iBtnY = 27
 		iBtnX = 27
 		iBtnX = 10
+		iBtnX = 35	# MacAurther: Moving BUG Button right
 
 		sBUGOptionsScreenButton = ArtFileMgr.getInterfaceArtInfo("BUG_OPTIONS_SCREEN_BUTTON").getPath()
 		screen.setImageButton("BUGOptionsScreenWidget", sBUGOptionsScreenButton,  iBtnX + 30, iBtnY - 2, iBtnWidth, iBtnWidth, WidgetTypes.WIDGET_BUG_OPTION_SCREEN, -1, -1)
@@ -1467,6 +1511,9 @@ class CvMainInterface:
 			screen.hide( "InterfaceTopCenter" )
 			screen.hide( "InterfaceTopRight" )
 			screen.hide( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.hide( "MercenaryManagerButton" )
+			# < Mercenaries End >
 			screen.hide( "EspionageAdvisorButton" )
 			screen.hide( "DomesticAdvisorButton" )
 			screen.hide( "ForeignAdvisorButton" )
@@ -1500,6 +1547,9 @@ class CvMainInterface:
 			screen.hide( "InterfaceTopCenter" )
 			screen.hide( "InterfaceTopRight" )
 			screen.hide( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.hide( "MercenaryManagerButton" )
+			# < Mercenaries End >
 			screen.hide( "EspionageAdvisorButton" )
 			screen.hide( "DomesticAdvisorButton" )
 			screen.hide( "ForeignAdvisorButton" )
@@ -1533,6 +1583,9 @@ class CvMainInterface:
 			screen.show( "InterfaceTopCenter" )
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.show( "MercenaryManagerButton" )				
+			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
 			screen.show( "DomesticAdvisorButton" )
 			screen.show( "ForeignAdvisorButton" )
@@ -1558,6 +1611,9 @@ class CvMainInterface:
 # BUG - field of view slider - end
 
 			screen.moveToFront( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.moveToFront( "MercenaryManagerButton" )
+			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
 			screen.moveToFront( "DomesticAdvisorButton" )
 			screen.moveToFront( "ForeignAdvisorButton" )
@@ -1613,6 +1669,9 @@ class CvMainInterface:
 			screen.show( "InterfaceTopCenter" )
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.show( "MercenaryManagerButton" )
+			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
 			screen.show( "DomesticAdvisorButton" )
 			screen.show( "ForeignAdvisorButton" )
@@ -1638,6 +1697,9 @@ class CvMainInterface:
 # BUG - field of view slider - end
 
 			screen.moveToFront( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.moveToFront( "MercenaryManagerButton" )
+			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
 			screen.moveToFront( "DomesticAdvisorButton" )
 			screen.moveToFront( "ForeignAdvisorButton" )
@@ -1663,6 +1725,9 @@ class CvMainInterface:
 			screen.show( "InterfaceTopCenter" )
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.show( "MercenaryManagerButton" )
+			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
 			screen.show( "DomesticAdvisorButton" )
 			screen.show( "ForeignAdvisorButton" )
@@ -1696,6 +1761,9 @@ class CvMainInterface:
 # BUG - field of view slider - end
 
 			screen.moveToFront( "TurnLogButton" )
+			# < Mercenaries Start >
+			screen.moveToFront( "MercenaryManagerButton" )
+			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
 			screen.moveToFront( "DomesticAdvisorButton" )
 			screen.moveToFront( "ForeignAdvisorButton" )
@@ -2508,7 +2576,7 @@ class CvMainInterface:
 						screen.show( "BottomButtonContainer" )
 						
 						iCount = iCount + 1
-						
+					
 					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerica RP
 					if pUnit.getUnitType() == iNativeSlave and civ(pUnit) in (iAztecs, iMaya, iTeotihuacan):
 						plot = plot_(pUnit)
@@ -5688,6 +5756,12 @@ class CvMainInterface:
 
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
+		# < Mercenaries Start >
+		# Handle the case where the "Mercenary Manager" button is pressed. 
+		if(inputClass.getFunctionName() == "MercenaryManagerButton"):
+			mercenaryManager.interfaceScreen()
+		# < Mercenaries End   >
+		
 #		BugUtil.debugInput(inputClass)
 # BUG - PLE - start
 		if  (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CURSOR_MOVE_ON) or \

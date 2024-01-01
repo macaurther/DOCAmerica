@@ -504,6 +504,14 @@ class CvMainInterface:
 		screen.setStyle( "TurnLogButton", "Button_HUDLog_Style" )
 		screen.hide( "TurnLogButton" )
 		
+		# < Mercenaries Start >
+		iBtnX += iBtnAdvance
+		# Set the mercenary manager button in the interface
+		screen.setImageButton( "MercenaryManagerButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_MERCENARIES_MANAGER").getPath(), iBtnX, iBtnY - 1, iBtnWidth, iBtnWidth, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_MERCENARIES_MANAGER).getActionInfoIndex(), -1 )
+		# Hide the mercenary manager button 
+		screen.hide( "MercenaryManagerButton" )
+		# < Mercenaries End >
+		
 		iBtnX = xResolution - 277
 		
 		# Advisor Buttons...

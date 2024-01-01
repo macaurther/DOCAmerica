@@ -783,22 +783,6 @@
 		<Spanish>TURNOS AUTOM&#193;TICOS RESTANTES: %d1_Num</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_AVAILABLE_MERCENARIES</Tag>
-		<English>Available Mercenaries</English>
-		<French>Mercenaires disponibles</French>
-		<German>Verf&#252;gbare S&#246;ldner</German>
-		<Italian>Mercenari disponibili</Italian>
-		<Spanish>Mercenarios disponibles</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_AVAILABLE_MERCENARY_GROUPS</Tag>
-		<English>Available Mercenary Groups</English>
-		<French>Groupes de mercenaires disponibles</French>
-		<German>Verf&#252;gbare S&#246;ldner-Gruppen</German>
-		<Italian>Gruppi mercenari disponibili</Italian>
-		<Spanish>Grupos de mercenarios disponibles</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_AVAILABLE_UNITS</Tag>
 		<English>Available Units</English>
 		<French>Unit&#233;s disponibles</French>

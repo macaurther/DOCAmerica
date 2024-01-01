@@ -141,6 +141,13 @@
 			<Description>TXT_KEY_CONCEPT_DOCA_FORTS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_DOCA_FORTS_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<!-- Mercenaries Start -->
+		<ConceptInfo>
+			<Type>CONCEPT_MERCENARIES</Type>
+			<Description>TXT_KEY_CONCEPT_MERCENARIES</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_MERCENARIES_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<!-- Mercenaries End   -->	
 		<ConceptInfo>
 			<Type>CONCEPT_DOCA_ODDS</Type>
 			<Description>TXT_KEY_CONCEPT_DOCA_ODDS</Description>

@@ -206,14 +206,14 @@ iInuit : 1050,
 iInca : 1100,
 iAztecs : 1250,
 iIroquois : 1450,
-iSpain : 1496,
-iPortugal : 1532,
+iSpain : 275, #1496,
+iPortugal : 275, #1532,
 iEngland : 1607,
 iFrance : 1608,
 iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
-iAmerica : 1775,
+iAmerica : 275, #1775,
 iHaiti : 1804,
 iArgentina : 1810,
 iMexico : 1810,
@@ -675,3 +675,42 @@ newline = "[NEWLINE]"
 bullet = "[ICON_BULLET]"
 event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
+
+
+#Mercenaries. Higher number = less likely to hire
+tHire = (
+90, # iMaya
+80, # iTeotihuacan
+90, # iTiwanaku
+70, # iWari
+90, # iMississippi
+90, # iPuebloan
+90, # iMuisca
+20, # iNorse
+80, # iChimu
+90, # iInuit
+60, # iInca
+30, # iAztecs
+40, # iIroquois
+10, # iSpain
+10, # iPortugal
+10, # iEngland
+10, # iFrance
+10, # iNetherlands
+80, # iHawaii
+10, # iRussia
+10, # iAmerica
+50, # iHaiti
+20, # iArgentina
+30, # iMexico
+30, # iColombia: 
+30, # iPeru
+10, # iBrazil
+40, # iVenezuela
+10, # iCanada
+50, # iCuba
+100,
+100,
+100,
+100,
+100) #Barbs

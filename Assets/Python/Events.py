@@ -5,9 +5,7 @@ from Core import *
 
 from GoalHandlers import event_handler_registry
 
-
 victory_handlers = appenddict()
-
 
 def handler(event):
 	def handler_decorator(func):
@@ -172,5 +170,3 @@ def onCombatResult(pWinner, pLoser):
 			if not pWinner.isFull():
 				pCannon = makeUnit(iWinner, unique_unit(iWinner, iCannon), (pWinner.getX(), pWinner.getY()), UnitAITypes.UNITAI_ATTACK)
 				pCannon.setTransportUnit(pWinner)
-
-
