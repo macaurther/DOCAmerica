@@ -171,19 +171,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
-		<English>Faster worker construction speed; extra commerce from Plantations; immigration also provides commerce</English>
-		<French>Faster worker construction speed; extra commerce from Plantations; immigration also provides commerce</French>
-		<German>Faster worker construction speed; extra commerce from Plantations; immigration also provides commerce</German>
-		<Italian>Faster worker construction speed; extra commerce from Plantations; immigration also provides commerce</Italian>
-		<Spanish>Faster worker construction speed; extra commerce from Plantations; immigration also provides commerce</Spanish>
+		<English>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</English>
+		<French>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</French>
+		<German>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</German>
+		<Italian>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</Italian>
+		<Spanish>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
-		<English>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</English>
-		<French>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</French>
-		<German>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</German>
-		<Italian>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</Italian>
-		<Spanish>[ICON_BULLET][LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] also provides [ICON_COMMERCE]</Spanish>
+		<English>[ICON_BULLET]Can buy Slaves from the Old World</English>
+		<French>[ICON_BULLET]Can buy Slaves from the Old World</French>
+		<German>[ICON_BULLET]Can buy Slaves from the Old World</German>
+		<Italian>[ICON_BULLET]Can buy Slaves from the Old World</Italian>
+		<Spanish>[ICON_BULLET]Can buy Slaves from the Old World</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHIEFDOM</Tag>
@@ -403,19 +403,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Tag>
-		<English>Increase great people birth rate in cities with state religion; extra happiness for non-state religions; receive immigration base on production</English>
-		<French>Increase great people birth rate in cities with state religion; extra happiness for non-state religions; receive immigration base on production</French>
-		<German>Increase great people birth rate in cities with state religion; extra happiness for non-state religions; receive immigration base on production</German>
-		<Italian>Increase great people birth rate in cities with state religion; extra happiness for non-state religions; receive immigration base on production</Italian>
-		<Spanish>Increase great people birth rate in cities with state religion; extra happiness for non-state religions; receive immigration base on production</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Tag>
-		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</English>
-		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</French>
-		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</German>
-		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</Italian>
-		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_PRODUCTION] per Citizen</Spanish>
+		<English>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</English>
+		<French>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</French>
+		<German>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</German>
+		<Italian>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</Italian>
+		<Spanish>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONQUEST</Tag>
@@ -479,32 +471,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Tag>
-		<English>Extra production for Wonders; no foreign trade routes; increased culture in capital; no immigration</English>
-		<French>Extra production for Wonders; no foreign trade routes; increased culture in capital; no immigration</French>
-		<German>Extra production for Wonders; no foreign trade routes; increased culture in capital; no immigration</German>
-		<Italian>Extra production for Wonders; no foreign trade routes; increased culture in capital; no immigration</Italian>
-		<Spanish>Extra production for Wonders; no foreign trade routes; increased culture in capital; no immigration</Spanish>
+		<English>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</English>
+		<French>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</French>
+		<German>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</German>
+		<Italian>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</Italian>
+		<Spanish>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>
 		<English>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]No Immigration</English>
+[ICON_BULLET]-50% [ICON_IMMIGRATION]</English>
 		<French>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]No Immigration</French>
+[ICON_BULLET]-50% [ICON_IMMIGRATION]</French>
 		<German>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]No Immigration</German>
+[ICON_BULLET]-50% [ICON_IMMIGRATION]</German>
 		<Italian>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]No Immigration</Italian>
+[ICON_BULLET]-50% [ICON_IMMIGRATION]</Italian>
 		<Spanish>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]No Immigration</Spanish>
+[ICON_BULLET]-50% [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
-		<English>[ICON_BULLET]No instability for cities outside core</English>
-		<French>[ICON_BULLET]No instability for cities outside core</French>
-		<German>[ICON_BULLET]No instability for cities outside core</German>
-		<Italian>[ICON_BULLET]No instability for cities outside core</Italian>
-		<Spanish>[ICON_BULLET]No instability for cities outside core</Spanish>
+		<English>[ICON_BULLET]No instability for outdated or conflicting Civics</English>
+		<French>[ICON_BULLET]No instability for outdated or conflicting Civics</French>
+		<German>[ICON_BULLET]No instability for outdated or conflicting Civics</German>
+		<Italian>[ICON_BULLET]No instability for outdated or conflicting Civics</Italian>
+		<Spanish>[ICON_BULLET]No instability for outdated or conflicting Civics</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIONHOOD</Tag>
@@ -600,19 +592,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Tag>
-		<English>Double production speed for defensive buildings; no extra maintenance for Mercenaries</English>
-		<French>Double production speed for defensive buildings; no extra maintenance for Mercenaries</French>
-		<German>Double production speed for defensive buildings; no extra maintenance for Mercenaries</German>
-		<Italian>Double production speed for defensive buildings; no extra maintenance for Mercenaries</Italian>
-		<Spanish>Double production speed for defensive buildings; no extra maintenance for Mercenaries</Spanish>
+		<English>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</English>
+		<French>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</French>
+		<German>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</German>
+		<Italian>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Italian>
+		<Spanish>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_HELP</Tag>
-		<English>[ICON_BULLET]Mercenaries do not cost additional upkeep</English>
-		<French>[ICON_BULLET]Mercenaries do not cost additional upkeep</French>
-		<German>[ICON_BULLET]Mercenaries do not cost additional upkeep</German>
-		<Italian>[ICON_BULLET]Mercenaries do not cost additional upkeep</Italian>
-		<Spanish>[ICON_BULLET]Mercenaries do not cost additional upkeep</Spanish>
+		<English>[ICON_BULLET]Mercenaries do not cost additional upkeep
+[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</English>
+		<French>[ICON_BULLET]Mercenaries do not cost additional upkeep
+[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</French>
+		<German>[ICON_BULLET]Mercenaries do not cost additional upkeep
+[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</German>
+		<Italian>[ICON_BULLET]Mercenaries do not cost additional upkeep
+[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</Italian>
+		<Spanish>[ICON_BULLET]Mercenaries do not cost additional upkeep
+[ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY</Tag>
@@ -624,11 +621,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_STRATEGY</Tag>
-		<English>Lower maintenance costs from number of cities; extra science from specialists; increased war weariness; increased unit maintenance</English>
-		<French>Lower maintenance costs from number of cities; extra science from specialists; increased war weariness; increased unit maintenance</French>
-		<German>Lower maintenance costs from number of cities; extra science from specialists; increased war weariness; increased unit maintenance</German>
-		<Italian>Lower maintenance costs from number of cities; extra science from specialists; increased war weariness; increased unit maintenance</Italian>
-		<Spanish>Lower maintenance costs from number of cities; extra science from specialists; increased war weariness; increased unit maintenance</Spanish>
+		<English>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</English>
+		<French>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</French>
+		<German>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</German>
+		<Italian>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</Italian>
+		<Spanish>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOVERNORS</Tag>

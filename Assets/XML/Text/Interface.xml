@@ -895,20 +895,20 @@
 		<Spanish>%s1 Stability:</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_FIRST_CONTACT_NEWWORLD</Tag>
-		<English>Conquerors from a far away continent are invading our lands searching for wealth!</English>
-		<French>Des conqu&#233;rants venus d'un continent lointain envahissent nos terres &#224; la recherche de richesses !</French>
-		<German>Eroberer von einem weit entfernten Kontinent fallen auf der Suche nach Reichtum in unser Land ein!</German>
-		<Italian>I conquistatori provenienti da un continente lontano invadono le nostre terre in cerca di ricchezza!</Italian>
-		<Spanish>&#161;Unos conquistadores de un continente lejano est&#225;n invadiendo nuestras tierras en busca de riquezas!</Spanish>
+		<Tag>TXT_KEY_FIRST_CONTACT_OLDWORLD</Tag>
+		<English>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</English>
+		<French>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</French>
+		<German>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</German>
+		<Italian>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Italian>
+		<Spanish>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_FIRST_CONTACT_OLDWORLD</Tag>
-		<English>A group of our own adventurers has arrived in the new world searching for wealth!</English>
-		<French>Un groupe de nos aventuriers est arriv&#233; dans le Nouveau Monde &#224; la recherche de richesses !</French>
-		<German>Eine Gruppe Eurer eigenen Abenteurer ist auf der Suche nach Reichtum in der Neuen Welt angekommen!</German>
-		<Italian>Un gruppo di nostri avventurieri &#232; arrivato nel nuovo mondo in cerca di ricchezza!</Italian>
-		<Spanish>&#161;Uno de nuestros grupos de aventureros ha llegado a unas nuevas tierras en busca de riquezas!</Spanish>
+		<Tag>TXT_KEY_FIRST_CONTACT_NEWWORLD</Tag>
+		<English>Our empire's great wealth has reached the ears in the courts of these strange adventurers!</English>
+		<French>Our empire's great wealth has reached the ears in the courts of these strange adventurers!</French>
+		<German>Our empire's great wealth has reached the ears in the courts of these strange adventurers!</German>
+		<Italian>Our empire's great wealth has reached the ears in the courts of these strange adventurers!</Italian>
+		<Spanish>Our empire's great wealth has reached the ears in the courts of these strange adventurers!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES</Tag>

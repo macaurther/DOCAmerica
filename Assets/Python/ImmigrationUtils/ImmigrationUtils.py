@@ -934,12 +934,21 @@ class ImmigrationUtils:
 		
 		# Get the available mercenaries from the global mercenary pool
 		mercenaryDict = self.getAvailableColonists(iPlayer)
+		
+		# Get the actual current player object
+		player = gc.getPlayer(iPlayer)
+		
+		# Get the players current gold amount
+		currentGold = player.getGold()
+		currentImmigration = player.getImmigration()
+		civics = Civics.player(iPlayer)
+		bProprietaries = iProprietaries in civics
 
 		# Go through the available mercenaries						
 		for mercenaryName in mercenaryDict:
 
 			# Calculate how much gold the player will have after hiring the mercenary.
-			tmpGold = iGold - mercenaryDict[mercenaryName].getHireCost()
+			tmpGold = iGold - mercenaryDict[mercenaryName].getHireCost(currentImmigration, bProprietaries)
 			
 			# Continue immediately if the player can't support the mercenary
 			if(tmpGold <= 0):
@@ -1402,8 +1411,8 @@ class Mercenary:
 		return self.promotionList
 
 	# Returns true if the available funds are enough to hire
-	def canAfford(self, iCurrentImmigration, iCurrentGold):
-		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration)
+	def canAfford(self, iCurrentImmigration, iCurrentGold, bProprietaries):
+		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration, bProprietaries)
 		
 		if iGoldCost <= iCurrentGold:
 			return True
@@ -1412,7 +1421,7 @@ class Mercenary:
 	
 	# Returns the cost to hire the mercenary. If objUnit is non-none then the 
 	# iHireCost will be updated. Returns (iCostImmigration, iCostGold)
-	def getHireCost(self, iCurrentImmigration=0):
+	def getHireCost(self, iCurrentImmigration=0, bProprietaries=False):
 		' iHireCost - the cost to hire the mercenary'
 		
 		modifier = 0
@@ -1424,15 +1433,22 @@ class Mercenary:
 		iImmigrationCost = int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye
 		iGoldCost = 0
 		
+		# Settlers are expensive
+		if self.objUnitInfo != None and (self.objUnitInfo.getType() == iSettler or self.objUnitInfo.getType() == iPioneer):
+			iImmigrationCost *= 3
+
 		if iImmigrationCost > iCurrentImmigration:
 			iGoldCost = (iImmigrationCost - iCurrentImmigration) * 2
 			iImmigrationCost = iCurrentImmigration
 		
+		if bProprietaries:
+			iGoldCost /= 2
+		
 		return (iImmigrationCost, iGoldCost)
 			
 	
-	def getHireCostString(self, iCurrentImmigration=0):
-		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration)
+	def getHireCostString(self, iCurrentImmigration=0, bProprietaries=False):
+		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration, bProprietaries)
 		strHCost = ""
 		if iImmigrationCost > 0:
 			strHCost += u"%d%c" %(iImmigrationCost, gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar())

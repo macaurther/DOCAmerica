@@ -144,7 +144,8 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		if is_minor(iTeamX) or is_minor(iHasMetTeamY):
 			return
 		
-		if year().between(1490, 1800):
+		#if year().between(1490, 1800):
+		if True:
 			if civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:
 				iNewWorldPlayer = iTeamX
 				iOldWorldPlayer = iHasMetTeamY
@@ -154,107 +155,34 @@ def conquistadors(iTeamX, iHasMetTeamY):
 				bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
 				
 				if not bAlreadyContacted:
+					# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe
 					if iNewWorldCiv == iMaya:
-						tContactZoneTL = (31, 53)
-						tContactZoneBR = (42, 65)
-						tContactPlot = (37, 59)
+						iContactImmigration = 200
 					elif iNewWorldCiv == iTeotihuacan:
-						tContactZoneTL = (25, 54)
-						tContactZoneBR = (40, 66)
-						tContactPlot = (30, 63)
+						iContactImmigration = 150
 					elif iNewWorldCiv == iTiwanaku:
-						tContactZoneTL = (47, 24)
-						tContactZoneBR = (57, 37)
-						tContactPlot = (50, 32)
+						iContactImmigration = 150
 					elif iNewWorldCiv == iWari:
-						tContactZoneTL = (40, 29)
-						tContactZoneBR = (57, 45)
-						tContactPlot = (45, 38)
-					#elif iNewWorldCiv == iMuisca:
-					#	tContactZoneTL = (43, 42)
-					#	tContactZoneBR = (56, 56)
-					#	tContactPlot = (51, 51)
+						iContactImmigration = 150
+					elif iNewWorldCiv == iMuisca:
+						iContactImmigration = 500
 					elif iNewWorldCiv == iChimu:
-						tContactZoneTL = (40, 31)
-						tContactZoneBR = (52, 48)
-						tContactPlot = (44, 41)
+						iContactImmigration = 150
 					elif iNewWorldCiv == iAztecs:
-						tContactZoneTL = (23, 54)
-						tContactZoneBR = (40, 67)
-						tContactPlot = (31, 61)
+						iContactImmigration = 500
 					elif iNewWorldCiv == iInca:
-						tContactZoneTL = (40, 13)
-						tContactZoneBR = (57, 45)
-						tContactPlot = (46, 36)
+						iContactImmigration = 500
 					else:
-						return	# Some natives don't generate conquerors
-						
-					lArrivalExceptions = []
+						return	# Some natives don't generate immigration
 						
 					data.dFirstContactConquerors[iNewWorldCiv] = True
 					
 					events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
 					
-					newWorldPlots = plots.start(tContactZoneTL).end(tContactZoneBR).without(lArrivalExceptions)
-					contactPlots = newWorldPlots.where(lambda p: p.isVisible(iNewWorldPlayer, False) and p.isVisible(iOldWorldPlayer, False))
-					arrivalPlots = newWorldPlots.owner(iNewWorldPlayer).where(lambda p: not p.isCity() and isFree(iOldWorldPlayer, p, bCanEnter=True) and map.getArea(p.getArea()).getCitiesPerPlayer(iNewWorldPlayer) > 0)
-					
-					# MacAurther: if OldWorldPlayer meets an AI NewWorldPlayer before seeing their territory, spawn the OldWorldPlayer's units on a pre-determined plot. This is to prevent random units/work boats cancelling the Conquistadors event
-					if not player(iNewWorldPlayer).isHuman() and not contactPlots:
-						contactPlots = plots.start(tContactPlot).end(tContactPlot)
-					
-					if contactPlots and arrivalPlots:
-						contactPlot = contactPlots.random()
-						arrivalPlot = arrivalPlots.closest(contactPlot)
-						
-						iModifier1 = 0
-						iModifier2 = 0
-						
-						if player(iNewWorldPlayer).isHuman() and player(iNewWorldPlayer).getNumCities() > 6:
-							iModifier1 = 1
-						else:
-							if iNewWorldCiv == iInca or player(iNewWorldPlayer).getNumCities() > 4:
-								iModifier1 = 1
-							if not player(iNewWorldPlayer).isHuman():
-								iModifier2 = 1
-								
-						if year() < year(dBirth[active()]):
-							iModifier1 += 1
-							iModifier2 += 1
-						
-						# Help AI
-						if not player(iOldWorldPlayer).isHuman():
-							iModifier1 += 1
-							iModifier2 += 1
-						
-						# disable birth protection if still active
-						player(iNewWorldPlayer).setBirthProtected(False)
-						for p in plots.all():
-							if p.getBirthProtected() == iNewWorldPlayer:
-								p.resetBirthProtected()
-							
-						team(iOldWorldPlayer).declareWar(iNewWorldPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
-						
-						dConquerorUnits = {
-							iBase: 1 + iModifier2,
-							iCounter: 2,
-							iSiegeCity: 1 + iModifier1 + iModifier2,
-							iShockCav: 2 + iModifier1,
-						}
-						units = createRoleUnits(iOldWorldPlayer, arrivalPlot, dConquerorUnits.items())
-						units.promotion(infos.type("PROMOTION_MERCENARY"))
-						
-						if iNewWorldCiv == iInca:
-							makeUnits(iOldWorldPlayer, iAucac, arrivalPlot, 3, UnitAITypes.UNITAI_ATTACK_CITY)
-						elif iNewWorldCiv == iAztecs:
-							makeUnits(iOldWorldPlayer, iJaguar, arrivalPlot, 2, UnitAITypes.UNITAI_ATTACK_CITY)
-							makeUnit(iOldWorldPlayer, iHolkan, arrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY)
-						elif iNewWorldCiv == iMaya:
-							makeUnits(iOldWorldPlayer, iHolkan, arrivalPlot, 2, UnitAITypes.UNITAI_ATTACK_CITY)
-							makeUnit(iOldWorldPlayer, iJaguar, arrivalPlot, UnitAITypes.UNITAI_ATTACK_CITY)
-							
-						message(iNewWorldPlayer, 'TXT_KEY_FIRST_CONTACT_NEWWORLD')
-						message(iOldWorldPlayer, 'TXT_KEY_FIRST_CONTACT_OLDWORLD')
+					gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
+
+					message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
+					message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
 
 ### REVOLUTION ###
 def expeditionaryForce(iRevolutionaryPlayer):

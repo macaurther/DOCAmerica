@@ -12680,6 +12680,11 @@ int CvPlayer::getCommerceRate(CommerceTypes eIndex) const
 		}
 	}
 
+	if (eIndex == COMMERCE_IMMIGRATION && hasCivic(CIVIC_ISOLATIONISM))
+	{
+		iRate /= 2;
+	}
+
 	FAssert(iRate >= 0);
 
 	return iRate / 100;

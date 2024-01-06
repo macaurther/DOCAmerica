@@ -1310,7 +1310,6 @@
 			<Description>TXT_KEY_CIVIC_OPPORTUNITY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_OPPORTUNITY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_OPPORTUNITY_HELP</Help>
 			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Opportunity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1318,6 +1317,13 @@
 			<bStateReligion>1</bStateReligion>
 			<iSpecialistHappiness>1</iSpecialistHappiness>
 			<iStateReligionGreatPeopleRateModifier>25</iStateReligionGreatPeopleRateModifier>
+			<SpecialistExtraCommerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</SpecialistExtraCommerces>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
