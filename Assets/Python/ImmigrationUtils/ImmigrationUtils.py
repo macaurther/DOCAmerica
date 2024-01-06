@@ -746,7 +746,6 @@ class ImmigrationUtils:
 
 		CvUtil.pyPrint("     Unit Type: " + objMercenary.getUnitInfo().getDescription())
 		CvUtil.pyPrint("     Hire Cost: " + str(objMercenary.getHireCost()))
-		CvUtil.pyPrint("   Maint. Cost: " + str(objMercenary.getMercenaryMaintenanceCost()))
 		CvUtil.pyPrint("         Level: " + str(objMercenary.iLevel))
 		CvUtil.pyPrint("            XP: " + str(objMercenary.iExperienceLevel))
 		CvUtil.pyPrint("Promotion List: ")
@@ -859,24 +858,6 @@ class ImmigrationUtils:
 		pPlot = mercenary.getMercenaryStartingLocation(iPlayer)
 		
 		return pPlot
-	
-	
-	# Returns the mercenary that is the costliest to maintain from the dictionary passed in
-	def getHighestMaintenanceMercenary(self, mercenaryDict):
-	
-		maintenanceCost = 0
-		highestMaintenanceMercenary = None
-		
-		# Go through the dictionary
-		for mercenaryName in mercenaryDict:
-		
-			# If the current mercenary is the most expensive to maintain then save the
-			# information
-			if(mercenaryDict[mercenaryName].getMercenaryMaintenanceCost() > maintenanceCost):
-				maintenanceCost = mercenaryDict[mercenaryName].getMercenaryMaintenanceCost()
-				highestMaintenanceMercenary = mercenaryDict[mercenaryName]
-
-		return highestMaintenanceMercenary
 		
 	
 	# Returns the list of civilizations the player passed in is at war with.
@@ -958,10 +939,7 @@ class ImmigrationUtils:
 		for mercenaryName in mercenaryDict:
 
 			# Calculate how much gold the player will have after hiring the mercenary.
-			#Rhye - start Carthaginian UP
-			#tmpGold = iGold - mercenaryDict[mercenaryName].getHireCost()
-			tmpGold = iGold - mercenaryDict[mercenaryName].getHireCostXPlayer(iPlayer)
-			#Rhye - end Carthaginian UP
+			tmpGold = iGold - mercenaryDict[mercenaryName].getHireCost()
 			
 			# Continue immediately if the player can't support the mercenary
 			if(tmpGold <= 0):
@@ -973,10 +951,7 @@ class ImmigrationUtils:
 			#Rhye - end
 			
 			# Get the cost to hire the mercenary
-			#Rhye - start Carthaginian UP
-			#mercenaryHireCost = mercenaryDict[mercenaryName].getHireCost()
-			mercenaryHireCost = mercenaryDict[mercenaryName].getHireCostXPlayer(iPlayer)
-			#Rhye - end Carthaginian UP
+			mercenaryHireCost = mercenaryDict[mercenaryName].getHireCost()
 
 			# Debug code - start
 			if(g_bDebug):
@@ -988,7 +963,7 @@ class ImmigrationUtils:
 			# support the mercenary for at least 5 turns. Why 5 turns? Well if
 			# someone comes up with a better number please let me know. Otherwise
 			if(mercenaryHireCost > hireCost and iGold > mercenaryHireCost):
-				hireCost = mercenaryDict[mercenaryName].getHireCostXPlayer(iPlayer)
+				hireCost = mercenaryDict[mercenaryName].getHireCost()
 				mercenary = mercenaryDict[mercenaryName]
 				
 				# Debug code - start
@@ -1006,7 +981,6 @@ class ImmigrationUtils:
 		
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
 	# It will:
-	#   - Fire mercenaries
 	#   - Hire mercenaries	
 	# It needs to be more complex but for right now it works
 	def computerPlayerThink(self, iPlayer):
@@ -1095,10 +1069,7 @@ class ImmigrationUtils:
 			# Debug code - end
 
 			# deduct the hire cost from the computer players gold
-			#Rhye - start Carthaginian UP
-			#currentGold = currentGold - mercenary.getHireCost()
-			currentGold = currentGold - mercenary.getHireCostXPlayer(iPlayer)
-			#Rhye - end Carthaginian UP
+			currentGold = currentGold - mercenary.getHireCost()
 
 			#Rhye - start
 			currentGold *= g_iAIHireCostPercent
@@ -1225,8 +1196,6 @@ class Mercenary:
 		self.iLevel = len(promotionList)
 		self.iExperienceLevel = iExperienceLevel
 		self.iNextExperienceLevel = iNextExperienceLevel
-		#self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_SELFPRESERVATION1")))
-		self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_MERCENARY")))
 		self.iHireCost = self.getHireCost()
 
 
@@ -1348,59 +1317,6 @@ class Mercenary:
 		return objDict
 					
 
-	# Returns true if the mercenary is in a group, false otherwise.
-	def isInMercenaryGroup(self):
-		' true - if the mercenary is in a mercenary group '
-		return (self.objMercenaryGroup != None)
-		
-		
-	# Places the mercenary in the city specified by the pPlot variable
-	def place(self, pPlot):
-	
-		# Return immediately if the mercenary is already in the game
-		if(self.objUnit != None):
-			return
-
-		# get the player instance
-		player = gc.getPlayer(self.iOwner)
-		
-		# return nothing if the player is an invalid value
-		if(player == None):
-			player = gc.getPlayer(self.iBuilder)
-			if(player == None):
-				return
-			
-		# return nothing if the player is dead
-		if(player.isAlive() == false):
-			return
-
-		unitType = gc.getInfoTypeForString(self.objUnitInfo.getType())
-
-		# Create the unit and place it in the game		
-		self.objUnit = player.initUnit(unitType, pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
-
-		if(g_bDisplayMercenaryMessages):
-			strMessage = self.getName() + " has arrived"
-			# Inform the player that the mercenary has arrived.
-			CyInterface().addMessage(self.iOwner, False, 20, strMessage, "", 0, self.objUnitInfo.getButton(), ColorTypes(0), pPlot.getX(), pPlot.getY(), True, True) 
-			
-		# Apply of the promotions to the mercenary in the game
-		self.applyPromotions()
-
-		# Set the mercenaries experience
-		self.setExperience()		
-
-		# Set the mercenaries unique name
-		self.objUnit.setName(self.strMercenaryName)
-
-		# Set the iPlacement turn to -1 so they don't get accidentally placed again.		
-		self.iPlacementTurn = -1
-	
-		# Remove the mercenary identifying trait if the mercenary has a builder
-		if(self.iBuilder != -1):
-			self.objUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY"), false)
-
-
 	# Returns the instance of the mercenary in the game as a CyUnit
 	def hire(self, iPlayer, pPlot):
 		' CyUnit - the instance of the mercenary in the game '
@@ -1440,9 +1356,6 @@ class Mercenary:
 			strMessage = self.getName() + " has arrived"
 			# Inform the player that the mercenary has arrived.
 			CyInterface().addMessage(self.iOwner, False, 20, strMessage, "", 0, self.objUnitInfo.getButton(), ColorTypes(0), pPlot.getX(), pPlot.getY(), True, True) 
-			
-		# Apply of the promotions to the mercenary in the game
-		self.applyPromotions()
 
 		# Set the mercenaries experience
 		self.setExperience()		
@@ -1458,63 +1371,15 @@ class Mercenary:
 			CyInterface().addMessage(self.iBuilder, True, 20, strMessage, "", 0, "", ColorTypes(0), -1, -1, True, True) 
 	
 		# Subtract cost to hire from player current cash
-		if(self.iOwner != self.iBuilder):
-                        #Rhye - start Carthaginian UP
-			#player.setGold(player.getGold()-self.getHireCost())
-			player.setGold(player.getGold()-self.getHireCostXPlayer(iPlayer))
-			#Rhye - end Carthaginian UP
+		(iImmigrationCost, iGoldCost) = self.getHireCost(player.getImmigration())
+		player.setImmigration(player.getImmigration() - iImmigrationCost)
+		player.setGold(player.getGold() - iGoldCost)
 		
-		if(self.iBuilder != -1 and self.iOwner != self.iBuilder):
-                        #Rhye - start Carthaginian UP
-			#gc.getPlayer(self.iBuilder).setGold(gc.getPlayer(self.iBuilder).getGold() + self.getHireCost())
-			gc.getPlayer(self.iBuilder).setGold(gc.getPlayer(self.iBuilder).getGold() + self.getHireCostXPlayer(iPlayer))
-			#Rhye - end Carthaginian UP
-			
-			
-	# Tells the mercenary that the player no longer needs their services and performs the 
-	# necessary operations to remove the mercenary from the game and make them available to
-	# other players
-	def fire(self):
-		if(self.objUnit == None):
-			CvUtil.pyPrint("We should never reach this point, why did the player have access to this mercenary?")
-			return
-
-		# if the mercenary is in a group do not allow the player to fire the mercenary independantly,
-		# all for one and one for all, in fact, the mercenary manager should not display the individual
-		# mercenaries from groups in the hired mercenary list.
-		if(self.objMercenaryGroup != None):
-			CvUtil.pyPrint("We should never reach this point, mercenary groups are not implemented!!")
-			return
-
-		if(g_bDisplayMercenaryMessages and self.iBuilder != -1 and self.iBuilder != self.iOwner):
-			strMessage = self.getName() + " is no longer needed by " + gc.getPlayer(self.iOwner).getName()
-			# Inform the player that the mercenary has been fired.
-			CyInterface().addMessage(self.iBuilder, True, 20, strMessage, "", 0, "", ColorTypes(0), -1, -1, True, True) 
-						
-		# Set the mercenaries promotion list before removing the mercenary from the game
-		self.promotionList = self.getCurrentPromotionList()
+		if iGoldCost > 0:
+			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_MERCENARY")))
 		
-		# Set the mercenary's hire cost before removing the mercenary from the game
-		self.iHireCost = self.getHireCost()
-		
-		# Set the mercenary's experience level before removing the mercenary from the game
-		self.iExperienceLevel = self.getExperienceLevel()
-		
-		# Set the mercenary's level before removing the mercenary from the game
-		self.iLevel = self.getLevel()
-		
-		# Set the hired flag to false before removing the mercenary from the game
-		self.bHired = false
-		
-		# Set the mercenaries owner to -1 before removing the mercenary from the game
-		self.iOwner = -1
-		
-		# Remove the unit from the game
-		self.objUnit.kill(false,PlayerTypes.NO_PLAYER)
-	
-		# Make sure that we get rid of the reference to the unit
-		self.objUnit = None
-		
+		# Apply of the promotions to the mercenary in the game
+		self.applyPromotions()
 
 	# Returns the list of current promotions the mercenary has. If the objUnit is set to
 	# a non-None value then the method will rebuild the promotion list and return the
@@ -1536,10 +1401,18 @@ class Mercenary:
 
 		return self.promotionList
 
-
+	# Returns true if the available funds are enough to hire
+	def canAfford(self, iCurrentImmigration, iCurrentGold):
+		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration)
+		
+		if iGoldCost <= iCurrentGold:
+			return True
+		
+		return False
+	
 	# Returns the cost to hire the mercenary. If objUnit is non-none then the 
-	# iHireCost will be updated
-	def getHireCost(self):
+	# iHireCost will be updated. Returns (iCostImmigration, iCostGold)
+	def getHireCost(self, iCurrentImmigration=0):
 		' iHireCost - the cost to hire the mercenary'
 		
 		modifier = 0
@@ -1548,54 +1421,30 @@ class Mercenary:
 		if(self.objUnitInfo != None):
 			self.iHireCost = (self.objUnitInfo.getProductionCost() * (self.getLevel()+1)) + ((self.getLevel()+1) * int(math.fabs(self.getExperienceLevel() - self.getNextExperienceLevel())))
 	
-		#return int(self.iHireCost*g_dHireCostModifier)
-		return int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye	
-
-	# The cost returned by this method should fluctuate up as the mercenary gains experience
-	# levels and promotions.
-
-	def getHireCostXPlayer(self, iPlayer):
-		' iHireCost - the cost to hire the mercenary'
+		iImmigrationCost = int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye
+		iGoldCost = 0
 		
-		modifier = 0
+		if iImmigrationCost > iCurrentImmigration:
+			iGoldCost = (iImmigrationCost - iCurrentImmigration) * 2
+			iImmigrationCost = iCurrentImmigration
+		
+		return (iImmigrationCost, iGoldCost)
 			
-		# if the self.objUnitInfo is actually set then get the latest cost to hire the mercenary.
-		if(self.objUnitInfo != None):
-			self.iHireCost = (self.objUnitInfo.getProductionCost() * (self.getLevel()+1)) + ((self.getLevel()+1) * int(math.fabs(self.getExperienceLevel() - self.getNextExperienceLevel())))
 	
-		iResult = int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye
-		return iResult		
-
+	def getHireCostString(self, iCurrentImmigration=0):
+		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration)
+		strHCost = ""
+		if iImmigrationCost > 0:
+			strHCost += u"%d%c" %(iImmigrationCost, gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar())
+		if iGoldCost > 0:
+			strHCost += u"%d%c" %(iGoldCost, gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
+		return strHCost
 
 	def canHireUnit(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
 		if pPlayer.canTrain(self.getUnitInfoID(), false, false):
 			return True
 		return False
-	
-	def getMercenaryMaintenanceCost(self):
-		' iMaintenanceCost - the cost to maintain the mercenary'
-
-                #dMaintenanceCostModifier = g_dMaintenanceCostModifier + (float(gc.getActivePlayer().getCurrentEra())/20) #Rhye
-                dMaintenanceCostModifier = g_dMaintenanceCostModifier + (float(gc.getActivePlayer().getCurrentEra())/30) #Rhye
-                #print (dMaintenanceCostModifier) #Rhye
-
-		# Let the mercenary value be at least the their level times pi, common let the mercenary have his share
-		# of the pi
-		#return int((math.ceil(self.getLevel() * math.pi) + math.ceil(self.getHireCost() * 0.05))*g_dMaintenanceCostModifier) #Rhye
-		return int((math.ceil(self.getLevel() * 3) + math.ceil(self.getHireCost() * 0.05))*dMaintenanceCostModifier) + g_dBaseMaintenanceCost #Rhye
-				
-
-	def getMercenaryMaintenanceCostXPlayer(self, iPlayer):
-		' iMaintenanceCost - the cost to maintain the mercenary'
-		
-		dMaintenanceCostModifier = g_dMaintenanceCostModifier + (float(gc.getActivePlayer().getCurrentEra())/30) #Rhye
-
-		# Let the mercenary value be at least the their level times pi, common let the mercenary have his share
-		# of the pi
-		iResult = int((math.ceil(self.getLevel() * 3) + math.ceil(self.getHireCostXPlayer(iPlayer) * 0.05))*dMaintenanceCostModifier) + g_dBaseMaintenanceCost #Rhye
-		return iResult
-
 
 	# Returns true if the mercenary is already hired by a player, false otherwise.
 	def isHired(self):
@@ -1696,9 +1545,6 @@ class Mercenary:
 					
 		for i in range(len(self.promotionList)):
 			self.objUnit.setHasPromotion(gc.getInfoTypeForString(self.promotionList[i].getType()),true)
-		
-		# Give the mercenary the new mercenary promotion "Self Preservation"
-		self.objUnit.setHasPromotion(gc.getInfoTypeForString("PROMOTION_MERCENARY"),true)
 	
 	
 	# This method will set the initial the mercenary experience and level

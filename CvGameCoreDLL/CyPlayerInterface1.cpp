@@ -193,6 +193,11 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("changeGold", &CyPlayer::changeGold, "void (int iChange)")
 		.def("getGoldPerTurn", &CyPlayer::getGoldPerTurn, "int ()")
 
+		// MacAurther
+		.def("getImmigration", &CyPlayer::getImmigration, "int ()")
+		.def("setImmigration", &CyPlayer::setImmigration, "void (int iNewValue)")
+		.def("changeImmigration", &CyPlayer::changeImmigration, "void (int iChange)")
+
 		.def("getAdvancedStartPoints", &CyPlayer::getAdvancedStartPoints, "int ()")
 		.def("setAdvancedStartPoints", &CyPlayer::setAdvancedStartPoints, "void (int iNewValue)")
 		.def("changeAdvancedStartPoints", &CyPlayer::changeAdvancedStartPoints, "void (int iChange)")

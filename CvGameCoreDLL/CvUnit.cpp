@@ -265,12 +265,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 
 	AI_init(eUnitAI);
 
-	// MacAurther: If this unit can carry cargo, update Immigration
-	if (cargoSpace() > 0 && GC.getMap().plot(iX, iY)->isCity())
-	{
-		GC.getMap().plot(iX, iY)->getPlotCity()->processImmigrationUnit(this, true);
-	}
-
 /*************************************************************************************************/
 /**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
 /**	If you want to allow modmodders to enable this Callback, see CvCity::cancreate for example  **/
@@ -573,9 +567,6 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	oldUnits.clear();
 	pUnitNode = pPlot->headUnitNode();
 
-	// MacAurther: Should update immigration?
-	bool bUpdateImmigration = getImmigrationRate() > 0;
-
 	while (pUnitNode != NULL)
 	{
 		oldUnits.push_back(pUnitNode->m_data);
@@ -728,12 +719,6 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	CvEventReporter::getInstance().unitLost(this);
 
 	GET_PLAYER(getOwnerINLINE()).deleteUnit(getID());
-
-	// MacAurther: If was in a city, refresh that city's unit Immigration
-	if (bUpdateImmigration && pPlot->isCity())
-	{
-		pPlot->getPlotCity()->reprocessImmigrationUnits();
-	}
 
 	if (eCapturingPlayer != NO_PLAYER && eCaptureUnitType != NO_UNIT)
 	{
@@ -3073,18 +3058,6 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 				}
 			}
 		}
-	}
-
-	// MacAurther: If a ship with cargo space moves into a city, update Immigration
-	if (cargoSpace() > 0 && pPlot->isCity())
-	{
-		pPlot->getPlotCity()->processImmigrationUnit(this, true);
-	}
-
-	// MacAurther: If a ship with cargo space moves out of a city, update Immigration
-	if (cargoSpace() > 0 && pOldPlot->isCity())
-	{
-		pOldPlot->getPlotCity()->reprocessImmigrationUnits();
 	}
 
 
@@ -14860,25 +14833,4 @@ bool CvUnit::contactTribe()
 	GET_PLAYER(getOwnerINLINE()).doGoody(plot(), this);
 
 	return true;
-}
-
-int CvUnit::getImmigrationRate()
-{
-	if (specialCargo() != NO_SPECIALUNIT)
-	{
-		return 0;
-	}
-
-	if (domainCargo() != DOMAIN_LAND)
-	{
-		return 0;
-	}
-
-	// English UP
-	if (getCivilizationType() == ENGLAND)
-	{
-		return cargoSpace() + 1;
-	}
-
-	return cargoSpace();
 }

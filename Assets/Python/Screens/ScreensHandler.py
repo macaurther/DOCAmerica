@@ -125,7 +125,7 @@ def onMouseEvent(eventType, mx, my, px, py, interfaceConsumed, screens):
 @handler("ModNetMessage")
 def onModNetMessage(iData1, iData2, iData3, iData4, iData5):
 	if iData1 == lNetworkEvents["CHANGE_COMMERCE_PERCENT"]:
-		CommerceType = [CommerceTypes.COMMERCE_GOLD, CommerceTypes.COMMERCE_RESEARCH, CommerceTypes.COMMERCE_CULTURE, CommerceTypes.COMMERCE_ESPIONAGE]
+		CommerceType = [CommerceTypes.COMMERCE_GOLD, CommerceTypes.COMMERCE_RESEARCH, CommerceTypes.COMMERCE_CULTURE, CommerceTypes.COMMERCE_ESPIONAGE, CommerceTypes.COMMERCE_IMMIGRATION]
 		gc.getPlayer(iData2).changeCommercePercent(CommerceType[iData3], iData4)
 		if iData2 == CyGame().getActivePlayer():
 			screen = CvEspionageAdvisor.CvEspionageAdvisor().getScreen()

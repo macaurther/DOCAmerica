@@ -42,5 +42,14 @@
 			<bFlexiblePercent>0</bFlexiblePercent>
 			<Button>Art/Interface/Buttons/Process/ProcessCulture.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,16</Button>
 		</CommerceInfo>
+		<CommerceInfo>
+			<Type>COMMERCE_IMMIGRATION</Type>
+			<Description>TXT_KEY_IMMIGRATION_CULTURE</Description>
+			<iInitialPercent>0</iInitialPercent>
+			<iInitialHappiness>0</iInitialHappiness>
+			<iAIWeightPercent>10</iAIWeightPercent>
+			<bFlexiblePercent>0</bFlexiblePercent>
+			<Button>Art/Interface/Buttons/Process/ProcessImmigration.dds</Button>
+		</CommerceInfo>
 	</CommerceInfos>
 </Civ4CommerceInfo>

@@ -1768,5 +1768,9 @@
 			<Type>BUTTON_RELIGION_PESEDJET</Type>
 			<Path>Art/Interface/Buttons/Religions/Pesedjet.dds</Path>
 		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_IMMIGRATION</Type>
+			<Path>Art/Interface/Buttons/Process/ProcessImmigration.dds</Path>
+		</InterfaceArtInfo>
 	</InterfaceArtInfos>
 </Civ4ArtDefines>

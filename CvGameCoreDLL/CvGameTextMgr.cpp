@@ -13026,13 +13026,6 @@ void CvGameTextMgr::setAngerHelp(CvWStringBuffer &szBuffer, CvCity& city)
 			szBuffer.append(NEWLINE);
 		}
 
-		iAnger = city.getImmigrationBadHappiness();
-		if (iAnger > 0)
-		{
-			szBuffer.append(gDLL->getText("TXT_KEY_ANGER_IMMIGRATION", iAnger));
-			szBuffer.append(NEWLINE);
-		}
-
 		iNewAnger -= std::min(0, city.getCommerceHappiness());
 		iAnger = ((iNewAnger - iOldAnger) + std::min(0, iOldAnger));
 		if (iAnger > 0)
@@ -13080,7 +13073,6 @@ void CvGameTextMgr::setAngerHelp(CvWStringBuffer &szBuffer, CvCity& city)
 
 		iOldAnger += city.getSpecialistBadHappiness();
 		iOldAnger += city.getCorporationBadHappiness();
-		iOldAnger += city.getImmigrationBadHappiness();
 
 		szBuffer.append(L"-----------------------\n");
 
@@ -16873,25 +16865,6 @@ void CvGameTextMgr::setFoodHelp(CvWStringBuffer &szBuffer, CvCity& city)
 		szBuffer.append(NEWLINE);
 	}
 
-	// MacAurther: Immigration
-	int iImmigrationFood = city.getImmigrationYieldRate(YIELD_FOOD);
-	if (0 != iImmigrationFood)
-	{
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION", iImmigrationFood, info.getChar()));
-		szBuffer.append(NEWLINE);
-		iBaseRate += iImmigrationFood;
-
-		int iImmigrationRateModifier = city.getImmigrationRateModifier();
-		if (iImmigrationRateModifier > 0)
-		{
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_BASE", city.getBaseImmigrationRate(), info.getChar()));
-			szBuffer.append(NEWLINE);
-
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
-			szBuffer.append(NEWLINE);
-		}
-	}
-
 	// Total Produced
 	int iBaseModifier = city.getBaseYieldRateModifier(YIELD_FOOD);
 	int iRate = iBaseModifier * iBaseRate / 100;
@@ -17778,28 +17751,6 @@ void CvGameTextMgr::setCommerceHelp(CvWStringBuffer &szBuffer, CvCity& city, Com
 		}
 // BUG - Base Commerce - end
 
-	// MacAurther: Statue of Liberty effect
-	if (eCommerceType == COMMERCE_CULTURE && GET_PLAYER(city.getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_STATUE_OF_LIBERTY))
-	{
-		int iImmigrationRate = city.getImmigrationRate();
-		if (iImmigrationRate != 0)
-		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION", iImmigrationRate));
-			iBaseCommerceRate += 100 * iImmigrationRate;
-
-			int iImmigrationRateModifier = city.getImmigrationRateModifier();
-			if (iImmigrationRateModifier > 0)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION_BASE", city.getBaseImmigrationRate()));
-				
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_CULTURE_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
-			}
-		}
-	}
-
 	FAssertMsg(city.getBaseCommerceRateTimes100(eCommerceType) == iBaseCommerceRate, "Base Commerce rate does not agree with actual value");
 	
 	int iModifier = 100;
@@ -17995,31 +17946,10 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	}
 	CvPlayer& owner = GET_PLAYER(city.getOwnerINLINE());
 
-	// MacAurther: Immigration
-	int iImmigrationMod = city.getImmigrationYieldRate(eYieldType);
-	
-	int iBaseProduction = city.getBaseYieldRate(eYieldType) - iImmigrationMod; // MacAurther: Take away Immigration values for a moment for the tooltip
+	int iBaseProduction = city.getBaseYieldRate(eYieldType);
 	
 	szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_YIELD", info.getTextKeyWide(), iBaseProduction, info.getChar()));
 	szBuffer.append(NEWLINE);
-
-	// MacAurther: Immigration
-	if (0 != iImmigrationMod)
-	{
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION", iImmigrationMod, info.getChar()));
-		szBuffer.append(NEWLINE);
-		iBaseProduction += iImmigrationMod; // MacAurther: Add them back in
-
-		int iImmigrationRateModifier = city.getImmigrationRateModifier();
-		if (iImmigrationRateModifier > 0)
-		{
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_BASE", city.getBaseImmigrationRate(), info.getChar()));
-			szBuffer.append(NEWLINE);
-
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
-			szBuffer.append(NEWLINE);
-		}
-	}
 
 	int iBaseModifier = 100;
 
@@ -18392,32 +18322,9 @@ void CvGameTextMgr::parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city
 
 	szBuffer.append(SEPARATOR);
 	szBuffer.append(NEWLINE);
-	// MacAurther: Immigration (Anglo America RP)
-	int iImmigrationRate = 0;
-	if(city.getOwner() != -1 && (RegionPowers)GET_PLAYER(city.getOwner()).getRegionPowers() == RP_ANGLO_AMERICA)
-	{
-		iImmigrationRate = city.getImmigrationRate();
-	}
 
-	szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_BASE_RATE", city.getBaseGreatPeopleRate() - iImmigrationRate)); // MacAurther: Includes Anglo American RP
+	szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_BASE_RATE", city.getBaseGreatPeopleRate()));
 	szBuffer.append(NEWLINE);
-
-	// MacAurther: Anglo American RP
-	if (0 != iImmigrationRate)
-	{
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION", iImmigrationRate));
-		szBuffer.append(NEWLINE);
-
-		int iImmigrationRateModifier = city.getImmigrationRateModifier();
-		if (iImmigrationRateModifier > 0)
-		{
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION_BASE", city.getBaseImmigrationRate()));
-			szBuffer.append(NEWLINE);
-
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_IMMIGRATION_MODIFIER", iImmigrationRateModifier));
-			szBuffer.append(NEWLINE);
-		}
-	}
 
 	int iModifier = 100;
 

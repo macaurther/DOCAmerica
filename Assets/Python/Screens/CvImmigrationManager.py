@@ -113,6 +113,7 @@ class CvImmigrationManager:
 		
 		# Get the players current gold amount
 		currentGold = player.getGold()
+		currentImmigration = player.getImmigration()
 
 		mercenaryCount = 0
 		
@@ -136,26 +137,22 @@ class CvImmigrationManager:
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
 			# Build the mercenary hire cost string
-			strHCost = u"%d%c" %(mercenary.getHireCostXPlayer(iPlayer), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-			
-			# Build the mercenary maintenance cost string
-			strMCost = u"%d%c" %(mercenary.getMercenaryMaintenanceCostXPlayer(iPlayer), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
+			strHCost = mercenary.getHireCostString(currentImmigration)
 			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost + "  Maint. Cost: " + strMCost)
+			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
 
 			bEnableHireMercenary = true
 
 			# Check to see if the player has enough gold to hire the mercenary. If they don't then
 			# don't let them hire the mercenary.
-			if(	(currentGold-mercenary.getHireCostXPlayer(iPlayer)) <= 0):
+			if not mercenary.canAfford(currentImmigration, currentGold):
 				bEnableHireMercenary = False
 				
 			# Check if unit can spawn
 			if not mercenary.hasValidSpawnTile(iPlayer):
 				bEnableHireMercenary = False
 			
-
 			# Add the hire button for the mercenary
 			if(bEnableHireMercenary):
 				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
@@ -189,6 +186,7 @@ class CvImmigrationManager:
 		
 		# Get the players current gold amount
 		currentGold = player.getGold()
+		currentImmigration = player.getImmigration()
 
 		mercenaryCount = 0
 		
@@ -212,19 +210,16 @@ class CvImmigrationManager:
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
 			# Build the mercenary hire cost string
-			strHCost = u"%d%c" %(mercenary.getHireCostXPlayer(iPlayer), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-			
-			# Build the mercenary maintenance cost string
-			strMCost = u"%d%c" %(mercenary.getMercenaryMaintenanceCostXPlayer(iPlayer), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
+			strHCost = mercenary.getHireCostString(currentImmigration)
 			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost + "  Maint. Cost: " + strMCost)
+			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
 
 			bEnableHireMercenary = true
 
 			# Check to see if the player has enough gold to hire the mercenary. If they don't then
 			# don't let them hire the mercenary.
-			if(	(currentGold-mercenary.getHireCostXPlayer(iPlayer)) <= 0):
+			if not mercenary.canAfford(currentImmigration, currentGold):
 				bEnableHireMercenary = False
 				
 			# Check if unit can spawn
@@ -279,20 +274,13 @@ class CvImmigrationManager:
 		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  " + strStats, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
-		# If the unit is hired then display their employeers information
-		if(mercenary.isHired()):
-			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Hired By: " + gc.getPlayer(mercenary.getOwner()).getName(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-
-		# Otherwise show their hire cost information			
-		else:
-			# Build the unit hire cost string
-			strHCost = u"%d%c" %(mercenary.getHireCost(), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Contract Income: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		# Build the unit hire cost string
+		strHCost = mercenary.getHireCostString()
+		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Contract Income: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
 		# Show the contract income for the unit if it is in the game			
 		if(mercenary.isPlaced()):
-			strMCost = u"%d%c" %(mercenary.getMercenaryMaintenanceCost(), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Income/Turn: " + strMCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, " TODO: Is this visible? 2", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		# Otherwise, show the number of turns until the unit is placed in the game
 		else:
@@ -337,17 +325,8 @@ class CvImmigrationManager:
 		screen.attachListBoxGFC( IMMIGRANT_INFORMATION_DETAILS_PANEL_ID, IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
 		screen.enableSelect(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, False)
 
-                #Rhye - start Carthaginian UP
 		# Build the mercenary hire cost string
-		#strHCost = u"%d%c" %(mercenary.getHireCost(), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-		strHCost = u"%d%c" %(mercenary.getHireCostXPlayer(gc.getGame().getActivePlayer()), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-		#Rhye - end UP
-
-                #Rhye - start Carthaginian UP
-		# Build the mercenary maintenance cost string
-		#strMCost = u"%d%c" %(mercenary.getMercenaryMaintenanceCost(), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-                strMCost = u"%d%c" %(mercenary.getMercenaryMaintenanceCostXPlayer(gc.getGame().getActivePlayer()), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-                #Rhye - end UP
+		strHCost = mercenary.getHireCostString()
 		
 		# Build the mercenary XP string
 		strXP = u"%d/%d" %(mercenary.getExperienceLevel(), mercenary.getNextExperienceLevel())
@@ -364,7 +343,7 @@ class CvImmigrationManager:
 
 		# Show the mercenary costs if it is in the game			
 		if(mercenary.isPlaced()):
-			screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Maint. Cost: " + strMCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, " TODO: Is this visible? 3", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		# Otherwise, show the number of turns until the unit is placed in the game
 		else:
 			# Get the number of turns until the unit/mercenary is placed in the game
@@ -401,6 +380,11 @@ class CvImmigrationManager:
 		screen.setLabel( "GoldText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 6, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.show( "GoldText" )
 		screen.moveToFront( "GoldText" )
+		
+		szText = self.getImmigrationText(gc.getGame().getActivePlayer())
+		screen.setLabel( "ImmigrationText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 24, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.show( "ImmigrationText" )
+		screen.moveToFront( "ImmigrationText" )
 
 		screen.setLabel( "MaintainText", "Background", strCost, CvUtil.FONT_LEFT_JUSTIFY, 12, 24, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.show( "MaintainText" )
@@ -505,8 +489,30 @@ class CvImmigrationManager:
 		# Set the color for the gold/turn.
 		if(iDelta > 0):                
 			strDelta = u"%s" %(localText.changeTextColor(" (+"+str(iDelta)+"/Turn)",gc.getInfoTypeForString("COLOR_GREEN")))
-		elif(iDelta < 0):
+		elif(gold - iDelta < 0):
 			strDelta = u"%s" %(localText.changeTextColor(" ("+str(iDelta)+"/Turn)",gc.getInfoTypeForString("COLOR_RED")))
+		elif(iDelta < 0):
+			strDelta = u"%s" %(localText.changeTextColor(" ("+str(iDelta)+"/Turn)",gc.getInfoTypeForString("COLOR_YELLOW")))
+		
+		return strGoldText + strDelta
+	
+	# Returns the new version of the gold text that takes into account the
+	# mercenary maintenance cost and contract income
+	def getImmigrationText(self, iPlayer):
+
+		# Get the player
+		player = gc.getPlayer(iPlayer)
+	
+		immigrationCommerce = player.getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
+		immigration = player.getImmigration()
+		
+		# Build the gold string
+		strGoldText = u"%c: %d" %(gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), immigration)
+
+		strDelta = ""
+		
+		# Set the color for the gold/turn.
+		strDelta = u"%s" %(localText.changeTextColor(" (+"+str(immigrationCommerce)+"/Turn)",gc.getInfoTypeForString("COLOR_GREEN")))
 		
 		return strGoldText + strDelta
 	
@@ -517,7 +523,7 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 
 		# Hire the mercenary for the player
-		objImmigrationUtils.hireMercenary(mercenaryName,iPlayer) 
+		objImmigrationUtils.hireMercenary(mercenaryName, iPlayer) 
 
 		# Get all of the available mercenaries for hire
 		mercenaries = objImmigrationUtils.getAvailableColonists(iPlayer)
@@ -554,8 +560,9 @@ class CvImmigrationManager:
 		# Get the actual player
 		player = gc.getPlayer(iPlayer)
 		
-		# Get the current gold for the player
+		# Get the players current gold amount
 		currentGold = player.getGold()
+		currentImmigration = player.getImmigration()
 
 		# Go through each of the available mercenaries
 		for mercenaryName in colonists:
@@ -567,6 +574,17 @@ class CvImmigrationManager:
 			# Continue if the mercenary was built by the current player
 			if(mercenary.iBuilder == iPlayer):
 				continue
+			
+			# Delete the cost string for the current mercenary we are processing.
+			screen.deleteWidget(mercenaryName+"Text")
+			
+			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
+			
+			# Build the mercenary hire cost string
+			strHCost = mercenary.getHireCostString(currentImmigration)
+			
+			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
+			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
 
 			# Delete the hire button for the current mercenary we are processing.
 			screen.deleteWidget(mercenaryName+"_HireButton")
@@ -576,8 +594,8 @@ class CvImmigrationManager:
 
 			# If the player doesn't have enough money to hire the mercenary then
 			# we won't allow them to hire the current mercenary being processed.
-			if(	(currentGold-mercenary.getHireCost()) <= 0):
-				bEnableHireMercenary = false
+			if not mercenary.canAfford(currentImmigration, currentGold):
+				bEnableHireMercenary = False
 			
 			# Check if unit can spawn
 			if not mercenary.hasValidSpawnTile(iPlayer):
@@ -601,8 +619,9 @@ class CvImmigrationManager:
 		# Get the actual player
 		player = gc.getPlayer(iPlayer)
 		
-		# Get the current gold for the player
+		# Get the players current gold amount
 		currentGold = player.getGold()
+		currentImmigration = player.getImmigration()
 
 		# Go through each of the available mercenaries
 		for mercenaryName in expeditionaries:
@@ -614,6 +633,17 @@ class CvImmigrationManager:
 			# Continue if the mercenary was built by the current player
 			if(mercenary.iBuilder == iPlayer):
 				continue
+				
+			# Delete the cost string for the current mercenary we are processing.
+			screen.deleteWidget(mercenaryName+"Text")
+			
+			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
+			
+			# Build the mercenary hire cost string
+			strHCost = mercenary.getHireCostString(currentImmigration)
+			
+			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
+			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
 
 			# Delete the hire button for the current mercenary we are processing.
 			screen.deleteWidget(mercenaryName+"_HireButton")
@@ -623,8 +653,8 @@ class CvImmigrationManager:
 
 			# If the player doesn't have enough money to hire the mercenary then
 			# we won't allow them to hire the current mercenary being processed.
-			if(	(currentGold-mercenary.getHireCost()) <= 0):
-				bEnableHireMercenary = false
+			if not mercenary.canAfford(currentImmigration, currentGold):
+				bEnableHireMercenary = False
 			
 			# Check if unit can spawn
 			if not mercenary.hasValidSpawnTile(iPlayer):

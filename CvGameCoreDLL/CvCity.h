@@ -1274,52 +1274,6 @@ public:
 	int calculateBaseYieldRate(YieldTypes eYield) const;
 	int calculateBaseGreatPeopleRate() const;
 
-	// MacAurther
-	int getBuildingImmigrationRate() const;
-	int getUnitImmigrationRate() const;
-	int getCivicImmigrationRate() const;
-	int getBaseImmigrationRate() const;
-	int getBuildingImmigrationRateModifier() const;
-	int getCivicImmigrationRateModifier() const;
-	int getImmigrationRateModifier() const;
-	int getImmigrationRate() const;
-	int getImmigrationYieldRate(YieldTypes eYield) const;
-	int getImmigrationBadHappiness() const;
-
-	void setBuildingImmigrationRate(int iValue);
-	void setUnitImmigrationRate(int iValue);
-	void setCivicImmigrationRate(int iValue);
-	void setBaseImmigrationRate(int iValue);
-	void setBuildingImmigrationRateModifier(int iValue);
-	void setCivicImmigrationRateModifier(int iValue);
-	void setImmigrationRateModifier(int iValue);
-	void setImmigrationRate(int iValue);
-	void setImmigrationYieldRate(YieldTypes eYield, int iValue);
-	void setImmigrationBadHappiness(int iValue);
-
-	void changeBuildingImmigrationRate(int iChange);
-	void changeUnitImmigrationRate(int iChange);
-	void changeCivicImmigrationRate(int iChange);
-	void changeBaseImmigrationRate(int iChange);
-	void changeBuildingImmigrationRateModifier(int iChange);
-	void changeCivicImmigrationRateModifier(int iChange);
-	void changeImmigrationRateModifier(int iChange);
-	void changeImmigrationYieldRate(YieldTypes eYield, int iChange);
-
-	bool processImmigration();
-	void calculateImmigrationYieldRate();
-	int calculateImmigrationRate();
-	void processImmigrationBuilding(BuildingTypes eBuilding);
-	void reprocessImmigrationUnits();
-	bool processImmigrationUnit(CvUnit* pUnit, bool bProcess);
-	void processImmigrationCivic(bool bForceChange);
-	
-	int pollBuildingImmigrationRate(BuildingTypes eBuilding);
-	int pollCivicImmigrationRate(CivicTypes eCivic);
-	int pollBuildingImmigrationRateModifier(BuildingTypes eBuilding);
-	int pollCivicImmigrationRateModifier(CivicTypes eCivic);
-	int pollBuildingGlobalImmigrationRateModifier(BuildingTypes eBuilding);
-
 protected:
 
 	int m_iID;
@@ -1446,17 +1400,6 @@ protected:
 	int m_iTotalPopulationLoss;
 	int m_iPopulationLoss;
 
-	// MacAurther
-	int m_iBuildingImmigrationRate;
-	int m_iUnitImmigrationRate;
-	int m_iCivicImmigrationRate;
-	int m_iBaseImmigrationRate;
-	int m_iBuildingImmigrationRateModifier;
-	int m_iCivicImmigrationRateModifier;
-	int m_iImmigrationRateModifier;
-	int m_iImmigrationRate;
-	int m_iImmigrationBadHappiness;
-
 	bool m_bNeverLost;
 	bool m_bBombarded;
 	bool m_bDrafted;
@@ -1517,9 +1460,6 @@ protected:
 	int* m_aiGameTurnCivLost;
 	int* m_aiCulturePlots;
 	int* m_aiCultureCosts;
-
-	// MacAurther
-	int* m_aiImmigrationYieldRate;
 
 	bool* m_abEverOwned;
 	bool* m_abTradeRoute;

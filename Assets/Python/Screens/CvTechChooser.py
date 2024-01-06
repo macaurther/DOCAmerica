@@ -634,6 +634,8 @@ class CvTechChooser:
 							szFileName = gc.getProcessInfo(item).getButton()
 						elif item == CommerceTypes.COMMERCE_ESPIONAGE:
 							szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ESPIONAGE").getPath()
+						elif item == CommerceTypes.COMMERCE_IMMIGRATION:
+							szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_IMMIGRATION").getPath()
 						screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_HELP_ADJUST, tech, item, False)
 
 				elif type == "Process":

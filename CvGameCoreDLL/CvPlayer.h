@@ -320,6 +320,11 @@ public:
 
 	int getGoldPerTurn() const;																																						// Exposed to Python
 
+	// MacAurther
+	DllExport int getImmigration() const;																																				// Exposed to Python
+	DllExport void setImmigration(int iNewValue);																													// Exposed to Python
+	DllExport void changeImmigration(int iChange);																													// Exposed to Python
+
 	DllExport int getAdvancedStartPoints() const;																																				// Exposed to Python
 	DllExport void setAdvancedStartPoints(int iNewValue);																													// Exposed to Python
 	DllExport void changeAdvancedStartPoints(int iChange);																													// Exposed to Python
@@ -1391,13 +1396,6 @@ public:
 	int getContactCost();
 	bool canResearchNativeTech(TechTypes eTech) const;
 
-	// Immigration
-	int getGlobalImmigrationRateModifier() const;
-	void setGlobalImmigrationRateModifier(int iValue);
-	void changeGlobalImmigrationRateModifier(int iChange);
-	void processChangedGlobalImmigrationRateModifier();
-	void processChangedImmigrationCivic(CivicOptionTypes eCivicOption);
-
 
 protected:
 
@@ -1408,6 +1406,7 @@ protected:
 	int m_iTotalLandScored;
 	int m_iGold;
 	int m_iGoldPerTurn;
+	int m_iImmigration; // MacAurther
 	int m_iAdvancedStartPoints;
 	int m_iGoldenAgeTurns;
 	int m_iNumUnitGoldenAges;
@@ -1575,9 +1574,6 @@ protected:
 
 	int m_iFreeTechsOnDiscovery;
 
-	// MacAurther
-	int m_iGlobalImmigrationRateModifier;
-
 	PlayerTypes m_eID;
 	LeaderHeadTypes m_ePersonalityType;
 	EraTypes m_eCurrentEra;
@@ -1694,6 +1690,7 @@ protected:
 	void doGold();
 	void doResearch();
 	void doEspionagePoints();
+	void doImmigration();
 	void doWarnings();
 	void doEvents();
 

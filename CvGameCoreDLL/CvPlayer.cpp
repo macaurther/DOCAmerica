@@ -441,6 +441,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iTotalLandScored = 0;
 	m_iGold = 0;
 	m_iGoldPerTurn = 0;
+	m_iImmigration = 0; // MacAurther
 	m_iAdvancedStartPoints = -1;
 	m_iGoldenAgeTurns = 0;
 	m_iNumUnitGoldenAges = 0;
@@ -590,8 +591,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 
 	m_iFreeTechsOnDiscovery = 0;
 	m_eFreeTechChosen = NO_TECH;
-
-	m_iGlobalImmigrationRateModifier = 0;
 
 	m_eID = eID;
 	updateTeamType();
@@ -932,6 +931,8 @@ void CvPlayer::initFreeState()
 	changeGold(GC.getEraInfo(GC.getGameINLINE().getStartEra()).getStartingGold());
 
 	clearResearchQueue();
+
+	setImmigration(0); // MacAurther
 }
 
 
@@ -3047,6 +3048,9 @@ void CvPlayer::doTurn()
 	doResearch();
 
 	doEspionagePoints();
+
+	// MacAurther
+	doImmigration();
 
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
@@ -9116,6 +9120,33 @@ int CvPlayer::getGoldPerTurn() const
 	return m_iGoldPerTurn;
 }
 
+// MacAurther
+int CvPlayer::getImmigration() const
+{
+	return m_iImmigration;
+}
+
+
+void CvPlayer::setImmigration(int iNewValue)
+{
+	if (getImmigration() != iNewValue)
+	{
+		m_iImmigration = iNewValue;
+
+		if (getID() == GC.getGameINLINE().getActivePlayer())
+		{
+			gDLL->getInterfaceIFace()->setDirty(MiscButtons_DIRTY_BIT, true);
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+			gDLL->getInterfaceIFace()->setDirty(GameData_DIRTY_BIT, true);
+		}
+	}
+}
+
+void CvPlayer::changeImmigration(int iChange)
+{
+	setImmigration(getImmigration() + iChange);
+}
+
 int CvPlayer::getAdvancedStartPoints() const
 {
 	return m_iAdvancedStartPoints;
@@ -13798,9 +13829,6 @@ void CvPlayer::setCivics(CivicOptionTypes eIndex, CivicTypes eNewValue)
 		{
 			CvEventReporter::getInstance().civicChanged(getID(), eOldCivic, eNewValue);
 		}
-
-		// MacAurther: Check if this changes Immigration
-		processChangedImmigrationCivic(eIndex);
 	}
 }
 
@@ -15016,6 +15044,15 @@ void CvPlayer::doEspionagePoints()
 				}
 			}
 		}
+	}
+}
+
+void CvPlayer::doImmigration()
+{
+	int iImmigrationChange = getCommerceRate(COMMERCE_IMMIGRATION);
+	if (iImmigrationChange > 0)
+	{
+		changeImmigration(iImmigrationChange);
 	}
 }
 
@@ -18385,6 +18422,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iTotalLandScored);
 	pStream->Read(&m_iGold);
 	pStream->Read(&m_iGoldPerTurn);
+	pStream->Read(&m_iImmigration);
 	pStream->Read(&m_iAdvancedStartPoints);
 	pStream->Read(&m_iGoldenAgeTurns);
 	pStream->Read(&m_iNumUnitGoldenAges);
@@ -18532,8 +18570,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iReligiousTolerance);
 
 	pStream->Read(&m_iFreeTechsOnDiscovery);
-
-	pStream->Read(&m_iGlobalImmigrationRateModifier); // MacAurther
 
 	pStream->Read((int*)&m_eID);
 	pStream->Read((int*)&m_ePersonalityType);
@@ -18825,6 +18861,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iTotalLandScored);
 	pStream->Write(m_iGold);
 	pStream->Write(m_iGoldPerTurn);
+	pStream->Write(m_iImmigration);
 	pStream->Write(m_iAdvancedStartPoints);
 	pStream->Write(m_iGoldenAgeTurns);
 	pStream->Write(m_iNumUnitGoldenAges);
@@ -18972,8 +19009,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iReligiousTolerance);
 
 	pStream->Write(m_iFreeTechsOnDiscovery);
-
-	pStream->Write(m_iGlobalImmigrationRateModifier); // MacAurther
 
 	pStream->Write(m_eID);
 	pStream->Write(m_ePersonalityType);
@@ -25630,45 +25665,4 @@ bool CvPlayer::canResearchNativeTech(TechTypes eTech) const
 		}
 	}
 	return false;
-}
-
-// MacAurther: Immigration
-int CvPlayer::getGlobalImmigrationRateModifier() const
-{
-	return m_iGlobalImmigrationRateModifier;
-}
-
-void CvPlayer::setGlobalImmigrationRateModifier(int iValue)
-{
-	m_iGlobalImmigrationRateModifier = iValue;
-}
-
-void CvPlayer::changeGlobalImmigrationRateModifier(int iChange)
-{
-	setGlobalImmigrationRateModifier(getGlobalImmigrationRateModifier() + iChange);
-}
-
-void CvPlayer::processChangedGlobalImmigrationRateModifier()
-{
-	CvCity* pLoopCity;
-	int iLoop;
-
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		pLoopCity->processImmigration();
-	}
-}
-
-void CvPlayer::processChangedImmigrationCivic(CivicOptionTypes eCivicOption)
-{
-	if(eCivicOption == CIVICOPTION_LABOR || eCivicOption == CIVICOPTION_SOCIETY)
-	{
-		CvCity* pLoopCity;
-		int iLoop;
-
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			pLoopCity->processImmigrationCivic(true);
-		}
-	}
 }

@@ -205,6 +205,10 @@ public:
 	void changeGold(int iChange);
 	int getGoldPerTurn();
 
+	int getImmigration();
+	void setImmigration(int iNewValue);
+	void changeImmigration(int iChange);
+
 	int getAdvancedStartPoints();
 	void setAdvancedStartPoints(int iNewValue);
 	void changeAdvancedStartPoints(int iChange);

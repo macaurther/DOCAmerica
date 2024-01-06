@@ -2339,6 +2339,7 @@
 					<PrereqTech>TECH_LOCALIZATION</PrereqTech>
 					<TechYields>
 						<iYield>0</iYield>
+						<iYield>0</iYield>
 						<iYield>2</iYield>
 					</TechYields>
 				</TechYieldChange>

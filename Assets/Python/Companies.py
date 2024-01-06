@@ -136,14 +136,11 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iGranary)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iSewer)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iEstate)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iSupermarket)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iVerticalFarm)): iValue += 1
 
 	elif iCompany == iFishingIndustry:
 		if city.hasBuilding(unique_building(iOwner, iLighthouse)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iHarbor)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iWharf)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iSupermarket)): iValue += 1
 		
 	elif iCompany == iTextileIndustry:
 		if city.hasBuilding(unique_building(iOwner, iMarket)): iValue += 1
@@ -153,7 +150,6 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iManufactory)): iValue += 2
 
 	elif iCompany == iSteelIndustry:
-		if city.hasBuilding(unique_building(iOwner, iFactory)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iCoalPlant)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iRailwayStation)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iSteelMill)): iValue += 3
@@ -162,15 +158,10 @@ def getCityValue(city, iCompany):
 	elif iCompany == iOilIndustry:
 		if city.hasBuilding(unique_building(iOwner, iBank)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iDistillery)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iIndustrialPark)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iContainerTerminal)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iStockExchange)): iValue += 3
 
 	elif iCompany == iLuxuryIndustry:
-		if city.hasBuilding(unique_building(iOwner, iFactory)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iTavern)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iDepartmentStore)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iHotel)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iNationalGallery)): iValue += 3
 	
 	# needs at least a few requirements

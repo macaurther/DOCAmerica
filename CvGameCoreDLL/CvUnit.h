@@ -296,7 +296,6 @@ public:
 	bool canContactTribe(const CvPlot* pPlot) const;
 	bool canUnitContactTribe() const;
 	bool contactTribe();
-	int getImmigrationRate();
 
 	int upgradePrice(UnitTypes eUnit) const;																											// Exposed to Python
 	bool upgradeAvailable(UnitTypes eFromUnit, UnitClassTypes eToUnitClass, int iCount = 0) const;					// Exposed to Python

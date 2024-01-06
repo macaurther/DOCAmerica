@@ -127,6 +127,12 @@ class WBPlayerScreen:
 		screen.setButtonGFC("PlayerGoldMinus", "", "", 45, iY, 24, 24, WidgetTypes.WIDGET_PYTHON, 1031, -1, ButtonStyles.BUTTON_STYLE_CITY_MINUS)
 		sText = u"%s %s%c" %(CyTranslator().getText("TXT_KEY_WB_GOLD", ()), CvPlatyBuilderScreen.CvWorldBuilderScreen().addComma(pPlayer.getGold()), gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
 		screen.setLabel("PlayerGoldText", "Background", "<font=3>" + sText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 75, iY + 1, -0.1, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		
+		iY += 30
+		screen.setButtonGFC("PlayerImmigrationPlus", "", "", 20, iY, 24, 24, WidgetTypes.WIDGET_PYTHON, 1030, -1, ButtonStyles.BUTTON_STYLE_CITY_PLUS)
+		screen.setButtonGFC("PlayerImmigrationMinus", "", "", 45, iY, 24, 24, WidgetTypes.WIDGET_PYTHON, 1031, -1, ButtonStyles.BUTTON_STYLE_CITY_MINUS)
+		sText = u"%s %s%c" %(CyTranslator().getText("TXT_KEY_WB_IMMIGRATION", ()), CvPlatyBuilderScreen.CvWorldBuilderScreen().addComma(pPlayer.getImmigration()), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar())
+		screen.setLabel("PlayerImmigrationText", "Background", "<font=3>" + sText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 75, iY + 1, -0.1, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		iY += 30
 		screen.setButtonGFC("CombatXPPlus", "", "", 20, iY, 24, 24, WidgetTypes.WIDGET_PYTHON, 1030, -1, ButtonStyles.BUTTON_STYLE_CITY_PLUS)
@@ -388,6 +394,13 @@ class WBPlayerScreen:
 				pPlayer.changeGold(iChange)
 			elif inputClass.getData1() == 1031:
 				pPlayer.changeGold(- min(iChange, pPlayer.getGold()))
+			self.placeStats()
+		
+		elif inputClass.getFunctionName().find("PlayerImmigration") > -1:
+			if inputClass.getData1() == 1030:
+				pPlayer.changeImmigration(iChange)
+			elif inputClass.getData1() == 1031:
+				pPlayer.changeImmigration(- min(iChange, pPlayer.getImmigration()))
 			self.placeStats()
 
 		elif inputClass.getFunctionName().find("CombatXP") > -1:

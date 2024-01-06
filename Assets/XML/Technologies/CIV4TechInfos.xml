@@ -716,7 +716,6 @@
 			<iAsset>8</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bOpenBordersTrading>1</bOpenBordersTrading>
 			<iGridX>4</iGridX>
 			<iGridY>5</iGridY>
 			<Flavors>
@@ -757,12 +756,6 @@
 			<bOpenBordersTrading>1</bOpenBordersTrading>
 			<iGridX>4</iGridX>
 			<iGridY>7</iGridY>
-			<CommerceFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>1</bFlexible>
-			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -1040,7 +1033,6 @@
 			<iAsset>16</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bBridgeBuilding>1</bBridgeBuilding>
 			<iGridX>5</iGridX>
 			<iGridY>7</iGridY>
 			<Flavors>
@@ -2512,6 +2504,13 @@
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
 			<iGridY>11</iGridY>
+			<CommerceFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>0</bFlexible>
+				<bFlexible>1</bFlexible>
+			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>

@@ -7292,7 +7292,6 @@ void CvPlot::updateYield()
 				if (isBeingWorked())
 				{
 					pWorkingCity->changeBaseYieldRate(((YieldTypes)iI), (getYield((YieldTypes)iI) - iOldYield));
-					pWorkingCity->processImmigrationCivic(false); // Immigration
 				}
 
 				pWorkingCity->AI_setAssignWorkDirty(true);

@@ -823,6 +823,24 @@ int CyPlayer::getGoldPerTurn()
 	return m_pPlayer ? m_pPlayer->getGoldPerTurn() : -1;
 }
 
+// MacAurther
+int CyPlayer::getImmigration()
+{
+	return m_pPlayer ? m_pPlayer->getImmigration() : -1;
+}
+
+void CyPlayer::setImmigration(int iNewValue)
+{
+	if (m_pPlayer)
+		m_pPlayer->setImmigration(iNewValue);
+}
+
+void CyPlayer::changeImmigration(int iChange)
+{
+	if (m_pPlayer)
+		m_pPlayer->changeImmigration(iChange);
+}
+
 int CyPlayer::getAdvancedStartPoints()
 {
 	return m_pPlayer ? m_pPlayer->getAdvancedStartPoints() : -1;
