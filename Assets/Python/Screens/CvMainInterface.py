@@ -1585,7 +1585,7 @@ class CvMainInterface:
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
 			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldTactics): 
+			if teamPlayer.isHasTech(iOldWorldCulture): 
 				screen.show( "ImmigrationManagerButton" )				
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1615,7 +1615,7 @@ class CvMainInterface:
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
 			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldTactics): 
+			if teamPlayer.isHasTech(iOldWorldCulture): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -1675,7 +1675,7 @@ class CvMainInterface:
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
 			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldTactics): 
+			if teamPlayer.isHasTech(iOldWorldCulture): 
 				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1705,7 +1705,7 @@ class CvMainInterface:
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
 			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldTactics): 
+			if teamPlayer.isHasTech(iOldWorldCulture): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -1735,7 +1735,7 @@ class CvMainInterface:
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
 			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldTactics): 
+			if teamPlayer.isHasTech(iOldWorldCulture): 
 				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1773,7 +1773,7 @@ class CvMainInterface:
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
 			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldTactics): 
+			if teamPlayer.isHasTech(iOldWorldCulture): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )

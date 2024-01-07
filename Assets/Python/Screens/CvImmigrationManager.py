@@ -32,6 +32,9 @@ objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
 # Set to true to print out debug messages in the logs
 g_bDebug = false
 
+# Default valus is 1 
+g_bAIThinkPeriod = 6 #Rhye (5 in Warlords, 4 in vanilla)
+
 class CvImmigrationManager:
 	"Mercenary Manager"
 	
@@ -1098,11 +1101,6 @@ def onBeginPlayerTurn(iGameTurn, iPlayer):
 		if(g_bDebug):
 			CvUtil.pyPrint(player.getName() + " Gold: " + str(player.getGold()) + " is human: " + str(player.isHuman()))
 		# Debug code - end        
-
-		# if g_bDisplayImmigrationManagerOnBeginPlayerTurn is true the the player is human
-		# then display the mercenary manager screen
-		if(g_bDisplayImmigrationManagerOnBeginPlayerTurn and player.isHuman()):
-			self.mercenaryManager.interfaceScreen()
 
 		# if the player is not human then run the think method
 		if(not player.isHuman()):

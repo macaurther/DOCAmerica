@@ -352,32 +352,17 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-			<Type>CIVIC_EMPIRE</Type>
-			<Description>TXT_KEY_CIVIC_EMPIRE</Description>
-			<Civilopedia>TXT_KEY_CIVIC_EMPIRE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_EMPIRE_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_EMPIRE_HELP</Help>
-			<TechPrereq>TECH_CONSTRUCTION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Empire.dds</Button>
+			<Type>CIVIC_CUSTOMARY_LAW</Type>
+			<Description>TXT_KEY_CIVIC_CUSTOMARY_LAW</Description>
+			<Civilopedia>TXT_KEY_CIVIC_CUSTOMARY_LAW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Help>
+			<TechPrereq>TECH_CEREMONY</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/CustomaryLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<BuildingProductionModifiers>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_GRANARY</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_BARRACKS</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_MARKET</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
-			</BuildingProductionModifiers>
+			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iStateReligionHappiness>-1</iStateReligionHappiness>
-			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -406,7 +391,37 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
-			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
+			<Type>CIVIC_ARISTOCRACY</Type>
+			<Description>TXT_KEY_CIVIC_ARISTOCRACY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ARISTOCRACY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Strategy>
+			<TechPrereq>TECH_HUMANITIES</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Barbarism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,1,1</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<iCultureGroup>1</iCultureGroup>
+			<CapitalYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>50</iYield>
+				<iYield>50</iYield>
+			</CapitalYieldModifiers>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_GRANARY</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_BARRACKS</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_MARKET</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -442,23 +457,6 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
-			<Type>CIVIC_ARISTOCRACY</Type>
-			<Description>TXT_KEY_CIVIC_ARISTOCRACY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_ARISTOCRACY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_HUMANITIES</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Barbarism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,1,1</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iCultureGroup>1</iCultureGroup>
-			<CapitalYieldModifiers>
-				<iYield>0</iYield>
-				<iYield>50</iYield>
-				<iYield>50</iYield>
-			</CapitalYieldModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LEGAL</CivicOptionType>
@@ -922,7 +920,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MERCHANT_TRADE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_MERCHANT_TRADE_HELP</Help>
-			<TechPrereq>TECH_NAVIGATION</TechPrereq>
+			<TechPrereq>TECH_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/MerchantTrade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -1148,7 +1146,7 @@
 			<Description>TXT_KEY_CIVIC_HARMONY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HARMONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HARMONY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CEREMONY</TechPrereq>
+			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Harmony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1379,7 +1377,7 @@
 			<Description>TXT_KEY_CIVIC_TRIBUTARIES</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TRIBUTARIES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TRIBUTARIES_STRATEGY</Strategy>
-			<TechPrereq>TECH_WRITING</TechPrereq>
+			<TechPrereq>TECH_EMPIRE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>

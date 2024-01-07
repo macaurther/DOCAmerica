@@ -145,44 +145,43 @@ def conquistadors(iTeamX, iHasMetTeamY):
 			return
 		
 		#if year().between(1490, 1800):
-		if True:
-			if civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:
-				iNewWorldPlayer = iTeamX
-				iOldWorldPlayer = iHasMetTeamY
-				
-				iNewWorldCiv = civ(iNewWorldPlayer)
-				
-				bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
-				
-				if not bAlreadyContacted:
-					# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe
-					if iNewWorldCiv == iMaya:
-						iContactImmigration = 200
-					elif iNewWorldCiv == iTeotihuacan:
-						iContactImmigration = 150
-					elif iNewWorldCiv == iTiwanaku:
-						iContactImmigration = 150
-					elif iNewWorldCiv == iWari:
-						iContactImmigration = 150
-					elif iNewWorldCiv == iMuisca:
-						iContactImmigration = 500
-					elif iNewWorldCiv == iChimu:
-						iContactImmigration = 150
-					elif iNewWorldCiv == iAztecs:
-						iContactImmigration = 500
-					elif iNewWorldCiv == iInca:
-						iContactImmigration = 500
-					else:
-						return	# Some natives don't generate immigration
-						
-					data.dFirstContactConquerors[iNewWorldCiv] = True
+		if civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:
+			iNewWorldPlayer = iTeamX
+			iOldWorldPlayer = iHasMetTeamY
+			
+			iNewWorldCiv = civ(iNewWorldPlayer)
+			
+			bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
+			
+			if not bAlreadyContacted:
+				# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe
+				if iNewWorldCiv == iMaya:
+					iContactImmigration = 200
+				elif iNewWorldCiv == iTeotihuacan:
+					iContactImmigration = 150
+				elif iNewWorldCiv == iTiwanaku:
+					iContactImmigration = 150
+				elif iNewWorldCiv == iWari:
+					iContactImmigration = 150
+				elif iNewWorldCiv == iMuisca:
+					iContactImmigration = 500
+				elif iNewWorldCiv == iChimu:
+					iContactImmigration = 150
+				elif iNewWorldCiv == iAztecs:
+					iContactImmigration = 500
+				elif iNewWorldCiv == iInca:
+					iContactImmigration = 500
+				else:
+					return	# Some natives don't generate immigration
 					
-					events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
-					
-					gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
+				data.dFirstContactConquerors[iNewWorldCiv] = True
+				
+				events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
+				
+				gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
 
-					message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
-					message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
+				message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
+				message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
 
 ### REVOLUTION ###
 def expeditionaryForce(iRevolutionaryPlayer):
@@ -355,7 +354,9 @@ def giveColonists(iPlayer):
 	# MacAurther: This covers starting European colonists and later colonists as well
 	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dMaxColonists:
 		iColonistIndex = data.players[iPlayer].iColonistsAlreadyGiven
-		if iColonistIndex < dMaxColonists[iCiv]:
+		#if iColonistIndex < dMaxColonists[iCiv]:
+		# TEMP: Disable Additional colonist spawns while trying to get AI to buy Colonists using Immigration
+		if iColonistIndex == 0:
 			if pPlayer.isHuman():
 				tPlot = dColonistSpawns[iCiv][iColonistIndex][1][0]
 			else:

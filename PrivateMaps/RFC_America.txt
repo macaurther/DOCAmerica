@@ -18800,7 +18800,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=64
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -19480,6 +19479,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=64
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -37828,6 +37828,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=116
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot

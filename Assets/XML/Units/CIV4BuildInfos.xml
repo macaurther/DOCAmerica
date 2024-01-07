@@ -83,7 +83,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -142,7 +142,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -172,7 +172,7 @@
 		<BuildInfo>
 			<Type>BUILD_FISHING_BOATS</Type>
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
-			<PrereqTech>TECH_SAILING</PrereqTech>
+			<PrereqTech>TECH_SEAFARING</PrereqTech>
 			<iTime>0</iTime>
 			<iCost>0</iCost>
 			<bKill>1</bKill>
@@ -249,7 +249,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -301,7 +301,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -368,7 +368,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -420,7 +420,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -472,7 +472,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -510,7 +510,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -563,7 +563,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -615,7 +615,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -682,7 +682,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -753,7 +753,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -805,7 +805,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -856,7 +856,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -972,7 +972,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1119,7 +1119,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1164,7 +1164,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1209,7 +1209,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1254,7 +1254,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1299,7 +1299,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1344,7 +1344,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1389,7 +1389,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1434,7 +1434,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1479,7 +1479,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1524,7 +1524,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1574,7 +1574,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
@@ -1620,7 +1620,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_MINING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>

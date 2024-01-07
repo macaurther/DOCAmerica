@@ -26,12 +26,12 @@ def setup():
 	data.lGenericPlagueDates[0] = 1500
 	data.lGenericPlagueDates[2] = 1920 # safe value to prevent plague at start of 1700 AD scenario
 	
-	if scenario() == i250AD:
+	if scenario() == i0AD:
 		data.lGenericPlagueDates[0] = year(1500).deviate(20)
 		
 	data.lGenericPlagueDates[1] = year(1770).deviate(20)
 	
-	if scenario() != i1770AD:
+	if scenario() != i1750AD:
 		data.lGenericPlagueDates[2] = year(1920).deviate(20)
 		
 	data.lGenericPlagueDates[3] = year(2020).deviate(20)

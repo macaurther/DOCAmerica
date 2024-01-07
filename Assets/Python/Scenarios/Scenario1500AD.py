@@ -27,7 +27,7 @@ lCivilizations = [
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iEmpire, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
+		lCivics=[iAristocracy, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
 		techs=techs.column(2).including(iArtisanry, iMasonry).without(iSailing)
 	),
 	Civilization(

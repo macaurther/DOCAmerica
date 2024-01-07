@@ -193,9 +193,9 @@ lInfluences = [
 ]
 
 dBirth = CivDict({
-iMaya : 250,
-iTeotihuacan : 250,
-iTiwanaku : 250,
+iMaya : 0,
+iTeotihuacan : 0,
+iTiwanaku : 110,
 iWari : 500,
 iMississippi : 600,
 iPuebloan : 750,
@@ -223,7 +223,7 @@ iBrazil : 1822,
 iVenezuela : 1831,
 iCanada : 1867,
 iCuba : 1898,
-}, 250)
+}, 1)
 
 lBirthCivs = dBirth.keys()
 
@@ -515,7 +515,7 @@ iNumBuildingsPlague = iNumBuildings+1
 #Civics
 iNumCivics = 63
 (iChiefdom, iExpedition, iDespotism, iViceroyalty, iCouncil, iCharterColony, iMonarchy, iTradeCompany, iDemocracy, iRoyalColony, iDictatorship, iDominion, iStateParty, iCommonwealth,
-iAuthority, iEmpire, iMaritimeLaw, iCommonLaw, iAristocracy, iConfederacy, iProprietaries, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
+iAuthority, iCustomaryLaw, iMaritimeLaw, iAristocracy, iCommonLaw, iConfederacy, iProprietaries, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
 iTraditionalism, iSerfdom, iCaptives, iEncomienda, iCraftsmen, iIndenturedServitude, iSlavery, iApprenticeship, iIndustrialism, iLaborUnions,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
 iAnimism, iDivineRight, iHarmony, iGloriaInDeo, iCasteSystem, iJesuits, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,
@@ -653,7 +653,7 @@ iNumImpacts = 5
 
 lSecondaryCivs = [iChimu, iCuba, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari]
 
-(i250AD, i1500AD, i1770AD) = range(3)
+(i0AD, i1500AD, i1750AD) = range(3)
 
 # Stability overlay and editor
 iNumPlotStabilityTypes = 5

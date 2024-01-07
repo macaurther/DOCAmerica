@@ -23,7 +23,7 @@ def setup():
 	iTurn = year(400)
 	if scenario() == i1500AD:  #late start condition
 		iTurn = year(1550)
-	elif scenario() == i1770AD:
+	elif scenario() == i1750AD:
 		iTurn = year(1790)
 	data.iNextTurnAIWar = iTurn + rand(iMaxIntervalEarly-iMinIntervalEarly)
 

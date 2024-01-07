@@ -198,60 +198,61 @@ lCivilizations = [
 	Civilization(
 		iWari,
 		iGold=100,
-		techs=techs.column(2).without(iSailing)
+		techs=techs.column(3).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iMississippi,
 		iGold=25,
-		techs=techs.column(2).without(iSailing, iPastoralism, iMining)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning).without(iLandmarks, iPathfinding, iLinguistics, iLocalization)
 	),
 	Civilization(
 		iPuebloan,
 		iGold=50,
-		techs=techs.column(2).including(iMasonry).without(iSailing, iPastoralism)
+		techs=techs.column(3).including(iMasonry).without(iTrapping, iLinguistics, iLocalization, iHerbalism, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iMuisca,
 		iGold=200,
 		lCivics=[iMerchantTrade],
-		techs=techs.column(2)
+		techs=techs.column(3).including(iMasonry, iSmelting).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNorse,
 		iGold=50,
 		lCivics=[iExpedition, iSerfdom, iMerchantTrade],
-		techs=techs.column(8).without(*lNativeTechs)
+		techs=techs.column(8).including(iFishing).without(*lNativeTechs)
 	),
 	Civilization(
 		iChimu,
 		iGold=300,
 		lCivics=[iDespotism, iCraftsmen, iMerchantTrade],
-		techs=techs.column(2).including(iArtisanry, iProperty, iNavigation)
+		techs=techs.column(4).including(iConstruction, iTrade).without(iHunting, iTrapping)
 	),
 	Civilization(
 		iInuit,
 		iGold=25,
 		lCivics=[iCouncil],
-		techs=techs.column(2).including(iTanning, iMythology, iSailing)
+		techs=techs.column(2).including(iTanning, iMythology, iSailing).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iEmpire, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
+		lCivics=[iAristocracy, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
 		lEnemies=[iWari, iTiwanaku],
-		techs=techs.column(2).including(iArtisanry, iMasonry).without(iSailing)
+		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespotism, iCaptives, iTributaries],
 		lEnemies=[iTeotihuacan],
-		techs=techs.column(3).including(iCalendar).without(iNavigation)
+		techs=techs.column(5).including(iPriesthood).without(iHunting, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iIroquois,
 		iGold=200,
-		techs=techs.column(2)
+		lCivics=[iHarmony],
+		techs=techs.column(3).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(
 		iSpain,
@@ -384,6 +385,10 @@ lCivilizations = [
 ### Starting units ###
 
 dStartingUnits = CivDict({
+	iTiwanaku: {
+		iSettle: 1,
+		iDefend: 1,
+	},
 	iWari: {
 		iSettle: 1,
 		iWork: 1,

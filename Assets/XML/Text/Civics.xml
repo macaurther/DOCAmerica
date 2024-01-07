@@ -480,15 +480,15 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>
 		<English>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION]</English>
+[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</English>
 		<French>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION]</French>
+[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</French>
 		<German>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION]</German>
+[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</German>
 		<Italian>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION]</Italian>
+[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</Italian>
 		<Spanish>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION]</Spanish>
+[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
@@ -543,23 +543,23 @@
 		<Spanish>[ICON_BULLET]Can build wonders regardless of State [ICON_RELIGION] requirements</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_EMPIRE</Tag>
-		<English>Empire</English>
-		<French>Empire</French>
-		<German>Empire</German>
-		<Italian>Empire</Italian>
-		<Spanish>Empire</Spanish>
+		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW</Tag>
+		<English>Customary Law</English>
+		<French>Customary Law</French>
+		<German>Customary Law</German>
+		<Italian>Customary Law</Italian>
+		<Spanish>Customary Law</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_EMPIRE_STRATEGY</Tag>
-		<English>Faster production of Granary, Market, Barracks; reduced instability from cities; increased unhappiness from Religion</English>
-		<French>Faster production of Granary, Market, Barracks; reduced instability from cities; increased unhappiness from Religion</French>
-		<German>Faster production of Granary, Market, Barracks; reduced instability from cities; increased unhappiness from Religion</German>
-		<Italian>Faster production of Granary, Market, Barracks; reduced instability from cities; increased unhappiness from Religion</Italian>
-		<Spanish>Faster production of Granary, Market, Barracks; reduced instability from cities; increased unhappiness from Religion</Spanish>
+		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Tag>
+		<English>Reduced instability from cities; increased unhappiness from Religion</English>
+		<French>Reduced instability from cities; increased unhappiness from Religion</French>
+		<German>Reduced instability from cities; increased unhappiness from Religion</German>
+		<Italian>Reduced instability from cities; increased unhappiness from Religion</Italian>
+		<Spanish>Reduced instability from cities; increased unhappiness from Religion</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_EMPIRE_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Tag>
 		<English>[ICON_BULLET]Reduced Instability from Cities</English>
 		<French>[ICON_BULLET]Reduced Instability from Cities</French>
 		<German>[ICON_BULLET]Reduced Instability from Cities</German>
@@ -801,11 +801,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Tag>
-		<English>Extra yields in capital</English>
-		<French>Extra yields in capital</French>
-		<German>Extra yields in capital</German>
-		<Italian>Extra yields in capital</Italian>
-		<Spanish>Extra yields in capital</Spanish>
+		<English>Extra yields in capital; faster production of Granary, Market, Barracks</English>
+		<French>Extra yields in capital; faster production of Granary, Market, Barracks</French>
+		<German>Extra yields in capital; faster production of Granary, Market, Barracks</German>
+		<Italian>Extra yields in capital; faster production of Granary, Market, Barracks</Italian>
+		<Spanish>Extra yields in capital; faster production of Granary, Market, Barracks</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_VICEROYALTY</Tag>

@@ -40,11 +40,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ANG</Tag>
-		<English>Immigration also provides [ICON_GREATPEOPLE]</English>
-		<French>Immigration also provides [ICON_GREATPEOPLE]</French>
-		<German>Immigration also provides [ICON_GREATPEOPLE]</German>
-		<Italian>Immigration also provides [ICON_GREATPEOPLE]</Italian>
-		<Spanish>Immigration also provides [ICON_GREATPEOPLE]</Spanish>
+		<English>Can hire Great People with [ICON_IMMIGRATION]</English>
+		<French>Can hire Great People with [ICON_IMMIGRATION]</French>
+		<German>Can hire Great People with [ICON_IMMIGRATION]</German>
+		<Italian>Can hire Great People with [ICON_IMMIGRATION]</Italian>
+		<Spanish>Can hire Great People with [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ARC_TITLE</Tag>
@@ -72,11 +72,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_EUR</Tag>
-		<English>No Core area and receive stability and units from home country</English>
-		<French>No Core area and receive stability and units from home country</French>
-		<German>No Core area and receive stability and units from home country</German>
-		<Italian>No Core area and receive stability and units from home country</Italian>
-		<Spanish>No Core area and receive stability and units from home country</Spanish>
+		<English>No Core area and receive free stability</English>
+		<French>No Core area and receive free stability</French>
+		<German>No Core area and receive free stability</German>
+		<Italian>No Core area and receive free stability</Italian>
+		<Spanish>No Core area and receive free stability</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_LAT_TITLE</Tag>
@@ -321,11 +321,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ENG</Tag>
-		<English>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</English>
-		<French>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</French>
-		<German>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</German>
-		<Italian>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</Italian>
-		<Spanish>+1 Immigration from Ships in cities and Ship Immigration caps at +10 (instead of +5)</Spanish>
+		<English>+50% [ICON_IMMIGRATION] in all cities</English>
+		<French>+50% [ICON_IMMIGRATION] in all cities</French>
+		<German>+50% [ICON_IMMIGRATION] in all cities</German>
+		<Italian>+50% [ICON_IMMIGRATION] in all cities</Italian>
+		<Spanish>+50% [ICON_IMMIGRATION] in all cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA_TITLE</Tag>

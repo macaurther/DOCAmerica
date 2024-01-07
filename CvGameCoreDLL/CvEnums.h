@@ -2203,10 +2203,10 @@ enum CivicTypes						// Exposed to Python
 	CIVIC_COMMONWEALTH,				// Culture Group 2
 
 	CIVIC_AUTHORITY,				// Culture Group 0
-	CIVIC_EMPIRE,					// Culture Group 1
+	CIVIC_CUSTOMARY_LAW,			// Culture Group 1
 	CIVIC_MARITIME_LAW,				// Culture Group 2
-	CIVIC_COMMON_LAW,				// Culture Group 2
 	CIVIC_ARISTOCRACY,				// Culture Group 1
+	CIVIC_COMMON_LAW,				// Culture Group 2
 	CIVIC_CONFEDERACY,				// Culture Group 1
 	CIVIC_PROPRIETARIES,			// Culture Group 2
 	CIVIC_FEDERALISM,				// Culture Group 1
@@ -3450,9 +3450,9 @@ enum ScenarioTypes
 {
 	NO_SCENARIO = -1,
 
-	SCENARIO_250AD,
+	SCENARIO_0AD,
 	SCENARIO_1500AD,
-	SCENARIO_1770AD,
+	SCENARIO_1750AD,
 	NUM_SCENARIO_TYPES,
 };
 

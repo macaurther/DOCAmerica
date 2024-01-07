@@ -435,7 +435,7 @@ def scenarioStartTurn():
 
 
 def scenarioStartYear():
-	lStartYears = [250, 1500, 1770]
+	lStartYears = [0, 1500, 1750]
 	return lStartYears[scenario()]
 
 

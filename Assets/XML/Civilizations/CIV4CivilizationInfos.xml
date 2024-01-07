@@ -1718,7 +1718,7 @@
 			<Identifier>MAY</Identifier>
 			<Region>MES</Region>
 			<CultureGroup>1</CultureGroup>
-			<StartingYear>250</StartingYear>
+			<StartingYear>1</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -2982,7 +2982,7 @@
 			<Identifier>TEO</Identifier>
 			<Region>MES</Region>
 			<CultureGroup>1</CultureGroup>
-			<StartingYear>250</StartingYear>
+			<StartingYear>1</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3095,7 +3095,7 @@
 			<Identifier>TIW</Identifier>
 			<Region>AND</Region>
 			<CultureGroup>1</CultureGroup>
-			<StartingYear>250</StartingYear>
+			<StartingYear>110</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>

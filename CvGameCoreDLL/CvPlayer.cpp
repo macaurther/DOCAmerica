@@ -12680,11 +12680,6 @@ int CvPlayer::getCommerceRate(CommerceTypes eIndex) const
 		}
 	}
 
-	if (eIndex == COMMERCE_IMMIGRATION && hasCivic(CIVIC_ISOLATIONISM))
-	{
-		iRate /= 2;
-	}
-
 	FAssert(iRate >= 0);
 
 	return iRate / 100;
@@ -12735,7 +12730,24 @@ int CvPlayer::getCommerceRateModifier(CommerceTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_COMMERCE_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiCommerceRateModifier[eIndex];
+
+	int iCommerceRateModifier = m_aiCommerceRateModifier[eIndex];
+
+	// MacAurther: Isolationism Civic
+	if (eIndex == COMMERCE_IMMIGRATION && hasCivic(CIVIC_ISOLATIONISM))
+	{
+		iCommerceRateModifier -= 50;
+	}
+
+	// MacAurther: England UP
+	if (eIndex == COMMERCE_IMMIGRATION && getCivilizationType() == ENGLAND)
+	{
+		iCommerceRateModifier += 50;
+	}
+
+	FAssert(iCommerceRateModifier >= 0);
+
+	return iCommerceRateModifier;
 }
 
 

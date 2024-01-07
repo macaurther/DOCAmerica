@@ -459,7 +459,7 @@ def getSeparatismModifier(iPlayer, city):
 		iModifier -= city.getCultureLevel() - 1
 	
 	# Empire Civic
-	if iEmpire in civics: iModifier -= 1
+	if iCustomaryLaw in civics: iModifier -= 1
 	
 	# cap
 	if iModifier < -1: iModifier = -1
@@ -978,7 +978,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iPoliceState in civics: iStability -= 2
 		if iSlavery in civics: iStability -= 4
 		if iCasteSystem in civics: iStability -= 3
-		if iEmpire in civics: iStability -= 2
+		if iCustomaryLaw in civics: iStability -= 2
 		if iSpoilsSystem in civics: iStability -= 3
 	
 	if iRoyalColony in civics:
@@ -1013,7 +1013,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iNationhood in civics: iStability -= 3
 	
 	# Legal
-	if iEmpire in civics:
+	if iCustomaryLaw in civics:
 		if iSlavery in civics: iStability += 2
 		if iCasteSystem in civics: iStability += 3
 		if iTributaries in civics: iStability += 2
@@ -1157,7 +1157,6 @@ def getCivicStability(iPlayer, civics=None):
 		pass
 	
 	if iJesuits in civics:
-		if iPuppeteering in civics: iStability += 2
 		if iNationhood in civics: iStability -= 2
 	
 	if iIsolationism in civics:

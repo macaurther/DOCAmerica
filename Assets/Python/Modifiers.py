@@ -8,7 +8,7 @@ def getModifier(iCivilization, iModifier):
 	return tDefaults[iModifier]
 	
 def getAdjustedModifier(iPlayer, iModifier):
-	if scenario() > i250AD and dBirth[iPlayer] < dBirth[iSpain]:
+	if scenario() > i0AD and dBirth[iPlayer] < dBirth[iSpain]:
 		if iModifier in dLateScenarioModifiers:
 			return getModifier(iPlayer, iModifier) * dLateScenarioModifiers[iModifier] / 100
 	return getModifier(iPlayer, iModifier)
@@ -41,7 +41,7 @@ def updateModifiers(iPlayer, iCivilization):
 def init(iPlayer, iCivilization):
 	updateModifiers(iPlayer, iCivilization)
 	
-	if scenario() > i250AD and dBirth[iPlayer] < dBirth[iSpain]:
+	if scenario() > i0AD and dBirth[iPlayer] < dBirth[iSpain]:
 		adjustModifiers(iPlayer)
 	
 	player(iPlayer).updateMaintenance()
@@ -49,7 +49,7 @@ def init(iPlayer, iCivilization):
 
 @handler("BeginGameTurn")
 def updateLateModifiers(iGameTurn):			
-	if scenario() == i250AD and iGameTurn == year(600):
+	if scenario() == i0AD and iGameTurn == year(1700):
 		for iPlayer in players.major().where(lambda p: dBirth[p] < dBirth[iSpain]):
 			adjustInflationModifier(iPlayer)
 		

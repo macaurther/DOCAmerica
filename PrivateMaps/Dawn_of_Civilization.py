@@ -9,7 +9,7 @@ import SettlerMaps, WarMaps, RegionMap
 
 
 lCustomMapOptions = [
-	("Starting Date", ["250 AD", "1500 AD", "1770 AD"], "250 AD"),
+	("Starting Date", ["0 AD", "1500 AD", "1750 AD"], "0 AD"),
 ]
 
 lMinorCivs = [iNative, iIndependent, iIndependent2, iIndependent3]

@@ -517,7 +517,7 @@ class ImmigrationUtils:
 		return promoDict.values()
 		
 		
-	# Returns the mercenaries available for hire.
+	# Returns the colonists available for hire.
 	def getAvailableColonists(self, iPlayer):
 		' colonistsDict - the dictionary containing the colonists that are available for hire by players '
 
@@ -567,7 +567,6 @@ class ImmigrationUtils:
 		elif pPlayer.canTrain(iLongship, false, false):
 			colonistsDict = self.addAvailableUnit(iLongship, colonistsDict)
 		
-		# TODO: Figure out why this doesn't actually add those units
 		# Get Great Person available (Anglo-America RP)
 		if civ(iPlayer) == iAmerica or civ(iPlayer) == iCanada:
 			colonistsDict = self.addAvailableUnit(iGreatProphet, colonistsDict)
@@ -581,10 +580,10 @@ class ImmigrationUtils:
 		# Get Slave type available
 		if pPlayer.isSlavery() and pPlayer.canTrain(iAfricanSlave, false, false):
 			colonistsDict = self.addAvailableUnit(iAfricanSlave, colonistsDict)
-			
+		
 		return colonistsDict
 	
-	# Returns the mercenaries available for hire.
+	# Returns the expeditionaries available for hire.
 	def getAvailableExpeditionaries(self, iPlayer):
 		' expeditionariesDict - the dictionary containing the expeditionaries that are available for hire by players '
 
@@ -1434,8 +1433,12 @@ class Mercenary:
 		iGoldCost = 0
 		
 		# Settlers are expensive
-		if self.objUnitInfo != None and (self.objUnitInfo.getType() == iSettler or self.objUnitInfo.getType() == iPioneer):
+		if self.getUnitInfoID() in [iSettler, iPioneer]:
 			iImmigrationCost *= 3
+		
+		# Great people are very expensive
+		if self.getUnitInfoID() in [iGreatArtist, iGreatEngineer, iGreatGeneral, iGreatMerchant, iGreatProphet, iGreatScientist, iGreatStatesman]:
+			iImmigrationCost *= 30
 
 		if iImmigrationCost > iCurrentImmigration:
 			iGoldCost = (iImmigrationCost - iCurrentImmigration) * 2
@@ -1458,8 +1461,15 @@ class Mercenary:
 
 	def canHireUnit(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
+		
+		# Angle-America RP: Can hire Great People
+		if civ(iPlayer) == iAmerica or civ(iPlayer) == iCanada:
+			if self.getUnitInfoID() in [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]:
+				return True
+		
 		if pPlayer.canTrain(self.getUnitInfoID(), false, false):
 			return True
+		
 		return False
 
 	# Returns true if the mercenary is already hired by a player, false otherwise.

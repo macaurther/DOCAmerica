@@ -10,15 +10,15 @@ from Parsers import *
 from History import dColonistSpawns
 
 
-START_HISTORY = 250
+START_HISTORY = 0
 
 LEADER_DATES = {
 	# Maya
-	iPacal: 250,
+	iPacal: 0,
 	# Teotihuacan
-	iAtlatlCauac: 250,
+	iAtlatlCauac: 0,
 	# Tiwanaku
-	iMalkuHuyustus: 250,
+	iMalkuHuyustus: 110,
 	# Wari
 	iWariCapac: 500,
 	# Mississippi

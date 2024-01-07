@@ -348,7 +348,7 @@
 			<Strategy>TXT_KEY_BUILDING_WEAVER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WEAVER</ArtDefineTag>
-			<PrereqTech>TECH_AESTHETICS</PrereqTech>
+			<PrereqTech>TECH_ARITHMETICS</PrereqTech>
 			<ObsoleteTech>TECH_MACHINE_TOOLS</ObsoleteTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -408,6 +408,14 @@
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<BonusYieldChanges>
+				<BonusYieldChange>
+					<BonusType>BONUS_STONE</BonusType>
+					<YieldChanges>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</BonusYieldChange>
+			</BonusYieldChanges>
 			<BonusYieldModifiers>
 				<BonusYieldModifier>
 					<BonusType>BONUS_STONE</BonusType>
@@ -441,15 +449,6 @@
 			<iAsset>4</iAsset>
 			<iPower>2</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<BonusYieldModifiers>
-				<BonusYieldModifier>
-					<BonusType>BONUS_GOLD</BonusType>
-					<YieldModifiers>
-						<iYield>0</iYield>
-						<iYield>25</iYield>
-					</YieldModifiers>
-				</BonusYieldModifier>
-			</BonusYieldModifiers>
 			<BonusYieldChanges>
 				<BonusYieldChange>
 					<BonusType>BONUS_GOLD</BonusType>
@@ -460,6 +459,15 @@
 					</YieldChanges>
 				</BonusYieldChange>
 			</BonusYieldChanges>
+			<BonusYieldModifiers>
+				<BonusYieldModifier>
+					<BonusType>BONUS_GOLD</BonusType>
+					<YieldModifiers>
+						<iYield>0</iYield>
+						<iYield>25</iYield>
+					</YieldModifiers>
+				</BonusYieldModifier>
+			</BonusYieldModifiers>
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
@@ -814,7 +822,7 @@
 			<Strategy>TXT_KEY_BUILDING_ALTAR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
-			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+			<PrereqTech>TECH_DIVINATION</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -847,7 +855,7 @@
 			<Strategy>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_TZOMPANTLI</ArtDefineTag>
-			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
+			<PrereqTech>TECH_DIVINATION</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<iHurryAngerModifier>-50</iHurryAngerModifier>
 			<iCost>40</iCost>
@@ -881,7 +889,7 @@
 			<Strategy>TXT_KEY_BUILDING_COMMON_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CIVIC_SQUARE</ArtDefineTag>
-			<PrereqTech>TECH_LAW</PrereqTech>
+			<PrereqTech>TECH_PHILOSOPHY</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -922,7 +930,7 @@
 			<Strategy>TXT_KEY_BUILDING_MISSISSIPPI_PLATFORM_MOUND_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MISSISSIPPI_PLATFORM_MOUND</ArtDefineTag>
-			<PrereqTech>TECH_LAW</PrereqTech>
+			<PrereqTech>TECH_CEREMONY</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -967,7 +975,7 @@
 			<Strategy>TXT_KEY_BUILDING_TIWANAKU_KALASASAYA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TIWANAKU_KALASASAYA</ArtDefineTag>
-			<PrereqTech>TECH_LAW</PrereqTech>
+			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -7838,7 +7846,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SACSAYHUAMAN</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
+			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -7950,7 +7958,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TLACHIHUALTEPETL</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<PrereqTech>TECH_DIVINATION</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

@@ -47,7 +47,7 @@ def setup():
 		for iCiv, iPeriod in dPeriods600AD.items():
 			setPeriod(iCiv, iPeriod)
 	
-	if iScenario == i1770AD:
+	if iScenario == i1750AD:
 		for iCiv, iPeriod in dPeriods1700AD.items():
 			setPeriod(iCiv, iPeriod)
 
