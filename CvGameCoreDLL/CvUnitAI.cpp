@@ -5386,6 +5386,27 @@ void CvUnitAI::AI_settlerSeaMove()
 		}
 	}
 
+	// MacAurther: If you have nothing to attack and you're empty, go pick up Immigrants
+	if (bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigration() > AI_MIN_IMMIGRATION)
+	{
+		// If player already has an immigrant ship, don't send another one
+		if (!GET_PLAYER(getOwnerINLINE()).getImmigrantShip() != NULL)
+		{
+			if (AI_PickupImmigrantsMove())
+			{
+				return;
+			}
+		}
+	}
+
+	// MacAurther: TODO: Figure out if there's a better priority for this
+	// MacAurther: If you are the immigrant ship and full, you are not the immigrant ship anymore
+	// Go drop off your cargo and let someone else be the immigrant ship
+	if (isFull() && GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == this)
+	{
+		GET_PLAYER(getOwnerINLINE()).setImmigrantShip(NULL);
+	}
+
 	int iSettlerCount = getUnitAICargo(UNITAI_SETTLE);
 	int iWorkerCount = getUnitAICargo(UNITAI_WORKER);
 
@@ -18612,6 +18633,40 @@ bool CvUnitAI::AI_rebuildMove(int iMinimumCost)
 	return false;
 }
 
+// MacAurther
+bool CvUnitAI::AI_PickupImmigrantsMove()
+{
+	CvPlot* pPlot = AI_GetClosestEdge();
+
+	// This is the Immigrant ship now
+	GET_PLAYER(getOwnerINLINE()).setImmigrantShip(this);
+
+	// See if you're already on the edge
+	if (pPlot == plot())
+	{
+		// Just wait a turn to get some Immigrants
+		getGroup()->pushMission(MISSION_SKIP);
+		return true;
+	}
+	
+	// Got get you some Immigrants
+	getGroup()->pushMission(MISSION_MOVE_TO, pPlot->getX(), pPlot->getY());
+	return true;
+}
+
+CvPlot* CvUnitAI::AI_GetClosestEdge()
+{
+	// MacAurther TODO: This might not be truely the closest edge. But let's try it
+	int iX = 0;
+	int iY = getY();
+
+	if (getX() > EARTH_X / 2)
+	{
+		iX = EARTH_X - 1;
+	}
+
+	return GC.getMapINLINE().plotINLINE(iX, iY);
+}
 
 void CvUnitAI::read(FDataStreamBase* pStream)
 {

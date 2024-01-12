@@ -256,10 +256,10 @@ def expeditionaryForce(iRevolutionaryPlayer):
 		}
 		
 		seaUnits = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionSeaUnits.items())
-		seaUnits.promotion(infos.type("PROMOTION_MERCENARY"))
+		#seaUnits.promotion(infos.type("PROMOTION_MERCENARY"))
 		
 		units = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionUnits.items())
-		units.promotion(infos.type("PROMOTION_MERCENARY"))
+		#units.promotion(infos.type("PROMOTION_MERCENARY"))
 		
 		if iRevolutionaryCiv == iAmerica:
 			message(iRevolutionaryPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES_AMERICA')
@@ -365,7 +365,7 @@ def giveColonists(iPlayer):
 			
 			for iRole in dColonistSpawns[iCiv][iColonistIndex][2]:
 				units = createRoleUnit(iPlayer, tPlot, iRole, 1)
-				units.promotion(infos.type("PROMOTION_MERCENARY"))
+				#units.promotion(infos.type("PROMOTION_MERCENARY"))
 			
 			data.players[iPlayer].iColonistsAlreadyGiven += 1
 

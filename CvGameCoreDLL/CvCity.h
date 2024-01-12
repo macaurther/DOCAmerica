@@ -984,10 +984,10 @@ public:
 	int getNumFreeBuilding(BuildingTypes eIndex) const;															// Exposed to Python
 	void setNumFreeBuilding(BuildingTypes eIndex, int iNewValue);
 
-	bool isHasReligion(ReligionTypes eIndex) const;
+	bool isHasReligion(ReligionTypes eIndex) const;															// Exposed to Python
 	void setHasReligion(ReligionTypes eIndex, bool bNewValue, bool bAnnounce, bool bArrows = true);
 
-	void spreadReligion(ReligionTypes eReligion, bool bMissionary = false);
+	void spreadReligion(ReligionTypes eReligion, bool bMissionary = false);															// Exposed to Python
 	void removeReligion(ReligionTypes eReligion);
 	void replaceReligion(ReligionTypes eOldReligion, ReligionTypes eNewReligion);
 

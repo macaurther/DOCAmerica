@@ -33,7 +33,7 @@ objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
 g_bDebug = false
 
 # Default valus is 1 
-g_bAIThinkPeriod = 6 #Rhye (5 in Warlords, 4 in vanilla)
+g_bAIThinkPeriod = 1 #Rhye (5 in Warlords, 4 in vanilla)
 
 class CvImmigrationManager:
 	"Mercenary Manager"
@@ -687,7 +687,7 @@ class CvImmigrationManager:
 		screen = self.getScreen()
 
 		# Debug code - start
-		if(g_bDebug):
+		if g_bDebug:
 			screen.setText( "TopPanelDebugMsg", "TopPanel", inputClass.getFunctionName()
 						, CvUtil.FONT_RIGHT_JUSTIFY, 1010, 20, -10, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		# Debug code - end
@@ -1070,12 +1070,8 @@ class CvImmigrationManager:
 @handler("GameStart")
 def onGameStart():
 	'Called at the start of the game'
-
-	#Mercenaries - start
 	global objImmigrationUtils        
 	objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
-	#Mercenaries - end
-	
 	return 0
 
 
@@ -1086,31 +1082,23 @@ def onLoadGame():
 		global objImmigrationUtils
 		objImmigrationUtils = ImmigrationUtils.ImmigrationUtils()
 
-@handler("BeginPlayerTurn")
-def onBeginPlayerTurn(iGameTurn, iPlayer):        
-
-	#Mercenaries - start
-
+@handler("EndPlayerTurn")
+def onEndPlayerTurn(iGameTurn, iPlayer):   
 	# This method will display the mercenary manager screen
 	# and provide the logic to make the computer players think.
-	player = gc.getPlayer(iPlayer)
+	pPlayer = gc.getPlayer(iPlayer)
 
-	if (gc.getGame().getGameTurn() >= dBirth[active()]): #Rhye
+	if gc.getTeam(pPlayer.getTeam()).isHasTech(iOldWorldCulture):
 
-		# Debug code - start
-		if(g_bDebug):
-			CvUtil.pyPrint(player.getName() + " Gold: " + str(player.getGold()) + " is human: " + str(player.isHuman()))
-		# Debug code - end        
+		if g_bDebug:
+			CvUtil.pyPrint(pPlayer.getName() + " Gold: " + str(pPlayer.getGold()) + " is human: " + str(pPlayer.isHuman()))     
 
 		# if the player is not human then run the think method
-		if(not player.isHuman()):
-			
-			#Rhye - start
-			#objImmigrationUtils.computerPlayerThink(iPlayer)                                        
-			if (player.isAlive()):
-				if (iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod)):
-					print ("AI thinking (Mercenaries)", iPlayer) #Rhye
+		if not pPlayer.isHuman():
+			if pPlayer.isAlive():
+				if iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod):
+					print("CvImmigrationManager::onBeginPlayerTurn(): AI thinking (Mercenaries), iPlayer: " + str(iPlayer))
 					objImmigrationUtils.computerPlayerThink(iPlayer)                                                                
-			#Rhye - end
+
 
 

@@ -20,6 +20,7 @@ import pickle
 from RFCUtils import *
 from Consts import *
 from Core import *
+from Civics import *
 
 ################# SD-UTILITY-PACK ###################
 import SdToolKit
@@ -51,76 +52,21 @@ lForbiddenUnits = ("UNIT_BEAR",
 				"UNIT_SPY")
 #Rhye - end
 
-lPossibleColonists = (iSettler,
-					iPioneer,
-					iWorker,
-					iPromyshlenniki,
-					iLaborer,
-					iMadeireiro,
-					iOrthodoxMiss,
-					iCatholicMiss,
-					iProtestantMiss,
-					iCaravel,		
-					iCarrack,		
-					iIndiaman,		
-					iGalleon,       
-					iFluyt,			
-					iBrigantine,	
-					iSteamship,
-					iGreatProphet, 	
-					iGreatArtist, 	
-					iGreatScientist,
-					iGreatMerchant, 
-					iGreatEngineer, 
-					iGreatStatesman,
-					iGreatGeneral,
-					iAfricanSlave,)
-					# TODO: iColonist)
+lSettlers = [iSettler, iPioneer]
+lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
+lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
+lTransports = [iCaravel, iCarrack, iIndiaman,	iGalleon, iFluyt, iBrigantine, iSteamship]
+lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
+lSlaves = [iAfricanSlave]
+#lColonists = [iColonist]	# MacAurther: TODO
+lExplorers = [iExplorer, iBandeirante, iCoureurDesBois]
+lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5]
+lMainlineUnits = [iArquebusier, iMusketman, iMusketeer, iRifleman]
+lSpecialtyUnits = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iSkirmisher, iGrenadier, iHussar, iDragoon, iPistolier, iCuirassier, iConquistador, iCarabineer, iCavalry, iBombard, iCannon, iArtillery, iHowitzer, iSloop, iFrigate, iIronclad, iPrivateer, iTorpedoBoat, iBarque, iShipOfTheLine, iManOfWar, iCruiser]
 
-lPossibleExpeditionaries = (iExplorer,
-							iBandeirante,
-							iCoureurDesBois,
-							iRanger,
-							iMilitia2,
-							iMilitia3,
-							iMilitia4,			
-							iMilitia5,
-							iArquebusier,	
-							iMusketman,		
-							iMusketeer,			
-							iRifleman,		
-							iTercio,		
-							iFusilier,		
-							iCompagnies,	
-							iLineInfantry,	
-							iRedcoat,		
-							iMarine,
-							iCrossbowman,	
-							iLightCannon,	
-							iFieldGun,		
-							iGatlingGun,
-							iSkirmisher,	
-							iGrenadier,
-							iHussar,	
-							iDragoon,		
-							iPistolier,		
-							iCuirassier,	
-							iConquistador,	
-							iCarabineer,	
-							iCavalry,		
-							iBombard,		
-							iCannon,		
-							iArtillery,		
-							iHowitzer,
-							iSloop,			
-							iFrigate,		
-							iIronclad,		
-							iPrivateer,	    
-							iTorpedoBoat,	
-							iBarque,		
-							iShipOfTheLine,
-							iManOfWar,		
-							iCruiser)
+lPossibleColonists = lSettlers + lWorkers + lMissionaries + lTransports + lGreatPeople + lSlaves # + lColonists
+
+lPossibleExpeditionaries = lExplorers + lMilitia + lMainlineUnits + lSpecialtyUnits
 
 # Change this to increase or decrease the chance that a mercenary will get a promotion.
 # The default value of 10 means that the mercenary has a 10% chance of getting one of
@@ -333,7 +279,7 @@ class ImmigrationUtils:
 				promotionList.append(promotionInfo)
 		
 		# Debug code - start		
-		if(g_bDebug):
+		if g_bDebug:
 			promotions = objUnit.getName() + " : "
 			for i in range(len(promotionList)):
 				promotions = promotions + promotionList[i].getType() + ", "		
@@ -504,7 +450,7 @@ class ImmigrationUtils:
 
 
 		# Debug code - start
-		if(g_bDebug):
+		if g_bDebug:
 			promotionList = promoDict.values()
 			promotions = ""
 			for i in range(len(promotionList)):
@@ -811,7 +757,7 @@ class ImmigrationUtils:
 		print("Mercenary hired by: " + gc.getPlayer(mercenary.iOwner).getName()) #Rhye
 	
 		# Debug code - start
-		if(g_bDebug):
+		if g_bDebug:
 			self.printMercenaryDataToLog(mercenary)	
 		# Debug code - end
 
@@ -925,14 +871,16 @@ class ImmigrationUtils:
 						
 	# Currently returns the most expensive mercenary that is less expensive than the iGold value passed in.
 	# This method needs to be rewritten to get the best mercenary with better definitions		
-	def getBestAvailableMercenary(self, iGold, iPlayer):
+	def getBestAvailableImmigrant(self, iImmigration, iGold, iPlayer):
 
 		hireCost = 0
 		
-		mercenary = None
+		immigrant = None
+		bestImmigrant = None
 		
-		# Get the available mercenaries from the global mercenary pool
-		mercenaryDict = self.getAvailableColonists(iPlayer)
+		# Get the available mercenaries from the global immigrant pool
+		immigrantDict = self.getAvailableColonists(iPlayer)
+		immigrantDict.update(self.getAvailableExpeditionaries(iPlayer))
 		
 		# Get the actual current player object
 		player = gc.getPlayer(iPlayer)
@@ -943,48 +891,41 @@ class ImmigrationUtils:
 		civics = Civics.player(iPlayer)
 		bProprietaries = iProprietaries in civics
 
-		# Go through the available mercenaries						
-		for mercenaryName in mercenaryDict:
-
-			# Calculate how much gold the player will have after hiring the mercenary.
-			tmpGold = iGold - mercenaryDict[mercenaryName].getHireCost(currentImmigration, bProprietaries)
+		# Go through the available mercenaries
+		iHighestDesire = 0
+		for immigrantName in immigrantDict:
 			
-			# Continue immediately if the player can't support the mercenary
-			if(tmpGold <= 0):
+			immigrant = immigrantDict[immigrantName]
+			# Calculate how much gold the player will have after hiring the immigrant.
+			(immigrationCost, goldCost) = immigrant.getHireCost(currentImmigration, bProprietaries)
+			tmpImmigration = iImmigration - immigrationCost
+			tmpGold = iGold - goldCost
+			
+			# Continue immediately if the player can't support the immigrant
+			if(tmpImmigration < 0 or tmpGold <= 0):
 				continue
 
-			#Rhye - start continents
-			if (not mercenaryDict[mercenaryName].canHireUnit(iPlayer)):
+			if (not immigrant.canHireUnit(iPlayer)):
 				continue
-			#Rhye - end
-			
-			# Get the cost to hire the mercenary
-			mercenaryHireCost = mercenaryDict[mercenaryName].getHireCost()
 
-			# Debug code - start
-			if(g_bDebug):
-				CvUtil.pyPrint(gc.getPlayer(iPlayer).getName() + " mercenaryHireCost:" + str(mercenaryHireCost) + " hireCost:" + str(hireCost) + " iGold:" + str(iGold) + " mercenaryHireCost:" + str(mercenaryHireCost) + " supportTurns:" + str(supportTurns)) 
-			# Debug code - end
-					
-			# Set the mercenary as the best mercenary if it has the highest cost 
-			# but is less expensive than the iGold value passed in and it can 
-			# support the mercenary for at least 5 turns. Why 5 turns? Well if
-			# someone comes up with a better number please let me know. Otherwise
-			if(mercenaryHireCost > hireCost and iGold > mercenaryHireCost):
-				hireCost = mercenaryDict[mercenaryName].getHireCost()
-				mercenary = mercenaryDict[mercenaryName]
+			if g_bDebug:
+				CvUtil.pyPrint(gc.getPlayer(iPlayer).getName() + " immigrationCost:" + str(immigrationCost) + " goldCost:" + str(goldCost) + " immigrationCost:" + str(immigrationCost) + " iGold:" + str(iGold)) 
+			
+			iDesire = immigrant.getAIDesire(iPlayer)
+			
+			if g_bDebug:
+				CvUtil.pyPrint("Player: " + str(iPlayer) + " desires " + str(iDesire) + " " + immigrantName)
+			
+			if iDesire > iHighestDesire:
+				iHighestDesire = iDesire 
+				bestImmigrant = immigrant
+				if g_bDebug:
+					CvUtil.pyPrint("Potential immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + immigrant.getName())
 				
-				# Debug code - start
-				if(g_bDebug):
-					CvUtil.pyPrint("Potential mercenary for " + gc.getPlayer(iPlayer).getName() + " is " + mercenary.getName())
-				# Debug code - end
-				
-		# Debug code - start
-		if(g_bDebug and mercenary != None):
-			CvUtil.pyPrint("Best mercenary for " + gc.getPlayer(iPlayer).getName() + " is " + mercenary.getName())
-		# Debug code - end
+		if(g_bDebug and bestImmigrant != None):
+			CvUtil.pyPrint("Best immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + immigrant.getName())
 		
-		return mercenary
+		return bestImmigrant
 		
 		
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
@@ -992,8 +933,6 @@ class ImmigrationUtils:
 	#   - Hire mercenaries	
 	# It needs to be more complex but for right now it works
 	def computerPlayerThink(self, iPlayer):
-
-                #pass
             
 		# Get the player
 		player = gc.getPlayer(iPlayer)
@@ -1008,83 +947,51 @@ class ImmigrationUtils:
 
 		# Get the current gold for the player			
 		currentGold = player.getGold()
+		currentImmigration = player.getImmigration()
 
 		# Get the computer's current mercenaries
-		mercenaryDict = self.getAvailableExpeditionaries(iPlayer)
+		colonistDict = self.getAvailableColonists(iPlayer)
+		expeditionaryDict = self.getAvailableExpeditionaries(iPlayer)
 
-		mercenary = None
+		immigrant = None
+
+		civics = Civics.player(iPlayer)
+		bProprietaries = iProprietaries in civics
 		
-		# Don't let players with no cities hire mercenaries
-		if(gc.getPlayer(iPlayer).getNumCities() <= 0):
-			return
+		# Hire Immigrants until we get below 50 Immigration, but don't go below -5 GPT, and don't go below 50 Gold
+		while currentImmigration > 50 and player.getGoldPerTurn() > -5 and player.getGold() > 50:
 
-		#Rhye - start
-		iHireOdds = gc.getGame().getSorenRandNum(100, 'odds')
-		if (iHireOdds < tHire[iPlayer]):
-			return
-		#Rhye - end
+			# Get the best available immigrant
+			immigrant = self.getBestAvailableImmigrant(currentImmigration, currentGold, iPlayer)
 
-		
-		# Get all of the players at war with the player
-		enemyPlayersList = self.getAtWarCivilizations(iPlayer)
-
-		#Rhye - start
-		print (iPlayer, "enemyPlayersList", len(enemyPlayersList))
-		if (not enemyPlayersList):
-			return
-		#Rhye - end
-
-		# This will be the multiplier for how many mercenaries will 
-		iMorePowerfulEnemies = 0
-		
-		# Go through all of the players enemies
-		for ePlayer in enemyPlayersList:
-
-			# If the current players enemies is more powerful then increment
-			# iMorePowerfulEnemies
-			if(player.getPower() < ePlayer.getPower()):
-				iMorePowerfulEnemies = iMorePowerfulEnemies + 1
-
-                mercenaryCount = (iMorePowerfulEnemies * len(enemyPlayersList)) + self.getMorePowerfulPlayerCount(iPlayer)
-                
-                # Get the random number of mercenaries that the player will get
-                #Rhye - start bugfix		
-		#randomMercCount = gc.getGame().getMapRand().get(mercenaryCount, "Random Merc Count")
-		randomMercCount = gc.getGame().getSorenRandNum(mercenaryCount, 'Random Merc Count')
-		#Rhye - end
-		
-		# Debug code - start
-		if(g_bDebug):
-			CvUtil.pyPrint(player.getName() + " will try to get: " + str(randomMercCount) + " mercenaries out of " + str(mercenaryCount))
-		# Debug code - end
-
-		# Hire the random number of mercenaries
-		for i in range(randomMercCount):
-
-			# Get the best available mercenary
-			mercenary = self.getBestAvailableMercenary(currentGold, iPlayer)
-
-			# Return immediately if a mercenary wasn't returned
-			if(mercenary == None):
+			# Return immediately if a immigrant wasn't returned
+			if immigrant == None:
+				return
+			
+			if g_bDebug:
+				CvUtil.pyPrint("Player: " + str(iPlayer) + " thinking about iImmigrant: " + str(immigrant.objUnitInfo.getType()))
+			
+			# Return immediately if there's nowhere to spawn immigrant
+			if not immigrant.hasValidSpawnTile(iPlayer):
+				if g_bDebug:
+					CvUtil.pyPrint("No place to spawn Immigrant")
 				return
 
-			# Have the computer hire the mercenary			
-			self.hireMercenary(mercenary.getName(), iPlayer)
+			# Have the computer hire the immigrant			
+			self.hireMercenary(immigrant.getName(), iPlayer)
 
 			# Debug code - start
-			if(g_bDebug):
-				CvUtil.pyPrint(player.getName() + " current gold: " + str(currentGold) + " Hired " + mercenary.getName())
+			if g_bDebug:
+				CvUtil.pyPrint(player.getName() + " current gold: " + str(currentGold) + " Hired " + immigrant.getName())
 			# Debug code - end
-
+			
 			# deduct the hire cost from the computer players gold
-			currentGold = currentGold - mercenary.getHireCost()
-
-			#Rhye - start
-			currentGold *= g_iAIHireCostPercent
-			currentGold /= 100
-			#Rhye - end
+			(immigrationCost, goldCost) = immigrant.getHireCost(currentImmigration, bProprietaries)
+			currentImmigration -= immigrationCost
+			currentGold -= goldCost
 
 			# Set the new modified gold amount
+			player.setImmigration(currentImmigration)
 			player.setGold(currentGold)
 		
 
@@ -1204,7 +1111,7 @@ class Mercenary:
 		self.iLevel = len(promotionList)
 		self.iExperienceLevel = iExperienceLevel
 		self.iNextExperienceLevel = iNextExperienceLevel
-		self.iHireCost = self.getHireCost()
+		self.iHireCost = self.getHireCost(0, False)
 
 
 	# This method should be used for setting the instance of the Mercenary class
@@ -1225,7 +1132,7 @@ class Mercenary:
 
 		self.getLevel()
 
-		self.getHireCost()
+		self.getHireCost(0, False)
 
 		self.getOwner()
 
@@ -1379,7 +1286,9 @@ class Mercenary:
 			CyInterface().addMessage(self.iBuilder, True, 20, strMessage, "", 0, "", ColorTypes(0), -1, -1, True, True) 
 	
 		# Subtract cost to hire from player current cash
-		(iImmigrationCost, iGoldCost) = self.getHireCost(player.getImmigration())
+		civics = Civics.player(iPlayer)
+		bProprietaries = iProprietaries in civics
+		(iImmigrationCost, iGoldCost) = self.getHireCost(player.getImmigration(), bProprietaries)
 		player.setImmigration(player.getImmigration() - iImmigrationCost)
 		player.setGold(player.getGold() - iGoldCost)
 		
@@ -1420,7 +1329,7 @@ class Mercenary:
 	
 	# Returns the cost to hire the mercenary. If objUnit is non-none then the 
 	# iHireCost will be updated. Returns (iCostImmigration, iCostGold)
-	def getHireCost(self, iCurrentImmigration=0, bProprietaries=False):
+	def getHireCost(self, iCurrentImmigration, bProprietaries):
 		' iHireCost - the cost to hire the mercenary'
 		
 		modifier = 0
@@ -1450,7 +1359,7 @@ class Mercenary:
 		return (iImmigrationCost, iGoldCost)
 			
 	
-	def getHireCostString(self, iCurrentImmigration=0, bProprietaries=False):
+	def getHireCostString(self, iCurrentImmigration, bProprietaries):
 		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration, bProprietaries)
 		strHCost = ""
 		if iImmigrationCost > 0:
@@ -1692,6 +1601,7 @@ class Mercenary:
 	# MacAurther: Get the tile where hire mercenary ships appear
 	def getShipPlacementPlot(self, iPlayer):
 		iCiv = civ(iPlayer)
+		# Russia spawns in West
 		if iCiv == iRussia:
 			return gc.getMap().plot(0, dCapitals[civ(iPlayer)][1])
 		else:
@@ -1701,6 +1611,95 @@ class Mercenary:
 	def isShip(self):
 		return self.objUnitInfo.getDomainType() == 0		# DOMAIN_SEA = 0
 	
+	def getAIDesire(self, iPlayer):
+		pPlayer = gc.getPlayer(iPlayer)
+		iCiv = civ(iPlayer)
+		iUnit = self.getUnitInfoID()
+		pUnit = gc.getUnitInfo(iUnit)
+		
+		iDesire = 0
+		
+		if iUnit in lSettlers:
+			iNumCities = pPlayer.getNumCities()
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherSettlers = self.getNumUnitsByType(lSettlers, pPlayer)
+			# TODO: Find a more elegant way to do this?
+			# Get specific AI's desire to build cities
+			# Don't go crazy on Settlers, max at 2 at a time
+			return min(dNumCitiesGoal[iCiv] - iNumCities - iOtherSettlers, 2 - iOtherSettlers)
+		
+		if iUnit in lWorkers: 
+			iNumCities = pPlayer.getNumCities()
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherWorkers = self.getNumUnitsByType(lWorkers, pPlayer)
+			# Ballpark want 1 worker per city
+			return iNumCities - iOtherWorkers
+		
+		if iUnit in lMissionaries:
+			if pPlayer.getStateReligion() == -1:
+				return 0
+			iNumCities = pPlayer.getNumCities()
+			iNumConvertedCities = 0
+			for iLoopCity in range(iNumCities):
+				pCity = pPlayer.getCity(iLoopCity)
+				if pCity.isHasReligion(pPlayer.getStateReligion()):
+					iNumConvertedCities += 1
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherMissionaries = self.getNumUnitsByType(lMissionaries, pPlayer)
+			return iNumCities - iNumConvertedCities - iOtherMissionaries
+		
+		if iUnit in lTransports:
+			iNumCities = pPlayer.getNumCities()
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherTransports = self.getNumUnitsByType(lTransports, pPlayer)
+			# Want 1 Transport per city?
+			return iNumCities - iOtherTransports
+		
+		if iUnit in lGreatPeople:
+			# Always want one
+			return 1
+		
+		if iUnit in lSlaves:
+			# Always want one
+			return 1
+		
+		if iUnit in lExplorers:
+			if iCiv not in [iSpain, iPortugal, iEngland, iFrance, iNetherlands, iRussia]:
+				return 0
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherExplorers = self.getNumUnitsByType(lExplorers, pPlayer)
+			# Want 3 explorers?
+			return 3 - iOtherExplorers
+
+		if iUnit in lMilitia:
+			iNumCities = pPlayer.getNumCities()
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherMilitia = self.getNumUnitsByType(lMilitia, pPlayer)
+			# Want 1 Militia per city?
+			return iNumCities - iOtherMilitia
+		
+		if iUnit in lMainlineUnits:
+			iNumCities = pPlayer.getNumCities()
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherMainline = self.getNumUnitsByType(lMainlineUnits, pPlayer)
+			# Want 1 Mainline infantry per city?
+			return iNumCities - iOtherMainline
+		
+		if iUnit in lSpecialtyUnits:
+			iNumCities = pPlayer.getNumCities()
+			iNumUnits = pPlayer.getNumUnits()
+			iOtherSpecialty = self.getNumUnitsByType(lSpecialtyUnits, pPlayer)
+			# Want 1/3 specialty unit per city?
+			return int((iNumCities - iOtherSpecialty) / 3)
+	
+	
+	def getNumUnitsByType(self, lUnits, pPlayer):
+		iNumUnits = pPlayer.getNumUnits()
+		iOtherUnits = 0
+		for iLoopUnit in range(iNumUnits):
+			if pPlayer.getUnit(iLoopUnit).getUnitType() in lUnits:
+				iOtherUnits += 1
+		return iOtherUnits
 	
 # TO DO: Remove before initial release, but retain in dev copy to finish implementation for mercenary groups feature	
 class MercenaryGroup:

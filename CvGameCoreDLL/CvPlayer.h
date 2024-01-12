@@ -1391,10 +1391,13 @@ public:
 	bool m_bTurnPlayed;
 
 	// MacAurther
-	int getRegionPowers();
-	int getFortRange();
-	int getContactCost();
+	int getRegionPowers() const;
+	int getFortRange() const;
+	int getContactCost() const;
 	bool canResearchNativeTech(TechTypes eTech) const;
+	bool hasShipOnEdge() const;
+	void setImmigrantShip(CvUnit* pUnit);
+	CvUnit* getImmigrantShip() const;
 
 
 protected:
@@ -1582,6 +1585,8 @@ protected:
 	PlayerTypes m_eParent;
 	TeamTypes m_eTeamType;
 	TechTypes m_eFreeTechChosen; // Leoreth
+
+	CvUnit* m_pImmigrantShip; // MacAurther
 
 	int* m_aiSeaPlotYield;
 	int* m_aiYieldRateModifier;

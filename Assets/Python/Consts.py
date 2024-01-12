@@ -223,29 +223,27 @@ iBrazil : 1822,
 iVenezuela : 1831,
 iCanada : 1867,
 iCuba : 1898,
-}, 1)
+}, 0)
 
 lBirthCivs = dBirth.keys()
 
 dFall = CivDict({
-iMaya : 900,
-iTeotihuacan : 1150,
-iTiwanaku : 1200,
-iWari : 1200,
+iMaya : 1350,
+iTeotihuacan : 1400,
+iTiwanaku : 1400,
+iWari : 1400,
 iMississippi : 1350,
-iPuebloan : 1650,
+iPuebloan : 1700,
 iMuisca : 1600,
-iChimu : 1500,
-iInuit : 1600,
+iChimu : 1600,
+iInuit : 1750,
 iInca : 1600,
 iAztecs : 1600,
-iIroquois : 1750,
-iSpain : 1807,
-iPortugal : 1807,
-iFrance : 1805,
-iHawaii : 1893,
-iRussia : 1867,
-}, 2020)
+iIroquois : 1800,
+iSpain : 1850,
+iPortugal : 1850,
+iFrance : 1850,
+}, 2000)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
 dNeighbours = dictFromEdges(lBirthCivs, lNeighbours)
@@ -258,12 +256,15 @@ dResurrections = CivDict({
 
 dEnemyCivsOnSpawn = CivDict({
 iAztecs : [iMaya, iTeotihuacan],
-iInca : [iWari],
-iAmerica : [iEngland, iIndependent, iIndependent2, iNative],
+iInca : [iTiwanaku, iWari],
+iAmerica : [iEngland, iIroquois, iIndependent, iIndependent2, iNative],
+iHaiti : [iFrance],
 iArgentina : [iSpain, iIndependent, iIndependent2],
 iMexico : [iSpain, iIndependent, iIndependent2],
 iColombia : [iSpain, iIndependent, iIndependent2],
+iPeru : [iSpain, iIndependent, iIndependent2],
 iBrazil : [iIndependent, iIndependent2],
+iVenezuela : [iColombia],
 }, [])
 
 dTotalWarOnSpawn = CivDict({
@@ -272,7 +273,7 @@ iInca : [iWari],
 
 dAggressionLevel = CivDict({
 iMaya : 1,
-iTeotihuacan : 1,
+iTeotihuacan : 2,
 iTiwanaku : 1,
 iWari : 1,
 iMississippi : 1,
@@ -281,20 +282,20 @@ iMuisca : 1,
 iNorse : 1,
 iChimu : 1,
 iInuit : 1,
-iInca : 2,
-iAztecs : 2,
-iIroquois : 1,
-iSpain : 2,
+iInca : 3,
+iAztecs : 3,
+iIroquois : 2,
+iSpain : 3,
 iEngland : 2,
 iFrance : 2,
 iNetherlands : 2,
 iHawaii : 1,
 iRussia : 2,
-iAmerica : 2,
+iAmerica : 3,
 iHaiti : 1,
-iArgentina : 1,
-iMexico : 1,
-iColombia : 2,
+iArgentina : 2,
+iMexico : 2,
+iColombia : 3,
 iPeru : 1,
 iBrazil : 2,
 iVenezuela : 1,
@@ -676,41 +677,36 @@ bullet = "[ICON_BULLET]"
 event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
-
-#Mercenaries. Higher number = less likely to hire
-tHire = (
-90, # iMaya
-80, # iTeotihuacan
-90, # iTiwanaku
-70, # iWari
-90, # iMississippi
-90, # iPuebloan
-90, # iMuisca
-20, # iNorse
-80, # iChimu
-90, # iInuit
-60, # iInca
-30, # iAztecs
-40, # iIroquois
-10, # iSpain
-10, # iPortugal
-10, # iEngland
-10, # iFrance
-10, # iNetherlands
-80, # iHawaii
-10, # iRussia
-10, # iAmerica
-50, # iHaiti
-20, # iArgentina
-30, # iMexico
-30, # iColombia: 
-30, # iPeru
-10, # iBrazil
-40, # iVenezuela
-10, # iCanada
-50, # iCuba
-100,
-100,
-100,
-100,
-100) #Barbs
+# A goal number of cities for an AI to build
+dNumCitiesGoal = CivDict({
+iMaya : 3,
+iTeotihuacan : 1,
+iTiwanaku : 2,
+iWari : 3,
+iMississippi : 5,
+iPuebloan : 3,
+iMuisca : 2,
+iNorse : 4,
+iChimu : 2,
+iInuit : 8,
+iInca : 10,
+iAztecs : 5,
+iIroquois : 5,
+iSpain : 30,
+iPortugal : 20,
+iEngland : 15,
+iFrance : 10,
+iNetherlands : 5,
+iHawaii : 3,
+iRussia: 5,
+iAmerica : 30,
+iHaiti : 2,
+iArgentina : 10,
+iMexico : 10,
+iColombia : 5,
+iPeru : 5,
+iBrazil : 20,
+iVenezuela : 5,
+iCanada : 10,
+iCuba : 3,
+}, 0)

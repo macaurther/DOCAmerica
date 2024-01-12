@@ -563,6 +563,12 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	//if (pPlot->getX() == 0 && pPlot->getY() == 0)
 	//	GC.getGameINLINE().logMsg("kill in 00"); //Rhye
 
+	// MacAurther: If you are the Immigrant ship, make sure to unset the player member variable
+	if (GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == this)
+	{
+		GET_PLAYER(getOwnerINLINE()).setImmigrantShip(NULL);
+	}
+
 	static std::vector<IDInfo> oldUnits;
 	oldUnits.clear();
 	pUnitNode = pPlot->headUnitNode();

@@ -1914,6 +1914,8 @@ enum MissionAITypes		// Exposed to Python
 	MISSIONAI_PICKUP
 };
 
+#define AI_MIN_IMMIGRATION			100	// MacAurther: TODO, scale based off game speed? Test to see if this value is good?
+
 // any additions need to be reflected in GlobalTypes.xml
 enum CommandTypes					// Exposed to Python
 {
