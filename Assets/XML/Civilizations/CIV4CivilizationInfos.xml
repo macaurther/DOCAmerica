@@ -54,6 +54,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_MEETING_HALL</BuildingClassType>
 					<BuildingType>BUILDING_AMERICAN_STATE_HOUSE</BuildingType>
 				</Building>
@@ -177,6 +181,10 @@
 				<City>Tierra del Fuego</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SLAUGHTERHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_ARGENTINE_REFRIGERATION_PLANT</BuildingType>
@@ -398,6 +406,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_ESTATE</BuildingClassType>
 					<BuildingType>BUILDING_BRAZILIAN_FAZENDA</BuildingType>
 				</Building>
@@ -509,6 +521,10 @@
 				<City>Haviland Bay</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_CONSTABULARY</BuildingClassType>
 					<BuildingType>BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE</BuildingType>
@@ -686,6 +702,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_ESTATE</BuildingClassType>
 					<BuildingType>BUILDING_COLOMBIAN_HACIENDA</BuildingType>
 				</Building>
@@ -786,6 +806,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
 					<BuildingType>BUILDING_CUBAN_CHANCERY</BuildingType>
 				</Building>
@@ -875,6 +899,10 @@
 				<City>Hull</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_LUMBERMILL</BuildingClassType>
 					<BuildingType>BUILDING_ENGLISH_SAWMILL</BuildingType>
@@ -1087,6 +1115,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_LEVEE</BuildingClassType>
 					<BuildingType>BUILDING_FRENCH_SEIGNEUR</BuildingType>
 				</Building>
@@ -1200,6 +1232,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_STAR_FORT</BuildingClassType>
 					<BuildingType>BUILDING_HAITIAN_CITADELLE</BuildingType>
 				</Building>
@@ -1298,6 +1334,10 @@
 				<City>Hanalei</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SMOKEHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_HAWAIIAN_LUAU</BuildingType>
@@ -1513,6 +1553,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
 					<BuildingType>BUILDING_INUIT_IGLOO</BuildingType>
 				</Building>
@@ -1656,6 +1700,10 @@
 				<City>Onnahee</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
 					<BuildingType>BUILDING_IROQUOIS_LONGHOUSE</BuildingType>
@@ -1865,6 +1913,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_RODEO</BuildingClassType>
 					<BuildingType>BUILDING_MEXICAN_CHARREADA</BuildingType>
 				</Building>
@@ -1989,6 +2041,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
 					<BuildingType>BUILDING_MISSISSIPPI_PLATFORM_MOUND</BuildingType>
 				</Building>
@@ -2078,6 +2134,10 @@
 				<City>Cucaita</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_STONEWORKS</BuildingClassType>
 					<BuildingType>BUILDING_MUISCA_GOLDSMITH</BuildingType>
@@ -2226,6 +2286,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
 					<BuildingType>BUILDING_DUTCH_TRADING_FORT</BuildingType>
 				</Building>
@@ -2373,6 +2437,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_NORSE_THINGVELLIR</BuildingType>
 				</Building>
@@ -2468,6 +2536,10 @@
 				<City>Medellin</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TEXTILE_MILL</BuildingClassType>
 					<BuildingType>BUILDING_PERUVIAN_WOOL_MILL</BuildingType>
@@ -2580,6 +2652,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
 					<BuildingType>BUILDING_PORTUGUESE_FEITORIA</BuildingType>
 				</Building>
@@ -2675,6 +2751,10 @@
 				<City>Mogollon</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
 					<BuildingType>BUILDING_PUEBLOAN_KIVA</BuildingType>
@@ -2807,6 +2887,10 @@
 			</Cities>
 			<Buildings>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
 					<BuildingType>BUILDING_RUSSIAN_HUNTING_POST</BuildingType>
 				</Building>
@@ -2908,6 +2992,10 @@
 				<City>Las Palmas</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_CATHOLIC_MONASTERY</BuildingClassType>
 					<BuildingType>BUILDING_SPANISH_MISSION</BuildingType>
@@ -3210,6 +3298,10 @@
 				<City>Medellin</City>
 			</Cities>
 			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
+				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_STEEL_MILL</BuildingClassType>
 					<BuildingType>BUILDING_VENEZUELAN_REFINERY</BuildingType>

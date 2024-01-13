@@ -363,6 +363,13 @@ def giveColonists(iPlayer):
 				# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
 				tPlot = dColonistSpawns[iCiv][iColonistIndex][1][1]
 			
+			# European starter units spawn on edge of map at Capital's Y value (Not Using because AI can't handle it on spawn)
+			'''tPlotX = iWorldX - 1
+			if iCiv == iRussia:
+				tPlotX = 0
+			tPlotY = dCapitals[iCiv][1]
+			tPlot = (tPlotX, tPlotY)'''
+			
 			for iRole in dColonistSpawns[iCiv][iColonistIndex][2]:
 				units = createRoleUnit(iPlayer, tPlot, iRole, 1)
 				#units.promotion(infos.type("PROMOTION_MERCENARY"))

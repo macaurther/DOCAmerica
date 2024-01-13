@@ -28,6 +28,42 @@
 			<YieldChanges>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
+				<iYield>8</iYield>
+			</YieldChanges>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</CommerceChanges>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Type>BUILDING_CHIEFTANS_HUT</Type>
+			<Description>TXT_KEY_BUILDING_CHIEFTANS_HUT</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PALACE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_PALACE</ArtDefineTag>
+			<bCapital>1</bCapital>
+			<bGovernmentCenter>1</bGovernmentCenter>
+			<bNeverCapture>1</bNeverCapture>
+			<bNukeImmune>1</bNukeImmune>
+			<iCost>40</iCost>
+			<iHurryCostModifier>50</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iCitiesPrereq>4</iCitiesPrereq>
+			<iHappiness>1</iHappiness>
+			<fVisibilityPriority>10000.0</fVisibilityPriority>
+			<YieldChanges>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
 				<iYield>4</iYield>
 			</YieldChanges>
 			<CommerceChanges>
@@ -40,6 +76,79 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>1</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Type>BUILDING_GOVERNORS_MANSION</Type>
+			<Description>TXT_KEY_BUILDING_GOVERNORS_MANSION</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PALACE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_PALACE</ArtDefineTag>
+			<bCapital>1</bCapital>
+			<bGovernmentCenter>1</bGovernmentCenter>
+			<bNeverCapture>1</bNeverCapture>
+			<bNukeImmune>1</bNukeImmune>
+			<iCost>160</iCost>
+			<iHurryCostModifier>50</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iCitiesPrereq>4</iCitiesPrereq>
+			<iHappiness>1</iHappiness>
+			<fVisibilityPriority>10000.0</fVisibilityPriority>
+			<YieldChanges>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>16</iYield>
+			</YieldChanges>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+				<iCommerce>4</iCommerce>
+			</CommerceChanges>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Type>BUILDING_CAPITOL</Type>
+			<Description>TXT_KEY_BUILDING_CAPITOL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PALACE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PALACE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_PALACE</ArtDefineTag>
+			<bCapital>1</bCapital>
+			<bGovernmentCenter>1</bGovernmentCenter>
+			<bNeverCapture>1</bNeverCapture>
+			<bNukeImmune>1</bNukeImmune>
+			<iCost>160</iCost>
+			<iHurryCostModifier>50</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iCitiesPrereq>4</iCitiesPrereq>
+			<iHappiness>1</iHappiness>
+			<fVisibilityPriority>10000.0</fVisibilityPriority>
+			<YieldChanges>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>8</iYield>
+			</YieldChanges>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</CommerceChanges>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 		</BuildingInfo>
 		<BuildingInfo>

@@ -3126,6 +3126,30 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], increases wealth in cities with access to power and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHIEFTANS_HUT</Tag>
+		<English>Chieftan's Hut</English>
+		<French>Chieftan's Hut</French>
+		<German>Chieftan's Hut</German>
+		<Italian>Chieftan's Hut</Italian>
+		<Spanish>Chieftan's Hut</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOVERNORS_MANSION</Tag>
+		<English>Governor's Mansion</English>
+		<French>Governor's Mansion</French>
+		<German>Governor's Mansion</German>
+		<Italian>Governor's Mansion</Italian>
+		<Spanish>Governor's Mansion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPITOL</Tag>
+		<English>Capitol</English>
+		<French>Capitol</French>
+		<German>Capitol</German>
+		<Italian>Capitol</Italian>
+		<Spanish>Capitol</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English></English>
 		<French></French>

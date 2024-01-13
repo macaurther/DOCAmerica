@@ -15,8 +15,33 @@ iThreshold = 100
 iMinValue = 30
 
 
-lConquests = []
+iSpainAztecsYear = 1519
+tSpainAztecsTL = (11, 63)
+tSpainAztecsBR = (16, 69)
 
+iSpainIncaYear = 1532
+tSpainIncaTL = (20, 24)
+tSpainIncaBR = (28, 33)
+
+# following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
+tConquestSpainAztecs = (0, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 3, iSpainAztecsYear, 10)
+tConquestSpainInca = (1, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 4, iSpainIncaYear, 10)
+
+iEnglandNetherlandsYear = 1664
+tEnglandNetherlandsTL = (39, 78)
+tEnglandNetherlandsBR = (43, 86)
+
+tConquestEnglandNetherlands = (2, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 1, iEnglandNetherlandsYear, 10)
+
+
+iNetherlandsNorseYear = 1655
+tNetherlandsNorseTL = (39, 78)
+tNetherlandsNorseBR = (41, 82)
+
+tConquestNetherlandsNorse = (3, iEngland, iNetherlands, tNetherlandsNorseTL, tNetherlandsNorseBR, 1, iNetherlandsNorseYear, 10)
+
+
+lConquests = [tConquestSpainAztecs, tConquestSpainInca, tConquestEnglandNetherlands, tConquestNetherlandsNorse]
 
 @handler("GameStart")
 def setup():
