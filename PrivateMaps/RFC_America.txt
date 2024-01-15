@@ -10614,7 +10614,7 @@ EndPlot
 BeginPlot
 	x=16,y=60
 	BonusType=BONUS_OIL
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -17212,7 +17212,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 	TeamReveal=2,
 EndPlot
 BeginPlot
@@ -28615,6 +28615,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=87
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

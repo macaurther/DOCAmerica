@@ -241,8 +241,8 @@
 			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
-			<iMovement>2</iMovement>
-			<iSeeThrough>1</iSeeThrough>
+			<iMovement>1</iMovement>
+			<iSeeThrough>0</iSeeThrough>
 			<iHealthPercent>0</iHealthPercent>
 			<iDefense>0</iDefense>
 			<iCultureCost>-15</iCultureCost>

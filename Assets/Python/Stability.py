@@ -1109,6 +1109,7 @@ def getCivicStability(iPlayer, civics=None):
         if iAgrarianism in civics: iStability -= 2
 	
 	if iIndustrialism in civics:
+		if iHarmony in civics: iStability -= 4
 		if iConsumerism in civics: iStability += 2
 		if iFreeEnterprise in civics: iStability += 4
 		if iAgrarianism in civics: iStability -= 2

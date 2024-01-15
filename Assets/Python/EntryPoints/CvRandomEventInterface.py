@@ -2683,64 +2683,6 @@ def canApplyMasterBlacksmithDone3(argsList):
 		
 	return true
 
-######## NATIONAL SPORTS LEAGUE ###########
-
-def canTriggerSportsLeague(argsList):
-	kTriggeredData = argsList[0]
-	
-	if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_ONE_CITY_CHALLENGE) and gc.getPlayer(kTriggeredData.ePlayer).isHuman():
-		return false
-
-	return true
-def getHelpSportsLeague1(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-		
-	#Rhye - start
-	#iRequired = gc.getWorldInfo(gc.getMap().getWorldSize()).getDefaultPlayers()
-	iRequired = 7
-	#Rhye - end
-
-	iBuilding = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_STATUE_OF_ZEUS')
-	
-	szHelp = localText.getText("TXT_KEY_EVENT_SPORTS_LEAGUE_HELP_1", (iRequired, gc.getBuildingInfo(iBuilding).getTextKey()))
-
-	return szHelp
-
-def canTriggerSportsLeagueDone(argsList):
-	kTriggeredData = argsList[0]
-	trigger = gc.getEventTriggerInfo(kTriggeredData.eTrigger)
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-		
-	iCastle = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_ARENA')
-
-	#Rhye - start
-	#iBuildingsRequired = gc.getWorldInfo(gc.getMap().getWorldSize()).getDefaultPlayers()
-	iBuildingsRequired = 7
-	#Rhye - end
-	
-	if iBuildingsRequired > player.getBuildingClassCount(iCastle):
-		return false
-		
-	return true
-
-def canApplySportsLeagueDone3(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-	
-	iZeus = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_STATUE_OF_ZEUS')	# MacAurther TODO
-
-	(loopCity, iter) = player.firstCity(false)
-	while(loopCity):
-		if (loopCity.isHasBuilding(iZeus)):	# MacAurther TODO
-			return true
-				
-		(loopCity, iter) = player.nextCity(iter, false)
-			
-	return false
-
 ######## ESTEEMEED_PLAYWRIGHT ###########
 
 def canTriggerEsteemedPlaywright(argsList):

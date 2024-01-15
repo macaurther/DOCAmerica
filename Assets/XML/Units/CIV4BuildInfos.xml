@@ -11,7 +11,6 @@
 			<Description>TXT_KEY_BUILD_ROAD</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>400</iTime>
-			<iCost>0</iCost>
 			<RouteType>ROUTE_ROAD</RouteType>
 			<EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
 			<HotKey>KB_R</HotKey>
@@ -56,7 +55,6 @@
 			<Description>TXT_KEY_BUILD_FARM</Description>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
@@ -115,7 +113,6 @@
 			<Description>TXT_KEY_BUILD_PADDY_FIELD</Description>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_PADDY_FIELD</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
@@ -128,7 +125,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -174,7 +171,6 @@
 			<Description>TXT_KEY_BUILD_FISHING_BOATS</Description>
 			<PrereqTech>TECH_SEAFARING</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_FISHING_BOATS</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -190,7 +186,6 @@
 			<Description>TXT_KEY_BUILD_OCEAN_FISHERY</Description>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_OCEAN_FISHERY</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -206,7 +201,6 @@
 			<Description>TXT_KEY_BUILD_WHALING_BOATS</Description>
 			<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			<iTime>0</iTime>
-			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_WHALING_BOATS</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -222,7 +216,6 @@
 			<Description>TXT_KEY_BUILD_MINE</Description>
 			<PrereqTech>TECH_MINING</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
@@ -235,7 +228,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -458,7 +451,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -474,8 +467,8 @@
 					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
 					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>200</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_SWAMP</FeatureType>
@@ -536,7 +529,6 @@
 			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iTime>600</iTime>
-			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -549,7 +541,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -588,7 +580,6 @@
 			<Description>TXT_KEY_BUILD_PASTURE</Description>
 			<PrereqTech>TECH_PASTORALISM</PrereqTech>
 			<iTime>500</iTime>
-			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -640,7 +631,6 @@
 			<Description>TXT_KEY_BUILD_CAMP</Description>
 			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iTime>500</iTime>
-			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<HotKey>KB_H</HotKey>
@@ -739,7 +729,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -778,7 +768,6 @@
 			<Description>TXT_KEY_BUILD_COTTAGE</Description>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<iTime>700</iTime>
-			<iCost>0</iCost>
 			<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
@@ -791,7 +780,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
@@ -842,7 +831,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_SMELTING</PrereqTech>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
