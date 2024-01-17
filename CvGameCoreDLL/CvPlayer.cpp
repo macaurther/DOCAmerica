@@ -25611,7 +25611,6 @@ int CvPlayer::getRegionPowers() const
 	case ARGENTINA:
 	case BRAZIL:
 	case COLOMBIA:
-	case CUBA:
 	case HAITI:
 	case MEXICO:
 	case PERU:
@@ -25621,6 +25620,7 @@ int CvPlayer::getRegionPowers() const
 	case AZTECS:
 	case MAYA:
 	case TEOTIHUACAN:
+	case ZAPOTEC:
 		return RP_MESOAMERICA;
 		break;
 	case HAWAII:

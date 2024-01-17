@@ -5946,18 +5946,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=65
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=9,y=66
+	BonusType=BONUS_CORN
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=9,y=67
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -6601,6 +6602,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=67
+	BonusType=BONUS_COPPER
 	RiverNSDirection=0
 	isWOfRiver
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
@@ -7933,12 +7935,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=67
+	BonusType=BONUS_CORN
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=12,y=68
+	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 	TeamReveal=1,
@@ -7947,7 +7951,6 @@ BeginPlot
 	x=12,y=69
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_SILVER
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -8610,7 +8613,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=68
-	BonusType=BONUS_CORN
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -9260,7 +9262,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=63
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=1,
@@ -10613,8 +10615,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=60
-	BonusType=BONUS_OIL
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -11295,7 +11296,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=59
-	BonusType=BONUS_SALT
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -14424,12 +14425,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=20
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=21
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -14439,7 +14440,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=23
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_DESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -15101,12 +15102,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=19
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=23,y=20
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SALTLAKE
 	PlotType=3
 EndPlot
 BeginPlot
@@ -15122,7 +15123,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=23
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_DESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -15813,35 +15814,33 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=19
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=24,y=20
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=21
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=24,y=22
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=24,y=23
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=24,y=24
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=24,y=25
@@ -16510,48 +16509,47 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=20
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=25,y=21
-	TerrainType=TERRAIN_MOORLAND
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=22
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SALTLAKE
 	PlotType=3
 EndPlot
 BeginPlot
 	x=25,y=23
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SALTLAKE
 	PlotType=3
 EndPlot
 BeginPlot
 	x=25,y=24
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=25,y=25
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=25,y=26
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=25,y=27
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=25,y=28
@@ -17189,43 +17187,39 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=22
-	isNOfRiver
-	RiverWEDirection=3
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=23
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=24
-	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
-	TeamReveal=2,
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=25
+	RiverNSDirection=0
 	isNOfRiver
-	RiverWEDirection=1
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=26,y=26
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=2
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=26,y=27
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=26,y=28
@@ -17862,49 +17856,40 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=21
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=27,y=22
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=23
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=27,y=24
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
-	TeamReveal=2,
+	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=25
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=27,y=26
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=27,y=27
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=27,y=28
@@ -18544,55 +18529,40 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=21
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=28,y=22
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=28,y=23
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	TerrainType=TERRAIN_MOORLAND
+	BonusType=BONUS_SILVER
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=24
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
-	TeamReveal=2,
+	PlotType=0
 EndPlot
 BeginPlot
 	x=28,y=25
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=28,y=26
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=28,y=27
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=28,y=28
@@ -19241,17 +19211,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=22
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=29,y=23
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=29,y=24
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -19955,7 +19925,6 @@ BeginPlot
 	x=30,y=27
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_SILVER
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -23191,6 +23160,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=89
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -23891,7 +23861,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=90
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
@@ -25238,7 +25208,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=85
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
@@ -38450,6 +38420,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=117
+	BonusType=BONUS_ALUMINUM
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot

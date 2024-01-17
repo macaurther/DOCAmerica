@@ -147,6 +147,7 @@ dStartingLeaders = [
 	iNative : iSittingBull,
 	iMaya : iPacal,
 	iTeotihuacan : iAtlatlCauac,
+	iZapotec : iCosijoeza,
 	iTiwanaku : iMalkuHuyustus,
 	iWari : iWariCapac,
 	iMississippi : iRedHorn,
@@ -156,6 +157,7 @@ dStartingLeaders = [
 	iChimu : iTacaynamo,
 	iInuit : iAua,
 	iInca : iHuaynaCapac,
+	iPurepecha : iTariacuri,
 	iAztecs : iMontezuma,
 	iIroquois : iHiawatha,
 	iSpain : iIsabella,
@@ -174,7 +176,6 @@ dStartingLeaders = [
 	iBrazil : iPedro,
 	iVenezuela : iChavez,
 	iCanada : iMacDonald,
-	iCuba : iCastro,
 },
 # 600 AD
 {

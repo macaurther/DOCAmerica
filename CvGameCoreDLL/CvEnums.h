@@ -1193,11 +1193,10 @@ enum CivilizationTypes		// Exposed to Python
 	CANADA,
 	CHIMU,
 	COLOMBIA,
-	CUBA,
 	ENGLAND,
 	FRANCE,
-	
 	HAITI,
+	
 	HAWAII,
 	INCA,
 	INUIT,
@@ -1207,21 +1206,24 @@ enum CivilizationTypes		// Exposed to Python
 	MISSISSIPPI,
 	MUISCA,
 	NETHERLANDS,
-	
 	NORSE,
+	
 	PERU,
 	PORTUGAL,
 	PUEBLOAN,
+	PUREPECHA,
 	RUSSIA,
 	SPAIN,
 	TEOTIHUACAN,
 	TIWANAKU,
 	VENEZUELA,
 	WARI,
+
+	ZAPOTEC,
 	
 	INDEPENDENT,
 	INDEPENDENT2,
-	INDEPENDENT3,
+	INDEPENDENT3,	// Player for Holy City AND NOTHING ELSE
 	NATIVE,
 	MINOR_CIV,
 	BARBARIAN_CIV,
@@ -1268,9 +1270,6 @@ enum LeaderHeadTypes			// Exposed to Python
 
 	// Colombia
 	BOLIVAR,
-
-	// Cuba
-	CASTRO,
 
 	// England
 	ELIZABETH,
@@ -1352,7 +1351,12 @@ enum LeaderHeadTypes			// Exposed to Python
 	
 	// Wari
 	WARI_CAPAC,
-	
+
+	// Zapotec
+	COSIJOEZA,
+
+	// Purepecha
+	TARIACURI,
 
 	NUM_LEADERHEADS
 };

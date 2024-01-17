@@ -36,7 +36,6 @@ lDynamicReligionCivs = [
 	iBrazil,
 	iCanada,
 	iColombia,
-	iCuba,
 	iHaiti,
 	iMexico,
 	iPeru,

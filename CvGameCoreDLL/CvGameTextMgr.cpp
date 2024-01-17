@@ -17150,6 +17150,14 @@ void CvGameTextMgr::setProductionHelp(CvWStringBuffer &szBuffer, CvCity& city)
 				}
 			}
 		}
+
+		// MacAurther: Purepecha UP
+		if (GET_PLAYER(city.getOwnerINLINE()).getCivilizationType() == PUREPECHA)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_PROD_PUREPECHA", 50));
+			szBuffer.append(NEWLINE);
+			iBaseModifier += 50;
+		}
 	}
 
 	BuildingTypes eBuilding = city.getProductionBuilding();
@@ -18403,6 +18411,14 @@ void CvGameTextMgr::parseGreatPeopleHelp(CvWStringBuffer &szBuffer, CvCity& city
 				iModifier += iTraitMod;
 			}
 		}
+	}
+
+	// MacAurther: Zapotec UP
+	if (city.getCivilizationType() == ZAPOTEC)
+	{
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_GREATPEOPLE_UNIQUE_POWER", 50));
+		szBuffer.append(NEWLINE);
+		iModifier += 50;
 	}
 
 	if (owner.isGoldenAge())

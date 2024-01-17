@@ -189,7 +189,7 @@
 		<French>Start with five free Great People and extra [ICON_HAPPY] from settled Great People</French>
 		<German>Start with five free Great People and extra [ICON_HAPPY] from settled Great People</German>
 		<Italian>Start with five free Great People and extra [ICON_HAPPY] from settled Great People</Italian>
-		<Spanish>AStart with five free Great People and extra [ICON_HAPPY] from settled Great People</Spanish>
+		<Spanish>Start with five free Great People and extra [ICON_HAPPY] from settled Great People</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ARG_TITLE</Tag>
@@ -662,5 +662,37 @@
 		<German>+1 [ICON_FOOD] on tiles adjacent to Mountains</German>
 		<Italian>+1 [ICON_FOOD] on tiles adjacent to Mountains</Italian>
 		<Spanish>+1 [ICON_FOOD] on tiles adjacent to MountainS</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ZAP_TITLE</Tag>
+		<English>The Power of Cloud People:</English>
+		<French>The Power of Cloud People:</French>
+		<German>The Power of Cloud People:</German>
+		<Italian>The Power of Cloud People:</Italian>
+		<Spanish>The Power of Cloud People:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_ZAP</Tag>
+		<English>+50% Great People birth rate</English>
+		<French>+50% Great People birth rate</French>
+		<German>+50% Great People birth rate</German>
+		<Italian>+50% Great People birth rate</Italian>
+		<Spanish>+50% Great People birth rate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PUR_TITLE</Tag>
+		<English>The Power of Metallurgy:</English>
+		<French>The Power of Metallurgy:</French>
+		<German>The Power of Metallurgy:</German>
+		<Italian>The Power of Metallurgy:</Italian>
+		<Spanish>The Power of Metallurgy:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_PUR</Tag>
+		<English>+50% [ICON_PRODUCTION] when building units</English>
+		<French>+50% [ICON_PRODUCTION] when building units</French>
+		<German>+50% [ICON_PRODUCTION] when building units</German>
+		<Italian>+50% [ICON_PRODUCTION] when building units</Italian>
+		<Spanish>+50% [ICON_PRODUCTION] when building units</Spanish>
 	</TEXT>
 </Civ4GameText>

@@ -17,6 +17,8 @@ LEADER_DATES = {
 	iPacal: 0,
 	# Teotihuacan
 	iAtlatlCauac: 0,
+	# Zapotec
+	iCosijoeza: 0,
 	# Tiwanaku
 	iMalkuHuyustus: 110,
 	# Wari
@@ -38,6 +40,8 @@ LEADER_DATES = {
 	# Inca
 	iHuaynaCapac: 1400,
 	iPachacuti: 1500,
+	# Purepecha
+	iTariacuri: 1150,
 	# Aztecs
 	iMontezuma: 1440,
 	# Iroquois
@@ -99,8 +103,6 @@ LEADER_DATES = {
 	# Canada
 	iMacDonald: 1870,
 	iTrudeau: 1970,
-	# Cuba
-	iCastro: 1950,
 }
 
 RELIGION_FOUNDING_DATES = {

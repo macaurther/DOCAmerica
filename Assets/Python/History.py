@@ -158,19 +158,23 @@ def conquistadors(iTeamX, iHasMetTeamY):
 				if iNewWorldCiv == iMaya:
 					iContactImmigration = 200
 				elif iNewWorldCiv == iTeotihuacan:
-					iContactImmigration = 150
+					iContactImmigration = 100
+				elif iNewWorldCiv == iZapotec:
+					iContactImmigration = 100
 				elif iNewWorldCiv == iTiwanaku:
-					iContactImmigration = 150
+					iContactImmigration = 100
 				elif iNewWorldCiv == iWari:
-					iContactImmigration = 150
+					iContactImmigration = 100
 				elif iNewWorldCiv == iMuisca:
-					iContactImmigration = 500
+					iContactImmigration = 300
 				elif iNewWorldCiv == iChimu:
-					iContactImmigration = 150
+					iContactImmigration = 100
+				elif iNewWorldCiv == iPurepecha:
+					iContactImmigration = 200
 				elif iNewWorldCiv == iAztecs:
-					iContactImmigration = 500
+					iContactImmigration = 300
 				elif iNewWorldCiv == iInca:
-					iContactImmigration = 500
+					iContactImmigration = 300
 				else:
 					return	# Some natives don't generate immigration
 					

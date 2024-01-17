@@ -479,6 +479,36 @@
 						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_CARDENAS_1</Text>
 					</DiplomacyText>
 				</Response>
+				<Responses>
+				<Response>
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_COSIJOEZA</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes/>
+					<DiplomacyPowers/>
+					<DiplomacyText>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_COSIJOEZA_1</Text>
+					</DiplomacyText>
+				</Response>
+				<Response>
+					<Civilizations/>
+					<Leaders>
+						<Leader>
+							<LeaderType>LEADER_TARIACURI</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+					</Leaders>
+					<Attitudes/>
+					<DiplomacyPowers/>
+					<DiplomacyText>
+						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_TARIACURI_1</Text>
+					</DiplomacyText>
+				</Response>
+			</Responses>
 				<Response>
 					<Civilizations/>
 					<Leaders>

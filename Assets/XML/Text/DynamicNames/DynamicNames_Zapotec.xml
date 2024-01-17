@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Zapotec -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ZAPOTEC_DESC</Tag>
+		<English>The Zapotecos</English>
+		<French>The Zapotecos</French>
+		<German>The Zapotecos</German>
+		<Italian>The Zapotecos</Italian>
+		<Spanish>The Zapotecos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ZAPOTEC_SHORT_DESC</Tag>
+		<English>Zapotec</English>
+		<French>Zapotec</French>
+		<German>Zapotec</German>
+		<Italian>Zapotec</Italian>
+		<Spanish>Zapotec</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ZAPOTEC_ADJECTIVE</Tag>
+		<English>Zapotec</English>
+		<French>
+			<Text>teotihuacano:teotihuacana:teotihuacanos:teotihuacanas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Zapotec</German>
+		<Italian>Zapotec</Italian>
+		<Spanish>Zapotec</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ZAPOTEC_PEOPLES</Tag>
+		<English>Oaxaca Valley Peoples</English>
+		<French>Oaxaca Valley Peoples</French>
+		<German>Oaxaca Valley Peoples</German>
+		<Italian>Oaxaca Valley Peoples</Italian>
+		<Spanish>Oaxaca Valley Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ZAPOTEC_DEFAULT</Tag>
+		<English>Altepetl of %s1</English>
+		<French>Altepetl of %s1</French>
+		<German>Altepetl of %s1</German>
+		<Italian>Altepetl of %s1</Italian>
+		<Spanish>Altepetl of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ZAPOTEC_ALTEPETL</Tag>
+		<English>%s2 Altepemeh</English>
+		<French>%s2 Altepemeh</French>
+		<German>%s2 Altepemeh</German>
+		<Italian>%s2 Altepemeh</Italian>
+		<Spanish>%s2 Altepemeh</Spanish>
+	</TEXT>
+</Civ4GameText>

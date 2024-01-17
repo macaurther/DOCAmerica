@@ -104,7 +104,7 @@ def captureSlaves(winningUnit, losingUnit):
 		return
 
 	# Mesoamerica RP
-	if civ(winningUnit) in (iAztecs, iMaya, iTeotihuacan):
+	if civ(winningUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
 		captureUnit(losingUnit, winningUnit, iNativeSlave, 50)
 		return
 	

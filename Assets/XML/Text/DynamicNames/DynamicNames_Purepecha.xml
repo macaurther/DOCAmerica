@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Purepecha -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUREPECHA_DESC</Tag>
+		<English>The Purepechans</English>
+		<French>The Purepechans</French>
+		<German>The Purepechans</German>
+		<Italian>The Purepechans</Italian>
+		<Spanish>The Purepechans</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUREPECHA_SHORT_DESC</Tag>
+		<English>Purepecha</English>
+		<French>Purepecha</French>
+		<German>Purepecha</German>
+		<Italian>Purepecha</Italian>
+		<Spanish>Purepecha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUREPECHA_ADJECTIVE</Tag>
+		<English>Purepecha</English>
+		<French>Purepecha</French>
+		<German>Purepecha</German>
+		<Italian>Purepecha</Italian>
+		<Spanish>Purepecha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUREPECHA_PEOPLES</Tag>
+		<English>Irechikwa Peoples</English>
+		<French>Irechikwa Peoples</French>
+		<German>Irechikwa Peoples</German>
+		<Italian>Irechikwa Peoples</Italian>
+		<Spanish>Irechikwa Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUREPECHA_DEFAULT</Tag>
+		<English>Altepetl of %s1</English>
+		<French>Altepetl of %s1</French>
+		<German>Altepetl of %s1</German>
+		<Italian>Altepetl of %s1</Italian>
+		<Spanish>Altepetl of %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PUREPECHA_ALTEPETL</Tag>
+		<English>%s2 Altepemeh</English>
+		<French>%s2 Altepemeh</French>
+		<German>%s2 Altepemeh</German>
+		<Italian>%s2 Altepemeh</Italian>
+		<Spanish>%s2 Altepemeh</Spanish>
+	</TEXT>
+</Civ4GameText>

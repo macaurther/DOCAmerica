@@ -2404,6 +2404,10 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
+	case ZAPOTEC:
+		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
+		break;
 	case TIWANAKU:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
@@ -2549,9 +2553,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		break;
 	case CANADA:
 		aiUnitAIVal[UNITAI_SETTLE] *= 5;
-		break;
-	case CUBA:
-		aiUnitAIVal[UNITAI_SETTLE] /= 2;
 		break;
 	case NATIVE:
 		aiUnitAIVal[UNITAI_CITY_DEFENSE] /= 5;

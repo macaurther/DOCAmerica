@@ -3078,22 +3078,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]&#222;ingvellir[COLOR_REVERT], the Norse replacement for the [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT], is cheaper and available much earlier.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CUBAN_CHANCERY</Tag>
-		<English>Chancery</English>
-		<French>Chancery</French>
-		<German>Chancery</German>
-		<Italian>Chancery</Italian>
-		<Spanish>Chancery</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CUBAN_CHANCERY_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Chancery[COLOR_REVERT], the Cuban replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], builds [COLOR_UNIT_TEXT]Military Units[COLOR_REVERT] much faster.</English>
-		<French>The [COLOR_BUILDING_TEXT]Chancery[COLOR_REVERT], the Cuban replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], builds [COLOR_UNIT_TEXT]Military Units[COLOR_REVERT] much faster.</French>
-		<German>The [COLOR_BUILDING_TEXT]Chancery[COLOR_REVERT], the Cuban replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], builds [COLOR_UNIT_TEXT]Military Units[COLOR_REVERT] much faster.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Chancery[COLOR_REVERT], the Cuban replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], builds [COLOR_UNIT_TEXT]Military Units[COLOR_REVERT] much faster.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Chancery[COLOR_REVERT], the Cuban replacement for the [COLOR_BUILDING_TEXT]Customs House[COLOR_REVERT], builds [COLOR_UNIT_TEXT]Military Units[COLOR_REVERT] much faster.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PERUVIAN_WOOL_MILL</Tag>
 		<English>Wool Mill</English>
 		<French>Wool Mill</French>
@@ -3148,6 +3132,54 @@
 		<German>Capitol</German>
 		<Italian>Capitol</Italian>
 		<Spanish>Capitol</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZAPOTEC_TOMB</Tag>
+		<English>Royal Tomb</English>
+		<French>Royal Tomb</French>
+		<German>Royal Tomb</German>
+		<Italian>Royal Tomb</Italian>
+		<Spanish>Royal Tomb</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZAPOTEC_TOMB_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Royal Tomb[COLOR_REVERT], the Zapotec replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], reduces War Weariness.</English>
+		<French>The [COLOR_BUILDING_TEXT]Royal Tomb[COLOR_REVERT], the Zapotec replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], reduces War Weariness.</French>
+		<German>The [COLOR_BUILDING_TEXT]Royal Tomb[COLOR_REVERT], the Zapotec replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], reduces War Weariness.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Royal Tomb[COLOR_REVERT], the Zapotec replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], reduces War Weariness.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Royal Tomb[COLOR_REVERT], the Zapotec replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], reduces War Weariness.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ZAPOTEC_TOMB_PEDIA</Tag>
+		<English>[TAB]The Zapotecs buried many of their rulers in temple tombs, a practice which was shared with the Mayans and Mixtecs. The power a ruler was said to have after death brought fear into the hearts of the living and increased the power of the ruling class.</English>
+		<French>[TAB]The Zapotecs buried many of their rulers in temple tombs, a practice which was shared with the Mayans and Mixtecs. The power a ruler was said to have after death brought fear into the hearts of the living and increased the power of the ruling class.</French>
+		<German>[TAB]The Zapotecs buried many of their rulers in temple tombs, a practice which was shared with the Mayans and Mixtecs. The power a ruler was said to have after death brought fear into the hearts of the living and increased the power of the ruling class.</German>
+		<Italian>[TAB]The Zapotecs buried many of their rulers in temple tombs, a practice which was shared with the Mayans and Mixtecs. The power a ruler was said to have after death brought fear into the hearts of the living and increased the power of the ruling class.</Italian>
+		<Spanish>[TAB]The Zapotecs buried many of their rulers in temple tombs, a practice which was shared with the Mayans and Mixtecs. The power a ruler was said to have after death brought fear into the hearts of the living and increased the power of the ruling class.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUREPECHA_YACATAS</Tag>
+		<English>Yac&#225;tas</English>
+		<French>Yac&#225;tas</French>
+		<German>Yac&#225;tas</German>
+		<Italian>Yac&#225;tas</Italian>
+		<Spanish>Yac&#225;tas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUREPECHA_YACATAS_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Yac&#225;tas[COLOR_REVERT], the Purepecha replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], increases city defense.</English>
+		<French>The [COLOR_BUILDING_TEXT]Yac&#225;tas[COLOR_REVERT], the Purepecha replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], increases city defense.</French>
+		<German>The [COLOR_BUILDING_TEXT]Yac&#225;tas[COLOR_REVERT], the Purepecha replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], increases city defense.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Yac&#225;tas[COLOR_REVERT], the Purepecha replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], increases city defense.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Yac&#225;tas[COLOR_REVERT], the Purepecha replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], increases city defense.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUREPECHA_YACATAS_PEDIA</Tag>
+		<English>[TAB]In their capital of Tzintzuntzan, the Purepechans build five distinct rounded pyramids called Yac&#225;tas. On each of the Yac&#225;tas was a temple made of wood, in which the most important rites of the Purepecha people and government took place, including burials.</English>
+		<French>[TAB]In their capital of Tzintzuntzan, the Purepechans build five distinct rounded pyramids called Yac&#225;tas. On each of the Yac&#225;tas was a temple made of wood, in which the most important rites of the Purepecha people and government took place, including burials.</French>
+		<German>[TAB]In their capital of Tzintzuntzan, the Purepechans build five distinct rounded pyramids called Yac&#225;tas. On each of the Yac&#225;tas was a temple made of wood, in which the most important rites of the Purepecha people and government took place, including burials.</German>
+		<Italian>[TAB]In their capital of Tzintzuntzan, the Purepechans build five distinct rounded pyramids called Yac&#225;tas. On each of the Yac&#225;tas was a temple made of wood, in which the most important rites of the Purepecha people and government took place, including burials.</Italian>
+		<Spanish>[TAB]In their capital of Tzintzuntzan, the Purepechans build five distinct rounded pyramids called Yac&#225;tas. On each of the Yac&#225;tas was a temple made of wood, in which the most important rites of the Purepecha people and government took place, including burials.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

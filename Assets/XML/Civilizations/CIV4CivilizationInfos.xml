@@ -271,7 +271,6 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Teotihuacan</City>
 				<City>Tlatelolco</City>
 				<City>Texcoco</City>
 				<City>Calixtlahuaca</City>
@@ -749,96 +748,6 @@
 			<Leaders>
 				<Leader>
 					<LeaderName>LEADER_BOLIVAR</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
-			<DerivativeCiv>CIVILIZATION_SPAIN</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_SPAIN_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_SPAIN_ORDER</CivilizationActionSound>
-		</CivilizationInfo>
-		<CivilizationInfo>
-			<Type>CIVILIZATION_CUBA</Type>
-			<Description>TXT_KEY_CIV_CUBA_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_CUBA_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_CUBA_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_CUBA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_CUBA</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_CUBA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
-			<Identifier>CUB</Identifier>
-			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
-			<StartingYear>1898</StartingYear>
-			<LoadingTimes>
-				<LoadingTime>50</LoadingTime>
-				<LoadingTime>35</LoadingTime>
-				<LoadingTime>8</LoadingTime>
-			</LoadingTimes>
-			<Rating>
-				<Trade>2</Trade>
-				<Production>4</Production>
-				<Culture>3</Culture>
-				<Growth>4</Growth>
-				<Start>2</Start>
-			</Rating>
-			<bPlayable>1</bPlayable>
-			<bAIPlayable>1</bAIPlayable>
-			<Cities>
-				<City>Toluca</City>
-				<City>Queretaro</City>
-				<City>Villahermosa</City>
-				<City>Culiacan</City>
-				<City>Cancun</City>
-				<City>Leon</City>
-				<City>Los Mochis</City>
-				<City>Reynosa</City>
-				<City>Puerto Vallarta</City>
-				<City>Palenque</City>
-				<City>Santa Rosalia</City>
-				<City>Alamos</City>
-				<City>Manzanillo</City>
-				<City>San Felipe</City>
-				<City>San Ignacio</City>
-				<City>Cabo San Lucas</City>
-			</Cities>
-			<Buildings>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
-					<BuildingType>BUILDING_CUBAN_CHANCERY</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
-				</Building>
-			</Buildings>
-			<Units/>
-			<FreeUnitClasses/>
-			<FreeBuildingClasses>
-				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<bFreeBuildingClass>1</bFreeBuildingClass>
-				</FreeBuildingClass>
-			</FreeBuildingClasses>
-			<FreeTechs/>
-			<DisableTechs/>
-			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
-			</InitialCivics>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_CASTRO</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -2803,6 +2712,92 @@
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
+			<Type>CIVILIZATION_PUREPECHA</Type>
+			<Description>TXT_KEY_CIV_PUREPECHA_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_PUREPECHA_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_PUREPECHA_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_PUREPECHA_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_YELLOWISH_JADE_GREEN</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_PUREPECHA</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
+			<Identifier>PUR</Identifier>
+			<Region>MES</Region>
+			<CultureGroup>1</CultureGroup>
+			<StartingYear>1150</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>15</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>2</Trade>
+				<Production>3</Production>
+				<Culture>3</Culture>
+				<Growth>2</Growth>
+				<Start>1</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Zacapu</City>
+				<City>Ac&#225;mbaro</City>
+				<City>Cuitzeo</City>
+				<City>Zacatula</City>
+				<City>Colima</City>
+				<City>Sayula</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ALTAR</BuildingClassType>
+					<BuildingType>BUILDING_PUREPECHA_YACATAS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitType>UNIT_PUREPECHA_MACANA</UnitType>
+				</Unit>
+			</Units>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_CHIEFDOM</CivicType>
+				<CivicType>CIVIC_AUTHORITY</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_TARIACURI</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_AZTEC</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_AZTEC_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_AZTEC_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
 			<Type>CIVILIZATION_RUSSIA</Type>
 			<Description>TXT_KEY_CIV_RUSSIA_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_RUSSIA_SHORT_DESC</ShortDescription>
@@ -3438,6 +3433,118 @@
 			<CivilizationActionSound>AS3D_INCA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
+			<Type>CIVILIZATION_ZAPOTEC</Type>
+			<Description>TXT_KEY_CIV_ZAPOTEC_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_ZAPOTEC_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_ZAPOTEC_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_ZAPOTEC_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_ZAPOTEC</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_ZAPOTEC</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_TEOTL_AZTEC</PaganReligion>
+			<Impact>IMPACT_SIGNIFICANT</Impact>
+			<Identifier>ZAP</Identifier>
+			<Region>MES</Region>
+			<CultureGroup>1</CultureGroup>
+			<StartingYear>1</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>3</Trade>
+				<Production>3</Production>
+				<Culture>3</Culture>
+				<Growth>2</Growth>
+				<Start>2</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Tuxtepec</City>
+				<City>Xoxocotlan</City>
+				<City>Huajuapan</City>
+				<City>Tehuantepec</City>
+				<City>Ixtepec</City>
+				<City>Miahuatlan</City>
+				<City>Tlaxiaco</City>
+				<City>Ocotlan</City>
+				<City>Atzompa</City>
+				<City>Pochutla</City>
+				<City>Atempa</City>
+				<City>Tlacolula</City>
+				<City>Cuilapam</City>
+				<City>Jamiltepec</City>
+				<City>Huautla</City>
+				<City>Zimatlan</City>
+				<City>Putla</City>
+				<City>Chahuites</City>
+				<City>Telixtlahuaca</City>
+				<City>Juxtlahuaca</City>
+				<City>Soyaltepec</City>
+				<City>Etla</City>
+				<City>Cosolapa</City>
+				<City>Mitla</City>
+				<City>Tapanatepec</City>
+				<City>Zanatepec</City>
+				<City>Tlalixtac</City>
+				<City>Teotilan</City>
+				<City>Suchilquitongo</City>
+				<City>Acatlan</City>
+				<City>Xadani</City>
+				<City>Ojitlan</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_ALTAR</BuildingClassType>
+					<BuildingType>BUILDING_TOMB</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_SPEARMAN</UnitClassType>
+					<UnitType>UNIT_ZAPOTEC_LIGHTNING</UnitType>
+				</Unit>
+			</Units>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_CHIEFDOM</CivicType>
+				<CivicType>CIVIC_AUTHORITY</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM</CivicType>
+				<CivicType>CIVIC_RECIPROCITY</CivicType>
+				<CivicType>CIVIC_ANIMISM</CivicType>
+				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_COSIJOEZA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_AZTEC</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_AZTEC_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_AZTEC_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
 			<Type>CIVILIZATION_INDEPENDENT</Type>
 			<Description>TXT_KEY_CIV_INDEPENDENT_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_INDEPENDENT_SHORT_DESC</ShortDescription>
@@ -3654,65 +3761,13 @@
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
 				<City>Cherokee</City>
-				<City>Anasazi</City>
-				<City>Teoihuacan</City>
 				<City>Olmec</City>
-				<City>Zapotec</City>
 				<City>Chinook</City>
 				<City>Apache</City>
 				<City>Chehalis</City>
 				<City>Illinois</City>
 				<City>Navajo</City>
 				<City>Carib</City>
-				<City>Saxon</City>
-				<City>Vandal</City>
-				<City>Goth</City>
-				<City>Angle</City>
-				<City>Magyar</City>
-				<City>Khazak</City>
-				<City>Bulgar</City>
-				<City>Alemanni</City>
-				<City>Burgundian</City>
-				<City>Gepid</City>
-				<City>Hun</City>
-				<City>Jute</City>
-				<City>Estruscan</City>
-				<City>Thracian</City>
-				<City>Phrygian</City>
-				<City>Minoan</City>
-				<City>Mycenian</City>
-				<City>Cimmerian</City>
-				<City>Ligurian</City>
-				<City>Numidian</City>
-				<City>Sarmatian</City>
-				<City>Scythian</City>
-				<City>Visigoth</City>
-				<City>Assyrian</City>
-				<City>Hittite</City>
-				<City>Mauryan</City>
-				<City>Parthian</City>
-				<City>Nubian</City>
-				<City>Bactrian</City>
-				<City>Circassian</City>
-				<City>Cuman</City>
-				<City>Hurrian</City>
-				<City>Kassite</City>
-				<City>Bantu</City>
-				<City>Khoisan</City>
-				<City>Libyan</City>
-				<City>Shangian</City>
-				<City>Yayoi</City>
-				<City>Zhou</City>
-				<City>Ainu</City>
-				<City>Aryan</City>
-				<City>Avar</City>
-				<City>Ghuzz</City>
-				<City>Hsung-Nu</City>
-				<City>Kushans</City>
-				<City>Yue-Chi</City>
-				<City>Sakae</City>
-				<City>Uzbek</City>
-				<City>Tartar</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -4153,64 +4208,13 @@
 			<Cities>
 				<City>Cherokee</City>
 				<City>Anasazi</City>
-				<City>Teoihuacan</City>
 				<City>Olmec</City>
-				<City>Zapotec</City>
 				<City>Chinook</City>
 				<City>Apache</City>
 				<City>Chehalis</City>
 				<City>Illinois</City>
 				<City>Navajo</City>
 				<City>Carib</City>
-				<City>Saxon</City>
-				<City>Vandal</City>
-				<City>Goth</City>
-				<City>Angle</City>
-				<City>Magyar</City>
-				<City>Khazak</City>
-				<City>Bulgar</City>
-				<City>Alemanni</City>
-				<City>Burgundian</City>
-				<City>Gepid</City>
-				<City>Hun</City>
-				<City>Jute</City>
-				<City>Estruscan</City>
-				<City>Thracian</City>
-				<City>Phrygian</City>
-				<City>Minoan</City>
-				<City>Mycenian</City>
-				<City>Cimmerian</City>
-				<City>Ligurian</City>
-				<City>Numidian</City>
-				<City>Sarmatian</City>
-				<City>Scythian</City>
-				<City>Visigoth</City>
-				<City>Assyrian</City>
-				<City>Hittite</City>
-				<City>Mauryan</City>
-				<City>Parthian</City>
-				<City>Nubian</City>
-				<City>Bactrian</City>
-				<City>Circassian</City>
-				<City>Cuman</City>
-				<City>Hurrian</City>
-				<City>Kassite</City>
-				<City>Bantu</City>
-				<City>Khoisan</City>
-				<City>Libyan</City>
-				<City>Shangian</City>
-				<City>Yayoi</City>
-				<City>Zhou</City>
-				<City>Ainu</City>
-				<City>Aryan</City>
-				<City>Avar</City>
-				<City>Ghuzz</City>
-				<City>Hsung-Nu</City>
-				<City>Kushans</City>
-				<City>Yue-Chi</City>
-				<City>Sakae</City>
-				<City>Uzbek</City>
-				<City>Tartar</City>
 			</Cities>
 			<Buildings/>
 			<Units/>
@@ -4275,65 +4279,13 @@
 			<bAIPlayable>0</bAIPlayable>
 			<Cities>
 				<City>Cherokee</City>
-				<City>Anasazi</City>
-				<City>Teoihuacan</City>
 				<City>Olmec</City>
-				<City>Zapotec</City>
 				<City>Chinook</City>
 				<City>Apache</City>
 				<City>Chehalis</City>
 				<City>Illinois</City>
 				<City>Navajo</City>
 				<City>Carib</City>
-				<City>Saxon</City>
-				<City>Vandal</City>
-				<City>Goth</City>
-				<City>Angle</City>
-				<City>Magyar</City>
-				<City>Khazak</City>
-				<City>Bulgar</City>
-				<City>Alemanni</City>
-				<City>Burgundian</City>
-				<City>Gepid</City>
-				<City>Hun</City>
-				<City>Jute</City>
-				<City>Estruscan</City>
-				<City>Thracian</City>
-				<City>Phrygian</City>
-				<City>Minoan</City>
-				<City>Mycenian</City>
-				<City>Cimmerian</City>
-				<City>Ligurian</City>
-				<City>Numidian</City>
-				<City>Sarmatian</City>
-				<City>Scythian</City>
-				<City>Visigoth</City>
-				<City>Assyrian</City>
-				<City>Hittite</City>
-				<City>Mauryan</City>
-				<City>Parthian</City>
-				<City>Nubian</City>
-				<City>Bactrian</City>
-				<City>Circassian</City>
-				<City>Cuman</City>
-				<City>Hurrian</City>
-				<City>Kassite</City>
-				<City>Bantu</City>
-				<City>Khoisan</City>
-				<City>Libyan</City>
-				<City>Shangian</City>
-				<City>Yayoi</City>
-				<City>Zhou</City>
-				<City>Ainu</City>
-				<City>Aryan</City>
-				<City>Avar</City>
-				<City>Ghuzz</City>
-				<City>Hsung-Nu</City>
-				<City>Kushans</City>
-				<City>Yue-Chi</City>
-				<City>Sakae</City>
-				<City>Uzbek</City>
-				<City>Tartar</City>
 			</Cities>
 			<Buildings>
 				<Building>

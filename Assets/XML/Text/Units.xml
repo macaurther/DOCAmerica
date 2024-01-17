@@ -2370,22 +2370,6 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Vencedores[COLOR_REVERT], the Venezuelan replacement for the [COLOR_UNIT_TEXT]Rifleman[COLOR_REVERT], starts with the Leadership promotion.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_CUBAN_FARS</Tag>
-		<English>FARs</English>
-		<French>FARs</French>
-		<German>FARs</German>
-		<Italian>FARs</Italian>
-		<Spanish>FARs</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_CUBAN_FARS_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</English>
-		<French>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</French>
-		<German>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</German>
-		<Italian>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAITIAN_CACOS</Tag>
 		<English>Cacos</English>
 		<French>Cacos</French>
@@ -2416,6 +2400,54 @@
 		<German>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHTNING_WARRIOR</Tag>
+		<English>Lightning Warrior</English>
+		<French>Lightning Warrior</French>
+		<German>Lightning Warrior</German>
+		<Italian>Lightning Warrior</Italian>
+		<Spanish>Lightning Warrior</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHTNING_WARRIOR_STRATEGY</Tag>
+		<English>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</English>
+		<French>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</French>
+		<German>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</German>
+		<Italian>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</Italian>
+		<Spanish>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHTNING_WARRIOR_PEDIA</Tag>
+		<English>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</English>
+		<French>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</French>
+		<German>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</German>
+		<Italian>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</Italian>
+		<Spanish>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA</Tag>
+		<English>Macana</English>
+		<French>Macana</French>
+		<German>Macana</German>
+		<Italian>Macana</Italian>
+		<Spanish>Macana</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA_STRATEGY</Tag>
+		<English>The Macana, the Purepechan replacement for the Axeman, is stronger.</English>
+		<French>The Macana, the Purepechan replacement for the Axeman, is stronger.</French>
+		<German>The Macana, the Purepechan replacement for the Axeman, is stronger.</German>
+		<Italian>The Macana, the Purepechan replacement for the Axeman, is stronger.</Italian>
+		<Spanish>The Macana, the Purepechan replacement for the Axeman, is stronger.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA_PEDIA</Tag>
+		<English>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</English>
+		<French>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</French>
+		<German>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</German>
+		<Italian>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</Italian>
+		<Spanish>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</Spanish>
 	</TEXT>
 	
 	<TEXT>

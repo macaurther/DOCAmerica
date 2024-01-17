@@ -188,7 +188,12 @@ lCivilizations = [
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(2).including(iPottery, iAgriculture).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iTanning, iPottery, iAgriculture).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+	),
+	Civilization(
+		iZapotec,
+		iGold=100,
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
@@ -242,11 +247,17 @@ lCivilizations = [
 		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing)
 	),
 	Civilization(
+		iPurepecha,
+		iGold=500,
+		lCivics=[iDespotism, iCaptives, iTributaries],
+		techs=techs.column(4).including(iAlloys, iConstruction, iMathematics, iWriting).without(iTrapping)
+	),
+	Civilization(
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespotism, iCaptives, iTributaries],
-		lEnemies=[iTeotihuacan],
-		techs=techs.column(5).including(iPriesthood).without(iHunting, iShallowFishing, iFishing)
+		lEnemies=[iTeotihuacan, iPurepecha],
+		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood).without(iTrapping, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iIroquois,
@@ -372,14 +383,6 @@ lCivilizations = [
 		lCivics=[iMonarchy, iFederalism, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
 		techs=techs.column(18)
 	),
-	Civilization(
-		iCuba,
-		iGold=1200,
-		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering],
-		lEnemies=[iSpain],
-		techs=techs.column(19)
-	),
 ]
 
 ### Starting units ###
@@ -433,6 +436,14 @@ dStartingUnits = CivDict({
 		iShock: 6,
 		iHarass: 3,
 		# if not human: 1 Settler
+	},
+	iPurepecha: {
+		iSettle: 2,
+		iWork: 2,
+		iDefend: 3,
+		iBase: 2,
+		iShock: 4,
+		iHarass: 2,
 	},
 	iAztecs: {
 		iSettle: 2,
@@ -569,17 +580,6 @@ dStartingUnits = CivDict({
 		iHarassCav: 2,
 		iMissionary: 1,
 	},
-	iCuba: {
-		iSettle: 3,
-		iWork: 2,
-		iDefend: 2,
-		iBase: 2,
-		iShock: 2,
-		iSiege: 1,
-		iMissionary: 1,
-		iFerrySea: 1,
-		iEscortSea: 1,
-	},
 }, {})
 
 # Extra units for AI
@@ -712,8 +712,12 @@ dSpecificAdditionalUnits = CivDict({
 
 dTechPreferences = {
 	iMaya : {
+		iMathematics : 40,
 		iCalendar: 40,
 		iAesthetics: 30,
+	},
+	iZapotec : {
+		iWriting: 40,
 	},
 	iSpain : {
 		iCartography: 100,

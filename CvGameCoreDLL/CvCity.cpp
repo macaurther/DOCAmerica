@@ -3500,6 +3500,12 @@ int CvCity::getProductionModifier(UnitTypes eUnit) const
 		}
 	}
 
+	// MacAurther: Purepecha UP
+	if (GET_PLAYER(getOwnerINLINE()).getCivilizationType() == PUREPECHA)
+	{
+		iMultiplier += 50;
+	}
+
 	return std::max(0, iMultiplier);
 }
 
@@ -5667,13 +5673,6 @@ int CvCity::getHurryCostModifier(int iBaseModifier, int iProduction, bool bIgnor
 {
 	int iModifier = 100;
 	iModifier *= std::max(0, iBaseModifier + 100);
-
-	// MacAurther: Cuban UP: Half hurry costs
-	if (GET_PLAYER(getOwner()).getCivilizationType() == CUBA)
-	{
-		iModifier /= 2;
-	}
-
 	iModifier /= 100;
 
 	if (iProduction == 0 && !bIgnoreNew)
@@ -6374,6 +6373,12 @@ int CvCity::getTotalGreatPeopleRateModifier() const
 	if (GET_PLAYER(getOwnerINLINE()).isGoldenAge())
 	{
 		iModifier += GC.getDefineINT("GOLDEN_AGE_GREAT_PEOPLE_MODIFIER");
+	}
+
+	// Leoreth: Zapotec UP
+	if (getCivilizationType() == ZAPOTEC)
+	{
+		iModifier += 50;
 	}
 
 	return std::max(0, (iModifier + 100));

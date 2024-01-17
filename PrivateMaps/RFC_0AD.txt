@@ -51,11 +51,33 @@ BeginPlot
 		CityOwner=CIVILIZATION_TEOTIHUACAN
 		CityName=Teotihuacan
 		CityPopulation=3
-		YearFounded=-200
+		YearFounded=-100
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BeginCulture
-			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=15
+			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=5
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=15,y=61
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_1
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ZAPOTEC
+		CityName=Danibaan
+		CityPopulation=2
+		YearFounded=-100
+		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_ZAPOTEC, Culture=5
 		EndCulture
 	EndCity
 EndPlot
@@ -73,7 +95,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_MAYA
 		CityName=Tikal
 		CityPopulation=2
-		YearFounded=100
+		YearFounded=-400
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BeginCulture
@@ -99,7 +121,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=9,y=67
+	x=9,y=66
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot

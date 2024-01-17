@@ -2598,16 +2598,6 @@
 			<Button>Art/Structures/Buildings/Thingvellir/thingvellir_btn.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CUBAN_CHANCERY</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/eu3_Euro_Customs/west_customs.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Chancery.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PERUVIAN_WOOL_MILL</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
@@ -2626,6 +2616,16 @@
 			<NIF>Art/Structures/Buildings/Factory/Factory.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Refinery.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ZAPOTEC_TOMB</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.20</fScale>
+			<fInterfaceScale>0.4</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tomb/sacrificial_pyramid.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/templekilmorph.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

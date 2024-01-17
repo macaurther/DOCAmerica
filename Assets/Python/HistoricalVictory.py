@@ -102,6 +102,17 @@ dGoals = {
 			at=1000,
 		),
 	),
+	iZapotec: (
+		FirstDiscover(iWriting),
+		All(
+			ControlledResourceCount(iJade, 1),
+			ControlledResourceCount(iObsidian, 1),
+			ControlledResourceCount(iGold, 1),
+			ControlledResourceCount(iSilver, 1),
+			by=1400
+		),
+		FirstDiscover(iWriting),
+	),
 	iTiwanaku: (
 		All(
 			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1),
@@ -181,6 +192,11 @@ dGoals = {
 		GoldAmount(2500, by=1550),
 		AreaPopulationPercent(plots.regions(*lSouthAmerica).named(SOUTH_AMERICA), 90, by=1600),
 	),
+	iPurepecha: (
+		ControlledResourceCount(iFish, 2, by=1300),
+		UnitCount(sum(iWarrior, iMacana, iArcher, iAtlatlist), 25, by=1500),
+		NoCityLost(by=1600),
+	),
 	iAztecs: (
 		BestPopulationCity(start(iAztecs).named(TENOCHTITLAN), at=1520),
 		BuildingCount((iPaganTemple, 6), (iTzompantli, 6), by=1650),
@@ -237,12 +253,12 @@ dGoals = {
 	),
 	iNetherlands: (
 		CitySpecialistCount(city(tNewAmsterdam).named(NEW_AMSTERDAM), iSpecialistGreatMerchant, 1, at=1660),
-		Settle(
-			plots.region(rMidAtlantic).named(MID_ATLANTIC),
-			plots.region(rCaribbean).named(CARIBBEAN),
-			plots.region(rVenezuela).named(VENEZUELA),
-			plots.region(rGuyana).named(GUAYANAS),
-			plots.region(rBahia).named(BAHIA),
+		CityCount(
+			(plots.regions(rMidAtlantic).named(MID_ATLANTIC), 1),
+			(plots.regions(rCaribbean).named(CARIBBEAN), 1),
+			(plots.regions(rVenezuela).named(VENEZUELA), 1),
+			(plots.regions(rGuyana).named(GUAYANAS), 1),
+			(plots.regions(rBahia).named(BAHIA), 1),
 			by=1700,
 		),
 		TradeGold(5000, by=1800),
@@ -259,7 +275,7 @@ dGoals = {
 	),
 	iRussia: (
 		ImprovementCount(iCamp, 10, by=1800),
-		Control(plots.region(rAlaska).named(ALASKA), at=1860),
+		AreaPercent(plots.region(rAlaska).named(ALASKA), 90, subject=VASSALS, at=1860),
 		TradeGold(1000, by=1870),
 	),
 	iAmerica: (
@@ -283,8 +299,8 @@ dGoals = {
 	),
 	iMexico: (
 		BuildingCount(state_religion_building(cathedral).named(STATE_RELIGION_CATHEDRAL), 3, by=1880),
-		GreatGenerals(3, by=1940),
-		BestPopulationCity(start(iMexico).named(MEXICO_CITY), at=1960),
+		GreatGenerals(3, by=1900),
+		BestPopulationCity(start(iMexico).named(MEXICO_CITY), at=1900),
 	),
 	iColombia: (
 		AllowNone(
@@ -295,13 +311,13 @@ dGoals = {
 			plots.region(rCaribbean).named(CARIBBEAN),
 			at=1870,
 		),
-		Control(plots.regions(*lSouthAmerica).named(SOUTH_AMERICA), at=1920),
-		ResourceTradeGold(3000, by=1950),
+		Control(plots.regions(*lSouthAmerica).named(SOUTH_AMERICA), at=1900),
+		ResourceTradeGold(3000, by=1900),
 	),
 	iPeru: (
 		Control(plots.region(rPeru).named(PERU), at=1850),
 		GoldAmount(5000, by=1866),
-		PopulationCityCount(20, 1, by=1950),
+		PopulationCityCount(15, 1, by=1900),
 	),
 	iBrazil: (
 		ImprovementCount((iSlavePlantation, 8), (iPasture, 4), at=1880),
@@ -309,7 +325,7 @@ dGoals = {
 		All(
 			ImprovementCount(iForestPreserve, 20),
 			CityBuilding(capital().named(CAPITAL), iNationalPark),
-			by=1950,
+			by=1900,
 		),
 	),
 	iVenezuela: (
@@ -333,11 +349,6 @@ dGoals = {
 			by=1950,
 		),
 		BrokeredPeace(12, by=2000),
-	),
-	iCuba: (
-		AllowNone(group(iCivGroupEurope).named(EUROPEAN), plots.region(rCaribbean).named(CARIBBEAN), at=1910),
-		CityCultureLevel(capital().named(CAPITAL), iCultureLevelRefined, by=1950),
-		UnitCount(iWorker, 1, by=1962),
 	),
 }
 

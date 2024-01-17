@@ -602,6 +602,31 @@
 	</TEXT>
 	
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PUR1</Tag>
+		<English>Place of Fishers</English>
+		<French>Place of Fishers</French>
+		<German>Place of Fishers</German>
+		<Italian>Place of Fishers</Italian>
+		<Spanish>Place of Fishers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PUR2</Tag>
+		<English>Formidable Rival</English>
+		<French>Formidable Rival</French>
+		<German>Formidable Rival</German>
+		<Italian>Formidable Rival</Italian>
+		<Spanish>Formidable Rival</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_PUR3</Tag>
+		<English>Territorial Bulwark</English>
+		<French>Territorial Bulwark</French>
+		<German>Territorial Bulwark</German>
+		<Italian>Territorial Bulwark</Italian>
+		<Spanish>Territorial Bulwark</Spanish>
+	</TEXT>
+	
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_RUS1</Tag>
 		<English>Shelekhov-Golikov</English>
 		<French>Shelekhov-Golikov</French>
@@ -749,6 +774,31 @@
 		<German>The Great Centers</German>
 		<Italian>The Great Centers</Italian>
 		<Spanish>The Great Centers</Spanish>
+	</TEXT>
+	
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZAP1</Tag>
+		<English>Logosyllables</English>
+		<French>Logosyllables</French>
+		<German>Logosyllables</German>
+		<Italian>Logosyllables</Italian>
+		<Spanish>Logosyllables</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZAP2</Tag>
+		<English>Expert Jewelers</English>
+		<French>Expert Jewelers</French>
+		<German>Expert Jewelers</German>
+		<Italian>Expert Jewelers</Italian>
+		<Spanish>Expert Jewelers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_ZAP3</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	
 	<!-- RELIGIOUS GOAL TITLES -->

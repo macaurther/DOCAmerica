@@ -172,6 +172,98 @@ iMaya : {
 		"Tecun Uman", # 16th
 	],
 },
+iInca : {
+	iGreatProphet : [
+		"Yahuar Huacac", # 14th
+		"fAsarpay", # 16th
+	],
+	iGreatArtist : [
+		"Viracocha", # legendary
+		"Ninan Cuyochi", # 16th
+		"fPalla Chimpu Ocllo", # 16th
+	],
+	iGreatScientist : [
+		"Sinchi Roca", # 12th
+		"Mayta Qhapaq Inka", # 13th
+		"Manqu Qhapaq", # 13th
+		"Inka Roq'a", # 14th
+		"Waskar Inka", # 16th
+		"Titu Cusi", # 16th
+	],
+	iGreatMerchant : [
+		"Tupaq Inka Yupanki", # 15th
+		"Felipillo", # 16th
+	],
+	iGreatEngineer : [
+		"Qhapaq Yunpanki Inka", # 14th
+		"Sayri Tupaq Inka", # 16th
+	],
+	iGreatStatesman : [
+		u"Mayta Cápac", # 14th
+		iRevolutionaryEra,
+		"Manco Inca Yupanqui", # 16th
+		"fMama Huaco", # 16th
+		u"Tápac Amaru", # 18th
+	],
+	iGreatGeneral : [
+		"Pachakutiq Inka Yupanki", # 15th
+		"Atawallpa", # 16th
+		"Manqu Inka Yupanki", # 16th
+		"Thupaq Amaru", # 16th
+		"Chalcuchimaq", # 16th
+		"Quisquis", # 16th
+		iRevolutionaryEra,
+		"fBartolina Sisa", # 18th
+		u"Túpac Amaru", # 18th
+		iIndustrialEra,
+		"fJuana Azurduy de Padilla", # 19th
+	],
+},
+iAztecs : {
+	iGreatProphet : [
+		"Tenoch", # 14th
+		"Tlacateotl", # 15th
+		"fPapantzin", # 15th
+		"Ixtlilxochitl", # 15th
+		"fYacotzin", # 16th
+	],
+	iGreatArtist : [
+		"Cuacuauhtzin", # 15th
+		"Nezahualcoyotl", # 15th
+		"Xayacamach", # 15th
+		"fMacuilxochitzin", # 15th
+	],
+	iGreatScientist : [
+		"Axayacatl", # 15th
+		"Ixtlilxochitl", # 16th
+		"Coanacochtzin", # 16th
+	],
+	iGreatMerchant : [
+		"Cuauhtemoc", # 16th
+		"Tlacotzin", # 16th
+		"fTecuichpoch Ixcaxochitzin", # 16th
+	],
+	iGreatEngineer : [
+		"Itzcatl", # 15th
+		"Tlacaelel", # 15th
+		"Moquihuix", # 15th
+	],
+	iGreatStatesman : [
+		"Acamapichtli", # 14th
+		"Quaquapitzahuac", # 15th
+		"Tezozomoctli", # 15th
+		"Nezahualcoyotl", # 15th
+		"Nezahualpilli", # 15th
+	],
+	iGreatGeneral : [
+		"Tezozomoc", # 14th
+		"Ahuitzotl", # 15th
+		"Itzcoatl", # 15th
+		"Maxtla", # 15th
+		"Huitzilhuitl", # 15th
+		"Chimalpopoca", # 15th
+	],
+},
 iSpain : {
 	iGreatProphet : [
 		"Juan de Ortega", # 11th
@@ -265,6 +357,214 @@ iSpain : {
 		"Bernardino de Mendoza", # 17th
 		u"fManuela Desvalls Vergós", # 18th
 		"Ali Bey el Abbassi", # 18th 
+	],
+},
+iPortugal : {
+	iGreatProphet : [
+		u"António de Lisboa", # 13th
+		u"fIsabel de Aragão", # 14th
+		iRevolutionaryEra,
+		u"João de Deus", # 16th
+		u"João de Brito", # 17th
+		iIndustrialEra, 
+		"fRita Lopes de Almeida", # 19th
+	],
+	iGreatArtist : [
+		u"Fernão Lopes", # 15th
+		u"Nuno Gonçalves", # 15th
+		iRevolutionaryEra,
+		u"Luís de Camões", # 16th
+		u"António Ferreira", # 16th
+		u"João de Barros", # 16th
+		"Machado de Castro", # 18th
+		iIndustrialEra, 
+		"Antero de Quental", # 19th
+		u"José Maria de Eça de Queirós", # 19th
+	],
+	iGreatScientist : [
+		"Garcia de Orta", # 16th
+		"Pedro Nunes", # 16th
+		"Amato Lusitano", # 16th
+		"Jacob de Castro Sarmento", # 18th
+	],
+	iGreatMerchant : [
+		"Vasco da Gama", # 15th
+		"Francisco de Almeida", # 15th
+		"Henrique o Navegador", # 15th
+		"Bartolomeu Dias", # 15th
+		iRevolutionaryEra,
+		u"Pedro Álvares Cabral", # 15th
+		u"Fernão Pires de Andrade", # 16th
+		"fGracia Mendes Nasi", # 16th
+		u"Fernão Mendes Pinto", # 16th
+		iIndustrialEra, 
+		"fAntonia Ferreira", # 19th
+	],
+	iGreatEngineer : [
+		"Mateus Fernandes", # 15th
+		iRevolutionaryEra,
+		"Diogo de Arruda", # 16th
+		"Diogo de Boitaca", # 16th
+		u"João Antunes", # 17th
+		u"Bartolomeu de Gusmão", # 18th
+		iIndustrialEra,
+		"Carlos Amarante", # 18th
+	],
+	iGreatStatesman : [
+		"Henrique de Avis", # 15th
+		iRevolutionaryEra,
+		u"Tristão da Cunha", # 16th
+		u"João o Restaurador", # 17th
+		u"fLuisa de Guzmán", # 17th
+		u"Alexandre de Gusmão", # 18th
+		u"Sebastião José de Carvalho e Melo", # 18th
+		iIndustrialEra,
+		"Mouzinho da Silveira", # 19th
+		u"António Luís de Seabra", # 19th
+	],
+	iGreatGeneral : [
+		"Geraldo sem Pavor", # 12th
+		u"Nuno Álvares Pereira", # 14th
+		u"Álvaro Vaz de Almada", # 15th
+		iRevolutionaryEra,
+		"Afonso de Albuquerque", # 15th
+		"Matias de Albuquerque", # 17th
+		iIndustrialEra, 
+		u"António José Severim de Noronha", # 19th
+	],
+	iGreatSpy : [
+		"Roderigo Lopez", # 16th
+	],
+},
+iEngland : {
+	iGreatProphet : [
+		"Bede the Venerable", # 8th
+		"Anselm of Canterbury", # 11th
+		"Thomas Becket", # 12th
+		iRevolutionaryEra,
+		"Thomas More", # 16th
+		"fAnne Hutchinson", # 17th
+		"John Newton", # 18th
+		"William Penn", # 18th
+		"Jonathan Edwards", # 18th
+		"fAnn Lee", # 18th
+		"John Wesley", # 18th
+		iIndustrialEra,
+		"William Booth", # 19th
+		"David Livingstone", # 19th
+	],
+	iGreatArtist : [
+		u"Ælfric of Eynsham", # 10th
+		"Geoffrey Chaucer", # 14th
+		"Thomas Malory", # 15th
+		iRevolutionaryEra,
+		"William Shakespeare", # 17th
+		"John Milton", # 17th
+		"John Vanbrugh", # 17th
+		"George Frideric Handel", # 18th
+		"fJane Austen", # 18th
+		iIndustrialEra,
+		"William Blake", # 18th
+		"fMary Shelley", # 19th
+		"Alfred Tennyson", # 19th
+		"Charles Dickens", # 19th
+		"fGeorge Eliot", # 19th
+		"Arthur Conan Doyle", # 19th
+	],
+	iGreatScientist : [
+		"Byrhtferth", # 10th
+		"Robert Grosseteste", # 13th
+		"Roger Bacon", # 13th
+		"William of Ockham", # 14th
+		iRevolutionaryEra,
+		"Francis Bacon", # 16th
+		"Robert Boyle", # 17th
+		"Isaac Newton", # 17th
+		"David Hume", # 18th
+		"William Herschel", # 18th
+		iIndustrialEra,
+		"John Dalton", # 19th
+		"fMary Somerville", # 19th
+		"Michael Faraday", # 19th
+		"fMary Anning", # 19th
+		"Charles Darwin", # 19th
+		"fAda Lovelace", # 19th
+		"James Clerk Maxwell", # 19th
+	],
+	iGreatMerchant : [
+		"Alan Rufus", # 11th
+		"Aaron of Lincoln", # 12th
+		"William Caxton", # 15th
+		iRevolutionaryEra,
+		"Francis Drake", # 16th
+		"William Petty", # 17th
+		"James Cook", # 18th
+		"Adam Smith", # 18th
+		iIndustrialEra,
+		"David Ricardo", # 18th
+		"George Hudson", # 19th
+		"Richard Francis Burton", # 19th
+		"Thomas Sutherland", # 19th
+		"Cecil Rhodes", # 19th
+	],
+	iGreatEngineer : [
+		"Henry Yevele", # 14th
+		iRevolutionaryEra,
+		"Inigo Jones", # 17th
+		"Robert Hooke", # 17th
+		"Christopher Wren", # 17th
+		"William Adam", # 18th
+		"John Harrison", # 18th
+		iIndustrialEra,
+		"James Watt", # 18th
+		"George Stephenson", # 19th
+		"Charles Babbage", # 19th
+		"Isambard Kingdom Brunel", # 19th
+		"Henry Bessemer", # 19th
+		"William Thomson Kelvin", # 19th
+	],
+	iGreatStatesman : [
+		"Thomas Becket", # 12th
+		iRevolutionaryEra,
+		"William Cecil", # 16th
+		"John Locke", # 17th
+		"Thomas Hobbes", # 17th
+		"Robert Walpole", # 18th
+		"William Pitt", # 18th
+		"fMary Wollstonecraft", # 18th
+		iIndustrialEra,
+		"Jeremy Bentham", # 18th
+		"John Stuart Mill", # 19th
+		"William Gladstone", # 19th
+		"Benjamin Disraeli", # 19th
+		"Robert Gascoyne-Cecil Salisbury", # 19th
+	],
+	iGreatGeneral : [
+		"William the Conqueror", # 11th
+		"Richard the Lionheart", # 12th
+		"Edward III", # 14th
+		"fMargaret of Anjou", # 15th
+		iRevolutionaryEra,
+		"Oliver Cromwell", # 17th
+		"John Churchill Marlborough", # 17th
+		"Jeffery Amherst", # 18th
+		"Horatio Nelson", # 18th
+		iIndustrialEra,
+		"John Jervis", # 18th
+		"Arthur Wellesley Wellington", # 19th
+		"Edmund Lyons", # 19th
+	],
+	iGreatSpy : [
+		"Francis Walsingham", # 16th
+		"Guy Fawkes", # 16th
+		"Robert Poley", # 16th
+		"fElizabeth Alkin", # 17th
+		u"John André", # 18th
+		"Edward Bancroft", # 18th
+		iIndustrialEra,
+		"William Wickham", # 19th
+		"William Melville", # 19th
+		"Mansfield Smith-Cumming", # 19th
 	],
 },
 iFrance : {
@@ -405,306 +705,6 @@ iFrance : {
 		iIndustrialEra,
 		"fMichelle de Bonneuil", # 19th
 		"Charles Schulmeister", # 19th
-	],
-},
-iEngland : {
-	iGreatProphet : [
-		"Bede the Venerable", # 8th
-		"Anselm of Canterbury", # 11th
-		"Thomas Becket", # 12th
-		iRevolutionaryEra,
-		"Thomas More", # 16th
-		"fAnne Hutchinson", # 17th
-		"John Newton", # 18th
-		"William Penn", # 18th
-		"Jonathan Edwards", # 18th
-		"fAnn Lee", # 18th
-		"John Wesley", # 18th
-		iIndustrialEra,
-		"William Booth", # 19th
-		"David Livingstone", # 19th
-	],
-	iGreatArtist : [
-		u"Ælfric of Eynsham", # 10th
-		"Geoffrey Chaucer", # 14th
-		"Thomas Malory", # 15th
-		iRevolutionaryEra,
-		"William Shakespeare", # 17th
-		"John Milton", # 17th
-		"John Vanbrugh", # 17th
-		"George Frideric Handel", # 18th
-		"fJane Austen", # 18th
-		iIndustrialEra,
-		"William Blake", # 18th
-		"fMary Shelley", # 19th
-		"Alfred Tennyson", # 19th
-		"Charles Dickens", # 19th
-		"fGeorge Eliot", # 19th
-		"Arthur Conan Doyle", # 19th
-	],
-	iGreatScientist : [
-		"Byrhtferth", # 10th
-		"Robert Grosseteste", # 13th
-		"Roger Bacon", # 13th
-		"William of Ockham", # 14th
-		iRevolutionaryEra,
-		"Francis Bacon", # 16th
-		"Robert Boyle", # 17th
-		"Isaac Newton", # 17th
-		"David Hume", # 18th
-		"William Herschel", # 18th
-		iIndustrialEra,
-		"John Dalton", # 19th
-		"fMary Somerville", # 19th
-		"Michael Faraday", # 19th
-		"fMary Anning", # 19th
-		"Charles Darwin", # 19th
-		"fAda Lovelace", # 19th
-		"James Clerk Maxwell", # 19th
-	],
-	iGreatMerchant : [
-		"Alan Rufus", # 11th
-		"Aaron of Lincoln", # 12th
-		"William Caxton", # 15th
-		iRevolutionaryEra,
-		"Francis Drake", # 16th
-		"William Petty", # 17th
-		"James Cook", # 18th
-		"Adam Smith", # 18th
-		iIndustrialEra,
-		"David Ricardo", # 18th
-		"George Hudson", # 19th
-		"Richard Francis Burton", # 19th
-		"Thomas Sutherland", # 19th
-		"Cecil Rhodes", # 19th
-	],
-	iGreatEngineer : [
-		"Henry Yevele", # 14th
-		iRevolutionaryEra,
-		"Inigo Jones", # 17th
-		"Robert Hooke", # 17th
-		"Christopher Wren", # 17th
-		"William Adam", # 18th
-		"John Harrison", # 18th
-		iIndustrialEra,
-		"James Watt", # 18th
-		"George Stephenson", # 19th
-		"Charles Babbage", # 19th
-		"Isambard Kingdom Brunel", # 19th
-		"Henry Bessemer", # 19th
-		"William Thomson Kelvin", # 19th
-	],
-	iGreatStatesman : [
-		"Thomas Becket", # 12th
-		iRevolutionaryEra,
-		"William Cecil", # 16th
-		"John Locke", # 17th
-		"Thomas Hobbes", # 17th
-		"Robert Walpole", # 18th
-		"William Pitt", # 18th
-		"fMary Wollstonecraft", # 18th
-		iIndustrialEra,
-		"Jeremy Bentham", # 18th
-		"John Stuart Mill", # 19th
-		"William Gladstone", # 19th
-		"Benjamin Disraeli", # 19th
-		"Robert Gascoyne-Cecil Salisbury", # 19th
-	],
-	iGreatGeneral : [
-		"William the Conqueror", # 11th
-		"Richard the Lionheart", # 12th
-		"Edward III", # 14th
-		"fMargaret of Anjou", # 15th
-		iRevolutionaryEra,
-		"Oliver Cromwell", # 17th
-		"John Churchill Marlborough", # 17th
-		"Jeffery Amherst", # 18th
-		"Horatio Nelson", # 18th
-		iIndustrialEra,
-		"John Jervis", # 18th
-		"Arthur Wellesley Wellington", # 19th
-		"Edmund Lyons", # 19th
-	],
-	iGreatSpy : [
-		"Francis Walsingham", # 16th
-		"Guy Fawkes", # 16th
-		"Robert Poley", # 16th
-		"fElizabeth Alkin", # 17th
-		u"John André", # 18th
-		"Edward Bancroft", # 18th
-		iIndustrialEra,
-		"William Wickham", # 19th
-		"William Melville", # 19th
-		"Mansfield Smith-Cumming", # 19th
-	],
-},
-iPortugal : {
-	iGreatProphet : [
-		u"António de Lisboa", # 13th
-		u"fIsabel de Aragão", # 14th
-		iRevolutionaryEra,
-		u"João de Deus", # 16th
-		u"João de Brito", # 17th
-		iIndustrialEra, 
-		"fRita Lopes de Almeida", # 19th
-	],
-	iGreatArtist : [
-		u"Fernão Lopes", # 15th
-		u"Nuno Gonçalves", # 15th
-		iRevolutionaryEra,
-		u"Luís de Camões", # 16th
-		u"António Ferreira", # 16th
-		u"João de Barros", # 16th
-		"Machado de Castro", # 18th
-		iIndustrialEra, 
-		"Antero de Quental", # 19th
-		u"José Maria de Eça de Queirós", # 19th
-	],
-	iGreatScientist : [
-		"Garcia de Orta", # 16th
-		"Pedro Nunes", # 16th
-		"Amato Lusitano", # 16th
-		"Jacob de Castro Sarmento", # 18th
-	],
-	iGreatMerchant : [
-		"Vasco da Gama", # 15th
-		"Francisco de Almeida", # 15th
-		"Henrique o Navegador", # 15th
-		"Bartolomeu Dias", # 15th
-		iRevolutionaryEra,
-		u"Pedro Álvares Cabral", # 15th
-		u"Fernão Pires de Andrade", # 16th
-		"fGracia Mendes Nasi", # 16th
-		u"Fernão Mendes Pinto", # 16th
-		iIndustrialEra, 
-		"fAntonia Ferreira", # 19th
-	],
-	iGreatEngineer : [
-		"Mateus Fernandes", # 15th
-		iRevolutionaryEra,
-		"Diogo de Arruda", # 16th
-		"Diogo de Boitaca", # 16th
-		u"João Antunes", # 17th
-		u"Bartolomeu de Gusmão", # 18th
-		iIndustrialEra,
-		"Carlos Amarante", # 18th
-	],
-	iGreatStatesman : [
-		"Henrique de Avis", # 15th
-		iRevolutionaryEra,
-		u"Tristão da Cunha", # 16th
-		u"João o Restaurador", # 17th
-		u"fLuisa de Guzmán", # 17th
-		u"Alexandre de Gusmão", # 18th
-		u"Sebastião José de Carvalho e Melo", # 18th
-		iIndustrialEra,
-		"Mouzinho da Silveira", # 19th
-		u"António Luís de Seabra", # 19th
-	],
-	iGreatGeneral : [
-		"Geraldo sem Pavor", # 12th
-		u"Nuno Álvares Pereira", # 14th
-		u"Álvaro Vaz de Almada", # 15th
-		iRevolutionaryEra,
-		"Afonso de Albuquerque", # 15th
-		"Matias de Albuquerque", # 17th
-		iIndustrialEra, 
-		u"António José Severim de Noronha", # 19th
-	],
-	iGreatSpy : [
-		"Roderigo Lopez", # 16th
-	],
-},
-iInca : {
-	iGreatProphet : [
-		"Yahuar Huacac", # 14th
-		"fAsarpay", # 16th
-	],
-	iGreatArtist : [
-		"Viracocha", # legendary
-		"Ninan Cuyochi", # 16th
-		"fPalla Chimpu Ocllo", # 16th
-	],
-	iGreatScientist : [
-		"Sinchi Roca", # 12th
-		"Mayta Qhapaq Inka", # 13th
-		"Manqu Qhapaq", # 13th
-		"Inka Roq'a", # 14th
-		"Waskar Inka", # 16th
-		"Titu Cusi", # 16th
-	],
-	iGreatMerchant : [
-		"Tupaq Inka Yupanki", # 15th
-		"Felipillo", # 16th
-	],
-	iGreatEngineer : [
-		"Qhapaq Yunpanki Inka", # 14th
-		"Sayri Tupaq Inka", # 16th
-	],
-	iGreatStatesman : [
-		u"Mayta Cápac", # 14th
-		iRevolutionaryEra,
-		"Manco Inca Yupanqui", # 16th
-		"fMama Huaco", # 16th
-		u"Tápac Amaru", # 18th
-	],
-	iGreatGeneral : [
-		"Pachakutiq Inka Yupanki", # 15th
-		"Atawallpa", # 16th
-		"Manqu Inka Yupanki", # 16th
-		"Thupaq Amaru", # 16th
-		"Chalcuchimaq", # 16th
-		"Quisquis", # 16th
-		iRevolutionaryEra,
-		"fBartolina Sisa", # 18th
-		u"Túpac Amaru", # 18th
-		iIndustrialEra,
-		"fJuana Azurduy de Padilla", # 19th
-	],
-},
-iAztecs : {
-	iGreatProphet : [
-		"Tenoch", # 14th
-		"Tlacateotl", # 15th
-		"fPapantzin", # 15th
-		"Ixtlilxochitl", # 15th
-		"fYacotzin", # 16th
-	],
-	iGreatArtist : [
-		"Cuacuauhtzin", # 15th
-		"Nezahualcoyotl", # 15th
-		"Xayacamach", # 15th
-		"fMacuilxochitzin", # 15th
-	],
-	iGreatScientist : [
-		"Axayacatl", # 15th
-		"Ixtlilxochitl", # 16th
-		"Coanacochtzin", # 16th
-	],
-	iGreatMerchant : [
-		"Cuauhtemoc", # 16th
-		"Tlacotzin", # 16th
-		"fTecuichpoch Ixcaxochitzin", # 16th
-	],
-	iGreatEngineer : [
-		"Itzcatl", # 15th
-		"Tlacaelel", # 15th
-		"Moquihuix", # 15th
-	],
-	iGreatStatesman : [
-		"Acamapichtli", # 14th
-		"Quaquapitzahuac", # 15th
-		"Tezozomoctli", # 15th
-		"Nezahualcoyotl", # 15th
-		"Nezahualpilli", # 15th
-	],
-	iGreatGeneral : [
-		"Tezozomoc", # 14th
-		"Ahuitzotl", # 15th
-		"Itzcoatl", # 15th
-		"Maxtla", # 15th
-		"Huitzilhuitl", # 15th
-		"Chimalpopoca", # 15th
 	],
 },
 iNetherlands : {

@@ -211,9 +211,15 @@
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_CUBA</Type>
-			<Button>Art/Interface/Buttons/Civilizations/Cuba.dds</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Cuba.dds</Path>
+			<Type>ART_DEF_CIVILIZATION_ZAPOTEC</Type>
+			<Button>,Art/Interface/Buttons/Btn_LH_Mesoamerica_cocom.dds,Art/Interface/Buttons/MesoamericaFlagAtlas.dds,2,1</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Zapotec.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_PUREPECHA</Type>
+			<Button>Art/Interface/Buttons/Civilizations/olmec.dds</Button>
+			<Path>Art/Interface/TeamColor/flagdecal_olmec.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 	</CivilizationArtInfos>

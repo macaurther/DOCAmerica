@@ -13,16 +13,17 @@ iWorldY = 122
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 36
+iNumCivs = 37
 #				2				3				4				5				6				7				8				9				10
-(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iCuba,			iEngland, 		iFrance, 		
-iHaiti,			iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
-iNorse,			iPeru,			iPortugal, 		iPuebloan,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		iWari,			
-iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+(iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
+iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	iNorse,			
+iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		iWari,			
+iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
 	iTeotihuacan,
+	iZapotec,
 	iTiwanaku,
 	iWari,
 	iMississippi,
@@ -32,6 +33,7 @@ lBirthOrder = [
 	iChimu,
 	iInuit,
 	iInca,
+	iPurepecha,
 	iAztecs,
 	iIroquois,
 	iSpain,
@@ -50,7 +52,6 @@ lBirthOrder = [
 	iBrazil,
 	iVenezuela,
 	iCanada,
-	iCuba
 ]
 
 lCivOrder = lBirthOrder + [
@@ -68,8 +69,8 @@ iNumCivGroups = 4
 
 dCivGroups = {
 iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
-iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois],
-iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela, iCuba],
+iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iZapotec, iPurepecha],
+iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela],
 iCivGroupNATO : [iAmerica, iCanada, iNorse, iEngland, iFrance, iSpain, iPortugal, iNetherlands],
 }
 
@@ -80,11 +81,11 @@ iNumTechGroups = 3
 
 dTechGroups = {
 iTechGroupWestern : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iCanada],
-iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela, iCuba],
-iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iHawaii],
+iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela],
+iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iHawaii, iZapotec, iPurepecha],
 }
 
-lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iHawaii]
+lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iHawaii, iZapotec, iPurepecha]
 lRevolutionaries = [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru]	# Europeans get expeditionary force at the spawn of these civs
 
 #for messages
@@ -105,7 +106,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 4
+iNumMinorCities = 3
 
 # scripted conquerors
 iNumConquests = 4
@@ -115,8 +116,14 @@ lNeighbours = [
 	(iMaya, iMexico),
 	(iMaya, iColombia),
 	(iMaya, iTeotihuacan),
+	(iMaya, iZapotec),
 	(iTeotihuacan, iAztecs),
 	(iTeotihuacan, iMexico),
+	(iTeotihuacan, iZapotec),
+	(iTeotihuacan, iPurepecha),
+	(iZapotec, iMexico),
+	(iZapotec, iAztecs),
+	(iZapotec, iPurepecha),
 	(iTiwanaku, iWari),
 	(iTiwanaku, iMuisca),
 	(iTiwanaku, iChimu),
@@ -142,6 +149,8 @@ lNeighbours = [
 	(iInca, iColombia),
 	(iInca, iBrazil),
 	(iInca, iPeru),
+	(iPurepecha, iMexico),
+	(iPurepecha, iAmerica),
 	(iAztecs, iAmerica),
 	(iAztecs, iMexico),
 	(iAztecs, iColombia),
@@ -156,9 +165,7 @@ lNeighbours = [
 	(iRussia, iCanada),
 	(iAmerica, iMexico),
 	(iAmerica, iCanada),
-	(iAmerica, iCuba),
 	(iAmerica, iHaiti),
-	(iHaiti, iCuba),
 	(iArgentina, iBrazil),
 	(iColombia, iVenezuela),
 	(iVenezuela, iBrazil),
@@ -170,6 +177,7 @@ lInfluences = [
 	(iChimu, iTiwanaku),
 	(iInca, iTiwanaku),
 	(iAztecs, iTeotihuacan),
+	(iAztecs, iZapotec),
 	(iNetherlands, iSpain),
 	(iAmerica, iEngland),
 	(iAmerica, iFrance),
@@ -181,6 +189,9 @@ lInfluences = [
 	(iMexico, iFrance),
 	(iMexico, iTeotihuacan),
 	(iMexico, iMaya),
+	(iMexico, iAztecs),
+	(iMexico, iZapotec),
+	(iMexico, iPurepecha),
 	(iColombia, iSpain),
 	(iColombia, iMuisca),
 	(iPeru, iSpain),
@@ -189,12 +200,12 @@ lInfluences = [
 	(iBrazil, iPortugal),
 	(iCanada, iFrance),
 	(iCanada, iEngland),
-	(iCuba, iSpain),
 ]
 
 dBirth = CivDict({
 iMaya : 0,
 iTeotihuacan : 0,
+iZapotec : 0,
 iTiwanaku : 110,
 iWari : 500,
 iMississippi : 600,
@@ -204,6 +215,7 @@ iNorse : 874,
 iChimu : 900,
 iInuit : 1050,
 iInca : 1100,
+iPurepecha : 1150,
 iAztecs : 1250,
 iIroquois : 1450,
 iSpain : 1496,
@@ -222,7 +234,6 @@ iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
 iCanada : 1867,
-iCuba : 1898,
 }, 0)
 
 lBirthCivs = dBirth.keys()
@@ -230,6 +241,7 @@ lBirthCivs = dBirth.keys()
 dFall = CivDict({
 iMaya : 1350,
 iTeotihuacan : 1400,
+iZapotec : 1550,
 iTiwanaku : 1400,
 iWari : 1400,
 iMississippi : 1350,
@@ -238,6 +250,7 @@ iMuisca : 1600,
 iChimu : 1600,
 iInuit : 1750,
 iInca : 1600,
+iPurepecha : 1600,
 iAztecs : 1600,
 iIroquois : 1800,
 iSpain : 1850,
@@ -255,7 +268,7 @@ dResurrections = CivDict({
 }, [])
 
 dEnemyCivsOnSpawn = CivDict({
-iAztecs : [iMaya, iTeotihuacan],
+iAztecs : [iMaya, iTeotihuacan, iPurepecha],
 iInca : [iTiwanaku, iWari],
 iAmerica : [iEngland, iIroquois, iIndependent, iIndependent2, iNative],
 iHaiti : [iFrance],
@@ -268,12 +281,14 @@ iVenezuela : [iColombia],
 }, [])
 
 dTotalWarOnSpawn = CivDict({
-iInca : [iWari],
+iInca : [iWari, iTiwanaku],
+iAztecs : [iTeotihuacan],
 }, [])
 
 dAggressionLevel = CivDict({
 iMaya : 1,
 iTeotihuacan : 2,
+iZapotec : 1,
 iTiwanaku : 1,
 iWari : 1,
 iMississippi : 1,
@@ -283,6 +298,7 @@ iNorse : 1,
 iChimu : 1,
 iInuit : 1,
 iInca : 3,
+iPurepecha : 2,
 iAztecs : 3,
 iIroquois : 2,
 iSpain : 3,
@@ -300,7 +316,6 @@ iPeru : 1,
 iBrazil : 2,
 iVenezuela : 1,
 iCanada : 1,
-iCuba : 1,
 }, 0)
 
 dWarOnFlipProbability = CivDict({
@@ -327,6 +342,7 @@ dResurrectionProbability = CivDict({
 dPatienceThreshold = CivDict({
 iMaya : 35,
 iTeotihuacan : 20,
+iZapotec : 20,
 iTiwanaku : 20,
 iWari : 20,
 iMississippi : 35,
@@ -336,6 +352,7 @@ iNorse : 30,
 iChimu : 20,
 iInuit : 35,
 iInca : 35,
+iPurepecha : 20,
 iAztecs : 30,
 iIroquois : 25,
 iSpain : 20,
@@ -354,7 +371,6 @@ iPeru : 35,
 iBrazil : 40,
 iVenezuela : 20,
 iCanada : 40,
-iCuba : 25,
 }, 100)
 
 # initialise religion variables to religion indices from XML
@@ -420,21 +436,21 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 123
+iNumUnits = 125
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iSpy, 			iSisqeno,       iAgent,			
 iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		iMinuteman,		
 iMilitia5,		iWarrior, 		iKoa,			iArquebusier,	iArmedSlave,	iMusketman,		iMusketeer,		iGuardia,		iRifleman,		iVencedores,	
-iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	iRedcoat,		
-iMarine,		iSpearman,		iSuchucChiqui,	iPikeman,		iArcher,		iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,		
-iGatlingGun,	iAtlatlist,		iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iHorseArcher,	iHussar,		
-iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		
-iBombard,		iCannon,		iArtillery,		iHowitzer,		iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		
-iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iSloop,			iFrigate,		iIronclad,		iPrivateer,	    iTorpedoBoat,	
-iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,
-iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,
-iFeGreatSpy,    iAfricanSlave,  iNativeSlave) = range(iNumUnits)
+iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iMacana,		iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	
+iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,iPikeman,		iArcher,		iPicta,			iSlinger,		iCrossbowman,	
+iLightCannon,	iFieldGun,		iGatlingGun,	iAtlatlist,		iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	
+iHorseArcher,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iCuirassier,	iConquistador,	iCarabineer,	
+iGrenadierCavalry,iCavalry,		iBombard,		iCannon,		iArtillery,		iHowitzer,		iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		
+iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iSloop,			iFrigate,		iIronclad,		
+iPrivateer,	    iTorpedoBoat,	iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, 
+iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,
+iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,    iAfricanSlave,  iNativeSlave) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -467,19 +483,19 @@ iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
-iNumBuildings = 194
-# Buildings (96)
+iNumBuildings = 196
+# Buildings (98)
 #				2				3				4				5				6				7				8				9				10
 (iPalace, 		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iChinampa,		iColcas,		iIgloo,			iBath,			iTemazcal,		
 iMarket,		iWeaver,		iStoneworks,	iGoldsmith,		iArena,			iBallCourt,		iBarracks,		iKallanka,		iWalls,			iKancha,		
-iTambo,			iHerbalist,		iAltar,			iTzompantli,	iCommon,		iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iPaganTemple,	
-iHarbor,		iSmokehouse,	iLuau,			iStocks,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		
-iMonument,		iSchoolhouse,	iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	iWarehouse,		iLumbermill,	
-iSawmill,		iTavern,		iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	
-iCourthouse,	iAssembly,		iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iChancery,		iFeitoria,		iBank,			iLevee,			
-iSeigneur,		iTheatre,		iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,
-iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRefinery,      iCoalPlant,     
-iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		iNewspaper,				
+iTambo,			iHerbalist,		iAltar,			iTomb,			iTzompantli,	iYacatas,		iCommon,		iPlatformMound,	iKalasasay,		iKiva,			
+iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iLuau,			iStocks,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			
+iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	
+iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	
+iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iChancery,		iFeitoria,		
+iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	
+iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		
+iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		iNewspaper,				
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -634,14 +650,14 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 58
+iNumLeaders = 59
 #				2				3				4				5				6				7				8				9				10
 (iLeaderBarbarian,iSittingBull, iIndependentLeader,iWashington,	iJackson,		iLincoln,		iRoosevelt,		iFDR,			iKennedy,			iReagan,
 iObama,			iSanMartin,		iPeron,			iMontezuma,		iPedro,			iVargas,		iMacDonald,		iTrudeau,		iTacaynamo,		iBolivar,
-iCastro,		iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		iDeGaulle,		iLOuverture,	iKamehameha,	iHuaynaCapac,
-iPachacuti,		iAua,			iHiawatha,		iPacal,			iJuarez,		iSantaAnna,		iCardenas,		iRedHorn,		iSaguamanchica,	iWillemVanOranje,
-iWilliam,		iRagnar,		iGustav,		iGerhardsen,	iCastilla,		iJoao,			iMaria,			iItzukuma,		iCatherine,		iAlexanderI,	
-iStalin,		iIsabella,		iPhilip,		iFranco,		iAtlatlCauac,	iMalkuHuyustus,	iChavez,		iWariCapac) = range(iNumLeaders)
+iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		iDeGaulle,		iLOuverture,	iKamehameha,	iHuaynaCapac,	iPachacuti,		
+iAua,			iHiawatha,		iPacal,			iJuarez,		iSantaAnna,		iCardenas,		iRedHorn,		iSaguamanchica,	iWillemVanOranje,iWilliam,		
+iRagnar,		iGustav,		iGerhardsen,	iCastilla,		iJoao,			iMaria,			iItzukuma,		iCatherine,		iAlexanderI,	iStalin,		
+iIsabella,		iPhilip,		iFranco,		iAtlatlCauac,	iMalkuHuyustus,	iChavez,		iWariCapac,		iCosijoeza,		iTariacuri) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 })
@@ -652,7 +668,7 @@ iNumPeriods = 0
 iNumImpacts = 5
 (iImpactMarginal, iImpactLimited, iImpactSignificant, iImpactCritical, iImpactPlayer) = range(iNumImpacts)
 
-lSecondaryCivs = [iChimu, iCuba, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari]
+lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari]
 
 (i0AD, i1500AD, i1750AD) = range(3)
 
@@ -677,10 +693,11 @@ bullet = "[ICON_BULLET]"
 event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
-# A goal number of cities for an AI to build
+# A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({
 iMaya : 3,
-iTeotihuacan : 1,
+iTeotihuacan : 2,
+iZapotec : 1,
 iTiwanaku : 2,
 iWari : 3,
 iMississippi : 5,
@@ -690,6 +707,7 @@ iNorse : 4,
 iChimu : 2,
 iInuit : 8,
 iInca : 10,
+iPurepecha : 3,
 iAztecs : 5,
 iIroquois : 5,
 iSpain : 30,
@@ -708,5 +726,4 @@ iPeru : 5,
 iBrazil : 20,
 iVenezuela : 5,
 iCanada : 10,
-iCuba : 3,
 }, 0)
