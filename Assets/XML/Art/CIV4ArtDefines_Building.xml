@@ -57,26 +57,6 @@
 			<Button>,Art/Interface/Buttons/Buildings/Barracks.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,7,1</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_BUNKER</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.4</fScale>
-			<fInterfaceScale>0.64</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Bunker/Bunker.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Bunker.dds,Art/Interface/Buttons/Buildings_Atlas.dds,4,11</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_BOMB_SHELTER</Type>
-			<LSystem>LSYSTEM_2x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.25</fScale>
-			<fInterfaceScale>0.56</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/BombShelters/BombShelters.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/BombShelters.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,1</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GRANARY</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
@@ -128,16 +108,6 @@
 			<Button>,Art/Interface/Buttons/Buildings/Hospital.dds,Art/Interface/Buttons/Buildings_Atlas.dds,3,10</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_RECYCLING_CENTER</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.5</fScale>
-			<fInterfaceScale>0.73</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/RecyclingCenter/RecyclingCenter.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/RecyclingCenter.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,2</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_LIGHTHOUSE</Type>
 			<LSystem>LSYSTEM_LIGHTHOUSE</LSystem>
 			<bAnimated>0</bAnimated>
@@ -178,16 +148,6 @@
 			<Button>,Art/Interface/Buttons/Buildings/Drydock.dds,Art/Interface/Buttons/Buildings_Atlas.dds,5,2</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_AIRPORT</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.64</fScale>
-			<fInterfaceScale>0.42</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Airport/Airport.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Airport.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,1</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_FORGE</Type>
 			<LSystem>LSYSTEM_2x1</LSystem>
 			<bAnimated>1</bAnimated>
@@ -196,16 +156,6 @@
 			<NIF>Art/Structures/Buildings/Forge/Forge.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/Forge.dds,Art/Interface/Buttons/Buildings_Atlas.dds,1,9</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_FACTORY</Type>
-			<LSystem>LSYSTEM_4x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.09</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Factory/Factory.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Factory.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,2</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_COAL_PLANT</Type>
@@ -226,26 +176,6 @@
 			<NIF>Art/Structures/Buildings/HydroPlant/HydroPlant.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/HydroPlant.dds,Art/Interface/Buttons/Buildings_Atlas.dds,4,10</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_NUCLEAR_PLANT</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.5</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/NuclearPlant/NuclearPlant.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/NuclearPlant.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,8</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_INDUSTRIAL_PARK</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>.9</fScale>
-			<fInterfaceScale>.75</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Industrial_Park/Industrial_Park.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Factory.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,7,8</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_ACADEMY</Type>
@@ -298,16 +228,6 @@
 			<Button>,Art/Interface/Buttons/Buildings/Observatory.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,2</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_LABORATORY</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.15</fScale>
-			<fInterfaceScale>0.52</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Laboratory/Laboratory.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Laboratory.dds,Art/Interface/Buttons/Buildings_Atlas.dds,4,4</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_THEATRE</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
@@ -336,26 +256,6 @@
 			<NIF>Art/Structures/Buildings/Mayan_Ballcourt/Mayan_Ballcourt.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/Colosseum.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,6,7</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_BROADCAST_TOWER</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.8</fScale>
-			<fInterfaceScale>0.38</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/BroadcastTower/BroadcastTower.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/BroadcastTower.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,1</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_AMERICAN_MALL</Type>
-			<LSystem>LSYSTEM_2x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.09</fScale>
-			<fInterfaceScale>0.48</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Shopping Mall/Mall.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Supermarket.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,8,1</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MARKET</Type>
@@ -408,16 +308,6 @@
 			<Button>,Art/Interface/Buttons/Buildings/Bank.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,4,2</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_SUPERMARKET</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.31</fScale>
-			<fInterfaceScale>0.67</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Supermarket/Supermarket.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Supermarket.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,4</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_COURTHOUSE</Type>
 			<LSystem>LSYSTEM_3x2</LSystem>
 			<bAnimated>0</bAnimated>
@@ -456,26 +346,6 @@
 			<NIF>Art/Structures/Buildings/Jail/Jail.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Jail.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_INTELLIGENCE_AGENCY</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>0.4</fScale>
-			<fInterfaceScale>0.42</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Intelligence_Agency/Intelligence_Agency.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/ScotlandYard.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,3,8</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_SECURITY_BUREAU</Type>
-			<LSystem>LSYSTEM_4x2</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>0.3</fScale>
-			<fInterfaceScale>0.4</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/NSA_Headquarters/NSA_Headquarters.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/ScotlandYard.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,4,8</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_LEVEE</Type>
@@ -1038,16 +908,6 @@
 			<Button>,Art/Interface/Buttons/Buildings/Obelisk.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,7,7</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PUBLIC_TRANSPORTATION</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.75</fScale>
-			<fInterfaceScale>0.3</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Public_Transportation/Public_Transportation.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Courthouse.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,1,9</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_NATIONAL_PARK</Type>
 			<LSystem>LSYSTEM_4x4</LSystem>
 			<bAnimated>1</bAnimated>
@@ -1378,26 +1238,6 @@
 			<Button>Art/Structures/Buildings/News_Press/Button_NewsPress.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CINEMA</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>5.0</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Cinema/Cinema.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Cinema/Button_Cinema.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_HOTEL</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.0</fScale>
-			<fInterfaceScale>0.50</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Hotel/CubanSpa.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Hotel/Button_Hotel.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_PARK</Type>
 			<LSystem>LSYSTEM_4x2</LSystem>
 			<bAnimated>1</bAnimated>
@@ -1406,16 +1246,6 @@
 			<NIF>Art/Structures/Buildings/Central_Park/Central_Park.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/HangingGardens.dds,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,8</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_SOLAR_PLANT</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Solar_Plant/solar.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Solar_Plant/SolarPlant.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MONUMENT</Type>
@@ -1446,26 +1276,6 @@
 			<NIF>Art/Structures/Buildings/Pharmacy/hospital.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/TechTree/Medicine.dds,Art/Interface/Buttons/TechTree_Atlas.dds,4,5</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_DEPARTMENT_STORE</Type>
-			<LSystem>LSYSTEM_2x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.5</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Department_Store/ts_f_2sha.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Department_Store.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_ELECTRICAL_GRID</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.7</fScale>
-			<fInterfaceScale>0.85</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Electrical_Grid/powerplant_subst4.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Electrical_Grid.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_RAILWAY_STATION</Type>
@@ -1638,16 +1448,6 @@
 			<Button>Art/Structures/Wonders/BrooklynBridge/bridge_button.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CRYSTAL_PALACE</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.4</fScale>
-			<fInterfaceScale>0.7</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/CrystalPalace/CrystalPalace4.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/CrystalPalace/crystalpalace.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GOLDEN_GATE_BRIDGE</Type>
 			<LSystem>LSYSTEM_RIVER</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1666,16 +1466,6 @@
 			<NIF>Art/Structures/Wonders/WorldTradeCenter/wtc.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Wonders/WorldTradeCenter/WorldTradeCenter.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_HUBBLE_SPACE_TELESCOPE</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1</fScale>
-			<fInterfaceScale>0.07</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/HubbleSpaceTelescope/Hubble.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/HubbleSpaceTelescope/hubble_btn.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GUADALUPE_BASILICA</Type>
@@ -1766,86 +1556,6 @@
 			<NIF>Art/Structures/Buildings/Warehouse/NavalManufacture.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Buildings/Warehouse/Warehouse.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_AUTOMATED_FACTORY</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.9</fScale>
-			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Advanced_Factories/Advanced_Factories.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/AutomatedFactory/AutomatedFactory.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CONTAINER_TERMINAL</Type>
-			<LSystem>LSYSTEM_COAST</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.4</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Container_Terminal/Dock.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Container_Terminal/ContainerTerminal.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_LOGISTICS_CENTER</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.1</fScale>
-			<fInterfaceScale>0.7</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Logistics_Center/warehouse.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Logistics_Center/LogisticsCenter.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_VERTICAL_FARM</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.3</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Vertical_Farm/condenser.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Vertical_Farm/VerticalFarm.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_FIBER_NETWORK</Type>
-			<LSystem>LSYSTEM_2x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.4</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Fiber_Network/trunkline.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/TechTree/FiberOptics.dds,Art/Interface/Buttons/TechTree_Atlas.dds,8,8</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_SUPERCOMPUTER</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>0.75</fScale>
-			<fInterfaceScale>0.35</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Center_for_Disease_Control/Center_for_Disease_Control.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Supercomputer/Supercomputer.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_SPACEPORT</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>0.6</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Spaceport/Soyuz.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Spaceport/Spaceport.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_STADIUM</Type>
-			<LSystem>LSYSTEM_2x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.55</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Stadium/veterans04.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Buildings/Stadium/stadium.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TIWANAKU_KALASASAYA</Type>
@@ -2346,16 +2056,6 @@
 			<NIF>Art/Structures/Improvements/Camp/Camp.nif</NIF>
 			<KFM>Art/Structures/Improvements/Camp/Camp.kfm</KFM>
 			<Button>Art/Interface/Buttons/Buildings/Stocks.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_HEADRIGHT</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Cottage/Cottage.nif</NIF>
-			<KFM>Art/Structures/Improvements/Cottage/Cottage.kfm</KFM>
-			<Button>Art/Interface/Buttons/Buildings/Headright.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_DUTCH_TRADING_FORT</Type>

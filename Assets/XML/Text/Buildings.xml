@@ -22,22 +22,6 @@
 		<Spanish>Administrative Center</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_AIRPORT_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] add an additional trade route, provide an experience bonus to [COLOR_UNIT_TEXT]Air Units[COLOR_REVERT], house four extra Air Units for a total of eight and can airlift one unit per turn to any of your other cities. [COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] also add unhealthiness.</English>
-		<French>[COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] add an additional trade route, provide an experience bonus to [COLOR_UNIT_TEXT]Air Units[COLOR_REVERT], house four extra Air Units for a total of eight and can airlift one unit per turn to any of your other cities. [COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] also add unhealthiness.</French>
-		<German>[COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] add an additional trade route, provide an experience bonus to [COLOR_UNIT_TEXT]Air Units[COLOR_REVERT], house four extra Air Units for a total of eight and can airlift one unit per turn to any of your other cities. [COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] also add unhealthiness.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] add an additional trade route, provide an experience bonus to [COLOR_UNIT_TEXT]Air Units[COLOR_REVERT], house four extra Air Units for a total of eight and can airlift one unit per turn to any of your other cities. [COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] also add unhealthiness.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] add an additional trade route, provide an experience bonus to [COLOR_UNIT_TEXT]Air Units[COLOR_REVERT], house four extra Air Units for a total of eight and can airlift one unit per turn to any of your other cities. [COLOR_BUILDING_TEXT]Airports[COLOR_REVERT] also add unhealthiness.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_AMERICAN_MALL_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Mall[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Department Store[COLOR_REVERT], greatly increases the wealth output of the city when it has access to power and increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Hit Football Events[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Hit Movies[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Mall[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Department Store[COLOR_REVERT], greatly increases the wealth output of the city when it has access to power and increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Hit Football Events[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Hit Movies[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Mall[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Department Store[COLOR_REVERT], greatly increases the wealth output of the city when it has access to power and increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Hit Football Events[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Hit Movies[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Mall[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Department Store[COLOR_REVERT], greatly increases the wealth output of the city when it has access to power and increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Hit Football Events[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Hit Movies[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Mall[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Department Store[COLOR_REVERT], greatly increases the wealth output of the city when it has access to power and increases the city's happiness with access to [COLOR_HIGHLIGHT_TEXT]Hit Football Events[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Hit Movies[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ADMINISTRATIVE_CENTER_STRATEGY</Tag>
 		<English>The [COLOR_BUILDING_TEXT]Administrative Center[COLOR_REVERT] reduces the maintenance costs in nearby cities.</English>
 		<French>The [COLOR_BUILDING_TEXT]Administrative Center[COLOR_REVERT] reduces the maintenance costs in nearby cities.</French>
@@ -114,22 +98,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Land Units[COLOR_REVERT] built in its city. [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Military Academy[COLOR_REVERT] national wonder.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BOMB_SHELTER_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT] reduce damage from nuclear attacks.</English>
-		<French>[COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT] reduce damage from nuclear attacks.</French>
-		<German>[COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT] reduce damage from nuclear attacks.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT] reduce damage from nuclear attacks.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Bomb Shelters[COLOR_REVERT] reduce damage from nuclear attacks.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BROADCAST_TOWER_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] greatly increase a city's cultural output with access to power. They also increase the happiness output from using the culture slider, or if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]CN Tower[COLOR_REVERT] world wonder.</English>
-		<French>[COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] greatly increase a city's cultural output with access to power. They also increase the happiness output from using the culture slider, or if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]CN Tower[COLOR_REVERT] world wonder.</French>
-		<German>[COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] greatly increase a city's cultural output with access to power. They also increase the happiness output from using the culture slider, or if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]CN Tower[COLOR_REVERT] world wonder.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] greatly increase a city's cultural output with access to power. They also increase the happiness output from using the culture slider, or if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]CN Tower[COLOR_REVERT] world wonder.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] greatly increase a city's cultural output with access to power. They also increase the happiness output from using the culture slider, or if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Broadcast Towers[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]CN Tower[COLOR_REVERT] world wonder.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA</Tag>
 		<English>Fazenda</English>
 		<French>
@@ -148,14 +116,6 @@
 		<German>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</German>
 		<Italian>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BUNKER_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Bunkers[COLOR_REVERT] reduce damage from air attacks.</English>
-		<French>[COLOR_BUILDING_TEXT]Bunkers[COLOR_REVERT] reduce damage from air attacks.</French>
-		<German>[COLOR_BUILDING_TEXT]Bunkers[COLOR_REVERT] reduce damage from air attacks.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Bunkers[COLOR_REVERT] reduce damage from air attacks.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Bunkers[COLOR_REVERT] reduce damage from air attacks.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE_STRATEGY</Tag>
@@ -215,11 +175,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ARENA_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider. [COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Stadium[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider. [COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Stadium[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider. [COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Stadium[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider. [COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Stadium[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider. [COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Stadium[COLOR_REVERT].</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider.</English>
+		<French>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider.</French>
+		<German>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Arenas[COLOR_REVERT] increase a city's happiness and its happiness output from using the culture slider.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Tag>
@@ -296,30 +256,6 @@
 		<German>The [COLOR_BUILDING_TEXT]Royal Exchange[COLOR_REVERT], the German replacement for a [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], increases a city's wealth more.</German>
 		<Italian>The [COLOR_BUILDING_TEXT]Royal Exchange[COLOR_REVERT], the Italian replacement for a [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], increases a city's wealth more.</Italian>
 		<Spanish>The [COLOR_BUILDING_TEXT]Royal Exchange[COLOR_REVERT], the Spanish replacement for a [COLOR_BUILDING_TEXT]Bank[COLOR_REVERT], increases a city's wealth more.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_FACTORY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] increase a city's unhealthiness. They also increase a city's production, increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT], [COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Automation Factory[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] increase a city's unhealthiness. They also increase a city's production, increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT], [COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Automation Factory[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] increase a city's unhealthiness. They also increase a city's production, increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT], [COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Automation Factory[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] increase a city's unhealthiness. They also increase a city's production, increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT], [COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Automation Factory[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] increase a city's unhealthiness. They also increase a city's production, increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Factories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT], [COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT], [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Automation Factory[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INDUSTRIAL_PARK_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT] increase a city's production output and unhealthiness with access to [COLOR_HIGHLIGHT_TEXT]Aluminium[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT]. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</English>
-		<French>[COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT] increase a city's production output and unhealthiness with access to [COLOR_HIGHLIGHT_TEXT]Aluminium[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT]. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</French>
-		<German>[COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT] increase a city's production output and unhealthiness with access to [COLOR_HIGHLIGHT_TEXT]Aluminium[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT]. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT] increase a city's production output and unhealthiness with access to [COLOR_HIGHLIGHT_TEXT]Aluminium[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT]. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Industrial Parks[COLOR_REVERT] increase a city's production output and unhealthiness with access to [COLOR_HIGHLIGHT_TEXT]Aluminium[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT]. They also allow you to hire two [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INTELLIGENCE_AGENCY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] increase the espionage points created by the city and grant experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in their city. [COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Lubyanka[COLOR_REVERT] world wonder.</English>
-		<French>[COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] increase the espionage points created by the city and grant experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in their city. [COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Lubyanka[COLOR_REVERT] world wonder.</French>
-		<German>[COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] increase the espionage points created by the city and grant experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in their city. [COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Lubyanka[COLOR_REVERT] world wonder.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] increase the espionage points created by the city and grant experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in their city. [COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Lubyanka[COLOR_REVERT] world wonder.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] increase the espionage points created by the city and grant experience points to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in their city. [COLOR_BUILDING_TEXT]Intelligence Agencies[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Lubyanka[COLOR_REVERT] world wonder.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FORGE_STRATEGY</Tag>
@@ -406,14 +342,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Hydro Plants[COLOR_REVERT] provide pollution-free power.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_NUCLEAR_PLANT_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] provide pollution-free power with access to [COLOR_HIGHLIGHT_TEXT]Uranium[COLOR_REVERT], allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allow the city to build [COLOR_UNIT_TEXT]ICBM[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]ITER[COLOR_REVERT] world wonder.</English>
-		<French>[COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] provide pollution-free power with access to [COLOR_HIGHLIGHT_TEXT]Uranium[COLOR_REVERT], allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allow the city to build [COLOR_UNIT_TEXT]ICBM[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]ITER[COLOR_REVERT] world wonder.</French>
-		<German>[COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] provide pollution-free power with access to [COLOR_HIGHLIGHT_TEXT]Uranium[COLOR_REVERT], allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allow the city to build [COLOR_UNIT_TEXT]ICBM[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]ITER[COLOR_REVERT] world wonder.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] provide pollution-free power with access to [COLOR_HIGHLIGHT_TEXT]Uranium[COLOR_REVERT], allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allow the city to build [COLOR_UNIT_TEXT]ICBM[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]ITER[COLOR_REVERT] world wonder.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] provide pollution-free power with access to [COLOR_HIGHLIGHT_TEXT]Uranium[COLOR_REVERT], allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist and allow the city to build [COLOR_UNIT_TEXT]ICBM[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Nuclear Plants[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]ITER[COLOR_REVERT] world wonder.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OBSERVATORY_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] increase a city's scientific research and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT].</English>
 		<French>[COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] increase a city's scientific research and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Observatories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT].</French>
@@ -460,14 +388,6 @@
 		<German>[COLOR_BUILDING_TEXT]Libraries[COLOR_REVERT] boost your city's research and provide culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Libraries[COLOR_REVERT] boost your city's research and provide culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Libraries[COLOR_REVERT] boost your city's research and provide culture. They also allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_LABORATORY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] increase a city's scientific research with access to power and its spaceship production and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]CERN Research Complex[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Large Hadron Collider[COLOR_REVERT] world wonders.</English>
-		<French>[COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] increase a city's scientific research with access to power and its spaceship production and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]CERN Research Complex[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Large Hadron Collider[COLOR_REVERT] world wonders.</French>
-		<German>[COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] increase a city's scientific research with access to power and its spaceship production and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]CERN Research Complex[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Large Hadron Collider[COLOR_REVERT] world wonders.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] increase a city's scientific research with access to power and its spaceship production and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]CERN Research Complex[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Large Hadron Collider[COLOR_REVERT] world wonders.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] increase a city's scientific research with access to power and its spaceship production and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Laboratories[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] and the [COLOR_BUILDING_TEXT]CERN Research Complex[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Large Hadron Collider[COLOR_REVERT] world wonders.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MAYAN_BALL_COURT</Tag>
@@ -618,60 +538,12 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Mala'e[COLOR_REVERT], the Polynesian replacement for the [COLOR_BUILDING_TEXT]Monument[COLOR_REVERT], provides additional culture and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_RECYCLING_CENTER_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Recycling Centres[COLOR_REVERT] reduce unhealthiness from corporations.</English>
-		<French>[COLOR_BUILDING_TEXT]Recycling Centres[COLOR_REVERT] reduce unhealthiness from corporations.</French>
-		<German>[COLOR_BUILDING_TEXT]Recycling Centres[COLOR_REVERT] reduce unhealthiness from corporations.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Recycling Centres[COLOR_REVERT] reduce unhealthiness from corporations.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Recycling Centres[COLOR_REVERT] reduce unhealthiness from corporations.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PUBLIC_TRANSPORTATION_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Public Transportation[COLOR_REVERT] increases a city's health and even more increase the city's healthiness with access to [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SECURITY_BUREAU</Tag>
-		<English>Security Bureau</English>
-		<French>
-			<Text>Agence de s&#233;curit&#233;:Agences de s&#233;curit&#233;</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Sicherheitsdienst</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Agenzia di sicurezza:Agenzie di sicurezza</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Servicio de contraespionaje:Servicios de contraespionaje</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STABLE_STRATEGY</Tag>
 		<English>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in their cities.</English>
 		<French>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in their cities.</French>
 		<German>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in their cities.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in their cities.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Mounted Units[COLOR_REVERT] built in their cities.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SECURITY_BUREAU_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Security Bureaus[COLOR_REVERT] increase the cost of enemy espionage missions in their city and grant [COLOR_HIGHLIGHT_TEXT]Informant I[COLOR_REVERT] to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in its city.</English>
-		<French>[COLOR_BUILDING_TEXT]Security Bureaus[COLOR_REVERT] increase the cost of enemy espionage missions in their city and grant [COLOR_HIGHLIGHT_TEXT]Informant I[COLOR_REVERT] to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in its city.</French>
-		<German>[COLOR_BUILDING_TEXT]Security Bureaus[COLOR_REVERT] increase the cost of enemy espionage missions in their city and grant [COLOR_HIGHLIGHT_TEXT]Informant I[COLOR_REVERT] to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in its city.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Security Bureaus[COLOR_REVERT] increase the cost of enemy espionage missions in their city and grant [COLOR_HIGHLIGHT_TEXT]Informant I[COLOR_REVERT] to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in its city.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Security Bureaus[COLOR_REVERT] increase the cost of enemy espionage missions in their city and grant [COLOR_HIGHLIGHT_TEXT]Informant I[COLOR_REVERT] to [COLOR_UNIT_TEXT]Espionage Units[COLOR_REVERT] built in its city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SMOKEHOUSE</Tag>
@@ -692,14 +564,6 @@
 		<German>[COLOR_BUILDING_TEXT]Smokehouses[COLOR_REVERT] increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</German>
 		<Italian>[COLOR_BUILDING_TEXT]Smokehouses[COLOR_REVERT] increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Smokehouses[COLOR_REVERT] increase the city's health with access to [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SUPERMARKET_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</English>
-		<French>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</French>
-		<German>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Supermarkets[COLOR_REVERT] increase food output in cities with access to power.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_THEATRE_STRATEGY</Tag>
@@ -1666,46 +1530,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]News Presses[COLOR_REVERT] increase a city's cultural output. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CINEMA</Tag>
-		<English>Cinema</English>
-		<French>
-			<Text>Cin&#233;ma:Cin&#233;mas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Cinema</German>
-		<Italian>Cinema</Italian>
-		<Spanish>Cinema</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CINEMA_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] increase a city's cultural output. They also increase the happiness output and even more if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</English>
-		<French>[COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] increase a city's cultural output. They also increase the happiness output and even more if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</French>
-		<German>[COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] increase a city's cultural output. They also increase the happiness output and even more if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] increase a city's cultural output. They also increase the happiness output and even more if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Cinemas[COLOR_REVERT] increase a city's cultural output. They also increase the happiness output and even more if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Singles[COLOR_REVERT] and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HOTEL</Tag>
-		<English>Hotel</English>
-		<French>
-			<Text>H&#244;tel:H&#244;tels</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Hotel</German>
-		<Italian>Hotel</Italian>
-		<Spanish>Hotel</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HOTEL_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</English>
-		<French>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</French>
-		<German>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PARK</Tag>
 		<English>Park</English>
 		<French>
@@ -1724,26 +1548,6 @@
 		<German>[COLOR_BUILDING_TEXT]Parks[COLOR_REVERT] increase a city's health and happiness.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Parks[COLOR_REVERT] increase a city's health and happiness.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Parks[COLOR_REVERT] increase a city's health and happiness.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SOLAR_PLANT</Tag>
-		<English>Solar Plant</English>
-		<French>
-			<Text>Centrale solaire:Centrales solaires</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Solar Plant</German>
-		<Italian>Solar Plant</Italian>
-		<Spanish>Solar Plant</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SOLAR_PLANT_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</English>
-		<French>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</French>
-		<German>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Solar Plants[COLOR_REVERT] provide pollution-free power.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ESTATE</Tag>
@@ -1806,26 +1610,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Railway Stations[COLOR_REVERT] increase a city's unhealthiness, provide an extra trade route and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Railway Stations[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Chateau Frontenac[COLOR_REVERT] world wonder</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DEPARTMENT_STORE</Tag>
-		<English>Department Store</English>
-		<French>
-			<Text>Grand magasin:Grands magasins</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Department Store</German>
-		<Italian>Department Store</Italian>
-		<Spanish>Department Store</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DEPARTMENT_STORE_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Department Stores[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</English>
-		<French>[COLOR_BUILDING_TEXT]Department Stores[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French>
-		<German>[COLOR_BUILDING_TEXT]Department Stores[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Department Stores[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Department Stores[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STAR_FORT</Tag>
 		<English>Star Fort</English>
 		<French>
@@ -1844,26 +1628,6 @@
 		<German>[COLOR_BUILDING_TEXT]Star Forts[COLOR_REVERT] reduces damage from bombardments from all units.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Star Forts[COLOR_REVERT] reduces damage from bombardments from all units.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Star Forts[COLOR_REVERT] reduces damage from bombardments from all units.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ELECTRICAL_GRID</Tag>
-		<English>Electrical Grid</English>
-		<French>
-			<Text>R&#233;seau &#233;lectrique:R&#233;seaux &#233;lectriques</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Electrical Grid</German>
-		<Italian>Electrical Grid</Italian>
-		<Spanish>Electrical Grid</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ELECTRICAL_GRID_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Electrical Grids[COLOR_REVERT] increase commerce output in cities with access to power. [COLOR_BUILDING_TEXT]Electrical Grids [COLOR_REVERT] are required to build a [COLOR_BUILDING_TEXT]Fiber Network[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ATUA_SHRINE</Tag>
@@ -2032,146 +1796,6 @@
 		<German>[COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] increase a city's wealth and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT].</German>
 		<Italian>[COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] increase a city's wealth and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] increase a city's wealth and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist. [COLOR_BUILDING_TEXT]Warehouses[COLOR_REVERT] are required to build [COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_AUTOMATED_FACTORY</Tag>
-		<English>Automated Factory</English>
-		<French>
-			<Text>Usine automatis&#233;e:Usines automatis&#233;es</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Automatisierte Fabrik</German>
-		<Italian>Automated Factory</Italian>
-		<Spanish>Automated Factory</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_AUTOMATED_FACTORY_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Automated Factories[COLOR_REVERT] increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist.</English>
-		<French>[COLOR_BUILDING_TEXT]Automated Factories[COLOR_REVERT] increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist.</French>
-		<German>[COLOR_BUILDING_TEXT]Automated Factories[COLOR_REVERT] increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Automated Factories[COLOR_REVERT] increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Automated Factories[COLOR_REVERT] increase production output in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CONTAINER_TERMINAL</Tag>
-		<English>Container Terminal</English>
-		<French>
-			<Text>Terminal &#224; conteneurs:Terminaux &#224; conteneurs</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Container Terminal</German>
-		<Italian>Container Terminal</Italian>
-		<Spanish>Container Terminal</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CONTAINER_TERMINAL_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Container Terminals[COLOR_REVERT] increase the commerce generated by a city's foreign trade routes.</English>
-		<French>[COLOR_BUILDING_TEXT]Container Terminals[COLOR_REVERT] increase the commerce generated by a city's foreign trade routes.</French>
-		<German>[COLOR_BUILDING_TEXT]Container Terminals[COLOR_REVERT] increase the commerce generated by a city's foreign trade routes.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Container Terminals[COLOR_REVERT] increase the commerce generated by a city's foreign trade routes.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Container Terminals[COLOR_REVERT] increase the commerce generated by a city's foreign trade routes.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_LOGISTICS_CENTER</Tag>
-		<English>Logistics Center</English>
-		<French>
-			<Text>Centre logistique:Centres logistiques</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Logistikzentrum</German>
-		<Italian>Logistics Center</Italian>
-		<Spanish>Logistics Center</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_LOGISTICS_CENTER_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</English>
-		<French>[COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</French>
-		<German>[COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Logistics Centers[COLOR_REVERT] increase wealth in cities with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_VERTICAL_FARM</Tag>
-		<English>Vertical Farm</English>
-		<French>
-			<Text>Ferme verticale:Fermes verticales</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Vertikale Landwirtschaft</German>
-		<Italian>Vertical Farm</Italian>
-		<Spanish>Vertical Farm</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_VERTICAL_FARM_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Vertical Farms[COLOR_REVERT] increase food output in cities with access to power.</English>
-		<French>[COLOR_BUILDING_TEXT]Vertical Farms[COLOR_REVERT] increase food output in cities with access to power.</French>
-		<German>[COLOR_BUILDING_TEXT]Vertical Farms[COLOR_REVERT] increase food output in cities with access to power.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Vertical Farms[COLOR_REVERT] increase food output in cities with access to power.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Vertical Farms[COLOR_REVERT] increase food output in cities with access to power.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_FIBER_NETWORK</Tag>
-		<English>Fiber Network</English>
-		<French>
-			<Text>R&#233;seau de fibre optique:R&#233;seaux de fibre optique</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Glasfasernetzwerk</German>
-		<Italian>Fiber Network</Italian>
-		<Spanish>Fiber Network</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_FIBER_NETWORK_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Fiber Networks[COLOR_REVERT] increase commerce output in cities with access to power.</English>
-		<French>[COLOR_BUILDING_TEXT]Fiber Networks[COLOR_REVERT] increase commerce output in cities with access to power.</French>
-		<German>[COLOR_BUILDING_TEXT]Fiber Networks[COLOR_REVERT] increase commerce output in cities with access to power.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Fiber Networks[COLOR_REVERT] increase commerce output in cities with access to power.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Fiber Networks[COLOR_REVERT] increase commerce output in cities with access to power.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SUPERCOMPUTER</Tag>
-		<English>Supercomputer</English>
-		<French>
-			<Text>Superordinateur:Superordinateurs</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Supercomputer</German>
-		<Italian>Supercomputer</Italian>
-		<Spanish>Supercomputer</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SUPERCOMPUTER_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] increase a city's scientific research with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</English>
-		<French>[COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] increase a city's scientific research with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</French>
-		<German>[COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] increase a city's scientific research with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] increase a city's scientific research with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Supercomputers[COLOR_REVERT] increase a city's scientific research with access to power and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_STADIUM</Tag>
-		<English>Stadium</English>
-		<French>
-			<Text>Stade:Stades</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Stadion</German>
-		<Italian>Stadium</Italian>
-		<Spanish>Stadium</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_STADIUM_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</English>
-		<French>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</French>
-		<German>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</German>
-		<Italian>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ARENA</Tag>
@@ -2388,30 +2012,6 @@
 		<German>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] provide a cultural bonus. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] provide a cultural bonus. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Commons[COLOR_REVERT] provide a cultural bonus. They also increase a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HEADRIGHT</Tag>
-		<English>Headright</English>
-		<French>Headright</French>
-		<German>Headright</German>
-		<Italian>Headright</Italian>
-		<Spanish>Headright</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HEADRIGHT_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Headrights[COLOR_REVERT] increase a city's immigration rate, but decrease a city's wealth.</English>
-		<French>[COLOR_BUILDING_TEXT]Headrights[COLOR_REVERT] increase a city's immigration rate, but decrease a city's wealth.</French>
-		<German>[COLOR_BUILDING_TEXT]Headrights[COLOR_REVERT] increase a city's immigration rate, but decrease a city's wealth.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Headrights[COLOR_REVERT] increase a city's immigration rate, but decrease a city's wealth.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Headrights[COLOR_REVERT] increase a city's immigration rate, but decrease a city's wealth.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_HEADRIGHT_HELP</Tag>
-		<English>[ICON_BULLET]+25% Immigration</English>
-		<French>[ICON_BULLET]+25% Immigration</French>
-		<German>[ICON_BULLET]+25% Immigration</German>
-		<Italian>[ICON_BULLET]+25% Immigration</Italian>
-		<Spanish>[ICON_BULLET]+25% Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HERBALIST</Tag>

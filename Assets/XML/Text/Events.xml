@@ -10,46 +10,6 @@
 		<Spanish>[H1]The %s1 Trading Company[\H1][NEWLINE]The %s2 Trading Company asks for the control of %s4 and offers %d3 gold. Refusal will lead to war. Shall we accept their offer?</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANCIENT_TEXTS_1</Tag>
-		<English>Disperse the texts to various researchers and specialists, to see what we might learn.</English>
-		<French>Distribuer les textes &#224; plusieurs chercheurs et sp&#233;cialistes pour voir ce que nous pourrions apprendre.</French>
-		<German>Verteilt die Texte an verschiedene Forscher und Spezialisten, um zu untersuchen, was wir daraus lernen k&#246;nnen.</German>
-		<Italian>Distribuisci i testi tra ricercatori e specialisti, per vedere cosa possiamo imparare.</Italian>
-		<Spanish>Que los textos sean repartidos entre varios investigadores y especialistas para comprobar qu&#233; nos pueden aportar.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANCIENT_TEXTS_2</Tag>
-		<English>Fund an effort to preserve these artifacts in museums, accessible only to the most careful scholars.</English>
-		<French>Mettre tout en &#339;uvre pour pr&#233;server ces artefacts dans des mus&#233;es, accessibles uniquement &#224; des sp&#233;cialistes tri&#233;s sur le volet.</French>
-		<German>Gr&#252;ndet eine Initiative, um diese Artefakte in Museen zu lagern, wo sie nur den sorgf&#228;ltigsten Gelehrten zug&#228;nglich sind.</German>
-		<Italian>Finanzia il tentativo di preservare questi manufatti nei musei, rendendoli accessibili solo agli studiosi pi&#249; attenti.</Italian>
-		<Spanish>Que se financie un plan para conservar estos objetos en museos a los que solo puedan acceder los eruditos m&#225;s cuidadosos.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANCIENTOLYMPICS_1</Tag>
-		<English>These Games are honorable, but overall their importance to our civilization is minor.</English>
-		<French>Ces jeux sont honorables mais globalement, leur importance pour notre civilisation est mineure.</French>
-		<German>Diese Spiele sind ehrenhaft, aber ihr Wert f&#252;r unsere Zivilisation ist eher gering.</German>
-		<Italian>Questi giochi sono un impegno onorevole, ma la loro importanza per la nostra nazione &#232; minima.</Italian>
-		<Spanish>Estos Juegos son respetables, pero tienen una importancia menor para nuestra civilizaci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANCIENTOLYMPICS_2</Tag>
-		<English>These Games are grand! We should invite and sponsor athletes from neighboring civilizations to attend.</English>
-		<French>Ces jeux sont fantastiques ! Nous devrions inviter et parrainer des athl&#232;tes des civilisations voisines.</French>
-		<German>Diese Spiele sind gro&#223;artig! Wir sollten Athleten der Nachbarzivilisationen einladen, an ihnen teilzunehmen.</German>
-		<Italian>Questi giochi sono grandiosi! Dovremmo invitare e sponsorizzare atleti di altre civilt&#224; affinch&#233; partecipino.</Italian>
-		<Spanish>&#161;Estos Juegos son grandiosos! Deber&#237;amos invitar a atletas de civilizaciones vecinas y patrocinar su participaci&#243;n.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_ANCIENTOLYMPICS_HELP_2</Tag>
-		<English>[ICON_BULLET]Receive a %D1 diplomatic boost with all your close neighbors</English>
-		<French>[ICON_BULLET]Recevez un avantage diplomatique %D1 avec tous vos voisins proches</French>
-		<German>[ICON_BULLET]Ihr erhaltet einen %D1 Bonus f&#252;r Diplomatie mit allen n&#228;heren Nachbarn.</German>
-		<Italian>[ICON_BULLET]Ricevi un incremento diplomatico di %D1 con tutte le civilt&#224; vicine.</Italian>
-		<Spanish>[ICON_BULLET]Recibir %D1 de mejora diplom&#225;tica con todos tus vecinos cercanos.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENT_ANGEL_OF_MERCY_1</Tag>
 		<English>The extra patients will enhance city revenue.</English>
 		<French>Les patients suppl&#233;mentaires vont am&#233;liorer les revenus de la ville.</French>

@@ -2799,38 +2799,6 @@
 		<Spanish>[ICON_BULLET]%s1 on improved [LINK=literal]%s2[\LINK] resources</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_RESEARCH_SATELLITE</Tag>
-		<English>Research Satellite</English>
-		<French>Satellite scientifique</French>
-		<German>Forschungssatellit</German>
-		<Italian>Research Satellite</Italian>
-		<Spanish>Research Satellite</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_COMMERCIAL_SATELLITE</Tag>
-		<English>Commercial Satellite</English>
-		<French>Satellite commercial</French>
-		<German>Kommerzieller Satellit</German>
-		<Italian>Commercial Satellite</Italian>
-		<Spanish>Commercial Satellite</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_MILITARY_SATELLITE</Tag>
-		<English>Military Satellite</English>
-		<French>Satellite militaire</French>
-		<German>Milit&#228;rischer Satellit</German>
-		<Italian>Military Satellite</Italian>
-		<Spanish>Military Satellite</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_INVISIBLE_SATELLITE</Tag>
-		<English>Satellites</English>
-		<French>Satellites</French>
-		<German>Satelliten</German>
-		<Italian>Satellites</Italian>
-		<Spanish>Satellites</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_PROJECT_ENABLES_SPECIAL_PLAYER</Tag>
 		<!-- %s1_Name = Can be Buildings, Units, Projects, etc -->
 		<English>[ICON_BULLET]Enables %s1_Name</English>

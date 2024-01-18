@@ -326,26 +326,6 @@
 		<Spanish>El [COLOR_BUILDING_TEXT]Banco Central[COLOR_REVERT] dobla la producci&#243;n de riqueza de su ciudad y aumenta las posibilidades de que &#233;sta genere un [COLOR_UNIT_TEXT]Gran mercader[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SPACEPORT</Tag>
-		<English>Spaceport</English>
-		<French>
-			<Text>Base de lancement</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Raumhafen</German>
-		<Italian>Spaceport</Italian>
-		<Spanish>Spaceport</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SPACEPORT_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Spaceport[COLOR_REVERT] increases spaceship production in all cities and increases its chances of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Spaceport[COLOR_REVERT] increases spaceship production in all cities and increases its chances of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Spaceport[COLOR_REVERT] increases spaceship production in all cities and increases its chances of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Spaceport[COLOR_REVERT] increases spaceship production in all cities and increases its chances of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Spaceport[COLOR_REVERT] increases spaceship production in all cities and increases its chances of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRAND_CENTRAL_STATION</Tag>
 		<English>Grand Central Station</English>
 		<French>Grand Central Station</French>

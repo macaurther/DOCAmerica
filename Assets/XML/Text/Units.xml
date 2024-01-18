@@ -1522,82 +1522,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_DRONE</Tag>
-		<English>Drone</English>
-		<French>
-			<Text>Drone</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Drone</German>
-		<Italian>Drone</Italian>
-		<Spanish>Drone</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_DRONE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Drones[COLOR_REVERT] are invisible to all units, can explore rival territory, can destroy improvements, bomb city defenses, perform recon missions, damage enemy units and have an increased chance to evade interception.</English>
-		<French>[COLOR_UNIT_TEXT]Drones[COLOR_REVERT] are invisible to all units, can explore rival territory, can destroy improvements, bomb city defenses, perform recon missions, damage enemy units and have an increased chance to evade interception.</French>
-		<German>[COLOR_UNIT_TEXT]Drones[COLOR_REVERT] are invisible to all units, can explore rival territory, can destroy improvements, bomb city defenses, perform recon missions, damage enemy units and have an increased chance to evade interception.</German>
-		<Italian>[COLOR_UNIT_TEXT]Drones[COLOR_REVERT] are invisible to all units, can explore rival territory, can destroy improvements, bomb city defenses, perform recon missions, damage enemy units and have an increased chance to evade interception.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Drones[COLOR_REVERT] are invisible to all units, can explore rival territory, can destroy improvements, bomb city defenses, perform recon missions, damage enemy units and have an increased chance to evade interception.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_SATELLITE</Tag>
-		<English>Satellite</English>
-		<French>
-			<Text>Satellite</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Satellit</German>
-		<Italian>Satellite</Italian>
-		<Spanish>Satellite</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_SATELLITE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Satellites[COLOR_REVERT] can see other [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Research Satellite[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Commercial Satellite[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Military Satellite[COLOR_REVERT] specialist, can explore rival territory, are invisible to all units except [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units and begin with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</English>
-		<French>[COLOR_UNIT_TEXT]Satellites[COLOR_REVERT] can see other [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Research Satellite[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Commercial Satellite[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Military Satellite[COLOR_REVERT] specialist, can explore rival territory, are invisible to all units except [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units and begin with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</French>
-		<German>[COLOR_UNIT_TEXT]Satellites[COLOR_REVERT] can see other [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Research Satellite[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Commercial Satellite[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Military Satellite[COLOR_REVERT] specialist, can explore rival territory, are invisible to all units except [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units and begin with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</German>
-		<Italian>[COLOR_UNIT_TEXT]Satellites[COLOR_REVERT] can see other [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Research Satellite[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Commercial Satellite[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Military Satellite[COLOR_REVERT] specialist, can explore rival territory, are invisible to all units except [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units and begin with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Satellites[COLOR_REVERT] can see other [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units, settle in a city as a [COLOR_HIGHLIGHT_TEXT]Research Satellite[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Commercial Satellite[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Military Satellite[COLOR_REVERT] specialist, can explore rival territory, are invisible to all units except [COLOR_UNIT_TEXT]Satellite[COLOR_REVERT] units and begin with the [COLOR_HIGHLIGHT_TEXT]Sentry[COLOR_REVERT] promotion.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SPECIALUNIT_SATELLITE</Tag>
-		<English>Satellite</English>
-		<French>
-			<Text>Satellite</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Satellit</German>
-		<Italian>Satellite</Italian>
-		<Spanish>Satellite</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SPECIALUNIT_ICBM</Tag>
-		<English>ICBM</English>
-		<French>
-			<Text>Missile intercontinental</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>ICBM</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>ICBM:ICBM</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>ICBM:ICBM</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_PIONEER</Tag>
 		<English>Pioneer</English>
 		<French>
@@ -2252,22 +2176,6 @@
 		<German>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</German>
 		<Italian>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Rifled Cannon[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_GUERILLA</Tag>
-		<English>Guerilla</English>
-		<French>Guerilla</French>
-		<German>Guerilla</German>
-		<Italian>Guerilla</Italian>
-		<Spanish>Guerilla</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_GUERILLA_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Guerillas[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VIKING_LONGSHIP</Tag>

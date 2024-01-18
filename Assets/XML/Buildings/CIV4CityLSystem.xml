@@ -1258,21 +1258,6 @@
 	<LNode Name="Leaf_3x3">
 		<Width>3</Width>
 		<Height>3</Height>
-		
-		<!-- HAGIA SOPHIA -->
-		<ArtRef Name="building:LSYSTEM_HAGIA_SOPHIA">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Wonders/HagiaSophia/HagiaSophia.nif</Attribute>
-			<Attribute Class="Era">ERA_ALL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_MIDDLE_EAST</Attribute>
-			<Scale>1.12</Scale>
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_HAGIA_SOPHIA">
-			<Attribute Class="Scalar">szNIF:Art/Structures/Wonders/HagiaSophia/HagiaSophia_Proper.nif</Attribute>
-			<Attribute Class="Era">ERA_ALL</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN,ARTSTYLE_ASIAN,ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_GRECO_ROMAN,ARTSTYLE_BARBARIAN,ARTSTYLE_AFRICAN</Attribute>
-			<Scale>1.12</Scale>
-		</ArtRef>
-		
 		<!-- LEAF 3x3 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_3x3">
 			<Scale>1.0</Scale>
@@ -1338,25 +1323,6 @@
 			<Attribute Class="Scalar">bNoContour:1</Attribute>
 			<Attribute Class="Scalar">szPostArtFile:Art/Structures/Buildings/Tall Wall/post01_tall.nif</Attribute>
 			<Attribute Class="Scalar">szWallArtFile:Art/Structures/Buildings/Tall Wall/wall%1_tall.nif</Attribute>
-			<Rotate>45</Rotate>
-			<!-- this needs to be the negative of the CITY_TWIST value in detail manager; note that this uses degrees but DetailManager uses radians. Sorry. -->
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_THEODOSIAN_WALLS">
-			<Attribute Class="Scalar">szSpecialLayout:CityCenter</Attribute>
-			<Attribute Class="Scalar">szBuilder:WallBuilder</Attribute>
-			<Attribute Class="Scalar">bLayoutAfterGenerics:1</Attribute>
-			<Attribute Class="Scalar">bNoContour:1</Attribute>
-			<Attribute Class="Scalar">szPostArtFile:Art/Structures/Wonders/Theodosian_Walls/post01_byz_med.nif</Attribute>
-			<Attribute Class="Scalar">szWallArtFile:Art/Structures/Wonders/Theodosian_Walls/wall%1_byz_med.nif</Attribute>
-			<Scale>1.0</Scale>
-			<Rotate>45</Rotate>
-			<!-- this needs to be the negative of the CITY_TWIST value in detail manager; note that this uses degrees but DetailManager uses radians. Sorry. -->
-		</ArtRef>
-		<ArtRef Name="building:LSYSTEM_GREAT_WALL">
-			<Attribute Class="Scalar">szSpecialLayout:CityCenter</Attribute>
-			<Attribute Class="Scalar">szBuilder:GreatWallBuilder</Attribute>
-			<Attribute Class="Scalar">bLayoutAfterGenerics:1</Attribute>
-			<Attribute Class="Scalar">bNoContour:1</Attribute>
 			<Rotate>45</Rotate>
 			<!-- this needs to be the negative of the CITY_TWIST value in detail manager; note that this uses degrees but DetailManager uses radians. Sorry. -->
 		</ArtRef>

@@ -18,6 +18,10 @@
 		<English>It is the year 1 AD. While the Valley of Mexico has been inhabited for thousands of years, advanced civilization thus far has only flourished East, in the Olmec, Zapotec, and Maya heartlands. Now urban centers are developing around Lake Texcoco. The most prominent is Teotihuacan, poised to influence the culture of all Mesoamerica.</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_DOM_ZAPOTEC</Tag>
+		<English>It is the year 1 AD. After hundreds of years of farming in the Oaxacan river valleys, a central power began to shape atop a mountain overlooking the other settlements. Power became consolidated over time until a powerful central monarchy was established in Danibaan.</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_DOM_TIWANAKU</Tag>
 		<English>It is the year 110 AD. As the invention of ceramics strengthens existing trade routes, the pilgrimage site of Tiwanaku begins growing into a true city and the first great regional power since the fall of the Norte Chico Civilization. With an economy built on the seasonal swelling of visitors from far and wide, the city of Tiwanaku is primed to grow into an empire of great fame and glory.</English>
 	</TEXT>
@@ -52,6 +56,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOM_INCA</Tag>
 		<English>It is the year 1100 AD. Manco Capac has just founded the Kingdom of Cuzco, the first Incan kingdom. Even in the harsh environment of the Andes and lacking suitable pack animals, they set out to create an empire never seen before in the Americas.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DOM_PUREPECHA</Tag>
+		<English>It is the year 1150 AD. A powerful empire grows on the Pacific coast of Mesoamerica. Armed with superior metalworking and copper alloys, the Purepecha have never lost a battle; but a rising alliance of city states to the East will soon constest their hegemony.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOM_AZTECS</Tag>
@@ -156,13 +164,5 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOM_CANADA</Tag>
 		<English>It is the year 1867 AD. After the American revolution, Canada has remained under colonial control. With the approval of the North America Acts, Canada has now been finally granted independence so it can expand across the Great White North on its own accord.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_ZAPOTEC</Tag>
-		<English>It is the year 1 AD. After hundreds of years of farming in the Oaxacan river valleys, a central power began to shape atop a mountain overlooking the other settlements. Power became consolidated over time until a powerful central monarchy was established in Danibaan.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOM_PUREPECHA</Tag>
-		<English>It is the year 1150 AD. A powerful empire grows on the Pacific coast of Mesoamerica. Armed with superior metalworking and copper alloys, the Purepecha have never lost a battle; but a rising alliance of city states to the East will soon constest their hegemony.</English>
-	</TEXT>
+	</TEXT>	
 </Civ4GameText>

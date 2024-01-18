@@ -30,62 +30,6 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AERODYNAMICS</Tag>
-		<English>Aerodynamics</English>
-		<French>
-			<Text>A&#233;rodynamique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Aerodynamics</German>
-		<Italian>Aerodynamics</Italian>
-		<Spanish>Aerodynamics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AERODYNAMICS_QUOTE</Tag>
-		<English>"Oh! I have slipped the surly bonds of Earth and danced the skies on laughter-silvered wings."[PARAGRAPH:2]- John Gillespie Magee Jr., High Flight</English>
-		<French>"Je me suis lib&#233;r&#233; des emprises de la Terre ; j'ai dans&#233; dans le ciel sur les ailes argent&#233;es du rire."[PARAGRAPH:2]- John Gillespie Magee Jr., High Flight</French>
-		<German>"Oh! I have slipped the surly bonds of Earth and danced the skies on laughter-silvered wings."[PARAGRAPH:2]- John Gillespie Magee Jr., High Flight</German>
-		<Italian>"Oh! I have slipped the surly bonds of Earth and danced the skies on laughter-silvered wings."[PARAGRAPH:2]- John Gillespie Magee Jr., High Flight</Italian>
-		<Spanish>"Oh! I have slipped the surly bonds of Earth and danced the skies on laughter-silvered wings."[PARAGRAPH:2]- John Gillespie Magee Jr., High Flight</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AERODYNAMICS_PEDIA</Tag>
-		<English>Aerodynamics is the study of designing objects so that they will go smoothly through the air, rather than having to constantly waste energy battering through air resistance.[PARAGRAPH:2]In the early days of flight, aerodynamics was a somewhat informal science, and advances in engine power that gave aircraft more brute-force ability to push through the air were often more important. This began to change in the 1920s and 1930s, when aerodynamic designs became more popular not only for monocoque-hulled aircraft, but also for trains and automobiles.[PARAGRAPH:2]Aerodynamics became all the more important when engineers attempted to design more complex and advanced aircraft, such as helicopters (which are inherently unstable, and must be designed carefully to be flyable) and supersonic jets (since passing the speed of sound can rip an aircraft to pieces if the design fails to deflect and make use of shockwaves created by breaking the sound barrier).[PARAGRAPH:2]Today, aerodynamic calculations can be made in greater detail and thoroughness than ever before, using powerful computers. This allows designers to extract the greatest possible speed and efficiency out of a given amount of engine power.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AERONAUTICS</Tag>
-		<English>Aeronautics</English>
-		<French>Aeronautics</French>
-		<German>Aeronautics</German>
-		<Italian>Aeronautics</Italian>
-		<Spanish>Aeronautics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AERONAUTICS_QUOTE</Tag>
-		<English>"Engineering is the art of directing the great sources of power in nature for the use and the convenience of people."[PARAGRAPH:2]- Orville Wright</English>
-		<French>"Engineering is the art of directing the great sources of power in nature for the use and the convenience of people."[PARAGRAPH:2]- Orville Wright</French>
-		<German>"Engineering is the art of directing the great sources of power in nature for the use and the convenience of people."[PARAGRAPH:2]- Orville Wright</German>
-		<Italian>"Engineering is the art of directing the great sources of power in nature for the use and the convenience of people."[PARAGRAPH:2]- Orville Wright</Italian>
-		<Spanish>"Engineering is the art of directing the great sources of power in nature for the use and the convenience of people."[PARAGRAPH:2]- Orville Wright</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AERONAUTICS_PEDIA</Tag>
-		<English>Aeronautics is the science or art involved with the study, design, and manufacturing of air flight-capable machines, and the techniques of operating aircraft and rockets within the atmosphere. The British Royal Aeronautical Society identifies the aspects of "aeronautical Art, Science and Engineering" and "The profession of Aeronautics (which expression includes Astronautics)."</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
 
 
 	<TEXT>
@@ -264,37 +208,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE</Tag>
-		<English>Artificial Intelligence</English>
-		<French>
-			<Text>Intelligence artificielle</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Artificial Intelligence</German>
-		<Italian>Artificial Intelligence</Italian>
-		<Spanish>Artificial Intelligence</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_QUOTE</Tag>
-		<English>"The mystery which surrounds a thinking machine already surrounds a thinking man."[PARAGRAPH:2]- B. F. Skinner, Contingencies of Reinforcement</English>
-		<French>"Le myst&#232;re qui entoure une machine pensante entoure d&#233;j&#224; l'homme pensant."[PARAGRAPH:2]- B. F. Skinner, L'analyse exp&#233;rimentale du comportement</French>
-		<German>"The mystery which surrounds a thinking machine already surrounds a thinking man."[PARAGRAPH:2]- B.F. Skinner, Contingencies of Reinforcement</German>
-		<Italian>"The mystery which surrounds a thinking machine already surrounds a thinking man."[PARAGRAPH:2]- B.F. Skinner, Contingencies of Reinforcement</Italian>
-		<Spanish>"The mystery which surrounds a thinking machine already surrounds a thinking man."[PARAGRAPH:2]- B.F. Skinner, Contingencies of Reinforcement</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ARTIFICIAL_INTELLIGENCE_PEDIA</Tag>
-		<English>As computer technology advances its capabilities at a geometric rate, the ability of computer software to emulate intelligent decisions grows. Automation first replaces  routine, mundane labor on assembly lines, then an increasing share of service and office jobs. As the process continues, it seems likely that computers will become able to sustain true intelligence, at least for a pragmatic definition of the term.[PARAGRAPH:2]Some predict that the creation of the first artificial intelligences will lead to a 'singularity' beyond which we lose our ability to predict the course of human development: these AIs will rapidly begin to modify and improve themselves until their capabilities are little short of godlike. Others feel that this is an exaggeration of the possibilities. Regardless, artificial intelligence is likely to play a prominent role in the development of human society in the future.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_ARTISANRY</Tag>
 		<English>Artisanry</English>
 		<French>
@@ -454,68 +367,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_AUTOMATION</Tag>
-		<English>Automation</English>
-		<French>
-			<Text>Automatisation</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Automation</German>
-		<Italian>Automation</Italian>
-		<Spanish>Automation</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AUTOMATION_QUOTE</Tag>
-		<English>"We are becoming the servants in thought, as in action, of the machine we have created to serve us."[PARAGRAPH:2]- John Kenneth Galbraith, The New Industrial State</English>
-		<French>"Nous devenons les serviteurs, en pens&#233;e comme en action, de la machine que nous avons cr&#233;&#233;e pour nous servir."[PARAGRAPH:2]- John Kenneth Galbraith, Le Nouvel &#201;tat industriel</French>
-		<German>"We are becoming the servants in thought, as in action, of the machine we have created to serve us."[PARAGRAPH:2]- John Kenneth Galbraith, The New Industrial State</German>
-		<Italian>"We are becoming the servants in thought, as in action, of the machine we have created to serve us."[PARAGRAPH:2]- John Kenneth Galbraith, The New Industrial State</Italian>
-		<Spanish>"We are becoming the servants in thought, as in action, of the machine we have created to serve us."[PARAGRAPH:2]- John Kenneth Galbraith, The New Industrial State</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AUTOMATION_PEDIA</Tag>
-		<English>Automation is the art of making machines which perform tasks on their own, without active input or oversight from a human operator. Automatic constructs have existed as toys for the rich since ancient times, the products of individual craftsmanship, but widespread use of automation to control machines is a twentieth-century phenomenon.[PARAGRAPH:2]The demand for automation first came from the need to make machinery function where humans cannot or will not; be it in an extremely hostile environment, in a factory where machines ran faster than the human eye can follow, or in a job too menial and unstimulating for the average person to be content doing. Over time, automation has become more popular and flexible, especially with the rise of electronic computers.[PARAGRAPH:2]Automatic equipment invariably saves human labor, but it also displaces labour. The simple tasks involved in doing the machine's job are replaced by specialized jobs tending the machines. Or not replaced at all.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AVIATION</Tag>
-		<English>Aviation</English>
-		<French>
-			<Text>Aviation</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Aviation</German>
-		<Italian>Aviation</Italian>
-		<Spanish>Aviation</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AVIATION_QUOTE</Tag>
-		<English>"What railways have done for nations, airways will do for the world."[PARAGRAPH:2]- Claude Grahame-White, The Aeroplane</English>
-		<French>"Ce que le chemin de fer a fait pour les pays du monde, le transport a&#233;rien le fera pour le monde entier."[PARAGRAPH:2]- Claude Grahame-White, The Aeroplane</French>
-		<German>"What railways have done for nations, airways will do for the world."[PARAGRAPH:2]- Claude Grahame-White, The Aeroplane</German>
-		<Italian>"What railways have done for nations, airways will do for the world."[PARAGRAPH:2]- Claude Grahame-White, The Aeroplane</Italian>
-		<Spanish>"What railways have done for nations, airways will do for the world."[PARAGRAPH:2]- Claude Grahame-White, The Aeroplane</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_AVIATION_PEDIA</Tag>
-		<English>While the earliest powered flying machines proved useless for war except as aerial scout platforms, the demands of World War One accelerated development of fast, powerful aircraft capable of hauling significant weapons or cargo. Steady improvements in the internal combustion engine, and rapid growth of experience in airplane design, led to a boom in the airplane's capabilities in the 1920s and 1930s. Passenger aviation in planes like the Douglas DC-3 (still in service today) turned aircraft construction into a major industry. At the same time, military airplanes became more powerful and capable, diversifying into fast, agile fighters and bombers capable of carrying tons of explosives hundreds of kilometres into enemy territory.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_BALLISTICS</Tag>
 		<English>Ballistics</English>
 		<French>
@@ -577,37 +428,6 @@
 		<German>"Nicht die st&#228;rksten Spezies werden &#252;berleben, sondern jene, die sich Ver&#228;nderungen am besten anpassen k&#246;nnen."[PARAGRAPH:2]- Charles Darwin</German>
 		<Italian>"Non sopravvive la specie pi&#249; forte, ma quella pi&#249; adatta al cambiamento."[PARAGRAPH:2]- Charles Darwin</Italian>
 		<Spanish>"No sobrevive la especie m&#225;s fuerte, sino la m&#225;s adaptable al cambio."[PARAGRAPH:2]- Charles Darwin</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_BIOTECHNOLOGY</Tag>
-		<English>Biotechnology</English>
-		<French>
-			<Text>Biotechnologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Biotechnology</German>
-		<Italian>Biotechnology</Italian>
-		<Spanish>Biotechnology</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_BIOTECHNOLOGY_QUOTE</Tag>
-		<English>"The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of star stuff."[PARAGRAPH:2]- Carl Sagan, Cosmos</English>
-		<French>"L'azote dans notre ADN, le calcium de nos dents, le fer dans le sang, le carbone dans nos tartes aux pommes ont &#233;t&#233; faits &#224; l'int&#233;rieur d'&#233;toiles qui se sont effondr&#233;es. Nous sommes faits de poussi&#232;res d'&#233;toiles."[PARAGRAPH:2]- Carl Sagan, Cosmos</French>
-		<German>"The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of star stuff."[PARAGRAPH:2]- Carl Sagan, Cosmos</German>
-		<Italian>"The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of star stuff."[PARAGRAPH:2]- Carl Sagan, Cosmos</Italian>
-		<Spanish>"The nitrogen in our DNA, the calcium in our teeth, the iron in our blood, the carbon in our apple pies were made in the interiors of collapsing stars. We are made of star stuff."[PARAGRAPH:2]- Carl Sagan, Cosmos</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_BIOTECHNOLOGY_PEDIA</Tag>
-		<English>Bionics is one name for the effort to create machines that can duplicate functions of human body parts. This has obvious applications in medicine, where it allows people who have lost limbs, sensory organs, or even hearts to survive with mechanical substitutes. Other effects of this growing field, placed as it is at the cutting edge of automation, miniaturization, and our understanding of how brain and body operate, are more subtle but perhaps no less profound.[NEWLINE][NEWLINE]Advanced bionics might allow the creation of synthetic androids whose superficially human appearance lends itself to a variety of roles. They might become popular as replacements or augmentations for functioning body parts - if an artificial eye sees more clearly, some may prefer it to their natural one. Taken to its logical extreme, bionics might even cause us to call into question the very meaning of what it is to be human, an issue mostly considered the province of science fiction to date.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -1101,41 +921,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPUTERS</Tag>
-		<English>Computers</English>
-		<French>
-			<Text>Ordinateur</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Computertechnologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Computer</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Ordenadores</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_COMPUTERS_QUOTE</Tag>
-		<English>"I do not fear computers. I fear the lack of them."[PARAGRAPH:2]- Isaac Asimov</English>
-		<French>"Je n'ai pas peur des ordinateurs. J'ai peur qu'ils viennent &#224; nous manquer."[PARAGRAPH:2]- Isaac Asimov</French>
-		<German>"I do not fear computers. I fear the lack of them."[PARAGRAPH:2]- Isaac Asimov</German>
-		<Italian>"I do not fear computers. I fear the lack of them."[PARAGRAPH:2]- Isaac Asimov</Italian>
-		<Spanish>"I do not fear computers. I fear the lack of them."[PARAGRAPH:2]- Isaac Asimov</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_CONSERVATION</Tag>
 		<English>Conservation</English>
 		<French>Conservation</French>
@@ -1372,49 +1157,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ECOLOGY</Tag>
-		<English>Ecology</English>
-		<French>
-			<Text>&#201;cologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>&#214;kologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Ecologia</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Ecolog&#237;a</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ECOLOGY_QUOTE</Tag>
-		<English>"We do not inherit the Earth from our ancestors, we borrow it from our children."[PARAGRAPH:2]- Wendell Berry, The Unforeseen Wilderness</English>
-		<French>"Nous n'h&#233;ritons pas de la Terre de nos anc&#234;tres, nous l'empruntons &#224; nos enfants."[PARAGRAPH:2]- Wendell Berry, The Unforeseen Wilderness</French>
-		<German>"Wir haben die Erde nicht von unseren Vorfahren geerbt, sondern von unseren Kindern geliehen."[PARAGRAPH:2]- Indianerlied</German>
-		<Italian>"Non ereditiamo la terra dai nostri antenati, la prendiamo in prestito per i nostri figli."[PARAGRAPH:2]- Canzone dei Nativi Americani</Italian>
-		<Spanish>"La Tierra no es una herencia de nuestros padres, sino un pr&#233;stamo de nuestros hijos."[PARAGRAPH:2]- Canci&#243;n de los ind&#237;genas americanos</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ECOLOGY_PEDIA</Tag>
-		<English>Ecology is the science of studying biological systems in nature, as distinct from the processes that go on inside individual organisms or species. Ecologists focus on understanding how different species interact in their natural habitats, what causes some to flourish and others to fade, what patterns persist across all examples of a given biome (such as 'forest' or 'savannah'), and what difference may make one area unique compared to others that are superficially similar. Knowledge of ecology helps to predict the future of a living system, control outbreaks of diseases such as blights in the wild, and mitigate certain types of natural disaster such as floods and wildfires.[NEWLINE][NEWLINE]Ecological discoveries over the late 19th and 20th centuries have made humanity far more aware of the complexities of life on Earth, and how human actions impact these complexities.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_ECONOMICS</Tag>
 		<English>Economics</English>
 		<French>
@@ -1523,37 +1265,6 @@
 		<German>"Wir machen die Elektrizit&#228;t so billig, dass nur noch die Reichen Kerzen benutzen!"[PARAGRAPH:2]- Thomas Edison</German>
 		<Italian>"Renderemo l'elettricit&#224; cos&#236; economica che solamente i ricchi accenderanno le candele."[PARAGRAPH:2]- Thomas Edison</Italian>
 		<Spanish>"Abarataremos tanto la electricidad que solo los ricos usar&#225;n velas."[PARAGRAPH:2]- Thomas Edison</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ELECTRONICS</Tag>
-		<English>Electronics</English>
-		<French>
-			<Text>&#201;lectronique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Electronics</German>
-		<Italian>Electronics</Italian>
-		<Spanish>Electronics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ELECTRONICS_QUOTE</Tag>
-		<English>"The complexity for minimum component costs has increased at a rate of roughly a factor of two per year."[PARAGRAPH:2]- Gordon Moore, Cramming More Components onto Integrated Circuits</English>
-		<French>"La complexit&#233; pour un co&#251;t minimum par composant a progress&#233; &#224; un taux d'environ un facteur de deux par ann&#233;e."[PARAGRAPH:2]- Gordon Moore, Cramming More Components onto Integrated Circuits</French>
-		<German>"The complexity for minimum component costs has increased at a rate of roughly a factor of two per year."[PARAGRAPH:2]- Gordon Moore, Cramming More Components onto Integrated Circuits</German>
-		<Italian>"The complexity for minimum component costs has increased at a rate of roughly a factor of two per year."[PARAGRAPH:2]- Gordon Moore, Cramming More Components onto Integrated Circuits</Italian>
-		<Spanish>"The complexity for minimum component costs has increased at a rate of roughly a factor of two per year."[PARAGRAPH:2]- Gordon Moore, Cramming More Components onto Integrated Circuits</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ELECTRONICS_PEDIA</Tag>
-		<English>The field of electronics deals with the practical application and manipulation of electricity and electromagnetic phenomena. The invention of the vacuum tube in the early 20th century marked the beginning of modern electronics. The vacuum tube was capable of amplifying weak radio signals, allowing them to be transmitted over greater distances. Vacuum tubes also allowed music and voice to be superimposed onto radio waves for transmission. The early study of electronics revolutionized a number of fields, especially the field of communications. Because of the vacuum tube, the technology of radio communications was highly developed by World War II. After the war, electronics research continued to advance rapidly. Post-war advances include the earliest examples of digital computers and, eventually, transistors and integrated circuits: miniaturized replacements for the vacuum tube.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -1834,37 +1545,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_FILM</Tag>
-		<English>Film</English>
-		<French>
-			<Text>Film</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Film</German>
-		<Italian>Film</Italian>
-		<Spanish>Film</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FILM_QUOTE</Tag>
-		<English>"I have the seized the light. I have arrested its flight."[PARAGRAPH:2]- Louis Daguerre</English>
-		<French>"J'ai saisi la lumi&#232;re au passage et je l'ai encha&#238;n&#233;e."[PARAGRAPH:2]- Louis Daguerre</French>
-		<German>"I have the seized the light. I have arrested its flight."[PARAGRAPH:2]- Louis Daguerre</German>
-		<Italian>"I have the seized the light. I have arrested its flight."[PARAGRAPH:2]- Louis Daguerre</Italian>
-		<Spanish>"I have the seized the light. I have arrested its flight."[PARAGRAPH:2]- Louis Daguerre</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FILM_PEDIA</Tag>
-		<English>One of the many great inventions of the mid-19th century was 'moving pictures'. By creating a narrow strip of transparent film with tiny still images impressed on it, and rapidly moving this film past a light source, the images could be projected onto a wall or screen. Changing the image fast enough (~10 times per second) creates the illusion of motion, allowing artists to show an audience a moving, lifelike image of events on screen.[PARAGRAPH:2]This gave rise to the first "mass media." The creation of motion pictures became a professionalized industry, with a special class of artists who were experts at using techniques like camera angles and special effects to evoke emotion. It also created a new class of celebrity - the movie star, who was seen by millions on a regular basis where an ordinary actor would never appear before more than a few thousand people at a time.[PARAGRAPH:2]Film was not just used for entertainment, it became a powerful medium for education, journalism, and advertising. It also became a popular vehicle for state propaganda.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_FINANCE</Tag>
 		<English>Finance</English>
 		<French>
@@ -1927,64 +1607,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_FISSION</Tag>
-		<English>Fission</English>
-		<French>
-			<Text>Fission nucl&#233;aire</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Kernspaltung</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Fissione</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Fisi&#243;n</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FISSION_QUOTE</Tag>
-		<English>"If the radiance of a thousand suns were to burst forth at once in the sky, that would be like the splendour of the mighty One. I am become Death, destroyer of worlds."[PARAGRAPH:2]- J. Robert Oppenheimer, quoting from the Bhagavat Gita</English>
-		<French>"Si la splendeur de mille soleils &#233;clatait &#224; la fois dans les cieux, cela serait comparable au rayonnement du grand &#202;tre... Je suis devenu la Mort, le destructeur des mondes."[PARAGRAPH:2]- J. Robert Oppenheimer, citant la Bhagavad Gita</French>
-		<German>"Wenn das Licht von tausend Sonnen am Himmel pl&#246;tzlich br&#228;ch' hervor, zu gleicher Zeit - das w&#228;re gleich dem Glanze des Herrlichen ... Ich bin der Tod, der alles raubt, Ersch&#252;tterer der Welten."[PARAGRAPH:2]- J. Robert Oppenheimer, Zitat aus der "Bhagavad Gita"</German>
-		<Italian>Se migliaia di soli illuminassero il cielo sarebbe uno spettacolo di straordinaria potenza... Sono la Morte, Distruttrice di Mondi.[PARAGRAPH:2]- J. Robert Oppenheimer, citando il "Bhagavad Gita"</Italian>
-		<Spanish>"Si el brillo de mil soles refulgiese a la vez en el cielo, ser&#237;a como el esplendor del Poderoso... Me he convertido en la Muerte, la destructora de mundos."[PARAGRAPH:2]- J. Robert Oppenheimer, citando "El Bhagavad Gita"</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FLIGHT</Tag>
-		<English>Flight</English>
-		<French>
-			<Text>Vol</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Flight</German>
-		<Italian>Flight</Italian>
-		<Spanish>Flight</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FLIGHT_QUOTE</Tag>
-		<English>"For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return."[PARAGRAPH:2]- Leonardo Da Vinci</English>
-		<French>"Car lorsque vous aurez go&#251;t&#233; aux beaut&#233;s du vol, vous parcourrez la Terre les yeux tourn&#233;s vers le ciel, car vous y serez all&#233; et qu'il vous tardera d'y revenir."[PARAGRAPH:2]- L&#233;onard de Vinci</French>
-		<German>"Wenn du einmal das Fliegen empfunden hast, wirst du f&#252;r immer auf der Erde wandeln mit deinen Augen himmelw&#228;rts gerichtet, denn dort bist du gewesen und dort wird es dich immer wieder hinziehen."[PARAGRAPH:2]- Leonardo Da Vinci</German>
-		<Italian>"Una volta aver assaporato il volo, quando tornerai sulla terra continuerai a guardare verso il cielo."[PARAGRAPH:2]- Leonardo Da Vinci</Italian>
-		<Spanish>"Una vez hayas probado el vuelo caminar&#225;s por la tierra con los ojos alzados hacia el cielo porque ya habr&#225;s estado all&#237; y querr&#225;s volver."[PARAGRAPH:2]- Leonardo Da Vinci</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_FORTIFICATION</Tag>
 		<English>Fortification</English>
 		<French>
@@ -2040,41 +1662,6 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FUSION</Tag>
-		<English>Fusion</English>
-		<French>
-			<Text>Fusion nucl&#233;aire</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Kernfusion</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Fusione</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Fusi&#243;n</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_FUSION_QUOTE</Tag>
-		<English>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</English>
-		<French>"Tout ce que nous ne pourrons contr&#244;ler, nous le pr&#233;dirons, et tout ce que nous ne pourrons pr&#233;dire, nous le contr&#244;lerons."[PARAGRAPH:2]- John von Neumann</French>
-		<German>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</German>
-		<Italian>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</Italian>
-		<Spanish>"All stable processes we shall predict. All unstable processes we shall control."[PARAGRAPH:2]- John von Neumann</Spanish>
-	</TEXT>
-	
 	
 	
 	<TEXT>
@@ -2104,41 +1691,6 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GENETICS</Tag>
-		<English>Genetics</English>
-		<French>
-			<Text>G&#233;n&#233;tique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Gentechnik</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Genetica</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Gen&#233;tica</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GENETICS_QUOTE</Tag>
-		<English>"Every human gene is related to the genes of other animals and bacteria, to this great chain of being."[PARAGRAPH:2]- Walter Gilbert</English>
-		<French>"Chaque g&#232;ne humain est apparent&#233; &#224; ceux des autres animaux et des bact&#233;ries dans cette grande cha&#238;ne de la vie."[PARAGRAPH:2]- Walter Gilbert</French>
-		<German>"Every human gene is related to the genes of other animals and bacteria, to this great chain of being."[PARAGRAPH:2]- Walter Gilbert</German>
-		<Italian>"Every human gene is related to the genes of other animals and bacteria, to this great chain of being."[PARAGRAPH:2]- Walter Gilbert</Italian>
-		<Spanish>"Every human gene is related to the genes of other animals and bacteria, to this great chain of being."[PARAGRAPH:2]- Walter Gilbert</Spanish>
 	</TEXT>
 
 
@@ -2255,37 +1807,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_METEOROLOGY_PEDIA</Tag>
 		<English>Meteorology, the study of atmospheric phenomena and weather patterns, has a long and storied history in the Americas. Native American cultures have long been attuned to weather patterns and used their observations to guide their agricultural practices and daily activities. European colonization brought new ideas and technologies to the study of meteorology in the Americas. In 1735, Benjamin Franklin established the first meteorological observation network in the colonies, which eventually led to the establishment of the National Weather Service in 1890. During the 19th century, advancements in technology such as the telegraph and the development of weather balloons and other instruments allowed for more accurate and timely weather forecasts. In the early 20th century, radio transmissions allowed for the dissemination of weather information over greater distances.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GLOBALISM</Tag>
-		<English>Globalism</English>
-		<French>
-			<Text>Mondialisme</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Globalism</German>
-		<Italian>Globalism</Italian>
-		<Spanish>Globalism</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GLOBALISM_QUOTE</Tag>
-		<English>"I am a citizen of the world."[PARAGRAPH:2]- Diogenes of Sinope</English>
-		<French>"Je suis citoyen du monde."[PARAGRAPH:2]- Diog&#232;ne de Sinope</French>
-		<German>"I am a citizen of the world."[PARAGRAPH:2]- Diogenes of Sinope</German>
-		<Italian>"I am a citizen of the world."[PARAGRAPH:2]- Diogenes of Sinope</Italian>
-		<Spanish>"I am a citizen of the world."[PARAGRAPH:2]- Diogenes of Sinope</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_GLOBALISM_PEDIA</Tag>
-		<English>Globalization is the process by which different peoples spread across the world become united by ties of ideology, economics, and politics. The first wave of globalization took place during the 19th century Age of Imperialism, when steam power and telegraphy allowed European empires to spread zones of influence across most of the world, creating a web of transport, communication, and government. However, access to these networks was limited and patchy and many people neither knew nor cared about events in far-off lands.[PARAGRAPH:2]The World Wars sped up the process. The staggering, apocalyptic scale of combat caught up many colonial possessions in Africa and Asia, permanently undermining European rule at the same time that people in economic backwaters were exposed to a wide variety of modern products and weapons. After World War Two, ideologies such as nationalism or communism spread into regions that had previously been dominated by traditional cultures that were less inclined to resist foreign rule. A wave of "decolonization" swept the world.[PARAGRAPH:2]But this was not the end. Direct imperial rule of poor nations by rich ones went out of fashion, the economic bonds between rich and poor were not so easily broken. The industrial giants of the developed world could easily produce enough goods to supply massive export markets, while needing to import raw materials on an ever-growing scale as their own supplies of timber, coal, ore, and oil became depleted. Along with these flows of goods came flows of popular products and the culture that came with them, particularly from the United States. Artifacts of American culture (Hollywood movies, blue jeans, Coca-Cola) became world-spanning; to a lesser extent this diffusion worked from other sources, and even worked the other way, with foreign customs being adopted in the former colonial metropoles.[PARAGRAPH:2]Along with these economic ties came an entangled world political stage. Dictators of small, remote countries could no longer count on isolation and control of the media to keep their people from becoming restless, or to keep large foreign powers from intruding on their business. The only security for small nations was to align themselves with the economic interests of the great power blocs, supplying cheap resources and labor and giving themselves a place in the new world order.[PARAGRAPH:2]Today the world is extensively globalized, a product of the capitalist triumph of the post-Cold War era. Whether this is socially desirable, economically sustainable, or even ecologically survivable remains to be seen, and is likely to become one of the great questions of the 21st century.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -2731,40 +2252,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_LASER</Tag>
-		<English>Laser</English>
-		<French>
-			<Text>Laser</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Laser</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Laser</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>L&#225;ser</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_LASER_QUOTE</Tag>
-		<English>"The night is far spent; the day is at hand. Let us therefore cast off the works of darkness, and let us put on the armor of light."[PARAGRAPH:2]- The Bible, Romans</English>
-		<French>"La nuit est avanc&#233;e, le jour approche. D&#233;pouillons-nous donc des &#339;uvres des t&#233;n&#232;bres, et rev&#234;tons les armes de la lumi&#232;re."[PARAGRAPH:2]- La Bible, &#201;p&#238;tre aux Romains</French>
-		<German>"The night is far spent; the day is at hand. Let us therefore cast off the works of darkness, and let us put on the armor of light."[PARAGRAPH:2]- The Bible, Romans</German>
-		<Italian>"The night is far spent; the day is at hand. Let us therefore cast off the works of darkness, and let us put on the armor of light."[PARAGRAPH:2]- The Bible, Romans</Italian>
-		<Spanish>"The night is far spent; the day is at hand. Let us therefore cast off the works of darkness, and let us put on the armor of light."[PARAGRAPH:2]- The Bible, Romans</Spanish>
-	</TEXT>
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_LAW</Tag>
 		<English>Law</English>
 		<French>
@@ -3060,37 +2547,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_MICROBIOLOGY</Tag>
-		<English>Microbiology</English>
-		<French>
-			<Text>Microbiologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Microbiology</German>
-		<Italian>Microbiology</Italian>
-		<Spanish>Microbiology</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MICROBIOLOGY_QUOTE</Tag>
-		<English>"The cause of nutrition and growth resides not in the organism as a whole but in the separate elementary parts - the cells."[PARAGRAPH:2]- Theodor Schwann, Microscopical Researches into the Accordance in the Structure and Growth of Animals and Plants</English>
-		<French>"Les parties &#233;l&#233;mentaires les plus diff&#233;rentes des animaux et des plantes ont un mode commun de d&#233;veloppement : leur origine est toujours une cellule."[PARAGRAPH:2]- Theodor Schwann, Recherches microscopiques sur la conformit&#233; de structure et d'accroissement des animaux et des plantes</French>
-		<German>"The cause of nutrition and growth resides not in the organism as a whole but in the separate elementary parts - the cells."[PARAGRAPH:2]- Theodor Schwann, Microscopic Researches into the Structure and Growth of Animals and Plants</German>
-		<Italian>"The cause of nutrition and growth resides not in the organism as a whole but in the separate elementary parts - the cells."[PARAGRAPH:2]- Theodor Schwann, Microscopic Researches into the Structure and Growth of Animals and Plants</Italian>
-		<Spanish>"The cause of nutrition and growth resides not in the organism as a whole but in the separate elementary parts - the cells."[PARAGRAPH:2]- Theodor Schwann, Microscopic Researches into the Structure and Growth of Animals and Plants</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MICROBIOLOGY_PEDIA</Tag>
-		<English>Healthcare is the practice of acting so as to preserve or restore the health of the individual patient, although this is normally construed to not include basic sustenance needs such as air, water, and food. Healthcare can be divided into a wide range of overlapping categories. These include but are not limited to preventative care (to maintain health through nutrition, exercise, and hygiene), palliative care (to relieve the symptoms of a patient who cannot be cured by the available means), outpatient care (where the patient is able to function and live independently while undergoing treatment), urgent care (treatment of pressing medical problems that are nonetheless not life-threatening), and acute care (where a patient requires detailed monitoring or complex medical support and so must remain in a hospital with physicians in attendance).[NEWLINE][NEWLINE]Since it affects what may be the foremost concern of nearly all humans - their health - health care occupies a large share of the total time and energy of the human race. Many (though not all) of the professionals involved in providing health care receive unusual prestige and wealth within their own societies. This was the case even in ancient times when the practice of medicine was primitive to the point of being life-threatening.[NEWLINE][NEWLINE]In modern times, the health care system has become an elaborate and refined infrastructure, especially in developed nations. Not only is it an industry in its own right, it supports various other industries such as the pharmaceutical industry and the insurance industry. The challenge of working out how to efficiently pay for this vast system that keeps us alive and relatively comfortable is a subject of energetic debate in many societies.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_METALLURGY</Tag>
 		<English>Metallurgy</English>
 		<French>
@@ -3188,37 +2644,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_NANOTECHNOLOGY</Tag>
-		<English>Nanotechnology</English>
-		<French>
-			<Text>Nanotechnologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Nanotechnology</German>
-		<Italian>Nanotechnology</Italian>
-		<Spanish>Nanotechnology</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_NANOTECHNOLOGY_QUOTE</Tag>
-		<English>"In nanotech, matter becomes code."[PARAGRAPH:2]- Steve Jurvetson</English>
-		<French>"Avec la nanotechnologie, la mati&#232;re devient du code."[PARAGRAPH:2]- Steve Jurvetson</French>
-		<German>"In nanotech, matter becomes code."[PARAGRAPH:2]- Steve Jurvetson</German>
-		<Italian>"In nanotech, matter becomes code."[PARAGRAPH:2]- Steve Jurvetson</Italian>
-		<Spanish>"In nanotech, matter becomes code."[PARAGRAPH:2]- Steve Jurvetson</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_NANOTECHNOLOGY_PEDIA</Tag>
-		<English>Nanotechnology is the craft of creating molecular 'machinery' to perform customized chemical and biological operations at a very small scale.[PARAGRAPH:2]Up through the 20th century, the sciences of chemistry and medicine relied on naturally occuring substances, or large-scale manipulation and processing of those substances, to produce what was needed. Chemicals might be mixed in a vat and heated up, or exposed to some other substance or condition, but there was no direct interaction between the human operator and the molecules themselves: they are simply left to act in accordance to blind forces that affect every part of the material at once.[PARAGRAPH:2]The idea of nanotechnology or 'nanotech,' pioneered by figures like Eric Drexler of MIT, is that we can create complex molecules which act like tiny machine tools. These molecular tools would have identifiable parts like tiny levers, wheels, and 'grippers' made up of varying structures of single atoms. They could then grab hold of a material surface or molecules floating in a solution, and break them up or reassemble them as needed.[PARAGRAPH:2]This would have many applications. Nanotech could be used to 'build' materials with unusual or extreme properties atom by atom, to clean up dangerous chemicals, or to enter into the body and attack cancer cells or toxins. Advocates expect them to perform all manner of tasks which cannot be achieved by simpler, conventional means of industrial chemistry.[PARAGRAPH:2]One example of successful, naturally-occuring 'nanotech' is the use of biological enzymes in industrial chemistry. An enzyme can take a chemical reaction that would normally happen slowly or not at all (like sugar turning into alcohol in a fermented beverage) and greatly speed it up. Nanotechnology researchers hope to take the potential of natural enzymes and generalize them to do whatever we can imagine, by controlling the molecular structure of matter.[PARAGRAPH:2]Some say nanotechnology will totally revolutionize the production of goods and distribution of resources around the world. Others question this, pointing out that nanotech molecular machines will be inherently large, relatively fragile molecules that may not survive well outside a controlled environment. It is also uncertain whether nanotech would ever be more efficient than 'macro-scale' processes for making large objects: nanotech could be a good way to apply a coating to an engine part, but not such a good way to make the part in the first place.[PARAGRAPH:2]Still, it seems likely that 21st century chemistry and biochemistry will be greatly strengthened by advances in this field, even if industry and society as a whole are not changed so much.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_NATIONALISM</Tag>
 		<English>Nationalism</English>
 		<French>
@@ -3280,37 +2705,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_NEWSPAPERS_PEDIA</Tag>
 		<English>Newspapers have played a significant role in the development of the Americas since the 18th century. The first newspaper published in what is now the United States was the Boston News-Letter, which began publication in 1704. Other early American newspapers included the New-York Weekly Journal (1725), the Pennsylvania Gazette (1728), and the Virginia Gazette (1736). Newspapers served as a vital source of information, not only about local and national news but also about international events. They played an important role in shaping public opinion and promoting political ideas, especially during the American Revolution. Many of the founding fathers, such as Benjamin Franklin and Thomas Paine, were journalists and publishers themselves.[PARAGRAPH:2]In the 19th century, the number of newspapers in the Americas grew significantly, fueled by advances in printing technology and the increasing demand for news and information. The rise of the penny press in the United States in the 1830s made newspapers accessible to a wider audience, and newspapers became an important medium for social, cultural, and political commentary. Newspapers continued to evolve in the 20th century with the introduction of radio and television, but they remained an important source of news and information. Today, newspapers are facing new challenges as readers increasingly turn to digital sources for their news, but they remain a vital part of the media landscape in the Americas and around the world.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_NUCLEAR_POWER</Tag>
-		<English>Nuclear Power</English>
-		<French>
-			<Text>&#201;nergie nucl&#233;aire</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Nuclear Power</German>
-		<Italian>Nuclear Power</Italian>
-		<Spanish>Nuclear Power</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_NUCLEAR_POWER_QUOTE</Tag>
-		<English>"Our children will enjoy in their homes electrical energy too cheap to meter."[PARAGRAPH:2]- Lewis L. Strauss</English>
-		<French>"Il n'est pas exag&#233;r&#233; de penser que nos enfants disposeront chez eux d'une &#233;nergie &#233;lectrique trop peu co&#251;teuse pour qu'on la compte."[PARAGRAPH:2]- Lewis L. Strauss</French>
-		<German>"Our children will enjoy in their homes electrical energy too cheap to meter."[PARAGRAPH:2]- Lewis L. Strauss</German>
-		<Italian>"Our children will enjoy in their homes electrical energy too cheap to meter."[PARAGRAPH:2]- Lewis L. Strauss</Italian>
-		<Spanish>"Our children will enjoy in their homes electrical energy too cheap to meter."[PARAGRAPH:2]- Lewis L. Strauss</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_NUCLEAR_POWER_PEDIA</Tag>
-		<English>The greatest peacetime use of the power of the atomic nucleus is in nuclear reactors. In the early days after the discovery of atomic fission, this was a subject of great hope and optimism - the ideal was expressed that atomic energy would make electricity "too cheap to meter".[PARAGRAPH:2]A nuclear reactor consists of a number of 'fuel rods' or 'fuel pellets' made up of fissile materials, kept at a concentration below that needed for a critical mass. Thus, the chain reaction cannot run away as in a nuclear bomb, and simply keeps the fuel running at a high temperature, steadily heated by rapid fission of the uranium. The heat is used to power turbines through a variety of media- pressurized water, steam, or liquid sodium, for instance; the turbines power electric generators.[PARAGRAPH:2]Design of a nuclear reactor is extremely challenging. The radiation environment inside the reactor core is intense, and all substances used inside the reactor must be chosen with an eye to their resistance and behavior when faced with radioactive bombardment of neutrons. Beyond this, there are also safety concerns- a nuclear reactor contains enough radioactive materials to contaminate a large area, if those materials were spread across the landscape.[PARAGRAPH:2]Early plant designs, dating to the 1950s, often had serious safety problems associated with the designs. Since then, the nuclear industry has learned much, but its tracks are dogged by anti-nuclear advocates opposed to the use of nuclear energy. This opposition points to nuclear accidents at Chernobyl and Fukushima and questions whether modern plants are truly safe from such disasters; they also object to the fact that nuclear reactors generate radioactive waste which remains dangerous to human life for thousands of years and must be stored under special conditions.[PARAGRAPH:2]Supporters of nuclear energy reply that there are viable ways to store the waste safely, but the controversy continues to rage. The dream of power "too cheap to meter" has foundered on this, along with a host of practical issues that come with designing the heavily reinforced, disaster-resistant facilities required for the reactor and its wastes.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3584,37 +2978,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_PNEUMATICS</Tag>
-		<English>Pneumatics</English>
-		<French>
-			<Text>Pneumatique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Pneumatics</German>
-		<Italian>Pneumatics</Italian>
-		<Spanish>Pneumatics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PNEUMATICS_QUOTE</Tag>
-		<English>"No pressure, no diamonds."[PARAGRAPH:2]- Thomas Carlyle</English>
-		<French>"Pas de pression, pas de diamant."[PARAGRAPH:2]- Thomas Carlyle</French>
-		<German>"No pressure, no diamonds."[PARAGRAPH:2]- Thomas Carlyle</German>
-		<Italian>"No pressure, no diamonds."[PARAGRAPH:2]- Thomas Carlyle</Italian>
-		<Spanish>"No pressure, no diamonds."[PARAGRAPH:2]- Thomas Carlyle</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PNEUMATICS_PEDIA</Tag>
-		<English>Pneumatics is the art of using pressurized air or gas as the basis for working machinery. Pneumatics are made practical by the efficient use of metalworking (to create airtight pipes) and organic chemistry (to create glues, resins, and other substances that can form an airtight seal over cloth or other more flexible substances).[PARAGRAPH:2]Among the advantages of pneumatics are that for many pneumatic systems, the working gas is freely available and nontoxic- to wit, air. Other working gases such as carbon dioxide do present toxicity or asphyxiation hazards, but in exchange tend to allow higher performance. Pneumatic systems tend to be rugged, reliable, and safe due to their being subject to minimal levels of shock from the easily compressed gases acting as a 'cushion'.[PARAGRAPH:2]Applications include brakes, drills, motors, control systems for ventilating structures, musical instruments, automatic tools such as jackhammers, and automatically-reloading firearms.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_POLITICS</Tag>
 		<English>Politics</English>
 		<French>
@@ -3855,72 +3218,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_RADAR</Tag>
-		<English>Radar</English>
-		<French>
-			<Text>Radar</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Radar</German>
-		<Italian>Radar</Italian>
-		<Spanish>Radar</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RADAR_QUOTE</Tag>
-		<English>"Vision is the art of seeing things invisible."[PARAGRAPH:2]- Jonathan Swift</English>
-		<French>"La vision est l'art de voir les choses invisibles."[PARAGRAPH:2]- Jonathan Swift</French>
-		<German>"Vision is the art of seeing things invisible."[PARAGRAPH:2]- Jonathan Swift</German>
-		<Italian>"Vision is the art of seeing things invisible."[PARAGRAPH:2]- Jonathan Swift</Italian>
-		<Spanish>"Vision is the art of seeing things invisible."[PARAGRAPH:2]- Jonathan Swift</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RADAR_PEDIA</Tag>
-		<English>Radar is a method of using radio waves to observe one's surroundings by technological means. Derived from the acronym "RAdio Detection And Ranging," radar permits observation to continue at distances the naked eye cannot reach, in conditions of bad weather and darkness the eye cannot penetrate, with machine-like precision the eye cannot duplicate. It is particularly useful for detecting aircraft at long range, although it can also be used from an aircraft to survey the land, or from a ship to detect another ship at sea.[PARAGRAPH:2]Innovation in radar technology began shortly before the Second World War, with Britain in the lead and other nations such as Germany and the US following close behind. The British capitalized on their advantage and developed the highly effective "Chain Home" system of early warning stations to detect any enemy aircraft trying to attack their island. This proved a very useful defensive asset in resisting the severe German air attacks of 'the Blitz' during late 1940. Combined with other uses of the radio spectrum (such as cunningly mimicking German navigation beacons so that German bombers would get lost in the dark and bomb random wheat fields instead of British cities), Britain used its advantage in radar to wage what Winston Churchill called a "wizards' war" that complemented the air war then being fought.[PARAGRAPH:2]When the tables began to turn in 1943, the Germans too found radar a useful means of defending against British and American air attack, although the sheer mass of the Allied war machine caused their defenses to break down by late 1944. Meanwhile, the Germans' submarine warfare campaign likewise suffered from Allied use of radar to detect submarines; and on the other side of the world, the total lack of effective radar on the part of their allies, the Japanese, played a major role in Japan's defeat in air and naval combat from 1942 on.[PARAGRAPH:2]Radar became far more advanced and developed in the postwar era with the steady rise of electronics technology, especially after the vacuum tube gave way to the integrated circuit. The military continues to make use of radar imaging as the primary means of tracking aircraft, and also employs it to scan the ground from the air. In civilian applications, radar is used to coordinate commercial air traffic to prevent collisions, and is a common, valuable scientific instrument whenever detailed imagery needs to be taken from a distance.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RADIO</Tag>
-		<English>Radio</English>
-		<French>
-			<Text>Radio</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Funkwesen</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Radiocomunicazioni</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Radio</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RADIO_QUOTE</Tag>
-		<English>"A world without radio is a deaf world."[PARAGRAPH:2] - Ernest Yeboah</English>
-		<French>"Un monde sans radio est un monde sourd."[PARAGRAPH:2] - Ernest Yeboah</French>
-		<German>"A world without radio is a deaf world."[PARAGRAPH:2] - Ernest Yeboah</German>
-		<Italian>"A world without radio is a deaf world."[PARAGRAPH:2] - Ernest Yeboah</Italian>
-		<Spanish>"A world without radio is a deaf world."[PARAGRAPH:2] - Ernest Yeboah</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_RAILROAD</Tag>
 		<English>Railroad</English>
 		<French>
@@ -3956,72 +3253,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_REFINING</Tag>
-		<English>Refining</English>
-		<French>
-			<Text>Raffinage</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Refining</German>
-		<Italian>Refining</Italian>
-		<Spanish>Refining</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_REFINING_QUOTE</Tag>
-		<English>"The formula for success: rise early, work late, and strike oil."[PARAGRAPH:2]- J. Paul Getty</English>
-		<French>"Ma recette du succ&#232;s ? Se lever t&#244;t. Travailler tard. Trouver du p&#233;trole."[PARAGRAPH:2]- J. Paul Getty</French>
-		<German>"The formula for success: rise early, work late, and strike oil."[PARAGRAPH:2]- J. Paul Getty</German>
-		<Italian>"The formula for success: rise early, work late, and strike oil."[PARAGRAPH:2]- J. Paul Getty</Italian>
-		<Spanish>"The formula for success: rise early, work late, and strike oil."[PARAGRAPH:2]- J. Paul Getty</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_REFINING_PEDIA</Tag>
-		<English>When the demand for oil-based fuels for lighting and other purposes began to soar in the 19th century, scientists began searching for a way to make use of crude oil. This research led to techniques in which crude oil was broken down, or refined, into a number of different fuels, including kerosene and gasoline. As consumer demand continued to increase, commercial refineries were set up to purify crude oil. The new petroleum products produced as a result of the development and perfection of the refining process led to the use of oil-based fuels in many consumer and industrial applications. These include the use of petrol to power automobiles, and the use of oil for heating and for the generation of electrical power.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_REFRIGERATION</Tag>
-		<English>Refrigeration</English>
-		<French>
-			<Text>R&#233;frig&#233;ration</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>K&#252;hltechnik</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Refrigerazione</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Refrigeraci&#243;n</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_REFRIGERATION_QUOTE</Tag>
-		<English>"Tell me what you eat, and I will tell you what you are."[PARAGRAPH:2]- Anthelme Brillat-Savarin, The Physiology of Taste</English>
-		<French>"Dis-moi ce que tu manges, je te dirai qui tu es."[PARAGRAPH:2]- Anthelme Brillat-Savarin, Physiologie du go&#251;t</French>
-		<German>"Der Mensch ist, was er isst."[PARAGRAPH:2]- Anthelme Brillat-Savarin</German>
-		<Italian>"Dimmi cosa mangi e ti dir&#242; chi sei."[PARAGRAPH:2]- Anthelme Brillat-Savarin</Italian>
-		<Spanish>"Dime lo que comes y te dir&#233; qui&#233;n eres."[PARAGRAPH:2]- Anthelme Brillat-Savarin</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_REGIMENTS</Tag>
 		<English>Regiments</English>
 		<French>Regiments</French>
@@ -4040,37 +3271,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_REGIMENTS_PEDIA</Tag>
 		<English>The history of military regiments in the Americas is a complex and varied one, reflecting the different colonial powers and their respective military traditions. In the early years of colonization, the Spanish conquistadors often relied on local indigenous warriors to supplement their own forces. Similarly, the French colonial armies in North America worked closely with Native American tribes, forming alliances and recruiting indigenous fighters into their ranks. As the colonies grew and developed their own militaries, they began to establish organized regiments based on European models. The British, in particular, were known for their highly regimented military organization, which was based on a hierarchical system of officers and enlisted men. British colonial regiments were often made up of both British soldiers and colonial recruits, and were instrumental in many of the key battles of the colonial period, including the French and Indian War and the American Revolution.[PARAGRAPH:2]During the American Revolution, the Continental Army was established as a centralized military force for the fledgling United States. The army was organized into a series of regiments, each of which was made up of several companies. The regiments were commanded by colonels, who were responsible for overseeing the training and discipline of their troops. The Continental Army regiments played a key role in the defeat of the British, and their legacy can be seen in the organization of modern military units. After the Revolutionary War, the United States continued to expand and develop its military capabilities, with regiments playing an important role in the War of 1812, the Mexican-American War, and the Civil War. In each of these conflicts, regiments were organized along strict hierarchical lines, with officers commanding enlisted men, and strict discipline enforced to maintain order on the battlefield. In the modern era, the organization of military regiments in the Americas has continued to evolve, reflecting changes in military </English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RENEWABLE_ENERGY</Tag>
-		<English>Renewable Energy</English>
-		<French>
-			<Text>&#201;nergie renouvelable</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Renewable Energy</German>
-		<Italian>Renewable Energy</Italian>
-		<Spanish>Renewable Energy</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RENEWABLE_ENERGY_QUOTE</Tag>
-		<English>"Ere many generations pass, our machinery will be driven by a power obtainable at any point of the universe."[PARAGRAPH:2]- Nikola Tesla, Experiments with Alternate Currents</English>
-		<French>"Dans quelques g&#233;n&#233;rations, nos machines seront anim&#233;es gr&#226;ce &#224; une &#233;nergie disponible en tous points de l'univers."[PARAGRAPH:2]- Nikola Tesla, Experiments with Alternate Currents</French>
-		<German>"Ere many generations pass, our machinery will be driven by a power obtainable at any point of the universe."[PARAGRAPH:2]- Nikola Tesla, Experiments with Alternate Currents</German>
-		<Italian>"Ere many generations pass, our machinery will be driven by a power obtainable at any point of the universe."[PARAGRAPH:2]- Nikola Tesla, Experiments with Alternate Currents</Italian>
-		<Spanish>"Ere many generations pass, our machinery will be driven by a power obtainable at any point of the universe."[PARAGRAPH:2]- Nikola Tesla, Experiments with Alternate Currents</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_RENEWABLE_ENERGY_PEDIA</Tag>
-		<English>Renewable energy is a term used in industry to refer to methods of generating electrical power that can be 'renewed' indefinitely, rather than relying on some supply of fuel that will run out in the foreseeable future. We can predict that at some future time the world's reserves of uranium, natural gas, coal, and (especially) oil will run out. Or, more accurately, there will come a time at which it becomes economically impractical to extract the remaining supply of these materials, due to the extreme cost of doing so.[PARAGRAPH:2]By contrast, other sources of power are likely to go on indefinitely. Geothermal power is driven by slow radioactive decay inside the earth, tidal power by the gravitational strength of the moon, and solar power is driven by the sun. All three sources of energy will exist as long as our solar system remains in some recognizable form. Likewise, wind and hydroelectric power take advantage of the Earth's naturally occurring water and air cycles, and are driven by its weather; they will exist so long as there is weather to draw power from.[PARAGRAPH:2]Through the 20th century, renewable energy sources other than hydroelectric energy usually went relatively undeveloped. In some cases this was because of the need for computerized design and coordination to make the systems effective (especially for wind power); in others, it was purely a matter of economics, with power from expendable fuel being cheaper and easier to supply. However, in recent times, many nations have seen fit to explore renewable energy. The hope is that renewable power sources will provide lower environmental impact and longer-term, more sustainable energy into the indefinite future, after other sources of power are exhausted.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4173,76 +3373,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ROBOTICS</Tag>
-		<English>Robotics</English>
-		<French>
-			<Text>Robotique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Robotertechnik</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Robotica</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Rob&#243;tica</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ROBOTICS_QUOTE</Tag>
-		<English>"From the moment when the machine first made its appearance it was clear to all thinking people that the need for human drudgery, and therefore to a great extent for human inequality, had disappeared."[PARAGRAPH:2]- George Orwell, Nineteen Eighty-Four</English>
-		<French>"D&#232;s le moment de la parution de la premi&#232;re machine, il fut &#233;vident, pour tous les gens qui r&#233;fl&#233;chissaient, que la n&#233;cessit&#233; du travail de l'homme et, en cons&#233;quence, dans une grande mesure, de l'in&#233;galit&#233; humaine, avait disparu."[PARAGRAPH:2]- George Orwell, 1984</French>
-		<German>"From the moment when the machine first made its appearance it was clear to all thinking people that the need for human drudgery, and therefore too a great extent for human inequality, had disappeared."[PARAGRAPH:2]- George Orwell, Nineteen Eighty-Four</German>
-		<Italian>"From the moment when the machine first made its appearance it was clear to all thinking people that the need for human drudgery, and therefore too a great extent for human inequality, had disappeared."[PARAGRAPH:2]- George Orwell, Nineteen Eighty-Four</Italian>
-		<Spanish>"From the moment when the machine first made its appearance it was clear to all thinking people that the need for human drudgery, and therefore too a great extent for human inequality, had disappeared."[PARAGRAPH:2]- George Orwell, Nineteen Eighty-Four</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ROCKETRY</Tag>
-		<English>Rocketry</English>
-		<French>
-			<Text>Fus&#233;es</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Raketentechnik</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Missilistica</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Coheter&#237;a</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ROCKETRY_QUOTE</Tag>
-		<English>"We have guided missiles and misguided men."[PARAGRAPH:2]- Martin Luther King Jr., The Quest for Peace and Justice</English>
-		<French>"Nous avons des missiles guid&#233;s et des hommes d&#233;sorient&#233;s."[PARAGRAPH:2]- Martin Luther King Jr.</French>
-		<German>"We have guided missiles and misguided men."[PARAGRAPH:2]- Martin Luther King Jr., The Quest for Peace and Justice</German>
-		<Italian>"We have guided missiles and misguided men."[PARAGRAPH:2]- Martin Luther King Jr., The Quest for Peace and Justice</Italian>
-		<Spanish>"We have guided missiles and misguided men."[PARAGRAPH:2]- Martin Luther King Jr., The Quest for Peace and Justice</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_SAILING</Tag>
 		<English>Sailing</English>
 		<French>
@@ -4276,29 +3406,6 @@
 	</TEXT>
 
 
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SATELLITES</Tag>
-		<English>Satellites</English>
-		<French>
-			<Text>Satellites</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Satellites</German>
-		<Italian>Satellites</Italian>
-		<Spanish>Satellites</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SATELLITES_QUOTE</Tag>
-		<English>"The earth is the cradle of the mind but one cannot eternally live in a cradle."[PARAGRAPH:2]- Konstantin Tsiolkovsky</English>
-		<French>"La Terre est le berceau de l'humanit&#233;, mais qui veut passer sa vie enti&#232;re dans un berceau ?"[PARAGRAPH:2]- Constantin Tsiolkovski</French>
-		<German>"Die Erde ist die Wiege der Menschheit, aber welches Kind bleibt schon ewig in seiner Wiege."[PARAGRAPH:2]- Konstantin Ciolkowski</German>
-		<Italian>"La Terra &#232; la culla della mente... ma non si pu&#242; vivere sempre in una culla..."[PARAGRAPH:2]- Konstantin Tsiolkovksy</Italian>
-		<Spanish>"La Tierra es la cuna de la Humanidad, pero no puedes vivir en una cuna eternamente."[PARAGRAPH:2]- Konstant&#237;n Tsiolkovksi</Spanish>
-	</TEXT>
-	
-	
 	
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SCHOLARSHIP</Tag>
@@ -4549,67 +3656,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SOCIAL_SERVICES</Tag>
-		<English>Social Services</English>
-		<French>
-			<Text>Services sociaux</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Social Services</German>
-		<Italian>Social Services</Italian>
-		<Spanish>Social Services</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SOCIAL_SERVICES_QUOTE</Tag>
-		<English>"Therefore a wise prince will seek means by which his subjects will always and in every possible condition of things have need of his government, and then they will always be faithful to him."[PARAGRAPH:2]- Niccolo Machiavelli, The Prince</English>
-		<French>"Le prince doit donc, s'il est dou&#233; de quelque sagesse, imaginer et &#233;tablir un syst&#232;me de gouvernement tel, qu'en quelque temps que ce soit, et malgr&#233; toutes les circonstances, les citoyens aient besoin de lui : alors il sera toujours certain de les trouver fid&#232;les."[PARAGRAPH:2]- Nicolas Machiavel, Le Prince</French>
-		<German>"Therefore a wise prince will seek means by which his subjects will always and in every possible condition of things have need of his government, and then they will always be faithful to him."[PARAGRAPH:2]- Niccolo Machiavelli, The Prince</German>
-		<Italian>"Therefore a wise prince will seek means by which his subjects will always and in every possible condition of things have need of his government, and then they will always be faithful to him."[PARAGRAPH:2]- Niccolo Machiavelli, The Prince</Italian>
-		<Spanish>"Therefore a wise prince will seek means by which his subjects will always and in every possible condition of things have need of his government, and then they will always be faithful to him."[PARAGRAPH:2]- Niccolo Machiavelli, The Prince</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SOCIAL_SERVICES_PEDIA</Tag>
-		<English>A social or public service is a service which is provided by government to people living within its jurisdiction, either directly (through the public sector) or by financing provision of services. The term is associated with a social consensus (usually expressed through democratic elections) that certain services should be available to all, regardless of income, physical ability or mental acuity. Even where public services are neither publicly provided nor publicly financed, for social and political reasons they are usually subject to regulation going beyond that applying to most economic sectors. Public policy when made in the public's interest and motivations can provide public services. Public service is also a course that can be studied at a college or university. Examples of public services are the fire brigade, police, air force, and paramedics.[PARAGRAPH:2]A public service may sometimes have the characteristics of a public good (being non-rivalrous and non-excludable), but most are services which may (according to prevailing social norms) be under-provided by the market. In most cases public services are services, i.e. they do not involve manufacturing of goods. They may be provided by local or national monopolies, especially in sectors which are natural monopolies.[PARAGRAPH:2]Historically, the widespread provision of public services in developed countries usually began in the late nineteenth century, often with the municipal development of gas and water services. Later, governments began to provide other services such as electricity and healthcare. In most developed countries such services are still provided by local or national government, the biggest exceptions being the U.S. and the UK, where private provision is more significant.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SPACEFLIGHT</Tag>
-		<English>Spaceflight</English>
-		<French>
-			<Text>Vol spatial</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Spaceflight</German>
-		<Italian>Spaceflight</Italian>
-		<Spanish>Spaceflight</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SPACEFLIGHT_QUOTE</Tag>
-		<English>"That's one small step for man; one giant leap for humanity."[PARAGRAPH:2]- Neil Armstrong</English>
-		<French>"Un petit pas pour l'homme, un bond de g&#233;ant pour l'humanit&#233;."[PARAGRAPH:2]- Neil Armstrong</French>
-		<German>"That's one small step for man; one giant leap for humanity."[PARAGRAPH:2]- Neil Armstrong</German>
-		<Italian>"That's one small step for man; one giant leap for humanity."[PARAGRAPH:2]- Neil Armstrong</Italian>
-		<Spanish>"That's one small step for man; one giant leap for humanity."[PARAGRAPH:2]- Neil Armstrong</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SPACEFLIGHT_PEDIA</Tag>
-		<English>Utilizing the now well-developed science of rocketry, the modern exploration of space began in October 1957 when the Soviet Union launched Sputnik 1. This tiny satellite orbited the earth for 57 days, providing information on radiation and other phenomena in the upper atmosphere. In less than a year, the United States had also launched a satellite, Explorer 1. This started the "space race", years of competition between the U.S. and the U.S.S.R. to achieve new frontiers in space exploration. Space flight advanced rapidly from the simple sub-orbital flights of the 1950s, to manned missions to Earth's moon in the late 1960s. The rapid growth of space technology led to many practical applications, such as weather and surveillance satellites, and vastly improved worldwide communications. Today, although hindered by severe government budget cuts, the exploration of space continues.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_SPIRITUALISM</Tag>
 		<English>Spiritualism</English>
 		<French>Spiritualism</French>
@@ -4695,50 +3741,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SUPERCONDUCTORS</Tag>
-		<English>Superconductors</English>
-		<French>
-			<Text>Supraconducteurs</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>
-			<Text>Supraleiter</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Superconduttori</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Superconductores</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SUPERCONDUCTORS_QUOTE</Tag>
-		<English>"What is happiness? The feeling that power is growing, that resistance is overcome."[PARAGRAPH:2]- Friedrich Nietzsche, The Antichrist</English>
-		<French>"Qu'est-ce que le bonheur ? Le sentiment que la puissance cro&#238;t, qu'une r&#233;sistance est surmont&#233;e."[PARAGRAPH:2]- Friedrich Nietzsche</French>
-		<German>"Was ist Gl&#252;ck? Das Gef&#252;hl davon, dass die Macht w&#228;chst, dass ein Widerstand &#252;berwunden wird."[PARAGRAPH:2]- Friedrich Nietzsche</German>
-		<Italian>"Cos'&#232; la felicit&#224;? La sensazione che la potenza cresce e che si sta superando una resistenza."[PARAGRAPH:2]- Friedrich Nietzsche</Italian>
-		<Spanish>"&#191;Qu&#233; es la felicidad? La sensaci&#243;n de que el poder est&#225; creciendo y se superan las dificultades".[PARAGRAPH:2]- Friedrich Nietzsche</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SUPERCONDUCTORS_PEDIA</Tag>
-		<English>Superconductivity is a phenomenon of exactly zero electrical resistance and expulsion of magnetic flux fields occurring in certain materials, called superconductors, when cooled below a characteristic critical temperature. It was discovered by Dutch physicist Heike Kamerlingh Onnes on April 8, 1911, in Leiden. Like ferromagnetism and atomic spectral lines, superconductivity is a quantum mechanical phenomenon. It is characterized by the Meissner effect, the complete ejection of magnetic field lines from the interior of the superconductor as it transitions into the superconducting state. The occurrence of the Meissner effect indicates that superconductivity cannot be understood simply as the idealization of perfect conductivity in classical physics.[PARAGRAPH:2]The electrical resistance of a metallic conductor decreases gradually as temperature is lowered. In ordinary conductors, such as copper or silver, this decrease is limited by impurities and other defects. Even near absolute zero, a real sample of a normal conductor shows some resistance. In a superconductor; the resistance drops abruptly to zero when the material is cooled below its critical temperature. An electric current flowing through a loop of superconducting wire can persist indefinitely with no power source.[PARAGRAPH:2]Superconducting magnets are some of the most powerful electromagnets known. They are used in MRI/NMR machines, mass spectrometers, the beam-steering magnets used in particle accelerators and plasma confining magnets in some tokamaks. They can also be used for magnetic separation, where weakly magnetic particles are extracted from a background of less or non-magnetic particles, as in the pigment industries.[PARAGRAPH:2]In the 1950s and 1960s, superconductors were used to build experimental digital computers using cryotron switches. More recently, superconductors have been used to make digital circuits based on rapid single flux quantum technology and RF and microwave filters for mobile phone base stations.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_SUPERMATERIALS</Tag>
 		<English>Supermaterials</English>
 		<French>
@@ -4765,59 +3767,6 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PSYCHOLOGY</Tag>
-		<English>Psychology</English>
-		<French>
-			<Text>Psychologie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Psychology</German>
-		<Italian>Psychology</Italian>
-		<Spanish>Psychology</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PSYCHOLOGY_QUOTE</Tag>
-		<English>"The mind is like an iceberg, it floats with one-seventh of its bulk above water."[PARAGRAPH:2]- Sigmund Freud</English>
-		<French>"L'esprit est comme un iceberg, il flotte avec un septi&#232;me de sa masse au-dessus de l'eau."[PARAGRAPH:2]- Sigmund Freud</French>
-		<German>"The mind is like an iceberg, it floats with one-seventh of its bulk above water."[PARAGRAPH:2]- Sigmund Freud</German>
-		<Italian>"The mind is like an iceberg, it floats with one-seventh of its bulk above water."[PARAGRAPH:2]- Sigmund Freud</Italian>
-		<Spanish>"The mind is like an iceberg, it floats with one-seventh of its bulk above water."[PARAGRAPH:2]- Sigmund Freud</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_PSYCHOLOGY_PEDIA</Tag>
-		<English>Psychology is the science of behavior and mind, embracing all aspects of conscious and unconscious experience as well as thought. It is an academic discipline and a social science which seeks to understand individuals and groups by establishing general principles and researching specific cases.[PARAGRAPH:2]In this field, a professional practitioner or researcher is called a psychologist and can be classified as a social, behavioral, or cognitive scientist. Psychologists attempt to understand the role of mental functions in individual and social behavior, while also exploring the physiological and biological processes that underlie cognitive functions and behaviors.[PARAGRAPH:2]Psychologists explore behavior and mental processes, including perception, cognition, attention, emotion (affect), intelligence, phenomenology, motivation (conation), brain functioning, and personality. This extends to interaction between people, such as interpersonal relationships, including psychological resilience, family resilience, and other areas. Psychologists of diverse orientations also consider the unconscious mind.[PARAGRAPH:2]Psychologists employ empirical methods to infer causal and correlational relationships between psychosocial variables. In addition, or in opposition, to employing empirical and deductive methods, some-especially clinical and counseling psychologists-at times rely upon symbolic interpretation and other inductive techniques. Psychology has been described as a "hub science", with psychological findings linking to research and perspectives from the social sciences, natural sciences, medicine, humanities, and philosophy.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SYNTHETICS</Tag>
-		<English>Synthetics</English>
-		<French>
-			<Text>Mat&#233;riaux synth&#233;tiques</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Synthetics</German>
-		<Italian>Synthetics</Italian>
-		<Spanish>Synthetics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SYNTHETICS_QUOTE</Tag>
-		<English>"Nothing on this earth lasts forever. Except maybe plastic."[PARAGRAPH:2]- Patricia Dunn</English>
-		<French>"Rien sur cette terre ne dure &#233;ternellement. Sauf peut-&#234;tre le plastique."[PARAGRAPH:2]- Patricia Dunn</French>
-		<German>"Nothing on this earth lasts forever. Except maybe plastic."[PARAGRAPH:2]- Patricia Dunn</German>
-		<Italian>"Nothing on this earth lasts forever. Except maybe plastic."[PARAGRAPH:2]- Patricia Dunn</Italian>
-		<Spanish>"Nothing on this earth lasts forever. Except maybe plastic."[PARAGRAPH:2]- Patricia Dunn</Spanish>
 	</TEXT>
 
 
@@ -4881,37 +3830,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TELECOMMUNICATIONS</Tag>
-		<English>Telecommunications</English>
-		<French>
-			<Text>T&#233;l&#233;communications</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Telecommunications</German>
-		<Italian>Telecommunications</Italian>
-		<Spanish>Telecommunications</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TELECOMMUNICATIONS_QUOTE</Tag>
-		<English>"The new electronic interdependence recreates the world in the image of a global village."[PARAGRAPH:2]- Marshall McLuhan, The Gutenberg Galaxy</English>
-		<French>"L'interd&#233;pendance nouvelle qu'impose l'&#233;lectronique recr&#233;e le monde &#224; l'image d'un village global."[PARAGRAPH:2]- Marshall McLuhan, La Galaxie Gutenberg</French>
-		<German>"The new electronic interdependence recreates the world in the image of a global village."[PARAGRAPH:2]- Marshall McLuhan, The Gutenberg Galaxy</German>
-		<Italian>"The new electronic interdependence recreates the world in the image of a global village."[PARAGRAPH:2]- Marshall McLuhan, The Gutenberg Galaxy</Italian>
-		<Spanish>"The new electronic interdependence recreates the world in the image of a global village."[PARAGRAPH:2]- Marshall McLuhan, The Gutenberg Galaxy</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TELECOMMUNICATIONS_PEDIA</Tag>
-		<English>The value of computers increases sharply when they can be used to send information by remote access over long distances. An isolated computer is just a machine for doing calculations and controlling fixed installations. A computer network can coordinate the activities of a large organization, give all members of the group access to a single central database, or allow scattered groups of people to interact in ways limited only by the power of their computers.[NEWLINE][NEWLINE]Early computer networks were piggybacked onto the existing infrastructure of the telephone system, and made use of simple communication protocols devised by computer scientists and enthusiasts. Over time, the complexity of networks has increased, as has the body of technical literature and specialist skills devoted to designing, building, and maintaining them. Today, most of the world's computer networks flow together seamlessly into the Internet, a world-spanning system that allows nearly anyone on Earth to communicate with anyone else, given computer access.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_TELEGRAPH</Tag>
 		<English>Telegraph</English>
 		<French>Telegraph</French>
@@ -4942,29 +3860,6 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TELEVISION</Tag>
-		<English>Television</English>
-		<French>
-			<Text>T&#233;l&#233;vision</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Television</German>
-		<Italian>Television</Italian>
-		<Spanish>Television</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TELEVISION_QUOTE</Tag>
-		<English>"In the age of television, image becomes more important than substance."[PARAGRAPH:2]- S. I. Hayakawa</English>
-		<French>"&#192; l'&#232;re de la t&#233;l&#233;vision, l'image devient plus importante que le fond."[PARAGRAPH:2]- S. I. Hayakawa</French>
-		<German>"In the age of television, image becomes more important than substance."[PARAGRAPH:2]- S. I. Hayakawa</German>
-		<Italian>"In the age of television, image becomes more important than substance."[PARAGRAPH:2]- S. I. Hayakawa</Italian>
-		<Spanish>"In the age of television, image becomes more important than substance."[PARAGRAPH:2]- S. I. Hayakawa</Spanish>
 	</TEXT>
 
 
@@ -5109,99 +4004,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TOURISM</Tag>
-		<English>Tourism</English>
-		<French>
-			<Text>Tourisme</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tourism</German>
-		<Italian>Tourism</Italian>
-		<Spanish>Tourism</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TOURISM_QUOTE</Tag>
-		<English>"The universe is a sort of book, whose first page one has read when one has seen only one's own country."[PARAGRAPH:2]- Louis-Charles Fougeret de Monbron, Le Cosmopolite</English>
-		<French>"L'Univers est une esp&#232;ce de livre, dont on n'a lu que la premi&#232;re page quand on n'a vu que son pays."[PARAGRAPH:2]- Louis-Charles Fougeret de Monbron, Le Cosmopolite</French>
-		<German>"The world is a book, and those who do not travel read only one page."[PARAGRAPH:2]- Augustine of Hippo</German>
-		<Italian>"The world is a book, and those who do not travel read only one page."[PARAGRAPH:2]- Augustine of Hippo</Italian>
-		<Spanish>"The world is a book, and those who do not travel read only one page."[PARAGRAPH:2]- Augustine of Hippo</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TOURISM_PEDIA</Tag>
-		<English>Tourism is travel for pleasure or business; also the theory and practice of touring, the business of attracting, accommodating, and entertaining tourists, and the business of operating tours. Tourism may be international, or within the traveller's country. The World Tourism Organization defines tourism more generally, in terms which go "beyond the common perception of tourism as being limited to holiday activity only", as people "traveling to and staying in places outside their usual environment for not more than one consecutive year for leisure, business and other purposes".[PARAGRAPH:2]Tourism can be domestic or international, and international tourism has both incoming and outgoing implications on a country's balance of payments. Today, tourism is a major source of income for many countries, and affects the economy of both the source and host countries, in some cases being of vital importance.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TRANSHUMANISM</Tag>
-		<English>Transhumanism</English>
-		<French>
-			<Text>Transhumanisme</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Transhumanism</German>
-		<Italian>Transhumanism</Italian>
-		<Spanish>Transhumanism</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TRANSHUMANISM_QUOTE</Tag>
-		<English>"What has the future in store for this strange being, born of a breath, of perishable tissue, yet immortal, with his powers fearful and divine?"[PARAGRAPH:2]- Nikola Tesla, Man's Greatest Achievement</English>
-		<French>"Que r&#233;serve le futur &#224; cet &#234;tre &#233;trange, n&#233; d'un souffle, fait de tissus p&#233;rissables, et pourtant immortel et dot&#233; de pouvoirs dignes d'un dieu ?"[PARAGRAPH:2]- Nikola Tesla, La plus grande r&#233;ussite de l'Homme</French>
-		<German>"What has the future in store for this strange being, born of a breath, of perishable tissue, yet immortal, with his powers fearful and divine?"[PARAGRAPH:2]- Nikola Tesla, Man's Greatest Achievement</German>
-		<Italian>"What has the future in store for this strange being, born of a breath, of perishable tissue, yet immortal, with his powers fearful and divine?"[PARAGRAPH:2]- Nikola Tesla, Man's Greatest Achievement</Italian>
-		<Spanish>"What has the future in store for this strange being, born of a breath, of perishable tissue, yet immortal, with his powers fearful and divine?"[PARAGRAPH:2]- Nikola Tesla, Man's Greatest Achievement</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TRANSHUMANISM_PEDIA</Tag>
-		<English>Transhumanism is an international and intellectual movement that aims to transform the human condition by developing and making widely available sophisticated technologies to greatly enhance human intellect and physiology.[PARAGRAPH:2]Transhumanist thinkers study the potential benefits and dangers of emerging technologies that could overcome fundamental human - as well as ethical - limitations of utilizing such technologies. The most common transhumanist thesis is that human beings may eventually be able to transform themselves into different beings with abilities so greatly expanded from the natural condition as to merit the label of posthuman beings.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_UNIFIED_THEORY</Tag>
-		<English>Unified Theory</English>
-		<French>
-			<Text>Th&#233;orie du tout</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Unified Theory</German>
-		<Italian>Unified Theory</Italian>
-		<Spanish>Unified Theory</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_UNIFIED_THEORY_QUOTE</Tag>
-		<English>"The universe is not only stranger than we imagine, it is stranger than we can imagine."[PARAGRAPH:2]- J. B. S. Haldane</English>
-		<French>"Non seulement l'Univers est plus &#233;trange que nous ne l'imaginons, mais il est plus &#233;trange que nous ne pouvons l'imaginer."[PARAGRAPH:2]- J. B. S. Haldane</French>
-		<German>"The universe is not only stranger than we imagine, it is stranger than we can imagine."[PARAGRAPH:2]- Werner Heisenberg</German>
-		<Italian>"The universe is not only stranger than we imagine, it is stranger than we can imagine."[PARAGRAPH:2]- Werner Heisenberg</Italian>
-		<Spanish>"The universe is not only stranger than we imagine, it is stranger than we can imagine."[PARAGRAPH:2]- Werner Heisenberg</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_UNIFIED_THEORY_PEDIA</Tag>
-		<English>By late 20th century, physics had converged on a set of well understood theories to describe nature. But there are several gaps, defects, or vulnerabilities in this universal model. Firstly, this set of theories stands on two pillars. One is the nature of gravity, as outlined by Einstein's theory of "general relativity" in 1920 and refined since that time, which treats time and space as flexible things that can be warped by gravity. The other is "quantum field theory," which describes the behavior of subatomic particles, treating each particle as a special instance of a generalized, abstract field of force and probability that permeates the universe.[PARAGRAPH:2]The problem is that quantum field theory, otherwise known as the Standard Model, assumes that time and space are fixed, inflexible, and invariant - that they are the constant and unchanging playing field on which particle interactions are allowed to happen. In other words, the Standard Model does not obey the theory of relativity. Therefore, it cannot be the whole story. General relativity appears to be a solid and essentially complete picture of a key part of reality, the Standard Model is not. It is solid, it explains the behavior of nearly all things that can be seen on Earth or elsewhere in the universe... but it is not complete.[PARAGRAPH:2]The Standard Model explains almost all known phenomena, but some of the ones it cannot explain present very large issues. It does not explain the nature or origins of dark matter or dark energy and yet astronomers have reason to believe that these things make up 95% of all substance in the universe today. The Standard Model does not explain why the ghostly neutrino particles coming from the Sun appear to randomly reshuffle their nature, in a way the Standard Model deems impossible. The Standard Model predicts that in the beginning of the universe, matter and antimatter 'should' have been created in equal quantities, and devoured each other totally, leaving behind nothing but light and radiation in all of space. In hindsight, this appears not to have occurred. For this and other reasons, despite the Standard Model providing huge advances in our understanding compared to anything that came before it, it is not the last step.[PARAGRAPH:2]Research into these matters is ongoing today. It is hoped that future physics will emerge which resolves some of these contradictions. In particular, it is hoped that these new physics will allow us to create a model of quantum physics that is consistent with Einstein's work on gravity - thus the name, "quantum gravity."</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_URBAN_PLANNING</Tag>
 		<English>Urban Planning</English>
 		<French>
@@ -5264,6 +4066,8 @@
 		<Italian>"La vera gloria consiste nel fare ci&#242; che merita di essere scritto e nello scrivere ci&#242; che merita di essere letto."[PARAGRAPH:2]- Plinio il Vecchio</Italian>
 		<Spanish>"La verdadera gloria consiste en hacer lo que merece escribirse y en escribir lo que merece leerse."[PARAGRAPH:2]- Plinio el Viejo</Spanish>
 	</TEXT>
+	
+	
 	
 	<TEXT>
 		<Tag>TXT_KEY_ERA_ANCIENT</Tag>
