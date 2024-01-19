@@ -16097,7 +16097,7 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 	// if both the river and water flags are set, we require one of the two conditions, not both
 	if (GC.getBuildingInfo(eBuilding).isWater())
 	{
-		if (eBuilding == (BuildingTypes)BUILDING_GOLDEN_GATE_BRIDGE || eBuilding == (BuildingTypes)BUILDING_BROOKLYN_BRIDGE)
+		if (eBuilding == (BuildingTypes)BUILDING_BROOKLYN_BRIDGE)
 		{
 			if (!plot()->isRiver() || !plot()->isCoastalLand(GC.getBuildingInfo(eBuilding).getMinAreaSize()))
 			{

@@ -723,7 +723,7 @@
 			<ImprovementUpgrade/>
 			<TechYieldChanges>
 				<TechYieldChange>
-					<PrereqTech>TECH_MACHINE_TOOLS</PrereqTech>
+					<PrereqTech>TECH_ENGINE</PrereqTech>
 					<TechYields>
 						<iYield>0</iYield>
 						<iYield>1</iYield>

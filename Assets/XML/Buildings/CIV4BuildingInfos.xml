@@ -1389,13 +1389,6 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</CommerceChanges>
-			<CommerceModifiers>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>25</iCommerce>
-			</CommerceModifiers>
 			<ConstructSound>AS2D_BUILD_DRYDOCK</ConstructSound>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
@@ -3653,7 +3646,7 @@
 			<Strategy>TXT_KEY_BUILDING_SLAUGHTERHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GROCER</ArtDefineTag>
-			<PrereqTech>TECH_BIOLOGY</PrereqTech>
+			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7445,7 +7438,7 @@
 			<Strategy>TXT_KEY_BUILDING_MILITARY_ACADEMY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MILITARY_ACADEMY</ArtDefineTag>
-			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<PrereqTech>TECH_STATECRAFT</PrereqTech>
 			<FreePromotion>PROMOTION_LEADERSHIP</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
@@ -9074,7 +9067,6 @@
 			<Description>TXT_KEY_BUILDING_STATUE_OF_LIBERTY</Description>
 			<Civilopedia>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_STATUE_OF_LIBERTY_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STATUE_OF_LIBERTY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_STATUE_OF_LIBERTY</MovieDefineTag>
@@ -9529,176 +9521,6 @@
 			<ConstructSound>AS2D_BUILD_COURTHOUSE</ConstructSound>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_GOLDEN_GATE_BRIDGE</BuildingClass>
-			<Type>BUILDING_GOLDEN_GATE_BRIDGE</Type>
-			<Description>TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_GOLDEN_GATE_BRIDGE</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</MovieDefineTag>
-			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
-			<bTeamShare>1</bTeamShare>
-			<bNukeImmune>1</bNukeImmune>
-			<bWater>1</bWater>
-			<bRiver>1</bRiver>
-			<iCost>2000</iCost>
-			<iHurryCostModifier>100</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>15</iMinAreaSize>
-			<iConquestProb>100</iConquestProb>
-			<iAsset>25</iAsset>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>4</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<CommerceChangeDoubleTimes>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
-			</CommerceChangeDoubleTimes>
-			<CommerceChangeOriginalOwners>
-				<bCommerceChangeOriginalOwner>0</bCommerceChangeOriginalOwner>
-				<bCommerceChangeOriginalOwner>0</bCommerceChangeOriginalOwner>
-				<bCommerceChangeOriginalOwner>1</bCommerceChangeOriginalOwner>
-			</CommerceChangeOriginalOwners>
-			<SpecialistYieldChanges>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</SpecialistYieldChange>
-				<SpecialistYieldChange>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</SpecialistYieldChange>
-			</SpecialistYieldChanges>
-			<BonusProductionModifiers>
-				<BonusProductionModifier>
-					<BonusType>BONUS_COPPER</BonusType>
-					<iProductonModifier>50</iProductonModifier>
-				</BonusProductionModifier>
-			</BonusProductionModifiers>
-			<ConstructSound>AS2D_BUILD_IRONWORKS</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>5</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>5</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_HOOVER_DAM</BuildingClass>
-			<Type>BUILDING_HOOVER_DAM</Type>
-			<Description>TXT_KEY_BUILDING_HOOVER_DAM</Description>
-			<Civilopedia>TXT_KEY_BUILDING_HOOVER_DAM_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_HOOVER_DAM_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_HOOVER_DAM_HELP</Help>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_HOOVER_DAM</ArtDefineTag>
-			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_ENGINEER</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
-			<bPower>1</bPower>
-			<bRiver>1</bRiver>
-			<bTeamShare>1</bTeamShare>
-			<bNukeImmune>1</bNukeImmune>
-			<iAIWeight>200</iAIWeight>
-			<iCost>2000</iCost>
-			<iHurryCostModifier>100</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iConquestProb>100</iConquestProb>
-			<iAsset>12</iAsset>
-			<iPower>8</iPower>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<CommerceChangeDoubleTimes>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
-			</CommerceChangeDoubleTimes>
-			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>4</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>4</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>4</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_MOUNT_RUSHMORE</BuildingClass>
-			<Type>BUILDING_MOUNT_RUSHMORE</Type>
-			<Description>TXT_KEY_BUILDING_MOUNT_RUSHMORE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_MOUNT_RUSHMORE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_MOUNT_RUSHMORE_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_MT_RUSHMORE</ArtDefineTag>
-			<PrereqTech>TECH_POWER_PROJECTION</PrereqTech>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
-			<bTeamShare>1</bTeamShare>
-			<bNukeImmune>1</bNukeImmune>
-			<iAIWeight>200</iAIWeight>
-			<iCost>1000</iCost>
-			<iHurryCostModifier>100</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iConquestProb>100</iConquestProb>
-			<iAsset>12</iAsset>
-			<iPower>8</iPower>
-			<iGlobalWarWearinessModifier>-50</iGlobalWarWearinessModifier>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>6</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<CommerceChangeDoubleTimes>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
-			</CommerceChangeDoubleTimes>
-			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>5</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>5</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_CRISTO_REDENTOR</BuildingClass>
 			<Type>BUILDING_CRISTO_REDENTOR</Type>
 			<Description>TXT_KEY_BUILDING_CRISTO_REDENTOR</Description>
@@ -9741,37 +9563,6 @@
 				<bCommerceChangeOriginalOwner>1</bCommerceChangeOriginalOwner>
 			</CommerceChangeOriginalOwners>
 			<ConstructSound>AS2D_BUILD_ORACLE</ConstructSound>
-		</BuildingInfo>
-		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_PENTAGON</BuildingClass>
-			<Type>BUILDING_PENTAGON</Type>
-			<Description>TXT_KEY_BUILDING_PENTAGON</Description>
-			<Civilopedia>TXT_KEY_BUILDING_PENTAGON_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_PENTAGON_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_PENTAGON_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_PENTAGON</ArtDefineTag>
-			<MovieDefineTag>ART_DEF_MOVIE_PENTAGON</MovieDefineTag>
-			<PrereqTech>TECH_POWER_PROJECTION</PrereqTech>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
-			<bTeamShare>1</bTeamShare>
-			<bNukeImmune>1</bNukeImmune>
-			<iCost>1250</iCost>
-			<iHurryCostModifier>200</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iConquestProb>100</iConquestProb>
-			<iGlobalExperience>2</iGlobalExperience>
-			<iAsset>20</iAsset>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
-				</Flavor>
-			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PLAGUE</BuildingClass>

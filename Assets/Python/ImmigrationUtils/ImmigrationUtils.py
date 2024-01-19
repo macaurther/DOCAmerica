@@ -885,22 +885,13 @@ class ImmigrationUtils:
 		immigrantDict = self.getAvailableColonists(iPlayer)
 		immigrantDict.update(self.getAvailableExpeditionaries(iPlayer))
 		
-		# Get the actual current player object
-		player = gc.getPlayer(iPlayer)
-		
-		# Get the players current gold amount
-		currentGold = player.getGold()
-		currentImmigration = player.getImmigration()
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
-
 		# Go through the available mercenaries
 		iHighestDesire = 0
 		for immigrantName in immigrantDict:
 			
 			immigrant = immigrantDict[immigrantName]
 			# Calculate how much gold the player will have after hiring the immigrant.
-			(immigrationCost, goldCost) = immigrant.getHireCost(currentImmigration, bProprietaries)
+			(immigrationCost, goldCost) = immigrant.getHireCost(iPlayer)
 			tmpImmigration = iImmigration - immigrationCost
 			tmpGold = iGold - goldCost
 			
@@ -914,6 +905,7 @@ class ImmigrationUtils:
 			if g_bDebug:
 				CvUtil.pyPrint(gc.getPlayer(iPlayer).getName() + " immigrationCost:" + str(immigrationCost) + " goldCost:" + str(goldCost) + " immigrationCost:" + str(immigrationCost) + " iGold:" + str(iGold)) 
 			
+			# MacAurther: TODO: Optimize this
 			iDesire = immigrant.getAIDesire(iPlayer)
 			
 			if g_bDebug:
@@ -957,9 +949,6 @@ class ImmigrationUtils:
 		expeditionaryDict = self.getAvailableExpeditionaries(iPlayer)
 
 		immigrant = None
-
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
 		
 		# Hire Immigrants until we get below 50 Immigration, but don't go below -5 GPT, and don't go below 50 Gold
 		while currentImmigration > 50 and player.getGoldPerTurn() > -5 and player.getGold() > 50:
@@ -989,7 +978,7 @@ class ImmigrationUtils:
 			# Debug code - end
 			
 			# deduct the hire cost from the computer players gold
-			(immigrationCost, goldCost) = immigrant.getHireCost(currentImmigration, bProprietaries)
+			(immigrationCost, goldCost) = immigrant.getHireCost(iPlayer)
 			currentImmigration -= immigrationCost
 			currentGold -= goldCost
 
@@ -1114,7 +1103,7 @@ class Mercenary:
 		self.iLevel = len(promotionList)
 		self.iExperienceLevel = iExperienceLevel
 		self.iNextExperienceLevel = iNextExperienceLevel
-		self.iHireCost = self.getHireCost(0, False)
+		self.iHireCost = self.getHireCost(-1)
 
 
 	# This method should be used for setting the instance of the Mercenary class
@@ -1135,7 +1124,7 @@ class Mercenary:
 
 		self.getLevel()
 
-		self.getHireCost(0, False)
+		self.getHireCost(-1)
 
 		self.getOwner()
 
@@ -1289,9 +1278,7 @@ class Mercenary:
 			CyInterface().addMessage(self.iBuilder, True, 20, strMessage, "", 0, "", ColorTypes(0), -1, -1, True, True) 
 	
 		# Subtract cost to hire from player current cash
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
-		(iImmigrationCost, iGoldCost) = self.getHireCost(player.getImmigration(), bProprietaries)
+		(iImmigrationCost, iGoldCost) = self.getHireCost(iPlayer)
 		player.setImmigration(player.getImmigration() - iImmigrationCost)
 		player.setGold(player.getGold() - iGoldCost)
 		
@@ -1322,20 +1309,37 @@ class Mercenary:
 		return self.promotionList
 
 	# Returns true if the available funds are enough to hire
-	def canAfford(self, iCurrentImmigration, iCurrentGold, bProprietaries):
-		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration, bProprietaries)
+	def canAfford(self, iPlayer):
+		# get the player instance
+		player = gc.getPlayer(iPlayer)
 		
-		if iGoldCost <= iCurrentGold:
+		(iImmigrationCost, iGoldCost) = self.getHireCost(iPlayer)
+		
+		if iGoldCost <= player.getGold():
 			return True
 		
 		return False
 	
 	# Returns the cost to hire the mercenary. If objUnit is non-none then the 
 	# iHireCost will be updated. Returns (iCostImmigration, iCostGold)
-	def getHireCost(self, iCurrentImmigration, bProprietaries):
+	def getHireCost(self, iPlayer):
 		' iHireCost - the cost to hire the mercenary'
 		
 		modifier = 0
+		
+		if iPlayer == -1:
+			iCurrentImmigration = 0
+			bDecolonization = False
+			bIntervention = False
+			bProprietaries = False
+		else:
+			# Get the actual current player object
+			player = gc.getPlayer(iPlayer)
+			civics = Civics.player(iPlayer)
+			iCurrentImmigration = player.getImmigration()
+			bDecolonization = iDecolonization in civics
+			bIntervention = iIntervention in civics
+			bProprietaries = iProprietaries in civics
 			
 		# if the self.objUnitInfo is actually set then get the latest cost to hire the mercenary.
 		if(self.objUnitInfo != None):
@@ -1351,7 +1355,13 @@ class Mercenary:
 		# Great people are very expensive
 		if self.getUnitInfoID() in [iGreatArtist, iGreatEngineer, iGreatGeneral, iGreatMerchant, iGreatProphet, iGreatScientist, iGreatStatesman]:
 			iImmigrationCost *= 30
-
+		
+		if bDecolonization:
+			iImmigrationCost *= 3
+			iImmigrationCost /= 2
+		elif bIntervention:
+			iImmigrationCost /= 2
+		
 		if iImmigrationCost > iCurrentImmigration:
 			iGoldCost = (iImmigrationCost - iCurrentImmigration) * 2
 			iImmigrationCost = iCurrentImmigration
@@ -1362,8 +1372,8 @@ class Mercenary:
 		return (iImmigrationCost, iGoldCost)
 			
 	
-	def getHireCostString(self, iCurrentImmigration, bProprietaries):
-		(iImmigrationCost, iGoldCost) = self.getHireCost(iCurrentImmigration, bProprietaries)
+	def getHireCostString(self, iPlayer):
+		(iImmigrationCost, iGoldCost) = self.getHireCost(iPlayer)
 		strHCost = ""
 		if iImmigrationCost > 0:
 			strHCost += u"%d%c" %(iImmigrationCost, gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar())

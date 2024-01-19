@@ -4903,7 +4903,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_RAILROAD</PrereqTech>
+			<PrereqTech>TECH_MACHINE_TOOLS</PrereqTech>
 			<iCost>115</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

@@ -7273,16 +7273,6 @@ bool CvUnit::build(BuildTypes eBuild)
 		}
 	}
 
-	// MacAurther: Pentagon effect
-	if (eBuild != NO_BUILD && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_PENTAGON))
-	{
-		if (GC.getBuildInfo(eBuild).getTechPrereq() == INFRASTRUCTURE)
-		{
-			iWorkRate *= 150;
-			iWorkRate /= 100;
-		}
-	}
-
 	// MacAurther: Russian UU: Promyshlenniki
 	if (eBuild != NO_BUILD && getUnitType() == UNIT_RUSSIAN_PROMYSHLENNIKI)
 	{

@@ -6385,7 +6385,6 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_STATUE_OF_LIBERTY, FRANCE)) return false;
 
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_LEAGUE_OF_NATIONS, AMERICA)) return false;
-		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_PENTAGON, AMERICA)) return false;
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_STATUE_OF_LIBERTY, AMERICA)) return false;
 
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_TEMPLE_OF_KUKULKAN, MAYA)) return false;

@@ -758,16 +758,6 @@
 			<Button>Art/Interface/Buttons/Buildings/TradingCompany.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_MT_RUSHMORE</Type>
-			<LSystem>LSYSTEM_4x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.21</fScale>
-			<fInterfaceScale>0.54</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/MtRushmore/MtRushmore.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/MtRushmore.dds,Art/Interface/Buttons/Buildings_Atlas.dds,5,8</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_RED_CROSS</Type>
 			<LSystem>LSYSTEM_2x2_NO_ROTATE</LSystem>
 			<bAnimated>0</bAnimated>
@@ -846,16 +836,6 @@
 			<NIF>Art/Structures/Buildings/ThreeGorgesDam/HooverDam.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/ThreeGorgesDam.dds,Art/Interface/Buttons/Buildings_Atlas.dds,2,10</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_PENTAGON</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.65</fScale>
-			<fInterfaceScale>0.45</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Pentagon/Pentagon.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Pentagon.dds,Art/Interface/Buttons/Buildings_Atlas.dds,8,5</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_LEAGUE_OF_NATIONS</Type>
@@ -1048,16 +1028,6 @@
 			<Button>Art/Interface/Buttons/Buildings/orthodox_monastery.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_EMPIRE_STATE_BUILDING</Type>
-			<LSystem>LSYSTEM_3x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.00</fScale>
-			<fInterfaceScale>0.28</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/EmpireStateBuilding/empire.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/EmpireStateBuilding/empiremain.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_FLOATING_GARDENS</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1086,16 +1056,6 @@
 			<NIF>Art/Structures/Wonders/MachuPicchu/macchu_picchu.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Wonders/MachuPicchu/Machu.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CN_TOWER</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.2</fScale>
-			<fInterfaceScale>0.25</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/CN_Tower/cn_tower.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/CN_Tower/cntower.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_COLOMBIAN_HACIENDA</Type>
@@ -1448,26 +1408,6 @@
 			<Button>Art/Structures/Wonders/BrooklynBridge/bridge_button.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_GOLDEN_GATE_BRIDGE</Type>
-			<LSystem>LSYSTEM_RIVER</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.005</fScale>
-			<fInterfaceScale>1.1</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/GoldenGateBridge/Bridge.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/GoldenGateBridge/bridge.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_WORLD_TRADE_CENTER</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.7</fScale>
-			<fInterfaceScale>0.35</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/WorldTradeCenter/wtc.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/WorldTradeCenter/WorldTradeCenter.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GUADALUPE_BASILICA</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1496,16 +1436,6 @@
 			<NIF>Art/Structures/Buildings/UniversityNew/University.nif</NIF>
 			<KFM/>
 			<Button>,Art/Interface/Buttons/Buildings/University.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,7</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CRYSTAL_CATHEDRAL</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.4</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/CrystalCathedral/CrystalCathedral.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/CrystalCathedral/CrystalCathedral_btn.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_LAS_LAJAS_SANCTUARY</Type>
@@ -1818,36 +1748,6 @@
 			<Button>Art/Interface/Buttons/Wonders/Faneuil_Hall.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_ALCATRAZ</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>3</fScale>
-			<fInterfaceScale>0.25</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Alcatraz/Alcatraz.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Wonders/Alcatraz.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_GATEWAY_ARCH</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>3</fScale>
-			<fInterfaceScale>0.02</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Gateway_Arch/The_Gateway_Arch.nif</NIF>
-			<KFM/>
-			<Button>Art/Structures/Wonders/Gateway_Arch/gateway_arch_button.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_THE_STRIP</Type>
-			<LSystem>LSYSTEM_3x3</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>3</fScale>
-			<fInterfaceScale>0.2</fInterfaceScale>
-			<NIF>Art/Structures/Wonders/Las_Vegas/Las_Vegas.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Wonders/The_Strip.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GERMAN_ASSEMBLY_PLANT</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1976,16 +1876,6 @@
 			<NIF>Art/Structures/Buildings/French Salon/french_salon.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/FrenchQuarter.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_HOOVER_DAM</Type>
-			<LSystem>LSYSTEM_4x4</LSystem>
-			<bAnimated>1</bAnimated>
-			<fScale>0.98</fScale>
-			<fInterfaceScale>0.57</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/ThreeGorgesDam/HooverDam.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Wonders/HooverDam.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_NASA</Type>

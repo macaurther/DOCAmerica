@@ -51,10 +51,6 @@
 			<Path>Art/Movies/Wonders/ManhattanProject.bik</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
-			<Type>ART_DEF_MOVIE_PENTAGON</Type>
-			<Path>Art/Movies/Wonders/Pentagon.bik</Path>
-		</MovieArtInfo>
-		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_GRACELAND</Type>
 			<Path>Art/Movies/Wonders/RockAndRoll.bik</Path>
 		</MovieArtInfo>
@@ -123,10 +119,6 @@
 			<Path>Art/Movies/Wonders/Christ the Redeemer.bik</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
-			<Type>ART_DEF_MOVIE_MT_RUSHMORE</Type>
-			<Path>Art/Movies/Wonders/Rushmore.bik</Path>
-		</MovieArtInfo>
-		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_LARGE_HADRON_COLLIDER</Type>
 			<Path>Art/Movies/Wonders/ParticleAccelerator.bik</Path>
 		</MovieArtInfo>
@@ -137,10 +129,6 @@
 		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_TRAFALGAR_SQUARE</Type>
 			<Path>Art/Movies/Wonders/TrafalgarSquare.bik</Path>
-		</MovieArtInfo>
-		<MovieArtInfo>
-			<Type>ART_DEF_MOVIE_EMPIRE_STATE_BUILDING</Type>
-			<Path>Art/Movies/Wonders/EmpireStateBuilding.bik</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_MACHU_PICCHU</Type>
@@ -211,10 +199,6 @@
 			<Path>Art/Movies/Wonders/OxfordUniversity.bik</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
-			<Type>ART_DEF_MOVIE_WORLD_TRADE_CENTER</Type>
-			<Path>Art/Movies/Wonders/WorldTradeCenter.bik</Path>
-		</MovieArtInfo>
-		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_FRONTENAC</Type>
 			<Path>Art/Movies/Wonders/Frontenac.bik</Path>
 		</MovieArtInfo>
@@ -253,18 +237,6 @@
 		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_LAS_LAJAS_SANCTUARY</Type>
 			<Path>Art/Movies/Wonders/Las_Lajas.dds</Path>
-		</MovieArtInfo>
-		<MovieArtInfo>
-			<Type>ART_DEF_MOVIE_GOLDEN_GATE_BRIDGE</Type>
-			<Path>Art/Movies/Wonders/Golden_Gate_Bridge.dds</Path>
-		</MovieArtInfo>
-		<MovieArtInfo>
-			<Type>ART_DEF_MOVIE_CN_TOWER</Type>
-			<Path>Art/Movies/Wonders/CN_Tower.dds</Path>
-		</MovieArtInfo>
-		<MovieArtInfo>
-			<Type>ART_DEF_MOVIE_CRYSTAL_CATHEDRAL</Type>
-			<Path>Art/Movies/Wonders/CrystalCathedral.dds</Path>
 		</MovieArtInfo>
 		<MovieArtInfo>
 			<Type>ART_DEF_MOVIE_SHALIMAR_GARDENS</Type>

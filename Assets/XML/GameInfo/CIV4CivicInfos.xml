@@ -260,7 +260,7 @@
 			<Description>TXT_KEY_CIVIC_DICTATORSHIP</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DICTATORSHIP_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DICTATORSHIP_STRATEGY</Strategy>
-			<TechPrereq>TECH_JOURNALISM</TechPrereq>
+			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Totalitarianism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -329,7 +329,7 @@
 			<Description>TXT_KEY_CIVIC_COMMONWEALTH</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COMMONWEALTH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Strategy>
-			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<TechPrereq>TECH_RIGHTS_OF_MAN</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Individualism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -571,7 +571,7 @@
 			<Description>TXT_KEY_CIVIC_SPOILS_SYSTEM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SPOILS_SYSTEM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SPOILS_SYSTEM_STRATEGY</Strategy>
-			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
+			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Decentralization.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -614,7 +614,7 @@
 			<Description>TXT_KEY_CIVIC_POLICE_STATE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_POLICE_STATE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_POLICE_STATE_STRATEGY</Strategy>
-			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<TechPrereq>TECH_JOURNALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Police_State.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,2</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -816,7 +816,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_APPRENTICESHIP_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_APPRENTICESHIP_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_APPRENTICESHIP_HELP</Help>
-			<TechPrereq>TECH_ORGANIZED_LABOR</TechPrereq>
+			<TechPrereq>TECH_EDUCATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Apprenticeship.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -860,7 +860,7 @@
 			<Description>TXT_KEY_CIVIC_LABOR_UNIONS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_LABOR_UNIONS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_LABOR_UNIONS_STRATEGY</Strategy>
-			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<TechPrereq>TECH_ORGANIZED_LABOR</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/LaborUnions.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -1042,7 +1042,7 @@
 			<Description>TXT_KEY_CIVIC_CONSUMERISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CONSUMERISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONSUMERISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_MACROECONOMICS</TechPrereq>
+			<TechPrereq>TECH_ASSEMBLY_LINE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Consumerism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -1238,6 +1238,20 @@
 					<bNotRequired>1</bNotRequired>
 				</SpecialBuildingNotRequired>
 			</SpecialBuildingNotRequireds>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_CATHOLIC_TEMPLE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_CATHOLIC_MONASTERY</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_CATHOLIC_CATHEDRAL</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -1266,7 +1280,6 @@
 			<Description>TXT_KEY_CIVIC_HAVEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HAVEN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HAVEN_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_HAVEN_HELP</Help>
 			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Haven.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1274,6 +1287,13 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionBuildingProductionModifier>25</iStateReligionBuildingProductionModifier>
+			<CapitalCommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CapitalCommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -1308,7 +1328,7 @@
 			<Description>TXT_KEY_CIVIC_OPPORTUNITY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_OPPORTUNITY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
+			<TechPrereq>TECH_PIONEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Opportunity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -1320,7 +1340,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>1</iCommerce>
+				<iCommerce>2</iCommerce>
 			</SpecialistExtraCommerces>
 		</CivicInfo>
 		<CivicInfo>
@@ -1330,7 +1350,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MULTICULTURALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MULTICULTURALISM_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_MULTICULTURALISM_HELP</Help>
-			<TechPrereq>TECH_CIVIL_RIGHTS</TechPrereq>
+			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Multiculturalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -1342,7 +1362,7 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>6</iYield>
+						<iYield>4</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
@@ -1355,11 +1375,14 @@
 					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
 					<bValid>1</bValid>
 				</SpecialistValid>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
 			</SpecialistValids>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -1411,7 +1434,7 @@
 			<Description>TXT_KEY_CIVIC_OUTPOSTS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_OUTPOSTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_OUTPOSTS_STRATEGY</Strategy>
-			<TechPrereq>TECH_JOURNALISM</TechPrereq>
+			<TechPrereq>TECH_DIPLOMACY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Outposts.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -1432,7 +1455,21 @@
 						<iYield>2</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+						<iYield>2</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_TRADING_POST</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -1465,7 +1502,7 @@
 			<Description>TXT_KEY_CIVIC_DECOLONIZATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DECOLONIZATIONPEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DECOLONIZATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<TechPrereq>TECH_BALANCE_OF_POWER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Decolonization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -1473,7 +1510,7 @@
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>15</iCommerce>
+				<iCommerce>25</iCommerce>
 			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -1482,14 +1519,13 @@
 			<Description>TXT_KEY_CIVIC_INTERVENTION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INTERVENTION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INTERVENTION_STRATEGY</Strategy>
-			<TechPrereq>TECH_POWER_PROJECTION</TechPrereq>
+			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Intervention.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCultureGroup>2</iCultureGroup>
 			<CommerceModifiers>
-				<iCommerce>15</iCommerce>
-				<iCommerce>0</iCommerce>
+				<iCommerce>25</iCommerce>
 			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>

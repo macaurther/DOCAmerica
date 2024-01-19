@@ -976,14 +976,6 @@
 		<Spanish>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; immigration is based on happiness</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_HAVEN_HELP</Tag>
-		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</English>
-		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</French>
-		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</German>
-		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</Italian>
-		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_HAPPY]</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROFITEERING</Tag>
 		<English>Profiteering</English>
 		<French>Profiteering</French>

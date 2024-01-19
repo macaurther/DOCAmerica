@@ -6873,15 +6873,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
-	// MacAurther: Hoover Dam effect
-	if (eTeam != NO_TEAM && !isPeak() && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).isHasBuildingEffect((BuildingTypes)BUILDING_HOOVER_DAM))
-	{
-		if (iYield < 1 && (getTerrainType() == TERRAIN_DESERT || getTerrainType() == TERRAIN_SEMIDESERT))
-		{
-			iYield = 1;
-		}
-	}
-
 	return std::max(0, iYield);
 }
 

@@ -3258,19 +3258,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						}
 					}
 
-					// MacAurther: Pentagon Effect
-					if (eBuild != NO_BUILD && GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_PENTAGON))
-					{
-						if (GC.getBuildInfo(eBuild).getTechPrereq() == INFRASTRUCTURE)
-						{
-							iNowWorkRate *= 150;
-							iNowWorkRate /= 100;
-							
-							iThenWorkRate *= 150;
-							iThenWorkRate /= 100;
-						}
-					}
-
 					// MacAurther: Russian UU: Promyshlenniki
 					if (eBuild != NO_BUILD && pSelectedUnit->getUnitType() == UNIT_RUSSIAN_PROMYSHLENNIKI)
 					{

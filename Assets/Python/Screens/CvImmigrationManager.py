@@ -111,15 +111,6 @@ class CvImmigrationManager:
 		
 		# Get the ID for the current active player
 		iPlayer = gc.getGame().getActivePlayer()
-		
-		# Get the actual current player object
-		player = gc.getPlayer(iPlayer)
-		
-		# Get the players current gold amount
-		currentGold = player.getGold()
-		currentImmigration = player.getImmigration()
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
 
 		mercenaryCount = 0
 		
@@ -143,7 +134,7 @@ class CvImmigrationManager:
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
 			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
+			strHCost = mercenary.getHireCostString(iPlayer)
 			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
@@ -152,7 +143,7 @@ class CvImmigrationManager:
 
 			# Check to see if the player has enough gold to hire the mercenary. If they don't then
 			# don't let them hire the mercenary.
-			if not mercenary.canAfford(currentImmigration, currentGold, bProprietaries):
+			if not mercenary.canAfford(iPlayer):
 				bEnableHireMercenary = False
 				
 			# Check if unit can spawn
@@ -186,15 +177,6 @@ class CvImmigrationManager:
 		
 		# Get the ID for the current active player
 		iPlayer = gc.getGame().getActivePlayer()
-		
-		# Get the actual current player object
-		player = gc.getPlayer(iPlayer)
-		
-		# Get the players current gold amount
-		currentGold = player.getGold()
-		currentImmigration = player.getImmigration()
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
 
 		mercenaryCount = 0
 		
@@ -218,7 +200,7 @@ class CvImmigrationManager:
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
 			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
+			strHCost = mercenary.getHireCostString(iPlayer)
 			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
@@ -227,7 +209,7 @@ class CvImmigrationManager:
 
 			# Check to see if the player has enough gold to hire the mercenary. If they don't then
 			# don't let them hire the mercenary.
-			if not mercenary.canAfford(currentImmigration, currentGold, bProprietaries):
+			if not mercenary.canAfford(iPlayer):
 				bEnableHireMercenary = False
 				
 			# Check if unit can spawn
@@ -267,14 +249,6 @@ class CvImmigrationManager:
 		# Get the ID for the current active player
 		iPlayer = gc.getGame().getActivePlayer()
 		
-		# Get the actual current player object
-		player = gc.getPlayer(iPlayer)
-		
-		# Get the players current immigration amount
-		currentImmigration = player.getImmigration()
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
-		
 		screen.addPanel(UNIT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		screen.addPanel(UNIT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Promotions", "", True, True, self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
 		screen.addPanel(UNIT_INFORMATION_DETAILS_PANEL_ID, "", "", True, False, self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
@@ -293,7 +267,7 @@ class CvImmigrationManager:
 		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		# Build the unit hire cost string
-		strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
+		strHCost = mercenary.getHireCostString(iPlayer)
 		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Contract Income: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
 		# Show the contract income for the unit if it is in the game			
@@ -338,14 +312,6 @@ class CvImmigrationManager:
 	def populateMercenaryInformation(self, screen, mercenary):
 		# Get the ID for the current active player
 		iPlayer = gc.getGame().getActivePlayer()
-		
-		# Get the actual current player object
-		player = gc.getPlayer(iPlayer)
-		
-		# Get the players current immigration amount
-		currentImmigration = player.getImmigration()
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
 
 		screen.addPanel(IMMIGRANT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		screen.addPanel(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Promotions", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
@@ -354,7 +320,7 @@ class CvImmigrationManager:
 		screen.enableSelect(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, False)
 
 		# Build the mercenary hire cost string
-		strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
+		strHCost = mercenary.getHireCostString(iPlayer)
 		
 		# Build the mercenary XP string
 		strXP = u"%d/%d" %(mercenary.getExperienceLevel(), mercenary.getNextExperienceLevel())
@@ -587,15 +553,6 @@ class CvImmigrationManager:
 		
 		# Get the mercenaries available for hire
 		colonists = objImmigrationUtils.getAvailableColonists(iPlayer)
-		
-		# Get the actual player
-		player = gc.getPlayer(iPlayer)
-		
-		# Get the players current gold amount
-		currentGold = player.getGold()
-		currentImmigration = player.getImmigration()
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
 
 		# Go through each of the available mercenaries
 		for mercenaryName in colonists:
@@ -614,7 +571,7 @@ class CvImmigrationManager:
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 			
 			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
+			strHCost = mercenary.getHireCostString(iPlayer)
 			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
@@ -627,7 +584,7 @@ class CvImmigrationManager:
 
 			# If the player doesn't have enough money to hire the mercenary then
 			# we won't allow them to hire the current mercenary being processed.
-			if not mercenary.canAfford(currentImmigration, currentGold, bProprietaries):
+			if not mercenary.canAfford(iPlayer):
 				bEnableHireMercenary = False
 			
 			# Check if unit can spawn
@@ -648,15 +605,6 @@ class CvImmigrationManager:
 		
 		# Get the mercenaries available for hire
 		expeditionaries = objImmigrationUtils.getAvailableExpeditionaries(iPlayer)
-		
-		# Get the actual player
-		player = gc.getPlayer(iPlayer)
-		
-		# Get the players current gold amount
-		currentGold = player.getGold()
-		currentImmigration = player.getImmigration()
-		civics = Civics.player(iPlayer)
-		bProprietaries = iProprietaries in civics
 
 		# Go through each of the available mercenaries
 		for mercenaryName in expeditionaries:
@@ -675,7 +623,7 @@ class CvImmigrationManager:
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 			
 			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
+			strHCost = mercenary.getHireCostString(iPlayer)
 			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
@@ -688,7 +636,7 @@ class CvImmigrationManager:
 
 			# If the player doesn't have enough money to hire the mercenary then
 			# we won't allow them to hire the current mercenary being processed.
-			if not mercenary.canAfford(currentImmigration, currentGold, bProprietaries):
+			if not mercenary.canAfford(iPlayer):
 				bEnableHireMercenary = False
 			
 			# Check if unit can spawn
