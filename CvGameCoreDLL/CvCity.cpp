@@ -2135,11 +2135,11 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 		}
 	}
 
-	// Leoreth: can't train slaves -> MacAurther: Actually now you can with a Slave Market
-	/*if (GC.getUnitInfo(eUnit).isSlave())
+	// Leoreth: can't train slaves -> MacAurther: Actually now you can with a Slave Market, but you can't train Colonists
+	if (eUnit == UNIT_COLONIST)
 	{
 		return false;
-	}*/
+	}
 
 	return true;
 }
@@ -19116,4 +19116,10 @@ bool CvCity::rebuild()
 	}
 
 	return bBuilt;
+}
+
+bool CvCity::populate()
+{
+	changePopulation(1);
+	return true;
 }

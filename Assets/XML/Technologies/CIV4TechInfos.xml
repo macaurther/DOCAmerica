@@ -2501,13 +2501,6 @@
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>11</iGridX>
 			<iGridY>11</iGridY>
-			<CommerceFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>0</bFlexible>
-				<bFlexible>1</bFlexible>
-			</CommerceFlexible>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>

@@ -7212,6 +7212,12 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		if (!pPlot->canUseSlave(getOwner())) return false;
 	}
 
+	// MacAurther: Cannot contact tribe on a tile where there is no Tribe
+	if (eBuild == BUILD_CONTACT_TRIBE && pPlot->getImprovementType() != IMPROVEMENT_TRIBE)
+	{
+		return false;
+	}
+
 	// MacAurther: Cannot build on top of Tribe, unless it is to contact them
 	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_TRIBE)
 	{
@@ -8263,6 +8269,7 @@ BuildTypes CvUnit::getBuildType() const
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
+		case MISSION_POPULATE:
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -14801,6 +14808,57 @@ bool CvUnit::rebuild()
 		if (plot()->isActiveVisible(false))
 		{
 			NotifyEntity(MISSION_REBUILD);
+		}
+
+		kill(true);
+
+		return true;
+	}
+
+	return false;
+}
+
+bool CvUnit::canPopulate(const CvPlot* pPlot) const
+{
+	if (getUnitType() != UNIT_COLONIST)
+	{
+		return false;
+	}
+
+	if (!pPlot->isCity())
+	{
+		return false;
+	}
+
+	CvCity* pCity = pPlot->getPlotCity();
+
+	if (pCity->getOwner() != getOwner())
+	{
+		return false;
+	}
+
+	return true;
+}
+
+bool CvUnit::populate()
+{
+	if (!canPopulate(plot()))
+	{
+		return false;
+	}
+
+	if (!plot()->isCity())
+	{
+		return false;
+	}
+
+	bool bPopulated = plot()->getPlotCity()->populate();
+
+	if (bPopulated)
+	{
+		if (plot()->isActiveVisible(false))
+		{
+			NotifyEntity(MISSION_POPULATE);
 		}
 
 		kill(true);

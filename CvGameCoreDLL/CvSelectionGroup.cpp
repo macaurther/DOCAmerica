@@ -734,6 +734,7 @@ CvPlot* CvSelectionGroup::lastMissionPlot()
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
+		case MISSION_POPULATE:
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -1135,6 +1136,13 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			}
 			break;
 
+		case MISSION_POPULATE:
+			if (pLoopUnit->canPopulate(pPlot))
+			{
+				return true;
+			}
+			break;
+
 		case MISSION_DIE_ANIMATION:
 			return false;
 			break;
@@ -1333,6 +1341,7 @@ void CvSelectionGroup::startMission()
 		case MISSION_GREAT_MISSION:
 		case MISSION_SATELLITE_ATTACK:
 		case MISSION_REBUILD:
+		case MISSION_POPULATE: // MacAurther
 		case MISSION_DIE_ANIMATION:
 			break;
 
@@ -1627,6 +1636,13 @@ void CvSelectionGroup::startMission()
 					}
 					break;
 
+				case MISSION_POPULATE:
+					if (pLoopUnit->populate())
+					{
+						bAction = true;
+					}
+					break;
+
 				case MISSION_DIE_ANIMATION:
 					bAction = true;
 					break;
@@ -1901,6 +1917,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 				case MISSION_GREAT_MISSION:
 				case MISSION_SATELLITE_ATTACK:
 				case MISSION_REBUILD:
+				case MISSION_POPULATE:
 				case MISSION_DIE_ANIMATION:
 					break;
 
@@ -2007,6 +2024,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 			case MISSION_GREAT_MISSION:
 			case MISSION_SATELLITE_ATTACK:
 			case MISSION_REBUILD:
+			case MISSION_POPULATE:
 			case MISSION_DIE_ANIMATION:
 				bDone = true;
 				break;

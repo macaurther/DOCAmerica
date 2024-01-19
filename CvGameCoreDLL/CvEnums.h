@@ -1745,6 +1745,7 @@ enum UnitAITypes			// Exposed to Python
 	UNITAI_STATESMAN, // Leoreth
 	UNITAI_PERSECUTOR, // Leoreth
 	UNITAI_SATELLITE, // Leoreth
+	UNITAI_COLONIST, // MacAurther
 
 	NUM_UNITAI_TYPES
 };
@@ -1875,6 +1876,7 @@ enum MissionTypes				// Exposed to Python
 	MISSION_GREAT_MISSION,
 	MISSION_SATELLITE_ATTACK,
 	MISSION_REBUILD,
+	MISSION_POPULATE,
 // BUG - Sentry Actions - start
 #ifdef _MOD_SENTRY
 	MISSION_MOVE_TO_SENTRY,

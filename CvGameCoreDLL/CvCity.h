@@ -1200,6 +1200,7 @@ public:
 	bool isCore() const;
 
 	bool rebuild();
+	bool populate(); // MacAurther
 
 	DllExport int getMusicScriptId() const;
 	DllExport int getSoundscapeScriptId() const;

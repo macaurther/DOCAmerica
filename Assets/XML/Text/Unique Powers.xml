@@ -288,22 +288,6 @@
 		<Spanish>No City Resistance on Conquest in Latin America</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UP_CUB_TITLE</Tag>
-		<English>The Power of the Workers:</English>
-		<French>The Power of the Workers:</French>
-		<German>The Power of the Workers:</German>
-		<Italian>The Power of the Workers:</Italian>
-		<Spanish>The Power of the Workers:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_CUB</Tag>
-		<English>Hurrying production costs 50% less</English>
-		<French>Hurrying production costs 50% less</French>
-		<German>Hurrying production costs 50% less</German>
-		<Italian>Hurrying production costs 50% less</Italian>
-		<Spanish>Hurrying production costs 50% less</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UP_CONQUESTS_TARGET</Tag>
 		<English>%s1 has fielded an army to conquer our civilization!</English>
 		<French>%s1 a lev&#233; une arm&#233;e pour conqu&#233;rir notre civilisation !</French>
@@ -321,11 +305,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ENG</Tag>
-		<English>+50% [ICON_IMMIGRATION] in all cities</English>
-		<French>+50% [ICON_IMMIGRATION] in all cities</French>
-		<German>+50% [ICON_IMMIGRATION] in all cities</German>
-		<Italian>+50% [ICON_IMMIGRATION] in all cities</Italian>
-		<Spanish>+50% [ICON_IMMIGRATION] in all cities</Spanish>
+		<English>+100% [ICON_IMMIGRATION] in all cities</English>
+		<French>+100% [ICON_IMMIGRATION] in all cities</French>
+		<German>+100% [ICON_IMMIGRATION] in all cities</German>
+		<Italian>+100% [ICON_IMMIGRATION] in all cities</Italian>
+		<Spanish>+100% [ICON_IMMIGRATION] in all cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA_TITLE</Tag>
@@ -337,11 +321,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA</Tag>
-		<English>Forts claim more territory and are 50% cheaper to construct</English>
-		<French>Forts claim more territory and are 50% cheaper to construct</French>
-		<German>Forts claim more territory and are 50% cheaper to construct</German>
-		<Italian>Forts claim more territory and are 50% cheaper to construct</Italian>
-		<Spanish>Forts claim more territory and are 50% cheaper to construct</Spanish>
+		<English>Forts claim more territory and cost 50% less [ICON_COMMERCE]</English>
+		<French>Forts claim more territory and cost 50% less [ICON_COMMERCE]</French>
+		<German>Forts claim more territory and cost 50% less [ICON_COMMERCE]</German>
+		<Italian>Forts claim more territory and cost 50% less [ICON_COMMERCE]</Italian>
+		<Spanish>Forts claim more territory and cost 50% less [ICON_COMMERCE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAI_TITLE</Tag>

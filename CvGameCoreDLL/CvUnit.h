@@ -293,6 +293,8 @@ public:
 	bool isWorker() const;
 
 	// MacAurther
+	bool canPopulate(const CvPlot* pPlot) const;
+	bool populate();
 	bool canContactTribe(const CvPlot* pPlot) const;
 	bool canUnitContactTribe() const;
 	bool contactTribe();

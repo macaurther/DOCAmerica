@@ -58,13 +58,13 @@ lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 lTransports = [iCaravel, iCarrack, iIndiaman,	iGalleon, iFluyt, iBrigantine, iSteamship]
 lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
 lSlaves = [iAfricanSlave]
-#lColonists = [iColonist]	# MacAurther: TODO
+lColonists = [iColonist]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5]
 lMainlineUnits = [iArquebusier, iMusketman, iMusketeer, iRifleman]
 lSpecialtyUnits = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iSkirmisher, iGrenadier, iHussar, iDragoon, iPistolier, iCuirassier, iConquistador, iCarabineer, iCavalry, iBombard, iCannon, iArtillery, iHowitzer, iSloop, iFrigate, iIronclad, iPrivateer, iTorpedoBoat, iBarque, iShipOfTheLine, iManOfWar, iCruiser]
 
-lPossibleColonists = lSettlers + lWorkers + lMissionaries + lTransports + lGreatPeople + lSlaves # + lColonists
+lPossibleColonists = lSettlers + lWorkers + lMissionaries + lTransports + lGreatPeople + lSlaves + lColonists
 
 lPossibleExpeditionaries = lExplorers + lMilitia + lMainlineUnits + lSpecialtyUnits
 
@@ -512,6 +512,9 @@ class ImmigrationUtils:
 			colonistsDict = self.addAvailableUnit(iCaravel, colonistsDict)
 		elif pPlayer.canTrain(iLongship, false, false):
 			colonistsDict = self.addAvailableUnit(iLongship, colonistsDict)
+		
+		# Colonist is always available
+		colonistsDict = self.addAvailableUnit(iColonist, colonistsDict)
 		
 		# Get Great Person available (Anglo-America RP)
 		if civ(iPlayer) == iAmerica or civ(iPlayer) == iCanada:
@@ -1373,8 +1376,12 @@ class Mercenary:
 		
 		# Angle-America RP: Can hire Great People
 		if civ(iPlayer) == iAmerica or civ(iPlayer) == iCanada:
-			if self.getUnitInfoID() in [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]:
+			if self.getUnitInfoID() in lGreatPeople:
 				return True
+		
+		# Can hire Colonists even though you can't train them
+		if self.getUnitInfoID() in [iColonist]:
+			return True
 		
 		if pPlayer.canTrain(self.getUnitInfoID(), false, false):
 			return True
@@ -1615,7 +1622,6 @@ class Mercenary:
 		pPlayer = gc.getPlayer(iPlayer)
 		iCiv = civ(iPlayer)
 		iUnit = self.getUnitInfoID()
-		pUnit = gc.getUnitInfo(iUnit)
 		
 		iDesire = 0
 		
@@ -1655,13 +1661,16 @@ class Mercenary:
 			# Want 1 Transport per city?
 			return iNumCities - iOtherTransports
 		
+		# Choose randomly between Great People, Slaves, and Colonists
+		# TODO: Find better heuristic
 		if iUnit in lGreatPeople:
-			# Always want one
-			return 1
+			return gc.getGame().getSorenRandNum(100, 'random') / 100
 		
 		if iUnit in lSlaves:
-			# Always want one
-			return 1
+			return gc.getGame().getSorenRandNum(100, 'random') / 100
+		
+		if iUnit == iColonist:
+			return gc.getGame().getSorenRandNum(100, 'random') / 100
 		
 		if iUnit in lExplorers:
 			if iCiv not in [iSpain, iPortugal, iEngland, iFrance, iNetherlands, iRussia]:

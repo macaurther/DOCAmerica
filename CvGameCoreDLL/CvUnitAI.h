@@ -61,6 +61,7 @@ protected:
 
 	void AI_animalMove();
 	void AI_settleMove();
+	void AI_colonistMove();	// MacAurther
 	void AI_workerMove();
 	void AI_barbAttackMove();
 	void AI_attackMove();
@@ -222,6 +223,7 @@ protected:
 	// MacAurther
 	bool AI_PickupImmigrantsMove();
 	CvPlot* AI_GetClosestEdge();
+	bool AI_populateMove();
 
 	bool AI_followBombard();
 

@@ -1042,6 +1042,43 @@
 			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
+			<Class>UNITCLASS_COLONIST</Class>
+			<Type>UNIT_COLONIST</Type>
+			<Capture>UNITCLASS_COLONIST</Capture>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_COLONIST</Description>
+			<Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_COLONIST_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_COLONIST_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_COLONIST</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iAsset>2</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_COLONIST</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</UnitInfo>
+		<UnitInfo>
 			<Class>UNITCLASS_SCOUT</Class>
 			<Type>UNIT_SCOUT</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>

@@ -284,7 +284,6 @@ lCivilizations = [
 		iGold=200,
 		iStateReligion=iProtestantism,
 		lCivics=[iCharterColony, iCommonLaw, iSerfdom, iMercantilism, iHaven],
-		lEnemies=[iSpain],
 		techs=techs.column(10).including(iShipbuilding, iCharter, iCommunity).without(*lNativeTechs)
 	),
 	Civilization(

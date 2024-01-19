@@ -2871,6 +2871,14 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 				}
 			}
+			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_POPULATE)
+			{
+				if (pMissionCity != NULL)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_ACTION_POPULATE"));
+				}
+			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_BUILD)
 			{
 				eBuild = ((BuildTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData()));

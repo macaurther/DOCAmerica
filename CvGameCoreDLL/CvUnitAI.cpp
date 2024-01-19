@@ -407,6 +407,10 @@ bool CvUnitAI::AI_update()
 			AI_satelliteMove();
 			break;
 
+		case UNITAI_COLONIST:
+			AI_colonistMove();
+			break;
+
 		default:
 			FAssert(false);
 			break;
@@ -699,6 +703,7 @@ int CvUnitAI::AI_groupFirstVal()
 	case UNITAI_MERCHANT:
 	case UNITAI_ENGINEER:
 	case UNITAI_STATESMAN:
+	case UNITAI_COLONIST:
 		return 11;
 		break;
 
@@ -1325,6 +1330,35 @@ void CvUnitAI::AI_settleMove()
 		{
 			return;
 		}
+	}
+
+	if (AI_retreatToCity())
+	{
+		return;
+	}
+
+	if (AI_safety())
+	{
+		return;
+	}
+	
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
+}
+
+void CvUnitAI::AI_colonistMove()
+{
+	PROFILE_FUNC();
+
+	if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
+	{
+		getGroup()->pushMission(MISSION_SKIP);
+		return;
+	}
+
+	if (AI_populateMove())
+	{
+		return;
 	}
 
 	if (AI_retreatToCity())
@@ -18666,6 +18700,43 @@ CvPlot* CvUnitAI::AI_GetClosestEdge()
 	}
 
 	return GC.getMapINLINE().plotINLINE(iX, iY);
+}
+
+bool CvUnitAI::AI_populateMove()
+{
+	// Let's say we want to send Colonists to the city with the most spare happiness that's not starving that's reachable
+	int iNumCities = GET_PLAYER(getOwnerINLINE()).getNumCities();
+	CvCity* pBestCity = NULL;
+	int iBestCityHappy = 0;
+
+	for (int iI = 0; iI < iNumCities; iI++)
+	{
+		CvCity* pLoopCity = GET_PLAYER(getOwnerINLINE()).getCity(iI);
+		if (atPlot(pLoopCity->plot()) || canMoveInto(pLoopCity->plot(), false, false))
+		{
+			if (pLoopCity->foodDifference() >= 0)
+			{
+				int iHappy = pLoopCity->happyLevel() - pLoopCity->unhappyLevel();
+				if (iHappy > iBestCityHappy)
+				{
+					iBestCityHappy = iHappy;
+					pBestCity = pLoopCity;
+				}
+			}
+		}
+	}
+
+	if (pBestCity != NULL)
+	{
+		if (plot() == pBestCity->plot())
+		{
+			getGroup()->pushMission(MISSION_POPULATE);
+			return true;
+		}
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestCity->getX(), pBestCity->getY());
+		return true;
+	}
+	return false;
 }
 
 void CvUnitAI::read(FDataStreamBase* pStream)

@@ -1449,7 +1449,7 @@ dIdentifiers = {
 	"Mexico-stad"	:	"Tenochtitlan",
 	"Mexico-Stadt"	:	"Tenochtitlan",
 	"Mexiko-Stadt"	:	"Tenochtitlan",
-	"Tenochtitl&#225;n"	:	"Tenochtitlan",
+	"Tenochtitlan"	:	"Tenochtitlan",
 	"Teotihuac&#225;n"	:	"Teotihuacan",
 	"Teotihuacan"	:	"Teotihuacan",
 	"Texcoco"		:	"Teotihuacan",
@@ -1495,7 +1495,7 @@ tRenames = (
 	"Santa Fe" 		:	"Pueblo Bonito",
     "Tampico"		:	"Tlatelolco",
     "Teotihuacan"	:	"Teotihuacan",
-	"Tenochtitlan"	:	"Tenochtitl&#225;n",
+	"Tenochtitlan"	:	"Tenochtitlan",
     "Q'umarkaj"		:	"Q'umarkaj",
 },
 #Language: Norse

@@ -12744,7 +12744,7 @@ int CvPlayer::getCommerceRateModifier(CommerceTypes eIndex) const
 	// MacAurther: England UP
 	if (eIndex == COMMERCE_IMMIGRATION && getCivilizationType() == ENGLAND)
 	{
-		iCommerceRateModifier += 50;
+		iCommerceRateModifier += 100;
 	}
 
 	// MacAurther: Let's allow it to be negative

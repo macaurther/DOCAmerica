@@ -264,6 +264,16 @@ class CvImmigrationManager:
 
 	# Populates the unit information panel with the unit information details		
 	def populateUnitInformation(self, screen, mercenary):
+		# Get the ID for the current active player
+		iPlayer = gc.getGame().getActivePlayer()
+		
+		# Get the actual current player object
+		player = gc.getPlayer(iPlayer)
+		
+		# Get the players current immigration amount
+		currentImmigration = player.getImmigration()
+		civics = Civics.player(iPlayer)
+		bProprietaries = iProprietaries in civics
 		
 		screen.addPanel(UNIT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		screen.addPanel(UNIT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Promotions", "", True, True, self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
@@ -283,12 +293,12 @@ class CvImmigrationManager:
 		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		# Build the unit hire cost string
-		strHCost = mercenary.getHireCostString()
+		strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
 		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Contract Income: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
 		# Show the contract income for the unit if it is in the game			
 		if(mercenary.isPlaced()):
-			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, " TODO: Is this visible? 2", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		# Otherwise, show the number of turns until the unit is placed in the game
 		else:
@@ -326,6 +336,16 @@ class CvImmigrationManager:
 			
 	# Populates the mercenary information panel with the unit information details		
 	def populateMercenaryInformation(self, screen, mercenary):
+		# Get the ID for the current active player
+		iPlayer = gc.getGame().getActivePlayer()
+		
+		# Get the actual current player object
+		player = gc.getPlayer(iPlayer)
+		
+		# Get the players current immigration amount
+		currentImmigration = player.getImmigration()
+		civics = Civics.player(iPlayer)
+		bProprietaries = iProprietaries in civics
 
 		screen.addPanel(IMMIGRANT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		screen.addPanel(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Promotions", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
@@ -334,7 +354,7 @@ class CvImmigrationManager:
 		screen.enableSelect(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, False)
 
 		# Build the mercenary hire cost string
-		strHCost = mercenary.getHireCostString()
+		strHCost = mercenary.getHireCostString(currentImmigration, bProprietaries)
 		
 		# Build the mercenary XP string
 		strXP = u"%d/%d" %(mercenary.getExperienceLevel(), mercenary.getNextExperienceLevel())
@@ -351,7 +371,7 @@ class CvImmigrationManager:
 
 		# Show the mercenary costs if it is in the game			
 		if(mercenary.isPlaced()):
-			screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, " TODO: Is this visible? 3", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		# Otherwise, show the number of turns until the unit is placed in the game
 		else:
 			# Get the number of turns until the unit/mercenary is placed in the game
