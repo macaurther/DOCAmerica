@@ -1330,7 +1330,6 @@
 			<Description>TXT_KEY_CIVIC_PROFITEERING</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PROFITEERING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PROFITEERING_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_PROFITEERING_HELP</Help>
 			<TechPrereq>TECH_EXPLOITATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Plantation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

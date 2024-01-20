@@ -19,7 +19,7 @@
 			<Yields/>
 			<TechMovementChanges>
 				<TechMovementChange>
-					<PrereqTech>TECH_ENGINEERING</PrereqTech>
+					<PrereqTech>TECH_POSTAL_SERVICE</PrereqTech>
 					<iMovementChange>-10</iMovementChange>
 				</TechMovementChange>
 			</TechMovementChanges>

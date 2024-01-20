@@ -30,6 +30,14 @@ tColonistAlaska = 		((4, 106), (12, 108))
 
 # Congresses
 
+# Revolutions/Expeditionaries
+tExpeditionaryAmerica =		(44, 85)	# Boston
+tExpeditionaryHaiti = 		(37, 55)	# Port au Prince
+tExpeditionaryArgentina = 	(23, 10)	# Buenos Aires
+tExpeditionaryMexico = 		(17, 63)	# Caribbean Coast
+tExpeditionaryColombia = 	(32, 49)	# Caribbean Coast
+tExpeditionaryPeru = 		(20, 32)	# Lima
+
 # DynamicCivs
 
 # Religions

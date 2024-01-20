@@ -538,7 +538,8 @@ class Congress:
 		if self.bPostWar:
 			iHostPlayer = self.winners.alive().first()
 		else:
-			iHostPlayer = self.invites.where(lambda p: player(p).getNumCities() > 0).random()
+			# MacAurther: Just get a city, not neccessarily a core city
+			iHostPlayer = self.invites.where(lambda p: cities.owner(p).any()).random()
 			
 		# normal congresses during war time may be too small because all civilisations are tied up in global wars
 		if len(self.invites) < 3:
@@ -557,11 +558,8 @@ class Congress:
 					tThisPlayer = team(iThisPlayer)
 					if not tThisPlayer.canContact(iThatPlayer): tThisPlayer.meet(iThatPlayer, False)
 		
-		# MacAurther: Handle the case where the host does not have core cities
-		pHostCity = cities.core(iHostPlayer).owner(iHostPlayer).random()
-		if pHostCity == None:
-			pHostCity = cities.owner(iHostPlayer).random()
-		self.sHostCityName = pHostCity.getName()
+		# MacAurther: Just get a city, not neccessarily a core city
+		self.sHostCityName = cities.owner(iHostPlayer).random().getName()
 		
 		# moved selection of claims after the introduction event so claims and their resolution take place at the same time
 		if active() in self.invites:
@@ -805,6 +803,11 @@ class Congress:
 		bCity = plot.isCity()
 		bOwner = (iOwner >= 0)
 		bOwnClaim = (iClaimant == iVoter)
+		
+		# MacAurther: Check for validity for all parties
+		if -1 in [iClaimant, iOwner]:
+			print("Skipping iClaimant: " + str(iClaimant) + " and iOwner: " + str(iOwner))
+			return None
 		
 		bRecolonise = plot.getRegionID() in lAmerica and civ(iClaimant) in dCivGroups[iCivGroupEurope] and civ(iOwner) in dCivGroups[iCivGroupAmerica] and civ(iOwner) in dTechGroups[iTechGroupWestern]
 		
@@ -1131,7 +1134,7 @@ class Congress:
 									
 				# weaker and collapsing empires
 				if not is_minor(iLoopPlayer):
-					if game.getPlayerRank(iLoopPlayer) > iNumPlayersAlive / 2 and game.getPlayerRank(iLoopPlayer) < iNumPlayersAlive / 2:
+					if game.getPlayerRank(iPlayer) > iNumPlayersAlive / 2 and game.getPlayerRank(iLoopPlayer) < iNumPlayersAlive / 2:
 						if data.players[iLoopPlayer].iStabilityLevel == iStabilityCollapsing:
 							if iSettlerMapValue >= 90:
 								iValue += max(1, iSettlerMapValue / 100)
@@ -1192,6 +1195,7 @@ class Congress:
 			self.invites = self.invites.including(self.losers.where(lambda p: rank(p) < iLowestWinnerRank))
 			
 		self.invites = self.invites.including(players.major().without(self.invites).sort(rank))
+		self.invites = self.invites.novassal()
 		self.invites = self.invites.limit(getNumInvitations())
 		
 		# if not a war congress, exclude civs in global wars
@@ -1200,10 +1204,10 @@ class Congress:
 			self.invites = self.invites.without(lAttackers)
 			self.invites = self.invites.without(lDefenders)
 			
-		self.invites = self.invites.alive().where(lambda p: player(p).getNumCities() > 0)
+		self.invites = self.invites.alive()
 		
 		# America receives an invite if there are still claims in the west
-		if player(iAmerica).isAlive() and iAmerica not in self.invites and not self.bPostWar:
+		if player(iAmerica).isAlive() and not team(player(iAmerica).getTeam()).isAVassal() and iAmerica not in self.invites and not self.bPostWar:
 			if cities.regions(*lUnitedStates).notowner(iAmerica):
 				if len(self.invites) == getNumInvitations():
 					self.invites = self.invites.limit(len(self.invites)-1)

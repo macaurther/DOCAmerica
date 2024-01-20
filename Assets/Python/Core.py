@@ -35,6 +35,8 @@ map = gc.getMap()
 def getArea(area):
 	if isinstance(area, (CyPlot, CyCity)):
 		return area.getArea()
+	elif isinstance(area, CyUnit):
+		return getArea(plot(area))
 	elif isinstance(area, tuple) and len(area) == 2:
 		return plot(area).getArea()
 	return area
@@ -1034,6 +1036,9 @@ class EntityCollection(object):
 			return (element,)
 
 	def divide(self, keys):
+		if not keys:
+			raise ValueError("Divide among empty keys: %s" % self)
+	
 		shuffled_keys = self.shuffle()._keys[:]
 		return [(key, self.copy(key for j, key in enumerate(shuffled_keys) if j % len(keys) == i)) for i, key in enumerate(keys)]
 	
@@ -1626,7 +1631,7 @@ class Units(EntityCollection):
 class PlayerFactory:
 
 	def all(self):
-		return Players(range(gc.getMAX_PLAYERS())).alive()
+		return Players(range(gc.getMAX_PLAYERS())).where(lambda p: player(p).getCivilizationType() >= 0)
 		
 	def major(self):
 		return self.all().where(lambda p: not is_minor(p))
@@ -1995,7 +2000,7 @@ class Infos:
 	def buildingClass(self, identifier):
 		return gc.getBuildingClassInfo(identifier)
 	
-	def buildingClasses(self, identifier):
+	def buildingClasses(self):
 		return InfoCollection.type(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos())
 
 	def civ(self, identifier):
@@ -2145,6 +2150,9 @@ class Infos:
 	
 	def units(self):
 		return InfoCollection.type(gc.getUnitInfo, gc.getNumUnitInfos())
+	
+	def unitClasses(self):
+		return InfoCollection.type(gc.getUnitClassInfo, gc.getNumUnitClassInfos())
 	
 	def unitCombat(self, iUnitCombat):
 		return gc.getUnitCombatInfo(iUnitCombat)

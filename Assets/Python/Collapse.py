@@ -69,6 +69,10 @@ def downgradeCottages(iPlayer):
 		elif iImprovement == iCottage: 
 			plot.setImprovementType(-1)
 		
+		# MacAurther: Also destroy forts
+		if iImprovement == iFort: 
+			plot.setImprovementType(-1)
+		
 		# Destroy all Mississippi improvements and routes
 		if civ(iPlayer) == iMississippi and not player(iPlayer).isHuman():
 			if iImprovement >= 0:

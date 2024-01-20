@@ -87,11 +87,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DECOLONIZATION_STRATEGY</Tag>
-		<English>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</English>
-		<French>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</French>
-		<German>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</German>
-		<Italian>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</Italian>
-		<Spanish>Increased culture in all cities; no resistance on conquering colonies; combat bonus vs. Europeans</Spanish>
+		<English>Increased culture in all cities; increased cost to hire Immigrants; extra XP within borders</English>
+		<French>Increased culture in all cities; increased cost to hire Immigrants; extra XP within borders</French>
+		<German>Increased culture in all cities; increased cost to hire Immigrants; extra XP within borders</German>
+		<Italian>Increased culture in all cities; increased cost to hire Immigrants; extra XP within borders</Italian>
+		<Spanish>Increased culture in all cities; increased cost to hire Immigrants; extra XP within borders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INTERVENTION</Tag>
@@ -103,11 +103,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INTERVENTION_STRATEGY</Tag>
-		<English>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</English>
-		<French>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</French>
-		<German>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</German>
-		<Italian>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</Italian>
-		<Spanish>Increased commerce in all cities; receive free units upon first adoption; combat bonus vs. Post-Colonials</Spanish>
+		<English>Increased commerce in all cities; reduced cost to hire Immigrants</English>
+		<French>Increased commerce in all cities; reduced cost to hire Immigrants</French>
+		<German>Increased commerce in all cities; reduced cost to hire Immigrants</German>
+		<Italian>Increased commerce in all cities; reduced cost to hire Immigrants</Italian>
+		<Spanish>Increased commerce in all cities; reduced cost to hire Immigrants</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE</Tag>
@@ -479,16 +479,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>
-		<English>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</English>
-		<French>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</French>
-		<German>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</German>
-		<Italian>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</Italian>
-		<Spanish>[ICON_BULLET]Extra instability for cities outside core
-[ICON_BULLET]-50% [ICON_IMMIGRATION] in each city</Spanish>
+		<English>[ICON_BULLET]Extra instability for cities outside core</English>
+		<French>[ICON_BULLET]Extra instability for cities outside core</French>
+		<German>[ICON_BULLET]Extra instability for cities outside core</German>
+		<Italian>[ICON_BULLET]Extra instability for cities outside core</Italian>
+		<Spanish>[ICON_BULLET]Extra instability for cities outside core</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
@@ -969,11 +964,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN_STRATEGY</Tag>
-		<English>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; immigration is based on happiness</English>
-		<French>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; immigration is based on happiness</French>
-		<German>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; immigration is based on happiness</German>
-		<Italian>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; immigration is based on happiness</Italian>
-		<Spanish>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; immigration is based on happiness</Spanish>
+		<English>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</English>
+		<French>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</French>
+		<German>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</German>
+		<Italian>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</Italian>
+		<Spanish>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROFITEERING</Tag>
@@ -985,19 +980,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROFITEERING_STRATEGY</Tag>
-		<English>Extra production and commerce from Slave Plantations; extra science; immigration is based on commerce</English>
-		<French>Extra production and commerce from Slave Plantations; extra science; immigration is based on commerce</French>
-		<German>Extra production and commerce from Slave Plantations; extra science; immigration is based on commerce</German>
-		<Italian>Extra production and commerce from Slave Plantations; extra science; immigration is based on commerce</Italian>
-		<Spanish>Extra production and commerce from Slave Plantations; extra science; immigration is based on commerce</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PROFITEERING_HELP</Tag>
-		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</English>
-		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</French>
-		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</German>
-		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</Italian>
-		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_COMMERCE] per Citizen</Spanish>
+		<English>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</English>
+		<French>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</French>
+		<German>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</German>
+		<Italian>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</Italian>
+		<Spanish>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MULTICULTURALISM</Tag>

@@ -195,22 +195,22 @@ def expeditionaryForce(iRevolutionaryPlayer):
 		
 		if not bAlreadyExpeditioned:
 			if iRevolutionaryCiv == iAmerica:
-				tExpeditionarySpawn = (66, 81)
+				tExpeditionarySpawn = tExpeditionaryAmerica
 				iExpeditionaryPlayer = slot(iEngland)
 			elif iRevolutionaryCiv == iHaiti:
-				tExpeditionarySpawn = (56, 65)
+				tExpeditionarySpawn = tExpeditionaryHaiti
 				iExpeditionaryPlayer = slot(iFrance)
 			elif iRevolutionaryCiv == iArgentina:
-				tExpeditionarySpawn = (66, 13)
+				tExpeditionarySpawn = tExpeditionaryArgentina
 				iExpeditionaryPlayer = slot(iSpain)
 			elif iRevolutionaryCiv == iMexico:
-				tExpeditionarySpawn = (37, 65)
+				tExpeditionarySpawn = tExpeditionaryMexico
 				iExpeditionaryPlayer = slot(iSpain)
 			elif iRevolutionaryCiv == iColombia:
-				tExpeditionarySpawn = (45, 56)
+				tExpeditionarySpawn = tExpeditionaryColombia
 				iExpeditionaryPlayer = slot(iSpain)
 			elif iRevolutionaryCiv == iPeru:
-				tExpeditionarySpawn = (41, 32)
+				tExpeditionarySpawn = tExpeditionaryPeru
 				iExpeditionaryPlayer = slot(iSpain)
 			else:
 				return
