@@ -179,11 +179,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
-		<English>[ICON_BULLET]Can buy Slaves from the Old World</English>
-		<French>[ICON_BULLET]Can buy Slaves from the Old World</French>
-		<German>[ICON_BULLET]Can buy Slaves from the Old World</German>
-		<Italian>[ICON_BULLET]Can buy Slaves from the Old World</Italian>
-		<Spanish>[ICON_BULLET]Can buy Slaves from the Old World</Spanish>
+		<English>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</English>
+		<French>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</French>
+		<German>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</German>
+		<Italian>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</Italian>
+		<Spanish>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHIEFDOM</Tag>
@@ -888,28 +888,28 @@
 		<Spanish>More Engineer slots; extra production for specialists; extra commerce on Windmills and Watermills</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP</Tag>
-		<English>Apprenticeship</English>
-		<French>Apprenticeship</French>
-		<German>Apprenticeship</German>
-		<Italian>Apprenticeship</Italian>
-		<Spanish>Apprenticeship</Spanish>
+		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR</Tag>
+		<English>Immigrant Labor</English>
+		<French>Immigrant Labor</French>
+		<German>Immigrant Labor</German>
+		<Italian>Immigrant Labor</Italian>
+		<Spanish>Immigrant Labor</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP_STRATEGY</Tag>
-		<English>Free specialist in every city; maximum of 2 of each kind of specialist per city</English>
-		<French>Free specialist in every city; maximum of 2 of each kind of specialist per city</French>
-		<German>Free specialist in every city; maximum of 2 of each kind of specialist per city</German>
-		<Italian>Free specialist in every city; maximum of 2 of each kind of specialist per city</Italian>
-		<Spanish>Free specialist in every city; maximum of 2 of each kind of specialist per city</Spanish>
+		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR_STRATEGY</Tag>
+		<English>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</English>
+		<French>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</French>
+		<German>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</German>
+		<Italian>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</Italian>
+		<Spanish>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP_HELP</Tag>
-		<English>[ICON_BULLET]Max 2 of any one kind of specialist per city</English>
-		<French>[ICON_BULLET]Max 2 of any one kind of specialist per city</French>
-		<German>[ICON_BULLET]Max 2 of any one kind of specialist per city</German>
-		<Italian>[ICON_BULLET]Max 2 of any one kind of specialist per city</Italian>
-		<Spanish>[ICON_BULLET]Max 2 of any one kind of specialist per city</Spanish>
+		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR_HELP</Tag>
+		<English>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</English>
+		<French>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</French>
+		<German>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</German>
+		<Italian>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</Italian>
+		<Spanish>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_LABOR_UNIONS</Tag>

@@ -436,7 +436,7 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 126
+iNumUnits = 127
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iSpy, 			iSisqeno,       
@@ -450,7 +450,7 @@ iCarabineer,	iGrenadierCavalry,iCavalry,		iBombard,		iCannon,		iArtillery,		iHow
 iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iSloop,			iFrigate,		
 iIronclad,		iPrivateer,	    iTorpedoBoat,	iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	iGreatArtist, 	iGreatScientist,
 iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,
-iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy, iAfricanSlave,  iNativeSlave) = range(iNumUnits)
+iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy, iAfricanSlave,  iNativeSlave, 	iMigrantWorker) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -533,7 +533,7 @@ iNumBuildingsPlague = iNumBuildings+1
 iNumCivics = 63
 (iChiefdom, iExpedition, iDespotism, iViceroyalty, iCouncil, iCharterColony, iMonarchy, iTradeCompany, iDemocracy, iRoyalColony, iDictatorship, iDominion, iStateParty, iCommonwealth,
 iAuthority, iCustomaryLaw, iMaritimeLaw, iAristocracy, iCommonLaw, iConfederacy, iProprietaries, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
-iTraditionalism, iSerfdom, iCaptives, iEncomienda, iCraftsmen, iIndenturedServitude, iSlavery, iApprenticeship, iIndustrialism, iLaborUnions,
+iTraditionalism, iSerfdom, iCaptives, iEncomienda, iCraftsmen, iIndenturedServitude, iSlavery, iIndustrialism, iImmigrantLabor, iLaborUnions,
 iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
 iAnimism, iDivineRight, iHarmony, iGloriaInDeo, iCasteSystem, iJesuits, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,
 iSovereignty, iTributaries, iConquest, iOutposts, iHomesteads, iDecolonization, iIntervention, iNationhood) = range(iNumCivics)

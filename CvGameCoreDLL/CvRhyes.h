@@ -28,6 +28,7 @@ typedef list<char*> LISTCHAR;
 #define UNIT_HAWAIIAN_WAA_KAULUA	((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))				// MacAurther
 #define UNIT_AMERICAN_AGENT		((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))							// MacAurther
 #define UNIT_CANNON				((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))									// MacAurther
+#define UNIT_MIGRANT_WORKER		((UnitTypes)GC.getInfoTypeForString("UNIT_MIGRANT_WORKER"))							// MacAurther
 
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther

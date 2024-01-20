@@ -526,9 +526,16 @@ class ImmigrationUtils:
 			colonistsDict = self.addAvailableUnit(iGreatStatesman, colonistsDict)
 			colonistsDict = self.addAvailableUnit(iGreatGeneral, colonistsDict)
 		
-		# Get Slave type available
-		if pPlayer.isSlavery() and pPlayer.canTrain(iAfricanSlave, false, false):
+		player = gc.getPlayer(iPlayer)
+		civics = Civics.player(iPlayer)
+		
+		# Get Slave available
+		if iSlavery in civics:
 			colonistsDict = self.addAvailableUnit(iAfricanSlave, colonistsDict)
+		
+		# Get Migrant Worker available
+		if iImmigrantLabor in civics:
+			colonistsDict = self.addAvailableUnit(iMigrantWorker, colonistsDict)
 		
 		return colonistsDict
 	

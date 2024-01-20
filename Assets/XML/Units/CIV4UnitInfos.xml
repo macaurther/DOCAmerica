@@ -9668,5 +9668,43 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_MIGRANT_WORKER</Class>
+			<Type>UNIT_MIGRANT_WORKER</Type>
+			<Capture>UNITCLASS_MIGRANT_WORKER</Capture>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ENGINEER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_MIGRANT_WORKER</Description>
+			<Civilopedia>TXT_KEY_UNIT_MIGRANT_WORKER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_MIGRANT_WORKER_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_MIGRANT_WORKER_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iAsset>2</iAsset>
+			<iBaseHurry>50</iBaseHurry>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WORKER_ANCIENT_ASIAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

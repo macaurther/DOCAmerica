@@ -1103,11 +1103,6 @@ def getCivicStability(iPlayer, civics=None):
 		if iMulticulturalism in civics: iStability -= 5
 		if iPublicWelfare in civics: iStability -= 5
     
-	if iApprenticeship in civics:
-		if iOpportunity in civics: iStability += 2
-		if iPublicWelfare in civics: iStability -= 3
-        if iAgrarianism in civics: iStability -= 2
-	
 	if iIndustrialism in civics:
 		if iHarmony in civics: iStability -= 4
 		if iConsumerism in civics: iStability += 2
@@ -1115,6 +1110,11 @@ def getCivicStability(iPlayer, civics=None):
 		if iAgrarianism in civics: iStability -= 2
 		if iHomesteads in civics: iStability -= 2
 		if iPublicWelfare in civics: iStability -= 3
+	
+	if iImmigrantLabor in civics:
+		if iOpportunity in civics: iStability += 2
+		if iPublicWelfare in civics: iStability -= 3
+        if iAgrarianism in civics: iStability -= 2
 	
 	if iLaborUnions in civics:
 		if iPublicWelfare in civics: iStability += 4
