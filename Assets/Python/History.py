@@ -12,50 +12,15 @@ dRelocatedCapitals = CivDict({
 dCapitalInfrastructure = CivDict({
 })
 
-# Colonists - European Regional Power
+# Colonists - Europeans spawn at sea
 dColonistSpawns = CivDict({
-iNorse : 
-		[[dBirth[iNorse], tColonistReykjavik, [iColonistSettle, iColonistSupport]],
-		[950, tColonistReykjavik, [iColonistDefend]]],
-iSpain : 
-		[[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
-		[1525, tColonistCuba, [iColonistSettle, iColonistSupport]], 
-		[1565, tColonistBermuda, [iColonistSettle, iColonistSupport]], 
-		[1580, tColonistArgentina, [iColonistSettle, iColonistSupport]]],
-iPortugal : 
-		[[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSettle, iColonistExplore]], 
-		[1550, tColonistBrazil2, [iColonistSettle, iColonistSettle, iColonistExplore]],
-		[1630, tColonistBrazil2, [iColonistSlave]],
-		[1730, tColonistBrazil2, [iColonistSlave]],
-		[1770, tColonistBrazil1, [iColonistSlave]]],
-iEngland : 
-		[[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 
-		[1620, tColonistMassachusetts, [iColonistSettle, iColonistSupport]], 
-		[1650, tColonistNovaScotia, [iColonistSettle]],
-		[1664, tColonistNewNetherlands, [iColonistConquer]],
-		[1670, tColonistCarolina, [iColonistSettle, iColonistSlave]], 
-		[1690, tColonistPennsylvania, [iColonistSettle]],
-		[1750, tColonistCarolina, [iColonistSlave]]], 
-iFrance : 
-		[[dBirth[iFrance], tColonistQuebec, [iColonistSettle, iColonistSupport]], 
-		[1650, tColonistQuebec, [iColonistSettle, iColonistSettle, iColonistSupport]], 
-		[1718, tColonistLouisiana, [iColonistSettle, iColonistSettle, iColonistSupport]]],
-iNetherlands : 
-		[[dBirth[iNetherlands], tColonistNewNetherlands, [iColonistSettle, iColonistSupport]], 
-		[1650, tColonistSuriname, [iColonistSettle]]],
-iRussia : 
-		[[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]],
-		[1780, tColonistAlaska, [iColonistSettle, iColonistSupport]]],
-})
-
-dMaxColonists = CivDict({
-iNorse : len(dColonistSpawns[iNorse]),
-iSpain : len(dColonistSpawns[iSpain]),
-iPortugal : len(dColonistSpawns[iPortugal]),
-iEngland : len(dColonistSpawns[iEngland]), 
-iFrance : len(dColonistSpawns[iFrance]),
-iNetherlands : len(dColonistSpawns[iNetherlands]),
-iRussia : len(dColonistSpawns[iRussia]),
+iNorse :		[dBirth[iNorse], tColonistReykjavik, [iColonistSettle, iColonistSupport]],
+iSpain : 		[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
+iPortugal : 	[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSettle, iColonistExplore]],
+iEngland : 		[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 
+iFrance :		[dBirth[iFrance], tColonistQuebec, [iColonistSettle, iColonistSupport]],
+iNetherlands : 	[dBirth[iNetherlands], tColonistNewNetherlands, [iColonistSettle, iColonistSupport]],
+iRussia : 		[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]],
 })
 
 
@@ -125,17 +90,6 @@ def inuitUP(pCity):
 
 ### UNIT BUILT ###
 
-
-### BEGIN GAME TURN ###
-@handler("BeginGameTurn")
-def checkColonists():
-	if year().between(1500, 1800) or turn() == turn(dColonistSpawns[iNorse][1][0]):	# Special check for Norse spawn, don't need to check otherwise
-		for iCiv in dCivGroups[iCivGroupEurope]:
-			if player(iCiv).isAlive():
-				iPlayer = slot(iCiv)
-				if data.players[iPlayer].iColonistsAlreadyGiven < dMaxColonists[iCiv]:
-					if turn() == turn(dColonistSpawns[iCiv][data.players[iPlayer].iColonistsAlreadyGiven][0]):
-						giveColonists(iPlayer)
 
 ### FIRST CONTACT ###
 
@@ -356,29 +310,23 @@ def giveColonists(iPlayer):
 	iCiv = civ(iPlayer)
 	
 	# MacAurther: This covers starting European colonists and later colonists as well
-	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dMaxColonists:
-		iColonistIndex = data.players[iPlayer].iColonistsAlreadyGiven
-		#if iColonistIndex < dMaxColonists[iCiv]:
-		# TEMP: Disable Additional colonist spawns while trying to get AI to buy Colonists using Immigration
-		if iColonistIndex == 0:
-			if pPlayer.isHuman():
-				tPlot = dColonistSpawns[iCiv][iColonistIndex][1][0]
-			else:
-				# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
-				tPlot = dColonistSpawns[iCiv][iColonistIndex][1][1]
-			
-			# European starter units spawn on edge of map at Capital's Y value (Not Using because AI can't handle it on spawn)
-			'''tPlotX = iWorldX - 1
-			if iCiv == iRussia:
-				tPlotX = 0
-			tPlotY = dCapitals[iCiv][1]
-			tPlot = (tPlotX, tPlotY)'''
-			
-			for iRole in dColonistSpawns[iCiv][iColonistIndex][2]:
-				units = createRoleUnit(iPlayer, tPlot, iRole, 1)
-				#units.promotion(infos.type("PROMOTION_MERCENARY"))
-			
-			data.players[iPlayer].iColonistsAlreadyGiven += 1
+	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dColonistSpawns:
+		if pPlayer.isHuman():
+			tPlot = dColonistSpawns[iCiv][1][0]
+		else:
+			# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
+			tPlot = dColonistSpawns[iCiv][1][1]
+		
+		# European starter units spawn on edge of map at Capital's Y value (Not Using because AI can't handle it on spawn)
+		'''tPlotX = iWorldX - 1
+		if iCiv == iRussia:
+			tPlotX = 0
+		tPlotY = dCapitals[iCiv][1]
+		tPlot = (tPlotX, tPlotY)'''
+		
+		for iRole in dColonistSpawns[iCiv][2]:
+			units = createRoleUnit(iPlayer, tPlot, iRole, 1)
+			#units.promotion(infos.type("PROMOTION_MERCENARY"))
 
 
 def giveRaiders(iCiv):

@@ -40,7 +40,6 @@ class CvImmigrationManager:
 	
 	def __init__(self, iScreenId):
 	
-		self.mercenaryName = None
 		self.screenFunction = None
 		
 		# The different UI wiget names
@@ -129,7 +128,7 @@ class CvImmigrationManager:
 				continue
 						
 			screen.attachPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
-			screen.attachImageButton( mercenaryName, mercenaryName+"_InfoButton", 
+			screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-InfoButton", 
 										mercenary.objUnitInfo.getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
@@ -153,7 +152,7 @@ class CvImmigrationManager:
 			# Add the hire button for the mercenary
 			if(bEnableHireMercenary):
 				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenaryName+"_HireButton", 
+				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
 											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 
 			mercenaryCount = mercenaryCount + 1
@@ -195,7 +194,7 @@ class CvImmigrationManager:
 				continue
 						
 			screen.attachPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
-			screen.attachImageButton( mercenaryName, mercenaryName+"_InfoButton", 
+			screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-InfoButton", 
 										mercenary.objUnitInfo.getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
@@ -220,7 +219,7 @@ class CvImmigrationManager:
 			# Add the hire button for the mercenary
 			if(bEnableHireMercenary):
 				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenaryName+"_HireButton", 
+				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
 											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 
 			mercenaryCount = mercenaryCount + 1
@@ -514,13 +513,13 @@ class CvImmigrationManager:
 		return strGoldText + strDelta
 	
 	# Hires a mercenary for a player
-	def hireMercenary(self, screen, mercenaryName):
+	def hireMercenary(self, screen, iMercenary):
 
 		# Get the active player ID
 		iPlayer = gc.getGame().getActivePlayer()
 
 		# Hire the mercenary for the player
-		objImmigrationUtils.hireMercenary(mercenaryName, iPlayer) 
+		objImmigrationUtils.hireMercenary(iMercenary, iPlayer) 
 
 		# Get all of the available mercenaries for hire
 		mercenaries = objImmigrationUtils.getAvailableColonists(iPlayer)
@@ -577,7 +576,7 @@ class CvImmigrationManager:
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
 
 			# Delete the hire button for the current mercenary we are processing.
-			screen.deleteWidget(mercenaryName+"_HireButton")
+			screen.deleteWidget(mercenary.objUnitInfo.getType()+"-HireButton")
 
 			# To start off we'll assume that the player can hire the mercenary
 			bEnableHireMercenary = true
@@ -593,7 +592,7 @@ class CvImmigrationManager:
 
 			if(bEnableHireMercenary):
 				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenaryName+"_HireButton", 
+				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
 											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 		
 	# Updates the available mercenaries panel, displays the hire button to the 
@@ -629,7 +628,7 @@ class CvImmigrationManager:
 			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
 
 			# Delete the hire button for the current mercenary we are processing.
-			screen.deleteWidget(mercenaryName+"_HireButton")
+			screen.deleteWidget(mercenary.objUnitInfo.getType()+"-HireButton")
 
 			# To start off we'll assume that the player can hire the mercenary
 			bEnableHireMercenary = true
@@ -645,7 +644,7 @@ class CvImmigrationManager:
 
 			if(bEnableHireMercenary):
 				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenaryName+"_HireButton", 
+				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
 											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 	
 	# Handles the input to the mercenary manager screens
@@ -662,6 +661,8 @@ class CvImmigrationManager:
 		
 		# Get the data
 		theKey = int(inputClass.getData())
+		
+		print("TEMP: inputClass.getFunctionName(): " + inputClass.getFunctionName())
 
 		# If the escape key was pressed then set the current screen to mercenary manager
 		if (inputClass.getNotifyCode() == self.EventKeyDown and theKey == int(InputTypes.KB_ESCAPE)):
@@ -685,110 +686,34 @@ class CvImmigrationManager:
 		if(inputClass.getFunctionName().endswith("Button")):
 			# Split up the function name into the mercenary name and the actual
 			# action that was performed
-			mercenaryName, function = inputClass.getFunctionName().split("_")
+			sMercenary, function = inputClass.getFunctionName().split("-")
+			
+			print("TEMP: function: " + function + "and sMercenary: " + sMercenary)
 			
 			self.screenFunction = function
-			self.mercenaryName = None
-
-			# If the function was find, then close the screen and find the unit
-			if(function == "FindButton"):
-				mercenaryName, unitID  = mercenaryName.split("-")
-
-				# Convert the unit ID string back into a number
-				unitID = self.alphaToNumber(unitID)
-
-				# Get the player ID
-				iPlayer = gc.getGame().getActivePlayer()
-
-				# Get the actual player reference
-				player = gc.getPlayer(iPlayer)
-
-				# Get the actual unit in the game
-				objUnit = player.getUnit(unitID)
-
-				# If the unit is not set to None then look at them and select
-				# them.
-				if(objUnit != None):
-					CyCamera().LookAtUnit(objUnit)
-					if(not CyGame().isNetworkMultiPlayer()):
-						CyInterface().selectUnit(objUnit, true, false, false)
-
-				self.currentScreen = IMMIGRATION_MANAGER
-	
-				return
+			
+			iMercenary = gc.getInfoTypeForString(sMercenary)
 				
 			# If the function was hire, then hire the mercenary
 			if(function == "HireButton"):
-				self.hireMercenary(screen, mercenaryName) 
-
-			# If the function was fire, then fire the mercenary
-			if(function == "FireButton"):
-				self.fireMercenary(screen, mercenaryName) 
-
-			# If the function was show information then populate the
-			# mercenary/unit information
-			if(function == "UnitInfoButton"):
-			
-				# Get the player ID
-				iPlayer = gc.getGame().getActivePlayer()
-
-				# Get the actual player reference
-				player = gc.getPlayer(iPlayer)
-
-				# Split up the mercenary name into the actual mercenary name
-				# and the unit ID string
-				mercenaryName, id  = mercenaryName.split("-")
-
-				# Convert the unit ID string back into a number
-				id = self.alphaToNumber(id)
-				
-				# Get the mercenary 
-				mercenary = objImmigrationUtils.getMercenary(mercenaryName)
-
-				# If we didn't get a mercenary from the mercenary pool then
-				# it is safe to assume that the unit has never been a 
-				# mercenary.
-				if(mercenary == None):
-					
-					# Create a blank mercenary
-					mercenary = objImmigrationUtils.createBlankMercenary()
-
-					# Populate the mercenary object with the data from 
-					# the unit that we want to look at
-					mercenary.loadUnitData(player.getUnit(id))
-					mercenary.setName(mercenaryName)
-					
-				# Calculate the screen information
-				self.calculateScreenWidgetData(screen)
-
-				# Populate the unit information panel with the mercenary/unit
-				# information.
-				self.populateUnitInformation(screen,mercenary)					
-
+				self.hireMercenary(screen, iMercenary) 
 										
 			# If the function was to show the mercenary information then 
 			# populate the mercenary information panel.
 			if(function == "InfoButton"):
-			
-				self.mercenaryName = mercenaryName
-			
-				# If the mercenary name was actually set then get their 
-				# information from the global mercenary pool.
-				if(mercenaryName != None):
 				
-					# Get the mercenary from the global mercenary pool
-					mercenary = objImmigrationUtils.getMercenary(mercenaryName)
+				# Get the mercenary from the global mercenary pool
+				mercenary = objImmigrationUtils.getMercenary(iMercenary)
 
-					# Return immediately if we still couldn't get the mercenary information
-					if(mercenary == None):
-						return
-						
-					# Calculate the screen information
-					self.calculateScreenWidgetData(screen)
+				# Return immediately if we still couldn't get the mercenary information
+				if(mercenary == None):
+					return
+					
+				# Calculate the screen information
+				self.calculateScreenWidgetData(screen)
 
-					# Populate the mercenary information panel
-					self.populateMercenaryInformation(screen, mercenary)
-			 									
+				# Populate the mercenary information panel
+				self.populateMercenaryInformation(screen, mercenary)
 		return 0
  		
 		
@@ -1055,7 +980,10 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 	# This method will display the mercenary manager screen
 	# and provide the logic to make the computer players think.
 	pPlayer = gc.getPlayer(iPlayer)
-
+	
+	# TEMP DEBUG
+	#return
+	
 	if gc.getTeam(pPlayer.getTeam()).isHasTech(iOldWorldCulture):
 
 		if g_bDebug:

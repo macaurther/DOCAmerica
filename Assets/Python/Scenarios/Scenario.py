@@ -234,7 +234,6 @@ class Scenario(object):
 		self.adjustReligions()
 		self.adjustWonders()
 		self.adjustGreatPeople()
-		self.adjustColonists()
 		
 		self.initDiplomacy()
 		
@@ -276,16 +275,7 @@ class Scenario(object):
 		
 		for iCiv, iGreatGenerals in self.dGreatGeneralsCreated.items():
 			player(iCiv).changeGreatPeopleCreated(iGreatGenerals)
-	
-	def adjustColonists(self):
-		iStartTurn = scenarioStartTurn()
-		
-		for iCiv, lColonistSpawns in dColonistSpawns.items():
-			if dBirth[iCiv] < self.iStartYear:
-				for lColonistSpawn in lColonistSpawns:
-					if lColonistSpawn[0] < self.iStartYear:
-						data.players[slot(iCiv)].iColonistsAlreadyGiven += 1
-	
+
 	def initDiplomacy(self):
 		for iAttacker, iDefender, iWarPlan in self.lInitialWars:
 			team(iAttacker).declareWar(player(iDefender).getTeam(), False, iWarPlan)
