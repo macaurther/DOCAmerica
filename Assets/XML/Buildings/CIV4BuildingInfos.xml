@@ -7814,12 +7814,6 @@
 					<iBuildingNeededPercent>50</iBuildingNeededPercent>
 				</PrereqBuildingClassPercent>
 			</PrereqBuildingClassPercents>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_ADMIN</FlavorType>

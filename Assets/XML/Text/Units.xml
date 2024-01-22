@@ -1635,11 +1635,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Tag>
-		<English>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
-		<French>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Capture d'[LINK=UNIT_SLAVE]esclaves[\LINK] garantie[NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
-		<German>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
-		<Italian>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE][ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
+		<English>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</English>
+		<French>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Capture d'[LINK=UNIT_SLAVE]esclaves[\LINK] garantie[NEWLINE]</French>
+		<German>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</German>
+		<Italian>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>
@@ -1867,11 +1867,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_HELP</Tag>
-		<English>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
-		<French>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
-		<German>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
-		<Italian>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]Can contact [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK][NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
+		<English>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE</Tag>
@@ -2326,14 +2326,6 @@
 		<Spanish>This unit, the Zapotec replacement for the Spearman, has the standard bonus against Cavalry units, but also starts with the Shock promotion, making it fairly effective against melee units as well.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHTNING_WARRIOR_PEDIA</Tag>
-		<English>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</English>
-		<French>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</French>
-		<German>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</German>
-		<Italian>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</Italian>
-		<Spanish>The Zapotec believed themselves to be descended from the sky and clouds themselves. The warriors of the Zapotec shared this belief, and they would pray to the god of storms for aid in battle. The Zapotec fiercely defended their empire from rivals, including the Aztecs, striking their enemy with the might of a storm.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA</Tag>
 		<English>Macana</English>
 		<French>Macana</French>
@@ -2350,14 +2342,6 @@
 		<Spanish>The Macana, the Purepechan replacement for the Axeman, is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA_PEDIA</Tag>
-		<English>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</English>
-		<French>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</French>
-		<German>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</German>
-		<Italian>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</Italian>
-		<Spanish>The term macana, of Taino origin, refers to various wooden weapons used by the various native cultures of Central and South America. These weapons were referred to as a hadzab or hats'ab in Yucatecan Mayan.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIST</Tag>
 		<English>Colonist</English>
 		<French>Colonist</French>
@@ -2367,19 +2351,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIST_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_COLONIST_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</English>
+		<French>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</French>
+		<German>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</German>
+		<Italian>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</Italian>
+		<Spanish>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MIGRANT_WORKER</Tag>
@@ -2391,19 +2367,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MIGRANT_WORKER_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_MIGRANT_WORKER_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</English>
+		<French>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</French>
+		<German>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</German>
+		<Italian>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</Italian>
+		<Spanish>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</Spanish>
 	</TEXT>
 	
 	<TEXT>

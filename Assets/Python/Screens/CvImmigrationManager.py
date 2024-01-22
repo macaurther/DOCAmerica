@@ -984,7 +984,7 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 	# TEMP DEBUG
 	#return
 	
-	if gc.getTeam(pPlayer.getTeam()).isHasTech(iOldWorldCulture):
+	if pPlayer != None and gc.getTeam(pPlayer.getTeam()).isHasTech(iOldWorldCulture):
 
 		if g_bDebug:
 			CvUtil.pyPrint(pPlayer.getName() + " Gold: " + str(pPlayer.getGold()) + " is human: " + str(pPlayer.isHuman()))     

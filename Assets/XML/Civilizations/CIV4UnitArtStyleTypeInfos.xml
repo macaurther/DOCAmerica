@@ -129,7 +129,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_1</UnitType>
+					<UnitType>UNIT_MILITIA_I</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</MiddleArtDefineTag>
@@ -212,7 +212,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_MILITIA_1</UnitType>
+					<UnitType>UNIT_MILITIA_I</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_AFRICAN</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MILITIA_AFRICAN</MiddleArtDefineTag>

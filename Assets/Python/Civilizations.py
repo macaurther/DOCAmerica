@@ -491,7 +491,7 @@ dStartingUnits = CivDict({
 		iWorkSea: 2,
 		iFerrySea: 2,
 		iEscortSea: 1,
-		iMissionary: 3,
+		iMissionary: 1,
 	},
 	iHaiti: {
 		iSettle: 1,
@@ -508,7 +508,7 @@ dStartingUnits = CivDict({
 		iSiege: 2,
 		iShockCav: 2,
 		iSiegeCity: 1,
-		iMissionary: 2,
+		iMissionary: 1,
 		iFerrySea: 1,
 		iEscortSea: 2,
 	},

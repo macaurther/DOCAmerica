@@ -411,7 +411,7 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_1</Type>
+			<Type>ART_DEF_UNIT_MILITIA_I</Type>
 			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -3651,7 +3651,7 @@
 			<ActionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_2</Type>
+			<Type>ART_DEF_UNIT_MILITIA_II</Type>
 			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Charlemagne_Atlas.dds,5,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -5345,7 +5345,7 @@
 			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_3</Type>
+			<Type>ART_DEF_UNIT_MILITIA_III</Type>
 			<Button>Art/Interface/Buttons/Units/militia_3.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -5366,7 +5366,7 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_4</Type>
+			<Type>ART_DEF_UNIT_MILITIA_IV</Type>
 			<Button>Art/Interface/Buttons/Units/militia_4.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>

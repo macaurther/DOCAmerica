@@ -21,6 +21,7 @@ from RFCUtils import *
 from Consts import *
 from Core import *
 from Civics import *
+import PlayerUtil
 
 ################# SD-UTILITY-PACK ###################
 import SdToolKit
@@ -60,12 +61,12 @@ iMainlineCat,	iSpecialtyCat) = range(iNumImmigrantCategories)
 lSettlers = [iSettler, iPioneer]
 lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
 lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
-lTransports = [iCaravel, iCarrack, iIndiaman,	iGalleon, iFluyt, iBrigantine, iSteamship]
+lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship]
 lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
 lSlaves = [iAfricanSlave]
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
-lExplorers = [iExplorer, iBandeirante, iCoureurDesBois]
+lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5]
 lMainlineUnits = [iArquebusier, iMusketman, iMusketeer, iRifleman]
 lSpecialtyUnits = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iSkirmisher, iGrenadier, iHussar, iDragoon, iPistolier, iCuirassier, iConquistador, iCarabineer, iCavalry, iBombard, iCannon, iArtillery, iHowitzer, iSloop, iFrigate, iIronclad, iPrivateer, iTorpedoBoat, iBarque, iShipOfTheLine, iManOfWar, iCruiser]
@@ -766,12 +767,10 @@ class ImmigrationUtils:
                 
 		mercenary.hire(iPlayer, pPlot)
 
-		print("Mercenary hired by: " + gc.getPlayer(mercenary.iOwner).getName()) #Rhye
+		print(mercenary.getName() + " hired by: " + gc.getPlayer(mercenary.iOwner).getName()) #Rhye
 	
-		# Debug code - start
 		if g_bDebug:
 			self.printMercenaryDataToLog(mercenary)	
-		# Debug code - end
 
 	# Gets the max era from the players in the game.
 	def getMaxGameEra(self):
@@ -913,7 +912,10 @@ class ImmigrationUtils:
 				continue
 			
 			iImmigrantCategory = self.getUnitCategory(immigrant.getUnitInfoID())
-			iDesire = lCategoryDesire[iImmigrantCategory]
+			if iImmigrantCategory > -1:
+				iDesire = lCategoryDesire[iImmigrantCategory]
+			else:
+				CvUtil.pyPrint("ERROR: Possible Immigrant " + immigrantName + " does not have a category!")
 
 			if g_bDebug:
 				CvUtil.pyPrint("Player: " + str(iPlayer) + " desires " + str(iDesire) + " " + immigrantName)
@@ -947,30 +949,25 @@ class ImmigrationUtils:
 	def computerPlayerThink(self, iPlayer):
             
 		# Get the player
-		player = gc.getPlayer(iPlayer)
+		pPlayer = gc.getPlayer(iPlayer)
 		
 		# Return immediately if the player is a filthy human :p
-		if(player.isHuman()):
+		if(pPlayer.isHuman()):
 			return
 
 		# Return immediately if the player is a barbarian
-		if(player.isBarbarian()):
+		if(pPlayer.isBarbarian()):
 			return
 		
 		# Get the current immigration for the player	
-		currentImmigration = player.getImmigration()
+		currentImmigration = pPlayer.getImmigration()
 		
 		# Don't do anything if you don't have a lot of immigration
 		if currentImmigration <= 50:
 			return
 
 		# Get the current gold for the player			
-		currentGold = player.getGold()
-		
-
-		# Get the computer's current mercenaries
-		colonistDict = self.getAvailableColonists(iPlayer)
-		expeditionaryDict = self.getAvailableExpeditionaries(iPlayer)
+		currentGold = pPlayer.getGold()
 
 		immigrant = None
 		
@@ -978,7 +975,7 @@ class ImmigrationUtils:
 		lCategoryDesire = self.getAIDesiredCategory(iPlayer)
 		
 		# Hire Immigrants until we get below 50 Immigration, but don't go below -5 GPT, and don't go below 50 Gold
-		while currentImmigration > 50 and player.getGoldPerTurn() > -5 and player.getGold() > 50:
+		while currentImmigration > 50 and pPlayer.getGoldPerTurn() > -5 and currentGold > 50:
 
 			# Get the best available immigrant
 			immigrant, lCategoryDesire = self.getBestAvailableImmigrant(currentImmigration, currentGold, iPlayer, lCategoryDesire)
@@ -1001,7 +998,7 @@ class ImmigrationUtils:
 
 			# Debug code - start
 			if g_bDebug:
-				CvUtil.pyPrint(player.getName() + " current gold: " + str(currentGold) + " Hired " + immigrant.getName())
+				CvUtil.pyPrint(pPlayer.getName() + " current gold: " + str(currentGold) + " Hired " + immigrant.getName())
 			# Debug code - end
 			
 			# deduct the hire cost from the computer players gold
@@ -1010,8 +1007,8 @@ class ImmigrationUtils:
 			currentGold -= goldCost
 
 			# Set the new modified gold amount
-			player.setImmigration(currentImmigration)
-			player.setGold(currentGold)
+			pPlayer.setImmigration(currentImmigration)
+			pPlayer.setGold(currentGold)
 		
 
 	# This method will setup the appropriate datastructures using the SD-Toolkit to maintain
@@ -1061,13 +1058,11 @@ class ImmigrationUtils:
 		lNumUnitsInCategories = [0] * iNumImmigrantCategories
 		lCategoryDesire = [0] * iNumImmigrantCategories
 		
-		(pUnit, iter) = pPlayer.firstUnit(false)
-		while pUnit:
-			for iCategory, lUnitCategory in enumerate(lPossibleImmigrants):
-				if pUnit.getUnitType() in lUnitCategory:
-					lNumUnitsInCategories[iCategory] += 1
-					continue
-			(pUnit, iter) = pPlayer.nextUnit(iter, false)
+		lUnits = PlayerUtil.getPlayerUnits(iPlayer)
+		for pUnit in lUnits:
+			iUnitCategory = self.getUnitCategory(pUnit.getUnitType())
+			if iUnitCategory > -1:
+				lNumUnitsInCategories[iUnitCategory] += 1
 		
 		iNumCities = pPlayer.getNumCities()
 		
@@ -1081,8 +1076,8 @@ class ImmigrationUtils:
 		# Missionaries Category
 		if pPlayer.getStateReligion() > -1:
 			iNumConvertedCities = 0
-			for iLoopCity in range(iNumCities):
-				pCity = pPlayer.getCity(iLoopCity)
+			lCities = PlayerUtil.getPlayerCities(iPlayer)
+			for pCity in lCities:
 				if pCity.isHasReligion(pPlayer.getStateReligion()):
 					iNumConvertedCities += 1
 			lCategoryDesire[iMissionariesCat] = iNumCities - iNumConvertedCities - lNumUnitsInCategories[iMissionariesCat]
@@ -1686,9 +1681,8 @@ class Mercenary:
 	
 	# MacAurther: get the ship in which to place a hired land unit
 	def getPlacementShip(self, iPlayer):
-		pPlayer = gc.getPlayer(iPlayer)
-		for iID in range(pPlayer.getNumUnits()):
-			pUnit = pPlayer.getUnit(iID)
+		lUnits = PlayerUtil.getPlayerUnits(iPlayer)
+		for pUnit in lUnits:
 			iX = pUnit.getX();
 			if iX == 0 or iX == iWorldX - 1:
 				if not pUnit.isFull():
