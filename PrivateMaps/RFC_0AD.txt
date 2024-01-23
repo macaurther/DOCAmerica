@@ -40,11 +40,11 @@ EndPlot
 BeginPlot
 	x=14,y=66
 	BeginUnit
-		UnitType=UNIT_MILITIA_1
+		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_1
+		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginCity
@@ -62,11 +62,11 @@ EndPlot
 BeginPlot
 	x=15,y=61
 	BeginUnit
-		UnitType=UNIT_MILITIA_1
+		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_1
+		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginCity
@@ -84,11 +84,11 @@ EndPlot
 BeginPlot
 	x=22,y=59
 	BeginUnit
-		UnitType=UNIT_MILITIA_1
+		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_1
+		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginCity
