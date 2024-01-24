@@ -2976,7 +2976,7 @@
 			<Strategy>TXT_KEY_BUILDING_NORSE_THINGVELLIR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NORSE_THINGVELLIR</ArtDefineTag>
-			<PrereqTech>TECH_DIPLOMACY</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -2987,7 +2987,7 @@
 			<CommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
 				<iCommerce>2</iCommerce>
 			</CommerceChanges>
 			<SpecialistCounts>
