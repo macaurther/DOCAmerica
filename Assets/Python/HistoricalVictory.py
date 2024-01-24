@@ -1,8 +1,8 @@
 from Definitions import *
 from Locations import *
 
-# second Portuguese goal: acquire 12 colonial resources by 1650 AD
-lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco]
+# second Portuguese goal: acquire 20 colonial resources by 1650 AD
+lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco, iCocoa, iSalt, iCitrus]
 
 
 # city names
@@ -186,7 +186,7 @@ dGoals = {
 	iInca: (
 		All(
 			BuildingCount(iTambo, 5),
-			Route(plots.of(lAndeanCoast).named(ANDEAN_COAST), [iRouteRoad]),
+			Wonders(iSacsayhuaman, iMachuPicchu),
 			by=1550,
 		),
 		GoldAmount(2500, by=1550),

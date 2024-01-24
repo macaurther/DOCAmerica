@@ -1108,16 +1108,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Tag>
-		<English>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</English>
-		<French>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</French>
-		<German>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</German>
-		<Italian>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</Italian>
-		<Spanish>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</Spanish>
+		<English>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</English>
+		<French>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</French>
+		<German>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</German>
+		<Italian>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Italian>
+		<Spanish>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTIVES</Tag>
@@ -1137,16 +1132,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTIVES_HELP</Tag>
-		<English>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</English>
-		<French>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</French>
-		<German>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</German>
-		<Italian>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</Italian>
-		<Spanish>[ICON_BULLET]Capture Native Slaves from Native City Conquest
-[ICON_BULLET]Capture Native Slaves from Tribe Pillaging</Spanish>
+		<English>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</English>
+		<French>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</French>
+		<German>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</German>
+		<Italian>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Italian>
+		<Spanish>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY</Tag>
@@ -1158,11 +1148,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_STRATEGY</Tag>
-		<English>Extra food from no improvement; extra food and commerce from tribes</English>
-		<French>Extra food from no improvement; extra food and commerce from tribes</French>
-		<German>Extra food from no improvement; extra food and commerce from tribes</German>
-		<Italian>Extra food from no improvement; extra food and commerce from tribes</Italian>
-		<Spanish>Extra food from no improvement; extra food and commerce from tribes</Spanish>
+		<English>Extra food from no improvement; extra food and commerce from tribes; reduced science</English>
+		<French>Extra food from no improvement; extra food and commerce from tribes; reduced science</French>
+		<German>Extra food from no improvement; extra food and commerce from tribes; reduced science</German>
+		<Italian>Extra food from no improvement; extra food and commerce from tribes; reduced science</Italian>
+		<Spanish>Extra food from no improvement; extra food and commerce from tribes; reduced science</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GLORIA_IN_DEO</Tag>
@@ -1198,19 +1188,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_JESUITS_STRATEGY</Tag>
-		<English>Extra immigration in cities with your state religion</English>
-		<French>Extra immigration in cities with your state religion</French>
-		<German>Extra immigration in cities with your state religion</German>
-		<Italian>Extra immigration in cities with your state religion</Italian>
-		<Spanish>Extra immigration in cities with your state religion</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_JESUITS_HELP</Tag>
-		<English>[ICON_BULLET]+2 Immigration in Cities with your State [ICON_RELIGION]</English>
-		<French>[ICON_BULLET]+2 Immigration in Cities with your State [ICON_RELIGION]</French>
-		<German>[ICON_BULLET]+2 Immigration in Cities with your State [ICON_RELIGION]</German>
-		<Italian>[ICON_BULLET]+2 Immigration in Cities with your State [ICON_RELIGION]</Italian>
-		<Spanish>[ICON_BULLET]+2 Immigration in Cities with your State [ICON_RELIGION]</Spanish>
+		<English>Build Catholic buildings faster; can build Missionaries without Monasteries</English>
+		<French>Build Catholic buildings faster; can build Missionaries without Monasteries</French>
+		<German>Build Catholic buildings faster; can build Missionaries without Monasteries</German>
+		<Italian>Build Catholic buildings faster; can build Missionaries without Monasteries</Italian>
+		<Spanish>Build Catholic buildings faster; can build Missionaries without Monasteries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_</Tag>

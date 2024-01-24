@@ -2136,7 +2136,7 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 	}
 
 	// Leoreth: can't train slaves -> MacAurther: Actually now you can with a Slave Market, but you can't train Colonists or Migrant Workers
-	if (eUnit == UNIT_COLONIST || eUnit == UNIT_MIGRANT_WORKER)
+	if (eUnit == UNIT_NATIVE_SLAVE|| eUnit == UNIT_COLONIST || eUnit == UNIT_MIGRANT_WORKER)
 	{
 		return false;
 	}

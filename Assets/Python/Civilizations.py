@@ -225,7 +225,7 @@ lCivilizations = [
 		iNorse,
 		iGold=50,
 		lCivics=[iExpedition, iSerfdom, iMerchantTrade],
-		techs=techs.column(8).including(iFishing).without(*lNativeTechs)
+		techs=techs.column(8).without(iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing, iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iChimu,
@@ -242,7 +242,7 @@ lCivilizations = [
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iAristocracy, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
+		lCivics=[iDespotism, iCustomaryLaw, iCaptives, iMerchantTrade, iConquest],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing)
 	),
@@ -255,9 +255,9 @@ lCivilizations = [
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism, iCaptives, iTributaries],
+		lCivics=[iDespotism, iCaptives, iCasteSystem, iTributaries],
 		lEnemies=[iTeotihuacan, iPurepecha],
-		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood).without(iTrapping, iShallowFishing, iFishing)
+		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys).without(iTrapping, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iIroquois,
@@ -395,12 +395,14 @@ dStartingUnits = CivDict({
 	iWari: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 2,
+		iDefend: 1,
+		iSiege: 1,
 	},
 	iMississippi: {
 		iSettle: 2,
 		iWork: 1,
-		iDefend: 2,
+		iDefend: 1,
+		iSiege: 1,
 	},
 	iPuebloan: {
 		iSettle: 1,
@@ -433,6 +435,7 @@ dStartingUnits = CivDict({
 		iDefend: 3,
 		iBase: 3,
 		iShock: 6,
+		iSiege: 3,
 		iHarass: 3,
 		# if not human: 1 Settler
 	},

@@ -2223,19 +2223,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration rate when running the [COLOR_HIGHLIGHT_TEXT]Slavery Civic[COLOR_REVERT] and allow the training of Slaves, but increases a city's unhappiness.</English>
-		<French>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration rate when running the [COLOR_HIGHLIGHT_TEXT]Slavery Civic[COLOR_REVERT] and allow the training of Slaves, but increases a city's unhappiness.</French>
-		<German>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration rate when running the [COLOR_HIGHLIGHT_TEXT]Slavery Civic[COLOR_REVERT] and allow the training of Slaves, but increases a city's unhappiness.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration rate when running the [COLOR_HIGHLIGHT_TEXT]Slavery Civic[COLOR_REVERT] and allow the training of Slaves, but increases a city's unhappiness.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration rate when running the [COLOR_HIGHLIGHT_TEXT]Slavery Civic[COLOR_REVERT] and allow the training of Slaves, but increases a city's unhappiness.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Tag>
-		<English>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</English>
-		<French>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</French>
-		<German>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</German>
-		<Italian>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]+50% Immigration with [LINK=CIVIC_SLAVERY]Slavery[\LINK]</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration and allow the training of Slaves.</English>
+		<French>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration and allow the training of Slaves.</French>
+		<German>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration and allow the training of Slaves.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration and allow the training of Slaves.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Slave Markets[COLOR_REVERT] increase a city's immigration and allow the training of Slaves.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STEEL_MILL</Tag>

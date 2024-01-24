@@ -208,7 +208,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>80</iConquestProb>
-			<iFoodKept>35</iFoodKept>
+			<iFoodKept>50</iFoodKept>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
@@ -751,7 +751,7 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SpecialistCounts>
 				<SpecialistCount>
@@ -763,7 +763,7 @@
 			<DomainFreeExperiences>
 				<DomainFreeExperience>
 					<DomainType>DOMAIN_LAND</DomainType>
-					<iExperience>2</iExperience>
+					<iExperience>3</iExperience>
 				</DomainFreeExperience>
 			</DomainFreeExperiences>
 			<BonusProductionModifiers>
@@ -868,9 +868,9 @@
 			<Description>TXT_KEY_BUILDING_INCAN_TAMBO</Description>
 			<Civilopedia>TXT_KEY_BUILDING_INCAN_TAMBO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_INCAN_TAMBO_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INCAN_TAMBO</ArtDefineTag>
-			<PrereqTech>TECH_LAW</PrereqTech>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
 			<iCost>60</iCost>
 			<iConquestProb>100</iConquestProb>
@@ -2008,7 +2008,6 @@
 			<Description>TXT_KEY_BUILDING_SLAVE_MARKET</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SLAVE_MARKET_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_SLAVE_MARKET_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_MARKET</ArtDefineTag>
 			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
@@ -3129,6 +3128,13 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_TIMBER</BonusType>
@@ -3172,6 +3178,13 @@
 					<bNeededInCity>1</bNeededInCity>
 				</BuildingClassNeeded>
 			</BuildingClassNeededs>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
 					<BonusType>BONUS_STONE</BonusType>
@@ -7219,6 +7232,14 @@
 					<BonusType>BONUS_SPICES</BonusType>
 					<iHealthChange>1</iHealthChange>
 				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_CITRUS</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_SALT</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
 			</BonusHealthChanges>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -7235,6 +7256,10 @@
 				</BonusHappinessChange>
 				<BonusHappinessChange>
 					<BonusType>BONUS_TOBACCO</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_COCOA</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
 			</BonusHappinessChanges>

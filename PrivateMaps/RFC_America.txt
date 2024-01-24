@@ -10632,6 +10632,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=63
+	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -12606,6 +12607,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=59
+	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -16666,6 +16668,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=49
+	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -21545,6 +21548,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=56
+	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -26229,6 +26233,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=24
+	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -29571,6 +29576,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=20
+	BonusType=BONUS_CITRUS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	RiverNSDirection=0
 	isWOfRiver
 	TerrainType=TERRAIN_GRASS
@@ -30391,6 +30398,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=46
+	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -36754,6 +36762,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=31
+	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2

@@ -3309,12 +3309,11 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_NATO</Tag>
 		<English>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<French>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</French>
+		<German>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</German>
+		<Italian>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</Italian>
+		<Spanish>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</Spanish>
 	</TEXT>
-	
 
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_ACCOMPLISHED</Tag>

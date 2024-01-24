@@ -1867,11 +1867,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS_HELP</Tag>
-		<English>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
-		<French>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
-		<German>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
-		<Italian>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
-		<Spanish>[NEWLINE][ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
+		<English>[ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</English>
+		<French>[ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</French>
+		<German>[ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
+		<Italian>[ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
+		<Spanish>[ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE</Tag>
