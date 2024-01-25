@@ -513,6 +513,22 @@
 					<Civilizations/>
 					<Leaders>
 						<Leader>
+							<LeaderType>LEADER_WARI_CAPAC</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_CHAVEZ</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_MALKU_HUYUSTUS</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
+							<LeaderType>LEADER_ATLATL_CAUAC</LeaderType>
+							<bLeaderType>1</bLeaderType>
+						</Leader>
+						<Leader>
 							<LeaderType>LEADER_MARIA_II</LeaderType>
 							<bLeaderType>1</bLeaderType>
 						</Leader>

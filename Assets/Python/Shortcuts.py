@@ -91,7 +91,7 @@ def startObserverMode(iTurns):
 		iObserverSlot = findSlot(iObserverCiv)
 		addPlayer(iObserverSlot, iObserverCiv)
 	
-	makeUnit(iObserverSlot, iCatapult, (0, 0))
+	makeUnit(iObserverSlot, iBombard, (0, 0))
 	
 	game.setActivePlayer(iObserverSlot, False)
 	game.setAIAutoPlay(iTurns)
@@ -102,4 +102,4 @@ def endObserverMode():
 			game.setActivePlayer(data.iBeforeObserverSlot, False)
 			data.iBeforeObserverSlot = -1
 		else:
-			makeUnit(active(), iCatapult, (0, 0))
+			makeUnit(active(), iBombard, (0, 0))

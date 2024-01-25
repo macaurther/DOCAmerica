@@ -203,7 +203,7 @@ lCivilizations = [
 	Civilization(
 		iWari,
 		iGold=100,
-		techs=techs.column(3).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iMasonry, iDivination).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iMississippi,
@@ -393,9 +393,9 @@ dStartingUnits = CivDict({
 		iDefend: 1,
 	},
 	iWari: {
-		iSettle: 1,
-		iWork: 1,
-		iDefend: 1,
+		iSettle: 2,
+		iWork: 2,
+		iDefend: 2,
 		iSiege: 1,
 	},
 	iMississippi: {
@@ -714,12 +714,17 @@ dSpecificAdditionalUnits = CivDict({
 
 dTechPreferences = {
 	iMaya : {
-		iMathematics : 40,
-		iCalendar: 40,
-		iAesthetics: 30,
+		iConstruction: -20, # Try to let Tiwanaku have it
+		iMathematics : 20,
+		iCalendar: 50,
+		iAesthetics: 20,
 	},
 	iZapotec : {
+		iConstruction: -20, # Try to let Tiwanaku have it
 		iWriting: 40,
+	},
+	iWari : {
+		iConstruction: -20, # Try to let Tiwanaku have it
 	},
 	iSpain : {
 		iCartography: 100,

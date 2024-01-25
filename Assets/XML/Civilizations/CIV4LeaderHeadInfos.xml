@@ -9830,27 +9830,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHIMU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHIMU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHIMU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHIMU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHIMU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_CHIMU</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -16817,27 +16817,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_IROQUOIS</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_IROQUOIS</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_IROQUOIS</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_IROQUOIS</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_IROQUOIS</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_IROQUOIS</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -19537,27 +19537,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_BRENNUS_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MISSISSIPPI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_BRENNUS_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MISSISSIPPI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_BRENNUS_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MISSISSIPPI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_BRENNUS_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MISSISSIPPI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_BRENNUS_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MISSISSIPPI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_BRENNUS_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MISSISSIPPI</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -20081,27 +20081,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_MANSAMUSA_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MUISCA</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_MANSAMUSA_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MUISCA</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_MANSAMUSA_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MUISCA</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_MANSAMUSA_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MUISCA</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_MANSAMUSA_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MUISCA</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_MANSAMUSA_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_MUISCA</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -24897,27 +24897,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUEBLOAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUEBLOAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUEBLOAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUEBLOAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUEBLOAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_GERONIMO_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUEBLOAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -28680,27 +28680,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_MONTEZUMA_EARLY_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TEOTIHUACAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_MONTEZUMA_EARLY_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TEOTIHUACAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_MONTEZUMA_MIDDLE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TEOTIHUACAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_MONTEZUMA_MIDDLE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TEOTIHUACAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_MONTEZUMA_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TEOTIHUACAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_MONTEZUMA_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TEOTIHUACAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -29185,27 +29185,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TIWANAKU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TIWANAKU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TIWANAKU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TIWANAKU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TIWANAKU</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_TIWANAKU</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -30262,27 +30262,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_WARI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_WARI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_WARI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_WARI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_WARI</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_HUAYNACAPAC_LATE_LP</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_WARI</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -30790,27 +30790,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_COSIJOEZA</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_ZAPOTEC</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_COSIJOEZA</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_ZAPOTEC</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_COSIJOEZA</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_ZAPOTEC</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_COSIJOEZA</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_ZAPOTEC</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_COSIJOEZA</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_ZAPOTEC</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_COSIJOEZA</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_ZAPOTEC</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>
@@ -31341,27 +31341,27 @@
 			<DiplomacyMusicPeace>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_ANCIENT</EraType>
-					<DiploScriptId>AS2D_DIPLO_PACAL_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUREPECHAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_CLASSICAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_PACAL_EARLY</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUREPECHAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_EXPLORATION</EraType>
-					<DiploScriptId>AS2D_DIPLO_PACAL_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUREPECHAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_COLONIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_PACAL_MIDDLE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUREPECHAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_REVOLUTIONARY</EraType>
-					<DiploScriptId>AS2D_DIPLO_PACAL_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUREPECHAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 				<DiploMusicPeaceEra>
 					<EraType>ERA_INDUSTRIAL</EraType>
-					<DiploScriptId>AS2D_DIPLO_PACAL_LATE</DiploScriptId>
+					<DiploScriptId>AS2D_DIPLO_PUREPECHAN</DiploScriptId>
 				</DiploMusicPeaceEra>
 			</DiplomacyMusicPeace>
 			<DiplomacyIntroMusicWar>

@@ -11221,23 +11221,86 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>DIPLO_BUMIN</SoundID>
-			<Filename>Sounds/Diplomacy/Bumin</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
+			<SoundID>DIPLO_BRAZIL</SoundID>
+			<Filename>Sounds/Diplomacy/BRAZIL_Late</Filename>
+			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>DIPLO_ALP_ARSLAN</SoundID>
-			<Filename>Sounds/Diplomacy/AlpArslan</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
+			<SoundID>DIPLO_PUEBLOAN</SoundID>
+			<Filename>Sounds/Diplomacy/MangasColoradas</Filename>
+			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>DIPLO_TAMERLANE</SoundID>
-			<Filename>Sounds/Diplomacy/Tamerlane</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
+			<SoundID>DIPLO_IROQUOIS</SoundID>
+			<Filename>Sounds/Diplomacy/Logan</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_ZAPOTEC</SoundID>
+			<Filename>Sounds/Diplomacy/Zapotec</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_PUREPECHAN</SoundID>
+			<Filename>Sounds/Diplomacy/Tarascans</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_TEOTIHUACAN</SoundID>
+			<Filename>Sounds/Diplomacy/Mixtec</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_TIWANAKU</SoundID>
+			<Filename>Sounds/Diplomacy/Cunhambebe</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_WARI</SoundID>
+			<Filename>Sounds/Diplomacy/Oconostota</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_CHIMU</SoundID>
+			<Filename>Sounds/Diplomacy/Toromona</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_MUISCA</SoundID>
+			<Filename>Sounds/Diplomacy/Caribs</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_INUIT</SoundID>
+			<Filename>Sounds/Diplomacy/Inuit</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_MISSISSIPPI</SoundID>
+			<Filename>Sounds/Diplomacy/Huron</Filename>
+			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
