@@ -18705,13 +18705,14 @@ CvPlot* CvUnitAI::AI_GetClosestEdge()
 bool CvUnitAI::AI_populateMove()
 {
 	// Let's say we want to send Colonists to the city with the most spare happiness that's not starving that's reachable
-	int iNumCities = GET_PLAYER(getOwnerINLINE()).getNumCities();
+	CvCity* pLoopCity;
 	CvCity* pBestCity = NULL;
+	int iLoop;
+	PlayerTypes ePlayer = getOwnerINLINE();
 	int iBestCityHappy = 0;
 
-	for (int iI = 0; iI < iNumCities; iI++)
+	for (pLoopCity = GET_PLAYER(ePlayer).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(ePlayer).nextCity(&iLoop))
 	{
-		CvCity* pLoopCity = GET_PLAYER(getOwnerINLINE()).getCity(iI);
 		if (atPlot(pLoopCity->plot()) || canMoveInto(pLoopCity->plot(), false, false))
 		{
 			if (pLoopCity->foodDifference() >= 0)

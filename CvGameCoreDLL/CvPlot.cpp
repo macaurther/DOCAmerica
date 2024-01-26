@@ -11974,8 +11974,8 @@ void CvPlot::removeFortClaims()
 
 void CvPlot::updateFortClaims(PlayerTypes ePlayer)
 {
-	// See if the fort was destroyed
-	if(getImprovementType() == NO_IMPROVEMENT && getFortClaimer() == this)
+	// See if the fort was removed
+	if(getImprovementType() != IMPROVEMENT_FORT && getFortClaimer() == this)
 	{
 		removeFortClaims();
 	}

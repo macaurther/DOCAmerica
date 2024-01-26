@@ -628,7 +628,6 @@
 			<Description>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI</Description>
 			<Civilopedia>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
@@ -746,7 +745,7 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iWorkRate>100</iWorkRate>
+			<iWorkRate>150</iWorkRate>
 			<iAsset>2</iAsset>
 			<iCombat>5</iCombat>
 			<UnitMeshGroups>

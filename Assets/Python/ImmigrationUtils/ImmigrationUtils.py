@@ -1692,8 +1692,8 @@ class Mercenary:
 	# MacAurther: Get the tile where hire mercenary ships appear
 	def getShipPlacementPlot(self, iPlayer):
 		iCiv = civ(iPlayer)
-		# Russia spawns in West
-		if iCiv == iRussia:
+		# Some civs spawn in West
+		if iCiv in [iPurepecha, iTiwanaku, iWari, iChimu, iMuisca, iRussia, iHawaii, iPeru]:
 			return gc.getMap().plot(0, dCapitals[civ(iPlayer)][1])
 		else:
 			return gc.getMap().plot(iWorldX - 1, dCapitals[civ(iPlayer)][1])

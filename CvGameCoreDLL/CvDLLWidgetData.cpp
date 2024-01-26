@@ -3258,19 +3258,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						}
 					}
 
-					// MacAurther: Russian UU: Promyshlenniki
-					if (eBuild != NO_BUILD && pSelectedUnit->getUnitType() == UNIT_RUSSIAN_PROMYSHLENNIKI)
-					{
-						if (pSelectedUnit->plot()->getTerrainType() == TERRAIN_TUNDRA || pSelectedUnit->plot()->getTerrainType() == TERRAIN_MOORLAND)
-						{
-							iNowWorkRate *= 150;
-							iNowWorkRate /= 100;
-							
-							iThenWorkRate *= 150;
-							iThenWorkRate /= 100;
-						}
-					}
-
 					// MacAurther: Portuguese UP
 					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && (eBuild == GC.getInfoTypeForString("BUILD_PLANTATION") || eBuild == GC.getInfoTypeForString("BUILD_PLANTATION_DEFORESTATION")))
 					{

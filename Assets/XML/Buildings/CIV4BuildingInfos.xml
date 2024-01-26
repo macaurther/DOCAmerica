@@ -1102,7 +1102,7 @@
 			<iConquestProb>70</iConquestProb>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -1143,7 +1143,7 @@
 			<iConquestProb>80</iConquestProb>
 			<iHappiness>2</iHappiness>
 			<iAsset>4</iAsset>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -1242,8 +1242,8 @@
 			<iConquestProb>70</iConquestProb>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
-			<iDefense>15</iDefense>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<iDefense>25</iDefense>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -1284,7 +1284,7 @@
 			<iConquestProb>70</iConquestProb>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iGreatPeopleRateModifier>15</iGreatPeopleRateModifier>
+			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>

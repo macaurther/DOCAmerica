@@ -7273,16 +7273,6 @@ bool CvUnit::build(BuildTypes eBuild)
 		}
 	}
 
-	// MacAurther: Russian UU: Promyshlenniki
-	if (eBuild != NO_BUILD && getUnitType() == UNIT_RUSSIAN_PROMYSHLENNIKI)
-	{
-		if (plot()->getTerrainType() == TERRAIN_TUNDRA || plot()->getTerrainType() == TERRAIN_MOORLAND)
-		{
-			iWorkRate *= 150;	// Yes, this is multiplicative with Highway or Railroad if Russia has one of the above Wonders, oh well
-			iWorkRate /= 100;
-		}
-	}
-
 	// MacAurther: Portuguese UP
 	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && (eBuild == GC.getInfoTypeForString("BUILD_PLANTATION") || eBuild == GC.getInfoTypeForString("BUILD_PLANTATION_DEFORESTATION")))
 	{

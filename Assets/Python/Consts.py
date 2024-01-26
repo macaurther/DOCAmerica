@@ -109,7 +109,7 @@ iLime = 100
 iNumMinorCities = 3
 
 # scripted conquerors
-iNumConquests = 4
+iNumConquests = 9
 
 lNeighbours = [
 	(iMaya, iAztecs),

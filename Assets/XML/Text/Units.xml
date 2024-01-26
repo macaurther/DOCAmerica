@@ -1835,19 +1835,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</English>
-		<French>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</French>
-		<German>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_RUSSIAN_PROMYSHLENNIKI_HELP</Tag>
-		<English>[ICON_BULLET]Builds faster on Tundra and Moorland</English>
-		<French>[ICON_BULLET]Builds faster on Tundra and Moorland</French>
-		<German>[ICON_BULLET]Builds faster on Tundra and Moorland</German>
-		<Italian>[ICON_BULLET]Builds faster on Tundra and Moorland</Italian>
-		<Spanish>[ICON_BULLET]Builds faster on Tundra and Moorland</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements faster.</English>
+		<French>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements faster.</French>
+		<German>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements faster.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements faster.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements faster.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COUREUR_DES_BOIS</Tag>
@@ -2223,11 +2215,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUEBLOAN_PATHFINDER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</English>
-		<French>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</French>
-		<German>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Promyshlenniki[COLOR_REVERT], the Russian replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can defend and builds improvements on tundra and moorland faster.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Pathfinder[COLOR_REVERT], the Puebloan replacement for the [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], is stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Pathfinder[COLOR_REVERT], the Puebloan replacement for the [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], is stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Pathfinder[COLOR_REVERT], the Puebloan replacement for the [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], is stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Pathfinder[COLOR_REVERT], the Puebloan replacement for the [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], is stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Pathfinder[COLOR_REVERT], the Puebloan replacement for the [COLOR_UNIT_TEXT]Scout[COLOR_REVERT], is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAWAIIAN_KOA</Tag>

@@ -491,7 +491,6 @@ dStartingUnits = CivDict({
 		iSiege: 2,
 		iHarass: 2,
 		iSiegeCity: 2,
-		iWorkSea: 2,
 		iFerrySea: 2,
 		iEscortSea: 1,
 		iMissionary: 1,
@@ -587,7 +586,8 @@ dStartingUnits = CivDict({
 # Extra units for AI
 dExtraAIUnits = CivDict({
 	iAmerica: {
-		iBase: 1,
+		iBase: 5,
+		iShock: 5,
 	},
 	iArgentina: {
 		iBase: 3,
@@ -812,11 +812,14 @@ dBuildingPreferences = {
 	iMaya : {
 		iTempleOfKukulkan: 40,
 		iMachuPicchu: -40,
-		iSerpentMound: -40,
+		iSerpentMound: -80,
 	},
 	iTeotihuacan : {
 		iTlachihualtepetl: 40,
-		iSerpentMound: -40,
+		iSerpentMound: -80,
+	},
+	iZapotec : {
+		iSerpentMound: -80,
 	},
 	iTiwanaku : {
 		iGateOfTheSun: 40,

@@ -185,7 +185,6 @@ class GameData:
 		self.births = []
 		
 		self.dFirstContactConquerors = dict((iCiv, False) for iCiv in lBioNewWorld)
-		self.dExpeditionaryConquerors = dict((iCiv, False) for iCiv in lRevolutionaries)
 		self.lTradingCompanyConquerorsTargets = appenddict()
 		
 		self.iBeforeObserverSlot = -1
