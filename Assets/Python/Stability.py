@@ -106,7 +106,7 @@ def triggerCrisis(iPlayer):
 			return
 		
 		# collapse to core if controlling cities outside of core
-		if cities.core(iPlayer).owner(iPlayer) < cities.owner(iPlayer):
+		if cities.core(iPlayer).owner(iPlayer) < cities.owner(iPlayer) and civ(iPlayer) not in dCivGroups[iCivGroupEurope]: 	# MacAurther: European RP, doesn't have Core
 			collapseToCore(iPlayer)
 			return
 
@@ -289,6 +289,10 @@ def checkLostCitiesCollapse(iPlayer):
 	data.players[iPlayer].iNumPreviousCities = iNumCurrentCities
 	
 def checkLostCoreCollapse(iPlayer):
+	# MacAurther: European RP, doesn't have Core
+	if civ(iPlayer) in dCivGroups[iCivGroupEurope]:
+		return
+
 	pPlayer = player(iPlayer)
 	
 	if isImmune(iPlayer): return
@@ -296,7 +300,7 @@ def checkLostCoreCollapse(iPlayer):
 	lCities = cities.core(iPlayer).owner(iPlayer)
 	
 	# completely pushed out of core: collapse
-	if len(lCities) == 0:
+	if len(lCities) == 0:	
 		if periods.evacuate(iPlayer):
 			return
 			
@@ -621,21 +625,20 @@ def calculateStability(iPlayer):
 	
 	# MacAurther: European RP: Extra stability from Motherland
 	iMotherlandStability = 0
-	if iCurrentEra < iRevolutionaryEra:
-		if iCiv == iEngland:
-			iMotherlandStability = 10
-		elif iCiv == iFrance:
-			iMotherlandStability = 10
-		elif iCiv == iNetherlands:
-			iMotherlandStability = 10
-		elif iCiv == iNorse:
-			iMotherlandStability = 5
-		elif iCiv == iPortugal:
-			iMotherlandStability = 5
-		elif iCiv == iRussia:
-			iMotherlandStability = 10
-		elif iCiv == iSpain:
-			iMotherlandStability = 15
+	if iCiv == iEngland:
+		iMotherlandStability = 10
+	elif iCiv == iFrance:
+		iMotherlandStability = 10
+	elif iCiv == iNetherlands:
+		iMotherlandStability = 10
+	elif iCiv == iNorse:
+		iMotherlandStability = 5
+	elif iCiv == iPortugal:
+		iMotherlandStability = 5
+	elif iCiv == iRussia:
+		iMotherlandStability = 10
+	elif iCiv == iSpain:
+		iMotherlandStability = 15
 	
 	# MacAurther: Make Mississippi AI collapse because they like to stick around too long
 	if not pPlayer.isHuman() and iCiv == iMississippi and turn() > turn(dFall[iMississippi]):

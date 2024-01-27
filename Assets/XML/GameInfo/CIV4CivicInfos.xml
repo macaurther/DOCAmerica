@@ -1303,6 +1303,13 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>50</iCommerce>
 			</CapitalCommerceModifiers>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>-50</iCommerce>
+			</CommerceModifiers>
 			<bNoForeignTrade>1</bNoForeignTrade>
 		</CivicInfo>
 		<CivicInfo>

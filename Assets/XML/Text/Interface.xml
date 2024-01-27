@@ -34,6 +34,22 @@
 		<Spanish>&#161;Una unidad enemiga ha sido esclavizada!</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_CAPTURE_LOSE</Tag>
+		<English>Your unit has been captured!</English>
+		<French>Your unit has been captured!</French>
+		<German>Your unit has been captured!</German>
+		<Italian>Your unit has been captured!</Italian>
+		<Spanish>Your unit has been captured!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_CAPTURE_WIN</Tag>
+		<English>An enemy unit has been captured!</English>
+		<French>An enemy unit has been captured!</French>
+		<German>An enemy unit has been captured!</German>
+		<Italian>An enemy unit has been captured!</Italian>
+		<Spanish>An enemy unit has been captured!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_EMIGRATION</Tag>
 		<English>A part of our population from %s1 is emigrating to the New World!</English>
 		<French>Une partie de la population de %s1 &#233;migre vers le Nouveau Monde !</French>

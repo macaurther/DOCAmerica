@@ -120,6 +120,11 @@ def captureSlaves(winningUnit, losingUnit):
 			if player(winningUnit).isSlavery() or player(winningUnit).isColonialSlavery():
 				captureUnit(losingUnit, winningUnit, iNativeSlave, 50)
 
+@handler("combatResult")
+def captureCannon(winningUnit, losingUnit):
+	if losingUnit.getUnitType() in [iBombard, iCannon, iArtillery, iHowitzer]:
+		iWinner = winningUnit.getOwner()
+		captureUnit(losingUnit, winningUnit, losingUnit.getUnitType(), 50)
 
 @handler("combatResult")
 def mayanHolkanAbility(winningUnit, losingUnit):

@@ -32,7 +32,7 @@ iEnglandNetherlandsYear = 1664
 tEnglandNetherlandsTL = (39, 78)
 tEnglandNetherlandsBR = (43, 86)
 
-iEnglandAmericaNorthYear = 1776
+iEnglandAmericaNorthYear = 1777
 tEnglandAmericaNorthTL = (41, 81)
 tEnglandAmericaNorthBR = (45, 86)
 

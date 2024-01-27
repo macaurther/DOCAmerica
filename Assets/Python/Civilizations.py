@@ -324,7 +324,7 @@ lCivilizations = [
 	Civilization(
 		iHaiti,
 		iGold=100,
-		lCivics=[iMonarchy, iCommonLaw, iCraftsmen, iAgrarianism, iIsolationism],
+		lCivics=[iMonarchy, iCustomaryLaw, iCraftsmen, iAgrarianism, iIsolationism],
 		lEnemies=[iFrance],
 		techs=techs.column(15)
 	),

@@ -12734,12 +12734,6 @@ int CvPlayer::getCommerceRateModifier(CommerceTypes eIndex) const
 
 	int iCommerceRateModifier = m_aiCommerceRateModifier[eIndex];
 
-	// MacAurther: Isolationism Civic
-	if (eIndex == COMMERCE_IMMIGRATION && hasCivic(CIVIC_ISOLATIONISM))
-	{
-		iCommerceRateModifier -= 50;
-	}
-
 	// MacAurther: England UP
 	if (eIndex == COMMERCE_IMMIGRATION && getCivilizationType() == ENGLAND)
 	{
