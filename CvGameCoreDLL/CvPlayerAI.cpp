@@ -7856,8 +7856,11 @@ DenialTypes CvPlayerAI::AI_cityTrade(CvCity* pCity, PlayerTypes ePlayer) const
 				//Rhye - start
 				int maxDistance = 15;
 				switch (GC.getGameINLINE().getCurrentEra()) {
-					case ERA_PRECOLUMBIAN:
+					case ERA_ANCIENT:
 						maxDistance = 15;
+						break;
+					case ERA_CLASSICAL:
+						maxDistance = 20;
 						break;
 					case ERA_EXPLORATION:
 						maxDistance = 30;
@@ -10813,7 +10816,7 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		break;
 	case CIVIC_OPPORTUNITY:
 	case CIVIC_MULTICULTURALISM:
-		if (getCurrentEra() >= ERA_ATOMIC)
+		if (getCurrentEra() >= ERA_INDUSTRIAL)
 		{
 			iValue *= 6;
 			iValue /= 5;

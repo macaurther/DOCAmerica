@@ -860,11 +860,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Tag>
-		<English>Cheaper workers; extra commerce from Farms and Orchards</English>
-		<French>Cheaper workers; extra commerce from Farms and Orchards</French>
-		<German>Cheaper workers; extra commerce from Farms and Orchards</German>
-		<Italian>Cheaper workers; extra commerce from Farms and Orchards</Italian>
-		<Spanish>Cheaper workers; extra commerce from Farms and Orchards</Spanish>
+		<English>Cheaper to hire workers; extra commerce from Farms and Orchards</English>
+		<French>Cheaper to hire workers; extra commerce from Farms and Orchards</French>
+		<German>Cheaper to hire workers; extra commerce from Farms and Orchards</German>
+		<Italian>Cheaper to hire workers; extra commerce from Farms and Orchards</Italian>
+		<Spanish>Cheaper to hire workers; extra commerce from Farms and Orchards</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_HELP</Tag>
+		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</English>
+		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</French>
+		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</German>
+		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</Italian>
+		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM</Tag>

@@ -479,7 +479,6 @@
 						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_CARDENAS_1</Text>
 					</DiplomacyText>
 				</Response>
-				<Responses>
 				<Response>
 					<Civilizations/>
 					<Leaders>
@@ -508,7 +507,6 @@
 						<Text>AI_DIPLO_FIRST_CONTACT_LEADER_TARIACURI_1</Text>
 					</DiplomacyText>
 				</Response>
-			</Responses>
 				<Response>
 					<Civilizations/>
 					<Leaders>

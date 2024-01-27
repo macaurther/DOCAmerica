@@ -754,12 +754,12 @@
 			<Description>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_HELP</Help>
 			<TechPrereq>TECH_INDENTURES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/IndenturedServitude.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iWorkerCostModifier>-50</iWorkerCostModifier>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
@@ -1225,6 +1225,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Deification.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
+			<iWorkerCostModifier>-50</iWorkerCostModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<MinimalSpecialists>

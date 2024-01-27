@@ -7218,10 +7218,14 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		return false;
 	}
 
-	// MacAurther: Cannot build on top of Tribe, unless it is to contact them
+	// MacAurther: Cannot build on top of Tribe, unless it is to contact them or build a road (no railroad or highway though)
 	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_TRIBE)
 	{
 		if(eBuild == BUILD_CONTACT_TRIBE && canContactTribe(pPlot))
+		{
+			return true;
+		}
+		if(eBuild == BUILD_ROAD)
 		{
 			return true;
 		}

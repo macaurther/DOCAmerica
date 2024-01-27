@@ -24715,7 +24715,7 @@ void CvPlayer::setStartingEra(EraTypes eNewValue)
 {
 	m_eStartingEra = eNewValue;
 
-	if (eNewValue > ERA_PRECOLUMBIAN && GC.getGameINLINE().isFinalInitialized() && !(gDLL->GetWorldBuilderMode()))
+	if (eNewValue > ERA_ANCIENT && GC.getGameINLINE().isFinalInitialized() && !(gDLL->GetWorldBuilderMode()))
 	{
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_PYTHON_SCREEN);
 		if (NULL != pInfo)
@@ -25512,7 +25512,7 @@ int CvPlayer::getLandHistory(int iTurn) const
 
 bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 {
-	if (getCurrentEra() >= ERA_ATOMIC)
+	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
 		if (eCivic == CIVIC_ISOLATIONISM)
 		{
@@ -25520,7 +25520,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 		}
 	}
 
-	if (getCurrentEra() >= ERA_MODERN)
+	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
 		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_CASTE_SYSTEM)
 		{

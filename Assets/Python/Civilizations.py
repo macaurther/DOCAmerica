@@ -283,8 +283,8 @@ lCivilizations = [
 		iEngland,
 		iGold=200,
 		iStateReligion=iProtestantism,
-		lCivics=[iCharterColony, iCommonLaw, iSerfdom, iMercantilism, iHaven],
-		techs=techs.column(10).including(iShipbuilding, iCharter, iCommunity).without(*lNativeTechs)
+		lCivics=[iCharterColony, iCommonLaw, iIndenturedServitude, iMercantilism, iHaven],
+		techs=techs.column(10).including(iShipbuilding, iCharter, iCommunity, iIndentures).without(*lNativeTechs)
 	),
 	Civilization(
 		iFrance,

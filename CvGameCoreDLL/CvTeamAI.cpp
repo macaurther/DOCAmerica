@@ -763,21 +763,21 @@ bool CvTeamAI::AI_isLandTarget(TeamTypes eTeam) const
 	}
 	else
 	{
-	if (!AI_hasCitiesInPrimaryArea(eTeam))
-	{
+		if (!AI_hasCitiesInPrimaryArea(eTeam))
+		{
 			m_aiLandTargetCache[eTeam] = 0;
-		return false;
-	}
+			return false;
+		}
 
-	if (AI_calculateAdjacentLandPlots(eTeam) < 8)
-	{
+		if (AI_calculateAdjacentLandPlots(eTeam) < 8)
+		{
 			m_aiLandTargetCache[eTeam] = 0;
-		return false;
-	}
+			return false;
+		}
 
 		m_aiLandTargetCache[eTeam] = 1;
-	return true;
-}
+		return true;
+	}
 	// Sanguo Mod Performance, end
 }
 
@@ -1413,7 +1413,7 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 
 	if (GC.getGameINLINE().getGameTurn() <= GET_PLAYER(getLeaderID()).getLastBirthTurn() + getTurns(2)) // edead
 	{
-		return DENIAL_TECH_MONOPOLY;
+		return DENIAL_MYSTERY;
 	}
 
 	if (GC.getGameINLINE().getGameTurn() <= GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getLastBirthTurn() + getTurns(2)) // edead
@@ -1482,18 +1482,19 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 		// }
 	// }
 	for (std::vector<PlayerTypes>::const_iterator iter = m_aePlayerMembers.begin(); iter != m_aePlayerMembers.end(); ++iter)
-			{
+	{
 		if (eAttitude <= GC.getLeaderHeadInfo(GET_PLAYER(*iter).getPersonalityType()).getTechRefuseAttitudeThreshold())
-				{
-					return DENIAL_ATTITUDE;
-				}
-			}
+		{
+			return DENIAL_ATTITUDE;
+		}
+	}
 	// Sanguo Mod Performance, end
 
 	if (eAttitude < ATTITUDE_FRIENDLY)
 	{
-		if ((GC.getGameINLINE().getTeamRank(getID()) < (GC.getGameINLINE().countCivTeamsEverAlive() / 2)) ||
-			  (GC.getGameINLINE().getTeamRank(eTeam) < (GC.getGameINLINE().countCivTeamsEverAlive() / 2)))
+		// Leoreth: used to be /2 instead of *2/3
+		if ((GC.getGameINLINE().getTeamRank(getID()) < (GC.getGameINLINE().countCivTeamsEverAlive() * 2 / 3)) ||
+			  (GC.getGameINLINE().getTeamRank(eTeam) < (GC.getGameINLINE().countCivTeamsEverAlive() * 2 / 3)))
 		{
 			iNoTechTradeThreshold = AI_noTechTradeThreshold();
 
@@ -1507,6 +1508,8 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 		}
 
 		iTechTradeKnownPercent = AI_techTradeKnownPercent();
+
+		iTechTradeKnownPercent = std::min(iTechTradeKnownPercent + 10, 60);
 
 		iTechTradeKnownPercent *= std::max(0, (GC.getHandicapInfo(GET_TEAM(eTeam).getHandicapType()).getTechTradeKnownModifier() + 100));
 		iTechTradeKnownPercent /= 100;
@@ -1698,12 +1701,6 @@ DenialTypes CvTeamAI::AI_vassalTrade(TeamTypes eTeam) const
 
 	CvTeamAI& kMasterTeam = GET_TEAM(eTeam);
 
-	//Leoreth: recently spawned or respawned civs won't vassalize
-	if (GC.getGame().getGameTurn() < GET_PLAYER(getLeaderID()).getLastBirthTurn() + getTurns(10))
-	{
-		return DENIAL_NO_GAIN;
-	}
-
 	for (int iLoopTeam = 0; iLoopTeam < MAX_TEAMS; iLoopTeam++)
 	{
 		CvTeam& kLoopTeam = GET_TEAM((TeamTypes)iLoopTeam);
@@ -1769,6 +1766,23 @@ DenialTypes CvTeamAI::AI_surrenderTrade(TeamTypes eTeam, int iPowerMultiplier) c
 	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
 
 	CvTeam& kMasterTeam = GET_TEAM(eTeam);
+
+	//Leoreth: recently spawned or respawned civs won't vassalize
+	if (GC.getGame().getGameTurn() < GET_PLAYER(getLeaderID()).getLastBirthTurn() + getTurns(10))
+	{
+		return DENIAL_NO_GAIN;
+	}
+
+	// Leoreth: not if either of them are birth protected
+	if (GET_PLAYER(getLeaderID()).isBirthProtected())
+	{
+		return DENIAL_POWER_US;
+	}
+
+	if (GET_PLAYER(kMasterTeam.getLeaderID()).isBirthProtected())
+	{
+		return DENIAL_NO_GAIN;
+	}
 
 	for (int iLoopTeam = 0; iLoopTeam < MAX_TEAMS; iLoopTeam++)
 	{
@@ -2628,7 +2642,7 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 		iDefensivePactLimit += 1;
 	}
 
-	if (iMaxEra >= ERA_ATOMIC)
+	if (iMaxEra >= ERA_INDUSTRIAL)
 	{
 		iDefensivePactLimit += 1;
 	}
@@ -2639,19 +2653,19 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 	}
 
 	// Leoreth: never more defensive pact partners than limit
-	if ((int)partners.size() > iDefensivePactLimit)
+	if (partners.size() > iDefensivePactLimit)
 	{
 		return DENIAL_NO_GAIN;
 	}
 
 	// Leoreth: defensive pact partners and member with highest vassal count may not exceed twice the limit
-	if ((int)(partners.size() + iMaxVassals) > 2 * iDefensivePactLimit)
+	if (partners.size() + iMaxVassals > 2 * iDefensivePactLimit)
 	{
 		return DENIAL_NO_GAIN;
 	}
 
 	// Leoreth: sum of defensive pact partners and half of all their vassals may not exceed twice the limit
-	if ((int)(partners.size() + vassals.size() / 2) > 2 * iDefensivePactLimit)
+	if (partners.size() + vassals.size() / 2 > 2 * iDefensivePactLimit)
 	{
 		return DENIAL_NO_GAIN;
 	}
@@ -3280,8 +3294,8 @@ int CvTeamAI::AI_noTechTradeThreshold() const
 	for (std::vector<PlayerTypes>::const_iterator iter = m_aePlayerMembers.begin(); iter != m_aePlayerMembers.end(); ++iter)
 	{
 		iRand += GC.getLeaderHeadInfo(GET_PLAYER(*iter).getPersonalityType()).getNoTechTradeThreshold();
-				iCount++;
-			}
+		iCount++;
+	}
 	// Sanguo Mod Performance, end
 
 	if (iCount > 0)
@@ -3317,8 +3331,8 @@ int CvTeamAI::AI_techTradeKnownPercent() const
 	for (std::vector<PlayerTypes>::const_iterator iter = m_aePlayerMembers.begin(); iter != m_aePlayerMembers.end(); ++iter)
 	{
 		iRand += GC.getLeaderHeadInfo(GET_PLAYER(*iter).getPersonalityType()).getTechTradeKnownPercent();
-				iCount++;
-			}
+		iCount++;
+	}
 	// Sanguo Mod Performance, end
 
 	if (iCount > 0)

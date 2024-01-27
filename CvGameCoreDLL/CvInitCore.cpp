@@ -1527,6 +1527,7 @@ void CvInitCore::setFlagDecal(PlayerTypes eID, const CvWString & szFlagDecal)
 
 CivilizationTypes CvInitCore::getCiv(PlayerTypes eID) const
 {
+	FASSERT_BOUNDS(0, MAX_PLAYERS, eID, "CvInitCore::getCiv");
 	if ( checkBounds(eID, 0, MAX_PLAYERS) )
 	{
 		return m_aeCiv[eID];
@@ -1901,6 +1902,35 @@ void CvInitCore::resetAdvancedStartPoints()
 	}
 
 	setNumAdvancedStartPoints(iPoints);
+}
+
+
+const CvWString& CvInitCore::getGameName() const
+{
+	return m_szGameName;
+}
+
+
+void CvInitCore::setGameName(const CvWString& szGameName)
+{
+	static CvWString szAppliedGameName = szGameName;
+	static CvWString szModVersion = GC.getDefineSTRING("DAWN_OF_CIV_MOD_VERSION");
+	static CvWString szLeft = " (v";
+	static CvWString szRight = ")";
+
+	if (szModVersion != NULL && !szModVersion.empty())
+	{
+		int iSuffixIndex = szAppliedGameName.find(szLeft);
+		if (iSuffixIndex != std::string::npos)
+		{
+			szAppliedGameName = szAppliedGameName.substr(0, iSuffixIndex);
+		}
+
+		m_szGameName = szAppliedGameName + szLeft + szModVersion + szRight;
+		return;
+	}
+
+	m_szGameName = szGameName;
 }
 
 

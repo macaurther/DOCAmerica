@@ -1407,6 +1407,7 @@ class Mercenary:
 			bDecolonization = False
 			bIntervention = False
 			bProprietaries = False
+			bIndenturedServitude = False
 		else:
 			# Get the actual current player object
 			player = gc.getPlayer(iPlayer)
@@ -1415,6 +1416,7 @@ class Mercenary:
 			bDecolonization = iDecolonization in civics
 			bIntervention = iIntervention in civics
 			bProprietaries = iProprietaries in civics
+			bIndenturedServitude = iIndenturedServitude in civics
 			
 		# if the self.objUnitInfo is actually set then get the latest cost to hire the mercenary.
 		if(self.objUnitInfo != None):
@@ -1424,18 +1426,25 @@ class Mercenary:
 		iGoldCost = 0
 		
 		# Settlers are expensive
-		if self.getUnitInfoID() in [iSettler, iPioneer]:
+		if self.getUnitInfoID() in lSettlers:
 			iImmigrationCost *= 3
 		
 		# Great people are very expensive
-		if self.getUnitInfoID() in [iGreatArtist, iGreatEngineer, iGreatGeneral, iGreatMerchant, iGreatProphet, iGreatScientist, iGreatStatesman]:
+		if self.getUnitInfoID() in lGreatPeople:
 			iImmigrationCost *= 30
 		
+		iImmigrationCostModifier = 100
+		
 		if bDecolonization:
-			iImmigrationCost *= 3
-			iImmigrationCost /= 2
+			iImmigrationCostModifier += 50
 		elif bIntervention:
-			iImmigrationCost /= 2
+			iImmigrationCostModifier -= 50
+		
+		if bIndenturedServitude and self.getUnitInfoID() in lWorkers:
+			iImmigrationCostModifier -= 50
+		
+		iImmigrationCost *= iImmigrationCostModifier
+		iImmigrationCost /= 100
 		
 		if iImmigrationCost > iCurrentImmigration:
 			iGoldCost = (iImmigrationCost - iCurrentImmigration) * 2

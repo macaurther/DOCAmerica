@@ -930,6 +930,46 @@
 		<Spanish>Razing a Tribe will cause its people to rise up against you.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_9</Tag>
+		<English>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</English>
+		<French>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</French>
+		<German>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</German>
+		<Italian>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</Italian>
+		<Spanish>North is not always up on the DoC America map. It is based off of a projection that maximizes land to water ratio in a rectangle. In Alaska, North is to the upper right, in Iceland, North is to the left, and in Patagonia, South is to the lower left. Don't get disoriented!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_10</Tag>
+		<English>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</English>
+		<French>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</French>
+		<German>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</German>
+		<Italian>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Italian>
+		<Spanish>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_11</Tag>
+		<English>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</English>
+		<French>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</French>
+		<German>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</German>
+		<Italian>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</Italian>
+		<Spanish>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_12</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_AMERICA_13</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_HINT_DOC_</Tag>
 		<English></English>
 		<French></French>

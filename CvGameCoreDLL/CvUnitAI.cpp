@@ -11001,6 +11001,13 @@ bool CvUnitAI::AI_goody(int iRange)
 		return false;
 	}
 
+	// Check if you're on the Tribe and contact it if so
+	if (plot()->isGoody())
+	{
+		getGroup()->pushMission(MISSION_BUILD, BUILD_CONTACT_TRIBE, -1, 0, (getGroup()->getLengthMissionQueue() > 0), false, MISSIONAI_BUILD, plot());
+		return true;
+	}
+
 	iSearchRange = AI_searchRange(iRange);
 
 	iBestValue = 0;

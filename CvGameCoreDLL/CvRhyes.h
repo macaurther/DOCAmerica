@@ -17,7 +17,7 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_CIVS				(31)
 
-#define NUM_ERAS				(ERA_ATOMIC+1)
+#define NUM_ERAS				(ERA_INDUSTRIAL+1)
 
 #define BUILDINGCLASS_PALACE	((BuildingClassTypes)0)
 #define BUILDINGCLASS_MEETING_HALL ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_MEETING_HALL"))		// MacAurther
@@ -41,6 +41,7 @@ typedef list<char*> LISTCHAR;
 
 #define ESPIONAGEMISSION_COUP	((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
 
+#define BUILD_ROAD				((BuildTypes)GC.getInfoTypeForString("BUILD_ROAD"))									// MacAurther
 #define BUILD_CONTACT_TRIBE		((BuildTypes)GC.getInfoTypeForString("BUILD_CONTACT_TRIBE"))						// MacAurther
 #define BUILD_FORT				((BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))									// MacAurther
 #define BUILD_PLANTATION		((BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))							// MacAurther
@@ -405,13 +406,12 @@ enum DoCBuildings
 
 enum DoCEras
 {
-	ERA_PRECOLUMBIAN,
+	ERA_ANCIENT,
+	ERA_CLASSICAL,
 	ERA_EXPLORATION,
 	ERA_COLONIAL,
 	ERA_REVOLUTIONARY,
-	ERA_INDUSTRIAL,
-	ERA_MODERN,
-	ERA_ATOMIC,
+	ERA_INDUSTRIAL
 };
 
 enum Regions
@@ -514,8 +514,8 @@ enum ECSArtStyles
 
 #endif	// CVRHYES_H
 
-static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 20, 25, 30, 40, 50};
-static const int lTechBackwardsBonus[NUM_ERAS] = {0, 20, 30, 40, 50, 60, 75};
+static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 20, 25, 30, 40};
+static const int lTechBackwardsBonus[NUM_ERAS] = {0, 20, 30, 40, 50, 60};
 
 // Leoreth: order of persecution
 static const int persecutionOrder[NUM_RELIGIONS][NUM_RELIGIONS-1] = 
