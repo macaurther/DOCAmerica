@@ -256,8 +256,8 @@ lCivilizations = [
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespotism, iCaptives, iCasteSystem, iTributaries],
-		lEnemies=[iTeotihuacan, iPurepecha],
-		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys).without(iTrapping, iShallowFishing, iFishing)
+		lEnemies=[iTeotihuacan],
+		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iIroquois,
@@ -444,8 +444,9 @@ dStartingUnits = CivDict({
 		iWork: 2,
 		iDefend: 3,
 		iBase: 2,
-		iShock: 4,
-		iHarass: 2,
+		iShock: 2,
+		iHarass: 1,
+		iSiege: 1,
 	},
 	iAztecs: {
 		iSettle: 2,
@@ -454,6 +455,7 @@ dStartingUnits = CivDict({
 		iBase: 4,
 		iShock: 6,
 		iHarass: 3,
+		iSiege: 3,
 	},
 	iIroquois: {
 		iSettle: 1,

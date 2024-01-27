@@ -106,7 +106,7 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 3
+iNumMinorCities = 4
 
 # scripted conquerors
 iNumConquests = 9
@@ -268,7 +268,7 @@ dResurrections = CivDict({
 }, [])
 
 dEnemyCivsOnSpawn = CivDict({
-iAztecs : [iMaya, iTeotihuacan, iPurepecha],
+iAztecs : [iTeotihuacan],
 iInca : [iTiwanaku, iWari],
 iAmerica : [iEngland, iIroquois, iIndependent, iIndependent2, iNative],
 iHaiti : [iFrance],
