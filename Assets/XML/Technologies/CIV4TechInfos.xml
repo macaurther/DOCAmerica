@@ -1696,7 +1696,6 @@
 			<Type>TECH_OLD_WORLD_TACTICS</Type>
 			<Description>TXT_KEY_TECH_OLD_WORLD_TACTICS</Description>
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_TACTICS_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TECH_OLD_WORLD_TACTICS_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

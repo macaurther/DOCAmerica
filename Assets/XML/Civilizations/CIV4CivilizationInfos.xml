@@ -1525,9 +1525,9 @@
 			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRO</Identifier>
-			<Region>WOO</Region>
+			<Region>WIL</Region>
 			<CultureGroup>1</CultureGroup>
-			<StartingYear>1450</StartingYear>
+			<StartingYear>1350</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -1888,7 +1888,7 @@
 			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
-			<Region>WOO</Region>
+			<Region>WIL</Region>
 			<CultureGroup>1</CultureGroup>
 			<StartingYear>600</StartingYear>
 			<LoadingTimes>
@@ -2632,7 +2632,7 @@
 			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
-			<Region>SOU</Region>
+			<Region>WIL</Region>
 			<CultureGroup>1</CultureGroup>
 			<StartingYear>750</StartingYear>
 			<LoadingTimes>

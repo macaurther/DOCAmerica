@@ -1866,7 +1866,7 @@
 		<Spanish>[ICON_BULLET]Gains bonus experience from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE</Tag>
+		<Tag>TXT_KEY_UNIT_ARMED_BRAVE</Tag>
 		<English>Armed Brave</English>
 		<French>Armed Brave</French>
 		<German>Armed Brave</German>
@@ -1874,7 +1874,7 @@
 		<Spanish>Armed Brave</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_ARMED_BRAVE_STRATEGY</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>

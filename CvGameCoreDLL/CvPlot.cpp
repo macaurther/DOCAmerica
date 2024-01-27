@@ -6704,15 +6704,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
-	// MacAurther: Southwest RP: +1 Production and +1 Commerce on Semidesert
-	if(eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_SOUTHWEST && getTerrainType() == TERRAIN_SEMIDESERT)
-	{
-		if(eYield == YIELD_PRODUCTION || eYield == YIELD_COMMERCE)
-		{
-			iYield += 1;
-		}
-	}
-
 	// MacAurther: Russian UP: Extra yields on Resources of which you have 4 or more
 	if(eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == RUSSIA)
 	{

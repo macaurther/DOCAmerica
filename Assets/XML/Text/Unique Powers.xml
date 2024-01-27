@@ -3,8 +3,7 @@
 	Regions:
 		MES - Mesoamerica
 		AND - Andes
-		WOO - Woodland
-		SOU - Southwest
+		WIL - Wilderness
 		EUR - Europe
 		ARC - Arctic
 		PAC - Pacific
@@ -143,36 +142,20 @@
 		<Spanish>No penalties for cultural expansion over water tiles</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_RP_SOU_TITLE</Tag>
-		<English>Southwest - The Power of Adobe:</English>
-		<French>Southwest - The Power of Adobe:</French>
-		<German>Southwest - The Power of Adobe:</German>
-		<Italian>Southwest - The Power of Adobe:</Italian>
-		<Spanish>Southwest - The Power of Adobe:</Spanish>
+		<Tag>TXT_KEY_RP_WIL_TITLE</Tag>
+		<English>The Power of Raids:</English>
+		<French>The Power of Raids:</French>
+		<German>The Power of Raids:</German>
+		<Italian>The Power of Raids:</Italian>
+		<Spanish>The Power of Raids:</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_RP_SOU</Tag>
-		<English>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</English>
-		<French>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</French>
-		<German>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</German>
-		<Italian>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</Italian>
-		<Spanish>+1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_RP_WOO_TITLE</Tag>
-		<English>The Power of Sacred Waters:</English>
-		<French>The Power of Sacred Waters:</French>
-		<German>The Power of Sacred Waters:</German>
-		<Italian>The Power of Sacred Waters:</Italian>
-		<Spanish>The Power of Sacred Waters:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_RP_WOO</Tag>
-		<English>No penalties for cultural expansion over water tiles</English>
-		<French>No penalties for cultural expansion over water tiles</French>
-		<German>No penalties for cultural expansion over water tiles</German>
-		<Italian>No penalties for cultural expansion over water tiles</Italian>
-		<Spanish>No penalties for cultural expansion over water tiles</Spanish>
+		<Tag>TXT_KEY_RP_WIL</Tag>
+		<English>Capture weapons from defeating advanced enemies</English>
+		<French>Capture weapons from defeating advanced enemies</French>
+		<German>Capture weapons from defeating advanced enemies</German>
+		<Italian>Capture weapons from defeating advanced enemies</Italian>
+		<Spanish>Capture weapons from defeating advanced enemies</Spanish>
 	</TEXT>
 	<!-- Unique Powers -->
 	<TEXT>
@@ -417,11 +400,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_IRO</Tag>
-		<English>Tribes in your borders give you a gift and improve their tile</English>
-		<French>Tribes in your borders give you a gift and improve their tile</French>
-		<German>Tribes in your borders give you a gift and improve their tile</German>
-		<Italian>Tribes in your borders give you a gift and improve their tile</Italian>
-		<Spanish>Tribes in your borders give you a gift and improve their tile</Spanish>
+		<English>Start with Confederacy unlocked and Tribes in your borders give you a gift and improve their tile</English>
+		<French>Start with Confederacy unlocked and Tribes in your borders give you a gift and improve their tile</French>
+		<German>Start with Confederacy unlocked and Tribes in your borders give you a gift and improve their tile</German>
+		<Italian>Start with Confederacy unlocked and Tribes in your borders give you a gift and improve their tile</Italian>
+		<Spanish>Start with Confederacy unlocked and Tribes in your borders give you a gift and improve their tile</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY_TITLE</Tag>

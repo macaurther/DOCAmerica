@@ -14507,7 +14507,7 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 
 						if (pLoopPlot != NULL)
 						{
-							if (pLoopPlot->isPotentialCityWorkForArea(area()) || GET_PLAYER(getOwner()).getRegionPowers() == RP_WOODLAND || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC)
+							if (pLoopPlot->isPotentialCityWorkForArea(area()) || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC)
 							{
 								// Leoreth: cannot spread culture into birth protected civilizations
 								PlayerTypes eBirthProtectionPlayer = pLoopPlot->getBirthProtected();
@@ -17828,8 +17828,8 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		// skip already owned tiles - no, only causes problems in case the controlling city is lost
 		//if (pPlot->getOwner() == getOwner()) iCost += 1000;
 
-		// even with Woodland/Pacific RP water tiles should still be covered last
-		if ((GET_PLAYER(getOwner()).getRegionPowers() == RP_WOODLAND || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC) && pPlot->isWater())
+		// even with Pacific RP water tiles should still be covered last
+		if (GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC && pPlot->isWater())
 		{
 			iExtraCost += GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
 		}
@@ -17860,8 +17860,8 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		iExtraCost += GC.getDefineINT("CULTURE_COST_HILL") - GC.getDefineINT("CULTURE_COST_PEAK");
 	}
 
-	// Leoreth: Woodland and Pacific RPs
-	if ((GET_PLAYER(getOwner()).getRegionPowers() == RP_WOODLAND || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC) && pPlot->isWater())
+	// Leoreth: Pacific RPs
+	if (GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC && pPlot->isWater())
 	{
 		iExtraCost -= GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
 	}

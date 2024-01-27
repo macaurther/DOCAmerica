@@ -6005,16 +6005,7 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 
 	if (!(GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getUnitInfo(eUnit).getPrereqAndTech()))))
 	{
-		// MacAurther: Merchant Trade Civic
-		bool bMerhcantTradeAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_ARQUEBUSIER && hasCivic(CIVIC_MERCHANT_TRADE) && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)ECONOMICS) > 0;
-
-		// MacAurther: Old World Tactics Tech
-		bool bOldWorldTacticsAllows = GC.getUnitInfo(eUnit).getUnitClassType() == UNITCLASS_HORSE_ARCHER && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)OLD_WORLD_TACTICS) > 0;
-
-		if (!bMerhcantTradeAllows && !bOldWorldTacticsAllows)
-		{
-			return false;
-		}
+		return false;
 	}
 
 	for (iI = 0; iI < GC.getNUM_UNIT_AND_TECH_PREREQS(); iI++)
@@ -8044,6 +8035,15 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		long lResult=0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "canDoCivic", argsList.makeFunctionArgs(), &lResult);
 		if (lResult == 1)
+		{
+			return true;
+		}
+	}
+
+	// Iroquois UP: starts with Confederacy
+	if (getCivilizationType() == IROQUOIS)
+	{
+		if (eCivic == CIVIC_CONFEDERACY)
 		{
 			return true;
 		}
@@ -25620,11 +25620,9 @@ int CvPlayer::getRegionPowers() const
 		return RP_PACIFIC;
 		break;
 	case PUEBLOAN:
-		return RP_SOUTHWEST;
-		break;
 	case IROQUOIS:
 	case MISSISSIPPI:
-		return RP_WOODLAND;
+		return RP_WILDERNESS;
 		break;
 	default:
 		return NO_RP;

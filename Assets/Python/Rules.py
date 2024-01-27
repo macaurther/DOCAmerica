@@ -122,9 +122,19 @@ def captureSlaves(winningUnit, losingUnit):
 
 @handler("combatResult")
 def captureCannon(winningUnit, losingUnit):
-	if losingUnit.getUnitType() in [iBombard, iCannon, iArtillery, iHowitzer]:
-		iWinner = winningUnit.getOwner()
+	if losingUnit.getUnitType() in [iBombard, iCannon, iArtillery, iHowitzer, iLightCannon, iFieldGun, iGatlingGun]:
 		captureUnit(losingUnit, winningUnit, losingUnit.getUnitType(), 50)
+
+@handler("combatResult")
+def captureAdvancedUnit(winningUnit, losingUnit):
+	# Wilderness RP
+	if civ(winningUnit) in (iIroquois, iPuebloan, iMississippi):
+		if losingUnit.getUnitType() in lWildernessRPGunUnits:
+			captureUnit(losingUnit, winningUnit, iArmedBrave, 50)
+		elif losingUnit.getUnitType() in lWildernessRPHorseUnits:
+			captureUnit(losingUnit, winningUnit, iHorseArcher, 50)
+		elif losingUnit.getUnitType() in lWildernessRPHorseGunUnits:
+			captureUnit(losingUnit, winningUnit, iMountedBrave, 50)
 
 @handler("combatResult")
 def mayanHolkanAbility(winningUnit, losingUnit):

@@ -351,19 +351,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Tag>
-		<English>Extra trade route in all cities; can train advanced units</English>
-		<French>Extra trade route in all cities; can train advanced units</French>
-		<German>Extra trade route in all cities; can train advanced units</German>
-		<Italian>Extra trade route in all cities; can train advanced units</Italian>
-		<Spanish>Extra trade route in all cities; can train advanced units</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE_HELP</Tag>
-		<English>[ICON_BULLET]Can train Arquebusiers after any player researches Economics</English>
-		<French>[ICON_BULLET]Can train Arquebusiers after any player researches Economics</French>
-		<German>[ICON_BULLET]Can train Arquebusiers after any player researches Economics</German>
-		<Italian>[ICON_BULLET]Can train Arquebusiers after any player researches Economics</Italian>
-		<Spanish>[ICON_BULLET]Can train Arquebusiers after any player researches Economics</Spanish>
+		<English>Extra trade route in all cities</English>
+		<French>Extra trade route in all cities</French>
+		<German>Extra trade route in all cities</German>
+		<Italian>Extra trade route in all cities</Italian>
+		<Spanish>Extra trade route in all cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FREE_ENTERPRISE</Tag>

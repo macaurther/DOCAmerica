@@ -28,12 +28,10 @@ typedef list<char*> LISTCHAR;
 #define UNIT_AMERICAN_AGENT		((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))							// MacAurther
 #define UNIT_CANNON				((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))									// MacAurther
 #define UNIT_MIGRANT_WORKER		((UnitTypes)GC.getInfoTypeForString("UNIT_MIGRANT_WORKER"))							// MacAurther
-#define UNIT_NATIVE_SLAVE		((UnitClassTypes)GC.getInfoTypeForString("UNIT_NATIVE_SLAVE"))				// MacAurther
+#define UNIT_NATIVE_SLAVE		((UnitClassTypes)GC.getInfoTypeForString("UNIT_NATIVE_SLAVE"))						// MacAurther
 
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther
-#define UNITCLASS_HORSE_ARCHER	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_HORSE_ARCHER"))					// MacAurther
-#define UNITCLASS_ARQUEBUSIER	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_ARQUEBUSIER"))					// MacAurther
 #define UNITCLASS_NATIVE_SLAVE	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE"))					// MacAurther
 #define UNITCLASS_AFRICAN_SLAVE	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))				// MacAurther
 
@@ -483,8 +481,7 @@ enum RegionPowers
 	RP_MESOAMERICA,
 	RP_MINOR,
 	RP_PACIFIC,
-	RP_SOUTHWEST,
-	RP_WOODLAND,
+	RP_WILDERNESS,
 	NUM_REGION_POWERS
 };
 

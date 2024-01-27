@@ -3280,7 +3280,7 @@
 		<Spanish>[TAB]No translation</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_NATIVE_ARMED_BRAVE_PEDIA</Tag>
+		<Tag>TXT_KEY_UNIT_ARMED_BRAVE_PEDIA</Tag>
 		<English>[TAB](Wikipedia) TODO</English>
 		<French>[TAB]No translation</French>
 		<German>[TAB]No translation</German>
@@ -4538,15 +4538,12 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB]Details: Identical to the Polynesian UP from base RFC. Borders grown at unimpeded rate over water tiles.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_HAWAII]Hawaii[\LINK]
-[ICON_BULLET]Southwest: +1 [ICON_PRODUCTION] and +1 [ICON_COMMERCE] on Semidesert
-[TAB]Details: Extra hammers and commerce from the [LINK=TERRAIN_SEMIDESERT]Semidesert[\LINK] terrain.
-[TAB]Civilizations:
-[TAB][ICON_BULLET][LINK=CIVILIZATION_PUEBLOAN]Puebloan[\LINK]
-[ICON_BULLET]Woodland: No penalties for cultural expansion over water tiles
+[ICON_BULLET]Wilderness: Capture weapons from defeating advanced enemies
 [TAB]Details: Identical to the Polynesian UP from base RFC. Borders grown at unimpeded rate over water tiles.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_IROQUOIS]Iroquois[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_MISSISSIPPI]Mississippi[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_PUEBLOAN]Puebloan[\LINK]
 		</English>
 	</TEXT>
 	<TEXT>

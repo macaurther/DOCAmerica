@@ -262,7 +262,7 @@ lCivilizations = [
 	Civilization(
 		iIroquois,
 		iGold=200,
-		lCivics=[iHarmony],
+		lCivics=[iConfederacy, iHarmony],
 		techs=techs.column(3).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(
