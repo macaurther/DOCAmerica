@@ -1412,10 +1412,9 @@ class Mercenary:
 		if self.getUnitInfoID() in lGreatPeople:
 			iImmigrationCost *= 30
 		
-		# Increase Immigrant cost by 5 if it's from a category that this Civ has hired before
-		# TODO: Scale with game speed?
+		# Increase Immigrant cost by 20% for each time this Civ has hired from category that before
 		if iPlayer > -1:
-			iImmigrationCost += 5 * data.civs[civ(iPlayer)].lUnitCategoriesHired[self.getUnitCategory()]
+			iImmigrationCost += iImmigrationCost * data.civs[civ(iPlayer)].lUnitCategoriesHired[self.getUnitCategory()] / 5
 		
 		iImmigrationCostModifier = 100
 		
