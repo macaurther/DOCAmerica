@@ -697,6 +697,31 @@ bullet = "[ICON_BULLET]"
 event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
+# Immigration
+iNumImmigrantCategories = 12
+#				2				3				4				5				6				7				8				9				10
+(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iGreatPeopleCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	
+iMainlineCat,	iSpecialtyCat) = range(iNumImmigrantCategories)
+
+lSettlers = [iSettler, iPioneer]
+lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
+lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
+lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship]
+lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
+lSlaves = [iAfricanSlave]
+lColonists = [iColonist]
+lMigrantWorkers = [iMigrantWorker]
+lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger]
+lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5]
+lMainlineUnits = [iArquebusier, iMusketman, iMusketeer, iRifleman]
+lSpecialtyUnits = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iSkirmisher, iGrenadier, iHussar, iDragoon, iPistolier, iCuirassier, iConquistador, iCarabineer, iCavalry, iBombard, iCannon, iArtillery, iHowitzer, iSloop, iFrigate, iIronclad, iPrivateer, iTorpedoBoat, iBarque, iShipOfTheLine, iManOfWar, iCruiser]
+
+lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lSlaves, lColonists, lMigrantWorkers]
+
+lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineUnits, lSpecialtyUnits]
+
+lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries
+
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({
 iMaya : 3,

@@ -19,6 +19,7 @@ import pickle
 
 from RFCUtils import *
 from Consts import *
+from StoredData import data
 from Core import *
 from Civics import *
 import PlayerUtil
@@ -52,30 +53,6 @@ lForbiddenUnits = ("UNIT_BEAR",
 				"UNIT_WOLF",
 				"UNIT_SPY")
 #Rhye - end
-
-iNumImmigrantCategories = 12
-#				2				3				4				5				6				7				8				9				10
-(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iGreatPeopleCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	
-iMainlineCat,	iSpecialtyCat) = range(iNumImmigrantCategories)
-
-lSettlers = [iSettler, iPioneer]
-lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
-lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
-lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship]
-lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
-lSlaves = [iAfricanSlave]
-lColonists = [iColonist]
-lMigrantWorkers = [iMigrantWorker]
-lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger]
-lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5]
-lMainlineUnits = [iArquebusier, iMusketman, iMusketeer, iRifleman]
-lSpecialtyUnits = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iSkirmisher, iGrenadier, iHussar, iDragoon, iPistolier, iCuirassier, iConquistador, iCarabineer, iCavalry, iBombard, iCannon, iArtillery, iHowitzer, iSloop, iFrigate, iIronclad, iPrivateer, iTorpedoBoat, iBarque, iShipOfTheLine, iManOfWar, iCruiser]
-
-lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lSlaves, lColonists, lMigrantWorkers]
-
-lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineUnits, lSpecialtyUnits]
-
-lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries
 
 # Change this to increase or decrease the chance that a mercenary will get a promotion.
 # The default value of 10 means that the mercenary has a 10% chance of getting one of
@@ -911,7 +888,7 @@ class ImmigrationUtils:
 			if (not immigrant.canHireUnit(iPlayer)):
 				continue
 			
-			iImmigrantCategory = self.getUnitCategory(immigrant.getUnitInfoID())
+			iImmigrantCategory = immigrant.getUnitCategory()
 			if iImmigrantCategory > -1:
 				iDesire = lCategoryDesire[iImmigrantCategory]
 			else:
@@ -935,12 +912,6 @@ class ImmigrationUtils:
 			lCategoryDesire[iHighestDesireCategory] -= 1
 		
 		return bestImmigrant, lCategoryDesire
-	
-	def getUnitCategory(self, iUnit):
-		for iUnitCategory, lUnitCategory in enumerate(lPossibleImmigrants):
-			if iUnit in lUnitCategory:
-				return iUnitCategory
-		return -1
 		
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
 	# It will:
@@ -1116,6 +1087,12 @@ class ImmigrationUtils:
 		lCategoryDesire[iMainlineCat] = iNumCities / 3 - lNumUnitsInCategories[iMainlineCat]	# Want 1/3 specialty unit per city?
 		
 		return lCategoryDesire
+	
+	def getUnitCategory(self, iUnit):
+		for iUnitCategory, lUnitCategory in enumerate(lPossibleImmigrants):
+			if iUnit in lUnitCategory:
+				return iUnitCategory
+		return -1
 	
 ##########################
 # Mercenary Class		
@@ -1305,6 +1282,7 @@ class Mercenary:
 
 		# get the player instance
 		player = gc.getPlayer(iPlayer)
+		iCiv = civ(iPlayer)
 		
 		# return nothing if the iPlayer is an invalid value
 		if(player == None):
@@ -1319,6 +1297,9 @@ class Mercenary:
 		
 		# Set the mercenary as hired
 		self.bHired = true
+		
+		# Increase cost of future Immigrants from this category
+		data.civs[iCiv].lUnitCategoriesHired[self.getUnitCategory()] += 1
 		
 		unitType = gc.getInfoTypeForString(self.objUnitInfo.getType())
 
@@ -1400,8 +1381,6 @@ class Mercenary:
 	def getHireCost(self, iPlayer):
 		' iHireCost - the cost to hire the mercenary'
 		
-		modifier = 0
-		
 		if iPlayer == -1:
 			iCurrentImmigration = 0
 			bDecolonization = False
@@ -1432,6 +1411,11 @@ class Mercenary:
 		# Great people are very expensive
 		if self.getUnitInfoID() in lGreatPeople:
 			iImmigrationCost *= 30
+		
+		# Increase Immigrant cost by 5 if it's from a category that this Civ has hired before
+		# TODO: Scale with game speed?
+		if iPlayer > -1:
+			iImmigrationCost += 5 * data.civs[civ(iPlayer)].lUnitCategoriesHired[self.getUnitCategory()]
 		
 		iImmigrationCostModifier = 100
 		
@@ -1710,6 +1694,12 @@ class Mercenary:
 	# MacAurther: Is Ship?
 	def isShip(self):
 		return self.objUnitInfo.getDomainType() == 0		# DOMAIN_SEA = 0
+	
+	def getUnitCategory(self):
+		for iUnitCategory, lUnitCategory in enumerate(lPossibleImmigrants):
+			if self.getUnitInfoID() in lUnitCategory:
+				return iUnitCategory
+		return -1
 	
 # TO DO: Remove before initial release, but retain in dev copy to finish implementation for mercenary groups feature	
 class MercenaryGroup:

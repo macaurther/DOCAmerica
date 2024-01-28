@@ -13740,6 +13740,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=19
+	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -14421,7 +14422,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=19
-	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
