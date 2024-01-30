@@ -242,6 +242,7 @@
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
+			<bOnlyDefensive>1</bOnlyDefensive>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_SETTLE</UnitAIType>
@@ -266,11 +267,16 @@
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
 				<TerrainImpassable>
-					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SAVANNA</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
 			</TerrainImpassables>
 			<iAsset>4</iAsset>
+			<iCombat>1</iCombat>
 			<UnitMeshGroups>
 				<iGroupSize>4</iGroupSize>
 				<fMaxSpeed>1.75</fMaxSpeed>

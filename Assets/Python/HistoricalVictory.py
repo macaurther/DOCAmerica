@@ -173,15 +173,15 @@ dGoals = {
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 3, by=1500),
 	),
 	iInuit: (
-		All(
-			Settle(plots.rectangle(tKivalliq).named(KIVALLIQ)),								# Western Hudson Bay
-			Settle(plots.rectangle(tQikiqtaaluk).without(lQikiqtaalukExceptions).named(QIKIQTAALUK)),						# Baffin Island and islands
-			Settle(plots.rectangle(tNunavik).named(NUNAVIK)),	# Northern Quebec/ Eastern Hudson Bay
-			Settle(plots.rectangle(tKalaallit).named(KALAALLIT)),							# Greenland
-			by=1100
+		CityCount(
+			(plots.rectangle(tKivalliq).named(KIVALLIQ), 1),										# Western Hudson Bay
+			(plots.rectangle(tQikiqtaaluk).without(lQikiqtaalukExceptions).named(QIKIQTAALUK), 1),	# Baffin Island and islands
+			(plots.rectangle(tNunavik).named(NUNAVIK), 1),											# Northern Quebec/ Eastern Hudson Bay
+			(plots.rectangle(tKalaallit).named(KALAALLIT), 1),										# Greenland
+			by=1500
 		),
-		ResourceCount(resources(), 25, at=1200),
-		TerrainCount(sum(iOcean, iCoast, iArcticCoast), 100, at=1300),
+		ResourceCount(resources(), 25, at=1600),
+		TerrainCount(sum(iOcean, iCoast, iArcticCoast), 100, at=1700),
 	),
 	iInca: (
 		All(

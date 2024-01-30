@@ -236,7 +236,7 @@ lCivilizations = [
 	Civilization(
 		iInuit,
 		iGold=25,
-		lCivics=[iCouncil],
+		lCivics=[iHarmony],
 		techs=techs.column(2).including(iTanning, iMythology, iSailing).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
