@@ -1413,7 +1413,7 @@ public:
 	int getUnhappinessDecayModifier() const; // Leoreth
 	int getVassalTradeModifier() const; // Leoreth
 
-	int getCultureGroup() const; // FoB
+	int getCultureGroup() const; // FoB				// Exposed to Python
 
 	bool isMilitaryFoodProduction() const;				// Exposed to Python
 	bool isNoUnhealthyPopulation() const;				// Exposed to Python

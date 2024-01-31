@@ -291,7 +291,8 @@ class CvTechChooser:
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			iTech = gc.getCivicInfo(iCivic).getTechPrereq()
 			if iTech > -1:
-				self.TechEffects[iTech].append(("Civic", iCivic))
+				if player.isCivicValid(iCivic):		# MacAurther: Don't show Civics to players who can't use them
+					self.TechEffects[iTech].append(("Civic", iCivic))
 
 		# Corporations
 		for iCorporation in xrange(gc.getNumCorporationInfos()):
