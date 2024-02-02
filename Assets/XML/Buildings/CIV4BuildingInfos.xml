@@ -1566,14 +1566,12 @@
 					<BonusType>BONUS_FUR</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_SUGAR</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
-			<BonusProductionModifiers>
-				<BonusProductionModifier>
-					<BonusType>BONUS_FUR</BonusType>
-					<iProductonModifier>100</iProductonModifier>
-				</BonusProductionModifier>
-			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -1604,6 +1602,10 @@
 					<BonusType>BONUS_FUR</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_SUGAR</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<BonusYieldChanges>
 				<BonusYieldChange>
@@ -1624,12 +1626,6 @@
 				</BonusYieldChange>
 			</BonusYieldChanges>
 			<ConstructSound>AS2D_BUILD_BANK</ConstructSound>
-			<BonusProductionModifiers>
-				<BonusProductionModifier>
-					<BonusType>BONUS_FUR</BonusType>
-					<iProductonModifier>100</iProductonModifier>
-				</BonusProductionModifier>
-			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
@@ -1661,6 +1657,10 @@
 					<BonusType>BONUS_FUR</BonusType>
 					<iHappinessChange>1</iHappinessChange>
 				</BonusHappinessChange>
+				<BonusHappinessChange>
+					<BonusType>BONUS_SUGAR</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
 			</BonusHappinessChanges>
 			<SpecialistCounts>
 				<SpecialistCount>
@@ -1669,12 +1669,6 @@
 				</SpecialistCount>
 			</SpecialistCounts>
 			<ConstructSound>AS2D_BUILD_CASTLE</ConstructSound>
-			<BonusProductionModifiers>
-				<BonusProductionModifier>
-					<BonusType>BONUS_FUR</BonusType>
-					<iProductonModifier>100</iProductonModifier>
-				</BonusProductionModifier>
-			</BonusProductionModifiers>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>

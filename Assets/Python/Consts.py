@@ -698,10 +698,10 @@ event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
 # Immigration
-iNumImmigrantCategories = 12
+iNumImmigrantCategories = 20
 #				2				3				4				5				6				7				8				9				10
 (iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iGreatPeopleCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	
-iMainlineCat,	iSpecialtyCat) = range(iNumImmigrantCategories)
+iMainlineCat,	iEliteCat,		iCollateralCat,	iSkirmishCat,	iLightCavCat,	iHeavyCavCat,	iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat) = range(iNumImmigrantCategories)
 
 lSettlers = [iSettler, iPioneer]
 lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
@@ -713,12 +713,20 @@ lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5]
-lMainlineUnits = [iArquebusier, iMusketman, iMusketeer, iRifleman]
-lSpecialtyUnits = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine, iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iSkirmisher, iGrenadier, iHussar, iDragoon, iPistolier, iCuirassier, iConquistador, iCarabineer, iCavalry, iBombard, iCannon, iArtillery, iHowitzer, iSloop, iFrigate, iIronclad, iPrivateer, iTorpedoBoat, iBarque, iShipOfTheLine, iManOfWar, iCruiser]
+lMainlineMercs = [iArquebusier, iMusketman, iMusketeer, iRifleman]
+lEliteMercs = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine]
+lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun]
+lSkirmishMercs = [iSkirmisher, iGrenadier]
+lLightCavalryMercs = [iHussar, iDragoon, iPistolier]
+lHeavyCavalryMercs = [iCuirassier, iConquistador, iCarabineer, iCavalry]
+lSiegeMercs = [iBombard, iCannon, iArtillery, iHowitzer]
+lMainlineShips = [iSloop, iFrigate, iIronclad]
+lSkirmishShips = [iPrivateer, iTorpedoBoat]
+lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser]
 
 lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lSlaves, lColonists, lMigrantWorkers]
 
-lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineUnits, lSpecialtyUnits]
+lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lLightCavalryMercs, lHeavyCavalryMercs, lSiegeMercs, lMainlineShips, lSkirmishShips, lCapitalShips]
 
 lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries
 

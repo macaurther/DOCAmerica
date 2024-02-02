@@ -1083,8 +1083,32 @@ class ImmigrationUtils:
 		# Mainline Category
 		lCategoryDesire[iMainlineCat] = iNumCities - lNumUnitsInCategories[iMainlineCat]	# Want 1 Mainline infantry per city?
 		
-		# Specialty Category
-		lCategoryDesire[iMainlineCat] = iNumCities / 3 - lNumUnitsInCategories[iMainlineCat]	# Want 1/3 specialty unit per city?
+		# Elite Category
+		lCategoryDesire[iEliteCat] = iNumCities / 3 - lNumUnitsInCategories[iEliteCat]	# Want 1/3 unit per city?
+		
+		# Collateral Category
+		lCategoryDesire[iCollateralCat] = iNumCities / 3 - lNumUnitsInCategories[iCollateralCat]	# Want 1/3 unit per city?
+		
+		# Skirmish Category
+		lCategoryDesire[iSkirmishCat] = iNumCities / 3 - lNumUnitsInCategories[iSkirmishCat]	# Want 1/3 unit per city?
+		
+		# Light Cav Category
+		lCategoryDesire[iLightCavCat] = iNumCities / 3 - lNumUnitsInCategories[iLightCavCat]	# Want 1/3 unit per city?
+		
+		# Heavy Cav Category
+		lCategoryDesire[iHeavyCavCat] = iNumCities / 3 - lNumUnitsInCategories[iHeavyCavCat]	# Want 1/3 unit per city?
+		
+		# Siege Category
+		lCategoryDesire[iSiegeCat] = iNumCities / 3 - lNumUnitsInCategories[iSiegeCat]	# Want 1/3 unit per city?
+		
+		# Mainline Ship Category
+		lCategoryDesire[iMainlineShipCat] = iNumCities / 3 - lNumUnitsInCategories[iMainlineShipCat]	# Want 1/3 unit per city?
+		
+		# Skirmish Ship Category
+		lCategoryDesire[iSkirmishShipCat] = iNumCities / 3 - lNumUnitsInCategories[iSkirmishShipCat]	# Want 1/3 unit per city?
+		
+		# Capital Ship Category
+		lCategoryDesire[iCapitalShipCat] = iNumCities / 3 - lNumUnitsInCategories[iCapitalShipCat]	# Want 1/3 unit per city?
 		
 		return lCategoryDesire
 	

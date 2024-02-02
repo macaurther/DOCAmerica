@@ -12828,7 +12828,6 @@ BeginPlot
 	x=19,y=97
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
