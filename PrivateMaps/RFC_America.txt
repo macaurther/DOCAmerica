@@ -12074,12 +12074,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=81
-	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=82
+	BonusType=BONUS_COTTON
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
@@ -12736,12 +12736,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=82
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=83
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
