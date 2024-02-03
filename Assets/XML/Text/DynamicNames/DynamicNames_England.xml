@@ -170,18 +170,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLAND_ANGEVIN_EMPIRE</Tag>
-		<English>Angevin Empire</English>
-		<French>
-			<Text>Empire Plantagen&#234;t</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Angevin Empire</German>
-		<Italian>Angevin Empire</Italian>
-		<Spanish>Angevin Empire</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_UNITED_REPUBLIC</Tag>
 		<English>United Republic of %s1</English>
 		<French>
@@ -230,78 +218,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_INDIA</Tag>
-		<English>%s2 Raj</English>
-		<French>
-			<Text>Raj %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2 Raj:%s2 Raj:%s2 Raj</Text>
-			<Gender>Male:Male:Male</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Raj %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Raj %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_BABYLONIA</Tag>
-		<English>%s2 Mandate of Mesopotamia</English>
-		<French>
-			<Text>Mandat %s2 de M&#233;sopotamie</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 Mandate of Mesopotamia</German>
-		<Italian>%s2 Mandate of Mesopotamia</Italian>
-		<Spanish>%s2 Mandate of Mesopotamia</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_PHOENICIA</Tag>
-		<English>%s2 Mandate of Lebanon</English>
-		<French>
-			<Text>Mandat %s2 sur le Liban</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2 Mandate of Lebanon</German>
-		<Italian>%s2 Mandate of Lebanon</Italian>
-		<Spanish>%s2 Mandate of Lebanon</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_ETHIOPIA</Tag>
-		<English>%s2 East Africa</English>
-		<French>
-			<Text>Afrique orientale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2-Ostafrika:%s2-Ostafrika:%s2-Ostafrika</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Africa Orientale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>&#193;frica Oriental %s2</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLISH_MAYA</Tag>
 		<English>Colony of %s2 Honduras</English>
 		<French>
@@ -326,18 +242,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_BYZANTIUM</Tag>
-		<English>Latin Empire</English>
-		<French>
-			<Text>Empire latin d'Orient</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Latin Empire</German>
-		<Italian>Latin Empire</Italian>
-		<Spanish>Latin Empire</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLISH_VIKINGS</Tag>
 		<English>Duchy of Scandinavia</English>
 		<French>
@@ -350,88 +254,28 @@
 		<Spanish>Duchy of Scandinavia</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_INDONESIA</Tag>
-		<English>Federated Malay States</English>
-		<French>
-			<Text>&#201;tats malais f&#233;d&#233;r&#233;s</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Federated Malay States</German>
-		<Italian>Federated Malay States</Italian>
-		<Spanish>Federated Malay States</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLISH_FRANCE</Tag>
-		<English>Duchy of Anjou</English>
-		<French>
-			<Text>Duch&#233; d'Anjou</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Duchy of Anjou</German>
-		<Italian>Duchy of Anjou</Italian>
-		<Spanish>Duchy of Anjou</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_HOLY_ROME</Tag>
-		<English>Duchy of Hanover</English>
-		<French>
-			<Text>Duch&#233; de Hanovre</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Duchy of Hanover</German>
-		<Italian>Duchy of Hanover</Italian>
-		<Spanish>Duchy of Hanover</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_GERMANY</Tag>
-		<English>%s2-Occupied Germany</English>
-		<French>
-			<Text>Zone d'occupation %s2 en Allemagne</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>%s2-Occupied Germany</German>
-		<Italian>%s2-Occupied Germany</Italian>
-		<Spanish>%s2-Occupied Germany</Spanish>
+		<English>Province of Quebec</English>
+		<French>Province of Quebec</French>
+		<German>Province of Quebec</German>
+		<Italian>Province of Quebec</Italian>
+		<Spanish>Province of Quebec</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLISH_NETHERLANDS</Tag>
-		<English>Duchy of Flanders</English>
-		<French>
-			<Text>Duch&#233; de Flandre</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Duchy of Flanders</German>
-		<Italian>Duchy of Flanders</Italian>
-		<Spanish>Duchy of Flanders</Spanish>
+		<English>Province of New York</English>
+		<French>Province of New York</French>
+		<German>Province of New York</German>
+		<Italian>Province of New York</Italian>
+		<Spanish>Province of New York</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_MALI</Tag>
-		<English>%s2 West Africa</English>
-		<French>
-			<Text>Afrique occidentale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>%s2-Westafrika:%s2-Westafrika:%s2-Westafrika</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Africa Occidentale %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>&#193;frica Occidental %s2</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<Tag>TXT_KEY_CIV_ENGLISH_IROQUOIS</Tag>
+		<English>League Iroquois</English>
+		<French>League Iroquois</French>
+		<German>League Iroquois</German>
+		<Italian>League Iroquois</Italian>
+		<Spanish>League Iroquois</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLISH_AMERICA</Tag>
@@ -456,42 +300,6 @@
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_NAME_KHMER</Tag>
-		<English>Indochina</English>
-		<French>
-			<Text>Indochine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Indochina:Indochina:Indochina</Text>
-			<Gender>Neuter:Neuter:Neuter</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Indocina</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Indochina</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_ENGLISH_NAME_MUGHALS</Tag>
-		<English>Pakistan</English>
-		<French>
-			<Text>Pakistan</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Pakistan</German>
-		<Italian>Pakistan</Italian>
-		<Spanish>Pakistan</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_ADJECTIVE</Tag>

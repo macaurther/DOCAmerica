@@ -431,7 +431,8 @@ class Birth(object):
 			self.area += cities.regions(*lCanada).where(lambda city: city.getX() < plots.capital(iCanada).getX()).where(lambda city: civ(city) in [iFrance, iEngland, iAmerica]).plots().expand(2).where(lambda p: not p.isCore(p.getOwner()))
 			self.area = self.area.unique()
 		
-		self.excludeForeignCapitals()
+		# MacAurther: We do want to flip foreign captials (flips Richmond for America, Quebec City for Canada, Sao Paulo for Brazil)
+		#self.excludeForeignCapitals()
 			
 	def excludeForeignCapitals(self):
 		areaCapitals = self.area.cities().where(CyCity.isCapital).where(lambda city: city.atPlot(plots.capital(city.getOwner())))
