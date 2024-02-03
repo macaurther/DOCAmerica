@@ -108,6 +108,7 @@ class Civilization(object):
 		
 		self.lCivics = kwargs.get("lCivics", [])
 		self.lEnemies = kwargs.get("lEnemies", []) + [iNative, iBarbarian]
+		self.iMaster = kwargs.get("iMaster")
 		
 		self.dAttitudes = kwargs.get("dAttitudes", {})
 		
@@ -168,6 +169,11 @@ class Civilization(object):
 			iEnemyPlayer = slot(iEnemy)
 			if iEnemyPlayer >= 0 and self.iCiv != iEnemy:
 				team(iEnemyPlayer).declareWar(self.player.getTeam(), False, WarPlanTypes.NO_WARPLAN)
+		
+		if self.iMaster is not None:
+			iMasterPlayer = slot(self.iMaster)
+			if iMasterPlayer >= 0 and self.iCiv != self.iMaster:
+				team(iMasterPlayer).assignVassal(self.player.getTeam(), False)
 		
 		for iCiv, iAttitude in self.dAttitudes.items():
 			self.player.AI_changeAttitudeExtra(slot(iCiv), iAttitude)
@@ -379,7 +385,8 @@ lCivilizations = [
 		iCanada,
 		iGold=1000,
 		iStateReligion=iProtestantism,
-		lCivics=[iMonarchy, iFederalism, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
+		iMaster=iEngland,
+		lCivics=[iCommonwealth, iProvinces, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
 		techs=techs.column(18)
 	),
 ]
@@ -598,7 +605,7 @@ dExtraAIUnits = CivDict({
 	},
 	iBrazil: {
 		iBase: 1,
-	}
+	},
 }, {})
 
 # Extra units if civ starts at war
@@ -907,5 +914,5 @@ dBuildingPreferences = {
 	},
 	iCanada : {
 		iChateauFrontenac: 30,
-	}
+	},
 }

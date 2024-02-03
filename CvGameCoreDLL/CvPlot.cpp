@@ -3490,15 +3490,6 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 
 				if (iCulture > 0)
 				{
-					// MacAurther: Canadian UP: Receive cultural dominance on any Historical tile with your culture (99% rule)
-					if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == CANADA)
-					{
-						if (getSettlerValue((PlayerTypes)iI) >= 90) // Great than or equal to 90 is a historical tile
-						{
-							iCulture *= 99;
-						}
-					}
-
 					// All major civilizations have easier control over their own core (80% rule)
 					if (!GET_PLAYER((PlayerTypes)iI).isMinorCiv() && !GET_PLAYER((PlayerTypes)iI).isBarbarian()) 
 					{

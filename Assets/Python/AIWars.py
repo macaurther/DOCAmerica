@@ -14,7 +14,7 @@ iMaxIntervalLate = 60
 iThreshold = 100
 iMinValue = 30
 
-# Spain
+# Spain ------------------------------------------------------------------------------------------------------------------------
 iSpainAztecsYear = 1519
 tSpainAztecsTL = (11, 63)
 tSpainAztecsBR = (16, 69)
@@ -27,10 +27,14 @@ tSpainIncaBR = (28, 33)
 tConquestSpainAztecs = (0, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 3, iSpainAztecsYear, 10)
 tConquestSpainInca = (1, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 4, iSpainIncaYear, 10)
 
-# England
+# England ------------------------------------------------------------------------------------------------------------------------
 iEnglandNetherlandsYear = 1664
 tEnglandNetherlandsTL = (39, 78)
 tEnglandNetherlandsBR = (43, 86)
+
+iEnglandQuebecYear = 1758
+tEnglandQuebecTL = (42, 89)
+tEnglandQuebecBR = (47, 93)
 
 iEnglandAmericaNorthYear = 1777
 tEnglandAmericaNorthTL = (41, 81)
@@ -50,32 +54,52 @@ tEnglandAmerica1812NewOrleansBR = (29, 73)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 tConquestEnglandNetherlands = (2, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 1, iEnglandNetherlandsYear, 10)
-tConquestEnglandAmericaNorth = (3, iEngland, iAmerica, tEnglandAmericaNorthTL, tEnglandAmericaNorthBR, 2, iEnglandAmericaNorthYear, 10)
-tConquestEnglandAmericaSouth = (4, iEngland, iAmerica, tEnglandAmericaSouthTL, tEnglandAmericaSouthBR, 1, iEnglandAmericaSouthYear, 10)
-tConquestEngland1812Washington = (5, iEngland, iAmerica, tEnglandAmerica1812WashingtonTL, tEnglandAmerica1812WashingtonBR, 1, iEnglandAmerica1812WashingtonYear, 10)
-tConquestEngland1812NewOrleans = (6, iEngland, iAmerica, tEnglandAmerica1812NewOrleansTL, tEnglandAmerica1812NewOrleansBR, 1, iEnglandAmerica1812NewOrleansYear, 10)
+tConquestEnglandQuebec = (3, iEngland, iFrance, tEnglandQuebecTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
+tConquestEnglandAmericaNorth = (4, iEngland, iAmerica, tEnglandAmericaNorthTL, tEnglandAmericaNorthBR, 2, iEnglandAmericaNorthYear, 10)
+tConquestEnglandAmericaSouth = (5, iEngland, iAmerica, tEnglandAmericaSouthTL, tEnglandAmericaSouthBR, 1, iEnglandAmericaSouthYear, 10)
+tConquestEngland1812Washington = (6, iEngland, iAmerica, tEnglandAmerica1812WashingtonTL, tEnglandAmerica1812WashingtonBR, 1, iEnglandAmerica1812WashingtonYear, 10)
+tConquestEngland1812NewOrleans = (7, iEngland, iAmerica, tEnglandAmerica1812NewOrleansTL, tEnglandAmerica1812NewOrleansBR, 1, iEnglandAmerica1812NewOrleansYear, 10)
 
-# France
+# France ------------------------------------------------------------------------------------------------------------------------
 iFranceMexicoYear = 1861
 tFranceMexicoTL = (12, 60)
 tFranceMexicoBR = (19, 70)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestFranceMexico = (7, iFrance, iMexico, tFranceMexicoTL, tFranceMexicoBR, 3, iFranceMexicoYear, 10)
+tConquestFranceMexico = (8, iFrance, iMexico, tFranceMexicoTL, tFranceMexicoBR, 3, iFranceMexicoYear, 10)
 
-# Netherlands
+# Netherlands --------------------------------------------------------------------------------------------------------------------
 iNetherlandsNorseYear = 1655
 tNetherlandsNorseTL = (39, 78)
 tNetherlandsNorseBR = (41, 82)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestNetherlandsNorse = (8, iEngland, iNetherlands, tNetherlandsNorseTL, tNetherlandsNorseBR, 1, iNetherlandsNorseYear, 10)
+tConquestNetherlandsNorse = (9, iEngland, iNetherlands, tNetherlandsNorseTL, tNetherlandsNorseBR, 1, iNetherlandsNorseYear, 10)
+
+# America ------------------------------------------------------------------------------------------------------------------------
+iAmericaCanadaYear = 1812
+tAmericaCanadaTL = (35, 86)
+tAmericaCanadaBR = (45, 92)
+
+iAmericaMexicoYear = 1846
+tAmericaMexicoTL = (14, 72)
+tAmericaMexicoBR = (25, 80)
+
+iAmericaCubaYear = 1898
+tAmericaCubaTL = (27, 58)
+tAmericaCubaBR = (36, 63)
+
+# following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
+tConquestAmericaCanada = (10, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
+tConquestAmericaMexico = (11, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
+tConquestAmericaCuba = (12, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
 
 
 lConquests = [tConquestSpainAztecs, tConquestSpainInca, 
 tConquestEnglandNetherlands, tConquestEnglandAmericaNorth, tConquestEnglandAmericaSouth, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, 
 tConquestFranceMexico,
-tConquestNetherlandsNorse]
+tConquestNetherlandsNorse,
+tConquestAmericaCanada, tConquestAmericaMexico, tConquestAmericaCuba]
 
 @handler("GameStart")
 def setup():

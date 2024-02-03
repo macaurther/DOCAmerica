@@ -23,6 +23,7 @@ lExpandedFlipCivs = [
 ]
 
 lIndependenceCivs = [
+	iAmerica,
 	iArgentina,
 	iMexico,
 	iColombia,

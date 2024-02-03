@@ -15,15 +15,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CANADA_PEOPLES</Tag>
-		<English>Canadian Peoples</English>
-		<French>
-			<Text>Peuplades canadiennes</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Canadian Peoples</German>
-		<Italian>Canadian Peoples</Italian>
-		<Spanish>Canadian Peoples</Spanish>
+		<English>Hudson's Bay Company</English>
+		<French>Hudson's Bay Company</French>
+		<German>Hudson's Bay Company</German>
+		<Italian>Hudson's Bay Company</Italian>
+		<Spanish>Hudson's Bay Company</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CANADA_DEFAULT</Tag>
@@ -132,5 +128,13 @@
 		<German>Canada</German>
 		<Italian>Canada</Italian>
 		<Spanish>Canada</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CANADA_RUPERTS</Tag>
+		<English>Rupert's Land</English>
+		<French>Rupert's Land</French>
+		<German>Rupert's Land</German>
+		<Italian>Rupert's Land</Italian>
+		<Spanish>Rupert's Land</Spanish>
 	</TEXT>
 </Civ4GameText>

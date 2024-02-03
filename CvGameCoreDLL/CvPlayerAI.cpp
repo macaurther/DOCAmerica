@@ -2963,10 +2963,11 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 	//Rhye - end
 
 	// Leoreth: America shouldn't fight the English all the way to Canada
-	if (getCivilizationType() == AMERICA && pCity->isCanadian())
+	// MacAurther: Why not? Sounds like fun
+	/*if (getCivilizationType() == AMERICA && pCity->isCanadian())
 	{
 		iValue /= 3;
-	}
+	}*/
 
 	if (!bIgnoreAttackers)
 	{

@@ -4511,13 +4511,15 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 			return false;
 		}
 
-		if (!isHuman() || GET_PLAYER(eWhoTo).isHuman()) //  human can't be vassal of AI
+		// MacAurther: Using LouisTheXIV's suggestion to enable humans being AI vassals
+		//if (!isHuman() || GET_PLAYER(eWhoTo).isHuman()) //  human can't be vassal of AI
+		if (getTeam() != GET_PLAYER(eWhoTo).getTeam()) //Human can be vassal of AI
 		{
 			CvTeam& kVassalTeam = GET_TEAM(getTeam());
 			CvTeam& kMasterTeam = GET_TEAM(GET_PLAYER(eWhoTo).getTeam());
 			if (kMasterTeam.isVassalStateTrading()) // the master must possess the tech
 			{
-				if (!kVassalTeam.isAVassal() && !kMasterTeam.isAVassal() && getTeam() != GET_PLAYER(eWhoTo).getTeam())
+				if(!kVassalTeam.isAVassal() && !kMasterTeam.isAVassal() /*&& getTeam() != GET_PLAYER(eWhoTo).getTeam()*/)  //vassal may not be a master
 				{
 					if ((kMasterTeam.isAtWar(getTeam()) || item.m_iData == 1) && item.m_eItemType == TRADE_SURRENDER)
 					{

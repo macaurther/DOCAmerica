@@ -106,10 +106,10 @@ iTan = 90
 iLime = 100
 
 # independent cities
-iNumMinorCities = 4
+iNumMinorCities = 6
 
 # scripted conquerors
-iNumConquests = 9
+iNumConquests = 13
 
 lNeighbours = [
 	(iMaya, iAztecs),
@@ -762,5 +762,5 @@ iColombia : 5,
 iPeru : 5,
 iBrazil : 20,
 iVenezuela : 5,
-iCanada : 10,
+iCanada : 15,
 }, 0)
