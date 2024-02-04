@@ -159,8 +159,8 @@ dGoals = {
 	),
 	iMuisca: (
 		AveragePopulation(10, at=1500),
-		TradeGold(2000, by=1540),
-		ControlledResourceCount(iGold, 5, at=1600),
+		GoldAmount(2000, by=1540),
+		ControlledResourceCount(iGold, 3, at=1600),
 	),
 	iNorse: (
 		FirstSettle(plots.rectangle(tGreenland).named(GREENLAND), by=1000),

@@ -225,7 +225,7 @@ lCivilizations = [
 		iMuisca,
 		iGold=200,
 		lCivics=[iMerchantTrade],
-		techs=techs.column(3).including(iMasonry, iSmelting).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iMasonry, iSmelting, iAlloys).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNorse,

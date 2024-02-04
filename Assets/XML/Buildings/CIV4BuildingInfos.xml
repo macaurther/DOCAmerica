@@ -590,7 +590,7 @@
 			<Strategy>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MUISCA_GOLDSMITH</ArtDefineTag>
-			<PrereqTech>TECH_ARTISANRY</PrereqTech>
+			<PrereqTech>TECH_ALLOYS</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
