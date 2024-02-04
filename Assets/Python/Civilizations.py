@@ -224,7 +224,6 @@ lCivilizations = [
 	Civilization(
 		iMuisca,
 		iGold=200,
-		lCivics=[iMerchantTrade],
 		techs=techs.column(3).including(iMasonry, iSmelting, iAlloys).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
@@ -236,7 +235,7 @@ lCivilizations = [
 	Civilization(
 		iChimu,
 		iGold=300,
-		lCivics=[iDespotism, iCraftsmen, iMerchantTrade],
+		lCivics=[iDespotism, iMerchantTrade],
 		techs=techs.column(4).including(iConstruction, iTrade).without(iHunting, iTrapping)
 	),
 	Civilization(

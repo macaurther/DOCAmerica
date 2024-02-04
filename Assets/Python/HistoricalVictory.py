@@ -169,7 +169,7 @@ dGoals = {
 	),
 	iChimu: (
 		BuildingCount((iKancha, 2), by=1300),
-		Control(plots.normal(iInca), subject=VASSALS, at=1475),
+		Control(plots.core(iInca), subject=VASSALS, at=1475),
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 3, by=1500),
 	),
 	iInuit: (

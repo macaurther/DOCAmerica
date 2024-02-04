@@ -42,10 +42,13 @@ def puebloanPower(city):
 		for iBuilding in lFreeBuildings:
 			if not city.isHasRealBuilding(iBuilding):
 				city.setHasRealBuilding(iBuilding, True)
-				return
 
 @handler("cityAcquiredAndKept")
 # Chimu UP
 def chimuPower(iOwner, city):
-	if civ(iOwner) == iChimu:
-		player(iOwner).getCapitalCity().changeFreeSpecialistCount(iSpecialistArtist, 1)
+	if civ(iOwner) == iChimu and city.getPreviousCiv() != None:
+		pCapital = player(iOwner).getCapitalCity()
+		pCapital.changeFreeSpecialistCount(iSpecialistArtist, 1)
+		strMessage = "An Arist has arrived at your capital to recount your recent conquest"
+		# Inform the player that the artist has arrived
+		CyInterface().addMessage(iOwner, False, 20, strMessage, "", 0, infos.unit(iGreatArtist).getButton(), ColorTypes(0), pCapital.getX(), pCapital.getY(), True, True) 
