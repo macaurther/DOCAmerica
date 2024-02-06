@@ -1146,6 +1146,8 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
+			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
+			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_EXPLORER</UnitClassUpgradeType>

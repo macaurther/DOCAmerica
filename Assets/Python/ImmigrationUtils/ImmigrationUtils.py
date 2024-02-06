@@ -1322,9 +1322,6 @@ class Mercenary:
 		# Set the mercenary as hired
 		self.bHired = true
 		
-		# Increase cost of future Immigrants from this category
-		data.civs[iCiv].lUnitCategoriesHired[self.getUnitCategory()] += 1
-		
 		unitType = gc.getInfoTypeForString(self.objUnitInfo.getType())
 
 		# Create the unit and place it in the game		
@@ -1361,6 +1358,9 @@ class Mercenary:
 		(iImmigrationCost, iGoldCost) = self.getHireCost(iPlayer)
 		player.setImmigration(player.getImmigration() - iImmigrationCost)
 		player.setGold(player.getGold() - iGoldCost)
+		
+		# Increase cost of future Immigrants from this category
+		data.civs[iCiv].lUnitCategoriesHired[self.getUnitCategory()] += 1
 		
 		if iGoldCost > 0:
 			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_MERCENARY")))
