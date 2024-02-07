@@ -3518,7 +3518,15 @@
 		<French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of Metallurgy.</French>
 		<German>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of Metallurgy.</German>
 		<Italian>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of Metallurgy.</Italian>
-		<Spanish>[ICON_BULLET]%D1%% [ICON_PRODUCTION] for the Power of Metallurgy.</Spanish>
+		<Spanish>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for the Power of Metallurgy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COUREUR_DES_BOIS_POWER</Tag>
+		<English>Word has spread about a newly contacted Tribe! You have received %D1[ICON_IMMIGRATION].</English>
+		<French>Word has spread about a newly contacted Tribe! You have received %D1[ICON_IMMIGRATION].</French>
+		<German>Word has spread about a newly contacted Tribe! You have received %D1[ICON_IMMIGRATION].</German>
+		<Italian>Word has spread about a newly contacted Tribe! You have received %D1[ICON_IMMIGRATION].</Italian>
+		<Spanish>Word has spread about a newly contacted Tribe! You have received %D1[ICON_IMMIGRATION].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

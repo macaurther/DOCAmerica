@@ -1342,7 +1342,7 @@ class Mercenary:
 			CyInterface().addMessage(self.iOwner, False, 20, strMessage, "", 0, self.objUnitInfo.getButton(), ColorTypes(0), pPlot.getX(), pPlot.getY(), True, True) 
 
 		# Set the mercenaries experience
-		self.setExperience()		
+		self.setExperience()
 
 		# Set the mercenaries unique name
 		self.objUnit.setName(self.strMercenaryName)
@@ -1424,7 +1424,7 @@ class Mercenary:
 		# if the self.objUnitInfo is actually set then get the latest cost to hire the mercenary.
 		if(self.objUnitInfo != None):
 			self.iHireCost = (self.objUnitInfo.getProductionCost() * (self.getLevel()+1)) + ((self.getLevel()+1) * int(math.fabs(self.getExperienceLevel() - self.getNextExperienceLevel())))
-	
+		
 		iImmigrationCost = int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye
 		iGoldCost = 0
 		
@@ -1435,6 +1435,9 @@ class Mercenary:
 		# Great people are very expensive
 		if self.getUnitInfoID() in lGreatPeople:
 			iImmigrationCost *= 30
+		
+		# Scale by game speed
+		iImmigrationCost *= (3 - gc.getGame().getGameSpeedType()) 
 		
 		# Increase Immigrant cost by 20% for each time this Civ has hired from category that before
 		if iPlayer > -1:

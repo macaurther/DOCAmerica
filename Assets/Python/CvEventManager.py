@@ -434,10 +434,6 @@ class CvEventManager(object):
 		'Goody received'
 		iPlayer, pPlot, pUnit, iGoodyType = argsList
 		
-		# Coureur des Bois ability
-		if pUnit.getUnitType() == CvUtil.findInfoTypeNum(gc.getImprovementInfo,gc.getNumUnitInfos(),'UNIT_FRENCH_COUREUR_DES_BOIS'):
-			iXP = pUnit.getExperience()
-			pUnit.setExperience(iXP + 2, 20)
 	
 	def onGreatPersonBorn(self, argsList):
 		'Unit Promoted'

@@ -52,3 +52,13 @@ def chimuPower(iOwner, city):
 		strMessage = "An Arist has arrived at your capital to recount your recent conquest"
 		# Inform the player that the artist has arrived
 		CyInterface().addMessage(iOwner, False, 20, strMessage, "", 0, infos.unit(iGreatArtist).getButton(), ColorTypes(0), pCapital.getX(), pCapital.getY(), True, True) 
+
+
+@handler("goodyReceived")
+# Coureur des Bois ability
+def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
+	if pUnit.getUnitType() == iCoureurDesBois:
+		iImmigration = (3 - gc.getGame().getGameSpeedType()) * 25	# Normal: 25, Epic: 50, Marathon: 75
+		player(iPlayer).changeImmigration(iImmigration)
+		# Inform the player that they received Immigration.
+		message(iPlayer, "TXT_KEY_COUREUR_DES_BOIS_POWER", iImmigration)
