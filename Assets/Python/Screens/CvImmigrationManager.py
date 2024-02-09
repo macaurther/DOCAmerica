@@ -370,12 +370,12 @@ class CvImmigrationManager:
 		
 		# Get the players current gold text		
 		szText = self.getGoldText(gc.getGame().getActivePlayer())
-		screen.setLabel( "GoldText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 6, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.setLabel( "GoldText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 4, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.show( "GoldText" )
 		screen.moveToFront( "GoldText" )
 		
 		szText = self.getImmigrationText(gc.getGame().getActivePlayer())
-		screen.setLabel( "ImmigrationText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 24, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.setLabel( "ImmigrationText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 20, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.show( "ImmigrationText" )
 		screen.moveToFront( "ImmigrationText" )
 

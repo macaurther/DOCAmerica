@@ -245,9 +245,9 @@ tStabilitySymbols = (
 	FontSymbols.SOLID_CHAR,
 )
 
-# < Mercenaries Start >
+# < Immigration Start >
 
-mercenaryManager = CvImmigrationManager.CvImmigrationManager(CvScreenEnums.IMMIGRATION_MANAGER)
+immigrationManager = CvImmigrationManager.CvImmigrationManager(CvScreenEnums.IMMIGRATION_MANAGER)
 
 # This value also controls the "Mercenary Manager" button and when it should be displayed.
 # Default value is "ERA_ANCIENT"
@@ -256,7 +256,7 @@ mercenaryManager = CvImmigrationManager.CvImmigrationManager(CvScreenEnums.IMMIG
 g_iStartingEra = 0
 #Rhye - end
 
-# < Mercenaries End >
+# < Immigration End >
 
 class CvMainInterface:
 	"Main Interface Screen"
@@ -583,8 +583,9 @@ class CvMainInterface:
 		iBtnWidth	= 28
 		iBtnAdvance = 25
 		iBtnY = 27
-		iBtnX = 27
-		iBtnX = 10  # moving the log button left = BUG Option Button
+		#iBtnX = 27
+		#iBtnX = 10  # moving the log button left = BUG Option Button
+		iBtnX = 150  # MacAurther: moving the log button right
 		
 		# Turn log Button
 		screen.setImageButton( "TurnLogButton", "", iBtnX, iBtnY - 2, iBtnWidth, iBtnWidth, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TURN_LOG).getActionInfoIndex(), -1 )
@@ -1060,9 +1061,9 @@ class CvMainInterface:
 # BUG - BUG Option Button - Start
 		iBtnWidth	= 28
 		iBtnY = 27
-		iBtnX = 27
-		iBtnX = 10
-		iBtnX = 35	# MacAurther: Moving BUG Button right
+		#iBtnX = 27
+		#iBtnX = 10
+		iBtnX = 175	# MacAurther: Moving BUG Button right
 
 		sBUGOptionsScreenButton = ArtFileMgr.getInterfaceArtInfo("BUG_OPTIONS_SCREEN_BUTTON").getPath()
 		screen.setImageButton("BUGOptionsScreenWidget", sBUGOptionsScreenButton,  iBtnX + 30, iBtnY - 2, iBtnWidth, iBtnWidth, WidgetTypes.WIDGET_BUG_OPTION_SCREEN, -1, -1)
@@ -3232,11 +3233,20 @@ class CvMainInterface:
 				else:
 					szText = CyGameTextMgr().getGoldStr(ePlayer)
 # BUG - Gold Rate Warning - end
-				screen.setLabel( "GoldText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 6, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+				screen.setLabel( "GoldText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 4, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 				screen.show( "GoldText" )
 				
 				if (((gc.getPlayer(ePlayer).calculateGoldRate() != 0) and not (gc.getPlayer(ePlayer).isAnarchy())) or (gc.getPlayer(ePlayer).getGold() != 0)):
 					screen.show( "GoldText" )
+				
+# MacAurther: Immigration Text - start
+
+				szText = immigrationManager.getImmigrationText(gc.getGame().getActivePlayer())
+				screen.setLabel( "ImmigrationText", "Background", szText, CvUtil.FONT_LEFT_JUSTIFY, 12, 20, -1, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+				screen.show( "ImmigrationText" )
+				screen.moveToFront( "ImmigrationText" )
+
+# MacAurther: Immigration Text - end
 
 # BUG - NJAGC - start
 				if (ClockOpt.isEnabled()
@@ -5771,7 +5781,7 @@ class CvMainInterface:
 		# < Mercenaries Start >
 		# Handle the case where the "Mercenary Manager" button is pressed. 
 		if(inputClass.getFunctionName() == "ImmigrationManagerButton"):
-			mercenaryManager.interfaceScreen()
+			immigrationManager.interfaceScreen()
 		# < Mercenaries End   >
 		
 #		BugUtil.debugInput(inputClass)
