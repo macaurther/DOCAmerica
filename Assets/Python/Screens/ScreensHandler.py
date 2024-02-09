@@ -267,7 +267,7 @@ def onCombatLogHit(argsList):
 
 
 @handler("improvementBuilt")
-def onImprovementBuilt(iImprovement, iX, iY):
+def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):	# MacAurther: Added old improvement argument
 ## Platy Builder ##
 	if CyGame().GetWorldBuilderMode() and not CvPlatyBuilderSettings.bPython: return
 ## Platy Builder ##

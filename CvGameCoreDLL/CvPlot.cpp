@@ -6192,18 +6192,19 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			setLayoutDirty(true);
 		}
 
+		// MacAurther: Forts
+		// Make sure to update Fort Claims before reporting event, so that any callbacks know who owns the fort
+		updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
+
 		if (getImprovementType() != NO_IMPROVEMENT)
 		{
-			CvEventReporter::getInstance().improvementBuilt(getImprovementType(), getX_INLINE(), getY_INLINE());
+			CvEventReporter::getInstance().improvementBuilt(getImprovementType(), eOldImprovement, getX_INLINE(), getY_INLINE());
 		}
 
 		if (getImprovementType() == NO_IMPROVEMENT)
 		{
 			CvEventReporter::getInstance().improvementDestroyed(eOldImprovement, getOwnerINLINE(), getX_INLINE(), getY_INLINE());
 		}
-
-		// MacAurther: Forts
-		updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
 
 		CvCity* pWorkingCity = getWorkingCity();
 		if (NULL != pWorkingCity)
@@ -6692,119 +6693,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		if(eYield == YIELD_FOOD)
 		{
 			iYield += 1;
-		}
-	}
-
-	// MacAurther: Russian UP: Extra yields on Resources of which you have 4 or more
-	if(eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == RUSSIA)
-	{
-		BonusTypes eBonus = getBonusType(eTeam);
-		if(eBonus != NO_BONUS && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getNumAvailableBonuses(eBonus) >= 4)
-		{
-			if(eYield == YIELD_FOOD)
-			{
-				switch(eBonus)
-				{
-					// Food
-					case BONUS_BANANA:
-					case BONUS_CLAM:
-					case BONUS_CORN:
-					case BONUS_COW:
-					case BONUS_CRAB:
-					case BONUS_CRUSTACEANS:
-					case BONUS_DEER:
-					case BONUS_FISH:
-					case BONUS_PIG:
-					case BONUS_POTATO:
-					case BONUS_RICE:
-					case BONUS_WHEAT:
-						iYield += 2;
-						break;
-					// Food & Production
-					case BONUS_HORSE:
-						iYield += 1;
-						break;
-					// Food & Commerce
-					case BONUS_SHEEP:
-					case BONUS_CITRUS:
-					case BONUS_LLAMA:
-					case BONUS_WINE:
-					case BONUS_WHALE:
-					case BONUS_SALT:
-					case BONUS_SPICES:
-					case BONUS_SUGAR:
-					case BONUS_TEA:
-						iYield += 1;
-						break;
-				}
-			}
-			else if(eYield == YIELD_PRODUCTION)
-			{
-				switch(eBonus)
-				{
-					// Production
-					case BONUS_ALUMINUM:
-					case BONUS_COAL:
-					case BONUS_COPPER:
-					case BONUS_IRON:
-					case BONUS_MARBLE:
-					case BONUS_OIL:
-					case BONUS_STONE:
-					case BONUS_URANIUM:
-						iYield += 2;
-						break;
-					// Food & Production
-					case BONUS_HORSE:
-						iYield += 1;
-						break;
-					// Production & Commerce
-					case BONUS_IVORY:
-					case BONUS_JADE:
-					case BONUS_OBSIDIAN:
-					case BONUS_RUBBER:
-						iYield += 1;
-						break;
-				}
-			}
-			else if(eYield == YIELD_COMMERCE)
-			{
-				switch(eBonus)
-				{
-					// Commerce
-					case BONUS_COCOA:
-					case BONUS_COFFEE:
-					case BONUS_COTTON:
-					case BONUS_DYE:
-					case BONUS_FUR:
-					case BONUS_GEMS:
-					case BONUS_GOLD:
-					case BONUS_INCENSE:
-					case BONUS_PEARL:
-					case BONUS_SILK:
-					case BONUS_SILVER:
-					case BONUS_TIMBER:
-					case BONUS_TOBACCO:
-						iYield += 2;
-						break;
-					// Food & Commerce
-					case BONUS_SHEEP:
-					case BONUS_CITRUS:
-					case BONUS_LLAMA:
-					case BONUS_WINE:
-					case BONUS_WHALE:
-					case BONUS_SALT:
-					case BONUS_SPICES:
-					case BONUS_SUGAR:
-					case BONUS_TEA:
-					// Production & Commerce
-					case BONUS_IVORY:
-					case BONUS_JADE:
-					case BONUS_OBSIDIAN:
-					case BONUS_RUBBER:
-						iYield += 1;
-						break;
-				}
-			}
 		}
 	}
 

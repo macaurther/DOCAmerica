@@ -99,6 +99,11 @@ dFeaturesDict = {
 }
 
 dRemovedFeaturesDict = {
+	(10, 85)  : 1300,  # Southwest Flood Plains
+	(11, 84)  : 1300,  # Southwest Flood Plains
+	(13, 84)  : 1300,  # Southwest Flood Plains
+	(13, 79)  : 1300,  # North Mexico Flood Plains
+	(15, 78)  : 1300,  # North Mexico Flood Plains
 }
 
 dConquerorPlotTypesDict = {

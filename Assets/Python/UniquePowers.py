@@ -62,3 +62,13 @@ def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 		player(iPlayer).changeImmigration(iImmigration)
 		# Inform the player that they received Immigration.
 		message(iPlayer, "TXT_KEY_COUREUR_DES_BOIS_POWER", iImmigration)
+
+
+@handler("improvementBuilt")
+# Russian UP
+def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):
+	if iImprovement > -1 and iOldImprovement == iContactedTribe:
+		iPlayer = plot(iX, iY).getOwner()
+		if iPlayer > -1:
+			makeUnit(iPlayer, iNativeSlave, (iX, iY), UnitAITypes.UNITAI_WORKER)
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave).getButton(), color=8, location=(iX, iY))

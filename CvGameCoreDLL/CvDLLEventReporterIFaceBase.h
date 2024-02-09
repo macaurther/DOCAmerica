@@ -31,7 +31,7 @@ public:
 
 	virtual void firstContact(TeamTypes eTeamID1, TeamTypes eTeamID2) = 0;						
 	virtual void combatResult(CvUnit* pWinner, CvUnit* pLoser) = 0;					
-	virtual void improvementBuilt(int iImprovementType, int iX, int iY) = 0;	
+	virtual void improvementBuilt(int iImprovementType, int iOldImprovementType, int iX, int iY) = 0;	
 	virtual void improvementDestroyed(int iImprovementType, int iPlayer, int iX, int iY) = 0;	
 	virtual void routeBuilt(int RouteType, int iX, int iY) = 0;	
 

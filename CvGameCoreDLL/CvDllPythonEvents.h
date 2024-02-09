@@ -33,7 +33,7 @@ public:
 	void reportCombatLogCollateral(CvUnit* pAttacker, CvUnit* pDefender, int iDamage);
 	void reportCombatLogFlanking(CvUnit* pAttacker, CvUnit* pDefender, int iDamage);
 // BUG - Combat Events - start
-	void reportImprovementBuilt(int iImprovementType, int iX, int iY);	
+	void reportImprovementBuilt(int iImprovementType, int iOldImprovementType, int iX, int iY);	
 	void reportImprovementDestroyed(int iImprovementType, int iPlayer, int iX, int iY);	
 	void reportRouteBuilt(int iRouteType, int iX, int iY);	
 

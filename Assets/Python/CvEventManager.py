@@ -307,7 +307,7 @@ class CvEventManager(object):
 
 	def onImprovementBuilt(self, argsList):
 		'Improvement Built'
-		iImprovement, iX, iY = argsList
+		iImprovement, iOldImprovement, iX, iY = argsList	# MacAurther: Added old improvement argument
 
 	def onImprovementDestroyed(self, argsList):
 		'Improvement Destroyed'

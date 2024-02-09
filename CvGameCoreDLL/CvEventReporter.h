@@ -56,7 +56,7 @@ public:
 	void combatLogCollateral(CvUnit* pAttacker, CvUnit* pDefender, int iDamage);
 	void combatLogFlanking(CvUnit* pAttacker, CvUnit* pDefender, int iDamage);
 // BUG - Combat Events - start
-	void improvementBuilt(int iImprovementType, int iX, int iY);	
+	void improvementBuilt(int iImprovementType, int iOldImprovementType, int iX, int iY);	
 	void improvementDestroyed(int iImprovementType, int iPlayer, int iX, int iY);	
 	void routeBuilt(int iRouteType, int iX, int iY);	
 	

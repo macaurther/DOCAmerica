@@ -5053,16 +5053,6 @@ bool CvUnit::pillage()
 	    }
 	}
 
-	// MacAurther: When Russia loses an Improvement, check if they lose their UP
-	if (plot()->getOwner() != NO_PLAYER && GET_PLAYER(plot()->getOwner()).getCivilizationType() == RUSSIA && plot()->getBonusType() != NO_BONUS)
-	{
-		if (GET_PLAYER(getOwner()).getNumAvailableBonuses(plot()->getBonusType()) < 4 )
-		{
-			// If Russia now has less than 4 of that resource, update the whole map
-			GC.getMapINLINE().updateYield();
-		}
-	}
-
 	return true;
 }
 
@@ -7229,6 +7219,11 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		{
 			return true;
 		}
+		// MacAurther: Russian UP
+		if (GET_PLAYER(getOwner()).getCivilizationType() == RUSSIA && pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+		{
+			return true;
+		}
 		return false;
 	}
 
@@ -7303,16 +7298,6 @@ bool CvUnit::build(BuildTypes eBuild)
 
 	// Python Event
 	CvEventReporter::getInstance().unitBuildImprovement(this, eBuild, bFinished);
-
-	// MacAurther: When Russia finishes an Improvement, check if they trigger their UP
-	if (GET_PLAYER(getOwner()).getCivilizationType() == RUSSIA && plot()->getBonusType() != NO_BONUS)
-	{
-		if (GET_PLAYER(getOwner()).getNumAvailableBonuses(plot()->getBonusType()) >= 4 )
-		{
-			// If Russia now has at least 4 of that resource, update the whole map
-			GC.getMapINLINE().updateYield();
-		}
-	}
 	
 	return bFinished;
 }

@@ -20,8 +20,8 @@ iInuit :		(14, 119), # North Alaska
 iInca :			(24, 29), # Cuzco
 iPurepecha :	(11, 66), # Tzintzuntzan
 iAztecs :		(14, 64), # Tenochtitlan
-iSpain :		(40, 54), # Santo Domingo
 iIroquois :		(39, 85), # Onondaga
+iSpain :		(40, 54), # Santo Domingo
 iPortugal :		(39, 16), # Sao Paulo
 iEngland :		(38, 77), # Jamestown
 iFrance :		(46, 92), # Quebec

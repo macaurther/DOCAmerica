@@ -146,9 +146,9 @@ void CvEventReporter::combatLogFlanking(CvUnit* pAttacker, CvUnit* pDefender, in
 }
 // BUG - Combat Events - end
 
-void CvEventReporter::improvementBuilt(int iImprovementType, int iX, int iY)
+void CvEventReporter::improvementBuilt(int iImprovementType, int iOldImprovementType, int iX, int iY)
 {
-	m_kPythonEventMgr.reportImprovementBuilt(iImprovementType, iX, iY);
+	m_kPythonEventMgr.reportImprovementBuilt(iImprovementType, iOldImprovementType, iX, iY);
 }
 
 void CvEventReporter::improvementDestroyed(int iImprovementType, int iPlayer, int iX, int iY)

@@ -323,13 +323,14 @@ void CvDllPythonEvents::reportCombatLogFlanking(CvUnit* pAttacker, CvUnit* pDefe
 }
 // BUG - Combat Events - end
 
-void CvDllPythonEvents::reportImprovementBuilt(int iImprovementType, int iX, int iY)
+void CvDllPythonEvents::reportImprovementBuilt(int iImprovementType, int iOldImprovementType, int iX, int iY)
 {
 	if (preEvent())
 	{
 		CyArgsList eventData;
 		eventData.add("improvementBuilt");				// add key to lookup python handler fxn
 		eventData.add(iImprovementType);
+		eventData.add(iOldImprovementType);				// MacAurther
 		eventData.add(iX);
 		eventData.add(iY);
 		postEvent(eventData);
