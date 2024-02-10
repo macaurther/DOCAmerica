@@ -597,9 +597,16 @@ class ReligionSpreads(TrackRequirement):
 		TrackRequirement.__init__(self, *parameters, **options)
 		
 		self.handle("unitSpreadReligionAttempt", self.increment_religion_spreads)
+		self.handle("cityAcquired", self.increment_religion_spreads_conquest)
 		
 	def increment_religion_spreads(self, goal, bSuccess):
 		if bSuccess:
+			self.increment()
+			goal.check()
+	
+	def increment_religion_spreads_conquest(self, goal, city, bConquest):
+		bGloriaInDeo = player(city.getOwner()).hasCivic(iGloriaInDeo)
+		if bConquest and bGloriaInDeo:
 			self.increment()
 			goal.check()
 
