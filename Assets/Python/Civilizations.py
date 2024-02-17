@@ -309,7 +309,7 @@ lCivilizations = [
 		iHawaii,
 		iGold=200,
 		lCivics=[iCaptives],
-		techs=techs.column(2).including(iNavigation).without(iTanning)
+		techs=techs.column(3).including(iSeafaring).without(iTanning)
 	),
 	Civilization(
 		iRussia,
@@ -505,9 +505,10 @@ dStartingUnits = CivDict({
 	},
 	iHaiti: {
 		iSettle: 1,
-		iWork: 3,
+		iWork: 2,
 		iDefend: 3,
 		iBase: 2,
+		iHarass: 4,
 	},
 	iArgentina: {
 		iSettle: 5,
