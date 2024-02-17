@@ -398,7 +398,7 @@
 			<Description>TXT_KEY_CIVIC_ARISTOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ARISTOCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_HUMANITIES</TechPrereq>
+			<TechPrereq>TECH_NOBILITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Barbarism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,1,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -722,7 +722,7 @@
 			<Description>TXT_KEY_CIVIC_CRAFTSMEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CRAFTSMEN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CRAFTSMEN_STRATEGY</Strategy>
-			<TechPrereq>TECH_ARTISANRY</TechPrereq>
+			<TechPrereq>TECH_ARITHMETICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Specialization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1290,7 +1290,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_ISOLATIONISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Help>
-			<TechPrereq>TECH_AESTHETICS</TechPrereq>
+			<TechPrereq>TECH_WRITING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1451,7 +1451,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_CONQUEST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONQUEST_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_CONQUEST_HELP</Help>
-			<TechPrereq>TECH_SMELTING</TechPrereq>
+			<TechPrereq>TECH_GENERALSHIP</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Conquest.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>

@@ -3529,6 +3529,22 @@
 		<Spanish>Word has spread about a newly contacted Tribe! You have received %D1[ICON_IMMIGRATION].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROCESS_IMMIGRATION</Tag>
+		<English>Immigration</English>
+		<French>Immigration</French>
+		<German>Immigration</German>
+		<Italian>Immigration</Italian>
+		<Spanish>Immigration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROCESS_IMMIGRATION_STRATEGY</Tag>
+		<English>Focusing on immigration converts production into immigration within that particular city.</English>
+		<French>Focusing on immigration converts production into immigration within that particular city.</French>
+		<German>Focusing on immigration converts production into immigration within that particular city.</German>
+		<Italian>Focusing on immigration converts production into immigration within that particular city.</Italian>
+		<Spanish>Focusing on immigration converts production into immigration within that particular city.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_</Tag>
 		<English></English>
 		<French></French>

@@ -1064,7 +1064,7 @@
 			<iAsset>12</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bTechTrading>1</bTechTrading>
+			<bOpenBordersTrading>1</bOpenBordersTrading>
 			<iGridX>5</iGridX>
 			<iGridY>9</iGridY>
 			<Flavors>
@@ -1325,7 +1325,7 @@
 			<iAsset>16</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bOpenBordersTrading>1</bOpenBordersTrading>
+			<bTechTrading>1</bTechTrading>
 			<iGridX>6</iGridX>
 			<iGridY>9</iGridY>
 			<Flavors>
@@ -1360,7 +1360,6 @@
 			<iCost>250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
-			<FirstFreeUnitClass>UNITCLASS_GREAT_PROPHET</FirstFreeUnitClass>
 			<iAsset>16</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
@@ -1624,6 +1623,7 @@
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_CLASSICAL</Era>
+			<FirstFreeUnitClass>UNITCLASS_GREAT_PROPHET</FirstFreeUnitClass>
 			<iAsset>24</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>

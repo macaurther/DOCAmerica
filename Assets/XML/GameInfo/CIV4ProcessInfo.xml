@@ -34,13 +34,40 @@
 			<Type>PROCESS_CULTURE</Type>
 			<Description>TXT_KEY_PROCESS_CULTURE</Description>
 			<Strategy>TXT_KEY_PROCESS_CULTURE_STRATEGY</Strategy>
-			<TechPrereq>TECH_CHARTER</TechPrereq>
+			<TechPrereq>TECH_CODICES</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
 			</ProductionToCommerceModifiers>
 			<Button>Art/Interface/Buttons/Process/ProcessCulture.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_ESPIONAGE</Type>
+			<Description>TXT_KEY_PROCESS_ESPIONAGE</Description>
+			<Strategy>TXT_KEY_PROCESS_ESPIONAGE_STRATEGY</Strategy>
+			<TechPrereq>TECH_SOCIOLOGY</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessEspionage.dds</Button>
+		</ProcessInfo>
+		<ProcessInfo>
+			<Type>PROCESS_IMMIGRATION</Type>
+			<Description>TXT_KEY_PROCESS_IMMIGRATION</Description>
+			<Strategy>TXT_KEY_PROCESS_IMMIGRATION_STRATEGY</Strategy>
+			<TechPrereq>TECH_COMMUNITY</TechPrereq>
+			<ProductionToCommerceModifiers>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>
+				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
+			</ProductionToCommerceModifiers>
+			<Button>Art/Interface/Buttons/Process/ProcessImmigration.dds</Button>
 		</ProcessInfo>
 	</ProcessInfos>
 </Civ4ProcessInfo>
