@@ -304,11 +304,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_FRA</Tag>
-		<English>Forts claim more territory and cost 50% less [ICON_COMMERCE]</English>
-		<French>Forts claim more territory and cost 50% less [ICON_COMMERCE]</French>
-		<German>Forts claim more territory and cost 50% less [ICON_COMMERCE]</German>
-		<Italian>Forts claim more territory and cost 50% less [ICON_COMMERCE]</Italian>
-		<Spanish>Forts claim more territory and cost 50% less [ICON_COMMERCE]</Spanish>
+		<English>Forts claim more territory, cost 50% less [ICON_COMMERCE], and build twice as fast</English>
+		<French>Forts claim more territory, cost 50% less [ICON_COMMERCE], and build twice as fast</French>
+		<German>Forts claim more territory, cost 50% less [ICON_COMMERCE], and build twice as fast</German>
+		<Italian>Forts claim more territory, cost 50% less [ICON_COMMERCE], and build twice as fast</Italian>
+		<Spanish>Forts claim more territory, cost 50% less [ICON_COMMERCE], and build twice as fast</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAI_TITLE</Tag>
@@ -328,19 +328,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAW_TITLE</Tag>
-		<English>Pacific - The Power of Moku:</English>
-		<French>Pacific - The Power of Moku:</French>
-		<German>Pacific - The Power of Moku:</German>
-		<Italian>Pacific - The Power of Moku:</Italian>
-		<Spanish>Pacific - The Power of Moku:</Spanish>
+		<English>The Power of Moku:</English>
+		<French>The Power of Moku:</French>
+		<German>The Power of Moku:</German>
+		<Italian>The Power of Moku:</Italian>
+		<Spanish>The Power of Moku:</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HAW</Tag>
-		<English>Resources do not require Technologies to be revealed</English>
-		<French>Resources do not require Technologies to be revealed</French>
-		<German>Resources do not require Technologies to be revealed</German>
-		<Italian>Resources do not require Technologies to be revealed</Italian>
-		<Spanish>Resources do not require Technologies to be revealed</Spanish>
+		<English>Technologies are not needed to reveal or improve resources</English>
+		<French>Technologies are not needed to reveal or improve resources</French>
+		<German>Technologies are not needed to reveal or improve resources</German>
+		<Italian>Technologies are not needed to reveal or improve resources</Italian>
+		<Spanish>Technologies are not needed to reveal or improve resources</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_HOL_TITLE</Tag>
@@ -512,11 +512,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR</Tag>
-		<English>Plantations are free to build and build instantly</English>
-		<French>Plantations are free to build and build instantly</French>
-		<German>Plantations are free to build and build instantly</German>
-		<Italian>Plantations are free to build and build instantly</Italian>
-		<Spanish>Plantations are free to build and build instantly</Spanish>
+		<English>Build improvements on resources instantly</English>
+		<French>Build improvements on resources instantly</French>
+		<German>Build improvements on resources instantly</German>
+		<Italian>Build improvements on resources instantly</Italian>
+		<Spanish>Build improvements on resources instantly</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PUE_TITLE</Tag>

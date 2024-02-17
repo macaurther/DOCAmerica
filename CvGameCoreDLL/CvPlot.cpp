@@ -8617,7 +8617,7 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 
 			if (getFeatureType() != NO_FEATURE)
 			{
-				if (GC.getBuildInfo(eBuild).isFeatureRemove(getFeatureType()) && GET_TEAM(eTeam).isHasTech((TechTypes)GC.getBuildInfo(eBuild).getFeatureTech(getFeatureType())))
+				if (GC.getBuildInfo(eBuild).isFeatureRemove(getFeatureType()) && (GET_TEAM(eTeam).isHasTech((TechTypes)GC.getBuildInfo(eBuild).getFeatureTech(getFeatureType())) || GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == HAWAII))	// MacAurther: Hawaiian UP
 				{
 					FAssertMsg(eTeam != NO_TEAM, "eTeam should be valid");
 

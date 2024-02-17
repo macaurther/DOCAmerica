@@ -7273,9 +7273,15 @@ bool CvUnit::build(BuildTypes eBuild)
 	}
 
 	// MacAurther: Portuguese UP
-	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && (eBuild == GC.getInfoTypeForString("BUILD_PLANTATION") || eBuild == GC.getInfoTypeForString("BUILD_PLANTATION_DEFORESTATION")))
+	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && plot()->getBonusType() != NO_BONUS)
 	{
 		iWorkRate = 1000;
+	}
+
+	// MacAurther: French UP
+	if (eBuild == BUILD_FORT && GET_PLAYER(getOwner()).getCivilizationType() == FRANCE)
+	{
+		iWorkRate *= 2;
 	}
 
 	bFinished = plot()->changeBuildProgress(eBuild, iWorkRate, getTeam());

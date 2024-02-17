@@ -7053,7 +7053,9 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 		return false;
 	}
 
-	if (GC.getBuildInfo(eBuild).getTechPrereq() != NO_TECH)
+	bool bHawaiianPower = getCivilizationType() == HAWAII && pPlot->getBonusType() != NO_BONUS;	// MacAurther Hawaiian UP: Don't need tech to improve resources
+
+	if (GC.getBuildInfo(eBuild).getTechPrereq() != NO_TECH && !bHawaiianPower)
 	{
 		if (!(GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildInfo(eBuild).getTechPrereq())))
 		{
@@ -7066,11 +7068,9 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 
 	if (!bTestVisible)
 	{
-		if (pPlot->getFeatureType() != NO_FEATURE)
+		if (pPlot->getFeatureType() != NO_FEATURE && !bHawaiianPower)
 		{
-			bool bKhmerUP = false;
-
-			if (!bKhmerUP && !(GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildInfo(eBuild).getFeatureTech(pPlot->getFeatureType()))))
+			if (!(GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildInfo(eBuild).getFeatureTech(pPlot->getFeatureType()))))
 			{
 				return false;
 			}
@@ -7104,11 +7104,6 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	if (eCiv == FRANCE && eBuild == BUILD_FORT)
 	{
 		iCostReduction += 50;
-	}
-	// MacAurther: Portuguese UP
-	else if (eCiv == PORTUGAL && eBuild == BUILD_PLANTATION)
-	{
-		iCostReduction += 100;
 	}
 	// MacAurther: Venezuelan UP
 	else if (eCiv == VENEZUELA)

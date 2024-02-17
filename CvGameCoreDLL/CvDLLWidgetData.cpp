@@ -3259,11 +3259,19 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 
 					// MacAurther: Portuguese UP
-					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && (eBuild == GC.getInfoTypeForString("BUILD_PLANTATION") || eBuild == GC.getInfoTypeForString("BUILD_PLANTATION_DEFORESTATION")))
+					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && pMissionPlot->getBonusType() != NO_BONUS)
 					{
 						iNowWorkRate = 1000;
 						
 						iThenWorkRate = 1000;
+					}
+
+					// MacAurther: French UP
+					if (eBuild == BUILD_FORT && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == FRANCE)
+					{
+						iNowWorkRate *= 2;
+						
+						iThenWorkRate *= 2;
 					}
 
 					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);

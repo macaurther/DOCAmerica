@@ -7377,15 +7377,7 @@
 			</UnitAIs>
 			<Builds>
 				<Build>
-					<BuildType>BUILD_FISHING_BOATS</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_OCEAN_FISHERY</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_WHALING_BOATS</BuildType>
+					<BuildType>BUILD_FISHING_BOATS_WAA_KAULUA</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
