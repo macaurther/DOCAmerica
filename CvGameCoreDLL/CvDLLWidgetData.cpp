@@ -3261,9 +3261,9 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					// MacAurther: Portuguese UP
 					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && pMissionPlot->getBonusType() != NO_BONUS)
 					{
-						iNowWorkRate = 1000;
+						iNowWorkRate = 5000;
 						
-						iThenWorkRate = 1000;
+						iThenWorkRate = 5000;
 					}
 
 					// MacAurther: French UP

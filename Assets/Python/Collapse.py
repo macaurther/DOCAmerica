@@ -75,7 +75,7 @@ def downgradeCottages(iPlayer):
 		
 		# Destroy all Mississippi improvements and routes
 		if civ(iPlayer) == iMississippi and not player(iPlayer).isHuman():
-			if iImprovement >= 0:
+			if iImprovement >= 0 and not iImprovement in [iTribe, iContactedTribe]:
 				plot.setImprovementType(-1)
 			iRoute = plot.getRouteType()
 			if iRoute >= 0:

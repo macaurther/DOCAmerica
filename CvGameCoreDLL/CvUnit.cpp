@@ -7275,7 +7275,7 @@ bool CvUnit::build(BuildTypes eBuild)
 	// MacAurther: Portuguese UP
 	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && plot()->getBonusType() != NO_BONUS)
 	{
-		iWorkRate = 1000;
+		iWorkRate = 5000;
 	}
 
 	// MacAurther: French UP

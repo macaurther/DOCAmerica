@@ -2344,7 +2344,6 @@
 			<Type>TECH_ECONOMICS</Type>
 			<Description>TXT_KEY_TECH_ECONOMICS</Description>
 			<Civilopedia>TXT_KEY_TECH_ECONOMICS_PEDIA</Civilopedia>
-			<Help>TXT_KEY_TECH_ECONOMICS_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>450</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
