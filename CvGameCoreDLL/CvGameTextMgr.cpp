@@ -11838,6 +11838,45 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 			}
 		}
 
+		// MacAurther: Geographic Requirements
+		// TODO: Really bad implementation
+		switch (eBuilding)
+		{
+			case BUILDING_FLOATING_GARDENS:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_LAGOON"));
+				break;
+			case BUILDING_MACHU_PICCHU:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_PEAK"));
+				break;
+			case BUILDING_PUEBLO_BONITO:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_SEMIDESERT"));
+				break;
+			case BUILDING_SACSAYHUAMAN:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_PEAK"));
+				break;
+			case BUILDING_HUEY_TEOCALLI:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_LAKE"));
+				break;
+			case BUILDING_GREAT_GEOGLYPH:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_DESERT"));
+				break;
+			case BUILDING_SERPENT_MOUND:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_WIDE_RIVER"));
+				break;
+			case BUILDING_MONTICELLO:
+			case BUILDING_MOUNT_VERNON:
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_PLANTATION"));
+				break;
+		}
+
 		if (kBuilding.getNumCitiesPrereq() > 0)
 		{
 			if (NO_PLAYER == ePlayer || GET_PLAYER(ePlayer).getNumCities() < kBuilding.getNumCitiesPrereq())

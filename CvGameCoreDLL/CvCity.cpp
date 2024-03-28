@@ -16129,6 +16129,70 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 		}
 	}
 
+	// MacAurther: Various geographic world wonders
+	TerrainTypes plotRequirement = NO_TERRAIN;
+	TerrainTypes adjacentRequirement = NO_TERRAIN;
+	bool bLake = false;
+	bool bPeak = false;
+	switch (eBuilding)
+	{
+		case BUILDING_FLOATING_GARDENS:
+			plotRequirement = TERRAIN_LAGOON;
+			break;
+		case BUILDING_MACHU_PICCHU:
+			bPeak = true;
+			break;
+		case BUILDING_PUEBLO_BONITO:
+			plotRequirement = TERRAIN_SEMIDESERT;
+			break;
+		case BUILDING_SACSAYHUAMAN:
+			bPeak = true;
+			break;
+		case BUILDING_HUEY_TEOCALLI:
+			bLake = true;
+			break;
+		case BUILDING_GREAT_GEOGLYPH:
+			plotRequirement = TERRAIN_DESERT;
+			break;
+		case BUILDING_SERPENT_MOUND:
+			adjacentRequirement = TERRAIN_WIDE_RIVER;
+			break;
+	}
+
+	if (plotRequirement != NO_TERRAIN && plot()->getTerrainType() != plotRequirement) return false;
+
+	if (adjacentRequirement != NO_TERRAIN || bLake || bPeak)
+	{
+		bool bFound = false;
+		for (int iX = -1; iX < 2; iX++)
+		{
+			for (int iY = -1; iY < 2; iY++)
+			{
+				int iWorldX = plot()->getX() + iX;
+				int iWorldY = plot()->getY() + iY;
+				if (iWorldX >= EARTH_X || iWorldX < 0 || iWorldY >= EARTH_Y || iWorldY < 0) continue;
+				CvPlot* pAdjacentPlot = GC.getMapINLINE().plotINLINE(iWorldX, iWorldY);
+				if (adjacentRequirement != NO_TERRAIN && pAdjacentPlot->getTerrainType() == adjacentRequirement)
+				{
+					bFound = true;
+					break;
+				}
+				else if (bLake && pAdjacentPlot->isLake())
+				{
+					bFound = true;
+					break;
+				}
+				else if (bPeak && pAdjacentPlot->isPeak())
+				{
+					bFound = true;
+					break;
+				}
+			}
+		}
+		if (!bFound) return false;
+	}
+	// End geographic wonders
+
 	return true;
 }
 

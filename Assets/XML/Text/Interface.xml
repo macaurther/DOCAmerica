@@ -2407,6 +2407,62 @@
 		<Spanish>[COLOR_WARNING_TEXT]Requires %s1[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_LAGOON</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires Lagoon</English>
+		<French>[COLOR_WARNING_TEXT]Requires Lagoon</French>
+		<German>[COLOR_WARNING_TEXT]Requires Lagoon</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires Lagoon</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires Lagoon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_PEAK</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires adjacent Peak</English>
+		<French>[COLOR_WARNING_TEXT]Requires adjacent Peak</French>
+		<German>[COLOR_WARNING_TEXT]Requires adjacent Peak</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires adjacent Peak</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires adjacent Peak</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_SEMIDESERT</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires Semidesert</English>
+		<French>[COLOR_WARNING_TEXT]Requires Semidesert</French>
+		<German>[COLOR_WARNING_TEXT]Requires Semidesert</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires Semidesert</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires Semidesert</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_LAKE</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires adjacent Lake</English>
+		<French>[COLOR_WARNING_TEXT]Requires adjacent Lake</French>
+		<German>[COLOR_WARNING_TEXT]Requires adjacent Lake</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires adjacent Lake</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires adjacent Lake</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_DESERT</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires Desert</English>
+		<French>[COLOR_WARNING_TEXT]Requires Desert</French>
+		<German>[COLOR_WARNING_TEXT]Requires Desert</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires Desert</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires Desert</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_WIDE_RIVER</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires adjacent Wide River</English>
+		<French>[COLOR_WARNING_TEXT]Requires adjacent Wide River</French>
+		<German>[COLOR_WARNING_TEXT]Requires adjacent Wide River</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires adjacent Wide River</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires adjacent Wide River</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_PLANTATION</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires nearby Plantation</English>
+		<French>[COLOR_WARNING_TEXT]Requires nearby Plantation</French>
+		<German>[COLOR_WARNING_TEXT]Requires nearby Plantation</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires nearby Plantation</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires nearby Plantation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_WORK_RATE_MODIFIER</Tag>
 		<English>[ICON_BULLET]Constructs Improvements %D1_Mod%% Faster</English>
 		<French>[ICON_BULLET]Construction d'am&#233;nagements %D1_Mod%% plus rapide</French>

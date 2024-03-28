@@ -1450,7 +1450,7 @@ class Mercenary:
 		elif bIntervention:
 			iImmigrationCostModifier -= 50
 		
-		if bIndenturedServitude and self.getUnitInfoID() in lWorkers:
+		if bIndenturedServitude and self.getUnitInfoID() in (lSettlers + lWorkers + lMissionaries + lColonists):
 			iImmigrationCostModifier -= 50
 		
 		iImmigrationCost *= iImmigrationCostModifier

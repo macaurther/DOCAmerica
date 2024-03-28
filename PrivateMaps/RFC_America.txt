@@ -10732,12 +10732,12 @@ BeginPlot
 	x=16,y=79
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=80
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
@@ -10762,7 +10762,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=85
-	BonusType=BONUS_COPPER
+	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -11421,7 +11421,7 @@ BeginPlot
 	x=17,y=81
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
@@ -11460,7 +11460,7 @@ BeginPlot
 	x=17,y=88
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_STONE
+	BonusType=BONUS_COPPER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -12085,14 +12085,14 @@ BeginPlot
 	x=18,y=83
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=18,y=84
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
@@ -14613,12 +14613,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=56
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=22,y=57
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -16018,6 +16019,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=58
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -17399,6 +17401,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=62
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

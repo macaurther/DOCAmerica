@@ -2593,6 +2593,12 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_OCEAN_FISHERY") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_OCEAN")) return false;
 	}
 
+	// MacAurther: No improvements on Atolls or Lagoons
+	if (getTerrainType() == GC.getInfoTypeForString("TERRAIN_LAGOON") || getTerrainType() == GC.getInfoTypeForString("TERRAIN_ATOLL"))
+	{
+		return false;
+	}
+
 	if (getFeatureType() != NO_FEATURE)
 	{
 		// Leoreth: unless the feature makes valid

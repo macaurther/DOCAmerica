@@ -188,18 +188,19 @@ class Civilization(object):
 lCivilizations = [
 	Civilization(
 		iMaya,
-		iGold=50,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		iGold=75,
+		lCivics=[iCaptives],
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iTanning, iSmelting, iMasonry).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iZapotec,
 		iGold=100,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
@@ -209,12 +210,12 @@ lCivilizations = [
 	Civilization(
 		iWari,
 		iGold=100,
-		techs=techs.column(3).including(iMasonry, iDivination).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iMasonry, iDivination, iArithmetics).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iMississippi,
 		iGold=25,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning).without(iLandmarks, iPathfinding, iLinguistics, iLocalization)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning, iDivination).without(iLandmarks, iPathfinding, iLinguistics, iLocalization)
 	),
 	Civilization(
 		iPuebloan,
@@ -412,8 +413,8 @@ dStartingUnits = CivDict({
 	},
 	iPuebloan: {
 		iSettle: 1,
-		iWork: 1,
-		iDefend: 1,
+		iWork: 2,
+		iDefend: 2,
 		iRecon: 1,
 	},
 	iMuisca: {
@@ -826,9 +827,11 @@ dBuildingPreferences = {
 	iTeotihuacan : {
 		iTlachihualtepetl: 40,
 		iSerpentMound: -80,
+		iPuebloBonito: -80,
 	},
 	iZapotec : {
 		iSerpentMound: -80,
+		iPuebloBonito: -80,
 	},
 	iTiwanaku : {
 		iGateOfTheSun: 40,
@@ -836,12 +839,14 @@ dBuildingPreferences = {
 	},
 	iWari : {
 		iSerpentMound: -40,
+		iPuebloBonito: -100,
 	},
 	iMississippi : {
 		iSerpentMound: 40,
 	},
 	iPuebloan : {
 		iSerpentMound: -40,
+		iPuebloBonito: 40,
 	},
 	iMuisca : {
 		iSerpentMound: -40,

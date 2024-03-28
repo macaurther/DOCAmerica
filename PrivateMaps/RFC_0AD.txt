@@ -47,6 +47,10 @@ BeginPlot
 		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_TEOTIHUACAN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_TEOTIHUACAN
 		CityName=Teotihuacan
@@ -69,6 +73,10 @@ BeginPlot
 		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ZAPOTEC
 		CityName=Danibaan
@@ -89,6 +97,10 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginCity

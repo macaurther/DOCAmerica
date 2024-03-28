@@ -487,12 +487,12 @@ iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
-iNumBuildings = 191
+iNumBuildings = 194
 # Buildings (97)
 #				2				3				4				5				6				7				8				9				10
 (iPalace, 		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iChinampa,		iColcas,		iIgloo,			iBath,			iTemazcal,		
-iMarket,		iWeaver,		iStoneworks,	iGoldsmith,		iArena,			iBallCourt,		iBarracks,		iKallanka,		iWalls,			iKancha,		
-iTambo,			iHerbalist,		iAltar,			iTomb,			iTzompantli,	iYacatas,		iCommon,		iPlatformMound,	iKalasasay,		iKiva,			
+iMarket,		iTambo,			iWeaver,		iStoneworks,	iGoldsmith,		iArena,			iBallCourt,		iBarracks,		iKallanka,		iWalls,			
+iKancha,		iHerbalist,		iAltar,			iTomb,			iTzompantli,	iYacatas,		iCommon,		iPlatformMound,	iKalasasay,		iKiva,			
 iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iLuau,			iStocks,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			
 iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	
 iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	
@@ -514,12 +514,12 @@ iAcademy, 		iAdministrativeCenter, iManufactory, iArmoury, 	iMuseum, 		iStockExc
 #				2				3				4				5				6				7				8				9				10
 iTradingCompanyBuilding,iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAcademy,iSecretService,iIronworks,iRedCross,iNationalPark,
 iCentralBank, 	iGrandCentralStation,iSupremeCourt,
-# Great Wonders (34)
+# Great Wonders (37)
 #				2				3				4				5				6				7				8				9				10
-iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iGateOfTheSun,iPyramidOfTheSun,iSerpentMound,	iTemblequeAqueduct,
-iLaFortaleza,	iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,iMountVernon,iMonticello,iSlaterMill,iChapultepecCastle,
-iWestPoint,		iFortMcHenry,	iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	iEllisIsland,	iBrooklynBridge,iChateauFrontenac,iMenloPark,
-iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iCristoRedentor) = range(iNumBuildings)
+iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iPuebloBonito,	iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iGateOfTheSun,iGreatGeoglyph,	iPyramidOfTheSun,
+iSerpentMound,	iCoricancha,	iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,iMountVernon,
+iMonticello,	iSlaterMill,	iChapultepecCastle,iWestPoint,	iFortMcHenry,	iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	iEllisIsland,	
+iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iCristoRedentor) = range(iNumBuildings)
 
 iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
 

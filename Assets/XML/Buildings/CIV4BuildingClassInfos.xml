@@ -1137,6 +1137,15 @@
 			<DefaultBuilding>BUILDING_MACHU_PICCHU</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_PUEBLO_BONITO</Type>
+			<Description>TXT_KEY_BUILDING_PUEBLO_BONITO</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_PUEBLO_BONITO</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_SACSAYHUAMAN</Type>
 			<Description>TXT_KEY_BUILDING_SACSAYHUAMAN</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
@@ -1173,6 +1182,15 @@
 			<DefaultBuilding>BUILDING_GATE_OF_THE_SUN</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_GREAT_GEOGLYPH</Type>
+			<Description>TXT_KEY_BUILDING_GREAT_GEOGLYPH</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_GREAT_GEOGLYPH</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_PYRAMID_OF_THE_SUN</Type>
 			<Description>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
@@ -1189,6 +1207,15 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<DefaultBuilding>BUILDING_SERPENT_MOUND</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_CORICANCHA</Type>
+			<Description>TXT_KEY_BUILDING_CORICANCHA</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_CORICANCHA</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_TEMBLEQUE_AQUEDUCT</Type>

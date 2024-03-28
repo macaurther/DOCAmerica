@@ -362,7 +362,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BATH</ArtDefineTag>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_URBAN_PLANNING</ObsoleteTech>
 			<iCost>40</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -402,7 +402,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEOTIHUACAN_TEMAZCAL</ArtDefineTag>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_URBAN_PLANNING</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -442,14 +442,17 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
-			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
-			<iCost>60</iCost>
+			<PrereqTech>TECH_ARITHMETICS</PrereqTech>
+			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>60</iConquestProb>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<iTradeRouteModifier>25</iTradeRouteModifier>
+			<CommerceModifiers>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
 			<SpecialistCounts>
 				<SpecialistCount>
 					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
@@ -466,7 +469,60 @@
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>10</iFlavor>
+					<iFlavor>8</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
+			<Type>BUILDING_INCAN_TAMBO</Type>
+			<Description>TXT_KEY_BUILDING_INCAN_TAMBO</Description>
+			<Civilopedia>TXT_KEY_BUILDING_INCAN_TAMBO_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_INCAN_TAMBO_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_INCAN_TAMBO</ArtDefineTag>
+			<PrereqTech>TECH_ARITHMETICS</PrereqTech>
+			<iCost>100</iCost>
+			<iConquestProb>100</iConquestProb>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iDefense>25</iDefense>
+			<iTradeRoutes>1</iTradeRoutes>
+			<iTradeRouteModifier>25</iTradeRouteModifier>
+			<iAsset>3</iAsset>
+			<iPower>2</iPower>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</CommerceChanges>
+			<iTradeRouteModifier>25</iTradeRouteModifier>
+			<CommerceModifiers>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<ConstructSound>AS2D_BUILD_WALLS</ConstructSound>
+			<BonusHappinessChanges>
+				<BonusHappinessChange>
+					<BonusType>BONUS_WHALE</BonusType>
+					<iHappinessChange>1</iHappinessChange>
+				</BonusHappinessChange>
+			</BonusHappinessChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>8</iFlavor>
 				</Flavor>
 			</Flavors>
 		</BuildingInfo>
@@ -478,9 +534,9 @@
 			<Strategy>TXT_KEY_BUILDING_WEAVER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WEAVER</ArtDefineTag>
-			<PrereqTech>TECH_ARITHMETICS</PrereqTech>
+			<PrereqTech>TECH_MATHEMATICS</PrereqTech>
 			<ObsoleteTech>TECH_MACHINE_TOOLS</ObsoleteTech>
-			<iCost>80</iCost>
+			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>70</iConquestProb>
@@ -488,6 +544,8 @@
 			<iAsset>2</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
 				<iCommerce>25</iCommerce>
 			</CommerceModifiers>
 			<SpecialistCounts>
@@ -640,7 +698,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_EVANGELISM</ObsoleteTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -676,7 +734,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAYAN_BALL_COURT</ArtDefineTag>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_EVANGELISM</ObsoleteTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -792,7 +850,7 @@
 			<Strategy>TXT_KEY_BUILDING_WALLS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WALLS</ArtDefineTag>
-			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
+			<ObsoleteTech>TECH_GUNPOWDER</ObsoleteTech>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>50</iCost>
@@ -827,7 +885,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CHIMU_KANCHA</ArtDefineTag>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
+			<ObsoleteTech>TECH_GUNPOWDER</ObsoleteTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>50</iCost>
 			<iConquestProb>100</iConquestProb>
@@ -868,45 +926,6 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_WALLS</BuildingClass>
-			<Type>BUILDING_INCAN_TAMBO</Type>
-			<Description>TXT_KEY_BUILDING_INCAN_TAMBO</Description>
-			<Civilopedia>TXT_KEY_BUILDING_INCAN_TAMBO_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_INCAN_TAMBO_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_INCAN_TAMBO</ArtDefineTag>
-			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
-			<iCost>60</iCost>
-			<iConquestProb>100</iConquestProb>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iDefense>50</iDefense>
-			<iBombardDefense>50</iBombardDefense>
-			<iTradeRoutes>1</iTradeRoutes>
-			<iTradeRouteModifier>25</iTradeRouteModifier>
-			<iAsset>2</iAsset>
-			<iPower>2</iPower>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<CommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
-			</CommerceChanges>
-			<ConstructSound>AS2D_BUILD_WALLS</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>4</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>3</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_HERBALIST</BuildingClass>
 			<Type>BUILDING_HERBALIST</Type>
 			<Description>TXT_KEY_BUILDING_HERBALIST</Description>
@@ -915,7 +934,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HERBALIST</ArtDefineTag>
 			<PrereqTech>TECH_HERBALISM</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_EDUCATION</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -972,7 +991,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_EVANGELISM</ObsoleteTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -985,6 +1004,12 @@
 				<iCommerce>2</iCommerce>
 			</CommerceChanges>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<iSpecialistCount>1</iSpecialistCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -1001,7 +1026,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ZAPOTEC_TOMB</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_EVANGELISM</ObsoleteTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1031,7 +1056,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_TZOMPANTLI</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_EVANGELISM</ObsoleteTech>
 			<iHurryAngerModifier>-50</iHurryAngerModifier>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1065,7 +1090,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_EVANGELISM</ObsoleteTech>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1235,7 +1260,7 @@
 			<Strategy>TXT_KEY_BUILDING_PUEBLOAN_KIVA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PUEBLOAN_KIVA</ArtDefineTag>
-			<PrereqTech>TECH_LAW</PrereqTech>
+			<PrereqTech>TECH_MASONRY</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7854,14 +7879,14 @@
 			<MovieDefineTag>ART_DEF_MOVIE_FLOATING_GARDENS</MovieDefineTag>
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_SHIPBUILDING</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>450</iCost>
+			<iCost>350</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7912,14 +7937,14 @@
 			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_COLONIZATION</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>300</iCost>
+			<iCost>250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7968,13 +7993,13 @@
 			<MovieDefineTag>ART_DEF_MOVIE_MACHU_PICCHU</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_ECONOMICS</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>400</iCost>
+			<iCost>300</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8011,6 +8036,72 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_PUEBLO_BONITO</BuildingClass>
+			<Type>BUILDING_PUEBLO_BONITO</Type>
+			<Description>TXT_KEY_BUILDING_PUEBLO_BONITO</Description>
+			<Civilopedia>TXT_KEY_BUILDING_PUEBLO_BONITO_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_PUEBLO_BONITO_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_PUEBLO_BONITO</ArtDefineTag>
+			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
+			<PrereqTech>TECH_POTTERY</PrereqTech>
+			<ObsoleteTech>TECH_ECONOMICS</ObsoleteTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
+			<bTeamShare>1</bTeamShare>
+			<bNukeImmune>1</bNukeImmune>
+			<bPagan>1</bPagan>
+			<iCost>150</iCost>
+			<iHurryCostModifier>100</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<iAsset>25</iAsset>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<CommerceChangeOriginalOwners>
+				<bCommerceChangeOriginalOwner>0</bCommerceChangeOriginalOwner>
+				<bCommerceChangeOriginalOwner>0</bCommerceChangeOriginalOwner>
+				<bCommerceChangeOriginalOwner>1</bCommerceChangeOriginalOwner>
+			</CommerceChangeOriginalOwners>
+			<FreeSpecialistCounts>
+				<FreeSpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iFreeSpecialistCount>1</iFreeSpecialistCount>
+				</FreeSpecialistCount>
+			</FreeSpecialistCounts>
+			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<SpecialistYieldChanges>
+				<SpecialistYieldChange>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<YieldChanges>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistYieldChange>
+			</SpecialistYieldChanges>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_SACSAYHUAMAN</BuildingClass>
 			<Type>BUILDING_SACSAYHUAMAN</Type>
 			<Description>TXT_KEY_BUILDING_SACSAYHUAMAN</Description>
@@ -8021,14 +8112,14 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SACSAYHUAMAN</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
+			<ObsoleteTech>TECH_FORTIFICATION</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>350</iCost>
+			<iCost>200</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8077,7 +8168,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HUEY_TEOCALLI</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_COLONIZATION</ObsoleteTech>
 			<FreePromotion>PROMOTION_LEADERSHIP</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8085,7 +8176,7 @@
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>400</iCost>
+			<iCost>250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8133,14 +8224,14 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TLACHIHUALTEPETL</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_OPTICS</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
 			<iAIWeight>200</iAIWeight>
-			<iCost>250</iCost>
+			<iCost>150</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8183,13 +8274,13 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GATE_OF_THE_SUN</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_COMMUNITY</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>300</iCost>
+			<iCost>250</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8222,6 +8313,58 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_GREAT_GEOGLYPH</BuildingClass>
+			<Type>BUILDING_GREAT_GEOGLYPH</Type>
+			<Description>TXT_KEY_BUILDING_GREAT_GEOGLYPH</Description>
+			<Civilopedia>TXT_KEY_BUILDING_GREAT_GEOGLYPH_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_GREAT_GEOGLYPH_STRATEGY</Strategy>
+			<Advisor>ADVISOR_RELIGION</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_GREAT_GEOGLYPH</ArtDefineTag>
+			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
+			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<ObsoleteTech>TECH_COMMUNITY</ObsoleteTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+			<bTeamShare>1</bTeamShare>
+			<bNukeImmune>1</bNukeImmune>
+			<bPagan>1</bPagan>
+			<iCost>150</iCost>
+			<iHurryCostModifier>100</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<iAsset>12</iAsset>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<SpecialistExtraCommerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</SpecialistExtraCommerces>
+			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
+			<BonusProductionModifiers>
+				<BonusProductionModifier>
+					<BonusType>BONUS_STONE</BonusType>
+					<iProductonModifier>100</iProductonModifier>
+				</BonusProductionModifier>
+			</BonusProductionModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_RELIGION</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PYRAMID_OF_THE_SUN</BuildingClass>
 			<Type>BUILDING_PYRAMID_OF_THE_SUN</Type>
 			<Description>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN</Description>
@@ -8233,13 +8376,13 @@
 			<MovieDefineTag>ART_DEF_MOVIE_PYRAMID_OF_THE_SUN</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_CHARTER</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>300</iCost>
+			<iCost>200</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8287,13 +8430,13 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SERPENT_MOUND</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_CHARTER</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<bPagan>1</bPagan>
-			<iCost>250</iCost>
+			<iCost>150</iCost>
 			<iHurryCostModifier>100</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8320,6 +8463,51 @@
 				</Flavor>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>8</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_CORICANCHA</BuildingClass>
+			<Type>BUILDING_CORICANCHA</Type>
+			<Description>TXT_KEY_BUILDING_CORICANCHA</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CORICANCHA_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_CORICANCHA_STRATEGY</Strategy>
+			<Advisor>ADVISOR_RELIGION</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_CORICANCHA</ArtDefineTag>
+			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
+			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<ObsoleteTech>TECH_OPTICS</ObsoleteTech>
+			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+			<bTeamShare>1</bTeamShare>
+			<bNukeImmune>1</bNukeImmune>
+			<bPagan>1</bPagan>
+			<iCost>300</iCost>
+			<iHurryCostModifier>100</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<iAsset>12</iAsset>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>4</iCommerce>
+				<iCommerce>4</iCommerce>
+			</ObsoleteSafeCommerceChanges>
+			<CommerceChangeDoubleTimes>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1000</iCommerce>
+				<iCommerce>1000</iCommerce>
+			</CommerceChangeDoubleTimes>
+			<SpecialistExtraCommerces>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</SpecialistExtraCommerces>
+			<ConstructSound>AS2D_BUILD_ORACLE</ConstructSound>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_SCIENCE</FlavorType>
 					<iFlavor>8</iFlavor>
 				</Flavor>
 			</Flavors>
@@ -8739,7 +8927,6 @@
 			<Description>TXT_KEY_BUILDING_MONTICELLO</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MONTICELLO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_MONTICELLO_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONTICELLO</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
@@ -9621,6 +9808,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ATUA_SHRINE</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_AMPHIBIOUS</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
@@ -9628,6 +9816,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9640,12 +9829,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9667,6 +9850,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEOTL_STEP_PYRAMID</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_RAIDER1</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
@@ -9674,6 +9858,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9686,12 +9871,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9713,6 +9892,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ASATRU_HOF</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_AMPHIBIOUS</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
@@ -9720,6 +9900,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9732,12 +9913,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9765,6 +9940,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9777,12 +9953,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9810,6 +9980,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9822,12 +9993,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9856,6 +10021,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9868,12 +10034,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9895,6 +10055,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INTI_TEMPLE</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_MOUNTAINEER1</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
@@ -9902,6 +10063,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9914,12 +10076,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9941,13 +10097,15 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MIDEWIWIN_MIDEWIGAAN</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_WOODSMAN1</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iAsset>1</iAsset>
+			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -9960,12 +10118,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -9987,13 +10139,15 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ANGAKKUQ_QARGI</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_MARCH</FreePromotion>
 			<bCenterInCity>1</bCenterInCity>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iAsset>1</iAsset>
+			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -10006,12 +10160,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -10033,12 +10181,14 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GAIWIIO_LONGHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_WOODSMAN1</FreePromotion>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iAsset>1</iAsset>
+			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -10051,12 +10201,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>
@@ -10078,12 +10222,14 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_KACHINA_PITHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
+			<FreePromotion>PROMOTION_MOUNTAINEER1</FreePromotion>
 			<bPagan>1</bPagan>
 			<iCost>30</iCost>
 			<iConquestProb>50</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iAsset>1</iAsset>
+			<iAsset>2</iAsset>
+			<iHappiness>1</iHappiness>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -10096,12 +10242,6 @@
 				<iCommerce>1000</iCommerce>
 			</CommerceChangeDoubleTimes>
 			<ConstructSound>AS2D_BUILD_OBELISK</ConstructSound>
-			<SpecialistCounts>
-				<SpecialistCount>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iSpecialistCount>1</iSpecialistCount>
-				</SpecialistCount>
-			</SpecialistCounts>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_CULTURE</FlavorType>

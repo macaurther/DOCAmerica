@@ -860,11 +860,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_HELP</Tag>
-		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</English>
-		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</French>
-		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</German>
-		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</Italian>
-		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</Spanish>
+		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</English>
+		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</French>
+		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</German>
+		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</Italian>
+		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM</Tag>

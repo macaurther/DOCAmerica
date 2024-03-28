@@ -91,7 +91,7 @@ dGoals = {
 	iMaya: (
 		FirstDiscover(iMathematics, iCalendar),
 		Wonder(iTempleOfKukulkan, by=900),
-		BestTechPlayer(at=1500),
+		BestTechPlayer(at=1490),
 	),
 	iTeotihuacan: (
 		CultureAmount(500, at=850),
@@ -153,8 +153,8 @@ dGoals = {
 		),
 	),
 	iPuebloan: (
-		CultureAmount(500, at=1000),
-		TradeConnection(by=1100),
+		CultureAmount(250, at=1200),
+		TradeConnection(by=1400),
 		UnitCount(iHorseArcher, 1, by=1680),
 	),
 	iMuisca: (

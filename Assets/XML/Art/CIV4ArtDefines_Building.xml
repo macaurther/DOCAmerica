@@ -2217,5 +2217,35 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/templekilmorph.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_PUEBLO_BONITO</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/AlKhazneh/Petra.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Wonders/PuebloBonito.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GREAT_GEOGLYPH</Type>
+			<LSystem>LSYSTEM_RIVER</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Dujiangyan/Levee.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Wonders/GreatGeoglyph.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CORICANCHA</Type>
+			<LSystem>LSYSTEM_4x4</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>0.45</fInterfaceScale>
+			<NIF>Art/Structures/Wonders/Alamut/Alamut.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Wonders/Coricancha.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

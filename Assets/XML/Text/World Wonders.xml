@@ -28,8 +28,8 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEMPLE_OF_KUKULKAN_HELP</Tag>
 		<English>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</English>
-		<French>[ICON_BULLET]+1 [ICON_FOOD] sur les cases de for&#234;t tropicale</French>
-		<German>[ICON_BULLET]+1 [ICON_FOOD] von Regenwald</German>
+		<French>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</French>
+		<German>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</German>
 		<Italian>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</Italian>
 		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] on Rainforest</Spanish>
 	</TEXT>
@@ -64,7 +64,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MACHU_PICCHU_HELP</Tag>
 		<English>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</English>
-		<French>[ICON_BULLET]+2[ICON_GOLD] par montagne dans les environs de la ville</French>
+		<French>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</French>
 		<German>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</German>
 		<Italian>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</Italian>
 		<Spanish>[ICON_BULLET]+2[ICON_GOLD] per Peak in City Radius</Spanish>
@@ -726,14 +726,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MONTICELLO_HELP</Tag>
-		<English>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
-		<French>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
-		<German>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
-		<Italian>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
-		<Spanish>[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON</Tag>
 		<English>Mount Vernon</English>
 		<French>Mount Vernon</French>
@@ -751,16 +743,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON_HELP</Tag>
-		<English>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</English>
-		<French>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</French>
-		<German>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</German>
-		<Italian>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Italian>
-		<Spanish>[ICON_BULLET]Another Great Person is born whenever a Great General appears
-[ICON_BULLET]Requires a Plantation or Slave Plantation in city radius</Spanish>
+		<English>[ICON_BULLET]Another Great Person is born whenever a Great General appears</English>
+		<French>[ICON_BULLET]Another Great Person is born whenever a Great General appears</French>
+		<German>[ICON_BULLET]Another Great Person is born whenever a Great General appears</German>
+		<Italian>[ICON_BULLET]Another Great Person is born whenever a Great General appears</Italian>
+		<Spanish>[ICON_BULLET]Another Great Person is born whenever a Great General appears</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NASA</Tag>
@@ -977,6 +964,78 @@
 		<German>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</German>
 		<Italian>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Italian>
 		<Spanish>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUEBLO_BONITO</Tag>
+		<English>Pueblo Bonito</English>
+		<French>Pueblo Bonito</French>
+		<German>Pueblo Bonito</German>
+		<Italian>Pueblo Bonito</Italian>
+		<Spanish>Pueblo Bonito</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUEBLO_BONITO_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Pueblo Bonito[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]Pueblo Bonito[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]Pueblo Bonito[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Pueblo Bonito[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Pueblo Bonito[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PUEBLO_BONITO_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GREAT_GEOGLYPH</Tag>
+		<English>Great Geoglyph</English>
+		<French>Great Geoglyph</French>
+		<German>Great Geoglyph</German>
+		<Italian>Great Geoglyph</Italian>
+		<Spanish>Great Geoglyph</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GREAT_GEOGLYPH_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Great Geoglyph[COLOR_REVERT] adds additional culture to all of your specialists.</English>
+		<French>The [COLOR_BUILDING_TEXT]Great Geoglyph[COLOR_REVERT] adds additional culture to all of your specialists.</French>
+		<German>The [COLOR_BUILDING_TEXT]Great Geoglyph[COLOR_REVERT] adds additional culture to all of your specialists.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Great Geoglyph[COLOR_REVERT] adds additional culture to all of your specialists.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Great Geoglyph[COLOR_REVERT] adds additional culture to all of your specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GREAT_GEOGLYPH_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CORICANCHA</Tag>
+		<English>Coricancha</English>
+		<French>Coricancha</French>
+		<German>Coricancha</German>
+		<Italian>Coricancha</Italian>
+		<Spanish>Coricancha</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CORICANCHA_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Coricancha[COLOR_REVERT] adds additional science to all of your specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]Coricancha[COLOR_REVERT] adds additional science to all of your specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]Coricancha[COLOR_REVERT] adds additional science to all of your specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Coricancha[COLOR_REVERT] adds additional science to all of your specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Coricancha[COLOR_REVERT] adds additional science to all of your specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CORICANCHA_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
