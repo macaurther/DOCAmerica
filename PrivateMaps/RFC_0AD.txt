@@ -48,7 +48,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_WORKER
+		UnitType=UNIT_ARTISAN
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginCity

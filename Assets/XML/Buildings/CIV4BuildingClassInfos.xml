@@ -26,6 +26,15 @@
 			<DefaultBuilding>BUILDING_GRANARY</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_AQUEDUCT</Type>
+			<Description>TXT_KEY_BUILDING_AQUEDUCT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_AQUEDUCT</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_BATH</Type>
 			<Description>TXT_KEY_BUILDING_BATH</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -108,13 +117,13 @@
 			<DefaultBuilding>BUILDING_ALTAR</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_COMMON</Type>
-			<Description>TXT_KEY_BUILDING_COMMON</Description>
+			<Type>BUILDINGCLASS_PLAZA</Type>
+			<Description>TXT_KEY_BUILDING_PLAZA</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_COMMON</DefaultBuilding>
+			<DefaultBuilding>BUILDING_PLAZA</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_PAGAN_TEMPLE</Type>

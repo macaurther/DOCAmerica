@@ -190,7 +190,7 @@ lCivilizations = [
 		iMaya,
 		iGold=75,
 		lCivics=[iCaptives],
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, iHerbalism)
 	),
 	Civilization(
 		iTeotihuacan,
@@ -248,7 +248,7 @@ lCivilizations = [
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iDespotism, iCustomaryLaw, iCaptives, iMerchantTrade, iConquest],
+		lCivics=[iDespotism, iCustomaryLaw, iCaptives, iMerchantTrade],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing)
 	),

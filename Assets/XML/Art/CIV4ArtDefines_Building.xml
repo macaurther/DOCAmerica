@@ -2247,5 +2247,15 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/Coricancha.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MAYA_PYRAMID</Type>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.38</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/ChichenItza/ChichenItza.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Pyramid.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

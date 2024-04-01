@@ -11034,7 +11034,7 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 			}
 		}
 		// 1SDAN?: Serpent Mound: +1 Merchant Slot from Common
-		else if (bActual && ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)BUILDING_SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && kBuilding.getBuildingClassType() == GC.getBuildingInfo((BuildingTypes)BUILDING_COMMON).getBuildingClassType())
+		else if (bActual && ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)BUILDING_SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && kBuilding.getBuildingClassType() == GC.getBuildingInfo((BuildingTypes)BUILDING_PLAZA).getBuildingClassType())
 		{
 			if (kBuilding.getSpecialistCount(iI) > 0)
 			{

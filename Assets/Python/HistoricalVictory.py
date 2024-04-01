@@ -90,8 +90,8 @@ LOCAL = "TXT_KEY_VICTORY_NAME_LOCAL"
 dGoals = {
 	iMaya: (
 		FirstDiscover(iMathematics, iCalendar),
-		Wonder(iTempleOfKukulkan, by=900),
-		BestTechPlayer(at=1490),
+		Wonder(iTempleOfKukulkan, by=600),
+		BestTechPlayer(at=870),
 	),
 	iTeotihuacan: (
 		CultureAmount(500, at=850),

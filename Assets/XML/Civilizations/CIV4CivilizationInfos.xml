@@ -309,7 +309,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_AQUEDUCT</BuildingClassType>
 					<BuildingType>BUILDING_AZTEC_CHINAMPA</BuildingType>
 				</Building>
 				<Building>
@@ -1347,7 +1347,7 @@
 					<BuildingType>BUILDING_INCA_KALLANKA</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+					<BuildingClassType>BUILDING_INCAN_TAMBO</BuildingClassType>
 					<BuildingType>BUILDING_INCAN_TAMBO</BuildingType>
 				</Building>
 				<Building>
@@ -1614,7 +1614,7 @@
 					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
 					<BuildingType>BUILDING_IROQUOIS_LONGHOUSE</BuildingType>
 				</Building>
 				<Building>
@@ -1728,6 +1728,10 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_ARENA</BuildingClassType>
 					<BuildingType>BUILDING_MAYAN_BALL_COURT</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_HERBALIST</BuildingClassType>
+					<BuildingType>BUILDING_MAYA_PYRAMID</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -1954,7 +1958,7 @@
 					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
 					<BuildingType>BUILDING_MISSISSIPPI_PLATFORM_MOUND</BuildingType>
 				</Building>
 				<Building>
@@ -2665,7 +2669,7 @@
 					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
 				</Building>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
 					<BuildingType>BUILDING_PUEBLOAN_KIVA</BuildingType>
 				</Building>
 				<Building>
@@ -3206,7 +3210,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_COMMON</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
 					<BuildingType>BUILDING_TIWANAKU_KALASASAYA</BuildingType>
 				</Building>
 				<Building>
