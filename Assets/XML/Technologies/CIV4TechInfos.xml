@@ -1467,9 +1467,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_EMPIRE</Type>
-			<Description>TXT_KEY_TECH_EMPIRE</Description>
-			<Civilopedia>TXT_KEY_TECH_EMPIRE_PEDIA</Civilopedia>
+			<Type>TECH_SUBJUGATION</Type>
+			<Description>TXT_KEY_TECH_SUBJUGATION</Description>
+			<Civilopedia>TXT_KEY_TECH_SUBJUGATION_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1495,7 +1495,7 @@
 				<PrereqTech>TECH_GENERALSHIP</PrereqTech>
 				<PrereqTech>TECH_CEMENT</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_EMPIRE_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_SUBJUGATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Empire.dds</Button>
@@ -1718,7 +1718,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_NOBILITY</PrereqTech>
-				<PrereqTech>TECH_EMPIRE</PrereqTech>
+				<PrereqTech>TECH_SUBJUGATION</PrereqTech>
 				<PrereqTech>TECH_ARTISANRY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_OLD_WORLD_TACTICS_QUOTE</Quote>
@@ -3611,9 +3611,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_PROTECTIONISM</Type>
-			<Description>TXT_KEY_TECH_PROTECTIONISM</Description>
-			<Civilopedia>TXT_KEY_TECH_PROTECTIONISM_PEDIA</Civilopedia>
+			<Type>TECH_TARIFFS</Type>
+			<Description>TXT_KEY_TECH_TARIFFS</Description>
+			<Civilopedia>TXT_KEY_TECH_TARIFFS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>1500</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3638,7 +3638,7 @@
 				<PrereqTech>TECH_BONDS</PrereqTech>
 				<PrereqTech>TECH_POSTAL_SERVICE</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_PROTECTIONISM_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_TARIFFS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Protectionism.dds</Button>

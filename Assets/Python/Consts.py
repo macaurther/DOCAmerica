@@ -414,7 +414,7 @@ iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iS
 iSmelting,      iMasonry,       iProperty,      iArithmetics,   iCeremony,      iDivination,    iSeafaring,
 iAlloys,        iConstruction,  iMathematics,   iAstronomy,     iWriting,       iCalendar,      iTrade,
 iGeneralship,   iCement,        iAesthetics,    iScholarship,   iCodices,       iPriesthood,    iNavigation,
-iNobility,      iEmpire,        iArtisanry,     iMedicine,      iLaw,           iEthics,        iPhilosophy,
+iNobility,      iSubjugation,   iArtisanry,     iMedicine,      iLaw,           iEthics,        iPhilosophy,
 iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iHumanities, 	iPrinting, 		iJudiciary,
 iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iOfficials,
@@ -487,19 +487,20 @@ iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
-iNumBuildings = 196
-# Buildings (99)
+iNumBuildings = 198
+# Buildings (101)
 #				2				3				4				5				6				7				8				9				10
-(iPalace, 		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iColcas,		iIgloo,			iAqueduct,		iChinampa,		iBath,			
-iTemazcal,		iMarket,		iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		
-iWalls,			iKancha,		iHerbalist,		iPyramid,		iAltar,			iTomb,			iTzompantli,	iYacatas,		iPlaza,			iPlatformMound,	
-iKalasasay,		iKiva,			iLonghouse,		iPaganTemple,	iHarbor,		iSmokehouse,	iLuau,			iStocks,		iTradingPost,	iHuntingPost,	
-iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket,
-iWharf,			iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		iCitadelle,		iEstate,		iFazenda,		
-iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	
-iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	
-iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		
-iSteelMill,		iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		iNewspaper,				
+(iChieftansHut,	iGovernorsResidence,iContinentalCongress,iPalace,iGovernorsMansion,iCapitol,	iGranary,		iColcas,		iIgloo,			iMarket,		
+iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		iPyramid,		
+iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		iWalls,			
+iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			iStocks,		
+iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			iConstabulary,	
+iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		iCitadelle,		
+iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	iWheelwright,	
+iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	iMagazine,		iShipyard,		
+iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,
+iTextileMill,	iWoolMill,		iSteelMill,		iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		
+iNewspaper,				
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 

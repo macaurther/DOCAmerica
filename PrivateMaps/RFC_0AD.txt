@@ -19,7 +19,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_INDEPENDENT3
 		CityName=Holy City
 		CityPopulation=1
-		BuildingType=BUILDING_PALACE
+		BuildingType=BUILDING_CAPITOL
 		YearFounded=-3000
 		YearAcquired=-3000
 		PreviousOwner=CIVILIZATION_INDEPENDENT3
@@ -48,7 +48,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ARTISAN
+		UnitType=UNIT_TEOTIHUACAN_ARTISAN
 		UnitOwner=CIVILIZATION_TEOTIHUACAN
 	EndUnit
 	BeginCity

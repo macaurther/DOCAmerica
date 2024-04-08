@@ -1536,7 +1536,7 @@ protected:
 	int m_iUnhappinessDecayModifier; // Leoreth
 	int m_iVassalTradeModifier; // Leoreth
 
-	int m_iCultureGroup; // FoB
+	int m_iCivicCultureGroup; // FoB
 	int m_iMinPopForCapitalBonus; // FoB
 
 	bool m_bMilitaryFoodProduction;

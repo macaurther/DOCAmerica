@@ -78,7 +78,7 @@
 			<Type>CORPORATION_CEREAL_INDUSTRY</Type>
 			<Description>TXT_KEY_CORPORATION_CEREAL_INDUSTRY</Description>
 			<Civilopedia>TXT_KEY_CORPORATION_CEREAL_INDUSTRY_PEDIA</Civilopedia>
-			<TechPrereq>TECH_PROTECTIONISM</TechPrereq>
+			<TechPrereq>TECH_TARIFFS</TechPrereq>
 			<FreeUnitClass>NONE</FreeUnitClass>
 			<iSpreadFactor>200</iSpreadFactor>
 			<iSpreadCost>50</iSpreadCost>

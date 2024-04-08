@@ -1399,7 +1399,6 @@ public:
 	void setImmigrantShip(CvUnit* pUnit);
 	CvUnit* getImmigrantShip() const;
 
-
 protected:
 
 	int m_iStartingX;

@@ -5778,7 +5778,7 @@ m_iExpInBorderModifier(0),
 m_iLevelExperienceModifier(0), // Leoreth
 m_iUnhappinessDecayModifier(0), // Leoreth
 m_iVassalTradeModifier(0), // Leoreth
-m_iCultureGroup(0), // FoB
+m_iCivicCultureGroup(0), // FoB
 m_iMinPopForCapitalBonus(0), // FoB
 m_bMilitaryFoodProduction(false),
 m_bNoUnhealthyPopulation(false),
@@ -6448,7 +6448,7 @@ int CvCivicInfo::getVassalTradeModifier() const
 
 int CvCivicInfo::getCultureGroup() const
 {
-	return m_iCultureGroup;
+	return m_iCivicCultureGroup;
 }
 
 void CvCivicInfo::read(FDataStreamBase* stream)
@@ -6511,7 +6511,7 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iUnhappinessDecayModifier); // Leoreth
 	stream->Read(&m_iVassalTradeModifier); // Leoreth
 
-	stream->Read(&m_iCultureGroup); // FoB
+	stream->Read(&m_iCivicCultureGroup); // FoB
 	stream->Read(&m_iMinPopForCapitalBonus); // FoB
 
 	stream->Read(&m_bMilitaryFoodProduction);
@@ -6703,7 +6703,7 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iUnhappinessDecayModifier); // Leoreth
 	stream->Write(m_iVassalTradeModifier); // Leoreth
 
-	stream->Write(m_iCultureGroup); // FoB
+	stream->Write(m_iCivicCultureGroup); // FoB
 	stream->Write(m_iMinPopForCapitalBonus); // FoB
 
 	stream->Write(m_bMilitaryFoodProduction);
@@ -6816,7 +6816,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCapitalTradeModifier, "iCapitalTradeModifier"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iDefensivePactTradeModifier, "iDefensivePactTradeModifier"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iVassalTradeModifier, "iVassalTradeModifier"); // Leoreth
-	pXML->GetChildXmlValByName(&m_iCultureGroup, "iCultureGroup"); // FoB
+	pXML->GetChildXmlValByName(&m_iCivicCultureGroup, "iCultureGroup"); // FoB
 	pXML->GetChildXmlValByName(&m_iVassalCityCommerce, "iVassalCityCommerce"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iColonyCommerce, "iColonyCommerce"); // Leoreth
 	pXML->GetChildXmlValByName(&m_iCaptureGoldModifier, "iCaptureGoldModifier"); // Leoreth

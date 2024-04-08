@@ -54,16 +54,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_MEETING_HALL</BuildingClassType>
 					<BuildingType>BUILDING_AMERICAN_STATE_HOUSE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -84,7 +88,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -182,16 +186,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_SLAUGHTERHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_ARGENTINE_REFRIGERATION_PLANT</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -212,7 +220,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -405,16 +413,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_ESTATE</BuildingClassType>
 					<BuildingType>BUILDING_BRAZILIAN_FAZENDA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -431,7 +443,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -521,16 +533,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_CONSTABULARY</BuildingClassType>
 					<BuildingType>BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units/>
@@ -542,7 +558,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -701,16 +717,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_ESTATE</BuildingClassType>
 					<BuildingType>BUILDING_COLOMBIAN_HACIENDA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -731,7 +751,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -809,10 +829,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_LUMBERMILL</BuildingClassType>
 					<BuildingType>BUILDING_ENGLISH_SAWMILL</BuildingType>
 				</Building>
@@ -823,6 +839,14 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_RESIDENCE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -843,7 +867,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1024,16 +1048,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_LEVEE</BuildingClassType>
 					<BuildingType>BUILDING_FRENCH_SEIGNEUR</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_RESIDENCE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -1054,7 +1082,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1141,16 +1169,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_STAR_FORT</BuildingClassType>
 					<BuildingType>BUILDING_HAITIAN_CITADELLE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_YORUBA_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -1167,7 +1199,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1244,10 +1276,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_SMOKEHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_HAWAIIAN_LUAU</BuildingType>
 				</Building>
@@ -1274,7 +1302,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1462,10 +1490,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
 					<BuildingType>BUILDING_INUIT_IGLOO</BuildingType>
 				</Building>
@@ -1488,7 +1512,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1610,10 +1634,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
 					<BuildingType>BUILDING_IROQUOIS_LONGHOUSE</BuildingType>
 				</Building>
@@ -1636,7 +1656,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1826,16 +1846,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_RODEO</BuildingClassType>
 					<BuildingType>BUILDING_MEXICAN_CHARREADA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -1847,7 +1871,7 @@
 			<FreeUnitClasses/>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1954,10 +1978,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
 					<BuildingType>BUILDING_MISSISSIPPI_PLATFORM_MOUND</BuildingType>
 				</Building>
@@ -1980,7 +2000,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2048,10 +2068,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_STONEWORKS</BuildingClassType>
 					<BuildingType>BUILDING_MUISCA_GOLDSMITH</BuildingType>
 				</Building>
@@ -2074,7 +2090,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2199,16 +2215,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
 					<BuildingType>BUILDING_DUTCH_TRADING_FORT</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_ASATRU_HOF</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_RESIDENCE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -2225,7 +2245,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2350,16 +2370,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_COURTHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_NORSE_THINGVELLIR</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_ASATRU_HOF</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_RESIDENCE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -2376,7 +2400,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2450,16 +2474,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_TEXTILE_MILL</BuildingClassType>
 					<BuildingType>BUILDING_PERUVIAN_WOOL_MILL</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -2476,7 +2504,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2565,16 +2593,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
 					<BuildingType>BUILDING_PORTUGUESE_FEITORIA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_RESIDENCE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -2595,7 +2627,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2665,10 +2697,6 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CHIEFTANS_HUT</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
 					<BuildingType>BUILDING_PUEBLOAN_KIVA</BuildingType>
 				</Building>
@@ -2691,7 +2719,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2886,16 +2914,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
 					<BuildingType>BUILDING_RUSSIAN_HUNTING_POST</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_PERUN_SHRINE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_RESIDENCE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -2912,7 +2944,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2992,16 +3024,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_CATHOLIC_MONASTERY</BuildingClassType>
 					<BuildingType>BUILDING_SPANISH_MISSION</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_RESIDENCE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -3022,7 +3058,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -3143,7 +3179,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -3298,16 +3334,20 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
 					<BuildingClassType>BUILDINGCLASS_STEEL_MILL</BuildingClassType>
 					<BuildingType>BUILDING_VENEZUELAN_REFINERY</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_INTI_TEMPLE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<BuildingType>BUILDING_CONTINENTAL_CONGRESS</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -3324,7 +3364,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -3503,7 +3543,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_ALTAR</BuildingClassType>
-					<BuildingType>BUILDING_TOMB</BuildingType>
+					<BuildingType>BUILDING_ZAPOTEC_TOMB</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>

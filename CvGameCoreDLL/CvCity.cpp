@@ -19187,3 +19187,19 @@ bool CvCity::populate()
 	changePopulation(1);
 	return true;
 }
+
+// MacAurther: Culture Groups
+BuildingClassTypes CvCity::getBestCapitalBuilding()
+{
+	BuildingTypes ePalaceType = (BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(getOwner()).getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_PALACE));
+	BuildingTypes eChieftansHutType = (BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(getOwner()).getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_CHIEFTANS_HUT));
+	if (ePalaceType != NO_BUILDINGCLASS && getNumRealBuilding(ePalaceType))
+	{
+		return BUILDINGCLASS_PALACE;
+	}
+	else if (eChieftansHutType != NO_BUILDINGCLASS && getNumRealBuilding(eChieftansHutType))
+	{
+		return BUILDINGCLASS_CHIEFTANS_HUT;
+	}
+	return NO_BUILDINGCLASS;
+}

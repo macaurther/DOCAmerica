@@ -2257,5 +2257,55 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Pyramid.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CHIEFTANS_HUT</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.15</fScale>
+			<fInterfaceScale>0.43</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Palace.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,5</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CONTINENTAL_CONGRESS</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.15</fScale>
+			<fInterfaceScale>0.43</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Palace.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,5</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GOVERNORS_RESIDENCE</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.15</fScale>
+			<fInterfaceScale>0.43</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Palace.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,5</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_GOVERNORS_MANSION</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.15</fScale>
+			<fInterfaceScale>0.43</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Palace.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,5</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_CAPITOL</Type>
+			<LSystem>LSYSTEM_3x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.15</fScale>
+			<fInterfaceScale>0.43</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Buildings/Palace.dds,Art/Interface/Buttons/Buildings_Atlas.dds,6,5</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

@@ -10,7 +10,7 @@
 			<Type>PROCESS_WEALTH</Type>
 			<Description>TXT_KEY_PROCESS_WEALTH</Description>
 			<Strategy>TXT_KEY_PROCESS_WEALTH_STRATEGY</Strategy>
-			<TechPrereq>TECH_PROTECTIONISM</TechPrereq>
+			<TechPrereq>TECH_TARIFFS</TechPrereq>
 			<ProductionToCommerceModifiers>
 				<iProductionToCommerceModifier>50</iProductionToCommerceModifier>
 				<iProductionToCommerceModifier>0</iProductionToCommerceModifier>

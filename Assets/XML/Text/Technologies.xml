@@ -1288,15 +1288,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_EMPIRE</Tag>
-		<English>Empire</English>
-		<French>Empire</French>
-		<German>Empire</German>
-		<Italian>Empire</Italian>
-		<Spanish>Empire</Spanish>
+		<Tag>TXT_KEY_TECH_SUBJUGATION</Tag>
+		<English>Subjugation</English>
+		<French>Subjugation</French>
+		<German>Subjugation</German>
+		<Italian>Subjugation</Italian>
+		<Spanish>Subjugation</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_EMPIRE_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_SUBJUGATION_QUOTE</Tag>
 		<English>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</English>
 		<French>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</French>
 		<German>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</German>
@@ -1304,7 +1304,7 @@
 		<Spanish>"Empires rise and fall, leaving echoes of their grandeur in the stones of their cities and the stories of their peoples-a testament to the intricate dance of power, ambition, and the relentless march of time."[PARAGRAPH:2]-ChatGPT</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_EMPIRE_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_SUBJUGATION_PEDIA</Tag>
 		<English>In the pre-Columbian Americas, the concept of empires manifested in complex and sophisticated societies that wielded considerable influence over vast territories. One prominent example is the Aztec Empire in Mesoamerica, characterized by its monumental capital city, Tenochtitlan, situated in the heart of present-day Mexico. The Aztecs forged a powerful state through military conquest, tribute collection, and strategic alliances. Their society was organized hierarchically, with an emperor at the pinnacle, overseeing a complex administrative structure.[PARAGRAPH:2]In the Andean region of South America, the Inca Empire emerged as a formidable political entity. Centered in Cusco (modern-day Peru), the Incas expanded their dominion through military conquest and strategic statecraft. Their highly centralized government, led by the Sapa Inca, controlled a vast and diverse territory, managing it through a sophisticated system of roads, agricultural terraces, and administrative centers. The Mississippian culture in North America, particularly Cahokia in present-day Illinois, represented another manifestation of pre-Columbian imperial complexity. Cahokia served as a cultural, religious, and economic center, overseeing a regional network of trade and influence.[PARAGRAPH:2]These pre-Columbian empires were not only defined by their territorial expanse but also by their cultural achievements, architectural marvels, and intricate social structures. They reflect the ability of indigenous peoples to organize and govern complex societies long before the arrival of Europeans. The history of empires in pre-Columbian America speaks to the diverse and sophisticated civilizations that flourished across the continent, each leaving a unique imprint on the historical narrative.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
@@ -3175,15 +3175,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_PROTECTIONISM</Tag>
-		<English>Protectionism</English>
-		<French>Protectionism</French>
-		<German>Protectionism</German>
-		<Italian>Protectionism</Italian>
-		<Spanish>Protectionism</Spanish>
+		<Tag>TXT_KEY_TECH_TARIFFS</Tag>
+		<English>Tariffs</English>
+		<French>Tariffs</French>
+		<German>Tariffs</German>
+		<Italian>Tariffs</Italian>
+		<Spanish>Tariffs</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_PROTECTIONISM_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_TARIFFS_QUOTE</Tag>
 		<English>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</English>
 		<French>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</French>
 		<German>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</German>
@@ -3191,7 +3191,7 @@
 		<Spanish>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_PROTECTIONISM_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_TARIFFS_PEDIA</Tag>
 		<English>Protectionism in the Americas can be traced back to the colonial era when European powers imposed mercantilist policies on their colonies, prohibiting them from trading with other countries and limiting their economic opportunities. After achieving independence, many Latin American countries continued to follow protectionist policies as a means of building up their domestic industries and protecting them from foreign competition. In the United States, protectionism emerged as a political issue in the 19th century, with advocates calling for tariffs to protect American industries from foreign competition. This protectionist sentiment continued through the early 20th century, with the passage of the Smoot-Hawley Tariff Act in 1930, which raised tariffs on imported goods to record levels, contributing to the Great Depression.[PARAGRAPH:2]In the mid-20th century, however, a shift towards free trade began, with the signing of the General Agreement on Tariffs and Trade (GATT) in 1947, which aimed to reduce trade barriers between participating countries. The GATT was later replaced by the World Trade Organization (WTO) in 1995, which continues to promote free trade policies. Despite this shift towards free trade, protectionism remains a controversial issue in the Americas, with some advocating for increased protectionism to protect domestic industries and others pushing for greater free trade policies to promote economic growth and international cooperation.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>

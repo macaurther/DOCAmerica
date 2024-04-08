@@ -2702,30 +2702,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], increases wealth in cities with access to power and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CHIEFTANS_HUT</Tag>
-		<English>Chieftan's Hut</English>
-		<French>Chieftan's Hut</French>
-		<German>Chieftan's Hut</German>
-		<Italian>Chieftan's Hut</Italian>
-		<Spanish>Chieftan's Hut</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_GOVERNORS_MANSION</Tag>
-		<English>Governor's Mansion</English>
-		<French>Governor's Mansion</French>
-		<German>Governor's Mansion</German>
-		<Italian>Governor's Mansion</Italian>
-		<Spanish>Governor's Mansion</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CAPITOL</Tag>
-		<English>Capitol</English>
-		<French>Capitol</French>
-		<German>Capitol</German>
-		<Italian>Capitol</Italian>
-		<Spanish>Capitol</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ZAPOTEC_TOMB</Tag>
 		<English>Royal Tomb</English>
 		<French>Royal Tomb</French>
@@ -2797,6 +2773,130 @@
 		<Italian>(Wikipedia) Mesoamerican pyramids form a prominent part of ancient Mesoamerican architecture. Although similar in some ways to Egyptian pyramids, these New World structures have flat tops (many with temples on the top) and stairs ascending their faces.</Italian>
 		<Spanish>(Wikipedia) Mesoamerican pyramids form a prominent part of ancient Mesoamerican architecture. Although similar in some ways to Egyptian pyramids, these New World structures have flat tops (many with temples on the top) and stairs ascending their faces.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHIEFTANS_HUT</Tag>
+		<English>Chieftan's Hut</English>
+		<French>Chieftan's Hut</French>
+		<German>Chieftan's Hut</German>
+		<Italian>Chieftan's Hut</Italian>
+		<Spanish>Chieftan's Hut</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHIEFTANS_HUT_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CHIEFTANS_HUT_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOVERNORS_RESIDENCE</Tag>
+		<English>Governor's Residence</English>
+		<French>Governor's Residence</French>
+		<German>Governor's Residence</German>
+		<Italian>Governor's Residence</Italian>
+		<Spanish>Governor's Residence</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOVERNORS_RESIDENCE_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOVERNORS_RESIDENCE_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONTINENTAL_CONGRESS</Tag>
+		<English>Continental Congress</English>
+		<French>Continental Congress</French>
+		<German>Continental Congress</German>
+		<Italian>Continental Congress</Italian>
+		<Spanish>Continental Congress</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONTINENTAL_CONGRESS_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONTINENTAL_CONGRESS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOVERNORS_MANSION</Tag>
+		<English>Governor's Mansion</English>
+		<French>Governor's Mansion</French>
+		<German>Governor's Mansion</German>
+		<Italian>Governor's Mansion</Italian>
+		<Spanish>Governor's Mansion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOVERNORS_MANSION_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOVERNORS_MANSION_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPITOL</Tag>
+		<English>Capitol</English>
+		<French>Capitol</French>
+		<German>Capitol</German>
+		<Italian>Capitol</Italian>
+		<Spanish>Capitol</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPITOL_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CAPITOL_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	
+	
+	
+	
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English>TODO</English>
