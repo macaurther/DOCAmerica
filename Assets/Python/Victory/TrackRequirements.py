@@ -605,8 +605,8 @@ class ReligionSpreads(TrackRequirement):
 			goal.check()
 	
 	def increment_religion_spreads_conquest(self, goal, city, bConquest):
-		bGloriaInDeo = player(city.getOwner()).hasCivic(iGloriaInDeo)
-		if bConquest and bGloriaInDeo:
+		bZealotry = player(city.getOwner()).hasCivic(iZealotry2)
+		if bConquest and bZealotry:
 			self.increment()
 			goal.check()
 

@@ -410,6 +410,9 @@ def freeSlaves(city, iPlayer):
 	if civ(iPlayer) == iHaiti:
 		createRoleUnit(iPlayer, city, iBase, iNumSlaves, 0)
 		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
+	elif player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation2, iEmancipation3]:
+		city.changePopulation(iNumSlaves)
+		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
 	elif player(iPlayer).canUseSlaves():
 		makeUnits(iPlayer, base_unit(iAfricanSlave3), city, iNumSlaves)
 	else:

@@ -1471,7 +1471,7 @@
 			<Description>TXT_KEY_CIVIC_OPPORTUNITY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_OPPORTUNITY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
+			<TechPrereq>TECH_PIONEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Opportunity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -1492,6 +1492,7 @@
 			<Description>TXT_KEY_CIVIC_EMANCIPATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_EMANCIPATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_EMANCIPATION_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_EMANCIPATION_HELP</Help>
 			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -2335,7 +2336,7 @@
 			<Description>TXT_KEY_CIVIC_OPPORTUNITY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_OPPORTUNITY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
+			<TechPrereq>TECH_PIONEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Opportunity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>
@@ -2356,7 +2357,8 @@
 			<Description>TXT_KEY_CIVIC_EMANCIPATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_EMANCIPATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_EMANCIPATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_PIONEERING</TechPrereq>
+			<Help>TXT_KEY_CIVIC_EMANCIPATION_HELP</Help>
+			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>

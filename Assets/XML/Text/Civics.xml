@@ -1969,6 +1969,14 @@
 		<Spanish>Extra yield from trade routes with defensive pact partners</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EMANCIPATION_HELP</Tag>
+		<English>[ICON_BULLET]Freed slaves convert to normal population</English>
+		<French>[ICON_BULLET]Freed slaves convert to normal population</French>
+		<German>[ICON_BULLET]Freed slaves convert to normal population</German>
+		<Italian>[ICON_BULLET]Freed slaves convert to normal population</Italian>
+		<Spanish>[ICON_BULLET]Freed slaves convert to normal population</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
