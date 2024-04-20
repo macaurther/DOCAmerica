@@ -701,10 +701,12 @@
 			<Description>TXT_KEY_CIVIC_NOMADS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_NOMADS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_NOMADS_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_NOMADS_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/Nomads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
+			<bMilitaryFoodProduction>1</bMilitaryFoodProduction>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>

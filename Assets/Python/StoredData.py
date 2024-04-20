@@ -239,6 +239,11 @@ class GameData:
 		
 		self.period_offsets = PeriodOffsets()
 		
+		# Migration
+		self.migrateCity = None
+		self.migrateX = -1
+		self.migrateY = -1
+		
 	def timedConquest(self, iPlayer, tPlot):
 		self.lTimedConquests.append((iPlayer, tPlot))
 		

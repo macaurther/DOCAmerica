@@ -596,7 +596,7 @@ def calculateStability(iPlayer):
 	
 	# recent expansion stability
 	iConquestModifier = 1
-	if iConquest in civics: iConquestModifier += 1
+	if iConquest1 in civics or iConquest2 in civics: iConquestModifier += 1
 	
 	iRecentExpansionStability += iRecentlyFounded
 	iRecentExpansionStability += iConquestModifier * iRecentlyConquered
@@ -616,7 +616,7 @@ def calculateStability(iPlayer):
 	# stability if not expanded beyond core with isolationism
 	iIsolationismStability = 0
 	
-	if iIsolationism in civics and iSeparatism <= 10:
+	if iIsolationism1 in civics and iSeparatism <= 10:
 		iIsolationismStability = 10
 		
 	lParameters[iParameterIsolationism] = iIsolationismStability
@@ -653,7 +653,7 @@ def calculateStability(iPlayer):
 	
 	# Economic Growth
 	iEconomicGrowthModifier = 3
-	if iFreeEnterprise in civics: iEconomicGrowthModifier = 4
+	if iFreeEnterprise3 in civics: iEconomicGrowthModifier = 4
 	
 	iEconomicGrowthStability = iEconomicGrowthModifier * calculateTrendScore(data.players[iPlayer].lEconomyTrend)
 	if iEconomicGrowthStability < 0 and iPublicWelfare in civics: iEconomicGrowthStability /= 2
@@ -839,7 +839,7 @@ def calculateStability(iPlayer):
 
 	iRelationStability = iRelationStronger + iRelationEqual + iRelationWeaker
 		
-	if iIsolationism in civics:
+	if iIsolationism1 in civics:
 		if iRelationStability < 0: iRelationStability = 0
 		if iRelationStability > 0: iRelationStability /= 2
 	

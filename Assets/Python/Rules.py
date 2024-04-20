@@ -95,6 +95,19 @@ def pioneeringAbility(city):
 		createGarrisons(city, iPlayer, 1)
 		createRoleUnit(iPlayer, city, iWork, 1)
 
+@handler("cityBuilt")
+# Providence and Manifest Destiny civics
+def extraCultureOnFound(city):
+	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
+	if iExpansionCivic in [iProvidence2, iManifestDestiny3]:
+		city.changeCulture(city.getOwner(), int(50 * (3 - gc.getGame().getGameSpeedType())), True)
+
+@handler("cityBuilt")
+# Homestead civics
+def extraCultureOnFound(city):
+	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
+	if iExpansionCivic in [iHomesteads2, iHomesteads3]:
+		city.changePopulation(1)
 
 ### COMBAT RESULT ###
 		
@@ -149,21 +162,6 @@ def mayanHolkanAbility(winningUnit, losingUnit):
 				message(iWinner, 'TXT_KEY_MAYA_HOLKAN_EFFECT', adjective(losingUnit), losingUnit.getName(), iFood, city.getName())
 				
 				events.fireEvent("combatFood", iWinner, winningUnit, iFood)
-
-
-@handler("cityBuilt")
-# Providence and Manifest Destiny civics
-def extraCultureOnFound(city):
-	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
-	if iExpansionCivic in [iProvidence2, iManifestDestiny3]:
-		city.changeCulture(city.getOwner(), int(50 * (3 - gc.getGame().getGameSpeedType())), True)
-
-@handler("cityBuilt")
-# Homestead civics
-def extraCultureOnFound(city):
-	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
-	if iExpansionCivic in [iHomesteads2, iHomesteads3]:
-		city.changePopulation(1)
 
 
 ### REVOLUTION ###
@@ -243,5 +241,108 @@ def updateLastTurnAlive(iPlayer, bAlive):
 	if not bAlive and not (player(iPlayer).isHuman() and autoplay()):
 		data.civs[iPlayer].iLastTurnAlive = game.getGameTurn()
 
+
+### PROJECT BUILT ###
+
+# Migration
+@handler("projectBuilt")
+def detectMigrateCity(pCity, iProject):
+	# MacAurther TODO: Better way than just copying every field?
+	if iProject in [iMigrateN, iMigrateNE, iMigrateE, iMigrateSE, iMigrateS, iMigrateSW, iMigrateW, iMigrateNW]:		
+		# Calculate new plot
+		iX = pCity.getX()
+		iY = pCity.getY()
+		iXNew = iX
+		iYNew = iY
+		if iProject == iMigrateN:
+			iYNew += 1
+		elif iProject == iMigrateNE:
+			iXNew += 1
+			iYNew += 1
+		elif iProject == iMigrateE:
+			iXNew += 1
+		elif iProject == iMigrateSE:
+			iXNew += 1
+			iYNew -= 1
+		elif iProject == iMigrateS:
+			iYNew -= 1
+		elif iProject == iMigrateSW:
+			iXNew -= 1
+			iYNew -= 1
+		elif iProject == iMigrateW:
+			iXNew -= 1
+		elif iProject == iMigrateNW:
+			iXNew -= 1
+			iYNew += 1
+		
+		data.migrateCity = pCity
+		data.migrateX = iXNew
+		data.migrateY = iYNew
+		
+@handler("EndPlayerTurn")
+def migrateCity(iGameTurn, iPlayer):
+	# Check if there's a city to migrate
+	if data.migrateCity == None:
+		return
+	
+	# Check to make sure the city in queue to migrate is this player's city
+	if data.migrateCity.getOwner() != iPlayer:
+		# If it's not right, then we missed the migration somehow.
+		print("WARNING - Migration missed for iPlayer: " + str(data.migrateCity.getOwner()) + " on iPlayer's turn: " + str(iPlayer))
+		# Clear migration data
+		data.migrateCity = None
+		data.migrateX = -1
+		data.migrateY = -1
+		return
+	
+	iCiv = civ(iPlayer)
+	pPlayer = player(iPlayer)
+	pCity = data.migrateCity
+	iXNew = data.migrateX
+	iYNew = data.migrateY
+	
+	# Store temp city data
+	# Don't get things like GameTurnFounded or GameTurnAcquired, we want to reset those
+	iPopulation = pCity.getPopulation()
+	iNumBuildings = pCity.getNumBuildings()
+	lBuildings = []
+	for i in xrange(gc.getNumBuildingInfos()):
+		if pCity.hasBuilding(i):
+			lBuildings.append(i)
+			if len(lBuildings) == iNumBuildings + 1:
+				break
+	iCulture = pCity.getCulture(pCity.getOwner())
+	#sName = pCity.getName()	# Actually, don't copy name, let it take the name from the city name manager
+
+	# Remove old city
+	pPlayer.disband(pCity)
+	pCity.plot().setRouteType(-1)
+	pCity.plot().setImprovementType(-1)
+	
+	# Found city
+	plot(iXNew, iYNew).setOwner(iPlayer)
+	pPlayer.found(iXNew, iYNew)
+	pNewCity = city(iXNew, iYNew)
+	if pNewCity:
+		#pNewCity.setName(sName, False)	# Actually, don't copy name, let it take the name from the city name manager
+		pNewCity.setPopulation(iPopulation + 1)
+
+		# Assign buildings to new city
+		print("lBuildings: " + str(lBuildings))
+		for iBuilding in lBuildings:
+			print("Attempting to give iBuilding: " + str(iBuilding))
+			if not pNewCity.isHasRealBuilding(iBuilding):
+				print("Giving iBuilding: " + str(iBuilding))
+				pNewCity.setHasRealBuilding(iBuilding, True)
+	
+		# Assign culture to new city
+		pNewCity.setCulture(iPlayer, iCulture, True)
+	else:
+		print("WARNING - Migration failed for iPlayer: " + str(iPlayer))
+
+	# Clear migration data
+	data.migrateCity = None
+	data.migrateX = -1
+	data.migrateY = -1
 
 ### IMPLEMENTATIONS ###

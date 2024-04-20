@@ -1450,11 +1450,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NOMADS_STRATEGY</Tag>
-		<English>Military units are built with food; cities can move</English>
-		<French>Military units are built with food; cities can move</French>
-		<German>Military units are built with food; cities can move</German>
-		<Italian>Military units are built with food; cities can move</Italian>
-		<Spanish>Military units are built with food; cities can move</Spanish>
+		<English>Military units are built with food; cities can migrate</English>
+		<French>Military units are built with food; cities can migrate</French>
+		<German>Military units are built with food; cities can migrate</German>
+		<Italian>Military units are built with food; cities can migrate</Italian>
+		<Spanish>Military units are built with food; cities can migrate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NOMADS_HELP</Tag>
+		<English>[ICON_BULLET]Cities can migrate</English>
+		<French>[ICON_BULLET]Cities can migrate</French>
+		<German>[ICON_BULLET]Cities can migrate</German>
+		<Italian>[ICON_BULLET]Cities can migrate</Italian>
+		<Spanish>[ICON_BULLET]Cities can migrate</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DIFFUSION</Tag>

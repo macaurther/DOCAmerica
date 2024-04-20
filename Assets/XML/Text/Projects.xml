@@ -326,6 +326,78 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_N</Tag>
+		<English>Migrate North</English>
+		<French>Migrate North</French>
+		<German>Migrate North</German>
+		<Italian>Migrate North</Italian>
+		<Spanish>Migrate North</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_NE</Tag>
+		<English>Migrate North East</English>
+		<French>Migrate North East</French>
+		<German>Migrate North East</German>
+		<Italian>Migrate North East</Italian>
+		<Spanish>Migrate North East</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_E</Tag>
+		<English>Migrate East</English>
+		<French>Migrate East</French>
+		<German>Migrate East</German>
+		<Italian>Migrate East</Italian>
+		<Spanish>Migrate East</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_SE</Tag>
+		<English>Migrate South East</English>
+		<French>Migrate South East</French>
+		<German>Migrate South East</German>
+		<Italian>Migrate South East</Italian>
+		<Spanish>Migrate South East</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_S</Tag>
+		<English>Migrate South</English>
+		<French>Migrate South</French>
+		<German>Migrate South</German>
+		<Italian>Migrate South</Italian>
+		<Spanish>Migrate South</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_SW</Tag>
+		<English>Migrate South West</English>
+		<French>Migrate South West</French>
+		<German>Migrate South West</German>
+		<Italian>Migrate South West</Italian>
+		<Spanish>Migrate South West</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_W</Tag>
+		<English>Migrate West</English>
+		<French>Migrate West</French>
+		<German>Migrate West</German>
+		<Italian>Migrate West</Italian>
+		<Spanish>Migrate West</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_NW</Tag>
+		<English>Migrate North West</English>
+		<French>Migrate North West</French>
+		<German>Migrate North West</German>
+		<Italian>Migrate North West</Italian>
+		<Spanish>Migrate North West</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROJECT_MIGRATE_STRATEGY</Tag>
+		<English>Moves a city in cardinal direction specified and grows the city by 1. Cost increases by the production cost of all built buildings in the city. Migrating clears production queue, growth progress, and Great People progress. Culture level is retained.</English>
+		<French>Moves a city in cardinal direction specified and grows the city by 1. Cost increases by the production cost of all built buildings in the city. Migrating clears production queue, growth progress, and Great People progress. Culture level is retained.</French>
+		<German>Moves a city in cardinal direction specified and grows the city by 1. Cost increases by the production cost of all built buildings in the city. Migrating clears production queue, growth progress, and Great People progress. Culture level is retained.</German>
+		<Italian>Moves a city in cardinal direction specified and grows the city by 1. Cost increases by the production cost of all built buildings in the city. Migrating clears production queue, growth progress, and Great People progress. Culture level is retained.</Italian>
+		<Spanish>Moves a city in cardinal direction specified and grows the city by 1. Cost increases by the production cost of all built buildings in the city. Migrating clears production queue, growth progress, and Great People progress. Culture level is retained.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROJECT_PERSECUTION</Tag>
 		<English>Persecution</English>
 		<French>

@@ -2498,6 +2498,61 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 //Speed: End Modify
 	//Rhye - end
 
+	// MacAurther: Migration
+	if (eProject > NO_PROJECT && eProject <= PROJECT_MIGRATE_NW)
+	{
+		// Don't let AI migrate (MacAurther TODO: Maybe let them do it, but add in logic for them)
+		if(!GET_PLAYER(getOwner()).isHuman()) return false;
+
+		// Make sure player has the right civic
+		if(!GET_PLAYER(getOwner()).hasCivic(CIVIC_NOMADS_NATIVE)) return false;
+
+		int iNewX = getX();
+		int iNewY = getY();
+		switch(eProject)
+		{
+			case PROJECT_MIGRATE_N:
+				iNewY += 1;
+				break;
+			case PROJECT_MIGRATE_NE:
+				iNewX += 1;
+				iNewY += 1;
+				break;
+			case PROJECT_MIGRATE_E:
+				iNewX += 1;
+				break;
+			case PROJECT_MIGRATE_SE:
+				iNewX += 1;
+				iNewY -= 1;
+				break;
+			case PROJECT_MIGRATE_S:
+				iNewY -= 1;
+				break;
+			case PROJECT_MIGRATE_SW:
+				iNewX -= 1;
+				iNewY -= 1;
+				break;
+			case PROJECT_MIGRATE_W:
+				iNewX -= 1;
+				break;
+			case PROJECT_MIGRATE_NW:
+				iNewX -= 1;
+				iNewY += 1;
+				break;
+		}
+
+		// Make sure the player is moving to a valid tile. 4 criteria (MacAurther TODO: maybe add more):
+		//   the tile is owned by the migrating player
+		//   the tile is not impassible
+		//   the tile is not water
+		//   the tile does not contain a feature other than Flood Plains
+		CvPlot* pNewPlot = GC.getMap().plot(iNewX, iNewY);
+		if(pNewPlot->getOwner() != getOwner()) return false;
+		if(pNewPlot->isImpassable()) return false;
+		if(pNewPlot->isWater()) return false;
+		if(pNewPlot->getFeatureType() > NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS) return false;
+	}
+
 	return true;
 }
 
@@ -3264,7 +3319,15 @@ int CvCity::getProductionNeeded(BuildingTypes eBuilding) const
 
 int CvCity::getProductionNeeded(ProjectTypes eProject) const
 {
-	return GET_PLAYER(getOwnerINLINE()).getProductionNeeded(eProject);
+	int iProductionNeeded = GET_PLAYER(getOwnerINLINE()).getProductionNeeded(eProject);
+
+	// MacAurther: Migration project scales based on number of buildings in city (N + 1)^2
+	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)
+	{
+		iProductionNeeded *= (1 + getNumBuildings()) * (1 + getNumBuildings());
+	}
+
+	return iProductionNeeded;
 }
 
 int CvCity::getProductionTurnsLeft() const

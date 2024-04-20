@@ -1072,7 +1072,7 @@ class ImmigrationUtils:
 		lCategoryDesire[iColonistsCat] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
 		
 		# Migrant Worker Category
-		if iImmigrantLabor in civics:
+		if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
 			lCategoryDesire[iMigrantWorkerCat] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
 		
 		# Explorers Category
