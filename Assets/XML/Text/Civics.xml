@@ -1474,11 +1474,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DIFFUSION_STRATEGY</Tag>
-		<English>Increased great people birth rate; great people can make Tribes join you</English>
-		<French>Increased great people birth rate; great people can make Tribes join you</French>
-		<German>Increased great people birth rate; great people can make Tribes join you</German>
-		<Italian>Increased great people birth rate; great people can make Tribes join you</Italian>
-		<Spanish>Increased great people birth rate; great people can make Tribes join you</Spanish>
+		<English>Increased food from Trade Routes</English>
+		<French>Increased food from Trade Routes</French>
+		<German>Increased food from Trade Routes</German>
+		<Italian>Increased food from Trade Routes</Italian>
+		<Spanish>Increased food from Trade Routes</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COOPERATION</Tag>
@@ -1511,6 +1511,14 @@
 		<German>Prevents advanced civilizations from culturally dominating</German>
 		<Italian>Prevents advanced civilizations from culturally dominating</Italian>
 		<Spanish>Prevents advanced civilizations from culturally dominating</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ANCESTRAL_LANDS_HELP</Tag>
+		<English>[ICON_BULLET]Your culture is much more resistance to losing territory</English>
+		<French>[ICON_BULLET]Your culture is much more resistance to losing territory</French>
+		<German>[ICON_BULLET]Your culture is much more resistance to losing territory</German>
+		<Italian>[ICON_BULLET]Your culture is much more resistance to losing territory</Italian>
+		<Spanish>[ICON_BULLET]Your culture is much more resistance to losing territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTAINS</Tag>

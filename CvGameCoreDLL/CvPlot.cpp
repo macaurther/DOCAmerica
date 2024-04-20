@@ -3505,6 +3505,24 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 						}
 					}
 
+					// MacAurther: Nations have cultural priority over Colonies, and each of those have priority over Natives (4/2/1)
+					switch(GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getCultureGroup())
+					{
+						case 1:
+							// Ancestral Lands civic
+							if(GET_PLAYER((PlayerTypes)iI).hasCivic(CIVIC_ANCESTRAL_LANDS_NATIVE))
+							{
+								iCulture *= 4;
+							}
+							break;
+						case 2:
+							iCulture *= 2;
+							break;
+						case 3:
+							iCulture *= 4;
+							break;
+					}
+
 					// Independents get the same advantage over a civ's core if that civ is dead
 					if (GET_PLAYER((PlayerTypes)iI).isIndependent())
 					{

@@ -718,7 +718,9 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<TradeYieldModifiers>
+				<iYield>50</iYield>
+			</TradeYieldModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -778,6 +780,7 @@
 			<Description>TXT_KEY_CIVIC_ANCESTRAL_LANDS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ANCESTRAL_LANDS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ANCESTRAL_LANDS_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_ANCESTRAL_LANDS_HELP</Help>
 			<TechPrereq>TECH_HUMANITIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/AncestralLands.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
