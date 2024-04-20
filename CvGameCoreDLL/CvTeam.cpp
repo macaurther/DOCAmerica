@@ -2738,7 +2738,7 @@ int CvTeam::getResearchCost(TechTypes eTech, bool bModifiers) const
 		iModifier += getTechLeaderModifier();
 		iModifier += getSpreadResearchModifier(eTech);
 		iModifier += getTurnResearchModifier();
-		iModifier += getModernizationResearchModifier(eTech); // Leoreth: Japanese UP (Modernization)
+		iModifier += getModernizationResearchModifier(eTech); // Leoreth: Japanese UP (Modernization) -> MacAurther: Dependency Civic
 
 		iCost *= iModifier;
 		iCost /= 100;
@@ -2915,6 +2915,34 @@ int CvTeam::getSpreadResearchModifier(TechTypes eTech) const
 
 int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 {
+	// MacAurther: Only get modernization if has the Dependency civic
+	if (!GET_PLAYER(getLeaderID()).hasCivic(CIVIC_DEPENDENCY_NATIVE)) return 0;
+
+	int iCount = 0;
+
+	for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
+	{
+		TeamTypes eTeam = GET_PLAYER((PlayerTypes)iI).getTeam();
+
+		if (GET_TEAM(eTeam).isMinorCiv())
+		{
+			continue;
+		}
+
+		if (GET_TEAM(eTeam).isHasTech(eTech) && (!isHuman() || canContact(eTeam)))
+		{
+			if (!isAtWar(eTeam))
+			{
+				iCount++;
+			}
+		}
+	}
+
+	if (iCount > 0)
+	{
+		return -50;
+	}
+
 	return 0;
 }
 

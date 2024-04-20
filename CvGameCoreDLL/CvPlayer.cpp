@@ -7379,7 +7379,7 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 	iMilitaryCost = iPaidMilitaryUnits * getGoldPerMilitaryUnit();
 
 	// MacAurther: Proprietaries Civic
-	iExtraCost = hasCivic(CIVIC_PROPRIETARIES) ? 0 : getExtraUnitCost();
+	iExtraCost = hasCivic(CIVIC_PROPRIETARIES_COLONY) ? 0 : getExtraUnitCost();
 
 	iSupport = iMilitaryCost + iBaseUnitCost + iExtraCost;
 
@@ -8031,15 +8031,6 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		long lResult=0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "canDoCivic", argsList.makeFunctionArgs(), &lResult);
 		if (lResult == 1)
-		{
-			return true;
-		}
-	}
-
-	// Iroquois UP: starts with Confederacy
-	if (getCivilizationType() == IROQUOIS)
-	{
-		if (eCivic == CIVIC_CONFEDERACY)
 		{
 			return true;
 		}
@@ -24324,7 +24315,8 @@ DenialTypes CvPlayer::AI_slaveTrade(PlayerTypes ePlayer) const
 		return NO_DENIAL;
 	}
 
-	bool bSlavery = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_LABOR) == CIVIC_SLAVERY;
+	CivicTypes eLabor = GET_PLAYER(ePlayer).getCivics(CIVICOPTION_LABOR);
+	bool bSlavery = eLabor == CIVIC_SLAVERY_NATIVE || eLabor == CIVIC_SLAVERY_COLONY || eLabor == CIVIC_SLAVERY_NATION;
 
 	// don't buy when not running Slavery
 	if (!bSlavery)
@@ -25518,7 +25510,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 {
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_ISOLATIONISM)
+		if (eCivic == CIVIC_ISOLATIONISM_NATIVE)
 		{
 			return true;
 		}
@@ -25526,7 +25518,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_CASTE_SYSTEM)
+		if (eCivic == CIVIC_SLAVERY_NATIVE || eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
 		{
 			return true;
 		}
@@ -25534,7 +25526,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_MARITIME_LAW || eCivic == CIVIC_INDENTURED_SERVITUDE || eCivic == CIVIC_MERCANTILISM)
+		if (eCivic == CIVIC_ADMIRALTY_COLONY || eCivic == CIVIC_INDENTURED_SERVITUDE_COLONY || eCivic == CIVIC_MERCANTILISM_COLONY)
 		{
 			return true;
 		}
@@ -25542,7 +25534,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_REVOLUTIONARY)
 	{
-		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_CHIEFDOM || eCivic == CIVIC_TRADITIONALISM || eCivic == CIVIC_ARISTOCRACY)
+		if (eCivic == CIVIC_ANIMISM_NATIVE || eCivic == CIVIC_CHIEFDOM_NATIVE || eCivic == CIVIC_TRADITIONALISM_NATIVE)
 		{
 			return true;
 		}
@@ -25550,7 +25542,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
 	{
-		if (eCivic == CIVIC_RECIPROCITY || eCivic == CIVIC_MERCHANT_TRADE || eCivic == CIVIC_CRAFTSMEN)
+		if (eCivic == CIVIC_RECIPROCITY_NATIVE || eCivic == CIVIC_MERCHANTS_NATIVE || eCivic == CIVIC_CRAFTSMEN_NATIVE)
 		{
 			return true;
 		}
@@ -25558,7 +25550,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)CIVIL_RIGHTS))
 	{
-		if (eCivic == CIVIC_SLAVERY || eCivic == CIVIC_CASTE_SYSTEM)
+		if (eCivic == CIVIC_SLAVERY_NATIVE || eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
 		{
 			return true;
 		}
@@ -25566,7 +25558,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)NATIONALISM))
 	{
-		if (eCivic == CIVIC_CONQUEST || eCivic == CIVIC_TRIBUTARIES)
+		if (eCivic == CIVIC_CONQUEST_NATIVE || eCivic == CIVIC_CONQUEST_COLONY || eCivic == CIVIC_TRIBUTARIES_NATIVE)
 		{
 			return true;
 		}
@@ -25574,7 +25566,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)EVANGELISM))
 	{
-		if (eCivic == CIVIC_ANIMISM || eCivic == CIVIC_COUNCIL)
+		if (eCivic == CIVIC_ANIMISM_NATIVE || eCivic == CIVIC_COUNCIL_NATIVE)
 		{
 			return true;
 		}

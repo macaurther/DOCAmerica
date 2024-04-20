@@ -251,7 +251,7 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_SLAVE_MARKET</DefaultBuilding>
+			<DefaultBuilding>BUILDING_SLAVE_MARKET_NATIVE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_WHARF</Type>

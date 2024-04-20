@@ -33,11 +33,11 @@ class Civics(object):
 		return self[infos.civic(iCivic).getCivicOptionType()] == iCivic
 	
 	@property
-	def iGovernment(self):
+	def iExecutive(self):
 		return self[0]
 	
 	@property
-	def iLegal(self):
+	def iAdministration(self):
 		return self[1]
 	
 	@property
@@ -67,7 +67,7 @@ def notcivics(*civics):
 def isCommunist(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iEconomy == iPublicWelfare and civic.iGovernment == iStateParty:
+	if civic.iEconomy == iPublicWelfare3 and civic.iExecutive == iStateParty3:
 		return True
 		
 	return False
@@ -80,10 +80,10 @@ def isAmerican(iPlayer):
 def isFascist(iPlayer):
 	civic = civics(iPlayer)
 
-	if civic.iGovernment == iDictatorship:
+	if civic.iExecutive == iDictatorship3:
 		return True
 
-	if civic.iLegal == iPoliceState and civic.iGovernment not in [iMonarchy, iStateParty]:
+	if civic.iAdministration == iPoliceState3 and civic.iExecutive not in [iMonarchy3, iStateParty3]:
 		return True
 	
 	return False
@@ -91,7 +91,7 @@ def isFascist(iPlayer):
 def isRepublic(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iGovernment == iDemocracy:
+	if civic.iExecutive == iDemocracy3:
 		return True
 	
 	return False
@@ -99,7 +99,7 @@ def isRepublic(iPlayer):
 def isCityStates(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iGovernment == iChiefdom and civ(iPlayer) in lCityStatesStart:
+	if civic.iAdministration == iCityStates1:
 		return True
 	
 	return False

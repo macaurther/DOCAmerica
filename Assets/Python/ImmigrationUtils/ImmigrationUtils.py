@@ -361,7 +361,7 @@ class ImmigrationUtils:
 			
 		mercenaryPromotionList = []
 
-                iMercenaryPromotionChance = g_iMercenaryPromotionChance + gc.getActivePlayer().getCurrentEra() #Rhye (stronger mercenaries later in the game)
+		iMercenaryPromotionChance = g_iMercenaryPromotionChance + gc.getActivePlayer().getCurrentEra() #Rhye (stronger mercenaries later in the game)
 		#print (iMercenaryPromotionChance) #Rhye
 		
 		# Go through the raw promotion list
@@ -516,11 +516,13 @@ class ImmigrationUtils:
 		civics = Civics.player(iPlayer)
 		
 		# Get Slave available
-		if iSlavery in civics:
-			colonistsDict = self.addAvailableUnit(iAfricanSlave, colonistsDict)
+		if iSlavery2 in civics:
+			colonistsDict = self.addAvailableUnit(iAfricanSlave2, colonistsDict)
+		elif iSlavery3 in civics:
+			colonistsDict = self.addAvailableUnit(iAfricanSlave3, colonistsDict)
 		
 		# Get Migrant Worker available
-		if iImmigrantLabor in civics:
+		if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
 			colonistsDict = self.addAvailableUnit(iMigrantWorker, colonistsDict)
 		
 		return colonistsDict
@@ -1063,7 +1065,7 @@ class ImmigrationUtils:
 			lCategoryDesire[iGreatPeopleCat] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
 		
 		# Slave Category
-		if iSlavery in civics:
+		if iSlavery1 in civics or iSlavery2 in civics or iSlavery3 in civics:
 			lCategoryDesire[iSlavesCat] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
 		
 		# Colonist Category
@@ -1307,6 +1309,7 @@ class Mercenary:
 		# get the player instance
 		player = gc.getPlayer(iPlayer)
 		iCiv = civ(iPlayer)
+		civics = Civics.player(iPlayer)
 		
 		# return nothing if the iPlayer is an invalid value
 		if(player == None):
@@ -1365,6 +1368,10 @@ class Mercenary:
 		if iGoldCost > 0:
 			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_MERCENARY")))
 		
+		if iConquest2 in civics:
+			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_COMBAT1")))
+			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_COMBAT2")))
+		
 		# Apply of the promotions to the mercenary in the game
 		self.applyPromotions()
 
@@ -1411,15 +1418,17 @@ class Mercenary:
 			bIntervention = False
 			bProprietaries = False
 			bIndenturedServitude = False
+			bPenalColony = False
 		else:
 			# Get the actual current player object
 			player = gc.getPlayer(iPlayer)
 			civics = Civics.player(iPlayer)
 			iCurrentImmigration = player.getImmigration()
-			bDecolonization = iDecolonization in civics
-			bIntervention = iIntervention in civics
-			bProprietaries = iProprietaries in civics
-			bIndenturedServitude = iIndenturedServitude in civics
+			bDecolonization = iDecolonization3 in civics
+			bIntervention = iIntervention2 in civics
+			bProprietaries = iProprietaries2 in civics
+			bIndenturedServitude = iIndenturedServitude2 in civics
+			bPenalColony = iPenalColony2 in civics
 			
 		# if the self.objUnitInfo is actually set then get the latest cost to hire the mercenary.
 		if(self.objUnitInfo != None):
@@ -1437,7 +1446,7 @@ class Mercenary:
 			iImmigrationCost *= 30
 		
 		# Scale by game speed
-		iImmigrationCost *= (3 - gc.getGame().getGameSpeedType()) 
+		iImmigrationCost *= (3 - gc.getGame().getGameSpeedType())
 		
 		# Increase Immigrant cost by 20% for each time this Civ has hired from category that before
 		if iPlayer > -1:
@@ -1446,11 +1455,14 @@ class Mercenary:
 		iImmigrationCostModifier = 100
 		
 		if bDecolonization:
-			iImmigrationCostModifier += 50
+			iImmigrationCostModifier += 25
 		elif bIntervention:
+			iImmigrationCostModifier -= 25
+		
+		if bIndenturedServitude and self.getUnitInfoID() in lWorkers:
 			iImmigrationCostModifier -= 50
 		
-		if bIndenturedServitude and self.getUnitInfoID() in (lSettlers + lWorkers + lMissionaries + lColonists):
+		if bPenalColony and self.getUnitInfoID() == iColonist:
 			iImmigrationCostModifier -= 50
 		
 		iImmigrationCost *= iImmigrationCostModifier

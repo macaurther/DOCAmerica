@@ -162,7 +162,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_DEMOCRACY</CivicType>
+					<CivicType>CIVIC_DEMOCRACY_NATION</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -194,7 +194,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_PUBLIC_WELFARE</CivicType>
+					<CivicType>CIVIC_PUBLIC_WELFARE_NATION</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>
@@ -226,7 +226,7 @@
 			<bAssignCity>0</bAssignCity>
 			<ForceCivics>
 				<ForceCivic>
-					<CivicType>CIVIC_MULTICULTURALISM</CivicType>
+					<CivicType>CIVIC_EGALITARIANISM_NATION</CivicType>
 					<bForce>1</bForce>
 				</ForceCivic>
 			</ForceCivics>

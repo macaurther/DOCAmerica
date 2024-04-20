@@ -6,7 +6,7 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=75,
-		lCivics=[iCaptives],
+		lCivics=[iCaptives1],
 		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, iHerbalism)
 	),
 	Civilization(

@@ -41,6 +41,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>1</iCommerce>
 			</ObsoleteSafeCommerceChanges>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClass>
@@ -78,6 +79,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClass>
@@ -115,6 +117,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
@@ -152,6 +155,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</ObsoleteSafeCommerceChanges>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
@@ -190,6 +194,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
@@ -228,6 +233,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>8</iCommerce>
 			</ObsoleteSafeCommerceChanges>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
@@ -2218,14 +2224,13 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_SLAVE_MARKET</BuildingClass>
-			<Type>BUILDING_SLAVE_MARKET</Type>
+			<Type>BUILDING_SLAVE_MARKET_NATIVE</Type>
 			<Description>TXT_KEY_BUILDING_SLAVE_MARKET</Description>
 			<Civilopedia>TXT_KEY_BUILDING_SLAVE_MARKET_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_MARKET</ArtDefineTag>
-			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
-			<PrereqCivic>CIVIC_SLAVERY</PrereqCivic>
+			<PrereqCivic>CIVIC_SLAVERY_NATIVE</PrereqCivic>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2254,6 +2259,85 @@
 					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_SLAVE_MARKET</BuildingClass>
+			<Type>BUILDING_SLAVE_MARKET_COLONY</Type>
+			<Description>TXT_KEY_BUILDING_SLAVE_MARKET</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SLAVE_MARKET_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_MARKET</ArtDefineTag>
+			<PrereqCivic>CIVIC_SLAVERY_COLONY</PrereqCivic>
+			<bNeverCapture>1</bNeverCapture>
+			<iCost>80</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iAsset>2</iAsset>
+			<iPower>3</iPower>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildingInfo>
+		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_SLAVE_MARKET</BuildingClass>
+			<Type>BUILDING_SLAVE_MARKET_NATION</Type>
+			<Description>TXT_KEY_BUILDING_SLAVE_MARKET</Description>
+			<Civilopedia>TXT_KEY_BUILDING_SLAVE_MARKET_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_SLAVE_MARKET_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_SLAVE_MARKET</ArtDefineTag>
+			<PrereqCivic>CIVIC_SLAVERY_NATION</PrereqCivic>
+			<bNeverCapture>1</bNeverCapture>
+			<iCost>80</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iAsset>2</iAsset>
+			<iPower>3</iPower>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<ConstructSound>AS2D_BUILD_MARKETPLACE</ConstructSound>
+			<CommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
+			</CommerceChanges>
+			<CommerceModifiers>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GROWTH</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>5</iFlavor>
+				</Flavor>
+			</Flavors>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_WHARF</BuildingClass>
@@ -9477,7 +9561,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STATUE_OF_LIBERTY</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_STATUE_OF_LIBERTY</MovieDefineTag>
-			<PrereqCivic>CIVIC_OPPORTUNITY</PrereqCivic>
+			<PrereqCivic>CIVIC_OPPORTUNITY_NATION</PrereqCivic>
 			<PrereqTech>TECH_JOURNALISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

@@ -176,7 +176,7 @@ def americanWesternSettlement(iTech, iTeam, iPlayer):
 ### COLLAPSE ###
 @handler("civicChanged")
 def doAmericanCivilWar(iPlayer, iOldCivic, iNewCivic):
-	if civ(iPlayer) == iAmerica and iOldCivic == iSlavery:
+	if civ(iPlayer) == iAmerica and iOldCivic == iSlavery3:
 		secedeCitiesByRegions(iPlayer, lSouthernUS, slot(iIndependent))
 		
 		# Let the player decided whether or not to declare war, but make the AI declare war on secession

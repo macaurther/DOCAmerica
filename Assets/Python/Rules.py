@@ -105,11 +105,11 @@ def captureSlaves(winningUnit, losingUnit):
 
 	# Mesoamerica RP
 	if civ(winningUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
-		captureUnit(losingUnit, winningUnit, iNativeSlave, 50)
+		captureUnit(losingUnit, winningUnit, iNativeSlave1, 50)
 		return
 	
 	if civ(losingUnit) == iNative and winningUnit.getUnitType() == iBandeirante and player(winningUnit).canUseSlaves():
-		captureUnit(losingUnit, winningUnit, iNativeSlave, 100)
+		captureUnit(losingUnit, winningUnit, iNativeSlave2, 100)
 		return
 	
 	if players.major().alive().none(lambda p: team(p).isHasTech(iOldWorldTactics)):
@@ -118,7 +118,7 @@ def captureSlaves(winningUnit, losingUnit):
 	if civ(losingUnit) == iNative:
 		if civ(winningUnit) not in lBioNewWorld or any(data.dFirstContactConquerors.values()):
 			if player(winningUnit).isSlavery() or player(winningUnit).isColonialSlavery():
-				captureUnit(losingUnit, winningUnit, iNativeSlave, 50)
+				captureUnit(losingUnit, winningUnit, iNativeSlave2, 50)
 
 @handler("combatResult")
 def captureCannon(winningUnit, losingUnit):
@@ -151,6 +151,21 @@ def mayanHolkanAbility(winningUnit, losingUnit):
 				events.fireEvent("combatFood", iWinner, winningUnit, iFood)
 
 
+@handler("cityBuilt")
+# Providence and Manifest Destiny civics
+def extraCultureOnFound(city):
+	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
+	if iExpansionCivic in [iProvidence2, iManifestDestiny3]:
+		city.changeCulture(city.getOwner(), int(50 * (3 - gc.getGame().getGameSpeedType())), True)
+
+@handler("cityBuilt")
+# Homestead civics
+def extraCultureOnFound(city):
+	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
+	if iExpansionCivic in [iHomesteads2, iHomesteads3]:
+		city.changePopulation(1)
+
+
 ### REVOLUTION ###
 
 @handler("revolution")
@@ -163,7 +178,7 @@ def validateSlaves(iPlayer):
 		for city in cities.owner(iPlayer):
 			city.setFreeSpecialistCount(iSpecialistSlave, 0)
 				
-		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) == iAfricanSlave):
+		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) in [iAfricanSlave2, iAfricanSlave3]):
 			slave.kill(False, iPlayer)
 
 

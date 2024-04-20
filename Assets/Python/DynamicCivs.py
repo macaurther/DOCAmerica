@@ -723,15 +723,15 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_NETHERLANDS_UNITED_KINGDOM_OF"
 	
 	elif iCiv == iCanada:
-		if civic.iGovernment == iTradeCompany:
+		if civic.iExecutive == iTradeCompany2:
 			return "TXT_KEY_CIV_CANADA_RUPERTS"
 	
 	elif iCiv == iAmerica:
-		if civic.iLabor == iSlavery:
+		if civic.iLabor == iSlavery3:
 			if isControlled(iPlayer, plots.region(rMesoamerica)) and isControlled(iPlayer, plots.region(rCaribbean)):
 				return "TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE"
 			
-			if civic.iLegal == iConfederacy:
+			if civic.iAdministration == iConfederacy3:
 				return "TXT_KEY_CIV_AMERICA_CSA"
 	
 	elif iCiv == iColombia:

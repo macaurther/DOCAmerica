@@ -91,11 +91,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_MODERNIZATION_MODIFIER</Tag>
-		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Modernization:[COLOR_REVERT]</English>
-		<French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Modernisation :[COLOR_REVERT]</French>
-		<German> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Modernisierung:[COLOR_REVERT]</German>
-		<Italian> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Modernization:[COLOR_REVERT]</Italian>
-		<Spanish> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Modernization:[COLOR_REVERT]</Spanish>
+		<English> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Dependency:[COLOR_REVERT]</English>
+		<French> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Dependency :[COLOR_REVERT]</French>
+		<German> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Dependency:[COLOR_REVERT]</German>
+		<Italian> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Dependency:[COLOR_REVERT]</Italian>
+		<Spanish> [ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Dependency:[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SPAWN_MODIFIER</Tag>
@@ -3513,6 +3513,14 @@
 		<Spanish>An American coup has succeeded in %s1.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_ELDERS</Tag>
+		<English>"We Love the Elders Day"</English>
+		<French>"We Love the Elders Day"</French>
+		<German>"We Love the Elders Day"</German>
+		<Italian>"We Love the Elders Day"</Italian>
+		<Spanish>"We Love the Elders Day"</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_WE_LOVE_CHIEF</Tag>
 		<English>"We Love the Chief Day"</English>
 		<French>"We Love the Chief Day"</French>
@@ -3521,12 +3529,132 @@
 		<Spanish>"We Love the Chief Day"</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_DESPOT</Tag>
+		<English>"We Love the Despot Day"</English>
+		<French>"We Love the Despot Day"</French>
+		<German>"We Love the Despot Day"</German>
+		<Italian>"We Love the Despot Day"</Italian>
+		<Spanish>"We Love the Despot Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_MONARCH</Tag>
+		<English>"We Love the King Day"</English>
+		<French>"We Love the King Day"</French>
+		<German>"We Love the King Day"</German>
+		<Italian>"We Love the King Day"</Italian>
+		<Spanish>"We Love the King Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_COUNCIL</Tag>
+		<English>"We Love the Council Day"</English>
+		<French>"We Love the Council Day"</French>
+		<German>"We Love the Council Day"</German>
+		<Italian>"We Love the Council Day"</Italian>
+		<Spanish>"We Love the Council Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_NOBLES</Tag>
+		<English>"We Love the Nobles Day"</English>
+		<French>"We Love the Nobles Day"</French>
+		<German>"We Love the Nobles Day"</German>
+		<Italian>"We Love the Nobles Day"</Italian>
+		<Spanish>"We Love the Nobles Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_GOD_KING</Tag>
+		<English>"We Love the God King Day"</English>
+		<French>"We Love the God King Day"</French>
+		<German>"We Love the God King Day"</German>
+		<Italian>"We Love the God King Day"</Italian>
+		<Spanish>"We Love the God King Day"</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_WE_LOVE_CAPTAIN</Tag>
 		<English>"We Love the Captain Day"</English>
 		<French>"We Love the Captain Day"</French>
 		<German>"We Love the Captain Day"</German>
 		<Italian>"We Love the Captain Day"</Italian>
 		<Spanish>"We Love the Captain Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_VICEROY</Tag>
+		<English>"We Love the Viceroy Day"</English>
+		<French>"We Love the Viceroy Day"</French>
+		<German>"We Love the Viceroy Day"</German>
+		<Italian>"We Love the Viceroy Day"</Italian>
+		<Spanish>"We Love the Viceroy Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_PROPRIETARIES</Tag>
+		<English>"We Love the Proprietors Day"</English>
+		<French>"We Love the Proprietors Day"</French>
+		<German>"We Love the Proprietors Day"</German>
+		<Italian>"We Love the Proprietors Day"</Italian>
+		<Spanish>"We Love the Proprietors Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_TRUSTEES</Tag>
+		<English>"We Love the Board Day"</English>
+		<French>"We Love the Board Day"</French>
+		<German>"We Love the Board Day"</German>
+		<Italian>"We Love the Board Day"</Italian>
+		<Spanish>"We Love the Board Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_GOVERNOR</Tag>
+		<English>"We Love the Governor Day"</English>
+		<French>"We Love the Governor Day"</French>
+		<German>"We Love the Governor Day"</German>
+		<Italian>"We Love the Governor Day"</Italian>
+		<Spanish>"We Love the Governor Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_DELEGATE</Tag>
+		<English>"We Love the Delegate Day"</English>
+		<French>"We Love the Delegate Day"</French>
+		<German>"We Love the Delegate Day"</German>
+		<Italian>"We Love the Delegate Day"</Italian>
+		<Spanish>"We Love the Delegate Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_PRIME_MINISTER</Tag>
+		<English>"We Love the Prime Minister Day"</English>
+		<French>"We Love the Prime Minister Day"</French>
+		<German>"We Love the Prime Minister Day"</German>
+		<Italian>"We Love the Prime Minister Day"</Italian>
+		<Spanish>"We Love the Prime Minister Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_GENERAL</Tag>
+		<English>"We Love the General Day"</English>
+		<French>"We Love the General Day"</French>
+		<German>"We Love the General Day"</German>
+		<Italian>"We Love the General Day"</Italian>
+		<Spanish>"We Love the General Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_ROBBER_BARONS</Tag>
+		<English>"We Love the Captains of Industry Day"</English>
+		<French>"We Love the Captains of Industry Day"</French>
+		<German>"We Love the Captains of Industry Day"</German>
+		<Italian>"We Love the Captains of Industry Day"</Italian>
+		<Spanish>"We Love the Captains of Industry Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</Tag>
+		<English>"We Love the President Day"</English>
+		<French>"We Love the President Day"</French>
+		<German>"We Love the President Day"</German>
+		<Italian>"We Love the President Day"</Italian>
+		<Spanish>"We Love the President Day"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_WE_LOVE_DICTATOR</Tag>
+		<English>"We Love the Glorious Leader Day"</English>
+		<French>"We Love the Glorious Leader Day"</French>
+		<German>"We Love the Glorious Leader Day"</German>
+		<Italian>"We Love the Glorious Leader Day"</Italian>
+		<Spanish>"We Love the Glorious Leader Day"</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_WE_LIKE_PARTY</Tag> <!-- Easter Egg? -->

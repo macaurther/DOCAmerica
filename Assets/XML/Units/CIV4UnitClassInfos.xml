@@ -604,7 +604,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_AFRICAN_SLAVE</DefaultUnit>
+			<DefaultUnit>UNIT_AFRICAN_SLAVE_COLONY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_NATIVE_SLAVE</Type>
@@ -612,7 +612,7 @@
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_NATIVE_SLAVE</DefaultUnit>
+			<DefaultUnit>UNIT_NATIVE_SLAVE_NATIVE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_MIGRANT_WORKER</Type>

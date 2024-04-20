@@ -2591,7 +2591,7 @@ class CvMainInterface:
 						iCount = iCount + 1
 					
 					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerica RP
-					if pUnit.getUnitType() == iNativeSlave and civ(pUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
+					if pUnit.getUnitType() == iNativeSlave1 and civ(pUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
 						plot = plot_(pUnit)
 						if plot.isCity():
 							city = plot.getPlotCity()

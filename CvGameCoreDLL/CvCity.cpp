@@ -327,22 +327,13 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	// MacAurther: Starting population per era:
 	//  Ancient:		1
-	//  Classical:		2
-	//  Exploration:    2
-	//  Colonial:       3
-	//  Revolutionary:  3
-	//  Industrial:     4
+	//  Classical:		1
+	//  Exploration:    1
+	//  Colonial:       1
+	//  Revolutionary:  2
+	//  Industrial:     2
 	int iCurrentEra = GET_PLAYER(eOwner).getCurrentEra();
-	int iExtraPopulation = iCurrentEra > 0 ? (iCurrentEra + 1) / 2 : 0;
-
-	// MacAurther: No extra population for colonies
-	/*if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)EXPLORATION))
-	{
-		if (isColony())
-		{
-			iExtraPopulation += 1;
-		}
-	}*/
+	int iExtraPopulation = iCurrentEra > ERA_COLONIAL ? 1 : 0;
 
 	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
 	//changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPop);
@@ -2136,7 +2127,7 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 	}
 
 	// Leoreth: can't train slaves -> MacAurther: Actually now you can with a Slave Market, but you can't train Colonists or Migrant Workers
-	if (eUnit == UNIT_NATIVE_SLAVE|| eUnit == UNIT_COLONIST || eUnit == UNIT_MIGRANT_WORKER)
+	if (eUnit == UNIT_COLONIST || eUnit == UNIT_MIGRANT_WORKER)
 	{
 		return false;
 	}

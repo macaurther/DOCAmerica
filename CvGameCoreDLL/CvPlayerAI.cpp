@@ -10743,89 +10743,6 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		}
 	}
 
-	// Leoreth: trade slaves and use in colonies
-	/*if (kCivic.isColonialSlavery())
-	{
-		iValue += countRequiredSlaves() * 50 / 15;
-	}*/
-
-	// Leoreth: some stability related AI help
-	if (eCivic == CIVIC_OPPORTUNITY || eCivic == CIVIC_MULTICULTURALISM)
-	{
-		if (getStabilityParameter(PARAMETER_RELIGION) < 0)
-		{
-			iValue += 15 * -getStabilityParameter(PARAMETER_RELIGION);
-		}
-	}
-	else if (eCivic == CIVIC_INDUSTRIALISM)
-	{
-		if (getStabilityParameter(PARAMETER_ECONOMIC_GROWTH) < 15)
-		{
-			iValue += 200;
-		}
-	}
-	else if (eCivic == CIVIC_ISOLATIONISM)
-	{
-		if (getStabilityParameter(PARAMETER_RELATIONS) < -10)
-		{
-			iValue += -20 * getStabilityParameter(PARAMETER_RELATIONS);
-		}
-	}
-	else if (eCivic == CIVIC_PUBLIC_WELFARE)
-	{
-		if (getStabilityParameter(PARAMETER_ECONOMIC_GROWTH) < 0)
-		{
-			iValue += 5 * -getStabilityParameter(PARAMETER_ECONOMIC_GROWTH);
-		}
-	}
-	else if (eCivic == CIVIC_COUNCIL)
-	{
-		if (getCurrentEra() >= ERA_INDUSTRIAL)
-		{
-			iValue *= 3;
-			iValue /= 4;
-		}
-	}
-	else if (eCivic == CIVIC_CASTE_SYSTEM)
-	{
-		if (getCurrentEra() >= ERA_REVOLUTIONARY)
-		{
-			iValue /= 2;
-		}
-	}
-	else if (eCivic == CIVIC_MERCHANT_TRADE)
-	{
-		if (getCurrentEra() >= ERA_EXPLORATION)
-		{
-			iValue /= 2;
-		}
-	}
-
-	// Leoreth: boost some modern civics as soon as available
-	switch (eCivic)
-	{
-	case CIVIC_REPUBLIC:
-	case CIVIC_FEDERALISM:
-	case CIVIC_CONFEDERACY:
-	case CIVIC_INDUSTRIALISM:
-	case CIVIC_FREE_ENTERPRISE:
-	case CIVIC_CONSUMERISM:
-	case CIVIC_PUBLIC_WELFARE:
-	case CIVIC_NATIONHOOD:
-		iValue *= 6;
-		iValue /= 5;
-		break;
-	case CIVIC_OPPORTUNITY:
-	case CIVIC_MULTICULTURALISM:
-		if (getCurrentEra() >= ERA_INDUSTRIAL)
-		{
-			iValue *= 6;
-			iValue /= 5;
-		}
-	default:
-		break;
-	}
-
 	if (GC.getLeaderHeadInfo(getPersonalityType()).getFavoriteCivic() == eCivic)
 	{
 		if (!kCivic.isStateReligion() || iHighestReligionCount > 0)
@@ -10834,27 +10751,6 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 			iValue /= 4;
 			iValue += 6 * getNumCities();
 			iValue += 20;
-		}
-	}
-
-	// Leoreth: prefer deification if no state religion
-	if (eCivic == CIVIC_COUNCIL)
-	{
-		switch (getLastStateReligion())
-		{
-		case NO_RELIGION:
-			if (getCurrentEra() <= ERA_COLONIAL)
-			{
-				iValue *= 2;
-			}
-			break;
-		case JUDAISM:
-		case ORTHODOXY:
-		case CATHOLICISM:
-		case PROTESTANTISM:
-		case ISLAM:
-			iValue /= 5;
-			break;
 		}
 	}
 
@@ -10867,11 +10763,6 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 	if (AI_isDoStrategy(AI_STRATEGY_CULTURE2) && (GC.getCivicInfo(eCivic).isNoNonStateReligionSpread()))
 	{
 	    iValue /= 10;
-	}
-
-	if (eCivic == CIVIC_MONARCHY && getCivilizationType() == NETHERLANDS)
-	{
-		iValue /= 2;
 	}
 
 	return iValue;

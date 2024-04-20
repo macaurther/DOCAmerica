@@ -477,10 +477,12 @@ class CvCivicsScreen:
 	def update(self, fDelta):
 		return
 
+# MacAurther TODO: Now that there 1 unique civic for each slot for each culture group, simplify this
 def isDefaultCivic(iCivic):
-	iIndex = 0
+	return iCivic % iNumCivicsPerCategory == 0
+	'''iIndex = 0
 	for iCategory in range(iNumCivicCategories):
 		if iCivic < iIndex + lCivicDefaultsInCateogry[iCategory] and iCivic >= iIndex:
 			return True
 		iIndex += lCivicCountInCategory[iCategory]
-	return False;
+	return False;'''

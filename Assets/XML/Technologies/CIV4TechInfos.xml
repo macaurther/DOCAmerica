@@ -1697,7 +1697,7 @@
 			<Description>TXT_KEY_TECH_OLD_WORLD_TACTICS</Description>
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_TACTICS_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
-			<iCost>2500</iCost>
+			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>4</iAsset>
@@ -1732,7 +1732,7 @@
 			<Description>TXT_KEY_TECH_OLD_WORLD_SCIENCE</Description>
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_SCIENCE_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<iCost>2500</iCost>
+			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>4</iAsset>
@@ -1768,7 +1768,7 @@
 			<Civilopedia>TXT_KEY_TECH_OLD_WORLD_CULTURE_PEDIA</Civilopedia>
 			<Help>TXT_KEY_TECH_OLD_WORLD_CULTURE_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<iCost>2500</iCost>
+			<iCost>5000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
 			<iAsset>4</iAsset>

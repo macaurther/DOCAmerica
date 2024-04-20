@@ -22,12 +22,20 @@
 		<Spanish>Society</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVICOPTION_LEGAL</Tag>
-		<English>Legal</English>
-		<French>Legal</French>
-		<German>Legal</German>
-		<Italian>Legal</Italian>
-		<Spanish>Legal</Spanish>
+		<Tag>TXT_KEY_CIVICOPTION_ADMINISTRATION</Tag>
+		<English>Administration</English>
+		<French>Administration</French>
+		<German>Administration</German>
+		<Italian>Administration</Italian>
+		<Spanish>Administration</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVICOPTION_EXECUTIVE</Tag>
+		<English>Executive</English>
+		<French>Executive</French>
+		<German>Executive</German>
+		<Italian>Executive</Italian>
+		<Spanish>Executive</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_LABOR</Tag>
@@ -51,11 +59,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SOVEREIGNTY_STRATEGY</Tag>
-		<English>The most primitive Expansion civic</English>
-		<French>The most primitive Expansion civic</French>
-		<German>The most primitive Expansion civic</German>
-		<Italian>The most primitive Expansion civic</Italian>
-		<Spanish>The most primitive Expansion civic</Spanish>
+		<English>Faster military unit production; no war unhappiness</English>
+		<French>Faster military unit production; no war unhappiness</French>
+		<German>Faster military unit production; no war unhappiness</German>
+		<Italian>Faster military unit production; no war unhappiness</Italian>
+		<Spanish>Faster military unit production; no war unhappiness</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ANIMISM</Tag>
@@ -94,6 +102,14 @@
 		<Spanish>Increased culture in all cities; increased cost to hire Immigrants; extra XP within borders</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DECOLONIZATION_HELP</Tag>
+		<English>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</English>
+		<French>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</French>
+		<German>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</German>
+		<Italian>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</Italian>
+		<Spanish>[ICON_BULLET]+25%[ICON_IMMIGRATION] required to hire immigrants</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INTERVENTION</Tag>
 		<English>Intervention</English>
 		<French>Intervention</French>
@@ -110,6 +126,14 @@
 		<Spanish>Increased commerce in all cities; reduced cost to hire Immigrants</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_INTERVENTION_HELP</Tag>
+		<English>[ICON_BULLET]-25%[ICON_IMMIGRATION] required to hire immigrants</English>
+		<French>[ICON_BULLET]-25%[ICON_IMMIGRATION] required to hire immigrants</French>
+		<German>[ICON_BULLET]-25%[ICON_IMMIGRATION] required to hire immigrants</German>
+		<Italian>[ICON_BULLET]-25%[ICON_IMMIGRATION] required to hire immigrants</Italian>
+		<Spanish>[ICON_BULLET]-25%[ICON_IMMIGRATION] required to hire immigrants</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE</Tag>
 		<English>Public Welfare</English>
 		<French>
@@ -123,11 +147,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE_STRATEGY</Tag>
-		<English>Reduced unhappiness from corporations; extra commerce from excess happiness; extra commerce from Windmills, Nature Preserves and Marine Preserves; can spend gold to finish building production</English>
-		<French>Le m&#233;contentement li&#233; aux soci&#233;t&#233;s commerciales est r&#233;duit ; le bonheur en exc&#232;s rapporte du commerce ; les moulins &#224; vent, les r&#233;serves naturelles et les aires marines prot&#233;g&#233;es rapportent du commerce ; vous pouvez d&#233;penser de l'or pour acc&#233;l&#233;rer la construction de b&#226;timents</French>
-		<German>Reduced unhappiness from corporations; extra commerce from excess happiness; extra commerce from Windmills, Nature Preserves and Marine Preserves; can spend gold to finish building production</German>
-		<Italian>Reduced unhappiness from corporations; extra commerce from excess happiness; extra commerce from Windmills, Nature Preserves and Marine Preserves; can spend gold to finish building production</Italian>
-		<Spanish>Reduced unhappiness from corporations; extra commerce from excess happiness; extra commerce from Windmills, Nature Preserves and Marine Preserves; can spend gold to finish building production</Spanish>
+		<English>Reduced unhappiness from corporations; extra commerce from excess happiness</English>
+		<French>Reduced unhappiness from corporations; extra commerce from excess happiness</French>
+		<German>Reduced unhappiness from corporations; extra commerce from excess happiness</German>
+		<Italian>Reduced unhappiness from corporations; extra commerce from excess happiness</Italian>
+		<Spanish>Reduced unhappiness from corporations; extra commerce from excess happiness</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE_HELP</Tag>
@@ -136,22 +160,6 @@
 		<German>[ICON_BULLET]Halves instabilty from economic recession</German>
 		<Italian>[ICON_BULLET]Halves instabilty from economic recession</Italian>
 		<Spanish>[ICON_BULLET]Halves instabilty from economic recession</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_SPOILS_SYSTEM</Tag>
-		<English>Spoils System</English>
-		<French>Spoils System</French>
-		<German>Spoils System</German>
-		<Italian>Spoils System</Italian>
-		<Spanish>Spoils System</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_SPOILS_SYSTEM_STRATEGY</Tag>
-		<English>At least one Statesman; one free specialist in each Core city; extra income from trade routes going through your capital</English>
-		<French>At least one Statesman; one free specialist in each Core city; extra income from trade routes going through your capital</French>
-		<German>At least one Statesman; one free specialist in each Core city; extra income from trade routes going through your capital</German>
-		<Italian>At least one Statesman; one free specialist in each Core city; extra income from trade routes going through your capital</Italian>
-		<Spanish>At least one Statesman; one free specialist in each Core city; extra income from trade routes going through your capital</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_POLICE_STATE</Tag>
@@ -163,27 +171,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_POLICE_STATE_STRATEGY</Tag>
-		<English>Extra military unit production; can hurry production by sacrificing population</English>
-		<French>Extra military unit production; can hurry production by sacrificing population</French>
-		<German>Extra military unit production; can hurry production by sacrificing population</German>
-		<Italian>Extra military unit production; can hurry production by sacrificing population</Italian>
-		<Spanish>Extra military unit production; can hurry production by sacrificing population</Spanish>
+		<English>Increased espionage in all cities; can hurry production by sacrificing population</English>
+		<French>Increased espionage in all cities; can hurry production by sacrificing population</French>
+		<German>Increased espionage in all cities; can hurry production by sacrificing population</German>
+		<Italian>Increased espionage in all cities; can hurry production by sacrificing population</Italian>
+		<Spanish>Increased espionage in all cities; can hurry production by sacrificing population</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Tag>
-		<English>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</English>
-		<French>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</French>
-		<German>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</German>
-		<Italian>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</Italian>
-		<Spanish>Faster worker construction speed; extra commerce from Plantations; can buy Slaves</Spanish>
+		<English>Can buy Slaves</English>
+		<French>Can buy Slaves</French>
+		<German>Can buy Slaves</German>
+		<Italian>Can buy Slaves</Italian>
+		<Spanish>Can buy Slaves</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY_HELP</Tag>
-		<English>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</English>
-		<French>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</French>
-		<German>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</German>
-		<Italian>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</Italian>
-		<Spanish>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]</Spanish>
+		<English>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]
+[ICON_BULLET]Can build Slave Markets</English>
+		<French>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]
+[ICON_BULLET]Can build Slave Markets</French>
+		<German>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]
+[ICON_BULLET]Can build Slave Markets</German>
+		<Italian>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]
+[ICON_BULLET]Can build Slave Markets</Italian>
+		<Spanish>[ICON_BULLET]Can buy Slaves using [ICON_IMMIGRATION]
+[ICON_BULLET]Can build Slave Markets</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHIEFDOM</Tag>
@@ -199,11 +212,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHIEFDOM_STRATEGY</Tag>
-		<English>The most primitive Government civic</English>
-		<French>La doctrine gouvernementale la plus primitive</French>
-		<German>The most primitive Government civic</German>
-		<Italian>The most primitive Government civic</Italian>
-		<Spanish>The most primitive Government civic</Spanish>
+		<English>Extra health in cities</English>
+		<French>Extra health in cities</French>
+		<German>Extra health in cities</German>
+		<Italian>Extra health in cities</Italian>
+		<Spanish>Extra health in cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY</Tag>
@@ -215,11 +228,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Tag>
-		<English>Military garrisons provide happiness; extra food in capital</English>
-		<French>Military garrisons provide happiness; extra food in capital</French>
-		<German>Military garrisons provide happiness; extra food in capital</German>
-		<Italian>Military garrisons provide happiness; extra food in capital</Italian>
-		<Spanish>Military garrisons provide happiness; extra food in capital</Spanish>
+		<English>Military garrisons provide happiness</English>
+		<French>Military garrisons provide happiness</French>
+		<German>Military garrisons provide happiness</German>
+		<Italian>Military garrisons provide happiness</Italian>
+		<Spanish>Military garrisons provide happiness</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AUTHORITY</Tag>
@@ -235,11 +248,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AUTHORITY_STRATEGY</Tag>
-		<English>The most primitive Legitimacy civic</English>
-		<French>La doctrine de l&#233;gitimit&#233; la plus primitive</French>
-		<German>The most primitive Legitimacy civic</German>
-		<Italian>The most primitive Legitimacy civic</Italian>
-		<Spanish>The most primitive Legitimacy civic</Spanish>
+		<English>The most primitive Administration civic</English>
+		<French>The most primitive Administration civic</French>
+		<German>The most primitive Administration civic</German>
+		<Italian>The most primitive Administration civic</Italian>
+		<Spanish>The most primitive Administration civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DEMOCRACY</Tag>
@@ -255,27 +268,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Tag>
-		<English>Increased great people birth rate; faster Cottage growth</English>
-		<French>Increased great people birth rate; faster Cottage growth</French>
-		<German>Increased great people birth rate; faster Cottage growth</German>
-		<Italian>Increased great people birth rate; faster Cottage growth</Italian>
-		<Spanish>Increased great people birth rate; faster Cottage growth</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DOMINION</Tag>
-		<English>Dominion</English>
-		<French>Dominion</French>
-		<German>Dominion</German>
-		<Italian>Dominion</Italian>
-		<Spanish>Dominion</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DOMINION_STRATEGY</Tag>
-		<English>Extra happiness in largest cities; towns provide more food</English>
-		<French>Extra happiness in largest cities; towns provide more food</French>
-		<German>Extra happiness in largest cities; towns provide more food</German>
-		<Italian>Extra happiness in largest cities; towns provide more food</Italian>
-		<Spanish>Extra happiness in largest cities; towns provide more food</Spanish>
+		<English>Increased great people birth rate</English>
+		<French>Increased great people birth rate</French>
+		<German>Increased great people birth rate</German>
+		<Italian>Increased great people birth rate</Italian>
+		<Spanish>Increased great people birth rate</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DICTATORSHIP</Tag>
@@ -291,11 +288,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DICTATORSHIP_STRATEGY</Tag>
-		<English>Increased military production; extra production from Angry Citizens; no resistance on city conquest; faster decay of temporary unhappiness</English>
-		<French>Increased military production; extra production from Angry Citizens; no resistance on city conquest; faster decay of temporary unhappiness</French>
-		<German>Increased military production; extra production from Angry Citizens; no resistance on city conquest; faster decay of temporary unhappiness</German>
-		<Italian>Increased military production; extra production from Angry Citizens; no resistance on city conquest; faster decay of temporary unhappiness</Italian>
-		<Spanish>Increased military production; extra production from Angry Citizens; no resistance on city conquest; faster decay of temporary unhappiness</Spanish>
+		<English>Extra production from Angry Citizens; faster decay of temporary unhappiness</English>
+		<French>Extra production from Angry Citizens; faster decay of temporary unhappiness</French>
+		<German>Extra production from Angry Citizens; faster decay of temporary unhappiness</German>
+		<Italian>Extra production from Angry Citizens; faster decay of temporary unhappiness</Italian>
+		<Spanish>Extra production from Angry Citizens; faster decay of temporary unhappiness</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADITIONALISM</Tag>
@@ -338,19 +335,15 @@
 		<Spanish>The most primitive Economy civic</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE</Tag>
-		<English>Merchant Trade</English>
-		<French>
-			<Text>Commerce marchand</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Merchant Trade</German>
-		<Italian>Merchant Trade</Italian>
-		<Spanish>Merchant Trade</Spanish>
+		<Tag>TXT_KEY_CIVIC_MERCHANTS</Tag>
+		<English>Merchants</English>
+		<French>Merchants</French>
+		<German>Merchants</German>
+		<Italian>Merchants</Italian>
+		<Spanish>Merchants</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_MERCHANTS_STRATEGY</Tag>
 		<English>Extra trade route in all cities</English>
 		<French>Extra trade route in all cities</French>
 		<German>Extra trade route in all cities</German>
@@ -395,11 +388,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_OPPORTUNITY_STRATEGY</Tag>
-		<English>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</English>
-		<French>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</French>
-		<German>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</German>
-		<Italian>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</Italian>
-		<Spanish>Increase great people birth rate in cities with state religion; extra happiness and Immigration for Specialists</Spanish>
+		<English>Extra happiness and Immigration for Specialists</English>
+		<French>Extra happiness and Immigration for Specialists</French>
+		<German>Extra happiness and Immigration for Specialists</German>
+		<Italian>Extra happiness and Immigration for Specialists</Italian>
+		<Spanish>Extra happiness and Immigration for Specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONQUEST</Tag>
@@ -414,20 +407,41 @@
 		<Spanish>Conquest</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CONQUEST_STRATEGY</Tag>
-		<English>Extra experience for land units; reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</English>
-		<French>Les unit&#233;s terrestres re&#231;oivent de l'exp&#233;rience additionnelle ; taux de croissance r&#233;duit pour les cottages, hameaux et villages ; vous recevez plus d'or au moment de conqu&#233;rir des villes</French>
-		<German>Extra experience for land units; reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</German>
-		<Italian>Extra experience for land units; reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</Italian>
-		<Spanish>Extra experience for land units; reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</Spanish>
+		<Tag>TXT_KEY_CIVIC_CONQUEST_NATIVE_STRATEGY</Tag>
+		<English>Extra experience for land units</English>
+		<French>Extra experience for land units</French>
+		<German>Extra experience for land units</German>
+		<Italian>Extra experience for land units</Italian>
+		<Spanish>Extra experience for land units</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CONQUEST_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_CONQUEST_NATIVE_HELP</Tag>
 		<English>[ICON_BULLET]Extra stability from recent conquest</English>
 		<French>[ICON_BULLET]Extra stability from recent conquest</French>
 		<German>[ICON_BULLET]Extra stability from recent conquest</German>
 		<Italian>[ICON_BULLET]Extra stability from recent conquest</Italian>
 		<Spanish>[ICON_BULLET]Extra stability from recent conquest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONQUEST_COLONY_STRATEGY</Tag>
+		<English>Extra experience for land units; Expeditionaries receive free promotion</English>
+		<French>Extra experience for land units; Expeditionaries receive free promotion</French>
+		<German>Extra experience for land units; Expeditionaries receive free promotion</German>
+		<Italian>Extra experience for land units; Expeditionaries receive free promotion</Italian>
+		<Spanish>Extra experience for land units; Expeditionaries receive free promotion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONQUEST_COLONY_HELP</Tag>
+		<English>[ICON_BULLET]Expeditionaries receive free Combat II promotion
+[ICON_BULLET]Extra stability from recent conquest</English>
+		<French>[ICON_BULLET]Expeditionaries receive free Combat II promotion
+[ICON_BULLET]Extra stability from recent conquest</French>
+		<German>[ICON_BULLET]Expeditionaries receive free Combat II promotion
+[ICON_BULLET]Extra stability from recent conquest</German>
+		<Italian>[ICON_BULLET]Expeditionaries receive free Combat II promotion
+[ICON_BULLET]Extra stability from recent conquest</Italian>
+		<Spanish>[ICON_BULLET]Expeditionaries receive free Combat II promotion
+[ICON_BULLET]Extra stability from recent conquest</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRIBUTARIES</Tag>
@@ -443,11 +457,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRIBUTARIES_STRATEGY</Tag>
-		<English>Extra commerce in capital from vassal cities; lower unit upkeep</English>
-		<French>Extra commerce in capital from vassal cities; lower unit upkeep</French>
-		<German>Extra commerce in capital from vassal cities; lower unit upkeep</German>
-		<Italian>Extra commerce in capital from vassal cities; lower unit upkeep</Italian>
-		<Spanish>Extra commerce in capital from vassal cities; lower unit upkeep</Spanish>
+		<English>Extra trade yield with Vassals; can demand tribute from Tribes</English>
+		<French>Extra trade yield with Vassals; can demand tribute from Tribes</French>
+		<German>Extra trade yield with Vassals; can demand tribute from Tribes</German>
+		<Italian>Extra trade yield with Vassals; can demand tribute from Tribes</Italian>
+		<Spanish>Extra trade yield with Vassals; can demand tribute from Tribes</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM</Tag>
@@ -463,11 +477,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Tag>
-		<English>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</English>
-		<French>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</French>
-		<German>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</German>
-		<Italian>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</Italian>
-		<Spanish>Extra production for Wonders; no foreign trade routes; increased culture in capital; reduced Immigration</Spanish>
+		<English>No foreign trade routes; increased culture in all cities; unhappiness from state religion</English>
+		<French>No foreign trade routes; increased culture in all cities; unhappiness from state religion</French>
+		<German>No foreign trade routes; increased culture in all cities; unhappiness from state religion</German>
+		<Italian>No foreign trade routes; increased culture in all cities; unhappiness from state religion</Italian>
+		<Spanish>No foreign trade routes; increased culture in all cities; unhappiness from state religion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>
@@ -476,14 +490,6 @@
 		<German>[ICON_BULLET]Extra instability for cities outside core</German>
 		<Italian>[ICON_BULLET]Extra instability for cities outside core</Italian>
 		<Spanish>[ICON_BULLET]Extra instability for cities outside core</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
-		<English>[ICON_BULLET]No instability for outdated or conflicting Civics</English>
-		<French>[ICON_BULLET]No instability for outdated or conflicting Civics</French>
-		<German>[ICON_BULLET]No instability for outdated or conflicting Civics</German>
-		<Italian>[ICON_BULLET]No instability for outdated or conflicting Civics</Italian>
-		<Spanish>[ICON_BULLET]No instability for outdated or conflicting Civics</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIONHOOD</Tag>
@@ -507,11 +513,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DESPOTISM_STRATEGY</Tag>
-		<English>Extra production from no improvements; can hurry production by sacrificing population; no Cottage growth; less gold from Cottages</English>
-		<French>Extra production from no improvements; can hurry production by sacrificing population; no Cottage growth; less gold from Cottages</French>
-		<German>Extra production from no improvements; can hurry production by sacrificing population; no Cottage growth; less gold from Cottages</German>
-		<Italian>Extra production from no improvements; can hurry production by sacrificing population; no Cottage growth; less gold from Cottages</Italian>
-		<Spanish>Extra production from no improvements; can hurry production by sacrificing population; no Cottage growth; less gold from Cottages</Spanish>
+		<English>Can hurry production by sacrificing population</English>
+		<French>Can hurry production by sacrificing population</French>
+		<German>Can hurry production by sacrificing population</German>
+		<Italian>Can hurry production by sacrificing population</Italian>
+		<Spanish>Can hurry production by sacrificing population</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CASTE_SYSTEM_STRATEGY</Tag>
@@ -539,11 +545,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Tag>
-		<English>Reduced instability from cities; increased unhappiness from Religion</English>
-		<French>Reduced instability from cities; increased unhappiness from Religion</French>
-		<German>Reduced instability from cities; increased unhappiness from Religion</German>
-		<Italian>Reduced instability from cities; increased unhappiness from Religion</Italian>
-		<Spanish>Reduced instability from cities; increased unhappiness from Religion</Spanish>
+		<English>Reduced instability from cities; temporary unhappiness decays faster</English>
+		<French>Reduced instability from cities; temporary unhappiness decays faster</French>
+		<German>Reduced instability from cities; temporary unhappiness decays faster</German>
+		<Italian>Reduced instability from cities; temporary unhappiness decays faster</Italian>
+		<Spanish>Reduced instability from cities; temporary unhappiness decays faster</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Tag>
@@ -554,15 +560,15 @@
 		<Spanish>[ICON_BULLET]Reduced Instability from Cities</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MARITIME_LAW</Tag>
-		<English>Maritime Law</English>
-		<French>Maritime Law</French>
-		<German>Maritime Law</German>
-		<Italian>Maritime Law</Italian>
-		<Spanish>Maritime Law</Spanish>
+		<Tag>TXT_KEY_CIVIC_ADMIRALTY</Tag>
+		<English>Admiralty</English>
+		<French>Admiralty</French>
+		<German>Admiralty</German>
+		<Italian>Admiralty</Italian>
+		<Spanish>Admiralty</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MARITIME_LAW_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_ADMIRALTY_STRATEGY</Tag>
 		<English>Extra experience for naval units; double production speed for Harbor, Lighthouse</English>
 		<French>Extra experience for naval units; double production speed for Harbor, Lighthouse</French>
 		<German>Extra experience for naval units; double production speed for Harbor, Lighthouse</German>
@@ -579,11 +585,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Tag>
-		<English>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</English>
-		<French>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</French>
-		<German>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</German>
-		<Italian>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Italian>
-		<Spanish>Double production speed for defensive buildings; no extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Spanish>
+		<English>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</English>
+		<French>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</French>
+		<German>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</German>
+		<Italian>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Italian>
+		<Spanish>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_HELP</Tag>
@@ -607,12 +613,28 @@
 		<Spanish>Confederacy</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CONFEDERACY_STRATEGY</Tag>
-		<English>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</English>
-		<French>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</French>
-		<German>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</German>
-		<Italian>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</Italian>
-		<Spanish>Lower maintenance costs from number of cities; increased war weariness; increased unit maintenance; no instability from Civics</Spanish>
+		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATIVE_STRATEGY</Tag>
+		<English>Lower maintenance costs from number of cities; increased war weariness</English>
+		<French>Lower maintenance costs from number of cities; increased war weariness</French>
+		<German>Lower maintenance costs from number of cities; increased war weariness</German>
+		<Italian>Lower maintenance costs from number of cities; increased war weariness</Italian>
+		<Spanish>Lower maintenance costs from number of cities; increased war weariness</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATION_STRATEGY</Tag>
+		<English>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</English>
+		<French>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</French>
+		<German>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</German>
+		<Italian>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</Italian>
+		<Spanish>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
+		<English>[ICON_BULLET]No extra stability or instability Civic combinations</English>
+		<French>[ICON_BULLET]No extra stability or instability Civic combinations</French>
+		<German>[ICON_BULLET]No extra stability or instability Civic combinations</German>
+		<Italian>[ICON_BULLET]No extra stability or instability Civic combinations</Italian>
+		<Spanish>[ICON_BULLET]No extra stability or instability Civic combinations</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOVERNORS</Tag>
@@ -624,11 +646,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOVERNORS_STRATEGY</Tag>
-		<English>Extra production and commerce in capital</English>
-		<French>Extra production and commerce in capital</French>
-		<German>Extra production and commerce in capital</German>
-		<Italian>Extra production and commerce in capital</Italian>
-		<Spanish>Extra production and commerce in capital</Spanish>
+		<English>Extra production and commerce in capital; at least one slot for Statesman</English>
+		<French>Extra production and commerce in capital; at least one slot for Statesman</French>
+		<German>Extra production and commerce in capital; at least one slot for Statesman</German>
+		<Italian>Extra production and commerce in capital; at least one slot for Statesman</Italian>
+		<Spanish>Extra production and commerce in capital; at least one slot for Statesman</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COLONIAL_ASSEMBLY</Tag>
@@ -672,11 +694,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COUNCIL_STRATEGY</Tag>
-		<English>Extra happiness in largest cities; extra happiness from Pagan Temples; unhappiness from religion</English>
-		<French>Extra happiness in largest cities; extra happiness from Pagan Temples; unhappiness from religion</French>
-		<German>Extra happiness in largest cities; extra happiness from Pagan Temples; unhappiness from religion</German>
-		<Italian>Extra happiness in largest cities; extra happiness from Pagan Temples; unhappiness from religion</Italian>
-		<Spanish>Extra happiness in largest cities; extra happiness from Pagan Temples; unhappiness from religion</Spanish>
+		<English>Extra happiness in largest cities; extra science from specialists</English>
+		<French>Extra happiness in largest cities; extra science from specialists</French>
+		<German>Extra happiness in largest cities; extra science from specialists</German>
+		<Italian>Extra happiness in largest cities; extra science from specialists</Italian>
+		<Spanish>Extra happiness in largest cities; extra science from specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY</Tag>
@@ -688,11 +710,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Tag>
-		<English>Military garrisons provide happiness; less experience needed to promote units</English>
-		<French>Military garrisons provide happiness; less experience needed to promote units</French>
-		<German>Military garrisons provide happiness; less experience needed to promote units</German>
-		<Italian>Military garrisons provide happiness; less experience needed to promote units</Italian>
-		<Spanish>Military garrisons provide happiness; less experience needed to promote units</Spanish>
+		<English>Military garrisons provide happiness</English>
+		<French>Military garrisons provide happiness</French>
+		<German>Military garrisons provide happiness</German>
+		<Italian>Military garrisons provide happiness</Italian>
+		<Spanish>Military garrisons provide happiness</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHARTER_COLONY</Tag>
@@ -720,11 +742,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADE_COMPANY_STRATEGY</Tag>
-		<English>Extra commerce from improvements; can hurry military unit production with gold; can hurry building production with gold</English>
-		<French>Extra commerce from improvements; can hurry military unit production with gold; can hurry building production with gold</French>
-		<German>Extra commerce from improvements; can hurry military unit production with gold; can hurry building production with gold</German>
-		<Italian>Extra commerce from improvements; can hurry military unit production with gold; can hurry building production with gold</Italian>
-		<Spanish>Extra commerce from improvements; can hurry military unit production with gold; can hurry building production with gold</Spanish>
+		<English>Extra commerce from camps; can hurry building production with gold</English>
+		<French>Extra commerce from camps; can hurry building production with gold</French>
+		<German>Extra commerce from camps; can hurry building production with gold</German>
+		<Italian>Extra commerce from camps; can hurry building production with gold</Italian>
+		<Spanish>Extra commerce from camps; can hurry building production with gold</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH</Tag>
@@ -736,11 +758,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Tag>
-		<English>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</English>
-		<French>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</French>
-		<German>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</German>
-		<Italian>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</Italian>
-		<Spanish>Faster Great People birthrate; reduced maintenance from number of cities and distance to palace; extra trade route in every city</Spanish>
+		<English>Extra happiness in largest cities; extra food on Village, Town</English>
+		<French>Extra happiness in largest cities; extra food on Village, Town</French>
+		<German>Extra happiness in largest cities; extra food on Village, Town</German>
+		<Italian>Extra happiness in largest cities; extra food on Village, Town</Italian>
+		<Spanish>Extra happiness in largest cities; extra food on Village, Town</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATE_PARTY</Tag>
@@ -756,11 +778,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATE_PARTY_STRATEGY</Tag>
-		<English>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</English>
-		<French>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</French>
-		<German>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</German>
-		<Italian>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</Italian>
-		<Spanish>No maintenance costs from number of cities; reduced maintenance from distance to palace; extra espionage from specialists</Spanish>
+		<English>No maintenance costs from number of cities; extra espionage from specialists</English>
+		<French>No maintenance costs from number of cities; extra espionage from specialists</French>
+		<German>No maintenance costs from number of cities; extra espionage from specialists</German>
+		<Italian>No maintenance costs from number of cities; extra espionage from specialists</Italian>
+		<Spanish>No maintenance costs from number of cities; extra espionage from specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMON_LAW</Tag>
@@ -788,11 +810,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Tag>
-		<English>Extra yields in capital; faster production of Granary, Market, Barracks</English>
-		<French>Extra yields in capital; faster production of Granary, Market, Barracks</French>
-		<German>Extra yields in capital; faster production of Granary, Market, Barracks</German>
-		<Italian>Extra yields in capital; faster production of Granary, Market, Barracks</Italian>
-		<Spanish>Extra yields in capital; faster production of Granary, Market, Barracks</Spanish>
+		<English>Extra yields in capital; faster production of Market</English>
+		<French>Extra yields in capital; faster production of Market</French>
+		<German>Extra yields in capital; faster production of Market</German>
+		<Italian>Extra yields in capital; faster production of Market</Italian>
+		<Spanish>Extra yields in capital; faster production of Market</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_VICEROYALTY</Tag>
@@ -804,11 +826,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_VICEROYALTY_STRATEGY</Tag>
-		<English>Extra production from Angry Population; no resistance on conquest; temporary happiness decays faster</English>
-		<French>Extra production from Angry Population; no resistance on conquest; temporary happiness decays faster</French>
-		<German>Extra production from Angry Population; no resistance on conquest; temporary happiness decays faster</German>
-		<Italian>Extra production from Angry Population; no resistance on conquest; temporary happiness decays faster</Italian>
-		<Spanish>Extra production from Angry Population; no resistance on conquest; temporary happiness decays faster</Spanish>
+		<English>Extra production from Angry Population; no resistance on conquest</English>
+		<French>Extra production from Angry Population; no resistance on conquest</French>
+		<German>Extra production from Angry Population; no resistance on conquest</German>
+		<Italian>Extra production from Angry Population; no resistance on conquest</Italian>
+		<Spanish>Extra production from Angry Population; no resistance on conquest</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FEDERALISM</Tag>
@@ -820,11 +842,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FEDERALISM_STRATEGY</Tag>
-		<English>At least one Statesman slot; extra commerce and production in Capital; extra production from Towns; can hurry production with gold</English>
-		<French>At least one Statesman slot; extra commerce and production in Capital; extra production from Towns; can hurry production with gold</French>
-		<German>At least one Statesman slot; extra commerce and production in Capital; extra production from Towns; can hurry production with gold</German>
-		<Italian>At least one Statesman slot; extra commerce and production in Capital; extra production from Towns; can hurry production with gold</Italian>
-		<Spanish>At least one Statesman slot; extra commerce and production in Capital; extra production from Towns; can hurry production with gold</Spanish>
+		<English>Extra food and commerce in Capital for large cities; extra production from Towns; can hurry production with gold</English>
+		<French>Extra food and commerce in Capital for large cities; extra production from Towns; can hurry production with gold</French>
+		<German>Extra food and commerce in Capital for large cities; extra production from Towns; can hurry production with gold</German>
+		<Italian>Extra food and commerce in Capital for large cities; extra production from Towns; can hurry production with gold</Italian>
+		<Spanish>Extra food and commerce in Capital for large cities; extra production from Towns; can hurry production with gold</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CRAFTSMEN</Tag>
@@ -836,11 +858,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CRAFTSMEN_STRATEGY</Tag>
-		<English>Extra commerce from Workshops; faster production of Altar, Pagan Temple</English>
-		<French>Extra commerce from Workshops; faster production of Altar, Pagan Temple</French>
-		<German>Extra commerce from Workshops; faster production of Altar, Pagan Temple</German>
-		<Italian>Extra commerce from Workshops; faster production of Altar, Pagan Temple</Italian>
-		<Spanish>Extra commerce from Workshops; faster production of Altar, Pagan Temple</Spanish>
+		<English>Faster production of Wonders; extra production from excess happiness</English>
+		<French>Faster production of Wonders; extra production from excess happiness</French>
+		<German>Faster production of Wonders; extra production from excess happiness</German>
+		<Italian>Faster production of Wonders; extra production from excess happiness</Italian>
+		<Spanish>Faster production of Wonders; extra production from excess happiness</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Tag>
@@ -852,19 +874,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_STRATEGY</Tag>
-		<English>Cheaper to hire workers; extra commerce from Farms and Orchards</English>
-		<French>Cheaper to hire workers; extra commerce from Farms and Orchards</French>
-		<German>Cheaper to hire workers; extra commerce from Farms and Orchards</German>
-		<Italian>Cheaper to hire workers; extra commerce from Farms and Orchards</Italian>
-		<Spanish>Cheaper to hire workers; extra commerce from Farms and Orchards</Spanish>
+		<English>Cheaper to hire workers; extra commerce on Farm, Orchard</English>
+		<French>Cheaper to hire workers; extra commerce on Farm, Orchard</French>
+		<German>Cheaper to hire workers; extra commerce on Farm, Orchard</German>
+		<Italian>Cheaper to hire workers; extra commerce on Farm, Orchard</Italian>
+		<Spanish>Cheaper to hire workers; extra commerce on Farm, Orchard</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE_HELP</Tag>
-		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</English>
-		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</French>
-		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</German>
-		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</Italian>
-		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire settlers, workers, missionaries, and colonists</Spanish>
+		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</English>
+		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</French>
+		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</German>
+		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</Italian>
+		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire workers</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM</Tag>
@@ -876,11 +898,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM_STRATEGY</Tag>
-		<English>More Engineer slots; extra production for specialists; extra commerce on Windmills and Watermills</English>
-		<French>More Engineer slots; extra production for specialists; extra commerce on Windmills and Watermills</French>
-		<German>More Engineer slots; extra production for specialists; extra commerce on Windmills and Watermills</German>
-		<Italian>More Engineer slots; extra production for specialists; extra commerce on Windmills and Watermills</Italian>
-		<Spanish>More Engineer slots; extra production for specialists; extra commerce on Windmills and Watermills</Spanish>
+		<English>More Engineer slots; extra production for specialists; less health in every city</English>
+		<French>More Engineer slots; extra production for specialists; less health in every city</French>
+		<German>More Engineer slots; extra production for specialists; less health in every city</German>
+		<Italian>More Engineer slots; extra production for specialists; less health in every city</Italian>
+		<Spanish>More Engineer slots; extra production for specialists; less health in every city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR</Tag>
@@ -892,11 +914,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR_STRATEGY</Tag>
-		<English>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</English>
-		<French>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</French>
-		<German>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</German>
-		<Italian>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</Italian>
-		<Spanish>Extra unhappiness in largest cities; extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</Spanish>
+		<English>Extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</English>
+		<French>Extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</French>
+		<German>Extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</German>
+		<Italian>Extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</Italian>
+		<Spanish>Extra production on Farms, Mines, Workshops; build Railway Stations faster; can hire Migrant Workers</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR_HELP</Tag>
@@ -916,11 +938,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_LABOR_UNIONS_STRATEGY</Tag>
-		<English>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</English>
-		<French>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</French>
-		<German>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</German>
-		<Italian>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</Italian>
-		<Spanish>Extra science from Specialists; extra food and commerce on Workshops, Mines, and Watermills; faster production of Electrical Grids, Factories, Coal Plants, Hydro Plants, and Automated Factories</Spanish>
+		<English>Extra science from Specialists; extra food and commerce on Workshops, Windmills, and Watermills</English>
+		<French>Extra science from Specialists; extra food and commerce on Workshops, Windmills, and Watermills</French>
+		<German>Extra science from Specialists; extra food and commerce on Workshops, Windmills, and Watermills</German>
+		<Italian>Extra science from Specialists; extra food and commerce on Workshops, Windmills, and Watermills</Italian>
+		<Spanish>Extra science from Specialists; extra food and commerce on Workshops, Windmills, and Watermills</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AGRARIANISM</Tag>
@@ -964,11 +986,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN_STRATEGY</Tag>
-		<English>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</English>
-		<French>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</French>
-		<German>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</German>
-		<Italian>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</Italian>
-		<Spanish>Faster production of buildings in cities with your state religion; can build Missionaries without Monastery; extra Immigration in capital</Spanish>
+		<English>Faster production of buildings in cities with your state religion; extra Immigration in capital</English>
+		<French>Faster production of buildings in cities with your state religion; extra Immigration in capital</French>
+		<German>Faster production of buildings in cities with your state religion; extra Immigration in capital</German>
+		<Italian>Faster production of buildings in cities with your state religion; extra Immigration in capital</Italian>
+		<Spanish>Faster production of buildings in cities with your state religion; extra Immigration in capital</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROFITEERING</Tag>
@@ -980,35 +1002,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROFITEERING_STRATEGY</Tag>
-		<English>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</English>
-		<French>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</French>
-		<German>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</German>
-		<Italian>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</Italian>
-		<Spanish>Extra production and commerce from Slave Plantations; extra commerce, reduced science in each city</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MULTICULTURALISM</Tag>
-		<English>Multiculturalism</English>
-		<French>Multiculturalism</French>
-		<German>Multiculturalism</German>
-		<Italian>Multiculturalism</Italian>
-		<Spanish>Multiculturalism</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MULTICULTURALISM_STRATEGY</Tag>
-		<English>No state religion; extra slots for Artists, Engineers, and Scientists; extra commerce from Contacted Tribes; immigration is based on culture</English>
-		<French>No state religion; extra slots for Artists, Engineers, and Scientists; extra commerce from Contacted Tribes; immigration is based on culture</French>
-		<German>No state religion; extra slots for Artists, Engineers, and Scientists; extra commerce from Contacted Tribes; immigration is based on culture</German>
-		<Italian>No state religion; extra slots for Artists, Engineers, and Scientists; extra commerce from Contacted Tribes; immigration is based on culture</Italian>
-		<Spanish>No state religion; extra slots for Artists, Engineers, and Scientists; extra commerce from Contacted Tribes; immigration is based on culture</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MULTICULTURALISM_HELP</Tag>
-		<English>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</English>
-		<French>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</French>
-		<German>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</German>
-		<Italian>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</Italian>
-		<Spanish>[ICON_BULLET]Recieve [LINK=CONCEPT_IMMIGRATION]Immigration[\LINK] based on [ICON_CULTURE] per Citizen</Spanish>
+		<English>Extra commerce, reduced culture in each city</English>
+		<French>Extra commerce, reduced culture in each city</French>
+		<German>Extra commerce, reduced culture in each city</German>
+		<Italian>Extra commerce, reduced culture in each city</Italian>
+		<Spanish>Extra commerce, reduced culture in each city</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOMESTEADS</Tag>
@@ -1020,11 +1018,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOMESTEADS_STRATEGY</Tag>
-		<English>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</English>
-		<French>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</French>
-		<German>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</German>
-		<Italian>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</Italian>
-		<Spanish>Extra immigration from unimproved plots within city range that yields at least 1[ICON_FOOD]; faster production of Palace, Barracks, Stable; combat bonus vs. Natives</Spanish>
+		<English>Workers build improvements faster; extra population in new cities</English>
+		<French>Workers build improvements faster; extra population in new cities</French>
+		<German>Workers build improvements faster; extra population in new cities</German>
+		<Italian>Workers build improvements faster; extra population in new cities</Italian>
+		<Spanish>Workers build improvements faster; extra population in new cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HOMESTEADS_HELP</Tag>
+		<English>[ICON_BULLET]Extra population in newly founded cities</English>
+		<French>[ICON_BULLET]Extra population in newly founded cities</French>
+		<German>[ICON_BULLET]Extra population in newly founded cities</German>
+		<Italian>[ICON_BULLET]Extra population in newly founded cities</Italian>
+		<Spanish>[ICON_BULLET]Extra population in newly founded cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_OUTPOSTS</Tag>
@@ -1036,11 +1042,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_OUTPOSTS_STRATEGY</Tag>
-		<English>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</English>
-		<French>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</French>
-		<German>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</German>
-		<Italian>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</Italian>
-		<Spanish>Extra gold from Pastures, Contacted Tribes; +1 Immigration per resource in city range</Spanish>
+		<English>Extra gold from Camps, Forts, Contacted Tribes; faster productoin of Trading Post</English>
+		<French>Extra gold from Camps, Forts, Contacted Tribes; faster productoin of Trading Post</French>
+		<German>Extra gold from Camps, Forts, Contacted Tribes; faster productoin of Trading Post</German>
+		<Italian>Extra gold from Camps, Forts, Contacted Tribes; faster productoin of Trading Post</Italian>
+		<Spanish>Extra gold from Camps, Forts, Contacted Tribes; faster productoin of Trading Post</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EXPEDITION</Tag>
@@ -1052,11 +1058,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EXPEDITION_STRATEGY</Tag>
-		<English>The most primitive Government civic</English>
-		<French>The most primitive Government civic</French>
-		<German>The most primitive Government civic</German>
-		<Italian>The most primitive Government civic</Italian>
-		<Spanish>The most primitive Government civic</Spanish>
+		<English>The most primitive Administration civic</English>
+		<French>The most primitive Administration civic</French>
+		<German>The most primitive Administration civic</German>
+		<Italian>The most primitive Administration civic</Italian>
+		<Spanish>The most primitive Administration civic</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SERFDOM</Tag>
@@ -1100,11 +1106,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_STRATEGY</Tag>
-		<English>Capture slaves from city conquest and tribe pillaging; extra commerce from mines</English>
-		<French>Capture slaves from city conquest and tribe pillaging; extra commerce from mines</French>
-		<German>Capture slaves from city conquest and tribe pillaging; extra commerce from mines</German>
-		<Italian>Capture slaves from city conquest and tribe pillaging; extra commerce from mines</Italian>
-		<Spanish>Capture slaves from city conquest and tribe pillaging; extra commerce from mines</Spanish>
+		<English>Capture slaves from city conquest and tribe pillaging</English>
+		<French>Capture slaves from city conquest and tribe pillaging</French>
+		<German>Capture slaves from city conquest and tribe pillaging</German>
+		<Italian>Capture slaves from city conquest and tribe pillaging</Italian>
+		<Spanish>Capture slaves from city conquest and tribe pillaging</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Tag>
@@ -1148,30 +1154,30 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_STRATEGY</Tag>
-		<English>Extra food from no improvement; extra food and commerce from tribes; reduced science</English>
-		<French>Extra food from no improvement; extra food and commerce from tribes; reduced science</French>
-		<German>Extra food from no improvement; extra food and commerce from tribes; reduced science</German>
-		<Italian>Extra food from no improvement; extra food and commerce from tribes; reduced science</Italian>
-		<Spanish>Extra food from no improvement; extra food and commerce from tribes; reduced science</Spanish>
+		<English>Extra Happiness from wooded features; reduced science</English>
+		<French>Extra Happiness from wooded features; reduced science</French>
+		<German>Extra Happiness from wooded features; reduced science</German>
+		<Italian>Extra Happiness from wooded features; reduced science</Italian>
+		<Spanish>Extra Happiness from wooded features; reduced science</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_GLORIA_IN_DEO</Tag>
-		<English>Gloria in Deo</English>
-		<French>Gloria in Deo</French>
-		<German>Gloria in Deo</German>
-		<Italian>Gloria in Deo</Italian>
-		<Spanish>Gloria in Deo</Spanish>
+		<Tag>TXT_KEY_CIVIC_ZEALOTRY</Tag>
+		<English>Zealotry</English>
+		<French>Zealotry</French>
+		<German>Zealotry</German>
+		<Italian>Zealotry</Italian>
+		<Spanish>Zealotry</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_GLORIA_IN_DEO_STRATEGY</Tag>
-		<English>Free religious conversion on city conquest</English>
-		<French>Free religious conversion on city conquest</French>
-		<German>Free religious conversion on city conquest</German>
-		<Italian>Free religious conversion on city conquest</Italian>
-		<Spanish>Free religious conversion on city conquest</Spanish>
+		<Tag>TXT_KEY_CIVIC_ZEALOTRY_STRATEGY</Tag>
+		<English>Free religious conversion on city conquest; extra experience for units with your state religion</English>
+		<French>Free religious conversion on city conquest; extra experience for units with your state religion</French>
+		<German>Free religious conversion on city conquest; extra experience for units with your state religion</German>
+		<Italian>Free religious conversion on city conquest; extra experience for units with your state religion</Italian>
+		<Spanish>Free religious conversion on city conquest; extra experience for units with your state religion</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_GLORIA_IN_DEO_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_ZEALOTRY_HELP</Tag>
 		<English>[ICON_BULLET]State [ICON_RELIGION] spreads on City Conquest</English>
 		<French>[ICON_BULLET]State [ICON_RELIGION] spreads on City Conquest</French>
 		<German>[ICON_BULLET]State [ICON_RELIGION] spreads on City Conquest</German>
@@ -1195,11 +1201,779 @@
 		<Spanish>Build Catholic buildings faster; can build Missionaries without Monasteries</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ELDERS</Tag>
+		<English>Elders</English>
+		<French>Elders</French>
+		<German>Elders</German>
+		<Italian>Elders</Italian>
+		<Spanish>Elders</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ELDERS_STRATEGY</Tag>
+		<English>The most primitive Executive civic</English>
+		<French>The most primitive Executive civic</French>
+		<German>The most primitive Executive civic</German>
+		<Italian>The most primitive Executive civic</Italian>
+		<Spanish>The most primitive Executive civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOD_KING</Tag>
+		<English>God King</English>
+		<French>God King</French>
+		<German>God King</German>
+		<Italian>God King</Italian>
+		<Spanish>God King</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOD_KING_STRATEGY</Tag>
+		<English>Faster production of Barrakcs, Walls; can hurry units with gold</English>
+		<French>Faster production of Barrakcs, Walls; can hurry units with gold</French>
+		<German>Faster production of Barrakcs, Walls; can hurry units with gold</German>
+		<Italian>Faster production of Barrakcs, Walls; can hurry units with gold</Italian>
+		<Spanish>Faster production of Barrakcs, Walls; can hurry units with gold</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CITY_STATES</Tag>
+		<English>City States</English>
+		<French>City States</French>
+		<German>City States</German>
+		<Italian>City States</Italian>
+		<Spanish>City States</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CITY_STATES_STRATEGY</Tag>
+		<English>Extra food from specialists; reduced food on Farms, Paddy Fields, Cottages, Hamlets, Villages, Towns</English>
+		<French>Extra food from specialists; reduced food on Farms, Paddy Fields, Cottages, Hamlets, Villages, Towns</French>
+		<German>Extra food from specialists; reduced food on Farms, Paddy Fields, Cottages, Hamlets, Villages, Towns</German>
+		<Italian>Extra food from specialists; reduced food on Farms, Paddy Fields, Cottages, Hamlets, Villages, Towns</Italian>
+		<Spanish>Extra food from specialists; reduced food on Farms, Paddy Fields, Cottages, Hamlets, Villages, Towns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FIRST_NATION</Tag>
+		<English>First Nation</English>
+		<French>First Nation</French>
+		<German>First Nation</German>
+		<Italian>First Nation</Italian>
+		<Spanish>First Nation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FIRST_NATION_STRATEGY</Tag>
+		<English>Extra culture from specialists; increased great people birth rate</English>
+		<French>Extra culture from specialists; increased great people birth rate</French>
+		<German>Extra culture from specialists; increased great people birth rate</German>
+		<Italian>Extra culture from specialists; increased great people birth rate</Italian>
+		<Spanish>Extra culture from specialists; increased great people birth rate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SUBSISTANCE</Tag>
+		<English>Subsistance</English>
+		<French>Subsistance</French>
+		<German>Subsistance</German>
+		<Italian>Subsistance</Italian>
+		<Spanish>Subsistance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SUBSISTANCE_STRATEGY</Tag>
+		<English>Extra food and production from no improvement; reduced commerce</English>
+		<French>Extra food and production from no improvement; reduced commerce</French>
+		<German>Extra food and production from no improvement; reduced commerce</German>
+		<Italian>Extra food and production from no improvement; reduced commerce</Italian>
+		<Spanish>Extra food and production from no improvement; reduced commerce</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MITA</Tag>
+		<English>Mit'a</English>
+		<French>Mit'a</French>
+		<German>Mit'a</German>
+		<Italian>Mit'a</Italian>
+		<Spanish>Mit'a</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MITA_STRATEGY</Tag>
+		<English>Reduced cost to train workers; extra production on Farms</English>
+		<French>Reduced cost to train workers; extra production on Farms</French>
+		<German>Reduced cost to train workers; extra production on Farms</German>
+		<Italian>Reduced cost to train workers; extra production on Farms</Italian>
+		<Spanish>Reduced cost to train workers; extra production on Farms</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMUNE</Tag>
+		<English>Commune</English>
+		<French>Commune</French>
+		<German>Commune</German>
+		<Italian>Commune</Italian>
+		<Spanish>Commune</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COMMUNE_STRATEGY</Tag>
+		<English>Increased food, reduced production in all cities</English>
+		<French>Increased food, reduced production in all cities</French>
+		<German>Increased food, reduced production in all cities</German>
+		<Italian>Increased food, reduced production in all cities</Italian>
+		<Spanish>Increased food, reduced production in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REDISTRIBUTION</Tag>
+		<English>Redistribution</English>
+		<French>Redistribution</French>
+		<German>Redistribution</German>
+		<Italian>Redistribution</Italian>
+		<Spanish>Redistribution</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REDISTRIBUTION_STRATEGY</Tag>
+		<English>Extra food in capital; reduced trade route yield; faster production of Granary</English>
+		<French>Extra food in capital; reduced trade route yield; faster production of Granary</French>
+		<German>Extra food in capital; reduced trade route yield; faster production of Granary</German>
+		<Italian>Extra food in capital; reduced trade route yield; faster production of Granary</Italian>
+		<Spanish>Extra food in capital; reduced trade route yield; faster production of Granary</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLUNDER</Tag>
+		<English>Plunder</English>
+		<French>Plunder</French>
+		<German>Plunder</German>
+		<Italian>Plunder</Italian>
+		<Spanish>Plunder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLUNDER_STRATEGY</Tag>
+		<English>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</English>
+		<French>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</French>
+		<German>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</German>
+		<Italian>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</Italian>
+		<Spanish>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEPENDENCY</Tag>
+		<English>Dependency</English>
+		<French>Dependency</French>
+		<German>Dependency</German>
+		<Italian>Dependency</Italian>
+		<Spanish>Dependency</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEPENDENCY_STRATEGY</Tag>
+		<English>Discovered technologies are cheaper; reduced culture and espionage in all cities</English>
+		<French>Discovered technologies are cheaper; reduced culture and espionage in all cities</French>
+		<German>Discovered technologies are cheaper; reduced culture and espionage in all cities</German>
+		<Italian>Discovered technologies are cheaper; reduced culture and espionage in all cities</Italian>
+		<Spanish>Discovered technologies are cheaper; reduced culture and espionage in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEPENDENCY_HELP</Tag>
+		<English>[ICON_BULLET]Technologies that have been researched by others that you can trade with are 50% cheaper</English>
+		<French>[ICON_BULLET]Technologies that have been researched by others that you can trade with are 50% cheaper</French>
+		<German>[ICON_BULLET]Technologies that have been researched by others that you can trade with are 50% cheaper</German>
+		<Italian>[ICON_BULLET]Technologies that have been researched by others that you can trade with are 50% cheaper</Italian>
+		<Spanish>[ICON_BULLET]Technologies that have been researched by others that you can trade with are 50% cheaper</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOURISM</Tag>
+		<English>Tourism</English>
+		<French>Tourism</French>
+		<German>Tourism</German>
+		<Italian>Tourism</Italian>
+		<Spanish>Tourism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TOURISM_STRATEGY</Tag>
+		<English>Increased trade in capital; double slots for merchants</English>
+		<French>Increased trade in capital; double slots for merchants</French>
+		<German>Increased trade in capital; double slots for merchants</German>
+		<Italian>Increased trade in capital; double slots for merchants</Italian>
+		<Spanish>Increased trade in capital; double slots for merchants</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ORGANIZED_RELIGION_STRATEGY</Tag>
+		<English>Faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion</English>
+		<French>Faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion</French>
+		<German>Faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion</German>
+		<Italian>Faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion</Italian>
+		<Spanish>Faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COSMOPOLIS</Tag>
+		<English>Cosmopolis</English>
+		<French>Cosmopolis</French>
+		<German>Cosmopolis</German>
+		<Italian>Cosmopolis</Italian>
+		<Spanish>Cosmopolis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COSMOPOLIS_STRATEGY</Tag>
+		<English>Faster production of Bath, Plaza; extra hapiness from Market</English>
+		<French>Faster production of Bath, Plaza; extra hapiness from Market</French>
+		<German>Faster production of Bath, Plaza; extra hapiness from Market</German>
+		<Italian>Faster production of Bath, Plaza; extra hapiness from Market</Italian>
+		<Spanish>Faster production of Bath, Plaza; extra hapiness from Market</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ACCULTURATION</Tag>
+		<English>Acculturation</English>
+		<French>Acculturation</French>
+		<German>Acculturation</German>
+		<Italian>Acculturation</Italian>
+		<Spanish>Acculturation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ACCULTURATION_STRATEGY</Tag>
+		<English>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</English>
+		<French>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</French>
+		<German>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</German>
+		<Italian>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</Italian>
+		<Spanish>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SETTLEMENT</Tag>
+		<English>Settlement</English>
+		<French>Settlement</French>
+		<German>Settlement</German>
+		<Italian>Settlement</Italian>
+		<Spanish>Settlement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SETTLEMENT_STRATEGY</Tag>
+		<English>The most primitive Expansion civic</English>
+		<French>The most primitive Expansion civic</French>
+		<German>The most primitive Expansion civic</German>
+		<Italian>The most primitive Expansion civic</Italian>
+		<Spanish>The most primitive Expansion civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NOMADS</Tag>
+		<English>Nomads</English>
+		<French>Nomads</French>
+		<German>Nomads</German>
+		<Italian>Nomads</Italian>
+		<Spanish>Nomads</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NOMADS_STRATEGY</Tag>
+		<English>Military units are built with food; cities can move</English>
+		<French>Military units are built with food; cities can move</French>
+		<German>Military units are built with food; cities can move</German>
+		<Italian>Military units are built with food; cities can move</Italian>
+		<Spanish>Military units are built with food; cities can move</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DIFFUSION</Tag>
+		<English>Diffusion</English>
+		<French>Diffusion</French>
+		<German>Diffusion</German>
+		<Italian>Diffusion</Italian>
+		<Spanish>Diffusion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DIFFUSION_STRATEGY</Tag>
+		<English>Increased great people birth rate; great people can make Tribes join you</English>
+		<French>Increased great people birth rate; great people can make Tribes join you</French>
+		<German>Increased great people birth rate; great people can make Tribes join you</German>
+		<Italian>Increased great people birth rate; great people can make Tribes join you</Italian>
+		<Spanish>Increased great people birth rate; great people can make Tribes join you</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COOPERATION</Tag>
+		<English>Cooperation</English>
+		<French>Cooperation</French>
+		<German>Cooperation</German>
+		<Italian>Cooperation</Italian>
+		<Spanish>Cooperation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COOPERATION_STRATEGY</Tag>
+		<English>Extra food and production on Tribes</English>
+		<French>Extra food and production on Tribes</French>
+		<German>Extra food and production on Tribes</German>
+		<Italian>Extra food and production on Tribes</Italian>
+		<Spanish>Extra food and production on Tribes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ANCESTRAL_LANDS</Tag>
+		<English>Ancestral Lands</English>
+		<French>Ancestral Lands</French>
+		<German>Ancestral Lands</German>
+		<Italian>Ancestral Lands</Italian>
+		<Spanish>Ancestral Lands</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ANCESTRAL_LANDS_STRATEGY</Tag>
+		<English>Prevents advanced civilizations from culturally dominating</English>
+		<French>Prevents advanced civilizations from culturally dominating</French>
+		<German>Prevents advanced civilizations from culturally dominating</German>
+		<Italian>Prevents advanced civilizations from culturally dominating</Italian>
+		<Spanish>Prevents advanced civilizations from culturally dominating</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTAINS</Tag>
+		<English>Captains</English>
+		<French>Captains</French>
+		<German>Captains</German>
+		<Italian>Captains</Italian>
+		<Spanish>Captains</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPTAINS_STRATEGY</Tag>
+		<English>The most primitive Executive civic</English>
+		<French>The most primitive Executive civic</French>
+		<German>The most primitive Executive civic</German>
+		<Italian>The most primitive Executive civic</Italian>
+		<Spanish>The most primitive Executive civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRUSTEES</Tag>
+		<English>Trustees</English>
+		<French>Trustees</French>
+		<German>Trustees</German>
+		<Italian>Trustees</Italian>
+		<Spanish>Trustees</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRUSTEES_STRATEGY</Tag>
+		<English>Faster production of Schoolhouse, Stocks, Monument</English>
+		<French>Faster production of Schoolhouse, Stocks, Monument</French>
+		<German>Faster production of Schoolhouse, Stocks, Monument</German>
+		<Italian>Faster production of Schoolhouse, Stocks, Monument</Italian>
+		<Spanish>Faster production of Schoolhouse, Stocks, Monument</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HOME_RULE</Tag>
+		<English>Home Rule</English>
+		<French>Home Rule</French>
+		<German>Home Rule</German>
+		<Italian>Home Rule</Italian>
+		<Spanish>Home Rule</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HOME_RULE_STRATEGY</Tag>
+		<English>Reduced maintenance from distance and number of cities</English>
+		<French>Reduced maintenance from distance and number of cities</French>
+		<German>Reduced maintenance from distance and number of cities</German>
+		<Italian>Reduced maintenance from distance and number of cities</Italian>
+		<Spanish>Reduced maintenance from distance and number of cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PENAL_COLONY</Tag>
+		<English>Penal Colony</English>
+		<French>Penal Colony</French>
+		<German>Penal Colony</German>
+		<Italian>Penal Colony</Italian>
+		<Spanish>Penal Colony</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_STRATEGY</Tag>
+		<English>Reduced hire cost of Colonists; reduced culture in all cities</English>
+		<French>Reduced hire cost of Colonists; reduced culture in all cities</French>
+		<German>Reduced hire cost of Colonists; reduced culture in all cities</German>
+		<Italian>Reduced hire cost of Colonists; reduced culture in all cities</Italian>
+		<Spanish>Reduced hire cost of Colonists; reduced culture in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PENAL_COLONY_HELP</Tag>
+		<English>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire colonists</English>
+		<French>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire colonists</French>
+		<German>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire colonists</German>
+		<Italian>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire colonists</Italian>
+		<Spanish>[ICON_BULLET]-50% [ICON_IMMIGRATION] required to hire colonists</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOLD_RUSH</Tag>
+		<English>Gold Rush</English>
+		<French>Gold Rush</French>
+		<German>Gold Rush</German>
+		<Italian>Gold Rush</Italian>
+		<Spanish>Gold Rush</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOLD_RUSH_STRATEGY</Tag>
+		<English>The most primitive Economy civic</English>
+		<French>The most primitive Economy civic</French>
+		<German>The most primitive Economy civic</German>
+		<Italian>The most primitive Economy civic</Italian>
+		<Spanish>The most primitive Economy civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FACTORY</Tag>
+		<English>Factory</English>
+		<French>Factory</French>
+		<German>Factory</German>
+		<Italian>Factory</Italian>
+		<Spanish>Factory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FACTORY_STRATEGY</Tag>
+		<English>Extra trade route in every city; faster production of Palisade, Star Fort</English>
+		<French>Extra trade route in every city; faster production of Palisade, Star Fort</French>
+		<German>Extra trade route in every city; faster production of Palisade, Star Fort</German>
+		<Italian>Extra trade route in every city; faster production of Palisade, Star Fort</Italian>
+		<Spanish>Extra trade route in every city; faster production of Palisade, Star Fort</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CUSTOMS_UNION</Tag>
+		<English>Customs Union</English>
+		<French>Customs Union</French>
+		<German>Customs Union</German>
+		<Italian>Customs Union</Italian>
+		<Spanish>Customs Union</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CUSTOMS_UNION_STRATEGY</Tag>
+		<English>Extra gold from colonies</English>
+		<French>Extra gold from colonies</French>
+		<German>Extra gold from colonies</German>
+		<Italian>Extra gold from colonies</Italian>
+		<Spanish>Extra gold from colonies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CLAIMS</Tag>
+		<English>Claims</English>
+		<French>Claims</French>
+		<German>Claims</German>
+		<Italian>Claims</Italian>
+		<Spanish>Claims</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CLAIMS_STRATEGY</Tag>
+		<English>The most primitive Expansion civic</English>
+		<French>The most primitive Expansion civic</French>
+		<German>The most primitive Expansion civic</German>
+		<Italian>The most primitive Expansion civic</Italian>
+		<Spanish>The most primitive Expansion civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROVIDENCE</Tag>
+		<English>Providence</English>
+		<French>Providence</French>
+		<German>Providence</German>
+		<Italian>Providence</Italian>
+		<Spanish>Providence</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROVIDENCE_STRATEGY</Tag>
+		<English>Extra culture in new cities</English>
+		<French>Extra culture in new cities</French>
+		<German>Extra culture in new cities</German>
+		<Italian>Extra culture in new cities</Italian>
+		<Spanish>Extra culture in new cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROVIDENCE_HELP</Tag>
+		<English>[ICON_BULLET]Extra culture in newly founded cities</English>
+		<French>[ICON_BULLET]Extra culture in newly founded cities</French>
+		<German>[ICON_BULLET]Extra culture in newly founded cities</German>
+		<Italian>[ICON_BULLET]Extra culture in newly founded cities</Italian>
+		<Spanish>[ICON_BULLET]Extra culture in newly founded cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STRONGMAN</Tag>
+		<English>Strongman</English>
+		<French>Strongman</French>
+		<German>Strongman</German>
+		<Italian>Strongman</Italian>
+		<Spanish>Strongman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_STRONGMAN_STRATEGY</Tag>
+		<English>The most primitive Executive civic</English>
+		<French>The most primitive Executive civic</French>
+		<German>The most primitive Executive civic</German>
+		<Italian>The most primitive Executive civic</Italian>
+		<Spanish>The most primitive Executive civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_JUNTA</Tag>
+		<English>Junta</English>
+		<French>Junta</French>
+		<German>Junta</German>
+		<Italian>Junta</Italian>
+		<Spanish>Junta</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_JUNTA_STRATEGY</Tag>
+		<English>Extra happiness from Barracks; less experience needed for promotions</English>
+		<French>Extra happiness from Barracks; less experience needed for promotions</French>
+		<German>Extra happiness from Barracks; less experience needed for promotions</German>
+		<Italian>Extra happiness from Barracks; less experience needed for promotions</Italian>
+		<Spanish>Extra happiness from Barracks; less experience needed for promotions</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLUTOCRACY</Tag>
+		<English>Plutocracy</English>
+		<French>Plutocracy</French>
+		<German>Plutocracy</German>
+		<Italian>Plutocracy</Italian>
+		<Spanish>Plutocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLUTOCRACY_STRATEGY</Tag>
+		<English>Faster production of Bank, Universitie; extra happiness from Bank</English>
+		<French>Faster production of Bank, Universitie; extra happiness from Bank</French>
+		<German>Faster production of Bank, Universitie; extra happiness from Bank</German>
+		<Italian>Faster production of Bank, Universitie; extra happiness from Bank</Italian>
+		<Spanish>Faster production of Bank, Universitie; extra happiness from Bank</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MINARCHY</Tag>
+		<English>Minarchy</English>
+		<French>Minarchy</French>
+		<German>Minarchy</German>
+		<Italian>Minarchy</Italian>
+		<Spanish>Minarchy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MINARCHY_STRATEGY</Tag>
+		<English>The most primitive Administration civic</English>
+		<French>The most primitive Administration civic</French>
+		<German>The most primitive Administration civic</German>
+		<Italian>The most primitive Administration civic</Italian>
+		<Spanish>The most primitive Administration civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANDATE</Tag>
+		<English>Mandate</English>
+		<French>Mandate</French>
+		<German>Mandate</German>
+		<Italian>Mandate</Italian>
+		<Spanish>Mandate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANDATE_STRATEGY</Tag>
+		<English>Free specialists in core cities; units cost more maintenance</English>
+		<French>Free specialists in core cities; units cost more maintenance</French>
+		<German>Free specialists in core cities; units cost more maintenance</German>
+		<Italian>Free specialists in core cities; units cost more maintenance</Italian>
+		<Spanish>Free specialists in core cities; units cost more maintenance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_KLEPTOCRACY</Tag>
+		<English>Kleptocracy</English>
+		<French>Kleptocracy</French>
+		<German>Kleptocracy</German>
+		<Italian>Kleptocracy</Italian>
+		<Spanish>Kleptocracy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_KLEPTOCRACY_STRATEGY</Tag>
+		<English>Units cost less maintenance; extra trade route yield in capital; reduced commerce in all cities</English>
+		<French>Units cost less maintenance; extra trade route yield in capital; reduced commerce in all cities</French>
+		<German>Units cost less maintenance; extra trade route yield in capital; reduced commerce in all cities</German>
+		<Italian>Units cost less maintenance; extra trade route yield in capital; reduced commerce in all cities</Italian>
+		<Spanish>Units cost less maintenance; extra trade route yield in capital; reduced commerce in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP</Tag>
+		<English>Apprenticeship</English>
+		<French>Apprenticeship</French>
+		<German>Apprenticeship</German>
+		<Italian>Apprenticeship</Italian>
+		<Spanish>Apprenticeship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_APPRENTICESHIP_STRATEGY</Tag>
+		<English>Extra commerce on workshops; faster production of Forge, Lumbermill</English>
+		<French>Extra commerce on workshops; faster production of Forge, Lumbermill</French>
+		<German>Extra commerce on workshops; faster production of Forge, Lumbermill</German>
+		<Italian>Extra commerce on workshops; faster production of Forge, Lumbermill</Italian>
+		<Spanish>Extra commerce on workshops; faster production of Forge, Lumbermill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LAISSEZ_FAIRE</Tag>
+		<English>Laissez Faire</English>
+		<French>Laissez Faire</French>
+		<German>Laissez Faire</German>
+		<Italian>Laissez Faire</Italian>
+		<Spanish>Laissez Faire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LAISSEZ_FAIRE_STRATEGY</Tag>
+		<English>The most primitive Economy civic</English>
+		<French>The most primitive Economy civic</French>
+		<German>The most primitive Economy civic</German>
+		<Italian>The most primitive Economy civic</Italian>
+		<Spanish>The most primitive Economy civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EXTRACTION</Tag>
+		<English>Extraction</English>
+		<French>Extraction</French>
+		<German>Extraction</German>
+		<Italian>Extraction</Italian>
+		<Spanish>Extraction</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EXTRACTION_STRATEGY</Tag>
+		<English>Extra commerce on mines; extra production on lumbercamps; extra food on camps</English>
+		<French>Extra commerce on mines; extra production on lumbercamps; extra food on camps</French>
+		<German>Extra commerce on mines; extra production on lumbercamps; extra food on camps</German>
+		<Italian>Extra commerce on mines; extra production on lumbercamps; extra food on camps</Italian>
+		<Spanish>Extra commerce on mines; extra production on lumbercamps; extra food on camps</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROTECTIONISM</Tag>
+		<English>Protectionism</English>
+		<French>Protectionism</French>
+		<German>Protectionism</German>
+		<Italian>Protectionism</Italian>
+		<Spanish>Protectionism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PROTECTIONISM_STRATEGY</Tag>
+		<English>Reduced commerce from trade routes; increase food and production from trade routes</English>
+		<French>Reduced commerce from trade routes; increase food and production from trade routes</French>
+		<German>Reduced commerce from trade routes; increase food and production from trade routes</German>
+		<Italian>Reduced commerce from trade routes; increase food and production from trade routes</Italian>
+		<Spanish>Reduced commerce from trade routes; increase food and production from trade routes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REVOLUTION</Tag>
+		<English>Revolution</English>
+		<French>Revolution</French>
+		<German>Revolution</German>
+		<Italian>Revolution</Italian>
+		<Spanish>Revolution</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_REVOLUTION_STRATEGY</Tag>
+		<English>The most primitive Society civic</English>
+		<French>The most primitive Society civic</French>
+		<German>The most primitive Society civic</German>
+		<Italian>The most primitive Society civic</Italian>
+		<Spanish>The most primitive Society civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LIBERTARIANISM</Tag>
+		<English>Libertarianism</English>
+		<French>Libertarianism</French>
+		<German>Libertarianism</German>
+		<Italian>Libertarianism</Italian>
+		<Spanish>Libertarianism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_LIBERTARIANISM_STRATEGY</Tag>
+		<English>Increased great people birth rate</English>
+		<French>Increased great people birth rate</French>
+		<German>Increased great people birth rate</German>
+		<Italian>Increased great people birth rate</Italian>
+		<Spanish>Increased great people birth rate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATIVISM</Tag>
+		<English>Nativism</English>
+		<French>Nativism</French>
+		<German>Nativism</German>
+		<Italian>Nativism</Italian>
+		<Spanish>Nativism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NATIVISM_STRATEGY</Tag>
+		<English>Increased food in all cities; reduced immigration in all cities; extra unhappiness in largest cities</English>
+		<French>Increased food in all cities; reduced immigration in all cities; extra unhappiness in largest cities</French>
+		<German>Increased food in all cities; reduced immigration in all cities; extra unhappiness in largest cities</German>
+		<Italian>Increased food in all cities; reduced immigration in all cities; extra unhappiness in largest cities</Italian>
+		<Spanish>Increased food in all cities; reduced immigration in all cities; extra unhappiness in largest cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EGALITARIANISM</Tag>
+		<English>Egalitarianism</English>
+		<French>Egalitarianism</French>
+		<German>Egalitarianism</German>
+		<Italian>Egalitarianism</Italian>
+		<Spanish>Egalitarianism</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EGALITARIANISM_STRATEGY</Tag>
+		<English>No State Religion; double slots for Artist, Scientist; extra commerce on Contacted Tribe; extra immigration in all cities</English>
+		<French>No State Religion; double slots for Artist, Scientist; extra commerce on Contacted Tribe; extra immigration in all cities</French>
+		<German>No State Religion; double slots for Artist, Scientist; extra commerce on Contacted Tribe; extra immigration in all cities</German>
+		<Italian>No State Religion; double slots for Artist, Scientist; extra commerce on Contacted Tribe; extra immigration in all cities</Italian>
+		<Spanish>No State Religion; double slots for Artist, Scientist; extra commerce on Contacted Tribe; extra immigration in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DISPLACEMENT</Tag>
+		<English>Displacement</English>
+		<French>Displacement</French>
+		<German>Displacement</German>
+		<Italian>Displacement</Italian>
+		<Spanish>Displacement</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DISPLACEMENT_STRATEGY</Tag>
+		<English>The most primitive Expansion civic</English>
+		<French>The most primitive Expansion civic</French>
+		<German>The most primitive Expansion civic</German>
+		<Italian>The most primitive Expansion civic</Italian>
+		<Spanish>The most primitive Expansion civic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ASSIMILATION</Tag>
+		<English>Assimilation</English>
+		<French>Assimilation</French>
+		<German>Assimilation</German>
+		<Italian>Assimilation</Italian>
+		<Spanish>Assimilation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_ASSIMILATION_STRATEGY</Tag>
+		<English>Extra food, production, and commerce on Contacted Tribes</English>
+		<French>Extra food, production, and commerce on Contacted Tribes</French>
+		<German>Extra food, production, and commerce on Contacted Tribes</German>
+		<Italian>Extra food, production, and commerce on Contacted Tribes</Italian>
+		<Spanish>Extra food, production, and commerce on Contacted Tribes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY</Tag>
+		<English>Manifest Destiny</English>
+		<French>Manifest Destiny</French>
+		<German>Manifest Destiny</German>
+		<Italian>Manifest Destiny</Italian>
+		<Spanish>Manifest Destiny</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Tag>
+		<English>Extra experience for land units; extra culture in new cities</English>
+		<French>Extra experience for land units; extra culture in new cities</French>
+		<German>Extra experience for land units; extra culture in new cities</German>
+		<Italian>Extra experience for land units; extra culture in new cities</Italian>
+		<Spanish>Extra experience for land units; extra culture in new cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_HELP</Tag>
+		<English>[ICON_BULLET]Extra culture in newly founded cities</English>
+		<French>[ICON_BULLET]Extra culture in newly founded cities</French>
+		<German>[ICON_BULLET]Extra culture in newly founded cities</German>
+		<Italian>[ICON_BULLET]Extra culture in newly founded cities</Italian>
+		<Spanish>[ICON_BULLET]Extra culture in newly founded cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HEGEMONY</Tag>
+		<English>Hegemony</English>
+		<French>Hegemony</French>
+		<German>Hegemony</German>
+		<Italian>Hegemony</Italian>
+		<Spanish>Hegemony</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_HEGEMONY_STRATEGY</Tag>
+		<English>Extra yield from trade routes with defensive pact partners</English>
+		<French>Extra yield from trade routes with defensive pact partners</French>
+		<German>Extra yield from trade routes with defensive pact partners</German>
+		<Italian>Extra yield from trade routes with defensive pact partners</Italian>
+		<Spanish>Extra yield from trade routes with defensive pact partners</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC__STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 </Civ4GameText>

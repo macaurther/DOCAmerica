@@ -9624,7 +9624,7 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_AFRICAN_SLAVE</Class>
-			<Type>UNIT_AFRICAN_SLAVE</Type>
+			<Type>UNIT_AFRICAN_SLAVE_COLONY</Type>
 			<Capture>UNITCLASS_AFRICAN_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
@@ -9656,7 +9656,7 @@
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
-			<PrereqBuilding>BUILDING_SLAVE_MARKET</PrereqBuilding>
+			<PrereqBuilding>BUILDING_SLAVE_MARKET_COLONY</PrereqBuilding>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9677,10 +9677,68 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_AFRICAN_SLAVE</Class>
+			<Type>UNIT_AFRICAN_SLAVE_NATION</Type>
+			<Capture>UNITCLASS_AFRICAN_SLAVE</Capture>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_SLAVE_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bSlave>1</bSlave>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_SLAVE_PLANTATION</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_SLAVE</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<PrereqBuilding>BUILDING_SLAVE_MARKET_NATION</PrereqBuilding>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iWorkRate>100</iWorkRate>
+			<iAsset>2</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_AFRICAN_SLAVE</EarlyArtDefineTag>
+					<LateArtDefineTag>ART_DEF_UNIT_AFRICAN_SLAVE</LateArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_NATIVE_SLAVE</Class>
-			<Type>UNIT_NATIVE_SLAVE</Type>
+			<Type>UNIT_NATIVE_SLAVE_NATIVE</Type>
 			<Capture>UNITCLASS_NATIVE_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
@@ -9712,7 +9770,7 @@
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
-			<PrereqBuilding>BUILDING_SLAVE_MARKET</PrereqBuilding>
+			<PrereqBuilding>BUILDING_SLAVE_MARKET_NATIVE</PrereqBuilding>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9734,6 +9792,65 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_NATIVE_SLAVE</Class>
+			<Type>UNIT_NATIVE_SLAVE_COLONY</Type>
+			<Capture>UNITCLASS_NATIVE_SLAVE</Capture>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_SLAVE_HELP</Help>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bSlave>1</bSlave>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_SLAVE_PLANTATION</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_SLAVE</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
+			<PrereqBuilding>BUILDING_SLAVE_MARKET_COLONY</PrereqBuilding>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iWorkRate>100</iWorkRate>
+			<iBaseHurry>30</iBaseHurry>
+			<iAsset>2</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>2</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>2</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>2</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SLAVE</EarlyArtDefineTag>
+					<LateArtDefineTag>ART_DEF_UNIT_SLAVE</LateArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MIGRANT_WORKER</Class>

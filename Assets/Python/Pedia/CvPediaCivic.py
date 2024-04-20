@@ -71,12 +71,14 @@ class CvPediaCivic:
 		screen.appendListBoxString(panel, u"<font=4b>" + CivicInfo.getDescription() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 		screen.appendListBoxString(panel, u"<font=3>" + CategoryInfo.getDescription() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 		
-		# MacAurther: Add info on who can enable this Civics (Americans or Europeans only)
+		# MacAurther: Add info on who can enable this Civics (Natives, Colonies, or Nations)
 		iCultureGroup = CivicInfo.getCultureGroup();
 		if iCultureGroup == 1:
-			screen.appendListBoxString(panel, u"<font=3>Americans Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+			screen.appendListBoxString(panel, u"<font=3>Natives Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 		elif iCultureGroup == 2:
-			screen.appendListBoxString(panel, u"<font=3>Europeans Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+			screen.appendListBoxString(panel, u"<font=3>Colonies Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		elif iCultureGroup == 3:
+			screen.appendListBoxString(panel, u"<font=3>Nations Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def placeRequires(self):
 		screen = self.top.getScreen()
@@ -122,7 +124,7 @@ class CvPediaCivic:
 		text = self.top.getNextWidgetName()
 
 		screen.addPanel(panel, CyTranslator().getText("TXT_KEY_CIVILOPEDIA_HISTORY", ()), "", True, True, self.X_HISTORY, self.Y_HISTORY, self.W_HISTORY, self.H_HISTORY, PanelStyles.PANEL_STYLE_BLUE50)
-		if self.iCivic == iMulticulturalism:
+		if self.iCivic == iEgalitarianism3:
 			victorytext = CyTranslator().getText("TXT_KEY_PEDIA_RELIGIOUS_VICTORY", ())
 			victorytext += "\n".join(u"%c%s" % (game.getSymbolID(FontSymbols.BULLET_CHAR), goal.description()) for goal in Victories.dReligiousGoals[iVictorySecularism])
 			szHistory = victorytext + "\n\n" + gc.getCivicInfo(self.iCivic).getCivilopedia()

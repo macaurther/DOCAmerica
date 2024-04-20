@@ -20,7 +20,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AME</Identifier>
 			<Region>ANG</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1775</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
@@ -69,6 +69,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -78,6 +82,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_SPY</UnitClassType>
 					<UnitType>UNIT_AMERICAN_AGENT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -95,12 +103,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -154,7 +162,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>ARG</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>45</LoadingTime>
@@ -201,6 +209,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -210,6 +222,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_GREAT_GENERAL</UnitClassType>
 					<UnitType>UNIT_ARGENTINE_GREAT_GENERAL</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -227,12 +243,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -350,12 +366,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -381,7 +397,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>BRA</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -428,11 +444,23 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_LABORER</UnitClassType>
 					<UnitType>UNIT_BRAZILIAN_MADEIREIRO</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -450,12 +478,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -548,8 +576,17 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
-			<Units/>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
+				</Unit>
+			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
@@ -565,12 +602,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -658,12 +695,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -689,7 +726,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>COL</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -732,6 +769,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -741,6 +782,10 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_DRAGOON</UnitClassType>
 					<UnitType>UNIT_COLOMBIAN_LLANERO</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -758,12 +803,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -848,6 +893,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -857,6 +906,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
 					<UnitType>UNIT_ENGLISH_MAN_OF_WAR</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -874,12 +931,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
+				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
+				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
+				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1063,6 +1120,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -1072,6 +1133,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_FUSILIER</UnitClassType>
 					<UnitType>UNIT_FRENCH_COMPAGNIES</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1089,12 +1158,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
+				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
+				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
+				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1128,7 +1197,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAI</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -1184,11 +1253,19 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_GRENADIER</UnitClassType>
 					<UnitType>UNIT_HAITIAN_CACOS</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1206,12 +1283,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1309,12 +1386,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1408,12 +1485,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1519,12 +1596,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1663,12 +1740,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1779,12 +1856,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -1810,7 +1887,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>MEX</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -1861,11 +1938,19 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_PISTOLIER</UnitClassType>
 					<UnitType>UNIT_MEXICAN_RURAL</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses/>
@@ -1878,12 +1963,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2007,12 +2092,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2097,12 +2182,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2230,11 +2315,23 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_INDIAMAN</UnitClassType>
 					<UnitType>UNIT_DUTCH_FLUYT</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2252,12 +2349,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
+				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
+				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
+				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2385,11 +2482,23 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_CANOE</UnitClassType>
 					<UnitType>UNIT_VIKING_LONGSHIP</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2407,12 +2516,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
+				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
+				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
+				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2446,7 +2555,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PER</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -2489,11 +2598,19 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_MUSKETEER</UnitClassType>
 					<UnitType>UNIT_PERUVIAN_GUARDIA</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2511,12 +2628,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2608,6 +2725,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -2617,6 +2738,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<UnitType>UNIT_PORTUGUESE_CARRACK</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2634,12 +2763,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
+				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
+				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
+				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2726,12 +2855,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2812,12 +2941,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -2929,11 +3058,23 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
 					<UnitType>UNIT_RUSSIAN_PROMYSHLENNIKI</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2951,12 +3092,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
+				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
+				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
+				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3039,6 +3180,10 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -3048,6 +3193,14 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_INDIAMAN</UnitClassType>
 					<UnitType>UNIT_SPANISH_GALLEON</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
+					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3065,12 +3218,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CAPTAINS_COLONY</CivicType>
+				<CivicType>CIVIC_EXPEDITION_COLONY</CivicType>
+				<CivicType>CIVIC_SERFDOM_COLONY</CivicType>
+				<CivicType>CIVIC_GOLD_RUSH_COLONY</CivicType>
+				<CivicType>CIVIC_DIVINE_RIGHT_COLONY</CivicType>
+				<CivicType>CIVIC_CLAIMS_COLONY</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3186,12 +3339,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3275,12 +3428,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3306,7 +3459,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>VEN</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>3</CultureGroup>
 			<StartingYear>1831</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -3349,11 +3502,19 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
+					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
+				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType>
 					<UnitType>UNIT_VENEZUELAN_VENCEDORES</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
+					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3371,12 +3532,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_STRONGMAN_NATION</CivicType>
+				<CivicType>CIVIC_MINARCHY_NATION</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATION</CivicType>
+				<CivicType>CIVIC_LAISSEZ_FAIRE_NATION</CivicType>
+				<CivicType>CIVIC_REVOLUTION_NATION</CivicType>
+				<CivicType>CIVIC_DISPLACEMENT_NATION</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3459,12 +3620,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3571,12 +3732,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3760,12 +3921,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -3898,12 +4059,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4029,12 +4190,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4206,12 +4367,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4278,12 +4439,12 @@
 			</FreeTechs>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>
@@ -4444,12 +4605,12 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM</CivicType>
-				<CivicType>CIVIC_AUTHORITY</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM</CivicType>
-				<CivicType>CIVIC_RECIPROCITY</CivicType>
-				<CivicType>CIVIC_ANIMISM</CivicType>
-				<CivicType>CIVIC_SOVEREIGNTY</CivicType>
+				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
 			</InitialCivics>
 			<Leaders>
 				<Leader>

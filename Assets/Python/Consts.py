@@ -218,14 +218,14 @@ iInca : 1100,
 iPurepecha : 1150,
 iAztecs : 1250,
 iIroquois : 1350,
-iSpain : 1496,
+iSpain : 20,#1496,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
 iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
-iAmerica : 1775,
+iAmerica : 20,#1775,
 iHaiti : 1804,
 iArgentina : 1810,
 iMexico : 1810,
@@ -436,7 +436,7 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 128
+iNumUnits = 130
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iSpy, 			iSisqeno,       
@@ -450,7 +450,7 @@ iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iBombard,		iCannon,		iA
 iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iSloop,			
 iFrigate,		iIronclad,		iPrivateer,	    iTorpedoBoat,	iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	iGreatArtist, 	
 iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,
-iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy, iAfricanSlave,  iNativeSlave, 	iMigrantWorker) = range(iNumUnits)
+iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlave2,	iMigrantWorker) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -487,20 +487,20 @@ iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
-iNumBuildings = 198
-# Buildings (101)
+iNumBuildings = 200
+# Buildings (103)
 #				2				3				4				5				6				7				8				9				10
 (iChieftansHut,	iGovernorsResidence,iContinentalCongress,iPalace,iGovernorsMansion,iCapitol,	iGranary,		iColcas,		iIgloo,			iMarket,		
 iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		iPyramid,		
 iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		iWalls,			
 iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			iStocks,		
 iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			iConstabulary,	
-iRoyalMountedPolice,iSlaveMarket,iWharf,		iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		iStarFort,		iCitadelle,		
-iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	iWheelwright,	
-iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	iMagazine,		iShipyard,		
-iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,
-iTextileMill,	iWoolMill,		iSteelMill,		iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		
-iNewspaper,				
+iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		
+iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
+iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	
+iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			
+iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		iArsenal,		
+iDrydock,		iLibrary,		iNewspaper,				
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -535,19 +535,34 @@ iPlague = iNumBuildings
 iNumBuildingsPlague = iNumBuildings+1
 
 #Civics
-iNumCivics = 63
-(iChiefdom, iExpedition, iDespotism, iViceroyalty, iCouncil, iCharterColony, iMonarchy, iTradeCompany, iDemocracy, iRoyalColony, iDictatorship, iDominion, iStateParty, iCommonwealth,
-iAuthority, iCustomaryLaw, iMaritimeLaw, iAristocracy, iCommonLaw, iConfederacy, iProprietaries, iFederalism, iGovernors, iSpoilsSystem, iColonialAssembly, iPoliceState, iProvinces,
-iTraditionalism, iSerfdom, iCaptives, iEncomienda, iCraftsmen, iIndenturedServitude, iSlavery, iIndustrialism, iImmigrantLabor, iLaborUnions,
-iReciprocity, iMerchantTrade, iMercantilism, iAgrarianism, iFreeEnterprise, iConsumerism, iPublicWelfare,
-iAnimism, iDivineRight, iHarmony, iGloriaInDeo, iCasteSystem, iJesuits, iIsolationism, iHaven, iProfiteering, iOpportunity, iMulticulturalism,
-iSovereignty, iTributaries, iConquest, iOutposts, iHomesteads, iDecolonization, iIntervention, iNationhood) = range(iNumCivics)
+iNumCivics = 126
+#				2				3				4				5				6				7				
+# Native (Culture Group 1)
+(iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iCouncil1,		iAristocracy1,	iGodKing1,
+iAuthority1,	iCustomaryLaw1,	iCityStates1,	iConfederacy1,	iBureaucracy1,	iVassalage1,	iFirstNation1,
+iTraditionalism1,iSubsistance1,	iCaptives1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iSlavery1,	
+iReciprocity1,	iCommune1,		iRedistribution1,iMerchants1,	iPlunder1,		iDependency1,	iTourism1,
+iAnimism1,		iHarmony1,		iOrganizedReligion1,iCosmopolis1,iIsolationism1,iAcculturation1,iSovereignty1,
+iSettlement1,	iNomads1,		iDiffusion1,	iConquest1,		iCooperation1,	iTributaries1,	iAncestralLands1,
+# Colony
+iCaptains2,		iViceroyality2,	iProprietaries2,iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
+iExpedition2,	iAdmiralty2,	iCharterColony2,iTradeCompany2,	iRoyalColony2,	iCommonLaw2,	iProvinces2,
+iSerfdom2,		iEncomienda2,	iIndenturedServitude2,iSlavery2,iPenalColony2,	iIndustrialism2,iImmigrantLabor2,
+iGoldRush2,		iPlunder2,		iFactory2,		iMercantilism2,	iCustomsUnion2,	iConsumerism2,	iPublicWelfare2,
+iDivineRight2,	iZealotry2,		iJesuits2,		iHaven2,		iProfiteering2,	iOpportunity2,	iEmancipation2,
+iClaims2,		iConquest2,		iProvidence2,	iOutposts2,		iHomesteads2,	iIntervention2,	iCommonwealth2,
+# Nation
+iStrongman3,	iJunta3,		iMonarchy3,		iPlutocracy3,	iDemocracy3,	iDictatorship3,	iStateParty3,
+iMinarchy3,		iCommonLaw3,	iConfederacy3,	iFederalism3,	iMandate3,		iKleptocracy3,	iPoliceState3,
+iTraditionalism3,iSubsistance3,	iApprenticeship3,iSlavery3,		iIndustrialism3,iImmigrantLabor3,iLaborUnions3,
+iLaissezFaire3,	iAgrarianism3,	iExtraction3,	iFreeEnterprise3,iProtectionism3,iConsumerism3,	iPublicWelfare3,
+iRevolution3,	iLibertarianism3,iProfiteering3,iOpportunity3,	iEmancipation3,	iNativism3,		iEgalitarianism3,
+iDisplacement3,	iHomesteads3,	iAssimilation3,	iManifestDestiny3,iDecolonization3,iNationhood3,iHegemony3) = range(iNumCivics)
 
 iNumCivicCategories = 6
-(iCivicsGovernment, iCivicsLegitimacy, iCivicsSociety, iCivicsEconomy, iCivicsReligion, iCivicsTerritory) = range(iNumCivicCategories)
+(iCivicsExecutive, iCivicsAdministration, iCivicsLabor, iCivicsEconomy, iCivicsSociety, iCivicsExpansion) = range(iNumCivicCategories)
 
-lCivicCountInCategory = [14, 13, 10, 7, 11, 8];
-lCivicDefaultsInCateogry = [2, 1, 2, 1, 2, 1];
+iNumCivicsPerCategory = 7
 
 
 #Specialists
@@ -709,7 +724,7 @@ lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
 lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship]
 lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
-lSlaves = [iAfricanSlave]
+lSlaves = [iAfricanSlave2, iAfricanSlave3]
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger]

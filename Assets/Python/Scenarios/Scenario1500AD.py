@@ -9,44 +9,44 @@ lCivilizations = [
 	Civilization(
 		iMuisca,
 		iGold=200,
-		lCivics=[iMerchantTrade],
+		lCivics=[iMerchants1],
 		techs=techs.column(2)
 	),
 	Civilization(
 		iNorse,
 		iGold=50,
-		lCivics=[iMaritimeLaw, iCommonLaw, iMerchantTrade],
+		lCivics=[],
 		techs=techs.column(4).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iInuit,
 		iGold=25,
-		lCivics=[iCouncil],
+		lCivics=[iCouncil1],
 		techs=techs.column(2)
 	),
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iAristocracy, iSlavery, iMerchantTrade, iCasteSystem, iConquest],
+		lCivics=[iAristocracy1, iSlavery1, iMerchants1, iCasteSystem1, iConquest1],
 		techs=techs.column(2).including(iArtisanry, iMasonry).without(iSailing)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism, iSlavery, iMerchantTrade, iCasteSystem, iTributaries],
+		lCivics=[iDespotism1, iSlavery1, iMerchants1, iCasteSystem1, iTributaries1],
 		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
 		iIroquois,
 		iGold=600,
-		lCivics=[iConfederacy, iCouncil],
+		lCivics=[iConfederacy1, iCouncil1],
 		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpedition, iMaritimeLaw, iConquest],
+		lCivics=[iExpedition2, iAdmiralty2, iConquest2],
 		techs=techs.column(6).without(*lNativeTechs)
 	),
 	Civilization(

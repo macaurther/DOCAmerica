@@ -189,7 +189,7 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=75,
-		lCivics=[iCaptives],
+		lCivics=[iCaptives1],
 		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, iHerbalism)
 	),
 	Civilization(
@@ -230,107 +230,107 @@ lCivilizations = [
 	Civilization(
 		iNorse,
 		iGold=50,
-		lCivics=[iExpedition, iSerfdom, iMerchantTrade],
+		lCivics=[iExpedition2, iSerfdom2],
 		techs=techs.column(8).without(iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing, iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iChimu,
 		iGold=300,
-		lCivics=[iDespotism, iMerchantTrade],
+		lCivics=[iDespotism1, iMerchants1],
 		techs=techs.column(4).including(iConstruction, iTrade).without(iHunting, iTrapping)
 	),
 	Civilization(
 		iInuit,
 		iGold=25,
-		lCivics=[iHarmony],
+		lCivics=[iHarmony1],
 		techs=techs.column(2).including(iTanning, iMythology, iSailing).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iDespotism, iCustomaryLaw, iCaptives, iMerchantTrade],
+		lCivics=[iDespotism1, iCustomaryLaw1, iCaptives1, iMerchants1],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iPurepecha,
 		iGold=500,
-		lCivics=[iDespotism, iCaptives, iTributaries],
+		lCivics=[iDespotism1, iCaptives1, iTributaries1],
 		techs=techs.column(4).including(iAlloys, iConstruction, iMathematics, iWriting).without(iTrapping)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism, iCaptives, iCasteSystem, iTributaries],
+		lCivics=[iDespotism1, iCaptives1, iCasteSystem1, iTributaries1],
 		lEnemies=[iTeotihuacan],
 		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iIroquois,
 		iGold=200,
-		lCivics=[iConfederacy, iHarmony],
+		lCivics=[iConfederacy1, iHarmony1],
 		techs=techs.column(3).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpedition, iMaritimeLaw, iEncomienda, iMerchantTrade, iGloriaInDeo, iConquest],
+		lCivics=[iCaptains2, iAdmiralty2, iEncomienda2, iPlunder2, iZealotry2, iConquest2],
 		techs=techs.column(9).without(*lNativeTechs)
 	),
 	Civilization(
 		iPortugal,
 		iGold=200,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpedition, iProprietaries, iEncomienda, iMerchantTrade, iDivineRight, iTributaries],
+		lCivics=[iExpedition2, iProprietaries2, iEncomienda2, iDivineRight2],
 		techs=techs.column(9).including(iDiplomacy, iLogistics, iExploration, iOptics, iOfficials).without(*lNativeTechs)
 	),
 	Civilization(
 		iEngland,
 		iGold=200,
 		iStateReligion=iProtestantism,
-		lCivics=[iCharterColony, iCommonLaw, iIndenturedServitude, iMercantilism, iHaven],
+		lCivics=[iCharterColony2, iCommonLaw2, iIndenturedServitude2, iMercantilism2, iHaven2],
 		techs=techs.column(10).including(iShipbuilding, iCharter, iCommunity, iIndentures).without(*lNativeTechs)
 	),
 	Civilization(
 		iFrance,
 		iGold=150,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpedition, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
+		lCivics=[iExpedition2, iAdmiralty2, iSerfdom2, iDivineRight2],
 		techs=techs.column(10).including(iShipbuilding, iFortification).without(*lNativeTechs)
 	),
 	Civilization(
 		iNetherlands,
 		iGold=600,
 		iStateReligion=iProtestantism,
-		lCivics=[iTradeCompany, iMaritimeLaw, iSerfdom, iMerchantTrade, iDivineRight],
+		lCivics=[iTradeCompany2, iAdmiralty2, iSerfdom2, iDivineRight2],
 		techs=techs.column(10).including(iEconomics, iShipbuilding).without(*lNativeTechs)
 	),
 	Civilization(
 		iHawaii,
 		iGold=200,
-		lCivics=[iCaptives],
+		lCivics=[iCaptives1],
 		techs=techs.column(3).including(iSeafaring).without(iTanning)
 	),
 	Civilization(
 		iRussia,
 		iGold=200,
 		iStateReligion=iOrthodoxy,
-		lCivics=[iExpedition, iMaritimeLaw, iIndenturedServitude, iAgrarianism, iProfiteering],
+		lCivics=[iExpedition2, iAdmiralty2, iIndenturedServitude2, iProfiteering2],
 		techs=techs.column(12).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iAmerica,
 		iGold=1500,
 		iStateReligion=iProtestantism,
-		lCivics=[iDemocracy, iConfederacy, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
+		lCivics=[iDemocracy3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iEngland],
 		techs=techs.column(14).including(iRepresentation, iIndependence, iSurveying)
 	),
 	Civilization(
 		iHaiti,
 		iGold=100,
-		lCivics=[iMonarchy, iCustomaryLaw, iCraftsmen, iAgrarianism, iIsolationism],
+		lCivics=[iMonarchy3, iApprenticeship3, iAgrarianism3],
 		lEnemies=[iFrance],
 		techs=techs.column(15)
 	),
@@ -338,7 +338,7 @@ lCivilizations = [
 		iArgentina,
 		iGold=1200,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iConfederacy, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
+		lCivics=[iMonarchy3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
 		techs=techs.column(15).including(iGeology)
 	),
@@ -346,7 +346,7 @@ lCivilizations = [
 		iMexico,
 		iGold=500,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iCommonLaw, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
+		lCivics=[iMonarchy3, iCommonLaw3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
 		techs=techs.column(15)
 	),
@@ -354,7 +354,7 @@ lCivilizations = [
 		iColombia,
 		iGold=750,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
+		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
 		techs=techs.column(15).including(iRightsOfMan)
 	),
@@ -362,7 +362,7 @@ lCivilizations = [
 		iPeru,
 		iGold=1200,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
+		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
 		techs=techs.column(15).including(iGeology)
 	),
@@ -370,14 +370,14 @@ lCivilizations = [
 		iBrazil,
 		iGold=1600,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
+		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		techs=techs.column(15).including(iMetallurgy, iProtectionism, iHydrology)
 	),
 	Civilization(
 		iVenezuela,
 		iGold=1200,
 		iStateReligion=iCatholicism,
-		lCivics=[iMonarchy, iFederalism, iSlavery, iAgrarianism, iProfiteering, iHomesteads],
+		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iColombia],
 		techs=techs.column(15).including(iGeology)
 	),
@@ -386,7 +386,7 @@ lCivilizations = [
 		iGold=1000,
 		iStateReligion=iProtestantism,
 		iMaster=iEngland,
-		lCivics=[iCommonwealth, iProvinces, iIndustrialism, iFreeEnterprise, iOpportunity, iHomesteads],
+		lCivics=[iIndustrialism3, iFreeEnterprise3, iOpportunity3, iHomesteads3],
 		techs=techs.column(18)
 	),
 ]

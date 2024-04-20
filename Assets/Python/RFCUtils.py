@@ -411,7 +411,7 @@ def freeSlaves(city, iPlayer):
 		createRoleUnit(iPlayer, city, iBase, iNumSlaves, 0)
 		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
 	elif player(iPlayer).canUseSlaves():
-		makeUnits(iPlayer, base_unit(iAfricanSlave), city, iNumSlaves)
+		makeUnits(iPlayer, base_unit(iAfricanSlave3), city, iNumSlaves)
 	else:
 		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
 	
@@ -583,7 +583,7 @@ def getUnitsForRole(iPlayer, iRole):
 		
 		elif iRole == iColonistSlave:	# Ferry + N Slaves
 			for _ in range(iCargoSpace):
-				units.append([iAfricanSlave, UnitAITypes.UNITAI_WORKER])
+				units.append([iAfricanSlave2, UnitAITypes.UNITAI_WORKER])
 	
 	return units
 
@@ -945,7 +945,7 @@ def captureUnit(pLosingUnit, pWinningUnit, iUnit, iChance):
 	iPlayer = pWinningUnit.getOwner()
 	
 	if rand(100) < iChance:
-		if iUnit in [iNativeSlave, iAfricanSlave]:
+		if iUnit in [iNativeSlave1, iNativeSlave2, iAfricanSlave2, iAfricanSlave3]:
 			makeUnit(iPlayer, iUnit, pWinningUnit, UnitAITypes.UNITAI_WORKER)
 			message(pWinningUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=8, location=pWinningUnit)
 			message(pLosingUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_LOSE', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pWinningUnit)
