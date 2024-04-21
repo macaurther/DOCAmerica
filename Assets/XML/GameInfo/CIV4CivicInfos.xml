@@ -325,7 +325,6 @@
 			<Description>TXT_KEY_CIVIC_MITA</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MITA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MITA_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_MITA_HELP</Help>
 			<TechPrereq>TECH_MASONRY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Mita.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

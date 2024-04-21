@@ -230,7 +230,6 @@ def startTimedConquests():
 	
 	data.lTimedConquests = []
 
-
 ### BEGIN PLAYER TURN ###
 
 @handler("setPlayerAlive")
@@ -328,11 +327,8 @@ def migrateCity(iGameTurn, iPlayer):
 		pNewCity.setPopulation(iPopulation + 1)
 
 		# Assign buildings to new city
-		print("lBuildings: " + str(lBuildings))
 		for iBuilding in lBuildings:
-			print("Attempting to give iBuilding: " + str(iBuilding))
 			if not pNewCity.isHasRealBuilding(iBuilding):
-				print("Giving iBuilding: " + str(iBuilding))
 				pNewCity.setHasRealBuilding(iBuilding, True)
 	
 		# Assign culture to new city

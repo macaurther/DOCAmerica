@@ -656,7 +656,7 @@ def calculateStability(iPlayer):
 	if iFreeEnterprise3 in civics: iEconomicGrowthModifier = 4
 	
 	iEconomicGrowthStability = iEconomicGrowthModifier * calculateTrendScore(data.players[iPlayer].lEconomyTrend)
-	if iEconomicGrowthStability < 0 and iPublicWelfare in civics: iEconomicGrowthStability /= 2
+	if iEconomicGrowthStability < 0 and iPublicWelfare3 in civics: iEconomicGrowthStability /= 2
 	
 	lParameters[iParameterEconomicGrowth] = iEconomicGrowthStability
 	iEconomyStability += iEconomicGrowthStability
@@ -815,7 +815,7 @@ def calculateStability(iPlayer):
 		# wars
 		if tPlayer.isAtWar(iLoopPlayer):
 			if game.isNeighbors(iPlayer, iLoopPlayer):
-				if iNationhood in civics: iNationhoodStability += 2
+				if iNationhood3 in civics: iNationhoodStability += 2
 		
 	# attitude stability
 	lStrongerAttitudes, lEqualAttitudes, lWeakerAttitudes = calculateRankedAttitudes(iPlayer, lContacts)

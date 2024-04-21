@@ -244,6 +244,9 @@ class GameData:
 		self.migrateX = -1
 		self.migrateY = -1
 		
+		# Tribe creation
+		self.iTribeGenerationTurn = -1
+		
 	def timedConquest(self, iPlayer, tPlot):
 		self.lTimedConquests.append((iPlayer, tPlot))
 		

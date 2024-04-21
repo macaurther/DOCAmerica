@@ -34,6 +34,17 @@ def helpMinorStates():
 				if plot.isCity() and is_minor(iOwner) and plot.getNumUnits() < 4:
 					makeUnit(iOwner, random_entry(lUnits), plot)
 
+# MacAurther: Tribes reproduce
+@handler("EndGameTurn")
+def reproduceTribes():
+	if data.iTribeGenerationTurn + 5 == turn():
+		pPlot = possibleTiles(tTribeRespawnArea[0], tTribeRespawnArea[1], bWater=False, bTerritory=False, bTribeSpawn=True).random()
+		
+		print("Generating new Tribe at x: " + str(pPlot.getX()) + " y: " + str(pPlot.getY()))
+		pPlot.setImprovementType(iTribe)
+		data.iTribeGenerationTurn = turn()
+
+# MacAurther: Pillaging Tribes generates warriors
 @handler("unitPillage")
 def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 	# If pillage a tribe, get uprising
@@ -129,10 +140,10 @@ def checkSpawn(iCiv, iUnitType, iNumUnits, tTL, tBR, spawnFunction, iTurn, iPeri
 	if periodic(iPeriod):
 		spawnFunction(slot(iCiv), iUnitType, iNumUnits, tTL, tBR, random_entry(lAdj))
 			
-def possibleTiles(tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False, bForceSpawn=False):
-	return plots.start(tTL).end(tBR).where(lambda p: possibleTile(p, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn))
+def possibleTiles(tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False, bForceSpawn=False, bTribeSpawn=False):
+	return plots.start(tTL).end(tBR).where(lambda p: possibleTile(p, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn, bTribeSpawn))
 	
-def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn):
+def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn, bTribeSpawn):
 	# never on peaks
 	if plot.isPeak(): return False
 	
@@ -164,6 +175,11 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 	
 	# not on landmasses without cities, (MacAurther): except if Force Spawn
 	if not bForceSpawn and not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
+	
+	# MacAurther: Extra check for Tribe spawning
+	if bTribeSpawn and (plot.isImpassable() or plot.getImprovementType() in [iTribe, iContactedTribe] or \
+		plot.getTerrainType() in [iSnow, iSaltflat, iLagoon, iAtoll] or plot.getFeatureType() in [iBog, iJungle]):
+		return False
 	
 	return True
 

@@ -40,6 +40,9 @@ tExpeditionaryPeru = 		(20, 32)	# Lima
 
 # DynamicCivs
 
+# Tribe respawns
+tTribeRespawnArea =			((5, 5), (51, 112))
+
 # Religions
 tHolyCity = (58, 0)	# MacAurther: faux city to be the Holy City for all old world religions (in the bottom left of the map surrounded by peaks)
 

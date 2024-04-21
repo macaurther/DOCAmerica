@@ -72,3 +72,13 @@ def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):
 		if iPlayer > -1 and civ(iPlayer) == iRussia:
 			makeUnit(iPlayer, iNativeSlave2, (iX, iY), UnitAITypes.UNITAI_WORKER)
 			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave2).getButton(), color=8, location=(iX, iY))
+
+# MacAurther: Inuit UP
+@handler("cityBuilt")
+def inuitUP(pCity):
+	iPlayer = pCity.getOwner()
+	if player(iPlayer).getCivilizationType() == iInuit:
+		for i in range(gc.getNUM_CITY_PLOTS()):
+			pPlot = pCity.getCityIndexPlot(i)
+			if pPlot.getImprovementType() == -1 and pPlot.getBonusType(player(iPlayer).getTeam()) in [iFur, iDeer]:
+				pPlot.setImprovementType(iCamp)
