@@ -35,7 +35,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateN.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -73,7 +73,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateNE.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -111,7 +111,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateE.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -149,7 +149,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateSE.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -187,7 +187,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateS.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -225,7 +225,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateSW.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -263,7 +263,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateW.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>
@@ -301,7 +301,7 @@
 			<bGoldenAge>0</bGoldenAge>
 			<bFirstEnemyAnarchy>0</bFirstEnemyAnarchy>
 			<bRevealsMap>0</bRevealsMap>
-			<Button>,Art/Interface/Buttons/Buildings/ManhattanProject.dds,Art/Interface/Buttons/Buildings_Atlas.dds,7,4</Button>
+			<Button>Art/Interface/Buttons/Actions/MigrateNW.dds</Button>
 			<PrereqProjects/>
 			<VictoryThresholds/>
 			<VictoryMinThresholds/>

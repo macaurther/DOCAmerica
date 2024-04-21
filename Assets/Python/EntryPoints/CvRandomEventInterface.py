@@ -3640,7 +3640,7 @@ def canTriggerWedding(argsList):
 	kTriggeredData = argsList[0]
 	iPlayer = kTriggeredData.ePlayer
 	
-	return gc.getPlayer(iPlayer).getCivics(iCivicsExecutive) not in [iDemocracy]
+	return gc.getPlayer(iPlayer).getCivics(iCivicsExecutive) not in [iDemocracy3]
 
 
 ######## Calakmul Conflict I (FoB) ########

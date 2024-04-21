@@ -348,7 +348,7 @@
 			<Description>TXT_KEY_CIVIC_CRAFTSMEN</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CRAFTSMEN_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CRAFTSMEN_STRATEGY</Strategy>
-			<TechPrereq>TECH_ARITHMETICS</TechPrereq>
+			<TechPrereq>TECH_CONSTRUCTION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Specialization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1374,7 +1374,7 @@
 			<Description>TXT_KEY_CIVIC_DIVINE_RIGHT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DIVINE_RIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DIVINE_RIGHT_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/MonarchyNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
