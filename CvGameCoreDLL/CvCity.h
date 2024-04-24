@@ -1201,7 +1201,6 @@ public:
 
 	bool rebuild();
 	bool populate(); // MacAurther
-	BuildingClassTypes getBestCapitalBuilding(); // Macaurther
 
 	DllExport int getMusicScriptId() const;
 	DllExport int getSoundscapeScriptId() const;

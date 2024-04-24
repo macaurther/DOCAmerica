@@ -142,6 +142,11 @@
 			<Civilopedia>TXT_KEY_CONCEPT_DOCA_FORTS_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
+			<Type>CONCEPT_DOCA_CULTURE_GROUPS</Type>
+			<Description>TXT_KEY_CONCEPT_DOCA_CULTURE_GROUPS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_DOCA_CULTURE_GROUPS_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
 			<Type>CONCEPT_DOCA_ODDS</Type>
 			<Description>TXT_KEY_CONCEPT_DOCA_ODDS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_DOCA_ODDS_PEDIA</Civilopedia>

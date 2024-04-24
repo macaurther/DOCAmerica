@@ -12,7 +12,7 @@ lCivilizations = [
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iTanning, iSmelting, iMasonry).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iTanning, iSmelting, iMining, iMasonry).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iZapotec,

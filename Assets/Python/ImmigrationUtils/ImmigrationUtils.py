@@ -1368,8 +1368,8 @@ class Mercenary:
 		if iGoldCost > 0:
 			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_MERCENARY")))
 		
-		if iConquest2 in civics and self.getUnitInfoID() in [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, \
-			lSkirmishMercs, lLightCavalryMercs, lHeavyCavalryMercs, lSiegeMercs]:
+		if iConquest2 in civics and self.getUnitInfoID() in lExplorers + lMilitia + lMainlineMercs + lEliteMercs + lCollateralMercs + \
+			lSkirmishMercs + lLightCavalryMercs + lHeavyCavalryMercs + lSiegeMercs:
 			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_COMBAT1")))
 			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_COMBAT2")))
 		

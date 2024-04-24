@@ -205,7 +205,7 @@ lCivilizations = [
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(2).including(iAgriculture, iPastoralism, iMining, iMythology, iArithmetics).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iAgriculture, iPastoralism, iMining, iMythology, iArithmetics, iMythology, iDivination).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iWari,

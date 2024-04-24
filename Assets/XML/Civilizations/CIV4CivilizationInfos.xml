@@ -359,7 +359,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -688,7 +688,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1478,7 +1478,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -1849,7 +1849,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -2934,7 +2934,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -3421,7 +3421,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -3613,7 +3613,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -3725,7 +3725,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -3838,7 +3838,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
@@ -3976,7 +3976,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
@@ -4107,7 +4107,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
@@ -4288,7 +4288,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>
@@ -4431,7 +4431,7 @@
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
 				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<bFreeBuildingClass>1</bFreeBuildingClass>
 				</FreeBuildingClass>
 			</FreeBuildingClasses>
@@ -4494,7 +4494,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
 					<BuildingType>NONE</BuildingType>
 				</Building>
 				<Building>

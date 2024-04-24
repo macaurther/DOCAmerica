@@ -315,6 +315,27 @@
 			</FeatureVariety>
 		</FeatureArtInfo>
 		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_CANYON</Type>
+			<bAnimated>0</bAnimated>
+			<bRiverArt>1</bRiverArt>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<LightType>LIGHT_TYPE_SUN</LightType>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>,Art/Interface/Buttons/TerrainFeatures/FloodPlains.dds,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,2,3</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Floodplain/Canyon_baseALL.dds</ModelFile>
+						<Connections/>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<FeatureDummyNodes/>
+				<bGenerateRotations>0</bGenerateRotations>
+				<VarietyButton>Art/Interface/Buttons/TerrainFeatures/FloodPlains.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
 			<Type>ART_DEF_FEATURE_FOREST</Type>
 			<bAnimated>0</bAnimated>
 			<bRiverArt>0</bRiverArt>

@@ -2265,7 +2265,7 @@
 			<fInterfaceScale>0.43</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/ChieftansHut.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/ChieftansHut.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CONTINENTAL_CONGRESS</Type>
@@ -2275,7 +2275,7 @@
 			<fInterfaceScale>0.43</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/ContinentalCongress.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/ContinentalCongress.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GOVERNORS_RESIDENCE</Type>
@@ -2285,7 +2285,7 @@
 			<fInterfaceScale>0.43</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/GovernorsResidence.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/GovernorsResidence.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_GOVERNORS_MANSION</Type>
@@ -2295,7 +2295,7 @@
 			<fInterfaceScale>0.43</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/GovernorsMansion.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/GovernorsMansion.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CAPITOL</Type>
@@ -2305,7 +2305,7 @@
 			<fInterfaceScale>0.43</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
 			<KFM/>
-			<Button>,Art/Interface/Buttons/Buildings/Capitol.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/Capitol.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

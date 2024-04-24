@@ -2102,14 +2102,15 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		CvEventReporter::getInstance().cityAcquiredAndKept(getID(), pNewCity);
 	}
 
+	// MacAurther Capital update: Actually, no you don't just get a capital for free anymore
 	// Leoreth: make sure flip at the beginning creates a capital
-	BuildingClassTypes eBaseCapitalBuilding = BUILDINGCLASS_CHIEFTANS_HUT;	// MacAurther: Not using CAPTIAL_BUILDINGCLASS anymore
-	BuildingClassTypes eUpgradeCapitalBuilding = BUILDINGCLASS_PALACE;
+	/*BuildingClassTypes eCapitalBuildingClass = (BuildingClassTypes)GC.getDefineINT("CAPITAL_BUILDINGCLASS");
+	BuildingTypes eCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(eCapitalBuildingClass)));
 
-	if (!isMinorCiv() && !isBarbarian() && getBuildingClassCount(eBaseCapitalBuilding) == 0 && getBuildingClassCount(eUpgradeCapitalBuilding) == 0)
+	if (!isMinorCiv() && !isBarbarian() && getBuildingClassCount(eCapitalBuildingClass) == 0)
 	{
 		findNewCapital();
-	}
+	}*/
 
 	// Forcing events that deal with the old city not to expire just because we conquered that city
 	for (CvEventMap::iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
@@ -3015,7 +3016,8 @@ void CvPlayer::doTurn()
 
 	GC.getGameINLINE().verifyDeals();
 
-	checkCapitalCity();
+	//MacAurther Capital update: You don't always have a capital
+	//checkCapitalCity();
 
 	AI_doTurnPre();
 
@@ -5032,17 +5034,14 @@ void CvPlayer::findNewCapital()
 	CvCity* pOldCapital;
 	CvCity* pLoopCity;
 	CvCity* pBestCity;
-	BuildingTypes eBaseCapitalBuilding;
-	BuildingTypes eUpgradeCapitalBuilding;
+	BuildingTypes eCapitalBuilding;
 	int iValue;
 	int iBestValue;
 	int iLoop;
 
-	// MacAurther: Now we have to check two capital buildings
-	eBaseCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_CHIEFTANS_HUT)));
-	eUpgradeCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_PALACE)));
+	eCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getDefineINT("CAPITAL_BUILDINGCLASS"))));
 
-	if (getNumCities() == 0 || (eBaseCapitalBuilding == NO_BUILDING && eUpgradeCapitalBuilding == NO_BUILDING))
+	if (getNumCities() == 0 || eCapitalBuilding == NO_BUILDING)
 	{
 		setCapitalCity(NULL);
 		return;
@@ -5061,7 +5060,7 @@ void CvPlayer::findNewCapital()
 
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		if ((0 == pLoopCity->getNumRealBuilding(eBaseCapitalBuilding)) && (0 == pLoopCity->getNumRealBuilding(eUpgradeCapitalBuilding)))
+		if (0 == pLoopCity->getNumRealBuilding(eCapitalBuilding))
 		{
 			iValue = (pLoopCity->getPopulation() * 4);
 
@@ -5094,14 +5093,11 @@ void CvPlayer::findNewCapital()
 	{
 		if (pOldCapital != NULL)
 		{
-			// MacAurther: Now we have to check for two buildings
-			pOldCapital->setNumRealBuilding(eBaseCapitalBuilding, 0);
-			pOldCapital->setNumRealBuilding(eUpgradeCapitalBuilding, 0);
+			pOldCapital->setNumRealBuilding(eCapitalBuilding, 0);
 		}
-		FAssertMsg(!(pBestCity->getNumRealBuilding(eBaseCapitalBuilding)), "(pBestCity->getNumRealBuilding(eCapitalBuilding)) did not return false as expected");
-		FAssertMsg(!(pBestCity->getNumRealBuilding(eUpgradeCapitalBuilding)), "(pBestCity->getNumRealBuilding(eCapitalBuilding)) did not return false as expected");
+		FAssertMsg(!(pBestCity->getNumRealBuilding(eCapitalBuilding)), "(pBestCity->getNumRealBuilding(eCapitalBuilding)) did not return false as expected");
 		
-		pBestCity->setNumRealBuilding(eBaseCapitalBuilding, 1);	// MacAurther: If capital was lost, you just get the base capital building as a replacement
+		pBestCity->setNumRealBuilding(eCapitalBuilding, 1);
 	}
 }
 
@@ -11128,10 +11124,7 @@ void CvPlayer::setCapitalCity(CvCity* pNewCapitalCity)
 
 		if (pOldCapitalCity != NULL)
 		{
-			// MacAurther: Get capital building
-			BuildingClassTypes eOldCapitalBuildingClass = pOldCapitalCity->getBestCapitalBuilding();
-
-			pOldCapitalCity->changeBuildingYieldChange(eOldCapitalBuildingClass, YIELD_COMMERCE, -getCapitalCommerce());
+			pOldCapitalCity->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, -getCapitalCommerce());
 			pOldCapitalCity->updateCommerce();
 
 			pOldCapitalCity->setInfoDirty(true);
@@ -11139,10 +11132,7 @@ void CvPlayer::setCapitalCity(CvCity* pNewCapitalCity)
 
 		if (pNewCapitalCity != NULL)
 		{
-			// MacAurther: Get capital building
-			BuildingClassTypes eNewCapitalBuildingClass = pNewCapitalCity->getBestCapitalBuilding();
-
-			pNewCapitalCity->changeBuildingYieldChange(eNewCapitalBuildingClass, YIELD_COMMERCE, getCapitalCommerce());
+			pNewCapitalCity->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, getCapitalCommerce());
 			pNewCapitalCity->updateCommerce();
 
 			pNewCapitalCity->setInfoDirty(true);
@@ -25080,12 +25070,6 @@ void CvPlayer::updateCapitalCommerce()
 		iNewCapitalCommerce += countColonies() * getColonyCommerce();
 	}
 
-	// MacAurther: American UP: +1 Gold in Capital from each State House
-	if (getCivilizationType() == AMERICA)
-	{
-		iNewCapitalCommerce += getBuildingClassCount(BUILDINGCLASS_MEETING_HALL);
-	}
-
 	if (iNewCapitalCommerce != iOldCapitalCommerce)
 	{
 		m_iCapitalCommerce = iNewCapitalCommerce;
@@ -25219,16 +25203,9 @@ void CvPlayer::checkCapitalCity()
 		return;
 	}
 
-	// MacAurther: Now we have to check two building types
-	BuildingTypes eBaseCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_CHIEFTANS_HUT)));
-	BuildingTypes eUpgradeCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_PALACE)));
+	BuildingTypes eCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(GC.getDefineINT("CAPITAL_BUILDINGCLASS"))));
 
-	if (eBaseCapitalBuilding == NO_BUILDING)
-	{
-		return;
-	}
-
-	if (eUpgradeCapitalBuilding == NO_BUILDING)
+	if (eCapitalBuilding == NO_BUILDING)
 	{
 		return;
 	}
@@ -25237,8 +25214,7 @@ void CvPlayer::checkCapitalCity()
 	CvCity* pLoopCity;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		pLoopCity->setNumRealBuilding(eBaseCapitalBuilding, 0);
-		pLoopCity->setNumRealBuilding(eUpgradeCapitalBuilding, 0); 
+		pLoopCity->setNumRealBuilding(eCapitalBuilding, 0);
 	}
 
 	findNewCapital();

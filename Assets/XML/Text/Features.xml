@@ -94,6 +94,14 @@
 		<Spanish>Cenote</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_FEATURE_CANYON</Tag>
+		<English>Canyon</English>
+		<French>Canyon</French>
+		<German>Canyon</German>
+		<Italian>Canyon</Italian>
+		<Spanish>Canyon</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_FEATURE_NO_IMPROVEMENT</Tag>
 		<English>[NEWLINE][ICON_BULLET]Cannot build any improvements on this feature</English>
 		<French>[NEWLINE][ICON_BULLET]Les am&#233;nagements ne peuvent &#234;tre construits ici</French>

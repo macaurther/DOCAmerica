@@ -1127,7 +1127,8 @@ void CvCity::kill(bool bUpdatePlotGroups)
 
 	if (bCapital)
 	{
-		GET_PLAYER(eOwner).findNewCapital();
+		// MacAurther Capital update: You can't just get a new capital when you lose yours! No more free rides
+		//GET_PLAYER(eOwner).findNewCapital();
 
 		GET_TEAM(GET_PLAYER(eOwner).getTeam()).resetVictoryProgress();
 	}
@@ -2499,7 +2500,7 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 	//Rhye - end
 
 	// MacAurther: Migration
-	if (eProject > NO_PROJECT && eProject <= PROJECT_MIGRATE_NW)
+	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)
 	{
 		// Don't let AI migrate (MacAurther TODO: Maybe let them do it, but add in logic for them)
 		if(!GET_PLAYER(getOwner()).isHuman()) return false;
@@ -2540,6 +2541,8 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 				iNewY += 1;
 				break;
 		}
+
+		if(iNewX < 0 || iNewX >= EARTH_X || iNewY < 0 || iNewY >= EARTH_Y) return false;
 
 		// Make sure the player is moving to a valid tile. 4 criteria (MacAurther TODO: maybe add more):
 		//   the tile is owned by the migrating player
@@ -19240,20 +19243,4 @@ bool CvCity::populate()
 {
 	changePopulation(1);
 	return true;
-}
-
-// MacAurther: Culture Groups
-BuildingClassTypes CvCity::getBestCapitalBuilding()
-{
-	BuildingTypes ePalaceType = (BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(getOwner()).getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_PALACE));
-	BuildingTypes eChieftansHutType = (BuildingTypes)(GC.getCivilizationInfo(GET_PLAYER(getOwner()).getCivilizationType()).getCivilizationBuildings(BUILDINGCLASS_CHIEFTANS_HUT));
-	if (ePalaceType != NO_BUILDINGCLASS && getNumRealBuilding(ePalaceType))
-	{
-		return BUILDINGCLASS_PALACE;
-	}
-	else if (eChieftansHutType != NO_BUILDINGCLASS && getNumRealBuilding(eChieftansHutType))
-	{
-		return BUILDINGCLASS_CHIEFTANS_HUT;
-	}
-	return NO_BUILDINGCLASS;
 }

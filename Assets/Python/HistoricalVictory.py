@@ -91,7 +91,7 @@ dGoals = {
 	iMaya: (
 		FirstDiscover(iMathematics, iCalendar),
 		Wonder(iTempleOfKukulkan, by=600),
-		BestTechPlayer(at=870),
+		BestTechPlayer(at=850),
 	),
 	iTeotihuacan: (
 		CultureAmount(500, at=850),

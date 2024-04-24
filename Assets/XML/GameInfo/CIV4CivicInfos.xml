@@ -57,7 +57,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
 			<TechPrereq>TECH_DIVINATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/ConstitutionalMonarchy.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/MonarchyNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -675,6 +675,7 @@
 			<Description>TXT_KEY_CIVIC_SOVEREIGNTY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_SOVEREIGNTY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_SOVEREIGNTY_STRATEGY</Strategy>
+			<TechPrereq>TECH_ETHICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Sovereignty.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1374,7 +1375,7 @@
 			<Description>TXT_KEY_CIVIC_DIVINE_RIGHT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DIVINE_RIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DIVINE_RIGHT_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civics/MonarchyNative.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -1526,12 +1527,6 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<DomainExperienceModifiers>
-				<DomainExperienceModifier>
-					<DomainType>DOMAIN_LAND</DomainType>
-					<iExperienceModifier>2</iExperienceModifier>
-				</DomainExperienceModifier>
-			</DomainExperienceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -2496,7 +2491,7 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
+					<BuildingType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>

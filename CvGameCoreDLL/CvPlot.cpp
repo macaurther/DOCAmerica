@@ -3521,6 +3521,8 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 						case 3:
 							iCulture *= 4;
 							break;
+						default:
+							break;
 					}
 
 					// Independents get the same advantage over a civ's core if that civ is dead

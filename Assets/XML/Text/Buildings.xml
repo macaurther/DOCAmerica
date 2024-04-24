@@ -2391,19 +2391,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_AMERICAN_STATE_HOUSE_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and increases wealth in your [COLOR_HIGHLIGHT_TEXT]Capital[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and increases wealth in your [COLOR_HIGHLIGHT_TEXT]Capital[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and increases wealth in your [COLOR_HIGHLIGHT_TEXT]Capital[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and increases wealth in your [COLOR_HIGHLIGHT_TEXT]Capital[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and increases wealth in your [COLOR_HIGHLIGHT_TEXT]Capital[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_AMERICAN_STATE_HOUSE_HELP</Tag>
-		<English>[ICON_BULLET]+1[ICON_COMMERCE] in Capital</English>
-		<French>[ICON_BULLET]+1[ICON_COMMERCE] in Capital</French>
-		<German>[ICON_BULLET]+1[ICON_COMMERCE] in Capital</German>
-		<Italian>[ICON_BULLET]+1[ICON_COMMERCE] in Capital</Italian>
-		<Spanish>[ICON_BULLET]+1[ICON_COMMERCE] in Capital</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and reduces maintenance in nearby cities.</English>
+		<French>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and reduces maintenance in nearby cities.</French>
+		<German>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and reduces maintenance in nearby cities.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and reduces maintenance in nearby cities.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], increase a city's happiness and reduces maintenance in nearby cities.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_AZTEC_CHINAMPA</Tag>

@@ -218,14 +218,14 @@ iInca : 1100,
 iPurepecha : 1150,
 iAztecs : 1250,
 iIroquois : 1350,
-iSpain : 1496,
+iSpain : 20,#1496,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
 iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
-iAmerica : 1775,
+iAmerica : 20,#1775,
 iHaiti : 1804,
 iArgentina : 1810,
 iMexico : 1810,
@@ -490,7 +490,7 @@ iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer,
 iNumBuildings = 200
 # Buildings (103)
 #				2				3				4				5				6				7				8				9				10
-(iChieftansHut,	iGovernorsResidence,iContinentalCongress,iPalace,iGovernorsMansion,iCapitol,	iGranary,		iColcas,		iIgloo,			iMarket,		
+(iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iMarket,		
 iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		iPyramid,		
 iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		iWalls,			
 iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			iStocks,		
@@ -651,10 +651,10 @@ iNumRoutes = 3
 
 #feature & terrain
 
-iNumFeatures = 13
+iNumFeatures = 14
 #				2				3				4				5				6				7				8				9				10
 (iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
-iFallout, 		iTaiga, 		iPalmForest) = range(iNumFeatures)
+iFallout, 		iTaiga, 		iPalmForest,	iCanyon) = range(iNumFeatures)
 
 iNumTerrains = 20
 #				2				3				4				5				6				7				8				9				10

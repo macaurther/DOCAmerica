@@ -4994,6 +4994,15 @@ Your stability level can change during a stability check. As long it is higher t
 		</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_DOCA_CULTURE_GROUPS_PEDIA</Tag>
+		<English>[H1]Culture Groups and Capitals[\H1]
+[ICON_BULLET]All Civilization are split into three Culture Groups: Natives, Colonies, and Nations. Natives are Civilizations that are native to the Americas, such as the Maya and Mississippi. Colonies are Civilizations that are made up of immigrants, mainly from Europe, and are ruled from a foreign land. Nations are Civilizations comprised of both immigrants and indigenous that are ruled domestically.
+[ICON_BULLET]Each Culture Group has their own unique set of civics.
+[ICON_BULLET]There are now two levels of government buildings, and each Culture Group has its own type of center of government. Natives have Chieftan's Hut and Palace, Colonies have Governor's Residence and Governor's Mansion, and Nations have Continental Congress and Capitol.
+[ICON_BULLET]You no longer get a Palace/Governor's Mansion/Capitol for free, and your civilization can exist without a capital. You'll have to build a your Culture Group's building in order to get its benefits.
+		</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_ODDS_PEDIA</Tag>
 		<English>[H1]Odds and Ends in DOCA[\H1][PARAGRAPH:2]
 [ICON_BULLET]Several new Terrains have been added, including [LINK=TERRAIN_SEMIDESERT]Semidesert[\LINK], [LINK=TERRAIN_SEMIDESERT]Moorland[\LINK], [LINK=TERRAIN_SEMIDESERT]Savannah[\LINK], [LINK=TERRAIN_SEMIDESERT]Salt Flats[\LINK], [LINK=TERRAIN_SEMIDESERT]Prairie[\LINK], and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
@@ -5009,7 +5018,6 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]New Buildings have been added.
 [ICON_BULLET]New Wonders have been added.
 [ICON_BULLET]PLANNED: After a certain date, European Civilizations become more likely to sell their land.
-[ICON_BULLET]Not every Civilization has access to the same list of Civics. Some Civics only European Civilizations can use, others can only be used by Civilizations native to the Americas, and all the rest are shared between the two. 
 		</English>
 	</TEXT>
 	<TEXT>
