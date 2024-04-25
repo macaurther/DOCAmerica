@@ -960,6 +960,7 @@ enum FeatureTypes					// Exposed to Python
 	FEATURE_FALLOUT,
 	FEATURE_TAIGA,
 	FEATURE_SAVANNA,
+	FEATURE_CANYON,
 
 	NUM_FEATURES
 };

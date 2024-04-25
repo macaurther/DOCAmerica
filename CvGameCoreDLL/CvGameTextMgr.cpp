@@ -11852,7 +11852,7 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 				break;
 			case BUILDING_PUEBLO_BONITO:
 				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_SEMIDESERT"));
+				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_CANYON"));
 				break;
 			case BUILDING_SACSAYHUAMAN:
 				szBuffer.append(NEWLINE);

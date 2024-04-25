@@ -1337,12 +1337,28 @@
 		<Spanish>Plunder</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PLUNDER_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_PLUNDER_NATIVE_STRATEGY</Tag>
 		<English>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</English>
 		<French>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</French>
 		<German>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</German>
 		<Italian>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</Italian>
 		<Spanish>Reduced growth rate for Cottages, Hamlets and Villages; extra gold on city conquest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLUNDER_COLONY_STRATEGY</Tag>
+		<English>Reduced growth rate for Cottages, Hamlets and Villages; extra gold and immigration on city conquest</English>
+		<French>Reduced growth rate for Cottages, Hamlets and Villages; extra gold and immigration on city conquest</French>
+		<German>Reduced growth rate for Cottages, Hamlets and Villages; extra gold and immigration on city conquest</German>
+		<Italian>Reduced growth rate for Cottages, Hamlets and Villages; extra gold and immigration on city conquest</Italian>
+		<Spanish>Reduced growth rate for Cottages, Hamlets and Villages; extra gold and immigration on city conquest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_PLUNDER_COLONY_HELP</Tag>
+		<English>[ICON_BULLET]Receive [ICON_IMMIGRATION] when conquering Native cities</English>
+		<French>[ICON_BULLET]Receive [ICON_IMMIGRATION] when conquering Native cities</French>
+		<German>[ICON_BULLET]Receive [ICON_IMMIGRATION] when conquering Native cities</German>
+		<Italian>[ICON_BULLET]Receive [ICON_IMMIGRATION] when conquering Native cities</Italian>
+		<Spanish>[ICON_BULLET]Receive [ICON_IMMIGRATION] when conquering Native cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DEPENDENCY</Tag>

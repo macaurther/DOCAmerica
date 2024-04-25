@@ -269,7 +269,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	if (lResult == 1)
 	{
-		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != (FeatureTypes)GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS")) //Leoreth: flood plains are not removed by cities
+		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pPlot->getFeatureType() != FEATURE_CANYON) //Leoreth: flood plains are not removed by cities -> MacAurther: neither are Canyons
 		{
 			pPlot->setFeatureType(NO_FEATURE);
 		}
@@ -2553,7 +2553,7 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 		if(pNewPlot->getOwner() != getOwner()) return false;
 		if(pNewPlot->isImpassable()) return false;
 		if(pNewPlot->isWater()) return false;
-		if(pNewPlot->getFeatureType() > NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS) return false;
+		if(pNewPlot->getFeatureType() != NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pNewPlot->getFeatureType() != FEATURE_CANYON) return false;
 	}
 
 	return true;
@@ -16188,6 +16188,7 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 
 	// MacAurther: Various geographic world wonders
 	TerrainTypes plotRequirement = NO_TERRAIN;
+	FeatureTypes featureRequirement = NO_FEATURE;
 	TerrainTypes adjacentRequirement = NO_TERRAIN;
 	bool bLake = false;
 	bool bPeak = false;
@@ -16200,7 +16201,7 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 			bPeak = true;
 			break;
 		case BUILDING_PUEBLO_BONITO:
-			plotRequirement = TERRAIN_SEMIDESERT;
+			featureRequirement = FEATURE_CANYON;
 			break;
 		case BUILDING_SACSAYHUAMAN:
 			bPeak = true;
@@ -16217,6 +16218,7 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 	}
 
 	if (plotRequirement != NO_TERRAIN && plot()->getTerrainType() != plotRequirement) return false;
+	if (featureRequirement != NO_FEATURE && plot()->getFeatureType() != featureRequirement) return false;
 
 	if (adjacentRequirement != NO_TERRAIN || bLake || bPeak)
 	{

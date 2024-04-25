@@ -74,51 +74,41 @@ def buildFoundedCapitalInfrastructure(city):
 
 @handler("firstContact")
 def conquistadors(iTeamX, iHasMetTeamY):
-		if is_minor(iTeamX) or is_minor(iHasMetTeamY):
-			return
+	if is_minor(iTeamX) or is_minor(iHasMetTeamY):
+		return
+	
+	#if year().between(1490, 1800):
+	if civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:
+		iNewWorldPlayer = iTeamX
+		iOldWorldPlayer = iHasMetTeamY
 		
-		#if year().between(1490, 1800):
-		if civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:
-			iNewWorldPlayer = iTeamX
-			iOldWorldPlayer = iHasMetTeamY
+		iNewWorldCiv = civ(iNewWorldPlayer)
+		
+		bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
+		
+		if not bAlreadyContacted:
+			# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe			
+			# Generate Immigration based on this formula:
+			#   Immigration = 25 * numCities + 2 * numPops
+			iContactImmigration = 0
+			pNewWorldPlayer = player(iNewWorldPlayer)
 			
-			iNewWorldCiv = civ(iNewWorldPlayer)
+			(pCity, iter) = pNewWorldPlayer.firstCity(false)
+			while(pCity):
+				iContactImmigration += pCity.getPopulation() * 5
+				iContactImmigration += 20
+				(pCity, iter) = pNewWorldPlayer.nextCity(iter, false)
 			
-			bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
+			iContactImmigration *= (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
 			
-			if not bAlreadyContacted:
-				# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe
-				if iNewWorldCiv == iMaya:
-					iContactImmigration = 200
-				elif iNewWorldCiv == iTeotihuacan:
-					iContactImmigration = 100
-				elif iNewWorldCiv == iZapotec:
-					iContactImmigration = 100
-				elif iNewWorldCiv == iTiwanaku:
-					iContactImmigration = 100
-				elif iNewWorldCiv == iWari:
-					iContactImmigration = 100
-				elif iNewWorldCiv == iMuisca:
-					iContactImmigration = 300
-				elif iNewWorldCiv == iChimu:
-					iContactImmigration = 100
-				elif iNewWorldCiv == iPurepecha:
-					iContactImmigration = 200
-				elif iNewWorldCiv == iAztecs:
-					iContactImmigration = 300
-				elif iNewWorldCiv == iInca:
-					iContactImmigration = 300
-				else:
-					return	# Some natives don't generate immigration
-					
-				data.dFirstContactConquerors[iNewWorldCiv] = True
-				
-				events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
-				
-				gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
+			data.dFirstContactConquerors[iNewWorldCiv] = True
+			
+			events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
+			
+			gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
 
-				message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
-				message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
+			message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
+			message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
 
 ### TECH ACQUIRED ###
 

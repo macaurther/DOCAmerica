@@ -476,7 +476,7 @@
 			<Type>CIVIC_PLUNDER_NATIVE</Type>
 			<Description>TXT_KEY_CIVIC_PLUNDER</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PLUNDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_PLUNDER_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_CIVIC_PLUNDER_NATIVE_STRATEGY</Strategy>
 			<TechPrereq>TECH_ALLOYS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/PlunderNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -1241,7 +1241,8 @@
 			<Type>CIVIC_PLUNDER_COLONY</Type>
 			<Description>TXT_KEY_CIVIC_PLUNDER</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PLUNDER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_PLUNDER_STRATEGY</Strategy>
+			<Strategy>TXT_KEY_CIVIC_PLUNDER_COLONY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_PLUNDER_COLONY_HELP</Help>
 			<TechPrereq>TECH_COMPANIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/PlunderColony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>

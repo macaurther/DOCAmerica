@@ -4766,8 +4766,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=83
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -5395,6 +5393,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=83
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_CITRUS
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
@@ -5403,8 +5403,6 @@ EndPlot
 BeginPlot
 	x=8,y=84
 	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -6063,17 +6061,21 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	BonusType=BONUS_SILVER
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=9,y=86
-	TerrainType=TERRAIN_SEMIDESERT
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=9,y=87
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
@@ -6114,6 +6116,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=94
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -6705,7 +6711,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=84
-	TerrainType=TERRAIN_SEMIDESERT
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -6719,10 +6726,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=86
-	isNOfRiver
-	RiverWEDirection=3
 	TerrainType=TERRAIN_DESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=87
@@ -6731,8 +6736,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=88
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=89
@@ -6762,8 +6771,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=94
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=95
@@ -6772,6 +6781,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=96
+	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -7309,7 +7319,7 @@ EndPlot
 BeginPlot
 	x=11,y=76
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=77
@@ -7346,7 +7356,7 @@ EndPlot
 BeginPlot
 	x=11,y=83
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -7366,41 +7376,39 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=86
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=11,y=87
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=11,y=88
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_DESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=89
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=90
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=91
 	BonusType=BONUS_SILVER
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
@@ -7410,20 +7418,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=93
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=94
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=95
 	BonusType=BONUS_FUR
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=11,y=96
@@ -7990,7 +7997,7 @@ EndPlot
 BeginPlot
 	x=12,y=75
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=76
@@ -8001,12 +8008,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=77
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=78
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -8029,10 +8036,12 @@ EndPlot
 BeginPlot
 	x=12,y=82
 	TerrainType=TERRAIN_DESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=83
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
@@ -8040,7 +8049,7 @@ BeginPlot
 	x=12,y=84
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -8052,43 +8061,47 @@ EndPlot
 BeginPlot
 	x=12,y=86
 	BonusType=BONUS_URANIUM
-	TerrainType=TERRAIN_DESERT
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=87
-	TerrainType=TERRAIN_DESERT
-	PlotType=0
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=88
-	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
-	isWOfRiver
-	TerrainType=TERRAIN_DESERT
+	BonusType=BONUS_CORN
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=89
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=12,y=90
 	BonusType=BONUS_COPPER
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=12,y=91
-	TerrainType=TERRAIN_SEMIDESERT
+	x=12,y=90
+	TerrainType=TERRAIN_DESERT
 	PlotType=0
 EndPlot
 BeginPlot
+	x=12,y=91
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
+EndPlot
+BeginPlot
 	x=12,y=92
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=93
@@ -8098,7 +8111,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=94
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -8118,7 +8131,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=98
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -8591,7 +8604,7 @@ BeginPlot
 	x=13,y=64
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=22,
 EndPlot
 BeginPlot
 	x=13,y=65
@@ -8661,22 +8674,22 @@ BeginPlot
 	x=13,y=76
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=77
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=78
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=79
@@ -8696,6 +8709,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=81
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -8706,50 +8721,56 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=83
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=13,y=84
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	BonusType=BONUS_CORN
-	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
-EndPlot
-BeginPlot
-	x=13,y=85
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=13,y=86
+	x=13,y=84
+	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
-	PlotType=0
+	PlotType=2
+EndPlot
+BeginPlot
+	x=13,y=85
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=13,y=86
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=13,y=87
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=13,y=88
-	TerrainType=TERRAIN_DESERT
-	PlotType=0
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=13,y=89
-	isNOfRiver
-	RiverWEDirection=3
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=13,y=90
-	TerrainType=TERRAIN_SALTFLAT
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -8765,13 +8786,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=93
-	TerrainType=TERRAIN_PRAIRIE
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=13,y=94
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -8787,13 +8806,15 @@ BeginPlot
 	x=13,y=96
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=97
+	RiverNSDirection=0
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -8802,17 +8823,17 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=13,y=99
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=13,y=100
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
@@ -9270,7 +9291,7 @@ BeginPlot
 	x=14,y=64
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_LAGOON
-	PlotType=2
+	PlotType=22,
 EndPlot
 BeginPlot
 	x=14,y=65
@@ -9281,6 +9302,7 @@ BeginPlot
 	x=14,y=66
 	RiverNSDirection=2
 	isWOfRiver
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -9356,72 +9378,76 @@ EndPlot
 BeginPlot
 	x=14,y=78
 	TerrainType=TERRAIN_DESERT
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=14,y=79
 	TerrainType=TERRAIN_DESERT
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=14,y=80
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=14,y=81
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=82
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_DESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=83
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=84
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=14,y=85
-	TerrainType=TERRAIN_DESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=14,y=86
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_DESERT
-	PlotType=2
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=87
 	BonusType=BONUS_COAL
-	TerrainType=TERRAIN_DESERT
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=88
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=89
-	isNOfRiver
-	RiverWEDirection=3
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=90
@@ -9441,44 +9467,39 @@ EndPlot
 BeginPlot
 	x=14,y=93
 	BonusType=BONUS_SILVER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=94
-	isNOfRiver
-	RiverWEDirection=3
+	RiverNSDirection=0
+	isWOfRiver
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=14,y=95
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=14,y=96
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=97
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=98
-	isNOfRiver
-	RiverWEDirection=3
-	BonusType=BONUS_WHEAT
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -9487,7 +9508,8 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
+	BonusType=BONUS_WHEAT
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -9937,6 +9959,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=61
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -9952,12 +9975,12 @@ BeginPlot
 	x=15,y=63
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=12,
 EndPlot
 BeginPlot
 	x=15,y=64
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=02,
 EndPlot
 BeginPlot
 	x=15,y=65
@@ -9984,6 +10007,7 @@ BeginPlot
 	BonusType=BONUS_IRON
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=15,y=69
@@ -10045,24 +10069,28 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=15,y=78
-	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
+	x=15,y=78
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
+EndPlot
+BeginPlot
 	x=15,y=79
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=80
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	RiverNSDirection=2
+	isWOfRiver
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=81
@@ -10071,49 +10099,54 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=82
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=83
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=84
-	TerrainType=TERRAIN_DESERT
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=85
-	TerrainType=TERRAIN_DESERT
-	PlotType=2
-EndPlot
-BeginPlot
-	x=15,y=86
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=15,y=87
+	x=15,y=86
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
-	x=15,y=88
+	x=15,y=87
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
+	x=15,y=88
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=0
+EndPlot
+BeginPlot
 	x=15,y=89
+	BonusType=BONUS_HORSE
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -10130,19 +10163,19 @@ EndPlot
 BeginPlot
 	x=15,y=92
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=1
-EndPlot
-BeginPlot
-	x=15,y=93
-	TerrainType=TERRAIN_PRAIRIE
 	PlotType=0
 EndPlot
 BeginPlot
+	x=15,y=93
+	RiverNSDirection=0
+	isWOfRiver
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
+EndPlot
+BeginPlot
 	x=15,y=94
-	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -10730,78 +10763,91 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=79
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
 EndPlot
 BeginPlot
 	x=16,y=80
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
 EndPlot
 BeginPlot
 	x=16,y=81
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=82
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=16,y=83
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=16,y=84
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=16,y=85
-	BonusType=BONUS_STONE
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=16,y=86
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=16,y=87
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
-EndPlot
-BeginPlot
-	x=16,y=88
 	RiverNSDirection=2
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
-	x=16,y=89
-	isNOfRiver
-	RiverWEDirection=1
-	BonusType=BONUS_SHEEP
+	x=16,y=84
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=16,y=90
-	TerrainType=TERRAIN_PLAINS
+	x=16,y=85
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_STONE
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=16,y=86
+	FeatureType=FEATURE_CANYON, FeatureVariety=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=16,y=87
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=16,y=88
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=16,y=89
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
-	x=16,y=91
-	BonusType=BONUS_HORSE
+	x=16,y=90
+	BonusType=BONUS_SHEEP
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
+EndPlot
+BeginPlot
+	x=16,y=91
+	TerrainType=TERRAIN_PLAINS
+	PlotType=0
 EndPlot
 BeginPlot
 	x=16,y=92
@@ -10811,8 +10857,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=93
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=16,y=94
@@ -10822,16 +10870,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=95
-	isNOfRiver
-	RiverWEDirection=3
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=16,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=16,y=97
@@ -11369,6 +11416,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=72
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -11399,67 +11447,70 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=78
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=17,y=79
 	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
+	x=17,y=79
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
+EndPlot
+BeginPlot
 	x=17,y=80
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=81
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=82
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=83
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=84
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=17,y=85
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=86
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_CORN
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=87
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=88
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=0
+	isWOfRiver
 	BonusType=BONUS_COPPER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_SEMIDESERT
@@ -11467,13 +11518,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=89
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=90
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=91
@@ -11487,28 +11541,35 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=93
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_GEMS
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=94
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=0
 EndPlot
 BeginPlot
 	x=17,y=95
-	BonusType=BONUS_GEMS
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=1
-EndPlot
-BeginPlot
-	x=17,y=96
 	RiverNSDirection=0
 	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=0
+EndPlot
+BeginPlot
+	x=17,y=96
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=97
@@ -12029,7 +12090,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=74
-	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -12045,8 +12105,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=77
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -12068,14 +12126,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=81
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=82
 	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
 	isWOfRiver
 	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PRAIRIE
@@ -12083,32 +12141,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=83
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=18,y=84
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=18,y=85
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=1
-EndPlot
-BeginPlot
-	x=18,y=86
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=1
-EndPlot
-BeginPlot
-	x=18,y=87
 	isNOfRiver
 	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
@@ -12116,17 +12148,46 @@ BeginPlot
 	PlotType=1
 EndPlot
 BeginPlot
-	x=18,y=88
+	x=18,y=84
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=0
+EndPlot
+BeginPlot
+	x=18,y=85
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=0
 EndPlot
 BeginPlot
+	x=18,y=86
+	RiverNSDirection=2
+	isWOfRiver
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=0
+EndPlot
+BeginPlot
+	x=18,y=87
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=18,y=88
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
 	x=18,y=89
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=18,y=90
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=0
 EndPlot
@@ -12143,22 +12204,20 @@ EndPlot
 BeginPlot
 	x=18,y=93
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=18,y=94
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=18,y=95
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=18,y=96
-	isNOfRiver
-	RiverWEDirection=3
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
@@ -12685,7 +12744,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=74
-	BonusType=BONUS_COW
+	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -12696,15 +12755,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=76
-	RiverNSDirection=2
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=77
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -12720,11 +12777,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=80
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=81
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -12735,56 +12796,54 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=83
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=84
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
-EndPlot
-BeginPlot
-	x=19,y=85
-	BonusType=BONUS_COW
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
-EndPlot
-BeginPlot
-	x=19,y=86
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
-EndPlot
-BeginPlot
-	x=19,y=87
-	isNOfRiver
-	RiverWEDirection=1
-	BonusType=BONUS_WHEAT
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
-EndPlot
-BeginPlot
-	x=19,y=88
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
-EndPlot
-BeginPlot
-	x=19,y=89
-	BonusType=BONUS_COAL
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
+	x=19,y=85
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
+EndPlot
+BeginPlot
+	x=19,y=86
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
+EndPlot
+BeginPlot
+	x=19,y=87
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=0
+EndPlot
+BeginPlot
+	x=19,y=88
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=0
+EndPlot
+BeginPlot
+	x=19,y=89
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=0
+EndPlot
+BeginPlot
 	x=19,y=90
+	BonusType=BONUS_COAL
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=91
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
@@ -12798,7 +12857,7 @@ EndPlot
 BeginPlot
 	x=19,y=93
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=94
@@ -12809,10 +12868,12 @@ EndPlot
 BeginPlot
 	x=19,y=95
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=96
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_GOLD
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PRAIRIE
@@ -13362,20 +13423,20 @@ BeginPlot
 	x=20,y=75
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=76
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=77
-	BonusType=BONUS_COW
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -13421,6 +13482,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=85
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -13429,31 +13492,39 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=87
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=88
+	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=89
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=90
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=91
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
@@ -13481,15 +13552,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=96
-	RiverNSDirection=2
-	isWOfRiver
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=97
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -14031,6 +14100,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=75
+	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14041,6 +14111,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=77
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14071,11 +14142,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=82
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=21,y=83
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -14086,13 +14161,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=85
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=86
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -14108,6 +14184,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=89
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
@@ -14125,7 +14203,7 @@ EndPlot
 BeginPlot
 	x=21,y=92
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=21,y=93
@@ -14631,6 +14709,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=59
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -14722,6 +14801,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=76
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14752,11 +14833,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=81
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=22,y=82
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14767,20 +14852,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=84
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=85
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=86
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -14792,12 +14879,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=88
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=22,y=89
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -14828,6 +14919,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=95
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
@@ -15426,16 +15519,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=76
-	RiverNSDirection=2
-	isWOfRiver
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=77
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -15451,13 +15542,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=80
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=81
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=82
@@ -15486,13 +15581,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=87
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=88
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -15523,6 +15618,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=93
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -15535,15 +15632,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=95
-	RiverNSDirection=2
-	isWOfRiver
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=96
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -16140,13 +16235,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=79
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=80
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=81
@@ -16181,13 +16280,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=87
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=88
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
@@ -16216,18 +16315,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=93
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=94
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -16823,6 +16916,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=79
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -18134,6 +18229,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=73
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -18812,8 +18909,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=72
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_CITRUS
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
@@ -18826,6 +18921,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=74
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -18850,6 +18949,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=78
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -19508,10 +19609,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=73
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -19523,6 +19620,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=75
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -19534,18 +19635,24 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=77
+	RiverNSDirection=0
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=29,y=78
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=79
 	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
 	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -20214,44 +20321,40 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=74
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=75
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=76
+	isNOfRiver
+	RiverWEDirection=3
 	BonusType=BONUS_ALUMINUM
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=77
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=78
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=79
-	isNOfRiver
-	RiverWEDirection=3
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -20972,10 +21075,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=78
-	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
-	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -21662,8 +21763,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=73
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -21697,13 +21796,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=78
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=79
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -22379,14 +22478,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=73
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=74
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22398,8 +22499,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=76
-	isNOfRiver
-	RiverWEDirection=3
 	BonusType=BONUS_COPPER
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
@@ -22412,6 +22511,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=78
+	isNOfRiver
+	RiverWEDirection=3
 	BonusType=BONUS_COAL
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
@@ -22419,8 +22520,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=79
-	isNOfRiver
-	RiverWEDirection=3
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -23127,8 +23226,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=79
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=34,y=80
@@ -23829,9 +23929,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=78
-	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=35,y=79
@@ -24525,6 +24624,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=80
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
@@ -25225,8 +25326,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=82
+	BonusType=BONUS_COAL
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=83
@@ -25235,6 +25338,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=84
+	isNOfRiver
+	RiverWEDirection=3
 	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -25910,15 +26015,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=82
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
 BeginPlot
 	x=38,y=83
-	BonusType=BONUS_COAL
-	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=38,y=84
@@ -26596,6 +26701,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=83
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
@@ -27283,7 +27390,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=40,y=87
@@ -38499,6 +38606,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=0
+	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

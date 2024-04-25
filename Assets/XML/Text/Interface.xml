@@ -919,6 +919,14 @@
 		<Spanish>The discovery of a new empire inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CONQUER_IMMIGRATION</Tag>
+		<English>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</English>
+		<French>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</French>
+		<German>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</German>
+		<Italian>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Italian>
+		<Spanish>The conquest of a wealthy city inspires missionaries and conquerors to come to the New World under your banner! +%d1 [ICON_IMMIGRATION]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_FIRST_CONTACT_NEWWORLD</Tag>
 		<English>Our empire's great wealth has reached the ears in the courts of these strange adventurers!</English>
 		<French>Our empire's great wealth has reached the ears in the courts of these strange adventurers!</French>
@@ -2461,6 +2469,14 @@
 		<German>[COLOR_WARNING_TEXT]Requires nearby Plantation</German>
 		<Italian>[COLOR_WARNING_TEXT]Requires nearby Plantation</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Requires nearby Plantation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REQUIRES_CANYON</Tag>
+		<English>[COLOR_WARNING_TEXT]Requires Canyon</English>
+		<French>[COLOR_WARNING_TEXT]Requires Canyon</French>
+		<German>[COLOR_WARNING_TEXT]Requires Canyon</German>
+		<Italian>[COLOR_WARNING_TEXT]Requires Canyon</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Requires Canyon</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WORK_RATE_MODIFIER</Tag>

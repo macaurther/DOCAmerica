@@ -65,9 +65,8 @@ dResourcesDict = {
 	(50, 87)  : (1600,  iPotato),  # New Brunswick
 	(33, 87)  : (1600,  iPotato),  # Michigan
 	(24, 96)  : (1600,  iPotato),  # North Dakota
-	(16, 95)  : (1600,  iPotato),  # Idaho
+	(16, 93)  : (1600,  iPotato),  # Idaho
 	(11, 96)  : (1600,  iPotato),  # Oregon
-	(15, 89)  : (1600,  iPotato),  # Utah
 	(37, 77)  : (1600,  iTobacco), # Virginia
 	(37, 74)  : (1600,  iTobacco), # South Carolina
 	(29, 75)  : (1600,  iTobacco), # Alabama

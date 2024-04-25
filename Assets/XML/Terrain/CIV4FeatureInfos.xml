@@ -1488,8 +1488,7 @@
 			<Civilopedia>TXT_KEY_FEATURE_CANYON_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_CANYON</ArtDefineTag>
 			<YieldChanges>
-				<iYield>-1</iYield>
-				<iYield>1</iYield>
+				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</YieldChanges>
 			<RiverYieldChange/>

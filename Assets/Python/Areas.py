@@ -12,7 +12,7 @@ iZapotec :		(15, 61), # Danibaan
 iTiwanaku :		(26, 25), # Tiwanaku
 iWari :			(23, 33), # Huari
 iMississippi :	(33, 82), # Sunwatch
-iPuebloan :		(18, 84), # Chaco Canyon
+iPuebloan :		(16, 86), # Chaco Canyon
 iMuisca :		(31, 42), # Hunza
 iNorse :		(55, 114), # Reykjavik
 iChimu :		(20, 36), # Chan Chan
@@ -60,7 +60,7 @@ iZapotec :		((12, 60), 	(16, 62)),
 iTiwanaku :	    ((25, 21),	(29, 26)),
 iWari :		    ((20, 29),	(24, 35)),
 iMississippi :  ((29, 81),	(37, 83)),
-iPuebloan :	    ((14, 80),	(19, 86)),
+iPuebloan :		((12, 85),	(18, 88)),
 iMuisca :		((29, 41),	(33, 44)),
 iNorse :		((52, 114),	(57, 120)),
 iChimu :		((19, 35),	(25, 41)),
@@ -114,7 +114,7 @@ iZapotec :		((12, 60), 	(16, 62)),
 iTiwanaku :	    ((25, 21),	(29, 26)),
 iWari :		    ((22, 32),	(24, 35)),
 iMississippi :  ((27, 81),	(35, 85)), # MacAurther TODO: fix pagan religion
-iPuebloan :	    ((14, 80),	(19, 85)), # MacAurther TODO: fix pagan religion
+iPuebloan :		((12, 85),	(18, 88)), # MacAurther TODO: fix pagan religion
 iMuisca :		((30, 41),	(33, 44)),
 iNorse :		((0, 0), 	(0, 0)),	# No core for Europeans
 iChimu :		((19, 35),	(22, 38)),
