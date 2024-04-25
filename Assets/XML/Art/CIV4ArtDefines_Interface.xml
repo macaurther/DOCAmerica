@@ -1772,5 +1772,9 @@
 			<Type>INTERFACE_TECH_IMMIGRATION</Type>
 			<Path>Art/Interface/Buttons/Process/ProcessImmigration.dds</Path>
 		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_MOUNTAINPASS</Type>
+			<Path>Art/Interface/Screens/TechTree/MountainPass.dds</Path>
+		</InterfaceArtInfo>
 	</InterfaceArtInfos>
 </Civ4ArtDefines>

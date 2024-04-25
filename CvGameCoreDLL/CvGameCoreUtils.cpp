@@ -1847,6 +1847,22 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		}
 	}
 
+	// MacAurther: Mountain Passes. Can't move through without Pathfinding technology
+	if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
+	{
+		if (!pFromPlot->isWater() && !pToPlot->isWater())
+		{
+			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isPeak()) && (GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isPeak()))
+			{
+				// MacAurther: Mountain Passes: Can't move through corners without tech
+				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING))
+				{
+					return FALSE;
+				}
+			}
+		}
+	}
+
 	if (pSelectionGroup->atPlot(pFromPlot))
 	{
 		return TRUE;

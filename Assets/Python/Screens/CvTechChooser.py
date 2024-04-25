@@ -648,11 +648,16 @@ class CvTechChooser:
 				elif type == "FreeUnit":
 					if gc.getUnitInfo(item).getEspionagePoints() == 0 or not CyGame().isOption(GameOptionTypes.GAMEOPTION_NO_ESPIONAGE):
 						screen.addDDSGFCAt(szItem, szTechBox, player.getUnitButton(item), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_HELP_FREE_UNIT, item, tech, False)
-
+				
+				# MacAurther: This is kludgy, to make right, it'd have to be added to the XML. But that's a lot of work...
+				elif TechInfo.getGridX() == 2 and TechInfo.getGridY() == 3:
+					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath()
+					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				
 				elif type == "CustomEffect":
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_GENERAL_QUESTIONMARK").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-
+				
 				fX += self.X_INCREMENT
 				
 			if len(lRemoves) > 0:

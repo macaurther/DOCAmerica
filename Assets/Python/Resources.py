@@ -106,9 +106,6 @@ dRemovedFeaturesDict = {
 }
 
 dConquerorPlotTypesDict = {
-	(25, 34) : (iInca, PlotTypes.PLOT_HILLS), # Peru
-	(30, 25) : (iInca, PlotTypes.PLOT_HILLS), # Bolivia
-	(23, 19) : (iInca, PlotTypes.PLOT_HILLS), # Argentina
 }
 
 dConquerorRemovedFeaturesDict = {

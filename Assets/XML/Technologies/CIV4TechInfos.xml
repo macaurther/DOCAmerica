@@ -238,6 +238,7 @@
 			<Type>TECH_PATHFINDING</Type>
 			<Description>TXT_KEY_TECH_PATHFINDING</Description>
 			<Civilopedia>TXT_KEY_TECH_PATHFINDING_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_PATHFINDING_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

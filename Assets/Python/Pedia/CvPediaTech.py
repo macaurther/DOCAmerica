@@ -318,7 +318,11 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		for j in xrange(gc.getNumBonusInfos()):
 			if gc.getBonusInfo(j).getTechObsolete() == self.iTech:
 				screen.attachImageButton(panel, "", gc.getBonusInfo(j).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_OBSOLETE_BONUS, j, 1, False)
-
+		
+		# Mountain Passes
+		# MacAurther: This is kludgy, to make right, it'd have to be added to the XML. But that's a lot of work...
+		if TechInfo.getGridX() == 2 and TechInfo.getGridY() == 3:
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 
 
 	def placeEnables(self):
