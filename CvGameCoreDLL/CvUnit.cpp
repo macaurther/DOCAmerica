@@ -2504,8 +2504,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (pPlot->isImpassable())
 	{
-		// MacAurther: Sacsayhuaman effect and Tiwanaku UU: Sisqeno
-		bool bCanEnterPeaks = pPlot->isPeak() && (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_SACSAYHUAMAN) && getUnitCombatType() != NO_UNITCOMBAT) || getUnitType() == UNIT_TIWANAKU_SISQENO;
+		// Tiwanaku UU: Sisqeno
+		bool bCanEnterPeaks = pPlot->isPeak() && getUnitType() == UNIT_TIWANAKU_SISQENO;
 		if (!canMoveImpassable() && !bCanEnterPeaks)
 		{
 			return false;

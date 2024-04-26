@@ -11033,20 +11033,6 @@ void CvGameTextMgr::setBuildingHelpActual(CvWStringBuffer &szBuffer, BuildingTyp
 				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO", GC.getSpecialistInfo((SpecialistTypes) iI).getTextKeyWide()));
 			}
 		}
-		// 1SDAN?: Serpent Mound: +1 Merchant Slot from Common
-		else if (bActual && ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).isHasBuildingEffect((BuildingTypes)BUILDING_SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && kBuilding.getBuildingClassType() == GC.getBuildingInfo((BuildingTypes)BUILDING_PLAZA).getBuildingClassType())
-		{
-			if (kBuilding.getSpecialistCount(iI) > 0)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZENS_INTO", kBuilding.getSpecialistCount(iI) + 1, GC.getSpecialistInfo((SpecialistTypes) iI).getTextKeyWide()));
-			}
-			else
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_TURN_CITIZEN_INTO", GC.getSpecialistInfo((SpecialistTypes) iI).getTextKeyWide()));
-			}
-		}
 		else if (kBuilding.getSpecialistCount(iI) > 0)
 		{
 			if (kBuilding.getSpecialistCount(iI) == 1)

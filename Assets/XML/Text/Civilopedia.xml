@@ -5009,6 +5009,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Most units can now move through Marshes. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=TERRAIN_SEMIDESERT]Swamps[\LINK] are another new feature type on Swamps that can be chopped like Forests.
 [ICON_BULLET][LINK=TERRAIN_WIDE_RIVER]Wide Rivers[\LINK] yield 1[ICON_FOOD] 1 [ICON_PRODUCTION] 2[ICON_COMMERCE], allow ships to navigate, allow naval trade, grant fresh water to adjacent tiles, and allow adjacent tiles to act as if they have a River (ex: Levee bonus).
 [ICON_BULLET]Wide Rivers represent large, navigable rivers, such as the Mississippi, Missouri, Ohio, and Amazon Rivers. Ships can navigate along Wide River diagonally, even though they might not be graphically contiguous.
+[ICON_BULLET]Moving diagonally between two mountains is now impassible without the Pathfinding native technology.
 [ICON_BULLET]Many new Resources have been added.
 [ICON_BULLET]Some Improvements now cost [ICON_COMMERCE] to construct. You will have to balance infrastructure spending with research, culture, and espionage.
 [ICON_BULLET]Lots of units of been reworked, and many units have been added. In general, units now have more well-defined roles and upgrade paths.
@@ -5017,7 +5018,7 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET][LINK=UNIT_MILITIA_I]Militia[\LINK] is now its own upgrade path. Each Era has its own Militia. They are generally cheap to build and weak, with bonus defense in Cities.
 [ICON_BULLET]New Buildings have been added.
 [ICON_BULLET]New Wonders have been added.
-[ICON_BULLET]PLANNED: After a certain date, European Civilizations become more likely to sell their land.
+[ICON_BULLET]PLANNED: After a certain date, Colonies become more likely to sell their land.
 		</English>
 	</TEXT>
 	<TEXT>

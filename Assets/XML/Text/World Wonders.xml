@@ -806,14 +806,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN_HELP</Tag>
-		<English>[ICON_BULLET]Military Units can enter Peaks</English>
-		<French>[ICON_BULLET]Military Units can enter Peaks</French>
-		<German>[ICON_BULLET]Military Units can enter Peaks</German>
-		<Italian>[ICON_BULLET]Military Units can enter Peaks</Italian>
-		<Spanish>[ICON_BULLET]Military Units can enter Peaks</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE</Tag>
 		<English>Sao Francisco Square</English>
 		<French>Sao Francisco Square</French>
@@ -852,14 +844,6 @@
 		<German>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city's health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</German>
 		<Italian>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city's health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Serpent Mound[COLOR_REVERT] increases a city's health and happiness. It also allows you to train an additional [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialist in your cities with a [COLOR_BUILDING_TEXT]Commons[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_SERPENT_MOUND_HELP</Tag>
-		<English>[ICON_BULLET]+1 Merchant slot from Commons</English>
-		<French>[ICON_BULLET]+1 Merchant slot from Commons</French>
-		<German>[ICON_BULLET]+1 Merchant slot from Commons</German>
-		<Italian>[ICON_BULLET]+1 Merchant slot from Commons</Italian>
-		<Spanish>[ICON_BULLET]+1 Merchant slot from Commons</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SLATER_MILL</Tag>

@@ -4455,12 +4455,6 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 				changeMaxSpecialistCount(((SpecialistTypes)iI), iChange);
 			}
 
-			// 1SDAN?: Serpent Mound: +1 Merchant slot from Parks
-			if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_SERPENT_MOUND) && (SpecialistTypes)iI == SPECIALIST_MERCHANT && eBuilding == getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_PLAZA))
-			{
-				changeMaxSpecialistCount(((SpecialistTypes)iI), iChange);
-			}
-
 			changeFreeSpecialistCount(((SpecialistTypes)iI), GC.getBuildingInfo(eBuilding).getFreeSpecialistCount(iI) * iChange);
 		}
 
