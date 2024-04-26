@@ -46,6 +46,9 @@ class CivData:
 		
 		# MacAurther: Immigration
 		self.lUnitCategoriesHired = [0] * iNumImmigrantCategories
+		
+		# MacAurther: Starting Workers
+		self.bFirstCity = True
 
 
 class PlayerData:

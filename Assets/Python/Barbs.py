@@ -177,9 +177,23 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 	if not bForceSpawn and not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
 	
 	# MacAurther: Extra check for Tribe spawning
-	if bTribeSpawn and (plot.isImpassable() or plot.getImprovementType() in [iTribe, iContactedTribe] or \
-		plot.getTerrainType() in [iSnow, iSaltflat, iLagoon, iAtoll] or plot.getFeatureType() in [iBog, iJungle]):
+	if bTribeSpawn and (plot.isImpassable() or plot.getImprovementType() != ImprovementTypes.NO_IMPROVEMENT or \
+		plot.getTerrainType() in [iSnow, iSaltflat, iLagoon, iAtoll] or plot.getBonusType(-1) != BonusTypes.NO_BONUS):
 		return False
+	
+	# MacAurther: Don't spawn a Tribe next to another Tribe
+	if bTribeSpawn:
+		for iX in range(-1, 2):
+			iCheckX = plot.getX() + iX
+			if iCheckX < 0 or iCheckX >= iWorldX:
+				continue
+			for iY in range(-1, 2):
+				iCheckY = plot.getY() + iY
+				if iCheckY < 0 or iCheckY >= iWorldY:
+					continue
+				pCheckPlot = gc.getMap().plot(iCheckX, iCheckY)
+				if pCheckPlot.getImprovementType() in [iTribe, iContactedTribe]:
+					return False
 	
 	return True
 

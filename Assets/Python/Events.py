@@ -97,8 +97,9 @@ def capitalMovedOnCityAcquired(iOwner, iNewOwner, city):
 
 @handler("cityAcquiredAndKept")
 def firstCityOnCityAcquiredAndKept(iPlayer, city):
-	if city.isCapital():
+	if data.civs[civ(iPlayer)].bFirstCity:
 		events.fireEvent("firstCity", city)
+		data.civs[civ(iPlayer)].bFirstCity = False
 
 
 @handler("cityAcquiredAndKept")
@@ -152,8 +153,10 @@ def convertOnCityAcquired(iPlayer, pCity):
 
 @handler("cityBuilt")
 def firstCityOnCityBuilt(city):
-	if city.isCapital():
+	iPlayer = city.getOwner()
+	if data.civs[civ(iPlayer)].bFirstCity:
 		events.fireEvent("firstCity", city)
+		data.civs[civ(iPlayer)].bFirstCity = False
 
 
 @handler("buildingBuilt")

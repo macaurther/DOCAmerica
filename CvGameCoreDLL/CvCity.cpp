@@ -2544,16 +2544,29 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 
 		if(iNewX < 0 || iNewX >= EARTH_X || iNewY < 0 || iNewY >= EARTH_Y) return false;
 
-		// Make sure the player is moving to a valid tile. 4 criteria (MacAurther TODO: maybe add more):
+		// Make sure the player is moving to a valid tile. 5 criteria (MacAurther TODO: maybe add more):
 		//   the tile is owned by the migrating player
 		//   the tile is not impassible
 		//   the tile is not water
-		//   the tile does not contain a feature other than Flood Plains
+		//   the tile does not contain a feature other than Flood Plains or Canyon
+		//   the tile is not adjacent to another city
 		CvPlot* pNewPlot = GC.getMap().plot(iNewX, iNewY);
 		if(pNewPlot->getOwner() != getOwner()) return false;
 		if(pNewPlot->isImpassable()) return false;
 		if(pNewPlot->isWater()) return false;
 		if(pNewPlot->getFeatureType() != NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pNewPlot->getFeatureType() != FEATURE_CANYON) return false;
+		for(int iX = -1; iX < 2; iX++)
+		{
+			int iCheckX = iNewX + iX;
+			if(iCheckX < 0 || iCheckX >= EARTH_X) continue;
+			for(int iY = -1; iY < 2; iY++)
+			{
+				int iCheckY = iNewY + iY;
+				if(iCheckY < 0 || iCheckY >= EARTH_Y) continue;
+				if(iCheckX == getX() && iCheckY == getY()) continue;	// Don't worry about the city that's moving, it'll move
+				if(GC.getMap().plot(iCheckX, iCheckY)->getPlotCity() != NULL) return false;
+			}
+		}
 	}
 
 	return true;
