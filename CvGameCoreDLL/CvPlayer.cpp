@@ -5638,10 +5638,10 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 			{
 				receiveGoody(pPlot, eGoody, pUnit);
 
-				// MacAurther: Iroquois UP: Tribes in your borders give you a gift and improve their tile
-				if (getCivilizationType() == IROQUOIS)
+				// MacAurther: Native Confederacy Power
+				if (hasCivic(CIVIC_CONFEDERACY_NATIVE))
 				{
-					pPlot->improveTile();
+					pPlot->setImprovementType(IMPROVEMENT_ALLIED_TRIBE);
 				}
 
 				// Python Event
@@ -8029,6 +8029,15 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		long lResult=0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "canDoCivic", argsList.makeFunctionArgs(), &lResult);
 		if (lResult == 1)
+		{
+			return true;
+		}
+	}
+
+	// Iroquois UP: starts with Confederacy
+	if (getCivilizationType() == IROQUOIS)
+	{
+		if (eCivic == CIVIC_CONFEDERACY_NATIVE)
 		{
 			return true;
 		}

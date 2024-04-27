@@ -398,8 +398,10 @@ void CyPlayer::receiveGoody(CyPlot* pPlot, int /*GoodyTypes*/ iIndex, CyUnit* pU
 
 void CyPlayer::doGoody(CyPlot* pPlot, CyUnit* pUnit)
 {
+	
 	if (m_pPlayer)
-		m_pPlayer->doGoody(pPlot->getPlot(), pUnit->getUnit());
+		if (pUnit == NULL) m_pPlayer->doGoody(pPlot->getPlot(), NULL);	// MacAurther: HACK to make doGoody callable from Python without a unit
+		else m_pPlayer->doGoody(pPlot->getPlot(), pUnit->getUnit());
 }
 
 bool CyPlayer::canFound(int iX, int iY)

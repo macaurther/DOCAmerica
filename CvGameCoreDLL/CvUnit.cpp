@@ -4987,7 +4987,7 @@ bool CvUnit::pillage()
 	{
 		eTempImprovement = pPlot->getImprovementType();
 
-		if (pPlot->getTeam() != getTeam() || eTempImprovement == IMPROVEMENT_TRIBE || eTempImprovement == IMPROVEMENT_CONTACTED_TRIBE) // MacAurther: Get gold and trigger callback for tribes pillaged inside borders
+		if (pPlot->getTeam() != getTeam() || eTempImprovement == IMPROVEMENT_TRIBE || eTempImprovement == IMPROVEMENT_CONTACTED_TRIBE) // MacAurther: Get gold and trigger callback for tribes pillaged inside borders, but not Allied Tribes
 		{
 			// Use python to determine pillage amounts...
 			lPillageGold = 0;
@@ -5671,7 +5671,7 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 	}
 
 	// MacAurther: Cannot found on top of Tribe or Contacted Tribe
-	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_ALLIED_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
 	{
 		return false;
 	}
@@ -7208,7 +7208,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		return false;
 	}
 
-	// MacAurther: Cannot build on top of Tribe, unless it is to contact them or build a road (no railroad or highway though)
+	// MacAurther: Cannot build on top of Tribe, unless it is to contact them or build a road (no railroad or highway though). You can build on an allied tribe though (not that you'd want to! Haha)
 	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
 	{
 		if(eBuild == BUILD_CONTACT_TRIBE && canContactTribe(pPlot))

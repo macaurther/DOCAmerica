@@ -19,7 +19,8 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_ERAS				(ERA_INDUSTRIAL+1)
 
-#define BUILDINGCLASS_PALACE	((BuildingClassTypes)0) // MacAurther
+#define BUILDINGCLASS_PALACE	((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
+#define BUILDINGCLASS_CHIEFTANS_HUT	((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_CHIEFTANS_HUT"))	// MacAurther
 
 #define UNIT_COLONIST			((UnitTypes)GC.getInfoTypeForString("UNIT_COLONIST"))								// MacAurther
 #define UNIT_TIWANAKU_SISQENO	((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther

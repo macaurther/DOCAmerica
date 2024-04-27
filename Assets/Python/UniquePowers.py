@@ -63,6 +63,14 @@ def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 		# Inform the player that they received Immigration.
 		message(iPlayer, "TXT_KEY_COUREUR_DES_BOIS_POWER", iImmigration)
 
+@handler("goodyReceived")
+# Iroquois UP
+def iroquoisPower(iPlayer, pPlot, pUnit, iGoodyType):
+	if civ(iPlayer) == iIroquois:
+		if year() > year(1600):
+			makeUnits(iPlayer, iMohawk, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
+		else:
+			makeUnits(iPlayer, iAxeman, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 
 @handler("improvementBuilt")
 # Russian UP

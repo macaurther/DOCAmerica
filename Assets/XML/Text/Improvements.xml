@@ -106,12 +106,20 @@
 		<Spanish>Tribe</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_ALLIED_TRIBE</Tag>
+		<English>Tribe (Allied)</English>
+		<French>Tribe (Allied)</French>
+		<German>Tribe (Allied)</German>
+		<Italian>Tribe (Allied)</Italian>
+		<Spanish>Tribe (Allied)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_CONTACTED_TRIBE</Tag>
-		<English>Contacted Tribe</English>
-		<French>Contacted Tribe</French>
-		<German>Contacted Tribe</German>
-		<Italian>Contacted Tribe</Italian>
-		<Spanish>Contacted Tribe</Spanish>
+		<English>Tribe (Contacted)</English>
+		<French>Tribe (Contacted)</French>
+		<German>Tribe (Contacted)</German>
+		<Italian>Tribe (Contacted)</Italian>
+		<Spanish>Tribe (Contacted)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FORT_HELP</Tag>

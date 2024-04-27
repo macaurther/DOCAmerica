@@ -217,7 +217,7 @@ iInuit : 950,
 iInca : 1100,
 iPurepecha : 1150,
 iAztecs : 1250,
-iIroquois : 1350,
+iIroquois : 20,#1350,
 iSpain : 1496,
 iPortugal : 1532,
 iEngland : 1607,
@@ -538,12 +538,12 @@ iNumBuildingsPlague = iNumBuildings+1
 iNumCivics = 126
 #				2				3				4				5				6				7				
 # Native (Culture Group 1)
-(iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iCouncil1,		iAristocracy1,	iGodKing1,
+(iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iAristocracy1,	iCouncil1,		iGodKing1,
 iAuthority1,	iCustomaryLaw1,	iCityStates1,	iConfederacy1,	iBureaucracy1,	iVassalage1,	iFirstNation1,
 iTraditionalism1,iSubsistance1,	iCaptives1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iSlavery1,	
 iReciprocity1,	iCommune1,		iRedistribution1,iMerchants1,	iPlunder1,		iDependency1,	iTourism1,
-iAnimism1,		iHarmony1,		iOrganizedReligion1,iCosmopolis1,iIsolationism1,iAcculturation1,iSovereignty1,
-iSettlement1,	iNomads1,		iDiffusion1,	iConquest1,		iCooperation1,	iTributaries1,	iAncestralLands1,
+iAnimism1,		iHarmony1,		iIsolationism1,	iOrganizedReligion1,iCosmopolis1,iAcculturation1,iSovereignty1,
+iSettlement1,	iNomads1,		iDiffusion1,	iCooperation1,	iConquest1,		iTributaries1,	iAncestralLands1,
 # Colony
 iCaptains2,		iViceroyality2,	iProprietaries2,iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
 iExpedition2,	iAdmiralty2,	iCharterColony2,iTradeCompany2,	iRoyalColony2,	iCommonLaw2,	iProvinces2,
@@ -640,11 +640,12 @@ iNumCultureLevels = 7
 
 #Improvements
 
-iNumImprovements = 30
+iNumImprovements = 31
 #				2				3				4				5				6				7				8				9				10
 (iLandWorked, 	iWaterWorked, 	iCityRuins, 	iFarm, 			iPaddyField, 	iFishingBoats, 	iOceanFishery, 	iWhalingBoats, 	iMine, 			iWorkshop, 
 iLoggingCamp, 	iWindmill, 		iWatermill, 	iPlantation, 	iSlavePlantation, iQuarry, 		iPasture, 		iCamp, 			iWell, 			iOffshorePlatform, 
-iWinery, 		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve, iTribe,       iContactedTribe) = range(iNumImprovements)
+iWinery, 		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,iTribe,		iAlliedTribe,
+iContactedTribe) = range(iNumImprovements)
 
 iNumRoutes = 3
 (iRouteRoad, iRouteRailroad, iRouteHighway) = range(iNumRoutes)

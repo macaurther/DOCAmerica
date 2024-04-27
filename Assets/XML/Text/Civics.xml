@@ -408,11 +408,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONQUEST_NATIVE_STRATEGY</Tag>
-		<English>Extra experience for land units</English>
-		<French>Extra experience for land units</French>
-		<German>Extra experience for land units</German>
-		<Italian>Extra experience for land units</Italian>
-		<Spanish>Extra experience for land units</Spanish>
+		<English>Extra experience for land units; faster production of Barrakcs, Walls</English>
+		<French>Extra experience for land units; faster production of Barrakcs, Walls</French>
+		<German>Extra experience for land units; faster production of Barrakcs, Walls</German>
+		<Italian>Extra experience for land units; faster production of Barrakcs, Walls</Italian>
+		<Spanish>Extra experience for land units; faster production of Barrakcs, Walls</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONQUEST_NATIVE_HELP</Tag>
@@ -545,19 +545,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Tag>
-		<English>Reduced instability from cities; temporary unhappiness decays faster</English>
-		<French>Reduced instability from cities; temporary unhappiness decays faster</French>
-		<German>Reduced instability from cities; temporary unhappiness decays faster</German>
-		<Italian>Reduced instability from cities; temporary unhappiness decays faster</Italian>
-		<Spanish>Reduced instability from cities; temporary unhappiness decays faster</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Tag>
-		<English>[ICON_BULLET]Reduced Instability from Cities</English>
-		<French>[ICON_BULLET]Reduced Instability from Cities</French>
-		<German>[ICON_BULLET]Reduced Instability from Cities</German>
-		<Italian>[ICON_BULLET]Reduced Instability from Cities</Italian>
-		<Spanish>[ICON_BULLET]Reduced Instability from Cities</Spanish>
+		<English>Temporary unhappiness decays faster; no non-state religion spread</English>
+		<French>Temporary unhappiness decays faster; no non-state religion spread</French>
+		<German>Temporary unhappiness decays faster; no non-state religion spread</German>
+		<Italian>Temporary unhappiness decays faster; no non-state religion spread</Italian>
+		<Spanish>Temporary unhappiness decays faster; no non-state religion spread</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ADMIRALTY</Tag>
@@ -614,11 +606,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATIVE_STRATEGY</Tag>
-		<English>Lower maintenance costs from number of cities; increased war weariness</English>
-		<French>Lower maintenance costs from number of cities; increased war weariness</French>
-		<German>Lower maintenance costs from number of cities; increased war weariness</German>
-		<Italian>Lower maintenance costs from number of cities; increased war weariness</Italian>
-		<Spanish>Lower maintenance costs from number of cities; increased war weariness</Spanish>
+		<English>Lower maintenance costs from number of cities; increased war weariness; Tribes in your borders become Allied</English>
+		<French>Lower maintenance costs from number of cities; increased war weariness; Tribes in your borders become Allied</French>
+		<German>Lower maintenance costs from number of cities; increased war weariness; Tribes in your borders become Allied</German>
+		<Italian>Lower maintenance costs from number of cities; increased war weariness; Tribes in your borders become Allied</Italian>
+		<Spanish>Lower maintenance costs from number of cities; increased war weariness; Tribes in your borders become Allied</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATIVE_HELP</Tag>
+		<English>[ICON_BULLET]Tribes in your borders become Allied</English>
+		<French>[ICON_BULLET]Tribes in your borders become Allied</French>
+		<German>[ICON_BULLET]Tribes in your borders become Allied</German>
+		<Italian>[ICON_BULLET]Tribes in your borders become Allied</Italian>
+		<Spanish>[ICON_BULLET]Tribes in your borders become Allied</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATION_STRATEGY</Tag>
@@ -629,7 +629,7 @@
 		<Spanish>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CONFEDERACY_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATION_HELP</Tag>
 		<English>[ICON_BULLET]No extra stability or instability Civic combinations</English>
 		<French>[ICON_BULLET]No extra stability or instability Civic combinations</French>
 		<German>[ICON_BULLET]No extra stability or instability Civic combinations</German>
@@ -1018,19 +1018,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOMESTEADS_STRATEGY</Tag>
-		<English>Workers build improvements faster; extra population in new cities</English>
-		<French>Workers build improvements faster; extra population in new cities</French>
-		<German>Workers build improvements faster; extra population in new cities</German>
-		<Italian>Workers build improvements faster; extra population in new cities</Italian>
-		<Spanish>Workers build improvements faster; extra population in new cities</Spanish>
+		<English>Workers build improvements faster; extra [ICON_IMMIGRATION] in new cities</English>
+		<French>Workers build improvements faster; extra [ICON_IMMIGRATION] in new cities</French>
+		<German>Workers build improvements faster; extra [ICON_IMMIGRATION] in new cities</German>
+		<Italian>Workers build improvements faster; extra [ICON_IMMIGRATION] in new cities</Italian>
+		<Spanish>Workers build improvements faster; extra [ICON_IMMIGRATION] in new cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HOMESTEADS_HELP</Tag>
-		<English>[ICON_BULLET]Extra population in newly founded cities</English>
-		<French>[ICON_BULLET]Extra population in newly founded cities</French>
-		<German>[ICON_BULLET]Extra population in newly founded cities</German>
-		<Italian>[ICON_BULLET]Extra population in newly founded cities</Italian>
-		<Spanish>[ICON_BULLET]Extra population in newly founded cities</Spanish>
+		<English>[ICON_BULLET]Extra [ICON_IMMIGRATION] in newly founded cities</English>
+		<French>[ICON_BULLET]Extra [ICON_IMMIGRATION] in newly founded cities</French>
+		<German>[ICON_BULLET]Extra [ICON_IMMIGRATION] in newly founded cities</German>
+		<Italian>[ICON_BULLET]Extra [ICON_IMMIGRATION] in newly founded cities</Italian>
+		<Spanish>[ICON_BULLET]Extra [ICON_IMMIGRATION] in newly founded cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_OUTPOSTS</Tag>
@@ -1225,12 +1225,20 @@
 		<Spanish>God King</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_GOD_KING_HELP</Tag>
+		<English>[ICON_BULLET]Reduced Instability from Cities</English>
+		<French>[ICON_BULLET]Reduced Instability from Cities</French>
+		<German>[ICON_BULLET]Reduced Instability from Cities</German>
+		<Italian>[ICON_BULLET]Reduced Instability from Cities</Italian>
+		<Spanish>[ICON_BULLET]Reduced Instability from Cities</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOD_KING_STRATEGY</Tag>
-		<English>Faster production of Barrakcs, Walls; can hurry units with gold</English>
-		<French>Faster production of Barrakcs, Walls; can hurry units with gold</French>
-		<German>Faster production of Barrakcs, Walls; can hurry units with gold</German>
-		<Italian>Faster production of Barrakcs, Walls; can hurry units with gold</Italian>
-		<Spanish>Faster production of Barrakcs, Walls; can hurry units with gold</Spanish>
+		<English>Reduced instability from cities; can hurry units with gold</English>
+		<French>Reduced instability from cities; can hurry units with gold</French>
+		<German>Reduced instability from cities; can hurry units with gold</German>
+		<Italian>Reduced instability from cities; can hurry units with gold</Italian>
+		<Spanish>Reduced instability from cities; can hurry units with gold</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CITY_STATES</Tag>
@@ -1522,11 +1530,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ANCESTRAL_LANDS_STRATEGY</Tag>
-		<English>Prevents advanced civilizations from culturally dominating</English>
-		<French>Prevents advanced civilizations from culturally dominating</French>
-		<German>Prevents advanced civilizations from culturally dominating</German>
-		<Italian>Prevents advanced civilizations from culturally dominating</Italian>
-		<Spanish>Prevents advanced civilizations from culturally dominating</Spanish>
+		<English>Prevents advanced civilizations from culturally dominating; great generals are born faster from combat within borders</English>
+		<French>Prevents advanced civilizations from culturally dominating; great generals are born faster from combat within borders</French>
+		<German>Prevents advanced civilizations from culturally dominating; great generals are born faster from combat within borders</German>
+		<Italian>Prevents advanced civilizations from culturally dominating; great generals are born faster from combat within borders</Italian>
+		<Spanish>Prevents advanced civilizations from culturally dominating; great generals are born faster from combat within borders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ANCESTRAL_LANDS_HELP</Tag>
@@ -1682,19 +1690,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROVIDENCE_STRATEGY</Tag>
-		<English>Extra culture in new cities</English>
-		<French>Extra culture in new cities</French>
-		<German>Extra culture in new cities</German>
-		<Italian>Extra culture in new cities</Italian>
-		<Spanish>Extra culture in new cities</Spanish>
+		<English>Extra [ICON_CULTURE] in new cities</English>
+		<French>Extra [ICON_CULTURE] in new cities</French>
+		<German>Extra [ICON_CULTURE] in new cities</German>
+		<Italian>Extra [ICON_CULTURE] in new cities</Italian>
+		<Spanish>Extra [ICON_CULTURE] in new cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROVIDENCE_HELP</Tag>
-		<English>[ICON_BULLET]Extra culture in newly founded cities</English>
-		<French>[ICON_BULLET]Extra culture in newly founded cities</French>
-		<German>[ICON_BULLET]Extra culture in newly founded cities</German>
-		<Italian>[ICON_BULLET]Extra culture in newly founded cities</Italian>
-		<Spanish>[ICON_BULLET]Extra culture in newly founded cities</Spanish>
+		<English>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</English>
+		<French>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</French>
+		<German>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</German>
+		<Italian>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Italian>
+		<Spanish>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STRONGMAN</Tag>

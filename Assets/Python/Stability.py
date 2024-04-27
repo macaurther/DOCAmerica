@@ -460,10 +460,10 @@ def getSeparatismModifier(iPlayer, city):
 	
 	# Spanish UP
 	if iCiv == iSpain: 
-		iModifier -= city.getCultureLevel() - 1
+		iModifier -= city.getCultureLevel()
 	
-	# Empire Civic
-	if iCustomaryLaw1 in civics: iModifier -= 1
+	# God King Civic
+	if iGodKing1 in civics: iModifier -= 1
 	
 	# cap
 	if iModifier < -1: iModifier = -1

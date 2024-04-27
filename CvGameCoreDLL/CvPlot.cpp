@@ -5463,8 +5463,8 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 
 			if (isOwned())
 			{
-				// MacAurther Tribe Update: Huts are not removed by territory anymore / Iroquois UP
-				if (isGoody() && GET_PLAYER(getOwnerINLINE()).getCivilizationType() == IROQUOIS)
+				// MacAurther Tribe Update: Huts are not removed by territory anymore / Native Confederacy Power
+				if (isGoody() && GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_CONFEDERACY_NATIVE))
 				{
 					GET_PLAYER(getOwnerINLINE()).doGoody(this, NULL);
 				}

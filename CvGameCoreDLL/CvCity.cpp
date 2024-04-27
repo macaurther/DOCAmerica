@@ -2295,6 +2295,12 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
+	// MacAurther: Can no longer build Chieftan's Hut once you have a Palace (have a capital)
+	if (GC.getBuildingInfo(eBuilding).getBuildingClassType() == BUILDINGCLASS_CHIEFTANS_HUT)
+	{
+		if(GET_PLAYER(getOwner()).getCapitalCity() != NULL) return false;
+	}
+
 	if (!bTestVisible)
 	{
 		if (!bContinue)

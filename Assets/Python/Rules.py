@@ -107,7 +107,7 @@ def extraCultureOnFound(city):
 def extraCultureOnFound(city):
 	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
 	if iExpansionCivic in [iHomesteads2, iHomesteads3]:
-		city.changePopulation(1)
+		player(city.getOwner()).changeImmigration(int(50 * (3 - gc.getGame().getGameSpeedType())))
 
 ### COMBAT RESULT ###
 		
@@ -342,3 +342,12 @@ def migrateCity(iGameTurn, iPlayer):
 	data.migrateY = -1
 
 ### IMPLEMENTATIONS ###
+
+@handler("civicChanged")
+def onCivicChanged(iPlayer, iOldCivic, iNewCivic):
+	if iNewCivic == iConfederacy1:
+		for pPlot in plots.all().owner(iPlayer):
+			# Convert Tribes to Allied Tribe
+			if pPlot.getImprovementType() == iTribe:
+				pPlot.setImprovementType(iTribe)
+				player(iPlayer).doGoody(pPlot, None)

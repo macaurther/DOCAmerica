@@ -18,7 +18,7 @@
 			<bGovernmentCenter>1</bGovernmentCenter>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
-			<PrereqTech>TECH_NOBILITY</PrereqTech>
+			<PrereqTech>TECH_CODICES</PrereqTech>
 			<iCost>160</iCost>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
