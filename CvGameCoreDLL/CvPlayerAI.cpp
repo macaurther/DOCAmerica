@@ -10743,6 +10743,27 @@ int CvPlayerAI::AI_civicValue(CivicTypes eCivic) const
 		}
 	}
 
+	// MacAurther: AI's don't know they don't always have a capital anymore. Help them out
+	if (getCapitalCity() == NULL)
+	{
+		if (GC.getCivicInfo(eCivic).getCapitalTradeModifier() > 0) iValue /= 10;
+		if (GC.getCivicInfo(eCivic).getVassalCityCommerce() > 0) iValue /= 10;
+		if (GC.getCivicInfo(eCivic).getColonyCommerce() > 0) iValue /= 10;
+
+		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		{
+			if (GC.getCivicInfo(eCivic).getCapitalYieldModifier(iI) > 0) iValue /= 10;
+		}
+		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		{
+			if (GC.getCivicInfo(eCivic).getCapitalPopulationYieldModifier(iI) > 0) iValue /= 10;
+		}
+		for (int iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
+		{
+			if (GC.getCivicInfo(eCivic).getCapitalCommerceModifier(iI) > 0) iValue /= 10;
+		}
+	}
+
 	if (GC.getLeaderHeadInfo(getPersonalityType()).getFavoriteCivic() == eCivic)
 	{
 		if (!kCivic.isStateReligion() || iHighestReligionCount > 0)
