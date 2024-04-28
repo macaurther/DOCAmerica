@@ -1524,19 +1524,19 @@
 			<FootstepSounds>
 				<FootstepSound>
 					<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
-					<FootstepAudioScript>AS3D_UN_FOOT_UNIT_MUD</FootstepAudioScript>
+					<FootstepAudioScript/>
 				</FootstepSound>
 				<FootstepSound>
 					<FootstepAudioType>FOOTSTEP_AUDIO_HUMAN_LOW</FootstepAudioType>
-					<FootstepAudioScript>AS3D_UN_FOOT_UNIT_LOW_MUD</FootstepAudioScript>
+					<FootstepAudioScript/>
 				</FootstepSound>
 				<FootstepSound>
 					<FootstepAudioType>FOOTSTEP_AUDIO_ANIMAL</FootstepAudioType>
-					<FootstepAudioScript>AS3D_UN_ANIMAL_FOOT_LARGE_MUD</FootstepAudioScript>
+					<FootstepAudioScript/>
 				</FootstepSound>
 				<FootstepSound>
 					<FootstepAudioType>FOOTSTEP_AUDIO_ANIMAL_LOW</FootstepAudioType>
-					<FootstepAudioScript>AS3D_UN_ANIMAL_FOOT_LARGE_LOW_MUD</FootstepAudioScript>
+					<FootstepAudioScript/>
 				</FootstepSound>
 				<FootstepSound>
 					<FootstepAudioType>FOOTSTEP_AUDIO_HORSE</FootstepAudioType>

@@ -49,6 +49,47 @@
 			</TerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
+			<Type>BONUS_BISON</Type>
+			<Description>TXT_KEY_BONUS_BISON</Description>
+			<Civilopedia>TXT_KEY_BONUS_BISON_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_LIVESTOCK</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_BISON</ArtDefineTag>
+			<TechReveal>TECH_HUNTING</TechReveal>
+			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
+			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
+			<YieldChanges>
+				<iYieldChange>1</iYieldChange>
+			</YieldChanges>
+			<iHealth>1</iHealth>
+			<iAffectedCities>3</iAffectedCities>
+			<iPlacementOrder>4</iPlacementOrder>
+			<iConstAppearance>50</iConstAppearance>
+			<iMinAreaSize>3</iMinAreaSize>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>50</iMaxLatitude>
+			<Rands>
+				<iRandApp1>25</iRandApp1>
+				<iRandApp2>25</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<iTilesPer>16</iTilesPer>
+			<bArea>1</bArea>
+			<bFlatlands>1</bFlatlands>
+			<bNoRiverSide>1</bNoRiverSide>
+			<bNormalize>1</bNormalize>
+			<TerrainBooleans>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+				<TerrainBoolean>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrain>1</bTerrain>
+				</TerrainBoolean>
+			</TerrainBooleans>
+		</BonusInfo>
+		<BonusInfo>
 			<Type>BONUS_CITRUS</Type>
 			<Description>TXT_KEY_BONUS_CITRUS</Description>
 			<Civilopedia>TXT_KEY_BONUS_CITRUS_PEDIA</Civilopedia>
@@ -1432,56 +1473,6 @@
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
 			</TerrainBooleans>
-		</BonusInfo>
-		<BonusInfo>
-			<Type>BONUS_IVORY</Type>
-			<Description>TXT_KEY_BONUS_IVORY</Description>
-			<Civilopedia>TXT_KEY_BONUS_IVORY_PEDIA</Civilopedia>
-			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_IVORY</ArtDefineTag>
-			<TechCityTrade>TECH_TANNING</TechCityTrade>
-			<TechObsolete>TECH_ENGINE</TechObsolete>
-			<YieldChanges>
-				<iYieldChange>0</iYieldChange>
-				<iYieldChange>1</iYieldChange>
-			</YieldChanges>
-			<iHappiness>1</iHappiness>
-			<iAffectedCities>3</iAffectedCities>
-			<iPlacementOrder>5</iPlacementOrder>
-			<iConstAppearance>50</iConstAppearance>
-			<iMinAreaSize>3</iMinAreaSize>
-			<iMinLatitude>0</iMinLatitude>
-			<iMaxLatitude>40</iMaxLatitude>
-			<Rands>
-				<iRandApp1>25</iRandApp1>
-				<iRandApp2>25</iRandApp2>
-				<iRandApp3>0</iRandApp3>
-				<iRandApp4>0</iRandApp4>
-			</Rands>
-			<iPlayer>100</iPlayer>
-			<iGroupRange>1</iGroupRange>
-			<iGroupRand>50</iGroupRand>
-			<bArea>1</bArea>
-			<bFlatlands>1</bFlatlands>
-			<bNormalize>1</bNormalize>
-			<TerrainBooleans>
-				<TerrainBoolean>
-					<TerrainType>TERRAIN_PLAINS</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
-			</TerrainBooleans>
-			<FeatureBooleans>
-				<FeatureBoolean>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
-					<bFeature>1</bFeature>
-				</FeatureBoolean>
-			</FeatureBooleans>
-			<FeatureTerrainBooleans>
-				<FeatureTerrainBoolean>
-					<TerrainType>TERRAIN_GRASS</TerrainType>
-					<bFeatureTerrain>1</bFeatureTerrain>
-				</FeatureTerrainBoolean>
-			</FeatureTerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
 			<Type>BONUS_JADE</Type>

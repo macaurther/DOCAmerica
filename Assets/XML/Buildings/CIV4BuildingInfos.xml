@@ -1634,8 +1634,7 @@
 			<Strategy>TXT_KEY_BUILDING_SMOKEHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SMOKEHOUSE</ArtDefineTag>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
-			<PrereqTech>TECH_LOGISTICS</PrereqTech>
+			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1660,6 +1659,10 @@
 					<BonusType>BONUS_SHEEP</BonusType>
 					<iHealthChange>1</iHealthChange>
 				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_BISON</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
 			</BonusHealthChanges>
 			<BonusProductionModifiers>
 				<BonusProductionModifier>
@@ -1682,8 +1685,7 @@
 			<Strategy>TXT_KEY_BUILDING_HAWAIIAN_LUAU_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HAWAIIAN_LUAU</ArtDefineTag>
-			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
-			<PrereqTech>TECH_CEREMONY</PrereqTech>
+			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1713,6 +1715,14 @@
 				</BonusHealthChange>
 				<BonusHealthChange>
 					<BonusType>BONUS_PIG</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_SHEEP</BonusType>
+					<iHealthChange>1</iHealthChange>
+				</BonusHealthChange>
+				<BonusHealthChange>
+					<BonusType>BONUS_BISON</BonusType>
 					<iHealthChange>1</iHealthChange>
 				</BonusHealthChange>
 			</BonusHealthChanges>

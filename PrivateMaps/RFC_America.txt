@@ -4304,6 +4304,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=114
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -7434,6 +7435,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=96
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -9424,6 +9426,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=86
+	BonusType=BONUS_BISON
 	FeatureType=FEATURE_CANYON, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -12121,6 +12124,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=80
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -12218,6 +12222,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=96
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
@@ -14899,6 +14904,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=91
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -16928,6 +16934,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=81
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -17006,6 +17013,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=96
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -17054,6 +17062,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=105
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
@@ -17643,6 +17652,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=89
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -19810,6 +19820,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=106
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
@@ -20381,6 +20392,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=83
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -21976,6 +21988,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=109
+	BonusType=BONUS_BISON
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot

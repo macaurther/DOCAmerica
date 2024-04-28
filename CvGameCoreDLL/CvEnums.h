@@ -970,6 +970,7 @@ enum BonusTypes						// Exposed to Python
 	NO_BONUS = -1,
 	
 	BONUS_ALUMINUM,
+	BONUS_BISON,
 	BONUS_CITRUS,
 	BONUS_COAL,
 	BONUS_COPPER,
@@ -1001,7 +1002,6 @@ enum BonusTypes						// Exposed to Python
 	BONUS_GEMS,
 	BONUS_GOLD,
 	BONUS_INCENSE,
-	BONUS_IVORY,
 	BONUS_JADE,
 	BONUS_OBSIDIAN,
 	BONUS_PEARL,

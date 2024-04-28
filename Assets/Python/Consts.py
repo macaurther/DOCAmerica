@@ -217,7 +217,7 @@ iInuit : 950,
 iInca : 1100,
 iPurepecha : 1150,
 iAztecs : 1250,
-iIroquois : 20,#1350,
+iIroquois : 1350,
 iSpain : 1496,
 iPortugal : 1532,
 iEngland : 1607,
@@ -480,10 +480,10 @@ lColonistRoles = [iColonistSettle, iColonistSupport, iColonistExplore, iColonist
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 50
 #				2				3				4				5				6				7				8				9				10
-(iAluminium, 	iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		iUranium, 		
-iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 			iFish, 			iPig, 			iPotato,		
-iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			iGems, 			
-iGold, 			iIncense, 		iIvory, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			iSilver, 		
+(iAluminium, 	iBison,			iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
+iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 			iFish, 			iPig, 			
+iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			
+iGems, 			iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			iSilver, 		
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings

@@ -1544,12 +1544,11 @@
 					</YieldChanges>
 				</BonusTypeStruct>
 				<BonusTypeStruct>
-					<BonusType>BONUS_IVORY</BonusType>
+					<BonusType>BONUS_BISON</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>1</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
 					<YieldChanges>
-						<iYieldChange>0</iYieldChange>
 						<iYieldChange>1</iYieldChange>
 						<iYieldChange>1</iYieldChange>
 					</YieldChanges>
@@ -2132,7 +2131,7 @@
 			</FeatureMakesValids>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
-					<BonusType>BONUS_IVORY</BonusType>
+					<BonusType>BONUS_BISON</BonusType>
 					<bBonusMakesValid>1</bBonusMakesValid>
 					<bBonusTrade>0</bBonusTrade>
 					<iDiscoverRand>0</iDiscoverRand>
@@ -2564,6 +2563,15 @@
 					<YieldChanges>
 						<iYieldChange>0</iYieldChange>
 						<iYieldChange>0</iYieldChange>
+						<iYieldChange>1</iYieldChange>
+					</YieldChanges>
+				</BonusTypeStruct>
+				<BonusTypeStruct>
+					<BonusType>BONUS_BISON</BonusType>
+					<bBonusMakesValid>1</bBonusMakesValid>
+					<bBonusTrade>1</bBonusTrade>
+					<iDiscoverRand>0</iDiscoverRand>
+					<YieldChanges>
 						<iYieldChange>1</iYieldChange>
 					</YieldChanges>
 				</BonusTypeStruct>

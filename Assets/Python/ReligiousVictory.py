@@ -105,7 +105,7 @@ dAdditionalPaganGoal = {
 	iRodnovery: ResourceCount(iFur, 7),
 	iTeotlMaya: CombatFood(50),
 	iTeotlAztec: SacrificeHappiness(10),
-	iYoruba: ResourceCount((iIvory, 8), (iGems, 6)),
+	iYoruba: ResourceCount((iBison, 8), (iGems, 6)),
 }
 
 

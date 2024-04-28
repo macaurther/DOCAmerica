@@ -5837,7 +5837,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 			case BONUS_RICE:
 			case BONUS_SHEEP:
 			case BONUS_WHEAT:
-			case BONUS_IVORY:
+			case BONUS_BISON:
 				return false;
 				break;
 			default:
