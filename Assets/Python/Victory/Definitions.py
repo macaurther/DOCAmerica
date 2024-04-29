@@ -137,7 +137,7 @@ TradeGold = GoalDefinition(req.TradeGold)
 ContactTribe = GoalDefinition(req.ContactTribe)
 ReligionSpreads = GoalDefinition(req.ReligionSpreads)
 FreedSlaves = GoalDefinition(req.FreedSlaves)
-
+Migrations = GoalDefinition(req.Migrations)
 
 ### ARGUMENTS ###
 

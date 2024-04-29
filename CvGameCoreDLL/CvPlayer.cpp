@@ -25611,6 +25611,7 @@ int CvPlayer::getRegionPowers() const
 	case PUEBLOAN:
 	case IROQUOIS:
 	case MISSISSIPPI:
+	case SIOUX:
 		return RP_WILDERNESS;
 		break;
 	default:

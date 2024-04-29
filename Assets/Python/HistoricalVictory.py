@@ -58,6 +58,7 @@ VENEZUELA =  "TXT_KEY_VICTORY_NAME_VENEZUELA"
 BAHIA =  "TXT_KEY_VICTORY_NAME_BAHIA"
 ALASKA = "TXT_KEY_VICTORY_NAME_ALASKA"
 NATO = "TXT_KEY_VICTORY_NAME_NATO"
+GREAT_PLAINS = "TXT_KEY_VICTORY_NAME_GREAT_PLAINS"
 
 # area descriptors
 ANDEAN_COAST = "TXT_KEY_VICTORY_NAME_ANDEAN_COAST"
@@ -212,6 +213,11 @@ dGoals = {
             (plots.rectangle(tLakeErie) + plots.of(lLakeErieAdditional)).named(LAKE_ERIE),
             (plots.rectangle(tLakeOntario).without(lLakeOntarioExceptions) + plots.of(lLakeOntarioAdditional)).named(LAKE_ONTARIO),
 			at=1750),
+	),
+	iSioux: (
+		Migrations(30, by=1700),
+		AverageCultureAmount(500, by=1750),
+		AllowNone(group(iCivGroupAmerica).named(EUROPEAN), plots.regions([rNorthPlains, rGreatPlains]).named(GREAT_PLAINS), at=1890),
 	),
 	iSpain: (
 		RaidGold(3000, by=1600),

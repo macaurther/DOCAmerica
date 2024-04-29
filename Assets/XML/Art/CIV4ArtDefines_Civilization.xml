@@ -222,5 +222,11 @@
 			<Path>Art/Interface/TeamColor/flagdecal_olmec.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+            <Type>ART_DEF_CIVILIZATION_SIOUX</Type>
+            <Button>Art/Interface/Buttons/Civilizations/Sioux.dds</Button>
+            <Path>Art/Interface/TeamColor/FlagDECAL_Sioux.dds</Path>
+            <bWhiteFlag>1</bWhiteFlag>
+        </CivilizationArtInfo>
 	</CivilizationArtInfos>
 </Civ4ArtDefines>

@@ -273,4 +273,11 @@ class EventHandlerRegistry(object):
 		
 		return freedSlaves
 	
+	def migration(self, goal, applicable, func):
+		def migration((iPlayer, iNumMigrations)):
+			if applicable(goal, iPlayer):
+				func(goal, iNumMigrations)
+		
+		return migration
+	
 event_handler_registry = EventHandlerRegistry()

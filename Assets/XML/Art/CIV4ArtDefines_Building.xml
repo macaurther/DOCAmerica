@@ -1598,6 +1598,16 @@
 			<Button>Art/Structures/Buildings/Druidic_Nemeton/druidic_nemeton.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_WOCEKIYA_SHRINE</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.15</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Druidic_Nemeton/statue.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Druidic_Nemeton/druidic_nemeton.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TRADING_POST</Type>
 			<LSystem>LSYSTEM_COAST</LSystem>
 			<bAnimated>0</bAnimated>
@@ -2306,6 +2316,16 @@
 			<NIF>Art/Structures/Buildings/Palace/Palace.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Capitol.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_SIOUX_TIPI</Type>
+			<LSystem>LSYSTEM_1x1</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.26</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Granary/Granary.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Tipi.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

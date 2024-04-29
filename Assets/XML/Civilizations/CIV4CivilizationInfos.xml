@@ -366,7 +366,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -695,7 +695,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -1386,7 +1386,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -1485,7 +1485,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -1596,7 +1596,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -1740,7 +1740,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -1856,7 +1856,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -2092,7 +2092,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -2182,7 +2182,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -2855,7 +2855,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -2941,7 +2941,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -3116,6 +3116,106 @@
 			<DerivativeCiv>CIVILIZATION_CANADA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_RUSSIA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_RUSSIA_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
+			<Type>CIVILIZATION_SIOUX</Type>
+			<Description>TXT_KEY_CIV_SIOUX_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_SIOUX_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_SIOUX_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_SIOUX_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_SIOUX</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_SIOUX</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_WOCEKIYA</PaganReligion>
+			<Impact>IMPACT_MARGINAL</Impact>
+			<Identifier>SIO</Identifier>
+			<Region>WIL</Region>
+			<CultureGroup>1</CultureGroup>
+			<StartingYear>1450</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>25</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>1</Trade>
+				<Production>1</Production>
+				<Culture>3</Culture>
+				<Growth>3</Growth>
+				<Start>2</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Wazi-kute</City>
+				<City>Chantenna</City>
+				<City>Iyasica</City>
+				<City>Taganunkaota</City>
+				<City>Wanblika</City>
+				<City>Itokagata</City>
+				<City>Makhicuwaste</City>
+				<City>Numpa Wichagi</City>
+				<City>Olowan</City>
+				<City>Phaha Sapa</City>
+				<City>Okaga</City>
+				<City>Witahchan</City>
+				<City>Phangata</City>
+				<City>Itehca</City>
+				<City>Wiyakapta</City>
+				<City>Iktomiya</City>
+				<City>Hehaka</City>
+				<City>Phasapa</City>
+				<City>Ptehicunka</City>
+				<City>Wiyukte</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingType>BUILDING_SIOUX_TIPI</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_WOCEKIYA_SHRINE</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_SIOUX_SWIFT_ARROW</UnitType>
+				</Unit>
+			</Units>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_SITTING_BULL</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_SPAIN</Type>
@@ -3339,7 +3439,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -3428,7 +3528,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -3620,7 +3720,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -3732,7 +3832,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -3921,7 +4021,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -4059,7 +4159,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -4190,7 +4290,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -4367,7 +4467,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -4376,7 +4476,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_SITTING_BULL</LeaderName>
+					<LeaderName>LEADER_NATIVE</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -4439,7 +4539,7 @@
 			</FreeTechs>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
@@ -4605,7 +4705,7 @@
 			<FreeTechs/>
 			<DisableTechs/>
 			<InitialCivics>
-				<CivicType>CIVIC_CHIEFDOM_NATIVE</CivicType>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
 				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
 				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
 				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>

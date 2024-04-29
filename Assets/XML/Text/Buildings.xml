@@ -1966,6 +1966,14 @@
 		<Spanish>Pithouse</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_WOCEKIYA_SHRINE</Tag>
+		<English>Wocekiya Shrine</English>
+		<French>Wocekiya Shrine</French>
+		<German>Wocekiya Shrine</German>
+		<Italian>Wocekiya Shrine</Italian>
+		<Spanish>Wocekiya Shrine</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ALTAR</Tag>
 		<English>Altar</English>
 		<French>Altar</French>
@@ -2885,7 +2893,38 @@
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
 	</TEXT>
-	
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SIOUX_TIPI</Tag>
+		<English>Tipi</English>
+		<French>Tipi</French>
+		<German>Tipi</German>
+		<Italian>Tipi</Italian>
+		<Spanish>Tipi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SIOUX_TIPI_HELP</Tag>
+		<English>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</English>
+		<French>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</French>
+		<German>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</German>
+		<Italian>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</Italian>
+		<Spanish>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SIOUX_TIPI_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SIOUX_TIPI_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
 	
 	
 	

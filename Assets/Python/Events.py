@@ -71,6 +71,7 @@ events.addEvent("improvementBuilt")
 events.addEvent("improvementDestroyed")
 events.addEvent("EndGameTurn")
 events.addEvent("freedSlaves")
+events.addEvent("migration")
 events.addEvent("combatResult")
 
 

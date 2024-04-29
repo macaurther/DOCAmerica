@@ -43,6 +43,12 @@ lCivilizations = [
 		techs=techs.column(2).including(iCalendar).without(iNavigation)
 	),
 	Civilization(
+		iSioux,
+		iGold=100,
+		lCivics=[iHarmony1],
+		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
+	),
+	Civilization(
 		iSpain,
 		iGold=200,
 		iStateReligion=iCatholicism,

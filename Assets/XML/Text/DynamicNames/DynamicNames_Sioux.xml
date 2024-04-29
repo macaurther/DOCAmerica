@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sioux -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_DESC</Tag>
+		<English>The Sioux</English>
+		<French>The Sioux</French>
+		<German>The Sioux</German>
+		<Italian>The Sioux</Italian>
+		<Spanish>The Sioux</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_PEOPLES</Tag>
+		<English>Santee Peoples</English>
+		<French>Santee Peoples</French>
+		<German>Santee Peoples</German>
+		<Italian>Santee Peoples</Italian>
+		<Spanish>Santee Peoples</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_DEFAULT</Tag>
+		<English>The Sioux</English>
+		<French>The Sioux</French>
+		<German>The Sioux</German>
+		<Italian>The Sioux</Italian>
+		<Spanish>The Sioux</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_COUNCIL</Tag>
+		<English>Seven Council Fires</English>
+		<French>Seven Council Fires</French>
+		<German>Seven Council Fires</German>
+		<Italian>Seven Council Fires</Italian>
+		<Spanish>Seven Council Fires</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_COMMUNIST</Tag>
+		<English>Republic of %s1</English>
+		<French>
+			<Text>R&#233;publique d'%s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Republik %s1:Republik %s1:Republik %s1</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Repubblica di %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Rep&#250;blica de %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_FASCIST</Tag>
+		<English>%s2 State</English>
+		<French>
+			<Text>&#201;tat %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>%s2 Staat:%s2 Staat:%s2 Staat</Text>
+			<Gender>Male:Male:Male</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Stato %s2</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Estado %s2</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_ADJECTIVE</Tag>
+		<English>Sioux</English>
+		<French>Sioux</French>
+		<German>Sioux</German>
+		<Italian>Sioux</Italian>
+		<Spanish>Sioux</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_SHORT_DESC</Tag>
+		<English>Sioux</English>
+		<French>Sioux</French>
+		<German>Sioux</German>
+		<Italian>Sioux</Italian>
+		<Spanish>Sioux</Spanish>
+	</TEXT>
+</Civ4GameText>

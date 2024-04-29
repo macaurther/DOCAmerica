@@ -2,7 +2,6 @@ from Core import *
 from BaseRequirements import *
 
 
-# First Tibetan UHV goal
 class AcquiredCities(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -27,7 +26,6 @@ class AcquiredCities(TrackRequirement):
 		return len(self.recorded)
 		
 
-# Third Canadian UHV goal
 class BrokeredPeace(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -41,7 +39,6 @@ class BrokeredPeace(TrackRequirement):
 		self.incremented("peaceBrokered")
 
 
-# Third Vedic URV goal
 class CelebrateTurns(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -62,7 +59,6 @@ class CelebrateTurns(TrackRequirement):
 			goal.check()
 
 
-# Third Maya Teotl URV goal
 class CombatFood(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -77,8 +73,6 @@ class CombatFood(TrackRequirement):
 		self.accumulated("combatFood")
 
 
-# First Moorish UHV goal
-# Second Dutch UHV goal
 class ConqueredCities(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -137,7 +131,6 @@ class ConqueredCities(TrackRequirement):
 		return areas
 
 
-# Third Aztec UHV goal
 class EnslaveCount(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -170,9 +163,6 @@ class EnslaveCount(TrackRequirement):
 		return [units]
 	
 
-# Third Japanese UHV goal
-# Third English UHV goal
-# Third German UHV goal
 class EraFirstDiscover(TrackRequirement):
 
 	TYPES = (ERA, COUNT)
@@ -207,10 +197,6 @@ class EraFirstDiscover(TrackRequirement):
 		return "%s (%s)" % (ThresholdRequirement.progress(self, evaluator), text("TXT_KEY_VICTORY_PROGRESS_REMAINING", self.remaining_techs()))
 
 
-# Third Chinese UHV goal
-# First Argentine UHV goal
-# Third Argentine UHV goal
-# Second Hindu URV goal
 class GoldenAges(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -237,7 +223,6 @@ class GoldenAges(TrackRequirement):
 		return "%d / %d" % (self.evaluate(evaluator) / scale(iGoldenAgeLength), self.iRequired)
 
 
-# Second Mexican UHV goal
 class GreatGenerals(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -257,7 +242,6 @@ class GreatGenerals(TrackRequirement):
 			goal.check()
 
 
-# Second Buddhist URV goal
 class HappiestTurns(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -285,7 +269,6 @@ class HappiestTurns(TrackRequirement):
 		return (iHappy * 100) / max(1, iHappy + iUnhappy)
 
 
-# First Taoist URV goal
 class HealthiestTurns(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -313,7 +296,6 @@ class HealthiestTurns(TrackRequirement):
 		return (iHealthy * 100) / max(1, iHealthy + iUnhealthy)
 
 
-# First Buddhist URV goal
 class PeaceTurns(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -333,7 +315,6 @@ class PeaceTurns(TrackRequirement):
 			goal.check()
 
 
-# First Turkic UHV goal
 class PillageCount(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -348,7 +329,6 @@ class PillageCount(TrackRequirement):
 		self.incremented("unitPillage")
 
 
-# Third Moorish UHV goal
 class PiracyGold(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -365,7 +345,6 @@ class PiracyGold(TrackRequirement):
 		self.accumulated("combatGold")
 
 
-# First Catholic URV goal
 class PopeTurns(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -385,7 +364,6 @@ class PopeTurns(TrackRequirement):
 			goal.check()
 
 
-# Third Viking UHV goal
 class RaidGold(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -402,7 +380,6 @@ class RaidGold(TrackRequirement):
 		self.accumulated("combatGold")
 
 
-# Second Mongol UHV goal
 class RazeCount(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -417,7 +394,6 @@ class RazeCount(TrackRequirement):
 		self.incremented("cityRazed")
 
 
-# Third Colombian UHV goal
 class ResourceTradeGold(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -437,7 +413,6 @@ class ResourceTradeGold(TrackRequirement):
 		goal.check()
 
 
-# Third Aztec Teotl URV goal
 class SacrificeHappiness(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -452,7 +427,6 @@ class SacrificeHappiness(TrackRequirement):
 		self.incremented("sacrificeHappiness")
 
 
-# First Russian UHV goal
 class SettledCities(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -492,7 +466,6 @@ class SettledCities(TrackRequirement):
 		return {}
 
 
-# Second Congolese UHV goal
 class SlaveTradeGold(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -507,8 +480,6 @@ class SlaveTradeGold(TrackRequirement):
 		self.accumulated("playerSlaveTrade")
 	
 
-# Third Korean UHV goal
-# Second English UHV goal
 class SunkShips(TrackRequirement):
 
 	TYPES = (COUNT,)
@@ -528,7 +499,6 @@ class SunkShips(TrackRequirement):
 			goal.check()
 
 
-# Third Tamil UHV goal
 class TradeGold(TrackRequirement):
 
 	TYPES = (AMOUNT,)
@@ -623,3 +593,16 @@ class FreedSlaves(TrackRequirement):
 		TrackRequirement.__init__(self, *parameters, **options)
 		
 		self.accumulated("freedSlaves")
+
+class Migrations(TrackRequirement):
+
+	TYPES = (COUNT,)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_MIGRATE"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_MIGRATIONS"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_MIGRATE"
+	
+	def __init__(self, *parameters, **options):
+		TrackRequirement.__init__(self, *parameters, **options)
+		
+		self.accumulated("migration")

@@ -13,12 +13,12 @@ iWorldY = 122
 iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
-iNumCivs = 37
+iNumCivs = 38
 #				2				3				4				5				6				7				8				9				10
 (iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	iNorse,			
-iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		iWari,			
-iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSioux,			iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
+iWari,			iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -36,6 +36,7 @@ lBirthOrder = [
 	iPurepecha,
 	iAztecs,
 	iIroquois,
+	iSioux,
 	iSpain,
 	iPortugal,
 	iEngland,
@@ -69,7 +70,7 @@ iNumCivGroups = 4
 
 dCivGroups = {
 iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
-iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iZapotec, iPurepecha],
+iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iSioux, iZapotec, iPurepecha],
 iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela],
 iCivGroupNATO : [iAmerica, iCanada, iNorse, iEngland, iFrance, iSpain, iPortugal, iNetherlands],
 }
@@ -82,10 +83,10 @@ iNumTechGroups = 3
 dTechGroups = {
 iTechGroupWestern : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iCanada],
 iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela],
-iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iHawaii, iZapotec, iPurepecha],
+iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iSioux, iHawaii, iZapotec, iPurepecha],
 }
 
-lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iHawaii, iZapotec, iPurepecha]
+lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iSioux, iHawaii, iZapotec, iPurepecha]
 lRevolutionaries = [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru]	# Europeans get expeditionary force at the spawn of these civs
 
 #for messages
@@ -136,6 +137,7 @@ lNeighbours = [
 	(iWari, iMuisca),
 	(iMississippi, iAmerica),
 	(iMississippi, iIroquois),
+	(iMississippi, iSioux),
 	(iPuebloan, iMexico),
 	(iMuisca, iColombia),
 	(iNorse, iInuit),
@@ -154,8 +156,16 @@ lNeighbours = [
 	(iAztecs, iAmerica),
 	(iAztecs, iMexico),
 	(iAztecs, iColombia),
+	(iIroquois, iSioux),
+	(iIroquois, iEngland),
+	(iIroquois, iFrance),
+	(iIroquois, iNetherlands),
 	(iIroquois, iAmerica),
 	(iIroquois, iCanada),
+	(iSioux, iEngland),
+	(iSioux, iFrance),
+	(iSioux, iAmerica),
+	(iSioux, iCanada),
 	(iSpain, iFrance),
 	(iSpain, iPortugal),
 	(iEngland, iNetherlands),
@@ -218,6 +228,7 @@ iInca : 1100,
 iPurepecha : 1150,
 iAztecs : 1250,
 iIroquois : 1350,
+iSioux : 1450,
 iSpain : 1496,
 iPortugal : 1532,
 iEngland : 1607,
@@ -256,6 +267,7 @@ iIroquois : 1800,
 iSpain : 1850,
 iPortugal : 1850,
 iFrance : 1850,
+iSioux : 1875,
 }, 2000)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
@@ -301,6 +313,7 @@ iInca : 3,
 iPurepecha : 2,
 iAztecs : 3,
 iIroquois : 2,
+iSioux : 2,
 iSpain : 3,
 iEngland : 2,
 iFrance : 2,
@@ -355,6 +368,7 @@ iInca : 35,
 iPurepecha : 20,
 iAztecs : 30,
 iIroquois : 25,
+iSioux : 30,
 iSpain : 20,
 iPortugal : 30,
 iEngland : 20,
@@ -392,10 +406,10 @@ tPersecutionPreference = (
 )
 
 # pagan religions
-iNumPaganReligions = 12
+iNumPaganReligions = 13
 #				2				3				4				5				6				7				8				9				10
 (iAngakkuq, 	iAsatru, 		iAtua, 			iDruidism, 		iGaiwiio,		iInti, 			iKachina,		iMidewiwin, 	iRodnovery, 	iTeotlMaya, 
-iTeotlAztec, 	iYoruba) = range(iNumPaganReligions)
+iTeotlAztec, 	iWocekiya,		iYoruba) = range(iNumPaganReligions)
 
 iPaganVictory = iNumReligions
 iSecularVictory = iNumReligions + 1
@@ -436,7 +450,7 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 130
+iNumUnits = 131
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iSpy, 			iSisqeno,       
@@ -445,12 +459,13 @@ iMinuteman,		iMilitia5,		iWarrior, 		iKoa,			iArquebusier,	iArmedBrave,	iArmedSl
 iRifleman,		iVencedores,	iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iMacana,		iTercio,		iMohawk,		iFusilier,		
 iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,iPikeman,		iArcher,		iPicta,			
 iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iAtlatlist,		iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		
-iCacos,			iAlbionLegion,	iHorseArcher,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iCuirassier,	
-iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iBombard,		iCannon,		iArtillery,		iHowitzer,		iWorkboat,		iCanoe,			
-iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iSloop,			
-iFrigate,		iIronclad,		iPrivateer,	    iTorpedoBoat,	iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	iGreatArtist, 	
-iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,
-iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlave2,	iMigrantWorker) = range(iNumUnits)
+iCacos,			iAlbionLegion,	iHorseArcher,	iHorseArcher,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			
+iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iBombard,		iCannon,		iArtillery,		iHowitzer,		iWorkboat,		
+iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		
+iSloop,			iFrigate,		iIronclad,		iPrivateer,	    iTorpedoBoat,	iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	
+iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,
+iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlave2,	
+iMigrantWorker) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -487,20 +502,20 @@ iGems, 			iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
-iNumBuildings = 200
-# Buildings (103)
+iNumBuildings = 201
+# Buildings (104)
 #				2				3				4				5				6				7				8				9				10
-(iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iMarket,		
-iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		iPyramid,		
-iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		iWalls,			
-iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			iStocks,		
-iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			iConstabulary,	
-iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		iTavern,		
-iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
-iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	
-iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			
-iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		iArsenal,		
-iDrydock,		iLibrary,		iNewspaper,				
+(iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iTipi,
+iMarket,		iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		
+iPyramid,		iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		
+iWalls,			iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			
+iStocks,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			
+iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		
+iTavern,		iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	
+iAssembly,		iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		
+iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		
+iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		
+iArsenal,		iDrydock,		iLibrary,		iNewspaper,				
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -672,14 +687,14 @@ iVictorySecularism = 11
 
 
 #leaders
-iNumLeaders = 59
+iNumLeaders = 60
 #				2				3				4				5				6				7				8				9				10
 (iLeaderBarbarian,iSittingBull, iIndependentLeader,iWashington,	iJackson,		iLincoln,		iRoosevelt,		iFDR,			iKennedy,			iReagan,
 iObama,			iSanMartin,		iPeron,			iMontezuma,		iPedro,			iVargas,		iMacDonald,		iTrudeau,		iTacaynamo,		iBolivar,
 iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		iDeGaulle,		iLOuverture,	iKamehameha,	iHuaynaCapac,	iPachacuti,		
 iAua,			iHiawatha,		iPacal,			iJuarez,		iSantaAnna,		iCardenas,		iRedHorn,		iSaguamanchica,	iWillemVanOranje,iWilliam,		
 iRagnar,		iGustav,		iGerhardsen,	iCastilla,		iJoao,			iMaria,			iItzukuma,		iCatherine,		iAlexanderI,	iStalin,		
-iIsabella,		iPhilip,		iFranco,		iAtlatlCauac,	iMalkuHuyustus,	iChavez,		iWariCapac,		iCosijoeza,		iTariacuri) = range(iNumLeaders)
+iIsabella,		iPhilip,		iFranco,		iAtlatlCauac,	iMalkuHuyustus,	iChavez,		iWariCapac,		iCosijoeza,		iTariacuri,		iSittingBull) = range(iNumLeaders)
 
 dResurrectionLeaders = CivDict({
 })
@@ -690,7 +705,7 @@ iNumPeriods = 0
 iNumImpacts = 5
 (iImpactMarginal, iImpactLimited, iImpactSignificant, iImpactCritical, iImpactPlayer) = range(iNumImpacts)
 
-lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari]
+lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari, iSioux]
 
 (i0AD, i1500AD, i1750AD) = range(3)
 
@@ -765,6 +780,7 @@ iInca : 10,
 iPurepecha : 3,
 iAztecs : 5,
 iIroquois : 5,
+iSioux : 5,
 iSpain : 30,
 iPortugal : 20,
 iEngland : 15,

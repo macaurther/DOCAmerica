@@ -73,6 +73,12 @@
 			<Button>Art/Interface/Buttons/Religions/Teotl.dds</Button>
 		</PaganReligionInfo>
 		<PaganReligionInfo>
+			<Type>PAGAN_RELIGION_WOCEKIYA</Type>
+			<Description>TXT_KEY_PAGAN_RELIGION_WOCEKIYA</Description>
+			<Civilopedia>TXT_KEY_PAGAN_RELIGION_WOCEKIYA_PEDIA</Civilopedia>
+			<Button>Art/Interface/Buttons/Religions/Wocekiya.dds</Button>
+		</PaganReligionInfo>
+		<PaganReligionInfo>
 			<Type>PAGAN_RELIGION_YORUBA</Type>
 			<Description>TXT_KEY_PAGAN_RELIGION_YORUBA</Description>
 			<Civilopedia>TXT_KEY_PAGAN_RELIGION_YORUBA_PEDIA</Civilopedia>

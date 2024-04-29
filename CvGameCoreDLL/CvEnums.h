@@ -1215,12 +1215,13 @@ enum CivilizationTypes		// Exposed to Python
 	PUEBLOAN,
 	PUREPECHA,
 	RUSSIA,
+	SIOUX,
 	SPAIN,
 	TEOTIHUACAN,
 	TIWANAKU,
 	VENEZUELA,
+	
 	WARI,
-
 	ZAPOTEC,
 	
 	INDEPENDENT,
@@ -1238,7 +1239,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	NO_LEADER = -1,
 
 	LEADER_BARBARIAN,
-	LEADER_SITTING_BULL,
+	LEADER_NATIVE,
 	LEADER_INDEPENDENT,
 
 	// America
@@ -1359,6 +1360,9 @@ enum LeaderHeadTypes			// Exposed to Python
 
 	// Purepecha
 	TARIACURI,
+
+	// Sioux
+	LEADER_SITTING_BULL,
 
 	NUM_LEADERHEADS
 };

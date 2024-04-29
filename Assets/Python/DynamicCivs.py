@@ -161,6 +161,7 @@ dStartingLeaders = [
 	iPurepecha : iTariacuri,
 	iAztecs : iMontezuma,
 	iIroquois : iHiawatha,
+	iSioux : iSittingBull,
 	iSpain : iIsabella,
 	iPortugal : iJoao,
 	iEngland : iElizabeth,

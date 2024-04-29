@@ -45,7 +45,9 @@ LEADER_DATES = {
 	# Aztecs
 	iMontezuma: 1440,
 	# Iroquois
-	iHiawatha: 1450,
+	iHiawatha: 1350,
+	# Sioux
+	iSittingBull: 1450,
 	# Spain
 	iIsabella: 1480,
 	iPhilip: 1560,

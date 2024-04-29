@@ -1288,11 +1288,25 @@
 			<fBlue>1.00</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
-	        <ColorVal>
+		<ColorVal>
 			<Type>COLOR_X_FIREBRICK</Type>
 			<fRed>0.70</fRed>
 			<fGreen>0.13</fGreen>
 			<fBlue>0.13</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_PLAYER_CREAM</Type>
+			<fRed>1.00</fRed>
+			<fGreen>0.93</fGreen>
+			<fBlue>0.89</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_X_BROWN</Type>
+			<fRed>0.49</fRed>
+			<fGreen>0.23</fGreen>
+			<fBlue>0.11</fBlue>
 			<fAlpha>1.00</fAlpha>
 		</ColorVal>
 	</ColorVals>

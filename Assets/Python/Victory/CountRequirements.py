@@ -4,11 +4,6 @@ from BaseRequirements import *
 from Civics import isCommunist
 from Arguments import base_building
 
-
-# Third Holy Roman UHV goal
-# Third Russian UHV goal
-# Third Jewish URV goal
-# First Confucian URV goal
 class AttitudeCount(ThresholdRequirement):
 
 	TYPES = (ATTITUDE, COUNT)
@@ -54,8 +49,6 @@ class AttitudeCount(ThresholdRequirement):
 		
 		return [civilizations]
 
-
-# Second Khmer UHV goal
 class AveragePopulation(ThresholdRequirement):
 
 	TYPES = (COUNT,)
@@ -70,30 +63,6 @@ class AveragePopulation(ThresholdRequirement):
 		
 		return player(iPlayer).getTotalPopulation() / iNumCities
 
-
-# Second Harappan UHV goal
-# First Chinese UHV goal
-# First Indian UHV goal
-# Second Indian UHV goal
-# Second Persian UHV goal
-# Third Persian UHV goal
-# First Roman UHV goal
-# Second Ethiopian UHV goal
-# First Korean UHV goal
-# First Khmer UHV goal
-# First Holy Roman UHV goal
-# Third Polish UHV goal
-# First Inca UHV goal
-# Second Aztec UHV goal
-# First Mughal UHV goal
-# First Mexican UHV goal
-# First Orthodox URV goal
-# Second Catholic URV goal
-# Third Islamic URV goal
-# First Secular URV goal
-# Second Secular URV goal
-# First Pagan URV goal
-# Third Olympian URV goal
 class BuildingCount(ThresholdRequirement):
 
 	TYPES = (BUILDING, COUNT)
@@ -136,10 +105,6 @@ class BuildingCount(ThresholdRequirement):
 		return "%s %s: %s" % (self.indicator(evaluator), text(self.PROGR_KEY, capitalize(BUILDING.format(self.iBuilding, bPlural=True))), self.progress_value(evaluator))
 
 
-# First Phoenician UHV goal
-# First Ottoman UHV goal
-# Third Brazilian UHV goal
-# Second Confucian URV goal
 class CityBuildingCount(ThresholdRequirement):
 
 	GLOBAL_TYPES = (CITY,)
@@ -209,12 +174,6 @@ class CityBuilding(CityBuildingCount):
 	def __init__(self, city, iBuilding, **options):
 		CityBuildingCount.__init__(self, city, iBuilding, 1, **options)
 
-
-# Second Roman UHV goal
-# Third Byzantine UHV goal
-# First Moorish UHV goal
-# First English UHV goal
-# Third Portuguese UHV goal
 class CityCount(ThresholdRequirement):
 
 	TYPES = (AREA, COUNT)

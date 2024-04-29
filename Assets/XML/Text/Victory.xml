@@ -3107,6 +3107,30 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_MIGRATE</Tag>
+		<English>complete %s1</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DESC_MIGRATIONS</Tag>
+		<English>%s1 migrations</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PROGR_MIGRATE</Tag>
+		<English>migrations</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_MESOAMERICA</Tag>
 		<English>Mesoamerica</English>
 		<French>Mesoamerica</French>
@@ -3313,6 +3337,14 @@
 		<German>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</German>
 		<Italian>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</Italian>
 		<Spanish>NATO (USA, Canada, Iceland, Britain, France, Spain, Portugal, Netherlands)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_GREAT_PLAINS</Tag>
+		<English>Great Plains</English>
+		<French>Great Plains</French>
+		<German>Great Plains</German>
+		<Italian>Great Plains</Italian>
+		<Spanish>Great Plains</Spanish>
 	</TEXT>
 
 	<TEXT>

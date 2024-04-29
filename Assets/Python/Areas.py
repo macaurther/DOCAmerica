@@ -21,6 +21,7 @@ iInca :			(24, 29), # Cuzco
 iPurepecha :	(11, 66), # Tzintzuntzan
 iAztecs :		(14, 64), # Tenochtitlan
 iIroquois :		(39, 85), # Onondaga
+iSioux :		(28, 89), # Southern Minnesota
 iSpain :		(40, 54), # Santo Domingo
 iPortugal :		(39, 16), # Sao Paulo
 iEngland :		(38, 77), # Jamestown
@@ -69,6 +70,7 @@ iInca :		    ((20, 27),	(27, 31)),
 iPurepecha :	((10, 65), 	(12, 68)),
 iAztecs :		((13, 63),	(15, 65)),
 iIroquois :	    ((34, 84),	(41, 87)),
+iSioux :		((21, 87),	(30, 92)),
 iSpain :		((39, 54),	(41, 56)),
 iPortugal :	    ((38, 15),	(46, 17)),
 iEngland :	    ((37, 76),	(39, 78)),
@@ -113,16 +115,17 @@ iTeotihuacan :  ((13, 65),	(15, 67)),
 iZapotec :		((12, 60), 	(16, 62)),
 iTiwanaku :	    ((25, 21),	(29, 26)),
 iWari :		    ((22, 32),	(24, 35)),
-iMississippi :  ((27, 81),	(35, 85)), # MacAurther TODO: fix pagan religion
-iPuebloan :		((12, 85),	(18, 88)), # MacAurther TODO: fix pagan religion
+iMississippi :  ((27, 81),	(35, 85)),
+iPuebloan :		((12, 85),	(18, 88)),
 iMuisca :		((30, 41),	(33, 44)),
 iNorse :		((0, 0), 	(0, 0)),	# No core for Europeans
 iChimu :		((19, 35),	(22, 38)),
-iInuit :		((10, 117),	(19, 121)), # MacAurther TODO: fix pagan religion
+iInuit :		((10, 117),	(19, 121)),
 iInca :		    ((20, 27),	(27, 31)),
 iPurepecha :	((10, 65), 	(12, 68)),
 iAztecs :		((12, 62),	(17, 65)),
-iIroquois :	    ((36, 84),	(40, 87)), # MacAurther TODO: fix pagan religion
+iIroquois :	    ((36, 84),	(40, 87)),
+iSioux :		((25, 89),	(28, 92)),
 iSpain : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iPortugal : 	((0, 0), 	(0, 0)),	# No core for Europeans
 iEngland : 		((0, 0), 	(0, 0)),	# No core for Europeans
@@ -142,6 +145,7 @@ iCanada :		((35, 86),	(51, 94)),
 })
 
 dPeriodCoreArea = {
+iSioux :		((21, 90),	(25, 95)),
 }
 
 dCoreAreaExceptions = CivDict({
@@ -162,7 +166,6 @@ dPeriodCoreAreaExceptions = appenddict({
 })
 
 ### Normal Area ### - MacAurther: Used for UHVs and Dynamic Civs. Basically means area they would normally inhabit I think???
-#TODO
 dNormalArea = CivDict({
 iMaya :		    ((19, 56),	(25, 63)),
 iTeotihuacan :  ((12, 62),	(18, 68)),
@@ -179,6 +182,7 @@ iInca :		    ((20, 19),	(29, 41)),
 iPurepecha :	((10, 65), 	(12, 68)),
 iAztecs :		((9, 59),	(19, 69)),
 iIroquois :		((33, 84),	(41, 88)),
+iSioux :		((20, 88),	(28, 95)),
 iSpain :		((40, 54),  (40, 54) ),
 iPortugal :		((39, 16),  (39, 16) ),
 iEngland :		((38, 77),  (38, 77) ),
@@ -213,7 +217,6 @@ dPeriodNormalAreaExceptions = appenddict({
 })
 
 ### Broader Area ### - MacAurther: No idea what this is for
-#TODO
 dBroaderArea = CivDict({
 iMaya :			((22, 59),  (22, 59)),
 iTeotihuacan :	((14, 66),  (14, 66)),
@@ -231,6 +234,7 @@ iPurepecha :	((10, 65), 	(12, 68)),
 iAztecs :		((14, 64),  (14, 64)),
 iSpain :		((40, 54),  (40, 54)),
 iIroquois :		((39, 85),  (39, 85)),
+iSioux :		((20, 88),	(28, 95)),
 iPortugal :		((39, 16),  (39, 16)),
 iEngland :		((38, 77),  (38, 77)),
 iFrance :		((46, 92),  (46, 92)),
