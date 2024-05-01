@@ -8597,7 +8597,6 @@ BeginPlot
 	x=13,y=63
 	isNOfRiver
 	RiverWEDirection=3
-	BonusType=BONUS_HORSE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -10148,7 +10147,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=89
-	BonusType=BONUS_HORSE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -14827,7 +14825,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=79
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -16293,7 +16290,6 @@ BeginPlot
 	x=24,y=88
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -16643,7 +16639,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=28
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -17238,7 +17233,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -18873,7 +18867,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=63
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -20903,7 +20896,6 @@ BeginPlot
 	x=31,y=46
 	RiverNSDirection=0
 	isWOfRiver
-	BonusType=BONUS_HORSE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -21095,7 +21087,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=79
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -25295,7 +25286,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=75
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -26354,7 +26344,6 @@ BeginPlot
 	x=39,y=19
 	RiverNSDirection=0
 	isWOfRiver
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -30792,7 +30781,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	BonusType=BONUS_HORSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

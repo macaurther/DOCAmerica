@@ -55,22 +55,34 @@ def setup():
 
 # initialise bonuses variables
 dResourcesDict = {
-	(32, 72)  : (1600,  iCotton),  # Georgia
-	(35, 73)  : (1600,  iCotton),  # South Carolina
-	(34, 75)  : (1600,  iCotton),  # North Carolina
-	(29, 73)  : (1600,  iCotton),  # Alabama
-	(27, 77)  : (1600,  iCotton),  # Mississippi
-	(22, 76)  : (1600,  iCotton),  # Texas
-	(17, 73)  : (1600,  iCotton),  # Texas
-	(50, 87)  : (1600,  iPotato),  # New Brunswick
-	(33, 87)  : (1600,  iPotato),  # Michigan
-	(24, 96)  : (1600,  iPotato),  # North Dakota
-	(16, 93)  : (1600,  iPotato),  # Idaho
-	(11, 96)  : (1600,  iPotato),  # Oregon
-	(37, 77)  : (1600,  iTobacco), # Virginia
-	(37, 74)  : (1600,  iTobacco), # South Carolina
-	(29, 75)  : (1600,  iTobacco), # Alabama
-	(33, 80)  : (1600,  iTobacco), # Kentucky
+	(13, 63)  : (1550,  iHorse),  	# 
+	(15, 89)  : (1550,  iHorse),  	# 
+	(22, 79)  : (1550,  iHorse),  	# 
+	(24, 88)  : (1550,  iHorse),  	# 
+	(25, 28)  : (1550,  iHorse),  	# 
+	(26, 14)  : (1550,  iHorse),  	# 
+	(28, 63)  : (1550,  iHorse),  	# 
+	(31, 46)  : (1550,  iHorse),  	# 
+	(31, 79)  : (1550,  iHorse),  	# 
+	(37, 75)  : (1550,  iHorse),  	#
+	(39, 19)  : (1550,  iHorse),  	# 
+	(45, 91)  : (1550,  iHorse),  	# 
+	(32, 72)  : (1600,  iCotton),  	# Georgia
+	(35, 73)  : (1600,  iCotton),  	# South Carolina
+	(34, 75)  : (1600,  iCotton),  	# North Carolina
+	(29, 73)  : (1600,  iCotton), 	# Alabama
+	(27, 77)  : (1600,  iCotton),  	# Mississippi
+	(22, 76)  : (1600,  iCotton),  	# Texas
+	(17, 73)  : (1600,  iCotton),  	# Texas
+	(50, 87)  : (1600,  iPotato),  	# New Brunswick
+	(33, 87)  : (1600,  iPotato),  	# Michigan
+	(24, 96)  : (1600,  iPotato),  	# North Dakota
+	(16, 93)  : (1600,  iPotato),  	# Idaho
+	(11, 96)  : (1600,  iPotato),  	# Oregon
+	(37, 77)  : (1600,  iTobacco), 	# Virginia
+	(37, 74)  : (1600,  iTobacco), 	# South Carolina
+	(29, 75)  : (1600,  iTobacco), 	# Alabama
+	(33, 80)  : (1600,  iTobacco), 	# Kentucky
 }
 
 dSpawnResourcesDict = {
