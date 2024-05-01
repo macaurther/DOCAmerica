@@ -13957,6 +13957,7 @@ void CvPlayer::changeUnimprovedTileYield(YieldTypes eYield, int iChange)
 	{
 		m_aiUnimprovedTileYield[eYield] += iChange;
 
+		updateYield();
 		AI_updateAssignWork();
 	}
 }
@@ -13971,6 +13972,8 @@ void CvPlayer::changeCapitalBonusYieldFromCivics(YieldTypes eYield, int iChange)
 	{
 		m_iCapitalPopulationCivicCombinedYield += iChange;
 		m_aiCapitalBonusYieldFromCivic[eYield] += iChange;
+
+		updateYield();
 	}
 }
 
@@ -13992,6 +13995,8 @@ void CvPlayer::changeCapitalBonusYield(YieldTypes eYield, int iChange)
 	if (iChange != 0)
 	{
 		m_aiCapitalBonusYields[eYield] += iChange;
+
+		updateYield();
 		AI_updateAssignWork();
 	}
 }
