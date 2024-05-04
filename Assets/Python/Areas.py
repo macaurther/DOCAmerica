@@ -18,8 +18,8 @@ iNorse :		(55, 114), # Reykjavik
 iChimu :		(20, 36), # Chan Chan
 iInuit :		(14, 119), # North Alaska
 iInca :			(24, 29), # Cuzco
-iPurepecha :	(11, 66), # Tzintzuntzan
-iAztecs :		(14, 64), # Tenochtitlan
+iPurepecha :	(10, 68), # Tzintzuntzan
+iAztecs :		(13, 64), # Tenochtitlan
 iIroquois :		(39, 85), # Onondaga
 iSioux :		(28, 89), # Southern Minnesota
 iSpain :		(40, 54), # Santo Domingo
@@ -32,7 +32,7 @@ iRussia :		(12, 108), # Novo-Arkhangelsk
 iAmerica :		(40, 81), # Philadelphia
 iHaiti :		(37, 55), # Port-au-Prince
 iArgentina :	(23, 10), # Buenos Aires
-iMexico :		(14, 64), # Mexico City
+iMexico :		(13, 64), # Mexico City
 iColombia :		(31, 42), # Bogota
 iPeru :			(20, 32), # Lima
 iBrazil :		(44, 16), # Rio de Janeiro
@@ -67,8 +67,8 @@ iNorse :		((52, 114),	(57, 120)),
 iChimu :		((19, 35),	(25, 41)),
 iInuit :		((10, 117),	(19, 121)),
 iInca :		    ((20, 27),	(27, 31)),
-iPurepecha :	((10, 65), 	(12, 68)),
-iAztecs :		((13, 63),	(15, 65)),
+iPurepecha :	((8, 64),	(11, 70)),
+iAztecs :		((12, 63),	(14, 65)),
 iIroquois :	    ((34, 84),	(41, 87)),
 iSioux :		((21, 87),	(30, 92)),
 iSpain :		((39, 54),	(41, 56)),
@@ -122,7 +122,7 @@ iNorse :		((0, 0), 	(0, 0)),	# No core for Europeans
 iChimu :		((19, 35),	(22, 38)),
 iInuit :		((10, 117),	(19, 121)),
 iInca :		    ((20, 27),	(27, 31)),
-iPurepecha :	((10, 65), 	(12, 68)),
+iPurepecha :	((8, 66),	(11, 69)),
 iAztecs :		((12, 62),	(17, 65)),
 iIroquois :	    ((36, 84),	(40, 87)),
 iSioux :		((25, 89),	(28, 92)),
@@ -166,6 +166,7 @@ dPeriodCoreAreaExceptions = appenddict({
 })
 
 ### Normal Area ### - MacAurther: Used for UHVs and Dynamic Civs. Basically means area they would normally inhabit I think???
+# TODO
 dNormalArea = CivDict({
 iMaya :		    ((19, 56),	(25, 63)),
 iTeotihuacan :  ((12, 62),	(18, 68)),
@@ -193,7 +194,7 @@ iRussia :		((12, 108), (12, 108)),
 iAmerica :		((40, 81),  (40, 81) ),
 iHaiti :		((36, 54),	(38, 57)),
 iArgentina :	((23, 10),  (23, 10) ),
-iMexico :		((14, 64),  (14, 64) ),
+iMexico :		((13, 64),  (13, 64) ),
 iColombia :		((31, 42),  (31, 42) ),
 iPeru :			((20, 32),  (20, 32) ),
 iBrazil :		((44, 16),  (44, 16) ),
@@ -217,6 +218,7 @@ dPeriodNormalAreaExceptions = appenddict({
 })
 
 ### Broader Area ### - MacAurther: No idea what this is for
+# TODO
 dBroaderArea = CivDict({
 iMaya :			((22, 59),  (22, 59)),
 iTeotihuacan :	((14, 66),  (14, 66)),
@@ -231,7 +233,7 @@ iChimu :		((20, 36),  (20, 36)),
 iInuit :		((14, 111), (14, 111)),
 iInca :			((24, 29),  (24, 29)),
 iPurepecha :	((10, 65), 	(12, 68)),
-iAztecs :		((14, 64),  (14, 64)),
+iAztecs :		((13, 64),  (13, 64)),
 iSpain :		((40, 54),  (40, 54)),
 iIroquois :		((39, 85),  (39, 85)),
 iSioux :		((20, 88),	(28, 95)),
@@ -244,7 +246,7 @@ iRussia :		((12, 108), (12, 108)),
 iAmerica :		((40, 81),  (40, 81)),
 iHaiti :		((37, 55),  (37, 55)),
 iArgentina :	((23, 10),  (23, 10)),
-iMexico :		((14, 64),  (14, 64)),
+iMexico :		((13, 64),  (13, 64)),
 iColombia :		((31, 42),  (31, 42)),
 iPeru :			((20, 32),  (20, 32)),
 iBrazil :		((44, 16),  (44, 16)),

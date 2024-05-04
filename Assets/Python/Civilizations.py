@@ -200,7 +200,7 @@ lCivilizations = [
 	Civilization(
 		iZapotec,
 		iGold=100,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
@@ -263,7 +263,7 @@ lCivilizations = [
 		iGold=600,
 		lCivics=[iDespotism1, iCaptives1, iCasteSystem1, iTributaries1],
 		lEnemies=[iTeotihuacan],
-		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing, iFishing)
+		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing)
 	),
 	Civilization(
 		iIroquois,

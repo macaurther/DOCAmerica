@@ -133,11 +133,11 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=9,y=66
+	x=9,y=85
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=9,y=85
+	x=10,y=66
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
@@ -161,7 +161,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=12,y=76
+	x=12,y=77
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
@@ -189,15 +189,15 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=16,y=65
+	x=16,y=66
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=16,y=71
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=16,y=77
-	ImprovementType=IMPROVEMENT_TRIBE
-EndPlot
-BeginPlot
-	x=17,y=70
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
@@ -249,7 +249,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=23,y=55
+	x=21,y=56
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot

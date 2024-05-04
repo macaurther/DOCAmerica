@@ -107,15 +107,14 @@ def firstCityOnCityAcquiredAndKept(iPlayer, city):
 def nativeCityConquered(iPlayer, pCity):
 	# Check if city was taken from a Native
 	if pCity.getPreviousCiv() in dCivGroups[iCivGroupNativeAmerica] + [iNative]:
-		# If a non-native captured it, give a Native Tech and some Immigration
-		if not civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
-			lPossibleTechs = []
-			for iTech in lNativeTechs:
-				if not team(iPlayer).isHasTech(iTech):
-					lPossibleTechs.append(iTech)
-			
-			if len(lPossibleTechs) > 0:
-				team(iPlayer).setHasTech(random.choice(lPossibleTechs), true, iPlayer, False, True)
+		# Give a Native Tech
+		lPossibleTechs = []
+		for iTech in lNativeTechs:
+			if not team(iPlayer).isHasTech(iTech):
+				lPossibleTechs.append(iTech)
+		
+		if len(lPossibleTechs) > 0:
+			team(iPlayer).setHasTech(random.choice(lPossibleTechs), true, iPlayer, False, True)
 			
 		# If the conquerer has the Plunder Civic, give some Immigration for conquerer
 		if player(iPlayer).hasCivic(iPlunder2):

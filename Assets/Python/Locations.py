@@ -114,6 +114,6 @@ lAtlanticCoast = [
 lPacificCoast = [(10, 102), (11, 103), (12, 102), (11, 104), (10, 105), ]
 
 ### Tiles ###
-tTenochtitlan = (14, 64)
+tTenochtitlan = (13, 64)
 tCahokia = (28, 84)
 tNewAmsterdam = (42, 83)
