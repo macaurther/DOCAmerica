@@ -1088,7 +1088,7 @@ public:
 	int getGameTurnPlayerLost(PlayerTypes ePlayer);
 	void setGameTurnPlayerLost(PlayerTypes ePlayer, int iNewValue);
 	bool isColony() const;
-	bool canSlaveJoin() const;
+	bool canSlaveJoin(SpecialistTypes eSpecialistType) const;
 	int calculateCultureCost(CvPlot* pPlot, bool bOrdering = false) const;
 	void updateCultureCosts();
 	void updateCoveredPlots(bool bUpdatePlotGroups);

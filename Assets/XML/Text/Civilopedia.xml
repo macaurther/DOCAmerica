@@ -4474,9 +4474,8 @@
 [NEWLINE][BOLD]Capturing slave units[\BOLD][PARAGRAPH:2]Slave units cannot be trained. Instead it is possible to capture them in combat. This is enabled by two civics: Slavery (Society) and Colonialism (Territory). Every time when defeating a Native unit while running one of these civics, there is a chance of receiving a slave unit.
 [NEWLINE][BOLD]Trading slave units[\BOLD][PARAGRAPH:2]The other option to acquire slaves is by trade. This is only enabled for civilizations that control at least one colony. If any of the civilizations participating in a trade has colonies, slave units will appear on the table just like resources, techs etc. 
 [NEWLINE][BOLD]Using slave units[\BOLD][PARAGRAPH:2]It is only possible to use slaves in the Americas and Sub-Saharan Africa. In addition, certain civics (Egalitarianism, Nationhood, and Multilateralism) prevent the use of slaves. The possible actions for slaves are:
-[NEWLINE][BOLD]Build a slave plantation:[\BOLD] the slave can build a slave plantation on all tiles that have a resource which requires a plantation, yielding +1 [ICON_PRODUCTION] and +2 [ICON_COMMERCE] compared to a normal plantation. The slave is used in the process, similar to a work boat.
-[NEWLINE][BOLD]Join city as a slave specialist:[\BOLD] the slave can permanently join the city as a slave specialist, yielding 2 [ICON_PRODUCTION] and creating 1 [ICON_UNHAPPY]. The number of slaves per city is limited to half of its population.
-[NEWLINE][BOLD]Freeing the slaves[\BOLD][PARAGRAPH:2]Slave effects (plantations and specialists) only remain active as long as you can use slaves (see above). When you abandon the civics required for slavery, Slave Plantations will revert to ordinary Plantations and Slave specialists will be removed. Likewise, when territory with a Slave Plantation is acquired by a civilization that cannot use slaves, it will revert to a Plantation. Slaves present in cities will always be freed on conquest. If the conqueror can also use slaves, they will receive an equivalent number of Slave units in return.
+[NEWLINE][BOLD]Join city as a slave specialist:[\BOLD] the slave can permanently join the city as a slave farmer, miner, or planter, yielding 2 [ICON_FOOD], 2 [ICON_PRODUCTION], or 3 [ICON_COMMERCE] and creating -1 Stability. The number of slaves per city is limited to half of its population.
+[NEWLINE][BOLD]Freeing the slaves[\BOLD][PARAGRAPH:2]Slave effects (plantations and specialists) only remain active as long as you can use slaves (see above). When you abandon the civics required for slavery, Slave specialists will be removed. Slaves present in cities will always be freed on conquest. If the conqueror can also use slaves, they will receive an equivalent number of Slave units in return.
 [NEWLINE][BOLD]The Aztecs[\BOLD][PARAGRAPH:2]The Aztec unique power enables them to acquire slave units by winning battles; regardless of the losing unit there is a chance of acquiring a slave unit. Aztec slaves also have the additional abilities of acting as workers and can be sacrificed in their cities, as a way to temporarily increase happiness there.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
@@ -5472,14 +5471,6 @@ Your stability level can change during a stability check. As long it is higher t
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_QUARRY_PEDIA</Tag>
 		<English>[TAB]A quarry is a type of open-pit mine from which rock or minerals are extracted. Quarries are generally used for extracting building materials, such as dimension stone, construction aggregate, riprap, sand, and gravel. They are often colocated with concrete and asphalt plants due to the requirement for large amounts of aggregate in those materials. The word quarry can include underground quarrying for stone, such as Bath stone.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_IMPROVEMENT_SLAVE_PLANTATION_PEDIA</Tag>
-		<English>[TAB]A plantation is a long, artificially-established forest, farm or estate, where crops are grown for sale, often in distant markets rather than for local on-site consumption. Plantations are developed on a large scale as the crops are grown for commercial purposes, not for local consumption. Slave labour extracted from forcibly transported Africans was used extensively to work on early plantations (such as cotton and sugar plantations) in the American colonies and the United States, throughout the Caribbean, the Americas and in European-occupied areas of Africa.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>

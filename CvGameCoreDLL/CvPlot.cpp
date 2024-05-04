@@ -5517,18 +5517,6 @@ void CvPlot::setOwner(PlayerTypes eNewValue, bool bCheckUnits, bool bUpdatePlotG
 		}
 		// Sanguo Mod Performance, end
 
-		// Leoreth: gain plot control over slave plantation without being able to practice slavery
-		if (eNewValue != NO_PLAYER)
-		{
-			if (getImprovementType() == (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_SLAVE_PLANTATION"))
-			{
-				if (!GET_PLAYER(eNewValue).canUseSlaves())
-				{
-					setImprovementType((ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_PLANTATION"));
-				}
-			}
-		}
-
 		updateSymbols();
 	}
 }

@@ -2964,7 +2964,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AFRICAN_SLAVE</Type>
-			<Button>Art/Units/Slave/button_slave.dds</Button>
+			<Button>Art/Interface/Buttons/Units/AfricanSlave.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

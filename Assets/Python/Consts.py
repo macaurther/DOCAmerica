@@ -430,16 +430,16 @@ iAlloys,        iConstruction,  iMathematics,   iAstronomy,     iWriting,       
 iGeneralship,   iCement,        iAesthetics,    iScholarship,   iCodices,       iPriesthood,    iNavigation,
 iNobility,      iSubjugation,   iArtisanry,     iMedicine,      iLaw,           iEthics,        iPhilosophy,
 iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
-iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iHumanities, 	iPrinting, 		iJudiciary,
-iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iDiplomacy, 	iEvangelism, 	iOfficials,
-iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iCharter, 		iCommunity, 	iIndentures,
-iCombinedArms, 	iTriangularTrade, iExploitation, iTimekeeping, 	iEducation, 	iPolitics, 		iHorticulture,
-iTactics,		iCurrency,		iGeography,		iAcademia,		iUrbanPlanning,	iStatecraft,	iSocialContract,
-iReplaceableParts, iFreeMarket,	iNewspapers,	iScientificMethod, iArchitecture, iSociology,	iHeritage,
-iRegiments, 	iBonds,			iPostalService,	iMeteorology,	iSurveying,		iRepresentation, iIndependence,
-iMetallurgy,	iProtectionism,	iHydrology,		iPhysics,		iGeology,		iRightsOfMan,	iFederalism,
-iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iPioneering,	iCivilLiberties, iNationalism,
-iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iEmancipation, 	iImperialism,
+iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iExchange, 		iReductions,	iEvangelism,
+iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iTreaties, 		iOfficials, 	iIndoctrination,
+iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iEducation,		iCharter, 		iIndentures,
+iCombinedArms, 	iTriangularTrade,iExploitation, iTimekeeping, 	iCommunity, 	iPolitics, 		iHorticulture,
+iTactics,		iCurrency,		iGeography,		iScientificMethod,iUrbanPlanning,iStatecraft,	iSocialContract,
+iReplaceableParts, iFreeMarket,	iNewspapers,	iAcademia, 		iArchitecture, 	iSociology,		iHeritage,
+iRegiments, 	iBonds,			iPostalService,	iMeteorology,	iSurveying,		iRepresentation,iIndependence,
+iMetallurgy,	iProtectionism,	iHydrology,		iPhysics,		iPioneering,	iJudiciary,		iHumanities,
+iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iGeology,		iNationalism, 	iCivilLiberties,
+iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iImperialism, 	iEmancipation,
 iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
 iInfrastructure,iMacroeconomics,iCivilRights,
 iPowerProjection) = range(iNumTechs)
@@ -507,7 +507,7 @@ iNumBuildings = 201
 #				2				3				4				5				6				7				8				9				10
 (iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iTipi,
 iMarket,		iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		
-iPyramid,		iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		
+iKuna,			iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		
 iWalls,			iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			
 iStocks,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iStable,		iPalisade,		iMonument,		iSchoolhouse,	iWell,			
 iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		iLumbermill,	iSawmill,		
@@ -532,8 +532,8 @@ iTradingCompanyBuilding,iNationalMonument,iNationalTheatre,iNationalGallery,iNat
 iCentralBank, 	iGrandCentralStation,iSupremeCourt,
 # Great Wonders (37)
 #				2				3				4				5				6				7				8				9				10
-iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iPuebloBonito,	iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iGateOfTheSun,iGreatGeoglyph,	iPyramidOfTheSun,
-iSerpentMound,	iCoricancha,	iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,iMountVernon,
+iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iPuebloBonito,	iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iYachaywasi,	iGateOfTheSun,iGreatGeoglyph,	
+iPyramidOfTheSun,iSerpentMound,	iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,iMountVernon,
 iMonticello,	iSlaterMill,	iChapultepecCastle,iWestPoint,	iFortMcHenry,	iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	iEllisIsland,	
 iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iCristoRedentor) = range(iNumBuildings)
 
@@ -560,11 +560,11 @@ iReciprocity1,	iCommune1,		iRedistribution1,iMerchants1,	iPlunder1,		iDependency
 iAnimism1,		iHarmony1,		iIsolationism1,	iOrganizedReligion1,iCosmopolis1,iAcculturation1,iSovereignty1,
 iSettlement1,	iNomads1,		iDiffusion1,	iCooperation1,	iConquest1,		iTributaries1,	iAncestralLands1,
 # Colony
-iCaptains2,		iViceroyality2,	iProprietaries2,iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
+iCaptains2,		iProprietaries2,iViceroyality2,	iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
 iExpedition2,	iAdmiralty2,	iCharterColony2,iTradeCompany2,	iRoyalColony2,	iCommonLaw2,	iProvinces2,
 iSerfdom2,		iEncomienda2,	iIndenturedServitude2,iSlavery2,iPenalColony2,	iIndustrialism2,iImmigrantLabor2,
 iGoldRush2,		iPlunder2,		iFactory2,		iMercantilism2,	iCustomsUnion2,	iConsumerism2,	iPublicWelfare2,
-iDivineRight2,	iZealotry2,		iJesuits2,		iHaven2,		iProfiteering2,	iOpportunity2,	iEmancipation2,
+iDivineRight2,	iJesuits2,		iZealotry2,		iHaven2,		iProfiteering2,	iOpportunity2,	iEmancipation2,
 iClaims2,		iConquest2,		iProvidence2,	iOutposts2,		iHomesteads2,	iIntervention2,	iCommonwealth2,
 # Nation
 iStrongman3,	iJunta3,		iMonarchy3,		iPlutocracy3,	iDemocracy3,	iDictatorship3,	iStateParty3,
@@ -581,14 +581,15 @@ iNumCivicsPerCategory = 7
 
 
 #Specialists
-iNumSpecialists = 16
+iNumSpecialists = 18
 #				            2				            3				            4				            5
 (iSpecialistCitizen,        iSpecialistPriest,          iSpecialistArtist,          iSpecialistScientist,       iSpecialistMerchant,
 iSpecialistEngineer,        iSpecialistStatesman,       iSpecialistGreatProphet,    iSpecialistGreatArtist,     iSpecialistGreatScientist, 
 iSpecialistGreatMerchant,   iSpecialistGreatEngineer,   iSpecialistGreatStatesman,  iSpecialistGreatGeneral,    iSpecialistGreatSpy,
-iSpecialistSlave) = range(iNumSpecialists)
+iSpecialistSlaveFarmer,		iSpecialistSlaveMiner,		iSpecialistSlavePlanter) = range(iNumSpecialists)
 
 lGreatSpecialists = [iSpecialistGreatProphet, iSpecialistGreatArtist, iSpecialistGreatScientist, iSpecialistGreatMerchant, iSpecialistGreatEngineer, iSpecialistGreatStatesman, iSpecialistGreatGeneral, iSpecialistGreatSpy]
+lSlaveSpecialists = [iSpecialistSlaveFarmer, iSpecialistSlaveMiner, iSpecialistSlavePlanter]
 
 #Stability Levels
 iNumStabilityLevels = 5
@@ -655,12 +656,11 @@ iNumCultureLevels = 7
 
 #Improvements
 
-iNumImprovements = 31
+iNumImprovements = 30
 #				2				3				4				5				6				7				8				9				10
 (iLandWorked, 	iWaterWorked, 	iCityRuins, 	iFarm, 			iPaddyField, 	iFishingBoats, 	iOceanFishery, 	iWhalingBoats, 	iMine, 			iWorkshop, 
-iLoggingCamp, 	iWindmill, 		iWatermill, 	iPlantation, 	iSlavePlantation, iQuarry, 		iPasture, 		iCamp, 			iWell, 			iOffshorePlatform, 
-iWinery, 		iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,iTribe,		iAlliedTribe,
-iContactedTribe) = range(iNumImprovements)
+iLoggingCamp, 	iWindmill, 		iWatermill, 	iPlantation, 	iQuarry, 		iPasture, 		iCamp, 			iWell, 			iOffshorePlatform,iWinery, 		
+iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,iTribe,		iAlliedTribe,	iContactedTribe) = range(iNumImprovements)
 
 iNumRoutes = 3
 (iRouteRoad, iRouteRailroad, iRouteHighway) = range(iNumRoutes)

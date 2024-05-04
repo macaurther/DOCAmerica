@@ -1228,13 +1228,13 @@
 			<DefaultBuilding>BUILDING_SERPENT_MOUND</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_CORICANCHA</Type>
-			<Description>TXT_KEY_BUILDING_CORICANCHA</Description>
+			<Type>BUILDINGCLASS_YACHAYWASI</Type>
+			<Description>TXT_KEY_BUILDING_YACHAYWASI</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_CORICANCHA</DefaultBuilding>
+			<DefaultBuilding>BUILDING_YACHAYWASI</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_TEMBLEQUE_AQUEDUCT</Type>

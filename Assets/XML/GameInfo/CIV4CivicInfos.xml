@@ -502,7 +502,7 @@
 			<Description>TXT_KEY_CIVIC_TOURISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TOURISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TOURISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_PRINTING</TechPrereq>
+			<TechPrereq>TECH_REDUCTIONS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tourism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -815,6 +815,20 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXECUTIVE</CivicOptionType>
+			<Type>CIVIC_PROPRIETARIES_COLONY</Type>
+			<Description>TXT_KEY_CIVIC_PROPRIETARIES</Description>
+			<Civilopedia>TXT_KEY_CIVIC_PROPRIETARIES_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_PROPRIETARIES_HELP</Help>
+			<TechPrereq>TECH_FINANCE</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Proprietaries.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PROPRIETARIES</WeLoveTheKing>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_EXECUTIVE</CivicOptionType>
 			<Type>CIVIC_VICEROYALTY</Type>
 			<Description>TXT_KEY_CIVIC_VICEROYALTY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_VICEROYALTY_PEDIA</Civilopedia>
@@ -830,20 +844,6 @@
 				<iYield>2</iYield>
 			</UnhappinessExtraYields>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_VICEROY</WeLoveTheKing>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_EXECUTIVE</CivicOptionType>
-			<Type>CIVIC_PROPRIETARIES_COLONY</Type>
-			<Description>TXT_KEY_CIVIC_PROPRIETARIES</Description>
-			<Civilopedia>TXT_KEY_CIVIC_PROPRIETARIES_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_PROPRIETARIES_HELP</Help>
-			<TechPrereq>TECH_EXPLORATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Proprietaries.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
-			<Upkeep>UPKEEP_LOW</Upkeep>
-			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PROPRIETARIES</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXECUTIVE</CivicOptionType>
@@ -956,7 +956,7 @@
 			<Description>TXT_KEY_CIVIC_ADMIRALTY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ADMIRALTY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ADMIRALTY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CARTOGRAPHY</TechPrereq>
+			<TechPrereq>TECH_OPTICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/MaritimeLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -1103,12 +1103,12 @@
 			<Civilopedia>TXT_KEY_CIVIC_ENCOMIENDA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ENCOMIENDA_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Help>
-			<TechPrereq>TECH_JUDICIARY</TechPrereq>
+			<TechPrereq>TECH_REDUCTIONS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Encomienda.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<bSlavery>1</bSlavery>
-			<Upkeep>UPKEEP_LOW</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -1294,7 +1294,7 @@
 			<Description>TXT_KEY_CIVIC_MERCANTILISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MERCANTILISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_FINANCE</TechPrereq>
+			<TechPrereq>TECH_SHIPBUILDING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Regulated Trade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -1398,21 +1398,6 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
-			<Type>CIVIC_ZEALOTRY_COLONY</Type>
-			<Description>TXT_KEY_CIVIC_ZEALOTRY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_ZEALOTRY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_ZEALOTRY_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_ZEALOTRY_HELP</Help>
-			<TechPrereq>TECH_PRINTING</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Zealotry.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<bStateReligion>1</bStateReligion>
-			<iStateReligionFreeExperience>2</iStateReligionFreeExperience>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
 			<Type>CIVIC_JESUITS_COLONY</Type>
 			<Description>TXT_KEY_CIVIC_JESUITS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_JESUITS_PEDIA</Civilopedia>
@@ -1443,6 +1428,21 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
+			<Type>CIVIC_ZEALOTRY_COLONY</Type>
+			<Description>TXT_KEY_CIVIC_ZEALOTRY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_ZEALOTRY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_ZEALOTRY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_ZEALOTRY_HELP</Help>
+			<TechPrereq>TECH_INDOCTRINATION</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Zealotry.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<bStateReligion>1</bStateReligion>
+			<iStateReligionFreeExperience>2</iStateReligionFreeExperience>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -1537,11 +1537,17 @@
 			<Civilopedia>TXT_KEY_CIVIC_CONQUEST_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CONQUEST_COLONY_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_CONQUEST_COLONY_HELP</Help>
-			<TechPrereq>TECH_GENERALSHIP</TechPrereq>
+			<TechPrereq>TECH_GUNPOWDER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConquestColony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<DomainExperienceModifiers>
+				<DomainExperienceModifier>
+					<DomainType>DOMAIN_LAND</DomainType>
+					<iExperienceModifier>2</iExperienceModifier>
+				</DomainExperienceModifier>
+			</DomainExperienceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -1550,6 +1556,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_PROVIDENCE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PROVIDENCE_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_PROVIDENCE_HELP</Help>
+			<TechPrereq>TECH_TREATIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Providence.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -1561,7 +1568,7 @@
 			<Description>TXT_KEY_CIVIC_OUTPOSTS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_OUTPOSTS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_OUTPOSTS_STRATEGY</Strategy>
-			<TechPrereq>TECH_DIPLOMACY</TechPrereq>
+			<TechPrereq>TECH_EXPLORATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Outposts.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -1635,7 +1642,7 @@
 			<Description>TXT_KEY_CIVIC_COMMONWEALTH</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COMMONWEALTH_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Strategy>
-			<TechPrereq>TECH_RIGHTS_OF_MAN</TechPrereq>
+			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Commonwealth.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -1693,7 +1700,7 @@
 			<Description>TXT_KEY_CIVIC_MONARCHY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
-			<TechPrereq>TECH_HERITAGE</TechPrereq>
+			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConstitutionalMonarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>
@@ -1848,7 +1855,7 @@
 			<Description>TXT_KEY_CIVIC_FEDERALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_FEDERALISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_FEDERALISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_BALANCE_OF_POWER</TechPrereq>
+			<TechPrereq>TECH_HUMANITIES</TechPrereq>
 			<Button>Art/Interface/Buttons/Civics/Federalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>
@@ -1881,7 +1888,7 @@
 			<Description>TXT_KEY_CIVIC_MANDATE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MANDATE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MANDATE_STRATEGY</Strategy>
-			<TechPrereq>TECH_RIGHTS_OF_MAN</TechPrereq>
+			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Mandate.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>
@@ -2384,7 +2391,7 @@
 			<Description>TXT_KEY_CIVIC_NATIVISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_NATIVISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_NATIVISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_JOURNALISM</TechPrereq>
+			<TechPrereq>TECH_HERITAGE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Nativism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>
@@ -2528,7 +2535,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_DECOLONIZATIONPEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DECOLONIZATION_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_DECOLONIZATION_HELP</Help>
-			<TechPrereq>TECH_BALANCE_OF_POWER</TechPrereq>
+			<TechPrereq>TECH_INDEPENDENCE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Decolonization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>

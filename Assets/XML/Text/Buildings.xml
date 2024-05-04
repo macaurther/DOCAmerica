@@ -2358,14 +2358,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Wheelwrights[COLOR_REVERT] increase a city's production output and immigration rate.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_WHEELWRIGHT_HELP</Tag>
-		<English>[ICON_BULLET]+25% Immigration</English>
-		<French>[ICON_BULLET]+25% Immigration</French>
-		<German>[ICON_BULLET]+25% Immigration</German>
-		<Italian>[ICON_BULLET]+25% Immigration</Italian>
-		<Spanish>[ICON_BULLET]+25% Immigration</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SPANISH_MISSION</Tag>
 		<English>Mission</English>
 		<French>Mission</French>
@@ -2750,23 +2742,23 @@
 		<Spanish>[TAB]In their capital of Tzintzuntzan, the Purepechans build five distinct rounded pyramids called Yac&#225;tas. On each of the Yac&#225;tas was a temple made of wood, in which the most important rites of the Purepecha people and government took place, including burials.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MAYA_PYRAMID</Tag>
-		<English>Pyramid</English>
-		<French>Pyramid</French>
-		<German>Pyramid</German>
-		<Italian>Pyramid</Italian>
-		<Spanish>Pyramid</Spanish>
+		<Tag>TXT_KEY_BUILDING_MAYA_KUNA</Tag>
+		<English>Kuna</English>
+		<French>Kuna</French>
+		<German>Kuna</German>
+		<Italian>Kuna</Italian>
+		<Spanish>Kuna</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MAYA_PYRAMID_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Pyramid[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</English>
-		<French>The [COLOR_BUILDING_TEXT]Pyramid[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</French>
-		<German>The [COLOR_BUILDING_TEXT]Pyramid[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Pyramid[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Pyramid[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</Spanish>
+		<Tag>TXT_KEY_BUILDING_MAYA_KUNA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Kuna[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</English>
+		<French>The [COLOR_BUILDING_TEXT]Kuna[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</French>
+		<German>The [COLOR_BUILDING_TEXT]Kuna[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Kuna[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Kuna[COLOR_REVERT], the Maya replacement for the [COLOR_BUILDING_TEXT]Herbalist[COLOR_REVERT], greatly increases research rate.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MAYA_PYRAMID_PEDIA</Tag>
+		<Tag>TXT_KEY_BUILDING_MAYA_KUNA_PEDIA</Tag>
 		<English>(Wikipedia) Mesoamerican pyramids form a prominent part of ancient Mesoamerican architecture. Although similar in some ways to Egyptian pyramids, these New World structures have flat tops (many with temples on the top) and stairs ascending their faces.</English>
 		<French>(Wikipedia) Mesoamerican pyramids form a prominent part of ancient Mesoamerican architecture. Although similar in some ways to Egyptian pyramids, these New World structures have flat tops (many with temples on the top) and stairs ascending their faces.</French>
 		<German>(Wikipedia) Mesoamerican pyramids form a prominent part of ancient Mesoamerican architecture. Although similar in some ways to Egyptian pyramids, these New World structures have flat tops (many with temples on the top) and stairs ascending their faces.</German>

@@ -1923,6 +1923,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=10
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -2892,6 +2893,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=80
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -4696,6 +4698,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=69
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -7121,6 +7124,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=38
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -11824,6 +11828,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=22
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -11889,6 +11894,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=35
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -15030,6 +15036,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=113
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -17410,6 +17417,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=45
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -30592,6 +30600,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=55
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -33202,6 +33211,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=48
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot

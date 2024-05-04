@@ -432,16 +432,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONQUEST_COLONY_HELP</Tag>
-		<English>[ICON_BULLET]Military land units hired with [ICON_IMMIGRATION] receive free Combat II promotion
-[ICON_BULLET]Extra stability from recent conquest</English>
-		<French>[ICON_BULLET]Military land units hired with [ICON_IMMIGRATION] receive free Combat II promotion
-[ICON_BULLET]Extra stability from recent conquest</French>
-		<German>[ICON_BULLET]Military land units hired with [ICON_IMMIGRATION] receive free Combat II promotion
-[ICON_BULLET]Extra stability from recent conquest</German>
-		<Italian>[ICON_BULLET]Military land units hired with [ICON_IMMIGRATION] receive free Combat II promotion
-[ICON_BULLET]Extra stability from recent conquest</Italian>
-		<Spanish>[ICON_BULLET]Military land units hired with [ICON_IMMIGRATION] receive free Combat II promotion
-[ICON_BULLET]Extra stability from recent conquest</Spanish>
+		<English>[ICON_BULLET]Extra stability from recent conquest</English>
+		<French>[ICON_BULLET]Extra stability from recent conquest</French>
+		<German>[ICON_BULLET]Extra stability from recent conquest</German>
+		<Italian>[ICON_BULLET]Extra stability from recent conquest</Italian>
+		<Spanish>[ICON_BULLET]Extra stability from recent conquest</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRIBUTARIES</Tag>

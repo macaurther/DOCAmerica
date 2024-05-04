@@ -600,7 +600,7 @@
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_AFRICAN_SLAVE</Type>
-			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Description>TXT_KEY_UNIT_AFRICAN_SLAVE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
@@ -608,7 +608,7 @@
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_NATIVE_SLAVE</Type>
-			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>

@@ -442,6 +442,10 @@ def getSeparatismModifier(iPlayer, city):
 	if iCulturePercent < 50: iModifier += 1
 	if iCulturePercent < 20: iModifier += 1
 	
+	# Slaves
+	for iSpecialistSlave in lSlaveSpecialists:
+		iModifier += city.getFreeSpecialistCount(iSpecialistSlave)
+	
 	# Stocks
 	if city.hasBuilding(unique_building(iPlayer, iStocks)):
 		iModifier -= 1

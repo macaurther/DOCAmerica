@@ -1647,7 +1647,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_EVANGELISM</PrereqTech>
+			<PrereqTech>TECH_INDOCTRINATION</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3800,7 +3800,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_COLONIZATION</PrereqTech>
+			<PrereqTech>TECH_ECONOMICS</PrereqTech>
 			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -9716,10 +9716,9 @@
 			<Capture>UNITCLASS_AFRICAN_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Description>TXT_KEY_UNIT_AFRICAN_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_SLAVE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>
 			<UnitAIs>
@@ -9732,15 +9731,13 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_SLAVE_PLANTATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_SLAVE</GreatPeopleType>
+					<GreatPeopleType>SPECIALIST_SLAVE_FARMER</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_SLAVE_PLANTER</GreatPeopleType>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -9750,7 +9747,6 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iWorkRate>100</iWorkRate>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
@@ -9773,10 +9769,9 @@
 			<Capture>UNITCLASS_AFRICAN_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Description>TXT_KEY_UNIT_AFRICAN_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_SLAVE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>
 			<UnitAIs>
@@ -9789,15 +9784,13 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_SLAVE_PLANTATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_SLAVE</GreatPeopleType>
+					<GreatPeopleType>SPECIALIST_SLAVE_FARMER</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_SLAVE_PLANTER</GreatPeopleType>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -9807,7 +9800,6 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iWorkRate>100</iWorkRate>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>2</iGroupSize>
@@ -9830,10 +9822,9 @@
 			<Capture>UNITCLASS_NATIVE_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_SLAVE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>
 			<UnitAIs>
@@ -9846,15 +9837,13 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_SLAVE_PLANTATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_SLAVE</GreatPeopleType>
+					<GreatPeopleType>SPECIALIST_SLAVE_FARMER</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_SLAVE_MINER</GreatPeopleType>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -9864,7 +9853,6 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iWorkRate>100</iWorkRate>
 			<iBaseHurry>30</iBaseHurry>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>
@@ -9888,10 +9876,9 @@
 			<Capture>UNITCLASS_NATIVE_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_SLAVE</Description>
+			<Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_SLAVE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<bSlave>1</bSlave>
 			<UnitAIs>
@@ -9904,15 +9891,13 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_SLAVE_PLANTATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
 			<GreatPeoples>
 				<GreatPeople>
-					<GreatPeopleType>SPECIALIST_SLAVE</GreatPeopleType>
+					<GreatPeopleType>SPECIALIST_SLAVE_FARMER</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_SLAVE_MINER</GreatPeopleType>
 					<bGreatPeople>1</bGreatPeople>
 				</GreatPeople>
 			</GreatPeoples>
@@ -9922,7 +9907,6 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
-			<iWorkRate>100</iWorkRate>
 			<iBaseHurry>30</iBaseHurry>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>

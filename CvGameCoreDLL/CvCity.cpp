@@ -2276,23 +2276,10 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
-	// MacAurther: Mount Vernon and Monticello need a Plantation/Slave Plantation in city radius
+	// MacAurther: Mount Vernon and Monticello need a Plantation in city radius
 	if (eBuilding == BUILDING_MOUNT_VERNON || eBuilding == BUILDING_MONTICELLO)
 	{
-		bool bFound = false;
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			if (getCityIndexPlot(iI)->getImprovementType() == IMPROVEMENT_PLANTATION || getCityIndexPlot(iI)->getImprovementType() == IMPROVEMENT_SLAVE_PLANTATION)
-			{
-				bFound = true;
-				break;
-			}
-		}
-
-		if (!bFound)
-		{
-			return false;
-		}
+		if (countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;
 	}
 
 	// MacAurther: Can no longer build Chieftan's Hut once you have a Palace (have a capital)
@@ -17919,13 +17906,30 @@ bool CvCity::isColony() const
 }
 
 // Leoreth: at most half of the population may be slaves
-bool CvCity::canSlaveJoin() const
+bool CvCity::canSlaveJoin(SpecialistTypes eSpecialistType) const
 {
 	if (!GET_PLAYER(getOwnerINLINE()).canUseSlaves()) return false;
 
-	if (!isColony()) return false;
+	// MacAurther: Different slave types need different improvements
+	switch (eSpecialistType)
+	{
+		case SPECIALIST_SLAVE_FARMER:
+			if (countNumImprovedPlots(IMPROVEMENT_FARM) == 0) return false;
+			break;
+		case SPECIALIST_SLAVE_MINER:
+			if (countNumImprovedPlots(IMPROVEMENT_MINE) == 0) return false;
+			break;
+		case SPECIALIST_SLAVE_PLANTER:
+			if (countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;
+			break;
+		default:
+			if (countNumImprovedPlots(IMPROVEMENT_FARM) == 0 && countNumImprovedPlots(IMPROVEMENT_MINE) == 0 && countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;
+			break;
+	}
 
-	int iNumSlaves = getFreeSpecialistCount(SPECIALIST_SLAVE);
+	int iNumSlaves = getFreeSpecialistCount(SPECIALIST_SLAVE_FARMER);
+	iNumSlaves += getFreeSpecialistCount(SPECIALIST_SLAVE_MINER);
+	iNumSlaves += getFreeSpecialistCount(SPECIALIST_SLAVE_PLANTER);
 	return (2 * iNumSlaves < getPopulation());
 }
 

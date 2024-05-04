@@ -328,7 +328,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_FINANCE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -379,7 +379,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_FINANCE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -477,45 +477,6 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
 			<Button>,Art/Interface/Buttons/Builds/BuildPlantation.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,9</Button>
-		</BuildInfo>
-		<BuildInfo>
-			<Type>BUILD_SLAVE_PLANTATION</Type>
-			<Description>TXT_KEY_BUILD_SLAVE_PLANTATION</Description>
-			<PrereqTech>TECH_CALENDAR</PrereqTech>
-			<iTime>0</iTime>
-			<bKill>1</bKill>
-			<ImprovementType>IMPROVEMENT_SLAVE_PLANTATION</ImprovementType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
-					<iTime>0</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<PrereqTech>TECH_ALLOYS</PrereqTech>
-					<iTime>200</iTime>
-					<iProduction>10</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
-					<iTime>0</iTime>
-					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-			</FeatureStructs>
-			<HotKey>KB_P</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>1</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>,Art/Interface/Buttons/Builds/BuildPlantation.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,9</Button>
-			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_QUARRY</Type>
@@ -703,7 +664,7 @@
 			<Type>BUILD_ORCHARD</Type>
 			<Description>TXT_KEY_BUILD_ORCHARD</Description>
 			<Help/>
-			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
+			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iTime>500</iTime>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_ORCHARD</ImprovementType>
@@ -859,7 +820,7 @@
 		<BuildInfo>
 			<Type>BUILD_FORT</Type>
 			<Description>TXT_KEY_BUILD_FORT</Description>
-			<PrereqTech>TECH_FORTIFICATION</PrereqTech>
+			<PrereqTech>TECH_REDUCTIONS</PrereqTech>
 			<iTime>1000</iTime>
 			<iCost>50</iCost>
 			<ImprovementType>IMPROVEMENT_FORT</ImprovementType>
@@ -1248,7 +1209,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_FINANCE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -1293,7 +1254,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_FINANCE</PrereqTech>
+			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>

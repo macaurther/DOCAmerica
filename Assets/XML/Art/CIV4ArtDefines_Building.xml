@@ -2248,7 +2248,7 @@
 			<Button>Art/Interface/Buttons/Wonders/GreatGeoglyph.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_CORICANCHA</Type>
+			<Type>ART_DEF_BUILDING_YACHAYWASI</Type>
 			<LSystem>LSYSTEM_4x4</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>0.8</fScale>
@@ -2258,7 +2258,7 @@
 			<Button>Art/Interface/Buttons/Wonders/Coricancha.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_MAYA_PYRAMID</Type>
+			<Type>ART_DEF_BUILDING_MAYA_KUNA</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>

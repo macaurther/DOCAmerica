@@ -10843,7 +10843,7 @@
 			<OrPreReqs/>
 			<AndPreReqs/>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_PRINTING</ObsoleteTech>
+				<ObsoleteTech>TECH_REDUCTIONS</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>1</bRecurring>
 			<bTeam>0</bTeam>
@@ -12507,7 +12507,7 @@
 			<OrPreReqs/>
 			<AndPreReqs/>
 			<ObsoleteTechs>
-				<ObsoleteTech>TECH_PRINTING</ObsoleteTech>
+				<ObsoleteTech>TECH_REDUCTIONS</ObsoleteTech>
 			</ObsoleteTechs>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>

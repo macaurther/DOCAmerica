@@ -205,7 +205,7 @@ dGoals = {
 	),
 	iIroquois: (
 		ControlledResourceCount(iFur, 10, by=1670),
-		ContactTribe(10, by=1725),
+		ImprovementCount((iAlliedTribe, 10), by=1725),
 		Control(
             (plots.rectangle(tLakeSuperior).without(lLakeSuperiorExceptions) + plots.of(lLakeSuperiorAdditional)).named(LAKE_SUPERIOR),
             (plots.rectangle(tLakeMichigan).without(lLakeSuperiorExceptions) + plots.of(lLakeMichiganAdditional)).named(LAKE_MICHIGAN),
@@ -237,7 +237,7 @@ dGoals = {
 		CityCount(sum(
 			plots.regions(*lBrazil).named(BRAZIL),
 		), 15, by=1700),
-		SpecialistCount(iSpecialistSlave, 40, by=1800),
+		SpecialistCount(iSpecialistSlavePlanter, 40, by=1800),
 	),
 	iEngland: (
 		CityCount(
@@ -326,7 +326,7 @@ dGoals = {
 		PopulationCityCount(15, 1, by=1900),
 	),
 	iBrazil: (
-		ImprovementCount((iSlavePlantation, 8), (iPasture, 4), at=1880),
+		ImprovementCount((iPlantation, 8), (iPasture, 4), at=1880),
 		Wonders(iCristoRedentor),
 		All(
 			ImprovementCount(iForestPreserve, 20),

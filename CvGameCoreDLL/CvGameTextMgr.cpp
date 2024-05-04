@@ -15063,7 +15063,7 @@ bool CvGameTextMgr::buildFoundReligionString(CvWStringBuffer &szBuffer, TechType
 {
 	CvWString szTempBuffer;
 
-	if (GC.getReligionInfo((ReligionTypes) iReligionType).getTechPrereq() == eTech || (eTech == ACADEMIA && iReligionType == PROTESTANTISM))
+	if (GC.getReligionInfo((ReligionTypes) iReligionType).getTechPrereq() == eTech)
 	{
 		if (!bPlayerContext || (GC.getGameINLINE().countKnownTechNumTeams(eTech) == 0))
 		{

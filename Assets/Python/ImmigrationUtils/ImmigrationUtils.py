@@ -1368,10 +1368,21 @@ class Mercenary:
 		if iGoldCost > 0:
 			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_MERCENARY")))
 		
-		if iConquest2 in civics and self.getUnitInfoID() in lExplorers + lMilitia + lMainlineMercs + lEliteMercs + lCollateralMercs + \
-			lSkirmishMercs + lLightCavalryMercs + lHeavyCavalryMercs + lSiegeMercs:
-			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_COMBAT1")))
-			self.promotionList.append(gc.getPromotionInfo(gc.getInfoTypeForString("PROMOTION_COMBAT2")))
+		iExp = 0
+		# Conquest and Zealotry Civic
+		if self.getUnitInfoID() in lExplorers + lMilitia + lMainlineMercs + lEliteMercs + \
+			lCollateralMercs + lSkirmishMercs + lLightCavalryMercs + lHeavyCavalryMercs + lSiegeMercs:
+			if iConquest1 in civics or iConquest2 in civics:
+				iExp += 2
+			if iZealotry2 in civics:
+				iExp += 2
+		
+		# Admiralty Civic
+		if iAdmiralty2 in civics and self.getUnitInfoID() in lTransports + lMainlineShips + lSkirmishShips + lCapitalShips:
+			iExp += 4
+		
+		if iExp > 0:
+			self.objUnit.changeExperience(iExp, -1, False, False, False)
 		
 		# Apply of the promotions to the mercenary in the game
 		self.applyPromotions()

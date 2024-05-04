@@ -17650,11 +17650,6 @@ int CvPlayer::getAdvancedStartImprovementCost(ImprovementTypes eImprovement, boo
 				return -1;
 			}
 
-			if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_SLAVE_PLANTATION"))
-			{
-				return -1;
-			}
-
 			bool bValid = false;
 
 			for (int iI = 0; iI < GC.getNumBuildInfos(); ++iI)
@@ -24508,45 +24503,14 @@ int CvPlayer::countRequiredSlaves() const
 	}
 
 	int iNumRequiredSlaves = 0;
-	ImprovementTypes eSlavePlantation = (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_SLAVE_PLANTATION");
-	CvImprovementInfo& kSlavePlantation = GC.getImprovementInfo(eSlavePlantation);
-
-	BonusTypes eBonus;
 	int iLoop;
 	CvCity* pLoopCity;
-	CvPlot* pLoopPlot;
-	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
-	{
-		eBonus = (BonusTypes)iI;
-		if (kSlavePlantation.isImprovementBonusTrade(eBonus))
-		{
-			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-			{
-				// count bonuses without slave plantation
-				for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
-				{
-					pLoopPlot = plotCity(pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), iJ);
-
-					if (pLoopPlot != NULL && pLoopPlot->getBonusType() == eBonus && pLoopPlot->getImprovementType() != eSlavePlantation)	// MacAurther: Check for NULL plot, i.e. the city is on the border of the map
-					{
-						if (pLoopPlot->canUseSlave(getID()))
-						{
-							if (!pLoopPlot->isOwned() || pLoopPlot->getOwnerINLINE() == getID())
-							{
-								iNumRequiredSlaves++;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 
 	// cities that can settle slaves
 	int iSlaveJoinCities = 0;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		if (pLoopCity->canSlaveJoin() && pLoopCity->getFreeSpecialistCount(SPECIALIST_SLAVE) == 0)
+		if (pLoopCity->canSlaveJoin(NO_SPECIALIST) && pLoopCity->getFreeSpecialistCount(SPECIALIST_SLAVE_FARMER) == 0 && pLoopCity->getFreeSpecialistCount(SPECIALIST_SLAVE_MINER) == 0 && pLoopCity->getFreeSpecialistCount(SPECIALIST_SLAVE_PLANTER) == 0)
 		{
 			if (pLoopCity->happyLevel() - pLoopCity->unhappyLevel(0) >= 2)
 			{
@@ -24560,7 +24524,7 @@ int CvPlayer::countRequiredSlaves() const
 	// subtract slaves they already have
 	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
-		if (GC.getUnitInfo((UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)iI)).getBuilds(eSlavePlantation))
+		if (GC.getUnitInfo((UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)iI)).isSlave())
 		{
 			iNumRequiredSlaves -= getUnitClassCount((UnitClassTypes)iI);
 		}
@@ -24575,39 +24539,14 @@ CvCity* CvPlayer::findSlaveCity() const
 
 	std::vector<CvCity*> lViableCities;
 
-	ImprovementTypes eSlavePlantation = (ImprovementTypes)GC.getInfoTypeForString("IMPROVEMENT_SLAVE_PLANTATION");
-	CvImprovementInfo& kSlavePlantation = GC.getImprovementInfo(eSlavePlantation);
-
-	BonusTypes eBonus;
 	int iLoop;
 	CvCity* pLoopCity;
-	CvPlot* pLoopPlot;
-	for (int iI = 0; iI < GC.getNumBonusInfos(); iI++)
-	{
-		eBonus = (BonusTypes)iI;
-		if (kSlavePlantation.isImprovementBonusTrade(eBonus))
-		{
-			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-			{
-				// count bonuses without slave plantation
-				for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
-				{
-					pLoopPlot = plotCity(pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), iJ);
-
-					if (pLoopPlot->getBonusType() == eBonus && pLoopPlot->getImprovementType() != eSlavePlantation)
-					{
-						lViableCities.push_back(pLoopCity);
-					}
-				}
-			}
-		}
-	}
 
 	if (lViableCities.empty())
 	{
 		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 		{
-			if (pLoopCity->canSlaveJoin())
+			if (pLoopCity->canSlaveJoin(NO_SPECIALIST))
 			{
 				lViableCities.push_back(pLoopCity);
 			}

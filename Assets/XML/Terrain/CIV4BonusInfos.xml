@@ -95,7 +95,7 @@
 			<Civilopedia>TXT_KEY_BONUS_CITRUS_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CITRUS</ArtDefineTag>
-			<TechReveal>TECH_COMPANIES</TechReveal>
+			<TechReveal>TECH_EXCHANGE</TechReveal>
 			<TechCityTrade>TECH_POTTERY</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -541,7 +541,7 @@
 			<Civilopedia>TXT_KEY_BONUS_BANANA_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_BANANA</ArtDefineTag>
-			<TechReveal>TECH_COMPANIES</TechReveal>
+			<TechReveal>TECH_EXCHANGE</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -953,7 +953,7 @@
 			<Civilopedia>TXT_KEY_BONUS_RICE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GRAIN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_RICE</ArtDefineTag>
-			<TechReveal>TECH_HORTICULTURE</TechReveal>
+			<TechReveal>TECH_EXCHANGE</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -1082,7 +1082,7 @@
 			<Civilopedia>TXT_KEY_BONUS_WHEAT_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GRAIN</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_WHEAT</ArtDefineTag>
-			<TechReveal>TECH_HORTICULTURE</TechReveal>
+			<TechReveal>TECH_EXCHANGE</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -1162,7 +1162,7 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_COFFEE</ArtDefineTag>
 			<TechReveal>TECH_COMPANIES</TechReveal>
-			<TechCityTrade>TECH_COMPANIES</TechCityTrade>
+			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1830,7 +1830,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SUGAR_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SUGAR</ArtDefineTag>
-			<TechReveal>TECH_TRIANGULAR_TRADE</TechReveal>
+			<TechReveal>TECH_COMPANIES</TechReveal>
 			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -2034,7 +2034,7 @@
 			<Civilopedia>TXT_KEY_BONUS_WINE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_WINE</ArtDefineTag>
-			<TechReveal>TECH_HERITAGE</TechReveal>
+			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_POTTERY</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>

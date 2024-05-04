@@ -6108,10 +6108,7 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 			return false;
 		}
 
-		if (!pCity->canSlaveJoin())
-		{
-			return false;
-		}
+		if (!pCity->canSlaveJoin(eSpecialist)) return false;
 	}
 
 	if (GC.getSpecialistInfo(eSpecialist).isSatellite())

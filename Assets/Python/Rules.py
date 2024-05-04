@@ -169,12 +169,10 @@ def mayanHolkanAbility(winningUnit, losingUnit):
 @handler("revolution")
 def validateSlaves(iPlayer):
 	if not player(iPlayer).canUseSlaves():
-		if player(iPlayer).getImprovementCount(iSlavePlantation) > 0:
-			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlavePlantation):
-				plot.setImprovementType(iPlantation)
 		
 		for city in cities.owner(iPlayer):
-			city.setFreeSpecialistCount(iSpecialistSlave, 0)
+			for iSpecialistSlave in lSlaveSpecialists:
+				city.setFreeSpecialistCount(iSpecialistSlave, 0)
 				
 		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) in [iAfricanSlave2, iAfricanSlave3]):
 			slave.kill(False, iPlayer)
