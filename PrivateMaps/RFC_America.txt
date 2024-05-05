@@ -21069,7 +21069,6 @@ EndPlot
 BeginPlot
 	x=31,y=70
 	BonusType=BONUS_SUGAR
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
