@@ -52,6 +52,14 @@
 	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_AZT1</Tag>
+		<English>Triple Alliance</English>
+		<French>Triple Alliance</French>
+		<German>Triple Alliance</German>
+		<Italian>Triple Alliance</Italian>
+		<Spanish>Triple Alliance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_AZT2</Tag>
 		<English>Floating Gardens</English>
 		<French>Jardins flottants </French>
 		<German>Schwimmende G&#228;rten</German>
@@ -59,20 +67,12 @@
 		<Spanish>Floating Gardens</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_AZT2</Tag>
-		<English>Human Sacrifice</English>
-		<French>Sacrifices humains </French>
-		<German>Menschenopfer</German>
-		<Italian>Human Sacrifice</Italian>
-		<Spanish>Human Sacrifice</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_AZT3</Tag>
-		<English>European Flower Wars</English>
-		<French>Guerres fleuries europ&#233;ennes </French>
-		<German>Europ&#228;ische Blumenkriege</German>
-		<Italian>European Flower Wars</Italian>
-		<Spanish>European Flower Wars</Spanish>
+		<English>Flower Wars</English>
+		<French>Flower Wars</French>
+		<German>Flower Wars</German>
+		<Italian>Flower Wars</Italian>
+		<Spanish>Flower Wars</Spanish>
 	</TEXT>
 	
 	<TEXT>
@@ -819,11 +819,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_ZAP3</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Be'ena' Za'a</English>
+		<French>Be'ena' Za'a</French>
+		<German>Be'ena' Za'a</German>
+		<Italian>Be'ena' Za'a</Italian>
+		<Spanish>Be'ena' Za'a</Spanish>
 	</TEXT>
 	
 	<!-- RELIGIOUS GOAL TITLES -->

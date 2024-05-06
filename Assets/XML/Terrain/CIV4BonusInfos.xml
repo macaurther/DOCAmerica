@@ -1778,7 +1778,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SPICES_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SPICES</ArtDefineTag>
-			<TechCityTrade>TECH_CARTOGRAPHY</TechCityTrade>
+			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>

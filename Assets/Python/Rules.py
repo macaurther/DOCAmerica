@@ -118,7 +118,11 @@ def captureSlaves(winningUnit, losingUnit):
 
 	# Mesoamerica RP
 	if civ(winningUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
-		captureUnit(losingUnit, winningUnit, iNativeSlave1, 50)
+		if winningUnit.getUnitType() == iJaguar:
+			captureUnit(losingUnit, winningUnit, iNativeSlave1, 100)
+			captureUnit(losingUnit, winningUnit, iNativeSlave1, 100)
+		else:
+			captureUnit(losingUnit, winningUnit, iNativeSlave1, 50)
 		return
 	
 	if civ(losingUnit) == iNative and winningUnit.getUnitType() == iBandeirante and player(winningUnit).canUseSlaves():

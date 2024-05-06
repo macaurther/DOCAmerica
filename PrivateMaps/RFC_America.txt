@@ -18028,6 +18028,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=28
+	BonusType=BONUS_COPPER
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot

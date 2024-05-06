@@ -95,7 +95,7 @@ dGoals = {
 		BestTechPlayer(at=850),
 	),
 	iTeotihuacan: (
-		CultureAmount(500, at=850),
+		CultureAmount(500, at=500),
 		GoldenAges(1, by=850),
 		Control(
 			plots.region(rBajio).named(BAJIO),
@@ -110,9 +110,15 @@ dGoals = {
 			ControlledResourceCount(iObsidian, 1),
 			ControlledResourceCount(iGold, 1),
 			ControlledResourceCount(iSilver, 1),
-			by=1400
+			by=1000
 		),
-		FirstDiscover(iWriting),
+		All(
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1),
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatGeneral, 1),
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 1),
+			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatScientist, 1),
+			by=1500,
+		),
 	),
 	iTiwanaku: (
 		All(
@@ -199,9 +205,9 @@ dGoals = {
 		NoCityLost(by=1600),
 	),
 	iAztecs: (
+		All(VassalCount(2), Control(plots.region(rBajio).named(BAJIO)), by=1450),
 		BestPopulationCity(start(iAztecs).named(TENOCHTITLAN), at=1520),
-		BuildingCount((iPaganTemple, 6), (iTzompantli, 6), by=1650),
-		EnslaveCount(20, excluding=group(iCivGroupAmerica).named(EUROPEAN)),
+		EnslaveCount(50, by=1550),
 	),
 	iIroquois: (
 		ControlledResourceCount(iFur, 10, by=1670),

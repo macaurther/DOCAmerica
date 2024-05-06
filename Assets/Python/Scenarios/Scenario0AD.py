@@ -17,7 +17,7 @@ lCivilizations = [
 	Civilization(
 		iZapotec,
 		iGold=100,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNative,
