@@ -3370,6 +3370,7 @@
 			<Description>TXT_KEY_UNIT_AZTEC_JAGUAR</Description>
 			<Civilopedia>TXT_KEY_UNIT_AZTEC_JAGUAR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_AZTEC_JAGUAR_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>
@@ -3432,6 +3433,8 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<LeaderPromotion>PROMOTION_LEADER</LeaderPromotion>
+			<iLeaderExperience>5</iLeaderExperience>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_AXEMAN</Class>
@@ -4328,10 +4331,9 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_SMELTING</PrereqTech>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
 			<PrereqBonuses>
-				<BonusType>BONUS_COPPER</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
+				<BonusType>BONUS_COTTON</BonusType>
 			</PrereqBonuses>
 			<iCost>35</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

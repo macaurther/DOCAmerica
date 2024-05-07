@@ -2377,6 +2377,22 @@
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</English>
+		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</French>
+		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_HELP</Tag>
+		<English>[ICON_BULLET]Guaranteed to capture defeated enemies</English>
+		<French>[ICON_BULLET]Guaranteed to capture defeated enemies</French>
+		<German>[ICON_BULLET]Guaranteed to capture defeated enemies</German>
+		<Italian>[ICON_BULLET]Guaranteed to capture defeated enemies</Italian>
+		<Spanish>[ICON_BULLET]Guaranteed to capture defeated enemies</Spanish>
+	</TEXT>
 	
 	
 	

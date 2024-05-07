@@ -120,7 +120,6 @@ def captureSlaves(winningUnit, losingUnit):
 	if civ(winningUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
 		if winningUnit.getUnitType() == iJaguar:
 			captureUnit(losingUnit, winningUnit, iNativeSlave1, 100)
-			captureUnit(losingUnit, winningUnit, iNativeSlave1, 100)
 		else:
 			captureUnit(losingUnit, winningUnit, iNativeSlave1, 50)
 		return
