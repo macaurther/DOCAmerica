@@ -9340,7 +9340,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=66
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -9993,7 +9992,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=61
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -14743,7 +14741,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=59
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -38645,7 +38642,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot

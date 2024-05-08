@@ -140,15 +140,15 @@ dAdjectiveChanges = {
 }
 
 dStartingLeaders = [
-# 3000 BC
+# 500 BC
 {
 	iIndependent : iIndependentLeader,
 	iIndependent2 : iIndependentLeader,
 	iIndependent3 : iIndependentLeader,
-	iNative : iSittingBull,
+	iNative : iNativeLeader,
 	iMaya : iPacal,
-	iTeotihuacan : iAtlatlCauac,
 	iZapotec : iCosijoeza,
+	iTeotihuacan : iAtlatlCauac,
 	iTiwanaku : iMalkuHuyustus,
 	iWari : iWariCapac,
 	iMississippi : iRedHorn,
@@ -179,10 +179,10 @@ dStartingLeaders = [
 	iVenezuela : iChavez,
 	iCanada : iMacDonald,
 },
-# 600 AD
+# 1500 AD
 {
 },
-# 1700 AD
+# 1750 AD
 {
 	iSpain : iPhilip,
 	iFrance : iLouis,
@@ -765,7 +765,7 @@ def startingLeader(identifier):
 	if not isinstance(identifier, Civ):
 		identifier = civ(identifier)
 		
-	return dStartingLeaders[scenario()].get(identifier, dStartingLeaders[i0AD][identifier])
+	return dStartingLeaders[scenario()].get(identifier, dStartingLeaders[i500BC][identifier])
 	
 def leader(iPlayer):
 	iCiv = civ(iPlayer)

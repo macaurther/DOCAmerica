@@ -187,20 +187,9 @@ class Civilization(object):
 
 lCivilizations = [
 	Civilization(
-		iMaya,
-		iGold=75,
-		lCivics=[iCaptives1],
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, iHerbalism)
-	),
-	Civilization(
 		iTeotihuacan,
 		iGold=50,
 		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iTanning, iSmelting, iMasonry).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
-	),
-	Civilization(
-		iZapotec,
-		iGold=100,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
@@ -400,10 +389,15 @@ lCivilizations = [
 ### Starting units ###
 
 dStartingUnits = CivDict({
+	iTeotihuacan: {
+		iSettle: 1,
+		iWork: 1,
+		iDefend: 2,
+	},
 	iTiwanaku: {
 		iSettle: 1,
 		iWork: 1,
-		iDefend: 1,
+		iDefend: 2,
 	},
 	iWari: {
 		iSettle: 2,
@@ -837,12 +831,12 @@ dBuildingPreferences = {
 		iMachuPicchu: -40,
 		iSerpentMound: -80,
 	},
-	iTeotihuacan : {
-		iTlachihualtepetl: 40,
+	iZapotec : {
 		iSerpentMound: -80,
 		iPuebloBonito: -80,
 	},
-	iZapotec : {
+	iTeotihuacan : {
+		iTlachihualtepetl: 40,
 		iSerpentMound: -80,
 		iPuebloBonito: -80,
 	},

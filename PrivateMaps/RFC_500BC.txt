@@ -38,32 +38,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=14,y=66
-	BeginUnit
-		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_TEOTIHUACAN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_TEOTIHUACAN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_TEOTIHUACAN_ARTISAN
-		UnitOwner=CIVILIZATION_TEOTIHUACAN
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_TEOTIHUACAN
-		CityName=Teotihuacan
-		CityPopulation=3
-		YearFounded=-100
-		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
-		BeginCulture
-			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=5
-		EndCulture
-	EndCity
-EndPlot
-BeginPlot
 	x=15,y=61
 	BeginUnit
 		UnitType=UNIT_MILITIA_I
@@ -81,7 +55,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_ZAPOTEC
 		CityName=Danibaan
 		CityPopulation=2
-		YearFounded=-100
+		YearFounded=-700
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BeginCulture
@@ -107,7 +81,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_MAYA
 		CityName=Tikal
 		CityPopulation=2
-		YearFounded=-400
+		YearFounded=-1000
 		BuildingType=BUILDING_PALACE
 		BuildingType=BUILDING_GRANARY
 		BeginCulture

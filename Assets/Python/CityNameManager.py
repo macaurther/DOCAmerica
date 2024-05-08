@@ -12,8 +12,8 @@ iNumLanguages = 9
 
 dLanguages = defaultdict({
 iMaya : 		[iLangNative],
-iTeotihuacan : 	[iLangNative],
 iZapotec : 		[iLangNative],
+iTeotihuacan : 	[iLangNative],
 iTiwanaku : 	[iLangNative],
 iWari : 		[iLangNative],
 iMississippi : 	[iLangNative],

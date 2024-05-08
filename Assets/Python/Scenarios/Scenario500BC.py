@@ -10,11 +10,6 @@ lCivilizations = [
 		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, iHerbalism)
 	),
 	Civilization(
-		iTeotihuacan,
-		iGold=50,
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iTanning, iSmelting, iMining, iMasonry).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
-	),
-	Civilization(
 		iZapotec,
 		iGold=100,
 		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
@@ -35,9 +30,9 @@ lCivilizations = [
 ]
 
 
-scenario0AD = Scenario(
-	iStartYear = 0,
-	fileName = "RFC_0AD",
+scenario500BC = Scenario(
+	iStartYear = -500,
+	fileName = "RFC_500BC",
 	
 	lCivilizations = lCivilizations,
 )

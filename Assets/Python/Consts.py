@@ -22,8 +22,8 @@ iWari,			iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMin
 
 lBirthOrder = [
 	iMaya,
-	iTeotihuacan,
 	iZapotec,
+	iTeotihuacan,
 	iTiwanaku,
 	iWari,
 	iMississippi,
@@ -116,15 +116,15 @@ lNeighbours = [
 	(iMaya, iAztecs),
 	(iMaya, iMexico),
 	(iMaya, iColombia),
-	(iMaya, iTeotihuacan),
 	(iMaya, iZapotec),
-	(iTeotihuacan, iAztecs),
-	(iTeotihuacan, iMexico),
-	(iTeotihuacan, iZapotec),
-	(iTeotihuacan, iPurepecha),
+	(iMaya, iTeotihuacan),
+	(iZapotec, iTeotihuacan),
 	(iZapotec, iMexico),
 	(iZapotec, iAztecs),
 	(iZapotec, iPurepecha),
+	(iTeotihuacan, iAztecs),
+	(iTeotihuacan, iMexico),
+	(iTeotihuacan, iPurepecha),
 	(iTiwanaku, iWari),
 	(iTiwanaku, iMuisca),
 	(iTiwanaku, iChimu),
@@ -186,8 +186,8 @@ lInfluences = [
 	(iWari, iTiwanaku),
 	(iChimu, iTiwanaku),
 	(iInca, iTiwanaku),
-	(iAztecs, iTeotihuacan),
 	(iAztecs, iZapotec),
+	(iAztecs, iTeotihuacan),
 	(iNetherlands, iSpain),
 	(iAmerica, iEngland),
 	(iAmerica, iFrance),
@@ -199,8 +199,8 @@ lInfluences = [
 	(iMexico, iFrance),
 	(iMexico, iTeotihuacan),
 	(iMexico, iMaya),
-	(iMexico, iAztecs),
 	(iMexico, iZapotec),
+	(iMexico, iAztecs),
 	(iMexico, iPurepecha),
 	(iColombia, iSpain),
 	(iColombia, iMuisca),
@@ -213,9 +213,9 @@ lInfluences = [
 ]
 
 dBirth = CivDict({
-iMaya : 0,
-iTeotihuacan : 0,
-iZapotec : 0,
+iMaya : -500,
+iZapotec : -500,
+iTeotihuacan : -200,
 iTiwanaku : 110,
 iWari : 500,
 iMississippi : 600,
@@ -245,14 +245,14 @@ iPeru : 1822,
 iBrazil : 1822,
 iVenezuela : 1831,
 iCanada : 1867,
-}, 0)
+}, -500)
 
 lBirthCivs = dBirth.keys()
 
 dFall = CivDict({
 iMaya : 1350,
-iTeotihuacan : 1400,
 iZapotec : 1550,
+iTeotihuacan : 1400,
 iTiwanaku : 1400,
 iWari : 1400,
 iMississippi : 1350,
@@ -299,8 +299,8 @@ iAztecs : [iTeotihuacan],
 
 dAggressionLevel = CivDict({
 iMaya : 1,
-iTeotihuacan : 2,
 iZapotec : 1,
+iTeotihuacan : 2,
 iTiwanaku : 1,
 iWari : 1,
 iMississippi : 1,
@@ -354,8 +354,8 @@ dResurrectionProbability = CivDict({
 
 dPatienceThreshold = CivDict({
 iMaya : 35,
-iTeotihuacan : 20,
 iZapotec : 20,
+iTeotihuacan : 20,
 iTiwanaku : 20,
 iWari : 20,
 iMississippi : 35,
@@ -689,7 +689,7 @@ iVictorySecularism = 11
 #leaders
 iNumLeaders = 60
 #				2				3				4				5				6				7				8				9				10
-(iLeaderBarbarian,iSittingBull, iIndependentLeader,iWashington,	iJackson,		iLincoln,		iRoosevelt,		iFDR,			iKennedy,			iReagan,
+(iLeaderBarbarian,iNativeLeader,iIndependentLeader,iWashington,	iJackson,		iLincoln,		iRoosevelt,		iFDR,			iKennedy,			iReagan,
 iObama,			iSanMartin,		iPeron,			iMontezuma,		iPedro,			iVargas,		iMacDonald,		iTrudeau,		iTacaynamo,		iBolivar,
 iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		iDeGaulle,		iLOuverture,	iKamehameha,	iHuaynaCapac,	iPachacuti,		
 iAua,			iHiawatha,		iPacal,			iJuarez,		iSantaAnna,		iCardenas,		iRedHorn,		iSaguamanchica,	iWillemVanOranje,iWilliam,		
@@ -707,7 +707,7 @@ iNumImpacts = 5
 
 lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari, iSioux]
 
-(i0AD, i1500AD, i1750AD) = range(3)
+(i500BC, i1500AD, i1750AD) = range(3)
 
 # Stability overlay and editor
 iNumPlotStabilityTypes = 5
@@ -766,8 +766,8 @@ lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({
 iMaya : 3,
-iTeotihuacan : 2,
 iZapotec : 1,
+iTeotihuacan : 2,
 iTiwanaku : 2,
 iWari : 3,
 iMississippi : 5,

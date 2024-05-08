@@ -20,22 +20,18 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ZAPOTEC_ADJECTIVE</Tag>
 		<English>Zapotec</English>
-		<French>
-			<Text>teotihuacano:teotihuacana:teotihuacanos:teotihuacanas</Text>
-			<Gender>Male:Female:Male:Female</Gender>
-			<Plural>0:0:1:1</Plural>
-		</French>
+		<French>Zapotec</French>
 		<German>Zapotec</German>
 		<Italian>Zapotec</Italian>
 		<Spanish>Zapotec</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ZAPOTEC_PEOPLES</Tag>
-		<English>Oaxaca Valley Peoples</English>
-		<French>Oaxaca Valley Peoples</French>
-		<German>Oaxaca Valley Peoples</German>
-		<Italian>Oaxaca Valley Peoples</Italian>
-		<Spanish>Oaxaca Valley Peoples</Spanish>
+		<English>Otomanguean Peoples</English>
+		<French>Otomanguean Peoples</French>
+		<German>Otomanguean Peoples</German>
+		<Italian>Otomanguean Peoples</Italian>
+		<Spanish>Otomanguean Peoples</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ZAPOTEC_DEFAULT</Tag>

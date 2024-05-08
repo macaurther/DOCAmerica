@@ -94,15 +94,6 @@ dGoals = {
 		Wonder(iTempleOfKukulkan, by=600),
 		BestTechPlayer(at=850),
 	),
-	iTeotihuacan: (
-		CultureAmount(500, at=500),
-		GoldenAges(1, by=850),
-		Control(
-			plots.region(rBajio).named(BAJIO),
-			plots.region(rYucatan).named(YUCATAN),
-			at=1000,
-		),
-	),
 	iZapotec: (
 		FirstDiscover(iWriting),
 		All(
@@ -118,6 +109,15 @@ dGoals = {
 			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 1),
 			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatScientist, 1),
 			by=1500,
+		),
+	),
+	iTeotihuacan: (
+		CultureAmount(500, at=500),
+		GoldenAges(1, by=850),
+		Control(
+			plots.region(rBajio).named(BAJIO),
+			plots.region(rYucatan).named(YUCATAN),
+			at=1000,
 		),
 	),
 	iTiwanaku: (
