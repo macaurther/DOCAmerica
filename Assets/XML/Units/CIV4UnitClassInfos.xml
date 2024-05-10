@@ -175,6 +175,14 @@
 			<DefaultUnit>UNIT_MILITIA_V</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_MILITIA_6</Type>
+			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_MILITIA_6</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_WARRIOR</Type>
 			<Description>TXT_KEY_UNIT_WARRIOR</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -213,6 +221,14 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_RIFLEMAN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_INFANTRY</Type>
+			<Description>TXT_KEY_UNIT_INFANTRY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_INFANTRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_AXEMAN</Type>
@@ -311,6 +327,14 @@
 			<DefaultUnit>UNIT_GATLING_GUN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_MACHINE_GUN</Type>
+			<Description>TXT_KEY_UNIT_MACHINE_GUN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_MACHINE_GUN</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_ATLATLIST</Type>
 			<Description>TXT_KEY_UNIT_ATLATLIST</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -367,6 +391,14 @@
 			<DefaultUnit>UNIT_PISTOLIER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_LIGHT_TANK</Type>
+			<Description>TXT_KEY_UNIT_LIGHT_TANK</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_LIGHT_TANK</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_CUIRASSIER</Type>
 			<Description>TXT_KEY_UNIT_CUIRASSIER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -391,6 +423,14 @@
 			<DefaultUnit>UNIT_CAVALRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_TANK</Type>
+			<Description>TXT_KEY_UNIT_TANK</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_TANK</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_BOMBARD</Type>
 			<Description>TXT_KEY_UNIT_BOMBARD</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -407,6 +447,22 @@
 			<DefaultUnit>UNIT_CANNON</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_HEAVY_CANNON</Type>
+			<Description>TXT_KEY_UNIT_HEAVY_CANNON</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_HEAVY_CANNON</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_RIFLED_CANNON</Type>
+			<Description>TXT_KEY_UNIT_RIFLED_CANNON</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_RIFLED_CANNON</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_ARTILLERY</Type>
 			<Description>TXT_KEY_UNIT_ARTILLERY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -415,12 +471,12 @@
 			<DefaultUnit>UNIT_ARTILLERY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_HOWITZER</Type>
-			<Description>TXT_KEY_UNIT_HOWITZER</Description>
+			<Type>UNITCLASS_AA_GUN</Type>
+			<Description>TXT_KEY_UNIT_AA_GUN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_HOWITZER</DefaultUnit>
+			<DefaultUnit>UNIT_AA_GUN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_WORK_BOAT</Type>
@@ -471,6 +527,22 @@
 			<DefaultUnit>UNIT_STEAMSHIP</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_TRANSPORT</Type>
+			<Description>TXT_KEY_UNIT_TRANSPORT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_TRANSPORT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CARRIER</Type>
+			<Description>TXT_KEY_UNIT_CARRIER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_CARRIER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_SLOOP</Type>
 			<Description>TXT_KEY_UNIT_SLOOP</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -495,6 +567,14 @@
 			<DefaultUnit>UNIT_IRONCLAD</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_DESTROYER</Type>
+			<Description>TXT_KEY_UNIT_DESTROYER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_DESTROYER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_PRIVATEER</Type>
 			<Description>TXT_KEY_UNIT_PRIVATEER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -509,6 +589,14 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_TORPEDO_BOAT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SUBMARINE</Type>
+			<Description>TXT_KEY_UNIT_SUBMARINE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_SUBMARINE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_BARQUE</Type>
@@ -533,6 +621,46 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_CRUISER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BATTLESHIP</Type>
+			<Description>TXT_KEY_UNIT_BATTLESHIP</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_BATTLESHIP</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BIPLANE</Type>
+			<Description>TXT_KEY_UNIT_BIPLANE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_BIPLANE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_FIGHTER</Type>
+			<Description>TXT_KEY_UNIT_FIGHTER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_FIGHTER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BOMBER</Type>
+			<Description>TXT_KEY_UNIT_BOMBER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_BOMBER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_NUCLEAR_BOMBER</Type>
+			<Description>TXT_KEY_UNIT_NUCLEAR_BOMBER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_NUCLEAR_BOMBER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_GREAT_PROPHET</Type>

@@ -2101,8 +2101,8 @@
 			<Civilopedia>TXT_KEY_IMPROVEMENT_ALLIED_TRIBE_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_TRIBE</ArtDefineTag>
 			<YieldChanges>
-				<iYieldChange>1</iYieldChange>
-				<iYieldChange>1</iYieldChange>
+				<iYieldChange>0</iYieldChange>
+				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<bActsAsCity>0</bActsAsCity>

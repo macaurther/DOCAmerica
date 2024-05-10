@@ -7,12 +7,12 @@ lCivilizations = [
 		iMaya,
 		iGold=75,
 		lCivics=[iCaptives1],
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iMining, iTanning, iMasonry, iProperty).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, iHerbalism)
+		techs=techs.column(2).including(iAgriculture, iMythology, iMining).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, iHerbalism)
 	),
 	Civilization(
 		iZapotec,
 		iGold=100,
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iTanning, iMining, iSmelting).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iAgriculture, iMythology, iTanning).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNative,

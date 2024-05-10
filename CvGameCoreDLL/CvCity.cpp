@@ -325,6 +325,12 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeMaxFoodKeptPercent(25);
 	}
 
+	// Leoreth: Las Lajas Sanctuary effect: +10% heal rate in all cities
+	if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY))
+	{
+		changeHealRate(10);
+	}
+
 	// MacAurther: Starting population per era:
 	//  Ancient:		1
 	//  Classical:		1
@@ -16162,7 +16168,7 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 	// if both the river and water flags are set, we require one of the two conditions, not both
 	if (GC.getBuildingInfo(eBuilding).isWater())
 	{
-		if (eBuilding == (BuildingTypes)BUILDING_BROOKLYN_BRIDGE)
+		if (eBuilding == (BuildingTypes)BUILDING_GOLDEN_GATE_BRIDGE || eBuilding == (BuildingTypes)BUILDING_BROOKLYN_BRIDGE)
 		{
 			if (!plot()->isRiver() || !plot()->isCoastalLand(GC.getBuildingInfo(eBuilding).getMinAreaSize()))
 			{

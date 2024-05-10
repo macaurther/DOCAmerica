@@ -2393,6 +2393,22 @@
 		<Italian>[ICON_BULLET]Guaranteed to capture defeated enemies</Italian>
 		<Spanish>[ICON_BULLET]Guaranteed to capture defeated enemies</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CUBAN_FARS</Tag>
+		<English>FARs</English>
+		<French>FARs</French>
+		<German>FARs</German>
+		<Italian>FARs</Italian>
+		<Spanish>FARs</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CUBAN_FARS_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</English>
+		<French>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</French>
+		<German>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</German>
+		<Italian>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]FARs[COLOR_REVERT], the Cuban replacement for the [COLOR_UNIT_TEXT]Infantry[COLOR_REVERT], is much cheaper.</Spanish>
+	</TEXT>
 	
 	
 	

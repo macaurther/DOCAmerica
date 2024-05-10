@@ -24,9 +24,6 @@ BeginPlot
 		YearAcquired=-3000
 		PreviousOwner=CIVILIZATION_INDEPENDENT3
 		HolyCityReligionType=RELIGION_JUDAISM
-		HolyCityReligionType=RELIGION_ORTHODOXY
-		HolyCityReligionType=RELIGION_CATHOLICISM
-		HolyCityReligionType=RELIGION_ISLAM
 		HolyCityReligionType=RELIGION_HINDUISM
 		HolyCityReligionType=RELIGION_BUDDHISM
 		HolyCityReligionType=RELIGION_CONFUCIANISM
@@ -44,24 +41,9 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_SETTLER
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ZAPOTEC
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ZAPOTEC
-		CityName=Danibaan
-		CityPopulation=2
-		YearFounded=-700
-		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
-		BeginCulture
-			Civilization=CIVILIZATION_ZAPOTEC, Culture=5
-		EndCulture
-	EndCity
 EndPlot
 BeginPlot
 	x=22,y=59
@@ -71,10 +53,6 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_MAYA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginCity

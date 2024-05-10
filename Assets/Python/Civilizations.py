@@ -910,16 +910,23 @@ dBuildingPreferences = {
 		iMenloPark: 20,
 		iBiltmoreEstate: 20,
 		iLeagueOfNations: 20,
+		iHollywood: 30,
+		iPentagon: 30,
+		iEmpireStateBuilding: 30,
+		iGoldenGateBridge: 30,
 	},
 	iMexico : {
 		iGuadalupeBasilica: 40,
 		iChapultepecCastle: 40,
+		iLasLajasSanctuary: 20,
 	},
 	iArgentina : {
 		iGuadalupeBasilica: 30,
+		iLasLajasSanctuary: 30,
 	},
 	iColombia : {
 		iGuadalupeBasilica: 30,
+		iLasLajasSanctuary: 30,
 	},
 	iBrazil : {
 		iCristoRedentor: 30,

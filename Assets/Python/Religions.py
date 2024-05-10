@@ -30,8 +30,14 @@ def onBuildingBuilt(city, iBuilding):
 
 
 @handler("BeginGameTurn")
-def foundProtestantism():
-	if turn() == turn(1521):
+def foundReligions():
+	if turn() == year(30):
+		foundReligion(tHolyCity, iCatholicism)
+	if turn() == year(33):
+		foundReligion(tHolyCity, iOrthodoxy)
+	if turn() == year(610):
+		foundReligion(tHolyCity, iIslam)
+	if turn() == year(1521):
 		foundReligion(tHolyCity, iProtestantism)
 
 

@@ -138,7 +138,7 @@ def captureSlaves(winningUnit, losingUnit):
 
 @handler("combatResult")
 def captureCannon(winningUnit, losingUnit):
-	if losingUnit.getUnitType() in [iBombard, iCannon, iArtillery, iHowitzer, iLightCannon, iFieldGun, iGatlingGun]:
+	if losingUnit.getUnitType() in [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]:
 		captureUnit(losingUnit, winningUnit, losingUnit.getUnitType(), 50)
 
 @handler("combatResult")

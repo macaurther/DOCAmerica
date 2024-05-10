@@ -58,6 +58,10 @@
 					<BuildingType>BUILDING_AMERICAN_STATE_HOUSE</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_DEPARTMENT_STORE</BuildingClassType>
+					<BuildingType>BUILDING_AMERICAN_MALL</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_DRUIDIC_NEMETON</BuildingType>
 				</Building>
@@ -194,7 +198,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAUGHTERHOUSE</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SUPERMARKET</BuildingClassType>
 					<BuildingType>BUILDING_ARGENTINE_REFRIGERATION_PLANT</BuildingType>
 				</Building>
 				<Building>
@@ -582,6 +586,10 @@
 				</Building>
 			</Buildings>
 			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_DESTROYER</UnitClassType>
+					<UnitType>UNIT_CANADIAN_CORVETTE</UnitType>
+				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
 					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
@@ -3232,7 +3240,7 @@
 			<Identifier>SPA</Identifier>
 			<Region>EUR</Region>
 			<CultureGroup>2</CultureGroup>
-			<StartingYear>1496</StartingYear>
+			<StartingYear>1492</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3587,7 +3595,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_STEEL_MILL</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
 					<BuildingType>BUILDING_VENEZUELAN_REFINERY</BuildingType>
 				</Building>
 				<Building>

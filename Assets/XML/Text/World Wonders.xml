@@ -1022,6 +1022,102 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALCATRAZ</Tag>
+		<English>Alcatraz</English>
+		<French>Alcatraz</French>
+		<German>Alcatraz</German>
+		<Italian>Alcatraz</Italian>
+		<Spanish>Alcatraz</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ALCATRAZ_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</English>
+		<French>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</French>
+		<German>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Alcatraz[COLOR_REVERT] adds additional espionage to all of your specialists.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING</Tag>
+		<English>The Empire State Building</English>
+		<French>
+			<Text>Empire State Building</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Das Empire State Building</German>
+		<Italian>The Empire State Building</Italian>
+		<Spanish>The Empire State Building</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING_HELP</Tag>
+		<English>[ICON_BULLET]Provides [ICON_GOLD] bonus equal to city's population</English>
+		<French>[ICON_BULLET]Rapporte un bonus en [ICON_GOLD] &#233;quivalent &#233; &#224; la population de la ville</French>
+		<German>[ICON_BULLET]Produziert [ICON_GOLD] entsprechend der Bev&#246;lkerung seiner Stadt</German>
+		<Italian>[ICON_BULLET]Provides [ICON_GOLD] bonus equal to city's population</Italian>
+		<Spanish>[ICON_BULLET]Provides [ICON_GOLD] bonus equal to city's population</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_EMPIRE_STATE_BUILDING_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Empire State Building[COLOR_REVERT] provides a gold bonus equal to the population of the city in which it's built. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT]</English>
+		<French>The [COLOR_BUILDING_TEXT]Empire State Building[COLOR_REVERT] provides a gold bonus equal to the population of the city in which it's built. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT]</French>
+		<German>The [COLOR_BUILDING_TEXT]Empire State Building[COLOR_REVERT] provides a gold bonus equal to the population of the city in which it's built. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT]</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Empire State Building[COLOR_REVERT] provides a gold bonus equal to the population of the city in which it's built. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT]</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Empire State Building[COLOR_REVERT] provides a gold bonus equal to the population of the city in which it's built. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE</Tag>
+		<English>Golden Gate Bridge</English>
+		<French>
+			<Text>Pont du Golden Gate</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Golden Gate Br&#252;cke</German>
+		<Italian>Golden Gate Bridge</Italian>
+		<Spanish>Golden Gate Bridge</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GOLDEN_GATE_BRIDGE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Golden Gate Bridge[COLOR_REVERT] adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Golden Gate Bridge[COLOR_REVERT] adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Golden Gate Bridge[COLOR_REVERT] adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Golden Gate Bridge[COLOR_REVERT] adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Golden Gate Bridge[COLOR_REVERT] adds additional commerce to all of your [COLOR_HIGHLIGHT_TEXT]Scientist[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Engineer[COLOR_REVERT] specialists. It also increases the chance of generating a [COLOR_UNIT_TEXT]Great Engineer[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM</Tag>
+		<English>Hoover Dam</English>
+		<French>Hoover Dam</French>
+		<German>Hoover Dam</German>
+		<Italian>Hoover Dam</Italian>
+		<Spanish>Hoover Dam</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</English>
+		<French>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</French>
+		<German>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Hoover Dam[COLOR_REVERT] provides clean power and increases the tile yields of desert and semidesert.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_HOOVER_DAM_HELP</Tag>
+		<English>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</English>
+		<French>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</French>
+		<German>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</German>
+		<Italian>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</Italian>
+		<Spanish>[ICON_BULLET]Minimum of 1[ICON_FOOD], 1[ICON_PRODUCTION], and 1[ICON_COMMERCE] on Desert and Semidesert in all cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MOUNT_RUSHMORE</Tag>
+		<English>Mount Rushmore</English>
+		<French>Mount Rushmore</French>
+		<German>Mount Rushmore</German>
+		<Italian>Mount Rushmore</Italian>
+		<Spanish>Mount Rushmore</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>
 		<English></English>
 		<French></French>

@@ -229,7 +229,7 @@ iPurepecha : 1150,
 iAztecs : 1250,
 iIroquois : 1350,
 iSioux : 1450,
-iSpain : 1496,
+iSpain : 1492,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
@@ -420,7 +420,7 @@ iNumCorporations = 8
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 133
+iNumTechs = 147
 #				2				3				4				5				6				7
 (iHunting,		iLandmarks,		iIrrigation,	iLinguistics,	iCultivation,	iSpiritualism,	iShallowFishing,
 iTrapping,      iPathfinding,   iEarthworks,    iLocalization,  iCompanionPlanting,iHerbalism,  iFishing,
@@ -441,8 +441,10 @@ iMetallurgy,	iProtectionism,	iHydrology,		iPhysics,		iPioneering,	iJudiciary,		i
 iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iGeology,		iNationalism, 	iCivilLiberties,
 iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iImperialism, 	iEmancipation,
 iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
-iInfrastructure,iMacroeconomics,iCivilRights,
-iPowerProjection) = range(iNumTechs)
+iFlight,		iMacroeconomics,iInfrastructure,iRadio,			iEcology,		iPowerProjection,iPsychology,
+iAviation,		iGlobalism,		iFission,		iSynthetics,	iSocialServices,iCivilRights,	iTelevision,
+iRocketry,		iNuclearPower,	iRadar,
+iMultilateralism) = range(iNumTechs)
 
 # Techs that Natives start the game with, but Europeans have to trade for
 lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing,
@@ -450,26 +452,27 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 131
+iNumUnits = 149
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iSpy, 			iSisqeno,       
 iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		
-iMinuteman,		iMilitia5,		iWarrior, 		iKoa,			iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		iGuardia,		
-iRifleman,		iVencedores,	iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iMacana,		iTercio,		iMohawk,		iFusilier,		
-iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,iPikeman,		iArcher,		iPicta,			
-iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iAtlatlist,		iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		
-iCacos,			iAlbionLegion,	iHorseArcher,	iHorseArcher,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			
-iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iBombard,		iCannon,		iArtillery,		iHowitzer,		iWorkboat,		
-iCanoe,			iLongship,		iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		
-iSloop,			iFrigate,		iIronclad,		iPrivateer,	    iTorpedoBoat,	iBarque,		iShipOfTheLine,iManOfWar,		iCruiser,		iGreatProphet, 	
-iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,
-iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlave2,	
-iMigrantWorker) = range(iNumUnits)
+iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		
+iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iMacana,		
+iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,
+iPikeman,		iArcher,		iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	iAtlatlist,		
+iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iHorseArcher,	iSwiftArrow,	iHussar,		iMountedBrave,	
+iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		
+iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			iWorkboat,		iCanoe,			iLongship,		
+iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iTransport,		iCarrier,		
+iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    iTorpedoBoat,	iSubmarine,		iBarque,		iShipOfTheLine,	
+iManOfWar,		iCruiser,		iBattleship,	iBiplane,		iFighter,		iBomber,		iNuclearBomber,	iGreatProphet, 	iGreatArtist, 	iGreatScientist,
+iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,
+iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,	iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlave2,	iMigrantWorker) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
-lWildernessRPGunUnits = [iMilitia3, iMilitia4, iMinuteman, iMilitia5, iArquebusier, iArmedSlave, iMusketman, iMusketeer, iGuardia, iRifleman, iVencedores, iTercio, iMohawk, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine]
+lWildernessRPGunUnits = [iMilitia3, iMilitia4, iMinuteman, iMilitia5, iMilitia6, iArquebusier, iArmedSlave, iMusketman, iMusketeer, iGuardia, iRifleman, iVencedores, iInfantry, iTercio, iMohawk, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine]
 lWildernessRPHorseUnits = [iHorseArcher, iCuirassier, iConquistador]
 lWildernessRPHorseGunUnits = [iHussar, iMountedBrave, iDragoon, iLlanero, iPistolier, iRural, iCarabineer, iGrenadierCavalry, iCavalry]
 
@@ -502,8 +505,8 @@ iGems, 			iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
-iNumBuildings = 201
-# Buildings (104)
+iNumBuildings = 227
+# Buildings (121)
 #				2				3				4				5				6				7				8				9				10
 (iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iTipi,
 iMarket,		iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		
@@ -514,8 +517,10 @@ iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iW
 iTavern,		iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	
 iAssembly,		iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		
 iSilversmith,	iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		
-iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRefinery,      iCoalPlant,     iRodeo,			iCharreada,		
-iArsenal,		iDrydock,		iLibrary,		iNewspaper,				
+iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		
+iLibrary,		iNewspaper,		iSupermarket,	iColdStoragePlant,iHospital,	iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			
+iElectricalGrid,iFactory,		iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iPark,			iBunker,		iLaboratory,	iBroadcastTower,
+iNuclearPlant,
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -530,12 +535,13 @@ iAcademy, 		iAdministrativeCenter, iManufactory, iArmoury, 	iMuseum, 		iStockExc
 #				2				3				4				5				6				7				8				9				10
 iTradingCompanyBuilding,iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAcademy,iSecretService,iIronworks,iRedCross,iNationalPark,
 iCentralBank, 	iGrandCentralStation,iSupremeCourt,
-# Great Wonders (37)
+# Great Wonders (46)
 #				2				3				4				5				6				7				8				9				10
 iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iPuebloBonito,	iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iYachaywasi,	iGateOfTheSun,iGreatGeoglyph,	
 iPyramidOfTheSun,iSerpentMound,	iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,iMountVernon,
 iMonticello,	iSlaterMill,	iChapultepecCastle,iWestPoint,	iFortMcHenry,	iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	iEllisIsland,	
-iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iCristoRedentor) = range(iNumBuildings)
+iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,iHooverDam,iAlcatraz,	
+iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
 
 iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
 
@@ -645,8 +651,8 @@ iNumProjects = 9
 
 #Eras
 
-iNumEras = 6
-(iAncientEra, iClassicalEra, iExplorationEra, iColonialEra, iRevolutionaryEra, iIndustrialEra) = range (iNumEras)
+iNumEras = 7
+(iAncientEra, iClassicalEra, iExplorationEra, iColonialEra, iRevolutionaryEra, iIndustrialEra, iModernEra) = range (iNumEras)
 
 # Culture
 
@@ -739,23 +745,23 @@ iMainlineCat,	iEliteCat,		iCollateralCat,	iSkirmishCat,	iLightCavCat,	iHeavyCavC
 lSettlers = [iSettler, iPioneer]
 lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
 lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
-lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship]
+lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship, iTransport]
 lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
 lSlaves = [iAfricanSlave2, iAfricanSlave3]
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger]
-lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5]
-lMainlineMercs = [iArquebusier, iMusketman, iMusketeer, iRifleman]
+lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
+lMainlineMercs = [iArquebusier, iMusketman, iMusketeer, iRifleman, iInfantry]
 lEliteMercs = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine]
-lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun]
+lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]
 lSkirmishMercs = [iSkirmisher, iGrenadier]
-lLightCavalryMercs = [iHussar, iDragoon, iPistolier]
-lHeavyCavalryMercs = [iCuirassier, iConquistador, iCarabineer, iCavalry]
-lSiegeMercs = [iBombard, iCannon, iArtillery, iHowitzer]
-lMainlineShips = [iSloop, iFrigate, iIronclad]
-lSkirmishShips = [iPrivateer, iTorpedoBoat]
-lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser]
+lLightCavalryMercs = [iHussar, iDragoon, iPistolier, iLightTank]
+lHeavyCavalryMercs = [iCuirassier, iConquistador, iCarabineer, iCavalry, iTank]
+lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
+lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
+lSkirmishShips = [iPrivateer, iTorpedoBoat, iSubmarine]
+lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
 
 lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lSlaves, lColonists, lMigrantWorkers]
 

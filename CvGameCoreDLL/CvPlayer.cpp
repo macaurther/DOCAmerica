@@ -7038,6 +7038,15 @@ void CvPlayer::processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pAr
 			pLoopCity->changeMaxFoodKeptPercent(25 * iChange);
 		}
 	}
+
+	// Las Lajas Sanctuary
+	else if (eBuilding == (BuildingTypes)BUILDING_LAS_LAJAS_SANCTUARY)
+	{
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			pLoopCity->changeHealRate(10 * iChange);
+		}
+	}
 }
 
 
