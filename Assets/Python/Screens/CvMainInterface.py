@@ -2591,21 +2591,15 @@ class CvMainInterface:
 						iCount = iCount + 1
 					
 					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerica RP
-					if pUnit.getUnitType() == iNativeSlave1 and civ(pUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
+					if pUnit.getUnitType() in lSlaves and civ(pUnit) in dCivGroups[iCivGroupMesoamerica]:
 						plot = plot_(pUnit)
 						if plot.isCity():
 							city = plot.getPlotCity()
-							if civ(city) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha) and not city.isWeLoveTheKingDay():
+							if civ(city) in dCivGroups[iCivGroupMesoamerica] and not city.isWeLoveTheKingDay():
 								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(iAltar).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
 								screen.show("BottomButtonContainer")
 								iCount = iCount + 1
 						
-					# Leoreth: Byzantine UP: bribe barbarians
-					if pUnit.getUnitType() == iSpy and not pUnit.isMadeAttack() and civ(pUnit) == iByzantium and player(iByzantium).getNumCities() > 0:
-						if canDoByzantineBribery(pUnit):
-							screen.appendMultiListButton("BottomButtonContainer", gc.getTechInfo(iCurrency).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10001, 10001, False)
-							screen.show("BottomButtonContainer")
-							iCount = iCount + 1
 
 		elif (CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY):
 		
@@ -5831,13 +5825,13 @@ class CvMainInterface:
 				MainOpt.setFieldOfView(self.iField_View)
 # BUG - field of view slider - end
 			
-		# Leoreth: sacrifice Aztec slaves
+		# Leoreth: sacrifice Aztec slaves -> MacAurther: Mesoamerican RP
 		if (inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10000 and inputClass.getData2() == 10000):
 			self.pPushedButtonUnit = g_pSelectedUnit
 			iX = self.pPushedButtonUnit.getX()
 			iY = self.pPushedButtonUnit.getY()
 			city = gc.getMap().plot(iX, iY).getPlotCity()
-			city.changeHappinessTimer(turns(5))
+			city.changeHappinessTimer(turns(10))
 			city.setWeLoveTheKingDay(True)
 			self.pPushedButtonUnit.kill(False, city.getOwner())
 			

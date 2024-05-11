@@ -16573,6 +16573,7 @@ void CvGameTextMgr::buildStabilityParameterString(CvWStringBuffer& szBuffer, int
 		int iParameterCivicCombinations = player.getStabilityParameter(PARAMETER_CIVIC_COMBINATIONS);
 		int iParameterCivicsEraTech = player.getStabilityParameter(PARAMETER_CIVICS_ERA_TECH);
 		int iParameterReligion = player.getStabilityParameter(PARAMETER_RELIGION);
+		int iParameterSlaves = player.getStabilityParameter(PARAMETER_SLAVES);
 
 		iTotalStability = iParameterHappiness + iParameterCivicCombinations + iParameterCivicsEraTech + iParameterReligion;
 
@@ -16609,6 +16610,13 @@ void CvGameTextMgr::buildStabilityParameterString(CvWStringBuffer& szBuffer, int
 			szStabilityParameters += NEWLINE + szTemp;
 		}
 
+		if (iParameterSlaves > 0)
+		{
+			CvWString szTemp;
+			szTemp.Format(L"+%d: %s", iParameterSlaves, gDLL->getText("TXT_KEY_STABILITY_SLAVES").GetCString());
+			szStabilityParameters += NEWLINE + szTemp;
+		}
+
 		szColor.Format(ENDCOLR SETCOLR, TEXT_COLOR("COLOR_RED"));
 		szStabilityParameters += szColor;
 
@@ -16637,6 +16645,13 @@ void CvGameTextMgr::buildStabilityParameterString(CvWStringBuffer& szBuffer, int
 		{
 			CvWString szTemp;
 			szTemp.Format(L"%d: %s", iParameterReligion, gDLL->getText("TXT_KEY_STABILITY_RELIGIOUS_DISUNITY").GetCString());
+			szStabilityParameters += NEWLINE + szTemp;
+		}
+
+		if (iParameterSlaves < 0)
+		{
+			CvWString szTemp;
+			szTemp.Format(L"%d: %s", iParameterSlaves, gDLL->getText("TXT_KEY_STABILITY_SLAVES").GetCString());
 			szStabilityParameters += NEWLINE + szTemp;
 		}
 

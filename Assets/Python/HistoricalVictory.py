@@ -91,8 +91,8 @@ LOCAL = "TXT_KEY_VICTORY_NAME_LOCAL"
 dGoals = {
 	iMaya: (
 		FirstDiscover(iMathematics, iCalendar),
-		Wonder(iTempleOfKukulkan, by=600),
-		BestTechPlayer(at=850),
+		Wonder(iTempleOfKukulkan, by=800),
+		BestTechPlayer(at=1490),
 	),
 	iZapotec: (
 		FirstDiscover(iWriting),
@@ -144,14 +144,14 @@ dGoals = {
 	),
 	iMississippi: (
 		All(
-			Control((plots.rectangle(tMississippiRiver) + plots.of(lMississippiRiverAdditional)).named(MISSISSIPPI_RIVER)),
-			Control((plots.rectangle(tOhioRiver).without(lOhioRiverExceptions) + plots.of(lOhioRiverAdditional)).named(OHIO_RIVER)),
+			AreaPercent((plots.rectangle(tMississippiRiver) + plots.of(lMississippiRiverAdditional)).named(MISSISSIPPI_RIVER), 50),
+			AreaPercent((plots.rectangle(tOhioRiver).without(lOhioRiverExceptions) + plots.of(lOhioRiverAdditional)).named(OHIO_RIVER), 50),
 			by=1000,
 		),
 		All(
 			BuildingCount(iPlatformMound, 5),
 			Wonder(iSerpentMound),
-			by=1070,
+			by=1200,
 		),
 		All(
 			CityBuilding(city(tCahokia).named(CAHOKIA), iPalace),

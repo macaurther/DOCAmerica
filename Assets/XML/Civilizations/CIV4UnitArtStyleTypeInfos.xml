@@ -191,7 +191,7 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_AXEMAN</UnitType>
+					<UnitType>UNIT_MACEMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_MACEMAN_IROQUOIS</EarlyArtDefineTag>
 						<MiddleArtDefineTag>ART_DEF_UNIT_MACEMAN_IROQUOIS</MiddleArtDefineTag>

@@ -121,9 +121,9 @@ def getWidgetHelp(argsList):
 	"""
 	eWidgetType, iData1, iData2, bOption = argsList
 	
-	# Leoreth: Aztec UP: sacrifice slaves
+	# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerican RP
 	if iData1 == 10000:
-		return CyTranslator().getText("TXT_KEY_BUTTON_SACRIFICE", (turns(5), turns(5)))
+		return CyTranslator().getText("TXT_KEY_BUTTON_SACRIFICE", (turns(10), turns(10)))
 					
 	# Leoreth: Byzantine UP: bribe button
 	if iData1 == 10001:

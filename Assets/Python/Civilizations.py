@@ -189,32 +189,33 @@ lCivilizations = [
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iTanning, iSmelting, iMasonry).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(2).including(iAgriculture, iPastoralism, iMining, iMythology, iArithmetics, iMythology, iDivination).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMythology).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iWari,
 		iGold=100,
-		techs=techs.column(3).including(iMasonry, iDivination, iArithmetics).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iMasonry, iArithmetics).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iMississippi,
 		iGold=25,
+		lCivics=[iChiefdom1, iCustomaryLaw1, iDiffusion1],
 		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning, iDivination).without(iLandmarks, iPathfinding, iLinguistics, iLocalization)
 	),
 	Civilization(
 		iPuebloan,
 		iGold=50,
-		techs=techs.column(3).including(iMasonry).without(iTrapping, iLinguistics, iLocalization, iHerbalism, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iMasonry).without(iTrapping, iLinguistics, iLocalization, iHerbalism, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iMuisca,
 		iGold=200,
-		techs=techs.column(3).including(iMasonry, iSmelting, iAlloys).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iMasonry, iSmelting).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNorse,

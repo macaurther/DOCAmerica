@@ -124,14 +124,12 @@ def nativeCityConquered(iPlayer, pCity):
 			message(iPlayer, "TXT_KEY_CONQUER_IMMIGRATION", iConquerImmigration)
 		
 		# If the conquerer has the Captives or Encomienda Civic, give Native Slave based on the population
-		if player(iPlayer).hasCivic(iCaptives1):
-			iNumSlaves = max(1, int(pCity.getPopulation() / 2))
-			makeUnits(iPlayer, iNativeSlave1, pCity, iNumSlaves, UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave1).getButton(), color=8, location=pCity)
-		elif player(iPlayer).hasCivic(iEncomienda2):
-			iNumSlaves = max(1, int(pCity.getPopulation() / 2))
-			makeUnits(iPlayer, iNativeSlave2, pCity, iNumSlaves, UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave2).getButton(), color=8, location=pCity)
+		iNumSlaves = max(1, int(pCity.getPopulation() / 2))
+		iSlave = getNativeSlaveType(iPlayer)
+		
+		if iSlave > -1:
+			makeUnits(iPlayer, iSlave, pCity, iNumSlaves, UnitAITypes.UNITAI_WORKER)
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=pCity)
 
 
 @handler("BeginGameTurn")

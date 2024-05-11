@@ -9314,6 +9314,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=62
+	BonusType=BONUS_CORN
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
@@ -9323,7 +9324,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=63
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=22,
 EndPlot
@@ -16974,6 +16974,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=83
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -18340,12 +18341,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=85
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=86
-	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

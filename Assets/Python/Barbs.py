@@ -56,13 +56,12 @@ def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 	
 		# If pillage a tribe with the Encomienda or Captives Civics, get Native Slaves
 		iPlayer = pUnit.getOwner()
-		if player(iPlayer).hasCivic(iCaptives1):
-			makeUnit(iPlayer, iNativeSlave1, pUnit, UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave1).getButton(), color=8, location=pUnit)
-		elif player(iPlayer).hasCivic(iEncomienda2):
-			makeUnit(iPlayer, iNativeSlave2, pUnit, UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave2).getButton(), color=8, location=pUnit)
-	
+		iSlave = getNativeSlaveType(iPlayer)
+		
+		if iSlave > -1:
+			makeUnit(iPlayer, iSlave, pUnit, UnitAITypes.UNITAI_WORKER)
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=pUnit)
+
 
 @handler("BeginGameTurn")
 def spawnBarbarians(iGameTurn):

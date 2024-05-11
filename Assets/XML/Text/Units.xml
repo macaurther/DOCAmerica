@@ -54,20 +54,20 @@
 		<Spanish>[COLOR_UNIT_TEXT]Artillery[COLOR_REVERT] cannot capture enemy cities or units, don't receive defensive bonuses, have a combat bonus when attacking cities, cause collateral damage, are immune to collateral damage from [COLOR_UNIT_TEXT]Siege Weapons[COLOR_REVERT], can bombard city defenses, and can bombard units in adjacent tiles.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Alloys[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Bloomery[COLOR_REVERT] technology, is cheaper, doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Alloys[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Bloomery[COLOR_REVERT] technology, is cheaper, doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Alloys[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Bloomery[COLOR_REVERT] technology, is cheaper, doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Alloys[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Bloomery[COLOR_REVERT] technology, is cheaper, doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Swordsman[COLOR_REVERT], requires the [COLOR_TECH_TEXT]Alloys[COLOR_REVERT] technology, doesn't require the [COLOR_TECH_TEXT]Bloomery[COLOR_REVERT] technology, is cheaper, doesn't require the [COLOR_HIGHLIGHT_TEXT]Iron[COLOR_REVERT] resource, is able to enter [COLOR_HIGHLIGHT_TEXT]Jungle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Rainforest[COLOR_REVERT] and begins with the [COLOR_HIGHLIGHT_TEXT]Woodsman I[COLOR_REVERT] promotion.</Spanish>
+		<Tag>TXT_KEY_UNIT_MACEMAN</Tag>
+		<English>Maceman</English>
+		<French>Maceman</French>
+		<German>Maceman</German>
+		<Italian>Maceman</Italian>
+		<Spanish>Maceman</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_AXEMAN_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Axemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</English>
-		<French>[COLOR_UNIT_TEXT]Axemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</French>
-		<German>[COLOR_UNIT_TEXT]Axemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</German>
-		<Italian>[COLOR_UNIT_TEXT]Axemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Axemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</Spanish>
+		<Tag>TXT_KEY_UNIT_MACEMAN_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Macemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</English>
+		<French>[COLOR_UNIT_TEXT]Macemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</French>
+		<German>[COLOR_UNIT_TEXT]Macemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</German>
+		<Italian>[COLOR_UNIT_TEXT]Macemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Macemen[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NUCLEAR_SUBMARINE</Tag>
@@ -2315,11 +2315,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA_STRATEGY</Tag>
-		<English>The Macana, the Purepechan replacement for the Axeman, is stronger.</English>
-		<French>The Macana, the Purepechan replacement for the Axeman, is stronger.</French>
-		<German>The Macana, the Purepechan replacement for the Axeman, is stronger.</German>
-		<Italian>The Macana, the Purepechan replacement for the Axeman, is stronger.</Italian>
-		<Spanish>The Macana, the Purepechan replacement for the Axeman, is stronger.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIST</Tag>
@@ -2379,11 +2379,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</English>
-		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</French>
-		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Axeman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</English>
+		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</French>
+		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_HELP</Tag>

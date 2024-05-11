@@ -231,12 +231,12 @@
 			<DefaultUnit>UNIT_INFANTRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_AXEMAN</Type>
-			<Description>TXT_KEY_UNIT_AXEMAN</Description>
+			<Type>UNITCLASS_MACEMAN</Type>
+			<Description>TXT_KEY_UNIT_MACEMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_AXEMAN</DefaultUnit>
+			<DefaultUnit>UNIT_MACEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_TERCIO</Type>

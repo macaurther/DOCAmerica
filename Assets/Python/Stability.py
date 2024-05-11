@@ -442,10 +442,6 @@ def getSeparatismModifier(iPlayer, city):
 	if iCulturePercent < 50: iModifier += 1
 	if iCulturePercent < 20: iModifier += 1
 	
-	# Slaves
-	for iSpecialistSlave in lSlaveSpecialists:
-		iModifier += city.getFreeSpecialistCount(iSpecialistSlave)
-	
 	# Stocks
 	if city.hasBuilding(unique_building(iPlayer, iStocks)):
 		iModifier -= 1
@@ -466,27 +462,37 @@ def getSeparatismModifier(iPlayer, city):
 	if iCiv == iSpain: 
 		iModifier -= city.getCultureLevel()
 	
-	# God King Civic
-	if iGodKing1 in civics: iModifier -= 1
-	
 	# cap
-	if iModifier < -1: iModifier = -1
+	if iModifier < 1: iModifier = 1
 	
 	return 100 + iModifier * 50
 
 def calculateSeparatism(city):
 	iPlayer = city.getOwner()
+	civics = Civics.player(iPlayer)
 
 	if city.isPlayerCore(iPlayer):
 		return 0
 	
 	iModifier = getSeparatismModifier(iPlayer, city)
-	iPopulation = city.getPopulation()
+	iSeparatism = city.getPopulation()
 	
 	if city.isOccupation():
-		iPopulation -= city.getPopulationLoss() * city.getOccupationTimer()
+		iSeparatism -= city.getPopulationLoss() * city.getOccupationTimer()
 	
-	return iModifier * iPopulation / 100
+	iSeparatism *= iModifier / 100
+	
+	# God King Civic
+	if iGodKing1 in civics and iSeparatism > 3: iSeparatism = 3
+	
+	return iSeparatism
+
+def calculateSlaveStability(city):
+	iSlaveryStability = 0
+	for iSpecialistSlave in lSlaveSpecialists:
+		iSlaveryStability -= city.getFreeSpecialistCount(iSpecialistSlave)
+	return iSlaveryStability
+
 
 def calculateStability(iPlayer):
 	pPlayer = player(iPlayer)
@@ -586,8 +592,6 @@ def calculateStability(iPlayer):
 	iSeparatismExcess = 100 * iSeparatism / iAdministration - 100
 	
 	if iSeparatismExcess > 200: iSeparatismExcess = 200
-	if iConfederacy1 in civics or iConfederacy3 in civics:
-		iSeparatismExcess = 0
 		
 	if iSeparatismExcess > 0:
 		iCorePeripheryStability -= int(25 * sigmoid(1.0 * iSeparatismExcess / 100))
@@ -685,7 +689,11 @@ def calculateStability(iPlayer):
 	
 	lParameters[iParameterHappiness] = iHappinessStability
 	
-	iDomesticStability += iHappinessStability
+	# Slaves
+	iSlaveryStability = cities.owner(iPlayer).sum(calculateSlaveStability)
+	lParameters[iParameterSlaves] = iSlaveryStability
+	
+	iDomesticStability += iHappinessStability + iSlaveryStability
 	
 	# Civics (combinations)
 	iCivicCombinationStability = getCivicStability(iPlayer)

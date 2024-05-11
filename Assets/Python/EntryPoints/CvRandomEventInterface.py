@@ -1900,7 +1900,7 @@ def canTriggerTheVandals(argsList):
 		return false
 
 	# Can we build the counter unit?		
-	iCounterUnitClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_AXEMAN')
+	iCounterUnitClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_MACEMAN')
 	iCounterUnit = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iCounterUnitClass)
 	if iCounterUnit == -1:
 		return false
@@ -2098,7 +2098,7 @@ def canTriggerThePhilistines(argsList):
 		return false
 
 	# Can we build the counter unit?		
-	iCounterUnitClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_AXEMAN')
+	iCounterUnitClass = CvUtil.findInfoTypeNum(gc.getUnitClassInfo, gc.getNumUnitClassInfos(), 'UNITCLASS_MACEMAN')
 	iCounterUnit = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iCounterUnitClass)
 	if iCounterUnit == -1:
 		return false
@@ -3641,67 +3641,3 @@ def canTriggerWedding(argsList):
 	iPlayer = kTriggeredData.ePlayer
 	
 	return gc.getPlayer(iPlayer).getCivics(iCivicsExecutive) not in [iDemocracy3]
-
-
-######## Calakmul Conflict I (FoB) ########
-
-def canTriggerCalakmulWarI(argsList):
-	kTriggeredData = argsList[0]
-	player = gc.getPlayer(kTriggeredData.ePlayer)
-	map = gc.getMap()
-	plot = map.plot(36, 60)
-	iMinorPlayer = slot(iIndependent2)
-
-	if gc.getGame().getGameTurn() == getTurnForYear(537) and player.getCivilizationType() == gc.getInfoTypeForString("CIVILIZATION_MAYA"):
-		if plot.getOwner() == iMinorPlayer:
-			return true
-	return false
-
-
-def doCalakmulWarI1(argsList):
-	kTriggeredData = argsList[1]
-	iPlayer = kTriggeredData.ePlayer
-	pPlayer = gc.getPlayer(iPlayer)
-
-	team(iPlayer).declareWar(player(iIndependent2).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
-
-def doCalakmulWarI2(argsList):
-	# barb.spawnPowhatanWarriorsI(0)
-	kTriggeredData = argsList[1]
-	iPlayer = kTriggeredData.ePlayer
-	iMinorPlayer = slot(iIndependent2)
-	iMayaId = player(iPlayer).getID();
-
-	map = gc.getMap()
-	plot = map.plot(36, 60)
-
-	pTikal = player(iPlayer).getCapitalCity();
-	pTikal.setCultureTimes100(iMinorPlayer, 1000, true)
-
-	map.plot(36, 59).setOwner(iMinorPlayer)
-	map.plot(36, 59).setCulture(iMayaId, 0, true)
-	map.plot(36, 59).setCulture(iMinorPlayer, 1000, true)
-	map.plot(37, 59).setOwner(iMinorPlayer)
-	map.plot(37, 59).setCulture(iMayaId, 0, true)
-	map.plot(37, 59).setCulture(iMinorPlayer, 1000, true)
-	map.plot(37, 58).setOwner(iMinorPlayer)
-	map.plot(37, 58).setCulture(iMayaId, 0, true)
-	map.plot(37, 58).setCulture(iMinorPlayer, 200, true)
-
-
-def getHelpCalakmulWarI1(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-
-	szHelp = localText.getText("TXT_KEY_EVENT_CALAKMUL_WAR_I_1_HELP", (1,))
-
-	return szHelp
-
-
-def getHelpCalakmulWarI2(argsList):
-	iEvent = argsList[0]
-	kTriggeredData = argsList[1]
-
-	szHelp = localText.getText("TXT_KEY_EVENT_CALAKMUL_WAR_I_2_HELP", (1,))
-
-	return szHelp

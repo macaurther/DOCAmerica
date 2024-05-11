@@ -883,7 +883,7 @@
 			<PrereqTech>TECH_HERBALISM</PrereqTech>
 			<ObsoleteTech>TECH_EDUCATION</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
-			<iCost>80</iCost>
+			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iAsset>2</iAsset>
@@ -933,7 +933,7 @@
 			<Strategy>TXT_KEY_BUILDING_MAYA_KUNA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAYA_KUNA</ArtDefineTag>
-			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
+			<PrereqTech>TECH_HERBALISM</PrereqTech>
 			<ObsoleteTech>TECH_EDUCATION</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
@@ -3990,67 +3990,6 @@
 				</BonusYieldChange>
 			</BonusYieldChanges>
 			<ConstructSound>AS2D_BUILD_FACTORY</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>10</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_SLAUGHTERHOUSE</BuildingClass>
-			<Type>BUILDING_ARGENTINE_REFRIGERATION_PLANT</Type>
-			<Description>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT</Description>
-			<Civilopedia>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_ARGENTINE_REFRIGERATION_PLANT</ArtDefineTag>
-			<PrereqTech>TECH_BIOLOGY</PrereqTech>
-			<iCost>120</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iAsset>2</iAsset>
-			<iPower>3</iPower>
-			<iFoodKept>20</iFoodKept>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<PowerYieldModifiers>
-				<iYield>10</iYield>
-			</PowerYieldModifiers>
-			<ConstructSound>AS2D_BUILD_FACTORY</ConstructSound>
-			<BonusYieldChanges>
-				<BonusYieldChange>
-					<BonusType>BONUS_COW</BonusType>
-					<YieldChanges>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</BonusYieldChange>
-				<BonusYieldChange>
-					<BonusType>BONUS_PIG</BonusType>
-					<YieldChanges>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</BonusYieldChange>
-				<BonusYieldChange>
-					<BonusType>BONUS_SHEEP</BonusType>
-					<YieldChanges>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</BonusYieldChange>
-				<BonusYieldChange>
-					<BonusType>BONUS_DEER</BonusType>
-					<YieldChanges>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</BonusYieldChange>
-			</BonusYieldChanges>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -9365,7 +9304,7 @@
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
 			<ObsoleteTech>TECH_CHARTER</ObsoleteTech>
-			<CivicOption>CIVICOPTION_ECONOMY</CivicOption>
+			<CivicOption>CIVICOPTION_SOCIETY</CivicOption>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

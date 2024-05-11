@@ -115,26 +115,28 @@ def extraCultureOnFound(city):
 def captureSlaves(winningUnit, losingUnit):
 	if plot(winningUnit).isWater() and freeCargo(winningUnit, winningUnit) <= 0:
 		return
-
-	# Mesoamerica RP
-	if civ(winningUnit) in (iAztecs, iMaya, iTeotihuacan, iZapotec, iPurepecha):
-		if winningUnit.getUnitType() == iJaguar:
-			captureUnit(losingUnit, winningUnit, iNativeSlave1, 100)
-		else:
-			captureUnit(losingUnit, winningUnit, iNativeSlave1, 50)
+	
+	iSlave = getNativeSlaveType(winningUnit.getOwner())
+	
+	# Jaguar Ability
+	if winningUnit.getUnitType() == iJaguar:
+		captureUnit(losingUnit, winningUnit, iNativeSlaveMeso, 100)
 		return
 	
-	if civ(losingUnit) == iNative and winningUnit.getUnitType() == iBandeirante and player(winningUnit).canUseSlaves():
+	# Captives Civic
+	if player(winningUnit.getOwner()).getCivics(iCivicsLabor) == iCaptives1:
+		captureUnit(losingUnit, winningUnit, iSlave, 50)
+		return
+	
+	# Bandeirante Ability
+	if civ(losingUnit) == iNative and winningUnit.getUnitType() == iBandeirante:
 		captureUnit(losingUnit, winningUnit, iNativeSlave2, 100)
 		return
 	
-	if players.major().alive().none(lambda p: team(p).isHasTech(iOldWorldTactics)):
+	# Encomienda Civic
+	if civ(losingUnit) == iNative and player(winningUnit.getOwner()).getCivics(iCivicsLabor) == iEncomienda2:
+		captureUnit(losingUnit, winningUnit, iSlave, 50)
 		return
-		
-	if civ(losingUnit) == iNative:
-		if civ(winningUnit) not in lBioNewWorld or any(data.dFirstContactConquerors.values()):
-			if player(winningUnit).isSlavery() or player(winningUnit).isColonialSlavery():
-				captureUnit(losingUnit, winningUnit, iNativeSlave2, 50)
 
 @handler("combatResult")
 def captureCannon(winningUnit, losingUnit):

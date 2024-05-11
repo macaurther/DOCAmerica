@@ -351,7 +351,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
 					<UnitType>UNIT_AZTEC_JAGUAR</UnitType>
 				</Unit>
 			</Units>
@@ -1474,7 +1474,7 @@
 					<UnitType>UNIT_INCAN_SLINGER</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
 					<UnitType>UNIT_INCAN_AUCAC</UnitType>
 				</Unit>
 			</Units>
@@ -2930,7 +2930,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_AXEMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
 					<UnitType>UNIT_PUREPECHA_MACANA</UnitType>
 				</Unit>
 			</Units>

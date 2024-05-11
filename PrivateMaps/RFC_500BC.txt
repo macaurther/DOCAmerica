@@ -61,9 +61,8 @@ BeginPlot
 		CityPopulation=2
 		YearFounded=-1000
 		BuildingType=BUILDING_PALACE
-		BuildingType=BUILDING_GRANARY
 		BeginCulture
-			Civilization=CIVILIZATION_MAYA, Culture=5
+			Civilization=CIVILIZATION_MAYA
 		EndCulture
 	EndCity
 EndPlot

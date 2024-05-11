@@ -1101,19 +1101,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_STRATEGY</Tag>
-		<English>Capture slaves from city conquest and tribe pillaging</English>
-		<French>Capture slaves from city conquest and tribe pillaging</French>
-		<German>Capture slaves from city conquest and tribe pillaging</German>
-		<Italian>Capture slaves from city conquest and tribe pillaging</Italian>
-		<Spanish>Capture slaves from city conquest and tribe pillaging</Spanish>
+		<English>Capture Native slaves from city conquest, tribe pillaging, and combat</English>
+		<French>Capture Native slaves from city conquest, tribe pillaging, and combat</French>
+		<German>Capture Native slaves from city conquest, tribe pillaging, and combat</German>
+		<Italian>Capture Native slaves from city conquest, tribe pillaging, and combat</Italian>
+		<Spanish>Capture Native slaves from city conquest, tribe pillaging, and combat</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Tag>
-		<English>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</English>
-		<French>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</French>
-		<German>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</German>
-		<Italian>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Italian>
-		<Spanish>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Spanish>
+		<English>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</English>
+		<French>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</French>
+		<German>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</German>
+		<Italian>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Italian>
+		<Spanish>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTIVES</Tag>
@@ -1125,19 +1125,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTIVES_STRATEGY</Tag>
-		<English>Capture slaves from city conquest and tribe pillaging</English>
-		<French>Capture slaves from city conquest and tribe pillaging</French>
-		<German>Capture slaves from city conquest and tribe pillaging</German>
-		<Italian>Capture slaves from city conquest and tribe pillaging</Italian>
-		<Spanish>Capture slaves from city conquest and tribe pillaging</Spanish>
+		<English>Capture slaves from city conquest, tribe pillaging, and combat</English>
+		<French>Capture slaves from city conquest, tribe pillaging, and combat</French>
+		<German>Capture slaves from city conquest, tribe pillaging, and combat</German>
+		<Italian>Capture slaves from city conquest, tribe pillaging, and combat</Italian>
+		<Spanish>Capture slaves from city conquest, tribe pillaging, and combat</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CAPTIVES_HELP</Tag>
-		<English>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</English>
-		<French>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</French>
-		<German>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</German>
-		<Italian>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Italian>
-		<Spanish>[ICON_BULLET]Capture Native Slaves from Native City Conquest and Tribe Pillaging</Spanish>
+		<English>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</English>
+		<French>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</French>
+		<German>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</German>
+		<Italian>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Italian>
+		<Spanish>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY</Tag>
@@ -1221,11 +1221,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOD_KING_HELP</Tag>
-		<English>[ICON_BULLET]Reduced Instability from Cities</English>
-		<French>[ICON_BULLET]Reduced Instability from Cities</French>
-		<German>[ICON_BULLET]Reduced Instability from Cities</German>
-		<Italian>[ICON_BULLET]Reduced Instability from Cities</Italian>
-		<Spanish>[ICON_BULLET]Reduced Instability from Cities</Spanish>
+		<English>[ICON_BULLET]Caps each city's Separatism at 3</English>
+		<French>[ICON_BULLET]Caps each city's Separatism at 3</French>
+		<German>[ICON_BULLET]Caps each city's Separatism at 3</German>
+		<Italian>[ICON_BULLET]Caps each city's Separatism at 3</Italian>
+		<Spanish>[ICON_BULLET]Caps each city's Separatism at 3</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOD_KING_STRATEGY</Tag>
