@@ -442,10 +442,6 @@ def getSeparatismModifier(iPlayer, city):
 	if iCulturePercent < 50: iModifier += 1
 	if iCulturePercent < 20: iModifier += 1
 	
-	# Stocks
-	if city.hasBuilding(unique_building(iPlayer, iStocks)):
-		iModifier -= 1
-	
 	# Courthouse
 	if city.hasBuilding(unique_building(iPlayer, iCourthouse)):
 		# English Assembly UB
@@ -457,10 +453,6 @@ def getSeparatismModifier(iPlayer, city):
 	# Jail
 	if city.hasBuilding(unique_building(iPlayer, iJail)):
 		iModifier -= 1
-	
-	# Spanish UP
-	if iCiv == iSpain: 
-		iModifier -= city.getCultureLevel()
 	
 	# cap
 	if iModifier < 1: iModifier = 1
@@ -488,10 +480,21 @@ def calculateSeparatism(city):
 	return iSeparatism
 
 def calculateSlaveStability(city):
+	iPlayer = city.getOwner()
+	
 	iSlaveryStability = 0
 	for iSpecialistSlave in lSlaveSpecialists:
 		iSlaveryStability -= city.getFreeSpecialistCount(iSpecialistSlave)
-	return iSlaveryStability
+	
+	iModifier = 100
+	# Spanish UP
+	if civ(iPlayer) == iSpain: iModifier -= 25
+	# Stocks
+	if city.hasBuilding(unique_building(iPlayer, iStocks)): iModifier -= 25
+	# Estate
+	if city.hasBuilding(unique_building(iPlayer, iEstate)): iModifier -= 25
+	
+	return int(iSlaveryStability * iModifier / 100)
 
 
 def calculateStability(iPlayer):

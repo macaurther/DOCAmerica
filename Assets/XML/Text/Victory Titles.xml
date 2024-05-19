@@ -477,6 +477,14 @@
 	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_MUI1</Tag>
+		<English>El Dorado</English>
+		<French>El Dorado</French>
+		<German>El Dorado</German>
+		<Italian>El Dorado</Italian>
+		<Spanish>El Dorado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_MUI2</Tag>
 		<English>The Altiplano Cundiboyacense</English>
 		<French>The Altiplano Cundiboyacense</French>
 		<German>The Altiplano Cundiboyacense</German>
@@ -484,21 +492,14 @@
 		<Spanish>The Altiplano Cundiboyacense</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_MUI2</Tag>
+		<Tag>TXT_KEY_VICTORY_TITLE_MUI3</Tag>
 		<English>Tejuelo Gold Coins</English>
 		<French>Tejuelo Gold Coins</French>
 		<German>Tejuelo Gold Coins</German>
 		<Italian>Tejuelo Gold Coins</Italian>
 		<Spanish>Tejuelo Gold Coins</Spanish>
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_MUI3</Tag>
-		<English>El Dorado</English>
-		<French>El Dorado</French>
-		<German>El Dorado</German>
-		<Italian>El Dorado</Italian>
-		<Spanish>El Dorado</Spanish>
-	</TEXT>
+	
 	
 	
 	<TEXT>

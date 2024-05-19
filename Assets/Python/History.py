@@ -14,7 +14,7 @@ dCapitalInfrastructure = CivDict({
 
 # Colonists - Europeans spawn at sea
 dColonistSpawns = CivDict({
-iNorse :		[dBirth[iNorse], tColonistReykjavik, [iColonistSettle, iColonistSupport]],
+iNorse :		[dBirth[iNorse], tColonistReykjavik, [iColonistSettle]],
 iSpain : 		[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
 iPortugal : 	[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSettle, iColonistExplore]],
 iEngland : 		[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 

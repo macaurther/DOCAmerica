@@ -750,7 +750,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_ARGENTINA_CONFEDERATION"
 	
 	elif iCiv == iMexico:
-		if bEmpire or iDespotism in civic:
+		if bEmpire or iDespotism1 in civic:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iBrazil:

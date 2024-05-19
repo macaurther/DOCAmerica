@@ -1838,8 +1838,8 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		{
 			if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && !(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
 			{
-				// MacAurther: Wide River Terrain: Can move through corners
-				if (!(pFromPlot->isWideRiver()) && !(pToPlot->isWideRiver()))
+				// MacAurther: Wide River and Fjord Terrain: Can move through corners
+				if (!(pFromPlot->isCornerNavigable()) && !(pToPlot->isCornerNavigable()))
 				{
 					return FALSE;
 				}

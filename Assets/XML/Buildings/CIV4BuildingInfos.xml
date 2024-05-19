@@ -589,7 +589,7 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_STONEWORKS</BuildingClass>
+			<BuildingClass>BUILDINGCLASS_WEAVER</BuildingClass>
 			<Type>BUILDING_MUISCA_GOLDSMITH</Type>
 			<Description>TXT_KEY_BUILDING_MUISCA_GOLDSMITH</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MUISCA_GOLDSMITH_PEDIA</Civilopedia>
@@ -684,8 +684,8 @@
 					<BonusType>BONUS_MARBLE</BonusType>
 					<YieldChanges>
 						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
+						<iYield>1</iYield>
 					</YieldChanges>
 				</BonusYieldChange>
 				<BonusYieldChange>
@@ -698,8 +698,8 @@
 					<BonusType>BONUS_JADE</BonusType>
 					<YieldChanges>
 						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
 					</YieldChanges>
 				</BonusYieldChange>
 				<BonusYieldChange>
@@ -2733,6 +2733,7 @@
 			<Description>TXT_KEY_BUILDING_ESTATE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_ESTATE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ESTATE_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_ESTATE_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ESTATE</ArtDefineTag>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
@@ -2788,6 +2789,7 @@
 			<Description>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_ESTATE_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BRAZILIAN_FAZENDA</ArtDefineTag>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
@@ -2897,6 +2899,7 @@
 			<Description>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_ESTATE_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COLOMBIAN_HACIENDA</ArtDefineTag>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
@@ -3173,7 +3176,6 @@
 			<Description>TXT_KEY_BUILDING_COURTHOUSE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COURTHOUSE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_COURTHOUSE_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COURTHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>
@@ -3278,7 +3280,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NORSE_THINGVELLIR</ArtDefineTag>
 			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
-			<iCost>100</iCost>
+			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>50</iConquestProb>
@@ -3294,6 +3296,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
+				<iCommerce>2</iCommerce>
 				<iCommerce>2</iCommerce>
 			</CommerceChanges>
 			<SpecialistCounts>
@@ -4028,7 +4031,6 @@
 			<Description>TXT_KEY_BUILDING_JAIL</Description>
 			<Civilopedia>TXT_KEY_BUILDING_JAIL_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_JAIL_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_JAIL_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_JAIL</ArtDefineTag>
 			<PrereqTech>TECH_IMPERIALISM</PrereqTech>

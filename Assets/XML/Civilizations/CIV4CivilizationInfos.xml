@@ -1588,6 +1588,10 @@
 					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
 					<UnitType>UNIT_INUIT_DOG_SLED</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_CANOE</UnitClassType>
+					<UnitType>UNIT_INUIT_KAYAK</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2161,7 +2165,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_STONEWORKS</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_WEAVER</BuildingClassType>
 					<BuildingType>BUILDING_MUISCA_GOLDSMITH</BuildingType>
 				</Building>
 				<Building>

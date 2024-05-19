@@ -165,9 +165,9 @@ dGoals = {
 		UnitCount(iHorseArcher, 1, by=1680),
 	),
 	iMuisca: (
-		AveragePopulation(10, at=1500),
-		GoldAmount(2000, by=1540),
-		ControlledResourceCount(iGold, 3, at=1600),
+		ControlledResourceCount(iGold, 3, at=1150),
+		AveragePopulation(10, at=1300),
+		GoldAmount(2000, by=1450),
 	),
 	iNorse: (
 		FirstSettle(plots.rectangle(tGreenland).named(GREENLAND), by=1000),

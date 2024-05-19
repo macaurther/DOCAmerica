@@ -1687,8 +1687,8 @@ bool CvPlot::isWithinTeamCityRadius(TeamTypes eTeam, PlayerTypes eIgnorePlayer) 
 
 bool CvPlot::isLake() const
 {
-	// MacAurther: Wide Rivers are not Lakes, don't increase yield
-	if (getTerrainType() == TERRAIN_WIDE_RIVER)
+	// MacAurther: Wide Rivers and Fjords are not Lakes, don't increase yield
+	if (getTerrainType() == TERRAIN_WIDE_RIVER || getTerrainType() == TERRAIN_FJORD)
 	{
 		return false;
 	}
@@ -1955,8 +1955,8 @@ bool CvPlot::isRiverConnection(DirectionTypes eDirection) const
 		return false;
 	}
 
-	// MacAurther: Just assume if you're a wide river, you're connected
-	if (isWideRiver())
+	// MacAurther: Just assume if you're a wide river or fjord, you're connected
+	if (isCornerNavigable())
 	{
 		return true;
 	}
@@ -2589,7 +2589,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	// Leoreth: different fishing boats for different sea levels
 	if (GC.getImprovementInfo(eImprovement).isWater())
 	{
-		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FISHING_BOATS") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_COAST") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_ARCTIC_COAST") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_WIDE_RIVER")) return false;
+		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FISHING_BOATS") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_COAST") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_ARCTIC_COAST") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_WIDE_RIVER")&& getTerrainType() != GC.getInfoTypeForString("TERRAIN_FJORD")) return false;
 		if (eImprovement == GC.getInfoTypeForString("IMPROVEMENT_OCEAN_FISHERY") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_OCEAN")) return false;
 	}
 
@@ -6701,8 +6701,8 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		}
 	}
 
-	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Coast and Arctic Coast
-	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && (getTerrainType() == TERRAIN_COAST || getTerrainType() == TERRAIN_ARCTIC_COAST))
+	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Water Tiles
+	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == NORSE && GC.getTerrainInfo(getTerrainType()).isWater())
 	{
 		if(eYield == YIELD_FOOD)
 		{
@@ -7063,15 +7063,6 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 			if (eYield == YIELD_PRODUCTION && isHills())
 			{
 				iYield += 1;
-			}
-		}
-
-		// MacAurther: Spain UP: +1 Gold per Culture Level
-		if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == SPAIN)
-		{
-			if (eYield == YIELD_COMMERCE)
-			{
-				iYield += pCity->getCultureLevel() - 1;
 			}
 		}
 
@@ -11768,9 +11759,9 @@ void CvPlot::improveTile()
 	}
 }
 
-bool CvPlot::isWideRiver() const
+bool CvPlot::isCornerNavigable() const
 {
-	return getTerrainType() == TERRAIN_WIDE_RIVER;
+	return getTerrainType() == TERRAIN_WIDE_RIVER || getTerrainType() == TERRAIN_FJORD;
 }
 
 // MacAurther: Forts

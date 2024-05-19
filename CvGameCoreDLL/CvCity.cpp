@@ -2554,10 +2554,11 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 		//   the tile does not contain a feature other than Flood Plains or Canyon
 		if (pNewPlot->getFeatureType() != NO_FEATURE && pNewPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pNewPlot->getFeatureType() != FEATURE_CANYON) return false;
 		//   the terrain is suitable for founding
-		if (!GC.getTerrainInfo(pNewPlot->getTerrainType()).isFound())
-		{
-			if ((GC.getTerrainInfo(pNewPlot->getTerrainType()).isFoundCoast() && !pNewPlot->isCoastalLand()) && (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFoundFreshWater() && !pNewPlot->isFreshWater())) return false;
-		}
+		bool bFound = false;
+		if (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFound()) bFound = true;
+		else if (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFoundCoast() && pNewPlot->isCoastalLand()) bFound = true;
+		else if (GC.getTerrainInfo(pNewPlot->getTerrainType()).isFoundFreshWater() && pNewPlot->isFreshWater()) bFound = true;
+		if (!bFound) return false;
 		//   the tile is not adjacent to another city
 		for (int iX = -1; iX < 2; iX++)
 		{
@@ -3341,13 +3342,13 @@ int CvCity::getProductionNeeded(ProjectTypes eProject) const
 {
 	int iProductionNeeded = GET_PLAYER(getOwnerINLINE()).getProductionNeeded(eProject);
 
-	// MacAurther: Migration project scales based on number of buildings in city (N + 1)^2
+	// MacAurther: Migration project scales based on population + number of buildings in city (B + P)^2
 	if (eProject >= PROJECT_MIGRATE_N && eProject <= PROJECT_MIGRATE_NW)
 	{
-		int iNumBuildings = getNumBuildings();
-		if (hasBuilding((BuildingTypes)BUILDING_TIPI)) iNumBuildings -= 3;	// Tipi ability
-		if (iNumBuildings < 0) iNumBuildings = 0;							// Make sure to still be positive production cost
-		iProductionNeeded *= (1 + iNumBuildings) * (1 + iNumBuildings);
+		int iBaseCost = getNumBuildings() + getPopulation();
+		if (hasBuilding((BuildingTypes)BUILDING_TIPI)) iBaseCost -= 3;	// Tipi ability
+		if (iBaseCost < 1) iBaseCost = 1;							// Make sure to still be positive production cost
+		iProductionNeeded *= iBaseCost * iBaseCost;
 	}
 
 	return iProductionNeeded;

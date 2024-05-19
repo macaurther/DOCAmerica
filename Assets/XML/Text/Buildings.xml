@@ -154,6 +154,14 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Coal Plants[COLOR_REVERT] provide dirty power with access to [COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ESTATE_HELP</Tag>
+		<English>[ICON_BULLET]-25% Instability from Slaves</English>
+		<French>[ICON_BULLET]-25% Instability from Slaves</French>
+		<German>[ICON_BULLET]-25% Instability from Slaves</German>
+		<Italian>[ICON_BULLET]-25% Instability from Slaves</Italian>
+		<Spanish>[ICON_BULLET]-25% Instability from Slaves</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA</Tag>
 		<English>Hacienda</English>
 		<French>
@@ -188,14 +196,6 @@
 		<German>[COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] lower city maintenance costs, provide you with a bonus to espionage and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist. They also reduce a city's contribution to instability. [COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] world wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] lower city maintenance costs, provide you with a bonus to espionage and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist. They also reduce a city's contribution to instability. [COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] world wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] lower city maintenance costs, provide you with a bonus to espionage and allow you to hire one [COLOR_HIGHLIGHT_TEXT]Statesman[COLOR_REVERT] specialist. They also reduce a city's contribution to instability. [COLOR_BUILDING_TEXT]Courthouses[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] world wonder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_COURTHOUSE_HELP</Tag>
-		<English>[ICON_BULLET]-1 Separatism Modifier</English>
-		<French>[ICON_BULLET]-1 Separatism Modifier</French>
-		<German>[ICON_BULLET]-1 Separatism Modifier</German>
-		<Italian>[ICON_BULLET]-1 Separatism Modifier</Italian>
-		<Spanish>[ICON_BULLET]-1 Separatism Modifier</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CUSTOMS_HOUSE</Tag>
@@ -324,14 +324,6 @@
 		<German>[COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] lower city maintenance costs, increase espionage, and reduce a city's contribution to instability.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] lower city maintenance costs, increase espionage, and reduce a city's contribution to instability.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Jails[COLOR_REVERT] lower city maintenance costs, increase espionage, and reduce a city's contribution to instability.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_JAIL_HELP</Tag>
-		<English>[ICON_BULLET]-1 Separatism Modifier</English>
-		<French>[ICON_BULLET]-1 Separatism Modifier</French>
-		<German>[ICON_BULLET]-1 Separatism Modifier</German>
-		<Italian>[ICON_BULLET]-1 Separatism Modifier</Italian>
-		<Spanish>[ICON_BULLET]-1 Separatism Modifier</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HYDRO_PLANT_STRATEGY</Tag>
@@ -2271,11 +2263,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STOCKS_HELP</Tag>
-		<English>[ICON_BULLET]-1 Separatism Modifier</English>
-		<French>[ICON_BULLET]-1 Separatism Modifier</French>
-		<German>[ICON_BULLET]-1 Separatism Modifier</German>
-		<Italian>[ICON_BULLET]-1 Separatism Modifier</Italian>
-		<Spanish>[ICON_BULLET]-1 Separatism Modifier</Spanish>
+		<English>[ICON_BULLET]-25% Instability from Slaves</English>
+		<French>[ICON_BULLET]-25% Instability from Slaves</French>
+		<German>[ICON_BULLET]-25% Instability from Slaves</German>
+		<Italian>[ICON_BULLET]-25% Instability from Slaves</Italian>
+		<Spanish>[ICON_BULLET]-25% Instability from Slaves</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STONEWORKS</Tag>
@@ -2895,11 +2887,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SIOUX_TIPI_HELP</Tag>
-		<English>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</English>
-		<French>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</French>
-		<German>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</German>
-		<Italian>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</Italian>
-		<Spanish>[ICON_BULLET]Up to 3 buildings do not count towards Migration cost</Spanish>
+		<English>[ICON_BULLET]Reduces Migration cost</English>
+		<French>[ICON_BULLET]Reduces Migration cost</French>
+		<German>[ICON_BULLET]Reduces Migration cost</German>
+		<Italian>[ICON_BULLET]Reduces Migration cost</Italian>
+		<Spanish>[ICON_BULLET]Reduces Migration cost</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SIOUX_TIPI_STRATEGY</Tag>

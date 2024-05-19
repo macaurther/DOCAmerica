@@ -480,11 +480,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_NOR</Tag>
-		<English>+1 [ICON_FOOD] on Coast and Arctic Coast</English>
-		<French>+1 [ICON_FOOD] on Coast and Arctic Coast</French>
-		<German>+1 [ICON_FOOD] on Coast and Arctic Coast</German>
-		<Italian>+1 [ICON_FOOD] on Coast and Arctic Coast</Italian>
-		<Spanish>+1 [ICON_FOOD] on Coast and Arctic Coast</Spanish>
+		<English>+1 [ICON_FOOD] on water tiles</English>
+		<French>+1 [ICON_FOOD] on water tiles</French>
+		<German>+1 [ICON_FOOD] on water tiles</German>
+		<Italian>+1 [ICON_FOOD] on water tiles</Italian>
+		<Spanish>+1 [ICON_FOOD] on water tiles</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PER_TITLE</Tag>
@@ -560,11 +560,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SIO</Tag>
-		<English>Recieve [ICON_CULTURE] in cities after migration</English>
-		<French>Recieve [ICON_CULTURE] in cities after migration</French>
-		<German>Recieve [ICON_CULTURE] in cities after migration</German>
-		<Italian>Recieve [ICON_CULTURE] in cities after migration</Italian>
-		<Spanish>Recieve [ICON_CULTURE] in cities after migration</Spanish>
+		<English>Recieve [ICON_CULTURE] in after nomadic city migration</English>
+		<French>Recieve [ICON_CULTURE] in after nomadic city migration</French>
+		<German>Recieve [ICON_CULTURE] in after nomadic city migration</German>
+		<Italian>Recieve [ICON_CULTURE] in after nomadic city migration</Italian>
+		<Spanish>Recieve [ICON_CULTURE] in after nomadic city migration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA_TITLE</Tag>
@@ -576,11 +576,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA</Tag>
-		<English>+1 [ICON_COMMERCE] and -1 Local Instability per Culture Level in each City</English>
-		<French>+1 [ICON_COMMERCE] and -1 Local Instability per Culture Level in each City</French>
-		<German>+1 [ICON_COMMERCE] and -1 Local Instability per Culture Level in each City</German>
-		<Italian>+1 [ICON_COMMERCE] and -1 Local Instability per Culture Level in each City</Italian>
-		<Spanish>+1 [ICON_COMMERCE] and -1 Local Instability per Culture Level in each City</Spanish>
+		<English>+1 [ICON_COMMERCE] from Slave Miner specialists and -25% Instability from Slave specialists</English>
+		<French>+1 [ICON_COMMERCE] from Slave Miner specialists and -25% Instability from Slave specialists</French>
+		<German>+1 [ICON_COMMERCE] from Slave Miner specialists and -25% Instability from Slave specialists</German>
+		<Italian>+1 [ICON_COMMERCE] from Slave Miner specialists and -25% Instability from Slave specialists</Italian>
+		<Spanish>+1 [ICON_COMMERCE] from Slave Miner specialists and -25% Instability from Slave specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_TEO_TITLE</Tag>

@@ -400,15 +400,15 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
+	x=45,y=94
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=46,y=22
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=47,y=94
-	ImprovementType=IMPROVEMENT_TRIBE
-EndPlot
-BeginPlot
-	x=48,y=97
+	x=47,y=97
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
@@ -424,11 +424,11 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=49,y=89
+	x=50,y=25
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=50,y=25
+	x=50,y=89
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot

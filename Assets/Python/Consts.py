@@ -454,7 +454,7 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 150
+iNumUnits = 151
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iSpy, 			iSisqeno,       
@@ -466,11 +466,12 @@ iPikeman,		iArcher,		iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,
 iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iHorseArcher,	iSwiftArrow,	iHussar,		iMountedBrave,	
 iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		
 iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			iWorkboat,		iCanoe,			iLongship,		
-iWaaKaulua,		iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iTransport,		iCarrier,		
-iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    iTorpedoBoat,	iSubmarine,		iBarque,		iShipOfTheLine,	
-iManOfWar,		iCruiser,		iBattleship,	iBiplane,		iFighter,		iBomber,		iNuclearBomber,	iGreatProphet, 	iGreatArtist, 	iGreatScientist,
-iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,
-iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,	iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker) = range(iNumUnits)
+iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iTransport,		
+iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    iTorpedoBoat,	iSubmarine,		iBarque,		
+iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	iBiplane,		iFighter,		iBomber,		iNuclearBomber,	iGreatProphet, 	iGreatArtist, 	
+iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,
+iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	
+iMigrantWorker) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -679,10 +680,11 @@ iNumFeatures = 14
 (iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
 iFallout, 		iTaiga, 		iPalmForest,	iCanyon) = range(iNumFeatures)
 
-iNumTerrains = 20
+iNumTerrains = 21
 #				2				3				4				5				6				7				8				9				10
 (iGrass, 		iPlains, 		iDesert, 		iTundra, 		iSnow, 			iCoast, 		iOcean, 		iTerrainPeak, 	iTerrainHills, 	iMarsh,
-iLagoon,		iArcticCoast,	iSemidesert,	iPrairie,		iMoorland,		iSaltflat,		iSaltlake,		iAtoll,			iSavanna,		iWideRiver,) = range(iNumTerrains)
+iLagoon,		iArcticCoast,	iSemidesert,	iPrairie,		iMoorland,		iSaltflat,		iSaltlake,		iAtoll,			iSavanna,		iWideRiver,
+iFjord) = range(iNumTerrains)
 
 
 #Plague

@@ -4848,6 +4848,13 @@ int CvPlayer::getNumAvailableBonuses(BonusTypes eBonus) const
 
 	pPlotGroup = ((getCapitalCity() != NULL) ? getCapitalCity()->plot()->getOwnerPlotGroup() : NULL);
 
+	// MacAurther: Capital update: When there is no capital, use first city
+	if (pPlotGroup == NULL)
+	{
+		int iLoop;
+		pPlotGroup = ((firstCity(&iLoop) != NULL) ? firstCity(&iLoop)->plot()->getOwnerPlotGroup() : NULL);
+	}
+
 	if (pPlotGroup != NULL)
 	{
 		return pPlotGroup->getNumBonuses(eBonus);
@@ -13867,6 +13874,11 @@ int CvPlayer::getSpecialistExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex
 
 		// for all other specialists extra food is limited to +1
 		return std::min(1, m_ppaaiSpecialistExtraYield[eIndex1][eIndex2]);
+	}
+	// MacAurther: Spanish UP: +1 Gold from Slave Miners
+	if (eIndex1 == SPECIALIST_SLAVE_MINER && eIndex2 == YIELD_COMMERCE && getCivilizationType() == SPAIN)
+	{
+		return m_ppaaiSpecialistExtraYield[eIndex1][eIndex2] + 1;
 	}
 
 	return m_ppaaiSpecialistExtraYield[eIndex1][eIndex2];

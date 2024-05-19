@@ -573,7 +573,7 @@ public:
 
 	// MacAurther
 	void improveTile();
-	bool isWideRiver() const;
+	bool isCornerNavigable() const;
 
 	// MacAurther: Forts
 	PlayerTypes getFortOwner() const;
