@@ -6,6 +6,8 @@ from Events import handler
 from Core import *
 from Locations import *
 
+from SettlerMaps import dSettlerMaps
+
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
@@ -175,9 +177,8 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 	# not on landmasses without cities, (MacAurther): except if Force Spawn
 	if not bForceSpawn and not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
 	
-	
+	# MacAurther: Extra check for Tribe spawning
 	if bTribeSpawn:
-		# MacAurther: Extra check for Tribe spawning
 		if (plot.isImpassable()) or (plot.getImprovementType() != ImprovementTypes.NO_IMPROVEMENT) or \
 			(plot.getTerrainType() in [iSnow, iSaltflat, iLagoon, iAtoll]) or (plot.getBonusType(-1) != BonusTypes.NO_BONUS):
 			return False
@@ -194,6 +195,13 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 				pCheckPlot = gc.getMap().plot(iCheckX, iCheckY)
 				if pCheckPlot.getImprovementType() in [iTribe, iContactedTribe]:
 					return False
+		
+		# Make sure to not cover up an AI's desired spot
+		iX = plot.getX()
+		iY = plot.getY()
+		for iCiv in dSettlerMaps:
+			if dSettlerMaps[iCiv][iY][iX] > 90:
+				return False
 	
 	return True
 

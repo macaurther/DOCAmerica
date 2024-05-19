@@ -170,7 +170,7 @@ dGoals = {
 		GoldAmount(2000, by=1450),
 	),
 	iNorse: (
-		FirstSettle(plots.rectangle(tGreenland).named(GREENLAND), by=1000),
+		FirstSettle(plots.region(rGreenland).named(GREENLAND), by=1000),
 		FirstSettle(plots.rectangle(tVinland).named(VINLAND), by=1100),
 		Control(plots.rectangle(tDelaware).named(DELAWARE), at=1640),
 	),
@@ -184,7 +184,7 @@ dGoals = {
 			(plots.rectangle(tKivalliq).named(KIVALLIQ), 1),										# Western Hudson Bay
 			(plots.rectangle(tQikiqtaaluk).without(lQikiqtaalukExceptions).named(QIKIQTAALUK), 1),	# Baffin Island and islands
 			(plots.rectangle(tNunavik).named(NUNAVIK), 1),											# Northern Quebec/ Eastern Hudson Bay
-			(plots.rectangle(tKalaallit).named(KALAALLIT), 1),										# Greenland
+			(plots.region(rGreenland).named(KALAALLIT), 1),										# Greenland
 			by=1500
 		),
 		ResourceCount(resources(), 25, at=1600),

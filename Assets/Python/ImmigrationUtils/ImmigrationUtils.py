@@ -108,6 +108,9 @@ g_iAIHireCostPercent = 100 - (gc.getGame().getHandicapType())*25 #Rhye
 # Default value is 100
 g_iAIMaintenanceCostPercent = 100 - (gc.getGame().getHandicapType())*25 #Rhye
 
+# MacAurther: Special desire codes
+g_iAIMaxDesireExactlyOne = -909
+
 
 class ImmigrationUtils:
 
@@ -642,8 +645,8 @@ class ImmigrationUtils:
 
 		print(mercenary.getName() + " hired by: " + gc.getPlayer(mercenary.iOwner).getName()) #Rhye
 	
-		if g_bDebug:
-			self.printMercenaryDataToLog(mercenary)	
+		#if g_bDebug:
+		#	self.printMercenaryDataToLog(mercenary)	
 
 	# Gets the max era from the players in the game.
 	def getMaxGameEra(self):
@@ -793,7 +796,13 @@ class ImmigrationUtils:
 			if g_bDebug:
 				CvUtil.pyPrint("Player: " + str(iPlayer) + " desires " + str(iDesire) + " " + immigrantName)
 			
-			if iDesire > iHighestDesire:
+			if iDesire == g_iAIMaxDesireExactlyOne:
+				bestImmigrant = immigrant
+				iHighestDesireCategory = iImmigrantCategory
+				if g_bDebug:
+					CvUtil.pyPrint("Max AI desire immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + immigrant.getName())
+				break
+			elif iDesire > iHighestDesire:
 				iHighestDesire = iDesire 
 				bestImmigrant = immigrant
 				iHighestDesireCategory = iImmigrantCategory
@@ -803,9 +812,13 @@ class ImmigrationUtils:
 		if(g_bDebug and bestImmigrant != None):
 			CvUtil.pyPrint("Best immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + bestImmigrant.getName())
 		
-		# Decrement recommended category so we can just reuse the modified lCategoryDesire list instead of having to recalculate
 		if bestImmigrant:
-			lCategoryDesire[iHighestDesireCategory] -= 1
+			# If AI wanted exactly one, set desire now to 0
+			if lCategoryDesire[iHighestDesireCategory] == g_iAIMaxDesireExactlyOne:
+				lCategoryDesire[iHighestDesireCategory] = 0
+			# Otherwise, decrement recommended category so we can just reuse the modified lCategoryDesire list instead of having to recalculate
+			else:
+				lCategoryDesire[iHighestDesireCategory] -= 1
 		
 		return bestImmigrant, lCategoryDesire
 		
@@ -950,7 +963,10 @@ class ImmigrationUtils:
 			lCategoryDesire[iMissionariesCat] = iNumCities - iNumConvertedCities - lNumUnitsInCategories[iMissionariesCat]
 		
 		# Transports Category
-		lCategoryDesire[iTransportsCat] = iNumCities - lNumUnitsInCategories[iTransportsCat]	# Want 1 Transport per city?
+		if lNumUnitsInCategories[iTransportsCat] == 0:
+			lCategoryDesire[iTransportsCat] = g_iAIMaxDesireExactlyOne	# If no transport ships, we really one exactly one
+		else:
+			lCategoryDesire[iTransportsCat] = iNumCities / 2 - lNumUnitsInCategories[iTransportsCat]	# Want 1 Transport per 2 cities?
 		
 		# Choose randomly between Great People, Slaves, Colonists, and Migrant Workers
 		# TODO: Find better heuristic
@@ -998,7 +1014,10 @@ class ImmigrationUtils:
 		lCategoryDesire[iSiegeCat] = iNumCities / 3 - lNumUnitsInCategories[iSiegeCat]	# Want 1/3 unit per city?
 		
 		# Mainline Ship Category
-		lCategoryDesire[iMainlineShipCat] = iNumCities / 3 - lNumUnitsInCategories[iMainlineShipCat]	# Want 1/3 unit per city?
+		if lNumUnitsInCategories[iMainlineShipCat] == 0:
+			lCategoryDesire[iMainlineShipCat] = g_iAIMaxDesireExactlyOne	# If no mainline ships, we really one exactly one
+		else:
+			lCategoryDesire[iMainlineShipCat] = iNumCities / 3 - lNumUnitsInCategories[iMainlineShipCat]	# Want 1/3 unit per city?
 		
 		# Skirmish Ship Category
 		lCategoryDesire[iSkirmishShipCat] = iNumCities / 3 - lNumUnitsInCategories[iSkirmishShipCat]	# Want 1/3 unit per city?

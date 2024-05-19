@@ -3,7 +3,7 @@
 # Colonists
 # The first tuple is where the player will spawn, the second is where the AI will spawn
 #  Norse
-tColonistReykjavik = 	((58, 118), (55, 114))
+tColonistReykjavik = 	((58, 117), (55, 114))
 #  Spain
 tColonistCaribbean = 	((47, 57), (40, 54))
 tColonistCuba = 		((37, 62), (30, 62))
@@ -71,19 +71,16 @@ tOhioRiver = ((29, 80), (35, 82))
 lOhioRiverExceptions = [(32, 80), (35, 80)]
 lOhioRiverAdditional = [(32, 83), (35, 83)]
 
-# first Norse goal: Settle Greenland by 1000 AD
-tGreenland = ((50, 100), (57, 113))
 # second Norse goal: Settle Vinland by 1100 AD
-tVinland = ((50, 95), (52, 97))
+tVinland = ((52, 92), (55, 95))
 # third Norse goal: Settle Delaware by 1640 AD
 tDelaware = ((39, 79), (40, 82))
 
 # first Inuit goal: Settle Kivalliq (Western Hudson Bay), Qikiqtaaluk (Baffin Island), Nunavik (Eastern Hudson Bay), and Kalaallit (Greenland) by 1100 AD
-tKivalliq = ((32, 97), (35, 103))
-tQikiqtaaluk = ((38, 102), (49, 109))
-lQikiqtaalukExceptions = [(39, 104), (40, 104), (40, 102), (42, 102), (43, 102)]
-tNunavik = ((41, 96), (42, 101))
-tKalaallit = ((50, 100), (57, 113))
+tKivalliq = ((31, 98), (34, 103))
+tQikiqtaaluk = ((35, 104), (43, 111))
+lQikiqtaalukExceptions = [(36, 104), (35, 106), (36, 106), (36, 107)]
+tNunavik = ((39, 96), (40, 100))
 
 # first Incan goal: build five Tambos and a road along the Andean coast by 1500 AD
 lAndeanCoast = [(15, 16), (16, 17), (17, 18), (18, 19), (19, 20), (20, 21), (21, 22), (23, 24), (23, 25), (24, 26), (23, 27), (21, 29), (20, 30), (21, 31), (20, 32), (20, 33)]
