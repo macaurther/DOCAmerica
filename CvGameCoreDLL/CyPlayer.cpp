@@ -2698,11 +2698,11 @@ bool CyPlayer::isNoTemporaryUnhappiness()
 	return m_pPlayer ? m_pPlayer->isNoTemporaryUnhappiness() : false;
 }
 
-void CyPlayer::setAlive(bool bNewValue)
+void CyPlayer::setAlive(bool bNewValue, bool bTurnActive)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->setAlive(bNewValue);
+		m_pPlayer->setAlive(bNewValue, bTurnActive);
 	}
 }
 
@@ -2814,4 +2814,9 @@ int CyPlayer::getPopulationHistory(int iTurn)
 int CyPlayer::getLandHistory(int iTurn)
 {
 	return m_pPlayer ? m_pPlayer->getLandHistory(iTurn) : -1;
+}
+
+bool CyPlayer::isExisting()
+{
+	return m_pPlayer ? m_pPlayer->isExisting() : false;
 }

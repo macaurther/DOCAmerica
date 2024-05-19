@@ -330,7 +330,7 @@
 		<Spanish>"&#161;Saqueasteis una de nuestras ciudades!"</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_JACKSON</Tag>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_JACKSON_1</Tag>
 		<English>Well? I have larger matters to attend to than the envoys of petty nations. Get on with it!</English>
 		<French>Well? I have larger matters to attend to than the envoys of petty nations. Get on with it!</French>
 		<German>Well? I have larger matters to attend to than the envoys of petty nations. Get on with it!</German>
@@ -338,7 +338,7 @@
 		<Spanish>Well? I have larger matters to attend to than the envoys of petty nations. Get on with it!</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ROOSEVELT</Tag>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ROOSEVELT_1</Tag>
 		<English>A man, a plan... A man, a plan, a waterway? No, no... A man, a pla- OH! I didn't see you there. Well met, [CT_NAME]! My name is [OUR_NAME], but you can call me Teddy.</English>
 		<French>A man, a plan... A man, a plan, a waterway? No, no... A man, a pla- OH! I didn't see you there. Well met, [CT_NAME]! My name is [OUR_NAME], but you can call me Teddy.</French>
 		<German>A man, a plan... A man, a plan, a waterway? No, no... A man, a pla- OH! I didn't see you there. Well met, [CT_NAME]! My name is [OUR_NAME], but you can call me Teddy.</German>
@@ -346,7 +346,7 @@
 		<Spanish>A man, a plan... A man, a plan, a waterway? No, no... A man, a pla- OH! I didn't see you there. Well met, [CT_NAME]! My name is [OUR_NAME], but you can call me Teddy.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KENNEDY</Tag>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KENNEDY_1</Tag>
 		<English>Greetings, [CT_NAME]. I AM a jelly donut.</English>
 		<French>Greetings, [CT_NAME]. I AM a jelly donut.</French>
 		<German>Greetings, [CT_NAME]. I AM a jelly donut.</German>
@@ -354,7 +354,7 @@
 		<Spanish>Greetings, [CT_NAME]. I AM a jelly donut.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_REAGAN</Tag>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_REAGAN_1</Tag>
 		<English>Howdy y'all, name's [OUR_NAME]. How would you like to witness a full nuclear arsenal of 400 LGM-30G Minuteman III Intercontinental Ballistic Missiles barrelling down on your sorry nation? I thought not.</English>
 		<French>Howdy y'all, name's [OUR_NAME]. How would you like to witness a full nuclear arsenal of 400 LGM-30G Minuteman III Intercontinental Ballistic Missiles barrelling down on your sorry nation? I thought not.</French>
 		<German>Howdy y'all, name's [OUR_NAME]. How would you like to witness a full nuclear arsenal of 400 LGM-30G Minuteman III Intercontinental Ballistic Missiles barrelling down on your sorry nation? I thought not.</German>
@@ -362,12 +362,20 @@
 		<Spanish>Howdy y'all, name's [OUR_NAME]. How would you like to witness a full nuclear arsenal of 400 LGM-30G Minuteman III Intercontinental Ballistic Missiles barrelling down on your sorry nation? I thought not.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OBAMA</Tag>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_OBAMA_1</Tag>
 		<English>Why can't I just eat my waffle? [ICON_HAPPY] xoxo</English>
 		<French>Why can't I just eat my waffle? [ICON_HAPPY] xoxo</French>
 		<German>Why can't I just eat my waffle? [ICON_HAPPY] xoxo</German>
 		<Italian>Why can't I just eat my waffle? [ICON_HAPPY] xoxo</Italian>
 		<Spanish>Why can't I just eat my waffle? [ICON_HAPPY] xoxo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TACAYNAMO_1</Tag>
+		<English>My homeland is an enigma to my people, but yours shall not be - cause I'm going to invade it.</English>
+		<French>My homeland is an enigma to my people, but yours shall not be - cause I'm going to invade it.</French>
+		<German>My homeland is an enigma to my people, but yours shall not be - cause I'm going to invade it.</German>
+		<Italian>My homeland is an enigma to my people, but yours shall not be - cause I'm going to invade it.</Italian>
+		<Spanish>My homeland is an enigma to my people, but yours shall not be - cause I'm going to invade it.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_COSIJOEZA_1</Tag>
@@ -384,6 +392,22 @@
 		<German>Tremble before the almighty [OUR_NAME].</German>
 		<Italian>Tremble before the almighty [OUR_NAME].</Italian>
 		<Spanish>Tremble before the almighty [OUR_NAME].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PACHACUTI_1</Tag>
+		<English>They call me the Earthshaker. Pray my armies don't crumble your walls with their approach.</English>
+		<French>They call me the Earthshaker. Pray my armies don't crumble your walls with their approach.</French>
+		<German>They call me the Earthshaker. Pray my armies don't crumble your walls with their approach.</German>
+		<Italian>They call me the Earthshaker. Pray my armies don't crumble your walls with their approach.</Italian>
+		<Spanish>They call me the Earthshaker. Pray my armies don't crumble your walls with their approach.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_KAMEHAMEHA_1</Tag>
+		<English>Aloha! Visitors from afar are welcome, so long as they provide some worth.</English>
+		<French>Aloha! Visitors from afar are welcome, so long as they provide some worth.</French>
+		<German>Aloha! Visitors from afar are welcome, so long as they provide some worth.</German>
+		<Italian>Aloha! Visitors from afar are welcome, so long as they provide some worth.</Italian>
+		<Spanish>Aloha! Visitors from afar are welcome, so long as they provide some worth.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_</Tag>

@@ -11563,7 +11563,7 @@ bool CvPlayer::isEverAlive() const
 }
 
 
-void CvPlayer::setAlive(bool bNewValue)
+void CvPlayer::setAlive(bool bNewValue, bool bTurnActive)
 {
 	CvWString szBuffer;
 	int iI;
@@ -11599,7 +11599,7 @@ void CvPlayer::setAlive(bool bNewValue)
 
 			if (GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) || (GC.getGameINLINE().getNumGameTurnActive() == 0) || (GC.getGameINLINE().isSimultaneousTeamTurns() && GET_TEAM(getTeam()).isTurnActive()))
 			{
-				if (GC.getGameINLINE().getGameTurn() >= getInitialBirthTurn())
+				if (bTurnActive && GC.getGameINLINE().getGameTurn() >= getInitialBirthTurn())
 				{
 					setTurnActive(true);
 				}
@@ -11704,6 +11704,13 @@ void CvPlayer::verifyAlive()
 			setAlive(true);
 		}
 	}
+}
+
+
+// Leoreth
+bool CvPlayer::isExisting() const
+{
+	return isAlive() && getNumCities() > 0;
 }
 
 
@@ -12106,6 +12113,7 @@ void CvPlayer::setCivilizationType(CivilizationTypes iNewValue)
 	gDLL->getInterfaceIFace()->setDirty(GlobeInfo_DIRTY_BIT, true);
 
 	CvEventReporter::getInstance().playerCivAssigned(getID(), iNewValue);
+	GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CIV_ASSIGNED, getID(), (char*)NULL, iNewValue);
 }
 // edead: end
 

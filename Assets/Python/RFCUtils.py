@@ -594,10 +594,11 @@ def getUnitsForRole(iPlayer, iRole):
 	return units
 
 # used: AIWars, History, RFCUtils, Rise, Stability
-def createRoleUnits(iPlayer, location, units, iExperience=0):
+def createRoleUnits(iPlayer, location, units, iExperience=0, bCreateSettlers=True):
 	created = CreatedUnits.none()
 	for iRole, iAmount in units:
-		created += createRoleUnit(iPlayer, location, iRole, iAmount, iExperience)
+		if bCreateSettlers or iRole != iSettle:
+			created += createRoleUnit(iPlayer, location, iRole, iAmount, iExperience)
 	return created
 
 # used: AIWars, Congresses, History, RFCUtils
@@ -792,13 +793,16 @@ def evacuate(iPlayer, tPlot):
 			move(unit, target)
 
 # used: Rise
-def expelUnits(iPlayer, area):
+def expelUnits(iPlayer, area, excluded_area = None):
+	if excluded_area is None:
+		excluded_area = area
+
 	for plot in area:
 		for iOwner, ownerUnits in units.at(plot).notowner(iPlayer).grouped(lambda unit: unit.getOwner()):
 			ownerUnits = ownerUnits.where(lambda unit: not unit.isNone() and not unit.isCargo())
 			landUnits, seaUnits = ownerUnits.split(lambda unit: unit.getDomainType() != DomainTypes.DOMAIN_SEA)
 		
-			possibleDestinations = cities.owner(iOwner).without(area.cities())
+			possibleDestinations = cities.owner(iOwner).without(excluded_area.cities())
 			
 			if landUnits:
 				moveDomainUnits(iPlayer, iOwner, landUnits, possibleDestinations.closest(plot))

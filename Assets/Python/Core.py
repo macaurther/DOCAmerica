@@ -1736,8 +1736,14 @@ class Players(EntityCollection):
 	def alive(self):
 		return self.where(lambda p: player(p).isAlive())
 	
+	def existing(self):
+		return self.where(lambda p: player(p).isExisting())
+	
 	def notalive(self):
 		return self.where(lambda p: not player(p).isAlive())
+	
+	def notexisting(self):
+		return self.where(lambda p: not player(p).isExisting())
 		
 	def ai(self):
 		return self.where(lambda p: not player(p).isHuman())

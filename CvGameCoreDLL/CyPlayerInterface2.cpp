@@ -125,7 +125,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("AI_getSameReligionAttitude", &CyPlayer::AI_getSameReligionAttitude, "int (int iPlayer)")
 		.def("AI_getDifferentReligionAttitude", &CyPlayer::AI_getDifferentReligionAttitude, "int (int iPlayer)")
 		.def("AI_getFirstImpressionAttitude", &CyPlayer::AI_getFirstImpressionAttitude, "int (int iPlayer)")
-		.def("setAlive", &CyPlayer::setAlive, "void (bool bNewValue)")
+		.def("setAlive", &CyPlayer::setAlive, "void (bool bNewValue, bool bTurnActive)")
 		.def("getPeriod", &CyPlayer::getPeriod, "int ()")
 		.def("getDomainFreeExperience", &CyPlayer::getDomainFreeExperience, "int (int iDomainType)")
 		.def("changeGoldPerTurnByPlayer", &CyPlayer::changeGoldPerTurnByPlayer, "void (int iPlayer, int iChange)")
@@ -149,5 +149,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("getTechnologyHistory", &CyPlayer::getTechnologyHistory, "int (int iTurn)")
 		.def("getPopulationHistory", &CyPlayer::getPopulationHistory, "int (int iTurn)")
 		.def("getLandHistory", &CyPlayer::getLandHistory, "int (int iTurn)")
+
+		.def("isExisting", &CyPlayer::isExisting, "bool ()")
 		;
 }

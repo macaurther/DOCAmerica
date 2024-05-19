@@ -305,6 +305,9 @@ public:
 	int getExpansion();
 	bool isExpansion();
 
+	void setRevealedOwner(int eTeam, int eNewValue);
+	void updateRevealedOwner(int eTeam);
+
 	void updateFortClaims(int ePlayer);	// MacAurther
 
 private:

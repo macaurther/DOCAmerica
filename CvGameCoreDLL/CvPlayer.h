@@ -744,8 +744,10 @@ public:
 
 	DllExport bool isAlive() const;																																						// Exposed to Python
 	DllExport bool isEverAlive() const;																																				// Exposed to Python
-	void setAlive(bool bNewValue);
+	void setAlive(bool bNewValue, bool bTurnActive = true);
 	void verifyAlive();
+
+	bool isExisting() const; // Leoreth
 
 	DllExport bool isTurnActive() const;
 	DllExport void setTurnActive(bool bNewValue, bool bDoTurn = true);

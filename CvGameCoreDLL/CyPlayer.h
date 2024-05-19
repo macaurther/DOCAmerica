@@ -592,7 +592,7 @@ public:
 	void changeGreatSpiesCreated(int iChange);
 	void launch(int iVictory);
 	bool isNoTemporaryUnhappiness();
-	void setAlive(bool bNewValue);
+	void setAlive(bool bNewValue, bool bTurnActive);
 	int getPeriod();
 	int getDomainFreeExperience(int iDomainType);
 	void changeGoldPerTurnByPlayer(int iPlayer, int iChange);
@@ -616,6 +616,8 @@ public:
 	int getTechnologyHistory(int iTurn);
 	int getPopulationHistory(int iTurn);
 	int getLandHistory(int iTurn);
+
+	bool isExisting();
 
 private:
 	CvPlayer* m_pPlayer;

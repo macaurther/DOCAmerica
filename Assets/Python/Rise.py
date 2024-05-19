@@ -43,6 +43,10 @@ lDynamicReligionCivs = [
 	iVenezuela,
 ]
 
+lInvasionCivs = [
+	iAztecs,
+]
+
 dClearedForBirth = {
 	iAztecs: iTeotihuacan,
 	iMexico: iAztecs,
@@ -257,6 +261,17 @@ def createStartingWorkers(city):
 	
 	if iNumStartingWorkers > 0:
 		createRoleUnit(iPlayer, city, iWork, iNumStartingWorkers)
+	
+
+@handler("firstCity")
+def createInvaderSettlers(city):
+	iPlayer = city.getOwner()
+	if not civ(iPlayer) in lInvasionCivs:
+		return
+	
+	iNumSettlers = dStartingUnits[iPlayer].get(iSettler, 0)
+	if iNumSettlers > 0:
+		createSettlers(iPlayer, iNumSettlers, bGrantCapital=False)
 
 
 @handler("firstCity")
@@ -287,7 +302,7 @@ def fragmentIndependents():
 
 @handler("BeginGameTurn")
 def checkMinorTechs():
-	iMinor = players.independent().alive().periodic(20)
+	iMinor = players.independent().existing().periodic(20)
 	if iMinor:
 		updateMinorTechs(iMinor, barbarian())
 
@@ -342,7 +357,7 @@ class Birth(object):
 	
 	@property
 	def switchPopup(self):
-		return popup.text("TXT_KEY_POPUP_SWITCH").cancel("TXT_KEY_POPUP_NO", event_bullet).option(self.switch, "TXT_KEY_POPUP_YES").build()
+		return popup.text("TXT_KEY_POPUP_SWITCH").option(self.noSwitch, "TXT_KEY_POPUP_NO").option(self.switch, "TXT_KEY_POPUP_YES").build()
 	
 	def isHuman(self):
 		if self.iPlayer is None:
@@ -416,10 +431,10 @@ class Birth(object):
 	def updateArea(self):
 		if self.iCiv in lExpandedFlipCivs:
 			owners = self.area.cities().owners().major()
-			ownerCities = cities.all().area(self.location).where(lambda city: city.getOwner() in owners).where(lambda city: not plot(city).isCore(city.getOwner()))
+			ownerCities = cities.all().area(self.location).where(lambda city: city.getOwner() in owners).where(lambda city: not plot(city).isPlayerCore(city.getOwner()))
 			closerCities = ownerCities.where(lambda city: real_distance(city, self.location) <= real_distance(city, capital(city)) and real_distance(city, self.location) <= 14)
 			
-			additionalPlots = closerCities.plots().expand(2).where(lambda p: p.getOwner() in owners and none(p.isPlayerCore(iPlayer) for iPlayer in players.major().alive().without(self.iPlayer)))
+			additionalPlots = closerCities.plots().expand(2).where(lambda p: p.getOwner() in owners and none(p.isPlayerCore(iPlayer) for iPlayer in players.major().existing().without(self.iPlayer)))
 			
 			self.area += additionalPlots
 			self.area = self.area.unique()
@@ -445,6 +460,9 @@ class Birth(object):
 				plot.setBirthProtected(self.iPlayer)
 			elif plot.getBirthProtected() == self.iPlayer:
 				plot.resetBirthProtected()
+				
+	def assignAdditionalTechs(self):
+		pass
 	
 	def assignAttributes(self):
 		# civilization attributes
@@ -471,7 +489,6 @@ class Birth(object):
 		return closePlots
 	
 	def revealTerritory(self):
-		# MacAurther Note: Peer and Neighbor Reveal were great features, but they slowed the spawn turn for later Europeans way down on a large map, so they were removed.
 		# reset visibility
 		for plot in plots.all():
 			plot.setRevealed(self.player.getID(), False, False, -1)
@@ -484,15 +501,52 @@ class Birth(object):
 		if self.isIndependence():
 			independenceRevealed = plots.sum(plots.owner(iOwner) for iOwner in self.area.cities().owners().major())
 		
+		# revealed by enough neighbours
+		neighbours = self.area.expand(3).owners().major().without(self.iPlayer)
+		neighbourRevealed = plots.sum(self.closeNeighbourPlots(iNeighbour) for iNeighbour in neighbours)
+		
+		# revealed by enough civilizations in your tech group
+		iTechGroup = next(iGroup for iGroup in dTechGroups if self.iCiv in dTechGroups[iGroup])
+		peers = players.major().existing().without(self.iPlayer).where(lambda p: civ(p) in dTechGroups[iTechGroup])
+		peerRevealed = plots.none()
+		
+		def isPeerRevealed(plot):
+			iRequiredPeers = plot.isWater() and peers.count() / 2 or peers.count() * 2 / 3
+			return count(peer for peer in peers if plot.isRevealed(player(peer).getTeam(), False)) >= min(iRequiredPeers, peers.count()-1)
+		
+		if peers.count() > 2:
+			peerRevealed += plots.all().where(isPeerRevealed).expand(1)
+		
+		bCanNeighbourReveal = revealed.intersect(neighbourRevealed)
+		bCanPeerReveal = revealed.intersect(peerRevealed)
+		
 		revealed += independenceRevealed
+		
+		if bCanNeighbourReveal:
+			revealed += neighbourRevealed
+			
+		iVisionRange = self.player.getCurrentEra() / 2 + 1
+		revealed = revealed.expand(iVisionRange)
+		
+		if bCanPeerReveal:
+			revealed += peerRevealed
 		
 		# reveal tiles
 		for plot in revealed:
 			plot.setRevealed(self.team.getID(), True, False, -1)
 	
 	def createUnits(self):
-		createRoleUnits(self.iPlayer, self.location, getStartingUnits(self.iPlayer))
-		createSpecificUnits(self.iPlayer, self.location)
+		bInvasionCiv = self.iCiv in lInvasionCivs
+		
+		createRoleUnits(self.iPlayer, self.location, getStartingUnits(self.iPlayer), bCreateSettlers=not bInvasionCiv)
+		
+		# if invader but no cities in birth, still grant a settler now
+		if bInvasionCiv and not cities.birth(self.iPlayer):
+			createRoleUnit(self.iPlayer, self.location, iSettle)
+		
+		# only create units if coming from autoplay, otherwise after the switch
+		if self.iPlayer == active():
+			createSpecificUnits(self.iPlayer, self.location)
 		
 		# MacAurther: Europeans spawn at sea
 		if self.iCiv in dCivGroups[iCivGroupEurope]:
@@ -502,19 +556,26 @@ class Birth(object):
 			settler = units.at(self.location).owner(self.iPlayer).where(lambda unit: unit.isFound()).last()
 			if settler:
 				interface.selectUnit(settler, True, False, False)
+		
+		# update revealed owners
+		for plot in plots.all():
+			plot.updateRevealedOwner(self.team.getID())
 	
 	def prepareCapital(self):
+		expelUnits(self.iPlayer, plots.surrounding(self.location), self.flippedArea())
+	
 		if plot_(self.location).isCity():
-			completeCityFlip(self.location, self.iPlayer, city_(self.location).getOwner(), 100, bFlipUnits=True)
+			completeCityFlip(self.location, self.iPlayer, city_(self.location).getOwner(), 100)
 		
-		for city in cities.ring(self.location):
-			if city.isHolyCity():
-				completeCityFlip(city, self.iPlayer, city.getOwner(), 100, bFlipUnits=True)
-			else:
-				self.data.lPreservedWonders += [iWonder for iWonder in infos.buildings() if isWonder(iWonder) and city.isHasRealBuilding(iWonder)]
+		if self.iCiv not in lInvasionCivs:
+			for city in cities.ring(self.location):
+				if city.isHolyCity():
+					completeCityFlip(city, self.iPlayer, city.getOwner(), 100)
+				else:
+					self.data.lPreservedWonders += [iWonder for iWonder in infos.buildings() if isWonder(iWonder) and city.isHasRealBuilding(iWonder)]
 				
-				plot_(city).eraseAIDevelopment()
-				plot_(city).setImprovementType(iCityRuins)
+					plot_(city).eraseAIDevelopment()
+					plot_(city).setImprovementType(iCityRuins)
 		
 		for plot in plots.surrounding(self.location):
 			convertPlotCulture(plot, self.iPlayer, 100, bOwner=True)
@@ -531,8 +592,8 @@ class Birth(object):
 			if unit.isAnimal():
 				unit.kill(False, -1)
 				continue
-		
-			if cities.owner(unit):
+			
+			if cities.owner(unit.getOwner()):
 				closest = cities.owner(unit.getOwner()).closest(unit)
 			elif unit.getDomainType() == DomainTypes.DOMAIN_SEA or unit.isCargo():
 				if edge.sea():
@@ -540,7 +601,7 @@ class Birth(object):
 				else:
 					closest = plots.all().sea().without(self.area).closest(unit)
 			else:
-				closest = edge.land().closest(unit)
+				closest = edge.land().area(unit).closest(unit)
 			
 			if closest:
 				move(unit, closest)
@@ -576,6 +637,7 @@ class Birth(object):
 			self.checkSwitch()
 		elif iUntilBirth == 0:
 			self.flip()
+			self.wars()
 			
 		if iUntilBirth < 0:
 			self.checkExpansion()
@@ -594,12 +656,8 @@ class Birth(object):
 		
 		# Mexico requires Aztecs to be dead
 		if self.iCiv == iMexico:
-			if player(iAztecs).isAlive():
+			if player(iAztecs).isExisting():
 				return False
-				
-		# further checks skipped if impact is critical or better
-		if getImpact(self.iCiv) >= iImpactCritical:
-			return True
 	
 		# independence civs require all players controlling cities in their area to be stable or worse
 		if self.isIndependence():
@@ -619,7 +677,7 @@ class Birth(object):
 		if plots.owner(active()).closest_distance(self.location) <= 10:
 			key = "TXT_KEY_MESSAGE_RISE_%s" % infos.civ(self.iCiv).getIdentifier()
 			text = text_if_exists(key, adjective(self.iPlayer), otherwise="TXT_KEY_MESSAGE_RISE_GENERIC")
-			message(active(), str(text), location=self.location, color=iRed, button=infos.civ(self.iCiv).getButton())
+			message(active(), text.encode("ascii", "xmlcharrefreplace"), location=self.location, color=iRed, button=infos.civ(self.iCiv).getButton())
 	
 	def activate(self):
 		if self.iPlayer is None:
@@ -637,7 +695,7 @@ class Birth(object):
 		self.player.setInitialBirthTurn(self.iTurn)
 		
 		if not self.isHuman():
-			self.player.setAlive(True)
+			self.player.setAlive(True, True)
 		
 		self.area = plots.birth(self.iPlayer) + plots.core(self.iPlayer)
 		self.area = self.area.unique()
@@ -671,7 +729,7 @@ class Birth(object):
 		self.iExpansionTurns = turns(30)
 	
 	def checkExpansion(self):
-		if not self.player.isAlive():
+		if not self.player.isExisting():
 			return
 		
 		if self.player.getNumCities() == 0:
@@ -722,7 +780,7 @@ class Birth(object):
 		if not self.isHuman() and iClearedCiv not in lAlwaysClear:
 			return
 			
-		if not player(iClearedCiv).isAlive():
+		if not player(iClearedCiv).isExisting():
 			return
 		
 		if player(iClearedCiv).isHuman():
@@ -733,9 +791,10 @@ class Birth(object):
 	
 	def checkSwitch(self):
 		if not self.canSwitch():
+			self.assignAdditionalTechs()
 			return
 
-		self.switchPopup.text(adjective(self.iPlayer)).cancel().switch().launch()
+		self.switchPopup.text(adjective(self.iPlayer)).noSwitch().switch().launch()
 	
 	def canSwitch(self):
 		if not MainOpt.isSwitchPopup():
@@ -748,6 +807,13 @@ class Birth(object):
 			return False
 	
 		return True
+	
+	def noSwitch(self):
+		if not self.isHuman():
+			self.assignAdditionalTechs()
+			createRoleUnits(self.iPlayer, self.location, getAIStartingUnits(self.iPlayer))
+		
+		createSpecificUnits(self.iPlayer, self.location)
 	
 	def switch(self):
 		iPreviousPlayer = active()
@@ -776,10 +842,22 @@ class Birth(object):
 		if player(iPreviousPlayer).getAdvancedStartPoints() > 0:
 			player(iPreviousPlayer).AI_doAdvancedStart()
 		
-		events.fireEvent("switch", iPreviousPlayer, self.iPlayer)
-		
 		for iOtherPlayer in players.major():
 			self.player.setEspionageSpendingWeightAgainstTeam(player(iOtherPlayer).getTeam(), 0)
+		
+		# update statistics offsets
+		
+		statistics = CyStatistics()
+		
+		dUnitsBuilt = dict((iUnit, statistics.getPlayerNumUnitsBuilt(self.iPlayer, iUnit)) for iUnit in infos.units())
+		dUnitsKilled = dict((iUnit, statistics.getPlayerNumUnitsKilled(self.iPlayer, iUnit)) for iUnit in infos.units())
+		dUnitsLost = dict((iUnit, statistics.getPlayerNumUnitsLost(self.iPlayer, iUnit)) for iUnit in infos.units())
+		dBuildingsBuilt = dict((iBuilding, statistics.getPlayerNumBuildingsBuilt(self.iPlayer, iBuilding)) for iBuilding in infos.buildings())
+		
+		data.dUnitsBuilt = dict((iUnit, iNumUnits) for iUnit, iNumUnits in dUnitsBuilt.items() if iNumUnits > 0)
+		data.dUnitsKilled = dict((iUnit, iNumUnits) for iUnit, iNumUnits in dUnitsKilled.items() if iNumUnits > 0)
+		data.dUnitsLost = dict((iUnit, iNumUnits) for iUnit, iNumUnits in dUnitsLost.items() if iNumUnits > 0)
+		data.dBuildingsBuilt = dict((iBuilding, iNumBuildings) for iBuilding, iNumBuildings in dBuildingsBuilt.items() if iNumBuildings > 0)
 	
 	def birth(self):
 		# initial save
@@ -818,30 +896,23 @@ class Birth(object):
 			self.flipPopup.text(cityNames, name(self.iPlayer)).cancel().declareWarOnFlip().launch(iOwner)
 			return
 		
-		if not self.canWarOnFlip(iOwner):
-			return
-		
 		if team(iOwner).isAtWar(self.player.getTeam()):
 			team(iOwner).AI_setAtWarCounter(self.player.getTeam(), 0)
 			self.team.AI_setAtWarCounter(player(iOwner).getTeam(), 0)
 			return
 		
-		if chance(dWarOnFlipProbability[iOwner]):
-			self.declareWarOnFlip(iOwner)
-	
-	def canWarOnFlip(self, iOwner):
-		iOwnerCiv = civ(iOwner)
-		
-		if iOwnerCiv == iCanada:
-			return False
-		
-		return True
+		iRefusalModifier = dWarOnFlipProbability[iOwner]
+		if chance(iRefusalModifier):
+			player(iOwner).AI_changeMemoryCount(self.iPlayer, MemoryTypes.MEMORY_STOPPED_TRADING_RECENT, turns(5 + iRefusalModifier / 10))
 	
 	def declareWarOnFlip(self, iOwner):
 		team(iOwner).declareWar(self.player.getTeam(), False, WarPlanTypes.WARPLAN_ATTACKED_RECENT)
 	
+	def flippedArea(self):
+		return self.isIndependence() and self.area or plots.birth(self.iPlayer)
+	
 	def flip(self):
-		flippedPlots = self.isIndependence() and self.area or plots.birth(self.iPlayer)
+		flippedPlots = self.flippedArea()
 		
 		excludedPlots = flippedPlots.where(lambda p: p.isCity() and city_(p).isCapital() and p.isPlayerCore(p.getOwner()))
 		excludedPlots = excludedPlots.expand(1).where(lambda p: cities.surrounding(p).all(lambda city: city in excludedPlots))
@@ -858,6 +929,9 @@ class Birth(object):
 		for city in flippedCities:
 			city = completeCityFlip(city, self.iPlayer, city.getOwner(), 100, bFlipUnits=True)
 			city.rebuild()
+			
+			iMinPopulation = self.player.getCurrentEra() + 1
+			city.setPopulation(max(iMinPopulation, city.getPopulation()))
 			
 			if since(scenarioStartTurn()):
 				ensureDefenders(self.iPlayer, city, 2)
@@ -879,3 +953,19 @@ class Birth(object):
 		self.civ.advancedStart()
 		
 		events.fireEvent("flip", self.iPlayer)
+	
+	def wars(self):
+		if self.isHuman():
+			return
+	
+		expansionArea = plots.all().where(lambda p: p.getExpansion() == self.iPlayer)
+		expansionTargets = expansionArea.owners()
+		
+		for iTarget in expansionTargets:
+			if (self.iCiv, civ(iTarget)) in lBirthWars:
+				self.team.declareWar(player(iTarget).getTeam(), True, WarPlanTypes.WARPLAN_TOTAL)
+				
+				if player(iTarget).isHuman():
+					for plot in expansionArea.owner(iTarget).core(iTarget):
+						plot.resetExpansion()
+		
