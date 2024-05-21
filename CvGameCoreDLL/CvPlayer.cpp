@@ -8629,6 +8629,9 @@ int CvPlayer::getCivicAnarchyLength(CivicTypes* paeNewCivics) const
 		return 0;
 	}
 
+	// MacAurther: God King Civic
+	if (hasCivic(CIVIC_GOD_KING_NATIVE)) return 0;
+
 	//Rhye - start comment
 	/*if (isGoldenAge())
 	{

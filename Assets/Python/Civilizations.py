@@ -187,7 +187,7 @@ lCivilizations = [
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
@@ -231,7 +231,7 @@ lCivilizations = [
 		iInuit,
 		iGold=25,
 		lCivics=[iHarmony1],
-		techs=techs.column(2).including(iTanning, iMythology, iSailing).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
+		techs=techs.column(2).including(iTanning, iMythology, iSailing, iSeafaring).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iInca,
@@ -243,20 +243,20 @@ lCivilizations = [
 	Civilization(
 		iPurepecha,
 		iGold=500,
-		lCivics=[iDespotism1, iCaptives1, iTributaries1],
+		lCivics=[iDespotism1, iCaptives1, iRedistribution1],
 		techs=techs.column(4).including(iAlloys, iConstruction, iMathematics, iWriting).without(iTrapping)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism1, iCaptives1, iCasteSystem1, iTributaries1],
+		lCivics=[iDespotism1, iCaptives1, iPlunder1, iOrganizedReligion1],
 		lEnemies=[iTeotihuacan],
 		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing)
 	),
 	Civilization(
 		iIroquois,
 		iGold=200,
-		lCivics=[iConfederacy1, iHarmony1],
+		lCivics=[iChiefdom, iConfederacy1, iHarmony1, iCooperation1],
 		techs=techs.column(3).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(
@@ -390,7 +390,7 @@ lCivilizations = [
 dStartingUnits = CivDict({
 	iTeotihuacan: {
 		iSettle: 1,
-		iWork: 1,
+		iWork: 3,
 		iDefend: 2,
 	},
 	iTiwanaku: {

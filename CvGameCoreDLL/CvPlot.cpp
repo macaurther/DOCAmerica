@@ -6735,20 +6735,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		iYield += ((bIgnoreFeature || (getFeatureType() == NO_FEATURE)) ? GC.getTerrainInfo(getTerrainType()).getHillsYieldChange(eYield) : GC.getFeatureInfo(getFeatureType()).getHillsYieldChange(eYield));
 	}
 
-	// Inuit UB: +1 Food and Production from Ice, Sea Ice, and Tundra
-	if (!isCity() && getWorkingCity() != NULL && getWorkingCity()->isHasBuildingEffect((BuildingTypes)GC.getInfoTypeForString("BUILDING_INUIT_IGLOO")))
-	{
-		if (getTerrainType() == GC.getInfoTypeForString("TERRAIN_SNOW") ||
-			getTerrainType() == GC.getInfoTypeForString("TERRAIN_TUNDRA") ||
-			getFeatureType() == GC.getInfoTypeForString("FEATURE_ICE"))
-		{
-			if (eYield == YIELD_FOOD || eYield == YIELD_PRODUCTION)
-			{
-				iYield += 1;
-			}
-		}
-	}
-
 	if (!bIgnoreFeature)
 	{
 		if (getFeatureType() != NO_FEATURE)

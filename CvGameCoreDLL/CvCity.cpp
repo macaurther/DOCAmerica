@@ -4365,18 +4365,6 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			changeFreePromotionCount(((PromotionTypes)(GC.getBuildingInfo(eBuilding).getFreePromotion())), iChange);
 		}
 
-		// Inuit UB: +1 Food, Production, and Commerce from Ice, Sea Ice, and Tundra
-		if (eBuilding == (BuildingTypes)GC.getInfoTypeForString("BUILDING_INUIT_IGLOO"))
-		{
-			updateYield();
-		}
-
-		// MacAurther: American UB, need to update Capital commerce on construction
-		if (eBuilding == (BuildingTypes)BUILDING_STATE_HOUSE)
-		{
-			GET_PLAYER(getOwner()).updateCapitalCommerce();
-		}
-
 		changeEspionageDefenseModifier(GC.getBuildingInfo(eBuilding).getEspionageDefenseModifier() * iChange);
 		changeGreatPeopleRateModifier(GC.getBuildingInfo(eBuilding).getGreatPeopleRateModifier() * iChange);
 		changeFreeExperience(GC.getBuildingInfo(eBuilding).getFreeExperience() * iChange);

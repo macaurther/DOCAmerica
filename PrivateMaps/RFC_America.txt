@@ -6634,13 +6634,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=65
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=66
 	BonusType=BONUS_CORN
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -9670,7 +9670,7 @@ BeginPlot
 	x=14,y=118
 	BonusType=BONUS_DEER
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -10366,7 +10366,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=119
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -11062,7 +11062,7 @@ BeginPlot
 	x=16,y=119
 	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
-	TerrainType=TERRAIN_MOORLAND
+	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -28862,7 +28862,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=104
-	TerrainType=TERRAIN_FJORD
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -29545,7 +29545,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=105
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -29561,7 +29561,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=108
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -30206,25 +30206,25 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=105
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=44,y=106
 	FeatureType=FEATURE_ICE, FeatureVariety=0
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=44,y=107
 	FeatureType=FEATURE_ICE, FeatureVariety=0
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=44,y=108
 	BonusType=BONUS_WHALE
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -30887,12 +30887,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=107
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=108
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
 BeginPlot

@@ -1738,14 +1738,6 @@
 		<Spanish>Dog Sled</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED_HELP</Tag>
-		<English>[ICON_BULLET]Can settle on Ice (along Coast)</English>
-		<French>[ICON_BULLET]Can settle on Ice (along Coast)</French>
-		<German>[ICON_BULLET]Can settle on Ice (along Coast)</German>
-		<Italian>[ICON_BULLET]Can settle on Ice (along Coast)</Italian>
-		<Spanish>[ICON_BULLET]Can settle on Ice (along Coast)</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</English>
 		<French>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</French>

@@ -39,12 +39,13 @@ def helpMinorStates():
 # MacAurther: Tribes reproduce
 @handler("EndGameTurn")
 def reproduceTribes():
-	if data.iTribeGenerationTurn + 5 == turn():
+	# Commenting this out because it doesn't work very well
+	'''if data.iTribeGenerationTurn + 5 == turn():
 		pPlot = possibleTiles(tTribeRespawnArea[0], tTribeRespawnArea[1], bWater=False, bTerritory=False, bTribeSpawn=True).random()
 		
 		print("Generating new Tribe at x: " + str(pPlot.getX()) + " y: " + str(pPlot.getY()))
 		pPlot.setImprovementType(iTribe)
-		data.iTribeGenerationTurn = turn()
+		data.iTribeGenerationTurn = turn()'''
 
 # MacAurther: Pillaging Tribes generates warriors
 @handler("unitPillage")
@@ -178,7 +179,8 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 	if not bForceSpawn and not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
 	
 	# MacAurther: Extra check for Tribe spawning
-	if bTribeSpawn:
+	# Commenting this out. It just doesn't work very well. 
+	'''if bTribeSpawn:
 		if (plot.isImpassable()) or (plot.getImprovementType() != ImprovementTypes.NO_IMPROVEMENT) or \
 			(plot.getTerrainType() in [iSnow, iSaltflat, iLagoon, iAtoll]) or (plot.getBonusType(-1) != BonusTypes.NO_BONUS):
 			return False
@@ -201,7 +203,7 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 		iY = plot.getY()
 		for iCiv in dSettlerMaps:
 			if dSettlerMaps[iCiv][iY][iX] > 90:
-				return False
+				return False'''
 	
 	return True
 

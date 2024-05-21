@@ -115,7 +115,7 @@
 			<Help>TXT_KEY_CIVIC_GOD_KING_HELP</Help>
 			<TechPrereq>TECH_NOBILITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/GodKing.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
+			<iAnarchyLength>0</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<Hurrys>
@@ -143,6 +143,7 @@
 			<Description>TXT_KEY_CIVIC_CUSTOMARY_LAW</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CUSTOMARY_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/CustomaryLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>

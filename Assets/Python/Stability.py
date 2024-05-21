@@ -22,11 +22,11 @@ import math
 tEraAdministrationModifier = (
 	100, # ancient
 	200, # classical
-	200, # medieval
-	250, # renaissance
-	300, # industrial
-	350, # modern
-	400, # future
+	200, # exploration
+	250, # colonial
+	300, # revolutionary
+	350, # industrial
+	400, # modern
 )
 
 
@@ -475,7 +475,7 @@ def calculateSeparatism(city):
 	iSeparatism *= iModifier / 100
 	
 	# God King Civic
-	if iGodKing1 in civics and iSeparatism > 3: iSeparatism = 3
+	if iCustomaryLaw1 in civics and iSeparatism > 3: iSeparatism = 3
 	
 	return iSeparatism
 

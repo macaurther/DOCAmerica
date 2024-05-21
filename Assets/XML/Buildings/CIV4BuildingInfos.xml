@@ -343,7 +343,6 @@
 			<Description>TXT_KEY_BUILDING_INUIT_IGLOO</Description>
 			<Civilopedia>TXT_KEY_BUILDING_INUIT_IGLOO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_INUIT_IGLOO_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INUIT_IGLOO</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
@@ -355,7 +354,14 @@
 			<iFoodKept>25</iFoodKept>
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<BonusHealthChanges>
+			<SeaPlotYieldChanges>
+				<iYield>1</iYield>
+			</SeaPlotYieldChanges>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>1</iCommerce>
+			</ObsoleteSafeCommerceChanges><BonusHealthChanges>
 				<BonusHealthChange>
 					<BonusType>BONUS_WHEAT</BonusType>
 					<iHealthChange>1</iHealthChange>

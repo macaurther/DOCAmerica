@@ -540,11 +540,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Tag>
-		<English>Temporary unhappiness decays faster; no non-state religion spread</English>
-		<French>Temporary unhappiness decays faster; no non-state religion spread</French>
-		<German>Temporary unhappiness decays faster; no non-state religion spread</German>
-		<Italian>Temporary unhappiness decays faster; no non-state religion spread</Italian>
-		<Spanish>Temporary unhappiness decays faster; no non-state religion spread</Spanish>
+		<English>Temporary unhappiness decays faster; no non-state religion spread; reduced instability from cities</English>
+		<French>Temporary unhappiness decays faster; no non-state religion spread; reduced instability from cities</French>
+		<German>Temporary unhappiness decays faster; no non-state religion spread; reduced instability from cities</German>
+		<Italian>Temporary unhappiness decays faster; no non-state religion spread; reduced instability from cities</Italian>
+		<Spanish>Temporary unhappiness decays faster; no non-state religion spread; reduced instability from cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Tag>
+		<English>[ICON_BULLET]Caps each city's Separatism at 3</English>
+		<French>[ICON_BULLET]Caps each city's Separatism at 3</French>
+		<German>[ICON_BULLET]Caps each city's Separatism at 3</German>
+		<Italian>[ICON_BULLET]Caps each city's Separatism at 3</Italian>
+		<Spanish>[ICON_BULLET]Caps each city's Separatism at 3</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ADMIRALTY</Tag>
@@ -1221,11 +1229,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOD_KING_HELP</Tag>
-		<English>[ICON_BULLET]Caps each city's Separatism at 3</English>
-		<French>[ICON_BULLET]Caps each city's Separatism at 3</French>
-		<German>[ICON_BULLET]Caps each city's Separatism at 3</German>
-		<Italian>[ICON_BULLET]Caps each city's Separatism at 3</Italian>
-		<Spanish>[ICON_BULLET]Caps each city's Separatism at 3</Spanish>
+		<English>[ICON_BULLET]No Anarchy when changing Civics</English>
+		<French>[ICON_BULLET]No Anarchy when changing Civics</French>
+		<German>[ICON_BULLET]No Anarchy when changing Civics</German>
+		<Italian>[ICON_BULLET]No Anarchy when changing Civics</Italian>
+		<Spanish>[ICON_BULLET]No Anarchy when changing Civics</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOD_KING_STRATEGY</Tag>

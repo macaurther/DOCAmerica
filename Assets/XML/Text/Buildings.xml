@@ -1874,14 +1874,6 @@
 		<Spanish>Igloo</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO_HELP</Tag>
-		<English>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION] from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</English>
-		<French>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</French>
-		<German>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</German>
-		<Italian>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</Italian>
-		<Spanish>[ICON_BULLET]+1 [ICON_FOOD] and [ICON_PRODUCTION]  from [LINK=TERRAIN_ICE]Ice[\LINK] and [LINK=TERRAIN_TUNDRA]Tundra[\LINK]</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_INUIT_IGLOO_STRATEGY</Tag>
 		<English>The [COLOR_BUILDING_TEXT]Igloo[COLOR_REVERT], the Inuit replacement for the [COLOR_BUILDING_TEXT]Granary[COLOR_REVERT], increases the tile yield of Ice and Tundra.</English>
 		<French>The [COLOR_BUILDING_TEXT]Igloo[COLOR_REVERT], the Inuit replacement for the [COLOR_BUILDING_TEXT]Granary[COLOR_REVERT], increases the tile yield of Ice and Tundra.</French>

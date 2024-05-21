@@ -112,7 +112,7 @@ dGoals = {
 		),
 	),
 	iTeotihuacan: (
-		CultureAmount(500, at=500),
+		BuildingCount(wonders(), 1, by=500),
 		GoldenAges(1, by=850),
 		Control(
 			plots.region(rBajio).named(BAJIO),
@@ -132,7 +132,7 @@ dGoals = {
 	iWari: (
 		All(
 			ResourceCount((iGold, 1), (iDye, 1), (iCotton, 1), (iLlama, 1)),
-			CultureAmount(500),
+			CultureAmount(250),
 			by=900,
 		),
 		BuildingCount((iBarracks, 2), (iColcas, 4), (iMarket, 2), by=1000),
@@ -188,7 +188,7 @@ dGoals = {
 			by=1500
 		),
 		ResourceCount(resources(), 25, at=1600),
-		TerrainCount(sum(iOcean, iCoast, iArcticCoast), 100, at=1700),
+		TerrainCount(sum(iOcean, iCoast, iArcticCoast, iFjord), 100, at=1700),
 	),
 	iInca: (
 		All(
@@ -201,11 +201,11 @@ dGoals = {
 	),
 	iPurepecha: (
 		ControlledResourceCount(iFish, 2, by=1300),
-		UnitCount(sum(iWarrior, iMacana, iArcher, iAtlatlist), 25, by=1500),
-		NoCityLost(by=1600),
+		UnitCount(sum(iMacana, iArcher), 25, by=1500),
+		NoCityLost(at=1600),
 	),
 	iAztecs: (
-		All(VassalCount(2), Control(plots.region(rBajio).named(BAJIO)), by=1450),
+		All(VassalCount(1), Control(plots.region(rBajio).named(BAJIO), subject=VASSALS), by=1450),
 		BestPopulationCity(start(iAztecs).named(TENOCHTITLAN), at=1520),
 		EnslaveCount(50, by=1550),
 	),

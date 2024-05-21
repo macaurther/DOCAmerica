@@ -88,5 +88,5 @@ def inuitUP(pCity):
 	if player(iPlayer).getCivilizationType() == iInuit:
 		for i in range(gc.getNUM_CITY_PLOTS()):
 			pPlot = pCity.getCityIndexPlot(i)
-			if pPlot.getImprovementType() == -1 and pPlot.getBonusType(player(iPlayer).getTeam()) in [iFur, iDeer]:
+			if pPlot.getImprovementType() == -1 and pPlot.getBonusType(player(iPlayer).getTeam()) in [iFur, iDeer, iBison]:
 				pPlot.setImprovementType(iCamp)

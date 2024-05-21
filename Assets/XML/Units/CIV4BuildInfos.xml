@@ -1600,6 +1600,23 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
 			<Button>,Art/Interface/Buttons/Builds/BuildFishingBoats.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,7</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_WHALING_BOATS_KAYAK</Type>
+			<Description>TXT_KEY_BUILD_WHALING_BOATS</Description>
+			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<iTime>0</iTime>
+			<bKill>0</bKill>
+			<ImprovementType>IMPROVEMENT_WHALING_BOATS</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<HotKey>KB_W</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>1</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildWhalingBoats.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,9</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildInfo>
 	</BuildInfos>
 </Civ4BuildInfos>

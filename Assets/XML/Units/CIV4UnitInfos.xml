@@ -232,7 +232,6 @@
 			<Description>TXT_KEY_UNIT_INUIT_DOG_SLED</Description>
 			<Civilopedia>TXT_KEY_UNIT_INUIT_DOG_SLED_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_INUIT_DOG_SLED_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_INUIT_DOG_SLED_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<bFood>1</bFood>
 			<bFound>1</bFound>
@@ -3636,7 +3635,13 @@
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iCityAttack>25</iCityAttack>
+			<UnitCombatMods>
+				<UnitCombatMod>
+					<UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
+					<iUnitCombatMod>25</iUnitCombatMod>
+				</UnitCombatMod>
+			</UnitCombatMods>
+			<iCityAttack>50</iCityAttack>
 			<iConscription>1</iConscription>
 			<iCultureGarrison>5</iCultureGarrison>
 			<iAsset>2</iAsset>
@@ -3653,8 +3658,6 @@
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<LeaderPromotion>PROMOTION_LEADER</LeaderPromotion>
-			<iLeaderExperience>5</iLeaderExperience>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_MACEMAN</Class>
@@ -8207,12 +8210,19 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_WHALING_BOATS_KAYAK</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
 			<PrereqTech>TECH_SAILING</PrereqTech>
 			<iCost>25</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
+			<iWorkRate>100</iWorkRate>
 			<TerrainImpassables>
 				<TerrainImpassable>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
