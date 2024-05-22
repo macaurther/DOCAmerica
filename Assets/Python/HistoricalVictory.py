@@ -210,15 +210,15 @@ dGoals = {
 		EnslaveCount(50, by=1550),
 	),
 	iIroquois: (
-		ControlledResourceCount(iFur, 10, by=1670),
-		ImprovementCount((iAlliedTribe, 10), by=1725),
+		All(ContactTribe(5), by=1450),
 		Control(
             (plots.rectangle(tLakeSuperior).without(lLakeSuperiorExceptions) + plots.of(lLakeSuperiorAdditional)).named(LAKE_SUPERIOR),
             (plots.rectangle(tLakeMichigan).without(lLakeSuperiorExceptions) + plots.of(lLakeMichiganAdditional)).named(LAKE_MICHIGAN),
             (plots.rectangle(tLakeHuron).without(lLakeHuronExceptions) + plots.of(lLakeHuronAdditional)).named(LAKE_HURON),
             (plots.rectangle(tLakeErie) + plots.of(lLakeErieAdditional)).named(LAKE_ERIE),
             (plots.rectangle(tLakeOntario).without(lLakeOntarioExceptions) + plots.of(lLakeOntarioAdditional)).named(LAKE_ONTARIO),
-			at=1750),
+			at=1600),
+		ControlledResourceCount(iFur, 10, by=1700),
 	),
 	iSioux: (
 		Migrations(30, by=1700),

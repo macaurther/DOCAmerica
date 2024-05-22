@@ -4939,17 +4939,16 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRIBES_PEDIA</Tag>
-		<English>[H1]Tribes[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Tribal Villages (also known as Goody Huts or just Huts) are replaced with Tribes. There are three types of Tribes:
+		<English>[H1]Tribes[\H1][PARAGRAPH:2]In Dawn of Civilization: America, Tribal Villages (also known as Goody Huts or just Huts) are replaced with Tribes. There are two types of Tribes:
 [NEWLINE][ICON_BULLET][LINK=IMPROVEMENT_TRIBE]Tribe[\LINK]: An Amerindian tribe that has yet to be contacted by Europeans.
-[ICON_BULLET][LINK=IMPROVEMENT_ALLIED_TRIBE]Allied Tribe[\LINK]: An Amerindian tribe that has allegiance to another Amerindian civilization.
 [ICON_BULLET][LINK=IMPROVEMENT_CONTACTED_TRIBE]Contacted Tribe[\LINK]: An Amerindian tribe that has been contacted by Europeans.
 [PARAGRAPH:1]At the beginning of the game, the map is fairly densely populated by Tribes, roughly corresponding to known Amerindian tribes at the time they were contacted by Europeans, usually between 1500 and 1600 AD. Every 5 turns, an additional Tribe spawns randomly on the map. The main features of Tribes are:
 [NEWLINE][ICON_BULLET]Tribes are no longer simply removed by moving a unit onto them, nor are they removed by cultural border growth. A Tribe can exist within your borders.
 [ICON_BULLET]Tribes can be removed by pillaging; however, the inhabitants of that Tribe will rise up to resist you.
 [ICON_BULLET]Tribes work the land they're on, decreasing yields available to civilizations with Tribes within their borders.
 [H3]Pre-Columbian Interactions:[\H3]
-[ICON_BULLET]Native Civilizations can adopt the [LINK=CIVIC_CONFEDERACY_NATIVE]Confederacy Civic[\LINK] to turn Tribes in their border to Allied Tribes.
-[ICON_BULLET]Allied Tribes connect any resources they may be on and provide a yield boost. Some Civics increased Allied Tribes' yields.
+[ICON_BULLET]Native Civilizations can adopt the [LINK=CIVIC_CONFEDERACY_NATIVE]Confederacy Civic[\LINK] to turn Tribes into Cottages or relevant Resource Improvements.
+[ICON_BULLET]Some Civics increased Tribes' yields.
 [ICON_BULLET]With the [LINK=CIVIC_NOMADS_NATIVE]Nomads Civic[\LINK], you can migrate your cities on top of Tribes, which removes them peacefully.
 [H3]European Interactions:[\H3]
 [ICON_BULLET]Contacted Tribes can be Converted by expending a Missionary. This counts as a religion spread. Converted Tribes turn into the Improvement for the bonus they're on, or a [LINK=IMPROVEMENT_COTTAGE]Cottage[\LINK] if their tile has no bonus. 

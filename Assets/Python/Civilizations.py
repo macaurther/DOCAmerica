@@ -256,7 +256,7 @@ lCivilizations = [
 	Civilization(
 		iIroquois,
 		iGold=200,
-		lCivics=[iChiefdom, iConfederacy1, iHarmony1, iCooperation1],
+		lCivics=[iChiefdom1, iConfederacy1, iHarmony1, iCooperation1],
 		techs=techs.column(3).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(

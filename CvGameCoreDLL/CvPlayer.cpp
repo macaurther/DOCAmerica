@@ -5648,7 +5648,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 				// MacAurther: Native Confederacy Power
 				if (hasCivic(CIVIC_CONFEDERACY_NATIVE))
 				{
-					pPlot->setImprovementType(IMPROVEMENT_ALLIED_TRIBE);
+					pPlot->improveTile();
 				}
 
 				// Python Event

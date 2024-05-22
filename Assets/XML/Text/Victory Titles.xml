@@ -377,14 +377,6 @@
 	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TITLE_IRO1</Tag>
-		<English>Beaver Wars</English>
-		<French>Beaver Wars</French>
-		<German>Beaver Wars</German>
-		<Italian>Beaver Wars</Italian>
-		<Spanish>Beaver Wars</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_IRO2</Tag>
 		<English>The Five Nations</English>
 		<French>The Five Nations</French>
 		<German>The Five Nations</German>
@@ -392,12 +384,20 @@
 		<Spanish>The Five Nations</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_VICTORY_TITLE_IRO3</Tag>
+		<Tag>TXT_KEY_VICTORY_TITLE_IRO2</Tag>
 		<English>Shining Waters</English>
 		<French>Shining Waters</French>
 		<German>Shining Waters</German>
 		<Italian>Shining Waters</Italian>
 		<Spanish>Shining Waters</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TITLE_IRO3</Tag>
+		<English>Beaver Wars</English>
+		<French>Beaver Wars</French>
+		<German>Beaver Wars</German>
+		<Italian>Beaver Wars</Italian>
+		<Spanish>Beaver Wars</Spanish>
 	</TEXT>
 	
 	<TEXT>

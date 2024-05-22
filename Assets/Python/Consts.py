@@ -664,11 +664,11 @@ iNumCultureLevels = 7
 
 #Improvements
 
-iNumImprovements = 30
+iNumImprovements = 29
 #				2				3				4				5				6				7				8				9				10
 (iLandWorked, 	iWaterWorked, 	iCityRuins, 	iFarm, 			iPaddyField, 	iFishingBoats, 	iOceanFishery, 	iWhalingBoats, 	iMine, 			iWorkshop, 
 iLoggingCamp, 	iWindmill, 		iWatermill, 	iPlantation, 	iQuarry, 		iPasture, 		iCamp, 			iWell, 			iOffshorePlatform,iWinery, 		
-iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,iTribe,		iAlliedTribe,	iContactedTribe) = range(iNumImprovements)
+iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,iTribe,		iContactedTribe) = range(iNumImprovements)
 
 iNumRoutes = 3
 (iRouteRoad, iRouteRailroad, iRouteHighway) = range(iNumRoutes)

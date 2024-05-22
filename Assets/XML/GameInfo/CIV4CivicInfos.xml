@@ -730,7 +730,7 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_ALLIED_TRIBE</ImprovementType>
+					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
 					<ImprovementYields>
 						<iYield>1</iYield>
 						<iYield>1</iYield>
@@ -781,7 +781,7 @@
 			<iVassalTradeModifier>100</iVassalTradeModifier>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_ALLIED_TRIBE</ImprovementType>
+					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
 					<ImprovementYields>
 						<iYield>2</iYield>
 					</ImprovementYields>

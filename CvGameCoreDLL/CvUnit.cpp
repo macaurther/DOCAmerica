@@ -5671,7 +5671,7 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 	}
 
 	// MacAurther: Cannot found on top of Tribe or Contacted Tribe
-	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_ALLIED_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
 	{
 		return false;
 	}
