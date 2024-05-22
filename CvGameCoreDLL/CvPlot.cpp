@@ -11580,7 +11580,7 @@ void CvPlot::changeReligionInfluence(ReligionTypes eReligion, int iChange)
 
 bool CvPlot::canSpread(ReligionTypes eReligion) const
 {
-	return getReligionInfluence(eReligion) > 0;
+	return getReligionInfluence(eReligion) > 0 || getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE;	// MacAurther: Can spread to Contacted Tribe
 }
 
 bool CvPlot::isPlains() const

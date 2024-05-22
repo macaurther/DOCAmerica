@@ -324,7 +324,7 @@ int CvArea::countHasReligion(ReligionTypes eReligion, PlayerTypes eOwner) const
 
 int CvArea::countCanSpread(ReligionTypes eReligion, PlayerTypes eOwner, bool bMissionary) const
 {
-	CvCity* pLoopCity;
+	/*CvCity* pLoopCity;
 	int iCount;
 	int iLoop;
 	int iI;
@@ -347,6 +347,27 @@ int CvArea::countCanSpread(ReligionTypes eReligion, PlayerTypes eOwner, bool bMi
 						}
 					}
 				}
+			}
+		}
+	}*/
+
+	// MacAurther: Can spread to more than just cities, can spread to Contacted Tribe Improvements
+	CvPlot* pLoopPlot;
+	int iCount;
+	int iLoop;
+	int iI;
+
+	iCount = 0;
+
+	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	{
+		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+
+		if (pLoopPlot->getArea() == getID())
+		{
+			if (pLoopPlot->canSpread(eReligion))
+			{
+				iCount++;
 			}
 		}
 	}

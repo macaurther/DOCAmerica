@@ -9315,6 +9315,40 @@ std::pair<CvPlot*, CvPlot*> CvUnitAI::AI_spreadTarget(ReligionTypes eReligion, b
 		}
 	}
 
+	// MacAurther: If a Tribe is in the BFC of one of AI's cities, try to convert it too
+	for (pLoopCity = GET_PLAYER(getOwner()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwner()).nextCity(&iLoop))
+	{
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			CvPlot* pPlot = pLoopCity->getCityIndexPlot(iI);
+			if (pPlot != NULL && AI_plotValid(pPlot) && pPlot->area() == area())
+			{
+				if (canSpread(pPlot, eReligion, false, true))
+				{
+					if (!(pPlot->isVisibleEnemyUnit(this)))
+					{
+						if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pPlot, MISSIONAI_SPREAD, getGroup()) == 0)
+						{
+							if (generatePath(pPlot, 0, true, &iPathTurns))
+							{
+								iValue = 100;	// Set to some arbitrary low value so that AI prioritizes cities, but will eventually convert the Tribes in its borders
+								if (iValue > iBestValue)
+								{
+									iBestValue = iValue;
+									pBestPlot = getPathEndTurnPlot();
+									pBestSpreadPlot = pPlot;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		
+	}
+
+
 	return std::make_pair(pBestPlot, pBestSpreadPlot);
 }
 
