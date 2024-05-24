@@ -5323,7 +5323,8 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		}
 	}
 
-	if (GC.getGoodyInfo(eGoody).isTech())
+	// MacAurther: Because every goody now comes with a Native Tech, disable this check so you can still receive a goody after researching all the native techs
+	/*if (GC.getGoodyInfo(eGoody).isTech())
 	{
 		bTechFound = false;
 
@@ -5343,7 +5344,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		{
 			return false;
 		}
-	}
+	}*/
 
 	if (GC.getGoodyInfo(eGoody).isBad())
 	{
@@ -5542,10 +5543,13 @@ void CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 			}
 		}
 
-		FAssertMsg(eBestTech != NO_TECH, "BestTech is not assigned a valid value");
-
-		GET_TEAM(getTeam()).setHasTech(eBestTech, true, getID(), true, true);
-		GET_TEAM(getTeam()).setNoTradeTech(eBestTech, true);
+		// MacAurther: It's possible to find no tech now
+		//FAssertMsg(eBestTech != NO_TECH, "BestTech is not assigned a valid value");
+		if (eBestTech != NO_TECH)
+		{
+			GET_TEAM(getTeam()).setHasTech(eBestTech, true, getID(), true, true);
+			GET_TEAM(getTeam()).setNoTradeTech(eBestTech, true);
+		}
 	}
 
 	if (GC.getGoodyInfo(eGoody).getUnitClassType() != NO_UNITCLASS)

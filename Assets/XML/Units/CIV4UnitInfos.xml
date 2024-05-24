@@ -9251,7 +9251,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</NotUnitAIs>
-			<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
+			<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -11120,6 +11120,7 @@
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bFood>1</bFood>
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
@@ -11173,6 +11174,7 @@
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bFood>1</bFood>
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
@@ -11226,6 +11228,7 @@
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bFood>1</bFood>
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
@@ -11275,6 +11278,7 @@
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bFood>1</bFood>
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
@@ -11325,6 +11329,7 @@
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<bFood>1</bFood>
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>

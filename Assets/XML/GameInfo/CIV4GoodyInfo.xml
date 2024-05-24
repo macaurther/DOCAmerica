@@ -19,7 +19,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -39,7 +39,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -59,7 +59,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -79,7 +79,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>UNITCLASS_SETTLER</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -99,7 +99,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>UNITCLASS_WARRIOR</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -119,7 +119,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>UNITCLASS_SCOUT</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -139,7 +139,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>UNITCLASS_WORKER</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -159,7 +159,7 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -179,7 +179,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>100</iHealing>
 			<iDamagePrereq>60</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>NONE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
@@ -259,7 +259,7 @@
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bTech>0</bTech>
+			<bTech>1</bTech>
 			<bBad>0</bBad>
 			<UnitClass>UNITCLASS_NATIVE_SLAVE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>

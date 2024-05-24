@@ -736,20 +736,28 @@
 		<Spanish>Extra happiness from State Religion; extra commerce from no improvement</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_TRADE_COMPANY</Tag>
-		<English>Trade Company</English>
-		<French>Trade Company</French>
-		<German>Trade Company</German>
-		<Italian>Trade Company</Italian>
-		<Spanish>Trade Company</Spanish>
+		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY</Tag>
+		<English>Trading Company</English>
+		<French>Trading Company</French>
+		<German>Trading Company</German>
+		<Italian>Trading Company</Italian>
+		<Spanish>Trading Company</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_TRADE_COMPANY_STRATEGY</Tag>
-		<English>Extra commerce from camps; can hurry building production with gold</English>
-		<French>Extra commerce from camps; can hurry building production with gold</French>
-		<German>Extra commerce from camps; can hurry building production with gold</German>
-		<Italian>Extra commerce from camps; can hurry building production with gold</Italian>
-		<Spanish>Extra commerce from camps; can hurry building production with gold</Spanish>
+		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY_STRATEGY</Tag>
+		<English>Can hurry building production with gold; Trading Company very likely to spread to your cities</English>
+		<French>Can hurry building production with gold; Trading Company very likely to spread to your cities</French>
+		<German>Can hurry building production with gold; Trading Company very likely to spread to your cities</German>
+		<Italian>Can hurry building production with gold; Trading Company very likely to spread to your cities</Italian>
+		<Spanish>Can hurry building production with gold; Trading Company very likely to spread to your cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY_HELP</Tag>
+		<English>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</English>
+		<French>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</French>
+		<German>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</German>
+		<Italian>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</Italian>
+		<Spanish>[ICON_BULLET]Greatly increases likelihood for Trading Company Corporation to spread to your cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH</Tag>
@@ -989,11 +997,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN_STRATEGY</Tag>
-		<English>Faster production of buildings in cities with your state religion; extra Immigration in capital</English>
-		<French>Faster production of buildings in cities with your state religion; extra Immigration in capital</French>
-		<German>Faster production of buildings in cities with your state religion; extra Immigration in capital</German>
-		<Italian>Faster production of buildings in cities with your state religion; extra Immigration in capital</Italian>
-		<Spanish>Faster production of buildings in cities with your state religion; extra Immigration in capital</Spanish>
+		<English>Faster production of buildings in cities with your state religion; extra Immigration</English>
+		<French>Faster production of buildings in cities with your state religion; extra Immigration</French>
+		<German>Faster production of buildings in cities with your state religion; extra Immigration</German>
+		<Italian>Faster production of buildings in cities with your state religion; extra Immigration</Italian>
+		<Spanish>Faster production of buildings in cities with your state religion; extra Immigration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROFITEERING</Tag>
@@ -2010,6 +2018,14 @@
 		<German>[ICON_BULLET]Freed slaves convert to normal population</German>
 		<Italian>[ICON_BULLET]Freed slaves convert to normal population</Italian>
 		<Spanish>[ICON_BULLET]Freed slaves convert to normal population</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Tag>
+		<English>Extra commerce per excess happiness; reduced commerce from trade routes; faster production of Customs House, Wharf</English>
+		<French>Extra commerce per excess happiness; reduced commerce from trade routes; faster production of Customs House, Wharf</French>
+		<German>Extra commerce per excess happiness; reduced commerce from trade routes; faster production of Customs House, Wharf</German>
+		<Italian>Extra commerce per excess happiness; reduced commerce from trade routes; faster production of Customs House, Wharf</Italian>
+		<Spanish>Extra commerce per excess happiness; reduced commerce from trade routes; faster production of Customs House, Wharf</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_</Tag>

@@ -999,25 +999,16 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
-			<Type>CIVIC_TRADE_COMPANY_COLONY</Type>
-			<Description>TXT_KEY_CIVIC_TRADE_COMPANY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_TRADE_COMPANY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_TRADE_COMPANY_STRATEGY</Strategy>
+			<Type>CIVIC_TRADING_COMPANY_COLONY</Type>
+			<Description>TXT_KEY_CIVIC_TRADING_COMPANY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_TRADING_COMPANY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_TRADING_COMPANY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_TRADING_COMPANY_HELP</Help>
 			<TechPrereq>TECH_ECONOMICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Colonialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
 			<Hurrys>
 				<Hurry>
 					<HurryType>HURRY_GOLD_BUILDINGS</HurryType>
@@ -1300,11 +1291,11 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<CapitalYieldModifiers>
+			<HappinessExtraYields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>50</iYield>
-			</CapitalYieldModifiers>
+				<iYield>1</iYield>
+			</HappinessExtraYields>
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -1458,13 +1449,13 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionBuildingProductionModifier>25</iStateReligionBuildingProductionModifier>
-			<CapitalCommerceModifiers>
+			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>50</iCommerce>
-			</CapitalCommerceModifiers>
+				<iCommerce>25</iCommerce>
+			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -2514,7 +2505,7 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_CHIEFTANS_HUT</BuildingType>
+					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>

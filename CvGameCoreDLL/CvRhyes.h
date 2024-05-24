@@ -26,6 +26,7 @@ typedef list<char*> LISTCHAR;
 #define UNIT_AMERICAN_AGENT		((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))							// MacAurther
 #define UNIT_CANNON				((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))									// MacAurther
 #define UNIT_MIGRANT_WORKER		((UnitTypes)GC.getInfoTypeForString("UNIT_MIGRANT_WORKER"))							// MacAurther
+#define UNIT_NATIVE_SLAVE_COLONY ((UnitTypes)GC.getInfoTypeForString("UNIT_NATIVE_SLAVE_COLONY"))					// MacAurther
 
 #define UNITCLASS_EXPLORER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_EXPLORER"))						// MacAurther
 #define UNITCLASS_RANGER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_RANGER"))						// MacAurther
@@ -112,7 +113,7 @@ enum DoCTechs
 	EVANGELISM,
 
 	FIREARMS,
-	LOGISTICS,
+	TRIANGULAR_TRADE,
 	EXPLORATION,
 	OPTICS,
 	TREATIES,
@@ -128,7 +129,7 @@ enum DoCTechs
 	INDENTURES,
 
 	COMBINED_ARMS,
-	TRIANGULAR_TRADE,
+	LOGISTICS,
 	EXPLOITATION,
 	TIMEKEEPING,
 	COMMUNITY,
@@ -388,7 +389,6 @@ enum DoCBuildings
 	BUILDING_MUSEUM,
 	BUILDING_STOCK_EXCHANGE,
 
-	BUILDING_TRADING_COMPANY,
 	BUILDING_NATIONAL_MONUMENT,
 	BUILDING_NATIONAL_THEATRE,
 	BUILDING_NATIONAL_GALLERY,

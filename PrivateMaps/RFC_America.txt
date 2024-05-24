@@ -7477,7 +7477,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=95
-	BonusType=BONUS_FUR
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot

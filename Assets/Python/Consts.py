@@ -231,7 +231,7 @@ iPurepecha : 1150,
 iAztecs : 1250,
 iIroquois : 1350,
 iSioux : 1450,
-iSpain : -400,#1492,
+iSpain : 1492,
 iPortugal : 1532,
 iEngland : 1607,
 iFrance : 1608,
@@ -433,9 +433,9 @@ iGeneralship,   iCement,        iAesthetics,    iScholarship,   iCodices,       
 iNobility,      iSubjugation,   iArtisanry,     iMedicine,      iLaw,           iEthics,        iPhilosophy,
 iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iExchange, 		iReductions,	iEvangelism,
-iFirearms, 		iLogistics, 	iExploration, 	iOptics, 		iTreaties, 		iOfficials, 	iIndoctrination,
+iFirearms, 		iTriangularTrade,iExploration, 	iOptics, 		iTreaties, 		iOfficials, 	iIndoctrination,
 iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iEducation,		iCharter, 		iIndentures,
-iCombinedArms, 	iTriangularTrade,iExploitation, iTimekeeping, 	iCommunity, 	iPolitics, 		iHorticulture,
+iCombinedArms, 	iLogistics,		iExploitation, iTimekeeping, 	iCommunity, 	iPolitics, 		iHorticulture,
 iTactics,		iCurrency,		iGeography,		iScientificMethod,iUrbanPlanning,iStatecraft,	iSocialContract,
 iReplaceableParts, iFreeMarket,	iNewspapers,	iAcademia, 		iArchitecture, 	iSociology,		iHeritage,
 iRegiments, 	iBonds,			iPostalService,	iMeteorology,	iSurveying,		iRepresentation,iIndependence,
@@ -508,7 +508,7 @@ iGems, 			iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 # Buildings
-iNumBuildings = 226
+iNumBuildings = 225
 # Buildings (120)
 #				2				3				4				5				6				7				8				9				10
 (iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iTipi,
@@ -533,10 +533,10 @@ iZoroastrianShrine,
 # Great Buildings (6)
 #				2				3				4				5				6				7				8				9				10
 iAcademy, 		iAdministrativeCenter, iManufactory, iArmoury, 	iMuseum, 		iStockExchange, 
-# Great Buildings/National Wonders (14)
+# Great Buildings/National Wonders (12)
 #				2				3				4				5				6				7				8				9				10
-iTradingCompanyBuilding,iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAcademy,iSecretService,iIronworks,iRedCross,iNationalPark,
-iCentralBank, 	iGrandCentralStation,iSupremeCourt,
+iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAcademy,iSecretService,iIronworks,iRedCross,		iNationalPark,	iCentralBank, 	
+iGrandCentralStation,iSupremeCourt,
 # Great Wonders (46)
 #				2				3				4				5				6				7				8				9				10
 iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iPuebloBonito,	iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iYachaywasi,	iGateOfTheSun,iGreatGeoglyph,	
@@ -569,7 +569,7 @@ iAnimism1,		iHarmony1,		iIsolationism1,	iOrganizedReligion1,iCosmopolis1,iAccult
 iSettlement1,	iNomads1,		iDiffusion1,	iCooperation1,	iConquest1,		iTributaries1,	iAncestralLands1,
 # Colony
 iCaptains2,		iProprietaries2,iViceroyality2,	iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
-iExpedition2,	iAdmiralty2,	iCharterColony2,iTradeCompany2,	iRoyalColony2,	iCommonLaw2,	iProvinces2,
+iExpedition2,	iAdmiralty2,	iCharterColony2,iTradingCompany2,iRoyalColony2,	iCommonLaw2,	iProvinces2,
 iSerfdom2,		iEncomienda2,	iIndenturedServitude2,iSlavery2,iPenalColony2,	iIndustrialism2,iImmigrantLabor2,
 iGoldRush2,		iPlunder2,		iFactory2,		iMercantilism2,	iCustomsUnion2,	iConsumerism2,	iPublicWelfare2,
 iDivineRight2,	iJesuits2,		iZealotry2,		iHaven2,		iProfiteering2,	iOpportunity2,	iEmancipation2,

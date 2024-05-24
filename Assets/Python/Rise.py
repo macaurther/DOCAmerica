@@ -489,6 +489,7 @@ class Birth(object):
 		return closePlots
 	
 	def revealTerritory(self):
+		# MacAurther Note: Peer and Neighbor Reveal were great features, but they slowed the spawn turn for later Europeans way down on a large map, so they were removed.
 		# reset visibility
 		for plot in plots.all():
 			plot.setRevealed(self.player.getID(), False, False, -1)
@@ -502,11 +503,11 @@ class Birth(object):
 			independenceRevealed = plots.sum(plots.owner(iOwner) for iOwner in self.area.cities().owners().major())
 		
 		# revealed by enough neighbours
-		neighbours = self.area.expand(3).owners().major().without(self.iPlayer)
-		neighbourRevealed = plots.sum(self.closeNeighbourPlots(iNeighbour) for iNeighbour in neighbours)
+		'''neighbours = self.area.expand(3).owners().major().without(self.iPlayer)
+		neighbourRevealed = plots.sum(self.closeNeighbourPlots(iNeighbour) for iNeighbour in neighbours)'''
 		
 		# revealed by enough civilizations in your tech group
-		iTechGroup = next(iGroup for iGroup in dTechGroups if self.iCiv in dTechGroups[iGroup])
+		'''iTechGroup = next(iGroup for iGroup in dTechGroups if self.iCiv in dTechGroups[iGroup])
 		peers = players.major().existing().without(self.iPlayer).where(lambda p: civ(p) in dTechGroups[iTechGroup])
 		peerRevealed = plots.none()
 		
@@ -518,18 +519,18 @@ class Birth(object):
 			peerRevealed += plots.all().where(isPeerRevealed).expand(1)
 		
 		bCanNeighbourReveal = revealed.intersect(neighbourRevealed)
-		bCanPeerReveal = revealed.intersect(peerRevealed)
+		bCanPeerReveal = revealed.intersect(peerRevealed)'''
 		
 		revealed += independenceRevealed
 		
-		if bCanNeighbourReveal:
+		'''if bCanNeighbourReveal:
 			revealed += neighbourRevealed
 			
 		iVisionRange = self.player.getCurrentEra() / 2 + 1
 		revealed = revealed.expand(iVisionRange)
 		
 		if bCanPeerReveal:
-			revealed += peerRevealed
+			revealed += peerRevealed'''
 		
 		# reveal tiles
 		for plot in revealed:

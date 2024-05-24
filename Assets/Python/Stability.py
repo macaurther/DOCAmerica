@@ -1216,7 +1216,7 @@ def getCivicStability(iPlayer, civics=None):
 	
 	if iTrustees2 in civics:
 		if iAdmiralty2 in civics: iStability -= 2
-		if iTradeCompany2 in civics: iStability += 2
+		if iTradingCompany2 in civics: iStability += 2
 		if iEncomienda2 in civics: iStability -= 2
 		if iSlavery2 in civics: iStability -= 2
 		if iFactory2 in civics: iStability += 2
@@ -1227,7 +1227,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iOutposts2 in civics: iStability -= 2
 	
 	if iGovernors2 in civics:
-		if iTradeCompany2 in civics: iStability -= 2
+		if iTradingCompany2 in civics: iStability -= 2
 		if iRoyalColony2 in civics: iStability += 2
 		if iIndenturedServitude2 in civics: iStability += 2
 		if iIndustrialism2 in civics: iStability -= 2
@@ -1283,7 +1283,7 @@ def getCivicStability(iPlayer, civics=None):
 		if iProvidence2 in civics: iStability += 2
 		if iIntervention2 in civics: iStability -= 2
 	
-	if iTradeCompany2 in civics:
+	if iTradingCompany2 in civics:
 		if iSlavery2 in civics: iStability += 2
 		if iPenalColony2 in civics: iStability -= 2
 		if iFactory2 in civics: iStability += 2

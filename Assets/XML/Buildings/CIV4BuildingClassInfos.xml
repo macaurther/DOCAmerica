@@ -1147,15 +1147,6 @@
 			<DefaultBuilding>BUILDING_STOCK_EXCHANGE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_TRADING_COMPANY</Type>
-			<Description>TXT_KEY_BUILDING_TRADING_COMPANY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_TRADING_COMPANY</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_NATIONAL_MONUMENT</Type>
 			<Description>TXT_KEY_BUILDING_NATIONAL_MONUMENT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

@@ -2079,34 +2079,39 @@
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Firearms.dds</Button>
 		</TechInfo>
-
+		
 		<TechInfo>
-			<Type>TECH_LOGISTICS</Type>
-			<Description>TXT_KEY_TECH_LOGISTICS</Description>
-			<Civilopedia>TXT_KEY_TECH_LOGISTICS_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<Type>TECH_TRIANGULAR_TRADE</Type>
+			<Description>TXT_KEY_TECH_TRIANGULAR_TRADE</Description>
+			<Civilopedia>TXT_KEY_TECH_TRIANGULAR_TRADE_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>300</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_EXPLORATION</Era>
-			<iAsset>40</iAsset>
+			<iAsset>4</iAsset>
+			<iPower>4</iPower>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>10</iGridX>
 			<iGridY>3</iGridY>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>5</iFlavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>4</iFlavor>
+				</Flavor>
+				<Flavor>
+					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
+					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_COMPANIES</PrereqTech>
 				<PrereqTech>TECH_FINANCE</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_LOGISTICS_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_TRIANGULAR_TRADE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>,Art/Interface/Buttons/TechTree/Logistics.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/Triangular_trade.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2346,7 +2351,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_LOGISTICS</PrereqTech>
+				<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
 				<PrereqTech>TECH_FIREARMS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ECONOMICS_QUOTE</Quote>
@@ -2380,7 +2385,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_LOGISTICS</PrereqTech>
+				<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
 				<PrereqTech>TECH_EXPLORATION</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_COLONIZATION_QUOTE</Quote>
@@ -2453,6 +2458,7 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_TREATIES</PrereqTech>
 				<PrereqTech>TECH_OPTICS</PrereqTech>
+				<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_EDUCATION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -2485,8 +2491,8 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
+				<PrereqTech>TECH_INDOCTRINATION</PrereqTech>
 				<PrereqTech>TECH_OFFICIALS</PrereqTech>
-				<PrereqTech>TECH_TREATIES</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CHARTER_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -2518,12 +2524,8 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_LOGISTICS</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_INDOCTRINATION</PrereqTech>
-				<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_INDENTURES_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -2570,40 +2572,32 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_TRIANGULAR_TRADE</Type>
-			<Description>TXT_KEY_TECH_TRIANGULAR_TRADE</Description>
-			<Civilopedia>TXT_KEY_TECH_TRIANGULAR_TRADE_PEDIA</Civilopedia>
-			<Advisor>ADVISOR_MILITARY</Advisor>
+			<Type>TECH_LOGISTICS</Type>
+			<Description>TXT_KEY_TECH_LOGISTICS</Description>
+			<Civilopedia>TXT_KEY_TECH_LOGISTICS_PEDIA</Civilopedia>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
-			<iAsset>4</iAsset>
-			<iPower>4</iPower>
+			<iAsset>40</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>12</iGridX>
 			<iGridY>3</iGridY>
 			<Flavors>
 				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>4</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>2</iFlavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>5</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_ECONOMICS</PrereqTech>
 				<PrereqTech>TECH_COLONIZATION</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_TRIANGULAR_TRADE_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_LOGISTICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Triangular_trade.dds</Button>
+			<Button>,Art/Interface/Buttons/TechTree/Logistics.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -2614,6 +2608,7 @@
 			<iCost>600</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_COLONIAL</Era>
+			<iFeatureProductionModifier>50</iFeatureProductionModifier>
 			<iAsset>4</iAsset>
 			<iPower>4</iPower>
 			<bTrade>1</bTrade>
@@ -2839,7 +2834,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_COMBINED_ARMS</PrereqTech>
-				<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
+				<PrereqTech>TECH_LOGISTICS</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CURRENCY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -2871,7 +2866,7 @@
 				</Flavor>
 			</Flavors>
 			<AndPreReqs>
-				<PrereqTech>TECH_TRIANGULAR_TRADE</PrereqTech>
+				<PrereqTech>TECH_LOGISTICS</PrereqTech>
 				<PrereqTech>TECH_EXPLOITATION</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_GEOGRAPHY_QUOTE</Quote>

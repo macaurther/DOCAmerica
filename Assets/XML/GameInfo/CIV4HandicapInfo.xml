@@ -81,10 +81,6 @@
 				<GoodyType>GOODY_SLAVE</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
 			</Goodies>
 			<FreeTechs>
 				<FreeTech>
@@ -171,10 +167,6 @@
 				<GoodyType>GOODY_SLAVE</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>
@@ -252,10 +244,6 @@
 				<GoodyType>GOODY_SLAVE</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>
@@ -333,10 +321,6 @@
 				<GoodyType>GOODY_SLAVE</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>
@@ -414,9 +398,6 @@
 				<GoodyType>GOODY_SLAVE</GoodyType>
 				<GoodyType>GOODY_EXPERIENCE</GoodyType>
 				<GoodyType>GOODY_HEALING</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
-				<GoodyType>GOODY_TECH</GoodyType>
 			</Goodies>
 			<FreeTechs/>
 			<AIFreeTechs/>

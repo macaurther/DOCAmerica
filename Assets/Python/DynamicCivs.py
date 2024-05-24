@@ -724,7 +724,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_NETHERLANDS_UNITED_KINGDOM_OF"
 	
 	elif iCiv == iCanada:
-		if civic.iExecutive == iTradeCompany2:
+		if civic.iExecutive == iTradingCompany2:
 			return "TXT_KEY_CIV_CANADA_RUPERTS"
 	
 	elif iCiv == iAmerica:

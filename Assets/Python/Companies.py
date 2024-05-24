@@ -96,8 +96,8 @@ def getCityValue(city, iCompany):
 	ownerTeam = team(city)
 
 	# Trade Company Civic increases likeliness for trading company
-	if iCompany == iTradingCompany and has_civic(owner, iTradeCompany2):
-		iValue += 4
+	if iCompany == iTradingCompany and has_civic(owner, iTradingCompany2):
+		iValue += 100
 
 	# Free Enterprise increases likeliness for all companies
 	if has_civic(owner, iFreeEnterprise3):
@@ -111,8 +111,6 @@ def getCityValue(city, iCompany):
 			iValue += 3
 			
 	elif iCompany == iTradingCompany:
-		if city not in cities.region(rCaribbean) and not city.isHasRealBuilding(unique_building(city.getOwner(), iTradingCompanyBuilding)):
-			return -1
 		if city in cities.region(rCaribbean):
 			iValue += 1
 	
@@ -130,7 +128,6 @@ def getCityValue(city, iCompany):
 		if city.hasBuilding(unique_building(iOwner, iCustomsHouse)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iBank)): iValue += 1
 		if city.hasBuilding(unique_building(iOwner, iWarehouse)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iTradingCompanyBuilding)): iValue += 2
 
 	elif iCompany == iCerealIndustry:
 		if city.hasBuilding(unique_building(iOwner, iGranary)): iValue += 1

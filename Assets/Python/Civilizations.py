@@ -276,8 +276,8 @@ lCivilizations = [
 		iPortugal,
 		iGold=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iProprietaries2, iAdmiralty2, iSerfdom2, iGoldRush2, iDivineRight2, iClaims2],
-		techs=techs.column(8).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics).without(*lNativeTechs)
+		lCivics=[iProprietaries2, iAdmiralty2, iSlavery2],
+		techs=techs.column(8).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade).without(*lNativeTechs)
 	),
 	Civilization(
 		iEngland,
@@ -297,7 +297,7 @@ lCivilizations = [
 		iNetherlands,
 		iGold=600,
 		iStateReligion=iProtestantism,
-		lCivics=[iTrustees2, iTradeCompany2, iSerfdom2, iFactory2, iDivineRight2, iOutposts2],
+		lCivics=[iTrustees2, iTradingCompany2, iSerfdom2, iFactory2, iDivineRight2, iOutposts2],
 		techs=techs.column(10).including(iFortification, iEconomics, iShipbuilding, iEducation).without(*lNativeTechs)
 	),
 	Civilization(
@@ -310,7 +310,7 @@ lCivilizations = [
 		iRussia,
 		iGold=200,
 		iStateReligion=iOrthodoxy,
-		lCivics=[iTrustees2, iTradeCompany2, iIndenturedServitude2, iFactory2, iProfiteering2, iOutposts2],
+		lCivics=[iTrustees2, iTradingCompany2, iIndenturedServitude2, iFactory2, iProfiteering2, iOutposts2],
 		techs=techs.column(12).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
 	),
 	Civilization(
@@ -883,16 +883,13 @@ dBuildingPreferences = {
 		iCristoRedentor: 20,
 	},
 	iEngland : {
-		iTradingCompanyBuilding: 50,
 		iNationalGallery: 20,
 	},
 	iFrance : {
 		iChateauFrontenac: 20,
 		iFrenchQuarter: 20,
-		iTradingCompanyBuilding: 40,
 	},
 	iNetherlands : {
-		iTradingCompanyBuilding: 60,
 	},
 	iAmerica : {
 		iIndendenceHall: 40,

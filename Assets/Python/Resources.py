@@ -74,7 +74,7 @@ dResourcesDict = {
 	(27, 77)  : (1600,  iCotton),  	# Mississippi
 	(22, 76)  : (1600,  iCotton),  	# Texas
 	(17, 73)  : (1600,  iCotton),  	# Texas
-	(50, 87)  : (1600,  iPotato),  	# New Brunswick
+	(49, 87)  : (1600,  iPotato),  	# New Brunswick
 	(33, 87)  : (1600,  iPotato),  	# Michigan
 	(24, 96)  : (1600,  iPotato),  	# North Dakota
 	(16, 93)  : (1600,  iPotato),  	# Idaho
