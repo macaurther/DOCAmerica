@@ -3259,7 +3259,8 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 
 					// MacAurther: Portuguese UP
-					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && pMissionPlot->getBonusType() != NO_BONUS)
+					if (eBuild != NO_BUILD && GET_PLAYER(pSelectedUnit->getOwner()).getCivilizationType() == PORTUGAL && eBuild != IMPROVEMENT_CONTACTED_TRIBE &&
+						pMissionPlot->getBonusType() != NO_BONUS && GET_TEAM(GET_PLAYER(pSelectedUnit->getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pMissionPlot->getBonusType()).getTechReveal()))
 					{
 						iNowWorkRate = 5000;
 						
