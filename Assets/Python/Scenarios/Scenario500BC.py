@@ -19,10 +19,12 @@ lCivilizations = [
 		techs=techs.column(2).including(iTanning, iMythology)
 	),
 	Civilization(
-		iIndependent
+		iIndependent,
+		techs=techs.column(2)
 	),
 	Civilization(
-		iIndependent2
+		iIndependent2,
+		techs=techs.column(2)
 	),
 	Civilization(
 		iIndependent3
