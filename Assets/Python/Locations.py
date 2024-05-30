@@ -10,7 +10,7 @@ tColonistCuba = 		((37, 62), (30, 62))
 tColonistBermuda = 		((40, 69), (32, 70))
 tColonistArgentina = 	((30, 5), (23, 10))
 #  Portugal
-tColonistBrazil1 = 		((42, 11), (38, 16))
+tColonistBrazil1 = 		((42, 11), (39, 16))
 tColonistBrazil2 = 		((58, 21), (55, 24))
 #  England
 tColonistVirginia = 	((46, 77), (38, 77))

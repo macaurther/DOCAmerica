@@ -55,18 +55,21 @@ def setup():
 
 # initialise bonuses variables
 dResourcesDict = {
-	(13, 63)  : (1550,  iHorse),  	# 
-	(15, 89)  : (1550,  iHorse),  	# 
-	(22, 79)  : (1550,  iHorse),  	# 
-	(24, 88)  : (1550,  iHorse),  	# 
-	(25, 28)  : (1550,  iHorse),  	# 
-	(26, 14)  : (1550,  iHorse),  	# 
-	(28, 63)  : (1550,  iHorse),  	# 
-	(31, 46)  : (1550,  iHorse),  	# 
-	(31, 79)  : (1550,  iHorse),  	# 
-	(37, 75)  : (1550,  iHorse),  	#
-	(39, 19)  : (1550,  iHorse),  	# 
-	(45, 91)  : (1550,  iHorse),  	# 
+	(13, 63)  : (1550,  iHorse),  	# Mexico
+	(15, 89)  : (1550,  iHorse),  	# Utah
+	(22, 79)  : (1550,  iHorse),  	# Texas
+	(24, 88)  : (1550,  iHorse),  	# Nebraska
+	(28, 63)  : (1550,  iHorse),  	# Cuba
+	(31, 79)  : (1550,  iHorse),  	# Kentucky
+	(37, 75)  : (1550,  iHorse),  	# North Carolina
+	(45, 91)  : (1550,  iHorse),  	# Quebec
+	(20, 11)  : (1550,  iHorse),  	# Argentina
+	(24, 28)  : (1550,  iHorse),  	# Peru
+	(26, 13)  : (1550,  iHorse),  	# Argentina
+	(27, 16)  : (1550,  iHorse),  	# Argentina
+	(30, 46)  : (1550,  iHorse),  	# Colombia
+	(37, 45)  : (1550,  iHorse),  	# Venezuela
+	(56, 27)  : (1550,  iHorse),  	# Brazil
 	(32, 72)  : (1600,  iCotton),  	# Georgia
 	(35, 73)  : (1600,  iCotton),  	# South Carolina
 	(34, 75)  : (1600,  iCotton),  	# North Carolina

@@ -60,6 +60,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=0,y=6
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -665,8 +666,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=4
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	TerrainType=TERRAIN_SNOW
+	PlotType=2
 EndPlot
 BeginPlot
 	x=1,y=5
@@ -926,6 +927,7 @@ EndPlot
 BeginPlot
 	x=1,y=56
 	BonusType=BONUS_BANANA
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -1264,11 +1266,11 @@ EndPlot
 BeginPlot
 	x=2,y=1
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=2,y=2
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
 BeginPlot
@@ -1279,12 +1281,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=2,y=4
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
 BeginPlot
 	x=2,y=5
-	TerrainType=TERRAIN_TUNDRA
+	BonusType=BONUS_OBSIDIAN
+	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
 BeginPlot
@@ -1877,12 +1880,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=1
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
 BeginPlot
 	x=3,y=2
-	TerrainType=TERRAIN_TUNDRA
+	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
 BeginPlot
@@ -1894,7 +1897,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=4
-	TerrainType=TERRAIN_SEMIDESERT
+	BonusType=BONUS_COAL
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
@@ -1925,7 +1930,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=10
-	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -2493,7 +2497,7 @@ EndPlot
 BeginPlot
 	x=4,y=1
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=4,y=2
@@ -2502,13 +2506,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=3
-	TerrainType=TERRAIN_SEMIDESERT
+	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
 BeginPlot
 	x=4,y=4
-	BonusType=BONUS_OIL
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
@@ -2525,7 +2531,7 @@ BeginPlot
 	x=4,y=7
 	BonusType=BONUS_COAL
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=4,y=8
@@ -3135,8 +3141,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=5
-	BonusType=BONUS_SHEEP
-	TerrainType=TERRAIN_SEMIDESERT
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
@@ -3740,6 +3746,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=2
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -3755,7 +3762,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=5
-	TerrainType=TERRAIN_SEMIDESERT
+	BonusType=BONUS_COAL
+	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
@@ -3778,6 +3787,7 @@ EndPlot
 BeginPlot
 	x=6,y=9
 	BonusType=BONUS_POTATO
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
@@ -4382,7 +4392,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=4
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -5020,8 +5029,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=5
+	BonusType=BONUS_SHEEP
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=8,y=6
@@ -5041,7 +5052,7 @@ EndPlot
 BeginPlot
 	x=8,y=9
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=8,y=10
@@ -5590,6 +5601,7 @@ EndPlot
 BeginPlot
 	x=8,y=113
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -5676,18 +5688,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=7
-	BonusType=BONUS_SHEEP
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=9,y=8
+	BonusType=BONUS_COAL
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=9,y=9
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -5706,7 +5718,7 @@ EndPlot
 BeginPlot
 	x=9,y=12
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=9,y=13
@@ -6095,6 +6107,7 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	BonusType=BONUS_SILVER
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
@@ -6316,7 +6329,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=3
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -6328,27 +6340,29 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=5
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=10,y=6
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=7
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	BonusType=BONUS_SHEEP
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=8
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=10,y=9
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -6367,7 +6381,7 @@ BeginPlot
 	isWOfRiver
 	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=10,y=13
@@ -6641,6 +6655,7 @@ EndPlot
 BeginPlot
 	x=10,y=66
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -6815,6 +6830,7 @@ EndPlot
 BeginPlot
 	x=10,y=96
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -6936,6 +6952,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -7004,12 +7021,13 @@ EndPlot
 BeginPlot
 	x=11,y=8
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=9
+	BonusType=BONUS_OBSIDIAN
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=11,y=10
@@ -7029,7 +7047,7 @@ EndPlot
 BeginPlot
 	x=11,y=13
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=11,y=14
@@ -7231,6 +7249,7 @@ EndPlot
 BeginPlot
 	x=11,y=53
 	BonusType=BONUS_BANANA
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -7496,6 +7515,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -7574,6 +7594,7 @@ EndPlot
 BeginPlot
 	x=11,y=110
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -7685,12 +7706,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=7
+	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=12,y=8
-	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -7702,23 +7724,23 @@ EndPlot
 BeginPlot
 	x=12,y=10
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=11
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
 	x=12,y=12
+	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=12,y=13
-	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=12,y=14
@@ -7852,7 +7874,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=40
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -8025,6 +8046,7 @@ BeginPlot
 	x=12,y=71
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -8063,6 +8085,7 @@ EndPlot
 BeginPlot
 	x=12,y=77
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -8359,28 +8382,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=7
-	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=8
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=9
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=13,y=10
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=13,y=11
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=0
 EndPlot
 BeginPlot
@@ -8390,13 +8413,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=13
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=13,y=14
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=13,y=15
@@ -8520,7 +8544,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=39
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -8650,6 +8673,7 @@ BeginPlot
 	x=13,y=63
 	isNOfRiver
 	RiverWEDirection=3
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=12
@@ -8690,6 +8714,7 @@ EndPlot
 BeginPlot
 	x=13,y=70
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -8907,6 +8932,7 @@ EndPlot
 BeginPlot
 	x=13,y=103
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -9062,13 +9088,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=10
-	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=11
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	BonusType=BONUS_STONE
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=14,y=12
@@ -9078,17 +9105,17 @@ EndPlot
 BeginPlot
 	x=14,y=13
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=14,y=14
-	BonusType=BONUS_ALUMINUM
-	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=14,y=15
+	x=14,y=14
 	TerrainType=TERRAIN_PLAINS
+	PlotType=0
+EndPlot
+BeginPlot
+	x=14,y=15
+	BonusType=BONUS_TOBACCO
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -9651,6 +9678,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -9732,22 +9760,24 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=8
+	BonusType=BONUS_DEER
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=15,y=9
-	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=10
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=11
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
@@ -9763,19 +9793,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=14
-	TerrainType=TERRAIN_PLAINS
+	BonusType=BONUS_COPPER
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=15
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=15,y=16
 	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=15,y=17
@@ -10307,6 +10339,7 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -10405,6 +10438,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=5
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -10420,7 +10454,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=8
-	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -10431,20 +10464,25 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=10
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=11
-	RiverNSDirection=0
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=1
 	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=12
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	BonusType=BONUS_DEER
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=13
@@ -10458,18 +10496,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=15
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=16
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=16,y=17
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=16,y=18
@@ -10718,6 +10756,7 @@ EndPlot
 BeginPlot
 	x=16,y=66
 	BonusType=BONUS_COCOA
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -10750,6 +10789,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	BonusType=BONUS_TOBACCO
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -10785,6 +10825,7 @@ EndPlot
 BeginPlot
 	x=16,y=77
 	BonusType=BONUS_TOBACCO
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -11117,35 +11158,44 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=8
+	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=9
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=10
-	BonusType=BONUS_WINE
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=11
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_PRAIRIE
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=12
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	BonusType=BONUS_COTTON
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
 EndPlot
 BeginPlot
 	x=17,y=13
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
 BeginPlot
@@ -11170,8 +11220,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=18
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=17,y=19
@@ -11410,6 +11461,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=65
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -11792,56 +11844,55 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=9
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=10
-	RiverNSDirection=2
-	isWOfRiver
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=11
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=12
-	RiverNSDirection=0
-	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=13
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=2
 EndPlot
 BeginPlot
 	x=18,y=14
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_MARBLE
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=18,y=15
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=18,y=16
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	BonusType=BONUS_GOLD
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=18,y=17
@@ -11870,7 +11921,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=22
-	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -11911,6 +11961,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=30
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -12456,6 +12507,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=8
+	BonusType=BONUS_CITRUS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -12466,45 +12519,45 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=10
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=11
-	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=12
-	TerrainType=TERRAIN_PLAINS
+	BonusType=BONUS_WINE
+	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=13
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_PRAIRIE
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=14
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	BonusType=BONUS_IRON
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=15
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	TerrainType=TERRAIN_SALTFLAT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=19,y=16
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=19,y=17
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=18
@@ -12513,12 +12566,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=19
-	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=20
+	BonusType=BONUS_COTTON
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -12574,7 +12628,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=31
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -12616,7 +12669,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=39
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
@@ -12863,6 +12916,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=85
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
@@ -12969,6 +13023,7 @@ EndPlot
 BeginPlot
 	x=19,y=102
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -13111,6 +13166,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=5
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -13131,8 +13187,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=9
+	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=10
@@ -13142,12 +13199,12 @@ EndPlot
 BeginPlot
 	x=20,y=11
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=12
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=13
@@ -13157,19 +13214,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=14
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=20,y=15
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
+	x=20,y=15
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_SALTFLAT
+	PlotType=2
+EndPlot
+BeginPlot
 	x=20,y=16
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -13179,8 +13235,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=18
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	BonusType=BONUS_COPPER
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=19
@@ -13209,6 +13266,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=24
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -13240,51 +13298,61 @@ EndPlot
 BeginPlot
 	x=20,y=30
 	TerrainType=TERRAIN_DESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=31
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=32
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=33
-	BonusType=BONUS_DYE
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_TOBACCO
+	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=34
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=35
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_DESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=36
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=37
-	TerrainType=TERRAIN_SEMIDESERT
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
+	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=20,y=38
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	BonusType=BONUS_CLAM
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=20,y=39
@@ -13807,63 +13875,79 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=8
+	BonusType=BONUS_DEER
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=9
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=10
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=11
-	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=12
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=13
-	TerrainType=TERRAIN_PLAINS
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=14
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=21,y=15
-	isNOfRiver
-	RiverWEDirection=1
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=21,y=16
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SALTLAKE
 	PlotType=3
 EndPlot
 BeginPlot
+	x=21,y=16
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_SILVER
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=21,y=17
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=21,y=18
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_SALTFLAT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=19
@@ -13873,6 +13957,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=20
+	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -13908,7 +13993,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=27
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -13918,7 +14003,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=29
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_DYE
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -13929,27 +14014,26 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=31
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=21,y=32
-	RiverNSDirection=0
-	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
+	TerrainType=TERRAIN_DESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=21,y=33
-	RiverNSDirection=0
-	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	BonusType=BONUS_CITRUS
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=21,y=34
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -13960,24 +14044,25 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=36
+	BonusType=BONUS_STONE
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=21,y=37
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_DYE
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=21,y=38
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
-	x=21,y=37
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=21,y=38
-	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
-EndPlot
-BeginPlot
 	x=21,y=39
-	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -14065,6 +14150,7 @@ EndPlot
 BeginPlot
 	x=21,y=56
 	BonusType=BONUS_BANANA
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -14161,6 +14247,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=73
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -14173,6 +14260,7 @@ EndPlot
 BeginPlot
 	x=21,y=75
 	BonusType=BONUS_WHEAT
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14199,6 +14287,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14372,6 +14461,7 @@ EndPlot
 BeginPlot
 	x=21,y=108
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -14482,31 +14572,35 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=7
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	BonusType=BONUS_CITRUS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=8
-	BonusType=BONUS_WHEAT
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=9
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=22,y=10
-	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=22,y=11
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=22,y=12
@@ -14517,32 +14611,34 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=13
-	RiverNSDirection=2
-	isWOfRiver
-	BonusType=BONUS_CORN
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=14
-	isNOfRiver
-	RiverWEDirection=1
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=15
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	TerrainType=TERRAIN_SALTFLAT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=16
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	BonusType=BONUS_POTATO
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=17
-	TerrainType=TERRAIN_SEMIDESERT
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -14552,12 +14648,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=19
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=22,y=20
-	TerrainType=TERRAIN_SALTFLAT
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -14597,8 +14693,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=28
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_DESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=22,y=29
@@ -14607,14 +14703,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=30
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	BonusType=BONUS_COW
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=22,y=31
-	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=22,y=32
@@ -14623,64 +14719,59 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=33
-	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=22,y=34
+	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=22,y=35
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=22,y=36
-	BonusType=BONUS_GOLD
+	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=22,y=36
+	TerrainType=TERRAIN_PLAINS
+	PlotType=0
+EndPlot
+BeginPlot
 	x=22,y=37
-	BonusType=BONUS_STONE
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=22,y=38
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=22,y=39
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
-	x=22,y=40
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
+	x=22,y=39
+	TerrainType=TERRAIN_COAST
+	PlotType=3
+EndPlot
+BeginPlot
+	x=22,y=40
+	BonusType=BONUS_COCOA
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=22,y=41
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=22,y=42
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -14936,6 +15027,7 @@ EndPlot
 BeginPlot
 	x=22,y=87
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -15172,7 +15264,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=6
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -15182,89 +15274,94 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=8
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=9
-	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=23,y=10
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=23,y=11
 	RiverNSDirection=2
 	isWOfRiver
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=23,y=12
-	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=1
-	isWOfRiver
-	BonusType=BONUS_COW
-	TerrainType=TERRAIN_PLAINS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=13
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=14
+	RiverNSDirection=2
+	isWOfRiver
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=23,y=15
+	RiverNSDirection=2
+	isWOfRiver
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=23,y=16
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=23,y=17
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=23,y=18
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=23,y=15
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	x=23,y=19
+	TerrainType=TERRAIN_SALTFLAT
+	PlotType=0
 EndPlot
 BeginPlot
-	x=23,y=16
-	BonusType=BONUS_STONE
+	x=23,y=20
+	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=23,y=17
-	TerrainType=TERRAIN_COAST
-	PlotType=3
-EndPlot
-BeginPlot
-	x=23,y=18
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=23,y=19
+	x=23,y=21
 	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
-	x=23,y=20
-	TerrainType=TERRAIN_SALTLAKE
-	PlotType=3
-EndPlot
-BeginPlot
-	x=23,y=21
-	BonusType=BONUS_SHEEP
+	x=23,y=22
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
-EndPlot
-BeginPlot
-	x=23,y=22
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
 EndPlot
 BeginPlot
 	x=23,y=23
@@ -15273,13 +15370,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=24
-	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=25
-	TerrainType=TERRAIN_DESERT
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -15289,8 +15386,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=27
-	BonusType=BONUS_DYE
-	TerrainType=TERRAIN_DESERT
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
 BeginPlot
@@ -15300,61 +15397,45 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=29
-	BonusType=BONUS_STONE
-	TerrainType=TERRAIN_SEMIDESERT
+	BonusType=BONUS_CITRUS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=30
-	RiverNSDirection=0
-	isWOfRiver
-	BonusType=BONUS_POTATO
+	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=31
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=32
-	RiverNSDirection=0
-	isWOfRiver
-	BonusType=BONUS_LLAMA
+	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=33
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=34
-	RiverNSDirection=0
-	isWOfRiver
-	BonusType=BONUS_POTATO
+	BonusType=BONUS_GOLD
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=35
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=36
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -15365,28 +15446,29 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=38
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=23,y=39
-	BonusType=BONUS_OBSIDIAN
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
+	x=23,y=39
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=23,y=40
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=23,y=41
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=23,y=42
@@ -15437,6 +15519,7 @@ EndPlot
 BeginPlot
 	x=23,y=51
 	BonusType=BONUS_BANANA
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -15502,6 +15585,7 @@ EndPlot
 BeginPlot
 	x=23,y=62
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -15876,6 +15960,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=6
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -15887,93 +15972,102 @@ EndPlot
 BeginPlot
 	x=24,y=8
 	TerrainType=TERRAIN_COAST
-	PlotType=3
+	PlotType=31,
 EndPlot
 BeginPlot
 	x=24,y=9
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
-	PlotType=3
+	PlotType=31,
 EndPlot
 BeginPlot
 	x=24,y=10
 	TerrainType=TERRAIN_COAST
-	PlotType=3
+	PlotType=31,
 EndPlot
 BeginPlot
 	x=24,y=11
-	RiverNSDirection=2
-	isWOfRiver
-	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=24,y=12
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=13
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=14
-	TerrainType=TERRAIN_PLAINS
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=15
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=16
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=24,y=17
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=24,y=18
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_WINE
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=24,y=19
 	RiverNSDirection=2
 	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=24,y=17
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=24,y=18
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=24,y=19
-	TerrainType=TERRAIN_SALTFLAT
-	PlotType=0
-EndPlot
-BeginPlot
 	x=24,y=20
 	TerrainType=TERRAIN_SALTFLAT
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=24,y=21
 	TerrainType=TERRAIN_SALTFLAT
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=22
+	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SALTFLAT
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=23
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
+	BonusType=BONUS_OBSIDIAN
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=24
@@ -15997,37 +16091,35 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=28
-	BonusType=BONUS_COTTON
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=29
-	RiverNSDirection=0
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=30
-	isNOfRiver
-	RiverWEDirection=3
+	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=31
+	BonusType=BONUS_LLAMA
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=32
 	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=33
-	BonusType=BONUS_GOLD
+	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -16043,13 +16135,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=36
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=24,y=37
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -16065,13 +16160,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=40
+	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=24,y=41
-	BonusType=BONUS_BANANA
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_COCOA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -16285,6 +16383,7 @@ EndPlot
 BeginPlot
 	x=24,y=78
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -16573,73 +16672,79 @@ EndPlot
 BeginPlot
 	x=25,y=8
 	TerrainType=TERRAIN_COAST
-	PlotType=3
+	PlotType=31,
 EndPlot
 BeginPlot
 	x=25,y=9
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=31,
 EndPlot
 BeginPlot
 	x=25,y=10
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=21,
 EndPlot
 BeginPlot
 	x=25,y=11
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=25,y=12
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
+	BonusType=BONUS_COW
+	TerrainType=TERRAIN_PLAINS
+	PlotType=21,
+EndPlot
+BeginPlot
+	x=25,y=12
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=13
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=14
-	isNOfRiver
-	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=15
-	TerrainType=TERRAIN_PLAINS
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=16
-	BonusType=BONUS_WHEAT
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=17
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=25,y=18
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=2
+EndPlot
+BeginPlot
+	x=25,y=18
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_POTATO
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=19
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=20
@@ -16648,7 +16753,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=21
-	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
@@ -16664,15 +16768,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=24
-	RiverNSDirection=2
-	isWOfRiver
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=25
-	TerrainType=TERRAIN_SEMIDESERT
+	BonusType=BONUS_COTTON
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -16688,22 +16791,23 @@ EndPlot
 BeginPlot
 	x=25,y=28
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=29
+	BonusType=BONUS_URANIUM
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=30
 	BonusType=BONUS_GOLD
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=31
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
 BeginPlot
@@ -16723,20 +16827,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=35
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=36
+	BonusType=BONUS_BANANA
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=37
-	RiverNSDirection=0
 	isNOfRiver
 	RiverWEDirection=1
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -16748,8 +16853,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=39
+	BonusType=BONUS_COPPER
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=40
@@ -16758,11 +16864,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=41
+	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=25,y=42
+	BonusType=BONUS_COFFEE
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -17239,7 +17349,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=7
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -17249,35 +17359,25 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=9
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=10
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_WINE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=11
-	BonusType=BONUS_COW
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=12
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=26,y=13
-	isNOfRiver
-	RiverWEDirection=3
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=26,y=14
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
@@ -17286,34 +17386,45 @@ BeginPlot
 	PlotType=2
 EndPlot
 BeginPlot
+	x=26,y=13
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=26,y=14
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=26,y=15
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=16
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=17
-	BonusType=BONUS_SILVER
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=18
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=19
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	FeatureType=FEATURE_FOREST, FeatureVariety=4
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=20
@@ -17323,30 +17434,27 @@ EndPlot
 BeginPlot
 	x=26,y=21
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=26,y=22
-	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=23
+	BonusType=BONUS_STONE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=24
+	BonusType=BONUS_LLAMA
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=25
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -17363,39 +17471,47 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=28
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=26,y=29
-	BonusType=BONUS_LLAMA
+	BonusType=BONUS_POTATO
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=26,y=29
+	BonusType=BONUS_COPPER
+	TerrainType=TERRAIN_MOORLAND
+	PlotType=1
+EndPlot
+BeginPlot
 	x=26,y=30
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
 BeginPlot
 	x=26,y=31
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
 BeginPlot
 	x=26,y=32
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=33
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=34
+	BonusType=BONUS_COAL
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -17403,38 +17519,42 @@ BeginPlot
 	x=26,y=35
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=36
-	BonusType=BONUS_GEMS
+	BonusType=BONUS_RUBBER
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=37
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=38
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=39
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=26,y=40
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=41
@@ -17443,13 +17563,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=42
-	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=43
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -17488,6 +17608,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=50
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -17514,11 +17635,13 @@ EndPlot
 BeginPlot
 	x=26,y=55
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=56
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -17921,33 +18044,40 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=7
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
-EndPlot
-BeginPlot
-	x=27,y=8
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
-	x=27,y=9
+	x=27,y=8
+	BonusType=BONUS_CITRUS
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=27,y=10
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=27,y=11
+	x=27,y=9
+	BonusType=BONUS_SHEEP
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=27,y=10
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_CORN
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=27,y=11
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=27,y=12
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -17965,105 +18095,106 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=15
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=16
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=17
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=18
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=19
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=20
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_SILVER
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=21
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=27,y=22
+	BonusType=BONUS_COPPER
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=23
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=24
-	BonusType=BONUS_LLAMA
-	TerrainType=TERRAIN_PLAINS
+	BonusType=BONUS_GOLD
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=25
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=26
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=27,y=27
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=27,y=28
-	BonusType=BONUS_COPPER
+	x=27,y=27
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=27,y=28
+	TerrainType=TERRAIN_PLAINS
+	PlotType=0
+EndPlot
+BeginPlot
 	x=27,y=29
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
 BeginPlot
 	x=27,y=30
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
 EndPlot
 BeginPlot
 	x=27,y=31
-	RiverNSDirection=0
-	isWOfRiver
+	BonusType=BONUS_COCOA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=32
-	RiverNSDirection=0
-	isWOfRiver
-	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -18071,34 +18202,10 @@ BeginPlot
 	x=27,y=33
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=34
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=27,y=35
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=27,y=36
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=27,y=37
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=27,y=38
 	isNOfRiver
 	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
@@ -18106,7 +18213,42 @@ BeginPlot
 	PlotType=2
 EndPlot
 BeginPlot
+	x=27,y=35
+	BonusType=BONUS_COCOA
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=27,y=36
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=27,y=37
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=27,y=38
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_BANANA
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=27,y=39
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -18122,14 +18264,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=42
+	BonusType=BONUS_COCOA
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=27,y=43
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=44
@@ -18381,6 +18525,7 @@ EndPlot
 BeginPlot
 	x=27,y=90
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -18599,33 +18744,35 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=7
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=28,y=8
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=9
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=10
-	TerrainType=TERRAIN_SAVANNA
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=11
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=12
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -18637,45 +18784,55 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=14
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=15
-	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_PLAINS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=16
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=17
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=18
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=19
-	BonusType=BONUS_STONE
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=20
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=21
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=22
@@ -18684,20 +18841,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=23
-	BonusType=BONUS_SILVER
+	TerrainType=TERRAIN_TUNDRA
+	PlotType=0
+EndPlot
+BeginPlot
+	x=28,y=24
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
-	x=28,y=24
+	x=28,y=25
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=0
-EndPlot
-BeginPlot
-	x=28,y=25
-	BonusType=BONUS_STONE
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=26
@@ -18711,36 +18866,49 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=28
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=29
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=30
-	RiverNSDirection=0
-	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=31
+	RiverNSDirection=0
 	isNOfRiver
-	RiverWEDirection=3
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=32
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	BonusType=BONUS_RICE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=33
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=28,y=34
 	isNOfRiver
 	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
@@ -18748,22 +18916,17 @@ BeginPlot
 	PlotType=2
 EndPlot
 BeginPlot
-	x=28,y=34
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
 	x=28,y=35
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=28,y=36
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
+EndPlot
+BeginPlot
+	x=28,y=36
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
 	x=28,y=37
@@ -18773,29 +18936,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=38
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
-EndPlot
-BeginPlot
-	x=28,y=39
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=28,y=39
+	BonusType=BONUS_COAL
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=28,y=40
-	BonusType=BONUS_SILVER
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=28,y=41
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=28,y=42
@@ -18809,17 +18971,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=44
-	BonusType=BONUS_ALUMINUM
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
+	BonusType=BONUS_SUGAR
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=45
-	BonusType=BONUS_PIG
+	BonusType=BONUS_COFFEE
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=28,y=46
@@ -18845,7 +19007,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=50
-	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -18911,6 +19072,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=63
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -18957,6 +19119,7 @@ EndPlot
 BeginPlot
 	x=28,y=72
 	BonusType=BONUS_CITRUS
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -18978,6 +19141,7 @@ EndPlot
 BeginPlot
 	x=28,y=75
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -19289,37 +19453,36 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=7
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
-EndPlot
-BeginPlot
-	x=29,y=8
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
-EndPlot
-BeginPlot
-	x=29,y=9
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
-	x=29,y=10
-	BonusType=BONUS_CITRUS
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	x=29,y=8
+	TerrainType=TERRAIN_COAST
+	PlotType=3
+EndPlot
+BeginPlot
+	x=29,y=9
+	BonusType=BONUS_COW
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=29,y=10
+	TerrainType=TERRAIN_COAST
+	PlotType=3
+EndPlot
+BeginPlot
 	x=29,y=11
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=12
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_COAL
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=29,y=13
@@ -19327,34 +19490,47 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	BonusType=BONUS_RICE
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=14
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=15
-	TerrainType=TERRAIN_PLAINS
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=16
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_PLAINS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=17
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=18
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -19365,18 +19541,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=20
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=21
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=29,y=22
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=29,y=23
@@ -19386,39 +19562,47 @@ EndPlot
 BeginPlot
 	x=29,y=24
 	TerrainType=TERRAIN_TUNDRA
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=29,y=25
-	TerrainType=TERRAIN_MOORLAND
-	PlotType=0
-EndPlot
-BeginPlot
-	x=29,y=26
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=29,y=27
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=29,y=28
 	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
 	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=29,y=26
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=29,y=27
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=29,y=28
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=29,y=29
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=29,y=30
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -19426,96 +19610,110 @@ BeginPlot
 	x=29,y=31
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=32
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=33
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=29,y=34
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=29,y=35
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=29,y=36
-	TerrainType=TERRAIN_GRASS
+	x=29,y=34
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_RUBBER
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
-	x=29,y=37
+	x=29,y=35
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
-	x=29,y=38
+	x=29,y=36
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=29,y=37
 	BonusType=BONUS_OIL
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=29,y=38
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=29,y=39
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=29,y=40
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=29,y=41
+	BonusType=BONUS_GOLD
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=29,y=42
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
-	x=29,y=42
-	BonusType=BONUS_GOLD
+	x=29,y=43
+	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=29,y=43
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
 	x=29,y=44
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=29,y=45
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=29,y=46
-	BonusType=BONUS_TOBACCO
+	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -19803,6 +20001,7 @@ EndPlot
 BeginPlot
 	x=29,y=97
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -19842,6 +20041,7 @@ EndPlot
 BeginPlot
 	x=29,y=104
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -19985,32 +20185,37 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=8
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=30,y=9
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=10
-	TerrainType=TERRAIN_COAST
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_FISH
+	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=30,y=11
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=12
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=13
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	BonusType=BONUS_RICE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -20020,168 +20225,186 @@ BeginPlot
 	RiverWEDirection=3
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=30,y=15
-	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=30,y=16
-	RiverNSDirection=2
+	x=30,y=15
 	isNOfRiver
 	RiverWEDirection=3
-	isWOfRiver
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=30,y=16
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=17
-	TerrainType=TERRAIN_PLAINS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=18
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=19
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	BonusType=BONUS_WHEAT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=20
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=21
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=22
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=23
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	BonusType=BONUS_SILVER
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=24
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=25
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=26
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=27
-	isNOfRiver
-	RiverWEDirection=1
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=28
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=29
 	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=30
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=30,y=31
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=30,y=32
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=30,y=31
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=30,y=32
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=30,y=33
+	BonusType=BONUS_COFFEE
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=34
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=30,y=35
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=30,y=36
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=30,y=37
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
-	x=30,y=38
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	x=30,y=35
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=30,y=36
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=30,y=37
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=30,y=38
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=30,y=39
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=40
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -20193,45 +20416,48 @@ EndPlot
 BeginPlot
 	x=30,y=42
 	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
 	isWOfRiver
+	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=43
-	RiverNSDirection=0
-	isWOfRiver
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=0
 EndPlot
 BeginPlot
 	x=30,y=44
-	BonusType=BONUS_COFFEE
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_GOLD
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=30,y=45
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=30,y=46
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=30,y=47
+	x=30,y=46
+	BonusType=BONUS_PIG
 	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
 	isWOfRiver
-	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
+	x=30,y=47
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=30,y=48
@@ -20240,6 +20466,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=49
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -20403,6 +20630,7 @@ EndPlot
 BeginPlot
 	x=30,y=79
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -20689,7 +20917,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=8
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -20699,7 +20927,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=10
-	TerrainType=TERRAIN_SAVANNA
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -20711,14 +20940,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=12
-	TerrainType=TERRAIN_SAVANNA
+	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=31,y=13
-	BonusType=BONUS_BANANA
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -20731,17 +20960,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=15
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=16
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=17
 	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
@@ -20751,16 +20969,27 @@ BeginPlot
 	PlotType=2
 EndPlot
 BeginPlot
-	x=31,y=18
-	RiverNSDirection=2
-	isWOfRiver
-	BonusType=BONUS_CORN
+	x=31,y=16
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=31,y=17
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=31,y=18
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
 	x=31,y=19
-	TerrainType=TERRAIN_PLAINS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
@@ -20771,175 +21000,46 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=21
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=31,y=22
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=31,y=23
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=31,y=24
-	BonusType=BONUS_SILVER
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=31,y=25
-	isNOfRiver
-	RiverWEDirection=1
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=31,y=26
-	BonusType=BONUS_CITRUS
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	BonusType=BONUS_OIL
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=31,y=27
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=28
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=31,y=29
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=31,y=30
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=31
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=32
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=33
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=34
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=35
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=36
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
-EndPlot
-BeginPlot
-	x=31,y=37
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=39
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=31,y=40
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=41
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=31,y=42
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=31,y=43
-	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=44
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=45
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=31,y=46
 	RiverNSDirection=0
 	isWOfRiver
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
@@ -20947,14 +21047,152 @@ BeginPlot
 	PlotType=2
 EndPlot
 BeginPlot
-	x=31,y=47
+	x=31,y=28
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=29
 	isNOfRiver
 	RiverWEDirection=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=30
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_RUBBER
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=31
+	BonusType=BONUS_GEMS
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=32
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=33
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=34
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=31,y=35
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=36
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=37
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=38
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=39
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=31,y=40
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=31,y=41
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+EndPlot
+BeginPlot
+	x=31,y=42
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=31,y=43
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	BonusType=BONUS_POTATO
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=31,y=44
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+EndPlot
+BeginPlot
+	x=31,y=45
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+EndPlot
+BeginPlot
+	x=31,y=46
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_COAL
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=31,y=47
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=31,y=48
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -21422,8 +21660,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=10
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	BonusType=BONUS_TOBACCO
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -21433,76 +21671,78 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=12
-	BonusType=BONUS_ALUMINUM
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=13
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=14
 	isNOfRiver
 	RiverWEDirection=3
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=15
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=16
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=17
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=18
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=19
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	TerrainType=TERRAIN_MARSH
+	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=20
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=21
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=22
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -21515,50 +21755,50 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=24
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=25
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=26
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=27
-	TerrainType=TERRAIN_GRASS
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=28
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=29
-	RiverNSDirection=0
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=30
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=31
@@ -21578,98 +21818,111 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=33
+	BonusType=BONUS_RUBBER
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=34
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=35
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
 	x=32,y=36
 	RiverNSDirection=2
 	isWOfRiver
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=37
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=38
+	BonusType=BONUS_RUBBER
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=39
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=40
-	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_COAL
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=41
+	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=32,y=42
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=32,y=43
-	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
-	x=32,y=44
-	BonusType=BONUS_SILVER
+	x=32,y=43
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+EndPlot
+BeginPlot
+	x=32,y=44
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	BonusType=BONUS_COW
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=45
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=46
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_COCOA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=47
-	BonusType=BONUS_BANANA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=32,y=48
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -21706,6 +21959,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=55
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -22144,54 +22398,70 @@ EndPlot
 BeginPlot
 	x=33,y=11
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=12
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=33,y=13
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
-	x=33,y=14
+	x=33,y=13
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_TIMBER
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
+EndPlot
+BeginPlot
+	x=33,y=14
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=33,y=15
-	BonusType=BONUS_COAL
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=33,y=16
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=33,y=17
+	isNOfRiver
+	RiverWEDirection=3
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=33,y=18
+	x=33,y=17
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_PLAINS
+	isWOfRiver
+	BonusType=BONUS_BANANA
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=33,y=18
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=33,y=19
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=33,y=20
@@ -22207,18 +22477,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=22
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=23
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=24
@@ -22228,40 +22497,33 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=25
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=33,y=26
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=27
-	RiverNSDirection=0
-	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
+	x=33,y=28
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=33,y=28
-	RiverNSDirection=0
-	isWOfRiver
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
 	x=33,y=29
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -22270,85 +22532,87 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=31
+	BonusType=BONUS_RUBBER
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=32
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=33
-	RiverNSDirection=0
 	isNOfRiver
 	RiverWEDirection=1
-	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=34
-	RiverNSDirection=0
-	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=35
-	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=33,y=36
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=37
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=38
-	RiverNSDirection=2
-	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=39
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=40
+	RiverNSDirection=2
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=41
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=33,y=42
+	isNOfRiver
+	RiverWEDirection=1
 	BonusType=BONUS_IRON
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -22360,14 +22624,14 @@ EndPlot
 BeginPlot
 	x=33,y=44
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=33,y=45
-	BonusType=BONUS_COAL
+	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=33,y=46
@@ -22381,7 +22645,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=48
-	BonusType=BONUS_GOLD
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -22434,6 +22698,7 @@ EndPlot
 BeginPlot
 	x=33,y=58
 	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22487,6 +22752,7 @@ EndPlot
 BeginPlot
 	x=33,y=68
 	BonusType=BONUS_CITRUS
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -22519,6 +22785,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22592,6 +22859,7 @@ EndPlot
 BeginPlot
 	x=33,y=85
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22857,62 +23125,65 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=12
-	BonusType=BONUS_COW
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=34,y=13
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=34,y=13
+	TerrainType=TERRAIN_PLAINS
+	PlotType=0
+EndPlot
+BeginPlot
 	x=34,y=14
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_MARBLE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=34,y=15
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=34,y=16
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=34,y=17
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=34,y=18
-	RiverNSDirection=2
+	RiverNSDirection=0
 	isNOfRiver
-	RiverWEDirection=3
+	RiverWEDirection=1
 	isWOfRiver
-	TerrainType=TERRAIN_PLAINS
+	BonusType=BONUS_COFFEE
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=34,y=19
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=34,y=20
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=34,y=21
-	BonusType=BONUS_SUGAR
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -22928,63 +23199,60 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	BonusType=BONUS_IRON
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=34,y=24
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=34,y=25
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=34,y=26
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
-	x=34,y=27
+	x=34,y=25
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=34,y=26
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_GRASS
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
+EndPlot
+BeginPlot
+	x=34,y=27
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=34,y=28
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=34,y=29
-	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=34,y=30
+	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=34,y=30
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=34,y=31
-	RiverNSDirection=0
 	isNOfRiver
 	RiverWEDirection=1
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -22997,39 +23265,54 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=33
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=34,y=34
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=34,y=34
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=34,y=35
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=34,y=36
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=34,y=37
-	RiverNSDirection=2
-	isWOfRiver
+	BonusType=BONUS_TIMBER
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=34,y=38
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=34,y=39
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
-	x=34,y=38
+	x=34,y=40
 	isNOfRiver
 	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
@@ -23037,38 +23320,23 @@ BeginPlot
 	PlotType=2
 EndPlot
 BeginPlot
-	x=34,y=39
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=34,y=40
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
 	x=34,y=41
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=34,y=42
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=34,y=43
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
+EndPlot
+BeginPlot
+	x=34,y=43
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
 EndPlot
 BeginPlot
 	x=34,y=44
@@ -23082,26 +23350,28 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=46
-	BonusType=BONUS_COW
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=34,y=47
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
-	x=34,y=48
+	x=34,y=47
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	PlotType=2
+EndPlot
+BeginPlot
+	x=34,y=48
+	BonusType=BONUS_CITRUS
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=34,y=49
-	BonusType=BONUS_TOBACCO
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_COAL
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -23317,6 +23587,7 @@ EndPlot
 BeginPlot
 	x=34,y=88
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -23571,9 +23842,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=13
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	BonusType=BONUS_COAL
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=14
@@ -23583,39 +23854,45 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=15
-	BonusType=BONUS_BANANA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_GEMS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=16
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=17
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=18
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=19
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_COW
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=20
-	TerrainType=TERRAIN_PLAINS
-	PlotType=2
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=21
@@ -23625,8 +23902,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=22
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=23
@@ -23636,146 +23916,145 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=24
-	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=25
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=26
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=27
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=28
-	RiverNSDirection=0
-	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=35,y=29
-	isNOfRiver
-	RiverWEDirection=3
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=35,y=30
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=35,y=30
+	BonusType=BONUS_RICE
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=35,y=31
-	BonusType=BONUS_COCOA
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=32
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=33
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=35,y=34
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=35,y=35
-	isNOfRiver
-	RiverWEDirection=1
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
-EndPlot
-BeginPlot
-	x=35,y=36
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=35,y=37
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
+	x=35,y=34
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=35,y=35
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=35,y=36
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=35,y=37
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=35,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=35,y=39
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=35,y=40
-	RiverNSDirection=0
+	RiverNSDirection=2
 	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=35,y=41
+	x=35,y=39
+	RiverNSDirection=2
+	isWOfRiver
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=35,y=40
 	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=35,y=41
+	RiverNSDirection=0
+	isWOfRiver
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=35,y=42
-	BonusType=BONUS_OIL
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=43
 	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
 	isWOfRiver
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=35,y=44
+	BonusType=BONUS_JADE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -23786,6 +24065,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=46
+	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -23800,6 +24080,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=48
+	BonusType=BONUS_PIG
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -23974,6 +24255,7 @@ EndPlot
 BeginPlot
 	x=35,y=80
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -23996,6 +24278,7 @@ EndPlot
 BeginPlot
 	x=35,y=84
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -24271,101 +24554,103 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=13
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=36,y=14
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=36,y=15
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=36,y=16
+	x=36,y=15
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
-	x=36,y=17
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	x=36,y=16
+	BonusType=BONUS_TIMBER
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
-	x=36,y=18
+	x=36,y=17
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=36,y=18
+	BonusType=BONUS_WHEAT
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=36,y=19
-	TerrainType=TERRAIN_WIDE_RIVER
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=36,y=20
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=36,y=21
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=36,y=22
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
-	x=36,y=23
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
-	x=36,y=24
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=36,y=25
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=36,y=26
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=36,y=27
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=36,y=28
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
-	x=36,y=29
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	x=36,y=23
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
+EndPlot
+BeginPlot
+	x=36,y=24
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=36,y=25
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=36,y=26
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=36,y=27
+	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=36,y=28
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=36,y=29
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=36,y=30
@@ -24375,33 +24660,37 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=31
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=36,y=32
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=36,y=32
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
 	x=36,y=33
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=36,y=34
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=36,y=35
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -24414,44 +24703,51 @@ BeginPlot
 	x=36,y=37
 	RiverNSDirection=2
 	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=36,y=38
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=36,y=39
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=36,y=39
+	TerrainType=TERRAIN_GRASS
+	PlotType=0
+EndPlot
+BeginPlot
 	x=36,y=40
-	isNOfRiver
-	RiverWEDirection=3
+	RiverNSDirection=0
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=36,y=41
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=36,y=42
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	BonusType=BONUS_RICE
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=36,y=43
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=36,y=44
@@ -24459,14 +24755,15 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_COCOA
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=36,y=45
-	BonusType=BONUS_GOLD
-	TerrainType=TERRAIN_GRASS
+	BonusType=BONUS_ALUMINUM
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -24476,10 +24773,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=47
-	BonusType=BONUS_ALUMINUM
+	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=36,y=48
@@ -24974,9 +25271,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=15
-	BonusType=BONUS_COFFEE
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	BonusType=BONUS_COAL
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=16
@@ -24985,28 +25282,33 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=17
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	BonusType=BONUS_SUGAR
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=18
-	BonusType=BONUS_GEMS
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=19
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=20
 	isNOfRiver
 	RiverWEDirection=3
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=21
@@ -25015,56 +25317,48 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=22
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=23
+	BonusType=BONUS_COW
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=24
-	BonusType=BONUS_COW
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=25
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=26
-	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=27
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=28
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=29
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -25072,7 +25366,7 @@ BeginPlot
 	x=37,y=30
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=31
@@ -25082,38 +25376,42 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=32
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=33
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=34
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
-EndPlot
-BeginPlot
-	x=37,y=35
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
+	x=37,y=35
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_CRUSTACEANS
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
 	x=37,y=36
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
 	x=37,y=37
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=38
@@ -25122,21 +25420,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=39
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=37,y=40
-	isNOfRiver
-	RiverWEDirection=3
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=37,y=41
+	x=37,y=40
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
+EndPlot
+BeginPlot
+	x=37,y=41
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=37,y=42
@@ -25150,20 +25449,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=44
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=37,y=46
-	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -25174,7 +25471,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=48
-	BonusType=BONUS_SALT
 	TerrainType=TERRAIN_SALTFLAT
 	PlotType=2
 EndPlot
@@ -25317,6 +25613,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=75
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -25417,6 +25714,7 @@ EndPlot
 BeginPlot
 	x=37,y=91
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -25650,7 +25948,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=14
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25661,22 +25958,31 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=16
+	BonusType=BONUS_COW
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=38,y=17
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_IRON
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=38,y=17
-	BonusType=BONUS_COW
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
 	x=38,y=18
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=19
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -25684,8 +25990,9 @@ BeginPlot
 	x=38,y=20
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_PLAINS
-	PlotType=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=21
@@ -25695,13 +26002,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=22
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=38,y=23
 	isNOfRiver
-	RiverWEDirection=3
+	RiverWEDirection=1
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -25709,21 +26017,22 @@ EndPlot
 BeginPlot
 	x=38,y=24
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=38,y=25
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=26
-	RiverNSDirection=2
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=38,y=27
@@ -25733,6 +26042,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=28
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -25741,30 +26054,36 @@ BeginPlot
 	x=38,y=29
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=30
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=31
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=32
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=33
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	BonusType=BONUS_RICE
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -25782,21 +26101,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=36
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=37
 	isNOfRiver
-	RiverWEDirection=1
+	RiverWEDirection=3
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=38
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=38,y=39
@@ -25816,8 +26137,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=42
+	BonusType=BONUS_GOLD
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=38,y=43
@@ -25826,6 +26149,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=44
+	BonusType=BONUS_COW
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -25833,10 +26158,9 @@ BeginPlot
 	x=38,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_CITRUS
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=46
@@ -25847,7 +26171,7 @@ BeginPlot
 	x=38,y=47
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=38,y=48
@@ -25888,6 +26212,7 @@ EndPlot
 BeginPlot
 	x=38,y=55
 	BonusType=BONUS_CITRUS
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -26074,6 +26399,7 @@ EndPlot
 BeginPlot
 	x=38,y=88
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -26330,6 +26656,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=14
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -26340,34 +26667,35 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=16
-	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=39,y=17
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=39,y=18
-	BonusType=BONUS_IRON
+	x=39,y=17
+	isNOfRiver
+	RiverWEDirection=3
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=39,y=18
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=39,y=19
-	RiverNSDirection=0
-	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=39,y=20
+	RiverNSDirection=2
 	isNOfRiver
 	RiverWEDirection=3
+	isWOfRiver
+	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -26376,7 +26704,7 @@ BeginPlot
 	x=39,y=21
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=39,y=22
@@ -26385,15 +26713,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=23
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
-	x=39,y=24
-	BonusType=BONUS_SPICES
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
+EndPlot
+BeginPlot
+	x=39,y=24
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=39,y=25
@@ -26403,33 +26734,36 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=26
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=39,y=27
-	isNOfRiver
-	RiverWEDirection=3
-	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=39,y=28
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=39,y=29
+	x=39,y=28
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=39,y=29
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=39,y=30
-	BonusType=BONUS_RUBBER
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -26442,36 +26776,42 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=32
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=39,y=33
+	RiverNSDirection=0
+	isWOfRiver
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=39,y=34
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=39,y=35
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=39,y=36
-	BonusType=BONUS_ALUMINUM
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=39,y=37
+	RiverNSDirection=2
 	isNOfRiver
-	RiverWEDirection=1
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -26483,7 +26823,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=39
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_ALUMINUM
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -26494,13 +26834,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=41
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=39,y=42
-	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -26519,9 +26863,10 @@ BeginPlot
 	x=39,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=39,y=46
@@ -26530,9 +26875,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=47
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=39,y=48
@@ -26702,6 +27046,7 @@ EndPlot
 BeginPlot
 	x=39,y=80
 	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -27013,94 +27358,112 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=15
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=40,y=16
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=40,y=17
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	BonusType=BONUS_COFFEE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=18
+	BonusType=BONUS_GEMS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=40,y=19
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_SUGAR
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=40,y=20
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=40,y=21
 	isNOfRiver
 	RiverWEDirection=3
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=40,y=20
-	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=40,y=21
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
 	x=40,y=22
+	BonusType=BONUS_DEER
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=40,y=23
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=40,y=24
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=40,y=25
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
-	x=40,y=26
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	x=40,y=24
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
-	x=40,y=27
+	x=40,y=25
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=40,y=26
+	RiverNSDirection=0
 	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
-	x=40,y=28
+	x=40,y=27
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=40,y=28
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=40,y=29
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=30
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -27111,52 +27474,52 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=32
-	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=33
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=40,y=34
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
-	x=40,y=34
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
 	x=40,y=35
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=36
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=37
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=38
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=39
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -27166,40 +27529,46 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=41
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=40,y=42
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=43
-	BonusType=BONUS_COAL
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=44
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=0
+	isWOfRiver
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_CORN
-	TerrainType=TERRAIN_GRASS
+	BonusType=BONUS_CITRUS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=46
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=40,y=47
@@ -27406,6 +27775,7 @@ EndPlot
 BeginPlot
 	x=40,y=85
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -27697,20 +28067,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=16
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=17
-	TerrainType=TERRAIN_PLAINS
-	PlotType=0
+	BonusType=BONUS_BANANA
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=18
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -27718,25 +28089,30 @@ BeginPlot
 	x=41,y=19
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_SAVANNA
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=20
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	BonusType=BONUS_COTTON
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=41,y=21
-	BonusType=BONUS_SILVER
-	TerrainType=TERRAIN_SAVANNA
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=22
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -27747,25 +28123,34 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=24
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
-	x=41,y=25
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=41,y=26
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	BonusType=BONUS_COW
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
+	x=41,y=25
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=41,y=26
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=41,y=27
+	isNOfRiver
+	RiverWEDirection=1
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=28
@@ -27775,60 +28160,68 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=29
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=41,y=30
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=41,y=31
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=41,y=32
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=41,y=33
-	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
+	x=41,y=30
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
+	x=41,y=31
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
-	x=41,y=34
-	TerrainType=TERRAIN_GRASS
+	x=41,y=32
+	RiverNSDirection=0
+	isWOfRiver
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=41,y=33
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
+	x=41,y=34
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
 	x=41,y=35
-	BonusType=BONUS_COCOA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=41,y=36
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=37
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	BonusType=BONUS_RICE
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=41,y=38
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=39
@@ -27838,8 +28231,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=40
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -27849,18 +28241,22 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=42
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_ALUMINUM
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=43
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=41,y=44
+	RiverNSDirection=2
+	isWOfRiver
+	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -27868,12 +28264,14 @@ BeginPlot
 	x=41,y=45
 	isNOfRiver
 	RiverWEDirection=1
+	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=41,y=46
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -28360,40 +28758,43 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=14
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=42,y=15
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=42,y=16
-	BonusType=BONUS_SALT
-	TerrainType=TERRAIN_SALTFLAT
-	PlotType=2
-EndPlot
-BeginPlot
-	x=42,y=17
-	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=42,y=18
+	x=42,y=17
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+EndPlot
+BeginPlot
+	x=42,y=18
+	isNOfRiver
+	RiverWEDirection=3
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=19
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	BonusType=BONUS_COFFEE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=20
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -28403,12 +28804,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=22
+	isNOfRiver
+	RiverWEDirection=3
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=23
+	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -28416,58 +28820,62 @@ BeginPlot
 	x=42,y=24
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=42,y=25
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=26
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=42,y=27
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
+	x=42,y=27
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=42,y=28
+	BonusType=BONUS_IRON
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=29
+	BonusType=BONUS_GEMS
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=30
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=42,y=31
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=42,y=32
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -28479,13 +28887,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=34
-	BonusType=BONUS_RUBBER
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=42,y=35
+	BonusType=BONUS_TIMBER
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -28493,23 +28902,28 @@ BeginPlot
 	x=42,y=36
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=37
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=38
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=39
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=2
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -28519,14 +28933,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=41
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=42,y=42
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=42,y=43
@@ -28535,7 +28950,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=44
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -28543,7 +28957,8 @@ BeginPlot
 	x=42,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_SILVER
+	BonusType=BONUS_IRON
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -29026,6 +29441,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=13
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -29036,65 +29452,81 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=15
-	BonusType=BONUS_FISH
-	TerrainType=TERRAIN_COAST
-	PlotType=3
-EndPlot
-BeginPlot
-	x=43,y=16
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=43,y=17
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
-	x=43,y=18
-	BonusType=BONUS_GEMS
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_BANANA
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=43,y=19
+	x=43,y=16
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
+EndPlot
+BeginPlot
+	x=43,y=17
+	RiverNSDirection=0
+	isWOfRiver
+	BonusType=BONUS_COFFEE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=43,y=18
+	isNOfRiver
+	RiverWEDirection=3
+	BonusType=BONUS_ALUMINUM
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=43,y=19
+	BonusType=BONUS_MARBLE
+	TerrainType=TERRAIN_PLAINS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=20
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=21
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=22
+	isNOfRiver
+	RiverWEDirection=3
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=23
-	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=24
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
-EndPlot
-BeginPlot
-	x=43,y=25
+	BonusType=BONUS_COFFEE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
+EndPlot
+BeginPlot
+	x=43,y=25
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=43,y=26
@@ -29104,17 +29536,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=27
-	RiverNSDirection=2
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=28
-	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -29125,41 +29558,38 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=30
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=31
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=32
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=43,y=33
-	RiverNSDirection=0
-	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=43,y=33
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=43,y=34
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=43,y=35
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -29170,19 +29600,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=37
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=43,y=39
-	TerrainType=TERRAIN_GRASS
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -29198,19 +29632,20 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=42
-	BonusType=BONUS_ALUMINUM
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=43,y=43
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=43,y=43
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
 	x=43,y=44
+	BonusType=BONUS_COTTON
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -29219,12 +29654,13 @@ BeginPlot
 	x=43,y=45
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=43,y=46
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -29260,6 +29696,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=53
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -29453,6 +29890,7 @@ EndPlot
 BeginPlot
 	x=43,y=89
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -29711,17 +30149,18 @@ EndPlot
 BeginPlot
 	x=44,y=15
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=44,y=16
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=17
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=0
 EndPlot
 BeginPlot
 	x=44,y=18
@@ -29730,85 +30169,88 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=19
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
 EndPlot
 BeginPlot
 	x=44,y=20
-	RiverNSDirection=0
-	isWOfRiver
-	BonusType=BONUS_CITRUS
+	BonusType=BONUS_TOBACCO
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=21
+	isNOfRiver
+	RiverWEDirection=3
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=22
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	BonusType=BONUS_COW
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=23
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=24
-	BonusType=BONUS_URANIUM
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=25
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=44,y=26
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=44,y=27
+	BonusType=BONUS_GEMS
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=28
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=3
-	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=44,y=29
-	RiverNSDirection=0
-	isWOfRiver
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
 	x=44,y=30
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=44,y=31
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
+EndPlot
+BeginPlot
+	x=44,y=31
+	BonusType=BONUS_GEMS
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=32
@@ -29818,19 +30260,20 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=33
+	BonusType=BONUS_CRUSTACEANS
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=44,y=34
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=44,y=34
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
-EndPlot
-BeginPlot
 	x=44,y=35
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -29841,8 +30284,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=37
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=44,y=38
@@ -29857,19 +30301,25 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=40
-	BonusType=BONUS_GOLD
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=44,y=41
+	RiverNSDirection=0
+	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=44,y=42
+	BonusType=BONUS_SUGAR
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -29882,8 +30332,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=44
-	BonusType=BONUS_CORN
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -30086,6 +30535,7 @@ EndPlot
 BeginPlot
 	x=44,y=84
 	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -30368,6 +30818,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=13
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -30378,50 +30829,51 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=15
-	TerrainType=TERRAIN_COAST
-	PlotType=3
-EndPlot
-BeginPlot
-	x=45,y=16
-	BonusType=BONUS_CRAB
-	TerrainType=TERRAIN_COAST
-	PlotType=3
-EndPlot
-BeginPlot
-	x=45,y=17
-	BonusType=BONUS_COFFEE
+	BonusType=BONUS_SUGAR
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=45,y=18
+	x=45,y=16
+	BonusType=BONUS_PIG
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=45,y=17
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
 BeginPlot
+	x=45,y=18
+	BonusType=BONUS_COFFEE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
 	x=45,y=19
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=45,y=20
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
 EndPlot
 BeginPlot
 	x=45,y=21
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=45,y=22
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
@@ -30431,82 +30883,85 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=24
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=45,y=25
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=45,y=26
+	BonusType=BONUS_COW
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=27
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=45,y=28
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=45,y=28
-	BonusType=BONUS_SUGAR
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
 	x=45,y=29
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	RiverNSDirection=0
+	isWOfRiver
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
 	x=45,y=30
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=31
-	RiverNSDirection=0
-	isWOfRiver
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=45,y=32
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
-	x=45,y=33
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=45,y=34
+	x=45,y=32
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=45,y=33
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
+	x=45,y=34
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_SALT
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
+EndPlot
+BeginPlot
 	x=45,y=35
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=36
+	BonusType=BONUS_IRON
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=1
 EndPlot
 BeginPlot
 	x=45,y=37
@@ -30522,33 +30977,32 @@ BeginPlot
 	x=45,y=39
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=40
-	RiverNSDirection=0
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=41
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=42
-	BonusType=BONUS_BANANA
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=45,y=43
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -30783,6 +31237,7 @@ EndPlot
 BeginPlot
 	x=45,y=88
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -30819,6 +31274,7 @@ EndPlot
 BeginPlot
 	x=45,y=94
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -31041,93 +31497,98 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=14
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=15
-	BonusType=BONUS_OIL
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=16
-	BonusType=BONUS_COW
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=46,y=17
 	BonusType=BONUS_SUGAR
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=46,y=18
+	RiverNSDirection=2
+	isWOfRiver
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=46,y=18
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
 	x=46,y=19
-	TerrainType=TERRAIN_GRASS
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=46,y=20
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=21
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=0
 EndPlot
 BeginPlot
 	x=46,y=22
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	BonusType=BONUS_CORN
+	BonusType=BONUS_GEMS
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=23
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=24
-	BonusType=BONUS_COW
+	BonusType=BONUS_ALUMINUM
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=25
-	TerrainType=TERRAIN_SEMIDESERT
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=26
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=46,y=27
 	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=46,y=28
-	RiverNSDirection=0
-	isWOfRiver
+	BonusType=BONUS_GEMS
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -31136,35 +31597,30 @@ BeginPlot
 	x=46,y=29
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=46,y=30
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=46,y=30
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
 	x=46,y=31
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
+	isNOfRiver
+	RiverWEDirection=1
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=46,y=32
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	BonusType=BONUS_RUBBER
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=46,y=33
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -31180,8 +31636,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=36
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=46,y=37
@@ -31190,19 +31647,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=38
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_ALUMINUM
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=39
-	BonusType=BONUS_CITRUS
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=46,y=40
+	BonusType=BONUS_SUGAR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -31220,12 +31679,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=43
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=46,y=44
-	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -31730,107 +32189,118 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=17
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=47,y=18
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_CORN
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=47,y=19
+	BonusType=BONUS_COFFEE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=47,y=19
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
-EndPlot
-BeginPlot
 	x=47,y=20
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=21
-	BonusType=BONUS_GEMS
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=22
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	BonusType=BONUS_STONE
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=23
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
+EndPlot
+BeginPlot
+	x=47,y=24
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=47,y=25
 	RiverNSDirection=0
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=47,y=24
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
-	x=47,y=25
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
 	x=47,y=26
-	TerrainType=TERRAIN_SEMIDESERT
+	BonusType=BONUS_JADE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=27
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	BonusType=BONUS_RICE
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=47,y=28
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=47,y=29
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	BonusType=BONUS_IRON
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=30
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=47,y=31
-	BonusType=BONUS_ALUMINUM
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
-	x=47,y=32
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=47,y=33
+	x=47,y=31
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=47,y=32
 	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
 	isWOfRiver
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=47,y=33
+	BonusType=BONUS_RUBBER
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -31841,18 +32311,20 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=35
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=47,y=36
+	BonusType=BONUS_RUBBER
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=47,y=37
-	BonusType=BONUS_COCOA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -31860,7 +32332,7 @@ BeginPlot
 	x=47,y=38
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=47,y=39
@@ -31869,6 +32341,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=40
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -32164,6 +32637,7 @@ EndPlot
 BeginPlot
 	x=47,y=97
 	BonusType=BONUS_DEER
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -32378,6 +32852,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=15
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -32388,42 +32863,63 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=17
-	TerrainType=TERRAIN_COAST
-	PlotType=3
-EndPlot
-BeginPlot
-	x=48,y=18
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=48,y=19
+	x=48,y=18
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=48,y=19
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=48,y=20
+	BonusType=BONUS_ALUMINUM
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
 	x=48,y=21
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=48,y=22
-	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=48,y=23
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
+	x=48,y=22
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
+	x=48,y=23
+	BonusType=BONUS_COFFEE
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
 	x=48,y=24
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
+EndPlot
+BeginPlot
+	x=48,y=25
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=48,y=26
 	RiverNSDirection=0
 	isNOfRiver
 	RiverWEDirection=1
@@ -32432,106 +32928,95 @@ BeginPlot
 	PlotType=2
 EndPlot
 BeginPlot
-	x=48,y=25
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=48,y=26
-	BonusType=BONUS_MARBLE
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
 	x=48,y=27
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=48,y=28
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=29
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=30
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=31
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=32
-	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=48,y=33
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=48,y=34
-	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
-EndPlot
-BeginPlot
-	x=48,y=35
-	isNOfRiver
-	RiverWEDirection=1
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
-	x=48,y=36
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	x=48,y=33
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
-	x=48,y=37
+	x=48,y=34
+	BonusType=BONUS_FISH
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=48,y=35
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=48,y=36
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=48,y=38
-	BonusType=BONUS_ALUMINUM
+	x=48,y=37
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
 BeginPlot
-	x=48,y=39
+	x=48,y=38
+	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=48,y=39
+	BonusType=BONUS_RICE
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=40
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=48,y=41
-	BonusType=BONUS_CRAB
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -33032,7 +33517,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=16
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -33042,128 +33527,132 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=18
-	TerrainType=TERRAIN_COAST
-	PlotType=3
-EndPlot
-BeginPlot
-	x=49,y=19
-	BonusType=BONUS_COFFEE
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=49,y=20
+	x=49,y=19
+	BonusType=BONUS_COCOA
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=49,y=20
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=21
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=49,y=22
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=49,y=23
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
-	x=49,y=24
+	x=49,y=22
+	BonusType=BONUS_COTTON
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
+	x=49,y=23
+	isNOfRiver
+	RiverWEDirection=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
+	x=49,y=24
+	BonusType=BONUS_GEMS
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
 	x=49,y=25
-	RiverNSDirection=0
-	isWOfRiver
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
 EndPlot
 BeginPlot
 	x=49,y=26
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
-EndPlot
-BeginPlot
-	x=49,y=27
-	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
+	x=49,y=27
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
 	x=49,y=28
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	RiverNSDirection=0
+	isWOfRiver
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=49,y=29
 	RiverNSDirection=0
 	isWOfRiver
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=49,y=30
-	RiverNSDirection=0
-	isWOfRiver
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
 	x=49,y=31
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_SWAMP, FeatureVariety=1
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
+	BonusType=BONUS_CLAM
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
 EndPlot
 BeginPlot
 	x=49,y=32
-	RiverNSDirection=0
-	isNOfRiver
-	RiverWEDirection=1
-	isWOfRiver
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
 	x=49,y=33
-	BonusType=BONUS_BANANA
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
+	x=49,y=34
+	BonusType=BONUS_ALUMINUM
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
-	x=49,y=34
-	TerrainType=TERRAIN_MARSH
-	PlotType=2
-EndPlot
-BeginPlot
 	x=49,y=35
-	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=49,y=36
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=49,y=37
-	BonusType=BONUS_BANANA
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_COAL
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=49,y=38
@@ -33680,12 +34169,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=16
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=50,y=17
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -33695,63 +34185,69 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=19
+	BonusType=BONUS_CITRUS
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
+	x=50,y=20
+	BonusType=BONUS_IRON
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=1
+EndPlot
+BeginPlot
+	x=50,y=21
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
+EndPlot
+BeginPlot
+	x=50,y=22
+	BonusType=BONUS_GEMS
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=50,y=23
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
-	x=50,y=20
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=50,y=21
-	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
-EndPlot
-BeginPlot
-	x=50,y=22
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=50,y=23
-	BonusType=BONUS_GOLD
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
 	x=50,y=24
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=50,y=25
-	BonusType=BONUS_CORN
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
+	x=50,y=25
+	BonusType=BONUS_URANIUM
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
 	x=50,y=26
-	TerrainType=TERRAIN_WIDE_RIVER
-	PlotType=3
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
 EndPlot
 BeginPlot
 	x=50,y=27
-	TerrainType=TERRAIN_SEMIDESERT
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=50,y=28
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	PlotType=2
 EndPlot
 BeginPlot
 	x=50,y=29
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=50,y=30
@@ -33761,36 +34257,36 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=31
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=2
-EndPlot
-BeginPlot
-	x=50,y=32
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
-	x=50,y=33
-	RiverNSDirection=0
-	isWOfRiver
+	x=50,y=32
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
-	x=50,y=34
+	x=50,y=33
+	isNOfRiver
+	RiverWEDirection=3
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
+	x=50,y=34
+	TerrainType=TERRAIN_WIDE_RIVER
+	PlotType=3
+EndPlot
+BeginPlot
 	x=50,y=35
-	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=50,y=36
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -33801,6 +34297,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=38
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -34057,6 +34554,7 @@ EndPlot
 BeginPlot
 	x=50,y=89
 	BonusType=BONUS_FUR
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -34327,7 +34825,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=18
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -34337,52 +34835,54 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=20
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=51,y=21
+	BonusType=BONUS_COCOA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=51,y=22
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
 EndPlot
 BeginPlot
 	x=51,y=23
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
-EndPlot
-BeginPlot
-	x=51,y=24
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
-EndPlot
-BeginPlot
-	x=51,y=25
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=51,y=26
+	x=51,y=24
+	BonusType=BONUS_TOBACCO
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
+	x=51,y=25
+	isNOfRiver
+	RiverWEDirection=1
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
+EndPlot
+BeginPlot
+	x=51,y=26
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=51,y=27
-	isNOfRiver
-	RiverWEDirection=3
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=51,y=28
+	BonusType=BONUS_ALUMINUM
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -34390,7 +34890,6 @@ BeginPlot
 	x=51,y=29
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -34398,7 +34897,8 @@ BeginPlot
 	x=51,y=30
 	RiverNSDirection=0
 	isWOfRiver
-	TerrainType=TERRAIN_SAVANNA
+	FeatureType=FEATURE_SWAMP, FeatureVariety=0
+	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
 BeginPlot
@@ -34409,19 +34909,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=32
+	BonusType=BONUS_COFFEE
+	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=51,y=33
-	FeatureType=FEATURE_SWAMP, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=51,y=34
-	BonusType=BONUS_CRAB
+	BonusType=BONUS_CRUSTACEANS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -34437,6 +34939,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=37
+	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -34959,12 +35462,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=18
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=19
-	TerrainType=TERRAIN_OCEAN
+	BonusType=BONUS_CRAB
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -34979,40 +35484,41 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=22
-	BonusType=BONUS_CORN
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=52,y=23
-	BonusType=BONUS_CITRUS
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
+	BonusType=BONUS_COTTON
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=52,y=24
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	RiverNSDirection=2
+	isWOfRiver
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=52,y=25
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=0
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_POTATO
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=52,y=26
-	BonusType=BONUS_SALT
-	TerrainType=TERRAIN_SALTFLAT
-	PlotType=2
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=52,y=27
-	isNOfRiver
-	RiverWEDirection=1
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=28
@@ -35021,12 +35527,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=29
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	BonusType=BONUS_COTTON
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=52,y=30
-	BonusType=BONUS_CORN
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -35035,18 +35541,20 @@ BeginPlot
 	x=52,y=31
 	RiverNSDirection=0
 	isWOfRiver
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot
 	x=52,y=32
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
-	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	FeatureType=FEATURE_SWAMP, FeatureVariety=1
+	TerrainType=TERRAIN_MARSH
+	PlotType=2
 EndPlot
 BeginPlot
 	x=52,y=33
-	TerrainType=TERRAIN_MARSH
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -35606,19 +36114,27 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=22
-	TerrainType=TERRAIN_COAST
-	PlotType=3
-EndPlot
-BeginPlot
-	x=53,y=23
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
 BeginPlot
+	x=53,y=23
+	RiverNSDirection=2
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
 	x=53,y=24
-	TerrainType=TERRAIN_GRASS
-	PlotType=0
+	isNOfRiver
+	RiverWEDirection=1
+	BonusType=BONUS_CORN
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=53,y=25
@@ -35627,30 +36143,36 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=26
-	RiverNSDirection=2
-	isWOfRiver
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
-EndPlot
-BeginPlot
-	x=53,y=27
-	isNOfRiver
-	RiverWEDirection=1
-	TerrainType=TERRAIN_SALTFLAT
-	PlotType=2
-EndPlot
-BeginPlot
-	x=53,y=28
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=53,y=29
+	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
+	x=53,y=27
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
+EndPlot
+BeginPlot
+	x=53,y=28
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=3
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
+EndPlot
+BeginPlot
+	x=53,y=29
+	RiverNSDirection=0
+	isWOfRiver
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
+EndPlot
+BeginPlot
 	x=53,y=30
+	BonusType=BONUS_URANIUM
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -36220,7 +36742,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=21
-	TerrainType=TERRAIN_OCEAN
+	BonusType=BONUS_CRUSTACEANS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -36230,8 +36753,9 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=23
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=54,y=24
@@ -36240,46 +36764,47 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=25
-	RiverNSDirection=2
-	isWOfRiver
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=26
-	isNOfRiver
-	RiverWEDirection=1
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=27
-	BonusType=BONUS_STONE
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
 EndPlot
 BeginPlot
 	x=54,y=28
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	BonusType=BONUS_PIG
+	ImprovementType=IMPROVEMENT_TRIBE
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=29
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
+	BonusType=BONUS_IRON
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=30
-	BonusType=BONUS_DEER
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
+	BonusType=BONUS_OIL
 	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=54,y=31
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=54,y=32
@@ -36848,58 +37373,61 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=22
-	TerrainType=TERRAIN_OCEAN
-	PlotType=3
-EndPlot
-BeginPlot
-	x=55,y=23
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
+	x=55,y=23
+	BonusType=BONUS_SUGAR
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
+EndPlot
+BeginPlot
 	x=55,y=24
+	BonusType=BONUS_COCOA
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=55,y=25
-	isNOfRiver
-	RiverWEDirection=1
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=55,y=26
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=0
+EndPlot
+BeginPlot
+	x=55,y=27
+	BonusType=BONUS_COCOA
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=55,y=28
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=55,y=29
 	BonusType=BONUS_SHEEP
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
 BeginPlot
-	x=55,y=27
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=55,y=28
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=0
-EndPlot
-BeginPlot
-	x=55,y=29
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
 	x=55,y=30
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
-EndPlot
-BeginPlot
-	x=55,y=31
-	BonusType=BONUS_SPICES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
+EndPlot
+BeginPlot
+	x=55,y=31
+	BonusType=BONUS_CRAB
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=55,y=32
@@ -37464,7 +37992,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=22
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -37474,44 +38002,42 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=24
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=56,y=25
-	BonusType=BONUS_COFFEE
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	BonusType=BONUS_COTTON
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=56,y=26
-	BonusType=BONUS_CORN
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
+EndPlot
+BeginPlot
+	x=56,y=27
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=56,y=28
+	BonusType=BONUS_COTTON
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=2
+EndPlot
+BeginPlot
+	x=56,y=29
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
 BeginPlot
-	x=56,y=27
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=56,y=28
-	BonusType=BONUS_COW
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
-	x=56,y=29
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
-EndPlot
-BeginPlot
 	x=56,y=30
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=56,y=31
@@ -37520,8 +38046,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=32
-	BonusType=BONUS_OIL
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
@@ -38083,12 +38608,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=22
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=57,y=23
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -38098,39 +38624,40 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=25
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_GRASS
+	PlotType=2
 EndPlot
 BeginPlot
 	x=57,y=26
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	BonusType=BONUS_SUGAR
+	ImprovementType=IMPROVEMENT_TRIBE
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	TerrainType=TERRAIN_SAVANNA
+	PlotType=2
 EndPlot
 BeginPlot
 	x=57,y=27
-	TerrainType=TERRAIN_SAVANNA
+	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
 BeginPlot
 	x=57,y=28
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=1
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=57,y=29
-	TerrainType=TERRAIN_SAVANNA
-	PlotType=2
+	TerrainType=TERRAIN_COAST
+	PlotType=3
 EndPlot
 BeginPlot
 	x=57,y=30
-	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=57,y=31
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
@@ -38709,12 +39236,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=24
-	TerrainType=TERRAIN_OCEAN
+	BonusType=BONUS_OIL
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=58,y=25
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -38734,12 +39262,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=29
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=58,y=30
-	TerrainType=TERRAIN_COAST
+	BonusType=BONUS_FISH
+	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
