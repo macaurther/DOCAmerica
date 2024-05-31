@@ -8532,7 +8532,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_FLOATING_GARDENS</MovieDefineTag>
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<ObsoleteTech>TECH_SHIPBUILDING</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8590,7 +8590,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
-			<ObsoleteTech>TECH_COLONIZATION</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8646,7 +8646,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_MACHU_PICCHU</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
-			<ObsoleteTech>TECH_ECONOMICS</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8698,7 +8698,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_PUEBLO_BONITO</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
-			<ObsoleteTech>TECH_ECONOMICS</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8764,7 +8764,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SACSAYHUAMAN</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
-			<ObsoleteTech>TECH_FORTIFICATION</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
 			<CivicOption>CIVICOPTION_EXECUTIVE</CivicOption>
 			<FreePromotion>PROMOTION_MOUNTAINEER2</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
@@ -8822,7 +8822,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HUEY_TEOCALLI</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
-			<ObsoleteTech>TECH_COLONIZATION</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
 			<FreePromotion>PROMOTION_LEADERSHIP</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8878,7 +8878,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TLACHIHUALTEPETL</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OPTICS</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8928,7 +8928,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_YACHAYWASI</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
-			<ObsoleteTech>TECH_OPTICS</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8941,9 +8941,13 @@
 			<iConquestProb>100</iConquestProb>
 			<iAsset>12</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ObsoleteSafeCommerceChanges>
+			<CommerceChanges>
 				<iCommerce>0</iCommerce>
 				<iCommerce>4</iCommerce>
+			</CommerceChanges>
+			<ObsoleteSafeCommerceChanges>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
 				<iCommerce>4</iCommerce>
 			</ObsoleteSafeCommerceChanges>
 			<CommerceChangeDoubleTimes>
@@ -8973,7 +8977,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GATE_OF_THE_SUN</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_COMMUNITY</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9021,7 +9025,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GREAT_GEOGLYPH</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-			<ObsoleteTech>TECH_COMMUNITY</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9075,7 +9079,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_PYRAMID_OF_THE_SUN</MovieDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_CHARTER</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9128,7 +9132,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SERPENT_MOUND</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
-			<ObsoleteTech>TECH_CHARTER</ObsoleteTech>
+			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<CivicOption>CIVICOPTION_SOCIETY</CivicOption>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

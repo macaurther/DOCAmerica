@@ -4339,6 +4339,9 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 	UnitTypes eGreatPeopleUnit;
 	int iI, iJ;
 
+	// Macaurther: Mexican and Peru UP
+	if (GET_PLAYER(getOwner()).getCivilizationType() == MEXICO || GET_PLAYER(getOwner()).getCivilizationType() == PERU) bObsolete = false;
+
 	if (!(GET_TEAM(getTeam()).isObsoleteBuilding(eBuilding)) || bObsolete)
 	{
 		if (iChange > 0)
@@ -14768,7 +14771,9 @@ bool CvCity::doCheckProduction()
 		if (getBuildingProduction((BuildingTypes)iI) > 0)
 		{
 			bMaxedOut = GET_PLAYER(getOwnerINLINE()).isProductionMaxedBuildingClass((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()));
-			bObsolete = isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()) && GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech() != NO_TECH && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech()) > 0;
+			// MacAurther: because there are contemporaneous civs that have wildly different tech levels, I'm getting rid of this rule
+			//bObsolete = isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType()) && GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech() != NO_TECH && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)GC.getBuildingInfo((BuildingTypes)iI).getObsoleteTech()) > 0;
+			bObsolete = false;
 
 			if (bMaxedOut || bObsolete)
 			{

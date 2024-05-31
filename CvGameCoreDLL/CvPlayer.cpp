@@ -6181,14 +6181,15 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		return false;
 	}
 
+	// MacAurther: because there are contemporaneous civs that have wildly different tech levels, I'm getting rid of this rule
 	// Leoreth: if a wonder is obsolete for anyone, you cannot build it anymore
-	if ((TechTypes)GC.getBuildingInfo(eBuilding).getObsoleteTech() != NO_TECH)
+	/*if ((TechTypes)GC.getBuildingInfo(eBuilding).getObsoleteTech() != NO_TECH)
 	{
 		if (isWorldWonderClass(eBuildingClass) && GC.getGameINLINE().countKnownTechNumTeams((TechTypes)GC.getBuildingInfo(eBuilding).getObsoleteTech()) > 0)
 		{
 			return false;
 		}
-	}
+	}*/
 
 	if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() != NO_SPECIALBUILDING)
 	{
@@ -24298,7 +24299,9 @@ bool CvPlayer::isHasBuilding(BuildingTypes eIndex) const
 
 bool CvPlayer::isHasBuildingEffect(BuildingTypes eIndex) const
 {
-	return (isHasBuilding(eIndex) && (GC.getBuildingInfo(eIndex).getObsoleteTech() == NO_TECH || !GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildingInfo(eIndex).getObsoleteTech())));
+	// MacAurther: Mexican UP and Peru UP
+	bool bObsolete = (getCivilizationType() != MEXICO && getCivilizationType() != PERU) && (GC.getBuildingInfo(eIndex).getObsoleteTech() == NO_TECH || !GET_TEAM(getTeam()).isHasTech((TechTypes)GC.getBuildingInfo(eIndex).getObsoleteTech()));
+	return (isHasBuilding(eIndex) && bObsolete);
 }
 
 EraTypes CvPlayer::getSoundtrackEra()
