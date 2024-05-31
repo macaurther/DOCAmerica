@@ -437,12 +437,12 @@ dStartingUnits = CivDict({
 	},
 	iInca: {
 		iSettle: 1,
-		iWork: 4,
-		iDefend: 3,
-		iBase: 3,
-		iShock: 6,
-		iSiege: 3,
-		iHarass: 3,
+		iWork: 2,
+		iDefend: 4,
+		iBase: 4,
+		iShock: 8,
+		iSiege: 4,
+		iHarass: 4,
 		# if not human: 1 Settler
 	},
 	iPurepecha: {

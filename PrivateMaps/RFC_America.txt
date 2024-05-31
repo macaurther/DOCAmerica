@@ -15397,7 +15397,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=29
-	BonusType=BONUS_CITRUS
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -15414,7 +15413,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=32
-	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -16795,7 +16793,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=29
-	BonusType=BONUS_URANIUM
+	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -17471,7 +17469,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=28
-	BonusType=BONUS_POTATO
+	BonusType=BONUS_URANIUM
 	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1

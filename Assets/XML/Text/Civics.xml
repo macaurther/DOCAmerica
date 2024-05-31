@@ -1981,19 +1981,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_STRATEGY</Tag>
-		<English>Extra experience for land units; extra culture in new cities</English>
-		<French>Extra experience for land units; extra culture in new cities</French>
-		<German>Extra experience for land units; extra culture in new cities</German>
-		<Italian>Extra experience for land units; extra culture in new cities</Italian>
-		<Spanish>Extra experience for land units; extra culture in new cities</Spanish>
+		<English>Extra experience for land units; extra [ICON_CULTURE] in new cities</English>
+		<French>Extra experience for land units; extra [ICON_CULTURE] in new cities</French>
+		<German>Extra experience for land units; extra [ICON_CULTURE] in new cities</German>
+		<Italian>Extra experience for land units; extra [ICON_CULTURE] in new cities</Italian>
+		<Spanish>Extra experience for land units; extra [ICON_CULTURE] in new cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY_HELP</Tag>
-		<English>[ICON_BULLET]Extra culture in newly founded cities</English>
-		<French>[ICON_BULLET]Extra culture in newly founded cities</French>
-		<German>[ICON_BULLET]Extra culture in newly founded cities</German>
-		<Italian>[ICON_BULLET]Extra culture in newly founded cities</Italian>
-		<Spanish>[ICON_BULLET]Extra culture in newly founded cities</Spanish>
+		<English>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</English>
+		<French>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</French>
+		<German>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</German>
+		<Italian>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Italian>
+		<Spanish>[ICON_BULLET]Extra [ICON_CULTURE] in newly founded cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HEGEMONY</Tag>

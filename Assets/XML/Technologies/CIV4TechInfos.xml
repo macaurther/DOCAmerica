@@ -4460,7 +4460,6 @@
 			<iAsset>52</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
-			<bIgnoreIrrigation>1</bIgnoreIrrigation>
 			<iGridX>19</iGridX>
 			<iGridY>9</iGridY>
 			<Flavors>
@@ -4736,6 +4735,7 @@
 			<iAsset>72</iAsset>
 			<bTrade>1</bTrade>
 			<bGoodyTech>0</bGoodyTech>
+			<bIgnoreIrrigation>1</bIgnoreIrrigation>
 			<iGridX>20</iGridX>
 			<iGridY>9</iGridY>
 			<Flavors>
@@ -4884,11 +4884,8 @@
 			<iCost>6000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<Era>ERA_MODERN</Era>
-			<iHealth>1</iHealth>
-			<iHappiness>1</iHappiness>
 			<iAsset>100</iAsset>
 			<iPower>1</iPower>
-			<bRepeat>1</bRepeat>
 			<bTrade>0</bTrade>
 			<bGoodyTech>0</bGoodyTech>
 			<iGridX>21</iGridX>

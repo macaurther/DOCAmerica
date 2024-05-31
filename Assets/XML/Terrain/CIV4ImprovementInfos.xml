@@ -743,10 +743,10 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</ImprovementInfo>
 		<ImprovementInfo>
-			<Type>IMPROVEMENT_LOGGING_CAMP</Type>
-			<Description>TXT_KEY_IMPROVEMENT_LOGGING_CAMP</Description>
-			<Civilopedia>TXT_KEY_IMPROVEMENT_LOGGING_CAMP_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_LOGGING_CAMP</ArtDefineTag>
+			<Type>IMPROVEMENT_LUMBERMILL</Type>
+			<Description>TXT_KEY_IMPROVEMENT_LUMBERMILL</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_LUMBERMILL_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_LUMBERMILL</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>

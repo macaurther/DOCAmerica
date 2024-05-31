@@ -281,15 +281,6 @@
 			<DefaultBuilding>BUILDING_WAREHOUSE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_LUMBERMILL</Type>
-			<Description>TXT_KEY_BUILDING_LUMBERMILL</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_LUMBERMILL</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_TAVERN</Type>
 			<Description>TXT_KEY_BUILDING_TAVERN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

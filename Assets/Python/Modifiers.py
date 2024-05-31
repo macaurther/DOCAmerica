@@ -64,8 +64,8 @@ iModifierInflationRate, iModifierGreatPeopleThreshold, iModifierGrowthThreshold)
 ### Modifiers (by civilization, birth order!) ###
 DMN = 75	# Distance Maintenance Native
 DME = 50	# Distance Maintenance Euro
-NCN = 75	# Num Cities Native
-NCE = 50	# Num Cities Euro
+NCN = 100	# Num Cities Native
+NCE = 90	# Num Cities Euro
 
 # 				            MAY TEO ZAP TIW WAR MIS PUE MUI NOR CHI INU INC PUR AZT IRO SIO SPA POR ENG FRA NET HAW RUS AME HAI ARG MEX COL PER VEN BRA CAN     IND IND IND NAT BAR 
 
@@ -73,7 +73,7 @@ tCulture =		          ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,
                                                                                                                                                         
 tUnitUpkeep = 		      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,      0,  0,  0,100,100 )
 tResearchCost = 	      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    110,110,999,110,110 )
-tDistanceMaintenance = 	  ( DMN,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DME,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DME,DME,DME,DME,DME,DMN,DME,DME,DME,DME,DME,DME,DME,DME,DME,DME,     25, 25, 25, 25, 25 )	# Larger map = make distance less of a penalty
+tDistanceMaintenance = 	  ( DMN,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DME,DMN, 25,DMN,DMN,DMN,DMN,DMN,DME,DME,DME,DME,DME,DMN,DME,DME,DME,DME,DME,DME,DME,DME,DME,DME,     25, 25, 25, 25, 25 )	# Larger map = make distance less of a penalty
 tCitiesMaintenance = 	  ( NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,     50, 50, 50, 50, 50 )	# Larger map = make num cities less of a penalty
 tCivicUpkeep = 		      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,     70, 70, 70, 70, 70 )
 tHealth = 		      	  (   2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,      0,  0,  0,  0,  0 )

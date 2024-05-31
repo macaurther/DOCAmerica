@@ -1984,10 +1984,6 @@
 					<BuildingType>BUILDINGCLASS_FORGE</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_LUMBERMILL</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -2192,7 +2188,7 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_LOGGING_CAMP</ImprovementType>
+					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>2</iYield>
@@ -2383,7 +2379,7 @@
 			<Description>TXT_KEY_CIVIC_NATIVISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_NATIVISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_NATIVISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_HERITAGE</TechPrereq>
+			<TechPrereq>TECH_JOURNALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Nativism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>
@@ -2559,7 +2555,7 @@
 			<Description>TXT_KEY_CIVIC_HEGEMONY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HEGEMONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HEGEMONY_STRATEGY</Strategy>
-			<TechPrereq>TECH_TELEGRAPH</TechPrereq>
+			<TechPrereq>TECH_FISSION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Hegemony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>3</iCultureGroup>

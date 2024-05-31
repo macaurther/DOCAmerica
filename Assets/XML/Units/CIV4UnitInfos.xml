@@ -393,7 +393,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LOGGING_CAMP</BuildType>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -534,7 +534,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LOGGING_CAMP</BuildType>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -678,7 +678,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LOGGING_CAMP</BuildType>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -815,7 +815,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LOGGING_CAMP</BuildType>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -952,7 +952,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_LOGGING_CAMP</BuildType>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -1450,10 +1450,13 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iWorkRate>100</iWorkRate>
 			<iCombat>8</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>6</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iAsset>2</iAsset>
@@ -2054,6 +2057,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2067,6 +2071,8 @@
 			</FeatureImpassables>
 			<iCombat>8</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>6</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityDefense>50</iCityDefense>
@@ -2126,6 +2132,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2139,6 +2146,8 @@
 			</FeatureImpassables>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityDefense>50</iCityDefense>
@@ -2202,6 +2211,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2215,6 +2225,8 @@
 			</FeatureImpassables>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>10</iAirCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -2293,6 +2305,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2310,6 +2323,8 @@
 			</FeatureImpassables>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityDefense>50</iCityDefense>
@@ -2371,6 +2386,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2388,6 +2404,8 @@
 			</FeatureImpassables>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityDefense>50</iCityDefense>
@@ -2600,6 +2618,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2613,6 +2632,8 @@
 			</FeatureImpassables>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>4</iConscription>
@@ -2672,6 +2693,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2685,6 +2707,8 @@
 			</FeatureImpassables>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>4</iConscription>
@@ -2744,6 +2768,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2757,6 +2782,8 @@
 			</FeatureImpassables>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>4</iConscription>
@@ -2820,6 +2847,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2833,6 +2861,8 @@
 			</FeatureImpassables>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>5</iConscription>
@@ -2896,6 +2926,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -2909,6 +2940,8 @@
 			</FeatureImpassables>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>5</iConscription>
@@ -2972,6 +3005,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FreePromotions>
 				<FreePromotion>
@@ -2995,6 +3029,8 @@
 			</FeatureImpassables>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>5</iConscription>
@@ -3058,6 +3094,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -3071,6 +3108,8 @@
 			</FeatureImpassables>
 			<iCombat>16</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>14</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>5</iConscription>
@@ -3134,6 +3173,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -3153,6 +3193,8 @@
 			</FreePromotions>
 			<iCombat>16</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>14</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>5</iConscription>
@@ -3201,11 +3243,12 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
+			<PrereqTech>TECH_CIVIL_RIGHTS</PrereqTech>
 			<iCost>140</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -3219,6 +3262,8 @@
 			</FeatureImpassables>
 			<iCombat>20</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>18</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>6</iConscription>
@@ -3267,11 +3312,12 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_INFRASTRUCTURE</PrereqTech>
+			<PrereqTech>TECH_CIVIL_RIGHTS</PrereqTech>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -3285,6 +3331,8 @@
 			</FeatureImpassables>
 			<iCombat>20</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>18</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iConscription>6</iConscription>
@@ -3433,7 +3481,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_SMELTING</PrereqTech>
-			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
+			<PrereqBuilding>BUILDING_INCA_KALLANKA</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_COPPER</BonusType>
 				<BonusType>BONUS_IRON</BonusType>
@@ -3776,6 +3824,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -3789,6 +3838,8 @@
 			</FeatureImpassables>
 			<iCombat>11</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>9</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -3862,6 +3913,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -3875,6 +3927,8 @@
 			</FeatureImpassables>
 			<iCombat>11</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>9</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -3955,6 +4009,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -3968,6 +4023,8 @@
 			</FeatureImpassables>
 			<iCombat>13</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>11</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -4038,6 +4095,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -4051,6 +4109,8 @@
 			</FeatureImpassables>
 			<iCombat>13</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>11</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -4131,6 +4191,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -4144,6 +4205,8 @@
 			</FeatureImpassables>
 			<iCombat>15</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>13</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -4214,6 +4277,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -4227,6 +4291,8 @@
 			</FeatureImpassables>
 			<iCombat>15</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>13</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -4305,9 +4371,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>24</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>22</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -4735,6 +4804,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -4748,6 +4818,8 @@
 			</FeatureImpassables>
 			<iCombat>4</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>4</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -4812,6 +4884,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -4825,6 +4898,8 @@
 			</FeatureImpassables>
 			<iCombat>5</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>5</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -4894,6 +4969,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -4907,6 +4983,8 @@
 			</FeatureImpassables>
 			<iCombat>4</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>4</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -4976,6 +5054,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -4989,6 +5068,8 @@
 			</FeatureImpassables>
 			<iCombat>7</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>7</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -5058,6 +5139,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5071,6 +5153,8 @@
 			</FeatureImpassables>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -5140,6 +5224,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5153,6 +5238,8 @@
 			</FeatureImpassables>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -5222,6 +5309,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5235,6 +5323,8 @@
 			</FeatureImpassables>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>14</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -5298,6 +5388,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5311,6 +5402,8 @@
 			</FeatureImpassables>
 			<iCombat>18</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>18</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -5375,6 +5468,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5404,6 +5498,8 @@
 			</TerrainAttacks>
 			<iCombat>4</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>4</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -5461,6 +5557,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5490,6 +5587,8 @@
 			</TerrainAttacks>
 			<iCombat>4</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>4</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -5546,6 +5645,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5575,6 +5675,8 @@
 			</TerrainAttacks>
 			<iCombat>5</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>5</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -5632,6 +5734,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5661,6 +5764,8 @@
 			</TerrainAttacks>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -5718,6 +5823,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -5747,6 +5853,8 @@
 			</TerrainAttacks>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -5804,6 +5912,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FreePromotions>
 				<FreePromotion>
@@ -5843,6 +5952,8 @@
 			</TerrainAttacks>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -5900,6 +6011,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureAttacks>
 				<FeatureAttack>
@@ -5919,6 +6031,8 @@
 			</TerrainAttacks>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>14</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iFirstStrikes>1</iFirstStrikes>
@@ -5987,6 +6101,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6000,6 +6115,8 @@
 			</FeatureImpassables>
 			<iCombat>6</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>6</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6075,6 +6192,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6088,6 +6206,8 @@
 			</FeatureImpassables>
 			<iCombat>8</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6169,6 +6289,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6182,6 +6303,8 @@
 			</FeatureImpassables>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6264,6 +6387,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6283,6 +6407,8 @@
 			</TerrainAttacks>
 			<iCombat>8</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>8</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6369,6 +6495,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6382,6 +6509,8 @@
 			</FeatureImpassables>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6467,6 +6596,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6480,6 +6610,8 @@
 			</FeatureImpassables>
 			<iCombat>12</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>12</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6576,6 +6708,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6589,6 +6722,8 @@
 			</FeatureImpassables>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>14</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6677,6 +6812,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6690,6 +6826,8 @@
 			</FeatureImpassables>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>14</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -6786,6 +6924,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>4</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -6799,6 +6938,8 @@
 			</FeatureImpassables>
 			<iCombat>18</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>18</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<UnitCombatMods>
@@ -7044,6 +7185,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -7055,8 +7197,10 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<iCombat>18</iCombat>
+			<iCombat>17</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>17</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityAttack>-25</iCityAttack>
@@ -7123,6 +7267,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -7140,8 +7285,10 @@
 					<iUnitCombatMod>50</iUnitCombatMod>
 				</UnitCombatMod>
 			</UnitCombatMods>
-			<iCombat>18</iCombat>
+			<iCombat>17</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>17</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityAttack>-25</iCityAttack>
@@ -7207,6 +7354,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -7220,6 +7368,8 @@
 			</FeatureImpassables>
 			<iCombat>20</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>20</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityAttack>-25</iCityAttack>
@@ -7276,6 +7426,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>3</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -7289,6 +7440,8 @@
 			</FeatureImpassables>
 			<iCombat>28</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>28</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCityAttack>-25</iCityAttack>
@@ -7373,7 +7526,7 @@
 			</FeatureImpassables>
 			<iCombat>5</iCombat>
 			<iCombatLimit>50</iCombatLimit>
-			<iAirCombat>8</iAirCombat>
+			<iAirCombat>6</iAirCombat>
 			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -7444,7 +7597,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>1</iMoves>
-			<iAirRange>1</iAirRange>
+			<iAirRange>2</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -7458,7 +7611,7 @@
 			</FeatureImpassables>
 			<iCombat>8</iCombat>
 			<iCombatLimit>50</iCombatLimit>
-			<iAirCombat>10</iAirCombat>
+			<iAirCombat>8</iAirCombat>
 			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -7530,7 +7683,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>1</iMoves>
-			<iAirRange>1</iAirRange>
+			<iAirRange>2</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -7616,7 +7769,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>1</iMoves>
-			<iAirRange>1</iAirRange>
+			<iAirRange>2</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -7630,7 +7783,7 @@
 			</FeatureImpassables>
 			<iCombat>12</iCombat>
 			<iCombatLimit>50</iCombatLimit>
-			<iAirCombat>14</iAirCombat>
+			<iAirCombat>15</iAirCombat>
 			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -7697,7 +7850,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>1</iMoves>
-			<iAirRange>2</iAirRange>
+			<iAirRange>3</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<FeatureImpassables>
 				<FeatureImpassable>
@@ -8901,9 +9054,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>5</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>14</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>14</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iAsset>3</iAsset>
@@ -8964,9 +9120,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>6</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>16</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>16</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iAsset>3</iAsset>
@@ -9026,9 +9185,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>5</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>20</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>16</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iAsset>3</iAsset>
@@ -9091,9 +9253,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>11</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>24</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>24</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iInterceptionProbability>30</iInterceptionProbability>
@@ -9169,9 +9334,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>13</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>20</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>20</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iInterceptionProbability>30</iInterceptionProbability>
@@ -9260,9 +9428,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>6</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>10</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iAsset>3</iAsset>
@@ -9324,6 +9495,7 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>7</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<TerrainImpassables>
 				<TerrainImpassable>
@@ -9333,6 +9505,8 @@
 			</TerrainImpassables>
 			<iCombat>18</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>18</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>6</iXPValueAttack>
 			<iXPValueDefense>3</iXPValueDefense>
 			<iWithdrawalProb>50</iWithdrawalProb>
@@ -9395,7 +9569,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_ASSEMBLY_LINE</PrereqTech>
+			<PrereqTech>TECH_RADIO</PrereqTech>
 			<PrereqBuilding>BUILDING_DRYDOCK</PrereqBuilding>
 			<PrereqBonuses>
 				<BonusType>BONUS_OIL</BonusType>
@@ -9404,9 +9578,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>9</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>24</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>24</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>75</iWithdrawalProb>
@@ -9468,9 +9645,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>5</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>18</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>18</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>40</iCollateralDamage>
@@ -9535,9 +9715,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>6</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>20</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>20</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -9602,9 +9785,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>7</iMoves>
+			<iAirRange>1</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>22</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>22</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -9668,9 +9854,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>6</iMoves>
+			<iAirRange>2</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>28</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>28</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
@@ -9728,9 +9917,12 @@
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
 			<iMoves>9</iMoves>
+			<iAirRange>3</iAirRange>
 			<iNukeRange>-1</iNukeRange>
 			<iCombat>40</iCombat>
 			<iCombatLimit>100</iCombatLimit>
+			<iAirCombat>40</iAirCombat>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>

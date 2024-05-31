@@ -660,7 +660,7 @@
 			<Description>TXT_KEY_PROMOTION_BLITZ</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT3</PromotionPrereqOr1>
-			<TechPrereq>TECH_INFRASTRUCTURE</TechPrereq>
+			<TechPrereq>TECH_RADIO</TechPrereq>
 			<bBlitz>1</bBlitz>
 			<UnitCombats>
 				<UnitCombat>

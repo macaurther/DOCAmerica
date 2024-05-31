@@ -1713,19 +1713,24 @@ bool CvPlot::isFreshWater() const
 	CvPlot* pLoopPlot;
 	int iDX, iDY;
 
-	if (isWater())
-	{
-		return false;
-	}
+	if (isWater()) return false;
 
-	if (isImpassable())
-	{
-		return false;
-	}
+	if (isImpassable())	return false;
 
-	if (isRiver())
+	if (isRiver()) return true;
+
+	// MacAurther: Wari UP
+	if (getOwner() != NO_PLAYER && GET_PLAYER(getOwner()).getCivilizationType() == WARI)
 	{
-		return true;
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+
+			if ((pAdjacentPlot != NULL) && pAdjacentPlot->isPeak())
+			{
+				return true;
+			}
+		}
 	}
 
 	//Leoreth: Great Bath effect
@@ -2556,14 +2561,14 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, bool bPotential) const
 {
 	CvPlot* pLoopPlot;
-	bool bValid, bMexico;
+	bool bValid, bTerrace;
 	int iI;
 
 	FAssertMsg(eImprovement != NO_IMPROVEMENT, "Improvement is not assigned a valid value");
 	FAssertMsg(getTerrainType() != NO_TERRAIN, "TerrainType is not assigned a valid value");
 
 	bValid = false;
-	bMexico = false;
+	bTerrace = false;
 
 	if (isCity())
 	{
@@ -2580,10 +2585,10 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		return false;
 	}
 
-	// Leoreth: Mexican UP (Arid Agriculture): can build farms on hills
-	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == MEXICO && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FARM") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_DESERT"))
+	// Leoreth -> MacAurther: Andes RP (Terraces): can build farms on hills
+	if (eTeam != NO_TEAM && (RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FARM") && getTerrainType() != GC.getInfoTypeForString("TERRAIN_DESERT"))
 	{
-		bMexico = true;
+		bTerrace = true;
 	}
 
 	// Leoreth: different fishing boats for different sea levels
@@ -2618,7 +2623,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		return false;
 	}
 
-	if (GC.getImprovementInfo(eImprovement).isRequiresFlatlands() && !isFlatlands() && !bMexico) // Mexican UP
+	if (GC.getImprovementInfo(eImprovement).isRequiresFlatlands() && !isFlatlands() && !bTerrace) // Andes RP
 	{
 		return false;
 	}
@@ -2687,7 +2692,7 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
-		if (calculateNatureYield(((YieldTypes)iI), eTeam) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI) && !bMexico) // Mexican UP
+		if (calculateNatureYield(((YieldTypes)iI), eTeam) < GC.getImprovementInfo(eImprovement).getPrereqNatureYield(iI) && !bTerrace) // Andes RP
 		{
 			return false;
 		}
@@ -6629,43 +6634,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	BonusTypes eBonus;
 	int iYield;
 
-	//Rhye - start UP 
-	if (isPeak())
-	{
-		if (eTeam != NO_TEAM)
-		{
-			// MacAurther: Andes RP
-			if ((RegionPowers)GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getRegionPowers() == RP_ANDES)
-			{
-				if (eYield == YIELD_FOOD) 
-				{
-					return 2;
-				}
-				if (eYield == YIELD_PRODUCTION)
-				{
-					return 1;
-				}
-			}
-			// MacAurther: Peru UP
-			else if (GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == PERU)
-			{
-				if (eYield == YIELD_FOOD) 
-				{
-					return 2;
-				}
-				if (eYield == YIELD_COMMERCE)
-				{
-					return 2;
-				}
-			}
-		}
-		else
-		{
-			return 0;
-		}
-	}
-	//Rhye - end UP
-
 	if (isImpassable())
 	{
 		return 0;
@@ -6683,22 +6651,6 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 	if (isPeak())
 	{
 		iYield += GC.getYieldInfo(eYield).getPeakChange();
-	}
-
-	// Wari UP: The Power of Terraces: +1 Food on tiles adjacent to Mountains
-	if (eTeam != NO_TEAM && GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationType() == WARI && eYield == YIELD_FOOD && !isWater())
-	{
-		bool bAdjacentMountain = false;
-		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
-		{
-			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
-
-			if ((pAdjacentPlot != NULL) && pAdjacentPlot->isPeak())
-			{
-				iYield += 1;
-				break;
-			}
-		}
 	}
 
 	// MacAurther: Norse UP: The Power of Seafarers: +1 Food on Water Tiles
@@ -6860,6 +6812,16 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 			iYield += 1;
 		}
 	}
+
+	// MacAurther: Andes RP: +1 Food on Farms on Hills
+	if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ANDES)
+	{
+		if (eYield == YIELD_FOOD && isHills() && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FARM"))
+		{
+			iYield += 1;
+		}
+	}
+
 	return iYield;
 }
 

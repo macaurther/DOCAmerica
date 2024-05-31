@@ -882,7 +882,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_LUMBERMILL</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_FORGE</BuildingClassType>
 					<BuildingType>BUILDING_ENGLISH_SAWMILL</BuildingType>
 				</Building>
 				<Building>

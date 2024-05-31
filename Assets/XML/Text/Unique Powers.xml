@@ -23,11 +23,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_AND</Tag>
-		<English>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</English>
-		<French>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</French>
-		<German>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</German>
-		<Italian>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</Italian>
-		<Spanish>+2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains</Spanish>
+		<English>Can build farms on hills and +1 [ICON_FOOD] on farmed hills</English>
+		<French>Can build farms on hills and +1 [ICON_FOOD] on farmed hills</French>
+		<German>Can build farms on hills and +1 [ICON_FOOD] on farmed hills</German>
+		<Italian>Can build farms on hills and +1 [ICON_FOOD] on farmed hills</Italian>
+		<Spanish>Can build farms on hills and +1 [ICON_FOOD] on farmed hills</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RP_ANG_TITLE</Tag>
@@ -512,11 +512,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_POR</Tag>
-		<English>Build improvements on resources instantly</English>
-		<French>Build improvements on resources instantly</French>
-		<German>Build improvements on resources instantly</German>
-		<Italian>Build improvements on resources instantly</Italian>
-		<Spanish>Build improvements on resources instantly</Spanish>
+		<English>Build improvements on resources twice as fast</English>
+		<French>Build improvements on resources twice as fast</French>
+		<German>Build improvements on resources twice as fast</German>
+		<Italian>Build improvements on resources twice as fast</Italian>
+		<Spanish>Build improvements on resources twice as fast</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_PUE_TITLE</Tag>
@@ -640,11 +640,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_WAR</Tag>
-		<English>+1 [ICON_FOOD] on tiles adjacent to Mountains</English>
-		<French>+1 [ICON_FOOD] on tiles adjacent to Mountains</French>
-		<German>+1 [ICON_FOOD] on tiles adjacent to Mountains</German>
-		<Italian>+1 [ICON_FOOD] on tiles adjacent to Mountains</Italian>
-		<Spanish>+1 [ICON_FOOD] on tiles adjacent to MountainS</Spanish>
+		<English>Mountains provide fresh water</English>
+		<French>Mountains provide fresh water</French>
+		<German>Mountains provide fresh water</German>
+		<Italian>Mountains provide fresh water</Italian>
+		<Spanish>Mountains provide fresh water</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_ZAP_TITLE</Tag>

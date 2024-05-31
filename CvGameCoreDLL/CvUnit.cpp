@@ -7270,10 +7270,10 @@ bool CvUnit::build(BuildTypes eBuild)
 	}
 
 	// MacAurther: Portuguese UP
-	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && plot()->getBonusType() != NO_BONUS && eBuild != IMPROVEMENT_CONTACTED_TRIBE &&
+	if (eBuild != NO_BUILD && GET_PLAYER(getOwner()).getCivilizationType() == PORTUGAL && plot()->getBonusType() != NO_BONUS && eBuild != BUILD_CONTACT_TRIBE &&
 		GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(plot()->getBonusType()).getTechReveal()))
 	{
-		iWorkRate = 5000;
+		iWorkRate *= 2;
 	}
 
 	// MacAurther: French UP
