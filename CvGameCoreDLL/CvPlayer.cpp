@@ -1790,7 +1790,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		pNewCity->setEverOwned(((PlayerTypes)iI), abEverOwned[iI]);
 	}
 
-	// Leoreth: log game turn of losing this city for previous owner
+	// Leoreth: track game turn of losing this city for previous owner
 	pNewCity->setGameTurnPlayerLost(eOldOwner, GC.getGameINLINE().getGameTurn());
 
 	int iTotalBuildingDamage = 0;
@@ -5095,7 +5095,7 @@ void CvPlayer::findNewCapital()
 			}
 		}
 	}
-	
+
 	if (pBestCity != NULL)
 	{
 		if (pOldCapital != NULL)
@@ -5143,7 +5143,7 @@ bool CvPlayer::canRaze(CvCity* pCity) const
 			return false;
 		}
 
-		if (pCity->calculateTeamCulturePercent(getTeam()) >= GC.getDefineINT("RAZING_CULTURAL_PERCENT_THRESHOLD"))
+		if (pCity->getCulture(getID()) > 0 && pCity->calculateTeamCulturePercent(getTeam()) >= GC.getDefineINT("RAZING_CULTURAL_PERCENT_THRESHOLD"))
 		{
 			return false;
 		}
@@ -5332,7 +5332,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				if (canResearchNativeTech((TechTypes)iI))
+				if (canResearch((TechTypes)iI))
 				{
 					bTechFound = true;
 					break;
@@ -5990,11 +5990,12 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 
 	eUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getUnitClassType()));
 
+	// MacAurther TODO: Figure out who's spamming this assert
+	//FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
 	if (GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) != eUnit)
 	{
 		return false;
 	}
-	FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
 
 	if (!bIgnoreCost)
 	{
@@ -6401,6 +6402,7 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_SERPENT_MOUND, MISSISSIPPI)) return false;
 
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_GATE_OF_THE_SUN, TIWANAKU)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_PYRAMID_OF_THE_SUN, TIWANAKU)) return false;
 
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_CRISTO_REDENTOR, BRAZIL)) return false;
 	}
@@ -17317,6 +17319,12 @@ int CvPlayer::getAdvancedStartPopCost(bool bAdd, CvCity* pCity) const
 		return -1;
 	}
 
+	// Leoreth: can only add
+	if (!bAdd)
+	{
+		return -1;
+	}
+
 	int iCost = (getGrowthThreshold(1) * GC.getDefineINT("ADVANCED_START_POPULATION_COST")) / 100;
 
 	if (NULL != pCity)
@@ -17364,6 +17372,12 @@ int CvPlayer::getAdvancedStartPopCost(bool bAdd, CvCity* pCity) const
 int CvPlayer::getAdvancedStartCultureCost(bool bAdd, CvCity* pCity) const
 {
 	if (0 == getNumCities())
+	{
+		return -1;
+	}
+
+	// Leoreth: can only add
+	if (!bAdd)
 	{
 		return -1;
 	}
@@ -17421,6 +17435,12 @@ int CvPlayer::getAdvancedStartBuildingCost(BuildingTypes eBuilding, bool bAdd, C
 	int iNumBuildingType = 0;
 
 	int iCost = (getProductionNeeded(eBuilding) * GC.getBuildingInfo(eBuilding).getAdvancedStartCost()) / 100;
+
+	// Leoreth: can only add
+	if (!bAdd)
+	{
+		return -1;
+	}
 
 	if (iCost < 0)
 	{
@@ -17535,6 +17555,12 @@ int CvPlayer::getAdvancedStartRouteCost(RouteTypes eRoute, bool bAdd, CvPlot* pP
 	}
 
 	if (eRoute == NO_ROUTE)
+	{
+		return -1;
+	}
+
+	// Leoreth: can only add
+	if (!bAdd)
 	{
 		return -1;
 	}
@@ -17660,6 +17686,12 @@ int CvPlayer::getAdvancedStartImprovementCost(ImprovementTypes eImprovement, boo
 	}
 
 	if (0 == getNumCities())
+	{
+		return -1;
+	}
+
+	// Leoreth: can only add
+	if (!bAdd)
 	{
 		return -1;
 	}
@@ -17794,6 +17826,12 @@ int CvPlayer::getAdvancedStartTechCost(TechTypes eTech, bool bAdd) const
 	}
 
 	if (0 == getNumCities())
+	{
+		return -1;
+	}
+
+	// Leoreth: can only add
+	if (!bAdd)
 	{
 		return -1;
 	}
@@ -19030,6 +19068,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_bFoundedFirstCity);
 	pStream->Write(m_bStrike);
 	pStream->Write(m_bBirthProtected);
+
 
 	//Rhye (jdog) -  start ---------------------
 	//pStream->WriteString(m_szName);

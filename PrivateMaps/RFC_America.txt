@@ -927,7 +927,6 @@ EndPlot
 BeginPlot
 	x=1,y=56
 	BonusType=BONUS_BANANA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -2507,7 +2506,6 @@ EndPlot
 BeginPlot
 	x=4,y=3
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -3787,7 +3785,6 @@ EndPlot
 BeginPlot
 	x=6,y=9
 	BonusType=BONUS_POTATO
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 EndPlot
@@ -5030,7 +5027,6 @@ EndPlot
 BeginPlot
 	x=8,y=5
 	BonusType=BONUS_SHEEP
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -5601,7 +5597,6 @@ EndPlot
 BeginPlot
 	x=8,y=113
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -6107,7 +6102,6 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	BonusType=BONUS_SILVER
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
@@ -6655,7 +6649,6 @@ EndPlot
 BeginPlot
 	x=10,y=66
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -6830,7 +6823,6 @@ EndPlot
 BeginPlot
 	x=10,y=96
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -6952,7 +6944,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -7249,7 +7240,6 @@ EndPlot
 BeginPlot
 	x=11,y=53
 	BonusType=BONUS_BANANA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -7515,7 +7505,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -7594,7 +7583,6 @@ EndPlot
 BeginPlot
 	x=11,y=110
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -7707,7 +7695,6 @@ EndPlot
 BeginPlot
 	x=12,y=7
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -8085,7 +8072,6 @@ EndPlot
 BeginPlot
 	x=12,y=77
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -8673,7 +8659,6 @@ BeginPlot
 	x=13,y=63
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=12
@@ -8714,7 +8699,6 @@ EndPlot
 BeginPlot
 	x=13,y=70
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
@@ -8932,7 +8916,6 @@ EndPlot
 BeginPlot
 	x=13,y=103
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -9678,7 +9661,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -9805,7 +9787,6 @@ EndPlot
 BeginPlot
 	x=15,y=16
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -10339,7 +10320,6 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -10756,7 +10736,6 @@ EndPlot
 BeginPlot
 	x=16,y=66
 	BonusType=BONUS_COCOA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -10789,7 +10768,6 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	BonusType=BONUS_TOBACCO
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -10825,7 +10803,6 @@ EndPlot
 BeginPlot
 	x=16,y=77
 	BonusType=BONUS_TOBACCO
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -11174,7 +11151,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -12572,7 +12548,6 @@ EndPlot
 BeginPlot
 	x=19,y=20
 	BonusType=BONUS_COTTON
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -12916,7 +12891,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=85
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=1
 EndPlot
@@ -13023,7 +12997,6 @@ EndPlot
 BeginPlot
 	x=19,y=102
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -13892,7 +13865,6 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14021,7 +13993,6 @@ EndPlot
 BeginPlot
 	x=21,y=32
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
@@ -14150,7 +14121,6 @@ EndPlot
 BeginPlot
 	x=21,y=56
 	BonusType=BONUS_BANANA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -14260,7 +14230,6 @@ EndPlot
 BeginPlot
 	x=21,y=75
 	BonusType=BONUS_WHEAT
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14287,7 +14256,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -14461,7 +14429,6 @@ EndPlot
 BeginPlot
 	x=21,y=108
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -14630,7 +14597,6 @@ EndPlot
 BeginPlot
 	x=22,y=16
 	BonusType=BONUS_POTATO
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -14748,7 +14714,6 @@ EndPlot
 BeginPlot
 	x=22,y=38
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -15027,7 +14992,6 @@ EndPlot
 BeginPlot
 	x=22,y=87
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -15517,7 +15481,6 @@ EndPlot
 BeginPlot
 	x=23,y=51
 	BonusType=BONUS_BANANA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -15583,7 +15546,6 @@ EndPlot
 BeginPlot
 	x=23,y=62
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -16063,7 +16025,6 @@ EndPlot
 BeginPlot
 	x=24,y=23
 	BonusType=BONUS_OBSIDIAN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 EndPlot
@@ -16106,7 +16067,6 @@ EndPlot
 BeginPlot
 	x=24,y=31
 	BonusType=BONUS_LLAMA
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -16381,7 +16341,6 @@ EndPlot
 BeginPlot
 	x=24,y=78
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -16863,7 +16822,6 @@ EndPlot
 BeginPlot
 	x=25,y=41
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -17470,7 +17428,6 @@ EndPlot
 BeginPlot
 	x=26,y=28
 	BonusType=BONUS_URANIUM
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -17633,7 +17590,6 @@ EndPlot
 BeginPlot
 	x=26,y=55
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -18055,7 +18011,6 @@ EndPlot
 BeginPlot
 	x=27,y=9
 	BonusType=BONUS_SHEEP
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -18213,7 +18168,6 @@ EndPlot
 BeginPlot
 	x=27,y=35
 	BonusType=BONUS_COCOA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -18239,7 +18193,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_BANANA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -18523,7 +18476,6 @@ EndPlot
 BeginPlot
 	x=27,y=90
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 EndPlot
@@ -18804,7 +18756,6 @@ EndPlot
 BeginPlot
 	x=28,y=17
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -18976,7 +18927,6 @@ EndPlot
 BeginPlot
 	x=28,y=45
 	BonusType=BONUS_COFFEE
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -19070,7 +19020,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=63
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -19117,7 +19066,6 @@ EndPlot
 BeginPlot
 	x=28,y=72
 	BonusType=BONUS_CITRUS
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -19139,7 +19087,6 @@ EndPlot
 BeginPlot
 	x=28,y=75
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -19999,7 +19946,6 @@ EndPlot
 BeginPlot
 	x=29,y=97
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -20039,7 +19985,6 @@ EndPlot
 BeginPlot
 	x=29,y=104
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -20326,7 +20271,6 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -20356,7 +20300,6 @@ EndPlot
 BeginPlot
 	x=30,y=33
 	BonusType=BONUS_COFFEE
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -20430,7 +20373,6 @@ EndPlot
 BeginPlot
 	x=30,y=44
 	BonusType=BONUS_GOLD
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -20628,7 +20570,6 @@ EndPlot
 BeginPlot
 	x=30,y=79
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -20939,7 +20880,6 @@ EndPlot
 BeginPlot
 	x=31,y=12
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -21020,7 +20960,6 @@ EndPlot
 BeginPlot
 	x=31,y=24
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -21182,7 +21121,6 @@ BeginPlot
 	RiverWEDirection=1
 	isWOfRiver
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -21684,7 +21622,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -21719,7 +21656,6 @@ EndPlot
 BeginPlot
 	x=32,y=19
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -22696,7 +22632,6 @@ EndPlot
 BeginPlot
 	x=33,y=58
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22750,7 +22685,6 @@ EndPlot
 BeginPlot
 	x=33,y=68
 	BonusType=BONUS_CITRUS
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -22783,7 +22717,6 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22857,7 +22790,6 @@ EndPlot
 BeginPlot
 	x=33,y=85
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -23362,7 +23294,6 @@ EndPlot
 BeginPlot
 	x=34,y=48
 	BonusType=BONUS_CITRUS
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -23585,7 +23516,6 @@ EndPlot
 BeginPlot
 	x=34,y=88
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -23868,7 +23798,6 @@ EndPlot
 BeginPlot
 	x=35,y=17
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -23901,7 +23830,6 @@ EndPlot
 BeginPlot
 	x=35,y=22
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -23956,7 +23884,6 @@ EndPlot
 BeginPlot
 	x=35,y=30
 	BonusType=BONUS_RICE
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -24253,7 +24180,6 @@ EndPlot
 BeginPlot
 	x=35,y=80
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -24276,7 +24202,6 @@ EndPlot
 BeginPlot
 	x=35,y=84
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -24634,7 +24559,6 @@ EndPlot
 BeginPlot
 	x=36,y=27
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -24737,7 +24661,6 @@ EndPlot
 BeginPlot
 	x=36,y=42
 	BonusType=BONUS_RICE
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -25611,7 +25534,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=75
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -25712,7 +25634,6 @@ EndPlot
 BeginPlot
 	x=37,y=91
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
@@ -26080,7 +26001,6 @@ EndPlot
 BeginPlot
 	x=38,y=33
 	BonusType=BONUS_RICE
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -26210,7 +26130,6 @@ EndPlot
 BeginPlot
 	x=38,y=55
 	BonusType=BONUS_CITRUS
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -26397,7 +26316,6 @@ EndPlot
 BeginPlot
 	x=38,y=88
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -26862,7 +26780,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 EndPlot
@@ -27044,7 +26961,6 @@ EndPlot
 BeginPlot
 	x=39,y=80
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -27773,7 +27689,6 @@ EndPlot
 BeginPlot
 	x=40,y=85
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -28071,7 +27986,6 @@ EndPlot
 BeginPlot
 	x=41,y=17
 	BonusType=BONUS_BANANA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -28094,7 +28008,6 @@ EndPlot
 BeginPlot
 	x=41,y=20
 	BonusType=BONUS_COTTON
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -28126,7 +28039,6 @@ BeginPlot
 	RiverWEDirection=1
 	isWOfRiver
 	BonusType=BONUS_COW
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -28208,7 +28120,6 @@ EndPlot
 BeginPlot
 	x=41,y=37
 	BonusType=BONUS_RICE
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -29643,7 +29554,6 @@ EndPlot
 BeginPlot
 	x=43,y=44
 	BonusType=BONUS_COTTON
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -29888,7 +29798,6 @@ EndPlot
 BeginPlot
 	x=43,y=89
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -30533,7 +30442,6 @@ EndPlot
 BeginPlot
 	x=44,y=84
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -31235,7 +31143,6 @@ EndPlot
 BeginPlot
 	x=45,y=88
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_FOREST, FeatureVariety=2
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -31272,7 +31179,6 @@ EndPlot
 BeginPlot
 	x=45,y=94
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -31513,7 +31419,6 @@ EndPlot
 BeginPlot
 	x=46,y=17
 	BonusType=BONUS_SUGAR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -31659,7 +31564,6 @@ EndPlot
 BeginPlot
 	x=46,y=40
 	BonusType=BONUS_SUGAR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -32256,7 +32160,6 @@ EndPlot
 BeginPlot
 	x=47,y=27
 	BonusType=BONUS_RICE
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -32635,7 +32538,6 @@ EndPlot
 BeginPlot
 	x=47,y=97
 	BonusType=BONUS_DEER
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -32900,7 +32802,6 @@ EndPlot
 BeginPlot
 	x=48,y=23
 	BonusType=BONUS_COFFEE
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
@@ -33532,7 +33433,6 @@ EndPlot
 BeginPlot
 	x=49,y=19
 	BonusType=BONUS_COCOA
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -34552,7 +34452,6 @@ EndPlot
 BeginPlot
 	x=50,y=89
 	BonusType=BONUS_FUR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_TAIGA, FeatureVariety=0
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
@@ -34908,7 +34807,6 @@ EndPlot
 BeginPlot
 	x=51,y=32
 	BonusType=BONUS_COFFEE
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -36129,7 +36027,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_CORN
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -36779,7 +36676,6 @@ EndPlot
 BeginPlot
 	x=54,y=28
 	BonusType=BONUS_PIG
-	ImprovementType=IMPROVEMENT_TRIBE
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 EndPlot
@@ -38628,7 +38524,6 @@ EndPlot
 BeginPlot
 	x=57,y=26
 	BonusType=BONUS_SUGAR
-	ImprovementType=IMPROVEMENT_TRIBE
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2

@@ -458,75 +458,14 @@ class ImmigrationUtils:
 
 		colonistsDict = {}
 		
+		iCiv = civ(iPlayer)
 		pPlayer = gc.getPlayer(iPlayer)
 		
-		# Get Settler type available
-		if pPlayer.canTrain(iPioneer, false, false):
-			colonistsDict = self.addAvailableUnit(iPioneer, colonistsDict)
-		elif pPlayer.canTrain(iSettler, false, false):
-			colonistsDict = self.addAvailableUnit(iSettler, colonistsDict)
-		
-		# Get Worker type available
-		if pPlayer.canTrain(iMadeireiro, false, false):
-			colonistsDict = self.addAvailableUnit(iMadeireiro, colonistsDict)
-		elif pPlayer.canTrain(iLaborer, false, false):
-			colonistsDict = self.addAvailableUnit(iLaborer, colonistsDict)
-		elif pPlayer.canTrain(iPromyshlenniki, false, false):
-			colonistsDict = self.addAvailableUnit(iPromyshlenniki, colonistsDict)
-		elif pPlayer.canTrain(iWorker, false, false):
-			colonistsDict = self.addAvailableUnit(iWorker, colonistsDict)
-		
-		# Get Missionary type available
-		if pPlayer.getStateReligion() == iOrthodoxy and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iOrthodoxMiss).getUnitClassType(), 0):
-			colonistsDict = self.addAvailableUnit(iOrthodoxMiss, colonistsDict)
-		elif pPlayer.getStateReligion() == iCatholicism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iCatholicMiss).getUnitClassType(), 0):
-			colonistsDict = self.addAvailableUnit(iCatholicMiss, colonistsDict)
-		elif pPlayer.getStateReligion() == iProtestantism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iProtestantMiss).getUnitClassType(), 0):
-			colonistsDict = self.addAvailableUnit(iProtestantMiss, colonistsDict)
-		
-		# Get Transport Ship type available
-		if pPlayer.canTrain(iSteamship, false, false):
-			colonistsDict = self.addAvailableUnit(iSteamship, colonistsDict)
-		elif pPlayer.canTrain(iBrigantine, false, false):
-			colonistsDict = self.addAvailableUnit(iBrigantine, colonistsDict)
-		elif pPlayer.canTrain(iFluyt, false, false):
-			colonistsDict = self.addAvailableUnit(iFluyt, colonistsDict)
-		elif pPlayer.canTrain(iGalleon, false, false):
-			colonistsDict = self.addAvailableUnit(iGalleon, colonistsDict)
-		elif pPlayer.canTrain(iIndiaman, false, false):
-			colonistsDict = self.addAvailableUnit(iIndiaman, colonistsDict)
-		elif pPlayer.canTrain(iCarrack, false, false):
-			colonistsDict = self.addAvailableUnit(iCarrack, colonistsDict)
-		elif pPlayer.canTrain(iCaravel, false, false):
-			colonistsDict = self.addAvailableUnit(iCaravel, colonistsDict)
-		elif pPlayer.canTrain(iLongship, false, false):
-			colonistsDict = self.addAvailableUnit(iLongship, colonistsDict)
-		
-		# Colonist is always available
-		colonistsDict = self.addAvailableUnit(iColonist, colonistsDict)
-		
-		# Get Great Person available (Anglo-America RP)
-		if civ(iPlayer) == iAmerica or civ(iPlayer) == iCanada:
-			colonistsDict = self.addAvailableUnit(iGreatProphet, colonistsDict)
-			colonistsDict = self.addAvailableUnit(iGreatArtist, colonistsDict)
-			colonistsDict = self.addAvailableUnit(iGreatScientist, colonistsDict)
-			colonistsDict = self.addAvailableUnit(iGreatMerchant, colonistsDict)
-			colonistsDict = self.addAvailableUnit(iGreatEngineer, colonistsDict)
-			colonistsDict = self.addAvailableUnit(iGreatStatesman, colonistsDict)
-			colonistsDict = self.addAvailableUnit(iGreatGeneral, colonistsDict)
-		
-		player = gc.getPlayer(iPlayer)
-		civics = Civics.player(iPlayer)
-		
-		# Get Slave available
-		if iSlavery2 in civics:
-			colonistsDict = self.addAvailableUnit(iAfricanSlave2, colonistsDict)
-		elif iSlavery3 in civics:
-			colonistsDict = self.addAvailableUnit(iAfricanSlave3, colonistsDict)
-		
-		# Get Migrant Worker available
-		if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
-			colonistsDict = self.addAvailableUnit(iMigrantWorker, colonistsDict)
+		for lColonistType in lPossibleColonists:
+			for iUnit in reversed(lColonistType):
+				if self.isImmigrantValid(iPlayer, iUnit) and pPlayer.canTrain(iUnit, false, false):
+					colonistsDict = self.addAvailableUnit(iUnit, colonistsDict)
+					break
 		
 		return colonistsDict
 	
@@ -536,15 +475,67 @@ class ImmigrationUtils:
 
 		expeditionariesDict = {}
 		
+		iCiv = civ(iPlayer)
 		pPlayer = gc.getPlayer(iPlayer)
 		
 		for lExpeditionaryType in lPossibleExpeditionaries:
 			for iUnit in reversed(lExpeditionaryType):
-				if pPlayer.canTrain(iUnit, false, false):
+				if self.isImmigrantValid(iPlayer, iUnit) and pPlayer.canTrain(iUnit, false, false):
 					expeditionariesDict = self.addAvailableUnit(iUnit, expeditionariesDict)
 					break
 			
 		return expeditionariesDict
+	
+	def isImmigrantValid(self, iPlayer, iUnit):
+		iCiv = civ(iPlayer)
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		# Special Cases
+		# Get Missionary Type available
+		if iUnit in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]:
+			if pPlayer.getStateReligion() == iOrthodoxy and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iOrthodoxMiss).getUnitClassType(), 0):
+				return True
+			elif pPlayer.getStateReligion() == iCatholicism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iCatholicMiss).getUnitClassType(), 0):
+				return True
+			elif pPlayer.getStateReligion() == iProtestantism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iProtestantMiss).getUnitClassType(), 0):
+				return True
+			return False
+		
+		# Colonist is always available
+		if iUnit in [iColonist]:
+			return True
+		
+		# Get Great Person available (Anglo-America RP)
+		if iUnit in lGreatPeople:
+			if iCiv in [iAmerica, iCanada]:
+				return True
+			return False
+		
+		civics = Civics.player(iPlayer)
+		
+		# Slaves
+		if iUnit in lAfricanSlaves:
+			# Get Slave available
+			if iSlavery2 in civics:
+				return True
+			elif iSlavery3 in civics:
+				return True
+			return False
+		if iUnit in lNativeSlaves:
+			return False
+			
+		# Get Migrant Worker available
+		if iUnit in lMigrantWorkers:
+			if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
+				return True
+			return False
+		
+		# Default
+		iUnitClass = gc.getUnitInfo(iUnit).getUnitClassType();
+		if gc.getCivilizationInfo(iCiv).getCivilizationUnits(iUnitClass) == iUnit:
+			return True
+		
+		return False
 	
 	def addAvailableUnit(self, iUnit, unitDict):
 		# Get Unit Info

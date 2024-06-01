@@ -121,13 +121,13 @@ dGoals = {
 		),
 	),
 	iTiwanaku: (
+		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1, by=700),
 		All(
-			CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1),
 			Wonder(iGateOfTheSun),
+			Wonder(iPyramidOfTheSun),
 			by=900,
 		),
-		CultureLevelCityCount(iCultureLevelRefined, 2, by=1000),
-		GoldenAges(2, by=1100),
+		GoldenAges(3, by=1100),
 	),
 	iWari: (
 		All(

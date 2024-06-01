@@ -192,11 +192,12 @@ lCivilizations = [
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMythology).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iWari,
 		iGold=100,
+		lCivics=[iChiefdom1, iCustomaryLaw1, iMita1, iRedistribution1],
 		techs=techs.column(3).including(iMasonry, iArithmetics).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
@@ -829,36 +830,53 @@ dBuildingPreferences = {
 		iTempleOfKukulkan: 40,
 		iMachuPicchu: -40,
 		iSerpentMound: -80,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iZapotec : {
 		iSerpentMound: -80,
 		iPuebloBonito: -80,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iTeotihuacan : {
 		iTlachihualtepetl: 40,
 		iSerpentMound: -80,
 		iPuebloBonito: -80,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iTiwanaku : {
 		iGateOfTheSun: 40,
+		iPyramidOfTheSun: 40,
 		iSerpentMound: -40,
 	},
 	iWari : {
 		iSerpentMound: -40,
 		iPuebloBonito: -100,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iMississippi : {
 		iSerpentMound: 40,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iPuebloan : {
-		iSerpentMound: -40,
 		iPuebloBonito: 40,
+		iSerpentMound: -40,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iMuisca : {
 		iSerpentMound: -40,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iChimu : {
 		iSerpentMound: -40,
+		iGateOfTheSun: -80,
+		iPyramidOfTheSun: -80,
 	},
 	iInca : {
 		iMachuPicchu: 40,

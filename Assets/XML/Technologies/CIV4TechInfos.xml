@@ -926,11 +926,9 @@
 					<iFlavor>4</iFlavor>
 				</Flavor>
 			</Flavors>
-			<OrPreReqs>
-				<PrereqTech>TECH_POTTERY</PrereqTech>
-			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_SMELTING</PrereqTech>
+				<PrereqTech>TECH_MASONRY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ALLOYS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -969,7 +967,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_MASONRY</PrereqTech>
-				<PrereqTech>TECH_SMELTING</PrereqTech>
+				<PrereqTech>TECH_PROPERTY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_CONSTRUCTION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -1008,7 +1006,6 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_PROPERTY</PrereqTech>
 				<PrereqTech>TECH_ARITHMETICS</PrereqTech>
-				<PrereqTech>TECH_MASONRY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_MATHEMATICS_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

@@ -969,7 +969,7 @@ void CvTeam::doTurn()
 
 	//Rhye
 	//if (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING))
-	if (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)POWER_PROJECTION))
+	if (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)GLOBALISM))
 	{
 		for (iI = 0; iI < GC.getNumTechInfos(); iI++)
 		{
@@ -2929,17 +2929,32 @@ int CvTeam::getModernizationResearchModifier(TechTypes eTech) const
 			continue;
 		}
 
-		if (GET_TEAM(eTeam).isHasTech(eTech) && (!isHuman() || canContact(eTeam)))
+		if (GET_TEAM(eTeam).isHasTech(eTech) && (!isHuman() || canContact(eTeam)) && (GET_TEAM(eTeam).isHuman() || GET_TEAM(eTeam).AI_techTrade(eTech, getID(), true) == NO_DENIAL))
 		{
 			if (!isAtWar(eTeam))
 			{
 				iCount++;
 			}
+			else
+			{
+				int iOurSuccess = AI_getWarSuccess(eTeam);
+				int iTheirSuccess = GET_TEAM(eTeam).AI_getWarSuccess(getID());
+				if (iOurSuccess - iTheirSuccess > 20 + 10 * GET_PLAYER(getLeaderID()).getCurrentEra() + std::max(iOurSuccess, iTheirSuccess) / 10)
+				{
+					iCount++;
+				}
+			}
 		}
 	}
 
-	if (iCount > 0)
+	if (iCount >= 3)
 	{
+		// account of the base modifier that Japan receives in the global era
+		if (GET_PLAYER(getLeaderID()).getCurrentEra() >= ERA_MODERN)
+		{
+			return isHuman() ? -30 : -10;
+		}
+
 		return -50;
 	}
 
@@ -5128,7 +5143,7 @@ void CvTeam::setResearchProgress(TechTypes eIndex, int iNewValue, PlayerTypes eP
 			setHasTech(eIndex, true, ePlayer, true, true);
 			//Rhye
 			//if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && !GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING))
-			if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)POWER_PROJECTION)))
+			if (!GC.getGameINLINE().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && (!GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) || isHasTech((TechTypes)GLOBALISM)))
 			{
 				setNoTradeTech(eIndex, true);
 			}
@@ -6371,6 +6386,26 @@ bool CvTeam::isFriendlyTerritory(TeamTypes eTeam) const
 	}
 
 	if (isVassal(eTeam) && isOpenBorders(eTeam))
+	{
+		return true;
+	}
+
+	return false;
+}
+
+bool CvTeam::isAccessibleTerritory(TeamTypes eTeam) const
+{
+	if (eTeam == NO_TEAM)
+	{
+		return false;
+	}
+
+	if (eTeam == getID())
+	{
+		return true;
+	}
+
+	if (isOpenBorders(eTeam))
 	{
 		return true;
 	}

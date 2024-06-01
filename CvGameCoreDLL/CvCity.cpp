@@ -298,7 +298,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 
 	for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 	{
-		if (GET_PLAYER(getOwnerINLINE()).isBuildingFree((BuildingTypes)iI))
+		if (GET_PLAYER(getOwnerINLINE()).isBuildingFree((BuildingTypes)iI) && isValidBuildingLocation((BuildingTypes)iI))
 		{
 			setNumFreeBuilding(((BuildingTypes)iI), 1);
 		}
@@ -5062,6 +5062,7 @@ bool CvCity::isHeadquarters() const
 	return false;
 }
 
+
 int CvCity::getOvercrowdingPercentAnger(int iExtra) const
 {
 	int iOvercrowding;
@@ -5972,11 +5973,7 @@ bool CvCity::hasActiveBuilding(BuildingTypes eIndex) const
 
 int CvCity::getNumBuilding(BuildingTypes eIndex) const
 {
-	if(eIndex == NO_BUILDING)	// MacAurther TODO: Got tired of tracking down who is triggering this assert
-	{
-		return false;
-	}
-	//FAssertMsg(eIndex != NO_BUILDING, "BuildingType eIndex is expected to not be NO_BUILDING");
+	FAssertMsg(eIndex != NO_BUILDING, "BuildingType eIndex is expected to not be NO_BUILDING");
 
 	return std::min(GC.getCITY_MAX_NUM_BUILDINGS(), getNumRealBuilding(eIndex) + getNumFreeBuilding(eIndex));
 }
@@ -10186,6 +10183,7 @@ void CvCity::updateHappinessYield()
 	}
 }
 
+
 int CvCity::getCommerceRate(CommerceTypes eIndex) const
 {
 	return getCommerceRateTimes100(eIndex) / 100;
@@ -11402,7 +11400,13 @@ int CvCity::getCultureTimes100(PlayerTypes ePlayer) const
 	FAssertMsg(ePlayer >= 0, "ePlayer expected to be non-negative");
 	FAssertMsg(ePlayer < MAX_PLAYERS, "ePlayer expected to be within maximum bounds");
 
-	return getCultureTimes100(GET_PLAYER(ePlayer).getCivilizationType());
+	CivilizationTypes eCivilization = GET_PLAYER(ePlayer).getCivilizationType();
+	if (eCivilization == NO_CIVILIZATION)
+	{
+		return 0;
+	}
+
+	return getCultureTimes100(eCivilization);
 }
 
 
@@ -11464,7 +11468,7 @@ int CvCity::calculateCulturePercent(CivilizationTypes eCivilization) const
 
 	if (iTotalCulture > 0)
 	{
-		return (getCultureTimes100(eCivilization) * 100) / iTotalCulture;
+		return percent(getCultureTimes100(eCivilization), 100, iTotalCulture);
 	}
 
 	if (getCivilizationType() == eCivilization)
@@ -12557,7 +12561,9 @@ int CvCity::getMaxSpecialistCount(SpecialistTypes eIndex) const
 		iMaxSpecialistCount *= 2;
 	}
 
-	return std::max(std::min(GET_PLAYER(getOwnerINLINE()).getPotentialSpecialistCount(eIndex), GET_PLAYER(getOwnerINLINE()).getMinimalSpecialistCount(eIndex)), iMaxSpecialistCount);
+	// MacAurther: Changing this functionality so that you don't need to "unlock" specialists before being able to use them in minimal civics
+	//return std::max(std::min(GET_PLAYER(getOwnerINLINE()).getPotentialSpecialistCount(eIndex), GET_PLAYER(getOwnerINLINE()).getMinimalSpecialistCount(eIndex)), iMaxSpecialistCount);
+	return std::max(GET_PLAYER(getOwnerINLINE()).getMinimalSpecialistCount(eIndex), iMaxSpecialistCount);
 }
 
 
@@ -18781,7 +18787,7 @@ bool CvCity::canSatelliteJoin() const
 
 int CvCity::getSpecialistGreatPeopleRateChange(SpecialistTypes eSpecialist) const
 {
-    CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
+	CvSpecialistInfo& kSpecialist = GC.getSpecialistInfo(eSpecialist);
 	int iGreatPeopleRate = kSpecialist.getGreatPeopleRateChange();
 
 	/*if (!kSpecialist.isNoGlobalEffects())
@@ -18793,7 +18799,6 @@ int CvCity::getSpecialistGreatPeopleRateChange(SpecialistTypes eSpecialist) cons
 
 	return iGreatPeopleRate;
 }
-
 
 int CvCity::getActualTotalCultureTimes100() const
 {
@@ -19051,7 +19056,10 @@ void CvCity::sack(PlayerTypes eHighestCulturePlayer, int iCaptureGold)
 			CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes)iI);
 			if (kBuilding.getDefenseModifier() > 0 || kBuilding.getBombardDefenseModifier() > 0 || kBuilding.getUnignorableBombardDefenseModifier() > 0)
 			{
-				setHasRealBuilding((BuildingTypes)iI, false);
+				if (!::isWorldWonderClass((BuildingClassTypes)kBuilding.getBuildingClassType()))
+				{
+					setHasRealBuilding((BuildingTypes)iI, false);
+				}
 			}
 		}
 	}
