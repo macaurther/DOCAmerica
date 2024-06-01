@@ -493,11 +493,11 @@ class ImmigrationUtils:
 		# Special Cases
 		# Get Missionary Type available
 		if iUnit in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]:
-			if pPlayer.getStateReligion() == iOrthodoxy and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iOrthodoxMiss).getUnitClassType(), 0):
+			if iUnit == iOrthodoxMiss and pPlayer.getStateReligion() == iOrthodoxy and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iOrthodoxMiss).getUnitClassType(), 0):
 				return True
-			elif pPlayer.getStateReligion() == iCatholicism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iCatholicMiss).getUnitClassType(), 0):
+			elif iUnit == iCatholicMiss and pPlayer.getStateReligion() == iCatholicism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iCatholicMiss).getUnitClassType(), 0):
 				return True
-			elif pPlayer.getStateReligion() == iProtestantism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iProtestantMiss).getUnitClassType(), 0):
+			elif iUnit == iProtestantMiss and pPlayer.getStateReligion() == iProtestantism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iProtestantMiss).getUnitClassType(), 0):
 				return True
 			return False
 		
