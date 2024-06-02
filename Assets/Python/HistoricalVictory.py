@@ -1,8 +1,9 @@
 from Definitions import *
 from Locations import *
 
-# second Portuguese goal: acquire 20 colonial resources by 1650 AD
-lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco, iCocoa, iSalt, iCitrus]
+# second Portuguese goal: acquire 20 plantation resources by 1650 AD
+#lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco, iCocoa, iSalt, iCitrus]
+lPlantationResources = [iBanana, iCocoa, iCoffee, iCotton, iDye, iIncense, iRubber, iSilk, iSpices, iSugar, iTea, iTobacco]
 
 
 # city names
@@ -74,7 +75,7 @@ STATE_RELIGION_CATHEDRAL = "TXT_KEY_VICTORY_NAME_STATE_RELIGION_CATHEDRAL"
 
 # resource descriptors
 DIFFERENT_HAPPINESS_RESOURCES = "TXT_KEY_VICTORY_NAME_DIFFERENT_HAPPINESS_RESOURCES"
-TRADING_COMPANY_RESOURCES = "TXT_KEY_VICTORY_NAME_TRADING_COMPANY_RESOURCES"
+PLANTATION_RESOURCES = "TXT_KEY_VICTORY_NAME_PLANTATION_RESOURCES"
 
 # routes descriptors
 LAND_BASED_TRADE = "TXT_KEY_VICTORY_NAME_LAND_BASED_TRADE"
@@ -239,7 +240,7 @@ dGoals = {
 		)
 	),
 	iPortugal: (
-		ResourceCount(sum(lColonialResources).named(TRADING_COMPANY_RESOURCES), 20, by=1650),
+		ResourceCount(sum(lPlantationResources).named(PLANTATION_RESOURCES), 30, by=1650),
 		CityCount(sum(
 			plots.regions(*lBrazil).named(BRAZIL),
 		), 15, by=1700),

@@ -1352,19 +1352,19 @@ class Mercenary:
 			self.iHireCost = self.objUnitInfo.getProductionCost()
 		
 		#iImmigrationCost = int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye
-		iImmigrationCost = self.iHireCost
+		iImmigrationCost = self.iHireCost / 2
 		iGoldCost = 0
 		
 		# Settlers are expensive
 		if self.getUnitInfoID() in lSettlers:
-			iImmigrationCost = 90
+			iImmigrationCost = 50
 		
 		# Great people are very expensive
 		if self.getUnitInfoID() in lGreatPeople:
 			iImmigrationCost = 1000
 		
 		# Scale by game speed
-		iImmigrationCost *= (3 - gc.getGame().getGameSpeedType())
+		iImmigrationCost *= int(3 - gc.getGame().getGameSpeedType())
 		
 		# Increase Immigrant cost by 20% for each time this Civ has hired from category that before
 		if iPlayer > -1:
