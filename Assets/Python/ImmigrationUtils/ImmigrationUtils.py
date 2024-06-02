@@ -1348,18 +1348,20 @@ class Mercenary:
 			
 		# if the self.objUnitInfo is actually set then get the latest cost to hire the mercenary.
 		if(self.objUnitInfo != None):
-			self.iHireCost = (self.objUnitInfo.getProductionCost() * (self.getLevel()+1)) + ((self.getLevel()+1) * int(math.fabs(self.getExperienceLevel() - self.getNextExperienceLevel())))
+			#self.iHireCost = (self.objUnitInfo.getProductionCost() * (self.getLevel()+1)) + ((self.getLevel()+1) * int(math.fabs(self.getExperienceLevel() - self.getNextExperienceLevel())))
+			self.iHireCost = self.objUnitInfo.getProductionCost()
 		
-		iImmigrationCost = int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye
+		#iImmigrationCost = int(self.iHireCost*g_dHireCostModifier) + g_dBaseHireCost #Rhye
+		iImmigrationCost = self.iHireCost
 		iGoldCost = 0
 		
 		# Settlers are expensive
 		if self.getUnitInfoID() in lSettlers:
-			iImmigrationCost *= 3
+			iImmigrationCost = 90
 		
 		# Great people are very expensive
 		if self.getUnitInfoID() in lGreatPeople:
-			iImmigrationCost *= 30
+			iImmigrationCost = 1000
 		
 		# Scale by game speed
 		iImmigrationCost *= (3 - gc.getGame().getGameSpeedType())
