@@ -706,7 +706,7 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SIOUX_MOUNTED_BRAVE</Tag>
+		<Tag>TXT_KEY_UNIT_MOUNTED_BRAVE</Tag>
 		<English>Mounted Brave</English>
 		<French>
 			<Text>Cavalerie sioux</Text>
@@ -718,7 +718,7 @@
 		<Spanish>Mounted Brave</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SIOUX_MOUNTED_BRAVE_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_MOUNTED_BRAVE_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</English>
 		<French>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</French>
 		<German>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</German>

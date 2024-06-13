@@ -95,6 +95,14 @@
 			<DefaultUnit>UNIT_RANGER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_PARATROOPER</Type>
+			<Description>TXT_KEY_UNIT_PARATROOPER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_PARATROOPER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_SPY</Type>
 			<Description>TXT_KEY_UNIT_SPY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -357,6 +365,14 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_GRENADIER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_AT_INFANTRY</Type>
+			<Description>TXT_KEY_UNIT_AT_INFANTRY</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_AT_INFANTRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_HORSE_ARCHER</Type>

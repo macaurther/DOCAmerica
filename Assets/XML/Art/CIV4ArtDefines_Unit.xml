@@ -3005,7 +3005,7 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SIOUX_MOUNTED_BRAVE</Type>
+			<Type>ART_DEF_UNIT_MOUNTED_BRAVE</Type>
 			<Button>Art/Units/Sioux Mounted Brave/Mounted Brave.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>

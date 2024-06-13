@@ -454,16 +454,16 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 151
+iNumUnits = 153
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
-iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iSpy, 			iSisqeno,       
+iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			iSisqeno,       
 iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		
 iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		
 iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iMacana,		
 iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,
 iPikeman,		iArcher,		iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	iAtlatlist,		
-iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iHorseArcher,	iSwiftArrow,	iHussar,		iMountedBrave,	
+iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		iHorseArcher,	iSwiftArrow,	iHussar,		iMountedBrave,	
 iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		
 iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			iWorkboat,		iCanoe,			iLongship,		
 iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iTransport,		

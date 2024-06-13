@@ -1157,6 +1157,8 @@ enum FontSymbols					// Exposed to Python
 	AIRPORT_CHAR,
 	CLEAN_POWER_CHAR,
 	SATELLITE_CHAR,
+	RANGED_STRENGTH_CHAR,	// MacAurther
+	RANGE_CHAR,	// MacAurther
 
 #ifdef _USRDLL
 	MAX_NUM_SYMBOLS

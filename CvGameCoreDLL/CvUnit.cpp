@@ -14853,7 +14853,7 @@ bool CvUnit::canContactTribe(const CvPlot* pPlot) const
 
 bool CvUnit::canUnitContactTribe() const
 {
-	if(getUnitClassType() == UNITCLASS_EXPLORER || getUnitClassType() == UNITCLASS_RANGER)
+	if(getUnitClassType() == UNITCLASS_EXPLORER || getUnitClassType() == UNITCLASS_RANGER || getUnitClassType() == UNITCLASS_PARATROOPER)
 	{
 		return true;
 	}

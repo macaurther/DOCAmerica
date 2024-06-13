@@ -113,18 +113,18 @@ class CvPediaUnit:
 			screen.appendListBoxString(panel, u"<font=3>Missionary</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 		# Strength
-		if gc.getUnitInfo(self.iUnit).getAirCombat() > 0 and gc.getUnitInfo(self.iUnit).getCombat() == 0:
-			iStrength = gc.getUnitInfo(self.iUnit).getAirCombat()
-		else:
-			iStrength = gc.getUnitInfo(self.iUnit).getCombat()
-
-		szStats = u"%d%c" % (iStrength, CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR))
+		# MacAurther: Ranged unit changes
+		szStats = ""
+		if not (gc.getUnitInfo(self.iUnit).getAirCombat() != 0 and gc.getUnitInfo(self.iUnit).getCombat() == 0):
+			szStats += u"%d%c  " % (gc.getUnitInfo(self.iUnit).getCombat(), CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR))
+		if gc.getUnitInfo(self.iUnit).getAirCombat() > 0:
+			szStats += u"%d%c  " % (gc.getUnitInfo(self.iUnit).getAirCombat(), CyGame().getSymbolID(FontSymbols.RANGED_STRENGTH_CHAR))
 
 		# Movement
 		if UnitInfo.getAirCombat() > 0 and UnitInfo.getAirRange() > 0:
-			szStats += u"  %d%c" % (UnitInfo.getAirRange(), CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
-		else:
-			szStats += u"  %d%c" % (UnitInfo.getMoves(), CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
+			szStats += u"%d%c  " % (UnitInfo.getAirRange(), CyGame().getSymbolID(FontSymbols.RANGE_CHAR))
+		if UnitInfo.getMoves() > 0:
+			szStats += u"%d%c  " % (UnitInfo.getMoves(), CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
 
 		# Cost
 		if UnitInfo.getProductionCost() >= 0:
@@ -133,7 +133,7 @@ class CvPediaUnit:
 			else:
 				iCost = gc.getActivePlayer().getUnitProductionNeeded(self.iUnit)
 
-			szStats += u"  %d%c" % (iCost, gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
+			szStats += u"%d%c  " % (iCost, gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
 
 		screen.appendListBoxString(panel, u"<font=3>" + szStats + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 

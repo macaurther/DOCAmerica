@@ -528,43 +528,39 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 	szString.append(L", ");
 
-	if (pUnit->getDomainType() == DOMAIN_AIR)
+	// MacAurther: Ranged units changes
+	if (pUnit->canFight())
 	{
-		if (pUnit->airBaseCombatStr() > 0)
+		if (pUnit->isFighting())
 		{
-			if (pUnit->isFighting())
-			{
-				szTempBuffer.Format(L"?/%d%c, ", pUnit->airBaseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
-			}
-			else if (pUnit->isHurt())
-			{
-				szTempBuffer.Format(L"%.1f/%d%c, ", (((float)(pUnit->airBaseCombatStr() * pUnit->currHitPoints())) / ((float)(pUnit->maxHitPoints()))), pUnit->airBaseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
-			}
-			else
-			{
-				szTempBuffer.Format(L"%d%c, ", pUnit->airBaseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
-			}
-			szString.append(szTempBuffer);
+			szTempBuffer.Format(L"?/%d%c, ", pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
 		}
+		else if (pUnit->isHurt())
+		{
+			szTempBuffer.Format(L"%.1f/%d%c, ", (((float)(pUnit->baseCombatStr() * pUnit->currHitPoints())) / ((float)(pUnit->maxHitPoints()))), pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
+		}
+		else
+		{
+			szTempBuffer.Format(L"%d%c, ", pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
+		}
+		szString.append(szTempBuffer);
 	}
-	else
+
+	if (pUnit->airBaseCombatStr() > 0)
 	{
-		if (pUnit->canFight())
+		if (pUnit->isFighting())
 		{
-			if (pUnit->isFighting())
-			{
-				szTempBuffer.Format(L"?/%d%c, ", pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
-			}
-			else if (pUnit->isHurt())
-			{
-				szTempBuffer.Format(L"%.1f/%d%c, ", (((float)(pUnit->baseCombatStr() * pUnit->currHitPoints())) / ((float)(pUnit->maxHitPoints()))), pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
-			}
-			else
-			{
-				szTempBuffer.Format(L"%d%c, ", pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
-			}
-			szString.append(szTempBuffer);
+			szTempBuffer.Format(L"?/%d%c, ", pUnit->airBaseCombatStr(), gDLL->getSymbolID(RANGED_STRENGTH_CHAR));
 		}
+		else if (pUnit->isHurt())
+		{
+			szTempBuffer.Format(L"%.1f/%d%c, ", (((float)(pUnit->airBaseCombatStr() * pUnit->currHitPoints())) / ((float)(pUnit->maxHitPoints()))), pUnit->airBaseCombatStr(), gDLL->getSymbolID(RANGED_STRENGTH_CHAR));
+		}
+		else
+		{
+			szTempBuffer.Format(L"%d%c, ", pUnit->airBaseCombatStr(), gDLL->getSymbolID(RANGED_STRENGTH_CHAR));
+		}
+		szString.append(szTempBuffer);
 	}
 
 	iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
@@ -580,7 +576,8 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 	if (pUnit->airRange() > 0)
 	{
-		szString.append(gDLL->getText("TXT_KEY_UNIT_HELP_AIR_RANGE", pUnit->airRange()));
+		szTempBuffer.Format(L"%d%c", pUnit->airRange(), gDLL->getSymbolID(RANGE_CHAR));
+		szString.append(szTempBuffer);
 	}
 
 	eBuild = pUnit->getBuildType();
@@ -8634,21 +8631,17 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 	{
 		szBuffer.append(NEWLINE);
 
-		if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_AIR)
+		// MacAurther: With ranged units, some units have both air and regular combat. We want to show both.
+		if (GC.getUnitInfo(eUnit).getCombat() > 0)
 		{
-			if (GC.getUnitInfo(eUnit).getAirCombat() > 0)
-			{
-				szTempBuffer.Format(L"%d%c, ", GC.getUnitInfo(eUnit).getAirCombat(), gDLL->getSymbolID(STRENGTH_CHAR));
-				szBuffer.append(szTempBuffer);
-			}
+			szTempBuffer.Format(L"%d%c, ", GC.getUnitInfo(eUnit).getCombat(), gDLL->getSymbolID(STRENGTH_CHAR));
+			szBuffer.append(szTempBuffer);
 		}
-		else
+
+		if (GC.getUnitInfo(eUnit).getAirCombat() > 0)
 		{
-			if (GC.getUnitInfo(eUnit).getCombat() > 0)
-			{
-				szTempBuffer.Format(L"%d%c, ", GC.getUnitInfo(eUnit).getCombat(), gDLL->getSymbolID(STRENGTH_CHAR));
-				szBuffer.append(szTempBuffer);
-			}
+			szTempBuffer.Format(L"%d%c, ", GC.getUnitInfo(eUnit).getAirCombat(), gDLL->getSymbolID(RANGED_STRENGTH_CHAR));
+			szBuffer.append(szTempBuffer);
 		}
 
 		szTempBuffer.Format(L"%d%c", GC.getUnitInfo(eUnit).getMoves(), gDLL->getSymbolID(MOVES_CHAR));
@@ -8657,7 +8650,8 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 		if (GC.getUnitInfo(eUnit).getAirRange() > 0)
 		{
 			szBuffer.append(L", ");
-			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_AIR_RANGE", GC.getUnitInfo(eUnit).getAirRange()));
+			szTempBuffer.Format(L"%d%c", GC.getUnitInfo(eUnit).getAirRange(), gDLL->getSymbolID(RANGE_CHAR));
+			szBuffer.append(szTempBuffer);
 		}
 		
 // BUG - Starting Experience - start
