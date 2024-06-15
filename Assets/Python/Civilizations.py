@@ -335,7 +335,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
-		techs=techs.column(15).including(iGeology)
+		techs=techs.column(15)
 	),
 	Civilization(
 		iMexico,

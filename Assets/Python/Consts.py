@@ -229,8 +229,8 @@ iInuit : 950,
 iInca : 1100,
 iPurepecha : 1150,
 iAztecs : 1250,
-iIroquois : 1350,
-iSioux : 1450,
+iIroquois : 1450,
+iSioux : 1475,
 iSpain : 1492,
 iPortugal : 1532,
 iEngland : 1607,
@@ -454,24 +454,34 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 153
+iNumUnits = 154
+# Land Units (100)
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
-iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			iSisqeno,       
-iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		
-iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iMusketeer,		
-iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iAxeman,		iAucac,			iDogSoldier,	iJaguar,		iMacana,		
-iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,
-iPikeman,		iArcher,		iPicta,			iSlinger,		iCrossbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	iAtlatlist,		
-iHolkan,		iGuecha,		iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		iHorseArcher,	iSwiftArrow,	iHussar,		iMountedBrave,	
-iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		
-iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			iWorkboat,		iCanoe,			iLongship,		
-iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			iBrigantine,	iSteamship,		iTransport,		
-iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    iTorpedoBoat,	iSubmarine,		iBarque,		
-iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	iBiplane,		iFighter,		iBomber,		iNuclearBomber,	iGreatProphet, 	iGreatArtist, 	
-iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,iFeGreatArtist,iFeGreatScientist,
-iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	
-iMigrantWorker) = range(iNumUnits)
+iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			
+iSisqeno,       iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		
+iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		
+iMusketeer,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iAxeman,		iAucac,			iDogSoldier,	iJaguar,		
+iMacana,		iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	
+iLightningWarrior,iPikeman,		iArcher,		iPicta,			iSlinger,		iLongbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	
+iAtlatlist,		iHolkan,		iGuecha,		iCrossbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		iHorseArcher,	
+iSwiftArrow,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	
+iCarabineer,	iGrenadierCavalry,iCavalry,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			
+# Naval Units (27)
+#				2				3				4				5				6				7				8				9				10
+iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			
+iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    
+iTorpedoBoat,	iSubmarine,		iBarque,		iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	
+# Air Units (4)
+#				2				3				4				5				6				7				8				9				10
+iBiplane,		iFighter,		iBomber,		iNuclearBomber,	
+# Great People Units (17)
+#				2				3				4				5				6				7				8				9				10
+iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
+iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
+# Other Units (6)
+#				2				3				4				5				6				7				8				9				10
+iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 

@@ -354,6 +354,10 @@
 					<UnitClassType>UNITCLASS_MACEMAN</UnitClassType>
 					<UnitType>UNIT_AZTEC_JAGUAR</UnitType>
 				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_PIKEMAN</UnitClassType>
+					<UnitType>UNIT_AZTEC_EAGLE</UnitType>
+				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1640,7 +1644,7 @@
 			<Identifier>IRO</Identifier>
 			<Region>WIL</Region>
 			<CultureGroup>1</CultureGroup>
-			<StartingYear>1350</StartingYear>
+			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
 				<LoadingTime>0</LoadingTime>
@@ -3144,7 +3148,7 @@
 			<Identifier>SIO</Identifier>
 			<Region>WIL</Region>
 			<CultureGroup>1</CultureGroup>
-			<StartingYear>1450</StartingYear>
+			<StartingYear>1475</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
 				<LoadingTime>0</LoadingTime>

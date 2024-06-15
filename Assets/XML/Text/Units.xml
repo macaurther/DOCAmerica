@@ -1603,11 +1603,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLOMBIAN_LLANERO_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</English>
-		<French>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</French>
-		<German>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], starts with the Mobility promotion.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], is cheaper, doesn't have a ranged attack, can build pastures, and starts with the Mobility promotion.</English>
+		<French>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], is cheaper, doesn't have a ranged attack, can build pastures, and starts with the Mobility promotion.</French>
+		<German>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], is cheaper, doesn't have a ranged attack, can build pastures, and starts with the Mobility promotion.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], is cheaper, doesn't have a ranged attack, can build pastures, and starts with the Mobility promotion.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Llanero[COLOR_REVERT], the Colombian replacement for the [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT], is cheaper, doesn't have a ranged attack, can build pastures, and starts with the Mobility promotion.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE</Tag>
@@ -2307,11 +2307,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PUREPECHA_MACANA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</English>
-		<French>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</French>
-		<German>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</English>
+		<French>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</French>
+		<German>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIST</Tag>
@@ -2355,11 +2355,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW_STRATEGY</Tag>
-		<English>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain.</English>
-		<French>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain.</French>
-		<German>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain.</German>
-		<Italian>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain.</Italian>
-		<Spanish>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain.</Spanish>
+		<English>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</English>
+		<French>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</French>
+		<German>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</German>
+		<Italian>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</Italian>
+		<Spanish>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW_PEDIA</Tag>
@@ -2371,11 +2371,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</English>
-		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</French>
-		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger, guaranteed to capture defeated enemies, and can lead units.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</English>
+		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</French>
+		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_HELP</Tag>
@@ -2411,6 +2411,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INUIT_KAYAK_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Kayak[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT], can enter Ice.</English>
+		<French>The [COLOR_UNIT_TEXT]Kayak[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT], can enter Ice.</French>
+		<German>The [COLOR_UNIT_TEXT]Kayak[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT], can enter Ice.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Kayak[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT], can enter Ice.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Kayak[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT], can enter Ice.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_INUIT_KAYAK_PEDIA</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>
@@ -2418,7 +2426,23 @@
 		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_INUIT_KAYAK_PEDIA</Tag>
+		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE</Tag>
+		<English>Eagle</English>
+		<French>Eagle</French>
+		<German>Eagle</German>
+		<Italian>Eagle</Italian>
+		<Spanish>Eagle</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</English>
+		<French>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</French>
+		<German>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE_PEDIA</Tag>
 		<English>TODO</English>
 		<French>TODO</French>
 		<German>TODO</German>

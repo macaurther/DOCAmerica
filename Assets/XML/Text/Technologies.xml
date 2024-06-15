@@ -4399,5 +4399,52 @@
 		<Italian>Revolutionary</Italian>
 		<Spanish>Revolutionary</Spanish>
 	</TEXT>
-
+	<TEXT>
+		<Tag>TXT_KEY_ERA_MESO</Tag>
+		<English>Mesoamerica</English>
+		<French>Mesoamerica</French>
+		<German>Mesoamerica</German>
+		<Italian>Mesoamerica</Italian>
+		<Spanish>Mesoamerica</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_ANDES</Tag>
+		<English>Andes</English>
+		<French>Andes</French>
+		<German>Andes</German>
+		<Italian>Andes</Italian>
+		<Spanish>Andes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_NATIVE</Tag>
+		<English>Native America</English>
+		<French>Native America</French>
+		<German>Native America</German>
+		<Italian>Native America</Italian>
+		<Spanish>Native America</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_NORSE</Tag>
+		<English>Norse</English>
+		<French>Norse</French>
+		<German>Norse</German>
+		<Italian>Norse</Italian>
+		<Spanish>Norse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_POLYNESIA</Tag>
+		<English>Polynesia</English>
+		<French>Polynesia</French>
+		<German>Polynesia</German>
+		<Italian>Polynesia</Italian>
+		<Spanish>Polynesia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERA_LATIN_AMERICA</Tag>
+		<English>Latin America</English>
+		<French>Latin America</French>
+		<German>Latin America</German>
+		<Italian>Latin America</Italian>
+		<Spanish>Latin America</Spanish>
+	</TEXT>
 </Civ4GameText>

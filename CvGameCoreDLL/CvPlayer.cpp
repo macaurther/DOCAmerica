@@ -24345,7 +24345,68 @@ bool CvPlayer::isHasBuildingEffect(BuildingTypes eIndex) const
 
 EraTypes CvPlayer::getSoundtrackEra()
 {
+	ReligionTypes eStateReligion = getStateReligion();
 	EraTypes eCurrentEra = getCurrentEra();
+
+	if (eStateReligion == NO_RELIGION)
+	{
+		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_EXPLORATION || eCurrentEra == ERA_COLONIAL || eCurrentEra == ERA_REVOLUTIONARY)
+		{
+			switch (getCivilizationType())
+			{
+				case MAYA:
+				case ZAPOTEC:
+				case TEOTIHUACAN:
+				case PUREPECHA:
+				case AZTECS:
+					return (EraTypes)ERA_MESO;
+				case TIWANAKU:
+				case WARI:
+				case CHIMU:
+				case MUISCA:
+				case INCA:
+					return (EraTypes)ERA_ANDES;
+				case MISSISSIPPI:
+				case PUEBLOAN:
+				case IROQUOIS:
+				case INUIT:
+				case SIOUX:
+					return (EraTypes)ERA_NATIVE;
+				case NORSE:
+					return (EraTypes)ERA_NORSE;
+				case HAWAII:
+					return (EraTypes)ERA_POLYNESIA;
+			}
+		}
+	}
+	else if (eStateReligion == CATHOLICISM)
+	{
+		if (eCurrentEra == ERA_CLASSICAL || eCurrentEra == ERA_EXPLORATION || eCurrentEra == ERA_COLONIAL || eCurrentEra == ERA_REVOLUTIONARY)
+		{
+			switch (getCivilizationType())
+			{
+				case MEXICO:
+				case ARGENTINA:
+				case COLOMBIA:
+				case PERU:
+				case BRAZIL:
+				case HAITI:
+				case VENEZUELA:
+				case MAYA:
+				case ZAPOTEC:
+				case TEOTIHUACAN:
+				case PUREPECHA:
+				case AZTECS:
+				case TIWANAKU:
+				case WARI:
+				case CHIMU:
+				case MUISCA:
+				case INCA:
+				case PUEBLOAN:
+					return (EraTypes)ERA_LATIN;
+			}
+		}
+	}
 	return eCurrentEra;
 }
 

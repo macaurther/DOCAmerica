@@ -462,27 +462,6 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_ANCIENT_SOUNDTRACK_1</SoundID>
-			<Filename>Sounds/Soundtrack/Classical/AncientSoundtrack1</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SONG_ANCIENT_SOUNDTRACK_3</SoundID>
-			<Filename>Sounds/Soundtrack/Classical/AncientSoundtrack3</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SONG_ANCIENT_SOUNDTRACK_4</SoundID>
-			<Filename>Sounds/Soundtrack/Classical/AncientSoundtrack4</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
 			<SoundID>SONG_ALLEGRI_MISERERE</SoundID>
 			<Filename>Sounds/Soundtrack/Medieval/AllegriMiserere</Filename>
 			<LoadType>STREAMED</LoadType>
@@ -2066,7 +2045,7 @@
 		</SoundData>
 		<SoundData>
 			<SoundID>DIPLO_PACAL_EARLY</SoundID>
-			<Filename>Sounds/Diplomacy/Pacal_Early</Filename>
+			<Filename>Sounds/Soundtrack/Candidates/MP3/MontezumaPeace</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
@@ -11207,6 +11186,27 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_CASTILLA_EARLY</SoundID>
+			<Filename>Sounds/Diplomacy/castilla_early</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_CASTILLA_MIDDLE</SoundID>
+			<Filename>Sounds/Diplomacy/castilla_middle</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_CASTILLA_LATE</SoundID>
+			<Filename>Sounds/Diplomacy/castilla_late</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>DIPLO_CANADA</SoundID>
 			<Filename>Sounds/Diplomacy/canada</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
@@ -11298,92 +11298,57 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_1</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/CherokeeDrum</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_1</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/AncientSoundtrack1</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_2</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/EnchantedWood</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_2</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/AncientSoundtrack2</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_3</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/HangokMultbol</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_3</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/AncientSoundtrack3</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_4</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/KiowaMix1</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_4</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/AncientSoundtrack4</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_5</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/KiowaMix2</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_5</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/CherokeeDrum</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_6</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/MayanDance</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_6</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/EnchantedWood</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_7</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/NAFlutePercussion1</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_7</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/RonSong5</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_8</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/NAFlutePercussion2</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_9</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/NAFlutePercussion3</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_10</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/PowwowSoundtrack</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_11</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/RonSong4</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_12</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/RonSong5</Filename>
-			<LoadType>STREAMED</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SONG_PRE_COLUMBIAN_SOUNDTRACK_13</SoundID>
-			<Filename>Sounds/Soundtrack/PreColumbian/SouthAmericanSoundtrack</Filename>
+			<SoundID>SONG_ANCIENT_SOUNDTRACK_8</SoundID>
+			<Filename>Sounds/Soundtrack/Ancient/RonSong4</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
@@ -11797,6 +11762,272 @@
 		<SoundData>
 			<SoundID>SONG_INDUSTRIAL_SOUNDTRACK_11</SoundID>
 			<Filename>Sounds/Soundtrack/Industrial/Wellington'sVictoryVictoryBeethoven</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_MESOAMERICA_1</SoundID>
+			<Filename>Sounds/Soundtrack/MesoAmerica/Dance_of_Corn_People</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_MESOAMERICA_2</SoundID>
+			<Filename>Sounds/Soundtrack/MesoAmerica/HangokMultbol</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_MESOAMERICA_3</SoundID>
+			<Filename>Sounds/Soundtrack/MesoAmerica/MayanDance</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_MESOAMERICA_4</SoundID>
+			<Filename>Sounds/Soundtrack/MesoAmerica/MontezumaPeace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_MESOAMERICA_5</SoundID>
+			<Filename>Sounds/Soundtrack/MesoAmerica/MontezumaWar</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_MESOAMERICA_6</SoundID>
+			<Filename>Sounds/Soundtrack/MesoAmerica/Pacal_Peace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_MESOAMERICA_7</SoundID>
+			<Filename>Sounds/Soundtrack/MesoAmerica/Pacal_War</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_ANDES_1</SoundID>
+			<Filename>Sounds/Soundtrack/Andes/Pachacuti_Peace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_ANDES_2</SoundID>
+			<Filename>Sounds/Soundtrack/Andes/Pachacuti_War</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_ANDES_3</SoundID>
+			<Filename>Sounds/Soundtrack/Andes/SouthAmericanSoundtrack</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_ANDES_4</SoundID>
+			<Filename>Sounds/Soundtrack/Andes/TierraCallowaya</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_1</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/HiawathaPeace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_2</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/HiawathaWar</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_3</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/KiowaMix1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_4</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/KiowaMix2</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_5</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/NAFlutePercussion1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_6</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/NAFlutePercussion2</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_7</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/NAFlutePercussion3</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_8</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/Pocatello_Peace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_9</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/Pocatello_War</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NATIVE_AMERICA_10</SoundID>
+			<Filename>Sounds/Soundtrack/NativeAmerica/PowwowSoundtrack</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NORSE_1</SoundID>
+			<Filename>Sounds/Soundtrack/Norse/BluetoothPeace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NORSE_2</SoundID>
+			<Filename>Sounds/Soundtrack/Norse/BluetoothWar</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NORSE_3</SoundID>
+			<Filename>Sounds/Soundtrack/Norse/OlafurLiljuros</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_NORSE_4</SoundID>
+			<Filename>Sounds/Soundtrack/Norse/VikingFuryMusic</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_POLYNESIA_1</SoundID>
+			<Filename>Sounds/Soundtrack/Polynesia/Kamehameha_Peace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_POLYNESIA_2</SoundID>
+			<Filename>Sounds/Soundtrack/Polynesia/Kamehameha_War</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_POLYNESIA_3</SoundID>
+			<Filename>Sounds/Soundtrack/Polynesia/ParadiseFoundMusic</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_1</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/ALBAZO_COLOR_TUNA</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_2</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/AYMARITA_Wayna_Picchu</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_3</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/CORDILLERAS</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_4</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/Isabella_Peace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_5</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/Isabella_War</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_6</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/Maria_I_Peace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_7</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/Maria_I_War</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_8</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/Music_of_the_Andes</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_9</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/Pedro_Peace</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_LATIN_AMERICA_10</SoundID>
+			<Filename>Sounds/Soundtrack/LatinAmerica/Pedro_War</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
