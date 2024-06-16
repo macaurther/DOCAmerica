@@ -72,9 +72,9 @@ dResourcesDict = {
 	(56, 27)  : (1550,  iHorse),  	# Brazil
 	(32, 72)  : (1600,  iCotton),  	# Georgia
 	(35, 73)  : (1600,  iCotton),  	# South Carolina
-	(34, 75)  : (1600,  iCotton),  	# North Carolina
+	(35, 75)  : (1600,  iCotton),  	# North Carolina
 	(29, 73)  : (1600,  iCotton), 	# Alabama
-	(27, 77)  : (1600,  iCotton),  	# Mississippi
+	(28, 77)  : (1600,  iCotton),  	# Mississippi
 	(22, 76)  : (1600,  iCotton),  	# Texas
 	(17, 73)  : (1600,  iCotton),  	# Texas
 	(49, 87)  : (1600,  iPotato),  	# New Brunswick
