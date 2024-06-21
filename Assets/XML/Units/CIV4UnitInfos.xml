@@ -3749,9 +3749,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SMELTING</PrereqTech>
 			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
-			<PrereqBonuses>
-				<BonusType>BONUS_OBSIDIAN</BonusType>
-			</PrereqBonuses>
+			<BonusType>BONUS_OBSIDIAN</BonusType>
 			<iCost>40</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

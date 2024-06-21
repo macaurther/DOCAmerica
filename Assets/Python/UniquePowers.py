@@ -70,7 +70,7 @@ def iroquoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 		if year() > year(1600):
 			makeUnits(iPlayer, iMohawk, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 		else:
-			makeUnits(iPlayer, iAxeman, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
+			makeUnits(iPlayer, iMaceman, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 
 @handler("improvementBuilt")
 # Russian UP

@@ -17,6 +17,8 @@ typedef list<char*> LISTCHAR;
 
 #define NUM_CIVS				(32)
 
+#define NUM_ERAS				(ERA_MODERN+1)
+
 #define BUILDINGCLASS_PALACE	((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
 #define BUILDINGCLASS_CHIEFTANS_HUT	((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_CHIEFTANS_HUT"))	// MacAurther
 
@@ -466,9 +468,7 @@ enum DoCEras
 	ERA_NATIVE,
 	ERA_NORSE,
 	ERA_POLYNESIA,
-	ERA_LATIN,
-
-	NUM_ERAS
+	ERA_LATIN
 };
 
 enum Regions

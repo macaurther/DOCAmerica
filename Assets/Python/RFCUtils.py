@@ -495,7 +495,7 @@ def isUnitOfRole(iUnit, iRole):
 	elif iRole == iBase:
 		return base_unit(iUnit) in [iWarrior, iArquebusier, iMusketman, iMusketeer, iRifleman, iInfantry]
 	elif iRole == iShock:
-		return base_unit(iUnit) in [iAxeman, iTercio, iFusilier, iLineInfantry, iMarine]
+		return base_unit(iUnit) in [iMaceman, iTercio, iFusilier, iLineInfantry, iMarine]
 	elif iRole == iCounter:
 		return base_unit(iUnit) in [iSpearman, iPikeman]
 	elif iRole == iSiege:
