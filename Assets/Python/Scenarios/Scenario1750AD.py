@@ -73,9 +73,13 @@ lCivilizations = [
 		techs=techs.column(7)
 	),
 ]
+
+lTribalVillages = [
+]
 	
 
 def createStartingUnits():
+	# MacAurther TODO
 	pass
 
 def setupGoals(iCiv, goals):
@@ -89,6 +93,7 @@ scenario1750AD = Scenario(
 	fileName = "RFC_1750AD",
 	
 	lCivilizations = lCivilizations,
+	lTribalVillages = lTribalVillages,
 	
 	dCivilizationDescriptions = {
 		iEngland: "TXT_KEY_CIV_BRITAIN_DESC",
@@ -101,18 +106,10 @@ scenario1750AD = Scenario(
 	iOwnerBaseCulture = 100,
 	
 	dGreatPeopleCreated = {
-		iSpain: 8,
-		iFrance: 5,
-		iEngland: 8,
-		iPortugal: 5,
-		iNetherlands: 4,
+		# MacAurther TODO
 	},
 	dGreatGeneralsCreated = {
-		iSpain: 4,
-		iFrance: 3,
-		iEngland: 3,
-		iPortugal: 2,
-		iNetherlands: 1,
+		# MacAurther TODO
 	},
 	
 	lInitialWars = [

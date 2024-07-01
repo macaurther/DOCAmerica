@@ -32,6 +32,10 @@
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
 			</TerrainImpassables>
 			<iCombat>3</iCombat>
 			<iCombatLimit>100</iCombatLimit>
@@ -42,7 +46,31 @@
 					<FeatureType>FEATURE_FOREST</FeatureType>
 					<bFeatureNative>1</bFeatureNative>
 				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
 			</FeatureNatives>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureDefense>50</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<iFeatureDefense>50</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
 			<iAsset>1</iAsset>
 			<iPower>1</iPower>
 			<UnitMeshGroups>
@@ -84,6 +112,14 @@
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
 			</TerrainImpassables>
 			<iCombat>2</iCombat>
 			<iCombatLimit>100</iCombatLimit>
@@ -91,10 +127,42 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<FeatureNatives>
 				<FeatureNative>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+				<FeatureNative>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<bFeatureNative>1</bFeatureNative>
 				</FeatureNative>
 			</FeatureNatives>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureAttack>100</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iFeatureAttack>100</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureAttack>100</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureDefense>100</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iFeatureDefense>100</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureDefense>100</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
 			<iAsset>1</iAsset>
 			<iPower>1</iPower>
 			<UnitMeshGroups>
@@ -136,6 +204,10 @@
 					<TerrainType>TERRAIN_DESERT</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
 			</TerrainImpassables>
 			<iCombat>1</iCombat>
 			<iCombatLimit>100</iCombatLimit>
@@ -147,7 +219,11 @@
 					<bTerrainNative>1</bTerrainNative>
 				</TerrainNative>
 				<TerrainNative>
-					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
 					<bTerrainNative>1</bTerrainNative>
 				</TerrainNative>
 			</TerrainNatives>
@@ -156,7 +232,41 @@
 					<FeatureType>FEATURE_FOREST</FeatureType>
 					<bFeatureNative>1</bFeatureNative>
 				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
 			</FeatureNatives>
+			<FeatureNatives>
+				<FeatureNative>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+			</FeatureNatives>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<iFeatureAttack>50</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<iFeatureDefense>50</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<iFeatureDefense>50</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
 			<iAsset>1</iAsset>
 			<iPower>1</iPower>
 			<UnitMeshGroups>
@@ -200,6 +310,20 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
 			<iAsset>4</iAsset>
 			<UnitMeshGroups>
 				<iGroupSize>4</iGroupSize>
@@ -319,6 +443,20 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
 			<iAsset>4</iAsset>
 			<iCombat>10</iCombat>
 			<iCombatLimit>100</iCombatLimit>
@@ -373,10 +511,6 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_HIGHWAY</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
 					<BuildType>BUILD_FARM</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -437,6 +571,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_REMOVE_TAIGA</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -466,6 +604,20 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
 			<iWorkRate>100</iWorkRate>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>
@@ -514,10 +666,6 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_HIGHWAY</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
 					<BuildType>BUILD_FARM</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -607,6 +755,20 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
 			<iWorkRate>100</iWorkRate>
 			<iAsset>2</iAsset>
 			<iBaseHurry>50</iBaseHurry>
@@ -882,12 +1044,30 @@
 					<BuildType>BUILD_NATURE_RESERVE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_SCRUB_FALLOUT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
 			<iWorkRate>150</iWorkRate>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>
@@ -996,7 +1176,11 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_DEFORESTATION</BuildType>
+					<BuildType>BUILD_DEFORESTATION_TAIGA</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEFORESTATION_JUNGLE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -1016,6 +1200,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_SCRUB_FALLOUT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_NATURE_RESERVE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -1025,6 +1213,20 @@
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iMoves>2</iMoves>
 			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
 			<iWorkRate>150</iWorkRate>
 			<iAsset>2</iAsset>
 			<UnitMeshGroups>

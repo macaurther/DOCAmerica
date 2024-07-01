@@ -4798,6 +4798,7 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	BonusType=BONUS_CITRUS
+	BonusVarietyType=BONUS_CITRUS_ORANGES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -6061,6 +6062,7 @@ EndPlot
 BeginPlot
 	x=9,y=78
 	BonusType=BONUS_DYE
+	BonusVarietyType=BONUS_DYE_COCHINEAL
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -6140,6 +6142,7 @@ EndPlot
 BeginPlot
 	x=9,y=91
 	BonusType=BONUS_CITRUS
+	BonusVarietyType=BONUS_CITRUS_ORANGES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -6739,6 +6742,7 @@ EndPlot
 BeginPlot
 	x=10,y=81
 	BonusType=BONUS_DYE
+	BonusVarietyType=BONUS_DYE_COCHINEAL
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
@@ -6763,6 +6767,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_DYE
+	BonusVarietyType=BONUS_DYE_COCHINEAL
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
@@ -9424,6 +9429,7 @@ EndPlot
 BeginPlot
 	x=14,y=76
 	BonusType=BONUS_DYE
+	BonusVarietyType=BONUS_DYE_COCHINEAL
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 EndPlot
@@ -13986,6 +13992,7 @@ EndPlot
 BeginPlot
 	x=21,y=29
 	BonusType=BONUS_DYE
+	BonusVarietyType=BONUS_DYE_COCHINEAL
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -14034,6 +14041,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	BonusType=BONUS_DYE
+	BonusVarietyType=BONUS_DYE_COCHINEAL
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 EndPlot
@@ -14551,6 +14559,7 @@ EndPlot
 BeginPlot
 	x=22,y=7
 	BonusType=BONUS_CITRUS
+	BonusVarietyType=BONUS_CITRUS_ORANGES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -19102,6 +19111,7 @@ EndPlot
 BeginPlot
 	x=28,y=72
 	BonusType=BONUS_CITRUS
+	BonusVarietyType=BONUS_CITRUS_ORANGES
 	FeatureType=FEATURE_SWAMP, FeatureVariety=1
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -22799,6 +22809,7 @@ EndPlot
 BeginPlot
 	x=33,y=68
 	BonusType=BONUS_CITRUS
+	BonusVarietyType=BONUS_CITRUS_ORANGES
 	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
@@ -24359,7 +24370,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=89
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot

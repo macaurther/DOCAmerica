@@ -38,13 +38,13 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_INCA</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Inca.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,3,7</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Tumi.dds</Path>
+			<Button>Art/Interface/Buttons/Civilizations/Inca.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Sun.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_MAYA</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Maya.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,6,4</Button>
+			<Button>Art/Interface/Buttons/Civilizations/Maya.dds</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Tzolkin.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
@@ -58,6 +58,12 @@
 			<Type>ART_DEF_CIVILIZATION_NETHERLANDS</Type>
 			<Button>,Art/Interface/Buttons/Civilizations/Netherlands.dds,Art/Interface/Buttons/Beyond the Sword_Atlas.dds,8,4</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Leeuw.dds</Path>
+			<bWhiteFlag>0</bWhiteFlag>
+		</CivilizationArtInfo>
+		<CivilizationArtInfo>
+			<Type>ART_DEF_CIVILIZATION_NORSE</Type>
+			<Button>Art/Interface/Buttons/Civilizations/Norse.dds</Button>
+			<Path>Art/Interface/TeamColor/FlagDECAL_Raven.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
@@ -172,12 +178,6 @@
 			<Type>ART_DEF_CIVILIZATION_TEOTIHUACAN</Type>
 			<Button>Art/Interface/Buttons/Civilizations/teotihuacan.dds</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_ocelot.dds</Path>
-			<bWhiteFlag>0</bWhiteFlag>
-		</CivilizationArtInfo>
-		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_NORSE</Type>
-			<Button>,Art/Interface/Buttons/Civilizations/Viking.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,1,1</Button>
-			<Path>Art/Interface/TeamColor/FlagDECAL_Raven.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>

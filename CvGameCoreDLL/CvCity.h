@@ -124,7 +124,7 @@ public:
 
 	int getProductionModifier() const;																						// Exposed to Python
 	int getProductionModifier(UnitTypes eUnit) const;															// Exposed to Python
-	int getProductionModifier(BuildingTypes eBuilding) const;											// Exposed to Python
+	int getProductionModifier(BuildingTypes eBuilding, bool bHurry = false) const;											// Exposed to Python
 	int getProductionModifier(ProjectTypes eProject) const;												// Exposed to Python
 
 	int getOverflowProductionDifference(int iProductionNeeded, int iProduction, int iProductionModifier, int iDiff, int iModifiedProduction) const;
@@ -157,9 +157,6 @@ public:
 	void processProcess(ProcessTypes eProcess, int iChange);
 	void processSpecialist(SpecialistTypes eSpecialist, int iChange);
 
-	void changeSpecialistHappiness(SpecialistTypes eSpecialist, int iChange);
-	void recalculateSpecialistHappiness();
-
 	HandicapTypes getHandicapType() const;												// Exposed to Python
 	CivilizationTypes getCivilizationType() const;								// Exposed to Python
 	LeaderHeadTypes getPersonalityType() const;															// Exposed to Python
@@ -170,6 +167,7 @@ public:
 
 	bool hasTrait(TraitTypes eTrait) const;																	// Exposed to Python
 	bool isBarbarian() const;																								// Exposed to Python
+	bool isIndependent() const; // Leoreth
 	bool isHuman() const;																										// Exposed to Python
 	DllExport bool isVisible(TeamTypes eTeam, bool bDebug) const;						// Exposed to Python
 
@@ -195,7 +193,7 @@ public:
 	int getVassalHappiness() const;																		// Exposed to Python
 	int getVassalUnhappiness() const;																		// Exposed to Python
 	int unhappyLevel(int iExtra = 0) const;																	// Exposed to Python 
-	int happyLevel(bool bSpecial = true) const;																				// Exposed to Python				
+	int happyLevel() const;																				// Exposed to Python				
 	int angryPopulation(int iExtra = 0) const;										// Exposed to Python
 
 	int visiblePopulation() const;
@@ -207,7 +205,7 @@ public:
 	int unhealthyPopulation(bool bNoAngry = false, int iExtra = 0) const;	// Exposed to Python
 	int totalGoodBuildingHealth() const;																		// Exposed to Python
 	int totalBadBuildingHealth() const;														// Exposed to Python
-	int goodHealth(bool bSpecial = true) const;																				// Exposed to Python
+	int goodHealth() const;																				// Exposed to Python
 	int badHealth(bool bNoAngry = false, int iExtra = 0) const;		// Exposed to Python
 	int healthRate(bool bNoAngry = false, int iExtra = 0) const;	// Exposed to Python
 	int foodConsumption(bool bNoAngry = false, int iExtra = 0) const;				// Exposed to Python
@@ -252,6 +250,7 @@ public:
 	void setID(int iID);
 
 	int getRegionID() const;
+	int getRegionGroup() const;
 
 	DllExport int getX() const;																			// Exposed to Python
 #ifdef _USRDLL
@@ -355,6 +354,7 @@ public:
 	int calculateNumCitiesMaintenance() const;									// Exposed to Python
 	int calculateColonyMaintenance() const;									// Exposed to Python
 	int calculateCorporationMaintenance() const;									// Exposed to Python
+	int calculateBaseDistanceMaintenanceTimes100() const;
 	int calculateDistanceMaintenanceTimes100() const;										// Exposed to Python
 	int calculateNumCitiesMaintenanceTimes100() const;									// Exposed to Python
 	int calculateColonyMaintenanceTimes100() const;									// Exposed to Python
@@ -675,6 +675,7 @@ public:
 	int getAdditionalYieldBySpecialist(YieldTypes eIndex, SpecialistTypes eSpecialist, int iChange) const;				// Exposed to Python
 	int getAdditionalBaseYieldRateBySpecialist(YieldTypes eIndex, SpecialistTypes eSpecialist, int iChange) const;		// Exposed to Python
 // BUG - Specialist Additional Yield - end
+
 	int getBaseYieldRate(YieldTypes eIndex) const;															// Exposed to Python
 	int getBaseYieldRateModifier(YieldTypes eIndex, int iExtra = 0) const;			// Exposed to Python
 	int getYieldRate(YieldTypes eIndex) const;												// Exposed to Python
@@ -1100,6 +1101,7 @@ public:
 	int getEffectiveNextCoveredPlot() const;
 	bool isCoveredBeforeExpansion(int i) const;
 	void updateGreatWall();
+	int determineArtStyleType() const;
 	void updateArtStyleType();
 	int getDistanceTradeModifier(CvCity* pOtherCity) const;
 	int getCapitalTradeModifier(CvCity* pOtherCity) const;
@@ -1199,7 +1201,7 @@ public:
 	bool isCore(PlayerTypes ePlayer) const;
 	bool isCore() const;
 
-	bool rebuild();
+	bool rebuild(EraTypes eEra = NO_ERA);
 	bool populate(); // MacAurther
 
 	DllExport int getMusicScriptId() const;
@@ -1209,7 +1211,7 @@ public:
 	DllExport void getBuildQueue(std::vector<std::string>& astrQueue) const;
 
 	// Leoreth: exposed for CvPlayer::acquireCity
-	void doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate);
+	void doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate, bool bOwned = false);
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);

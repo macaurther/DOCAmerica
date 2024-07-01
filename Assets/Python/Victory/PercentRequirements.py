@@ -19,10 +19,10 @@ class AreaPercent(PercentRequirement):
 		self.area = area
 		
 	def value(self, iPlayer, area):
-		return area.create().land().owner(iPlayer).count()
+		return area.land().owner(iPlayer).count()
 	
 	def total(self):
-		return self.area.create().land().count()
+		return self.area.land().count()
 
 
 # Third Inca UHV goal
@@ -40,10 +40,10 @@ class AreaPopulationPercent(PercentRequirement):
 		self.area = area
 	
 	def value(self, iPlayer, area):
-		return area.create().cities().owner(iPlayer).sum(CyCity.getPopulation)
+		return area.cities().owner(iPlayer).sum(CyCity.getPopulation)
 	
 	def total(self):
-		return self.area.create().cities().sum(CyCity.getPopulation)
+		return self.area.cities().sum(CyCity.getPopulation)
 
 
 # Third American UHV goal
@@ -146,3 +146,55 @@ class ReligiousVotePercent(PercentRequirement):
 	
 	def value(self, iPlayer):
 		return player(iPlayer).getVotes(16, 1)
+
+
+class RevealedPercent(PercentRequirement):
+
+	TYPES = (AREA, PERCENTAGE)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_REVEAL"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_REVEALED_PERCENT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_REVEALED_PERCENT"
+	
+	def __init__(self, area, *parameters, **options):
+		PercentRequirement.__init__(self, area, *parameters, **options)
+		
+		self.area = area
+	
+	def isRevealed(self, plot, revealed):
+		if location(plot) not in revealed:
+			return False
+	
+		surrounding = plots.surrounding(plot).where(lambda p: plot.getArea() == p.getArea()).set()
+		revealed_surrounding = surrounding & revealed
+		
+		return len(surrounding) == len(revealed_surrounding)
+
+	def value(self, iPlayer, area):
+		iTeam = player(iPlayer).getTeam()
+		revealed = plots.all().where(lambda p: p.isRevealed(iTeam, False)).set()
+	
+		return area.where(lambda p: self.isRevealed(p, revealed)).count()
+
+	def total(self):
+		return self.area.count()
+
+
+class WaterAreaPercent(PercentRequirement):
+
+	TYPES = (AREA, PERCENTAGE)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_CONTROL"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_AREA_PERCENT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_AREA_PERCENT"
+	
+	def __init__(self, area, *parameters, **options):
+		PercentRequirement.__init__(self, area, *parameters, **options)
+		
+		self.area = area
+		
+	def value(self, iPlayer, area):
+		return area.water().owner(iPlayer).count()
+	
+	def total(self):
+		return self.area.water().count()

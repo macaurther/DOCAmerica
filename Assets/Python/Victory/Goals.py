@@ -89,15 +89,11 @@ class GoalDefinition(object):
 		self.requirement = requirement
 		
 	def __call__(self, *arguments, **options):
-		try:
-			parameter_set = ParameterSet(global_types=self.requirement.GLOBAL_TYPES, types=self.requirement.TYPES, arguments=arguments)
-			requirements = [self.requirement(*parameters, **options) for parameters in parameter_set]
-			desc_key = options.pop("desc_key", self.requirement.GOAL_DESC_KEY)
-		
-			return GoalDescription(requirements, desc_key, **options)
-		
-		except ValueError, e:
-			raise ValueError("Error when parsing arguments for %s: %s" % (self.requirement.__name__, e))
+		parameter_set = ParameterSet(global_types=self.requirement.GLOBAL_TYPES, types=self.requirement.TYPES, arguments=arguments)
+		requirements = [self.requirement(*parameters, **options) for parameters in parameter_set]
+		desc_key = options.pop("desc_key", self.requirement.GOAL_DESC_KEY)
+
+		return GoalDescription(requirements, desc_key, **options)
 	
 	def __repr__(self):
 		return "GoalDefinition(%s)" % (self.requirement.__name__)
@@ -169,7 +165,10 @@ class GoalDescription(Describable):
 	def __call__(self, iPlayer, **options):
 		combined_options = self.options.copy()
 		combined_options.update(options)
-		return Goal(self.requirements, self.desc_key, iPlayer, **combined_options)
+		
+		requirements = [requirement.create() for requirement in self.requirements]
+		
+		return Goal(requirements, self.desc_key, iPlayer, **combined_options)
 	
 	def __repr__(self):
 		return "GoalDescription(%s)" % ", ".join(str(requirement) for requirement in self.requirements)
@@ -201,7 +200,7 @@ class Goal(Describable):
 		
 		self.state = POSSIBLE
 		self.iSuccessTurn = None
-		self.bRequirementHandlers = True
+		self.bOnlyFinal = False
 		
 		Describable.__init__(self, requirements[0], desc_key, subject=subject, **options)
 		
@@ -230,16 +229,14 @@ class Goal(Describable):
 	def enable(self):
 		event_handler_registry.register(self, self)
 	
-		if self.bRequirementHandlers:
-			for requirement in self.requirements:
-				requirement.register_handlers(self)
+		for requirement in self.requirements:
+			requirement.register_handlers(self)
 	
 	def disable(self):
 		event_handler_registry.deregister(self)
 	
-		if self.bRequirementHandlers:
-			for requirement in self.requirements:
-				requirement.deregister_handlers()
+		for requirement in self.requirements:
+			requirement.deregister_handlers()
 	
 	def possible(self):
 		return self.state == POSSIBLE
@@ -277,16 +274,14 @@ class Goal(Describable):
 		if not self.possible():
 			return
 		
+		if self.bOnlyFinal and year(self.iYear) != turn():
+			return
+		
 		if self.fulfilled():
 			self.succeed()
 	
 	def expire(self):
 		if self.possible():
-			if self.required < len(self.requirements):
-				if count(requirement.fulfillable() for requirement in self.requirements) < self.required:
-					self.fail()
-				return
-		
 			self.fail()
 	
 	def final_check(self):
@@ -303,7 +298,7 @@ class Goal(Describable):
 	
 	def at(self, iYear):
 		self.iYear = iYear
-		self.bRequirementHandlers = False
+		self.bOnlyFinal = True
 		self.handlers.add("BeginPlayerTurn", self.handle_at)
 		
 	def by(self, iYear):
@@ -323,7 +318,7 @@ class Goal(Describable):
 		return text(self.title_key)
 		
 	def full_description(self):
-		if self.title_key:
+		if self.title_key and text_if_exists(self.title_key):
 			return "%s: %s" % (self.title(), self.description())
 		
 		return self.description()
@@ -347,11 +342,19 @@ class Goal(Describable):
 	def announce_failure(self):
 		self.announce("TXT_KEY_VICTORY_ANNOUNCE_FAILURE", AlertsOpt.isShowUHVFailPopup())
 	
+	def announce_failure_cause(self, iCausePlayer, text_key, *format_args):
+		if self.possible() and AlertsOpt.isShowUHVFailPopup():
+			if player(self.iPlayer).canContact(iCausePlayer):
+				show(text("%s_OTHER" % text_key, name(iCausePlayer), *format_args))
+			else:
+				show(text("%s_UNKNOWN" % text_key, *format_args))
+	
 	def areas(self):
 		return self._areas
 		
 	def area_name(self, tile):
-		return "\n".join(name for name, area in self.areas().items() if tile in area)
+		plot = plot_(tile)
+		return "\n".join(capitalize(name) for name, area in self.areas().items() if plot in area and not plot.isPeak() and (not plot.isWater() or not area.land()))
 	
 	def success_string(self):
 		success_string = text("TXT_KEY_VICTORY_GOAL_SUCCESS_STRING")
@@ -427,7 +430,7 @@ class AllGoal(Goal):
 		return all(goal.succeeded() for goal in self.requirements)
 	
 	def format_progress(self):
-		return sum((goal.format_progress() for goal in self.requirements), [])
+		return sum(([progress.replace(indicator(False), indicator(goal.succeeded())) for progress in goal.format_progress()] for goal in self.requirements), [])
 	
 	def format_description(self):
 		date_suffixes = list(self.create_date_suffixes())

@@ -1,7 +1,29 @@
 from Core import *
 from BaseRequirements import *
+
+
+# First Toltec UHV goal
+class CityCulture(CityRequirement):
+
+	GLOBAL_TYPES = (CITY,)
+	TYPES = (AMOUNT,)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_CITY_CULTURE"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_CITY_CULTURE"
+	
+	def __init__(self, city, iCulture, **options):
+		CityRequirement.__init__(self, city, iCulture, **options)
+		
+		self.iCulture = iCulture
+	
+	def fulfilled_city(self, city):
+		return city.getCulture(city.getOwner()) >= self.iCulture
+	
+	def progress_city(self, city):
+		return "%s / %s" % (city.getCulture(city.getOwner()), self.iCulture)
 	
 
+# Third Babylonian UHV goal
 # Third Turkic UHV goal
 # First French UHV goal
 # Second Argentine UHV goal
@@ -61,6 +83,26 @@ class CityDifferentGreatPeopleCount(CityRequirement):
 	
 	def progress_city(self, city):
 		return "%d / %d" % (self.different_great_people(city), self.iRequired)
+
+
+# Third Babylonian UHV goal
+class CityPopulation(CityRequirement):
+
+	TYPES = (CITY, AMOUNT)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_CITY_POPULATION"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_CITY_POPULATION"
+	
+	def __init__(self, city, iRequired, **options):
+		CityRequirement.__init__(self, city, iRequired, **options)
+		
+		self.iRequired = iRequired
+	
+	def fulfilled_city(self, city):
+		return city.getPopulation() >= self.iRequired
+	
+	def progress_city(self, city):
+		return "%d / %d" % (city.getPopulation(), self.iRequired)
 
 
 # Third Tibetan UHV goal

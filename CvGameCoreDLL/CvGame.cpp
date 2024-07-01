@@ -3101,7 +3101,7 @@ int CvGame::countCivPlayersAlive() const
 
 	for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
 	{
-		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		if (GET_PLAYER((PlayerTypes)iI).isAlive() && !GET_PLAYER((PlayerTypes)iI).isMinorCiv())
 		{
 			iCount++;
 		}
@@ -3156,7 +3156,7 @@ int CvGame::countCivTeamsAlive() const
 
 	for (int iI = 0; iI < MAX_CIV_TEAMS; iI++)
 	{
-		if (GET_TEAM((TeamTypes)iI).isAlive())
+		if (GET_TEAM((TeamTypes)iI).isAlive() && !GET_TEAM((TeamTypes)iI).isMinorCiv())
 		{
 			iCount++;
 		}
@@ -3404,8 +3404,6 @@ int CvGame::getImprovementUpgradeTime(ImprovementTypes eImprovement) const
 
 	iTime *= GC.getEraInfo(getStartEra()).getImprovementPercent();
 	iTime /= 100;
-
-	iTime *= 2; //Leoreth
 
 	return iTime;
 }
@@ -3716,6 +3714,12 @@ int CvGame::getMinutesPlayed() const
 }
 
 
+int CvGame::getSecondsPlayed() const
+{
+	return getTurnSlice() / gDLL->getTurnsPerSecond();
+}
+
+
 void CvGame::setTurnSlice(int iNewValue)
 {
 	m_iTurnSlice = iNewValue;
@@ -3883,6 +3887,18 @@ int CvGame::getNumCities() const
 
 int CvGame::getNumCivCities() const
 {
+	int iNumCities = getNumCities();
+
+	iNumCities -= GET_PLAYER(BARBARIAN_PLAYER).getNumCities();
+
+	for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isMinorCiv())
+		{
+			iNumCities -= GET_PLAYER((PlayerTypes)iI).getNumCities();
+		}
+	}
+
 	return (getNumCities() - GET_PLAYER(BARBARIAN_PLAYER).getNumCities());
 }
 
@@ -4703,7 +4719,7 @@ bool CvGame::isValidVoteSelection(VoteSourceTypes eVoteSource, const VoteSelecti
 			return false;
 		}
 
-		if (kData.ePlayer == getSecretaryGeneral(eVoteSource))
+		if (GET_PLAYER(kData.ePlayer).getTeam() == getSecretaryGeneral(eVoteSource))
 		{
 			return false;
 		}
@@ -5004,6 +5020,14 @@ void CvGame::setActivePlayer(PlayerTypes eNewValue, bool bForceHotSeat)
 			}
 		}
 
+		if (!isHotSeat())
+		{
+			for (int iI = 0; iI < NUM_PLAYEROPTION_TYPES; iI++)
+			{
+				GET_PLAYER(eNewValue).setOption((PlayerOptionTypes)iI, GET_PLAYER(eOldActivePlayer).isOption((PlayerOptionTypes)iI));
+			}
+		}
+
 		if (GC.IsGraphicsInitialized())
 		{
 			GC.getMapINLINE().updateFog();
@@ -5032,6 +5056,8 @@ void CvGame::setActivePlayer(PlayerTypes eNewValue, bool bForceHotSeat)
 			gDLL->getEngineIFace()->SetDirty(CultureBorders_DIRTY_BIT, true);
 			gDLL->getInterfaceIFace()->setDirty(BlockadedPlots_DIRTY_BIT, true);
 		}
+
+		CvEventReporter::getInstance().playerSwitch(eOldActivePlayer, eNewValue);
 	}
 }
 
@@ -5150,7 +5176,7 @@ void CvGame::setWinner(TeamTypes eNewWinner, VictoryTypes eNewVictory)
 
 		gDLL->getInterfaceIFace()->setDirty(Center_DIRTY_BIT, true);
 		CvEventReporter::getInstance().victory(eNewWinner, eNewVictory);
-		gDLL->getInterfaceIFace()->setDirty(Soundtrack_DIRTY_BIT, true);
+		//gDLL->getInterfaceIFace()->setDirty(Soundtrack_DIRTY_BIT, true);
 	}
 }
 
@@ -8037,7 +8063,7 @@ void CvGame::processVote(const VoteTriggeredData& kData, int iChange)
 				}
 			}
 
-			if (kData.kVoteOption.ePlayer != NULL)
+			if (kData.kVoteOption.ePlayer != NO_PLAYER)
 			{
 				GET_PLAYER(kData.kVoteOption.ePlayer).changeGold(iTotalGold / 2);
 				gDLL->getInterfaceIFace()->addMessage(kData.kVoteOption.ePlayer, true, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_APOSTOLIC_PALACE_COLLECT_TITHE", iTotalGold / 2), "", MESSAGE_TYPE_MAJOR_EVENT, "", (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), -1, -1, true, true);
@@ -10014,7 +10040,7 @@ VoteSelectionData* CvGame::addVoteSelection(VoteSourceTypes eVoteSource)
 								{
 									kData.ePlayer = ePlayer;
 									kData.eOtherPlayer = (PlayerTypes)eReleasableCivilization;
-									kData.szText = gDLL->getText("TXT_KEY_POPUP_ELECTION_RELEASE", GC.getCivilizationInfo(eReleasableCivilization), GET_PLAYER(ePlayer).getCivilizationAdjective(), getVoteRequired(kData.eVote, eVoteSource), countPossibleVote(kData.eVote, eVoteSource)); //Rhye
+									kData.szText = gDLL->getText("TXT_KEY_POPUP_ELECTION_RELEASE", GC.getCivilizationInfo(eReleasableCivilization).getText(), GET_PLAYER(ePlayer).getCivilizationAdjective(), getVoteRequired(kData.eVote, eVoteSource), countPossibleVote(kData.eVote, eVoteSource)); //Rhye
 									pData->aVoteOptions.push_back(kData);
 								}
 							}
@@ -10725,7 +10751,10 @@ PeriodTypes CvGame::getPeriod(CivilizationTypes eCivilization) const
 
 void CvGame::setPeriod(CivilizationTypes eCivilization, PeriodTypes ePeriod)
 {
-	m_aiCivPeriod[eCivilization] = ePeriod;
+	if (getPeriod(eCivilization) != ePeriod)
+	{
+		m_aiCivPeriod[eCivilization] = ePeriod;
+	}
 }
 
 void CvGame::setCivilizationHistory(HistoryTypes eHistory, CivilizationTypes eCivilization, int iTurn, int iValue)

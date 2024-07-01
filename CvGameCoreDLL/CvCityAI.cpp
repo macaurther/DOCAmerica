@@ -558,8 +558,9 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
                 iTempValue += ((iGreatPeopleRate * iBestSpreadValue));
             }
 		}
-		iTempValue *= 100;
-		iTempValue /= GET_PLAYER(getOwnerINLINE()).AI_averageGreatPeopleMultiplier();
+
+		iTempValue *= GET_PLAYER(getOwnerINLINE()).AI_averageGreatPeopleMultiplier();
+		iTempValue /= 100;
 
 		iTempValue /= (1 + iEmphasisCount);
 		iValue += iTempValue;
@@ -621,7 +622,6 @@ void CvCityAI::AI_chooseProduction()
 	{
 		if (getProduction() > 0)
 		{
-
 			if ((getProductionUnitAI() == UNITAI_SETTLE) && kPlayer.AI_isFinancialTrouble())
 			{
 
@@ -1051,7 +1051,7 @@ void CvCityAI::AI_chooseProduction()
     	}
     }
 
-    if (bMaybeWaterArea)
+    if (bMaybeWaterArea && !isIndependent())
 	{
 		if (kPlayer.AI_getNumTrainAIUnits(UNITAI_ATTACK_SEA) + kPlayer.AI_getNumTrainAIUnits(UNITAI_PIRATE_SEA) + kPlayer.AI_getNumTrainAIUnits(UNITAI_RESERVE_SEA) < 3)
 		{
@@ -1206,7 +1206,7 @@ void CvCityAI::AI_chooseProduction()
 		}
 	}
 
-	if	(!bLandWar && !bAssault && (iTargetCulturePerTurn > getCommerceRate(COMMERCE_CULTURE)))
+	if	(!bLandWar && !bMajorWar && !bAssault && (iTargetCulturePerTurn > getCommerceRate(COMMERCE_CULTURE)))
 	{
 		//if (GC.getGameINLINE().getSorenRandNum(bAggressiveAI ? 3 : 2, "AI Culture Build") == 0) //Rhye
 		if (GC.getGameINLINE().getSorenRandNum(2, "AI Culture Build") == 0) //Rhye
@@ -1307,6 +1307,7 @@ void CvCityAI::AI_chooseProduction()
 	UnitTypes eBestSpreadUnit = NO_UNIT;
 	int iBestSpreadUnitValue = -1;
 
+	if (!isIndependent())
 	{
 		int iSpreadUnitRoll = (100 - iBuildUnitProb) / 3;
 		iSpreadUnitRoll += bLandWar ? 0 : 10;
@@ -1340,7 +1341,6 @@ void CvCityAI::AI_chooseProduction()
 			return;
 		}
 	}
-
 
 	if ((iAreaBestFoundValue > iMinFoundValue) || (iWaterAreaBestFoundValue > iMinFoundValue))
 	{
@@ -1427,7 +1427,7 @@ void CvCityAI::AI_chooseProduction()
     }
 
 	// don't build frivolous things if this is an important city unless we at war
-    if (!bImportantCity || bLandWar || bAssault)
+    if (!bImportantCity || (bLandWar && bMajorWar) || bAssault)
     {
         if (bPrimaryArea)
         {
@@ -1440,7 +1440,7 @@ void CvCityAI::AI_chooseProduction()
             }
         }
 
-        if (!bLandWar && !bDanger)
+        if (!(bLandWar && bMajorWar) && !bDanger)
         {
 			if (kPlayer.AI_totalAreaUnitAIs(pArea, UNITAI_EXPLORE) < (kPlayer.AI_neededExplorers(pArea)))
 			{
@@ -1514,7 +1514,7 @@ void CvCityAI::AI_chooseProduction()
 		return;
 	}
 
-	if (iBestSpreadUnitValue > ((iSpreadUnitThreshold * 60) / 100))
+	if (!isIndependent() && iBestSpreadUnitValue > ((iSpreadUnitThreshold * 60) / 100))
 	{
 		if (AI_chooseUnit(eBestSpreadUnit, UNITAI_MISSIONARY))
 		{
@@ -1753,7 +1753,7 @@ void CvCityAI::AI_chooseProduction()
 	}
 
 	//if (!bAlwaysPeace && !(bLandWar || bAssault) && (kPlayer.AI_isDoStrategy(AI_STRATEGY_OWABWNW) || (GC.getGame().getSorenRandNum(12, "AI consider Nuke") == 0))) //Rhye (more nukes)
-	if (!bAlwaysPeace && !(bLandWar || bAssault) && (kPlayer.AI_isDoStrategy(AI_STRATEGY_OWABWNW) || (GC.getGame().getSorenRandNum(4, "AI consider Nuke") == 0))) //Rhye
+	if (!bAlwaysPeace && !((bLandWar && bMajorWar) || bAssault) && (kPlayer.AI_isDoStrategy(AI_STRATEGY_OWABWNW) || (GC.getGame().getSorenRandNum(4, "AI consider Nuke") == 0))) //Rhye
 	{
 		int iTotalNukes = kPlayer.AI_totalUnitAIs(UNITAI_ICBM);
 		int iNukesWanted = 1 + 2 * std::min(kPlayer.getNumCities(), GC.getGame().getNumCities() - kPlayer.getNumCities());
@@ -1776,7 +1776,7 @@ void CvCityAI::AI_chooseProduction()
 
     if ((!bImportantCity || bDefenseWar) && (iUnitCostPercentage < iMaxUnitSpending))
     {
-        if (!bFinancialTrouble && !bGetBetterUnits && (bLandWar || ((bAssault || kPlayer.AI_isDoStrategy(AI_STRATEGY_DAGGER)) && !bAssaultAssist)))
+        if (!bFinancialTrouble && !bGetBetterUnits && ((bLandWar && bMajorWar) || ((bAssault || kPlayer.AI_isDoStrategy(AI_STRATEGY_DAGGER)) && !bAssaultAssist)))
         {
         	int iTrainInvaderChance = iBuildUnitProb + 10;
         	if (bAggressiveAI)
@@ -1846,7 +1846,7 @@ void CvCityAI::AI_chooseProduction()
 		}
 	}
 
-	if (!bLandWar)
+	if (!(bLandWar && bMajorWar))
 	{
 		if ((pWaterArea != NULL) && (iWaterPercent > 40))
 		{
@@ -1863,7 +1863,7 @@ void CvCityAI::AI_chooseProduction()
 		}
 	}
 
-	if (iBestSpreadUnitValue > ((iSpreadUnitThreshold * 40) / 100))
+	if (!isIndependent() && iBestSpreadUnitValue > ((iSpreadUnitThreshold * 40) / 100))
 	{
 		if (AI_chooseUnit(eBestSpreadUnit, UNITAI_MISSIONARY))
 		{
@@ -1887,7 +1887,7 @@ void CvCityAI::AI_chooseProduction()
 	//int iNeededSpies = iNumCitiesInArea / 3; //Rhye
 	int iNeededSpies = iNumCitiesInArea / 5; //Rhye
 	iNeededSpies += isCapital() ? 1 : 0;
-	if (iNumSpies < iNeededSpies)
+	if (!isIndependent() && iNumSpies < iNeededSpies)
 	{
 		if (GC.getGameINLINE().getSorenRandNum(100, "AI Train Spy") < 5 + 50 / (1 + iNumSpies))
 		{
@@ -1976,7 +1976,7 @@ void CvCityAI::AI_chooseProduction()
 		}
 	}
 
-	if (!bLandWar)
+	if (!(bLandWar && bMajorWar))
 	{
 		if ((iCulturePressure > 90) || kPlayer.AI_isDoStrategy(AI_STRATEGY_CULTURE2))
 		{
@@ -2057,7 +2057,7 @@ void CvCityAI::AI_chooseProduction()
 	}
 
 
-	if (!bLandWar)
+	if (!(bLandWar && bMajorWar))
 	{
 		if (AI_chooseBuilding(iEconomyFlags, 40, 8))
 		{
@@ -2115,7 +2115,7 @@ void CvCityAI::AI_chooseProduction()
 	bChooseUnit = false;
 	if (iUnitCostPercentage < iMaxUnitSpending + 5)
 	{
-		if ((bLandWar) ||
+		if ((bLandWar && bMajorWar) ||
 			  ((kPlayer.getNumCities() <= 3) && (GC.getGameINLINE().getElapsedGameTurns() < 60)) ||
 			  (GC.getGameINLINE().getSorenRandNum(100, "AI Build Unit Production") < AI_buildUnitProb()) ||
 				(isHuman() && (getGameTurnFounded() == GC.getGameINLINE().getGameTurn())))
@@ -2369,27 +2369,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[iI] /= 100;
 	}
 
-	//Rhye - start switch (unit AI types)
-
-	if (GET_PLAYER((PlayerTypes)getOwnerINLINE()).verifySettlersHalt(300)) {}
-	else if (GET_PLAYER((PlayerTypes)getOwnerINLINE()).verifySettlersHalt(40))
-		{
-		if (!GET_TEAM((TeamTypes)getOwnerINLINE()).isHasTech((TechTypes)EXPLORATION))
-			aiUnitAIVal[UNITAI_SETTLE] /= 2;
-		}
-	else aiUnitAIVal[UNITAI_SETTLE] /= 4;
-
-	/*if (GET_PLAYER(getOwnerINLINE()).getNumCities() >= 25)
-		aiUnitAIVal[UNITAI_SETTLE] /= 4;
-	else if (GET_PLAYER(getOwnerINLINE()).getNumCities() >= 20)
-		aiUnitAIVal[UNITAI_SETTLE] /= 3;
-	else if (GET_PLAYER(getOwnerINLINE()).getNumCities() >= 15)
-		aiUnitAIVal[UNITAI_SETTLE] /= 2;
-	else if (GET_PLAYER(getOwnerINLINE()).getCurrentEra() >= 4 && GET_PLAYER(getOwnerINLINE()).getNumCities() >= 10)
-		if (GET_PLAYER(getOwnerINLINE()).getCivics((CivicOptionTypes)5) != (CivicTypes)27) {
-			aiUnitAIVal[UNITAI_SETTLE] *= 2;
-			aiUnitAIVal[UNITAI_SETTLE] /= 3;
-		}*/
 
 
 	switch (getCivilizationType())
@@ -2916,7 +2895,6 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 								}
 							}
 
-
 							if (iValue > 0)
 							{
 								iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
@@ -2939,44 +2917,21 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 											iTempValue *= 2;
 										}
 										iValue += iTempValue;
-										
-										// Leoreth: building preferences from Python
-										iTempValue = 10;
-
-										int iBuildingPreference = GET_PLAYER(getOwnerINLINE()).getBuildingClassPreference((BuildingClassTypes)iI);
-										
-										if (iBuildingPreference > -MAX_INT)
-										{
-											if (iBuildingPreference > 0)
-											{
-												iTempValue *= iBuildingPreference;
-												iTempValue /= 10;
-											} 
-											else if (iBuildingPreference < 0) 
-											{
-												iTempValue *= 10;
-												iTempValue /= iBuildingPreference;
-											} 
-											else 
-											{
-												iTempValue = 0;
-												iValue = 0;
-											}
-										}
-
-										iValue += iTempValue - 10;
 									}
 								}
 
-								if (bAsync)
+								if (iValue > 0)
 								{
-									iValue *= (GC.getASyncRand().get(25, "AI Best Building ASYNC") + 100);
-									iValue /= 100;
-								}
-								else
-								{
-									iValue *= (GC.getGameINLINE().getSorenRandNum(25, "AI Best Building") + 100);
-									iValue /= 100;
+									if (bAsync)
+									{
+										iValue *= (GC.getASyncRand().get(25, "AI Best Building ASYNC") + 100);
+										iValue /= 100;
+									}
+									else
+									{
+										iValue *= (GC.getGameINLINE().getSorenRandNum(25, "AI Best Building") + 100);
+										iValue /= 100;
+									}
 								}
 
 								iValue += getBuildingProduction(eLoopBuilding);
@@ -4526,6 +4481,26 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 			iValue /= (8 - getPopulation());
 		}
 
+	}
+
+	// Leoreth: AI building value weights
+	int iBuildingClassPreference = GET_PLAYER(getOwnerINLINE()).getBuildingClassPreference(eBuildingClass);
+	if (iBuildingClassPreference != -MAX_INT)
+	{
+		if (iBuildingClassPreference == 0)
+		{
+			return -MAX_INT;
+		}
+		else if (iBuildingClassPreference > 0)
+		{
+			iValue *= iBuildingClassPreference;
+			iValue /= 10;
+		}
+		else if (iBuildingClassPreference < 0)
+		{
+			iValue *= 10;
+			iValue /= iBuildingClassPreference;
+		}
 	}
 
 	return std::max(0, iValue);
@@ -10200,7 +10175,7 @@ int CvCityAI::AI_buildingWeight(BuildingTypes eBuilding) const
 	}
 	else if (eBuilding == (BuildingTypes)BUILDING_CHAPULTEPEC_CASTLE)
 	{
-		if (getCultureLevel() < 3)
+		if (!GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE2) && !GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE3) && !GET_PLAYER(getOwnerINLINE()).AI_isDoStrategy(AI_STRATEGY_CULTURE4))
 		{
 			return -MAX_INT;
 		}

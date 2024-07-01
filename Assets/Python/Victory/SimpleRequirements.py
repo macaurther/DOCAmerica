@@ -6,6 +6,7 @@ from Civics import isCommunist
 import heapq
 
 
+# Third Ethiopian UHV goal
 # Third Buddhist URV goal
 class AllAttitude(Requirement):
 
@@ -14,22 +15,39 @@ class AllAttitude(Requirement):
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_ALL_ATTITUDE"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_ALL_ATTITUDE"
 	
-	def __init__(self, iAttitude, **options):
-		Requirement.__init__(self, int(iAttitude), **options)
+	def __init__(self, iAttitude, civs=None, **options):
+		Requirement.__init__(self, int(iAttitude), civs=civs, **options)
 		
 		self.iAttitude = int(iAttitude)
+		self.civs = civs
+	
+	def valid_players(self):
+		valid_players = players.major().alive()
+		
+		if self.civs:
+			valid_players = valid_players.civs(*self.civs)
+		
+		return valid_players
 	
 	def value(self, evaluator):
-		return evaluator.max(lambda iPlayer: players.major().alive().without(iPlayer).where(lambda p: player(p).AI_getAttitude(iPlayer) >= self.iAttitude).count())
+		return evaluator.max(lambda iPlayer: self.valid_players().without(iPlayer).where(lambda p: player(p).AI_getAttitude(iPlayer) >= self.iAttitude).count())
 	
 	def required(self):
-		return players.major().alive().count() - 1
+		return self.valid_players().count() - 1
 	
 	def fulfilled(self, evaluator):
 		return self.value(evaluator) >= self.required()
 	
 	def progress(self, evaluator):
 		return "%s %s: %s / %s" % (self.indicator(evaluator), capitalize(text(self.PROGR_KEY, *self.format_parameters())), self.value(evaluator), self.required())
+	
+	def additional_formats(self):
+		civilizations = text("TXT_KEY_VICTORY_CIVILIZATIONS")
+		
+		civilizations = qualify_adjective(civilizations, CIVS, self.civs)
+		civilizations = qualify(civilizations, "TXT_KEY_VICTORY_OTHER", not self.civs)
+		
+		return [civilizations]
 
 
 # First American UHV goal
@@ -121,13 +139,33 @@ class Communist(Requirement):
 
 	def fulfilled(self, evaluator):
 		return evaluator.any(lambda p: isCommunist(p))
+
+
+class CompleteEra(ThresholdRequirement):
+
+	TYPES = (ERA,)
+
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_DISCOVER_ALL"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_COMPLETE_ERA"
+	
+	def __init__(self, iEra, **options):
+		ThresholdRequirement.__init__(self, iEra, **options)
+		
+		self.iEra = iEra
+		self.bPlural = True
+	
+	def evaluate(self, evaluator):
+		return infos.techs().where(lambda iTech: infos.tech(iTech).getEra() == self.iEra).count(lambda iTech: evaluator.any(lambda iPlayer: team(iPlayer).isHasTech(iTech)))
+	
+	def required(self):
+		return infos.techs().count(lambda iTech: infos.tech(iTech).getEra() == self.iEra)
 	
 
 # Second Greek UHV goal
 # Second Phoenician UHV goal
-# Second Tamil UHV goal
+# Second Dravidian UHV goal
 # Second Japanese UHV goal
-# First Viking UHV goal
+# First Norse UHV goal
 # Second Arabian UHV goal
 # First Mongol UHV goal
 # Second Ottoman UHV goal
@@ -168,7 +206,7 @@ class CultureCover(Requirement):
 		self.area = area
 	
 	def fulfilled(self, evaluator):
-		return self.area.create().all_if_any(lambda p: p.getOwner() in evaluator)
+		return self.area.all_if_any(lambda p: p.getOwner() in evaluator)
 
 
 # Third Inti URV goal
@@ -346,7 +384,7 @@ class Route(Requirement):
 		self.routes = routes
 	
 	def fulfilled(self, evaluator):
-		return self.area.create().all(lambda p: p.getOwner() in evaluator and p.getRouteType() in self.routes)
+		return self.area.all(lambda p: p.getOwner() in evaluator and p.getRouteType() in self.routes)
 
 
 # Second Turkic UHV goal
@@ -362,13 +400,14 @@ class RouteConnection(Requirement):
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_ROUTE_CONNECTION"
 	
 	def __init__(self, routes, starts, targets, start_owners=False, **options):
-		Requirement.__init__(self, routes, starts, targets, **options)
+		Requirement.__init__(self, routes, starts, targets, start_owners=start_owners, **options)
 		
 		self.routes = routes
 		self.starts = starts
 		self.targets = targets
 		
 		self.start_owners = start_owners
+		self.cached_start_owners = None
 	
 	def fulfilled(self, evaluator):
 		if not evaluator.any(lambda iPlayer: any(team(iPlayer).isHasTech(self.route_tech(iRoute)) for iRoute in self.routes)):
@@ -381,6 +420,7 @@ class RouteConnection(Requirement):
 			
 			return self.connected(start.plot(), evaluator)
 		
+		self.cached_start_owners = self.start_owners and self.starts.cities().owners() or []
 		return any(self.connected(start.plot(), evaluator) for start in self.starts.cities())
 		
 	def route_tech(self, iRoute):
@@ -391,11 +431,10 @@ class RouteConnection(Requirement):
 		if not self.valid(start, evaluator):
 			return False
 			
-		targets = self.targets.create()
-		if start in targets:
+		if start in self.targets:
 			return True
 			
-		targets = targets.where(lambda plot: self.valid(plot, evaluator))
+		targets = self.targets.where(lambda plot: self.valid(plot, evaluator))
 		if not targets:
 			return False
 		
@@ -422,7 +461,7 @@ class RouteConnection(Requirement):
 		if plot.getOwner() in evaluator:
 			return True
 		
-		if self.start_owners and plot.getOwner() in self.starts.cities().owners():
+		if self.start_owners and plot.getOwner() in self.cached_start_owners:
 			return True
 		
 		return False
@@ -517,6 +556,7 @@ class Wonder(Requirement):
 	
 	def expire_building_built(self, goal, city, iBuilding):
 		if self.iBuilding == iBuilding:
+			goal.announce_failure_cause(city.getOwner(), "TXT_KEY_VICTORY_ANNOUNCE_FIRST_BUILDING", BUILDING.format(iBuilding))
 			goal.expire()
 	
 	def fulfilled(self, evaluator):

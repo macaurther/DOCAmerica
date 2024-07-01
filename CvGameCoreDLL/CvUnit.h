@@ -363,6 +363,7 @@ public:
 	DllExport int currHitPoints() const;																	// Exposed to Python						
 	bool isHurt() const;																				// Exposed to Python						
 	DllExport bool isDead() const;																				// Exposed to Python						
+	bool isExisting() const;
 
 	void setBaseCombatStr(int iCombat);																																										// Exposed to Python
 	int baseCombatStr() const;																																										// Exposed to Python
@@ -438,6 +439,7 @@ public:
 	int hillsDefenseModifier() const;																				// Exposed to Python
 	int plainsAttackModifier() const; // Leoreth
 	int plainsDefenseModifier() const; // Leoreth
+	int riverAttackModifier() const; // Leoreth
 	int terrainAttackModifier(TerrainTypes eTerrain) const;								// Exposed to Python
 	int terrainDefenseModifier(TerrainTypes eTerrain) const;								// Exposed to Python
 	int featureAttackModifier(FeatureTypes eFeature) const;								// Exposed to Python
@@ -647,6 +649,10 @@ public:
 	// Leoreth
 	int getExtraPlainsDefensePercent() const;
 	void changeExtraPlainsDefensePercent(int iChange);
+
+	// Leoreth
+	int getExtraRiverAttackPercent() const;
+	void changeExtraRiverAttackPercent(int iChange);
 
 	int getRevoltProtection() const;																									// Exposed to Python
 	void changeRevoltProtection(int iChange);
@@ -904,6 +910,7 @@ protected:
 	int m_iExtraHillsDefensePercent;
 	int m_iExtraPlainsAttackPercent; // Leoreth
 	int m_iExtraPlainsDefensePercent; // Leoreth
+	int m_iExtraRiverAttackPercent; // Leoreth
 	int m_iRevoltProtection;
 	int m_iCollateralDamageProtection;
 	int m_iPillageChange;
@@ -973,7 +980,7 @@ protected:
 	void resolveAirCombat(CvUnit* pInterceptor, CvPlot* pPlot, CvAirMissionDefinition& kBattle);
 	void checkRemoveSelectionAfterAttack();
 
-	int getOriginalArtStyle(int regionID);
+	int getOriginalArtStyle(const CvPlot* pPlot) const;
 };
 
 #endif

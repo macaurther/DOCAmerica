@@ -47,6 +47,9 @@ class Type(object):
 		if isinstance(argument, NamedArgument):
 			return argument.name()
 		return self.format_func(argument, **options)
+	
+	def create(self, argument):
+		return argument
 		
 	def area(self, argument):
 		return None
@@ -170,6 +173,9 @@ class TurnsType(CountType):
 
 class AreaType(Type):
 
+	def create(self, argument):
+		return argument.create()
+
 	def validate_func(self, argument):
 		return isinstance(argument, AreaArgument)
 	
@@ -178,9 +184,9 @@ class AreaType(Type):
 		
 	def area(self, argument):
 		if isinstance(argument, Aggregate):
-			return sum([argument_item.create() for argument_item in argument.items], plots.none())
+			return sum(argument.items, plots.none())
 		
-		return argument.create()
+		return argument
 
 
 class PercentageType(Type):
@@ -217,6 +223,16 @@ class CivsType(Type):
 	
 	def format_func(self, argument):
 		return argument.name()
+
+
+# TODO: test
+class CivsAdjectiveType(Type):
+
+	def validate_func(self, argument):
+		return isinstance(argument, CivsArgument)
+	
+	def format(self, argument, **options):
+		return argument.adjective()
 
 
 class ReligionAdjectiveType(InfoType):
@@ -269,6 +285,11 @@ class UnitCombatType(Type):
 
 class AreaOrCityType(Type):
 
+	def create(self, argument):
+		if isinstance(argument, AreaArgument):
+			return argument.create()
+		return argument
+
 	def validate_func(self, argument):
 		return isinstance(argument, (AreaArgument, CityArgument))
 	
@@ -276,10 +297,9 @@ class AreaOrCityType(Type):
 		return argument.name()
 	
 	def area(self, argument):
-		if isinstance(argument, AreaArgument):
-			return argument.create()
 		if isinstance(argument, CityArgument):
 			return argument.area()
+		return argument
 
 
 class SpecialistType(InfoType):
@@ -288,7 +308,7 @@ class SpecialistType(InfoType):
 		InfoType.__init__(self, name, infos.specialist)
 	
 	def format_great_specialist_short(self, iSpecialist, **options):
-		return self.format_func(iSpecialist, **options).split(" ")[1]
+		return " ".join(self.format_func(iSpecialist, **options).split(" ")[1:])
 	
 	def format(self, argument, **options):
 		if isinstance(argument, Aggregate) and not argument.name():
@@ -318,6 +338,7 @@ ATTITUDE = AttitudeType("Attitude")
 BUILDING = InfoType("Building", infos.building)
 CITY = CityType("City")
 CIVS = CivsType("Civs")
+CIVS_ADJECTIVE = CivsAdjectiveType("CivsAdjective")
 CORPORATION = InfoType("Corporation", infos.corporation)
 COUNT = CountType("Count")
 CULTURELEVEL = CultureLevelType("CultureLevel")

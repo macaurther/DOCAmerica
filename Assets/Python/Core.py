@@ -32,6 +32,10 @@ game = gc.getGame()
 map = gc.getMap()
 
 
+def civ_name(iCiv):
+	return infos.civ(iCiv).getShortDescription(0).replace(" ", "_")
+
+
 def getArea(area):
 	if isinstance(area, (CyPlot, CyCity)):
 		return area.getArea()
@@ -103,7 +107,8 @@ def variadic(*items):
 def listify(item):
 	if isinstance(item, list):
 		return item
-	if isinstance(item, (tuple, set)):
+	# TODO: test info collection
+	if isinstance(item, (tuple, set, InfoCollection)):
 		return list(item)
 	if isinstance(item, types.GeneratorType):
 		return [x for x in item]
@@ -123,6 +128,9 @@ def isWonder(iBuilding):
 def log_with_trace(context):
 	print "%s called near:" % context
 	stacktrace()
+
+
+# TODO: is there a right equal or right not equal to add to Civ so we can do iPlayer == iEgypt and convert iPlayer to Civ implicitly?
 
 
 def sign(x):
@@ -230,6 +238,8 @@ def at(location1, location2):
 def isExtendedBirth(iPlayer):
 	if player(iPlayer).isHuman(): return False
 	
+	# add special conditions for extended AI flip zones here
+	
 	return True
 
 
@@ -258,6 +268,14 @@ def log(func):
 		return result
 	
 	return logged_func
+
+
+def traced(func):
+	def traced_func(*args, **kwargs):
+		log_with_trace(signature(func, *args, **kwargs))
+		return func(*args, **kwargs)
+	
+	return traced_func
 
 
 def owner(entity, identifier):
@@ -691,13 +709,15 @@ def _parse_tile(*args):
 	raise TypeError("Only accepts two coordinates or a tuple of two coordinates, received: %s %s" % (args, type(args[0])))
 		
 
-def _iterate(first, next, getter = lambda x: x):
+def _iterate(first, next, mapper = lambda x: x):
 	list = []
 	entity, iter = first(False)
 	while entity:
-		list.append(getter(entity))
+		mapped_entity = mapper(entity)
+		if mapped_entity is not None:
+			yield mapped_entity
+		
 		entity, iter = next(iter, False)
-	return [x for x in list if x is not None]
 	
 	
 def wrap(*args):
@@ -1075,6 +1095,17 @@ class EntityCollection(object):
 		enriched = self + enrich
 		return enriched.unique()
 	
+	def matching(self, *conditions):
+		for condition in conditions:
+			matched = self.where(condition)
+			if matched:
+				return matched
+		
+		return self.empty()
+	
+	def set(self):
+		return set(self._keys)
+	
 	def format(self, separator=",", final_separator=None, formatter=lambda x: x):
 		if final_separator is None:
 			final_separator = text("TXT_KEY_AND")
@@ -1202,8 +1233,6 @@ class PlotFactory:
 		return self.normal(identifier)
 	
 	def capital(self, identifier):
-		if is_minor(identifier):	# MacAurther: Don't try to find minor capitals
-			return plot(0 ,0)
 		iPeriod = player(identifier).getPeriod()
 		if iPeriod in dPeriodCapitals:
 			return plot(dPeriodCapitals[iPeriod])
@@ -1289,6 +1318,12 @@ class Locations(EntityCollection):
 	
 	def region(self, iRegion):
 		return self.regions(iRegion)
+	
+	def adjacent_regions(self, *regions):
+		return self.where(lambda loc: plots.surrounding(loc).any(lambda sloc: sloc.getRegionID() in regions))
+	
+	def adjacent_region(self, iRegion):
+		return self.adjacent_regions(iRegion)
 		
 	def where_surrounding(self, condition, radius=1):
 		return self.where(lambda loc: plots.surrounding(loc, radius=radius).all(condition))
@@ -1304,6 +1339,10 @@ class Locations(EntityCollection):
 	
 	def intersect(self, locations):
 		return any(loc in locations for loc in self)
+	
+	# TODO: test
+	def revealed(self, identifier):
+		return self.where(lambda loc: plot(loc).isRevealed(player(identifier).getTeam(), False))
 
 
 class Plots(Locations):
@@ -1389,6 +1428,9 @@ class CityFactory:
 
 	def owner(self, identifier):
 		owner = player(identifier)
+		if not owner:
+			return self.none()
+		
 		cities = _iterate(owner.firstCity, owner.nextCity)
 		return Cities(cities)
 		
@@ -1562,6 +1604,9 @@ class UnitFactory:
 			return Units([])
 			
 		return Units([UnitKey.of(plot(*args).getUnit(i)) for i in range(plot(*args).getNumUnits())])
+	
+	def surrounding(self, *args, **kwargs):
+		return plots.surrounding(*args, **kwargs).units()
 		
 		
 class UnitKey(object):
@@ -1834,11 +1879,23 @@ class Civilizations(EntityCollection):
 
 	def __str__(self):
 		return ",".join([infos.civ(item).getText() for item in self.entities()])
+	
+	# TODO: test
+	def alive(self):
+		return self.where(lambda c: player(c).isAlive())
+	
+	# TODO: test
+	def notalive(self):
+		return self.where(lambda c: not player(c).isAlive())
 		
 	def without(self, exceptions):
 		if not isinstance(exceptions, (list, set, Players)):
 			exceptions = [exceptions]
 		return self.where(lambda c: c not in [civ(e) for e in exceptions])
+	
+	# TODO: test
+	def past_birth(self):
+		return self.where(lambda c: year() >= year(dBirth[c]))
 	
 	def before_fall(self):
 		return self.where(lambda c: year() < year(dFall[c]))
@@ -1854,6 +1911,10 @@ class CivFactory(object):
 	
 	def of(self, *items):
 		return Civilizations([civ(element) for element in items])
+
+
+def set_unit_adjective(unit, adjective):
+	unit.setName(text("TXT_KEY_UNIT_ADJECTIVE", text(adjective), unit.getName()))
 
 		
 class CreatedUnits(object):
@@ -1879,7 +1940,7 @@ class CreatedUnits(object):
 			return self
 	
 		for unit in self:
-			unit.setName('%s %s' % (text(adjective), unit.getName()))
+			set_unit_adjective(unit, adjective)
 			
 		return self
 			

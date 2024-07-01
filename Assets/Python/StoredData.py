@@ -21,12 +21,37 @@ class PlayerList(list):
 		return list.__getitem__(self, index)
 
 
+class UnitDict(dict):
+
+	def __getitem__(self, item):
+		if isinstance(item, CyUnit):
+			return self.__getitem__((item.getOwner(), item.getID()))
+		if item not in self:
+			self[item] = UnitData()
+			return self[item]
+		return dict.__getitem__(self, item)
+	
+	def __setitem__(self, key, value):
+		if isinstance(key, CyUnit):
+			dict.__setitem__(self, (key.getOwner(), key.getID()), value)
+		else:
+			dict.__setitem__(self, key, value)
+	
+	def evict(self):
+		for iOwner, iID in self.keys():
+			if not gc.getPlayer(iOwner).getUnit(iID).isExisting():
+				del self[(iOwner, iID)]
+
+
 class CivData:
 
 	def __init__(self, iCiv):
 		self.iCiv = iCiv
 		
 		self.setup()
+	
+	def update(self, data):
+		self.__dict__.update(data)
 		
 	def setup(self):
 	
@@ -163,6 +188,18 @@ class PlayerData:
 		for i in reversed(range(len(lTrend))):
 			if lTrend[i] != 0: return lTrend[i]
 		return 0
+
+
+class UnitData(object):
+
+	def __init__(self):
+		self.setup()
+	
+	def update(self, data):
+		self.__dict__.update(data)
+	
+	def setup(self):
+		self.spawn_data = {}
 	
 
 class GameData:
@@ -177,10 +214,17 @@ class GameData:
 			data = player.__dict__.copy()
 			player.setup()
 			player.update(data)
+		
+		for civ in self.civs:
+			data = player.__dict__.copy()
+			civ.setup()
+			civ.update(data)
 
 	def setup(self):
 		self.civs = CivList(CivData(i) for i in range(iNumCivs))
 		self.players = PlayerList(PlayerData(i) for i in range(gc.getMAX_PLAYERS()))
+		
+		self.units = UnitDict()
 		
 		# Slots
 		
@@ -242,6 +286,20 @@ class GameData:
 		
 		self.period_offsets = PeriodOffsets()
 		
+		self.barbarian_units = {}
+		
+		# Statistics
+		
+		self.dUnitsBuilt = {}
+		self.dUnitsKilled = {}
+		self.dUnitsLost = {}
+		self.dBuildingsBuilt = {}
+		
+		# City Names
+		
+		self.dChangedCities = {}
+		self.dRenamedCities = {}
+		
 		# Migration
 		self.migrateCity = None
 		self.migrateX = -1
@@ -277,5 +335,6 @@ class GameData:
 		
 	def setStabilityLevel(self, iPlayer, iValue):
 		self.players[iPlayer].iStabilityLevel = iValue
+
 		
 data = GameData()

@@ -5,7 +5,9 @@ from Core import *
 
 from GoalHandlers import event_handler_registry
 
+
 victory_handlers = appenddict()
+
 
 def handler(event):
 	def handler_decorator(func):
@@ -59,14 +61,14 @@ events.addEvent("periodChange")
 events.addEvent("playerPeriodChange")
 events.addEvent("birth")
 events.addEvent("resurrection")
-events.addEvent("switch")
 events.addEvent("enslave")
 events.addEvent("combatGold")
 events.addEvent("combatFood")
-events.addEvent("sacrificeHappiness")
+events.addEvent("sacrificeGoldenAge")
 events.addEvent("prepareBirth")
 events.addEvent("flip")
 events.addEvent("conquerors")
+events.addEvent("tribute")
 events.addEvent("improvementBuilt")
 events.addEvent("improvementDestroyed")
 events.addEvent("EndGameTurn")
@@ -172,7 +174,7 @@ def goodyPopup(iPlayer, pPlot, pUnit, iGoodyType):
 def wonderBuiltOnBuildingBuilt(city, iBuilding):
 	if isWorldWonderClass(infos.building(iBuilding).getBuildingClassType()):
 		events.fireEvent("wonderBuilt", city, iBuilding)
-
+		
 
 @handler("PythonReloaded")
 def resetHandlersOnPythonReloaded():
@@ -183,6 +185,10 @@ def resetHandlersOnPythonReloaded():
 def resetHandlersOnLoad():
 	event_handler_registry.reset()
 
+
+@handler("BeginGameTurn")
+def evictSaveData():
+	data.units.evict()
 
 @handler("combatResult")
 def onCombatResult(pWinner, pLoser):

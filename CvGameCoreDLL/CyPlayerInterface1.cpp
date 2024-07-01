@@ -41,6 +41,8 @@ void CyPlayerPythonInterface1(python::class_<CyPlayer>& x)
 		.def("hasTrait", &CyPlayer::hasTrait, "bool hasTrait(int /*TraitTypes*/ iIndex) - returns True if player is the Trait Type.")
 		.def("isHuman", &CyPlayer::isHuman, "bool ()")
 		.def("isBarbarian", &CyPlayer::isBarbarian, "bool () - returns True if player is a Barbarian")
+		.def("isIndependent", &CyPlayer::isBarbarian, "bool () - returns True if player is an Independent")
+		.def("isNative", &CyPlayer::isBarbarian, "bool () - returns True if player is Native")
 		.def("getName", &CyPlayer::getName, "str ()")
 		//Rhye (jdog) -  start ---------------------
 		.def("setName", &CyPlayer::setName, "void(std::wstring szNewValue)" )																														// Exposed to Python

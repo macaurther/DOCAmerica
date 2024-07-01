@@ -1496,6 +1496,46 @@ void CvDllPythonEvents::reportPlayerDestroyed(PlayerTypes ePlayer)
 	}
 }
 
+// Leoreth: player switched
+void CvDllPythonEvents::reportPlayerSwitch(PlayerTypes eOldPlayer, PlayerTypes eNewPlayer)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("switch");
+		eventData.add((int)eOldPlayer);
+		eventData.add((int)eNewPlayer);
+		postEvent(eventData);
+	}
+}
+
+// Leoreth: tech traded
+void CvDllPythonEvents::reportTechTraded(PlayerTypes eFrom, PlayerTypes eTo, TechTypes eTech)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("techTraded");
+		eventData.add((int)eFrom);
+		eventData.add((int)eTo);
+		eventData.add((int)eTech);
+		postEvent(eventData);
+	}
+}
+
+// Leoreth: tribute given
+void CvDllPythonEvents::reportTribute(PlayerTypes eFrom, PlayerTypes eTo)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("tribute");
+		eventData.add((int)eFrom);
+		eventData.add((int)eTo);
+		postEvent(eventData);
+	}
+}
+
 void CvDllPythonEvents::reportGenericEvent(const char* szEventName, void *pyArgs)
 {
 	if (preEvent())

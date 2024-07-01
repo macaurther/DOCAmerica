@@ -261,7 +261,7 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	}
 
 	//Leoreth: region dependent art for independent units
-	m_originalArtStyle = (UnitArtStyleTypes)getOriginalArtStyle(GC.getMap().plot(iX, iY)->getRegionID());
+	m_originalArtStyle = (UnitArtStyleTypes)getOriginalArtStyle(plot());
 
 	AI_init(eUnitAI);
 
@@ -351,6 +351,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iExtraHillsDefensePercent = 0;
 	m_iExtraPlainsAttackPercent = 0; // Leoreth
 	m_iExtraPlainsDefensePercent = 0; // Leoreth
+	m_iExtraRiverAttackPercent = 0; // Leoreth
 	m_iRevoltProtection = 0;
 	m_iCollateralDamageProtection = 0;
 	m_iPillageChange = 0;
@@ -1298,7 +1299,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				pDefender->changeDamage(iDefenderDamage, getOwnerINLINE());
 
 				// Leoreth: defenders from recently born civilizations can retreat from combat after losing half their initial health
-				if (pPlot->isBirthProtected() && pPlot->getBirthProtected() == pDefender->getOwnerINLINE())
+				/*if (pPlot->isBirthProtected() && pPlot->getBirthProtected() == pDefender->getOwnerINLINE())
 				{
 					if (pDefender->getDamage() < pDefender->maxHitPoints() && iInitialDefenderDamage < pDefender->maxHitPoints() / 2 && pDefender->getDamage() >= (pDefender->maxHitPoints() + iInitialDefenderDamage) / 2)
 					{
@@ -1306,7 +1307,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 						CvEventReporter::getInstance().combatRetreat(this, pDefender);
 						break;
 					}
-				}
+				}*/
 
 				if (getCombatFirstStrikes() > 0 && isRanged())
 				{
@@ -2401,6 +2402,20 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 		}
 	}
 
+	// Leoreth: civilian and naval units can enter independent territory
+	if (GET_TEAM(eTeam).isMinorCiv())
+	{
+		if (!canFight())
+		{
+			return true;
+		}
+
+		if (getDomainType() == DOMAIN_SEA)
+		{
+			return true;
+		}
+	}
+
 	return false;
 }
 
@@ -2547,7 +2562,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		if (pPlot->getFeatureType() != NO_FEATURE)
 		{
 			// Leoreth: impassable feature with improvement can be entered
-			bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && (pPlot->getImprovementType() == NO_IMPROVEMENT);
+			bImpassableFeature = m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()) && pPlot->getImprovementType() == NO_IMPROVEMENT;
 
 			// Leoreth: attacks on impassable tiles are possible now
 			if (bImpassableFeature && !bAttack)
@@ -2575,12 +2590,12 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 /* UNOFFICIAL_PATCH                        END                                                  */
 /************************************************************************************************/
 		{
-			if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
+			if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()) && (pPlot->getFeatureType() == NO_FEATURE || !GC.getFeatureInfo(pPlot->getFeatureType()).isMakesPassable()))
 			{
 				TechTypes eTech = (TechTypes)m_pUnitInfo->getTerrainPassableTech(pPlot->getTerrainType());
 				if (NO_TECH == eTech || !GET_TEAM(getTeam()).isHasTech(eTech))
 				{
-					if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
+					if (/*DOMAIN_SEA != getDomainType() ||*/ (pPlot->getTeam() == NO_TEAM && !canFound(pPlot)) || (!bAttack && !canEnterTerritory(pPlot->getTeam())) )  // sea units can enter impassable in own cultural borders // Leoreth: now ALL units
 					{
 						if (bIgnoreLoad || !canLoad(pPlot))
 						{
@@ -3065,7 +3080,6 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 			}
 		}
 	}
-
 
 /*************************************************************************************************/
 /**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
@@ -4808,7 +4822,8 @@ bool CvUnit::canBombard(const CvPlot* pPlot) const
 		return false;
 	}
 
-	if (isCargo())
+	// Leoreth: amphibious artillery can bombard from cargo
+	if (isCargo() && !isAmphib())
 	{
 		return false;
 	}
@@ -5658,6 +5673,7 @@ bool CvUnit::stealPlans()
 	return true;
 }
 
+
 bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 {
 	if (!isFound())
@@ -5831,7 +5847,7 @@ bool CvUnit::spread(ReligionTypes eReligion)
 	}
 
 	pCity = plot()->getPlotCity();
-	
+
 	if (pCity != NULL)
 	{
 		bool bSuccess;
@@ -6108,7 +6124,10 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 			return false;
 		}
 
-		if (!pCity->canSlaveJoin(eSpecialist)) return false;
+		if (!pCity->canSlaveJoin(eSpecialist))
+		{
+			return false;
+		}
 	}
 
 	if (GC.getSpecialistInfo(eSpecialist).isSatellite())
@@ -6431,12 +6450,6 @@ int CvUnit::getTradeGold(const CvPlot* pPlot) const
 
 	iGold = (m_pUnitInfo->getBaseTrade() + (m_pUnitInfo->getTradeMultiplier() * ((pCapitalCity != NULL) ? pCity->calculateTradeProfit(pCapitalCity) : 0)));
 
-	// Leoreth: to help Mali
-	if (pCity->isHolyCity() && iGold < 2000)
-	{
-		iGold = std::min(iGold*2, 2000);
-	}
-
 	iGold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getUnitTradePercent();
 	iGold /= 100;
 
@@ -6507,12 +6520,6 @@ int CvUnit::getGreatWorkCulture(const CvPlot* pPlot) const
 	int iCulture;
 
 	iCulture = m_pUnitInfo->getGreatWorkCulture();
-
-	// Leoreth: new Sphinx effect: great priests can create great works
-	/*if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)GREAT_SPHINX) && getUnitClassType() == GC.getInfoTypeForString("UNITCLASS_GREAT_PROPHET"))
-	{
-		iCulture = GC.getUnitInfo((UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationUnits(GC.getInfoTypeForString("UNITCLASS_GREAT_ARTIST"))).getGreatWorkCulture();
-	}*/
 
 	// Leoreth: 800 culture per era
 	iCulture *= (GET_PLAYER(getOwnerINLINE()).getCurrentEra()+1);
@@ -7302,7 +7309,7 @@ bool CvUnit::build(BuildTypes eBuild)
 
 	// Python Event
 	CvEventReporter::getInstance().unitBuildImprovement(this, eBuild, bFinished);
-	
+
 	return bFinished;
 }
 
@@ -8435,6 +8442,12 @@ bool CvUnit::isDead() const
 }
 
 
+bool CvUnit::isExisting() const
+{
+	return getX_INLINE() >= 0 && getY_INLINE() >= 0;
+}
+
+
 void CvUnit::setBaseCombatStr(int iCombat)
 {
 	m_iBaseCombat = iCombat;
@@ -8495,6 +8508,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 		pCombatDetails->iHillsDefenseModifier = 0;
 		pCombatDetails->iPlainsAttackModifier = 0; // Leoreth
 		pCombatDetails->iPlainsDefenseModifier = 0; // Leoreth
+		pCombatDetails->iRiverAttackModifier = 0; // Leoreth
 		pCombatDetails->iFeatureAttackModifier = 0;
 		pCombatDetails->iFeatureDefenseModifier = 0;
 		pCombatDetails->iTerrainAttackModifier = 0;
@@ -8768,6 +8782,17 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			}
 		}
 
+		// Leoreth
+		if (!pAttackedPlot->isCity() && pAttackedPlot->isRiver() && pAttacker->plot()->isRiver())
+		{
+			iExtraModifier = -pAttacker->riverAttackModifier();
+			iTempModifier += iExtraModifier;
+			if (pCombatDetails != NULL)
+			{
+				pCombatDetails->iRiverAttackModifier = iExtraModifier;
+			}
+		}
+
 		if (pAttackedPlot->getFeatureType() != NO_FEATURE)
 		{
 			iExtraModifier = -pAttacker->featureAttackModifier(pAttackedPlot->getFeatureType());
@@ -9004,8 +9029,8 @@ bool CvUnit::canAttack(const CvUnit& defender) const
 		return false;
 	}
 
-	// Artillery can't amphibious attack
-	if (plot()->isWater() && !defender.plot()->isWater())
+	// Artillery can't amphibious attack - Leoreth: unless amphibious promotion
+	if (plot()->isWater() && !defender.plot()->isWater() && !isAmphib())
 	{
 		if (combatLimitAgainst(&defender) < 100)
 		{
@@ -9613,20 +9638,13 @@ int CvUnit::evasionProbability() const
 
 int CvUnit::withdrawalProbability() const
 {
-	if (getDomainType() == DOMAIN_LAND && plot()->isWater())
+	// Leoreth: ignored if amphibious
+	if (getDomainType() == DOMAIN_LAND && plot()->isWater() && !isAmphib())
 	{
 		return 0;
 	}
 
-	int iWithdrawalProbability = std::max(0, (m_pUnitInfo->getWithdrawalProbability() + getExtraWithdrawal()));
-
-	// Leoreth: recently born civilizations have additional retreat chance on their territory, or in expansion territory
-	if (plot()->getBirthProtected() == getOwnerINLINE() || plot()->isExpansionEffect(getOwnerINLINE()))
-	{
-		iWithdrawalProbability = std::min(100, iWithdrawalProbability + 50);
-	}
-
-	return iWithdrawalProbability;
+	return std::max(0, (m_pUnitInfo->getWithdrawalProbability() + getExtraWithdrawal()));
 }
 
 
@@ -9689,6 +9707,13 @@ int CvUnit::plainsAttackModifier() const
 int CvUnit::plainsDefenseModifier() const
 {
 	return m_pUnitInfo->getPlainsDefenseModifier() + getExtraPlainsDefensePercent();
+}
+
+
+// Leoreth
+int CvUnit::riverAttackModifier() const
+{
+	return getExtraRiverAttackPercent();
 }
 
 
@@ -11493,6 +11518,23 @@ void CvUnit::changeExtraPlainsDefensePercent(int iChange)
 	}
 }
 
+// Leoreth
+int CvUnit::getExtraRiverAttackPercent() const
+{
+	return m_iExtraRiverAttackPercent;
+}
+
+// Leoreth
+void CvUnit::changeExtraRiverAttackPercent(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iExtraRiverAttackPercent += iChange;
+
+		setInfoBarDirty(true);
+	}
+}
+
 int CvUnit::getRevoltProtection() const
 {
 	return m_iRevoltProtection;
@@ -12482,6 +12524,7 @@ void CvUnit::setHasPromotion(PromotionTypes eIndex, bool bNewValue)
 		changeExtraHillsDefensePercent(GC.getPromotionInfo(eIndex).getHillsDefensePercent() * iChange);
 		changeExtraPlainsAttackPercent(GC.getPromotionInfo(eIndex).getPlainsAttackPercent() * iChange); // Leoreth
 		changeExtraPlainsDefensePercent(GC.getPromotionInfo(eIndex).getPlainsDefensePercent() * iChange); // Leoreth
+		changeExtraRiverAttackPercent(GC.getPromotionInfo(eIndex).getRiverAttackPercent() * iChange); // Leoreth
 		changeRevoltProtection(GC.getPromotionInfo(eIndex).getRevoltProtection() * iChange);
 		changeCollateralDamageProtection(GC.getPromotionInfo(eIndex).getCollateralDamageProtection() * iChange);
 		changePillageChange(GC.getPromotionInfo(eIndex).getPillageChange() * iChange);
@@ -12638,6 +12681,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iExtraHillsDefensePercent);
 	pStream->Read(&m_iExtraPlainsAttackPercent); // Leoreth
 	pStream->Read(&m_iExtraPlainsDefensePercent); // Leoreth
+	pStream->Read(&m_iExtraRiverAttackPercent); // Leoreth
 	pStream->Read(&m_iRevoltProtection);
 	pStream->Read(&m_iCollateralDamageProtection);
 	pStream->Read(&m_iPillageChange);
@@ -12746,6 +12790,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(m_iExtraHillsDefensePercent);
 	pStream->Write(m_iExtraPlainsAttackPercent); // Leoreth
 	pStream->Write(m_iExtraPlainsDefensePercent); // Leoreth
+	pStream->Write(m_iExtraRiverAttackPercent); // Leoreth
 	pStream->Write(m_iRevoltProtection);
 	pStream->Write(m_iCollateralDamageProtection);
 	pStream->Write(m_iPillageChange);
@@ -14171,18 +14216,14 @@ int CvUnit::getSelectionSoundScript() const
 	return iScriptId;
 }
 
-int CvUnit::getOriginalArtStyle(int regionID)
+int CvUnit::getOriginalArtStyle(const CvPlot* pPlot) const
 {
-	int id = regionID;
-
-	switch (id)
+	switch (pPlot->getRegionID())
 	{
 	case REGION_ICELAND:
 		return GC.getCivilizationInfo(NORSE).getUnitArtStyleType();
-		break;
 	case REGION_ALASKA:
-		return GC.getCivilizationInfo(NORSE).getUnitArtStyleType();
-		break;
+		return GC.getCivilizationInfo(RUSSIA).getUnitArtStyleType();
 	case REGION_YUKON:
 	case REGION_NUNAVUT:
 	case REGION_GREENLAND:
@@ -14199,13 +14240,11 @@ int CvUnit::getOriginalArtStyle(int regionID)
 	case REGION_MARYLAND:
 	case REGION_COASTAL_PLAIN:
 		return GC.getCivilizationInfo(ENGLAND).getUnitArtStyleType();
-		break;
 	case REGION_QUEBEC:
 	case REGION_GREAT_LAKES:
 	case REGION_RIVER_VALLEY:
 	case REGION_DEEP_SOUTH:
 		return GC.getCivilizationInfo(FRANCE).getUnitArtStyleType();
-		break;
 	case REGION_FLORIDA:
 	case REGION_TEXAS:
 	case REGION_SOUTHWEST:
@@ -14221,7 +14260,6 @@ int CvUnit::getOriginalArtStyle(int regionID)
 	case REGION_VENEZUELA:
 	case REGION_GUYANA:
 		return GC.getCivilizationInfo(SPAIN).getUnitArtStyleType();
-		break;
 	case REGION_AMAZONAS:
 	case REGION_PARA:
 	case REGION_BAHIA:
@@ -14229,7 +14267,6 @@ int CvUnit::getOriginalArtStyle(int regionID)
 	case REGION_MATO_GROSSO:
 	case REGION_PARANA:
 		return GC.getCivilizationInfo(PORTUGAL).getUnitArtStyleType();
-		break;
 	case REGION_BAJIO:
 	case REGION_VERACRUZ:
 	case REGION_OAXACA:
@@ -14237,16 +14274,12 @@ int CvUnit::getOriginalArtStyle(int regionID)
 	case REGION_MESOAMERICA:
 	case REGION_CARIBBEAN:
 		return GC.getCivilizationInfo(AZTECS).getUnitArtStyleType();
-		break;
 	case REGION_PERU:
 	case REGION_BOLIVIA:
 	case REGION_CHILE:
 		return GC.getCivilizationInfo(INCA).getUnitArtStyleType();
-		break;
-	default:
-		return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
-		break;
 	}
+	return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
 }
 
 // edead: start Relic trade based on Afforess' Advanced Diplomacy (Leoreth)

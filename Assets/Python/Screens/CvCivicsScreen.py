@@ -364,7 +364,6 @@ class CvCivicsScreen:
 		player = gc.getPlayer(self.iActivePlayer)
 		iHoverCategory = gc.getCivicInfo(iHoverCivic).getCivicOptionType()
 
-		#for iCivic in range(iNumCivics):
 		iCategoryIndices = [0,0,0,0,0,0];
 		for iCivic in self.ValidCivics:
 			iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
@@ -474,15 +473,11 @@ class CvCivicsScreen:
 
 		return 0
 
+
+
 	def update(self, fDelta):
 		return
 
-# MacAurther TODO: Now that there 1 unique civic for each slot for each culture group, simplify this
+# FoB
 def isDefaultCivic(iCivic):
 	return iCivic % iNumCivicsPerCategory == 0
-	'''iIndex = 0
-	for iCategory in range(iNumCivicCategories):
-		if iCivic < iIndex + lCivicDefaultsInCateogry[iCategory] and iCivic >= iIndex:
-			return True
-		iIndex += lCivicCountInCategory[iCategory]
-	return False;'''

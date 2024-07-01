@@ -826,8 +826,8 @@ class ImmigrationUtils:
 		if(pPlayer.isHuman()):
 			return
 
-		# Return immediately if the player is a barbarian
-		if(pPlayer.isBarbarian()):
+		# Return immediately if the player is a barbarian, independent, or native
+		if(pPlayer.isBarbarian() or pPlayer.isIndependent() or pPlayer.isNative()):
 			return
 		
 		# Get the current immigration for the player	

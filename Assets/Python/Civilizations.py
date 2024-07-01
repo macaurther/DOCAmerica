@@ -1,4 +1,3 @@
-from RFCUtils import *
 from Core import *
 
 from Events import events, handler
@@ -150,7 +149,7 @@ class Civilization(object):
 			if iNewStateReligion == iCatholicism and not game.isReligionFounded(iCatholicism):
 				iNewStateReligion = iOrthodoxy
 			
-			if game.isReligionFounded(iNewStateReligion):
+			if game.isReligionFounded(iNewStateReligion) or self.canFoundReligion(iNewStateReligion):
 				self.player.setLastStateReligion(iNewStateReligion)
 				events.fireEvent("playerChangeStateReligion", self.player.getID(), iNewStateReligion, iOldStateReligion)
 		
@@ -175,6 +174,9 @@ class Civilization(object):
 		
 		for iCiv, iAttitude in self.dAttitudes.items():
 			self.player.AI_changeAttitudeExtra(slot(iCiv), iAttitude)
+	
+	def canFoundReligion(self, iReligion):
+		return infos.religion(iReligion).getTechPrereq() in self.techs
 	
 	def advancedStart(self):
 		if self.iAdvancedStartPoints is not None:

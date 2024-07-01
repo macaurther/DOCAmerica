@@ -28,32 +28,32 @@ import Popup
 import CityNameManager as cnm
 import WBStoredDataScreen
 
-from CvPlatyBuilderSettings import *
-
-from Consts import *
-from RFCUtils import *
 import MapEditorTools as met
-import SettlerMaps
-import WarMaps
-import RegionMap
 import DynamicCivs as dc
 import GreatPeople as gp
 
+import SettlerMaps
+import WarMaps
+import RegionMap
+
+from CvPlatyBuilderSettings import *
+
 from Core import *
+from RFCUtils import *
 
 localText = CyTranslator()
 
 gc = CyGlobalContext()
 
-iNumModes = 45
+iNumModes = 46
 (iModeOwnership, iModeUnits, iModeBuildings, iModeCity, iModeStartingPlot, iModeAddLandMark, iModePlotData, iModeRiver, iModeImprovements, iModeBonus,
-iModePlotType, iModeTerrain, iModeRoutes, iModeFeatures, iModeFlip, iModeCore, iModeSettlerValue, iModeWarMap, iModeReligionMap, iModeRegionMap,
-iModeVictoryMap, iModeRevealPlot, iModeInvisibleSubmarine, iModeInvisibleStealth, iModeBlockade, iModeInvisibleSatellite, iModeAreaExporter1, iModeAreaExporter2, iModeAreaExporter3, iModeMoveMap,
-iModeMoveMap2, iModeEditUnit, iModeEditCity, iModeEraseAll, iModeCityDataI, iModePromotions, iModeCityDataII, iModeCityBuildings, iModeMoveCity, iModeMoveCityPlus,
-iModeDuplicateCity, iModeDuplicateCityPlus, iModeTargetPlot, iModeMoveUnits, iModeEvents) = range(iNumModes)
+iModeBonusVariety, iModePlotType, iModeTerrain, iModeRoutes, iModeFeatures, iModeFlip, iModeCore, iModeSettlerValue, iModeWarMap, iModeReligionMap, 
+iModeRegionMap, iModeVictoryMap, iModeRevealPlot, iModeInvisibleSubmarine, iModeInvisibleStealth, iModeBlockade, iModeInvisibleSatellite, iModeAreaExporter1, iModeAreaExporter2, iModeAreaExporter3, 
+iModeMoveMap, iModeMoveMap2, iModeEditUnit, iModeEditCity, iModeEraseAll, iModeCityDataI, iModePromotions, iModeCityDataII, iModeCityBuildings, iModeMoveCity, 
+iModeMoveCityPlus, iModeDuplicateCity, iModeDuplicateCityPlus, iModeTargetPlot, iModeMoveUnits, iModeEvents) = range(iNumModes)
 
 lPlayerModes = [iModeOwnership, iModeUnits, iModeBuildings, iModeCity, iModeStartingPlot]
-lMapModes = [iModeAddLandMark, iModePlotData, iModeRiver, iModeImprovements, iModeBonus, iModePlotType, iModeTerrain, iModeRoutes, iModeFeatures]
+lMapModes = [iModeAddLandMark, iModePlotData, iModeRiver, iModeImprovements, iModeBonus, iModePlotType, iModeTerrain, iModeRoutes, iModeFeatures, iModeBonusVariety]
 lDoCMapModes = [iModeFlip, iModeCore, iModeSettlerValue, iModeWarMap, iModeReligionMap, iModeRegionMap, iModeVictoryMap]
 lRevealModes = [iModeRevealPlot, iModeInvisibleSubmarine, iModeInvisibleStealth, iModeBlockade, iModeInvisibleSatellite]
 lAreaExportModes = [iModeAreaExporter1, iModeAreaExporter2, iModeAreaExporter3]
@@ -492,7 +492,7 @@ class CvWorldBuilderScreen:
 		elif self.iPlayerAddMode == iModeUnits:
 			for i in xrange(abs(iChange)):
 				unit = gc.getPlayer(iPlayer).initUnit(self.iSelection, x, y, UnitAITypes.NO_UNITAI, DirectionTypes.NO_DIRECTION)
-				if self.iSelection in lGreatPeopleUnits or self.iSelection in [iGreatGeneral, iGreatSpy]:
+				if self.iSelection in lGreatPeopleUnits:
 					gp.assignGreatPersonName(unit, iPlayer, -1, False)
 					
 		elif self.iPlayerAddMode == iModeBuildings:
@@ -521,6 +521,9 @@ class CvWorldBuilderScreen:
 			
 		elif self.iPlayerAddMode == iModeBonus:
 			pPlot.setBonusType(self.iSelection)
+		
+		elif self.iPlayerAddMode == iModeBonusVariety:
+			pPlot.setBonusVarietyType(self.iSelection)
 			
 		elif self.iPlayerAddMode == iModeRoutes:
 			pPlot.setRouteType(self.iSelection)
@@ -702,6 +705,9 @@ class CvWorldBuilderScreen:
 		elif self.iPlayerAddMode == iModeBonus:
 			pPlot.setBonusType(-1)
 			return 1
+		
+		elif self.iPlayerAddMode == iModeBonusVariety:
+			pPlot.setBonusVarietyType(-1)
 			
 		elif self.iPlayerAddMode == iModeFeatures:
 			pPlot.setFeatureType(FeatureTypes.NO_FEATURE, -1)
@@ -718,7 +724,7 @@ class CvWorldBuilderScreen:
 				pPlot.setWOfRiver(False, CardinalDirectionTypes.NO_CARDINALDIRECTION)
 				
 		elif self.iPlayerAddMode == iModeAddLandMark:
-			CyEngine().removeSign(pPlot, iPlayer)
+			CyEngine().removeSign(pPlot, -1)
 			
 		elif self.iPlayerAddMode == iModeFlip:
 			if not is_minor(iPlayer):
@@ -1023,6 +1029,8 @@ class CvWorldBuilderScreen:
 			return True
 		if self.iPlayerAddMode == iModeBonus:
 			return True
+		if self.iPlayerAddMode == iModeBonusVariety:
+			return True
 		if self.iPlayerAddMode == iModePlotType:
 			return True
 		if self.iPlayerAddMode == iModeTerrain:
@@ -1206,6 +1214,7 @@ class CvWorldBuilderScreen:
 			screen.deleteWidget("EditPlotData")
 			screen.deleteWidget("AddImprovementButton")
 			screen.deleteWidget("AddBonusButton")
+			screen.deleteWidget("AddBonusVarietyButton")
 			screen.deleteWidget("AddPlotTypeButton")
 			screen.deleteWidget("AddTerrainButton")
 			screen.deleteWidget("AddRouteButton")
@@ -1243,8 +1252,10 @@ class CvWorldBuilderScreen:
 
 ## Panel Screen ##
 			nRows = 1
-			if self.iPlayerAddMode in lPlayerModes + lRevealModes + lMapModes:
+			if self.iPlayerAddMode in lPlayerModes + lRevealModes:
 				nRows = 3
+			elif self.iPlayerAddMode in lMapModes:
+				nRows = 4
 			elif self.iPlayerAddMode in [iModeVictoryMap] + lAreaExportModes:
 				nRows = 3
 			elif self.iPlayerAddMode in lDoCMapModes:
@@ -1345,6 +1356,11 @@ class CvWorldBuilderScreen:
 				iX += iAdjust
 				screen.addCheckBoxGFC("AddFeatureButton", ",-,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,3,3", CyArtFileMgr().getInterfaceArtInfo("BUTTON_HILITE_SQUARE").getPath(),
 					 iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_PYTHON, 1029, 17, ButtonStyles.BUTTON_STYLE_LABEL)
+
+				iX = iXStart + 8
+				iY += iAdjust
+				screen.addCheckBoxGFC("AddBonusVarietyButton", ",-,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,1", CyArtFileMgr().getInterfaceArtInfo("BUTTON_HILITE_SQUARE").getPath(),
+					 iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_PYTHON, 1029, 54, ButtonStyles.BUTTON_STYLE_LABEL)
 
 				iX = iXStart + 8
 				iY += iAdjust
@@ -1613,6 +1629,7 @@ class CvWorldBuilderScreen:
 		screen.setState("AddRiverButton", self.iPlayerAddMode == iModeRiver)
 		screen.setState("AddImprovementButton", self.iPlayerAddMode == iModeImprovements)
 		screen.setState("AddBonusButton", self.iPlayerAddMode == iModeBonus)
+		screen.setState("AddBonusVarietyButton", self.iPlayerAddMode == iModeBonusVariety)
 		screen.setState("AddPlotTypeButton", self.iPlayerAddMode == iModePlotType)
 		screen.setState("AddTerrainButton", self.iPlayerAddMode == iModeTerrain)
 		screen.setState("AddRouteButton", self.iPlayerAddMode == iModeRoutes)
@@ -1772,6 +1789,25 @@ class CvWorldBuilderScreen:
 					self.iSelection = item[1]
 				screen.setTableText("WBSelectItem", 0, iRow, "<font=3>" + item[0] + "</font>", gc.getBonusInfo(item[1]).getButton(), WidgetTypes.WIDGET_PYTHON, 7878, item[1], CvUtil.FONT_LEFT_JUSTIFY)
 
+		elif self.iPlayerAddMode == iModeBonusVariety:
+			iY = 25
+			lItems = []
+			for i in xrange(gc.getNumBonusInfos()):
+				ItemInfo = gc.getBonusInfo(i)
+				if not ItemInfo.isGraphicalOnly(): continue
+				lItems.append([ItemInfo.getDescription(), i])
+			lItems.sort()
+			
+			iY += 30
+			iHeight = min(len(lItems) * 24 + 2, screen.getYResolution() - iY)
+			screen.addTableControlGFC("WBSelectItem", 1, 0, iY, iWidth, iHeight, False, False, 24, 24, TableStyles.TABLE_STYLE_EMPTY)
+			screen.setTableColumnHeader("WBSelectItem", 0, "", iWidth)
+			for item in lItems:
+				iRow = screen.appendTableRow("WBSelectItem")
+				if self.iSelection == -1:
+					self.iSelection = item[1]
+				screen.setTableText("WBSelectItem", 0, iRow, "<font=3>" + item[0] + "</font>", gc.getBonusInfo(item[1]).getButton(), WidgetTypes.WIDGET_PYTHON, 7878, item[1], CvUtil.FONT_LEFT_JUSTIFY)
+
 		elif self.iPlayerAddMode == iModeRoutes:
 			iY = 25
 			lItems = [[gc.getRouteInfo(i).getDescription(), i] for i in xrange(gc.getNumRouteInfos())]
@@ -1837,12 +1873,13 @@ class CvWorldBuilderScreen:
 		elif self.iPlayerAddMode == iModeFeatures:
 			ItemInfo = gc.getFeatureInfo(self.iSelection)
 			sText = "<font=3>" + CyTranslator().getText("[COLOR_HIGHLIGHT_TEXT]", ()) + ItemInfo.getDescription() + "</color></font>"
-			screen.setTableText("WBCurrentItem", 0, 0 , sText, ItemInfo.getButton(), WidgetTypes.WIDGET_PYTHON, 7874, self.iSelection, CvUtil.FONT_LEFT_JUSTIFY)
 			if ItemInfo.getNumVarieties() > 1:
+				screen.setTableText("WBCurrentItem", 0, 0, sText, ItemInfo.getVarietyButton(self.iSelectClass), WidgetTypes.WIDGET_PYTHON, 7874, self.iSelection, CvUtil.FONT_LEFT_JUSTIFY)
 				screen.addDropDownBoxGFC("WBSelectClass", 0, 25, iWidth, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.GAME_FONT)
 				for i in xrange(ItemInfo.getNumVarieties()):
 					screen.addPullDownString("WBSelectClass", CyTranslator().getText("TXT_KEY_WB_FEATURE_VARIETY", (i,)), i, i, i == self.iSelectClass)
 			else:
+				screen.setTableText("WBCurrentItem", 0, 0, sText, ItemInfo.getButton(), WidgetTypes.WIDGET_PYTHON, 7874, self.iSelection, CvUtil.FONT_LEFT_JUSTIFY)
 				self.iSelectClass = 0
 				screen.hide("WBSelectClass")
 		elif self.iPlayerAddMode == iModeImprovements:
@@ -1850,6 +1887,10 @@ class CvWorldBuilderScreen:
 			sText = "<font=3>" + CyTranslator().getText("[COLOR_HIGHLIGHT_TEXT]", ()) + ItemInfo.getDescription() + "</color></font>"
 			screen.setTableText("WBCurrentItem", 0, 0 , sText, ItemInfo.getButton(), WidgetTypes.WIDGET_PYTHON, 7877, self.iSelection, CvUtil.FONT_LEFT_JUSTIFY)
 		elif self.iPlayerAddMode == iModeBonus:
+			ItemInfo = gc.getBonusInfo(self.iSelection)
+			sText = "<font=3>" + CyTranslator().getText("[COLOR_HIGHLIGHT_TEXT]", ()) + ItemInfo.getDescription() + "</color></font>"
+			screen.setTableText("WBCurrentItem", 0, 0 , sText, ItemInfo.getButton(), WidgetTypes.WIDGET_PYTHON, 7878, self.iSelection, CvUtil.FONT_LEFT_JUSTIFY)
+		elif self.iPlayerAddMode == iModeBonusVariety:
 			ItemInfo = gc.getBonusInfo(self.iSelection)
 			sText = "<font=3>" + CyTranslator().getText("[COLOR_HIGHLIGHT_TEXT]", ()) + ItemInfo.getDescription() + "</color></font>"
 			screen.setTableText("WBCurrentItem", 0, 0 , sText, ItemInfo.getButton(), WidgetTypes.WIDGET_PYTHON, 7878, self.iSelection, CvUtil.FONT_LEFT_JUSTIFY)
@@ -2602,6 +2643,11 @@ class CvWorldBuilderScreen:
 			self.iSelection = -1
 			self.refreshSideMenu()
 
+		elif inputClass.getFunctionName() == "AddBonusVarietyButton":
+			self.iPlayerAddMode = iModeBonusVariety
+			self.iSelection = -1
+			self.refreshSideMenu()
+
 		elif inputClass.getFunctionName() == "AddPlotTypeButton":
 			self.iPlayerAddMode = iModePlotType
 			self.iSelection = -1
@@ -2759,9 +2805,12 @@ class CvWorldBuilderScreen:
 			if self.iPlayerAddMode != iModeFeatures:
 				self.iSelection = -1
 				self.refreshSideMenu()
+			else:
+				self.refreshSelection()
 
 		elif inputClass.getFunctionName() == "WBSelectItem":
 			self.iSelection = inputClass.getData2()
+			self.iSelectClass = 0
 			self.refreshSelection()
 
 		elif inputClass.getFunctionName() == "RevealMode":

@@ -51,6 +51,12 @@ class NamedList(NamedArgument):
 		NamedArgument.__init__(self)
 		self.items = list(items)
 	
+	def __eq__(self, other):
+		if not isinstance(other, self.__class__):
+			return False
+		
+		return self.items == other.items
+	
 	def __iter__(self):
 		return iter(self.items)
 	
@@ -67,6 +73,7 @@ class Aggregate(NamedArgument):
 	def __init__(self, *items):
 		NamedArgument.__init__(self)
 		self.items = list(variadic(*items))
+		self.separator = "TXT_KEY_AND"
 	
 	def __repr__(self):
 		return "%s(%s)" % (type(self).__name__, ", ".join(str(item) for item in self.items))
@@ -80,6 +87,9 @@ class Aggregate(NamedArgument):
 		
 		return other in self
 	
+	def create(self):
+		return self.of(*[item.create() for item in self.items]).named(self.name_key, *self.name_args).separated(self.separator)
+	
 	def validate(self, validate_func):
 		return all(validate_func(item) for item in self.items)
 	
@@ -87,13 +97,17 @@ class Aggregate(NamedArgument):
 		if self.name_key:
 			return self.name()
 	
-		return format_separators(self.items, ",", text("TXT_KEY_AND"), lambda item: format_func(item, **options))
+		return format_separators(self.items, ",", text(self.separator), lambda item: format_func(item, **options))
 	
 	def evaluate(self, evaluate_func, left_arguments=None, right_arguments=None):
 		return self.aggregate([evaluate_func(*concat(left_arguments, item, right_arguments)) for item in self.items])
 	
 	def aggregate(self, items):
 		raise NotImplementedError()
+	
+	def separated(self, separator):
+		self.separator = separator
+		return self
 
 
 class SumAggregate(Aggregate):
@@ -186,8 +200,16 @@ class AreaArgument(NamedArgument):
 	def regions(self, *args, **kwargs):
 		return self.call("regions", args, kwargs)
 
-	def region(self, *args, **kwargs):
-		return self.call("region", args, kwargs)
+	def region(self, iRegion):
+		self.call("region", (iRegion,), {})
+		self.named(text("TXT_KEY_REGION_%d" % iRegion))
+		return self
+	
+	def adjacent_regions(self, *args, **kwargs):
+		return self.call("adjacent_regions", args, kwargs)
+
+	def adjacent_region(self, *args, **kwargs):
+		return self.call("adjacent_region", args, kwargs)
 	
 	def capital(self, *args, **kwargs):
 		return self.call("capital", args, kwargs)
@@ -212,6 +234,15 @@ class AreaArgument(NamedArgument):
 	
 	def surrounding(self, *args, **kwargs):
 		return self.call("surrounding", args, kwargs)
+	
+	def water(self, *args, **kwargs):
+		return self.call("water", args, kwargs)
+	
+	def sea(self, *args, **kwargs):
+		return self.call("sea", args, kwargs)
+	
+	def expand(self, *args, **kwargs):
+		return self.call("expand", args, kwargs)
 	
 	def core(self, iCiv):
 		return self.call_for_civ("core", iCiv)
@@ -290,6 +321,39 @@ class LocationCityArgument(CityArgument):
 	
 	def area(self):
 		return plots.of([self.tile])
+
+
+# TODO: test
+class AreaCityArgument(CityArgument):
+
+	def __init__(self, plots):
+		CityArgument.__init__(self)
+	
+		self.plots = plots
+	
+	def __repr__(self):
+		return "AreaCityArgument%s" % (self.plots,)
+	
+	def __eq__(self, other):
+		if not isinstance(other, AreaCityArgument):
+			return CityArgument.__eq__(self, other)
+		
+		return self.plots == other.plots
+	
+	def __hash__(self):
+		return hash(self.plots)
+	
+	def get(self, iPlayer):
+		if not self.plots.cities():
+			return NON_EXISTING
+		
+		if not self.plots.cities().owner(iPlayer):
+			return self.plots.cities().first()
+		
+		return self.plots.cities().owner(iPlayer).first()
+	
+	def area(self):
+		return self.plots
 
 
 class CapitalCityArgument(CityArgument):
@@ -428,6 +492,12 @@ class CivsArgument(NamedArgument):
 			return format_separators(self, ",", text("TXT_KEY_AND"), lambda iCiv: infos.civ(iCiv).getShortDescription(0))
 		
 		return NamedArgument.name(self)
+	
+	def adjective(self):
+		if not self.name_key:
+			return format_separators(self, ",", text("TXT_KEY_AND"), lambda iCiv: infos.civ(iCiv).getAdjective(0))
+		
+		return NamedArgument.name(self)
 		
 
 ### Wrapper Functions ###
@@ -444,6 +514,9 @@ def group(iGroup):
 
 def start(identifier):
 	return LocationCityArgument(dCapitals[identifier])
+
+def area_city(tRectangle):
+	return AreaCityArgument(AreaArgumentFactory().rectangle(tRectangle))
 
 def resources():
 	return SumAggregate(iResource for iResource in infos.bonuses()).named("TXT_KEY_VICTORY_NAME_RESOURCES")
@@ -465,3 +538,6 @@ def great_people():
 
 def state_religion_building(func):
 	return StateReligionBuildingArgument(func)
+
+def improvement_resources(*improvements):
+	return SumAggregate(infos.bonuses().where(lambda iBonus: any(infos.improvement(iImprovement).isImprovementBonusTrade(iBonus) for iImprovement in improvements))).named(format_separators(improvements, ",", text("TXT_KEY_AND"), lambda iImprovement: infos.improvement(iImprovement).getText()))

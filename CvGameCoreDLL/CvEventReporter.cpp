@@ -548,6 +548,24 @@ void CvEventReporter::playerDestroyed(PlayerTypes ePlayer)
 	m_kPythonEventMgr.reportPlayerDestroyed(ePlayer);
 }
 
+// Leoreth: player switched
+void CvEventReporter::playerSwitch(PlayerTypes eOldPlayer, PlayerTypes eNewPlayer)
+{
+	m_kPythonEventMgr.reportPlayerSwitch(eOldPlayer, eNewPlayer);
+}
+
+// Leoreth: tech traded
+void CvEventReporter::techTraded(PlayerTypes eFrom, PlayerTypes eTo, TechTypes eTech)
+{
+	m_kPythonEventMgr.reportTechTraded(eFrom, eTo, eTech);
+}
+
+// Leoreth: tribute given
+void CvEventReporter::tribute(PlayerTypes eFrom, PlayerTypes eTo)
+{
+	m_kPythonEventMgr.reportTribute(eFrom, eTo);
+}
+
 void CvEventReporter::preSave()
 {
 	m_kPythonEventMgr.preSave();

@@ -149,9 +149,9 @@ def unitBuiltFeats(pCity, pUnit):
 	if (not gc.getPlayer(pCity.getOwner()).isFeatAccomplished(FeatTypes.FEAT_UNITCOMBAT_ARMOR)):
 
 		if (pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_ARMOR")):
-
+		
 			gc.getPlayer(pCity.getOwner()).setFeatAccomplished(FeatTypes.FEAT_UNITCOMBAT_ARMOR, True)
-
+			
 			if (featPopup(pCity.getOwner()) and (gc.getGame().getStartYear() == gc.getDefineINT("START_YEAR"))):
 				popupInfo = CyPopupInfo()
 				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
@@ -163,13 +163,13 @@ def unitBuiltFeats(pCity, pUnit):
 				popupInfo.addPythonButton(localText.getText("TXT_KEY_FEAT_ACCOMPLISHED_OK", ()), "")
 				popupInfo.addPythonButton(localText.getText("TXT_KEY_FEAT_ACCOMPLISHED_MORE", ()), "")
 				popupInfo.addPopup(pCity.getOwner())
-
+	
 	if (not gc.getPlayer(pCity.getOwner()).isFeatAccomplished(FeatTypes.FEAT_UNITCOMBAT_HELICOPTER)):
 
 		if (pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_HELICOPTER")):
-
+		
 			gc.getPlayer(pCity.getOwner()).setFeatAccomplished(FeatTypes.FEAT_UNITCOMBAT_HELICOPTER, True)
-
+			
 			if (featPopup(pCity.getOwner()) and (gc.getGame().getStartYear() == gc.getDefineINT("START_YEAR"))):
 				popupInfo = CyPopupInfo()
 				popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON)
@@ -181,7 +181,7 @@ def unitBuiltFeats(pCity, pUnit):
 				popupInfo.addPythonButton(localText.getText("TXT_KEY_FEAT_ACCOMPLISHED_OK", ()), "")
 				popupInfo.addPythonButton(localText.getText("TXT_KEY_FEAT_ACCOMPLISHED_MORE", ()), "")
 				popupInfo.addPopup(pCity.getOwner())
-    
+	
 	if (not gc.getPlayer(pCity.getOwner()).isFeatAccomplished(FeatTypes.FEAT_UNITCOMBAT_NAVAL)):
 
 		if (pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_NAVAL")):

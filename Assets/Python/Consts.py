@@ -518,6 +518,10 @@ iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,	
 iGems, 			iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			iSilver, 		
 iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
+iNumBonusVarieties = 2
+#				2				3				4				5				6				7				8				9				10
+(iDyeCochineal, iCitrusOranges) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
+
 # Buildings
 iNumBuildings = 224
 # Buildings (119)

@@ -153,7 +153,10 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_POTATO</Tag>
 		<English>Potatoes</English>
-		<German>Kartoffeln</German>
+		<French>Potatoes</French>
+		<German>Potatoes</German>
+		<Italian>Potatoes</Italian>
+		<Spanish>Potatoes</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TEA</Tag>
@@ -234,14 +237,6 @@
 		<German>Zitrusfr&#252;chte</German>
 		<Italian>Citrus</Italian>
 		<Spanish>Citrus</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BONUS_CITRUS_ORANGES</Tag>
-		<English>Citrus (Oranges)</English>
-		<French>Citrus (Oranges)</French>
-		<German>Zitrusfr&#252;chte (Orangen)</German>
-		<Italian>Citrus (Oranges)</Italian>
-		<Spanish>Citrus (Oranges)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CRUSTACEANS</Tag>

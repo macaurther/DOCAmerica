@@ -99,7 +99,7 @@ bool CyPlot::isAdjacentToLand()
 
 bool CyPlot::isCoastalLand()
 {
-	return m_pPlot ? m_pPlot->isCoastalLand() : false;
+	return m_pPlot ? m_pPlot->isCoastalLand(GC.getMIN_WATER_SIZE_FOR_OCEAN()) : false;
 }
 
 bool CyPlot::isWithinTeamCityRadius(int /*TeamTypes*/ eTeam, int /*PlayerTypes*/ eIgnorePlayer)
@@ -638,6 +638,7 @@ void CyPlot::setOwnerNoUnitCheck(int /*PlayerTypes*/ eNewValue)
 	if (m_pPlot)
 		m_pPlot->setOwner((PlayerTypes) eNewValue, false, true);
 }
+
 PlotTypes CyPlot::getPlotType()
 {
 	return m_pPlot ? m_pPlot->getPlotType() : NO_PLOT;
@@ -777,10 +778,20 @@ int /* BonusTypes */ CyPlot::getNonObsoleteBonusType(int /*TeamTypes*/ eTeam)
 	return m_pPlot ? m_pPlot->getNonObsoleteBonusType((TeamTypes)eTeam) : -1;
 }
 
+int /* BonusTypes */ CyPlot::getBonusVarietyType(int /*TeamTypes*/ eTeam)
+{
+	return m_pPlot ? m_pPlot->getBonusVarietyType((TeamTypes)eTeam) : -1;
+}
+
 void CyPlot::setBonusType(int /* BonusTypes */ eNewValue)
 {
 	if (m_pPlot)
 		m_pPlot->setBonusType((BonusTypes)eNewValue);
+}
+
+void CyPlot::setBonusVarietyType(int /* BonusTypes */ eNewValue)
+{
+	if (m_pPlot) m_pPlot->setBonusVarietyType((BonusTypes)eNewValue);
 }
 
 int /* ImprovementTypes */ CyPlot::getImprovementType()
@@ -1068,6 +1079,16 @@ void CyPlot::setRegionID(int iNewValue)
 		m_pPlot->setRegionID(iNewValue);
 }
 
+std::wstring CyPlot::getRegionName()
+{
+	return m_pPlot ? m_pPlot->getRegionName() : L"";
+}
+
+int CyPlot::getRegionGroup()
+{
+	return m_pPlot ? m_pPlot->getRegionGroup() : -1;
+}
+
 bool CyPlot::isCore(int iCivilization)
 {
 	return m_pPlot ? m_pPlot->isCore((CivilizationTypes)iCivilization) : false;
@@ -1223,6 +1244,11 @@ bool CyPlot::isExpansion()
 void CyPlot::setRevealedOwner(int eTeam, int eNewValue)
 {
 	if (m_pPlot) m_pPlot->setRevealedOwner((TeamTypes)eTeam, (PlayerTypes)eNewValue);
+}
+
+int CyPlot::getContinentArea()
+{
+	return m_pPlot ? m_pPlot->getContinentArea() : -1;
 }
 
 void CyPlot::updateRevealedOwner(int eTeam)

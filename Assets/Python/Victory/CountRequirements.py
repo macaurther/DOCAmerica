@@ -4,6 +4,12 @@ from BaseRequirements import *
 from Civics import isCommunist
 from Arguments import base_building
 
+
+# Second Ethiopian UHV goal
+# Third Holy Roman UHV goal
+# Third Russian UHV goal
+# Third Jewish URV goal
+# First Confucian URV goal
 class AttitudeCount(ThresholdRequirement):
 
 	TYPES = (ATTITUDE, COUNT)
@@ -11,11 +17,12 @@ class AttitudeCount(ThresholdRequirement):
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_ATTITUDE_COUNT"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_ATTITUDE_COUNT"
 	
-	def __init__(self, iAttitude, iRequired, civs=None, iReligion=None, bIndependent=False, bCommunist=False, **options):
-		ThresholdRequirement.__init__(self, as_int(iAttitude), iRequired, **options)
+	def __init__(self, iAttitude, iRequired, civs=None, iReligion=None, iStateReligion=None, bIndependent=False, bCommunist=False, **options):
+		ThresholdRequirement.__init__(self, as_int(iAttitude), iRequired, civs=civs, iReligion=iReligion, iStateReligion=iStateReligion, bIndependent=bIndependent, bCommunist=bCommunist, **options)
 		
 		self.civs = civs
 		self.iReligion = iReligion
+		self.iStateReligion = iStateReligion
 		self.bIndependent = bIndependent
 		self.bCommunist = bCommunist
 		
@@ -35,6 +42,15 @@ class AttitudeCount(ThresholdRequirement):
 		if self.iReligion is not None and not cities.owner(iOtherPlayer).religion(self.iReligion):
 			return False
 		
+		if self.iStateReligion is not None:
+			if isinstance(self.iStateReligion, Aggregate):
+				lStateReligions = self.iStateReligion.items
+			else:
+				lStateReligions = [self.iStateReligion]
+			
+			if player(iOtherPlayer).getStateReligion() not in lStateReligions:
+				return False
+		
 		return player(iOtherPlayer).AI_getAttitude(iPlayer) >= iAttitude
 	
 	def value(self, iPlayer, iAttitude):
@@ -44,11 +60,14 @@ class AttitudeCount(ThresholdRequirement):
 		civilizations = text("TXT_KEY_VICTORY_CIVILIZATIONS")
 		civilizations = qualify(civilizations, "TXT_KEY_VICTORY_COMMUNIST", self.bCommunist)
 		civilizations = qualify(civilizations, "TXT_KEY_VICTORY_INDEPENDENT", self.bIndependent)
+		civilizations = qualify_adjective(civilizations, RELIGION_ADJECTIVE, self.iStateReligion)
 		civilizations = in_area(civilizations, self.civs)
 		civilizations = with_religion_in_cities(civilizations, self.iReligion)
 		
 		return [civilizations]
 
+
+# Second Khmer UHV goal
 class AveragePopulation(ThresholdRequirement):
 
 	TYPES = (COUNT,)
@@ -63,6 +82,30 @@ class AveragePopulation(ThresholdRequirement):
 		
 		return player(iPlayer).getTotalPopulation() / iNumCities
 
+
+# Second Harappan UHV goal
+# First Chinese UHV goal
+# First Indian UHV goal
+# Second Indian UHV goal
+# Second Persian UHV goal
+# Third Persian UHV goal
+# First Roman UHV goal
+# Second Ethiopian UHV goal
+# First Korean UHV goal
+# First Khmer UHV goal
+# First Holy Roman UHV goal
+# Third Polish UHV goal
+# First Inca UHV goal
+# Second Aztec UHV goal
+# First Mughal UHV goal
+# First Mexican UHV goal
+# First Orthodox URV goal
+# Second Catholic URV goal
+# Third Islamic URV goal
+# First Secular URV goal
+# Second Secular URV goal
+# First Pagan URV goal
+# Third Olympian URV goal
 class BuildingCount(ThresholdRequirement):
 
 	TYPES = (BUILDING, COUNT)
@@ -77,13 +120,13 @@ class BuildingCount(ThresholdRequirement):
 	def __init__(self, iBuilding, *args, **options):
 		ThresholdRequirement.__init__(self, iBuilding, *args, **options)
 		
-		self.iBuilding = base_building(iBuilding)
+		self.iBuilding = iBuilding
 		
 		self.handle("cityAcquired", self.check)
 		self.handle("buildingBuilt", self.check_building_built)
 	
 	def check_building_built(self, goal, city, iBuilding):
-		if base_building(iBuilding) == self.iBuilding:
+		if base_building(iBuilding) == base_building(self.iBuilding):
 			goal.check()
 	
 	def value(self, iPlayer, iBuilding):
@@ -105,6 +148,10 @@ class BuildingCount(ThresholdRequirement):
 		return "%s %s: %s" % (self.indicator(evaluator), text(self.PROGR_KEY, capitalize(BUILDING.format(self.iBuilding, bPlural=True))), self.progress_value(evaluator))
 
 
+# First Phoenician UHV goal
+# First Ottoman UHV goal
+# Third Brazilian UHV goal
+# Second Confucian URV goal
 class CityBuildingCount(ThresholdRequirement):
 
 	GLOBAL_TYPES = (CITY,)
@@ -136,6 +183,7 @@ class CityBuildingCount(ThresholdRequirement):
 	
 	def expire_building_built(self, goal, city, iBuilding):
 		if not isinstance(self.iBuilding, Aggregate) and self.iBuilding == iBuilding and isWonder(iBuilding):
+			goal.announce_failure_cause(city.getOwner(), "TXT_KEY_VICTORY_ANNOUNCE_FIRST_BUILDING", BUILDING.format(iBuilding))
 			goal.expire()
 	
 	def value(self, iPlayer, city, iBuilding):
@@ -174,6 +222,12 @@ class CityBuilding(CityBuildingCount):
 	def __init__(self, city, iBuilding, **options):
 		CityBuildingCount.__init__(self, city, iBuilding, 1, **options)
 
+
+# Second Roman UHV goal
+# Third Byzantine UHV goal
+# First Moorish UHV goal
+# First English UHV goal
+# Third Portuguese UHV goal
 class CityCount(ThresholdRequirement):
 
 	TYPES = (AREA, COUNT)
@@ -213,7 +267,7 @@ class ControlledResourceCount(ThresholdRequirement):
 	}
 	
 	def value(self, iPlayer, iResource):
-		return player(iPlayer).getNumAvailableBonuses(iResource) - player(iPlayer).getBonusImport(iResource)
+		return player(iPlayer).getNumAvailableBonuses(iResource) - player(iPlayer).getBonusImport(iResource) + player(iPlayer).getBonusExport(iResource)
 
 
 # Second Turkic UHV goal
@@ -323,6 +377,48 @@ class FeatureCount(ThresholdRequirement):
 		return plots.owner(iPlayer).where(lambda plot: plot.getFeatureType() == iFeature).count()
 
 
+class FreeSpecialistCity(ThresholdRequirement):
+
+	TYPES = (COUNT,)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_FREE_SPECIALIST_CITY"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_FREE_SPECIALIST_CITY"
+	
+	def __init__(self, iRequired, **options):
+		ThresholdRequirement.__init__(self, iRequired, **options)
+	
+	def value(self, iPlayer):
+		city = self.best_city(iPlayer)
+		if not city:
+			return 0
+		return self.value_func(city)
+	
+	def value_func(self, city):
+		return city.totalFreeSpecialists()
+	
+	def best_city(self, iPlayer):
+		return cities.owner(iPlayer).maximum(self.value_func)
+	
+	def progress(self, evaluator):
+		best_city = self.best_city(evaluator.iPlayer)
+		
+		if not best_city:
+			return "%s %s" % (indicator(False), text("TXT_KEY_VICTORY_PROGRESS_NO_CITIES"))
+		
+		return "%s %s: %d / %d" % (self.indicator(evaluator), text(self.PROGR_KEY, best_city.getName()), self.value_func(best_city), self.iRequired)
+
+
+class HappyCityPopulation(ThresholdRequirement):
+
+	TYPES = (COUNT,)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_HAPPY_CITY_POPULATION"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_HAPPY_CITY_POPULATION"
+	
+	def value(self, iPlayer):
+		return cities.owner(iPlayer).where(lambda city: city.angryPopulation(0) <= 0).sum(CyCity.getPopulation)
+
+
 # First Brazilian UHV goal
 # Third Brazilian UHV goal
 class ImprovementCount(ThresholdRequirement):
@@ -336,6 +432,12 @@ class ImprovementCount(ThresholdRequirement):
 		ThresholdRequirement.__init__(self, iImprovement, *parameters, **options)
 		
 		self.iImprovement = iImprovement
+		
+		self.handle("improvementBuilt", self.check_improvement_built)
+	
+	def check_improvement_built(self, goal, iImprovement):
+		if self.iImprovement == iImprovement:
+			goal.check()
 	
 	def value(self, iPlayer, iImprovement):
 		return player(iPlayer).getImprovementCount(iImprovement)
@@ -362,7 +464,7 @@ class OpenBorderCount(ThresholdRequirement):
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_OPEN_BORDER_COUNT"
 	
 	def __init__(self, iRequired, civs=None, **options):
-		ThresholdRequirement.__init__(self, iRequired, **options)
+		ThresholdRequirement.__init__(self, iRequired, civs=civs, **options)
 		
 		self.civs = civs
 	
@@ -393,6 +495,38 @@ class PeakCount(ThresholdRequirement):
 	
 	def value(self, iPlayer):
 		return plots.owner(iPlayer).where(CyPlot.isPeak).count()
+
+
+# Third Dravidian UHV goal
+class PopulationCity(ThresholdRequirement):
+
+	TYPES = (COUNT,)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_POPULATION_CITY"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_POPULATION_CITY"
+	
+	def __init__(self, iRequired, **options):
+		ThresholdRequirement.__init__(self, iRequired, **options)
+		
+	def value(self, iPlayer):
+		city = self.best_city(iPlayer)
+		if not city:
+			return 0
+		return self.value_func(city)
+	
+	def value_func(self, city):
+		return city.getPopulation()
+	
+	def best_city(self, iPlayer):
+		return cities.owner(iPlayer).maximum(self.value_func)
+		
+	def progress(self, evaluator):
+		best_city = self.best_city(evaluator.iPlayer)
+		
+		if not best_city:
+			return "%s %s" % (indicator(False), text("TXT_KEY_VICTORY_PROGRESS_NO_CITIES"))
+		
+		return "%s %s: %d / %d" % (self.indicator(evaluator), text(self.PROGR_KEY, best_city.getName()), self.value_func(best_city), scale(self.iRequired))
 
 
 # First Polish UHV goal
@@ -444,6 +578,17 @@ class PopulationCount(ThresholdRequirement):
 	
 	def value(self, iPlayer):
 		return player(iPlayer).getTotalPopulation()
+
+
+class ReligionPopulationCount(ThresholdRequirement):
+
+	TYPES = (RELIGION_ADJECTIVE, COUNT)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_RELIGION_POPULATION"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_RELIGION_POPULATION"
+	
+	def value(self, iPlayer, iReligion):
+		return player(iPlayer).getReligionPopulation(iReligion)
 
 
 # First Ethiopian UHV goal
@@ -503,6 +648,18 @@ class SpecialistCount(ThresholdRequirement):
 		return "%s %s: %s" % (self.indicator(evaluator), text(self.PROGR_KEY, SPECIALIST.format(self.iSpecialist, bPlural=True)), self.progress_value(evaluator))
 
 
+class StateReligionCount(ThresholdRequirement):
+
+	TYPES = (CIVS, RELIGION_ADJECTIVE, COUNT)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_MAKE_SURE"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_STATE_RELIGION_COUNT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_STATE_RELIGION_COUNT"
+	
+	def value(self, iPlayer, lCivs, iReligion):
+		return players.major().existing().civs(*lCivs).religion(iReligion).count()
+
+
 # Third Atua URV goal
 class TerrainCount(ThresholdRequirement):
 
@@ -514,6 +671,20 @@ class TerrainCount(ThresholdRequirement):
 	
 	def value(self, iPlayer, iTerrain):
 		return plots.owner(iPlayer).where(lambda plot: plot.getTerrainType() == iTerrain).count()
+
+
+class TradeRouteCount(ThresholdRequirement):
+
+	TYPES = (COUNT,)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_TRADE_ROUTE_COUNT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_TRADE_ROUTE_COUNT"
+	
+	def count_trade_routes(self, city):
+		return count(city.getTradeCity(i) and not city.getTradeCity(i).isNone() for i in range(city.getTradeRoutes()))
+	
+	def value(self, iPlayer):
+		return cities.owner(iPlayer).sum(self.count_trade_routes)
 
 
 # Third Confucian URV goal
@@ -532,6 +703,23 @@ class UnitCombatCount(ThresholdRequirement):
 			return 0
 		
 		return units.owner(iPlayer).combat(iUnitCombat).where(lambda unit: capital(iPlayer).allUpgradesAvailable(unit.getUnitType(), 0) < 0).count()
+
+
+class UnitCombatLevelCount(ThresholdRequirement):
+
+	TYPES = (UNITCOMBAT, COUNT, COUNT)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_UNIT_COMBAT_LEVEL_COUNT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_UNIT_COMBAT_LEVEL_COUNT"
+	
+	def __init__(self, iUnitCombat, iLevel, iRequired, **options):
+		ThresholdRequirement.__init__(self, as_int(iUnitCombat), iLevel, iRequired, **options)
+	
+	def value(self, iPlayer, iUnitCombat, iLevel):
+		if not capital(iPlayer):
+			return 0
+	
+		return units.owner(iPlayer).combat(iUnitCombat).where(lambda unit: capital(iPlayer).allUpgradesAvailable(unit.getUnitType(), 0) < 0).where(lambda unit: unit.getLevel() >= iLevel).count()
 	
 
 # Second English UHV goal
@@ -578,7 +766,7 @@ class VassalCount(ThresholdRequirement):
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_VASSAL_COUNT"
 	
 	def __init__(self, iRequired, civs=None, iStateReligion=None, **options):
-		ThresholdRequirement.__init__(self, iRequired, **options)
+		ThresholdRequirement.__init__(self, iRequired, civs=civs, iStateReligion=iStateReligion, **options)
 		
 		self.civs = civs
 		self.iStateReligion = iStateReligion

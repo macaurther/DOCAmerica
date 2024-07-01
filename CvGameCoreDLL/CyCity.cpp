@@ -2819,9 +2819,9 @@ int CyCity::getActualCulture(int iPlayer)
 	return m_pCity ? m_pCity->getActualCulture((PlayerTypes)iPlayer) : -1;
 }
 
-int CyCity::getPopulationLoss()
+int CyCity::getTotalPopulationLoss()
 {
-	return m_pCity ? m_pCity->getPopulationLoss() : -1;
+	return m_pCity ? m_pCity->getTotalPopulationLoss() : -1;
 }
 
 int CyCity::countSatellites()
@@ -2839,9 +2839,9 @@ int CyCity::getArea()
 	return m_pCity ? m_pCity->getArea() : -1;
 }
 
-bool CyCity::rebuild()
+bool CyCity::rebuild(int iEra)
 {
-	return m_pCity ? m_pCity->rebuild() : false;
+	return m_pCity ? m_pCity->rebuild((EraTypes)iEra) : false;
 }
 
 bool CyCity::isValidBuildingLocation(int iBuilding)
@@ -2887,4 +2887,9 @@ int CyCity::getCorporationBadHappiness()
 int CyCity::getCorporationCount()
 {
 	return m_pCity ? m_pCity->getCorporationCount() : -1;
+}
+
+void CyCity::doPlotCulture(bool bUpdate, int ePlayer, int iCultureRate, bool bOwned)
+{
+	if (m_pCity) m_pCity->doPlotCulture(bUpdate, (PlayerTypes)ePlayer, iCultureRate, bOwned);
 }

@@ -10,8 +10,6 @@ from Events import handler
 from Core import name as short
 from Core import adjective as civAdjective
 
-import CityNameManager as cnm
-
 
 ### Constants ###
 

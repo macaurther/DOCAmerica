@@ -204,6 +204,21 @@ def increaseAggressionLevels():
 		data.players[iLoopPlayer].iAggressionLevel = dAggressionLevel[iLoopPlayer] + rand(2)
 
 
+@handler("techAcquired")	
+def forgetMemory(iTech, iTeam, iPlayer):
+	if year() <= year(1700):
+		return
+
+	if iTech in [iPsychology, iTelevision]:
+		pPlayer = player(iPlayer)
+		for iLoopPlayer in players.major().without(iPlayer):
+			if pPlayer.AI_getMemoryCount(iLoopPlayer, MemoryTypes.MEMORY_DECLARED_WAR) > 0:
+				pPlayer.AI_changeMemoryCount(iLoopPlayer, MemoryTypes.MEMORY_DECLARED_WAR, -1)
+			
+			if pPlayer.AI_getMemoryCount(iLoopPlayer, MemoryTypes.MEMORY_DECLARED_WAR_ON_FRIEND) > 0:
+				pPlayer.AI_changeMemoryCount(iLoopPlayer, MemoryTypes.MEMORY_DECLARED_WAR_ON_FRIEND, -1)
+
+
 @handler("changeWar")
 def resetAggressionLevel(bWar, iTeam, iOtherTeam):
 	if bWar and not is_minor(iTeam) and not is_minor(iOtherTeam):
@@ -223,7 +238,7 @@ def checkConquest(tConquest, tPrereqConquest = (), iWarPlan = WarPlanTypes.WARPL
 	if player(iPlayer).isHuman():
 		return
 		
-	if not player(iPlayer).isAlive(): 
+	if not player(iPlayer).isExisting(): 
 		return
 	
 	if team(iPlayer).isAVassal():
@@ -232,10 +247,13 @@ def checkConquest(tConquest, tPrereqConquest = (), iWarPlan = WarPlanTypes.WARPL
 	if data.lConquest[iID]:
 		return
 		
-	if iPreferredTarget >= 0 and player(iPreferredTarget).isAlive() and team(iPreferredTarget).isVassal(iPlayer):
+	if iPreferredTarget >= 0 and player(iPreferredTarget).isExisting() and team(iPreferredTarget).isVassal(iPlayer):
 		return
 	
 	if tPrereqConquest and not isConquered(tPrereqConquest):
+		return
+	
+	if iCiv == iSpain and (iPreferredTarget < 0 or player(iPreferredTarget).isHuman()):
 		return
 	
 	iStartTurn = year(iYear) + turns(data.iSeed % 10 - 5)
@@ -243,7 +261,7 @@ def checkConquest(tConquest, tPrereqConquest = (), iWarPlan = WarPlanTypes.WARPL
 	if turn() == iStartTurn - turns(5):
 		warnConquest(iPlayer, iCiv, iPreferredTargetCiv, tTL, tBR)
 	
-	if turn() < player(iPlayer).getLastBirthTurn() + turns(3): 
+	if turn() < player(iCiv).getLastBirthTurn() + turns(3): 
 		return
 	
 	if not (iStartTurn <= turn() <= iStartTurn + iIntervalTurns):
@@ -290,7 +308,7 @@ def conquerorWar(iPlayer, iTarget, iWarPlan):
 def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIntervalTurns, iWarPlan = WarPlanTypes.WARPLAN_TOTAL):
 	iCiv = civ(iPlayer)
 	
-	if not player(iPlayer).isAlive():
+	if not player(iPlayer).isExisting():
 		for iTech in getResurrectionTechs(iPlayer):
 			team(iPlayer).setHasTech(iTech, True, iPlayer, False, False)
 			
@@ -299,7 +317,7 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 	targetCities = cities.rectangle(tTL, tBR).notowner(iPlayer).where(lambda city: not team(city).isVassal(iPlayer)).lowest(iNumTargets, lambda city: (city.getOwner() == iPreferredTarget, distance(city, capital(iPlayer))))
 	owners = set(city.getOwner() for city in targetCities)
 	
-	if iPreferredTarget >= 0 and iPreferredTarget not in owners and player(iPreferredTarget).isAlive():
+	if iPreferredTarget >= 0 and iPreferredTarget not in owners and player(iPreferredTarget).isExisting():
 		conquerorWar(iPlayer, iPreferredTarget, iWarPlan)
 			
 	for iOwner in owners:
@@ -360,7 +378,7 @@ def planWars(iGameTurn):
 
 
 def determineAttackingPlayer():
-	return players.major().alive().where(possibleTargets).maximum(lambda p: data.players[p].iAggressionLevel)
+	return players.major().existing().where(possibleTargets).maximum(lambda p: data.players[p].iAggressionLevel)
 
 
 def possibleTargets(iPlayer):
@@ -383,7 +401,7 @@ def determineTargetPlayer(iPlayer):
 		if iLoopPlayer == iPlayer: continue
 		
 		# requires live civ and past contact
-		if not pLoopPlayer.isAlive(): continue
+		if not pLoopPlayer.isExisting(): continue
 		if not tPlayer.isHasMet(iLoopPlayer): continue
 		
 		# no masters or vassals

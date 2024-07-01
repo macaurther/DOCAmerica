@@ -101,6 +101,16 @@ bool CyPlayer::isBarbarian()
 	return m_pPlayer ? m_pPlayer->isBarbarian() : false;
 }
 
+bool CyPlayer::isIndependent()
+{
+	return m_pPlayer ? m_pPlayer->isIndependent() : false;
+}
+
+bool CyPlayer::isNative()
+{
+	return m_pPlayer ? m_pPlayer->isNative() : false;
+}
+
 std::wstring CyPlayer::getName()
 {
 	return m_pPlayer ? m_pPlayer->getName() : std::wstring();
@@ -2693,11 +2703,6 @@ void CyPlayer::launch(int iVictory)
 	if (m_pPlayer) m_pPlayer->launch((VictoryTypes)iVictory);
 }
 
-bool CyPlayer::isNoTemporaryUnhappiness()
-{
-	return m_pPlayer ? m_pPlayer->isNoTemporaryUnhappiness() : false;
-}
-
 void CyPlayer::setAlive(bool bNewValue, bool bTurnActive)
 {
 	if (m_pPlayer)
@@ -2819,4 +2824,9 @@ int CyPlayer::getLandHistory(int iTurn)
 bool CyPlayer::isExisting()
 {
 	return m_pPlayer ? m_pPlayer->isExisting() : false;
+}
+
+void CyPlayer::changeBonusImport(int eBonus, int iChange)
+{
+	if (m_pPlayer) m_pPlayer->changeBonusImport((BonusTypes)eBonus, iChange);
 }

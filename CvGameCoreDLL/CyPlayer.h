@@ -41,6 +41,8 @@ public:
 	bool hasTrait(int /*TraitTypes*/ iIndex);
 	bool isHuman();
 	bool isBarbarian();
+	bool isIndependent();
+	bool isNative();
 	std::wstring getName();
 	//Rhye (jdog) -  start ---------------------
 	void setName(std::wstring szNewValue);																														// Exposed to Python
@@ -415,6 +417,7 @@ public:
 	void setPlayable(bool bNewValue);
 	int getBonusExport(int /*BonusTypes*/ iIndex);
 	int getBonusImport(int /*BonusTypes*/ iIndex);
+	void changeBonusImport(int eBonus, int iChange); // Leoreth
 
 	int getImprovementCount(int /*ImprovementTypes*/ iIndex);
 
@@ -591,7 +594,6 @@ public:
 	void changeGreatGeneralsCreated(int iChange);
 	void changeGreatSpiesCreated(int iChange);
 	void launch(int iVictory);
-	bool isNoTemporaryUnhappiness();
 	void setAlive(bool bNewValue, bool bTurnActive);
 	int getPeriod();
 	int getDomainFreeExperience(int iDomainType);

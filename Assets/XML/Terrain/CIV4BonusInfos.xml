@@ -609,10 +609,6 @@
 					<TerrainType>TERRAIN_COAST</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
-				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
 			</TerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
@@ -660,7 +656,6 @@
 			<ArtDefineTag>ART_DEF_BONUS_COW</ArtDefineTag>
 			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
-			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -725,10 +720,6 @@
 					<TerrainType>TERRAIN_COAST</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
-				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
 			</TerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
@@ -763,10 +754,6 @@
 					<TerrainType>TERRAIN_COAST</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
-				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
 			</TerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
@@ -777,7 +764,6 @@
 			<ArtDefineTag>ART_DEF_BONUS_DEER</ArtDefineTag>
 			<TechReveal>TECH_HUNTING</TechReveal>
 			<TechCityTrade>TECH_TANNING</TechCityTrade>
-			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -826,7 +812,6 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_FISH</ArtDefineTag>
 			<TechReveal>TECH_FISHING</TechReveal>
-			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -852,10 +837,6 @@
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
 				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
-				<TerrainBoolean>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
@@ -869,7 +850,6 @@
 			<ArtDefineTag>ART_DEF_BONUS_PIG</ArtDefineTag>
 			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
-			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -1003,7 +983,6 @@
 			<ArtDefineTag>ART_DEF_BONUS_SHEEP</ArtDefineTag>
 			<TechReveal>TECH_COLONIZATION</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
-			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -1119,7 +1098,7 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_COCOA</ArtDefineTag>
 			<TechReveal>TECH_IRRIGATION</TechReveal>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -1162,7 +1141,7 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_COFFEE</ArtDefineTag>
 			<TechReveal>TECH_TRIANGULAR_TRADE</TechReveal>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_COMPANIES</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1206,7 +1185,7 @@
 			<Civilopedia>TXT_KEY_BONUS_COTTON_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_COTTON</ArtDefineTag>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1248,8 +1227,8 @@
 			<Description>TXT_KEY_BONUS_DYE</Description>
 			<Civilopedia>TXT_KEY_BONUS_DYE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
-			<ArtDefineTag>ART_DEF_BONUS_COCHINEAL</ArtDefineTag>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<ArtDefineTag>ART_DEF_BONUS_DYE</ArtDefineTag>
+			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1295,6 +1274,7 @@
 			<ArtDefineTag>ART_DEF_BONUS_FUR</ArtDefineTag>
 			<TechReveal>TECH_TRAPPING</TechReveal>
 			<TechCityTrade>TECH_TANNING</TechCityTrade>
+			<TechObsolete>TECH_SYNTHETICS</TechObsolete>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1441,7 +1421,7 @@
 			<Civilopedia>TXT_KEY_BONUS_INCENSE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_INCENSE</ArtDefineTag>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_PRIESTHOOD</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1480,7 +1460,8 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_JADE</ArtDefineTag>
 			<TechReveal>TECH_SPIRITUALISM</TechReveal>
-			<TechCityTrade>TECH_MINING</TechCityTrade>
+			<TechCityTrade>TECH_MASONRY</TechCityTrade>
+			<TechObsolete>TECH_SYNTHETICS</TechObsolete>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1568,6 +1549,7 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_PEARL</ArtDefineTag>
 			<TechReveal>TECH_SHALLOW_FISHING</TechReveal>
+			<TechObsolete>TECH_SYNTHETICS</TechObsolete>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1594,10 +1576,6 @@
 					<TerrainType>TERRAIN_COAST</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
-				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
 			</TerrainBooleans>
 		</BonusInfo>
 		<BonusInfo>
@@ -1606,7 +1584,7 @@
 			<Civilopedia>TXT_KEY_BONUS_RUBBER_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_RUBBER</ArtDefineTag>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_CONSTRUCTION</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
@@ -1686,7 +1664,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SILK_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SILK</ArtDefineTag>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1778,7 +1756,7 @@
 			<Civilopedia>TXT_KEY_BONUS_SPICES_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SPICES</ArtDefineTag>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1831,7 +1809,7 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SUGAR</ArtDefineTag>
 			<TechReveal>TECH_TRIANGULAR_TRADE</TechReveal>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_CALENDAR</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
@@ -1873,7 +1851,7 @@
 			<Civilopedia>TXT_KEY_BONUS_TEA_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_TEA</ArtDefineTag>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_AESTHETICS</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1972,7 +1950,7 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_TOBACCO</ArtDefineTag>
 			<TechReveal>TECH_EARTHWORKS</TechReveal>
-			<TechCityTrade>TECH_AGRICULTURE</TechCityTrade>
+			<TechCityTrade>TECH_PRIESTHOOD</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -2159,6 +2137,42 @@
 				<iRandApp3>0</iRandApp3>
 				<iRandApp4>0</iRandApp4>
 			</Rands>
+		</BonusInfo>
+		<BonusInfo>
+			<Type>BONUS_DYE_COCHINEAL</Type>
+			<Description>TXT_KEY_BONUS_DYE</Description>
+			<Civilopedia>TXT_KEY_BONUS_DYE_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_DYE_COCHINEAL</ArtDefineTag>
+			<iPlacementOrder>-1</iPlacementOrder>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<Rands>
+				<iRandApp1>0</iRandApp1>
+				<iRandApp2>0</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BonusInfo>
+		<BonusInfo>
+			<Type>BONUS_CITRUS_ORANGES</Type>
+			<Description>TXT_KEY_BONUS_CITRUS</Description>
+			<Civilopedia>TXT_KEY_BONUS_CITRUS_PEDIA</Civilopedia>
+			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
+			<ArtDefineTag>ART_DEF_BONUS_CITRUS_ORANGES</ArtDefineTag>
+			<iPlacementOrder>-1</iPlacementOrder>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<Rands>
+				<iRandApp1>0</iRandApp1>
+				<iRandApp2>0</iRandApp2>
+				<iRandApp3>0</iRandApp3>
+				<iRandApp4>0</iRandApp4>
+			</Rands>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</BonusInfo>
 	</BonusInfos>
 </Civ4BonusInfos>

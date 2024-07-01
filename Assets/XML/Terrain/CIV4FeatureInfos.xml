@@ -35,10 +35,6 @@
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
 				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
-				<TerrainBoolean>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
@@ -355,11 +351,12 @@
 			<ArtDefineTag>ART_DEF_FEATURE_FLOOD_PLAINS</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>3</iYieldChange>
+				<iYieldChange>-1</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>1</iYield>
+				<iYield>0</iYield>
 			</RiverYieldChange>
 			<HillsYieldChange/>
 			<iMovement>1</iMovement>
@@ -842,10 +839,6 @@
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
 				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
-				<TerrainBoolean>
 					<TerrainType>TERRAIN_OCEAN</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
@@ -960,10 +953,6 @@
 			<TerrainBooleans>
 				<TerrainBoolean>
 					<TerrainType>TERRAIN_COAST</TerrainType>
-					<bTerrain>1</bTerrain>
-				</TerrainBoolean>
-				<TerrainBoolean>
-					<TerrainType>TERRAIN_ARCTIC_COAST</TerrainType>
 					<bTerrain>1</bTerrain>
 				</TerrainBoolean>
 				<TerrainBoolean>
@@ -1260,7 +1249,7 @@
 			<iSeeThrough>1</iSeeThrough>
 			<iHealthPercent>50</iHealthPercent>
 			<iDefense>50</iDefense>
-			<iCultureCost>0</iCultureCost>
+			<iCultureCost>5</iCultureCost>
 			<iAppearance>0</iAppearance>
 			<iDisappearance>0</iDisappearance>
 			<iGrowth>3</iGrowth>

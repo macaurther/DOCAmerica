@@ -39,7 +39,7 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 		
 	for iClaimant, claimedCities in dClaimedCities.items():
 		# assign cities to living civs
-		if player(iClaimant).isAlive():
+		if player(iClaimant).isExisting():
 			for city in claimedCities:
 				iClaimantPlayer = slot(iClaimant)
 				secedeCity(city, iClaimantPlayer, not bComplete, iArmyPercent)
@@ -69,6 +69,9 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 def canBeRazed(city):	
 	if city.isHolyCity():
 		return False
+	
+	if city.getNumActiveWorldWonders() > 0:
+		return False
 
 	# always raze Mississippi cities, except holy city
 	if civ(city) == iMississippi and not player(city).isHuman():
@@ -92,7 +95,7 @@ def canBeRazed(city):
 
 def getCityClaim(city):
 	iOwner = city.getOwner()
-	possibleClaims = players.major().alive().without(iOwner).past_birth().before_fall()
+	possibleClaims = players.major().existing().without(iOwner).past_birth().before_fall()
 	
 	# claim based on core territory
 	coreClaims = possibleClaims.where(lambda p: city.isPlayerCore(p))
@@ -130,7 +133,8 @@ def getCityClaim(city):
 	return -1
 		
 def secedeCity(city, iNewOwner, bRelocate, iArmyPercent):
-	if not city: return
+	if not city: 
+		return
 	
 	name = city.getName()
 	iOldOwner = city.getOwner()

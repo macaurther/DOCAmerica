@@ -57,6 +57,13 @@
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -87,7 +94,7 @@
 				<FeatureStruct>
 					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
-					<iTime>300</iTime>
+					<iTime>400</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
@@ -115,6 +122,13 @@
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -126,7 +140,7 @@
 					<PrereqTech>TECH_ALLOYS</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
@@ -145,7 +159,7 @@
 				<FeatureStruct>
 					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
 					<PrereqTech>NONE</PrereqTech>
-					<iTime>300</iTime>
+					<iTime>400</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
@@ -159,7 +173,7 @@
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
 			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
+			<bShiftDown>1</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/Builds/PaddyField.dds</Button>
@@ -218,6 +232,13 @@
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -269,6 +290,13 @@
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -318,12 +346,21 @@
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
 			<HotKey>KB_L</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>1</iHotKeyPriority>
-			<Button>Art/Interface/Buttons/Builds/BuildLoggingCamp.dds</Button>
+			<Button>,Art/Interface/Buttons/Builds/BuildLumberMill.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,5,7</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_WINDMILL</Type>
@@ -333,6 +370,13 @@
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -385,6 +429,13 @@
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -436,11 +487,18 @@
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
@@ -486,6 +544,13 @@
 			<ImprovementType>IMPROVEMENT_QUARRY</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -537,6 +602,13 @@
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -603,6 +675,13 @@
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -666,17 +745,25 @@
 			<Help/>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iTime>500</iTime>
+			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_ORCHARD</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
-					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
@@ -722,6 +809,13 @@
 			<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -773,6 +867,13 @@
 			<ImprovementType>IMPROVEMENT_HAMLET</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -840,6 +941,27 @@
 			<bCtrlDown>1</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>,Art/Interface/Buttons/Builds/BuildFort.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,9</Button>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_REMOVE_TAIGA</Type>
+			<Description>TXT_KEY_BUILD_REMOVE_TAIGA</Description>
+			<iTime>0</iTime>
+			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_C</HotKey>
+			<bAltDown>1</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
 		</BuildInfo>
 		<BuildInfo>
 			<Type>BUILD_REMOVE_JUNGLE</Type>
@@ -926,6 +1048,27 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
 		</BuildInfo>
 		<BuildInfo>
+			<Type>BUILD_SCRUB_FALLOUT</Type>
+			<Description>TXT_KEY_BUILD_SCRUB_FALLOUT</Description>
+			<iTime>0</iTime>
+			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FALLOUT</FeatureType>
+					<PrereqTech>TECH_NUCLEAR_POWER</PrereqTech>
+					<iTime>4000</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_S</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildScrubFallout.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,2,8</Button>
+		</BuildInfo>
+		<BuildInfo>
 			<Type>BUILD_REMOVE_SWAMP</Type>
 			<Description>TXT_KEY_BUILD_REMOVE_SWAMP</Description>
 			<iTime>0</iTime>
@@ -952,6 +1095,7 @@
 			<Help/>
 			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<iTime>800</iTime>
+			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_NATURE_RESERVE</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -970,6 +1114,7 @@
 			<Help/>
 			<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			<iTime>0</iTime>
+			<iCost>0</iCost>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_MARINE_RESERVE</ImprovementType>
 			<RouteType>NONE</RouteType>
@@ -983,7 +1128,29 @@
 			<Button>Art/Interface/Buttons/Builds/BuildMarineReserve.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_DEFORESTATION</Type>
+			<Type>BUILD_DEFORESTATION_TAIGA</Type>
+			<Description>TXT_KEY_BUILD_REMOVE_JUNGLE</Description>
+			<iTime>0</iTime>
+			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_C</HotKey>
+			<bAltDown>1</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildChopDown.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,8</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildInfo>
+		<BuildInfo>
+			<Type>BUILD_DEFORESTATION_JUNGLE</Type>
 			<Description>TXT_KEY_BUILD_REMOVE_JUNGLE</Description>
 			<iTime>0</iTime>
 			<EntityEvent>ENTITY_EVENT_CHOP</EntityEvent>
@@ -1035,6 +1202,13 @@
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -1080,6 +1254,13 @@
 			<EntityEvent>ENTITY_EVENT_IRRIGATE</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -1110,7 +1291,7 @@
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
 			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
+			<bShiftDown>1</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art/Interface/Buttons/Builds/PaddyField.dds</Button>
@@ -1124,6 +1305,13 @@
 			<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -1170,6 +1358,13 @@
 			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -1214,6 +1409,13 @@
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -1260,6 +1462,13 @@
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -1304,6 +1513,13 @@
 			<ImprovementType>IMPROVEMENT_PLANTATION</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_CALENDAR</PrereqTech>
@@ -1350,6 +1566,13 @@
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -1394,6 +1617,13 @@
 			<ImprovementType>IMPROVEMENT_PASTURE</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
@@ -1440,6 +1670,13 @@
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
 				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
@@ -1482,18 +1719,25 @@
 			<Help/>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iTime>500</iTime>
+			<iCost>0</iCost>
 			<bKill>0</bKill>
 			<ImprovementType>IMPROVEMENT_ORCHARD</ImprovementType>
 			<RouteType>NONE</RouteType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
-			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
-					<bRemove>1</bRemove>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
@@ -1517,7 +1761,6 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			</FeatureStructs>
 			<HotKey>KB_O</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
@@ -1534,6 +1777,13 @@
 			<ImprovementType>IMPROVEMENT_HAMLET</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
 			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<PrereqTech>TECH_ECOLOGY</PrereqTech>
+					<iTime>600</iTime>
+					<iProduction>40</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>

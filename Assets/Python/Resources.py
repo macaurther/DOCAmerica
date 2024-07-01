@@ -32,9 +32,6 @@ def setup():
 	global dRemovedResources
 	dRemovedResources = TileDict(dRemovedResourcesDict, year)
 	
-	global dPlotTypes
-	dPlotTypes = TileDict(dPlotTypesDict, year)
-	
 	global dFeatures
 	dFeatures = TileDict(dFeaturesDict, year)
 	
@@ -44,16 +41,11 @@ def setup():
 	global dConquerorPlotTypes
 	dConquerorPlotTypes = TileDict(dConquerorPlotTypesDict)
 	
-	global dConquerorRemovedFeatures
-	dConquerorRemovedFeatures = TileDict(dConquerorRemovedFeaturesDict)
-		
-	global dRoutes
-	dRoutes = appenddict(dict((year(iYear), tiles) for iYear, tiles in dRoutesDict.items()))
-
 
 ### Constants ###
 
 # initialise bonuses variables
+
 dResourcesDict = {
 	(13, 63)  : (1550,  iHorse),  	# Mexico
 	(15, 89)  : (1550,  iHorse),  	# Utah
@@ -140,7 +132,7 @@ def createResourcesBeforeBirth(iCiv):
 		createResource(x, y, iResource)
 
 
-@handler("collapse")
+@handler("playerDestroyed")
 def removeResourcesOnCollapse(iPlayer):
 	iCiv = civ(iPlayer)
 	for (x, y), iResource in dSpawnResources[iCiv]:
@@ -151,24 +143,6 @@ def removeResourcesOnCollapse(iPlayer):
 def removeResources():
 	for x, y in dRemovedResources[game.getGameTurn()]:
 		removeResource(x, y)
-
-
-@handler("BeginGameTurn")
-def createRoutes():
-	for tile in dRoutes[game.getGameTurn()]:
-		plot(tile).setRouteType(iRouteRoad)
-
-
-@handler("prepareBirth")
-def createRoutesBeforeSpawn(iCiv):
-	for tile in dSpawnRoutes.get(iCiv, []):
-		plot(tile).setRouteType(iRouteRoad)
-
-
-@handler("BeginGameTurn")
-def changePlotType():
-	for tile, type in dPlotTypes[game.getGameTurn()]:
-		plot(tile).setPlotType(type, True, True)
 
 
 @handler("BeginGameTurn")
@@ -190,13 +164,6 @@ def changeConquerorPlotTypes(iConquerorPlayer, iTargetPlayer):
 		plot(tile).setPlotType(type, True, True)
 
 
-@handler("conquerors")
-def removeConquerorFeatures(iConquerorPlayer, iTargetPlayer):
-	iTargetCiv = civ(iTargetPlayer)
-	for tile in dConquerorRemovedFeatures[iTargetCiv]:
-		plot(tile).setFeatureType(-1, 0)
-
-
 def setupScenarioResources():
 	setup()
 	iStartTurn = scenarioStartTurn()
@@ -216,16 +183,6 @@ def setupScenarioResources():
 			for x, y in lResources:
 				removeResource(x, y)
 	
-	for iTurn, lRoutes in dRoutes.items():
-		if iTurn <= iStartTurn:
-			for x, y in lRoutes:
-				plot(x, y).setRouteType(iRouteRoad)
-	
-	for iTurn, lPlots in dPlotTypes:
-		if iTurn <= iStartTurn:
-			for (x, y), iPlotType in lPlots:
-				plot(x, y).setPlotType(iPlotType, True, True)
-	
 	for iTurn, lFeatures in dFeatures:
 		if iTurn <= iStartTurn:
 			for (x, y), iFeature in lFeatures:
@@ -244,11 +201,6 @@ def setupScenarioResources():
 			for (x, y), iPlotType in lPlots:
 				plot(x, y).setPlotType(iPlotType, True, True)
 	
-	for iCiv, lFeatures in dConquerorRemovedFeatures:
-		if year(dFall[iCiv]) <= iStartTurn:
-			for x, y in lFeatures:
-				plot(x, y).setFeatureType(-1, 0)
-		
 
 # Leoreth: bonus removal alerts by edead
 def createResource(iX, iY, iBonus, createTextKey="TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE", removeTextKey="TXT_KEY_MISC_EVENT_RESOURCE_EXHAUSTED"):

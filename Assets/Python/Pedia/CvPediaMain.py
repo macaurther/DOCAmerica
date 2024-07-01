@@ -491,6 +491,8 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 	def placeSpecialists(self):
 		lSpecialists = []
 		hSpecialists = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_SPECIALIST", ())
+		lSatellites = []
+		hSatellites = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_SATELLITE", ())
 		lGreatSpecialists = []
 		hGreatSpecialists = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_GREAT_SPECIALIST", ())
 
@@ -501,16 +503,21 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 			sSpecialist = SpecialistInfo.getType()
 			if sSpecialist.find("GREAT_") > -1:
 				lGreatSpecialists.append((SpecialistInfo.getDescription(), iSpecialist))
+			elif SpecialistInfo.isSatellite():
+				lSatellites.append((SpecialistInfo.getDescription(), iSpecialist))
 			else:
 				lSpecialists.append((SpecialistInfo.getDescription(), iSpecialist))
 
 		lSpecialists.sort()
+		lSatellites.sort()
 		lGreatSpecialists.sort()
 		lSpecialists.insert(0, (hSpecialists, -1))
+		lSatellites.insert(0, (hSatellites, -1))
+		lSatellites.insert(0, ("", -1))
 		lGreatSpecialists.insert(0, (hGreatSpecialists, -1))
 		lGreatSpecialists.insert(0, ("", -1))
 
-		self.list = lSpecialists + lGreatSpecialists
+		self.list = lSpecialists + lSatellites + lGreatSpecialists
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_SPECIALIST, gc.getSpecialistInfo)
 
 
@@ -762,31 +769,38 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 		lFeatures.sort()
 		self.list = lFeatures
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_FEATURE, gc.getFeatureInfo)
-
-
-
+	
+	
 	def placeResources(self):
 		lResources = []
 		dResourceMap = {}
+		dImprovementMap = {}
 		
-		for iImprovement in xrange(gc.getNumImprovementInfos()):
-			ImprovementInfo = gc.getImprovementInfo(iImprovement)
-			lImprovementResources = [iBonus for iBonus in xrange(gc.getNumBonusInfos()) if ImprovementInfo.isBonusTrade(iBonus) and iBonus not in [item for sublist in dResourceMap.values() for item in sublist]]
+		lImprovementInfos = sorted([gc.getImprovementInfo(iImprovement) for iImprovement in xrange(gc.getNumImprovementInfos())], key=lambda improvement: improvement.isWater())
+		lBonuses = [iBonus for iBonus in xrange(gc.getNumBonusInfos()) if not gc.getBonusInfo(iBonus).isGraphicalOnly()]
+		
+		for improvementInfo in reversed(lImprovementInfos):
+			for iBonus in lBonuses:
+				if improvementInfo.isBonusTrade(iBonus):
+					dResourceMap[iBonus] = improvementInfo.getText()
+		
+		for iBonus in lBonuses:
+			if iBonus not in dResourceMap:
+				dResourceMap[iBonus] = "Media"
+		
+		for iBonus, improvement in dResourceMap.items():
+			if improvement not in dImprovementMap:
+				dImprovementMap[improvement] = []
 			
-			if lImprovementResources:
-				dResourceMap[ImprovementInfo.getText()] = lImprovementResources
-		
-		lOther = [iBonus for iBonus in xrange(gc.getNumBonusInfos()) if iBonus not in [item for sublist in dResourceMap.values() for item in sublist]]
-		if lOther:
-			dResourceMap["Media"] = lOther
+			dImprovementMap[improvement].append(iBonus)
 				
-		for sImprovement in sorted(dResourceMap.keys()):
+		for sImprovement in sorted(dImprovementMap.keys()):
 			if lResources:
 				lResources.append(("", -1))
 				
 			lResources.append((sImprovement, -1))
 			
-			for iBonus in dResourceMap[sImprovement]:
+			for iBonus in dImprovementMap[sImprovement]:
 				lResources.append((gc.getBonusInfo(iBonus).getDescription(), iBonus))
 
 		self.list = lResources
@@ -1148,8 +1162,6 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 				if gc.getImprovementInfo(j).getDescription() == gc.getImprovementInfo(gc.getInfoTypeForString("IMPROVEMENT_WATER_WORKED")).getDescription():
 					list.pop(j)
 				if gc.getImprovementInfo(j).getDescription() == gc.getImprovementInfo(gc.getInfoTypeForString("IMPROVEMENT_CITY_RUINS")).getDescription():
-					list.pop(j)
-				if gc.getImprovementInfo(j).getDescription() == gc.getImprovementInfo(gc.getInfoTypeForString("IMPROVEMENT_TRIBE")).getDescription():
 					list.pop(j)
 	# END Filters
 

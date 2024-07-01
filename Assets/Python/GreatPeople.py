@@ -40,7 +40,7 @@ def assignGreatPersonName(unit, iPlayer, city, bAnnounceBirth = True):
 				text_key = 'TXT_KEY_MISC_GP_BORN_OUTSIDE'
 				city = closestCity(unit)
 		
-			for iLoopPlayer in players.major().alive():
+			for iLoopPlayer in players.major().existing():
 				if AlertOpt.isGreatPeopleOurs() and iPlayer != iLoopPlayer:
 					continue
 			
@@ -117,7 +117,7 @@ def setup():
 			for i in range(1, len(lCurrentOffsets)):
 				if lCurrentOffsets[i] < lCurrentOffsets[i-1]: lCurrentOffsets[i] = lCurrentOffsets[i-1]
 				
-			lCurrentOffsets[iIndustrialEra] = len(lGreatPeople[iCiv][lTypes.index(iType)])
+			lCurrentOffsets[iModernEra] = len(lGreatPeople[iCiv][lTypes.index(iType)])
 				
 	print lGreatPeople
 
@@ -138,6 +138,8 @@ iMaya : {
 		"Asan Winik Tu'ub", # 8th
 		"Chan Ch'ok Wayib Xok", # 8th
 		"Waj Tan Chak", # 8th
+		iModernEra,
+		"fMarisol Ceh Moo", # 20th
 	],
 	iGreatScientist : [
 		"Itzamna", # mythological
@@ -161,6 +163,8 @@ iMaya : {
 		"fYohl Ik'nal", # 6th
 		"Yuknoom Ch'een", # 7th
 		"Jasaw Chan K'awiil", # 8th
+		iModernEra,
+		u"fRigoberta Menchú", # 20th
 	],
 	iGreatGeneral : [
 		"Siyaj K'ak'", # 4th teotihuacan
@@ -452,6 +456,10 @@ iEngland : {
 		iIndustrialEra,
 		"William Booth", # 19th
 		"David Livingstone", # 19th
+		iModernEra,
+		"Gerald Gardner", # 20th
+		"Aleister Crowley", # 20th
+		"John Stott", # 20th
 	],
 	iGreatArtist : [
 		u"Ælfric of Eynsham", # 10th
@@ -470,6 +478,13 @@ iEngland : {
 		"Charles Dickens", # 19th
 		"fGeorge Eliot", # 19th
 		"Arthur Conan Doyle", # 19th
+		iModernEra,
+		"fVirginia Woolf", # 20th
+		"James Joyce", # 20th
+		"fAgatha Christie", # 20th
+		"John R. R. Tolkien", # 20th
+		"Alfred Hitchcock", # 20th
+		"John Lennon", # 20th
 	],
 	iGreatScientist : [
 		"Byrhtferth", # 10th
@@ -490,6 +505,12 @@ iEngland : {
 		"Charles Darwin", # 19th
 		"fAda Lovelace", # 19th
 		"James Clerk Maxwell", # 19th
+		iModernEra,
+		"Ernest Rutherford", # 20th
+		"Alexander Fleming", # 20th
+		"Alan Turing", # 20th
+		"fRosalind Franklin", # 20th
+		"Stephen Hawking", # 20th
 	],
 	iGreatMerchant : [
 		"Alan Rufus", # 11th
@@ -506,6 +527,8 @@ iEngland : {
 		"Richard Francis Burton", # 19th
 		"Thomas Sutherland", # 19th
 		"Cecil Rhodes", # 19th
+		iModernEra,
+		"John Maynard Keynes", # 20th
 	],
 	iGreatEngineer : [
 		"Henry Yevele", # 14th
@@ -522,6 +545,11 @@ iEngland : {
 		"Isambard Kingdom Brunel", # 19th
 		"Henry Bessemer", # 19th
 		"William Thomson Kelvin", # 19th
+		iModernEra,
+		"John Logie Baird", # 20th
+		"fVictoria Drummond", # 20th
+		"Frank Whittle", # 20th
+		"Tim Berners-Lee", # 20th
 	],
 	iGreatStatesman : [
 		"Thomas Becket", # 12th
@@ -538,6 +566,11 @@ iEngland : {
 		"William Gladstone", # 19th
 		"Benjamin Disraeli", # 19th
 		"Robert Gascoyne-Cecil Salisbury", # 19th
+		iModernEra,
+		"Thomas Edward Lawrence", # 20th
+		"fEmmeline Pankhurst", # 20th
+		"Clement Atlee", # 20th
+		"fDiana Spencer", # 20th
 	],
 	iGreatGeneral : [
 		"William the Conqueror", # 11th
@@ -553,6 +586,12 @@ iEngland : {
 		"John Jervis", # 18th
 		"Arthur Wellesley Wellington", # 19th
 		"Edmund Lyons", # 19th
+		iModernEra,
+		"Edmund Allenby", # 19th
+		"Hugh Dowding", # 20th
+		"Bernard Law Montgomery", # 20th
+		"William Slim", # 20th
+		"Harold Alexander", # 20th
 	],
 	iGreatSpy : [
 		"Francis Walsingham", # 16th
@@ -565,6 +604,13 @@ iEngland : {
 		"William Wickham", # 19th
 		"William Melville", # 19th
 		"Mansfield Smith-Cumming", # 19th
+		iModernEra,
+		"Sidney Reilly", #, 20th
+		"fVera Atkins", #, 20th
+		"fLise de Baissac", # 20th
+		"fMelita Norwood", # 20th
+		"Ian Fleming", # 20th
+		"Kim Philby", # 20th
 	],
 },
 iFrance : {
@@ -717,6 +763,8 @@ iNetherlands : {
 		"Baruch Spinoza", # 17th
 		iIndustrialEra,
 		"Abraham Kuyper", # 19th
+		iModernEra,
+		"fAlida Bosshardt", # 20th
 	],
 	iGreatArtist : [
 		"Hendrick de Keyser", # 16th
@@ -727,6 +775,10 @@ iNetherlands : {
 		iIndustrialEra,
 		"Multatuli", # 19th
 		"Vincent van Gogh", # 19th
+		iModernEra,
+		"Piet Mondrian", # 20th
+		"Maurits Cornelis Escher", # 20th
+		"fAnna Maria Geertruida Schmidt", # 20th
 	],
 	iGreatScientist : [
 		"Willebrord Snel van Royen", # 16th
@@ -737,6 +789,11 @@ iNetherlands : {
 		iIndustrialEra, 
 		"Johannes Diderik van der Waals", # 19th
 		"Hendrik Antoon Lorentz", # 19th
+		iModernEra,
+		"Jan Hendrik Oort", # 20th
+		"Gerrit Pieter Kuiper", # 20th
+		"Edsger Wybe Dijkstra", # 20th
+		"Willem Johan Kolff", # 20th
 	],
 	iGreatMerchant : [
 		"Willem Barentsz", # 16th
@@ -750,10 +807,14 @@ iNetherlands : {
 		iIndustrialEra,
 		"Clemens Brenninkmeijer", # 19th
 		"August Kessler", # 19th
+		iModernEra,
+		"Jan Tinbergen", # 20th
+		"Freddy Heineken", # 20th
 	],
 	iGreatEngineer : [
 		"Simon Stevin", # 16th
 		"Cornelis Corneliszoon", # 16th
+		"Hendrick de Keyser", # 16th
 		"Cornelis Drebbel", # 17th
 		"Jan Leeghwater", # 17th
 		"Menno van Coehoorn", # 17th
@@ -762,6 +823,9 @@ iNetherlands : {
 		"Cornelis Lely", # 19th
 		"Hendrik Petrus Berlage", # 19th
 		"Anthony Fokker", # 19th
+		iModernEra,
+		"Anton Philips", # 20th
+		"Gerrit Rietveld", # 20th
 	],
 	iGreatStatesman : [
 		"Desiderius Erasmus", # 16th
@@ -773,6 +837,8 @@ iNetherlands : {
 		iIndustrialEra,
 		"Johan Thorbecke", # 19th
 		"fAletta Jacobs", # 19th
+		iModernEra,
+		"Willem Drees", # 20th
 	],
 	iGreatGeneral : [
 		"Maurits van Nassau", # 16th
@@ -790,6 +856,10 @@ iNetherlands : {
 		iIndustrialEra,
 		"fJohanna Brandt", # 19th
 		"Christiaan Snouck Hurgronje", # 19th
+		iModernEra,
+		"fMata Hari", # 20th
+		"Dirk Klop", # 20th
+		u"François van 't Sant", # 20th
 	],
 },
 iAmerica : {
@@ -798,6 +868,11 @@ iAmerica : {
 		"fMary Baker Eddy", # 19th
 		"fEllen G. White", # 19th
 		"Charles Taze Russell", # 19th
+		iModernEra,
+		"Menachem Mendel Schneerson", # 20th
+		"L. Ron Hubbard", # 20th
+		"Billy Graham", # 20th
+		"Malcolm Little", # 20th
 	],
 	iGreatArtist : [
 		"Edgar Allan Poe", # 19th
@@ -805,26 +880,65 @@ iAmerica : {
 		"fEmily Dickinson", # 19th
 		"Herman Melville", # 19th
 		"fMary Cassatt", # 19th
+		iModernEra,
+		"Howard Phillips Lovecraft", # 20th
+		"Ernest Hemingway", # 20th
+		"Charlie Chaplin", # 20th
+		"Elvis Presley", # 20th
+		"fHarper Lee", # 20th
+		"Andy Warhol", # 20th
+		"Miles Davis", # 20th
+		"Jimi Hendrix", # 20th
 	],
 	iGreatScientist : [
 		"Benjamin Franklin", # 18th
 		"fNettie Stevens", # 19th
+		iModernEra,
+		"Arthur Compton", # 20th
+		"Edwin Hubble", # 20th
+		"John von Neumann", # 20th
+		"Glenn Seaborg", # 20th
+		"Robert Oppenheimer", # 20th
+		"Richard Feynman", # 20th
+		"fBarbara McClintock", # 20th
+		"fGrace Hopper", # 20th
 	],
 	iGreatMerchant : [
 		"Stephen Girard", # 18th
 		"Nathaniel Bowditch", # 18th
 		iIndustrialEra,
 		"Cornelius Vanderbilt", # 19th
+		"Cyrus W. Field", # 19th
+		"Andrew Carnegie", # 19th
 		"John D. Rockefeller", # 19th
 		"Andrew Carnegie", # 19th
 		"fHetty Green", # 19th
 		"John Pierpont Morgan", # 19th
+		iModernEra,
+		"fHelena Rubinstein", # 20th
+		"William Edward Boeing", # 20th
+		"Walt Disney", # 20th
+		"Ray Kroc", # 20th
+		"Thomas Watson", # 20th
+		"Sam Walton", # 20th
+		"Bill Gates", # 20th
 	],
 	iGreatEngineer : [
+		"Samuel Morse", # 19th
+		"Charles Goodyear", # 19th
 		"Thomas Edison", # 19th
 		"Nikola Tesla", # 19th
+		"Louis Sullivan", # 19th
 		"Henry Ford", # 19th
-		"Charles Goodyear", # 19th
+		iModernEra,
+		"Orville Wright", # 20th
+		"Frank Lloyd Wright", # 20th
+		"fLillian Moller Gilbreth", # 20th
+		"Robert Moses", # 20th
+		"Eero Saarinen", # 20th
+		"fMargaret Hutchinson Rousseau", # 20th
+		"fHedy Lamarr", # 20th
+		"Frank Gehry", # 20th
 	],
 	iGreatStatesman : [
 		"Thomas Paine", # 18th
@@ -837,17 +951,35 @@ iAmerica : {
 		"fVictoria Claflin Woodhull", # 19th
 		"fSusan B. Anthony", # 19th
 		"fJane Addams", # 19th
+		iModernEra,
+		"fEleanor Roosevelt", # 20th
+		"George Kennan", # 20th
+		"Martin Luther King", # 20th
+		"Henry Kissinger", # 20th
 	],
 	iGreatGeneral : [
 		"Winfield Scott", # 19th
 		"Ulysses S. Grant", # 19th
 		"Robert E. Lee", # 19th
+		iModernEra,
+		"John J. Pershing", # 20th
+		"Dwight D. Eisenhower", # 20th
+		"George Patton", # 20th
+		"Douglas MacArthur", # 20th
+		"Matthew Ridgway", # 20th
+		"Norman Schwarzkopf", # 20th
 	],
 	iGreatSpy : [
 		"Benjamin Tallmadge", # 18th
 		"Allan Pinkerton", # 19th
 		"fBelle Boyd", # 19th
 		"fElizabeth Van Lew", # 19th
+		iModernEra,
+		"William J. Donovan", # 20th
+		"J. Edgar Hoover", # 20th
+		"James Jesus Angleton", # 20th
+		"fVirginia Hall", # 20th
+		"fElizabeth Friedman", # 20th
 	],
 },
 iMexico : {
@@ -855,13 +987,33 @@ iMexico : {
 		"Juan Diego", # 16th
 		"Francisco Javier Clavijero", # 18th
 		u"Cristóbal Magallanes Jara", # 19th
+		iModernEra,
+		u"Rafael Guízar Valencia", # 20th
+		"Miguel Pro", # 20th
+		"Samuel Ruiz", # 20th
+		u"Javier Lozano Barragán", # 20th
 	],
 	iGreatArtist : [
 		u"fÁngela Peralta", # 19th
+		iModernEra,
+		u"José Clemente Orozco", # 20th
+		"Diego Rivera", # 20th
+		"fFrida Kahlo", # 20th
+		"Octavio Paz", # 20th
+		"fRemedios Varo", # 20th
+		u"fDolores del Río", # 20th
+		"Pedro Infante", # 20th
+		"Carlos Fuentes", # 20th
+		u"Vicente Fernández", # 20th
 	],
 	iGreatScientist : [
 		"Gabino Barreda", # 19th
 		u"Lucas Alamán", # 19th
+		iModernEra,
+		"Manuel Sandoval Vallarta", # 20th
+		"Ricardo Miledi", # 20th
+		u"Mario José Molina", # 20th
+		"Rodolfo Neri Vela", # 20th
 	],
 	iGreatMerchant : [
 		u"Víctor Urquidi", # 20th
@@ -882,6 +1034,13 @@ iMexico : {
 	iGreatStatesman : [
 		u"José María Pino Suárez", # 19th
 		"Pascual Orozco", # 19th
+		iModernEra,
+		u"José Vasconcelos", # 20th
+		"Octavio Paz", # 20th
+		"fElvia Carrillo Puerto", # 20th
+		"fRosario Castellanos", # 20th
+		u"Alfonso García Robles", # 20th
+		u"Gilberto Bosques Saldívar", # 20th
 	],
 	iGreatGeneral : [
 		"Miguel Hidalgo", # 18th
@@ -898,28 +1057,62 @@ iMexico : {
 iArgentina : {
 	iGreatProphet : [
 		"Gauchito Gil", # 19th
+		iModernEra,
+		"Enrique Angelelli", # 20th
+		"Carlos Mugica", # 20th
+		"Jorge Mario Bergoglio", # 20th
 	],
 	iGreatArtist : [
 		u"José Hernández", # 19th
 		"fLola Mora", # 19th
+		iModernEra,
+		"Carlos Gardel", # 20th
+		"fGabriela Mistral", # 20th
+		"Jorge Luis Borges", # 20th
+		"Antonio Berni", # 20th
+		"Daniel Barenboim", # 20th
+		u"Juan José Campanella", # 20th
+		"Gustavo Cerati", # 20th
 	],
 	iGreatScientist : [
 		"Francisco Moreno", # 19th
 		"Florentino Ameghino", # 19th
+		iModernEra,
+		"Luis Federico Leloir", # 20th
+		u"László Bíró", # 20th
+		u"René Favaloro", # 20th
 	],
 	iGreatMerchant : [
 		"Juan Las Heras", # 19th
 		"Otto Bemberg", # 19th
 		"Ernesto Tornquist", # 19th
+		iModernEra,
+		u"José Ber Gelbard", # 20th
+		"Roberto Alemann", # 20th
+		"Jorge Wehbe", # 20th
+		"Aldo Ferrer", # 20th
+		"Antonio Cafiero", # 20th
 	],
 	iGreatEngineer : [
 		"Luis Huergo", # 19th
 		"Jorge Newbery", # 19th
+		iModernEra,
+		"Amancio Williams", # 20th
+		"Livio Dante Porta", # 20th
+		"Clorindo Testa", # 20th
+		u"César Pelli", # 20th
 	],
 	iGreatStatesman : [
 		"Juan Manuel de Rosas", # 19th
 		"Domingo Faustino Sarmiento", # 19th
 		"Estanislao Zeballos", # 19th
+		iModernEra,
+		"Carlos Saavedra Lamas", # 20th
+		"Juan Atilio Bramuglia", # 20th
+		u"fEva Perón", # 20th
+		"Ernesto Guevara", # 20th
+		u"fIsabel Martínez de Perón", # 20th
+		"fEstela Barnes de Carlotto", # 20th
 	],
 	iGreatGeneral : [
 		"Cornelio Saavedra", # 18th
@@ -927,6 +1120,11 @@ iArgentina : {
 		u"Juan José Castelli", # 18th
 		u"Martín Miguel de Güemes", # 18th
 		u"José Gervasio Artigas", # 19th
+		iModernEra, 
+		u"Juan Carlos Onganía", # 20th
+		"Jorge Rafael Videla", # 20th
+		"Leopoldo Galtieri", # 20th
+		"Jorge Anaya", # 20th
 	],
 	iGreatSpy : [
 		"Emilio Eduardo Massera", # 20th
@@ -946,20 +1144,43 @@ iColombia : {
 	iGreatArtist : [
 		"Jorge Isaacs", # 19th
 		u"Andrés de Santa Maria", # 19th
+		iModernEra,
+		"Rodrigo Arenas", # 20th
+		u"Álvaro Mutis", # 20th
+		u"Gabriel García Márquez", # 20th
+		"Fernando Botero", # 20th
+		"Rafael Orozco", # 20th
+		u"Rodrigo García", # 20th
+		"fShakira", # 20th
 	],
 	iGreatScientist : [
 		u"José Jéronimo Triana", # 19th
 		"Julio Garavito Armero", # 19th
+		iModernEra,
+		u"Rodolfo Llinás", # 20th
+		"Jorge Reynolds Pombo", # 20th
 	],
 	iGreatMerchant : [
 		"James Martin Eder", # 19th
+		iModernEra,
+		"Julio Mario Santo Domingo", # 20th
+		u"Carlos Ardila Lülle", # 20th
+		"Luis Carlos Sarmiento Angulo", # 20th
+		"Pablo Escobar", # 20th
 	],
 	iGreatEngineer : [
 		u"Carlos Albán", # 19th
+		iModernEra, 
+		u"Carlos Raúl Villanueva", # 20th
+		"Rogelio Salmona", # 20th
 	],
 	iGreatStatesman : [
 		u"Tomás Cipriano de Mosquera", # 19th
 		u"Rafael Núñez", # 19th
+		iModernEra,
+		u"Jorge Eliécer Gaitán", # 20th
+		u"Nicolás Gómez Dávila", # 20th
+		u"Mario Lanserna Pinzón", # 20th
 	],
 	iGreatGeneral : [
 		"fAntonia Santos", # 19th
@@ -974,15 +1195,30 @@ iColombia : {
 iBrazil : {
 	iGreatProphet : [
 		u"António Conselheiro", # 19th
+		iModernEra,
+		u"Hélder Câmara", # 20th
+		u"fIrmã Dulce Pontes", # 20th
+		"Chico Xavier", # 20th
+		"Edir Macedo", # 20th
 	],
 	iGreatArtist : [
 		"Aleijadinho", # 18th
 		u"António Carlos Gomes", # 19th
 		"Machado de Assis", # 19th
+		iModernEra,
+		"fTarsila do Amaral", # 20th
+		"fCarmen Miranda", # 20th
+		"Tom Jobim", # 20th
+		"Romero Britto", # 20th
 	],
 	iGreatScientist : [
 		"Oswaldo Cruz", # 19th
 		"Carlos Chagas", # 19th
+		iModernEra,
+		"Alberto Santos-Dumont", # 20th
+		"Urbano Ernesto Stumpf", # 20th
+		u"Aziz Ab'Sáber", # 20th
+		"Marcelo Gleiser", # 20th
 	],
 	iGreatMerchant : [
 		"Roberto Marinho", # 20th
@@ -991,6 +1227,10 @@ iBrazil : {
 	],
 	iGreatEngineer : [
 		u"André Rebouças", # 19th
+		iModernEra,
+		u"Cândido Rondon", # 20th
+		"Oscar Niemeyer", # 20th
+		"Norberto Odebrecht", # 20th
 	],
 	iGreatStatesman : [
 		u"José Bonifácio de Andrada", # 18th
@@ -999,43 +1239,85 @@ iBrazil : {
 		u"José Paranhos", # 19th
 		u"fIsabel Bragança", # 19th
 		"Miguel Reale", # 19th
+		iModernEra,
+		"Roberto Mangabeira Unger", # 20th
 	],
 	iGreatGeneral : [
 		u"Luís Alves de Lima e Silva", # 19th
 		"Joaquim Marques Lisboa", # 19th
 		u"fMaria Quitéria", # 19th
+		iModernEra,
+		u"João Baptista Mascarenhas de Morais", # 20th
+		"Eurico Gaspar Dutra", # 20th
+		"Artur da Costa e Silva", # 20th
 	],
 },
 iCanada : {
 	iGreatProphet : [
 		"Ignace Bourget", # 19th
 		u"André Bessette", # 20th
+		iModernEra,
+		"Lionel Groulx", # 20th
+		"George C. Pidgeon", # 20th
+		u"fRúhíyyih Khánum", # 20th
+		"Marshall McLuhan", # 20th
 	],
 	iGreatArtist : [
 		"Cornelius Krieghoff", # 19th
 		u"Calixa Lavallée", # 19th
 		"Tom Thomson", # 19th
 		u"Émile Nelligan", # 19th
+		iModernEra,
+		"fLucy Maud Montgomery", # 20th
+		"Lawren Harris", # 20th
+		"fEmily Carr", # 20th
+		"Jean-Paul Riopelle", # 20th
+		"Neil Young", # 20th
+		"fGabrielle Roy", # 20th
+		"fAlice Munro", # 20th
 	],
 	iGreatScientist : [
 		"John William Dawson", # 19th
 		"fMaude Abbott", # 19th
+		iModernEra,
+		"Frederick Banting", # 20th
+		"Norman Bethune", # 20th
+		"Wilder Penfield", # 20th
+		"Pierre Dansereau", # 20th
+		"fShirley Tilghman", # 20th
+		"David Suzuki", # 20th
 	],
 	iGreatMerchant : [
 		"William McMaster", # 19th
 		"Timothy Eaton", # 19th
 		"Alphonse Desjardins", # 19th
+		iModernEra,
+		"fElizabeth Arden", # 20th
+		"Max Aitken", # 20th
+		"Ted Rogers", # 20th
+		u"Guy Laliberté", # 20th
 	],
 	iGreatEngineer : [
 		"Sandford Fleming", # 19th
 		"William Cornelius Van Horne", # 19th
 		"Alexander Graham Bell", # 19th
 		"Reginald Fessenden", # 19th
+		iModernEra,
+		"Ernest Cormier", # 20th
+		"Joseph-Armand Bombardier", # 20th
+		"fElsie MacGill", # 20th
 	],
 	iGreatStatesman : [
 		u"George-Étienne Cartier", # 19th
 		"Louis Riel", # 19th
 		"Henri Bourassa", # 19th
+		iModernEra,
+		"Lester B. Pearson", # 20th
+		"fEmily Murphy", # 20th
+		"fNellie McClung", # 20th
+		"Tommy Douglas", # 20th
+		u"René Lévesque", # 20th
+		"fLouise Arbour", # 20th
 	],
 	iGreatGeneral : [
 		"Arthur Currie", # 20th

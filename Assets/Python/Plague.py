@@ -64,7 +64,7 @@ def progressPlagueCountdown():
 		return
 
 	for iPlayer in players.all().barbarian():
-		if player(iPlayer).isAlive():
+		if player(iPlayer).isExisting():
 			if data.players[iPlayer].iPlagueCountdown > 0:
 				data.players[iPlayer].iPlagueCountdown -= 1
 				if data.players[iPlayer].iPlagueCountdown == 2:
@@ -80,11 +80,11 @@ def startPlagues(iGameTurn):
 	if data.bNoPlagues:
 		return
 
-	for iPlagueID, iPlagueDate in enumerate(data.lGenericPlagueDates):
+	for iPlague, iPlagueDate in enumerate(data.lGenericPlagueDates):
 		if iGameTurn == iPlagueDate:
-			startPlague(iPlagueID)
+			startPlague(iPlague)
 
-		if iPlagueID >= 1:
+		if iPlague >= 1:
 			#retry if the epidemic is dead too quickly
 			if iGameTurn == iPlagueDate + 4:
 				iInfectedCounter = 0
@@ -92,16 +92,16 @@ def startPlagues(iGameTurn):
 					if data.players[iPlayer].iPlagueCountdown > 0:
 						iInfectedCounter += 1
 				if iInfectedCounter == 1:
-					startPlague(iPlagueID)
+					startPlague(iPlague)
 
-		if iPlagueID == 2 or iPlagueID == 3:
+		if iPlague == 2 or iPlague == 3:
 			if iGameTurn == iPlagueDate + 8:
 				iInfectedCounter = 0
 				for iPlayer in players.all().barbarian():
 					if data.players[iPlayer].iPlagueCountdown > 0:
 						iInfectedCounter += 1
 				if iInfectedCounter <= 2:
-					startPlague(iPlagueID)
+					startPlague(iPlague)
 
 
 @handler("BeginPlayerTurn")
@@ -177,23 +177,23 @@ def acquireVaccine(iTech, iTeam, iPlayer):
 			data.players[iPlayer].iPlagueCountdown = 1
 
 
-def calculateTotalPlagueHealth(iPlayer, iPlagueID):
+def calculateTotalPlagueHealth(iPlayer, iPlague):
 	iHealth = calculateHealth(iPlayer) / 2
 	
 	if player(iPlayer).calculateTotalCityHealthiness() > 0:
 		iHealth += rand(40)
 		
-		if iPlagueID == 0: # Columbian exchange plague
+		if iPlague == 0: # Columbian exchange plague
 			if civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
 				iHealth -= 5
 	
 	return iHealth
 
 
-def startPlague(iPlagueID):
-	iPlayer = players.major().alive().where(isVulnerable).minimum(lambda iPlayer: calculateTotalPlagueHealth(iPlayer, iPlagueID))
+def startPlague(iPlague):
+	iPlayer = players.major().existing().where(isVulnerable).minimum(lambda iPlayer: calculateTotalPlagueHealth(iPlayer, iPlague))
 	
-	if iPlayer and calculateTotalPlagueHealth(iPlayer, iPlagueID) <= 200:
+	if iPlayer and calculateTotalPlagueHealth(iPlayer, iPlague) <= 200:
 		city = cities.owner(iPlayer).random()
 		if city:
 			spreadPlague(iPlayer)

@@ -5302,18 +5302,6 @@ class CvMainInterface:
 				self.setFieldofView_Text(screen)
 				MainOpt.setFieldOfView(self.iField_View)
 # BUG - field of view slider - end
-			
-		# Leoreth: sacrifice Aztec slaves -> MacAurther: Mesoamerican RP
-		if (inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10000 and inputClass.getData2() == 10000):
-			self.pPushedButtonUnit = g_pSelectedUnit
-			iX = self.pPushedButtonUnit.getX()
-			iY = self.pPushedButtonUnit.getY()
-			city = gc.getMap().plot(iX, iY).getPlotCity()
-			city.changeHappinessTimer(turns(10))
-			city.setWeLoveTheKingDay(True)
-			self.pPushedButtonUnit.kill(False, city.getOwner())
-			
-			events.fireEvent("sacrificeHappiness", city.getOwner(), city)
 
 		return 0
 	

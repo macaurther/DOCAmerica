@@ -18,16 +18,7 @@ iAmerica	: 20,
 
 def getCatholicPreference(iPlayer):
 	return dCatholicPreference[iPlayer]
-
-
-@handler("buildingBuilt")	
-def onBuildingBuilt(city, iBuilding):
-	iPlayer = city.getOwner()
-
-	if iBuilding == iHinduTemple:
-		if game.isReligionFounded(iBuddhism): return
-		player(city).foundReligion(iBuddhism, iBuddhism, True)
-
+	
 
 @handler("BeginGameTurn")
 def foundReligions():
@@ -92,7 +83,7 @@ def checkLateReligionFounding(iReligion, iTech):
 	if game.isReligionFounded(iReligion):
 		return
 		
-	allPlayers = players.major().alive()
+	allPlayers = players.major().existing()
 	techPlayers = allPlayers.tech(iTech)
 				
 	if 2 * techPlayers.count() >= allPlayers.count():

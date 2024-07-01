@@ -1032,7 +1032,7 @@ enum BonusClassTypes			// Exposed to Python
 enum ImprovementTypes			// Exposed to Python
 {
 	NO_IMPROVEMENT = -1,
-	
+
 	IMPROVEMENT_LAND_WORKED,
 	IMPROVEMENT_WATER_WORKED,
 	IMPROVEMENT_CITY_RUINS,
@@ -1079,22 +1079,6 @@ enum RiverTypes						// Exposed to Python
 enum GoodyTypes						// Exposed to Python
 {
 	NO_GOODY = -1,
-
-	GOODY_LOW_GOLD,
-	GOODY_HIGH_GOLD,
-	GOODY_MAP,
-	GOODY_SETTLER,
-	GOODY_WARRIOR,
-	GOODY_SCOUT,
-	GOODY_WORKER,
-	GOODY_EXPERIENCE,
-	GOODY_HEALING,
-	GOODY_TECH,
-	GOODY_BARBARIANS_WEAK,
-	GOODY_BARBARIANS_STRONG,
-	GOODY_SLAVE,
-
-	NUM_GOODIES
 };
 
 enum BuildTypes						// Exposed to Python
@@ -1548,6 +1532,11 @@ enum SpaceShipInfoTypes
 enum ProcessTypes				// Exposed to Python
 {
 	NO_PROCESS = -1,
+
+	PROCESS_WEALTH,
+	PROCESS_RESEARCH,
+	PROCESS_CULTURE,
+	PROCESS_FOOD,
 };
 
 enum VoteTypes					// Exposed to Python
@@ -2086,6 +2075,7 @@ enum PromotionTypes				// Exposed to Python
 	PROMOTION_ACCURACY,
 	PROMOTION_FEINT1,
 	PROMOTION_FEINT2,
+	PROMOTION_RIVER_COMBAT,
 	PROMOTION_SENTRY,
 	PROMOTION_MOBILITY,
 	PROMOTION_NAVIGATION1,
@@ -2184,6 +2174,10 @@ enum CorporationTypes				// Exposed to Python
 enum HurryTypes						// Exposed to Python
 {
 	NO_HURRY = -1,
+
+	HURRY_POPULATION,
+	HURRY_GOLD_UNITS,
+	HURRY_GOLD_BUILDINGS,
 };
 
 enum UpkeepTypes					// Exposed to Python
@@ -3579,6 +3573,7 @@ enum ModifierTypes
 	MODIFIER_UNIT_UPKEEP,
 	MODIFIER_RESEARCH_COST,
 	MODIFIER_DISTANCE_MAINTENANCE,
+	MODIFIER_COLONY_MAINTENANCE,
 	MODIFIER_CITIES_MAINTENANCE,
 	MODIFIER_CIVIC_UPKEEP,
 	MODIFIER_HEALTH,

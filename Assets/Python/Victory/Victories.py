@@ -62,6 +62,14 @@ def onStateReligionChanged(iPlayer):
 		switchReligiousGoals(iPlayer)
 
 
+@handler("victory")
+def onVictory(iPlayer):
+	if iPlayer == active():
+		CyInterface().DoSoundtrack("AS2D_VICTORY")
+	else:
+		CyInterface().DoSoundtrack("AS2D_DEFEAT")
+
+
 	
 ### UTILITY FUNCTIONS ###
 
@@ -165,7 +173,7 @@ class HistoricalVictory(Victory):
 	@classmethod
 	def create(cls, iPlayer):
 		iCiv = civ(iPlayer)
-		return cls(iPlayer, dHistoricalGoals[iCiv])
+		return cls(iPlayer, dHistoricalGoals.get(iCiv, []))
 	
 	def enable(self):
 		Victory.enable(self)

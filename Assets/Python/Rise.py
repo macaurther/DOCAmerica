@@ -22,6 +22,9 @@ MainOpt = BugCore.game.MainInterface
 lExpandedFlipCivs = [
 ]
 
+lExpansionCivs = [
+]
+
 lIndependenceCivs = [
 	iAmerica,
 	iArgentina,
@@ -72,6 +75,11 @@ def initBirths():
 	
 	for birth in data.births:
 		birth.check()
+
+
+@handler("GameStart")
+def initCamera():
+	plot(dCapitals[active()]).cameraLookAt()
 
 
 @handler("BeginGameTurn")
@@ -302,10 +310,10 @@ def fragmentIndependents():
 
 @handler("BeginGameTurn")
 def checkMinorTechs():
-	iMinor = players.independent().existing().periodic(20)
+	iMinor = players.civs(iIndependent, iIndependent2, iIndependent3, iNative).existing().periodic(8)
 	if iMinor:
 		updateMinorTechs(iMinor, barbarian())
-
+	
 
 class Birth(object):
 
@@ -432,7 +440,7 @@ class Birth(object):
 		if self.iCiv in lExpandedFlipCivs:
 			owners = self.area.cities().owners().major()
 			ownerCities = cities.all().area(self.location).where(lambda city: city.getOwner() in owners).where(lambda city: not plot(city).isPlayerCore(city.getOwner()))
-			closerCities = ownerCities.where(lambda city: real_distance(city, self.location) <= real_distance(city, capital(city)) and real_distance(city, self.location) <= 14)
+			closerCities = ownerCities.where(lambda city: real_distance(city, self.location) <= real_distance(city, capital(city)))
 			
 			additionalPlots = closerCities.plots().expand(2).where(lambda p: p.getOwner() in owners and none(p.isPlayerCore(iPlayer) for iPlayer in players.major().existing().without(self.iPlayer)))
 			
@@ -512,7 +520,7 @@ class Birth(object):
 		peerRevealed = plots.none()
 		
 		def isPeerRevealed(plot):
-			iRequiredPeers = plot.isWater() and peers.count() / 2 or peers.count() * 2 / 3
+			iRequiredPeers = (plot.isWater() and self.team.isMapTrading()) and peers.count() / 2 or peers.count() * 2 / 3
 			return count(peer for peer in peers if plot.isRevealed(player(peer).getTeam(), False)) >= min(iRequiredPeers, peers.count()-1)
 		
 		if peers.count() > 2:
@@ -566,7 +574,7 @@ class Birth(object):
 		expelUnits(self.iPlayer, plots.surrounding(self.location), self.flippedArea())
 	
 		if plot_(self.location).isCity():
-			completeCityFlip(self.location, self.iPlayer, city_(self.location).getOwner(), 100)
+			completeCityFlip(self.location, self.iPlayer, city_(self.location).getOwner(), 100, bCreateGarrisons=False)
 		
 		if self.iCiv not in lInvasionCivs:
 			for city in cities.ring(self.location):
@@ -580,7 +588,7 @@ class Birth(object):
 		
 		for plot in plots.surrounding(self.location):
 			convertPlotCulture(plot, self.iPlayer, 100, bOwner=True)
-			
+		
 	def resetPlague(self):
 		self.data.iPlagueCountdown = -10
 		clearPlague(self.iPlayer)
@@ -654,6 +662,11 @@ class Birth(object):
 		
 		if not infos.civ(self.iCiv).isAIPlayable():
 			return False
+		
+		if autoplay():
+			if infos.civ(self.iCiv).getImpact() <= iImpactLimited:
+				if year(dBirth[active()]) > year(dFall[self.iCiv]):
+					return False
 		
 		# Mexico requires Aztecs to be dead
 		if self.iCiv == iMexico:
@@ -929,7 +942,7 @@ class Birth(object):
 		
 		for city in flippedCities:
 			city = completeCityFlip(city, self.iPlayer, city.getOwner(), 100, bFlipUnits=True)
-			city.rebuild()
+			city.rebuild(-1)
 			
 			iMinPopulation = self.player.getCurrentEra() + 1
 			city.setPopulation(max(iMinPopulation, city.getPopulation()))

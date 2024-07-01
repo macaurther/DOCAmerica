@@ -53,9 +53,13 @@ class CvTechChooser:
 
 
 
-	def interfaceScreen(self):
+	def interfaceScreen(self, iPlayer = None):
 		''
-		self.iPlayer = CyGame().getActivePlayer()
+		if iPlayer is not None:
+			self.iPlayer = iPlayer
+		else:
+			self.iPlayer = CyGame().getActivePlayer()
+		
 		if CyGame().isPitbossHost():
 			return
 
@@ -191,7 +195,7 @@ class CvTechChooser:
 			screen.setActivation("CivDropDown", ActivationTypes.ACTIVATE_MIMICPARENTFOCUS)
 			for j in xrange(gc.getMAX_PLAYERS()):
 				if gc.getPlayer(j).isAlive():
-					screen.addPullDownString("CivDropDown", gc.getPlayer(j).getName(), j, j, self.iPlayer == j)
+					screen.addPullDownString("CivDropDown", gc.getPlayer(j).getCivilizationShortDescription(0), j, j, self.iPlayer == j)
 
 		# Check Redraw
 		if screen.isPersistent() and not (self.bResearched or self.bBuilt):
@@ -655,7 +659,7 @@ class CvTechChooser:
 				elif type == "CustomEffect":
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_GENERAL_QUESTIONMARK").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
-				
+
 				fX += self.X_INCREMENT
 				
 			if len(lRemoves) > 0:
@@ -800,6 +804,10 @@ class CvTechChooser:
 			if player.isResearchingTech(tech):
 				szText += str(iQueue) + ". "
 			szText += TechInfo.getDescription()
+			
+			# Leoreth: display tech spread
+			# szText += " (%d/%d)" % (players.major().alive().where(lambda p: gc.getTeam(p).isHasTech(tech)).count(), players.major().alive().count())
+			
 			screen.setTextAt(szTechID, "TechList", szText, CvUtil.FONT_LEFT_JUSTIFY, iX + self.TECH_ICON_SIZE + 12, iY + 12, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_TECH_TREE, tech, -1)
 			screen.setActivation(szTechID, ActivationTypes.ACTIVATE_MIMICPARENTFOCUS)
 			screen.setHitTest(szTechID, HitTestTypes.HITTEST_NOHIT)
@@ -881,7 +889,7 @@ class CvTechChooser:
 					
 			flavor = lambda x: gc.getTechInfo(x).getFlavorValue(iFlavor)
 
-			lTechs = [i for i in xrange(gc.getNumTechInfos()) if gc.getPlayer(self.iPlayer).canResearch(i, False)]
+			lTechs = [i for i in xrange(gc.getNumTechInfos()) if gc.getPlayer(self.iPlayer).canResearch(i, False) if flavor(i) > 0]
 			iFirstDiscovery = find_max(lTechs, flavor).result
 			
 			iSecondDiscovery = None
@@ -961,9 +969,9 @@ class CvTechChooser:
 		# Debug
 		elif inputClass.getFunctionName() == "CivDropDown":
 			iIndex = screen.getSelectedPullDownID("CivDropDown")
-			self.iPlayer = screen.getPullDownData("CivDropDown", iIndex)
+			iPlayer = screen.getPullDownData("CivDropDown", iIndex)
 			screen.setPersistent(False)
-			self.interfaceScreen()
+			self.interfaceScreen(iPlayer)
 			return
 
 		# Advanced Start

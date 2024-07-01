@@ -20,7 +20,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AME</Identifier>
 			<Region>ANG</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1775</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
@@ -158,7 +158,7 @@
 			<ShortDescription>TXT_KEY_CIV_ARGENTINA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_ARGENTINA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_ARGENTINA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_VERY_LIGHT_BLUE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ARGENTINA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -166,7 +166,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>ARG</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>45</LoadingTime>
@@ -282,7 +282,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>AZT</Identifier>
 			<Region>MES</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>1250</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
@@ -405,7 +405,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>BRA</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -521,7 +521,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>CAN</Identifier>
 			<Region>ANG</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1867</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>60</LoadingTime>
@@ -649,7 +649,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>CHM</Identifier>
 			<Region>AND</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>900</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -738,7 +738,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>COL</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -846,7 +846,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>ENG</Identifier>
 			<Region>EUR</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1607</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
@@ -982,7 +982,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>FRA</Identifier>
 			<Region>EUR</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1608</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
@@ -1209,7 +1209,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAI</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1804</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -1326,7 +1326,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>HAW</Identifier>
 			<Region>PAC</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>1650</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
@@ -1421,7 +1421,7 @@
 			<ShortDescription>TXT_KEY_CIV_INCA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_INCA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_INCA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_CYAN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_OCHRE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_INCA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
@@ -1429,7 +1429,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>INC</Identifier>
 			<Region>AND</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>1100</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
@@ -1532,7 +1532,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>INU</Identifier>
 			<Region>ARC</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>950</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
@@ -1643,7 +1643,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>IRO</Identifier>
 			<Region>WIL</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>20</LoadingTime>
@@ -1779,7 +1779,7 @@
 			<ShortDescription>TXT_KEY_CIV_MAYA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_MAYA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MAYA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_GREYISH_CYAN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_VERY_DARK_CYAN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MAYA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
@@ -1787,7 +1787,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>MAY</Identifier>
 			<Region>MES</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>-500</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -1895,7 +1895,7 @@
 			<ShortDescription>TXT_KEY_CIV_MEXICO_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_MEXICO_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MEXICO_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_GREEN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MEXICO</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -1903,7 +1903,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>MEX</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1810</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -2018,7 +2018,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
 			<Region>WIL</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>600</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2139,7 +2139,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>MUI</Identifier>
 			<Region>AND</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>800</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2229,7 +2229,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>HOL</Identifier>
 			<Region>EUR</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1625</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>50</LoadingTime>
@@ -2400,7 +2400,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>NOR</Identifier>
 			<Region>EUR</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>874</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
@@ -2571,7 +2571,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>PER</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1822</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -2667,7 +2667,7 @@
 			<ShortDescription>TXT_KEY_CIV_PORTUGAL_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_PORTUGAL_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_DARK_DARK_GREEN</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_VERY_LIGHT_BLUE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_PORTUGAL</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_EUROPEAN</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_EUROPEAN</UnitArtStyleType>
@@ -2675,7 +2675,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>POR</Identifier>
 			<Region>EUR</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1532</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
@@ -2814,7 +2814,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
 			<Region>WIL</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>750</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>10</LoadingTime>
@@ -2902,7 +2902,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>PUR</Identifier>
 			<Region>MES</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>1150</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>15</LoadingTime>
@@ -2988,7 +2988,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>RUS</Identifier>
 			<Region>EUR</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1743</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>40</LoadingTime>
@@ -3147,7 +3147,7 @@
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>SIO</Identifier>
 			<Region>WIL</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>1475</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>25</LoadingTime>
@@ -3247,7 +3247,7 @@
 			<Impact>IMPACT_CRITICAL</Impact>
 			<Identifier>SPA</Identifier>
 			<Region>EUR</Region>
-			<CultureGroup>2</CultureGroup>
+			<CultureGroup>1</CultureGroup>
 			<StartingYear>1492</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>30</LoadingTime>
@@ -3373,7 +3373,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TEO</Identifier>
 			<Region>MES</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>-200</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>5</LoadingTime>
@@ -3486,7 +3486,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>TIW</Identifier>
 			<Region>AND</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>110</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>
@@ -3575,7 +3575,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>VEN</Identifier>
 			<Region>LAT</Region>
-			<CultureGroup>3</CultureGroup>
+			<CultureGroup>2</CultureGroup>
 			<StartingYear>1831</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>55</LoadingTime>
@@ -3679,7 +3679,7 @@
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>WAR</Identifier>
 			<Region>AND</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>500</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>5</LoadingTime>
@@ -3767,7 +3767,7 @@
 			<Impact>IMPACT_SIGNIFICANT</Impact>
 			<Identifier>ZAP</Identifier>
 			<Region>MES</Region>
-			<CultureGroup>1</CultureGroup>
+			<CultureGroup>0</CultureGroup>
 			<StartingYear>-500</StartingYear>
 			<LoadingTimes>
 				<LoadingTime>0</LoadingTime>

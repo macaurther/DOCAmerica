@@ -3,15 +3,11 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_DESC</Tag>
-		<English>The Argentinians</English>
-		<French>
-			<Text>Les Argentins</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>The Argentinians</German>
-		<Italian>The Argentinians</Italian>
-		<Spanish>The Argentinians</Spanish>
+		<English>The Argentines</English>
+		<French>The Argentines</French>
+		<German>The Argentines</German>
+		<Italian>The Argentines</Italian>
+		<Spanish>The Argentines</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARGENTINA_PEOPLES</Tag>

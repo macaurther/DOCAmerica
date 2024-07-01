@@ -2,12 +2,12 @@ from Resources import setupScenarioResources
 from DynamicCivs import checkName
 from Slots import findSlot, addPlayer
 from GoalHandlers import event_handler_registry
+from Periods import dScenarioPeriods, setPeriod
 
 from Core import *
 from RFCUtils import *
+from Civilizations import *
 from Parsers import *
-
-from History import dColonistSpawns
 
 
 START_HISTORY = -500
@@ -125,6 +125,29 @@ WONDER_ORIGINAL_BUILDERS = {
 	iFloatingGardens : (iAztecs, 1350),
 }
 
+DEFAULT_CIV_DESCRIPTIONS = {}
+
+
+@handler("fontsLoaded")
+def loadCivDescriptions():
+	global DEFAULT_CIV_DESCRIPTIONS
+	DEFAULT_CIV_DESCRIPTIONS = dict((iCiv, infos.civ(iCiv).getDescriptionKeyPersistent()) for iCiv in infos.civs())
+
+class Revealed(object):
+
+	def __init__(self, *args, **kwargs):
+		self.lLandRegions = kwargs.get("lLandRegions", [])
+		self.lCoastRegions = kwargs.get("lCoastRegions", [])
+		self.lSeaAreas = kwargs.get("lSeaAreas", [])
+	
+	def getArea(self):	
+		landPlots = plots.regions(*self.lLandRegions).where(CyPlot.isOwned)
+		coastPlots = plots.regions(*self.lCoastRegions).coastal().expand(1).water()
+		seaPlots = plots.sum(plots.rectangle(*tArea) for tArea in self.lSeaAreas).water()
+		
+		return landPlots + coastPlots + seaPlots
+			
+
 class Scenario(object):
 
 	def __init__(self, *args, **kwargs):
@@ -136,7 +159,11 @@ class Scenario(object):
 		self.dCivilizationDescriptions = kwargs.get("dCivilizationDescriptions", {})
 		
 		self.dOwnedTiles = kwargs.get("dOwnedTiles", {})
-		self.iOwnerBaseCulture = kwargs.get("iOwnerBaseCulture", 0)
+		self.iCultureTurns = kwargs.get("iCultureTurns", 0)
+		
+		self.lTribalVillages = kwargs.get("lTribalVillages", [])
+		
+		self.dRevealed = kwargs.get("dRevealed", {})
 		
 		self.dGreatPeopleCreated = kwargs.get("dGreatPeopleCreated", {})
 		self.dGreatGeneralsCreated = kwargs.get("dGreatGeneralsCreated", {})
@@ -162,6 +189,9 @@ class Scenario(object):
 			game.setMaxTurns(game.getEstimateEndTurn() - iStartTurn)
 		
 	def setupCivilizations(self):
+		for iCiv, description in DEFAULT_CIV_DESCRIPTIONS.items():
+			infos.civ(iCiv).setDescriptionKeyPersistent(description)
+	
 		for iCiv, description in self.dCivilizationDescriptions.items():
 			infos.civ(iCiv).setDescriptionKeyPersistent(description)
 	
@@ -229,6 +259,7 @@ class Scenario(object):
 		
 		setupScenarioResources()
 		
+		self.updatePeriods()
 		self.createStartingUnits()
 		
 		self.adjustTerritories()
@@ -236,6 +267,8 @@ class Scenario(object):
 		self.adjustReligions()
 		self.adjustWonders()
 		self.adjustGreatPeople()
+		
+		self.revealTiles()
 		
 		self.initDiplomacy()
 		
@@ -245,10 +278,9 @@ class Scenario(object):
 		self.updateNames()
 	
 	def adjustTerritories(self):
-		for plot in plots.all():
-			if plot.isOwned():
-				plot.changeCulture(plot.getOwner(), self.iOwnerBaseCulture, False)
-				convertPlotCulture(plot, plot.getOwner(), 100, False)
+		for city in cities.all():
+			for _ in range(turns(self.iCultureTurns)):
+				city.doPlotCulture(False, city.getOwner(), city.getModifiedCultureRate(), True)
 		
 		for iCiv, lTiles in self.dOwnedTiles.items():
 			for plot in plots.of(lTiles):
@@ -278,6 +310,16 @@ class Scenario(object):
 		for iCiv, iGreatGenerals in self.dGreatGeneralsCreated.items():
 			player(iCiv).changeGreatPeopleCreated(iGreatGenerals)
 
+	def revealTiles(self):
+		for iGroup, revealed in self.dRevealed.items():
+			revealedPlots = revealed.getArea()
+			revealedPlots = revealedPlots.expand(1).unique()
+			
+			for iPlayer in players.group(iGroup):
+				iTeam = player(iPlayer).getTeam()
+				for plot in revealedPlots + plots.birth(iPlayer) + plots.core(iPlayer):
+					plot.setRevealed(iTeam, True, False, -1)
+	
 	def initDiplomacy(self):
 		for iAttacker, iDefender, iWarPlan in self.lInitialWars:
 			team(iAttacker).declareWar(player(iDefender).getTeam(), False, iWarPlan)
@@ -294,3 +336,9 @@ class Scenario(object):
 	def updateNames(self):
 		for iPlayer in players.major():
 			checkName(iPlayer)
+	
+	def updatePeriods(self):
+		for iYear, dPeriods in dScenarioPeriods.items():
+			if self.iStartYear >= iYear:
+				for iCiv, iPeriod in dPeriods.items():
+					setPeriod(iCiv, iPeriod)

@@ -481,4 +481,36 @@
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADJECTIVE_COPAN</Tag>
+		<English>Copan</English>
+		<French>Copan</French>
+		<German>Copan</German>
+		<Italian>Copan</Italian>
+		<Spanish>Copan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADJECTIVE_NAZCA</Tag>
+		<English>Nazca</English>
+		<French>Nazca</French>
+		<German>Nazca</German>
+		<Italian>Nazca</Italian>
+		<Spanish>Nazca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADJECTIVE_MAPUCHE</Tag>
+		<English>Mapuche</English>
+		<French>Mapuche</French>
+		<German>Mapuche</German>
+		<Italian>Mapuche</Italian>
+		<Spanish>Mapuche</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ADJECTIVE_TEXAN</Tag>
+		<English>Texan</English>
+		<French>Texan</French>
+		<German>Texan</German>
+		<Italian>Texan</Italian>
+		<Spanish>Texan</Spanish>
+	</TEXT>
 </Civ4GameText>

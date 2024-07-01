@@ -61,8 +61,6 @@ CvPlayer::CvPlayer()
 	m_aiHappinessExtraYield = new int[NUM_YIELD_TYPES]; // Leoreth
 	m_aiUnhappinessExtraYield = new int[NUM_YIELD_TYPES]; // Leoreth
 	m_aiUnimprovedTileYield = new int[NUM_YIELD_TYPES]; // Leoreth
-	m_aiCapitalBonusYieldFromCivic = new int[NUM_YIELD_TYPES]; // FoB
-	m_aiCapitalBonusYields = new int[NUM_YIELD_TYPES]; // FoB
 	m_aiCommerceFlexibleCount = new int[NUM_COMMERCE_TYPES];
 	m_aiGoldPerTurnByPlayer = new int[MAX_PLAYERS];
 	m_aiEspionageSpendingWeightAgainstTeam = new int[MAX_TEAMS];
@@ -143,8 +141,6 @@ CvPlayer::~CvPlayer()
 	SAFE_DELETE_ARRAY(m_aiHappinessExtraYield); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiUnhappinessExtraYield); // Leoreth
 	SAFE_DELETE_ARRAY(m_aiUnimprovedTileYield); // Leoreth
-	SAFE_DELETE_ARRAY(m_aiCapitalBonusYieldFromCivic); // FoB
-	SAFE_DELETE_ARRAY(m_aiCapitalBonusYields); // FoB
 	SAFE_DELETE_ARRAY(m_aiCommerceFlexibleCount);
 	SAFE_DELETE_ARRAY(m_aiGoldPerTurnByPlayer);
 	SAFE_DELETE_ARRAY(m_aiEspionageSpendingWeightAgainstTeam);
@@ -339,6 +335,8 @@ void CvPlayer::init(PlayerTypes eID)
 				makeSpecialUnitValid((SpecialUnitTypes)iI);
 			}
 		}
+
+		applyCivilization(getCivilizationType(), 1);
 	}
 
 	AI_init();
@@ -494,45 +492,43 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iBuildingOnlyHealthyCount = 0;
 	m_iDistanceMaintenanceModifier = 0;
 	m_iNumCitiesMaintenanceModifier = 0;
+	m_iColonyMaintenanceModifier = 0;
 	m_iCorporationMaintenanceModifier = 0;
-	m_iCorporationCommerceModifier = 0; //Leoreth
+	m_iCorporationCommerceModifier = 0; // Leoreth
 	m_iCorporationUnhappinessModifier = 0; // Leoreth
-	m_iProcessModifier = 0; //Leoreth
+	m_iProcessModifier = 0; // Leoreth
 	m_iTotalMaintenance = 0;
 	m_iUpkeepModifier = 0;
 	m_iLevelExperienceModifier = 0;
 	m_iExtraHealth = 0;
-	m_iPollutionModifier = 0; //Leoreth
 	m_iBuildingGoodHealth = 0;
 	m_iBuildingBadHealth = 0;
 	m_iExtraHappiness = 0;
 	m_iBuildingHappiness = 0;
 	m_iLargestCityHappiness = 0;
-	m_iSpecialistHappiness = 0; // Leoreth
 	m_iWarWearinessPercentAnger = 0;
 	m_iWarWearinessModifier = 0;
 	m_iFreeSpecialist = 0;
-	m_iCoreFreeSpecialist = 0; //Leoreth
 	m_iNoForeignTradeCount = 0;
 	m_iNoForeignTradeModifierCount = 0; // Leoreth
 	m_iNoCorporationsCount = 0;
 	m_iNoForeignCorporationsCount = 0;
 	m_iCoastalTradeRoutes = 0;
 	m_iTradeRoutes = 0;
-	m_iCapitalTradeModifier= 0; // Leoreth
 	m_iDefensivePactTradeModifier = 0; // Leoreth
 	m_iVassalTradeModifier = 0; // Leoreth
-	m_iCapitalCommerce = 0; // Leoreth
-	m_iVassalCityCommerce = 0; // Leoreth
-	m_iCapitalPopulationCivicCombinedYield = 0; // FoB
-	m_iColonyCommerce = 0; // Leoreth
 	m_iCaptureGoldModifier = 0; // Leoreth
 	m_iSlaveryCount = 0; // Leoreth
 	m_iNoSlaveryCount = 0;
 	m_iColonialSlaveryCount = 0; // Leoreth
 	m_iNoResistanceCount = 0; // Leoreth
-	m_iNoTemporaryUnhappinessCount = 0; // Leoreth
-	m_iUnhappinessDecayModifier = 0; // Leoreth
+	m_iFoodProductionModifier = 0; // Leoreth
+	m_iCulturedCityFreeSpecialists = 0; // Leoreth
+	m_iCapitalBuildingProductionModifier = 0; // Leoreth
+	m_iFreeImprovementUpgradeCount = 0; // Leoreth
+	m_iShrineIncomeLimitChange = 0; // Leoreth
+	m_iNoStateReligionAnarchyCount = 0; // Leoreth
+	m_iOccupationTimeChange = 0; // Leoreth
 	m_iRevolutionTimer = 0;
 	m_iConversionTimer = 0;
 	m_iStateReligionCount = 0;
@@ -623,8 +619,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		m_aiHappinessExtraYield[iI] = 0; // Leoreth
 		m_aiUnhappinessExtraYield[iI] = 0; // Leoreth
 		m_aiUnimprovedTileYield[iI] = 0; // Leoreth
-		m_aiCapitalBonusYieldFromCivic[iI] = 0; // FoB
-		m_aiCapitalBonusYields[iI] = 0; // FoB
 	}
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
@@ -1793,6 +1787,9 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 	// Leoreth: track game turn of losing this city for previous owner
 	pNewCity->setGameTurnPlayerLost(eOldOwner, GC.getGameINLINE().getGameTurn());
 
+	// Leoreth: old owner knows who acquired their city
+	pNewCity->setRevealed(GET_PLAYER(eOldOwner).getTeam(), true);
+
 	int iTotalBuildingDamage = 0;
 
 	for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
@@ -1979,7 +1976,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		// Leoreth: not in territory associated with recently spawned civilizations
 		if (!isNoResistance() && !bExpansion && iTeamCulturePercent < GC.getDefineINT("OCCUPATION_CULTURE_PERCENT_THRESHOLD"))
 		{
-			iOccupationTime = getTurns((iOldCultureLevel + 1) * (100 - iTeamCulturePercent) / 100);
+			iOccupationTime = getTurns((iOldCultureLevel + 1) * (100 - iTeamCulturePercent) / 100 + getOccupationTimeChange());
 		}
 
 		if (iOccupationTime > 0)
@@ -3041,12 +3038,6 @@ void CvPlayer::doTurn()
 		setCommercePercent(COMMERCE_ESPIONAGE, 0);
 	}
 
-	// Leoreth
-	updateCapitalCommerce();
-
-	// FoB
-	updateCapitalPopulationBonusYields();
-
 	verifyGoldCommercePercent();
 
 	doGold();
@@ -3317,17 +3308,6 @@ void CvPlayer::updateExtraSpecialistYield()
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		pLoopCity->updateExtraSpecialistYield();
-	}
-}
-
-void CvPlayer::updateSpecialistHappiness()
-{
-	CvCity* pLoopCity;
-	int iLoop;
-
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		pLoopCity->recalculateSpecialistHappiness();
 	}
 }
 
@@ -3956,6 +3936,21 @@ int CvPlayer::countNumBuildings(BuildingTypes eBuilding) const
 }
 
 
+// Leoreth
+int CvPlayer::countSpecialists(SpecialistTypes eSpecialist) const
+{
+	int iCount = 0;
+
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		iCount += pLoopCity->getSpecialistCount(eSpecialist) + pLoopCity->getFreeSpecialistCount(eSpecialist);
+	}
+
+	return iCount;
+}
+
+
 int CvPlayer::countNumCitiesConnectedToCapital() const
 {
 	CvCity* pLoopCity;
@@ -4445,7 +4440,7 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 				return false;
 			}
 
-			if (!pCityTraded->isRevealed(GET_PLAYER(eWhoTo).getTeam(), false))
+			if (!GET_TEAM(GET_PLAYER(eWhoTo).getTeam()).isVassal(getTeam()) && !pCityTraded->isRevealed(GET_PLAYER(eWhoTo).getTeam(), false))
 			{
 				return false;
 			}
@@ -4922,6 +4917,45 @@ int CvPlayer::getNumTradeBonusImports(PlayerTypes ePlayer) const
 	return iCount;
 }
 
+int CvPlayer::getNumTradeBonusExports(PlayerTypes ePlayer) const
+{
+	CLLNode<TradeData>* pNode;
+	CvDeal* pLoopDeal;
+	int iCount;
+	int iLoop;
+
+	FAssert(ePlayer != getID());
+
+	iCount = 0;
+
+	for (pLoopDeal = GC.getGameINLINE().firstDeal(&iLoop); pLoopDeal != NULL; pLoopDeal = GC.getGameINLINE().nextDeal(&iLoop))
+	{
+		if ((pLoopDeal->getFirstPlayer() == getID()) && (pLoopDeal->getSecondPlayer() == ePlayer))
+		{
+			for (pNode = pLoopDeal->headFirstTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextFirstTradesNode(pNode))
+			{
+				if (pNode->m_data.m_eItemType == TRADE_RESOURCES)
+				{
+					iCount++;
+				}
+			}
+		}
+
+		if ((pLoopDeal->getFirstPlayer() == ePlayer) && (pLoopDeal->getSecondPlayer() == getID()))
+		{
+			for (pNode = pLoopDeal->headSecondTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextSecondTradesNode(pNode))
+			{
+				if (pNode->m_data.m_eItemType == TRADE_RESOURCES)
+				{
+					iCount++;
+				}
+			}
+		}
+	}
+
+	return iCount;
+}
+
 
 bool CvPlayer::isTradingWithTeam(TeamTypes eTeam, bool bIncludeCancelable) const
 {
@@ -5304,8 +5338,6 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 {
 	CvCity* pCity;
 	UnitTypes eUnit;
-	bool bTechFound;
-	int iI;
 
 	if (GC.getGoodyInfo(eGoody).getExperience() > 0)
 	{
@@ -5822,7 +5854,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 				{
 					if (pLoopPlot->isCity())
 					{
-						if (pLoopPlot->area() == pPlot->area())
+						//if (pLoopPlot->area() == pPlot->area())
 						{
 							return false;
 						}
@@ -5835,24 +5867,12 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 	//Leoreth: prevent AI from settling on food resources
 	if (!isHuman())
 	{
-		BonusTypes bonus = pPlot->getBonusType();
-		if (bonus != NO_BONUS)
+		BonusTypes eBonus = pPlot->getBonusType();
+		if (eBonus != NO_BONUS)
 		{
-			switch ((int)bonus)
+			if (GC.getBonusInfo(eBonus).getYieldChange(YIELD_FOOD) > 0)
 			{
-			case BONUS_BANANA:
-			case BONUS_CORN:
-			case BONUS_COW:
-			case BONUS_DEER:
-			case BONUS_PIG:
-			case BONUS_RICE:
-			case BONUS_SHEEP:
-			case BONUS_WHEAT:
-			case BONUS_BISON:
 				return false;
-				break;
-			default:
-				break;
 			}
 		}
 	}
@@ -5990,8 +6010,7 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 
 	eUnitClass = ((UnitClassTypes)(GC.getUnitInfo(eUnit).getUnitClassType()));
 
-	// MacAurther TODO: Figure out who's spamming this assert
-	//FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
+	// FAssert(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) == eUnit);
 	if (GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass) != eUnit)
 	{
 		return false;
@@ -6507,6 +6526,11 @@ bool CvPlayer::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisibl
 
 bool CvPlayer::canMaintain(ProcessTypes eProcess, bool bContinue) const
 {
+	if (GC.getProcessInfo(eProcess).getTechPrereq() == NO_TECH)
+	{
+		return false;
+	}
+	
 	if (!(GET_TEAM(getTeam()).isHasTech((TechTypes)(GC.getProcessInfo(eProcess).getTechPrereq()))))
 	{
 		return false;
@@ -6608,8 +6632,8 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	iProductionNeeded *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iProductionNeeded /= 100;
 
-	iProductionNeeded *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
-	iProductionNeeded /= 100;
+	//iProductionNeeded *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
+	//iProductionNeeded /= 100;
 
 	// Leoreth
 	if (GC.getUnitInfo(eUnit).isWorker())
@@ -6664,13 +6688,18 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	iProductionNeeded *= iCostModifier;
 	iProductionNeeded /= 100;
 
+	/*if (GC.getUnitInfo(eUnit).isFound())
+	{
+		iProductionNeeded *= 2;
+	}*/
+
 	// increase unit cost with era
-	int iEraModifier = 100;
+	/*int iEraModifier = 100;
 	if (GC.getUnitInfo(eUnit).isFoodProduction())
 	{
 		iEraModifier += 5 * getCurrentEra();
 
-		if (getCurrentEra() > ERA_REVOLUTIONARY) iEraModifier += 5 * getCurrentEra();
+		if (getCurrentEra() > ERA_RENAISSANCE) iEraModifier += 5 * getCurrentEra();
 	}
 	else
 	{
@@ -6678,7 +6707,7 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	}
 
 	iProductionNeeded *= iEraModifier;
-	iProductionNeeded /= 100;
+	iProductionNeeded /= 100;*/
 
 	return std::max(1, iProductionNeeded);
 }
@@ -6807,7 +6836,7 @@ int CvPlayer::getProductionModifier(UnitTypes eUnit) const
 	return iMultiplier;
 }
 
-int CvPlayer::getProductionModifier(BuildingTypes eBuilding) const
+int CvPlayer::getProductionModifier(BuildingTypes eBuilding, bool bHurry) const
 {
 	int iMultiplier = 0;
 	for (int iI = 0; iI < GC.getNumTraitInfos(); iI++)
@@ -6823,8 +6852,17 @@ int CvPlayer::getProductionModifier(BuildingTypes eBuilding) const
 		}
 	}
 
-	// Leoreth: civics
-	iMultiplier += getBuildingProductionModifier(eBuilding);
+	// Leoreth: civics building production modifier
+	if (!bHurry)
+	{
+		iMultiplier += getBuildingProductionModifier(eBuilding);
+	}
+
+	// Leoreth: capital building production modifier
+	if (getCapitalCity() != NULL && getCapitalCity()->isHasRealBuilding(eBuilding))
+	{
+		iMultiplier += getCapitalBuildingProductionModifier();
+	}
 
 	if (::isWorldWonderClass((BuildingClassTypes)(GC.getBuildingInfo(eBuilding).getBuildingClassType())))
 	{
@@ -7190,7 +7228,7 @@ int CvPlayer::getImprovementUpgradeRate() const
 {
 	int iRate;
 
-	iRate = 2; // XXX
+	iRate = 100; // XXX
 
 	iRate *= std::max(0, (getImprovementUpgradeRateModifier() + 100));
 	iRate /= 100;
@@ -7363,15 +7401,6 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 {
 	int iSupport;
 
-	// Leoreth: help AIs, especially those that start with large stacks, so they don't disband them
-	if (!isHuman())
-	{
-		if (GC.getGame().getGameTurn() < getLastBirthTurn() + getTurns(20))
-		{
-			return 0;
-		}
-	}
-
 	iFreeUnits = GC.getHandicapInfo(getHandicapType()).getFreeUnits();
 
 	iFreeUnits += getBaseFreeUnits();
@@ -7420,12 +7449,11 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 		iSupport /= 100;
 	}
 
-	//Rhye - start (modern units cost more)
-	if (getCurrentEra() >= 2) { //medieval
-		iSupport *= (3*(getCurrentEra()-1) + 100); //100-100-103-106-109-112
-		iSupport /= 100;
+	// Leoreth: independents pay less
+	if (isIndependent())
+	{
+		iSupport /= 2;
 	}
-	//Rhye - end
 
 	FAssert(iSupport >= 0);
 
@@ -7436,12 +7464,6 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 int CvPlayer::calculateUnitCost() const
 {
 	if (isAnarchy())
-	{
-		return 0;
-	}
-
-	// Leoreth: independents do not have to pay unit costs
-	if (isIndependent())
 	{
 		return 0;
 	}
@@ -8094,8 +8116,8 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 
 bool CvPlayer::isCivicValid(CivicTypes eCivic) const
 {
-	int cultureGroup = GC.getCivicInfo(eCivic).getCultureGroup();
-	return (cultureGroup == GC.getCivilizationInfo(getCivilizationType()).getCultureGroup()) || cultureGroup == 0;
+	CultureGroups civicCultureGroup = (CultureGroups)GC.getCivicInfo(eCivic).getCultureGroup();
+	return (civicCultureGroup == (CultureGroups)GC.getCivilizationInfo(getCivilizationType()).getCultureGroup());
 }
 
 
@@ -8693,6 +8715,11 @@ int CvPlayer::getReligionAnarchyLength() const
 		return 0;
 	}
 
+	if (isNoStateReligionAnarchy())
+	{
+		return 0;
+	}
+
 	//Rhye - start comment
 	/*if (isGoldenAge())
 	{
@@ -8868,7 +8895,7 @@ void CvPlayer::killGoldenAgeUnits(CvUnit* pUnitAlive)
 			if (pLoopUnit->isGoldenAge())
 			{
 				//if (!(pabUnitUsed[pLoopUnit->getUnitType()]))
-				if (pLoopUnit->getSettledSpecialist() != NO_SPECIALIST && !pabSpecialistUsed[pLoopUnit->getSettledSpecialist()])
+				if (pLoopUnit->getSettledSpecialist() != NO_SPECIALIST && !pabSpecialistUsed[pLoopUnit->getSettledSpecialist()] && pLoopUnit != pUnitAlive)
 				{
 					iValue = 10000;
 
@@ -9118,7 +9145,9 @@ int CvPlayer::getGold() const
 
 void CvPlayer::setGold(int iNewValue)
 {
-	if (getGold() != iNewValue)
+	int iOldValue = getGold();
+
+	if (iOldValue != iNewValue)
 	{
 		m_iGold = iNewValue;
 
@@ -9215,7 +9244,9 @@ void CvPlayer::changeGoldenAgeTurns(int iChange)
 
 	//Rhye - start
 	if (isMinorCiv())
+	{
 		return;
+	}
 	//Rhye - end
 
 	if (iChange != 0)
@@ -10223,6 +10254,25 @@ void CvPlayer::changeNumCitiesMaintenanceModifier(int iChange)
 }
 
 
+// Leoreth
+int CvPlayer::getColonyMaintenanceModifier() const
+{
+	return m_iColonyMaintenanceModifier;
+}
+
+
+// Leoreth
+void CvPlayer::changeColonyMaintenanceModifier(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iColonyMaintenanceModifier += iChange;
+
+		updateMaintenance();
+	}
+}
+
+
 int CvPlayer::getCorporationMaintenanceModifier() const
 {
 	return m_iCorporationMaintenanceModifier;
@@ -10367,22 +10417,6 @@ void CvPlayer::changeExtraHealth(int iChange)
 	}
 }
 
-//Leoreth
-int CvPlayer::getPollutionModifier() const
-{
-	return m_iPollutionModifier;
-}
-
-//Leoreth
-void CvPlayer::changePollutionModifier(int iChange)
-{
-	if (iChange != 0)
-	{
-		m_iPollutionModifier += iChange;
-
-		AI_makeAssignWorkDirty();
-	}
-}
 
 int CvPlayer::getBuildingGoodHealth() const
 {
@@ -10472,20 +10506,18 @@ void CvPlayer::changeLargestCityHappiness(int iChange)
 
 
 // Leoreth
-int CvPlayer::getSpecialistHappiness() const
+int CvPlayer::getCulturedCityFreeSpecialists() const
 {
-	return m_iSpecialistHappiness;
+	return m_iCulturedCityFreeSpecialists;
 }
 
 
-// Leoreth
-void CvPlayer::changeSpecialistHappiness(int iChange)
+void CvPlayer::changeCulturedCityFreeSpecialists(int iChange)
 {
 	if (iChange != 0)
 	{
-		m_iSpecialistHappiness += iChange;
+		m_iCulturedCityFreeSpecialists += iChange;
 
-		updateSpecialistHappiness();
 		AI_makeAssignWorkDirty();
 	}
 }
@@ -10590,24 +10622,6 @@ void CvPlayer::changeFreeSpecialist(int iChange)
 	{
 		m_iFreeSpecialist = (m_iFreeSpecialist + iChange);
 		FAssert(getFreeSpecialist() >= 0);
-
-		AI_makeAssignWorkDirty();
-	}
-}
-
-//Leoreth
-int CvPlayer::getCoreFreeSpecialist() const
-{
-	return m_iCoreFreeSpecialist;
-}
-
-//Leoreth
-void CvPlayer::changeCoreFreeSpecialist(int iChange)
-{
-	if (iChange != 0)
-	{
-		m_iCoreFreeSpecialist += iChange;
-		FAssert(getCoreFreeSpecialist() >= 0);
 
 		AI_makeAssignWorkDirty();
 	}
@@ -10750,25 +10764,6 @@ void CvPlayer::changeTradeRoutes(int iChange)
 
 
 // Leoreth
-int CvPlayer::getCapitalTradeModifier() const
-{
-	return m_iCapitalTradeModifier;
-}
-
-
-// Leoreth
-void CvPlayer::changeCapitalTradeModifier(int iChange) 
-{
-	if (iChange != 0)
-	{
-		m_iCapitalTradeModifier += iChange;
-
-		updateTradeRoutes();
-	}
-}
-
-
-// Leoreth
 int CvPlayer::getDefensivePactTradeModifier() const
 {
 	return m_iDefensivePactTradeModifier;
@@ -10807,44 +10802,6 @@ void CvPlayer::changeVassalTradeModifier(int iChange)
 
 
 // Leoreth
-int CvPlayer::getVassalCityCommerce() const
-{
-	return m_iVassalCityCommerce;
-}
-
-
-// Leoreth
-void CvPlayer::changeVassalCityCommerce(int iChange)
-{
-	if (iChange != 0)
-	{
-		m_iVassalCityCommerce += iChange;
-
-		updateCapitalCommerce();
-	}
-}
-
-
-// Leoreth
-int CvPlayer::getColonyCommerce() const
-{
-	return m_iColonyCommerce;
-}
-
-
-// Leoreth
-void CvPlayer::changeColonyCommerce(int iChange)
-{
-	if (iChange != 0)
-	{
-		m_iColonyCommerce += iChange;
-
-		updateCapitalCommerce();
-	}
-}
-
-
-// Leoreth
 int CvPlayer::getCaptureGoldModifier() const
 {
 	return m_iCaptureGoldModifier;
@@ -10859,6 +10816,29 @@ void CvPlayer::changeCaptureGoldModifier(int iChange)
 		m_iCaptureGoldModifier += iChange;
 	}
 }
+
+
+// Leoreth
+int CvPlayer::getCapitalBuildingProductionModifier() const
+{
+	return m_iCapitalBuildingProductionModifier;
+}
+
+
+// Leoreth
+void CvPlayer::changeCapitalBuildingProductionModifier(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iCapitalBuildingProductionModifier += iChange;
+
+		if (getTeam() == GC.getGameINLINE().getActiveTeam())
+		{
+			gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
+		}
+	}
+}
+
 
 // Leoreth
 bool CvPlayer::isSlavery() const
@@ -10959,7 +10939,10 @@ int CvPlayer::getStateReligionCount() const
 
 bool CvPlayer::isStateReligion() const
 {
-	if (isMinorCiv() || isBarbarian()) return false;
+	if (isMinorCiv() || isBarbarian())
+	{
+		return false;
+	}
 
 	return (getStateReligionCount() > 0);
 }
@@ -11008,7 +10991,7 @@ int CvPlayer::getNoNonStateReligionSpreadCount() const
 
 bool CvPlayer::isNoNonStateReligionSpread() const
 {
-	return (getNoNonStateReligionSpreadCount() > 0);
+	return !isMinorCiv() && getNoNonStateReligionSpreadCount() > 0;
 }
 
 
@@ -11156,22 +11139,6 @@ void CvPlayer::setCapitalCity(CvCity* pNewCapitalCity)
 
 		updateMaintenance();
 		updateTradeRoutes();
-
-		if (pOldCapitalCity != NULL)
-		{
-			pOldCapitalCity->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, -getCapitalCommerce());
-			pOldCapitalCity->updateCommerce();
-
-			pOldCapitalCity->setInfoDirty(true);
-		}
-
-		if (pNewCapitalCity != NULL)
-		{
-			pNewCapitalCity->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, getCapitalCommerce());
-			pNewCapitalCity->updateCommerce();
-
-			pNewCapitalCity->setInfoDirty(true);
-		}
 	}
 }
 
@@ -12084,6 +12051,9 @@ void CvPlayer::setCivilizationType(CivilizationTypes iNewValue)
 		return;
 	}
 
+	applyCivilization(getCivilizationType(), -1);
+	applyCivilization(iNewValue, 1);
+
 	GC.getInitCore().setCiv(getID(), iNewValue);
 
 	setCivDescription(L"");
@@ -12126,6 +12096,12 @@ void CvPlayer::setCivilizationType(CivilizationTypes iNewValue)
 	GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CIV_ASSIGNED, getID(), (char*)NULL, iNewValue);
 }
 // edead: end
+
+
+void CvPlayer::applyCivilization(CivilizationTypes eCivilization, int iChange)
+{
+	
+}
 
 
 LeaderHeadTypes CvPlayer::getLeaderType() const
@@ -13999,54 +13975,6 @@ void CvPlayer::changeUnimprovedTileYield(YieldTypes eYield, int iChange)
 		updateYield();
 		AI_updateAssignWork();
 	}
-}
-
-// FoB
-void CvPlayer::changeCapitalBonusYieldFromCivics(YieldTypes eYield, int iChange)
-{
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(eYield > -1, "Index out of bounds");
-
-	if (iChange != 0)
-	{
-		m_iCapitalPopulationCivicCombinedYield += iChange;
-		m_aiCapitalBonusYieldFromCivic[eYield] += iChange;
-
-		updateYield();
-	}
-}
-
-// FoB
-int CvPlayer::getCapitalBonusYieldFromCivics(YieldTypes eYield) const
-{
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(eYield > -1, "Index out of bounds");
-
-	return m_aiCapitalBonusYieldFromCivic[eYield];
-}
-
-// FoB
-void CvPlayer::changeCapitalBonusYield(YieldTypes eYield, int iChange)
-{
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(eYield > -1, "Index out of bounds");
-
-	if (iChange != 0)
-	{
-		m_aiCapitalBonusYields[eYield] += iChange;
-
-		updateYield();
-		AI_updateAssignWork();
-	}
-}
-
-// FoB
-int CvPlayer::getCapitalBonusYield(YieldTypes eYield) const
-{
-	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(eYield > -1, "Index out of bounds");
-
-	return m_aiCapitalBonusYields[eYield];
 }
 
 int CvPlayer::getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIndex2) const
@@ -18144,13 +18072,13 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeStateReligionGreatPeopleRateModifier(GC.getCivicInfo(eCivic).getStateReligionGreatPeopleRateModifier() * iChange);
 	changeDistanceMaintenanceModifier(GC.getCivicInfo(eCivic).getDistanceMaintenanceModifier() * iChange);
 	changeNumCitiesMaintenanceModifier(GC.getCivicInfo(eCivic).getNumCitiesMaintenanceModifier() * iChange);
+	changeColonyMaintenanceModifier(GC.getCivicInfo(eCivic).getColonyMaintenanceModifier() * iChange); // Leoreth
 	changeCorporationMaintenanceModifier(GC.getCivicInfo(eCivic).getCorporationMaintenanceModifier() * iChange);
-	changeCorporationCommerceModifier(GC.getCivicInfo(eCivic).getCorporationCommerceModifier() * iChange); //Leoreth
+	changeCorporationCommerceModifier(GC.getCivicInfo(eCivic).getCorporationCommerceModifier() * iChange); // Leoreth
 	changeCorporationUnhappinessModifier(GC.getCivicInfo(eCivic).getCorporationUnhappinessModifier() * iChange); // Leoreth
 	changeMaxGlobalBuildingProductionModifier(GC.getCivicInfo(eCivic).getWonderProductionModifier() * iChange); // Leoreth
-	changeProcessModifier(GC.getCivicInfo(eCivic).getProcessModifier() * iChange); //Leoreth
+	changeProcessModifier(GC.getCivicInfo(eCivic).getProcessModifier() * iChange); // Leoreth
 	changeExtraHealth(GC.getCivicInfo(eCivic).getExtraHealth() * iChange);
-	changePollutionModifier(GC.getCivicInfo(eCivic).getPollutionModifier() * iChange); //Leoreth
 	changeFreeExperience(GC.getCivicInfo(eCivic).getFreeExperience() * iChange);
 	changeWorkerCostModifier(GC.getCivicInfo(eCivic).getWorkerCostModifier() * iChange); // Leoreth
 	changeWorkerSpeedModifier(GC.getCivicInfo(eCivic).getWorkerSpeedModifier() * iChange);
@@ -18168,22 +18096,15 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeNoUnhealthyPopulationCount((GC.getCivicInfo(eCivic).isNoUnhealthyPopulation()) ? iChange : 0);
 	changeBuildingOnlyHealthyCount((GC.getCivicInfo(eCivic).isBuildingOnlyHealthy()) ? iChange : 0);
 	changeLargestCityHappiness(GC.getCivicInfo(eCivic).getLargestCityHappiness() * iChange);
-	changeSpecialistHappiness(GC.getCivicInfo(eCivic).getSpecialistHappiness() * iChange); // Leoreth
 	changeWarWearinessModifier(GC.getCivicInfo(eCivic).getWarWearinessModifier() * iChange);
 	changeFreeSpecialist(GC.getCivicInfo(eCivic).getFreeSpecialist() * iChange);
-	changeCoreFreeSpecialist(GC.getCivicInfo(eCivic).getCoreFreeSpecialist() * iChange); //Leoreth
 	changeTradeRoutes(GC.getCivicInfo(eCivic).getTradeRoutes() * iChange);
-	changeCapitalTradeModifier(GC.getCivicInfo(eCivic).getCapitalTradeModifier() * iChange); // Leoreth
 	changeDefensivePactTradeModifier(GC.getCivicInfo(eCivic).getDefensivePactTradeModifier() * iChange); // Leoreth
 	changeVassalTradeModifier(GC.getCivicInfo(eCivic).getVassalTradeModifier() * iChange); // Leoreth
-	changeVassalCityCommerce(GC.getCivicInfo(eCivic).getVassalCityCommerce() * iChange); // Leoreth
-	changeColonyCommerce(GC.getCivicInfo(eCivic).getColonyCommerce() * iChange); // Leoreth
 	changeCaptureGoldModifier(GC.getCivicInfo(eCivic).getCaptureGoldModifier() * iChange); // Leoreth
 	changeSlaveryCount(GC.getCivicInfo(eCivic).isSlavery() * iChange); // Leoreth
 	changeNoSlaveryCount(GC.getCivicInfo(eCivic).isNoSlavery() * iChange); // Leoreth
 	changeColonialSlaveryCount(GC.getCivicInfo(eCivic).isColonialSlavery() * iChange); // Leoreth
-	changeNoResistanceCount(GC.getCivicInfo(eCivic).isNoResistance() * iChange); // Leoreth
-	changeNoTemporaryUnhappinessCount(GC.getCivicInfo(eCivic).isNoTemporaryUnhappiness() * iChange); // Leoreth
 	changeNoForeignTradeCount(GC.getCivicInfo(eCivic).isNoForeignTrade() * iChange);
 	changeNoForeignTradeModifierCount(GC.getCivicInfo(eCivic).isNoForeignTradeModifier() * iChange); // Leoreth
 	changeNoCorporationsCount(GC.getCivicInfo(eCivic).isNoCorporations() * iChange);
@@ -18198,6 +18119,13 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 	changeExpInBorderModifier(GC.getCivicInfo(eCivic).getExpInBorderModifier() * iChange);
 	changeLevelExperienceModifier(GC.getCivicInfo(eCivic).getLevelExperienceModifier() * iChange); // Leoreth
 	changeUnhappinessDecayModifier(GC.getCivicInfo(eCivic).getUnhappinessDecayModifier() * iChange); // Leoreth
+	changeFoodToProductionModifier(GC.getCivicInfo(eCivic).getFoodProductionModifier() * iChange); // Leoreth
+	changeCulturedCityFreeSpecialists(GC.getCivicInfo(eCivic).getCulturedCityFreeSpecialists() * iChange); // Leoreth
+	changeCapitalBuildingProductionModifier(GC.getCivicInfo(eCivic).getCapitalBuildingProductionModifier() * iChange); // Leoreth
+	changeFreeImprovementUpgradeCount(GC.getCivicInfo(eCivic).isFreeImprovementUpgrade() ? iChange : 0); // Leoreth
+	changeShrineIncomeLimitChange(GC.getCivicInfo(eCivic).getShrineIncomeLimitChange() * iChange); // Leoreth
+	changeNoStateReligionAnarchyCount(GC.getCivicInfo(eCivic).isNoStateReligionAnarchy() ? iChange : 0); // Leoreth
+	changeOccupationTimeChange(GC.getCivicInfo(eCivic).getOccupationTimeChange() * iChange); // Leoreth
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
@@ -18207,13 +18135,12 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 		changeHappinessExtraYield((YieldTypes)iI, GC.getCivicInfo(eCivic).getHappinessExtraYield(iI) * iChange);
 		changeUnhappinessExtraYield((YieldTypes)iI, GC.getCivicInfo(eCivic).getUnhappinessExtraYield(iI) * iChange);
 		changeUnimprovedTileYield((YieldTypes)iI, GC.getCivicInfo(eCivic).getUnimprovedTileYield(iI) * iChange);
-		changeCapitalBonusYieldFromCivics((YieldTypes)iI, GC.getCivicInfo(eCivic).getCapitalPopulationYieldModifier(iI) * iChange); //FoB
 		for (iJ = 0; iJ < GC.getNumSpecialistInfos(); iJ++)
 		{
-			changeSpecialistExtraYield(((SpecialistTypes)iJ), ((YieldTypes)iI), (GC.getCivicInfo(eCivic).getSpecialistExtraYield(iI) * iChange)); // Leoreth
+			changeSpecialistExtraYield((SpecialistTypes)iJ, (YieldTypes)iI, GC.getCivicInfo(eCivic).getSpecialistExtraYield(iI) * iChange); // Leoreth
+			changeSpecialistExtraYield((SpecialistTypes)iJ, (YieldTypes)iI, GC.getCivicInfo(eCivic).getSpecialistTypeExtraYield(iJ, iI) * iChange); // Leoreth
 		}
 	}
-	updateCapitalPopulationBonusYields();
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
@@ -18557,45 +18484,43 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iBuildingOnlyHealthyCount);
 	pStream->Read(&m_iDistanceMaintenanceModifier);
 	pStream->Read(&m_iNumCitiesMaintenanceModifier);
+	pStream->Read(&m_iColonyMaintenanceModifier); // Leoreth
 	pStream->Read(&m_iCorporationMaintenanceModifier);
-	pStream->Read(&m_iCorporationCommerceModifier); //Leoreth
+	pStream->Read(&m_iCorporationCommerceModifier); // Leoreth
 	pStream->Read(&m_iCorporationUnhappinessModifier); // Leoreth
-	pStream->Read(&m_iProcessModifier); //Leoreth
+	pStream->Read(&m_iProcessModifier); // Leoreth
 	pStream->Read(&m_iTotalMaintenance);
 	pStream->Read(&m_iUpkeepModifier);
 	pStream->Read(&m_iLevelExperienceModifier);
 	pStream->Read(&m_iExtraHealth);
-	pStream->Read(&m_iPollutionModifier); //Leoreth
 	pStream->Read(&m_iBuildingGoodHealth);
 	pStream->Read(&m_iBuildingBadHealth);
 	pStream->Read(&m_iExtraHappiness);
 	pStream->Read(&m_iBuildingHappiness);
 	pStream->Read(&m_iLargestCityHappiness);
-	pStream->Read(&m_iSpecialistHappiness); // Leoreth
 	pStream->Read(&m_iWarWearinessPercentAnger);
 	pStream->Read(&m_iWarWearinessModifier);
 	pStream->Read(&m_iFreeSpecialist);
-	pStream->Read(&m_iCoreFreeSpecialist); //Leoreth
 	pStream->Read(&m_iNoForeignTradeCount);
 	pStream->Read(&m_iNoForeignTradeModifierCount); // Leoreth
 	pStream->Read(&m_iNoCorporationsCount);
 	pStream->Read(&m_iNoForeignCorporationsCount);
 	pStream->Read(&m_iCoastalTradeRoutes);
 	pStream->Read(&m_iTradeRoutes);
-	pStream->Read(&m_iCapitalTradeModifier); // Leoreth
 	pStream->Read(&m_iDefensivePactTradeModifier); // Leoreth
 	pStream->Read(&m_iVassalTradeModifier); // Leoreth
-	pStream->Read(&m_iCapitalCommerce); // Leoreth
-	pStream->Read(&m_iVassalCityCommerce); // Leoreth
-	pStream->Read(&m_iCapitalPopulationCivicCombinedYield); // FoB
-	pStream->Read(&m_iColonyCommerce); // Leoreth
 	pStream->Read(&m_iCaptureGoldModifier); // Leoreth
 	pStream->Read(&m_iSlaveryCount); // Leoreth
 	pStream->Read(&m_iNoSlaveryCount); // Leoreth
 	pStream->Read(&m_iColonialSlaveryCount); // Leoreth
 	pStream->Read(&m_iNoResistanceCount); // Leoreth
-	pStream->Read(&m_iNoTemporaryUnhappinessCount); // Leoreth
-	pStream->Read(&m_iUnhappinessDecayModifier); // Leoreth
+	pStream->Read(&m_iFoodProductionModifier); // Leoreth
+	pStream->Read(&m_iCulturedCityFreeSpecialists); // Leoreth
+	pStream->Read(&m_iCapitalBuildingProductionModifier); // Leoreth
+	pStream->Read(&m_iFreeImprovementUpgradeCount); // Leoreth
+	pStream->Read(&m_iShrineIncomeLimitChange); // Leoreth
+	pStream->Read(&m_iNoStateReligionAnarchyCount); // Leoreth
+	pStream->Read(&m_iOccupationTimeChange); // Leoreth
 	pStream->Read(&m_iRevolutionTimer);
 	pStream->Read(&m_iConversionTimer);
 	pStream->Read(&m_iStateReligionCount);
@@ -18672,8 +18597,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_aiHappinessExtraYield); // Leoreth
 	pStream->Read(NUM_YIELD_TYPES, m_aiUnhappinessExtraYield); // Leoreth
 	pStream->Read(NUM_YIELD_TYPES, m_aiUnimprovedTileYield); // Leoreth
-	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalBonusYieldFromCivic); // FoB
-	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalBonusYields); // FoB
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiFreeCityCommerce);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommercePercent);
 	pStream->Read(NUM_COMMERCE_TYPES, m_aiCommerceRate);
@@ -18996,6 +18919,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iBuildingOnlyHealthyCount);
 	pStream->Write(m_iDistanceMaintenanceModifier);
 	pStream->Write(m_iNumCitiesMaintenanceModifier);
+	pStream->Write(m_iColonyMaintenanceModifier); // Leoreth
 	pStream->Write(m_iCorporationMaintenanceModifier);
 	pStream->Write(m_iCorporationCommerceModifier); // Leoreth
 	pStream->Write(m_iCorporationUnhappinessModifier); // Leoreth
@@ -19004,37 +18928,34 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iUpkeepModifier);
 	pStream->Write(m_iLevelExperienceModifier);
 	pStream->Write(m_iExtraHealth);
-	pStream->Write(m_iPollutionModifier); // Leoreth
 	pStream->Write(m_iBuildingGoodHealth);
 	pStream->Write(m_iBuildingBadHealth);
 	pStream->Write(m_iExtraHappiness);
 	pStream->Write(m_iBuildingHappiness);
 	pStream->Write(m_iLargestCityHappiness);
-	pStream->Write(m_iSpecialistHappiness); // Leoreth
 	pStream->Write(m_iWarWearinessPercentAnger);
 	pStream->Write(m_iWarWearinessModifier);
 	pStream->Write(m_iFreeSpecialist);
-	pStream->Write(m_iCoreFreeSpecialist); //Leoreth
 	pStream->Write(m_iNoForeignTradeCount);
 	pStream->Write(m_iNoForeignTradeModifierCount); // Leoreth
 	pStream->Write(m_iNoCorporationsCount);
 	pStream->Write(m_iNoForeignCorporationsCount);
 	pStream->Write(m_iCoastalTradeRoutes);
 	pStream->Write(m_iTradeRoutes);
-	pStream->Write(m_iCapitalTradeModifier); // Leoreth
 	pStream->Write(m_iDefensivePactTradeModifier); // Leoreth
 	pStream->Write(m_iVassalTradeModifier); // Leoreth
-	pStream->Write(m_iCapitalCommerce); // Leoreth
-	pStream->Write(m_iVassalCityCommerce); // Leoreth
-	pStream->Write(m_iCapitalPopulationCivicCombinedYield); // FoB
-	pStream->Write(m_iColonyCommerce); // Leoreth
 	pStream->Write(m_iCaptureGoldModifier); // Leoreth
 	pStream->Write(m_iSlaveryCount); // Leoreth
 	pStream->Write(m_iNoSlaveryCount); // Leoreth
 	pStream->Write(m_iColonialSlaveryCount); // Leoreth
 	pStream->Write(m_iNoResistanceCount); // Leoreth
-	pStream->Write(m_iNoTemporaryUnhappinessCount); // Leoreth
-	pStream->Write(m_iUnhappinessDecayModifier); // Leoreth
+	pStream->Write(m_iFoodProductionModifier); // Leoreth
+	pStream->Write(m_iCulturedCityFreeSpecialists); // Leoreth
+	pStream->Write(m_iCapitalBuildingProductionModifier); // Leoreth
+	pStream->Write(m_iFreeImprovementUpgradeCount); // Leoreth
+	pStream->Write(m_iShrineIncomeLimitChange); // Leoreth
+	pStream->Write(m_iNoStateReligionAnarchyCount); // Leoreth
+	pStream->Write(m_iOccupationTimeChange); // Leoreth
 	pStream->Write(m_iRevolutionTimer);
 	pStream->Write(m_iConversionTimer);
 	pStream->Write(m_iStateReligionCount);
@@ -19111,8 +19032,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_YIELD_TYPES, m_aiHappinessExtraYield); // Leoreth
 	pStream->Write(NUM_YIELD_TYPES, m_aiUnhappinessExtraYield); // Leoreth
 	pStream->Write(NUM_YIELD_TYPES, m_aiUnimprovedTileYield); // Leoreth
-	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalBonusYieldFromCivic); // FoB
-	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalBonusYields); // FoB
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiFreeCityCommerce);
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiCommercePercent);
 	pStream->Write(NUM_COMMERCE_TYPES, m_aiCommerceRate);
@@ -22916,7 +22835,7 @@ PlayerTypes CvPlayer::pickConqueredCityOwner(const CvCity& kCity) const
 	return getID();
 }
 
-bool CvPlayer::canHaveTradeRoutesWith(PlayerTypes ePlayer, bool bIgnoreAgreements) const
+bool CvPlayer::canHaveTradeRoutesWith(PlayerTypes ePlayer) const
 {
 	CvPlayer& kOtherPlayer = GET_PLAYER(ePlayer);
 
@@ -22930,7 +22849,7 @@ bool CvPlayer::canHaveTradeRoutesWith(PlayerTypes ePlayer, bool bIgnoreAgreement
 		return true;
 	}
 
-	if (GET_TEAM(getTeam()).isFreeTrade(kOtherPlayer.getTeam()) || (bIgnoreAgreements && !atWar(getTeam(), kOtherPlayer.getTeam())))
+	if (GET_TEAM(getTeam()).isFreeTrade(kOtherPlayer.getTeam()))
 	{
 		if (GET_TEAM(getTeam()).isVassal(kOtherPlayer.getTeam()))
 		{
@@ -24549,27 +24468,6 @@ int CvPlayer::countColonies() const
 	return iNumColonies;
 }
 
-int CvPlayer::countSlaveCities() const
-{
-	if (isMinorCiv() || getNumCities() == 0) return 0;
-	
-	int iNumSlaveCities = 0;
-
-	int iLoop, rid;
-	CvCity* pLoopCity;
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		/*rid = pLoopCity->getRegionID();
-		if (rid != REGION_BRITAIN && rid != REGION_IBERIA && rid != REGION_MAGHREB && rid != REGION_ITALY && rid != REGION_EUROPE && rid != REGION_RUSSIA && rid != REGION_SCANDINAVIA && rid != REGION_BALKANS && rid != REGION_ANATOLIA)
-		{
-			iNumSlaveCities++;
-		}*/
-		iNumSlaveCities++;
-	}
-
-	return iNumSlaveCities;
-}
-
 int CvPlayer::countVassalCities() const
 {
 	int iNumCities = 0;
@@ -25131,99 +25029,6 @@ int CvPlayer::calculateCitiesMaintenance() const
 	return iCitiesMaint / 100;
 }
 
-int CvPlayer::getCapitalCommerce() const
-{
-	return m_iCapitalCommerce;
-}
-
-void CvPlayer::updateCapitalCommerce()
-{
-	int iOldCapitalCommerce = getCapitalCommerce();
-	int iNewCapitalCommerce = 0;
-
-	if (getVassalCityCommerce() != 0)
-	{
-		for (int iI = 0; iI < MAX_CIV_PLAYERS; iI++)
-		{
-			if (GET_PLAYER((PlayerTypes)iI).isMinorCiv())
-			{
-				continue;
-			}
-
-			if (GET_TEAM(GET_PLAYER((PlayerTypes)iI).getTeam()).isVassal(getTeam()))
-			{
-				iNewCapitalCommerce += GET_PLAYER((PlayerTypes)iI).getNumCities() * getVassalCityCommerce();
-			}
-		}
-	}
-
-	if (getColonyCommerce() != 0)
-	{
-		iNewCapitalCommerce += countColonies() * getColonyCommerce();
-	}
-
-	if (iNewCapitalCommerce != iOldCapitalCommerce)
-	{
-		m_iCapitalCommerce = iNewCapitalCommerce;
-
-		applyCapitalCommerce(iNewCapitalCommerce - iOldCapitalCommerce);
-	}
-}
-
-void CvPlayer::applyCapitalCommerce(int iChange)
-{
-	if (getCapitalCity() != NULL)
-	{
-		getCapitalCity()->changeBuildingYieldChange(BUILDINGCLASS_PALACE, YIELD_COMMERCE, iChange);
-	}
-}
-
-// FoB
-void CvPlayer::updateCapitalPopulationBonusYields()
-{
-	//Loop cities to calculate number of cities over necessary population
-	int iNumCities = 0;
-
-	if (m_iCapitalPopulationCivicCombinedYield != 0)
-	{
-		CvCity* pLoopCity;
-		int iLoop;
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			//TODO - Change to not be hardcoded
-			if (!pLoopCity->isCapital())
-			{
-				if (pLoopCity->getPopulation() > 9)
-				{
-					iNumCities++;
-				}
-			}
-		}
-	}
-
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		int iCivicYield = getCapitalBonusYieldFromCivics((YieldTypes)iI);
-		int iOldCapitalYield = getCapitalBonusYield((YieldTypes)iI);
-		int iNewCapitalYield = iNumCities * iCivicYield;
-
-		if (iNewCapitalYield != iOldCapitalYield)
-		{
-			changeCapitalBonusYield((YieldTypes)iI, iNewCapitalYield - iOldCapitalYield);
-			applyCapitalBonusYield((YieldTypes)iI, iNewCapitalYield - iOldCapitalYield);
-		}
-	}
-}
-
-// FoB
-void CvPlayer::applyCapitalBonusYield(YieldTypes yieldIndex, int iChange)
-{
-	if (getCapitalCity() != NULL)
-	{
-		getCapitalCity()->changeBuildingYieldChange(BUILDINGCLASS_PALACE, yieldIndex, iChange);
-	}
-}
-
 int CvPlayer::getFreeTechsOnDiscovery() const
 {
 	return m_iFreeTechsOnDiscovery;
@@ -25260,22 +25065,6 @@ bool CvPlayer::canBuySlaves() const
 	{
 		if (getNumCities() > 0)
 		{
-			/*switch (getCapitalCity()->getRegionID())
-			{
-				case REGION_CANADA:
-				case REGION_ALASKA:
-				case REGION_UNITED_STATES:
-				case REGION_CARIBBEAN:
-				case REGION_MESOAMERICA:
-				case REGION_BRAZIL:
-				case REGION_ARGENTINA:
-				case REGION_PERU:
-				case REGION_COLOMBIA:
-					return true;
-					break;
-				default:
-					;
-			}*/
 			return true;
 		}
 	}
@@ -25314,6 +25103,11 @@ void CvPlayer::checkCapitalCity()
 
 void CvPlayer::restoreGeneralThreshold()
 {
+	if (getGreatGeneralsCreated() == 0)
+	{
+		return;
+	}
+
 	changeGreatGeneralsThresholdModifier(-GC.getDefineINT("GREAT_GENERALS_THRESHOLD_INCREASE") * ((getGreatGeneralsCreated() / 10) + 1));
 
 	for (int iI = 0; iI < MAX_PLAYERS; iI++)
@@ -25392,10 +25186,7 @@ void CvPlayer::setBuildingClassPreference(BuildingClassTypes eBuildingClass, int
 
 void CvPlayer::resetBuildingClassPreferences()
 {
-	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-	{
-		setBuildingClassPreference((BuildingClassTypes)iI, 0);
-	}
+	m_buildingClassPreference.clear();
 }
 
 int CvPlayer::getBuildingClassPreference(BuildingClassTypes eBuildingClass) const
@@ -25407,6 +25198,11 @@ int CvPlayer::getBuildingClassPreference(BuildingClassTypes eBuildingClass) cons
 	}
 
 	return -MAX_INT;
+}
+
+int CvPlayer::getBuildingClassPreference(BuildingTypes eBuilding) const
+{
+	return getBuildingClassPreference((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType());
 }
 
 bool CvPlayer::isSpecialUnitValid(SpecialUnitTypes eSpecialUnit) const
@@ -25481,21 +25277,6 @@ bool CvPlayer::isNoResistance() const
 	return getNoResistanceCount() > 0;
 }
 
-int CvPlayer::getNoTemporaryUnhappinessCount() const
-{
-	return m_iNoTemporaryUnhappinessCount;
-}
-
-void CvPlayer::changeNoTemporaryUnhappinessCount(int iChange)
-{
-	m_iNoTemporaryUnhappinessCount += iChange;
-}
-
-bool CvPlayer::isNoTemporaryUnhappiness() const
-{
-	return getNoTemporaryUnhappinessCount() > 0;
-}
-
 void CvPlayer::changeUnhappinessDecayModifier(int iChange)
 {
 	m_iUnhappinessDecayModifier += iChange;
@@ -25504,6 +25285,66 @@ void CvPlayer::changeUnhappinessDecayModifier(int iChange)
 int CvPlayer::getUnhappinessDecayModifier() const
 {
 	return m_iUnhappinessDecayModifier;
+}
+
+int CvPlayer::getFoodProductionModifier() const
+{
+	return m_iFoodProductionModifier;
+}
+
+void CvPlayer::changeFoodToProductionModifier(int iChange)
+{
+	m_iFoodProductionModifier += iChange;
+}
+
+bool CvPlayer::isFreeImprovementUpgrade() const
+{
+	return getFreeImprovementUpgradeCount() > 0;
+}
+
+int CvPlayer::getFreeImprovementUpgradeCount() const
+{
+	return m_iFreeImprovementUpgradeCount;
+}
+
+void CvPlayer::changeFreeImprovementUpgradeCount(int iChange)
+{
+	m_iFreeImprovementUpgradeCount += iChange;
+}
+
+int CvPlayer::getShrineIncomeLimitChange() const
+{
+	return m_iShrineIncomeLimitChange;
+}
+
+void CvPlayer::changeShrineIncomeLimitChange(int iChange)
+{
+	m_iShrineIncomeLimitChange += iChange;
+}
+
+bool CvPlayer::isNoStateReligionAnarchy() const
+{
+	return getNoStateReligionAnarchyCount() > 0;
+}
+
+int CvPlayer::getNoStateReligionAnarchyCount() const
+{
+	return m_iNoStateReligionAnarchyCount;
+}
+
+void CvPlayer::changeNoStateReligionAnarchyCount(int iChange)
+{
+	m_iNoStateReligionAnarchyCount += iChange;
+}
+
+int CvPlayer::getOccupationTimeChange() const
+{
+	return m_iOccupationTimeChange;
+}
+
+void CvPlayer::changeOccupationTimeChange(int iChange)
+{
+	m_iOccupationTimeChange += iChange;
 }
 
 PeriodTypes CvPlayer::getPeriod() const
@@ -25645,6 +25486,14 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 	return false;
 }
 
+int CvPlayer::getShrineIncomeLimit() const
+{
+	int iShrineIncomeLimit = MAX_COM_SHRINE;
+
+	iShrineIncomeLimit += getShrineIncomeLimitChange();
+	
+	return iShrineIncomeLimit;
+}
 
 int CvPlayer::getRegionPowers() const
 {

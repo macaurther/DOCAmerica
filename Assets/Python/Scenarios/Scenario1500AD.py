@@ -77,8 +77,16 @@ lCivilizations = [
 	)
 ]
 
+lTribalVillages = [
+]
+
 
 def createStartingUnits():
+	# MacAurther TODO
+	pass
+
+def setupGoals(iCiv, goals):
+	# MacAurther TODO
 	pass
 
 scenario1500AD = Scenario(
@@ -86,8 +94,19 @@ scenario1500AD = Scenario(
 	fileName = "RFC_1500AD",
 	
 	lCivilizations = lCivilizations,
+	lTribalVillages = lTribalVillages,
 	
 	iOwnerBaseCulture = 20,
+	
+	dGreatPeopleCreated = {
+		# MacAurther TODO
+	},
+	dGreatGeneralsCreated = {
+		# MacAurther TODO
+	},
+	
+	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu],
+	setupGoals = setupGoals,
 	
 	createStartingUnits = createStartingUnits,
 )

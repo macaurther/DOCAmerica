@@ -14,9 +14,11 @@ dRelocatedCapitals = {
 
 @handler("cityAcquired")
 def resetSlaves(iOwner, iPlayer, city):
-	freeSlaves(city, iPlayer)
-	
-
+	if player(iPlayer).canUseSlaves():
+		freeSlaves(city, iPlayer)
+	else:
+		city.setFreeSpecialistCount(iSpecialistSlave, 0)
+		
 
 @handler("cityAcquired")
 def resetAdminCenter(iOwner, iPlayer, city):
@@ -199,6 +201,7 @@ def resetAdminCenterOnPalaceBuilt(city):
 def brazilianMadeireiroAbility(plot, city, iFeature):
 	dFeatureGold = defaultdict({
 		iForest : 15,
+		iSavanna : 15,
 		iJungle : 20,
 		iRainforest : 20,
 	}, 0)
@@ -219,9 +222,10 @@ def brazilianMadeireiroAbility(plot, city, iFeature):
 @handler("techAcquired")
 def relocateCapitals(iTech, iTeam, iPlayer):
 	if not player(iPlayer).isHuman():
+		iCiv = civ(iPlayer)
 		iEra = infos.tech(iTech).getEra()
-		if (iPlayer, iEra) in dRelocatedCapitals:
-			relocateCapital(iPlayer, dRelocatedCapitals[iPlayer, iEra])
+		if (iCiv, iEra) in dRelocatedCapitals:
+			relocateCapital(iPlayer, dRelocatedCapitals[iCiv, iEra])
 
 
 ### END GAME TURN ###
@@ -232,6 +236,7 @@ def startTimedConquests():
 		colonialConquest(iConqueror, tPlot)
 	
 	data.lTimedConquests = []
+
 
 ### BEGIN PLAYER TURN ###
 
@@ -350,6 +355,67 @@ def migrateCity(iGameTurn, iPlayer):
 
 ### IMPLEMENTATIONS ###
 
+def isBribableUnit(iPlayer, unit):
+	if not unit.canFight():
+		return False
+	
+	if unit.isInvisible(player(iPlayer).getTeam(), False):
+		return False
+	
+	if unit.getDomainType() != DomainTypes.DOMAIN_LAND:
+		return False
+	
+	return True
+
+
+def getPossibleBribes(iPlayer, location):
+	iTreasury = player(iPlayer).getGold()
+	targets = [(unit, infos.unit(unit).getProductionCost() * 3 / 2) for unit in units.at(location).owner(iBarbarian)]
+	return [(unit, iCost) for unit, iCost in targets if isBribableUnit(iPlayer, unit) and iCost <= iTreasury]
+
+
+def canBribeUnits(spy):
+	if not player(spy).canHurry(1):
+		return False
+	
+	if plot(spy).isOwned() and plot(spy).getOwner() != spy.getOwner():
+		return False
+
+	if spy.getMoves() >= spy.maxMoves(): 
+		return False
+		
+	if not getPossibleBribes(spy.getOwner(), location(spy)):
+		return False
+	
+	return True
+
+
+def applyUnitBribes(iChoice, iPlayer, x, y):
+	targets = getPossibleBribes(iPlayer, (x, y))
+	unit, iCost = targets[iChoice]
+	
+	newUnit = makeUnit(iPlayer, unit.getUnitType(), closestCity(unit, owner=iPlayer))
+	player(iPlayer).changeGold(-iCost)
+
+	unit.kill(False, -1)
+	
+	if newUnit:
+		interface.selectUnit(newUnit, True, True, False)
+
+
+def doUnitBribes(spy):
+	# only once per turn
+	spy.finishMoves()
+			
+	# launch popup
+	bribePopup = unit_bribe_popup.launcher()
+	
+	for unit, iCost in getPossibleBribes(spy.getOwner(), location(spy)):
+		bribePopup.text().applyUnitBribes(unit.getName(), unit.currHitPoints(), unit.maxHitPoints(), iCost, button=unit.getButton())
+	
+	x, y = location(spy)
+	bribePopup.cancel().launch(spy.getOwner(), x, y)
+
 @handler("civicChanged")
 def onCivicChanged(iPlayer, iOldCivic, iNewCivic):
 	if iNewCivic == iConfederacy1:
@@ -358,3 +424,10 @@ def onCivicChanged(iPlayer, iOldCivic, iNewCivic):
 			if pPlot.getImprovementType() == iTribe:
 				pPlot.setImprovementType(iTribe)
 				player(iPlayer).doGoody(pPlot, None)
+
+### POPUPS ###
+
+unit_bribe_popup = popup.text("TXT_KEY_BRIBE_UNITS_POPUP") \
+						.selection(applyUnitBribes, "TXT_KEY_BRIBE_UNITS_BUTTON") \
+						.cancel("TXT_KEY_BRIBE_UNITS_BUTTON_NONE") \
+						.build()

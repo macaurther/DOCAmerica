@@ -14,7 +14,7 @@
 			<Strategy>TXT_KEY_CIVIC_ELDERS_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Elders.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_ELDERS</WeLoveTheKing>
 		</CivicInfo>
@@ -26,7 +26,7 @@
 			<Strategy>TXT_KEY_CIVIC_CHIEFDOM_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Chiefdom.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iExtraHealth>1</iExtraHealth>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CHIEF</WeLoveTheKing>
@@ -40,7 +40,7 @@
 			<TechPrereq>TECH_PROPERTY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Despotism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<Hurrys>
 				<Hurry>
@@ -59,7 +59,7 @@
 			<TechPrereq>TECH_DIVINATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/MonarchyNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
@@ -73,7 +73,7 @@
 			<TechPrereq>TECH_MATHEMATICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Aristocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
@@ -97,7 +97,7 @@
 			<TechPrereq>TECH_LAW</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Council.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iLargestCityHappiness>2</iLargestCityHappiness>
 			<SpecialistExtraCommerces>
@@ -116,7 +116,7 @@
 			<TechPrereq>TECH_NOBILITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/GodKing.dds</Button>
 			<iAnarchyLength>0</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<Hurrys>
 				<Hurry>
@@ -134,7 +134,7 @@
 			<Strategy>TXT_KEY_CIVIC_AUTHORITY_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Authority.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -146,8 +146,7 @@
 			<Help>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/CustomaryLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
-			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bNoNonStateReligionSpread>1</bNoNonStateReligionSpread>
 		</CivicInfo>
@@ -160,7 +159,7 @@
 			<TechPrereq>TECH_ARITHMETICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/CityStates.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<SpecialistExtraYields>
 				<iYield>1</iYield>
@@ -214,7 +213,7 @@
 			<TechPrereq>TECH_CODICES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConfederacyNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
 			<iWarWearinessModifier>100</iWarWearinessModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -229,7 +228,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Bureaucracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>50</iYield>
@@ -245,10 +244,9 @@
 			<Button>,Art/Interface/Buttons/Civics/Vassalage.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iBaseFreeUnits>15</iBaseFreeUnits>
 			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
-			<iVassalCityCommerce>1</iVassalCityCommerce>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
@@ -260,7 +258,7 @@
 			<Button>,Art/Interface/Buttons/Civics/FirstNation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
 			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
@@ -276,7 +274,7 @@
 			<Strategy>TXT_KEY_CIVIC_TRADITIONALISM_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Traditionalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -287,7 +285,7 @@
 			<Strategy>TXT_KEY_CIVIC_SUBSISTANCE_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/SubsistanceNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<UnimprovedTileYields>
 				<iYield>1</iYield>
@@ -307,7 +305,7 @@
 			<TechPrereq>TECH_MINING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Captives.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<bSlavery>1</bSlavery>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
@@ -320,7 +318,7 @@
 			<TechPrereq>TECH_MASONRY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Mita.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<bSlavery>1</bSlavery>
 			<iWorkerCostModifier>-50</iWorkerCostModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -343,7 +341,7 @@
 			<TechPrereq>TECH_CONSTRUCTION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Specialization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iWonderProductionModifier>50</iWonderProductionModifier>
 			<HappinessExtraYields>
@@ -360,7 +358,7 @@
 			<TechPrereq>TECH_CALENDAR</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Deification.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<MinimalSpecialists>
 				<MinimalSpecialist>
@@ -395,7 +393,7 @@
 			<TechPrereq>TECH_OLD_WORLD_TACTICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bSlavery>1</bSlavery>
 		</CivicInfo>
@@ -407,7 +405,7 @@
 			<Strategy>TXT_KEY_CIVIC_RECIPROCITY_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Reciprocity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -418,7 +416,7 @@
 			<Strategy>TXT_KEY_CIVIC_COMMUNE_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Commune.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<YieldModifiers>
 				<iYield>25</iYield>
@@ -434,7 +432,7 @@
 			<TechPrereq>TECH_POTTERY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Redistribution.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<CapitalYieldModifiers>
 				<iYield>25</iYield>
@@ -460,7 +458,7 @@
 			<TechPrereq>TECH_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Merchants.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iTradeRoutes>1</iTradeRoutes>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
@@ -473,7 +471,7 @@
 			<TechPrereq>TECH_ALLOYS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/PlunderNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iImprovementUpgradeRateModifier>-50</iImprovementUpgradeRateModifier>
 			<iCaptureGoldModifier>50</iCaptureGoldModifier>
@@ -488,7 +486,7 @@
 			<TechPrereq>TECH_OLD_WORLD_SCIENCE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Dependency.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>
@@ -506,8 +504,7 @@
 			<TechPrereq>TECH_REDUCTIONS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tourism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
-			<iCapitalTradeModifier>100</iCapitalTradeModifier>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<SpecialistValids>
 				<SpecialistValid>
@@ -524,7 +521,7 @@
 			<Strategy>TXT_KEY_CIVIC_ANIMISM_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Animism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 		</CivicInfo>
@@ -537,7 +534,7 @@
 			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Harmony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<CommerceModifiers>
@@ -577,7 +574,7 @@
 			<TechPrereq>TECH_WRITING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iStateReligionHappiness>-1</iStateReligionHappiness>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -597,7 +594,7 @@
 			<TechPrereq>TECH_PRIESTHOOD</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/OrganizedReligion.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iStateReligionHappiness>-1</iStateReligionHappiness>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -627,7 +624,7 @@
 			<TechPrereq>TECH_AESTHETICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Cosmopolis.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<BuildingHappinessChanges>
@@ -656,7 +653,7 @@
 			<TechPrereq>TECH_OLD_WORLD_CULTURE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Acculturation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iStateReligionHappiness>1</iStateReligionHappiness>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -671,7 +668,7 @@
 			<TechPrereq>TECH_GUNPOWDER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Sovereignty.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iWarWearinessModifier>-100</iWarWearinessModifier>
@@ -685,7 +682,7 @@
 			<Strategy>TXT_KEY_CIVIC_SETTLEMENT_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Settlement.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -698,7 +695,7 @@
 			<TechPrereq>TECH_PASTORALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Nomads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bMilitaryFoodProduction>1</bMilitaryFoodProduction>
 		</CivicInfo>
@@ -711,7 +708,7 @@
 			<TechPrereq>TECH_SAILING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Diffusion.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<TradeYieldModifiers>
 				<iYield>100</iYield>
@@ -726,7 +723,7 @@
 			<TechPrereq>TECH_CEREMONY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Cooperation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -748,7 +745,7 @@
 			<TechPrereq>TECH_GENERALSHIP</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConquestNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<DomainExperienceModifiers>
 				<DomainExperienceModifier>
@@ -776,7 +773,7 @@
 			<TechPrereq>TECH_SUBJUGATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iVassalTradeModifier>100</iVassalTradeModifier>
 			<ImprovementYieldChanges>
@@ -798,7 +795,7 @@
 			<TechPrereq>TECH_HUMANITIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/AncestralLands.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>1</iCultureGroup>
+			<iCultureGroup>0</iCultureGroup>
 			<iDomesticGreatGeneralRateModifier>50</iDomesticGreatGeneralRateModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 		</CivicInfo>
@@ -810,7 +807,7 @@
 			<Strategy>TXT_KEY_CIVIC_CAPTAINS_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Captains.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CAPTAIN</WeLoveTheKing>
 		</CivicInfo>
@@ -824,7 +821,7 @@
 			<TechPrereq>TECH_FINANCE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Proprietaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PROPRIETARIES</WeLoveTheKing>
 		</CivicInfo>
@@ -837,7 +834,7 @@
 			<TechPrereq>TECH_OFFICIALS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Viceroyalty.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bNoResistance>1</bNoResistance>
 			<UnhappinessExtraYields>
@@ -855,7 +852,7 @@
 			<TechPrereq>TECH_EDUCATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Trustees.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
@@ -882,7 +879,7 @@
 			<TechPrereq>TECH_POLITICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Governors.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
@@ -908,7 +905,7 @@
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ColonialAssembly.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<BuildingProductionModifiers>
@@ -934,7 +931,7 @@
 			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/HomeRule.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iNumCitiesMaintenanceModifier>-50</iNumCitiesMaintenanceModifier>
 			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
@@ -949,7 +946,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Expeditionaries.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
@@ -960,7 +957,7 @@
 			<TechPrereq>TECH_OPTICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/MaritimeLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<DomainExperienceModifiers>
 				<DomainExperienceModifier>
@@ -988,7 +985,7 @@
 			<TechPrereq>TECH_CHARTER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/CharterColony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<UnimprovedTileYields>
 				<iYield>0</iYield>
@@ -1007,7 +1004,7 @@
 			<TechPrereq>TECH_ECONOMICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Colonialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<Hurrys>
 				<Hurry>
@@ -1025,7 +1022,7 @@
 			<TechPrereq>TECH_HERITAGE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
 		</CivicInfo>
@@ -1038,7 +1035,7 @@
 			<TechPrereq>TECH_NEWSPAPERS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/CommonLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<SpecialistExtraYields>
 				<iYield>0</iYield>
@@ -1073,7 +1070,7 @@
 			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Provinces.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iFreeSpecialist>1</iFreeSpecialist>
 		</CivicInfo>
@@ -1085,7 +1082,7 @@
 			<Strategy>TXT_KEY_CIVIC_SERFDOM_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Serfdom.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1098,7 +1095,7 @@
 			<TechPrereq>TECH_REDUCTIONS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Encomienda.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<bSlavery>1</bSlavery>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
@@ -1112,7 +1109,7 @@
 			<TechPrereq>TECH_INDENTURES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/IndenturedServitude.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -1143,7 +1140,7 @@
 			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bSlavery>1</bSlavery>
 		</CivicInfo>
@@ -1157,7 +1154,7 @@
 			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/PenalColony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bSlavery>1</bSlavery>
 			<CommerceModifiers>
@@ -1175,7 +1172,7 @@
 			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Industrialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<iExtraHealth>-1</iExtraHealth>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<SpecialistExtraYields>
@@ -1199,7 +1196,7 @@
 			<TechPrereq>TECH_RAILROAD</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ImmigrantLabor.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -1239,7 +1236,7 @@
 			<Strategy>TXT_KEY_CIVIC_GOLD_RUSH_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/GoldRush.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1252,7 +1249,7 @@
 			<TechPrereq>TECH_COMPANIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/PlunderColony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iImprovementUpgradeRateModifier>-50</iImprovementUpgradeRateModifier>
 			<iCaptureGoldModifier>50</iCaptureGoldModifier>
@@ -1266,7 +1263,7 @@
 			<TechPrereq>TECH_FORTIFICATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Factory.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<iTradeRoutes>1</iTradeRoutes>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingProductionModifiers>
@@ -1289,7 +1286,7 @@
 			<TechPrereq>TECH_SHIPBUILDING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Regulated Trade.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<HappinessExtraYields>
 				<iYield>0</iYield>
@@ -1321,9 +1318,8 @@
 			<TechPrereq>TECH_STATECRAFT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/CustomsUnion.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<iTradeRoutes>1</iTradeRoutes>
-			<iColonyCommerce>1</iColonyCommerce>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1335,7 +1331,7 @@
 			<TechPrereq>TECH_ASSEMBLY_LINE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Consumerism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -1367,7 +1363,7 @@
 			<TechPrereq>TECH_CIVIL_RIGHTS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Public Welfare.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCorporationUnhappinessModifier>-50</iCorporationUnhappinessModifier>
 			<HappinessExtraYields>
@@ -1384,7 +1380,7 @@
 			<Strategy>TXT_KEY_CIVIC_DIVINE_RIGHT_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 		</CivicInfo>
@@ -1397,7 +1393,7 @@
 			<TechPrereq>TECH_EVANGELISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Theocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<SpecialBuildingNotRequireds>
@@ -1431,7 +1427,7 @@
 			<TechPrereq>TECH_INDOCTRINATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Zealotry.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionFreeExperience>2</iStateReligionFreeExperience>
@@ -1445,7 +1441,7 @@
 			<TechPrereq>TECH_COMMUNITY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Haven.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iStateReligionBuildingProductionModifier>25</iStateReligionBuildingProductionModifier>
@@ -1466,7 +1462,7 @@
 			<TechPrereq>TECH_EXPLOITATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Profiteering.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<CommerceModifiers>
@@ -1484,10 +1480,9 @@
 			<TechPrereq>TECH_PIONEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Opportunity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<iSpecialistHappiness>1</iSpecialistHappiness>
 			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -1506,7 +1501,7 @@
 			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<bNoSlavery>1</bNoSlavery>
@@ -1519,7 +1514,7 @@
 			<Strategy>TXT_KEY_CIVIC_CLAIMS_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Claims.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1532,7 +1527,7 @@
 			<TechPrereq>TECH_GUNPOWDER</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConquestColony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<DomainExperienceModifiers>
 				<DomainExperienceModifier>
@@ -1551,7 +1546,7 @@
 			<TechPrereq>TECH_TREATIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Providence.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1563,7 +1558,7 @@
 			<TechPrereq>TECH_EXPLORATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Outposts.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -1608,7 +1603,7 @@
 			<TechPrereq>TECH_SURVEYING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Homesteads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
@@ -1622,7 +1617,7 @@
 			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Intervention.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<CommerceModifiers>
 				<iCommerce>25</iCommerce>
@@ -1637,7 +1632,7 @@
 			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Commonwealth.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
+			<iCultureGroup>1</iCultureGroup>
 			<iLargestCityHappiness>3</iLargestCityHappiness>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<ImprovementYieldChanges>
@@ -1664,7 +1659,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Strongman.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_WARLORD</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1675,7 +1670,7 @@
 			<Strategy>TXT_KEY_CIVIC_JUNTA_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Junta.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingHappinessChanges>
@@ -1695,7 +1690,7 @@
 			<TechPrereq>TECH_SOCIAL_CONTRACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConstitutionalMonarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iHappyPerMilitaryUnit>1</iHappyPerMilitaryUnit>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_MONARCH</WeLoveTheKing>
@@ -1709,7 +1704,7 @@
 			<TechPrereq>TECH_BONDS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Plutocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
@@ -1738,7 +1733,7 @@
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Democracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
@@ -1752,9 +1747,8 @@
 			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Dictatorship.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
 			<UnhappinessExtraYields>
 				<iYield>0</iYield>
 				<iYield>5</iYield>
@@ -1770,7 +1764,7 @@
 			<TechPrereq>TECH_MACROECONOMICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/StateParty.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iNumCitiesMaintenanceModifier>-100</iNumCitiesMaintenanceModifier>
 			<SpecialistExtraCommerces>
@@ -1789,7 +1783,7 @@
 			<Strategy>TXT_KEY_CIVIC_MINARCHY_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Barbarism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,1,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1802,7 +1796,7 @@
 			<Button>,Art/Interface/Buttons/Civics/CommonLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<SpecialistExtraYields>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
@@ -1837,7 +1831,7 @@
 			<TechPrereq>TECH_STATECRAFT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConfederacyNation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
@@ -1850,7 +1844,7 @@
 			<TechPrereq>TECH_HUMANITIES</TechPrereq>
 			<Button>Art/Interface/Buttons/Civics/Federalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -1862,11 +1856,6 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
-			<PopulationCapitalBonus>
-				<iYield>1</iYield>
-				<iYield>0</iYield>
-				<iYield>1</iYield>
-			</PopulationCapitalBonus>
 			<Hurrys>
 				<Hurry>
 					<HurryType>HURRY_GOLD_FEDERALISM</HurryType>
@@ -1883,8 +1872,7 @@
 			<TechPrereq>TECH_JUDICIARY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Mandate.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
-			<iCoreFreeSpecialist>1</iCoreFreeSpecialist>
+			<iCultureGroup>2</iCultureGroup>
 			<iGoldPerMilitaryUnit>1</iGoldPerMilitaryUnit>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
@@ -1897,10 +1885,9 @@
 			<TechPrereq>TECH_CURRENCY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Kleptocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<iBaseFreeUnits>15</iBaseFreeUnits>
 			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
-			<iCapitalTradeModifier>100</iCapitalTradeModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<CommerceModifiers>
 				<iCommerce>-25</iCommerce>
@@ -1915,7 +1902,7 @@
 			<TechPrereq>TECH_BALLISTICS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Police_State.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,2</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<Hurrys>
 				<Hurry>
@@ -1938,7 +1925,7 @@
 			<Strategy>TXT_KEY_CIVIC_TRADITIONALISM_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Traditionalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1949,7 +1936,7 @@
 			<Strategy>TXT_KEY_CIVIC_SUBSISTANCE_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/SubsistanceNation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<UnimprovedTileYields>
 				<iYield>1</iYield>
@@ -1967,7 +1954,7 @@
 			<Strategy>TXT_KEY_CIVIC_APPRENTICESHIP_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Apprenticeship.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -1996,7 +1983,7 @@
 			<TechPrereq>TECH_TRIANGULAR_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bSlavery>1</bSlavery>
 		</CivicInfo>
@@ -2009,7 +1996,7 @@
 			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Industrialism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<iExtraHealth>-1</iExtraHealth>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<SpecialistExtraYields>
@@ -2033,7 +2020,7 @@
 			<TechPrereq>TECH_RAILROAD</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ImmigrantLabor.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -2074,7 +2061,7 @@
 			<TechPrereq>TECH_ORGANIZED_LABOR</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/LaborUnions.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
@@ -2109,7 +2096,7 @@
 			<Strategy>TXT_KEY_CIVIC_LAISSEZ_FAIRE_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/LaissezFaire.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -2121,7 +2108,7 @@
 			<TechPrereq>TECH_HORTICULTURE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Agrarianism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -2176,7 +2163,7 @@
 			<Strategy>TXT_KEY_CIVIC_EXTRACTION_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Extraction.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -2212,7 +2199,7 @@
 			<TechPrereq>TECH_FREE_MARKET</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Free Enterprise.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iCorporationCommerceModifier>50</iCorporationCommerceModifier>
 			<TradeYieldModifiers>
@@ -2236,7 +2223,7 @@
 			<TechPrereq>TECH_TARIFFS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Protectionism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<TradeYieldModifiers>
 				<iYield>50</iYield>
@@ -2253,7 +2240,7 @@
 			<TechPrereq>TECH_ASSEMBLY_LINE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Consumerism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -2285,7 +2272,7 @@
 			<TechPrereq>TECH_CIVIL_RIGHTS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Public Welfare.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCorporationUnhappinessModifier>-50</iCorporationUnhappinessModifier>
 			<HappinessExtraYields>
@@ -2302,7 +2289,7 @@
 			<Strategy>TXT_KEY_CIVIC_REVOLUTION_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Revolution.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 		</CivicInfo>
@@ -2314,7 +2301,7 @@
 			<Strategy>TXT_KEY_CIVIC_LIBERTARIANISM_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Libertarianism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
@@ -2328,7 +2315,7 @@
 			<TechPrereq>TECH_EXPLOITATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Profiteering.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<CommerceModifiers>
@@ -2346,10 +2333,9 @@
 			<TechPrereq>TECH_PIONEERING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Opportunity.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<iSpecialistHappiness>1</iSpecialistHappiness>
 			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
@@ -2368,7 +2354,7 @@
 			<TechPrereq>TECH_CIVIL_LIBERTIES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<bNoSlavery>1</bNoSlavery>
@@ -2382,7 +2368,7 @@
 			<TechPrereq>TECH_JOURNALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Nativism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<iLargestCityHappiness>-1</iLargestCityHappiness>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -2406,7 +2392,7 @@
 			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Egalitarianism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bNoSlavery>1</bNoSlavery>
 			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
@@ -2446,7 +2432,7 @@
 			<Strategy>TXT_KEY_CIVIC_DISPLACEMENT_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Displacement.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -2459,7 +2445,7 @@
 			<TechPrereq>TECH_SURVEYING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Homesteads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<iWorkerSpeedModifier>50</iWorkerSpeedModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
@@ -2471,7 +2457,7 @@
 			<Strategy>TXT_KEY_CIVIC_ASSIMILATION_STRATEGY</Strategy>
 			<Button>,Art/Interface/Buttons/Civics/Assimilation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -2493,7 +2479,7 @@
 			<Help>TXT_KEY_CIVIC_MANIFEST_DESTINY_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/ManifestDestiny.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
@@ -2526,7 +2512,7 @@
 			<TechPrereq>TECH_INDEPENDENCE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Decolonization.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iExpInBorderModifier>100</iExpInBorderModifier>
 			<CommerceModifiers>
@@ -2544,7 +2530,7 @@
 			<TechPrereq>TECH_NATIONALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Nationhood.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iMaxConscript>3</iMaxConscript>
 			<iGreatGeneralRateModifier>100</iGreatGeneralRateModifier>
@@ -2558,7 +2544,7 @@
 			<TechPrereq>TECH_FISSION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Hegemony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>3</iCultureGroup>
+			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iDefensivePactTradeModifier>200</iDefensivePactTradeModifier>
 		</CivicInfo>

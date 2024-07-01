@@ -31,10 +31,22 @@ lCivilizations = [
 	),
 ]
 
+lTribalVillages = [
+]
+
+
+def createStartingUnits():
+	if not player(iMaya).isHuman():
+		makeUnit(iMaya, iArcher, plots.capital(iMaya))
+	if not player(iZapotec).isHuman():
+		makeUnit(iZapotec, iArcher, plots.capital(iZapotec))
 
 scenario500BC = Scenario(
 	iStartYear = -500,
 	fileName = "RFC_500BC",
 	
 	lCivilizations = lCivilizations,
+	lTribalVillages = lTribalVillages,
+	
+	createStartingUnits = createStartingUnits,
 )

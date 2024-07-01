@@ -32,14 +32,20 @@ class CvPediaUnitChart:
 		screen.setStyle(table, "Table_StandardCiv_Style")
 		screen.enableSort(table)
 
-		szMove = "Moves"
+		if self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_AIR'):
+			szMove = "Range"
+		else:
+			szMove = "Moves"
 
-		if self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_NAVAL') or self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_SIEGE'):
+		if self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_AIR') or self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_NAVAL') or self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_SIEGE'):
 			szSpecial = "Bombard"
 		else:
 			szSpecial = "1st Strike"
 
-		szWithdraw = "Withdraw"
+		if self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_AIR'):
+			szWithdraw = "Evade"
+		else:
+			szWithdraw = "Withdraw"
 
 		iWidth = ((self.W_TABLE - 180) / (nColumns - 1))
 		screen.setTableColumnHeader(table, 0, u"<font=2>" + gc.getUnitCombatInfo(self.iGroup).getDescription() + "</font>", 182)
@@ -83,7 +89,7 @@ class CvPediaUnitChart:
 					szBombard = u"%d%%" % UnitInfo.getBombardRate()
 				elif UnitInfo.getBombRate() > 0:
 					szBombard = u"%d%%" % UnitInfo.getBombRate()
-				elif UnitInfo.getFirstStrikes() > 0 and not (self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_NAVAL') or self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_SIEGE')):
+				elif UnitInfo.getFirstStrikes() > 0 and not (self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_AIR') or self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_NAVAL') or self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_SIEGE')):
 					szBombard = u"%d" % UnitInfo.getFirstStrikes()
 				else:
 					szBombard = u""
@@ -101,7 +107,9 @@ class CvPediaUnitChart:
 
 				# Withdrawal
 				iCol += 1
-				if UnitInfo.getWithdrawalProbability() > 0:
+				if self.iGroup == gc.getInfoTypeForString('UNITCOMBAT_AIR') and UnitInfo.getEvasionProbability() > 0:
+					szWithdrawal = u"%d%%" % UnitInfo.getEvasionProbability()
+				elif UnitInfo.getWithdrawalProbability() > 0:
 					szWithdrawal = u"%d%%" % UnitInfo.getWithdrawalProbability()
 				else:
 					szWithdrawal = u""

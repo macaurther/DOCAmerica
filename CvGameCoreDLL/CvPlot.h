@@ -318,9 +318,14 @@ public:
 	DllExport CvString pickFeatureDummyTag(int mouseX, int mouseY);
 	DllExport void resetFeatureModel();
 
+	int determineVariety(FeatureTypes eFeature = NO_FEATURE) const;
+
 	DllExport BonusTypes getBonusType(TeamTypes eTeam = NO_TEAM) const;																							// Exposed to Python
 	BonusTypes getNonObsoleteBonusType(TeamTypes eTeam = NO_TEAM) const;																	// Exposed to Python
 	void setBonusType(BonusTypes eNewValue);																															// Exposed to Python
+
+	BonusTypes getBonusVarietyType(TeamTypes eTeam = NO_TEAM) const;
+	void setBonusVarietyType(BonusTypes eNewValue);
 
 	DllExport ImprovementTypes getImprovementType() const;																													// Exposed to Python
 	DllExport void setImprovementType(ImprovementTypes eNewValue);																									// Exposed to Python
@@ -571,6 +576,9 @@ public:
 	bool isExpansion() const;
 	bool isExpansionEffect(PlayerTypes ePlayer) const;
 
+	int getContinentID() const;
+	int getRegionGroup() const;
+
 	// MacAurther
 	void improveTile();
 	bool isCornerNavigable() const;
@@ -639,6 +647,7 @@ protected:
 	short /*TerrainTypes*/ m_eTerrainType;
 	short /*FeatureTypes*/ m_eFeatureType;
 	short /*BonusTypes*/ m_eBonusType;
+	short /*BonusTypes*/ m_eBonusVarietyType;
 	short /*ImprovementTypes*/ m_eImprovementType;
 	short /*RouteTypes*/ m_eRouteType;
 	char /*CardinalDirectionTypes*/ m_eRiverNSDirection;
@@ -669,7 +678,7 @@ protected:
 	short m_iRegionID;
 
 	// Leoreth
-	bool m_bWithinGreatWall;
+	byte m_bWithinGreatWall;
 
 	int* m_aiReligionInfluence;
 

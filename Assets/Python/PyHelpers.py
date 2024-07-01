@@ -471,8 +471,6 @@ class PyCity:
 	#Rhye		
 	def hasBuilding(self, iBuildingID):
 		"bool - Whether or not this city has iBuildingID"
-		if iBuildingID == -1:
-			return False
 		return self.city.hasBuilding(iBuildingID)
 		
 	def getNumBuilding(self, iBuildingID):

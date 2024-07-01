@@ -192,7 +192,9 @@ public:
 	void resetFeatureModel();
 	int /* BonusTypes */ getBonusType(int /*TeamTypes*/ eTeam); 
 	int /* BonusTypes */ getNonObsoleteBonusType(int /*TeamTypes*/ eTeam); 
+	int /* BonusTypes */ getBonusVarietyType(int /* TeamTypes */ eTeam);
 	void setBonusType(int /* BonusTypes */ eNewValue);
+	void setBonusVarietyType(int /* BonusTypes */ eNewValue);
 	int /* ImprovementTypes */ getImprovementType();
 	void setImprovementType(int /* ImprovementTypes */ eNewValue);
 	int /* RouteTypes */ getRouteType();
@@ -266,6 +268,9 @@ public:
 	// Leoreth
 	int getRegionID();
 	void setRegionID(int iNewValue);
+	std::wstring getRegionName();
+
+	int getRegionGroup();
 
 	bool isCore(int iCivilization);
 	bool isPlayerCore(int iPlayer);
@@ -308,6 +313,8 @@ public:
 	void setRevealedOwner(int eTeam, int eNewValue);
 	void updateRevealedOwner(int eTeam);
 
+	int getContinentArea();
+	
 	void updateFortClaims(int ePlayer);	// MacAurther
 
 private:

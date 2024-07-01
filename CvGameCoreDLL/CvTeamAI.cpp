@@ -1395,7 +1395,7 @@ DenialTypes CvTeamAI::AI_techTrade(TechTypes eTech, TeamTypes eTeam, bool bIgnor
 
 	//Rhye
 	//if (GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING))
-	if (!bIgnoreProgress && GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) && !GET_TEAM(eTeam).isHasTech((TechTypes)POWER_PROJECTION))
+	if (!bIgnoreProgress && GC.getGameINLINE().isOption(GAMEOPTION_NO_TECH_BROKERING) && !GET_TEAM(eTeam).isHasTech((TechTypes)GLOBALISM))
 	{
 		CvTeam& kTeam = GET_TEAM(eTeam);
 
@@ -2642,7 +2642,7 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 		iDefensivePactLimit += 1;
 	}
 
-	if (iMaxEra >= ERA_INDUSTRIAL)
+	if (iMaxEra >= ERA_MODERN)
 	{
 		iDefensivePactLimit += 1;
 	}

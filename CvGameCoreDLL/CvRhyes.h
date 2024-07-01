@@ -528,6 +528,26 @@ enum Regions
 	NUM_REGIONS
 };
 
+enum RegionGroup
+{
+	NO_REGION_GROUP = -1,
+	REGION_GROUP_NORTH_AMERICA,
+	REGION_GROUP_CENTRAL_AMERICA,
+	REGION_GROUP_SOUTH_AMERICA,
+	REGION_GROUP_EUROPE,
+	REGION_GROUP_OCEANIA,
+	NUM_REGION_GROUPS,
+};
+
+enum CultureGroups
+{
+	NO_CULTURE_GROUP = -1,
+	CULTURE_GROUP_NATIVE,
+	CULTURE_GROUP_COLONY,
+	CULTURE_GROUP_NATION,
+	NUM_CULTURE_GROUPS,
+};
+
 // MacAurther
 enum RegionPowers
 {
@@ -570,8 +590,8 @@ enum ECSArtStyles
 
 #endif	// CVRHYES_H
 
-static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 15, 20, 25, 30, 40};
-static const int lTechBackwardsBonus[NUM_ERAS] = {0, 10, 20, 30, 40, 50, 60};
+static const int lTechLeaderPenalty[NUM_ERAS] = {0, 0, 20, 25, 30, 40, 50};
+static const int lTechBackwardsBonus[NUM_ERAS] = {0, 20, 30, 40, 50, 60, 75};
 
 // Leoreth: order of persecution
 static const int persecutionOrder[NUM_RELIGIONS][NUM_RELIGIONS-1] = 

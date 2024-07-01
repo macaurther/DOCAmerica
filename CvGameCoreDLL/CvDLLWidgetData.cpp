@@ -2067,11 +2067,8 @@ void CvDLLWidgetData::parseHurryHelp(CvWidgetDataStruct &widgetDataStruct, CvWSt
 		// Leoreth: anger scales with amount of sacrificed population
 		int iHurryAngerModifier = (1 + iHurryPopulation) / 2;
 
-		// Leoreth: Pyramids negate unhappiness scaling
-		//if (GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PYRAMIDS))
-		//	iHurryAngerModifier = 1;
-
 		int iHurryAnger = GC.getDefineINT("HURRY_POP_ANGER") * iHurryAngerModifier;
+
 
 		if (iHurryAngerLength > 0)
 		{
@@ -2277,7 +2274,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 	bShift = gDLL->shiftKey();
 
 	CvWString szTemp;
-	szTemp.Format(SETCOLR L"%s" ENDCOLR , TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getActionInfo(widgetDataStruct.m_iData1).getHotKeyDescription().c_str());
+	szTemp.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getActionInfo(widgetDataStruct.m_iData1).getHotKeyDescription().c_str());
 	szBuffer.assign(szTemp);
 
 	pHeadSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
@@ -2600,7 +2597,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 // BUG - Specialist Actual Effects - start
 				GAMETEXT.parseSpecialistHelpActual(szBuffer, ((SpecialistTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData())), pMissionCity, true, 1);
 // BUG - Specialist Actual Effects - end
-
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_CONSTRUCT)
 			{
@@ -4293,8 +4289,6 @@ void CvDLLWidgetData::parseNationalityHelp(CvWidgetDataStruct &widgetDataStruct,
 
 	pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
 
-	log(CvWString::format(L"parse nationality help for %s", pHeadSelectedCity->getName().c_str()));
-
 	if (pHeadSelectedCity != NULL)
 	{
 		int iTotalCulture = 0;
@@ -4307,9 +4301,7 @@ void CvDLLWidgetData::parseNationalityHelp(CvWidgetDataStruct &widgetDataStruct,
 
 			if (GET_PLAYER(ePlayer).isAlive() && eCivilization != NO_CIVILIZATION)
 			{
-				iCulture = (pHeadSelectedCity->plot()->isCore(ePlayer) ? 2 : 1) * pHeadSelectedCity->plot()->getCulture(eCivilization);
 				iCulturePercent = pHeadSelectedCity->calculateCulturePercent(eCivilization);
-				iTotalCulture += iCulture;
 
 				if (iCulturePercent > 0)
 				{
@@ -4325,10 +4317,8 @@ void CvDLLWidgetData::parseNationalityHelp(CvWidgetDataStruct &widgetDataStruct,
 
 			if (!isCivAlive(eCivilization))
 			{
-				iCulture = (eCivilization < NUM_CIVS && pHeadSelectedCity->plot()->isCore(eCivilization) ? 2 : 1) * pHeadSelectedCity->plot()->getCulture(eCivilization);
 				iCulturePercent = pHeadSelectedCity->calculateCulturePercent(eCivilization);
-				iTotalCulture += iCulture;
-
+				
 				if (iCulturePercent > 0)
 				{
 					PlayerColorTypes ePlayerColor = (PlayerColorTypes)GC.getCivilizationInfo(eCivilization).getDefaultPlayerColor();
@@ -4339,8 +4329,7 @@ void CvDLLWidgetData::parseNationalityHelp(CvWidgetDataStruct &widgetDataStruct,
 		}
 
 		// Leoreth: stability effects of cultural control
-		int iOwnCulture = (pHeadSelectedCity->plot()->isCore(pHeadSelectedCity->getOwner()) ? 2 : 1) * pHeadSelectedCity->plot()->getCulture(pHeadSelectedCity->getOwnerINLINE());
-		int iOwnCulturePercent = iTotalCulture == 0 ? 100 : 100 * iOwnCulture / iTotalCulture;
+		int iOwnCulturePercent = pHeadSelectedCity->calculateCulturePercent(pHeadSelectedCity->getOwnerINLINE());
 
 		if (iOwnCulturePercent < 20)
 		{

@@ -237,6 +237,10 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 	bool bSecondSlaves = false;
 	int iFirstGold = 0;
 	int iSecondGold = 0;
+	bool bFirstPeace = false;
+	bool bSecondPeace = false;
+	bool bFirstTrade = false;
+	bool bSecondTrade = false;
 
 	if (pFirstList != NULL)
 	{
@@ -255,14 +259,29 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 				insertAtEndFirstTrades(pNode->m_data);
 			}
 
-			if (pNode->m_data.m_eItemType == TRADE_SLAVE)
+			switch (pNode->m_data.m_eItemType)
 			{
+			case TRADE_PEACE_TREATY:
+				bFirstPeace = true;
+				break;
+			case TRADE_SLAVE:
+				bFirstTrade = true;
 				bFirstSlaves = true;
-			}
-
-			if (pNode->m_data.m_eItemType == TRADE_GOLD)
-			{
+				break;
+			case TRADE_GOLD:
+				bFirstTrade = true;
 				iFirstGold += pNode->m_data.m_iData;
+				break;
+			case TRADE_GOLD_PER_TURN:
+			case TRADE_VASSAL:
+			case TRADE_SURRENDER:
+			case TRADE_TECHNOLOGIES:
+			case TRADE_RESOURCES:
+			case TRADE_CITIES:
+				bFirstTrade = true;
+				break;
+			default:
+				break;
 			}
 		}
 	}
@@ -284,14 +303,23 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 				insertAtEndSecondTrades(pNode->m_data);
 			}
 
-			if (pNode->m_data.m_eItemType == TRADE_SLAVE)
+			switch (pNode->m_data.m_eItemType)
 			{
+			case TRADE_PEACE_TREATY:
+				bSecondPeace = true;
+				break;
+			case TRADE_SLAVE:
 				bSecondSlaves = true;
-			}
-
-			if (pNode->m_data.m_eItemType == TRADE_GOLD)
-			{
+				break;
+			case TRADE_GOLD:
+				bSecondTrade = true;
 				iSecondGold += pNode->m_data.m_iData;
+				break;
+			case TRADE_GOLD_PER_TURN:
+				bSecondTrade = true;
+				break;
+			default:
+				break;
 			}
 		}
 	}
@@ -305,6 +333,19 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 	if (bSecondSlaves)
 	{
 		CvEventReporter::getInstance().playerSlaveTrade(getSecondPlayer(), iFirstGold);
+	}
+
+	if (bFirstPeace && bSecondPeace)
+	{
+		if (bSecondTrade && !bFirstTrade)
+		{
+			CvEventReporter::getInstance().tribute(getSecondPlayer(), getFirstPlayer());
+		}
+
+		if (bFirstTrade && !bSecondTrade)
+		{
+			CvEventReporter::getInstance().tribute(getFirstPlayer(), getSecondPlayer());
+		}
 	}
 
 	bAlliance = false;
@@ -759,6 +800,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 	case TRADE_TECHNOLOGIES:
 		GET_TEAM(GET_PLAYER(eToPlayer).getTeam()).setHasTech(((TechTypes)trade.m_iData), true, eToPlayer, true, true);
 		GET_TEAM(GET_PLAYER(eToPlayer).getTeam()).setNoTradeTech(((TechTypes)trade.m_iData), true);
+
+		CvEventReporter::getInstance().techTraded(eFromPlayer, eToPlayer, (TechTypes)trade.m_iData);
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
 		{

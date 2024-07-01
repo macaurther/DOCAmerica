@@ -1280,7 +1280,8 @@ void CvCity::doTurn()
 	{
 		setWeLoveTheKingDay(false);
 	}
-	else if ((getPopulation() >= GC.getDefineINT("WE_LOVE_THE_KING_POPULATION_MIN_POPULATION")) && (GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("WE_LOVE_THE_KING_RAND"), "Do We Love The King?") < getPopulation()))
+	// Brazilian UP: Cities are guaranteed to celebrate if able
+	else if ((getPopulation() >= GC.getDefineINT("WE_LOVE_THE_KING_POPULATION_MIN_POPULATION")) && (getCivilizationType() == BRAZIL || GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("WE_LOVE_THE_KING_RAND"), "Do We Love The King?") < getPopulation()))
 	{
 		setWeLoveTheKingDay(true);
 	}
@@ -2580,44 +2581,10 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 
 bool CvCity::canMaintain(ProcessTypes eProcess, bool bContinue) const
 {
-	//Rhye - start
-//Speed: Modified by Kael 04/19/2007
-//	CyCity* pyCity = new CyCity((CvCity*)this);
-//	CyArgsList argsList;
-//	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-//	argsList.add(eProcess);
-//	argsList.add(bContinue);
-//	long lResult=0;
-//	gDLL->getPythonIFace()->callFunction(PYGameModule, "canMaintain", argsList.makeFunctionArgs(), &lResult);
-//	delete pyCity;	// python fxn must not hold on to this pointer
-//	if (lResult == 1)
-//	{
-//		return true;
-//	}
-//Speed: End Modify
-	//Rhye - end
-
 	if (!(GET_PLAYER(getOwnerINLINE()).canMaintain(eProcess, bContinue)))
 	{
 		return false;
 	}
-
-	//Rhye - start
-//Speed: Modified by Kael 04/19/2007
-//	pyCity = new CyCity((CvCity*)this);
-//	CyArgsList argsList2; // XXX
-//	argsList2.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-//	argsList2.add(eProcess);
-//	argsList2.add(bContinue);
-//	lResult=0;
-//	gDLL->getPythonIFace()->callFunction(PYGameModule, "cannotMaintain", argsList2.makeFunctionArgs(), &lResult);
-//	delete pyCity;	// python fxn must not hold on to this pointer
-//	if (lResult == 1)
-//	{
-//		return false;
-//	}
-//Speed: End Modify
-	//Rhye - end
 
 	return true;
 }
@@ -3110,9 +3077,6 @@ bool CvCity::isFoodProduction() const
 			break;
 
 		case ORDER_CONSTRUCT:
-			return false;
-			break;
-
 		case ORDER_CREATE:
 		case ORDER_MAINTAIN:
 			break;
@@ -3588,7 +3552,7 @@ int CvCity::getProductionModifier(UnitTypes eUnit) const
 }
 
 
-int CvCity::getProductionModifier(BuildingTypes eBuilding) const
+int CvCity::getProductionModifier(BuildingTypes eBuilding, bool bHurry) const
 {
 	int iMultiplier = GET_PLAYER(getOwnerINLINE()).getProductionModifier(eBuilding);
 
@@ -3604,7 +3568,11 @@ int CvCity::getProductionModifier(BuildingTypes eBuilding) const
 	{
 		if (isHasReligion(GET_PLAYER(getOwnerINLINE()).getStateReligion()))
 		{
-			iMultiplier += GET_PLAYER(getOwnerINLINE()).getStateReligionBuildingProductionModifier();
+			// Leoreth: does not apply to world wonders
+			if (!isWorldWonderClass((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType()))
+			{
+				iMultiplier += GET_PLAYER(getOwnerINLINE()).getStateReligionBuildingProductionModifier();
+			}
 		}
 	}
 
@@ -3640,7 +3608,7 @@ int CvCity::getProductionDifference(int iProductionNeeded, int iProduction, int 
 		return 0;
 	}
 
-	int iFoodProduction = ((bFoodProduction) ? std::max(0, (getYieldRate(YIELD_FOOD) - foodConsumption(true))) : 0);
+	int iFoodProduction = ((bFoodProduction) ? std::max(0, (getYieldRate(YIELD_FOOD) - foodConsumption(true)) * (100 + GET_PLAYER(getOwnerINLINE()).getFoodProductionModifier()) / 100) : 0);
 
 	int iOverflow = ((bOverflow) ? (getOverflowProduction() + getFeatureProduction()) : 0);
 
@@ -3831,17 +3799,14 @@ void CvCity::hurry(HurryTypes eHurry)
 		setUnitHurried(getProductionUnit(), true);
 	}
 
-	GET_PLAYER(getOwnerINLINE()).changeGold(-(iHurryGold));
-	changePopulation(-(iHurryPopulation));
-
 	// Leoreth: amount of sacrificed population increases hurry anger
 	iHurryAngerModifier = (iHurryPopulation + 1) / 2;
 
-	// Leoreth: Pyramids negate unhappiness scaling
-	//if (GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect((BuildingTypes)PYRAMIDS))
-	//	iHurryAngerModifier = 1;
 
 	changeHurryAngerTimer(iHurryAngerLength * iHurryAngerModifier);
+	
+	GET_PLAYER(getOwnerINLINE()).changeGold(-(iHurryGold));
+	changePopulation(-(iHurryPopulation));
 
 	if ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && isCitySelected())
 	{
@@ -3884,7 +3849,7 @@ bool CvCity::hurryOverflow(HurryTypes eHurry, int* iProduction, int* iGold, bool
 		FAssertMsg(eBuilding != NO_BUILDING, "eBuilding is expected to be assigned a valid building type");
 		iTotal = getProductionNeeded(eBuilding);
 		iCurrent = getBuildingProduction(eBuilding);
-		iModifier = getProductionModifier(eBuilding);
+		iModifier = getProductionModifier(eBuilding, true);
 		iGoldPercent = GC.getDefineINT("MAXED_BUILDING_GOLD_PERCENT");
 	}
 	else if (isProductionProject())
@@ -4124,12 +4089,12 @@ void CvCity::conscript(bool bForce)
 	CvUnit* pUnit = initConscriptedUnit();
 	FAssertMsg(pUnit != NULL, "pUnit expected to be assigned (not NULL)");
 
-	changePopulation(-(getConscriptPopulation()));
-
 	if (!bForce)
 	{
 		changeConscriptAngerTimer(flatConscriptAngerLength());
 	}
+
+	changePopulation(-(getConscriptPopulation()));
 
 	setDrafted(true);
 
@@ -4440,8 +4405,8 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 			changeRiverPlotYield(((YieldTypes)iI), (GC.getBuildingInfo(eBuilding).getRiverPlotYieldChange(iI) * iChange));
 			changeFlatRiverPlotYield((YieldTypes)iI, GC.getBuildingInfo(eBuilding).getFlatRiverPlotYieldChange(iI) * iChange);
 			changeBaseYieldRate(((YieldTypes)iI), ((GC.getBuildingInfo(eBuilding).getYieldChange(iI) + getBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), (YieldTypes)iI)) * iChange));
-			changeYieldRateModifier((YieldTypes)iI, GC.getBuildingInfo(eBuilding).getYieldModifier(iI));
-			changePowerYieldRateModifier((YieldTypes)iI, GC.getBuildingInfo(eBuilding).getPowerYieldModifier(iI));
+			changeYieldRateModifier((YieldTypes)iI, GC.getBuildingInfo(eBuilding).getYieldModifier(iI) * iChange);
+			changePowerYieldRateModifier((YieldTypes)iI, GC.getBuildingInfo(eBuilding).getPowerYieldModifier(iI) * iChange);
 		}
 
 		for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
@@ -4602,11 +4567,13 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 void CvCity::processProcess(ProcessTypes eProcess, int iChange)
 {
 	int iI;
+	int iProductionToCommerceModifier;
 
 	for (iI = 0; iI < NUM_COMMERCE_TYPES; iI++)
 	{
-		//Leoreth: process efficiency modifier inside (civic)
-		changeProductionToCommerceModifier((CommerceTypes)iI, (GC.getProcessInfo(eProcess).getProductionToCommerceModifier(iI) + GET_PLAYER(getOwnerINLINE()).getProcessModifier()) * iChange);
+		iProductionToCommerceModifier = GC.getProcessInfo(eProcess).getProductionToCommerceModifier(iI) + GET_PLAYER(getOwnerINLINE()).getProcessModifier();
+
+		changeProductionToCommerceModifier((CommerceTypes)iI, iProductionToCommerceModifier * iChange);
 	}
 }
 
@@ -4641,14 +4608,8 @@ void CvCity::processSpecialist(SpecialistTypes eSpecialist, int iChange)
 	updateExtraSpecialistYield();
 
 	changeSpecialistFreeExperience(GC.getSpecialistInfo(eSpecialist).getExperience() * iChange);
-	changeSpecialistHappiness(eSpecialist, iChange);
-}
 
-void CvCity::changeSpecialistHappiness(SpecialistTypes eSpecialist, int iChange)
-{
 	int iHappinessChange = GC.getSpecialistInfo(eSpecialist).getHappiness();
-
-	iHappinessChange += GET_PLAYER(getOwnerINLINE()).getSpecialistHappiness();
 
 	// MacAurther: American UP
 	if (GET_PLAYER(getOwnerINLINE()).getCivilizationType() == AMERICA && eSpecialist >= SPECIALIST_GREAT_PRIEST && eSpecialist <= SPECIALIST_GREAT_SPY)
@@ -4663,19 +4624,6 @@ void CvCity::changeSpecialistHappiness(SpecialistTypes eSpecialist, int iChange)
 	else
 	{
 		changeSpecialistBadHappiness(-iHappinessChange * iChange);
-	}
-}
-
-void CvCity::recalculateSpecialistHappiness()
-{
-	m_iSpecialistGoodHappiness = 0;
-	m_iSpecialistBadHappiness = 0;
-
-	for (int i = 0; i < NUM_SPECIALIST_TYPES; i++)
-	{
-		SpecialistTypes eSpecialist = ((SpecialistTypes)i);
-		int iNumSpecialists = getSpecialistCount(eSpecialist);
-		changeSpecialistHappiness(eSpecialist, iNumSpecialists);
 	}
 }
 
@@ -4703,236 +4651,102 @@ ArtStyleTypes CvCity::getArtStyleType() const
 	return m_eArtStyle;
 }
 
+int CvCity::determineArtStyleType() const
+{
+	PlayerTypes eHighestCulture = findHighestCulture(true);
+
+	if (eHighestCulture == NO_PLAYER)
+	{
+		eHighestCulture = getOwnerINLINE();
+	}
+
+	CvPlayer& kHighestCulturePlayer = GET_PLAYER(eHighestCulture);
+	CivilizationTypes eHighestCultureCiv = kHighestCulturePlayer.getCivilizationType();
+
+	int eRegion = getRegionID();
+	int eRegionGroup = getRegionGroup();
+	int eCultureGroup = GC.getCivilizationInfo(kHighestCulturePlayer.getCivilizationType()).getCultureGroup();
+
+	if (kHighestCulturePlayer.isNative())
+	{
+		if (eRegion == REGION_ICELAND)
+		{
+			return GC.getCivilizationInfo(NORSE).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_NORTH_AMERICA)
+		{
+			return GC.getCivilizationInfo(SIOUX).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_CENTRAL_AMERICA)
+		{
+			return GC.getCivilizationInfo(AZTECS).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_SOUTH_AMERICA)
+		{
+			return GC.getCivilizationInfo(INCA).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_OCEANIA)
+		{
+			return GC.getCivilizationInfo(HAWAII).getArtStyleType();
+		}
+	}
+	else if (kHighestCulturePlayer.isIndependent() || kHighestCulturePlayer.isBarbarian())
+	{
+		if (eRegion == REGION_ICELAND)
+		{
+			return GC.getCivilizationInfo(NORSE).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_NORTH_AMERICA)
+		{
+			if (eCultureGroup == CULTURE_GROUP_NATIVE)
+			{
+				return GC.getCivilizationInfo(eHighestCultureCiv).getArtStyleType();
+			}
+			return GC.getCivilizationInfo(ENGLAND).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_CENTRAL_AMERICA)
+		{
+			if (eCultureGroup == CULTURE_GROUP_NATIVE)
+			{
+				return GC.getCivilizationInfo(eHighestCultureCiv).getArtStyleType();
+			}
+			return GC.getCivilizationInfo(SPAIN).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_SOUTH_AMERICA)
+		{
+			if (eCultureGroup == CULTURE_GROUP_NATIVE)
+			{
+				return GC.getCivilizationInfo(eHighestCultureCiv).getArtStyleType();
+			}
+			return GC.getCivilizationInfo(SPAIN).getArtStyleType();
+		}
+		else if (eRegionGroup == REGION_GROUP_OCEANIA)
+		{
+			return GC.getCivilizationInfo(HAWAII).getArtStyleType();
+		}
+		else if (eCultureGroup == CULTURE_GROUP_NATIVE)
+		{
+			if (isHasReligion(CATHOLICISM))
+			{
+				return GC.getCivilizationInfo(SPAIN).getArtStyleType();
+			}
+			else if (isHasReligion(PROTESTANTISM))
+			{
+				return GC.getCivilizationInfo(ENGLAND).getArtStyleType();
+			}
+			else if (isHasReligion(ORTHODOXY))
+			{
+				return GC.getCivilizationInfo(RUSSIA).getArtStyleType();
+			}
+		}
+	}
+
+	return GC.getCivilizationInfo(eHighestCultureCiv).getArtStyleType();
+}
+
 void CvCity::updateArtStyleType()
 {
-	bool bECS = (GC.getDefineINT("ETHNIC_CITY_STYLES") == 1);
-	PlayerTypes eHighestCulture = findHighestCulture(true);
-	if (eHighestCulture == NO_PLAYER) eHighestCulture = getOwnerINLINE();
-	int id = getRegionID();
-
-	ArtStyleTypes eNewArtStyle = GET_PLAYER(eHighestCulture).getArtStyleType();
-	CivilizationTypes eHighestCultureCiv = GET_PLAYER(eHighestCulture).getCivilizationType();
-
-	if (bECS)
-	{
-		if (GET_PLAYER(eHighestCulture).isNative())
-		{
-			switch (id)
-			{
-			case REGION_ICELAND:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NORSE;
-				break;
-			case REGION_ALASKA:
-			case REGION_YUKON:
-			case REGION_NUNAVUT:
-			case REGION_GREENLAND:
-			case REGION_NORTH_CASCADIA:
-			case REGION_NORTH_PLAINS:
-			case REGION_ONTARIO:
-			case REGION_QUEBEC:
-			case REGION_NEW_FOUNDLAND:
-			case REGION_SOUTH_CASCADIA:
-			case REGION_CALIFORNIA:
-			case REGION_ROCKIES:
-			case REGION_TEXAS:
-			case REGION_GREAT_PLAINS:
-			case REGION_GREAT_LAKES:
-			case REGION_NEW_ENGLAND:
-			case REGION_MID_ATLANTIC:
-			case REGION_MARYLAND:
-			case REGION_RIVER_VALLEY:
-			case REGION_COASTAL_PLAIN:
-			case REGION_DEEP_SOUTH:
-			case REGION_FLORIDA:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NATIVE_AMERICA;
-				break;
-			case REGION_HAWAII:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_PACIFIC;
-				break;
-			case REGION_SOUTHWEST:
-			case REGION_BAJA_CALIFORNIA:
-			case REGION_SIERRA_MADRES:
-			case REGION_BAJIO:
-			case REGION_VERACRUZ:
-			case REGION_OAXACA:
-			case REGION_YUCATAN:
-			case REGION_MESOAMERICA:
-			case REGION_CARIBBEAN:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_MESO_AMERICA;
-				break;
-			case REGION_COLOMBIA:
-			case REGION_VENEZUELA:
-			case REGION_GUYANA:
-			case REGION_PERU:
-			case REGION_BOLIVIA:
-			case REGION_AMAZONAS:
-			case REGION_PARA:
-			case REGION_BAHIA:
-			case REGION_MINAS_GERAIS:
-			case REGION_MATO_GROSSO:
-			case REGION_PARANA:
-			case REGION_CHILE:
-			case REGION_PARAGUAY:
-			case REGION_URUGUAY:
-			case REGION_CHACO:
-			case REGION_CUYO:
-			case REGION_PAMPAS:
-			case REGION_PATAGONIA:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_AMERICA;
-				break;
-			default:
-				break;
-			}
-		}
-		else if (GET_PLAYER(eHighestCulture).isIndependent() || GET_PLAYER(eHighestCulture).isBarbarian())
-		{
-			switch (id)
-			{
-			case REGION_ICELAND:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_NORSE;
-				break;
-			case REGION_ALASKA:
-			case REGION_YUKON:
-			case REGION_NUNAVUT:
-			case REGION_GREENLAND:
-			case REGION_NORTH_CASCADIA:
-			case REGION_NORTH_PLAINS:
-			case REGION_ONTARIO:
-			case REGION_QUEBEC:
-			case REGION_NEW_FOUNDLAND:
-			case REGION_SOUTH_CASCADIA:
-			case REGION_CALIFORNIA:
-			case REGION_ROCKIES:
-			case REGION_TEXAS:
-			case REGION_GREAT_PLAINS:
-			case REGION_GREAT_LAKES:
-			case REGION_NEW_ENGLAND:
-			case REGION_MID_ATLANTIC:
-			case REGION_MARYLAND:
-			case REGION_RIVER_VALLEY:
-			case REGION_COASTAL_PLAIN:
-			case REGION_DEEP_SOUTH:
-			case REGION_FLORIDA:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_ANGLO_AMERICA;
-				break;
-			case REGION_HAWAII:
-				eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_PACIFIC;
-				break;
-			case REGION_SOUTHWEST:
-			case REGION_BAJA_CALIFORNIA:
-			case REGION_SIERRA_MADRES:
-			case REGION_BAJIO:
-			case REGION_VERACRUZ:
-			case REGION_OAXACA:
-			case REGION_YUCATAN:
-			case REGION_MESOAMERICA:
-			case REGION_CARIBBEAN:
-				if (eHighestCultureCiv == AZTECS || eHighestCultureCiv == MAYA) eNewArtStyle = (ArtStyleTypes)ARTSTYLE_MESO_AMERICA;
-				else eNewArtStyle = (ArtStyleTypes)ARTSTYLE_IBERIA;
-				break;
-			case REGION_COLOMBIA:
-			case REGION_VENEZUELA:
-			case REGION_GUYANA:
-			case REGION_PERU:
-			case REGION_BOLIVIA:
-			case REGION_AMAZONAS:
-			case REGION_PARA:
-			case REGION_BAHIA:
-			case REGION_MINAS_GERAIS:
-			case REGION_MATO_GROSSO:
-			case REGION_PARANA:
-			case REGION_CHILE:
-			case REGION_PARAGUAY:
-			case REGION_URUGUAY:
-			case REGION_CHACO:
-			case REGION_CUYO:
-			case REGION_PAMPAS:
-			case REGION_PATAGONIA:
-				if (eHighestCultureCiv == INCA) eNewArtStyle = (ArtStyleTypes)ARTSTYLE_SOUTH_AMERICA;
-				else eNewArtStyle = (ArtStyleTypes)ARTSTYLE_IBERIA;
-				break;
-			default:
-				break;
-			}
-		}
-		else if (eHighestCultureCiv == AZTECS || eHighestCultureCiv == MAYA || eHighestCultureCiv == INCA)
-		{
-			if (GET_PLAYER(eHighestCulture).getStateReligion() == CATHOLICISM) eNewArtStyle = (ArtStyleTypes)ARTSTYLE_IBERIA;
-		}
-	}
-	else
-	{
-		if (GET_PLAYER(eHighestCulture).isNative())
-		{
-			eNewArtStyle = ARTSTYLE_SOUTH_AMERICA_OLD;
-		}
-		else if (GET_PLAYER(eHighestCulture).isIndependent() || GET_PLAYER(eHighestCulture).isBarbarian())
-		{
-			switch (id)
-			{
-			case REGION_ICELAND:
-			case REGION_ALASKA:
-			case REGION_YUKON:
-			case REGION_NUNAVUT:
-			case REGION_GREENLAND:
-			case REGION_NORTH_CASCADIA:
-			case REGION_NORTH_PLAINS:
-			case REGION_ONTARIO:
-			case REGION_QUEBEC:
-			case REGION_NEW_FOUNDLAND:
-			case REGION_SOUTH_CASCADIA:
-			case REGION_CALIFORNIA:
-			case REGION_ROCKIES:
-			case REGION_TEXAS:
-			case REGION_GREAT_PLAINS:
-			case REGION_GREAT_LAKES:
-			case REGION_NEW_ENGLAND:
-			case REGION_MID_ATLANTIC:
-			case REGION_MARYLAND:
-			case REGION_RIVER_VALLEY:
-			case REGION_COASTAL_PLAIN:
-			case REGION_DEEP_SOUTH:
-			case REGION_FLORIDA:
-				eNewArtStyle = ARTSTYLE_EUROPEAN;
-				break;
-			case REGION_HAWAII:
-				eNewArtStyle = ARTSTYLE_BARBARIAN_OLD;
-				break;
-			case REGION_SOUTHWEST:
-			case REGION_BAJA_CALIFORNIA:
-			case REGION_SIERRA_MADRES:
-			case REGION_BAJIO:
-			case REGION_VERACRUZ:
-			case REGION_OAXACA:
-			case REGION_YUCATAN:
-			case REGION_MESOAMERICA:
-			case REGION_CARIBBEAN:
-			case REGION_COLOMBIA:
-			case REGION_VENEZUELA:
-			case REGION_GUYANA:
-			case REGION_PERU:
-			case REGION_BOLIVIA:
-			case REGION_AMAZONAS:
-			case REGION_PARA:
-			case REGION_BAHIA:
-			case REGION_MINAS_GERAIS:
-			case REGION_MATO_GROSSO:
-			case REGION_PARANA:
-			case REGION_CHILE:
-			case REGION_PARAGUAY:
-			case REGION_URUGUAY:
-			case REGION_CHACO:
-			case REGION_CUYO:
-			case REGION_PAMPAS:
-			case REGION_PATAGONIA:
-				if (isHasReligion((ReligionTypes)CATHOLICISM) || isHasReligion((ReligionTypes)PROTESTANTISM)) eNewArtStyle = ARTSTYLE_EUROPEAN;
-				else eNewArtStyle = ARTSTYLE_SOUTH_AMERICA_OLD;
-				break;
-			default:
-				break;
-			}
-		}
-	}
+	ArtStyleTypes eNewArtStyle = (ArtStyleTypes)determineArtStyleType();
 
 	if (m_eArtStyle != eNewArtStyle)
 	{
@@ -4965,6 +4779,12 @@ bool CvCity::hasTrait(TraitTypes eTrait) const
 bool CvCity::isBarbarian() const
 {
 	return GET_PLAYER(getOwnerINLINE()).isBarbarian();
+}
+
+
+bool CvCity::isIndependent() const
+{
+	return GET_PLAYER(getOwnerINLINE()).isIndependent();
 }
 
 
@@ -5196,11 +5016,6 @@ int CvCity::getReligionPercentAnger() const
 
 int CvCity::getHurryPercentAnger(int iExtra) const
 {
-	if (GET_PLAYER(getOwnerINLINE()).isNoTemporaryUnhappiness())
-	{
-		return 0;
-	}
-
 	if (getHurryAngerTimer() == 0)
 	{
 		return 0;
@@ -5208,17 +5023,13 @@ int CvCity::getHurryPercentAnger(int iExtra) const
 
 	int iHurryPercentAnger = (((((getHurryAngerTimer() - 1) / flatHurryAngerLength()) + 1) * GC.getDefineINT("HURRY_POP_ANGER") * GC.getPERCENT_ANGER_DIVISOR()) / std::max(1, getPopulation() + iExtra)) + 1;
 
+
 	return iHurryPercentAnger;
 }
 
 
 int CvCity::getConscriptPercentAnger(int iExtra) const
 {
-	if (GET_PLAYER(getOwnerINLINE()).isNoTemporaryUnhappiness())
-	{
-		return 0;
-	}
-
 	if (getConscriptAngerTimer() == 0)
 	{
 		return 0;
@@ -5231,11 +5042,6 @@ int CvCity::getConscriptPercentAnger(int iExtra) const
 
 int CvCity::getDefyResolutionPercentAnger(int iExtra) const
 {
-	if (GET_PLAYER(getOwnerINLINE()).isNoTemporaryUnhappiness())
-	{
-		return 0;
-	}
-
 	if (getDefyResolutionAngerTimer() == 0)
 	{
 		return 0;
@@ -5360,7 +5166,7 @@ int CvCity::unhappyLevel(int iExtra) const
 }
 
 
-int CvCity::happyLevel(bool bSpecial) const
+int CvCity::happyLevel() const
 {
 	int iHappiness;
 
@@ -5391,9 +5197,9 @@ int CvCity::happyLevel(bool bSpecial) const
 	}
 
 	// Leoreth: Shalimar Gardens effect -> MacAurther: Central Park effect
-	if (bSpecial && isHasBuildingEffect((BuildingTypes)BUILDING_CENTRAL_PARK))
+	if (isHasBuildingEffect((BuildingTypes)BUILDING_CENTRAL_PARK))
 	{
-		iHappiness += std::max(0, goodHealth(false) - badHealth());
+		iHappiness += std::max(0, goodHealth() - badHealth());
 	}
 
 	return std::max(0, iHappiness);
@@ -5489,7 +5295,7 @@ int CvCity::totalBadBuildingHealth() const
 }
 
 
-int CvCity::goodHealth(bool bSpecial) const
+int CvCity::goodHealth() const
 {
 	int iTotalHealth;
 	int iHealth;
@@ -5633,9 +5439,6 @@ int CvCity::badHealth(bool bNoAngry, int iExtra) const
 		iTotalHealth += iHealth;
 	}
 
-	//Leoreth: civic pollution modifier
-	iTotalHealth = iTotalHealth * (100 + GET_PLAYER(getOwner()).getPollutionModifier()) / 100;
-
 	return (unhealthyPopulation(bNoAngry, iExtra) - iTotalHealth);
 }
 
@@ -5768,7 +5571,7 @@ int CvCity::getHurryCost(bool bExtra, BuildingTypes eBuilding, bool bIgnoreNew) 
 {
 	int iProductionLeft = getProductionNeeded(eBuilding) - getBuildingProduction(eBuilding);
 
-	return getHurryCost(bExtra, iProductionLeft, getHurryCostModifier(eBuilding, bIgnoreNew), getProductionModifier(eBuilding));
+	return getHurryCost(bExtra, iProductionLeft, getHurryCostModifier(eBuilding, bIgnoreNew), getProductionModifier(eBuilding, true));
 }
 
 int CvCity::getHurryCost(bool bExtra, int iProductionLeft, int iHurryModifier, int iModifier) const
@@ -6730,51 +6533,67 @@ int CvCity::calculateDistanceMaintenance() const
 	return (calculateDistanceMaintenanceTimes100() / 100);
 }
 
-int CvCity::calculateDistanceMaintenanceTimes100() const
+int CvCity::calculateBaseDistanceMaintenanceTimes100() const
 {
 	CvCity* pLoopCity;
-	int iWorstCityMaintenance;
-	int iBestCapitalMaintenance;
-	int iTempMaintenance;
-	int iDistance;
 	int iLoop;
+	int iDistance;
+	int iMaxDistance;
+	int iMaintenanceDistance;
+	int iMaintenance;
 
-	iWorstCityMaintenance = 0;
-	iBestCapitalMaintenance = MAX_INT;
+	int iGreatestDistance = 0;
+	int iClosestGovernmentCenterDistance = MAX_INT;
 
 	for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
 	{
 		iDistance = plotDistance(getX_INLINE(), getY_INLINE(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
 
-		iTempMaintenance = 100 * (GC.getDefineINT("MAX_DISTANCE_CITY_MAINTENANCE") * iDistance);
-
-		iTempMaintenance *= (getPopulation() + 7);
-		iTempMaintenance /= 10;
-
-		iTempMaintenance *= std::max(0, (GET_PLAYER(getOwnerINLINE()).getDistanceMaintenanceModifier() + 100));
-		iTempMaintenance /= 100;
-
-		iTempMaintenance *= GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getDistanceMaintenancePercent();
-		iTempMaintenance /= 100;
-
-		//iTempMaintenance *= GC.getHandicapInfo(getHandicapType()).getDistanceMaintenancePercent(); //Rhye
-		iTempMaintenance *= GC.getHandicapInfo(getHandicapType()).getDistanceMaintenancePercentByID(getOwnerINLINE()); //Rhye
-		iTempMaintenance /= 100;
-
-		iTempMaintenance /= GC.getMapINLINE().maxPlotDistance();
-
-		iWorstCityMaintenance = std::max(iWorstCityMaintenance, iTempMaintenance);
+		iGreatestDistance = std::max(iGreatestDistance, iDistance);
 
 		if (pLoopCity->isGovernmentCenter())
 		{
-			iBestCapitalMaintenance = std::min(iBestCapitalMaintenance, iTempMaintenance);
+			iClosestGovernmentCenterDistance = std::min(iClosestGovernmentCenterDistance, iDistance);
 		}
 	}
 
-	iTempMaintenance = std::min(iWorstCityMaintenance, iBestCapitalMaintenance);
-	FAssert(iTempMaintenance >= 0);
+	iMaintenanceDistance = std::min(iGreatestDistance, iClosestGovernmentCenterDistance);
 
-	return iTempMaintenance;
+	iMaintenance = 100 * (GC.getDefineINT("MAX_DISTANCE_CITY_MAINTENANCE") * iMaintenanceDistance);
+
+	iMaintenance *= (getPopulation() + 7);
+	iMaintenance /= 10;
+
+	iMaintenance *= std::max(0, (GET_PLAYER(getOwnerINLINE()).getDistanceMaintenanceModifier() + 100));
+	iMaintenance /= 100;
+
+	iMaintenance *= GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getDistanceMaintenancePercent();
+	iMaintenance /= 100;
+
+	iMaxDistance = GC.getMapINLINE().maxPlotDistance() * GC.getEraInfo(GET_PLAYER(getOwnerINLINE()).getCurrentEra()).getMaintenanceRangePercent() / 100;
+
+	iMaintenance /= iMaxDistance;
+
+	CvCity* pCapital = GET_PLAYER(getOwnerINLINE()).getCapitalCity();
+	if (pCapital && plot()->isOverseas(pCapital->plot()))
+	{
+		iMaintenance /= 2;
+	}
+
+	FAssert(iMaintenance >= 0);
+	return iMaintenance;
+}
+
+int CvCity::calculateDistanceMaintenanceTimes100() const
+{
+	int iMaintenance = calculateBaseDistanceMaintenanceTimes100();
+
+	iMaintenance *= GC.getHandicapInfo(getHandicapType()).getDistanceMaintenancePercentByID(getOwnerINLINE()); //Rhye
+	iMaintenance /= 100;
+
+	FAssert(iMaintenance >= 0);
+
+	return iMaintenance;
 }
 
 int CvCity::calculateNumCitiesMaintenance() const
@@ -6804,7 +6623,7 @@ int CvCity::calculateNumCitiesMaintenanceTimes100() const
 	}
 	iNumVassalCities /= std::max(1, GET_TEAM(getTeam()).getNumMembers());
 
-	int iNumCitiesMaintenance = (GET_PLAYER(getOwnerINLINE()).getNumCities() + iNumVassalCities) * iNumCitiesPercent;
+	int iNumCitiesMaintenance = std::max(1, GET_PLAYER(getOwnerINLINE()).getNumCities() + iNumVassalCities - 0) * iNumCitiesPercent;
 
 	//iNumCitiesMaintenance = std::min(iNumCitiesMaintenance, GC.getHandicapInfo(getHandicapType()).getMaxNumCitiesMaintenance() * 100);
 
@@ -6845,7 +6664,12 @@ int CvCity::calculateColonyMaintenanceTimes100() const
 	}
 
 	CvCity* pCapital = GET_PLAYER(getOwnerINLINE()).getCapitalCity();
-	if (pCapital && pCapital->area() == area())
+	if (pCapital && !plot()->isOverseas(pCapital->plot()))
+	{
+		return 0;
+	}
+
+	if (area()->getNumCities() == 1)
 	{
 		return 0;
 	}
@@ -6867,12 +6691,19 @@ int CvCity::calculateColonyMaintenanceTimes100() const
 	iNumCitiesPercent *= GC.getHandicapInfo(getHandicapType()).getColonyMaintenancePercent();
 	iNumCitiesPercent /= 100;
 
-	int iNumCities = (area()->getCitiesPerPlayer(getOwnerINLINE()) - 1) * iNumCitiesPercent;
+	int iNumCities = area()->getCitiesPerPlayer(getOwnerINLINE());
+
+	iNumCities *= iNumCitiesPercent;
 
 	int iMaintenance = (iNumCities * iNumCities) / 100;
 
-	// influenced by English UP here
 	iMaintenance = std::min(iMaintenance, (GC.getHandicapInfo(getHandicapType()).getMaxColonyMaintenance() * calculateDistanceMaintenanceTimes100()) / 100);
+
+	iMaintenance *= std::max(0, GET_PLAYER(getOwnerINLINE()).getColonyMaintenanceModifier() + 100);
+	iMaintenance /= 100;
+
+	iMaintenance *= GET_PLAYER(getOwnerINLINE()).getModifier(MODIFIER_COLONY_MAINTENANCE);
+	iMaintenance /= 100;
 
 	FAssert(iMaintenance >= 0);
 
@@ -7043,11 +6874,6 @@ void CvCity::changeEspionageHealthCounter(int iChange)
 
 int CvCity::getEspionageHappinessCounter() const
 {
-	if (GET_PLAYER(getOwnerINLINE()).isNoTemporaryUnhappiness())
-	{
-		return 0;
-	}
-
 	return m_iEspionageHappinessCounter;
 }
 
@@ -8567,16 +8393,15 @@ void CvCity::changeNukeModifier(int iChange)
 
 int CvCity::getFreeSpecialist() const
 {
-    // Leoreth: Italian UP, only until the industrial era
-	int iCoreSpecialists = 0;
+	int iTotalFreeSpecialists = m_iFreeSpecialist;
 
-	//Leoreth: handle free specialists for core here for simplicity
-	if (plot()->isCore())
+	// Leoreth: most cultured cities free specialists civic effect
+	if (getCultureRank() < GC.getWorldInfo(GC.getMap().getWorldSize()).getTargetNumCities()-1)
 	{
-		iCoreSpecialists += GET_PLAYER(getOwnerINLINE()).getCoreFreeSpecialist();
+		iTotalFreeSpecialists += GET_PLAYER(getOwnerINLINE()).getCulturedCityFreeSpecialists();
 	}
 
-	return m_iFreeSpecialist+iCoreSpecialists;
+	return iTotalFreeSpecialists;
 }
 
 
@@ -9554,11 +9379,10 @@ int CvCity::getAdditionalBaseYieldRateBySpecialist(YieldTypes eIndex, Specialist
 // BUG - Specialist Additional Yield - end
 
 
-int CvCity::getBaseYieldRate(YieldTypes eIndex)	const
+int CvCity::getBaseYieldRate(YieldTypes eIndex)	const													
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-
 	return m_aiBaseYieldRate[eIndex];
 }
 
@@ -9600,9 +9424,9 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 
 int CvCity::getYieldRate(YieldTypes eIndex) const
 {
-	int iYieldRateTimes100 = getBaseYieldRate(eIndex) * getBaseYieldRateModifier(eIndex);
+	int iBaseYieldRate = getBaseYieldRate(eIndex);
 
-	return (iYieldRateTimes100 / 100);
+	return iBaseYieldRate * getBaseYieldRateModifier(eIndex) / 100;
 }
 
 
@@ -9834,26 +9658,11 @@ int CvCity::totalTradeModifier(CvCity* pOtherCity) const
 		// Leoreth: new distance modifier
 		iModifier += getDistanceTradeModifier(pOtherCity);
 
-		// Leoreth: new modifier for trade routes with capital
-		iModifier += getCapitalTradeModifier(pOtherCity);
-
 		// Leoreth: new culture level based modifier
 		iModifier += getCultureTradeRouteModifier() * getCultureLevel();
 	}
 
 	return iModifier;
-}
-
-int CvCity::getCapitalTradeModifier(CvCity* pOtherCity) const
-{
-	if (pOtherCity == NULL) return 0;
-
-	if (isCapital() || (pOtherCity->getOwner() == getOwner() && pOtherCity->isCapital()))
-	{
-		return GET_PLAYER(getOwner()).getCapitalTradeModifier();
-	}
-
-	return 0;
 }
 
 int CvCity::getDefensivePactTradeModifier(CvCity* pOtherCity) const
@@ -9903,6 +9712,12 @@ int CvCity::getPeaceTradeModifier(TeamTypes eTeam) const
 	}
 
 	int iPeaceTurns = std::min(GC.getDefineINT("FOREIGN_TRADE_FULL_CREDIT_PEACE_TURNS"), GET_TEAM(getTeam()).AI_getAtPeaceCounter(eTeam));
+
+	// Canadian UP: Double trade route yield from years of peace
+	if (getCivilizationType() == CANADA)
+	{
+		iPeaceTurns *= 2;
+	}
 
 	/*if (GC.getGameINLINE().getElapsedGameTurns() <= iPeaceTurns)
 	{
@@ -10911,12 +10726,6 @@ int CvCity::getCorporationCommerceByCorporation(CommerceTypes eIndex, Corporatio
 			iNumBonuses += getNumBonuses(eBonus);
 		}
 
-		// Leoreth: Brazilian UP (sugar counts as oil for oil industry)
-		if (getCivilizationType() == BRAZIL && eCorporation == (CorporationTypes)6)
-		{
-			iNumBonuses += getNumBonuses(BONUS_SUGAR);
-		}
-
 		if (iNumBonuses > 0)
 		{
 			//iCommerce += (GC.getCorporationInfo(eCorporation).getCommerceProduced(eIndex) * iNumBonuses * GC.getWorldInfo(GC.getMapINLINE().getWorldSize()).getCorporationMaintenancePercent()) / 100;
@@ -11878,10 +11687,11 @@ void CvCity::doFoundMessage()
 	//Rhye - start
 	//szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_IS_FOUNDED", getNameKey());
 	//GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CITY_FOUNDED, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
-	if (isCapital() && !GET_PLAYER(getOwner()).isBarbarian() && !GET_PLAYER(getOwner()).isMinorCiv()) {
+	if (isCapital() && !GET_PLAYER(getOwner()).isBarbarian() && !GET_PLAYER(getOwner()).isMinorCiv()) 
+	{
 		szBuffer = gDLL->getText("TXT_KEY_MISC_CIV_IS_BORN", GET_PLAYER(getOwnerINLINE()).getCivilizationShortDescription());
-	GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CITY_FOUNDED, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
-}
+		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CITY_FOUNDED, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
+	}
 	//Rhye - end
 }
 
@@ -11889,7 +11699,8 @@ void CvCity::doFoundReplayMessage()
 {
 	CvWString szBuffer;
 
-	if (isCapital() && !GET_PLAYER(getOwner()).isBarbarian() && !GET_PLAYER(getOwner()).isMinorCiv()) {
+	if (isCapital() && !GET_PLAYER(getOwner()).isBarbarian() && !GET_PLAYER(getOwner()).isMinorCiv())
+	{
 		szBuffer = gDLL->getText("TXT_KEY_MISC_CIV_IS_BORN", GET_PLAYER(getOwnerINLINE()).getCivilizationShortDescription());
 		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_CITY_FOUNDED, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_ALT_HIGHLIGHT_TEXT"));
 	}
@@ -12053,18 +11864,6 @@ bool CvCity::isCorporationBonus(BonusTypes eBonus) const
 						return true;
 					}
 				}
-			}
-		}
-	}
-	
-	// Merijn: Brazilian UP
-	if (GET_PLAYER(getOwnerINLINE()).isActiveCorporation((CorporationTypes)6))
-	{
-		if (getCivilizationType() == BRAZIL && eBonus == BONUS_SUGAR)
-		{
-			if (isHasCorporation((CorporationTypes)6))
-			{
-				return true;
 			}
 		}
 	}
@@ -14518,7 +14317,7 @@ void CvCity::doCulture()
 }
 
 
-void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
+void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate, bool bOwned)
 {
 	CvPlot* pLoopPlot;
 	int iDX, iDY;
@@ -14573,6 +14372,11 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 					if (iCultureRange <= eCultureLevel)
 					{
 						pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+
+						if (bOwned && pLoopPlot->getOwnerINLINE() != getOwnerINLINE())
+						{
+							continue;
+						}
 
 						if (pLoopPlot != NULL)
 						{
@@ -15026,6 +14830,11 @@ bool CvCity::canSpread(ReligionTypes eReligion, bool bMissionary) const
 
 	if (eSpread == RELIGION_SPREAD_MINORITY && getReligionCount() == 0) return false;
 
+	if (GC.getReligionInfo(eReligion).isLocal() && GC.getGameINLINE().isReligionFounded(eReligion) && GET_PLAYER(GC.getGameINLINE().getHolyCity(eReligion)->getOwnerINLINE()).isMinorCiv())
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -15081,6 +14890,11 @@ int CvCity::getTurnsToSpread(ReligionTypes eReligion) const
 	if (eStateReligion == eReligion && isHasPrecursor(eReligion)) iTurns -= iIncrement / 2;
 
 	if (eSpread == RELIGION_SPREAD_MINORITY) iTurns *= 2;
+
+	if (GC.getReligionInfo(eReligion).isLocal() && eSpread == RELIGION_SPREAD_MINORITY && !isHasPrecursor(eReligion))
+	{
+		iTurns *= 2;
+	}
 
 	return getTurns(iTurns);
 }
@@ -17677,6 +17491,25 @@ int CvCity::getRegionID() const
 	return plot()->getRegionID();
 }
 
+int CvCity::getSpecialistGoodHappiness() const
+{
+	return m_iSpecialistGoodHappiness;
+}
+
+int CvCity::getSpecialistBadHappiness() const
+{
+	int iSpecialistBadHappiness = m_iSpecialistBadHappiness;
+
+	// Leoreth: increased unhappiness from Egalitarianism
+	int iAngerModifier = 0;
+	for (int iI = 0; iI < GC.getNumCivicInfos(); iI++)
+	{
+		iAngerModifier += GET_PLAYER(getOwnerINLINE()).getCivicPercentAnger((CivicTypes)iI, false);
+	}
+
+	return iSpecialistBadHappiness * (GC.getPERCENT_ANGER_DIVISOR() + 4 * iAngerModifier) / GC.getPERCENT_ANGER_DIVISOR();
+}
+
 // MacAurther
 bool CvCity::isCanadian() const
 {
@@ -17732,16 +17565,6 @@ bool CvCity::isArgentine() const
 		return true;
 	}
 	return false;
-}
-int CvCity::getSpecialistGoodHappiness() const
-{
-	return m_iSpecialistGoodHappiness;
-}
-
-int CvCity::getSpecialistBadHappiness() const
-{
-	int iSpecialistBadHappiness = m_iSpecialistBadHappiness;
-	return iSpecialistBadHappiness * GC.getPERCENT_ANGER_DIVISOR() / GC.getPERCENT_ANGER_DIVISOR();
 }
 
 void CvCity::changeSpecialistGoodHappiness(int iChange)
@@ -18116,8 +17939,10 @@ void CvCity::setNextCoveredPlot(int iNewValue, bool bUpdatePlotGroups)
 	int iOldValue;
 	int iCultureRange;
 	int iI;
+	bool bMinor;
 
 	iOldValue = getNextCoveredPlot();
+	bMinor = GET_PLAYER(getOwnerINLINE()).isMinorCiv();
 
 	if (iNewValue < iOldValue)
 	{
@@ -18134,7 +17959,13 @@ void CvCity::setNextCoveredPlot(int iNewValue, bool bUpdatePlotGroups)
 				if (pLoopPlot != NULL)
 				{
 					iCultureRange = std::max(0, plotDistance(getX_INLINE(), getY_INLINE(), pLoopPlot->getX(), pLoopPlot->getY()));
-					pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, -1, bUpdatePlotGroups);
+
+					// Leoreth: only two rings for minor civilizations
+					// MacAurther TODO: Make 3rd Culture ring based on a tech
+					if (!bMinor || iCultureRange <= 2)
+					{
+						pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, -1, bUpdatePlotGroups);
+					}
 				}
 			}
 		}
@@ -18161,7 +17992,12 @@ void CvCity::setNextCoveredPlot(int iNewValue, bool bUpdatePlotGroups)
 						bCoveredNewPlot = true;
 					}
 
-					pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, 1, bUpdatePlotGroups);
+					// Leoreth: only two rings for minor civilizations
+					// MacAurther TODO: Make 3rd Culture ring based on a tech
+					if (!bMinor || iCultureRange <= 2)
+					{
+						pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, 1, bUpdatePlotGroups);
+					}
 				}
 			}
 		}
@@ -18386,6 +18222,11 @@ struct disappearingReligionCompare
 
 ReligionTypes CvCity::disappearingReligion(ReligionTypes eNewReligion, bool bConquest) const
 {
+	if (!GC.getGame().isFinalInitialized())
+	{
+		return NO_RELIGION;
+	}
+
 	int iI;
 	ReligionTypes eReligion;
 	std::vector<ReligionTypes> religions;
@@ -18396,7 +18237,7 @@ ReligionTypes CvCity::disappearingReligion(ReligionTypes eNewReligion, bool bCon
 	for (iI = 0; iI < NUM_RELIGIONS; iI++)
 	{
 		eReligion = (ReligionTypes)iI;
-		if (eReligion != eNewReligion && GET_PLAYER(getOwnerINLINE()).getStateReligion() != eReligion)
+		if (eReligion != eNewReligion && GET_PLAYER(getOwnerINLINE()).isStateReligion() && GET_PLAYER(getOwnerINLINE()).getStateReligion() != eReligion)
 		{
 			if (isHasReligion(eReligion) && !isHolyCity(eReligion) && GET_PLAYER(getOwnerINLINE()).getSpreadType(plot(), eReligion) == RELIGION_SPREAD_NONE)
 			{
@@ -18705,6 +18546,8 @@ void CvCity::setCultureRank(int iNewValue)
 				processBonusEffect((BonusTypes)iI, hasBonusEffect((BonusTypes)iI) ? 1 : -1);
 			}
 		}
+
+		AI_setAssignWorkDirty(true);
 	}
 }
 
@@ -19238,9 +19081,14 @@ bool CvCity::isCore() const
 	return plot()->isCore();
 }
 
-bool CvCity::rebuild()
+bool CvCity::rebuild(EraTypes eEra)
 {
 	bool bBuilt = false;
+
+	if (eEra == NO_ERA)
+	{
+		eEra = GET_PLAYER(getOwnerINLINE()).getCurrentEra();
+	}
 
 	BuildingTypes eBuilding;
 	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
@@ -19253,7 +19101,7 @@ bool CvCity::rebuild()
 
 			if (kBuilding.getFreeStartEra() != NO_ERA)
 			{
-				if (GET_PLAYER(getOwnerINLINE()).getCurrentEra() >= kBuilding.getFreeStartEra())
+				if (eEra >= kBuilding.getFreeStartEra())
 				{
 					if (canConstruct(eBuilding) || getFirstBuildingOrder(eBuilding) != -1)
 					{
@@ -19266,6 +19114,11 @@ bool CvCity::rebuild()
 	}
 
 	return bBuilt;
+}
+
+int CvCity::getRegionGroup() const
+{
+	return plot()->getRegionGroup();
 }
 
 bool CvCity::populate()

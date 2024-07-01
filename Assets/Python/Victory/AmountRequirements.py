@@ -23,7 +23,7 @@ class AverageCultureAmount(ThresholdRequirement):
 
 # First Egyption UHV goal
 # Third Egyptian UHV goal
-# First Tamil UHV goal
+# First Dravidian UHV goal
 # Third Khmer UHV goal
 # Third Mughal UHV goal
 class CultureAmount(ThresholdRequirement):
@@ -38,10 +38,25 @@ class CultureAmount(ThresholdRequirement):
 	
 	def value(self, iPlayer):
 		return player(iPlayer).countTotalCulture()
+
+
+# First Japanese UHV goal
+class FoundedCultureAmount(ThresholdRequirement):
+
+	TYPES = (AMOUNT,)
+	
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_FOUNDED_CULTURE_AMOUNT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_FOUNDED_CULTURE_AMOUNT"
+	
+	def __init__(self, iRequired, **options):
+		ThresholdRequirement.__init__(self, iRequired, **options)
+	
+	def value(self, iPlayer):
+		return cities.owner(iPlayer).where(lambda city: city.getOriginalCiv() == civ(iPlayer)).sum(lambda city: city.getCulture(iPlayer))
 	
 
 # Third Phoenician UHV goal
-# First Tamil UHV goal
+# First Dravidian UHV goal
 # First Byzantine UHV goal
 # Third Mandinka UHV goal
 # Second Inca UHV goal
@@ -62,7 +77,7 @@ class GoldAmount(ThresholdRequirement):
 # Second Taoist URV goal
 class ShrineIncome(ThresholdRequirement):
 
-	TYPES = (RELIGION_ADJECTIVE, AMOUNT)
+	TYPES = (RELIGION_ADJECTIVE, COUNT)
 	
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_SHRINE_INCOME"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_SHRINE_INCOME"

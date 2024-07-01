@@ -597,11 +597,11 @@ public:
 	bool isPlayerCore(int iPlayer);
 	bool isOwnerCore();
 	int getActualCulture(int iPlayer);
-	int getPopulationLoss();
+	int getTotalPopulationLoss();
 	int countSatellites();
 	int getSatelliteSlots();
 	int getArea();
-	bool rebuild();
+	bool rebuild(int iEra);
 	bool isValidBuildingLocation(int eBuilding);
 	void setOriginalCiv(int iCivilization);
 	void setEverOwned(int iCivilization, bool bNewValue);
@@ -611,6 +611,7 @@ public:
 	bool isOriginalOwner(int iPlayer);
 	int getCorporationBadHappiness();
 	int getCorporationCount();
+	void doPlotCulture(bool bUpdate, int ePlayer, int iCultureRate, bool bOwned);
 
 private:
 	CvCity* m_pCity;

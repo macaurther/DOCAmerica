@@ -260,6 +260,8 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		//Leoreth
 		.def("getRegionID", &CyPlot::getRegionID, "int ()")
 		.def("setRegionID", &CyPlot::setRegionID, "void (int iNewValue)")
+		.def("getRegionName", &CyPlot::getRegionName, "str ()")
+		.def("getRegionGroup", &CyPlot::getRegionGroup, "int ()")
 		.def("isCore", &CyPlot::isCore, "bool (int iCivilization)")
 		.def("isPlayerCore", &CyPlot::isPlayerCore, "bool (int iPlayer)")
 		.def("isOwnerCore", &CyPlot::isOwnerCore, "bool ()")
@@ -291,6 +293,9 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("getExpansion", &CyPlot::getExpansion, "int ()")
 		.def("isExpansion", &CyPlot::isExpansion, "bool ()")
 		.def("setRevealedOwner", &CyPlot::setRevealedOwner, "void (int eTeam, int eNewValue)")
+		.def("setBonusVarietyType", &CyPlot::setBonusVarietyType, "void (int eBonusType)")
+		.def("getBonusVarietyType", &CyPlot::getBonusVarietyType, "int ()")
+		.def("getContinentArea", &CyPlot::getContinentArea, "int ()")
 		.def("updateRevealedOwner", &CyPlot::updateRevealedOwner, "void (int eTeam)")
 
 		// MacAurther

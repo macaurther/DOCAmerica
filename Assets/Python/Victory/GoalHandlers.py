@@ -182,6 +182,13 @@ class EventHandlerRegistry(object):
 		
 		return greatPersonBorn
 	
+	def improvementBuilt(self, goal, applicable, func):
+		def improvementBuilt((iImprovement, iX, iY)):
+			if plot(iX, iY).isOwned() and applicable(goal, plot(iX, iY).getOwner()):
+				func(goal, iImprovement)
+		
+		return improvementBuilt
+	
 	def peaceBrokered(self, goal, applicable, func):
 		def peaceBrokered((iBroker, iPlayer1, iPlayer2)):
 			if applicable(goal, iBroker):
@@ -210,6 +217,13 @@ class EventHandlerRegistry(object):
 		
 		return playerSlaveTrade
 	
+	def plotFeatureRemoved(self, goal, applicable, func):
+		def plotFeatureRemoved((plot, city, iFeature)):
+			if city and applicable(goal, city.getOwner()):
+				func(goal, plot, city, iFeature)
+		
+		return plotFeatureRemoved
+	
 	def projectBuilt(self, goal, applicable, func):
 		def projectBuilt((city, iProject)):
 			if applicable(goal, city.getOwner()):
@@ -217,17 +231,24 @@ class EventHandlerRegistry(object):
 		
 		return projectBuilt
 	
-	def sacrificeHappiness(self, goal, applicable, func):
-		def sacrificeHappiness((iPlayer, city)):
+	def religionFounded(self, goal, applicable, func):
+		def religionFounded((iReligion, iPlayer)):
+			if applicable(goal, iPlayer):
+				func(goal, iReligion)
+		
+		return religionFounded
+	
+	def sacrificeGoldenAge(self, goal, applicable, func):
+		def sacrificeGoldenAge((iPlayer, city)):
 			if applicable(goal, iPlayer):
 				func(goal)
 		
-		return sacrificeHappiness
+		return sacrificeGoldenAge
 	
 	def techAcquired(self, goal, applicable, func):
 		def techAcquired((iTech, iTeam, iPlayer, bAnnounce)):
 			if applicable(goal, iPlayer):
-				func(goal, iTech)
+				func(goal, iTech, iPlayer)
 	
 		return techAcquired
 	
@@ -238,12 +259,26 @@ class EventHandlerRegistry(object):
 		
 		return tradeMission
 	
+	def tribute(self, goal, applicable, func):
+		def tribute((iFrom, iTo)):
+			if applicable(goal, iTo):
+				func(goal, iTo)
+		
+		return tribute
+	
 	def unitPillage(self, goal, applicable, func):
 		def unitPillage((unit, iImprovement, iRoute, iPlayer, iGold)):
 			if applicable(goal, iPlayer):
 				func(goal, iGold)
 		
 		return unitPillage
+	
+	def unitSpreadReligionAttempt(self, goal, applicable, func):
+		def unitSpreadReligionAttempt((unit, iReligion, bSuccess)):
+			if applicable(goal, unit.getOwner()) and bSuccess:
+				func(goal, iReligion, unit)
+		
+		return unitSpreadReligionAttempt
 	
 	def vassalState(self, goal, applicable, func):
 		def vassalState((iMaster, iVassal, bVassal, bCapitulated)):

@@ -437,11 +437,11 @@ class CvGameUtils:
 	
 		# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerican RP
 		if iData1 == 10000:
-			return CyTranslator().getText("TXT_KEY_BUTTON_SACRIFICE", (turns(5), turns(5)))
+			return CyTranslator().getText("TXT_KEY_BUTTON_SACRIFICE", (turns(1), turns(10)))
 						
 		# Leoreth: Byzantine UP: bribe button
 		if iData1 == 10001:
-			return CyTranslator().getText("TXT_KEY_ACTION_BYZANTINE_UP", ())
+			return CyTranslator().getText("TXT_KEY_ACTION_BRIBE_UNITS", ())
 		
 ## Religion Screen ##
 #		if eWidgetType == WidgetTypes.WIDGET_HELP_RELIGION:

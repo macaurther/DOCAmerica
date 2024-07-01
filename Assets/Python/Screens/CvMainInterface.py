@@ -9,6 +9,7 @@ import time
 
 from Stability import *
 from RFCUtils import *
+from Rules import *
 from StoredData import data
 from Consts import *
 from Core import *
@@ -2327,10 +2328,8 @@ class CvMainInterface:
 				iBtnW = 32
 				iBtnH = 28
 				
-				# Hurry Buttons
-				i = 0
-				if pHeadSelectedCity.canHurry(3, False): i = 3
-				screen.setButtonGFC( "Hurry0", "", "", iBtnX, iBtnY, iBtnW, iBtnH, WidgetTypes.WIDGET_HURRY, i, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
+				# Hurry Buttons		
+				screen.setButtonGFC( "Hurry0", "", "", iBtnX, iBtnY, iBtnW, iBtnH, WidgetTypes.WIDGET_HURRY, 0, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
 				screen.setStyle( "Hurry0", "Button_CityC1_Style" )
 				screen.hide( "Hurry0" )
 
@@ -2338,7 +2337,6 @@ class CvMainInterface:
 
 				i = 2
 				if pHeadSelectedCity.isProductionUnit(): i = 1
-				if pHeadSelectedCity.canHurry(4, False): i = 4
 				screen.setButtonGFC( "Hurry1", "", "", iBtnX, iBtnY, iBtnW, iBtnH, WidgetTypes.WIDGET_HURRY, i, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
 				screen.setStyle( "Hurry1", "Button_CityC2_Style" )
 				screen.hide( "Hurry1" )
@@ -2435,16 +2433,14 @@ class CvMainInterface:
 				# Slavery button
 				szButtonID = "Hurry0"
 				screen.show(szButtonID)
-				bCanWhip = pHeadSelectedCity.canHurry(0, False) or pHeadSelectedCity.canHurry(3, False)
-				screen.enable(szButtonID, bCanWhip)
+				screen.enable(szButtonID, pHeadSelectedCity.canHurry(0, False))
 				
 				# Mercenary/Public Welfare button
 				szButtonID = "Hurry1"
 				screen.show(szButtonID)
 				i = 2
 				if pHeadSelectedCity.isProductionUnit(): i = 1
-				bCanBuy = pHeadSelectedCity.canHurry(i, False) or pHeadSelectedCity.canHurry(4, False)
-				screen.enable(szButtonID, bCanBuy)
+				screen.enable(szButtonID, pHeadSelectedCity.canHurry(i, False))
 
 				# Conscript Button Show
 				screen.show( "Conscript" )
@@ -2592,14 +2588,19 @@ class CvMainInterface:
 					
 					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerica RP
 					if pUnit.getUnitType() in lSlaves and civ(pUnit) in dCivGroups[iCivGroupMesoamerica]:
-						plot = plot_(pUnit)
-						if plot.isCity():
-							city = plot.getPlotCity()
+						city = city_(pUnit)
+						if city:
 							if civ(city) in dCivGroups[iCivGroupMesoamerica] and not city.isWeLoveTheKingDay():
-								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(iAltar).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
+								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(unique_building(pUnit.getOwner(), iPaganTemple)).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
 								screen.show("BottomButtonContainer")
 								iCount = iCount + 1
 						
+					# Leoreth: Byzantine UP: bribe barbarians
+					if pUnit.getUnitType() == iSpy and not pUnit.isMadeAttack() and player(pUnit).getNumCities() > 0:
+						if canBribeUnits(pUnit):
+							screen.appendMultiListButton("BottomButtonContainer", gc.getTechInfo(iCurrency).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10001, 10001, False)
+							screen.show("BottomButtonContainer")
+							iCount = iCount + 1
 
 		elif (CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY):
 		
@@ -3204,6 +3205,8 @@ class CvMainInterface:
 					pPlayer = gc.getPlayer(ePlayer)
 					iGold = pPlayer.getGold()
 					iGoldRate = pPlayer.calculateGoldRate()
+					iCurrentResearch = pPlayer.getCurrentResearch()
+					iResearchTurnsLeft = iCurrentResearch >= 0 and pPlayer.getResearchTurnsLeft(iCurrentResearch, True) or None
 					if iGold < 0:
 						szText = BugUtil.getText("TXT_KEY_MISC_NEG_GOLD", iGold)
 						if iGoldRate != 0:
@@ -3218,8 +3221,10 @@ class CvMainInterface:
 						if iGoldRate != 0:
 							if iGoldRate >= 0:
 								szText += BugUtil.getText("TXT_KEY_MISC_POS_GOLD_PER_TURN", iGoldRate)
-							elif iGold + iGoldRate >= 0:
+							elif iCurrentResearch >= 0 and iGold + iGoldRate * iResearchTurnsLeft >= 0:
 								szText += BugUtil.getText("TXT_KEY_MISC_NEG_WARNING_GOLD_PER_TURN", iGoldRate)
+							elif iGold + iGoldRate >= 0:
+								szText += BugUtil.getText("TXT_KEY_MISC_NEG_STRONG_WARNING_GOLD_PER_TURN", iGoldRate)
 							else:
 								szText += BugUtil.getText("TXT_KEY_MISC_NEG_GOLD_PER_TURN", iGoldRate)
 					if pPlayer.isStrike():
@@ -3795,17 +3800,9 @@ class CvMainInterface:
 						HURRY_WHIP = gc.getInfoTypeForString("HURRY_POPULATION")
 						HURRY_BUY_UNIT = gc.getInfoTypeForString("HURRY_GOLD_UNITS")
 						HURRY_BUY_BUILDING = gc.getInfoTypeForString("HURRY_GOLD_BUILDINGS")
-						HURRY_POLICE_STATE = gc.getInfoTypeForString("HURRY_POLICE_STATE")
-						HURRY_FEDERALISM = gc.getInfoTypeForString("HURRY_GOLD_FEDERALISM")
-						if (CityScreenOpt.isShowWhipAssist() and (pHeadSelectedCity.canHurry(HURRY_WHIP, False) or pHeadSelectedCity.canHurry(HURRY_POLICE_STATE, False))):
-							iHurryPop = 0;
-							iOverflow = 0;
-							if pHeadSelectedCity.canHurry(HURRY_POLICE_STATE, False):
-								iHurryPop = pHeadSelectedCity.hurryPopulation(HURRY_POLICE_STATE)
-								iOverflow = pHeadSelectedCity.hurryProduction(HURRY_POLICE_STATE) - pHeadSelectedCity.productionLeft()
-							elif pHeadSelectedCity.canHurry(HURRY_WHIP, False):
-								iHurryPop = pHeadSelectedCity.hurryPopulation(HURRY_WHIP)
-								iOverflow = pHeadSelectedCity.hurryProduction(HURRY_WHIP) - pHeadSelectedCity.productionLeft()
+						if (CityScreenOpt.isShowWhipAssist() and pHeadSelectedCity.canHurry(HURRY_WHIP, False)):
+							iHurryPop = pHeadSelectedCity.hurryPopulation(HURRY_WHIP)
+							iOverflow = pHeadSelectedCity.hurryProduction(HURRY_WHIP) - pHeadSelectedCity.productionLeft()
 							if CityScreenOpt.isWhipAssistOverflowCountCurrentProduction():
 								iOverflow += pHeadSelectedCity.getCurrentProductionDifference(False, True)
 							iMaxOverflow = max(pHeadSelectedCity.getProductionNeeded(), pHeadSelectedCity.getCurrentProductionDifference(False, False))
@@ -3830,9 +3827,6 @@ class CvMainInterface:
 								szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_WHIP_PLUS_GOLD", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryPop, iOverflow, iOverflowGold))
 							else:
 								szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_WHIP", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryPop, iOverflow))
-						elif (CityScreenOpt.isShowWhipAssist() and pHeadSelectedCity.canHurry(HURRY_FEDERALISM, False)):
-							iHurryCost = pHeadSelectedCity.hurryGold(HURRY_FEDERALISM)
-							szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_BUY", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryCost))
 						elif (CityScreenOpt.isShowWhipAssist() and pHeadSelectedCity.canHurry(HURRY_BUY_UNIT, False)):
 							iHurryCost = pHeadSelectedCity.hurryGold(HURRY_BUY_UNIT)
 							szBuffer = localText.getText("INTERFACE_CITY_PRODUCTION_BUY", (pHeadSelectedCity.getProductionNameKey(), pHeadSelectedCity.getProductionTurnsLeft(), iHurryCost))
@@ -3848,7 +3842,7 @@ class CvMainInterface:
 					screen.show( "ProductionText" )
 				
 				if (pHeadSelectedCity.isProductionProcess()):
-					szBuffer = u"%d%c" %(pHeadSelectedCity.getYieldRate(YieldTypes.YIELD_PRODUCTION), gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
+					szBuffer = u"%d%c" %(pHeadSelectedCity.getBaseYieldRate(YieldTypes.YIELD_PRODUCTION), gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
 				elif (pHeadSelectedCity.isFoodProduction() and (iProductionDiffJustFood > 0)):
 					szBuffer = u"%d%c + %d%c" %(iProductionDiffJustFood, gc.getYieldInfo(YieldTypes.YIELD_FOOD).getChar(), iProductionDiffNoFood, gc.getYieldInfo(YieldTypes.YIELD_PRODUCTION).getChar())
 				else:
@@ -3870,9 +3864,9 @@ class CvMainInterface:
 # BUG - Anger Display - start
 					if (CityScreenOpt.isShowAngerCounter()
 					and pHeadSelectedCity.getTeam() == gc.getGame().getActiveTeam()):
-						iHurryAngerTimer = pHeadSelectedCity.getHurryAngerTimer() * 100 / (100 + gc.getPlayer(pHeadSelectedCity.getOwner()).getUnhappinessDecayModifier())
+						iHurryAngerTimer = pHeadSelectedCity.getHurryAngerTimer()
 						iAngerTimer = max(iHurryAngerTimer, pHeadSelectedCity.getConscriptAngerTimer())
-						if not gc.getPlayer(pHeadSelectedCity.getOwner()).isNoTemporaryUnhappiness() and iAngerTimer > 0:
+						if iAngerTimer > 0:
 							szBuffer += u" (%i)" % iAngerTimer
 # BUG - Anger Display - end
 
@@ -5831,15 +5825,17 @@ class CvMainInterface:
 			iX = self.pPushedButtonUnit.getX()
 			iY = self.pPushedButtonUnit.getY()
 			city = gc.getMap().plot(iX, iY).getPlotCity()
-			city.changeHappinessTimer(turns(10))
-			city.setWeLoveTheKingDay(True)
+			
+			player(city).changeGoldenAgeTurns(turns(1))
+			city.changeHurryAngerTimer(turns(10))
+			
 			self.pPushedButtonUnit.kill(False, city.getOwner())
 			
-			events.fireEvent("sacrificeHappiness", city.getOwner(), city)
+			events.fireEvent("sacrificeGoldenAge", city.getOwner(), city)
 		
 		# Leoreth: start Byzantine UP
 		if inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10001:
-			doByzantineBribery(g_pSelectedUnit)
+			doUnitBribes(g_pSelectedUnit)
 		# Leoreth: end
 
 		return 0

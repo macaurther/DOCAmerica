@@ -77,9 +77,8 @@ public:
 	DllExport bool isHuman() const;																																							// Exposed to Python
 	DllExport void updateHuman();
 	DllExport bool isBarbarian() const;		// Exposed to Python
-
-	bool isIndependent() const;
-	bool isNative() const;
+	DllExport bool isIndependent() const;	// Exposed to Python
+	DllExport bool isNative() const;		// Exposed to Python
 
 	DllExport const wchar* getName(uint uiForm = 0) const;																											// Exposed to Python
 	//Rhye (jdog) -  start ---------------------
@@ -121,7 +120,6 @@ public:
 	void updateFeatureHappiness();
 	void updateReligionHappiness();
 	void updateExtraSpecialistYield();
-	void updateSpecialistHappiness();
 	void updateCommerce(CommerceTypes eCommerce);
 	void updateCommerce();
 	void updateBuildingCommerce();
@@ -167,6 +165,7 @@ public:
 	int countUnimprovedBonuses(CvArea* pArea = NULL, CvPlot* pFromPlot = NULL) const;														// Exposed to Python
 	int countCityFeatures(FeatureTypes eFeature) const;																										// Exposed to Python
 	int countNumBuildings(BuildingTypes eBuilding) const;																									// Exposed to Python
+	int countSpecialists(SpecialistTypes eSpecialist) const;
 	DllExport int countNumCitiesConnectedToCapital() const;																								// Exposed to Python
 	int countPotentialForeignTradeCities(CvArea* pIgnoreArea = NULL) const;																// Exposed to Python
 	int countPotentialForeignTradeCitiesConnected() const;																								// Exposed to Python
@@ -182,6 +181,7 @@ public:
 	int getNumAvailableBonuses(BonusTypes eBonus) const;																									// Exposed to Python
 	DllExport int getNumTradeableBonuses(BonusTypes eBonus) const;																				// Exposed to Python
 	int getNumTradeBonusImports(PlayerTypes ePlayer) const;																								// Exposed to Python
+	int getNumTradeBonusExports(PlayerTypes ePlayer) const;
 	bool hasBonus(BonusTypes eBonus) const;									// Exposed to Python
 
 	bool isTradingWithTeam(TeamTypes eTeam, bool bIncludeCancelable) const;
@@ -217,7 +217,7 @@ public:
 	DllExport int getProductionNeeded(BuildingTypes eBuilding) const;																						// Exposed to Python
 	DllExport int getProductionNeeded(ProjectTypes eProject) const;																							// Exposed to Python
 	int getProductionModifier(UnitTypes eUnit) const;
-	int getProductionModifier(BuildingTypes eBuilding) const;
+	int getProductionModifier(BuildingTypes eBuilding, bool bHurry = false) const;
 	int getProductionModifier(ProjectTypes eProject) const;
 
 	DllExport int getBuildingClassPrereqBuilding(BuildingTypes eBuilding, BuildingClassTypes ePrereqBuildingClass, int iExtra = 0) const;	// Exposed to Python
@@ -535,10 +535,14 @@ public:
 	int getNumCitiesMaintenanceModifier() const;																															// Exposed to Python
 	void changeNumCitiesMaintenanceModifier(int iChange);
 
+	// Leoreth
+	int getColonyMaintenanceModifier() const;
+	void changeColonyMaintenanceModifier(int iChange);
+
 	int getCorporationMaintenanceModifier() const;																															// Exposed to Python
 	void changeCorporationMaintenanceModifier(int iChange);
 
-	//Leoreth
+	// Leoreth
 	int getCorporationCommerceModifier() const;
 	void changeCorporationCommerceModifier(int iChange);
 
@@ -546,10 +550,14 @@ public:
 	int getCorporationUnhappinessModifier() const;
 	void changeCorporationUnhappinessModifier(int iChange);
 
-	//Leoreth
+	// Leoreth
 	int getProcessModifier() const;
 	void changeProcessModifier(int iChange);
 	void updateProductionToCommerceModifier();
+
+	// Leoreth
+	int getFoodProductionModifier() const;
+	void changeFoodToProductionModifier(int iChange);
 
 	int getTotalMaintenance() const;																																					// Exposed to Python
 	void changeTotalMaintenance(int iChange);
@@ -562,10 +570,6 @@ public:
 
 	DllExport int getExtraHealth() const;																																			// Exposed to Python
 	void changeExtraHealth(int iChange);
-
-	//Leoreth
-	int getPollutionModifier() const;
-	void changePollutionModifier(int iChange);
 
 	int getBuildingGoodHealth() const;																																				// Exposed to Python
 	void changeBuildingGoodHealth(int iChange);
@@ -582,10 +586,6 @@ public:
 	int getLargestCityHappiness() const;																																			// Exposed to Python
 	void changeLargestCityHappiness(int iChange);
 
-	// Leoreth
-	int getSpecialistHappiness() const;
-	void changeSpecialistHappiness(int iChange);
-
 	int getWarWearinessPercentAnger() const;																																	// Exposed to Python
 	void updateWarWearinessPercentAnger();
 	int getModifiedWarWearinessPercentAnger(int iWarWearinessPercentAnger) const;
@@ -595,10 +595,6 @@ public:
 
 	int getFreeSpecialist() const;																																						// Exposed to Python
 	void changeFreeSpecialist(int iChange);
-
-	//Leoreth
-	int getCoreFreeSpecialist() const;
-	void changeCoreFreeSpecialist(int iChange);
 
 	int getNoForeignTradeCount() const;
 	bool isNoForeignTrade() const;																																						// Exposed to Python
@@ -636,29 +632,12 @@ public:
 	void changeColonialSlaveryCount(int iChange);
 
 	// Leoreth
-	int getCapitalTradeModifier() const;
-	void changeCapitalTradeModifier(int iChange);
-
-	// Leoreth
 	int getDefensivePactTradeModifier() const;
 	void changeDefensivePactTradeModifier(int iChange);
 
 	// Leoreth
 	int getVassalTradeModifier() const;
 	void changeVassalTradeModifier(int iChange);
-
-	// Leoreth
-	int getVassalCityCommerce() const;
-	void changeVassalCityCommerce(int iChange);
-
-	// Leoreth
-	int getColonyCommerce() const;
-	void changeColonyCommerce(int iChange);
-
-	// Leoreth
-	int getCapitalCommerce() const;
-	void updateCapitalCommerce();
-	void applyCapitalCommerce(int iChange);
 
 	// Leoreth
 	int getWorkerCount() const;
@@ -694,6 +673,14 @@ public:
 
 	int getStateReligionFreeExperience() const;																																// Exposed to Python
 	void changeStateReligionFreeExperience(int iChange);
+
+	// Leoreth
+	int getCulturedCityFreeSpecialists() const;
+	void changeCulturedCityFreeSpecialists(int iChange);
+
+	// Leoreth
+	int getCapitalBuildingProductionModifier() const;
+	void changeCapitalBuildingProductionModifier(int iChange);
 
 	// Leoreth
 	void checkCapitalCity();
@@ -780,6 +767,8 @@ public:
 
 	DllExport CivilizationTypes getCivilizationType() const;																					// Exposed to Python
 	DllExport void setCivilizationType(CivilizationTypes iNewValue);	//edead
+
+	void applyCivilization(CivilizationTypes eCivilization, int iChange);
 
 	DllExport LeaderHeadTypes getLeaderType() const;																									// Exposed to Python
 
@@ -968,14 +957,6 @@ public:
 	int getUnimprovedTileYield(YieldTypes eIndex) const;
 	void changeUnimprovedTileYield(YieldTypes eIndex, int iChange);
 
-	//FoB
-	int getCapitalBonusYieldFromCivics(YieldTypes eIndex) const;
-	void changeCapitalBonusYieldFromCivics(YieldTypes eIndex, int iChange);
-	int getCapitalBonusYield(YieldTypes eIndex) const;
-	void changeCapitalBonusYield(YieldTypes eIndex, int iChange);
-	void updateCapitalPopulationBonusYields();
-	void applyCapitalBonusYield(YieldTypes yieldIndex, int iChange);
-
 	// Leoreth
 	void updateHappinessExtraYield();
 
@@ -989,13 +970,26 @@ public:
 	void changeNoResistanceCount(int iChange);
 
 	// Leoreth
-	bool isNoTemporaryUnhappiness() const;
-	int getNoTemporaryUnhappinessCount() const;
-	void changeNoTemporaryUnhappinessCount(int iChange);
+	bool isFreeImprovementUpgrade() const;
+	int getFreeImprovementUpgradeCount() const;
+	void changeFreeImprovementUpgradeCount(int iChange);
 
+	// Leoreth
+	int getShrineIncomeLimitChange() const;
+	void changeShrineIncomeLimitChange(int iChange);
+
+	// Leoreth
+	bool isNoStateReligionAnarchy() const;
+	int getNoStateReligionAnarchyCount() const;
+	void changeNoStateReligionAnarchyCount(int iChange);
+	
 	// Leoreth
 	int getUnhappinessDecayModifier() const;
 	void changeUnhappinessDecayModifier(int iChange);
+	
+	// Leoreth
+	int getOccupationTimeChange() const;
+	void changeOccupationTimeChange(int iChange);
 
 	int getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIndex2) const;								// Exposed to Python
 	void changeImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIndex2, int iChange);
@@ -1149,7 +1143,7 @@ public:
 	void invalidateCommerceRankCache(CommerceTypes eCommerce = NO_COMMERCE);
 
 	PlayerTypes pickConqueredCityOwner(const CvCity& kCity) const;
-	bool canHaveTradeRoutesWith(PlayerTypes ePlayer, bool bIgnoreAgreements = false) const;
+	bool canHaveTradeRoutesWith(PlayerTypes ePlayer) const;
 
 	void forcePeace(PlayerTypes ePlayer);    // exposed to Python
 
@@ -1280,6 +1274,7 @@ public:
 
 	// Leoreth
 	int getBuildingClassPreference(BuildingClassTypes eBuildingClass) const;
+	int getBuildingClassPreference(BuildingTypes eBuilding) const;
 	void setBuildingClassPreference(BuildingClassTypes eBuildingClass, int iNewValue);
 	void resetBuildingClassPreferences();
 
@@ -1379,6 +1374,8 @@ public:
 
 	void setMinorCiv(bool bNewValue);
 
+	int getShrineIncomeLimit() const;
+
 	int getScoreHistory(int iTurn) const;
 	int getEconomyHistory(int iTurn) const;
 	int getIndustryHistory(int iTurn) const;
@@ -1463,6 +1460,7 @@ protected:
 	int m_iBuildingOnlyHealthyCount;
 	int m_iDistanceMaintenanceModifier;
 	int m_iNumCitiesMaintenanceModifier;
+	int m_iColonyMaintenanceModifier; // Leoreth
 	int m_iCorporationMaintenanceModifier;
 	int m_iCorporationCommerceModifier; // Leoreth
 	int m_iCorporationUnhappinessModifier; // Leoreth
@@ -1471,36 +1469,35 @@ protected:
 	int m_iUpkeepModifier;
 	int m_iLevelExperienceModifier;
 	int m_iExtraHealth;
-	int m_iPollutionModifier; // Leoreth
 	int m_iBuildingGoodHealth;
 	int m_iBuildingBadHealth;
 	int m_iExtraHappiness;
 	int m_iBuildingHappiness;
 	int m_iLargestCityHappiness;
-	int m_iSpecialistHappiness; // Leoreth
 	int m_iWarWearinessPercentAnger;
 	int m_iWarWearinessModifier;
 	int m_iFreeSpecialist;
-	int m_iCoreFreeSpecialist; // Leoreth
 	int m_iNoForeignTradeCount;
 	int m_iNoForeignTradeModifierCount; // Leoreth
 	int m_iNoCorporationsCount;
 	int m_iNoForeignCorporationsCount;
 	int m_iCoastalTradeRoutes;
 	int m_iTradeRoutes;
-	int m_iCapitalTradeModifier; // Leoreth
 	int m_iDefensivePactTradeModifier; // Leoreth
 	int m_iVassalTradeModifier; // Leoreth
-	int m_iVassalCityCommerce; // Leoreth
-	int m_iCapitalPopulationCivicCombinedYield; // FoB
-	int m_iColonyCommerce; // Leoreth
 	int m_iCaptureGoldModifier; // Leoreth
 	int m_iSlaveryCount; // Leoreth
 	int m_iNoSlaveryCount; // Leoreth
 	int m_iColonialSlaveryCount; // Leoreth
 	int m_iNoResistanceCount; // Leoreth
-	int m_iNoTemporaryUnhappinessCount; // Leoreth
 	int m_iUnhappinessDecayModifier; // Leoreth
+	int m_iFoodProductionModifier; // Leoreth
+	int m_iCulturedCityFreeSpecialists; // Leoreth
+	int m_iCapitalBuildingProductionModifier; // Leoreth
+	int m_iFreeImprovementUpgradeCount; // Leoreth
+	int m_iShrineIncomeLimitChange; // Leoreth
+	int m_iNoStateReligionAnarchyCount; // Leoreth
+	int m_iOccupationTimeChange; // Leoreth
 	int m_iRevolutionTimer;
 	int m_iConversionTimer;
 	int m_iStateReligionCount;
@@ -1574,8 +1571,6 @@ protected:
 
 	int m_iWorkerCount;
 
-	int m_iCapitalCommerce;
-
 	int m_iFreeTechsOnDiscovery;
 
 	PlayerTypes m_eID;
@@ -1605,13 +1600,11 @@ protected:
 	int* m_aiHappinessExtraYield; // Leoreth
 	int* m_aiUnhappinessExtraYield; // Leoreth
 	int* m_aiUnimprovedTileYield; // Leoreth
-	int* m_aiCapitalBonusYieldFromCivic; // FoB
-	int* m_aiCapitalBonusYields; // FoB
 	int* m_aiCommerceFlexibleCount;
 	int* m_aiGoldPerTurnByPlayer;
 	int* m_aiEspionageSpendingWeightAgainstTeam;
 
-	//Leoreth
+	// Leoreth
 	int* m_aiDomainProductionModifiers;
 	int* m_aiDomainExperienceModifiers;
 

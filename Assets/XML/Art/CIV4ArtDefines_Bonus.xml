@@ -89,12 +89,12 @@
 			<FontButtonIndex>8</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_COCHINEAL</Type>
-			<fScale>1.1</fScale>
-			<fInterfaceScale>1.1</fInterfaceScale>
-			<NIF>Art/Terrain/resources/Cochineal/Cochineal.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Resources/Cochineal.dds</Button>
+			<Type>ART_DEF_BONUS_DYE</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Dye/Dye.nif</NIF>
+			<KFM>Art/Terrain/Resources/Dye/Dye.kfm</KFM>
+			<Button>,Art/Interface/Buttons/WorldBuilder/Dye.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,15</Button>
 			<FontButtonIndex>20</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
@@ -442,6 +442,15 @@
 			<FontButtonIndex>46</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_DYE_COCHINEAL</Type>
+			<fScale>1.1</fScale>
+			<fInterfaceScale>1.1</fInterfaceScale>
+			<NIF>Art/Terrain/resources/Cochineal/Cochineal.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Resources/Cochineal.dds</Button>
+			<FontButtonIndex>20</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_LLAMA</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -457,6 +466,15 @@
 			<NIF>Art/Terrain/Resources/Citrus/Lemqes.nif</NIF>
 			<KFM>Art/Terrain/Resources/Citrus/Lemqes.kfm</KFM>
 			<Button>Art/Interface/Buttons/Resources/Citrus.dds</Button>
+			<FontButtonIndex>48</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_CITRUS_ORANGES</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Oranges/Lemqes.nif</NIF>
+			<KFM>Art/Terrain/Resources/Oranges/Lemqes.kfm</KFM>
+			<Button>Art/Interface/Buttons/Resources/Oranges.dds</Button>
 			<FontButtonIndex>48</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>

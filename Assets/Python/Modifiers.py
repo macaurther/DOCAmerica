@@ -56,10 +56,10 @@ def updateLateModifiers(iGameTurn):
 
 ### Modifier types ###
 
-iNumModifiers = 13
-(iModifierCulture, iModifierUnitUpkeep, iModifierResearchCost, iModifierDistanceMaintenance, iModifierCitiesMaintenance,
-iModifierCivicUpkeep, iModifierHealth, iModifierUnitCost, iModifierWonderCost, iModifierBuildingCost,
-iModifierInflationRate, iModifierGreatPeopleThreshold, iModifierGrowthThreshold) = range(iNumModifiers)
+iNumModifiers = 14
+(iModifierCulture, iModifierUnitUpkeep, iModifierResearchCost, iModifierDistanceMaintenance, iModifierColonyMaintenance,
+iModifierCitiesMaintenance, iModifierCivicUpkeep, iModifierHealth, iModifierUnitCost, iModifierWonderCost, 
+iModifierBuildingCost, iModifierInflationRate, iModifierGreatPeopleThreshold, iModifierGrowthThreshold) = range(iNumModifiers)
 
 ### Modifiers (by civilization, birth order!) ###
 DMN = 75	# Distance Maintenance Native
@@ -74,6 +74,7 @@ tCulture =		          ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,
 tUnitUpkeep = 		      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,      0,  0,  0,100,100 )
 tResearchCost = 	      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    110,110,999,110,110 )
 tDistanceMaintenance = 	  ( DMN,DMN,DMN,DMN,DMN,DMN,DMN,DMN,DME,DMN, 25,DMN,DMN,DMN,DMN,DMN,DME,DME,DME,DME,DME,DMN,DME,DME,DME,DME,DME,DME,DME,DME,DME,DME,     25, 25, 25, 25, 25 )	# Larger map = make distance less of a penalty
+tColonyMaintenance = 	  ( NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,     50, 50, 50, 50, 50 )	# Larger map = make num cities less of a penalty
 tCitiesMaintenance = 	  ( NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCN,NCN,NCN,NCN,NCN,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCN,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,NCE,     50, 50, 50, 50, 50 )	# Larger map = make num cities less of a penalty
 tCivicUpkeep = 		      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,     70, 70, 70, 70, 70 )
 tHealth = 		      	  (   2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,  2,      0,  0,  0,  0,  0 )
@@ -85,9 +86,9 @@ tInflationRate = 	      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,10
 tGreatPeopleThreshold =   ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    100,100,500,100,100 )
 tGrowthThreshold = 	      ( 100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,    125,125,125,125,125 )
 
-tModifiers = (tCulture, tUnitUpkeep, tResearchCost, tDistanceMaintenance, tCitiesMaintenance, tCivicUpkeep, tHealth, tUnitCost, tWonderCost, tBuildingCost, tInflationRate, tGreatPeopleThreshold, tGrowthThreshold)
+tModifiers = (tCulture, tUnitUpkeep, tResearchCost, tDistanceMaintenance, tColonyMaintenance, tCitiesMaintenance, tCivicUpkeep, tHealth, tUnitCost, tWonderCost, tBuildingCost, tInflationRate, tGreatPeopleThreshold, tGrowthThreshold)
 
-tDefaults = (100, 100, 100, 100, 100, 100,   2, 100, 100, 100, 100, 100, 100)
+tDefaults = (100, 100, 100, 100, 100, 100, 100, 2, 100, 100, 100, 100, 100, 100)
 
 dLateScenarioModifiers = {
 iModifierUnitUpkeep :100,

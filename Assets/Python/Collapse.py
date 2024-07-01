@@ -10,7 +10,7 @@ from Events import events, handler
 def checkScheduledCollapse():
 	for iPlayer in players.major():
 		if data.players[iPlayer].iTurnsToCollapse == 0:
-			if player(iPlayer).isAlive():
+			if player(iPlayer).isExisting():
 				completeCollapse(iPlayer)
 			data.players[iPlayer].iTurnsToCollapse = -1
 		elif data.players[iPlayer].iTurnsToCollapse > 0:
@@ -26,7 +26,7 @@ def checkAvailableSlots():
 
 def freeSlotFor(iCiv):
 	iCivImpact = getImpact(iCiv)
-	availableSlots = players.major().alive().where(lambda p: infos.civ(iCiv).getImpact() <= iCivImpact)
+	availableSlots = players.major().alive().where(lambda p: getImpact(civ(p)) <= iCivImpact)
 	metric = lambda iPlayer: (getImpact(civ(iPlayer)), until(year(dFall[iPlayer])))
 	
 	iSlot = availableSlots.where(lambda p: stability(p) == iStabilityCollapsing).minimum(metric)
@@ -35,6 +35,11 @@ def freeSlotFor(iCiv):
 		return
 	
 	iSlot = availableSlots.where(lambda p: stability(p) == iStabilityUnstable and since(year(dFall[p])) >= 0).minimum(metric)
+	if iSlot is not None:
+		completeCollapse(iSlot)
+		return
+	
+	iSlot = availableSlots.where(lambda p: stability(p) == iStabilityUnstable and getImpact(civ(p)) < iCivImpact).minimum(metric)
 	if iSlot is not None:
 		completeCollapse(iSlot)
 	
@@ -51,6 +56,9 @@ def completeCollapse(iPlayer):
 		
 	# take care of the remnants of the civ
 	player(iPlayer).killUnits()
+	
+	# remove human vision so their slot can be safely reassigned
+	resetRevealedOwner(iPlayer)
 		
 	message(active(), 'TXT_KEY_STABILITY_COMPLETE_COLLAPSE', adjective(iPlayer))
 	
@@ -86,6 +94,10 @@ def downgradeCottages(iPlayer):
 def collapseToCore(iPlayer):
 	nonCoreCities = cities.owner(iPlayer).where(lambda city: not city.isPlayerCore(iPlayer))
 	ahistoricalCities = nonCoreCities.where(lambda city: plot(city).getPlayerSettlerValue(iPlayer) < 90)
+	
+	# release all vassals
+	for iVassal in players.vassals(iPlayer):
+		team(iVassal).setVassal(player(iPlayer).getTeam(), False, False)
 				
 	# more than half ahistorical, only secede ahistorical cities
 	if 2 * ahistoricalCities.count() > nonCoreCities.count():

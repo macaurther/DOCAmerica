@@ -1,15 +1,23 @@
 from Core import *
 from RFCUtils import *
+from Locations import *
 from Events import events, handler
 
 
 dEvacuatePeriods = {
 }
 
-dPeriods600AD = {
+dPeriods1500AD = {
 }
 
-dPeriods1700AD = {
+dPeriods1750AD = {
+}
+dScenarioPeriods = {
+	-500: {},
+	1500: dPeriods1500AD,
+	1750: dPeriods1750AD,
+}
+dPeriodNames = {
 }
 
 
@@ -37,19 +45,6 @@ def evacuate(iPlayer):
 			else:
 				setPeriod(iCiv, -1)
 	return False
-
-
-@handler("GameStart")
-def setup():
-	iScenario = scenario()
-	
-	if iScenario >= i1500AD:
-		for iCiv, iPeriod in dPeriods600AD.items():
-			setPeriod(iCiv, iPeriod)
-	
-	if iScenario == i1750AD:
-		for iCiv, iPeriod in dPeriods1700AD.items():
-			setPeriod(iCiv, iPeriod)
 
 
 @handler("birth")
