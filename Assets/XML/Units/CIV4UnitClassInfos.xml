@@ -215,12 +215,12 @@
 			<DefaultUnit>UNIT_MUSKETMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MUSKETEER</Type>
-			<Description>TXT_KEY_UNIT_MUSKETEER</Description>
+			<Type>UNITCLASS_FUSILIER</Type>
+			<Description>TXT_KEY_UNIT_FUSILIER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MUSKETEER</DefaultUnit>
+			<DefaultUnit>UNIT_FUSILIER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_RIFLEMAN</Type>
@@ -247,20 +247,12 @@
 			<DefaultUnit>UNIT_MACEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_TERCIO</Type>
-			<Description>TXT_KEY_UNIT_TERCIO</Description>
+			<Type>UNITCLASS_PIKE_AND_SHOT</Type>
+			<Description>TXT_KEY_UNIT_PIKE_AND_SHOT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_TERCIO</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_FUSILIER</Type>
-			<Description>TXT_KEY_UNIT_FUSILIER</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_FUSILIER</DefaultUnit>
+			<DefaultUnit>UNIT_PIKE_AND_SHOT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_LINE_INFANTRY</Type>

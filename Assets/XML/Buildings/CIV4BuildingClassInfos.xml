@@ -128,6 +128,15 @@
 			<DefaultBuilding>BUILDING_BATH</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_JEWELLER</Type>
+			<Description>TXT_KEY_BUILDING_JEWELLER</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_JEWELLER</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_WALLS</Type>
 			<Description>TXT_KEY_BUILDING_WALLS</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -191,6 +200,15 @@
 			<DefaultBuilding>BUILDING_FORGE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_TAVERN</Type>
+			<Description>TXT_KEY_BUILDING_TAVERN</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_TAVERN</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_STABLE</Type>
 			<Description>TXT_KEY_BUILDING_STABLE</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -227,13 +245,13 @@
 			<DefaultBuilding>BUILDING_SCHOOLHOUSE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_WELL</Type>
-			<Description>TXT_KEY_BUILDING_WELL</Description>
+			<Type>BUILDINGCLASS_GROCER</Type>
+			<Description>TXT_KEY_BUILDING_GROCER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_WELL</DefaultBuilding>
+			<DefaultBuilding>BUILDING_GROCER</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_CONSTABULARY</Type>
@@ -281,13 +299,13 @@
 			<DefaultBuilding>BUILDING_WAREHOUSE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_TAVERN</Type>
-			<Description>TXT_KEY_BUILDING_TAVERN</Description>
+			<Type>BUILDINGCLASS_SILVERSMITH</Type>
+			<Description>TXT_KEY_BUILDING_SILVERSMITH</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_TAVERN</DefaultBuilding>
+			<DefaultBuilding>BUILDING_SILVERSMITH</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_STAR_FORT</Type>
@@ -396,15 +414,6 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<DefaultBuilding>BUILDING_THEATRE</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_SILVERSMITH</Type>
-			<Description>TXT_KEY_BUILDING_SILVERSMITH</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_SILVERSMITH</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_MAGAZINE</Type>
@@ -659,6 +668,15 @@
 			<DefaultBuilding>BUILDING_INDUSTRIAL_PARK</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_NUCLEAR_PLANT</Type>
+			<Description>TXT_KEY_BUILDING_NUCLEAR_PLANT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_NUCLEAR_PLANT</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_PARK</Type>
 			<Description>TXT_KEY_BUILDING_PARK</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
@@ -666,6 +684,15 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<DefaultBuilding>BUILDING_PARK</DefaultBuilding>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_STADIUM</Type>
+			<Description>TXT_KEY_BUILDING_STADIUM</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<iExtraPlayerInstances>0</iExtraPlayerInstances>
+			<DefaultBuilding>BUILDING_STADIUM</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_BUNKER</Type>
@@ -693,15 +720,6 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<iExtraPlayerInstances>0</iExtraPlayerInstances>
 			<DefaultBuilding>BUILDING_BROADCAST_TOWER</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_NUCLEAR_PLANT</Type>
-			<Description>TXT_KEY_BUILDING_NUCLEAR_PLANT</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_NUCLEAR_PLANT</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_JEWISH_TEMPLE</Type>

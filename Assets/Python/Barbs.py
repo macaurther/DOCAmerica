@@ -280,7 +280,7 @@ def spawnTribeDefenders(iX, iY):
 		spawnDefenders(iNative, iAtlatlist, iHandicap, tTL, tBR)
 		spawnDefenders(iNative, iSpearman, iHandicap, tTL, tBR)
 	elif year() <= year(1800):
-		spawnDefenders(iNative, iMohawk, 1 + iHandicap, tTL, tBR)
+		spawnDefenders(iNative, iArmedBrave, 1 + iHandicap, tTL, tBR)
 	else:
 		spawnDefenders(iNative, iMountedBrave, 1 + iHandicap, tTL, tBR)
 		

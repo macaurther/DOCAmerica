@@ -986,7 +986,6 @@ enum BonusTypes						// Exposed to Python
 	BONUS_CORN,
 	BONUS_COW,
 	BONUS_CRAB,
-	BONUS_CRUSTACEANS,
 	BONUS_DEER,
 	BONUS_FISH,
 	BONUS_PIG,

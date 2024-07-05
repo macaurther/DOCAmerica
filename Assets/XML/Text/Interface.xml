@@ -170,6 +170,14 @@
 		<Spanish>%D1_Mod%%: for trading with Vassal</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTE_MOD_TRADED_RESOURCES</Tag>
+		<English>%D1_Mod%%: from amount of traded resources</English>
+		<French>%D1_Mod%%: from amount of traded resources</French>
+		<German>%D1_Mod%%: from amount of traded resources</German>
+		<Italian>%D1_Mod%%: from amount of traded resources</Italian>
+		<Spanish>%D1_Mod%%: from amount of traded resources</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTE_MOD_DISTANCE</Tag>
 		<English>%D1%%: from City Distance</English>
 		<French>%D1%% : distance de la ville</French>
@@ -322,14 +330,6 @@
 		<Spanish>[ICON_BULLET]At least %D1 for[SPACE]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CAPITAL_BONUS_YIELD_POPULATION</Tag>
-		<English>[SPACE]in capital for every city with more than 9 population</English>
-		<French>[SPACE]in capital for every city with more than 9 population</French>
-		<German>[SPACE]in capital for every city with more than 9 population</German>
-		<Italian>[SPACE]in capital for every city with more than 9 population</Italian>
-		<Spanish>[SPACE]in capital for every city with more than 9 population</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AT_LEAST_ONE_SPECIALIST</Tag>
 		<English>[ICON_BULLET]At least one slot for[SPACE]</English>
 		<French>[ICON_BULLET]Capacité minimale d'un[SPACE]</French>
@@ -355,11 +355,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROCESS_MODIFIER</Tag>
-		<English>[ICON_BULLET]Can convert production to commerce with %D1_Mod%% efficiency</English>
-		<French>[ICON_BULLET]Peut convertir de la production en commerce avec une efficacit&#233; de %D1_Mod%%</French>
-		<German>[ICON_BULLET]Can convert production to commerce with %D1_Mod%% efficiency</German>
-		<Italian>[ICON_BULLET]Can convert production to commerce with %D1_Mod%% efficiency</Italian>
-		<Spanish>[ICON_BULLET]Can convert production to commerce with %D1_Mod%% efficiency</Spanish>
+		<English>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] Converted to Commerce</English>
+		<French>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] Converted to Commerce</French>
+		<German>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] Converted to Commerce</German>
+		<Italian>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] Converted to Commerce</Italian>
+		<Spanish>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] Converted to Commerce</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PER_SPECIALIST_THRESHOLD</Tag>
@@ -1063,14 +1063,6 @@
 		<Spanish>Can Spend Gold to Finish Military Unit Production in a City</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_HURRY_GOLD_FEDERALISM</Tag>
-		<English>Can Spend Gold to Finish Production in a City</English>
-		<French>Possibilit&#233; de d&#233;penser de l'or pour achever la production</French>
-		<German>Can Spend Gold to Finish Production in a City</German>
-		<Italian>Can Spend Gold to Finish Production in a City</Italian>
-		<Spanish>Can Spend Gold to Finish Production in a City</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_ICON_BULLET</Tag>
 		<English>[ICON_BULLET]</English>
 		<French>[ICON_BULLET]</French>
@@ -1101,14 +1093,6 @@
 		<German>%s1:3 St&#228;dte haben ihre Unabh&#228;ngigkeit von der Fremdherrschaft erkl&#228;rt!</German>
 		<Italian>Le citt&#224; %s1:4 hanno dichiarato la propria indipendenza dal dominio straniero!</Italian>
 		<Spanish>Las ciudades %s1:4 han declarado su independencia del dominio extranjero.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_INDONESIAN_UP</Tag>
-		<English>The trade passing through our waters brings %d1 [ICON_GOLD] to our treasury!</English>
-		<French>Le commerce passant par nos mers contribue &#224; notre tr&#233;sor &#224; hauteur de %d1 [ICON_GOLD] !</French>
-		<German>Der durch unsere Gew&#228;sser verlaufende Handel bringt unserer Schatzkammer %d1 [ICON_GOLD]!</German>
-		<Italian>The trade passing through our waters brings %d1 [ICON_GOLD] to our treasury!</Italian>
-		<Spanish>The trade passing through our waters brings %d1 [ICON_GOLD] to our treasury!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVADERS_HUMAN</Tag>
@@ -1407,6 +1391,14 @@
 		<Spanish>[ICON_BULLET]%D1%F2 from Excess [ICON_HEALTHY]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_FOOD_FROM_PROCESS</Tag>
+		<English>[ICON_BULLET]%D1%F2 from Converting [ICON_PRODUCTION]</English>
+		<French>[ICON_BULLET]%D1%F2 from Converting [ICON_PRODUCTION]</French>
+		<German>[ICON_BULLET]%D1%F2 from Converting [ICON_PRODUCTION]</German>
+		<Italian>[ICON_BULLET]%D1%F2 from Converting [ICON_PRODUCTION]</Italian>
+		<Spanish>[ICON_BULLET]%D1%F2 from Converting [ICON_PRODUCTION]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_HIMEJI_UNIT_CULTURE</Tag>
 		<English>[ICON_BULLET]%D1%F2 from Fortified Units</English>
 		<French>[ICON_BULLET]%D1%F2 gr&#226;ce aux unit&#233;s fortifi&#233;es</French>
@@ -1431,7 +1423,7 @@
 		<Spanish>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for State Religion Building</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MISC_HELP_PROD_ROME</Tag>
+		<Tag>TXT_KEY_MISC_HELP_PROD_CAPITAL_BUILDING</Tag>
 		<English>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for having the current building in your capital</English>
 		<French>[ICON_BULLET]%D1%%[ICON_PRODUCTION] parce que le b&#226;timent actuel est d&#233;j&#224; dans votre capitale</French>
 		<German>[ICON_BULLET]%D1%%[ICON_PRODUCTION] for having the current building in your capital</German>
@@ -2359,6 +2351,86 @@
 		<Spanish>[ICON_BULLET]%D1_Mod%% [ICON_GOLD] on City Conquest</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CAPITAL_BUILDING_PRODUCTION_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] for Buildings Already in Capital</English>
+		<French>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] for Buildings Already in Capital</French>
+		<German>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] for Buildings Already in Capital</German>
+		<Italian>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] for Buildings Already in Capital</Italian>
+		<Spanish>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] for Buildings Already in Capital</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SPECIALIST_TYPE_EXTRA_YIELD</Tag>
+		<English>[ICON_BULLET]%s1 from %s2</English>
+		<French>[ICON_BULLET]%s1 from %s2</French>
+		<German>[ICON_BULLET]%s1 from %s2</German>
+		<Italian>[ICON_BULLET]%s1 from %s2</Italian>
+		<Spanish>[ICON_BULLET]%s1 from %s2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SHRINE_INCOME_LIMIT_CHANGE</Tag>
+		<English>[ICON_BULLET]%D1_Change maximum [ICON_GOLD] from Shrines</English>
+		<French>[ICON_BULLET]%D1_Change maximum [ICON_GOLD] from Shrines</French>
+		<German>[ICON_BULLET]%D1_Change maximum [ICON_GOLD] from Shrines</German>
+		<Italian>[ICON_BULLET]%D1_Change maximum [ICON_GOLD] from Shrines</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change maximum [ICON_GOLD] from Shrines</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NO_STATE_RELIGION_ANARCHY</Tag>
+		<English>[ICON_BULLET]No [ICON_OCCUPATION] from Changing State Religion</English>
+		<French>[ICON_BULLET]No [ICON_OCCUPATION] from Changing State Religion</French>
+		<German>[ICON_BULLET]No [ICON_OCCUPATION] from Changing State Religion</German>
+		<Italian>[ICON_BULLET]No [ICON_OCCUPATION] from Changing State Religion</Italian>
+		<Spanish>[ICON_BULLET]No [ICON_OCCUPATION] from Changing State Religion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_OCCUPATION_TIME_CHANGE</Tag>
+		<English>[ICON_BULLET]%D1_Change turns of [ICON_OCCUPATION] in Conquered Cities</English>
+		<French>[ICON_BULLET]%D1_Change turns of [ICON_OCCUPATION] in Conquered Cities</French>
+		<German>[ICON_BULLET]%D1_Change turns of [ICON_OCCUPATION] in Conquered Cities</German>
+		<Italian>[ICON_BULLET]%D1_Change turns of [ICON_OCCUPATION] in Conquered Cities</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change turns of [ICON_OCCUPATION] in Conquered Cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FREE_IMPROVEMENT_UPGRADE</Tag>
+		<English>[ICON_BULLET]Improvements Upgrade without Being Worked</English>
+		<French>[ICON_BULLET]Improvements Upgrade without Being Worked</French>
+		<German>[ICON_BULLET]Improvements Upgrade without Being Worked</German>
+		<Italian>[ICON_BULLET]Improvements Upgrade without Being Worked</Italian>
+		<Spanish>[ICON_BULLET]Improvements Upgrade without Being Worked</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_NO_COLONY_MAINTENANCE</Tag>
+		<English>[ICON_BULLET]No Colony Maintenance</English>
+		<French>[ICON_BULLET]No Colony Maintenance</French>
+		<German>[ICON_BULLET]No Colony Maintenance</German>
+		<Italian>[ICON_BULLET]No Colony Maintenance</Italian>
+		<Spanish>[ICON_BULLET]No Colony Maintenance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COLONY_MAINTENANCE_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1_Mod%% Colony Maintenance</English>
+		<French>[ICON_BULLET]%D1_Mod%% Colony Maintenance</French>
+		<German>[ICON_BULLET]%D1_Mod%% Colony Maintenance</German>
+		<Italian>[ICON_BULLET]%D1_Mod%% Colony Maintenance</Italian>
+		<Spanish>[ICON_BULLET]%D1_Mod%% Colony Maintenance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FROM_STATE_RELIGION_BUILDINGS</Tag>
+		<English>[SPACE]from State [ICON_RELIGION] Buildings</English>
+		<French>[SPACE]from State [ICON_RELIGION] Buildings</French>
+		<German>[SPACE]from State [ICON_RELIGION] Buildings</German>
+		<Italian>[SPACE]from State [ICON_RELIGION] Buildings</Italian>
+		<Spanish>[SPACE]from State [ICON_RELIGION] Buildings</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_BUILDING_HAPPINESS</Tag>
+		<English>[ICON_BULLET]%D1_Change[ICON_HAPPY] from[SPACE]</English>
+		<French>[ICON_BULLET]%D1_Change[ICON_HAPPY] from[SPACE]</French>
+		<German>[ICON_BULLET]%D1_Change[ICON_HAPPY] from[SPACE]</German>
+		<Italian>[ICON_BULLET]%D1_Change[ICON_HAPPY] from[SPACE]</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change[ICON_HAPPY] from[SPACE]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIVIC_WORKER_COST</Tag>
 		<English>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] required to train Workers</English>
 		<French>[ICON_BULLET]%D1_Mod%% [ICON_PRODUCTION] n&#233;cessaire pour former des ouvriers</French>
@@ -2631,12 +2703,28 @@
 		<Spanish>[ICON_BULLET]%D1_Change%% Open Terrain Defense</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_RIVER_ATTACK</Tag>
+		<English>[ICON_BULLET]%D1_Change%% Attack Along Rivers</English>
+		<French>[ICON_BULLET]%D1_Change%% Attack Along Rivers</French>
+		<German>[ICON_BULLET]%D1_Change%% Attack Along Rivers</German>
+		<Italian>[ICON_BULLET]%D1_Change%% Attack Along Rivers</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change%% Attack Along Rivers</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_PLAINS_MOD</Tag>
 		<English>[ICON_BULLET]%D1_Bonus%% from Open Terrain (Unit Ability)</English>
 		<French>[ICON_BULLET]%D1_Bonus%% d&#251; au terrain d&#233;gag&#233; (capacit&#233; de l'unit&#233;)</French>
 		<German>[ICON_BULLET]%D1_Bonus%% durch offenes Terrain (Einheitenf&#228;higkeit)</German>
 		<Italian>[ICON_BULLET]%D1_Bonus%% from Open Terrain (Unit Ability)</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% from Open Terrain (Unit Ability)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMBAT_PLOT_EXTRA_RIVER_MOD</Tag>
+		<English>[ICON_BULLET]%D1_Bonus%% from River (Unit Ability)</English>
+		<French>[ICON_BULLET]%D1_Bonus%% from River (Unit Ability)</French>
+		<German>[ICON_BULLET]%D1_Bonus%% from River (Unit Ability)</German>
+		<Italian>[ICON_BULLET]%D1_Bonus%% from River (Unit Ability)</Italian>
+		<Spanish>[ICON_BULLET]%D1_Bonus%% from River (Unit Ability)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_PLAINS_ATTACK_TEXT</Tag>
@@ -2653,6 +2741,14 @@
 		<German>[ICON_BULLET]%D1_Bonus%% Verteidigung in offenem Terrain</German>
 		<Italian>[ICON_BULLET]%D1_Bonus%% Open Terrain Defense</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% Open Terrain Defense</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_EXTRA_RIVER_ATTACK_TEXT</Tag>
+		<English>[ICON_BULLET]%D1_Bonus%% Attack Along Rivers</English>
+		<French>[ICON_BULLET]%D1_Bonus%% Attack Along Rivers</French>
+		<German>[ICON_BULLET]%D1_Bonus%% Attack Along Rivers</German>
+		<Italian>[ICON_BULLET]%D1_Bonus%% Attack Along Rivers</Italian>
+		<Spanish>[ICON_BULLET]%D1_Bonus%% Attack Along Rivers</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_CULTURE_LEVELS</Tag>
@@ -2725,6 +2821,14 @@
 		<German>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] durch Einzigartige Macht</German>
 		<Italian>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from Unique Power</Italian>
 		<Spanish>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from Unique Power</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_GREATPEOPLE_FROM_GOLD_RATE</Tag>
+		<English>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from [ICON_GOLD] Rate</English>
+		<French>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from [ICON_GOLD] Rate</French>
+		<German>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from [ICON_GOLD] Rate</German>
+		<Italian>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from [ICON_GOLD] Rate</Italian>
+		<Spanish>[ICON_BULLET]%D1%%[ICON_GREATPEOPLE] from [ICON_GOLD] Rate</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_PLAYER</Tag>
@@ -2885,6 +2989,38 @@
 		<German>[ICON_BULLET]%s1 auf verbesserten [LINK=literal]%s2[\LINK] Rohstoffen</German>
 		<Italian>[ICON_BULLET]%s1 on improved [LINK=literal]%s2[\LINK] resources</Italian>
 		<Spanish>[ICON_BULLET]%s1 on improved [LINK=literal]%s2[\LINK] resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_RESEARCH_SATELLITE</Tag>
+		<English>Research Satellite</English>
+		<French>Satellite scientifique</French>
+		<German>Forschungssatellit</German>
+		<Italian>Research Satellite</Italian>
+		<Spanish>Research Satellite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_COMMERCIAL_SATELLITE</Tag>
+		<English>Commercial Satellite</English>
+		<French>Satellite commercial</French>
+		<German>Kommerzieller Satellit</German>
+		<Italian>Commercial Satellite</Italian>
+		<Spanish>Commercial Satellite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALIST_MILITARY_SATELLITE</Tag>
+		<English>Military Satellite</English>
+		<French>Satellite militaire</French>
+		<German>Milit&#228;rischer Satellit</German>
+		<Italian>Military Satellite</Italian>
+		<Spanish>Military Satellite</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INVISIBLE_SATELLITE</Tag>
+		<English>Satellites</English>
+		<French>Satellites</French>
+		<German>Satelliten</German>
+		<Italian>Satellites</Italian>
+		<Spanish>Satellites</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROJECT_ENABLES_SPECIAL_PLAYER</Tag>
@@ -3313,7 +3449,7 @@
 		<Spanish>[SPACE]con energ&#237;a ([ICON_CLEAN_POWER])</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BUILDS_FASTER_WITH_ROMAN_UP</Tag>
+		<Tag>TXT_KEY_BUILDING_BUILDS_FASTER_WITH_CAPITAL_BUILDING</Tag>
 		<English>Builds %d1_Mod%% Faster with [LINK=literal]%s2_BldgName[\LINK] in %s3_CityName</English>
 		<French>Construit %d1_Mod%% plus vite avec : [LINK=literal]%s2_BldgName[\LINK] &#224; %s3_CityName</French>
 		<German>Baut %d1_Mod%% schneller mit Geb&#228;ude [LINK=literal]%s2_BldgName[\LINK in %s3_CityName</German>
@@ -3527,6 +3663,94 @@
 		<German>A distant civilization is the first to discover %s1_TechName and receive a %s2!</German>
 		<Italian>A distant civilization is the first to discover %s1_TechName and receive a %s2!</Italian>
 		<Spanish>A distant civilization is the first to discover %s1_TechName and receive a %s2!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_IMPASSABLE_MOST_UNITS</Tag> <!-- needs translation -->
+		<English>[NEWLINE][ICON_BULLET]Impassable for most units</English>
+		<French>[NEWLINE][ICON_BULLET]Impassable for most units</French>
+		<German>[NEWLINE][ICON_BULLET]Unpassierbar f&#252;r die meisten Einheiten</German>
+		<Italian>[NEWLINE][ICON_BULLET]Impassable for most units</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Impassable for most units</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_ENTER</Tag>
+		<English>[ICON_BULLET]Can Enter</English>
+		<French>[ICON_BULLET]Peut entrer dans :</French>
+		<German>[ICON_BULLET]Fortbewegung auf</German>
+		<Italian>[ICON_BULLET]Pu&#242; entrare nell'</Italian>
+		<Spanish>[ICON_BULLET]Pede entrar en</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ADJECTIVE</Tag>
+		<English>%s1 %s2</English>
+		<French>%s1 %s2</French>
+		<German>%s1 %s2</German>
+		<Italian>%s1 %s2</Italian>
+		<Spanish>%s1 %s2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TRIPLE_SPEED_WITH</Tag>
+		<English>Triple Production Speed with [LINK=literal]%s1_Bonus[\LINK]</English>
+		<French>Triple Production Speed with [LINK=literal]%s1_Bonus[\LINK]</French>
+		<German>Dreifache Produktionsgeschwindigkeit mit Bonusgut [LINK=literal]%s1_Bonus[\LINK]</German>
+		<Italian>Triple Production Speed with [LINK=literal]%s1_Bonus[\LINK]</Italian>
+		<Spanish>Triple Production Speed with [LINK=literal]%s1_Bonus[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_BRIBE_UNITS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Soudoyer les barbares[COLOR_REVERT][NEWLINE]Permet &#224; votre espion d'offrir de l'or afin de convaincre l'une des unit&#233;s barbares sur cette case de se joindre &#224; votre arm&#233;e.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Bribe Barbarians[COLOR_REVERT][NEWLINE]Allows your spy to offer gold to bribe one barbarian unit on this plot to join your army.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BRIBE_UNITS_POPUP</Tag>
+		<English>[H1]Bribing Barbarians[\H1][NEWLINE]Choose the barbarian unit you wish to bribe:[NEWLINE]</English>
+		<French>[H1]Soudoyer les barbares[\H1][NEWLINE]Choisissez l'unit&#233; barbare &#224; soudoyer :[NEWLINE]</French>
+		<German>[H1]Bribing Barbarians[\H1][NEWLINE]Choose the barbarian unit you wish to bribe:[NEWLINE]</German>
+		<Italian>[H1]Bribing Barbarians[\H1][NEWLINE]Choose the barbarian unit you wish to bribe:[NEWLINE]</Italian>
+		<Spanish>[H1]Bribing Barbarians[\H1][NEWLINE]Choose the barbarian unit you wish to bribe:[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BRIBE_UNITS_BUTTON</Tag>
+		<English>%s1 (%d2 / %d3) for %d4 [ICON_GOLD]</English>
+		<French>%s1 (%d2 / %d3) pour %d4 [ICON_GOLD]</French>
+		<German>%s1 (%d2 / %d3) f&#252;r %d4 [ICON_GOLD]</German>
+		<Italian>%s1 (%d2 / %d3) per %d4 [ICON_GOLD]</Italian>
+		<Spanish>%s1 (%d2 / %d3) por %d4 [ICON_GOLD]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BRIBE_UNITS_BUTTON_NONE</Tag>
+		<English>None</English>
+		<French>Aucun</French>
+		<German>None</German>
+		<Italian>None</Italian>
+		<Spanish>None</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BRIBE_UNITS_EFFECT</Tag>
+		<English>[NEWLINE][ICON_BULLET]Spies can bribe Barbarian units</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_FOOD_TO_PRODUCTION_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1_Mod%% [ICON_FOOD] converted to [ICON_PRODUCTION]</English>
+		<French>[ICON_BULLET]%D1_Mod%% [ICON_FOOD] converted to [ICON_PRODUCTION]</French>
+		<German>[ICON_BULLET]%D1_Mod%% [ICON_FOOD] converted to [ICON_PRODUCTION]</German>
+		<Italian>[ICON_BULLET]%D1_Mod%% [ICON_FOOD] converted to [ICON_PRODUCTION]</Italian>
+		<Spanish>[ICON_BULLET]%D1_Mod%% [ICON_FOOD] converted to [ICON_PRODUCTION]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CULTURED_CITIES_FREE_SPECIALISTS</Tag>
+		<English>[ICON_BULLET]%D1_Change free specialists in %d2_NumCities Most Cultured Cities</English>
+		<French>[ICON_BULLET]%D1_Change free specialists in %d2_NumCities Most Cultured Cities</French>
+		<German>[ICON_BULLET]%D1_Change free specialists in %d2_NumCities Most Cultured Cities</German>
+		<Italian>[ICON_BULLET]%D1_Change free specialists in %d2_NumCities Most Cultured Cities</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change free specialists in %d2_NumCities Most Cultured Cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TEOTIHUACAN_ARTISAN_CULTURE</Tag>
@@ -3775,6 +3999,14 @@
 		<German>Opfern Sie eine Gro&#223;e Pers&#246;nlichkeit und befehlen Sie ihr, sich als Super-Spezialist in der Stadt anzusiedeln. -1 Stability if they are a Slave.</German>
 		<Italian>Con questo ordine, i Grandi Personaggi possono unirsi alla citt&#224; in veste di super specialisti, venendo sacrificati nel procedimento. -1 Stability they are is a Slave.</Italian>
 		<Spanish>Esta orden hace que el gran personaje se quede en la ciudad como un superespecialista, consumi&#233;ndose en el proceso. -1 Stability if they are a Slave.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HURRY_GOLD_FEDERALISM</Tag>
+		<English>Can Spend Gold to Finish Production in a City</English>
+		<French>Possibilit&#233; de d&#233;penser de l'or pour achever la production</French>
+		<German>Can Spend Gold to Finish Production in a City</German>
+		<Italian>Can Spend Gold to Finish Production in a City</Italian>
+		<Spanish>Can Spend Gold to Finish Production in a City</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_</Tag>

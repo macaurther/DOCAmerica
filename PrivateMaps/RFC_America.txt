@@ -6339,7 +6339,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=5
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -17017,7 +17018,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=72
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -17554,7 +17556,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=43
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -22011,7 +22014,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=55
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -24265,7 +24269,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=71
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25467,7 +25472,8 @@ BeginPlot
 	x=37,y=35
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -29777,7 +29783,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=53
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -30345,7 +30352,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=33
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -33114,7 +33122,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=41
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -33345,7 +33354,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=87
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -35025,7 +35035,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=34
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -36024,7 +36035,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=106
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_ARCTIC_COAST
 	PlotType=3
 EndPlot
@@ -36843,7 +36855,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=21
-	BonusType=BONUS_CRUSTACEANS
+	BonusType=BONUS_CRAB
+	BonusVarietyType=BONUS_CRAB_SHRIMP
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

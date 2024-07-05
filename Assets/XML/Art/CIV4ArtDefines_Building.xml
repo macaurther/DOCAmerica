@@ -2567,5 +2567,35 @@
 			<KFM/>
 			<Button>Art/Interface/Buttons/Wonders/HooverDam.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_JEWELLER</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Jeweller/Bete_Giyorgis.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Jeweller/Jeweller.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_ABATTOIR</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Abattoir/food_plant.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Abattoir/Abattoir.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_STADIUM</Type>
+			<LSystem>LSYSTEM_2x3</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>0.55</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Stadium/veterans04.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Stadium/stadium.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

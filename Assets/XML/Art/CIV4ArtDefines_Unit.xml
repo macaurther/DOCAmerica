@@ -4292,7 +4292,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ENGLISH_MAN_OF_WAR</Type>
-			<Button>Art/Units/Man-of-War/Button_ManOfWar.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Button_ManOfWar.dds</Button>
 			<fScale>0.21</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4330,8 +4330,8 @@
 			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_TERCIO</Type>
-			<Button>Art/Units/Tercio/Tercio.dds</Button>
+			<Type>ART_DEF_UNIT_PIKE_AND_SHOT</Type>
+			<Button>Art/Interface/Buttons/Units/Tercio.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4355,7 +4355,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FUSILIER</Type>
-			<Button>Art/Units/Fusilier/Fusilier.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Fusilier.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4379,7 +4379,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_COLOMBIAN_LLANERO</Type>
-			<Button>Art/Units/Llanero/Llanero.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Llanero.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4403,7 +4403,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PORTUGUESE_BANDEIRANTE</Type>
-			<Button>Art/Units/Bandeirante/Bandeirante.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Bandeirante.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4427,7 +4427,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MEXICAN_RURAL</Type>
-			<Button>Art/Units/Rural/Rural.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Rural.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4450,8 +4450,8 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_TERCIO_MUSKET</Type>
-			<Button>Art/Units/Tercio/Button_Tercio.dds</Button>
+			<Type>ART_DEF_UNIT_PIKE_AND_SHOT_MUSKET</Type>
+			<Button>Art/Interface/Buttons/Units/Button_Tercio.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4474,8 +4474,8 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_TERCIO_PIKE</Type>
-			<Button>Art/Units/Tercio/Button_Tercio.dds</Button>
+			<Type>ART_DEF_UNIT_PIKE_AND_SHOT_PIKE</Type>
+			<Button>Art/Interface/Buttons/Units/Button_Tercio.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

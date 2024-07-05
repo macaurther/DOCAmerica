@@ -27,8 +27,9 @@
 			<Button>,Art/Interface/Buttons/Civics/Chiefdom.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
-			<iExtraHealth>1</iExtraHealth>
+			<iFoodProductionModifier>50</iFoodProductionModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
+			<iTradeRoutes>-1</iTradeRoutes>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_CHIEF</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -100,10 +101,15 @@
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iLargestCityHappiness>2</iLargestCityHappiness>
-			<SpecialistExtraCommerces>
-				<iCommerce>0</iCommerce>
-				<iCommerce>1</iCommerce>
-			</SpecialistExtraCommerces>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_COUNCIL</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -143,12 +149,45 @@
 			<Description>TXT_KEY_CIVIC_CUSTOMARY_LAW</Description>
 			<Civilopedia>TXT_KEY_CIVIC_CUSTOMARY_LAW_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_CUSTOMARY_LAW_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/CustomaryLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
+			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<bNoNonStateReligionSpread>1</bNoNonStateReligionSpread>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_COTTAGE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_HAMLET</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_VILLAGE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>-1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
@@ -229,6 +268,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCultureGroup>0</iCultureGroup>
+			<iCapitalBuildingProductionModifier>25</iCapitalBuildingProductionModifier>
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>50</iYield>
@@ -247,6 +287,7 @@
 			<iCultureGroup>0</iCultureGroup>
 			<iBaseFreeUnits>15</iBaseFreeUnits>
 			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
+			<iVassalTradeModifier>100</iVassalTradeModifier>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
@@ -461,6 +502,15 @@
 			<iCultureGroup>0</iCultureGroup>
 			<iTradeRoutes>1</iTradeRoutes>
 			<Upkeep>UPKEEP_LOW</Upkeep>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -508,10 +558,20 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<SpecialistValids>
 				<SpecialistValid>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
 					<bValid>1</bValid>
 				</SpecialistValid>
 			</SpecialistValids>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>3</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -614,6 +674,15 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>3</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -625,6 +694,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Cosmopolis.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
+			<iExtraHealth>2</iExtraHealth>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<BuildingHappinessChanges>
@@ -640,6 +710,14 @@
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_PLAZA</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_WEAVER</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_JEWELLER</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
@@ -671,6 +749,7 @@
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bStateReligion>1</bStateReligion>
+			<bNoNonStateReligionSpread>1</bNoNonStateReligionSpread>
 			<iWarWearinessModifier>-100</iWarWearinessModifier>
 			<iMilitaryProductionModifier>25</iMilitaryProductionModifier>
 		</CivicInfo>
@@ -758,10 +837,6 @@
 					<BuildingType>BUILDINGCLASS_BARRACKS</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
-				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_WALLS</BuildingType>
-					<iProductionModifier>100</iProductionModifier>
-				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -775,7 +850,6 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iVassalTradeModifier>100</iVassalTradeModifier>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
@@ -784,6 +858,10 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>100</iYield>
+			</TradeYieldModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -1198,29 +1276,15 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+					<YieldChanges>
 						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_RAILWAY_STATION</BuildingType>
@@ -1321,6 +1385,15 @@
 			<iCultureGroup>1</iCultureGroup>
 			<iTradeRoutes>1</iTradeRoutes>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -1367,10 +1440,17 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCorporationUnhappinessModifier>-50</iCorporationUnhappinessModifier>
 			<HappinessExtraYields>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</HappinessExtraYields>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_GREAT_STATESMAN</SpecialistType>
+					<YieldChanges>
+						<iYield>2</iYield>
+						<iYield>4</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -1470,6 +1550,32 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_SLAVE_FARMER</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_SLAVE_MINER</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_SLAVE_PLANTER</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -1490,6 +1596,13 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</SpecialistExtraCommerces>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -1548,6 +1661,16 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>4</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -1671,14 +1794,31 @@
 			<Button>,Art/Interface/Buttons/Civics/Junta.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
-			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_BARRACKS</BuildingType>
 					<iHappinessChange>1</iHappinessChange>
 				</BuildingHappinessChange>
+				<BuildingHappinessChange>
+					<BuildingType>BUILDINGCLASS_MAGAZINE</BuildingType>
+					<iHappinessChange>1</iHappinessChange>
+				</BuildingHappinessChange>
+				<BuildingHappinessChange>
+					<BuildingType>BUILDINGCLASS_ARSENAL</BuildingType>
+					<iHappinessChange>1</iHappinessChange>
+				</BuildingHappinessChange>
 			</BuildingHappinessChanges>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_GREAT_GENERAL</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>4</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_GENERAL</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1736,6 +1876,7 @@
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
+			<iLargestCityHappiness>2</iLargestCityHappiness>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1749,6 +1890,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
 			<UnhappinessExtraYields>
 				<iYield>0</iYield>
 				<iYield>5</iYield>
@@ -1771,7 +1913,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>3</iCommerce>
+				<iCommerce>2</iCommerce>
 			</SpecialistExtraCommerces>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LIKE_PARTY</WeLoveTheKing>
 		</CivicInfo>
@@ -1846,6 +1988,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<bFreeImprovementUpgrade>1</bFreeImprovementUpgrade>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
@@ -1856,6 +1999,12 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
+			<MinimalSpecialists>
+				<MinimalSpecialist>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
+				</MinimalSpecialist>
+			</MinimalSpecialists>
 			<Hurrys>
 				<Hurry>
 					<HurryType>HURRY_GOLD_FEDERALISM</HurryType>
@@ -1874,6 +2023,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<iGoldPerMilitaryUnit>1</iGoldPerMilitaryUnit>
+			<iCulturedCityFreeSpecialists>1</iCulturedCityFreeSpecialists>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1888,9 +2038,10 @@
 			<iCultureGroup>2</iCultureGroup>
 			<iBaseFreeUnits>15</iBaseFreeUnits>
 			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
+			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<CommerceModifiers>
-				<iCommerce>-25</iCommerce>
+				<iCommerce>-10</iCommerce>
 			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -2022,29 +2173,15 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_FARM</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+					<YieldChanges>
 						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_MINE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_RAILWAY_STATION</BuildingType>
@@ -2063,10 +2200,9 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<SpecialistExtraCommerces>
-				<iCommerce>0</iCommerce>
-				<iCommerce>2</iCommerce>
-			</SpecialistExtraCommerces>
+			<SpecialistExtraYields>
+				<iYield>1</iYield>
+			</SpecialistExtraYields>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_WORKSHOP</ImprovementType>
@@ -2276,10 +2412,17 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iCorporationUnhappinessModifier>-50</iCorporationUnhappinessModifier>
 			<HappinessExtraYields>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</HappinessExtraYields>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_GREAT_STATESMAN</SpecialistType>
+					<YieldChanges>
+						<iYield>2</iYield>
+						<iYield>4</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -2323,6 +2466,32 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_SLAVE_FARMER</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_SLAVE_MINER</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_SLAVE_PLANTER</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -2343,6 +2512,13 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>2</iCommerce>
 			</SpecialistExtraCommerces>
+			<CommerceModifiers>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>0</iCommerce>
+				<iCommerce>50</iCommerce>
+			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -2396,16 +2572,6 @@
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bNoSlavery>1</bNoSlavery>
 			<iNonStateReligionHappiness>1</iNonStateReligionHappiness>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>4</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
 			<SpecialistValids>
 				<SpecialistValid>
 					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
@@ -2416,13 +2582,10 @@
 					<bValid>1</bValid>
 				</SpecialistValid>
 			</SpecialistValids>
-			<CommerceModifiers>
+			<SpecialistExtraCommerces>
 				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>50</iCommerce>
-			</CommerceModifiers>
+				<iCommerce>3</iCommerce>
+			</SpecialistExtraCommerces>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -2464,11 +2627,12 @@
 					<ImprovementType>IMPROVEMENT_CONTACTED_TRIBE</ImprovementType>
 					<ImprovementYields>
 						<iYield>2</iYield>
-						<iYield>2</iYield>
-						<iYield>2</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
+			<StateReligionBuildingYields>
+				<iYield>2</iYield>
+			</StateReligionBuildingYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -2483,11 +2647,19 @@
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_BARRACKS</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
-					<BuildingType>BUILDINGCLASS_PALACE</BuildingType>
+					<BuildingType>BUILDINGCLASS_MAGAZINE</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_ARSENAL</BuildingType>
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 				<BuildingProductionModifier>
@@ -2546,7 +2718,18 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iDefensivePactTradeModifier>200</iDefensivePactTradeModifier>
+			<iWarWearinessModifier>100</iWarWearinessModifier>
+			<iDefensivePactTradeModifier>100</iDefensivePactTradeModifier>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>50</iYield>
+			</TradeYieldModifiers>
+			<DomainExperienceModifiers>
+				<DomainExperienceModifier>
+					<DomainType>DOMAIN_AIR</DomainType>
+					<iExperienceModifier>4</iExperienceModifier>
+				</DomainExperienceModifier>
+			</DomainExperienceModifiers>
 		</CivicInfo>
 	</CivicInfos>
 </Civ4CivicInfos>

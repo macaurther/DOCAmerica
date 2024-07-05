@@ -454,20 +454,19 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 155
-# Land Units (101)
+iNumUnits = 153
+# Land Units (99)
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			
 iSisqeno,       iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		
-iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		
-iMusketeer,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iMaceman,		iAucac,			iDogSoldier,	iJaguar,		
-iMacana,		iTercio,		iMohawk,		iFusilier,		iCompagnies,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	
-iLightningWarrior,iPikeman,		iEagle,			iArcher,		iPicta,			iSlinger,		iLongbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	
-iMachineGun,	iAtlatlist,		iHolkan,		iGuecha,		iCrossbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		
-iHorseArcher,	iSwiftArrow,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	
-iConquistador,	iCarabineer,	iGrenadierCavalry,iCavalry,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		
-iAAGun,			
+iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iMohawk,		iArquebusier,	iArmedBrave,	iArmedSlave,	
+iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iMaceman,		iAucac,			
+iJaguar,		iMacana,		iPikeAndShot,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,iPikeman,		
+iEagle,			iArcher,		iPicta,			iSlinger,		iLongbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	iAtlatlist,		
+iHolkan,		iGuecha,		iCrossbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		iHorseArcher,	iSwiftArrow,	
+iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	iCarabineer,	
+iGrenadierCavalry,iCavalry,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			
 # Naval Units (27)
 #				2				3				4				5				6				7				8				9				10
 iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			
@@ -486,7 +485,7 @@ iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	i
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
-lWildernessRPGunUnits = [iMilitia3, iMilitia4, iMinuteman, iMilitia5, iMilitia6, iArquebusier, iArmedSlave, iMusketman, iMusketeer, iGuardia, iRifleman, iVencedores, iInfantry, iTercio, iMohawk, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine]
+lWildernessRPGunUnits = [iMilitia3, iMilitia4, iMinuteman, iMilitia5, iMilitia6, iArquebusier, iArmedSlave, iMusketman, iFusilier, iGuardia, iRifleman, iVencedores, iInfantry, iPikeAndShot, iCompagnies, iLineInfantry, iRedcoat, iMarine]
 lWildernessRPHorseUnits = [iHorseArcher, iCuirassier, iConquistador]
 lWildernessRPHorseGunUnits = [iHussar, iMountedBrave, iDragoon, iLlanero, iPistolier, iRural, iCarabineer, iGrenadierCavalry, iCavalry]
 
@@ -510,34 +509,34 @@ iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave) = range(iNu
 lColonistRoles = [iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]
 
 # initialise bonuses variables to bonuses IDs from WBS
-iNumBonuses = 50
+iNumBonuses = 49
 #				2				3				4				5				6				7				8				9				10
 (iAluminium, 	iBison,			iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
-iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iCrustaceans,	iDeer, 			iFish, 			iPig, 			
-iPotato,		iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			
-iGems, 			iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			iSilver, 		
-iSpices,		iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
+iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iDeer, 			iFish, 			iPig, 			iPotato,		
+iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			iGems, 			
+iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			iSilver, 		iSpices,		
+iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
-iNumBonusVarieties = 2
+iNumBonusVarieties = 3
 #				2				3				4				5				6				7				8				9				10
-(iDyeCochineal, iCitrusOranges) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
+(iDyeCochineal, iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 224
-# Buildings (119)
+iNumBuildings = 225
+# Buildings (120)
 #				2				3				4				5				6				7				8				9				10
 (iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iTipi,
-iMarket,		iTambo,			iWeaver,		iGoldsmith,		iStoneworks,	iArena,			iBallCourt,		iBarracks,		iKallanka,		iHerbalist,		
-iKuna,			iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		
-iWalls,			iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			
-iStocks,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iSawmill,		iStable,		iPalisade,		iMonument,		iSchoolhouse,	
-iWell,			iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		iTavern,		
-iStarFort,		iCitadelle,		iEstate,		iFazenda,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
-iThingvellir,	iWheelwright,	iPostOffice,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iSilversmith,	
-iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iSewer,			iJail,			iImmigrationOffice,
-iRailwayStation,iTextileMill,	iWoolMill,		iSteelMill,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		iNewspaper,		
-iSupermarket,	iColdStoragePlant,iHospital,	iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		
-iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iPark,			iBunker,		iLaboratory,	iBroadcastTower,iNuclearPlant,
+iMarket,		iWeaver,		iStoneworks,	iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			
+iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iChinampa,		iBath,			iTemazcal,		iJeweller,		
+iGoldsmith,		iWalls,			iKancha,		iPlaza,			iPlatformMound,	iKalasasay,		iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	
+iLuau,			iStocks,		iTradingPost,	iHuntingPost,	iTradingFort,	iForge,			iTavern,		iStable,		iPalisade,		iMonument,		
+iSchoolhouse,	iGrocer, 		iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		
+iSilversmith,	iStarFort,		iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
+iThingvellir,	iWheelwright,	iPostOffice,	iTambo,			iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,			
+iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			
+iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		
+iNewspaper,		iSupermarket,	iHospital,		iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		
+iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -772,8 +771,8 @@ lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
-lMainlineMercs = [iPikeman, iArquebusier, iMusketman, iMusketeer, iRifleman, iInfantry]
-lEliteMercs = [iTercio, iFusilier, iCompagnies, iLineInfantry, iRedcoat, iMarine]
+lMainlineMercs = [iPikeman, iArquebusier, iMusketman, iFusilier, iRifleman, iInfantry]
+lEliteMercs = [iPikeAndShot, iCompagnies, iLineInfantry, iRedcoat, iMarine]
 lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]
 lSkirmishMercs = [iSkirmisher, iGrenadier]
 lLightCavalryMercs = [iHussar, iDragoon, iPistolier, iLightTank]

@@ -68,9 +68,9 @@ def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 def iroquoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 	if civ(iPlayer) == iIroquois:
 		if year() > year(1600):
-			makeUnits(iPlayer, iMohawk, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
+			makeUnits(iPlayer, iArmedBrave, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 		else:
-			makeUnits(iPlayer, iMaceman, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
+			makeUnits(iPlayer, iMohawk, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 
 @handler("improvementBuilt")
 # Russian UP

@@ -470,9 +470,6 @@ def calculateSeparatism(city):
 	
 	iSeparatism *= iModifier / 100
 	
-	# God King Civic
-	if iCustomaryLaw1 in civics and iSeparatism > 3: iSeparatism = 3
-	
 	return iSeparatism
 
 def calculateSlaveStability(city):

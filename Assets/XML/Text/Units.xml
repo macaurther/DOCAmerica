@@ -686,26 +686,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK</Tag>
-		<English>Mohawk</English>
-		<French>
-			<Text>Mohawk</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Mohawk</German>
-		<Italian>Mohawk</Italian>
-		<Spanish>Mohawk</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</English>
-		<French>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</French>
-		<German>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Tercio[COLOR_REVERT], starts with the Woodsman I and Woodsman II promotions.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOUNTED_BRAVE</Tag>
 		<English>Mounted Brave</English>
 		<French>
@@ -1550,24 +1530,20 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Man-of-War[COLOR_REVERT], the English replacement for the [COLOR_UNIT_TEXT]Ship of the Line[COLOR_REVERT], has three additional strength points, one additional movement point and does collateral damage to one more unit.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_TERCIO</Tag>
-		<English>Tercio</English>
-		<French>
-			<Text>Tercio</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Tercio</German>
-		<Italian>Tercio</Italian>
-		<Spanish>Tercio</Spanish>
+		<Tag>TXT_KEY_UNIT_PIKE_AND_SHOT</Tag>
+		<English>Pike and Shot</English>
+		<French>Pike and Shot</French>
+		<German>Pike and Shot</German>
+		<Italian>Pike and Shot</Italian>
+		<Spanish>Pike and Shot</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_TERCIO_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Tercios[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_UNIT_PIKE_AND_SHOT_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Pike and Shot[COLOR_REVERT] have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT] and [COLOR_UNIT_TEXT]Gunpowder Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUSILIER</Tag>
@@ -1887,11 +1863,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</English>
-		<French>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</French>
-		<German>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Fusilier[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Musketman[COLOR_REVERT], starts with the Drill I and Drill II promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Musketman[COLOR_REVERT], starts with the Drill I and Drill II promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Musketman[COLOR_REVERT], starts with the Drill I and Drill II promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Musketman[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Compagnies[COLOR_REVERT], the French replacement for the [COLOR_UNIT_TEXT]Musketman[COLOR_REVERT], starts with the Drill I and Drill II promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINE_INFANTRY</Tag>
@@ -2216,6 +2192,22 @@
 		<German>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK</Tag>
+		<English>Mohawk</English>
+		<French>Mohawk</French>
+		<German>Mohawk</German>
+		<Italian>Mohawk</Italian>
+		<Spanish>Mohawk</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK_STRATEGY</Tag>
+		<English>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</English>
+		<French>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</French>
+		<German>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Mohawk[COLOR_REVERT], the Iroquois replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], starts with the Woodsman I, Woodsman II, and River Combat promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PERUVIAN_GUARDIA</Tag>

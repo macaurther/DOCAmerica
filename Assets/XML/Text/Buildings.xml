@@ -43,11 +43,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ARGENTINE_REFRIGERATION_PLANT_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Supermarket[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Supermarket[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Supermarket[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Supermarket[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Supermarket[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Slaughterhouse[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Slaughterhouse[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Slaughterhouse[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Slaughterhouse[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Cold Storage Plant[COLOR_REVERT], the Argentine replacement for the [COLOR_BUILDING_TEXT]Slaughterhouse[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Cows[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Deer[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BANK_STRATEGY</Tag>
@@ -96,26 +96,6 @@
 		<German>[COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Land Units[COLOR_REVERT] built in its city. [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Military Academy[COLOR_REVERT] national wonder.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Land Units[COLOR_REVERT] built in its city. [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Military Academy[COLOR_REVERT] national wonder.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] grant experience points to [COLOR_UNIT_TEXT]Land Units[COLOR_REVERT] built in its city. [COLOR_BUILDING_TEXT]Barracks[COLOR_REVERT] are required to build the [COLOR_BUILDING_TEXT]Military Academy[COLOR_REVERT] national wonder.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA</Tag>
-		<English>Fazenda</English>
-		<French>
-			<Text>Fazenda:Fazendas</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Fazenda</German>
-		<Italian>Fazenda</Italian>
-		<Spanish>Fazenda</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_BRAZILIAN_FAZENDA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</English>
-		<French>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</French>
-		<German>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Fazenda[COLOR_REVERT], the Brazilian replacement for the [COLOR_BUILDING_TEXT]Estate[COLOR_REVERT], greatly increases a city's cultural output and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Artist[COLOR_REVERT] specialist. It also increases the happiness output from using the culture slider.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CANADIAN_ROYAL_MOUNTED_POLICE_STRATEGY</Tag>
@@ -311,11 +291,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_INCAN_TAMBO_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], provides an extra trade route, increases a city's income from trade routes, and provides an espionage bonus.</English>
-		<French>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], provides an extra trade route, increases a city's income from trade routes, and provides an espionage bonus.</French>
-		<German>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], provides an extra trade route, increases a city's income from trade routes, and provides an espionage bonus.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], provides an extra trade route, increases a city's income from trade routes, and provides an espionage bonus.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Walls[COLOR_REVERT], provides an extra trade route, increases a city's income from trade routes, and provides an espionage bonus.</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides extra defense and is available much earlier.</English>
+		<French>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides extra defense and is available much earlier.</French>
+		<German>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides extra defense and is available much earlier.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides extra defense and is available much earlier.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Tambo[COLOR_REVERT], the Inca replacement for [COLOR_BUILDING_TEXT]Post Office[COLOR_REVERT], provides extra defense and is available much earlier.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
@@ -2310,22 +2290,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Trading Posts[COLOR_REVERT] provide an extra trade route and increase happiness from access to [COLOR_HIGHLIGHT_TEXT]Fur[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_WELL</Tag>
-		<English>Well</English>
-		<French>Well</French>
-		<German>Well</German>
-		<Italian>Well</Italian>
-		<Spanish>Well</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_WELL_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Wells[COLOR_REVERT] add health to a city.</English>
-		<French>[COLOR_BUILDING_TEXT]Wells[COLOR_REVERT] add health to a city.</French>
-		<German>[COLOR_BUILDING_TEXT]Wells[COLOR_REVERT] add health to a city.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Wells[COLOR_REVERT] add health to a city.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Wells[COLOR_REVERT] add health to a city.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WHEELWRIGHT</Tag>
 		<English>Wheelwright</English>
 		<French>Wheelwright</French>
@@ -2452,22 +2416,6 @@
 		<German>[ICON_BULLET]-2 Separatism Modifier</German>
 		<Italian>[ICON_BULLET]-2 Separatism Modifier</Italian>
 		<Spanish>[ICON_BULLET]-2 Separatism Modifier</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ENGLISH_SAWMILL</Tag>
-		<English>Sawmill</English>
-		<French>Sawmill</French>
-		<German>Sawmill</German>
-		<Italian>Sawmill</Italian>
-		<Spanish>Sawmill</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_ENGLISH_SAWMILL_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Sawmill[COLOR_REVERT], the English replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Timber[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Sawmill[COLOR_REVERT], the English replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Timber[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Sawmill[COLOR_REVERT], the English replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Timber[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Sawmill[COLOR_REVERT], the English replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Timber[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Sawmill[COLOR_REVERT], the English replacement for the [COLOR_BUILDING_TEXT]Forge[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Timber[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FRENCH_SEIGNEUR</Tag>
@@ -2961,6 +2909,51 @@
 		<Italian>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Hotels[COLOR_REVERT] increase a city's cultural output. They also increase trade route yield and increase trade route yield even more for each level of culture.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWELLER</Tag>
+		<English>Jeweller</English>
+		<French>Jeweller</French>
+		<German>Jeweller</German>
+		<Italian>Jeweller</Italian>
+		<Spanish>Jeweller</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWELLER_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JEWELLER_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STADIUM</Tag>
+		<English>Stadium</English>
+		<French>
+			<Text>Stade:Stades</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stadion</German>
+		<Italian>Stadium</Italian>
+		<Spanish>Stadium</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_STADIUM_STRATEGY</Tag>
+		<English>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</English>
+		<French>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</French>
+		<German>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</German>
+		<Italian>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</Spanish>
+	</TEXT>
+	
 	
 	
 	<TEXT>
