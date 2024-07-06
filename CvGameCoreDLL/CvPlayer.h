@@ -765,6 +765,7 @@ public:
 	DllExport HandicapTypes getHandicapType() const;																									// Exposed to Python
 	DllExport void setHandicapType(HandicapTypes eHandicap);	//Rhye
 
+	int getCultureGroup() const;	// MacAurther
 	DllExport CivilizationTypes getCivilizationType() const;																					// Exposed to Python
 	DllExport void setCivilizationType(CivilizationTypes iNewValue);	//edead
 

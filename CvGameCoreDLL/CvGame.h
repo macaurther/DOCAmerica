@@ -133,6 +133,7 @@ public:
 	int countTotalCivPower();																								// Exposed to Python
 	int countTotalNukeUnits();																							// Exposed to Python
 	int countKnownTechNumTeams(TechTypes eTech);														// Exposed to Python
+	int countKnownTechNumTeamsCultureGroup(TechTypes eTech, int eCultureGroup);
 	int getNumFreeBonuses(BuildingTypes eBuilding);													// Exposed to Python
 
 	int countReligionLevels(ReligionTypes eReligion);							// Exposed to Python 

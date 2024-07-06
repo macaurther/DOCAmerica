@@ -106,6 +106,7 @@ public:
 	bool isMinorCiv() const;																														// Exposed to Python
 	bool isIndependent() const;
 	bool isNative() const;
+	int getCultureGroup() const;	// MacAurther
 	PlayerTypes getLeaderID() const;																										// Exposed to Python
 	PlayerTypes getSecretaryID() const;																									// Exposed to Python
 	HandicapTypes getHandicapType() const;																							// Exposed to Python

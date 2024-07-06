@@ -3089,6 +3089,12 @@ bool CvTeam::isNative() const
 }
 
 
+int CvTeam::getCultureGroup() const
+{
+	return GET_PLAYER(getLeaderID()).getCultureGroup();
+}
+
+
 PlayerTypes CvTeam::getLeaderID() const
 {
 	int iI;
@@ -5644,7 +5650,7 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 
 			if (bFirst)
 			{
-				if (GC.getGameINLINE().countKnownTechNumTeams(eIndex) == 1)
+				if (GC.getGameINLINE().countKnownTechNumTeamsCultureGroup(eIndex, GET_PLAYER(getLeaderID()).getCultureGroup()) == 1)	// MacAurther: Let each Culture group get its own great people
 				{
 					eFreeUnit = GET_PLAYER(ePlayer).getTechFreeUnit(eIndex);
 					if (eFreeUnit != NO_UNIT)
@@ -5811,7 +5817,7 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 											}
 
 											if ((eCivicOptionType != NO_CIVICOPTION) && (eCivicType != NO_CIVIC) && 
-												GC.getCivilizationInfo(GET_PLAYER(getLeaderID()).getCivilizationType()).getCultureGroup() == GC.getCivicInfo(eCivicType).getCultureGroup())	// MacAurther: Don't prompt civs that can't use certain civics
+												getCultureGroup() == GC.getCivicInfo(eCivicType).getCultureGroup())	// MacAurther: Don't prompt civs that can't use certain civics
 											{
 												CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHANGECIVIC);
 												if (NULL != pInfo)

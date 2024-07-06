@@ -4665,7 +4665,7 @@ int CvCity::determineArtStyleType() const
 
 	int eRegion = getRegionID();
 	int eRegionGroup = getRegionGroup();
-	int eCultureGroup = GC.getCivilizationInfo(kHighestCulturePlayer.getCivilizationType()).getCultureGroup();
+	int eCultureGroup = kHighestCulturePlayer.getCultureGroup();
 
 	if (kHighestCulturePlayer.isNative())
 	{

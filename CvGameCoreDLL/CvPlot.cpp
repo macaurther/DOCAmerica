@@ -3538,7 +3538,7 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 					}
 
 					// MacAurther: Nations have cultural priority over Colonies, and each of those have priority over Natives (16/4/1)
-					switch(GC.getCivilizationInfo(GET_PLAYER((PlayerTypes)iI).getCivilizationType()).getCultureGroup())
+					switch(GET_PLAYER((PlayerTypes)iI).getCultureGroup())
 					{
 						case 1:
 							// Ancestral Lands civic

@@ -8117,7 +8117,7 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 bool CvPlayer::isCivicValid(CivicTypes eCivic) const
 {
 	CultureGroups civicCultureGroup = (CultureGroups)GC.getCivicInfo(eCivic).getCultureGroup();
-	return (civicCultureGroup == (CultureGroups)GC.getCivilizationInfo(getCivilizationType()).getCultureGroup());
+	return civicCultureGroup == (CultureGroups)getCultureGroup();
 }
 
 
@@ -12035,6 +12035,12 @@ void CvPlayer::setHandicapType(HandicapTypes eHandicap)
 	GC.getInitCore().setHandicap(getID(), eHandicap);
 }
 //Rhye - end
+
+
+int CvPlayer::getCultureGroup() const
+{
+	return GC.getCivilizationInfo(getCivilizationType()).getCultureGroup();
+}
 
 
 CivilizationTypes CvPlayer::getCivilizationType() const

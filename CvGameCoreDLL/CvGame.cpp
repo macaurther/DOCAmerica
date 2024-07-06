@@ -3253,6 +3253,28 @@ int CvGame::countKnownTechNumTeams(TechTypes eTech)
 	return iCount;
 }
 
+// MacAurther: For when you want to know how many other teams in your culture group have that tech
+int CvGame::countKnownTechNumTeamsCultureGroup(TechTypes eTech, int eCultureGroup)
+{
+	int iCount = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (GET_TEAM((TeamTypes)iI).isEverAlive())
+		{
+			if (GET_TEAM((TeamTypes)iI).isHasTech(eTech))
+			{
+				if (GET_TEAM((TeamTypes)iI).getCultureGroup() == eCultureGroup)
+				{
+					iCount++;
+				}
+			}
+		}
+	}
+
+	return iCount;
+}
+
 
 int CvGame::getNumFreeBonuses(BuildingTypes eBuilding)
 {
