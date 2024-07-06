@@ -307,13 +307,13 @@
 			<TextColorType>COLOR_PLAYER_CYAN_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_DARK_INDIGO_AND_WHITE</Type>
+			<Type>PLAYERCOLOR_DARK_INDIGO_AND_WHITE</Type> <!-- Muisca -->
 			<ColorTypePrimary>COLOR_PLAYER_DARK_INDIGO</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_WHITE</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_DARK_INDIGO_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_ORANGE_AND_GREEN</Type>
+			<Type>PLAYERCOLOR_ORANGE_AND_GREEN</Type> <!-- Zapotec -->
 			<ColorTypePrimary>COLOR_PLAYER_ORANGE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_DARK_GREEN</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_ORANGE_TEXT</TextColorType>
@@ -409,7 +409,7 @@
 			<TextColorType>COLOR_PLAYER_BLUE_TEXT</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_OCHRE</Type> <!-- Muisca -->
+			<Type>PLAYERCOLOR_OCHRE</Type>
 			<ColorTypePrimary>COLOR_PLAYER_OCHRE</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_MAROON</ColorTypeSecondary>
 			<TextColorType>COLOR_PLAYER_OCHRE</TextColorType>
@@ -475,7 +475,7 @@
 			<TextColorType>COLOR_PLAYER_DARK_GREEN</TextColorType>
 		</PlayerColorInfo>
 		<PlayerColorInfo>
-			<Type>PLAYERCOLOR_ZAPOTEC</Type> <!-- Zapotec -->
+			<Type>PLAYERCOLOR_ZAPOTEC</Type>
 			<ColorTypePrimary>COLOR_X_FIREBRICK</ColorTypePrimary>
 			<ColorTypeSecondary>COLOR_PLAYER_ROYAL_BLUE</ColorTypeSecondary>
 			<TextColorType>COLOR_X_FIREBRICK</TextColorType>

@@ -170,7 +170,7 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_MUISCA</Type>
-			<Button>Art/Interface/Buttons/Civilizations/Muisca.dds</Button>
+			<Button>,Art/Interface/Buttons/Btn_LH_Mesoamerica_muisca.dds,Art/Interface/Buttons/MesoamericaFlagAtlas.dds,6,1</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Muisca.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
@@ -212,7 +212,7 @@
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
 			<Type>ART_DEF_CIVILIZATION_ZAPOTEC</Type>
-			<Button>,Art/Interface/Buttons/Btn_LH_Mesoamerica_cocom.dds,Art/Interface/Buttons/MesoamericaFlagAtlas.dds,2,1</Button>
+			<Button>,Art/Interface/Buttons/Btn_LH_Mesoamerica_zapotec.dds,Art/Interface/Buttons/MesoamericaFlagAtlas.dds,4,1</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_Zapotec.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>

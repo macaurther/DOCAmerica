@@ -35,11 +35,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TEMPLE_OF_KUKULKAN_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Temple of Kukulkan[COLOR_REVERT] adds extra food to all rainforest tiles worked by its city and unlocks all Executive civics. It also increases its city's odds of generating a [COLOR_UNIT_TEXT]Great Prophet[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HOLLYWOOD_STRATEGY</Tag>
@@ -671,11 +671,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HUEY_TEOCALLI_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</English>
-		<French>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</French>
-		<German>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] allows you to hire two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and gives all units built in its city the [COLOR_HIGHLIGHT_TEXT]Leadership[COLOR_REVERT] promotion.</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] provides two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and unlocks all Expansion civics.</English>
+		<French>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] provides two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and unlocks all Expansion civics.</French>
+		<German>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] provides two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and unlocks all Expansion civics.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] provides two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and unlocks all Expansion civics.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Huey Teocalli[COLOR_REVERT] provides two [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialists and unlocks all Expansion civics.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LA_FORTALEZA</Tag>
@@ -799,11 +799,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SACSAYHUAMAN_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</English>
-		<French>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</French>
-		<German>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and allows your units to enter peaks.</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and provides free Mountaineer promotions.</English>
+		<French>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and provides free Mountaineer promotions.</French>
+		<German>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and provides free Mountaineer promotions.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and provides free Mountaineer promotions.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Sacsayhuaman[COLOR_REVERT] increases a city's defenses against pre-gunpowder units and provides free Mountaineer promotions.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SAO_FRANCISCO_SQUARE</Tag>

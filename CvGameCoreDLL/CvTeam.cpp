@@ -5810,7 +5810,8 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 												}
 											}
 
-											if ((eCivicOptionType != NO_CIVICOPTION) && (eCivicType != NO_CIVIC))
+											if ((eCivicOptionType != NO_CIVICOPTION) && (eCivicType != NO_CIVIC) && 
+												GC.getCivilizationInfo(GET_PLAYER(getLeaderID()).getCivilizationType()).getCultureGroup() == GC.getCivicInfo(eCivicType).getCultureGroup())	// MacAurther: Don't prompt civs that can't use certain civics
 											{
 												CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHANGECIVIC);
 												if (NULL != pInfo)

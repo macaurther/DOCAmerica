@@ -2521,6 +2521,9 @@
 					<iFlavor>2</iFlavor>
 				</Flavor>
 			</Flavors>
+			<OrPreReqs>
+				<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_INDOCTRINATION</PrereqTech>
 			</AndPreReqs>

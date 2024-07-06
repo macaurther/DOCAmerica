@@ -8361,6 +8361,7 @@
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
+			<CivicOption>CIVICOPTION_EXECUTIVE</CivicOption>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
@@ -8534,7 +8535,6 @@
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
-			<CivicOption>CIVICOPTION_EXECUTIVE</CivicOption>
 			<FreePromotion>PROMOTION_MOUNTAINEER2</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8592,8 +8592,8 @@
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
-			<FreePromotion>PROMOTION_LEADERSHIP</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
+			<CivicOption>CIVICOPTION_EXPANSION</CivicOption>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>

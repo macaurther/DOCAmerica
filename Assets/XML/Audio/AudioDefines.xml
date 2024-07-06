@@ -2045,7 +2045,7 @@
 		</SoundData>
 		<SoundData>
 			<SoundID>DIPLO_PACAL_EARLY</SoundID>
-			<Filename>Sounds/Soundtrack/Candidates/MP3/MontezumaPeace</Filename>
+			<Filename>Sounds/Diplomacy/Pacal_Early</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>

@@ -13306,6 +13306,12 @@ bool CvUnit::canRangeStrike() const
 		return false;
 	}
 
+	// MacAurther: No ranged strike while being transported
+	if (isCargo())
+	{
+		return false;
+	}
+
 	return true;
 }
 

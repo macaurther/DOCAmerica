@@ -2127,7 +2127,7 @@
 			<ShortDescription>TXT_KEY_CIV_MUISCA_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_MUISCA_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_MUISCA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_OCHRE</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_DARK_INDIGO_AND_WHITE</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_MUISCA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
@@ -3755,7 +3755,7 @@
 			<ShortDescription>TXT_KEY_CIV_ZAPOTEC_SHORT_DESC</ShortDescription>
 			<Adjective>TXT_KEY_CIV_ZAPOTEC_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_ZAPOTEC_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_ZAPOTEC</DefaultPlayerColor>
+			<DefaultPlayerColor>PLAYERCOLOR_ORANGE_AND_GREEN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_ZAPOTEC</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
