@@ -900,6 +900,20 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			szString.append(gDLL->getText("TXT_KEY_UNIT_COMBAT_LIMIT", (100 * pUnit->combatLimit()) / GC.getMAX_HIT_POINTS()));
 		}
 
+		// MacAurther: More detail about ranged attack limit
+		if (pUnit->getUnitInfo().getAirCombatLimit() > 0)
+		{
+			szString.append(NEWLINE);
+			if (pUnit->getUnitInfo().getAirCombatLimit() < 100)
+			{
+				szString.append(gDLL->getText("TXT_KEY_UNIT_RANGED_ATTACK_LIMIT", ( pUnit->getUnitInfo().getAirCombatLimit() )));
+			}
+			else
+			{
+				szString.append(gDLL->getText("TXT_KEY_UNIT_RANGED_ATTACK_LIMITLESS"));
+			}
+		}
+
 		if (pUnit->collateralDamage() > 0)
 		{
 			szString.append(NEWLINE);
@@ -9232,6 +9246,20 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_COMBAT_LIMIT", (100 * GC.getUnitInfo(eUnit).getCombatLimit()) / GC.getMAX_HIT_POINTS()));
+	}
+
+	// MacAurther: More detail about ranged attack limit
+	if (GC.getUnitInfo(eUnit).getAirCombatLimit() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		if (GC.getUnitInfo(eUnit).getAirCombatLimit() < 100)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_RANGED_ATTACK_LIMIT", ( GC.getUnitInfo(eUnit).getAirCombatLimit() )));
+		}
+		else
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_RANGED_ATTACK_LIMITLESS"));
+		}
 	}
 
 	if (GC.getUnitInfo(eUnit).getCollateralDamage() > 0)

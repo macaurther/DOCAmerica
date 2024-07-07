@@ -4009,6 +4009,22 @@
 		<Spanish>Can Spend Gold to Finish Production in a City</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_RANGED_ATTACK_LIMIT</Tag>
+		<English>[ICON_BULLET]Can attack from range (max. %d1_Num1%%)</English>
+		<French>[ICON_BULLET]Can attack from range (max. %d1_Num1%%)</French>
+		<German>[ICON_BULLET]Can attack from range (max. %d1_Num1%%)</German>
+		<Italian>[ICON_BULLET]Can attack from range (max. %d1_Num1%%)</Italian>
+		<Spanish>[ICON_BULLET]Can attack from range (max. %d1_Num1%%)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_RANGED_ATTACK_LIMITLESS</Tag>
+		<English>[ICON_BULLET]Can attack from range</English>
+		<French>[ICON_BULLET]Can attack from range</French>
+		<German>[ICON_BULLET]Can attack from range</German>
+		<Italian>[ICON_BULLET]Can attack from range</Italian>
+		<Spanish>[ICON_BULLET]Can attack from range</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_</Tag>
 		<English></English>
 		<French></French>

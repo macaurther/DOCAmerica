@@ -5932,7 +5932,7 @@
 			<iCombat>4</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iAirCombat>9</iAirCombat>
-			<iAirCombatLimit>1</iAirCombatLimit>
+			<iAirCombatLimit>100</iAirCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iCollateralDamage>50</iCollateralDamage>
