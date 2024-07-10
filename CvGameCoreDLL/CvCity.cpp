@@ -9408,7 +9408,7 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 
 	iModifier += GET_PLAYER(getOwnerINLINE()).getYieldRateModifier(eIndex);
 
-	if (isCapital())
+	if (isCapital() || getCivilizationType() == MUISCA)	// MacAurther: Muisca UP: Capital modifiers are applied to all cities
 	{
 		iModifier += GET_PLAYER(getOwnerINLINE()).getCapitalYieldRateModifier(eIndex);
 	}
@@ -10091,7 +10091,7 @@ int CvCity::getTotalCommerceRateModifier(CommerceTypes eIndex) const
 
 	iTotalModifier += GET_PLAYER(getOwnerINLINE()).getCommerceRateModifier(eIndex);
 
-	if (isCapital())
+	if (isCapital() || getCivilizationType() == MUISCA)	// MacAurther: Muisca UP: Capital modifiers are applied to all cities
 	{
 		iTotalModifier += GET_PLAYER(getOwnerINLINE()).getCapitalCommerceRateModifier(eIndex);
 	}

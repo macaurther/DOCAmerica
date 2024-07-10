@@ -7029,15 +7029,6 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 
-	// 1SDAN: Muisca UP: +1 Food on Mines
-	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == MUISCA)
-	{
-		if (eYield == YIELD_FOOD && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_MINE"))
-		{
-			iYield += 1;
-		}
-	}
-
 	// MacAurther: Andes RP: +1 Food on Farms on Hills
 	if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ANDES)
 	{
