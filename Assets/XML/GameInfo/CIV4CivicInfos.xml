@@ -775,6 +775,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Nomads.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
+			<iWorkerSpeedModifier>-50</iWorkerSpeedModifier>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bMilitaryFoodProduction>1</bMilitaryFoodProduction>
 		</CivicInfo>

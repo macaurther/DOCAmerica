@@ -124,11 +124,12 @@ dGoals = {
 	iTiwanaku: (
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatProphet, 1, by=700),
 		All(
+			Wonder(iKalasasaya),
 			Wonder(iGateOfTheSun),
 			Wonder(iPyramidOfTheSun),
 			by=900,
 		),
-		GoldenAges(3, by=1100),
+		GoldenAges(4, by=1100),
 	),
 	iWari: (
 		All(
@@ -145,7 +146,7 @@ dGoals = {
 	),
 	iMississippi: (
 		All(
-			AreaPercent((plots.rectangle(tMississippiRiver) + plots.of(lMississippiRiverAdditional)).named(MISSISSIPPI_RIVER), 50),
+			AreaPercent((plots.rectangle(tMississippiRiver).without(lMississippiRiverExceptions) + plots.of(lMississippiRiverAdditional)).named(MISSISSIPPI_RIVER), 50),
 			AreaPercent((plots.rectangle(tOhioRiver).without(lOhioRiverExceptions) + plots.of(lOhioRiverAdditional)).named(OHIO_RIVER), 50),
 			by=1000,
 		),
@@ -161,8 +162,16 @@ dGoals = {
 		),
 	),
 	iPuebloan: (
-		CultureAmount(250, at=1200),
-		TradeConnection(by=1400),
+		All(
+			CultureAmount(500, at=1200),
+			BuildingCount(iKiva, 5),
+			by=1200,
+		),
+		All(
+			TradeConnection(),
+			SpecialistCount(iSpecialistGreatMerchant, 4),
+			by=1400,
+		),
 		UnitCount(iHorseArcher, 1, by=1680),
 	),
 	iMuisca: (
@@ -336,7 +345,7 @@ dGoals = {
 		ImprovementCount((iPlantation, 8), (iPasture, 4), at=1880),
 		Wonders(iCristoRedentor),
 		All(
-			ImprovementCount(iForestPreserve, 20),
+			ImprovementCount(iForestPreserve, 30),
 			CityBuilding(capital().named(CAPITAL), iNationalPark),
 			by=1900,
 		),

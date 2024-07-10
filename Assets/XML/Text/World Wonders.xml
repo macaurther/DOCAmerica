@@ -107,11 +107,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FLOATING_GARDENS_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give a large food bonus as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give a large food bonus as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give a large food bonus as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give a large food bonus as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give a large food bonus as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give [ICON_FOOD] and [ICON_PRODUCTION] bonuses to water tiles as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give [ICON_FOOD] and [ICON_PRODUCTION] bonuses to water tiles as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give [ICON_FOOD] and [ICON_PRODUCTION] bonuses to water tiles as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give [ICON_FOOD] and [ICON_PRODUCTION] bonuses to water tiles as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Floating Gardens[COLOR_REVERT] give [ICON_FOOD] and [ICON_PRODUCTION] bonuses to water tiles as well as increasing its city's odds of generating a [COLOR_UNIT_TEXT]Great Merchant[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRACELAND</Tag>
@@ -1116,6 +1116,22 @@
 		<German>Mount Rushmore</German>
 		<Italian>Mount Rushmore</Italian>
 		<Spanish>Mount Rushmore</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KALASASAYA</Tag>
+		<English>Kalasasaya</English>
+		<French>Kalasasaya</French>
+		<German>Kalasasaya</German>
+		<Italian>Kalasasaya</Italian>
+		<Spanish>Kalasasaya</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_KALASASAYA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], unlocks all Administration Civics, increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</English>
+		<French>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], unlocks all Administration Civics, increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</French>
+		<German>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], unlocks all Administration Civics, increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], unlocks all Administration Civics, increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], unlocks all Administration Civics, increases [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate, and provides a free Plaza in every city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_</Tag>

@@ -189,12 +189,13 @@ lCivilizations = [
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
+		lCivics=[iCaptives1, iRedistribution1],
 		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining, iMasonry).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iWari,
@@ -211,12 +212,12 @@ lCivilizations = [
 	Civilization(
 		iPuebloan,
 		iGold=50,
-		techs=techs.column(2).including(iMasonry).without(iTrapping, iLinguistics, iLocalization, iHerbalism, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iMasonry).without(iTrapping, iLinguistics, iLocalization, iHerbalism, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iMuisca,
 		iGold=200,
-		techs=techs.column(3).including(iAlloys, iSmelting).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iAlloys, iMasonry, iSmelting).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNorse,
@@ -834,23 +835,27 @@ dBuildingPreferences = {
 		iSerpentMound: -80,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
+		iKalasasaya : -40,
 	},
 	iZapotec : {
 		iSerpentMound: -80,
 		iPuebloBonito: -80,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
+		iKalasasaya : -40,
 	},
 	iTeotihuacan : {
 		iTlachihualtepetl: 40,
 		iSerpentMound: -80,
 		iPuebloBonito: -80,
-		iGateOfTheSun: -80,
+		iGateOfTheSun: -100,
 		iPyramidOfTheSun: -80,
+		iKalasasaya : -40,
 	},
 	iTiwanaku : {
 		iGateOfTheSun: 40,
 		iPyramidOfTheSun: 40,
+		iKalasasaya : 40,
 		iSerpentMound: -40,
 	},
 	iWari : {

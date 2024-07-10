@@ -1488,7 +1488,7 @@
 			<Button>Art/Structures/Buildings/Warehouse/Warehouse.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_TIWANAKU_KALASASAYA</Type>
+			<Type>ART_DEF_BUILDING_KALASASAYA</Type>
 			<LSystem>LSYSTEM_3x3</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>2.0</fScale>
@@ -1958,7 +1958,7 @@
 			<Button>Art/Interface/Buttons/Buildings/Stocks.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_DUTCH_TRADING_FORT</Type>
+			<Type>ART_DEF_BUILDING_DUTCH_FACTORIJ</Type>
 			<LSystem>LSYSTEM_3x1</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
@@ -2596,6 +2596,26 @@
 			<NIF>Art/Structures/Buildings/Stadium/veterans04.nif</NIF>
 			<KFM/>
 			<Button>Art/Structures/Buildings/Stadium/stadium.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_AZTEC_CALMECAC</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.4</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Calmecac/Meso1.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Calmecac/Calmecac.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_BRAZILIAN_SAMBADROME</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>5.0</fScale>
+			<fInterfaceScale>0.65</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Sambadrome/Teuchitlan01.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Sambadrome/Button_Carnival.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

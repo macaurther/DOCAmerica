@@ -1782,22 +1782,6 @@
 		<Spanish>Arena</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TIWANAKU_KALASASAYA</Tag>
-		<English>Kalasasaya</English>
-		<French>Kalasasaya</French>
-		<German>Kalasasaya</German>
-		<Italian>Kalasasaya</Italian>
-		<Spanish>Kalasasaya</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TIWANAKU_KALASASAYA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate even more and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</English>
-		<French>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate even more and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</French>
-		<German>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate even more and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate even more and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Kalasasaya[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Common[COLOR_REVERT], increases a city's [COLOR_HIGHLIGHT_TEXT]Great Person[COLOR_REVERT] birth rate even more and allows you to hire one [COLOR_HIGHLIGHT_TEXT]Priest[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WARI_COLCAS</Tag>
 		<English>Colcas</English>
 		<French>Colcas</French>
@@ -2346,20 +2330,20 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]State House[COLOR_REVERT], the American replacement for the [COLOR_BUILDING_TEXT]Meeting Hall[COLOR_REVERT], provides a free Statesman.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_AZTEC_CHINAMPA</Tag>
-		<English>Chinampa</English>
-		<French>Chinampa</French>
-		<German>Chinampa</German>
-		<Italian>Chinampa</Italian>
-		<Spanish>Chinampa</Spanish>
+		<Tag>TXT_KEY_BUILDING_TIWANAKU_SUKA_QULLU</Tag>
+		<English>Suka Qullu</English>
+		<French>Suka Qullu</French>
+		<German>Suka Qullu</German>
+		<Italian>Suka Qullu</Italian>
+		<Spanish>Suka Qullu</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_AZTEC_CHINAMPA_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Chinampa[COLOR_REVERT], the Aztec replacement for the [COLOR_BUILDING_TEXT]Granary[COLOR_REVERT], stores additional food after growth and provides a cultural bonus.</English>
-		<French>The [COLOR_BUILDING_TEXT]Chinampa[COLOR_REVERT], the Aztec replacement for the [COLOR_BUILDING_TEXT]Granary[COLOR_REVERT], stores additional food after growth and provides a cultural bonus.</French>
-		<German>The [COLOR_BUILDING_TEXT]Chinampa[COLOR_REVERT], the Aztec replacement for the [COLOR_BUILDING_TEXT]Granary[COLOR_REVERT], stores additional food after growth and provides a cultural bonus.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Chinampa[COLOR_REVERT], the Aztec replacement for the [COLOR_BUILDING_TEXT]Granary[COLOR_REVERT], stores additional food after growth and provides a cultural bonus.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Chinampa[COLOR_REVERT], the Aztec replacement for the [COLOR_BUILDING_TEXT]Granary[COLOR_REVERT], stores additional food after growth and provides a cultural bonus.</Spanish>
+		<Tag>TXT_KEY_BUILDING_TIWANAKU_SUKA_QULLU_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Suka Qullu[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides extra food along rivers..</English>
+		<French>The [COLOR_BUILDING_TEXT]Suka Qullu[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides extra food along rivers..</French>
+		<German>The [COLOR_BUILDING_TEXT]Suka Qullu[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides extra food along rivers..</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Suka Qullu[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides extra food along rivers..</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Suka Qullu[COLOR_REVERT], the Tiwanaku replacement for the [COLOR_BUILDING_TEXT]Aqueduct[COLOR_REVERT], provides extra food along rivers..</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_AZTEC_TZOMPANTLI</Tag>
@@ -2378,20 +2362,20 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Tzompantli[COLOR_REVERT], the Aztec replacement for the [COLOR_BUILDING_TEXT]Altar[COLOR_REVERT], reduces the anger duration from sacrificing population.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DUTCH_TRADING_FORT</Tag>
-		<English>Trading Fort</English>
-		<French>Trading Fort</French>
-		<German>Trading Fort</German>
-		<Italian>Trading Fort</Italian>
-		<Spanish>Trading Fort</Spanish>
+		<Tag>TXT_KEY_BUILDING_DUTCH_FACTORIJ</Tag>
+		<English>Factorij</English>
+		<French>Factorij</French>
+		<German>Factorij</German>
+		<Italian>Factorij</Italian>
+		<Spanish>Factorij</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_DUTCH_TRADING_FORT_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Trading Fort[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], is cheaper and increases a city's defenses against pre-gunpowder units.</English>
-		<French>The [COLOR_BUILDING_TEXT]Trading Fort[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], is cheaper and increases a city's defenses against pre-gunpowder units.</French>
-		<German>The [COLOR_BUILDING_TEXT]Trading Fort[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], is cheaper and increases a city's defenses against pre-gunpowder units.</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Trading Fort[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], is cheaper and increases a city's defenses against pre-gunpowder units.</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Trading Fort[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Trading Post[COLOR_REVERT], is cheaper and increases a city's defenses against pre-gunpowder units.</Spanish>
+		<Tag>TXT_KEY_BUILDING_DUTCH_FACTORIJ_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</English>
+		<French>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</French>
+		<German>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Factorij[COLOR_REVERT], the Dutch replacement for the [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT], provides 2 Merchant specialists.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ENGLISH_ASSEMBLY</Tag>
@@ -2952,6 +2936,54 @@
 		<German>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</German>
 		<Italian>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Stadiums[COLOR_REVERT] provide happiness and increase a city's cultural output with access to power. They also increase the happiness if you have access to [COLOR_HIGHLIGHT_TEXT]Hit Football Event[COLOR_REVERT].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_CALMECAC</Tag>
+		<English>Calmecac</English>
+		<French>Calmecac</French>
+		<German>Calmecac</German>
+		<Italian>Calmecac</Italian>
+		<Spanish>Calmecac</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_CALMECAC_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_AZTEC_CALMECAC_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZILIAN_SAMBADROME</Tag>
+		<English>Sambadrome</English>
+		<French>Sambadrome</French>
+		<German>Sambadrome</German>
+		<Italian>Sambadrome</Italian>
+		<Spanish>Sambadrome</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZILIAN_SAMBADROME_STRATEGY</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BRAZILIAN_SAMBADROME_PEDIA</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	
 	

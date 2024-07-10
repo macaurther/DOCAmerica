@@ -8686,6 +8686,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=66
+	FeatureType=FEATURE_ISLANDS, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -15406,7 +15407,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=33
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -16753,6 +16754,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=24
+	RiverNSDirection=2
+	isWOfRiver
 	BonusType=BONUS_POTATO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -17443,6 +17446,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=25
+	RiverNSDirection=0
+	isNOfRiver
+	RiverWEDirection=1
+	isWOfRiver
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot

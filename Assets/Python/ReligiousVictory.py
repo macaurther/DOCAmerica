@@ -100,7 +100,6 @@ dAdditionalPaganGoal = {
 	iKachina: FeatureCount(sum(iForest, iBog), 20),
 	iMidewiwin: All(
 		ResourceCount(iCorn, 4),
-		ImprovementCount(iFarm, 20),
 	),
 	iRodnovery: ResourceCount(iFur, 7),
 	iTeotlMaya: CombatFood(50),

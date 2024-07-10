@@ -49,27 +49,23 @@ tHolyCity = (58, 0)	# MacAurther: faux city to be the Holy City for all old worl
 ## Victory
 
 # first Mississippi goal: Control the Mississippi and Ohio Rivers by 500 AD
-tMississippiRiver = ((27, 79), (29, 85))
+tMississippiRiver = ((27, 79), (29, 93))
+lMississippiRiverExceptions = [(27, 93), (29, 90), (29, 89), (29, 84), (27, 80), (29, 79)]
 lMississippiRiverAdditional = [
-(27, 91), (28, 91), 
-(27, 90), (29, 90), 
-(28, 89), (30, 89), 
-(28, 88), (30, 88), 
-(28, 87), (30, 87), 
-(28, 86), (30, 86), 
-(26, 79), 
+(26, 90), 
+(26, 89), 
+(26, 79),
 (25, 78), (27, 78), 
-(24, 77), (26, 77), 
+(25, 77), (27, 77), 
 (24, 76), (26, 76), 
-(23, 75), (25, 75), 
+(25, 75), (27, 75), 
 (24, 74), (26, 74), 
-(24, 73), (26, 73), 
-(25, 72), 
+(25, 73),
 ]
 
-tOhioRiver = ((29, 80), (35, 82))
-lOhioRiverExceptions = [(32, 80), (35, 80)]
-lOhioRiverAdditional = [(32, 83), (35, 83)]
+tOhioRiver = ((29, 80), (36, 82))
+lOhioRiverExceptions = [(32, 80), (34, 82)]
+lOhioRiverAdditional = [(32, 83), (35, 83), (36, 83)]
 
 # second Norse goal: Settle Vinland by 1100 AD
 tVinland = ((52, 92), (55, 95))

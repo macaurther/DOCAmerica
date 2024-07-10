@@ -185,6 +185,7 @@ iInca : {
 		"Viracocha", # legendary
 		"Ninan Cuyochi", # 16th
 		"fPalla Chimpu Ocllo", # 16th
+		"Kronk", # Easter Egg
 	],
 	iGreatScientist : [
 		"Sinchi Roca", # 12th
@@ -193,10 +194,12 @@ iInca : {
 		"Inka Roq'a", # 14th
 		"Waskar Inka", # 16th
 		"Titu Cusi", # 16th
+		"fYzma", # Easter Egg
 	],
 	iGreatMerchant : [
 		"Tupaq Inka Yupanki", # 15th
 		"Felipillo", # 16th
+		"Pacha", # Easter Egg
 	],
 	iGreatEngineer : [
 		"Qhapaq Yunpanki Inka", # 14th
@@ -204,6 +207,7 @@ iInca : {
 	],
 	iGreatStatesman : [
 		u"Mayta Cápac", # 14th
+		"Kuzco", # Easter Egg
 		iRevolutionaryEra,
 		"Manco Inca Yupanqui", # 16th
 		"fMama Huaco", # 16th

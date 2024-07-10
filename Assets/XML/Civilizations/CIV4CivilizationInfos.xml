@@ -337,8 +337,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_AQUEDUCT</BuildingClassType>
-					<BuildingType>BUILDING_AZTEC_CHINAMPA</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_LIBRARY</BuildingClassType>
+					<BuildingType>BUILDING_AZTEC_CALMECAC</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_ALTAR</BuildingClassType>
@@ -2312,8 +2312,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_TRADING_POST</BuildingClassType>
-					<BuildingType>BUILDING_DUTCH_TRADING_FORT</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_PALISADE</BuildingClassType>
+					<BuildingType>BUILDING_DUTCH_FACTORIJ</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -3511,8 +3511,8 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
-					<BuildingType>BUILDING_TIWANAKU_KALASASAYA</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_AQUEDUCT</BuildingClassType>
+					<BuildingType>BUILDING_TIWANAKU_SUKA_QULLU</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
