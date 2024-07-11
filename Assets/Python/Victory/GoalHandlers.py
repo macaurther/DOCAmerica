@@ -181,9 +181,9 @@ class EventHandlerRegistry(object):
 				func(goal, unit)
 		
 		return greatPersonBorn
-	
+
 	def improvementBuilt(self, goal, applicable, func):
-		def improvementBuilt((iImprovement, iX, iY)):
+		def improvementBuilt((iImprovement, iOldImprovement, iX, iY)):	# MacAurther: Added old improvement argument
 			if plot(iX, iY).isOwned() and applicable(goal, plot(iX, iY).getOwner()):
 				func(goal, iImprovement)
 		

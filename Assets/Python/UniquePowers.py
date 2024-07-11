@@ -74,7 +74,7 @@ def iroquoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 
 @handler("improvementBuilt")
 # Russian UP
-def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):
+def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):	# MacAurther: Added old improvement argument
 	if iImprovement > -1 and iOldImprovement == iContactedTribe:
 		iPlayer = plot(iX, iY).getOwner()
 		if iPlayer > -1 and civ(iPlayer) == iRussia:

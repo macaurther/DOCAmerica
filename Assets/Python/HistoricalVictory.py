@@ -182,7 +182,11 @@ dGoals = {
 	iNorse: (
 		FirstSettle(plots.region(rGreenland).named(GREENLAND), by=1000),
 		FirstSettle(plots.rectangle(tVinland).named(VINLAND), by=1100),
-		Control(plots.rectangle(tDelaware).named(DELAWARE), at=1640),
+		All(
+			ImprovementCount(iLumbermill, 10),
+			Control(plots.rectangle(tDelaware).named(DELAWARE)),
+			by=1640,
+		),
 	),
 	iChimu: (
 		BuildingCount((iKancha, 2), by=1300),
