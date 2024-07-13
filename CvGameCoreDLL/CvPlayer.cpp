@@ -6424,6 +6424,9 @@ bool CvPlayer::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestV
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_PYRAMID_OF_THE_SUN, TIWANAKU)) return false;
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_KALASASAYA, TIWANAKU)) return false;
 
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_MACHU_PICCHU, INCA)) return false;
+		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_SACSAYHUAMAN, INCA)) return false;
+
 		else if (isHumanVictoryWonder(eBuilding, (BuildingTypes)BUILDING_CRISTO_REDENTOR, BRAZIL)) return false;
 	}
 

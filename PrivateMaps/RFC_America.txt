@@ -9786,7 +9786,7 @@ EndPlot
 BeginPlot
 	x=15,y=14
 	BonusType=BONUS_COPPER
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -10487,7 +10487,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=15
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
@@ -17430,7 +17430,7 @@ EndPlot
 BeginPlot
 	x=26,y=22
 	TerrainType=TERRAIN_MOORLAND
-	PlotType=2
+	PlotType=1
 EndPlot
 BeginPlot
 	x=26,y=23

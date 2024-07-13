@@ -617,6 +617,10 @@ dExtraAIUnits = CivDict({
 	iBrazil: {
 		iBase: 1,
 	},
+	iInca: {
+		iShock: 3,
+		iBase: 2,
+	},
 }, {})
 
 # Extra units if civ starts at war
@@ -630,8 +634,8 @@ dAdditionalUnits = CivDict({
 		iBase: 3,
 	},
 	iAztecs: {
-		iShock: 5,
-		iBase: 3,
+		iShock: 2,
+		iBase: 1,
 	},
 	iAmerica: {
 		iShock: 3,
@@ -831,11 +835,12 @@ dDefaultWonderPreferences = {
 dBuildingPreferences = {
 	iMaya : {
 		iTempleOfKukulkan: 40,
-		iMachuPicchu: -40,
 		iSerpentMound: -80,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
 		iKalasasaya : -40,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iZapotec : {
 		iSerpentMound: -80,
@@ -843,6 +848,8 @@ dBuildingPreferences = {
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
 		iKalasasaya : -40,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iTeotihuacan : {
 		iTlachihualtepetl: 40,
@@ -851,39 +858,53 @@ dBuildingPreferences = {
 		iGateOfTheSun: -100,
 		iPyramidOfTheSun: -80,
 		iKalasasaya : -40,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iTiwanaku : {
 		iGateOfTheSun: 40,
 		iPyramidOfTheSun: 40,
 		iKalasasaya : 40,
 		iSerpentMound: -40,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iWari : {
 		iSerpentMound: -40,
 		iPuebloBonito: -100,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iMississippi : {
 		iSerpentMound: 40,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iPuebloan : {
 		iPuebloBonito: 40,
 		iSerpentMound: -40,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iMuisca : {
 		iSerpentMound: -40,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iChimu : {
 		iSerpentMound: -40,
 		iGateOfTheSun: -80,
 		iPyramidOfTheSun: -80,
+		iMachuPicchu: -40,
+		iSacsayhuaman: -40,
 	},
 	iInca : {
 		iMachuPicchu: 40,

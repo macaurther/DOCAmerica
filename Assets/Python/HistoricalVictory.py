@@ -60,6 +60,7 @@ BAHIA =  "TXT_KEY_VICTORY_NAME_BAHIA"
 ALASKA = "TXT_KEY_VICTORY_NAME_ALASKA"
 NATO = "TXT_KEY_VICTORY_NAME_NATO"
 GREAT_PLAINS = "TXT_KEY_VICTORY_NAME_GREAT_PLAINS"
+ANDES = "TXT_KEY_VICTORY_NAME_ANDES"
 
 # area descriptors
 ANDEAN_COAST = "TXT_KEY_VICTORY_NAME_ANDEAN_COAST"
@@ -189,8 +190,8 @@ dGoals = {
 		),
 	),
 	iChimu: (
-		BuildingCount((iKancha, 2), by=1300),
-		Control(plots.core(iInca), subject=VASSALS, at=1475),
+		BuildingCount((iKancha, 3), by=1100),
+		Control(plots.region(rPeru).named(PERU), subject=VASSALS, at=1400),
 		CitySpecialistCount(capital().named(CAPITAL), iSpecialistGreatArtist, 3, by=1500),
 	),
 	iInuit: (
@@ -201,26 +202,34 @@ dGoals = {
 			(plots.region(rGreenland).named(KALAALLIT), 1),										# Greenland
 			by=1500
 		),
-		ResourceCount(resources(), 25, at=1600),
-		TerrainCount(sum(iOcean, iCoast, iArcticCoast, iFjord), 100, at=1700),
+		ResourceCount(resources(), 22, by=1600),
+		TerrainCount(sum(iOcean, iCoast, iArcticCoast, iFjord), 100, by=1700),
 	),
 	iInca: (
 		All(
-			BuildingCount(iTambo, 5),
+			TradeRouteCount(45),
 			Wonders(iSacsayhuaman, iMachuPicchu),
-			by=1550,
+			by=1400,
 		),
-		GoldAmount(2500, by=1550),
-		AreaPopulationPercent(plots.regions(*lSouthAmerica).named(SOUTH_AMERICA), 90, by=1600),
+		GoldAmount(2500, by=1500),
+		AreaPopulationPercent(plots.regions(*lAndes).named(ANDES), 100, at=1550),
 	),
 	iPurepecha: (
 		ControlledResourceCount(iFish, 2, by=1300),
-		UnitCount(sum(iMacana, iArcher), 25, by=1500),
-		NoCityLost(at=1600),
+		All(
+			UnitLevelCount(3, 10),
+			UnitCount(sum(iMacana, iArcher), 25),
+			by=1500,
+		),
+		All(
+			NoCityLost(),
+			Control(plots.region(rBajio).named(BAJIO)),
+			at=1600,
+		)
 	),
 	iAztecs: (
 		All(VassalCount(1), Control(plots.region(rBajio).named(BAJIO), subject=VASSALS), by=1450),
-		BestPopulationCity(start(iAztecs).named(TENOCHTITLAN), at=1520),
+		CityPopulation(start(iAztecs).named(TENOCHTITLAN), 20, at=1500),
 		EnslaveCount(50, by=1550),
 	),
 	iIroquois: (

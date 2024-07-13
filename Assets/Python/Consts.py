@@ -650,6 +650,7 @@ lUnitedStates = lContinentalUS + [rAlaska, rHawaii]
 lMexico = [rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, rYucatan]
 lBrazil = [rAmazonas, rPara, rBahia, rMinasGerais, rMatoGrosso, rParana,]
 lArgentina = [rChaco, rCuyo, rPampas, rPatagonia]
+lAndes = [rColombia, rPeru, rBolivia, rChile, rChaco]
 
 lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rChile, rParaguay, rUruguay] + lArgentina + lBrazil
 lCentralAmerica = [rMesoamerica, rCaribbean]
