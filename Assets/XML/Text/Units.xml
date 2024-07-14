@@ -1831,11 +1831,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARMED_BRAVE_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</English>
+		<French>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</French>
+		<German>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARMED_SLAVE</Tag>
@@ -1847,11 +1847,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARMED_SLAVE_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Armed Slave[COLOR_REVERT] are slaves who have taken up arms against their former masters.</English>
+		<French>The [COLOR_UNIT_TEXT]Armed Slave[COLOR_REVERT] are slaves who have taken up arms against their former masters.</French>
+		<German>The [COLOR_UNIT_TEXT]Armed Slave[COLOR_REVERT] are slaves who have taken up arms against their former masters.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Armed Slave[COLOR_REVERT] are slaves who have taken up arms against their former masters.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Armed Slave[COLOR_REVERT] are slaves who have taken up arms against their former masters.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_COMPAGNIES</Tag>
@@ -2354,14 +2354,6 @@
 		<Spanish>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</English>
 		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</French>
@@ -2410,14 +2402,6 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Kayak[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Canoe[COLOR_REVERT], can enter Ice.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_INUIT_KAYAK_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE</Tag>
 		<English>Eagle</English>
 		<French>Eagle</French>
@@ -2432,14 +2416,6 @@
 		<German>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Eagle[COLOR_REVERT], the Aztec replacement for the [COLOR_UNIT_TEXT]Pikeman[COLOR_REVERT], is available earlier, cheaper, weaker, requires Obsidian instead of Iron, and starts with Leadership.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_AZTEC_EAGLE_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
 	</TEXT>
 	
 	

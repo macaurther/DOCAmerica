@@ -775,11 +775,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Pyramid of the Sun[COLOR_REVERT] reduces the number of Great People needed to start a Golden Age.</English>
+		<French>The [COLOR_BUILDING_TEXT]Pyramid of the Sun[COLOR_REVERT] reduces the number of Great People needed to start a Golden Age.</French>
+		<German>The [COLOR_BUILDING_TEXT]Pyramid of the Sun[COLOR_REVERT] reduces the number of Great People needed to start a Golden Age.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Pyramid of the Sun[COLOR_REVERT] reduces the number of Great People needed to start a Golden Age.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Pyramid of the Sun[COLOR_REVERT] reduces the number of Great People needed to start a Golden Age.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PYRAMID_OF_THE_SUN_HELP</Tag>
@@ -966,14 +966,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Pueblo Bonito[COLOR_REVERT] adds additional food to all of your [COLOR_HIGHLIGHT_TEXT]Merchant[COLOR_REVERT] specialists.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PUEBLO_BONITO_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GREAT_GEOGLYPH</Tag>
 		<English>Great Geoglyph</English>
 		<French>Great Geoglyph</French>
@@ -990,14 +982,6 @@
 		<Spanish>The [COLOR_BUILDING_TEXT]Great Geoglyph[COLOR_REVERT] adds additional culture to all of your specialists.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_GREAT_GEOGLYPH_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_YACHAYWASI</Tag>
 		<English>Yachaywasi</English>
 		<French>Yachaywasi</French>
@@ -1012,14 +996,6 @@
 		<German>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</German>
 		<Italian>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</Italian>
 		<Spanish>[COLOR_BUILDING_TEXT]Yachaywasi[COLOR_REVERT] adds additional science to all of your specialists.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_YACHAYWASI_PEDIA</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ALCATRAZ</Tag>
