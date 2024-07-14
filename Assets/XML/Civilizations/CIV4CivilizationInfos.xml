@@ -1939,6 +1939,10 @@
 					<BuildingType>BUILDING_MEXICAN_CHARREADA</BuildingType>
 				</Building>
 				<Building>
+					<BuildingClassType>BUILDINGCLASS_FACTORY</BuildingClassType>
+					<BuildingType>BUILDING_MEXICAN_MAQUILADORA</BuildingType>
+				</Building>
+				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
 					<BuildingType>BUILDING_TEOTL_STEP_PYRAMID</BuildingType>
 				</Building>

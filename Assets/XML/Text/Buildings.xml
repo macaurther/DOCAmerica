@@ -2603,11 +2603,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VENEZUELAN_REFINERY_STRATEGY</Tag>
-		<English>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], increases wealth in cities with access to power and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</English>
-		<French>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], increases wealth in cities with access to power and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</French>
-		<German>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], increases wealth in cities with access to power and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</German>
-		<Italian>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], increases wealth in cities with access to power and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Italian>
-		<Spanish>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], increases wealth in cities with access to power and increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Spanish>
+		<English>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Steel Mill[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</English>
+		<French>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Steel Mill[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</French>
+		<German>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Steel Mill[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Steel Mill[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Refinery[COLOR_REVERT], the Venezuelan replacement for the [COLOR_BUILDING_TEXT]Steel Mill[COLOR_REVERT], increases the improved tile yield of [COLOR_HIGHLIGHT_TEXT]Oil[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ZAPOTEC_TOMB</Tag>
@@ -2984,6 +2984,22 @@
 		<German>TODO</German>
 		<Italian>TODO</Italian>
 		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICAN_MAQUILADORA</Tag>
+		<English>Maquiladora</English>
+		<French>Maquiladora</French>
+		<German>Maquiladora</German>
+		<Italian>Maquiladora</Italian>
+		<Spanish>Maquiladora</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MEXICAN_MAQUILADORA_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]Maquiladora[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper and increases the yield of foreign trade routes.</English>
+		<French>The [COLOR_BUILDING_TEXT]Maquiladora[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper and increases the yield of foreign trade routes.</French>
+		<German>The [COLOR_BUILDING_TEXT]Maquiladora[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper and increases the yield of foreign trade routes.</German>
+		<Italian>The [COLOR_BUILDING_TEXT]Maquiladora[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper and increases the yield of foreign trade routes.</Italian>
+		<Spanish>The [COLOR_BUILDING_TEXT]Maquiladora[COLOR_REVERT], the Mexican replacement for the [COLOR_BUILDING_TEXT]Factory[COLOR_REVERT], is cheaper and increases the yield of foreign trade routes.</Spanish>
 	</TEXT>
 	
 	

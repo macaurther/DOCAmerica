@@ -522,8 +522,8 @@ iNumBonusVarieties = 3
 (iDyeCochineal, iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 226
-# Buildings (120)
+iNumBuildings = 227
+# Buildings (121)
 #				2				3				4				5				6				7				8				9				10
 (iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iTipi,
 iMarket,		iWeaver,		iStoneworks,	iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			
@@ -534,9 +534,9 @@ iCalmecac,		iGrocer, 		iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMa
 iSilversmith,	iStarFort,		iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		
 iThingvellir,	iWheelwright,	iPostOffice,	iTambo,			iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,			
 iMagazine,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			
-iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		
-iNewspaper,		iSupermarket,	iHospital,		iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		
-iRefinery,		iCoalPlant,		iHydroPlant,	iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
+iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		
+iLibrary,		iNewspaper,		iSupermarket,	iHospital,		iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,
+iFactory,		iMaquiladora,	iCoalPlant,		iHydroPlant,	iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 

@@ -2617,5 +2617,15 @@
 			<KFM/>
 			<Button>Art/Structures/Buildings/Sambadrome/Button_Carnival.dds</Button>
 		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_MEXICAN_MAQUILADORA</Type>
+			<LSystem>LSYSTEM_4x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>2.09</fScale>
+			<fInterfaceScale>0.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Factory/Factory.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Maquiladora.dds</Button>
+		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>
