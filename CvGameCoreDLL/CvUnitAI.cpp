@@ -18728,13 +18728,18 @@ bool CvUnitAI::AI_rebuildMove(int iMinimumCost)
 // MacAurther
 bool CvUnitAI::AI_PickupImmigrantsMove()
 {
-	CvPlot* pPlot = AI_GetClosestEdge();
+	CvPlot* pEdge;
+	if(!AI_GetClosestEdge(pEdge))
+	{
+		// Ship can't get to edge, i.e. stuck in lake or blockaded
+		return false;
+	}
 
 	// This is the Immigrant ship now
 	GET_PLAYER(getOwnerINLINE()).setImmigrantShip(this);
 
 	// See if you're already on the edge
-	if (pPlot == plot())
+	if (pEdge == plot())
 	{
 		// Just wait a turn to get some Immigrants
 		getGroup()->pushMission(MISSION_SKIP);
@@ -18742,22 +18747,49 @@ bool CvUnitAI::AI_PickupImmigrantsMove()
 	}
 	
 	// Got get you some Immigrants
-	getGroup()->pushMission(MISSION_MOVE_TO, pPlot->getX(), pPlot->getY());
+	getGroup()->pushMission(MISSION_MOVE_TO, pEdge->getX(), pEdge->getY());
 	return true;
 }
 
-CvPlot* CvUnitAI::AI_GetClosestEdge()
+bool CvUnitAI::AI_GetClosestEdge(CvPlot*& pClosestEdgePlot)
 {
-	// MacAurther TODO: This might not be truely the closest edge. But let's try it
-	int iX = 0;
-	int iY = getY();
-
-	if (getX() > EARTH_X / 2)
+	int iEastPathTurns = 0;
+	int iWestPathTurns = 0;
+	CvPlot* pPlotEast = GC.getMapINLINE().plotINLINE(EARTH_X - 1, getY());	
+	CvPlot* pPlotWest = GC.getMapINLINE().plotINLINE(0, getY());
+	
+	bool bEastPath = generatePath(pPlotEast, MOVE_MAX_MOVES | MOVE_IGNORE_DANGER, false, &iEastPathTurns);
+	bool bWestPath = generatePath(pPlotWest, MOVE_MAX_MOVES | MOVE_IGNORE_DANGER, false, &iWestPathTurns);
+	
+	if (bEastPath && !bWestPath)
 	{
-		iX = EARTH_X - 1;
+		// Use East Path
+		pClosestEdgePlot = pPlotEast;
+		return true;
+	}
+	else if (!bEastPath && bWestPath)
+	{
+		// Use West Path
+		pClosestEdgePlot = pPlotWest;
+		return true;
+	}
+	else if (bEastPath && bWestPath)
+	{
+		// Use Shorter Path
+		if (iEastPathTurns <= iWestPathTurns)
+		{
+			// Prefer East if they're the same
+			pClosestEdgePlot = pPlotEast;
+		}
+		else
+		{
+			pClosestEdgePlot = pPlotWest;
+		}
+		return true;
 	}
 
-	return GC.getMapINLINE().plotINLINE(iX, iY);
+	// No path
+	return false;
 }
 
 bool CvUnitAI::AI_populateMove()

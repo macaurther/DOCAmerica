@@ -222,7 +222,7 @@ protected:
 
 	// MacAurther
 	bool AI_PickupImmigrantsMove();
-	CvPlot* AI_GetClosestEdge();
+	bool AI_GetClosestEdge(CvPlot*& pClosestEdge);
 	bool AI_populateMove();
 
 	bool AI_followBombard();

@@ -12158,10 +12158,12 @@ void CvPlot::updateFortClaims(PlayerTypes ePlayer)
 			}
 		}
 
-		// If no worker was found, give the fort to a unit on that tile (MacAurther TODO: This could fail sometimes)
+		// If no worker was found, give the fort to a unit on that tile
 		if(!bFoundWorker && getNumUnits() > 0)
 		{
-			ePlayer = getUnitByIndex(0)->getOwner();
+			CvUnit* pLoopUnit = ::getUnit(headUnitNode()->m_data);
+			if(pLoopUnit) ePlayer = pLoopUnit->getOwner();
+			
 		}
 	}
 

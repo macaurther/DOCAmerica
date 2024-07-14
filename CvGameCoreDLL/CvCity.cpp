@@ -2544,7 +2544,7 @@ bool CvCity::canCreate(ProjectTypes eProject, bool bContinue, bool bTestVisible)
 
 		if(iNewX < 0 || iNewX >= EARTH_X || iNewY < 0 || iNewY >= EARTH_Y) return false;
 
-		// Make sure the player is moving to a valid tile. 6 criteria (MacAurther TODO: maybe add more):
+		// Make sure the player is moving to a valid tile. 6 criteria:
 		//   the tile is owned by the migrating player
 		CvPlot* pNewPlot = GC.getMap().plot(iNewX, iNewY);
 		if (pNewPlot->getOwner() != getOwner()) return false;

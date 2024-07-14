@@ -2521,12 +2521,12 @@ def getHelpClassicLiteratureDone3(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 
 	iSpecialist = CvUtil.findInfoTypeNum(gc.getSpecialistInfo, gc.getNumSpecialistInfos(), 'SPECIALIST_SCIENTIST', )
-	iGreatLibrary = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_GREAT_LIBRARY')
+	iYachaywasi = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_YACHAYWASI')
 
 	szCityName = u""
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
-		if (loopCity.isHasBuilding(iGreatLibrary)):	# MacAurther TODO
+		if (loopCity.isHasBuilding(iYachaywasi)):
 			szCityName = loopCity.getNameKey()
 			break
 				
@@ -2541,11 +2541,11 @@ def canApplyClassicLiteratureDone3(argsList):
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
-	iGreatLibrary = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_GREAT_LIBRARY')
+	iYachaywasi = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_YACHAYWASI')
 
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
-		if (loopCity.isHasBuilding(iGreatLibrary)):	# MacAurther TODO
+		if (loopCity.isHasBuilding(iYachaywasi)):
 			return true
 				
 		(loopCity, iter) = player.nextCity(iter, false)
@@ -2558,11 +2558,11 @@ def applyClassicLiteratureDone3(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 
 	iSpecialist = CvUtil.findInfoTypeNum(gc.getSpecialistInfo, gc.getNumSpecialistInfos(), 'SPECIALIST_SCIENTIST', )
-	iGreatLibrary = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_GREAT_LIBRARY')
+	iYachaywasi = CvUtil.findInfoTypeNum(gc.getBuildingInfo, gc.getNumBuildingInfos(), 'BUILDING_YACHAYWASI')
 
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
-		if (loopCity.isHasBuilding(iGreatLibrary)):	# MacAurther TODO
+		if (loopCity.isHasBuilding(iYachaywasi)):
 			loopCity.changeFreeSpecialistCount(iSpecialist, 1)
 			return
 				
