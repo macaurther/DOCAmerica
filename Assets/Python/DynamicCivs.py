@@ -116,7 +116,7 @@ lPeoplesRepublicAdj = []
 lIslamicRepublicOf = []
 
 dEmpireThreshold = {
-	iInca : 3,
+	iInca : 5,
 }
 
 lChristianity = [iCatholicism, iOrthodoxy, iProtestantism]
