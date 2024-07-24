@@ -1290,6 +1290,9 @@ class Mercenary:
 		
 		# Apply of the promotions to the mercenary in the game
 		self.applyPromotions()
+		
+		# Publish event to track spent Immigration
+		events.fireEvent("immigrationSpent", iPlayer, iImmigrationCost)
 
 	# Returns the list of current promotions the mercenary has. If the objUnit is set to
 	# a non-None value then the method will rebuild the promotion list and return the

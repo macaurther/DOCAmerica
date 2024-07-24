@@ -314,13 +314,21 @@ dGoals = {
 		TradeGold(1000, by=1870),
 	),
 	iAmerica: (
-		BuildingCount(iStateHouse, 50, by=1959),
-		BuildingCount(wonders(), 15, by=1975),
-		All(
-			CommercePercent(95, subject=ALLIES),
-			PowerPercent(95, subject=ALLIES),
-			by=1990,
+		AllowNone(
+			group(iCivGroupEurope).named(EUROPEAN),
+			plots.regions(*lAmerica).named(AMERICA),
+			at=1900,
 		),
+		All(
+			ImmigrationSpent(10000),
+			BuildingCount(wonders(), 10),
+			by=1920
+		),
+		All(
+			FreedSlaves(50),
+			BuildingCount(iStateHouse, 50),
+			by=1950
+		)
 	),
 	iHaiti: (
 		FirstDiscover(iEmancipation),
@@ -328,9 +336,9 @@ dGoals = {
 		Control(plots.region(rCaribbean).named(CARIBBEAN), at=1890),
 	),
 	iArgentina: (
-		GoldenAges(2, by=1930),
-		CityCultureLevel(start(iArgentina).named(BUENOS_AIRES), iCultureLevelLegendary, by=1960),
-		GoldenAges(6, by=2000),
+		GoldenAges(2, by=1880),
+		CityCultureLevel(start(iArgentina).named(BUENOS_AIRES), iCultureLevelLegendary, by=1900),
+		GoldenAges(6, by=1950),
 	),
 	iMexico: (
 		BuildingCount(state_religion_building(cathedral).named(STATE_RELIGION_CATHEDRAL), 3, by=1880),

@@ -315,4 +315,11 @@ class EventHandlerRegistry(object):
 		
 		return migration
 	
+	def immigrationSpent(self, goal, applicable, func):
+		def immigrationSpent((iPlayer, iImmigrationSpent)):
+			if applicable(goal, iPlayer):
+				func(goal, iImmigrationSpent)
+		
+		return immigrationSpent
+	
 event_handler_registry = EventHandlerRegistry()

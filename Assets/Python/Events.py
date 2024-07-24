@@ -75,6 +75,7 @@ events.addEvent("EndGameTurn")
 events.addEvent("freedSlaves")
 events.addEvent("migration")
 events.addEvent("combatResult")
+events.addEvent("immigrationSpent")
 
 
 @handler("buildingBuilt")

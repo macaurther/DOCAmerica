@@ -852,3 +852,16 @@ class Migrations(TrackRequirement):
 		TrackRequirement.__init__(self, *parameters, **options)
 		
 		self.accumulated("migration")
+
+class ImmigrationSpent(TrackRequirement):
+
+	TYPES = (COUNT,)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_SPENT"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_IMMIGRATION_SPENT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_IMMIGRATION_SPENT"
+	
+	def __init__(self, *parameters, **options):
+		TrackRequirement.__init__(self, *parameters, **options)
+		
+		self.accumulated("immigrationSpent")
