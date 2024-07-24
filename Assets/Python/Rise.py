@@ -47,12 +47,6 @@ lDynamicReligionCivs = [
 ]
 
 lInvasionCivs = [
-	iSpain,
-	iPortugal,
-	iEngland,
-	iFrance,
-	iNetherlands,
-	iRussia,
 ]
 
 dClearedForBirth = {
