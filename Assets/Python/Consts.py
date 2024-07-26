@@ -641,6 +641,8 @@ rMesoamerica,   rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPe
 rBahia,         rMinasGerais,   rMatoGrosso,    rParana,        rChile, 		rParaguay, 		rUruguay, 		rChaco,         rCuyo,          rPampas, 		
 rPatagonia, 	rOldWorld		) = range(iNumRegions)
 
+lCanadaAtlanticCoast = [rQuebec, rNewFoundland]
+lCanadaPacificCoast = [rNorthCascadia]
 lCanada = [rYukon, rNunavut, rNorthCascadia, rNorthPlains, rOntario, rQuebec, rNewFoundland]
 lThirteenColonies = [rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain]
 lSouthernUS = [rCoastalPlain, rFlorida, rTexas, rDeepSouth]

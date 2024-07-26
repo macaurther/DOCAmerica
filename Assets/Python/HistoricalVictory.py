@@ -146,11 +146,7 @@ dGoals = {
 		),
 	),
 	iMississippi: (
-		All(
-			AreaPercent((plots.rectangle(tMississippiRiver).without(lMississippiRiverExceptions) + plots.of(lMississippiRiverAdditional)).named(MISSISSIPPI_RIVER), 50),
-			AreaPercent((plots.rectangle(tOhioRiver).without(lOhioRiverExceptions) + plots.of(lOhioRiverAdditional)).named(OHIO_RIVER), 50),
-			by=1000,
-		),
+		TerrainCount(iWideRiver, 20, by=1000),
 		All(
 			BuildingCount(iPlatformMound, 5),
 			Wonder(iSerpentMound),
@@ -283,8 +279,8 @@ dGoals = {
 	),
 	iFrance: (
 		ControlledResourceCount(iFur, 15, by=1750),
-		AreaPercent(plots.regions(*lNorthAmerica).named(NORTH_AMERICA), 50, subject=VASSALS, at=1800),
-		UnitCount(iWorker, 1, by=1968),
+		ImprovementCount(iContactedTribe, 20, by=1775),
+		TerrainCount(iWideRiver, 40, by=1800),
 	),
 	iNetherlands: (
 		CitySpecialistCount(city(tNewAmsterdam).named(NEW_AMSTERDAM), iSpecialistGreatMerchant, 1, at=1660),
@@ -343,7 +339,7 @@ dGoals = {
 	iMexico: (
 		BuildingCount(state_religion_building(cathedral).named(STATE_RELIGION_CATHEDRAL), 3, by=1880),
 		GreatGenerals(3, by=1900),
-		BestPopulationCity(start(iMexico).named(MEXICO_CITY), at=1900),
+		BestPopulationCity(start(iMexico).named(MEXICO_CITY), at=1950),
 	),
 	iColombia: (
 		AllowNone(
@@ -363,35 +359,35 @@ dGoals = {
 		PopulationCityCount(15, 1, by=1900),
 	),
 	iBrazil: (
-		ImprovementCount((iPlantation, 8), (iPasture, 4), at=1880),
-		Wonders(iCristoRedentor),
 		All(
-			ImprovementCount(iForestPreserve, 30),
+			AreaPercent(plots.regions(*lBrazil).named(BRAZIL), 90, subject=VASSALS),
+			FreedSlaves(50),
+			by=1880
+		),
+		Wonders(iCristoRedentor, by=1931),
+		All(
+			ImprovementCount(iForestPreserve, 20),
 			CityBuilding(capital().named(CAPITAL), iNationalPark),
-			by=1900,
+			by=1950,
 		),
 	),
 	iVenezuela: (
 		BuildingCount(iCatholicCathedral, 1, by=1860),
+		GreatGenerals(2, by=1900),
 		ControlledResourceCount(iOil, 5, by=1950),
-		All(
-			AttitudeCount(AttitudeTypes.ATTITUDE_FRIENDLY, 5, civs=group(iCivGroupNATO).named(NATO), bIndependent=True, at=1990),
-			AttitudeCount(AttitudeTypes.ATTITUDE_FURIOUS, 5, civs=group(iCivGroupNATO).named(NATO), bIndependent=True, at=2000),
-		),
 	),
 	iCanada: (
 		All(
-			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.of(lAtlanticCoast).named(ATLANTIC_COAST)),
-			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.of(lPacificCoast).named(PACIFIC_COAST)),
+			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.all().coastal().regions(*lCanadaAtlanticCoast).named(ATLANTIC_COAST)),
+			RouteConnection([iRouteRailroad], capital().named(CAPITAL), plots.all().coastal().regions(*lCanadaPacificCoast).named(PACIFIC_COAST)),
 			by=1920,
 		),
 		All(
 			Control((plots.regions(*lCanada)).named(CITIES_IN_CANADA)),
 			AreaPercent((plots.regions(*lCanada)).named(CANADIAN_TERRITORY), 90),
-			NoCityConquered(),
-			by=1950,
+			by=1920,
 		),
-		BrokeredPeace(12, by=2000),
+		HappiestTurns(25, by=1950),
 	),
 }
 

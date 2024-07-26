@@ -123,6 +123,11 @@ def nativeCityConquered(iPlayer, pCity):
 		if player(iPlayer).hasCivic(iPlunder2):
 			iConquerImmigration = 20 + pCity.getPopulation() * 5
 			iConquerImmigration *= (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
+			
+			# England UP
+			if civ(iPlayer) == iEngland:
+				iConquerImmigration *= 2
+			
 			gc.getPlayer(iPlayer).changeImmigration(iConquerImmigration)
 			message(iPlayer, "TXT_KEY_CONQUER_IMMIGRATION", iConquerImmigration)
 		

@@ -24336,7 +24336,7 @@ BeginPlot
 	x=35,y=81
 	isNOfRiver
 	RiverWEDirection=3
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
 BeginPlot

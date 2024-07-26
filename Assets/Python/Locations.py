@@ -48,25 +48,6 @@ tHolyCity = (58, 0)	# MacAurther: faux city to be the Holy City for all old worl
 
 ## Victory
 
-# first Mississippi goal: Control the Mississippi and Ohio Rivers by 500 AD
-tMississippiRiver = ((27, 79), (29, 93))
-lMississippiRiverExceptions = [(27, 93), (29, 90), (29, 89), (29, 84), (27, 80), (29, 79)]
-lMississippiRiverAdditional = [
-(26, 90), 
-(26, 89), 
-(26, 79),
-(25, 78), (27, 78), 
-(25, 77), (27, 77), 
-(24, 76), (26, 76), 
-(25, 75), (27, 75), 
-(24, 74), (26, 74), 
-(25, 73),
-]
-
-tOhioRiver = ((29, 80), (36, 82))
-lOhioRiverExceptions = [(32, 80), (34, 82)]
-lOhioRiverAdditional = [(32, 83), (35, 83), (36, 83)]
-
 # second Norse goal: Settle Vinland by 1100 AD
 tVinland = ((52, 92), (55, 95))
 # third Norse goal: Settle Delaware by 1640 AD
@@ -96,15 +77,6 @@ lLakeErieAdditional = [(34, 85)]
 tLakeOntario = ((38, 85), (40, 87))
 lLakeOntarioExceptions = [(40, 85)]
 lLakeOntarioAdditional = [(39, 88)]
-
-# first Canadian goal: connect your capital to an Atlantic and a Pacific port by 1920 AD
-lAtlanticCoast = [
-(48, 86), (49, 87), (50, 87), (51, 88), 
-(47, 88), (48, 88), (48, 89), (49, 89), (49, 90), (48, 91), (49, 92),
-(49, 94), (50, 94), (51, 94), (51, 95), (52, 95), (52, 96), (51, 96), 
-(52, 96), (50, 97), (49, 97), (49, 98), (48, 98), (48, 99), (48, 100), 
-]
-lPacificCoast = [(10, 102), (11, 103), (12, 102), (11, 104), (10, 105), ]
 
 ### Tiles ###
 tTenochtitlan = (13, 65)

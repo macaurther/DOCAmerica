@@ -109,7 +109,13 @@ def extraCultureOnFound(city):
 def extraCultureOnFound(city):
 	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
 	if iExpansionCivic in [iHomesteads2, iHomesteads3]:
-		player(city.getOwner()).changeImmigration(int(50 * (3 - gc.getGame().getGameSpeedType())))
+		iSettleImmigration = int(50 * (3 - gc.getGame().getGameSpeedType()))	# Scale based on game speed
+		
+		# England UP
+		if civ(city.getOwner()) == iEngland:
+			iSettleImmigration *= 2
+		
+		player(city.getOwner()).changeImmigration(iSettleImmigration)
 
 ### COMBAT RESULT ###
 		

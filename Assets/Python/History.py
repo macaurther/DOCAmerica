@@ -101,6 +101,10 @@ def conquistadors(iTeamX, iHasMetTeamY):
 			
 			iContactImmigration *= (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
 			
+			# England UP
+			if civ(iOldWorldPlayer) == iEngland:
+				iContactImmigration *= 2
+			
 			data.dFirstContactConquerors[iNewWorldCiv] = True
 			
 			events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
