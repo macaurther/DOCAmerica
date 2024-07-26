@@ -595,6 +595,10 @@
 					<UnitType>UNIT_CANADIAN_CORVETTE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_RANGER</UnitClassType>
+					<UnitType>UNIT_CANADIAN_FACTOR</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
 					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>

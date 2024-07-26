@@ -454,19 +454,19 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 153
-# Land Units (99)
+iNumUnits = 154
+# Land Units (100)
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
-iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iParatrooper,	iSpy, 			
-iSisqeno,       iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		
-iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iMohawk,		iArquebusier,	iArmedBrave,	iArmedSlave,	
-iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iMaceman,		iAucac,			
-iJaguar,		iMacana,		iPikeAndShot,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,iPikeman,		
-iEagle,			iArcher,		iPicta,			iSlinger,		iLongbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	iAtlatlist,		
-iHolkan,		iGuecha,		iCrossbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		iHorseArcher,	iSwiftArrow,	
-iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	iCarabineer,	
-iGrenadierCavalry,iCavalry,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			
+iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iFactor,		iParatrooper,	
+iSpy, 			iSisqeno,       iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		
+iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iMohawk,		iArquebusier,	iArmedBrave,	
+iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iMaceman,		
+iAucac,			iJaguar,		iMacana,		iPikeAndShot,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,
+iPikeman,		iEagle,			iArcher,		iPicta,			iSlinger,		iLongbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	
+iAtlatlist,		iHolkan,		iGuecha,		iCrossbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		iHorseArcher,	
+iSwiftArrow,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	
+iCarabineer,	iGrenadierCavalry,iCavalry,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			
 # Naval Units (27)
 #				2				3				4				5				6				7				8				9				10
 iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			
