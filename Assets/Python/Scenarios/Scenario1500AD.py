@@ -7,45 +7,58 @@ from Core import *
 
 lCivilizations = [
 	Civilization(
+		iZapotec,
+		iGold=550,
+		lCivics=[iAristocracy1, iBureaucracy1, iCraftsmen1, iRedistribution1, iHarmony1, iCooperation1],
+		techs=techs.column(6).including(iArtisanry)
+	),
+	Civilization(
 		iMuisca,
-		iGold=200,
-		lCivics=[iMerchants1],
-		techs=techs.column(2)
+		iGold=175,
+		lCivics=[iAristocracy1, iBureaucracy1, iCraftsmen1, iRedistribution1, iHarmony1, iCooperation1],
+		techs=techs.column(6).including(iArtisanry, iLaw).without(iNavigation, iTrapping, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNorse,
-		iGold=50,
-		lCivics=[],
-		techs=techs.column(4).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism)
+		iGold=75,
+		iImmigration=300,
+		lCivics=[iViceroyalty2, iEncomienda2, iPlunder2, iConquest2],
+		techs=techs.column(9).without(iCartography, iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing, iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iInuit,
-		iGold=25,
-		lCivics=[iCouncil1],
-		techs=techs.column(2)
+		iGold=50,
+		lCivics=[iDespotism1, iHarmony1, iDiffusion1],
+		techs=techs.column(3).including(iCeremony, iSeafaring).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism)
 	),
 	Civilization(
 		iInca,
-		iGold=700,
-		lCivics=[iAristocracy1, iSlavery1, iMerchants1, iCasteSystem1, iConquest1],
-		techs=techs.column(2).including(iArtisanry, iMasonry).without(iSailing)
+		iGold=1000,
+		lCivics=[iGodKing1, iCustomaryLaw1, iMita1, iRedistribution1, iCosmopolis1, iConquest1],
+		techs=techs.column(6)
+	),
+	Civilization(
+		iPurepecha,
+		iGold=450,
+		lCivics=[iAristocracy1, iCustomaryLaw1, iCraftsmen1, iRedistribution1, iCosmopolis1, iConquest1],
+		techs=techs.column(6).without(iTrapping)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism1, iSlavery1, iMerchants1, iCasteSystem1, iTributaries1],
-		techs=techs.column(2).including(iCalendar).without(iNavigation)
+		lCivics=[iAristocracy1, iCustomaryLaw1, iCaptives1, iPlunder1, iOrganizedReligion1, iDiffusion1],
+		techs=techs.column(6).including(iNobility).without(iAstronomy, iScholarship, iNavigation)
 	),
 	Civilization(
 		iIroquois,
-		iGold=600,
-		lCivics=[iConfederacy1, iCouncil1],
-		techs=techs.column(2).including(iCalendar).without(iNavigation)
+		iGold=300,
+		lCivics=[iChiefdom1, iConfederacy1, iCommune1, iHarmony1, iCooperation1],
+		techs=techs.column(3).including(iProperty, iCeremony).without(iEarthworks, iIrrigation, iPathfinding)
 	),
 	Civilization(
 		iSioux,
 		iGold=100,
-		lCivics=[iHarmony1],
+		lCivics=[iChiefdom1, iHarmony1, iNomads1],
 		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(

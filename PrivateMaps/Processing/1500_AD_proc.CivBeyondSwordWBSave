@@ -1,19 +1,3 @@
-Platy Builder
-Version=11
-
-BeginGame
-	Calendar=CALENDAR_DEFAULT
-	Option=GAMEOPTION_AGGRESSIVE_AI
-	Option=GAMEOPTION_NO_TECH_BROKERING
-	GameTurn=181
-	StartYear=1500
-	Description=TXT_KEY_RHYES_WB_DESC
-	ModPath=Mods\DOCAmerica
-EndGame
-
-BeginMap
-EndMap
-
 ### Plot Info ###
 BeginPlot
 	x=1,y=56
@@ -3387,6 +3371,8 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_NORSE_THINGVELLIR
+		BuildingType=BUILDING_TEMBLEQUE_AQUEDUCT
+		BuildingType=BUILDING_PLAGUE
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=1112
 		EndCulture

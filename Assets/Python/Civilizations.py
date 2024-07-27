@@ -100,6 +100,7 @@ class Civilization(object):
 	
 		self.iLeader = kwargs.get("iLeader")
 		self.iGold = kwargs.get("iGold")
+		self.iImmigration = kwargs.get("iImmigration")
 		self.iStateReligion = kwargs.get("iStateReligion")
 		self.iAdvancedStartPoints = kwargs.get("iAdvancedStartPoints")
 		
@@ -138,6 +139,9 @@ class Civilization(object):
 		
 		if self.iGold is not None:
 			self.player.changeGold(scale(self.iGold))
+		
+		if self.iImmigration is not None:
+			self.player.changeImmigration(scale(self.iImmigration))
 		
 		if self.iStateReligion is not None:
 			iOldStateReligion = self.player.getStateReligion()
@@ -217,7 +221,7 @@ lCivilizations = [
 	Civilization(
 		iMuisca,
 		iGold=200,
-		techs=techs.column(3).including(iAlloys, iMasonry, iSmelting).without(iTrapping, iIrrigation, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
+		techs=techs.column(3).including(iAlloys, iMasonry, iSmelting).without(iTrapping, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iNorse,
@@ -613,6 +617,13 @@ dExtraAIUnits = CivDict({
 		iBase: 3,
 		iShock: 2,
 		iSiege: 2,
+	},
+	iAztecs: {
+		iDefend: 2,
+		iBase: 1,
+		iShock: 2,
+		iHarass: 1,
+		iSiege: 1,
 	},
 	iBrazil: {
 		iBase: 1,

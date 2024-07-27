@@ -1186,7 +1186,7 @@ def getCivicStability(iPlayer, civics=None):
 	
 	# Colony
 	#	Executive
-	if iViceroyality2 in civics:
+	if iViceroyalty2 in civics:
 		if iCharterColony2 in civics: iStability -= 2
 		if iCommonLaw2 in civics: iStability -= 2
 		if iEncomienda2 in civics: iStability += 2

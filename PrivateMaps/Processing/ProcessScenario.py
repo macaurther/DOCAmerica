@@ -25,6 +25,7 @@ keepTags = {
 "BuildingType=",
 "ReligionType=",
 "HolyCityReligionType=",
+"FreeSpecialistType=",
 "BeginCulture",
 "Civilization=",
 "EndCulture",
