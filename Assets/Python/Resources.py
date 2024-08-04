@@ -86,16 +86,6 @@ dSpawnResourcesDict = {
 dRemovedResourcesDict = {
 }
 
-dRoutesDict = {
-}
-
-dSpawnRoutes = {
-}
-
-# there must be stuff like this elsewhere, maybe barbs?
-dPlotTypesDict = {
-}
-
 dFeaturesDict = {
 	(8, 92) : (1850, iFloodPlains), # California
 	(9, 92) : (1850, iFloodPlains), # California
@@ -113,10 +103,10 @@ dRemovedFeaturesDict = {
 }
 
 dConquerorPlotTypesDict = {
-}
-
-dConquerorRemovedFeaturesDict = {
-	(28, 44) : iInca,
+	(24, 36) : (iInca, PlotTypes.PLOT_HILLS),
+	(28, 28) : (iInca, PlotTypes.PLOT_HILLS),
+	(29, 25) : (iInca, PlotTypes.PLOT_HILLS),
+	(28, 21) : (iInca, PlotTypes.PLOT_HILLS),
 }
 
 
@@ -192,9 +182,6 @@ def setupScenarioResources():
 		if iTurn <= iStartTurn:
 			for x, y in lFeatures:
 				plot(x, y).setFeatureType(-1, 0)
-	
-	if year(700) <= iStartTurn:
-		plot(41, 58).setFeatureType(-1, 0)
 				
 	for iCiv, lPlots in dConquerorPlotTypes:
 		if year(dFall[iCiv]) <= iStartTurn:

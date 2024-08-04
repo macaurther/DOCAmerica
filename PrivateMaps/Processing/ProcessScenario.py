@@ -1,4 +1,6 @@
-scenario = "1500_AD"
+import sys
+
+scenario = sys.argv[1]
 
 sourceFile = open(scenario + "_raw.CivBeyondSwordWBSave", "r")
 

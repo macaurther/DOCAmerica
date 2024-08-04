@@ -78,7 +78,7 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		return
 	
 	#if year().between(1490, 1800):
-	if civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:
+	if year().before(1700) and civ(iTeamX) in lBioNewWorld and civ(iHasMetTeamY) not in lBioNewWorld:	# MacAurther: don't trigger late conquerors
 		iNewWorldPlayer = iTeamX
 		iOldWorldPlayer = iHasMetTeamY
 		

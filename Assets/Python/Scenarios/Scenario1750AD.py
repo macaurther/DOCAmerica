@@ -8,48 +8,78 @@ from Core import *
 	
 lCivilizations = [
 	Civilization(
+		iNorse,
+		iGold=75,
+		iImmigration=300,
+		lCivics=[iGovernors2, iAdmiralty2, iIndenturedServitude2, iFactory2, iHaven2, iOutposts2],
+		techs=techs.column(12),
+	),
+	Civilization(
+		iInuit,
+		iGold=50,
+		lCivics=[iDespotism1, iHarmony1, iDiffusion1],
+		techs=techs.column(6),
+	),
+	Civilization(
+		iIroquois,
+		iGold=300,
+		lCivics=[iCouncil1, iConfederacy1, iCaptives1, iMerchants1, iAcculturation1, iCooperation1],
+		techs=techs.column(6),
+	),
+	Civilization(
+		iSioux,
+		iGold=100,
+		lCivics=[iChiefdom1, iCustomaryLaw1, iCaptives1, iMerchants1, iHarmony1, iNomads1],
+		techs=techs.column(6),
+	),
+	Civilization(
 		iSpain,
 		iLeader=iPhilip,
 		iGold=400,
+		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[],
-		techs=techs.column(10).including(iCombinedArms, iGeography, iHorticulture),
+		lCivics=[iViceroyalty2, iRoyalColony2, iEncomienda2, iPlunder2, iJesuits2, iConquest2],
+		techs=techs.column(13),
 		dAttitudes={iPortugal: 2}
-	),
-	Civilization(
-		iFrance,
-		iLeader=iLouis,
-		iGold=400,
-		iStateReligion=iCatholicism,
-		lCivics=[],
-		techs=techs.column(11).without(iUrbanPlanning, iEconomics),
-		dAttitudes={iEngland: -4, iNetherlands: 2}
-	),
-	Civilization(
-		iEngland,
-		iLeader=iVictoria,
-		iGold=600,
-		iStateReligion=iProtestantism,
-		lCivics=[],
-		techs=techs.column(11).without(iUrbanPlanning, iHorticulture),
-		dAttitudes={iFrance: -4, iPortugal: 2}
 	),
 	Civilization(
 		iPortugal,
 		iLeader=iJoao,
 		iGold=450,
+		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[],
-		techs=techs.column(10).including(iGeography, iHorticulture),
+		lCivics=[iProprietaries2, iAdmiralty2, iSlavery2, iFactory2, iProfiteering2, iHomesteads2],
+		techs=techs.column(13),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
+	),
+	Civilization(
+		iEngland,
+		iLeader=iVictoria,
+		iGold=600,
+		iImmigration=300,
+		iStateReligion=iProtestantism,
+		lCivics=[iGovernors2, iCommonLaw2, iSlavery2, iMercantilism2, iHaven2, iProvidence2],
+		techs=techs.column(13),
+		dAttitudes={iFrance: -4, iPortugal: 2}
+	),
+	Civilization(
+		iFrance,
+		iLeader=iLouis,
+		iGold=400,
+		iImmigration=300,
+		iStateReligion=iCatholicism,
+		lCivics=[iGovernors2, iCharterColony2, iSlavery2, iFactory2, iHaven2, iOutposts2],
+		techs=techs.column(13),
+		dAttitudes={iEngland: -4, iNetherlands: 2}
 	),
 	Civilization(
 		iNetherlands,
 		iLeader=iWilliam,
 		iGold=800,
+		iImmigration=200,
 		iStateReligion=iProtestantism,
-		lCivics=[],
-		techs=techs.column(11).without(iHorticulture, iScientificMethod),
+		lCivics=[iTrustees2, iTradingCompany2, iSlavery2, iMercantilism2, iProfiteering2, iOutposts2],
+		techs=techs.column(13),
 		dAttitudes={iFrance: 2, iPortugal: -2}
 	),
 	Civilization(

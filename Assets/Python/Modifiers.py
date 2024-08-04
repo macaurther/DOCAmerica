@@ -65,7 +65,7 @@ iModifierBuildingCost, iModifierInflationRate, iModifierGreatPeopleThreshold, iM
 DMN = 75	# Distance Maintenance Native
 DME = 50	# Distance Maintenance Euro
 NCN = 100	# Num Cities Native
-NCE = 90	# Num Cities Euro
+NCE = 80	# Num Cities Euro
 
 # 				            MAY TEO ZAP TIW WAR MIS PUE MUI NOR CHI INU INC PUR AZT IRO SIO SPA POR ENG FRA NET HAW RUS AME HAI ARG MEX COL PER VEN BRA CAN     IND IND IND NAT BAR 
 

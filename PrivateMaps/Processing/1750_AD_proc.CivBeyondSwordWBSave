@@ -1,19 +1,3 @@
-Platy Builder
-Version=11
-
-BeginGame
-	Calendar=CALENDAR_DEFAULT
-	Option=GAMEOPTION_AGGRESSIVE_AI
-	Option=GAMEOPTION_NO_TECH_BROKERING
-	GameTurn=321
-	StartYear=1750
-	Description=TXT_KEY_RHYES_WB_DESC
-	ModPath=Mods\DOCAmerica
-EndGame
-
-BeginMap
-EndMap
-
 ### Plot Info ###
 BeginPlot
 	x=1,y=56
@@ -123,6 +107,7 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_JEWELLER
 		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_PLAGUE
 		BuildingType=BUILDING_ANGAKKUQ_QARGI
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		BeginCulture
@@ -317,7 +302,7 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_DRUIDIC_NEMETON
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=914
 		EndCulture
@@ -402,7 +387,6 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=646
 		EndCulture
@@ -647,7 +631,6 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=204
@@ -813,7 +796,6 @@ BeginPlot
 		BuildingType=BUILDING_MAGAZINE
 		BuildingType=BUILDING_FLOATING_GARDENS
 		BuildingType=BUILDING_HUEY_TEOCALLI
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=188
 		EndCulture
@@ -993,8 +975,6 @@ BeginPlot
 		BuildingType=BUILDING_ESTATE
 		BuildingType=BUILDING_ARMOURY
 		BuildingType=BUILDING_TLACHIHUALTEPETL
-		BuildingType=BUILDING_TEMBLEQUE_AQUEDUCT
-		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
@@ -1501,7 +1481,8 @@ BeginPlot
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_ALTAR
 		BuildingType=BUILDING_AQUEDUCT
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_PLAGUE
+		BuildingType=BUILDING_DRUIDIC_NEMETON
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=116
 			Civilization=CIVILIZATION_SPAIN, Culture=233
@@ -1604,6 +1585,7 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_MAGAZINE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=403
@@ -1689,7 +1671,7 @@ BeginPlot
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_MAGAZINE
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_DRUIDIC_NEMETON
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=970
 		EndCulture
@@ -1894,7 +1876,6 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
-		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=441
@@ -2052,7 +2033,7 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_GREAT_GEOGLYPH
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_DRUIDIC_NEMETON
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=10
 			Civilization=CIVILIZATION_INCA, Culture=741
@@ -2185,7 +2166,6 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=42
 		EndCulture
@@ -2257,6 +2237,7 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
@@ -2350,7 +2331,6 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_SCHOOLHOUSE
 		BuildingType=BUILDING_LIGHTHOUSE
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=82
 		EndCulture
@@ -2444,7 +2424,7 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_DRUIDIC_NEMETON
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=547
@@ -2502,6 +2482,7 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_SILVERSMITH
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=353
@@ -2644,8 +2625,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=200
 		EndCulture
-		YearFounded=950
-		YearAcquired=950
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -2797,12 +2778,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Tegucigalpa
 		CityPopulation=2
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1578
-		YearAcquired=1578
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -2853,7 +2833,6 @@ BeginPlot
 		BuildingType=BUILDING_SCHOOLHOUSE
 		BuildingType=BUILDING_MAGAZINE
 		BuildingType=BUILDING_TEMPLE_OF_KUKULKAN
-		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
@@ -3041,12 +3020,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Nouvelle Orl&#233;ans
 		CityPopulation=4
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=200
 		EndCulture
-		YearFounded=1718
-		YearAcquired=1718
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -3069,12 +3047,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Baton Rouge
 		CityPopulation=2
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
-		YearFounded=1699
-		YearAcquired=1699
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -3155,7 +3132,7 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIGHTHOUSE
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_PLAGUE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=39
 		EndCulture
@@ -3247,7 +3224,7 @@ BeginPlot
 		BuildingType=BUILDING_CONSTABULARY
 		BuildingType=BUILDING_ESTATE
 		BuildingType=BUILDING_MAGAZINE
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_DRUIDIC_NEMETON
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
@@ -3396,7 +3373,7 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_PLAGUE
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=859
 			Civilization=CIVILIZATION_SPAIN, Culture=4143
@@ -3601,7 +3578,7 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_CATHOLICISM
+		BuildingType=BUILDING_DRUIDIC_NEMETON
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=1348
 		EndCulture
@@ -3657,7 +3634,6 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Fort Saint-Louis
 		CityPopulation=1
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
@@ -3934,12 +3910,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Havana
 		CityPopulation=6
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=100
 		EndCulture
-		YearFounded=1515
-		YearAcquired=1515
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -3982,12 +3957,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Bogot&#225
 		CityPopulation=2
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1538
-		YearAcquired=1538
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -4058,8 +4032,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=150
 		EndCulture
-		YearFounded=1000
-		YearAcquired=1000
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -4120,7 +4094,6 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=10
 		EndCulture
@@ -4179,14 +4152,13 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
-		CityName=Barranquilla
+		CityName=Barranquillla
 		CityPopulation=2
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1629
-		YearAcquired=1629
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -4239,7 +4211,6 @@ BeginPlot
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIGHTHOUSE
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
@@ -4324,12 +4295,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Kingston
 		CityPopulation=3
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
-		YearFounded=1692
-		YearAcquired=1692
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -4515,12 +4485,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Savannah
 		CityPopulation=3
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=150
 		EndCulture
-		YearFounded=1733
-		YearAcquired=1733
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -4577,8 +4546,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=150
 		EndCulture
-		YearFounded=1150
-		YearAcquired=1150
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -4607,7 +4576,6 @@ BeginPlot
 		CityPopulation=1
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
-		ReligionType=RELIGION_CATHOLICISM
 		YearFounded=1748
 		YearAcquired=1748
 		PreviousOwner=CIVILIZATION_PORTUGAL
@@ -4769,6 +4737,7 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=120
@@ -4823,30 +4792,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=37,y=50
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_NETHERLANDS
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_NETHERLANDS
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_NETHERLANDS
-		CityName=Willemstad
-		CityPopulation=2
-		ReligionType=RELIGION_PROTESTANTISM
-		BeginCulture
-			Civilization=CIVILIZATION_NETHERLANDS, Culture=50
-		EndCulture
-		YearFounded=1634
-		YearAcquired=1634
-		PreviousOwner=CIVILIZATION_NETHERLANDS
-	EndCity
-EndPlot
-BeginPlot
 	x=37,y=55
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -4865,12 +4810,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Port-au-Prince
 		CityPopulation=5
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=300
 		EndCulture
-		YearFounded=1749
-		YearAcquired=1749
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -5030,6 +4974,7 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=551
@@ -5058,10 +5003,8 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Baltimore
 		CityPopulation=5
-		ReligionType=RELIGION_PROTESTANTISM
-		ReligionType=RELIGION_CATHOLICISM
-		YearFounded=1729
-		YearAcquired=1729
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -5195,12 +5138,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Caracas
 		CityPopulation=2
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1567
-		YearAcquired=1567
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -5268,13 +5210,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_IROQUOIS
 		CityName=Onondaga
-		CityPopulation=3
-		BuildingType=BUILDING_CHIEFTANS_HUT
+		CityPopulation=1
 		BeginCulture
 			Civilization=CIVILIZATION_IROQUOIS, Culture=100
 		EndCulture
-		YearFounded=1450
-		YearAcquired=1450
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_IROQUOIS
 	EndCity
 EndPlot
@@ -5331,6 +5272,7 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_ARMOURY
+		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
@@ -5386,7 +5328,6 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_JEWELLER
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=491
 		EndCulture
@@ -5592,8 +5533,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=100
 		EndCulture
-		YearFounded=1100
-		YearAcquired=1100
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -5661,12 +5602,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Montr&#233;al
 		CityPopulation=5
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=150
 		EndCulture
-		YearFounded=1642
-		YearAcquired=1642
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -5770,14 +5710,12 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=San Juan
-		CityPopulation=4
-		BuildingType=BUILDING_LA_FORTALEZA
-		ReligionType=RELIGION_CATHOLICISM
+		CityPopulation=2
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1521
-		YearAcquired=1521
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -5812,7 +5750,6 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=23
 		EndCulture
@@ -5885,7 +5822,6 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Georgetown
 		CityPopulation=1
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=50
 		EndCulture
@@ -5912,14 +5848,13 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
-		CityName=Castries
+		CityName=Petit-Goâve
 		CityPopulation=1
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
-		YearFounded=1650
-		YearAcquired=1650
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -6016,7 +5951,6 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Bar Harbor
 		CityPopulation=2
-		ReligionType=RELIGION_PROTESTANTISM
 		YearFounded=1750
 		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_ENGLAND
@@ -6142,7 +6076,6 @@ BeginPlot
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_NORSE_THINGVELLIR
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=726
 		EndCulture
@@ -6166,35 +6099,6 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
-	x=47,y=40
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_NETHERLANDS
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_NETHERLANDS
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_DUTCH_FLUYT
-		UnitOwner=CIVILIZATION_NETHERLANDS
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_NETHERLANDS
-		CityName=Paramaribo
-		CityPopulation=3
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
-		ReligionType=RELIGION_PROTESTANTISM
-		BeginCulture
-			Civilization=CIVILIZATION_NETHERLANDS, Culture=100
-		EndCulture
-		YearFounded=1603
-		YearAcquired=1603
-		PreviousOwner=CIVILIZATION_NETHERLANDS
-	EndCity
-EndPlot
-BeginPlot
 	x=47,y=47
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -6207,14 +6111,13 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
-		CityName=Bridgetown
+		CityName=Cambridge
 		CityPopulation=1
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=50
 		EndCulture
-		YearFounded=1628
-		YearAcquired=1628
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -6357,12 +6260,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Cayenne
 		CityPopulation=1
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
-		YearFounded=1664
-		YearAcquired=1664
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -6421,12 +6323,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Halifax
 		CityPopulation=2
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
-		YearFounded=1749
-		YearAcquired=1749
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -6474,7 +6375,6 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=329
 		EndCulture
@@ -6547,7 +6447,6 @@ BeginPlot
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
-		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=3
 		EndCulture
@@ -6641,12 +6540,11 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=St. John's
 		CityPopulation=2
-		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
-		YearFounded=1630
-		YearAcquired=1630
+		YearFounded=1750
+		YearAcquired=1750
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -6708,7 +6606,8 @@ BeginPlot
 		BuildingType=BUILDING_ESTATE
 		BuildingType=BUILDING_NORSE_THINGVELLIR
 		BuildingType=BUILDING_MANUFACTORY
-		ReligionType=RELIGION_PROTESTANTISM
+		BuildingType=BUILDING_TEMBLEQUE_AQUEDUCT
+		BuildingType=BUILDING_LA_FORTALEZA
 		FreeSpecialistType=SPECIALIST_GREAT_ENGINEER
 		FreeSpecialistType=SPECIALIST_GREAT_ENGINEER
 		BeginCulture

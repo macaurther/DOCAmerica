@@ -989,8 +989,8 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 		if g_bDebug:
 			CvUtil.pyPrint(pPlayer.getName() + " Gold: " + str(pPlayer.getGold()) + " is human: " + str(pPlayer.isHuman()))     
 
-		# if the player is not human then run the think method
-		if not pPlayer.isHuman():
+		# if the player is not human and not independent then run the think method
+		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent:
 			if pPlayer.isAlive():
 				if iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod):
 					print("CvImmigrationManager::onBeginPlayerTurn(): AI thinking (Mercenaries), iPlayer: " + str(iPlayer))

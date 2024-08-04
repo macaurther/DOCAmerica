@@ -1982,6 +1982,10 @@ class Turn(int):
 		
 	def between(self, start, end):
 		return turn(start) <= self <= turn(end)
+	
+	# MacAurther: Added before method
+	def before(self, end):
+		return self < turn(end)
 		
 	def deviate(self, variation, seed = None):
 		variation = turns(variation)
