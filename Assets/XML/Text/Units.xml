@@ -688,11 +688,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOUNTED_BRAVE</Tag>
 		<English>Mounted Brave</English>
-		<French>
-			<Text>Cavalerie sioux</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
+		<French>Mounted Brave</French>
 		<German>Mounted Brave</German>
 		<Italian>Mounted Brave</Italian>
 		<Spanish>Mounted Brave</Spanish>
@@ -2338,7 +2334,7 @@
 		<Spanish>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW</Tag>
+		<Tag>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW</Tag>
 		<English>Swift Arrow</English>
 		<French>Swift Arrow</French>
 		<German>Swift Arrow</German>
@@ -2346,12 +2342,12 @@
 		<Spanish>Swift Arrow</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW_STRATEGY</Tag>
-		<English>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</English>
-		<French>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</French>
-		<German>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</German>
-		<Italian>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</Italian>
-		<Spanish>The Swift Arrow, the Sioux replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</Spanish>
+		<Tag>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW_STRATEGY</Tag>
+		<English>The Swift Arrow, the Lakota replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</English>
+		<French>The Swift Arrow, the Lakota replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</French>
+		<German>The Swift Arrow, the Lakota replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</German>
+		<Italian>The Swift Arrow, the Lakota replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</Italian>
+		<Spanish>The Swift Arrow, the Lakota replacement for the Horse Archer, is stronger on open terrain and starts with Mobility.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>

@@ -46,7 +46,7 @@ LEADER_DATES = {
 	iMontezuma: 1440,
 	# Iroquois
 	iHiawatha: 1350,
-	# Sioux
+	# Lakota
 	iSittingBull: 1450,
 	# Spain
 	iIsabella: 1480,

@@ -389,13 +389,13 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_GRANARY</BuildingClass>
-			<Type>BUILDING_SIOUX_TIPI</Type>
-			<Description>TXT_KEY_BUILDING_SIOUX_TIPI</Description>
-			<Civilopedia>TXT_KEY_BUILDING_SIOUX_TIPI_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_SIOUX_TIPI_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_SIOUX_TIPI_HELP</Help>
+			<Type>BUILDING_LAKOTA_TIPI</Type>
+			<Description>TXT_KEY_BUILDING_LAKOTA_TIPI</Description>
+			<Civilopedia>TXT_KEY_BUILDING_LAKOTA_TIPI_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_LAKOTA_TIPI_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_LAKOTA_TIPI_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_SIOUX_TIPI</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_LAKOTA_TIPI</ArtDefineTag>
 			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iCost>50</iCost>

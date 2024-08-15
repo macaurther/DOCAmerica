@@ -3137,13 +3137,13 @@
 			<CivilizationActionSound>AS3D_RUSSIA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_SIOUX</Type>
-			<Description>TXT_KEY_CIV_SIOUX_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_SIOUX_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_SIOUX_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_SIOUX_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_SIOUX</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_SIOUX</ArtDefineTag>
+			<Type>CIVILIZATION_LAKOTA</Type>
+			<Description>TXT_KEY_CIV_LAKOTA_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_LAKOTA_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_LAKOTA_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_LAKOTA_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_LAKOTA</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_LAKOTA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
 			<PaganReligion>PAGAN_RELIGION_WOCEKIYA</PaganReligion>
@@ -3191,7 +3191,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
-					<BuildingType>BUILDING_SIOUX_TIPI</BuildingType>
+					<BuildingType>BUILDING_LAKOTA_TIPI</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -3201,7 +3201,7 @@
 			<Units>
 				<Unit>
 					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
-					<UnitType>UNIT_SIOUX_SWIFT_ARROW</UnitType>
+					<UnitType>UNIT_LAKOTA_SWIFT_ARROW</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>

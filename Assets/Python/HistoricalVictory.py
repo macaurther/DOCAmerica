@@ -239,7 +239,7 @@ dGoals = {
 			at=1650),
 		ControlledResourceCount(iFur, 10, by=1700),
 	),
-	iSioux: (
+	iLakota: (
 		Migrations(30, by=1700),
 		AverageCultureAmount(500, by=1750),
 		AllowNone(group(iCivGroupAmerica).named(EUROPEAN), plots.regions([rNorthPlains, rGreatPlains]).named(GREAT_PLAINS), at=1890),

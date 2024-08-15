@@ -223,9 +223,9 @@
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
-            <Type>ART_DEF_CIVILIZATION_SIOUX</Type>
-            <Button>Art/Interface/Buttons/Civilizations/Sioux.dds</Button>
-            <Path>Art/Interface/TeamColor/FlagDECAL_Sioux.dds</Path>
+            <Type>ART_DEF_CIVILIZATION_LAKOTA</Type>
+            <Button>Art/Interface/Buttons/Civilizations/Lakota.dds</Button>
+            <Path>Art/Interface/TeamColor/FlagDECAL_Lakota.dds</Path>
             <bWhiteFlag>1</bWhiteFlag>
         </CivilizationArtInfo>
 	</CivilizationArtInfos>

@@ -21,7 +21,7 @@ iInca :			(24, 29), # Cuzco
 iPurepecha :	(10, 68), # Tzintzuntzan
 iAztecs :		(13, 65), # Tenochtitlan
 iIroquois :		(39, 85), # Onondaga
-iSioux :		(28, 89), # Southern Minnesota
+iLakota :		(28, 89), # Southern Minnesota
 iSpain :		(40, 54), # Santo Domingo
 iPortugal :		(39, 16), # Sao Paulo
 iEngland :		(38, 77), # Jamestown
@@ -70,7 +70,7 @@ iInca :		    ((20, 27),	(27, 31)),
 iPurepecha :	((8, 64),	(11, 70)),
 iAztecs :		((12, 64),	(14, 66)),
 iIroquois :	    ((34, 84),	(41, 87)),
-iSioux :		((21, 87),	(30, 92)),
+iLakota :		((21, 87),	(30, 92)),
 iSpain :		((39, 54),	(41, 56)),
 iPortugal :	    ((38, 15),	(46, 17)),
 iEngland :	    ((37, 76),	(39, 78)),
@@ -124,7 +124,7 @@ iInca :		    ((20, 27),	(27, 31)),
 iPurepecha :	((8, 66),	(11, 69)),
 iAztecs :		((12, 63),	(16, 66)),
 iIroquois :	    ((36, 84),	(40, 87)),
-iSioux :		((25, 89),	(28, 92)),
+iLakota :		((25, 89),	(28, 92)),
 iSpain : 		((0, 0), 	(0, 0)),	# No core for Europeans
 iPortugal : 	((0, 0), 	(0, 0)),	# No core for Europeans
 iEngland : 		((0, 0), 	(0, 0)),	# No core for Europeans
@@ -144,7 +144,7 @@ iCanada :		((35, 86),	(51, 94)),
 })
 
 dPeriodCoreArea = {
-iSioux :		((21, 90),	(25, 95)),
+iLakota :		((21, 90),	(25, 95)),
 }
 
 dCoreAreaExceptions = CivDict({
@@ -181,7 +181,7 @@ iInca :		    ((20, 19),	(29, 41)),
 iPurepecha :	((10, 65), 	(12, 68)),
 iAztecs :		((9, 59),	(19, 69)),
 iIroquois :		((33, 84),	(41, 88)),
-iSioux :		((20, 88),	(28, 95)),
+iLakota :		((20, 88),	(28, 95)),
 iSpain :		((40, 54),  (40, 54) ),
 iPortugal :		((39, 16),  (39, 16) ),
 iEngland :		((38, 77),  (38, 77) ),
@@ -234,7 +234,7 @@ iPurepecha :	((10, 65), 	(12, 68)),
 iAztecs :		((13, 64),  (13, 64)),
 iSpain :		((40, 54),  (40, 54)),
 iIroquois :		((39, 85),  (39, 85)),
-iSioux :		((20, 88),	(28, 95)),
+iLakota :		((20, 88),	(28, 95)),
 iPortugal :		((39, 16),  (39, 16)),
 iEngland :		((38, 77),  (38, 77)),
 iFrance :		((46, 92),  (46, 92)),

@@ -53,7 +53,7 @@ dResourcesDict = {
 	(24, 88)  : (1550,  iHorse),  	# Nebraska
 	(28, 63)  : (1550,  iHorse),  	# Cuba
 	(31, 79)  : (1550,  iHorse),  	# Kentucky
-	(37, 75)  : (1550,  iHorse),  	# North Carolina
+	(38, 75)  : (1550,  iHorse),  	# North Carolina
 	(45, 91)  : (1550,  iHorse),  	# Quebec
 	(20, 11)  : (1550,  iHorse),  	# Argentina
 	(24, 28)  : (1550,  iHorse),  	# Peru
@@ -64,7 +64,7 @@ dResourcesDict = {
 	(56, 27)  : (1550,  iHorse),  	# Brazil
 	(32, 72)  : (1600,  iCotton),  	# Georgia
 	(35, 73)  : (1600,  iCotton),  	# South Carolina
-	(35, 75)  : (1600,  iCotton),  	# North Carolina
+	(36, 75)  : (1600,  iCotton),  	# North Carolina
 	(29, 73)  : (1600,  iCotton), 	# Alabama
 	(28, 77)  : (1600,  iCotton),  	# Mississippi
 	(22, 76)  : (1600,  iCotton),  	# Texas
@@ -78,6 +78,9 @@ dResourcesDict = {
 	(37, 74)  : (1600,  iTobacco), 	# South Carolina
 	(29, 75)  : (1600,  iTobacco), 	# Alabama
 	(33, 80)  : (1600,  iTobacco), 	# Kentucky
+	
+	(32, 73)  : (1950,  iCow), 		# Easter Egg: Butts County Dairy
+	(32, 73)  : (1980,  iTimber), 	# Easter Egg: Butts County Pine Plantation
 }
 
 dSpawnResourcesDict = {

@@ -24299,7 +24299,7 @@ EraTypes CvPlayer::getSoundtrackEra()
 				case PUEBLOAN:
 				case IROQUOIS:
 				case INUIT:
-				case SIOUX:
+				case LAKOTA:
 					return (EraTypes)ERA_NATIVE;
 				case NORSE:
 					return (EraTypes)ERA_NORSE;
@@ -25553,7 +25553,7 @@ int CvPlayer::getRegionPowers() const
 	case PUEBLOAN:
 	case IROQUOIS:
 	case MISSISSIPPI:
-	case SIOUX:
+	case LAKOTA:
 		return RP_WILDERNESS;
 		break;
 	default:

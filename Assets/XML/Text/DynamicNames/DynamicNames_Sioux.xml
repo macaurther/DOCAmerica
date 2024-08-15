@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Sioux -->
+<!-- Lakota -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_DESC</Tag>
-		<English>The Sioux</English>
-		<French>The Sioux</French>
-		<German>The Sioux</German>
-		<Italian>The Sioux</Italian>
-		<Spanish>The Sioux</Spanish>
+		<Tag>TXT_KEY_CIV_LAKOTA_DESC</Tag>
+		<English>The Lakota</English>
+		<French>The Lakota</French>
+		<German>The Lakota</German>
+		<Italian>The Lakota</Italian>
+		<Spanish>The Lakota</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_PEOPLES</Tag>
-		<English>Santee Peoples</English>
-		<French>Santee Peoples</French>
-		<German>Santee Peoples</German>
-		<Italian>Santee Peoples</Italian>
-		<Spanish>Santee Peoples</Spanish>
+		<Tag>TXT_KEY_CIV_LAKOTA_PEOPLES</Tag>
+		<English>Dakota Peoples</English>
+		<French>Dakota Peoples</French>
+		<German>Dakota Peoples</German>
+		<Italian>Dakota Peoples</Italian>
+		<Spanish>Dakota Peoples</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_DEFAULT</Tag>
-		<English>The Sioux</English>
-		<French>The Sioux</French>
-		<German>The Sioux</German>
-		<Italian>The Sioux</Italian>
-		<Spanish>The Sioux</Spanish>
+		<Tag>TXT_KEY_CIV_LAKOTA_DEFAULT</Tag>
+		<English>The Lakota</English>
+		<French>The Lakota</French>
+		<German>The Lakota</German>
+		<Italian>The Lakota</Italian>
+		<Spanish>The Lakota</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_COUNCIL</Tag>
+		<Tag>TXT_KEY_CIV_LAKOTA_COUNCIL</Tag>
 		<English>Seven Council Fires</English>
 		<French>Seven Council Fires</French>
 		<German>Seven Council Fires</German>
@@ -34,7 +34,7 @@
 		<Spanish>Seven Council Fires</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_COMMUNIST</Tag>
+		<Tag>TXT_KEY_CIV_LAKOTA_COMMUNIST</Tag>
 		<English>Republic of %s1</English>
 		<French>
 			<Text>R&#233;publique d'%s1</Text>
@@ -58,7 +58,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_FASCIST</Tag>
+		<Tag>TXT_KEY_CIV_LAKOTA_FASCIST</Tag>
 		<English>%s2 State</English>
 		<French>
 			<Text>&#201;tat %s2</Text>
@@ -82,19 +82,19 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_ADJECTIVE</Tag>
-		<English>Sioux</English>
-		<French>Sioux</French>
-		<German>Sioux</German>
-		<Italian>Sioux</Italian>
-		<Spanish>Sioux</Spanish>
+		<Tag>TXT_KEY_CIV_LAKOTA_ADJECTIVE</Tag>
+		<English>Lakota</English>
+		<French>Lakota</French>
+		<German>Lakota</German>
+		<Italian>Lakota</Italian>
+		<Spanish>Lakota</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_SIOUX_SHORT_DESC</Tag>
-		<English>Sioux</English>
-		<French>Sioux</French>
-		<German>Sioux</German>
-		<Italian>Sioux</Italian>
-		<Spanish>Sioux</Spanish>
+		<Tag>TXT_KEY_CIV_LAKOTA_SHORT_DESC</Tag>
+		<English>Lakota</English>
+		<French>Lakota</French>
+		<German>Lakota</German>
+		<Italian>Lakota</Italian>
+		<Spanish>Lakota</Spanish>
 	</TEXT>
 </Civ4GameText>

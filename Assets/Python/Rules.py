@@ -154,7 +154,7 @@ def captureCannon(winningUnit, losingUnit):
 @handler("combatResult")
 def captureAdvancedUnit(winningUnit, losingUnit):
 	# Wilderness RP
-	if civ(winningUnit) in (iIroquois, iPuebloan, iMississippi, iSioux):
+	if civ(winningUnit) in (iIroquois, iPuebloan, iMississippi, iLakota):
 		if losingUnit.getUnitType() in lWildernessRPGunUnits:
 			captureUnit(losingUnit, winningUnit, iArmedBrave, 50)
 		elif losingUnit.getUnitType() in lWildernessRPHorseUnits:
@@ -346,7 +346,7 @@ def migrateCity(iGameTurn, iPlayer):
 				pNewCity.setHasRealBuilding(iBuilding, True)
 	
 		# Assign culture to new city
-		if civ(iPlayer) == iSioux:
+		if civ(iPlayer) == iLakota:
 			iCulture += 10 * (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
 		pNewCity.setCulture(iPlayer, iCulture, True)
 	else:

@@ -6521,13 +6521,13 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_HORSE_ARCHER</Class>
-			<Type>UNIT_SIOUX_SWIFT_ARROW</Type>
+			<Type>UNIT_LAKOTA_SWIFT_ARROW</Type>
 			<Combat>UNITCOMBAT_LIGHT_CAVALRY</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ATTACK</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW</Description>
-			<Civilopedia>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SIOUX_SWIFT_ARROW_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW</Description>
+			<Civilopedia>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<bMilitaryHappiness>1</bMilitaryHappiness>
 			<bMilitarySupport>1</bMilitarySupport>

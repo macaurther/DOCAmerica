@@ -27,7 +27,7 @@ lCivilizations = [
 		techs=techs.column(6),
 	),
 	Civilization(
-		iSioux,
+		iLakota,
 		iGold=100,
 		lCivics=[iChiefdom1, iCustomaryLaw1, iCaptives1, iMerchants1, iHarmony1, iNomads1],
 		techs=techs.column(6),

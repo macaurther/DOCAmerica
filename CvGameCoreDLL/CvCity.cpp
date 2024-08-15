@@ -4675,7 +4675,7 @@ int CvCity::determineArtStyleType() const
 		}
 		else if (eRegionGroup == REGION_GROUP_NORTH_AMERICA)
 		{
-			return GC.getCivilizationInfo(SIOUX).getArtStyleType();
+			return GC.getCivilizationInfo(LAKOTA).getArtStyleType();
 		}
 		else if (eRegionGroup == REGION_GROUP_CENTRAL_AMERICA)
 		{

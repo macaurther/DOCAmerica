@@ -17,7 +17,7 @@ iNumCivs = 38
 #				2				3				4				5				6				7				8				9				10
 (iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	iNorse,			
-iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSioux,			iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
+iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iLakota,			iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
 iWari,			iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
@@ -36,7 +36,7 @@ lBirthOrder = [
 	iPurepecha,
 	iAztecs,
 	iIroquois,
-	iSioux,
+	iLakota,
 	iSpain,
 	iPortugal,
 	iEngland,
@@ -70,7 +70,7 @@ iNumCivGroups = 6
 
 dCivGroups = {
 iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
-iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iSioux, iZapotec, iPurepecha],
+iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iLakota, iZapotec, iPurepecha],
 iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela],
 iCivGroupNATO : [iAmerica, iCanada, iNorse, iEngland, iFrance, iSpain, iPortugal, iNetherlands],
 iCivGroupMesoamerica : [iMaya, iAztecs, iTeotihuacan, iZapotec, iPurepecha],
@@ -85,10 +85,10 @@ iNumTechGroups = 3
 dTechGroups = {
 iTechGroupWestern : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia, iAmerica, iCanada],
 iTechGroupLatinAmerica: [iArgentina, iMexico, iColombia, iBrazil, iHaiti, iPeru, iVenezuela],
-iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iSioux, iHawaii, iZapotec, iPurepecha],
+iTechGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iLakota, iHawaii, iZapotec, iPurepecha],
 }
 
-lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iSioux, iHawaii, iZapotec, iPurepecha]
+lBioNewWorld = [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iLakota, iHawaii, iZapotec, iPurepecha]
 lRevolutionaries = [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru]	# Europeans get expeditionary force at the spawn of these civs
 
 #for messages
@@ -139,7 +139,7 @@ lNeighbours = [
 	(iWari, iMuisca),
 	(iMississippi, iAmerica),
 	(iMississippi, iIroquois),
-	(iMississippi, iSioux),
+	(iMississippi, iLakota),
 	(iPuebloan, iMexico),
 	(iMuisca, iColombia),
 	(iNorse, iInuit),
@@ -158,16 +158,16 @@ lNeighbours = [
 	(iAztecs, iAmerica),
 	(iAztecs, iMexico),
 	(iAztecs, iColombia),
-	(iIroquois, iSioux),
+	(iIroquois, iLakota),
 	(iIroquois, iEngland),
 	(iIroquois, iFrance),
 	(iIroquois, iNetherlands),
 	(iIroquois, iAmerica),
 	(iIroquois, iCanada),
-	(iSioux, iEngland),
-	(iSioux, iFrance),
-	(iSioux, iAmerica),
-	(iSioux, iCanada),
+	(iLakota, iEngland),
+	(iLakota, iFrance),
+	(iLakota, iAmerica),
+	(iLakota, iCanada),
 	(iSpain, iFrance),
 	(iSpain, iPortugal),
 	(iEngland, iNetherlands),
@@ -230,7 +230,7 @@ iInca : 1100,
 iPurepecha : 1150,
 iAztecs : 1250,
 iIroquois : 1450,
-iSioux : 1475,
+iLakota : 1475,
 iSpain : 1492,
 iPortugal : 1532,
 iEngland : 1607,
@@ -269,7 +269,7 @@ iIroquois : 1800,
 iSpain : 1850,
 iPortugal : 1850,
 iFrance : 1850,
-iSioux : 1875,
+iLakota : 1875,
 }, 2000)
 
 # Leoreth: determine neighbour lists from pairwise neighbours for easier lookup
@@ -315,7 +315,7 @@ iInca : 3,
 iPurepecha : 2,
 iAztecs : 3,
 iIroquois : 2,
-iSioux : 2,
+iLakota : 2,
 iSpain : 3,
 iEngland : 2,
 iFrance : 2,
@@ -370,7 +370,7 @@ iInca : 35,
 iPurepecha : 20,
 iAztecs : 30,
 iIroquois : 25,
-iSioux : 30,
+iLakota : 30,
 iSpain : 20,
 iPortugal : 30,
 iEngland : 20,
@@ -731,7 +731,7 @@ iNumPeriods = 0
 iNumImpacts = 5
 (iImpactMarginal, iImpactLimited, iImpactSignificant, iImpactCritical, iImpactPlayer) = range(iNumImpacts)
 
-lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari, iSioux]
+lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iIroquois, iMississippi, iMuisca, iNorse, iPeru, iPuebloan, iVenezuela, iWari, iLakota]
 
 (i500BC, i1500AD, i1750AD) = range(3)
 
@@ -808,7 +808,7 @@ iInca : 10,
 iPurepecha : 3,
 iAztecs : 5,
 iIroquois : 5,
-iSioux : 5,
+iLakota : 5,
 iSpain : 30,
 iPortugal : 20,
 iEngland : 15,

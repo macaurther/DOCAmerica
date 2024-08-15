@@ -1200,7 +1200,7 @@ enum CivilizationTypes		// Exposed to Python
 	PUEBLOAN,
 	PUREPECHA,
 	RUSSIA,
-	SIOUX,
+	LAKOTA,
 	SPAIN,
 	TEOTIHUACAN,
 	TIWANAKU,
@@ -1346,7 +1346,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	// Purepecha
 	TARIACURI,
 
-	// Sioux
+	// Lakota
 	LEADER_SITTING_BULL,
 
 	NUM_LEADERHEADS

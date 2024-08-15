@@ -1372,7 +1372,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 	BeginUnit
 		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -1757,15 +1757,15 @@ BeginPlot
 	x=20,y=90
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -1943,22 +1943,22 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Ponca
 		CityPopulation=4
 		BuildingType=BUILDING_SIOUX_TIPI
@@ -1971,11 +1971,11 @@ BeginPlot
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=226
+			Civilization=CIVILIZATION_LAKOTA, Culture=226
 		EndCulture
 		YearFounded=1580
 		YearAcquired=1580
-		PreviousOwner=CIVILIZATION_SIOUX
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot
@@ -2575,26 +2575,26 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Chantenna
 		CityPopulation=2
 		BuildingType=BUILDING_SIOUX_TIPI
@@ -2606,11 +2606,11 @@ BeginPlot
 		BuildingType=BUILDING_SERPENT_MOUND
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=656
+			Civilization=CIVILIZATION_LAKOTA, Culture=656
 		EndCulture
 		YearFounded=1485
 		YearAcquired=1485
-		PreviousOwner=CIVILIZATION_SIOUX
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot
@@ -2885,7 +2885,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -2893,7 +2893,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -2901,14 +2901,14 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Mandan
 		CityPopulation=4
 		BuildingType=BUILDING_SIOUX_TIPI
@@ -2916,11 +2916,11 @@ BeginPlot
 		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=119
+			Civilization=CIVILIZATION_LAKOTA, Culture=119
 		EndCulture
 		YearFounded=1613
 		YearAcquired=1613
-		PreviousOwner=CIVILIZATION_SIOUX
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot
@@ -3099,7 +3099,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3110,11 +3110,11 @@ BeginPlot
 	x=25,y=95
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3671,7 +3671,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3680,7 +3680,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3769,18 +3769,18 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Wazi-kute
 		CityPopulation=8
 		BuildingType=BUILDING_CHIEFTANS_HUT
@@ -3794,11 +3794,11 @@ BeginPlot
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=359
+			Civilization=CIVILIZATION_LAKOTA, Culture=359
 		EndCulture
 		YearFounded=1475
 		YearAcquired=1475
-		PreviousOwner=CIVILIZATION_SIOUX
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot

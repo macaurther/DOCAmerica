@@ -268,7 +268,7 @@ lCivilizations = [
 		techs=techs.column(3).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
 	),
 	Civilization(
-		iSioux,
+		iLakota,
 		iGold=100,
 		lCivics=[iSubsistance1, iHarmony1, iNomads1],
 		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
@@ -492,7 +492,7 @@ dStartingUnits = CivDict({
 		iShock: 1,
 		iHarass: 1,
 	},
-	iSioux: {
+	iLakota: {
 		iSettle: 2,
 		iDefend: 2,
 		iBase: 1,

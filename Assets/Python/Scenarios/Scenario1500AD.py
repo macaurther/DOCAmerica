@@ -56,7 +56,7 @@ lCivilizations = [
 		techs=techs.column(3).including(iProperty, iCeremony).without(iEarthworks, iIrrigation, iPathfinding)
 	),
 	Civilization(
-		iSioux,
+		iLakota,
 		iGold=100,
 		lCivics=[iChiefdom1, iHarmony1, iNomads1],
 		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
