@@ -335,15 +335,15 @@
 		<Spanish>The most primitive Economy civic</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MERCHANTS</Tag>
-		<English>Merchants</English>
-		<French>Merchants</French>
-		<German>Merchants</German>
-		<Italian>Merchants</Italian>
-		<Spanish>Merchants</Spanish>
+		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE</Tag>
+		<English>Merchant Trade</English>
+		<French>Merchant Trade</French>
+		<German>Merchant Trade</German>
+		<Italian>Merchant Trade</Italian>
+		<Spanish>Merchant Trade</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MERCHANTS_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Tag>
 		<English>Extra trade route in all cities; extra [ICON_PRODUCTION] from merchants</English>
 		<French>Extra trade route in all cities; extra [ICON_PRODUCTION] from merchants</French>
 		<German>Extra trade route in all cities; extra [ICON_PRODUCTION] from merchants</German>
@@ -1157,11 +1157,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_STRATEGY</Tag>
-		<English>Extra Happiness from wooded features; reduced [ICON_SCIENCE]</English>
-		<French>Extra Happiness from wooded features; reduced [ICON_SCIENCE]</French>
-		<German>Extra Happiness from wooded features; reduced [ICON_SCIENCE]</German>
-		<Italian>Extra Happiness from wooded features; reduced [ICON_SCIENCE]</Italian>
-		<Spanish>Extra Happiness from wooded features; reduced [ICON_SCIENCE]</Spanish>
+		<English>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</English>
+		<French>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</French>
+		<German>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</German>
+		<Italian>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</Italian>
+		<Spanish>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ZEALOTRY</Tag>
@@ -1285,11 +1285,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SUBSISTANCE_STRATEGY</Tag>
-		<English>Extra [ICON_FOOD] and [ICON_PRODUCTION] from no improvement; reduced [ICON_COMMERCE]</English>
-		<French>Extra [ICON_FOOD] and [ICON_PRODUCTION] from no improvement; reduced [ICON_COMMERCE]</French>
-		<German>Extra [ICON_FOOD] and [ICON_PRODUCTION] from no improvement; reduced [ICON_COMMERCE]</German>
-		<Italian>Extra [ICON_FOOD] and [ICON_PRODUCTION] from no improvement; reduced [ICON_COMMERCE]</Italian>
-		<Spanish>Extra [ICON_FOOD] and [ICON_PRODUCTION] from no improvement; reduced [ICON_COMMERCE]</Spanish>
+		<English>Extra [ICON_FOOD] and less [ICON_PRODUCTION] from no improvement</English>
+		<French>Extra [ICON_FOOD] and less [ICON_PRODUCTION] from no improvement</French>
+		<German>Extra [ICON_FOOD] and less [ICON_PRODUCTION] from no improvement</German>
+		<Italian>Extra [ICON_FOOD] and less [ICON_PRODUCTION] from no improvement</Italian>
+		<Spanish>Extra [ICON_FOOD] and less [ICON_PRODUCTION] from no improvement</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MITA</Tag>
@@ -1317,11 +1317,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMUNE_STRATEGY</Tag>
-		<English>Increased [ICON_FOOD], reduced [ICON_PRODUCTION] in all cities</English>
-		<French>Increased [ICON_FOOD], reduced [ICON_PRODUCTION] in all cities</French>
-		<German>Increased [ICON_FOOD], reduced [ICON_PRODUCTION] in all cities</German>
-		<Italian>Increased [ICON_FOOD], reduced [ICON_PRODUCTION] in all cities</Italian>
-		<Spanish>Increased [ICON_FOOD], reduced [ICON_PRODUCTION] in all cities</Spanish>
+		<English>Extra [ICON_FOOD] from citizens, reduced [ICON_COMMERCE] in all cities</English>
+		<French>Extra [ICON_FOOD] from citizens, reduced [ICON_COMMERCE] in all cities</French>
+		<German>Extra [ICON_FOOD] from citizens, reduced [ICON_COMMERCE] in all cities</German>
+		<Italian>Extra [ICON_FOOD] from citizens, reduced [ICON_COMMERCE] in all cities</Italian>
+		<Spanish>Extra [ICON_FOOD] from citizens, reduced [ICON_COMMERCE] in all cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_REDISTRIBUTION</Tag>
@@ -1429,11 +1429,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COSMOPOLIS_STRATEGY</Tag>
-		<English>faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market; extra health in all cities</English>
-		<French>faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market; extra health in all cities</French>
-		<German>faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market; extra health in all cities</German>
-		<Italian>faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market; extra health in all cities</Italian>
-		<Spanish>faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market; extra health in all cities</Spanish>
+		<English>Faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market</English>
+		<French>Faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market</French>
+		<German>Faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market</German>
+		<Italian>Faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market</Italian>
+		<Spanish>Faster production of Bath, Plaza, Weaver, Jeweller; extra hapiness from Market</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ACCULTURATION</Tag>

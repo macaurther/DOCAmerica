@@ -330,11 +330,8 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<UnimprovedTileYields>
 				<iYield>1</iYield>
-				<iYield>1</iYield>
+				<iYield>-1</iYield>
 			</UnimprovedTileYields>
-			<CommerceModifiers>
-				<iCommerce>-25</iCommerce>
-			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -459,10 +456,17 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
-			<YieldModifiers>
-				<iYield>25</iYield>
-				<iYield>-25</iYield>
-			</YieldModifiers>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_CITIZEN</SpecialistType>
+					<YieldChanges>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
+			<CommerceModifiers>
+				<iCommerce>-25</iCommerce>
+			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -492,10 +496,10 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
-			<Type>CIVIC_MERCHANTS_NATIVE</Type>
-			<Description>TXT_KEY_CIVIC_MERCHANTS</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MERCHANTS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MERCHANTS_STRATEGY</Strategy>
+			<Type>CIVIC_MERCHANT_TRADE_NATIVE</Type>
+			<Description>TXT_KEY_CIVIC_MERCHANT_TRADE</Description>
+			<Civilopedia>TXT_KEY_CIVIC_MERCHANT_TRADE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Strategy>
 			<TechPrereq>TECH_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Merchants.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -594,6 +598,7 @@
 			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Harmony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
+			<iExtraHealth>5</iExtraHealth>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -601,28 +606,6 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
-			<FeatureHappinessChanges>
-				<FeatureHappinessChange>
-					<FeatureType>FEATURE_TAIGA</FeatureType>
-					<iHappinessChange>1</iHappinessChange>
-				</FeatureHappinessChange>
-				<FeatureHappinessChange>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iHappinessChange>1</iHappinessChange>
-				</FeatureHappinessChange>
-				<FeatureHappinessChange>
-					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
-					<iHappinessChange>1</iHappinessChange>
-				</FeatureHappinessChange>
-				<FeatureHappinessChange>
-					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<iHappinessChange>1</iHappinessChange>
-				</FeatureHappinessChange>
-				<FeatureHappinessChange>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<iHappinessChange>1</iHappinessChange>
-				</FeatureHappinessChange>
-			</FeatureHappinessChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -694,13 +677,12 @@
 			<Button>,Art/Interface/Buttons/Civics/Cosmopolis.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
-			<iExtraHealth>2</iExtraHealth>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<BuildingHappinessChanges>
 				<BuildingHappinessChange>
 					<BuildingType>BUILDINGCLASS_MARKET</BuildingType>
-					<iHappinessChange>1</iHappinessChange>
+					<iHappinessChange>3</iHappinessChange>
 				</BuildingHappinessChange>
 			</BuildingHappinessChanges>
 			<BuildingProductionModifiers>
@@ -809,9 +791,9 @@
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
 					<ImprovementYields>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
-						<iYield>1</iYield>
+						<iYield>2</iYield>
+						<iYield>2</iYield>
+						<iYield>2</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
@@ -2092,11 +2074,8 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<UnimprovedTileYields>
 				<iYield>1</iYield>
-				<iYield>1</iYield>
+				<iYield>-1</iYield>
 			</UnimprovedTileYields>
-			<CommerceModifiers>
-				<iCommerce>-25</iCommerce>
-			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
