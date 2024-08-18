@@ -216,7 +216,7 @@ class GameData:
 			player.update(data)
 		
 		for civ in self.civs:
-			data = player.__dict__.copy()
+			data = civ.__dict__.copy()
 			civ.setup()
 			civ.update(data)
 
