@@ -463,9 +463,10 @@ class ImmigrationUtils:
 		
 		for lColonistType in lPossibleColonists:
 			for iUnit in reversed(lColonistType):
-				if self.isImmigrantValid(iPlayer, iUnit) and pPlayer.canTrain(iUnit, false, false):
+				if self.isImmigrantValid(iPlayer, iUnit) and (pPlayer.canTrain(iUnit, false, false) or iUnit in lNoTrainingNeeded):
 					colonistsDict = self.addAvailableUnit(iUnit, colonistsDict)
-					break
+					if not iUnit in lNoTrainingNeeded:
+						break
 		
 		return colonistsDict
 	
@@ -480,9 +481,10 @@ class ImmigrationUtils:
 		
 		for lExpeditionaryType in lPossibleExpeditionaries:
 			for iUnit in reversed(lExpeditionaryType):
-				if self.isImmigrantValid(iPlayer, iUnit) and pPlayer.canTrain(iUnit, false, false):
+				if self.isImmigrantValid(iPlayer, iUnit) and (pPlayer.canTrain(iUnit, false, false) or iUnit in lNoTrainingNeeded):
 					expeditionariesDict = self.addAvailableUnit(iUnit, expeditionariesDict)
-					break
+					if not iUnit in lNoTrainingNeeded:
+						break
 			
 		return expeditionariesDict
 	
@@ -501,8 +503,8 @@ class ImmigrationUtils:
 				return True
 			return False
 		
-		# Colonist is always available
-		if iUnit in [iColonist]:
+		# Colonist and others are always available
+		if iUnit in [iColonist] + lOldWorldBoosts:
 			return True
 		
 		# Get Great Person available (Anglo-America RP)
@@ -1366,6 +1368,10 @@ class Mercenary:
 		if self.getUnitInfoID() in lGreatPeople:
 			iImmigrationCost = 1000
 		
+		# Old World Boosts : Starts at 1 Immigration per 1 Commerce
+		if self.getUnitInfoID() in lOldWorldBoosts:
+			iImmigrationCost = 500
+		
 		# Scale by game speed
 		iImmigrationCost *= int(3 - gc.getGame().getGameSpeedType())
 		
@@ -1416,8 +1422,8 @@ class Mercenary:
 			if self.getUnitInfoID() in lGreatPeople:
 				return True
 		
-		# Can hire Colonists even though you can't train them
-		if self.getUnitInfoID() in [iColonist]:
+		# Can hire Colonists and other special units even though you can't train them
+		if self.getUnitInfoID() in [iColonist] + lOldWorldBoosts:
 			return True
 		
 		if pPlayer.canTrain(self.getUnitInfoID(), false, false):

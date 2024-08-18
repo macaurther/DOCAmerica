@@ -63,10 +63,10 @@ lCivilizations = [
 	),
 	Civilization(
 		iSpain,
-		iGold=200,
+		iGold=500,
 		iStateReligion=iCatholicism,
-		lCivics=[iExpedition2, iAdmiralty2, iConquest2],
-		techs=techs.column(6).without(*lNativeTechs)
+		lCivics=[iCaptains2, iExpedition2, iSerfdom2, iPlunder2, iJesuits2, iConquest2],
+		techs=techs.column(8).including(iGunpowder, iCompanies, iCartography, iEvangelism).without(*lNativeTechs)
 	),
 	Civilization(
 		iIndependent,

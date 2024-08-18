@@ -454,7 +454,7 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 151
+iNumUnits = 153
 # Land Units (97)
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
@@ -480,9 +480,9 @@ iBiplane,		iFighter,		iBomber,		iNuclearBomber,
 #				2				3				4				5				6				7				8				9				10
 iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
 iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
-# Other Units (6)
+# Other Units (8)
 #				2				3				4				5				6				7				8				9				10
-iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker) = range(iNumUnits)
+iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker,	iOldWorldArt,	iOldWorldInnovations) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -758,10 +758,11 @@ event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
 # Immigration
-iNumImmigrantCategories = 20
+iNumImmigrantCategories = 21
 #				2				3				4				5				6				7				8				9				10
-(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iGreatPeopleCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	
-iMainlineCat,	iEliteCat,		iCollateralCat,	iSkirmishCat,	iLightCavCat,	iHeavyCavCat,	iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat) = range(iNumImmigrantCategories)
+(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iGreatPeopleCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iOldWorldBoostsCat,iExplorersCat,
+iMilitiaCat,	iMainlineCat,	iEliteCat,		iCollateralCat,	iSkirmishCat,	iLightCavCat,	iHeavyCavCat,	iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,
+iCapitalShipCat) = range(iNumImmigrantCategories)
 
 lSettlers = [iSettler, iPioneer]
 lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
@@ -773,6 +774,7 @@ lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for 
 lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
+lOldWorldBoosts = [iOldWorldArt, iOldWorldInnovations]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
@@ -786,11 +788,12 @@ lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
 lSkirmishShips = [iPrivateer, iMonitor, iSubmarine]
 lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
 
-lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lAfricanSlaves, lColonists, lMigrantWorkers]
+lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lAfricanSlaves, lColonists, lMigrantWorkers, lOldWorldBoosts]
 
 lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lLightCavalryMercs, lHeavyCavalryMercs, lSiegeMercs, lMainlineShips, lSkirmishShips, lCapitalShips]
 
 lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries
+lNoTrainingNeeded = lGreatPeople + lAfricanSlaves + lColonists + lMigrantWorkers + lOldWorldBoosts
 
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({

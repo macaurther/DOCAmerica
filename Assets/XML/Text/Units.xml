@@ -2259,11 +2259,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SPANISH_GALLEON_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</English>
-		<French>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</French>
-		<German>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces, are stronger, and can conduct a trade mission.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces and are stronger.</English>
+		<French>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces and are stronger.</French>
+		<German>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces and are stronger.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces and are stronger.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT], the Spanish replacement for the [COLOR_UNIT_TEXT]Indiaman[COLOR_REVERT], have four cargo spaces and are stronger.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHTNING_WARRIOR</Tag>
@@ -2424,6 +2424,54 @@
 		<German>The [COLOR_UNIT_TEXT]Factor[COLOR_REVERT], the Canadian replacement for the [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT], can build Camps.</German>
 		<Italian>The [COLOR_UNIT_TEXT]Factor[COLOR_REVERT], the Canadian replacement for the [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT], can build Camps.</Italian>
 		<Spanish>The [COLOR_UNIT_TEXT]Factor[COLOR_REVERT], the Canadian replacement for the [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT], can build Camps.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OLD_WORLD_ART</Tag>
+		<English>Old World Art</English>
+		<French>Old World Art</French>
+		<German>Old World Art</German>
+		<Italian>Old World Art</Italian>
+		<Spanish>Old World Art</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OLD_WORLD_ART_STRATEGY</Tag>
+		<English>Buy Old World Art with [ICON_IMMIGRATION] and bring them to one of your cities to increase [ICON_CULTURE] in that city.</English>
+		<French>Buy Old World Art with [ICON_IMMIGRATION] and bring them to one of your cities to increase [ICON_CULTURE] in that city.</French>
+		<German>Buy Old World Art with [ICON_IMMIGRATION] and bring them to one of your cities to increase [ICON_CULTURE] in that city.</German>
+		<Italian>Buy Old World Art with [ICON_IMMIGRATION] and bring them to one of your cities to increase [ICON_CULTURE] in that city.</Italian>
+		<Spanish>Buy Old World Art with [ICON_IMMIGRATION] and bring them to one of your cities to increase [ICON_CULTURE] in that city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OLD_WORLD_ASSETS</Tag>
+		<English>Old World Assets</English>
+		<French>Old World Assets</French>
+		<German>Old World Assets</German>
+		<Italian>Old World Assets</Italian>
+		<Spanish>Old World Assets</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OLD_WORLD_ASSETS_STRATEGY</Tag>
+		<English>Buy Old World Assets with [ICON_IMMIGRATION] and expend them for a lump sum.</English>
+		<French>Buy Old World Assets with [ICON_IMMIGRATION] and expend them for a lump sum.</French>
+		<German>Buy Old World Assets with [ICON_IMMIGRATION] and expend them for a lump sum.</German>
+		<Italian>Buy Old World Assets with [ICON_IMMIGRATION] and expend them for a lump sum.</Italian>
+		<Spanish>Buy Old World Assets with [ICON_IMMIGRATION] and expend them for a lump sum.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OLD_WORLD_INNOVATIONS</Tag>
+		<English>Old World Innovations</English>
+		<French>Old World Innovations</French>
+		<German>Old World Innovations</German>
+		<Italian>Old World Innovations</Italian>
+		<Spanish>Old World Innovations</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_OLD_WORLD_INNOVATIONS_STRATEGY</Tag>
+		<English>Buy Old World Innovations with [ICON_IMMIGRATION] and expend them for a research boost.</English>
+		<French>Buy Old World Innovations with [ICON_IMMIGRATION] and expend them for a research boost.</French>
+		<German>Buy Old World Innovations with [ICON_IMMIGRATION] and expend them for a research boost.</German>
+		<Italian>Buy Old World Innovations with [ICON_IMMIGRATION] and expend them for a research boost.</Italian>
+		<Spanish>Buy Old World Innovations with [ICON_IMMIGRATION] and expend them for a research boost.</Spanish>
 	</TEXT>
 	
 	
