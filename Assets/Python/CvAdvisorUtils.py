@@ -76,7 +76,7 @@ def unitBuiltFeats(pCity, pUnit):
 	
 	if (not gc.getPlayer(pCity.getOwner()).isFeatAccomplished(FeatTypes.FEAT_UNITCOMBAT_MOUNTED)):
 
-		if (pUnit.getUnitCombatType() in [gc.getInfoTypeForString("UNITCOMBAT_LIGHT_CAVALRY"), gc.getInfoTypeForString("UNITCOMBAT_HEAVY_CAVALRY")]):
+		if (pUnit.getUnitCombatType() == gc.getInfoTypeForString("UNITCOMBAT_CAVALRY")):
 		
 			gc.getPlayer(pCity.getOwner()).setFeatAccomplished(FeatTypes.FEAT_UNITCOMBAT_MOUNTED, True)
 			

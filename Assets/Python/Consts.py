@@ -454,24 +454,25 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 154
-# Land Units (100)
+iNumUnits = 151
+# Land Units (97)
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
-iMadeireiro, 	iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iFactor,		iParatrooper,	
-iSpy, 			iSisqeno,       iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss, iMilitia1,		iFalconDancer,	iMilitia2,		
-iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iMohawk,		iArquebusier,	iArmedBrave,	
-iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iMaceman,		
-iAucac,			iJaguar,		iMacana,		iPikeAndShot,	iLineInfantry,	iRedcoat,		iMarine,		iSpearman,		iSuchucChiqui,	iLightningWarrior,
-iPikeman,		iEagle,			iArcher,		iPicta,			iSlinger,		iLongbowman,	iLightCannon,	iFieldGun,		iGatlingGun,	iMachineGun,	
-iAtlatlist,		iHolkan,		iGuecha,		iCrossbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iAntiTank,		iHorseArcher,	
-iSwiftArrow,	iHussar,		iMountedBrave,	iDragoon,		iLlanero,		iPistolier,		iRural,			iLightTank,		iCuirassier,	iConquistador,	
-iCarabineer,	iGrenadierCavalry,iCavalry,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iRifledCannon,	iArtillery,		iAAGun,			
+iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iColonist,		iScout, 		
+iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iFactor,		iParatrooper,	iMilitia1,		iFalconDancer,	iMilitia2,		
+iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			
+iJaguar,		iMacana,		iArquebusier,	iArmedBrave,	iArmedSlave,	iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		
+iVencedores,	iInfantry,		iFARs,			iSpearman,		iSuchucChiqui,	iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	
+iRedcoat,		iAntiTank,		iArcher,		iPicta,			iGuecha,		iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,
+iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	
+iConquistador,	iMountedBrave,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		
+iCannon,		iHeavyCannon,	iLightCannon,	iRifledCannon,	iFieldGun,		iArtillery,		iAAGun,		
+
 # Naval Units (27)
 #				2				3				4				5				6				7				8				9				10
 iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			
 iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    
-iTorpedoBoat,	iSubmarine,		iBarque,		iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	
+iMonitor,		iSubmarine,		iBarque,		iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	
 # Air Units (4)
 #				2				3				4				5				6				7				8				9				10
 iBiplane,		iFighter,		iBomber,		iNuclearBomber,	
@@ -487,7 +488,7 @@ lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchan
 
 lWildernessRPGunUnits = [iMilitia3, iMilitia4, iMinuteman, iMilitia5, iMilitia6, iArquebusier, iArmedSlave, iMusketman, iFusilier, iGuardia, iRifleman, iVencedores, iInfantry, iPikeAndShot, iCompagnies, iLineInfantry, iRedcoat, iMarine]
 lWildernessRPHorseUnits = [iHorseArcher, iCuirassier, iConquistador]
-lWildernessRPHorseGunUnits = [iHussar, iMountedBrave, iDragoon, iLlanero, iPistolier, iRural, iCarabineer, iGrenadierCavalry, iCavalry]
+lWildernessRPHorseGunUnits = [iMountedBrave, iDragoon, iLlanero, iRural, iGrenadierCavalry, iCavalry]
 
 dFemaleGreatPeople = {
 iGreatProphet : iFeGreatProphet,
@@ -774,15 +775,15 @@ lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
-lMainlineMercs = [iPikeman, iArquebusier, iMusketman, iFusilier, iRifleman, iInfantry]
-lEliteMercs = [iPikeAndShot, iCompagnies, iLineInfantry, iRedcoat, iMarine]
+lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
+lEliteMercs = [iPikeman, iPikeAndShot,  iLineInfantry, iRedcoat, iAntiTank]
 lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]
-lSkirmishMercs = [iSkirmisher, iGrenadier]
-lLightCavalryMercs = [iHussar, iDragoon, iPistolier, iLightTank]
-lHeavyCavalryMercs = [iCuirassier, iConquistador, iCarabineer, iCavalry, iTank]
+lSkirmishMercs = [iSkirmisher, iGrenadier, iMarine]
+lLightCavalryMercs = [iDragoon, iCavalry, iLightTank]
+lHeavyCavalryMercs = [iCuirassier, iConquistador, iTank]
 lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
 lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
-lSkirmishShips = [iPrivateer, iTorpedoBoat, iSubmarine]
+lSkirmishShips = [iPrivateer, iMonitor, iSubmarine]
 lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
 
 lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lAfricanSlaves, lColonists, lMigrantWorkers]

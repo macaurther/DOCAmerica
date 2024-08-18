@@ -220,7 +220,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_CARABINEER</UnitClassType>
+					<UnitClassType>UNITCLASS_CAVALRY</UnitClassType>
 					<UnitType>UNIT_ARGENTINE_MOUNTED_GRENADIER</UnitType>
 				</Unit>
 				<Unit>
@@ -1474,7 +1474,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
+					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
 					<UnitType>UNIT_INCAN_SLINGER</UnitType>
 				</Unit>
 				<Unit>
@@ -1964,7 +1964,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_PISTOLIER</UnitClassType>
+					<UnitClassType>UNITCLASS_CAVALRY</UnitClassType>
 					<UnitType>UNIT_MEXICAN_RURAL</UnitType>
 				</Unit>
 				<Unit>
@@ -2182,7 +2182,7 @@
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_ATLATLIST</UnitClassType>
+					<UnitClassType>UNITCLASS_ARCHER</UnitClassType>
 					<UnitType>UNIT_MUISCA_GUECHA</UnitType>
 				</Unit>
 			</Units>

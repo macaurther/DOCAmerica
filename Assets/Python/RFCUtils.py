@@ -44,7 +44,7 @@ def isDefenderUnit(unit):
 		return True
 		
 	# Melee units with mounted modifiers
-	if pUnitInfo.getUnitCombatType() == infos.type('UNITCOMBAT_MELEE') and pUnitInfo.getUnitCombatModifier(infos.type('UNITCOMBAT_HEAVY_CAVALRY')) > 0:
+	if pUnitInfo.getUnitCombatType() == infos.type('UNITCOMBAT_MELEE') and pUnitInfo.getUnitCombatModifier(infos.type('UNITCOMBAT_CAVALRY')) > 0:
 		return True
 		
 	# Conscriptable gunpowder units
@@ -505,9 +505,9 @@ def isUnitOfRole(iUnit, iRole):
 	elif iRole == iHarass:
 		return base_unit(iUnit) in [iAtlatlist, iSkirmisher, iGrenadier]
 	elif iRole == iHarassCav:
-		return base_unit(iUnit) in [iHorseArcher, iHussar, iDragoon, iPistolier, iLightTank]
+		return base_unit(iUnit) in [iHorseArcher, iDragoon, iLightTank]
 	elif iRole == iShockCav:
-		return base_unit(iUnit) in [iCuirassier, iCarabineer, iCavalry, iTank]
+		return base_unit(iUnit) in [iCuirassier, iCavalry, iTank]
 	elif iRole == iSiegeCity:
 		return base_unit(iUnit) in [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
 	elif iRole == iWorkSea:
@@ -517,7 +517,7 @@ def isUnitOfRole(iUnit, iRole):
 	elif iRole == iEscortSea:
 		return base_unit(iUnit) in [iSloop, iFrigate, iIronclad, iDestroyer]
 	elif iRole == iHarassSea:
-		return base_unit(iUnit) in [iPrivateer, iTorpedoBoat, iSubmarine]
+		return base_unit(iUnit) in [iPrivateer, iMonitor, iSubmarine]
 	elif iRole == iCapitalSea:
 		return base_unit(iUnit) in [iBarque, iShipOfTheLine, iCruiser, iBattleship, iCarrier]
 	

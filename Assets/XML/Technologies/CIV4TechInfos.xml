@@ -4371,7 +4371,6 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_MEASUREMENT</PrereqTech>
 				<PrereqTech>TECH_ENGINE</PrereqTech>
-				<PrereqTech>TECH_RAILROAD</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ASSEMBLY_LINE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -4405,7 +4404,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_RAILROAD</PrereqTech>
-				<PrereqTech>TECH_ELECTRICITY</PrereqTech>
+				<PrereqTech>TECH_ENGINE</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_COMBUSTION_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -4441,7 +4440,7 @@
 			</Flavors>
 			<AndPreReqs>
 				<PrereqTech>TECH_ELECTRICITY</PrereqTech>
-				<PrereqTech>TECH_CONSERVATION</PrereqTech>
+				<PrereqTech>TECH_RAILROAD</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_TELEGRAPH_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -4477,7 +4476,7 @@
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_CONSERVATION</PrereqTech>
-				<PrereqTech>TECH_IMPERIALISM</PrereqTech>
+				<PrereqTech>TECH_ELECTRICITY</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_BIOLOGY_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
@@ -4519,6 +4518,7 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_EMANCIPATION</PrereqTech>
 				<PrereqTech>TECH_IMPERIALISM</PrereqTech>
+				<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_ORGANIZED_LABOR_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

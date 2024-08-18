@@ -2655,20 +2655,12 @@
 		<Spanish>[ICON_BULLET]Can be Based on [LINK=UNIT_CARRIER]Carriers[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNITCOMBAT_HEAVY_CAVALRY</Tag>
-		<English>Heavy Cavalry Units</English>
-		<French>Unit&#233;s de cavelerie lourde</French>
-		<German>Heavy Cavalry Units</German>
-		<Italian>Heavy Cavalry Units</Italian>
-		<Spanish>Heavy Cavalry Units</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNITCOMBAT_LIGHT_CAVALRY</Tag>
-		<English>Light Cavalry Units</English>
-		<French>Unit&#233;s de cavalerie l&#233;g&#232;re</French>
-		<German>Light Cavalry Units</German>
-		<Italian>Light Cavalry Units</Italian>
-		<Spanish>Light Cavalry Units</Spanish>
+		<Tag>TXT_KEY_UNITCOMBAT_CAVALRY</Tag>
+		<English>Cavalry Units</English>
+		<French>Cavalry Units</French>
+		<German>Cavalry Units</German>
+		<Italian>Cavalry Units</Italian>
+		<Spanish>Cavalry Units</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_MILITIA</Tag>

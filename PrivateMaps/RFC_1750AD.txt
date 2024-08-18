@@ -284,10 +284,6 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_FIELD_GUN
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
@@ -1635,19 +1631,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CARABINEER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUSSAR
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -1867,10 +1855,6 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
@@ -1961,7 +1945,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Ponca
 		CityPopulation=4
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_ARENA
@@ -2131,14 +2115,6 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_FIELD_GUN
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
@@ -2217,10 +2193,6 @@ EndPlot
 BeginPlot
 	x=22,y=59
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_CARABINEER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 	BeginUnit
 		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_SPAIN
@@ -2597,7 +2569,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Chantenna
 		CityPopulation=2
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_BARRACKS
@@ -2911,7 +2883,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Mandan
 		CityPopulation=4
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
@@ -3278,10 +3250,6 @@ BeginPlot
 	x=26,y=25
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_CARABINEER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
@@ -3565,14 +3533,6 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_CROSSBOWMAN
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
@@ -3784,7 +3744,7 @@ BeginPlot
 		CityName=Wazi-kute
 		CityPopulation=8
 		BuildingType=BUILDING_CHIEFTANS_HUT
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_ARENA

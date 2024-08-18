@@ -1958,11 +1958,7 @@
 			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
-					<iExperience>2</iExperience>
-				</UnitCombatFreeExperience>
-				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
@@ -4277,11 +4273,11 @@
 			</BonusHappinessChanges>
 			<UnitCombatFreeExperiences>
 				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_LIGHT_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_HEAVY_CAVALRY</UnitCombatType>
+					<UnitCombatType>UNITCOMBAT_CAVALRY</UnitCombatType>
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>

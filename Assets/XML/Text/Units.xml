@@ -1206,24 +1206,20 @@
 		<Spanish>[COLOR_UNIT_TEXT]Skirmishers[COLOR_REVERT] have one first strike, can withdraw from combat, and have an attack bonus in [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]forests[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]rainforests[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_TORPEDO_BOAT</Tag>
-		<English>Torpedo Boat</English>
-		<French>
-			<Text>Torpilleur</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Torpedo Boat</German>
-		<Italian>Torpedo Boat</Italian>
-		<Spanish>Torpedo Boat</Spanish>
+		<Tag>TXT_KEY_UNIT_MONITOR</Tag>
+		<English>Monitor</English>
+		<French>Monitor</French>
+		<German>Monitor</German>
+		<Italian>Monitor</Italian>
+		<Spanish>Monitor</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_TORPEDO_BOAT_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Torpedo Boats[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Torpedo Boats[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Torpedo Boats[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Torpedo Boats[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Torpedo Boats[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</Spanish>
+		<Tag>TXT_KEY_UNIT_MONITOR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Monitors[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Monitors[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Monitors[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Monitors[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Monitors[COLOR_REVERT] cannot enter [COLOR_HIGHLIGHT_TEXT]Ocean[COLOR_REVERT], have a first strike, can withdraw from combat and have a combat bonus attacking on [COLOR_HIGHLIGHT_TEXT]Coast[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CRUISER</Tag>
