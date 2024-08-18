@@ -11718,6 +11718,50 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
+			<Class>UNITCLASS_OLD_WORLD_ASSETS</Class>
+			<Type>UNIT_OLD_WORLD_ASSETS</Type>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_MERCHANT</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_OLD_WORLD_ASSETS</Description>
+			<Civilopedia>TXT_KEY_UNIT_OLD_WORLD_ASSETS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_OLD_WORLD_ASSETS_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<bNukeImmune>1</bNukeImmune>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_MERCHANT</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_GOLD</FlavorType>
+					<iFlavor>1</iFlavor>
+				</Flavor>
+			</Flavors>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iBaseTrade>500</iBaseTrade>
+			<iAsset>2</iAsset>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CEO_7</EarlyArtDefineTag>
+					<LateArtDefineTag>ART_DEF_UNIT_CEO_7</LateArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+		</UnitInfo>
+		<UnitInfo>
 			<Class>UNITCLASS_OLD_WORLD_INNOVATIONS</Class>
 			<Type>UNIT_OLD_WORLD_INNOVATIONS</Type>
 			<Special>SPECIALUNIT_PEOPLE</Special>

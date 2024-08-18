@@ -454,7 +454,7 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 153
+iNumUnits = 154
 # Land Units (97)
 #				2				3				4				5				6				7				8				9				10
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
@@ -480,9 +480,9 @@ iBiplane,		iFighter,		iBomber,		iNuclearBomber,
 #				2				3				4				5				6				7				8				9				10
 iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
 iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
-# Other Units (8)
+# Other Units (9)
 #				2				3				4				5				6				7				8				9				10
-iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker,	iOldWorldArt,	iOldWorldInnovations) = range(iNumUnits)
+iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker,	iOldWorldArt,	iOldWorldAssets,iOldWorldInnovations) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
@@ -774,7 +774,7 @@ lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for 
 lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
-lOldWorldBoosts = [iOldWorldArt, iOldWorldInnovations]
+lOldWorldBoosts = [iOldWorldArt, iOldWorldAssets, iOldWorldInnovations]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]

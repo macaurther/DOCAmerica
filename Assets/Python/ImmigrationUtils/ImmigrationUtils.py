@@ -818,7 +818,7 @@ class ImmigrationUtils:
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
 	# It will:
 	#   - Hire mercenaries	
-	# It needs to be more complex but for right now it works
+	# MacAurther: TODO: It needs to be more complex but for right now it works
 	def computerPlayerThink(self, iPlayer):
             
 		# Get the player

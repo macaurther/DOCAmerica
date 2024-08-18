@@ -771,13 +771,13 @@ class CvImmigrationManager:
 		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] = 450
-		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
-		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
+		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
+		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] - (self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
 		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
 		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_COLONISTS", ()) + "</font>"
@@ -786,17 +786,17 @@ class CvImmigrationManager:
 		
 		
 		# Available Expeditionaries panel information
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] = 450
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*6)
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_EXPEDITIONARIES", ()) + "</font>"
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH]/2)
@@ -804,9 +804,9 @@ class CvImmigrationManager:
 		
 		
 		# Mercenary information panel information
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*2) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
 		self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
