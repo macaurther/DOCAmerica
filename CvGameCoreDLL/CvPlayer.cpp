@@ -12110,7 +12110,17 @@ void CvPlayer::setCivilizationType(CivilizationTypes iNewValue)
 
 void CvPlayer::applyCivilization(CivilizationTypes eCivilization, int iChange)
 {
-	
+	int iI;
+
+	// Toltec UP: +1 production and +2 culture per specialist -> MacAurther: Teotihuacan UP
+	if (eCivilization == TEOTIHUACAN)
+	{
+		for (iI = 0; iI < GC.getNumSpecialistInfos(); iI++)
+		{
+			changeSpecialistExtraYield((SpecialistTypes)iI, YIELD_PRODUCTION, iChange);
+		}
+		changeSpecialistExtraCommerce(COMMERCE_CULTURE, 2 * iChange);
+	}
 }
 
 

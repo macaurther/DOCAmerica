@@ -11201,57 +11201,55 @@ bool CvPlot::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible) const
 			}
 		}
 
-		if (!(pCity->getCivilizationType() == TEOTIHUACAN && GC.getUnitInfo(eUnit).getUnitCombatType() == 4)) { // Teotihuacan UP: melee units (combat type 4) ignore resource requirements
-			if (GC.getUnitInfo(eUnit).getPrereqAndBonus() != NO_BONUS)
+		if (GC.getUnitInfo(eUnit).getPrereqAndBonus() != NO_BONUS)
+		{
+			if (NULL == pCity)
 			{
+				if (!isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
+				{
+					return false;
+				}
+			}
+			else
+			{
+				if (!pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
+				{
+					return false;
+				}
+			}
+		}
+
+		bool bRequiresBonus = false;
+		bool bNeedsBonus = true;
+
+		for (int iI = 0; iI < GC.getNUM_UNIT_PREREQ_OR_BONUSES(); ++iI)
+		{
+			if (GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI) != NO_BONUS)
+			{
+				bRequiresBonus = true;
+
 				if (NULL == pCity)
 				{
-					if (!isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
+					if (isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
 					{
-						return false;
+						bNeedsBonus = false;
+						break;
 					}
 				}
 				else
 				{
-					if (!pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqAndBonus()))
+					if (pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
 					{
-						return false;
+						bNeedsBonus = false;
+						break;
 					}
 				}
 			}
+		}
 
-			bool bRequiresBonus = false;
-			bool bNeedsBonus = true;
-
-			for (int iI = 0; iI < GC.getNUM_UNIT_PREREQ_OR_BONUSES(); ++iI)
-			{
-				if (GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI) != NO_BONUS)
-				{
-					bRequiresBonus = true;
-
-					if (NULL == pCity)
-					{
-						if (isPlotGroupConnectedBonus(getOwnerINLINE(), (BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
-						{
-							bNeedsBonus = false;
-							break;
-						}
-					}
-					else
-					{
-						if (pCity->hasBonus((BonusTypes)GC.getUnitInfo(eUnit).getPrereqOrBonuses(iI)))
-						{
-							bNeedsBonus = false;
-							break;
-						}
-					}
-				}
-			}
-
-			if (bRequiresBonus && bNeedsBonus)
-			{
-				return false;
-			}
+		if (bRequiresBonus && bNeedsBonus)
+		{
+			return false;
 		}
 	}
 

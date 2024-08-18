@@ -2380,8 +2380,8 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		break;
 	case TEOTIHUACAN:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
+		aiUnitAIVal[UNITAI_WORKER] *= 2;
 		break;
 	case ZAPOTEC:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
@@ -2422,6 +2422,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		break;
 	case INUIT:
 		aiUnitAIVal[UNITAI_SETTLE] *= 5;
+		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 2;
 		break;
 	case INCA:
 		aiUnitAIVal[UNITAI_EXPLORE] *= 2;
@@ -2433,23 +2434,22 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case IROQUOIS:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] /= 2;
 		break;
 	case LAKOTA:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case SPAIN:
-		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 5;
+		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 2;
 		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 3;
 		aiUnitAIVal[UNITAI_ESCORT_SEA] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 5;
+		aiUnitAIVal[UNITAI_SETTLE] *= 6;
 		aiUnitAIVal[UNITAI_MISSIONARY_SEA] *= 2;
-		aiUnitAIVal[UNITAI_MISSIONARY] *= 2;
+		aiUnitAIVal[UNITAI_MISSIONARY] *= 3;
 		break;
 	case PORTUGAL:
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 5;
@@ -2465,7 +2465,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
 		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 2;
 		aiUnitAIVal[UNITAI_ESCORT_SEA] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 5;
 		aiUnitAIVal[UNITAI_DEFENSE_AIR] *= 2;
 		aiUnitAIVal[UNITAI_RESERVE_SEA] *= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] *= 3;
@@ -2480,7 +2480,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 2;
 		aiUnitAIVal[UNITAI_SETTLER_SEA] *= 2;
 		aiUnitAIVal[UNITAI_ESCORT_SEA] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 4;
+		aiUnitAIVal[UNITAI_SETTLE] *= 6;
 		break;
 	case NETHERLANDS:
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] *= 5;
@@ -2507,23 +2507,23 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_CARRIER_AIR] *= 2;
 		aiUnitAIVal[UNITAI_ATTACK_AIR] *= 2;
 		aiUnitAIVal[UNITAI_DEFENSE_AIR] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 5;
+		aiUnitAIVal[UNITAI_SETTLE] *= 6;
 		break;
 	case HAITI:
 		aiUnitAIVal[UNITAI_SETTLE] /= 3;
 		break;
 	case ARGENTINA:
 		aiUnitAIVal[UNITAI_ATTACK_CITY] *= 2;
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 4;
 		break;
 	case MEXICO:
-		aiUnitAIVal[UNITAI_SETTLE] *= 3;
+		aiUnitAIVal[UNITAI_SETTLE] *= 4;
 		break;
 	case COLOMBIA:
-		aiUnitAIVal[UNITAI_SETTLE] /= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case PERU:
-		aiUnitAIVal[UNITAI_SETTLE] /= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case BRAZIL:
 		aiUnitAIVal[UNITAI_WORKER] *= 2;
@@ -2532,10 +2532,10 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_SETTLE] *= 3;
 		break;
 	case VENEZUELA:
-		aiUnitAIVal[UNITAI_SETTLE] /= 2;
+		aiUnitAIVal[UNITAI_SETTLE] *= 2;
 		break;
 	case CANADA:
-		aiUnitAIVal[UNITAI_SETTLE] *= 5;
+		aiUnitAIVal[UNITAI_SETTLE] *= 6;
 		break;
 	case NATIVE:
 		aiUnitAIVal[UNITAI_CITY_DEFENSE] /= 5;
