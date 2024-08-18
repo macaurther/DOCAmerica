@@ -774,7 +774,7 @@ lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for 
 lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
-lOldWorldBoosts = [iOldWorldArt, iOldWorldAssets, iOldWorldInnovations]
+lEndowments = [iOldWorldArt, iOldWorldAssets, iOldWorldInnovations]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
@@ -788,12 +788,14 @@ lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
 lSkirmishShips = [iPrivateer, iMonitor, iSubmarine]
 lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
 
-lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lAfricanSlaves, lColonists, lMigrantWorkers, lOldWorldBoosts]
+lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lAfricanSlaves, lColonists, lMigrantWorkers]
 
 lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lLightCavalryMercs, lHeavyCavalryMercs, lSiegeMercs, lMainlineShips, lSkirmishShips, lCapitalShips]
 
+lPossibleEndowments = [lEndowments]
+
 lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries
-lNoTrainingNeeded = lGreatPeople + lAfricanSlaves + lColonists + lMigrantWorkers + lOldWorldBoosts
+lNoTrainingNeeded = lGreatPeople + lAfricanSlaves + lColonists + lMigrantWorkers + lEndowments
 
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({

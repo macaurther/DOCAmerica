@@ -106,74 +106,31 @@ class CvImmigrationManager:
 	# Populates the panel that shows all of the available Colonists
 	def populateAvailableColonistsPanel(self, screen):
 		# Get the available Colonists
-		mercenaries = objImmigrationUtils.getAvailableColonists(self.iActivePlayer)
+		mercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, lPossibleColonists)
 		
-		# Get the ID for the current active player
-		iPlayer = gc.getGame().getActivePlayer()
-
-		mercenaryCount = 0
-		
-		# Go through the mercenaries and populate the available mercenaries panel
-		for mercenaryName in mercenaries:
-
-			# Get the mercenary from the dictionary	
-			mercenary = mercenaries[mercenaryName]
-			mercenaryName = str(mercenaryName)
-			
-			# Don't add the mercenary to the list if they were built by the current player
-			if(mercenary.getBuilder() == iPlayer):
-				continue
-
-			if (not mercenary.canHireUnit(iPlayer)):
-				continue
-						
-			screen.attachPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
-			screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-InfoButton", 
-										mercenary.objUnitInfo.getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
-			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
-
-			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(iPlayer)
-			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
-
-			bEnableHireMercenary = true
-
-			# Check to see if the player has enough gold to hire the mercenary. If they don't then
-			# don't let them hire the mercenary.
-			if not mercenary.canAfford(iPlayer):
-				bEnableHireMercenary = False
-				
-			# Check if unit can spawn
-			if not mercenary.hasValidSpawnTile(iPlayer):
-				bEnableHireMercenary = False
-			
-			# Add the hire button for the mercenary
-			if(bEnableHireMercenary):
-				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
-											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
-
-			mercenaryCount = mercenaryCount + 1
-			
-
-		# Add the padding to the available mercenaries panel to improve the look of the screen
-		if((4-mercenaryCount)>0):
-
-			for i in range(4-mercenaryCount):
-				screen.attachPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
-				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
-				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
+		self.populateAvailablePanel(screen, AVAILABLE_COLONISTS_INNER_PANEL_ID, mercenaries)
 
 
 	# Populates the panel that shows all of the available Expeditionaries
 	def populateAvailableExpeditionariesPanel(self, screen):
 
-		# Get the available Colonists
-		mercenaries = objImmigrationUtils.getAvailableExpeditionaries(self.iActivePlayer)
+		# Get the available Expeditionaries
+		mercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, lPossibleExpeditionaries)
 		
+		self.populateAvailablePanel(screen, AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, mercenaries)
+	
+	
+	# Populates the panel that shows all of the available Endowments
+	def populateAvailableEndowmentsPanel(self, screen):
+
+		# Get the available Endowments
+		mercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, lPossibleEndowments)
+		
+		self.populateAvailablePanel(screen, AVAILABLE_ENDOWMENTS_INNER_PANEL_ID, mercenaries)
+		
+	
+	# Helper function that populates a panel (Colonist, Expeditionary, or Endowment)
+	def populateAvailablePanel(self, screen, innerPanelId, mercenaries):
 		# Get the ID for the current active player
 		iPlayer = gc.getGame().getActivePlayer()
 
@@ -193,7 +150,7 @@ class CvImmigrationManager:
 			if (not mercenary.canHireUnit(iPlayer)):
 				continue
 						
-			screen.attachPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
+			screen.attachPanel(innerPanelId, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
 			screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-InfoButton", 
 										mercenary.objUnitInfo.getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
@@ -229,7 +186,7 @@ class CvImmigrationManager:
 		if((4-mercenaryCount)>0):
 
 			for i in range(4-mercenaryCount):
-				screen.attachPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
+				screen.attachPanel(innerPanelId, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
@@ -421,18 +378,23 @@ class CvImmigrationManager:
 		screen.addPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
 		screen.addPanel(AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
 		screen.setText(AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		
+		screen.addPanel(AVAILABLE_ENDOWMENTS_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y], self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
+		screen.addPanel(AVAILABLE_ENDOWMENTS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+		screen.addPanel(AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
+		screen.setText(AVAILABLE_ENDOWMENTS_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
+		
 		screen.addPanel(IMMIGRANT_INFORMATION_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		screen.addPanel(IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
 		screen.setText(IMMIGRANT_INFORMATION_TEXT_PANEL_ID, "Background", self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				
 		screen.showWindowBackground(False)
 
-		# Populate the available mercenaries panel
+		# Populate the available panels
 		self.populateAvailableColonistsPanel(screen)
-
-		# Populate the hired mercenaries panel
 		self.populateAvailableExpeditionariesPanel(screen)
+		self.populateAvailableEndowmentsPanel(screen)
 
 
 	# Returns the new version of the gold text that takes into account the
@@ -539,6 +501,7 @@ class CvImmigrationManager:
 		# Update the available mercenaries in the available mercenaries panel
 		self.updateAvailableColonists(screen)
 		self.updateAvailableExpeditionaries(screen)
+		self.updateAvailableEndowments(screen)
 
 		# Clear the information in the mercenary information panel
 		self.clearMercenaryInformation(screen)
@@ -551,49 +514,9 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 		
 		# Get the mercenaries available for hire
-		colonists = objImmigrationUtils.getAvailableColonists(iPlayer)
+		mercenaries = objImmigrationUtils.getAvailableMercenaries(iPlayer, lPossibleColonists)
 
-		# Go through each of the available mercenaries
-		for mercenaryName in colonists:
-
-			mercenary = colonists[mercenaryName]
-			
-			mercenaryName = str(mercenaryName)
-			
-			# Continue if the mercenary was built by the current player
-			if(mercenary.iBuilder == iPlayer):
-				continue
-			
-			# Delete the cost string for the current mercenary we are processing.
-			screen.deleteWidget(mercenaryName+"Text")
-			
-			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
-			
-			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(iPlayer)
-			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
-
-			# Delete the hire button for the current mercenary we are processing.
-			screen.deleteWidget(mercenary.objUnitInfo.getType()+"-HireButton")
-
-			# To start off we'll assume that the player can hire the mercenary
-			bEnableHireMercenary = true
-
-			# If the player doesn't have enough money to hire the mercenary then
-			# we won't allow them to hire the current mercenary being processed.
-			if not mercenary.canAfford(iPlayer):
-				bEnableHireMercenary = False
-			
-			# Check if unit can spawn
-			if not mercenary.hasValidSpawnTile(iPlayer):
-				bEnableHireMercenary = False
-
-			if(bEnableHireMercenary):
-				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
-											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
+		self.updateAvailableUnits(screen, mercenaries, iPlayer)
 		
 	# Updates the available mercenaries panel, displays the hire button to the 
 	# player only for the mercenaries they can hire.
@@ -603,12 +526,29 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 		
 		# Get the mercenaries available for hire
-		expeditionaries = objImmigrationUtils.getAvailableExpeditionaries(iPlayer)
+		mercenaries = objImmigrationUtils.getAvailableMercenaries(iPlayer, lPossibleExpeditionaries)
 
+		self.updateAvailableUnits(screen, mercenaries, iPlayer)
+	
+	
+	# Updates the available mercenaries panel, displays the hire button to the 
+	# player only for the mercenaries they can hire.
+	def updateAvailableEndowments(self, screen):
+	
+		# Get the ID for the current player
+		iPlayer = gc.getGame().getActivePlayer()
+		
+		# Get the mercenaries available for hire
+		mercenaries = objImmigrationUtils.getAvailableMercenaries(iPlayer, lPossibleEndowments)
+
+		self.updateAvailableUnits(screen, mercenaries, iPlayer)
+	
+	
+	def updateAvailableUnits(self, screen, mercenaries, iPlayer):
 		# Go through each of the available mercenaries
-		for mercenaryName in expeditionaries:
+		for mercenaryName in mercenaries:
 
-			mercenary = expeditionaries[mercenaryName]
+			mercenary = mercenaries[mercenaryName]
 			
 			mercenaryName = str(mercenaryName)
 			
@@ -770,7 +710,7 @@ class CvImmigrationManager:
 		# Available Colonists panel information
 		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] = 450
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] = 350
 		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
 		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
 		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
@@ -788,7 +728,7 @@ class CvImmigrationManager:
 		# Available Expeditionaries panel information
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] = 450
+		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] = 350
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
@@ -803,10 +743,28 @@ class CvImmigrationManager:
 		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y] + 4
 		
 		
+		# Available Endowments panel information
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] = 350
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*6)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_ENDOWMENTS", ()) + "</font>"
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_WIDTH]/2)
+		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_Y] + 4
+		
+		
 		# Mercenary information panel information
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*2) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
 		self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]

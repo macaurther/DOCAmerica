@@ -897,7 +897,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<bNoResistance>1</bNoResistance>
+			<iOccupationTimeChange>-2</iOccupationTimeChange>
 			<UnhappinessExtraYields>
 				<iYield>0</iYield>
 				<iYield>2</iYield>

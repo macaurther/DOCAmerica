@@ -488,6 +488,43 @@ class ImmigrationUtils:
 			
 		return expeditionariesDict
 	
+	# Returns the expeditionaries available for hire.
+	def getAvailableEndowments(self, iPlayer):
+		' expeditionariesDict - the dictionary containing the expeditionaries that are available for hire by players '
+
+		endowmentsDict = {}
+		
+		iCiv = civ(iPlayer)
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		for lEndowmentType in lPossibleEndowments:
+			for iUnit in reversed(lEndowmentType):
+				if self.isImmigrantValid(iPlayer, iUnit) and (pPlayer.canTrain(iUnit, false, false) or iUnit in lNoTrainingNeeded):
+					endowmentsDict = self.addAvailableUnit(iUnit, endowmentsDict)
+					if not iUnit in lNoTrainingNeeded:
+						break
+			
+		return endowmentsDict
+	
+	# Returns the mercenaries of a certain type available for hire.
+	def getAvailableMercenaries(self, iPlayer, lPossibleUnits):
+		' mercenariesDict - the dictionary containing the mercenaries that are available for hire by players '
+
+		mercenariesDict = {}
+		
+		iCiv = civ(iPlayer)
+		pPlayer = gc.getPlayer(iPlayer)
+		
+		for lEndowmentType in lPossibleUnits:
+			for iUnit in reversed(lEndowmentType):
+				if self.isImmigrantValid(iPlayer, iUnit) and (pPlayer.canTrain(iUnit, false, false) or iUnit in lNoTrainingNeeded):
+					mercenariesDict = self.addAvailableUnit(iUnit, mercenariesDict)
+					if not iUnit in lNoTrainingNeeded:
+						break
+			
+		return mercenariesDict
+		
+	
 	def isImmigrantValid(self, iPlayer, iUnit):
 		iCiv = civ(iPlayer)
 		pPlayer = gc.getPlayer(iPlayer)
@@ -504,7 +541,7 @@ class ImmigrationUtils:
 			return False
 		
 		# Colonist and others are always available
-		if iUnit in [iColonist] + lOldWorldBoosts:
+		if iUnit in [iColonist] + lEndowments:
 			return True
 		
 		# Get Great Person available (Anglo-America RP)
@@ -759,8 +796,9 @@ class ImmigrationUtils:
 		bestImmigrant = None
 		
 		# Get the available mercenaries from the global immigrant pool
-		immigrantDict = self.getAvailableColonists(iPlayer)
-		immigrantDict.update(self.getAvailableExpeditionaries(iPlayer))
+		immigrantDict = self.getAvailableMercenaries(iPlayer, lPossibleColonists)
+		immigrantDict.update(self.getAvailableMercenaries(iPlayer, lPossibleExpeditionaries))
+		immigrantDict.update(self.getAvailableMercenaries(iPlayer, lPossibleEndowments))
 		
 		iHighestDesire = 0
 		iHighestDesireCategory = -1
@@ -1369,7 +1407,7 @@ class Mercenary:
 			iImmigrationCost = 1000
 		
 		# Old World Boosts : Starts at 1 Immigration per 1 Commerce
-		if self.getUnitInfoID() in lOldWorldBoosts:
+		if self.getUnitInfoID() in lEndowments:
 			iImmigrationCost = 500
 		
 		# Scale by game speed
@@ -1423,7 +1461,7 @@ class Mercenary:
 				return True
 		
 		# Can hire Colonists and other special units even though you can't train them
-		if self.getUnitInfoID() in [iColonist] + lOldWorldBoosts:
+		if self.getUnitInfoID() in [iColonist] + lEndowments:
 			return True
 		
 		if pPlayer.canTrain(self.getUnitInfoID(), false, false):

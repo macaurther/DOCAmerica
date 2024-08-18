@@ -1757,7 +1757,7 @@
 			<Quote>TXT_KEY_TECH_OLD_WORLD_SCIENCE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Old_world_science.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/OldWorldScience.dds</Button>
 		</TechInfo>
 
 		<TechInfo>
@@ -1799,7 +1799,7 @@
 			<Quote>TXT_KEY_TECH_OLD_WORLD_CULTURE_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
-			<Button>Art/Interface/Buttons/TechTree/Old_world_culture.dds</Button>
+			<Button>Art/Interface/Buttons/TechTree/OldWorldCulture.dds</Button>
 		</TechInfo>
 
 

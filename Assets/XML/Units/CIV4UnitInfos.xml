@@ -11711,8 +11711,8 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CEO_5</EarlyArtDefineTag>
-					<LateArtDefineTag>ART_DEF_UNIT_CEO_5</LateArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ART</EarlyArtDefineTag>
+					<LateArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ART</LateArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -11755,8 +11755,8 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CEO_7</EarlyArtDefineTag>
-					<LateArtDefineTag>ART_DEF_UNIT_CEO_7</LateArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ASSETS</EarlyArtDefineTag>
+					<LateArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ASSETS</LateArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -11831,8 +11831,8 @@
 				<iRangedWaveSize>1</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_CEO_1</EarlyArtDefineTag>
-					<LateArtDefineTag>ART_DEF_UNIT_CEO_1</LateArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_OLD_WORLD_INNOVATIONS</EarlyArtDefineTag>
+					<LateArtDefineTag>ART_DEF_UNIT_OLD_WORLD_INNOVATIONS</LateArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
