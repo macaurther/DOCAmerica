@@ -865,6 +865,7 @@ dBuildingPreferences = {
 		iKalasasaya : -40,
 		iMachuPicchu: -40,
 		iSacsayhuaman: -40,
+		iYachaywasi: -100, # They become too powerful!!
 	},
 	iZapotec : {
 		iSerpentMound: -80,
@@ -892,6 +893,7 @@ dBuildingPreferences = {
 		iSerpentMound: -40,
 		iMachuPicchu: -40,
 		iSacsayhuaman: -40,
+		iYachaywasi: -100, # They become too powerful!!
 	},
 	iWari : {
 		iSerpentMound: -40,

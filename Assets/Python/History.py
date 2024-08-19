@@ -94,36 +94,44 @@ def conquistadors(iTeamX, iHasMetTeamY):
 		iOldWorldPlayer = iHasMetTeamY
 		
 		iNewWorldCiv = civ(iNewWorldPlayer)
+		iOldWorldCiv = civ(iOldWorldPlayer)
+		
+		# No Immigration for Norse, it makes it too easy for them! And the AI might steal Spain's contact Immigration
+		if iOldWorldCiv == iNorse:
+			return
 		
 		bAlreadyContacted = data.dFirstContactConquerors[iNewWorldCiv]
 		
-		if not bAlreadyContacted:
-			# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe			
-			# Generate Immigration based on this formula:
-			#   Immigration = 25 * numCities + 2 * numPops
-			iContactImmigration = 0
-			pNewWorldPlayer = player(iNewWorldPlayer)
-			
-			(pCity, iter) = pNewWorldPlayer.firstCity(false)
-			while(pCity):
-				iContactImmigration += pCity.getPopulation() * 5
-				iContactImmigration += 20
-				(pCity, iter) = pNewWorldPlayer.nextCity(iter, false)
-			
-			iContactImmigration *= (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
-			
-			# England UP
-			if civ(iOldWorldPlayer) == iEngland:
-				iContactImmigration *= 2
-			
-			data.dFirstContactConquerors[iNewWorldCiv] = True
-			
-			events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
-			
-			gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
+		# Can't first contact twice
+		if bAlreadyContacted:
+			return
+		
+		# MacAurther: The European contactor no longer gets a bunch a free units; instead, they get a bunch of Immigration points they can use to buy units from Europe			
+		# Generate Immigration based on this formula:
+		#   Immigration = 25 * numCities + 2 * numPops
+		iContactImmigration = 0
+		pNewWorldPlayer = player(iNewWorldPlayer)
+		
+		(pCity, iter) = pNewWorldPlayer.firstCity(false)
+		while(pCity):
+			iContactImmigration += pCity.getPopulation() * 5
+			iContactImmigration += 20
+			(pCity, iter) = pNewWorldPlayer.nextCity(iter, false)
+		
+		iContactImmigration *= (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
+		
+		# England UP
+		if civ(iOldWorldPlayer) == iEngland:
+			iContactImmigration *= 2
+		
+		data.dFirstContactConquerors[iNewWorldCiv] = True
+		
+		events.fireEvent("conquerors", iOldWorldPlayer, iNewWorldPlayer)
+		
+		gc.getPlayer(iOldWorldPlayer).changeImmigration(iContactImmigration)
 
-			message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
-			message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
+		message(iNewWorldPlayer, "TXT_KEY_FIRST_CONTACT_NEWWORLD")
+		message(iOldWorldPlayer, "TXT_KEY_FIRST_CONTACT_OLDWORLD", iContactImmigration)
 
 ### TECH ACQUIRED ###
 
