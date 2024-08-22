@@ -2306,6 +2306,14 @@
 		<Spanish>Colonist</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_COLONIST_HELP</Tag>
+		<English>[ICON_BULLET]Can settle in a city to increase its population</English>
+		<French>[ICON_BULLET]Can settle in a city to increase its population</French>
+		<German>[ICON_BULLET]Can settle in a city to increase its population</German>
+		<Italian>[ICON_BULLET]Can settle in a city to increase its population</Italian>
+		<Spanish>[ICON_BULLET]Can settle in a city to increase its population</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIST_STRATEGY</Tag>
 		<English>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</English>
 		<French>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</French>

@@ -472,24 +472,6 @@ def calculateSeparatism(city):
 	
 	return iSeparatism
 
-def calculateSlaveStability(city):
-	iPlayer = city.getOwner()
-	
-	iSlaveryStability = 0
-	for iSpecialistSlave in lSlaveSpecialists:
-		iSlaveryStability -= city.getFreeSpecialistCount(iSpecialistSlave)
-	
-	iModifier = 100
-	# Spanish UP
-	if civ(iPlayer) == iSpain: iModifier -= 25
-	# Stocks
-	if city.hasBuilding(unique_building(iPlayer, iStocks)): iModifier -= 25
-	# Estate
-	if city.hasBuilding(unique_building(iPlayer, iEstate)): iModifier -= 25
-	
-	return int(iSlaveryStability * iModifier / 100)
-
-
 def calculateStability(iPlayer):
 	pPlayer = player(iPlayer)
 	tPlayer = team(iPlayer)
@@ -688,11 +670,7 @@ def calculateStability(iPlayer):
 	
 	lParameters[iParameterHappiness] = iHappinessStability
 	
-	# Slaves
-	iSlaveryStability = cities.owner(iPlayer).sum(calculateSlaveStability)
-	lParameters[iParameterSlaves] = iSlaveryStability
-	
-	iDomesticStability += iHappinessStability + iSlaveryStability
+	iDomesticStability += iHappinessStability
 	
 	# Civics (combinations)
 	iCivicCombinationStability = getCivicStability(iPlayer)

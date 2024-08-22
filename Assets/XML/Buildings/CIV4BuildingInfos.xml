@@ -1732,7 +1732,6 @@
 			<Description>TXT_KEY_BUILDING_STOCKS</Description>
 			<Civilopedia>TXT_KEY_BUILDING_STOCKS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_STOCKS_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_STOCKS_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STOCKS</ArtDefineTag>
 			<PrereqTech>TECH_OFFICIALS</PrereqTech>
@@ -1740,6 +1739,7 @@
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iHappiness>1</iHappiness>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>

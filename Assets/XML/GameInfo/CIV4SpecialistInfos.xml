@@ -422,7 +422,7 @@
 			<Description>TXT_KEY_SPECIALIST_SLAVE_FARMER</Description>
 			<Civilopedia>TXT_KEY_SPECIALIST_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_SLAVE_STRATEGY</Strategy>
-			<Help>TXT_KEY_SPECIALIST_SLAVE_HELP</Help>
+			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/SlaveFarmer.dds</Texture>
 			<bVisible>0</bVisible>
 			<bNoGlobalEffects>1</bNoGlobalEffects>
@@ -433,6 +433,7 @@
 			</Yields>
 			<Commerces/>
 			<iExperience>0</iExperience>
+			<iHappiness>-1</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -446,7 +447,7 @@
 			<Description>TXT_KEY_SPECIALIST_SLAVE_MINER</Description>
 			<Civilopedia>TXT_KEY_SPECIALIST_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_SLAVE_STRATEGY</Strategy>
-			<Help>TXT_KEY_SPECIALIST_SLAVE_HELP</Help>
+			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/SlaveMiner.dds</Texture>
 			<bVisible>0</bVisible>
 			<bNoGlobalEffects>1</bNoGlobalEffects>
@@ -454,10 +455,12 @@
 			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
 			<Yields>
 				<iYield>0</iYield>
-				<iYield>2</iYield>
+				<iYield>1</iYield>
+				<iYield>1</iYield>
 			</Yields>
 			<Commerces/>
 			<iExperience>0</iExperience>
+			<iHappiness>-1</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
@@ -471,7 +474,7 @@
 			<Description>TXT_KEY_SPECIALIST_SLAVE_PLANTER</Description>
 			<Civilopedia>TXT_KEY_SPECIALIST_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_SPECIALIST_SLAVE_STRATEGY</Strategy>
-			<Help>TXT_KEY_SPECIALIST_SLAVE_HELP</Help>
+			<Help/>
 			<Texture>Art/Interface/MainScreen/CityScreen/SlavePlanter.dds</Texture>
 			<bVisible>0</bVisible>
 			<bNoGlobalEffects>1</bNoGlobalEffects>
@@ -484,6 +487,7 @@
 			</Yields>
 			<Commerces/>
 			<iExperience>0</iExperience>
+			<iHappiness>-1</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>

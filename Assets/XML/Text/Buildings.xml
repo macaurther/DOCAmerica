@@ -2211,19 +2211,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STOCKS_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and reduce a city's contribution to instability.</English>
-		<French>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and reduce a city's contribution to instability.</French>
-		<German>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and reduce a city's contribution to instability.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and reduce a city's contribution to instability.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and reduce a city's contribution to instability.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_STOCKS_HELP</Tag>
-		<English>[ICON_BULLET]-25% Instability from Slaves</English>
-		<French>[ICON_BULLET]-25% Instability from Slaves</French>
-		<German>[ICON_BULLET]-25% Instability from Slaves</German>
-		<Italian>[ICON_BULLET]-25% Instability from Slaves</Italian>
-		<Spanish>[ICON_BULLET]-25% Instability from Slaves</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</English>
+		<French>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</French>
+		<German>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STONEWORKS</Tag>

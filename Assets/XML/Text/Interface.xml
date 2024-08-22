@@ -1847,14 +1847,6 @@
 		<Spanish>Slave Planter</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_SLAVE_HELP</Tag>
-		<English>[ICON_BULLET]-1 Stability</English>
-		<French>[ICON_BULLET]-1 Stability</French>
-		<German>[ICON_BULLET]-1 Stability</German>
-		<Italian>[ICON_BULLET]-1 Stability</Italian>
-		<Spanish>[ICON_BULLET]-1 Stability</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_STATESMAN</Tag>
 		<English>Statesman</English>
 		<French>Homme d'&#201;tat</French>
@@ -3986,11 +3978,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_JOIN_CITY_HELP</Tag>
-		<English>This order will make the Great Person join the city as a super specialist. It will consume the Great Person. -1 Stability if they are a Slave.</English>
-		<French>Ordonner &#224; ce personnage illustre de rejoindre la ville en tant que super-sp&#233;cialiste. Il est alors d&#233;truit. -1 Stability if they are a Slave.</French>
-		<German>Opfern Sie eine Gro&#223;e Pers&#246;nlichkeit und befehlen Sie ihr, sich als Super-Spezialist in der Stadt anzusiedeln. -1 Stability if they are a Slave.</German>
-		<Italian>Con questo ordine, i Grandi Personaggi possono unirsi alla citt&#224; in veste di super specialisti, venendo sacrificati nel procedimento. -1 Stability they are is a Slave.</Italian>
-		<Spanish>Esta orden hace que el gran personaje se quede en la ciudad como un superespecialista, consumi&#233;ndose en el proceso. -1 Stability if they are a Slave.</Spanish>
+		<English>This order will make the Great Person join the city as a super specialist. It will consume the Great Person.</English>
+		<French>Ordonner &#224; ce personnage illustre de rejoindre la ville en tant que super-sp&#233;cialiste. Il est alors d&#233;truit.</French>
+		<German>Opfern Sie eine Gro&#223;e Pers&#246;nlichkeit und befehlen Sie ihr, sich als Super-Spezialist in der Stadt anzusiedeln.</German>
+		<Italian>Con questo ordine, i Grandi Personaggi possono unirsi alla citt&#224; in veste di super specialisti, venendo sacrificati nel procedimento.</Italian>
+		<Spanish>Esta orden hace que el gran personaje se quede en la ciudad como un superespecialista, consumi&#233;ndose en el proceso.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_GOLD_FEDERALISM</Tag>
