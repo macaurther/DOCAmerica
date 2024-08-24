@@ -6408,8 +6408,9 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		{
 			updatePlotGroup();
 
+			// MacAurther: This is VERY slow if fort is in an area with a couple of cities late game.
 			// Leoreth: update culture costs
-			CvPlot* pLoopPlot;
+			/*CvPlot* pLoopPlot;
 			for (int iI = 0; iI < NUM_CITY_PLOTS_3; iI++)
 			{
 				pLoopPlot = plotCity3(getX(), getY(), iI);
@@ -6419,7 +6420,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 					pLoopPlot->getPlotCity()->updateCultureCosts();
 					pLoopPlot->getPlotCity()->updateCoveredPlots(true);
 				}
-			}
+			}*/
 		}
 
 		if (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
@@ -12127,6 +12128,7 @@ void CvPlot::updateFortClaims(PlayerTypes ePlayer)
 	if(getImprovementType() != IMPROVEMENT_FORT && getFortClaimer() == this)
 	{
 		removeFortClaims();
+		return;
 	}
 
 	// See if the fort needs to be re-assigned
@@ -12146,14 +12148,18 @@ void CvPlot::updateFortClaims(PlayerTypes ePlayer)
 	{
 		bool bFoundWorker = false;
 		// Search through units on this tile that is building a fort
-		for(int iI = 0; iI < getNumUnits(); iI++)
+		CvUnit* pLoopUnit;
+		CLLNode<IDInfo>* pUnitNode = headUnitNode();
+
+		while (pUnitNode != NULL)
 		{
-			CvUnit* pUnit = getUnitByIndex(iI);
-			if(pUnit->getScriptData().compare("BuildingFort"))
+			pLoopUnit = ::getUnit(pUnitNode->m_data);
+			if(pLoopUnit->getScriptData().compare("BuildingFort"))
 			{
-				ePlayer = pUnit->getOwner();
+				ePlayer = pLoopUnit->getOwner();
 				bFoundWorker = true;
 			}
+			pUnitNode = nextUnitNode(pUnitNode);
 		}
 
 		// If no worker was found, give the fort to a unit on that tile

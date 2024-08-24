@@ -4270,9 +4270,9 @@
 		</TechInfo>
 
 		<TechInfo>
-			<Type>TECH_EMANCIPATION</Type>
-			<Description>TXT_KEY_TECH_EMANCIPATION</Description>
-			<Civilopedia>TXT_KEY_TECH_EMANCIPATION_PEDIA</Civilopedia>
+			<Type>TECH_PROGRESSIVISM</Type>
+			<Description>TXT_KEY_TECH_PROGRESSIVISM</Description>
+			<Civilopedia>TXT_KEY_TECH_PROGRESSIVISM_PEDIA</Civilopedia>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>2000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4296,7 +4296,7 @@
 			<AndPreReqs>
 				<PrereqTech>TECH_CIVIL_LIBERTIES</PrereqTech>
 			</AndPreReqs>
-			<Quote>TXT_KEY_TECH_EMANCIPATION_QUOTE</Quote>
+			<Quote>TXT_KEY_TECH_PROGRESSIVISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>
 			<SoundMP>AS2D_TECH_GENERIC</SoundMP>
 			<Button>Art/Interface/Buttons/TechTree/Emancipation.dds</Button>
@@ -4516,7 +4516,7 @@
 				<PrereqTech>TECH_RAILROAD</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
-				<PrereqTech>TECH_EMANCIPATION</PrereqTech>
+				<PrereqTech>TECH_PROGRESSIVISM</PrereqTech>
 				<PrereqTech>TECH_IMPERIALISM</PrereqTech>
 				<PrereqTech>TECH_CONSERVATION</PrereqTech>
 			</AndPreReqs>
@@ -4557,7 +4557,7 @@
 				<PrereqTech>TECH_MACHINE_TOOLS</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
-				<PrereqTech>TECH_EMANCIPATION</PrereqTech>
+				<PrereqTech>TECH_PROGRESSIVISM</PrereqTech>
 			</AndPreReqs>
 			<Quote>TXT_KEY_TECH_JOURNALISM_QUOTE</Quote>
 			<Sound>AS2D_TECH_GENERIC</Sound>

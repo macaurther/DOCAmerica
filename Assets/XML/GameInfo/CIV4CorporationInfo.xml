@@ -147,7 +147,7 @@
 			<Type>CORPORATION_TEXTILE_INDUSTRY</Type>
 			<Description>TXT_KEY_CORPORATION_TEXTILE_INDUSTRY</Description>
 			<Civilopedia>TXT_KEY_CORPORATION_TEXTILE_INDUSTRY_PEDIA</Civilopedia>
-			<TechPrereq>TECH_THERMODYNAMICS</TechPrereq>
+			<TechPrereq>TECH_ENGINEERING</TechPrereq>
 			<FreeUnitClass>NONE</FreeUnitClass>
 			<iSpreadFactor>200</iSpreadFactor>
 			<iSpreadCost>50</iSpreadCost>

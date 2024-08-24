@@ -259,7 +259,6 @@ def doResurrection(iCiv, lCityList, bAskFlip=True, bDisplay=False):
 	
 	dStartingUnits = {
 		iBase: 2 * iArmySize + iNumCities,
-		iShock: iArmySize,
 		iCounter: iArmySize,
 		iSiege: iArmySize + iNumCities,
 	}

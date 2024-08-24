@@ -73,11 +73,11 @@ class CvPediaCivic:
 		
 		# MacAurther: Add info on who can enable this Civics (Natives, Colonies, or Nations)
 		iCultureGroup = CivicInfo.getCultureGroup();
-		if iCultureGroup == 1:
+		if iCultureGroup == 0:
 			screen.appendListBoxString(panel, u"<font=3>Natives Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		elif iCultureGroup == 2:
+		elif iCultureGroup == 1:
 			screen.appendListBoxString(panel, u"<font=3>Colonies Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		elif iCultureGroup == 3:
+		elif iCultureGroup == 2:
 			screen.appendListBoxString(panel, u"<font=3>Nations Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def placeRequires(self):

@@ -1129,7 +1129,7 @@
 			<Description>TXT_KEY_CIVIC_PROVINCES</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PROVINCES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PROVINCES_STRATEGY</Strategy>
-			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
+			<TechPrereq>TECH_PROGRESSIVISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Provinces.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1595,7 +1595,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_EMANCIPATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_EMANCIPATION_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_EMANCIPATION_HELP</Help>
-			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
+			<TechPrereq>TECH_PROGRESSIVISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Emancipation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1825,7 +1825,7 @@
 			<Description>TXT_KEY_CIVIC_PLUTOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PLUTOCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PLUTOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_BONDS</TechPrereq>
+			<TechPrereq>TECH_CURRENCY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Plutocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -2016,7 +2016,7 @@
 			<Description>TXT_KEY_CIVIC_KLEPTOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_KLEPTOCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_KLEPTOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_CURRENCY</TechPrereq>
+			<TechPrereq>TECH_BONDS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Kleptocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -2546,7 +2546,7 @@
 			<Description>TXT_KEY_CIVIC_EGALITARIANISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_EGALITARIANISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_EGALITARIANISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_EMANCIPATION</TechPrereq>
+			<TechPrereq>TECH_PROGRESSIVISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Egalitarianism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>

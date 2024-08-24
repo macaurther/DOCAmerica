@@ -339,7 +339,7 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 		createRoleUnits(iPlayer, tPlot, dConquestUnits.items())
 		
 		if iCiv == iSpain:
-			createRoleUnit(iPlayer, tPlot, iShockCav, 2*iExtra)
+			createRoleUnit(iPlayer, tPlot, iCav, 2*iExtra)
 
 
 def declareWar(iPlayer, iTarget, iWarPlan):

@@ -356,6 +356,8 @@
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges>
 				<iYield>1</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
 			</SeaPlotYieldChanges>
 			<ObsoleteSafeCommerceChanges>
 				<iCommerce>0</iCommerce>
@@ -2581,6 +2583,49 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
+			<BuildingClass>BUILDINGCLASS_MAGAZINE</BuildingClass>
+			<Type>BUILDING_MAGAZINE</Type>
+			<Description>TXT_KEY_BUILDING_MAGAZINE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_MAGAZINE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_MAGAZINE_STRATEGY</Strategy>
+			<Advisor>ADVISOR_MILITARY</Advisor>
+			<ArtDefineTag>ART_DEF_BUILDING_MAGAZINE</ArtDefineTag>
+			<PrereqTech>TECH_TACTICS</PrereqTech>
+			<bNeverCapture>1</bNeverCapture>
+			<iCost>150</iCost>
+			<iAdvancedStartCost>100</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iAsset>2</iAsset>
+			<iPower>3</iPower>
+			<iUnignorableBombardDefense>10</iUnignorableBombardDefense>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<DomainFreeExperiences>
+				<DomainFreeExperience>
+					<DomainType>DOMAIN_LAND</DomainType>
+					<iExperience>2</iExperience>
+				</DomainFreeExperience>
+			</DomainFreeExperiences>
+			<DomainProductionModifiers>
+				<DomainProductionModifier>
+					<DomainType>DOMAIN_LAND</DomainType>
+					<iProductionModifier>25</iProductionModifier>
+				</DomainProductionModifier>
+			</DomainProductionModifiers>
+			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<BuildingClassNeededs>
+				<BuildingClassNeeded>
+					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
+					<bNeededInCity>1</bNeededInCity>
+				</BuildingClassNeeded>
+			</BuildingClassNeededs>
+			<Flavors>
+				<Flavor>
+					<FlavorType>FLAVOR_MILITARY</FlavorType>
+					<iFlavor>10</iFlavor>
+				</Flavor>
+			</Flavors>
+		</BuildingInfo>
+		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_STAR_FORT</BuildingClass>
 			<Type>BUILDING_STAR_FORT</Type>
 			<Description>TXT_KEY_BUILDING_STAR_FORT</Description>
@@ -3371,49 +3416,6 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_MAGAZINE</BuildingClass>
-			<Type>BUILDING_MAGAZINE</Type>
-			<Description>TXT_KEY_BUILDING_MAGAZINE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_MAGAZINE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_MAGAZINE_STRATEGY</Strategy>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_MAGAZINE</ArtDefineTag>
-			<PrereqTech>TECH_REPLACEABLE_PARTS</PrereqTech>
-			<bNeverCapture>1</bNeverCapture>
-			<iCost>150</iCost>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iAsset>2</iAsset>
-			<iPower>3</iPower>
-			<iUnignorableBombardDefense>10</iUnignorableBombardDefense>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<DomainFreeExperiences>
-				<DomainFreeExperience>
-					<DomainType>DOMAIN_LAND</DomainType>
-					<iExperience>2</iExperience>
-				</DomainFreeExperience>
-			</DomainFreeExperiences>
-			<DomainProductionModifiers>
-				<DomainProductionModifier>
-					<DomainType>DOMAIN_LAND</DomainType>
-					<iProductionModifier>25</iProductionModifier>
-				</DomainProductionModifier>
-			</DomainProductionModifiers>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
-			<BuildingClassNeededs>
-				<BuildingClassNeeded>
-					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
-					<bNeededInCity>1</bNeededInCity>
-				</BuildingClassNeeded>
-			</BuildingClassNeededs>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
 			<Type>BUILDING_SHIPYARD</Type>
 			<Description>TXT_KEY_BUILDING_SHIPYARD</Description>
@@ -3636,7 +3638,7 @@
 			<Strategy>TXT_KEY_BUILDING_SLAUGHTERHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ABATTOIR</ArtDefineTag>
-			<PrereqTech>TECH_CHEMISTRY</PrereqTech>
+			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
 			<iCost>160</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3750,7 +3752,7 @@
 			<Strategy>TXT_KEY_BUILDING_SEWER_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SEWER</ArtDefineTag>
-			<PrereqTech>TECH_ENGINEERING</PrereqTech>
+			<PrereqTech>TECH_GEOLOGY</PrereqTech>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3815,7 +3817,7 @@
 			<Help>TXT_KEY_BUILDING_IMMIGRATION_OFFICE_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FRENCH_SALON</ArtDefineTag>
-			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
+			<PrereqTech>TECH_PROGRESSIVISM</PrereqTech>
 			<iCost>200</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3915,7 +3917,7 @@
 			<Strategy>TXT_KEY_BUILDING_TEXTILE_MILL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEXTILE_MILL</ArtDefineTag>
-			<PrereqTech>TECH_THERMODYNAMICS</PrereqTech>
+			<PrereqTech>TECH_ENGINEERING</PrereqTech>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -9865,7 +9867,7 @@
 			<Strategy>TXT_KEY_BUILDING_ELLIS_ISLAND_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ELLIS_ISLAND</ArtDefineTag>
-			<PrereqTech>TECH_EMANCIPATION</PrereqTech>
+			<PrereqTech>TECH_PROGRESSIVISM</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

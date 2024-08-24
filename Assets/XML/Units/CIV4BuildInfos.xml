@@ -196,7 +196,7 @@
 		<BuildInfo>
 			<Type>BUILD_OCEAN_FISHERY</Type>
 			<Description>TXT_KEY_BUILD_OCEAN_FISHERY</Description>
-			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
+			<PrereqTech>TECH_TIMEKEEPING</PrereqTech>
 			<iTime>0</iTime>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_OCEAN_FISHERY</ImprovementType>
