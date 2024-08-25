@@ -404,22 +404,23 @@ def foundCapital(iPlayer, tPlot, sName, iSize, iCulture, lBuildings=[], lReligio
 
 # used: Rules
 def freeSlaves(city, iPlayer):
+	# MacAurther: Don't free slaves if new player also uses slaves
+	if player(iPlayer).canUseSlaves():
+		return
+
 	iNumSlaves = 0
 	for iSpecialistSlave in lSlaveSpecialists:
 		iNumSlaves += city.getFreeSpecialistCount(iSpecialistSlave)
 		city.setFreeSpecialistCount(iSpecialistSlave, 0)
 	
-	# MacAurther: Haiti UP: freed slaves turn into soldiers
+	# MacAurther: Haiti UP: freed slaves give soldiers
 	if civ(iPlayer) == iHaiti:
-		createRoleUnit(iPlayer, city, iBase, iNumSlaves, 0)
-		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
-	elif player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation2, iEmancipation3]:
+		createRoleUnit(iPlayer, city, iSkirmish, iNumSlaves, 0)
+	
+	if player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation2, iEmancipation3]:
 		city.changePopulation(iNumSlaves)
-		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
-	elif player(iPlayer).canUseSlaves():
-		makeUnits(iPlayer, base_unit(iAfricanSlave3), city, iNumSlaves)
-	else:
-		events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
+
+	events.fireEvent("freedSlaves", iPlayer, iNumSlaves)
 	
 
 # used: GreatPeople

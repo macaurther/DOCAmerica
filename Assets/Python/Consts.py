@@ -523,21 +523,21 @@ iNumBonusVarieties = 3
 (iDyeCochineal, iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 227
-# Buildings (121)
+iNumBuildings = 225
+# Buildings (119)
 #				2				3				4				5				6				7				8				9				10
-(iPalace,		iGovernorsMansion,iCapitol,		iChieftansHut,	iGovernorsResidence,iContinentalCongress,iGranary,iColcas,		iIgloo,			iTipi,
-iMarket,		iWeaver,		iStoneworks,	iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			
-iAltar,			iTomb,			iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iSukaQullu,		iBath,			iTemazcal,		iJeweller,		
-iGoldsmith,		iWalls,			iKancha,		iPlaza,			iPlatformMound,	iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			
-iStocks,		iTradingPost,	iHuntingPost,	iForge,			iTavern,		iStable,		iPalisade,		iFactorij,		iMonument,		iSchoolhouse,	
-iCalmecac,		iGrocer, 		iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		
-iSilversmith,	iMagazine,		iStarFort,		iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	
-iAssembly,		iThingvellir,	iWheelwright,	iPostOffice,	iTambo,			iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		
-iTheatre,		iShipyard,		iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			
-iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		
-iLibrary,		iNewspaper,		iSupermarket,	iHospital,		iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,
-iFactory,		iMaquiladora,	iCoalPlant,		iHydroPlant,	iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
+(iPalace,		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iColcas,		iIgloo,			iTipi,			iMarket,		iWeaver,		
+iStoneworks,	iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			iAltar,			iTomb,			
+iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iSukaQullu,		iBath,			iTemazcal,		iJeweller,		iGoldsmith,		iWalls,			
+iKancha,		iPlaza,			iPlatformMound,	iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			iStocks,		iTradingPost,	
+iHuntingPost,	iForge,			iTavern,		iStable,		iPalisade,		iFactorij,		iMonument,		iSchoolhouse,	iCalmecac,		iGrocer, 		
+iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		iSilversmith,	iMagazine,		
+iStarFort,		iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	
+iWheelwright,	iPostOffice,	iTambo,			iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iShipyard,		
+iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,
+iTextileMill,	iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iLibrary,		iNewspaper,		
+iSupermarket,	iHospital,		iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	
+iCoalPlant,		iHydroPlant,	iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
 # Religious Buildings (41)
 #				2				3				4				5				6				7				8				9				10
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
@@ -591,7 +591,7 @@ iDivineRight2,	iJesuits2,		iZealotry2,		iHaven2,		iProfiteering2,	iOpportunity2,
 iClaims2,		iConquest2,		iProvidence2,	iOutposts2,		iHomesteads2,	iIntervention2,	iCommonwealth2,
 # Nation
 iStrongman3,	iJunta3,		iMonarchy3,		iPlutocracy3,	iDemocracy3,	iDictatorship3,	iStateParty3,
-iMinarchy3,		iCommonLaw3,	iConfederacy3,	iFederalism3,	iMandate3,		iKleptocracy3,	iPoliceState3,
+iMinarchy3,		iCommonLaw3,	iConfederacy3,	iKleptocracy3,	iFederalism3,	iMandate3,		iPoliceState3,
 iTraditionalism3,iSubsistance3,	iApprenticeship3,iSlavery3,		iIndustrialism3,iImmigrantLabor3,iLaborUnions3,
 iLaissezFaire3,	iAgrarianism3,	iExtraction3,	iFreeEnterprise3,iProtectionism3,iConsumerism3,	iPublicWelfare3,
 iRevolution3,	iLibertarianism3,iProfiteering3,iOpportunity3,	iEmancipation3,	iNativism3,		iEgalitarianism3,
@@ -778,21 +778,22 @@ lEndowments = [iOldWorldArt, iOldWorldAssets, iOldWorldInnovations]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
-lEliteMercs = [iPikeman, iPikeAndShot,  iLineInfantry, iRedcoat, iAntiTank]
+lEliteMercs = [iPikeman, iPikeAndShot, iLineInfantry, iRedcoat, iAntiTank]
 lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]
 lSkirmishMercs = [iSkirmisher, iGrenadier, iMarine]
-lLightCavalryMercs = [iDragoon, iCavalry, iLightTank]
-lHeavyCavalryMercs = [iCuirassier, iConquistador, iTank]
+lCavalryMercs = [iCuirassier, iConquistador, iDragoon, iCavalry, iLightTank, iTank]
 lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
 lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
 lSkirmishShips = [iPrivateer, iMonitor, iSubmarine]
 lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
 
-lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lGreatPeople, lAfricanSlaves, lColonists, lMigrantWorkers]
+lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lAfricanSlaves, lColonists, lMigrantWorkers]
 
-lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lLightCavalryMercs, lHeavyCavalryMercs, lSiegeMercs, lMainlineShips, lSkirmishShips, lCapitalShips]
+lPossibleExpeditionariesLand = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lCavalryMercs, lSiegeMercs]
+lPossibleExpeditionariesSea = [lMainlineShips, lSkirmishShips, lCapitalShips]
+lPossibleExpeditionaries = lPossibleExpeditionariesLand + lPossibleExpeditionariesSea
 
-lPossibleEndowments = [lEndowments]
+lPossibleEndowments = [lEndowments, lGreatPeople]
 
 lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries + lPossibleEndowments
 lNoTrainingNeeded = lGreatPeople + lAfricanSlaves + lColonists + lMigrantWorkers + lEndowments

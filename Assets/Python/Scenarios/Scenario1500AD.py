@@ -81,12 +81,15 @@ lCivilizations = [
 	Civilization(
 		iIndependent3,
 		iGold=100,
-		techs=techs.column(5)
+		techs=techs.column(8)
 	),
 	Civilization(
 		iNative,
 		iGold=300,
 		techs=techs.column(4)
+	),
+	Civilization(
+		iBarbarian,
 	)
 ]
 

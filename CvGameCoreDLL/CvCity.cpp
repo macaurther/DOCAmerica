@@ -17742,7 +17742,7 @@ bool CvCity::canSlaveJoin(SpecialistTypes eSpecialistType) const
 			if (countNumImprovedPlots(IMPROVEMENT_MINE) == 0) return false;
 			break;
 		case SPECIALIST_SLAVE_PLANTER:
-			if (countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;
+			if (countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0 && countNumImprovedPlots(IMPROVEMENT_ORCHARD) == 0) return false;
 			break;
 		default:
 			if (countNumImprovedPlots(IMPROVEMENT_FARM) == 0 && countNumImprovedPlots(IMPROVEMENT_MINE) == 0 && countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;

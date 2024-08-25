@@ -1314,15 +1314,14 @@ class Mercenary:
 		
 		iExp = 0
 		# Conquest and Zealotry Civic
-		if self.getUnitInfoID() in lExplorers + lMilitia + lMainlineMercs + lEliteMercs + \
-			lCollateralMercs + lSkirmishMercs + lLightCavalryMercs + lHeavyCavalryMercs + lSiegeMercs:
+		if self.getUnitInfoID() in lPossibleExpeditionariesLand:
 			if iConquest1 in civics or iConquest2 in civics:
 				iExp += 2
 			if iZealotry2 in civics:
 				iExp += 2
 		
 		# Admiralty Civic
-		if iAdmiralty2 in civics and self.getUnitInfoID() in lTransports + lMainlineShips + lSkirmishShips + lCapitalShips:
+		if iAdmiralty2 in civics and self.getUnitInfoID() in lTransports + lPossibleExpeditionariesSea:
 			iExp += 4
 		
 		if iExp > 0:

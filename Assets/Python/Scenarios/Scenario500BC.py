@@ -29,6 +29,9 @@ lCivilizations = [
 	Civilization(
 		iIndependent3
 	),
+	Civilization(
+		iBarbarian,
+	)
 ]
 
 lTribalVillages = [

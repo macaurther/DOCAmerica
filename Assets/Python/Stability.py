@@ -1479,6 +1479,15 @@ def getCivicStability(iPlayer, civics=None):
 		if iAssimilation3 in civics: iStability += 2
 		if iManifestDestiny3 in civics: iStability -= 2
 	
+	if iKleptocracy3 in civics:
+		if iImmigrantLabor3 in civics: iStability += 2
+		if iLaborUnions3 in civics: iStability -= 2
+		if iExtraction3 in civics: iStability += 2
+		if iProfiteering3 in civics: iStability += 2
+		if iEgalitarianism3 in civics: iStability -= 2
+		if iHomesteads3 in civics: iStability -= 2
+		if iManifestDestiny3 in civics: iStability += 2
+	
 	if iFederalism3 in civics:
 		if iSlavery3 in civics: iStability -= 2
 		if iExtraction3 in civics: iStability -= 2
@@ -1495,15 +1504,6 @@ def getCivicStability(iPlayer, civics=None):
 		if iEmancipation3 in civics: iStability += 2
 		if iDecolonization3 in civics: iStability += 2
 		if iHegemony3 in civics: iStability -= 2
-	
-	if iKleptocracy3 in civics:
-		if iImmigrantLabor3 in civics: iStability += 2
-		if iLaborUnions3 in civics: iStability -= 2
-		if iExtraction3 in civics: iStability += 2
-		if iProfiteering3 in civics: iStability += 2
-		if iEgalitarianism3 in civics: iStability -= 2
-		if iHomesteads3 in civics: iStability -= 2
-		if iManifestDestiny3 in civics: iStability += 2
 	
 	if iPoliceState3 in civics:
 		if iSlavery3 in civics: iStability += 2

@@ -1963,6 +1963,24 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
+			<Type>CIVIC_KLEPTOCRACY_NATION</Type>
+			<Description>TXT_KEY_CIVIC_KLEPTOCRACY</Description>
+			<Civilopedia>TXT_KEY_CIVIC_KLEPTOCRACY_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_KLEPTOCRACY_STRATEGY</Strategy>
+			<TechPrereq>TECH_BONDS</TechPrereq>
+			<Button>,Art/Interface/Buttons/Civics/Kleptocracy.dds</Button>
+			<iAnarchyLength>1</iAnarchyLength>
+			<iCultureGroup>2</iCultureGroup>
+			<iBaseFreeUnits>15</iBaseFreeUnits>
+			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
+			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
+			<Upkeep>UPKEEP_LOW</Upkeep>
+			<CommerceModifiers>
+				<iCommerce>-10</iCommerce>
+			</CommerceModifiers>
+		</CivicInfo>
+		<CivicInfo>
+			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
 			<Type>CIVIC_FEDERALISM_NATION</Type>
 			<Description>TXT_KEY_CIVIC_FEDERALISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_FEDERALISM_PEDIA</Civilopedia>
@@ -2009,24 +2027,6 @@
 			<iGoldPerMilitaryUnit>1</iGoldPerMilitaryUnit>
 			<iCulturedCityFreeSpecialists>1</iCulturedCityFreeSpecialists>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-		</CivicInfo>
-		<CivicInfo>
-			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
-			<Type>CIVIC_KLEPTOCRACY_NATION</Type>
-			<Description>TXT_KEY_CIVIC_KLEPTOCRACY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_KLEPTOCRACY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_KLEPTOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_BONDS</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Kleptocracy.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
-			<iCultureGroup>2</iCultureGroup>
-			<iBaseFreeUnits>15</iBaseFreeUnits>
-			<iFreeUnitsPopulationPercent>10</iFreeUnitsPopulationPercent>
-			<iLevelExperienceModifier>-25</iLevelExperienceModifier>
-			<Upkeep>UPKEEP_LOW</Upkeep>
-			<CommerceModifiers>
-				<iCommerce>-10</iCommerce>
-			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>

@@ -399,6 +399,9 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=646
 		EndCulture
@@ -809,6 +812,7 @@ BeginPlot
 		BuildingType=BUILDING_MAGAZINE
 		BuildingType=BUILDING_FLOATING_GARDENS
 		BuildingType=BUILDING_HUEY_TEOCALLI
+		BuildingType=BUILDING_GUADALUPE_BASILICA
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=188
@@ -974,7 +978,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Texcoco
-		CityPopulation=9
+		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
@@ -994,6 +998,8 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=67
 			Civilization=CIVILIZATION_SPAIN, Culture=676
@@ -1566,6 +1572,30 @@ EndPlot
 BeginPlot
 	x=19,y=102
 	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=20,y=14
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_II
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_SPAIN
+		CityName=Cordoba
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_MANZANA_JESUITICA
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=50
+		EndCulture
+		YearFounded=1573
+		YearAcquired=1573
+		PreviousOwner=CIVILIZATION_SPAIN
+	EndCity
 EndPlot
 BeginPlot
 	x=20,y=30
@@ -2216,7 +2246,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guatemala
-		CityPopulation=10
+		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
@@ -2231,9 +2261,10 @@ BeginPlot
 		BuildingType=BUILDING_SCHOOLHOUSE
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=867
 			Civilization=CIVILIZATION_BARBARIAN, Culture=1420
@@ -2418,6 +2449,7 @@ BeginPlot
 		BuildingType=BUILDING_CONSTABULARY
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=547
 		EndCulture
@@ -2459,7 +2491,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guayaquil
-		CityPopulation=11
+		CityPopulation=8
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_ARENA
@@ -2475,6 +2507,9 @@ BeginPlot
 		BuildingType=BUILDING_SILVERSMITH
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=353
 		EndCulture
@@ -2716,6 +2751,8 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=1437
 		EndCulture
@@ -3214,18 +3251,14 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_CONSTABULARY
 		BuildingType=BUILDING_ESTATE
-		BuildingType=BUILDING_MAGAZINE
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
 		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=2581
 			Civilization=CIVILIZATION_BARBARIAN, Culture=1635
@@ -3272,7 +3305,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=La Paz
-		CityPopulation=7
+		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
@@ -3289,10 +3322,7 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_SCHOOLHOUSE
-		BuildingType=BUILDING_CONSTABULARY
 		BuildingType=BUILDING_ESTATE
-		BuildingType=BUILDING_MAGAZINE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_STOCK_EXCHANGE
 		BuildingType=BUILDING_GATE_OF_THE_SUN
@@ -3302,10 +3332,11 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_ARTIST
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
-		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
-		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
 		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=2475
 			Civilization=CIVILIZATION_SPAIN, Culture=6039
@@ -3365,6 +3396,8 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=859
 			Civilization=CIVILIZATION_SPAIN, Culture=4143
@@ -3562,6 +3595,9 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=1348
 		EndCulture
@@ -3943,6 +3979,8 @@ BeginPlot
 		CityName=Bogot&#225
 		CityPopulation=2
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
@@ -3981,11 +4019,6 @@ EndPlot
 BeginPlot
 	x=31,y=72
 	ImprovementType=IMPROVEMENT_COTTAGE
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=31,y=73
-	ImprovementType=IMPROVEMENT_LUMBERMILL
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4142,6 +4175,7 @@ BeginPlot
 		CityName=Barranquilla
 		CityPopulation=2
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
@@ -4219,11 +4253,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=32,y=73
-	ImprovementType=IMPROVEMENT_PASTURE
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=32,y=81
 	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
@@ -4283,8 +4312,10 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Kingston
-		CityPopulation=3
+		CityPopulation=4
 		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
@@ -4476,6 +4507,7 @@ BeginPlot
 		CityName=Savannah
 		CityPopulation=3
 		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=150
 		EndCulture
@@ -4508,7 +4540,7 @@ EndPlot
 BeginPlot
 	x=34,y=86
 	ImprovementType=IMPROVEMENT_FORT
-	RouteType=ROUTE_HIGHWAY
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_FRENCH_COMPAGNIES
 		UnitOwner=CIVILIZATION_FRANCE
@@ -4633,7 +4665,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=75
-	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4646,7 +4677,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=86
-	RouteType=ROUTE_HIGHWAY
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=36,y=16
@@ -4722,7 +4753,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Charleston
-		CityPopulation=8
+		CityPopulation=6
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
@@ -4730,6 +4761,9 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_MONUMENT
 		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=120
 		EndCulture
@@ -4744,7 +4778,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=75
-	ImprovementType=IMPROVEMENT_PASTURE
+	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4824,8 +4858,11 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Port-au-Prince
-		CityPopulation=5
+		CityPopulation=6
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=300
 		EndCulture
@@ -4964,7 +5001,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=75
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_PASTURE
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=38,y=77
@@ -4990,7 +5028,12 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MOUNT_VERNON
+		BuildingType=BUILDING_MONTICELLO
 		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=551
 		EndCulture
@@ -5018,8 +5061,14 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Baltimore
 		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_HARBOR
 		ReligionType=RELIGION_PROTESTANTISM
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		YearFounded=1729
 		YearAcquired=1729
 		PreviousOwner=CIVILIZATION_ENGLAND
@@ -5101,7 +5150,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Sa&#245; Paulo
-		CityPopulation=14
+		CityPopulation=9
 		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
@@ -5118,6 +5167,11 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_MANUFACTORY
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=905
 		EndCulture
@@ -5294,6 +5348,8 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=200
 		EndCulture
@@ -5693,7 +5749,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Rio de Janeiro
-		CityPopulation=14
+		CityPopulation=8
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
@@ -5703,6 +5759,11 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIGHTHOUSE
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=199
 		EndCulture
@@ -5875,6 +5936,7 @@ BeginPlot
 		CityName=Castries
 		CityPopulation=1
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
@@ -6507,7 +6569,10 @@ BeginPlot
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_SAO_FRANCISCO_SQUARE
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=3
 		EndCulture
@@ -6722,6 +6787,8 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=109
 		EndCulture

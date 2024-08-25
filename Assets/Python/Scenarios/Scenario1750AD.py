@@ -38,7 +38,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iCatholicism,
 		lCivics=[iViceroyalty2, iRoyalColony2, iEncomienda2, iPlunder2, iJesuits2, iConquest2],
-		techs=techs.column(13),
+		techs=techs.column(14),
 		dAttitudes={iPortugal: 2}
 	),
 	Civilization(
@@ -48,7 +48,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iCatholicism,
 		lCivics=[iProprietaries2, iAdmiralty2, iSlavery2, iFactory2, iProfiteering2, iHomesteads2],
-		techs=techs.column(13),
+		techs=techs.column(14),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
 	),
 	Civilization(
@@ -58,7 +58,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iProtestantism,
 		lCivics=[iGovernors2, iCommonLaw2, iSlavery2, iMercantilism2, iHaven2, iProvidence2],
-		techs=techs.column(13),
+		techs=techs.column(14).including(iRegiments, iBonds, iMeteorology, iSurveying, iPhysics),
 		dAttitudes={iFrance: -4, iPortugal: 2}
 	),
 	Civilization(
@@ -68,7 +68,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iCatholicism,
 		lCivics=[iGovernors2, iCharterColony2, iSlavery2, iFactory2, iHaven2, iOutposts2],
-		techs=techs.column(13),
+		techs=techs.column(14).including(iRegiments, iBonds, iMeteorology, iSurveying, iPhysics),
 		dAttitudes={iEngland: -4, iNetherlands: 2}
 	),
 	Civilization(
@@ -78,29 +78,32 @@ lCivilizations = [
 		iImmigration=200,
 		iStateReligion=iProtestantism,
 		lCivics=[iTrustees2, iTradingCompany2, iSlavery2, iMercantilism2, iProfiteering2, iOutposts2],
-		techs=techs.column(13),
+		techs=techs.column(14).including(iRegiments, iBonds, iMeteorology),
 		dAttitudes={iFrance: 2, iPortugal: -2}
 	),
 	Civilization(
 		iIndependent,
 		iGold=500,
-		techs=techs.column(10)
+		techs=techs.column(14)
 	),
 	Civilization(
 		iIndependent2,
 		iGold=500,
-		techs=techs.column(10)
+		techs=techs.column(14)
 	),
 	Civilization(
 		iIndependent3,
 		iGold=500,
-		techs=techs.column(10)
+		techs=techs.column(14)
 	),
 	Civilization(
 		iNative,
 		iGold=300,
 		techs=techs.column(7)
 	),
+	Civilization(
+		iBarbarian,
+	)
 ]
 
 lTribalVillages = [
@@ -112,9 +115,8 @@ def createStartingUnits():
 	pass
 
 def setupGoals(iCiv, goals):
-	# English tech goal
-	if iCiv == iEngland:
-		goals[2].requirements[0].accumulate(4)
+	# MacAurther TODO
+	pass
 	
 
 scenario1750AD = Scenario(
