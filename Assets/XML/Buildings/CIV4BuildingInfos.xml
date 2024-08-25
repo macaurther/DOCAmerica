@@ -46,90 +46,13 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
-			<Type>BUILDING_GOVERNORS_MANSION</Type>
-			<Description>TXT_KEY_BUILDING_GOVERNORS_MANSION</Description>
-			<Civilopedia>TXT_KEY_BUILDING_GOVERNORS_MANSION_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_GOVERNORS_MANSION_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_MANSION</ArtDefineTag>
-			<bCapital>1</bCapital>
-			<bGovernmentCenter>1</bGovernmentCenter>
-			<bNeverCapture>1</bNeverCapture>
-			<bNukeImmune>1</bNukeImmune>
-			<PrereqTech>TECH_OFFICIALS</PrereqTech>
-			<iCost>480</iCost>
-			<iHurryCostModifier>50</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iCitiesPrereq>4</iCitiesPrereq>
-			<iHappiness>2</iHappiness>
-			<fVisibilityPriority>10000.0</fVisibilityPriority>
-			<YieldChanges>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>24</iYield>
-			</YieldChanges>
-			<CommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
-				<iCommerce>8</iCommerce>
-				<iCommerce>8</iCommerce>
-			</CommerceChanges>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>4</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BuildingInfo>
-		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
-			<Type>BUILDING_CAPITOL</Type>
-			<Description>TXT_KEY_BUILDING_CAPITOL</Description>
-			<Civilopedia>TXT_KEY_BUILDING_CAPITOL_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_CAPITOL_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_CAPITOL</ArtDefineTag>
-			<bCapital>1</bCapital>
-			<bGovernmentCenter>1</bGovernmentCenter>
-			<bNeverCapture>1</bNeverCapture>
-			<bNukeImmune>1</bNukeImmune>
-			<PrereqTech>TECH_HUMANITIES</PrereqTech>
-			<iCost>640</iCost>
-			<iHurryCostModifier>50</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iCitiesPrereq>4</iCitiesPrereq>
-			<iHappiness>4</iHappiness>
-			<fVisibilityPriority>10000.0</fVisibilityPriority>
-			<YieldChanges>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>24</iYield>
-			</YieldChanges>
-			<CommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
-				<iCommerce>8</iCommerce>
-				<iCommerce>8</iCommerce>
-			</CommerceChanges>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>8</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<bGraphicalOnly>1</bGraphicalOnly>
-		</BuildingInfo>
-		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClass>
 			<Type>BUILDING_CHIEFTANS_HUT</Type>
 			<Description>TXT_KEY_BUILDING_CHIEFTANS_HUT</Description>
 			<Civilopedia>TXT_KEY_BUILDING_CHIEFTANS_HUT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_CHIEFTANS_HUT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CHIEFTANS_HUT</ArtDefineTag>
+			<bCapital>1</bCapital>
 			<bGovernmentCenter>1</bGovernmentCenter>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
@@ -159,16 +82,18 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClass>
-			<Type>BUILDING_GOVERNORS_RESIDENCE</Type>
-			<Description>TXT_KEY_BUILDING_GOVERNORS_RESIDENCE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_GOVERNORS_RESIDENCE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_GOVERNORS_RESIDENCE_STRATEGY</Strategy>
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Type>BUILDING_GOVERNORS_MANSION</Type>
+			<Description>TXT_KEY_BUILDING_GOVERNORS_MANSION</Description>
+			<Civilopedia>TXT_KEY_BUILDING_GOVERNORS_MANSION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_GOVERNORS_MANSION_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_RESIDENCE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_GOVERNORS_MANSION</ArtDefineTag>
+			<bCapital>1</bCapital>
 			<bGovernmentCenter>1</bGovernmentCenter>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
+			<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			<iCost>240</iCost>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -196,16 +121,18 @@
 			<bGraphicalOnly>1</bGraphicalOnly>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_CHIEFTANS_HUT</BuildingClass>
-			<Type>BUILDING_CONTINENTAL_CONGRESS</Type>
-			<Description>TXT_KEY_BUILDING_CONTINENTAL_CONGRESS</Description>
-			<Civilopedia>TXT_KEY_BUILDING_CONTINENTAL_CONGRESS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_CONTINENTAL_CONGRESS_STRATEGY</Strategy>
+			<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+			<Type>BUILDING_CAPITOL</Type>
+			<Description>TXT_KEY_BUILDING_CAPITOL</Description>
+			<Civilopedia>TXT_KEY_BUILDING_CAPITOL_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_CAPITOL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_CONTINENTAL_CONGRESS</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_CAPITOL</ArtDefineTag>
+			<bCapital>1</bCapital>
 			<bGovernmentCenter>1</bGovernmentCenter>
 			<bNeverCapture>1</bNeverCapture>
 			<bNukeImmune>1</bNukeImmune>
+			<PrereqTech>TECH_HUMANITIES</PrereqTech>
 			<iCost>320</iCost>
 			<iHurryCostModifier>50</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>

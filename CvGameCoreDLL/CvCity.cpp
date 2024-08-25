@@ -1133,8 +1133,7 @@ void CvCity::kill(bool bUpdatePlotGroups)
 
 	if (bCapital)
 	{
-		// MacAurther Capital update: You can't just get a new capital when you lose yours! No more free rides
-		//GET_PLAYER(eOwner).findNewCapital();
+		GET_PLAYER(eOwner).findNewCapital();
 
 		GET_TEAM(GET_PLAYER(eOwner).getTeam()).resetVictoryProgress();
 	}
@@ -2287,12 +2286,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	if (eBuilding == BUILDING_MOUNT_VERNON || eBuilding == BUILDING_MONTICELLO)
 	{
 		if (countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;
-	}
-
-	// MacAurther: Can no longer build Chieftan's Hut once you have a Palace (have a capital)
-	if (GC.getBuildingInfo(eBuilding).getBuildingClassType() == BUILDINGCLASS_CHIEFTANS_HUT)
-	{
-		if(GET_PLAYER(getOwner()).getCapitalCity() != NULL) return false;
 	}
 
 	if (!bTestVisible)

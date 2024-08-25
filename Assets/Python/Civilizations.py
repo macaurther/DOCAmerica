@@ -332,7 +332,6 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iProtestantism,
 		lCivics=[iPlutocracy3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
-		lEnemies=[iEngland],
 		techs=techs.column(14).including(iRepresentation, iIndependence, iSurveying)
 	),
 	Civilization(

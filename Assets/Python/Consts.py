@@ -112,7 +112,7 @@ iLime = 100
 iNumMinorCities = 6
 
 # scripted conquerors
-iNumConquests = 23
+iNumConquests = 21
 
 lNeighbours = [
 	(iMaya, iAztecs),
@@ -794,7 +794,7 @@ lPossibleExpeditionaries = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, l
 
 lPossibleEndowments = [lEndowments]
 
-lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries
+lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries + lPossibleEndowments
 lNoTrainingNeeded = lGreatPeople + lAfricanSlaves + lColonists + lMigrantWorkers + lEndowments
 
 # A goal number of cities for an AI to build, used in Immigration Manager

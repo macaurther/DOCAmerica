@@ -2099,15 +2099,14 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade, bool b
 		CvEventReporter::getInstance().cityAcquiredAndKept(getID(), pNewCity);
 	}
 
-	// MacAurther Capital update: Actually, no you don't just get a capital for free anymore
 	// Leoreth: make sure flip at the beginning creates a capital
-	/*BuildingClassTypes eCapitalBuildingClass = (BuildingClassTypes)GC.getDefineINT("CAPITAL_BUILDINGCLASS");
+	BuildingClassTypes eCapitalBuildingClass = (BuildingClassTypes)GC.getDefineINT("CAPITAL_BUILDINGCLASS");
 	BuildingTypes eCapitalBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(eCapitalBuildingClass)));
 
 	if (!isMinorCiv() && !isBarbarian() && getBuildingClassCount(eCapitalBuildingClass) == 0)
 	{
 		findNewCapital();
-	}*/
+	}
 
 	// Forcing events that deal with the old city not to expire just because we conquered that city
 	for (CvEventMap::iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
@@ -3013,8 +3012,7 @@ void CvPlayer::doTurn()
 
 	GC.getGameINLINE().verifyDeals();
 
-	//MacAurther Capital update: You don't always have a capital
-	//checkCapitalCity();
+	checkCapitalCity();
 
 	AI_doTurnPre();
 
@@ -4842,13 +4840,6 @@ int CvPlayer::getNumAvailableBonuses(BonusTypes eBonus) const
 	CvPlotGroup* pPlotGroup;
 
 	pPlotGroup = ((getCapitalCity() != NULL) ? getCapitalCity()->plot()->getOwnerPlotGroup() : NULL);
-
-	// MacAurther: Capital update: When there is no capital, use first city
-	if (pPlotGroup == NULL)
-	{
-		int iLoop;
-		pPlotGroup = ((firstCity(&iLoop) != NULL) ? firstCity(&iLoop)->plot()->getOwnerPlotGroup() : NULL);
-	}
 
 	if (pPlotGroup != NULL)
 	{

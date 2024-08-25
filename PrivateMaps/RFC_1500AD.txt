@@ -5,7 +5,7 @@ BeginGame
 	Calendar=CALENDAR_DEFAULT
 	Option=GAMEOPTION_AGGRESSIVE_AI
 	Option=GAMEOPTION_NO_TECH_BROKERING
-	GameTurn=181
+	GameTurn=200
 	StartYear=1500
 	Description=TXT_KEY_RHYES_WB_DESC
 	ModPath=Mods\DOCAmerica
@@ -1543,7 +1543,6 @@ BeginPlot
 		BuildingType=BUILDING_INCA_KALLANKA
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_INCAN_TAMBO
-		BuildingType=BUILDING_MACHU_PICCHU
 		BuildingType=BUILDING_INTI_TEMPLE
 		BeginCulture
 			Civilization=CIVILIZATION_INCA, Culture=58
@@ -2202,8 +2201,6 @@ BeginPlot
 		BuildingType=BUILDING_JEWELLER
 		BuildingType=BUILDING_WALLS
 		BuildingType=BUILDING_INCAN_TAMBO
-		BuildingType=BUILDING_TEMPLE_OF_KUKULKAN
-		BuildingType=BUILDING_PYRAMID_OF_THE_SUN
 		BuildingType=BUILDING_INTI_TEMPLE
 		BeginCulture
 			Civilization=CIVILIZATION_INCA, Culture=927
@@ -3029,7 +3026,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santo Domingo
 		CityPopulation=1
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=6
@@ -3380,7 +3377,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Reykjav&#237;k
 		CityPopulation=7
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS

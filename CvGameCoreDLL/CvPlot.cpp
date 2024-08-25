@@ -6435,7 +6435,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 
 		// MacAurther: Forts
 		// Make sure to update Fort Claims before reporting event, so that any callbacks know who owns the fort
-		updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
+		if (eOldImprovement == IMPROVEMENT_FORT || eNewValue == IMPROVEMENT_FORT) updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
 
 		if (getImprovementType() != NO_IMPROVEMENT)
 		{

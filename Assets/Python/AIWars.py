@@ -5,6 +5,9 @@ from Events import handler
 from Resurrection import getResurrectionTechs
 
 
+def processConquest(iConquest, iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval):
+	return iConquest + 1, (iConquest, iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval)
+
 ### Constants ###
 
 iMinIntervalEarly = 10
@@ -14,6 +17,7 @@ iMaxIntervalLate = 60
 iThreshold = 100
 iMinValue = 30
 
+iConquestNum = 0
 
 # Inca ------------------------------------------------------------------------------------------------------------------------
 iIncaWariYear = 1200
@@ -29,9 +33,9 @@ tIncaChimuTL = (20, 36)
 tIncaChimuBR = (23, 40)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestIncaWari = (0, iInca, iWari, tIncaWariTL, tIncaWariBR, 3, iIncaWariYear, 10)
-tConquestIncaTiwanaku = (1, iInca, iTiwanaku, tIncaTiwanakuTL, tIncaTiwanakuBR, 2, iIncaTiwanakuYear, 10)
-tConquestIncaChimu = (2, iInca, iChimu, tIncaChimuTL, tIncaChimuBR, 3, iIncaChimuYear, 10)
+iConquestNum, tConquestIncaWari = processConquest(iConquestNum, iInca, iWari, tIncaWariTL, tIncaWariBR, 3, iIncaWariYear, 10)
+iConquestNum, tConquestIncaTiwanaku = processConquest(iConquestNum, iInca, iTiwanaku, tIncaTiwanakuTL, tIncaTiwanakuBR, 2, iIncaTiwanakuYear, 10)
+iConquestNum, tConquestIncaChimu = processConquest(iConquestNum, iInca, iChimu, tIncaChimuTL, tIncaChimuBR, 3, iIncaChimuYear, 10)
 
 # Spain ------------------------------------------------------------------------------------------------------------------------
 iSpainAztecsYear = 1519
@@ -71,15 +75,15 @@ tSpainMayaTL = (20, 58)
 tSpainMayaBR = (25, 63)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestSpainAztecs = (3, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 2, iSpainAztecsYear, 10)
-tConquestSpainPurepechans = (4, iSpain, iPurepecha, tSpainPurepechansTL, tSpainPurepechansBR, 2, iSpainPurepechansYear, 10)
-tConquestSpainZapotec = (5, iSpain, iZapotec, tSpainZapotecTL, tSpainZapotecBR, 2, iSpainZapotecYear, 10)
-tConquestSpainInca = (6, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 3, iSpainIncaYear, 10)
-tConquestSpainWari = (7, iSpain, iWari, tSpainWariTL, tSpainWariBR, 2, iSpainWariYear, 10)
-tConquestSpainChimu = (8, iSpain, iChimu, tSpainChimuTL, tSpainChimuBR, 2, iSpainChimuYear, 10)
-tConquestSpainMuisca = (9, iSpain, iMuisca, tSpainMuiscaTL, tSpainMuiscaBR, 2, iSpainMuiscaYear, 10)
-tConquestSpainPueblo = (10, iSpain, iPuebloan, tSpainPuebloTL, tSpainPuebloBR, 2, iSpainPuebloYear, 10)
-tConquestSpainMaya = (11, iSpain, iMaya, tSpainMayaTL, tSpainMayaBR, 2, iSpainMayaYear, 10)
+iConquestNum, tConquestSpainAztecs = processConquest(iConquestNum, iSpain, iAztecs, tSpainAztecsTL, tSpainAztecsBR, 2, iSpainAztecsYear, 10)
+iConquestNum, tConquestSpainPurepechans = processConquest(iConquestNum, iSpain, iPurepecha, tSpainPurepechansTL, tSpainPurepechansBR, 2, iSpainPurepechansYear, 10)
+iConquestNum, tConquestSpainZapotec = processConquest(iConquestNum, iSpain, iZapotec, tSpainZapotecTL, tSpainZapotecBR, 2, iSpainZapotecYear, 10)
+iConquestNum, tConquestSpainInca = processConquest(iConquestNum, iSpain, iInca, tSpainIncaTL, tSpainIncaBR, 3, iSpainIncaYear, 10)
+iConquestNum, tConquestSpainWari = processConquest(iConquestNum, iSpain, iWari, tSpainWariTL, tSpainWariBR, 2, iSpainWariYear, 10)
+iConquestNum, tConquestSpainChimu = processConquest(iConquestNum, iSpain, iChimu, tSpainChimuTL, tSpainChimuBR, 2, iSpainChimuYear, 10)
+iConquestNum, tConquestSpainMuisca = processConquest(iConquestNum, iSpain, iMuisca, tSpainMuiscaTL, tSpainMuiscaBR, 2, iSpainMuiscaYear, 10)
+iConquestNum, tConquestSpainPueblo = processConquest(iConquestNum, iSpain, iPuebloan, tSpainPuebloTL, tSpainPuebloBR, 2, iSpainPuebloYear, 10)
+iConquestNum, tConquestSpainMaya = processConquest(iConquestNum, iSpain, iMaya, tSpainMayaTL, tSpainMayaBR, 2, iSpainMayaYear, 10)
 
 # England ------------------------------------------------------------------------------------------------------------------------
 iEnglandNetherlandsYear = 1670
@@ -90,14 +94,6 @@ iEnglandQuebecYear = 1758
 tEnglandQuebecTL = (42, 89)
 tEnglandQuebecBR = (47, 93)
 
-iEnglandAmericaNorthYear = 1777
-tEnglandAmericaNorthTL = (41, 81)
-tEnglandAmericaNorthBR = (45, 86)
-
-iEnglandAmericaSouthYear = 1778
-tEnglandAmericaSouthTL = (33, 71)
-tEnglandAmericaSouthBR = (39, 78)
-
 iEnglandAmerica1812WashingtonYear = 1814
 tEnglandAmerica1812WashingtonTL = (38, 76)
 tEnglandAmerica1812WashingtonBR = (14, 81)
@@ -107,12 +103,10 @@ tEnglandAmerica1812NewOrleansTL = (23, 72)
 tEnglandAmerica1812NewOrleansBR = (29, 73)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestEnglandNetherlands = (12, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
-tConquestEnglandQuebec = (13, iEngland, iFrance, tEnglandQuebecTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
-tConquestEnglandAmericaNorth = (14, iEngland, iAmerica, tEnglandAmericaNorthTL, tEnglandAmericaNorthBR, 2, iEnglandAmericaNorthYear, 10)
-tConquestEnglandAmericaSouth = (15, iEngland, iAmerica, tEnglandAmericaSouthTL, tEnglandAmericaSouthBR, 1, iEnglandAmericaSouthYear, 10)
-tConquestEngland1812Washington = (16, iEngland, iAmerica, tEnglandAmerica1812WashingtonTL, tEnglandAmerica1812WashingtonBR, 1, iEnglandAmerica1812WashingtonYear, 10)
-tConquestEngland1812NewOrleans = (17, iEngland, iAmerica, tEnglandAmerica1812NewOrleansTL, tEnglandAmerica1812NewOrleansBR, 1, iEnglandAmerica1812NewOrleansYear, 10)
+iConquestNum, tConquestEnglandNetherlands = processConquest(iConquestNum, iEngland, iNetherlands, tEnglandNetherlandsTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
+iConquestNum, tConquestEnglandQuebec = processConquest(iConquestNum, iEngland, iFrance, tEnglandQuebecTL, tEnglandNetherlandsBR, 2, iEnglandNetherlandsYear, 10)
+iConquestNum, tConquestEngland1812Washington = processConquest(iConquestNum, iEngland, iAmerica, tEnglandAmerica1812WashingtonTL, tEnglandAmerica1812WashingtonBR, 1, iEnglandAmerica1812WashingtonYear, 10)
+iConquestNum, tConquestEngland1812NewOrleans = processConquest(iConquestNum, iEngland, iAmerica, tEnglandAmerica1812NewOrleansTL, tEnglandAmerica1812NewOrleansBR, 1, iEnglandAmerica1812NewOrleansYear, 10)
 
 # France ------------------------------------------------------------------------------------------------------------------------
 iFranceMexicoYear = 1861
@@ -120,7 +114,7 @@ tFranceMexicoTL = (12, 60)
 tFranceMexicoBR = (19, 70)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestFranceMexico = (18, iFrance, iMexico, tFranceMexicoTL, tFranceMexicoBR, 3, iFranceMexicoYear, 10)
+iConquestNum, tConquestFranceMexico = processConquest(iConquestNum, iFrance, iMexico, tFranceMexicoTL, tFranceMexicoBR, 3, iFranceMexicoYear, 10)
 
 # Netherlands --------------------------------------------------------------------------------------------------------------------
 iNetherlandsNorseYear = 1655
@@ -128,7 +122,7 @@ tNetherlandsNorseTL = (39, 78)
 tNetherlandsNorseBR = (41, 82)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestNetherlandsNorse = (19, iEngland, iNetherlands, tNetherlandsNorseTL, tNetherlandsNorseBR, 1, iNetherlandsNorseYear, 10)
+iConquestNum, tConquestNetherlandsNorse = processConquest(iConquestNum, iEngland, iNetherlands, tNetherlandsNorseTL, tNetherlandsNorseBR, 1, iNetherlandsNorseYear, 10)
 
 # America ------------------------------------------------------------------------------------------------------------------------
 iAmericaCanadaYear = 1812
@@ -144,17 +138,18 @@ tAmericaCubaTL = (27, 58)
 tAmericaCubaBR = (36, 63)
 
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
-tConquestAmericaCanada = (20, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
-tConquestAmericaMexico = (21, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
-tConquestAmericaCuba = (22, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
+iConquestNum, tConquestAmericaCanada = processConquest(iConquestNum, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
+iConquestNum, tConquestAmericaMexico = processConquest(iConquestNum, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
+iConquestNum, tConquestAmericaCuba = processConquest(iConquestNum, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
 
 
 lConquests = [tConquestIncaWari, tConquestIncaTiwanaku, tConquestIncaChimu,
 tConquestSpainAztecs, tConquestSpainPurepechans, tConquestSpainZapotec, tConquestSpainInca, tConquestSpainWari, tConquestSpainChimu, tConquestSpainMuisca, tConquestSpainPueblo, tConquestSpainMaya,
-tConquestEnglandNetherlands, tConquestEnglandAmericaNorth, tConquestEnglandAmericaSouth, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, 
+tConquestEnglandNetherlands, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, 
 tConquestFranceMexico,
 tConquestNetherlandsNorse,
 tConquestAmericaCanada, tConquestAmericaMexico, tConquestAmericaCuba]
+
 
 @handler("GameStart")
 def setup():

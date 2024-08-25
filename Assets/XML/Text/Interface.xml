@@ -4009,6 +4009,30 @@
 		<Spanish>[ICON_BULLET]Can attack from range</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES</Tag>
+		<English>The Crown is assembling an expeditionary force to regain control of the colonies!</English>
+		<French>The Crown is assembling an expeditionary force to regain control of the colonies!</French>
+		<German>The Crown is assembling an expeditionary force to regain control of the colonies!</German>
+		<Italian>The Crown is assembling an expeditionary force to regain control of the colonies!</Italian>
+		<Spanish>The Crown is assembling an expeditionary force to regain control of the colonies!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES_AMERICA</Tag>
+		<English>The Crown has rejected the Olive Branch Petition and is assembling an expeditionary force to regain control of the colonies!</English>
+		<French>The Crown has rejected the Olive Branch Petition and is assembling an expeditionary force to regain control of the colonies!</French>
+		<German>The Crown has rejected the Olive Branch Petition and is assembling an expeditionary force to regain control of the colonies!</German>
+		<Italian>The Crown has rejected the Olive Branch Petition and is assembling an expeditionary force to regain control of the colonies!</Italian>
+		<Spanish>The Crown has rejected the Olive Branch Petition and is assembling an expeditionary force to regain control of the colonies!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXPEDITIONARY_EXPEDITIONARIES</Tag>
+		<English>The colonies are in open rebellion! The Crown has sent additional forces to quell the rebels.</English>
+		<French>The colonies are in open rebellion! The Crown has sent additional forces to quell the rebels.</French>
+		<German>The colonies are in open rebellion! The Crown has sent additional forces to quell the rebels.</German>
+		<Italian>The colonies are in open rebellion! The Crown has sent additional forces to quell the rebels.</Italian>
+		<Spanish>The colonies are in open rebellion! The Crown has sent additional forces to quell the rebels.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_</Tag>
 		<English></English>
 		<French></French>

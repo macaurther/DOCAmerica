@@ -5,7 +5,6 @@ from Locations import *
 from RFCUtils import *
 from Core import *
 
-	
 lCivilizations = [
 	Civilization(
 		iNorse,
@@ -145,7 +144,7 @@ scenario1750AD = Scenario(
 	lInitialWars = [
 	],
 	
-	lAllGoalsFailed = [iSpain, iPortugal],
+	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu, iSpain, iPortugal],
 	lGoalsSucceeded = [(iFrance, 0), (iNetherlands, 1)],
 	setupGoals = setupGoals,
 	

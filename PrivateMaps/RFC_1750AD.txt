@@ -5,7 +5,7 @@ BeginGame
 	Calendar=CALENDAR_DEFAULT
 	Option=GAMEOPTION_AGGRESSIVE_AI
 	Option=GAMEOPTION_NO_TECH_BROKERING
-	GameTurn=321
+	GameTurn=350
 	StartYear=1750
 	Description=TXT_KEY_RHYES_WB_DESC
 	ModPath=Mods\DOCAmerica
@@ -715,7 +715,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_RUSSIA
 		CityName=Novo-Arkhangelsk
 		CityPopulation=1
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		ReligionType=RELIGION_ORTHODOXY
@@ -4985,7 +4985,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Williamsburg
 		CityPopulation=6
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_AQUEDUCT
@@ -5102,7 +5102,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Sa&#245; Paulo
 		CityPopulation=14
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
@@ -5285,7 +5285,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santo Domingo
 		CityPopulation=5
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
@@ -6039,7 +6039,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Qu&#233;bec
 		CityPopulation=6
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
@@ -6144,7 +6144,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_NETHERLANDS
 		CityName=Paramaribo
 		CityPopulation=3
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_NETHERLANDS, Culture=100
@@ -6649,7 +6649,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Reykjav&#237;k
 		CityPopulation=8
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER

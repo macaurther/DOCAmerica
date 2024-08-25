@@ -17,16 +17,6 @@
 			<DefaultBuilding>BUILDING_PALACE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_CHIEFTANS_HUT</Type>
-			<Description>TXT_KEY_BUILDING_CHIEFTANS_HUT</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>1</iExtraPlayerInstances>
-			<bNoLimit>1</bNoLimit>
-			<DefaultBuilding>BUILDING_CHIEFTANS_HUT</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_GRANARY</Type>
 			<Description>TXT_KEY_BUILDING_GRANARY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

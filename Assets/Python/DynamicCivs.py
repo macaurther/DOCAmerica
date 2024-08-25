@@ -727,11 +727,13 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	
 	elif iCiv == iAmerica:
 		if civic.iLabor == iSlavery3:
+			# Capital has to be in the South
+			if tCapitalCoords[1] < 79:
+				return "TXT_KEY_CIV_AMERICA_CSA"
+				
 			if isControlled(iPlayer, plots.region(rMesoamerica)) and isControlled(iPlayer, plots.region(rCaribbean)):
 				return "TXT_KEY_CIV_AMERICA_GOLDEN_CIRCLE"
 			
-			if civic.iAdministration == iConfederacy3:
-				return "TXT_KEY_CIV_AMERICA_CSA"
 	
 	elif iCiv == iColombia:
 		if bEmpire:
