@@ -549,7 +549,6 @@ dStartingUnits = CivDict({
 		iSkirmish: 2,
 		iCav: 2,
 		iSiegeCity: 3,
-		iMissionary: 1,
 	},
 	iColombia: {
 		iSettle: 4,
@@ -558,7 +557,6 @@ dStartingUnits = CivDict({
 		iBase: 7,
 		iSiege: 2,
 		iSiegeCity: 3,
-		iMissionary: 1,
 	},
 	iPeru: {
 		iSettle: 3,
@@ -567,7 +565,6 @@ dStartingUnits = CivDict({
 		iBase: 7,
 		iSiege: 1,
 		iSiegeCity: 2,
-		iMissionary: 1,
 		iFerrySea: 1,
 		iEscortSea: 1,
 	},
@@ -579,7 +576,6 @@ dStartingUnits = CivDict({
 		iSkirmish: 3,
 		iSiege: 1,
 		iSiegeCity: 2,
-		iMissionary: 1,
 		iWorkSea: 2,
 		iFerrySea: 2,
 		iEscortSea: 3,
@@ -591,7 +587,6 @@ dStartingUnits = CivDict({
 		iBase: 6,
 		iSiege: 1,
 		iSiegeCity: 1,
-		iMissionary: 1,
 		iFerrySea: 1,
 		iEscortSea: 1,
 	},
@@ -601,7 +596,6 @@ dStartingUnits = CivDict({
 		iMilitia: 6,
 		iBase: 8,
 		iCav: 2,
-		iMissionary: 1,
 	},
 }, {})
 

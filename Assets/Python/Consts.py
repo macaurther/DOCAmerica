@@ -66,11 +66,11 @@ lCivOrder = lBirthOrder + [
 # used in: Congresses, DynamicCivs, Plague, RFCUtils, UniquePowers, Victory
 # a civilisation can be in multiple civ groups
 iNumCivGroups = 6
-(iCivGroupEurope, iCivGroupNativeAmerica, iCivGroupAmerica, iCivGroupNATO, iCivGroupMesoamerica, iCivGroupAndes) = range(iNumCivGroups)
+(iCivGroupEurope, iCivGroupNative, iCivGroupAmerica, iCivGroupNATO, iCivGroupMesoamerica, iCivGroupAndes) = range(iNumCivGroups)
 
 dCivGroups = {
 iCivGroupEurope : [iNorse, iSpain, iFrance, iEngland, iNetherlands, iPortugal, iRussia],
-iCivGroupNativeAmerica : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iLakota, iZapotec, iPurepecha],
+iCivGroupNative : [iMaya, iInca, iAztecs, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iMuisca, iChimu, iInuit, iIroquois, iLakota, iZapotec, iPurepecha],
 iCivGroupAmerica : [iAmerica, iArgentina, iMexico, iColombia, iBrazil, iCanada, iHaiti, iPeru, iVenezuela],
 iCivGroupNATO : [iAmerica, iCanada, iNorse, iEngland, iFrance, iSpain, iPortugal, iNetherlands],
 iCivGroupMesoamerica : [iMaya, iAztecs, iTeotihuacan, iZapotec, iPurepecha],
@@ -760,21 +760,19 @@ event_cancel = "INTERFACE_BUTTONS_CANCEL"
 # Immigration
 iNumImmigrantCategories = 21
 #				2				3				4				5				6				7				8				9				10
-(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iGreatPeopleCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iOldWorldBoostsCat,iExplorersCat,
-iMilitiaCat,	iMainlineCat,	iEliteCat,		iCollateralCat,	iSkirmishCat,	iLightCavCat,	iHeavyCavCat,	iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,
-iCapitalShipCat) = range(iNumImmigrantCategories)
+(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	iMainlineCat,	
+iEliteCat,		iCollateralCat,	iSkirmishCat,	iLightCavCat,	iHeavyCavCat,	iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat,iEndowmentsCat,
+iGreatPeopleCat) = range(iNumImmigrantCategories)
 
 lSettlers = [iSettler, iPioneer]
 lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
 lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship, iTransport]
-lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
 lAfricanSlaves = [iAfricanSlave2, iAfricanSlave3]
 lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for Immigration
 lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
-lEndowments = [iOldWorldArt, iOldWorldAssets, iOldWorldInnovations]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
@@ -784,8 +782,11 @@ lSkirmishMercs = [iSkirmisher, iGrenadier, iMarine]
 lCavalryMercs = [iCuirassier, iConquistador, iDragoon, iCavalry, iLightTank, iTank]
 lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
 lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
-lSkirmishShips = [iPrivateer, iMonitor, iSubmarine]
+lSkirmishShips = [iPrivateer, iSubmarine] # Note: Can't hire Monitors because they can't go in ocean
 lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
+lEndowments = [iOldWorldArt, iOldWorldAssets, iOldWorldInnovations]
+lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
+
 
 lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lAfricanSlaves, lColonists, lMigrantWorkers]
 
@@ -793,7 +794,7 @@ lPossibleExpeditionariesLand = [lExplorers, lMilitia, lMainlineMercs, lEliteMerc
 lPossibleExpeditionariesSea = [lMainlineShips, lSkirmishShips, lCapitalShips]
 lPossibleExpeditionaries = lPossibleExpeditionariesLand + lPossibleExpeditionariesSea
 
-lPossibleEndowments = [lEndowments, lGreatPeople]
+lPossibleEndowments = [lGreatPeople, lEndowments]
 
 lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries + lPossibleEndowments
 lNoTrainingNeeded = lGreatPeople + lAfricanSlaves + lColonists + lMigrantWorkers + lEndowments

@@ -1743,7 +1743,7 @@ tRenames = (
 	"Seneca"		:	"Buffalo",
 	"Seattle"		:	"Seattle",
 	"Jacksonville"	:	"Jacksonville",
-	"St. Louis"		:	"Fort Saint-Louis",
+	"St. Louis"		:	"St. Louis",
 	"Tenochtitlan"	:	"Mexico City",
 	"Vancouver"		:	"Vancouver",
 	"Vinland"		:	"Anse aux Meadows",

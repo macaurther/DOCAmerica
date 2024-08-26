@@ -63,84 +63,86 @@ def expeditionaryForce(iGameTurn):
 	for iRevolutionaryCiv in lRevolutionaries:
 		if turn() != year(dBirth[iRevolutionaryCiv]) + 1:
 			continue
-		
-		if iRevolutionaryCiv in lRevolutionaries:
-			iRevolutionaryPlayer = slot(iRevolutionaryCiv)
 
-			if iRevolutionaryCiv == iAmerica:
-				tExpeditionarySpawn = (45, 84)
-				iExpeditionaryPlayer = slot(iEngland)
-			elif iRevolutionaryCiv == iHaiti:
-				tExpeditionarySpawn = (36, 56)
-				iExpeditionaryPlayer = slot(iFrance)
-			elif iRevolutionaryCiv == iArgentina:
-				tExpeditionarySpawn = (23, 8)
-				iExpeditionaryPlayer = slot(iSpain)
-			elif iRevolutionaryCiv == iMexico:
-				tExpeditionarySpawn = (16, 64)
-				iExpeditionaryPlayer = slot(iSpain)
-			elif iRevolutionaryCiv == iColombia:
-				tExpeditionarySpawn = (31, 48)
-				iExpeditionaryPlayer = slot(iSpain)
-			elif iRevolutionaryCiv == iPeru:
-				tExpeditionarySpawn = (20, 30)
-				iExpeditionaryPlayer = slot(iSpain)
-			else:
-				return
-			
-			if iExpeditionaryPlayer == -1 or player(iExpeditionaryPlayer) is None:
-				return
-			
-			iModifier1 = 0
-			iModifier2 = 0
-			
-			if player(iRevolutionaryPlayer).isHuman() and player(iRevolutionaryPlayer).getNumCities() > 6:
-				iModifier1 = 2
-			else:
-				if iRevolutionaryCiv == iAmerica or player(iRevolutionaryPlayer).getNumCities() > 4:
-					iModifier1 = 3
-				if not player(iRevolutionaryPlayer).isHuman():
-					iModifier2 = 1
-					
-			if year() < year(dBirth[active()]):
-				iModifier1 += 1
-				iModifier2 += 1
-			
-			if iRevolutionaryCiv == iHaiti or iRevolutionaryCiv == iPeru:
-				iModifier1 -= 2
-				iModifier2 -= 2
-			
-			# disable birth protection if still active
-			player(iRevolutionaryPlayer).setBirthProtected(False)
-			for p in plots.all():
-				if p.getBirthProtected() == iRevolutionaryPlayer:
-					p.resetBirthProtected()
+		iRevolutionaryPlayer = slot(iRevolutionaryCiv)
+
+		if iRevolutionaryCiv == iAmerica:
+			tExpeditionarySpawn = (45, 84)
+			iExpeditionaryPlayer = slot(iEngland)
+		elif iRevolutionaryCiv == iHaiti:
+			tExpeditionarySpawn = (36, 56)
+			iExpeditionaryPlayer = slot(iFrance)
+		# The Spanish revolutionary wars were more about taking land away from Spain instead of a Spanish expeditionary force, so I guess this doesn't really fit for them
+		# Also, at least in the 1750 AD Scenario, Spain is pretty buff already
+		#elif iRevolutionaryCiv == iArgentina:
+		#	tExpeditionarySpawn = (23, 8)
+		#	iExpeditionaryPlayer = slot(iSpain)
+		#elif iRevolutionaryCiv == iMexico:
+		#	tExpeditionarySpawn = (16, 64)
+		#	iExpeditionaryPlayer = slot(iSpain)
+		#elif iRevolutionaryCiv == iColombia:
+		#	tExpeditionarySpawn = (31, 48)
+		#	iExpeditionaryPlayer = slot(iSpain)
+		#elif iRevolutionaryCiv == iPeru:
+		#	tExpeditionarySpawn = (20, 30)
+		#	iExpeditionaryPlayer = slot(iSpain)
+		else:
+			return
+		
+		if iExpeditionaryPlayer == -1 or player(iExpeditionaryPlayer) is None:
+			return
+		
+		iModifier1 = 0
+		iModifier2 = 0
+		
+		if player(iRevolutionaryPlayer).isHuman() and player(iRevolutionaryPlayer).getNumCities() > 6:
+			iModifier1 = 2
+		else:
+			if iRevolutionaryCiv == iAmerica or player(iRevolutionaryPlayer).getNumCities() > 4:
+				iModifier1 = 3
+			if not player(iRevolutionaryPlayer).isHuman():
+				iModifier2 = 1
 				
-			team(iExpeditionaryPlayer).declareWar(iRevolutionaryPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
+		if year() < year(dBirth[active()]):
+			iModifier1 += 1
+			iModifier2 += 1
+		
+		# Make it easier for some civs
+		if iRevolutionaryCiv in [iHaiti]:
+			iModifier1 -= 2
+			iModifier2 -= 2
+		
+		# disable birth protection if still active
+		player(iRevolutionaryPlayer).setBirthProtected(False)
+		for p in plots.all():
+			if p.getBirthProtected() == iRevolutionaryPlayer:
+				p.resetBirthProtected()
 			
-			dExpeditionSeaUnits = {
-				iEscortSea: 8 + iModifier1 + iModifier2,
-				iFerrySea: 6 + iModifier1 + iModifier2,
-			}
-			
-			dExpeditionUnits = {
-				iBase: 6 + iModifier2,
-				iCounter: 4,
-				iSkirmish: 3 + iModifier1 + iModifier2,
-				iSiegeCity: 4 + iModifier1,
-			}
-			
-			seaUnits = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionSeaUnits.items())
-			seaUnits.promotion(infos.type("PROMOTION_MERCENARY"))
-			
-			units = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionUnits.items())
-			units.promotion(infos.type("PROMOTION_MERCENARY"))
-			
-			if iRevolutionaryCiv == iAmerica:
-				message(iRevolutionaryPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES_AMERICA')
-			else:
-				message(iRevolutionaryPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES')
-			message(iExpeditionaryPlayer, 'TXT_KEY_EXPEDITIONARY_EXPEDITIONARIES')
+		team(iExpeditionaryPlayer).declareWar(iRevolutionaryPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
+		
+		dExpeditionSeaUnits = {
+			iEscortSea: 8 + iModifier1 + iModifier2,
+			iFerrySea: 6 + iModifier1 + iModifier2,
+		}
+		
+		dExpeditionUnits = {
+			iBase: 6 + iModifier2,
+			iCounter: 4,
+			iSkirmish: 3 + iModifier1 + iModifier2,
+			iSiegeCity: 4 + iModifier1,
+		}
+		
+		seaUnits = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionSeaUnits.items())
+		seaUnits.promotion(infos.type("PROMOTION_MERCENARY"))
+		
+		units = createRoleUnits(iExpeditionaryPlayer, tExpeditionarySpawn, dExpeditionUnits.items())
+		units.promotion(infos.type("PROMOTION_MERCENARY"))
+		
+		if iRevolutionaryCiv == iAmerica:
+			message(iRevolutionaryPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES_AMERICA')
+		else:
+			message(iRevolutionaryPlayer, 'TXT_KEY_EXPEDITIONARY_REVOLUTIONARIES')
+		message(iExpeditionaryPlayer, 'TXT_KEY_EXPEDITIONARY_EXPEDITIONARIES')
 
 ### CITY BUILT ###
 

@@ -109,7 +109,7 @@ def firstCityOnCityAcquiredAndKept(iPlayer, city):
 @handler("cityAcquiredAndKept")
 def nativeCityConquered(iPlayer, pCity):
 	# Check if city was taken from a Native
-	if pCity.getPreviousCiv() in dCivGroups[iCivGroupNativeAmerica] + [iNative]:
+	if pCity.getPreviousCiv() in dCivGroups[iCivGroupNative] + [iNative]:
 		# Give a Native Tech
 		lPossibleTechs = []
 		for iTech in lNativeTechs:

@@ -27,7 +27,7 @@ class TechLog(object):
 	GROUP_NAMES = {
 		iCivGroupEurope: "Europe",
 		iCivGroupAmerica: "America",
-		iCivGroupNativeAmerica: "Native America",
+		iCivGroupNative: "Native America",
 		iCivGroupNATO: "NATO",
 		iCivGroupMesoamerica: "Mesoamerica",
 		iCivGroupAndes: "Andes",

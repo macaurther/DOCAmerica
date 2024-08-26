@@ -58,6 +58,9 @@ lAlwaysClear = [
 	iMississippi,
 ]
 
+lBirthWars = [
+]
+
 
 ### Event Handlers ###
 

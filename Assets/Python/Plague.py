@@ -184,7 +184,7 @@ def calculateTotalPlagueHealth(iPlayer, iPlague):
 		iHealth += rand(40)
 		
 		if iPlague == 0: # Columbian exchange plague
-			if civ(iPlayer) in dCivGroups[iCivGroupNativeAmerica]:
+			if civ(iPlayer) in dCivGroups[iCivGroupNative]:
 				iHealth -= 5
 	
 	return iHealth

@@ -14,11 +14,18 @@ dRelocatedCapitals = {
 
 @handler("cityAcquired")
 def resetSlaves(iOwner, iPlayer, city):
-	if player(iPlayer).canUseSlaves():
-		freeSlaves(city, iPlayer)
-	else:
-		city.setFreeSpecialistCount(iSpecialistSlave, 0)
-		
+	freeSlaves(city, iPlayer)
+
+# MacAurther: Don't let non-Natives keep all the settled Native great people on conquest (Spain becomes mega buff)
+@handler("cityAcquired")
+def resetGreatPeople(iOldOwner, iPlayer, city, bConquest, bTrade):
+	if iOldOwner not in dCivGroups[iCivGroupNative]:
+		return
+	if iPlayer in dCivGroups[iCivGroupNative]:
+		return
+	
+	for iGreatSpecialist in lGreatSpecialists:
+		city.setFreeSpecialistCount(iGreatSpecialist, 0)
 
 @handler("cityAcquired")
 def resetAdminCenter(iOwner, iPlayer, city):

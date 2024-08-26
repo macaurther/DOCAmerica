@@ -8455,7 +8455,8 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 							if (iFoodChange < 0)
 							{
 								iValue *= 4 - iFoodChange;
-								iValue /= 3 + aiFinalYields[YIELD_FOOD];
+								//iValue /= 3 + aiFinalYields[YIELD_FOOD];	// MacAurther: Divide by Zero error possible here, protect against it
+								iValue /= (aiFinalYields[YIELD_FOOD] == -3 ? 1 : 3 + aiFinalYields[YIELD_FOOD]);
 							}
 						}
 
