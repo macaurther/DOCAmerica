@@ -92,6 +92,9 @@ def expeditionaryForce(iGameTurn):
 		if iExpeditionaryPlayer == -1 or player(iExpeditionaryPlayer) is None:
 			return
 		
+		if player(iRevolutionaryPlayer) is None:
+			print("ERROR: player(iRevolutionaryPlayer) is None! iRevolutionaryPlayer: " + str(iRevolutionaryPlayer) + " iRevolutionaryCiv: " + str(iRevolutionaryCiv), + " Turn: " + str(iGameTurn))
+		
 		iModifier1 = 0
 		iModifier2 = 0
 		

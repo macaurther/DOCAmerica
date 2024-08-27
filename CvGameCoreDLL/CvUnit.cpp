@@ -3081,6 +3081,12 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 		}
 	}
 
+	// MacAurther: Forts: Capture enemy Forts
+	if (pPlot->getOwner() != NULL && pPlot->getImprovementType() == IMPROVEMENT_FORT && pPlot->getOwner() != getOwner() && GET_TEAM(GET_PLAYER(pPlot->getOwner()).getTeam()).isAtWar(GET_PLAYER(getOwner()).getTeam()))
+	{
+		pPlot->updateFortClaims(getOwner());
+	}
+
 /*************************************************************************************************/
 /**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
 /**	If you want to allow modmodders to enable this Callback, see CvCity::cancreate for example  **/

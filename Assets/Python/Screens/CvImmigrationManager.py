@@ -951,7 +951,7 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent:
 			if pPlayer.isAlive():
 				if iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod):
-					print("CvImmigrationManager::onBeginPlayerTurn(): AI thinking (Mercenaries), iPlayer: " + str(iPlayer))
+					print("CvImmigrationManager::onBeginPlayerTurn(): Turn: " + str(iGameTurn) + " AI thinking (Mercenaries), iPlayer: " + str(iPlayer))
 					objImmigrationUtils.computerPlayerThink(iPlayer)                                                                
 
 

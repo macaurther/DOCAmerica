@@ -4899,7 +4899,6 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]Some Civics negate Contacted Tribes' decrease in yields.
 [ICON_BULLET]Tribes can be 'contacted' by moving an [LINK=UNIT_EXPLORER]Explorer[\LINK] or [LINK=UNIT_RANGER]Ranger[\LINK] to them, and performing the Contact action. The Tribe then becomes a Contacted Tribe and gives you a gift (equivalent to Goody rewards).
 [ICON_BULLET]Contacting Tribes costs [ICON_COMMERCE]. The [LINK=TECH_LINGUISTICS]Linguistics[\LINK] and the [LINK=TECH_LINGUISTICS]Localization[\LINK] [LINK=CONCEPT_NATIVE_TECHS]Native Technologies[\LINK] reduce the cost to Contact. 
-
 		</English>
 	</TEXT>
 		<TEXT>
@@ -4937,7 +4936,8 @@ Your stability level can change during a stability check. As long it is higher t
 [NEWLINE][ICON_BULLET]Upon construction, a Fort claims any unclaimed territory within a certain range (determined by Technologies and Unique Powers).
 [ICON_BULLET]At first, it only claims adjacent tiles, but it can claim a Big-Fat-Cross once [LINK=TECH_PIONEERING]Pioneering[\LINK] is researched. 
 [ICON_BULLET]Any territory claimed by a Fort remains in control of the Fort constructor until that Fort is destroyed (by razing). Even overwhelming Culture cannot override a Fort's claim.
-[ICON_BULLET]Occupying an enemy Fort will not switch the Fort's ownership either; the Fort must be destroyed.
+[ICON_BULLET]Capture enemy forts by occupying it with a unit.
+[ICON_BULLET]When destroyed, any land claimed by that fort returns to being neutral.
 [PARAGRAPH:1]Use Forts to claim territory that is not worth spending maintenance for cities. Forts can help you gain control of remote resources, maintain vision, build defensive networks far from your cities that still allow units to heal faster, and claim tracks of land for Unique Historical Victories.
 		</English>
 	</TEXT>
