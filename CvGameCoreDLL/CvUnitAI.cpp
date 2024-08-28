@@ -411,6 +411,10 @@ bool CvUnitAI::AI_update()
 			AI_colonistMove();
 			break;
 
+		case UNITAI_SLAVE:
+			AI_slaveMove();
+			break;
+
 		default:
 			FAssert(false);
 			break;
@@ -704,6 +708,7 @@ int CvUnitAI::AI_groupFirstVal()
 	case UNITAI_ENGINEER:
 	case UNITAI_STATESMAN:
 	case UNITAI_COLONIST:
+	case UNITAI_SLAVE:
 		return 11;
 		break;
 
@@ -1345,36 +1350,6 @@ void CvUnitAI::AI_settleMove()
 	getGroup()->pushMission(MISSION_SKIP);
 	return;
 }
-
-void CvUnitAI::AI_colonistMove()
-{
-	PROFILE_FUNC();
-
-	if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
-	{
-		getGroup()->pushMission(MISSION_SKIP);
-		return;
-	}
-
-	if (AI_populateMove())
-	{
-		return;
-	}
-
-	if (AI_retreatToCity())
-	{
-		return;
-	}
-
-	if (AI_safety())
-	{
-		return;
-	}
-	
-	getGroup()->pushMission(MISSION_SKIP);
-	return;
-}
-
 
 void CvUnitAI::AI_workerMove()
 {
@@ -18726,6 +18701,60 @@ bool CvUnitAI::AI_rebuildMove(int iMinimumCost)
 }
 
 // MacAurther
+void CvUnitAI::AI_colonistMove()
+{
+	PROFILE_FUNC();
+
+	if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
+	{
+		getGroup()->pushMission(MISSION_SKIP);
+		return;
+	}
+
+	if (AI_populateMove())
+	{
+		return;
+	}
+
+	if (AI_retreatToCity())
+	{
+		return;
+	}
+
+	if (AI_safety())
+	{
+		return;
+	}
+	
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
+}
+
+
+void CvUnitAI::AI_slaveMove()
+{
+	PROFILE_FUNC();
+
+	if (AI_join())
+	{
+		return;
+	}
+
+	if (AI_retreatToCity())
+	{
+		return;
+	}
+
+	if (AI_safety())
+	{
+		return;
+	}
+
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
+}
+
+
 bool CvUnitAI::AI_PickupImmigrantsMove()
 {
 	CvPlot* pEdge;

@@ -1749,6 +1749,7 @@ enum UnitAITypes			// Exposed to Python
 	UNITAI_PERSECUTOR, // Leoreth
 	UNITAI_SATELLITE, // Leoreth
 	UNITAI_COLONIST, // MacAurther
+	UNITAI_SLAVE, // MacAurther
 
 	NUM_UNITAI_TYPES
 };

@@ -11357,7 +11357,7 @@
 			<Type>UNIT_AFRICAN_SLAVE_COLONY</Type>
 			<Capture>UNITCLASS_AFRICAN_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_AFRICAN_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
@@ -11366,7 +11366,7 @@
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<UnitAIType>UNITAI_SLAVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -11407,7 +11407,7 @@
 			<Type>UNIT_AFRICAN_SLAVE_NATION</Type>
 			<Capture>UNITCLASS_AFRICAN_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_AFRICAN_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_SLAVE_STRATEGY</Strategy>
@@ -11416,7 +11416,7 @@
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<UnitAIType>UNITAI_SLAVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -11457,7 +11457,7 @@
 			<Type>UNIT_NATIVE_SLAVE_NATIVE</Type>
 			<Capture>UNITCLASS_NATIVE_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
@@ -11466,7 +11466,7 @@
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<UnitAIType>UNITAI_SLAVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -11507,7 +11507,7 @@
 			<Type>UNIT_NATIVE_SLAVE_MESOAMERICA</Type>
 			<Capture>UNITCLASS_NATIVE_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
@@ -11516,7 +11516,7 @@
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<UnitAIType>UNITAI_SLAVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -11558,7 +11558,7 @@
 			<Type>UNIT_NATIVE_SLAVE_COLONY</Type>
 			<Capture>UNITCLASS_NATIVE_SLAVE</Capture>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_WORKER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_SLAVE</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
 			<Civilopedia>TXT_KEY_UNIT_NATIVE_SLAVE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Strategy>
@@ -11567,7 +11567,7 @@
 			<bSlave>1</bSlave>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<UnitAIType>UNITAI_SLAVE</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>

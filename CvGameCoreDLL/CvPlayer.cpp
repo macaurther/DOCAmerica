@@ -2352,6 +2352,7 @@ void CvPlayer::disbandUnit(bool bAnnounce)
 						case UNITAI_ENGINEER:
 						case UNITAI_STATESMAN:
 						case UNITAI_COLONIST:
+						case UNITAI_SLAVE:
 							break;
 
 						case UNITAI_SPY:

@@ -2626,6 +2626,11 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	case UNITAI_CARRIER_AIR: szString = L"carrier air"; break;
 	case UNITAI_PARADROP: szString = L"paradrop"; break;
 	case UNITAI_ATTACK_CITY_LEMMING: szString = L"attack city lemming"; break;
+	case UNITAI_STATESMAN: szString = L"statesman"; break;
+	case UNITAI_PERSECUTOR: szString = L"persecutor"; break;
+	case UNITAI_SATELLITE: szString = L"satellite"; break;
+	case UNITAI_COLONIST: szString = L"colonist"; break;
+	case UNITAI_SLAVE: szString = L"slave"; break;
 
 	default: szString = CvWString::format(L"unknown(%d)", eUnitAI); break;
 	}

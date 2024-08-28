@@ -61,7 +61,6 @@ protected:
 
 	void AI_animalMove();
 	void AI_settleMove();
-	void AI_colonistMove();	// MacAurther
 	void AI_workerMove();
 	void AI_barbAttackMove();
 	void AI_attackMove();
@@ -104,6 +103,8 @@ protected:
 	void AI_missileAirMove();
 	void AI_persecutorMove(); // Leoreth
 	void AI_satelliteMove(); // Leoreth
+	void AI_colonistMove();	// MacAurther
+	void AI_slaveMove();	// MacAurther
 
 	void AI_networkAutomated();
 	void AI_cityAutomated();

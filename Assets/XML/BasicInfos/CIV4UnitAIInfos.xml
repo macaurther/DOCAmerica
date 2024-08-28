@@ -186,5 +186,9 @@
 			<Type>UNITAI_COLONIST</Type>
 			<Description>UNITAI_COLONIST</Description>
 		</UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_SLAVE</Type>
+			<Description>UNITAI_SLAVE</Description>
+		</UnitAIInfo>
 	</UnitAIInfos>
 </Civ4UnitAIInfos>
