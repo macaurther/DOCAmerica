@@ -8369,18 +8369,12 @@
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
 			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_CAPE</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<FeaturePassableTechs>
-				<FeaturePassableTech>
-					<FeatureType>FEATURE_CAPE</FeatureType>
-					<PassableTech>TECH_CARTOGRAPHY</PassableTech>
-				</FeaturePassableTech>
-			</FeaturePassableTechs>
+			<TerrainPassableTechs>
+				<TerrainPassableTech>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
+					<PassableTech>TECH_ASTRONOMY</PassableTech>
+				</TerrainPassableTech>
+			</TerrainPassableTechs>
 			<iCombat>2</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
@@ -11375,10 +11369,6 @@
 					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_WORKER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
 			</UnitAIs>
 			<GreatPeoples>
 				<GreatPeople>
@@ -11427,10 +11417,6 @@
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_WORKER</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>

@@ -308,6 +308,9 @@ class GameData:
 		# Tribe creation
 		self.iTribeGenerationTurn = -1
 		
+		# Immigration Hint
+		self.iImmigraionHintGiven = False
+		
 	def timedConquest(self, iPlayer, tPlot):
 		self.lTimedConquests.append((iPlayer, tPlot))
 		

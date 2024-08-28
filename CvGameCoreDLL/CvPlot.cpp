@@ -12137,7 +12137,7 @@ void CvPlot::updateFortClaims(PlayerTypes ePlayer)
 		removeFortClaims();
 	}
 
-	// Check to see who should own the fort
+	// Check to see who should own the fort if new owner wasn't specified
 	if(ePlayer == NO_PLAYER)
 	{
 		ePlayer = getOwner();

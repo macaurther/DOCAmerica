@@ -875,27 +875,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_2</Tag>
-		<English>In DoC America, all post-Columbian resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</English>
-		<French>In DoC America, all post-Columbian resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</French>
-		<German>In DoC America, all post-Columbian resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</German>
-		<Italian>In DoC America, all post-Columbian resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</Italian>
-		<Spanish>In DoC America, all post-Columbian resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</Spanish>
+		<English>In DoC America, Old World resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</English>
+		<French>In DoC America, Old World resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</French>
+		<German>In DoC America, Old World resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</German>
+		<Italian>In DoC America, Old World resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</Italian>
+		<Spanish>In DoC America, Old World resources are revealed by post-Columbian technologies, such as Pigs, Sheep, and Cows being revealed by the Colonization tech.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_3</Tag>
-		<English>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</English>
-		<French>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</French>
-		<German>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</German>
-		<Italian>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</Italian>
-		<Spanish>In DoC America, military units mostly fit into one upgrade path: recon, militia, infantry, heavy infantry, anti-cavalry, collateral damage, withdrawl, light cavalry, heavy cavalry, siege, and anti-air.</Spanish>
+		<English>Many unit stats and upgrade paths have been changed in DoC America.</English>
+		<French>Many unit stats and upgrade paths have been changed in DoC America.</French>
+		<German>Many unit stats and upgrade paths have been changed in DoC America.</German>
+		<Italian>Many unit stats and upgrade paths have been changed in DoC America.</Italian>
+		<Spanish>Many unit stats and upgrade paths have been changed in DoC America.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_4</Tag>
-		<English>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</English>
-		<French>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</French>
-		<German>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</German>
-		<Italian>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</Italian>
-		<Spanish>In DoC America, each era has its own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</Spanish>
+		<English>In DoC America, eras have their own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</English>
+		<French>In DoC America, eras have their own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</French>
+		<German>In DoC America, eras have their own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</German>
+		<Italian>In DoC America, eras have their own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</Italian>
+		<Spanish>In DoC America, eras have their own Militia unit. They're all cheap, built with food, weak, and called Militia, but progressively get stronger over the eras.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_5</Tag>
@@ -939,19 +939,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_10</Tag>
-		<English>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</English>
-		<French>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</French>
-		<German>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</German>
-		<Italian>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Italian>
-		<Spanish>Immigration has been reworked in DoC America. Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Spanish>
+		<English>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</English>
+		<French>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</French>
+		<German>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</German>
+		<Italian>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Italian>
+		<Spanish>Press "M" to access the Immigration menu! Earn Immigration ([ICON_IMMIGRATION]) through Civics, Buildings, and Events and use [ICON_IMMIGRATION] to hire Immigrants from the Old World by moving a transport to the edge of the map.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_11</Tag>
-		<English>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</English>
-		<French>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</French>
-		<German>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</German>
-		<Italian>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</Italian>
-		<Spanish>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Destroy your rivals' Forts to remove their influence.</Spanish>
+		<English>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Capture or destroy your rivals' Forts to remove their influence.</English>
+		<French>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Capture or destroy your rivals' Forts to remove their influence.</French>
+		<German>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Capture or destroy your rivals' Forts to remove their influence.</German>
+		<Italian>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Capture or destroy your rivals' Forts to remove their influence.</Italian>
+		<Spanish>Forts now claim territory. After you construct a Fort, it claims the unclaimed territory around it and will not lose that territory to cultural influence. Capture or destroy your rivals' Forts to remove their influence.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_AMERICA_12</Tag>

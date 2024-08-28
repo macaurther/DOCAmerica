@@ -104,10 +104,6 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=11,y=53
-	ImprovementType=IMPROVEMENT_TRIBE
-EndPlot
-BeginPlot
 	x=11,y=98
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
@@ -117,6 +113,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=7
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=12,y=53
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot

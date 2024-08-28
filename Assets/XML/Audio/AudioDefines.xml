@@ -11298,6 +11298,13 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_KAMEHAMEHA</SoundID>
+			<Filename>Sounds/Diplomacy/Kamehameha_Early</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SONG_ANCIENT_SOUNDTRACK_1</SoundID>
 			<Filename>Sounds/Soundtrack/Ancient/AncientSoundtrack1</Filename>
 			<LoadType>STREAMED</LoadType>

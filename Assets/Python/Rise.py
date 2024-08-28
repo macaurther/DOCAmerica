@@ -449,12 +449,13 @@ class Birth(object):
 			self.area += additionalPlots
 			self.area = self.area.unique()
 		
-		if self.iCiv == iMexico:
+		# MacAurther: Not really sure what the below is doing
+		'''if self.iCiv == iMexico:
 			self.area = self.area.where(lambda p: p.isPlayerCore(self.iPlayer) or not owner(p, iAmerica))
 		
 		if self.iCiv == iCanada:
 			self.area += cities.regions(*lCanada).where(lambda city: city.getX() < plots.capital(iCanada).getX()).where(lambda city: civ(city) in [iFrance, iEngland, iAmerica]).plots().expand(2).where(lambda p: not p.isCore(p.getOwner()))
-			self.area = self.area.unique()
+			self.area = self.area.unique()'''
 		
 		# MacAurther: We do want to flip foreign captials (flips Richmond for America, Quebec City for Canada, Sao Paulo for Brazil)
 		#self.excludeForeignCapitals()
@@ -590,6 +591,10 @@ class Birth(object):
 		
 		for plot in plots.surrounding(self.location):
 			convertPlotCulture(plot, self.iPlayer, 100, bOwner=True)
+			
+			# MacAurther flip forts too
+			if plot.getImprovementType() == iFort:
+				plot.updateFortClaims(self.iPlayer)
 		
 	def resetPlague(self):
 		self.data.iPlagueCountdown = -10
@@ -956,8 +961,9 @@ class Birth(object):
 		convertSurroundingPlotCulture(self.iPlayer, flippedPlots.water().where(lambda p: p.getPlayerCityRadiusCount(self.iPlayer) > 0))
 		
 		# MacAurther: Flip forts
-		for plot in flippedPlots.land():
-			plot.updateFortClaims(self.iPlayer)
+		for plot in flippedPlots:
+			if plot.getImprovementType() == iFort:
+				plot.updateFortClaims(self.iPlayer)
 		
 		for iOwner, cityNames in flippedPlayerCities.items():
 			self.warOnFlip(iOwner, cityNames)

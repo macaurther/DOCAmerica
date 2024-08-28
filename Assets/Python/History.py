@@ -56,6 +56,15 @@ def setupMexicoCity(city):
 				city.setHasRealBuilding(monastery(iStateReligion), True)
 
 
+### BEGIN ACTIVE PLAYER TURN ###
+
+@handler("BeginActivePlayerTurn")
+def immigrationHint(iPlayer, iGameTurn):
+	if not data.iImmigraionHintGiven and gc.getPlayer(iPlayer).getImmigration() > 0:
+		message(iPlayer, 'TXT_KEY_IMMIGRATION_HINT')
+		data.iImmigraionHintGiven = True
+
+
 ### BEGIN GAME TURN ###
 
 @handler("BeginGameTurn")
@@ -257,14 +266,15 @@ def americanWesternSettlement(iTech, iTeam, iPlayer):
 
 
 ### COLLAPSE ###
+
 @handler("civicChanged")
 def doAmericanCivilWar(iPlayer, iOldCivic, iNewCivic):
-	if civ(iPlayer) == iAmerica and iOldCivic == iSlavery3:
+	if civ(iPlayer) == iAmerica and iOldCivic == iSlavery3 and player(iPlayer).isHuman():	# Don't have AI do Civil War, it can't handle it
 		secedeCitiesByRegions(iPlayer, lSouthernUS, slot(iIndependent))
 		
 		# Let the player decided whether or not to declare war, but make the AI declare war on secession
-		if not player(iPlayer).isHuman():
-			team(iPlayer).declareWar(slot(iIndependent), True, WarPlanTypes.WARPLAN_TOTAL)
+		'''if not player(iPlayer).isHuman():
+			team(iPlayer).declareWar(slot(iIndependent), True, WarPlanTypes.WARPLAN_TOTAL)'''
 
 ### BIRTH ###
 			

@@ -296,7 +296,7 @@ dGoals = {
 	),
 	iHawaii: (
 		UnitCount(iCannon, 1, by=1790),
-		Control(plots.regions(rHawaii).named(HAWAII), at=1810),
+		AreaPercent(plots.regions(rHawaii).named(HAWAII), 100, by=1810),
 		All(
 			CitySpecialistCount(start(iHawaii).named(HILO), iSpecialistGreatArtist, 1),
 			CitySpecialistCount(start(iHawaii).named(HILO), iSpecialistGreatMerchant, 1),

@@ -155,7 +155,7 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 	# only inside territory if specified
 	if not bTerritory and plot.isOwned(): return False
 	
-	# never directly next to cities, (MacAurther) unless Force Spawn
+	# never directly next to cities, MacAurther: unless Force Spawn
 	if not bForceSpawn and cities.surrounding(plot): return False
 	
 	# never on tiles with units
@@ -175,7 +175,7 @@ def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bFor
 	# near a city if specified (next to cities excluded above)
 	if bNearCity and not plots.surrounding(plot, radius=2).where(lambda p: not p.isCity()): return False
 	
-	# not on landmasses without cities, (MacAurther): except if Force Spawn
+	# not on landmasses without cities, MacAurther: except if Force Spawn
 	if not bForceSpawn and not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
 	
 	# MacAurther: Extra check for Tribe spawning
@@ -257,7 +257,7 @@ def spawnDefenders(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj=""):
 	in territory, and in areas with no cities present'''
 	plot = possibleTiles(tTL, tBR, bTerritory=True, bForceSpawn=True).random()
 	
-	if plot:
+	if plot and plot.getX() != -1 and plot.getY() != -1:
 		makeUnits(iPlayer, iUnitType, plot, iNumUnits, UnitAITypes.UNITAI_ATTACK).adjective(sAdj)
 
 def includesActiveHuman(*civs):

@@ -5263,6 +5263,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=52
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -5914,7 +5915,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=52
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -7247,7 +7247,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=53
-	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -7937,6 +7936,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=53
+	BonusType=BONUS_BANANA
 	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2

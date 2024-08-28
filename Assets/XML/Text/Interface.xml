@@ -4033,11 +4033,21 @@
 		<Spanish>The colonies are in open rebellion! The Crown has sent additional forces to quell the rebels.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_HINT</Tag>
+		<English>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</English>
+		<French>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</French>
+		<German>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</German>
+		<Italian>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</Italian>
+		<Spanish>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</Spanish>
+	</TEXT>
+	
+	
+	<TEXT>
 		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 </Civ4GameText>

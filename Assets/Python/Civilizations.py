@@ -316,7 +316,7 @@ lCivilizations = [
 		iHawaii,
 		iGold=200,
 		lCivics=[iCaptives1],
-		techs=techs.column(3).including(iSeafaring).without(iTanning)
+		techs=techs.column(3).including(iSeafaring, iArithmetics, iCeremony, iAstronomy, iTrade, iNavigation).without(iHunting, iTrapping, iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iSpiritualism, iHerbalism)
 	),
 	Civilization(
 		iRussia,

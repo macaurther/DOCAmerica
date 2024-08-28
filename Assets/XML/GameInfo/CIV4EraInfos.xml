@@ -635,7 +635,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>50</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>200</iSoundtrackSpace>
+			<iSoundtrackSpace>150</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_NORSE_1</EraInfoSoundtrack>
@@ -688,7 +688,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>50</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>300</iSoundtrackSpace>
+			<iSoundtrackSpace>200</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_POLYNESIA_1</EraInfoSoundtrack>

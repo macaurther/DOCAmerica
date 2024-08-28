@@ -277,10 +277,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=11,y=53
-	ImprovementType=IMPROVEMENT_TRIBE
-EndPlot
-BeginPlot
 	x=11,y=63
 	ImprovementType=IMPROVEMENT_HAMLET
 	RouteType=ROUTE_ROAD
@@ -398,6 +394,10 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=7
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=12,y=53
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
