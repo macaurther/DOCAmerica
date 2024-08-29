@@ -7218,33 +7218,25 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		return false;
 	}
 
-	// MacAurther: Cannot build on top of Tribe, unless it is to contact them or build a road (no railroad or highway though). You can build on an allied tribe though (not that you'd want to! Haha)
-	if (pPlot != NULL && (pPlot->getImprovementType() == IMPROVEMENT_TRIBE || pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE))
+	// MacAurther: Cannot build on top of Tribe, unless it is to contact them or build a road (no railroad or highway though).
+	if (pPlot->getImprovementType() == IMPROVEMENT_TRIBE)
 	{
-		if(eBuild == BUILD_CONTACT_TRIBE && canContactTribe(pPlot))
-		{
-			return true;
-		}
-		if(eBuild == BUILD_ROAD)
-		{
-			return true;
-		}
-		// MacAurther: Russian UP
-		if (GET_PLAYER(getOwner()).getCivilizationType() == RUSSIA && pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
-		{
-			return true;
-		}
-		return false;
+		if(eBuild == BUILD_CONTACT_TRIBE);
+		else if(eBuild == BUILD_ROAD);
+		else return false;
 	}
 
 	// MacAurther: Cannot build on top of Contacted Tribe
-	if (pPlot != NULL && pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	if (pPlot->getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
 	{
-		return false;
+		// MacAurther: Russian UP
+		if (GET_PLAYER(getOwner()).getCivilizationType() == RUSSIA);
+		else if(eBuild == BUILD_ROAD);
+		else return false;
 	}
 
 	// MacAurther: Cannot build on Lagoons
-	if (pPlot != NULL && pPlot->getTerrainType() == TERRAIN_LAGOON)
+	if (pPlot->getTerrainType() == TERRAIN_LAGOON)
 	{
 		return false;
 	}
@@ -14889,30 +14881,10 @@ bool CvUnit::populate()
 
 bool CvUnit::canContactTribe(const CvPlot* pPlot) const
 {
-	if(pPlot->getImprovementType() == IMPROVEMENT_TRIBE && canUnitContactTribe())
-	{
-		return true;
-	}
-	return false;
+	return canBuild(pPlot, BUILD_CONTACT_TRIBE);
 }
 
 bool CvUnit::canUnitContactTribe() const
 {
-	if(getUnitClassType() == UNITCLASS_EXPLORER || getUnitClassType() == UNITCLASS_RANGER || getUnitClassType() == UNITCLASS_PARATROOPER)
-	{
-		return true;
-	}
-	return false;
-}
-
-bool CvUnit::contactTribe()
-{
-	if (!canContactTribe(plot()))
-	{
-		return false;
-	}
-
-	GET_PLAYER(getOwnerINLINE()).doGoody(plot(), this);
-
-	return true;
+	return m_pUnitInfo->getBuilds(BUILD_CONTACT_TRIBE);
 }

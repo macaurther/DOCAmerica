@@ -758,19 +758,17 @@ event_bullet = "INTERFACE_EVENT_BULLET"
 event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
 # Immigration
-iNumImmigrantCategories = 21
+iNumImmigrantCategories = 28
 #				2				3				4				5				6				7				8				9				10
 (iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	iMainlineCat,	
-iEliteCat,		iCollateralCat,	iSkirmishCat,	iLightCavCat,	iHeavyCavCat,	iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat,iEndowmentsCat,
-iGreatPeopleCat) = range(iNumImmigrantCategories)
+iEliteCat,		iCollateralCat,	iSkirmishCat,	iCavCat,		iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat,iEndowCatArt,	iEndowCatAssets,
+iEndowCatInno,	iGPCatProphet,	iGPCatArtist,	iGPCatScientist,iGPCatMerchant,	iGPCatEngineer,	iGPCatStatesman,iGPCatGeneral) = range(iNumImmigrantCategories)
 
 lSettlers = [iSettler, iPioneer]
 lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
 lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship, iTransport]
 lAfricanSlaves = [iAfricanSlave2, iAfricanSlave3]
-lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for Immigration
-lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 lColonists = [iColonist]
 lMigrantWorkers = [iMigrantWorker]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
@@ -784,9 +782,22 @@ lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
 lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
 lSkirmishShips = [iPrivateer, iSubmarine] # Note: Can't hire Monitors because they can't go in ocean
 lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
-lEndowments = [iOldWorldArt, iOldWorldAssets, iOldWorldInnovations]
-lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman, iGreatGeneral]
+lEndowmentsArt = [iOldWorldArt]
+lEndowmentsAssets = [iOldWorldAssets]
+lEndowmentsInno = [iOldWorldInnovations]
+lGPProphet = [iGreatProphet]
+lGPArtist = [iGreatArtist]
+lGPScientist = [iGreatScientist]
+lGPMerchant = [iGreatMerchant]
+lGPEngineer = [iGreatEngineer]
+lGPStatesman = [iGreatStatesman]
+lGPGeneral = [iGreatGeneral]
 
+lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for Immigration
+lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
+
+lEndowmentsBase = lEndowmentsArt + lEndowmentsAssets + lEndowmentsInno
+lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
 lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lAfricanSlaves, lColonists, lMigrantWorkers]
 
@@ -794,10 +805,12 @@ lPossibleExpeditionariesLand = [lExplorers, lMilitia, lMainlineMercs, lEliteMerc
 lPossibleExpeditionariesSea = [lMainlineShips, lSkirmishShips, lCapitalShips]
 lPossibleExpeditionaries = lPossibleExpeditionariesLand + lPossibleExpeditionariesSea
 
-lPossibleEndowments = [lGreatPeople, lEndowments]
+lPossibleEndowmentsBase = [lEndowmentsArt, lEndowmentsAssets, lEndowmentsInno]
+lPossibleEndowmentsGP = [lGPProphet, lGPArtist, lGPScientist, lGPMerchant, lGPEngineer, lGPStatesman, lGPGeneral]
+lPossibleEndowments = lPossibleEndowmentsBase + lPossibleEndowmentsGP
 
 lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries + lPossibleEndowments
-lNoTrainingNeeded = lGreatPeople + lAfricanSlaves + lColonists + lMigrantWorkers + lEndowments
+lNoTrainingNeeded = lAfricanSlaves + lColonists + lMigrantWorkers + lPossibleEndowments
 
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({

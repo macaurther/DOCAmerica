@@ -324,12 +324,12 @@ def migrateCity(iGameTurn, iPlayer):
 	# Store temp city data
 	# Don't get things like GameTurnFounded or GameTurnAcquired, we want to reset those
 	iPopulation = pCity.getPopulation()
-	iNumBuildings = pCity.getNumBuildings()
+	iNumCityBuildings = pCity.getNumBuildings()
 	lBuildings = []
-	for i in xrange(gc.getNumBuildingInfos()):
+	for i in range(iNumBuildings - 1):
 		if pCity.hasBuilding(i):
 			lBuildings.append(i)
-			if len(lBuildings) == iNumBuildings + 1:
+			if len(lBuildings) == iNumCityBuildings + 1:
 				break
 	iCulture = pCity.getCulture(pCity.getOwner())
 	#sName = pCity.getName()	# Actually, don't copy name, let it take the name from the city name manager

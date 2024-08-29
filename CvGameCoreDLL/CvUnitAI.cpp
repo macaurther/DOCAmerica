@@ -10639,7 +10639,7 @@ bool CvUnitAI::AI_patrol()
 						}
 						else
 						{
-							if (pAdjacentPlot->isRevealedGoody(getTeam()))
+							if (pAdjacentPlot->isRevealedGoody(getTeam()) && canContactTribe(pAdjacentPlot)) // MacAurther: Ensure this unit can actually contact that Tribe
 							{
 								iValue += 100000;
 							}
@@ -11028,7 +11028,7 @@ bool CvUnitAI::AI_goody(int iRange)
 	}
 
 	// Check if you're on the Tribe and contact it if so
-	if (plot()->isGoody())
+	if (canContactTribe(plot()))
 	{
 		getGroup()->pushMission(MISSION_BUILD, BUILD_CONTACT_TRIBE, -1, 0, (getGroup()->getLengthMissionQueue() > 0), false, MISSIONAI_BUILD, plot());
 		return true;
@@ -11049,7 +11049,7 @@ bool CvUnitAI::AI_goody(int iRange)
 			{
 				if (AI_plotValid(pLoopPlot))
 				{
-					if (pLoopPlot->isRevealedGoody(getTeam()))
+					if (pLoopPlot->isRevealedGoody(getTeam()) && canContactTribe(pLoopPlot)) // MacAurther: Ensure this unit can actually contact that Tribe
 					{
 						if (!(pLoopPlot->isVisibleEnemyUnit(this)))
 						{
@@ -11116,7 +11116,7 @@ bool CvUnitAI::AI_explore()
 		{
 			iValue = 0;
 
-			if (pLoopPlot->isRevealedGoody(getTeam()))
+			if (pLoopPlot->isRevealedGoody(getTeam()) && canContactTribe(pLoopPlot)) // MacAurther: Ensure this unit can actually contact that Tribe
 			{
 				iValue += 100000;
 			}
@@ -11175,7 +11175,7 @@ bool CvUnitAI::AI_explore()
 								if (iValue > iBestValue)
 								{
 									iBestValue = iValue;
-									pBestPlot = pLoopPlot->isRevealedGoody(getTeam()) ? getPathEndTurnPlot() : pLoopPlot;
+									pBestPlot = (pLoopPlot->isRevealedGoody(getTeam()) && canContactTribe(pLoopPlot)) ? getPathEndTurnPlot() : pLoopPlot; // MacAurther: Ensure this unit can actually contact that Tribe
 									pBestExplorePlot = pLoopPlot;
 								}
 							}
@@ -11235,7 +11235,7 @@ bool CvUnitAI::AI_exploreRange(int iRange)
 				{
 					iValue = 0;
 
-					if (pLoopPlot->isRevealedGoody(getTeam()))
+					if (pLoopPlot->isRevealedGoody(getTeam()) && canContactTribe(pLoopPlot)) // MacAurther: Ensure you can contact a tribe before walking to it
 					{
 						iValue += 100000;
 					}

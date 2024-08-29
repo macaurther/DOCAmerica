@@ -159,7 +159,9 @@ def getCityValue(city, iCompany):
 
 	elif iCompany == iLuxuryIndustry:
 		if city.hasBuilding(unique_building(iOwner, iTavern)): iValue += 1
-		if city.hasBuilding(unique_building(iOwner, iNationalGallery)): iValue += 3
+		# MacAurther: Catch Independents who don't have National Galleries
+		if unique_building(iOwner, iNationalGallery) != -1:
+			if city.hasBuilding(unique_building(iOwner, iNationalGallery)): iValue += 3
 	
 	# needs at least a few requirements
 	if iValue <= 0:

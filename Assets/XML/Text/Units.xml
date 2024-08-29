@@ -2179,11 +2179,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAWAIIAN_KOA_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</English>
-		<French>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</French>
-		<German>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units and starts with Amphibious.</English>
+		<French>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units and starts with Amphibious.</French>
+		<German>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units and starts with Amphibious.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units and starts with Amphibious.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Koa[COLOR_REVERT], the Hawaiian replacement for the [COLOR_UNIT_TEXT]Warrior[COLOR_REVERT], has extra strength versus Gunpowder units and starts with Amphibious.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IROQUOIS_MOHAWK</Tag>
@@ -2331,11 +2331,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MIGRANT_WORKER_STRATEGY</Tag>
-		<English>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</English>
-		<French>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</French>
-		<German>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</German>
-		<Italian>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</Italian>
-		<Spanish>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city.</Spanish>
+		<English>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</English>
+		<French>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</French>
+		<German>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</German>
+		<Italian>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Italian>
+		<Spanish>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW</Tag>

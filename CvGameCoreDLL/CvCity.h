@@ -1089,7 +1089,7 @@ public:
 	int getGameTurnPlayerLost(PlayerTypes ePlayer);
 	void setGameTurnPlayerLost(PlayerTypes ePlayer, int iNewValue);
 	bool isColony() const;
-	bool canSlaveJoin(SpecialistTypes eSpecialistType) const;
+	bool canSlaveJoin(SpecialistTypes eSpecialistType) const;   // Exposed to Python
 	int calculateCultureCost(CvPlot* pPlot, bool bOrdering = false) const;
 	void updateCultureCosts();
 	void updateCoveredPlots(bool bUpdatePlotGroups);

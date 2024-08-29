@@ -448,6 +448,7 @@ public:
 	void setName(std::wstring szNewValue, bool bFound);
 	void changeNoBonusCount(int /*BonusTypes*/ eBonus, int iChange);
 	bool isNoBonus(int /*BonusTypes*/ eBonus);
+	bool canSlaveJoin(int /*SpecialistTypes*/ eSpecialistType);
 	int getFreeBonus(int /*BonusTypes*/ eIndex);
 	void changeFreeBonus(int /*BonusTypes*/ eIndex, int iChange);
 	int getNumBonuses(int /*BonusTypes*/ iBonus);

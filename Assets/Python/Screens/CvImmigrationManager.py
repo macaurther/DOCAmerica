@@ -483,18 +483,6 @@ class CvImmigrationManager:
 		# Hire the mercenary for the player
 		objImmigrationUtils.hireMercenary(iMercenary, iPlayer) 
 
-		# Get all of the available mercenaries for hire
-		mercenaries = objImmigrationUtils.getAvailableColonists(iPlayer)
-		i = 0
-
-		# Add the padding to the available mercenaries panel to improve the look of the screen
-		if((4-len(mercenaries))>0):
-			for i in range(4-len(mercenaries)):
-				screen.attachPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, "dummyPanelHire"+str(i), "", "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
-				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
-				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
-				
 		# Draw the gold information for the screen
 		self.drawGoldInformation(screen)
 
@@ -951,7 +939,7 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent:
 			if pPlayer.isAlive():
 				if iPlayer % (g_bAIThinkPeriod) == iGameTurn % (g_bAIThinkPeriod):
-					print("CvImmigrationManager::onBeginPlayerTurn(): Turn: " + str(iGameTurn) + " AI thinking (Mercenaries), iPlayer: " + str(iPlayer))
+					print("Turn: " + str(iGameTurn) + " AI thinking about Immigrants, iPlayer: " + str(iPlayer))
 					objImmigrationUtils.computerPlayerThink(iPlayer)                                                                
 
 

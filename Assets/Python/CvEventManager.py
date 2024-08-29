@@ -535,7 +535,7 @@ class CvEventManager(object):
 		'City Culture Expansion'
 		pCity = argsList[0]
 		iPlayer = argsList[1]
-		CvUtil.pyPrint("City %s's culture has expanded" %(pCity.getName(),))
+		#CvUtil.pyPrint("City %s's culture has expanded" %(pCity.getName(),))	# MacAurther: This was spamming the log a lot
 	
 	def onCityGrowth(self, argsList):
 		'City Population Growth'

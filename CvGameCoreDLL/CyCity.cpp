@@ -2050,6 +2050,11 @@ bool CyCity::isNoBonus(int /*BonusTypes*/ eBonus)
 	return m_pCity ? m_pCity->isNoBonus((BonusTypes)eBonus) : false;
 }
 
+bool CyCity::canSlaveJoin(int /*SpecialistTypes*/ eSpecialistType)
+{
+	return m_pCity ? m_pCity->canSlaveJoin((SpecialistTypes)eSpecialistType) : false;
+}
+
 int CyCity::getFreeBonus(int /*BonusTypes*/ eIndex)
 {
 	return m_pCity ? m_pCity->getFreeBonus((BonusTypes)eIndex) : -1;

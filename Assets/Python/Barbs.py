@@ -52,7 +52,9 @@ def reproduceTribes():
 def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 	# If pillage a tribe, get uprising
 	if iImprovement == iTribe or iImprovement == iContactedTribe:
-		team(pUnit.getOwner()).declareWar(player(iNative).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
+		# MacAurther: Sometimes the Native player pillages a tribe. Don't try to declare war in that case, but do still spawn defenders
+		if team(pUnit.getOwner()) != player(iNative).getTeam():
+			team(pUnit.getOwner()).declareWar(player(iNative).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
 		iX = pUnit.getX()
 		iY = pUnit.getY()
 		spawnTribeDefenders(iX, iY)
