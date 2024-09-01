@@ -101,7 +101,7 @@ class ImmigrationUtils:
 		sdEntityInit("Mercenaries Mod", "MercenaryData", mercenaryData)
 			
 	# Returns a dict of the most technologically advanced unit of a each category available for hire.
-	def getAvailableMercenaries(self, iPlayer, lUnitCategories):
+	def getAvailableImmigrants(self, iPlayer, lUnitCategories):
 		' mercenariesDict - the dictionary containing the mercenaries that are available for hire by players '
 
 		mercenariesDict = {}
@@ -114,13 +114,13 @@ class ImmigrationUtils:
 	# Returns dictionary of best unit in category
 	def getAvailableMercenaryDict(self, iPlayer, lUnitCategory):
 		mercenariesDict = {}
-		iUnit = self.getAvailableMercenary(iPlayer, lUnitCategory)
+		iUnit = self.getAvailableImmigrantFromCategory(iPlayer, lUnitCategory)
 		if iUnit != -1:
-			mercenariesDict = self.addAvailableUnit(iUnit, mercenariesDict)
+			mercenariesDict = self.addAvailableUnitToDict(iUnit, mercenariesDict)
 		return mercenariesDict
 	
 	# Returns best unit in category
-	def getAvailableMercenary(self, iPlayer, lUnitCategory):
+	def getAvailableImmigrantFromCategory(self, iPlayer, lUnitCategory):
 		pPlayer = gc.getPlayer(iPlayer)
 		
 		for iUnit in reversed(lUnitCategory):
@@ -179,21 +179,16 @@ class ImmigrationUtils:
 		
 		return False
 	
-	def addAvailableUnit(self, iUnit, unitDict):
-		# Get Unit Info
-		pUnitInfo = gc.getUnitInfo(iUnit)
-		
-		# Create a new mercenary
-		newMercenary = Mercenary(pUnitInfo.getDescription(), pUnitInfo, [], 0, 1)
+	def addAvailableUnitToDict(self, iUnit, unitDict):
 		
 		# Add the mercenary into the unitDict
-		unitDict[newMercenary.getName()] = newMercenary
+		unitDict[newMercenary.getName()] = getImmigrant(iUnit)
 		
 		return unitDict
 
 	
 	# Gets a new Mercenary Object based off of the given ID
-	def getMercenary(self, iMercenary):
+	def getImmigrant(self, iMercenary):
 		' objMercenary - the instance of the Mercenary class that represents the mercenary '
 		
 		# return if that unit name can't be found
@@ -223,7 +218,7 @@ class ImmigrationUtils:
 			return False
 			
 		# Get the immigrant from the global immigrant pool
-		immigrant = self.getMercenary(iMercenary)
+		immigrant = self.getImmigrant(iMercenary)
 		
 		# Return immediately if the immigrant was not retrieved from the global
 		# immigrant pool
@@ -269,56 +264,52 @@ class ImmigrationUtils:
 		
 		hireCost = 0
 		
-		immigrant = None
-		bestImmigrant = None
-		
-		# Get the available mercenaries from the global immigrant pool
-		immigrantDict = self.getAvailableMercenaries(iPlayer, lPossibleColonists)
-		immigrantDict.update(self.getAvailableMercenaries(iPlayer, lPossibleExpeditionaries))
-		immigrantDict.update(self.getAvailableMercenaries(iPlayer, lPossibleEndowments))
-		
+		pBestImmigrant = None
 		iHighestDesire = 0
 		iHighestDesireCategory = -1
-		for immigrantName in immigrantDict:
 		
-			immigrant = immigrantDict[immigrantName]
-			
-			# Calculate how much gold the player will have after hiring the immigrant.
-			(immigrationCost, goldCost) = immigrant.getHireCost(iPlayer)
-			tmpImmigration = iImmigration - immigrationCost
-			tmpGold = iGold - goldCost
-			
-			# Continue immediately if the player can't buy the immigrant
-			if(tmpImmigration < 0 or tmpGold <= 0):
-				continue
-
-			if (not immigrant.canHireUnit(iPlayer)):
-				continue
-			
-			iImmigrantCategory = immigrant.getUnitCategory()
-			if iImmigrantCategory > -1:
-				iDesire = lCategoryDesire[iImmigrantCategory]
-			else:
-				CvUtil.pyPrint("ERROR: Possible Immigrant " + immigrantName + " does not have a category!")
-
-			if g_bDebug:
-				CvUtil.pyPrint("Player: " + str(iPlayer) + " desires " + str(iDesire) + " " + immigrantName)
-			
+		for iImmigrantCategory in range(iNumImmigrantCategories):
+			iDesire = lCategoryDesire[iImmigrantCategory]
 			if iDesire > iHighestDesire:
-				iHighestDesire = iDesire 
-				bestImmigrant = immigrant
-				iHighestDesireCategory = iImmigrantCategory
-				if g_bDebug:
-					CvUtil.pyPrint("Potential immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + immigrant.getName())
+				iImmigrant = self.getAvailableImmigrantFromCategory(iPlayer, lPossibleImmigrants[iImmigrantCategory])
 				
-		if(g_bDebug and bestImmigrant != None):
-			CvUtil.pyPrint("Best immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + bestImmigrant.getName())
+				# Check to see if there are no available immigrants in that category (i.e. doesn't have the tech or such)
+				if iImmigrant == -1:
+					continue
+				
+				# Check to see if immigrant can be hired
+				pImmigrant = self.getImmigrant(iImmigrant)
+				
+				if (not pImmigrant.canHireUnit(iPlayer)):
+					continue
+				
+				# Calculate how much gold the player will have after hiring the immigrant.
+				(immigrationCost, goldCost) = pImmigrant.getHireCost(iPlayer)
+				tmpImmigration = iImmigration - immigrationCost
+				tmpGold = iGold - goldCost
+				
+				# Continue immediately if the player can't buy the immigrant
+				if(tmpImmigration < 0 or tmpGold <= 0):
+					continue
+				
+				if g_bDebug:
+					CvUtil.pyPrint("Player: " + str(iPlayer) + " desires " + str(iDesire) + " " + pImmigrant.getName())
+				
+				if iDesire > iHighestDesire:
+					iHighestDesire = iDesire 
+					pBestImmigrant = pImmigrant
+					iHighestDesireCategory = iImmigrantCategory
+					if g_bDebug:
+						CvUtil.pyPrint("Potential immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + immigrant.getName())
 		
-		if bestImmigrant:
+		if(g_bDebug and pBestImmigrant != None):
+			CvUtil.pyPrint("Best immigrant for " + gc.getPlayer(iPlayer).getName() + " is " + pBestImmigrant.getName())
+		
+		if pBestImmigrant:
 			# Decrement recommended category so we can just reuse the modified lCategoryDesire list instead of having to recalculate
 			lCategoryDesire[iHighestDesireCategory] -= 1
 		
-		return bestImmigrant, lCategoryDesire
+		return pBestImmigrant, lCategoryDesire
 		
 	
 	# Performs the thinking for the computer players in regards to the mercenaries mod functionality.
@@ -349,7 +340,7 @@ class ImmigrationUtils:
 		
 		# Check to see if AI needs mainline ship (they have none)
 		if lNumUnitsInCategories[iMainlineShipCat] == 0:
-			iMainlineShip = self.getAvailableMercenary(iPlayer, lMainlineShips)
+			iMainlineShip = self.getAvailableImmigrantFromCategory(iPlayer, lMainlineShips)
 			
 			if iMainlineShip != UnitTypes.NO_UNIT:
 				print(pPlayer.getName() + " has no mainline ships! Attempting to hire eUnitType " + str(iMainlineShip))
@@ -358,7 +349,7 @@ class ImmigrationUtils:
 			
 		# Check to see if AI needs transport ship (they have none)
 		if lNumUnitsInCategories[iTransportsCat] == 0:
-			iTransportShip = self.getAvailableMercenary(iPlayer, lTransports)
+			iTransportShip = self.getAvailableImmigrantFromCategory(iPlayer, lTransports)
 			
 			if iTransportShip != UnitTypes.NO_UNIT:
 				print(pPlayer.getName() + " has no transport ships! Attempting to hire eUnitType " + str(iTransportShip))
@@ -429,7 +420,7 @@ class ImmigrationUtils:
 		lCategoryDesire[iSettlersCat] = min(dNumCitiesGoal[iCiv] - iNumCities, 2) - lNumUnitsInCategories[iSettlersCat]	# Get specific AI's desire to build cities, but don't go crazy on Settlers, max at 3 at a time
 		
 		# Workers Category
-		lCategoryDesire[iWorkersCat] = min(iNumCities, 20) - lNumUnitsInCategories[iWorkersCat]	# Ballpark want 1 worker per city, max 20
+		lCategoryDesire[iWorkersCat] = min(iNumCities, 5) - lNumUnitsInCategories[iWorkersCat]	# Ballpark want 1 worker per city, max 5
 		
 		# Missionaries Category
 		if pPlayer.getStateReligion() > -1:
@@ -440,7 +431,7 @@ class ImmigrationUtils:
 			lCategoryDesire[iMissionariesCat] = min(iNumCities - iNumConvertedCities, 3) - lNumUnitsInCategories[iMissionariesCat]	# Max 3
 		
 		# Transports Category
-		lCategoryDesire[iTransportsCat] = min(iNumCities / 2, 10) - lNumUnitsInCategories[iTransportsCat]	# Want 1 Transport per 2 cities, max 10
+		lCategoryDesire[iTransportsCat] = min(iNumCities / 2, 5) - lNumUnitsInCategories[iTransportsCat]	# Want 1 Transport per 2 cities, max 5
 		
 		# Choose randomly between Great People and Migrant Workers
 		# TODO: Find better heuristic
@@ -478,35 +469,35 @@ class ImmigrationUtils:
 			lCategoryDesire[iExplorersCat] = 2 - lNumUnitsInCategories[iExplorersCat]	# Want 2 explorers max
 
 		# Miltia Category
-		lCategoryDesire[iMilitiaCat] = min(iNumCities, 30) - lNumUnitsInCategories[iMilitiaCat]	# Want 1 Militia per city, up to 30
+		lCategoryDesire[iMilitiaCat] = min(iNumCities, 10) - lNumUnitsInCategories[iMilitiaCat]	# Want 1 Militia per city, up to 10
 		
 		# Mainline Category
-		lCategoryDesire[iMainlineCat] = min(iNumCities, 30) - lNumUnitsInCategories[iMainlineCat]	# Want 1 Mainline infantry per city, up to 30
+		lCategoryDesire[iMainlineCat] = min(iNumCities, 10) - lNumUnitsInCategories[iMainlineCat]	# Want 1 Mainline infantry per city, up to 10
 		
 		# Elite Category
-		lCategoryDesire[iEliteCat] = min(iNumCities / 3, 10) - lNumUnitsInCategories[iEliteCat]	# Want 1/3 unit per city, up to 10
+		lCategoryDesire[iEliteCat] = min(iNumCities / 3, 3) - lNumUnitsInCategories[iEliteCat]	# Want 1/3 unit per city, up to 3
 		
 		# Collateral Category
-		lCategoryDesire[iCollateralCat] = min(iNumCities / 3, 10) - lNumUnitsInCategories[iCollateralCat]	# Want 1/3 unit per city, up to 10
+		lCategoryDesire[iCollateralCat] = min(iNumCities / 3, 3) - lNumUnitsInCategories[iCollateralCat]	# Want 1/3 unit per city, up to 3
 		
 		# Skirmish Category
-		lCategoryDesire[iSkirmishCat] = min(iNumCities / 3, 10) - lNumUnitsInCategories[iSkirmishCat]	# Want 1/3 unit per city, up to 10
+		lCategoryDesire[iSkirmishCat] = min(iNumCities / 3, 3) - lNumUnitsInCategories[iSkirmishCat]	# Want 1/3 unit per city, up to 3
 		
 		# Cav Category
-		lCategoryDesire[iCavCat] = min(iNumCities / 3, 10) - lNumUnitsInCategories[iCavCat]	# Want 1/3 unit per city, up to 10
+		lCategoryDesire[iCavCat] = min(iNumCities / 3, 5) - lNumUnitsInCategories[iCavCat]	# Want 1/3 unit per city, up to 5
 		
 		# Siege Category
-		lCategoryDesire[iSiegeCat] = min(iNumCities / 3, 10) - lNumUnitsInCategories[iSiegeCat]	# Want 1/3 unit per city, up to 10
+		lCategoryDesire[iSiegeCat] = min(iNumCities / 3, 5) - lNumUnitsInCategories[iSiegeCat]	# Want 1/3 unit per city, up to 5
 		
 		# Mainline Ship Category
-		lCategoryDesire[iMainlineShipCat] = min(iNumCities / 3, 10) - lNumUnitsInCategories[iMainlineShipCat]	# Want 1/3 unit per city, up to 10
+		lCategoryDesire[iMainlineShipCat] = min(iNumCities / 3, 5) - lNumUnitsInCategories[iMainlineShipCat]	# Want 1/3 unit per city, up to 5
 		
 		# Capital Ship Category
-		lCategoryDesire[iCapitalShipCat] = min(iNumCities / 3, 10) - lNumUnitsInCategories[iCapitalShipCat]	# Want 1/3 unit per city, up to 10
+		lCategoryDesire[iCapitalShipCat] = min(iNumCities / 3, 3) - lNumUnitsInCategories[iCapitalShipCat]	# Want 1/3 unit per city, up to 3
 		
-		# Skirmish Ship Category
-		if lCategoryDesire[iMainlineShipCat] < 1:
-			lCategoryDesire[iSkirmishShipCat] = 2 - lNumUnitsInCategories[iSkirmishShipCat]	# Want up to 2 if own fleet is already built out (don't privateer spam!)
+		# Skirmish Ship Category - On second thought, don't let the AI hire endless privateers...
+		#if lCategoryDesire[iMainlineShipCat] < 1:
+		#	lCategoryDesire[iSkirmishShipCat] = 2 - lNumUnitsInCategories[iSkirmishShipCat]	# Want up to 2 if own fleet is already built out (don't privateer spam!)
 		
 		return lCategoryDesire
 	

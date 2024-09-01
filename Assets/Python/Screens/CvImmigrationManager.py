@@ -106,7 +106,7 @@ class CvImmigrationManager:
 	# Populates the panel that shows all of the available Colonists
 	def populateAvailableColonistsPanel(self, screen):
 		# Get the available Colonists
-		mercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, lPossibleColonists)
+		mercenaries = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, lPossibleColonists)
 		
 		self.populateAvailablePanel(screen, AVAILABLE_COLONISTS_INNER_PANEL_ID, mercenaries)
 
@@ -115,7 +115,7 @@ class CvImmigrationManager:
 	def populateAvailableExpeditionariesPanel(self, screen):
 
 		# Get the available Expeditionaries
-		mercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, lPossibleExpeditionaries)
+		mercenaries = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, lPossibleExpeditionaries)
 		
 		self.populateAvailablePanel(screen, AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, mercenaries)
 	
@@ -124,7 +124,7 @@ class CvImmigrationManager:
 	def populateAvailableEndowmentsPanel(self, screen):
 
 		# Get the available Endowments
-		mercenaries = objImmigrationUtils.getAvailableMercenaries(self.iActivePlayer, lPossibleEndowments)
+		mercenaries = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, lPossibleEndowments)
 		
 		self.populateAvailablePanel(screen, AVAILABLE_ENDOWMENTS_INNER_PANEL_ID, mercenaries)
 		
@@ -502,7 +502,7 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 		
 		# Get the mercenaries available for hire
-		mercenaries = objImmigrationUtils.getAvailableMercenaries(iPlayer, lPossibleColonists)
+		mercenaries = objImmigrationUtils.getAvailableImmigrants(iPlayer, lPossibleColonists)
 
 		self.updateAvailableUnits(screen, mercenaries, iPlayer)
 		
@@ -514,7 +514,7 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 		
 		# Get the mercenaries available for hire
-		mercenaries = objImmigrationUtils.getAvailableMercenaries(iPlayer, lPossibleExpeditionaries)
+		mercenaries = objImmigrationUtils.getAvailableImmigrants(iPlayer, lPossibleExpeditionaries)
 
 		self.updateAvailableUnits(screen, mercenaries, iPlayer)
 	
@@ -527,7 +527,7 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 		
 		# Get the mercenaries available for hire
-		mercenaries = objImmigrationUtils.getAvailableMercenaries(iPlayer, lPossibleEndowments)
+		mercenaries = objImmigrationUtils.getAvailableImmigrants(iPlayer, lPossibleEndowments)
 
 		self.updateAvailableUnits(screen, mercenaries, iPlayer)
 	
@@ -631,7 +631,7 @@ class CvImmigrationManager:
 			if(function == "InfoButton"):
 				
 				# Get the mercenary from the global mercenary pool
-				mercenary = objImmigrationUtils.getMercenary(iMercenary)
+				mercenary = objImmigrationUtils.getImmigrant(iMercenary)
 
 				# Return immediately if we still couldn't get the mercenary information
 				if(mercenary == None):
