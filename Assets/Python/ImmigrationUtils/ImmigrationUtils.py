@@ -181,8 +181,10 @@ class ImmigrationUtils:
 	
 	def addAvailableUnitToDict(self, iUnit, unitDict):
 		
-		# Add the mercenary into the unitDict
-		unitDict[newMercenary.getName()] = getImmigrant(iUnit)
+		newImmigrant = self.getImmigrant(iUnit)
+		
+		# Add the immigrant into the unitDict
+		unitDict[newImmigrant.getName()] = newImmigrant
 		
 		return unitDict
 

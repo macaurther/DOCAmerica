@@ -5395,23 +5395,24 @@ void CvUnitAI::AI_settlerSeaMove()
 		}
 	}
 
-	// MacAurther: If you have nothing to attack and you're empty, go pick up Immigrants
-	if (bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigration() > AI_MIN_IMMIGRATION)
+	//MacAurther: If you have nothing to attack and player doesn't have an immigrant ship, prioritize sending one
+	if (GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == NULL)
 	{
-		// If player already has an immigrant ship, don't send another one
-		if (!GET_PLAYER(getOwnerINLINE()).getImmigrantShip() != NULL)
+		//  If you're empty and have enough immigration, become the immigrant ship
+		if (bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigration() > AI_MIN_IMMIGRATION)
 		{
 			if (AI_PickupImmigrantsMove())
 			{
+				// This is the Immigrant ship now
+				GET_PLAYER(getOwnerINLINE()).setImmigrantShip(this);
 				return;
 			}
 		}
 	}
 
-	// MacAurther: TODO: Figure out if there's a better priority for this
-	// MacAurther: If you are the immigrant ship and full, you are not the immigrant ship anymore
+	// MacAurther: If you are the immigrant ship and not empty, you are not the immigrant ship anymore
 	// Go drop off your cargo and let someone else be the immigrant ship
-	if (isFull() && GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == this)
+	if (!bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigrantShip() == this)
 	{
 		GET_PLAYER(getOwnerINLINE()).setImmigrantShip(NULL);
 	}
@@ -5491,6 +5492,15 @@ void CvUnitAI::AI_settlerSeaMove()
 	if (AI_pickup(UNITAI_WORKER))
 	{
 		return;
+	}
+
+	// MacAurther: If you have nothing else to do and you're empty, go pick up Immigrants
+	if (bEmpty && GET_PLAYER(getOwnerINLINE()).getImmigration() > AI_MIN_IMMIGRATION)
+	{
+		if (AI_PickupImmigrantsMove())
+		{
+			return;
+		}
 	}
 
 	if (AI_retreatToCity(true))
@@ -18764,9 +18774,6 @@ bool CvUnitAI::AI_PickupImmigrantsMove()
 		return false;
 	}
 
-	// This is the Immigrant ship now
-	GET_PLAYER(getOwnerINLINE()).setImmigrantShip(this);
-
 	// See if you're already on the edge
 	if (pEdge == plot())
 	{
@@ -18823,7 +18830,16 @@ bool CvUnitAI::AI_GetClosestEdge(CvPlot*& pClosestEdgePlot)
 
 bool CvUnitAI::AI_populateMove()
 {
-	// Let's say we want to send Colonists to the city with the most spare happiness that's not starving that's reachable
+	// Let's say we want to send Colonists to a city with spare happiness that's growing that's reachable
+	// First, see if we're at a city that fits those conditions
+	CvCity* pCity = plot()->getPlotCity();
+	if (pCity != NULL && pCity->foodDifference() >= 2 && pCity->happyLevel() - pCity->unhappyLevel() > 0)
+	{
+		getGroup()->pushMission(MISSION_POPULATE);
+		return true;
+	}
+
+	// Search for the city with the most spare happiness that's growing that's reachable
 	CvCity* pLoopCity;
 	CvCity* pBestCity = NULL;
 	int iLoop;
@@ -18834,7 +18850,7 @@ bool CvUnitAI::AI_populateMove()
 	{
 		if (atPlot(pLoopCity->plot()) || canMoveInto(pLoopCity->plot(), false, false))
 		{
-			if (pLoopCity->foodDifference() >= 0)
+			if (pLoopCity->foodDifference() >= 2)
 			{
 				int iHappy = pLoopCity->happyLevel() - pLoopCity->unhappyLevel();
 				if (iHappy > iBestCityHappy)
@@ -18848,11 +18864,6 @@ bool CvUnitAI::AI_populateMove()
 
 	if (pBestCity != NULL)
 	{
-		if (plot() == pBestCity->plot())
-		{
-			getGroup()->pushMission(MISSION_POPULATE);
-			return true;
-		}
 		getGroup()->pushMission(MISSION_MOVE_TO, pBestCity->getX(), pBestCity->getY());
 		return true;
 	}

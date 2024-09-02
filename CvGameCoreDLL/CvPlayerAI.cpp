@@ -9950,17 +9950,17 @@ int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMission
 		{
 			if (pLoopSelectionGroup->AI_getMissionAIUnit() == pUnit)
 			{
-					MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
-					for (int iMissionAIIndex = 0; iMissionAIIndex < iMissionAICount; iMissionAIIndex++)
-			{
-					if (eGroupMissionAI == aeMissionAI[iMissionAIIndex] || NO_MISSIONAI == aeMissionAI[iMissionAIIndex])
+				MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
+				for (int iMissionAIIndex = 0; iMissionAIIndex < iMissionAICount; iMissionAIIndex++)
 				{
-					iCount += pLoopSelectionGroup->getNumUnits();
+					if (eGroupMissionAI == aeMissionAI[iMissionAIIndex] || NO_MISSIONAI == aeMissionAI[iMissionAIIndex])
+					{
+						iCount += pLoopSelectionGroup->getNumUnits();
+					}
 				}
 			}
 		}
 	}
-		}
 
 	return iCount;
 }

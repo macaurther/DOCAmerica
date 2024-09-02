@@ -14,7 +14,7 @@ iNumPlayers = gc.getMAX_PLAYERS()
 
 # civilizations, not players
 iNumCivs = 38
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHawaii,		iInca,			iInuit,			iIroquois,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	iNorse,			
 iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iLakota,			iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
@@ -409,7 +409,7 @@ tPersecutionPreference = (
 
 # pagan religions
 iNumPaganReligions = 13
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iAngakkuq, 	iAsatru, 		iAtua, 			iDruidism, 		iGaiwiio,		iInti, 			iKachina,		iMidewiwin, 	iRodnovery, 	iTeotlMaya, 
 iTeotlAztec, 	iWocekiya,		iYoruba) = range(iNumPaganReligions)
 
@@ -456,7 +456,7 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 iNumUnits = 154
 # Land Units (97)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iBear, 		iPanther, 		iWolf, 			iSettler, 		iDogSled,		iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		
 iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iColonist,		iScout, 		
 iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		iFactor,		iParatrooper,	iMilitia1,		iFalconDancer,	iMilitia2,		
@@ -469,19 +469,19 @@ iConquistador,	iMountedBrave,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry
 iCannon,		iHeavyCannon,	iLightCannon,	iRifledCannon,	iFieldGun,		iArtillery,		iAAGun,		
 
 # Naval Units (27)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iWorkboat,		iCanoe,			iLongship,		iWaaKaulua,		iKayak,			iCaravel,		iCarrack,		iIndiaman,		iGalleon,       iFluyt,			
 iBrigantine,	iSteamship,		iTransport,		iCarrier,		iSloop,			iFrigate,		iIronclad,		iDestroyer,		iCorvette,		iPrivateer,	    
 iMonitor,		iSubmarine,		iBarque,		iShipOfTheLine,	iManOfWar,		iCruiser,		iBattleship,	
 # Air Units (4)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iBiplane,		iFighter,		iBomber,		iNuclearBomber,	
 # Great People Units (17)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
 iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
 # Other Units (9)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker,	iOldWorldArt,	iOldWorldAssets,iOldWorldInnovations) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
@@ -502,7 +502,7 @@ iGreatSpy : iFeGreatSpy,
 }
 
 iNumUnitRoles = 23
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iSettle,		iWork,			iRecon,			iMissionary,	iMilitia,		iBase,			iCounter,		iDefend,		iSkirmish,		iCav,			
 iSiege,			iSiegeCity,		iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,iColonistSupport,iColonistExplore, 
 iColonistConquer, iColonistDefend, iColonistSlave) = range(iNumUnitRoles)
@@ -511,7 +511,7 @@ lColonistRoles = [iColonistSettle, iColonistSupport, iColonistExplore, iColonist
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 49
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iAluminium, 	iBison,			iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
 iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iDeer, 			iFish, 			iPig, 			iPotato,		
 iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			iGems, 			
@@ -519,13 +519,13 @@ iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 
 iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
 iNumBonusVarieties = 3
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iDyeCochineal, iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
 iNumBuildings = 225
 # Buildings (119)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iPalace,		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iColcas,		iIgloo,			iTipi,			iMarket,		iWeaver,		
 iStoneworks,	iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			iAltar,			iTomb,			
 iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iSukaQullu,		iBath,			iTemazcal,		iJeweller,		iGoldsmith,		iWalls,			
@@ -539,21 +539,21 @@ iTextileMill,	iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsen
 iSupermarket,	iHospital,		iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	
 iCoalPlant,		iHydroPlant,	iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
 # Religious Buildings (41)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iJewishTemple, iJewishCathedral, iJewishMonastery, iJewishShrine, iOrthodoxTemple, iOrthodoxCathedral, iOrthodoxMonastery, iOrthodoxShrine, iCatholicTemple, iCatholicCathedral, 
 iCatholicMonastery, iMission,	iCatholicShrine, iProtestantTemple, iProtestantCathedral, iProtestantMonastery, iProtestantShrine, iIslamicTemple, iIslamicCathedral, iIslamicMonastery, 
 iIslamicShrine, iHinduTemple, iHinduCathedral, iHinduMonastery, iHinduShrine, iBuddhistTemple, iBuddhistCathedral, iBuddhistMonastery, iBuddhistShrine, iConfucianTemple, 
 iConfucianCathedral, iConfucianMonastery, iConfucianShrine, iTaoistTemple, iTaoistCathedral, iTaoistMonastery, iTaoistShrine, iZoroastrianTemple, iZoroastrianCathedral, iZoroastrianMonastery, 
 iZoroastrianShrine, 
 # Great Buildings (6)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iAcademy, 		iAdministrativeCenter, iManufactory, iArmoury, 	iMuseum, 		iStockExchange, 
 # Great Buildings/National Wonders (12)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAcademy,iSecretService,iIronworks,iRedCross,		iNationalPark,	iCentralBank, 	
 iGrandCentralStation,iSupremeCourt,
 # Great Wonders (47)
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iPuebloBonito,	iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iYachaywasi,	iGateOfTheSun,	iGreatGeoglyph,	
 iKalasasaya,	iPyramidOfTheSun,iSerpentMound,	iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,
 iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iWestPoint,	iFortMcHenry,	iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	
@@ -634,7 +634,7 @@ iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range
 
 #Regions
 iNumRegions = 52
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (rAlaska, 		rYukon,         rNunavut, 		rGreenland,     rIceland,       rNorthCascadia, rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	
 rSouthCascadia, rCalifornia,    rRockies,       rSouthwest,     rTexas,         rGreatPlains,   rGreatLakes,    rNewEngland,    rMidAtlantic,   rMaryland,
 rRiverValley,    rCoastalPlain,  rDeepSouth,     rFlorida,       rBajaCalifornia,rSierraMadres,  rBajio,         rVeracruz,      rOaxaca,        rYucatan,       
@@ -666,7 +666,7 @@ lWest = lAmerica + [rHawaii, rGreenland]
 #Projects
 
 iNumProjects = 9
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iMigrateN,		iMigrateNE,		iMigrateE,		iMigrateSE,		iMigrateS,		iMigrateSW,		iMigrateW,		iMigrateNW,		iWorldsFair) = range(iNumProjects)
 
 #Eras
@@ -683,7 +683,7 @@ iNumCultureLevels = 7
 #Improvements
 
 iNumImprovements = 29
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iLandWorked, 	iWaterWorked, 	iCityRuins, 	iFarm, 			iPaddyField, 	iFishingBoats, 	iOceanFishery, 	iWhalingBoats, 	iMine, 			iWorkshop, 
 iLumbermill, 	iWindmill, 		iWatermill, 	iPlantation, 	iQuarry, 		iPasture, 		iCamp, 			iWell, 			iOffshorePlatform,iWinery, 		
 iCottage, 		iHamlet, 		iVillage, 		iTown, 			iFort, 			iForestPreserve, iMarinePreserve,iTribe,		iContactedTribe) = range(iNumImprovements)
@@ -694,12 +694,12 @@ iNumRoutes = 3
 #feature & terrain
 
 iNumFeatures = 14
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
 iFallout, 		iTaiga, 		iPalmForest,	iCanyon) = range(iNumFeatures)
 
 iNumTerrains = 21
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iGrass, 		iPlains, 		iDesert, 		iTundra, 		iSnow, 			iCoast, 		iOcean, 		iTerrainPeak, 	iTerrainHills, 	iMarsh,
 iLagoon,		iArcticCoast,	iSemidesert,	iPrairie,		iMoorland,		iSaltflat,		iSaltlake,		iAtoll,			iSavanna,		iWideRiver,
 iFjord) = range(iNumTerrains)
@@ -715,7 +715,7 @@ iVictorySecularism = 11
 
 #leaders
 iNumLeaders = 60
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iLeaderBarbarian,iNativeLeader,iIndependentLeader,iWashington,	iJackson,		iLincoln,		iRoosevelt,		iFDR,			iKennedy,			iReagan,
 iObama,			iSanMartin,		iPeron,			iMontezuma,		iPedro,			iVargas,		iMacDonald,		iTrudeau,		iTacaynamo,		iBolivar,
 iElizabeth,		iVictoria,		iChurchill,		iLouis,			iNapoleon,		iDeGaulle,		iLOuverture,	iKamehameha,	iHuaynaCapac,	iPachacuti,		
@@ -759,7 +759,7 @@ event_cancel = "INTERFACE_BUTTONS_CANCEL"
 
 # Immigration
 iNumImmigrantCategories = 28
-#				2				3				4				5				6				7				8				9				10
+# 0				1				2				3				4				5				6				7				8				9
 (iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	iMainlineCat,	
 iEliteCat,		iCollateralCat,	iSkirmishCat,	iCavCat,		iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat,iEndowCatArt,	iEndowCatAssets,
 iEndowCatInno,	iGPCatProphet,	iGPCatArtist,	iGPCatScientist,iGPCatMerchant,	iGPCatEngineer,	iGPCatStatesman,iGPCatGeneral) = range(iNumImmigrantCategories)
