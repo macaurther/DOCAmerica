@@ -852,11 +852,6 @@ class Congress:
 			if team(iClaimant).isVassal(iVoter): iFavorClaimant += 10
 			if team(iOwner).isVassal(iVoter): iFavorOwner += 10
 			
-			if not plot.isPlayerCore(iOwner) or plot.isPlayerCore(iClaimant):
-				# French UP
-				if civ(iClaimant) == iFrance: iFavorClaimant += 10
-				if civ(iOwner) == iFrance: iFavorOwner += 10
-			
 			# AI memory of human voting behavior
 			if player(iClaimant).isHuman() and iVoter in self.dVotingMemory: iFavorClaimant += 5 * self.dVotingMemory[iVoter]
 			if player(iOwner).isHuman() and iVoter in self.dVotingMemory: iFavorOwner += 5 * self.dVotingMemory[iVoter]
@@ -869,7 +864,8 @@ class Congress:
 			# plot factors
 			# plot culture
 			if bOwner:
-				iClaimValidity += (100 * plot.getCulture(iClaimant) / plot.countTotalCulture()) / 20
+				if plot.countTotalCulture() != 0:	# MacAurther: Protect against divide by zero
+					iClaimValidity += (100 * plot.getCulture(iClaimant) / plot.countTotalCulture()) / 20
 				
 				# after wars: claiming from a non-participant has less legitimacy unless its your own claim
 				if self.bPostWar and not bOwnClaim and iOwner not in self.losers:

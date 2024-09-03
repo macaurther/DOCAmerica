@@ -439,7 +439,13 @@ class ImmigrationUtils:
 		# TODO: Find better heuristic
 		# Great People Category
 		if iCiv in [iAmerica, iCanada]:
-			lCategoryDesire[iGreatPeopleCat] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
+			lCategoryDesire[iGPCatProphet] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
+			lCategoryDesire[iGPCatArtist] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
+			lCategoryDesire[iGPCatScientist] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
+			lCategoryDesire[iGPCatMerchant] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
+			lCategoryDesire[iGPCatEngineer] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
+			lCategoryDesire[iGPCatStatesman] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
+			lCategoryDesire[iGPCatGeneral] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
 		
 		# Slave Category
 		if iSlavery1 in civics or iSlavery2 in civics or iSlavery3 in civics:

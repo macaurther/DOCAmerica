@@ -401,7 +401,7 @@ class Mercenary:
 		pPlayer = gc.getPlayer(iPlayer)
 		
 		# Angle-America RP: Can hire Great People
-		if civ(iPlayer) == iAmerica or civ(iPlayer) == iCanada:
+		if civ(iPlayer) in [iAmerica, iCanada]:
 			if self.getUnitInfoID() in lGreatPeople:
 				return True
 		

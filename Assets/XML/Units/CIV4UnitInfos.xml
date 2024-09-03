@@ -5971,7 +5971,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_PHYSICS</PrereqTech>
+			<PrereqTech>TECH_INDEPENDENCE</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>

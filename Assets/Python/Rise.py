@@ -27,6 +27,7 @@ lExpansionCivs = [
 
 lIndependenceCivs = [
 	iAmerica,
+	iHaiti,
 	iArgentina,
 	iMexico,
 	iColombia,
@@ -680,11 +681,11 @@ class Birth(object):
 			if player(iAztecs).isExisting():
 				return False
 	
-		# independence civs require all players controlling cities in their area to be stable or worse
-		if self.isIndependence():
+		# independence civs require all players controlling cities in their area to be stable or worse -> MacAurther: Nope. America wasn't spawning, can't have that.
+		'''if self.isIndependence():
 			birthCities = plots.birth(self.iCiv).cities()
 			if players.major().where(lambda p: civ(p) != self.iCiv).where(lambda p: birthCities.owner(p).any()).all_if_any(lambda p: stability(p) >= iStabilitySolid):
-				return False
+				return False'''
 		
 		return True
 	
