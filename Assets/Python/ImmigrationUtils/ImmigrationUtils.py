@@ -49,7 +49,7 @@ AVAILABLE_COLONISTS = "AvailableColonists"
 AVAILABLE_EXPEDITIONARIES = "AvailableExpeditionaries"
 
 # Set to true to print out debug messages in the logs
-g_bDebug = false
+g_bDebug = False
 
 class ImmigrationUtils:
 
@@ -285,13 +285,18 @@ class ImmigrationUtils:
 				if (not pImmigrant.canHireUnit(iPlayer)):
 					continue
 				
-				# Calculate how much gold the player will have after hiring the immigrant.
-				(immigrationCost, goldCost) = pImmigrant.getHireCost(iPlayer)
-				tmpImmigration = iImmigration - immigrationCost
-				tmpGold = iGold - goldCost
+				# Calculate how much gold the AI will have after hiring the immigrant.
+				(iImmigrationCost, iGoldCost) = pImmigrant.getHireCost(iPlayer)
+				tmpImmigration = iImmigration - iImmigrationCost
+				tmpGold = iGold - iGoldCost
 				
-				# Continue immediately if the player can't buy the immigrant
+				# Continue immediately if the AI can't buy the immigrant
 				if(tmpImmigration < 0 or tmpGold <= 0):
+					continue
+				
+				# MacAurther TODO: Evaluate this rule
+				# Continue immediately if the AI will have to spend gold to buy this immigrant
+				if iGoldCost > 0:
 					continue
 				
 				if g_bDebug:
@@ -371,7 +376,10 @@ class ImmigrationUtils:
 		
 		# Hire Immigrants until we get below 50 Immigration, but don't go below -5 GPT, and don't go below 50 Gold
 		while pPlayer.getImmigration() > 50 and pPlayer.getGoldPerTurn() > -5 and pPlayer.getGold() > 50:
-
+			
+			if g_bDebug:
+				CvUtil.pyPrint(pPlayer.getName() + " has the following desires: " + str(lCategoryDesire))
+			
 			# Get the best available immigrant
 			immigrant, lCategoryDesire = self.getBestAvailableImmigrant(pPlayer.getImmigration(), pPlayer.getGold(), iPlayer, lCategoryDesire)
 
@@ -380,7 +388,7 @@ class ImmigrationUtils:
 				return
 			
 			if g_bDebug:
-				CvUtil.pyPrint("Player: " + str(iPlayer) + " thinking about iImmigrant: " + str(immigrant.objUnitInfo.getType()))
+				CvUtil.pyPrint(pPlayer.getName() + " thinking about iImmigrant: " + str(immigrant.objUnitInfo.getType()))
 
 			# Have the computer hire the immigrant			
 			if not self.hireMercenary(immigrant.getUnitInfoID(), iPlayer):
@@ -435,18 +443,6 @@ class ImmigrationUtils:
 		# Transports Category
 		lCategoryDesire[iTransportsCat] = min(iNumCities / 2, 5) - lNumUnitsInCategories[iTransportsCat]	# Want 1 Transport per 2 cities, max 5
 		
-		# Choose randomly between Great People and Migrant Workers
-		# TODO: Find better heuristic
-		# Great People Category
-		if iCiv in [iAmerica, iCanada]:
-			lCategoryDesire[iGPCatProphet] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
-			lCategoryDesire[iGPCatArtist] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
-			lCategoryDesire[iGPCatScientist] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
-			lCategoryDesire[iGPCatMerchant] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
-			lCategoryDesire[iGPCatEngineer] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
-			lCategoryDesire[iGPCatStatesman] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
-			lCategoryDesire[iGPCatGeneral] = gc.getGame().getSorenRandNum(100, 'random') / 100.0
-		
 		# Slave Category
 		if iSlavery1 in civics or iSlavery2 in civics or iSlavery3 in civics:
 			# Get excess happiness in cities that can have slaves
@@ -468,9 +464,8 @@ class ImmigrationUtils:
 		lCategoryDesire[iColonistsCat] = min(iExcessHappiness, 2) - lNumUnitsInCategories[iColonistsCat]	# Max at 2 at any given time
 		
 		# Migrant Worker Category
-		# TODO: Find better heuristic
 		if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
-			lCategoryDesire[iMigrantWorkerCat] = min(gc.getGame().getSorenRandNum(100, 'random') / 100.0, 3 - lNumUnitsInCategories[iMigrantWorkerCat])	# Max at 3 at any given time
+			lCategoryDesire[iMigrantWorkerCat] = 3 - lNumUnitsInCategories[iMigrantWorkerCat]	# Max at 3 at any given time
 		
 		# Explorers Category
 		if iCiv in [iSpain, iPortugal, iEngland, iFrance, iNetherlands, iRussia]:
@@ -500,12 +495,29 @@ class ImmigrationUtils:
 		# Mainline Ship Category
 		lCategoryDesire[iMainlineShipCat] = min(iNumCities / 3, 5) - lNumUnitsInCategories[iMainlineShipCat]	# Want 1/3 unit per city, up to 5
 		
-		# Capital Ship Category
-		lCategoryDesire[iCapitalShipCat] = min(iNumCities / 3, 3) - lNumUnitsInCategories[iCapitalShipCat]	# Want 1/3 unit per city, up to 3
-		
 		# Skirmish Ship Category - On second thought, don't let the AI hire endless privateers...
 		#if lCategoryDesire[iMainlineShipCat] < 1:
 		#	lCategoryDesire[iSkirmishShipCat] = 2 - lNumUnitsInCategories[iSkirmishShipCat]	# Want up to 2 if own fleet is already built out (don't privateer spam!)
+		
+		# Capital Ship Category
+		lCategoryDesire[iCapitalShipCat] = min(iNumCities / 3, 3) - lNumUnitsInCategories[iCapitalShipCat]	# Want 1/3 unit per city, up to 3
+		
+		# Don't consider Endowments until you're near your city goal
+		if dNumCitiesGoal[iCiv] - iNumCities <= 1:
+			# Endowments Category
+			lCategoryDesire[iEndowCatArt] = 4 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_CULTURE) / 20)
+			lCategoryDesire[iEndowCatAssets] = 4 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_GOLD) / 20)
+			lCategoryDesire[iEndowCatInno] = 4 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_RESEARCH) / 20)
+			
+			# Great People Category
+			if iCiv in [iAmerica, iCanada]:
+				if turn() < turn(1800): lCategoryDesire[iGPCatProphet] = 3
+				lCategoryDesire[iGPCatArtist] = 5 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_CULTURE) / 40)
+				lCategoryDesire[iGPCatScientist] = 5 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_RESEARCH) / 20)
+				lCategoryDesire[iGPCatMerchant] = 5 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_GOLD) / 20)
+				if turn() >= turn(1800): lCategoryDesire[iGPCatEngineer] = 3
+				lCategoryDesire[iGPCatStatesman] = -stability(iPlayer)
+				lCategoryDesire[iGPCatGeneral] = team(iPlayer).getAtWarCount(True)
 		
 		return lCategoryDesire
 	

@@ -190,71 +190,6 @@ class CvImmigrationManager:
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
-				
-				
-	# Clears out the unit information panel contents
-	def clearUnitInformation(self, screen):
-		screen.deleteWidget(UNIT_INFORMATION_PROMOTION_PANEL_ID)
-		screen.deleteWidget(UNIT_INFORMATION_INNER_PROMOTION_PANEL_ID)
-		screen.deleteWidget(UNIT_INFORMATION_DETAILS_PANEL_ID)
-		screen.deleteWidget(UNIT_GRAPHIC)
-		
-
-	# Populates the unit information panel with the unit information details		
-	def populateUnitInformation(self, screen, mercenary):
-		# Get the ID for the current active player
-		iPlayer = gc.getGame().getActivePlayer()
-		
-		screen.addPanel(UNIT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
-		screen.addPanel(UNIT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Promotions", "", True, True, self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
-		screen.addPanel(UNIT_INFORMATION_DETAILS_PANEL_ID, "", "", True, False, self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_X], self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_Y], self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_WIDTH], self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
-		screen.attachListBoxGFC( UNIT_INFORMATION_DETAILS_PANEL_ID, UNIT_INFORMATION_DETAILS_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
-		screen.enableSelect(UNIT_INFORMATION_DETAILS_LIST_ID, False)
-
-		# Build the unit XP string
-		strXP = u"%d/%d" %(mercenary.getExperienceLevel(), mercenary.getNextExperienceLevel())
-
-		# Build the unit stats string
-		strStats = u"%d%c    %d%c" %(mercenary.getUnitInfo().getCombat(), CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR),mercenary.getUnitInfo().getMoves(),CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
-		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, mercenary.getName(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		#screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Unit Type: " + mercenary.getUnitInfo().getDescription(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY ) #Rhye
-		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Level: " + str(mercenary.getLevel()) + "     XP: " + strXP, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  " + strStats, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-
-		# Build the unit hire cost string
-		strHCost = mercenary.getHireCostString(iPlayer)
-		screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  Contract Income: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		
-		# Show the contract income for the unit if it is in the game			
-		if(mercenary.isPlaced()):
-			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-
-		# Otherwise, show the number of turns until the unit is placed in the game
-		else:
-
-			# Get the number of turns until the unit/mercenary is placed in the game
-			placementTurns = mercenary.getPlacementTurns()
-			strPlacement = ""
-			
-			# Build the placement string
-			if(placementTurns <= 1):
-				strPlacement = "Arrives next turn"
-			else:
-				strPlacement = u"Arrival in %d turns" %(placementTurns)
-			screen.appendListBoxString( UNIT_INFORMATION_DETAILS_LIST_ID, "  " + strPlacement, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		
-		# Get the promotion list for the mercenary/unit
-		promotionList = mercenary.getCurrentPromotionList()
-
-		screen.attachMultiListControlGFC(UNIT_INFORMATION_INNER_PROMOTION_PANEL_ID, UNIT_INFORMATION_PROMOTION_LIST_CONTROL_ID, "", 1, 64, 64, TableStyles.TABLE_STYLE_STANDARD)
-
-		# Add all of the promotions the mercenary/unit has.
-		for promotion in promotionList:
-			screen.appendMultiListButton( UNIT_INFORMATION_PROMOTION_LIST_CONTROL_ID, promotion.getButton(), 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, gc.getInfoTypeForString(promotion.getType()), -1, false )
-			
-		screen.addUnitGraphicGFC(UNIT_GRAPHIC, mercenary.getUnitInfoID(), self.screenWidgetData[UNIT_ANIMATION_X], self.screenWidgetData[UNIT_ANIMATION_Y], self.screenWidgetData[UNIT_ANIMATION_WIDTH], self.screenWidgetData[UNIT_ANIMATION_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1, self.screenWidgetData[UNIT_ANIMATION_ROTATION_X], self.screenWidgetData[UNIT_ANIMATION_ROTATION_Z], self.screenWidgetData[UNIT_ANIMATION_SCALE], True)
-
 
 	# Clears out the mercenary information panel contents
 	def clearMercenaryInformation(self, screen):
@@ -270,9 +205,13 @@ class CvImmigrationManager:
 		iPlayer = gc.getGame().getActivePlayer()
 
 		screen.addPanel(IMMIGRANT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
-		screen.addPanel(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Promotions", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
+		
+		screen.addPanel(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Details", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
+		screen.attachListBoxGFC(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
+		screen.enableSelect(IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, False)
+		
 		screen.addPanel(IMMIGRANT_INFORMATION_DETAILS_PANEL_ID, "", "", True, False, self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
-		screen.attachListBoxGFC( IMMIGRANT_INFORMATION_DETAILS_PANEL_ID, IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
+		screen.attachListBoxGFC(IMMIGRANT_INFORMATION_DETAILS_PANEL_ID, IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
 		screen.enableSelect(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, False)
 
 		# Build the mercenary hire cost string
@@ -283,39 +222,21 @@ class CvImmigrationManager:
 
 		# Build the unit stats string
 		strStats = u"%d%c    %d%c" %(mercenary.getUnitInfo().getCombat(), CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR),mercenary.getUnitInfo().getMoves(),CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
+		if mercenary.getUnitInfo().getAirCombat() > 0 and mercenary.getUnitInfo().getAirRange() > 0:
+			strStats += u"    %d%c" % (mercenary.getUnitInfo().getAirCombat(), CyGame().getSymbolID(FontSymbols.RANGED_STRENGTH_CHAR))
+			strStats += u"    %d%c" % (mercenary.getUnitInfo().getAirRange(), CyGame().getSymbolID(FontSymbols.RANGE_CHAR))
 
-		screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, mercenary.getName(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		#screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Unit Type: " + mercenary.getUnitInfo().getDescription(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY ) #Rhye
-		screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Level: " + str(mercenary.getLevel()) + "     XP: " + strXP, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  " + strStats, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Hire Cost: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-
-		# Show the mercenary costs if it is in the game			
-		if(mercenary.isPlaced()):
-			screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		# Otherwise, show the number of turns until the unit is placed in the game
-		else:
-			# Get the number of turns until the unit/mercenary is placed in the game
-			placementTurns = mercenary.getPlacementTurns()
-			strPlacement = ""
-
-			# Build the placement string
-			if(placementTurns <= 1):
-				strPlacement = "Arrives next turn"
-			else:
-				strPlacement = u"Arrival in %d turns" %(placementTurns)
-			screen.appendListBoxString( IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  " + strPlacement, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, mercenary.getName(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		#screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Unit Type: " + mercenary.getUnitInfo().getDescription(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY ) #Rhye
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Level: " + str(mercenary.getLevel()) + "     XP: " + strXP, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  " + strStats, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Hire Cost: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
-		# Get the promotion list for the mercenary
-		promotionList = mercenary.getCurrentPromotionList()
+		szText = CyGameTextMgr().getUnitHelp(mercenary.getUnitInfoID(), True, False, False, None)[1:]
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, szText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, "  " + mercenary.getUnitInfo().getStrategy(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
-		screen.attachMultiListControlGFC(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, IMMIGRANT_INFORMATION_PROMOTION_LIST_CONTROL_ID, "", 1, 64, 64, TableStyles.TABLE_STYLE_STANDARD)
-
-		# Add all of the promotions the mercenary has.
-		for promotion in promotionList:
-			screen.appendMultiListButton( IMMIGRANT_INFORMATION_PROMOTION_LIST_CONTROL_ID, promotion.getButton(), 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, gc.getInfoTypeForString(promotion.getType()), -1, false )
-			
 		screen.addUnitGraphicGFC(IMMIGRANT_UNIT_GRAPHIC, mercenary.getUnitInfoID(), self.screenWidgetData[IMMIGRANT_ANIMATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_Y], self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH], self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1, self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_Z], self.screenWidgetData[IMMIGRANT_ANIMATION_SCALE], True)
 
 	
@@ -764,8 +685,8 @@ class CvImmigrationManager:
 		
 		self.screenWidgetData[IMMIGRANT_ANIMATION_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X]+20
 		self.screenWidgetData[IMMIGRANT_ANIMATION_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_PANEL_Y]+40
-		self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] = 303
-		self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] = 200
+		self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] = 400
+		self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] = 350
 		self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_X] = -20
 		self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_Z] = 30
 		self.screenWidgetData[IMMIGRANT_ANIMATION_SCALE] = 1.0
@@ -773,7 +694,7 @@ class CvImmigrationManager:
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_ANIMATION_Y] + self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*18)
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] = 128 + (self.screenWidgetData[BORDER_WIDTH]*9)
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] = 256 + (self.screenWidgetData[BORDER_WIDTH]*9)
 
 		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH]
@@ -857,20 +778,6 @@ class CvImmigrationManager:
 		self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_Y] = self.screenWidgetData[UNIT_ANIMATION_Y]
 		self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[UNIT_ANIMATION_X] + self.screenWidgetData[UNIT_ANIMATION_WIDTH] + (self.screenWidgetData[BORDER_WIDTH])*6)
 		self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_HEIGHT] = self.screenWidgetData[UNIT_ANIMATION_HEIGHT]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_ANIMATION_Y] + self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*18)
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] = 128 + (self.screenWidgetData[BORDER_WIDTH]*9)
-
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*2)
-
-		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_X] = self.screenWidgetData[IMMIGRANT_ANIMATION_X] + self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_Y] = self.screenWidgetData[IMMIGRANT_ANIMATION_Y]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[IMMIGRANT_ANIMATION_X] + self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] + (self.screenWidgetData[BORDER_WIDTH])*6)
-		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT]
 
 	# Converts a number into its string representation. This is needed since
 	# for whatever reason, numbers did not work very well when using them 

@@ -352,7 +352,7 @@ class Mercenary:
 			iImmigrationCost = 1000
 		
 		# Old World Boosts : Starts at 1 Immigration per 1 Commerce
-		if self.getUnitInfoID() in lEndowmentsBase:
+		if self.getUnitInfoID() in lEndowments:
 			iImmigrationCost = 500
 		
 		# Scale by game speed
@@ -400,13 +400,13 @@ class Mercenary:
 	def canHireUnit(self, iPlayer):
 		pPlayer = gc.getPlayer(iPlayer)
 		
-		# Angle-America RP: Can hire Great People
+		# Anglo-America RP: Can hire Great People
 		if civ(iPlayer) in [iAmerica, iCanada]:
 			if self.getUnitInfoID() in lGreatPeople:
 				return True
 		
 		# Can hire Colonists and other special units even though you can't train them
-		if self.getUnitInfoID() in [iColonist] + lEndowmentsBase:
+		if self.getUnitInfoID() in [iColonist] + lEndowments:
 			return True
 		
 		if pPlayer.canTrain(self.getUnitInfoID(), false, false):

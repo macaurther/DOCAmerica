@@ -797,7 +797,8 @@ lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for 
 lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 
 lEndowmentsBase = lEndowmentsArt + lEndowmentsAssets + lEndowmentsInno
-lGreatPeople = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
+lGreatPeople = lGPProphet + lGPArtist + lGPScientist + lGPMerchant + lGPEngineer + lGPStatesman + lGPGeneral
+lEndowments = lEndowmentsBase + lGreatPeople
 
 lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lAfricanSlaves, lColonists, lMigrantWorkers]
 
@@ -810,7 +811,7 @@ lPossibleEndowmentsGP = [lGPProphet, lGPArtist, lGPScientist, lGPMerchant, lGPEn
 lPossibleEndowments = lPossibleEndowmentsBase + lPossibleEndowmentsGP
 
 lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries + lPossibleEndowments
-lNoTrainingNeeded = lAfricanSlaves + lColonists + lMigrantWorkers + lPossibleEndowments
+lNoTrainingNeeded = lAfricanSlaves + lColonists + lMigrantWorkers + lEndowments
 
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({

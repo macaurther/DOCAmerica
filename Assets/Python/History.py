@@ -119,6 +119,11 @@ def expeditionaryForce(iGameTurn):
 			iModifier1 += 1
 			iModifier2 += 1
 		
+		# Make it easier for defending AI if both sides are AI
+		if not player(iRevolutionaryPlayer).isHuman() and not player(iExpeditionaryPlayer).isHuman():
+			iModifier1 -= 2
+			iModifier2 -= 2
+		
 		# Make it easier for some civs
 		if iRevolutionaryCiv in [iHaiti]:
 			iModifier1 -= 2
@@ -133,14 +138,14 @@ def expeditionaryForce(iGameTurn):
 		team(iExpeditionaryPlayer).declareWar(iRevolutionaryPlayer, True, WarPlanTypes.WARPLAN_TOTAL)
 		
 		dExpeditionSeaUnits = {
-			iEscortSea: 8 + iModifier1 + iModifier2,
-			iFerrySea: 6 + iModifier1 + iModifier2,
+			iEscortSea: 6 + iModifier1 + iModifier2,
+			iFerrySea: 4 + iModifier1 + iModifier2,
 		}
 		
 		dExpeditionUnits = {
 			iBase: 6 + iModifier2,
-			iCounter: 4,
-			iSkirmish: 3 + iModifier1 + iModifier2,
+			iCounter: 4 + iModifier1,
+			iSkirmish: 4 + iModifier1 + iModifier2,
 			iSiegeCity: 4 + iModifier1,
 		}
 		

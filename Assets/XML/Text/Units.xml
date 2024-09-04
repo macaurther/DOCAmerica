@@ -223,11 +223,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CROSSBOWMAN_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</English>
-		<French>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</German>
-		<Italian>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, cause collateral damage, have a defensive bonus in hills and have a bonus against [COLOR_UNIT_TEXT]Light Cavalry Units[COLOR_REVERT].</Spanish>
+		<English>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</English>
+		<French>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</French>
+		<German>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</German>
+		<Italian>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Crossbowmen[COLOR_REVERT] have one first strike, have a defense bonus in cities and hills and have a combat bonus against [COLOR_UNIT_TEXT]Melee Units[COLOR_REVERT].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANADIAN_CORVETTE_STRATEGY</Tag>
