@@ -501,7 +501,6 @@ class Birth(object):
 		return closePlots
 	
 	def revealTerritory(self):
-		# MacAurther Note: Peer and Neighbor Reveal were great features, but they slowed the spawn turn for later Europeans way down on a large map, so they were removed.
 		# reset visibility
 		for plot in plots.all():
 			plot.setRevealed(self.player.getID(), False, False, -1)
@@ -509,17 +508,18 @@ class Birth(object):
 		# reveal birth area
 		revealed = self.area.land()
 		
+		# MacAurther Note: Peer, Neighbor, and Independence Reveal were great features, but they slowed the spawn turn for later Europeans way down on a large map, so they were removed.
 		# if independence civ, revealed by civs controlling cities in birth area
-		independenceRevealed = plots.none()
+		'''independenceRevealed = plots.none()
 		if self.isIndependence():
 			independenceRevealed = plots.sum(plots.owner(iOwner) for iOwner in self.area.cities().owners().major())
 		
 		# revealed by enough neighbours
-		'''neighbours = self.area.expand(3).owners().major().without(self.iPlayer)
-		neighbourRevealed = plots.sum(self.closeNeighbourPlots(iNeighbour) for iNeighbour in neighbours)'''
+		neighbours = self.area.expand(3).owners().major().without(self.iPlayer)
+		neighbourRevealed = plots.sum(self.closeNeighbourPlots(iNeighbour) for iNeighbour in neighbours)
 		
 		# revealed by enough civilizations in your tech group
-		'''iTechGroup = next(iGroup for iGroup in dTechGroups if self.iCiv in dTechGroups[iGroup])
+		iTechGroup = next(iGroup for iGroup in dTechGroups if self.iCiv in dTechGroups[iGroup])
 		peers = players.major().existing().without(self.iPlayer).where(lambda p: civ(p) in dTechGroups[iTechGroup])
 		peerRevealed = plots.none()
 		
@@ -531,11 +531,11 @@ class Birth(object):
 			peerRevealed += plots.all().where(isPeerRevealed).expand(1)
 		
 		bCanNeighbourReveal = revealed.intersect(neighbourRevealed)
-		bCanPeerReveal = revealed.intersect(peerRevealed)'''
+		bCanPeerReveal = revealed.intersect(peerRevealed)
 		
 		revealed += independenceRevealed
 		
-		'''if bCanNeighbourReveal:
+		if bCanNeighbourReveal:
 			revealed += neighbourRevealed
 			
 		iVisionRange = self.player.getCurrentEra() / 2 + 1
@@ -543,6 +543,19 @@ class Birth(object):
 		
 		if bCanPeerReveal:
 			revealed += peerRevealed'''
+		
+		# MacAurther: Instead of dynamic tile revealing (which can be slow), reveal a pre-determined, more "historical" set of tiles
+		# MacAurther TODO: Make implementation more versatile?
+		lRegionList = None
+		if civ(self.iPlayer) in [iEngland, iFrance, iNetherlands, iRussia]:
+			lRegionList = lEuropeanRevealed1600AD
+		elif civ(self.iPlayer) in [iAmerica, iHaiti, iArgentina, iMexico, iColombia, iPeru, iBrazil, iVenezuela]:
+			lRegionList = lEuropeanRevealed1750AD
+		elif civ(self.iPlayer) in [iCanada]:
+			lRegionList = lEuropeanRevealed1850AD
+		
+		if lRegionList:
+			revealed += plots.regions(*lRegionList).expand(1).unique()
 		
 		# reveal tiles
 		for plot in revealed:

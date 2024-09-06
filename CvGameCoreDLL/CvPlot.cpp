@@ -6402,15 +6402,15 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			}
 		}*/
 
+		// MacAurther: This is VERY slow if fort is in an area with a couple of cities mid-late game, especially on flips. Let's see if we can get away with just commenting this out...
 		// Building or removing a fort will now force a plotgroup update to verify resource connections.
-		if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
+		/*if ( (NO_IMPROVEMENT != getImprovementType() && GC.getImprovementInfo(getImprovementType()).isActsAsCity()) !=
 			 (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity()) )
 		{
 			updatePlotGroup();
 
-			// MacAurther: This is VERY slow if fort is in an area with a couple of cities late game.
 			// Leoreth: update culture costs
-			/*CvPlot* pLoopPlot;
+			CvPlot* pLoopPlot;
 			for (int iI = 0; iI < NUM_CITY_PLOTS_3; iI++)
 			{
 				pLoopPlot = plotCity3(getX(), getY(), iI);
@@ -6420,8 +6420,8 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 					pLoopPlot->getPlotCity()->updateCultureCosts();
 					pLoopPlot->getPlotCity()->updateCoveredPlots(true);
 				}
-			}*/
-		}
+			}
+		}*/
 
 		if (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
 		{
@@ -12065,12 +12065,12 @@ void CvPlot::setFortClaimer(CvPlot* pPlot)
 void CvPlot::addFortClaims(PlayerTypes ePlayer)
 {
 	// Find out the range of the fort that's claiming
-	int range = GET_PLAYER(ePlayer).getFortRange();
+	int iRange = GET_PLAYER(ePlayer).getFortRange();
 	// Check surrounding area for plots not already claimed
-	for(int iI = -range; iI < range + 1; iI++){
-		for(int iJ = -range; iJ < range + 1; iJ++){
+	for(int iI = -iRange; iI < iRange + 1; iI++){
+		for(int iJ = -iRange; iJ < iRange + 1; iJ++){
 			// Exclude corners of BFC
-			if(range == 2 && (abs(iI) == 2 && abs(iJ) == 2))
+			if(iRange == 2 && (abs(iI) == 2 && abs(iJ) == 2))
 			{
 				continue;
 			}
@@ -12089,7 +12089,7 @@ void CvPlot::addFortClaims(PlayerTypes ePlayer)
 				{
 					pLoopPlot->setFortOwner(ePlayer);
 					pLoopPlot->setFortClaimer(this);
-					pLoopPlot->updateCulture(true, true);
+					pLoopPlot->updateCulture(true, false);
 				}
 			}
 		}
@@ -12115,7 +12115,7 @@ void CvPlot::removeFortClaims()
 				{
 					pLoopPlot->setFortOwner(NO_PLAYER);
 					pLoopPlot->setFortClaimer(NULL);
-					pLoopPlot->updateCulture(true, true);
+					pLoopPlot->updateCulture(true, false);
 				}
 			}
 		}

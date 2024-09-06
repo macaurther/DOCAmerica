@@ -658,10 +658,19 @@ lAndes = [rColombia, rPeru, rBolivia, rChile, rChaco]
 lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rChile, rParaguay, rUruguay] + lArgentina + lBrazil
 lCentralAmerica = [rMesoamerica, rCaribbean]
 lLatinAmerica = lCentralAmerica + lMexico + lSouthAmerica
-lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico 
+lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico
 
 lAmerica = lSouthAmerica + lCentralAmerica + lNorthAmerica
 lWest = lAmerica + [rHawaii, rGreenland]
+
+# Revealed Tile Lists
+lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, \
+						   rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia]
+lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rRiverValley, \
+						   rCoastalPlain, rDeepSouth, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, \
+						   rVenezuela, rGuyana, rPeru, rBolivia, rBahia, rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia]
+lEuropeanRevealed1850AD = lWest
+
 
 #Projects
 

@@ -131,10 +131,17 @@ scenario1750AD = Scenario(
 	},
 	
 	dOwnedTiles = {
-		iPortugal : [(47, 45), (48, 45), (49, 40), (50, 42), (50, 43), (50, 44)],
-		iNetherlands : [(58, 52), (58, 53)],
+		iEngland : [(37, 80), (38, 80), (38, 81), (39, 81), (39, 82)],	# MacAurther TODO: This doesn't give England control of tiles east of the Appalachians
 	},
 	iOwnerBaseCulture = 100,
+	
+	dRevealed = {
+		iCivGroupEurope: Revealed(
+			lLandRegions=lEuropeanRevealed1750AD,
+			lCoastRegions=lAmerica,
+			lSeaAreas=[((0, 0), (58, 27)), ((0, 27), (23, 38)), ((50, 27), (58, 38)), ((0, 38), (58, 84)), ((0, 84), (10, 121)), ((31, 84), (58, 117)), ],
+		),
+	},
 	
 	dGreatPeopleCreated = {
 		# MacAurther TODO
@@ -146,8 +153,8 @@ scenario1750AD = Scenario(
 	lInitialWars = [
 	],
 	
-	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu, iSpain, iPortugal],
-	lGoalsSucceeded = [(iFrance, 0), (iNetherlands, 1)],
+	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu, iSpain, iPortugal, iEngland, iFrance, iNetherlands],
+	lGoalsSucceeded = [],
 	setupGoals = setupGoals,
 	
 	createStartingUnits = createStartingUnits,
