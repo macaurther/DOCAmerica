@@ -106,7 +106,7 @@ class Civilization(object):
 		
 		self.lCivics = kwargs.get("lCivics", [])
 		self.lEnemies = kwargs.get("lEnemies", []) + [iNative, iBarbarian]
-		self.iMasterCiv = kwargs.get("iMasterCiv")
+		#self.iMasterCiv = kwargs.get("iMasterCiv")
 		
 		self.dAttitudes = kwargs.get("dAttitudes", {})
 		
@@ -172,10 +172,11 @@ class Civilization(object):
 				team(iEnemyPlayer).declareWar(self.player.getTeam(), False, WarPlanTypes.NO_WARPLAN)
 		
 		# MacAurther TODO: Rare bug where master is assigned and then collapses??, causing bug in scoreboard??
-		if self.iMasterCiv is not None:
+		# I guess don't use this feature.
+		'''if self.iMasterCiv is not None:
 			iMasterPlayer = slot(self.iMasterCiv)
 			if iMasterPlayer >= 0 and self.iCiv != self.iMasterCiv:
-				team(iMasterPlayer).assignVassal(self.player.getTeam(), False)
+				team(iMasterPlayer).assignVassal(self.player.getTeam(), False)'''
 		
 		for iCiv, iAttitude in self.dAttitudes.items():
 			self.player.AI_changeAttitudeExtra(slot(iCiv), iAttitude)
@@ -400,7 +401,7 @@ lCivilizations = [
 		iGold=1000,
 		iImmigration=400,
 		iStateReligion=iProtestantism,
-		iMasterCiv=iEngland,
+		#iMasterCiv=iEngland,
 		lCivics=[iIndustrialism3, iFreeEnterprise3, iOpportunity3, iHomesteads3],
 		techs=techs.column(18)
 	),

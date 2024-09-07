@@ -335,11 +335,25 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	//  Ancient:		1
 	//  Classical:		1
 	//  Exploration:    1
-	//  Colonial:       1
-	//  Revolutionary:  2
-	//  Industrial:     2
+	//  Colonial:       2
+	//  Revolutionary:  3
+	//  Industrial:     3
+	//  Modern:			4
 	int iCurrentEra = GET_PLAYER(eOwner).getCurrentEra();
-	int iExtraPopulation = iCurrentEra > ERA_COLONIAL ? 1 : 0;
+	int iExtraPopulation = 0;
+	switch (iCurrentEra)
+	{
+		case ERA_COLONIAL:
+			iExtraPopulation = 1;
+			break;
+		case ERA_REVOLUTIONARY:
+		case ERA_INDUSTRIAL:
+			iExtraPopulation = 2;
+			break;
+		case ERA_MODERN:
+			iExtraPopulation = 3;
+			break;
+	}
 
 	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
 	//changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPop);

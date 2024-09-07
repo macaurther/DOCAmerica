@@ -119,15 +119,27 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_AMERICAN_ENGLAND</Tag>
-		<English>Airstrip One</English>
-		<French>
-			<Text>Airstrip One</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Airstrip One</German>
-		<Italian>Airstrip One</Italian>
-		<Spanish>Airstrip One</Spanish>
+		<English>New England Territory</English>
+		<French>New England Territory</French>
+		<German>New England Territory</German>
+		<Italian>New England Territory</Italian>
+		<Spanish>New England Territory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_FRANCE</Tag>
+		<English>Louisiana Territory</English>
+		<French>Louisiana Territory</French>
+		<German>Louisiana Territory</German>
+		<Italian>Louisiana Territory</Italian>
+		<Spanish>Louisiana Territory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_NETHERLANDS</Tag>
+		<English>New Holland Territory</English>
+		<French>New Holland Territory</French>
+		<German>New Holland Territory</German>
+		<Italian>New Holland Territory</Italian>
+		<Spanish>New Holland Territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_AMERICAN_MEXICO</Tag>

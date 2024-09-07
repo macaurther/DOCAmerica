@@ -67,6 +67,8 @@ dSpecificVassalTitles = deepdict({
 	},
 	iAmerica : {
 		iEngland : "TXT_KEY_CIV_AMERICAN_ENGLAND",
+		iFrance : "TXT_KEY_CIV_AMERICAN_FRANCE",
+		iNetherlands : "TXT_KEY_CIV_AMERICAN_NETHERLANDS",
 		iAztecs : "TXT_KEY_CIV_AMERICAN_MEXICO",
 		iMaya : "TXT_KEY_CIV_AMERICAN_MAYA",
 		iHaudenosaunee : "TXT_KEY_CIV_AMERICAN_HAUDENOSAUNEE",
