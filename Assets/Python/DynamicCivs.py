@@ -46,13 +46,17 @@ dSpecificVassalTitles = deepdict({
 		iAztecs : "TXT_KEY_CIV_FRENCH_AZTECS",
 		iAmerica : "TXT_KEY_CIV_FRENCH_AMERICA",
 		iHaiti : "TXT_KEY_CIV_FRENCH_HAITI",
+		iHaudenosaunee : "TXT_KEY_CIV_FRENCH_HAUDENOSAUNEE",
 	},
 	iEngland : {
 		iMaya : "TXT_KEY_CIV_ENGLISH_MAYA",
-		iIroquois : "TXT_KEY_CIV_ENGLISH_IROQUOIS",
+		iHaudenosaunee : "TXT_KEY_CIV_ENGLISH_IROQUOIS",
 		iFrance : "TXT_KEY_CIV_ENGLISH_FRANCE",
 		iNetherlands : "TXT_KEY_CIV_ENGLISH_NETHERLANDS",
 		iAmerica : "TXT_KEY_CIV_ENGLISH_AMERICA",
+		iHaudenosaunee : "TXT_KEY_CIV_ENGLISH_HAUDENOSAUNEE",
+		iLakota : "TXT_KEY_CIV_ENGLISH_LAKOTA",
+		iPuebloan : "TXT_KEY_CIV_ENGLISH_PUEBLOAN",
 	},
 	iNetherlands : {
 		iAmerica : "TXT_KEY_CIV_DUTCH_AMERICA",
@@ -65,6 +69,9 @@ dSpecificVassalTitles = deepdict({
 		iEngland : "TXT_KEY_CIV_AMERICAN_ENGLAND",
 		iAztecs : "TXT_KEY_CIV_AMERICAN_MEXICO",
 		iMaya : "TXT_KEY_CIV_AMERICAN_MAYA",
+		iHaudenosaunee : "TXT_KEY_CIV_AMERICAN_HAUDENOSAUNEE",
+		iLakota : "TXT_KEY_CIV_AMERICAN_LAKOTA",
+		iPuebloan : "TXT_KEY_CIV_AMERICAN_PUEBLOAN",		
 	},
 	iBrazil : {
 		iArgentina : "TXT_KEY_CIV_BRAZILIAN_ARGENTINA",
@@ -104,7 +111,7 @@ dForeignNames = deepdict({
 	},
 })
 
-lRepublicOf = []
+lRepublicOf = [iVenezuela]
 lRepublicAdj = [iSpain, iFrance, iPortugal, iInca, iAztecs, iArgentina]
 
 lSocialistRepublicOf = [iBrazil, iColombia]
@@ -158,7 +165,7 @@ dStartingLeaders = [
 	iInca : iHuaynaCapac,
 	iPurepecha : iTariacuri,
 	iAztecs : iMontezuma,
-	iIroquois : iHiawatha,
+	iHaudenosaunee : iHiawatha,
 	iLakota : iSittingBull,
 	iSpain : iIsabella,
 	iPortugal : iJoao,
@@ -633,7 +640,7 @@ def republicTitle(iPlayer):
 	
 			
 	if iCiv == iColombia:
-		if isControlled(iPlayer, plots.region(rPeru)) and isControlled(iPlayer, plots.rectangle(tColombia)):
+		if isControlled(iPlayer, plots.region(rPeru)) and isControlled(iPlayer, plots.region(rColombia)):
 			return "TXT_KEY_CIV_COLOMBIA_FEDERATION_ANDES"
 			
 	if pPlayer.getStateReligion() == iIslam:
@@ -737,7 +744,7 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 	
 	elif iCiv == iColombia:
 		if bEmpire:
-			if isControlled(iPlayer, plots.region(rPeru)) and isControlled(iPlayer, plots.rectangle(tColombia)):
+			if isControlled(iPlayer, plots.region(rPeru)) and isControlled(iPlayer, plots.region(rColombia)):
 				return "TXT_KEY_CIV_COLOMBIA_EMPIRE_ANDES"
 		
 			return "TXT_KEY_CIV_COLOMBIA_EMPIRE"

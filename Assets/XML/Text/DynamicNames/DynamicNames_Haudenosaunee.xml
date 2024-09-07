@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Iroquois -->
+<!-- Haudenosaunee -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY_CIV_IROQUOIS_DESC</Tag>
-		<English>The Iroquois</English>
-		<French>The Iroquois</French>
-		<German>The Iroquois</German>
-		<Italian>The Iroquois</Italian>
-		<Spanish>The Iroquois</Spanish>
+		<Tag>TXT_KEY_CIV_HAUDENOSAUNEE_DESC</Tag>
+		<English>The Haudenosaunee</English>
+		<French>The Haudenosaunee</French>
+		<German>The Haudenosaunee</German>
+		<Italian>The Haudenosaunee</Italian>
+		<Spanish>The Haudenosaunee</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_IROQUOIS_PEOPLES</Tag>
+		<Tag>TXT_KEY_CIV_HAUDENOSAUNEE_PEOPLES</Tag>
 		<English>Onondaga Peoples</English>
 		<French>Onondaga Peoples</French>
 		<German>Onondaga Peoples</German>
@@ -18,7 +18,7 @@
 		<Spanish>Onondaga Peoples</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_IROQUOIS_DEFAULT</Tag>
+		<Tag>TXT_KEY_CIV_HAUDENOSAUNEE_DEFAULT</Tag>
 		<English>%s1 Confederacy</English>
 		<French>%s1 Confederacy</French>
 		<German>%s1 Confederacy</German>
@@ -26,7 +26,7 @@
 		<Spanish>%s1 Confederacy</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_IROQUOIS_COMMUNIST</Tag>
+		<Tag>TXT_KEY_CIV_HAUDENOSAUNEE_COMMUNIST</Tag>
 		<English>Republic of %s1</English>
 		<French>
 			<Text>R&#233;publique d'%s1</Text>
@@ -50,7 +50,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_IROQUOIS_FASCIST</Tag>
+		<Tag>TXT_KEY_CIV_HAUDENOSAUNEE_FASCIST</Tag>
 		<English>%s2 State</English>
 		<French>
 			<Text>&#201;tat %s2</Text>
@@ -74,19 +74,19 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_IROQUOIS_ADJECTIVE</Tag>
-		<English>Iroquois</English>
-		<French>Iroquois</French>
-		<German>Iroquois</German>
-		<Italian>Iroquois</Italian>
-		<Spanish>Iroquois</Spanish>
+		<Tag>TXT_KEY_CIV_HAUDENOSAUNEE_ADJECTIVE</Tag>
+		<English>Haudenosaunee</English>
+		<French>Haudenosaunee</French>
+		<German>Haudenosaunee</German>
+		<Italian>Haudenosaunee</Italian>
+		<Spanish>Haudenosaunee</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_IROQUOIS_SHORT_DESC</Tag>
-		<English>Iroquois</English>
-		<French>Iroquois</French>
-		<German>Iroquois</German>
-		<Italian>Iroquois</Italian>
-		<Spanish>Iroquois</Spanish>
+		<Tag>TXT_KEY_CIV_HAUDENOSAUNEE_SHORT_DESC</Tag>
+		<English>Haudenosaunee</English>
+		<French>Haudenosaunee</French>
+		<German>Haudenosaunee</German>
+		<Italian>Haudenosaunee</Italian>
+		<Spanish>Haudenosaunee</Spanish>
 	</TEXT>
 </Civ4GameText>

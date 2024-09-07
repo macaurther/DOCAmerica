@@ -467,7 +467,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>50</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>100</iSoundtrackSpace>
+			<iSoundtrackSpace>80</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_MESOAMERICA_1</EraInfoSoundtrack>
@@ -576,7 +576,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>50</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>200</iSoundtrackSpace>
+			<iSoundtrackSpace>80</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_NATIVE_AMERICA_1</EraInfoSoundtrack>
@@ -688,7 +688,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>50</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>200</iSoundtrackSpace>
+			<iSoundtrackSpace>175</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_POLYNESIA_1</EraInfoSoundtrack>
@@ -740,7 +740,7 @@
 			<iAnarchyPercent>40</iAnarchyPercent>
 			<iMaintenanceRangePercent>50</iMaintenanceRangePercent>
 			<iEventChancePerTurn>4</iEventChancePerTurn>
-			<iSoundtrackSpace>100</iSoundtrackSpace>
+			<iSoundtrackSpace>80</iSoundtrackSpace>
 			<bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
 			<EraInfoSoundtracks>
 				<EraInfoSoundtrack>AS2D_SONG_LATIN_AMERICA_1</EraInfoSoundtrack>

@@ -1281,6 +1281,150 @@
 			<CivilizationActionSound>AS3D_FRANCE_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
+			<Type>CIVILIZATION_HAUDENOSAUNEE</Type>
+			<Description>TXT_KEY_CIV_HAUDENOSAUNEE_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_HAUDENOSAUNEE_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_HAUDENOSAUNEE_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_HAUDENOSAUNEE_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_HAUDENOSAUNEE</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_HAUDENOSAUNEE</ArtDefineTag>
+			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
+			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
+			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
+			<Impact>IMPACT_LIMITED</Impact>
+			<Identifier>HAU</Identifier>
+			<Region>WIL</Region>
+			<CultureGroup>0</CultureGroup>
+			<StartingYear>1450</StartingYear>
+			<LoadingTimes>
+				<LoadingTime>20</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+				<LoadingTime>0</LoadingTime>
+			</LoadingTimes>
+			<Rating>
+				<Trade>1</Trade>
+				<Production>3</Production>
+				<Culture>1</Culture>
+				<Growth>3</Growth>
+				<Start>2</Start>
+			</Rating>
+			<bPlayable>1</bPlayable>
+			<bAIPlayable>1</bAIPlayable>
+			<Cities>
+				<City>Mohawk</City>
+				<City>Cayuga</City>
+				<City>Onondaga</City>
+				<City>Seneca</City>
+				<City>Oneida</City>
+				<City>Tuscarora</City>
+				<City>Caughnawaga</City>
+				<City>Susquehannock</City>
+				<City>Tionontati</City>
+				<City>Erie</City>
+				<City>Powhaten</City>
+				<City>Mingo</City>
+				<City>Narragansett</City>
+				<City>Nowadaga</City>
+				<City>Saratoga</City>
+				<City>Gewauga</City>
+				<City>Owego</City>
+				<City>Dyosyowan</City>
+				<City>Yoroonwago</City>
+				<City>Awegen</City>
+				<City>Cowassalon</City>
+				<City>Tueadasso</City>
+				<City>Gadoquat</City>
+				<City>Canajoharie</City>
+				<City>Kanadaseagea</City>
+				<City>Osquake</City>
+				<City>Neodakheat</City>
+				<City>Kawauka</City>
+				<City>Skoiyase</City>
+				<City>Joneadih</City>
+				<City>Ganadoga</City>
+				<City>Hostayuntwa</City>
+				<City>Ahaouet</City>
+				<City>Touenho</City>
+				<City>Shawiangto</City>
+				<City>Gandasetaigon</City>
+				<City>Keinthe</City>
+				<City>Oka</City>
+				<City>Tyendenaga</City>
+				<City>Teyagon</City>
+				<City>Ganaraske</City>
+				<City>Akwesasne</City>
+				<City>Canienga</City>
+				<City>Oswegatchie</City>
+				<City>Cattaraugus</City>
+				<City>Tonawanda</City>
+				<City>Kanagaro</City>
+				<City>Opolopong</City>
+				<City>Deseroken</City>
+				<City>Allegany</City>
+				<City>Salamanca</City>
+				<City>Geneseo</City>
+				<City>Chondote</City>
+				<City>Buckaloon</City>
+				<City>Onnontare</City>
+				<City>Skohare</City>
+				<City>Ganogeh</City>
+				<City>Skannayutenate</City>
+				<City>Oriska</City>
+				<City>Gannentaha</City>
+				<City>Venango</City>
+				<City>Chemung</City>
+				<City>Cittenango</City>
+				<City>Onnahee</City>
+			</Cities>
+			<Buildings>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
+					<BuildingType>BUILDING_HAUDENOSAUNEE_LONGHOUSE</BuildingType>
+				</Building>
+				<Building>
+					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
+					<BuildingType>BUILDING_GAIWIIO_LONGHOUSE</BuildingType>
+				</Building>
+			</Buildings>
+			<Units>
+				<Unit>
+					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
+					<UnitType>UNIT_HAUDENOSAUNEE_MOHAWK</UnitType>
+				</Unit>
+			</Units>
+			<FreeUnitClasses>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
+					<iFreeUnits>1</iFreeUnits>
+				</FreeUnitClass>
+			</FreeUnitClasses>
+			<FreeBuildingClasses>
+				<FreeBuildingClass>
+					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+					<bFreeBuildingClass>1</bFreeBuildingClass>
+				</FreeBuildingClass>
+			</FreeBuildingClasses>
+			<FreeTechs/>
+			<DisableTechs/>
+			<InitialCivics>
+				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
+				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
+				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
+				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
+				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
+				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
+			</InitialCivics>
+			<Leaders>
+				<Leader>
+					<LeaderName>LEADER_HIAWATHA</LeaderName>
+					<bLeaderAvailability>1</bLeaderAvailability>
+				</Leader>
+			</Leaders>
+			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
+			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
+			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
+		</CivilizationInfo>
+		<CivilizationInfo>
 			<Type>CIVILIZATION_HAWAII</Type>
 			<Description>TXT_KEY_CIV_HAWAII_DESC</Description>
 			<ShortDescription>TXT_KEY_CIV_HAWAII_SHORT_DESC</ShortDescription>
@@ -1597,115 +1741,71 @@
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_IROQUOIS</Type>
-			<Description>TXT_KEY_CIV_IROQUOIS_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_IROQUOIS_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_IROQUOIS_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_IROQUOIS_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_IROQUOIS</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_IROQUOIS</ArtDefineTag>
+			<Type>CIVILIZATION_LAKOTA</Type>
+			<Description>TXT_KEY_CIV_LAKOTA_DESC</Description>
+			<ShortDescription>TXT_KEY_CIV_LAKOTA_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_LAKOTA_ADJECTIVE</Adjective>
+			<Civilopedia>TXT_KEY_CIV_LAKOTA_PEDIA</Civilopedia>
+			<DefaultPlayerColor>PLAYERCOLOR_LAKOTA</DefaultPlayerColor>
+			<ArtDefineTag>ART_DEF_CIVILIZATION_LAKOTA</ArtDefineTag>
 			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
 			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
-			<Impact>IMPACT_LIMITED</Impact>
-			<Identifier>IRO</Identifier>
+			<PaganReligion>PAGAN_RELIGION_WOCEKIYA</PaganReligion>
+			<Impact>IMPACT_MARGINAL</Impact>
+			<Identifier>LAK</Identifier>
 			<Region>WIL</Region>
 			<CultureGroup>0</CultureGroup>
-			<StartingYear>1450</StartingYear>
+			<StartingYear>1475</StartingYear>
 			<LoadingTimes>
-				<LoadingTime>20</LoadingTime>
+				<LoadingTime>25</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 				<LoadingTime>0</LoadingTime>
 			</LoadingTimes>
 			<Rating>
 				<Trade>1</Trade>
-				<Production>3</Production>
-				<Culture>1</Culture>
+				<Production>1</Production>
+				<Culture>3</Culture>
 				<Growth>3</Growth>
 				<Start>2</Start>
 			</Rating>
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Mohawk</City>
-				<City>Cayuga</City>
-				<City>Onondaga</City>
-				<City>Seneca</City>
-				<City>Oneida</City>
-				<City>Tuscarora</City>
-				<City>Caughnawaga</City>
-				<City>Susquehannock</City>
-				<City>Tionontati</City>
-				<City>Erie</City>
-				<City>Powhaten</City>
-				<City>Mingo</City>
-				<City>Narragansett</City>
-				<City>Nowadaga</City>
-				<City>Saratoga</City>
-				<City>Gewauga</City>
-				<City>Owego</City>
-				<City>Dyosyowan</City>
-				<City>Yoroonwago</City>
-				<City>Awegen</City>
-				<City>Cowassalon</City>
-				<City>Tueadasso</City>
-				<City>Gadoquat</City>
-				<City>Canajoharie</City>
-				<City>Kanadaseagea</City>
-				<City>Osquake</City>
-				<City>Neodakheat</City>
-				<City>Kawauka</City>
-				<City>Skoiyase</City>
-				<City>Joneadih</City>
-				<City>Ganadoga</City>
-				<City>Hostayuntwa</City>
-				<City>Ahaouet</City>
-				<City>Touenho</City>
-				<City>Shawiangto</City>
-				<City>Gandasetaigon</City>
-				<City>Keinthe</City>
-				<City>Oka</City>
-				<City>Tyendenaga</City>
-				<City>Teyagon</City>
-				<City>Ganaraske</City>
-				<City>Akwesasne</City>
-				<City>Canienga</City>
-				<City>Oswegatchie</City>
-				<City>Cattaraugus</City>
-				<City>Tonawanda</City>
-				<City>Kanagaro</City>
-				<City>Opolopong</City>
-				<City>Deseroken</City>
-				<City>Allegany</City>
-				<City>Salamanca</City>
-				<City>Geneseo</City>
-				<City>Chondote</City>
-				<City>Buckaloon</City>
-				<City>Onnontare</City>
-				<City>Skohare</City>
-				<City>Ganogeh</City>
-				<City>Skannayutenate</City>
-				<City>Oriska</City>
-				<City>Gannentaha</City>
-				<City>Venango</City>
-				<City>Chemung</City>
-				<City>Cittenango</City>
-				<City>Onnahee</City>
+				<City>Wazi-kute</City>
+				<City>Chantenna</City>
+				<City>Iyasica</City>
+				<City>Taganunkaota</City>
+				<City>Wanblika</City>
+				<City>Itokagata</City>
+				<City>Makhicuwaste</City>
+				<City>Numpa Wichagi</City>
+				<City>Olowan</City>
+				<City>Phaha Sapa</City>
+				<City>Okaga</City>
+				<City>Witahchan</City>
+				<City>Phangata</City>
+				<City>Itehca</City>
+				<City>Wiyakapta</City>
+				<City>Iktomiya</City>
+				<City>Hehaka</City>
+				<City>Phasapa</City>
+				<City>Ptehicunka</City>
+				<City>Wiyukte</City>
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
-					<BuildingType>BUILDING_IROQUOIS_LONGHOUSE</BuildingType>
+					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingType>BUILDING_LAKOTA_TIPI</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_GAIWIIO_LONGHOUSE</BuildingType>
+					<BuildingType>BUILDING_WOCEKIYA_SHRINE</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
-					<UnitClassType>UNITCLASS_WARRIOR</UnitClassType>
-					<UnitType>UNIT_IROQUOIS_MOHAWK</UnitType>
+					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
+					<UnitType>UNIT_LAKOTA_SWIFT_ARROW</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1732,7 +1832,7 @@
 			</InitialCivics>
 			<Leaders>
 				<Leader>
-					<LeaderName>LEADER_HIAWATHA</LeaderName>
+					<LeaderName>LEADER_SITTING_BULL</LeaderName>
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
@@ -3079,106 +3179,6 @@
 			<DerivativeCiv>CIVILIZATION_CANADA</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_RUSSIA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_RUSSIA_ORDER</CivilizationActionSound>
-		</CivilizationInfo>
-		<CivilizationInfo>
-			<Type>CIVILIZATION_LAKOTA</Type>
-			<Description>TXT_KEY_CIV_LAKOTA_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_LAKOTA_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_LAKOTA_ADJECTIVE</Adjective>
-			<Civilopedia>TXT_KEY_CIV_LAKOTA_PEDIA</Civilopedia>
-			<DefaultPlayerColor>PLAYERCOLOR_LAKOTA</DefaultPlayerColor>
-			<ArtDefineTag>ART_DEF_CIVILIZATION_LAKOTA</ArtDefineTag>
-			<ArtStyleType>ARTSTYLE_SOUTH_AMERICA</ArtStyleType>
-			<UnitArtStyleType>UNIT_ARTSTYLE_SOUTH_AMERICAN</UnitArtStyleType>
-			<PaganReligion>PAGAN_RELIGION_WOCEKIYA</PaganReligion>
-			<Impact>IMPACT_MARGINAL</Impact>
-			<Identifier>SIO</Identifier>
-			<Region>WIL</Region>
-			<CultureGroup>0</CultureGroup>
-			<StartingYear>1475</StartingYear>
-			<LoadingTimes>
-				<LoadingTime>25</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-				<LoadingTime>0</LoadingTime>
-			</LoadingTimes>
-			<Rating>
-				<Trade>1</Trade>
-				<Production>1</Production>
-				<Culture>3</Culture>
-				<Growth>3</Growth>
-				<Start>2</Start>
-			</Rating>
-			<bPlayable>1</bPlayable>
-			<bAIPlayable>1</bAIPlayable>
-			<Cities>
-				<City>Wazi-kute</City>
-				<City>Chantenna</City>
-				<City>Iyasica</City>
-				<City>Taganunkaota</City>
-				<City>Wanblika</City>
-				<City>Itokagata</City>
-				<City>Makhicuwaste</City>
-				<City>Numpa Wichagi</City>
-				<City>Olowan</City>
-				<City>Phaha Sapa</City>
-				<City>Okaga</City>
-				<City>Witahchan</City>
-				<City>Phangata</City>
-				<City>Itehca</City>
-				<City>Wiyakapta</City>
-				<City>Iktomiya</City>
-				<City>Hehaka</City>
-				<City>Phasapa</City>
-				<City>Ptehicunka</City>
-				<City>Wiyukte</City>
-			</Cities>
-			<Buildings>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
-					<BuildingType>BUILDING_LAKOTA_TIPI</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
-					<BuildingType>BUILDING_WOCEKIYA_SHRINE</BuildingType>
-				</Building>
-			</Buildings>
-			<Units>
-				<Unit>
-					<UnitClassType>UNITCLASS_HORSE_ARCHER</UnitClassType>
-					<UnitType>UNIT_LAKOTA_SWIFT_ARROW</UnitType>
-				</Unit>
-			</Units>
-			<FreeUnitClasses>
-				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_SETTLER</UnitClassType>
-					<iFreeUnits>1</iFreeUnits>
-				</FreeUnitClass>
-			</FreeUnitClasses>
-			<FreeBuildingClasses>
-				<FreeBuildingClass>
-					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
-					<bFreeBuildingClass>1</bFreeBuildingClass>
-				</FreeBuildingClass>
-			</FreeBuildingClasses>
-			<FreeTechs/>
-			<DisableTechs/>
-			<InitialCivics>
-				<CivicType>CIVIC_ELDERS_NATIVE</CivicType>
-				<CivicType>CIVIC_AUTHORITY_NATIVE</CivicType>
-				<CivicType>CIVIC_TRADITIONALISM_NATIVE</CivicType>
-				<CivicType>CIVIC_RECIPROCITY_NATIVE</CivicType>
-				<CivicType>CIVIC_ANIMISM_NATIVE</CivicType>
-				<CivicType>CIVIC_SETTLEMENT_NATIVE</CivicType>
-			</InitialCivics>
-			<Leaders>
-				<Leader>
-					<LeaderName>LEADER_SITTING_BULL</LeaderName>
-					<bLeaderAvailability>1</bLeaderAvailability>
-				</Leader>
-			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
-			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
-			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
 		<CivilizationInfo>
 			<Type>CIVILIZATION_SPAIN</Type>

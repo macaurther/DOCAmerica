@@ -130,42 +130,6 @@
 		<Spanish>Airstrip One</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_AMERICAN_JAPAN</Tag>
-		<English>Allied Council for %s1</English>
-		<French>
-			<Text>Conseil alli&#233; pour le %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Allied Council for %s1</German>
-		<Italian>Allied Council for %s1</Italian>
-		<Spanish>Allied Council for %s1</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_AMERICAN_GERMANY</Tag>
-		<English>US-Occupied %s1</English>
-		<French>
-			<Text>Zone d'occupation am&#233;ricaine en %s1</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>US-Occupied %s1</German>
-		<Italian>US-Occupied %s1</Italian>
-		<Spanish>US-Occupied %s1</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_CIV_AMERICAN_KOREA</Tag>
-		<English>Commander Naval Forces %s1</English>
-		<French>
-			<Text>Commandement des forces navales en %s1</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Commander Naval Forces %s1</German>
-		<Italian>Commander Naval Forces %s1</Italian>
-		<Spanish>Commander Naval Forces %s1</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_CIV_AMERICAN_MEXICO</Tag>
 		<English>New Mexico</English>
 		<French>
@@ -188,6 +152,30 @@
 		<German>%s2 Yucat&#225;n</German>
 		<Italian>%s2 Yucat&#225;n</Italian>
 		<Spanish>%s2 Yucat&#225;n</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_HAUDENOSAUNEE</Tag>
+		<English>Iroquois Reservation</English>
+		<French>Iroquois Reservation</French>
+		<German>Iroquois Reservation</German>
+		<Italian>Iroquois Reservation</Italian>
+		<Spanish>Iroquois Reservation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_LAKOTA</Tag>
+		<English>Sioux Reservation</English>
+		<French>Sioux Reservation</French>
+		<German>Sioux Reservation</German>
+		<Italian>Sioux Reservation</Italian>
+		<Spanish>Sioux Reservation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AMERICAN_PUEBLOAN</Tag>
+		<English>Pueblo Reservation</English>
+		<French>Pueblo Reservation</French>
+		<German>Pueblo Reservation</German>
+		<Italian>Pueblo Reservation</Italian>
+		<Spanish>Pueblo Reservation</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_AMERICA_ADJECTIVE</Tag>

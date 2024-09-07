@@ -228,7 +228,7 @@ dGoals = {
 		CityPopulation(start(iAztecs).named(TENOCHTITLAN), 20, at=1500),
 		EnslaveCount(50, by=1550),
 	),
-	iIroquois: (
+	iHaudenosaunee: (
 		All(ContactTribe(5), by=1550),
 		Control(
             (plots.rectangle(tLakeSuperior).without(lLakeSuperiorExceptions) + plots.of(lLakeSuperiorAdditional)).named(LAKE_SUPERIOR),

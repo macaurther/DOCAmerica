@@ -4,13 +4,6 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=2,y=1
-	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-EndPlot
-BeginPlot
 	x=2,y=30
 	BeginUnit
 		UnitType=UNIT_CARAVEL
@@ -64,6 +57,21 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=7,y=66
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+EndPlot
+BeginPlot
 	x=7,y=69
 	ImprovementType=IMPROVEMENT_WHALING_BOATS
 EndPlot
@@ -107,14 +115,13 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_JEWELLER
 		BuildingType=BUILDING_SMOKEHOUSE
-		BuildingType=BUILDING_PLAGUE
 		BuildingType=BUILDING_ANGAKKUQ_QARGI
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=768
 		EndCulture
-		YearFounded=1245
-		YearAcquired=1245
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -126,15 +133,7 @@ BeginPlot
 	x=8,y=67
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -142,11 +141,15 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_FUSILIER
+		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SKIRMISHER
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -163,14 +166,29 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=215
 		EndCulture
-		YearFounded=1155
-		YearAcquired=1518
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PUREPECHA
 	EndCity
 EndPlot
 BeginPlot
 	x=8,y=68
 	ImprovementType=IMPROVEMENT_TOWN
+EndPlot
+BeginPlot
+	x=8,y=70
+	BeginUnit
+		UnitType=UNIT_BARQUE
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=8,y=72
@@ -257,35 +275,11 @@ BeginPlot
 	x=9,y=71
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_BARQUE
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FIELD_GUN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FIELD_GUN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -302,12 +296,12 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
-		BuildingType=BUILDING_DRUIDIC_NEMETON
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=914
 		EndCulture
-		YearFounded=1230
-		YearAcquired=1520
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PUREPECHA
 	EndCity
 EndPlot
@@ -350,7 +344,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=66
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -365,11 +359,15 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKEMAN
+		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SKIRMISHER
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -385,13 +383,22 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_JEWELLER
 		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_SPANISH_MISSION
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=646
 		EndCulture
-		YearFounded=1150
-		YearAcquired=1518
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PUREPECHA
 	EndCity
 EndPlot
@@ -420,24 +427,6 @@ EndPlot
 BeginPlot
 	x=10,y=112
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_INDIAMAN
-		UnitOwner=CIVILIZATION_RUSSIA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_RUSSIA
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_RUSSIA
-		CityName=Fort St. Nicholas
-		CityPopulation=1
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_MARKET
-		YearFounded=1748
-		YearAcquired=1748
-		PreviousOwner=CIVILIZATION_RUSSIA
-	EndCity
 EndPlot
 BeginPlot
 	x=10,y=117
@@ -447,6 +436,17 @@ EndPlot
 BeginPlot
 	x=11,y=53
 	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=11,y=61
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=11,y=63
@@ -475,7 +475,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=71
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -502,17 +501,6 @@ EndPlot
 BeginPlot
 	x=11,y=110
 	ImprovementType=IMPROVEMENT_TRIBE
-EndPlot
-BeginPlot
-	x=11,y=113
-	BeginUnit
-		UnitType=UNIT_RUSSIAN_PROMYSHLENNIKI
-		UnitOwner=CIVILIZATION_RUSSIA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_RUSSIAN_PROMYSHLENNIKI
-		UnitOwner=CIVILIZATION_RUSSIA
-	EndUnit
 EndPlot
 BeginPlot
 	x=11,y=117
@@ -546,8 +534,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=817
 		EndCulture
-		YearFounded=970
-		YearAcquired=970
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -579,11 +567,7 @@ BeginPlot
 	x=12,y=62
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -591,15 +575,15 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -631,12 +615,13 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=204
 		EndCulture
-		YearFounded=120
-		YearAcquired=1522
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ZAPOTEC
 		PreviousOwner=CIVILIZATION_TEOTIHUACAN
 	EndCity
@@ -658,10 +643,6 @@ EndPlot
 BeginPlot
 	x=12,y=67
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=12,y=70
@@ -690,29 +671,6 @@ EndPlot
 BeginPlot
 	x=12,y=108
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_INDIAMAN
-		UnitOwner=CIVILIZATION_RUSSIA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_RUSSIA
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_RUSSIA
-		CityName=Novo-Arkhangelsk
-		CityPopulation=1
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_MARKET
-		ReligionType=RELIGION_ORTHODOXY
-		BeginCulture
-			Civilization=CIVILIZATION_RUSSIA, Culture=18
-		EndCulture
-		YearFounded=1744
-		YearAcquired=1744
-		PreviousOwner=CIVILIZATION_RUSSIA
-	EndCity
 EndPlot
 BeginPlot
 	x=12,y=109
@@ -727,13 +685,6 @@ BeginPlot
 	x=13,y=46
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=13,y=48
-	BeginUnit
-		UnitType=UNIT_HAWAIIAN_KOA
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
 EndPlot
 BeginPlot
 	x=13,y=50
@@ -752,16 +703,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=63
-	ImprovementType=IMPROVEMENT_TRIBE
+	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_EXPLORER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_EXPLORER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=13,y=64
@@ -776,6 +719,26 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_SPANISH_CONQUISTADOR
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -794,13 +757,18 @@ BeginPlot
 		BuildingType=BUILDING_CONSTABULARY
 		BuildingType=BUILDING_SILVERSMITH
 		BuildingType=BUILDING_MAGAZINE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_CATHEDRAL
+		BuildingType=BUILDING_SPANISH_MISSION
 		BuildingType=BUILDING_FLOATING_GARDENS
 		BuildingType=BUILDING_HUEY_TEOCALLI
+		BuildingType=BUILDING_GUADALUPE_BASILICA
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=188
 		EndCulture
-		YearFounded=1250
-		YearAcquired=1514
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_AZTEC
 	EndCity
 EndPlot
@@ -815,7 +783,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=70
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_CAMP
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -839,78 +807,23 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=13,y=119
+	BeginUnit
+		UnitType=UNIT_INUIT_KAYAK
+		UnitOwner=CIVILIZATION_INUIT
+	EndUnit
+EndPlot
+BeginPlot
 	x=14,y=15
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
 EndPlot
 BeginPlot
 	x=14,y=47
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_HAWAIIAN_KOA
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_HAWAII
-		CityName=Pahoa
-		CityPopulation=4
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_ATUA_SHRINE
-		BeginCulture
-			Civilization=CIVILIZATION_HAWAII, Culture=22
-		EndCulture
-		YearFounded=1679
-		YearAcquired=1679
-		PreviousOwner=CIVILIZATION_HAWAII
-	EndCity
 EndPlot
 BeginPlot
 	x=14,y=49
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_HAWAIIAN_KOA
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_HAWAII
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_HAWAII
-		CityName=Hilo
-		CityPopulation=7
-		BuildingType=BUILDING_CHIEFTANS_HUT
-		BuildingType=BUILDING_GRANARY
-		BeginCulture
-			Civilization=CIVILIZATION_HAWAII, Culture=64
-		EndCulture
-		YearFounded=1649
-		YearAcquired=1649
-		PreviousOwner=CIVILIZATION_HAWAII
-	EndCity
 EndPlot
 BeginPlot
 	x=14,y=60
@@ -938,29 +851,17 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_FIELD_GUN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_FIELD_GUN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Texcoco
-		CityPopulation=9
+		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
@@ -973,17 +874,18 @@ BeginPlot
 		BuildingType=BUILDING_CONSTABULARY
 		BuildingType=BUILDING_SILVERSMITH
 		BuildingType=BUILDING_ESTATE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_ARMOURY
 		BuildingType=BUILDING_TLACHIHUALTEPETL
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		BuildingType=BUILDING_TEMBLEQUE_AQUEDUCT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
-			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=67
 			Civilization=CIVILIZATION_SPAIN, Culture=676
 		EndCulture
-		YearFounded=-200
-		YearAcquired=1518
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_TEOTIHUACAN
 	EndCity
 EndPlot
@@ -1031,10 +933,6 @@ BeginPlot
 	x=14,y=119
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_INUIT_KAYAK
-		UnitOwner=CIVILIZATION_INUIT
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_LONGBOWMAN
 		UnitOwner=CIVILIZATION_INUIT
 	EndUnit
@@ -1064,8 +962,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=1024
 		EndCulture
-		YearFounded=950
-		YearAcquired=950
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -1083,6 +981,10 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 	RouteType=ROUTE_ROAD
 	BeginUnit
+		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_ARCHER
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
@@ -1093,10 +995,6 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_MILITIA_I
 		UnitOwner=CIVILIZATION_NATIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPY
-		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 EndPlot
 BeginPlot
@@ -1128,31 +1026,31 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
+		UnitType=UNIT_SKIRMISHER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SKIRMISHER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SKIRMISHER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_CANNON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FIELD_GUN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FIELD_GUN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SKIRMISHER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SKIRMISHER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -1179,15 +1077,14 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_BANK
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=268
 			Civilization=CIVILIZATION_BARBARIAN, Culture=848
 		EndCulture
 		YearFounded=-500
-		YearAcquired=1580
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ZAPOTEC
 		PreviousOwner=CIVILIZATION_BARBARIAN
 	EndCity
@@ -1199,16 +1096,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=64
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_LINE_INFANTRY
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=15,y=65
@@ -1256,13 +1144,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=16,y=9
-	BeginUnit
-		UnitType=UNIT_NATIVE_SLAVE_COLONY
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-EndPlot
-BeginPlot
 	x=16,y=15
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -1298,8 +1179,8 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=10
 		EndCulture
-		YearFounded=950
-		YearAcquired=950
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_NATIVE
 	EndCity
 EndPlot
@@ -1320,12 +1201,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=67
-	ImprovementType=IMPROVEMENT_TRIBE
+	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=16,y=68
@@ -1350,10 +1227,6 @@ EndPlot
 BeginPlot
 	x=16,y=77
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
-	BeginUnit
-		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_SIOUX
-	EndUnit
 EndPlot
 BeginPlot
 	x=16,y=84
@@ -1406,14 +1279,6 @@ BeginPlot
 	x=17,y=62
 	ImprovementType=IMPROVEMENT_QUARRY
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPY
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=17,y=71
@@ -1430,27 +1295,6 @@ BeginPlot
 	BeginUnit
 		UnitType=UNIT_MUSKETMAN
 		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-EndPlot
-BeginPlot
-	x=17,y=77
-	BeginUnit
-		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_IROQUOIS
-	EndUnit
-EndPlot
-BeginPlot
-	x=17,y=111
-	BeginUnit
-		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_INUIT
-	EndUnit
-EndPlot
-BeginPlot
-	x=17,y=112
-	BeginUnit
-		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_INUIT
 	EndUnit
 EndPlot
 BeginPlot
@@ -1472,6 +1316,14 @@ BeginPlot
 		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Yaxchilan
@@ -1481,14 +1333,14 @@ BeginPlot
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_ALTAR
 		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_PLAGUE
-		BuildingType=BUILDING_DRUIDIC_NEMETON
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=116
 			Civilization=CIVILIZATION_SPAIN, Culture=233
+			Civilization=CIVILIZATION_NATIVE, Culture=116
 		EndCulture
-		YearFounded=420
-		YearAcquired=1566
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ZAPOTEC
 		PreviousOwner=CIVILIZATION_MAYA
 		PreviousOwner=CIVILIZATION_NATIVE
@@ -1505,8 +1357,29 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=19,y=12
+	ImprovementType=IMPROVEMENT_ORCHARD
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=19,y=14
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
 	x=19,y=20
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=19,y=33
+	BeginUnit
+		UnitType=UNIT_BARQUE
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=19,y=56
@@ -1533,13 +1406,6 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TOWN
 EndPlot
 BeginPlot
-	x=19,y=83
-	BeginUnit
-		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_IROQUOIS
-	EndUnit
-EndPlot
-BeginPlot
 	x=19,y=85
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
@@ -1551,6 +1417,44 @@ EndPlot
 BeginPlot
 	x=19,y=102
 	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=20,y=13
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=20,y=14
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_SPAIN
+		CityName=Cordoba
+		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_SPANISH_MISSION
+		BuildingType=BUILDING_MANZANA_JESUITICA
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=50
+		EndCulture
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_SPAIN
+	EndCity
 EndPlot
 BeginPlot
 	x=20,y=30
@@ -1565,7 +1469,23 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -1585,13 +1505,13 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_MAGAZINE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
-		BuildingType=BUILDING_PLAGUE
+		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=403
 		EndCulture
-		YearFounded=1195
-		YearAcquired=1637
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INCA
 	EndCity
 EndPlot
@@ -1609,18 +1529,6 @@ BeginPlot
 	x=20,y=34
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_BARQUE
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CARABINEER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
@@ -1629,23 +1537,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -1671,12 +1567,12 @@ BeginPlot
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_MAGAZINE
-		BuildingType=BUILDING_DRUIDIC_NEMETON
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=970
 		EndCulture
-		YearFounded=1275
-		YearAcquired=1637
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INCA
 	EndCity
 EndPlot
@@ -1704,32 +1600,16 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=56
-	ImprovementType=IMPROVEMENT_TRIBE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=20,y=59
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=20,y=60
 	ImprovementType=IMPROVEMENT_TOWN
-EndPlot
-BeginPlot
-	x=20,y=87
-	BeginUnit
-		UnitType=UNIT_EXPLORER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=20,y=88
@@ -1739,15 +1619,15 @@ BeginPlot
 	x=20,y=90
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -1758,19 +1638,20 @@ EndPlot
 BeginPlot
 	x=21,y=9
 	ImprovementType=IMPROVEMENT_COTTAGE
-	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=21,y=10
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=21,y=11
 	ImprovementType=IMPROVEMENT_COTTAGE
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
+EndPlot
+BeginPlot
+	x=21,y=12
+	ImprovementType=IMPROVEMENT_PASTURE
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=21,y=20
@@ -1824,36 +1705,36 @@ EndPlot
 BeginPlot
 	x=21,y=55
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=21,y=57
 	RouteType=ROUTE_ROAD
 	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_SPANISH_CONQUISTADOR
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CANNON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUSSAR
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -1876,13 +1757,15 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
-		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_SPANISH_MISSION
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=441
 			Civilization=CIVILIZATION_SPAIN, Culture=696
+			Civilization=CIVILIZATION_NATIVE, Culture=441
 		EndCulture
-		YearFounded=-120
-		YearAcquired=1562
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_MAYA
 		PreviousOwner=CIVILIZATION_NATIVE
 	EndCity
@@ -1891,10 +1774,6 @@ BeginPlot
 	x=21,y=58
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=21,y=59
@@ -1924,25 +1803,25 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Ponca
 		CityPopulation=4
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_ARENA
@@ -1952,11 +1831,11 @@ BeginPlot
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=226
+			Civilization=CIVILIZATION_LAKOTA, Culture=226
 		EndCulture
-		YearFounded=1580
-		YearAcquired=1580
-		PreviousOwner=CIVILIZATION_SIOUX
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot
@@ -2018,7 +1897,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2033,14 +1916,13 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_GREAT_GEOGLYPH
-		BuildingType=BUILDING_DRUIDIC_NEMETON
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=10
-			Civilization=CIVILIZATION_INCA, Culture=741
 			Civilization=CIVILIZATION_SPAIN, Culture=183
+			Civilization=CIVILIZATION_NATIVE, Culture=10
 		EndCulture
-		YearFounded=440
-		YearAcquired=1528
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_NATIVE
 		PreviousOwner=CIVILIZATION_INCA
 		PreviousOwner=CIVILIZATION_TIWANAKU
@@ -2091,10 +1973,6 @@ BeginPlot
 	x=22,y=52
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=22,y=53
@@ -2112,51 +1990,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FIELD_GUN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_BOMBARD
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_BOMBARD
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_BOMBARD
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_BOMBARD
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_BOMBARD
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2166,11 +2004,12 @@ BeginPlot
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=42
 		EndCulture
-		YearFounded=1694
-		YearAcquired=1694
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -2186,7 +2025,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=57
-	ImprovementType=IMPROVEMENT_VILLAGE
+	ImprovementType=IMPROVEMENT_QUARRY
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -2197,10 +2036,6 @@ EndPlot
 BeginPlot
 	x=22,y=59
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_CARABINEER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 	BeginUnit
 		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_SPAIN
@@ -2221,10 +2056,18 @@ BeginPlot
 		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guatemala
-		CityPopulation=10
+		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
@@ -2237,18 +2080,17 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_SCHOOLHOUSE
-		BuildingType=BUILDING_PLAGUE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_SPANISH_MISSION
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
-		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=867
 			Civilization=CIVILIZATION_BARBARIAN, Culture=1420
 		EndCulture
 		YearFounded=-500
-		YearAcquired=1558
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_MAYA
 		PreviousOwner=CIVILIZATION_BARBARIAN
 	EndCity
@@ -2271,10 +2113,6 @@ EndPlot
 BeginPlot
 	x=22,y=87
 	ImprovementType=IMPROVEMENT_TRIBE
-	BeginUnit
-		UnitType=UNIT_EXPLORER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=22,y=90
@@ -2294,10 +2132,6 @@ BeginPlot
 	x=23,y=8
 	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_SPANISH_CONQUISTADOR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=23,y=9
@@ -2312,11 +2146,23 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_SPY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2331,11 +2177,14 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_SCHOOLHOUSE
 		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_SPANISH_MISSION
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=82
 		EndCulture
-		YearFounded=1660
-		YearAcquired=1660
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -2343,22 +2192,6 @@ BeginPlot
 	x=23,y=11
 	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=23,y=25
@@ -2398,15 +2231,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CANNON
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2424,13 +2253,13 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
-		BuildingType=BUILDING_DRUIDIC_NEMETON
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=547
 		EndCulture
-		YearFounded=1370
-		YearAcquired=1637
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INCA
 	EndCity
 EndPlot
@@ -2453,21 +2282,17 @@ BeginPlot
 	x=23,y=39
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_CANNON
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Guayaquil
-		CityPopulation=11
+		CityPopulation=8
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_ARENA
@@ -2482,13 +2307,15 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_SILVERSMITH
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
-		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=353
 		EndCulture
-		YearFounded=1475
-		YearAcquired=1637
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INCA
 	EndCity
 EndPlot
@@ -2514,12 +2341,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=56
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=23,y=58
@@ -2543,7 +2365,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=62
-	ImprovementType=IMPROVEMENT_TRIBE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -2556,29 +2378,29 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Chantenna
 		CityPopulation=2
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_BARRACKS
@@ -2587,11 +2409,11 @@ BeginPlot
 		BuildingType=BUILDING_SERPENT_MOUND
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=656
+			Civilization=CIVILIZATION_LAKOTA, Culture=656
 		EndCulture
-		YearFounded=1485
-		YearAcquired=1485
-		PreviousOwner=CIVILIZATION_SIOUX
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot
@@ -2622,11 +2444,13 @@ BeginPlot
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Iqaluit
 		CityPopulation=2
+		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=200
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -2641,25 +2465,6 @@ EndPlot
 BeginPlot
 	x=24,y=12
 	ImprovementType=IMPROVEMENT_COTTAGE
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-EndPlot
-BeginPlot
-	x=24,y=14
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=24,y=22
@@ -2675,10 +2480,6 @@ BeginPlot
 	x=24,y=26
 	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_GREAT_SCIENTIST
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=24,y=28
@@ -2693,11 +2494,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2723,13 +2524,13 @@ BeginPlot
 		BuildingType=BUILDING_SACSAYHUAMAN
 		BuildingType=BUILDING_YACHAYWASI
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=1437
 		EndCulture
-		YearFounded=1100
-		YearAcquired=1637
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INCA
 	EndCity
 EndPlot
@@ -2778,11 +2579,12 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Tegucigalpa
 		CityPopulation=2
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -2800,15 +2602,23 @@ BeginPlot
 	x=24,y=62
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_SPANISH_CONQUISTADOR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
+		UnitType=UNIT_SPANISH_CONQUISTADOR
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_SKIRMISHER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -2832,15 +2642,16 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_SCHOOLHOUSE
 		BuildingType=BUILDING_MAGAZINE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_SPANISH_MISSION
 		BuildingType=BUILDING_TEMPLE_OF_KUKULKAN
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=418
 			Civilization=CIVILIZATION_SPAIN, Culture=413
+			Civilization=CIVILIZATION_NATIVE, Culture=418
 		EndCulture
-		YearFounded=260
-		YearAcquired=1572
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_MAYA
 		PreviousOwner=CIVILIZATION_ZAPOTEC
 		PreviousOwner=CIVILIZATION_NATIVE
@@ -2864,7 +2675,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -2872,7 +2683,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -2880,26 +2691,26 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Mandan
 		CityPopulation=4
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_ARENA
 		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=119
+			Civilization=CIVILIZATION_LAKOTA, Culture=119
 		EndCulture
-		YearFounded=1613
-		YearAcquired=1613
-		PreviousOwner=CIVILIZATION_SIOUX
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot
@@ -2917,7 +2728,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=10
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -2932,6 +2742,13 @@ EndPlot
 BeginPlot
 	x=25,y=13
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=25,y=18
+	BeginUnit
+		UnitType=UNIT_MACEMAN
+		UnitOwner=CIVILIZATION_NATIVE
+	EndUnit
 EndPlot
 BeginPlot
 	x=25,y=21
@@ -2986,6 +2803,11 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=25,y=54
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
 	x=25,y=61
 	ImprovementType=IMPROVEMENT_TOWN
 EndPlot
@@ -3020,11 +2842,23 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Nouvelle Orl&#233;ans
 		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_WHARF
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_FRENCH_SEIGNEUR
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=200
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -3047,11 +2881,17 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Baton Rouge
 		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_FRENCH_SEIGNEUR
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -3076,7 +2916,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3087,11 +2927,11 @@ BeginPlot
 	x=25,y=95
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3110,7 +2950,7 @@ BeginPlot
 	x=26,y=9
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_SKIRMISHER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -3118,7 +2958,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SKIRMISHER
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3132,12 +2976,14 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIGHTHOUSE
-		BuildingType=BUILDING_PLAGUE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_SPANISH_MISSION
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=39
 		EndCulture
-		YearFounded=1715
-		YearAcquired=1715
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -3145,10 +2991,6 @@ BeginPlot
 	x=26,y=10
 	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=26,y=11
@@ -3168,13 +3010,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=26,y=19
-	BeginUnit
-		UnitType=UNIT_MACEMAN
-		UnitOwner=CIVILIZATION_NATIVE
-	EndUnit
-EndPlot
-BeginPlot
 	x=26,y=22
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -3186,19 +3021,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LINE_INFANTRY
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SPEARMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPEARMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3219,24 +3046,16 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
-		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_CONSTABULARY
 		BuildingType=BUILDING_ESTATE
-		BuildingType=BUILDING_MAGAZINE
-		BuildingType=BUILDING_DRUIDIC_NEMETON
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
-		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=2581
 			Civilization=CIVILIZATION_BARBARIAN, Culture=1635
 		EndCulture
-		YearFounded=580
-		YearAcquired=1534
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_TIWANAKU
 		PreviousOwner=CIVILIZATION_BARBARIAN
 	EndCity
@@ -3255,10 +3074,6 @@ BeginPlot
 	x=26,y=25
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_CARABINEER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
@@ -3271,17 +3086,17 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=La Paz
-		CityPopulation=7
+		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
@@ -3298,29 +3113,22 @@ BeginPlot
 		BuildingType=BUILDING_TAVERN
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_SCHOOLHOUSE
-		BuildingType=BUILDING_CONSTABULARY
 		BuildingType=BUILDING_ESTATE
-		BuildingType=BUILDING_MAGAZINE
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_STOCK_EXCHANGE
 		BuildingType=BUILDING_GATE_OF_THE_SUN
 		BuildingType=BUILDING_KALASASAYA
 		BuildingType=BUILDING_PYRAMID_OF_THE_SUN
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
-		FreeSpecialistType=SPECIALIST_GREAT_ARTIST
-		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
-		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
-		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
-		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=2475
 			Civilization=CIVILIZATION_SPAIN, Culture=6039
+			Civilization=CIVILIZATION_NATIVE, Culture=2475
 		EndCulture
-		YearFounded=100
-		YearAcquired=1528
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_TIWANAKU
 		PreviousOwner=CIVILIZATION_NATIVE
 	EndCity
@@ -3337,26 +3145,17 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=38
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_SPANISH_CONQUISTADOR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_CONQUISTADOR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=26,y=40
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3373,13 +3172,15 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
-		BuildingType=BUILDING_PLAGUE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=859
 			Civilization=CIVILIZATION_SPAIN, Culture=4143
+			Civilization=CIVILIZATION_NATIVE, Culture=859
 		EndCulture
-		YearFounded=1544
-		YearAcquired=1649
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INCA
 		PreviousOwner=CIVILIZATION_NATIVE
 	EndCity
@@ -3395,7 +3196,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=55
-	ImprovementType=IMPROVEMENT_TRIBE
+	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=26,y=61
@@ -3426,22 +3228,6 @@ EndPlot
 BeginPlot
 	x=26,y=90
 	ImprovementType=IMPROVEMENT_TRIBE
-	BeginUnit
-		UnitType=UNIT_EXPLORER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_EXPLORER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
 EndPlot
 BeginPlot
 	x=27,y=8
@@ -3450,30 +3236,18 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=9
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=27,y=10
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=27,y=11
 	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=27,y=14
@@ -3542,23 +3316,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_HUSSAR
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPEARMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3578,12 +3340,15 @@ BeginPlot
 		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_DRUIDIC_NEMETON
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=1348
 		EndCulture
-		YearFounded=500
-		YearAcquired=1528
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_TIWANAKU
 		PreviousOwner=CIVILIZATION_INCA
 	EndCity
@@ -3634,11 +3399,15 @@ BeginPlot
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Fort Saint-Louis
 		CityPopulation=1
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_PALISADE
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -3647,7 +3416,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3656,25 +3425,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SIOUX
-	EndUnit
-EndPlot
-BeginPlot
-	x=28,y=9
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-EndPlot
-BeginPlot
-	x=28,y=10
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 EndPlot
 BeginPlot
@@ -3745,22 +3496,22 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_SIOUX
+		UnitOwner=CIVILIZATION_LAKOTA
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_SIOUX
+		CityOwner=CIVILIZATION_LAKOTA
 		CityName=Wazi-kute
 		CityPopulation=8
 		BuildingType=BUILDING_CHIEFTANS_HUT
-		BuildingType=BUILDING_SIOUX_TIPI
+		BuildingType=BUILDING_LAKOTA_TIPI
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_ARENA
@@ -3770,11 +3521,11 @@ BeginPlot
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
-			Civilization=CIVILIZATION_SIOUX, Culture=359
+			Civilization=CIVILIZATION_LAKOTA, Culture=359
 		EndCulture
-		YearFounded=1475
-		YearAcquired=1475
-		PreviousOwner=CIVILIZATION_SIOUX
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_LAKOTA
 	EndCity
 EndPlot
 BeginPlot
@@ -3799,14 +3550,6 @@ BeginPlot
 	x=29,y=26
 	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_FUSILIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=29,y=27
@@ -3815,16 +3558,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=28
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=29,y=29
@@ -3859,10 +3593,6 @@ EndPlot
 BeginPlot
 	x=29,y=97
 	ImprovementType=IMPROVEMENT_TRIBE
-	BeginUnit
-		UnitType=UNIT_SCOUT
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
 EndPlot
 BeginPlot
 	x=29,y=104
@@ -3893,7 +3623,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=44
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=30,y=49
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
 	x=30,y=62
@@ -3906,15 +3641,25 @@ BeginPlot
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Havana
 		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=100
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -3936,7 +3681,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=12
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_PASTURE
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=31,y=24
@@ -3953,15 +3699,28 @@ BeginPlot
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Bogot&#225
-		CityPopulation=2
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_SPANISH_MISSION
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -3972,7 +3731,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=47
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=31,y=48
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=31,y=61
@@ -3998,20 +3763,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=31,y=73
-	ImprovementType=IMPROVEMENT_LUMBERMILL
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=31,y=82
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=31,y=85
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=31,y=90
@@ -4029,63 +3782,37 @@ BeginPlot
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Chipewyan
 		CityPopulation=3
+		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=150
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
 BeginPlot
 	x=32,y=10
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=32,y=12
+	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_CUIRASSIER
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKEMAN
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
-EndPlot
-BeginPlot
-	x=32,y=12
-	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginCity
@@ -4094,29 +3821,27 @@ BeginPlot
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=10
 		EndCulture
-		YearFounded=1726
-		YearAcquired=1726
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
 BeginPlot
 	x=32,y=14
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=32,y=19
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=32,y=41
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=32,y=44
@@ -4137,6 +3862,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=48
+	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4152,13 +3878,19 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
-		CityName=Barranquillla
-		CityPopulation=2
+		CityName=Barranquilla
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -4191,11 +3923,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_CROSSBOWMAN
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN
+		UnitType=UNIT_MILITIA_II
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -4211,11 +3943,12 @@ BeginPlot
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIGHTHOUSE
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1518
-		YearAcquired=1518
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -4227,11 +3960,6 @@ EndPlot
 BeginPlot
 	x=32,y=72
 	ImprovementType=IMPROVEMENT_PLANTATION
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=32,y=73
-	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4263,26 +3991,27 @@ EndPlot
 BeginPlot
 	x=33,y=15
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
 EndPlot
 BeginPlot
-	x=33,y=16
+	x=33,y=42
+	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
+EndPlot
+BeginPlot
+	x=33,y=48
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=50
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
 	x=33,y=56
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -4294,12 +4023,19 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Kingston
-		CityPopulation=3
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -4307,6 +4043,29 @@ BeginPlot
 	x=33,y=58
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=33,y=59
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SPANISH_GALLEON
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
 EndPlot
 BeginPlot
 	x=33,y=60
@@ -4317,22 +4076,6 @@ BeginPlot
 	x=33,y=61
 	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
 EndPlot
 BeginPlot
 	x=33,y=68
@@ -4368,89 +4111,32 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=14
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-EndPlot
-BeginPlot
-	x=34,y=16
+	ImprovementType=IMPROVEMENT_QUARRY
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=34,y=17
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
 EndPlot
 BeginPlot
 	x=34,y=48
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_ORCHARD
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=34,y=59
 	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=34,y=60
+	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
-EndPlot
-BeginPlot
-	x=34,y=60
-	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SPANISH_GALLEON
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_II
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -4465,14 +4151,22 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=64
 		EndCulture
-		YearFounded=1646
-		YearAcquired=1646
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
 BeginPlot
 	x=34,y=72
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -4485,11 +4179,20 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Savannah
 		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_SLAVE_MARKET_COLONY
+		BuildingType=BUILDING_ESTATE
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=150
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -4517,7 +4220,7 @@ EndPlot
 BeginPlot
 	x=34,y=86
 	ImprovementType=IMPROVEMENT_FORT
-	RouteType=ROUTE_HIGHWAY
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_FRENCH_COMPAGNIES
 		UnitOwner=CIVILIZATION_FRANCE
@@ -4543,11 +4246,13 @@ BeginPlot
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Nuuk
 		CityPopulation=2
+		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=150
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -4555,11 +4260,15 @@ BeginPlot
 	x=35,y=14
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -4568,38 +4277,32 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Curitiba
-		CityPopulation=1
+		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
-		YearFounded=1748
-		YearAcquired=1748
+		ReligionType=RELIGION_CATHOLICISM
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
 BeginPlot
 	x=35,y=15
-	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PORTUGUESE_BANDEIRANTE
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-EndPlot
-BeginPlot
-	x=35,y=16
+	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=35,y=17
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
-	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=35,y=22
@@ -4610,11 +4313,8 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
-	x=35,y=40
-	BeginUnit
-		UnitType=UNIT_MILITIA_III
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
+	x=35,y=48
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=35,y=58
@@ -4641,7 +4341,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=75
-	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4654,14 +4353,15 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=86
-	RouteType=ROUTE_HIGHWAY
-EndPlot
-BeginPlot
-	x=36,y=16
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=36,y=17
+	x=36,y=13
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=36,y=16
+	ImprovementType=IMPROVEMENT_LUMBERMILL
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4673,6 +4373,10 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=36,y=47
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
 	x=36,y=54
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
@@ -4682,13 +4386,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=36,y=72
-	BeginUnit
-		UnitType=UNIT_CARAVEL
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-EndPlot
-BeginPlot
 	x=36,y=73
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -4696,11 +4393,15 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CUIRASSIER
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CUIRASSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -4708,42 +4409,46 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PROTESTANT_MISSIONARY
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PROTESTANT_MISSIONARY
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Charleston
-		CityPopulation=8
+		CityPopulation=6
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_TAVERN
+		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_PLAGUE
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_SLAVE_MARKET_COLONY
+		BuildingType=BUILDING_WAREHOUSE
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_ESTATE
+		BuildingType=BUILDING_THEATRE
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
 		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=120
 		EndCulture
-		YearFounded=1634
-		YearAcquired=1634
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -4753,7 +4458,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=75
-	ImprovementType=IMPROVEMENT_PASTURE
+	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4792,6 +4497,34 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=37,y=46
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=37,y=50
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_NETHERLANDS
+		CityName=Willemstad
+		CityPopulation=2
+		ReligionType=RELIGION_PROTESTANTISM
+		BeginCulture
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=50
+		EndCulture
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_NETHERLANDS
+	EndCity
+EndPlot
+BeginPlot
 	x=37,y=55
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -4809,12 +4542,22 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Port-au-Prince
-		CityPopulation=5
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=300
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -4842,13 +4585,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=37,y=78
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-EndPlot
-BeginPlot
 	x=37,y=82
 	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
@@ -4860,18 +4596,6 @@ EndPlot
 BeginPlot
 	x=37,y=84
 	ImprovementType=IMPROVEMENT_COTTAGE
-	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_IROQUOIS
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_IROQUOIS
-	EndUnit
 EndPlot
 BeginPlot
 	x=37,y=87
@@ -4906,6 +4630,13 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=38,y=15
+	BeginUnit
+		UnitType=UNIT_INDIAMAN
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+EndPlot
+BeginPlot
 	x=38,y=16
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
@@ -4923,6 +4654,10 @@ EndPlot
 BeginPlot
 	x=38,y=33
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=38,y=47
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=38,y=54
@@ -4948,39 +4683,62 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=75
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_PASTURE
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=38,y=77
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_WORK_BOAT
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MUSKETMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Williamsburg
 		CityPopulation=6
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_PLAGUE
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_TAVERN
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_SLAVE_MARKET_COLONY
+		BuildingType=BUILDING_WHARF
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_ESTATE
+		BuildingType=BUILDING_UNIVERSITY
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_MOUNT_VERNON
+		BuildingType=BUILDING_MONTICELLO
 		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
+		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
+		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=551
 		EndCulture
-		YearFounded=1607
-		YearAcquired=1607
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -4992,6 +4750,22 @@ BeginPlot
 	x=38,y=79
 	RouteType=ROUTE_ROAD
 	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
@@ -4999,12 +4773,41 @@ BeginPlot
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Baltimore
 		CityPopulation=5
-		YearFounded=1750
-		YearAcquired=1750
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_SLAVE_MARKET_COLONY
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -5020,6 +4823,18 @@ EndPlot
 BeginPlot
 	x=38,y=85
 	ImprovementType=IMPROVEMENT_TOWN
+	BeginUnit
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
 EndPlot
 BeginPlot
 	x=38,y=88
@@ -5038,7 +4853,11 @@ BeginPlot
 	x=39,y=16
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_INDIAMAN
+		UnitType=UNIT_LINE_INFANTRY
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -5058,23 +4877,23 @@ BeginPlot
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKEMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKEMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -5084,8 +4903,8 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Sa&#245; Paulo
-		CityPopulation=14
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		CityPopulation=9
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
@@ -5101,11 +4920,16 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_MANUFACTORY
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=905
 		EndCulture
-		YearFounded=1532
-		YearAcquired=1532
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -5121,7 +4945,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=45
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_FARM
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=39,y=47
@@ -5137,12 +4962,19 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Caracas
-		CityPopulation=2
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -5150,13 +4982,6 @@ BeginPlot
 	x=39,y=56
 	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=39,y=76
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=39,y=77
@@ -5179,44 +5004,47 @@ EndPlot
 BeginPlot
 	x=39,y=82
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=39,y=85
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_IROQUOIS
+		CityOwner=CIVILIZATION_HAUDENOSAUNEE
 		CityName=Onondaga
-		CityPopulation=1
+		CityPopulation=3
+		BuildingType=BUILDING_CHIEFTANS_HUT
+		BuildingType=BUILDING_WEAVER
+		BuildingType=BUILDING_HERBALIST
+		BuildingType=BUILDING_HAUDENOSAUNEE_LONGHOUSE
+		BuildingType=BUILDING_GAIWIIO_LONGHOUSE
+		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
+		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
-			Civilization=CIVILIZATION_IROQUOIS, Culture=100
+			Civilization=CIVILIZATION_HAUDENOSAUNEE, Culture=100
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
-		PreviousOwner=CIVILIZATION_IROQUOIS
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndCity
 EndPlot
 BeginPlot
@@ -5252,6 +5080,19 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=40,y=45
+	ImprovementType=IMPROVEMENT_ORCHARD
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=40,y=46
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=40,y=48
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
 	x=40,y=54
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -5266,21 +5107,23 @@ BeginPlot
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=Santo Domingo
 		CityPopulation=5
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_STAR_FORT
 		BuildingType=BUILDING_ARMOURY
-		BuildingType=BUILDING_PLAGUE
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE_MINER
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=200
 		EndCulture
-		YearFounded=1490
-		YearAcquired=1490
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -5288,13 +5131,6 @@ BeginPlot
 	x=40,y=56
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=40,y=75
-	BeginUnit
-		UnitType=UNIT_WORK_BOAT
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=40,y=78
@@ -5310,15 +5146,43 @@ BeginPlot
 	x=40,y=81
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_WORK_BOAT
+		UnitType=UNIT_SLOOP
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -5327,12 +5191,27 @@ BeginPlot
 		CityPopulation=5
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_JEWELLER
+		BuildingType=BUILDING_PLAZA
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_STABLE
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_WHARF
+		BuildingType=BUILDING_WAREHOUSE
+		BuildingType=BUILDING_UNIVERSITY
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=491
 		EndCulture
-		YearFounded=1684
-		YearAcquired=1684
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -5371,14 +5250,10 @@ BeginPlot
 	x=41,y=16
 	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
 EndPlot
 BeginPlot
 	x=41,y=17
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5401,6 +5276,10 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=41,y=47
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
 	x=41,y=53
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
@@ -5416,10 +5295,6 @@ EndPlot
 BeginPlot
 	x=41,y=81
 	ImprovementType=IMPROVEMENT_COTTAGE
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=41,y=83
@@ -5454,19 +5329,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=16
-	ImprovementType=IMPROVEMENT_FORT
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=42,y=18
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=42,y=79
-	BeginUnit
-		UnitType=UNIT_WORK_BOAT
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=42,y=81
@@ -5476,19 +5343,39 @@ BeginPlot
 	x=42,y=83
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_WORK_BOAT
+		UnitType=UNIT_BARQUE
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
+		UnitType=UNIT_BARQUE
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -5497,16 +5384,35 @@ BeginPlot
 		CityPopulation=10
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_BARRACKS
 		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_TAVERN
+		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_ARMOURY
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_WHARF
+		BuildingType=BUILDING_WAREHOUSE
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_UNIVERSITY
+		BuildingType=BUILDING_BANK
+		BuildingType=BUILDING_THEATRE
+		BuildingType=BUILDING_SHIPYARD
+		BuildingType=BUILDING_MEETING_HALL
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_PROTESTANT_CATHEDRAL
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
+		BuildingType=BUILDING_STOCK_EXCHANGE
 		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=64
 			Civilization=CIVILIZATION_NETHERLANDS, Culture=78
 		EndCulture
-		YearFounded=1625
-		YearAcquired=1669
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_NETHERLANDS
 	EndCity
 EndPlot
@@ -5530,11 +5436,13 @@ BeginPlot
 		CityOwner=CIVILIZATION_INUIT
 		CityName=Sisimiut
 		CityPopulation=1
+		BuildingType=BUILDING_INUIT_IGLOO
+		BuildingType=BUILDING_ANGAKKUQ_QARGI
 		BeginCulture
 			Civilization=CIVILIZATION_INUIT, Culture=100
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_INUIT
 	EndCity
 EndPlot
@@ -5557,12 +5465,12 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=43,y=53
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
 	x=43,y=82
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=43,y=84
@@ -5572,10 +5480,6 @@ EndPlot
 BeginPlot
 	x=43,y=85
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=43,y=86
@@ -5598,24 +5502,30 @@ BeginPlot
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Montr&#233;al
 		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=150
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
-EndPlot
-BeginPlot
-	x=43,y=92
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
 EndPlot
 BeginPlot
 	x=43,y=98
@@ -5643,37 +5553,37 @@ BeginPlot
 	x=44,y=15
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_LINE_INFANTRY
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKEMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_BOMBARD
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_CROSSBOWMAN
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_PORTUGAL
 		CityName=Rio de Janeiro
-		CityPopulation=14
+		CityPopulation=8
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
@@ -5683,17 +5593,36 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIGHTHOUSE
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=199
 		EndCulture
-		YearFounded=1538
-		YearAcquired=1538
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
 BeginPlot
 	x=44,y=16
 	ImprovementType=IMPROVEMENT_VILLAGE
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=39
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=40
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=42
+	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5710,12 +5639,19 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
 		CityName=San Juan
-		CityPopulation=2
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_LA_FORTALEZA
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
 EndPlot
@@ -5736,43 +5672,79 @@ BeginPlot
 	x=44,y=85
 	RouteType=ROUTE_ROAD
 	BeginUnit
+		UnitType=UNIT_BARQUE
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_BARQUE
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INDIAMAN
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_LIGHT_CANNON
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Boston
-		CityPopulation=5
+		CityPopulation=6
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_BARRACKS
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
+		BuildingType=BUILDING_FORGE
+		BuildingType=BUILDING_TAVERN
+		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_WHARF
+		BuildingType=BUILDING_WAREHOUSE
+		BuildingType=BUILDING_SILVERSMITH
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_UNIVERSITY
+		BuildingType=BUILDING_CUSTOMS_HOUSE
+		BuildingType=BUILDING_SHIPYARD
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
+		BuildingType=BUILDING_ACADEMY
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
+		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=23
 		EndCulture
-		YearFounded=1711
-		YearAcquired=1711
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=44,y=86
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 EndPlot
 BeginPlot
 	x=44,y=90
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
 EndPlot
 BeginPlot
 	x=44,y=92
@@ -5788,6 +5760,10 @@ BeginPlot
 	x=44,y=94
 	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=44,y=108
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
 EndPlot
 BeginPlot
 	x=44,y=110
@@ -5821,12 +5797,13 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Georgetown
-		CityPopulation=1
+		CityPopulation=2
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -5848,15 +5825,24 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
-		CityName=Petit-Goâve
-		CityPopulation=1
+		CityName=Castries
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
+EndPlot
+BeginPlot
+	x=45,y=52
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
 	x=45,y=71
@@ -5907,7 +5893,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=95
-	ImprovementType=IMPROVEMENT_FORT
+	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5926,11 +5912,26 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=17
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=38
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=39
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=46,y=40
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=47
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
 	x=46,y=84
@@ -5940,6 +5941,10 @@ BeginPlot
 	x=46,y=88
 	RouteType=ROUTE_ROAD
 	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
@@ -5947,12 +5952,21 @@ BeginPlot
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_CANNON
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Bar Harbor
 		CityPopulation=2
-		YearFounded=1750
-		YearAcquired=1750
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_PROTESTANTISM
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -5990,30 +6004,30 @@ BeginPlot
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_PIKE_AND_SHOT
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_NATIVE_SLAVE_COLONY
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_CANNON
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_SETTLER
+		UnitType=UNIT_FRENCH_COUREUR_DES_BOIS
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Qu&#233;bec
 		CityPopulation=6
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_BARRACKS
@@ -6024,13 +6038,20 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_STABLE
 		BuildingType=BUILDING_SCHOOLHOUSE
+		BuildingType=BUILDING_WHARF
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_UNIVERSITY
+		BuildingType=BUILDING_THEATRE
+		BuildingType=BUILDING_SHIPYARD
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_CATHEDRAL
 		BuildingType=BUILDING_CATHOLIC_MONASTERY
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=1035
 		EndCulture
-		YearFounded=1624
-		YearAcquired=1624
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -6067,7 +6088,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Nya Göteborg
-		CityPopulation=8
+		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
@@ -6076,11 +6097,13 @@ BeginPlot
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_NORSE_THINGVELLIR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=726
 		EndCulture
-		YearFounded=1320
-		YearAcquired=1320
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
@@ -6095,12 +6118,53 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=47,y=19
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
 	x=47,y=27
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=47,y=39
+	BeginUnit
+		UnitType=UNIT_DUTCH_FLUYT
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+EndPlot
+BeginPlot
+	x=47,y=40
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_NETHERLANDS
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_NETHERLANDS
+		CityName=Paramaribo
+		CityPopulation=3
+		BuildingType=BUILDING_GOVERNORS_MANSION
+		ReligionType=RELIGION_PROTESTANTISM
+		BeginCulture
+			Civilization=CIVILIZATION_NETHERLANDS, Culture=100
+		EndCulture
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_NETHERLANDS
+	EndCity
+EndPlot
+BeginPlot
 	x=47,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -6111,13 +6175,17 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_ENGLAND
-		CityName=Cambridge
-		CityPopulation=1
+		CityName=Bridgetown
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -6147,8 +6215,13 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=47,y=96
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
 	x=47,y=97
 	ImprovementType=IMPROVEMENT_CAMP
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=47,y=107
@@ -6159,11 +6232,23 @@ BeginPlot
 	x=48,y=17
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginCity
@@ -6174,16 +6259,30 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=5
+			Civilization=CIVILIZATION_PORTUGAL, Culture=35
 		EndCulture
-		YearFounded=1729
-		YearAcquired=1729
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
 BeginPlot
 	x=48,y=23
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=48,y=38
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=48,y=39
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=48,y=41
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
 	x=48,y=89
@@ -6207,17 +6306,12 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
-	x=48,y=94
-	ImprovementType=IMPROVEMENT_FORT
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=48,y=95
 	ImprovementType=IMPROVEMENT_CAMP
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
+EndPlot
+BeginPlot
+	x=48,y=98
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=48,y=107
@@ -6240,31 +6334,33 @@ EndPlot
 BeginPlot
 	x=49,y=18
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
 EndPlot
 BeginPlot
-	x=49,y=19
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	x=49,y=37
+	ImprovementType=IMPROVEMENT_MINE
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=49,y=38
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_FRANCE
 		CityName=Cayenne
-		CityPopulation=1
+		CityPopulation=3
+		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_FRANCE
 	EndCity
 EndPlot
@@ -6280,6 +6376,7 @@ EndPlot
 BeginPlot
 	x=49,y=98
 	ImprovementType=IMPROVEMENT_FORT
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_FRENCH_COMPAGNIES
 		UnitOwner=CIVILIZATION_FRANCE
@@ -6316,6 +6413,18 @@ BeginPlot
 	x=50,y=88
 	RouteType=ROUTE_ROAD
 	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_FUSILIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
@@ -6323,11 +6432,15 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=Halifax
 		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
@@ -6337,22 +6450,25 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=50,y=107
-	RouteType=ROUTE_ROAD
+	x=50,y=106
 	BeginUnit
 		UnitType=UNIT_WORK_BOAT
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
+EndPlot
+BeginPlot
+	x=50,y=107
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_MUSKETMAN
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_ATLATLIST
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
@@ -6366,7 +6482,7 @@ BeginPlot
 	BeginCity
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Brattalid
-		CityPopulation=6
+		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
@@ -6375,11 +6491,13 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_WHARF
 		BuildingType=BUILDING_LIGHTHOUSE
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=329
 		EndCulture
-		YearFounded=1255
-		YearAcquired=1255
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
@@ -6402,15 +6520,12 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=51,y=23
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
-EndPlot
-BeginPlot
 	x=51,y=32
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
+	x=51,y=37
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
 	x=51,y=107
@@ -6430,15 +6545,15 @@ BeginPlot
 	x=52,y=22
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_PIKEMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_COLONIST
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginCity
@@ -6447,13 +6562,29 @@ BeginPlot
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
+		BuildingType=BUILDING_SAO_FRANCISCO_SQUARE
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
-			Civilization=CIVILIZATION_PORTUGAL, Culture=3
+			Civilization=CIVILIZATION_PORTUGAL, Culture=30
 		EndCulture
-		YearFounded=1736
-		YearAcquired=1736
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
+EndPlot
+BeginPlot
+	x=52,y=23
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=52,y=87
+	ImprovementType=IMPROVEMENT_WHALING_BOATS
 EndPlot
 BeginPlot
 	x=52,y=106
@@ -6486,10 +6617,6 @@ EndPlot
 BeginPlot
 	x=54,y=23
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_PORTUGAL
-	EndUnit
 EndPlot
 BeginPlot
 	x=54,y=24
@@ -6515,6 +6642,13 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_WHALING_BOATS
 EndPlot
 BeginPlot
+	x=54,y=113
+	BeginUnit
+		UnitType=UNIT_INDIAMAN
+		UnitOwner=CIVILIZATION_NORSE
+	EndUnit
+EndPlot
+BeginPlot
 	x=55,y=23
 	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
@@ -6533,6 +6667,14 @@ BeginPlot
 	x=55,y=92
 	RouteType=ROUTE_ROAD
 	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
@@ -6540,21 +6682,21 @@ BeginPlot
 		CityOwner=CIVILIZATION_ENGLAND
 		CityName=St. John's
 		CityPopulation=2
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_PROTESTANTISM
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
-		YearFounded=1750
-		YearAcquired=1750
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_ENGLAND
 	EndCity
 EndPlot
 BeginPlot
 	x=55,y=114
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_INDIAMAN
-		UnitOwner=CIVILIZATION_NORSE
-	EndUnit
 	BeginUnit
 		UnitType=UNIT_MUSKETMAN
 		UnitOwner=CIVILIZATION_NORSE
@@ -6587,7 +6729,7 @@ BeginPlot
 		CityOwner=CIVILIZATION_NORSE
 		CityName=Reykjav&#237;k
 		CityPopulation=8
-		BuildingType=BUILDING_GOVERNORS_RESIDENCE
+		BuildingType=BUILDING_GOVERNORS_MANSION
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_WEAVER
@@ -6605,16 +6747,18 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_ESTATE
 		BuildingType=BUILDING_NORSE_THINGVELLIR
+		BuildingType=BUILDING_PROTESTANT_TEMPLE
+		BuildingType=BUILDING_PROTESTANT_CATHEDRAL
+		BuildingType=BUILDING_PROTESTANT_MONASTERY
 		BuildingType=BUILDING_MANUFACTORY
-		BuildingType=BUILDING_TEMBLEQUE_AQUEDUCT
-		BuildingType=BUILDING_LA_FORTALEZA
+		ReligionType=RELIGION_PROTESTANTISM
 		FreeSpecialistType=SPECIALIST_GREAT_ENGINEER
 		FreeSpecialistType=SPECIALIST_GREAT_ENGINEER
 		BeginCulture
 			Civilization=CIVILIZATION_NORSE, Culture=3295
 		EndCulture
-		YearFounded=870
-		YearAcquired=870
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_NORSE
 	EndCity
 EndPlot
@@ -6628,22 +6772,29 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=56,y=24
-	RouteType=ROUTE_ROAD
+	x=56,y=23
 	BeginUnit
 		UnitType=UNIT_INDIAMAN
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
+EndPlot
+BeginPlot
+	x=56,y=24
+	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_WORK_BOAT
+		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MUSKETMAN
+		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_PORTUGAL
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -6658,14 +6809,19 @@ BeginPlot
 		BuildingType=BUILDING_MARKET
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_TRADING_POST
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_CATHOLIC_TEMPLE
+		BuildingType=BUILDING_CATHOLIC_MONASTERY
 		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=109
 		EndCulture
-		YearFounded=1616
-		YearAcquired=1616
+		YearFounded=-500
+		YearAcquired=-500
 		PreviousOwner=CIVILIZATION_PORTUGAL
 	EndCity
 EndPlot
@@ -6691,6 +6847,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=56,y=90
+	ImprovementType=IMPROVEMENT_OCEAN_FISHERY
+EndPlot
+BeginPlot
 	x=56,y=116
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
@@ -6701,7 +6861,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=26
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=57,y=114

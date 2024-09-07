@@ -1184,23 +1184,23 @@ enum CivilizationTypes		// Exposed to Python
 	FRANCE,
 	HAITI,
 	
+	HAUDENOSAUNEE,
 	HAWAII,
 	INCA,
 	INUIT,
-	IROQUOIS,
+	LAKOTA,
 	MAYA,
 	MEXICO,
 	MISSISSIPPI,
 	MUISCA,
 	NETHERLANDS,
-	NORSE,
 	
+	NORSE,
 	PERU,
 	PORTUGAL,
 	PUEBLOAN,
 	PUREPECHA,
 	RUSSIA,
-	LAKOTA,
 	SPAIN,
 	TEOTIHUACAN,
 	TIWANAKU,
@@ -1282,7 +1282,7 @@ enum LeaderHeadTypes			// Exposed to Python
 	// Inuit
 	AUA,
 
-	// Iroquois
+	// Haudenosaunee
 	HIAWATHA,
 
 	// Maya

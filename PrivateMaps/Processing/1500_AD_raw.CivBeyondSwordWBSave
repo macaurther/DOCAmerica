@@ -1607,12 +1607,12 @@ BeginPlayer
 	LeaderType=LEADER_HIAWATHA
 	LeaderName=Hiawatha
 	CivDesc=Iroquois Confederacy
-	CivShortDesc=TXT_KEY_CIV_IROQUOIS_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_IROQUOIS_ADJECTIVE
+	CivShortDesc=TXT_KEY_CIV_HAUDENOSAUNEE_SHORT_DESC
+	CivAdjective=TXT_KEY_CIV_HAUDENOSAUNEE_ADJECTIVE
 	FlagDecal=Art/Interface/TeamColor/FlagDECAL_Iroquois.dds
 	WhiteFlag=0
-	CivType=CIVILIZATION_IROQUOIS
-	Color=PLAYERCOLOR_IROQUOIS
+	CivType=CIVILIZATION_HAUDENOSAUNEE
+	Color=PLAYERCOLOR_HAUDENOSAUNEE
 	ArtStyle=ARTSTYLE_SOUTH_AMERICA
 	PlayableCiv=1
 	MinorNationStatus=0
@@ -35304,24 +35304,24 @@ BeginPlot
 	PlotType=2
 	BeginUnit
 		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_IROQUOIS
+		CityOwner=CIVILIZATION_HAUDENOSAUNEE
 		CityName=Onondaga
 		CityPopulation=3
 		ProductionUnit=UNIT_ARCHER
 		BuildingType=BUILDING_CHIEFTANS_HUT
 		BuildingType=BUILDING_GRANARY
 		BeginCulture
-			Civilization=CIVILIZATION_IROQUOIS, Culture=9
+			Civilization=CIVILIZATION_HAUDENOSAUNEE, Culture=9
 		EndCulture
 		YearFounded=1450
 		YearAcquired=1450
-		PreviousOwner=CIVILIZATION_IROQUOIS
+		PreviousOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndCity
 	TeamReveal=17,
 	Player17Culture=21, (Hiawatha)
@@ -36173,8 +36173,8 @@ BeginPlot
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 		Level=1, Experience=0
 		PromotionType=PROMOTION_WOODSMAN1
 		PromotionType=PROMOTION_WOODSMAN2
@@ -36183,8 +36183,8 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 		Level=1, Experience=0
 		PromotionType=PROMOTION_WOODSMAN1
 		PromotionType=PROMOTION_WOODSMAN2
@@ -36194,7 +36194,7 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 		Level=1, Experience=0
 		FacingDirection=1
 		UnitAIType=UNITAI_WORKER

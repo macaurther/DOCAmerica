@@ -327,6 +327,22 @@
 		<Spanish>Slaves in conquered cities turn into soldiers</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UP_HAU_TITLE</Tag>
+		<English>The Power of the Six Nations:</English>
+		<French>The Power of the Six Nations:</French>
+		<German>The Power of the Six Nations:</German>
+		<Italian>The Power of the Six Nations:</Italian>
+		<Spanish>The Power of the Six Nations:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UP_HAU</Tag>
+		<English>Start with Confederacy unlocked, converted Tribes gift you units</English>
+		<French>Start with Confederacy unlocked, converted Tribes gift you units</French>
+		<German>Start with Confederacy unlocked, converted Tribes gift you units</German>
+		<Italian>Start with Confederacy unlocked, converted Tribes gift you units</Italian>
+		<Spanish>Start with Confederacy unlocked, converted Tribes gift you units</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UP_HAW_TITLE</Tag>
 		<English>The Power of Moku:</English>
 		<French>The Power of Moku:</French>
@@ -391,20 +407,20 @@
 		<Spanish>Nearby camp resources are improved on city founding</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UP_IRO_TITLE</Tag>
-		<English>The Power of Haudenosaunee:</English>
-		<French>The Power of Haudenosaunee:</French>
-		<German>The Power of Haudenosaunee:</German>
-		<Italian>The Power of Haudenosaunee:</Italian>
-		<Spanish>The Power of Haudenosaunee:</Spanish>
+		<Tag>TXT_KEY_UP_LAK_TITLE</Tag>
+		<English>The Power of Camp Circles:</English>
+		<French>The Power of Camp Circles:</French>
+		<German>The Power of Camp Circles:</German>
+		<Italian>The Power of Camp Circles:</Italian>
+		<Spanish>The Power of Camp Circles:</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UP_IRO</Tag>
-		<English>Start with Confederacy unlocked, converted Tribes gift you units</English>
-		<French>Start with Confederacy unlocked, converted Tribes gift you units</French>
-		<German>Start with Confederacy unlocked, converted Tribes gift you units</German>
-		<Italian>Start with Confederacy unlocked, converted Tribes gift you units</Italian>
-		<Spanish>Start with Confederacy unlocked, converted Tribes gift you units</Spanish>
+		<Tag>TXT_KEY_UP_LAK</Tag>
+		<English>Recieve [ICON_CULTURE] in after nomadic city migration</English>
+		<French>Recieve [ICON_CULTURE] in after nomadic city migration</French>
+		<German>Recieve [ICON_CULTURE] in after nomadic city migration</German>
+		<Italian>Recieve [ICON_CULTURE] in after nomadic city migration</Italian>
+		<Spanish>Recieve [ICON_CULTURE] in after nomadic city migration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_MAY_TITLE</Tag>
@@ -549,22 +565,6 @@
 		<German>Can build improvements on Contacted Tribes and doing so grants Slaves</German>
 		<Italian>Can build improvements on Contacted Tribes and doing so grants Slaves</Italian>
 		<Spanish>Can build improvements on Contacted Tribes and doing so grants Slaves</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_SIO_TITLE</Tag>
-		<English>The Power of Camp Circles:</English>
-		<French>The Power of Camp Circles:</French>
-		<German>The Power of Camp Circles:</German>
-		<Italian>The Power of Camp Circles:</Italian>
-		<Spanish>The Power of Camp Circles:</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UP_SIO</Tag>
-		<English>Recieve [ICON_CULTURE] in after nomadic city migration</English>
-		<French>Recieve [ICON_CULTURE] in after nomadic city migration</French>
-		<German>Recieve [ICON_CULTURE] in after nomadic city migration</German>
-		<Italian>Recieve [ICON_CULTURE] in after nomadic city migration</Italian>
-		<Spanish>Recieve [ICON_CULTURE] in after nomadic city migration</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UP_SPA_TITLE</Tag>

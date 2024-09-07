@@ -269,37 +269,37 @@
 				<StyleUnit>
 					<UnitType>UNIT_CROSSBOWMAN</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_IROQUOIS</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
 					<UnitType>UNIT_CUIRASSIER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_IROQUOIS</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			</StyleUnits>

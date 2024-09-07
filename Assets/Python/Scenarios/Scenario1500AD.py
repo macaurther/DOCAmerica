@@ -50,7 +50,7 @@ lCivilizations = [
 		techs=techs.column(6).including(iNobility).without(iAstronomy, iScholarship, iNavigation)
 	),
 	Civilization(
-		iIroquois,
+		iHaudenosaunee,
 		iGold=300,
 		lCivics=[iChiefdom1, iConfederacy1, iCommune1, iHarmony1, iCooperation1],
 		techs=techs.column(3).including(iProperty, iCeremony).without(iEarthworks, iIrrigation, iPathfinding)
@@ -104,6 +104,9 @@ def createStartingUnits():
 def setupGoals(iCiv, goals):
 	# MacAurther TODO
 	pass
+	# Haudenosaunee tribe goal
+	#if iCiv == iHaudenosaunee:
+	#	goals[0].requirements[0].accumulate(1)
 
 scenario1500AD = Scenario(
 	iStartYear = 1500,

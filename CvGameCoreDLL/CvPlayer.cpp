@@ -8075,8 +8075,8 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		}
 	}
 
-	// Iroquois UP: starts with Confederacy
-	if (getCivilizationType() == IROQUOIS)
+	// Haudenosaunee UP: starts with Confederacy
+	if (getCivilizationType() == HAUDENOSAUNEE)
 	{
 		if (eCivic == CIVIC_CONFEDERACY_NATIVE)
 		{
@@ -24299,7 +24299,7 @@ EraTypes CvPlayer::getSoundtrackEra()
 					return (EraTypes)ERA_ANDES;
 				case MISSISSIPPI:
 				case PUEBLOAN:
-				case IROQUOIS:
+				case HAUDENOSAUNEE:
 				case INUIT:
 				case LAKOTA:
 					return (EraTypes)ERA_NATIVE;
@@ -25553,7 +25553,7 @@ int CvPlayer::getRegionPowers() const
 		return RP_PACIFIC;
 		break;
 	case PUEBLOAN:
-	case IROQUOIS:
+	case HAUDENOSAUNEE:
 	case MISSISSIPPI:
 	case LAKOTA:
 		return RP_WILDERNESS;

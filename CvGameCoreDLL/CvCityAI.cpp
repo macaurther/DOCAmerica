@@ -2435,7 +2435,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 		aiUnitAIVal[UNITAI_EXPLORE_SEA] /= 2;
 		aiUnitAIVal[UNITAI_WORKER_SEA] /= 2;
 		break;
-	case IROQUOIS:
+	case HAUDENOSAUNEE:
 		aiUnitAIVal[UNITAI_EXPLORE] /= 2;
 		aiUnitAIVal[UNITAI_SETTLE] /= 2;
 		break;

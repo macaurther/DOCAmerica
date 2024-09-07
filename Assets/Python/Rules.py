@@ -161,7 +161,7 @@ def captureCannon(winningUnit, losingUnit):
 @handler("combatResult")
 def captureAdvancedUnit(winningUnit, losingUnit):
 	# Wilderness RP
-	if civ(winningUnit) in (iIroquois, iPuebloan, iMississippi, iLakota):
+	if civ(winningUnit) in (iHaudenosaunee, iPuebloan, iMississippi, iLakota):
 		if losingUnit.getUnitType() in lWildernessRPGunUnits:
 			captureUnit(losingUnit, winningUnit, iArmedBrave, 50)
 		elif losingUnit.getUnitType() in lWildernessRPHorseUnits:

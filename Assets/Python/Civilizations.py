@@ -106,7 +106,7 @@ class Civilization(object):
 		
 		self.lCivics = kwargs.get("lCivics", [])
 		self.lEnemies = kwargs.get("lEnemies", []) + [iNative, iBarbarian]
-		self.iMaster = kwargs.get("iMaster")
+		self.iMasterCiv = kwargs.get("iMasterCiv")
 		
 		self.dAttitudes = kwargs.get("dAttitudes", {})
 		
@@ -171,9 +171,10 @@ class Civilization(object):
 			if iEnemyPlayer >= 0 and self.iCiv != iEnemy:
 				team(iEnemyPlayer).declareWar(self.player.getTeam(), False, WarPlanTypes.NO_WARPLAN)
 		
-		if self.iMaster is not None:
-			iMasterPlayer = slot(self.iMaster)
-			if iMasterPlayer >= 0 and self.iCiv != self.iMaster:
+		# MacAurther TODO: Rare bug where master is assigned and then collapses??, causing bug in scoreboard??
+		if self.iMasterCiv is not None:
+			iMasterPlayer = slot(self.iMasterCiv)
+			if iMasterPlayer >= 0 and self.iCiv != self.iMasterCiv:
 				team(iMasterPlayer).assignVassal(self.player.getTeam(), False)
 		
 		for iCiv, iAttitude in self.dAttitudes.items():
@@ -262,7 +263,7 @@ lCivilizations = [
 		techs=techs.column(4).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing)
 	),
 	Civilization(
-		iIroquois,
+		iHaudenosaunee,
 		iGold=200,
 		lCivics=[iChiefdom1, iConfederacy1, iHarmony1, iCooperation1],
 		techs=techs.column(3).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks)
@@ -399,7 +400,7 @@ lCivilizations = [
 		iGold=1000,
 		iImmigration=400,
 		iStateReligion=iProtestantism,
-		iMaster=iEngland,
+		iMasterCiv=iEngland,
 		lCivics=[iIndustrialism3, iFreeEnterprise3, iOpportunity3, iHomesteads3],
 		techs=techs.column(18)
 	),
@@ -479,7 +480,7 @@ dStartingUnits = CivDict({
 		iSkirmish: 3,
 		iDefend: 3,
 	},
-	iIroquois: {
+	iHaudenosaunee: {
 		iSettle: 1,
 		iWork: 1,
 		iMilitia: 1,
@@ -555,6 +556,7 @@ dStartingUnits = CivDict({
 		iMilitia: 3,
 		iBase: 7,
 		iSiege: 2,
+		iCav: 4,
 		iSiegeCity: 3,
 	},
 	iPeru: {
@@ -601,11 +603,22 @@ dStartingUnits = CivDict({
 # Extra units for AI
 dExtraAIUnits = CivDict({
 	iAmerica: {
-		iBase: 7,
+		iMilitia: 4,
+		iBase: 8,
+		iSkirmish: 3,
+		iCav: 4,
+		iSiege: 2,
+		iFerrySea: 1,
+		iEscortSea: 3,
 	},
 	iArgentina: {
+		iMilitia: 3,
 		iBase: 5,
-		iSiege: 2,
+		iSkirmish: 3,
+		iCav: 4,
+		iSiege: 3,
+		iFerrySea: 1,
+		iEscortSea: 1,
 	},
 	iAztecs: {
 		iMilitia: 4,
@@ -618,6 +631,11 @@ dExtraAIUnits = CivDict({
 	},
 	iInca: {
 		iBase: 5,
+	},
+	iMexico: {
+		iBase: 4,
+		iCav: 4,
+		iSiege: 1,
 	},
 }, {})
 

@@ -2966,20 +2966,20 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_IROQUOIS
+		CityOwner=CIVILIZATION_HAUDENOSAUNEE
 		CityName=Onondaga
 		CityPopulation=3
 		BuildingType=BUILDING_CHIEFTANS_HUT
 		BuildingType=BUILDING_GRANARY
 		BeginCulture
-			Civilization=CIVILIZATION_IROQUOIS, Culture=9
+			Civilization=CIVILIZATION_HAUDENOSAUNEE, Culture=9
 		EndCulture
 		YearFounded=1450
 		YearAcquired=1450
-		PreviousOwner=CIVILIZATION_IROQUOIS
+		PreviousOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndCity
 EndPlot
 BeginPlot
@@ -3044,16 +3044,16 @@ EndPlot
 BeginPlot
 	x=40,y=86
 	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_IROQUOIS_MOHAWK
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_IROQUOIS
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 EndPlot
 BeginPlot

@@ -66,7 +66,7 @@ def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 @handler("goodyReceived")
 # Iroquois UP
 def iroquoisPower(iPlayer, pPlot, pUnit, iGoodyType):
-	if civ(iPlayer) == iIroquois:
+	if civ(iPlayer) == iHaudenosaunee:
 		if year() > year(1600):
 			makeUnits(iPlayer, iArmedBrave, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 		else:

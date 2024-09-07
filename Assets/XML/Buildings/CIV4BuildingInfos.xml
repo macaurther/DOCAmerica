@@ -167,7 +167,7 @@
 			<Strategy>TXT_KEY_BUILDING_GRANARY_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
-			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
+			<FreeStartEra>ERA_EXPLORATION</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -210,7 +210,7 @@
 			<Strategy>TXT_KEY_BUILDING_WARI_COLCAS_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_WARI_COLCAS</ArtDefineTag>
-			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
+			<FreeStartEra>ERA_EXPLORATION</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -272,7 +272,7 @@
 			<Strategy>TXT_KEY_BUILDING_INUIT_IGLOO_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_INUIT_IGLOO</ArtDefineTag>
-			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
+			<FreeStartEra>ERA_EXPLORATION</FreeStartEra>
 			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -325,7 +325,7 @@
 			<Help>TXT_KEY_BUILDING_LAKOTA_TIPI_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LAKOTA_TIPI</ArtDefineTag>
-			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
+			<FreeStartEra>ERA_EXPLORATION</FreeStartEra>
 			<PrereqTech>TECH_POTTERY</PrereqTech>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -373,7 +373,7 @@
 			<Strategy>TXT_KEY_BUILDING_MARKET_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MARKET</ArtDefineTag>
-			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
+			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
 			<PrereqTech>TECH_ARITHMETICS</PrereqTech>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1484,12 +1484,12 @@
 		</BuildingInfo>
 		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_PLAZA</BuildingClass>
-			<Type>BUILDING_IROQUOIS_LONGHOUSE</Type>
-			<Description>TXT_KEY_BUILDING_IROQUOIS_LONGHOUSE</Description>
-			<Civilopedia>TXT_KEY_BUILDING_IROQUOIS_LONGHOUSE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_IROQUOIS_LONGHOUSE_STRATEGY</Strategy>
+			<Type>BUILDING_HAUDENOSAUNEE_LONGHOUSE</Type>
+			<Description>TXT_KEY_BUILDING_HAUDENOSAUNEE_LONGHOUSE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_HAUDENOSAUNEE_LONGHOUSE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_HAUDENOSAUNEE_LONGHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_IROQUOIS_LONGHOUSE</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_BUILDING_HAUDENOSAUNEE_LONGHOUSE</ArtDefineTag>
 			<PrereqTech>TECH_LAW</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1577,6 +1577,7 @@
 			<Strategy>TXT_KEY_BUILDING_SMOKEHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SMOKEHOUSE</ArtDefineTag>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_TANNING</PrereqTech>
 			<ObsoleteTech>TECH_CHEMISTRY</ObsoleteTech>
 			<iCost>60</iCost>
@@ -1615,6 +1616,7 @@
 			<Strategy>TXT_KEY_BUILDING_HAWAIIAN_LUAU_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HAWAIIAN_LUAU</ArtDefineTag>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_TANNING</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1700,8 +1702,8 @@
 			<Strategy>TXT_KEY_BUILDING_TRADING_POST_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TRADING_POST</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
-			<ObsoleteTech>TECH_CHEMISTRY</ObsoleteTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>15</iMinAreaSize>
@@ -1743,8 +1745,8 @@
 			<Strategy>TXT_KEY_BUILDING_RUSSIAN_HUNTING_POST_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_RUSSIAN_HUNTING_POST</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_EXPLORATION</PrereqTech>
-			<ObsoleteTech>TECH_CHEMISTRY</ObsoleteTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>15</iMinAreaSize>
@@ -1804,6 +1806,7 @@
 			<Strategy>TXT_KEY_BUILDING_FORGE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FORGE</ArtDefineTag>
+			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
 			<PrereqTech>TECH_FINANCE</PrereqTech>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1912,6 +1915,7 @@
 			<Strategy>TXT_KEY_BUILDING_PALISADE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PALISADE</ArtDefineTag>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_REDUCTIONS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
@@ -1938,6 +1942,7 @@
 			<Strategy>TXT_KEY_BUILDING_DUTCH_FACTORIJ_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_DUTCH_FACTORIJ</ArtDefineTag>
+			<FreeStartEra>ERA_COLONIAL</FreeStartEra>
 			<PrereqTech>TECH_REDUCTIONS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>30</iCost>
@@ -1974,7 +1979,6 @@
 			<Strategy>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONUMENT</ArtDefineTag>
-			<FreeStartEra>ERA_REVOLUTIONARY</FreeStartEra>
 			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
@@ -2009,6 +2013,7 @@
 			<Strategy>TXT_KEY_BUILDING_SCHOOLHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_SCHOOLHOUSE</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_EDUCATION</PrereqTech>
 			<iCost>90</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -2052,6 +2057,7 @@
 			<Strategy>TXT_KEY_BUILDING_AZTEC_CALMECAC_STRATEGY</Strategy>
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_CALMECAC</ArtDefineTag>
+			<FreeStartEra>ERA_INDUSTRIAL</FreeStartEra>
 			<PrereqTech>TECH_NOBILITY</PrereqTech>
 			<iCost>90</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -2627,9 +2633,9 @@
 			<Description>TXT_KEY_BUILDING_ESTATE</Description>
 			<Civilopedia>TXT_KEY_BUILDING_ESTATE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_ESTATE_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_ESTATE_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ESTATE</ArtDefineTag>
+			<FreeStartEra>ERA_MODERN</FreeStartEra>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
 			<iCost>150</iCost>
 			<iConquestProb>50</iConquestProb>
@@ -2678,9 +2684,9 @@
 			<Description>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA</Description>
 			<Civilopedia>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_COLOMBIAN_HACIENDA_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_ESTATE_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COLOMBIAN_HACIENDA</ArtDefineTag>
+			<FreeStartEra>ERA_MODERN</FreeStartEra>
 			<PrereqTech>TECH_HORTICULTURE</PrereqTech>
 			<iCost>150</iCost>
 			<iConquestProb>50</iConquestProb>
@@ -2879,6 +2885,7 @@
 			<Strategy>TXT_KEY_BUILDING_COURTHOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_COURTHOUSE</ArtDefineTag>
+			<FreeStartEra>ERA_MODERN</FreeStartEra>
 			<PrereqTech>TECH_JUDICIARY</PrereqTech>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2924,6 +2931,7 @@
 			<Help>TXT_KEY_BUILDING_ASSEMBLY_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ENGLISH_ROYAL_EXCHANGE</ArtDefineTag>
+			<FreeStartEra>ERA_MODERN</FreeStartEra>
 			<PrereqTech>TECH_SOCIAL_CONTRACT</PrereqTech>
 			<iCost>200</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2968,6 +2976,7 @@
 			<Strategy>TXT_KEY_BUILDING_NORSE_THINGVELLIR_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NORSE_THINGVELLIR</ArtDefineTag>
+			<FreeStartEra>ERA_MODERN</FreeStartEra>
 			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3710,6 +3719,7 @@
 			<Strategy>TXT_KEY_BUILDING_JAIL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_JAIL</ArtDefineTag>
+			<FreeStartEra>ERA_MODERN</FreeStartEra>
 			<PrereqTech>TECH_IMPERIALISM</PrereqTech>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

@@ -90,6 +90,30 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CIV_PERU_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>
+			<Text>R&#233;publique de %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Republik %s1:Republik %s1:Republik %s1</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Repubblica di %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Rep&#250;blica de %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CIV_PERU_ADJECTIVE</Tag>
 		<English>Peruvian</English>
 		<French>Peruvian</French>

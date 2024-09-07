@@ -121,13 +121,13 @@ def expeditionaryForce(iGameTurn):
 		
 		# Make it easier for defending AI if both sides are AI
 		if not player(iRevolutionaryPlayer).isHuman() and not player(iExpeditionaryPlayer).isHuman():
-			iModifier1 -= 2
-			iModifier2 -= 2
+			iModifier1 -= 3
+			iModifier2 -= 3
 		
 		# Make it easier for some civs
 		if iRevolutionaryCiv in [iHaiti]:
-			iModifier1 -= 2
-			iModifier2 -= 2
+			iModifier1 -= 1
+			iModifier2 -= 1
 		
 		# disable birth protection if still active
 		player(iRevolutionaryPlayer).setBirthProtected(False)

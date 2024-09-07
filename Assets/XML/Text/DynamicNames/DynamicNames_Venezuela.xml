@@ -43,27 +43,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_VENEZUELA_COMMUNIST</Tag>
-		<English>Republic of %s1</English>
-		<French>
-			<Text>R&#233;publique d'%s1</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Republik %s1:Republik %s1:Republik %s1</Text>
-			<Gender>Female:Female:Female</Gender>
-			<Plural>0:0:0</Plural>
-		</German>
-		<Italian>
-			<Text>Repubblica di %s1</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Rep&#250;blica de %s1</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<English>Bolivarian Republic of %s1</English>
+		<French>Bolivarian Republic of %s1</French>
+		<German>Bolivarian Republic of %s1</German>
+		<Italian>Bolivarian Republic of %s1</Italian>
+		<Spanish>Bolivarian Republic of %s1</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_VENEZUELA_FASCIST</Tag>
@@ -86,6 +70,30 @@
 		<Spanish>
 			<Text>Estado %s2</Text>
 			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_VENEZUELA_REPUBLIC</Tag>
+		<English>Republic of %s1</English>
+		<French>
+			<Text>R&#233;publique de %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Republik %s1:Republik %s1:Republik %s1</Text>
+			<Gender>Female:Female:Female</Gender>
+			<Plural>0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Repubblica di %s1</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Rep&#250;blica de %s1</Text>
+			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>

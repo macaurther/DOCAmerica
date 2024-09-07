@@ -20,7 +20,7 @@ lCivilizations = [
 		techs=techs.column(6),
 	),
 	Civilization(
-		iIroquois,
+		iHaudenosaunee,
 		iGold=300,
 		lCivics=[iCouncil1, iConfederacy1, iCaptives1, iMerchants1, iAcculturation1, iCooperation1],
 		techs=techs.column(6),
@@ -80,6 +80,20 @@ lCivilizations = [
 		lCivics=[iTrustees2, iTradingCompany2, iSlavery2, iMercantilism2, iProfiteering2, iOutposts2],
 		techs=techs.column(14).including(iRegiments, iBonds, iMeteorology),
 		dAttitudes={iFrance: 2, iPortugal: -2}
+	),
+	Civilization(
+		iHawaii,
+		iGold=150,
+		lCivics=[iMonarchy1, iCustomaryLaw1, iCaptives1, iMerchants1, iIsolationism1, iConquest1],
+		techs=techs.column(6),
+	),
+	Civilization(
+		iRussia,
+		iGold=200,
+		iImmigration=100,
+		iStateReligion=iOrthodoxy,
+		lCivics=[iTrustees2, iTradingCompany2, iIndenturedServitude2, iFactory2, iProfiteering2, iOutposts2],
+		techs=techs.column(13).without(iLandmarks, iCultivation, iHerbalism)
 	),
 	Civilization(
 		iIndependent,
@@ -144,16 +158,25 @@ scenario1750AD = Scenario(
 	},
 	
 	dGreatPeopleCreated = {
-		# MacAurther TODO
+		iSpain: 4,
+		iPortugal: 3,
+		iFrance: 3,
+		iEngland: 5,
+		iNetherlands: 2,
 	},
 	dGreatGeneralsCreated = {
-		# MacAurther TODO
+		iHaudenosaunee: 1,
+		iSpain: 4,
+		iPortugal: 2,
+		iFrance: 1,
+		iEngland: 1,
+		iNetherlands: 1,
 	},
 	
 	lInitialWars = [
 	],
 	
-	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu, iSpain, iPortugal, iEngland, iFrance, iNetherlands],
+	lAllGoalsFailed = [iMaya, iZapotec, iTeotihuacan, iTiwanaku, iWari, iMississippi, iPuebloan, iChimu, iPortugal, iEngland, iFrance, iNetherlands],
 	lGoalsSucceeded = [],
 	setupGoals = setupGoals,
 	

@@ -23835,8 +23835,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_DIPLO_IROQUOIS</ScriptID>
-		<SoundID>DIPLO_IROQUOIS</SoundID>
+		<ScriptID>AS2D_DIPLO_HAUDENOSAUNEE</ScriptID>
+		<SoundID>DIPLO_HAUDENOSAUNEE</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>75</iMinVolume>
 		<iMaxVolume>75</iMaxVolume>
