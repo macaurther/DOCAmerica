@@ -493,7 +493,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 		hSpecialists = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_SPECIALIST", ())
 		lSatellites = []
 		hSatellites = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_SATELLITE", ())
-		lGreatSpecialists = []
+		lGreatSpecialistsDesc = []	# MacAurther: I was nervous about this overloading the lGreatSpecialists list from Consts (even though it doesn't)
 		hGreatSpecialists = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_GREAT_SPECIALIST", ())
 
 		for iSpecialist in xrange(gc.getNumSpecialistInfos()):
@@ -502,7 +502,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 				continue
 			sSpecialist = SpecialistInfo.getType()
 			if sSpecialist.find("GREAT_") > -1:
-				lGreatSpecialists.append((SpecialistInfo.getDescription(), iSpecialist))
+				lGreatSpecialistsDesc.append((SpecialistInfo.getDescription(), iSpecialist))
 			elif SpecialistInfo.isSatellite():
 				lSatellites.append((SpecialistInfo.getDescription(), iSpecialist))
 			else:
@@ -510,14 +510,14 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 		lSpecialists.sort()
 		lSatellites.sort()
-		lGreatSpecialists.sort()
+		lGreatSpecialistsDesc.sort()
 		lSpecialists.insert(0, (hSpecialists, -1))
 		lSatellites.insert(0, (hSatellites, -1))
 		lSatellites.insert(0, ("", -1))
-		lGreatSpecialists.insert(0, (hGreatSpecialists, -1))
-		lGreatSpecialists.insert(0, ("", -1))
+		lGreatSpecialistsDesc.insert(0, (hGreatSpecialists, -1))
+		lGreatSpecialistsDesc.insert(0, ("", -1))
 
-		self.list = lSpecialists + lSatellites + lGreatSpecialists
+		self.list = lSpecialists + lSatellites + lGreatSpecialistsDesc
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_SPECIALIST, gc.getSpecialistInfo)
 
 

@@ -19,9 +19,9 @@ def resetSlaves(iOwner, iPlayer, city):
 # MacAurther: Don't let non-Natives keep all the settled Native great people on conquest (Spain becomes mega buff)
 @handler("cityAcquired")
 def resetGreatPeople(iOldOwner, iPlayer, city, bConquest, bTrade):
-	if iOldOwner not in dCivGroups[iCivGroupNative]:
+	if civ(iOldOwner) not in dCivGroups[iCivGroupNative]:
 		return
-	if iPlayer in dCivGroups[iCivGroupNative]:
+	if civ(iPlayer) in dCivGroups[iCivGroupNative]:
 		return
 	
 	for iGreatSpecialist in lGreatSpecialists:
