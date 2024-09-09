@@ -50,7 +50,7 @@ dResourcesDict = {
 	(13, 63)  : (1550,  iHorse),  	# Mexico
 	(15, 89)  : (1550,  iHorse),  	# Utah
 	(22, 79)  : (1550,  iHorse),  	# Texas
-	(24, 88)  : (1550,  iHorse),  	# Nebraska
+	(23, 88)  : (1550,  iHorse),  	# Nebraska
 	(28, 63)  : (1550,  iHorse),  	# Cuba
 	(31, 79)  : (1550,  iHorse),  	# Kentucky
 	(38, 75)  : (1550,  iHorse),  	# North Carolina
