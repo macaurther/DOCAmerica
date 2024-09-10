@@ -100,7 +100,12 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<iLargestCityHappiness>2</iLargestCityHappiness>
+			<BuildingHappinessChanges>
+				<BuildingHappinessChange>
+					<BuildingType>BUILDINGCLASS_PLAZA</BuildingType>
+					<iHappinessChange>2</iHappinessChange>
+				</BuildingHappinessChange>
+			</BuildingHappinessChanges>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
 					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
@@ -598,7 +603,8 @@
 			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Harmony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iExtraHealth>5</iExtraHealth>
+			<iLargestCityHappiness>2</iLargestCityHappiness>
+			<iExtraHealth>2</iExtraHealth>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
@@ -641,12 +647,6 @@
 			<iStateReligionHappiness>-1</iStateReligionHappiness>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<BuildingHappinessChanges>
-				<BuildingHappinessChange>
-					<BuildingType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingType>
-					<iHappinessChange>1</iHappinessChange>
-				</BuildingHappinessChange>
-			</BuildingHappinessChanges>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_ALTAR</BuildingType>
@@ -657,12 +657,19 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+			<SpecialistValids>
+				<SpecialistValid>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<bValid>1</bValid>
+				</SpecialistValid>
+			</SpecialistValids>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
 					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
 					<YieldChanges>
 						<iYield>0</iYield>
-						<iYield>3</iYield>
+						<iYield>0</iYield>
+						<iYield>4</iYield>
 					</YieldChanges>
 				</SpecialistTypeExtraYield>
 			</SpecialistTypeExtraYields>

@@ -59,11 +59,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SOVEREIGNTY_STRATEGY</Tag>
-		<English>Faster military unit [ICON_PRODUCTION]; no war unhappiness; no non-state religion spread</English>
-		<French>Faster military unit [ICON_PRODUCTION]; no war unhappiness; no non-state religion spread</French>
-		<German>Faster military unit [ICON_PRODUCTION]; no war unhappiness; no non-state religion spread</German>
-		<Italian>Faster military unit [ICON_PRODUCTION]; no war unhappiness; no non-state religion spread</Italian>
-		<Spanish>Faster military unit [ICON_PRODUCTION]; no war unhappiness; no non-state religion spread</Spanish>
+		<English>Faster military unit [ICON_PRODUCTION]; no war [ICON_UNHAPPY]; no non-state religion spread</English>
+		<French>Faster military unit [ICON_PRODUCTION]; no war [ICON_UNHAPPY]; no non-state religion spread</French>
+		<German>Faster military unit [ICON_PRODUCTION]; no war [ICON_UNHAPPY]; no non-state religion spread</German>
+		<Italian>Faster military unit [ICON_PRODUCTION]; no war [ICON_UNHAPPY]; no non-state religion spread</Italian>
+		<Spanish>Faster military unit [ICON_PRODUCTION]; no war [ICON_UNHAPPY]; no non-state religion spread</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ANIMISM</Tag>
@@ -147,11 +147,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE_STRATEGY</Tag>
-		<English>Reduced unhappiness from corporations; extra [ICON_FOOD] from excess happiness; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</English>
-		<French>Reduced unhappiness from corporations; extra [ICON_FOOD] from excess happiness; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</French>
-		<German>Reduced unhappiness from corporations; extra [ICON_FOOD] from excess happiness; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</German>
-		<Italian>Reduced unhappiness from corporations; extra [ICON_FOOD] from excess happiness; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</Italian>
-		<Spanish>Reduced unhappiness from corporations; extra [ICON_FOOD] from excess happiness; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</Spanish>
+		<English>Reduced [ICON_UNHAPPY] from corporations; extra [ICON_FOOD] from excess [ICON_HAPPY]; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</English>
+		<French>Reduced [ICON_UNHAPPY] from corporations; extra [ICON_FOOD] from excess [ICON_HAPPY]; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</French>
+		<German>Reduced [ICON_UNHAPPY] from corporations; extra [ICON_FOOD] from excess [ICON_HAPPY]; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</German>
+		<Italian>Reduced [ICON_UNHAPPY] from corporations; extra [ICON_FOOD] from excess [ICON_HAPPY]; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</Italian>
+		<Spanish>Reduced [ICON_UNHAPPY] from corporations; extra [ICON_FOOD] from excess [ICON_HAPPY]; extra [ICON_FOOD] and [ICON_PRODUCTION] from Great Statesmen</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PUBLIC_WELFARE_HELP</Tag>
@@ -228,11 +228,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Tag>
-		<English>Military garrisons provide happiness</English>
-		<French>Military garrisons provide happiness</French>
-		<German>Military garrisons provide happiness</German>
-		<Italian>Military garrisons provide happiness</Italian>
-		<Spanish>Military garrisons provide happiness</Spanish>
+		<English>Military garrisons provide [ICON_HAPPY]</English>
+		<French>Military garrisons provide [ICON_HAPPY]</French>
+		<German>Military garrisons provide [ICON_HAPPY]</German>
+		<Italian>Military garrisons provide [ICON_HAPPY]</Italian>
+		<Spanish>Military garrisons provide [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_AUTHORITY</Tag>
@@ -268,11 +268,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Tag>
-		<English>Increased great people birth rate; extra happiness in largest cities</English>
-		<French>Increased great people birth rate; extra happiness in largest cities</French>
-		<German>Increased great people birth rate; extra happiness in largest cities</German>
-		<Italian>Increased great people birth rate; extra happiness in largest cities</Italian>
-		<Spanish>Increased great people birth rate; extra happiness in largest cities</Spanish>
+		<English>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</English>
+		<French>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</French>
+		<German>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</German>
+		<Italian>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</Italian>
+		<Spanish>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DICTATORSHIP</Tag>
@@ -288,11 +288,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DICTATORSHIP_STRATEGY</Tag>
-		<English>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary unhappiness</English>
-		<French>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary unhappiness</French>
-		<German>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary unhappiness</German>
-		<Italian>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary unhappiness</Italian>
-		<Spanish>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary unhappiness</Spanish>
+		<English>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</English>
+		<French>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</French>
+		<German>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</German>
+		<Italian>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</Italian>
+		<Spanish>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADITIONALISM</Tag>
@@ -472,11 +472,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_STRATEGY</Tag>
-		<English>No foreign trade routes; increased [ICON_CULTURE] in all cities; unhappiness from state religion</English>
-		<French>No foreign trade routes; increased [ICON_CULTURE] in all cities; unhappiness from state religion</French>
-		<German>No foreign trade routes; increased [ICON_CULTURE] in all cities; unhappiness from state religion</German>
-		<Italian>No foreign trade routes; increased [ICON_CULTURE] in all cities; unhappiness from state religion</Italian>
-		<Spanish>No foreign trade routes; increased [ICON_CULTURE] in all cities; unhappiness from state religion</Spanish>
+		<English>No foreign trade routes; increased [ICON_CULTURE] in all cities; [ICON_UNHAPPY] from state religion</English>
+		<French>No foreign trade routes; increased [ICON_CULTURE] in all cities; [ICON_UNHAPPY] from state religion</French>
+		<German>No foreign trade routes; increased [ICON_CULTURE] in all cities; [ICON_UNHAPPY] from state religion</German>
+		<Italian>No foreign trade routes; increased [ICON_CULTURE] in all cities; [ICON_UNHAPPY] from state religion</Italian>
+		<Spanish>No foreign trade routes; increased [ICON_CULTURE] in all cities; [ICON_UNHAPPY] from state religion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ISOLATIONISM_HELP</Tag>
@@ -540,11 +540,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CUSTOMARY_LAW_STRATEGY</Tag>
-		<English>Temporary unhappiness decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</English>
-		<French>Temporary unhappiness decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</French>
-		<German>Temporary unhappiness decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</German>
-		<Italian>Temporary unhappiness decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</Italian>
-		<Spanish>Temporary unhappiness decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</Spanish>
+		<English>Temporary [ICON_UNHAPPY] decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</English>
+		<French>Temporary [ICON_UNHAPPY] decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</French>
+		<German>Temporary [ICON_UNHAPPY] decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</German>
+		<Italian>Temporary [ICON_UNHAPPY] decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</Italian>
+		<Spanish>Temporary [ICON_UNHAPPY] decays faster; no non-state religion spread; reduced [ICON_COMMERCE] from Hamlet, Cottage, Village, Town</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ADMIRALTY</Tag>
@@ -689,11 +689,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COUNCIL_STRATEGY</Tag>
-		<English>Extra happiness in largest cities; extra [ICON_PRODUCTION] from Statesmen</English>
-		<French>Extra happiness in largest cities; extra [ICON_PRODUCTION] from Statesmen</French>
-		<German>Extra happiness in largest cities; extra [ICON_PRODUCTION] from Statesmen</German>
-		<Italian>Extra happiness in largest cities; extra [ICON_PRODUCTION] from Statesmen</Italian>
-		<Spanish>Extra happiness in largest cities; extra [ICON_PRODUCTION] from Statesmen</Spanish>
+		<English>Extra [ICON_HAPPY] from Plaza; extra [ICON_PRODUCTION] from Statesmen</English>
+		<French>Extra [ICON_HAPPY] from Plaza; extra [ICON_PRODUCTION] from Statesmen</French>
+		<German>Extra [ICON_HAPPY] from Plaza; extra [ICON_PRODUCTION] from Statesmen</German>
+		<Italian>Extra [ICON_HAPPY] from Plaza; extra [ICON_PRODUCTION] from Statesmen</Italian>
+		<Spanish>Extra [ICON_HAPPY] from Plaza; extra [ICON_PRODUCTION] from Statesmen</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY</Tag>
@@ -705,11 +705,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Tag>
-		<English>Military garrisons provide happiness</English>
-		<French>Military garrisons provide happiness</French>
-		<German>Military garrisons provide happiness</German>
-		<Italian>Military garrisons provide happiness</Italian>
-		<Spanish>Military garrisons provide happiness</Spanish>
+		<English>Military garrisons provide [ICON_HAPPY]</English>
+		<French>Military garrisons provide [ICON_HAPPY]</French>
+		<German>Military garrisons provide [ICON_HAPPY]</German>
+		<Italian>Military garrisons provide [ICON_HAPPY]</Italian>
+		<Spanish>Military garrisons provide [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHARTER_COLONY</Tag>
@@ -721,11 +721,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CHARTER_COLONY_STRATEGY</Tag>
-		<English>Extra happiness from State Religion; extra [ICON_COMMERCE] from no improvement</English>
-		<French>Extra happiness from State Religion; extra [ICON_COMMERCE] from no improvement</French>
-		<German>Extra happiness from State Religion; extra [ICON_COMMERCE] from no improvement</German>
-		<Italian>Extra happiness from State Religion; extra [ICON_COMMERCE] from no improvement</Italian>
-		<Spanish>Extra happiness from State Religion; extra [ICON_COMMERCE] from no improvement</Spanish>
+		<English>Extra [ICON_HAPPY] from State Religion; extra [ICON_COMMERCE] from no improvement</English>
+		<French>Extra [ICON_HAPPY] from State Religion; extra [ICON_COMMERCE] from no improvement</French>
+		<German>Extra [ICON_HAPPY] from State Religion; extra [ICON_COMMERCE] from no improvement</German>
+		<Italian>Extra [ICON_HAPPY] from State Religion; extra [ICON_COMMERCE] from no improvement</Italian>
+		<Spanish>Extra [ICON_HAPPY] from State Religion; extra [ICON_COMMERCE] from no improvement</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TRADING_COMPANY</Tag>
@@ -761,11 +761,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMONWEALTH_STRATEGY</Tag>
-		<English>Extra happiness in largest cities; extra [ICON_FOOD] on Village, Town</English>
-		<French>Extra happiness in largest cities; extra [ICON_FOOD] on Village, Town</French>
-		<German>Extra happiness in largest cities; extra [ICON_FOOD] on Village, Town</German>
-		<Italian>Extra happiness in largest cities; extra [ICON_FOOD] on Village, Town</Italian>
-		<Spanish>Extra happiness in largest cities; extra [ICON_FOOD] on Village, Town</Spanish>
+		<English>Extra [ICON_HAPPY] in largest cities; extra [ICON_FOOD] on Village, Town</English>
+		<French>Extra [ICON_HAPPY] in largest cities; extra [ICON_FOOD] on Village, Town</French>
+		<German>Extra [ICON_HAPPY] in largest cities; extra [ICON_FOOD] on Village, Town</German>
+		<Italian>Extra [ICON_HAPPY] in largest cities; extra [ICON_FOOD] on Village, Town</Italian>
+		<Spanish>Extra [ICON_HAPPY] in largest cities; extra [ICON_FOOD] on Village, Town</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_STATE_PARTY</Tag>
@@ -861,11 +861,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CRAFTSMEN_STRATEGY</Tag>
-		<English>faster production of Wonders; extra [ICON_PRODUCTION] from excess happiness</English>
-		<French>faster production of Wonders; extra [ICON_PRODUCTION] from excess happiness</French>
-		<German>faster production of Wonders; extra [ICON_PRODUCTION] from excess happiness</German>
-		<Italian>faster production of Wonders; extra [ICON_PRODUCTION] from excess happiness</Italian>
-		<Spanish>faster production of Wonders; extra [ICON_PRODUCTION] from excess happiness</Spanish>
+		<English>faster production of Wonders; extra [ICON_PRODUCTION] from excess [ICON_HAPPY]</English>
+		<French>faster production of Wonders; extra [ICON_PRODUCTION] from excess [ICON_HAPPY]</French>
+		<German>faster production of Wonders; extra [ICON_PRODUCTION] from excess [ICON_HAPPY]</German>
+		<Italian>faster production of Wonders; extra [ICON_PRODUCTION] from excess [ICON_HAPPY]</Italian>
+		<Spanish>faster production of Wonders; extra [ICON_PRODUCTION] from excess [ICON_HAPPY]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDENTURED_SERVITUDE</Tag>
@@ -1157,11 +1157,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY_STRATEGY</Tag>
-		<English>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</English>
-		<French>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</French>
-		<German>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</German>
-		<Italian>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</Italian>
-		<Spanish>Extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</Spanish>
+		<English>Extra [ICON_HAPPY] in largest cities; extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</English>
+		<French>Extra [ICON_HAPPY] in largest cities; extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</French>
+		<German>Extra [ICON_HAPPY] in largest cities; extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</German>
+		<Italian>Extra [ICON_HAPPY] in largest cities; extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</Italian>
+		<Spanish>Extra [ICON_HAPPY] in largest cities; extra [ICON_HEALTH] in each city; reduced [ICON_SCIENCE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ZEALOTRY</Tag>
@@ -1413,11 +1413,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ORGANIZED_RELIGION_STRATEGY</Tag>
-		<English>faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion; extra [ICON_PRODUCTION] from Great Prophets</English>
-		<French>faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion; extra [ICON_PRODUCTION] from Great Prophets</French>
-		<German>faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion; extra [ICON_PRODUCTION] from Great Prophets</German>
-		<Italian>faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion; extra [ICON_PRODUCTION] from Great Prophets</Italian>
-		<Spanish>faster production of Altar, Pagan Temple; extra happiness from Pagan Temple; unhappiness from State Religion; extra [ICON_PRODUCTION] from Great Prophets</Spanish>
+		<English>Double slots for Priests; faster production of Altar, Pagan Temple; [ICON_UNHAPPY] from State Religion; extra [ICON_COMMERCE] from Great Prophets</English>
+		<French>Double slots for Priests; faster production of Altar, Pagan Temple; [ICON_UNHAPPY] from State Religion; extra [ICON_COMMERCE] from Great Prophets</French>
+		<German>Double slots for Priests; faster production of Altar, Pagan Temple; [ICON_UNHAPPY] from State Religion; extra [ICON_COMMERCE] from Great Prophets</German>
+		<Italian>Double slots for Priests; faster production of Altar, Pagan Temple; [ICON_UNHAPPY] from State Religion; extra [ICON_COMMERCE] from Great Prophets</Italian>
+		<Spanish>Double slots for Priests; faster production of Altar, Pagan Temple; [ICON_UNHAPPY] from State Religion; extra [ICON_COMMERCE] from Great Prophets</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COSMOPOLIS</Tag>
@@ -1445,11 +1445,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ACCULTURATION_STRATEGY</Tag>
-		<English>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</English>
-		<French>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</French>
-		<German>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</German>
-		<Italian>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</Italian>
-		<Spanish>Extra happiness from State Religion; faster production of buildings in cities with your State Religion</Spanish>
+		<English>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</English>
+		<French>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</French>
+		<German>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</German>
+		<Italian>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</Italian>
+		<Spanish>Extra [ICON_HAPPY] from State Religion; faster production of buildings in cities with your State Religion</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SETTLEMENT</Tag>
@@ -1733,11 +1733,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_JUNTA_STRATEGY</Tag>
-		<English>Extra happiness from Barracks, Magazine, Arsenal; extra yields from Great Generals</English>
-		<French>Extra happiness from Barracks, Magazine, Arsenal; extra yields from Great Generals</French>
-		<German>Extra happiness from Barracks, Magazine, Arsenal; extra yields from Great Generals</German>
-		<Italian>Extra happiness from Barracks, Magazine, Arsenal; extra yields from Great Generals</Italian>
-		<Spanish>Extra happiness from Barracks, Magazine, Arsenal; extra yields from Great Generals</Spanish>
+		<English>Extra [ICON_HAPPY] from Barracks, Magazine, Arsenal; extra yields from Great Generals</English>
+		<French>Extra [ICON_HAPPY] from Barracks, Magazine, Arsenal; extra yields from Great Generals</French>
+		<German>Extra [ICON_HAPPY] from Barracks, Magazine, Arsenal; extra yields from Great Generals</German>
+		<Italian>Extra [ICON_HAPPY] from Barracks, Magazine, Arsenal; extra yields from Great Generals</Italian>
+		<Spanish>Extra [ICON_HAPPY] from Barracks, Magazine, Arsenal; extra yields from Great Generals</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PLUTOCRACY</Tag>
@@ -1749,11 +1749,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PLUTOCRACY_STRATEGY</Tag>
-		<English>faster production of Bank, Universitie; extra happiness from Bank</English>
-		<French>faster production of Bank, Universitie; extra happiness from Bank</French>
-		<German>faster production of Bank, Universitie; extra happiness from Bank</German>
-		<Italian>faster production of Bank, Universitie; extra happiness from Bank</Italian>
-		<Spanish>faster production of Bank, Universitie; extra happiness from Bank</Spanish>
+		<English>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</English>
+		<French>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</French>
+		<German>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</German>
+		<Italian>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</Italian>
+		<Spanish>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MINARCHY</Tag>
@@ -1909,11 +1909,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIVISM_STRATEGY</Tag>
-		<English>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra unhappiness in largest cities</English>
-		<French>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra unhappiness in largest cities</French>
-		<German>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra unhappiness in largest cities</German>
-		<Italian>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra unhappiness in largest cities</Italian>
-		<Spanish>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra unhappiness in largest cities</Spanish>
+		<English>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra [ICON_UNHAPPY] in largest cities</English>
+		<French>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra [ICON_UNHAPPY] in largest cities</French>
+		<German>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra [ICON_UNHAPPY] in largest cities</German>
+		<Italian>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra [ICON_UNHAPPY] in largest cities</Italian>
+		<Spanish>Increased [ICON_FOOD] in all cities; reduced [ICON_IMMIGRATION] in all cities; extra [ICON_UNHAPPY] in largest cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EGALITARIANISM</Tag>
@@ -2013,11 +2013,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MERCANTILISM_STRATEGY</Tag>
-		<English>Extra [ICON_COMMERCE] per excess happiness; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</English>
-		<French>Extra [ICON_COMMERCE] per excess happiness; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</French>
-		<German>Extra [ICON_COMMERCE] per excess happiness; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</German>
-		<Italian>Extra [ICON_COMMERCE] per excess happiness; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</Italian>
-		<Spanish>Extra [ICON_COMMERCE] per excess happiness; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</Spanish>
+		<English>Extra [ICON_COMMERCE] per excess [ICON_HAPPY]; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</English>
+		<French>Extra [ICON_COMMERCE] per excess [ICON_HAPPY]; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</French>
+		<German>Extra [ICON_COMMERCE] per excess [ICON_HAPPY]; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</German>
+		<Italian>Extra [ICON_COMMERCE] per excess [ICON_HAPPY]; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</Italian>
+		<Spanish>Extra [ICON_COMMERCE] per excess [ICON_HAPPY]; reduced [ICON_COMMERCE] from trade routes; faster production of Customs House, Wharf</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BUREAUCRACY_STRATEGY</Tag>
