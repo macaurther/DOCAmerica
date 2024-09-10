@@ -295,76 +295,107 @@ def detectMigrateCity(pCity, iProject):
 			iXNew -= 1
 			iYNew += 1
 		
-		data.migrateCity = pCity
-		data.migrateX = iXNew
-		data.migrateY = iYNew
+		data.lMigrateCities.append(pCity)
+		data.lMigrateX.append(iXNew)
+		data.lMigrateY.append(iYNew)
 		
-@handler("EndPlayerTurn")
-def migrateCity(iGameTurn, iPlayer):
+@handler("EndGameTurn")
+def lMigrateCities(iGameTurn):
 	# Check if there's a city to migrate
-	if data.migrateCity == None:
+	if data.lMigrateCities == []:
 		return
 	
-	# Check to make sure the city in queue to migrate is this player's city
-	if data.migrateCity.getOwner() != iPlayer:
-		# If it's not right, then we missed the migration somehow.
-		print("WARNING - Migration missed for iPlayer: " + str(data.migrateCity.getOwner()) + " on iPlayer's turn: " + str(iPlayer))
-		# Clear migration data
-		data.migrateCity = None
-		data.migrateX = -1
-		data.migrateY = -1
-		return
-	
-	iCiv = civ(iPlayer)
-	pPlayer = player(iPlayer)
-	pCity = data.migrateCity
-	iXNew = data.migrateX
-	iYNew = data.migrateY
-	
-	# Store temp city data
-	# Don't get things like GameTurnFounded or GameTurnAcquired, we want to reset those
-	iPopulation = pCity.getPopulation()
-	iNumCityBuildings = pCity.getNumBuildings()
-	lBuildings = []
-	for i in range(iNumBuildings - 1):
-		if pCity.hasBuilding(i):
-			lBuildings.append(i)
-			if len(lBuildings) == iNumCityBuildings + 1:
-				break
-	iCulture = pCity.getCulture(pCity.getOwner())
-	#sName = pCity.getName()	# Actually, don't copy name, let it take the name from the city name manager
+	for iIndex, pCity in enumerate(data.lMigrateCities):
+		iXNew = data.lMigrateX[iIndex]
+		iYNew = data.lMigrateY[iIndex]
+		
+		iPlayer = pCity.getOwner()
+		iCiv = civ(iPlayer)
+		pPlayer = player(iPlayer)
+		
+		# Store temp city data
+		# Don't get things like GameTurnFounded or GameTurnAcquired, we want to reset those
+		iPopulation = pCity.getPopulation()
+		iNumCityBuildings = pCity.getNumBuildings()
+		lBuildings = []
+		for i in range(iNumBuildings - 1):
+			if pCity.hasBuilding(i):
+				lBuildings.append(i)
+				if len(lBuildings) == iNumCityBuildings + 1:
+					break
+		iCulture = pCity.getCulture(pCity.getOwner())
+		
+		# Get free specialists
+		dFreeSpecialists = {}
+		for iSpecialist in range(iNumSpecialists):
+			iCount = pCity.getFreeSpecialistCount(iSpecialist)
+			if iCount > 0:
+				dFreeSpecialists[iSpecialist] = iCount
+		
+		# Get local temp unhappiness
+		iHurryAngerTimer = pCity.getHurryAngerTimer()
+		iConscriptAngerTimer = pCity.getConscriptAngerTimer()
+		iDefyAngerTimer = pCity.getDefyResolutionAngerTimer()
+		
+		# Copy religions
+		lReligions = []
+		for iReligion in range(iNumReligions):
+			if pCity.isHasReligion(iReligion):
+				lReligions.append(iReligion)
+		
+		#sName = pCity.getName()	# Actually, don't copy name, let it take the name from the city name manager
 
-	# Remove old city
-	pPlayer.disband(pCity)
-	pCity.plot().setRouteType(-1)
-	pCity.plot().setImprovementType(-1)
-	
-	# Found city
-	plot(iXNew, iYNew).setOwner(iPlayer)
-	pPlayer.found(iXNew, iYNew)
-	pNewCity = city(iXNew, iYNew)
-	if pNewCity:
-		#pNewCity.setName(sName, False)	# Actually, don't copy name, let it take the name from the city name manager
-		pNewCity.setPopulation(iPopulation + 1)
+		# Remove old city
+		pPlayer.disband(pCity)
+		pCity.plot().setRouteType(-1)
+		pCity.plot().setImprovementType(-1)
+		
+		# Found city
+		plot(iXNew, iYNew).setOwner(iPlayer)
+		pPlayer.found(iXNew, iYNew)
+		pNewCity = city(iXNew, iYNew)
+		if pNewCity:
+			#pNewCity.setName(sName, False)	# Actually, don't copy name, let it take the name from the city name manager
+			pNewCity.setPopulation(iPopulation + 1)
 
-		# Assign buildings to new city
-		for iBuilding in lBuildings:
-			if not pNewCity.isHasRealBuilding(iBuilding):
-				pNewCity.setHasRealBuilding(iBuilding, True)
-	
-		# Assign culture to new city
-		if civ(iPlayer) == iLakota:
-			iCulture += 10 * (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
-		pNewCity.setCulture(iPlayer, iCulture, True)
-	else:
-		print("WARNING - Migration failed for iPlayer: " + str(iPlayer))
-	
-	events.fireEvent("migration", iPlayer, 1)
+			# Assign buildings to new city
+			for iBuilding in lBuildings:
+				if not pNewCity.isHasRealBuilding(iBuilding):
+					pNewCity.setHasRealBuilding(iBuilding, True)
+				# If capital was migrated, make sure Palace didn't end up in another city (janky, but how else to do it?)
+				if iBuilding in [iPalace, iChieftansHut, iGovernorsMansion, iCapitol]:
+					for pOtherCity in cities.owner(iPlayer):
+						if pOtherCity.isHasRealBuilding(iBuilding) and not (pOtherCity.getX() == pNewCity.getX() and pOtherCity.getY() == pNewCity.getY()):
+							pOtherCity.setHasRealBuilding(iBuilding, False)
+		
+			# Assign culture to new city
+			if civ(iPlayer) == iLakota:
+				iCulture += 10 * (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
+			pNewCity.setCulture(iPlayer, iCulture, True)
+			
+			# Assign free specialists
+			for iSpecialist in dFreeSpecialists:
+				pNewCity.setFreeSpecialistCount(iSpecialist, dFreeSpecialists[iSpecialist]) 
+			
+			# Assign local temp unhappiness
+			pNewCity.changeHurryAngerTimer(iHurryAngerTimer)
+			pNewCity.changeConscriptAngerTimer(iConscriptAngerTimer)
+			pNewCity.changeDefyResolutionAngerTimer(iDefyAngerTimer)
+			
+			# Assign religions
+			for iReligion in lReligions:
+				pNewCity.setHasReligion(iReligion, True, False, False)
+			
+			
+		else:
+			print("WARNING - Migration failed for iPlayer: " + str(iPlayer))
+		
+		events.fireEvent("migration", iPlayer, 1)
 
 	# Clear migration data
-	data.migrateCity = None
-	data.migrateX = -1
-	data.migrateY = -1
+	data.lMigrateCities = []
+	data.lMigrateX = []
+	data.lMigrateY = []
 
 ### IMPLEMENTATIONS ###
 

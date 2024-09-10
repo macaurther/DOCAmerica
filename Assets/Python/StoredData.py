@@ -301,9 +301,9 @@ class GameData:
 		self.dRenamedCities = {}
 		
 		# Migration
-		self.migrateCity = None
-		self.migrateX = -1
-		self.migrateY = -1
+		self.lMigrateCities = []
+		self.lMigrateX = []
+		self.lMigrateY = []
 		
 		# Tribe creation
 		self.iTribeGenerationTurn = -1

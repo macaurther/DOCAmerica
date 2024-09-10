@@ -4940,13 +4940,18 @@ void CvTeam::changeProjectCount(ProjectTypes eIndex, int iChange)
 
 			if (GC.getGameINLINE().isFinalInitialized() && !(gDLL->GetWorldBuilderMode()))
 			{
-				for (iI = 0; iI < MAX_PLAYERS; iI++)
+				// MacAurther: Don't announce migrations to the world
+				if (eIndex >= PROJECT_MIGRATE_N && eIndex <= PROJECT_MIGRATE_NW);
+				else
 				{
-					if (GET_PLAYER((PlayerTypes)iI).isAlive())
+					for (iI = 0; iI < MAX_PLAYERS; iI++)
 					{
-						//szBuffer = gDLL->getText("TXT_KEY_MISC_SOMEONE_HAS_COMPLETED", getName().GetCString(), GC.getProjectInfo(eIndex).getTextKeyWide()); //Rhye
-						szBuffer = gDLL->getText("TXT_KEY_MISC_SOMEONE_HAS_COMPLETED", GET_PLAYER((PlayerTypes)getID()).getCivilizationShortDescription(), GC.getProjectInfo(eIndex).getTextKeyWide()); //Rhye
-						gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PROJECT_COMPLETED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+						if (GET_PLAYER((PlayerTypes)iI).isAlive())
+						{
+							//szBuffer = gDLL->getText("TXT_KEY_MISC_SOMEONE_HAS_COMPLETED", getName().GetCString(), GC.getProjectInfo(eIndex).getTextKeyWide()); //Rhye
+							szBuffer = gDLL->getText("TXT_KEY_MISC_SOMEONE_HAS_COMPLETED", GET_PLAYER((PlayerTypes)getID()).getCivilizationShortDescription(), GC.getProjectInfo(eIndex).getTextKeyWide()); //Rhye
+							gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PROJECT_COMPLETED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+						}
 					}
 				}
 			}
