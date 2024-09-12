@@ -268,11 +268,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Tag>
-		<English>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</English>
-		<French>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</French>
-		<German>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</German>
-		<Italian>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</Italian>
-		<Spanish>Increased great people birth rate; extra [ICON_HAPPY] in largest cities</Spanish>
+		<English>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</English>
+		<French>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</French>
+		<German>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</German>
+		<Italian>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</Italian>
+		<Spanish>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DICTATORSHIP</Tag>
@@ -617,19 +617,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATION_STRATEGY</Tag>
-		<English>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</English>
-		<French>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</French>
-		<German>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</German>
-		<Italian>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</Italian>
-		<Spanish>Lower maintenance costs from number of cities; no extra stability or instability from Civic combinations</Spanish>
+		<English>No Anarchy when changing Civics; no extra stability or instability from Civic combinations; Extra [ICON_HAPPY] in 4 largest cities</English>
+		<French>No Anarchy when changing Civics; no extra stability or instability from Civic combinations; Extra [ICON_HAPPY] in 4 largest cities</French>
+		<German>No Anarchy when changing Civics; no extra stability or instability from Civic combinations; Extra [ICON_HAPPY] in 4 largest cities</German>
+		<Italian>No Anarchy when changing Civics; no extra stability or instability from Civic combinations; Extra [ICON_HAPPY] in 4 largest cities</Italian>
+		<Spanish>No Anarchy when changing Civics; no extra stability or instability from Civic combinations; Extra [ICON_HAPPY] in 4 largest cities</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATION_HELP</Tag>
-		<English>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</English>
-		<French>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</French>
-		<German>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</German>
-		<Italian>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</Italian>
-		<Spanish>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</Spanish>
+		<English>[ICON_BULLET]No extra stability or instability from Civic combinations
+[ICON_BULLET]No Anarchy when changing Civics</English>
+		<French>[ICON_BULLET]No extra stability or instability from Civic combinations
+[ICON_BULLET]No Anarchy when changing Civics</French>
+		<German>[ICON_BULLET]No extra stability or instability from Civic combinations
+[ICON_BULLET]No Anarchy when changing Civics</German>
+		<Italian>[ICON_BULLET]No extra stability or instability from Civic combinations
+[ICON_BULLET]No Anarchy when changing Civics</Italian>
+		<Spanish>[ICON_BULLET]No extra stability or instability from Civic combinations
+[ICON_BULLET]No Anarchy when changing Civics</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOVERNORS</Tag>
@@ -797,11 +802,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COMMON_LAW_STRATEGY</Tag>
-		<English>Extra [ICON_COMMERCE] from specialists; faster production of Constabulary, Jail, Courthouse, Library</English>
-		<French>Extra [ICON_COMMERCE] from specialists; faster production of Constabulary, Jail, Courthouse, Library</French>
-		<German>Extra [ICON_COMMERCE] from specialists; faster production of Constabulary, Jail, Courthouse, Library</German>
-		<Italian>Extra [ICON_COMMERCE] from specialists; faster production of Constabulary, Jail, Courthouse, Library</Italian>
-		<Spanish>Extra [ICON_COMMERCE] from specialists; faster production of Constabulary, Jail, Courthouse, Library</Spanish>
+		<English>Faster production of Constabulary, Jail, Courthouse, Library</English>
+		<French>Faster production of Constabulary, Jail, Courthouse, Library</French>
+		<German>Faster production of Constabulary, Jail, Courthouse, Library</German>
+		<Italian>Faster production of Constabulary, Jail, Courthouse, Library</Italian>
+		<Spanish>Faster production of Constabulary, Jail, Courthouse, Library</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ARISTOCRACY</Tag>
@@ -845,11 +850,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FEDERALISM_STRATEGY</Tag>
-		<English>At least one slot for Statesman; can hurry [ICON_PRODUCTION] with gold; extra [ICON_PRODUCTION] on Town; improvements upgrade without being worked</English>
-		<French>At least one slot for Statesman; can hurry [ICON_PRODUCTION] with gold; extra [ICON_PRODUCTION] on Town; improvements upgrade without being worked</French>
-		<German>At least one slot for Statesman; can hurry [ICON_PRODUCTION] with gold; extra [ICON_PRODUCTION] on Town; improvements upgrade without being worked</German>
-		<Italian>At least one slot for Statesman; can hurry [ICON_PRODUCTION] with gold; extra [ICON_PRODUCTION] on Town; improvements upgrade without being worked</Italian>
-		<Spanish>At least one slot for Statesman; can hurry [ICON_PRODUCTION] with gold; extra [ICON_PRODUCTION] on Town; improvements upgrade without being worked</Spanish>
+		<English>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</English>
+		<French>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</French>
+		<German>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</German>
+		<Italian>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</Italian>
+		<Spanish>-50% distance maintenance from cities; can hurry [ICON_PRODUCTION] with gold; improvements upgrade without being worked; double production towards meeting houses</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CRAFTSMEN</Tag>
@@ -901,11 +906,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_INDUSTRIALISM_STRATEGY</Tag>
-		<English>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city</English>
-		<French>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city</French>
-		<German>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city</German>
-		<Italian>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city</Italian>
-		<Spanish>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city</Spanish>
+		<English>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city; +2 [ICON_PRODUCTION] from towns</English>
+		<French>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city; +2 [ICON_PRODUCTION] from towns</French>
+		<German>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city; +2 [ICON_PRODUCTION] from towns</German>
+		<Italian>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city; +2 [ICON_PRODUCTION] from towns</Italian>
+		<Spanish>More Engineer slots; extra [ICON_PRODUCTION] for specialists; less health in every city; +2 [ICON_PRODUCTION] from towns</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR</Tag>
@@ -973,11 +978,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONSUMERISM_STRATEGY</Tag>
-		<English>Faster growth for Cottages, Hamlets, Villages; extra [ICON_COMMERCE] from Villages, Towns</English>
-		<French>Faster growth for Cottages, Hamlets, Villages; extra [ICON_COMMERCE] from Villages, Towns</French>
-		<German>Faster growth for Cottages, Hamlets, Villages; extra [ICON_COMMERCE] from Villages, Towns</German>
-		<Italian>Faster growth for Cottages, Hamlets, Villages; extra [ICON_COMMERCE] from Villages, Towns</Italian>
-		<Spanish>Faster growth for Cottages, Hamlets, Villages; extra [ICON_COMMERCE] from Villages, Towns</Spanish>
+		<English>Extra [ICON_COMMERCE] from Villages, Towns</English>
+		<French>Extra [ICON_COMMERCE] from Villages, Towns</French>
+		<German>Extra [ICON_COMMERCE] from Villages, Towns</German>
+		<Italian>Extra [ICON_COMMERCE] from Villages, Towns</Italian>
+		<Spanish>Extra [ICON_COMMERCE] from Villages, Towns</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HAVEN</Tag>
@@ -1861,11 +1866,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROTECTIONISM_STRATEGY</Tag>
-		<English>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes</English>
-		<French>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes</French>
-		<German>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes</German>
-		<Italian>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes</Italian>
-		<Spanish>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes</Spanish>
+		<English>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes; extra [ICON_COMMERCE] from specialists</English>
+		<French>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes; extra [ICON_COMMERCE] from specialists</French>
+		<German>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes; extra [ICON_COMMERCE] from specialists</German>
+		<Italian>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes; extra [ICON_COMMERCE] from specialists</Italian>
+		<Spanish>Reduced [ICON_COMMERCE] from trade routes; increase [ICON_FOOD] and [ICON_PRODUCTION] from trade routes; extra [ICON_COMMERCE] from specialists</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_REVOLUTION</Tag>
