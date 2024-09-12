@@ -256,7 +256,7 @@
 			<Help>TXT_KEY_CIVIC_CONFEDERACY_NATIVE_HELP</Help>
 			<TechPrereq>TECH_CODICES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/ConfederacyNative.dds</Button>
-			<iAnarchyLength>1</iAnarchyLength>
+			<iAnarchyLength>0</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
 			<iWarWearinessModifier>100</iWarWearinessModifier>
@@ -1867,7 +1867,7 @@
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<iGreatPeopleRateModifier>100</iGreatPeopleRateModifier>
-			<iLargestCityHappiness>2</iLargestCityHappiness>
+			<iImprovementUpgradeRateModifier>100</iImprovementUpgradeRateModifier>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_PRESIDENT</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1928,13 +1928,8 @@
 			<TechPrereq>TECH_NEWSPAPERS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/CommonLaw.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
+			<Upkeep>UPKEEP_LOW</Upkeep>
 			<iCultureGroup>2</iCultureGroup>
-			<SpecialistExtraYields>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>1</iYield>
-			</SpecialistExtraYields>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
 					<BuildingType>BUILDINGCLASS_CONSTABULARY</BuildingType>
@@ -1965,7 +1960,7 @@
 			<Button>,Art/Interface/Buttons/Civics/ConfederacyNation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
-			<iNumCitiesMaintenanceModifier>-25</iNumCitiesMaintenanceModifier>
+			<iLargestCityHappiness>2</iLargestCityHappiness>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 		</CivicInfo>
 		<CivicInfo>
@@ -1996,30 +1991,21 @@
 			<Button>Art/Interface/Buttons/Civics/Federalism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
-			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bFreeImprovementUpgrade>1</bFreeImprovementUpgrade>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
-					<ImprovementYields>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-						<iYield>0</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
-			<MinimalSpecialists>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-			</MinimalSpecialists>
+			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
 			<Hurrys>
 				<Hurry>
 					<HurryType>HURRY_GOLD_FEDERALISM</HurryType>
 					<bHurry>1</bHurry>
 				</Hurry>
 			</Hurrys>
+			<BuildingProductionModifiers>
+				<BuildingProductionModifier>
+					<BuildingType>BUILDINGCLASS_MEETING_HALL</BuildingType>
+					<iProductionModifier>100</iProductionModifier>
+				</BuildingProductionModifier>
+			</BuildingProductionModifiers>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ADMINISTRATION</CivicOptionType>
@@ -2148,6 +2134,16 @@
 					<bValid>1</bValid>
 				</SpecialistValid>
 			</SpecialistValids>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+						<iYield>0</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -2354,6 +2350,11 @@
 				<iYield>50</iYield>
 				<iYield>-50</iYield>
 			</TradeYieldModifiers>
+			<SpecialistExtraYields>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</SpecialistExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -2384,7 +2385,6 @@
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
-			<iImprovementUpgradeRateModifier>100</iImprovementUpgradeRateModifier>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
