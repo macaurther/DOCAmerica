@@ -625,11 +625,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATION_HELP</Tag>
-		<English>[ICON_BULLET]No extra stability or instability Civic combinations</English>
-		<French>[ICON_BULLET]No extra stability or instability Civic combinations</French>
-		<German>[ICON_BULLET]No extra stability or instability Civic combinations</German>
-		<Italian>[ICON_BULLET]No extra stability or instability Civic combinations</Italian>
-		<Spanish>[ICON_BULLET]No extra stability or instability Civic combinations</Spanish>
+		<English>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</English>
+		<French>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</French>
+		<German>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</German>
+		<Italian>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</Italian>
+		<Spanish>[ICON_BULLET]No extra stability or instability from Civic combinations; No Anarchy when changing Civics</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GOVERNORS</Tag>
