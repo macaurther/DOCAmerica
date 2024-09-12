@@ -318,7 +318,7 @@ def lMigrateCities(iGameTurn):
 		iPopulation = pCity.getPopulation()
 		iNumCityBuildings = pCity.getNumBuildings()
 		lBuildings = []
-		for i in range(iNumBuildings - 1):
+		for i in range(iNumBuildingsPaganTemples):
 			if pCity.hasBuilding(i):
 				lBuildings.append(i)
 				if len(lBuildings) == iNumCityBuildings + 1:
@@ -361,6 +361,7 @@ def lMigrateCities(iGameTurn):
 			# Assign buildings to new city
 			for iBuilding in lBuildings:
 				if not pNewCity.isHasRealBuilding(iBuilding):
+					print("Setting building in New City: " + str(iBuilding))
 					pNewCity.setHasRealBuilding(iBuilding, True)
 				# If capital was migrated, make sure Palace didn't end up in another city (janky, but how else to do it?)
 				if iBuilding in [iPalace, iChieftansHut, iGovernorsMansion, iCapitol]:

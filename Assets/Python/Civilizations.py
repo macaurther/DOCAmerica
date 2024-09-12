@@ -412,7 +412,7 @@ lCivilizations = [
 dStartingUnits = CivDict({
 	iTeotihuacan: {
 		iSettle: 1,
-		iWork: 3,
+		iWork: 1,
 		iMilitia: 2,
 	},
 	iTiwanaku: {
@@ -424,13 +424,13 @@ dStartingUnits = CivDict({
 		iSettle: 2,
 		iWork: 2,
 		iMilitia: 2,
-		iSiege: 1,
+		iDefend: 1,
 	},
 	iMississippi: {
 		iSettle: 2,
 		iWork: 1,
 		iMilitia: 1,
-		iSiege: 1,
+		iDefend: 1,
 	},
 	iPuebloan: {
 		iSettle: 1,

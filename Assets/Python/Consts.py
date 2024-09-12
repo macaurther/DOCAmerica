@@ -112,7 +112,7 @@ iLime = 100
 iNumMinorCities = 6
 
 # scripted conquerors
-iNumConquests = 21
+iNumConquests = 23
 
 lNeighbours = [
 	(iMaya, iAztecs),
@@ -560,6 +560,7 @@ iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iWestPoint,	iFortMcHe
 iEllisIsland,	iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,iHooverDam,
 iAlcatraz,		iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
 
+
 iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
 
 iTemple = iJewishTemple #generic
@@ -570,7 +571,15 @@ iShrine = iJewishShrine #generic
 iFirstWonder = iFloatingGardens
 
 iPlague = iNumBuildings
-iNumBuildingsPlague = iNumBuildings+1
+iNumBuildingsPlague = iPlague+1
+
+iNumPaganTemples = 12
+# Pagan Temples (12)
+# 0				1				2				3				4				5				6				7				8				9
+(iAtuaShrine,	iTeotlStepPyramid,iAsatruHof,	iDruidicNemeton,iPerunShrine,	iYorubaTemple,	iIntiTemple,	iMidewiwinMidewigaan,iAngakkuqQargi,iGaiwiioLonghouse,
+iKachinaPithouse,iWocekiyaShrine) = range(iNumPaganTemples)
+
+iNumBuildingsPaganTemples = iNumBuildingsPlague + iNumPaganTemples
 
 #Civics
 iNumCivics = 126

@@ -133,6 +133,10 @@ iAmericaMexicoYear = 1846
 tAmericaMexicoTL = (14, 72)
 tAmericaMexicoBR = (25, 80)
 
+iAmericaLakotkaYear = 1875
+tAmericaLakotkaTL = (19, 89)
+tAmericaLakotkaBR = (31, 95)
+
 iAmericaCubaYear = 1898
 tAmericaCubaTL = (27, 58)
 tAmericaCubaBR = (36, 63)
@@ -140,7 +144,16 @@ tAmericaCubaBR = (36, 63)
 # following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
 iConquestNum, tConquestAmericaCanada = processConquest(iConquestNum, iAmerica, iCanada, tAmericaCanadaTL, tAmericaCanadaBR, 2, iAmericaCanadaYear, 10)
 iConquestNum, tConquestAmericaMexico = processConquest(iConquestNum, iAmerica, iMexico, tAmericaMexicoTL, tAmericaMexicoBR, 4, iAmericaMexicoYear, 10)
+iConquestNum, tConquestAmericaLakota = processConquest(iConquestNum, iAmerica, iLakota, tAmericaLakotkaTL, tAmericaLakotkaBR, 2, iAmericaLakotkaYear, 10)
 iConquestNum, tConquestAmericaCuba = processConquest(iConquestNum, iAmerica, iSpain, tAmericaCubaTL, tAmericaCubaBR, 3, iAmericaCubaYear, 10)
+
+# Canada ------------------------------------------------------------------------------------------------------------------------
+iCanadaLakotaYear = 1880
+tCanadaLakotaTL = (19, 96)
+tCanadaLakotaBR = (28, 101)
+
+# following setup: iPlayer, iPreferredTarget, TL, BR, iNumTargets, iStartYear, iTurnInterval
+iConquestNum, tConquestCanadaLakota = processConquest(iConquestNum, iCanada, iLakota, tCanadaLakotaTL, tCanadaLakotaBR, 2, iCanadaLakotaYear, 10)
 
 
 lConquests = [tConquestIncaWari, tConquestIncaTiwanaku, tConquestIncaChimu,
@@ -148,7 +161,8 @@ tConquestSpainAztecs, tConquestSpainPurepechans, tConquestSpainZapotec, tConques
 tConquestEnglandNetherlands, tConquestEngland1812Washington, tConquestEngland1812NewOrleans, 
 tConquestFranceMexico,
 tConquestNetherlandsNorse,
-tConquestAmericaCanada, tConquestAmericaMexico, tConquestAmericaCuba]
+tConquestAmericaCanada, tConquestAmericaMexico, tConquestAmericaLakota, tConquestAmericaCuba,
+tConquestCanadaLakota]
 
 
 @handler("GameStart")
