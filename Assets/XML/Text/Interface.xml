@@ -4033,12 +4033,28 @@
 		<Spanish>The colonies are in open rebellion! The Crown has sent additional forces to quell the rebels.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMMIGRATION_HINT</Tag>
+		<Tag>TXT_KEY_POPUP_IMMIGRATION_TUTORIAL</Tag>
 		<English>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</English>
 		<French>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</French>
 		<German>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</German>
 		<Italian>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</Italian>
 		<Spanish>You have generated Immigration ([ICON_IMMIGRATION])! Press "M" or press the Immigration Manager button in the top left to hire Immigrant units. Land units require you have an open cargo slot on either the East or West edges of the map.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_OPEN_IMMIGRATION_MANAGER</Tag>
+		<English>Open Immigration Manager</English>
+		<French>Open Immigration Manager</French>
+		<German>Open Immigration Manager</German>
+		<Italian>Open Immigration Manager</Italian>
+		<Spanish>Open Immigration Manager</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACK_IMMIGRATION_MANAGER</Tag>
+		<English>Dismiss</English>
+		<French>Dismiss</French>
+		<German>Dismiss</German>
+		<Italian>Dismiss</Italian>
+		<Spanish>Dismiss</Spanish>
 	</TEXT>
 	
 	

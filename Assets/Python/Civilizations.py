@@ -213,7 +213,7 @@ lCivilizations = [
 		iMississippi,
 		iGold=25,
 		lCivics=[iChiefdom1, iCustomaryLaw1, iDiffusion1],
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning, iDivination).without(iLandmarks, iPathfinding, iLinguistics, iLocalization)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning, iDivination, iSeafaring).without(iLandmarks, iPathfinding, iLinguistics, iLocalization)
 	),
 	Civilization(
 		iPuebloan,

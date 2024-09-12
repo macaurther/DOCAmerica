@@ -321,6 +321,8 @@ public:
 	int getGoldPerTurn() const;																																						// Exposed to Python
 
 	// MacAurther
+	void immigrationTutorial(CvWString szText = "", bool bFront = false); // MacAurther
+
 	DllExport int getImmigration() const;																																				// Exposed to Python
 	DllExport void setImmigration(int iNewValue);																													// Exposed to Python
 	DllExport void changeImmigration(int iChange);																													// Exposed to Python
@@ -1391,6 +1393,8 @@ public:
 	bool m_bTurnPlayed;
 
 	// MacAurther
+	void setImmigrationTutorial(bool bNewValue);
+	bool isImmigrationTutorial() const;
 	int getRegionPowers() const;
 	int getFortRange() const;
 	int getContactCost() const;
@@ -1535,6 +1539,7 @@ protected:
 	bool m_bStrike;
 	bool m_bHuman;
 	bool m_bBirthProtected; // Leoreth
+	bool m_bImmigrationTutorial; // MacAurther
 
 
 /************************************************************************************************/

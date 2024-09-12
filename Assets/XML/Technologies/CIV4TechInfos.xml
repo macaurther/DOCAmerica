@@ -1163,7 +1163,7 @@
 				</Flavor>
 			</Flavors>
 			<OrPreReqs>
-				<PrereqTech>TECH_ARITHMETICS</PrereqTech>
+				<PrereqTech>TECH_PROPERTY</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs>
 				<PrereqTech>TECH_SEAFARING</PrereqTech>

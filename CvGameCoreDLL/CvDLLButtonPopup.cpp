@@ -793,6 +793,14 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		}
 		break;
 
+	// MacAurther
+	case BUTTONPOPUP_IMMIGRATION_TUTORIAL:
+		if (pPopupReturn->getButtonClicked() != -1)
+		{
+			gDLL->getPythonIFace()->callFunction(PYScreensModule, "showImmigrationManager");
+		}
+		break;
+
 	default:
 		FAssert(false);
 		break;
@@ -1008,6 +1016,9 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 		break;
 	case BUTTONPOPUP_PERSECUTION:
 		bLaunched = launchPersecutionPopup(pPopup, info);
+		break;
+	case BUTTONPOPUP_IMMIGRATION_TUTORIAL:
+		bLaunched = launchImmigrationTutorialPopup(pPopup, info);
 		break;
 	default:
 		FAssert(false);
@@ -2784,6 +2795,25 @@ bool CvDLLButtonPopup::launchPersecutionPopup(CvPopup* pPopup, CvPopupInfo &info
 	}
 
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NEVER_MIND"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(), -1, WIDGET_GENERAL);
+
+	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
+
+	return true;
+}
+
+bool CvDLLButtonPopup::launchImmigrationTutorialPopup(CvPopup* pPopup, CvPopupInfo &info)
+{
+	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	if (ePlayer == NO_PLAYER)
+	{
+		return false;
+	}
+
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_IMMIGRATION_TUTORIAL"));
+
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_OPEN_IMMIGRATION_MANAGER"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_IMMIGRATION_MANAGER")->getPath(), 0, WIDGET_GENERAL);
+
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_ACK_IMMIGRATION_MANAGER"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(), -1, WIDGET_GENERAL);
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
 

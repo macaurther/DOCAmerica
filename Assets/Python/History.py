@@ -56,15 +56,6 @@ def setupMexicoCity(city):
 				city.setHasRealBuilding(monastery(iStateReligion), True)
 
 
-### BEGIN ACTIVE PLAYER TURN ###
-
-@handler("BeginActivePlayerTurn")
-def immigrationHint(iPlayer, iGameTurn):
-	if not data.iImmigraionHintGiven and gc.getPlayer(iPlayer).getImmigration() > 0:
-		message(iPlayer, 'TXT_KEY_IMMIGRATION_HINT')
-		data.iImmigraionHintGiven = True
-
-
 ### BEGIN GAME TURN ###
 
 @handler("BeginGameTurn")

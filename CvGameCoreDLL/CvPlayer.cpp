@@ -566,6 +566,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_bFoundedFirstCity = false;
 	m_bStrike = false;
 	m_bBirthProtected = false; // Leoreth
+	m_bImmigrationTutorial = false; // MacAurther
 
 	m_bTurnPlayed = false;
 
@@ -3086,6 +3087,15 @@ void CvPlayer::doTurn()
 		changeNoAnarchyTurns(-1);
 	}
 
+	// MacAurther: If this is the first time this human player has generated Immigration, give them a tutorial popup
+	if (!isImmigrationTutorial() && getImmigration() > 0)
+	{
+		CvWString szBuffer = gDLL->getText("TXT_KEY_POPUP_IMMIGRATION_TUTORIAL");
+		immigrationTutorial(szBuffer);
+
+		setImmigrationTutorial(true);
+	}
+
 	CvEventReporter::getInstance().endPlayerTurn( GC.getGameINLINE().getGameTurn(),  getID());
 	m_bTurnPlayed = 1; //Rhye
 }
@@ -3592,7 +3602,6 @@ void CvPlayer::chooseTech(int iDiscover, CvWString szText, bool bFront)
 		gDLL->getInterfaceIFace()->addPopup(pInfo, getID(), false, bFront);
 	}
 }
-
 
 int CvPlayer::calculateScore(bool bFinal, bool bVictory)
 {
@@ -9167,11 +9176,20 @@ int CvPlayer::getGoldPerTurn() const
 }
 
 // MacAurther
+void CvPlayer::immigrationTutorial(CvWString szText, bool bFront)
+{
+	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_IMMIGRATION_TUTORIAL);
+	if (NULL != pInfo)
+	{
+		pInfo->setText(szText);
+		gDLL->getInterfaceIFace()->addPopup(pInfo, getID(), false, bFront);
+	}
+}
+
 int CvPlayer::getImmigration() const
 {
 	return m_iImmigration;
 }
-
 
 void CvPlayer::setImmigration(int iNewValue)
 {
@@ -13869,7 +13887,7 @@ int CvPlayer::getSpecialistExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex
 	FAssertMsg(eIndex2 >= 0, "eIndex2 expected to be >= 0");
 	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 expected to be < NUM_YIELD_TYPES");
 
-	// Leoreth: limit additional food from various sources
+	// Leoreth: limit additional food from various sources -> MacAurther: Only apply this to slaves and satellites
 	if (eIndex2 == YIELD_FOOD)
 	{
 		// satellites and slaves cannot benefit from bonus food effects
@@ -13877,9 +13895,6 @@ int CvPlayer::getSpecialistExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex
 		{
 			return 0;
 		}
-
-		// for all other specialists extra food is limited to +1
-		return std::min(1, m_ppaaiSpecialistExtraYield[eIndex1][eIndex2]);
 	}
 	// MacAurther: Spanish UP: +1 Gold from Slave Miners
 	if (eIndex1 == SPECIALIST_SLAVE_MINER && eIndex2 == YIELD_COMMERCE && getCivilizationType() == SPAIN)
@@ -18566,6 +18581,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_bFoundedFirstCity);
 	pStream->Read(&m_bStrike);
 	pStream->Read(&m_bBirthProtected); // Leoreth
+	pStream->Read(&m_bImmigrationTutorial); // MacAurther
 
 	//Rhye (jdog) -  start ---------------------
 	//pStream->ReadString(m_szName);
@@ -19001,6 +19017,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_bFoundedFirstCity);
 	pStream->Write(m_bStrike);
 	pStream->Write(m_bBirthProtected);
+	pStream->Write(m_bImmigrationTutorial);
 
 
 	//Rhye (jdog) -  start ---------------------
@@ -25505,6 +25522,16 @@ int CvPlayer::getShrineIncomeLimit() const
 	iShrineIncomeLimit += getShrineIncomeLimitChange();
 	
 	return iShrineIncomeLimit;
+}
+
+void CvPlayer::setImmigrationTutorial(bool bNewValue)
+{
+	m_bImmigrationTutorial = bNewValue;
+}
+
+bool CvPlayer::isImmigrationTutorial() const
+{
+	return m_bImmigrationTutorial;
 }
 
 int CvPlayer::getRegionPowers() const

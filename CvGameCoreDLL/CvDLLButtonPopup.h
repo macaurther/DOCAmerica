@@ -67,6 +67,8 @@ private:
 	bool launchLaunchPopup(CvPopup* pPopup, CvPopupInfo &info);
 	bool launchFoundReligionPopup(CvPopup* pPopup, CvPopupInfo &info);
 	bool launchPersecutionPopup(CvPopup* pPopup, CvPopupInfo &info);
+	bool launchImmigrationTutorialPopup(CvPopup* pPopup, CvPopupInfo &info);
+	
 };
 
 #endif
