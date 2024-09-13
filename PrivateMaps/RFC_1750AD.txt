@@ -1578,7 +1578,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
-		CityName=Cordoba
+		CityName=C&#243;rdoba
 		CityPopulation=2
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_TRADING_POST
@@ -2766,7 +2766,7 @@ BeginPlot
 	EndUnit
 	BeginCity
 		CityOwner=CIVILIZATION_SPAIN
-		CityName=Cancun
+		CityName=Canc&#250;n
 		CityPopulation=10
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_MARKET
