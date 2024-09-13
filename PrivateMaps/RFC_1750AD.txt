@@ -337,6 +337,13 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=9,y=112
+	BeginUnit
+		UnitType=UNIT_INDIAMAN
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+EndPlot
+BeginPlot
 	x=9,y=117
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
@@ -2795,6 +2802,14 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=24,y=75
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=24,y=76
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
 	x=24,y=78
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -3029,6 +3044,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=77
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3337,10 +3353,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=74
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=26,y=76
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3796,10 +3814,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=30,y=71
-	ImprovementType=IMPROVEMENT_COTTAGE
-EndPlot
-BeginPlot
 	x=30,y=79
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -3887,11 +3901,6 @@ EndPlot
 BeginPlot
 	x=31,y=70
 	ImprovementType=IMPROVEMENT_PLANTATION
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=31,y=72
-	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4085,11 +4094,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=32,y=71
-	ImprovementType=IMPROVEMENT_VILLAGE
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=32,y=72
 	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
@@ -4211,11 +4215,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=68
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_ORCHARD
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=33,y=71
-	ImprovementType=IMPROVEMENT_TOWN
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4295,6 +4300,10 @@ BeginPlot
 		UnitType=UNIT_SLOOP
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
+EndPlot
+BeginPlot
+	x=34,y=72
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -4330,7 +4339,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=73
-	ImprovementType=IMPROVEMENT_HAMLET
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4586,6 +4595,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=74
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4709,7 +4719,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=76
-	ImprovementType=IMPROVEMENT_HAMLET
+	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
 	x=37,y=77
@@ -5079,7 +5089,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=17
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5126,6 +5136,10 @@ BeginPlot
 	x=39,y=56
 	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=39,y=76
+	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
 	x=39,y=77
@@ -5438,11 +5452,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=81
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
 	x=41,y=83
-	ImprovementType=IMPROVEMENT_HAMLET
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5618,7 +5632,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=84
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5884,6 +5898,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=86
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6028,7 +6043,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=93
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6058,6 +6073,10 @@ BeginPlot
 	x=46,y=17
 	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=18
+	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
 	x=46,y=38
@@ -6121,7 +6140,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=91
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6253,7 +6272,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=17
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6736,6 +6755,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=22
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6799,7 +6819,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=24
-	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6998,10 +7017,6 @@ BeginPlot
 	x=56,y=116
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=57,y=25
-	ImprovementType=IMPROVEMENT_HAMLET
 EndPlot
 BeginPlot
 	x=57,y=26

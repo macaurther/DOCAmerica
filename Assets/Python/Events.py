@@ -196,7 +196,7 @@ def evictSaveData():
 	data.units.evict()
 
 @handler("combatResult")
-def onCombatResult(pWinner, pLoser):
+def waaKauluaAbility(pWinner, pLoser):
 	iWinner = pWinner.getOwner()
 	
 	if pWinner.getUnitType() == iWaaKaulua:

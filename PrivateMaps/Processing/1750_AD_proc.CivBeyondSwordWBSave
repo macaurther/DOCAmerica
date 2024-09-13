@@ -4,13 +4,6 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=2,y=30
-	BeginUnit
-		UnitType=UNIT_CARAVEL
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-EndPlot
-BeginPlot
 	x=4,y=3
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -115,6 +108,7 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_JEWELLER
 		BuildingType=BUILDING_SMOKEHOUSE
+		BuildingType=BUILDING_PLAGUE
 		BuildingType=BUILDING_ANGAKKUQ_QARGI
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		BeginCulture
@@ -328,6 +322,13 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=9,y=112
+	BeginUnit
+		UnitType=UNIT_INDIAMAN
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+EndPlot
+BeginPlot
 	x=9,y=117
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
@@ -427,6 +428,20 @@ EndPlot
 BeginPlot
 	x=10,y=112
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_RUSSIA
+		CityName=Fort St. Nicholas
+		CityPopulation=1
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_RUSSIA
+	EndCity
 EndPlot
 BeginPlot
 	x=10,y=117
@@ -501,6 +516,17 @@ EndPlot
 BeginPlot
 	x=11,y=110
 	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=11,y=113
+	BeginUnit
+		UnitType=UNIT_RUSSIAN_PROMYSHLENNIKI
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_RUSSIAN_PROMYSHLENNIKI
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
 EndPlot
 BeginPlot
 	x=11,y=117
@@ -669,8 +695,34 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=12,y=107
+	BeginUnit
+		UnitType=UNIT_INDIAMAN
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+EndPlot
+BeginPlot
 	x=12,y=108
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_III
+		UnitOwner=CIVILIZATION_RUSSIA
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_RUSSIA
+		CityName=Novo-Arkhangelsk
+		CityPopulation=1
+		BuildingType=BUILDING_GOVERNORS_MANSION
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		ReligionType=RELIGION_ORTHODOXY
+		BeginCulture
+			Civilization=CIVILIZATION_RUSSIA, Culture=18
+		EndCulture
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_RUSSIA
+	EndCity
 EndPlot
 BeginPlot
 	x=12,y=109
@@ -685,6 +737,13 @@ BeginPlot
 	x=13,y=46
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=13,y=48
+	BeginUnit
+		UnitType=UNIT_HAWAIIAN_KOA
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
 EndPlot
 BeginPlot
 	x=13,y=50
@@ -812,6 +871,10 @@ BeginPlot
 		UnitType=UNIT_INUIT_KAYAK
 		UnitOwner=CIVILIZATION_INUIT
 	EndUnit
+	BeginUnit
+		UnitType=UNIT_INUIT_KAYAK
+		UnitOwner=CIVILIZATION_INUIT
+	EndUnit
 EndPlot
 BeginPlot
 	x=14,y=15
@@ -820,10 +883,69 @@ EndPlot
 BeginPlot
 	x=14,y=47
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_HAWAIIAN_KOA
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_HAWAII
+		CityName=Pahoa
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_PLAGUE
+		BuildingType=BUILDING_ATUA_SHRINE
+		BeginCulture
+			Civilization=CIVILIZATION_HAWAII, Culture=22
+		EndCulture
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_HAWAII
+	EndCity
 EndPlot
 BeginPlot
 	x=14,y=49
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_HAWAIIAN_KOA
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_ARCHER
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAWAII
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_HAWAII
+		CityName=Hilo
+		CityPopulation=7
+		BuildingType=BUILDING_CHIEFTANS_HUT
+		BuildingType=BUILDING_GRANARY
+		BeginCulture
+			Civilization=CIVILIZATION_HAWAII, Culture=64
+		EndCulture
+		YearFounded=-500
+		YearAcquired=-500
+		PreviousOwner=CIVILIZATION_HAWAII
+	EndCity
 EndPlot
 BeginPlot
 	x=14,y=60
@@ -2407,6 +2529,7 @@ BeginPlot
 		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_SMOKEHOUSE
 		BuildingType=BUILDING_SERPENT_MOUND
+		BuildingType=BUILDING_PLAGUE
 		BuildingType=BUILDING_WOCEKIYA_SHRINE
 		BeginCulture
 			Civilization=CIVILIZATION_LAKOTA, Culture=656
@@ -2663,6 +2786,14 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=24,y=75
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
+	x=24,y=76
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
 	x=24,y=78
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -2897,6 +3028,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=77
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3205,10 +3337,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=74
+	ImprovementType=IMPROVEMENT_PADDY_FIELD
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=26,y=76
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3664,10 +3798,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=30,y=71
-	ImprovementType=IMPROVEMENT_COTTAGE
-EndPlot
-BeginPlot
 	x=30,y=79
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
@@ -3755,11 +3885,6 @@ EndPlot
 BeginPlot
 	x=31,y=70
 	ImprovementType=IMPROVEMENT_PLANTATION
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=31,y=72
-	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3897,6 +4022,10 @@ EndPlot
 BeginPlot
 	x=32,y=55
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 EndPlot
 BeginPlot
 	x=32,y=56
@@ -3953,11 +4082,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=32,y=71
-	ImprovementType=IMPROVEMENT_VILLAGE
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=32,y=72
 	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
@@ -4008,10 +4132,6 @@ EndPlot
 BeginPlot
 	x=33,y=56
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -4079,11 +4199,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=68
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+	ImprovementType=IMPROVEMENT_ORCHARD
+	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=33,y=71
-	ImprovementType=IMPROVEMENT_TOWN
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4157,12 +4278,15 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=34,y=72
-	RouteType=ROUTE_ROAD
+	x=34,y=71
 	BeginUnit
 		UnitType=UNIT_SLOOP
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
+EndPlot
+BeginPlot
+	x=34,y=72
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -4198,7 +4322,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=73
-	ImprovementType=IMPROVEMENT_HAMLET
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4454,6 +4578,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=74
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4577,7 +4702,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=76
-	ImprovementType=IMPROVEMENT_HAMLET
+	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
 	x=37,y=77
@@ -4828,6 +4953,18 @@ BeginPlot
 		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginUnit
+		UnitType=UNIT_HAUDENOSAUNEE_MOHAWK
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
+	EndUnit
+	BeginUnit
 		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
@@ -4935,7 +5072,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=17
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4982,6 +5119,10 @@ BeginPlot
 	x=39,y=56
 	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=39,y=76
+	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
 	x=39,y=77
@@ -5036,6 +5177,7 @@ BeginPlot
 		BuildingType=BUILDING_WEAVER
 		BuildingType=BUILDING_HERBALIST
 		BuildingType=BUILDING_HAUDENOSAUNEE_LONGHOUSE
+		BuildingType=BUILDING_PLAGUE
 		BuildingType=BUILDING_GAIWIIO_LONGHOUSE
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
@@ -5143,12 +5285,15 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=40,y=81
-	RouteType=ROUTE_ROAD
+	x=40,y=80
 	BeginUnit
 		UnitType=UNIT_SLOOP
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
+EndPlot
+BeginPlot
+	x=40,y=81
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -5294,11 +5439,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=81
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 EndPlot
 BeginPlot
 	x=41,y=83
-	ImprovementType=IMPROVEMENT_HAMLET
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5474,7 +5619,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=84
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5672,22 +5817,6 @@ BeginPlot
 	x=44,y=85
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_BARQUE
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_BARQUE
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_INDIAMAN
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
 		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
@@ -5740,6 +5869,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=86
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5860,6 +5990,25 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_COTTAGE
 EndPlot
 BeginPlot
+	x=45,y=85
+	BeginUnit
+		UnitType=UNIT_BARQUE
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_BARQUE
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_INDIAMAN
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
 	x=45,y=86
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
@@ -5884,7 +6033,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=93
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -5916,6 +6065,10 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=46,y=18
+	ImprovementType=IMPROVEMENT_FARM
+EndPlot
+BeginPlot
 	x=46,y=38
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
@@ -5928,6 +6081,13 @@ BeginPlot
 	x=46,y=40
 	ImprovementType=IMPROVEMENT_PLANTATION
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=46
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
 EndPlot
 BeginPlot
 	x=46,y=47
@@ -5977,7 +6137,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=91
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6109,7 +6269,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=17
-	ImprovementType=IMPROVEMENT_COTTAGE
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6161,10 +6321,6 @@ EndPlot
 BeginPlot
 	x=47,y=47
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -6410,12 +6566,15 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=50,y=88
-	RouteType=ROUTE_ROAD
+	x=50,y=87
 	BeginUnit
 		UnitType=UNIT_SLOOP
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
+EndPlot
+BeginPlot
+	x=50,y=88
+	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_FUSILIER
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -6592,6 +6751,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=22
+	ImprovementType=IMPROVEMENT_FARM
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6633,6 +6793,13 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
+	x=54,y=91
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+EndPlot
+BeginPlot
 	x=54,y=93
 	ImprovementType=IMPROVEMENT_CAMP
 	RouteType=ROUTE_ROAD
@@ -6655,7 +6822,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=24
-	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -6666,10 +6832,6 @@ EndPlot
 BeginPlot
 	x=55,y=92
 	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_III
 		UnitOwner=CIVILIZATION_ENGLAND
@@ -6854,10 +7016,6 @@ BeginPlot
 	x=56,y=116
 	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=57,y=25
-	ImprovementType=IMPROVEMENT_HAMLET
 EndPlot
 BeginPlot
 	x=57,y=26

@@ -1592,7 +1592,7 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>0</iCommerce>
-				<iCommerce>50</iCommerce>
+				<iCommerce>25</iCommerce>
 			</CommerceModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -1992,11 +1992,10 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<bFreeImprovementUpgrade>1</bFreeImprovementUpgrade>
 			<iDistanceMaintenanceModifier>-50</iDistanceMaintenanceModifier>
 			<Hurrys>
 				<Hurry>
-					<HurryType>HURRY_GOLD_FEDERALISM</HurryType>
+					<HurryType>HURRY_GOLD_BUILDINGS</HurryType>
 					<bHurry>1</bHurry>
 				</Hurry>
 			</Hurrys>
@@ -2291,20 +2290,20 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 					<ImprovementYields>
-						<iYield>2</iYield>
+						<iYield>1</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
@@ -2435,7 +2434,7 @@
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
-			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
+			<bFreeImprovementUpgrade>1</bFreeImprovementUpgrade>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

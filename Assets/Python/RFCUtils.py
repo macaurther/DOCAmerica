@@ -922,9 +922,14 @@ def captureUnit(pLosingUnit, pWinningUnit, iUnit, iChance):
 			
 			events.fireEvent("enslave", iPlayer, pLosingUnit)
 		else:
-			makeUnit(iPlayer, iUnit, pWinningUnit)
+			pUnit = makeUnit(iPlayer, iUnit, pWinningUnit)
 			message(pWinningUnit.getOwner(), 'TXT_KEY_UP_CAPTURE_WIN', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=8, location=pWinningUnit)
 			message(pLosingUnit.getOwner(), 'TXT_KEY_UP_CAPTURE_LOSE', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pWinningUnit)
+			
+			# If captured unit can fight, remove movement and damage unit by half
+			if pUnit.canFight():
+				pUnit.finishMoves()
+				pUnit.setDamage(pUnit.maxHitPoints() / 2, -1)
 
 # used: Stability
 def flipOrRelocateGarrison(city, iNumDefenders):

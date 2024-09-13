@@ -352,16 +352,19 @@ class Mercenary:
 			iImmigrationCost = 1000
 		
 		# Old World Boosts : Starts at 1 Immigration per 1 Commerce
-		if self.getUnitInfoID() in lEndowments:
+		if self.getUnitInfoID() in lEndowmentsBase:
 			iImmigrationCost = 500
 		
 		# Scale by game speed
 		iImmigrationCost *= int(3 - gc.getGame().getGameSpeedType())
 		
-		# Increase Immigrant cost by 20% for each time this Civ has hired from category that before
+		# Increase Immigrant cost by 10% for each time this Civ has hired from this category before, and another 10% per immigrant hired by this Civ
 		if iPlayer > -1:
-			iImmigrationCost += iImmigrationCost * data.civs[civ(iPlayer)].lUnitCategoriesHired[self.getUnitCategory()] / 5
+			iCategoryHires = data.civs[civ(iPlayer)].lUnitCategoriesHired[self.getUnitCategory()]
+			iTotalHires = sum(data.civs[civ(iPlayer)].lUnitCategoriesHired)
+			iImmigrationCost += iImmigrationCost * (iCategoryHires + iTotalHires) * 0.1
 		
+		# Modifier calculation
 		iImmigrationCostModifier = 100
 		
 		if bDecolonization:
@@ -377,6 +380,7 @@ class Mercenary:
 		
 		iImmigrationCost *= iImmigrationCostModifier
 		iImmigrationCost /= 100
+		iImmigrationCost = int(iImmigrationCost)
 		
 		if iImmigrationCost > iCurrentImmigration:
 			iGoldCost = (iImmigrationCost - iCurrentImmigration) * 2
