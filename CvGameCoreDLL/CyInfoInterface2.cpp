@@ -77,6 +77,8 @@ void CyInfoPythonInterface2()
 		.def("getCivilizationFreeUnitsClass", &CvCivilizationInfo::getCivilizationFreeUnitsClass, "int (int i)")
 		.def("getCivilizationInitialCivics", &CvCivilizationInfo::getCivilizationInitialCivics, "int (int i)")
 
+		.def("getCultureGroup", &CvCivilizationInfo::getCultureGroup, "int ()") // MacAurther
+
 		.def("isLeaders", &CvCivilizationInfo::isLeaders, "bool (int i)")
 		.def("isCivilizationFreeBuildingClass", &CvCivilizationInfo::isCivilizationFreeBuildingClass, "bool (int i)")
 		.def("isCivilizationFreeTechs", &CvCivilizationInfo::isCivilizationFreeTechs, "bool (int i)")

@@ -332,8 +332,10 @@ class CvTechSplashScreen:
 		# Civic
 		for j in range(CyGlobalContext().getNumCivicInfos()):
 			if (CyGlobalContext().getCivicInfo(j).getTechPrereq() == self.iTech):
-				screen.attachImageButton( panelName3, "", CyGlobalContext().getCivicInfo(j).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM,
-							  WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, j, 1, False )
+				# MacAurther: Only show Civics that are available to this civ
+				if CyGlobalContext().getCivilizationInfo(CyGlobalContext().getGame().getActiveCivilizationType()).getCultureGroup() == CyGlobalContext().getCivicInfo(j).getCultureGroup():
+					screen.attachImageButton( panelName3, "", CyGlobalContext().getCivicInfo(j).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM,
+								  WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, j, 1, False )
 #---Eingefügt ENDE ------------------------------------------------		
 
 	# returns a unique ID for a widget in this screen

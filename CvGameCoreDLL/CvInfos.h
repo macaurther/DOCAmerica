@@ -2364,7 +2364,7 @@ public:
 	int getStartingYear() const;
 	const std::string getIdentifier() const;
 	const std::string getRegion() const;	// MacAurther
-	int getCultureGroup() const;	// FoB
+	DllExport int getCultureGroup() const;	// FoB				// Exposed to Python
 	int getPaganReligion() const;
 	const wchar* getDescriptionKeyPersistent() const;
 	std::wstring pyGetDescriptionKeyPersistent() { return getDescriptionKeyPersistent(); }
