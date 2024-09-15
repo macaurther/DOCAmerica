@@ -1675,11 +1675,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MISSISSIPPI_FALCON_DANCER_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</English>
-		<French>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</French>
-		<German>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength in open terrain and versus melee units.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</English>
+		<French>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</French>
+		<German>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Falcon Dancer[COLOR_REVERT], the Mississippian replacement for [COLOR_UNIT_TEXT]Militia[COLOR_REVERT], has extra strength versus animals.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED</Tag>
@@ -1691,11 +1691,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INUIT_DOG_SLED_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</English>
-		<French>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</French>
-		<German>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs, can settle on ice, and has extra strength versus animals..</English>
+		<French>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs, can settle on ice, and has extra strength versus animals..</French>
+		<German>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs, can settle on ice, and has extra strength versus animals..</German>
+		<Italian>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs, can settle on ice, and has extra strength versus animals..</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs, can settle on ice, and has extra strength versus animals..</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MUISCA_GUECHA</Tag>
@@ -1727,11 +1727,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TEOTIHUACAN_ARTISAN_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</English>
-		<French>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</French>
-		<German>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Dog Sled[COLOR_REVERT], the Inuit replacement for the [COLOR_UNIT_TEXT]Settler[COLOR_REVERT], ignores terrain movement costs and can settle on ice.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacan replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can hurry production in a city.</English>
+		<French>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacan replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can hurry production in a city.</French>
+		<German>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacan replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can hurry production in a city.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacan replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can hurry production in a city.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Artisan[COLOR_REVERT], the Teotihuacan replacement for the [COLOR_UNIT_TEXT]Worker[COLOR_REVERT], can hurry production in a city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AMERICAN_AGENT</Tag>
