@@ -7,13 +7,13 @@
 <Civ4UnitInfos xmlns="x-schema:CIV4UnitSchema.xml">
 	<UnitInfos>
 		<UnitInfo>
-			<Class>UNITCLASS_BEAR</Class>
-			<Type>UNIT_BEAR</Type>
+			<Class>UNITCLASS_GRIZZLY_BEAR</Class>
+			<Type>UNIT_GRIZZLY_BEAR</Type>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_BEAR</Description>
-			<Civilopedia>TXT_KEY_UNIT_BEAR_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_BEAR_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_GRIZZLY_BEAR</Description>
+			<Civilopedia>TXT_KEY_UNIT_GRIZZLY_BEAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_GRIZZLY_BEAR_STRATEGY</Strategy>
 			<bAnimal>1</bAnimal>
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<UnitAIs>
@@ -36,8 +36,24 @@
 					<TerrainType>TERRAIN_SNOW</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SAVANNA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
 			</TerrainImpassables>
-			<iCombat>3</iCombat>
+			<iCombat>5</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
@@ -87,6 +103,88 @@
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
 		</UnitInfo>
 		<UnitInfo>
+			<Class>UNITCLASS_POLAR_BEAR</Class>
+			<Type>UNIT_POLAR_BEAR</Type>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_POLAR_BEAR</Description>
+			<Civilopedia>TXT_KEY_UNIT_POLAR_BEAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_POLAR_BEAR_STRATEGY</Strategy>
+			<bAnimal>1</bAnimal>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>1</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SAVANNA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
+			<iCombat>4</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iPlainsAttack>50</iPlainsAttack>
+			<iPlainsDefense>50</iPlainsDefense>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_POLAR_BEAR</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+		</UnitInfo>
+		<UnitInfo>
 			<Class>UNITCLASS_PANTHER</Class>
 			<Type>UNIT_PANTHER</Type>
 			<Domain>DOMAIN_LAND</Domain>
@@ -120,6 +218,18 @@
 					<TerrainType>TERRAIN_SNOW</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
 			</TerrainImpassables>
 			<iCombat>2</iCombat>
 			<iCombatLimit>100</iCombatLimit>
@@ -134,10 +244,14 @@
 					<FeatureType>FEATURE_JUNGLE</FeatureType>
 					<bFeatureNative>1</bFeatureNative>
 				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
 			</FeatureNatives>
 			<FeatureAttacks>
 				<FeatureAttack>
-					<FeatureType>FEATURE_FOREST</FeatureType>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
 					<iFeatureAttack>100</iFeatureAttack>
 				</FeatureAttack>
 				<FeatureAttack>
@@ -151,7 +265,7 @@
 			</FeatureAttacks>
 			<FeatureDefenses>
 				<FeatureDefense>
-					<FeatureType>FEATURE_FOREST</FeatureType>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
 					<iFeatureDefense>100</iFeatureDefense>
 				</FeatureDefense>
 				<FeatureDefense>
@@ -174,6 +288,196 @@
 				<UnitMeshGroup>
 					<iRequired>3</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_PANTHER</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_JAGUAR</Class>
+			<Type>UNIT_JAGUAR</Type>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_JAGUAR</Description>
+			<Civilopedia>TXT_KEY_UNIT_JAGUAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_JAGUAR_STRATEGY</Strategy>
+			<bAnimal>1</bAnimal>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
+			<iCombat>2</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<FeatureNatives>
+				<FeatureNative>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+				<FeatureNative>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<bFeatureNative>1</bFeatureNative>
+				</FeatureNative>
+			</FeatureNatives>
+			<FeatureAttacks>
+				<FeatureAttack>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<iFeatureAttack>100</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iFeatureAttack>100</iFeatureAttack>
+				</FeatureAttack>
+				<FeatureAttack>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureAttack>100</iFeatureAttack>
+				</FeatureAttack>
+			</FeatureAttacks>
+			<FeatureDefenses>
+				<FeatureDefense>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<iFeatureDefense>100</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<iFeatureDefense>100</iFeatureDefense>
+				</FeatureDefense>
+				<FeatureDefense>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<iFeatureDefense>100</iFeatureDefense>
+				</FeatureDefense>
+			</FeatureDefenses>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_JAGUAR</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_COUGAR</Class>
+			<Type>UNIT_COUGAR</Type>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_COUGAR</Description>
+			<Civilopedia>TXT_KEY_UNIT_COUGAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_COUGAR_STRATEGY</Strategy>
+			<bAnimal>1</bAnimal>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SAVANNA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
+			<iCombat>3</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iHillsAttack>50</iHillsAttack>
+			<iHillsDefense>50</iHillsDefense>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_COUGAR</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
@@ -208,35 +512,23 @@
 					<TerrainType>TERRAIN_SNOW</TerrainType>
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SAVANNA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
 			</TerrainImpassables>
-			<iCombat>1</iCombat>
+			<iCombat>2</iCombat>
 			<iCombatLimit>100</iCombatLimit>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<TerrainNatives>
-				<TerrainNative>
-					<TerrainType>TERRAIN_TUNDRA</TerrainType>
-					<bTerrainNative>1</bTerrainNative>
-				</TerrainNative>
-				<TerrainNative>
-					<TerrainType>TERRAIN_MOORLAND</TerrainType>
-					<bTerrainNative>1</bTerrainNative>
-				</TerrainNative>
-				<TerrainNative>
-					<TerrainType>TERRAIN_GRASS</TerrainType>
-					<bTerrainNative>1</bTerrainNative>
-				</TerrainNative>
-			</TerrainNatives>
-			<FeatureNatives>
-				<FeatureNative>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<bFeatureNative>1</bFeatureNative>
-				</FeatureNative>
-				<FeatureNative>
-					<FeatureType>FEATURE_TAIGA</FeatureType>
-					<bFeatureNative>1</bFeatureNative>
-				</FeatureNative>
-			</FeatureNatives>
 			<FeatureNatives>
 				<FeatureNative>
 					<FeatureType>FEATURE_FOREST</FeatureType>
@@ -278,6 +570,128 @@
 				<UnitMeshGroup>
 					<iRequired>3</iRequired>
 					<EarlyArtDefineTag>ART_DEF_UNIT_WOLF</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_COYOTE</Class>
+			<Type>UNIT_COYOTE</Type>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_COYOTE</Description>
+			<Civilopedia>TXT_KEY_UNIT_COYOTE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_COYOTE_STRATEGY</Strategy>
+			<bAnimal>1</bAnimal>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>3</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
+			<iCombat>1</iCombat>
+			<iCombatLimit>100</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iPlainsAttack>100</iPlainsAttack>
+			<iPlainsDefense>100</iPlainsDefense>
+			<TerrainNatives>
+				<TerrainNative>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+				<TerrainNative>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bTerrainNative>1</bTerrainNative>
+				</TerrainNative>
+			</TerrainNatives>
+			<iAsset>1</iAsset>
+			<iPower>1</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>3</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>3</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>3</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_COYOTE</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>
+		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_CLAWDIUS</Class>	<!-- Kitty Easter Egg -->
+			<Type>UNIT_CLAWDIUS</Type>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_CLAWDIUS</Description>
+			<Civilopedia>TXT_KEY_UNIT_CLAWDIUS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_CLAWDIUS_STRATEGY</Strategy>
+			<bAnimal>1</bAnimal>
+			<bNoDefensiveBonus>1</bNoDefensiveBonus>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ANIMAL</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>1</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iCombat>20</iCombat>
+			<iCombatLimit>50</iCombatLimit>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iAsset>1</iAsset>
+			<iPower>20</iPower>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_CLAWDIUS</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_ANIMAL</FormationType>

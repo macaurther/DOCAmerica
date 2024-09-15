@@ -7028,7 +7028,8 @@ void CvGame::createBarbarianUnits()
 //Speed: End Modify
 	//Rhye - end
 
-	bAnimals = false;
+	// MacAurther: Yes to critters!
+	/*bAnimals = false;	
 
 	if (GC.getEraInfo(getCurrentEra()).isNoBarbUnits())
 	{
@@ -7043,13 +7044,15 @@ void CvGame::createBarbarianUnits()
 	if (getElapsedGameTurns() < ((GC.getHandicapInfo(getHandicapType()).getBarbarianCreationTurnsElapsed() * GC.getGameSpeedInfo(getGameSpeedType()).getBarbPercent()) / 100))
 	{
 		bAnimals = true;
-	}
-
-	if (bAnimals)
+	}*/
+	
+	createAnimals();
+	/*if (bAnimals)
 	{
 		createAnimals();
 	}
-	else
+	else*/
+	if (!GC.getEraInfo(getCurrentEra()).isNoBarbUnits())
 	{
 		return; //Rhye (so that it create just animals)
 

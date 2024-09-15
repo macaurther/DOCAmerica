@@ -21,7 +21,7 @@
 			<bNoGoodies>0</bNoGoodies>
 			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>600</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>1</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>0</iStartingDefenseUnits>
@@ -76,9 +76,9 @@
 			<Description>TXT_KEY_ERA_CLASSICAL</Description>
 			<Strategy>TXT_KEY_ERA_CLASSICAL_STRATEGY</Strategy>
 			<bNoGoodies>0</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1200</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>1</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>1</iStartingDefenseUnits>
@@ -126,9 +126,9 @@
 			<Description>TXT_KEY_ERA_EXPLORATION</Description>
 			<Strategy>TXT_KEY_ERA_EXPLORATION_STRATEGY</Strategy>
 			<bNoGoodies>0</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1200</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>1</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>1</iStartingDefenseUnits>
@@ -188,9 +188,9 @@
 			<Description>TXT_KEY_ERA_COLONIAL</Description>
 			<Strategy>TXT_KEY_ERA_COLONIAL_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>
@@ -254,9 +254,9 @@
 			<Description>TXT_KEY_ERA_REVOLUTIONARY</Description>
 			<Strategy>TXT_KEY_ERA_REVOLUTIONARY_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
-			<bNoBarbUnits>1</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoAnimals>0</bNoAnimals>
+			<bNoBarbUnits>0</bNoBarbUnits>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>2700</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>
@@ -322,8 +322,8 @@
 			<Strategy>TXT_KEY_ERA_INDUSTRIAL_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
-			<bNoBarbUnits>1</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbUnits>0</bNoBarbUnits>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>4000</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>3</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>3</iStartingDefenseUnits>
@@ -382,7 +382,7 @@
 			<Strategy>TXT_KEY_ERA_MODERN_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
 			<bNoAnimals>1</bNoAnimals>
-			<bNoBarbUnits>1</bNoBarbUnits>
+			<bNoBarbUnits>0</bNoBarbUnits>
 			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>5500</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>3</iStartingUnitMultiplier>
@@ -444,9 +444,9 @@
 			<Description>TXT_KEY_ERA_MESO</Description>
 			<Strategy>TXT_KEY_ERA_MESO_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>
@@ -500,9 +500,9 @@
 			<Description>TXT_KEY_ERA_ANDES</Description>
 			<Strategy>TXT_KEY_ERA_ANDES_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>
@@ -553,9 +553,9 @@
 			<Description>TXT_KEY_ERA_NATIVE</Description>
 			<Strategy>TXT_KEY_ERA_NATIVE_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>
@@ -612,9 +612,9 @@
 			<Description>TXT_KEY_ERA_NORSE</Description>
 			<Strategy>TXT_KEY_ERA_NORSE_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>
@@ -665,9 +665,9 @@
 			<Description>TXT_KEY_ERA_POLYNESIA</Description>
 			<Strategy>TXT_KEY_ERA_POLYNESIA_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>
@@ -717,9 +717,9 @@
 			<Description>TXT_KEY_ERA_LATIN_AMERICA</Description>
 			<Strategy>TXT_KEY_ERA_LATIN_AMERICA_STRATEGY</Strategy>
 			<bNoGoodies>1</bNoGoodies>
-			<bNoAnimals>1</bNoAnimals>
+			<bNoAnimals>0</bNoAnimals>
 			<bNoBarbUnits>0</bNoBarbUnits>
-			<bNoBarbCities>0</bNoBarbCities>
+			<bNoBarbCities>1</bNoBarbCities>
 			<iAdvancedStartPoints>1800</iAdvancedStartPoints>
 			<iStartingUnitMultiplier>2</iStartingUnitMultiplier>
 			<iStartingDefenseUnits>2</iStartingDefenseUnits>

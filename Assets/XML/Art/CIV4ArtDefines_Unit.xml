@@ -6943,5 +6943,110 @@
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds/>
 		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_POLAR_BEAR</Type>
+			<Button>Art/Interface/Buttons/Units/PolarBear.dds</Button>
+			<fScale>0.6</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Animals/PolarBear/bear.nif</NIF>
+			<KFM>Art/Units/Bear/Bear.kfm</KFM>
+			<SHADERNIF>Art/Units/Animals/PolarBear/bear_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/BearShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+				<fShadowScale>.6</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_JAGUAR</Type>
+			<Button>Art/Interface/Buttons/Units/Jaguar.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.3</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Animals/jaguar/Panther.nif</NIF>
+			<KFM>Art/Units/Panther/Panther.kfm</KFM>
+			<SHADERNIF>Art/Units/Animals/jaguar/Panther_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/PantherShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_COUGAR</Type>
+			<Button>Art/Interface/Buttons/Units/Cougar.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.3</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Animals/Lioness/Panther.nif</NIF>
+			<KFM>Art/Units/Panther/Panther.kfm</KFM>
+			<SHADERNIF>Art/Units/Animals/Lioness/Panther_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/PantherShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_COYOTE</Type>
+			<Button>Art/Interface/Buttons/Units/Coyote.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.4</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Animals/Dog/Wolf.nif</NIF>
+			<KFM>Art/Units/Wolf/Wolf.kfm</KFM>
+			<SHADERNIF>Art/Units/Animals/Dog/Wolf.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/WolfShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_CLAWDIUS</Type>
+			<Button>Art/Interface/Buttons/Units/Clawdius.dds</Button>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>3</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Lion/Lion.nif</NIF>
+			<KFM>Art/Units/Lion/Lion.kfm</KFM>
+			<SHADERNIF>Art/Units/Lion/Lion_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/LionShadow.nif</ShadowNIF>
+				<ShadowAttachNode>LionBip Spine1</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.28</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
 	</UnitArtInfos>
 </Civ4ArtDefines>

@@ -710,14 +710,6 @@
 		<Spanish>[COLOR_UNIT_TEXT]Paratroopers[COLOR_REVERT] can evade interception and can perform paradrops.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_PANTHER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</English>
-		<French>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</French>
-		<German>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</German>
-		<Italian>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Africa from 3000 to 850 BC.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_DUTCH_FLUYT</Tag>
 		<English>Fluyt</English>
 		<French>Fluyt</French>
@@ -1040,14 +1032,6 @@
 		<German>[COLOR_UNIT_TEXT]Work Boats[COLOR_REVERT] can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Whaling boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Offshore Platforms[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Marine Reserves[COLOR_REVERT], cannot enter the ocean until [COLOR_TECH_TEXT]Optics[COLOR_REVERT] and cannot pass capes until [COLOR_TECH_TEXT]Cartography[COLOR_REVERT].</German>
 		<Italian>[COLOR_UNIT_TEXT]Work Boats[COLOR_REVERT] can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Whaling boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Offshore Platforms[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Marine Reserves[COLOR_REVERT], cannot enter the ocean until [COLOR_TECH_TEXT]Optics[COLOR_REVERT] and cannot pass capes until [COLOR_TECH_TEXT]Cartography[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Work Boats[COLOR_REVERT] can create [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Whaling boats[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Offshore Platforms[COLOR_REVERT], and [COLOR_HIGHLIGHT_TEXT]Marine Reserves[COLOR_REVERT], cannot enter the ocean until [COLOR_TECH_TEXT]Optics[COLOR_REVERT] and cannot pass capes until [COLOR_TECH_TEXT]Cartography[COLOR_REVERT].</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_WOLF_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Siberia from 3000 to 850 BC.</English>
-		<French>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Siberia from 3000 to 850 BC.</French>
-		<German>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Siberia from 3000 to 850 BC.</German>
-		<Italian>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Siberia from 3000 to 850 BC.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Siberia from 3000 to 850 BC.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILITIA_STRATEGY</Tag>
@@ -2481,7 +2465,118 @@
 		<Italian>Buy Old World Innovations with [ICON_IMMIGRATION] and expend them for a research boost.</Italian>
 		<Spanish>Buy Old World Innovations with [ICON_IMMIGRATION] and expend them for a research boost.</Spanish>
 	</TEXT>
-	
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COYOTE</Tag>
+		<English>Coyote</English>
+		<French>Coyote</French>
+		<German>Coyote</German>
+		<Italian>Coyote</Italian>
+		<Spanish>Coyote</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COYOTE_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</English>
+		<French>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</French>
+		<German>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</German>
+		<Italian>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Coyotes[COLOR_REVERT] are Barbarian units that spawn in Plains, Prairie, Semidesert, and Desert.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAGUAR</Tag>
+		<English>Jaguar</English>
+		<French>Jaguar</French>
+		<German>Jaguar</German>
+		<Italian>Jaguar</Italian>
+		<Spanish>Jaguar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_JAGUAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</English>
+		<French>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</French>
+		<German>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</German>
+		<Italian>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Jaguars[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAR_BEAR</Tag>
+		<English>Polar Bear</English>
+		<French>Polar Bear</French>
+		<German>Polar Bear</German>
+		<Italian>Polar Bear</Italian>
+		<Spanish>Polar Bear</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_POLAR_BEAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in Snow.</English>
+		<French>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</French>
+		<German>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</German>
+		<Italian>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Polar Bears[COLOR_REVERT] are Barbarian units that spawn in and Snow.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COUGAR</Tag>
+		<English>Cougar</English>
+		<French>Cougar</French>
+		<German>Cougar</German>
+		<Italian>Cougar</Italian>
+		<Spanish>Cougar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COUGAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</English>
+		<French>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</French>
+		<German>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</German>
+		<Italian>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Cougars[COLOR_REVERT] are Barbarian units that spawn in Plains, Grassland, and Pairie.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GRIZZLY_BEAR</Tag>
+		<English>Grizzly Bear</English>
+		<French>Grizzly Bear</French>
+		<German>Grizzly Bear</German>
+		<Italian>Grizzly Bear</Italian>
+		<Spanish>Grizzly Bear</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GRIZZLY_BEAR_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</English>
+		<French>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</French>
+		<German>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</German>
+		<Italian>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Grizzly Bears[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WOLF_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</English>
+		<French>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</French>
+		<German>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</German>
+		<Italian>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Wolves[COLOR_REVERT] are Barbarian units that spawn in Forest or Taiga.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PANTHER_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</English>
+		<French>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</French>
+		<German>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</German>
+		<Italian>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Panthers[COLOR_REVERT] are Barbarian units that spawn in Rainforest, Jungle, and Palm Forest.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CLAWDIUS</Tag>
+		<English>Clawdius</English>
+		<French>Clawdius</French>
+		<German>Clawdius</German>
+		<Italian>Clawdius</Italian>
+		<Spanish>Clawdius</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CLAWDIUS_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</English>
+		<French>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</French>
+		<German>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</German>
+		<Italian>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Spanish>
+	</TEXT>
 	
 	
 	

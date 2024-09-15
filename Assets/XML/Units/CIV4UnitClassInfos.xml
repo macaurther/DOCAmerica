@@ -7,12 +7,20 @@
 <Civ4UnitClassInfos xmlns="x-schema:CIV4UnitSchema.xml">
 	<UnitClassInfos>
 		<UnitClassInfo>
-			<Type>UNITCLASS_BEAR</Type>
-			<Description>TXT_KEY_UNIT_BEAR</Description>
+			<Type>UNITCLASS_GRIZZLY_BEAR</Type>
+			<Description>TXT_KEY_UNIT_GRIZZLY_BEAR</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_BEAR</DefaultUnit>
+			<DefaultUnit>UNIT_GRIZZLY_BEAR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_POLAR_BEAR</Type>
+			<Description>TXT_KEY_UNIT_POLAR_BEAR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_POLAR_BEAR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_PANTHER</Type>
@@ -23,12 +31,44 @@
 			<DefaultUnit>UNIT_PANTHER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_JAGUAR</Type>
+			<Description>TXT_KEY_UNIT_JAGUAR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_JAGUAR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_COUGAR</Type>
+			<Description>TXT_KEY_UNIT_COUGAR</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_COUGAR</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_WOLF</Type>
 			<Description>TXT_KEY_UNIT_WOLF</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_WOLF</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_COYOTE</Type>
+			<Description>TXT_KEY_UNIT_COYOTE</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_COYOTE</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_CLAWDIUS</Type>
+			<Description>TXT_KEY_UNIT_CLAWDIUS</Description>
+			<iMaxGlobalInstances>1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_CLAWDIUS</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SETTLER</Type>
