@@ -1021,7 +1021,7 @@ EndPlot
 BeginPlot
 	x=17,y=104
 	BeginUnit
-		UnitType=UNIT_BEAR
+		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 EndPlot
@@ -1229,7 +1229,7 @@ EndPlot
 BeginPlot
 	x=20,y=96
 	BeginUnit
-		UnitType=UNIT_BEAR
+		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 EndPlot
@@ -3131,7 +3131,7 @@ EndPlot
 BeginPlot
 	x=43,y=100
 	BeginUnit
-		UnitType=UNIT_BEAR
+		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 EndPlot
@@ -3251,7 +3251,7 @@ EndPlot
 BeginPlot
 	x=50,y=88
 	BeginUnit
-		UnitType=UNIT_BEAR
+		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 EndPlot

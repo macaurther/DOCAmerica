@@ -1983,7 +1983,7 @@ EndPlot
 BeginPlot
 	x=21,y=102
 	BeginUnit
-		UnitType=UNIT_BEAR
+		UnitType=UNIT_GRIZZLY_BEAR
 		UnitOwner=CIVILIZATION_BARBARIAN
 	EndUnit
 EndPlot

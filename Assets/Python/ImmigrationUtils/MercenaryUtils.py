@@ -325,6 +325,7 @@ class Mercenary:
 			bProprietaries = False
 			bIndenturedServitude = False
 			bPenalColony = False
+			bEuropeanRP = False
 		else:
 			# Get the actual current player object
 			player = gc.getPlayer(iPlayer)
@@ -335,6 +336,7 @@ class Mercenary:
 			bProprietaries = iProprietaries2 in civics
 			bIndenturedServitude = iIndenturedServitude2 in civics
 			bPenalColony = iPenalColony2 in civics
+			bEuropeanRP = civ(iPlayer) in dCivGroups[iCivGroupEurope]
 			
 		# if the self.objUnitInfo is actually set then get the latest cost to hire the mercenary.
 		if(self.objUnitInfo != None):
@@ -382,7 +384,15 @@ class Mercenary:
 		iImmigrationCost /= 100
 		iImmigrationCost = int(iImmigrationCost)
 		
-		if iImmigrationCost > iCurrentImmigration:
+		# Military units cost gold for those other than Europeans
+		bExpeditionary = False
+		for lExpeditionaryCategory in lPossibleExpeditionaries:
+			if self.getUnitInfoID() in lExpeditionaryCategory: bExpeditionary = True
+		
+		if bExpeditionary and not bEuropeanRP:
+			iGoldCost = iImmigrationCost * 2
+			iImmigrationCost = 0
+		elif iImmigrationCost > iCurrentImmigration:
 			iGoldCost = (iImmigrationCost - iCurrentImmigration) * 2
 			iImmigrationCost = iCurrentImmigration
 		
