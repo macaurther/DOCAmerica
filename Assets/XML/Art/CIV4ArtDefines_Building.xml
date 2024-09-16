@@ -1655,7 +1655,7 @@
 			<fInterfaceScale>0.58</fInterfaceScale>
 			<NIF>Art/Structures/Wonders/Serpent Mound/serpent.nif</NIF>
 			<KFM/>
-			<Button>Art/Structures/Wonders/Serpent Mound/Button_SerpentMound.dds</Button>
+			<Button>Art/Interface/Buttons/Wonders/SerpentMound.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_AQUA_APPIA</Type>

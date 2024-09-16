@@ -881,6 +881,10 @@
 			</FeatureDefenses>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -931,6 +935,10 @@
 			</FeatureDoubleMoves>
 			<UnitCombats>
 				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>
 				</UnitCombat>
@@ -968,6 +976,10 @@
 				</FeatureAttack>
 			</FeatureAttacks>
 			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_MILITIA</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
 				<UnitCombat>
 					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
 					<bUnitCombat>1</bUnitCombat>

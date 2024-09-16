@@ -148,13 +148,13 @@ dGoals = {
 	iMississippi: (
 		TerrainCount(iWideRiver, 20, by=1000),
 		All(
-			BuildingCount(iPlatformMound, 5),
+			BuildingCount(iPlatformMound, 6),
 			Wonder(iSerpentMound),
 			by=1200,
 		),
 		All(
 			CityBuilding(city(tCahokia).named(CAHOKIA), iPalace),
-			CitySpecialistCount(city(tCahokia).named(CAHOKIA), iSpecialistGreatMerchant, 2),
+			CitySpecialistCount(city(tCahokia).named(CAHOKIA), iSpecialistGreatMerchant, 3),
 			by=1400,
 		),
 	),
