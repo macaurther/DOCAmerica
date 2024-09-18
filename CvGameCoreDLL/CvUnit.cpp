@@ -6130,7 +6130,7 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 			return false;
 		}
 
-		if (!pCity->canSlaveJoin(eSpecialist))
+		if (!pCity->canSlaveJoin())
 		{
 			return false;
 		}

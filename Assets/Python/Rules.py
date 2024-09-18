@@ -191,10 +191,8 @@ def validateSlaves(iPlayer):
 	if not player(iPlayer).canUseSlaves():
 		
 		for city in cities.owner(iPlayer):
-			iNumSlaves = 0
-			for iSpecialistSlave in lSlaveSpecialists:
-				iNumSlaves += city.getFreeSpecialistCount(iSpecialistSlave)
-				city.setFreeSpecialistCount(iSpecialistSlave, 0)
+			iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
+			city.setFreeSpecialistCount(iSpecialistSlave, 0)
 			
 			# Emancipation Civic
 			if player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation2, iEmancipation3]:

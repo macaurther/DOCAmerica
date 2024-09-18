@@ -17742,30 +17742,14 @@ bool CvCity::isColony() const
 }
 
 // Leoreth: at most half of the population may be slaves
-bool CvCity::canSlaveJoin(SpecialistTypes eSpecialistType) const
+bool CvCity::canSlaveJoin() const
 {
 	if (!GET_PLAYER(getOwnerINLINE()).canUseSlaves()) return false;
+	
+	// MacAurther: removing this restriction
+	//if (!isColony()) return false;	
 
-	// MacAurther: Different slave types need different improvements
-	switch (eSpecialistType)
-	{
-		case SPECIALIST_SLAVE_FARMER:
-			if (countNumImprovedPlots(IMPROVEMENT_FARM) == 0) return false;
-			break;
-		case SPECIALIST_SLAVE_MINER:
-			if (countNumImprovedPlots(IMPROVEMENT_MINE) == 0) return false;
-			break;
-		case SPECIALIST_SLAVE_PLANTER:
-			if (countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0 && countNumImprovedPlots(IMPROVEMENT_ORCHARD) == 0) return false;
-			break;
-		default:
-			if (countNumImprovedPlots(IMPROVEMENT_FARM) == 0 && countNumImprovedPlots(IMPROVEMENT_MINE) == 0 && countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;
-			break;
-	}
-
-	int iNumSlaves = getFreeSpecialistCount(SPECIALIST_SLAVE_FARMER);
-	iNumSlaves += getFreeSpecialistCount(SPECIALIST_SLAVE_MINER);
-	iNumSlaves += getFreeSpecialistCount(SPECIALIST_SLAVE_PLANTER);
+	int iNumSlaves = getFreeSpecialistCount(SPECIALIST_SLAVE);
 	return (2 * iNumSlaves < getPopulation());
 }
 

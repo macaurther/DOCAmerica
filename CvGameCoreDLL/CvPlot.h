@@ -579,6 +579,8 @@ public:
 	int getContinentID() const;
 	int getRegionGroup() const;
 
+	bool isSlaveImprovement() const;
+	
 	// MacAurther
 	void improveTile();
 	bool isCornerNavigable() const;

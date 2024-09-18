@@ -1542,23 +1542,7 @@
 			</CommerceModifiers>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_SLAVE_FARMER</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_SLAVE_MINER</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_SLAVE_PLANTER</SpecialistType>
+					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
@@ -1566,6 +1550,24 @@
 					</YieldChanges>
 				</SpecialistTypeExtraYield>
 			</SpecialistTypeExtraYields>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_SLAVE_PLANTATION</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_SLAVE_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -2454,23 +2456,7 @@
 			</CommerceModifiers>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_SLAVE_FARMER</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_SLAVE_MINER</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>0</iYield>
-						<iYield>1</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_SLAVE_PLANTER</SpecialistType>
+					<SpecialistType>SPECIALIST_SLAVE</SpecialistType>
 					<YieldChanges>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
@@ -2478,6 +2464,24 @@
 					</YieldChanges>
 				</SpecialistTypeExtraYield>
 			</SpecialistTypeExtraYields>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_SLAVE_PLANTATION</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_SLAVE_MINE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>

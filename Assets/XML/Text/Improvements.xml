@@ -14,6 +14,18 @@
 		<Spanish>Ocean Fishery</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_SLAVE_PLANTATION</Tag>
+		<English>Slave Plantation</English>
+		<French>
+			<Text>Plantation &#224; esclaves</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Slave Plantation</German>
+		<Italian>Slave Plantation</Italian>
+		<Spanish>Slave Plantation</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_ORCHARD</Tag>
 		<English>Orchard</English>
 		<French>
@@ -102,11 +114,11 @@
 		<Spanish>Contacted Tribe</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMPROVEMENT_FORT_HELP</Tag>
-		<English>[ICON_BULLET]Controls territory</English>
-		<French>[ICON_BULLET]Controls territory</French>
-		<German>[ICON_BULLET]Controls territory</German>
-		<Italian>[ICON_BULLET]Controls territory</Italian>
-		<Spanish>[ICON_BULLET]Controls territory</Spanish>
+		<Tag>TXT_KEY_IMPROVEMENT_SLAVE_MINE</Tag>
+		<English>Slave Mine</English>
+		<French>Slave Mine</French>
+		<German>Slave Mine</German>
+		<Italian>Slave Mine</Italian>
+		<Spanish>Slave Mine</Spanish>
 	</TEXT>
 </Civ4GameText>

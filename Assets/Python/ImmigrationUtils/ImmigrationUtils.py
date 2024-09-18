@@ -448,7 +448,7 @@ class ImmigrationUtils:
 			# Get excess happiness in cities that can have slaves
 			iExcessHappiness = 0
 			for pCity in lCities:
-				if pCity.canSlaveJoin(iSpecialistSlavePlanter):	# only really want to spend immigration on slaves to be planeters
+				if pCity.canSlaveJoin():
 					iExcessHappiness += max(pCity.happyLevel() - pCity.unhappyLevel(0), 0)	# Truncate to be non-negative per city
 		
 			lCategoryDesire[iSlavesCat] = min(iExcessHappiness, 3) - lNumUnitsInCategories[iSlavesCat]	# Max at 3 at any given time

@@ -1823,28 +1823,12 @@
 		<Spanish>Great Statesman</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_SLAVE_FARMER</Tag>
-		<English>Slave Farmer</English>
-		<French>Slave Farmer</French>
-		<German>Slave Farmer</German>
-		<Italian>Slave Farmer</Italian>
-		<Spanish>Slave Farmer</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_SLAVE_MINER</Tag>
-		<English>Slave Miner</English>
-		<French>Slave Miner</French>
-		<German>Slave Miner</German>
-		<Italian>Slave Miner</Italian>
-		<Spanish>Slave Miner</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_SPECIALIST_SLAVE_PLANTER</Tag>
-		<English>Slave Planter</English>
-		<French>Slave Planter</French>
-		<German>Slave Planter</German>
-		<Italian>Slave Planter</Italian>
-		<Spanish>Slave Planter</Spanish>
+		<Tag>TXT_KEY_SPECIALIST_SLAVE</Tag>
+		<English>Slave</English>
+		<French>Slave</French>
+		<German>Slave</German>
+		<Italian>Slave</Italian>
+		<Spanish>Slave</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALIST_STATESMAN</Tag>

@@ -408,10 +408,8 @@ def freeSlaves(city, iPlayer):
 	if player(iPlayer).canUseSlaves():
 		return
 
-	iNumSlaves = 0
-	for iSpecialistSlave in lSlaveSpecialists:
-		iNumSlaves += city.getFreeSpecialistCount(iSpecialistSlave)
-		city.setFreeSpecialistCount(iSpecialistSlave, 0)
+	iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
+	city.setFreeSpecialistCount(iSpecialistSlave, 0)
 	
 	# MacAurther: Haiti UP: freed slaves give soldiers
 	if civ(iPlayer) == iHaiti:

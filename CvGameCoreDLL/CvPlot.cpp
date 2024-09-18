@@ -12001,6 +12001,11 @@ int CvPlot::getRegionGroup() const
 	}
 }
 
+bool CvPlot::isSlaveImprovement() const
+{
+	return getImprovementType() == IMPROVEMENT_SLAVE_MINE || getImprovementType() == IMPROVEMENT_SLAVE_PLANTATION;
+}
+
 
 // MacAurther: If the tile has a resource, build the appropriate improvement. If not, build a cottage
 void CvPlot::improveTile()

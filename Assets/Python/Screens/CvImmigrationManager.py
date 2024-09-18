@@ -510,8 +510,6 @@ class CvImmigrationManager:
 		
 		# Get the data
 		theKey = int(inputClass.getData())
-		
-		print("TEMP: inputClass.getFunctionName(): " + inputClass.getFunctionName())
 
 		# If the escape key was pressed then set the current screen to mercenary manager
 		if (inputClass.getNotifyCode() == self.EventKeyDown and theKey == int(InputTypes.KB_ESCAPE)):
@@ -536,8 +534,6 @@ class CvImmigrationManager:
 			# Split up the function name into the mercenary name and the actual
 			# action that was performed
 			sMercenary, function = inputClass.getFunctionName().split("-")
-			
-			print("TEMP: function: " + function + "and sMercenary: " + sMercenary)
 			
 			self.screenFunction = function
 			

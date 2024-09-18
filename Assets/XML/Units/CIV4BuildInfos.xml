@@ -60,7 +60,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -125,7 +125,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -235,7 +235,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -282,6 +282,43 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildMine.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,7</Button>
 		</BuildInfo>
 		<BuildInfo>
+			<Type>BUILD_SLAVE_MINE</Type>
+			<Description>TXT_KEY_BUILD_SLAVE_MINE</Description>
+			<iTime>0</iTime>
+			<bKill>1</bKill>
+			<ImprovementType>IMPROVEMENT_SLAVE_MINE</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<iTime>200</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<PrereqTech>TECH_HYDROLOGY</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_M</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildMine.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,6,7</Button>
+		</BuildInfo>
+		<BuildInfo>
 			<Type>BUILD_WORKSHOP</Type>
 			<Description>TXT_KEY_BUILD_WORKSHOP</Description>
 			<PrereqTech>TECH_ARTISANRY</PrereqTech>
@@ -293,7 +330,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -331,6 +368,13 @@
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_K</HotKey>
 			<bAltDown>0</bAltDown>
@@ -351,7 +395,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>400</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -374,7 +418,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -432,7 +476,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -490,7 +534,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -537,6 +581,38 @@
 			<Button>,Art/Interface/Buttons/Builds/BuildPlantation.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,9</Button>
 		</BuildInfo>
 		<BuildInfo>
+			<Type>BUILD_SLAVE_PLANTATION</Type>
+			<Description>TXT_KEY_BUILD_SLAVE_PLANTATION</Description>
+			<PrereqTech>TECH_CALENDAR</PrereqTech>
+			<iTime>0</iTime>
+			<bKill>1</bKill>
+			<ImprovementType>IMPROVEMENT_SLAVE_PLANTATION</ImprovementType>
+			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
+			<FeatureStructs>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<iTime>0</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>1</bRemove>
+				</FeatureStruct>
+			</FeatureStructs>
+			<HotKey>KB_P</HotKey>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>1</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>1</iHotKeyPriority>
+			<Button>,Art/Interface/Buttons/Builds/BuildPlantation.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,1,9</Button>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</BuildInfo>
+		<BuildInfo>
 			<Type>BUILD_QUARRY</Type>
 			<Description>TXT_KEY_BUILD_QUARRY</Description>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
@@ -548,7 +624,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -606,7 +682,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -621,7 +697,7 @@
 					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
-					<bRemove>1</bRemove>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
@@ -678,7 +754,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -755,7 +831,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -792,6 +868,13 @@
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_O</HotKey>
@@ -813,7 +896,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -850,6 +933,13 @@
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_T</HotKey>
@@ -871,7 +961,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
@@ -908,6 +998,13 @@
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_T</HotKey>
@@ -952,7 +1049,7 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<PrereqTech>TECH_ECOLOGY</PrereqTech>
 					<iTime>600</iTime>
-					<iProduction>0</iProduction>
+					<iProduction>20</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
@@ -1236,6 +1333,13 @@
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1287,6 +1391,13 @@
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_I</HotKey>
@@ -1392,6 +1503,13 @@
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
 				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
+				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_K</HotKey>
 			<bAltDown>0</bAltDown>
@@ -1443,6 +1561,13 @@
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>TECH_ALLOYS</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_W</HotKey>
@@ -1525,7 +1650,7 @@
 					<PrereqTech>TECH_CALENDAR</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>40</iProduction>
-					<bRemove>1</bRemove>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
@@ -1811,6 +1936,13 @@
 					<iTime>200</iTime>
 					<iProduction>10</iProduction>
 					<bRemove>1</bRemove>
+				</FeatureStruct>
+				<FeatureStruct>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<PrereqTech>NONE</PrereqTech>
+					<iTime>400</iTime>
+					<iProduction>0</iProduction>
+					<bRemove>0</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
 			<HotKey>KB_T</HotKey>

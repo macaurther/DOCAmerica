@@ -614,15 +614,14 @@ iNumCivicsPerCategory = 7
 
 
 #Specialists
-iNumSpecialists = 18
+iNumSpecialists = 16
 #				            2				            3				            4				            5
 (iSpecialistCitizen,        iSpecialistPriest,          iSpecialistArtist,          iSpecialistScientist,       iSpecialistMerchant,
 iSpecialistEngineer,        iSpecialistStatesman,       iSpecialistGreatProphet,    iSpecialistGreatArtist,     iSpecialistGreatScientist, 
 iSpecialistGreatMerchant,   iSpecialistGreatEngineer,   iSpecialistGreatStatesman,  iSpecialistGreatGeneral,    iSpecialistGreatSpy,
-iSpecialistSlaveFarmer,		iSpecialistSlaveMiner,		iSpecialistSlavePlanter) = range(iNumSpecialists)
+iSpecialistSlave) = range(iNumSpecialists)
 
 lGreatSpecialists = [iSpecialistGreatProphet, iSpecialistGreatArtist, iSpecialistGreatScientist, iSpecialistGreatMerchant, iSpecialistGreatEngineer, iSpecialistGreatStatesman, iSpecialistGreatGeneral, iSpecialistGreatSpy]
-lSlaveSpecialists = [iSpecialistSlaveFarmer, iSpecialistSlaveMiner, iSpecialistSlavePlanter]
 
 #Stability Levels
 iNumStabilityLevels = 5

@@ -262,7 +262,7 @@ dGoals = {
 		CityCount(sum(
 			plots.regions(*lBrazil).named(BRAZIL),
 		), 15, by=1700),
-		SpecialistCount(iSpecialistSlavePlanter, 40, by=1800),
+		SpecialistCount(iSpecialistSlave, 40, by=1800),
 	),
 	iEngland: (
 		CityCount(
