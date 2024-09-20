@@ -55,6 +55,12 @@ def resetNationalWonders(iOwner, iPlayer, city, bConquest, bTrade):
 				city.setHasRealBuilding(iNationalWonder, False)
 
 
+@handler("cityAcquired")
+def downgradeCottages(iOwner, iPlayer, city, bConquest, bTrade):
+	if bConquest and player(iPlayer).getCurrentEra() <= iRevolutionaryEra:
+		downgradeCityCottages(city)
+
+
 ### CITY ACQUIRED AND KEPT ###
 	
 @handler("cityAcquiredAndKept")
@@ -175,7 +181,7 @@ def mayanHolkanAbility(winningUnit, losingUnit):
 		iWinner = winningUnit.getOwner()
 		if player(iWinner).getNumCities() > 0:
 			city = closestCity(winningUnit, iWinner)
-			if city:
+			if city and distance(winningUnit, city) <= 10:
 				iFood = scale(5)
 				city.changeFood(iFood)
 				
@@ -189,6 +195,13 @@ def mayanHolkanAbility(winningUnit, losingUnit):
 @handler("revolution")
 def validateSlaves(iPlayer):
 	if not player(iPlayer).canUseSlaves():
+		if player(iPlayer).getImprovementCount(iSlavePlantation) > 0:
+			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlavePlantation):
+				plot.setImprovementType(iPlantation)
+		
+		if player(iPlayer).getImprovementCount(iSlaveMine) > 0:
+			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlaveMine):
+				plot.setImprovementType(iMine)
 		
 		for city in cities.owner(iPlayer):
 			iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)

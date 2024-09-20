@@ -7033,9 +7033,18 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 	// MacAurther: Andes RP: +1 Food on Farms on Hills
 	if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ANDES)
 	{
-		if (eYield == YIELD_FOOD && isHills() && eImprovement == GC.getInfoTypeForString("IMPROVEMENT_FARM"))
+		if (eYield == YIELD_FOOD && isHills() && eImprovement == IMPROVEMENT_FARM)
 		{
 			iYield += 1;
+		}
+	}
+
+	// MacAurther: Spanish UP: +2 Gold from Slave Mines
+	if (ePlayer != NO_PLAYER && GET_PLAYER(ePlayer).getCivilizationType() == SPAIN)
+	{
+		if (eYield == YIELD_COMMERCE && eImprovement == IMPROVEMENT_SLAVE_MINE)
+		{
+			iYield += 2;
 		}
 	}
 

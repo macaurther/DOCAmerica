@@ -13896,11 +13896,6 @@ int CvPlayer::getSpecialistExtraYield(SpecialistTypes eIndex1, YieldTypes eIndex
 			return 0;
 		}
 	}
-	// MacAurther: Spanish UP: +1 Gold from Slaves
-	if (eIndex1 == SPECIALIST_SLAVE && eIndex2 == YIELD_COMMERCE && getCivilizationType() == SPAIN)
-	{
-		return m_ppaaiSpecialistExtraYield[eIndex1][eIndex2] + 1;
-	}
 
 	return m_ppaaiSpecialistExtraYield[eIndex1][eIndex2];
 }
