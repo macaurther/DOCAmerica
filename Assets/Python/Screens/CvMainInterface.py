@@ -519,7 +519,7 @@ class CvMainInterface:
 		screen.setStyle( "InterfaceCenterRightBackgroundWidget", "Panel_City_Right_Style" )
 		screen.hide( "InterfaceCenterRightBackgroundWidget" )
 		
-		screen.addPanel( "CityScreenAdjustPanel", u"", u"", True, False, 10, 44, 238, 105, PanelStyles.PANEL_STYLE_STANDARD )
+		screen.addPanel( "CityScreenAdjustPanel", u"", u"", True, False, 10, 44, 238, 105+20, PanelStyles.PANEL_STYLE_STANDARD ) # MacAurther: Make room for Immigration slider
 		screen.setStyle( "CityScreenAdjustPanel", "Panel_City_Info_Style" )
 		screen.hide( "CityScreenAdjustPanel" )
 		
@@ -1016,17 +1016,17 @@ class CvMainInterface:
 		screen.setImageButton( self.PLE.PLOT_LIST_DOWN_NAME, ArtFileMgr.getInterfaceArtInfo("PLE_ARROW_DOWN").getPath(), 298 + ( xResolution - (iMultiListXL+iMultiListXR) - 34 ) + 5, yResolution - 171 + 5, 20, 20, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.hide( self.PLE.PLOT_LIST_DOWN_NAME )
 # BUG - PLE - end
-
-		screen.addPanel( "TradeRouteListBackground", u"", u"", True, False, 10, 157, 238, 30, PanelStyles.PANEL_STYLE_STANDARD )
+		
+		screen.addPanel( "TradeRouteListBackground", u"", u"", True, False, 10, 157+20, 238, 30, PanelStyles.PANEL_STYLE_STANDARD ) # MacAurther: Make room for Immigration Slider
 		screen.setStyle( "TradeRouteListBackground", "Panel_City_Header_Style" )
 		screen.hide( "TradeRouteListBackground" )
 
-		screen.setLabel( "TradeRouteListLabel", "Background", localText.getText("TXT_KEY_HEADING_TRADEROUTE_LIST", ()), CvUtil.FONT_CENTER_JUSTIFY, 129, 165, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.setLabel( "TradeRouteListLabel", "Background", localText.getText("TXT_KEY_HEADING_TRADEROUTE_LIST", ()), CvUtil.FONT_CENTER_JUSTIFY, 129, 165+20, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 ) # MacAurther: Make room for Immigration Slider
 		screen.hide( "TradeRouteListLabel" )
 		
 # BUG - Raw Yields - start
 		nX = 10 + 24
-		nY = 157 + 5
+		nY = 157 + 5+20 # MacAurther: Make room for Immigration Slider
 		nSize = 24
 		nDist = 24
 		nGap = 10
@@ -1071,11 +1071,11 @@ class CvMainInterface:
 		screen.hide("BUGOptionsScreenWidget")
 # BUG - BUG Option Button - End
 
-		screen.addPanel( "BuildingListBackground", u"", u"", True, False, 10, 287, 238, 30, PanelStyles.PANEL_STYLE_STANDARD )
+		screen.addPanel( "BuildingListBackground", u"", u"", True, False, 10, 287+20, 238, 30, PanelStyles.PANEL_STYLE_STANDARD ) # MacAurther: Make room for Immigration Slider
 		screen.setStyle( "BuildingListBackground", "Panel_City_Header_Style" )
 		screen.hide( "BuildingListBackground" )
 
-		screen.setLabel( "BuildingListLabel", "Background", localText.getText("TXT_KEY_CONCEPT_BUILDINGS", ()), CvUtil.FONT_CENTER_JUSTIFY, 129, 295, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.setLabel( "BuildingListLabel", "Background", localText.getText("TXT_KEY_CONCEPT_BUILDINGS", ()), CvUtil.FONT_CENTER_JUSTIFY, 129, 295+20, -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 ) # MacAurther: Make room for Immigration Slider
 		screen.hide( "BuildingListLabel" )
 
 		# *********************************************************************************
@@ -1395,8 +1395,11 @@ class CvMainInterface:
 				for iI in range( CommerceTypes.NUM_COMMERCE_TYPES ):
 					# Intentional offset...
 					eCommerce = (iI + 1) % CommerceTypes.NUM_COMMERCE_TYPES
-										
-					if (gc.getActivePlayer().isCommerceFlexible(eCommerce) or (CyInterface().isCityScreenUp() and (eCommerce == CommerceTypes.COMMERCE_GOLD))):
+					
+					# MacAurther: We want to show Immigration yields as soon as Immigration can be used, so that players can tell how much each city generates at a glance
+					bShowImmigration = self.isShowImmigration(eCommerce, pHeadSelectedCity)
+					
+					if (gc.getActivePlayer().isCommerceFlexible(eCommerce) or (CyInterface().isCityScreenUp() and (eCommerce == CommerceTypes.COMMERCE_GOLD)) or bShowImmigration):
 # BUG - Min/Max Sliders - start
 						bEnable = gc.getActivePlayer().isCommerceFlexible(eCommerce)
 						if MainOpt.isShowMinMaxCommerceButtons() and not CyInterface().isCityScreenUp():
@@ -3164,7 +3167,12 @@ class CvMainInterface:
 				iCount = 0
 				for iI in range( CommerceTypes.NUM_COMMERCE_TYPES ):
 					eCommerce = (iI + 1) % CommerceTypes.NUM_COMMERCE_TYPES
-					if (gc.getPlayer(ePlayer).isCommerceFlexible(eCommerce) or (CyInterface().isCityScreenUp() and (eCommerce == CommerceTypes.COMMERCE_GOLD))):
+					
+					# MacAurther: We want to show Immigration yields as soon as Immigration can be used, so that players can tell how much each city generates at a glance
+					bShowImmigration = self.isShowImmigration(eCommerce, pHeadSelectedCity)
+					
+					if (gc.getPlayer(ePlayer).isCommerceFlexible(eCommerce) or (CyInterface().isCityScreenUp() and (eCommerce == CommerceTypes.COMMERCE_GOLD)) or bShowImmigration):
+						
 						szOutText = u"<font=2>%c:%d%%</font>" %(gc.getCommerceInfo(eCommerce).getChar(), gc.getPlayer(ePlayer).getCommercePercent(eCommerce))
 						szString = "PercentText" + str(iI)
 						screen.setLabel( szString, "Background", szOutText, CvUtil.FONT_LEFT_JUSTIFY, 14, 50 + (iCount * 19), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
@@ -3912,8 +3920,11 @@ class CvMainInterface:
 
 				for i in range(CommerceTypes.NUM_COMMERCE_TYPES):
 					eCommerce = (i + 1) % CommerceTypes.NUM_COMMERCE_TYPES
-
-					if ((gc.getPlayer(pHeadSelectedCity.getOwner()).isCommerceFlexible(eCommerce)) or (eCommerce == CommerceTypes.COMMERCE_GOLD)):
+					
+					# MacAurther: We want to show Immigration yields as soon as Immigration can be used, so that players can tell how much each city generates at a glance
+					bShowImmigration = self.isShowImmigration(eCommerce, pHeadSelectedCity)
+					
+					if ((gc.getPlayer(pHeadSelectedCity.getOwner()).isCommerceFlexible(eCommerce)) or (eCommerce == CommerceTypes.COMMERCE_GOLD) or bShowImmigration):
 						if eCommerce == CommerceTypes.COMMERCE_CULTURE:
 							iCommerceRate = pHeadSelectedCity.getModifiedCultureRate()
 							iCommerceRateTimes100 = pHeadSelectedCity.getModifiedCultureRateTimes100()
@@ -3939,13 +3950,13 @@ class CvMainInterface:
 
 				iCount = 0
 
-				screen.addTableControlGFC( "BuildingListTable", 3, 10, 317, 238, yResolution - 541, False, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD )
+				screen.addTableControlGFC( "BuildingListTable", 3, 10, 317+20, 238, yResolution - 541, False, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD ) # MacAurther: Make room for Immigration Slider
 				screen.setStyle( "BuildingListTable", "Table_City_Style" )
 				
 # BUG - Raw Yields - start
 				bShowRawYields = g_bYieldView and CityScreenOpt.isShowRawYields()
 				if (bShowRawYields):
-					screen.addTableControlGFC( "TradeRouteTable", 4, 10, 187, 238, 98, False, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD )
+					screen.addTableControlGFC( "TradeRouteTable", 4, 10, 187+20, 238, 98, False, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD ) # MacAurther: Make room for Immigration Slider
 					screen.setStyle( "TradeRouteTable", "Table_City_Style" )
 					screen.setTableColumnHeader( "TradeRouteTable", 0, u"", 111 )
 					screen.setTableColumnHeader( "TradeRouteTable", 1, u"", 60 )
@@ -3954,7 +3965,7 @@ class CvMainInterface:
 					screen.setTableColumnRightJustify( "TradeRouteTable", 1 )
 					screen.setTableColumnRightJustify( "TradeRouteTable", 2 )
 				else:
-					screen.addTableControlGFC( "TradeRouteTable", 3, 10, 187, 238, 98, False, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD )
+					screen.addTableControlGFC( "TradeRouteTable", 3, 10, 187+20, 238, 98, False, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD ) # MacAurther: Make room for Immigration Slider
 					screen.setStyle( "TradeRouteTable", "Table_City_Style" )
 					screen.setTableColumnHeader( "TradeRouteTable", 0, u"", 158 )
 					screen.setTableColumnHeader( "TradeRouteTable", 1, u"", 68 )
@@ -4232,11 +4243,11 @@ class CvMainInterface:
 
 				szBuffer = localText.getText("INTERFACE_CITY_MAINTENANCE", ())
 				
-				screen.setLabel( "MaintenanceText", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, 15, 126, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_MAINTENANCE, -1, -1 )
+				screen.setLabel( "MaintenanceText", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, 15, 126+20, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_MAINTENANCE, -1, -1 ) # MacAurther: Make room for Immigration Slider
 				screen.show( "MaintenanceText" )
 				
 				szBuffer = u"-%d.%02d %c" %(iMaintenance/100, iMaintenance%100, gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
-				screen.setLabel( "MaintenanceAmountText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 220, 125, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_MAINTENANCE, -1, -1 )
+				screen.setLabel( "MaintenanceAmountText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, 220, 125+20, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_MAINTENANCE, -1, -1 ) # MacAurther: Make room for Immigration Slider
 				screen.show( "MaintenanceAmountText" )
 				
 # BUG - Raw Yields - start
@@ -5906,3 +5917,13 @@ class CvMainInterface:
 			return ""
 	
 		return u"<font=2>%c</font>" % FontUtil.getChar(paganReligionName.lower())
+	
+	# MacAurther: determine if Immigration should be showing in UI
+	def isShowImmigration(self, eCommerce, pHeadSelectedCity):
+		if eCommerce != CommerceTypes.COMMERCE_IMMIGRATION:
+			return False
+		if pHeadSelectedCity:
+			pPlayer = gc.getPlayer(pHeadSelectedCity.getOwner())
+		else:
+			pPlayer = gc.getPlayer(gc.getGame().getActivePlayer())
+		return gc.getTeam(pPlayer.getTeam()).isHasTech(iOldWorldCulture)
