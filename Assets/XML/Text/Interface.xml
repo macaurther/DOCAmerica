@@ -1119,6 +1119,30 @@
 		<Spanish>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_COOPERATION_EFFECT</Tag>
+		<English>Converted tribespeople settle in %s1.</English>
+		<French>Converted tribespeople settle in %s1.</French>
+		<German>Converted tribespeople settle in %s1.</German>
+		<Italian>Converted tribespeople settle in %s1.</Italian>
+		<Spanish>Converted tribespeople settle in %s1.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXTRACTION_FEATURE</Tag>
+		<English>Overextraction has removed a feature!</English>
+		<French>Overextraction has removed a feature!</French>
+		<German>Overextraction has removed a feature!</German>
+		<Italian>Overextraction has removed a feature!</Italian>
+		<Spanish>Overextraction has removed a feature!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EXTRACTION_BONUS</Tag>
+		<English>Overextraction has removed a resource!</English>
+		<French>Overextraction has removed a resource!</French>
+		<German>Overextraction has removed a resource!</German>
+		<Italian>Overextraction has removed a resource!</Italian>
+		<Spanish>Overextraction has removed a resource!</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMMIGRATION_SCREEN_TITLE</Tag>
 		<English>Immigration Manager</English>
 		<French>Immigration Manager</French>

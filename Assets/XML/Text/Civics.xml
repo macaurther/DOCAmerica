@@ -609,11 +609,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATIVE_HELP</Tag>
-		<English>[ICON_BULLET]Tribes in your borders improve their tile</English>
-		<French>[ICON_BULLET]Tribes in your borders improve their tile</French>
-		<German>[ICON_BULLET]Tribes in your borders improve their tile</German>
-		<Italian>[ICON_BULLET]Tribes in your borders improve their tile</Italian>
-		<Spanish>[ICON_BULLET]Tribes in your borders improve their tile</Spanish>
+		<English>[ICON_BULLET]Converts Tribes in borders</English>
+		<French>[ICON_BULLET]Converts Tribes in borders</French>
+		<German>[ICON_BULLET]Converts Tribes in borders</German>
+		<Italian>[ICON_BULLET]Converts Tribes in borders</Italian>
+		<Spanish>[ICON_BULLET]Converts Tribes in borders</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONFEDERACY_NATION_STRATEGY</Tag>
@@ -1522,11 +1522,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_COOPERATION_STRATEGY</Tag>
-		<English>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes</English>
-		<French>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes</French>
-		<German>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes</German>
-		<Italian>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes</Italian>
-		<Spanish>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes</Spanish>
+		<English>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes; extra population on Tribe conversion</English>
+		<French>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes; extra population on Tribe conversion</French>
+		<German>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes; extra population on Tribe conversion</German>
+		<Italian>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes; extra population on Tribe conversion</Italian>
+		<Spanish>Extra [ICON_FOOD], [ICON_PRODUCTION], and [ICON_COMMERCE] on Tribes; extra population on Tribe conversion</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_COOPERATION_NATIVE_HELP</Tag>
+		<English>[ICON_BULLET]+1 Population in nearby city when converting a Tribe</English>
+		<French>[ICON_BULLET]+1 Population in nearby city when converting a Tribe</French>
+		<German>[ICON_BULLET]+1 Population in nearby city when converting a Tribe</German>
+		<Italian>[ICON_BULLET]+1 Population in nearby city when converting a Tribe</Italian>
+		<Spanish>[ICON_BULLET]+1 Population in nearby city when converting a Tribe</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ANCESTRAL_LANDS</Tag>
@@ -1850,11 +1858,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_EXTRACTION_STRATEGY</Tag>
-		<English>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps</English>
-		<French>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps</French>
-		<German>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps</German>
-		<Italian>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps</Italian>
-		<Spanish>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps</Spanish>
+		<English>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps; chance to lose features and resources</English>
+		<French>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps; chance to lose features and resources</French>
+		<German>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps; chance to lose features and resources</German>
+		<Italian>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps; chance to lose features and resources</Italian>
+		<Spanish>Extra [ICON_COMMERCE] on mines; extra [ICON_PRODUCTION] on lumbercamps; extra [ICON_FOOD] on camps; chance to lose features and resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_EXTRACTION_HELP</Tag>
+		<English>[ICON_BULLET]Chance to remove worked features and resources</English>
+		<French>[ICON_BULLET]Chance to remove worked features and resources</French>
+		<German>[ICON_BULLET]Chance to remove worked features and resources</German>
+		<Italian>[ICON_BULLET]Chance to remove worked features and resources</Italian>
+		<Spanish>[ICON_BULLET]Chance to remove worked features and resources</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_PROTECTIONISM</Tag>

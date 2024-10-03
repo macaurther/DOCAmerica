@@ -130,6 +130,20 @@ def extraCultureOnFound(city):
 		
 		player(city.getOwner()).changeImmigration(iSettleImmigration)
 
+### GOODY RECEIVED ###
+
+@handler("goodyReceived")
+def cooperationAbility(iPlayer, pPlot, pUnit, iGoodyType):
+	iExpansionCivic = player(iPlayer).getCivics(iCivicsExpansion)
+	if iExpansionCivic == iCooperation1:
+		if player(iPlayer).getNumCities() > 0:
+			pCity = closestCity(pPlot, iPlayer)
+			if pCity and distance(pPlot, pCity) <= 10:
+				pCity.changePopulation(1)
+				
+				message(iPlayer, 'TXT_KEY_COOPERATION_EFFECT', pCity.getName())
+
+
 ### COMBAT RESULT ###
 		
 @handler("combatResult")
@@ -242,7 +256,7 @@ def resetAdminCenterOnPalaceBuilt(city):
 def brazilianMadeireiroAbility(plot, city, iFeature):
 	dFeatureGold = defaultdict({
 		iForest : 15,
-		iSavanna : 15,
+		iPalmForest : 15,
 		iJungle : 20,
 		iRainforest : 20,
 	}, 0)
@@ -289,6 +303,35 @@ def updateLastTurnAlive(iPlayer, bAlive):
 	if not bAlive and not (player(iPlayer).isHuman() and autoplay()):
 		data.civs[iPlayer].iLastTurnAlive = game.getGameTurn()
 
+### END PLAYER TURN ###
+
+@handler("EndPlayerTurn")
+# Chance to remove worked feature/bonus is totalPop / 100 (if player has more than 100 pop, it's 1 loss every turn)
+def extractionAbility(iGameTurn, iPlayer):
+	pPlayer = player(iPlayer)
+	iEconomyCivic = pPlayer.getCivics(iCivicsEconomy)
+	if iEconomyCivic == iExtraction3:
+		iPopulation = pPlayer.getTotalPopulation()
+		if iPopulation > rand(100):
+			# Search for a random city to check
+			iCityNum = rand(pPlayer.getNumCities() - 1)
+			if iCityNum < 1: return
+			
+			pCity = cities.owner(iPlayer)[iCityNum]
+			if pCity == None: return
+			
+			for i in range(gc.getNUM_CITY_PLOTS()):
+				pPlot = pCity.getCityIndexPlot(i)
+				if pPlot and not pPlot.isNone() and pPlot.hasYield():
+					if pCity.isWorkingPlot(pPlot):
+						if pPlot.getFeatureType() != FeatureTypes.NO_FEATURE:
+							message(iPlayer, 'TXT_KEY_EXTRACTION_FEATURE', sound='SND_REVOLTEND', event=1, button=infos.feature(pPlot.getFeatureType()).getButton(), color=iRed, location=pPlot)
+							pPlot.setFeatureType(FeatureTypes.NO_FEATURE, 0)
+							return
+						elif pPlot.getBonusType(pPlayer.getTeam()) != BonusTypes.NO_BONUS:
+							message(iPlayer, 'TXT_KEY_EXTRACTION_BONUS', sound='SND_REVOLTEND', event=1, button=infos.bonus(pPlot.getBonusType(pPlayer.getTeam())).getButton(), color=iRed, location=pPlot)
+							pPlot.setBonusType(BonusTypes.NO_BONUS)
+							return
 
 ### PROJECT BUILT ###
 

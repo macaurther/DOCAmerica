@@ -789,6 +789,7 @@
 			<Description>TXT_KEY_CIVIC_COOPERATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_COOPERATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_COOPERATION_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_COOPERATION_NATIVE_HELP</Help>
 			<TechPrereq>TECH_CEREMONY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Cooperation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -2281,6 +2282,7 @@
 			<Description>TXT_KEY_CIVIC_EXTRACTION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_EXTRACTION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_EXTRACTION_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_EXTRACTION_HELP</Help>
 			<Button>,Art/Interface/Buttons/Civics/Extraction.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -2291,20 +2293,20 @@
 					<ImprovementYields>
 						<iYield>0</iYield>
 						<iYield>0</iYield>
-						<iYield>1</iYield>
+						<iYield>2</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_LUMBERMILL</ImprovementType>
 					<ImprovementYields>
 						<iYield>0</iYield>
-						<iYield>1</iYield>
+						<iYield>2</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_CAMP</ImprovementType>
 					<ImprovementYields>
-						<iYield>1</iYield>
+						<iYield>2</iYield>
 					</ImprovementYields>
 				</ImprovementYieldChange>
 			</ImprovementYieldChanges>
