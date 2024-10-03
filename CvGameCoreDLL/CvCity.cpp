@@ -8559,12 +8559,15 @@ bool CvCity::isBombardable(const CvUnit* pUnit) const
 
 int CvCity::getNaturalDefense() const
 {
+	int iExtraDefense = 0;
+	if (GET_PLAYER(getOwner()).getCivilizationType() == PUEBLOAN && plot()->isHills()) iExtraDefense = 20;	// MacAurther: Puebloan UP
+
 	if (getCultureLevel() == NO_CULTURELEVEL)
 	{
-		return 0;
+		return iExtraDefense;
 	}
 
-	return GC.getCultureLevelInfo(getCultureLevel()).getCityDefenseModifier();
+	return GC.getCultureLevelInfo(getCultureLevel()).getCityDefenseModifier() + iExtraDefense;
 }
 
 
@@ -14387,7 +14390,7 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate, 
 
 						if (pLoopPlot != NULL)
 						{
-							if (pLoopPlot->isPotentialCityWorkForArea(area()) || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC)
+							if (pLoopPlot->isPotentialCityWorkForArea(area()) || GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC || GET_PLAYER(getOwner()).getRegionPowers() == RP_LAKES_AND_RIVERS)
 							{
 								// Leoreth: cannot spread culture into birth protected civilizations
 								PlayerTypes eBirthProtectionPlayer = pLoopPlot->getBirthProtected();
@@ -17781,7 +17784,7 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 
 		iExtraCost += 100 * iDistance;
 
-		if (pPlot->isWater() && !pPlot->isLake() && pPlot->getBonusType() == -1 && iDistance > 1)
+		if (pPlot->isWater() && !pPlot->isLake() && pPlot->getBonusType() == -1 && iDistance > 1 && GET_PLAYER(getOwner()).getRegionPowers() != RP_LAKES_AND_RIVERS)	// MacAurther: Lakes and Rivers RP
 		{
 			if (!isCoastal(20))
 			{
@@ -17795,12 +17798,6 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 
 		// skip already owned tiles - no, only causes problems in case the controlling city is lost
 		//if (pPlot->getOwner() == getOwner()) iCost += 1000;
-
-		// even with Pacific RP water tiles should still be covered last
-		if (GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC && pPlot->isWater())
-		{
-			iExtraCost += GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();
-		}
 	}
 
 	if (pPlot->getBonusType() >= 0 && (GET_TEAM(GET_PLAYER(getOwner()).getTeam()).isHasTech((TechTypes)GC.getBonusInfo(pPlot->getBonusType()).getTechReveal()) || GET_PLAYER(getOwner()).getCivilizationType() == HAWAII)) // MacAurther: Includes Hawaii UP
@@ -17817,12 +17814,12 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 		iExtraCost += std::min(3, iDistance) * GC.getDefineINT("CULTURE_COST_DISTANCE");
 	}
 
-	if (plot()->isRiver() && pPlot->isRiver())
+	if (plot()->isRiver() && pPlot->isRiver() && GET_PLAYER(getOwner()).getRegionPowers() != RP_LAKES_AND_RIVERS)	// MacAurther: Lakes and Rivers RP
 	{
 		iExtraCost += GC.getDefineINT("CULTURE_COST_RIVER");
 	}
 
-	// Leoreth: Pacific RPs
+	// Leoreth -> MacAurther: Pacific RP
 	if (GET_PLAYER(getOwner()).getRegionPowers() == RP_PACIFIC && pPlot->isWater())
 	{
 		iExtraCost -= GC.getTerrainInfo(TERRAIN_OCEAN).getCultureCostModifier();

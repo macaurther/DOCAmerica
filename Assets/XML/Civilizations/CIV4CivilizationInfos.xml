@@ -1293,7 +1293,7 @@
 			<PaganReligion>PAGAN_RELIGION_GAIWIIO</PaganReligion>
 			<Impact>IMPACT_LIMITED</Impact>
 			<Identifier>HAU</Identifier>
-			<Region>WIL</Region>
+			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
 			<StartingYear>1450</StartingYear>
 			<LoadingTimes>
@@ -1753,7 +1753,7 @@
 			<PaganReligion>PAGAN_RELIGION_WOCEKIYA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>LAK</Identifier>
-			<Region>WIL</Region>
+			<Region>PLA</Region>
 			<CultureGroup>0</CultureGroup>
 			<StartingYear>1475</StartingYear>
 			<LoadingTimes>
@@ -2084,7 +2084,7 @@
 			<PaganReligion>PAGAN_RELIGION_MIDEWIWIN</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>MIS</Identifier>
-			<Region>WIL</Region>
+			<Region>LAK</Region>
 			<CultureGroup>0</CultureGroup>
 			<StartingYear>600</StartingYear>
 			<LoadingTimes>
@@ -2864,7 +2864,7 @@
 			<PaganReligion>PAGAN_RELIGION_KACHINA</PaganReligion>
 			<Impact>IMPACT_MARGINAL</Impact>
 			<Identifier>PUE</Identifier>
-			<Region>WIL</Region>
+			<Region>DES</Region>
 			<CultureGroup>0</CultureGroup>
 			<StartingYear>750</StartingYear>
 			<LoadingTimes>

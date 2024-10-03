@@ -35,10 +35,10 @@ def mayanPower(iTech, iTeam, iPlayer):
 				message(iPlayer, 'TXT_KEY_MAYA_UP_EFFECT', infos.tech(iTech).getText(), iFood)
 
 @handler("cityBuilt")
-# Puelboan UP
+# Desert RP
 def puebloanPower(city):
-	if civ(city.getOwner()) == iPuebloan and city.plot().isHills():
-		lFreeBuildings = [iGranary, iMarket, iStoneworks, iWalls]
+	if civ(city.getOwner()) in [iPuebloan]:
+		lFreeBuildings = [iGranary, iMarket, iStoneworks]
 		for iBuilding in lFreeBuildings:
 			if not city.isHasRealBuilding(iBuilding):
 				city.setHasRealBuilding(iBuilding, True)
@@ -68,7 +68,7 @@ def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 def iroquoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 	if civ(iPlayer) == iHaudenosaunee:
 		if year() > year(1600):
-			makeUnits(iPlayer, iArmedBrave, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
+			makeUnits(iPlayer, iArquebusier, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 		else:
 			makeUnits(iPlayer, iMohawk, pPlot, 1, UnitAITypes.UNITAI_ATTACK)
 

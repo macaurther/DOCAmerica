@@ -915,7 +915,7 @@ def captureUnit(pLosingUnit, pWinningUnit, iUnit, iChance):
 	
 	if rand(100) < iChance:
 		if iUnit in [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2, iAfricanSlave2, iAfricanSlave3]:
-			makeUnit(iPlayer, iUnit, pWinningUnit, UnitAITypes.UNITAI_WORKER)
+			pUnit = makeUnit(iPlayer, iUnit, pWinningUnit, UnitAITypes.UNITAI_WORKER)
 			message(pWinningUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=8, location=pWinningUnit)
 			message(pLosingUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_LOSE', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pWinningUnit)
 			
@@ -929,6 +929,7 @@ def captureUnit(pLosingUnit, pWinningUnit, iUnit, iChance):
 			if pUnit.canFight():
 				pUnit.finishMoves()
 				pUnit.setDamage(pUnit.maxHitPoints() / 2, -1)
+		return pUnit
 
 # used: Stability
 def flipOrRelocateGarrison(city, iNumDefenders):

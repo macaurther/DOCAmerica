@@ -249,24 +249,6 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
-					<UnitType>UNIT_HORSE_ARCHER</UnitType>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</LateArtDefineTag>
-					</UnitMeshGroup>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</LateArtDefineTag>
-					</UnitMeshGroup>
-					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</LateArtDefineTag>
-					</UnitMeshGroup>
-				</StyleUnit>
-				<StyleUnit>
 					<UnitType>UNIT_CROSSBOWMAN</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_CROSSBOWMAN_HAUDENOSAUNEE</EarlyArtDefineTag>
@@ -285,21 +267,39 @@
 					</UnitMeshGroup>
 				</StyleUnit>
 				<StyleUnit>
+					<UnitType>UNIT_ARQUEBUSIER</UnitType>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOHAWK</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOHAWK</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOHAWK</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOHAWK</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOHAWK</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOHAWK</LateArtDefineTag>
+					</UnitMeshGroup>
+					<UnitMeshGroup>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOHAWK</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOHAWK</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOHAWK</LateArtDefineTag>
+					</UnitMeshGroup>
+				</StyleUnit>
+				<StyleUnit>
 					<UnitType>UNIT_CUIRASSIER</UnitType>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</LateArtDefineTag>
 					</UnitMeshGroup>
 					<UnitMeshGroup>
-						<EarlyArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</EarlyArtDefineTag>
-						<MiddleArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</MiddleArtDefineTag>
-						<LateArtDefineTag>ART_DEF_UNIT_KNIGHT_HAUDENOSAUNEE</LateArtDefineTag>
+						<EarlyArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</EarlyArtDefineTag>
+						<MiddleArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</MiddleArtDefineTag>
+						<LateArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
 			</StyleUnits>

@@ -2675,7 +2675,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		break;
 	}
 
-	if (isAnimal())
+	// MacAurther: Let's allow animals to roam free and see what happens
+	/*if (isAnimal())
 	{
 		if (pPlot->isOwned())
 		{
@@ -2699,7 +2700,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 				return false;
 			}
 		}
-	}
+	}*/
 
 	if (isNoCapture())
 	{
@@ -12840,7 +12841,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 bool CvUnit::canAdvance(const CvPlot* pPlot, int iThreshold) const
 {
 	FAssert(canFight());
-	FAssert(!(isAnimal() && pPlot->isCity()));
+	//FAssert(!(isAnimal() && pPlot->isCity()));	// MacAurther: Adopt an animal!
 	FAssert(getDomainType() != DOMAIN_AIR);
 	FAssert(getDomainType() != DOMAIN_IMMOBILE);
 

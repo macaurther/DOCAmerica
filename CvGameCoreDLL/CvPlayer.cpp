@@ -25598,14 +25598,11 @@ int CvPlayer::getRegionPowers() const
 	case TIWANAKU:
 	case WARI:
 		return RP_ANDES;
-		break;
 	case AMERICA:
 	case CANADA:
 		return RP_ANGLO_AMERICA;
-		break;
 	case INUIT:
 		return RP_ARCTIC;
-		break;
 	case ENGLAND:
 	case FRANCE:
 	case NETHERLANDS:
@@ -25614,7 +25611,6 @@ int CvPlayer::getRegionPowers() const
 	case RUSSIA:
 	case SPAIN:
 		return RP_EUROPE;
-		break;
 	case ARGENTINA:
 	case BRAZIL:
 	case COLOMBIA:
@@ -25623,25 +25619,22 @@ int CvPlayer::getRegionPowers() const
 	case PERU:
 	case VENEZUELA:
 		return RP_LATIN_AMERICA;
-		break;
 	case AZTECS:
 	case MAYA:
 	case TEOTIHUACAN:
 	case ZAPOTEC:
 		return RP_MESOAMERICA;
-		break;
 	case HAWAII:
 		return RP_PACIFIC;
-		break;
 	case PUEBLOAN:
+		return RP_DESERT;
 	case HAUDENOSAUNEE:
 	case MISSISSIPPI:
+		return RP_LAKES_AND_RIVERS;
 	case LAKOTA:
-		return RP_WILDERNESS;
-		break;
+		return RP_PLAINS;
 	default:
 		return NO_RP;
-		break;
 	}
 }
 

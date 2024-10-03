@@ -686,22 +686,6 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_MOUNTED_BRAVE</Tag>
-		<English>Mounted Brave</English>
-		<French>Mounted Brave</French>
-		<German>Mounted Brave</German>
-		<Italian>Mounted Brave</Italian>
-		<Spanish>Mounted Brave</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_MOUNTED_BRAVE_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</English>
-		<French>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</French>
-		<German>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Mounted Brave[COLOR_REVERT] is a barbarian unit that spawns in Central North America from 1700 to 1900 AD.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_UNIT_PARATROOPER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Paratroopers[COLOR_REVERT] can evade interception and can perform paradrops.</English>
 		<French>[COLOR_UNIT_TEXT]Paratroopers[COLOR_REVERT] can evade interception and can perform paradrops.</French>
@@ -1796,22 +1780,6 @@
 		<German>[ICON_BULLET]Gains [ICON_IMMIGRATION] from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</German>
 		<Italian>[ICON_BULLET]Gains [ICON_IMMIGRATION] from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Italian>
 		<Spanish>[ICON_BULLET]Gains [ICON_IMMIGRATION] from contacting [LINK=IMPROVEMENT_TRIBE]Tribes[\LINK]</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ARMED_BRAVE</Tag>
-		<English>Armed Brave</English>
-		<French>Armed Brave</French>
-		<German>Armed Brave</German>
-		<Italian>Armed Brave</Italian>
-		<Spanish>Armed Brave</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ARMED_BRAVE_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</English>
-		<French>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</French>
-		<German>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Armed Brave[COLOR_REVERT] can be obtained by Natives from taking weapons from colonials.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARMED_SLAVE</Tag>

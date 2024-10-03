@@ -10637,7 +10637,7 @@ bool CvUnitAI::AI_patrol()
 
 						if (isBarbarian())
 						{
-							if (!(pAdjacentPlot->isOwned()))
+							/*if (!(pAdjacentPlot->isOwned()))
 							{
 								iValue += 20000;
 							}
@@ -10645,7 +10645,7 @@ bool CvUnitAI::AI_patrol()
 							if (!(pAdjacentPlot->isAdjacentOwned()))
 							{
 								iValue += 10000;
-							}
+							}*/
 						}
 						else
 						{

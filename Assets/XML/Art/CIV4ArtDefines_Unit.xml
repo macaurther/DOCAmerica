@@ -2963,7 +2963,7 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_HAUDENOSAUNEE_MOHAWK</Type>
+			<Type>ART_DEF_UNIT_MOHAWK</Type>
 			<Button>Art/Units/Iroquois Mohawk/Mohawk.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>

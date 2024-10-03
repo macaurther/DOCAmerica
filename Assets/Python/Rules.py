@@ -165,15 +165,26 @@ def captureCannon(winningUnit, losingUnit):
 		captureUnit(losingUnit, winningUnit, losingUnit.getUnitType(), 50)
 
 @handler("combatResult")
-def captureAdvancedUnit(winningUnit, losingUnit):
-	# Wilderness RP
-	if civ(winningUnit) in (iHaudenosaunee, iPuebloan, iMississippi, iLakota):
-		if losingUnit.getUnitType() in lWildernessRPGunUnits:
-			captureUnit(losingUnit, winningUnit, iArmedBrave, 50)
-		elif losingUnit.getUnitType() in lWildernessRPHorseUnits:
-			captureUnit(losingUnit, winningUnit, iHorseArcher, 50)
-		elif losingUnit.getUnitType() in lWildernessRPHorseGunUnits:
-			captureUnit(losingUnit, winningUnit, iMountedBrave, 50)
+def captureAdvancedWeapons(pWinningUnit, pLosingUnit):
+	# Capture cannon
+	if infos.unit(pLosingUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_SIEGE]:
+		captureUnit(pLosingUnit, pWinningUnit, pLosingUnit.getUnitType(), 50)
+		return
+	
+	# Upgrade melee and archery units when winning against horses and guns
+	if infos.unit(pWinningUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_ARCHER]:
+		pNewUnit = None
+		if infos.unit(pLosingUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_CAVALRY]:
+			if civ(pWinningUnit.getOwner()) in dCivGroups[iCivGroupNative]:
+				pNewUnit = captureUnit(pLosingUnit, pWinningUnit, iHorseArcher, 50)
+			else:
+				pNewUnit = captureUnit(pLosingUnit, pWinningUnit, iCuirassier, 50)
+		elif infos.unit(pLosingUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_GUN]:
+			pNewUnit = captureUnit(pLosingUnit, pWinningUnit, iArquebusier, 50)
+		
+		if pNewUnit:
+			pNewUnit.convert(pWinningUnit)
+		
 
 @handler("combatResult")
 def mayanHolkanAbility(winningUnit, losingUnit):

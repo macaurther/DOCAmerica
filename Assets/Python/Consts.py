@@ -454,20 +454,19 @@ lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, i
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 159
-# Land Units (102)
+iNumUnits = 157
+# Land Units (100)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			iInquisitor,	
 iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		
 iFactor,		iParatrooper,	iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		
-iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			iJaguar,		iMacana,		iArquebusier,	iArmedBrave,	iArmedSlave,	
-iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iSuchucChiqui,	
-iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			iGuecha,		
-iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		iCacos,			
-iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iMountedBrave,	iDragoon,		iLlanero,		iCavalry,		
-iGrenadierCavalry,iRural,		iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iLightCannon,	iRifledCannon,	iFieldGun,		
-iArtillery,		iAAGun,		
+iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			iJaguar,		iMacana,		iArquebusier,	iArmedSlave,	iMusketman,		
+iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iSuchucChiqui,	iLightningWarrior,
+iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			iGuecha,		iCrossbowman,	
+iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	
+iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		
+iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iLightCannon,	iRifledCannon,	iFieldGun,		iArtillery,		iAAGun,		
 
 # Naval Units (27)
 # 0				1				2				3				4				5				6				7				8				9
@@ -486,10 +485,6 @@ iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatState
 iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker,	iOldWorldArt,	iOldWorldAssets,iOldWorldInnovations) = range(iNumUnits)
 
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
-
-lWildernessRPGunUnits = [iMilitia3, iMilitia4, iMinuteman, iMilitia5, iMilitia6, iArquebusier, iArmedSlave, iMusketman, iFusilier, iGuardia, iRifleman, iVencedores, iInfantry, iPikeAndShot, iCompagnies, iLineInfantry, iRedcoat, iMarine]
-lWildernessRPHorseUnits = [iHorseArcher, iCuirassier, iConquistador]
-lWildernessRPHorseGunUnits = [iMountedBrave, iDragoon, iLlanero, iRural, iGrenadierCavalry, iCavalry]
 
 dFemaleGreatPeople = {
 iGreatProphet : iFeGreatProphet,

@@ -1654,6 +1654,12 @@ bool CvPlot::isCoastalLand(int iMinWaterSize) const
 			if (pAdjacentPlot->isWater() && !(pAdjacentPlot->getFeatureType() == 0)) //(ice)  .isImpassable()
 			//Rhye - end
 			{
+				// MacAurther: If adjacent plot is Wide River, you're coastal (all Wide Rivers lead to the Ocean)
+				if (pAdjacentPlot->getTerrainType() == TERRAIN_WIDE_RIVER)
+				{
+					return true;
+				}
+
 				if (pAdjacentPlot->area()->getNumTiles() >= iMinWaterSize)
 				{
 					return true;
@@ -7034,6 +7040,15 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 	if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_ANDES)
 	{
 		if (eYield == YIELD_FOOD && isHills() && eImprovement == IMPROVEMENT_FARM)
+		{
+			iYield += 1;
+		}
+	}
+
+	// MacAurther: Plains RP: +1 Food on Camps and Pastures
+	if (ePlayer != NO_PLAYER && (RegionPowers)GET_PLAYER(ePlayer).getRegionPowers() == RP_PLAINS)
+	{
+		if (eYield == YIELD_FOOD && (eImprovement == IMPROVEMENT_CAMP || eImprovement == IMPROVEMENT_PASTURE))
 		{
 			iYield += 1;
 		}
