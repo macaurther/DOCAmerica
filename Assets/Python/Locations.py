@@ -46,6 +46,10 @@ tTribeRespawnArea =			((5, 5), (51, 112))
 # Religions
 tHolyCity = (58, 0)	# MacAurther: faux city to be the Holy City for all old world religions (in the bottom left of the map surrounded by peaks)
 
+# Lake Texcoco
+tLakeTexcocoTL = (12, 63)
+tLakeTexcocoBR = (15, 68)
+
 ## Victory
 
 # second Norse goal: Settle Vinland by 1100 AD

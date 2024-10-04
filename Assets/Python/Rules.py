@@ -292,6 +292,28 @@ def startTimedConquests():
 	
 	data.lTimedConquests = []
 
+@handler("EndGameTurn")
+def drainLakeTexcoco():
+	if turn() == year(1650):
+		for pPlot in plots.rectangle(tLakeTexcocoTL, tLakeTexcocoBR):
+			if pPlot.isPeak(): continue
+			elif pPlot.isWater():
+				lUnits = units.at(pPlot)
+				# Move any ships
+				for pUnit in lUnits:
+					pCoastalCity = cities.owner(pUnit.getOwner()).coastal().closest(pPlot)
+					if pCoastalCity:
+						move(pUnit, pCoastalCity)
+					else:
+						pUnit.kill(False, -1)
+				pPlot.setBonusType(BonusTypes.NO_BONUS)
+				pPlot.setTerrainType(iMarsh, True, True)
+				pPlot.setFeatureType(iFloodPlains, 0)
+			elif pPlot.getTerrainType() == iLagoon:
+				pPlot.setTerrainType(iMarsh, True, True)
+				pPlot.setFeatureType(iFloodPlains, 0)
+			else:
+				pPlot.setTerrainType(iPlains, True, True)
 
 ### BEGIN PLAYER TURN ###
 
