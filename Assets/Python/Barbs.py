@@ -65,6 +65,7 @@ def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 		
 		if iSlave > -1:
 			makeUnit(iPlayer, iSlave, pUnit, UnitAITypes.UNITAI_WORKER)
+			events.fireEvent("enslave", iPlayer, None)
 			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=pUnit)
 
 

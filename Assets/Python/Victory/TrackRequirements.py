@@ -221,11 +221,13 @@ class EnslaveCount(TrackRequirement):
 		self.handle("enslave", self.increment_enslaved)
 	
 	def increment_enslaved(self, goal, unit):
-		if is_minor(unit):
-			return
-		
-		if self.excluding and civ(unit) in self.excluding:
-			return
+		if unit:
+			# MacAurther: We want to count minors
+			#if is_minor(unit):
+			#	return
+			
+			if self.excluding and civ(unit) in self.excluding:
+				return
 		
 		self.increment()
 		goal.check()

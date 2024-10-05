@@ -136,6 +136,7 @@ def nativeCityConquered(iPlayer, pCity):
 		
 		if iSlave > -1:
 			makeUnits(iPlayer, iSlave, pCity, 1, UnitAITypes.UNITAI_WORKER)
+			events.fireEvent("enslave", iPlayer, None)
 			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=pCity)
 
 
