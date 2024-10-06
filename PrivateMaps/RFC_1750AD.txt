@@ -407,9 +407,9 @@ BeginPlot
 		BuildingType=BUILDING_SPANISH_MISSION
 		BuildingType=BUILDING_ADMINISTRATIVE_CENTER
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=646
 		EndCulture
@@ -1012,8 +1012,8 @@ BeginPlot
 		BuildingType=BUILDING_TLACHIHUALTEPETL
 		BuildingType=BUILDING_TEMBLEQUE_AQUEDUCT
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=67
 			Civilization=CIVILIZATION_SPAIN, Culture=676
@@ -2222,8 +2222,8 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_SPANISH_MISSION
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=867
 			Civilization=CIVILIZATION_BARBARIAN, Culture=1420
@@ -2393,7 +2393,7 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=547
 		EndCulture
@@ -2447,9 +2447,9 @@ BeginPlot
 		BuildingType=BUILDING_SILVERSMITH
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=353
 		EndCulture
@@ -2663,8 +2663,8 @@ BeginPlot
 		BuildingType=BUILDING_SACSAYHUAMAN
 		BuildingType=BUILDING_YACHAYWASI
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=1437
 		EndCulture
@@ -3197,7 +3197,7 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_ESTATE
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=2581
 			Civilization=CIVILIZATION_BARBARIAN, Culture=1635
@@ -3268,9 +3268,9 @@ BeginPlot
 		BuildingType=BUILDING_KALASASAYA
 		BuildingType=BUILDING_PYRAMID_OF_THE_SUN
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=2475
 			Civilization=CIVILIZATION_SPAIN, Culture=6039
@@ -3321,8 +3321,8 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_CONSTABULARY
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_NATIVE, Culture=859
 			Civilization=CIVILIZATION_SPAIN, Culture=4143
@@ -3491,9 +3491,9 @@ BeginPlot
 		BuildingType=BUILDING_FORGE
 		BuildingType=BUILDING_MONUMENT
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=1348
 		EndCulture
@@ -3860,8 +3860,8 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_SPANISH_MISSION
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
@@ -4026,7 +4026,7 @@ BeginPlot
 		BuildingType=BUILDING_PALISADE
 		BuildingType=BUILDING_MONUMENT
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=50
 		EndCulture
@@ -4165,8 +4165,8 @@ BeginPlot
 		BuildingType=BUILDING_STOCKS
 		BuildingType=BUILDING_MONUMENT
 		ReligionType=RELIGION_PROTESTANTISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=100
 		EndCulture
@@ -4328,7 +4328,7 @@ BeginPlot
 		BuildingType=BUILDING_ESTATE
 		BuildingType=BUILDING_PROTESTANT_TEMPLE
 		ReligionType=RELIGION_PROTESTANTISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=150
 		EndCulture
@@ -4582,9 +4582,9 @@ BeginPlot
 		BuildingType=BUILDING_PROTESTANT_MONASTERY
 		ReligionType=RELIGION_PROTESTANTISM
 		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=120
 		EndCulture
@@ -4692,9 +4692,9 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_STAR_FORT
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=300
 		EndCulture
@@ -4885,9 +4885,9 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_GREAT_MERCHANT
 		FreeSpecialistType=SPECIALIST_GREAT_STATESMAN
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_ENGLAND, Culture=551
 		EndCulture
@@ -4958,8 +4958,8 @@ BeginPlot
 		BuildingType=BUILDING_PROTESTANT_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
 		ReligionType=RELIGION_PROTESTANTISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		YearFounded=1729
 		YearAcquired=1729
 		PreviousOwner=CIVILIZATION_ENGLAND
@@ -5074,11 +5074,11 @@ BeginPlot
 		BuildingType=BUILDING_LIGHTHOUSE
 		BuildingType=BUILDING_MANUFACTORY
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=905
 		EndCulture
@@ -5275,8 +5275,8 @@ BeginPlot
 		ReligionType=RELIGION_CATHOLICISM
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
-		FreeSpecialistType=SPECIALIST_SLAVE_MINER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_SPAIN, Culture=200
 		EndCulture
@@ -5751,11 +5751,11 @@ BeginPlot
 		BuildingType=BUILDING_MONUMENT
 		BuildingType=BUILDING_LIGHTHOUSE
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=199
 		EndCulture
@@ -5990,7 +5990,7 @@ BeginPlot
 		BuildingType=BUILDING_HARBOR
 		BuildingType=BUILDING_MONUMENT
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_FRANCE, Culture=50
 		EndCulture
@@ -6730,8 +6730,8 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_MONASTERY
 		BuildingType=BUILDING_SAO_FRANCISCO_SQUARE
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=30
 		EndCulture
@@ -6978,8 +6978,8 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		BuildingType=BUILDING_CATHOLIC_MONASTERY
 		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
-		FreeSpecialistType=SPECIALIST_SLAVE_PLANTER
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
 			Civilization=CIVILIZATION_PORTUGAL, Culture=109
 		EndCulture
