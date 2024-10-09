@@ -14,10 +14,10 @@ from Core import *
 
 @handler("cityAcquired")
 # Colombian UP
-def colombianPower(iOwner, iPlayer, city, bConquest):
+def colombianPower(iOwner, iPlayer, pCity, bConquest):
 	if civ(iPlayer) == iColombia and bConquest:
-		if city in cities.regions(*lLatinAmerica):
-			city.setOccupationTimer(0)
+		if pCity in cities.regions(*lLatinAmerica):
+			pCity.setOccupationTimer(0)
 
 
 @handler("techAcquired")
@@ -29,24 +29,24 @@ def mayanPower(iTech, iTeam, iPlayer):
 			iNumCities = player(iPlayer).getNumCities()
 			if iNumCities > 0:
 				iFood = scale(20) / iNumCities
-				for city in cities.owner(iPlayer):
-					city.changeFood(iFood)
+				for pCity in cities.owner(iPlayer):
+					pCity.changeFood(iFood)
 				
 				message(iPlayer, 'TXT_KEY_MAYA_UP_EFFECT', infos.tech(iTech).getText(), iFood)
 
 @handler("cityBuilt")
 # Desert RP
-def puebloanPower(city):
-	if civ(city.getOwner()) in [iPuebloan]:
+def puebloanPower(pCity):
+	if civ(pCity.getOwner()) in [iPuebloan]:
 		lFreeBuildings = [iGranary, iMarket, iStoneworks]
 		for iBuilding in lFreeBuildings:
-			if not city.isHasRealBuilding(iBuilding):
-				city.setHasRealBuilding(iBuilding, True)
+			if not pCity.isHasRealBuilding(iBuilding):
+				pCity.setHasRealBuilding(iBuilding, True)
 
 @handler("cityAcquiredAndKept")
 # Chimu UP
-def chimuPower(iOwner, city):
-	if civ(iOwner) == iChimu and city.getPreviousCiv() != None:
+def chimuPower(iOwner, pCity):
+	if civ(iOwner) == iChimu and pCity.getPreviousCiv() != None and plot(pCity).getBirthProtected() == -1:	# Don't give artist for rise flipped cities
 		pCapital = player(iOwner).getCapitalCity()
 		pCapital.changeFreeSpecialistCount(iSpecialistArtist, 1)
 		strMessage = "An Arist has arrived at your capital to recount your recent conquest"

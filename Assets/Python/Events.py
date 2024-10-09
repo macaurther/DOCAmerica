@@ -109,7 +109,7 @@ def firstCityOnCityAcquiredAndKept(iPlayer, city):
 @handler("cityAcquiredAndKept")
 def nativeCityConquered(iPlayer, pCity):
 	# Check if city was taken from a Native
-	if pCity.getPreviousCiv() in dCivGroups[iCivGroupNative] + [iNative]:
+	if pCity.getPreviousCiv() in dCivGroups[iCivGroupNative] + [iNative] and plot(pCity).getBirthProtected() == -1:	# Don't give native tech for rise flipped cities
 		# Give a Native Tech
 		lPossibleTechs = []
 		for iTech in lNativeTechs:

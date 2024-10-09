@@ -1537,7 +1537,7 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<CommerceModifiers>
-				<iCommerce>25</iCommerce>
+				<iCommerce>10</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>
@@ -1863,6 +1863,7 @@
 			<Description>TXT_KEY_CIVIC_DEMOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DEMOCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_DEMOCRACY_HELP</Help>
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Democracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -2452,7 +2453,7 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<CommerceModifiers>
-				<iCommerce>25</iCommerce>
+				<iCommerce>10</iCommerce>
 				<iCommerce>0</iCommerce>
 				<iCommerce>-25</iCommerce>
 			</CommerceModifiers>

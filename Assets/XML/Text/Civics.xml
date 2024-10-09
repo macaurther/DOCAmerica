@@ -268,11 +268,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Tag>
-		<English>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</English>
-		<French>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</French>
-		<German>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</German>
-		<Italian>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</Italian>
-		<Spanish>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages</Spanish>
+		<English>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</English>
+		<French>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</French>
+		<German>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</German>
+		<Italian>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</Italian>
+		<Spanish>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DEMOCRACY_HELP</Tag>
+		<English>[ICON_BULLET]Double instability from unhappiness and religious disunity</English>
+		<French>[ICON_BULLET]Double instability from unhappiness and religious disunity</French>
+		<German>[ICON_BULLET]Double instability from unhappiness and religious disunity</German>
+		<Italian>[ICON_BULLET]Double instability from unhappiness and religious disunity</Italian>
+		<Spanish>[ICON_BULLET]Double instability from unhappiness and religious disunity</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DICTATORSHIP</Tag>

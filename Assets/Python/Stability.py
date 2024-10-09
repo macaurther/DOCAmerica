@@ -668,6 +668,9 @@ def calculateStability(iPlayer):
 		iHappinessStability *= 2
 		iHappinessStability /= 3
 	
+	# MacAurther: Democracy effect
+	if iDemocracy3 in civics and iHappinessStability < 0: iHappinessStability *= 2
+	
 	lParameters[iParameterHappiness] = iHappinessStability
 	
 	iDomesticStability += iHappinessStability
@@ -750,6 +753,9 @@ def calculateStability(iPlayer):
 			
 			iReligionStability += iBelieverStability
 			
+	
+	# MacAurther: Democracy effect
+	if iDemocracy3 in civics and iReligionStability < 0: iReligionStability *= 2
 	
 	lParameters[iParameterReligion] = iReligionStability
 		

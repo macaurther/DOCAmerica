@@ -292,28 +292,40 @@ def startTimedConquests():
 	
 	data.lTimedConquests = []
 
-@handler("EndGameTurn")
-def drainLakeTexcoco():
+### BEGIN GAME TURN ###
+
+@handler("BeginGameTurn")
+def drainLakeTexcocoNormal():
 	if turn() == year(1650):
-		for pPlot in plots.rectangle(tLakeTexcocoTL, tLakeTexcocoBR):
-			if pPlot.isPeak(): continue
-			elif pPlot.isWater():
-				lUnits = units.at(pPlot)
-				# Move any ships
-				for pUnit in lUnits:
-					pCoastalCity = cities.owner(pUnit.getOwner()).coastal().closest(pPlot)
-					if pCoastalCity:
-						move(pUnit, pCoastalCity)
-					else:
-						pUnit.kill(False, -1)
-				pPlot.setBonusType(BonusTypes.NO_BONUS)
-				pPlot.setTerrainType(iMarsh, True, True)
-				pPlot.setFeatureType(iFloodPlains, 0)
-			elif pPlot.getTerrainType() == iLagoon:
-				pPlot.setTerrainType(iMarsh, True, True)
-				pPlot.setFeatureType(iFloodPlains, 0)
-			else:
-				pPlot.setTerrainType(iPlains, True, True)
+		drainLakeTexcoco()
+
+### GAME START ###
+
+@handler("GameStart")
+def drainLakeTexcoco1750():
+	if scenario() == i1750AD:
+		drainLakeTexcoco()
+
+def drainLakeTexcoco():
+	for pPlot in plots.rectangle(tLakeTexcocoTL, tLakeTexcocoBR):
+		if pPlot.isPeak(): continue
+		elif pPlot.isWater():
+			lUnits = units.at(pPlot)
+			# Move any ships
+			for pUnit in lUnits:
+				pCoastalCity = cities.owner(pUnit.getOwner()).coastal().closest(pPlot)
+				if pCoastalCity:
+					move(pUnit, pCoastalCity)
+				else:
+					pUnit.kill(False, -1)
+			pPlot.setBonusType(BonusTypes.NO_BONUS)
+			pPlot.setTerrainType(iMarsh, True, True)
+			pPlot.setFeatureType(iFloodPlains, 0)
+		elif pPlot.getTerrainType() == iLagoon:
+			pPlot.setTerrainType(iMarsh, True, True)
+			pPlot.setFeatureType(iFloodPlains, 0)
+		else:
+			pPlot.setTerrainType(iPlains, True, True)
 
 ### BEGIN PLAYER TURN ###
 
@@ -346,11 +358,11 @@ def extractionAbility(iGameTurn, iPlayer):
 				pPlot = pCity.getCityIndexPlot(i)
 				if pPlot and not pPlot.isNone() and pPlot.hasYield():
 					if pCity.isWorkingPlot(pPlot):
-						if pPlot.getFeatureType() != FeatureTypes.NO_FEATURE:
+						if not pPlot.getFeatureType() in [FeatureTypes.NO_FEATURE, iJungle, iRainforest, iSwamp, iFallout, iCenote]:
 							message(iPlayer, 'TXT_KEY_EXTRACTION_FEATURE', sound='SND_REVOLTEND', event=1, button=infos.feature(pPlot.getFeatureType()).getButton(), color=iRed, location=pPlot)
 							pPlot.setFeatureType(FeatureTypes.NO_FEATURE, 0)
 							return
-						elif pPlot.getBonusType(pPlayer.getTeam()) != BonusTypes.NO_BONUS:
+						elif not pPlot.getBonusType(pPlayer.getTeam()) in [BonusTypes.NO_BONUS]:
 							message(iPlayer, 'TXT_KEY_EXTRACTION_BONUS', sound='SND_REVOLTEND', event=1, button=infos.bonus(pPlot.getBonusType(pPlayer.getTeam())).getButton(), color=iRed, location=pPlot)
 							pPlot.setBonusType(BonusTypes.NO_BONUS)
 							return
