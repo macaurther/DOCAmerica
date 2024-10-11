@@ -4041,6 +4041,10 @@ class CvMainInterface:
 										szRightBuffer = szRightBuffer + szTempBuffer
 
 								iHappiness = pHeadSelectedCity.getBuildingHappiness(i)
+								
+								# MacAurther: Latin American RP: +3 Happiness from Catholic Church
+								if i == iCatholicTemple and pHeadSelectedCity.getCivilizationType() in [iArgentina, iBrazil, iColombia, iHaiti, iMexico, iPeru, iVenezuela]: iHappiness += 3
+								
 
 								if (iHappiness != 0):
 									if ( bFirst == False ):

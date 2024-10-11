@@ -881,7 +881,7 @@ void CvPlot::doImprovementUpgrade()
 
 				iUpgradeTime = GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType());
 
-				if (getFeatureType() != NO_IMPROVEMENT && GC.getFeatureInfo(getFeatureType()).getHealthPercent() < 0)
+				if (getFeatureType() != NO_FEATURE && GC.getFeatureInfo(getFeatureType()).getHealthPercent() < 0)
 				{
 					iUpgradeTime *= 100 + std::abs(GC.getFeatureInfo(getFeatureType()).getHealthPercent());
 					iUpgradeTime /= 100;
