@@ -65,6 +65,10 @@ def expeditionaryForce(iGameTurn):
 			continue
 
 		iRevolutionaryPlayer = slot(iRevolutionaryCiv)
+		
+		# Only run if revolutionary civ is Human
+		if not player(iRevolutionaryPlayer).isHuman():
+			return
 
 		if iRevolutionaryCiv == iAmerica:
 			tExpeditionarySpawn = (45, 84)
@@ -109,11 +113,6 @@ def expeditionaryForce(iGameTurn):
 		if year() < year(dBirth[active()]):
 			iModifier1 += 1
 			iModifier2 += 1
-		
-		# Make it easier for defending AI if both sides are AI
-		if not player(iRevolutionaryPlayer).isHuman() and not player(iExpeditionaryPlayer).isHuman():
-			iModifier1 -= 3
-			iModifier2 -= 3
 		
 		# Make it easier for some civs
 		if iRevolutionaryCiv in [iHaiti]:
