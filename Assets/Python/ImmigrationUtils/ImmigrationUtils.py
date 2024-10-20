@@ -511,11 +511,11 @@ class ImmigrationUtils:
 			
 			# Great People Category
 			if iCiv in [iAmerica, iCanada]:
-				if turn() < turn(1800): lCategoryDesire[iGPCatProphet] = 3
+				if turn() < year(1800): lCategoryDesire[iGPCatProphet] = 3
 				lCategoryDesire[iGPCatArtist] = 5 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_CULTURE) / 40)
 				lCategoryDesire[iGPCatScientist] = 5 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_RESEARCH) / 20)
 				lCategoryDesire[iGPCatMerchant] = 5 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_GOLD) / 20)
-				if turn() >= turn(1800): lCategoryDesire[iGPCatEngineer] = 3
+				if turn() >= year(1800): lCategoryDesire[iGPCatEngineer] = 3
 				lCategoryDesire[iGPCatStatesman] = -stability(iPlayer)
 				lCategoryDesire[iGPCatGeneral] = team(iPlayer).getAtWarCount(True)
 		

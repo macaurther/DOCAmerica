@@ -592,7 +592,7 @@ public:
 	void setFortClaimer(CvPlot* pPlot);
 	void addFortClaims(PlayerTypes ePlayer);
 	void removeFortClaims();
-	void updateFortClaims(PlayerTypes ePlayer);
+	DllExport void updateFortClaims(PlayerTypes ePlayer);			// Exposed to Python
 
 	// Leoreth: graphics paging
 	static void EvictGraphicsIfNecessary();

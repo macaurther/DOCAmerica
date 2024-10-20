@@ -652,6 +652,7 @@ lCanada = [rYukon, rNunavut, rNorthCascadia, rNorthPlains, rOntario, rQuebec, rN
 lThirteenColonies = [rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain]
 lSouthernUS = [rCoastalPlain, rFlorida, rTexas, rDeepSouth]
 lBorderStates = [rMaryland, rRiverValley]
+lLouisianaPurchase = [rGreatLakes, rRiverValley, rDeepSouth, rCoastalPlain, rFlorida, rTexas, rGreatPlains]
 lContinentalUS = [rSouthCascadia, rCalifornia, rRockies, rSouthwest, rTexas, rGreatPlains, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rRiverValley, rCoastalPlain, rDeepSouth, rFlorida]
 lUnitedStates = lContinentalUS + [rAlaska, rHawaii]
 lMexico = [rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, rYucatan]

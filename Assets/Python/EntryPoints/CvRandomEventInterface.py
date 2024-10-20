@@ -3120,6 +3120,93 @@ def canTriggerImpeachmentCity(argsList):
 		return true
 	return false
 
+######## Lousiana Purchase (American Quest) ########
+
+def canTriggerLouisianaPurchase(argsList):
+	kTriggeredData = argsList[0]
+	iPlayer = kTriggeredData.ePlayer
+	iCiv = civ(iPlayer)
+	
+	if iCiv != iAmerica:
+		return False
+		
+	if turn() < year(1800):
+		return False
+
+	return True	
+
+def canTriggerLouisianaPurchaseDone(argsList):
+	kTriggeredData = argsList[0]
+	iPlayer = kTriggeredData.ePlayer
+	iCiv = civ(iPlayer)
+	pPlayer = player(iPlayer)
+	
+	if iCiv != iAmerica:
+		return False
+		
+	if turn() < year(1800):
+		return False
+	
+	if pPlayer.getGold() < getLouisianaPurchaseGoldRequired():
+		return False
+	
+	return True
+
+def expireLouisianaPurchase1(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if turn() > year(1825):
+		return True
+
+	return False
+
+def getHelpLouisianaPurchase1(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	
+	szHelp = localText.getText("TXT_KEY_EVENT_LOUISIANA_PURCHASE_HELP_1", (getLouisianaPurchaseGoldRequired(), ))
+
+	return szHelp
+
+def getHelpLouisianaPurchaseDone1(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+
+	szHelp = localText.getText("TXT_KEY_EVENT_LOUISIANA_PURCHASE_DONE_1", ())
+
+	return szHelp
+
+def applyLouisianaPurchaseDone1(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	iPlayer = kTriggeredData.ePlayer
+	
+	iGold = getLouisianaPurchaseGoldRequired()
+	
+	for pPlot in plots.regions(*lLouisianaPurchase):
+		if pPlot.isCity() and civ(pPlot.getOwner()) == iFrance:
+			completeCityFlip(pPlot.getPlotCity(), iPlayer, pPlot.getPlotCity().getOwner(), 100)
+		
+		if pPlot.getImprovementType() == iFort and civ(pPlot.getOwner()) == iFrance:
+			pPlot.updateFortClaims(iPlayer)
+	
+	# Transfer money
+	player(iPlayer).changeGold(-iGold)
+	player(slot(iFrance)).changeGold(iGold)
+
+def getLouisianaPurchaseGoldRequired():
+	iGold = 0
+	for pPlot in plots.regions(*lLouisianaPurchase):
+		if pPlot.isCity() and civ(pPlot.getOwner()) == iFrance:
+			iGold += 250
+		
+		if pPlot.getImprovementType() == iFort and civ(pPlot.getOwner()) == iFrance:
+			iGold += 100
+			
+	# Scale by game speed
+	return iGold * int(3 - gc.getGame().getGameSpeedType())
 
 def getNuclearReactorLeak1HelpText(argsList):
 	return localText.getText("TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_1_HELP", ())
