@@ -17036,7 +17036,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=74
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_WIDE_RIVER
 	PlotType=3
 EndPlot
@@ -17048,6 +17047,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=76
+	BonusType=BONUS_FISH
 	isNOfRiver
 	RiverWEDirection=1
 	TerrainType=TERRAIN_WIDE_RIVER
@@ -18414,12 +18414,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=71
+	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=27,y=72
-	BonusType=BONUS_CLAM
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -19144,7 +19144,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=75
-	BonusType=BONUS_DEER
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -20623,6 +20622,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=75
+	BonusType=BONUS_DEER
 	isNOfRiver
 	RiverWEDirection=3
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
@@ -21394,7 +21394,7 @@ EndPlot
 BeginPlot
 	x=31,y=76
 	TerrainType=TERRAIN_GRASS
-	PlotType=1
+	PlotType=2
 EndPlot
 BeginPlot
 	x=31,y=77
@@ -21419,6 +21419,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=80
+	BonusType=BONUS_DEER
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -21467,6 +21468,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=88
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -22170,7 +22172,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=80
-	BonusType=BONUS_DEER
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -22204,6 +22205,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=86
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22219,7 +22221,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=89
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -22932,7 +22933,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=85
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -24374,7 +24374,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=88
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25075,7 +25074,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=86
-	BonusType=BONUS_COW
 	FeatureType=FEATURE_FOREST, FeatureVariety=4
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -25088,6 +25086,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=88
+	BonusType=BONUS_COW
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -25786,6 +25785,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=89
+	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot

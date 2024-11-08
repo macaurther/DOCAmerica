@@ -541,15 +541,6 @@
 			<DefaultBuilding>BUILDING_DRYDOCK</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_LIBRARY</Type>
-			<Description>TXT_KEY_BUILDING_LIBRARY</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_LIBRARY</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_NEWSPAPER</Type>
 			<Description>TXT_KEY_BUILDING_NEWSPAPER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>

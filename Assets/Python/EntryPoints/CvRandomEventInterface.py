@@ -1785,8 +1785,8 @@ def canTriggerLiteracy(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
-	iLibrary = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_LIBRARY')
-	if player.getNumCities() > player.getBuildingClassCount(iLibrary):
+	iSchoolhouse = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_SCHOOLHOUSE')
+	if player.getNumCities() > player.getBuildingClassCount(iSchoolhouse):
 		return false
 	
 	return true
@@ -1970,13 +1970,13 @@ def canTriggerClassicLiteratureDone(argsList):
 	trigger = gc.getEventTriggerInfo(kTriggeredData.eTrigger)
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	
-	iLibrary = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_LIBRARY')
+	iSchoolhouse = CvUtil.findInfoTypeNum(gc.getBuildingClassInfo, gc.getNumBuildingClassInfos(), 'BUILDINGCLASS_SCHOOLHOUSE')
 	#Rhye - start
 	#iBuildingsRequired = gc.getWorldInfo(gc.getMap().getWorldSize()).getDefaultPlayers()
 	iBuildingsRequired = 7
 	#Rhye - end
 
-	if iBuildingsRequired > player.getBuildingClassCount(iLibrary):
+	if iBuildingsRequired > player.getBuildingClassCount(iSchoolhouse):
 		return false
 	
 	return true

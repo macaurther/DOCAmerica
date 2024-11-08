@@ -11300,7 +11300,7 @@
 			<iPeaceWeightRand>3</iPeaceWeightRand>
 			<iWarmongerRespect>0</iWarmongerRespect>
 			<iEspionageWeight>110</iEspionageWeight>
-			<iRefuseToTalkWarThreshold>10</iRefuseToTalkWarThreshold>
+			<iRefuseToTalkWarThreshold>4</iRefuseToTalkWarThreshold>	<!-- MacAurther: Needed to make this a lot lower so that Revolution can actually end, was 10 -->
 			<iNoTechTradeThreshold>10</iNoTechTradeThreshold>
 			<iTechTradeKnownPercent>30</iTechTradeKnownPercent>
 			<iMaxGoldTradePercent>5</iMaxGoldTradePercent>

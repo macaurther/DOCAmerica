@@ -3010,7 +3010,7 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=25,y=74
+	x=25,y=76
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
@@ -3523,10 +3523,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=27,y=72
-	ImprovementType=IMPROVEMENT_FISHING_BOATS
-EndPlot
-BeginPlot
 	x=27,y=80
 	RouteType=ROUTE_ROAD
 EndPlot
@@ -3627,10 +3623,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=72
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
-EndPlot
-BeginPlot
-	x=28,y=75
 	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
@@ -3812,6 +3804,10 @@ BeginPlot
 		YearAcquired=1515
 		PreviousOwner=CIVILIZATION_SPAIN
 	EndCity
+EndPlot
+BeginPlot
+	x=30,y=75
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 EndPlot
 BeginPlot
 	x=30,y=79
@@ -4108,6 +4104,10 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
+	x=32,y=86
+	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
+EndPlot
+BeginPlot
 	x=32,y=99
 	ImprovementType=IMPROVEMENT_CAMP
 EndPlot
@@ -4234,7 +4234,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=85
-	ImprovementType=IMPROVEMENT_CONTACTED_TRIBE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot

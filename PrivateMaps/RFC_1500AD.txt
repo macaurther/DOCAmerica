@@ -2310,10 +2310,6 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
-	x=28,y=75
-	ImprovementType=IMPROVEMENT_TRIBE
-EndPlot
-BeginPlot
 	x=28,y=89
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -2496,6 +2492,10 @@ BeginPlot
 		UnitType=UNIT_CANOE
 		UnitOwner=CIVILIZATION_INCA
 	EndUnit
+EndPlot
+BeginPlot
+	x=30,y=75
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=30,y=79
@@ -2687,6 +2687,10 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=32,y=86
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=32,y=99
 	ImprovementType=IMPROVEMENT_CAMP
 EndPlot
@@ -2767,10 +2771,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=73
-	ImprovementType=IMPROVEMENT_TRIBE
-EndPlot
-BeginPlot
-	x=33,y=85
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot

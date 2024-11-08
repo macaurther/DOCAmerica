@@ -316,7 +316,7 @@ dGoals = {
 			at=1900,
 		),
 		All(
-			ImmigrationSpent(10000),
+			ImmigrationSpent(1000000),
 			BuildingCount(wonders(), 10),
 			by=1920
 		),
