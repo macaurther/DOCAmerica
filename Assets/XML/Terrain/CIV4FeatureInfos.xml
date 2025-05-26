@@ -119,19 +119,20 @@
 			<Civilopedia>TXT_KEY_FEATURE_JUNGLE_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_JUNGLE</ArtDefineTag>
 			<YieldChanges>
-				<iYieldChange>-1</iYieldChange>
+				<iYieldChange>-2</iYieldChange>
+				<iYieldChange>-2</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-25</iHealthPercent>
+			<iHealthPercent>-100</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
 			<iDisappearance>0</iDisappearance>
 			<iGrowth>0</iGrowth>
-			<iTurnDamage>0</iTurnDamage>
+			<iTurnDamage>1</iTurnDamage>
 			<bNoCoast>0</bNoCoast>
 			<bNoRiver>0</bNoRiver>
 			<bNoAdjacent>0</bNoAdjacent>
@@ -239,7 +240,7 @@
 			<HillsYieldChange/>
 			<iMovement>1</iMovement>
 			<iSeeThrough>0</iSeeThrough>
-			<iHealthPercent>0</iHealthPercent>
+			<iHealthPercent>50</iHealthPercent>
 			<iDefense>0</iDefense>
 			<iCultureCost>-15</iCultureCost>
 			<iAppearance>500</iAppearance>
@@ -361,7 +362,7 @@
 			<HillsYieldChange/>
 			<iMovement>1</iMovement>
 			<iSeeThrough>0</iSeeThrough>
-			<iHealthPercent>-40</iHealthPercent>
+			<iHealthPercent>-50</iHealthPercent>
 			<iDefense>0</iDefense>
 			<iCultureCost>-15</iCultureCost>
 			<iAppearance>10000</iAppearance>
@@ -467,7 +468,7 @@
 			<Civilopedia>TXT_KEY_FEATURE_FOREST_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_FOREST</ArtDefineTag>
 			<YieldChanges>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>-1</iYieldChange>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange/>
@@ -587,18 +588,21 @@
 			<Description>TXT_KEY_FEATURE_BOG</Description>
 			<Civilopedia>TXT_KEY_FEATURE_BOG_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_BOG</ArtDefineTag>
-			<YieldChanges/>
+			<YieldChanges>
+				<iYieldChange>1</iYieldChange>
+				<iYieldChange>-1</iYieldChange>
+			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-40</iHealthPercent>
+			<iHealthPercent>-100</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
 			<iDisappearance>0</iDisappearance>
 			<iGrowth>0</iGrowth>
-			<iTurnDamage>0</iTurnDamage>
+			<iTurnDamage>1</iTurnDamage>
 			<bNoCoast>0</bNoCoast>
 			<bNoRiver>0</bNoRiver>
 			<bNoAdjacent>0</bNoAdjacent>
@@ -698,14 +702,14 @@
 			<Civilopedia>TXT_KEY_FEATURE_SWAMP_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_SWAMP</ArtDefineTag>
 			<YieldChanges>
-				<iYieldChange>0</iYieldChange>
+				<iYieldChange>-1</iYieldChange>
 				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-40</iHealthPercent>
+			<iHealthPercent>-50</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -926,6 +930,7 @@
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>1</iYieldChange>
+				<iYieldChange>1</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
@@ -1021,12 +1026,13 @@
 			<ArtDefineTag>ART_DEF_FEATURE_RAINFOREST</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>-1</iYieldChange>
+				<iYieldChange>-1</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>0</iHealthPercent>
+			<iHealthPercent>-50</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>5</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -1358,14 +1364,15 @@
 			<ArtDefineTag>ART_DEF_FEATURE_PALM_FOREST</ArtDefineTag>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
+				<iYieldChange>-1</iYieldChange>
 			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
 			<iMovement>1</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>0</iHealthPercent>
-			<iDefense>0</iDefense>
-			<iCultureCost>0</iCultureCost>
+			<iHealthPercent>25</iHealthPercent>
+			<iDefense>15</iDefense>
+			<iCultureCost>5</iCultureCost>
 			<iAppearance>0</iAppearance>
 			<iDisappearance>0</iDisappearance>
 			<iGrowth>3</iGrowth>
@@ -1477,8 +1484,9 @@
 			<Civilopedia>TXT_KEY_FEATURE_CANYON_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_FEATURE_CANYON</ArtDefineTag>
 			<YieldChanges>
-				<iYield>0</iYield>
+				<iYield>-1</iYield>
 				<iYield>1</iYield>
+				<iYield>-1</iYield>
 			</YieldChanges>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
