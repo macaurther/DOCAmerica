@@ -11,6 +11,7 @@
 			<Type>TECH_HUNTING</Type>
 			<Description>TXT_KEY_TECH_HUNTING</Description>
 			<Civilopedia>TXT_KEY_TECH_HUNTING_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_HUNTING_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>400</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -2673,6 +2674,7 @@
 			<Type>TECH_COMMUNITY</Type>
 			<Description>TXT_KEY_TECH_COMMUNITY</Description>
 			<Civilopedia>TXT_KEY_TECH_COMMUNITY_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_COMMUNITY_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>450</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3442,6 +3444,7 @@
 			<Type>TECH_SURVEYING</Type>
 			<Description>TXT_KEY_TECH_SURVEYING</Description>
 			<Civilopedia>TXT_KEY_TECH_SURVEYING_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_SURVEYING_HELP</Help>
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<iCost>1250</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -4024,6 +4027,7 @@
 			<Type>TECH_CIVIL_LIBERTIES</Type>
 			<Description>TXT_KEY_TECH_CIVIL_LIBERTIES</Description>
 			<Civilopedia>TXT_KEY_TECH_CIVIL_LIBERTIES_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_CIVIL_LIBERTIES_HELP</Help>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<iCost>1750</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -5038,6 +5042,7 @@
 			<Type>TECH_GLOBALISM</Type>
 			<Description>TXT_KEY_TECH_GLOBALISM</Description>
 			<Civilopedia>TXT_KEY_TECH_GLOBALISM_PEDIA</Civilopedia>
+			<Help>TXT_KEY_TECH_GLOBALISM_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<iCost>6000</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>

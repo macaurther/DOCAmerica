@@ -319,10 +319,26 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 			if gc.getBonusInfo(j).getTechObsolete() == self.iTech:
 				screen.attachImageButton(panel, "", gc.getBonusInfo(j).getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_OBSOLETE_BONUS, j, 1, False)
 		
-		# Mountain Passes
-		# MacAurther: This is kludgy, to make right, it'd have to be added to the XML. But that's a lot of work...
+		# MacAurther TODO: This is kludgy, to make right, it'd have to be added to the XML. But that's a lot of work...
+		# MacAurther: Custom Tech effect buttons
+		# Hunting: Animal Hunting
+		if TechInfo.getGridX() == 1 and TechInfo.getGridY() == 1:
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ANIMAL_HUNTING").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Pathfinding: Mountain Pass
 		if TechInfo.getGridX() == 2 and TechInfo.getGridY() == 3:
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Linguistics, Localization: Tribe contact discount
+		elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 7) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 7):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Community, Civil Liberties, Globalism: Extra population on city founding
+		elif (TechInfo.getGridX() == 12 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 17 and TechInfo.getGridY() == 13) or (TechInfo.getGridX() == 21 and TechInfo.getGridY() == 11):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_POPULATION").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Surveying: Forts claim additional territory
+		elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 9):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_FORT_TERRITORY").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Pioneering: Cities start with worker and defender
+		elif (TechInfo.getGridX() == 16 and TechInfo.getGridY() == 9):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CITY_DEFENDER_AND_WORKER").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 
 
 	def placeEnables(self):

@@ -46,7 +46,10 @@ def setup():
 
 # initialise bonuses variables
 
-'''(13, 63)  : (1550,  iHorse),  	# Mexico
+''''''
+
+dResourcesDict = {
+	(13, 63)  : (1550,  iHorse),  	# Mexico
 	(15, 89)  : (1550,  iHorse),  	# Utah
 	(22, 79)  : (1550,  iHorse),  	# Texas
 	(23, 88)  : (1550,  iHorse),  	# Nebraska
@@ -76,40 +79,7 @@ def setup():
 	(37, 77)  : (1600,  iTobacco), 	# Virginia
 	(37, 74)  : (1600,  iTobacco), 	# South Carolina
 	(29, 75)  : (1600,  iTobacco), 	# Alabama
-	(33, 80)  : (1600,  iTobacco), 	# Kentucky'''
-
-dResourcesDict = {
-	(13, 63)  : (-450,  iHorse),  	# Mexico
-	(15, 89)  : (-450,  iHorse),  	# Utah
-	(22, 79)  : (-450,  iHorse),  	# Texas
-	(23, 88)  : (-450,  iHorse),  	# Nebraska
-	(28, 63)  : (-450,  iHorse),  	# Cuba
-	(31, 79)  : (-450,  iHorse),  	# Kentucky
-	(38, 75)  : (-450,  iHorse),  	# North Carolina
-	(45, 91)  : (-450,  iHorse),  	# Quebec
-	(20, 11)  : (-450,  iHorse),  	# Argentina
-	(24, 28)  : (-450,  iHorse),  	# Peru
-	(26, 13)  : (-450,  iHorse),  	# Argentina
-	(27, 16)  : (-450,  iHorse),  	# Argentina
-	(30, 46)  : (-450,  iHorse),  	# Colombia
-	(37, 45)  : (-450,  iHorse),  	# Venezuela
-	(56, 27)  : (-450,  iHorse),  	# Brazil
-	(32, 72)  : (-450,  iCotton),  	# Georgia
-	(35, 73)  : (-450,  iCotton),  	# South Carolina
-	(36, 75)  : (-450,  iCotton),  	# North Carolina
-	(29, 73)  : (-450,  iCotton), 	# Alabama
-	(28, 77)  : (-450,  iCotton),  	# Mississippi
-	(22, 76)  : (-450,  iCotton),  	# Texas
-	(17, 73)  : (-450,  iCotton),  	# Texas
-	(49, 87)  : (-450,  iPotato),  	# New Brunswick
-	(33, 87)  : (-450,  iPotato),  	# Michigan
-	(24, 96)  : (-450,  iPotato),  	# North Dakota
-	(16, 93)  : (-450,  iPotato),  	# Idaho
-	(11, 96)  : (-450,  iPotato),  	# Oregon
-	(37, 77)  : (-450,  iTobacco), 	# Virginia
-	(37, 74)  : (-450,  iTobacco), 	# South Carolina
-	(29, 75)  : (-450,  iTobacco), 	# Alabama
-	(33, 80)  : (-450,  iTobacco), 	# Kentucky
+	(33, 80)  : (1600,  iTobacco), 	# Kentucky
 	
 	(32, 73)  : (1950,  iCow), 		# Easter Egg: Butts County Dairy
 	(32, 73)  : (1980,  iTimber), 	# Easter Egg: Butts County Pine Plantation

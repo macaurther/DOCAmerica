@@ -8824,6 +8824,19 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_ESPIONAGE_MISSION", iEspionage));
 	}
 
+	// MacAurther: Settlers/Pioneers can't be trained in cities with fewer than 2 population, and reduce population by 1 when trained
+	if (GC.getUnitInfo(eUnit).isFound())
+	{
+		if (pCity != NULL && pCity->getPopulation() < 2)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_SETTLER_REQUIRES_FOUR_POP"));
+		}
+
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_SETTLER_REDUCES_POPULATION"));
+	}
+
 	// Leoreth: new statesman missions
 	if (GC.getUnitInfo(eUnit).isReformGovernment())
 	{

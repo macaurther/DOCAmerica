@@ -331,33 +331,15 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 		changeHealRate(10);
 	}
 
-	// MacAurther: Starting population per era:
-	//  Ancient:		1
-	//  Classical:		1
-	//  Exploration:    1
-	//  Colonial:       2
-	//  Revolutionary:  3
-	//  Industrial:     3
-	//  Modern:			4
-	int iCurrentEra = GET_PLAYER(eOwner).getCurrentEra();
+	// MacAurther: Starting population increases with certain techs:
 	int iExtraPopulation = 0;
-	switch (iCurrentEra)
-	{
-		case ERA_COLONIAL:
-			iExtraPopulation = 1;
-			break;
-		case ERA_REVOLUTIONARY:
-		case ERA_INDUSTRIAL:
-			iExtraPopulation = 2;
-			break;
-		case ERA_MODERN:
-			iExtraPopulation = 3;
-			break;
-	}
+
+	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)COMMUNITY)) iExtraPopulation += 1;
+	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)CIVIL_LIBERTIES)) iExtraPopulation += 1;
+	if (GET_TEAM(GET_PLAYER(eOwner).getTeam()).isHasTech((TechTypes)GLOBALISM)) iExtraPopulation += 2;
+
 
 	changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPopulation);
-	//changePopulation(GC.getDefineINT("INITIAL_CITY_POPULATION") + iExtraPop);
-	//Rhye - end switch
 
 	changeAirUnitCapacity(GC.getDefineINT("CITY_AIR_UNIT_CAPACITY"));
 
@@ -2153,6 +2135,12 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 
 	// Leoreth: can't train slaves -> MacAurther: Actually now you can with a Slave Market, but you can't train Colonists, Migrant Workers, or Colonial Native Slaves
 	if (eUnit == UNIT_COLONIST || eUnit == UNIT_MIGRANT_WORKER || eUnit == UNIT_NATIVE_SLAVE_COLONY)
+	{
+		return false;
+	}
+
+	// MacAurther: Have to be size 2 to train Settlers/Pioneers
+	if (getPopulation() < 2 && GC.getUnitInfo(eUnit).isFound() && !bTestVisible)
 	{
 		return false;
 	}
@@ -13838,6 +13826,13 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 				setUnitHurried(eTrainUnit, false);
 			}
 
+			// MacAurther: if the unit was a Settler or Pioneer, remove a population
+			UnitClassTypes eUnitClassType = (UnitClassTypes)(GC.getUnitInfo(eTrainUnit).getUnitClassType());
+			if (eUnitClassType == UNITCLASS_SETTLER || eUnitClassType == UNITCLASS_PIONEER)
+			{
+				changePopulation(-1);
+			}
+
 			addProductionExperience(pUnit);
 
 			pRallyPlot = getRallyPlot();
@@ -17953,7 +17948,7 @@ void CvCity::setNextCoveredPlot(int iNewValue, bool bUpdatePlotGroups)
 					iCultureRange = std::max(0, plotDistance(getX_INLINE(), getY_INLINE(), pLoopPlot->getX(), pLoopPlot->getY()));
 
 					// Leoreth: only two rings for minor civilizations
-					// MacAurther TODO: Make 3rd Culture ring based on a tech
+					// MacAurther TODO: Make 3rd Culture ring based on a tech?
 					if (!bMinor || iCultureRange <= 2)
 					{
 						pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, -1, bUpdatePlotGroups);
@@ -17985,7 +17980,7 @@ void CvCity::setNextCoveredPlot(int iNewValue, bool bUpdatePlotGroups)
 					}
 
 					// Leoreth: only two rings for minor civilizations
-					// MacAurther TODO: Make 3rd Culture ring based on a tech
+					// MacAurther TODO: Make 3rd Culture ring based on a tech?
 					if (!bMinor || iCultureRange <= 2)
 					{
 						pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, 1, bUpdatePlotGroups);

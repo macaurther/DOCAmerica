@@ -6693,10 +6693,10 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	iProductionNeeded *= iCostModifier;
 	iProductionNeeded /= 100;
 
-	/*if (GC.getUnitInfo(eUnit).isFound())
+	if (GC.getUnitInfo(eUnit).isFound())
 	{
 		iProductionNeeded *= 2;
-	}*/
+	}
 
 	// increase unit cost with era
 	/*int iEraModifier = 100;

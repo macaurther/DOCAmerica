@@ -627,6 +627,14 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CIVIL_LIBERTIES_HELP</Tag>
+		<English>Newly founded cities start with +1 Population</English>
+		<French>Newly founded cities start with +1 Population</French>
+		<German>Newly founded cities start with +1 Population</German>
+		<Italian>Newly founded cities start with +1 Population</Italian>
+		<Spanish>Newly founded cities start with +1 Population</Spanish>
+	</TEXT>
 
 
 
@@ -796,6 +804,14 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_COMMUNITY_HELP</Tag>
+		<English>Newly founded cities start with +1 Population</English>
+		<French>Newly founded cities start with +1 Population</French>
+		<German>Newly founded cities start with +1 Population</German>
+		<Italian>Newly founded cities start with +1 Population</Italian>
+		<Spanish>Newly founded cities start with +1 Population</Spanish>
 	</TEXT>
 
 
@@ -1661,6 +1677,14 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_GLOBALISM_HELP</Tag>
+		<English>Newly founded cities start with +2 Population</English>
+		<French>Newly founded cities start with +2 Population</French>
+		<German>Newly founded cities start with +2 Population</German>
+		<Italian>Newly founded cities start with +2 Population</Italian>
+		<Spanish>Newly founded cities start with +2 Population</Spanish>
+	</TEXT>
 
 
 
@@ -1931,6 +1955,17 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_HUNTING_HELP</Tag>
+		<English>[ICON_BULLET]Extra food from defeating Animals in nearby city</English>
+		<French>[ICON_BULLET]Extra food from defeating Animals in nearby city</French>
+		<German>[ICON_BULLET]Extra food from defeating Animals in nearby city</German>
+		<Italian>[ICON_BULLET]Extra food from defeating Animals in nearby city</Italian>
+		<Spanish>[ICON_BULLET]Extra food from defeating Animals in nearby city</Spanish>
 	</TEXT>
 
 
@@ -3024,16 +3059,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_PIONEERING_HELP</Tag>
-		<English>[ICON_BULLET]Newly constructed Forts claim more territory
-[ICON_BULLET]New cities start with a defender and a worker</English>
-		<French>[ICON_BULLET]Newly constructed Forts claim more territory
-[ICON_BULLET]New cities start with a defender and a worker</French>
-		<German>[ICON_BULLET]Newly constructed Forts claim more territory
-[ICON_BULLET]New cities start with a defender and a worker</German>
-		<Italian>[ICON_BULLET]Newly constructed Forts claim more territory
-[ICON_BULLET]New cities start with a defender and a worker</Italian>
-		<Spanish>[ICON_BULLET]Newly constructed Forts claim more territory
-[ICON_BULLET]New cities start with a defender and a worker</Spanish>
+		<English>[ICON_BULLET]New cities start with a defender and a worker</English>
+		<French>[ICON_BULLET]New cities start with a defender and a worker</French>
+		<German>[ICON_BULLET]New cities start with a defender and a worker</German>
+		<Italian>[ICON_BULLET]New cities start with a defender and a worker</Italian>
+		<Spanish>[ICON_BULLET]New cities start with a defender and a worker</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_PIONEERING_QUOTE</Tag>
@@ -3921,6 +3951,14 @@
 		<German>Surveying</German>
 		<Italian>Surveying</Italian>
 		<Spanish>Surveying</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SURVEYING_HELP</Tag>
+		<English>[ICON_BULLET]Newly constructed Forts claim more territory</English>
+		<French>[ICON_BULLET]Newly constructed Forts claim more territory</French>
+		<German>[ICON_BULLET]Newly constructed Forts claim more territory</German>
+		<Italian>[ICON_BULLET]Newly constructed Forts claim more territory</Italian>
+		<Spanish>[ICON_BULLET]Newly constructed Forts claim more territory</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SURVEYING_QUOTE</Tag>

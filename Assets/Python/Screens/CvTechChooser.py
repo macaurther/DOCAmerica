@@ -651,9 +651,31 @@ class CvTechChooser:
 					if gc.getUnitInfo(item).getEspionagePoints() == 0 or not CyGame().isOption(GameOptionTypes.GAMEOPTION_NO_ESPIONAGE):
 						screen.addDDSGFCAt(szItem, szTechBox, player.getUnitButton(item), iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_HELP_FREE_UNIT, item, tech, False)
 				
-				# MacAurther: This is kludgy, to make right, it'd have to be added to the XML. But that's a lot of work...
+				# MacAurther TODO: This is kludgy, to make right, it'd have to be added to the XML. But that's a lot of work...
+				# MacAurther: Custom Tech effect buttons
+				# Hunting: Animal Hunting
+				elif TechInfo.getGridX() == 1 and TechInfo.getGridY() == 1:
+					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ANIMAL_HUNTING").getPath()
+					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# Pathfinding: Mountain Pass
 				elif TechInfo.getGridX() == 2 and TechInfo.getGridY() == 3:
 					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_MOUNTAINPASS").getPath()
+					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# Linguistics, Localization: Tribe contact discount
+				elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 7) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 7):
+					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath()
+					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# Community, Civil Liberties, Globalism: Extra population on city founding
+				elif (TechInfo.getGridX() == 12 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 17 and TechInfo.getGridY() == 13) or (TechInfo.getGridX() == 21 and TechInfo.getGridY() == 11):
+					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_POPULATION").getPath()
+					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# Surveying: Forts claim additional territory
+				elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 9):
+					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_FORT_TERRITORY").getPath()
+					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
+				# Pioneering: Cities start with worker and defender
+				elif (TechInfo.getGridX() == 16 and TechInfo.getGridY() == 9):
+					szFileName = CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CITY_DEFENDER_AND_WORKER").getPath()
 					screen.addDDSGFCAt(szItem, szTechBox, szFileName, iX + fX, iY + self.Y_ITEMS, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_PYTHON, 7800, tech, False)
 				
 				elif type == "CustomEffect":

@@ -1119,6 +1119,14 @@
 		<Spanish>Your Holkan has defeated a %s1 %s2, acquiring %d3 [ICON_FOOD] for %s4.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_ANIMAL_HUNT_EFFECT</Tag>
+		<English>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</English>
+		<French>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</French>
+		<German>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</German>
+		<Italian>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</Italian>
+		<Spanish>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_COOPERATION_EFFECT</Tag>
 		<English>Converted tribespeople settle in %s1.</English>
 		<French>Converted tribespeople settle in %s1.</French>

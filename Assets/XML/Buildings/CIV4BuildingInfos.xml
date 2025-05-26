@@ -282,7 +282,6 @@
 			<iAsset>3</iAsset>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<SeaPlotYieldChanges>
-				<iYield>1</iYield>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</SeaPlotYieldChanges>
@@ -8384,7 +8383,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PUEBLO_BONITO</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
-			<PrereqTech>TECH_POTTERY</PrereqTech>
+			<PrereqTech>TECH_MINING</PrereqTech>
 			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>

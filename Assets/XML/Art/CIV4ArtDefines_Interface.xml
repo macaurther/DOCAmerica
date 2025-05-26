@@ -1773,8 +1773,28 @@
 			<Path>Art/Interface/Buttons/Process/ProcessImmigration.dds</Path>
 		</InterfaceArtInfo>
 		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_ANIMAL_HUNTING</Type>
+			<Path>,Art/Interface/Buttons/Units/Bear.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,5</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
 			<Type>INTERFACE_TECH_MOUNTAINPASS</Type>
 			<Path>Art/Interface/Screens/TechTree/MountainPass.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_CHEAP_CONTACT</Type>
+			<Path>,Art/Interface/Buttons/Builds/BuildTribalVillage.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,4,10</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_EXTRA_POPULATION</Type>
+			<Path>Art/Interface/MainScreen/CityScreen/Citizen.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_EXTRA_FORT_TERRITORY</Type>
+			<Path>,Art/Interface/Buttons/Builds/BuildFort.dds,Art/Interface/Buttons/Actions_Builds_LeaderHeads_Specialists_Atlas.dds,7,9</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_CITY_DEFENDER_AND_WORKER</Type>
+			<Path>,Art/Interface/Buttons/Units/Worker.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,5</Path>
 		</InterfaceArtInfo>
 	</InterfaceArtInfos>
 </Civ4ArtDefines>

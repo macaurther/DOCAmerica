@@ -79,7 +79,7 @@
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>0</iYield>
-				<iYield>50</iYield>
+				<iYield>25</iYield>
 			</CapitalYieldModifiers>
 			<BuildingProductionModifiers>
 				<BuildingProductionModifier>
@@ -276,7 +276,7 @@
 			<iCapitalBuildingProductionModifier>25</iCapitalBuildingProductionModifier>
 			<CapitalYieldModifiers>
 				<iYield>0</iYield>
-				<iYield>50</iYield>
+				<iYield>25</iYield>
 			</CapitalYieldModifiers>
 		</CivicInfo>
 		<CivicInfo>
@@ -2542,7 +2542,7 @@
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<bStateReligion>1</bStateReligion>
 			<YieldModifiers>
-				<iYield>25</iYield>
+				<iYield>10</iYield>
 			</YieldModifiers>
 			<CommerceModifiers>
 				<iCommerce>0</iCommerce>

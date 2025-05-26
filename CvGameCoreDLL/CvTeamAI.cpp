@@ -2653,19 +2653,19 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 	}
 
 	// Leoreth: never more defensive pact partners than limit
-	if (partners.size() > iDefensivePactLimit)
+	if ((int)partners.size() > iDefensivePactLimit)
 	{
 		return DENIAL_NO_GAIN;
 	}
 
 	// Leoreth: defensive pact partners and member with highest vassal count may not exceed twice the limit
-	if (partners.size() + iMaxVassals > 2 * iDefensivePactLimit)
+	if ((int)partners.size() + iMaxVassals > 2 * iDefensivePactLimit)
 	{
 		return DENIAL_NO_GAIN;
 	}
 
 	// Leoreth: sum of defensive pact partners and half of all their vassals may not exceed twice the limit
-	if (partners.size() + vassals.size() / 2 > 2 * iDefensivePactLimit)
+	if ((int)partners.size() + (int)vassals.size() / 2 > 2 * iDefensivePactLimit)
 	{
 		return DENIAL_NO_GAIN;
 	}

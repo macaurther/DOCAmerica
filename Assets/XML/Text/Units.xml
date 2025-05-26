@@ -186,6 +186,22 @@
 		<Spanish>[ICON_BULLET]Can remove non-state religions and associated buildings</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_SETTLER_REDUCES_POPULATION</Tag>
+		<English>[ICON_BULLET]-1 Population when trained</English>
+		<French>[ICON_BULLET]-1 Population when trained</French>
+		<German>[ICON_BULLET]-1 Population when trained</German>
+		<Italian>[ICON_BULLET]-1 Population when trained</Italian>
+		<Spanish>[ICON_BULLET]-1 Population when trained</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_SETTLER_REQUIRES_FOUR_POP</Tag>
+		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires at least 2 population[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Requires at least 2 population[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_WARNING_TEXT]Requires at least 2 population[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Requires at least 2 population[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requires at least 2 population[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAN_REFORM_GOVERNMENT</Tag>
 		<English>[ICON_BULLET]Can Reform the Government</English>
 		<French>[ICON_BULLET]Can Reform the Government</French>
