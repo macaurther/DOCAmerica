@@ -69,7 +69,7 @@ dGoals = {
 		StateReligionPercent(iProtestantism, 50, bSecular=True),
 	),
 	iPaganVictory: (
-		BuildingCount(iPaganTemple, 15, subject=WORLD),
+		BuildingCount(iPaganTemple, 25, subject=WORLD),
 		NoReligionPercent(50),
 	),
 	iSecularVictory: (
@@ -103,7 +103,7 @@ dAdditionalPaganGoal = {
 		ImprovementCount(iFarm, 20),
 	),
 	iRodnovery: ResourceCount(iFur, 7),
-	iTeotlMaya: CombatFood(50),
+	iTeotlMaya: CombatFood(500),
 	iTeotlAztec: SacrificeGoldenAges(10),
 	iWocekiya: ResourceCount(iBison, 7),
 	iYoruba: ResourceCount((iBison, 8), (iGems, 6)),

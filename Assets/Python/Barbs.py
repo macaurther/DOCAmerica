@@ -11,8 +11,9 @@ from SettlerMaps import dSettlerMaps
 # Spawning cities (Leoreth)
 # Year, coordinates, owner, name, population, unit type, unit number, religions, forced spawn
 tMinorCities = (
-#(250, (36, 60), iNative, 'Calakmul', 2, iHolkan, 3),				# Calakmul
-(410, (22, 56), iNative, 'Copan', 2, iMilitia1, 2),					# Copan
+(-450, (19, 60), iNative, 'Palenque', 2, iMilitia1, 2),				# Maya (Founded 432 BCE) - moved up founding for gameplay
+(-400, (22, 56), iNative, 'Copan', 2, iMilitia1, 3),				# Maya (Founded 410 CE) - moved up founding for gameplay
+(-250, (24, 62), iNative, 'Chichen Itza', 2, iMilitia1, 4),			# Maya (Founded 600 CE) - moved up founding for gameplay
 (450, (22, 28), iNative, 'Nazca', 2, iMilitia1, 2),					# Nazca
 (950, (16, 15), iNative, 'Mapuches', 2, iMilitia1, 2),				# Mapuche
 (1836, (33, 70), iIndependent2, 'Houston', 3, iMilitia5, 4),		# Republic of Texas

@@ -4789,30 +4789,38 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCAINTRO_PEDIA</Tag>
-		<English>[H1]Welcome to Dawn of Civilization: America[\H1][PARAGRAPH:2]Dawn of Civilzation: America (DoCA) is a ModModMod of Dawn of Civilization and Rhye's and Fall of Civilization. It focuses on the time period between 1 AD and 1900 AD in the Western Hemisphere. It includes a custom map, custom civilizations, unique powers, buildings, units, technologies, civics, and mechanics. Read up on the new mechanics in DoCA in Section 3 of the Concepts pages.</English>
+		<English>[H1]Welcome to Dawn of Civilization: America[\H1][PARAGRAPH:2]Dawn of Civilzation: America (DoCA) is a ModModMod of Dawn of Civilization and Rhye's and Fall of Civilization. It focuses on the time period between 500 BCE and 1950 CE in the Western Hemisphere. It includes a custom map, custom civilizations, unique powers, buildings, units, technologies, civics, and mechanics. Read up on the new mechanics in DoCA in Section 3 of the Concepts pages.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_REGIONAL_POWERS_PEDIA</Tag>
-		<English>[H1]Regional Powers[\H1][PARAGRAPH:2]In Dawn of Civilization: America, every Civilization has a [BOLD]Unique Power[\BOLD] as well as a [BOLD]Regional Power[\BOLD]. Unlike [BOLD]Unique Powers[\BOLD], [BOLD]Regional Powers[\BOLD] are not unique a Civilization and are grouped based on the regions where Civilizations are from. The different [BOLD]Regional Powers[\BOLD] are:
-[NEWLINE][ICON_BULLET][BOLD]Andes[\BOLD]: +2 [ICON_FOOD] and +1 [ICON_PRODUCTION] on Mountains
-[TAB]Details: Identical to the Inca UP from base RFC. Now, all native Andean Civilizations share this power.
+		<English>[H1]Regional Powers[\H1][PARAGRAPH:2]In Dawn of Civilization: America, every Civilization has a [BOLD]Unique Power[\BOLD] as well as a [BOLD]Regional Power[\BOLD]. Unlike [BOLD]Unique Powers[\BOLD], [BOLD]Regional Powers[\BOLD] are not unique to a Civilization, but are intead unique to a group of Civilizations from a common region. The different [BOLD]Regional Powers[\BOLD] are:
+[NEWLINE][ICON_BULLET][BOLD]Andes:[\BOLD] Can build farms on hills and +1 [ICON_FOOD] on farmed hills
+[TAB]Details: Allows the Farm improvement to be built on hills. Farms still require irrigation.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_CHIMU]Chimu[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_INCA]Inca[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_MUISCA]Muisca[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_TIWANAKU]Tiwanaku[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_WARI]Wari[\LINK]
-[ICON_BULLET][BOLD]Anglo America[\BOLD]: Can hire Great People with Immigration
+[NEWLINE]
+[ICON_BULLET][BOLD]Anglo America:[\BOLD] Can hire Great People with Immigration
 [TAB]Details: Use generated [ICON_IMMIGRATION] ([LINK=CONCEPT_IMMIGRATION]Immigration[\LINK]) to hire Great People from abroad.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_AMERICA]America[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_CANADA]Canada[\LINK]
-[ICON_BULLET]Arctic: Trade routes do not require roads
+[NEWLINE]
+[ICON_BULLET][BOLD]Arctic:[\BOLD] Trade routes do not require roads
 [TAB]Details: All that is needed to estabilish a trade route between your cities is a revealed path of contiguous land tiles.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_INUIT]Inuit[\LINK]
-[ICON_BULLET]Europe: No Core area and receive stability from home country
-[TAB]Details: You have no Core area. Instead, you are given bonus [LINK=CONCEPT_STABILITY]stability[\LINK] based on your home country's historical size. After the Revolutionary Era, this stability bonus decreases.
+[NEWLINE]
+[ICON_BULLET][BOLD]Plateau:[\BOLD] Cities start with improved infrastructure
+[TAB]Details: Each founded city starts with a Granary, Market, and Stoneworks.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_PUEBLOAN]Pueblo[\LINK]
+[NEWLINE]
+[ICON_BULLET][BOLD]Europe:[\BOLD] No Core area, receive free stability, and can hire military units with [ICON_IMMIGRATION]
+[TAB]Details: You have no Core area. Instead, you are given bonus [LINK=CONCEPT_STABILITY]stability[\LINK] based on your home country's historical size. After the Revolutionary Era, this stability bonus decreases. Additionally, you can hire military units from Europe with [LINK=CONCEPT_STABILITY]Immigration[\LINK].
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_ENGLAND]England[\LINK]
 [TAB][TAB][ICON_BULLET]Bonus Stability: 10
@@ -4835,7 +4843,14 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB][ICON_BULLET][LINK=CIVILIZATION_SPAIN]Spain[\LINK]
 [TAB][TAB][ICON_BULLET]Bonus Stability: 15
 [TAB][TAB][ICON_BULLET]Administration Cap: 90
-[ICON_BULLET]Latin America: +3[ICON_HAPPY] from Catholic Church
+[NEWLINE]
+[ICON_BULLET][BOLD]Lakes and Rivers:[\BOLD] No penalties for cultural expansion over river tiles
+[TAB]Details: Similar to the Polynesian UP from base RFC. Borders grown at unimpeded rate over Wide River tiles and Rivers.
+[TAB]Civilizations:
+[TAB][ICON_BULLET][LINK=CIVILIZATION_HAUDENOSAUNEE]Haudenosaunee[\LINK]
+[TAB][ICON_BULLET][LINK=CIVILIZATION_MISSISSIPPI]Mississippi[\LINK]
+[NEWLINE]
+[ICON_BULLET][BOLD]Latin America:[\BOLD] +3[ICON_HAPPY] from Catholic Church
 [TAB]Details: Catholic Churches provide extra Happiness. Your State Religion does not have to be Catholicism.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_ARGENTINA]Argentina[\LINK]
@@ -4845,7 +4860,8 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB][ICON_BULLET][LINK=CIVILIZATION_MEXICO]Mexico[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_PERU]Peru[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_VENEZUELA]Venezuela[\LINK]
-[ICON_BULLET]Mesoamerica: Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness
+[NEWLINE]
+[ICON_BULLET][BOLD]Mesoamerica:[\BOLD] Military units can enslave defeated enemy units, can sacrifice slaves to increase city happiness
 [TAB]Details: Identical to the Aztec UP from base RFC. Now, all native Mesoamerican Civilizations share this power.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_AZTEC]Aztec[\LINK]
@@ -4853,20 +4869,13 @@ Your stability level can change during a stability check. As long it is higher t
 [TAB][ICON_BULLET][LINK=CIVILIZATION_TEOTIHUACAN]Teotihuacan[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_ZAPOTEC]Zapotec[\LINK]
 [TAB][ICON_BULLET][LINK=CIVILIZATION_PUREPECHA]Purepecha[\LINK]
-[ICON_BULLET]Pacific: No penalties for cultural expansion over water tiles
-[TAB]Details: Identical to the Polynesian UP from base RFC. Borders grown at unimpeded rate over water tiles.
+[NEWLINE]
+[ICON_BULLET][BOLD]Pacific:[\BOLD] No penalties for cultural expansion over ocean tiles
+[TAB]Details: Similar to the Polynesian UP from base RFC. Borders grown at unimpeded rate over ocean tiles, but not Lakes and Wide Rivers.
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_HAWAII]Hawaii[\LINK]
-[ICON_BULLET]Lakes and Rivers: No penalities for Cultural expansion over River Tiles
-[TAB]Details: Similar to the Polynesian UP from base RFC. Borders grown at unimpeded rate over Wide River tiles and Rivers.
-[TAB]Civilizations:
-[TAB][ICON_BULLET][LINK=CIVILIZATION_HAUDENOSAUNEE]Haudenosaunee[\LINK]
-[TAB][ICON_BULLET][LINK=CIVILIZATION_MISSISSIPPI]Mississippi[\LINK]
-[ICON_BULLET]Desert: Cities start with improved infrastructure
-[TAB]Details: Cities start with a free Granary, Market, and Stoneworks.
-[TAB]Civilizations:
-[TAB][ICON_BULLET][LINK=CIVILIZATION_PUEBLOAN]Puebloan[\LINK]
-[ICON_BULLET]Plains: +1 [ICON_FOOD] on Camps and Pastures
+[NEWLINE]
+[ICON_BULLET][BOLD]Plains:[\BOLD] +1 [ICON_FOOD] on Camps and Pastures
 [TAB]Civilizations:
 [TAB][ICON_BULLET][LINK=CIVILIZATION_LAKOTA]Lakota[\LINK]
 		</English>
@@ -4917,18 +4926,18 @@ Your stability level can change during a stability check. As long it is higher t
 [PARAGRAPH:1]Immigration is generated and accumlated globally each turn, similar to [ICON_GOLD]. It can be spent in the new Immigration Manager window. The Immigration screen can be accessed by clicking the small Immigration icon in the upper left of the screen or by pressing "M". Here you can hire foreign units to be your colonists or expeditionary force. You must have the [LINK=TECH_OLD_WORLD_CULTURE]Old World Culture[\LINK] to hire Immigrants.
 [H2]Hiring Immigrants[\H2][PARAGRAPH:1]Immigrants come in three types: Colonists, Expeditionaries, and Endowments. Colonists are civilian units and transport ships, Expeditionaries are military units, and Endowments are special bonuses. To hire an Immigrant, press the Hire button next to the Immigrant you wish to hire. Immigrants that you can't hire will not show a hire button. To hire a land unit, you need at least one ship with free capacity on either the East or West edge of the map. Newly hired land Immigrants will appear on the western-most ship with capacity you have on the sides of the map. For every Immigrant you hire, subsequent hires will be 10% more expensive; additionally, subsequent hires of that type become an additional 10% more expensive (Types are categories such as Workers, Militia, or Mainline Infantry). It may be wise to diversify your hirings.
 [H2]Immigrant Cost[\H2][PARAGRAPH:1]Notice your current balance in the top left of the Immigration window: this shows you current Gold [ICON_GOLD] and Immigration [ICON_IMMIGRATION] reserves. When hiring Immigrants, your [ICON_IMMIGRATION] pool will be prioritized over your [ICON_GOLD]. If you have enough [ICON_IMMIGRATION] to hire an Immigrant outright, 100% of its cost will be deducted from your [ICON_IMMIGRATION] total. If you have some but not enough [ICON_IMMIGRATION], some of the cost will come from your [ICON_GOLD], at a conversion rate of 2[ICON_GOLD] to 1[ICON_IMMIGRATION]. Note: Expeditionaries cannot be hired with [ICON_IMMIGRATION] unless you are playing as a Colony.
-[H2]Mercenaries[\H2][PARAGRAPH:1]If any [ICON_GOLD] was used to buy an Immigrant, it will be considered a Mercenary. Mercenaries cost an additional 2 [ICON_GOLD] of maintenance per turn. The gold cost to buy Mercenaries can be reduced and the maintenance can be eliminated by running the [LINK=CIVIC_PROPRIETARIES]Proprietaries[\LINK] civic.
+[H2]Mercenaries[\H2][PARAGRAPH:1]If any [ICON_GOLD] was used to buy an Immigrant, it will be considered a Mercenary. Mercenaries cost an additional 2 [ICON_GOLD] of maintenance per turn. The gold cost to buy Mercenaries can be reduced and the maintenance can be eliminated by running the [LINK=CIVIC_PROPRIETARIES_COLONY]Proprietaries[\LINK] civic.
 		</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_FORTS_PEDIA</Tag>
 		<English>[H1]Forts[\H1][PARAGRAPH:2]In Dawn of Civilization: America, [LINK=IMPROVEMENT_FORT]Forts[\LINK] claim territory when they are built. 
 [NEWLINE][ICON_BULLET]Upon construction, a Fort claims any unclaimed territory within a certain range (determined by Technologies and Unique Powers).
-[ICON_BULLET]At first, it only claims adjacent tiles, but it can claim a Big-Fat-Cross once [LINK=TECH_PIONEERING]Pioneering[\LINK] is researched. 
+[ICON_BULLET]At first, it only claims adjacent tiles, but it can claim a Big-Fat-Cross once [LINK=TECH_SURVEYING]Surveying[\LINK] is researched. 
 [ICON_BULLET]Any territory claimed by a Fort remains in control of the Fort constructor until that Fort is destroyed (by razing). Even overwhelming Culture cannot override a Fort's claim.
 [ICON_BULLET]Capture enemy forts by occupying it with a unit.
 [ICON_BULLET]When destroyed, any land claimed by that fort returns to being neutral.
-[PARAGRAPH:1]Use Forts to claim territory that is not worth spending maintenance for cities. Forts can help you gain control of remote resources, maintain vision, build defensive networks far from your cities that still allow units to heal faster, and claim tracks of land for Unique Historical Victories.
+[PARAGRAPH:1]Use Forts to claim territory that is not worth spending maintenance for cities. Forts can help you gain control of remote resources, maintain vision, build defensive networks far from your cities that still allow units to heal faster, and claim tracts of land for Unique Historical Victories.
 		</English>
 	</TEXT>
 	<TEXT>
@@ -4942,12 +4951,11 @@ Your stability level can change during a stability check. As long it is higher t
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_ODDS_PEDIA</Tag>
 		<English>[H1]Odds and Ends in DOCA[\H1][PARAGRAPH:2]
-[ICON_BULLET]Several new Terrains have been added, including [LINK=TERRAIN_SEMIDESERT]Semidesert[\LINK], [LINK=TERRAIN_SEMIDESERT]Moorland[\LINK], [LINK=TERRAIN_SEMIDESERT]Savannah[\LINK], [LINK=TERRAIN_SEMIDESERT]Salt Flats[\LINK], [LINK=TERRAIN_SEMIDESERT]Prairie[\LINK], and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
+[ICON_BULLET]New Terrains have been added, including [LINK=TERRAIN_PRAIRIE]Prairie[\LINK] and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
 [ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Most units can now move through Marshes. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=TERRAIN_SEMIDESERT]Swamps[\LINK] are another new feature type on Swamps that can be chopped like Forests.
 [ICON_BULLET][LINK=TERRAIN_WIDE_RIVER]Wide Rivers[\LINK] yield 1[ICON_FOOD] 1 [ICON_PRODUCTION] 2[ICON_COMMERCE], allow ships to navigate, allow naval trade, grant fresh water to adjacent tiles, and allow adjacent tiles to act as if they have a River (ex: Levee bonus).
 [ICON_BULLET]Wide Rivers represent large, navigable rivers, such as the Mississippi, Missouri, Ohio, and Amazon Rivers. Ships can navigate along Wide River diagonally, even though they might not be graphically contiguous.
-[ICON_BULLET]Moving diagonally between two mountains is now impassible without the Pathfinding native technology.
-[ICON_BULLET]Many new Resources have been added.
+[ICON_BULLET]Moving diagonally between two mountains is now impassible without the [LINK=TECH_PATHFINDING]Pathfinding[\LINK] native technology.
 [ICON_BULLET]Some Improvements now cost [ICON_COMMERCE] to construct. You will have to balance infrastructure spending with research, culture, and espionage.
 [ICON_BULLET]Lots of units of been reworked, and many units have been added. In general, units now have more well-defined roles and upgrade paths.
 [ICON_BULLET]Certain Seige units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.

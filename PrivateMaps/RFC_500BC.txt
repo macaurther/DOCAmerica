@@ -14,6 +14,74 @@ BeginMap
 EndMap
 
 BeginPlot
+	x=15,y=61
+	BeginUnit
+		UnitType=UNIT_WARRIOR
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_SETTLER
+		UnitOwner=CIVILIZATION_ZAPOTEC
+	EndUnit
+EndPlot
+BeginPlot
+	x=17,y=63
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_NATIVE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_NATIVE
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_NATIVE
+		CityName=La Venta
+		CityPopulation=1
+		YearFounded=-1800
+		BeginCulture
+			Civilization=CIVILIZATION_NATIVE
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
+	x=22,y=59
+	BeginUnit
+		UnitType=UNIT_WARRIOR
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WARRIOR
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_I
+		UnitOwner=CIVILIZATION_MAYA
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_MAYA
+		CityName=Tikal
+		CityPopulation=2
+		YearFounded=-1000
+		BuildingType=BUILDING_PALACE
+		BeginCulture
+			Civilization=CIVILIZATION_MAYA
+		EndCulture
+	EndCity
+EndPlot
+BeginPlot
 	x=58,y=0
 	BeginCity
 		CityOwner=CIVILIZATION_INDEPENDENT3
@@ -31,38 +99,6 @@ BeginPlot
 		HolyCityReligionType=RELIGION_ZOROASTRIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDEPENDENT3, Culture=10
-		EndCulture
-	EndCity
-EndPlot
-BeginPlot
-	x=15,y=61
-	BeginUnit
-		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_ZAPOTEC
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SETTLER
-		UnitOwner=CIVILIZATION_ZAPOTEC
-	EndUnit
-EndPlot
-BeginPlot
-	x=22,y=59
-	BeginUnit
-		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_MAYA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_I
-		UnitOwner=CIVILIZATION_MAYA
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_MAYA
-		CityName=Tikal
-		CityPopulation=2
-		YearFounded=-1000
-		BuildingType=BUILDING_PALACE
-		BeginCulture
-			Civilization=CIVILIZATION_MAYA
 		EndCulture
 	EndCity
 EndPlot
