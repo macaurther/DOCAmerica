@@ -20,11 +20,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_ZAPOTEC
 	EndUnit
 	BeginUnit
@@ -35,11 +35,11 @@ EndPlot
 BeginPlot
 	x=17,y=63
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
 	BeginCity
@@ -63,11 +63,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_MAYA
 	EndUnit
 	BeginCity

@@ -154,11 +154,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -284,11 +284,11 @@ BeginPlot
 	x=9,y=71
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -379,11 +379,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -448,7 +448,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_RUSSIA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_RUSSIA
 	EndUnit
 	BeginCity
@@ -624,11 +624,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -721,7 +721,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_RUSSIA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_RUSSIA
 	EndUnit
 	BeginCity
@@ -797,11 +797,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -904,7 +904,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginCity
@@ -933,7 +933,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_HAWAII
 	EndUnit
 	BeginUnit
@@ -984,11 +984,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -1131,7 +1131,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
 EndPlot
@@ -1176,11 +1176,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -1455,11 +1455,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -1565,11 +1565,11 @@ BeginPlot
 	x=20,y=14
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -1607,11 +1607,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -1675,11 +1675,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -1860,15 +1860,15 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -2035,11 +2035,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2129,11 +2129,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2196,11 +2196,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2285,11 +2285,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -2370,11 +2370,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2421,11 +2421,11 @@ BeginPlot
 	x=23,y=39
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2633,11 +2633,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2707,11 +2707,11 @@ BeginPlot
 	x=24,y=55
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -2753,11 +2753,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -2974,15 +2974,15 @@ BeginPlot
 	x=25,y=73
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginCity
@@ -3017,11 +3017,11 @@ BeginPlot
 	x=25,y=75
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginCity
@@ -3102,11 +3102,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -3169,11 +3169,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3234,11 +3234,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3299,11 +3299,11 @@ BeginPlot
 	x=26,y=40
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3466,11 +3466,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3534,11 +3534,11 @@ BeginPlot
 	x=27,y=83
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginCity
@@ -3776,11 +3776,11 @@ BeginPlot
 	x=30,y=62
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -3834,15 +3834,15 @@ BeginPlot
 	x=31,y=42
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -3937,11 +3937,11 @@ BeginPlot
 	x=32,y=12
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -4006,11 +4006,11 @@ BeginPlot
 	x=32,y=49
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -4064,7 +4064,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -4149,11 +4149,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -4264,11 +4264,11 @@ BeginPlot
 	x=34,y=60
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -4304,15 +4304,15 @@ BeginPlot
 	x=34,y=72
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -4404,11 +4404,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -4545,11 +4545,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -4645,11 +4645,11 @@ BeginPlot
 	x=37,y=50
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 	EndUnit
 	BeginCity
@@ -4669,15 +4669,15 @@ BeginPlot
 	x=37,y=55
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginCity
@@ -4843,15 +4843,15 @@ BeginPlot
 	x=38,y=77
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -4919,15 +4919,15 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -5030,11 +5030,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -5105,11 +5105,11 @@ BeginPlot
 	x=39,y=47
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -5253,11 +5253,11 @@ BeginPlot
 	x=40,y=54
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -5319,11 +5319,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -5524,11 +5524,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -5652,11 +5652,11 @@ BeginPlot
 	x=43,y=91
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
@@ -5718,11 +5718,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -5786,11 +5786,11 @@ BeginPlot
 	x=44,y=53
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginCity
@@ -5849,7 +5849,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -5945,11 +5945,11 @@ BeginPlot
 	x=45,y=41
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -5974,11 +5974,11 @@ BeginPlot
 	x=45,y=48
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginCity
@@ -6107,11 +6107,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
@@ -6166,11 +6166,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
@@ -6244,7 +6244,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginCity
@@ -6299,11 +6299,11 @@ BeginPlot
 	x=47,y=40
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 	EndUnit
 	BeginCity
@@ -6328,11 +6328,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -6398,11 +6398,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -6506,11 +6506,11 @@ BeginPlot
 	x=49,y=38
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 	EndUnit
 	BeginCity
@@ -6583,11 +6583,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -6626,11 +6626,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
@@ -6707,11 +6707,11 @@ BeginPlot
 	x=52,y=22
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -6833,11 +6833,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 	EndUnit
 	BeginCity
@@ -6948,11 +6948,11 @@ BeginPlot
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 	EndUnit
 	BeginUnit
@@ -7030,23 +7030,23 @@ BeginPlot
 	x=58,y=0
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginCity

@@ -807,11 +807,11 @@ BeginPlot
 	x=16,y=15
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
 	BeginCity
@@ -1625,7 +1625,7 @@ BeginPlot
 	x=23,y=89
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_SIOUX
 	EndUnit
 	BeginCity
@@ -1759,7 +1759,7 @@ BeginPlot
 	x=24,y=62
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 	EndUnit
 	BeginUnit
@@ -2304,7 +2304,7 @@ BeginPlot
 	x=28,y=89
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_SIOUX
 	EndUnit
 	BeginCity
@@ -2965,7 +2965,7 @@ BeginPlot
 	x=39,y=85
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 	EndUnit
 	BeginCity
@@ -2998,7 +2998,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_SPAIN
 	EndUnit
 	BeginUnit
@@ -3269,7 +3269,7 @@ BeginPlot
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_NORSE
 	EndUnit
 	BeginCity
@@ -3440,23 +3440,23 @@ BeginPlot
 	x=58,y=0
 	RouteType=ROUTE_ROAD
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 	EndUnit
 	BeginCity

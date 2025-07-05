@@ -125,7 +125,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-25</iHealthPercent>
+			<iHealthPercent>-100</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -592,7 +592,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-40</iHealthPercent>
+			<iHealthPercent>-100</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -705,7 +705,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-40</iHealthPercent>
+			<iHealthPercent>-100</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -1026,7 +1026,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>0</iHealthPercent>
+			<iHealthPercent>-50</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>5</iCultureCost>
 			<iAppearance>0</iAppearance>

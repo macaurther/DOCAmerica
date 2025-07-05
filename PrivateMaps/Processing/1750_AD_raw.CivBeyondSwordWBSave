@@ -8630,14 +8630,14 @@ BeginPlot
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -9551,14 +9551,14 @@ BeginPlot
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -10413,14 +10413,14 @@ BeginPlot
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -10770,7 +10770,7 @@ BeginPlot
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_RUSSIA
 		Level=1, Experience=0
 		FacingDirection=4
@@ -12195,14 +12195,14 @@ BeginPlot
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -12610,7 +12610,7 @@ BeginPlot
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_RUSSIA
 		Level=1, Experience=0
 		FacingDirection=4
@@ -13195,14 +13195,14 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -13993,7 +13993,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_HAWAII
 		Level=1, Experience=0
 		FacingDirection=4
@@ -14047,7 +14047,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_HAWAII
 		Level=1, Experience=0
 		FacingDirection=4
@@ -14233,14 +14233,14 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -14840,7 +14840,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -15191,14 +15191,14 @@ BeginPlot
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -17903,14 +17903,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -19290,14 +19290,14 @@ BeginPlot
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -19453,14 +19453,14 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -19564,14 +19564,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -20755,21 +20755,21 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -21578,14 +21578,14 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -21839,14 +21839,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -21967,14 +21967,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -22552,14 +22552,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -22821,14 +22821,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -22911,14 +22911,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -23913,14 +23913,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -24174,14 +24174,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -24292,14 +24292,14 @@ BeginPlot
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -25434,21 +25434,21 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -25496,14 +25496,14 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -25945,14 +25945,14 @@ BeginPlot
 		UnitAIType=UNITAI_COUNTER
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -26112,14 +26112,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -26217,14 +26217,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -26413,14 +26413,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -27310,14 +27310,14 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -27778,14 +27778,14 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -30456,14 +30456,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -31240,21 +31240,21 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -31993,14 +31993,14 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
@@ -32326,14 +32326,14 @@ BeginPlot
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -32540,7 +32540,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -33357,14 +33357,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -34352,14 +34352,14 @@ BeginPlot
 	TerrainType=TERRAIN_SAVANNA
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -34481,21 +34481,21 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -35004,14 +35004,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
@@ -36360,14 +36360,14 @@ BeginPlot
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -37110,14 +37110,14 @@ BeginPlot
 	TerrainType=TERRAIN_SEMIDESERT
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 		Level=1, Experience=0
 		FacingDirection=4
@@ -37175,21 +37175,21 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -38286,21 +38286,21 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -38398,21 +38398,21 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -38951,14 +38951,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
@@ -39254,14 +39254,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -40266,14 +40266,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -40517,14 +40517,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -42370,14 +42370,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -43390,14 +43390,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -43773,14 +43773,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
@@ -44113,14 +44113,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=1, Experience=0
 		FacingDirection=4
@@ -44360,7 +44360,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -44972,14 +44972,14 @@ BeginPlot
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -45058,14 +45058,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -46273,14 +46273,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -46397,14 +46397,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -46606,7 +46606,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_NORSE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -47008,14 +47008,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NETHERLANDS
 		Level=1, Experience=0
 		FacingDirection=4
@@ -47087,14 +47087,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -47745,14 +47745,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
@@ -48798,14 +48798,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_FRANCE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -49979,14 +49979,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -50158,14 +50158,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NORSE
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_NORSE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -51248,14 +51248,14 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
@@ -54091,14 +54091,14 @@ BeginPlot
 	TerrainType=TERRAIN_MOORLAND
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_ENGLAND
 		Level=1, Experience=0
 		FacingDirection=4
@@ -54567,14 +54567,14 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_III
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
 		UnitOwner=CIVILIZATION_PORTUGAL
 		Level=1, Experience=0
 		FacingDirection=4
@@ -56008,35 +56008,35 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4

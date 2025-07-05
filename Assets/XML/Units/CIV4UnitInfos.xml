@@ -2559,12 +2559,12 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_1</Class>
-			<Type>UNIT_MILITIA_I</Type>
+			<Class>UNITCLASS_MILITIA_SPEARMAN</Class>
+			<Type>UNIT_MILITIA_SPEARMAN</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_UNIT_MILITIA_SPEARMAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_MILITIA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MILITIA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
@@ -2575,7 +2575,7 @@
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MILITIA_2</UnitClassUpgradeType>
+					<UnitClassUpgradeType>MILITIA_PIKEMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -2623,21 +2623,21 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_I</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SPEARMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_I</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SPEARMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_I</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_SPEARMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_1</Class>
+			<Class>UNITCLASS_MILITIA_SPEARMAN</Class>
 			<Type>UNIT_MISSISSIPPI_FALCON_DANCER</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
@@ -2653,7 +2653,7 @@
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MILITIA_2</UnitClassUpgradeType>
+					<UnitClassUpgradeType>MILITIA_PIKEMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -2716,12 +2716,12 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_2</Class>
-			<Type>UNIT_MILITIA_II</Type>
+			<Class>MILITIA_PIKEMAN</Class>
+			<Type>UNIT_MILITIA_PIKEMAN</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_UNIT_MILITIA_PIKEMAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_MILITIA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MILITIA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
@@ -2732,7 +2732,7 @@
 			<bFood>1</bFood>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MILITIA_3</UnitClassUpgradeType>
+					<UnitClassUpgradeType>MILITIA_ARQUEBUSIER</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -2781,18 +2781,18 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_II</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_PIKEMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_3</Class>
-			<Type>UNIT_MILITIA_III</Type>
+			<Class>MILITIA_ARQUEBUSIER</Class>
+			<Type>UNIT_MILITIA_ARQUEBUSIER</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_UNIT_MILITIA_ARQUEBUSIER</Description>
 			<Civilopedia>TXT_KEY_UNIT_MILITIA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MILITIA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
@@ -2804,7 +2804,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MILITIA_4</UnitClassUpgradeType>
+					<UnitClassUpgradeType>MILITIA_MUSKETMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -2853,18 +2853,18 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_III</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_ARQUEBUSIER</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_4</Class>
-			<Type>UNIT_MILITIA_IV</Type>
+			<Class>MILITIA_MUSKETMAN</Class>
+			<Type>UNIT_MILITIA_MUSKETMAN</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_UNIT_MILITIA_MUSKETMAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_MILITIA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MILITIA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
@@ -2876,7 +2876,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MILITIA_5</UnitClassUpgradeType>
+					<UnitClassUpgradeType>MILITIA_RIFLEMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -2925,13 +2925,13 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_IV</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_MUSKETMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_4</Class>
+			<Class>MILITIA_MUSKETMAN</Class>
 			<Type>UNIT_AMERICAN_MINUTEMAN</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
@@ -2948,7 +2948,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MILITIA_5</UnitClassUpgradeType>
+					<UnitClassUpgradeType>MILITIA_RIFLEMAN</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -3018,12 +3018,12 @@
 			</FreePromotions>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_5</Class>
-			<Type>UNIT_MILITIA_V</Type>
+			<Class>MILITIA_RIFLEMAN</Class>
+			<Type>UNIT_MILITIA_RIFLEMAN</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_UNIT_MILITIA_RIFLEMAN</Description>
 			<Civilopedia>TXT_KEY_UNIT_MILITIA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MILITIA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
@@ -3035,7 +3035,7 @@
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
-					<UnitClassUpgradeType>UNITCLASS_MILITIA_6</UnitClassUpgradeType>
+					<UnitClassUpgradeType>MILITIA_INFANTRY</UnitClassUpgradeType>
 					<bUnitClassUpgrade>1</bUnitClassUpgrade>
 				</UnitClassUpgrade>
 			</UnitClassUpgrades>
@@ -3088,26 +3088,26 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_CSA</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_RIFLEMAN</EarlyArtDefineTag>
 				</UnitMeshGroup>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_CSA_V1</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_RIFLEMAN_V1</EarlyArtDefineTag>
 				</UnitMeshGroup>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_RIFLEMAN_CSA_V2</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_RIFLEMAN_V2</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_MILITIA_6</Class>
-			<Type>UNIT_MILITIA_6</Type>
+			<Class>MILITIA_INFANTRY</Class>
+			<Type>UNIT_MILITIA_INFANTRY</Type>
 			<Combat>UNITCOMBAT_MILITIA</Combat>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_CITY_DEFENSE</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Description>TXT_KEY_UNIT_MILITIA_INFANTRY</Description>
 			<Civilopedia>TXT_KEY_UNIT_MILITIA_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_MILITIA_STRATEGY</Strategy>
 			<Advisor>ADVISOR_MILITARY</Advisor>
@@ -3166,7 +3166,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_6</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_INFANTRY</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -5859,7 +5859,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>8</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_ATLATLIST</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -6196,7 +6196,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>3</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_MILITIA_GRENADIER</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SKIRMISHER</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>

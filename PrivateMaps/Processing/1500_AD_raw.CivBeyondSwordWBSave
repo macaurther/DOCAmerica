@@ -14167,7 +14167,7 @@ BeginPlot
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 		Level=2, Experience=2
 		PromotionType=PROMOTION_MOUNTAINEER1
@@ -14175,7 +14175,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 		Level=1, Experience=0
 		FacingDirection=3
@@ -21201,7 +21201,7 @@ BeginPlot
 	TerrainType=TERRAIN_PRAIRIE
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_SIOUX
 		Level=1, Experience=0
 		FacingDirection=5
@@ -22000,7 +22000,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
 		Level=2, Experience=3
 		PromotionType=PROMOTION_GARRISON1
@@ -26050,7 +26050,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_SIOUX
 		Level=1, Experience=0
 		FacingDirection=4
@@ -35303,7 +35303,7 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_HAUDENOSAUNEE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -35924,7 +35924,7 @@ BeginPlot
 		UnitAIType=UNITAI_EXPLORE_SEA
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_SPAIN
 		Level=2, Experience=2
 		PromotionType=PROMOTION_GARRISON1
@@ -43699,7 +43699,7 @@ BeginPlot
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_II
+		UnitType=UNIT_MILITIA_PIKEMAN
 		UnitOwner=CIVILIZATION_NORSE
 		Level=1, Experience=0
 		FacingDirection=4
@@ -48590,35 +48590,35 @@ BeginPlot
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_CITY_DEFENSE
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4
 		UnitAIType=UNITAI_ATTACK
 	EndUnit
 	BeginUnit
-		UnitType=UNIT_MILITIA_I
+		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_INDEPENDENT3
 		Level=1, Experience=0
 		FacingDirection=4

@@ -411,27 +411,6 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_I</Type>
-			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/Militia/Eurasian/ancientspear.nif</NIF>
-			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
-			<SHADERNIF>Art/Units/Militia/Eurasian/ancientspear.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>1.0</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds/>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_INCAN_AUCAC</Type>
 			<Button>,Art/Interface/Buttons/Units/Quechua.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,4</Button>
 			<fScale>0.44</fScale>
@@ -2098,7 +2077,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_GREAT_GENERAL_MEDIEVAL</Type>
-			<Button>,Art/Interface/Buttons/Units/GreatEngineer.dds,Art/Interface/Buttons/Warlords_Atlas_1.dds,5,10</Button>
+			<Button>Art/Interface/Buttons/Units/Great_General.dds</Button>
 			<fScale>0.5</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -2616,7 +2595,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_LONGBOWMAN_SOUTH_AMERICA</Type>
-			<Button>,Art/Interface/Buttons/Units/Longbowman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,7</Button>
+			<Button>Art/Interface/Buttons/Units/Native_Longbowman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -2722,7 +2701,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_SPEARMAN_SOUTH_AMERICAN</Type>
-			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,6</Button>
+			<Button>Art/Interface/Buttons/Units/Native_Spearman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -2785,7 +2764,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MILITIA_SOUTH_AMERICAN</Type>
-			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Native_Militia_Spearman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3027,7 +3006,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ARGENTINE_MOUNTED_GRENADIER</Type>
-			<Button>Art/Units/Horse_Grenadier/BotonGranadero.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Mounted_Grenadier.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3166,7 +3145,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_GREAT_STATESMAN</Type>
-			<Button>Art/Interface/Buttons/Units/Statesman.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Great_Statesman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3174,6 +3153,153 @@
 			<NIF>Art/Units/Elder_Statesman/Elder_Statesman.nif</NIF>
 			<KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
 			<SHADERNIF>Art/Units/Elder_Statesman/Elder_Statesman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GREAT_PROPHET_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Native_Great_Prophet.dds</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/GreatPeople/Prophet/GreatProphet.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Prophet/GreatProphet.kfm</KFM>
+			<SHADERNIF>Art/Units/GreatPeople/Prophet/GreatProphet_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GREAT_ARTIST_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Native_Great_Artist.dds</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/GreatPeople/Artist/GreatArtist.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Artist/GreatArtist.kfm</KFM>
+			<SHADERNIF>Art/Units/GreatPeople/Artist/GreatArtist_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GREAT_SCIENTIST_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Native_Great_Scientist.dds</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/GreatPeople/Scientist/GreatScientistAncient.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Scientist/GreatScientistAncient.kfm</KFM>
+			<SHADERNIF>Art/Units/GreatPeople/Scientist/GreatScientistAncient_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GREAT_MERCHANT_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Native_Great_Merchant.dds</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/GreatPeople/Merchant/GreatMerchantAncient.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Merchant/GreatMerchantAncient.kfm</KFM>
+			<SHADERNIF>Art/Units/GreatPeople/Merchant/GreatMerchantAncient_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/GreatMerchantShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GREAT_GENERAL_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Native_Great_General.dds</Button>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Warlord_Ancient/Warlord_Ancient.nif</NIF>
+			<KFM>Art/Units/Warlord_Ancient/Warlord_Ancient.kfm</KFM>
+			<SHADERNIF>Art/Units/Warlord_Ancient/Warlord_Ancient_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>Bip01 Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GREAT_STATESMAN_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Native_Great_Statesman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Elder_Statesman/Elder_Statesman.nif</NIF>
+			<KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
+			<SHADERNIF>Art/Units/Elder_Statesman/Elder_Statesman.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_GREAT_ENGINEER_NATIVE</Type>
+			<Button>Art/Interface/Buttons/Units/Native_Great_Engineer.dds</Button>
+			<fScale>0.46</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/GreatPeople/Engineer/Engineer.nif</NIF>
+			<KFM>Art/Units/GreatPeople/Engineer/Engineer.kfm</KFM>
+			<SHADERNIF>Art/Units/GreatPeople/Engineer/Engineer_FX.nif</SHADERNIF>
 			<ShadowDef>
 				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
 				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
@@ -3538,8 +3664,8 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SKIRMISHER</Type>
-			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
+			<Type>ART_DEF_UNIT_ATLATLIST</Type>
+			<Button>Art/Interface/Buttons/Units/Atlatlist.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3668,7 +3794,7 @@
 			<ActionSound>AS3D_UN_FIGHTER_COMMAND_PATROL</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_II</Type>
+			<Type>ART_DEF_UNIT_MILITIA_PIKEMAN</Type>
 			<Button>,Art/Interface/Buttons/Units/Spearman.dds,Art/Interface/Buttons/Charlemagne_Atlas.dds,5,1</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -3685,6 +3811,123 @@
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MILITIA_SPEARMAN</Type>
+			<Button>Art/Interface/Buttons/Units/Levy.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/Militia/Eurasian/ancientspear.nif</NIF>
+			<KFM>Art/Units/Spearman/Spearman.kfm</KFM>
+			<SHADERNIF>Art/Units/Militia/Eurasian/ancientspear.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>1.0</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds/>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MILITIA_RIFLEMAN</Type>
+			<Button>Art/Interface/Buttons/Units/Militia_Rifleman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman.nif</NIF>
+			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
+			<SHADERNIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MILITIA_RIFLEMAN_V1</Type>
+			<Button>Art/Interface/Buttons/Units/Militia_Rifleman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V1.nif</NIF>
+			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
+			<SHADERNIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V1_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MILITIA_RIFLEMAN_V2</Type>
+			<Button>Art/Interface/Buttons/Units/Militia_Rifleman.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V2.nif</NIF>
+			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
+			<SHADERNIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V2_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_MILITIA_INFANTRY</Type>
+			<Button>Art/Interface/Buttons/Units/Militia_Infantry.dds</Button>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<bActAsLand>0</bActAsLand>
+			<bActAsAir>0</bActAsAir>
+			<NIF>Art/Units/eng_inf/ww1_soldier.nif</NIF>
+			<KFM>Art/Units/infantry/infantry.kfm</KFM>
+			<SHADERNIF>Art/Units/eng_inf/ww1_soldier_FX.nif</SHADERNIF>
+			<ShadowDef>
+				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
+				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
+				<fShadowScale>0.9</fShadowScale>
+			</ShadowDef>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.05</fRangedDeathTime>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -3798,7 +4041,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SKIRMISHER_EUROPEAN</Type>
+			<Type>ART_DEF_UNIT_ATLATLIST_EUROPEAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -3822,7 +4065,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SKIRMISHER_SOUTH_AMERICAN</Type>
+			<Type>ART_DEF_UNIT_ATLATLIST_SOUTH_AMERICAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -3847,7 +4090,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PIKEMAN_SOUTH_AMERICAN</Type>
-			<Button>,Art/Interface/Buttons/Units/Pikeman.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,7,1</Button>
+			<Button>Art/Interface/Buttons/Units/Native_Pikeman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -3918,7 +4161,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SKIRMISHER_AFRICAN</Type>
+			<Type>ART_DEF_UNIT_ATLATLIST_AFRICAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -4292,7 +4535,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ENGLISH_MAN_OF_WAR</Type>
-			<Button>Art/Interface/Buttons/Units/Button_ManOfWar.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Man_of_War.dds</Button>
 			<fScale>0.21</fScale>
 			<fInterfaceScale>0.8</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4451,7 +4694,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PIKE_AND_SHOT_MUSKET</Type>
-			<Button>Art/Interface/Buttons/Units/Button_Tercio.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Pike_and_Shot.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4475,7 +4718,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PIKE_AND_SHOT_PIKE</Type>
-			<Button>Art/Interface/Buttons/Units/Button_Tercio.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Pike_and_Shot.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4499,7 +4742,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_AMERICAN_PIONEER</Type>
-			<Button>Art/Units/Pioneer/Pioneer.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Pioneer.dds</Button>
 			<fScale>0.3</fScale>
 			<fInterfaceScale>0.9</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4620,7 +4863,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_WARI_PICTA</Type>
-			<Button>art/units/Mississippian Amayxoya/Button_Amayxoya.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Picta.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4644,7 +4887,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CHIMU_SUCHUC_CHIQUI</Type>
-			<Button>art/units/Kushan Trishula/Button_Trishula.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Suchuc_Chiqui.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4668,7 +4911,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MISSISSIPPI_FALCON_DANCER</Type>
-			<Button>art/units/Falcon Dancer/Button_FalconDancer.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Falcon_Dancer.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -4955,7 +5198,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SKIRMISHER_MISSISSIPPIAN</Type>
+			<Type>ART_DEF_UNIT_ATLATLIST_MISSISSIPPIAN</Type>
 			<Button>Art/Interface/Buttons/Units/Skirmisher.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -5015,7 +5258,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_HORSE_ARCHER_MISSISSIPPIAN</Type>
-			<Button>Art/Interface/Buttons/Units/SwiftArrow.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Swift_Arrow.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5087,7 +5330,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MACEMAN_HAUDENOSAUNEE</Type>
-			<Button>Art/Interface/Buttons/Units/Maceman.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Mohawk.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5207,7 +5450,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_INUIT_SETTLER</Type>
-			<Button>Art/Units/Native_Scout/btn_native_scout.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Dog_Sled.dds</Button>
 			<fScale>0.43</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5231,7 +5474,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_MUISCA_GUECHA</Type>
-			<Button>Art/Units/incan slinger/button_slinger.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Guecha.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5255,7 +5498,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_INCA_SLINGER</Type>
-			<Button>Art/Units/incan slinger/button_slinger.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Slinger.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5338,8 +5581,8 @@
 			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_III</Type>
-			<Button>Art/Interface/Buttons/Units/militia_3.dds</Button>
+			<Type>ART_DEF_UNIT_MILITIA_ARQUEBUSIER</Type>
+			<Button>Art/Interface/Buttons/Units/Militia_Arquebusier.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5359,8 +5602,8 @@
 			<AudioRunSounds/>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_IV</Type>
-			<Button>Art/Interface/Buttons/Units/militia_4.dds</Button>
+			<Type>ART_DEF_UNIT_MILITIA_MUSKETMAN</Type>
+			<Button>Art/Interface/Buttons/Units/Militia_Musketman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5498,102 +5741,6 @@
 			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RIFLEMAN_CSA</Type>
-			<Button>Art/Interface/Buttons/Units/militia_5.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman.nif</NIF>
-			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
-			<SHADERNIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_FX.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>0.9</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.05</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RIFLEMAN_CSA_V1</Type>
-			<Button>Art/Interface/Buttons/Units/militia_5.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V1.nif</NIF>
-			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
-			<SHADERNIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V1_FX.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>0.9</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.05</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RIFLEMAN_CSA_V2</Type>
-			<Button>Art/Interface/Buttons/Units/militia_5.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V2.nif</NIF>
-			<KFM>Art/Units/Rifleman/Rifleman.kfm</KFM>
-			<SHADERNIF>Art/Units/USA_Civil_War_Rifleman/CSA_Rifleman_V2_FX.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>0.9</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.05</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_6</Type>
-			<Button>Art/Interface/Buttons/Units/militia_6.dds</Button>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<bActAsLand>0</bActAsLand>
-			<bActAsAir>0</bActAsAir>
-			<NIF>Art/Units/eng_inf/ww1_soldier.nif</NIF>
-			<KFM>Art/Units/infantry/infantry.kfm</KFM>
-			<SHADERNIF>Art/Units/eng_inf/ww1_soldier_FX.nif</SHADERNIF>
-			<ShadowDef>
-				<ShadowNIF>Art/Units/01_UnitShadows/UnitShadow.nif</ShadowNIF>
-				<ShadowAttachNode>BIP Pelvis</ShadowAttachNode>
-				<fShadowScale>0.9</fShadowScale>
-			</ShadowDef>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.05</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_LINE_INFANTRY</Type>
 			<Button>Art/Interface/Buttons/Units/Line_Infantry.dds</Button>
 			<fScale>0.44</fScale>
@@ -5619,7 +5766,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_GATLING_GUN</Type>
-			<Button>Art/Units/Gatling_Gun/Gatling_Gun_Button.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Gatling_Gun.dds</Button>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>.95</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -5961,7 +6108,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_FRENCH_COUREUR_DES_BOIS</Type>
-			<Button>Art/Interface/Buttons/Units/CoureurDesBois.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Coureur_Des_Bois.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6085,7 +6232,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MILITIA_GRENADIER</Type>
+			<Type>ART_DEF_UNIT_SKIRMISHER</Type>
 			<Button>Art/Units/Militia Grenadier/Militia Grenadier.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -6128,7 +6275,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_HAWAIIAN_KOA</Type>
-			<Button>Art/Units/Polynesian_Maori_Warrior/Maori_Warrior_Button.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Koa.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6212,7 +6359,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_SPANISH_GALLEON</Type>
-			<Button>Art/Interface/Buttons/Units/ManilaGalleon.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Galleon.dds</Button>
 			<fScale>0.22</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6296,7 +6443,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_WORKER_ANCIENT_ASIAN</Type>
-			<Button>Art/Interface/Buttons/Units/MigrantWorker.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Migrant_Worker.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6317,7 +6464,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PUREPECHA_MACANA</Type>
-			<Button>Art/Units/Serpent/button.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Macana.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6531,7 +6678,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CANADIAN_CORVETTE</Type>
-			<Button>Art/Interface/Buttons/Units/corvette_btn.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Corvette.dds</Button>
 			<fScale>0.7</fScale>
 			<fInterfaceScale>1.1</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6804,7 +6951,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CAVALRY_RANGER_A</Type>
-			<Button>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_Button.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Ranger.dds</Button>
 			<fScale>0.34</fScale>
 			<fInterfaceScale>.95</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>
@@ -6828,7 +6975,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CAVALRY_RANGER_B</Type>
-			<Button>Art/Units/Pistol_Cavalry/Texas_Ranger/Texas_Ranger_Button.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Ranger.dds</Button>
 			<fScale>0.34</fScale>
 			<fInterfaceScale>.95</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

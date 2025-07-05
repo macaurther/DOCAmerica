@@ -183,52 +183,52 @@
 			<DefaultUnit>UNIT_PARATROOPER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MILITIA_1</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Type>UNITCLASS_MILITIA_SPEARMAN</Type>
+			<Description>TXT_KEY_UNIT_MILITIA_SPEARMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MILITIA_I</DefaultUnit>
+			<DefaultUnit>UNIT_MILITIA_SPEARMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MILITIA_2</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Type>MILITIA_PIKEMAN</Type>
+			<Description>TXT_KEY_UNIT_MILITIA_PIKEMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MILITIA_II</DefaultUnit>
+			<DefaultUnit>UNIT_MILITIA_PIKEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MILITIA_3</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Type>MILITIA_ARQUEBUSIER</Type>
+			<Description>TXT_KEY_UNIT_MILITIA_ARQUEBUSIER</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MILITIA_III</DefaultUnit>
+			<DefaultUnit>UNIT_MILITIA_ARQUEBUSIER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MILITIA_4</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Type>MILITIA_MUSKETMAN</Type>
+			<Description>TXT_KEY_UNIT_MILITIA_MUSKETMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MILITIA_IV</DefaultUnit>
+			<DefaultUnit>UNIT_MILITIA_MUSKETMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MILITIA_5</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Type>MILITIA_RIFLEMAN</Type>
+			<Description>TXT_KEY_UNIT_MILITIA_RIFLEMAN</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MILITIA_V</DefaultUnit>
+			<DefaultUnit>UNIT_MILITIA_RIFLEMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_MILITIA_6</Type>
-			<Description>TXT_KEY_UNIT_MILITIA</Description>
+			<Type>MILITIA_INFANTRY</Type>
+			<Description>TXT_KEY_UNIT_MILITIA_INFANTRY</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MILITIA_6</DefaultUnit>
+			<DefaultUnit>UNIT_MILITIA_INFANTRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_WARRIOR</Type>

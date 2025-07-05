@@ -692,8 +692,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_CIV_AZTECS_ALTEPETL"
 	
 	elif iCiv == iSpain:
-		if iReligion == iIslam:
-			return "TXT_KEY_SULTANATE_OF"
 			
 		if bEmpire and iEra > iColonialEra:
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
@@ -711,9 +709,6 @@ def specificTitle(iPlayer, lPreviousOwners=[]):
 			return "TXT_KEY_EMPIRE_ADJECTIVE"
 			
 	elif iCiv == iEngland:
-			
-		if iEra == iColonialEra and player(iFrance).isAlive() and team(iFrance).isAVassal() and civ(master(iFrance)) == iEngland:
-			return "TXT_KEY_CIV_ENGLAND_ANGEVIN_EMPIRE"
 			
 		if getColumn(iPlayer) >= 11:
 			if bEmpire:

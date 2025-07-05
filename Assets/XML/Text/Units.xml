@@ -1246,16 +1246,52 @@
 		<Spanish>[COLOR_UNIT_TEXT]Biplanes[COLOR_REVERT] can intercept enemy air units, destroy improvements, bomb city defenses, perform recon missions and damage enemy units.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_MILITIA</Tag>
-		<English>Militia</English>
-		<French>
-			<Text>Milice</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Militia</German>
-		<Italian>Militia</Italian>
-		<Spanish>Militia</Spanish>
+		<Tag>TXT_KEY_UNIT_MILITIA_SPEARMAN</Tag>
+		<English>Militia Spearman</English>
+		<French>Militia Spearman</French>
+		<German>Militia Spearman</German>
+		<Italian>Militia Spearman</Italian>
+		<Spanish>Militia Spearman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_PIKEMAN</Tag>
+		<English>Militia Pikeman</English>
+		<French>Militia Pikeman</French>
+		<German>Militia Pikeman</German>
+		<Italian>Militia Pikeman</Italian>
+		<Spanish>Militia Pikeman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_ARQUEBUSIER</Tag>
+		<English>Militia Arquebusier</English>
+		<French>Militia Arquebusier</French>
+		<German>Militia Arquebusier</German>
+		<Italian>Militia Arquebusier</Italian>
+		<Spanish>Militia Arquebusier</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_MUSKETMAN</Tag>
+		<English>Militia Musketman</English>
+		<French>Militia Musketman</French>
+		<German>Militia Musketman</German>
+		<Italian>Militia Musketman</Italian>
+		<Spanish>Militia Musketman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_RIFLEMAN</Tag>
+		<English>Militia Rifleman</English>
+		<French>Militia Rifleman</French>
+		<German>Militia Rifleman</German>
+		<Italian>Militia Rifleman</Italian>
+		<Spanish>Militia Rifleman</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_MILITIA_INFANTRY</Tag>
+		<English>Militia Infantry</English>
+		<French>Militia Infantry</French>
+		<German>Militia Infantry</German>
+		<Italian>Militia Infantry</Italian>
+		<Spanish>Militia Infantry</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARQUEBUSIER</Tag>
