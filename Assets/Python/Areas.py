@@ -6,38 +6,38 @@ lPeakExceptions = []
 ### Capitals ### - MacAurther: The area where a civilization spawns
 
 dCapitals = CivDict({
-iMaya :			(22, 59), # Tikal
-iZapotec :		(15, 61), # Danibaan
-iTeotihuacan :	(14, 67), # Teotihuacan
-iTiwanaku :		(26, 25), # Tiwanaku
-iWari :			(23, 33), # Huari
-iMississippi :	(34, 81), # Sunwatch
-iPuebloan :		(16, 86), # Chaco Canyon
-iMuisca :		(31, 42), # Bacata
-iNorse :		(55, 114), # Reykjavik
-iChimu :		(20, 36), # Chan Chan
-iInuit :		(14, 119), # North Alaska
-iInca :			(24, 29), # Cuzco
-iPurepecha :	(10, 68), # Tzintzuntzan
-iAztecs :		(13, 65), # Tenochtitlan
-iHaudenosaunee :		(39, 85), # Onondaga
-iLakota :		(28, 89), # Southern Minnesota
-iSpain :		(40, 54), # Santo Domingo
-iPortugal :		(39, 16), # Sao Paulo
-iEngland :		(38, 77), # Jamestown
-iFrance :		(46, 93), # Quebec
-iNetherlands :	(42, 83), # New Amsterdam
-iHawaii :		(14, 49), # Hilo
-iRussia :		(12, 108), # Novo-Arkhangelsk
-iAmerica :		(40, 81), # Philadelphia
-iHaiti :		(37, 55), # Port-au-Prince
-iArgentina :	(23, 10), # Buenos Aires
-iMexico :		(13, 65), # Mexico City
-iColombia :		(31, 42), # Bogota
-iPeru :			(20, 31), # Lima
-iBrazil :		(44, 15), # Rio de Janeiro
-iVenezuela :	(39, 47), # Caracas
-iCanada :		(40, 90), # Ottawa
+iMaya :			 (22, 59), # Tikal
+iZapotec :		 (15, 61), # Danibaan
+iTeotihuacan :	 (14, 67), # Teotihuacan
+iTiwanaku :		 (26, 25), # Tiwanaku
+iWari :			 (23, 33), # Huari
+iMississippi :	 (34, 81), # Sunwatch
+iPuebloan :		 (16, 86), # Chaco Canyon
+iMuisca :		 (31, 42), # Bacata
+iNorse :		 (55, 114), # Reykjavik
+iChimu :		 (20, 36), # Chan Chan
+iInuit :		 (14, 119), # North Alaska
+iInca :			 (24, 29), # Cuzco
+iPurepecha :	 (10, 68), # Tzintzuntzan
+iAztecs :		 (13, 65), # Tenochtitlan
+iHaudenosaunee : (39, 85), # Onondaga
+iLakota :		 (28, 89), # Southern Minnesota
+iSpain :		 (41, 54), # Santo Domingo
+iPortugal :		 (39, 16), # Sao Paulo
+iEngland :		 (38, 77), # Jamestown
+iFrance :		 (46, 93), # Quebec
+iNetherlands :	 (42, 83), # New Amsterdam
+iHawaii :		 (14, 49), # Hilo
+iRussia :		 (12, 108), # Novo-Arkhangelsk
+iAmerica :		 (40, 81), # Philadelphia
+iHaiti :		 (38, 55), # Port-au-Prince
+iArgentina :	 (23, 10), # Buenos Aires
+iMexico :		 (13, 65), # Mexico City
+iColombia :		 (31, 42), # Bogota
+iPeru :			 (20, 31), # Lima
+iBrazil :		 (44, 15), # Rio de Janeiro
+iVenezuela :	 (39, 47), # Caracas
+iCanada :		 (40, 90), # Ottawa
 })
 
 dPeriodCapitals = {

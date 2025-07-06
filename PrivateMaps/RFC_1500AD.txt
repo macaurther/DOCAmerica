@@ -2687,6 +2687,10 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
+	x=32,y=58
+	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
 	x=32,y=86
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
@@ -2760,10 +2764,6 @@ BeginPlot
 		UnitType=UNIT_WORKER
 		UnitOwner=CIVILIZATION_MUISCA
 	EndUnit
-EndPlot
-BeginPlot
-	x=33,y=58
-	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=33,y=68
@@ -2948,7 +2948,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=38,y=55
+	x=38,y=54
 	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot

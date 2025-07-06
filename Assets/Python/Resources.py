@@ -58,7 +58,7 @@ dResourcesDict = {
 	(38, 75)  : (1550,  iHorse),  	# North Carolina
 	(45, 91)  : (1550,  iHorse),  	# Quebec
 	(20, 11)  : (1550,  iHorse),  	# Argentina
-	(24, 28)  : (1550,  iHorse),  	# Peru
+	(23, 32)  : (1550,  iHorse),  	# Peru
 	(26, 13)  : (1550,  iHorse),  	# Argentina
 	(27, 16)  : (1550,  iHorse),  	# Argentina
 	(30, 46)  : (1550,  iHorse),  	# Colombia

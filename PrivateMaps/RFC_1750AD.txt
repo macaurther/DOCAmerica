@@ -2343,23 +2343,13 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=23,y=29
-	ImprovementType=IMPROVEMENT_WINDMILL
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=23,y=30
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=23,y=31
-	ImprovementType=IMPROVEMENT_WINDMILL
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=23,y=32
-	ImprovementType=IMPROVEMENT_WINDMILL
+	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -2611,18 +2601,8 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=24,y=23
-	ImprovementType=IMPROVEMENT_MINE
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=24,y=26
 	ImprovementType=IMPROVEMENT_WINDMILL
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=24,y=28
-	ImprovementType=IMPROVEMENT_PASTURE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -2681,11 +2661,6 @@ EndPlot
 BeginPlot
 	x=24,y=31
 	ImprovementType=IMPROVEMENT_PASTURE
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=24,y=32
-	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -2909,11 +2884,6 @@ EndPlot
 BeginPlot
 	x=25,y=25
 	ImprovementType=IMPROVEMENT_PLANTATION
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=25,y=28
-	ImprovementType=IMPROVEMENT_WINDMILL
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3292,10 +3262,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=26,y=38
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
 	x=26,y=40
 	RouteType=ROUTE_ROAD
 	BeginUnit
@@ -3431,16 +3397,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=22
-	ImprovementType=IMPROVEMENT_MINE
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=27,y=23
-	ImprovementType=IMPROVEMENT_WINDMILL
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=27,y=24
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 EndPlot
@@ -3589,7 +3545,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=24
-	ImprovementType=IMPROVEMENT_WINDMILL
+	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3605,11 +3561,6 @@ EndPlot
 BeginPlot
 	x=28,y=39
 	ImprovementType=IMPROVEMENT_HAMLET
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=28,y=40
-	ImprovementType=IMPROVEMENT_VILLAGE
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -3719,6 +3670,35 @@ EndPlot
 BeginPlot
 	x=29,y=63
 	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_WORKER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_SPAIN
+		CityName=Havana
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=100
+		EndCulture
+		YearFounded=1515
+		YearAcquired=1515
+		PreviousOwner=CIVILIZATION_SPAIN
+	EndCity
 EndPlot
 BeginPlot
 	x=29,y=64
@@ -3771,39 +3751,6 @@ EndPlot
 BeginPlot
 	x=30,y=49
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
-EndPlot
-BeginPlot
-	x=30,y=62
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=Havana
-		CityPopulation=6
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_PALISADE
-		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_CATHOLICISM
-		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=100
-		EndCulture
-		YearFounded=1515
-		YearAcquired=1515
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
 EndPlot
 BeginPlot
 	x=30,y=75
@@ -3879,6 +3826,15 @@ EndPlot
 BeginPlot
 	x=31,y=48
 	ImprovementType=IMPROVEMENT_PLANTATION
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=31,y=54
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=31,y=55
+	ImprovementType=IMPROVEMENT_ORCHARD
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
@@ -4033,12 +3989,41 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=55
-	ImprovementType=IMPROVEMENT_FISHING_BOATS
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ENGLAND
+		CityName=Kingston
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_STOCKS
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_PROTESTANTISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=100
+		EndCulture
+		YearFounded=1692
+		YearAcquired=1692
+		PreviousOwner=CIVILIZATION_ENGLAND
+	EndCity
 EndPlot
 BeginPlot
-	x=32,y=56
-	ImprovementType=IMPROVEMENT_ORCHARD
-	RouteType=ROUTE_ROAD
+	x=32,y=58
+	ImprovementType=IMPROVEMENT_TRIBE
 EndPlot
 BeginPlot
 	x=32,y=62
@@ -4140,45 +4125,6 @@ EndPlot
 BeginPlot
 	x=33,y=50
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
-EndPlot
-BeginPlot
-	x=33,y=56
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ENGLAND
-		CityName=Kingston
-		CityPopulation=4
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_STOCKS
-		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_PROTESTANTISM
-		FreeSpecialistType=SPECIALIST_SLAVE
-		FreeSpecialistType=SPECIALIST_SLAVE
-		BeginCulture
-			Civilization=CIVILIZATION_ENGLAND, Culture=100
-		EndCulture
-		YearFounded=1692
-		YearAcquired=1692
-		PreviousOwner=CIVILIZATION_ENGLAND
-	EndCity
-EndPlot
-BeginPlot
-	x=33,y=58
-	ImprovementType=IMPROVEMENT_PASTURE
-	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
 	x=33,y=59
@@ -4666,43 +4612,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=37,y=55
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_FRANCE
-		CityName=Port-au-Prince
-		CityPopulation=6
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_MARKET
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_PALISADE
-		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_STAR_FORT
-		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE
-		FreeSpecialistType=SPECIALIST_SLAVE
-		FreeSpecialistType=SPECIALIST_SLAVE
-		BeginCulture
-			Civilization=CIVILIZATION_FRANCE, Culture=300
-		EndCulture
-		YearFounded=1749
-		YearAcquired=1749
-		PreviousOwner=CIVILIZATION_FRANCE
-	EndCity
-EndPlot
-BeginPlot
 	x=37,y=57
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
@@ -4817,9 +4726,46 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TOWN
 EndPlot
 BeginPlot
-	x=38,y=55
+	x=38,y=54
 	ImprovementType=IMPROVEMENT_ORCHARD
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=38,y=55
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_FRANCE
+		CityName=Port-au-Prince
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_MARKET
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_STAR_FORT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=300
+		EndCulture
+		YearFounded=1749
+		YearAcquired=1749
+		PreviousOwner=CIVILIZATION_FRANCE
+	EndCity
 EndPlot
 BeginPlot
 	x=38,y=56
@@ -5250,41 +5196,6 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
-	x=40,y=54
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=Santo Domingo
-		CityPopulation=5
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_AQUEDUCT
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_TRADING_POST
-		BuildingType=BUILDING_PALISADE
-		BuildingType=BUILDING_STAR_FORT
-		BuildingType=BUILDING_ARMOURY
-		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
-		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
-		FreeSpecialistType=SPECIALIST_SLAVE
-		FreeSpecialistType=SPECIALIST_SLAVE
-		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=200
-		EndCulture
-		YearFounded=1490
-		YearAcquired=1490
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
-EndPlot
-BeginPlot
 	x=40,y=56
 	ImprovementType=IMPROVEMENT_MINE
 	RouteType=ROUTE_ROAD
@@ -5442,7 +5353,38 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=54
-	ImprovementType=IMPROVEMENT_TOWN
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_SPAIN
+		CityName=Santo Domingo
+		CityPopulation=5
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_AQUEDUCT
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_TRADING_POST
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_ARMOURY
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
+		FreeSpecialistType=SPECIALIST_SLAVE
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=200
+		EndCulture
+		YearFounded=1490
+		YearAcquired=1490
+		PreviousOwner=CIVILIZATION_SPAIN
+	EndCity
 EndPlot
 BeginPlot
 	x=41,y=55
@@ -5491,6 +5433,10 @@ EndPlot
 BeginPlot
 	x=42,y=18
 	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=42,y=53
+	ImprovementType=IMPROVEMENT_TOWN
 EndPlot
 BeginPlot
 	x=42,y=81
@@ -5783,36 +5729,6 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=44,y=53
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=San Juan
-		CityPopulation=6
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_PALISADE
-		BuildingType=BUILDING_MONUMENT
-		BuildingType=BUILDING_STAR_FORT
-		BuildingType=BUILDING_LA_FORTALEZA
-		ReligionType=RELIGION_CATHOLICISM
-		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=50
-		EndCulture
-		YearFounded=1521
-		YearAcquired=1521
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
-EndPlot
-BeginPlot
 	x=44,y=82
 	ImprovementType=IMPROVEMENT_COTTAGE
 	RouteType=ROUTE_ROAD
@@ -5966,41 +5882,42 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=45,y=46
-	ImprovementType=IMPROVEMENT_ORCHARD
-	RouteType=ROUTE_ROAD
-EndPlot
-BeginPlot
-	x=45,y=48
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_FRANCE
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_FRANCE
-		CityName=Castries
-		CityPopulation=4
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_CATHOLICISM
-		FreeSpecialistType=SPECIALIST_SLAVE
-		BeginCulture
-			Civilization=CIVILIZATION_FRANCE, Culture=50
-		EndCulture
-		YearFounded=1650
-		YearAcquired=1650
-		PreviousOwner=CIVILIZATION_FRANCE
-	EndCity
+	x=45,y=47
+	ImprovementType=IMPROVEMENT_FISHING_BOATS
 EndPlot
 BeginPlot
 	x=45,y=52
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=45,y=53
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_SPAIN
+		CityName=San Juan
+		CityPopulation=6
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_PALISADE
+		BuildingType=BUILDING_MONUMENT
+		BuildingType=BUILDING_STAR_FORT
+		BuildingType=BUILDING_LA_FORTALEZA
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=50
+		EndCulture
+		YearFounded=1521
+		YearAcquired=1521
+		PreviousOwner=CIVILIZATION_SPAIN
+	EndCity
 EndPlot
 BeginPlot
 	x=45,y=71
@@ -6092,8 +6009,41 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 EndPlot
 BeginPlot
-	x=46,y=47
+	x=46,y=45
+	ImprovementType=IMPROVEMENT_ORCHARD
+	RouteType=ROUTE_ROAD
+EndPlot
+BeginPlot
+	x=46,y=46
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=46,y=47
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_FRANCE
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_FRANCE
+		CityName=Castries
+		CityPopulation=4
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_CATHOLICISM
+		FreeSpecialistType=SPECIALIST_SLAVE
+		BeginCulture
+			Civilization=CIVILIZATION_FRANCE, Culture=50
+		EndCulture
+		YearFounded=1650
+		YearAcquired=1650
+		PreviousOwner=CIVILIZATION_FRANCE
+	EndCity
 EndPlot
 BeginPlot
 	x=46,y=84
@@ -6321,37 +6271,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=47,y=47
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_SLOOP
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_ARQUEBUSIER
-		UnitOwner=CIVILIZATION_ENGLAND
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_ENGLAND
-		CityName=Bridgetown
-		CityPopulation=3
-		BuildingType=BUILDING_GRANARY
-		BuildingType=BUILDING_HARBOR
-		BuildingType=BUILDING_MONUMENT
-		ReligionType=RELIGION_PROTESTANTISM
-		BeginCulture
-			Civilization=CIVILIZATION_ENGLAND, Culture=50
-		EndCulture
-		YearFounded=1628
-		YearAcquired=1628
-		PreviousOwner=CIVILIZATION_ENGLAND
-	EndCity
-EndPlot
-BeginPlot
 	x=47,y=88
 	ImprovementType=IMPROVEMENT_CAMP
 	RouteType=ROUTE_ROAD
@@ -6445,6 +6364,37 @@ EndPlot
 BeginPlot
 	x=48,y=41
 	ImprovementType=IMPROVEMENT_FISHING_BOATS
+EndPlot
+BeginPlot
+	x=48,y=46
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_SLOOP
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_ARQUEBUSIER
+		UnitOwner=CIVILIZATION_ENGLAND
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_ENGLAND
+		CityName=Bridgetown
+		CityPopulation=3
+		BuildingType=BUILDING_GRANARY
+		BuildingType=BUILDING_HARBOR
+		BuildingType=BUILDING_MONUMENT
+		ReligionType=RELIGION_PROTESTANTISM
+		BeginCulture
+			Civilization=CIVILIZATION_ENGLAND, Culture=50
+		EndCulture
+		YearFounded=1628
+		YearAcquired=1628
+		PreviousOwner=CIVILIZATION_ENGLAND
+	EndCity
 EndPlot
 BeginPlot
 	x=48,y=89
