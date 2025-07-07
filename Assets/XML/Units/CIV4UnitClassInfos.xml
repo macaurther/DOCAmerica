@@ -806,5 +806,13 @@
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_OLD_WORLD_INNOVATIONS</DefaultUnit>
 		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_SLAVE_REVOLT</Type>
+			<Description>TXT_KEY_UNIT_SLAVE_REVOLT</Description>
+			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
+			<iMaxTeamInstances>-1</iMaxTeamInstances>
+			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
+			<DefaultUnit>UNIT_SLAVE_REVOLT</DefaultUnit>
+		</UnitClassInfo>
 	</UnitClassInfos>
 </Civ4UnitClassInfos>

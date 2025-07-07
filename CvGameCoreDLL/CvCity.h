@@ -1536,6 +1536,7 @@ protected:
 	void doDecay();
 	void doReligion();
 	void doGreatPeople();
+	void doSlaveRevolt();
 	void doMeltdown();
 	bool doCheckProduction();
 

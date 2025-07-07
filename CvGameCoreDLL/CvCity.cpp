@@ -15045,9 +15045,29 @@ void CvCity::doGreatPeople()
 				setGreatPeopleUnitProgress(((UnitTypes)iI), 0);
 			}
 
+			// MacAurther: Slave Revolt
+			if (GC.getUnitInfo(eGreatPeopleUnit).getUnitClassType() == UNITCLASS_SLAVE_REVOLT)
+			{
+				doSlaveRevolt();
+				return;		// Don't actually generate a great person
+			}
+
 			createGreatPeople(eGreatPeopleUnit, true, false);
 		}
 	}
+}
+
+
+void CvCity::doSlaveRevolt()
+{
+	// If a Slave Revolt was generated, send city into revolt, do not generate a GP, but also do not increment threshold
+	changeNumRevolts(getOwner(), 1);
+	changeOccupationTimer(getFreeSpecialistCount(SPECIALIST_SLAVE));	// 1 turn of revolt for each slave in city
+
+	// Announce Revolt
+	CvWString szBuffer;
+	szBuffer = gDLL->getText("TXT_KEY_MISC_SLAVE_REVOLT_IN_CITY", getNameKey());
+	gDLL->getInterfaceIFace()->addMessage(getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX(), getY(), true, true);
 }
 
 

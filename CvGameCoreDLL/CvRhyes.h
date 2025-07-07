@@ -33,6 +33,7 @@ typedef list<char*> LISTCHAR;
 #define UNITCLASS_PIONEER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PIONEER"))						// MacAurther
 #define UNITCLASS_NATIVE_SLAVE	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE"))					// MacAurther
 #define UNITCLASS_AFRICAN_SLAVE	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))				// MacAurther
+#define UNITCLASS_SLAVE_REVOLT	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE_REVOLT"))				    // MacAurther
 
 #define NUM_NATIVE_TECHS		((TechTypes)FISHING + 1)															// MacAurther
 

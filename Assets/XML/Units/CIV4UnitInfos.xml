@@ -12118,5 +12118,37 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
+		<UnitInfo>
+			<Class>UNITCLASS_SLAVE_REVOLT</Class>
+			<Type>UNIT_SLAVE_REVOLT</Type>
+			<Special>SPECIALUNIT_PEOPLE</Special>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_MERCHANT</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_SLAVE_REVOLT</Description>
+			<Civilopedia>TXT_KEY_UNIT_GREAT_PEOPLE</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_SLAVE_REVOLT_STRATEGY</Strategy>
+			<Advisor>ADVISOR_GROWTH</Advisor>
+			<bRivalTerritory>1</bRivalTerritory>
+			<bNukeImmune>1</bNukeImmune>
+			<iCost>-1</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iAsset>5</iAsset>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>1</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_SLAVE_REVOLT</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<bGraphicalOnly>1</bGraphicalOnly>
+		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>
