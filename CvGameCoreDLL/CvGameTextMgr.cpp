@@ -12039,11 +12039,6 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_WIDE_RIVER"));
 				break;
-			case BUILDING_MONTICELLO:
-			case BUILDING_MOUNT_VERNON:
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_REQUIRES_PLANTATION"));
-				break;
 		}
 
 		if (kBuilding.getNumCitiesPrereq() > 0)

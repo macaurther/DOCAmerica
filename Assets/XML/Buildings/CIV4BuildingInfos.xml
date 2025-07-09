@@ -1684,6 +1684,7 @@
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
+			<iGreatPeopleRateModifier>-50</iGreatPeopleRateModifier>
 			<iHappiness>1</iHappiness>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
@@ -9220,6 +9221,8 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HOSPICIO_CABANAS</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_SCIENTIFIC_METHOD</PrereqTech>
+			<ReligionType>RELIGION_CATHOLICISM</ReligionType>
+			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -9268,9 +9271,10 @@
 			<ArtDefineTag>ART_DEF_BUILDING_MOUNT_VERNON</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_HERITAGE</PrereqTech>
+			<ObsoleteTech>TECH_PROGRESSIVISM</ObsoleteTech>
+			<StateReligion>RELIGION_PROTESTANTISM</StateReligion>
+			<PrereqReligion>RELIGION_PROTESTANTISM</PrereqReligion>
 			<PrereqBonuses>BONUS_TOBACCO</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>
 			<iAIWeight>200</iAIWeight>
@@ -9312,13 +9316,15 @@
 			<Description>TXT_KEY_BUILDING_MONTICELLO</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MONTICELLO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Strategy>
+			<Help>TXT_KEY_BUILDING_MONTICELLO_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONTICELLO</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
 			<PrereqTech>TECH_SOCIOLOGY</PrereqTech>
+			<ObsoleteTech>TECH_PROGRESSIVISM</ObsoleteTech>
 			<PrereqBonuses>BONUS_TOBACCO</PrereqBonuses>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
+			<StateReligion>RELIGION_PROTESTANTISM</StateReligion>
+			<PrereqReligion>RELIGION_PROTESTANTISM</PrereqReligion>
 			<bNoUnhappiness>1</bNoUnhappiness>
 			<bTeamShare>1</bTeamShare>
 			<bNukeImmune>1</bNukeImmune>

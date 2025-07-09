@@ -2203,11 +2203,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STOCKS_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</English>
-		<French>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</French>
-		<German>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus and increase a city's happiness.</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus, increase a city's happiness, and reduces Great Person birthrate (and Slave Revolt generation).</English>
+		<French>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus, increase a city's happiness, and reduces Great Person birthrate (and Slave Revolt generation).</French>
+		<German>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus, increase a city's happiness, and reduces Great Person birthrate (and Slave Revolt generation).</German>
+		<Italian>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus, increase a city's happiness, and reduces Great Person birthrate (and Slave Revolt generation).</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Stocks[COLOR_REVERT] provide an espionage bonus, increase a city's happiness, and reduces Great Person birthrate (and Slave Revolt generation).</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STONEWORKS</Tag>

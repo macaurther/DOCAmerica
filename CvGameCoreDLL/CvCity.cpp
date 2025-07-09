@@ -2288,12 +2288,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
-	// MacAurther: Mount Vernon and Monticello need a Plantation in city radius
-	if (eBuilding == BUILDING_MOUNT_VERNON || eBuilding == BUILDING_MONTICELLO)
-	{
-		if (countNumImprovedPlots(IMPROVEMENT_PLANTATION) == 0) return false;
-	}
-
 	if (!bTestVisible)
 	{
 		if (!bContinue)
@@ -15048,8 +15042,20 @@ void CvCity::doGreatPeople()
 			// MacAurther: Slave Revolt
 			if (GC.getUnitInfo(eGreatPeopleUnit).getUnitClassType() == UNITCLASS_SLAVE_REVOLT)
 			{
-				doSlaveRevolt();
-				return;		// Don't actually generate a great person
+				// Monticello Effect
+				if(isHasBuildingEffect((BuildingTypes)BUILDING_MONTICELLO))
+				{
+					eGreatPeopleUnit = (UnitTypes)GC.getUnitClassInfo(UNITCLASS_GREAT_STATESMAN).getDefaultUnitIndex();
+					// Announce Monticello Effect
+					CvWString szBuffer;
+					szBuffer = gDLL->getText("TXT_KEY_MISC_MONTICELLO", getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITGIFTED", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_HAPPY_PERSON")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX(), getY(), true, true);
+				}
+				else
+				{
+					doSlaveRevolt();
+					return;		// Don't actually generate a great person
+				}
 			}
 
 			createGreatPeople(eGreatPeopleUnit, true, false);
@@ -15062,7 +15068,7 @@ void CvCity::doSlaveRevolt()
 {
 	// If a Slave Revolt was generated, send city into revolt, do not generate a GP, but also do not increment threshold
 	changeNumRevolts(getOwner(), 1);
-	changeOccupationTimer(getFreeSpecialistCount(SPECIALIST_SLAVE));	// 1 turn of revolt for each slave in city
+	changeOccupationTimer(max(getFreeSpecialistCount(SPECIALIST_SLAVE) - plot()->getNumVisibleUnits(getOwner()), 0));	// 1 turn of revolt for each slave in city, minus 1 turn for each military unit in the city
 
 	// Announce Revolt
 	CvWString szBuffer;

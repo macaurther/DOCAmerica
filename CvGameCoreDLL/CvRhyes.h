@@ -15,34 +15,35 @@ typedef list<char*> LISTCHAR;
 //#define BEGIN_WONDERS				(136) // increment if normal building (not for wonders) is added
 //#define BEGIN_GREAT_WONDERS			(BEGIN_WONDERS+13) // increment if a national wonder is added
 
-#define NUM_CIVS				(32)
+#define NUM_CIVS				  (32)
 
-#define NUM_ERAS				(ERA_MODERN+1)
+#define NUM_ERAS				  (ERA_MODERN+1)
 
-#define BUILDINGCLASS_PALACE	((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
+#define BUILDINGCLASS_PALACE	  ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
 
-#define UNIT_COLONIST			((UnitTypes)GC.getInfoTypeForString("UNIT_COLONIST"))								// MacAurther
-#define UNIT_TIWANAKU_SISQENO	((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther
-#define UNIT_HAWAIIAN_WAA_KAULUA	((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))				// MacAurther
-#define UNIT_AMERICAN_AGENT		((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))							// MacAurther
-#define UNIT_CANNON				((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))									// MacAurther
-#define UNIT_MIGRANT_WORKER		((UnitTypes)GC.getInfoTypeForString("UNIT_MIGRANT_WORKER"))							// MacAurther
-#define UNIT_NATIVE_SLAVE_COLONY ((UnitTypes)GC.getInfoTypeForString("UNIT_NATIVE_SLAVE_COLONY"))					// MacAurther
+#define UNIT_COLONIST			  ((UnitTypes)GC.getInfoTypeForString("UNIT_COLONIST"))								// MacAurther
+#define UNIT_TIWANAKU_SISQENO	  ((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther
+#define UNIT_HAWAIIAN_WAA_KAULUA  ((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))					// MacAurther
+#define UNIT_AMERICAN_AGENT		  ((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))						// MacAurther
+#define UNIT_CANNON				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))								// MacAurther
+#define UNIT_MIGRANT_WORKER		  ((UnitTypes)GC.getInfoTypeForString("UNIT_MIGRANT_WORKER"))						// MacAurther
+#define UNIT_NATIVE_SLAVE_COLONY  ((UnitTypes)GC.getInfoTypeForString("UNIT_NATIVE_SLAVE_COLONY"))					// MacAurther
 
-#define UNITCLASS_SETTLER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SETTLER"))						// MacAurther
-#define UNITCLASS_PIONEER		((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PIONEER"))						// MacAurther
-#define UNITCLASS_NATIVE_SLAVE	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE"))					// MacAurther
-#define UNITCLASS_AFRICAN_SLAVE	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))				// MacAurther
-#define UNITCLASS_SLAVE_REVOLT	((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE_REVOLT"))				    // MacAurther
+#define UNITCLASS_SETTLER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SETTLER"))					// MacAurther
+#define UNITCLASS_PIONEER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PIONEER"))					// MacAurther
+#define UNITCLASS_NATIVE_SLAVE	  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE"))				// MacAurther
+#define UNITCLASS_AFRICAN_SLAVE	  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))				// MacAurther
+#define UNITCLASS_GREAT_STATESMAN ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_GREAT_STATESMAN"))			// MacAurther
+#define UNITCLASS_SLAVE_REVOLT	  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE_REVOLT"))				// MacAurther
 
-#define NUM_NATIVE_TECHS		((TechTypes)FISHING + 1)															// MacAurther
+#define NUM_NATIVE_TECHS		  ((TechTypes)FISHING + 1)															// MacAurther
 
-#define ESPIONAGEMISSION_COUP	((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
+#define ESPIONAGEMISSION_COUP	  ((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
 
-#define BUILD_ROAD				((BuildTypes)GC.getInfoTypeForString("BUILD_ROAD"))									// MacAurther
-#define BUILD_CONTACT_TRIBE		((BuildTypes)GC.getInfoTypeForString("BUILD_CONTACT_TRIBE"))						// MacAurther
-#define BUILD_FORT				((BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))									// MacAurther
-#define BUILD_PLANTATION		((BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))							// MacAurther
+#define BUILD_ROAD				  ((BuildTypes)GC.getInfoTypeForString("BUILD_ROAD"))								// MacAurther
+#define BUILD_CONTACT_TRIBE		  ((BuildTypes)GC.getInfoTypeForString("BUILD_CONTACT_TRIBE"))						// MacAurther
+#define BUILD_FORT				  ((BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))								// MacAurther
+#define BUILD_PLANTATION		  ((BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))							// MacAurther
 
 enum DoCTechs
 {

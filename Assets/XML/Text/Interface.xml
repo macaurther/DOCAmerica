@@ -2567,14 +2567,6 @@
 		<Spanish>[COLOR_WARNING_TEXT]Requires adjacent Wide River</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REQUIRES_PLANTATION</Tag>
-		<English>[COLOR_WARNING_TEXT]Requires nearby Plantation</English>
-		<French>[COLOR_WARNING_TEXT]Requires nearby Plantation</French>
-		<German>[COLOR_WARNING_TEXT]Requires nearby Plantation</German>
-		<Italian>[COLOR_WARNING_TEXT]Requires nearby Plantation</Italian>
-		<Spanish>[COLOR_WARNING_TEXT]Requires nearby Plantation</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_REQUIRES_CANYON</Tag>
 		<English>[COLOR_WARNING_TEXT]Requires Canyon</English>
 		<French>[COLOR_WARNING_TEXT]Requires Canyon</French>
@@ -4071,6 +4063,14 @@
 		<German>A slave revolt has taken place in %s1_CityName!</German>
 		<Italian>A slave revolt has taken place in %s1_CityName!</Italian>
 		<Spanish>A slave revolt has taken place in %s1_CityName!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_MONTICELLO</Tag>
+		<English>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</English>
+		<French>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</French>
+		<German>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</German>
+		<Italian>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</Italian>
+		<Spanish>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</Spanish>
 	</TEXT>
 	
 	

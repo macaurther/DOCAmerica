@@ -4950,22 +4950,34 @@ Your stability level can change during a stability check. As long it is higher t
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_ODDS_PEDIA</Tag>
-		<English>[H1]Odds and Ends in DOCA[\H1][PARAGRAPH:2]
-[ICON_BULLET]New Terrains have been added, including [LINK=TERRAIN_PRAIRIE]Prairie[\LINK] and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
-[ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Most units can now move through Marshes. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=TERRAIN_SEMIDESERT]Swamps[\LINK] are another new feature type on Swamps that can be chopped like Forests.
-[ICON_BULLET][LINK=TERRAIN_WIDE_RIVER]Wide Rivers[\LINK] yield 1[ICON_FOOD] 1 [ICON_PRODUCTION] 2[ICON_COMMERCE], allow ships to navigate, allow naval trade, grant fresh water to adjacent tiles, and allow adjacent tiles to act as if they have a River (ex: Levee bonus).
-[ICON_BULLET]Wide Rivers represent large, navigable rivers, such as the Mississippi, Missouri, Ohio, and Amazon Rivers. Ships can navigate along Wide River diagonally, even though they might not be graphically contiguous.
-[ICON_BULLET]Moving diagonally between two mountains is now impassible without the [LINK=TECH_PATHFINDING]Pathfinding[\LINK] native technology.
-[ICON_BULLET]Some Improvements now cost [ICON_COMMERCE] to construct. You will have to balance infrastructure spending with research, culture, and espionage.
+		<English>[H1]Odds and Ends in DOCA[\H1]
+[H2]Units[\H2]
 [ICON_BULLET]Lots of units of been reworked, and many units have been added. In general, units now have more well-defined roles and upgrade paths.
 [ICON_BULLET]Certain Seige units, such as Cannon, have been given a ranged attack. Use them to reduce an enemy's strength before attacking.
 [ICON_BULLET]Most units now have at least 2 Movement. This is to reflect the scale of the new DOCA map. Some units (such as heavy siege units) still only have 1 movement.
 [ICON_BULLET]Melee and Archery units have a chance to equip advanced weapons and mounts from defeated Gunpowder and Cavalry units.
 [ICON_BULLET]Defeated siege units have a chance to be captured.
 [ICON_BULLET][LINK=UNIT_MILITIA_SPEARMAN]Militia[\LINK] is now its own upgrade path. Each Era has its own Militia. They are generally cheap to build and weak, with bonus defense in Cities.
+[H2]Slave Revolts[\H2]
+[ICON_BULLET]Slave specialists no longer generate [ICON_UNHAPPY], but instead generate Slave Revolts, sending a city into revolt and wiping out any [ICON_GREATPEOPLE] progress.
+[ICON_BULLET]Slave revolts will last 1 turn for each Slave in the city, minus 1 turn for each of its defenders.
+[ICON_BULLET]Mechanically, Slave specialists generate 2 [ICON_GREATPEOPLE] towards a Slave Revolt, as if Slave Revolts were a Great Person. 
+[ICON_BULLET]The same random select that takes place between different Great People upon a Great Person birth occurs, with one of the chances being a Slave Revolt; however, Great Person threshold is not increased when a Slave Revolt resolves.
+[ICON_BULLET]It might be a good idea to keep Slave cities separate from Great Person cities, as they can interfere. 
+[ICON_BULLET]Cities with a lot of slaves can build [LINK=BUILDING_STOCKS]Stocks[\LINK] to slow down [ICON_GREATPEOPLE] generation, therefore slowing Slave Revolts.
+[ICON_BULLET]The Slave Revolt random event has been removed.
+[H2]Terrain[\H2]
+[ICON_BULLET]New Terrains have been added, including [LINK=TERRAIN_PRAIRIE]Prairie[\LINK] and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
+[ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Most units can now move through Marshes. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=TERRAIN_SEMIDESERT]Swamps[\LINK] are another new feature type on Swamps that can be chopped like Forests.
+[ICON_BULLET][LINK=TERRAIN_WIDE_RIVER]Wide Rivers[\LINK] yield 1[ICON_FOOD] 1 [ICON_PRODUCTION] 2[ICON_COMMERCE], allow ships to navigate, allow naval trade, grant fresh water to adjacent tiles, and allow adjacent tiles to act as if they have a River (ex: Levee bonus).
+[ICON_BULLET]Wide Rivers represent large, navigable rivers, such as the Mississippi, Missouri, Ohio, and Amazon Rivers. Ships can navigate along Wide River diagonally, even though they might not be graphically contiguous.
+[ICON_BULLET]Moving diagonally between two mountains is now impassible without the [LINK=TECH_PATHFINDING]Pathfinding[\LINK] native technology.
+[H2]Structures[\H2]
 [ICON_BULLET]New Buildings have been added.
 [ICON_BULLET]New Wonders have been added.
-[ICON_BULLET]PLANNED: After a certain date, Colonies become more likely to sell their land.
+[ICON_BULLET]Some Improvements now cost [ICON_COMMERCE] to construct. You will have to balance infrastructure spending with research, culture, and espionage.
+[H2]Planned[\H2]
+[ICON_BULLET](PLANNED) After a certain date, Colonies become more likely to sell their land.
 		</English>
 	</TEXT>
 	<TEXT>
