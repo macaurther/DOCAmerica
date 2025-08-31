@@ -23,6 +23,14 @@
 		<Spanish>Immigrants</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_PROGRESS</Tag>
+		<English>Immigration Progress</English>
+		<French>Immigration Progress</French>
+		<German>Immigration Progress</German>
+		<Italian>Immigration Progress</Italian>
+		<Spanish>Immigration Progress</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_AVAILABLE_COLONISTS</Tag>
 		<English>Available Colonists</English>
 		<French>Available Colonists</French>
@@ -31,25 +39,25 @@
 		<Spanish>Available Colonists</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_AVAILABLE_EXPEDITIONARIES</Tag>
-		<English>Available Expeditionaries</English>
-		<French>Available Expeditionaries</French>
-		<German>Available Expeditionaries</German>
-		<Italian>Available Expeditionaries</Italian>
-		<Spanish>Available Expeditionaries</Spanish>
+		<Tag>TXT_KEY_AVAILABLE_MERCENARIES</Tag>
+		<English>Available Mercenaries</English>
+		<French>Available Mercenaries</French>
+		<German>Available Mercenaries</German>
+		<Italian>Available Mercenaries</Italian>
+		<Spanish>Available Mercenaries</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_AVAILABLE_ENDOWMENTS</Tag>
-		<English>Available Endowments</English>
-		<French>Available Endowments</French>
-		<German>Available Endowments</German>
-		<Italian>Available Endowments</Italian>
-		<Spanish>Available Endowments</Spanish>
+		<Tag>TXT_KEY_EARNED_IMMIGRANTS</Tag>
+		<English>Earned Immigrants</English>
+		<French>Earned Immigrants</French>
+		<German>Earned Immigrants</German>
+		<Italian>Earned Immigrants</Italian>
+		<Spanish>Earned Immigrants</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AVAILABLE_UNITS</Tag>
 		<English>Available Units</English>
-		<French>Unités disponibles</French>
+		<French>Unitï¿½s disponibles</French>
 		<German>Verf&#252;gbare Einheiten</German>
 		<Italian>Unit&#224; disponibili</Italian>
 		<Spanish>Unidades disponibles</Spanish>
@@ -65,7 +73,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INFORMATION</Tag>
 		<English>Unit Information</English>
-		<French>Informations d'unité</French>
+		<French>Informations d'unitï¿½</French>
 		<German>Einheiten-Informationen</German>
 		<Italian>Informazioni sulle unit&#224;</Italian>
 		<Spanish>Informaci&#243;n de la unidad</Spanish>
@@ -73,9 +81,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMMIGRATION_DISABLED</Tag>
 		<English>Nationalism has changed the conception of armies: Mercenaries no longer fit in!</English>
-		<French>Le Nationalisme a changé la conception des armées : les mercenaires ne sont plus utilisés !</French>
-		<German>Der Nationalismus veränderte das Prinzip des strukturellen Aufbaus einer Armee so grundlegend, dass Söldner nicht mehr in das Konzept passen.</German>
-		<Italian>Il nazionalismo ha cambiato la concezione degli eserciti: non c'&#232; più posto per i mercenari!</Italian>
-		<Spanish>El nacionalismo ha cambiado la concepci&#243;n de los ej&#233;rcitos: ¡los mercenarios ya no encajan en ellos!</Spanish>
+		<French>Le Nationalisme a changï¿½ la conception des armï¿½es : les mercenaires ne sont plus utilisï¿½s !</French>
+		<German>Der Nationalismus verï¿½nderte das Prinzip des strukturellen Aufbaus einer Armee so grundlegend, dass Sï¿½ldner nicht mehr in das Konzept passen.</German>
+		<Italian>Il nazionalismo ha cambiato la concezione degli eserciti: non c'&#232; piï¿½ posto per i mercenari!</Italian>
+		<Spanish>El nacionalismo ha cambiado la concepci&#243;n de los ej&#233;rcitos: ï¿½los mercenarios ya no encajan en ellos!</Spanish>
 	</TEXT>
 </Civ4GameText>

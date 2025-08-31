@@ -21,12 +21,13 @@ typedef list<char*> LISTCHAR;
 
 #define BUILDINGCLASS_PALACE	  ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
 
-#define UNIT_COLONIST			  ((UnitTypes)GC.getInfoTypeForString("UNIT_COLONIST"))								// MacAurther
+#define UNIT_IMMIGRANT			  ((UnitTypes)GC.getInfoTypeForString("UNIT_IMMIGRANT"))								// MacAurther
 #define UNIT_TIWANAKU_SISQENO	  ((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther
 #define UNIT_HAWAIIAN_WAA_KAULUA  ((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))					// MacAurther
 #define UNIT_AMERICAN_AGENT		  ((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))						// MacAurther
 #define UNIT_CANNON				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))								// MacAurther
-#define UNIT_MIGRANT_WORKER		  ((UnitTypes)GC.getInfoTypeForString("UNIT_MIGRANT_WORKER"))						// MacAurther
+#define UNIT_CANOE				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANOE"))								// MacAurther
+#define UNIT_TRACKMAN		  ((UnitTypes)GC.getInfoTypeForString("UNIT_TRACKMAN"))						// MacAurther
 #define UNIT_NATIVE_SLAVE_COLONY  ((UnitTypes)GC.getInfoTypeForString("UNIT_NATIVE_SLAVE_COLONY"))					// MacAurther
 
 #define UNITCLASS_SETTLER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SETTLER"))					// MacAurther
@@ -62,6 +63,12 @@ enum DoCTechs
 	COMPANION_PLANTING,
 	HERBALISM,
 	FISHING,
+
+	NORTH_EUROPE_ACCESS,
+	SOUTH_EUROPE_ACCESS,
+	AFRICA_ACCESS,
+	SIBERIA_ACCESS,
+	ASIA_ACCESS,
 
 	TANNING,
 	MINING,

@@ -302,7 +302,7 @@
 						<LateArtDefineTag>ART_DEF_UNIT_MOUNTED_BRAVE</LateArtDefineTag>
 					</UnitMeshGroup>
 				</StyleUnit>
-				<StyleUnit>
+				<!--<StyleUnit>
 					<UnitType>UNIT_GREAT_ARTIST</UnitType>
 					<UnitMeshGroup>
 						<EarlyArtDefineTag>ART_DEF_UNIT_GREAT_ARTIST_NATIVE</EarlyArtDefineTag>
@@ -357,7 +357,7 @@
 						<MiddleArtDefineTag>ART_DEF_UNIT_GREAT_STATESMAN_NATIVE</MiddleArtDefineTag>
 						<LateArtDefineTag>ART_DEF_UNIT_GREAT_STATESMAN_NATIVE</LateArtDefineTag>
 					</UnitMeshGroup>
-				</StyleUnit>
+				</StyleUnit>-->
 			</StyleUnits>
 		</UnitArtStyleTypeInfo>
 		<UnitArtStyleTypeInfo>

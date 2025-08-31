@@ -68,6 +68,41 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_AFRICA_ACCESS</Tag>
+		<English>Africa Access</English>
+		<French>Africa Access</French>
+		<German>Africa Access</German>
+		<Italian>Africa Access</Italian>
+		<Spanish>Africa Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AFRICA_ACCESS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AFRICA_ACCESS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AFRICA_ACCESS_HELP</Tag>
+		<English>Receive Immigrants from Africa</English>
+		<French>Receive Immigrants from Africa</French>
+		<German>Receive Immigrants from Africa</German>
+		<Italian>Receive Immigrants from Africa</Italian>
+		<Spanish>Receive Immigrants from Africa</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_AGRICULTURE</Tag>
 		<English>Agriculture</English>
 		<French>
@@ -234,6 +269,41 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ASIA_ACCESS</Tag>
+		<English>Asia Access</English>
+		<French>Asia Access</French>
+		<German>Asia Access</German>
+		<Italian>Asia Access</Italian>
+		<Spanish>Asia Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ASIA_ACCESS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ASIA_ACCESS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ASIA_ACCESS_HELP</Tag>
+		<English>Receive Immigrants from Asia</English>
+		<French>Receive Immigrants from Asia</French>
+		<German>Receive Immigrants from Asia</German>
+		<Italian>Receive Immigrants from Asia</Italian>
+		<Spanish>Receive Immigrants from Asia</Spanish>
 	</TEXT>
 
 
@@ -1751,6 +1821,87 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_TACTICS</Tag>
+		<English>Medieval Tactics</English>
+		<French>Medieval Tactics</French>
+		<German>Medieval Tactics</German>
+		<Italian>Medieval Tactics</Italian>
+		<Spanish>Medieval Tactics</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_TACTICS_QUOTE</Tag>
+		<English>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</English>
+		<French>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</French>
+		<German>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</German>
+		<Italian>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</Italian>
+		<Spanish>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_TACTICS_PEDIA</Tag>
+		<English>The military tactics that Europeans used during early colonization in the New World varied depending on the situation and the specific group of people involved. In general, the Europeans had a significant advantage over the native populations due to their superior technology and organization. One of the primary tactics used by the Europeans was to divide and conquer. They would often play different native groups against each other, either by making alliances with one group against another or by stirring up existing rivalries. Another common tactic was to use their superior weapons and armor to intimidate the native populations. The Europeans often used firearms, which were completely new to the native peoples, to devastating effect. They also made use of horses, which allowed them to move much faster and more efficiently than the native populations, many of whom had never even seen a horse before.[PARAGRAPH:2]The Europeans also made use of their ships to great effect. They could transport troops and supplies much more quickly and efficiently than the native populations could, and they could use their ships to establish a naval blockade of coastal areas, cutting off the native populations from food and other resources. In addition to these tactics, the Europeans also employed a variety of other strategies depending on the situation. They would often build forts and other defensive structures to protect their settlements, and they would sometimes use diplomacy and negotiation to make alliances with native groups.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_SCIENCE</Tag>
+		<English>Medieval Science</English>
+		<French>Medieval Science</French>
+		<German>Medieval Science</German>
+		<Italian>Medieval Science</Italian>
+		<Spanish>Medieval Science</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_SCIENCE_QUOTE</Tag>
+		<English>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</English>
+		<French>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</French>
+		<German>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</German>
+		<Italian>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</Italian>
+		<Spanish>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_SCIENCE_PEDIA</Tag>
+		<English>During the early colonization of the New World, Europeans brought with them a range of technologies that allowed them to better navigate and exploit the natural resources of the continent. One of the most significant technologies was the ship, which allowed Europeans to transport large numbers of people and supplies across the Atlantic. Navigation instruments, such as the astrolabe and quadrant, also helped Europeans navigate the open seas with greater accuracy. Once they arrived in the New World, Europeans used a range of technologies to build settlements, clear land, and extract resources. They brought with them iron tools, such as axes, saws, and hoes, that were far more efficient than the stone tools used by many native peoples. Europeans also introduced domesticated animals, such as horses, cattle, and pigs, which were essential to farming and transportation. In addition, Europeans brought with them weapons technologies that gave them a significant military advantage over the native peoples they encountered. Firearms, including muskets and rifles, were far more effective than traditional weapons such as bows and arrows. Europeans also introduced artillery, including cannons and mortars, which were used to destroy fortifications and intimidate native populations.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_CULTURE</Tag>
+		<English>Medieval Culture</English>
+		<French>Medieval Culture</French>
+		<German>Medieval Culture</German>
+		<Italian>Medieval Culture</Italian>
+		<Spanish>Medieval Culture</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_CULTURE_QUOTE</Tag>
+		<English>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</English>
+		<French>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</French>
+		<German>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</German>
+		<Italian>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</Italian>
+		<Spanish>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MEDIEVAL_CULTURE_PEDIA</Tag>
+		<English>The early colonization of the New World by Europeans was marked by the introduction of a distinct European culture to the indigenous populations. Europeans brought with them their own languages, religions, and traditions, which they sought to impose on the native peoples. Missionaries arrived with the colonizers, seeking to convert the native population to Christianity, and many religious orders established missions across the Americas. European culture also impacted the material culture of the Americas, as European goods and technologies were introduced. European weapons, such as muskets, were far superior to the weapons used by the native populations, and horses revolutionized transportation and hunting. European agricultural techniques, such as plows and domesticated livestock, were also introduced, transforming the way food was produced and distributed. However, European culture also brought with it a legacy of violence, exploitation, and oppression that had lasting effects on the indigenous populations. The forced displacement and enslavement of millions of native peoples, along with the spread of European diseases, decimated populations and disrupted traditional ways of life. European colonization led to the erasure of many indigenous cultures and languages, and the lasting effects of this history continue to be felt in the Americas today.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_METEOROLOGY</Tag>
 		<English>Meteorology</English>
 		<French>Meteorology</French>
@@ -2042,7 +2193,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_INDEPENDENCE_PEDIA</Tag>
-		<English>The history of independence in the Americas refers to the period of time when various colonies and territories in the Americas gained their independence from European powers. This period began in the late 18th century and continued into the mid-19th century. The first colony to gain independence was the United States, which declared independence from Great Britain in 1776. The American Revolution inspired other colonies in the Americas to seek independence, including Haiti, which declared independence from France in 1804. In the early 19th century, several Spanish colonies in South America, including Venezuela, Colombia, and Ecuador, began to fight for independence from Spain. These struggles were led by figures such as Simón Bolívar and José de San Martín, and were successful in achieving independence for several South American countries by the 1820s.[PARAGRAPH:2]Mexico gained its independence from Spain in 1821, and other Central American countries followed suit in the years that followed. Brazil, which had been a Portuguese colony, gained its independence in 1822. The period of independence in the Americas was marked by a variety of political and social changes, including the establishment of new governments, the abolition of slavery in many countries, and the formation of new national identities. It was also marked by conflict and violence, as many of these struggles for independence involved armed conflict and warfare.</English>
+		<English>The history of independence in the Americas refers to the period of time when various colonies and territories in the Americas gained their independence from European powers. This period began in the late 18th century and continued into the mid-19th century. The first colony to gain independence was the United States, which declared independence from Great Britain in 1776. The American Revolution inspired other colonies in the Americas to seek independence, including Haiti, which declared independence from France in 1804. In the early 19th century, several Spanish colonies in South America, including Venezuela, Colombia, and Ecuador, began to fight for independence from Spain. These struggles were led by figures such as Simï¿½n Bolï¿½var and Josï¿½ de San Martï¿½n, and were successful in achieving independence for several South American countries by the 1820s.[PARAGRAPH:2]Mexico gained its independence from Spain in 1821, and other Central American countries followed suit in the years that followed. Brazil, which had been a Portuguese colony, gained its independence in 1822. The period of independence in the Americas was marked by a variety of political and social changes, including the establishment of new governments, the abolition of slavery in many countries, and the formation of new national identities. It was also marked by conflict and violence, as many of these struggles for independence involved armed conflict and warfare.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -2799,6 +2950,41 @@
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
 	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NORTH_EUROPE_ACCESS</Tag>
+		<English>North Europe Access</English>
+		<French>North Europe Access</French>
+		<German>North Europe Access</German>
+		<Italian>North Europe Access</Italian>
+		<Spanish>North Europe Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NORTH_EUROPE_ACCESS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NORTH_EUROPE_ACCESS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_NORTH_EUROPE_ACCESS_HELP</Tag>
+		<English>Receive Immigrants from North Europe</English>
+		<French>Receive Immigrants from North Europe</French>
+		<German>Receive Immigrants from North Europe</German>
+		<Italian>Receive Immigrants from North Europe</Italian>
+		<Spanish>Receive Immigrants from North Europe</Spanish>
+	</TEXT>
 	
 	
 	
@@ -2831,86 +3017,6 @@
 		<Spanish>No Translation</Spanish>
 	</TEXT>
 
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_TACTICS</Tag>
-		<English>Old World Tactics</English>
-		<French>Old World Tactics</French>
-		<German>Old World Tactics</German>
-		<Italian>Old World Tactics</Italian>
-		<Spanish>Old World Tactics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_TACTICS_QUOTE</Tag>
-		<English>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</English>
-		<French>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</French>
-		<German>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</German>
-		<Italian>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</Italian>
-		<Spanish>"Conquest is made with the booty of war, but peace is preserved with justice."[PARAGRAPH:2]- Bartolome de las Casas</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_TACTICS_PEDIA</Tag>
-		<English>The military tactics that Europeans used during early colonization in the New World varied depending on the situation and the specific group of people involved. In general, the Europeans had a significant advantage over the native populations due to their superior technology and organization. One of the primary tactics used by the Europeans was to divide and conquer. They would often play different native groups against each other, either by making alliances with one group against another or by stirring up existing rivalries. Another common tactic was to use their superior weapons and armor to intimidate the native populations. The Europeans often used firearms, which were completely new to the native peoples, to devastating effect. They also made use of horses, which allowed them to move much faster and more efficiently than the native populations, many of whom had never even seen a horse before.[PARAGRAPH:2]The Europeans also made use of their ships to great effect. They could transport troops and supplies much more quickly and efficiently than the native populations could, and they could use their ships to establish a naval blockade of coastal areas, cutting off the native populations from food and other resources. In addition to these tactics, the Europeans also employed a variety of other strategies depending on the situation. They would often build forts and other defensive structures to protect their settlements, and they would sometimes use diplomacy and negotiation to make alliances with native groups.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_SCIENCE</Tag>
-		<English>Old World Science</English>
-		<French>Old World Science</French>
-		<German>Old World Science</German>
-		<Italian>Old World Science</Italian>
-		<Spanish>Old World Science</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_SCIENCE_QUOTE</Tag>
-		<English>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</English>
-		<French>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</French>
-		<German>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</German>
-		<Italian>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</Italian>
-		<Spanish>"Navigation was always a complex art, a delicate balance of technology and intuition, of experience and observation, of risk and reward. And nowhere was that balance more precarious, or more vital, than in the Age of Discovery."[PARAGRAPH:2]- Nathaniel Philbrick</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_SCIENCE_PEDIA</Tag>
-		<English>During the early colonization of the New World, Europeans brought with them a range of technologies that allowed them to better navigate and exploit the natural resources of the continent. One of the most significant technologies was the ship, which allowed Europeans to transport large numbers of people and supplies across the Atlantic. Navigation instruments, such as the astrolabe and quadrant, also helped Europeans navigate the open seas with greater accuracy. Once they arrived in the New World, Europeans used a range of technologies to build settlements, clear land, and extract resources. They brought with them iron tools, such as axes, saws, and hoes, that were far more efficient than the stone tools used by many native peoples. Europeans also introduced domesticated animals, such as horses, cattle, and pigs, which were essential to farming and transportation. In addition, Europeans brought with them weapons technologies that gave them a significant military advantage over the native peoples they encountered. Firearms, including muskets and rifles, were far more effective than traditional weapons such as bows and arrows. Europeans also introduced artillery, including cannons and mortars, which were used to destroy fortifications and intimidate native populations.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-	
-	
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_CULTURE</Tag>
-		<English>Old World Culture</English>
-		<French>Old World Culture</French>
-		<German>Old World Culture</German>
-		<Italian>Old World Culture</Italian>
-		<Spanish>Old World Culture</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_CULTURE_QUOTE</Tag>
-		<English>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</English>
-		<French>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</French>
-		<German>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</German>
-		<Italian>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</Italian>
-		<Spanish>"Europe is so well supplied with learned men that if it were not for the Church, it would be hard to find anyone who is not a scholar."[PARAGRAPH:2]- Desiderius Erasmus</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_OLD_WORLD_CULTURE_PEDIA</Tag>
-		<English>The early colonization of the New World by Europeans was marked by the introduction of a distinct European culture to the indigenous populations. Europeans brought with them their own languages, religions, and traditions, which they sought to impose on the native peoples. Missionaries arrived with the colonizers, seeking to convert the native population to Christianity, and many religious orders established missions across the Americas. European culture also impacted the material culture of the Americas, as European goods and technologies were introduced. European weapons, such as muskets, were far superior to the weapons used by the native populations, and horses revolutionized transportation and hunting. European agricultural techniques, such as plows and domesticated livestock, were also introduced, transforming the way food was produced and distributed. However, European culture also brought with it a legacy of violence, exploitation, and oppression that had lasting effects on the indigenous populations. The forced displacement and enslavement of millions of native peoples, along with the spread of European diseases, decimated populations and disrupted traditional ways of life. European colonization led to the erasure of many indigenous cultures and languages, and the lasting effects of this history continue to be felt in the Americas today.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
 
 
 	<TEXT>
@@ -3306,6 +3412,41 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_SIBERIA_ACCESS</Tag>
+		<English>Siberia Access</English>
+		<French>Siberia Access</French>
+		<German>Siberia Access</German>
+		<Italian>Siberia Access</Italian>
+		<Spanish>Siberia Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SIBERIA_ACCESS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SIBERIA_ACCESS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SIBERIA_ACCESS_HELP</Tag>
+		<English>Receive Immigrants from Siberia</English>
+		<French>Receive Immigrants from Siberia</French>
+		<German>Receive Immigrants from Siberia</German>
+		<Italian>Receive Immigrants from Siberia</Italian>
+		<Spanish>Receive Immigrants from Siberia</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_SYNTHETICS</Tag>
 		<English>Synthetics</English>
 		<French>
@@ -3474,11 +3615,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_REDUCTIONS_PEDIA</Tag>
-		<English>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaraní reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</English>
-		<French>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaraní reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</French>
-		<German>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaraní reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</German>
-		<Italian>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaraní reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</Italian>
-		<Spanish>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaraní reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</Spanish>
+		<English>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaranï¿½ reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</English>
+		<French>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaranï¿½ reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</French>
+		<German>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaranï¿½ reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</German>
+		<Italian>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaranï¿½ reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</Italian>
+		<Spanish>Spanish reductions in the Americas were a series of missionary efforts initiated by the Jesuits in the 17th and 18th centuries to consolidate Indigenous populations into organized communities in South America, particularly in Paraguay, Bolivia, and Brazil. These reductions, or mission settlements, aimed to convert Indigenous peoples to Christianity, provide education, and protect them from Spanish and Portuguese slave raiders. The most famous were the Guaranï¿½ reductions, where Jesuit missionaries established semi-autonomous villages that became centers of economic and cultural life. While the reductions succeeded in converting many Indigenous people and created thriving communities, they also involved significant cultural imposition and control. The Spanish crown eventually dissolved many of these missions in the late 18th century due to political and economic pressures, but they remain a significant chapter in the history of Spanish colonization.</Spanish>
 	</TEXT>
 
 
@@ -3891,6 +4032,41 @@
 
 
 	<TEXT>
+		<Tag>TXT_KEY_TECH_SOUTH_EUROPE_ACCESS</Tag>
+		<English>South Europe Access</English>
+		<French>South Europe Access</French>
+		<German>South Europe Access</German>
+		<Italian>South Europe Access</Italian>
+		<Spanish>South Europe Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SOUTH_EUROPE_ACCESS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SOUTH_EUROPE_ACCESS_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_SOUTH_EUROPE_ACCESS_HELP</Tag>
+		<English>Receive Immigrants from South Europe</English>
+		<French>Receive Immigrants from South Europe</French>
+		<German>Receive Immigrants from South Europe</German>
+		<Italian>Receive Immigrants from South Europe</Italian>
+		<Spanish>Receive Immigrants from South Europe</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
 		<Tag>TXT_KEY_TECH_SPIRITUALISM</Tag>
 		<English>Spiritualism</English>
 		<French>Spiritualism</French>
@@ -4279,11 +4455,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_TREATIES_QUOTE</Tag>
-		<English>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and León, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</English>
-		<French>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and León, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</French>
-		<German>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and León, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</German>
-		<Italian>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and León, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</Italian>
-		<Spanish>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and León, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</Spanish>
+		<English>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and Leï¿½n, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</English>
+		<French>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and Leï¿½n, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</French>
+		<German>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and Leï¿½n, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</German>
+		<Italian>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and Leï¿½n, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</Italian>
+		<Spanish>"We, out of the fullness of our apostolic power, by the authority of Almighty God, give, grant, and assign to you and your heirs and successors, kings of Castile and Leï¿½n, forever, together with all their dominions, cities, camps, places, and villages, and all rights, jurisdictions, and appurtenances, all islands and mainlands found and to be found, discovered and to be discovered."[PARAGRAPH:2]-Pope Alexander VI</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TECH_TREATIES_PEDIA</Tag>

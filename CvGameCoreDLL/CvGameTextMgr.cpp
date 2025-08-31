@@ -4768,6 +4768,41 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			szString.append(NEWLINE);
 		}
 
+		// MacAurther: plot has access to other seas
+		const char* colorStr = NULL;
+		CvWString tradewindTooltip;
+		switch(pPlot->getFeatureType())
+		{
+			case FEATURE_TRADEWINDS_NORTH_EUROPE:
+				colorStr = "COLOR_PLAYER_RED_TEXT";
+				tradewindTooltip = gDLL->getText("TXT_KEY_INTERFACE_NORTH_EUROPE_ACCESS");
+				break;
+			case FEATURE_TRADEWINDS_SOUTH_EUROPE:
+				colorStr = "COLOR_PLAYER_BLUE_TEXT";
+				tradewindTooltip = gDLL->getText("TXT_KEY_INTERFACE_SOUTH_EUROPE_ACCESS");
+				break;
+			case FEATURE_TRADEWINDS_AFRICA:
+				colorStr = "COLOR_PLAYER_YELLOW_TEXT";
+				tradewindTooltip = gDLL->getText("TXT_KEY_INTERFACE_AFRICA_ACCESS");
+				break;
+			case FEATURE_TRADEWINDS_SIBERIA:
+				colorStr = "COLOR_PLAYER_CYAN_TEXT";
+				tradewindTooltip = gDLL->getText("TXT_KEY_INTERFACE_SIBERIA_ACCESS");
+				break;
+			case FEATURE_TRADEWINDS_ASIA:
+				colorStr = "COLOR_PLAYER_GREEN_TEXT";
+				tradewindTooltip = gDLL->getText("TXT_KEY_INTERFACE_ASIA_ACCESS");
+				break;
+		}
+
+		if (colorStr != NULL)
+		{
+			szString.append(CvWString::format(SETCOLR, TEXT_COLOR(colorStr)));
+			szString.append(tradewindTooltip);
+			szString.append(CvWString::format(ENDCOLR));
+			szString.append(NEWLINE);
+		}
+
 		iDefenseModifier = pPlot->defenseModifier((eRevealOwner != NO_PLAYER ? GET_PLAYER(eRevealOwner).getTeam() : NO_TEAM), true, true);
 
 		if (iDefenseModifier != 0)

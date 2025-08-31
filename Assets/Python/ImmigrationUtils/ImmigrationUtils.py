@@ -57,159 +57,124 @@ class ImmigrationUtils:
 	# data has been setup using pickle. Then we try to read in the configuration 
 	# information from the INI config file.
 	def __init__(self):
-		self.firsttime = true
+		self.firsttime = True
 		
-		# Setup the mercenary data structure if it hasn't been setup yet.
-		if(sdEntityExists("Mercenaries Mod","MercenaryData") == False):
-			self.setupMercenaryData()
-			
-	# This method will setup the appropriate datastructures using the SD-Toolkit to maintain
-	# the mercenary data.
-	def setupMercenaryData(self):
 	
-		# The dictionary of available mercenaries. The keys will be the name of the mercenary
-		# the value will be dictionary representations of Mercenary objects.
-		availableMercenaries = {}
-		
-		# The dictionary of hired mercenaries. The keys will be the player ID and the values
-		# will be the dictionaries containing the mercenaries.
-		hiredMercenaries = {}
-		
-		playerList = PyGame.getCivPlayerList()
-		
-		for player in playerList:
-			hiredMercenaries[player.getID()] = {}
-		
-		# Lets enable the barbarian
-		hiredMercenaries[gc.getBARBARIAN_PLAYER()] = {}
-		
-		# The dictionary of unplaced mercenaries. The keys will be the name of the mercenary
-		# the value will be dictionary representations of Mercenary Objects
-		unplacedMercenaries = {}
-					
-		# The dictionary of mercenary groups. The keys will be the name of the mercenary group
-		# the value will be MercenaryGroup objects.
-		mercenaryGroups = {}
-		
-		# The dictionary of used mercenary names.
-		mercenaryNames = {}
-		
-		mercenaryData = {
-							AVAILABLE_COLONISTS : availableMercenaries,
-							AVAILABLE_EXPEDITIONARIES : hiredMercenaries}
-							
-		sdEntityInit("Mercenaries Mod", "MercenaryData", mercenaryData)
-			
-	# Returns a dict of the most technologically advanced unit of a each category available for hire.
-	def getAvailableImmigrants(self, iPlayer, lUnitCategories):
-		' mercenariesDict - the dictionary containing the mercenaries that are available for hire by players '
-
-		mercenariesDict = {}
-
-		for lUnitCategory in lUnitCategories:
-			mercenariesDict.update(self.getAvailableMercenaryDict(iPlayer, lUnitCategory))
-			
-		return mercenariesDict
-	
-	# Returns dictionary of best unit in category
-	def getAvailableMercenaryDict(self, iPlayer, lUnitCategory):
-		mercenariesDict = {}
-		iUnit = self.getAvailableImmigrantFromCategory(iPlayer, lUnitCategory)
-		if iUnit != -1:
-			mercenariesDict = self.addAvailableUnitToDict(iUnit, mercenariesDict)
-		return mercenariesDict
-	
-	# Returns best unit in category
-	def getAvailableImmigrantFromCategory(self, iPlayer, lUnitCategory):
-		pPlayer = gc.getPlayer(iPlayer)
-		
-		for iUnit in reversed(lUnitCategory):
-			if self.isImmigrantValid(iPlayer, iUnit) and (pPlayer.canTrain(iUnit, false, false) or iUnit in lNoTrainingNeeded):
-				return iUnit
-		return -1
-	
-	def isImmigrantValid(self, iPlayer, iUnit):
+	def getImmigrationThreshold(self, iPlayer, iHomeland):
 		iCiv = civ(iPlayer)
-		pPlayer = gc.getPlayer(iPlayer)
-		
-		# Special Cases
-		# Get Missionary Type available
-		if iUnit in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]:
-			if iUnit == iOrthodoxMiss and pPlayer.getStateReligion() == iOrthodoxy and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iOrthodoxMiss).getUnitClassType(), 0):
-				return True
-			elif iUnit == iCatholicMiss and pPlayer.getStateReligion() == iCatholicism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iCatholicMiss).getUnitClassType(), 0):
-				return True
-			elif iUnit == iProtestantMiss and pPlayer.getStateReligion() == iProtestantism and not gc.getGame().isUnitClassMaxedOut(gc.getUnitInfo(iProtestantMiss).getUnitClassType(), 0):
-				return True
-			return False
-		
-		# Colonist and base endowments are always available
-		if iUnit in [iColonist] + lEndowmentsBase:
-			return True
-		
-		# Get Great Person available (Anglo-America RP)
-		if iUnit in lGreatPeople:
-			if iCiv in [iAmerica, iCanada]:
-				return True
-			return False
-		
-		civics = Civics.player(iPlayer)
-		
-		# Slaves
-		if iUnit in lAfricanSlaves:
-			# Get Slave available
-			if iSlavery2 in civics:
-				return True
-			elif iSlavery3 in civics:
-				return True
-			return False
-		if iUnit in lNativeSlaves:
-			return False
-			
-		# Get Migrant Worker available
-		if iUnit in lMigrantWorkers:
-			if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
-				return True
-			return False
-		
-		# Default
-		iUnitClass = gc.getUnitInfo(iUnit).getUnitClassType();
-		if gc.getCivilizationInfo(iCiv).getCivilizationUnits(iUnitClass) == iUnit:
-			return True
-		
-		return False
-	
-	def addAvailableUnitToDict(self, iUnit, unitDict):
-		
-		newImmigrant = self.getImmigrant(iUnit)
-		
-		# Add the immigrant into the unitDict
-		unitDict[newImmigrant.getName()] = newImmigrant
-		
-		return unitDict
+		return int(self.calculateBaseImmigrationThreshold(iCiv) * self.getHomelandImmigrationThresholdModifier(iCiv, iHomeland))
 
-	
-	# Gets a new Mercenary Object based off of the given ID
-	def getImmigrant(self, iMercenary):
-		' objMercenary - the instance of the Mercenary class that represents the mercenary '
+	def getHomelandImmigrationThresholdModifier(self, iCiv, iHomeland):
+		iModifier = 0
 		
+		# Civics
+		iModifier += 0	# MacAurther TODO
+
+		# Saturation
+		iModifier += data.civs[iCiv].lNumImmigrantsEared[iHomeland] ** 1.1
+
+		return max(100 + iModifier, 20) / 100
+
+	def calculateBaseImmigrationThreshold(self, iCiv):
+		return 10 + (data.civs[iCiv].numImmigrations ** 1.1)
+
+	def canEarnImmigrants(self, iPlayer):
+		pPlayer = player(iPlayer)
+		return any(gc.getTeam(pPlayer.getTeam()).isHasTech(iTech) for iTech in lImmigraitonTechs)
+
+	def processImmigration(self, iPlayer):
+		iCiv = civ(iPlayer)
+		pPlayer = player(iPlayer)
+		bImmigrantGranted = True
+		while bImmigrantGranted:
+			bImmigrantGranted = False
+			for iHomeland in lHomelands:
+				if pPlayer.getImmigration() >= self.getImmigrationThreshold(iCiv, iHomeland):
+					# Grant Immigrant
+					self.changeImmigrants(iCiv, iHomeland, iImmigrant, 1)
+					bImmigrantGranted = True
+					# Subtract cost
+					pPlayer.changeImmigration(-1*self.getImmigrationThreshold(iCiv, iHomeland))
+					# Increment num immigrant trackers
+					data.civs[iCiv].numImmigrations += 1
+					data.civs[iCiv].lNumImmigrantsEared[iHomeland] += 1
+					# Notify player (if human)
+					if pPlayer.isHuman():
+						# MacAurther TODO: This is very messy. Maybe improve if you feel like it
+						strHomeland = ""
+						if iHomeland == iHomelandNorthEurope:
+							strHomeland = "North Europe"
+						elif iHomeland == iHomelandSouthEurope:
+							strHomeland = "South Europe"
+						elif iHomeland == iHomelandAfrica:
+							strHomeland = "Africa"
+						elif iHomeland == iHomelandSiberia:
+							strHomeland = "Siberia"
+						elif iHomeland == iHomelandAsia:
+							strHomeland = "Asia"
+
+						# Inform the player that the immigrant has arrived.
+						strMessage = "A new Immigrant is waiting on the docks of " + strHomeland + "!"
+						CyInterface().addMessage(iPlayer, False, 20, strMessage, "AS2D_IMMIGRANTEARNED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, "", gc.getInfoTypeForString("COLOR_YELLOW"), -1, -1, False, False) 
+
+	def changeImmigrants(self, iCiv, iHomeland, iUnit, iChange):
+		if str(iUnit) in data.civs[iCiv].dEarnedImmigrants[iHomeland].keys():
+			pass
+		elif iChange > 0:
+			data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)] = self.getImmigrantGroup(iUnit)
+			iChange -= 1
+		else:
+			return
+		if not data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)].changeCount(iChange):
+			del data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)]
+	
+	def getNumImmigrants(self, iCiv, iHomeland, iUnit=iImmigrant):
+		data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)].getCount()
+
+	def getAvailableUnit(self, iHomeland, dSchedule):
+		dUnits = {}
+
+		for iUnit in dSchedule.keys():
+			if not iHomeland in dSchedule[iUnit][1]:
+				continue
+			if not turn() in range(year(dSchedule[iUnit][0][0]), year(dSchedule[iUnit][0][1]) + 1):
+				continue
+			dUnits[str(iUnit)] = self.getImmigrantGroup(iUnit)
+			
+		return dUnits
+			
+	# Returns a list of available immigrants given a homeland and date
+	def getAvailableImmigrants(self, iHomeland):
+		return self.getAvailableUnit(iHomeland, dImmigrantSchedule)
+	
+	# Returns a list of available mercenaries given a homeland and date
+	def getAvailableMercenaries(self, iHomeland):
+		return self.getAvailableUnit(iHomeland, dMercenarySchedule)
+
+	def getEarnedImmigrants(self, iCiv, iHomeland):
+		return data.civs[iCiv].dEarnedImmigrants[iHomeland]
+
+	def getImmigrantGroup(self, iUnit, iCount=1):
 		# return if that unit name can't be found
-		if iMercenary == -1:
+		if iUnit == -1 or iCount < 1:
 			return None
 		
-		pMercenary = gc.getUnitInfo(iMercenary)
-		objMercenary = Mercenary(pMercenary.getDescription(), pMercenary, [], 0, 1)
+		immigrantGroup = ImmigrantGroup(self.getImmigrant(iUnit), iCount)
+
+		return immigrantGroup
+
+	def getImmigrant(self, iUnit):
+		# return if that unit name can't be found
+		if iUnit == -1:
+			return None
+		
+		objMercenary = Mercenary(iUnit)
 
 		return objMercenary
-		
-
-	# Creates and returns a blank instance of the Mercenary class
-	def createBlankMercenary(self):
-		return Mercenary("",None,[],-1,-1)
 	
 	# This method acts as a proxy to the hire method in the Mercenary class. It will
 	# get the mercenary object in the global mercenary pool
-	def hireMercenary(self, iMercenary, iPlayer):
+	def hireMercenary(self, iUnit, iPlayer, iHomeland):
 		' returns true if the objMercenary was successfully hired'
 		
 		# Get the player
@@ -220,7 +185,7 @@ class ImmigrationUtils:
 			return False
 			
 		# Get the immigrant from the global immigrant pool
-		immigrant = self.getImmigrant(iMercenary)
+		immigrant = self.getImmigrant(iUnit)
 		
 		# Return immediately if the immigrant was not retrieved from the global
 		# immigrant pool
@@ -229,35 +194,37 @@ class ImmigrationUtils:
 		
 		# Return immediately if player can't afford immigrant
 		(iImmigrationCost, iGoldCost) = immigrant.getHireCost(iPlayer)
-		if iGoldCost > pPlayer.getGold():	# Only need to check gold because Immigration maxes out on available immigration
-			return False
-		
-		# Return immediately if there's nowhere to spawn immigrant
-		if not immigrant.hasValidSpawnTile(iPlayer):
-			if g_bDebug:
-				CvUtil.pyPrint("No place to spawn Immigrant")
+		if iGoldCost > pPlayer.getGold() and iImmigrationCost > pPlayer.getImmigration():
 			return False
 	
 		# Get the starting location for the immigrant
-		pPlot = self.getMercenaryStartingLocation(iPlayer, immigrant)
+		pPlot = None
+		if immigrant.isShip():
+			pPlot = self.getMercenaryStartingLocation(iPlayer, immigrant, iHomeland)
 		
-		# Return immediately if no suitable plot to spawn
-		if pPlot == None:
-			return False
-                
-		immigrant.hire(iPlayer, pPlot)
+			# Return immediately if no suitable plot to spawn
+			if pPlot == None:
+				return False
+        
+		# Subtract cost
+		# Subtract cost to hire from player current cash
+		(iImmigrantCost, iGoldCost) = immigrant.getHireCost(iPlayer)
+		self.changeImmigrants(civ(iPlayer), iHomeland, iImmigrant, -iImmigrantCost)
+		pPlayer.setGold(pPlayer.getGold() - iGoldCost)
+
+		if not immigrant.hire(iPlayer, pPlot):
+			# If not placed, add to earned immigrants list
+			self.changeImmigrants(civ(iPlayer), iHomeland, iUnit, 1)
+
 
 		print(pPlayer.getName() + " | Current Gold: " + str(pPlayer.getGold()) + " | Current Immigration: " + str(pPlayer.getImmigration()) + " | Hired " + immigrant.getName() + " for " + str(iImmigrationCost) + " immigration and " + str(iGoldCost) + " gold.")
 		
 		return True
-
 	
 	# Returns the starting city for a player's mercenary
-	def getMercenaryStartingLocation(self, iPlayer, mercenary):
-		' CyPlot - the starting plot for hired mercenaries'
-		player = gc.getPlayer(iPlayer)
-		
-		pPlot = mercenary.getMercenaryStartingLocation(iPlayer)
+	def getMercenaryStartingLocation(self, iPlayer, mercenary, iHomeland):
+	
+		pPlot = mercenary.getMercenaryStartingLocation(iPlayer, iHomeland)
 		
 		return pPlot
 	
@@ -273,14 +240,14 @@ class ImmigrationUtils:
 		for iImmigrantCategory in range(iNumImmigrantCategories):
 			iDesire = lCategoryDesire[iImmigrantCategory]
 			if iDesire > iHighestDesire:
-				iImmigrant = self.getAvailableImmigrantFromCategory(iPlayer, lPossibleImmigrants[iImmigrantCategory])
+				iUnit = self.getAvailableImmigrantFromCategory(iPlayer, lPossibleImmigrants[iImmigrantCategory])
 				
 				# Check to see if there are no available immigrants in that category (i.e. doesn't have the tech or such)
-				if iImmigrant == -1:
+				if iUnit == -1:
 					continue
 				
 				# Check to see if immigrant can be hired
-				pImmigrant = self.getImmigrant(iImmigrant)
+				pImmigrant = self.getImmigrant(iUnit)
 				
 				if (not pImmigrant.canHireUnit(iPlayer)):
 					continue
@@ -324,7 +291,7 @@ class ImmigrationUtils:
 	#   - Hire mercenaries	
 	# MacAurther: TODO: It needs to be more complex but for right now it works
 	def computerPlayerThink(self, iPlayer):
-            
+		return
 		# Get the player
 		pPlayer = gc.getPlayer(iPlayer)
 		
@@ -388,10 +355,10 @@ class ImmigrationUtils:
 				return
 			
 			if g_bDebug:
-				CvUtil.pyPrint(pPlayer.getName() + " thinking about iImmigrant: " + str(immigrant.objUnitInfo.getType()))
+				CvUtil.pyPrint(pPlayer.getName() + " thinking about iUnit: " + str(immigrant.getUnitInfo().getType()))
 
 			# Have the computer hire the immigrant			
-			if not self.hireMercenary(immigrant.getUnitInfoID(), iPlayer):
+			if not self.hireMercenary(immigrant.getUnitId(), iPlayer):
 				iNumFailedHires += 1	# increment the failure count if immigrant wasn't hired
 			
 			# Return if there's no space for land units and no ships will be hired
@@ -465,7 +432,7 @@ class ImmigrationUtils:
 		
 		# Migrant Worker Category
 		if iImmigrantLabor2 in civics or iImmigrantLabor3 in civics:
-			lCategoryDesire[iMigrantWorkerCat] = 3 - lNumUnitsInCategories[iMigrantWorkerCat]	# Max at 3 at any given time
+			lCategoryDesire[iTrackmanCat] = 3 - lNumUnitsInCategories[iTrackmanCat]	# Max at 3 at any given time
 		
 		# Explorers Category
 		if iCiv in [iSpain, iPortugal, iEngland, iFrance, iNetherlands, iRussia]:
@@ -502,13 +469,8 @@ class ImmigrationUtils:
 		# Capital Ship Category
 		lCategoryDesire[iCapitalShipCat] = min(iNumCities / 3, 3) - lNumUnitsInCategories[iCapitalShipCat]	# Want 1/3 unit per city, up to 3
 		
-		# Don't consider Endowments until you're near your city goal
+		# Don't consider GPs until you're near your city goal
 		if dNumCitiesGoal[iCiv] - iNumCities <= 1:
-			# Endowments Category
-			lCategoryDesire[iEndowCatArt] = 4 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_CULTURE) / 20)
-			lCategoryDesire[iEndowCatAssets] = 4 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_GOLD) / 20)
-			lCategoryDesire[iEndowCatInno] = 4 - (player(iPlayer).getCommerceRate(CommerceTypes.COMMERCE_RESEARCH) / 20)
-			
 			# Great People Category
 			if iCiv in [iAmerica, iCanada]:
 				if turn() < year(1800): lCategoryDesire[iGPCatProphet] = 3
@@ -542,3 +504,4 @@ class ImmigrationUtils:
 				if not pUnit.isFull():
 					return pUnit
 		return None
+	

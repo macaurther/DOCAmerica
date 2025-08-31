@@ -41,9 +41,9 @@ import ScreenInput as PyScreenInput
 from CvScreenEnums import *
 from CvPythonExtensions import *
 
-# < Mercenaries Mod Start >
+# < Immigration Manager Start >
 import CvImmigrationManager
-# < Mercenaries Mod End >
+# < Immigration Manager End >
 
 # BUG - Options - end
 import BugCore
@@ -307,11 +307,11 @@ def showVictoryScreen():
 	if CyGame().getActivePlayer() > -1:
 		victoryScreen.interfaceScreen()
 
-# < Mercenaries Mod Start >
-mercenaryManager = CvImmigrationManager.CvImmigrationManager(IMMIGRATION_MANAGER)
+# < Immigration Manager Start >
+immigrationManager = CvImmigrationManager.CvImmigrationManager(IMMIGRATION_MANAGER)
 def showImmigrationManager():
-	mercenaryManager.interfaceScreen()	
-# < Mercenaries Mod End   >
+	immigrationManager.interfaceScreen()	
+# < Immigration Manager End   >
 
 import CvPediaMain
 import CvPediaHistory
@@ -1030,9 +1030,9 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 					WB_STOREDDATA : WBStoredDataScreen.WBStoredDataScreen(worldBuilderScreen),
 					
 					# add new screens here
-					# < Mercenaries Mod Start > 
-					IMMIGRATION_MANAGER: mercenaryManager,
-					# < Mercenaries Mod End   >
+					# < Immigration Manager Start > 
+					IMMIGRATION_MANAGER: immigrationManager,
+					# < Immigration Manager End   >
 				}
 
 #######################################################################################

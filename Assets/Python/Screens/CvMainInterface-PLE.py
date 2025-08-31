@@ -506,9 +506,9 @@ class CvMainInterface:
 		
 		# < Mercenaries Start >
 		iBtnX += iBtnAdvance
-		# Set the mercenary manager button in the interface
+		# Set the Immigration Manager button in the interface
 		screen.setImageButton( "ImmigrationManagerButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_IMMIGRATION_MANAGER").getPath(), iBtnX + 3 - 8, iBtnY - 2 - 8, iBtnWidth + 16, iBtnWidth + 16, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_IMMIGRATION_MANAGER).getActionInfoIndex(), -1 )
-		# Hide the mercenary manager button 
+		# Hide the Immigration Manager button 
 		screen.hide( "ImmigrationManagerButton" )
 		# < Mercenaries End >
 		

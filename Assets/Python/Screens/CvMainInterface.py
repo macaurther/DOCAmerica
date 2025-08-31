@@ -250,7 +250,7 @@ tStabilitySymbols = (
 
 immigrationManager = CvImmigrationManager.CvImmigrationManager(CvScreenEnums.IMMIGRATION_MANAGER)
 
-# This value also controls the "Mercenary Manager" button and when it should be displayed.
+# This value also controls the "Immigration Manager" button and when it should be displayed.
 # Default value is "ERA_ANCIENT"
 #Rhye - start (was causing an assert)
 #g_iStartingEra = gc.getInfoTypeForString("ERA_ANCIENT")
@@ -595,9 +595,9 @@ class CvMainInterface:
 		
 		# < Mercenaries Start >
 		iBtnX += iBtnAdvance
-		# Set the mercenary manager button in the interface
+		# Set the Immigration Manager button in the interface
 		screen.setImageButton( "ImmigrationManagerButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_IMMIGRATION_MANAGER").getPath(), iBtnX + 3 - 8, iBtnY - 2 - 6, iBtnWidth + 15, iBtnWidth + 15, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_IMMIGRATION_MANAGER).getActionInfoIndex(), -1 )
-		# Hide the mercenary manager button 
+		# Hide the Immigration Manager button 
 		screen.hide( "ImmigrationManagerButton" )
 		# < Mercenaries End >
 		
@@ -1589,8 +1589,7 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldCulture): 
+			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.show( "ImmigrationManagerButton" )				
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1619,8 +1618,7 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldCulture): 
+			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -1679,8 +1677,7 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldCulture): 
+			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1709,8 +1706,7 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldCulture): 
+			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -1739,8 +1735,7 @@ class CvMainInterface:
 			screen.show( "InterfaceTopRight" )
 			screen.show( "TurnLogButton" )
 			# < Mercenaries Start >
-			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldCulture): 
+			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.show( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.show( "EspionageAdvisorButton" )
@@ -1777,8 +1772,7 @@ class CvMainInterface:
 
 			screen.moveToFront( "TurnLogButton" )
 			# < Mercenaries Start >
-			teamPlayer = gc.getTeam(gc.getActivePlayer().getTeam())
-			if teamPlayer.isHasTech(iOldWorldCulture): 
+			if objImmigrationUtils.canEarnImmigrants(gc.getActivePlayer()): 
 				screen.moveToFront( "ImmigrationManagerButton" )
 			# < Mercenaries End >
 			screen.moveToFront( "EspionageAdvisorButton" )
@@ -5782,7 +5776,7 @@ class CvMainInterface:
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
 		# < Mercenaries Start >
-		# Handle the case where the "Mercenary Manager" button is pressed. 
+		# Handle the case where the "Immigration Manager" button is pressed. 
 		if(inputClass.getFunctionName() == "ImmigrationManagerButton"):
 			immigrationManager.interfaceScreen()
 		# < Mercenaries End   >
@@ -5930,4 +5924,4 @@ class CvMainInterface:
 			pPlayer = gc.getPlayer(pHeadSelectedCity.getOwner())
 		else:
 			pPlayer = gc.getPlayer(gc.getGame().getActivePlayer())
-		return gc.getTeam(pPlayer.getTeam()).isHasTech(iOldWorldCulture)
+		return  objImmigrationUtils.canEarnImmigrants(pPlayer.getID())

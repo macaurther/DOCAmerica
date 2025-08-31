@@ -1796,5 +1796,25 @@
 			<Type>INTERFACE_TECH_CITY_DEFENDER_AND_WORKER</Type>
 			<Path>,Art/Interface/Buttons/Units/Worker.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,5</Path>
 		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_NORTH_EUROPE</Type>
+			<Path>Art/Interface/Buttons/TerrainFeatures/North_Sea.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_SOUTH_EUROPE</Type>
+			<Path>Art/Interface/Buttons/TerrainFeatures/Mediterranean_Sea.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_AFRICA</Type>
+			<Path>Art/Interface/Buttons/TerrainFeatures/Gulf_of_Guinea.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_SIBERIA</Type>
+			<Path>Art/Interface/Buttons/TerrainFeatures/Bering_Sea.dds</Path>
+		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_TECH_ASIA</Type>
+			<Path>Art/Interface/Buttons/TerrainFeatures/China_Sea.dds</Path>
+		</InterfaceArtInfo>
 	</InterfaceArtInfos>
 </Civ4ArtDefines>

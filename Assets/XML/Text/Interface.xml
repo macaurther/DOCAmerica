@@ -1167,14 +1167,6 @@
 		<Spanish>Immigrant Information</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMMIGRATION_SCREEN_TITLE</Tag>
-		<English>Immigrants</English>
-		<French>Immigrants</French>
-		<German>Immigrants</German>
-		<Italian>Immigrants</Italian>
-		<Spanish>Immigrants</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_PERSECUTION</Tag>
 		<English>Your Inquisitor has successfully purged %s2_religion from %s1_city and confiscated %d3_gold[ICON_GOLD] from the victims.</English>
 		<French>Votre inquisiteur a r&#233;ussi &#224; purger la ville : %s1_city de la religion : %s2_religion et a confisqu&#233; au passage %d3_gold[ICON_GOLD].</French>
@@ -4057,6 +4049,46 @@
 		<Spanish>Dismiss</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_MANAGER_NORTH_EUROPE</Tag>
+		<English>North Europe</English>
+		<French>North Europe</French>
+		<German>North Europe</German>
+		<Italian>North Europe</Italian>
+		<Spanish>North Europe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_MANAGER_SOUTH_EUROPE</Tag>
+		<English>South Europe</English>
+		<French>South Europe</French>
+		<German>South Europe</German>
+		<Italian>South Europe</Italian>
+		<Spanish>South Europe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_MANAGER_AFRICA</Tag>
+		<English>Africa</English>
+		<French>Africa</French>
+		<German>Africa</German>
+		<Italian>Africa</Italian>
+		<Spanish>Africa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_MANAGER_SIBERIA</Tag>
+		<English>Siberia</English>
+		<French>Siberia</French>
+		<German>Siberia</German>
+		<Italian>Siberia</Italian>
+		<Spanish>Siberia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMMIGRATION_MANAGER_ASIA</Tag>
+		<English>Asia</English>
+		<French>Asia</French>
+		<German>Asia</German>
+		<Italian>Asia</Italian>
+		<Spanish>Asia</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_SLAVE_REVOLT_IN_CITY</Tag>
 		<English>A slave revolt has taken place in %s1_CityName!</English>
 		<French>A slave revolt has taken place in %s1_CityName!</French>
@@ -4071,6 +4103,62 @@
 		<German>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</German>
 		<Italian>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</Italian>
 		<Spanish>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_NO_IMPROVEMENT</Tag>
+		<English>[NEWLINE][ICON_BULLET]Cannot build any improvements on this feature</English>
+		<French>[NEWLINE][ICON_BULLET]Les am&#233;nagements ne peuvent &#234;tre construits ici</French>
+		<German>[NEWLINE][ICON_BULLET]Cannot build any improvements on this feature</German>
+		<Italian>[NEWLINE][ICON_BULLET]Non si possono costruire miglioramenti su questo terreno</Italian>
+		<Spanish>[NEWLINE][ICON_BULLET]Cannot build any improvements on this feature</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_NORTH_EUROPE_ACCESS</Tag>
+		<English>North Europe Access</English>
+		<French>North Europe Access</French>
+		<German>North Europe Access</German>
+		<Italian>North Europe Access</Italian>
+		<Spanish>North Europe Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_SOUTH_EUROPE_ACCESS</Tag>
+		<English>South Europe Access</English>
+		<French>South Europe Access</French>
+		<German>South Europe Access</German>
+		<Italian>South Europe Access</Italian>
+		<Spanish>South Europe Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_AFRICA_ACCESS</Tag>
+		<English>Africa Access</English>
+		<French>Africa Access</French>
+		<German>Africa Access</German>
+		<Italian>Africa Access</Italian>
+		<Spanish>Africa Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_SIBERIA_ACCESS</Tag>
+		<English>Siberia Access</English>
+		<French>Siberia Access</French>
+		<German>Siberia Access</German>
+		<Italian>Siberia Access</Italian>
+		<Spanish>Siberia Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_ASIA_ACCESS</Tag>
+		<English>Asia Access</English>
+		<French>Asia Access</French>
+		<German>Asia Access</German>
+		<Italian>Asia Access</Italian>
+		<Spanish>Asia Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_IMMIGRATION</Tag>
+		<English>Next Immigrant: %d1_Curr/%d2_Need [ICON_IMMIGRATION]</English>
+		<French>Next Immigrant: %d1_Curr/%d2_Need [ICON_IMMIGRATION]</French>
+		<German>Next Immigrant: %d1_Curr/%d2_Need [ICON_IMMIGRATION]</German>
+		<Italian>Next Immigrant: %d1_Curr/%d2_Need [ICON_IMMIGRATION]</Italian>
+		<Spanish>Next Immigrant: %d1_Curr/%d2_Need [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	
 	

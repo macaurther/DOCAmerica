@@ -17,6 +17,7 @@ from CvImmigrationScreensEnums import *
 from Consts import *
 from Core import *
 from Civics import *
+import BugUtil
 
 from Events import handler
 
@@ -35,8 +36,20 @@ g_bDebug = false
 # Default valus is 1 
 g_bAIThinkPeriod = 1 #Rhye (5 in Warlords, 4 in vanilla)
 
+def getHoverText(eWidgetType, iData1, iData2, bOption):
+	iThreshold = objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab)
+	iProgress = gc.getActivePlayer().getImmigration()
+	iRate = gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
+	szText = BugUtil.getText("TXT_KEY_MISC_IMMIGRATION", (int(iProgress), int(iThreshold)))
+	if (iRate > 0):
+		iTurns = (iThreshold - iProgress) / iRate
+		szText += u"\n%d%c%s " % (int(iRate), gc.getCommerceInfo(CommerceTypes.COMMERCE_IMMIGRATION).getChar(), BugUtil.getPlainText("TXT_KEY_PER_TURN"))
+		szText += BugUtil.getText("INTERFACE_CITY_TURNS", (int(iTurns),))
+	
+	return szText
+
 class CvImmigrationManager:
-	"Mercenary Manager"
+	"Immigration Manager"
 	
 	def __init__(self, iScreenId):
 	
@@ -44,6 +57,12 @@ class CvImmigrationManager:
 		
 		# The different UI wiget names
 		self.IMMIGRATION_MANAGER_SCREEN_NAME = "ImmigrationManager"
+
+		self.TAB_NORTH_EUROPE_ID = "NorthEuropeTabWidget"
+		self.TAB_SOUTH_EUROPE_ID = "SouthEuropeTabWidget"
+		self.TAB_AFRICA_ID = "AfricaTabWidget"
+		self.TAB_SIBERIA_ID = "SiberiaTabWidget"
+		self.TAB_ASIA_ID = "AsiaTabWidget"
 
 		self.WIDGET_ID = "ImmigrationManagerWidget"
 		self.Z_BACKGROUND = -2.1
@@ -60,14 +79,13 @@ class CvImmigrationManager:
 		self.iActivePlayer = -1
 		
 		self.currentScreen = IMMIGRATION_MANAGER
+		data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_NORTH_EUROPE  # MacAurther TODO: Make this initial based on active player civ
 		
-		
-	# Returns the instance of the mercenary manager screen.						
+	# Returns the instance of the immigration manager screen.						
 	def getScreen(self):
 		return CyGInterfaceScreen(self.IMMIGRATION_MANAGER_SCREEN_NAME, self.iScreenId)
 
-
-	# Gets the instance of the mercenary manager screen and hides it.
+	# Gets the instance of the immigration manager screen and hides it.
 	def hideScreen(self):
 		screen = self.getScreen()
 		screen.hideScreen()
@@ -87,7 +105,7 @@ class CvImmigrationManager:
 		if screen.isActive():
 			return
 			
- 		screen.setRenderInterfaceOnly(True);
+		screen.setRenderInterfaceOnly(True);
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, False)
 
 		self.nWidgetCount = 0
@@ -103,81 +121,52 @@ class CvImmigrationManager:
 			self.drawMercenaryScreenContent(screen)
 		
 
-	# Populates the panel that shows all of the available Colonists
+	# Populates the panel that shows all of the available immigrants
 	def populateAvailableColonistsPanel(self, screen):
 		# Get the available Colonists
-		mercenaries = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, lPossibleColonists)
+		dColonists = objImmigrationUtils.getAvailableImmigrants(data.iCurrentImmigrationManagerTab)
 		
-		self.populateAvailablePanel(screen, AVAILABLE_COLONISTS_INNER_PANEL_ID, mercenaries)
+		self.populateAvailablePanel(screen, AVAILABLE_COLONISTS_INNER_PANEL_ID, dColonists, "AvailableColonists")
 
 
-	# Populates the panel that shows all of the available Expeditionaries
-	def populateAvailableExpeditionariesPanel(self, screen):
+	# Populates the panel that shows all of the available Mercenaries
+	def populateAvailableMercenariesPanel(self, screen):
 
-		# Get the available Expeditionaries
-		mercenaries = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, lPossibleExpeditionaries)
+		# Get the available Mercenaries
+		dMercenaries = objImmigrationUtils.getAvailableMercenaries(data.iCurrentImmigrationManagerTab)
 		
-		self.populateAvailablePanel(screen, AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, mercenaries)
+		self.populateAvailablePanel(screen, AVAILABLE_MERCENARIES_INNER_PANEL_ID, dMercenaries, "AvailableMercenaries")
 	
 	
-	# Populates the panel that shows all of the available Endowments
-	def populateAvailableEndowmentsPanel(self, screen):
+	# Populates the panel that shows all of the earned immigrants
+	def populateEarnedImmigrantsPanel(self, screen):
 
-		# Get the available Endowments
-		mercenaries = objImmigrationUtils.getAvailableImmigrants(self.iActivePlayer, lPossibleEndowments)
+		# Get the earned immigrants
+		dEarnedImmigrantGroups = objImmigrationUtils.getEarnedImmigrants(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab)
 		
-		self.populateAvailablePanel(screen, AVAILABLE_ENDOWMENTS_INNER_PANEL_ID, mercenaries)
+		self.populateAvailablePanel(screen, EARNED_IMMIGRANTS_INNER_PANEL_ID, dEarnedImmigrantGroups, "EarnedImmigrants")
 		
 	
 	# Helper function that populates a panel (Colonist, Expeditionary, or Endowment)
-	def populateAvailablePanel(self, screen, innerPanelId, mercenaries):
-		# Get the ID for the current active player
-		iPlayer = gc.getGame().getActivePlayer()
-
+	def populateAvailablePanel(self, screen, innerPanelId, dImmigrantGroups, panel):
 		mercenaryCount = 0
 		
 		# Go through the mercenaries and populate the available mercenaries panel
-		for mercenaryName in mercenaries:
-
-			# Get the mercenary from the dictionary	
-			mercenary = mercenaries[mercenaryName]
-			mercenaryName = str(mercenaryName)
+		for sUnit in dImmigrantGroups.keys():
+			unit = dImmigrantGroups[sUnit].getImmigrant()
+			unitTitle = dImmigrantGroups[sUnit].getImmigrantTitle()
+			panelName = unit.sUnitName + panel
+			print("Populating panelName: " + panelName)
 			
-			# Don't add the mercenary to the list if they were built by the current player
-			if(mercenary.getBuilder() == iPlayer):
-				continue
+			screen.attachPanel(innerPanelId, panelName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
+			screen.attachImageButton( panelName, unit.getUnitInfo().getType()+"-"+panelName+"-InfoButton", 
+										unit.getUnitInfo().getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
+			screen.attachPanel(panelName, panelName+"Text", unitTitle, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
-			if (not mercenary.canHireUnit(iPlayer)):
-				continue
-						
-			screen.attachPanel(innerPanelId, mercenaryName, "", "", False, False, PanelStyles.PANEL_STYLE_DAWN)
-			screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-InfoButton", 
-										mercenary.objUnitInfo.getButton(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
-			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
-
-			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(iPlayer)
-			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
-
-			bEnableHireMercenary = true
-
-			# Check to see if the player has enough gold to hire the mercenary. If they don't then
-			# don't let them hire the mercenary.
-			if not mercenary.canAfford(iPlayer):
-				bEnableHireMercenary = False
-				
-			# Check if unit can spawn
-			if not mercenary.hasValidSpawnTile(iPlayer):
-				bEnableHireMercenary = False
-			
-
-			# Add the hire button for the mercenary
-			if(bEnableHireMercenary):
-				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
-											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
+			self.populateImmigrantXPString(unit, screen, panelName)
+			if not panel == "EarnedImmigrants":
+				self.populateImmigrantHireString(unit, self.iActivePlayer, screen, panelName)
+				self.populateImmigrantHireButton(unit, screen, panelName)
 
 			mercenaryCount = mercenaryCount + 1
 			
@@ -191,56 +180,92 @@ class CvImmigrationManager:
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 				screen.attachLabel( "dummyPanelHire"+str(i), "", "     ")
 
+
+	def populateImmigrantXPString(self, unit, screen, panelName):
+		screen.attachLabel( panelName + "Text", panelName  + "text3", "     Level: " + str(unit.getLevel()))
+
+	def populateImmigrantHireString(self, unit, iPlayer, screen, panelName):
+		# Build the unit hire cost string
+		strHCost = unit.getHireCostString(iPlayer)	
+		screen.attachLabel( panelName + "Text", panelName  + "text4", "     Hire Cost: " + strHCost)
+
+	def populateImmigrantHireButton(self, unit, screen, panelName):
+		# Add the hire button for the unit
+		if(unit.canAfford(self.iActivePlayer, data.iCurrentImmigrationManagerTab)):
+			screen.attachPanel(panelName, panelName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
+			screen.attachImageButton( panelName, unit.getUnitInfo().getType()+"-"+panelName+"-HireButton", 
+										"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
+
+
 	# Clears out the mercenary information panel contents
 	def clearMercenaryInformation(self, screen):
 		screen.deleteWidget(IMMIGRANT_INFORMATION_PROMOTION_PANEL_ID)
 		screen.deleteWidget(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID)
 		screen.deleteWidget(IMMIGRANT_INFORMATION_DETAILS_PANEL_ID)
+		screen.deleteWidget(IMMIGRANT_INFORMATION_STRATEGY_PANEL_ID)
+		screen.deleteWidget(IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_ID)
 		screen.deleteWidget(IMMIGRANT_UNIT_GRAPHIC)		
 		
 			
-	# Populates the mercenary information panel with the unit information details		
-	def populateMercenaryInformation(self, screen, mercenary):
+	# Populates the unit information panel with the unit information details		
+	def populateMercenaryInformation(self, screen, unit):
 		# Get the ID for the current active player
 		iPlayer = gc.getGame().getActivePlayer()
 
 		screen.addPanel(IMMIGRANT_INFORMATION_PROMOTION_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		
-		screen.addPanel(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Details", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
+		screen.addPanel(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, "Promotions", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
 		screen.attachListBoxGFC(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
 		screen.enableSelect(IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, False)
 		
 		screen.addPanel(IMMIGRANT_INFORMATION_DETAILS_PANEL_ID, "", "", True, False, self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
 		screen.attachListBoxGFC(IMMIGRANT_INFORMATION_DETAILS_PANEL_ID, IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
 		screen.enableSelect(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, False)
-
-		# Build the mercenary hire cost string
-		strHCost = mercenary.getHireCostString(iPlayer)
 		
-		# Build the mercenary XP string
-		strXP = u"%d/%d" %(mercenary.getExperienceLevel(), mercenary.getNextExperienceLevel())
+		screen.addPanel(IMMIGRANT_INFORMATION_STRATEGY_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
+		
+		screen.addPanel(IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_ID, "Details", "", True, False, self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_EMPTY)
+		screen.attachListBoxGFC(IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_ID, IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, "", TableStyles.TABLE_STYLE_EMPTY )
+		screen.enableSelect(IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, False)
+
+		# Build the unit hire cost string
+		strHCost = unit.getHireCostString(iPlayer)
+		
+		# Build the unit XP string
+		strXP = u"%d/%d" %(unit.getExperienceLevel(), unit.getNextExperienceLevel())
 
 		# Build the unit stats string
-		strStats = u"%d%c    %d%c" %(mercenary.getUnitInfo().getCombat(), CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR),mercenary.getUnitInfo().getMoves(),CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
-		if mercenary.getUnitInfo().getAirCombat() > 0 and mercenary.getUnitInfo().getAirRange() > 0:
-			strStats += u"    %d%c" % (mercenary.getUnitInfo().getAirCombat(), CyGame().getSymbolID(FontSymbols.RANGED_STRENGTH_CHAR))
-			strStats += u"    %d%c" % (mercenary.getUnitInfo().getAirRange(), CyGame().getSymbolID(FontSymbols.RANGE_CHAR))
+		strStats = u"%d%c    %d%c" %(unit.getUnitInfo().getCombat(), CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR), unit.getUnitInfo().getMoves(),CyGame().getSymbolID(FontSymbols.MOVES_CHAR))
+		if unit.getUnitInfo().getAirCombat() > 0 and unit.getUnitInfo().getAirRange() > 0:
+			strStats += u"    %d%c" % (unit.getUnitInfo().getAirCombat(), CyGame().getSymbolID(FontSymbols.RANGED_STRENGTH_CHAR))
+			strStats += u"    %d%c" % (unit.getUnitInfo().getAirRange(), CyGame().getSymbolID(FontSymbols.RANGE_CHAR))
 
-		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, mercenary.getName(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		#screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Unit Type: " + mercenary.getUnitInfo().getDescription(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY ) #Rhye
-		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Level: " + str(mercenary.getLevel()) + "     XP: " + strXP, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, unit.getName(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Level: " + str(unit.getLevel()) + "     XP: " + strXP, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  " + strStats, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxString(IMMIGRANT_INFORMATION_DETAILS_LIST_ID, "  Hire Cost: " + strHCost, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
-		szText = CyGameTextMgr().getUnitHelp(mercenary.getUnitInfoID(), True, False, False, None)[1:]
-		screen.appendListBoxString(IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, szText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxString(IMMIGRANT_INFORMATION_PROMOTION_LIST_ID, "  " + mercenary.getUnitInfo().getStrategy(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		szText = CyGameTextMgr().getUnitHelp(unit.getUnitId(), True, False, False, None)[1:]
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, szText, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxString(IMMIGRANT_INFORMATION_STRATEGY_LIST_ID, "  " + unit.getUnitInfo().getStrategy(), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
-		screen.addUnitGraphicGFC(IMMIGRANT_UNIT_GRAPHIC, mercenary.getUnitInfoID(), self.screenWidgetData[IMMIGRANT_ANIMATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_Y], self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH], self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1, self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_Z], self.screenWidgetData[IMMIGRANT_ANIMATION_SCALE], True)
+		# Get the promotion list for the unit
+		lPromotionList = unit.getCurrentPromotionList()
+
+		screen.attachMultiListControlGFC(IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_ID, IMMIGRANT_INFORMATION_PROMOTION_LIST_CONTROL_ID, "", 1, 64, 64, TableStyles.TABLE_STYLE_STANDARD)
+
+		# Add all of the promotions the unit has.
+		for promotion in lPromotionList:
+			screen.appendMultiListButton(IMMIGRANT_INFORMATION_PROMOTION_LIST_CONTROL_ID, gc.getPromotionInfo(promotion).getButton(), 0, WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROMOTION, promotion, -1, False)
+
+		screen.addUnitGraphicGFC(IMMIGRANT_UNIT_GRAPHIC, unit.getUnitId(), self.screenWidgetData[IMMIGRANT_ANIMATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_Y], self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH], self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1, self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_X], self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_Z], self.screenWidgetData[IMMIGRANT_ANIMATION_SCALE], True)
+
+		# Add additional hire button (so 720 p screens can see if :P)
+		self.populateImmigrantHireButton(unit, screen, "ImmigrantInformationDetailsPanel")
 
 	
-	# Draws the gold information in the "Mercenary Manager" screens
+	# Draws the gold information in the "Immigration Manager" screens
 	def drawGoldInformation(self, screen):
 	
 		iCost = 0
@@ -262,11 +287,11 @@ class CvImmigrationManager:
 		screen.moveToFront( "MaintainText" )
 		
 
-	# Draws the top bar of the "Mercenary Manager" screens
+	# Draws the top bar of the "Immigration Manager" screens
 	def drawScreenTop(self, screen):
 		screen.setDimensions(0, 0, self.screenWidgetData[SCREEN_WIDTH], self.screenWidgetData[SCREEN_HEIGHT])
 		screen.addDrawControl(BACKGROUND_ID, ArtFileMgr.getInterfaceArtInfo("SCREEN_BG_OPAQUE").getPath(), 0, 0, self.screenWidgetData[SCREEN_WIDTH], self.screenWidgetData[SCREEN_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1 )
- 		screen.addDDSGFC(BACKGROUND_ID, ArtFileMgr.getInterfaceArtInfo("MAINMENU_SLIDESHOW_LOAD").getPath(), 0, 0, self.screenWidgetData[SCREEN_WIDTH], self.screenWidgetData[SCREEN_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addDDSGFC(BACKGROUND_ID, ArtFileMgr.getInterfaceArtInfo("MAINMENU_SLIDESHOW_LOAD").getPath(), 0, 0, self.screenWidgetData[SCREEN_WIDTH], self.screenWidgetData[SCREEN_HEIGHT], WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
 		screen.addPanel(SCREEN_TITLE_PANEL_ID, u"", u"", True, False, self.screenWidgetData[SCREEN_TITLE_PANEL_X], self.screenWidgetData[SCREEN_TITLE_PANEL_Y], self.screenWidgetData[SCREEN_TITLE_PANEL_WIDTH], self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_TOPBAR )
 		screen.setText(SCREEN_TITLE_TEXT_PANEL_ID, "Background", self.screenWidgetData[SCREEN_TITLE_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[SCREEN_TITLE_TEXT_PANEL_X], self.screenWidgetData[SCREEN_TITLE_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
@@ -275,10 +300,10 @@ class CvImmigrationManager:
 		self.drawGoldInformation(screen)
 
 
-	# Draws the bottom bar of the "Mercenary Manager" screens
+	# Draws the bottom bar of the "Immigration Manager" screens
 	def drawScreenBottom(self, screen):
 		screen.addPanel(BOTTOM_PANEL_ID, "", "", True, True, self.screenWidgetData[BOTTOM_PANEL_X], self.screenWidgetData[BOTTOM_PANEL_Y], self.screenWidgetData[BOTTOM_PANEL_WIDTH], self.screenWidgetData[BOTTOM_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_BOTTOMBAR )
-		screen.setText(IMMIGRATION_TEXT_PANEL_ID, "Background", self.screenWidgetData[IMMIGRATION_TEXT_PANEL], CvUtil.FONT_LEFT_JUSTIFY, self.screenWidgetData[IMMIGRATION_TEXT_PANEL_X], self.screenWidgetData[IMMIGRATION_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		self.drawTabs()
 		screen.setText(EXIT_TEXT_PANEL_ID, "Background", self.screenWidgetData[EXIT_TEXT_PANEL], CvUtil.FONT_RIGHT_JUSTIFY, self.screenWidgetData[EXIT_TEXT_PANEL_X], self.screenWidgetData[EXIT_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
 
 	# Draws the mercenary screen content
@@ -289,21 +314,26 @@ class CvImmigrationManager:
  
 		# Draw the bottom bar
 		self.drawScreenBottom(screen)
-				
+
+		screen.addPanel(IMMIGRATION_PROGRESS_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_X], self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_Y], self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_WIDTH], self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
+		screen.addPanel(IMMIGRATION_PROGRESS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_X], self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_Y], self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_WIDTH], self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+		screen.addPanel(IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
+		screen.setText(IMMIGRATION_PROGRESS_TEXT_PANEL_ID, "Background", self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_PANEL_X], self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		
 		screen.addPanel(AVAILABLE_COLONISTS_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y], self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
 		screen.addPanel(AVAILABLE_COLONISTS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
 		screen.addPanel(AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
 		screen.setText(AVAILABLE_COLONISTS_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
-		screen.addPanel(AVAILABLE_EXPEDITIONARIES_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
-		screen.addPanel(AVAILABLE_EXPEDITIONARIES_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
-		screen.addPanel(AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
-		screen.setText(AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addPanel(AVAILABLE_MERCENARIES_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y], self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
+		screen.addPanel(AVAILABLE_MERCENARIES_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+		screen.addPanel(AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
+		screen.setText(AVAILABLE_MERCENARIES_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
-		screen.addPanel(AVAILABLE_ENDOWMENTS_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y], self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
-		screen.addPanel(AVAILABLE_ENDOWMENTS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_Y], self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
-		screen.addPanel(AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
-		screen.setText(AVAILABLE_ENDOWMENTS_TEXT_PANEL_ID, "Background", self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_X], self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addPanel(EARNED_IMMIGRANTS_PANEL_ID, "", "", True, True, self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_X], self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_Y], self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_WIDTH], self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
+		screen.addPanel(EARNED_IMMIGRANTS_INNER_PANEL_ID, "", "", True, True, self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_X], self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_Y], self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_WIDTH], self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_IN)
+		screen.addPanel(EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_ID, u"", u"", True, False, self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_X], self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_Y], self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_WIDTH], self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN )
+		screen.setText(EARNED_IMMIGRANTS_TEXT_PANEL_ID, "Background", self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_PANEL], CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_PANEL_X], self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_PANEL_Y], self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		
 		screen.addPanel(IMMIGRANT_INFORMATION_PANEL_ID, "", "", True, True, self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X], self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y], self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH], self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_HEIGHT], PanelStyles.PANEL_STYLE_MAIN)
@@ -313,10 +343,57 @@ class CvImmigrationManager:
 		screen.showWindowBackground(False)
 
 		# Populate the available panels
+		self.updateImmigrationBar(screen)
 		self.populateAvailableColonistsPanel(screen)
-		self.populateAvailableExpeditionariesPanel(screen)
-		self.populateAvailableEndowmentsPanel(screen)
+		self.populateAvailableMercenariesPanel(screen)
+		self.populateEarnedImmigrantsPanel(screen)
+	
+	def drawTabs(self):
+		xLink = self.screenWidgetData[MARGIN]
+		xLink = self.drawTab(IMMIGRATION_MANAGER_TAB_NORTH_EUROPE, self.TAB_NORTH_EUROPE_ID, "TXT_KEY_IMMIGRATION_MANAGER_NORTH_EUROPE", xLink)
+		xLink = self.drawTab(IMMIGRATION_MANAGER_TAB_SOUTH_EUROPE, self.TAB_SOUTH_EUROPE_ID, "TXT_KEY_IMMIGRATION_MANAGER_SOUTH_EUROPE", xLink)
+		xLink = self.drawTab(IMMIGRATION_MANAGER_TAB_AFRICA, self.TAB_AFRICA_ID, "TXT_KEY_IMMIGRATION_MANAGER_AFRICA", xLink)
+		xLink = self.drawTab(IMMIGRATION_MANAGER_TAB_SIBERIA, self.TAB_SIBERIA_ID, "TXT_KEY_IMMIGRATION_MANAGER_SIBERIA", xLink)
+		xLink = self.drawTab(IMMIGRATION_MANAGER_TAB_ASIA, self.TAB_ASIA_ID, "TXT_KEY_IMMIGRATION_MANAGER_ASIA", xLink)
 
+	def drawTab(self, eTab, tabID, sTabText, xLink):
+		if (data.iCurrentImmigrationManagerTab != eTab):
+			szText = u"<font=4>" + localText.getText(sTabText, ()).upper() + "</font>"
+		else:
+			szText = u"<font=4>" + localText.getColorText(sTabText, (), gc.getInfoTypeForString("COLOR_YELLOW")).upper() + "</font>"
+		self.getScreen().setText(tabID, "", szText, CvUtil.FONT_LEFT_JUSTIFY, xLink, self.screenWidgetData[SCREEN_HEIGHT] - 42, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		return xLink + CyInterface().determineWidth(szText) + self.screenWidgetData[SPACING]
+
+	def updateImmigrationBar(self, screen):
+		screen.addStackedBarGFC( IMMIGRATION_PROGRESS_BAR, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_Y], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_WIDTH], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_HEIGHT], InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1 )
+		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_IMMIGRATION_STORED") )
+		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_IMMIGRATION_RATE") )
+		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
+		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
+		
+		szText = "TODO String"
+		#szText = GPUtil.getGreatPeopleText(pGPCity, iGPTurns, GP_BAR_WIDTH, MainOpt.isGPBarTypesNone(), MainOpt.isGPBarTypesOne(), True)
+		szText = u"<font=2>%s</font>" % (szText)
+		screen.setLabel("ImmigrationProgressBarText", "", szText, CvUtil.FONT_CENTER_JUSTIFY | CvUtil.FONT_CENTER_VERTICALLY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1)
+		
+		#screen.hide( IMMIGRATION_PROGRESS_BAR )
+		
+		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
+		fRate = gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
+		fFirst = gc.getActivePlayer().getImmigration() / fThreshold
+
+		screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_STORED, fFirst )
+		if ( fFirst == 1 ):
+			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold )
+		else:
+			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold / ( 1 - fFirst ) )
+
+		screen.show( IMMIGRATION_PROGRESS_BAR )
+		
+
+
+		#screen.setText( "ImmigrationProgressBarText", "Background", szText, CvUtil.FONT_CENTER_JUSTIFY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], -0.4, FontTypes.GAME_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1 )
+		#screen.show( "ImmigrationProgressBarText" )
 
 	# Returns the new version of the gold text that takes into account the
 	# mercenary maintenance cost and contract income
@@ -396,107 +473,76 @@ class CvImmigrationManager:
 		return strGoldText + strDelta
 	
 	# Hires a mercenary for a player
-	def hireMercenary(self, screen, iMercenary):
+	def hireMercenary(self, screen, iMercenary, iHomeland):
 
 		# Get the active player ID
 		iPlayer = gc.getGame().getActivePlayer()
 
 		# Hire the mercenary for the player
-		objImmigrationUtils.hireMercenary(iMercenary, iPlayer) 
+		objImmigrationUtils.hireMercenary(iMercenary, iPlayer, iHomeland)
 
 		# Draw the gold information for the screen
 		self.drawGoldInformation(screen)
 
 		# Update the available mercenaries in the available mercenaries panel
-		self.updateAvailableColonists(screen)
-		self.updateAvailableExpeditionaries(screen)
-		self.updateAvailableEndowments(screen)
+		self.populateAvailableColonistsPanel(screen)
+		self.populateAvailableMercenariesPanel(screen)
+		self.populateEarnedImmigrantsPanel(screen)
 
 		# Clear the information in the mercenary information panel
-		self.clearMercenaryInformation(screen)
+		#self.clearMercenaryInformation(screen)
 				
 	# Updates the available mercenaries panel, displays the hire button to the 
 	# player only for the mercenaries they can hire.
 	def updateAvailableColonists(self, screen):
-	
-		# Get the ID for the current player
-		iPlayer = gc.getGame().getActivePlayer()
-		
-		# Get the mercenaries available for hire
-		mercenaries = objImmigrationUtils.getAvailableImmigrants(iPlayer, lPossibleColonists)
 
-		self.updateAvailableUnits(screen, mercenaries, iPlayer)
+		# Get the available Colonists
+		dColonists = objImmigrationUtils.getAvailableImmigrants(data.iCurrentImmigrationManagerTab)
+
+		self.updateAvailableUnits(screen, dColonists, "AvailableColonists")
 		
 	# Updates the available mercenaries panel, displays the hire button to the 
 	# player only for the mercenaries they can hire.
-	def updateAvailableExpeditionaries(self, screen):
-	
-		# Get the ID for the current player
-		iPlayer = gc.getGame().getActivePlayer()
-		
-		# Get the mercenaries available for hire
-		mercenaries = objImmigrationUtils.getAvailableImmigrants(iPlayer, lPossibleExpeditionaries)
+	def updateAvailableMercenaries(self, screen):
 
-		self.updateAvailableUnits(screen, mercenaries, iPlayer)
+		# Get the available Mercenaries
+		dMercenaries = objImmigrationUtils.getAvailableMercenaries(data.iCurrentImmigrationManagerTab)
+
+		self.updateAvailableUnits(screen, dMercenaries, "AvailableMercenaries")
 	
 	
 	# Updates the available mercenaries panel, displays the hire button to the 
 	# player only for the mercenaries they can hire.
-	def updateAvailableEndowments(self, screen):
-	
-		# Get the ID for the current player
-		iPlayer = gc.getGame().getActivePlayer()
-		
-		# Get the mercenaries available for hire
-		mercenaries = objImmigrationUtils.getAvailableImmigrants(iPlayer, lPossibleEndowments)
+	def updateEarnedImmigrants(self, screen):
 
-		self.updateAvailableUnits(screen, mercenaries, iPlayer)
+		# Get the earned immigrants
+		dEarnedImmigrantGroups = objImmigrationUtils.getEarnedImmigrants(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab)
+
+		self.updateAvailableUnits(screen, dEarnedImmigrantGroups, "EarnedImmigrants")
 	
 	
-	def updateAvailableUnits(self, screen, mercenaries, iPlayer):
-		# Go through each of the available mercenaries
-		for mercenaryName in mercenaries:
+	def updateAvailableUnits(self, screen, dImmigrantGroups, panel):
+		# Go through the mercenaries and populate the available mercenaries panel
+		for sUnit in dImmigrantGroups.keys():
+			unit = dImmigrantGroups[sUnit].getImmigrant()
+			unitTitle = dImmigrantGroups[sUnit].getImmigrantTitle()
+			panelName = unit.sUnitName + panel
+			print("Updating panelName: " + panelName)
+			
+			# Delete the cost string for the current unit we are processing.
+			screen.deleteWidget(panelName + "Text")
+			
+			screen.attachPanel(panelName, panelName+"Text", unitTitle, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
 
-			mercenary = mercenaries[mercenaryName]
-			
-			mercenaryName = str(mercenaryName)
-			
-			# Continue if the mercenary was built by the current player
-			if(mercenary.iBuilder == iPlayer):
-				continue
-				
-			# Delete the cost string for the current mercenary we are processing.
-			screen.deleteWidget(mercenaryName+"Text")
-			
-			screen.attachPanel(mercenaryName, mercenaryName+"Text",mercenaryName, "", True, False, PanelStyles.PANEL_STYLE_EMPTY)
-			
-			# Build the mercenary hire cost string
-			strHCost = mercenary.getHireCostString(iPlayer)
-			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text3", "     Level: " + str(mercenary.getLevel()))			
-			screen.attachLabel( mercenaryName+"Text", mercenaryName  + "text4", "     Hire Cost: " + strHCost)
+			# Delete the hire button for the current unit we are processing.
+			screen.deleteWidget(unit.getUnitInfo().getType()+"-"+panelName+"-HireButton")
 
-			# Delete the hire button for the current mercenary we are processing.
-			screen.deleteWidget(mercenary.objUnitInfo.getType()+"-HireButton")
-
-			# To start off we'll assume that the player can hire the mercenary
-			bEnableHireMercenary = true
-
-			# If the player doesn't have enough money to hire the mercenary then
-			# we won't allow them to hire the current mercenary being processed.
-			if not mercenary.canAfford(iPlayer):
-				bEnableHireMercenary = False
-			
-			# Check if unit can spawn
-			if not mercenary.hasValidSpawnTile(iPlayer):
-				bEnableHireMercenary = False
-
-			if(bEnableHireMercenary):
-				screen.attachPanel(mercenaryName, mercenaryName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-				screen.attachImageButton( mercenaryName, mercenary.objUnitInfo.getType()+"-HireButton", 
-											"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
+			self.populateImmigrantXPString(unit, screen, panelName)
+			if not panel == "EarnedImmigrants":
+				self.populateImmigrantHireString(unit, self.iActivePlayer, screen, panelName)
+				self.populateImmigrantHireButton(unit, screen, panelName)
 	
-	# Handles the input to the mercenary manager screens
+	# Handles the input to the immigration manager screens
 	def handleInput (self, inputClass):
 
 		# Get the instance of the screen
@@ -511,11 +557,11 @@ class CvImmigrationManager:
 		# Get the data
 		theKey = int(inputClass.getData())
 
-		# If the escape key was pressed then set the current screen to mercenary manager
+		# If the escape key was pressed then set the current screen to immigration manager
 		if (inputClass.getNotifyCode() == self.EventKeyDown and theKey == int(InputTypes.KB_ESCAPE)):
 			self.currentScreen = IMMIGRATION_MANAGER
 
-		# If the exit text was pressed then set the current screen to mercenary manager.
+		# If the exit text was pressed then set the current screen to immigration manager.
 		if(inputClass.getFunctionName() == EXIT_TEXT_PANEL_ID):
 			self.currentScreen = IMMIGRATION_MANAGER
 		
@@ -527,13 +573,34 @@ class CvImmigrationManager:
 			self.hideScreen()
 			self.interfaceScreen()
 			return
+		
+		# Handle tab switching
+		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
+			bTabClicked = True
+			if (inputClass.getFunctionName() == self.TAB_NORTH_EUROPE_ID):
+				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_NORTH_EUROPE
+			elif (inputClass.getFunctionName() == self.TAB_SOUTH_EUROPE_ID):
+				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_SOUTH_EUROPE
+			elif (inputClass.getFunctionName() == self.TAB_AFRICA_ID):
+				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_AFRICA
+			elif (inputClass.getFunctionName() == self.TAB_SIBERIA_ID):
+				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_SIBERIA
+			elif (inputClass.getFunctionName() == self.TAB_ASIA_ID):
+				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_ASIA
+			else:
+				bTabClicked = False
+			
+			if bTabClicked:
+				print("Tab name: " + inputClass.getFunctionName() + "Tab id: " + str(data.iCurrentImmigrationManagerTab))
+				self.drawMercenaryScreenContent(self.getScreen())
+				return
 
 		# If someone pressed one of the buttons in the screen then handle the
 		# action
 		if(inputClass.getFunctionName().endswith("Button")):
 			# Split up the function name into the mercenary name and the actual
 			# action that was performed
-			sMercenary, function = inputClass.getFunctionName().split("-")
+			sMercenary, panel, function = inputClass.getFunctionName().split("-")
 			
 			self.screenFunction = function
 			
@@ -541,7 +608,10 @@ class CvImmigrationManager:
 				
 			# If the function was hire, then hire the mercenary
 			if(function == "HireButton"):
-				self.hireMercenary(screen, iMercenary) 
+				self.hireMercenary(screen, iMercenary, data.iCurrentImmigrationManagerTab) 
+
+				# Populate the mercenary information panel
+				self.populateMercenaryInformation(screen, objImmigrationUtils.getImmigrant(iMercenary))
 										
 			# If the function was to show the mercenary information then 
 			# populate the mercenary information panel.
@@ -578,6 +648,8 @@ class CvImmigrationManager:
 		
 		# The border width should not be a hard coded number
 		self.screenWidgetData[BORDER_WIDTH] = 4
+		self.screenWidgetData[MARGIN] = 20
+		self.screenWidgetData[SPACING] = 40
 		
 		self.screenWidgetData[SCREEN_WIDTH] = screen.getXResolution()
 		self.screenWidgetData[SCREEN_HEIGHT] = screen.getYResolution()
@@ -603,20 +675,39 @@ class CvImmigrationManager:
 		self.screenWidgetData[BOTTOM_PANEL_X] = 0
 		self.screenWidgetData[BOTTOM_PANEL_Y] = self.screenWidgetData[SCREEN_HEIGHT] - 55
 
-		self.screenWidgetData[IMMIGRATION_TEXT_PANEL] = u"<font=4>" + localText.getText("TXT_KEY_IMMIGRANT_SCREEN_TITLE", ()).upper() + "</font>"
-		self.screenWidgetData[IMMIGRATION_TEXT_PANEL_X] = 30
-		self.screenWidgetData[IMMIGRATION_TEXT_PANEL_Y] = self.screenWidgetData[SCREEN_HEIGHT] - 42
-
 		self.screenWidgetData[EXIT_TEXT_PANEL] = u"<font=4>" + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + "</font>"
 		self.screenWidgetData[EXIT_TEXT_PANEL_X] = self.screenWidgetData[SCREEN_WIDTH] - 30
 		self.screenWidgetData[EXIT_TEXT_PANEL_Y] = self.screenWidgetData[SCREEN_HEIGHT] - 42
 
-		
+	
+		# Immigration Progress panel information
+		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] / 2
+		self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT])) / 4
+		self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_X] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_Y] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_WIDTH] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_WIDTH] - (self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
+		self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_IMMIGRATION_PROGRESS", ()) + "</font>"
+		self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_PANEL_X] = self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_WIDTH]/2)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_PANEL_Y] = self.screenWidgetData[IMMIGRATION_PROGRESS_TEXT_BACKGROUND_PANEL_Y] + 4
+		self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_WIDTH] = self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*4)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_HEIGHT] = 70
+		self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_X] = self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_X] + (self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_WIDTH]/2) - (self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_WIDTH]/2)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_Y] = self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_Y] + (self.screenWidgetData[IMMIGRATION_PROGRESS_INNER_PANEL_HEIGHT]/2) - (self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_HEIGHT]/2)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X] = self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_X] + (self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_WIDTH]/2)
+		self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y] = self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_Y] + (self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_HEIGHT]/2)
+
 		# Available Colonists panel information
 		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] = 350
-		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_Y] + self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_WIDTH] / 3
+		self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRATION_PROGRESS_PANEL_HEIGHT] * 3
 		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
 		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
 		self.screenWidgetData[AVAILABLE_COLONISTS_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
@@ -630,46 +721,46 @@ class CvImmigrationManager:
 		self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_TEXT_BACKGROUND_PANEL_Y] + 4		
 		
 		
-		# Available Expeditionaries panel information
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] = 350
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*6)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_EXPEDITIONARIES", ()) + "</font>"
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_WIDTH]/2)
-		self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_TEXT_BACKGROUND_PANEL_Y] + 4
+		# Available Mercenaries panel information
+		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_X] + self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y]
+		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH]
+		self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT]
+		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*6)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
+		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_MERCENARIES", ()) + "</font>"
+		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_WIDTH]/2)
+		self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_MERCENARIES_TEXT_BACKGROUND_PANEL_Y] + 4
 		
 		
-		# Available Endowments panel information
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] = self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_EXPEDITIONARIES_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] = 350
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*6)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_ENDOWMENTS", ()) + "</font>"
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_WIDTH]/2)
-		self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_TEXT_BACKGROUND_PANEL_Y] + 4
+		# Earned Immigrants panel information
+		self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_X] = self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_X] + self.screenWidgetData[AVAILABLE_MERCENARIES_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_Y] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_Y]
+		self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_WIDTH]
+		self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_COLONISTS_PANEL_HEIGHT]
+		self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_X] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*4)
+		self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_Y] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*10)
+		self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_WIDTH] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*8)
+		self.screenWidgetData[EARNED_IMMIGRANTS_INNER_PANEL_HEIGHT] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*14)
+		self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*3)
+		self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*6)
+		self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
+		self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_EARNED_IMMIGRANTS", ()) + "</font>"
+		self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_PANEL_X] = self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_WIDTH]/2)
+		self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_PANEL_Y] = self.screenWidgetData[EARNED_IMMIGRANTS_TEXT_BACKGROUND_PANEL_Y] + 4
 		
-		
-		# Mercenary information panel information
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] = self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
+
+		# Immigrant information panel information
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] = self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_X] + self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_X] + self.screenWidgetData[AVAILABLE_ENDOWMENTS_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_X] + self.screenWidgetData[EARNED_IMMIGRANTS_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
 		self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*2) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
 		self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
@@ -681,103 +772,44 @@ class CvImmigrationManager:
 		
 		self.screenWidgetData[IMMIGRANT_ANIMATION_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_X]+20
 		self.screenWidgetData[IMMIGRANT_ANIMATION_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_PANEL_Y]+40
-		self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] = 400
-		self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] = 350
+		self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] / 2
+		self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_HEIGHT] / 2
 		self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_X] = -20
 		self.screenWidgetData[IMMIGRANT_ANIMATION_ROTATION_Z] = 30
 		self.screenWidgetData[IMMIGRANT_ANIMATION_SCALE] = 1.0
-		
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_ANIMATION_Y] + self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*18)
-		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] = 256 + (self.screenWidgetData[BORDER_WIDTH]*9)
-
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*2)
 
 		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_X] = self.screenWidgetData[IMMIGRANT_ANIMATION_X] + self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
 		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_Y] = self.screenWidgetData[IMMIGRANT_ANIMATION_Y]
 		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[IMMIGRANT_ANIMATION_X] + self.screenWidgetData[IMMIGRANT_ANIMATION_WIDTH] + (self.screenWidgetData[BORDER_WIDTH])*6)
 		self.screenWidgetData[IMMIGRANT_INFORMATION_DETAILS_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT]
 
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_ANIMATION_Y] + self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*18)
+		self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] = 64 + (self.screenWidgetData[BORDER_WIDTH]*9)
 
-		# Units contracted out panel information
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_WIDTH] = 450
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_INNER_PANEL_X] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_INNER_PANEL_Y] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_INNER_PANEL_WIDTH] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_INNER_PANEL_HEIGHT] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_WIDTH] - (self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_UNITS_CONTRACTED_OUT", ()) + "</font>"
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_PANEL_X] = self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_WIDTH]/2)
-		self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_PANEL_Y] = self.screenWidgetData[UNITS_CONTRACTED_OUT_TEXT_BACKGROUND_PANEL_Y] + 4		
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*2)
 
-		
-		# Hired mercenaries panel information
-		self.screenWidgetData[AVAILABLE_UNITS_PANEL_X] = self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_UNITS_PANEL_Y] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_Y] + self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[AVAILABLE_UNITS_PANEL_WIDTH] = 450
-		self.screenWidgetData[AVAILABLE_UNITS_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*3) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))/2
-		self.screenWidgetData[AVAILABLE_UNITS_INNER_PANEL_X] = self.screenWidgetData[AVAILABLE_UNITS_PANEL_X] + (4*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_UNITS_INNER_PANEL_Y] = self.screenWidgetData[AVAILABLE_UNITS_PANEL_Y] + (10*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_UNITS_INNER_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_UNITS_PANEL_WIDTH] - (8*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_UNITS_INNER_PANEL_HEIGHT] = self.screenWidgetData[AVAILABLE_UNITS_PANEL_HEIGHT] - (14*self.screenWidgetData[BORDER_WIDTH])
-		self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[AVAILABLE_UNITS_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[AVAILABLE_UNITS_PANEL_Y] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[AVAILABLE_UNITS_PANEL_WIDTH] - (self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[BORDER_WIDTH]*2))
-		self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
-		self.screenWidgetData[AVAILABLE_UNITS_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_AVAILABLE_UNITS", ()) + "</font>"
-		self.screenWidgetData[AVAILABLE_UNITS_TEXT_PANEL_X] = self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_WIDTH]/2)
-		self.screenWidgetData[AVAILABLE_UNITS_TEXT_PANEL_Y] = self.screenWidgetData[AVAILABLE_UNITS_TEXT_BACKGROUND_PANEL_Y] + 4
-		
-				
-		# Unit information panel information
-		self.screenWidgetData[UNIT_INFORMATION_PANEL_X] = self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_X] + self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNIT_INFORMATION_PANEL_Y] = self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNIT_INFORMATION_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_X] + self.screenWidgetData[UNITS_CONTRACTED_OUT_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2))
-		self.screenWidgetData[UNIT_INFORMATION_PANEL_HEIGHT] = (self.screenWidgetData[SCREEN_HEIGHT] - ((self.screenWidgetData[BORDER_WIDTH]*2) + self.screenWidgetData[SCREEN_TITLE_PANEL_HEIGHT] + self.screenWidgetData[BOTTOM_PANEL_HEIGHT]))
-		self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_X] = self.screenWidgetData[UNIT_INFORMATION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_Y] = self.screenWidgetData[UNIT_INFORMATION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_WIDTH] = self.screenWidgetData[UNIT_INFORMATION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*6)
-		self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_HEIGHT] = 30
-		self.screenWidgetData[UNIT_INFORMATION_TEXT_PANEL] = "<font=3b>" + localText.getText("TXT_KEY_UNIT_INFORMATION", ()) + "</font>"
-		self.screenWidgetData[UNIT_INFORMATION_TEXT_PANEL_X] = self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_X] + (self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_WIDTH]/2)
-		self.screenWidgetData[UNIT_INFORMATION_TEXT_PANEL_Y] = self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_Y] + 4
+		self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_X]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y] + self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*18)
+		self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_INFORMATION_PANEL_HEIGHT] - self.screenWidgetData[IMMIGRANT_ANIMATION_HEIGHT] - self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_HEIGHT] - self.screenWidgetData[IMMIGRANT_INFORMATION_TEXT_BACKGROUND_PANEL_HEIGHT] -  (self.screenWidgetData[BORDER_WIDTH]*12)
 
-		self.screenWidgetData[UNIT_ANIMATION_X] = self.screenWidgetData[UNIT_INFORMATION_PANEL_X]+20
-		self.screenWidgetData[UNIT_ANIMATION_Y] = self.screenWidgetData[UNIT_INFORMATION_TEXT_PANEL_Y]+40
-		self.screenWidgetData[UNIT_ANIMATION_WIDTH] = 303
-		self.screenWidgetData[UNIT_ANIMATION_HEIGHT] = 200
-		self.screenWidgetData[UNIT_ANIMATION_ROTATION_X] = -20
-		self.screenWidgetData[UNIT_ANIMATION_ROTATION_Z] = 30
-		self.screenWidgetData[UNIT_ANIMATION_SCALE] = 1.0
-		
-		self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_X] = self.screenWidgetData[UNIT_INFORMATION_TEXT_BACKGROUND_PANEL_X]
-		self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_Y] = self.screenWidgetData[UNIT_ANIMATION_Y] + self.screenWidgetData[UNIT_ANIMATION_HEIGHT] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[UNIT_INFORMATION_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*18)
-		self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_HEIGHT] = 128 + (self.screenWidgetData[BORDER_WIDTH]*9)
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_X] = self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_X] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_Y] = self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH]
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_WIDTH] = self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_WIDTH] - (self.screenWidgetData[BORDER_WIDTH]*2)
+		self.screenWidgetData[IMMIGRANT_INFORMATION_INNER_STRATEGY_PANEL_HEIGHT] = self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*2)
 
-		self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_X] = self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_X] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_Y] = self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_Y] + self.screenWidgetData[BORDER_WIDTH]
-		self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_WIDTH] = self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[UNIT_INFORMATION_INNER_PROMOTION_PANEL_HEIGHT] = self.screenWidgetData[UNIT_INFORMATION_PROMOTION_PANEL_HEIGHT] - (self.screenWidgetData[BORDER_WIDTH]*2)
 
-		self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_X] = self.screenWidgetData[UNIT_ANIMATION_X] + self.screenWidgetData[UNIT_ANIMATION_WIDTH] + (self.screenWidgetData[BORDER_WIDTH]*2)
-		self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_Y] = self.screenWidgetData[UNIT_ANIMATION_Y]
-		self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_WIDTH] = self.screenWidgetData[SCREEN_WIDTH] - (self.screenWidgetData[UNIT_ANIMATION_X] + self.screenWidgetData[UNIT_ANIMATION_WIDTH] + (self.screenWidgetData[BORDER_WIDTH])*6)
-		self.screenWidgetData[UNIT_INFORMATION_DETAILS_PANEL_HEIGHT] = self.screenWidgetData[UNIT_ANIMATION_HEIGHT]
+		print("self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y]: " + str(self.screenWidgetData[IMMIGRANT_INFORMATION_PROMOTION_PANEL_Y]))
+		print("self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_Y]: " + str(self.screenWidgetData[IMMIGRANT_INFORMATION_STRATEGY_PANEL_Y]))
 
 	# Converts a number into its string representation. This is needed since
 	# for whatever reason, numbers did not work very well when using them 
-	# for all of the different panels in the mercenary manager screen. The
+	# for all of the different panels in the immigration manager screen. The
 	# unit ID number 382343 is converted to: CHBCDC.
 	def numberToAlpha(self, iNum):
 		#             1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26
@@ -794,7 +826,7 @@ class CvImmigrationManager:
 	
 	# Converts a number into its string representation. This is needed since
 	# for whatever reason, numbers did not work very well when using them 
-	# for all of the different panels in the mercenary manager screen. The
+	# for all of the different panels in the immigration manager screen. The
 	# string "CHBCDC" is converted to: 382343.
 	def alphaToNumber(self, strAlpha):
 		#             1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26
@@ -826,17 +858,20 @@ def onLoadGame():
 
 @handler("EndPlayerTurn")
 def onEndPlayerTurn(iGameTurn, iPlayer):   
-	# This method will display the mercenary manager screen
+	# This method will display the immigration manager screen
 	# and provide the logic to make the computer players think.
 	pPlayer = gc.getPlayer(iPlayer)
 	
 	# TEMP DEBUG
 	#return
 	
-	if pPlayer != None and gc.getTeam(pPlayer.getTeam()).isHasTech(iOldWorldCulture):
+	if pPlayer != None and objImmigrationUtils.canEarnImmigrants(iPlayer):
 
 		if g_bDebug:
-			CvUtil.pyPrint(pPlayer.getName() + " Gold: " + str(pPlayer.getGold()) + " is human: " + str(pPlayer.isHuman()))     
+			CvUtil.pyPrint(pPlayer.getName() + " Gold: " + str(pPlayer.getGold()) + " is human: " + str(pPlayer.isHuman()))  
+
+		# Process new immigrants
+		objImmigrationUtils.processImmigration(iPlayer)
 
 		# if the player is not human and not independent then run the think method
 		if not pPlayer.isHuman() and civ(iPlayer) < iIndependent:

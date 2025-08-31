@@ -273,3 +273,12 @@ iPeru :		[(51, 40), (39, 46), (50, 34), (56, 38), (58, 41), (57, 39), (40, 41), 
 
 dRespawnArea = CivDict({
 })
+
+
+dHomelandArea = dict({
+    iHomelandNorthEurope : [((58, 71), (58, 121))],
+    iHomelandSouthEurope : [((58, 48), (58, 70))],
+    iHomelandAfrica : [((58, 7), (58, 21)), ((58, 32), (58, 47))],
+    iHomelandSiberia : [((0, 99), (0, 114)), ((0, 116), (0, 121))],
+    iHomelandAsia : [((0, 10), (0, 98))],
+})

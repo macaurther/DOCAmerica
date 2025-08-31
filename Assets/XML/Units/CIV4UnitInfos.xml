@@ -1351,6 +1351,85 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
+			<Class>UNITCLASS_WORKER</Class>
+			<Type>UNIT_TRACKMAN</Type>
+			<Capture>UNITCLASS_WORKER</Capture>
+			<Domain>DOMAIN_LAND</Domain>
+			<DefaultUnitAI>UNITAI_ENGINEER</DefaultUnitAI>
+			<Description>TXT_KEY_UNIT_TRACKMAN</Description>
+			<Civilopedia>TXT_KEY_UNIT_TRACKMAN_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_TRACKMAN_STRATEGY</Strategy>
+			<Advisor>ADVISOR_ECONOMY</Advisor>
+			<UnitAIs>
+				<UnitAI>
+					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_WORKER</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+			</UnitAIs>
+			<Builds>
+				<Build>
+					<BuildType>BUILD_ROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_RAILROAD</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_COTTAGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_FORT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_REMOVE_RAINFOREST</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_REMOVE_FOREST</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_REMOVE_SWAMP</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_REMOVE_PALM_FOREST</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+			</Builds>
+			<iCost>60</iCost>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iMoves>2</iMoves>
+			<iNukeRange>-1</iNukeRange>
+			<iAsset>2</iAsset>
+			<iBaseHurry>50</iBaseHurry>
+			<iWorkRate>250</iWorkRate>
+			<UnitMeshGroups>
+				<iGroupSize>1</iGroupSize>
+				<fMaxSpeed>1.75</fMaxSpeed>
+				<fPadTime>1</fPadTime>
+				<iMeleeWaveSize>1</iMeleeWaveSize>
+				<iRangedWaveSize>0</iRangedWaveSize>
+				<UnitMeshGroup>
+					<iRequired>1</iRequired>
+					<EarlyArtDefineTag>ART_DEF_UNIT_WORKER_ANCIENT_ASIAN</EarlyArtDefineTag>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+		</UnitInfo>
+		<UnitInfo>
 			<Class>UNITCLASS_LABORER</Class>
 			<Type>UNIT_LABORER</Type>
 			<Capture>UNITCLASS_LABORER</Capture>
@@ -1970,14 +2049,14 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_COLONIST</Class>
-			<Type>UNIT_COLONIST</Type>
+			<Type>UNIT_IMMIGRANT</Type>
 			<Capture>UNITCLASS_COLONIST</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_COLONIST</Description>
-			<Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_COLONIST_STRATEGY</Strategy>
-			<Help>TXT_KEY_UNIT_COLONIST_HELP</Help>
+			<Description>TXT_KEY_UNIT_IMMIGRANT</Description>
+			<Civilopedia>TXT_KEY_UNIT_IMMIGRANT_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_IMMIGRANT_STRATEGY</Strategy>
+			<Help>TXT_KEY_UNIT_IMMIGRANT_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<UnitAIs>
 				<UnitAI>
@@ -1999,7 +2078,7 @@
 				<iRangedWaveSize>0</iRangedWaveSize>
 				<UnitMeshGroup>
 					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_COLONIST</EarlyArtDefineTag>
+					<EarlyArtDefineTag>ART_DEF_UNIT_IMMIGRANT</EarlyArtDefineTag>
 				</UnitMeshGroup>
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
@@ -2748,7 +2827,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</NotUnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_TACTICS</PrereqTech>
 			<iCost>35</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -3889,7 +3968,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_TACTICS</PrereqTech>
 			<iCost>70</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4840,7 +4919,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_TACTICS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -5586,7 +5665,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_TACTICS</PrereqTech>
 			<BonusType>BONUS_IRON</BonusType>
 			<iCost>50</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -11902,57 +11981,6 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_MIGRANT_WORKER</Class>
-			<Type>UNIT_MIGRANT_WORKER</Type>
-			<Capture>UNITCLASS_MIGRANT_WORKER</Capture>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ENGINEER</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_MIGRANT_WORKER</Description>
-			<Civilopedia>TXT_KEY_UNIT_MIGRANT_WORKER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_MIGRANT_WORKER_STRATEGY</Strategy>
-			<Advisor>ADVISOR_ECONOMY</Advisor>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ENGINEER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_WORKER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_RAILROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
-			<iCost>60</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iAsset>2</iAsset>
-			<iBaseHurry>50</iBaseHurry>
-			<iWorkRate>100</iWorkRate>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>0</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_WORKER_ANCIENT_ASIAN</EarlyArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_OLD_WORLD_ART</Class>

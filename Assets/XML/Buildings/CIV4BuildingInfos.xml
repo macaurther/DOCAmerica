@@ -545,7 +545,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ARENA</ArtDefineTag>
 			<PrereqTech>TECH_CEREMONY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -703,7 +703,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HERBALIST</ArtDefineTag>
 			<PrereqTech>TECH_HERBALISM</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -756,7 +756,7 @@
 			<Advisor>ADVISOR_SCIENCE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MAYA_KUNA</ArtDefineTag>
 			<PrereqTech>TECH_HERBALISM</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -809,7 +809,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -844,7 +844,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ZAPOTEC_TOMB</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -880,7 +880,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_TZOMPANTLI</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iHurryAngerModifier>-50</iHurryAngerModifier>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -920,7 +920,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_AZTEC_SACRIFICIAL_ALTAR</ArtDefineTag>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -1072,7 +1072,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BATH</ArtDefineTag>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1118,7 +1118,7 @@
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEOTIHUACAN_TEMAZCAL</ArtDefineTag>
 			<PrereqTech>TECH_MEDICINE</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1895,7 +1895,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_STABLE</ArtDefineTag>
 			<ObsoleteTech>TECH_POWER_PROJECTION</ObsoleteTech>
-			<PrereqTech>TECH_OLD_WORLD_TACTICS</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_TACTICS</PrereqTech>
 			<bNeverCapture>1</bNeverCapture>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1989,7 +1989,7 @@
 			<Strategy>TXT_KEY_BUILDING_MONUMENT_STRATEGY</Strategy>
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONUMENT</ArtDefineTag>
-			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_CULTURE</PrereqTech>
 			<bCenterInCity>1</bCenterInCity>
 			<iCost>40</iCost>
 			<iConquestProb>65</iConquestProb>
@@ -2987,7 +2987,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_NORSE_THINGVELLIR</ArtDefineTag>
 			<FreeStartEra>ERA_MODERN</FreeStartEra>
-			<PrereqTech>TECH_OLD_WORLD_CULTURE</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_CULTURE</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -5094,6 +5094,7 @@
 			<Strategy>TXT_KEY_BUILDING_JEWISH_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_JEWISH_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_SOUTH_EUROPE_ACCESS</PrereqTech>
 			<ReligionType>RELIGION_JUDAISM</ReligionType>
 			<PrereqReligion>RELIGION_JUDAISM</PrereqReligion>
 			<iCost>80</iCost>
@@ -5321,6 +5322,7 @@
 			<Strategy>TXT_KEY_BUILDING_ORTHODOX_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ORTHODOX_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_SIBERIA_ACCESS</PrereqTech>
 			<ReligionType>RELIGION_ORTHODOXY</ReligionType>
 			<PrereqReligion>RELIGION_ORTHODOXY</PrereqReligion>
 			<iCost>80</iCost>
@@ -5542,6 +5544,7 @@
 			<Strategy>TXT_KEY_BUILDING_CATHOLIC_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CATHOLIC_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_SOUTH_EUROPE_ACCESS</PrereqTech>
 			<ReligionType>RELIGION_CATHOLICISM</ReligionType>
 			<PrereqReligion>RELIGION_CATHOLICISM</PrereqReligion>
 			<iCost>80</iCost>
@@ -5817,6 +5820,7 @@
 			<Strategy>TXT_KEY_BUILDING_PROTESTANT_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_PROTESTANT_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_NORTH_EUROPE_ACCESS</PrereqTech>
 			<ReligionType>RELIGION_PROTESTANTISM</ReligionType>
 			<PrereqReligion>RELIGION_PROTESTANTISM</PrereqReligion>
 			<iCost>80</iCost>
@@ -6038,6 +6042,7 @@
 			<Strategy>TXT_KEY_BUILDING_ISLAMIC_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_ISLAMIC_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_AFRICA_ACCESS</PrereqTech>
 			<ReligionType>RELIGION_ISLAM</ReligionType>
 			<PrereqReligion>RELIGION_ISLAM</PrereqReligion>
 			<iCost>80</iCost>
@@ -6259,6 +6264,7 @@
 			<Strategy>TXT_KEY_BUILDING_HINDU_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HINDU_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_ASIA_ACCESS</PrereqTech>
 			<ReligionType>RELIGION_HINDUISM</ReligionType>
 			<PrereqReligion>RELIGION_HINDUISM</PrereqReligion>
 			<iCost>80</iCost>
@@ -6480,6 +6486,7 @@
 			<Strategy>TXT_KEY_BUILDING_BUDDHIST_TEMPLE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_RELIGION</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BUDDHIST_TEMPLE</ArtDefineTag>
+			<PrereqTech>TECH_ASIA_ACCESS</PrereqTech>
 			<ReligionType>RELIGION_BUDDHISM</ReligionType>
 			<PrereqReligion>RELIGION_BUDDHISM</PrereqReligion>
 			<iCost>80</iCost>
@@ -8217,7 +8224,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_FLOATING_GARDENS</MovieDefineTag>
 			<MaxStartEra>ERA_REVOLUTIONARY</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8276,7 +8283,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_TEMPLE_OF_KUKULKAN</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CALENDAR</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<CivicOption>CIVICOPTION_EXECUTIVE</CivicOption>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8333,7 +8340,7 @@
 			<MovieDefineTag>ART_DEF_MOVIE_MACHU_PICCHU</MovieDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_LAW</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8385,7 +8392,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_PUEBLO_BONITO</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_MINING</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>3</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8451,7 +8458,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SACSAYHUAMAN</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_CEMENT</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
 			<FreePromotion>PROMOTION_MOUNTAINEER2</FreePromotion>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8508,7 +8515,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_HUEY_TEOCALLI</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_PRIESTHOOD</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_TACTICS</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_TACTICS</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<CivicOption>CIVICOPTION_EXPANSION</CivicOption>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
@@ -8564,7 +8571,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_TLACHIHUALTEPETL</ArtDefineTag>
 			<MaxStartEra>ERA_COLONIAL</MaxStartEra>
 			<PrereqTech>TECH_DIVINATION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8614,7 +8621,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_YACHAYWASI</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_ASTRONOMY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_SCIENTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8663,7 +8670,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GATE_OF_THE_SUN</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8711,7 +8718,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_GREAT_GEOGLYPH</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_MYTHOLOGY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8762,7 +8769,7 @@
 			<Advisor>ADVISOR_CULTURE</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_KALASASAYA</ArtDefineTag>
 			<PrereqTech>TECH_MASONRY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<FreeBuilding>BUILDINGCLASS_PLAZA</FreeBuilding>
 			<CivicOption>CIVICOPTION_ADMINISTRATION</CivicOption>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
@@ -8810,7 +8817,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_PYRAMID_OF_THE_SUN</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_AESTHETICS</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_PROPHET</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8863,7 +8870,7 @@
 			<ArtDefineTag>ART_DEF_BUILDING_SERPENT_MOUND</ArtDefineTag>
 			<MaxStartEra>ERA_EXPLORATION</MaxStartEra>
 			<PrereqTech>TECH_PROPERTY</PrereqTech>
-			<ObsoleteTech>TECH_OLD_WORLD_CULTURE</ObsoleteTech>
+			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<CivicOption>CIVICOPTION_SOCIETY</CivicOption>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>

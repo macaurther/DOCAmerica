@@ -331,14 +331,29 @@ class CvPediaTech(CvPediaScreen.CvPediaScreen):
 		elif (TechInfo.getGridX() == 1 and TechInfo.getGridY() == 7) or (TechInfo.getGridX() == 2 and TechInfo.getGridY() == 7):
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CHEAP_CONTACT").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Community, Civil Liberties, Globalism: Extra population on city founding
-		elif (TechInfo.getGridX() == 12 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 17 and TechInfo.getGridY() == 13) or (TechInfo.getGridX() == 21 and TechInfo.getGridY() == 11):
+		elif (TechInfo.getGridX() == 13 and TechInfo.getGridY() == 9) or (TechInfo.getGridX() == 18 and TechInfo.getGridY() == 13) or (TechInfo.getGridX() == 22 and TechInfo.getGridY() == 11):
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_POPULATION").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Surveying: Forts claim additional territory
-		elif (TechInfo.getGridX() == 15 and TechInfo.getGridY() == 9):
+		elif (TechInfo.getGridX() == 16 and TechInfo.getGridY() == 9):
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_EXTRA_FORT_TERRITORY").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 		# Pioneering: Cities start with worker and defender
-		elif (TechInfo.getGridX() == 16 and TechInfo.getGridY() == 9):
+		elif (TechInfo.getGridX() == 17 and TechInfo.getGridY() == 9):
 			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_CITY_DEFENDER_AND_WORKER").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# North Europe Access: Receive Immigrants from North Europe
+		elif (TechInfo.getGridX() == 3 and TechInfo.getGridY() == 3):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_NORTH_EUROPE").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# South Europe Access: Receive Immigrants from South Europe
+		elif (TechInfo.getGridX() == 3 and TechInfo.getGridY() == 5):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_SOUTH_EUROPE").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Africa Access: Receive Immigrants from Africa
+		elif (TechInfo.getGridX() == 3 and TechInfo.getGridY() == 7):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_AFRICA").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Siberia Access: Receive Immigrants from Siberia
+		elif (TechInfo.getGridX() == 3 and TechInfo.getGridY() == 9):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_SIBERIA").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
+		# Asia Access: Receive Immigrants from Asia
+		elif (TechInfo.getGridX() == 3 and TechInfo.getGridY() == 11):
+			screen.attachImageButton(panel, "", CyArtFileMgr().getInterfaceArtInfo("INTERFACE_TECH_ASIA").getPath(), GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_HELP_FREE_TECH, self.iTech, -1, False)
 
 
 	def placeEnables(self):

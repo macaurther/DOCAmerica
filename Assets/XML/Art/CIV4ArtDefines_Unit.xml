@@ -6424,7 +6424,7 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_COLONIST</Type>
+			<Type>ART_DEF_UNIT_IMMIGRANT</Type>
 			<Button>Art/Interface/Buttons/Units/Colonist.dds</Button>
 			<fScale>0.47</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -6446,7 +6446,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_WORKER_ANCIENT_ASIAN</Type>
-			<Button>Art/Interface/Buttons/Units/Migrant_Worker.dds</Button>
+			<Button>Art/Interface/Buttons/Units/Trackman.dds</Button>
 			<fScale>0.44</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<bActAsLand>0</bActAsLand>

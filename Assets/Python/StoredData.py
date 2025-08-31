@@ -70,7 +70,16 @@ class CivData:
 		self.iNumUnitGoldenAges = 0
 		
 		# MacAurther: Immigration
+		self.numImmigrations = 0
 		self.lUnitCategoriesHired = [0] * iNumImmigrantCategories
+		self.lNumImmigrantsEared = [0] * iNumImmigrationHomelands
+		self.dEarnedImmigrants = {
+			iHomelandNorthEurope: {},
+			iHomelandSouthEurope: {},
+			iHomelandAfrica: {},
+			iHomelandSiberia: {},
+			iHomelandAsia: {},
+		}
 		
 		# MacAurther: Starting Workers
 		self.bFirstCity = True
@@ -307,6 +316,9 @@ class GameData:
 		
 		# Tribe creation
 		self.iTribeGenerationTurn = -1
+
+		# Immigration Manager
+		self.iCurrentImmigrationManagerTab = 0
 		
 	def timedConquest(self, iPlayer, tPlot):
 		self.lTimedConquests.append((iPlayer, tPlot))

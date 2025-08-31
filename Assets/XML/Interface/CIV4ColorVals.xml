@@ -203,6 +203,20 @@
 			<fAlpha>0.60</fAlpha>
 		</ColorVal>
 		<ColorVal>
+			<Type>COLOR_IMMIGRATION_STORED</Type>
+			<fRed>0.98</fRed>
+			<fGreen>0.40</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>1.00</fAlpha>
+		</ColorVal>
+		<ColorVal>
+			<Type>COLOR_IMMIGRATION_RATE</Type>
+			<fRed>0.98</fRed>
+			<fGreen>0.40</fGreen>
+			<fBlue>0.00</fBlue>
+			<fAlpha>0.60</fAlpha>
+		</ColorVal>
+		<ColorVal>
 			<Type>COLOR_NEGATIVE_RATE</Type>
 			<fRed>1.00</fRed>
 			<fGreen>0.00</fGreen>

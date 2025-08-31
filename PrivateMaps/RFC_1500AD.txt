@@ -2996,47 +2996,6 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=40,y=54
-	RouteType=ROUTE_ROAD
-	BeginUnit
-		UnitType=UNIT_CARAVEL
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CARAVEL
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CARAVEL
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MILITIA_PIKEMAN
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_EXPLORER
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CATHOLIC_MISSIONARY
-		UnitOwner=CIVILIZATION_SPAIN
-	EndUnit
-	BeginCity
-		CityOwner=CIVILIZATION_SPAIN
-		CityName=Santo Domingo
-		CityPopulation=1
-		BuildingType=BUILDING_GOVERNORS_MANSION
-		ReligionType=RELIGION_CATHOLICISM
-		BeginCulture
-			Civilization=CIVILIZATION_SPAIN, Culture=6
-		EndCulture
-		YearFounded=1495
-		YearAcquired=1495
-		PreviousOwner=CIVILIZATION_SPAIN
-	EndCity
-EndPlot
-BeginPlot
 	x=40,y=55
 	BeginUnit
 		UnitType=UNIT_WORKER
@@ -3084,6 +3043,47 @@ EndPlot
 BeginPlot
 	x=41,y=37
 	ImprovementType=IMPROVEMENT_TRIBE
+EndPlot
+BeginPlot
+	x=41,y=54
+	RouteType=ROUTE_ROAD
+	BeginUnit
+		UnitType=UNIT_CARAVEL
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CARAVEL
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CARAVEL
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_MILITIA_PIKEMAN
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_EXPLORER
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginUnit
+		UnitType=UNIT_CATHOLIC_MISSIONARY
+		UnitOwner=CIVILIZATION_SPAIN
+	EndUnit
+	BeginCity
+		CityOwner=CIVILIZATION_SPAIN
+		CityName=Santo Domingo
+		CityPopulation=1
+		BuildingType=BUILDING_GOVERNORS_MANSION
+		ReligionType=RELIGION_CATHOLICISM
+		BeginCulture
+			Civilization=CIVILIZATION_SPAIN, Culture=6
+		EndCulture
+		YearFounded=1495
+		YearAcquired=1495
+		PreviousOwner=CIVILIZATION_SPAIN
+	EndCity
 EndPlot
 BeginPlot
 	x=41,y=103

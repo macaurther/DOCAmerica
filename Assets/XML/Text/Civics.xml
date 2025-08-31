@@ -930,19 +930,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR_STRATEGY</Tag>
-		<English>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Migrant Workers</English>
-		<French>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Migrant Workers</French>
-		<German>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Migrant Workers</German>
-		<Italian>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Migrant Workers</Italian>
-		<Spanish>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Migrant Workers</Spanish>
+		<English>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Trackmen</English>
+		<French>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Trackmen</French>
+		<German>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Trackmen</German>
+		<Italian>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Trackmen</Italian>
+		<Spanish>Extra [ICON_FOOD] and [ICON_PRODUCTION] from Citizens; build Railway Stations faster; can hire Trackmen</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_IMMIGRANT_LABOR_HELP</Tag>
-		<English>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</English>
-		<French>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</French>
-		<German>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</German>
-		<Italian>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</Italian>
-		<Spanish>[ICON_BULLET]Can hire Migrant Workers using [ICON_IMMIGRATION]</Spanish>
+		<English>[ICON_BULLET]Can hire Trackmen using [ICON_IMMIGRATION]</English>
+		<French>[ICON_BULLET]Can hire Trackmen using [ICON_IMMIGRATION]</French>
+		<German>[ICON_BULLET]Can hire Trackmen using [ICON_IMMIGRATION]</German>
+		<Italian>[ICON_BULLET]Can hire Trackmen using [ICON_IMMIGRATION]</Italian>
+		<Spanish>[ICON_BULLET]Can hire Trackmen using [ICON_IMMIGRATION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_LABOR_UNIONS</Tag>

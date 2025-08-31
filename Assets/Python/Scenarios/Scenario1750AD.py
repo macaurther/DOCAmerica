@@ -11,25 +11,25 @@ lCivilizations = [
 		iGold=75,
 		iImmigration=300,
 		lCivics=[iGovernors2, iAdmiralty2, iIndenturedServitude2, iFactory2, iHaven2, iOutposts2],
-		techs=techs.column(12),
+		techs=techs.column(13).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
 	),
 	Civilization(
 		iInuit,
 		iGold=50,
 		lCivics=[iDespotism1, iHarmony1, iDiffusion1],
-		techs=techs.column(6),
+		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
 	),
 	Civilization(
 		iHaudenosaunee,
 		iGold=300,
 		lCivics=[iCouncil1, iConfederacy1, iCaptives1, iMerchants1, iAcculturation1, iCooperation1],
-		techs=techs.column(6),
+		techs=techs.column(7).without(*lImmigraitonTechs),
 	),
 	Civilization(
 		iLakota,
 		iGold=100,
 		lCivics=[iChiefdom1, iCustomaryLaw1, iCaptives1, iMerchants1, iHarmony1, iNomads1],
-		techs=techs.column(6),
+		techs=techs.column(7).without(*lImmigraitonTechs),
 	),
 	Civilization(
 		iSpain,
@@ -38,7 +38,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iCatholicism,
 		lCivics=[iViceroyalty2, iRoyalColony2, iEncomienda2, iPlunder2, iJesuits2, iConquest2],
-		techs=techs.column(14),
+		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iPortugal: 2}
 	),
 	Civilization(
@@ -48,7 +48,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iCatholicism,
 		lCivics=[iProprietaries2, iAdmiralty2, iSlavery2, iFactory2, iProfiteering2, iHomesteads2],
-		techs=techs.column(14),
+		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
 	),
 	Civilization(
@@ -58,7 +58,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iProtestantism,
 		lCivics=[iGovernors2, iCommonLaw2, iSlavery2, iMercantilism2, iHaven2, iProvidence2],
-		techs=techs.column(14).including(iRegiments, iBonds, iMeteorology, iSurveying, iPhysics),
+		techs=techs.column(15).including(iRegiments, iBonds, iMeteorology, iSurveying, iPhysics).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iFrance: -4, iPortugal: 2}
 	),
 	Civilization(
@@ -68,7 +68,7 @@ lCivilizations = [
 		iImmigration=300,
 		iStateReligion=iCatholicism,
 		lCivics=[iGovernors2, iCharterColony2, iSlavery2, iFactory2, iHaven2, iOutposts2],
-		techs=techs.column(14).including(iRegiments, iBonds, iMeteorology, iSurveying, iPhysics),
+		techs=techs.column(15).including(iRegiments, iBonds, iMeteorology, iSurveying, iPhysics).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iEngland: -4, iNetherlands: 2}
 	),
 	Civilization(
@@ -78,14 +78,14 @@ lCivilizations = [
 		iImmigration=200,
 		iStateReligion=iProtestantism,
 		lCivics=[iTrustees2, iTradingCompany2, iSlavery2, iMercantilism2, iProfiteering2, iOutposts2],
-		techs=techs.column(14).including(iRegiments, iBonds, iMeteorology),
+		techs=techs.column(15).including(iRegiments, iBonds, iMeteorology).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iFrance: 2, iPortugal: -2}
 	),
 	Civilization(
 		iHawaii,
 		iGold=150,
 		lCivics=[iMonarchy1, iCustomaryLaw1, iCaptives1, iMerchants1, iIsolationism1, iConquest1],
-		techs=techs.column(6),
+		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iRussia,
@@ -93,27 +93,27 @@ lCivilizations = [
 		iImmigration=100,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iTrustees2, iTradingCompany2, iIndenturedServitude2, iFactory2, iProfiteering2, iOutposts2],
-		techs=techs.column(13).without(iLandmarks, iCultivation, iHerbalism)
+		techs=techs.column(14).without(iLandmarks, iCultivation, iHerbalism).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess),
 	),
 	Civilization(
 		iIndependent,
 		iGold=500,
-		techs=techs.column(14)
+		techs=techs.column(15).without(*lImmigraitonTechs)
 	),
 	Civilization(
 		iIndependent2,
 		iGold=500,
-		techs=techs.column(14)
+		techs=techs.column(15).without(*lImmigraitonTechs)
 	),
 	Civilization(
 		iIndependent3,
 		iGold=500,
-		techs=techs.column(14)
+		techs=techs.column(15).without(*lImmigraitonTechs)
 	),
 	Civilization(
 		iNative,
 		iGold=300,
-		techs=techs.column(7)
+		techs=techs.column(8).without(*lImmigraitonTechs)
 	),
 	Civilization(
 		iBarbarian,

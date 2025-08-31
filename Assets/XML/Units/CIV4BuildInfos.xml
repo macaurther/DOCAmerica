@@ -79,7 +79,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -144,7 +144,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -254,7 +254,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -349,7 +349,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -409,7 +409,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -437,7 +437,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -467,7 +467,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -495,7 +495,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -553,7 +553,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -591,7 +591,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>0</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>1</bRemove>
@@ -643,7 +643,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -694,14 +694,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -773,7 +773,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -850,7 +850,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -915,7 +915,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -980,7 +980,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1110,7 +1110,7 @@
 			<FeatureStructs>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1321,7 +1321,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1380,7 +1380,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1432,14 +1432,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1491,7 +1491,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1522,7 +1522,7 @@
 		<BuildInfo>
 			<Type>BUILD_WINDMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WINDMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			<iTime>600</iTime>
 			<ImprovementType>IMPROVEMENT_WINDMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -1550,7 +1550,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1581,7 +1581,7 @@
 		<BuildInfo>
 			<Type>BUILD_WATERMILL_DEFORESTATION</Type>
 			<Description>TXT_KEY_BUILD_WATERMILL</Description>
-			<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+			<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			<iTime>800</iTime>
 			<ImprovementType>IMPROVEMENT_WATERMILL</ImprovementType>
 			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
@@ -1609,7 +1609,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1654,14 +1654,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1706,14 +1706,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1765,7 +1765,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1817,7 +1817,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1873,7 +1873,7 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>
@@ -1918,14 +1918,14 @@
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_RAINFOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>600</iTime>
 					<iProduction>0</iProduction>
 					<bRemove>0</bRemove>
 				</FeatureStruct>
 				<FeatureStruct>
 					<FeatureType>FEATURE_FOREST</FeatureType>
-					<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+					<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 					<iTime>400</iTime>
 					<iProduction>30</iProduction>
 					<bRemove>1</bRemove>

@@ -2302,15 +2302,15 @@
 		<Spanish>The [COLOR_UNIT_TEXT]Macana[COLOR_REVERT], the Purepechan replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger but does not have a bonus versus Melee.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_COLONIST</Tag>
-		<English>Colonist</English>
-		<French>Colonist</French>
-		<German>Colonist</German>
-		<Italian>Colonist</Italian>
-		<Spanish>Colonist</Spanish>
+		<Tag>TXT_KEY_UNIT_IMMIGRANT</Tag>
+		<English>Immigrant</English>
+		<French>Immigrant</French>
+		<German>Immigrant</German>
+		<Italian>Immigrant</Italian>
+		<Spanish>Immigrant</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_COLONIST_HELP</Tag>
+		<Tag>TXT_KEY_UNIT_IMMIGRANT_HELP</Tag>
 		<English>[ICON_BULLET]Can settle in a city to increase its population</English>
 		<French>[ICON_BULLET]Can settle in a city to increase its population</French>
 		<German>[ICON_BULLET]Can settle in a city to increase its population</German>
@@ -2318,7 +2318,7 @@
 		<Spanish>[ICON_BULLET]Can settle in a city to increase its population</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_COLONIST_STRATEGY</Tag>
+		<Tag>TXT_KEY_UNIT_IMMIGRANT_STRATEGY</Tag>
 		<English>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</English>
 		<French>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</French>
 		<German>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</German>
@@ -2326,20 +2326,20 @@
 		<Spanish>Hire Colonists with [ICON_IMMIGRATION] and bring them to one of your cities to add 1 Population to that city.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_MIGRANT_WORKER</Tag>
-		<English>Migrant Worker</English>
-		<French>Migrant Worker</French>
-		<German>Migrant Worker</German>
-		<Italian>Migrant Worker</Italian>
-		<Spanish>Migrant Worker</Spanish>
+		<Tag>TXT_KEY_UNIT_TRACKMAN</Tag>
+		<English>Trackman</English>
+		<French>Trackman</French>
+		<German>Trackman</German>
+		<Italian>Trackman</Italian>
+		<Spanish>Trackman</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_MIGRANT_WORKER_STRATEGY</Tag>
-		<English>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</English>
-		<French>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</French>
-		<German>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</German>
-		<Italian>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Italian>
-		<Spanish>Hire Migrant Workers with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Spanish>
+		<Tag>TXT_KEY_UNIT_TRACKMAN_STRATEGY</Tag>
+		<English>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</English>
+		<French>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</French>
+		<German>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</German>
+		<Italian>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Italian>
+		<Spanish>Hire Trackmen with [ICON_IMMIGRATION] and bring them to one of your cities to hurry production in that city or build roads and railroads.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LAKOTA_SWIFT_ARROW</Tag>

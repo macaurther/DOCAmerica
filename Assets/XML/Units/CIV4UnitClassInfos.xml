@@ -144,11 +144,11 @@
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_COLONIST</Type>
-			<Description>TXT_KEY_UNIT_COLONIST</Description>
+			<Description>TXT_KEY_UNIT_IMMIGRANT</Description>
 			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_COLONIST</DefaultUnit>
+			<DefaultUnit>UNIT_IMMIGRANT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_SCOUT</Type>
@@ -773,14 +773,6 @@
 			<iMaxTeamInstances>-1</iMaxTeamInstances>
 			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
 			<DefaultUnit>UNIT_NATIVE_SLAVE_NATIVE</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_MIGRANT_WORKER</Type>
-			<Description>TXT_KEY_UNIT_MIGRANT_WORKER</Description>
-			<iMaxGlobalInstances>-1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<DefaultUnit>UNIT_MIGRANT_WORKER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_OLD_WORLD_ART</Type>

@@ -101,6 +101,6 @@ PEDIA_NUM_PAGES = 33
 	PEDIA_BTS_CONCEPTS,
 ) = range(PEDIA_PAGES_START, PEDIA_PAGES_START + PEDIA_NUM_PAGES)
 
-# < Mercenaries Mod Start >
+# < Immigration Manager Start >
 IMMIGRATION_MANAGER = 4200
-# < Mercenaries Mod End   >
+# < Immigration Manager End   >

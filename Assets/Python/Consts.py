@@ -422,16 +422,17 @@ iNumCorporations = 8
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 147
+iNumTechs = 152
 #				2				3				4				5				6				7
 (iHunting,		iLandmarks,		iIrrigation,	iLinguistics,	iCultivation,	iSpiritualism,	iShallowFishing,
 iTrapping,      iPathfinding,   iEarthworks,    iLocalization,  iCompanionPlanting,iHerbalism,  iFishing,
+iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess,
 iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iSailing,
 iSmelting,      iMasonry,       iProperty,      iArithmetics,   iCeremony,      iDivination,    iSeafaring,
 iAlloys,        iConstruction,  iMathematics,   iAstronomy,     iWriting,       iCalendar,      iTrade,
 iGeneralship,   iCement,        iAesthetics,    iScholarship,   iCodices,       iPriesthood,    iNavigation,
 iNobility,      iSubjugation,   iArtisanry,     iMedicine,      iLaw,           iEthics,        iPhilosophy,
-iOldWorldTactics,iOldWorldScience,iOldWorldCulture,
+iMedievalTactics,iMedievalScience,iMedievalCulture,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iExchange, 		iReductions,	iEvangelism,
 iFirearms, 		iTriangularTrade,iExploration, 	iOptics, 		iTreaties, 		iOfficials, 	iIndoctrination,
 iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iEducation,		iCharter, 		iIndentures,
@@ -451,22 +452,25 @@ iMultilateralism) = range(iNumTechs)
 # Techs that Natives start the game with, but Europeans have to trade for
 lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing,
                 iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism, iFishing]
+# Techs that allow immigration in certain regions
+lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess]
 
 # initialise unit variables to unit indices from XML
 
 iNumUnits = 157
-# Land Units (100)
+# Land Units (101)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
-iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			iInquisitor,	
-iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iColonist,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,iRanger,		
-iFactor,		iParatrooper,	iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		iMilitia6,		
-iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			iJaguar,		iMacana,		iArquebusier,	iArmedSlave,	iMusketman,		
-iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iSuchucChiqui,	iLightningWarrior,
-iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			iGuecha,		iCrossbowman,	
-iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		iCacos,			iAlbionLegion,	
-iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,iRural,		
-iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iLightCannon,	iRifledCannon,	iFieldGun,		iArtillery,		iAAGun,		
+iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
+iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,
+iRanger,		iFactor,		iParatrooper,	iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		
+iMilitia6,		iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			iAztecJaguar,	iMacana,		iArquebusier,	iArmedSlave,	
+iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iSuchucChiqui,	
+iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			iGuecha,		
+iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		iCacos,			
+iAlbionLegion,	iMarine,		iHorseArcher,	iSwiftArrow,	iCuirassier,	iConquistador,	iDragoon,		iLlanero,		iCavalry,		iGrenadierCavalry,
+iRural,			iLightTank,		iTank,			iBombard,		iCannon,		iHeavyCannon,	iLightCannon,	iRifledCannon,	iFieldGun,		iArtillery,		
+iAAGun,		
 
 # Naval Units (27)
 # 0				1				2				3				4				5				6				7				8				9
@@ -480,9 +484,9 @@ iBiplane,		iFighter,		iBomber,		iNuclearBomber,
 # 0				1				2				3				4				5				6				7				8				9
 iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
 iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
-# Other Units (9)
+# Other Units (8)
 # 0				1				2				3				4				5				6				7				8				9
-iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iMigrantWorker,	iOldWorldArt,	iOldWorldAssets,iOldWorldInnovations) = range(iNumUnits)
+iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iOldWorldArt,	iOldWorldAssets,iOldWorldInnovations) = range(iNumUnits)
 
 lAnimalUnits = [iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote]
 
@@ -710,10 +714,12 @@ iNumRoutes = 3
 
 #feature & terrain
 
-iNumFeatures = 14
+iNumFeatures = 19
 # 0				1				2				3				4				5				6				7				8				9
 (iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
-iFallout, 		iTaiga, 		iPalmForest,	iCanyon) = range(iNumFeatures)
+iFallout, 		iTaiga, 		iPalmForest,	iCanyon,		iTradewindNorthEurope,iTradewindSouthEurope,iTradewindAfrica,iTradewindSiberia,iTradewindAsia) = range(iNumFeatures)
+
+lHomelandTradewinds = [iTradewindNorthEurope, iTradewindSouthEurope, iTradewindAfrica, iTradewindSiberia, iTradewindAsia]
 
 iNumTerrains = 21
 # 0				1				2				3				4				5				6				7				8				9
@@ -777,7 +783,7 @@ event_cancel = "INTERFACE_BUTTONS_CANCEL"
 # Immigration
 iNumImmigrantCategories = 28
 # 0				1				2				3				4				5				6				7				8				9
-(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iSlavesCat,		iColonistsCat,	iMigrantWorkerCat,iExplorersCat,iMilitiaCat,	iMainlineCat,	
+(iSettlersCat,	iWorkersCat,	iMissionariesCat,iTransportsCat,iSlavesCat,		iColonistsCat,	iTrackmanCat,iExplorersCat,iMilitiaCat,	iMainlineCat,	
 iEliteCat,		iCollateralCat,	iSkirmishCat,	iCavCat,		iSiegeCat,		iMainlineShipCat,iSkirmishShipCat,iCapitalShipCat,iEndowCatArt,	iEndowCatAssets,
 iEndowCatInno,	iGPCatProphet,	iGPCatArtist,	iGPCatScientist,iGPCatMerchant,	iGPCatEngineer,	iGPCatStatesman,iGPCatGeneral) = range(iNumImmigrantCategories)
 
@@ -786,8 +792,8 @@ lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
 lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship, iTransport]
 lAfricanSlaves = [iAfricanSlave2, iAfricanSlave3]
-lColonists = [iColonist]
-lMigrantWorkers = [iMigrantWorker]
+lColonists = [iImmigrant]
+lMigrantWorkers = [iTrackman]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
 lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
@@ -799,9 +805,6 @@ lSiegeMercs = [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery]
 lMainlineShips = [iSloop, iFrigate, iIronclad, iDestroyer]
 lSkirmishShips = [iPrivateer, iSubmarine] # Note: Can't hire Monitors because they can't go in ocean
 lCapitalShips = [iBarque, iShipOfTheLine, iManOfWar, iCruiser, iBattleship, iCarrier]
-lEndowmentsArt = [iOldWorldArt]
-lEndowmentsAssets = [iOldWorldAssets]
-lEndowmentsInno = [iOldWorldInnovations]
 lGPProphet = [iGreatProphet]
 lGPArtist = [iGreatArtist]
 lGPScientist = [iGreatScientist]
@@ -813,22 +816,16 @@ lGPGeneral = [iGreatGeneral]
 lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for Immigration
 lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 
-lEndowmentsBase = lEndowmentsArt + lEndowmentsAssets + lEndowmentsInno
 lGreatPeople = lGPProphet + lGPArtist + lGPScientist + lGPMerchant + lGPEngineer + lGPStatesman + lGPGeneral
-lEndowments = lEndowmentsBase + lGreatPeople
 
 lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lAfricanSlaves, lColonists, lMigrantWorkers]
 
-lPossibleExpeditionariesLand = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lCavalryMercs, lSiegeMercs]
-lPossibleExpeditionariesSea = [lMainlineShips, lSkirmishShips, lCapitalShips]
-lPossibleExpeditionaries = lPossibleExpeditionariesLand + lPossibleExpeditionariesSea
+lPossibleMercenariesLand = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lCavalryMercs, lSiegeMercs]
+lPossibleMercenariesSea = [lMainlineShips, lSkirmishShips, lCapitalShips]
+lPossibleMercenaries = lPossibleMercenariesLand + lPossibleMercenariesSea
 
-lPossibleEndowmentsBase = [lEndowmentsArt, lEndowmentsAssets, lEndowmentsInno]
-lPossibleEndowmentsGP = [lGPProphet, lGPArtist, lGPScientist, lGPMerchant, lGPEngineer, lGPStatesman, lGPGeneral]
-lPossibleEndowments = lPossibleEndowmentsBase + lPossibleEndowmentsGP
-
-lPossibleImmigrants = lPossibleColonists + lPossibleExpeditionaries + lPossibleEndowments
-lNoTrainingNeeded = lAfricanSlaves + lColonists + lMigrantWorkers + lEndowments
+lPossibleImmigrants = lPossibleColonists + lPossibleMercenaries
+lNoTrainingNeeded = lAfricanSlaves + lColonists + lMigrantWorkers
 
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({
@@ -864,4 +861,136 @@ iPeru : 5,
 iBrazil : 20,
 iVenezuela : 5,
 iCanada : 15,
+}, 0)
+
+# Immigration Homelands
+iNumImmigrationHomelands = 5
+(iHomelandNorthEurope, iHomelandSouthEurope, iHomelandAfrica, iHomelandSiberia, iHomelandAsia) = range(iNumImmigrationHomelands)
+lHomelandsEurope = [iHomelandNorthEurope, iHomelandSouthEurope]
+lHomelandsEuropePlus = lHomelandsEurope + [iHomelandSiberia]
+lHomelands = lHomelandsEuropePlus + [iHomelandAfrica, iHomelandAsia]
+
+iEndDate = 2050
+# Immigrant Schedule
+dImmigrantSchedule = {
+iSettler : 				[(1500, iEndDate), 	lHomelands],
+iDogSled : 				[(-5000, 1500), 	[iHomelandSiberia]],
+iPioneer : 				[(1850, iEndDate), 	lHomelands],
+iWorker : 				[(1500, iEndDate),  [iHomelandNorthEurope, iHomelandSouthEurope, iHomelandAfrica]],
+iPromyshlenniki : 		[(1700, iEndDate), 	[iHomelandSiberia]],
+iLaborer : 				[(1850, iEndDate), 	lHomelands],
+iTrackman : 			[(1800, iEndDate), 	[iHomelandAsia]],
+iOrthodoxMiss : 		[(1500, iEndDate), 	[iHomelandSiberia]],
+iCatholicMiss : 		[(1500, iEndDate), 	[iHomelandSouthEurope]],
+iProtestantMiss : 		[(1500, iEndDate), 	[iHomelandNorthEurope]],
+}
+
+# Mercenary Schedule
+dMercenarySchedule = {
+iExplorer : 			[(1500, 1800), 		lHomelands],
+iBandeirante : 			[(1530, 1800), 		[iHomelandSouthEurope]],
+iCoureurDesBois : 		[(1620, 1800), 		[iHomelandSouthEurope]],
+iRanger : 				[(1800, 1930), 		lHomelands],
+iFactor : 				[(1800, 1930), 		[iHomelandNorthEurope]],
+iParatrooper : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
+iMilitia2 : 			[(1500, 1550), 		lHomelandsEurope],
+iMilitia3 : 			[(1550, 1700), 		lHomelandsEurope],
+iMilitia4 : 			[(1700, 1800), 		lHomelandsEuropePlus],
+iMilitia5 : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iMilitia6 : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iKoa : 					[(0, 	1800), 		[iHomelandAsia]],
+iArquebusier : 			[(1500, 1550), 		lHomelandsEurope],
+iMusketman : 			[(1550, 1700), 		lHomelandsEurope],
+iCompagnies : 			[(1550, 1700), 		[iHomelandSouthEurope]],
+iFusilier : 			[(1700, 1800), 		lHomelandsEuropePlus],
+iRifleman : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iInfantry : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iPikeman : 				[(1500, 1550), 		lHomelandsEurope],
+iPikeAndShot : 			[(1550, 1700), 		lHomelandsEurope],
+iLineInfantry : 		[(1700, 1800), 		lHomelandsEuropePlus],
+iRedcoat : 				[(1700, 1800), 		[iHomelandNorthEurope]],
+iAntiTank : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
+iCrossbowman : 			[(1500, 1550), 		lHomelandsEurope],
+iGatlingGun : 			[(1850, 1900), 		lHomelandsEuropePlus],
+iMachineGun : 			[(1900, 1950), 		lHomelandsEuropePlus],
+iSkirmisher : 			[(1550, 1700), 		lHomelandsEurope],
+iGrenadier : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iAlbionLegion : 		[(1800, 1900), 		[iHomelandNorthEurope]],
+iMarine : 				[(1930, iEndDate), 	lHomelandsEuropePlus],
+iCuirassier : 			[(1500, 1650), 		lHomelandsEurope],
+iConquistador : 		[(1500, 1650), 		[iHomelandSouthEurope]],
+iDragoon : 				[(1650, 1800), 		lHomelandsEuropePlus],
+iCavalry : 				[(1800, 1920), 		lHomelandsEuropePlus],
+iLightTank : 			[(1920, iEndDate), 	lHomelandsEuropePlus],
+iTank : 				[(1940, iEndDate), 	lHomelandsEuropePlus],
+iBombard : 				[(1500, 1600), 		lHomelandsEurope],
+iCannon : 				[(1600, 1700), 		lHomelandsEurope],
+iHeavyCannon : 			[(1700, 1850), 		lHomelandsEuropePlus],
+iLightCannon : 			[(1700, 1850), 		lHomelandsEuropePlus],
+iRifledCannon : 		[(1850, 1900), 		lHomelandsEuropePlus],
+iFieldGun : 			[(1850, 1900), 		lHomelandsEuropePlus],
+iArtillery : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iAAGun : 				[(1930, iEndDate), 	lHomelandsEuropePlus],
+iLongship : 			[(700,  1450), 		[iHomelandNorthEurope]],
+iWaaKaulua : 			[(0, 	1800), 		[iHomelandAsia]],
+iKayak : 				[(-5000, 1500), 	[iHomelandSiberia]],
+iCaravel : 				[(1500, 1700), 		lHomelandsEurope],
+iCarrack : 				[(1500, 1700), 		[iHomelandSouthEurope]],
+iIndiaman : 			[(1600, 1700), 		lHomelandsEurope],
+iGalleon : 				[(1550, 1700), 		[iHomelandSouthEurope]],
+iFluyt : 				[(1600, 1700), 		[iHomelandNorthEurope]],		
+iBrigantine : 			[(1700, 1800), 		lHomelandsEuropePlus],
+iSteamship : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iTransport : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iCarrier : 				[(1935, iEndDate), 	lHomelandsEuropePlus],
+iFrigate : 				[(1700, 1800), 		lHomelandsEuropePlus],
+iSloop : 				[(1600, 1700), 		lHomelandsEurope],
+iIronclad : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iDestroyer : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iPrivateer : 			[(1550, 1700), 		lHomelandsEurope],
+iMonitor : 				[(1850, 1900), 		lHomelandsEuropePlus],
+iSubmarine : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iBarque : 				[(1600, 1750), 		lHomelandsEurope],
+iShipOfTheLine : 		[(1750, 1900), 		lHomelandsEuropePlus],
+iManOfWar : 			[(1750, 1875), 		[iHomelandNorthEurope]],
+iCruiser : 				[(1875, 1930), 		lHomelandsEuropePlus],
+iBattleship : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
+}
+
+
+
+# Homelands for each civ
+dHomeland = CivDict({
+iMaya : None,
+iZapotec : None,
+iTeotihuacan : None,
+iTiwanaku : None,
+iWari : None,
+iMississippi : None,
+iPuebloan : None,
+iMuisca : None,
+iNorse : iHomelandNorthEurope,
+iChimu : None,
+iInuit : None,
+iInca : None,
+iPurepecha : None,
+iAztecs : None,
+iHaudenosaunee : None,
+iLakota : None,
+iSpain : iHomelandSouthEurope,
+iPortugal : iHomelandSouthEurope,
+iEngland : iHomelandNorthEurope,
+iFrance : iHomelandSouthEurope,
+iNetherlands : iHomelandNorthEurope,
+iHawaii : iHomelandAsia,
+iRussia: iHomelandSiberia,
+iAmerica : iHomelandNorthEurope,
+iHaiti : iHomelandAfrica,
+iArgentina : iHomelandSouthEurope,
+iMexico : iHomelandSouthEurope,
+iColombia : iHomelandSouthEurope,
+iPeru : iHomelandSouthEurope,
+iBrazil : iHomelandSouthEurope,
+iVenezuela : iHomelandSouthEurope,
+iCanada : iHomelandNorthEurope,
 }, 0)

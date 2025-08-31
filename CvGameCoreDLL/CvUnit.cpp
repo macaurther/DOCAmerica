@@ -14831,7 +14831,7 @@ bool CvUnit::rebuild()
 
 bool CvUnit::canPopulate(const CvPlot* pPlot) const
 {
-	if (getUnitType() != UNIT_COLONIST)
+	if (getUnitType() != UNIT_IMMIGRANT)
 	{
 		return false;
 	}

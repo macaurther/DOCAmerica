@@ -374,7 +374,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -1704,7 +1704,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -2560,7 +2560,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -2726,7 +2726,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -2997,7 +2997,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3080,7 +3080,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3163,7 +3163,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<ObsoleteTech>TECH_OLD_WORLD_SCIENCE</ObsoleteTech>
+				<ObsoleteTech>TECH_MEDIEVAL_SCIENCE</ObsoleteTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3246,7 +3246,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3359,7 +3359,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3442,7 +3442,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -3529,7 +3529,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -4643,7 +4643,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -6092,7 +6092,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -6283,7 +6283,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs/>
@@ -6781,7 +6781,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -7568,7 +7568,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -8904,7 +8904,7 @@
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</OrPreReqs>
 			<AndPreReqs/>
 			<ObsoleteTechs>
@@ -11651,7 +11651,7 @@
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs/>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</AndPreReqs>
 			<ObsoleteTechs>
 				<ObsoleteTech>TECH_SCIENTIFIC_METHOD</ObsoleteTech>
@@ -11992,7 +11992,7 @@
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<OrPreReqs/>
 			<AndPreReqs>
-				<PrereqTech>TECH_OLD_WORLD_SCIENCE</PrereqTech>
+				<PrereqTech>TECH_MEDIEVAL_SCIENCE</PrereqTech>
 			</AndPreReqs>
 			<ObsoleteTechs/>
 			<bRecurring>0</bRecurring>

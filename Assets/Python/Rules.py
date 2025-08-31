@@ -154,7 +154,7 @@ def captureSlaves(winningUnit, losingUnit):
 	iSlave = getNativeSlaveType(winningUnit.getOwner())
 	
 	# Jaguar Ability
-	if winningUnit.getUnitType() == iJaguar:
+	if winningUnit.getUnitType() == iAztecJaguar:
 		captureUnit(losingUnit, winningUnit, iNativeSlaveMeso, 100)
 		return
 	

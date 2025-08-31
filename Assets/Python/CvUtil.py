@@ -110,6 +110,7 @@ def getNewScreenID():
 # BUG - Core - end
 
 # Popup defines (TODO: Expose these from C++)
+FONT_CENTER_VERTICALLY=1<<3		# MacAurther
 FONT_CENTER_JUSTIFY=1<<2
 FONT_RIGHT_JUSTIFY=1<<1
 FONT_LEFT_JUSTIFY=1<<0
