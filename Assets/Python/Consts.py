@@ -720,6 +720,7 @@ iNumFeatures = 19
 iFallout, 		iTaiga, 		iPalmForest,	iCanyon,		iTradewindNorthEurope,iTradewindSouthEurope,iTradewindAfrica,iTradewindSiberia,iTradewindAsia) = range(iNumFeatures)
 
 lHomelandTradewinds = [iTradewindNorthEurope, iTradewindSouthEurope, iTradewindAfrica, iTradewindSiberia, iTradewindAsia]
+iTradeWindsStart = iTradewindNorthEurope
 
 iNumTerrains = 21
 # 0				1				2				3				4				5				6				7				8				9

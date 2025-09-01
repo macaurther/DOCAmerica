@@ -3088,6 +3088,13 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 		pPlot->updateFortClaims(getOwner());
 	}
 
+	// MacAurther: End turn if moving into Tradewind
+	if (pPlot->isTradewinds())
+	{
+		finishMoves();
+	}
+
+
 /*************************************************************************************************/
 /**	SPEEDTWEAK (Block Python) Sephi                                               	            **/
 /**	If you want to allow modmodders to enable this Callback, see CvCity::cancreate for example  **/

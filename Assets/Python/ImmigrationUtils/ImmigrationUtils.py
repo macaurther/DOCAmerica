@@ -91,7 +91,7 @@ class ImmigrationUtils:
 			for iHomeland in lHomelands:
 				if pPlayer.getImmigration() >= self.getImmigrationThreshold(iCiv, iHomeland):
 					# Grant Immigrant
-					self.changeImmigrants(iCiv, iHomeland, iImmigrant, 1)
+					self.changeImmigrants(iPlayer, iHomeland, iImmigrant, 1)
 					bImmigrantGranted = True
 					# Subtract cost
 					pPlayer.changeImmigration(-1*self.getImmigrationThreshold(iCiv, iHomeland))
@@ -117,15 +117,22 @@ class ImmigrationUtils:
 						strMessage = "A new Immigrant is waiting on the docks of " + strHomeland + "!"
 						CyInterface().addMessage(iPlayer, False, 20, strMessage, "AS2D_IMMIGRANTEARNED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, "", gc.getInfoTypeForString("COLOR_YELLOW"), -1, -1, False, False) 
 
-	def changeImmigrants(self, iCiv, iHomeland, iUnit, iChange):
+	def changeImmigrants(self, iPlayer, iHomeland, iUnit, iChange):
+		iCiv = civ(iPlayer)
 		if str(iUnit) in data.civs[iCiv].dEarnedImmigrants[iHomeland].keys():
+			# If immigrant group already exists, do nothing
 			pass
 		elif iChange > 0:
+			# If immigrant group doesn't exist and will be added to, create group and decrement change (because creating starts it at 1)
 			data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)] = self.getImmigrantGroup(iUnit)
 			iChange -= 1
 		else:
+			# If the immigrant group doesn't exist and the change is negative, return
 			return
+		
+		# If the change made the change count function return false, delete entry
 		if not data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)].changeCount(iChange):
+			print("Deleting earned immigrant entry for: " + data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)].getImmigrant().sUnitName)
 			del data.civs[iCiv].dEarnedImmigrants[iHomeland][str(iUnit)]
 	
 	def getNumImmigrants(self, iCiv, iHomeland, iUnit=iImmigrant):
@@ -184,7 +191,6 @@ class ImmigrationUtils:
 		if(not pPlayer.isAlive()):
 			return False
 			
-		# Get the immigrant from the global immigrant pool
 		immigrant = self.getImmigrant(iUnit)
 		
 		# Return immediately if the immigrant was not retrieved from the global
@@ -200,33 +206,45 @@ class ImmigrationUtils:
 		# Get the starting location for the immigrant
 		pPlot = None
 		if immigrant.isShip():
-			pPlot = self.getMercenaryStartingLocation(iPlayer, immigrant, iHomeland)
+			pPlot = immigrant.getMercenaryStartingLocation(iPlayer, iHomeland)
 		
 			# Return immediately if no suitable plot to spawn
 			if pPlot == None:
 				return False
         
-		# Subtract cost
 		# Subtract cost to hire from player current cash
 		(iImmigrantCost, iGoldCost) = immigrant.getHireCost(iPlayer)
-		self.changeImmigrants(civ(iPlayer), iHomeland, iImmigrant, -iImmigrantCost)
+		self.changeImmigrants(iPlayer, iHomeland, iImmigrant, -iImmigrantCost)
 		pPlayer.setGold(pPlayer.getGold() - iGoldCost)
-
-		if not immigrant.hire(iPlayer, pPlot):
+		
+		# Place immediately if ship, otherwise add to earned Immigrants
+		if immigrant.isShip():
+			self.placeMercenary(iUnit, iPlayer, iHomeland)
+		else:
 			# If not placed, add to earned immigrants list
-			self.changeImmigrants(civ(iPlayer), iHomeland, iUnit, 1)
+			self.changeImmigrants(iPlayer, iHomeland, iUnit, 1)
 
 
 		print(pPlayer.getName() + " | Current Gold: " + str(pPlayer.getGold()) + " | Current Immigration: " + str(pPlayer.getImmigration()) + " | Hired " + immigrant.getName() + " for " + str(iImmigrationCost) + " immigration and " + str(iGoldCost) + " gold.")
 		
 		return True
-	
-	# Returns the starting city for a player's mercenary
-	def getMercenaryStartingLocation(self, iPlayer, mercenary, iHomeland):
-	
-		pPlot = mercenary.getMercenaryStartingLocation(iPlayer, iHomeland)
+
+	def placeMercenary(self, iUnit, iPlayer, iHomeland):
+		# Get the player
+		pPlayer = gc.getPlayer(iPlayer)
 		
-		return pPlot
+		# Return immediately if the player specified in iPlayer is not alive
+		if(not pPlayer.isAlive()):
+			return False
+		
+		immigrant = self.getImmigrant(iUnit)
+
+		# Reduce earned immigrants by 1 if not a ship
+		if not immigrant.isShip():
+			self.changeImmigrants(iPlayer, iHomeland, iUnit, -1)
+
+		immigrant.place(iPlayer, iHomeland)
+
 	
 	# Returns the most desired mercenary that is less expensive than the iGold/iImmigration values passed in.		
 	def getBestAvailableImmigrant(self, iImmigration, iGold, iPlayer, lCategoryDesire):

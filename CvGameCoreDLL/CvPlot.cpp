@@ -12206,3 +12206,13 @@ void CvPlot::updateFortClaims(PlayerTypes ePlayer)
 		addFortClaims(ePlayer);
 	}
 }
+
+
+bool CvPlot::isTradewinds()
+{
+	return (getFeatureType() == FEATURE_TRADEWINDS_NORTH_EUROPE ||
+		getFeatureType() == FEATURE_TRADEWINDS_SOUTH_EUROPE ||
+		getFeatureType() == FEATURE_TRADEWINDS_AFRICA ||
+		getFeatureType() == FEATURE_TRADEWINDS_SIBERIA ||
+		getFeatureType() == FEATURE_TRADEWINDS_ASIA);
+}

@@ -596,6 +596,8 @@ public:
 	void removeFortClaims();
 	DllExport void updateFortClaims(PlayerTypes ePlayer);			// Exposed to Python
 
+	bool isTradewinds();
+
 	// Leoreth: graphics paging
 	static void EvictGraphicsIfNecessary();
 	void pageGraphicsOut();

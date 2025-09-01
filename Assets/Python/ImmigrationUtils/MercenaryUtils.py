@@ -58,34 +58,16 @@ class Mercenary:
 		
 		self.iLevel = len(self.lPromotionList)
 		self.iExperienceLevel = iExperienceLevel
-		self.iNextExperienceLevel = iNextExperienceLevel
-	
-	# Returns True if unit was place, False if not
-	def hire(self, iPlayer, pPlot):
-		player = gc.getPlayer(iPlayer)
-		iCiv = civ(iPlayer)
-		
-		# return nothing if the iPlayer is an invalid value
-		if(player == None):
-			return
-			
-		# return nothing if the player is dead
-		if(player.isAlive() == False):
-			return
-		
-		# Increase cost of future Immigrants from this category
-		data.civs[iCiv].lUnitCategoriesHired[self.getUnitCategory()] += 1
+		self.iNextExperienceLevel = iNextExperienceLevel		
 
-		if pPlot is not None:	# Place unit if it can be placed (i.e. ships)
-			self.place(iPlayer, pPlot)
-			return True
-		else:
-			return False		
-		
-
-	def place(self, iPlayer, pPlot):
+	def place(self, iPlayer, iHomeland):
 		player = gc.getPlayer(iPlayer)
 		civics = Civics.player(iPlayer)
+
+		pPlot = self.getMercenaryStartingLocation(iPlayer, iHomeland)
+
+		if pPlot is None:
+			return
 
 		# Create the unit and place it in the game		
 		objUnit = player.initUnit(self.iUnitID, pPlot.getX(), pPlot.getY(), UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH)
@@ -105,14 +87,14 @@ class Mercenary:
 
 		iExp = 0
 		# Conquest and Zealotry Civic
-		if self.getUnitId() in lPossibleMercenariesLand:
+		if self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_LAND and not self.getUnitInfo().getUnitCombatType() in [UnitCombatTypes.NO_UNITCOMBAT, UnitCombatTypes.UNITCOMBAT_SPY]:
 			if iConquest1 in civics or iConquest2 in civics:
 				iExp += 2
 			if iZealotry2 in civics:
 				iExp += 2
 		
 		# Admiralty Civic
-		if iAdmiralty2 in civics and self.getUnitId() in lTransports + lPossibleMercenariesSea:
+		if iAdmiralty2 in civics and self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_SEA:
 			iExp += 4
 		
 		if iExp > 0:
@@ -288,20 +270,31 @@ class Mercenary:
 		pPlot = None
 		if self.isShip():
 			pPlot = self.getShipPlacementPlot(iPlayer, iHomeland)
+		else:
+			if self.hasValidSpawnTile(iPlayer, iHomeland):
+				pPlot = self.getPlacementShip(iPlayer, iHomeland).plot()
 		return pPlot
 	
 	# In order to place hired unit, the player must have a ship on the edge of the map
-	def hasShipForPlacement(self, iPlayer):
-		if self.getPlacementShip(iPlayer) != None:
+	def hasShipForPlacement(self, iPlayer, iHomeland):
+		if self.getPlacementShip(iPlayer, iHomeland) != None:
 			return True
 		return False
 	
+	# Check to see if the mercenary has a spot to go
+	def hasValidSpawnTile(self, iPlayer, iHomeland):
+		if self.isShip():
+			return self.getShipPlacementPlot(iPlayer, iHomeland) is not None
+		elif self.getUnitInfo().getDomainType() == DomainTypes.DOMAIN_LAND:
+			if self.hasShipForPlacement(iPlayer, iHomeland):
+				return True
+		return False
+
 	# Get the ship in which to place a hired land unit
-	def getPlacementShip(self, iPlayer):
+	def getPlacementShip(self, iPlayer, iHomeland):
 		lUnits = PlayerUtil.getPlayerUnits(iPlayer)
 		for pUnit in lUnits:
-			iX = pUnit.getX();
-			if iX == 0 or iX == iWorldX - 1:
+			if pUnit.plot().getFeatureType() - iTradeWindsStart == iHomeland:
 				if not pUnit.isFull():
 					return pUnit
 		return None

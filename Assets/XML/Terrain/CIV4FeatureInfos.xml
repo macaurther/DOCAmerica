@@ -1592,7 +1592,7 @@
 			<YieldChanges/>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
-			<iMovement>1000</iMovement>
+			<iMovement>1</iMovement>
 			<iSeeThrough>0</iSeeThrough>
 			<iHealthPercent>0</iHealthPercent>
 			<iDefense>0</iDefense>
@@ -1701,7 +1701,7 @@
 			<YieldChanges/>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
-			<iMovement>1000</iMovement>
+			<iMovement>1</iMovement>
 			<iSeeThrough>0</iSeeThrough>
 			<iHealthPercent>0</iHealthPercent>
 			<iDefense>0</iDefense>
@@ -1810,7 +1810,7 @@
 			<YieldChanges/>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
-			<iMovement>1000</iMovement>
+			<iMovement>1</iMovement>
 			<iSeeThrough>0</iSeeThrough>
 			<iHealthPercent>0</iHealthPercent>
 			<iDefense>0</iDefense>
@@ -1919,7 +1919,7 @@
 			<YieldChanges/>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
-			<iMovement>1000</iMovement>
+			<iMovement>1</iMovement>
 			<iSeeThrough>0</iSeeThrough>
 			<iHealthPercent>0</iHealthPercent>
 			<iDefense>0</iDefense>
@@ -2028,7 +2028,7 @@
 			<YieldChanges/>
 			<RiverYieldChange/>
 			<HillsYieldChange/>
-			<iMovement>1000</iMovement>
+			<iMovement>1</iMovement>
 			<iSeeThrough>0</iSeeThrough>
 			<iHealthPercent>0</iHealthPercent>
 			<iDefense>0</iDefense>
