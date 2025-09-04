@@ -78,9 +78,9 @@ class EventHandlerRegistry(object):
 		return BeginPlayerTurn
 	
 	def blockade(self, goal, applicable, func):
-		def blockade((iPlayer, iGold)):
+		def blockade((iPlayer, city, iGold)):
 			if applicable(goal, iPlayer):
-				func(goal, iGold)
+				func(goal, iGold, city)
 		
 		return blockade
 		
@@ -115,9 +115,16 @@ class EventHandlerRegistry(object):
 	def cityCaptureGold(self, goal, applicable, func):
 		def cityCaptureGold((city, iPlayer, iGold)):
 			if applicable(goal, iPlayer):
-				func(goal, iGold)
+				func(goal, iGold, city)
 		
 		return cityCaptureGold
+	
+	def cityLiberated(self, goal, applicable, func):
+		def cityLiberated((city,)):
+			if applicable(goal, city.getOwner()):
+				func(goal, city)
+		
+		return cityLiberated
 	
 	def cityLost(self, goal, applicable, func):
 		def cityLost((city,)):
@@ -181,7 +188,7 @@ class EventHandlerRegistry(object):
 				func(goal, unit)
 		
 		return greatPersonBorn
-
+	
 	def improvementBuilt(self, goal, applicable, func):
 		def improvementBuilt((iImprovement, iOldImprovement, iX, iY)):	# MacAurther: Added old improvement argument
 			if plot(iX, iY).isOwned() and applicable(goal, plot(iX, iY).getOwner()):
@@ -255,7 +262,7 @@ class EventHandlerRegistry(object):
 	def tradeMission(self, goal, applicable, func):
 		def tradeMission((iUnit, iPlayer, iX, iY, iGold)):
 			if applicable(goal, iPlayer):
-				func(goal, (iX, iY), iGold)
+				func(goal, iGold, (iX, iY))
 		
 		return tradeMission
 	
@@ -269,7 +276,7 @@ class EventHandlerRegistry(object):
 	def unitPillage(self, goal, applicable, func):
 		def unitPillage((unit, iImprovement, iRoute, iPlayer, iGold)):
 			if applicable(goal, iPlayer):
-				func(goal, iGold)
+				func(goal, iGold, unit)
 		
 		return unitPillage
 	

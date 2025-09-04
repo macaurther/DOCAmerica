@@ -24507,6 +24507,24 @@ int CvPlayer::countVassalCities() const
 	return iNumCities;
 }
 
+// Leoreth
+int CvPlayer::countCoastalCities() const
+{
+	int iNumCoastalCities = 0;
+
+	int iLoop;
+	CvCity* pLoopCity;
+	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+		{
+			iNumCoastalCities++;
+		}
+	}
+
+	return iNumCoastalCities;
+}
+
 int CvPlayer::countHappinessBonuses() const
 {
 	int iNumBonuses = 0;
@@ -24885,13 +24903,13 @@ bool CvPlayer::isTolerating(ReligionTypes eReligion) const
 	return false;
 }
 
-ReligionSpreadTypes CvPlayer::getSpreadType(CvPlot* pPlot, ReligionTypes eReligion, bool bDistant) const
+ReligionSpreadTypes CvPlayer::getSpreadType(CvPlot* pPlot, ReligionTypes eReligion, bool bDistant, bool bRemove) const
 {
 	bool bStateReligion = getStateReligion() == eReligion;
-	bool bPromoted = bStateReligion || isTolerating(eReligion);
+	bool bPromoted = bStateReligion || (isTolerating(eReligion) && isStateReligion());
 	int iSpreadFactor = pPlot->getSpreadFactor(eReligion);
 
-	if (!bStateReligion && isNoNonStateReligionSpread()) return RELIGION_SPREAD_NONE;
+	if (!bRemove && !bStateReligion && isNoNonStateReligionSpread()) return RELIGION_SPREAD_NONE;
 
 	if ((isMinorCiv() || isBarbarian()) && iSpreadFactor <= REGION_SPREAD_MINORITY) return RELIGION_SPREAD_NONE;
 

@@ -20,8 +20,14 @@ def findSlot(iCiv):
 		return iSlot
 
 	return -1
+
+def findMinorSlot(iCiv):
+	return next(iSlot for iSlot in reversed(range(iNumPlayers)) if civ(iSlot) == -1)
 	
 def availableSlot(iSlot):
+	if civ(iSlot) == iNative and since(year(1900)) > 0 and player(iSlot).getNumCities() == 0 and player(iSlot).getNumUnits() == 0:
+		return True
+	
 	if player(iSlot).isAlive():
 		return False
 	
@@ -29,10 +35,6 @@ def availableSlot(iSlot):
 		return False
 	
 	if player(iSlot).isMinorCiv():
-		return False
-	
-	revealed_owners = set(plots.all().where(lambda plot: plot.isRevealed(game.getActiveTeam(), False)).get(lambda plot: plot.getRevealedOwner(game.getActiveTeam(), False)))
-	if iSlot in revealed_owners:
 		return False
 	
 	return True
@@ -49,10 +51,29 @@ def updateCivilization(iPlayer, iCiv, iBirthTurn=-1):
 	if iCiv == iCurrentCivilization:
 		return
 	
+	resetRevealedOwner(iPlayer)
+	
 	addPlayer(iPlayer, iCiv, iBirthTurn=iBirthTurn, bAlive=True)
+	
+	initWars(iPlayer)
 	
 	if iCurrentCivilization in data.dSlots:
 		del data.dSlots[iCurrentCivilization]
+
+def initWars(iPlayer):
+	iCiv = player(iPlayer).getCivilizationType()
+	iTeam = player(iPlayer).getTeam()
+	
+	if iCiv == iNative:
+		for iOtherPlayer in players.all().alive():
+			if not player(iOtherPlayer).isBarbarian():
+				team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
+	
+	else:
+		team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
+		
+		if player(iNative).isExisting():
+			team(player(iNative).getTeam()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
 
 def getImpact(iCiv):
 	iActiveCiv = civ()
@@ -77,19 +98,21 @@ def getImpact(iCiv):
 	return max(iImpactMarginal, iImpact)
 			
 def isOutdated(iCiv):
+	if year() < year(dFall[iCiv]):
+		return False
+
 	lResurrections = dResurrections[iCiv]
 	if not lResurrections:
 		return True
 	
-	if year() >= dFall[iCiv]:
-		iFirstResurrectionStart = lResurrections[0][0]
-		iLastResurrectionEnd = lResurrections[-1][1]
+	iFirstResurrectionStart = lResurrections[0][0]
+	iLastResurrectionEnd = lResurrections[-1][1]
 		
-		if iLastResurrectionEnd != 2020:
-			return True
+	if iLastResurrectionEnd < 2020:
+		return True
 		
-		if iFirstResurrectionStart > dFall[iCiv]:
-			return True
+	if iFirstResurrectionStart > dFall[iCiv]:
+		return True
 	
 	return False
 
@@ -102,3 +125,14 @@ def getUnavailableSlots():
 
 def allSlotsTaken():
 	return getUnavailableSlots() >= iNumPlayers-1
+
+def quickSpawn(iCiv):
+	iPlayer = findSlot(iCiv)
+	updateCivilization(iPlayer, iCiv)
+	capital = plots.capital(iCiv)
+	player(iPlayer).found(*location(capital))
+	city(capital).setPopulation(20)
+	game.setActivePlayer(iPlayer, False)
+
+def advanceEra(iCiv):
+	player(iCiv).setCurrentEra(player(iCiv).getCurrentEra()+1)

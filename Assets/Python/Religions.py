@@ -36,6 +36,22 @@ def foundReligions():
 def spreadJudaism():
 	spreadReligionToRegion(iJudaism, [rOntario, rNewEngland, rMidAtlantic], 1850, 10)
 
+@handler("religionSpread")
+def replacePaganTemple(iReligion, iPlayer, city):
+	iUniquePaganTemple = unique_building(iPlayer, iPaganTemple)
+	if city.isHasRealBuilding(iUniquePaganTemple):
+		city.setHasRealBuilding(iUniquePaganTemple, False)
+		
+		iStateReligion = player(iPlayer).getStateReligion()
+		iTemple = temple(iReligion)
+		if iStateReligion == iReligion and city.canConstruct(iTemple, False, False, False):
+			city.setHasRealBuilding(iTemple, True)
+			message(iPlayer, "TXT_KEY_PAGAN_TEMPLE_REPLACED", infos.religion(iReligion).getText(), city.getName(), infos.building(iUniquePaganTemple).getText(), infos.building(iTemple).getText(), event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT, button=infos.building(iTemple).getButton(), sound=infos.building(iTemple).getConstructSound(), location=city)
+		else:
+			message(iPlayer, "TXT_KEY_PAGAN_TEMPLE_REMOVED", infos.religion(iReligion).getText(), city.getName(), infos.building(iUniquePaganTemple).getText(), event=InterfaceMessageTypes.MESSAGE_TYPE_MAJOR_EVENT, location=city)
+
+## IMPLEMENTATION
+
 
 def foundReligion(location, iReligion):
 	if not location:

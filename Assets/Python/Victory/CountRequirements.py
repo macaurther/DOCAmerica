@@ -135,11 +135,11 @@ class BuildingCount(ThresholdRequirement):
 	
 		return player(iPlayer).countNumBuildings(unique_building(iPlayer, iBuilding))
 	
-	def description(self):
+	def get_description(self):
 		if not isinstance(self.iBuilding, (Aggregate, DeferredArgument)) and isWonder(self.iBuilding):
-			return BUILDING.format(self.iBuilding)
+			return Description("TXT_KEY_VICTORY_DESC_SIMPLE", BUILDING.format(self.iBuilding))
 	
-		return Requirement.description(self, bPlural=self.bPlural)
+		return Requirement.get_description(self, bPlural=self.bPlural)
 		
 	def progress(self, evaluator):
 		if not self.bPlural:
@@ -192,11 +192,11 @@ class CityBuildingCount(ThresholdRequirement):
 		
 		return 0
 	
-	def description(self):
+	def get_description(self):
 		if not isinstance(self.iBuilding, Aggregate) and isWonder(self.iBuilding):
-			return BUILDING.format(self.iBuilding)
+			return Description("TXT_KEY_VICTORY_DESC_SIMPLE", BUILDING.format(self.iBuilding))
 		
-		return Requirement.description(self)
+		return Requirement.get_description(self)
 	
 	def progress(self, evaluator, **options):
 		city = self.city.get(evaluator.iPlayer)
@@ -244,11 +244,11 @@ class CityCount(ThresholdRequirement):
 		self.handle("cityBuilt", self.check)
 		self.handle("cityAcquiredAndKept", self.check)
 	
-	def description(self):
+	def get_description(self):
 		if self.iRequired == 1:
-			return text("TXT_KEY_VICTORY_DESC_CITY_COUNT_SINGLE", *self.format_parameters())
+			return Description("TXT_KEY_VICTORY_DESC_CITY_COUNT_SINGLE", *self.format_parameters())
 		
-		return ThresholdRequirement.description(self)
+		return ThresholdRequirement.get_description(self)
 		
 	def value(self, iPlayer, area):
 		return area.cities().owner(iPlayer).count()
@@ -344,11 +344,14 @@ class CultureLevelCityCount(ThresholdRequirement):
 	def value_func(self, city):
 		return city.getCultureLevel()
 	
+	def sort_value_func(self, city):
+		return city.getCulture(city.getOwner())
+	
 	def valid_city(self, city):
 		return self.value_func(city) >= self.iCultureLevel
 		
 	def progress_entries(self, iPlayer):
-		best_cities = cities.owner(iPlayer).highest(self.iRequired, self.value_func)
+		best_cities = cities.owner(iPlayer).highest(self.iRequired, self.sort_value_func)
 		
 		if not best_cities:
 			yield "%s %s" % (indicator(False), text("TXT_KEY_VICTORY_PROGRESS_NO_CITIES"))
@@ -442,8 +445,8 @@ class ImprovementCount(ThresholdRequirement):
 	def value(self, iPlayer, iImprovement):
 		return player(iPlayer).getImprovementCount(iImprovement)
 	
-	def description(self):
-		return ThresholdRequirement.description(self, bPlural=self.bPlural)
+	def get_description(self):
+		return ThresholdRequirement.get_description(self, bPlural=self.bPlural)
 	
 	def progress(self, evaluator):
 		if not self.bPlural:
@@ -475,7 +478,7 @@ class OpenBorderCount(ThresholdRequirement):
 		if self.civs and civ(iOther) not in self.civs:
 			return False
 		
-		return team(iPlayer).isOpenBorders(player(iOther).getTeam())
+		return team(iPlayer).canContact(player(iOther).getTeam()) and team(iPlayer).isOpenBorders(player(iOther).getTeam())
 	
 	def additional_formats(self):
 		civilizations = text("TXT_KEY_VICTORY_CIVILIZATIONS")
@@ -532,7 +535,7 @@ class PopulationCity(ThresholdRequirement):
 # First Polish UHV goal
 class PopulationCityCount(ThresholdRequirement):
 
-	TYPES = (COUNT, COUNT)
+	TYPES = (NUMBER, COUNT)
 	
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_POPULATION_CITY_COUNT"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_POPULATION_CITY_COUNT"
@@ -638,8 +641,8 @@ class SpecialistCount(ThresholdRequirement):
 	def value(self, iPlayer, iSpecialist):
 		return cities.owner(iPlayer).sum(lambda city: city.getFreeSpecialistCount(iSpecialist))
 	
-	def description(self):
-		return Requirement.description(self, bPlural=self.bPlural)
+	def get_description(self):
+		return Requirement.get_description(self, bPlural=self.bPlural)
 	
 	def progress(self, evaluator):
 		if not self.bPlural:
@@ -738,8 +741,8 @@ class UnitCount(ThresholdRequirement):
 	def value(self, iPlayer, iUnit):
 		return player(iPlayer).getUnitClassCount(infos.unit(iUnit).getUnitClassType())
 	
-	def description(self, **options):
-		return Requirement.description(self, bPlural=self.bPlural, **options)
+	def get_description(self, **options):
+		return Requirement.get_description(self, bPlural=self.bPlural, **options)
 
 	def progress_text(self, **options):
 		return Requirement.progress_text(self, bPlural=self.bPlural, **options)

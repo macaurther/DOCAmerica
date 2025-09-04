@@ -29,6 +29,39 @@ def loadVictories():
 	dHistoricalGoals = Historical.dGoals
 	dReligiousGoals = Religious.dGoals
 	dAdditionalPaganGoal = Religious.dAdditionalPaganGoal
+	
+	#printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal)
+
+
+def printVictories(dHistoricalGoals, dReligiousGoals, dAdditionalPaganGoal):
+	from Files import getPath
+	
+	lines = []
+	
+	for iCiv in range(iNumCivs):
+		lines.append(infos.civ(iCiv).getDescription())
+		
+		for goal in dHistoricalGoals.get(iCiv, []):
+			lines.append("%s: %s" %  (text(goal.options["title_key"]), goal.description()))
+	
+	for iReligion in dReligiousGoals:
+		if iReligion < iNumReligions:
+			lines.append(infos.religion(iReligion).getDescription())
+		else:
+			lines.append(str(iReligion))
+		
+		for goal in dReligiousGoals[iReligion]:
+			lines.append("%s: %s" % (text(goal.options.get("title_key", "")), goal.description()))
+	
+	for iPaganReligion, goal in dAdditionalPaganGoal.items():
+		lines.append(str(goal.description()))
+	
+	file = open(getPath("UHV Descriptions.txt"), "w")
+	
+	try:
+		file.write("\n".join([line.encode("latin-1", "xmlcharrefreplace") for line in lines]))
+	finally:
+		file.close()
 
 
 @handler("playerCivAssigned")
@@ -160,10 +193,6 @@ class Victory(object):
 		player(self.iPlayer).changeGoldenAgeTurns(iGoldenAgeTurns)
 		
 		message(self.iPlayer, "TXT_KEY_VICTORY_INTERMEDIATE", color=iPurple)
-		
-		if player(self.iPlayer).isHuman():
-			for iOtherPlayer in players.major().alive().without(self.iPlayer):
-				player(iOtherPlayer).AI_changeAttitudeExtra(self.iPlayer, -2)
 
 
 class HistoricalVictory(Victory):
@@ -173,12 +202,14 @@ class HistoricalVictory(Victory):
 	@classmethod
 	def create(cls, iPlayer):
 		iCiv = civ(iPlayer)
-		return cls(iPlayer, dHistoricalGoals.get(iCiv, []))
+		victory = cls(iPlayer, dHistoricalGoals.get(iCiv, []))
+		
+		getScenario().initGoals(iPlayer, victory.goals)
+		
+		return victory
 	
 	def enable(self):
 		Victory.enable(self)
-		
-		getScenario().initGoals(self.iPlayer, self.goals)
 
 	def check(self):
 		iSucceededGoals = self.succeeded_goals()

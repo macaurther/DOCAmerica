@@ -81,6 +81,9 @@ class Aggregate(NamedArgument):
 	def __contains__(self, item):
 		return item in self.items
 	
+	def __getitem__(self, index):
+		return self.items[index]
+	
 	def __eq__(self, other):
 		if isinstance(other, Aggregate):
 			return self.items == other.items
@@ -243,6 +246,12 @@ class AreaArgument(NamedArgument):
 	
 	def expand(self, *args, **kwargs):
 		return self.call("expand", args, kwargs)
+	
+	def passable(self, *args, **kwargs):
+		return self.call("passable", args, kwargs)
+	
+	def birth(self, iCiv):
+		return self.call_for_civ("birth", iCiv)
 	
 	def core(self, iCiv):
 		return self.call_for_civ("core", iCiv)

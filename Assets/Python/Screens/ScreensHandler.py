@@ -753,6 +753,7 @@ def __eventEditCityNameApply(playerID, userData, popupReturn):
 	player = gc.getPlayer(playerID)
 	city = player.getCity(iCityID)
 	cityName = popupReturn.getEditBoxString(0)
+	
 	if (len(cityName) > 30):
 		cityName = cityName[:30]
 	city.setName(cityName, not bRename)

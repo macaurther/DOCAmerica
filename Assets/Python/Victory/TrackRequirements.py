@@ -2,6 +2,61 @@ from Core import *
 from BaseRequirements import *
 
 
+class AreaBlockadeGold(TrackRequirement):
+	
+	TYPES = (AREA, AMOUNT)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_ACQUIRE"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_AREA_BLOCKADE_GOLD"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_AREA_BLOCKADE_GOLD"
+	
+	def __init__(self, area, iRequired, **options):
+		TrackRequirement.__init__(self, area, iRequired, **options)
+		
+		self.area = area
+		
+		self.handle("blockade", self.accumulate_blockade_gold)
+		self.handle("unitPillage", self.accumulate_pillage_gold)
+		self.handle("cityCaptureGold", self.accumulate_city_capture_gold)
+		
+	def accumulate_blockade_gold(self, goal, iGold, city):
+		if city in self.area:
+			self.accumulate(iGold)
+			goal.check()
+	
+	def accumulate_pillage_gold(self, goal, iGold, unit):
+		if unit in self.area:
+			self.accumulate(iGold)
+			goal.check()
+	
+	def accumulate_city_capture_gold(self, goal, iGold, city):
+		if city in self.area:
+			self.accumulate(iGold)
+			goal.check()
+
+
+class AreaReligionSpreadCount(TrackRequirement):
+
+	TYPES = (AREA, RELIGION, COUNT)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_SPREAD"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_AREA_RELIGION_SPREAD_COUNT"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_AREA_RELIGION_SPREAD_COUNT"
+	
+	def __init__(self, area, iReligion, iCount, **options):
+		TrackRequirement.__init__(self, area, iReligion, iCount, **options)
+		
+		self.area = area
+		self.iReligion = iReligion
+		
+		self.handle("unitSpreadReligionAttempt", self.increment_religion_spread)
+	
+	def increment_religion_spread(self, goal, iReligion, unit):
+		if self.iReligion == iReligion and unit in self.area:
+			self.increment()
+			goal.check()
+
+
 # First Tibetan UHV goal
 class AcquiredCities(TrackRequirement):
 
@@ -44,13 +99,13 @@ class BrokeredPeace(TrackRequirement):
 # Third Vedic URV goal
 class CelebrateTurns(TrackRequirement):
 
-	TYPES = (COUNT,)
+	TYPES = (TURNS,)
 	
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_CELEBRATE_TURNS"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_CELEBRATE_TURNS"
 	
 	def __init__(self, iRequired, **options):
-		TrackRequirement.__init__(self, turns(iRequired), **options)
+		TrackRequirement.__init__(self, iRequired, **options)
 		
 		self.handle("BeginPlayerTurn", self.accumulate_celebrate_turns)
 		
@@ -173,8 +228,8 @@ class Constructed(TrackRequirement):
 			self.increment()
 			goal.check()
 	
-	def description(self):
-		return Requirement.description(self, bPlural=self.bPlural)
+	def get_description(self):
+		return Requirement.get_description(self, bPlural=self.bPlural)
 		
 	def progress(self, evaluator):
 		if not self.bPlural:
@@ -199,7 +254,7 @@ class DefeatedUnits(TrackRequirement):
 		self.handle("combatResult", self.increment_defeated)
 	
 	def increment_defeated(self, goal, unit):
-		if unit.getOwner() in self.lCivs:
+		if unit.getVisualOwner() in self.lCivs:
 			self.increment()
 			goal.check()
 
@@ -338,13 +393,13 @@ class GreatGenerals(TrackRequirement):
 # Second Buddhist URV goal
 class HappiestTurns(TrackRequirement):
 
-	TYPES = (COUNT,)
+	TYPES = (TURNS,)
 	
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_HAPPIEST_TURNS"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_HAPPIEST_TURNS"
 	
 	def __init__(self, iRequired, **options):
-		TrackRequirement.__init__(self, turns(iRequired), **options)
+		TrackRequirement.__init__(self, iRequired, **options)
 		
 		self.handle("BeginPlayerTurn", self.increment_happiest)
 		
@@ -366,13 +421,13 @@ class HappiestTurns(TrackRequirement):
 # First Taoist URV goal
 class HealthiestTurns(TrackRequirement):
 
-	TYPES = (COUNT,)
+	TYPES = (TURNS,)
 	
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_HEALTHIEST_TURNS"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_HEALTHIEST_TURNS"
 	
 	def __init__(self, iRequired, **options):
-		TrackRequirement.__init__(self, turns(iRequired), **options)
+		TrackRequirement.__init__(self, iRequired, **options)
 		
 		self.handle("BeginPlayerTurn", self.increment_healthiest)
 	
@@ -393,7 +448,7 @@ class HealthiestTurns(TrackRequirement):
 
 class ImportCount(TrackRequirement):
 
-	TYPES = (RESOURCE, COUNT)
+	TYPES = (RESOURCE, TURNS)
 	
 	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_IMPORT_RESOURCES"
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_COUNT"
@@ -413,17 +468,39 @@ class ImportCount(TrackRequirement):
 		goal.check()
 
 
+class LiberatedCities(TrackRequirement):
+	
+	TYPES = (AREA, CIVS, COUNT)
+	
+	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_LIBERATE"
+	DESC_KEY = "TXT_KEY_VICTORY_DESC_LIBERATED_CITIES"
+	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_LIBERATED_CITIES"
+	
+	def __init__(self, area, civs, required, **options):
+		TrackRequirement.__init__(self, area, civs, required, **options)
+		
+		self.area = area
+		self.civs = civs
+		
+		self.handle("cityLiberated", self.increment_liberated)
+	
+	def increment_liberated(self, goal, city):
+		if city in self.area and city.getPreviousCiv() not in self.civs:
+			self.increment()
+			goal.check()
+
+
 # First Buddhist URV goal
 class PeaceTurns(TrackRequirement):
 
-	TYPES = (COUNT,)
+	TYPES = (TURNS,)
 	
 	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_BE"
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_PEACE_TURNS"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_PEACE_TURNS"
 	
 	def __init__(self, iRequired, **options):
-		TrackRequirement.__init__(self, turns(iRequired), **options)
+		TrackRequirement.__init__(self, iRequired, **options)
 		
 		self.handle("BeginPlayerTurn", self.increment_peace_turns)
 		
@@ -468,14 +545,14 @@ class PiracyGold(TrackRequirement):
 # First Catholic URV goal
 class PopeTurns(TrackRequirement):
 
-	TYPES = (COUNT,)
+	TYPES = (TURNS,)
 	
 	GOAL_DESC_KEY = "TXT_KEY_VICTORY_DESC_BE"
 	DESC_KEY = "TXT_KEY_VICTORY_DESC_POPE_TURNS"
 	PROGR_KEY = "TXT_KEY_VICTORY_PROGR_POPE_TURNS"
 	
 	def __init__(self, iRequired, **options):
-		TrackRequirement.__init__(self, turns(iRequired), **options)
+		TrackRequirement.__init__(self, iRequired, **options)
 		
 		self.handle("BeginPlayerTurn", self.increment_pope)
 	
@@ -564,6 +641,7 @@ class ReligionSpreadCount(TrackRequirement):
 	def increment_religion_spread(self, goal, iReligion, unit):
 		if self.iReligion == iReligion:
 			self.increment()
+			goal.check()
 
 
 class ReligionSpreadPopulationCount(TrackRequirement):
@@ -584,6 +662,7 @@ class ReligionSpreadPopulationCount(TrackRequirement):
 	def accumulate_religion_spread_population(self, goal, iReligion, unit):
 		if self.iReligion == iReligion and city(unit):
 			self.accumulate(city(unit).getPopulation())
+			goal.check()
 	
 
 
@@ -719,7 +798,7 @@ class TradeGold(TrackRequirement):
 		self.accumulate(iGold * 100)
 		goal.check()
 	
-	def accumulate_trade_mission_gold(self, goal, tile, iGold):
+	def accumulate_trade_mission_gold(self, goal, iGold, tile):
 		self.accumulate(iGold * 100)
 		goal.check()
 	
@@ -753,7 +832,7 @@ class TradeMissionCount(TrackRequirement):
 		
 		self.handle("tradeMission", self.check_trade_mission)
 		
-	def check_trade_mission(self, goal, (x, y), iGold):
+	def check_trade_mission(self, goal, iGold, (x, y)):
 		if at(self.city.get(goal.evaluator.iPlayer), (x, y)):
 			self.increment()
 			goal.check()

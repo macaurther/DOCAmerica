@@ -12824,7 +12824,6 @@ bool CvCity::isHasBuildingEffect(BuildingTypes eBuilding) const
 	return isHasRealBuilding(eBuilding) && GET_PLAYER(getOwnerINLINE()).isHasBuildingEffect(eBuilding);
 }
 
-
 //Rhye - start
 bool CvCity::isHasRealBuilding(BuildingTypes eIndex) const
 {
@@ -18179,31 +18178,6 @@ void CvCity::spreadReligion(ReligionTypes eReligion, bool bMissionary)
 	{
 		removeReligion(eDisappearingReligion);
 	}
-
-	if (isHasRealBuilding(getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_PAGAN_TEMPLE)) && !GC.getReligionInfo(eReligion).isLocal())
-	{
-		setHasRealBuilding(getUniqueBuilding(getCivilizationType(), (BuildingTypes)BUILDING_PAGAN_TEMPLE), false);
-
-		ReligionTypes eStateReligion = GET_PLAYER(getOwnerINLINE()).getStateReligion();
-		if (eStateReligion != NO_RELIGION && eStateReligion == eReligion)
-		{
-			for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-			{
-				BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI);
-
-				if (canConstruct(eBuilding) && GC.getBuildingInfo(eBuilding).getReligionType() == eStateReligion && GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == GC.getInfoTypeForString("SPECIALBUILDING_TEMPLE"))
-				{
-					setHasRealBuilding(eBuilding, true);
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_PAGAN_TEMPLE_REPLACED", GC.getReligionInfo(eReligion).getText(), getName().GetCString(), GC.getBuildingInfo(eBuilding).getText()), GC.getBuildingInfo(eBuilding).getConstructSound(), MESSAGE_TYPE_MAJOR_EVENT, GC.getBuildingInfo(eBuilding).getArtInfo()->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-					break;
-				}
-			}
-		}
-		else
-		{
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_PAGAN_TEMPLE_REMOVED", GC.getReligionInfo(eReligion).getText(), getName().GetCString()), "", MESSAGE_TYPE_MAJOR_EVENT, "", (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-		}
-	}
 }
 
 struct disappearingReligionCompare
@@ -18217,8 +18191,8 @@ struct disappearingReligionCompare
 
 		if (city != NULL)
 		{
-			iLeftValue += GET_PLAYER(city->getOwnerINLINE()).getSpreadType(city->plot(), eLeftReligion) * 3;
-			iRightValue += GET_PLAYER(city->getOwnerINLINE()).getSpreadType(city->plot(), eRightReligion) * 3;
+			iLeftValue += GET_PLAYER(city->getOwnerINLINE()).getSpreadType(city->plot(), eLeftReligion, false, true) * 3;
+			iRightValue += GET_PLAYER(city->getOwnerINLINE()).getSpreadType(city->plot(), eRightReligion, false, true) * 3;
 
 			iLeftValue += city->getReligionInfluence(eLeftReligion);
 			iRightValue += city->getReligionInfluence(eRightReligion);
