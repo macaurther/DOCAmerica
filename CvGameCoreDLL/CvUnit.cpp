@@ -14838,7 +14838,9 @@ bool CvUnit::rebuild()
 
 bool CvUnit::canPopulate(const CvPlot* pPlot) const
 {
-	if (getUnitType() != UNIT_IMMIGRANT)
+	// MacAurther: Changing role of Immigrants to be specialist, not pop boost. Keeping this here if I want to use in the future
+	return false;
+	/*if (getUnitType() != UNIT_IMMIGRANT)
 	{
 		return false;
 	}
@@ -14855,7 +14857,7 @@ bool CvUnit::canPopulate(const CvPlot* pPlot) const
 		return false;
 	}
 
-	return true;
+	return true;*/
 }
 
 bool CvUnit::populate()

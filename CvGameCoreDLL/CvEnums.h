@@ -600,6 +600,7 @@ enum WidgetTypes					// Exposed to Python
 
 	WIDGET_HELP_WONDER_LIMIT, // Merijn
 	WIDGET_HELP_SATELLITE_LIMIT, // Leoreth
+	WIDGET_FIRST_DISCOVERED, // Leoreth
 
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
@@ -1152,9 +1153,9 @@ enum FontSymbols					// Exposed to Python
 	SCALES_CHAR,
 	AIRPORT_CHAR,
 	CLEAN_POWER_CHAR,
-	SATELLITE_CHAR,
+	IMMIGRANT_CHAR,			// MacAurther
 	RANGED_STRENGTH_CHAR,	// MacAurther
-	RANGE_CHAR,	// MacAurther
+	RANGE_CHAR,				// MacAurther
 	MILITARY_CHAR,
 
 #ifdef _USRDLL
@@ -2153,6 +2154,8 @@ enum SpecialistTypes			// Exposed to Python
 	SPECIALIST_GREAT_GENERAL,
 	SPECIALIST_GREAT_SPY,
 	SPECIALIST_SLAVE,
+	SPECIALIST_SHARECROPPER,
+	SPECIALIST_IMMIGRANT,
 	NUM_SPECIALIST_TYPES
 };
 

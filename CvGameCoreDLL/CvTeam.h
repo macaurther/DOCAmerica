@@ -92,9 +92,13 @@ public:
 	int getScenarioResearchModifier() const;
 	int getCivilizationResearchModifier() const;
 	int getTechLeaderModifier() const;
+	int getTechDifferenceModifier() const;
 	int getSpreadResearchModifier(TechTypes eTech) const;
 	int getTurnResearchModifier() const;
 	int getModernizationResearchModifier(TechTypes eTech) const;
+
+	int calculateTechDifferenceModifier() const;
+	void updateTechDifferenceModifier();
 
 	bool hasHolyCity(ReligionTypes eReligion) const;																		// Exposed to Python
 	bool hasHeadquarters(CorporationTypes eCorporation) const;																		// Exposed to Python
@@ -376,6 +380,7 @@ public:
 	std::set<TeamTypes> determineDefensivePactPartners(std::set<TeamTypes> visited) const;
 
 	bool isAllied(TeamTypes eTeam) const;
+	int countContacts() const;
 
 	virtual void AI_init() = 0;
 	virtual void AI_reset(bool bConstructor) = 0;
@@ -443,6 +448,7 @@ protected:
 	int m_iTotalTechValue; // Leoreth
 	int m_iSatelliteInterceptCount; // Leoreth
 	int m_iSatelliteAttackCount; // Leoreth
+	int m_iTechDifferenceModifier; // Leoreth
 
 	bool m_bMapCentering;
 	bool m_bCapitulated;

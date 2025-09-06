@@ -332,6 +332,11 @@ public:
 
 	int getCivilizationHistory(int iHistoryType, int iCivilization, int iTurn);
 
+	int getFirstDiscovered(int iTech);
+	int getFirstDiscoveredTurn(int iTech);
+
+	int getMedianTechValue();
+
 protected:
 	CvGame* m_pGame;
 };

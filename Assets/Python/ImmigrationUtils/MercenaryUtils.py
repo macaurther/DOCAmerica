@@ -184,7 +184,7 @@ class Mercenary:
 		(iImmigrationCost, iGoldCost) = self.getHireCost(iPlayer)
 		strHCost = ""
 		if iImmigrationCost > 0:
-			strHCost += u"%d%c" %(iImmigrationCost, CyTranslator().getText("[ICON_ANGRYPOP]", ()))	# MacAurther TODO: Better icon?
+			strHCost += u"%d%c" %(iImmigrationCost, CyTranslator().getText("[ICON_IMMIGRANT]", ()))
 		if iGoldCost > 0:
 			strHCost += u"%d%c" %(iGoldCost, gc.getCommerceInfo(CommerceTypes.COMMERCE_GOLD).getChar())
 		return strHCost

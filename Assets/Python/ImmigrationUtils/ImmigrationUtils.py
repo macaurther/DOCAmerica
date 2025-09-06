@@ -78,9 +78,16 @@ class ImmigrationUtils:
 	def calculateBaseImmigrationThreshold(self, iCiv):
 		return 10 + (data.civs[iCiv].numImmigrations ** 1.1)
 
-	def canEarnImmigrants(self, iPlayer):
+	def canEarnImmigrants(self, iPlayer, iHomeland=-1):
 		pPlayer = player(iPlayer)
-		return any(gc.getTeam(pPlayer.getTeam()).isHasTech(iTech) for iTech in lImmigraitonTechs)
+		if iHomeland == -1:
+			return any(gc.getTeam(pPlayer.getTeam()).isHasTech(iTech) for iTech in lImmigraitonTechs)
+		return gc.getTeam(pPlayer.getTeam()).isHasTech(lImmigraitonTechs[iHomeland])
+	
+	def getFirstOpenHomeland(self, iPlayer):
+		for iHomeland in lHomelands:
+			if self.canEarnImmigrants(iPlayer, iHomeland):
+				return iHomeland
 
 	def processImmigration(self, iPlayer):
 		iCiv = civ(iPlayer)
@@ -89,33 +96,36 @@ class ImmigrationUtils:
 		while bImmigrantGranted:
 			bImmigrantGranted = False
 			for iHomeland in lHomelands:
-				if pPlayer.getImmigration() >= self.getImmigrationThreshold(iCiv, iHomeland):
-					# Grant Immigrant
-					self.changeImmigrants(iPlayer, iHomeland, iImmigrant, 1)
-					bImmigrantGranted = True
-					# Subtract cost
-					pPlayer.changeImmigration(-1*self.getImmigrationThreshold(iCiv, iHomeland))
-					# Increment num immigrant trackers
-					data.civs[iCiv].numImmigrations += 1
-					data.civs[iCiv].lNumImmigrantsEared[iHomeland] += 1
-					# Notify player (if human)
-					if pPlayer.isHuman():
-						# MacAurther TODO: This is very messy. Maybe improve if you feel like it
-						strHomeland = ""
-						if iHomeland == iHomelandNorthEurope:
-							strHomeland = "North Europe"
-						elif iHomeland == iHomelandSouthEurope:
-							strHomeland = "South Europe"
-						elif iHomeland == iHomelandAfrica:
-							strHomeland = "Africa"
-						elif iHomeland == iHomelandSiberia:
-							strHomeland = "Siberia"
-						elif iHomeland == iHomelandAsia:
-							strHomeland = "Asia"
+				if not self.canEarnImmigrants(iPlayer, iHomeland):
+					continue
+				if pPlayer.getImmigration() < self.getImmigrationThreshold(iCiv, iHomeland):
+					continue
+				# Grant Immigrant
+				self.changeImmigrants(iPlayer, iHomeland, iImmigrant, 1)
+				bImmigrantGranted = True
+				# Subtract cost
+				pPlayer.changeImmigration(-1*self.getImmigrationThreshold(iCiv, iHomeland))
+				# Increment num immigrant trackers
+				data.civs[iCiv].numImmigrations += 1
+				data.civs[iCiv].lNumImmigrantsEared[iHomeland] += 1
+				# Notify player (if human)
+				if pPlayer.isHuman():
+					# MacAurther TODO: This is very messy. Maybe improve if you feel like it
+					strHomeland = ""
+					if iHomeland == iHomelandNorthEurope:
+						strHomeland = "North Europe"
+					elif iHomeland == iHomelandSouthEurope:
+						strHomeland = "South Europe"
+					elif iHomeland == iHomelandAfrica:
+						strHomeland = "Africa"
+					elif iHomeland == iHomelandSiberia:
+						strHomeland = "Siberia"
+					elif iHomeland == iHomelandAsia:
+						strHomeland = "Asia"
 
-						# Inform the player that the immigrant has arrived.
-						strMessage = "A new Immigrant is waiting on the docks of " + strHomeland + "!"
-						CyInterface().addMessage(iPlayer, False, 20, strMessage, "AS2D_IMMIGRANTEARNED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, "", gc.getInfoTypeForString("COLOR_YELLOW"), -1, -1, False, False) 
+					# Inform the player that the immigrant has arrived.
+					strMessage = "A new Immigrant is waiting on the docks of " + strHomeland + "!"
+					CyInterface().addMessage(iPlayer, False, 20, strMessage, "AS2D_IMMIGRANTEARNED", InterfaceMessageTypes.MESSAGE_TYPE_INFO, "", gc.getInfoTypeForString("COLOR_YELLOW"), -1, -1, False, False) 
 
 	def changeImmigrants(self, iPlayer, iHomeland, iUnit, iChange):
 		iCiv = civ(iPlayer)
@@ -160,6 +170,11 @@ class ImmigrationUtils:
 
 	def getEarnedImmigrants(self, iCiv, iHomeland):
 		return data.civs[iCiv].dEarnedImmigrants[iHomeland]
+	
+	def getHasEarnedImmigrant(self, iCiv, iHomeland, iUnit):
+		if not str(iUnit) in self.getEarnedImmigrants(iCiv, iHomeland).keys():
+			return False
+		return self.getEarnedImmigrants(iCiv, iHomeland)[str(iUnit)].getCount() > 0
 
 	def getImmigrantGroup(self, iUnit, iCount=1):
 		# return if that unit name can't be found
@@ -248,8 +263,6 @@ class ImmigrationUtils:
 	
 	# Returns the most desired mercenary that is less expensive than the iGold/iImmigration values passed in.		
 	def getBestAvailableImmigrant(self, iImmigration, iGold, iPlayer, lCategoryDesire):
-		
-		hireCost = 0
 		
 		pBestImmigrant = None
 		iHighestDesire = 0
@@ -506,20 +519,3 @@ class ImmigrationUtils:
 			if iUnit in lUnitCategory:
 				return iUnitCategory
 		return -1
-	
-	# In order to place hired unit, the player must have a ship on the edge of the map
-	def hasShipForPlacement(self, iPlayer):
-		if self.getPlacementShip(iPlayer) != None:
-			return True
-		return False
-	
-	# Get the ship in which to place a hired land unit
-	def getPlacementShip(self, iPlayer):
-		lUnits = PlayerUtil.getPlayerUnits(iPlayer)
-		for pUnit in lUnits:
-			iX = pUnit.getX();
-			if iX == 0 or iX == iWorldX - 1:
-				if not pUnit.isFull():
-					return pUnit
-		return None
-	

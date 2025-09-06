@@ -54,6 +54,8 @@ CvGame::CvGame()
 	m_aiTechRankTeam = new int[MAX_TEAMS];
 	m_aiCivPeriod = new char[NUM_CIVS];
 	m_aiCivilizationHistory = new std::hash_map<int, std::hash_map<int, int> >[NUM_HISTORY_TYPES];
+	m_aiFirstDiscovered = NULL;
+	m_aiFirstDiscoveredTurn = NULL;
 
 	m_paiUnitCreatedCount = NULL;
 	m_paiUnitClassCreatedCount = NULL;
@@ -450,6 +452,10 @@ void CvGame::uninit()
 	SAFE_DELETE_ARRAY(m_aiVoteTimer);
 	SAFE_DELETE_ARRAY(m_aiDiploVote);
 
+	// Leoreth
+	SAFE_DELETE_ARRAY(m_aiFirstDiscovered);
+	SAFE_DELETE_ARRAY(m_aiFirstDiscoveredTurn);
+
 	SAFE_DELETE_ARRAY(m_pabSpecialUnitValid);
 	SAFE_DELETE_ARRAY(m_pabSpecialBuildingValid);
 	SAFE_DELETE_ARRAY(m_abReligionSlotTaken);
@@ -510,6 +516,7 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	m_iInitWonders = 0;
 	m_iAIAutoPlay = 0;
 	m_iCircumnavigated = -1; //Rhye
+	m_iMedianTechValue = 0; // Leoreth
 
 	// Leoreth: graphics paging
 	m_iXResolution = 1024;
@@ -681,6 +688,16 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 		{
 			m_aiSecretaryGeneralTimer[iI] = 0;
 			m_aiVoteTimer[iI] = 0;
+		}
+
+		FAssert(m_aiFirstDiscovered == NULL);
+		FAssert(m_aiFirstDiscoveredTurn == NULL);
+		m_aiFirstDiscovered = new char[GC.getNumTechInfos()];
+		m_aiFirstDiscoveredTurn = new int[GC.getNumTechInfos()];
+		for (iI = 0; iI < GC.getNumTechInfos(); iI++)
+		{
+			m_aiFirstDiscovered[iI] = NO_CIVILIZATION;
+			m_aiFirstDiscoveredTurn[iI] = -1;
 		}
 	}
 
@@ -2304,6 +2321,11 @@ void CvGame::updateTechRanks()
 	for (std::vector<TeamTypes>::iterator it = techRankedTeams.begin(); it != techRankedTeams.end(); ++it)
 	{
 		setTechRank(iIndex++, *it);
+
+		if (iIndex == countCivTeamsAlive() / 3)
+		{
+			setMedianTechValue(GET_TEAM(*it).getTotalTechValue());
+		}
 	}
 }
 
@@ -2315,6 +2337,16 @@ void CvGame::setTechRank(int iRank, TeamTypes eTeam)
 int CvGame::getTechRank(TeamTypes eTeam) const
 {
 	return m_aiTechRankTeam[(int)eTeam];
+}
+
+void CvGame::setMedianTechValue(int iValue)
+{
+	m_iMedianTechValue = iValue;
+}
+
+int CvGame::getMedianTechValue() const
+{
+	return m_iMedianTechValue;
 }
 
 
@@ -8102,7 +8134,7 @@ void CvGame::processVote(const VoteTriggeredData& kData, int iChange)
 			PlayerTypes ePlayer = kData.kVoteOption.ePlayer;
 			PlayerTypes eOtherPlayer = kData.kVoteOption.eOtherPlayer;
 
-			if (ePlayer != NULL && eOtherPlayer != NULL)
+			if (ePlayer != NO_PLAYER && eOtherPlayer != NO_PLAYER)
 			{
 				GET_TEAM(GET_PLAYER(ePlayer).getTeam()).changeEspionagePointsAgainstTeam(GET_PLAYER(eOtherPlayer).getTeam(), kVote.getEspionage() * GET_PLAYER(ePlayer).getReligionPopulation(GC.getGame().getVoteSourceReligion(kData.eVoteSource)));
 			}
@@ -8758,6 +8790,7 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iInitWonders);
 	pStream->Read(&m_iAIAutoPlay);
 	pStream->Read(&m_iCircumnavigated); //Rhye
+	pStream->Read(&m_iMedianTechValue); // Leoreth
 
 	// m_uiInitialTime not saved
 
@@ -8805,9 +8838,9 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_aiRankTeam);
 	pStream->Read(MAX_TEAMS, m_aiTeamRank);
 	pStream->Read(MAX_TEAMS, m_aiTeamScore);
-	pStream->Read(NUM_CIVS, m_aiCivPeriod);
 
 	// Leoreth
+	pStream->Read(NUM_CIVS, m_aiCivPeriod);
 	pStream->Read(MAX_TEAMS, m_aiTechRankTeam);
 
 	pStream->Read(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
@@ -8825,6 +8858,10 @@ void CvGame::read(FDataStreamBase* pStream)
 	pStream->Read(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
 	pStream->Read(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
 	pStream->Read(GC.getNumReligionInfos(), m_abReligionSlotTaken);
+
+	// Leoreth
+	pStream->Read(GC.getNumTechInfos(), m_aiFirstDiscovered);
+	pStream->Read(GC.getNumTechInfos(), m_aiFirstDiscoveredTurn);
 
 	for (iI=0;iI<GC.getNumReligionInfos();iI++)
 	{
@@ -9026,6 +9063,7 @@ void CvGame::write(FDataStreamBase* pStream)
 	pStream->Write(m_iInitWonders);
 	pStream->Write(m_iAIAutoPlay);
 	pStream->Write(m_iCircumnavigated); //Rhye
+	pStream->Write(m_iMedianTechValue);
 
 	// m_uiInitialTime not saved
 
@@ -9077,6 +9115,10 @@ void CvGame::write(FDataStreamBase* pStream)
 	pStream->Write(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
 	pStream->Write(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
 	pStream->Write(GC.getNumReligionInfos(), m_abReligionSlotTaken);
+
+	// Leoreth
+	pStream->Write(GC.getNumTechInfos(), m_aiFirstDiscovered);
+	pStream->Write(GC.getNumTechInfos(), m_aiFirstDiscoveredTurn);
 
 	for (iI=0;iI<GC.getNumReligionInfos();iI++)
 	{
@@ -10816,4 +10858,38 @@ int CvGame::getCivilizationHistory(HistoryTypes eHistory, CivilizationTypes eCiv
 	}
 
 	return 0;
+}
+
+CivilizationTypes CvGame::getFirstDiscovered(TechTypes eTech) const
+{
+	FAssert(eTech > NO_TECH);
+	FAssert(eTech < GC.getNumTechInfos());
+
+	return (CivilizationTypes)m_aiFirstDiscovered[eTech];
+}
+
+void CvGame::setFirstDiscovered(TechTypes eTech, CivilizationTypes eCiv)
+{
+	FAssert(eTech > NO_TECH);
+	FAssert(eTech < GC.getNumTechInfos());
+	FAssert(eCiv > NO_CIVILIZATION);
+	FAssert(eCiv < NUM_CIVS);
+
+	m_aiFirstDiscovered[eTech] = eCiv;
+}
+
+int CvGame::getFirstDiscoveredTurn(TechTypes eTech) const
+{
+	FAssert(eTech > NO_TECH);
+	FAssert(eTech < GC.getNumTechInfos());
+
+	return m_aiFirstDiscoveredTurn[eTech];
+}
+
+void CvGame::setFirstDiscoveredTurn(TechTypes eTech, int iTurn)
+{
+	FAssert(eTech > NO_TECH);
+	FAssert(eTech < GC.getNumTechInfos());
+
+	m_aiFirstDiscoveredTurn[eTech] = iTurn;
 }

@@ -4668,11 +4668,11 @@ class CvMainInterface:
 				
 				iSatellites = pHeadSelectedCity.countSatellites()
 				iSatelliteLimit = pHeadSelectedCity.getSatelliteSlots()
-				if iSatelliteLimit > 0:
-					iIndicatorOffset += 40
-					szBuffer = localText.getText("INTERFACE_CITY_SATELLITE_LIMIT", (iSatellites, iSatelliteLimit, CyGame().getSymbolID(FontSymbols.SATELLITE_CHAR)))
-					screen.setLabel("SatelliteLimitText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - iIndicatorOffset, 40, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_SATELLITE_LIMIT, -1, -1)
-					screen.show("SatelliteLimitText")
+				# if iSatelliteLimit > 0:	# MacAurther: Disabled Satellites
+				# 	iIndicatorOffset += 40
+				# 	szBuffer = localText.getText("INTERFACE_CITY_SATELLITE_LIMIT", (iSatellites, iSatelliteLimit, CyGame().getSymbolID(FontSymbols.SATELLITE_CHAR)))
+				# 	screen.setLabel("SatelliteLimitText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - iIndicatorOffset, 40, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_SATELLITE_LIMIT, -1, -1)
+				# 	screen.show("SatelliteLimitText")
 				
 				iIndicatorOffset += 40
 				if pHeadSelectedCity.isOwnerCore():

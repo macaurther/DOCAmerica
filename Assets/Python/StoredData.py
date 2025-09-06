@@ -318,7 +318,7 @@ class GameData:
 		self.iTribeGenerationTurn = -1
 
 		# Immigration Manager
-		self.iCurrentImmigrationManagerTab = 0
+		self.iCurrentImmigrationManagerTab = -1
 		
 	def timedConquest(self, iPlayer, tPlot):
 		self.lTimedConquests.append((iPlayer, tPlot))

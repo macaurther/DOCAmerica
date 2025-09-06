@@ -181,6 +181,7 @@ void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 	m_iTotalTechValue = 0; // Leoreth
 	m_iSatelliteInterceptCount = 0; // Leoreth
 	m_iSatelliteAttackCount = 0; // Leoreth
+	m_iTechDifferenceModifier = 0; // Leoreth
 
 	m_bMapCentering = false;
 	m_bCapitulated = false;
@@ -977,6 +978,8 @@ void CvTeam::doTurn()
 		}
 
 	}
+
+	updateTechDifferenceModifier(); // Leoreth
 
 	doWarWeariness();
 
@@ -2734,7 +2737,8 @@ int CvTeam::getResearchCost(TechTypes eTech, bool bModifiers) const
 		int iModifier = 100;
 
 		iModifier += getPopulationResearchModifier();
-		iModifier += getTechLeaderModifier();
+		//iModifier += getTechLeaderModifier();
+		iModifier += getTechDifferenceModifier();
 		iModifier += getSpreadResearchModifier(eTech);
 		iModifier += getTurnResearchModifier();
 		iModifier += getModernizationResearchModifier(eTech); // Leoreth: Japanese UP (Modernization) -> MacAurther: Dependency Civic
@@ -2857,6 +2861,63 @@ int CvTeam::getTechLeaderModifier() const
 
 			iModifier += 10 * iSurplus;
 		}
+	}
+
+	return iModifier;
+}
+
+int CvTeam::getTechDifferenceModifier() const
+{
+	return m_iTechDifferenceModifier;
+}
+
+void CvTeam::updateTechDifferenceModifier()
+{
+	int iNewModifier = calculateTechDifferenceModifier();
+
+	if (m_iTechDifferenceModifier != iNewModifier)
+	{
+		m_iTechDifferenceModifier = range(iNewModifier, m_iTechDifferenceModifier - 10, m_iTechDifferenceModifier + 10);
+	}
+}
+
+int CvTeam::calculateTechDifferenceModifier() const
+{
+	if (GET_PLAYER(getLeaderID()).getCurrentEra() <= GET_PLAYER(getLeaderID()).getStartingEra())
+	{
+		return 0;
+	}
+
+	if (GC.getGameINLINE().getMedianTechValue() == 0)
+	{
+		return 0;
+	}
+
+	if (GC.getGameINLINE().countCivTeamsAlive() < 8)
+	{
+		return 0;
+	}
+
+	if (countContacts() * 5 < GC.getGameINLINE().countCivTeamsAlive())
+	{
+		return 0;
+	}
+	
+
+	int iRelativeTechValue = 100 * getTotalTechValue() / GC.getGameINLINE().getMedianTechValue();
+	int iModifier = 0;
+
+	if (iRelativeTechValue > 125)
+	{
+		iModifier += (iRelativeTechValue - 125) / 5;
+		iModifier *= 10;
+	}
+	else if (iRelativeTechValue < 75)
+	{
+		iModifier += (iRelativeTechValue - 80) / 5;
+		iModifier *= 5;
+
+		iModifier = std::max(iModifier, -lTechBackwardsBonus[GET_PLAYER(getLeaderID()).getCurrentEra()]);
 	}
 
 	return iModifier;
@@ -5653,6 +5714,12 @@ void CvTeam::setHasTech(TechTypes eIndex, bool bNewValue, PlayerTypes ePlayer, b
 
 			int iFreeTechs = 0;
 
+			if (GC.getGameINLINE().getFirstDiscovered(eIndex) == NO_CIVILIZATION)
+			{
+				GC.getGameINLINE().setFirstDiscovered(eIndex, GET_PLAYER(getLeaderID()).getCivilizationType());
+				GC.getGameINLINE().setFirstDiscoveredTurn(eIndex, GC.getGameINLINE().getGameTurn());
+			}
+
 			if (bFirst)
 			{
 				if (GC.getGameINLINE().countKnownTechNumTeamsCultureGroup(eIndex, GET_PLAYER(getLeaderID()).getCultureGroup()) == 1)	// MacAurther: Let each Culture group get its own great people
@@ -6712,6 +6779,7 @@ void CvTeam::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iTotalTechValue); // Leoreth
 	pStream->Read(&m_iSatelliteInterceptCount); // Leoreth
 	pStream->Read(&m_iSatelliteAttackCount); // Leoreth
+	pStream->Read(&m_iTechDifferenceModifier); // Leoreth
 
 	pStream->Read(&m_bMapCentering);
 	pStream->Read(&m_bCapitulated);
@@ -6827,6 +6895,7 @@ void CvTeam::write(FDataStreamBase* pStream)
 	pStream->Write(m_iTotalTechValue); // Leoreth
 	pStream->Write(m_iSatelliteInterceptCount); // Leoreth
 	pStream->Write(m_iSatelliteAttackCount); // Leoreth
+	pStream->Write(m_iTechDifferenceModifier); // Leoreth
 
 	pStream->Write(m_bMapCentering);
 	pStream->Write(m_bCapitulated);
@@ -7204,4 +7273,22 @@ bool CvTeam::isAllied(TeamTypes eTeam) const
 	}
 
 	return false;
+}
+
+int CvTeam::countContacts() const
+{
+	int iNumContacts = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (GET_TEAM((TeamTypes)iI).isAlive() && !GET_TEAM((TeamTypes)iI).isMinorCiv())
+		{
+			if (canContact((TeamTypes)iI))
+			{
+				iNumContacts++;
+			}
+		}
+	}
+
+	return iNumContacts;
 }

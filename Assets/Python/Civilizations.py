@@ -285,7 +285,7 @@ lCivilizations = [
 	Civilization(
 		iPortugal,
 		iGold=300,
-		iImmigration=100,
+		iImmigration=10,
 		iStateReligion=iCatholicism,
 		lCivics=[iProprietaries2, iAdmiralty2, iSlavery2],
 		techs=techs.column(9).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
@@ -293,7 +293,7 @@ lCivilizations = [
 	Civilization(
 		iEngland,
 		iGold=300,
-		iImmigration=200,
+		iImmigration=30,
 		iStateReligion=iProtestantism,
 		lCivics=[iProprietaries2, iCharterColony2, iIndenturedServitude2, iMercantilism2, iDivineRight2, iProvidence2],
 		techs=techs.column(11).including(iShipbuilding, iCharter, iIndentures).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
@@ -301,7 +301,7 @@ lCivilizations = [
 	Civilization(
 		iFrance,
 		iGold=400,
-		iImmigration=100,
+		iImmigration=20,
 		iStateReligion=iCatholicism,
 		lCivics=[iExpedition2, iAdmiralty2, iSerfdom2, iFactory2, iJesuits2, iOutposts2],
 		techs=techs.column(11).including(iShipbuilding, iFortification).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
@@ -309,7 +309,7 @@ lCivilizations = [
 	Civilization(
 		iNetherlands,
 		iGold=600,
-		iImmigration=100,
+		iImmigration=15,
 		iStateReligion=iProtestantism,
 		lCivics=[iTrustees2, iTradingCompany2, iSerfdom2, iFactory2, iDivineRight2, iOutposts2],
 		techs=techs.column(11).including(iFortification, iEconomics, iShipbuilding, iEducation).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
@@ -323,7 +323,7 @@ lCivilizations = [
 	Civilization(
 		iRussia,
 		iGold=200,
-		iImmigration=50,
+		iImmigration=20,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iTrustees2, iTradingCompany2, iIndenturedServitude2, iFactory2, iProfiteering2, iOutposts2],
 		techs=techs.column(13).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
@@ -331,7 +331,7 @@ lCivilizations = [
 	Civilization(
 		iAmerica,
 		iGold=1500,
-		iImmigration=300,
+		iImmigration=150,
 		iStateReligion=iProtestantism,
 		lCivics=[iPlutocracy3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		techs=techs.column(16).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
@@ -346,7 +346,7 @@ lCivilizations = [
 	Civilization(
 		iArgentina,
 		iGold=1200,
-		iImmigration=100,
+		iImmigration=40,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
@@ -355,7 +355,7 @@ lCivilizations = [
 	Civilization(
 		iMexico,
 		iGold=500,
-		iImmigration=100,
+		iImmigration=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy3, iCommonLaw3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
@@ -364,7 +364,7 @@ lCivilizations = [
 	Civilization(
 		iColombia,
 		iGold=750,
-		iImmigration=100,
+		iImmigration=30,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
@@ -373,7 +373,7 @@ lCivilizations = [
 	Civilization(
 		iPeru,
 		iGold=1200,
-		iImmigration=100,
+		iImmigration=20,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
@@ -382,7 +382,7 @@ lCivilizations = [
 	Civilization(
 		iBrazil,
 		iGold=1600,
-		iImmigration=200,
+		iImmigration=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		techs=techs.column(16).including(iMetallurgy, iProtectionism, iHydrology).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
@@ -390,7 +390,7 @@ lCivilizations = [
 	Civilization(
 		iVenezuela,
 		iGold=1200,
-		iImmigration=100,
+		iImmigration=20,
 		iStateReligion=iCatholicism,
 		lCivics=[iMonarchy3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iColombia],
@@ -399,7 +399,7 @@ lCivilizations = [
 	Civilization(
 		iCanada,
 		iGold=1000,
-		iImmigration=400,
+		iImmigration=100,
 		iStateReligion=iProtestantism,
 		#iMasterCiv=iEngland,
 		lCivics=[iIndustrialism3, iFreeEnterprise3, iOpportunity3, iHomesteads3],

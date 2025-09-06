@@ -457,7 +457,7 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 157
+iNumUnits = 154
 # Land Units (101)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
@@ -484,9 +484,9 @@ iBiplane,		iFighter,		iBomber,		iNuclearBomber,
 # 0				1				2				3				4				5				6				7				8				9
 iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
 iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
-# Other Units (8)
+# Other Units (5)
 # 0				1				2				3				4				5				6				7				8				9
-iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2,	iOldWorldArt,	iOldWorldAssets,iOldWorldInnovations) = range(iNumUnits)
+iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2) = range(iNumUnits)
 
 lAnimalUnits = [iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote]
 
@@ -615,12 +615,12 @@ iNumCivicsPerCategory = 7
 
 
 #Specialists
-iNumSpecialists = 16
+iNumSpecialists = 18
 #				            2				            3				            4				            5
 (iSpecialistCitizen,        iSpecialistPriest,          iSpecialistArtist,          iSpecialistScientist,       iSpecialistMerchant,
 iSpecialistEngineer,        iSpecialistStatesman,       iSpecialistGreatProphet,    iSpecialistGreatArtist,     iSpecialistGreatScientist, 
 iSpecialistGreatMerchant,   iSpecialistGreatEngineer,   iSpecialistGreatStatesman,  iSpecialistGreatGeneral,    iSpecialistGreatSpy,
-iSpecialistSlave) = range(iNumSpecialists)
+iSpecialistSlave,			iSpecialistSharecropper,	iSpecialistImmigrant) = range(iNumSpecialists)
 
 lGreatSpecialists = [iSpecialistGreatProphet, iSpecialistGreatArtist, iSpecialistGreatScientist, iSpecialistGreatMerchant, iSpecialistGreatEngineer, iSpecialistGreatStatesman, iSpecialistGreatGeneral, iSpecialistGreatSpy]
 

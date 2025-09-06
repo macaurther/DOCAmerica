@@ -188,7 +188,7 @@ class CvDawnOfMan:
 			screen.show("Exit")
 		
 	def onClose(self):
-		CyInterface().DoSoundtrack("AS2D_RFC") #Rhye
+		#CyInterface().DoSoundtrack("AS2D_RFC") #Rhye
 		CyInterface().setSoundSelectionReady(True)
 		
 		updateStartingCulture()

@@ -80,7 +80,6 @@ class CvImmigrationManager:
 		self.iActivePlayer = -1
 		
 		self.currentScreen = IMMIGRATION_MANAGER
-		data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_NORTH_EUROPE  # MacAurther TODO: Make this initial based on active player civ
 		
 	# Returns the instance of the immigration manager screen.						
 	def getScreen(self):
@@ -213,11 +212,22 @@ class CvImmigrationManager:
 										"Art/Interface/Buttons/Actions/Join.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 
 	def populateImmigrantLoadButton(self, unit, screen, panelName):
+		# Ships don't load
+		if unit.isShip():
+			return
+		
+		# Ensure that player still has units left to load
+		if not objImmigrationUtils.getHasEarnedImmigrant(civ(self.iActivePlayer), data.iCurrentImmigrationManagerTab, unit.getUnitId()):
+			return
+
+		# Ensure there's a ship to load onto
+		if(not unit.hasShipForPlacement(self.iActivePlayer, data.iCurrentImmigrationManagerTab)):
+			return
+
 		# Add the load button for the unit
-		if(unit.hasShipForPlacement(self.iActivePlayer, data.iCurrentImmigrationManagerTab)):
-			screen.attachPanel(panelName, panelName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
-			screen.attachImageButton( panelName, unit.getUnitInfo().getType()+"-"+panelName+"-LoadButton", 
-										"Art/Interface/Buttons/Actions/Load.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
+		screen.attachPanel(panelName, panelName+"hireButtonPanel", "", "", False, True, PanelStyles.PANEL_STYLE_EMPTY)
+		screen.attachImageButton( panelName, unit.getUnitInfo().getType()+"-"+panelName+"-LoadButton", 
+									"Art/Interface/Buttons/Actions/Load.dds", GenericButtonSizes.BUTTON_SIZE_32, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 
 
 	# Clears out the mercenary information panel contents
@@ -333,6 +343,9 @@ class CvImmigrationManager:
 
 	# Draws the mercenary screen content
 	def drawMercenaryScreenContent(self, screen):
+		# If initial tab isn't set, set it
+		if data.iCurrentImmigrationManagerTab == -1:
+			data.iCurrentImmigrationManagerTab = objImmigrationUtils.getFirstOpenHomeland(self.iActivePlayer)
 
 		# Draw the top bar
 		self.drawScreenTop(screen)
@@ -381,10 +394,12 @@ class CvImmigrationManager:
 		xLink = self.drawTab(IMMIGRATION_MANAGER_TAB_ASIA, self.TAB_ASIA_ID, "TXT_KEY_IMMIGRATION_MANAGER_ASIA", xLink)
 
 	def drawTab(self, eTab, tabID, sTabText, xLink):
-		if (data.iCurrentImmigrationManagerTab != eTab):
+		if (data.iCurrentImmigrationManagerTab == eTab):
+			szText = u"<font=4>" + localText.getColorText(sTabText, (), gc.getInfoTypeForString("COLOR_YELLOW")).upper() + "</font>"
+		elif objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, eTab):
 			szText = u"<font=4>" + localText.getText(sTabText, ()).upper() + "</font>"
 		else:
-			szText = u"<font=4>" + localText.getColorText(sTabText, (), gc.getInfoTypeForString("COLOR_YELLOW")).upper() + "</font>"
+			szText = u"<font=4>" + localText.getColorText(sTabText, (), gc.getInfoTypeForString("COLOR_GREY")).upper() + "</font>"
 		self.getScreen().setText(tabID, "", szText, CvUtil.FONT_LEFT_JUSTIFY, xLink, self.screenWidgetData[SCREEN_HEIGHT] - 42, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		return xLink + CyInterface().determineWidth(szText) + self.screenWidgetData[SPACING]
 
@@ -395,22 +410,21 @@ class CvImmigrationManager:
 		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
 		screen.setStackedBarColors( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
 		
-		szText = "TODO String"
-		#szText = GPUtil.getGreatPeopleText(pGPCity, iGPTurns, GP_BAR_WIDTH, MainOpt.isGPBarTypesNone(), MainOpt.isGPBarTypesOne(), True)
-		szText = u"<font=2>%s</font>" % (szText)
-		screen.setLabel("ImmigrationProgressBarText", "", szText, CvUtil.FONT_CENTER_JUSTIFY | CvUtil.FONT_CENTER_VERTICALLY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1)
-		
-		#screen.hide( IMMIGRATION_PROGRESS_BAR )
-		
 		fThreshold = float(objImmigrationUtils.getImmigrationThreshold(gc.getActivePlayer(), data.iCurrentImmigrationManagerTab))
 		fRate = gc.getActivePlayer().getCommerceRate(CommerceTypes.COMMERCE_IMMIGRATION)
-		fFirst = gc.getActivePlayer().getImmigration() / fThreshold
+		fFirst = gc.getActivePlayer().getImmigration()
+		iTurns = int((fThreshold - fFirst) / fRate)
 
-		screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_STORED, fFirst )
-		if ( fFirst == 1 ):
+		szText = u"%c in %d Turns" %(CyTranslator().getText("[ICON_IMMIGRANT]", ()), iTurns)
+		szText = u"<font=20>%s</font>" % (szText)
+		screen.setLabel("ImmigrationProgressBarText", "", szText, CvUtil.FONT_CENTER_JUSTIFY | CvUtil.FONT_CENTER_VERTICALLY, self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_X], self.screenWidgetData[IMMIGRATION_PROGRESS_BAR_TEXT_Y], 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_IMMIGRATION_PROGRESS_BAR, -1, -1)
+
+		fFirstPercent = fFirst / fThreshold
+		screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_STORED, fFirstPercent )
+		if ( fFirstPercent == 1 ):
 			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold )
 		else:
-			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold / ( 1 - fFirst ) )
+			screen.setBarPercentage( IMMIGRATION_PROGRESS_BAR, InfoBarTypes.INFOBAR_RATE, fRate / fThreshold / ( 1 - fFirstPercent ) )
 
 		screen.show( IMMIGRATION_PROGRESS_BAR )
 		
@@ -524,6 +538,9 @@ class CvImmigrationManager:
 		# Hire the mercenary for the player
 		objImmigrationUtils.placeMercenary(iMercenary, iPlayer, iHomeland)
 
+		# Update the available mercenaries in the available mercenaries panel
+		self.populateAvailableColonistsPanel(screen)
+		self.populateAvailableMercenariesPanel(screen)
 		self.populateEarnedImmigrantsPanel(screen)
 
 				
@@ -615,15 +632,15 @@ class CvImmigrationManager:
 		# Handle tab switching
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			bTabClicked = True
-			if (inputClass.getFunctionName() == self.TAB_NORTH_EUROPE_ID):
+			if inputClass.getFunctionName() == self.TAB_NORTH_EUROPE_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandNorthEurope):
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_NORTH_EUROPE
-			elif (inputClass.getFunctionName() == self.TAB_SOUTH_EUROPE_ID):
+			elif inputClass.getFunctionName() == self.TAB_SOUTH_EUROPE_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandSouthEurope):
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_SOUTH_EUROPE
-			elif (inputClass.getFunctionName() == self.TAB_AFRICA_ID):
+			elif inputClass.getFunctionName() == self.TAB_AFRICA_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandAfrica):
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_AFRICA
-			elif (inputClass.getFunctionName() == self.TAB_SIBERIA_ID):
+			elif inputClass.getFunctionName() == self.TAB_SIBERIA_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandSiberia):
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_SIBERIA
-			elif (inputClass.getFunctionName() == self.TAB_ASIA_ID):
+			elif inputClass.getFunctionName() == self.TAB_ASIA_ID and objImmigrationUtils.canEarnImmigrants(self.iActivePlayer, iHomelandAsia):
 				data.iCurrentImmigrationManagerTab = IMMIGRATION_MANAGER_TAB_ASIA
 			else:
 				bTabClicked = False

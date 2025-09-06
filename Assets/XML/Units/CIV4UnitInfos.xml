@@ -2048,9 +2048,9 @@
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
-			<Class>UNITCLASS_COLONIST</Class>
+			<Class>UNITCLASS_IMMIGRANT</Class>
 			<Type>UNIT_IMMIGRANT</Type>
-			<Capture>UNITCLASS_COLONIST</Capture>
+			<Capture>UNITCLASS_IMMIGRANT</Capture>
 			<Domain>DOMAIN_LAND</Domain>
 			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
 			<Description>TXT_KEY_UNIT_IMMIGRANT</Description>
@@ -2064,6 +2064,12 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
+			<GreatPeoples>
+				<GreatPeople>
+					<GreatPeopleType>SPECIALIST_IMMIGRANT</GreatPeopleType>
+					<bGreatPeople>1</bGreatPeople>
+				</GreatPeople>
+			</GreatPeoples>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -11981,170 +11987,6 @@
 			</UnitMeshGroups>
 			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 			<bGraphicalOnly>1</bGraphicalOnly>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_OLD_WORLD_ART</Class>
-			<Type>UNIT_OLD_WORLD_ART</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_ARTIST</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_OLD_WORLD_ART</Description>
-			<Civilopedia>TXT_KEY_UNIT_OLD_WORLD_ART_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_OLD_WORLD_ART_STRATEGY</Strategy>
-			<Advisor>ADVISOR_CULTURE</Advisor>
-			<bNukeImmune>1</bNukeImmune>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_ARTIST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_CULTURE</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-			</Flavors>
-			<iCost>-1</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iGreatWorkCulture>500</iGreatWorkCulture>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>1</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ART</EarlyArtDefineTag>
-					<LateArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ART</LateArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_OLD_WORLD_ASSETS</Class>
-			<Type>UNIT_OLD_WORLD_ASSETS</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_MERCHANT</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_OLD_WORLD_ASSETS</Description>
-			<Civilopedia>TXT_KEY_UNIT_OLD_WORLD_ASSETS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_OLD_WORLD_ASSETS_STRATEGY</Strategy>
-			<Advisor>ADVISOR_GROWTH</Advisor>
-			<bNukeImmune>1</bNukeImmune>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_MERCHANT</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-			</Flavors>
-			<iCost>-1</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iBaseTrade>500</iBaseTrade>
-			<iAsset>2</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>1</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ASSETS</EarlyArtDefineTag>
-					<LateArtDefineTag>ART_DEF_UNIT_OLD_WORLD_ASSETS</LateArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-		</UnitInfo>
-		<UnitInfo>
-			<Class>UNITCLASS_OLD_WORLD_INNOVATIONS</Class>
-			<Type>UNIT_OLD_WORLD_INNOVATIONS</Type>
-			<Special>SPECIALUNIT_PEOPLE</Special>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_SCIENTIST</DefaultUnitAI>
-			<Description>TXT_KEY_UNIT_OLD_WORLD_INNOVATIONS</Description>
-			<Civilopedia>TXT_KEY_UNIT_OLD_WORLD_INNOVATIONS_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_OLD_WORLD_INNOVATIONS_STRATEGY</Strategy>
-			<Advisor>ADVISOR_SCIENCE</Advisor>
-			<bNukeImmune>1</bNukeImmune>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_SCIENTIST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_SCIENCE</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_ADMIN</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GOLD</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_PRODUCTION</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_RELIGION</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_CULTURE</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_GROWTH</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-				<Flavor>
-					<FlavorType>FLAVOR_ESPIONAGE</FlavorType>
-					<iFlavor>1</iFlavor>
-				</Flavor>
-			</Flavors>
-			<iCost>-1</iCost>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
-			<iNukeRange>-1</iNukeRange>
-			<iBaseDiscover>500</iBaseDiscover>
-			<iAsset>5</iAsset>
-			<UnitMeshGroups>
-				<iGroupSize>1</iGroupSize>
-				<fMaxSpeed>1.75</fMaxSpeed>
-				<fPadTime>1</fPadTime>
-				<iMeleeWaveSize>1</iMeleeWaveSize>
-				<iRangedWaveSize>1</iRangedWaveSize>
-				<UnitMeshGroup>
-					<iRequired>1</iRequired>
-					<EarlyArtDefineTag>ART_DEF_UNIT_OLD_WORLD_INNOVATIONS</EarlyArtDefineTag>
-					<LateArtDefineTag>ART_DEF_UNIT_OLD_WORLD_INNOVATIONS</LateArtDefineTag>
-				</UnitMeshGroup>
-			</UnitMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
 		</UnitInfo>
 		<UnitInfo>
 			<Class>UNITCLASS_SLAVE_REVOLT</Class>
