@@ -1,0 +1,463 @@
+# coding: utf-8
+
+from Core import *
+from CityNameTranslations import *
+
+from RFCUtils import canEverRespawn
+from Files import FileMap
+from Events import handler
+
+
+### CSV CITY NAME MAP ###
+
+city_names = FileMap("Cities.csv")
+
+
+### CONSTANTS ###
+
+dBaseLanguages = {
+	iMaya: (iMayan,),
+	iZapotec: (iLocal,),
+	iTeotihuacan: (iLocal,),
+	iTiwanaku: (iLocal,),
+	iWari: (iLocal,),
+	iMississippi: (iMississippi,),
+	iPuebloan: (iLocal,),
+	iMuisca: (iLocal,),
+	iNorse: (iNordic, iSwedish,),
+	iChimu: (iLocal),
+	iInuit: (iLocal),
+	iInca: (iQuechua,),
+	iPurepecha: (iLocal,),
+	iAztecs: (iNahuatl,),
+	iHaudenosaunee: (iLocal,),
+	iLakota: (iLocal,),
+	iSpain: (iSpanish,),
+	iPortugal: (iPortuguese,),
+	iEngland: (iEnglish,),
+	iFrance: (iFrench,),
+	iNetherlands: (iDutch,),
+	iHawaii: (iLocal,),
+	iRussia: (iRussian,),
+	iAmerica: (iAmerican, iEnglish),
+	iHaiti: (iFrench,),
+	iArgentina: (iArgentinian, iSpanish),
+	iMexico: (iMexican, iSpanish),
+	iColombia: (iSpanish,),
+	iPeru: (iSpanish,),
+	iBrazil: (iBrazilian, iPortuguese),
+	iVenezuela: (iSpanish,),
+	iCanada: (iEnglish, iFrench),
+}
+
+
+### EVENT HANDLERS ###
+
+@handler("cityBuilt")
+def onCityBuilt(city):
+	checkName(city, bFound=True)
+
+
+@handler("cityAcquired")
+def onCityAcquired(iOwner, iPlayer, city):
+	clearPlayerRenamed(city)
+	checkName(city)
+
+
+@handler("cityRazed")
+def onCityRazed(city):
+	clearChanges(city)
+
+
+@handler("playerCityRename")
+def onCityRename(city, name):
+	if name:
+		applyPlayerRenamed(city)
+	else:
+		clearPlayerRenamed(city)
+		checkName(city)
+
+
+@handler("techAcquired")
+def onTechAcquired(iTech, iTeam, iPlayer):
+	if infos.techs().where(lambda t: infos.tech(iTech).getEra() == infos.tech(t).getEra()).count() == 1:
+		updateNames(iPlayer)
+
+
+@handler("playerChangeStateReligion")
+def onStateReligionChange(iPlayer, iReligion):
+	updateNames(iPlayer)
+
+
+@handler("revolution")
+def onRevolution(iPlayer):
+	updateNames(iPlayer)
+
+
+@handler("playerPeriodChange")
+def onPeriodChange(iPlayer, iPeriod):
+	updateNames(iPlayer)
+
+
+@handler("greatPersonBorn")
+def onGreatPersonBorn(unit, iPlayer):
+	updateNames(iPlayer)
+
+
+### SCENARIOS ###
+
+
+def setupScenario():
+	dRelocated = {}
+	dRenamed = {}
+	# MacAurther TODO
+	if scenario() == i1500AD:
+		dRelocated = {
+		}
+		
+		dRenamed = {
+		}
+	
+	elif scenario() == i1750AD:
+		dRelocated = {
+		}
+		
+		dRenamed = {
+		}
+	
+	data.dRelocatedCities.update(dRelocated)
+	data.dRenamedCities.update(dRenamed)
+
+
+### LANGUAGES ###
+
+def getPrimaryLanguages(identifier):
+	iCiv = civ(identifier)
+		
+	if iCiv in [iMaya, iAztecs]: # MacAurther TODO: Other natives here
+		if player(identifier).getStateReligion() in [iOrthodoxy, iCatholicism, iProtestantism] or team(identifier).isAVassal():
+			return (iSpanish,) + dBaseLanguages.get(iCiv, tuple())
+	
+	return dBaseLanguages.get(iCiv, tuple())
+
+
+def getLocalLanguages(tile):
+	iRegion = plot_(tile).getRegionID()
+	
+	if iRegion == rHornOfAfrica:
+		return iSomali, iLocal
+	
+	elif iRegion == rManchuria:
+		return iManchu, iLocal
+	
+	elif iRegion in [rMaghreb, rSahara]:
+		return iBerber, iLocal
+	
+	return (iLocal,)
+
+
+class Languages(object):
+	
+	def __init__(self, identifier, tile):
+		self.identifier = identifier
+		self.tile = tile
+		
+		#print "get languages for %s on %s" % (name(identifier), getBaseName(tile))
+		
+	def __iter__(self):
+		for iLanguage in getPrimaryLanguages(self.identifier):
+			#print "yield primary: %s" % iLanguage
+			yield iLanguage
+		
+		local_civs = self.getLocalLanguageCivs()
+		local_civs = local_civs.where(self.isValid)
+		
+		if self.plot.getRegionID() in lAmerica and True not in data.dFirstContactConquerors.values():
+			local_civs = local_civs.group(iCivGroupAmerica)
+		
+		similar_civs, different_civs = local_civs.split(self.isSimilar)
+		
+		#print "similar: %s" % [(infos.civ(iCiv).getText(), self.getSortingKey(iCiv)) for iCiv in similar_civs.sort(self.getSortingKey, reverse=True)]
+		#print "different: %s" % [(infos.civ(iCiv).getText(), self.getSortingKey(iCiv)) for iCiv in different_civs.sort(self.getSortingKey, reverse=True)]
+		
+		for iSimilarCiv in similar_civs.sort(self.getSortingKey, reverse=True):
+			for iLanguage in getPrimaryLanguages(iSimilarCiv):
+				#print "yield similar for %s: %s" % (infos.civ(iSimilarCiv).getText(), iLanguage)
+				yield iLanguage
+		
+		for iLanguage in getLocalLanguages(self.tile):
+			#print "yield local: %s" % iLanguage
+			yield iLanguage
+		
+		for iDifferentCiv in different_civs.sort(self.getSortingKey, reverse=True):
+			for iLanguage in getPrimaryLanguages(iDifferentCiv):
+				#print "yield different for %s: %s" % (infos.civ(iDifferentCiv).getText(), iLanguage)
+				yield iLanguage
+	
+	@property
+	def iCiv(self):
+		return civ(self.identifier)
+	
+	@property
+	def plot(self):
+		return plot_(self.tile)
+	
+	@property
+	def city(self):
+		return city_(self.tile)
+	
+	@property
+	def player(self):
+		return player(identifier)
+	
+	def getLocalLanguageCivs(self):
+		base_name, changed_name = getTileNames(self.tile)
+		
+		tile_languages = Translations.of(changed_name).getLanguages()
+		
+		if base_name != changed_name:
+			tile_languages |= Translations.of(base_name).getLanguages()
+			
+		local_civs = [iCiv for iCiv, tLanguages in dBaseLanguages.items() if tile_languages & set(tLanguages)]
+		
+		return civs.of(*local_civs)
+	
+	def isPastBirth(self, iCiv):
+		return since(year(dBirth[iCiv])) > 0 or (self.plot.getSettlerValue(iCiv) > 0 and self.isConnected(iCiv))
+	
+	def isBeforeFall(self, iCiv):
+		return until(year(dFall[iCiv])) > 0 or canEverRespawn(iCiv)
+	
+	def isValidMinor(self, iCiv):
+		return is_minor(self.identifier) and self.plot.getSettlerValue(iCiv) >= 5
+	
+	def isValidCiv(self, iCiv):
+		return self.isPastBirth(iCiv) and self.isBeforeFall(iCiv)
+	
+	def isValid(self, iCiv):
+		return self.isValidMinor(iCiv) or self.isValidCiv(iCiv)
+	
+	def isSameGroup(self, iCiv):
+		return any(self.iCiv in group and iCiv in group for group in dCivGroups.values())
+	
+	def isConnected(self, iCiv):
+		return iCiv in dNeighbours[self.iCiv] or iCiv in dInfluences[self.iCiv]
+	
+	def isEverOwned(self, iCiv):
+		return self.city and self.city.isEverOwnedCiv(iCiv)
+	
+	def isSimilar(self, iCiv):
+		return self.isSameGroup(iCiv) or self.isConnected(iCiv) or (is_minor(self.identifier) and self.isEverOwned(iCiv))
+	
+	def isRegionalCivGroup(self, iCiv):
+		return self.isEverOwned(iCiv) or any(iCiv in dCivGroups[iGroup] and self.plot.getRegionID() in dCivGroupRegions[iGroup] for iGroup in range(iNumCivGroups))
+	
+	def getValue(self, iCiv):
+		if player(iCiv).isExisting():
+			return self.plot.getSettlerValue(iCiv)
+		
+		if data.civs[iCiv].iLastTurnAlive > 0:
+			return until(data.civs[iCiv].iLastTurnAlive)
+		
+		return -until(year(dBirth[iCiv]))
+	
+	def getCulture(self, iCiv):
+		return self.city and self.city.getCivCulture(iCiv) or 0
+	
+	def getSortingKey(self, iCiv):
+		return (
+			self.plot.getSettlerValue(iCiv) > 0,
+			self.isSameGroup(iCiv),
+			self.isConnected(iCiv),
+			self.isRegionalCivGroup(iCiv),
+			self.plot.getSettlerValue(iCiv) > 1,
+			self.getValue(iCiv),
+			self.getCulture(iCiv),
+		)
+
+
+### NAMES ###
+
+def getTileNames(tile):
+	base_name = city_names[tile]
+	
+	# relocated cities
+	relocated_name = data.dRelocatedCities.get(base_name, base_name)
+	
+	# renamed cities
+	renamed_name = data.dRenamedCities.get(relocated_name, relocated_name)
+	
+	return relocated_name, renamed_name
+
+
+def getBaseName(tile):
+	return city_names[tile]
+
+
+def getTranslations(identifier, tile):
+	tile_names = getTileNames(tile)
+	return getNameTranslations(identifier, tile, tile_name)
+
+
+def getNameTranslations(identifier, tile, tile_names):
+	for iLanguage, translations in getNameTranslationsByLanguage(identifier, tile, tile_names):
+		for translation in translations:
+			yield translation
+
+
+def getNameTranslationsByLanguage(identifier, tile, (base_name, tile_name)):
+	if base_name == tile_name:
+		return getNameTranslationsForTileByLanguage(identifier, tile, tile_name)
+
+	return interleave(
+		getNameTranslationsForTileByLanguage(identifier, tile, tile_name), 
+		getNameTranslationsForTileByLanguage(identifier, tile, base_name),
+	)
+
+
+def getNameTranslationsForTileByLanguage(identifier, tile, tile_name):
+	iCiv = civ(identifier)	
+	translations = Translations.of(tile_name)
+	
+	if translations.isSingle():
+		yield translations.getSingle()
+		return
+	
+	for iLanguage in Languages(identifier, tile):
+		yield iLanguage, translations[iLanguage]
+
+
+def getTranslation(identifier, tile, bFound=False):
+	tile_names = getTileNames(tile)
+	return getNameTranslation(identifier, tile, tile_names, bFound=bFound)
+
+
+def getNameTranslation(identifier, tile, (base_name, tile_name), bFound=False):
+	bRenaming = base_name == tile_name
+	for translation in getNameTranslations(identifier, tile, (base_name, tile_name)):
+		if translation.isApplicable(identifier, tile, bFound=bFound, bRenaming=bRenaming):
+			return translation
+
+
+def updateAllNames():
+	for iPlayer in players.all():
+		updateNames(iPlayer)
+
+
+def updateNames(iPlayer):
+	for city in cities.owner(iPlayer):
+		checkName(city, bNotify=True)
+
+
+def checkName(city, bFound=False, bNotify=False):
+	if location(city) in data.playerRenamed:
+		return
+	
+	translation = getTranslation(civ(city), city, bFound=bFound)
+	if translation:
+		applyName(city, translation, bNotify=bNotify)
+
+
+def applyName(city, translation, bNotify=False):
+	current_name = city.getName()	
+	if current_name == translation.name:
+		return
+	
+	if translation.bRelocation:
+		applyRelocation(city, translation)
+		return
+	
+	if translation.bRenaming:
+		applyRenaming(city, translation)
+		return
+		
+	city.setName(translation.name, False)
+	
+	if bNotify:
+		message(city.getOwner(), "TXT_KEY_MESSAGE_CITY_NAME_CHANGE", current_name, translation.name, location=city, button='Art/Interface/Buttons/Actions/FoundCity.dds')
+
+
+def applyRelocation(city, translation):
+	tile_name = city_names[city]
+	if tile_name == translation.name:
+		return
+	
+	current_relocated_name = data.dRelocatedCities.get(tile_name, tile_name)
+	if current_relocated_name in data.dRenamedCities:
+		del data.dRenamedCities[current_relocated_name]
+	
+	data.dRelocatedCities[tile_name] = translation.name
+	checkName(city)
+
+
+def applyRenaming(city, translation):
+	tile_name = city_names[city]
+	tile_name = data.dRelocatedCities.get(tile_name, tile_name)
+	
+	if tile_name == translation.name:
+		return
+	
+	data.dRenamedCities[tile_name] = translation.name
+	checkName(city)
+
+
+def getDisplayName(identifier, tile):
+	tile_names = getTileNames(tile)
+	return getDisplayNameForName(identifier, tile, tile_names)
+
+
+def getDisplayNameForName(identifier, tile, tile_names):
+	base_name, tile_name = tile_names
+	
+	bFound = not plot_(tile).isCity()
+	translation = getNameTranslation(identifier, tile, (base_name, tile_name), bFound=bFound)
+	
+	if not translation:
+		return ""
+	
+	if translation.name == "?":
+		return ""
+	
+	if translation.bRenaming or translation.bRelocation:
+		if translation.name != tile_name:
+			return getDisplayNameForName(identifier, tile, (translation.name, translation.name))
+	
+	return translation.name
+
+
+def getNameEvolution(identifier, tile):
+	tile_names = getTileNames(tile)
+	bFound = not plot_(tile).isCity()
+	
+	for iLanguage, translations in getNameTranslationsByLanguage(identifier, tile, tile_names):
+		translations = list(translations)
+		for index, translation in enumerate(translations):
+			if translation.isApplicable(identifier, tile, bFound=bFound):
+				sequence = [t.name for t in translations[:index] if t.isEraSpecific(bFound=bFound)] + [translation.name]
+				if sequence:
+					return " -> ".join(reversed([entry for entry in sequence if entry != "?"]))
+	
+	return getDisplayName(identifier, tile)
+
+
+def clearChanges(city):
+	base_name = city_names[city]
+	
+	if base_name in data.dRelocatedCities:
+		del data.dRelocatedCities[base_name]
+	
+	if base_name in data.dRenamedCities:
+		del data.dRenamedCities[base_name]
+	
+	clearPlayerRenamed(city)
+
+
+def applyPlayerRenamed(city):
+	data.playerRenamed.add(location(city))
+
+
+def clearPlayerRenamed(city):
+	tile = location(city)
+	
+	if tile in data.playerRenamed:
+		data.playerRenamed.remove(tile)

@@ -16,7 +16,7 @@ import re
 import types
 
 from sets import Set
-from itertools import groupby
+from itertools import groupby, chain
 from datetime import datetime
 
 from BugEventManager import g_eventManager as events
@@ -61,7 +61,8 @@ def current_time():
 
 
 def unique(iterable):
-	return [key for key, value in groupby(iterable)]
+	elements = list(iterable)
+	return sorted(set(elements), key=elements.index)
 
 
 def until(iTurn):
@@ -125,9 +126,14 @@ def isWonder(iBuilding):
 	return isWorldWonderClass(infos.building(iBuilding).getBuildingClassType())
 
 
-def log_with_trace(context):
-	print "%s called near:" % context
+def log_with_trace(context = ""):
+	if context:
+		print "%s called near:" % context
 	stacktrace()
+
+
+def log_named(statement, **kwargs):
+	print "%s: %s" % (statement, ", ".join("%s=%s" % (key, value) for key, value in kwargs.items()))
 
 
 # TODO: is there a right equal or right not equal to add to Civ so we can do iPlayer == iEgypt and convert iPlayer to Civ implicitly?
@@ -167,12 +173,12 @@ def stacktrace():
 	print '\n'.join('File "%s", line %d, in %s' % (line[0], line[1], line[2]) for line in extract_stack())
 
 
-def itemize(iterable, format_func = lambda x: x, item_char = bullet):
-	return item_char + (newline + item_char).join(format_func(i) for i in iterable)
+def itemize(iterable, format_func=lambda x: x, item_char=bullet, linebreak_char=newline):
+	return item_char + (linebreak_char + item_char).join(format_func(i) for i in iterable)
 
 
 def autoplay():
-	return year() < year(dBirth[active()])
+	return data.iBeforeObserverSlot == -1 and year() < year(dBirth[active()])
 
 
 def spread(iterable, size, offset=0):
@@ -264,7 +270,7 @@ def log(func):
 	def logged_func(*args, **kwargs):
 		print "Begin %s" % signature(func, *args, **kwargs)
 		result = func(*args, **kwargs)
-		print "Complete %s" % func.__name__
+		print "Complete %s: %s" % (func.__name__, result)
 		return result
 	
 	return logged_func
@@ -418,6 +424,10 @@ def flatten(iterables):
 	for iterable in iterables:
 		for element in iterable:
 			yield element
+
+
+def interleave(*iterables):
+	return chain(*zip(*iterables))
 
 
 def move(unit, destination):
@@ -587,6 +597,10 @@ def encode(text):
 	return text
 
 
+def latin1(text):
+	return text.encode("latin-1", "xmlcharrefreplace")
+
+
 def text(key, *format):
 	return translator.getText(str(key), tuple(format))
 	
@@ -670,11 +684,11 @@ def chance(iPercentage):
 	return rand(100) <= iPercentage
 	
 	
-def random_entry(iterable):
+def random_entry(iterable, otherwise=None):
 	if not iterable:
-		return None
+		return otherwise
 		
-	return iterable[rand(len(iterable))]
+	return random.choice(iterable)
 	
 
 def name(identifier):
@@ -957,18 +971,18 @@ class EntityCollection(object):
 	def all_if_any(self, condition):
 		return self.any() and self.all(condition)
 		
-	def random(self):
-		return random_entry(self.entities())
+	def random(self, otherwise=None):
+		return random_entry(self.entities(), otherwise=otherwise)
 		
 	def get(self, function = lambda x: x):
 		return [function(e) for e in self.entities()]
 		
-	def first(self):
-		if not self: return None
+	def first(self, otherwise=None):
+		if not self: return otherwise
 		return self.entities()[0]
 	
-	def last(self):
-		if not self: return None
+	def last(self, otherwise=None):
+		if not self: return otherwise
 		return self.entities()[self.count()-1]
 		
 	def one(self):
@@ -984,6 +998,24 @@ class EntityCollection(object):
 		iSampleSize = min(iSampleSize, len(self))
 		if iSampleSize <= 0: return self.empty()
 		return self.copy(random.sample(self._keys, iSampleSize))
+	
+	def sample_priority(self, iSampleSize, priority_func):
+		if not self:
+			return self.empty()
+		
+		iSampleSize = min(iSampleSize, len(self))
+		result = self.empty()
+		
+		for key, group in self.grouped(priority_func):
+			if iSampleSize <= 0:
+				return result
+			
+			sampled = group.sample(iSampleSize)
+			
+			iSampleSize -= len(sampled)
+			result += sampled
+		
+		return result		
 		
 	def buckets(self, *conditions):
 		rest = lambda e: not any(condition(e) for condition in conditions)
@@ -999,7 +1031,7 @@ class EntityCollection(object):
 		return self.copy(self._keys[:iSplit]), self.copy(self._keys[iSplit:])
 	
 	def grouped(self, func):
-		return [(key, self.copy(group)) for key, group in groupby(self.sort(func)._keys, lambda key: func(self._factory(key)))]
+		return [(key, self.copy(group)) for key, group in groupby(self.sort(func, reverse=True)._keys, lambda key: func(self._factory(key)))]
 		
 	def sort(self, metric, reverse=False):
 		return self.copy(sort(self._keys, key=lambda k: metric(self._factory(k)), reverse=reverse))
@@ -1030,6 +1062,14 @@ class EntityCollection(object):
 		
 	def minimum(self, metric):
 		return find_min(self.entities(), metric).result
+		
+	def where_maximum(self, metric):
+		iMaximum = find_max(self.entities(), metric).value
+		return self.where(lambda e: metric(e) == iMaximum)
+	
+	def where_minimum(self, metric):
+		iMinimum = find_min(self.entities(), metric).value
+		return self.where(lambda e: metric(e) == iMinimum)
 		
 	def rank(self, key, metric):
 		sorted_keys = sort(self._keys, lambda k: metric(self._factory(k)), True)
@@ -1105,6 +1145,10 @@ class EntityCollection(object):
 	
 	def set(self):
 		return set(self._keys)
+	
+	# TODO: test
+	def map(self, func):
+		return self.copy([self._keyify(mapped) for mapped in self.get(func)])
 	
 	def format(self, separator=",", final_separator=None, formatter=lambda x: x):
 		if final_separator is None:
@@ -1199,10 +1243,20 @@ class PlotFactory:
 		return sum(areas, self.none())
 
 	def birth(self, identifier, extended=None):
-		if extended is None: extended = isExtendedBirth(identifier)
-		if identifier in dExtendedBirthArea and extended:
-			return self.area(dExtendedBirthArea, dBirthAreaExceptions, identifier)
-		return self.area(dBirthArea, dBirthAreaExceptions, identifier)
+		if extended is None: 
+			extended = isExtendedBirth(identifier)
+		
+		if extended:
+			if identifier in dExtendedBirthArea:
+				if identifier in dExtendedBirthAreaExceptions:
+					return self.area(dExtendedBirthArea, dExtendedBirthAreaExceptions, identifier)
+				
+				return self.area(dExtendedBirthArea, dBirthAreaExceptions, identifier)
+		
+		if identifier in dBirthArea:
+			return self.area(dBirthArea, dBirthAreaExceptions, identifier)
+		
+		return self.core(identifier)
 
 	def core(self, identifier):
 		iPeriod = player(identifier).getPeriod()
@@ -1210,18 +1264,6 @@ class PlotFactory:
 			return self.area(dPeriodCoreArea, dPeriodCoreAreaExceptions, iPeriod)
 		return self.area(dCoreArea, dCoreAreaExceptions, identifier)
 
-	def normal(self, identifier):
-		iPeriod = player(identifier).getPeriod()
-		if iPeriod in dPeriodNormalArea:
-			return self.area(dPeriodNormalArea, dPeriodNormalAreaExceptions, iPeriod)
-		return self.area(dNormalArea, dNormalAreaExceptions, identifier)
-
-	def broader(self, identifier):
-		iPeriod = player(identifier).getPeriod()
-		if iPeriod in dPeriodBroaderArea:
-			return self.rectangle(*dPeriodBroaderArea[identifier])
-		return self.rectangle(*dBroaderArea[identifier])
-	
 	def expansion(self, identifier):
 		if identifier not in dExpansionArea:
 			return self.none()
@@ -1229,8 +1271,8 @@ class PlotFactory:
 
 	def respawn(self, identifier):
 		if identifier in dRespawnArea:
-			return self.rectangle(*dRespawnArea[identifier])
-		return self.normal(identifier)
+			return self.area(dRespawnArea, dRespawnAreaExceptions, identifier)
+		return self.birth(identifier)
 	
 	def capital(self, identifier):
 		iPeriod = player(identifier).getPeriod()
@@ -1250,6 +1292,10 @@ class PlotFactory:
 		if identifier in dNewCapitals:
 			return plot(dNewCapitals[identifier])
 		return self.respawnCapital(identifier)
+	
+	def sites(self, identifier):
+		pPlayer = player(identifier)
+		return self.of([pPlayer.AI_getCitySite(i) for i in range(pPlayer.AI_getNumCitySites())])
 
 
 class Locations(EntityCollection):
@@ -1287,7 +1333,11 @@ class Locations(EntityCollection):
 			raise Exception("Expected instance of Locations, received: %s" % locations)
 			
 		permutations = [(x, y) for x in self.shuffle().entities() for y in locations.shuffle().entities()]
-		return find_min(permutations, lambda (x, y): distance(x, y)).result
+		result = find_min(permutations, lambda (x, y): distance(x, y)).result
+		if not result:
+			return None, None
+		
+		return result
 	
 	def closest_all(self, locations):
 		closest = self.closest_pair(locations)
@@ -1408,6 +1458,9 @@ class Plots(Locations):
 	
 	def edge(self):
 		return self.where(lambda p: plots.surrounding(p).any(lambda sp: sp not in self))
+	
+	def notowned(self):
+		return self.where(lambda p: not p.isOwned())
 
 
 class CitiesCorner:
@@ -1478,12 +1531,6 @@ class CityFactory:
 
 	def core(self, identifier):
 		return self.plots.core(identifier).cities()
-
-	def normal(self, identifier):
-		return self.plots.normal(identifier).cities()
-
-	def broader(self, identifier):
-		return self.plots.broader(identifier).cities()
 
 	def respawn(self, identifier):
 		return self.plots.respawn(identifier).cities()
@@ -1840,7 +1887,7 @@ class Players(EntityCollection):
 		return [(x, y) for x, y in permutations(self._keys, self._keys) if (identical and x == y) or x < y]
 		
 	def asCivs(self):
-		return [civ(p) for p in self.entities()]
+		return self.transform(Civilizations)
 	
 	def tech(self, iTech):
 		return self.where(lambda p: team(p).isHasTech(iTech))
@@ -1900,6 +1947,9 @@ class Civilizations(EntityCollection):
 	def before_fall(self):
 		return self.where(lambda c: year() < year(dFall[c]))
 	
+	def group(self, iGroup):
+		return self.where(lambda c: c in dCivGroups[iGroup])
+	
 
 class CivFactory(object):
 
@@ -1933,6 +1983,9 @@ class CreatedUnits(object):
 		return iter(self._units)
 	
 	def __add__(self, other):
+		if isinstance(other, CyUnit):
+			return CreatedUnits(self._units + [other])
+		
 		return CreatedUnits(self._units + other._units)
 		
 	def adjective(self, adjective):

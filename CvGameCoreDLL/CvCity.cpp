@@ -1460,8 +1460,14 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		}
 		else
 		{
+			CvPlot* pPlot = plot();
 			GET_PLAYER((PlayerTypes)iData1).acquireCity(this, false, true, true);
 			GET_PLAYER(getOwnerINLINE()).updateMaintenance(); // Leoreth
+
+			if (pPlot->isCity())
+			{
+				CvEventReporter::getInstance().cityGifted(pPlot->getPlotCity());
+			}
 		}
 		break;
 
@@ -4549,6 +4555,8 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange, bool bObsolet
 		GET_PLAYER(getOwnerINLINE()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
 
 		GET_PLAYER(getOwnerINLINE()).changeWondersScore(getWonderScore((BuildingClassTypes)(GC.getBuildingInfo(eBuilding).getBuildingClassType())) * iChange);
+
+		CvEventReporter::getInstance().buildingProcessed(this, eBuilding, iChange);
 	}
 
 	updateBuildingCommerce();
@@ -5183,6 +5191,7 @@ int CvCity::happyLevel() const
 	iHappiness += std::max(0, (getExtraHappiness() + GET_PLAYER(getOwnerINLINE()).getExtraHappiness()));
 	iHappiness += std::max(0, GC.getHandicapInfo(getHandicapType()).getHappyBonusByID(getOwner()));
 	iHappiness += std::max(0, getVassalHappiness());
+	iHappiness += std::max(0, getTempHappiness()); // Leoreth: more than +1 temporary happiness
 
 	if (getHappinessTimer() > 0)
 	{
@@ -5576,7 +5585,7 @@ int CvCity::getHurryCost(bool bExtra, int iProductionLeft, int iHurryModifier, i
 		int iExtraProduction = getExtraProductionDifference(iProduction, iModifier);
 		if (iExtraProduction > 0)
 		{
-			int iAdjustedProd = iProduction * iProduction;
+			uint iAdjustedProd = iProduction * iProduction;
 
 			// round up
 			iProduction = (iAdjustedProd + (iExtraProduction - 1)) / iExtraProduction;
@@ -5601,7 +5610,8 @@ int CvCity::getHurryGold(HurryTypes eHurry, int iHurryCost) const
 	}
 
 	iGold = (iHurryCost * GC.getHurryInfo(eHurry).getGoldPerProduction());
-
+	iGold /= 100; // Leoreth: hurry gold is times 100 now
+	
 	return std::max(1, iGold);
 }
 
@@ -6627,7 +6637,7 @@ int CvCity::calculateNumCitiesMaintenanceTimes100() const
 	// Leoreth: apply large empire penalty here
 	int iSizeThreshold = 6 + 3 * GET_PLAYER(getOwnerINLINE()).getCurrentEra();
 	int iMultiplier = 5; //(GET_PLAYER(getOwnerINLINE()).isHuman()) ? 10 : 5;
-	int iNumCities = GET_PLAYER(getOwnerINLINE()).getTotalPopulation() / iSizeThreshold;
+	int iNumCities = std::min(GET_PLAYER(getOwnerINLINE()).getNumCities(), GET_PLAYER(getOwnerINLINE()).getTotalPopulation() / iSizeThreshold);
 
 	if (iNumCities > 10)
 	{
@@ -8389,7 +8399,7 @@ int CvCity::getFreeSpecialist() const
 	int iTotalFreeSpecialists = m_iFreeSpecialist;
 
 	// Leoreth: most cultured cities free specialists civic effect
-	if (getCultureRank() < GC.getWorldInfo(GC.getMap().getWorldSize()).getTargetNumCities()-1)
+	if (isConnectedToCapital() && getCultureRank() < GC.getWorldInfo(GC.getMap().getWorldSize()).getTargetNumCities()-1)
 	{
 		iTotalFreeSpecialists += GET_PLAYER(getOwnerINLINE()).getCulturedCityFreeSpecialists();
 	}
@@ -10051,7 +10061,7 @@ int CvCity::getCommerceFromPercent(CommerceTypes eIndex, int iYieldRate) const
 
 	if (eIndex == COMMERCE_GOLD)
 	{
-        iCommerce += (iYieldRate - iCommerce - getCommerceFromPercent(COMMERCE_RESEARCH, iYieldRate) - getCommerceFromPercent(COMMERCE_CULTURE, iYieldRate) - getCommerceFromPercent(COMMERCE_ESPIONAGE, iYieldRate) - getCommerceFromPercent(COMMERCE_IMMIGRATION, iYieldRate));
+        iCommerce += (iYieldRate - iCommerce - getCommerceFromPercent(COMMERCE_RESEARCH, iYieldRate) - getCommerceFromPercent(COMMERCE_CULTURE, iYieldRate) - getCommerceFromPercent(COMMERCE_ESPIONAGE, iYieldRate) - getCommerceFromPercent(COMMERCE_IMMIGRATION, iYieldRate));	// MacAurther: Immigration
 	}
 
 	return iCommerce;
@@ -12343,7 +12353,7 @@ void CvCity::alterSpecialistCount(SpecialistTypes eIndex, int iChange)
 }
 
 
-int CvCity::getMaxSpecialistCount(SpecialistTypes eIndex) const
+int CvCity::getMaxSpecialistCount(SpecialistTypes eIndex, bool bIgnoreCivic) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumSpecialistInfos(), "eIndex expected to be < GC.getNumSpecialistInfos()");
@@ -12351,14 +12361,17 @@ int CvCity::getMaxSpecialistCount(SpecialistTypes eIndex) const
 	int iMaxSpecialistCount = m_paiMaxSpecialistCount[eIndex];
 
 	// Leoreth: unlimited specialist effects now only double available specialists
-	if (GET_PLAYER(getOwnerINLINE()).isSpecialistValid(eIndex))
+	if (!bIgnoreCivic && GET_PLAYER(getOwnerINLINE()).isSpecialistValid(eIndex))
 	{
 		iMaxSpecialistCount *= 2;
 	}
 
-	// MacAurther: Changing this functionality so that you don't need to "unlock" specialists before being able to use them in minimal civics
-	//return std::max(std::min(GET_PLAYER(getOwnerINLINE()).getPotentialSpecialistCount(eIndex), GET_PLAYER(getOwnerINLINE()).getMinimalSpecialistCount(eIndex)), iMaxSpecialistCount);
-	return std::max(GET_PLAYER(getOwnerINLINE()).getMinimalSpecialistCount(eIndex), iMaxSpecialistCount);
+
+
+	// Leoreth: extra specialist slots
+	iMaxSpecialistCount += GET_PLAYER(getOwnerINLINE()).getSpecialistExtraCount(eIndex);
+
+	return iMaxSpecialistCount;
 }
 
 
@@ -13246,7 +13259,7 @@ void CvCity::processVoteSourceBonus(VoteSourceTypes eVoteSource, bool bActive)
 					{
 						if (GC.getBuildingInfo((BuildingTypes)iBuilding).getReligionType() == eReligion)
 						{
-							changeBuildingCommerceChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iBuilding).getBuildingClassType(), (CommerceTypes)iCommerce, iChange);
+							changeBuildingCommerceChange((BuildingTypes)iBuilding, (CommerceTypes)iCommerce, iChange);
 						}
 					}
 				}
@@ -16430,7 +16443,7 @@ void CvCity::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredD
 
 		if (kEvent.getHappyTurns() != 0)
 		{
-			changeHappinessTimer(kEvent.getHappyTurns());
+			changeHappinessTimer(getTurns(kEvent.getHappyTurns())); // Leoreth: scaled by game speed
 		}
 
 		if (kEvent.getFood() != 0 || kEvent.getFoodPercent() != 0)
@@ -16701,8 +16714,18 @@ int CvCity::getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes
 	return 0;
 }
 
+void CvCity::setBuildingYieldChange(BuildingTypes eBuilding, YieldTypes eYield, int iChange)
+{
+	setBuildingYieldChange(GC.getBuildingInfo(eBuilding).getBuildingClass(), eYield, iChange);
+}
+
 void CvCity::setBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange)
 {
+	if (iChange <= 0)
+	{
+		iChange = 0;
+	}
+
 	if (iChange <= -1000 || iChange >= 1000)
 	{
 		logMajorError(CvWString::format(L"Unexpected value - setBuildingYieldChange(%s, %s, %d) - %s (%d, %d)", GC.getBuildingClassInfo(eBuildingClass).getText(), GC.getYieldInfo(eYield).getText(), iChange, getNameKey(), getX(), getY()), getX(), getY());
@@ -16741,6 +16764,11 @@ void CvCity::setBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldType
 
 		updateBuildingYieldChange(eBuildingClass, eYield, iChange);
 	}
+}
+
+void CvCity::changeBuildingYieldChange(BuildingTypes eBuilding, YieldTypes eYield, int iChange)
+{
+	changeBuildingYieldChange(GC.getBuildingInfo(eBuilding).getBuildingClass(), eYield, iChange);
 }
 
 void CvCity::changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange)
@@ -16790,8 +16818,18 @@ int CvCity::getBuildingCommerceChange(BuildingClassTypes eBuildingClass, Commerc
 	return 0;
 }
 
+void CvCity::setBuildingCommerceChange(BuildingTypes eBuilding, CommerceTypes eCommerce, int iChange)
+{
+	setBuildingCommerceChange(GC.getBuildingInfo(eBuilding).getBuildingClass(), eCommerce, iChange);
+}
+
 void CvCity::setBuildingCommerceChange(BuildingClassTypes eBuildingClass, CommerceTypes eCommerce, int iChange)
 {
+	if (iChange <= 0)
+	{
+		iChange = 0;
+	}
+
 	for (std::vector<BuildingCommerceChange>::iterator it = m_aBuildingCommerceChange.begin(); it != m_aBuildingCommerceChange.end(); ++it)
 	{
 		if ((*it).eBuildingClass == eBuildingClass && (*it).eCommerce == eCommerce)
@@ -16824,6 +16862,11 @@ void CvCity::setBuildingCommerceChange(BuildingClassTypes eBuildingClass, Commer
 
 		updateBuildingCommerce();
 	}
+}
+
+void CvCity::changeBuildingCommerceChange(BuildingTypes eBuilding, CommerceTypes eCommerce, int iChange)
+{
+	changeBuildingCommerceChange(GC.getBuildingInfo(eBuilding).getBuildingClass(), eCommerce, iChange);
 }
 
 void CvCity::changeBuildingCommerceChange(BuildingClassTypes eBuildingClass, CommerceTypes eCommerce, int iChange)
@@ -17122,6 +17165,11 @@ int CvCity::getBuildingHealthChange(BuildingClassTypes eBuildingClass) const
 	return 0;
 }
 
+void CvCity::setBuildingGreatPeopleRateChange(BuildingTypes eBuilding, int iChange)
+{
+	setBuildingGreatPeopleRateChange(GC.getBuildingInfo(eBuilding).getBuildingClass(), iChange);
+}
+
 void CvCity::setBuildingGreatPeopleRateChange(BuildingClassTypes eBuildingClass, int iChange)
 {
 	for (BuildingChangeArray::iterator it = m_aBuildingGreatPeopleRateChange.begin(); it != m_aBuildingGreatPeopleRateChange.end(); ++it)
@@ -17169,6 +17217,11 @@ void CvCity::setBuildingGreatPeopleRateChange(BuildingClassTypes eBuildingClass,
 	}
 }
 
+void CvCity::changeBuildingGreatPeopleRateChange(BuildingTypes eBuilding, int iChange)
+{
+	changeBuildingGreatPeopleRateChange(GC.getBuildingInfo(eBuilding).getBuildingClass(), iChange);
+}
+
 void CvCity::changeBuildingGreatPeopleRateChange(BuildingClassTypes eBuildingClass, int iChange)
 {
 	setBuildingGreatPeopleRateChange(eBuildingClass, getBuildingGreatPeopleRateChange(eBuildingClass) + iChange);
@@ -17212,6 +17265,8 @@ void CvCity::liberate(bool bConquest)
 
 	if (NO_PLAYER != ePlayer)
 	{
+		CvEventReporter::getInstance().cityLiberated(this);
+
 		int iOldOwnerCulture = getCultureTimes100(eOwner);
 		int iOldMasterLand = 0;
 		int iOldVassalLand = 0;
@@ -17328,7 +17383,7 @@ PlayerTypes CvCity::getLiberationPlayer(bool bConquest) const
 					{
 						iValue *= 3;
 					}
-					else if (plot()->getSettlerValue(getOwner()) > 90)
+					else if (plot()->getSettlerValue(getOwner()) > 0)
 					{
 						iValue *= 2;
 					}
@@ -17801,7 +17856,7 @@ int CvCity::calculateCultureCost(CvPlot* pPlot, bool bOrdering) const
 
 	if (bOrdering)
 	{
-		if (pPlot->getBonusType() < 0 && iCost >= 15)
+		if (pPlot->getBonusType() == NO_BONUS && iCost >= getTurns(15))
 		{
 			iExtraCost += 100;
 		}
@@ -18226,7 +18281,7 @@ ReligionTypes CvCity::disappearingReligion(ReligionTypes eNewReligion, bool bCon
 		eReligion = (ReligionTypes)iI;
 		if (eReligion != eNewReligion && GET_PLAYER(getOwnerINLINE()).isStateReligion() && GET_PLAYER(getOwnerINLINE()).getStateReligion() != eReligion)
 		{
-			if (isHasReligion(eReligion) && !isHolyCity(eReligion) && GET_PLAYER(getOwnerINLINE()).getSpreadType(plot(), eReligion) == RELIGION_SPREAD_NONE)
+			if (isHasReligion(eReligion) && !isHolyCity(eReligion) && GET_PLAYER(getOwnerINLINE()).getSpreadType(plot(), eReligion, false, true) == RELIGION_SPREAD_NONE)
 			{
 				religions.push_back(eReligion);
 			}
@@ -18246,7 +18301,7 @@ ReligionTypes CvCity::disappearingReligion(ReligionTypes eNewReligion, bool bCon
 	int iMaxReligions = std::max(2, 1 + getPopulation() / 5);
 
 	ReligionSpreadTypes eCurrentSpread;
-	ReligionSpreadTypes eNewReligionSpread = eNewReligion != NO_RELIGION ? GET_PLAYER(getOwnerINLINE()).getSpreadType(plot(), eNewReligion) : RELIGION_SPREAD_MINORITY;
+	ReligionSpreadTypes eNewReligionSpread = eNewReligion != NO_RELIGION ? GET_PLAYER(getOwnerINLINE()).getSpreadType(plot(), eNewReligion, false, true) : RELIGION_SPREAD_MINORITY;
 	religions.clear();
 
 	if (bConquest || getReligionCount() > iMaxReligions)
@@ -18256,7 +18311,7 @@ ReligionTypes CvCity::disappearingReligion(ReligionTypes eNewReligion, bool bCon
 			eReligion = (ReligionTypes)iI;
 			if (eReligion != eNewReligion && isHasReligion(eReligion) && GET_PLAYER(getOwnerINLINE()).getStateReligion() != eReligion)
 			{
-				eCurrentSpread = GET_PLAYER(getOwnerINLINE()).getSpreadType(plot(), eReligion);
+				eCurrentSpread = GET_PLAYER(getOwnerINLINE()).getSpreadType(plot(), eReligion, false, true);
 				if (eCurrentSpread <= eNewReligionSpread)
 				{
 					religions.push_back(eReligion);
@@ -19106,6 +19161,13 @@ bool CvCity::rebuild(EraTypes eEra)
 int CvCity::getRegionGroup() const
 {
 	return plot()->getRegionGroup();
+}
+
+int CvCity::getTempHappiness() const
+{
+	int iHappinessTurns = getTurns(GC.getDefineINT("TEMP_HAPPY_TURNS"));
+
+	return (getHappinessTimer() + iHappinessTurns - 1) / iHappinessTurns;
 }
 
 bool CvCity::populate()

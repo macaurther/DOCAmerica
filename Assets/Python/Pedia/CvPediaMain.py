@@ -493,7 +493,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 		hSpecialists = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_SPECIALIST", ())
 		lSatellites = []
 		hSatellites = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_SATELLITE", ())
-		lGreatSpecialistsDesc = []	# MacAurther: I was nervous about this overloading the lGreatSpecialists list from Consts (even though it doesn't)
+		lGreatSpecialists = []
 		hGreatSpecialists = CyTranslator().getText("TXT_KEY_PEDIA_HEADER_GREAT_SPECIALIST", ())
 
 		for iSpecialist in xrange(gc.getNumSpecialistInfos()):
@@ -502,7 +502,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 				continue
 			sSpecialist = SpecialistInfo.getType()
 			if sSpecialist.find("GREAT_") > -1:
-				lGreatSpecialistsDesc.append((SpecialistInfo.getDescription(), iSpecialist))
+				lGreatSpecialists.append((SpecialistInfo.getDescription(), iSpecialist))
 			elif SpecialistInfo.isSatellite():
 				lSatellites.append((SpecialistInfo.getDescription(), iSpecialist))
 			else:
@@ -510,20 +510,34 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 		lSpecialists.sort()
 		lSatellites.sort()
-		lGreatSpecialistsDesc.sort()
+		lGreatSpecialists.sort()
 		lSpecialists.insert(0, (hSpecialists, -1))
 		lSatellites.insert(0, (hSatellites, -1))
 		lSatellites.insert(0, ("", -1))
-		lGreatSpecialistsDesc.insert(0, (hGreatSpecialists, -1))
-		lGreatSpecialistsDesc.insert(0, ("", -1))
+		lGreatSpecialists.insert(0, (hGreatSpecialists, -1))
+		lGreatSpecialists.insert(0, ("", -1))
 
-		self.list = lSpecialists + lSatellites + lGreatSpecialistsDesc
+		self.list = lSpecialists + lSatellites + lGreatSpecialists
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_SPECIALIST, gc.getSpecialistInfo)
 
 
 
 	def placeTechs(self):
-		self.list = self.getSortedList(gc.getNumTechInfos(), gc.getTechInfo)
+		lTechs = []
+		dTechs = dict((iX, []) for iX in range(25))	# MacAurtheR: yay magic numbers. Remember to update this if num tech rows changes
+		
+		for iTech in range(gc.getNumTechInfos()):
+			techInfo = gc.getTechInfo(iTech)
+			dTechs[techInfo.getGridX()].append((techInfo.getGridY(), techInfo.getDescription(), iTech))
+		
+		for iX in range(23):
+			if lTechs:
+				lTechs.append(("", -1))
+			
+			for iY, szDescription, iTech in sorted(dTechs[iX]):
+				lTechs.append((szDescription, iTech))
+		
+		self.list = lTechs
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_TECH, gc.getTechInfo)
 
 
@@ -660,12 +674,25 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 	def placeBuildings(self):
 		lBuildings = []
-		for iBuilding in xrange(gc.getNumBuildingInfos()):
-			if getBuildingCategory(iBuilding) == 0:
-				if iBuilding == unique_building(self.iActivePlayer, iBuilding):
-					lBuildings.append((gc.getBuildingInfo(iBuilding).getDescription(), iBuilding))
+		dBuildings = dict((iEra, []) for iEra in range(iNumEras))
+		
+		for iBuilding in range(gc.getNumBuildingInfos()):
+			if getBuildingCategory(iBuilding) == 0 and iBuilding == unique_building(self.iActivePlayer, iBuilding):
+				iEra = gc.getBuildingInfo(iBuilding).getPrereqAndTech() >= 0 and gc.getTechInfo(gc.getBuildingInfo(iBuilding).getPrereqAndTech()).getEra() or iAncientEra
+				szDescription = gc.getBuildingInfo(iBuilding).getDescription()
+				dBuildings[iEra].append((szDescription, iBuilding))
+		
+		for iEra in range(iNumEras):
+			if not dBuildings[iEra]:
+				continue
 			
-		lBuildings.sort()
+			if lBuildings:
+				lBuildings.append(("", -1))
+			lBuildings.append((gc.getEraInfo(iEra).getDescription(), -1))
+			
+			for szDescription, iBuilding in sorted(dBuildings[iEra]):
+				lBuildings.append((szDescription, iBuilding))
+		
 		self.list = lBuildings
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, gc.getBuildingInfo)
 
@@ -695,11 +722,25 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 	def placeUniqueBuildings(self):
 		lBuildings = []
-		for iBuilding in xrange(gc.getNumBuildingInfos()):
+		dBuildings = dict((iEra, []) for iEra in range(iNumEras))
+		
+		for iBuilding in range(gc.getNumBuildingInfos()):
 			if getBuildingCategory(iBuilding) == 2 and not gc.getBuildingInfo(iBuilding).isGraphicalOnly():
-				lBuildings.append((gc.getBuildingInfo(iBuilding).getDescription(), iBuilding))
-
-		lBuildings.sort()
+				iEra = gc.getBuildingInfo(iBuilding).getPrereqAndTech() >= 0 and gc.getTechInfo(gc.getBuildingInfo(iBuilding).getPrereqAndTech()).getEra() or iAncientEra
+				szDescription = gc.getBuildingInfo(iBuilding).getDescription()
+				dBuildings[iEra].append((szDescription, iBuilding))
+		
+		for iEra in range(iNumEras):
+			if not dBuildings[iEra]:
+				continue
+			
+			if lBuildings:
+				lBuildings.append(("", -1))
+			lBuildings.append((gc.getEraInfo(iEra).getDescription(), -1))
+			
+			for szDescription, iBuilding in sorted(dBuildings[iEra]):
+				lBuildings.append((szDescription, iBuilding))
+		
 		self.list = lBuildings
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, gc.getBuildingInfo)
 		
@@ -735,14 +776,41 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 
 	def placeGreatWonders(self):
 		lBuildings = []
-		for iBuilding in xrange(gc.getNumBuildingInfos()):
+		dWonders = dict((iEra, []) for iEra in range(iNumEras))
+		
+		for iBuilding in range(gc.getNumBuildingInfos()):
 			if getBuildingCategory(iBuilding) == 5:
+				iEra = gc.getTechInfo(gc.getBuildingInfo(iBuilding).getPrereqAndTech()).getEra()
 				szDescription = gc.getBuildingInfo(iBuilding).getDescription().replace("The ", "")
+				dWonders[iEra].append((szDescription, iBuilding))
+		
+		for iEra in range(iNumEras):
+			if lBuildings:
+				lBuildings.append(("", -1))
+			lBuildings.append((gc.getEraInfo(iEra).getDescription(), -1))
+			
+			for szDescription, iBuilding in sorted(dWonders[iEra]):
 				lBuildings.append((szDescription, iBuilding))
-
-		lBuildings.sort()
+		
 		self.list = lBuildings
 		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, gc.getBuildingInfo)
+
+
+	def placeCivics(self):
+		lCivics = []
+		iPrevCategory = -1
+		for iCivic in xrange(gc.getNumCivicInfos()):
+			CivicInfo = gc.getCivicInfo(iCivic)
+			iCategory = CivicInfo.getCivicOptionType()
+			if iCategory > -1 and iCategory != iPrevCategory:
+				if lCivics != []:
+					lCivics.append(("", -1))
+				lCivics.append((gc.getCivicOptionInfo(iCategory).getDescription(), -1))
+			lCivics.append((CivicInfo.getDescription(), iCivic))
+			iPrevCategory = iCategory
+
+		self.list = lCivics
+		self.placeItems(WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIVIC, gc.getCivicInfo)
 
 
 
@@ -968,7 +1036,7 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 		UnitClassInfo = gc.getUnitClassInfo(UnitInfo.getUnitClassType())
 		iDefaultUnit = UnitClassInfo.getDefaultUnitIndex()
 
-		if UnitInfo.isGraphicalOnly() and not base_unit(iUnit) in [iNativeSlave1, iAfricanSlave2]:
+		if UnitInfo.isGraphicalOnly() and not base_unit(iUnit) in [iNativeSlave1, iAfricanSlave2]:	# MacAurther TODO: Consolidate slaves?
 			return -1
 		elif iDefaultUnit > -1 and iDefaultUnit != iUnit and not iUnit in [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2, iAfricanSlave2, iAfricanSlave3]:
 			return 2
@@ -1162,6 +1230,10 @@ class CvPediaMain(CvPediaScreen.CvPediaScreen):
 				if gc.getImprovementInfo(j).getDescription() == gc.getImprovementInfo(gc.getInfoTypeForString("IMPROVEMENT_WATER_WORKED")).getDescription():
 					list.pop(j)
 				if gc.getImprovementInfo(j).getDescription() == gc.getImprovementInfo(gc.getInfoTypeForString("IMPROVEMENT_CITY_RUINS")).getDescription():
+					list.pop(j)
+				if gc.getImprovementInfo(j).getDescription() == gc.getImprovementInfo(gc.getInfoTypeForString("IMPROVEMENT_TRIBE")).getDescription():
+					list.pop(j)
+				if gc.getImprovementInfo(j).getDescription() == gc.getImprovementInfo(gc.getInfoTypeForString("IMPROVEMENT_CONTACTED_TRIBE")).getDescription():
 					list.pop(j)
 	# END Filters
 

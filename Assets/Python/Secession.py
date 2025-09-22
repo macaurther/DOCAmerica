@@ -3,6 +3,8 @@ from RFCUtils import *
 from Locations import *
 from Resurrection import *
 
+import CityNames as cn
+
 	
 def secession(iPlayer, secedingCities):
 	data.setSecedingCities(iPlayer, secedingCities)
@@ -26,6 +28,7 @@ def secedeCities(iPlayer, secedingCities, bRazeMinorCities = False):
 	destroyedCities, cededCities = secedingCities.split(lambda city: bRazeMinorCities and canBeRazed(city))
 	
 	for city in destroyedCities:
+		cn.clearChanges(city)
 		player(iBarbarian).disband(city)
 		plot(city).setCulture(iPlayer, 0, True)
 	
@@ -105,7 +108,7 @@ def getCityClaim(city):
 	# claim based on original owner, unless lost a long time ago
 	iOriginalOwner = possibleClaims.ai().where(city.isOriginalOwner).first()
 	if iOriginalOwner is not None:
-		if plot(city).getPlayerSettlerValue(iOriginalOwner) >= 90:
+		if plot(city).getPlayerSettlerValue(iOriginalOwner) > 0:
 			if city.getGameTurnPlayerLost(iOriginalOwner) >= turn() - turns(50):
 				return civ(iOriginalOwner)
 	
@@ -118,7 +121,8 @@ def getCityClaim(city):
 	
 	# claim based on war targets: needs to be winning the war based on war success, not available to human player
 	closest = closestCity(city, same_continent=True)
-	warClaims = possibleClaims.without(active()).where(lambda p: team(p).isAtWar(team(iOwner).getID()) and player(p).getWarValue(*location(city)) >= 8 and team(p).AI_getWarSuccess(team(iOwner).getID()) > team(iOwner).AI_getWarSuccess(team(p).getID()))
+	warClaims = possibleClaims.without(active()).where(lambda p: team(p).isAtWar(team(iOwner).getID()) and plot(city).getPlayerWarValue(p) >= 4)
+	warClaims = warClaims.where(lambda p: team(p).AI_getAtWarCounter(player(iOwner).getTeam()) >= turns(10) and team(p).AI_getWarSuccess(player(iOwner).getTeam()) - team(iOwner).AI_getWarSuccess(player(p).getTeam()) >= (autoplay() and 0 or team(p).AI_getAtWarCounter(player(iOwner).getTeam())))
 	warClaims = warClaims.where(lambda p: not closest or closest.getOwner() == p or not team(iOwner).isAtWar(closest.getOwner()))
 	warClaims = warClaims.where(lambda p: closestCity(city, owner=p, same_continent=True) and distance(city, closestCity(city, owner=p, same_continent=True)) <= 12)
 	if warClaims:
@@ -153,8 +157,15 @@ def secedeCity(city, iNewOwner, bRelocate, iArmyPercent):
 	else:
 		killUnits(lRelocatedUnits)
 	
-	completeCityFlip(city, iNewOwner, city.getOwner(), 50, False, True, True)
-	flipOrCreateDefenders(iNewOwner, lFlippedUnits, tile, iNumDefenders)
+	flipped_city = completeCityFlip(city, iNewOwner, city.getOwner(), 50, False, True, True)
+	
+	if flipped_city and civ(iOldOwner) == iToltecs:
+		removeBuildings(flipped_city)
+	
+	if not player(iNewOwner).isMinorCiv():
+		flipOrCreateDefenders(iNewOwner, lFlippedUnits, tile, iNumDefenders)
+	else:
+		killUnits(lFlippedUnits)
 	
 	if is_minor(iNewOwner):
 		message(iOldOwner, 'TXT_KEY_STABILITY_CITY_INDEPENDENCE', name, color=iRed)

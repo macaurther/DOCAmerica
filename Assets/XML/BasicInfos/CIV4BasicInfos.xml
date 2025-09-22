@@ -87,6 +87,11 @@
 			<Civilopedia>TXT_KEY_CONCEPT_DIPLOMATIC_INSTITUTIONS_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
+			<Type>CONCEPT_WORLDBUILDER</Type>
+			<Description>TXT_KEY_CONCEPT_EXTENDED_WORLDBUILDER</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_EXTENDED_WORLDBUILDER_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
 			<Type>CONCEPT_LIMITED_RESOURCE_EFFECTS</Type>
 			<Description>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS_PEDIA</Civilopedia>
@@ -105,6 +110,11 @@
 			<Type>CONCEPT_HISTORICAL_IMPACT</Type>
 			<Description>TXT_KEY_CONCEPT_HISTORICAL_IMPACT</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_HISTORICAL_IMPACT_PEDIA</Civilopedia>
+		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_CITY_CONQUEST</Type>
+			<Description>TXT_KEY_CONCEPT_CITY_CONQUEST</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_CITY_CONQUEST_PEDIA</Civilopedia>
 		</ConceptInfo>
 		<ConceptInfo>
 			<Type>CONCEPT_DOC_ODDS</Type>

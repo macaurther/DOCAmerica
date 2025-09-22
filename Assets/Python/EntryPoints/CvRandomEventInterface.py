@@ -10,20 +10,12 @@
 # No other modules should import this
 #
 import CvUtil
-from CvPythonExtensions import *
+import CityNames as cn
 
-from Consts import * #Rhye
-import PyHelpers #Leoreth
-import CityNameManager as cnm
-from StoredData import data
 from RFCUtils import *
-
 from Core import *
 
-gc = CyGlobalContext()
 localText = CyTranslator()
-localText = CyTranslator()
-
 
 ######## BLESSED SEA ###########
 
@@ -3206,7 +3198,7 @@ def getLouisianaPurchaseGoldRequired():
 			iGold += 100
 			
 	# Scale by game speed
-	return iGold * int(3 - gc.getGame().getGameSpeedType())
+	return scale(iGold)
 
 def getNuclearReactorLeak1HelpText(argsList):
 	return localText.getText("TXT_KEY_EVENT_NUCLEAR_REACTOR_LEAK_1_HELP", ())

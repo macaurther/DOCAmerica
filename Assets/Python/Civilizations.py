@@ -2,7 +2,6 @@ from Core import *
 
 from Events import events, handler
 
-import GreatPeople as GP
 
 ### Unit spawn functions ###
 

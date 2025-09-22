@@ -5817,6 +5817,7 @@ m_paiBuildingHappinessChanges(NULL),
 m_paiBuildingHealthChanges(NULL),
 m_paiBuildingProductionModifiers(NULL), //Leoreth
 m_paiFeatureHappinessChanges(NULL),
+m_paiSpecialistCounts(NULL), // Leoreth
 m_paiDomainExperienceModifiers(NULL), // Leoreth
 m_pabHurry(NULL),
 m_pabSpecialBuildingNotRequired(NULL),
@@ -5852,12 +5853,14 @@ CvCivicInfo::~CvCivicInfo()
 	SAFE_DELETE_ARRAY(m_paiBuildingHealthChanges);
 	SAFE_DELETE_ARRAY(m_paiBuildingProductionModifiers); //Leoreth
 	SAFE_DELETE_ARRAY(m_paiFeatureHappinessChanges);
+	SAFE_DELETE_ARRAY(m_paiSpecialistCounts); // Leoreth
 	SAFE_DELETE_ARRAY(m_paiDomainProductionModifiers); // Leoreth
 	SAFE_DELETE_ARRAY(m_paiDomainExperienceModifiers); // Leoreth
 	SAFE_DELETE_ARRAY(m_paiMinimalSpecialistCounts); // Leoreth
 	SAFE_DELETE_ARRAY(m_pabHurry);
 	SAFE_DELETE_ARRAY(m_pabSpecialBuildingNotRequired);
 	SAFE_DELETE_ARRAY(m_pabSpecialistValid);
+
 	if (m_ppiImprovementYieldChanges != NULL)
 	{
 		for (iI=0;iI<GC.getNumImprovementInfos();iI++)
@@ -6358,6 +6361,14 @@ int CvCivicInfo::getFeatureHappinessChanges(int i) const
 }
 
 // Leoreth
+int CvCivicInfo::getSpecialistCount(int i) const
+{
+	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_paiSpecialistCounts ? m_paiSpecialistCounts[i] : -1;
+}
+
+// Leoreth
 int CvCivicInfo::getDomainProductionModifier(int i) const
 {
 	FAssertMsg(i < NUM_DOMAIN_TYPES, "Index out of bounds");
@@ -6618,6 +6629,11 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	stream->Read(GC.getNumFeatureInfos(), m_paiFeatureHappinessChanges);
 
 	// Leoreth
+	SAFE_DELETE_ARRAY(m_paiSpecialistCounts);
+	m_paiSpecialistCounts = new int[GC.getNumSpecialistInfos()];
+	stream->Read(GC.getNumSpecialistInfos(), m_paiSpecialistCounts);
+
+	// Leoreth
 	SAFE_DELETE_ARRAY(m_paiDomainProductionModifiers);
 	m_paiDomainProductionModifiers = new int[NUM_DOMAIN_TYPES];
 	stream->Read(NUM_DOMAIN_TYPES, m_paiDomainProductionModifiers);
@@ -6771,6 +6787,7 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingHealthChanges);
 	stream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingProductionModifiers); //Leoreth
 	stream->Write(GC.getNumFeatureInfos(), m_paiFeatureHappinessChanges);
+	stream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistCounts); // Leoreth
 	stream->Write(NUM_DOMAIN_TYPES, m_paiDomainProductionModifiers); // Leoreth
 	stream->Write(NUM_DOMAIN_TYPES, m_paiDomainExperienceModifiers); // Leoreth
 	stream->Write(GC.getNumSpecialistInfos(), m_paiMinimalSpecialistCounts); // Leoreth
@@ -7008,6 +7025,9 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_paiBuildingProductionModifiers, "BuildingProductionModifiers", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 
 	pXML->SetVariableListTagPair(&m_paiFeatureHappinessChanges, "FeatureHappinessChanges", sizeof(GC.getFeatureInfo((FeatureTypes)0)), GC.getNumFeatureInfos());
+
+	// Leoreth
+	pXML->SetVariableListTagPair(&m_paiSpecialistCounts, "SpecialistCounts", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
 
 	// Leoreth
 	pXML->SetVariableListTagPair(&m_paiDomainProductionModifiers, "DomainProductionModifiers", sizeof(GC.getDomainInfo((DomainTypes)0)), NUM_DOMAIN_TYPES);
@@ -8774,6 +8794,12 @@ int CvBuildingInfo::getPrereqBuildingClassPercent(int i) const
 bool CvBuildingInfo::isNoResistance() const
 {
 	return m_bNoResistance;
+}
+
+// Leoreth
+BuildingClassTypes CvBuildingInfo::getBuildingClass() const
+{
+	return (BuildingClassTypes)getBuildingClassType();
 }
 
 const TCHAR* CvBuildingInfo::getButton() const
@@ -10898,11 +10924,6 @@ int CvCivilizationInfo::getCultureGroup() const
 	return m_iCultureGroup;
 }
 
-int CvCivilizationInfo::getRating(RatingTypes eRating) const
-{
-	return m_piRatings[eRating];
-}
-
 void CvCivilizationInfo::read(FDataStreamBase* stream)
 {
 	CvInfoBase::read(stream);
@@ -10954,11 +10975,6 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_piLoadingTime);
 	m_piLoadingTime = new int[NUM_SCENARIO_TYPES];
 	stream->Read(NUM_SCENARIO_TYPES, m_piLoadingTime);
-
-	// Leoreth
-	SAFE_DELETE_ARRAY(m_piRatings);
-	m_piRatings = new int[NUM_RATING_TYPES];
-	stream->Read(NUM_RATING_TYPES, m_piRatings);
 
 	SAFE_DELETE_ARRAY(m_pbLeaders);
 	m_pbLeaders = new bool[GC.getNumLeaderHeadInfos()];
@@ -11016,7 +11032,6 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumUnitClassInfos(), m_piCivilizationFreeUnitsClass);
 	stream->Write(GC.getNumCivicOptionInfos(), m_piCivilizationInitialCivics);
 	stream->Write(NUM_SCENARIO_TYPES, m_piLoadingTime); // Leoreth
-	stream->Write(NUM_RATING_TYPES, m_piRatings); // Leoreth
 	stream->Write(GC.getNumLeaderHeadInfos(), m_pbLeaders);
 	stream->Write(GC.getNumBuildingClassInfos(), m_pbCivilizationFreeBuildingClass);
 	stream->Write(GC.getNumTechInfos(), m_pbCivilizationFreeTechs);
@@ -11201,20 +11216,6 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 		}
 
 		// set the current xml node to it's parent node
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-
-	// Leoreth
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "Rating"))
-	{
-		pXML->InitList(&m_piRatings, NUM_RATING_TYPES, 0);
-
-		pXML->GetChildXmlValByName(&m_piRatings[RATING_TRADE], "Trade");
-		pXML->GetChildXmlValByName(&m_piRatings[RATING_PRODUCTION], "Production");
-		pXML->GetChildXmlValByName(&m_piRatings[RATING_CULTURE], "Culture");
-		pXML->GetChildXmlValByName(&m_piRatings[RATING_GROWTH], "Growth");
-		pXML->GetChildXmlValByName(&m_piRatings[RATING_START], "Start");
-
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
@@ -14612,6 +14613,7 @@ m_iDefenseModifier(0),
 m_iCultureCostModifier(0), // Leoreth
 m_iAdvancedStartRemoveCost(0),
 m_iTurnDamage(0),
+m_iGlobalWarmingDefense(0), // Leoreth
 m_bNoCoast(false),
 m_bNoRiver(false),
 m_bNoAdjacent(false),
@@ -14700,14 +14702,11 @@ int CvFeatureInfo::getTurnDamage() const
 	return m_iTurnDamage;
 }
 
-// BUG - Global Warming Mod - start
-#ifdef _MOD_GWARM
-int CvFeatureInfo::getWarmingDefense() const
+// Leoreth
+int CvFeatureInfo::getGlobalWarmingDefense() const
 {
-	return m_iWarmingDefense; 
+	return m_iGlobalWarmingDefense;
 }
-#endif
-// BUG - Global Warming Mod - end
 
 bool CvFeatureInfo::isNoCoast() const
 {
@@ -14918,6 +14917,7 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCultureCostModifier, "iCultureCost");
 	pXML->GetChildXmlValByName(&m_iAdvancedStartRemoveCost, "iAdvancedStartRemoveCost");
 	pXML->GetChildXmlValByName(&m_iTurnDamage, "iTurnDamage");
+	pXML->GetChildXmlValByName(&m_iGlobalWarmingDefense, "iGlobalWarmingDefense");
 // BUG - Global Warming Mod - start
 #ifdef _MOD_GWARM
 	pXML->GetChildXmlValByName(&m_iWarmingDefense, "iWarmingDefense");
@@ -15233,6 +15233,7 @@ m_iSeeThroughLevel(0),
 m_iBuildModifier(0),
 m_iDefenseModifier(0),
 m_iCultureCostModifier(0),
+m_iGlobalWarmingTerrainType(NO_TERRAIN),
 m_bWater(false),
 m_bImpassable(false),
 m_bFound(false),
@@ -15338,6 +15339,12 @@ int CvTerrainInfo::getWorldSoundscapeScriptId() const
 	return m_iWorldSoundscapeScriptId;
 }
 
+// Leoreth
+int CvTerrainInfo::getGlobalWarmingTerrainType() const
+{
+	return m_iGlobalWarmingTerrainType;
+}
+
 // Arrays
 
 int CvTerrainInfo::getYield(int i) const
@@ -15430,6 +15437,16 @@ bool CvTerrainInfo::read(CvXMLLoadUtility* pXML)
 		m_iWorldSoundscapeScriptId = gDLL->getAudioTagIndex( szTextVal.GetCString(), AUDIOTAG_SOUNDSCAPE );
 	else
 		m_iWorldSoundscapeScriptId = -1;
+
+	return true;
+}
+
+bool CvTerrainInfo::readPass2(CvXMLLoadUtility* pXML)
+{
+	CvString szTextVal;
+
+	pXML->GetChildXmlValByName(szTextVal, "GlobalWarmingTerrainType");
+	m_iGlobalWarmingTerrainType = GC.getInfoTypeForString(szTextVal);
 
 	return true;
 }

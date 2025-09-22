@@ -99,6 +99,29 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
+		<ScriptID>AS2D_OPENING_MENU_RFC</ScriptID>
+		<SoundID>SONG_OPENING_MENU_RFC</SoundID>
+		<SoundType>GAME_MUSIC</SoundType>
+		<iMinVolume>80</iMinVolume>
+		<iMaxVolume>80</iMaxVolume>
+		<iPitchChangeDown>0</iPitchChangeDown>
+		<iPitchChangeUp>0</iPitchChangeUp>
+		<iMinLeftPan>-1</iMinLeftPan>
+		<iMaxLeftPan>-1</iMaxLeftPan>
+		<iMinRightPan>-1</iMinRightPan>
+		<iMaxRightPan>-1</iMaxRightPan>
+		<bLooping>1</bLooping>
+		<iMinTimeDelay>0</iMinTimeDelay>
+		<iMaxTimeDelay>0</iMaxTimeDelay>
+		<bTaperForSoundtracks>0</bTaperForSoundtracks>
+		<iLengthOfSound>0</iLengthOfSound>
+		<fMinDryLevel>1.0</fMinDryLevel>
+		<fMaxDryLevel>1.0</fMaxDryLevel>
+		<fMinWetLevel>0.0</fMinWetLevel>
+		<fMaxWetLevel>0.0</fMaxWetLevel>
+		<iNotPlayPercent>0</iNotPlayPercent>
+	</Script2DSound>
+	<Script2DSound>
 		<ScriptID>AS2D_VICTORY</ScriptID>
 		<SoundID>SONG_VICTORY</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
@@ -110,7 +133,7 @@
 		<iMaxLeftPan>-1</iMaxLeftPan>
 		<iMinRightPan>-1</iMinRightPan>
 		<iMaxRightPan>-1</iMaxRightPan>
-		<bLooping>1</bLooping>
+		<bLooping>0</bLooping>
 		<iMinTimeDelay>0</iMinTimeDelay>
 		<iMaxTimeDelay>0</iMaxTimeDelay>
 		<bTaperForSoundtracks>0</bTaperForSoundtracks>
@@ -283,8 +306,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_SONG_VIKING</ScriptID>
-		<SoundID>SONG_VIKING</SoundID>
+		<ScriptID>AS2D_SONG_NORSE</ScriptID>
+		<SoundID>SONG_NORSE</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>70</iMinVolume>
 		<iMaxVolume>70</iMaxVolume>
@@ -3273,8 +3296,8 @@
 		<iNotPlayPercent>0</iNotPlayPercent>
 	</Script2DSound>
 	<Script2DSound>
-		<ScriptID>AS2D_R_F_C</ScriptID>
-		<SoundID>SONG_R_F_C</SoundID>
+		<ScriptID>AS2D_RFC</ScriptID>
+		<SoundID>SONG_RFC</SoundID>
 		<SoundType>GAME_MUSIC</SoundType>
 		<iMinVolume>70</iMinVolume>
 		<iMaxVolume>70</iMaxVolume>

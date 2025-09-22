@@ -513,7 +513,7 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
 			}
 		}
 
-        if (!isHuman() && (iCurrentEra <= ((iTotalEras * 2) / 3)))
+        if (!isHuman() && (iCurrentEra <= ((iTotalEras * 2) / 3)) && getGreatPeopleRateModifier() > 0)
         {
             // try to spawn a prophet for any shrines we have yet to build
             bool bNeedProphet = false;
@@ -559,8 +559,8 @@ int CvCityAI::AI_specialistValue(SpecialistTypes eSpecialist, bool bAvoidGrowth,
             }
 		}
 
-		iTempValue *= GET_PLAYER(getOwnerINLINE()).AI_averageGreatPeopleMultiplier();
-		iTempValue /= 100;
+		iTempValue *= getGreatPeopleRateModifier();
+		iTempValue /= GET_PLAYER(getOwnerINLINE()).AI_averageGreatPeopleMultiplier();
 
 		iTempValue /= (1 + iEmphasisCount);
 		iValue += iTempValue;
@@ -725,6 +725,9 @@ void CvCityAI::AI_chooseProduction()
 	int iCultureRateRank = findCommerceRateRank(COMMERCE_CULTURE);
     int iCulturalVictoryNumCultureCities = GC.getGameINLINE().culturalVictoryNumCultureCities();
 
+	bool bGlobalThreatened = bMajorWar && kPlayer.AI_getEnemyPower() * 2 >= kPlayer.getPower();
+	bool bAreaThreatened = bMajorWar && pArea->getEnemyPower(getOwner()) * 2 >= kPlayer.getPower();
+
     bool bGetBetterUnits = kPlayer.AI_isDoStrategy(AI_STRATEGY_GET_BETTER_UNITS);
     bool bAggressiveAI = GC.getGameINLINE().isOption(GAMEOPTION_AGGRESSIVE_AI);
     bool bAlwaysPeace = GC.getGameINLINE().isOption(GAMEOPTION_ALWAYS_PEACE);
@@ -739,6 +742,9 @@ void CvCityAI::AI_chooseProduction()
     int iNeededSeaWorkers = (pWaterArea == NULL) ? 0 : AI_neededSeaWorkers();
 
     int iTargetCulturePerTurn = AI_calculateTargetCulturePerTurn();
+
+	int iAreaBestSettlerValue = kPlayer.AI_bestCitySiteSettlerValue(pArea->getID());
+	int iWaterAreaBestSettlerValue = pWaterArea ? kPlayer.AI_bestAdjacentCitySiteSettlerValue(pWaterArea->getID()) : 0;
 
     int iAreaBestFoundValue;
     int iNumAreaCitySites = kPlayer.AI_getNumAreaCitySites(getArea(), iAreaBestFoundValue);
@@ -765,7 +771,8 @@ void CvCityAI::AI_chooseProduction()
 		//iMaxSettlers= std::min((GET_PLAYER(getOwnerINLINE()).getNumCities() + 2) / 3, iNumAreaCitySites + iNumWaterAreaCitySites); //Rhye
      	if ((bLandWar || bAssault) && bMajorWar)
      	{
-     		iMaxSettlers = (iMaxSettlers + 2) / 3;
+     		//iMaxSettlers = (iMaxSettlers + 2) / 3;
+			iMaxSettlers = std::min(1, iMaxSettlers); // Leoreth
      	}
     }
 
@@ -1051,6 +1058,29 @@ void CvCityAI::AI_chooseProduction()
     	}
     }
 
+	int iMinFoundValue = kPlayer.AI_getMinFoundValue();
+	if (bDanger)
+	{
+		iMinFoundValue *= 3;
+		iMinFoundValue /= 2;
+	}
+
+
+	// Leoreth: in the late game we need to be more proactive about settling before considering other buildings
+	if (iNumSettlers <= 1 && iNumSettlers < iMaxSettlers && GET_PLAYER(getOwnerINLINE()).AI_getNumTrainAIUnits(UNITAI_SETTLE) == 0)
+	{
+		if (GET_PLAYER(getOwnerINLINE()).getCurrentEra() >= ERA_COLONIAL)
+		{
+			if (iAreaBestFoundValue > iMinFoundValue && iAreaBestSettlerValue >= 5)
+			{
+				if (AI_chooseUnit(UNITAI_SETTLE))
+				{
+					return;
+				}
+			}
+		}
+	}
+
     if (bMaybeWaterArea && !isIndependent())
 	{
 		if (kPlayer.AI_getNumTrainAIUnits(UNITAI_ATTACK_SEA) + kPlayer.AI_getNumTrainAIUnits(UNITAI_PIRATE_SEA) + kPlayer.AI_getNumTrainAIUnits(UNITAI_RESERVE_SEA) < 3)
@@ -1077,6 +1107,15 @@ void CvCityAI::AI_chooseProduction()
 			if (iAreaBestFoundValue == 0 || iWaterAreaBestFoundValue > iAreaBestFoundValue
     			|| (iWaterPercent > 60 && GC.getGameINLINE().getSorenRandNum(4, "AI Train Early Sea Explore or Settler") == 0))
 			{
+				// Leoreth: if stuck on an island, we need to settle elsewhere
+				if (iNumSettlers == 0 && iWaterAreaBestSettlerValue >= 10 && area()->getNumUnownedTiles() <= 1 && GET_PLAYER(getOwnerINLINE()).AI_getNumTrainAIUnits(UNITAI_SETTLE) == 0)
+				{
+					if (AI_chooseUnit(UNITAI_SETTLE))
+					{
+						return;
+					}
+				}
+
 				if (kPlayer.AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_EXPLORE_SEA) == 0)
 				{
 					if (AI_chooseUnit(UNITAI_EXPLORE_SEA))
@@ -1084,7 +1123,7 @@ void CvCityAI::AI_chooseProduction()
 						return;
 					}
 				}
-				if (kPlayer.AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_SETTLER_SEA) == 0)
+				if (iNumSettlers > 0 && kPlayer.AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_SETTLER_SEA) == 0)
 				{
 					if (AI_chooseUnit(UNITAI_SETTLER_SEA))
 					{
@@ -1206,6 +1245,21 @@ void CvCityAI::AI_chooseProduction()
 		}
 	}
 
+	// Leoreth: second additional settler check
+	if (iNumSettlers == 0 && iNumSettlers < iMaxSettlers && GET_PLAYER(getOwnerINLINE()).AI_getNumTrainAIUnits(UNITAI_SETTLE) == 0)
+	{
+		if (iAreaBestFoundValue > iMinFoundValue && iAreaBestSettlerValue >= 10)
+		{
+			if (!bFinancialTrouble && !bAreaThreatened && happyLevel() <= unhappyLevel())
+			{
+				if (AI_chooseUnit(UNITAI_SETTLE))
+				{
+					return;
+				}
+			}
+		}
+	}
+
 	if	(!bLandWar && !bMajorWar && !bAssault && (iTargetCulturePerTurn > getCommerceRate(COMMERCE_CULTURE)))
 	{
 		//if (GC.getGameINLINE().getSorenRandNum(bAggressiveAI ? 3 : 2, "AI Culture Build") == 0) //Rhye
@@ -1216,13 +1270,6 @@ void CvCityAI::AI_chooseProduction()
 				return;
 			}
 		}
-	}
-
-	int iMinFoundValue = kPlayer.AI_getMinFoundValue();
-	if (bDanger)
-	{
-		iMinFoundValue *= 3;
-		iMinFoundValue /= 2;
 	}
 
 	if (!bGetBetterUnits && (bIsCapitalArea) && (iAreaBestFoundValue < (iMinFoundValue * 2)))
@@ -1365,16 +1412,10 @@ void CvCityAI::AI_chooseProduction()
 				iSettlerSeaNeeded = std::min(1, iSettlerSeaNeeded);
 			}
 
-			// Leoreth: more settlers for colonial civs
-			switch (getCivilizationType())
+			// Leoreth: more settlers for important overseas colonies
+			if (iWaterAreaBestSettlerValue >= 20)
 			{
-			case ENGLAND:
-			case FRANCE:
-			case NETHERLANDS:
-			case SPAIN:
-			case PORTUGAL:
-				iSettlerSeaNeeded *= 3;
-				iSettlerSeaNeeded /= 2;
+				iSettlerSeaNeeded += 1;
 			}
 
 			if (kPlayer.AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_SETTLER_SEA) < iSettlerSeaNeeded)
@@ -1388,7 +1429,7 @@ void CvCityAI::AI_chooseProduction()
 
 		if (iPlotSettlerCount == 0)
 		{
-			if ((iNumSettlers < iMaxSettlers) && (!(bLandWar && bMajorWar) || (GC.getGameINLINE().getSorenRandNum(2, "AI War Settler") == 0)))
+			if ((iNumSettlers < iMaxSettlers) && (!(bLandWar && (iAreaBestFoundValue > iWaterAreaBestFoundValue) ? !bAreaThreatened : !bGlobalThreatened) || (GC.getGameINLINE().getSorenRandNum(2, "AI War Settler") == 0)))
 			{
 				if (iPlotCityDefenderCount == 1)
 				{
@@ -3552,6 +3593,7 @@ int CvCityAI::AI_buildingValueThreshold(BuildingTypes eBuilding, int iFocusFlags
 				}
 
 				int iGreatPeopleRateModifier = kBuilding.getGreatPeopleRateModifier();
+
 				iGreatPeopleRateModifier += kBuilding.getCultureGreatPeopleRateModifier() * getCultureLevel();
 				if (iGreatPeopleRateModifier > 0)
 				{
@@ -6733,7 +6775,8 @@ bool CvCityAI::AI_bestSpreadUnit(bool bMissionary, bool bExecutive, int iBaseCha
 				{
 					iRoll += 25;
 				}
-				else if (!kTeam.hasHolyCity(eReligion) && !(kPlayer.getStateReligion() == eReligion))
+				// Leoreth: religious leaders don't require holy cities to focus on missionaries
+				else if (!kTeam.hasHolyCity(eReligion) && !(kPlayer.getStateReligion() == eReligion) && GC.getLeaderHeadInfo(getPersonalityType()).getFlavorValue((FlavorTypes)1) < 2)
 				{
 					iRoll /= 2;
 					if (kPlayer.isNoNonStateReligionSpread())
@@ -8269,7 +8312,8 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 					{
 						eBuild = ((BuildTypes)iJ);
 
-						if (GC.getBuildInfo(eBuild).getImprovement() == eImprovement)
+						// Leoreth: exclude graphical only as shortcut to prevent focus on slave improvements that cannot be built
+						if (GC.getBuildInfo(eBuild).getImprovement() == eImprovement && !GC.getBuildInfo(eBuild).isGraphicalOnly())
 						{
 							if (GET_PLAYER(getOwnerINLINE()).canBuild(pPlot, eBuild, false))
 							{
@@ -8294,13 +8338,13 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 					bValid = true;
 
 					// Leoreth: try to discourage workshops with low health
-					if (iFoodChange > 0 && !pPlot->isHills())
+					/*if (iFoodChange > 0 && !pPlot->isHills())
 					{
 						if (getImprovementHealthPercentChange(eImprovement) < 0)
 						{
 							bValid = false;
 						}
-					}
+					}*/
 
 					if (pPlot->getFeatureType() != NO_FEATURE)
 					{
@@ -8363,13 +8407,19 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 						}
 						else
 						{
-							if (eBestBuild != NO_BUILD)
+							// Leoreth: never consider improvements that disconnect bonuses
+							if (bHasBonusImprovement)
+							{
+								iValue -= 100000;
+							}
+
+							/*if (eBestBuild != NO_BUILD)
 							{
 								if ((GC.getBuildInfo(eBestBuild).getImprovement() != NO_IMPROVEMENT) && (GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBestBuild).getImprovement()).isImprovementBonusTrade(eNonObsoleteBonus)))
 								{
 									iValue -= 1000;
 								}
-							}
+							}*/
 						}
 					}
 				}

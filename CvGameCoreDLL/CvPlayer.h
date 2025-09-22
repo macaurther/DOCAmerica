@@ -166,6 +166,7 @@ public:
 	int countCityFeatures(FeatureTypes eFeature) const;																										// Exposed to Python
 	int countNumBuildings(BuildingTypes eBuilding) const;																									// Exposed to Python
 	int countSpecialists(SpecialistTypes eSpecialist) const;
+	int countSpecialistSlots(SpecialistTypes eSpecialist) const;
 	DllExport int countNumCitiesConnectedToCapital() const;																								// Exposed to Python
 	int countPotentialForeignTradeCities(CvArea* pIgnoreArea = NULL) const;																// Exposed to Python
 	int countPotentialForeignTradeCitiesConnected() const;																								// Exposed to Python
@@ -225,6 +226,8 @@ public:
 	int getBuildingClassPrereqBuildingPercent(BuildingTypes eBuilding, BuildingClassTypes ePrereqBuildingClass, int iExtra = 0) const; // Leoreth
 	void removeBuildingClass(BuildingClassTypes eBuildingClass);																		// Exposed to Python
 	void processBuilding(BuildingTypes eBuilding, int iChange, CvArea* pArea);
+
+	void processBuildingForCity(BuildingTypes eBuilding, CvCity* pCity, int iChange) const;
 
 	int getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const;
 	bool canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra = false, bool bTestVisible = false) const;	// Exposed to Python
@@ -822,6 +825,9 @@ public:
 	void setCommercePercent(CommerceTypes eIndex, int iNewValue);																// Exposed to Python
 	DllExport void changeCommercePercent(CommerceTypes eIndex, int iChange);										// Exposed to Python
 
+	// Leoreth
+	int getCommerceRateTimes100(CommerceTypes eCommerce) const;
+
 	int getCommerceRate(CommerceTypes eIndex) const;																									// Exposed to Python
 	void changeCommerceRate(CommerceTypes eIndex, int iChange);
 
@@ -881,6 +887,10 @@ public:
 	int getFeatureHappiness(FeatureTypes eIndex) const;																								// Exposed to Python
 	void changeFeatureHappiness(FeatureTypes eIndex, int iChange);
 
+	// Leoreth
+	int getSpecialistExtraCount(SpecialistTypes eSpecialist) const;
+	void changeSpecialistExtraCount(SpecialistTypes eSpecialist, int iChange);
+
 	int getUnitClassCount(UnitClassTypes eIndex) const;																								// Exposed to Python
 	bool isUnitClassMaxedOut(UnitClassTypes eIndex, int iExtra = 0) const;														// Exposed to Python
 	void changeUnitClassCount(UnitClassTypes eIndex, int iChange);
@@ -928,14 +938,6 @@ public:
 	int getSpecialistValidCount(SpecialistTypes eIndex) const;
 	DllExport bool isSpecialistValid(SpecialistTypes eIndex) const;																		// Exposed to Python
 	void changeSpecialistValidCount(SpecialistTypes eIndex, int iChange);
-
-	// Leoreth
-	int getPotentialSpecialistCount(SpecialistTypes eIndex) const;
-	void changePotentialSpecialistCount(SpecialistTypes eIndex, int iChange);
-
-	// Leoreth
-	int getMinimalSpecialistCount(SpecialistTypes eIndex) const;
-	void changeMinimalSpecialistCount(SpecialistTypes eIndex, int iChange);
 
 	DllExport bool isResearchingTech(TechTypes eIndex) const;																					// Exposed to Python
 	void setResearchingTech(TechTypes eIndex, bool bNewValue);
@@ -1057,6 +1059,8 @@ public:
 	CvSelectionGroup* getSelectionGroup(int iID) const;																								// Exposed to Python
 	CvSelectionGroup* addSelectionGroup();
 	void deleteSelectionGroup(int iID);
+
+	void separateAttackCitySelectionGroups();
 
 	// pending triggers iteration
 	EventTriggeredData* firstEventTriggered(int *pIterIdx, bool bRev=false) const;
@@ -1248,20 +1252,15 @@ public:
 
 	// Leoreth
 
-	int verifySettlersHalt(int threshold); //Rhye
 	void setFlag(CvWString s); //Rhye
 	void setLeader(int i); //Rhye
 	void setLeaderName(CvWString name);
 	LeaderHeadTypes getLeader(); //Rhye
-	void resetRelations( PlayerTypes ePlayer ); //Rhye
 	void reinit( PlayerTypes eID, LeaderHeadTypes prevLeader, bool doReset );  //Rhye
-	void processCivNames(); //Rhye - dynamic civ names - not jdog's
 	DenialTypes AI_slaveTrade(PlayerTypes ePlayer) const; // edead (from Advanced Diplomacy by Afforess)
 
 	bool isHasBuilding(BuildingTypes eIndex) const; // Leoreth
 	bool isHasBuildingEffect(BuildingTypes eIndex) const; // Leoreth
-	int getSettlerValue(int x, int y); // Leoreth
-	int getWarValue(int x, int y); //Leoreth
 	
 	EraTypes getStartingEra() const;
 	void setStartingEra(EraTypes eNewValue);
@@ -1390,6 +1389,11 @@ public:
 	int getTechnologyHistory(int iTurn) const;
 	int getPopulationHistory(int iTurn) const;
 	int getLandHistory(int iTurn) const;
+
+	CvCity* findBuildingCity(BuildingTypes eBuilding, bool bEffect = true) const;
+
+	int getModifiedCommerceRateTimes100(CommerceTypes eCommerce) const;
+	int getModifiedCommerceRate(CommerceTypes eCommerce) const;
 
 	bool m_bTurnPlayed;
 
@@ -1636,6 +1640,7 @@ protected:
 	int** m_paiExtraBuildingYield;
 	int** m_paiExtraBuildingCommerce;
 	int* m_paiFeatureHappiness;
+	int* m_paiSpecialistExtraCounts; // Leoreth
 	int* m_paiUnitClassCount;
 	int* m_paiUnitClassMaking;
 	int* m_paiBuildingClassCount;
@@ -1648,8 +1653,6 @@ protected:
 	int* m_paiHasCorporationCount;
 	int* m_paiUpkeepCount;
 	int* m_paiSpecialistValidCount;
-	int* m_paiPotentialSpecialistCount; // Leoreth
-	int* m_paiMinimalSpecialistCount; // Leoreth
 
 	bool* m_pabResearchingTech;
 	bool* m_pabLoyalMember;

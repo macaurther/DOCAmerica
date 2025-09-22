@@ -58,7 +58,7 @@ def chimuPower(iOwner, pCity):
 # Coureur des Bois ability
 def coureurDesBoisPower(iPlayer, pPlot, pUnit, iGoodyType):
 	if pUnit.getUnitType() == iCoureurDesBois:
-		iImmigration = (3 - gc.getGame().getGameSpeedType()) * 25	# Normal: 25, Epic: 50, Marathon: 75
+		iImmigration = scale(25)
 		player(iPlayer).changeImmigration(iImmigration)
 		# Inform the player that they received Immigration.
 		message(iPlayer, "TXT_KEY_COUREUR_DES_BOIS_POWER", iImmigration)

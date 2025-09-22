@@ -7,14 +7,162 @@ import PyHelpers
 import CvUtil
 import CvScreenEnums
 import random
-from Consts import *
-from CvPythonExtensions import *
-
-PyPlayer = PyHelpers.PyPlayer
-gc = CyGlobalContext()
-localText = CyTranslator()
+from Core import *
 
 NUM_CIVILIZATIONS = 8
+# MacAurther TODO: Make mod-specific historians :/
+HISTORIANS = {
+	iNorse: {
+		iExplorationEra: (
+			"TXT_KEY_HISTORIAN_AGGESEN",
+			"TXT_KEY_HISTORIAN_THORGILSSON",
+			"TXT_KEY_HISTORIAN_SAXO_GRAMMATICUS",
+			"TXT_KEY_HISTORIAN_SNORRI_STURLUSON",
+		),
+		iColonialEra: (
+			"TXT_KEY_HISTORIAN_HOLBERG",
+			"TXT_KEY_HISTORIAN_HUITFELDT",
+		),
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_MUNCH",
+		),
+	},
+	iSpain: {
+		iExplorationEra: (
+			"TXT_KEY_HISTORIAN_ISIDORE",
+		),
+		iColonialEra: (
+			"TXT_KEY_HISTORIAN_DANGHIERA",
+			"TXT_KEY_HISTORIAN_DE_MORGA",
+			"TXT_KEY_HISTORIAN_DE_LAS_CASAS",
+		),
+	},
+	iFrance: {
+		iExplorationEra: (
+			"TXT_KEY_HISTORIAN_GREGORY_OF_TOURS",
+			"TXT_KEY_HISTORIAN_EINHARD",
+			"TXT_KEY_HISTORIAN_FROISSART",
+		),
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_RAMBAUD",
+			"TXT_KEY_HISTORIAN_MICHELET",
+			"TXT_KEY_HISTORIAN_BLOCH",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_BRAUDEL",
+			"TXT_KEY_HISTORIAN_DUBY",
+			"TXT_KEY_HISTORIAN_LE_GOFF",
+		),
+	},
+	iEngland: {
+		iExplorationEra: (
+			"TXT_KEY_HISTORIAN_BEDE",
+			"TXT_KEY_HISTORIAN_ASSER",
+			"TXT_KEY_HISTORIAN_AETHELWEARD",
+			"TXT_KEY_HISTORIAN_GEOFFREY_OF_MONMOUTH",
+		),
+		iColonialEra: (
+			"TXT_KEY_HISTORIAN_HOLINSHED",
+			"TXT_KEY_HISTORIAN_HUME",
+		),
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_GIBBON",
+			"TXT_KEY_HISTORIAN_LORD_MACAULAY",
+			"TXT_KEY_HISTORIAN_CARLYLE",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_TOYNBEE",
+			"TXT_KEY_HISTORIAN_HOBSBAWM",
+		),
+	},
+	iRussia: {
+		iExplorationEra: (
+			"TXT_KEY_HISTORIAN_NIKITIN",
+		),
+		iColonialEra: (
+			"TXT_KEY_HISTORIAN_KARAMZIN",
+			"TXT_KEY_HISTORIAN_MULLER",
+			"TXT_KEY_HISTORIAN_TATISHCHEV",
+		),
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_SOLOVYOV",
+			"TXT_KEY_HISTORIAN_KLYUCHEVSKY",
+			"TXT_KEY_HISTORIAN_POKROVSKY",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_VOLGIN",
+		),
+	},
+	iPortugal: {
+		iColonialEra: (
+			"TXT_KEY_HISTORIAN_DE_BARROS",
+		),
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_HERCULANO",
+		),
+	},
+	iInca: {
+		iColonialEra: (
+			"TXT_KEY_HISTORIAN_DE_LA_VEGA",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_BASADRE",
+		),
+	},
+	iNetherlands: {
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_DE_JONGE",
+			"TXT_KEY_HISTORIAN_FRUIN",
+		),
+	},
+	iAmerica: {
+		iColonialEra: (
+			"TXT_KEY_HISTORIAN_MATHER",
+		),
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_ADAMS",
+			"TXT_KEY_HISTORIAN_BEARD",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_SCHLESINGER",
+		),
+	},
+	iArgentina: {
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_MITRE",
+			"TXT_KEY_HISTORIAN_LOPEZ",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_LUNA",
+		),
+	},
+	iColombia: {
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_RESTREPO_VELEZ",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_FRIEDE",
+		),
+	},
+	iBrazil: {
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_DE_VARNHAGEN",
+			"TXT_KEY_HISTORIAN_ROMERO",
+			"TXT_KEY_HISTORIAN_DE_ABREU",
+		),
+		iModernEra: (
+			"TXT_KEY_HISTORIAN_FREYRE",
+			"TXT_KEY_HISTORIAN_DE_HOLANDA",
+			"TXT_KEY_HISTORIAN_PRADO_JUNIOR",
+		),
+	},
+	iCanada: {
+		iIndustrialEra: (
+			"TXT_KEY_HISTORIAN_GARNEAU",
+			"TXT_KEY_HISTORIAN_GROULX",
+		),
+	},
+}
 
 class CvTopCivs:
 	"The Greatest Civilizations screen"
@@ -68,42 +216,31 @@ class CvTopCivs:
 			return
 
 		# Text
-		self.TITLE_TEXT = u"<font=3>" + localText.getText("TXT_KEY_TOPCIVS_TITLE", ()).upper() + u"</font>"
-		self.EXIT_TEXT = localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper()
-		
-		self.HistorianList = [	localText.getText("TXT_KEY_TOPCIVS_HISTORIAN1", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN2", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN3", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN4", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN5", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN6", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN7", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN8", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN9", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN10", ()),
-					localText.getText("TXT_KEY_TOPCIVS_HISTORIAN11", ())
-				    ]
+		self.TITLE_TEXT = u"<font=3>" + text("TXT_KEY_TOPCIVS_TITLE").upper() + u"</font>"
+		self.EXIT_TEXT = text("TXT_KEY_PEDIA_SCREEN_EXIT").upper()
 					
-		self.RankList =     [	localText.getText("TXT_KEY_TOPCIVS_RANK1", ()),
-					localText.getText("TXT_KEY_TOPCIVS_RANK2", ()),
-					localText.getText("TXT_KEY_TOPCIVS_RANK3", ()),
-					localText.getText("TXT_KEY_TOPCIVS_RANK4", ()),
-					localText.getText("TXT_KEY_TOPCIVS_RANK5", ()),
-					localText.getText("TXT_KEY_TOPCIVS_RANK6", ()),
-					localText.getText("TXT_KEY_TOPCIVS_RANK7", ()),
-					localText.getText("TXT_KEY_TOPCIVS_RANK8", ())
-				    ]
+		self.RankList = [
+			text("TXT_KEY_TOPCIVS_RANK1"),
+			text("TXT_KEY_TOPCIVS_RANK2"),
+			text("TXT_KEY_TOPCIVS_RANK3"),
+			text("TXT_KEY_TOPCIVS_RANK4"),
+			text("TXT_KEY_TOPCIVS_RANK5"),
+			text("TXT_KEY_TOPCIVS_RANK6"),
+			text("TXT_KEY_TOPCIVS_RANK7"),
+			text("TXT_KEY_TOPCIVS_RANK8")
+		]
 
-		self.TypeList =    [	localText.getText("TXT_KEY_TOPCIVS_WEALTH", ()),
-					localText.getText("TXT_KEY_TOPCIVS_POWER", ()),
-					localText.getText("TXT_KEY_TOPCIVS_TECH", ()),
-					localText.getText("TXT_KEY_TOPCIVS_CULTURE", ()),
-					localText.getText("TXT_KEY_TOPCIVS_SIZE", ()),
-				    ]
+		self.TypeList = [
+			"TXT_KEY_TOPCIVS_WEALTH",
+			"TXT_KEY_TOPCIVS_POWER",
+			"TXT_KEY_TOPCIVS_TECH",
+			"TXT_KEY_TOPCIVS_CULTURE",
+			"TXT_KEY_TOPCIVS_SIZE",
+			"TXT_KEY_TOPCIVS_POPULATION",
+		]
 
-		# Randomly choose what category and what historian will be used
+		# Randomly choose what category will be used
 		szTypeRand = random.choice(self.TypeList)
-		szHistorianRand = random.choice(self.HistorianList)
 		
 		# Create screen
 		
@@ -141,99 +278,86 @@ class CvTopCivs:
 		self.screen.setLabel("DawnTitle", "Background", self.TITLE_TEXT, CvUtil.FONT_CENTER_JUSTIFY,
 				self.X_TITLE_TEXT, self.Y_TITLE_TEXT, -2.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
+		self.populateList(szTypeRand)
+		
+		szHistorianKey = self.getHistorian()
+		szHistorian = text(szHistorianKey)
+		szType = text(szTypeRand)
+		
 		# 1 Text
 		self.X_INFO_TEXT = self.X_TITLE_TEXT - 260#self.X_HEADER_PANEL + (self.W_HEADER_PANEL / 2)
 		self.Y_INFO_TEXT = self.Y_TITLE_TEXT + 50
 		self.W_INFO_TEXT = self.W_HEADER_PANEL
 		self.H_INFO_TEXT = 70
-		szText = localText.getText("TXT_KEY_TOPCIVS_TEXT1", (szHistorianRand, )) + u"\n" + localText.getText("TXT_KEY_TOPCIVS_TEXT2", (szTypeRand, ))
+		szText = text("TXT_KEY_TOPCIVS_TEXT1", szHistorian) + u"\n" + text("TXT_KEY_TOPCIVS_TEXT2", szType)
 		self.screen.addMultilineText( "InfoText1", szText, self.X_INFO_TEXT, self.Y_INFO_TEXT, self.W_INFO_TEXT, self.H_INFO_TEXT, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 		
-		self.makeList(szTypeRand)
+		self.printList()
 		
-	def makeList(self, szType):
+	def populateList(self, szType):
+		
+		print "populateList for %s" % szType
 
 		# Determine the list of top civs
 		
-		# Will eventually Store [iValue, iPlayerID]
-		self.aiTopCivsValues = []
+		typeFunction = None
 		
-		# Loop through all players except the barbs
-		for iPlayerLoop in range(gc.getMAX_CIV_PLAYERS()):
-			pPlayer = gc.getPlayer(iPlayerLoop)
-			if not pPlayer.isAlive() or pPlayer.isMinorCiv() or pPlayer.isBarbarian():
-				continue
-				
-			if (szType == localText.getText("TXT_KEY_TOPCIVS_WEALTH", ())):
-
-				self.aiTopCivsValues.append([gc.getPlayer(iPlayerLoop).getGold(), iPlayerLoop])
-				print("Player %d Num Gold: %d" %(iPlayerLoop, gc.getPlayer(iPlayerLoop).getGold()))
-				
-			if (szType == localText.getText("TXT_KEY_TOPCIVS_POWER", ())):
-
-				self.aiTopCivsValues.append([gc.getPlayer(iPlayerLoop).getPower(), iPlayerLoop])
-
-			if (szType == localText.getText("TXT_KEY_TOPCIVS_TECH", ())):
-
-				iPlayerNumTechs = 0
-				iNumTotalTechs = gc.getNumTechInfos()
-
-				for iTechLoop in range(iNumTotalTechs):
-
-					bPlayerHasTech = gc.getTeam(gc.getPlayer(iPlayerLoop).getTeam()).isHasTech(iTechLoop)
-
-					if (bPlayerHasTech):
-						iPlayerNumTechs = iPlayerNumTechs + 1
-						
-				self.aiTopCivsValues.append([iPlayerNumTechs, iPlayerLoop])
-
-			if (szType == localText.getText("TXT_KEY_TOPCIVS_CULTURE", ())):
-
-				self.aiTopCivsValues.append([gc.getPlayer(iPlayerLoop).countTotalCulture(), iPlayerLoop])
-
-			if (szType == localText.getText("TXT_KEY_TOPCIVS_SIZE", ())):
-
-				self.aiTopCivsValues.append([gc.getPlayer(iPlayerLoop).getTotalLand(), iPlayerLoop])
-
-		# Lowest to Highest
-		self.aiTopCivsValues.sort()
-		# Switch it around - want the best to be first
-		self.aiTopCivsValues.reverse()
-
-		self.printList(szType)
+		if szType == "TXT_KEY_TOPCIVS_WEALTH":
+			typeFunction = CyPlayer.getGold
+		elif szType == "TXT_KEY_TOPCIVS_POWER":
+			typeFunction = CyPlayer.getPower
+		elif szType == "TXT_KEY_TOPCIVS_TECH":
+			typeFunction = lambda p: team(p).getTotalTechValue()
+		elif szType == "TXT_KEY_TOPCIVS_CULTURE":
+			typeFunction = CyPlayer.countTotalCulture
+		elif szType == "TXT_KEY_TOPCIVS_SIZE":
+			typeFunction = CyPlayer.getTotalLand
+		elif szType == "TXT_KEY_TOPCIVS_POPULATION":
+			typeFunction = CyPlayer.getTotalPopulation
+			
+		self.topPlayers = players.major().existing().sort(lambda p: typeFunction(player(p)), reverse=True)
 		
-	def printList(self, szType):
+	def printList(self):
+		for iRank, iPlayer in enumerate(self.topPlayers.limit(8)):
+			if iPlayer == active() or team().isHasMet(player(iPlayer).getTeam()):
+				szCivText = fullname(iPlayer)
+			else:
+				szCivText = text("TXT_KEY_TOPCIVS_UNKNOWN")
+			
+			szWidgetName = "Text" + str(iRank)
+			szWidgetDesc = "%d) %s" % (iRank + 1, szCivText)
+			
+			iXLoc = self.X_RANK_TEXT
+			iYLoc = self.Y_RANK_TEXT + iRank * self.H_RANK_TEXT
+			
+			self.screen.addMultilineText(szWidgetName, unicode(szWidgetDesc), iXLoc, iYLoc, self.W_RANK_TEXT, self.H_RANK_TEXT, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+	
+	def getHistorian(self):
+		iHistorianPlayer = self.topPlayers.where(lambda p: team().isHasMet(player(p).getTeam())).limit(4).where(lambda p: civ(p) in HISTORIANS).random(otherwise=active())
 		
-		# Print out the list
-		for iRankLoop in range(8):
-			
-			if (iRankLoop > len(self.aiTopCivsValues)-1):
-				return
-			
-			iPlayer = self.aiTopCivsValues[iRankLoop][1]
-			iValue = self.aiTopCivsValues[iRankLoop][0]
-			
-			szPlayerName = gc.getPlayer(iPlayer).getNameKey()
-			
-			if (szPlayerName != ""):
-				
-				pActivePlayerTeam = gc.getTeam(gc.getPlayer(CyGame().getActivePlayer()).getTeam())
-				iPlayerTeam = gc.getPlayer(iPlayer).getTeam()
-				szCivText = ""
-				
-				# Does the Active player know this player exists?
-				if (iPlayer == CyGame().getActivePlayer() or pActivePlayerTeam.isHasMet(iPlayerTeam)):
-					#szCivText = localText.getText("TXT_KEY_TOPCIVS_TEXT3", (szPlayerName, self.RankList[iRankLoop])) #Rhye
-					szCivText = gc.getPlayer(iPlayer).getCivilizationDescription(0) #Rhye					
-				else:
-					szCivText = localText.getText("TXT_KEY_TOPCIVS_UNKNOWN", ())
-					
-				szWidgetName = "Text" + str(iRankLoop)
-				szWidgetDesc = "%d) %s" % (iRankLoop + 1, szCivText)
-				iXLoc = self.X_RANK_TEXT
-				iYLoc = self.Y_RANK_TEXT + (iRankLoop * self.H_RANK_TEXT)
-				#self.screen.setText(szWidgetName, "Background", szWidgetDesc, CvUtil.FONT_LEFT_JUSTIFY, iXLoc, iYLoc, TEXT_Z, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				self.screen.addMultilineText( szWidgetName, unicode(szWidgetDesc), iXLoc, iYLoc, self.W_RANK_TEXT, self.H_RANK_TEXT, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+		tHistorianNames = self.getHistorianNames(iHistorianPlayer)
+		if not tHistorianNames:
+			return "TXT_KEY_HISTORIAN_GENERIC"
+		
+		return random_entry(tHistorianNames)
+	
+	def getHistorianNames(self, iPlayer):
+		iCiv = civ(iPlayer)
+		iCurrentEra = player(iPlayer).getCurrentEra()
+		
+		if iCiv not in HISTORIANS:
+			return tuple()
+		
+		for iEra in reversed(range(iCurrentEra+1)):
+			if iEra in HISTORIANS[iCiv]:
+				return HISTORIANS[iCiv][iEra]
+		
+		for iEra in range(iCurrentEra+1, iNumEras):
+			if iEra in HISTORIANS[iCiv]:
+				return HISTORIANS[iCiv][iEra]
+		
+		return tuple()
+		
 				
 	def turnChecker(self, iTurnNum):
 

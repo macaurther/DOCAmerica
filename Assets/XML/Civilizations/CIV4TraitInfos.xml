@@ -4,6 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Leader Trait Infos -->
+<!-- MacAurther Note: This file is here to override the BtS's trait infos to prevent errors -->
 <Civ4TraitInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">
 	<TraitInfos>
 		<TraitInfo>

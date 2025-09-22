@@ -560,8 +560,6 @@ public:
 	void setStabilityParameter(int eParameter, int iNewValue);
 	int countRequiredSlaves();
 	void setEspionageExperience(int iNewValue);
-	int getSettlerValue(int x, int y);
-	int getWarValue(int x, int y);
 	int getModifier(int eModifierType);
 	void setModifier(int eModifierType, int iNewValue);
 	int getTechPreference(int eTech);
@@ -620,6 +618,11 @@ public:
 	int getLandHistory(int iTurn);
 
 	bool isExisting();
+
+	void AI_unitUpdate();
+	void separateAttackCitySelectionGroups();
+	int getModifiedCommerceRate(CommerceTypes eCommerce);
+	bool canBuySlaves() const;
 
 private:
 	CvPlayer* m_pPlayer;

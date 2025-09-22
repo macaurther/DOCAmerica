@@ -117,7 +117,7 @@ public:
 	void updateSeeFromSight(bool bIncrement, bool bUpdatePlotGroups);
 
 	bool canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude = false) const;																						// Exposed to Python
-	bool canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam = NO_TEAM, bool bPotential = false) const;		// Exposed to Python
+	bool canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam = NO_TEAM, bool bPotential = false, BuildTypes eFromBuild = NO_BUILD) const;		// Exposed to Python
 
 	bool canBuild(BuildTypes eBuild, PlayerTypes ePlayer = NO_PLAYER, bool bTestVisible = false) const;														// Exposed to Python
 	int getBuildTime(BuildTypes eBuild) const;																																										// Exposed to Python
@@ -533,8 +533,8 @@ public:
 	void write(FDataStreamBase* pStream);
 
 	// Leoreth
-	short getRegionID() const;
-	void setRegionID(short iNewValue);
+	int getRegionID() const;
+	void setRegionID(int iNewValue);
 	CvWString getRegionName() const;
 
 	bool isCore(CivilizationTypes eCivilization) const;
@@ -542,16 +542,16 @@ public:
 	bool isCore() const;
 	void setCore(CivilizationTypes eCivilization, bool bNewValue);
 
-	short getSettlerValue(CivilizationTypes eCivilization) const;
-	short getSettlerValue(PlayerTypes ePlayer) const;
-	void setSettlerValue(CivilizationTypes eCivilization, short iNewValue);
+	int getSettlerValue(CivilizationTypes eCivilization) const;
+	int getSettlerValue(PlayerTypes ePlayer) const;
+	void setSettlerValue(CivilizationTypes eCivilization, int iNewValue);
 
-	short getWarValue(CivilizationTypes eCivilization) const;
-	short getWarValue(PlayerTypes ePlayer) const;
-	void setWarValue(CivilizationTypes eCivilization, short iNewValue);
+	int getWarValue(CivilizationTypes eCivilization) const;
+	int getWarValue(PlayerTypes ePlayer) const;
+	void setWarValue(CivilizationTypes eCivilization, int iNewValue);
 
-	short getSpreadFactor(ReligionTypes eReligion) const;
-	void setSpreadFactor(ReligionTypes eReligion, short iNewValue);
+	int getSpreadFactor(ReligionTypes eReligion) const;
+	void setSpreadFactor(ReligionTypes eReligion, int iNewValue);
 
 	bool isWithinGreatWall() const;
 	void setWithinGreatWall(bool bNewValue);
@@ -580,6 +580,8 @@ public:
 
 	int getContinentID() const;
 	int getRegionGroup() const;
+
+	static int getRegionGroupForRegion(int iRegion);
 
 	bool isSlaveImprovement() const;
 	
@@ -677,16 +679,16 @@ protected:
 	bool* m_abRevealed;
 
 	// Leoreth: initialized by Python at the beginning of the game
-	bool* m_abCore;
-	short* m_aiSettlerValue;
-	short* m_aiWarValue;
-	short* m_aiReligionSpreadFactor;
-	short m_iRegionID;
+	byte* m_abCore;
+	byte* m_aiSettlerValue;
+	byte* m_aiWarValue;
+	byte* m_aiReligionSpreadFactor;
+	byte m_iRegionID;
 
 	// Leoreth
 	byte m_bWithinGreatWall;
 
-	int* m_aiReligionInfluence;
+	short* m_aiReligionInfluence;
 
 	// Leoreth: graphics paging
 	short m_iGraphicsPageIndex;

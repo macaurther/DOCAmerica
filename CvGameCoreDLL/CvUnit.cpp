@@ -111,6 +111,9 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	// Init pre-setup() data
 	setXY(iX, iY, false, false);
 
+	//Leoreth: region dependent art and AI for independent units
+	m_iOriginalRegion = plot()->getRegionID();
+
 	//--------------------------------
 	// Init non-saved data
 	setupGraphical();
@@ -150,7 +153,16 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 	GET_PLAYER(getOwnerINLINE()).changeUnitClassCount(((UnitClassTypes)(m_pUnitInfo->getUnitClassType())), 1);
 
 	GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(m_pUnitInfo->getExtraCost());
-	GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(getExtraUpkeep()); // Leoreth
+
+	// Leoreth
+	if (getExtraUpkeep() >= 0)
+	{
+		GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(getExtraUpkeep());
+	}
+	else
+	{
+		GET_PLAYER(getOwnerINLINE()).changeBaseFreeMilitaryUnits(-getExtraUpkeep());
+	}
 
 	if (m_pUnitInfo->getNukeRange() != -1)
 	{
@@ -260,9 +272,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, UnitAITypes eUnitAI, PlayerTypes eOw
 		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getOwnerINLINE(), szBuffer, getX_INLINE(), getY_INLINE(), (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"));
 	}
 
-	//Leoreth: region dependent art for independent units
-	m_originalArtStyle = (UnitArtStyleTypes)getOriginalArtStyle(plot());
-
 	AI_init(eUnitAI);
 
 /*************************************************************************************************/
@@ -361,6 +370,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iExtraUpkeep = 0;
 	m_eFacingDirection = DIRECTION_SOUTH;
 	m_iImmobileTimer = 0;
+	m_iOriginalRegion = -1; // Leoreth
 
 	m_iStuckLoopCount = 0; // Leoreth
 
@@ -377,7 +387,6 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_eCapturingPlayer = NO_PLAYER;
 	m_eUnitType = eUnit;
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	m_originalArtStyle = (UnitArtStyleTypes)-1;
 	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
 	m_eLeaderUnitType = NO_UNIT;
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
@@ -685,7 +694,16 @@ void CvUnit::kill(bool bDelay, PlayerTypes ePlayer)
 	GET_PLAYER(getOwnerINLINE()).changeUnitClassCount((UnitClassTypes)m_pUnitInfo->getUnitClassType(), -1);
 
 	GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(-(m_pUnitInfo->getExtraCost()));
-	GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(-getExtraUpkeep()); // Leoreth
+
+	// Leoreth
+	if (getExtraUpkeep() >= 0)
+	{
+		GET_PLAYER(getOwnerINLINE()).changeExtraUnitCost(-getExtraUpkeep());
+	}
+	else
+	{
+		GET_PLAYER(getOwnerINLINE()).changeBaseFreeMilitaryUnits(getExtraUpkeep());
+	}
 
 	if (m_pUnitInfo->getNukeRange() != -1)
 	{
@@ -2402,9 +2420,14 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) cons
 		}
 	}
 
-	// Leoreth: civilian and naval units can enter independent territory
+	// Leoreth: explorer, civilian and naval units can enter independent territory
 	if (GET_TEAM(eTeam).isMinorCiv())
 	{
+		if (isNoBadGoodies())
+		{
+			return true;
+		}
+
 		if (!canFight())
 		{
 			return true;
@@ -6133,11 +6156,6 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 	//Leoreth: no slavery in the motherland or with egalitarianism
 	if (GC.getUnitInfo(getUnitType()).isSlave())
 	{
-		if (!GET_PLAYER(getOwnerINLINE()).canUseSlaves())
-		{
-			return false;
-		}
-
 		if (!pCity->canSlaveJoin())
 		{
 			return false;
@@ -6648,7 +6666,7 @@ bool CvUnit::canInfiltrate(const CvPlot* pPlot, bool bTestVisible) const
 	}
 
 	CvCity* pCity = pPlot->getPlotCity();
-	if (pCity == NULL || pCity->isBarbarian()) //Rhye - add minors here?
+	if (pCity == NULL || pCity->isBarbarian() || GET_PLAYER(pCity->getOwnerINLINE()).isMinorCiv())
 	{
 		return false;
 	}
@@ -7962,7 +7980,15 @@ void CvUnit::upgrade(UnitTypes eUnit)
 	GET_PLAYER(getOwnerINLINE()).changeGold(-iPrice);
 // BUG - Upgrade Unit Event - end
 
-	pUpgradeUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
+	UnitAITypes eUnitAIType = AI_getUnitAIType();
+
+	// Leoreth: make sure that upgrading to sea explore units actually makes a sea explore unit
+	if (GC.getUnitInfo(eUnit).getDefaultUnitAIType() == UNITAI_EXPLORE_SEA)
+	{
+		eUnitAIType = UNITAI_EXPLORE_SEA;
+	}
+
+	pUpgradeUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, getX_INLINE(), getY_INLINE(), eUnitAIType);
 
 	FAssertMsg(pUpgradeUnit != NULL, "UpgradeUnit is not assigned a valid value");
 
@@ -8811,7 +8837,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 		else
 		{
 			iExtraModifier = -pAttacker->terrainAttackModifier(pAttackedPlot->getTerrainType());
-			iModifier += iExtraModifier;
+			iTempModifier += iExtraModifier;
 			if (pCombatDetails != NULL)
 			{
 				pCombatDetails->iTerrainAttackModifier = iExtraModifier;
@@ -11874,7 +11900,7 @@ void CvUnit::collectBlockadeGold()
 							GET_PLAYER(getOwnerINLINE()).changeGold(iGold);
 							GET_PLAYER(pCity->getOwnerINLINE()).changeGold(-iGold);
 
-							CvEventReporter::getInstance().blockade(getOwnerINLINE(), iGold); // Leoreth
+							CvEventReporter::getInstance().blockade(getOwnerINLINE(), pCity, iGold); // Leoreth
 
 							CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_TRADE_ROUTE_PLUNDERED", getNameKey(), pCity->getNameKey(), iGold);
 							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE());
@@ -12465,6 +12491,11 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 
 bool CvUnit::canAcquirePromotionAny() const
 {
+	if (isFound())
+	{
+		return false;
+	}
+
 	int iI;
 
 	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
@@ -12694,10 +12725,11 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUpgradeDiscount);
 	pStream->Read(&m_iExperiencePercent);
 	pStream->Read(&m_iKamikazePercent);
-	pStream->Read(&m_iExtraUpkeep);
+	pStream->Read(&m_iExtraUpkeep); // Leoreth
 	pStream->Read(&m_iBaseCombat);
 	pStream->Read((int*)&m_eFacingDirection);
 	pStream->Read(&m_iImmobileTimer);
+	pStream->Read(&m_iOriginalRegion); // Leoreth
 
 	pStream->Read(&m_bMadeAttack);
 	pStream->Read(&m_bMadeInterception);
@@ -12807,6 +12839,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(m_iBaseCombat);
 	pStream->Write(m_eFacingDirection);
 	pStream->Write(m_iImmobileTimer);
+	pStream->Write(m_iOriginalRegion); // Leoreth
 
 	pStream->Write(m_bMadeAttack);
 	pStream->Write(m_bMadeInterception);
@@ -13991,7 +14024,7 @@ const CvArtInfoUnit* CvUnit::getArtInfo(int i, EraTypes eEra) const
 {
 	if (GET_PLAYER(getOwnerINLINE()).isIndependent() || isBarbarian())
 	{
-		return m_pUnitInfo->getArtInfo(i, eEra, m_originalArtStyle);
+		return m_pUnitInfo->getArtInfo(i, eEra, (UnitArtStyleTypes)getOriginalArtStyle());
 	}
 
 	return m_pUnitInfo->getArtInfo(i, eEra, (UnitArtStyleTypes) GC.getCivilizationInfo(getCivilizationType()).getUnitArtStyleType());
@@ -14228,9 +14261,9 @@ int CvUnit::getSelectionSoundScript() const
 	return iScriptId;
 }
 
-int CvUnit::getOriginalArtStyle(const CvPlot* pPlot) const
+int CvUnit::getOriginalArtStyle() const
 {
-	switch (pPlot->getRegionID())
+	switch (getOriginalRegion())
 	{
 	case REGION_ICELAND:
 		return GC.getCivilizationInfo(NORSE).getUnitArtStyleType();
@@ -14291,6 +14324,7 @@ int CvUnit::getOriginalArtStyle(const CvPlot* pPlot) const
 	case REGION_CHILE:
 		return GC.getCivilizationInfo(INCA).getUnitArtStyleType();
 	}
+
 	return GC.getCivilizationInfo(INDEPENDENT).getUnitArtStyleType();
 }
 
@@ -14661,6 +14695,9 @@ bool CvUnit::greatMission()
 		if (pSpreadPlot == NULL || !pSpreadPlot->isCity()) break;
 
 		pSpreadPlot->getPlotCity()->spreadReligion(eReligion, false);
+
+		// Python Event
+		CvEventReporter::getInstance().unitSpreadReligionAttempt(this, eReligion, true);
 	}
 
 	// remove from eligible cities
@@ -14795,7 +14832,7 @@ bool CvUnit::canRebuild(const CvPlot* pPlot) const
 			{
 				if (GET_PLAYER(getOwnerINLINE()).getCurrentEra() >= kBuilding.getFreeStartEra())
 				{
-					if (!pCity->isHasRealBuilding(eBuilding) && pCity->canConstruct(eBuilding))
+					if (!pCity->isHasRealBuilding(eBuilding) && pCity->canConstruct(eBuilding, true))
 					{
 						return true;
 					}
@@ -14834,6 +14871,11 @@ bool CvUnit::rebuild()
 	}
 
 	return false;
+}
+
+int CvUnit::getOriginalRegion() const
+{
+	return m_iOriginalRegion;
 }
 
 bool CvUnit::canPopulate(const CvPlot* pPlot) const

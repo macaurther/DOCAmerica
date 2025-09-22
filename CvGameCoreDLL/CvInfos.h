@@ -1463,6 +1463,7 @@ public:
 	int getBuildingHealthChanges(int i) const;				// Exposed to Python
 	int getBuildingProductionModifier(int i) const;	//Leoreth
 	int getFeatureHappinessChanges(int i) const;				// Exposed to Python
+	int getSpecialistCount(int i) const;
 
 	int getDomainProductionModifier(int i) const; // Leoreth
 	int getDomainExperienceModifier(int i) const; // Leoreth
@@ -1573,6 +1574,7 @@ protected:
 	int* m_paiBuildingHealthChanges;
 	int* m_paiBuildingProductionModifiers; // Leoreth
 	int* m_paiFeatureHappinessChanges;
+	int* m_paiSpecialistCounts; // Leoreth
 	int* m_paiMinimalSpecialistCounts; // Leoreth
 
 	int* m_paiDomainProductionModifiers; // Leoreth
@@ -1897,6 +1899,8 @@ public:
 	int getPrereqBuildingClassPercent(int i) const;
 	int getImprovementHappinessPercent(int i) const;
 	int getImprovementHealthPercent(int i) const;
+
+	BuildingClassTypes getBuildingClass() const;
 
 	// Other
 
@@ -2360,7 +2364,6 @@ public:
 
 	// Leoreth
 	int getLoadingTime(ScenarioTypes eScenario) const;
-	int getRating(RatingTypes eRating) const;
 	int getStartingYear() const;
 	const std::string getIdentifier() const;
 	const std::string getRegion() const;	// MacAurther
@@ -2428,7 +2431,6 @@ protected:
 	int* m_piCivilizationInitialCivics;
 
 	int* m_piLoadingTime; // Leoreth
-	int* m_piRatings; // Leoreth
 
 	bool* m_pbLeaders;
 	bool* m_pbOriginalLeaders; // Leoreth
@@ -3370,6 +3372,7 @@ public:
 	int getCultureCostModifier() const;		// Leoreth
 	int getAdvancedStartRemoveCost() const;						// Exposed to Python
 	int getTurnDamage() const;						// Exposed to Python
+	int getGlobalWarmingDefense() const; // Leoreth
 // BUG - Global Warming Mod - start
 #ifdef _MOD_GWARM
 	int getWarmingDefense() const;						// Exposed to Python
@@ -3430,11 +3433,7 @@ protected:
 	int m_iCultureCostModifier; // Leoreth
 	int m_iAdvancedStartRemoveCost;
 	int m_iTurnDamage;
-// BUG - Global Warming Mod - start
-#ifdef _MOD_GWARM
-	int m_iWarmingDefense;
-#endif
-// BUG - Global Warming Mod - end
+	int m_iGlobalWarmingDefense; // Leoreth
 	
 	bool m_bNoCoast;				
 	bool m_bNoRiver;					
@@ -3604,6 +3603,8 @@ public:
 
 	int getWorldSoundscapeScriptId() const;
 
+	int getGlobalWarmingTerrainType() const; // Leoreth
+
 	// Arrays
 
 	int getYield(int i) const;				// Exposed to Python
@@ -3617,6 +3618,7 @@ public:
 	const TCHAR* getButton() const;
 
 	bool read(CvXMLLoadUtility* pXML);
+	bool readPass2(CvXMLLoadUtility* pXML);
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
@@ -3636,6 +3638,8 @@ protected:
 	bool m_bFoundFreshWater;
 
 	int m_iWorldSoundscapeScriptId;
+
+	int m_iGlobalWarmingTerrainType; // Leoreth
 
 	// Arrays
 

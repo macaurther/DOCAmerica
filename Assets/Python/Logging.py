@@ -1,4 +1,5 @@
 from Core import *
+from RFCUtils import *
 
 from Events import handler
 
@@ -8,6 +9,8 @@ from datetime import timedelta
 RISE_LOG = "Rise.log"
 TECH_LOG = "Tech.log"
 RELATIONS_LOG = "Relations.log"
+CIVICS_LOG = "Civics.log"
+GW_LOG = "GlobalWarming.log"
 
 TIMER = None
 TECHS = None

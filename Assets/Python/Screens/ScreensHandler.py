@@ -25,7 +25,6 @@ import WBUnitScreen
 import WBPlayerScreen
 import WBGameDataScreen
 import WBPlotScreen
-import WBStoredDataScreen
 ## Ultrapack ##
 
 from CvMainInterface import g_mainInterface as mainInterface
@@ -240,11 +239,11 @@ def onCombatLogHit(argsList):
 	iDamage = genericArgs[3]
 	
 	if cdDefender.eOwner == cdDefender.eVisualOwner:
-		szDefenderName = gc.getPlayer(cdDefender.eOwner).getNameKey()
+		szDefenderName = gc.getPlayer(cdDefender.eOwner).getCivilizationDescriptionKey()
 	else:
 		szDefenderName = localText.getText("TXT_KEY_TRAIT_PLAYER_UNKNOWN", ())
 	if cdAttacker.eOwner == cdAttacker.eVisualOwner:
-		szAttackerName = gc.getPlayer(cdAttacker.eOwner).getNameKey()
+		szAttackerName = gc.getPlayer(cdAttacker.eOwner).getCivilizationDescriptionKey()
 	else:
 		szAttackerName = localText.getText("TXT_KEY_TRAIT_PLAYER_UNKNOWN", ())
 
@@ -757,6 +756,8 @@ def __eventEditCityNameApply(playerID, userData, popupReturn):
 	if (len(cityName) > 30):
 		cityName = cityName[:30]
 	city.setName(cityName, not bRename)
+	
+	events.fireEvent("playerCityRename", city, cityName)
 
 def __eventEditCityBegin(argsList):
 	'Edit City Event'
@@ -813,22 +814,6 @@ def __eventEditUnitNameApply(playerID, userData, popupReturn):
 	if CyGame().GetWorldBuilderMode():
 		WBUnitScreen.WBUnitScreen(CvPlatyBuilderScreen.CvWorldBuilderScreen()).placeStats()
 		WBUnitScreen.WBUnitScreen(CvPlatyBuilderScreen.CvWorldBuilderScreen()).placeCurrentUnit()	
-			
-def __eventEditCityNameBegin(city, bRename):
-	popup = PyPopup.PyPopup(CvUtil.EventEditCityName, EventContextTypes.EVENTCONTEXT_ALL)
-	popup.setUserData((city.getID(), bRename, CyGame().getActivePlayer()))
-	popup.setHeaderString(localText.getText("TXT_KEY_NAME_CITY", ()))
-	popup.setBodyString(localText.getText("TXT_KEY_SETTLE_NEW_CITY_NAME", ()))
-	popup.createEditBox(city.getName())
-	popup.setEditBoxMaxCharCount(15)
-	popup.launch()
-
-def __eventEditCityNameApply(playerID, userData, popupReturn):
-	city = gc.getPlayer(userData[2]).getCity(userData[0])
-	cityName = popupReturn.getEditBoxString(0)
-	city.setName(cityName, not userData[1])
-	if CyGame().GetWorldBuilderMode() and not CyGame().isInAdvancedStart():
-		WBCityEditScreen.WBCityEditScreen(CvPlatyBuilderScreen.CvWorldBuilderScreen()).placeStats()
 
 def __eventWBPlayerScriptPopupApply(playerID, userData, popupReturn):
 	sScript = popupReturn.getEditBoxString(0)
@@ -866,18 +851,6 @@ def __eventWBPlotScriptPopupApply(playerID, userData, popupReturn):
 	WBPlotScreen.WBPlotScreen(CvPlatyBuilderScreen.CvWorldBuilderScreen()).placeScript()
 	return
 
-def __eventWBStoredDataValuePopupApply(playerID, userData, popupReturn):
-	sScript = popupReturn.getEditBoxString(0)
-	try:
-		int(sScript)
-		bInt = True
-	except ValueError:
-		bInt = False
-	if bInt:
-		iValue = int(sScript)
-		WBStoredDataScreen.WBStoredDataScreen(CvPlatyBuilderScreen.CvWorldBuilderScreen()).changeListTableValue(userData[0], iValue)
-	return
-
 def __eventWBLandmarkPopupApply(playerID, userData, popupReturn):
 	sScript = popupReturn.getEditBoxString(0)
 	pPlot = CyMap().plot(userData[0], userData[1])
@@ -911,5 +884,4 @@ events.setPopupHandlers(2222, 'WBCityScript', __eventWBScriptPopupBegin, __event
 events.setPopupHandlers(3333, 'WBUnitScript', __eventWBScriptPopupBegin, __eventWBUnitScriptPopupApply)
 events.setPopupHandlers(4444, 'WBGameScript', __eventWBScriptPopupBegin, __eventWBGameScriptPopupApply)
 events.setPopupHandlers(5555, 'WBPlotScript', __eventWBScriptPopupBegin, __eventWBPlotScriptPopupApply)
-events.setPopupHandlers(7777, 'WBStoredDataValue', __eventWBScriptPopupBegin, __eventWBStoredDataValuePopupApply),
 ## Platy Builder ##

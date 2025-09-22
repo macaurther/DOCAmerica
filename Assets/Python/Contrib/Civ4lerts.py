@@ -928,10 +928,14 @@ class SlaveTrade(AbstractStatefulAlert):
 			return
 		
 		playerID = PlayerUtil.getActivePlayerID()
+		
+		if not gc.getPlayer(playerID).canBuySlaves():
+			return
+		
 		for rival in TradeUtil.getSlaveTradePartners(playerID):
 			rivalID = rival.getID()
 			oldMaxSlaveTrade = self._getMaxSlaveTrade(playerID, rivalID)
-			newMaxSlaveTrade = rival.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE")) + rival.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))
+			newMaxSlaveTrade = rival.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE")) + rival.getUnitClassCount(gc.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))	# MacAurther TODO: Consolidate slave units?
 			deltaMaxSlaveTrade = newMaxSlaveTrade - oldMaxSlaveTrade
 			if deltaMaxSlaveTrade > 0:
 				message = localText.getText("TXT_KEY_CIV4LERTS_ON_SLAVE_TRADE", (rival.getCivilizationShortDescription(0), newMaxSlaveTrade))

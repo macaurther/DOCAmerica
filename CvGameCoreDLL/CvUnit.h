@@ -810,6 +810,8 @@ public:
 	// Leoreth
 	SpecialistTypes getSettledSpecialist() const;
 
+	int getOriginalRegion() const;
+
 	DllExport const CvArtInfoUnit* getArtInfo(int i, EraTypes eEra) const;										// Exposed to Python
 	DllExport const TCHAR* getButton() const;										// Exposed to Python
 	DllExport int getGroupSize() const;
@@ -920,6 +922,7 @@ protected:
 	DirectionTypes m_eFacingDirection;
 	int m_iImmobileTimer;
 	int m_iExtraUpkeep; // Leoreth
+	int m_iOriginalRegion; // Leoreth
 
 	bool m_bMadeAttack;
 	bool m_bMadeInterception;
@@ -935,9 +938,6 @@ protected:
 	UnitTypes m_eUnitType;
 	UnitTypes m_eLeaderUnitType;
 	CvUnitInfo *m_pUnitInfo;
-
-	//Leoreth
-	UnitArtStyleTypes m_originalArtStyle;
 
 	IDInfo m_combatUnit;
 	IDInfo m_transportUnit;
@@ -979,7 +979,7 @@ protected:
 	void resolveAirCombat(CvUnit* pInterceptor, CvPlot* pPlot, CvAirMissionDefinition& kBattle);
 	void checkRemoveSelectionAfterAttack();
 
-	int getOriginalArtStyle(const CvPlot* pPlot) const;
+	int getOriginalArtStyle() const;
 };
 
 #endif

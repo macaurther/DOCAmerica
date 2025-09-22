@@ -301,12 +301,10 @@ public:
 	int AI_averageYieldMultiplier(YieldTypes eYield) const;
 	int AI_averageCommerceMultiplier(CommerceTypes eCommerce) const;
 	int AI_averageGreatPeopleMultiplier() const;
+	int AI_averageTradeMultiplier() const; // Leoreth
 	int AI_averageCommerceExchange(CommerceTypes eCommerce) const;
 	
 	int AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const;
-	
-	int AI_getTotalCityThreat() const;
-	int AI_getTotalFloatingDefenseNeeded() const;
 	
 	int AI_getTotalAreaCityThreat(CvArea* pArea) const;
 	int AI_countNumAreaHostileUnits(CvArea* pArea, bool bPlayer, bool bTeam, bool bNeutral, bool bHostile) const;
@@ -330,7 +328,6 @@ public:
 	void AI_recalculateFoundValues(int iX, int iY, int iInnerRadius, int iOuterRadius) const;
 	
 	void AI_updateCitySites(int iMinFoundValueThreshold, int iMaxSites) const;
-	int AI_browseStep(int iMinFoundValueThreshold, int iBestFoundValue, CvPlot* pBestFoundPlot, int iModifier); //Rhye
 	void AI_invalidateCitySites(int iMinFoundValueThreshold) const;
 	bool AI_isPlotCitySite(CvPlot* pPlot) const;
 	int AI_getNumAreaCitySites(int iAreaID, int& iBestValue) const;
@@ -338,6 +335,9 @@ public:
 	
 	int AI_getNumCitySites() const;
 	CvPlot* AI_getCitySite(int iIndex) const;
+
+	int AI_bestCitySiteSettlerValue(int iAreaID = -1) const; // Leoreth
+	int AI_bestAdjacentCitySiteSettlerValue(int iAreaID = -1) const; // Leoreth
 	
 	int AI_bestAreaUnitAIValue(UnitAITypes eUnitAI, CvArea* pArea, UnitTypes* peBestUnitType = NULL) const;
 	int AI_bestCityUnitAIValue(UnitAITypes eUnitAI, CvCity* pCity, UnitTypes* peBestUnitType = NULL) const;
@@ -374,6 +374,10 @@ public:
 	int AI_getUnitEnabledValue(UnitTypes eUnit) const;
 	bool AI_enablesUnitWonder(UnitClassTypes eUnitClass, int iPathLength) const;
 
+	bool AI_willUseNukes(PlayerTypes eTarget, bool bOffensive) const;
+
+	int AI_getEnemyPower(bool bIncludeMinors = false) const;
+
 	// for serialization
   virtual void read(FDataStreamBase* pStream);
   virtual void write(FDataStreamBase* pStream);
@@ -396,6 +400,7 @@ protected:
 	mutable int m_iAveragesCacheTurn;
 	
 	mutable int m_iAverageGreatPeopleMultiplier;
+	mutable int m_iAverageTradeMultiplier;
 	
 	mutable int *m_aiAverageYieldMultiplier;
 	mutable int *m_aiAverageCommerceMultiplier;
@@ -451,7 +456,7 @@ protected:
 	int AI_getStrategyHash() const;
 	void AI_calculateAverages() const;
 	
-	int AI_getHappinessWeight(int iHappy, int iExtraPop) const;
+	int AI_getHappinessWeight(int iHappy, int iExtraPop, bool bClampToHalf = false) const;
 	int AI_getHealthWeight(int iHealth, int iExtraPop) const;
 	
 	void AI_convertUnitAITypesForCrush();

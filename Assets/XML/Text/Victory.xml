@@ -2884,7 +2884,6 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
-	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_ANDEAN_COAST</Tag>
 		<English>the Andean Coast</English>
@@ -2917,7 +2916,6 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
-	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_CATHEDRALS</Tag>
 		<English>cathedrals</English>
@@ -2966,7 +2964,6 @@
 		<Italian></Italian>
 		<Spanish></Spanish>
 	</TEXT>
-	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_DIFFERENT_HAPPINESS_RESOURCES</Tag>
 		<English>different happiness</English>
@@ -2983,7 +2980,6 @@
 		<Italian>plantation</Italian>
 		<Spanish>plantation</Spanish>
 	</TEXT>
-	
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_LAND_BASED_TRADE</Tag>
 		<English>land based trade</English>
@@ -3373,6 +3369,14 @@
 		<German>Venezuela</German>
 		<Italian>Venezuela</Italian>
 		<Spanish>Venezuela</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_NAME_LOCAL</Tag>
+		<English>local</English>
+		<French></French>
+		<German></German>
+		<Italian></Italian>
+		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_NAME_BAHIA</Tag>

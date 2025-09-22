@@ -9223,7 +9223,6 @@
 			<Description>TXT_KEY_BUILDING_HOSPICIO_CABANAS</Description>
 			<Civilopedia>TXT_KEY_BUILDING_HOSPICIO_CABANAS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_HOSPICIO_CABANAS_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_HOSPICIO_CABANAS_HELP</Help>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_HOSPICIO_CABANAS</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
@@ -9240,6 +9239,8 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
+			<iFoodKept>25</iFoodKept>
+			<iGlobalHappiness>1</iGlobalHappiness>
 			<iAsset>12</iAsset>
 			<iPower>8</iPower>
 			<fVisibilityPriority>1.0</fVisibilityPriority>

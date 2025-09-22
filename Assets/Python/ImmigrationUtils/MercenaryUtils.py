@@ -166,10 +166,10 @@ class Mercenary:
 			iImmigrationCost = 2
 		elif self.iUnitID in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]:
 			iImmigrationCost = 1
-			iGoldCost = 20 * int(3 - gc.getGame().getGameSpeedType())
+			iGoldCost = scale(20)
 		elif self.getUnitId() in lGreatPeople:
 			iImmigrationCost = 1
-			iGoldCost = 500 * int(3 - gc.getGame().getGameSpeedType())
+			iGoldCost = scale(500)
 		else:
 			iGoldCost = self.getUnitInfo().getProductionCost() / 2
 			# Double price if unique unit

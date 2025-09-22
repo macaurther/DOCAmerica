@@ -2774,6 +2774,8 @@ int CvTeam::getPopulationResearchModifier() const
 {
 	int iModifier = 0;
 
+	return 0;
+
 	int iMultiplier;
 	int iNumCities = getNumCities();
 

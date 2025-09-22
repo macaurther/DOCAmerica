@@ -541,6 +541,34 @@ void CvDllPythonEvents::reportCityLost(CvCity* pCity)
 	}
 }
 
+void CvDllPythonEvents::reportCityGifted(CvCity* pCity)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("cityGifted");
+
+		CyCity* pyu = new CyCity(pCity);
+		eventData.add(gDLL->getPythonIFace()->makePythonObject(pyu));
+		postEvent(eventData);
+		delete pyu;
+	}
+}
+
+void CvDllPythonEvents::reportCityLiberated(CvCity* pCity)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("cityLiberated");
+
+		CyCity* pyu = new CyCity(pCity);
+		eventData.add(gDLL->getPythonIFace()->makePythonObject(pyu));
+		postEvent(eventData);
+		delete pyu;
+	}
+}
+
 void CvDllPythonEvents::reportCultureExpansion( CvCity *pCity, PlayerTypes ePlayer )
 {
 	if (preEvent())
@@ -1394,7 +1422,7 @@ void CvDllPythonEvents::reportReleasedCivilization(PlayerTypes ePlayer, Civiliza
 }
 
 // Leoreth: blockade a city
-void CvDllPythonEvents::reportBlockade(PlayerTypes ePlayer, int iGold)
+void CvDllPythonEvents::reportBlockade(PlayerTypes ePlayer, CvCity* pCity, int iGold)
 {
 	if (preEvent())
 	{
@@ -1402,9 +1430,12 @@ void CvDllPythonEvents::reportBlockade(PlayerTypes ePlayer, int iGold)
 		eventData.add("blockade");
 
 		eventData.add((int)ePlayer);
+		CyCity* pCyCity = new CyCity(pCity);
+		eventData.add(gDLL->getPythonIFace()->makePythonObject(pCyCity));
 		eventData.add(iGold);
 
 		postEvent(eventData);
+		delete pCyCity;
 	}
 }
 
@@ -1533,6 +1564,55 @@ void CvDllPythonEvents::reportTribute(PlayerTypes eFrom, PlayerTypes eTo)
 		eventData.add((int)eFrom);
 		eventData.add((int)eTo);
 		postEvent(eventData);
+	}
+}
+
+void CvDllPythonEvents::reportGlobalWarming(int iGlobalWarmingValue, int iGlobalWarmingDefense)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("globalWarming");
+		eventData.add(iGlobalWarmingValue);
+		eventData.add(iGlobalWarmingDefense);
+		postEvent(eventData);
+	}
+}
+
+void CvDllPythonEvents::reportGlobalWarmingEffect(CvPlot* pPlot, bool bChanged, TerrainTypes ePreviousTerrain, TerrainTypes eNewTerrain, FeatureTypes ePreviousFeature)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("globalWarmingEffect");
+
+		CyPlot* pCyPlot = new CyPlot(pPlot);
+		eventData.add(gDLL->getPythonIFace()->makePythonObject(pCyPlot));
+
+		eventData.add(bChanged);
+		eventData.add((int)ePreviousTerrain);
+		eventData.add((int)eNewTerrain);
+		eventData.add((int)ePreviousFeature);
+		postEvent(eventData);
+	}
+}
+
+void CvDllPythonEvents::reportBuildingProcessed(CvCity* pCity, BuildingTypes eBuilding, int iChange)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("buildingProcessed");					// add key to lookup python handler fxn
+
+		CyCity* pCyCity = new CyCity(pCity);
+		eventData.add(gDLL->getPythonIFace()->makePythonObject(pCyCity));
+
+		eventData.add(eBuilding);
+		eventData.add(iChange);
+
+		postEvent(eventData);
+
+		delete pCyCity;
 	}
 }
 

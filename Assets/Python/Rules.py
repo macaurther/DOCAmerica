@@ -115,20 +115,29 @@ def pioneeringAbility(city):
 def extraCultureOnFound(city):
 	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
 	if iExpansionCivic in [iProvidence2, iManifestDestiny3]:
-		city.changeCulture(city.getOwner(), int(50 * (3 - gc.getGame().getGameSpeedType())), True)
+		city.changeCulture(city.getOwner(), scale(50), True)
 
 @handler("cityBuilt")
 # Homestead civics
 def extraCultureOnFound(city):
 	iExpansionCivic = player(city.getOwner()).getCivics(iCivicsExpansion)
 	if iExpansionCivic in [iHomesteads2, iHomesteads3]:
-		iSettleImmigration = int(50 * (3 - gc.getGame().getGameSpeedType()))	# Scale based on game speed
+		iSettleImmigration = scale(50)
 		
 		# England UP
 		if civ(city.getOwner()) == iEngland:
 			iSettleImmigration *= 2
 		
 		player(city.getOwner()).changeImmigration(iSettleImmigration)
+
+### CITY GIFTED ###
+
+
+@handler("cityGifted")
+def giftedCityDefenders(city):
+	if not player(city).isHuman():
+		iNumDefenders = max(2, 1 + player(city).getCurrentEra() / 2)
+		createGarrisons(city, city.getOwner(), iNumDefenders)
 
 ### GOODY RECEIVED ###
 
@@ -221,7 +230,7 @@ def mayanHolkanAbility(winningUnit, losingUnit):
 		if player(iWinner).getNumCities() > 0:
 			city = closestCity(winningUnit, iWinner)
 			if city and distance(winningUnit, city) <= 10:
-				iFood = scale(10)
+				iFood = scale(5)
 				city.changeFood(iFood)
 				
 				message(iWinner, 'TXT_KEY_MAYA_HOLKAN_EFFECT', adjective(losingUnit), losingUnit.getName(), iFood, city.getName())
@@ -242,7 +251,7 @@ def validateSlaves(iPlayer):
 			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlaveMine):
 				plot.setImprovementType(iMine)
 		
-		for city in cities.owner(iPlayer):
+		for city in cities.owner(iPlayer):	# MacAurther TODO: Consolidate slaves
 			iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
 			city.setFreeSpecialistCount(iSpecialistSlave, 0)
 			
@@ -490,7 +499,7 @@ def lMigrateCities(iGameTurn):
 		
 			# Assign culture to new city
 			if civ(iPlayer) == iLakota:
-				iCulture += 10 * (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
+				iCulture += scale(10)
 			pNewCity.setCulture(iPlayer, iCulture, True)
 			
 			# Assign free specialists

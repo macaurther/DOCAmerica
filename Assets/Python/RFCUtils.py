@@ -1,4 +1,5 @@
 from Civilizations import *
+from Civilizations import dNeverTrain
 from Core import *
 
 from Events import events
@@ -62,12 +63,18 @@ def restorePeaceAI(iMinorCiv, bOpenBorders):
 	teamMinor = team(iMinorCiv)
 	for iPlayer in players.major().existing().ai():
 		if team(iMinorCiv).isAtWar(player(iPlayer).getTeam()):
-			bInvadingIndependents = checkUnitsInEnemyTerritory(iPlayer, iMinorCiv)
-			bInvadedByIndependents = checkUnitsInEnemyTerritory(iMinorCiv, iPlayer)
-			if not bInvadingIndependents and not bInvadedByIndependents:
-				teamMinor.makePeace(iPlayer)
-				if bOpenBorders:
-					teamMinor.signOpenBorders(iPlayer)
+			if checkUnitsInEnemyTerritory(iPlayer, iMinorCiv):
+				continue
+				
+			if checkUnitsInEnemyTerritory(iMinorCiv, iPlayer):
+				continue
+				
+			if cities.owner(iMinorCiv).any(lambda city: plot(city).getExpansion() == iPlayer):
+				continue
+				
+			teamMinor.makePeace(iPlayer)
+			if bOpenBorders:
+				teamMinor.signOpenBorders(iPlayer)
 
 # used: AIWars
 def restorePeaceHuman(iMinorCiv, bOpenBorders): 
@@ -75,26 +82,47 @@ def restorePeaceHuman(iMinorCiv, bOpenBorders):
 	iHuman = active()
 	if player().isExisting():
 		if teamMinor.isAtWar(iHuman):
-			bInvadingIndependents = checkUnitsInEnemyTerritory(iHuman, iMinorCiv)
-			bInvadedByIndependents = checkUnitsInEnemyTerritory(iMinorCiv, iHuman)
-			if not bInvadingIndependents and not bInvadedByIndependents:
-				teamMinor.makePeace(iHuman)
+			if checkUnitsInEnemyTerritory(iHuman, iMinorCiv):
+				return
+				
+			if checkUnitsInEnemyTerritory(iMinorCiv, iHuman):
+				return
+			
+			teamMinor.makePeace(iHuman)
 
 # used: AIWars
 def minorWars(iMinorCiv):
 	teamMinor = team(iMinorCiv)
 	for city in cities.owner(iMinorCiv):
-		x, y = location(city)
-		for iPlayer in players.major().alive().ai():
-			if player(iPlayer).getSettlerValue(x, y) >= 90 or player(iPlayer).getWarValue(x, y) >= 6:
+		for iPlayer in players.major().existing().ai():
+			if plot(city).getPlayerSettlerValue(iPlayer) > 0 or plot(city).getPlayerSettlerValue(iPlayer) >= 3:
 				if not teamMinor.isAtWar(iPlayer):
 					team(iPlayer).declareWar(player(iMinorCiv).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
 
 # used: Rise
 def updateMinorTechs(iMinorCiv, iMajorCiv):
-	for iTech in range(iNumTechs):
-		if team(iMajorCiv).isHasTech(iTech):
-				team(iMajorCiv).setHasTech(iTech, True, iMinorCiv, False, False)
+	techs = infos.techs().where(team(iMajorCiv).isHasTech)
+	
+	if civ(iMinorCiv) == iNative:
+		techs = techs.where(lambda iTech: all(iEnabledTech in techs for iEnabledTech in getEnabledTechs(iTech)))
+		
+		nativePlayers = players.of(*lBioNewWorld)
+		if nativePlayers:
+			techs = techs.where(lambda iTech: nativePlayers.all(lambda p: team(p).isHasTech(iTech)))
+
+	for iTech in techs:
+		team(iMinorCiv).setHasTech(iTech, True, iMinorCiv, False, False)
+		
+
+# used: RFCUtils
+def getEnabledTechs(iTech):
+	return infos.techs().where(lambda iOtherTech: isRequirement(iTech, iOtherTech))
+
+
+# RFCUtils
+def isRequirement(iPrereq, iTech):
+	return any(infos.tech(iTech).getPrereqAndTechs(i) == iPrereq for i in range(4)) or (infos.tech(iTech).getPrereqOrTechs(0) == iPrereq and infos.tech(iTech).getPrereqOrTechs(1) == -1)
+
 
 # used: RFCUtils, History
 def flipCity(tCityPlot, bConquest, bKillUnits, iNewOwner, lOldOwners = []):
@@ -178,9 +206,9 @@ def spreadMajorCulture(iMajorCiv, tPlot):
 			iOwner = city.getOwner()
 			
 			iDenominator = 25
-			if player(iMajorCiv).getSettlerValue(city.getX(), city.getY()) >= 400:
+			if plot(city).getPlayerSettlerValue(iMajorCiv) >= 5:
 				iDenominator = 10
-			elif player(iMajorCiv).getSettlerValue(city.getX(), city.getY()) >= 150:
+			elif plot(city).getPlayerSettlerValue(iMajorCiv) >= 2:
 				iDenominator = 15
 				
 			city.changeCulture(iMajorCiv, city.getCulture(city.getOwner()) / iDenominator, True)
@@ -280,21 +308,21 @@ def colonialConquest(iPlayer, tPlot):
 		team(iPlayer).declareWar(target.getID(), True, WarPlanTypes.WARPLAN_TOTAL)
 			
 	targetPlot = plots.surrounding(tPlot).where(lambda p: not p.isCity() and not p.isPeak() and not p.isWater()).random()
+	if not targetPlot:
+		return
 	
 	if iCiv in [iSpain, iPortugal, iNetherlands]:
 		iNumUnits = 2
 	elif iCiv in [iFrance, iEngland]:
 		iNumUnits = 3
 		
-	iExp = 0
-	if not player(iPlayer).isHuman(): iExp = 2
+	iExperience = not player(iPlayer).isHuman() and 2 or 0
 	
-	# TODO: this lacks additional experience
 	dConquerorUnits = {
 		iBase: 2*iNumUnits,
 		iSiegeCity: iNumUnits,
 	}
-	createRoleUnits(iPlayer, targetPlot, dConquerorUnits.items())
+	createRoleUnits(iPlayer, targetPlot, dConquerorUnits.items(), iExperience=iExperience)
 
 # used: CvRandomEventInterface, History
 # this shouldn't be here
@@ -437,7 +465,7 @@ def getRoleDomain(iRole):
 # used: RFCUtils
 def getRoleLocation(iRole, location):
 	if getRoleDomain(iRole) == DomainTypes.DOMAIN_SEA:
-		seaPlots = plots.surrounding(location, radius=2).sea().closest_within(location, radius=2)
+		seaPlots = plots.surrounding(location, radius=3).sea().closest_within(location, radius=3)
 		if seaPlots:
 			return seaPlots[data.iSeed % seaPlots.count()]
 	
@@ -534,18 +562,19 @@ def canCreateUnit(iPlayer, iUnit):
 	return player(iPlayer).canTrain(iUnit, False, False)
 
 # used: RFCUtils, Rise
-def getUnitForRole(iPlayer, iRole):
-	if iRole == iMissionary:
-		iReligion = player(iPlayer).getStateReligion()
-		if iReligion != -1 and game.isReligionFounded(iReligion):
-			return (missionary(iReligion), getRoleAI(iRole))
-	roleMetric = lambda unit: (infos.unit(unit).getCombat(), base_unit(unit) != unit)
-	iBestUnit = infos.units().where(lambda unit: canCreateUnit(iPlayer, unit)).where(lambda unit: isUnitOfRole(unit, iRole)).maximum(roleMetric)
+def getUnitForRole(iPlayer, iRole, bUnique=True):
+	roleMetric = lambda unit: (infos.unit(unit).getCombat(), infos.unit(unit).getCityAttackModifier(), bUnique == (base_unit(unit) != unit))
+	possibleUnits = infos.units().where(lambda unit: canCreateUnit(iPlayer, unit)).where(lambda unit: isUnitOfRole(unit, iRole))
+	
+	if not bUnique:
+		possibleUnits = possibleUnits.map(base_unit)
+	
+	iBestUnit = possibleUnits.maximum(roleMetric)
 	return (iBestUnit, getRoleAI(iRole))
 
 # used: RFCUtils, Rise
-def getUnitsForRole(iPlayer, iRole):
-	iUnit, iUnitAI = getUnitForRole(iPlayer, iRole)
+def getUnitsForRole(iPlayer, iRole, bUnique=True):
+	iUnit, iUnitAI = getUnitForRole(iPlayer, iRole, bUnique=bUnique)
 	units = [(iUnit, iUnitAI)]
 	
 	if iRole in lColonistRoles:
@@ -707,11 +736,10 @@ def createSettlers(iPlayer, iTargetCities, bGrantCapital=True):
 def createMissionaries(iPlayer, iNumUnits, iReligion=None):
 	if not iReligion:
 		iReligion = player(iPlayer).getStateReligion()
-		
+	
 	if iReligion < 0:
-		iNumUnits = 0
-		
-	if not game.isReligionFounded(iReligion):
+		iNumUnits = 0	
+	elif not game.isReligionFounded(iReligion):
 		iNumUnits = 0
 	
 	return makeUnits(iPlayer, missionary(iReligion), plots.capital(iPlayer), iNumUnits)
@@ -722,8 +750,12 @@ def exclusive(iCiv, *civs):
 # used: CvScreensInterface, Stability
 # TODO: should move to stability
 def canRespawn(iCiv):
-	# only dead civ need to check for resurrection
+	# only dead civ needs to check for resurrection
 	if player(iCiv).isAlive():
+		return False
+	
+	# cannot respawn if it has not spawned yet
+	if until(year(dBirth[iCiv])) > 0:
 		return False
 		
 	# check if only recently died
@@ -757,7 +789,7 @@ def expelUnits(iPlayer, area, excluded_area = None):
 		excluded_area = area
 
 	for plot in area:
-		for iOwner, ownerUnits in units.at(plot).notowner(iPlayer).grouped(lambda unit: unit.getOwner()):
+		for iOwner, ownerUnits in units.at(plot).notowner(iPlayer).grouped(CyUnit.getOwner):
 			ownerUnits = ownerUnits.where(lambda unit: not unit.isNone() and not unit.isCargo())
 			landUnits, seaUnits = ownerUnits.split(lambda unit: unit.getDomainType() != DomainTypes.DOMAIN_SEA)
 		
@@ -803,29 +835,24 @@ def toggleStabilityOverlay(iPlayer = -1):
 
 	bDebug = game.isDebugMode()
 
-	otherplayers = players.major().without(iPlayer).where(lambda p: player(p).isAlive() or canEverRespawn(p))
+	othercivs = civs.major().without(iPlayer).where(lambda iCiv: player(iCiv).isAlive() or canEverRespawn(iCiv))
 
 	# apply the highlight
 	for plot in plots.all().land():
 		if bDebug or plot.isRevealed(iTeam, False):
-			if plot.isPlayerCore(iPlayer):
-				iPlotType = iCore
-			else:
-				iSettlerValue = plot.getPlayerSettlerValue(iPlayer)
-				if bDebug and iSettlerValue == 3:
-					iPlotType = iAIForbidden
-				elif iSettlerValue >= 90:
-					if otherplayers.any(plot.isPlayerCore):
-						iPlotType = iContest
-					else:
-						iPlotType = iHistorical
-				elif otherplayers.any(plot.isPlayerCore):
-					iPlotType = iForeignCore
+			if not plot.isPeak() and not plot.isWater():
+				if plot.isPlayerCore(iPlayer):
+					iPlotType = iCoreArea
+				elif plot.getPlayerSettlerValue(iPlayer) > 0:
+					iPlotType = iHistoricalArea
+				elif plot.getPlayerWarValue(iPlayer) > 1:
+					iPlotType = iConquestArea
 				else:
-					iPlotType = -1
-			if iPlotType != -1:
+					iPlotType = iForeignArea
+			
 				szColor = lStabilityColors[iPlotType]
-				engine.fillAreaBorderPlotAlt(plot.getX(), plot.getY(), 1000+iPlotType, szColor, 0.7)
+				engine.fillAreaBorderPlotAlt(plot.getX(), plot.getY(), 1000 + iPlotType, szColor, 0.7)
+
 				
 # used: CvScreensInterface, RFCUtils, CvPlatyBuilderScreen
 def removeStabilityOverlay():
@@ -961,15 +988,16 @@ def flipUnit(unit, iNewOwner, plot):
 		makeUnit(iNewOwner, iUnitType, plot)
 	
 # used: Congresses, Stability
-def relocateUnitsToCore(iPlayer, lUnits, iArmyPercent = 100):
-	coreCities = cities.core(iPlayer).owner(iPlayer)
+def relocateUnitsToCore(iPlayer, lUnits, iArmyPercent = 100, exceptions = []):
+	coreCities = cities.core(iPlayer).without(exceptions).owner(iPlayer)
+	coastalCities = coreCities.coastal() or cities.owner(iPlayer).without(exceptions).coastal()
 	if not coreCities:
 		killUnits(lUnits)
 		return
 	
 	for iType, typeUnits in units.of(lUnits).where(lambda unit: unit.plot() and unit.plot().isOwned()).by_type().items():
 		movedUnits, removedUnits = typeUnits.percentage_split(iArmyPercent)
-		destinations = infos.unit(iType).getDomainType() == DomainTypes.DOMAIN_SEA and coreCities.coastal() or coreCities
+		destinations = infos.unit(iType).getDomainType() == DomainTypes.DOMAIN_SEA and coastalCities or coreCities
 		
 		for city, movedUnits in movedUnits.divide(destinations):
 			for unit in movedUnits:
@@ -1055,13 +1083,6 @@ def getPrevalentReligion(area, iStateReligionPlayer=None):
 	
 	return -1
 
-# used: DynamicCivs, Periods
-def isCurrentCapital(iPlayer, *names):
-	capital = player(iPlayer).getCapitalCity()
-	if not capital: return False
-	
-	return any(location(capital) in data.dCapitalLocations[name] for name in names)
-
 # used: Rise, Scenarios
 def convertSurroundingPlotCulture(iPlayer, plots):
 	for plot in plots:
@@ -1095,7 +1116,17 @@ def endObserverMode():
 		else:
 			makeUnit(active(), iBombard, (0, 0))
 
-# used: Congresses
+def breakObserverMode(message = None):
+	if data.iBeforeObserverSlot == -1:
+		return
+	
+	game.setAIAutoPlay(0)
+	events.fireEvent("autoplayEnded")
+	
+	if message:
+		show(message)
+
+# used: Congresses, RFCUtils
 def isIsland(tile):
 	return plot(tile).area().getNumTiles() == 1
 
@@ -1121,7 +1152,7 @@ def possibleSpawnsBetween(origin, target, iDistance):
 			.where(lambda p: p.getOwner() in [plot(origin).getOwner(), plot(target).getOwner(), -1])
 			.where(lambda p: map.getArea(p.getArea()).getNumCities() > 0)
 			.where(lambda p: distance(p, target) >= iDistance)
-			.where(lambda p: not units.at(p).atwar(origin.getOwner()))
+			.where(lambda p: not p.isVisibleEnemyUnit(origin.getOwner()))
 			.where(lambda p: not cities.surrounding(p).notowner(origin.getOwner()))
 	)
 
@@ -1129,7 +1160,7 @@ def possibleSpawnsBetween(origin, target, iDistance):
 # used: Slots, Collapse
 def resetRevealedOwner(iPlayer):
 	for plot in plots.all():
-		if not plot.isRevealed(game.getActiveTeam(), False) and plot.getRevealedOwner(game.getActiveTeam(), False) == iPlayer:
+		if plot.getRevealedOwner(game.getActiveTeam(), False) == iPlayer:
 			plot.setRevealedOwner(game.getActiveTeam(), slot(iIndependent))
 
 

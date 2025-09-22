@@ -2,9 +2,9 @@ from Events import handler
 from RFCUtils import *
 from Core import *
 from Locations import *
-from Areas import *
+from Stability import *
 from Popups import popup
-from Secession import *
+from Scenarios import SCENARIOS
 
 
 dRelocatedCapitals = CivDict({
@@ -30,6 +30,7 @@ def updateCulture():
 	for plot in plots.all():
 		plot.updateCulture()
 
+# MacAurther: Immigration
 @handler("GameStart")
 def placeHomelands():
 	for iHomeland in lHomelands:
@@ -220,7 +221,7 @@ def conquistadors(iTeamX, iHasMetTeamY):
 			iContactImmigration += 20
 			(pCity, iter) = pNewWorldPlayer.nextCity(iter, false)
 		
-		iContactImmigration *= (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
+		iContactImmigration = scale(iContactImmigration)
 		
 		# England UP
 		if civ(iOldWorldPlayer) == iEngland:

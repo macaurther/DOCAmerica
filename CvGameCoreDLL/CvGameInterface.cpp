@@ -337,23 +337,23 @@ void CvGame::updateColoredPlots()
 						switch (pLoopPlot->getFeatureType())
 						{
 							case FEATURE_TRADEWINDS_NORTH_EUROPE:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_RED")).getColor();
+								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIGHT_PURPLE")).getColor();
 								layer = AREA_BORDER_LAYER_NORTH_EUROPE_ACCESS;
 								break;
 							case FEATURE_TRADEWINDS_SOUTH_EUROPE:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_BLUE")).getColor();
+								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_DARK_YELLOW")).getColor();
 								layer = AREA_BORDER_LAYER_SOUTH_EUROPE_ACCESS;
 								break;
 							case FEATURE_TRADEWINDS_AFRICA:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW")).getColor();
+								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIME")).getColor();
 								layer = AREA_BORDER_LAYER_AFRICA_ACCESS;
 								break;
 							case FEATURE_TRADEWINDS_SIBERIA:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_CYAN")).getColor();
+								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_VERYDARK_RED")).getColor();
 								layer = AREA_BORDER_LAYER_SIBERIA_ACCESS;
 								break;
 							case FEATURE_TRADEWINDS_ASIA:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_GREEN")).getColor();
+								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_BLUEISH_PURPLE")).getColor();
 								layer = AREA_BORDER_LAYER_ASIA_ACCESS;
 								break;
 							default:

@@ -213,6 +213,16 @@ void CvEventReporter::cityLost( CvCity *pCity)
 	m_kPythonEventMgr.reportCityLost(pCity);
 }
 
+void CvEventReporter::cityGifted(CvCity* pCity)
+{
+	m_kPythonEventMgr.reportCityGifted(pCity);
+}
+
+void CvEventReporter::cityLiberated(CvCity* pCity)
+{
+	m_kPythonEventMgr.reportCityLiberated(pCity);
+}
+
 void CvEventReporter::cultureExpansion( CvCity *pCity, PlayerTypes ePlayer )
 {
 	m_kPythonEventMgr.reportCultureExpansion(pCity, ePlayer);
@@ -501,9 +511,9 @@ void CvEventReporter::releasedCivilization(PlayerTypes ePlayer, CivilizationType
 }
 
 // Leoreth: blockade a city
-void CvEventReporter::blockade(PlayerTypes ePlayer, int iGold)
+void CvEventReporter::blockade(PlayerTypes ePlayer, CvCity* pCity, int iGold)
 {
-	m_kPythonEventMgr.reportBlockade(ePlayer, iGold);
+	m_kPythonEventMgr.reportBlockade(ePlayer, pCity, iGold);
 }
 
 // Leoreth: arrange peace deal between players
@@ -564,6 +574,21 @@ void CvEventReporter::techTraded(PlayerTypes eFrom, PlayerTypes eTo, TechTypes e
 void CvEventReporter::tribute(PlayerTypes eFrom, PlayerTypes eTo)
 {
 	m_kPythonEventMgr.reportTribute(eFrom, eTo);
+}
+
+void CvEventReporter::globalWarming(int iGlobalWarmingValue, int iGlobalWarmingDefense)
+{
+	m_kPythonEventMgr.reportGlobalWarming(iGlobalWarmingValue, iGlobalWarmingDefense);
+}
+
+void CvEventReporter::globalWarmingEffect(CvPlot* pPlot, bool bChanged, TerrainTypes ePreviousTerrain, TerrainTypes eNewTerrain, FeatureTypes ePreviousFeature)
+{
+	m_kPythonEventMgr.reportGlobalWarmingEffect(pPlot, bChanged, ePreviousTerrain, eNewTerrain, ePreviousFeature);
+}
+
+void CvEventReporter::buildingProcessed(CvCity* pCity, BuildingTypes eBuilding, int iChange)
+{
+	m_kPythonEventMgr.reportBuildingProcessed(pCity, eBuilding, iChange);
 }
 
 void CvEventReporter::preSave()

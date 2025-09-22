@@ -299,7 +299,7 @@
 	</Define>
 	<Define>
 		<DefineName>NUM_CORPORATION_PREREQ_BONUSES</DefineName>
-		<iDefineIntVal>9</iDefineIntVal>
+		<iDefineIntVal>7</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NUM_ROUTE_PREREQ_OR_BONUSES</DefineName>
@@ -743,7 +743,7 @@
 	</Define>
 	<Define>
 		<DefineName>GLOBAL_WARMING_UNHEALTH_WEIGHT</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
+		<iDefineIntVal>130</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>GLOBAL_WARMING_NUKE_WEIGHT</DefineName>
@@ -868,6 +868,10 @@
 	<Define>
 		<DefineName>TEMP_HAPPY</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TEMP_HAPPY_TURNS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>BASE_WAR_WEARINESS_MULTIPLIER</DefineName>
@@ -1427,7 +1431,7 @@
 	</Define>
 	<Define>
 		<DefineName>VICTORY_SOUNDTRACK_AVAILABLE</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
+		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MAX_WITHDRAWAL_PROBABILITY</DefineName>
@@ -1447,7 +1451,7 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_WATER_SIZE_FOR_OCEAN</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
+		<iDefineIntVal>15</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MIN_CITY_ATTACK_MODIFIER_FOR_SIEGE_TOWER</DefineName>

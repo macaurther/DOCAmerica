@@ -7,7 +7,7 @@ from CoreTypes import *
 
 gc = CyGlobalContext()
 
-iWorldX = 59
+iWorldX = 83
 iWorldY = 122
 
 iNumPlayers = gc.getMAX_PLAYERS()
@@ -107,9 +107,6 @@ iBrown = 55
 iOrange = 88
 iTan = 90
 iLime = 100
-
-# independent cities
-iNumMinorCities = 6
 
 # scripted conquerors
 iNumConquests = 23
@@ -502,6 +499,7 @@ iGreatStatesman : iFeGreatStatesman,
 iGreatGeneral : iFeGreatGeneral,
 iGreatSpy : iFeGreatSpy,
 }
+
 
 iNumUnitRoles = 23
 # 0				1				2				3				4				5				6				7				8				9

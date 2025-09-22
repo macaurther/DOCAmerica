@@ -1,6 +1,6 @@
 from Resources import setupScenarioResources
 from DynamicCivs import checkName
-from Slots import findSlot, addPlayer
+from Slots import findSlot, findMinorSlot, addPlayer, initWars
 from GoalHandlers import event_handler_registry
 from Periods import dScenarioPeriods, setPeriod
 
@@ -9,6 +9,7 @@ from RFCUtils import *
 from Civilizations import *
 from Parsers import *
 
+import CityNames as cn
 
 START_HISTORY = -500
 
@@ -177,6 +178,7 @@ class Scenario(object):
 		self.setupGoals = kwargs.get("setupGoals", lambda *args: None)
 		
 		self.createStartingUnits = kwargs.get("createStartingUnits", lambda: None)
+		self.updateData = kwargs.get("updateData", lambda: None)
 	
 	def adjustTurns(self, bFinal=True):
 		iStartTurn = getGameTurnForYear(self.iStartYear, START_HISTORY, game.getCalendar(), game.getGameSpeedType())
@@ -223,14 +225,19 @@ class Scenario(object):
 	def init(self):
 		event_handler_registry.reset()
 		
+		initWars(game.getActivePlayer())
+		
 		for civ in self.lCivilizations:
 			iCiv = civ.iCiv
+			bMinor = not civ.isPlayable()
 			
 			if game.getActiveCivilizationType() == iCiv:
 				continue
 			
-			iPlayer = findSlot(iCiv)
-			addPlayer(iPlayer, iCiv, bAlive=True, bMinor=not civ.isPlayable())
+			iPlayer = bMinor and findMinorSlot(iCiv) or findSlot(iCiv)
+			addPlayer(iPlayer, iCiv, bAlive=True, bMinor=bMinor)
+			
+			initWars(iPlayer)
 	
 		events.fireEvent("playerCivAssigned", game.getActivePlayer(), game.getActiveCivilizationType())
 		events.fireEvent("playerCivAssigned", gc.getBARBARIAN_PLAYER(), iBarbarian)
@@ -275,7 +282,11 @@ class Scenario(object):
 		self.restoreCivs()
 		self.restoreLeaders()
 		
+		self.updateData()
+		self.updateLastTurnAlive()
 		self.updateNames()
+		self.updateCityNames()
+		self.updateCityWork()
 	
 	def adjustTerritories(self):
 		for city in cities.all():
@@ -333,9 +344,25 @@ class Scenario(object):
 			for iLeader in range(iNumLeaders):
 				infos.civ(iCiv).setLeader(iLeader, infos.civ(iCiv).isOriginalLeader(iLeader))
 	
+	def updateLastTurnAlive(self):
+		for iCiv in lBirthOrder:
+			if self.iStartYear > dBirth[iCiv]:
+				if self.iStartYear <= dFall[iCiv] or any(civ.iCiv == iCiv for civ in self.lCivilizations):
+					data.civs[iCiv].iLastTurnAlive = game.getStartTurn()
+				else:
+					data.civs[iCiv].iLastTurnAlive = year(dFall[iCiv])
+	
 	def updateNames(self):
 		for iPlayer in players.major():
 			checkName(iPlayer)
+	
+	def updateCityNames(self):
+		cn.setupScenario()
+		cn.updateAllNames()
+	
+	def updateCityWork(self):
+		for city in cities.all():
+			city.AI_updateAssignWork()
 	
 	def updatePeriods(self):
 		for iYear, dPeriods in dScenarioPeriods.items():

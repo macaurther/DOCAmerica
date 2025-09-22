@@ -3,16 +3,19 @@ from RFCUtils import *
 from Parsers import *
 from Scenarios import *
 
-from CityNameManager import determineCapitalLocations
-
 import SettlerMaps, WarMaps, RegionMap
 
 
-lCustomMapOptions = [
-	("Starting Date", ["500 BC", "1500 AD", "1750 AD"], "500 BC"),
+lStartingDates = [
+	"500 BC",
+	"1500 AD",
+	"1750 AD",
 ]
 
-lMinorCivs = [iNative, iIndependent, iIndependent2, iIndependent3]
+
+lCustomMapOptions = [
+	("Starting Date", lStartingDates, lStartingDates[0]),
+]
 
 
 def getDescription():
@@ -73,7 +76,6 @@ def getGridSize(args):
 
 def beforeGeneration():
 	data.setup()
-	determineCapitalLocations()
 	PARSER.prepare()
 
 def generateRandomMap():

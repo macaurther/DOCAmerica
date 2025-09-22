@@ -1,7 +1,9 @@
 from Core import *
 from RFCUtils import *
 from Locations import *
+
 from Events import events, handler
+from DynamicCivs import isCurrentCapital
 
 
 dEvacuatePeriods = {

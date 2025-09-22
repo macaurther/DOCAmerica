@@ -5,7 +5,6 @@ from Resurrection import *
 from Secession import *
 from Collapse import *
 
-from Slots import findSlot
 from Events import handler, events
 
 from operator import itemgetter
@@ -54,10 +53,10 @@ def updateTrendScores():
 				updateWarTrend(iPlayer, iEnemy)
 		
 		for iPlayer, iEnemy in players.major().permutations():
-				if team(iPlayer).isAtWar(iEnemy):
-					data.players[iPlayer].lLastWarSuccess[iEnemy] = team(iPlayer).AI_getWarSuccess(iEnemy)
-				else:
-					data.players[iPlayer].lLastWarSuccess[iEnemy] = 0
+			if team(iPlayer).isAtWar(iEnemy):
+				data.players[iPlayer].dLastWarSuccess[iEnemy] = team(iPlayer).AI_getWarSuccess(iEnemy)
+			elif iEnemy in data.players[iPlayer].dLastWarSuccess:
+				del data.players[iPlayer].dLastWarSuccess[iEnemy]
 
 
 @handler("BeginGameTurn")
@@ -99,10 +98,8 @@ def triggerCrisis(iPlayer):
 	
 	changeCrisisCountdown(iPlayer, turns(10))
 	
-	bFall = since(year(dFall[iPlayer])) >= 0
-	
 	# help AI to not immediately collapse
-	if not player(iPlayer).isHuman() and not bFall:
+	if not player(iPlayer).isHuman() and not isDecline(iPlayer):
 		# with no overexpansion at all, just have a domestic crisis (once until back at shaky again)
 		if not data.players[iPlayer].bDomesticCrisis and data.players[iPlayer].lStabilityCategoryValues[0] >= 0:
 			domesticCrisis(iPlayer)
@@ -161,13 +158,18 @@ def onVassalState(iMaster, iVassal, bVassal, bCapitulated):
 @handler("changeWar")
 def onChangeWar(bWar, iTeam, iOtherTeam):
 	if not is_minor(iTeam) and not is_minor(iOtherTeam):
+		if bWar:
+			if not team(iTeam).isAVassal() and not team(iOtherTeam).isAVassal():
+				teamPlayers = players.vassals(iTeam).including(iTeam)
+				otherTeamPlayers = players.vassals(iOtherTeam).including(iOtherTeam)
+				
+				for iAttacker, iDefender in permutations(teamPlayers, otherTeamPlayers):
+					startWar(iAttacker, iDefender)
+					startWar(iDefender, iAttacker)
+
 		checkStability(iTeam, not bWar)
 		checkStability(iOtherTeam, not bWar)
 		
-		if bWar:
-			startWar(iTeam, iOtherTeam)
-			startWar(iOtherTeam, iTeam)
-
 @handler("revolution")
 def onRevolution(iPlayer):
 	checkStability(iPlayer)
@@ -350,7 +352,6 @@ def checkStability(iPlayer, bPositive = False, iMaster = -1):
 	iStability, lStabilityTypes, lParameters = calculateStability(iPlayer)
 	iStabilityLevel = stability(iPlayer)
 	bHuman = player(iPlayer).isHuman()
-	bFall = isDecline(iPlayer)
 	
 	iNewStabilityLevel = determineStabilityLevel(iPlayer, iStabilityLevel, iStability)
 	
@@ -407,7 +408,7 @@ def calculateAdministration(city):
 
 	iAdministration = iAdministrationModifier * iPopulation / 100
 	
-	if city.isCapital():
+	if city.isCapital() and not isDecline(iPlayer):
 		iAdministration += iPopulation
 	
 	return iAdministration
@@ -420,19 +421,24 @@ def getSeparatismModifier(iPlayer, city):
 	plot = city.plot()
 	civic = civics(iPlayer)
 	
-	bHistorical = plot.getPlayerSettlerValue(iPlayer) >= 90
-	bFall = since(year(dFall[iPlayer])) >= 0
+	bHistorical = plot.getPlayerSettlerValue(iPlayer) > 0
+	bConquest = plot.getPlayerWarValue(iPlayer) > 1
 	
 	iTotalCulture = civs.major().sum(lambda c: plot.isCore(c) and 2 * plot.getCivCulture(c) or plot.getCivCulture(c))
 	iCulturePercent = iTotalCulture != 0 and 100 * plot.getCulture(iPlayer) / iTotalCulture or 0
+	
+	# recent conquests in conquest area
+	if bConquest and city.getOriginalCiv() != iCiv and since(city.getGameTurnAcquired()) <= turns(10):
+		return 0
 	
 	# ahistorical tiles
 	if not bHistorical:
 		iModifier += 2
 		
 	# not original owner
-	if not city.isOriginalOwner(iPlayer) and since(city.getGameTurnAcquired()) < turns(25):
-		iModifier += 1
+	if not bExpansionExceptions:
+		if not city.isOriginalOwner(iPlayer) and since(city.getGameTurnAcquired()) < turns(25):
+			iModifier += 1
 	
 	# not majority culture
 	if iCulturePercent < 50: iModifier += 1
@@ -457,20 +463,17 @@ def getSeparatismModifier(iPlayer, city):
 
 def calculateSeparatism(city):
 	iPlayer = city.getOwner()
-	civics = Civics.player(iPlayer)
 
 	if city.isPlayerCore(iPlayer):
 		return 0
 	
 	iModifier = getSeparatismModifier(iPlayer, city)
-	iSeparatism = city.getPopulation()
+	iPopulation = city.getPopulation() + (city.getHurryPercentAnger() + city.getConscriptPercentAnger()) * city.getPopulation() / 1000
 	
 	if city.isOccupation():
-		iSeparatism -= city.getTotalPopulationLoss()
+		iPopulation -= city.getTotalPopulationLoss()
 	
-	iSeparatism *= iModifier / 100
-	
-	return iSeparatism
+	return iModifier * iPopulation / 100
 
 def calculateStability(iPlayer):
 	pPlayer = player(iPlayer)
@@ -507,13 +510,19 @@ def calculateStability(iPlayer):
 	iAdministration = cities.owner(iPlayer).sum(calculateAdministration) + 10
 	iSeparatism = cities.owner(iPlayer).sum(calculateSeparatism)
 	
+	bDecline = isDecline(iPlayer)
+	
+	iRecentConquestTurns = 20
+	if iElective in civics:
+		iRecentConquestTurns = 30
+	
 	for city in cities.owner(iPlayer):
 		iPopulation = city.getPopulation()
 		bHistorical = city.plot().getPlayerSettlerValue(iPlayer) > 0
 		bConquest = city.plot().getPlayerWarValue(iPlayer) > 1
 		
 		# Recent conquests
-		if since(city.getGameTurnAcquired()) <= turns(20):
+		if since(city.getGameTurnAcquired()) <= turns(iRecentConquestTurns):
 			if city.getPreviousCiv() < 0:
 				if bHistorical:
 					iRecentlyFounded += 1
@@ -587,8 +596,9 @@ def calculateStability(iPlayer):
 	iConquestModifier = 1
 	if iConquest1 in civics or iConquest2 in civics: iConquestModifier += 1
 	
-	iRecentExpansionStability += iRecentlyFounded
-	iRecentExpansionStability += iConquestModifier * iRecentlyConquered
+	if not bDecline:
+		iRecentExpansionStability += iRecentlyFounded
+		iRecentExpansionStability += iConquestModifier * iRecentlyConquered
 		
 	lParameters[iParameterRecentExpansion] = iRecentExpansionStability
 	
@@ -735,9 +745,15 @@ def calculateStability(iPlayer):
 		iHeathenRatio = 100 * iDifferentReligionPopulation / iTotalPopulation
 		iHeathenThreshold = 30
 		iBelieverThreshold = 75
+		iOnlyStateReligionThreshold = 50
 		
 		if iHeathenRatio > iHeathenThreshold:
-			iReligionStability -= (iHeathenRatio - iHeathenThreshold) / 10
+			iHeathenStability = (iHeathenRatio - iHeathenThreshold) / 10
+			
+			if iFanaticism in civics:
+				iHeathenStability *= 2
+			
+			iReligionStability -= iHeathenStability
 			
 		if iStateReligion >= 0:
 			iStateReligionRatio = 100 * iStateReligionPopulation / iTotalPopulation
@@ -862,38 +878,50 @@ def calculateStability(iPlayer):
 	iWarWearinessStability = 0 # war weariness in comparison to war length
 	iBarbarianLossesStability = 0 # like previously
 	
+	lEnemyWarTrends = []
+	
+	iOurSuccess = 0
+	iTheirSuccess = 0
+	
+	iOurWarWeariness = 0
+	iTheirWarWeariness = 0
+	
+	iDurationModifier = 0
+	
 	# iterate ongoing wars
 	for iEnemy in players.major().existing():
 		pEnemy = player(iEnemy)
 		if tPlayer.isAtWar(iEnemy):
-			iTempWarSuccessStability = calculateTrendScore(data.players[iPlayer].lWarTrend[iEnemy])
+			lEnemyWarTrends.append(data.players[iPlayer].dWarTrend.get(iEnemy, []))
 			
-			iOurSuccess = tPlayer.AI_getWarSuccess(iEnemy)
-			iTheirSuccess = team(iEnemy).AI_getWarSuccess(iPlayer)
+			iOurSuccess += tPlayer.AI_getWarSuccess(iEnemy)
+			iTheirSuccess += team(iEnemy).AI_getWarSuccess(iPlayer)
 			
-			if iTempWarSuccessStability > 0 and iTheirSuccess > iOurSuccess: iTempWarSuccessStability /= 2
-			elif iTempWarSuccessStability < 0 and iOurSuccess > iTheirSuccess: iTempWarSuccessStability /= 2
+			iOurWarWeariness += tPlayer.getWarWeariness(iEnemy)
+			iTheirWarWeariness += team(iEnemy).getWarWeariness(iPlayer)
 			
-			if iTempWarSuccessStability > 0: iTempWarSuccessStability /= 2
-			
-			iWarSuccessStability += iTempWarSuccessStability
-			
-			iOurWarWeariness = tPlayer.getWarWeariness(iEnemy)
-			iTheirWarWeariness = team(iEnemy).getWarWeariness(iPlayer)
-			
-			iWarTurns = turn() - data.players[iPlayer].lWarStartTurn[iEnemy]
-			iDurationModifier = 0
+			iWarTurns = turn() - data.players[iPlayer].dWarStartTurn.get(iEnemy, 0)
 			
 			if iWarTurns > turns(20):
-				iDurationModifier = min(9, (iWarTurns - turns(20)) / turns(10))
-				
-			iTempWarWearinessStability = (iTheirWarWeariness - iOurWarWeariness) / (4000 * (iDurationModifier + 1))
-			if iTempWarWearinessStability > 0: iTempWarWearinessStability = 0
-			
-			iWarWearinessStability += iTempWarWearinessStability
-			
-			debug(pPlayer.getCivilizationAdjective(0) + ' war against ' + pEnemy.getCivilizationShortDescription(0) + '\nWar Success Stability: ' + str(iTempWarSuccessStability) + '\nWar Weariness: ' + str(iTempWarWearinessStability))
+				iDurationModifier = max(iDurationModifier, min(9, (iWarTurns - turns(20)) / turns(10)))
+
+	# war success stability
+	lCombinedWarTrend = combineTrends(lEnemyWarTrends)
+	iBaseWarSuccessStability = calculateTrendScore(lCombinedWarTrend)
 	
+	if iBaseWarSuccessStability > 0 and iTheirSuccess > iOurSuccess: iBaseWarSuccessStability /= 2
+	elif iBaseWarSuccessStability < 0 and iOurSuccess > iTheirSuccess: iBaseWarSuccessStability /= 2
+	
+	if iBaseWarSuccessStability > 0: iBaseWarSuccessStability /= 2
+	
+	iWarSuccessStability += iBaseWarSuccessStability
+			
+	# war weariness stability
+	iBaseWarWearinessStability = (iTheirWarWeariness - iOurWarWeariness) / (4000 * (iDurationModifier + 1))
+	if iBaseWarWearinessStability > 0: iBaseWarWearinessStability = 0
+	
+	iWarWearinessStability += iBaseWarWearinessStability
+			
 	lParameters[iParameterWarSuccess] = iWarSuccessStability
 	lParameters[iParameterWarWeariness] = iWarWearinessStability
 	
@@ -1631,6 +1659,15 @@ def sigmoid(x):
 	
 def count(iterable, function = lambda x: True):
 	return len([element for element in iterable if function(element)])
+
+def combineTrends(lTrends):
+	if not lTrends:
+		return []
+	
+	iMaxTrend = max([len(lTrend) for lTrend in lTrends])
+	iterators = [iter(lTrend) for lTrend in lTrends]
+	
+	return [sum([next(iterator, 0) for iterator in iterators]) for _ in range(iMaxTrend)]
 	
 def calculateTrendScore(lTrend):
 	iPositive = 0
@@ -1722,8 +1759,8 @@ def updateWarTrend(iPlayer, iEnemy):
 	iOurCurrentSuccess = team(iPlayer).AI_getWarSuccess(iEnemy)
 	iTheirCurrentSuccess = team(iEnemy).AI_getWarSuccess(iPlayer)
 	
-	iOurLastSuccess = data.players[iPlayer].lLastWarSuccess[iEnemy]
-	iTheirLastSuccess = data.players[iEnemy].lLastWarSuccess[iPlayer]
+	iOurLastSuccess = data.players[iPlayer].dLastWarSuccess.get(iEnemy, 0)
+	iTheirLastSuccess = data.players[iEnemy].dLastWarSuccess.get(iPlayer, 0)
 	
 	iOurGain = max(0, iOurCurrentSuccess - iOurLastSuccess)
 	iTheirGain = max(0, iTheirCurrentSuccess - iTheirLastSuccess)
@@ -1740,11 +1777,8 @@ def updateWarTrend(iPlayer, iEnemy):
 	data.players[iPlayer].pushWarTrend(iEnemy, iCurrentTrend)
 	
 def startWar(iPlayer, iEnemy):
-	data.players[iPlayer].lWarTrend[iEnemy] = []
-	data.players[iEnemy].lWarTrend[iPlayer] = []
-	
-	data.players[iPlayer].lWarStartTurn[iEnemy] = turn()
-	data.players[iEnemy].lWarStartTurn[iPlayer] = turn()
+	data.players[iPlayer].dWarTrend[iEnemy] = [0] * 5
+	data.players[iPlayer].dWarStartTurn[iEnemy] = turn()
 	
 def calculateCommerceRank(iPlayer, iTurn):
 	return players.major().rank(iPlayer, lambda p: player(p).getEconomyHistory(iTurn))
@@ -1809,6 +1843,14 @@ def getAdministrationModifier(iPlayer):
 	return max(100, iModifier)
 	
 def isDecline(iPlayer):
-	return not player(iPlayer).isHuman() and year() >= year(dFall[iPlayer])
-
+	if player(iPlayer).isHuman():
+		return False
+	
+	if year() < year(dFall[iPlayer]):
+		return False
+	
+	if data.civs[iPlayer].iResurrections > 0 and any(year().between(iStart, iEnd) for iStart, iEnd in dResurrections[iPlayer]):
+		return False
+	
+	return True
 		

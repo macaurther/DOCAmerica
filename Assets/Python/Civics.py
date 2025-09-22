@@ -85,7 +85,7 @@ def isFascist(iPlayer):
 
 	if civic.iAdministration == iPoliceState3 and civic.iExecutive not in [iMonarchy3, iStateParty3]:
 		return True
-	
+		
 	return False
 	
 def isRepublic(iPlayer):
@@ -102,4 +102,8 @@ def isCityStates(iPlayer):
 	if civic.iAdministration == iCityStates1:
 		return True
 	
+	return False
+
+def isAutocratic(iPlayer):
+	# MacAurther TODO
 	return False

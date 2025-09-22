@@ -470,6 +470,8 @@ public:
 	int getHappinessTimer() const;																				// Exposed to Python
 	void changeHappinessTimer(int iChange);												// Exposed to Python
 
+	int getTempHappiness() const; // Leoreth
+
 	int getNoUnhappinessCount() const;
 	bool isNoUnhappiness() const;																					// Exposed to Python
 	void changeNoUnhappinessCount(int iChange);
@@ -927,7 +929,7 @@ public:
 	void changeSpecialistCount(SpecialistTypes eIndex, int iChange);
 	void alterSpecialistCount(SpecialistTypes eIndex, int iChange);					// Exposed to Python
 
-	int getMaxSpecialistCount(SpecialistTypes eIndex) const;						// Exposed to Python
+	int getMaxSpecialistCount(SpecialistTypes eIndex, bool bIgnoreCivic = false) const;						// Exposed to Python
 	bool isSpecialistValid(SpecialistTypes eIndex, int iExtra = 0) const;					// Exposed to Python
 	void changeMaxSpecialistCount(SpecialistTypes eIndex, int iChange);
 
@@ -1057,6 +1059,14 @@ public:
 	void setBuildingGreatPeopleRateChange(BuildingClassTypes eBuildingClass, int iChange); // Leoreth
 	void changeBuildingGreatPeopleRateChange(BuildingClassTypes eBuildingClass, int iChange); // Leoreth
 
+	// Leoreth
+	void setBuildingYieldChange(BuildingTypes eBuilding, YieldTypes eYield, int iChange);
+	void setBuildingCommerceChange(BuildingTypes eBuilding, CommerceTypes eCommerce, int iChange);
+	void setBuildingGreatPeopleRateChange(BuildingTypes eBuilding, int iChange);
+	void changeBuildingYieldChange(BuildingTypes eBuilding, YieldTypes eYield, int iChange);
+	void changeBuildingCommerceChange(BuildingTypes eBuilding, CommerceTypes eCommerce, int iChange);
+	void changeBuildingGreatPeopleRateChange(BuildingTypes eBuilding, int iChange);
+
 	void updateBuildingYieldChange(BuildingClassTypes eBuildingType, YieldTypes eYield, int iChange);
 	void changeReligionYieldChange(ReligionTypes eReligion, YieldTypes eYield, int iChange);
 
@@ -1104,7 +1114,6 @@ public:
 	int determineArtStyleType() const;
 	void updateArtStyleType();
 	int getDistanceTradeModifier(CvCity* pOtherCity) const;
-	int getCapitalTradeModifier(CvCity* pOtherCity) const;
 	int getDefensivePactTradeModifier(CvCity* pOtherCity) const;
 	int getVassalTradeModifier(CvCity* pOtherCity) const;
 	int estimateGrowth(int iTurns) const;

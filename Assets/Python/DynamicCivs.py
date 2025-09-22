@@ -10,6 +10,8 @@ from Events import handler
 from Core import name as short
 from Core import adjective as civAdjective
 
+import CityNames as cn
+
 
 ### Constants ###
 
@@ -261,6 +263,11 @@ def onRevolution(iPlayer):
 	
 	for iLoopPlayer in players.vassals(iPlayer):
 		checkName(iLoopPlayer)
+
+@handler("setPlayerAlive")
+def onSetPlayerAlive(iPlayer, bAlive):
+	if bAlive:
+		checkName(iPlayer)
 	
 @handler("cityAcquired")
 def onCityAcquired(iPreviousOwner, iNewOwner):
@@ -286,6 +293,7 @@ def onPeriodChange(iPlayer, iPeriod):
 		revertAdjectiveChange(iPlayer)
 	
 	checkName(iPlayer)
+	checkLeader(iPlayer)
 	
 
 @handler("religionFounded")
@@ -294,6 +302,12 @@ def onReligionFounded(_, iPlayer):
 		return
 
 	checkName(iPlayer)
+
+
+@handler("capitalMoved")
+def onCapitalMoved(city):
+	checkName(city.getOwner())
+
 
 @handler("BeginGameTurn")
 def checkTurn(iGameTurn):
@@ -310,6 +324,7 @@ def checkName(iPlayer):
 	setDesc(iPlayer, desc(iPlayer, title(iPlayer)))
 	
 def checkLeader(iPlayer):
+	if player(iPlayer).isHuman(): return
 	if not player(iPlayer).isAlive(): return
 	if is_minor(iPlayer): return
 	setLeader(iPlayer, leader(iPlayer))
@@ -331,6 +346,7 @@ def setAdjective(iPlayer, sAdj):
 	
 def setLeader(iPlayer, iLeader):
 	if not iLeader: return
+	if player(iPlayer).isHuman(): return
 	if player(iPlayer).getLeader() == iLeader: return
 	player(iPlayer).setLeader(iLeader)
 	
@@ -347,18 +363,26 @@ def key(iPlayer, sSuffix):
 	
 def desc(iPlayer, sTextKey=str("%s1")):
 	if team(iPlayer).isAVassal():
-		return text(sTextKey, name(iPlayer), adjective(iPlayer), name(iPlayer, True), adjective(iPlayer, True))
+		return text(latin1(sTextKey), name(iPlayer), adjective(iPlayer), name(iPlayer, True), adjective(iPlayer, True))
 
-	return text(sTextKey, name(iPlayer), adjective(iPlayer))
+	return text(latin1(sTextKey), name(iPlayer), adjective(iPlayer))
 
 def capitalName(iPlayer):
 	capital = player(iPlayer).getCapitalCity()
-	if capital: 
-		sCapitalName = cnm.getLanguageRename(cnm.iLangEnglish, capital.getName())
-		if sCapitalName: return sCapitalName
-		else: return capital.getName()
+	if capital:
+		translatedCapital = cn.getTranslation(iEngland, capital)
+		if translatedCapital:
+			return translatedCapital.name
+		
+		return capital.getName()
 	
 	return short(iPlayer)
+
+def isCurrentCapital(iPlayer, *names):
+	capital = player(iPlayer).getCapitalCity()
+	if not capital: return False
+	
+	return cn.getBaseName(capital) in names
 	
 def checkNameChange(iPlayer):
 	iCiv = civ(iPlayer)

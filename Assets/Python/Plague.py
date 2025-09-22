@@ -156,6 +156,9 @@ def newWorldPlague(iTeamX, iHasMetTeamY):
 	if iOldWorld is None or iNewWorld is None:
 		return
 	
+	if is_minor(iOldWorld):
+		return
+	
 	if data.players[iNewWorld].iPlagueCountdown == 0:
 		if not team(iNewWorld).isHasTech(iBiology):
 			city = cities.owner(iNewWorld).random()
@@ -297,6 +300,9 @@ def killUnitsByPlague(city, pPlot, baseValue, iDamage, iPreserveDefenders):
 					iDamage *= 3
 					iDamage /= 4
 				
+			if data.players[city.getOwner()].bFirstContactPlague:
+				if civ(unit) not in lNewWorld and not is_minor(unit):
+					iDamage /= 2
 					
 			if rand(100) > iThreshold:
 				iMaxDamage = 50

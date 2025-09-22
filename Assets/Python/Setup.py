@@ -16,16 +16,3 @@ def init():
 @handler("periodChange")
 def updateCoreOnPeriodChange(iCivilization):
 	updateCore(iCivilization)
-
-# Show homewaters overlay
-def displayHomewatersOverlay():
-	engine = CyEngine()
-	engine.fillAreaBorderPlotAlt(1, 1, 1003, "COLOR_GREEN", 0.7)
-
-@handler("GameStart")
-def homewatersGameStart():
-	displayHomewatersOverlay()
-
-@handler("OnLoad")
-def homewatersOnLoad():
-	displayHomewatersOverlay()

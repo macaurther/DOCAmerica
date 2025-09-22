@@ -151,9 +151,11 @@ protected:
 	bool AI_goody(int iRange);
 	bool AI_explore();
 	bool AI_exploreRange(int iRange);
+	bool AI_exploreCoasts(); // Leoreth
+	bool AI_exploreCircumnavigate(); // Leoreth
 	bool AI_targetCity(int iFlags = 0);
-	bool AI_targetBarbCity();
-	bool AI_targetMinorCity(int iMinorCiv); //Rhye
+	bool AI_targetBarbCity(bool bTarget = true);
+	bool AI_targetMinorCity(int iMinorCiv, bool bTarget = true); //Rhye
 	bool AI_bombardCity();
 	bool AI_cityAttack(int iRange, int iOddsThreshold, bool bFollow = false);
 	bool AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack = 0, bool bFollow = false);
@@ -165,7 +167,6 @@ protected:
 	bool AI_pillage(int iBonusValueThreshold = 0);
 	bool AI_pillageRange(int iRange, int iBonusValueThreshold = 0);
 	bool AI_found();
-	bool AI_found_map(int modifier); //Rhye
 	bool AI_foundRange(int iRange, bool bFollow = false);
 	bool AI_assaultSeaTransport(bool bBarbarian = false);
 	bool AI_settlerSeaTransport();
@@ -232,7 +233,7 @@ protected:
 
 	bool AI_defendPlot(CvPlot* pPlot);
 	int AI_pillageValue(CvPlot* pPlot, int iBonusValueThreshold = 0);
-	int AI_nukeValue(CvCity* pCity);
+	int AI_nukeValue(CvCity* pCity) const;
 	bool AI_canPillage(CvPlot& kPlot) const;
 
 	int AI_searchRange(int iRange);
@@ -261,7 +262,9 @@ protected:
 	bool AI_canGroupWithAIType(UnitAITypes eUnitAI) const;
 	bool AI_allowGroup(const CvUnit* pUnit, UnitAITypes eUnitAI) const;
 
-	CvCity* AI_nukeTarget();
+	CvCity* AI_offensiveSatelliteTarget() const;
+	CvCity* AI_offensiveNukeTarget() const;
+	CvPlot* AI_defensiveNukeTarget() const;
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

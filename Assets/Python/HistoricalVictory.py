@@ -1,6 +1,8 @@
 from Definitions import *
 from Locations import *
 
+
+lHappinessResources = [iResource for iResource in infos.bonuses() if infos.bonus(iResource).getHappiness() > 0]
 # second Portuguese goal: acquire 20 plantation resources by 1650 AD
 #lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco, iCocoa, iSalt, iCitrus]
 lPlantationResources = [iBanana, iCocoa, iCoffee, iCotton, iDye, iIncense, iRubber, iSilk, iSpices, iSugar, iTea, iTobacco]
@@ -83,11 +85,17 @@ LAND_BASED_TRADE = "TXT_KEY_VICTORY_NAME_LAND_BASED_TRADE"
 
 # civilization descriptors
 ALL_EUROPEAN = "TXT_KEY_VICTORY_NAME_ALL_EUROPEAN"
+CHRISTIAN = "TXT_KEY_VICTORY_NAME_CHRISTIAN"
 EUROPEAN = "TXT_KEY_VICTORY_NAME_EUROPEAN"
 EUROPEAN_CIVILIZATION = "TXT_KEY_VICTORY_NAME_EUROPEAN_CIVILIZATION"
 LOCAL = "TXT_KEY_VICTORY_NAME_LOCAL"
 
+# separators
+OR = "TXT_KEY_OR"
+
 # goal descriptors
+FIRST_NORSE_GOAL = "TXT_KEY_VICTORY_GOAL_NORSE_1"
+THIRD_AZTEC_GOAL = "TXT_KEY_VICTORY_GOAL_AZTECS_3"
 
 
 dGoals = {
@@ -198,7 +206,7 @@ dGoals = {
 			(plots.region(rGreenland).named(KALAALLIT), 1),										# Greenland
 			by=1500
 		),
-		ResourceCount(resources(), 22, by=1600),
+		ResourceCount(iFur, 22, by=1600),	# MacAurther TODO: Update goal to include all artic resources
 		TerrainCount(sum(iOcean, iCoast, iArcticCoast, iFjord), 100, by=1700),
 	),
 	iInca: (

@@ -77,6 +77,8 @@ class CvCivicsScreen:
 		self.SelectedCivics = []
 		self.ValidCivics = []
 		self.DisplayedCivics = []
+		
+		self.CurrentHover = -1
 
 
 
@@ -214,15 +216,23 @@ class CvCivicsScreen:
 	def hoverCivic(self, iCivic, bHover):
 		''
 		iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
+		iDisplayedCivic = iCivic
+		
+		if self.SelectedCivics[iCategory] == iCivic and self.CurrentHover != iCivic:
+			iDisplayedCivic = self.getBaseCivic(iCategory)
 
 		if bHover:
-			if self.DisplayedCivics[iCategory] != iCivic:
-				self.DisplayedCivics[iCategory] = iCivic
+			if self.DisplayedCivics[iCategory] != iDisplayedCivic:
+				self.DisplayedCivics[iCategory] = iDisplayedCivic
+				self.CurrentHover = iDisplayedCivic
 				return True
 
-		elif self.DisplayedCivics[iCategory] != self.SelectedCivics[iCategory]:
-			self.DisplayedCivics[iCategory] = self.SelectedCivics[iCategory]
-			return True
+		else:
+			self.CurrentHover = -1
+
+			if self.DisplayedCivics[iCategory] != self.SelectedCivics[iCategory]:
+				self.DisplayedCivics[iCategory] = self.SelectedCivics[iCategory]
+				return True
 
 		return False
 
@@ -235,12 +245,11 @@ class CvCivicsScreen:
 		iX, iY = self.getPosition(iCategory)
 
 		iLine = iY + self.MARGIN
-
+		
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory:
-				#iCivicOptionCount = lCivicCountInCategory[iCategory]
 				if isDefaultCivic(iCivic): continue
-				if not player.isCivicValid(iCivic): continue;
+				if not player.isCivicValid(iCivic): continue
 
 				if bUpdateValidCivicList:
 					self.ValidCivics.append(iCivic)
@@ -396,7 +405,7 @@ class CvCivicsScreen:
 						sText = CyTranslator().changeTextColor(sText, gc.getInfoTypeForString('COLOR_PLAYER_CANADA_RED'))
 				else:
 					if player.canDoCivics(iCivic):
-						sText = CyTranslator().changeTextColor(sText, gc.getInfoTypeForString('COLOR_WHITE'))
+						sText = CyTranslator().changeTextColor(sText, gc.getInfoTypeForString('WHITE'))
 					else:
 						sText = CyTranslator().changeTextColor(sText, gc.getInfoTypeForString('COLOR_LIGHT_GREY'))
 			else:
@@ -410,7 +419,10 @@ class CvCivicsScreen:
 					screen.hide("CivicButton" + str(iCivic))
 					sText = CyTranslator().changeTextColor(sText, gc.getInfoTypeForString('COLOR_LIGHT_GREY'))
 			screen.setText(sName, "", sText, CvUtil.FONT_RIGHT_JUSTIFY, xPos - self.MARGIN, iLine, 0, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-
+	
+	
+	def getBaseCivic(self, iCategory):
+		return next(iCivic for iCivic in range(gc.getNumCivicInfos()) if gc.getCivicInfo(iCivic).getCivicOptionType() == iCategory)
 
 
 	def handleInput(self, inputClass):
@@ -429,9 +441,14 @@ class CvCivicsScreen:
 				if inputClass.getFlags() & MouseFlags.MOUSE_RBUTTONUP:
 					CvScreensInterface.pediaJumpToCivic((inputClass.getID(), ))
 				else:
+					iCivic = inputClass.getID()
+					iCategory = gc.getCivicInfo(iCivic).getCivicOptionType()
+					if self.SelectedCivics[iCategory] == iCivic:
+						iCivic = self.getBaseCivic(iCategory)
+					
 					# Select civic
-					self.selectCivic(inputClass.getID())
-					self.showCivic(gc.getCivicInfo(inputClass.getID()).getCivicOptionType())
+					self.selectCivic(iCivic)
+					self.showCivic(iCategory)
 					self.updateCivicCosts()
 					self.updateRevolution()
 

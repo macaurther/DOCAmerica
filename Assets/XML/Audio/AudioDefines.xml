@@ -42,6 +42,13 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>SONG_OPENING_MENU_RFC</SoundID>
+			<Filename>Sounds/Soundtrack/OpeningMenuRFC</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SONG_VICTORY</SoundID>
 			<Filename>Sounds/Soundtrack/VictoryRFC</Filename>
 			<LoadType>STREAMED</LoadType>
@@ -77,7 +84,7 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_VIKING</SoundID>
+			<SoundID>SONG_NORSE</SoundID>
 			<Filename>Sounds/Soundtrack/Viking</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
@@ -182,7 +189,7 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SONG_R_F_C</SoundID>
+			<SoundID>SONG_RFC</SoundID>
 			<Filename>Sounds/Soundtrack/RFC</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
@@ -8099,14 +8106,14 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SND_VIKING_SELECT</SoundID>
+			<SoundID>SND_NORSE_SELECT</SoundID>
 			<Filename>Sounds/Units/VikingSelect</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SND_VIKING_ORDER</SoundID>
+			<SoundID>SND_NORSE_ORDER</SoundID>
 			<Filename>Sounds/Units/VikingOrder</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
 			<bIsCompressed>1</bIsCompressed>

@@ -208,6 +208,11 @@ def checkWarPlans(iGameTurn):
 
 
 @handler("BeginGameTurn")
+def checkTargetMinors():
+	targetMinors()
+
+
+@handler("BeginGameTurn")
 def increaseAggressionLevels():
 	for iLoopPlayer in players.major():
 		data.players[iLoopPlayer].iAggressionLevel = dAggressionLevel[iLoopPlayer] + rand(2)
@@ -345,10 +350,12 @@ def spawnConquerors(iPlayer, iPreferredTarget, tTL, tBR, iNumTargets, iYear, iIn
 			iBase: 2 + iExtra,
 			iSiegeCity: 1 + 2*iExtra,
 		}
-		createRoleUnits(iPlayer, tPlot, dConquestUnits.items())
+		units = createRoleUnits(iPlayer, tPlot, dConquestUnits.items())
 		
 		if iCiv == iSpain:
 			createRoleUnit(iPlayer, tPlot, iCav, 2*iExtra)
+		
+		units.promotion(iVolunteer)
 
 
 def declareWar(iPlayer, iTarget, iWarPlan):
@@ -386,12 +393,33 @@ def planWars(iGameTurn):
 	data.iNextTurnAIWar = iGameTurn + getNextInterval(iGameTurn)
 
 
+def targetMinors():
+	for iPlayer in players.major().ai().existing().periodic_iter(10):
+		if players.major().existing().any(lambda p: team(iPlayer).isAtWar(player(p).getTeam())):
+			continue
+	
+		if players.major().existing().any(lambda p: team(iPlayer).AI_getWarPlan(player(p).getTeam()) != WarPlanTypes.NO_WARPLAN):
+			continue
+		
+		for city in cities.all().where(is_minor).revealed(iPlayer):
+			if team(iPlayer).isAtWar(city.getTeam()):
+				continue
+		
+			if plot(city).getPlayerSettlerValue(iPlayer) >= 5 or plot(city).getPlayerWarValue(iPlayer) >= 2:
+				declareWar(iPlayer, city.getOwner(), WarPlanTypes.WARPLAN_LIMITED)
+				break
+
+
 def determineAttackingPlayer():
-	return players.major().existing().where(possibleTargets).maximum(lambda p: data.players[p].iAggressionLevel)
+	return players.major().existing().where(isNotPlanning).where(possibleTargets).maximum(lambda p: data.players[p].iAggressionLevel)
 
 
 def possibleTargets(iPlayer):
-	return players.major().without(iPlayer).where(lambda p: team(iPlayer).canDeclareWar(player(p).getTeam()))
+	return players.major().existing().without(iPlayer).where(lambda p: team(iPlayer).canDeclareWar(player(p).getTeam()))
+
+
+def isNotPlanning(iPlayer):
+	return players.major().existing().without(iPlayer).all(lambda p: team(iPlayer).AI_getWarPlan(player(p).getTeam()) == -1)
 
 
 def determineTargetPlayer(iPlayer):
@@ -432,7 +460,7 @@ def determineTargetPlayer(iPlayer):
 	for plot in plots.all():
 		iOwner = plot.getOwner()
 		if iOwner in lPotentialTargets:
-			dTargetValues[iOwner] += pPlayer.getWarValue(plot.getX(), plot.getY())
+			dTargetValues[iOwner] += plot.getPlayerWarValue(iPlayer)
 				
 	# hard to attack with lost contact
 	for iLoopPlayer in lPotentialTargets:

@@ -6384,7 +6384,7 @@ void CvGame::doGlobalWarming()
 			}
 		}
 #else
-		if (!pPlot->isWater())
+		/*if (!pPlot->isWater())
 		{
 			if (pPlot->getFeatureType() != NO_FEATURE)
 			{
@@ -6393,6 +6393,12 @@ void CvGame::doGlobalWarming()
 					++iGlobalWarmingDefense;
 				}
 			}
+		}*/
+
+		// Leoreth
+		if (pPlot->getFeatureType() != NO_FEATURE)
+		{
+			iGlobalWarmingDefense += GC.getFeatureInfo(pPlot->getFeatureType()).getGlobalWarmingDefense();
 		}
 #endif
 	}
@@ -6415,12 +6421,14 @@ void CvGame::doGlobalWarming()
 #ifdef _MOD_GWARM
 				iGlobalWarmingValue -= (pCity->totalBadBuildingHealth() * iUnhealthWeight) + (pCity->getBonusBadHealth() * iBonusWeight) + (pCity->getPowerBadHealth() * iPowerWeight); //GWMod Changed to be total building bad health and to include power and bonuses M.A.
 #else
-				iGlobalWarmingValue -= pCity->getBuildingBadHealth() * iUnhealthWeight;
+				//iGlobalWarmingValue -= pCity->getBuildingBadHealth() * iUnhealthWeight;
+				iGlobalWarmingValue -= (pCity->getBuildingBadHealth() + pCity->getPowerBadHealth() + pCity->getCorporationUnhealth()) * iUnhealthWeight; // Leoreth
+				//iGlobalWarmingValue += pCity->getYieldRate(YIELD_PRODUCTION) * 25;
 #endif
 				// Leoreth: account for plague, we do not want early global warming
-				if (pCity->isHasRealBuilding((BuildingTypes)BUILDING_PLAGUE))
+				if (pCity->isHasRealBuilding(BUILDING_PLAGUE))
 				{
-					iGlobalWarmingValue += GC.getBuildingInfo((BuildingTypes)BUILDING_PLAGUE).getHealth() * iUnhealthWeight;
+					iGlobalWarmingValue += GC.getBuildingInfo(BUILDING_PLAGUE).getHealth() * iUnhealthWeight;
 				}
 			}
 		}
@@ -6429,10 +6437,10 @@ void CvGame::doGlobalWarming()
 
 #ifdef _MOD_GWARM
 #else
-	iGlobalWarmingValue += getNukesExploded() * GC.getDefineINT("GLOBAL_WARMING_NUKE_WEIGHT") / 100;
+	//iGlobalWarmingValue += getNukesExploded() * GC.getDefineINT("GLOBAL_WARMING_NUKE_WEIGHT") / 100; // Leoreth: disabled
 #endif
 
-	TerrainTypes eWarmingTerrain = ((TerrainTypes)(GC.getDefineINT("GLOBAL_WARMING_TERRAIN")));
+	//TerrainTypes eWarmingTerrain = ((TerrainTypes)(GC.getDefineINT("GLOBAL_WARMING_TERRAIN")));
 #ifdef _MOD_GWARM
 	TerrainTypes eFrozenTerrain = ((TerrainTypes)(GC.getDefineINT("FROZEN_TERRAIN")));
 	TerrainTypes eColdTerrain = ((TerrainTypes)(GC.getDefineINT("COLD_TERRAIN")));
@@ -6447,42 +6455,54 @@ void CvGame::doGlobalWarming()
 	FeatureTypes eFalloutFeature = ((FeatureTypes)(GC.getDefineINT("NUKE_FEATURE")));
 #endif
 
-	for (int iI = 0; iI < iGlobalWarmingValue; iI++)
+	CvEventReporter::getInstance().globalWarming(iGlobalWarmingValue, iGlobalWarmingDefense);
+
+	int iGlobalWarmingEffect = iGlobalWarmingValue - iGlobalWarmingDefense;
+
+	if (iGlobalWarmingEffect > 0)
 	{
-		if (getSorenRandNum(100, "Global Warming") + iGlobalWarmingDefense < GC.getDefineINT("GLOBAL_WARMING_PROB"))
+		for (int iI = 0; iI < iGlobalWarmingEffect; iI++)
 		{
+			if (true || getSorenRandNum(iGlobalWarmingValue + iGlobalWarmingDefense, "Global Warming") >= iGlobalWarmingDefense)
+			{
 #ifdef _MOD_GWARM
-			CvPlot* pPlot = GC.getMapINLINE().syncRandPlot(RANDPLOT_NOT_CITY); // GWMod removed check for water tile M.A.
+				CvPlot* pPlot = GC.getMapINLINE().syncRandPlot(RANDPLOT_NOT_CITY); // GWMod removed check for water tile M.A.
 #else
-			CvPlot* pPlot = GC.getMapINLINE().syncRandPlot(RANDPLOT_LAND | RANDPLOT_NOT_CITY);
+				CvPlot* pPlot = GC.getMapINLINE().syncRandPlot(RANDPLOT_LAND | RANDPLOT_NOT_CITY);
 #endif
 
-			if (pPlot != NULL)
-			{
-				bool bChanged = false;
+				if (pPlot != NULL)
+				{
+					bool bChanged = false;
 
 #ifdef _MOD_GWARM
-				if (pPlot->getFeatureType() != NO_FEATURE)
-				{
-					if (pPlot->getFeatureType() != GC.getDefineINT("NUKE_FEATURE"))
+					if (pPlot->getFeatureType() != NO_FEATURE)
 					{
-						// GWMod won't remove features if underlaying terrain can melt
-						if (pPlot->getFeatureType() != eColdFeature)
+						if (pPlot->getFeatureType() != GC.getDefineINT("NUKE_FEATURE"))
 						{
-							if ((pPlot->calculateBestNatureYield(YIELD_FOOD, NO_TEAM) > 1) && (pPlot->getFeatureType() == eTemperateFeature))
+							// GWMod won't remove features if underlaying terrain can melt
+							if (pPlot->getFeatureType() != eColdFeature)
 							{
-								pPlot->setFeatureType(eWarmFeature);
-								bChanged = true;
-							}
-							else if (pPlot->getTerrainType() == eColdTerrain)
-							{
-								pPlot->setTerrainType(eTemperateTerrain);
-								bChanged = true;
-							}
-							else if (pPlot->getTerrainType() == eFrozenTerrain)
-							{
-								pPlot->setTerrainType(eColdTerrain);
-								bChanged = true;
+								if ((pPlot->calculateBestNatureYield(YIELD_FOOD, NO_TEAM) > 1) && (pPlot->getFeatureType() == eTemperateFeature))
+								{
+									pPlot->setFeatureType(eWarmFeature);
+									bChanged = true;
+								}
+								else if (pPlot->getTerrainType() == eColdTerrain)
+								{
+									pPlot->setTerrainType(eTemperateTerrain);
+									bChanged = true;
+								}
+								else if (pPlot->getTerrainType() == eFrozenTerrain)
+								{
+									pPlot->setTerrainType(eColdTerrain);
+									bChanged = true;
+								}
+								else
+								{
+									pPlot->setFeatureType(NO_FEATURE);
+									bChanged = true;
+								}
 							}
 							else
 							{
@@ -6490,81 +6510,83 @@ void CvGame::doGlobalWarming()
 								bChanged = true;
 							}
 						}
-						else
+					}
+					else if (!pPlot->isWater())  // GWMod added check for water tile M.A.
+					{
+						// GWMod stepped terrain changes M.A.
+						if (pPlot->getTerrainType() == eBarrenTerrain)
+						{
+							if (isOption(GAMEOPTION_RISING_SEAS))
+							{
+								if (pPlot->isCoastalLand())
+								{
+									if (!pPlot->isHills() && !pPlot->isPeak())
+									{
+										pPlot->setTerrainType(eShallowsTerrain);
+										bChanged = true;
+									}
+								}
+							}
+						}
+						else if (pPlot->getTerrainType() == eDryTerrain)
+						{
+							pPlot->setTerrainType(eBarrenTerrain);
+							bChanged = true;
+						}
+						else if (pPlot->getTerrainType() == eTemperateTerrain)
+						{
+							pPlot->setTerrainType(eDryTerrain);
+							bChanged = true;
+						}
+						else if (pPlot->getTerrainType() == eColdTerrain)
+						{
+							pPlot->setTerrainType(eTemperateTerrain);
+							bChanged = true;
+						}
+						else if (pPlot->getTerrainType() == eFrozenTerrain)
+						{
+							pPlot->setTerrainType(eColdTerrain);
+							bChanged = true;
+						}
+					}
+#else
+					TerrainTypes eCurrentTerrain = pPlot->getTerrainType();
+					TerrainTypes eWarmingTerrain = (TerrainTypes)GC.getTerrainInfo(eCurrentTerrain).getGlobalWarmingTerrainType();
+
+					FeatureTypes eCurrentFeature = pPlot->getFeatureType();
+
+					if (eCurrentFeature != NO_FEATURE)
+					{
+						if (eCurrentFeature != GC.getDefineINT("NUKE_FEATURE")) // should be nuke immune and also be part of elseif
 						{
 							pPlot->setFeatureType(NO_FEATURE);
 							bChanged = true;
 						}
 					}
-				}
-				else if (!pPlot->isWater())  // GWMod added check for water tile M.A.
-				{
-					// GWMod stepped terrain changes M.A.
-					if (pPlot->getTerrainType() == eBarrenTerrain)
+					else if (eWarmingTerrain != NO_TERRAIN && eCurrentTerrain != eWarmingTerrain)
 					{
-						if (isOption(GAMEOPTION_RISING_SEAS))
+						//if (pPlot->calculateTotalBestNatureYield(NO_TEAM) > 1) // Leoreth
 						{
-							if (pPlot->isCoastalLand())
-							{
-								if (!pPlot->isHills() && !pPlot->isPeak())
-								{
-									pPlot->setTerrainType(eShallowsTerrain);
-									bChanged = true;
-								}
-							}
+							pPlot->setTerrainType(eWarmingTerrain);
+							bChanged = true;
 						}
 					}
-					else if (pPlot->getTerrainType() == eDryTerrain)
-					{
-						pPlot->setTerrainType(eBarrenTerrain);
-						bChanged = true;
-					}
-					else if (pPlot->getTerrainType() == eTemperateTerrain)
-					{
-						pPlot->setTerrainType(eDryTerrain);
-						bChanged = true;
-					}
-					else if (pPlot->getTerrainType() == eColdTerrain)
-					{
-						pPlot->setTerrainType(eTemperateTerrain);
-						bChanged = true;
-					}
-					else if (pPlot->getTerrainType() == eFrozenTerrain)
-					{
-						pPlot->setTerrainType(eColdTerrain);
-						bChanged = true;
-					}
-				}
-#else
-				if (pPlot->getFeatureType() != NO_FEATURE)
-				{
-					if (pPlot->getFeatureType() != GC.getDefineINT("NUKE_FEATURE"))
-					{
-						pPlot->setFeatureType(NO_FEATURE);
-						bChanged = true;
-					}
-				}
-				else if (pPlot->getTerrainType() != eWarmingTerrain)
-				{
-					if (pPlot->calculateTotalBestNatureYield(NO_TEAM) > 1)
-					{
-						pPlot->setTerrainType(eWarmingTerrain);
-						bChanged = true;
-					}
-				}
 #endif
 
-				if (bChanged)
-				{
-					pPlot->setImprovementType(NO_IMPROVEMENT);
-
-					CvCity* pCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE());
-					if (pCity != NULL)
+					if (bChanged)
 					{
-						if (pPlot->isVisible(pCity->getTeam(), false))
+						CvEventReporter::getInstance().globalWarmingEffect(pPlot, bChanged, eCurrentTerrain, pPlot->getTerrainType(), eCurrentFeature);
+
+						pPlot->setImprovementType(NO_IMPROVEMENT);
+
+						CvCity* pCity = GC.getMapINLINE().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE());
+						if (pCity != NULL)
 						{
-							CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_GLOBAL_WARMING_NEAR_CITY", pCity->getNameKey());
-							gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_GLOBALWARMING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
+							if (pPlot->isVisible(pCity->getTeam(), false))
+							{
+								CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_GLOBAL_WARMING_NEAR_CITY", pCity->getNameKey());
+								gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_GLOBALWARMING", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pPlot->getX_INLINE(), pPlot->getY_INLINE(), true, true);
+							}
 						}
 					}
 				}
@@ -10873,7 +10895,7 @@ void CvGame::setFirstDiscovered(TechTypes eTech, CivilizationTypes eCiv)
 	FAssert(eTech > NO_TECH);
 	FAssert(eTech < GC.getNumTechInfos());
 	FAssert(eCiv > NO_CIVILIZATION);
-	FAssert(eCiv < NUM_CIVS);
+	FAssert(eCiv < NUM_CIVS + NUM_MINORS);	// MacAurther: Minors are okay too
 
 	m_aiFirstDiscovered[eTech] = eCiv;
 }

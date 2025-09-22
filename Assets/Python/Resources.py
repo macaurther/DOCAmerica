@@ -41,12 +41,13 @@ def setup():
 	global dConquerorPlotTypes
 	dConquerorPlotTypes = TileDict(dConquerorPlotTypesDict)
 	
+	global dCivGroupResources
+	dCivGroupResources = TileDict(dCivGroupResourcesDict)
+	
 
 ### Constants ###
 
 # initialise bonuses variables
-
-''''''
 
 dResourcesDict = {
 	(13, 63)  : (1550,  iHorse),  	# Mexico
@@ -114,6 +115,15 @@ dConquerorPlotTypesDict = {
 	(28, 21) : (iInca, PlotTypes.PLOT_HILLS),
 }
 
+dCivGroupResourcesDict = {
+}
+
+
+@handler("BeginGameTurn")
+def removeResources():
+	for x, y in dRemovedResources[game.getGameTurn()]:
+		removeResource(x, y)
+
 
 @handler("BeginGameTurn")
 def createResources():
@@ -159,9 +169,33 @@ def changeConquerorPlotTypes(iConquerorPlayer, iTargetPlayer):
 		plot(tile).setPlotType(type, True, True)
 
 
+@handler("cityAcquired")
+def spreadCivGroupResourcesOnConquest(iOwner, iPlayer, city, bConquest):
+	if bConquest:
+		spreadCivGroupResources(city)
+
+
+@handler("cityBuilt")
+def spreadCivGroupResourcesOnFounding(city):
+	spreadCivGroupResources(city)
+
+
+def spreadCivGroupResources(city):
+	for tCivs, lResources in dCivGroupResources:
+		if city.getCivilizationType() in tCivs:
+			for (x, y), iResource, _ in lResources:
+				if city.getRegionID() == plot(x, y).getRegionID():
+					createResource(x, y, iResource)
+
+
 def setupScenarioResources():
 	setup()
 	iStartTurn = scenarioStartTurn()
+	
+	for iTurn, lResources in dRemovedResources:
+		if iTurn <= iStartTurn:
+			for x, y in lResources:
+				removeResource(x, y)
 	
 	for iTurn, lResources in dResources:
 		if iTurn <= iStartTurn:
@@ -172,11 +206,6 @@ def setupScenarioResources():
 		if year(dBirth[iCiv]) <= iStartTurn and any(iEnd >= iStartTurn for iStart, iEnd in dResurrections[iCiv]):
 			for (x, y), iResource in lResources:
 				createResource(x, y, iResource)
-	
-	for iTurn, lResources in dRemovedResources:
-		if iTurn <= iStartTurn:
-			for x, y in lResources:
-				removeResource(x, y)
 	
 	for iTurn, lFeatures in dFeatures:
 		if iTurn <= iStartTurn:
@@ -192,6 +221,18 @@ def setupScenarioResources():
 		if year(dFall[iCiv]) <= iStartTurn:
 			for (x, y), iPlotType in lPlots:
 				plot(x, y).setPlotType(iPlotType, True, True)
+	
+	for iCivGroup, lResources in dCivGroupResources:
+		for (x, y), iResource, iYear in lResources:
+			if year(iYear) <= iStartTurn:
+				createResource(x, y, iResource)
+
+
+def createAllResources():
+	for lResources in dResources.values():
+		for (x, y), iResource in lResources:
+			createResource(x, y, iResource)
+	
 	
 
 # Leoreth: bonus removal alerts by edead
@@ -221,15 +262,15 @@ def createResource(iX, iY, iBonus, createTextKey="TXT_KEY_MISC_DISCOVERED_NEW_RE
 			notifyResource(iOwner, closest, iX, iY, iRemovedBonus, removeTextKey)
 		
 		if iBonus >= 0:
-			notifyResource(iOwner, closest, iX, iY, iBonus, createTextKey)
+			notifyResource(iOwner, closest, iX, iY, iBonus, createTextKey, sound="AS2D_DISCOVERBONUS")
 
 
-def notifyResource(iPlayer, city, iX, iY, iBonus, textKey):
+def notifyResource(iPlayer, city, iX, iY, iBonus, textKey, sound=""):
 	if not city: return
 	if scenarioStart(): return
 	
 	if infos.bonus(iBonus).getTechReveal() == -1 or team(iPlayer).isHasTech(infos.bonus(iBonus).getTechReveal()):
-		message(iPlayer, textKey, infos.bonus(iBonus).getText(), city.getName(), event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.bonus(iBonus).getButton(), location=(iX, iY))
+		message(iPlayer, textKey, infos.bonus(iBonus).getText(), city.getName(), event=InterfaceMessageTypes.MESSAGE_TYPE_MINOR_EVENT, button=infos.bonus(iBonus).getButton(), location=(iX, iY), sound=sound)
 
 
 def removeResource(iX, iY):

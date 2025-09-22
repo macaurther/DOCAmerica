@@ -408,7 +408,6 @@ void CyPlayer::receiveGoody(CyPlot* pPlot, int /*GoodyTypes*/ iIndex, CyUnit* pU
 
 void CyPlayer::doGoody(CyPlot* pPlot, CyUnit* pUnit)
 {
-	
 	if (m_pPlayer)
 		if (pUnit == NULL) m_pPlayer->doGoody(pPlot->getPlot(), NULL);	// MacAurther: HACK to make doGoody callable from Python without a unit
 		else m_pPlayer->doGoody(pPlot->getPlot(), pUnit->getUnit());
@@ -2518,16 +2517,6 @@ void CyPlayer::setEspionageExperience(int iNewValue)
 		m_pPlayer->setEspionageExperience(iNewValue);
 }
 
-int CyPlayer::getSettlerValue(int x, int y)
-{
-	return m_pPlayer ? m_pPlayer->getSettlerValue(x, y) : -1;
-}
-
-int CyPlayer::getWarValue(int x, int y)
-{
-	return m_pPlayer ? m_pPlayer->getWarValue(x, y) : -1;
-}
-
 int CyPlayer::getModifier(int eModifierType)
 {
 	return m_pPlayer ? m_pPlayer->getModifier((ModifierTypes)eModifierType) : 0;
@@ -2548,30 +2537,6 @@ void CyPlayer::setStartingEra(int iNewValue)
 {
 	if (m_pPlayer)
 		m_pPlayer->setStartingEra((EraTypes)iNewValue);
-}
-
-void CyPlayer::setTakenTilesThreshold(int iNewValue)
-{
-	if (m_pPlayer)
-		m_pPlayer->setTakenTilesThreshold(iNewValue);
-}
-
-void CyPlayer::setDistanceSubtrahend(int iNewValue)
-{
-	if (m_pPlayer)
-		m_pPlayer->setDistanceSubtrahend(iNewValue);
-}
-
-void CyPlayer::setDistanceFactor(int iNewValue)
-{
-	if (m_pPlayer)
-		m_pPlayer->setDistanceFactor(iNewValue);
-}
-
-void CyPlayer::setCompactnessModifier(int iNewValue)
-{
-	if (m_pPlayer)
-		m_pPlayer->setCompactnessModifier(iNewValue);
 }
 
 void CyPlayer::setTargetDistanceValueModifier(int iNewValue)
@@ -2829,4 +2794,24 @@ bool CyPlayer::isExisting()
 void CyPlayer::changeBonusImport(int eBonus, int iChange)
 {
 	if (m_pPlayer) m_pPlayer->changeBonusImport((BonusTypes)eBonus, iChange);
+}
+
+void CyPlayer::AI_unitUpdate()
+{
+	if (m_pPlayer) m_pPlayer->AI_unitUpdate();
+}
+
+void CyPlayer::separateAttackCitySelectionGroups()
+{
+	if (m_pPlayer) m_pPlayer->separateAttackCitySelectionGroups();
+}
+
+int CyPlayer::getModifiedCommerceRate(CommerceTypes eIndex)
+{
+	return m_pPlayer ? m_pPlayer->getModifiedCommerceRate(eIndex) : -1;
+}
+
+bool CyPlayer::canBuySlaves() const
+{
+	return m_pPlayer ? m_pPlayer->canBuySlaves() : false;
 }

@@ -25,12 +25,11 @@ import WBInfoScreen
 import WBTradeScreen
 import CvEventManager
 import Popup
-import CityNameManager as cnm
-import WBStoredDataScreen
 
 import MapEditorTools as met
 import DynamicCivs as dc
 import GreatPeople as gp
+import CityNames as cn
 
 import SettlerMaps
 import WarMaps
@@ -43,7 +42,6 @@ from RFCUtils import *
 
 localText = CyTranslator()
 
-gc = CyGlobalContext()
 
 iNumModes = 46
 (iModeOwnership, iModeUnits, iModeBuildings, iModeCity, iModeStartingPlot, iModeAddLandMark, iModePlotData, iModeRiver, iModeImprovements, iModeBonus,
@@ -147,8 +145,9 @@ class CvWorldBuilderScreen:
 		self.m_pCurrentPlot = CyInterface().getMouseOverPlot()
 		x, y = location(self.m_pCurrentPlot)
 		iPlayer = self.m_iCurrentPlayer
-		if not CyInterface().isInAdvancedStart():
-			sText = "<font=3b>%s, X: %d, Y: %d</font>" %(CyTranslator().getText("TXT_KEY_WB_LATITUDE",(self.m_pCurrentPlot.getLatitude(),)), x, y)
+		if not CyInterface().isInAdvancedStart() and (x, y) != (-1, -1):
+			sText = "<font=3b>%s, X: %d, Y: %d, City: %s, Region: %s</font>" %(CyTranslator().getText("TXT_KEY_WB_LATITUDE",(self.m_pCurrentPlot.getLatitude(),)), x, y, cn.getDisplayName(game.getActivePlayer(), self.m_pCurrentPlot), self.m_pCurrentPlot.getRegionName())
+			
 			screen.setLabel( "WBCoords", "Background", sText, CvUtil.FONT_CENTER_JUSTIFY, screen.getXResolution()/2, 6, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 			if self.iPlayerAddMode in lDoCMapModes + [iModeCity]:
@@ -167,9 +166,9 @@ class CvWorldBuilderScreen:
 					if sVictoryText:
 						sDoCText += "<font=3b>%s</font>" % sVictoryText
 				else:
-					# CNM and settlervalue
+					# city names and settlervalue
 					if x > -1 and y > -1: #If you move you mouse to fast, I cannot always keep track of the current tile, which can lead to pythex
-						sCityName = cnm.getFoundName(iPlayer, (x, y))
+						sCityName = cn.getDisplayName(iPlayer, (x, y))
 						sDoCText += "<font=3b>%s</font>" % sCityName
 					if self.iPlayerAddMode == iModeWarMap:
 						iPlotWarValue = self.m_pCurrentPlot.getPlayerWarValue(iPlayer)
@@ -508,7 +507,7 @@ class CvWorldBuilderScreen:
 		elif self.iPlayerAddMode == iModeCity:
 			if self.m_pCurrentPlot.isCity(): return
 			pCity = gc.getPlayer(iPlayer).initCity(x, y)
-			sName = cnm.getFoundName(iPlayer, (x, y))
+			sName = cn.getDisplayName(iPlayer, (x, y))
 			if sName:
 				pCity.setName(sName, True)
 			if bPython:
@@ -736,7 +735,7 @@ class CvWorldBuilderScreen:
 					
 		elif self.iPlayerAddMode == iModeSettlerValue:
 			if not is_minor(iPlayer):
-				pPlot.setSettlerValue(civ(iPlayer), 20)
+				pPlot.setSettlerValue(civ(iPlayer), 0)
 					
 		elif self.iPlayerAddMode == iModeWarMap:
 			if not is_minor(iPlayer):
@@ -1118,12 +1117,12 @@ class CvWorldBuilderScreen:
 
 			iX = iXStart + 8
 			iY += iAdjust
-			screen.setImageButton("StoredDataScreen", "", iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_PYTHON, 1029, 41)
-			screen.setStyle("StoredDataScreen", "Button_HUDAdvisorRecord_Style")
-			iX += iAdjust
-			screen.addCheckBoxGFC("DoCMapsScreen", "Art/Interface/Buttons/DoCMaps.dds", CyArtFileMgr().getInterfaceArtInfo("BUTTON_HILITE_SMALLCIRCLE").getPath(),
-				iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_PYTHON, 1029, 42, ButtonStyles.BUTTON_STYLE_LABEL)
-			iX += iAdjust
+			# screen.setImageButton("StoredDataScreen", "", iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_PYTHON, 1029, 41)
+			# screen.setStyle("StoredDataScreen", "Button_HUDAdvisorRecord_Style")
+			# iX += iAdjust
+			# screen.addCheckBoxGFC("DoCMapsScreen", "Art/Interface/Buttons/DoCMaps.dds", CyArtFileMgr().getInterfaceArtInfo("BUTTON_HILITE_SMALLCIRCLE").getPath(),
+				# iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_PYTHON, 1029, 42, ButtonStyles.BUTTON_STYLE_LABEL)
+			# iX += iAdjust
 			screen.addCheckBoxGFC("MoveMapScreen", "Art/Interface/Buttons/MoveMap.dds", CyArtFileMgr().getInterfaceArtInfo("BUTTON_HILITE_SMALLCIRCLE").getPath(),
 				iX, iY, iButtonWidth, iButtonWidth, WidgetTypes.WIDGET_PYTHON, 1029, 44, ButtonStyles.BUTTON_STYLE_LABEL)
 			iX += iAdjust
@@ -2306,7 +2305,7 @@ class CvWorldBuilderScreen:
 			if pOldCity:
 				x, y = location(self.m_pCurrentPlot)
 				pNewCity = pPlayer.initCity(x, y)
-				sName = cnm.getFoundName(self.m_iCurrentPlayer, location(self.m_pCurrentPlot))
+				sName = cn.getDisplayName(self.m_iCurrentPlayer, self.m_pCurrentPlot)
 				if not sName:
 					sName = pOldCity.getName()
 				pOldCity.setName("ToBeRazed", False)
@@ -2330,7 +2329,7 @@ class CvWorldBuilderScreen:
 			if pOldCity:
 				x, y = location(self.m_pCurrentPlot)
 				pNewCity = pPlayer.initCity(x, y)
-				sName = cnm.getFoundName(self.m_iCurrentPlayer, (x, y))
+				sName = cn.getDisplayName(self.m_iCurrentPlayer, (x, y))
 				if sName:
 					pNewCity.setName(sName, True)
 				self.copyCityStats(pOldCity, pNewCity, False)
@@ -2551,9 +2550,6 @@ class CvWorldBuilderScreen:
 
 		elif inputClass.getFunctionName() == "EditUnitsCities":
 			WBPlayerUnits.WBPlayerUnits().interfaceScreen(self.m_iCurrentPlayer)
-
-		elif inputClass.getFunctionName() == "StoredDataScreen":
-			WBStoredDataScreen.WBStoredDataScreen(self).interfaceScreen()
 
 		elif inputClass.getFunctionName() == "WorldBuilderPlayerChoice":
 			bDeleteOverlay = False

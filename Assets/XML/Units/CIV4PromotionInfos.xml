@@ -2119,7 +2119,8 @@
 			<Type>PROMOTION_MORALE</Type>
 			<Description>TXT_KEY_PROMOTION_MORALE</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
-			<PromotionPrereq>PROMOTION_LEADER</PromotionPrereq>
+			<PromotionPrereqOr1>PROMOTION_LEADER</PromotionPrereqOr1>
+			<PromotionPrereqOr2>PROMOTION_RECONNAISSANCE</PromotionPrereqOr2>
 			<iMovesChange>1</iMovesChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -2180,6 +2181,41 @@
 				</TerrainDoubleMove>
 			</TerrainDoubleMoves>
 			<Button>Art/Interface/Buttons/Promotions/DesertAdaptation.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_PRAIRIE_ADAPTATION</Type>
+			<Description>TXT_KEY_PROMOTION_PRAIRIE_ADAPTATION</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<TerrainDoubleMoves>
+				<TerrainDoubleMove>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bTerrainDoubleMove>1</bTerrainDoubleMove>
+				</TerrainDoubleMove>
+			</TerrainDoubleMoves>
+			<Button>Art/Interface/Buttons/Promotions/SteppeAdaptation.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_VOLUNTEER</Type>
+			<Description>TXT_KEY_PROMOTION_VOLUNTEER</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<bNoUpgrade>1</bNoUpgrade>
+			<iRevoltProtection>25</iRevoltProtection>
+			<iExtraUpkeep>-1</iExtraUpkeep>
+			<Button>Art/Interface/Buttons/Promotions/Volunteer.dds</Button>
+		</PromotionInfo>
+		<PromotionInfo>
+			<Type>PROMOTION_RECONNAISSANCE</Type>
+			<Description>TXT_KEY_PROMOTION_RECONNAISSANCE</Description>
+			<Sound>AS2D_IF_LEVELUP</Sound>
+			<bAlwaysHeal>1</bAlwaysHeal>
+			<iMoveDiscountChange>1</iMoveDiscountChange>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
+			<Button>Art/Interface/Buttons/Promotions/Reconnaissance.dds</Button>
 		</PromotionInfo>
 	</PromotionInfos>
 </Civ4PromotionInfos>

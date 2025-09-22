@@ -71,6 +71,8 @@ public:
 	void cityAcquired(PlayerTypes eOldOwner, PlayerTypes ePlayer, CvCity* pCity, bool bConquest, bool bTrade);
 	void cityAcquiredAndKept(PlayerTypes ePlayer, CvCity* pCity);
 	void cityLost(CvCity *pCity);
+	void cityGifted(CvCity* pCity); // Leoreth
+	void cityLiberated(CvCity* pCity); // Leoreth
 	void cultureExpansion( CvCity *pCity, PlayerTypes ePlayer);
 	void cityGrowth(CvCity *pCity, PlayerTypes ePlayer);
 	void cityDoTurn(CvCity *pCity, PlayerTypes ePlayer);
@@ -145,7 +147,7 @@ public:
 	void tradeMission(UnitTypes unitID, PlayerTypes ePlayer, int iX, int iY, int iGold); // Leoreth
 	void playerSlaveTrade(PlayerTypes ePlayer, int iGold); // Leoreth
 	void releasedCivilization(PlayerTypes ePlayer, CivilizationTypes eReleasedCivilization); // Leoreth
-	void blockade(PlayerTypes ePlayer, int iGold); // Leoreth
+	void blockade(PlayerTypes ePlayer, CvCity* pCity, int iGold); // Leoreth
 	void peaceBrokered(PlayerTypes eBroker, PlayerTypes ePlayer1, PlayerTypes ePlayer2); // Leoreth
 	void xmlLoaded(); // Leoreth
 	void fontsLoaded(); // Leoreth
@@ -156,6 +158,9 @@ public:
 	void playerSwitch(PlayerTypes eOldPlayer, PlayerTypes eNewPlayer); // Leoreth
 	void techTraded(PlayerTypes eFrom, PlayerTypes eTo, TechTypes eTech); // Leoreth
 	void tribute(PlayerTypes eFrom, PlayerTypes eTo); // Leoreth
+	void globalWarming(int iGlobalWarmingValue, int iGlobalWarmingDefense); // Leoreth
+	void globalWarmingEffect(CvPlot* pPlot, bool bChanged, TerrainTypes ePreviousTerrain, TerrainTypes eNewTerrain, FeatureTypes ePreviousFeature); // Leoreth
+	void buildingProcessed(CvCity* pCity, BuildingTypes eBuilding, int iChange); // Leoreth
 
 	DllExport void preSave();
 

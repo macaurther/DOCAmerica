@@ -63,14 +63,14 @@ from RFCUtils import canRespawn as canRespawnUtils
 from RFCUtils import canEverRespawn as canEverRespawnUtils
 from RFCUtils import toggleStabilityOverlay as toggleStabilityOverlayUtils
 from Stability import calculateAdministration, calculateSeparatism
-import CityNameManager as cnm
+
+import CityNames as cn
 import Victories
 
 from Scenarios import getScenario
 from Locations import *
 from Core import *
 
-gc = CyGlobalContext()
 	
 def countAchievedGoals(argsList):
 	iPlayer = argsList[0]
@@ -96,7 +96,6 @@ import WBReligionScreen
 import WBCorporationScreen
 import WBInfoScreen
 import WBTradeScreen
-import WBStoredDataScreen
 
 def toggleSetNoScreens():
 	global g_bIsScreenActive
@@ -877,15 +876,6 @@ def isCorePlot(argsList):
 	return (x, y) in plots.core(iPlayer)
 
 # Leoreth
-def isNormalPlot(argsList):
-	x, y, iPlayer = argsList
-	
-	if is_minor(iPlayer):
-		return 0
-		
-	return (x, y) in plots.normal(iPlayer)
-
-# Leoreth
 def isForeignCorePlot(argsList):
 	x, y = argsList
 	
@@ -893,15 +883,6 @@ def isForeignCorePlot(argsList):
 		return 1
 		
 	return 0
-
-# Leoreth
-def isBroaderPlot(argsList):
-	x, y, iPlayer = argsList
-	
-	if is_minor(iPlayer):
-		return 0
-	
-	return (x, y) in plots.broader(iPlayer)
 
 # Leoreth
 def onTechStolen(argsList):
@@ -920,8 +901,8 @@ def isNeighbor(argsList):
 def getVictoryTooltip(argsList):
 	iPlayer, x, y = argsList
 	
-	historicalVictoryTooltip = data.players[iPlayer].historicalVictory.area_names((x, y))
-	religiousVictoryTooltip = data.players[iPlayer].religiousVictory.area_names((x, y))
+	historicalVictoryTooltip = data.players[iPlayer].historicalVictory and data.players[iPlayer].historicalVictory.area_names((x, y)) or []
+	religiousVictoryTooltip = data.players[iPlayer].religiousVictory and data.players[iPlayer].religiousVictory.area_names((x, y)) or []
 	
 	tooltips = unique(tooltip for tooltip in historicalVictoryTooltip + religiousVictoryTooltip if tooltip)
 	return "\n".join(tooltips)
@@ -937,12 +918,7 @@ def getHistoricalVictoryDescriptions(argsList):
 def getCityName(argsList):
 	iPlayer, x, y = argsList
 	
-	result = cnm.getFoundName(iPlayer, (x,y))
-	
-	if result == -1:
-		return ""
-	else:
-		return result
+	return cn.getNameEvolution(iPlayer, (x, y))
 		
 def canRespawn(argsList):
 	iCiv = argsList[0]
@@ -1027,7 +1003,6 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 					WB_CORPORATION : WBCorporationScreen.WBCorporationScreen(),
 					WB_INFO : WBInfoScreen.WBInfoScreen(),
 					WB_TRADE : WBTradeScreen.WBTradeScreen(),
-					WB_STOREDDATA : WBStoredDataScreen.WBStoredDataScreen(worldBuilderScreen),
 					
 					# add new screens here
 					# < Immigration Manager Start > 

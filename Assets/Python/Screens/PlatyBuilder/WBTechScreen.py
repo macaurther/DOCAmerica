@@ -53,7 +53,7 @@ class WBTechScreen:
 
 		screen.addDropDownBoxGFC("TechEra", 20, self.iTable_Y - 30, screen.getXResolution()/5, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.GAME_FONT)
 		screen.addPullDownString("TechEra", CyTranslator().getText("TXT_KEY_WB_CITY_ALL", ()), -1, -1, True)
-		for i in xrange(gc.getNumEraInfos() - 6):	# MacAurther: iNumEras - 6
+		for i in xrange(gc.getNumEraInfos() - 6):	# MacAurther: iNumEras - number of musical regions
 			screen.addPullDownString("TechEra", gc.getEraInfo(i).getDescription(), i, i, i == iSelectedEra)
 
 		sText = "<font=3b>" + CyTranslator().getText("TXT_KEY_GAME_OPTION_NO_BARBARIANS", ()) + "</font>"

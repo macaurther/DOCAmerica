@@ -4,7 +4,7 @@ import Setup
 import SettlerMaps
 import WarMaps
 import RegionMap
-import CityNameManager
+import CityNames
 import Civilizations
 import Modifiers
 import AIParameters
@@ -13,7 +13,6 @@ import Scenarios
 import ScreensHandler
 
 import AIWars
-import Barbs
 import Civics
 import Collapse
 import Communications
@@ -25,6 +24,7 @@ import GreatPeople
 import History
 import Logging
 import Messages
+import Minors
 import Periods
 import Plague
 import Religions

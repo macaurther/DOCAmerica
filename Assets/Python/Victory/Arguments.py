@@ -527,9 +527,6 @@ def start(identifier):
 def area_city(tRectangle):
 	return AreaCityArgument(AreaArgumentFactory().rectangle(tRectangle))
 
-def resources():
-	return SumAggregate(iResource for iResource in infos.bonuses()).named("TXT_KEY_VICTORY_NAME_RESOURCES")
-
 def happiness_resources():
 	return [iResource for iResource in infos.bonuses() if infos.bonus(iResource).getHappiness() > 0]
 

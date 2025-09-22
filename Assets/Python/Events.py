@@ -8,10 +8,15 @@ from GoalHandlers import event_handler_registry
 
 victory_handlers = appenddict()
 
+logged_events = []
+
 
 def handler(event):
 	def handler_decorator(func):
 		arg_names = inspect.getargspec(func)[0]
+		
+		if event in logged_events:
+			func = log(func)
 		
 		def handler_func(args):
 			return func(*args[:len(arg_names)])
@@ -69,6 +74,8 @@ events.addEvent("prepareBirth")
 events.addEvent("flip")
 events.addEvent("conquerors")
 events.addEvent("tribute")
+events.addEvent("playerCityRenamed")
+events.addEvent("buildingProcessed")
 events.addEvent("improvementBuilt")
 events.addEvent("improvementDestroyed")
 events.addEvent("EndGameTurn")
@@ -82,7 +89,9 @@ events.addEvent("immigrationSpent")
 def capitalMovedOnPalaceBuilt(city, iBuilding):
 	if iBuilding == iPalace:
 		events.fireEvent("capitalMoved", city)
-	
+
+@handler("buildingBuilt")
+def missionPower(city, iBuilding):
 	if iBuilding == iMission:
 		makeUnits(city.getOwner(), iCatholicMiss, city.plot(), 1, UnitAITypes.UNITAI_MISSIONARY).adjective("")
 
@@ -101,9 +110,8 @@ def capitalMovedOnCityAcquired(iOwner, iNewOwner, city):
 
 @handler("cityAcquiredAndKept")
 def firstCityOnCityAcquiredAndKept(iPlayer, city):
-	if data.civs[civ(iPlayer)].bFirstCity:
+	if city.isCapital():
 		events.fireEvent("firstCity", city)
-		data.civs[civ(iPlayer)].bFirstCity = False
 
 
 @handler("cityAcquiredAndKept")
@@ -121,8 +129,7 @@ def nativeCityConquered(iPlayer, pCity):
 			
 		# If the conquerer has the Plunder Civic, give some Immigration for conquerer
 		if player(iPlayer).hasCivic(iPlunder2):
-			iConquerImmigration = 20 + pCity.getPopulation() * 5
-			iConquerImmigration *= (3 - gc.getGame().getGameSpeedType())	# Scale based on Game Speed
+			iConquerImmigration = scale(20 + pCity.getPopulation() * 5)
 			
 			# England UP
 			if civ(iPlayer) == iEngland:
@@ -159,10 +166,8 @@ def convertOnCityAcquired(iPlayer, pCity):
 
 @handler("cityBuilt")
 def firstCityOnCityBuilt(city):
-	iPlayer = city.getOwner()
-	if data.civs[civ(iPlayer)].bFirstCity:
+	if city.isCapital():
 		events.fireEvent("firstCity", city)
-		data.civs[civ(iPlayer)].bFirstCity = False
 
 @handler("goodyReceived")
 # Give a popup to show what Tribe gave gift
