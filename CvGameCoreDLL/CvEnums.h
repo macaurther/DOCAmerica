@@ -722,6 +722,7 @@ enum TerrainTypes						// Exposed to Python
 	TERRAIN_SAVANNA,
 	TERRAIN_WIDE_RIVER,
 	TERRAIN_FJORD,
+	TERRAIN_DEEP_OCEAN,
 };
 
 enum PlotTypes							// Exposed to Python

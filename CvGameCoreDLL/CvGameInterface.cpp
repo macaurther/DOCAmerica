@@ -320,51 +320,6 @@ void CvGame::updateColoredPlots()
 			}
 		}
 
-		// MacAurther: Old World Access (don't show for Canoes)
-		if (pHeadSelectedUnit->getOwner() == getActivePlayer())
-		{
-			if (pHeadSelectedUnit->getDomainType() == DOMAIN_SEA && pHeadSelectedUnit->getUnitType() != UNIT_CANOE)
-			{
-				for (int i = 0; i < EARTH_X; i++)
-				{
-					for (int j = 0; j < EARTH_Y; j++)
-					{
-						CvPlot* pLoopPlot = ::plotXY(0, 0, i, j);
-						// MacAurther TODO: XML-ize this?
-						NiColorA color;
-						AreaBorderLayers layer;
-					
-						switch (pLoopPlot->getFeatureType())
-						{
-							case FEATURE_TRADEWINDS_NORTH_EUROPE:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIGHT_PURPLE")).getColor();
-								layer = AREA_BORDER_LAYER_NORTH_EUROPE_ACCESS;
-								break;
-							case FEATURE_TRADEWINDS_SOUTH_EUROPE:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_DARK_YELLOW")).getColor();
-								layer = AREA_BORDER_LAYER_SOUTH_EUROPE_ACCESS;
-								break;
-							case FEATURE_TRADEWINDS_AFRICA:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_LIME")).getColor();
-								layer = AREA_BORDER_LAYER_AFRICA_ACCESS;
-								break;
-							case FEATURE_TRADEWINDS_SIBERIA:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_VERYDARK_RED")).getColor();
-								layer = AREA_BORDER_LAYER_SIBERIA_ACCESS;
-								break;
-							case FEATURE_TRADEWINDS_ASIA:
-								color = GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_PLAYER_BLUEISH_PURPLE")).getColor();
-								layer = AREA_BORDER_LAYER_ASIA_ACCESS;
-								break;
-							default:
-								continue;
-						}
-						gDLL->getEngineIFace()->fillAreaBorderPlot(i, j, color, layer);
-					}
-				}
-			}
-		}
-
 		if (pHeadSelectedUnit->isBlockading())
 		{
 			int iBlockadeRange = GC.getDefineINT("SHIP_BLOCKADE_RANGE");

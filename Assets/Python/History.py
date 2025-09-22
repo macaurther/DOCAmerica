@@ -30,14 +30,6 @@ def updateCulture():
 	for plot in plots.all():
 		plot.updateCulture()
 
-# MacAurther: Immigration
-@handler("GameStart")
-def placeHomelands():
-	for iHomeland in lHomelands:
-		for tSegment in dHomelandArea[iHomeland]:
-			for plot in plots.rectangle(tSegment[0], tSegment[1]):
-				plot.setFeatureType(lHomelandTradewinds[iHomeland], 0)
-
 ### CITY ACQUIRED ###
 
 @handler("cityAcquired")

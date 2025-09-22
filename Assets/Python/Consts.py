@@ -717,14 +717,13 @@ iNumFeatures = 19
 (iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
 iFallout, 		iTaiga, 		iPalmForest,	iCanyon,		iTradewindNorthEurope,iTradewindSouthEurope,iTradewindAfrica,iTradewindSiberia,iTradewindAsia) = range(iNumFeatures)
 
-lHomelandTradewinds = [iTradewindNorthEurope, iTradewindSouthEurope, iTradewindAfrica, iTradewindSiberia, iTradewindAsia]
 iTradeWindsStart = iTradewindNorthEurope
 
-iNumTerrains = 21
+iNumTerrains = 22
 # 0				1				2				3				4				5				6				7				8				9
 (iGrass, 		iPlains, 		iDesert, 		iTundra, 		iSnow, 			iCoast, 		iOcean, 		iTerrainPeak, 	iTerrainHills, 	iMarsh,
 iLagoon,		iArcticCoast,	iSemidesert,	iPrairie,		iMoorland,		iSaltflat,		iSaltlake,		iAtoll,			iSavanna,		iWideRiver,
-iFjord) = range(iNumTerrains)
+iFjord,			iDeepOcean) = range(iNumTerrains)
 
 
 #Plague
