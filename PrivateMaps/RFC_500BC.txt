@@ -14,7 +14,7 @@ BeginMap
 EndMap
 
 BeginPlot
-	x=15,y=61
+	x=28,y=64
 	BeginUnit
 		UnitType=UNIT_WARRIOR
 		UnitOwner=CIVILIZATION_ZAPOTEC
@@ -33,7 +33,7 @@ BeginPlot
 	EndUnit
 EndPlot
 BeginPlot
-	x=17,y=63
+	x=28,y=67
 	BeginUnit
 		UnitType=UNIT_MILITIA_SPEARMAN
 		UnitOwner=CIVILIZATION_NATIVE
@@ -53,7 +53,7 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=22,y=59
+	x=34,y=65
 	BeginUnit
 		UnitType=UNIT_WARRIOR
 		UnitOwner=CIVILIZATION_MAYA
@@ -82,7 +82,7 @@ BeginPlot
 	EndCity
 EndPlot
 BeginPlot
-	x=58,y=0
+	x=82,y=0
 	BeginCity
 		CityOwner=CIVILIZATION_INDEPENDENT3
 		CityName=Holy City

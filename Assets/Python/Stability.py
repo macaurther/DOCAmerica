@@ -423,6 +423,11 @@ def getSeparatismModifier(iPlayer, city):
 	
 	bHistorical = plot.getPlayerSettlerValue(iPlayer) > 0
 	bConquest = plot.getPlayerWarValue(iPlayer) > 1
+	# MacAurther TODO:
+	bTotalitarianism = False
+	bExpansionExceptions = False
+	# bTotalitarianism = civic.iSociety == iTotalitarianism
+	# bExpansionExceptions = (bHistorical and iCiv == iMongols and not isDecline(iPlayer)) or bTotalitarianism
 	
 	iTotalCulture = civs.major().sum(lambda c: plot.isCore(c) and 2 * plot.getCivCulture(c) or plot.getCivCulture(c))
 	iCulturePercent = iTotalCulture != 0 and 100 * plot.getCulture(iPlayer) / iTotalCulture or 0
