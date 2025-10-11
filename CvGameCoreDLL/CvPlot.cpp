@@ -1975,8 +1975,8 @@ bool CvPlot::isRiverConnection(DirectionTypes eDirection) const
 		return false;
 	}
 
-	// MacAurther: Just assume if you're a wide river or fjord, you're connected
-	if (isCornerNavigable())
+	// MacAurther: Just assume if you're a strait, you're connected
+	if (isStrait())
 	{
 		return true;
 	}
@@ -6049,6 +6049,7 @@ int CvPlot::determineVariety(FeatureTypes eFeature) const
 			case REGION_CARIBBEAN:
 			case REGION_HAWAII:
 			case REGION_COLOMBIA:
+			case REGION_ECUADOR:
 			case REGION_VENEZUELA:
 			case REGION_GUYANA:
 			case REGION_PERU:
@@ -12178,7 +12179,7 @@ int CvPlot::getRegionGroupForRegion(int iRegion)
 	case REGION_NEW_ENGLAND:
 	case REGION_MID_ATLANTIC:
 	case REGION_MARYLAND:
-	case REGION_RIVER_VALLEY:
+	case REGION_APPALACHIA:
 	case REGION_COASTAL_PLAIN:
 	case REGION_DEEP_SOUTH:
 	case REGION_FLORIDA:
@@ -12193,6 +12194,7 @@ int CvPlot::getRegionGroupForRegion(int iRegion)
 	case REGION_CARIBBEAN:
 		return REGION_GROUP_CENTRAL_AMERICA;
 	case REGION_COLOMBIA:
+	case REGION_ECUADOR:
 	case REGION_VENEZUELA:
 	case REGION_GUYANA:
 	case REGION_PERU:
@@ -12250,9 +12252,9 @@ void CvPlot::improveTile()
 	}
 }
 
-bool CvPlot::isCornerNavigable() const
+bool CvPlot::isStrait() const
 {
-	return getTerrainType() == TERRAIN_WIDE_RIVER || getTerrainType() == TERRAIN_FJORD;
+	return getFeatureType() == FEATURE_STRAIT || getFeatureType() == FEATURE_STRAIT_ISLANDS;
 }
 
 // MacAurther: Forts

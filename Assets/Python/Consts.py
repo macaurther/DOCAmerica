@@ -515,12 +515,12 @@ iNumBonuses = 49
 (iAluminium, 	iBison,			iCitrus,		iCoal, 			iCopper, 		iHorse, 		iIron, 			iMarble, 		iOil, 			iStone, 		
 iUranium, 		iBanana, 		iClam, 			iCorn, 			iCow, 			iCrab,			iDeer, 			iFish, 			iPig, 			iPotato,		
 iRice, 			iSheep, 		iLlama,			iWheat, 		iCocoa,			iCoffee, 		iCotton,		iDye, 			iFur,			iGems, 			
-iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSilk, 			iSilver, 		iSpices,		
+iGold, 			iIncense, 		iJade,			iObsidian,		iPearls, 		iRubber,		iSalt,			iSeal,			iSilver, 		iSpices,
 iSugar,			iTea, 			iTimber,		iTobacco, 		iWine, 			iWhales, 		iSoccer, 		iSongs, 		iMovies) = range(iNumBonuses)
 
-iNumBonusVarieties = 3
+iNumBonusVarieties = 10
 # 0				1				2				3				4				5				6				7				8				9
-(iDyeCochineal, iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
+(iDyeCochineal, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds,	iGemsEmeralds,	iSheepBlack,	iCowBrown,		iPigFurry,		iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
 iNumBuildings = 224
@@ -641,30 +641,39 @@ iParameterVassals, iParameterDefensivePacts, iParameterRelations, iParameterNati
 iParameterWarSuccess, iParameterWarWeariness, iParameterBarbarianLosses) = range(iNumStabilityParameters)					# Military
 
 #Regions
-iNumRegions = 52
+iNumRegions = 53
 # 0				1				2				3				4				5				6				7				8				9
 (rAlaska, 		rYukon,         rNunavut, 		rGreenland,     rIceland,       rNorthCascadia, rNorthPlains, 	rOntario, 		rQuebec, 		rNewFoundland, 	
 rSouthCascadia, rCalifornia,    rRockies,       rSouthwest,     rTexas,         rGreatPlains,   rGreatLakes,    rNewEngland,    rMidAtlantic,   rMaryland,
-rRiverValley,    rCoastalPlain,  rDeepSouth,     rFlorida,       rBajaCalifornia,rSierraMadres,  rBajio,         rVeracruz,      rOaxaca,        rYucatan,       
-rMesoamerica,   rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia, 		rAmazonas, 		rPara,          
-rBahia,         rMinasGerais,   rMatoGrosso,    rParana,        rChile, 		rParaguay, 		rUruguay, 		rChaco,         rCuyo,          rPampas, 		
-rPatagonia, 	rOldWorld		) = range(iNumRegions)
+rAppalachia,    rCoastalPlain,  rDeepSouth,     rFlorida,       rBajaCalifornia,rSierraMadres,  rBajio,         rVeracruz,      rOaxaca,        rYucatan,       
+rMesoamerica,   rCaribbean, 	rHawaii, 		rColombia, 		rEcuador,		rVenezuela, 	rGuyana, 		rPeru, 			rBolivia, 		rAmazonas, 		
+rPara,          rBahia,         rMinasGerais,   rMatoGrosso,    rParana,        rChile, 		rParaguay, 		rUruguay, 		rChaco,         rCuyo,          
+rPampas, 		rPatagonia, 	rOldWorld		) = range(iNumRegions)
+
+iNumWaterRegions = 43
+# 0				1				2				3				4				5				6				7				8				9
+(rArcticO,		rBaffinB,		rNorthwestPassage,rHudsonB,		rLabradorS,		rNorthAtlanticO,rGOfMexico,		rCaribbeanS,	rSouthAtlanticO,rSouthPacificO,
+rNorthPacificO,	rGOfCalifornia,rGOfAlaska,		rBeringS,		rGreatBearL,	rGreatSlaveL,	rLAthabasca,	rLWinnipegosis,	rLWinnipeg,		rGOfStLawrence,
+rLOntario,		rLErie,			rLHuron,		rLSuperior,		rLMichigan,		rPugetSound,	rGreatSaltL,	rLTahoe,		rLOkeechobee,	rLTexcoco,		
+rLMaracaibo,	rLTiticaca,		rSmallLake,		rStLawrenceR,	rColumbiaR,		rMississippiR,	rMissouriR,		rOhioR,			rAmazonR,		rXinguR,		
+rTocantinsR,	rAtlantic,		rPacific,
+ ) = range(100, 100 + iNumWaterRegions)
 
 lCanadaAtlanticCoast = [rQuebec, rNewFoundland]
 lCanadaPacificCoast = [rNorthCascadia]
 lCanada = [rYukon, rNunavut, rNorthCascadia, rNorthPlains, rOntario, rQuebec, rNewFoundland]
 lThirteenColonies = [rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain]
 lSouthernUS = [rCoastalPlain, rFlorida, rTexas, rDeepSouth]
-lBorderStates = [rMaryland, rRiverValley]
-lLouisianaPurchase = [rGreatLakes, rRiverValley, rDeepSouth, rCoastalPlain, rFlorida, rTexas, rGreatPlains]
-lContinentalUS = [rSouthCascadia, rCalifornia, rRockies, rSouthwest, rTexas, rGreatPlains, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rRiverValley, rCoastalPlain, rDeepSouth, rFlorida]
+lBorderStates = [rMaryland, rAppalachia]
+lLouisianaPurchase = [rGreatLakes, rAppalachia, rDeepSouth, rCoastalPlain, rFlorida, rTexas, rGreatPlains]
+lContinentalUS = [rSouthCascadia, rCalifornia, rRockies, rSouthwest, rTexas, rGreatPlains, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rAppalachia, rCoastalPlain, rDeepSouth, rFlorida]
 lUnitedStates = lContinentalUS + [rAlaska, rHawaii]
 lMexico = [rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, rYucatan]
 lBrazil = [rAmazonas, rPara, rBahia, rMinasGerais, rMatoGrosso, rParana,]
 lArgentina = [rChaco, rCuyo, rPampas, rPatagonia]
-lAndes = [rColombia, rPeru, rBolivia, rChile, rChaco]
+lAndes = [rColombia, rEcuador, rPeru, rBolivia, rChile]
 
-lSouthAmerica = [rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rChile, rParaguay, rUruguay] + lArgentina + lBrazil
+lSouthAmerica = [rColombia, rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rChile, rParaguay, rUruguay] + lArgentina + lBrazil
 lCentralAmerica = [rMesoamerica, rCaribbean]
 lLatinAmerica = lCentralAmerica + lMexico + lSouthAmerica
 lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico
@@ -674,10 +683,10 @@ lWest = lAmerica + [rHawaii, rGreenland]
 
 # Revealed Tile Lists
 lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, \
-						   rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rVenezuela, rGuyana, rPeru, rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia]
-lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rRiverValley, \
+						   rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia]
+lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rAppalachia, \
 						   rCoastalPlain, rDeepSouth, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, \
-						   rVenezuela, rGuyana, rPeru, rBolivia, rBahia, rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia]
+						   rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rBahia, rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia]
 lEuropeanRevealed1850AD = lWest
 
 
@@ -712,11 +721,11 @@ iNumRoutes = 3
 
 #feature & terrain
 
-iNumFeatures = 21
+iNumFeatures = 23
 # 0				1				2				3				4				5				6				7				8				9
 (iSeaIce, 		iJungle, 		iCenote, 		iFloodPlains, 	iForest, 		iBog, 			iSwamp, 		iCape, 			iIslands, 		iRainforest, 
-iFallout, 		iTaiga, 		iPalmForest,	iCanyon,		iReef,			iScrub,			iTradewindNorthEurope,iTradewindSouthEurope,iTradewindAfrica,iTradewindSiberia,
-iTradewindAsia) = range(iNumFeatures)
+iFallout, 		iTaiga, 		iPalmForest,	iCanyon,		iReef,			iScrub,			iStraight,		iStraightIslands,iTradewindNorthEurope,iTradewindSouthEurope,
+iTradewindAfrica,iTradewindSiberia,iTradewindAsia) = range(iNumFeatures)
 
 iTradeWindsStart = iTradewindNorthEurope
 
@@ -759,9 +768,9 @@ lSecondaryCivs = [iChimu, iHaiti, iHawaii, iInuit, iHaudenosaunee, iMississippi,
 (i500BC, i1500AD, i1750AD) = range(3)
 
 # Stability overlay and editor
-iNumPlotStabilityTypes = 5
-(iCore, iHistorical, iContest, iForeignCore, iAIForbidden) = range(iNumPlotStabilityTypes)
-lStabilityColors = ["COLOR_CYAN", "COLOR_GREEN", "COLOR_YELLOW", "COLOR_RED", "COLOR_PLAYER_LIGHT_PURPLE"]
+iNumPlotStabilityTypes = 4
+(iCoreArea, iHistoricalArea, iConquestArea, iForeignArea) = range(iNumPlotStabilityTypes)
+lStabilityColors = ["COLOR_CYAN", "COLOR_GREEN", "COLOR_YELLOW", "COLOR_RED"]
 lPresetValues = [3, 20, 90, 200, 500, 700]
 
 iMaxWarValue = 12

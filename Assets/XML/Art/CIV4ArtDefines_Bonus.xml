@@ -145,15 +145,6 @@
 			<FontButtonIndex>25</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_SILK</Type>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Silk/Silk.nif</NIF>
-			<KFM/>
-			<Button>,Art/Interface/Buttons/WorldBuilder/Silk.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,3,14</Button>
-			<FontButtonIndex>26</FontButtonIndex>
-		</BonusArtInfo>
-		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_SILVER</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>.8</fInterfaceScale>
@@ -377,11 +368,10 @@
 		</BonusArtInfo>
 		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_TIMBER</Type>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.25</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Rubber/silk.nif</NIF>
-			<KFM>Art/Terrain/Resources/Rubber/silk.kfm</KFM>
-			<SHADERNIF>Art/Terrain/Resources/Rubber/silk.nif</SHADERNIF>
+			<fScale>0.5</fScale>
+			<fInterfaceScale>1.6</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Timber/olives.nif</NIF>
+			<KFM/>
 			<Button>Art/Interface/Buttons/Resources/Timber.dds</Button>
 			<FontButtonIndex>40</FontButtonIndex>
 		</BonusArtInfo>
@@ -451,6 +441,74 @@
 			<FontButtonIndex>20</FontButtonIndex>
 		</BonusArtInfo>
 		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_SPICES_VANILLA</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/vanilla/vanilla.nif</NIF>
+			<KFM>Art/Terrain/Resources/vanilla/vanilla.kfm</KFM>
+			<Button>Art/Interface/Buttons/Resources/vanilla.dds</Button>
+			<FontButtonIndex>28</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_GEMS_TURQUOISE</Type>
+			<fScale>.7</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/turquoise/Marble.nif</NIF>
+			<KFM>Art/Terrain/Resources/turquoise/Marble.kfm</KFM>
+			<Button>Art/Interface/Buttons/Resources/turquoise.dds</Button>
+			<FontButtonIndex>22</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_GEMS_DIAMONDS</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.5</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Diamonds/Gems.nif</NIF>
+			<KFM>Art/Terrain/Resources/Diamonds/Gems.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Diamonds/Gems.nif</SHADERNIF>
+			<Button>Art/Interface/Buttons/Resources/Diamonds.dds</Button>
+			<FontButtonIndex>22</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_GEMS_EMERALDS</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Emeralds/gems.nif</NIF>
+			<KFM>Art/Terrain/Resources/Emeralds/gems.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Emeralds/gems.nif</SHADERNIF>
+			<Button>Art/Interface/Buttons/Resources/Emeralds.dds</Button>
+			<FontButtonIndex>22</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_COW_BROWN</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Cow_Brown/Cow.nif</NIF>
+			<KFM>Art/Terrain/Resources/Cow/Cow.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Cow_Brown/Cow_FX.nif</SHADERNIF>
+			<Button>Art/Interface/Buttons/Resources/cow_brown.dds</Button>
+			<FontButtonIndex>12</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_PIG_FURRY</Type>
+			<fScale>1.1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Pig_Furry/Pig.nif</NIF>
+			<KFM>Art/Terrain/Resources/Pig/Pig.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Pig_Furry/Pig_FX.nif</SHADERNIF>
+			<Button>Art/Interface/Buttons/Resources/pig_furry.dds</Button>
+			<FontButtonIndex>16</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_SHEEP_BLACK</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/sheep_black/Sheep.nif</NIF>
+			<KFM>Art/Terrain/Resources/Sheep/Sheep.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/sheep_black/Sheep_FX.nif</SHADERNIF>
+			<Button>,Art/Interface/Buttons/WorldBuilder/Sheep.dds,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,14</Button>
+			<FontButtonIndex>18</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
 			<Type>ART_DEF_BONUS_LLAMA</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
@@ -486,6 +544,16 @@
 			<SHADERNIF>Art/Terrain/Resources/Shrimp/Shrimp.nif</SHADERNIF>
 			<Button>Art/Interface/Buttons/Resources/Shrimp.dds</Button>
 			<FontButtonIndex>13</FontButtonIndex>
+		</BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_SEAL</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Seal/Sea_Lions.nif</NIF>
+			<KFM>Art/Terrain/Resources/Seal/Sea_Lions.kfm</KFM>
+			<SHADERNIF>Art/Terrain/Resources/Seal/Sea_Lions.nif</SHADERNIF>
+			<Button>Art/Interface/Buttons/Resources/Seal.dds</Button>
+			<FontButtonIndex>26</FontButtonIndex>
 		</BonusArtInfo>
 	</BonusArtInfos>
 </Civ4ArtDefines>

@@ -54,8 +54,8 @@ enum Regions
 	REGION_NUNAVUT, // Nunavut
 	REGION_GREENLAND, // Greenland
 	REGION_ICELAND, // Iceland
-	REGION_NORTH_CASCADIA, // British Columbia, Alberta
-	REGION_NORTH_PLAINS, // Manitoba, Saskatchewan
+	REGION_NORTH_CASCADIA, // British Columbia
+	REGION_NORTH_PLAINS, // Alberta, Manitoba, Saskatchewan
 	REGION_ONTARIO, // Ontario
 	REGION_QUEBEC, // Quebec
 	REGION_NEW_FOUNDLAND, // New Foundland, Labrador, New Brunswick
@@ -64,14 +64,14 @@ enum Regions
 	REGION_ROCKIES, // Idaho, Montana, Wyoming, Colorado, Nevada, Utah
 	REGION_SOUTHWEST, //Arizona, New Mexico
 	REGION_TEXAS, // Texas, Oklahoma
-	REGION_GREAT_PLAINS, // N/S Dakota, Nebraska, Kansas, Iowa
+	REGION_GREAT_PLAINS, // N/S Dakota, Nebraska, Kansas, Iowa, Missouri
 	REGION_GREAT_LAKES, // Minnesota, Wisconsin, Illinois, Michigan, Indiana, Ohio
 	REGION_NEW_ENGLAND, // Maine, New Hampshire, Vermont, Mass., Rhode Island, Connecticut
 	REGION_MID_ATLANTIC, // New York, Pennsylvania, New Jersey
 	REGION_MARYLAND, // Maryland, Delaware
-	REGION_RIVER_VALLEY, // West Virginia, Kentucky, Missouri
-	REGION_COASTAL_PLAIN, // Virginia, North Carolina, South Carolina, Georgia
-	REGION_DEEP_SOUTH, // Louisiana, Arkansas, Alabama, Mississippi
+	REGION_APPALACHIA, // West Virginia, Kentucky
+	REGION_COASTAL_PLAIN, // Virginia, North Carolina, South Carolina
+	REGION_DEEP_SOUTH, // Georgia, Louisiana, Arkansas, Alabama, Mississippi
 	REGION_FLORIDA, // Florida
 	REGION_BAJA_CALIFORNIA, //Baja California
 	REGION_SIERRA_MADRES, // North Mexico
@@ -82,17 +82,18 @@ enum Regions
 	REGION_MESOAMERICA, // Central America
 	REGION_CARIBBEAN, // Caribbean
 	REGION_HAWAII, // Hawaii
-	REGION_COLOMBIA, // Colombia, Ecuador
+	REGION_COLOMBIA, // Colombia
+	REGION_ECUADOR, // Ecuador
 	REGION_VENEZUELA, // Venezuela
 	REGION_GUYANA, // Guyana, Suriname, French Guyana
 	REGION_PERU, // Peru
 	REGION_BOLIVIA, // Bolivia
-	REGION_AMAZONAS, // Upper Amazon
-	REGION_PARA, // Lower Amazon
-	REGION_BAHIA, // North East Brazil
-	REGION_MINAS_GERAIS, // East Central Brazil
-	REGION_MATO_GROSSO, // West Central Brazil
-	REGION_PARANA, // South Brazil
+	REGION_AMAZONAS, // Acre, Amazonas, Roraima, Rondonia
+	REGION_PARA, // Para, Amapa
+	REGION_BAHIA, // Maranhao, Piaui, Ceara, Rio Grande do Norte, Paraiba, Pernambuco, Alagoas, Sergipe, Bahia
+	REGION_MINAS_GERAIS, // Minas Gerais, Espirito Santo, Rio de Janeiro
+	REGION_MATO_GROSSO, // Mato Grosso, Mato Grosso do Sul, Tocantins, Goias
+	REGION_PARANA, // Parana, Sao Paulo, Santa Catarina, Rio Grande do Sul
 	REGION_CHILE, // Chile
 	REGION_PARAGUAY, // Paraguay
 	REGION_URUGUAY, // Uruguay

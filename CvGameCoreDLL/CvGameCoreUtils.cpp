@@ -1836,10 +1836,11 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	{
 		if (pFromPlot->isWater() && pToPlot->isWater())
 		{
-			if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && !(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
+			if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && 
+				!(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
 			{
-				// MacAurther: Wide River and Fjord Terrain: Can move through corners
-				if (!(pFromPlot->isCornerNavigable()) && !(pToPlot->isCornerNavigable()))
+				// MacAurther: Straight Feature: Ships can move through corners
+				if (!(pFromPlot->isStrait()) && !(pToPlot->isStrait()))
 				{
 					return FALSE;
 				}
@@ -1847,15 +1848,25 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		}
 	}
 
-	// MacAurther: Mountain Passes. Can't move through without Pathfinding technology
+	// MacAurther: Land movement rules
 	if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
 	{
 		if (!pFromPlot->isWater() && !pToPlot->isWater())
 		{
-			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isPeak()) && (GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isPeak()))
+			// MacAurther: Mountain Passes: Can't move through corners without Pathfinding technology
+			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isPeak()) && 
+				(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isPeak()))
 			{
-				// MacAurther: Mountain Passes: Can't move through corners without tech
 				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING))
+				{
+					return FALSE;
+				}
+			}
+			// MacAurther: Straits: Can't cross straits as a land unit unless has Amphibious
+			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isStrait()) && 
+				(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isStrait()))
+			{
+				if (!pSelectionGroup->getHeadUnit()->isHasPromotion(PROMOTION_AMPHIBIOUS))
 				{
 					return FALSE;
 				}

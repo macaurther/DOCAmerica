@@ -8854,6 +8854,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -8932,6 +8933,7 @@
 				</UnitAI>
 			</UnitAIs>
 			<PrereqTech>TECH_CARTOGRAPHY</PrereqTech>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9002,6 +9004,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9066,6 +9069,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9135,6 +9139,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9199,6 +9204,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_METEOROLOGY</PrereqTech>
 			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9442,7 +9448,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_SHIPBUILDING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9517,7 +9523,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_METEOROLOGY</PrereqTech>
 			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -9809,10 +9815,7 @@
 				</UnitAI>
 			</NotUnitAIs>
 			<PrereqTech>TECH_ECONOMICS</PrereqTech>
-			<PrereqBonuses>
-				<BonusType>BONUS_COPPER</BonusType>
-				<BonusType>BONUS_IRON</BonusType>
-			</PrereqBonuses>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>90</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -10020,7 +10023,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_TIMEKEEPING</PrereqTech>
 			<PrereqBuilding>BUILDING_HARBOR</PrereqBuilding>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -10090,7 +10093,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -10160,7 +10163,7 @@
 			</UnitAIs>
 			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<PrereqBuilding>BUILDING_SHIPYARD</PrereqBuilding>
-			<BonusType>BONUS_IRON</BonusType>
+			<BonusType>BONUS_TIMBER</BonusType>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>

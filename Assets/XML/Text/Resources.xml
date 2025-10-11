@@ -239,11 +239,99 @@
 		<Spanish>Citrus</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BONUS_CITRUS_ORANGES</Tag>
+		<English>Citrus (Oranges)</English>
+		<French>Citrus (Oranges)</French>
+		<German>Zitrusfr&#252;chte (Orangen)</German>
+		<Italian>Citrus (Oranges)</Italian>
+		<Spanish>Citrus (Oranges)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_CRAB_SHRIMP</Tag>
+		<English>Crab (Shrimps)</English>
+		<French>Crab (Shrimps)</French>
+		<German>Crab (Shrimps)</German>
+		<Italian>Crab (Shrimps)</Italian>
+		<Spanish>Crab (Shrimps)</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_BISON</Tag>
 		<English>Bison</English>
 		<French>Bison</French>
 		<German>Bison</German>
 		<Italian>Bison</Italian>
 		<Spanish>Bison</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_DYE_COCHINEAL</Tag>
+		<English>Dye (Cochineal)</English>
+		<French>Dye (Cochineal)</French>
+		<German>Farbmittel (Cochenille)</German>
+		<Italian>Dye (Cochineal)</Italian>
+		<Spanish>Dye (Cochineal)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SPICES_VANILLA</Tag>
+		<English>Spices (Vanilla)</English>
+		<French>Spices (Vanilla)</French>
+		<German>Gew&#252;rze (Vanille)</German>
+		<Italian>Spices (Vanilla)</Italian>
+		<Spanish>Spices (Vanilla)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_GEMS_TURQUOISE</Tag>
+		<English>Gems (Turquoise)</English>
+		<French>Gems (Turquoise)</French>
+		<German>Edelsteine (T&#252;rkis)</German>
+		<Italian>Gems (Turquoise)</Italian>
+		<Spanish>Gems (Turquoise)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_GEMS_DIAMONDS</Tag>
+		<English>Gems (Diamonds)</English>
+		<French>Gems (Diamonds)</French>
+		<German>Edelsteine (Diamanten)</German>
+		<Italian>Gems (Diamonds)</Italian>
+		<Spanish>Gems (Diamonds)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_GEMS_EMERALDS</Tag>
+		<English>Gems (Emeralds)</English>
+		<French>Gems (Emeralds)</French>
+		<German>Edelsteine (Smaragde)</German>
+		<Italian>Gems (Emeralds)</Italian>
+		<Spanish>Gems (Emeralds)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_COW_BROWN</Tag>
+		<English>Cow (Brown)</English>
+		<French>Cow (Brown)</French>
+		<German>Kuh (Braun)</German>
+		<Italian>Cow (Brown)</Italian>
+		<Spanish>Cow (Brown)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_PIG_FURRY</Tag>
+		<English>Pig (Furry)</English>
+		<French>Pig (Furry)</French>
+		<German>Schwein (Fellig)</German>
+		<Italian>Pig (Furry)</Italian>
+		<Spanish>Pig (Furry)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SHEEP_BLACK</Tag>
+		<English>Sheep (Black)</English>
+		<French>Sheep (Black)</French>
+		<German>Schaf (Schwarz)</German>
+		<Italian>Sheep (Black)</Italian>
+		<Spanish>Sheep (Black)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SEAL</Tag>
+		<English>Seal</English>
+		<French>Seal</French>
+		<German>Seal</German>
+		<Italian>Seal</Italian>
+		<Spanish>Seal</Spanish>
 	</TEXT>
 </Civ4GameText>

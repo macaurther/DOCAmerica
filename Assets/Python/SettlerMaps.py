@@ -7,7 +7,7 @@ from Events import handler
 def applyMap(iCivilization, iPeriod=-1):
 	for p in plots.all().land():
 		p.setSettlerValue(iCivilization, 0)
-	
+
 	for (x, y), iValue in FileMap.read("Settler/%s.csv" % civ_name(iCivilization)):
 		if iValue and not plot(x, y).isWater():
 			plot(x, y).setSettlerValue(iCivilization, iValue)

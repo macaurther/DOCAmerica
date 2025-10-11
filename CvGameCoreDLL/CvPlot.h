@@ -587,7 +587,7 @@ public:
 	
 	// MacAurther
 	void improveTile();
-	bool isCornerNavigable() const;
+	bool isStrait() const;
 
 	// MacAurther: Forts
 	PlayerTypes getFortOwner() const;

@@ -17631,7 +17631,7 @@ bool CvCity::isMexican() const
 
 bool CvCity::isColombian() const
 {
-	if(getRegionID() == REGION_COLOMBIA || getRegionID() == REGION_VENEZUELA || getRegionID() == REGION_PERU || getRegionID() == REGION_BOLIVIA || getRegionID() == REGION_VENEZUELA)
+	if(getRegionID() == REGION_COLOMBIA || getRegionID() == REGION_ECUADOR || getRegionID() == REGION_VENEZUELA || getRegionID() == REGION_PERU || getRegionID() == REGION_BOLIVIA || getRegionID() == REGION_VENEZUELA)
 	{
 		return true;
 	}

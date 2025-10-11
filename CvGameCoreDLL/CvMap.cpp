@@ -1466,7 +1466,7 @@ void CvMap::calculateAreas()
 				case REGION_NEW_ENGLAND:
 				case REGION_MID_ATLANTIC:
 				case REGION_MARYLAND:
-				case REGION_RIVER_VALLEY:
+				case REGION_APPALACHIA:
 				case REGION_COASTAL_PLAIN:
 				case REGION_DEEP_SOUTH:
 				case REGION_FLORIDA:
@@ -1485,6 +1485,7 @@ void CvMap::calculateAreas()
 					plot->setArea(centralAmericaID);
 					break;
 				case REGION_COLOMBIA:
+				case REGION_ECUADOR:
 				case REGION_VENEZUELA:
 				case REGION_GUYANA:
 				case REGION_PERU:

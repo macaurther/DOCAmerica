@@ -14287,7 +14287,7 @@ int CvUnit::getOriginalArtStyle() const
 		return GC.getCivilizationInfo(ENGLAND).getUnitArtStyleType();
 	case REGION_QUEBEC:
 	case REGION_GREAT_LAKES:
-	case REGION_RIVER_VALLEY:
+	case REGION_APPALACHIA:
 	case REGION_DEEP_SOUTH:
 		return GC.getCivilizationInfo(FRANCE).getUnitArtStyleType();
 	case REGION_FLORIDA:
@@ -14302,6 +14302,7 @@ int CvUnit::getOriginalArtStyle() const
 	case REGION_PARAGUAY:
 	case REGION_URUGUAY:
 	case REGION_COLOMBIA:
+	case REGION_ECUADOR:
 	case REGION_VENEZUELA:
 	case REGION_GUYANA:
 		return GC.getCivilizationInfo(SPAIN).getUnitArtStyleType();

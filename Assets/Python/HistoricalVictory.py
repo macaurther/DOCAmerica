@@ -5,7 +5,7 @@ from Locations import *
 lHappinessResources = [iResource for iResource in infos.bonuses() if infos.bonus(iResource).getHappiness() > 0]
 # second Portuguese goal: acquire 20 plantation resources by 1650 AD
 #lColonialResources = [iBanana, iSpices, iSugar, iCoffee, iTea, iTobacco, iCocoa, iSalt, iCitrus]
-lPlantationResources = [iBanana, iCocoa, iCoffee, iCotton, iDye, iIncense, iRubber, iSilk, iSpices, iSugar, iTea, iTobacco]
+lPlantationResources = [iBanana, iCocoa, iCoffee, iCotton, iDye, iIncense, iRubber, iSpices, iSugar, iTea, iTobacco]
 
 
 # city names
