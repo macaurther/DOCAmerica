@@ -656,7 +656,7 @@ iNumWaterRegions = 43
 rNorthPacificO,	rGOfCalifornia,rGOfAlaska,		rBeringS,		rGreatBearL,	rGreatSlaveL,	rLAthabasca,	rLWinnipegosis,	rLWinnipeg,		rGOfStLawrence,
 rLOntario,		rLErie,			rLHuron,		rLSuperior,		rLMichigan,		rPugetSound,	rGreatSaltL,	rLTahoe,		rLOkeechobee,	rLTexcoco,		
 rLMaracaibo,	rLTiticaca,		rSmallLake,		rStLawrenceR,	rColumbiaR,		rMississippiR,	rMissouriR,		rOhioR,			rAmazonR,		rXinguR,		
-rTocantinsR,	rAtlantic,		rPacific,
+rTocantinsR,	rAtlanticO,		rPacificO,
  ) = range(100, 100 + iNumWaterRegions)
 
 lCanadaAtlanticCoast = [rQuebec, rNewFoundland]
@@ -680,6 +680,15 @@ lNorthAmerica = lCanada + lContinentalUS + [rAlaska] + lMexico
 
 lAmerica = lSouthAmerica + lCentralAmerica + lNorthAmerica
 lWest = lAmerica + [rHawaii, rGreenland]
+
+dCivGroupRegions = {
+	iCivGroupEurope: lWest,
+	iCivGroupNative: lAmerica,
+	iCivGroupAmerica: lAmerica,
+	iCivGroupNATO: lAmerica,
+	iCivGroupMesoamerica: lMexico,
+	iCivGroupAndes: lAndes,
+}
 
 # Revealed Tile Lists
 lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, \

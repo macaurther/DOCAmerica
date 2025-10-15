@@ -9,10 +9,10 @@ from Civics import isCommunist, isFascist, isRepublic, isAutocratic
 
 ### CONSTANTS ###
 
-iNumLanguages = 17
+iNumLanguages = 18
 lLanguages = (
 	iAmerican, iArgentinian, iBrazilian, iDutch, iEnglish, iFrench, iLocal, iMayan, iMexican, iNahuatl, 
-	iNordic, iPortuguese, iQuechua, iRussian, iSpanish, iSwedish, iToltec,
+	iNative, iNordic, iPortuguese, iQuechua, iRussian, iSpanish, iSwedish, iToltec,
 ) = range(iNumLanguages)
 
 
@@ -97,6 +97,10 @@ class Translation(object):
 		return none(properties)
 		
 	def isApplicable(self, iCiv, tile, bFound=False, bChange=True, bRenaming=True):
+		# MacAurther: Translation not applicable if is None
+		if self.name is None:
+			return False
+
 		city = city_(tile)
 		iCurrentEra = is_minor(iCiv) and game.getCurrentEra() or player(iCiv).getCurrentEra()
 		

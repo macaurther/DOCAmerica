@@ -37,20 +37,21 @@
 			<bPlayable>1</bPlayable>
 			<bAIPlayable>1</bAIPlayable>
 			<Cities>
-				<City>Oakland</City>
-				<City>Orlando</City>
-				<City>Tacoma</City>
+				<City>Springfield</City>
+				<City>Franklin</City>
+				<City>Georgetown</City>
 				<City>Centralia</City>
-				<City>Charlotte</City>
-				<City>Madison</City>
+				<City>Greenville</City>
+				<City>Bristol</City>
 				<City>Stockton</City>
-				<City>Tampa Bay</City>
-				<City>Boise</City>
+				<City>Fairview</City>
+				<City>Auburn</City>
 				<City>Monterey</City>
-				<City>Columbus</City>
-				<City>Le Bam</City>
-				<City>Santa Monica</City>
-				<City>Hunt Valley</City>
+				<City>Lancaster</City>
+				<City>Lakewood</City>
+				<City>Lafayette</City>
+				<City>Albany</City>
+				<City>Monroe</City>
 			</Cities>
 			<Buildings>
 				<Building>
@@ -3746,7 +3747,6 @@
 				<City>Soyaltepec</City>
 				<City>Etla</City>
 				<City>Cosolapa</City>
-				<City>Mitla</City>
 				<City>Tapanatepec</City>
 				<City>Zanatepec</City>
 				<City>Tlalixtac</City>

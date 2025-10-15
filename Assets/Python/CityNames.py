@@ -17,27 +17,27 @@ city_names = FileMap("Cities.csv")
 
 dBaseLanguages = {
 	iMaya: (iMayan,),
-	iZapotec: (iLocal,),
-	iTeotihuacan: (iLocal,),
-	iTiwanaku: (iLocal,),
-	iWari: (iLocal,),
+	iZapotec: (iNative,),
+	iTeotihuacan: (iNative,),
+	iTiwanaku: (iNative,),
+	iWari: (iNative,),
 	iMississippi: (iMississippi,),
-	iPuebloan: (iLocal,),
-	iMuisca: (iLocal,),
+	iPuebloan: (iNative,),
+	iMuisca: (iNative,),
 	iNorse: (iNordic, iSwedish,),
-	iChimu: (iLocal),
-	iInuit: (iLocal),
+	iChimu: (iNative,),
+	iInuit: (iNative,),
 	iInca: (iQuechua,),
-	iPurepecha: (iLocal,),
+	iPurepecha: (iNative,),
 	iAztecs: (iNahuatl,),
-	iHaudenosaunee: (iLocal,),
-	iLakota: (iLocal,),
+	iHaudenosaunee: (iNative,),
+	iLakota: (iNative,),
 	iSpain: (iSpanish,),
 	iPortugal: (iPortuguese,),
 	iEngland: (iEnglish,),
 	iFrance: (iFrench,),
 	iNetherlands: (iDutch,),
-	iHawaii: (iLocal,),
+	iHawaii: (iNative,),
 	iRussia: (iRussian,),
 	iAmerica: (iAmerican, iEnglish),
 	iHaiti: (iFrench,),
@@ -143,15 +143,6 @@ def getPrimaryLanguages(identifier):
 
 def getLocalLanguages(tile):
 	iRegion = plot_(tile).getRegionID()
-	
-	if iRegion == rHornOfAfrica:
-		return iSomali, iLocal
-	
-	elif iRegion == rManchuria:
-		return iManchu, iLocal
-	
-	elif iRegion in [rMaghreb, rSahara]:
-		return iBerber, iLocal
 	
 	return (iLocal,)
 
@@ -370,6 +361,10 @@ def applyName(city, translation, bNotify=False):
 	if translation.bRenaming:
 		applyRenaming(city, translation)
 		return
+	
+	# MacAurther: If there is no map name, just use current name
+	if translation.name is None:
+		translation.name = current_name
 		
 	city.setName(translation.name, False)
 	

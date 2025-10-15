@@ -858,12 +858,12 @@
 		<Spanish>FOREIGN</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_STABILITY_DOWNGRADE_COTTAGES</Tag>
-		<English>The economic crisis is impeding our cottage growth!</English>
-		<French>La crise &#233;conomique ralentit la croissance de nos cottages !</French>
-		<German>The economic crisis is impeding our cottage growth!</German>
-		<Italian>The economic crisis is impeding our cottage growth!</Italian>
-		<Spanish>The economic crisis is impeding our cottage growth!</Spanish>
+		<Tag>TXT_KEY_STABILITY_DOWNGRADE_IMPROVEMENTS</Tag>
+		<English>Our improvements have been destroyed in the ongoing crisis!</English>
+		<French>Our improvements have been destroyed in the ongoing crisis!</French>
+		<German>Our improvements have been destroyed in the ongoing crisis!</German>
+		<Italian>Our improvements have been destroyed in the ongoing crisis!</Italian>
+		<Spanish>Our improvements have been destroyed in the ongoing crisis!</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STABILITY_ECONOMIC_CRISIS</Tag>
@@ -1024,6 +1024,14 @@
 		<German>Historical Area</German>
 		<Italian>Historical Area</Italian>
 		<Spanish>Historical Area</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STABILITY_CONQUEST_AREA</Tag>
+		<English>Conquest Area</English>
+		<French>Conquest Area</French>
+		<German>Conquest Area</German>
+		<Italian>Conquest Area</Italian>
+		<Spanish>Conquest Area</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STABILITY_IMMOBILIZED_UNITS</Tag>
@@ -1515,11 +1523,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STABILITY_OVERLAY_HELP</Tag>
-		<English>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: contested area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign core</English>
-		<French>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: c&#156;ur historique[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Vert[COLOR_REVERT]: zone historique[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Jaune[COLOR_REVERT]: zone contest&#233;e[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Rouge[COLOR_REVERT]: c&#156;ur historique &#233;tranger</French>
-		<German>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: contested area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign core</German>
-		<Italian>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: contested area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign core</Italian>
-		<Spanish>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: contested area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign core</Spanish>
+		<English>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: conquest area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign area</English>
+		<French>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: c&#156;ur historique[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Vert[COLOR_REVERT]: zone historique[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Jaune[COLOR_REVERT]: zone conqu&#234;te[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Rouge[COLOR_REVERT]: zone &#233;tranger</French>
+		<German>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: conquest area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign area</German>
+		<Italian>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: conquest area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign area</Italian>
+		<Spanish>[COLOR_PLAYER_CYAN]Cyan[COLOR_REVERT]: core area[NEWLINE][COLOR_PLAYER_GREEN_TEXT]Green[COLOR_REVERT]: historical area[NEWLINE][COLOR_PLAYER_YELLOW_TEXT]Yellow[COLOR_REVERT]: conquest area[NEWLINE][COLOR_PLAYER_DARK_RED_TEXT]Red[COLOR_REVERT]: foreign area</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STABILITY_CITIES_SECEDED</Tag>

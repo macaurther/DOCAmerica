@@ -26674,8 +26674,6 @@ BeginPlot
 	x=40,y=42
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_DYE
-	BonusVarietyType=BONUS_DYE_COCHINEAL
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -27334,6 +27332,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=41
+	BonusType=BONUS_DYE
+	BonusVarietyType=BONUS_DYE_COCHINEAL
 	FeatureType=FEATURE_FLOOD_PLAINS, FeatureVariety=0
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
@@ -34974,8 +34974,8 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=29
-	TerrainType=TERRAIN_SEMIDESERT
-	PlotType=1
+	TerrainType=TERRAIN_SALTFLAT
+	PlotType=2
 EndPlot
 BeginPlot
 	x=52,y=30
@@ -35676,12 +35676,12 @@ EndPlot
 BeginPlot
 	x=53,y=26
 	BonusType=BONUS_LLAMA
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=53,y=27
-	TerrainType=TERRAIN_SALTFLAT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
@@ -35708,6 +35708,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=32
+	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -36399,13 +36400,15 @@ EndPlot
 BeginPlot
 	x=54,y=28
 	BonusType=BONUS_DEER
-	TerrainType=TERRAIN_SEMIDESERT
+	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=29
-	TerrainType=TERRAIN_TUNDRA
-	PlotType=0
+	RiverNSDirection=2
+	isWOfRiver
+	TerrainType=TERRAIN_SEMIDESERT
+	PlotType=1
 EndPlot
 BeginPlot
 	x=54,y=30
@@ -36414,7 +36417,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=31
-	BonusType=BONUS_CORN
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot

@@ -518,8 +518,6 @@ def calculateStability(iPlayer):
 	bDecline = isDecline(iPlayer)
 	
 	iRecentConquestTurns = 20
-	if iElective in civics:
-		iRecentConquestTurns = 30
 	
 	for city in cities.owner(iPlayer):
 		iPopulation = city.getPopulation()

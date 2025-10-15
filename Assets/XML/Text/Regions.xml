@@ -10,7 +10,7 @@
 		<Spanish></Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_0</Tag>
+	<Tag>TXT_KEY_REGION_0</Tag>
 		<English>Alaska</English>
 		<French>Alaska</French>
 		<German>Alaska</German>
@@ -36,34 +36,34 @@
 	<TEXT>
 		<Tag>TXT_KEY_REGION_3</Tag>
 		<English>Greenland</English>
-		<French>Greenland</French>
-		<German>Greenland</German>
-		<Italian>Greenland</Italian>
-		<Spanish>Greenland</Spanish>
+		<French>Groenland</French>
+		<German>Gr&#246;nland</German>
+		<Italian>Groenlandia</Italian>
+		<Spanish>Groenlandia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_4</Tag>
 		<English>Iceland</English>
-		<French>Iceland</French>
-		<German>Iceland</German>
-		<Italian>Iceland</Italian>
-		<Spanish>Iceland</Spanish>
+		<French>Islande</French>
+		<German>Island</German>
+		<Italian>Islanda</Italian>
+		<Spanish>Islandia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_5</Tag>
 		<English>North Cascadia</English>
-		<French>North Cascadia</French>
-		<German>North Cascadia</German>
-		<Italian>North Cascadia</Italian>
-		<Spanish>North Cascadia</Spanish>
+		<French>Cascadia du Nord</French>
+		<German>Nordkaskadien</German>
+		<Italian>Cascadia Settentrionale</Italian>
+		<Spanish>Cascadia del Norte</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_6</Tag>
 		<English>North Plains</English>
-		<French>North Plains</French>
-		<German>North Plains</German>
-		<Italian>North Plains</Italian>
-		<Spanish>North Plains</Spanish>
+		<French>Plaines du Nord</French>
+		<German>Nordebenen</German>
+		<Italian>Pianure del Nord</Italian>
+		<Spanish>Llanuras del Norte</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_7</Tag>
@@ -76,50 +76,50 @@
 	<TEXT>
 		<Tag>TXT_KEY_REGION_8</Tag>
 		<English>Quebec</English>
-		<French>Quebec</French>
+		<French>Qu&#233;bec</French>
 		<German>Quebec</German>
 		<Italian>Quebec</Italian>
 		<Spanish>Quebec</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_9</Tag>
-		<English>New Foundland</English>
-		<French>New Foundland</French>
-		<German>New Foundland</German>
-		<Italian>New Foundland</Italian>
-		<Spanish>New Foundland</Spanish>
+		<English>Newfoundland</English>
+		<French>Terre-Neuve</French>
+		<German>Neufundland</German>
+		<Italian>Terranova</Italian>
+		<Spanish>Terranova</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_10</Tag>
 		<English>South Cascadia</English>
-		<French>South Cascadia</French>
-		<German>South Cascadia</German>
-		<Italian>South Cascadia</Italian>
-		<Spanish>South Cascadia</Spanish>
+		<French>Cascadia du Sud</French>
+		<German>S&#252;dkaskadien</German>
+		<Italian>Cascadia Meridionale</Italian>
+		<Spanish>Cascadia del Sur</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_11</Tag>
 		<English>California</English>
-		<French>California</French>
-		<German>California</German>
+		<French>Californie</French>
+		<German>Kalifornien</German>
 		<Italian>California</Italian>
 		<Spanish>California</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_12</Tag>
 		<English>Rockies</English>
-		<French>Rockies</French>
-		<German>Rockies</German>
-		<Italian>Rockies</Italian>
-		<Spanish>Rockies</Spanish>
+		<French>Rocheuses</French>
+		<German>Rocky Mountains</German>
+		<Italian>Montagne Rocciose</Italian>
+		<Spanish>Montes Rocosos</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_13</Tag>
 		<English>Southwest</English>
-		<French>Southwest</French>
-		<German>Southwest</German>
-		<Italian>Southwest</Italian>
-		<Spanish>Southwest</Spanish>
+		<French>Sud-Ouest</French>
+		<German>S&#252;dwesten</German>
+		<Italian>Sud-Ovest</Italian>
+		<Spanish>Suroeste</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_14</Tag>
@@ -132,34 +132,34 @@
 	<TEXT>
 		<Tag>TXT_KEY_REGION_15</Tag>
 		<English>Great Plains</English>
-		<French>Great Plains</French>
-		<German>Great Plains</German>
-		<Italian>Great Plains</Italian>
-		<Spanish>Great Plains</Spanish>
+		<French>Grandes Plaines</French>
+		<German>Gro&#223;e Ebenen</German>
+		<Italian>Grandi Pianure</Italian>
+		<Spanish>Grandes Llanuras</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_16</Tag>
 		<English>Great Lakes</English>
-		<French>Great Lakes</French>
-		<German>Great Lakes</German>
-		<Italian>Great Lakes</Italian>
-		<Spanish>Great Lakes</Spanish>
+		<French>Grands Lacs</French>
+		<German>Gro&#223;e Seen</German>
+		<Italian>Grandi Laghi</Italian>
+		<Spanish>Grandes Lagos</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_17</Tag>
 		<English>New England</English>
-		<French>New England</French>
-		<German>New England</German>
-		<Italian>New England</Italian>
-		<Spanish>New England</Spanish>
+		<French>Nouvelle-Angleterre</French>
+		<German>Neuengland</German>
+		<Italian>Nuova Inghilterra</Italian>
+		<Spanish>Nueva Inglaterra</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_18</Tag>
 		<English>Mid Atlantic</English>
-		<French>Mid Atlantic</French>
-		<German>Mid Atlantic</German>
-		<Italian>Mid Atlantic</Italian>
-		<Spanish>Mid Atlantic</Spanish>
+		<French>Atlantique central</French>
+		<German>Mittelatlantik</German>
+		<Italian>Atlantico Centrale</Italian>
+		<Spanish>Atl&#225;ntico Medio</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_19</Tag>
@@ -171,32 +171,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_20</Tag>
-		<English>River Valley</English>
-		<French>River Valley</French>
-		<German>River Valley</German>
-		<Italian>River Valley</Italian>
-		<Spanish>River Valley</Spanish>
+		<English>Appalachia</English>
+		<French>Appalaches</French>
+		<German>Appalachen</German>
+		<Italian>Appalachia</Italian>
+		<Spanish>Apalaches</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_21</Tag>
 		<English>Coastal Plain</English>
-		<French>Coastal Plain</French>
-		<German>Coastal Plain</German>
-		<Italian>Coastal Plain</Italian>
-		<Spanish>Coastal Plain</Spanish>
+		<French>Plaine c&#244;ti&#232;re</French>
+		<German>K&#252;stenebene</German>
+		<Italian>Pianura Costiera</Italian>
+		<Spanish>Llanura Costera</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_22</Tag>
 		<English>Deep South</English>
-		<French>Deep South</French>
-		<German>Deep South</German>
-		<Italian>Deep South</Italian>
-		<Spanish>Deep South</Spanish>
+		<French>Sud profond</French>
+		<German>Tiefer S&#252;den</German>
+		<Italian>Profondo Sud</Italian>
+		<Spanish>Sur Profundo</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_23</Tag>
 		<English>Florida</English>
-		<French>Florida</French>
+		<French>Floride</French>
 		<German>Florida</German>
 		<Italian>Florida</Italian>
 		<Spanish>Florida</Spanish>
@@ -204,31 +204,31 @@
 	<TEXT>
 		<Tag>TXT_KEY_REGION_24</Tag>
 		<English>Baja California</English>
-		<French>Baja California</French>
-		<German>Baja California</German>
-		<Italian>Baja California</Italian>
+		<French>Basse-Californie</French>
+		<German>Niederkalifornien</German>
+		<Italian>Bassa California</Italian>
 		<Spanish>Baja California</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_25</Tag>
 		<English>Sierra Madres</English>
-		<French>Sierra Madres</French>
-		<German>Sierra Madres</German>
-		<Italian>Sierra Madres</Italian>
-		<Spanish>Sierra Madres</Spanish>
+		<French>Sierra Madre</French>
+		<German>Sierra Madre</German>
+		<Italian>Sierra Madre</Italian>
+		<Spanish>Sierra Madre</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_26</Tag>
-		<English>Bajio</English>
-		<French>Bajio</French>
-		<German>Bajio</German>
-		<Italian>Bajio</Italian>
-		<Spanish>Bajio</Spanish>
+		<English>Baj&#237;o</English>
+		<French>Baj&#237;o</French>
+		<German>Baj&#237;o</German>
+		<Italian>Baj&#237;o</Italian>
+		<Spanish>Baj&#237;o</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_27</Tag>
 		<English>Veracruz</English>
-		<French>Veracruz</French>
+		<French>Vera Cruz</French>
 		<German>Veracruz</German>
 		<Italian>Veracruz</Italian>
 		<Spanish>Veracruz</Spanish>
@@ -243,46 +243,54 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_29</Tag>
-		<English>Yucatan</English>
-		<French>Yucatan</French>
-		<German>Yucatan</German>
-		<Italian>Yucatan</Italian>
-		<Spanish>Yucatan</Spanish>
+		<English>Yucat&#225;n</English>
+		<French>Yucat&#225;n</French>
+		<German>Yucat&#225;n</German>
+		<Italian>Yucat&#225;n</Italian>
+		<Spanish>Yucat&#225;n</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_30</Tag>
 		<English>Mesoamerica</English>
-		<French>Mesoamerica</French>
-		<German>Mesoamerica</German>
+		<French>M&#233;soam&#233;rique</French>
+		<German>Mesoamerika</German>
 		<Italian>Mesoamerica</Italian>
-		<Spanish>Mesoamerica</Spanish>
+		<Spanish>Mesoam&#233;rica</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_31</Tag>
 		<English>Caribbean</English>
-		<French>Caribbean</French>
-		<German>Caribbean</German>
-		<Italian>Caribbean</Italian>
-		<Spanish>Caribbean</Spanish>
+		<French>Cara&#239;bes</French>
+		<German>Karibik</German>
+		<Italian>Caribe</Italian>
+		<Spanish>Caribe</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_32</Tag>
 		<English>Hawaii</English>
-		<French>Hawaii</French>
+		<French>Hawa&#239;</French>
 		<German>Hawaii</German>
 		<Italian>Hawaii</Italian>
-		<Spanish>Hawaii</Spanish>
+		<Spanish>Haw&#225;i</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_33</Tag>
 		<English>Colombia</English>
-		<French>Colombia</French>
-		<German>Colombia</German>
+		<French>Colombie</French>
+		<German>Kolumbien</German>
 		<Italian>Colombia</Italian>
 		<Spanish>Colombia</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_34</Tag>
+		<English>Ecuador</English>
+		<French>&#201;quateur</French>
+		<German>Ecuador</German>
+		<Italian>Ecuador</Italian>
+		<Spanish>Ecuador</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_35</Tag>
 		<English>Venezuela</English>
 		<French>Venezuela</French>
 		<German>Venezuela</German>
@@ -290,31 +298,31 @@
 		<Spanish>Venezuela</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_35</Tag>
+		<Tag>TXT_KEY_REGION_36</Tag>
 		<English>Guyana</English>
-		<French>Guyana</French>
+		<French>Guyane</French>
 		<German>Guyana</German>
 		<Italian>Guyana</Italian>
 		<Spanish>Guyana</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_36</Tag>
+		<Tag>TXT_KEY_REGION_37</Tag>
 		<English>Peru</English>
-		<French>Peru</French>
+		<French>P&#233;rou</French>
 		<German>Peru</German>
-		<Italian>Peru</Italian>
-		<Spanish>Peru</Spanish>
+		<Italian>Per&#249;</Italian>
+		<Spanish>Per&#250;</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_37</Tag>
+		<Tag>TXT_KEY_REGION_38</Tag>
 		<English>Bolivia</English>
-		<French>Bolivia</French>
-		<German>Bolivia</German>
+		<French>Bolivie</French>
+		<German>Bolivien</German>
 		<Italian>Bolivia</Italian>
 		<Spanish>Bolivia</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_38</Tag>
+		<Tag>TXT_KEY_REGION_39</Tag>
 		<English>Amazonas</English>
 		<French>Amazonas</French>
 		<German>Amazonas</German>
@@ -322,23 +330,23 @@
 		<Spanish>Amazonas</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_39</Tag>
-		<English>Para</English>
-		<French>Para</French>
-		<German>Para</German>
-		<Italian>Para</Italian>
-		<Spanish>Para</Spanish>
+		<Tag>TXT_KEY_REGION_40</Tag>
+		<English>Par&#225;</English>
+		<French>Par&#225;</French>
+		<German>Par&#225;</German>
+		<Italian>Par&#225;</Italian>
+		<Spanish>Par&#225;</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_40</Tag>
+		<Tag>TXT_KEY_REGION_41</Tag>
 		<English>Bahia</English>
 		<French>Bahia</French>
 		<German>Bahia</German>
 		<Italian>Bahia</Italian>
-		<Spanish>Bahia</Spanish>
+		<Spanish>Bah&#237;a</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_41</Tag>
+		<Tag>TXT_KEY_REGION_42</Tag>
 		<English>Minas Gerais</English>
 		<French>Minas Gerais</French>
 		<German>Minas Gerais</German>
@@ -346,7 +354,7 @@
 		<Spanish>Minas Gerais</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_42</Tag>
+		<Tag>TXT_KEY_REGION_43</Tag>
 		<English>Mato Grosso</English>
 		<French>Mato Grosso</French>
 		<German>Mato Grosso</German>
@@ -354,23 +362,23 @@
 		<Spanish>Mato Grosso</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_43</Tag>
-		<English>Parana</English>
-		<French>Parana</French>
-		<German>Parana</German>
-		<Italian>Parana</Italian>
-		<Spanish>Parana</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_REGION_44</Tag>
-		<English>Chile</English>
-		<French>Chile</French>
-		<German>Chile</German>
-		<Italian>Chile</Italian>
-		<Spanish>Chile</Spanish>
+		<English>Paran&#225;</English>
+		<French>Paran&#225;</French>
+		<German>Paran&#225;</German>
+		<Italian>Paran&#225;</Italian>
+		<Spanish>Paran&#225;</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REGION_45</Tag>
+		<English>Chile</English>
+		<French>Chili</French>
+		<German>Chile</German>
+		<Italian>Cile</Italian>
+		<Spanish>Chile</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_46</Tag>
 		<English>Paraguay</English>
 		<French>Paraguay</French>
 		<German>Paraguay</German>
@@ -378,7 +386,7 @@
 		<Spanish>Paraguay</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_46</Tag>
+		<Tag>TXT_KEY_REGION_47</Tag>
 		<English>Uruguay</English>
 		<French>Uruguay</French>
 		<German>Uruguay</German>
@@ -386,7 +394,7 @@
 		<Spanish>Uruguay</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_47</Tag>
+		<Tag>TXT_KEY_REGION_48</Tag>
 		<English>Chaco</English>
 		<French>Chaco</French>
 		<German>Chaco</German>
@@ -394,7 +402,7 @@
 		<Spanish>Chaco</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_48</Tag>
+		<Tag>TXT_KEY_REGION_49</Tag>
 		<English>Cuyo</English>
 		<French>Cuyo</French>
 		<German>Cuyo</German>
@@ -402,7 +410,7 @@
 		<Spanish>Cuyo</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_49</Tag>
+		<Tag>TXT_KEY_REGION_50</Tag>
 		<English>Pampas</English>
 		<French>Pampas</French>
 		<German>Pampas</German>
@@ -410,20 +418,364 @@
 		<Spanish>Pampas</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_50</Tag>
+		<Tag>TXT_KEY_REGION_51</Tag>
 		<English>Patagonia</English>
-		<French>Patagonia</French>
-		<German>Patagonia</German>
+		<French>Patagonie</French>
+		<German>Patagonien</German>
 		<Italian>Patagonia</Italian>
 		<Spanish>Patagonia</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_REGION_51</Tag>
+		<Tag>TXT_KEY_REGION_52</Tag>
 		<English>Old World</English>
-		<French>Old World</French>
-		<German>Old World</German>
-		<Italian>Old World</Italian>
-		<Spanish>Old World</Spanish>
+		<French>Vieux Monde</French>
+		<German>Alte Welt</German>
+		<Italian>Vecchio Mondo</Italian>
+		<Spanish>Mundo Antiguo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_100</Tag>
+		<English>Arctic Ocean</English>
+		<French>Oc&#233;an Arctique</French>
+		<German>Arktischer Ozean</German>
+		<Italian>Oceano Artico</Italian>
+		<Spanish>Oc&#233;ano &#193;rtico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_101</Tag>
+		<English>Baffin Bay</English>
+		<French>Baie de Baffin</French>
+		<German>Baffinbucht</German>
+		<Italian>Baia di Baffin</Italian>
+		<Spanish>Bah&#237;a de Baffin</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_102</Tag>
+		<English>Northwest Passage</English>
+		<French>Passage du Nord-Ouest</French>
+		<German>Nordwestpassage</German>
+		<Italian>Passaggio a Nord-Ovest</Italian>
+		<Spanish>Paso del Noroeste</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_103</Tag>
+		<English>Hudson Bay</English>
+		<French>Baie d&#39;Hudson</French>
+		<German>Hudsonbucht</German>
+		<Italian>Baia di Hudson</Italian>
+		<Spanish>Bah&#237;a de Hudson</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_104</Tag>
+		<English>Labrador Sea</English>
+		<French>Mer du Labrador</French>
+		<German>Labradorsee</German>
+		<Italian>Mare del Labrador</Italian>
+		<Spanish>Mar del Labrador</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_105</Tag>
+		<English>North Atlantic Ocean</English>
+		<French>Oc&#233;an Atlantique Nord</French>
+		<German>Nordatlantik</German>
+		<Italian>Oceano Atlantico Settentrionale</Italian>
+		<Spanish>Oc&#233;ano Atl&#225;ntico Norte</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_106</Tag>
+		<English>Gulf of Mexico</English>
+		<French>Golfe du Mexique</French>
+		<German>Golf von Mexiko</German>
+		<Italian>Golfo del Messico</Italian>
+		<Spanish>Golfo de M&#233;xico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_107</Tag>
+		<English>Caribbean Sea</English>
+		<French>Mer des Cara&#239;bes</French>
+		<German>Karibisches Meer</German>
+		<Italian>Mare Caraibico</Italian>
+		<Spanish>Mar Caribe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_108</Tag>
+		<English>South Atlantic Ocean</English>
+		<French>Oc&#233;an Atlantique Sud</French>
+		<German>S&#252;datlantik</German>
+		<Italian>Oceano Atlantico Meridionale</Italian>
+		<Spanish>Oc&#233;ano Atl&#225;ntico Sur</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_109</Tag>
+		<English>South Pacific Ocean</English>
+		<French>Oc&#233;an Pacifique Sud</French>
+		<German>S&#252;dpazifik</German>
+		<Italian>Oceano Pacifico Meridionale</Italian>
+		<Spanish>Oc&#233;ano Pac&#237;fico Sur</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_110</Tag>
+		<English>North Pacific Ocean</English>
+		<French>Oc&#233;an Pacifique Nord</French>
+		<German>Nordpazifik</German>
+		<Italian>Oceano Pacifico Settentrionale</Italian>
+		<Spanish>Oc&#233;ano Pac&#237;fico Norte</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_111</Tag>
+		<English>Gulf of California</English>
+		<French>Golfe de Californie</French>
+		<German>Golf von Kalifornien</German>
+		<Italian>Golfo di California</Italian>
+		<Spanish>Golfo de California</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_112</Tag>
+		<English>Gulf of Alaska</English>
+		<French>Golfe d&#39;Alaska</French>
+		<German>Golf von Alaska</German>
+		<Italian>Golfo dell&#39;Alaska</Italian>
+		<Spanish>Golfo de Alaska</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_113</Tag>
+		<English>Bering Sea</English>
+		<French>Mer de B&#233;ring</French>
+		<German>Beringmeer</German>
+		<Italian>Mare di Bering</Italian>
+		<Spanish>Mar de Bering</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_114</Tag>
+		<English>Great Bear Lake</English>
+		<French>Lac Great Bear</French>
+		<German>Gro&#223;er B&#228;rensee</German>
+		<Italian>Lago Great Bear</Italian>
+		<Spanish>Lago Great Bear</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_115</Tag>
+		<English>Great Slave Lake</English>
+		<French>Grand lac des Esclaves</French>
+		<German>Gro&#223;er Sklavensee</German>
+		<Italian>Grande Lago degli Schiavi</Italian>
+		<Spanish>Gran Lago del Esclavo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_116</Tag>
+		<English>Lake Athabasca</English>
+		<French>Lac Athabasca</French>
+		<German>Lake Athabasca</German>
+		<Italian>Lago Athabasca</Italian>
+		<Spanish>Lago Athabasca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_117</Tag>
+		<English>Lake Winnipegosis</English>
+		<French>Lac Winnipegosis</French>
+		<German>Lake Winnipegosis</German>
+		<Italian>Lago Winnipegosis</Italian>
+		<Spanish>Lago Winnipegosis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_118</Tag>
+		<English>Lake Winnipeg</English>
+		<French>Lac Winnipeg</French>
+		<German>Lake Winnipeg</German>
+		<Italian>Lago Winnipeg</Italian>
+		<Spanish>Lago Winnipeg</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_119</Tag>
+		<English>Gulf of St. Lawrence</English>
+		<French>Golfe du Saint-Laurent</French>
+		<German>Golf von Sankt-Lorenz</German>
+		<Italian>Golfo di San Lorenzo</Italian>
+		<Spanish>Golfo de San Lorenzo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_120</Tag>
+		<English>Lake Ontario</English>
+		<French>Lac Ontario</French>
+		<German>Lake Ontario</German>
+		<Italian>Lago Ontario</Italian>
+		<Spanish>Lago Ontario</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_121</Tag>
+		<English>Lake Erie</English>
+		<French>Lac &#201;ri&#233;</French>
+		<German>Eriesee</German>
+		<Italian>Lago Erie</Italian>
+		<Spanish>Lago Erie</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_122</Tag>
+		<English>Lake Huron</English>
+		<French>Lac Huron</French>
+		<German>Huronsee</German>
+		<Italian>Lago Huron</Italian>
+		<Spanish>Lago Hur&#243;n</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_123</Tag>
+		<English>Lake Superior</English>
+		<French>Lac Sup&#233;rieur</French>
+		<German>Oberer See</German>
+		<Italian>Lago Superiore</Italian>
+		<Spanish>Lago Superior</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_124</Tag>
+		<English>Lake Michigan</English>
+		<French>Lac Michigan</French>
+		<German>Michigansee</German>
+		<Italian>Lago Michigan</Italian>
+		<Spanish>Lago M&#237;chigan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_125</Tag>
+		<English>Puget Sound</English>
+		<French>D&#233;troit de Puget</French>
+		<German>Puget Sound</German>
+		<Italian>Stretto di Puget</Italian>
+		<Spanish>Estrecho de Puget</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_126</Tag>
+		<English>Great Salt Lake</English>
+		<French>Grand lac sal&#233;</French>
+		<German>Gro&#223;er Salzsee</German>
+		<Italian>Grande Lago Salato</Italian>
+		<Spanish>Gran Lago Salado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_127</Tag>
+		<English>Lake Tahoe</English>
+		<French>Lac Tahoe</French>
+		<German>Lake Tahoe</German>
+		<Italian>Lago Tahoe</Italian>
+		<Spanish>Lago Tahoe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_128</Tag>
+		<English>Lake Okeechobee</English>
+		<French>Lac Okeechobee</French>
+		<German>Lake Okeechobee</German>
+		<Italian>Lago Okeechobee</Italian>
+		<Spanish>Lago Okeechobee</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_129</Tag>
+		<English>Lake Texcoco</English>
+		<French>Lac Texcoco</French>
+		<German>Lake Texcoco</German>
+		<Italian>Lago Texcoco</Italian>
+		<Spanish>Lago Texcoco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_130</Tag>
+		<English>Lake Maracaibo</English>
+		<French>Lac Maracaibo</French>
+		<German>Lake Maracaibo</German>
+		<Italian>Lago Maracaibo</Italian>
+		<Spanish>Lago Maracaibo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_131</Tag>
+		<English>Lake Titicaca</English>
+		<French>Lac Titicaca</French>
+		<German>Lake Titicaca</German>
+		<Italian>Lago Titicaca</Italian>
+		<Spanish>Lago Titicaca</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_132</Tag>
+		<English>Small Lake</English>
+		<French>Petit lac</French>
+		<German>Kleiner See</German>
+		<Italian>Piccolo lago</Italian>
+		<Spanish>Lago peque&#241;o</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_133</Tag>
+		<English>St. Lawrence River</English>
+		<French>Fleuve Saint-Laurent</French>
+		<German>Sankt-Lorenz-Strom</German>
+		<Italian>Fiume San Lorenzo</Italian>
+		<Spanish>R&#237;o San Lorenzo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_134</Tag>
+		<English>Columbia River</English>
+		<French>Fleuve Columbia</French>
+		<German>Columbia River</German>
+		<Italian>Fiume Columbia</Italian>
+		<Spanish>R&#237;o Columbia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_135</Tag>
+		<English>Mississippi River</English>
+		<French>Fleuve Mississippi</French>
+		<German>Mississippi</German>
+		<Italian>Fiume Mississippi</Italian>
+		<Spanish>R&#237;o Misisipi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_136</Tag>
+		<English>Missouri River</English>
+		<French>Fleuve Missouri</French>
+		<German>Missouri</German>
+		<Italian>Fiume Missouri</Italian>
+		<Spanish>R&#237;o Misuri</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_137</Tag>
+		<English>Ohio River</English>
+		<French>Fleuve Ohio</French>
+		<German>Ohio River</German>
+		<Italian>Fiume Ohio</Italian>
+		<Spanish>R&#237;o Ohio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_138</Tag>
+		<English>Amazon River</English>
+		<French>Fleuve Amazone</French>
+		<German>Amazonas</German>
+		<Italian>Fiume Amazzoni</Italian>
+		<Spanish>R&#237;o Amazonas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_139</Tag>
+		<English>Xingu River</English>
+		<French>Fleuve Xingu</French>
+		<German>Xingu</German>
+		<Italian>Fiume Xingu</Italian>
+		<Spanish>R&#237;o Xingu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_140</Tag>
+		<English>Tocantins River</English>
+		<French>Fleuve Tocantins</French>
+		<German>Tocantins</German>
+		<Italian>Fiume Tocantins</Italian>
+		<Spanish>R&#237;o Tocantins</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_141</Tag>
+		<English>Atlantic Ocean</English>
+		<French>Oc&#233;an Atlantique</French>
+		<German>Atlantischer Ozean</German>
+		<Italian>Oceano Atlantico</Italian>
+		<Spanish>Oc&#233;ano Atl&#225;ntico</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REGION_142</Tag>
+		<English>Pacific Ocean</English>
+		<French>Oc&#233;an Pacifique</French>
+		<German>Pazifischer Ozean</German>
+		<Italian>Oceano Pacifico</Italian>
+		<Spanish>Oc&#233;ano Pac&#237;fico</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UHV_AREA_</Tag>
