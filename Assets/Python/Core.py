@@ -852,20 +852,6 @@ def period(iCiv):
 	
 def active():
 	return gc.getGame().getActivePlayer()
-
-
-# MacAurther:
-def getNativeSlaveType(iPlayer):
-	iSlave = -1
-		
-	if player(iPlayer).hasCivic(iCaptives1):
-		iSlave = iNativeSlave1
-		if civ(iPlayer) in dCivGroups[iCivGroupMesoamerica]:
-			iSlave = iNativeSlaveMeso
-	elif player(iPlayer).hasCivic(iEncomienda2):
-		iSlave = iNativeSlave2
-	
-	return iSlave
 	
 	
 class FindResult(object):
@@ -1758,7 +1744,7 @@ class PlayerFactory:
 		return self.civs(iBarbarian)
 		
 	def native(self):
-		return self.civs(iNative)
+		return self.civs(iIndigenous)
 		
 	def vassals(self, iPlayer):
 		return self.all().where(lambda p: team(p).isVassal(player(iPlayer).getTeam()))

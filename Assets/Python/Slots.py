@@ -21,7 +21,7 @@ def findMinorSlot(iCiv):
 	return next(iSlot for iSlot in reversed(range(iNumPlayers)) if civ(iSlot) == -1)
 	
 def availableSlot(iSlot):
-	if civ(iSlot) == iNative and since(year(1900)) > 0 and player(iSlot).getNumCities() == 0 and player(iSlot).getNumUnits() == 0:
+	if civ(iSlot) == iIndigenous and since(year(1900)) > 0 and player(iSlot).getNumCities() == 0 and player(iSlot).getNumUnits() == 0:
 		return True
 	
 	if player(iSlot).isAlive():
@@ -60,7 +60,7 @@ def initWars(iPlayer):
 	iCiv = player(iPlayer).getCivilizationType()
 	iTeam = player(iPlayer).getTeam()
 	
-	if iCiv == iNative:
+	if iCiv == iIndigenous:
 		for iOtherPlayer in players.all().alive():
 			if not player(iOtherPlayer).isBarbarian():
 				team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
@@ -68,8 +68,8 @@ def initWars(iPlayer):
 	else:
 		team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
 		
-		if player(iNative).isExisting():
-			team(player(iNative).getTeam()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
+		if player(iIndigenous).isExisting():
+			team(player(iIndigenous).getTeam()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
 
 def getImpact(iCiv):
 	iActiveCiv = civ()

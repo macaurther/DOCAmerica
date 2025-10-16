@@ -993,7 +993,7 @@ def getCivicStability(iPlayer, civics=None):
 	# if iCouncil1 in civics:
 	# 	if iTribalConfederacy1 in civics: iStability += 2
 	# 	if iVassalage1 in civics: iStability -= 2
-	# 	if iCaptives1 in civics: iStability -= 2
+	# 	if iTlacotin1 in civics: iStability -= 2
 	# 	if iCraftsmen1 in civics: iStability += 2
 	# 	if iMerchants1 in civics: iStability += 2
 	# 	if iTourism1 in civics: iStability += 2
@@ -1017,7 +1017,7 @@ def getCivicStability(iPlayer, civics=None):
 	# if iGodKing1 in civics:
 	# 	if iVassalage1 in civics: iStability += 2
 	# 	if iFirstNation1 in civics: iStability -= 2
-	# 	if iCaptives1 in civics: iStability += 2
+	# 	if iTlacotin1 in civics: iStability += 2
 	# 	if iSlavery1 in civics: iStability += 2
 	# 	if iRaiding1 in civics: iStability += 2
 	# 	if iTourism1 in civics: iStability -= 2
@@ -1039,7 +1039,7 @@ def getCivicStability(iPlayer, civics=None):
 	
 	# if iCityStates1 in civics:
 	# 	if iSubsistance1 in civics: iStability -= 2
-	# 	if iCaptives1 in civics: iStability += 2
+	# 	if iTlacotin1 in civics: iStability += 2
 	# 	if iRedistribution1 in civics: iStability += 2
 	# 	if iTourism1 in civics: iStability -= 2
 	# 	if iHarmony1 in civics: iStability -= 2
@@ -1058,7 +1058,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iIntegration1 in civics: iStability += 2
 	
 	# if iBureaucracy1 in civics:
-	# 	if iCaptives1 in civics: iStability -= 2
+	# 	if iTlacotin1 in civics: iStability -= 2
 	# 	if iMita1 in civics: iStability += 2
 	# 	if iMerchants1 in civics: iStability += 2
 	# 	if iDependency1 in civics: iStability -= 2
@@ -1096,7 +1096,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iNomads1 in civics: iStability += 2
 	# 	if iTributaries1 in civics: iStability -= 2
 	
-	# if iCaptives1 in civics:
+	# if iTlacotin1 in civics:
 	# 	if iMerchants1 in civics: iStability -= 2
 	# 	if iRaiding1 in civics: iStability += 2
 	# 	if iOrganizedReligion1 in civics: iStability += 2
@@ -1709,7 +1709,7 @@ def updateEconomyTrend(iPlayer):
 		data.players[iPlayer].iPreviousCommerce = iCurrentCommerce
 		return
 	
-	iCivicEconomy = pPlayer.getCivics(3)
+	iCivicEconomy = pPlayer.getCivics(iCivicsEconomy)
 		
 	iPositiveThreshold = 5
 	iNegativeThreshold = 0

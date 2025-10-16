@@ -970,36 +970,20 @@
 		<Spanish>[COLOR_UNIT_TEXT]Settlers[COLOR_REVERT] can found new cities.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_AFRICAN_SLAVE</Tag>
-		<English>African Slave</English>
-		<French>African Slave</French>
-		<German>African Slave</German>
-		<Italian>African Slave</Italian>
-		<Spanish>African Slave</Spanish>
+		<Tag>TXT_KEY_UNIT_SLAVE</Tag>
+		<English>Slave</English>
+		<French>Slave</French>
+		<German>Slave</German>
+		<Italian>Slave</Italian>
+		<Spanish>Slave</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLAVE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]African Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</English>
-		<French>[COLOR_UNIT_TEXT]African Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</French>
-		<German>[COLOR_UNIT_TEXT]African Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</German>
-		<Italian>[COLOR_UNIT_TEXT]African Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]African Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_NATIVE_SLAVE</Tag>
-		<English>Native Slave</English>
-		<French>Native Slave</French>
-		<German>Native Slave</German>
-		<Italian>Native Slave</Italian>
-		<Spanish>Native Slave</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_NATIVE_SLAVE_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</English>
-		<French>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</French>
-		<German>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</German>
-		<Italian>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Native Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist, can hurry production in a city and can be sacrificed in cities for temporary happiness.</Spanish>
+		<English>[COLOR_UNIT_TEXT]Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</English>
+		<French>[COLOR_UNIT_TEXT]Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</French>
+		<German>[COLOR_UNIT_TEXT]Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</German>
+		<Italian>[COLOR_UNIT_TEXT]Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]Slaves[COLOR_REVERT] can settle in a city as a [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT] specialist.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TANK_STRATEGY</Tag>
@@ -1611,19 +1595,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_HELP</Tag>
-		<English>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</English>
-		<French>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Capture d'[LINK=UNIT_SLAVE]esclaves[\LINK] garantie[NEWLINE]</French>
-		<German>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</German>
-		<Italian>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</Italian>
-		<Spanish>[ICON_BULLET]Can Capture [LINK=UNIT_SLAVE]Slaves[\LINK] Regardless of Civics[NEWLINE][ICON_BULLET]Guaranteed to Capture [LINK=UNIT_SLAVE]Slaves[\LINK][NEWLINE]</Spanish>
+		<English>[ICON_BULLET]+50% slave capture chance[NEWLINE]</English>
+		<French>[ICON_BULLET]+50% slave capture chance[NEWLINE]</French>
+		<German>[ICON_BULLET]+50% slave capture chance[NEWLINE]</German>
+		<Italian>[ICON_BULLET]+50% slave capture chance[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]+50% slave capture chance[NEWLINE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PORTUGUESE_BANDEIRANTE_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</English>
-		<French>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</French>
-		<German>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is guaranteed to capture slaves.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is more likely to capture slaves.</English>
+		<French>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is more likely to capture slaves.</French>
+		<German>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is more likely to capture slaves.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is more likely to capture slaves.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Bandeirante[COLOR_REVERT], the Portuguese replacement for the [COLOR_UNIT_TEXT]Explorer[COLOR_REVERT], has four more strength points, can attack, can withdraw from combat and is more likely to capture slaves.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STEAMSHIP</Tag>
@@ -2359,19 +2343,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</English>
-		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</French>
-		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</German>
-		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</Italian>
-		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and guaranteed to capture defeated enemies.</Spanish>
+		<English>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and is more likely to capture slaves.</English>
+		<French>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and is more likely to capture slaves.</French>
+		<German>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and is more likely to capture slaves.</German>
+		<Italian>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and is more likely to capture slaves.</Italian>
+		<Spanish>The [COLOR_UNIT_TEXT]Jaguar[COLOR_REVERT], the Aztec replacement for [COLOR_UNIT_TEXT]Maceman[COLOR_REVERT], is stronger and is more likely to capture slaves.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AZTEC_JAGUAR_HELP</Tag>
-		<English>[ICON_BULLET]Guaranteed to capture defeated enemies</English>
-		<French>[ICON_BULLET]Guaranteed to capture defeated enemies</French>
-		<German>[ICON_BULLET]Guaranteed to capture defeated enemies</German>
-		<Italian>[ICON_BULLET]Guaranteed to capture defeated enemies</Italian>
-		<Spanish>[ICON_BULLET]Guaranteed to capture defeated enemies</Spanish>
+		<English>[ICON_BULLET]+25% slave capture chance</English>
+		<French>[ICON_BULLET]+25% slave capture chance</French>
+		<German>[ICON_BULLET]+25% slave capture chance</German>
+		<Italian>[ICON_BULLET]+25% slave capture chance</Italian>
+		<Spanish>[ICON_BULLET]+25% slave capture chance</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CUBAN_FARS</Tag>
@@ -2548,14 +2532,6 @@
 		<German>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</German>
 		<Italian>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Clawdius[COLOR_REVERT] is a Barbarian unit that will attack people he doesn't know.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_SLAVE_REVOLT</Tag>
-		<English>Slave Revolt</English>
-		<French>Slave Revolt</French>
-		<German>Slave Revolt</German>
-		<Italian>Slave Revolt</Italian>
-		<Spanish>Slave Revolt</Spanish>
 	</TEXT>
 	
 	

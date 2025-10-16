@@ -38,6 +38,7 @@
 			<Description>TXT_KEY_CIVIC_DESPOTISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DESPOTISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DESPOTISM_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_DESPOTISM_HELP</Help>
 			<TechPrereq>TECH_PROPERTY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Despotism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -880,17 +881,13 @@
 			<Description>TXT_KEY_CIVIC_VICEROYALTY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_VICEROYALTY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_VICEROYALTY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_VICEROYALTY_HELP</Help>
 			<TechPrereq>TECH_OFFICIALS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Viceroyalty.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
 			<iOccupationTimeChange>-2</iOccupationTimeChange>
-			<UnhappinessExtraYields>
-				<iYield>0</iYield>
-				<iYield>0</iYield>
-				<iYield>2</iYield>
-			</UnhappinessExtraYields>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_VICEROY</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1146,6 +1143,7 @@
 			<Button>,Art/Interface/Buttons/Civics/Encomienda.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
+			<iUnhappinessDecayModifier>100</iUnhappinessDecayModifier>
 			<bSlavery>1</bSlavery>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 		</CivicInfo>

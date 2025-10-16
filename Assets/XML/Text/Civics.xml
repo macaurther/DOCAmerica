@@ -508,11 +508,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_DESPOTISM_STRATEGY</Tag>
-		<English>Can hurry [ICON_PRODUCTION] by sacrificing population</English>
-		<French>Can hurry [ICON_PRODUCTION] by sacrificing population</French>
-		<German>Can hurry [ICON_PRODUCTION] by sacrificing population</German>
-		<Italian>Can hurry [ICON_PRODUCTION] by sacrificing population</Italian>
-		<Spanish>Can hurry [ICON_PRODUCTION] by sacrificing population</Spanish>
+		<English>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</English>
+		<French>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</French>
+		<German>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</German>
+		<Italian>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</Italian>
+		<Spanish>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DESPOTISM_HELP</Tag>
+		<English>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</English>
+		<French>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</French>
+		<German>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</German>
+		<Italian>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</Italian>
+		<Spanish>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CASTE_SYSTEM_STRATEGY</Tag>
@@ -826,11 +834,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_VICEROYALTY_STRATEGY</Tag>
-		<English>Extra [ICON_PRODUCTION] from Angry Population; reduced city occupation time</English>
-		<French>Extra [ICON_PRODUCTION] from Angry Population; reduced city occupation time</French>
-		<German>Extra [ICON_PRODUCTION] from Angry Population; reduced city occupation time</German>
-		<Italian>Extra [ICON_PRODUCTION] from Angry Population; reduced city occupation time</Italian>
-		<Spanish>Extra [ICON_PRODUCTION] from Angry Population; reduced city occupation time</Spanish>
+		<English>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</English>
+		<French>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</French>
+		<German>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</German>
+		<Italian>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</Italian>
+		<Spanish>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_VICEROYALTY_HELP</Tag>
+		<English>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</English>
+		<French>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</French>
+		<German>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</German>
+		<Italian>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</Italian>
+		<Spanish>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FEDERALISM</Tag>
@@ -1106,19 +1122,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_STRATEGY</Tag>
-		<English>Capture Native slaves from city conquest, tribe pillaging, and combat</English>
-		<French>Capture Native slaves from city conquest, tribe pillaging, and combat</French>
-		<German>Capture Native slaves from city conquest, tribe pillaging, and combat</German>
-		<Italian>Capture Native slaves from city conquest, tribe pillaging, and combat</Italian>
-		<Spanish>Capture Native slaves from city conquest, tribe pillaging, and combat</Spanish>
+		<English>Increased slave capture chance; temporary unhappiness decays faster</English>
+		<French>Increased slave capture chance; temporary unhappiness decays faster</French>
+		<German>Increased slave capture chance; temporary unhappiness decays faster</German>
+		<Italian>Increased slave capture chance; temporary unhappiness decays faster</Italian>
+		<Spanish>Increased slave capture chance; temporary unhappiness decays faster</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ENCOMIENDA_HELP</Tag>
-		<English>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</English>
-		<French>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</French>
-		<German>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</German>
-		<Italian>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Italian>
-		<Spanish>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Spanish>
+		<English>[ICON_BULLET]+25% slave capture chance</English>
+		<French>[ICON_BULLET]+25% slave capture chance</French>
+		<German>[ICON_BULLET]+25% slave capture chance</German>
+		<Italian>[ICON_BULLET]+25% slave capture chance</Italian>
+		<Spanish>[ICON_BULLET]+25% slave capture chance</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TLACOTIN</Tag>
@@ -1130,19 +1146,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TLACOTIN_STRATEGY</Tag>
-		<English>Capture slaves from city conquest, tribe pillaging, and combat</English>
-		<French>Capture slaves from city conquest, tribe pillaging, and combat</French>
-		<German>Capture slaves from city conquest, tribe pillaging, and combat</German>
-		<Italian>Capture slaves from city conquest, tribe pillaging, and combat</Italian>
-		<Spanish>Capture slaves from city conquest, tribe pillaging, and combat</Spanish>
+		<English>Increased slave capture chance; temporary unhappiness decays faster</English>
+		<French>Increased slave capture chance; temporary unhappiness decays faster</French>
+		<German>Increased slave capture chance; temporary unhappiness decays faster</German>
+		<Italian>Increased slave capture chance; temporary unhappiness decays faster</Italian>
+		<Spanish>Increased slave capture chance; temporary unhappiness decays faster</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_TLACOTIN_HELP</Tag>
-		<English>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</English>
-		<French>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</French>
-		<German>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</German>
-		<Italian>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Italian>
-		<Spanish>[ICON_BULLET]Capture Native Slaves from city conquest, Tribe pillaging, and combat</Spanish>
+		<English>[ICON_BULLET]+25% slave capture chance</English>
+		<French>[ICON_BULLET]+25% slave capture chance</French>
+		<German>[ICON_BULLET]+25% slave capture chance</German>
+		<Italian>[ICON_BULLET]+25% slave capture chance</Italian>
+		<Spanish>[ICON_BULLET]+25% slave capture chance</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_HARMONY</Tag>
@@ -2036,7 +2052,7 @@
 		<Tag>TXT_KEY_CIVIC_VASSALAGE_STRATEGY</Tag>
 		<English>Reduced unit maintenance; extra trade income with vassals; extra [ICON_COMMERCE] on farms</English>
 		<French>Reduced unit maintenance; extra trade income with vassals; extra [ICON_COMMERCE] on farms</French>
-		<German>Reduced unit maintenance; extra trade income with vassals<; extra [ICON_COMMERCE] on farms/German>
+		<German>Reduced unit maintenance; extra trade income with vassals; extra [ICON_COMMERCE] on farms</German>
 		<Italian>Reduced unit maintenance; extra trade income with vassals; extra [ICON_COMMERCE] on farms</Italian>
 		<Spanish>Reduced unit maintenance; extra trade income with vassals; extra [ICON_COMMERCE] on farms</Spanish>
 	</TEXT>
@@ -2050,11 +2066,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SACRIFICE_STRATEGY</Tag>
-		<English>TODO</English>
-		<French>TODO</French>
-		<German>TODO</German>
-		<Italian>TODO</Italian>
-		<Spanish>TODO</Spanish>
+		<English>Increased slave capture chance; can sacrifice slaves for golden ages</English>
+		<French>Increased slave capture chance; can sacrifice slaves for golden ages</French>
+		<German>Increased slave capture chance; can sacrifice slaves for golden ages</German>
+		<Italian>Increased slave capture chance; can sacrifice slaves for golden ages</Italian>
+		<Spanish>Increased slave capture chance; can sacrifice slaves for golden ages</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SACRIFICE_HELP</Tag>
+		<English>[ICON_BULLET]+25% slave capture chance[NEWLINE][ICON_BULLET]Can sacrifice slaves in capital for short [ICON_GOLDENAGE]</English>
+		<French>[ICON_BULLET]+25% slave capture chance[NEWLINE][ICON_BULLET]Can sacrifice slaves in capital for short [ICON_GOLDENAGE]</French>
+		<German>[ICON_BULLET]+25% slave capture chance[NEWLINE][ICON_BULLET]Can sacrifice slaves in capital for short [ICON_GOLDENAGE]</German>
+		<Italian>[ICON_BULLET]+25% slave capture chance[NEWLINE][ICON_BULLET]Can sacrifice slaves in capital for short [ICON_GOLDENAGE]</Italian>
+		<Spanish>[ICON_BULLET]+25% slave capture chance[NEWLINE][ICON_BULLET]Can sacrifice slaves in capital for short [ICON_GOLDENAGE]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_</Tag>

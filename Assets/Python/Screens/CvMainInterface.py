@@ -2583,12 +2583,13 @@ class CvMainInterface:
 						
 						iCount = iCount + 1
 					
-					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Mesoamerica RP
-					if pUnit.getUnitType() in lSlaves and civ(pUnit) in dCivGroups[iCivGroupMesoamerica]:
+					# Leoreth: Aztec UP: sacrifice slaves -> MacAurther: Sacrifice Civic
+					iPlayer = pUnit.getOwner()
+					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).getCivics(iCivicsSociety) == iSacrifice1 and pUnit.movesLeft() > 0:
 						city = city_(pUnit)
 						if city:
-							if civ(city) in dCivGroups[iCivGroupMesoamerica] and not city.isWeLoveTheKingDay():
-								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(unique_building(pUnit.getOwner(), iPaganTemple)).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
+							if civ(city) == civ(iPlayer) and city.isCapital():
+								screen.appendMultiListButton("BottomButtonContainer", gc.getBuildingInfo(unique_building(iPlayer, iPaganTemple)).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10000, 10000, False)
 								screen.show("BottomButtonContainer")
 								iCount = iCount + 1
 						
@@ -2598,6 +2599,15 @@ class CvMainInterface:
 							screen.appendMultiListButton("BottomButtonContainer", gc.getTechInfo(iCurrency).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10001, 10001, False)
 							screen.show("BottomButtonContainer")
 							iCount = iCount + 1
+					
+					# MacAurther: Despotism Civic
+					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).getCivics(iCivicsExecutive) == iDespotism1 and pUnit.movesLeft() > 0:
+						city = city_(pUnit)
+						if city:
+							if civ(city) == civ(iPlayer) and city.isProductionBuilding():
+								screen.appendMultiListButton("BottomButtonContainer", gc.getMissionInfo(gc.getInfoTypeForString("MISSION_HURRY")).getButton(), 0, WidgetTypes.WIDGET_GENERAL, 10002, 10002, False)
+								screen.show("BottomButtonContainer")
+								iCount = iCount + 1
 
 		elif (CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY):
 		
@@ -5846,6 +5856,20 @@ class CvMainInterface:
 		if inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10001:
 			doUnitBribes(g_pSelectedUnit)
 		# Leoreth: end
+
+		# MacAurther: start Despotism civic
+		if inputClass.getNotifyCode() == 11 and inputClass.getData1() == 10002:
+			self.pPushedButtonUnit = g_pSelectedUnit
+			iX = self.pPushedButtonUnit.getX()
+			iY = self.pPushedButtonUnit.getY()
+			city = gc.getMap().plot(iX, iY).getPlotCity()
+			
+			city.changeBuildingProduction(city.getProductionBuilding(), turns(25))
+
+			city.changeHurryAngerTimer(turns(10))
+			
+			self.pPushedButtonUnit.kill(False, city.getOwner())
+		# MacAurther: end
 
 		return 0
 	

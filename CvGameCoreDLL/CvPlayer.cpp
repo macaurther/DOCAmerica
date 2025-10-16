@@ -2608,7 +2608,7 @@ bool CvPlayer::isIndependent() const
 // Leoreth
 bool CvPlayer::isNative() const
 {
-	return getCivilizationType() == NATIVE;
+	return getCivilizationType() == INDIGENOUS;
 }
 
 
@@ -7463,7 +7463,7 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 		}
 	}
 
-	int iSlaveUnits = getUnitClassCount(UNITCLASS_AFRICAN_SLAVE) + getUnitClassCount(UNITCLASS_NATIVE_SLAVE);
+	int iSlaveUnits = getUnitClassCount(UNITCLASS_SLAVE);
 
 	iPaidUnits = std::max(0, getNumUnits() - iSlaveUnits - iFreeUnits);
 	iPaidMilitaryUnits = std::max(0, getNumMilitaryUnits() - iFreeMilitaryUnits);

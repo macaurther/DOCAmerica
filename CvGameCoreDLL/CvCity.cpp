@@ -2140,7 +2140,7 @@ bool CvCity::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool b
 	}
 
 	// Leoreth: can't train slaves -> MacAurther: Actually now you can with a Slave Market, but you can't train Colonists, Migrant Workers, or Colonial Native Slaves
-	if (eUnit == UNIT_IMMIGRANT || eUnit == UNIT_TRACKMAN || eUnit == UNIT_NATIVE_SLAVE_COLONY)
+	if (eUnit == UNIT_IMMIGRANT || eUnit == UNIT_TRACKMAN)
 	{
 		return false;
 	}
@@ -15049,41 +15049,9 @@ void CvCity::doGreatPeople()
 				setGreatPeopleUnitProgress(((UnitTypes)iI), 0);
 			}
 
-			// MacAurther: Slave Revolt
-			if (GC.getUnitInfo(eGreatPeopleUnit).getUnitClassType() == UNITCLASS_SLAVE_REVOLT)
-			{
-				// Monticello Effect
-				if(isHasBuildingEffect((BuildingTypes)BUILDING_MONTICELLO))
-				{
-					eGreatPeopleUnit = (UnitTypes)GC.getUnitClassInfo(UNITCLASS_GREAT_STATESMAN).getDefaultUnitIndex();
-					// Announce Monticello Effect
-					CvWString szBuffer;
-					szBuffer = gDLL->getText("TXT_KEY_MISC_MONTICELLO", getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITGIFTED", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_HAPPY_PERSON")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX(), getY(), true, true);
-				}
-				else
-				{
-					doSlaveRevolt();
-					return;		// Don't actually generate a great person
-				}
-			}
-
 			createGreatPeople(eGreatPeopleUnit, true, false);
 		}
 	}
-}
-
-
-void CvCity::doSlaveRevolt()
-{
-	// If a Slave Revolt was generated, send city into revolt, do not generate a GP, but also do not increment threshold
-	changeNumRevolts(getOwner(), 1);
-	changeOccupationTimer(max(getFreeSpecialistCount(SPECIALIST_SLAVE) - plot()->getNumVisibleUnits(getOwner()), 0));	// 1 turn of revolt for each slave in city, minus 1 turn for each military unit in the city
-
-	// Announce Revolt
-	CvWString szBuffer;
-	szBuffer = gDLL->getText("TXT_KEY_MISC_SLAVE_REVOLT_IN_CITY", getNameKey());
-	gDLL->getInterfaceIFace()->addMessage(getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MINOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_RESISTANCE")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX(), getY(), true, true);
 }
 
 

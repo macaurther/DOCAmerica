@@ -103,7 +103,7 @@ def minorWars(iMinorCiv):
 def updateMinorTechs(iMinorCiv, iMajorCiv):
 	techs = infos.techs().where(team(iMajorCiv).isHasTech)
 	
-	if civ(iMinorCiv) == iNative:
+	if civ(iMinorCiv) == iIndigenous:
 		techs = techs.where(lambda iTech: all(iEnabledTech in techs for iEnabledTech in getEnabledTechs(iTech)))
 		
 		nativePlayers = players.of(*lBioNewWorld)
@@ -618,7 +618,7 @@ def getUnitsForRole(iPlayer, iRole, bUnique=True):
 		
 		elif iRole == iColonistSlave:	# Ferry + N Slaves
 			for _ in range(iCargoSpace):
-				units.append([iAfricanSlave2, UnitAITypes.UNITAI_WORKER])
+				units.append([iSlave, UnitAITypes.UNITAI_WORKER])
 	
 	return units
 
@@ -941,22 +941,54 @@ def captureUnit(pLosingUnit, pWinningUnit, iUnit, iChance):
 	iPlayer = pWinningUnit.getOwner()
 	
 	if rand(100) < iChance:
-		if iUnit in [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2, iAfricanSlave2, iAfricanSlave3]:
-			pUnit = makeUnit(iPlayer, iUnit, pWinningUnit, UnitAITypes.UNITAI_WORKER)
-			message(pWinningUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=8, location=pWinningUnit)
-			message(pLosingUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_LOSE', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pWinningUnit)
-			
-			events.fireEvent("enslave", iPlayer, pLosingUnit)
-		else:
-			pUnit = makeUnit(iPlayer, iUnit, pWinningUnit)
-			message(pWinningUnit.getOwner(), 'TXT_KEY_UP_CAPTURE_WIN', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=8, location=pWinningUnit)
-			message(pLosingUnit.getOwner(), 'TXT_KEY_UP_CAPTURE_LOSE', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pWinningUnit)
-			
-			# If captured unit can fight, remove movement and damage unit by half
-			if pUnit.canFight():
-				pUnit.finishMoves()
-				pUnit.setDamage(pUnit.maxHitPoints() / 2, -1)
+		pUnit = makeUnit(iPlayer, iUnit, pWinningUnit)
+		message(pWinningUnit.getOwner(), 'TXT_KEY_UP_CAPTURE_WIN', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=8, location=pWinningUnit)
+		message(pLosingUnit.getOwner(), 'TXT_KEY_UP_CAPTURE_LOSE', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pWinningUnit)
+		
+		# If captured unit can fight, remove movement and damage unit by half
+		if pUnit.canFight():
+			pUnit.finishMoves()
+			pUnit.setDamage(pUnit.maxHitPoints() / 2, -1)
 		return pUnit
+
+# used: Rules
+def enslaveUnit(pWinningUnit, pLosingUnit=None):
+	if pLosingUnit is not None:
+		# No slaves when both combatants aren't native
+		if civ(pLosingUnit) not in lNativeCivs and civ(pWinningUnit) not in lNativeCivs:
+			return
+		
+		if pLosingUnit.isAnimal(): 
+			return
+		
+		if pLosingUnit.getDomainType() != DomainTypes.DOMAIN_LAND: 
+			return
+		
+		if infos.unit(pLosingUnit).getCombat() == 0: 
+			return
+	
+	iPlayer = pWinningUnit.getOwner()
+	
+	if rand(100) < getSlaveCaptureChance(pWinningUnit.getOwner(), pWinningUnit.getUnitType()):
+		pUnit = makeUnit(iPlayer, iSlave, pWinningUnit, UnitAITypes.UNITAI_WORKER)
+		message(pWinningUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iSlave).getButton(), color=8, location=pWinningUnit)
+		if pLosingUnit is not None:
+			message(pLosingUnit.getOwner(), 'TXT_KEY_UP_ENSLAVE_LOSE', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iSlave).getButton(), color=7, location=pWinningUnit)
+		
+		pUnit.finishMoves()
+		events.fireEvent("enslave", iPlayer, pLosingUnit)
+		return pUnit
+
+# used: Rules
+def getSlaveCaptureChance(iPlayer, iUnit=None):
+	pPlayer = player(iPlayer)
+	iChance = 0
+	if pPlayer.getCivics(iCivicsLabor) in [iTlacotin1, iEncomienda2]: iChance += 25
+	if pPlayer.getCivics(iCivicsSociety) in [iSacrifice1]: iChance += 25
+	if civ(iPlayer) in dCivGroups[iCivGroupMesoamerica]: iChance += 25	# MacAurther: Mesoamerican RP
+	if iUnit in [iAztecJaguar]: iChance += 25
+	if iUnit in [iBandeirante]: iChance += 50
+	return iChance
 
 # used: Stability
 def flipOrRelocateGarrison(city, iNumDefenders):

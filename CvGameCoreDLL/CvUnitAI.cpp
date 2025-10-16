@@ -2719,7 +2719,7 @@ void CvUnitAI::AI_pillageMove()
 		return;
 	}
 
-	if (isBarbarian() || getCivilizationType() == NATIVE)
+	if (isBarbarian() || getCivilizationType() == INDIGENOUS)
 	{
 		AI_setUnitAIType(UNITAI_ATTACK);
 		AI_barbAttackMove();

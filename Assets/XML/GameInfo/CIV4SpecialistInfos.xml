@@ -426,13 +426,15 @@
 			<Texture>Art/Interface/MainScreen/CityScreen/Slave.dds</Texture>
 			<bVisible>0</bVisible>
 			<bNoGlobalEffects>1</bNoGlobalEffects>
-			<GreatPeopleUnitClass>UNITCLASS_SLAVE_REVOLT</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
-			<Yields/>
-			<Commerces>
-				<iCommerce>3</iCommerce>
-			</Commerces>
+			<GreatPeopleUnitClass>NONE</GreatPeopleUnitClass>
+			<iGreatPeopleRateChange>0</iGreatPeopleRateChange>
+			<Yields>
+				<iYield>0</iYield>
+				<iYield>1</iYield>
+			</Yields>
+			<Commerces/>
 			<iExperience>0</iExperience>
+			<iHappiness>-1</iHappiness>
 			<Flavors/>
 			<HotKey/>
 			<bAltDown>0</bAltDown>

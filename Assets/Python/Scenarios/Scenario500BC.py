@@ -6,17 +6,13 @@ lCivilizations = [
 	Civilization(
 		iMaya,
 		iGold=75,
-		lCivics=[iCaptives1],
+		lCivics=[iTlacotin1],
 		techs=techs.column(2).including(iAgriculture, iMythology, iMining).without(iTrapping, iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing)
 	),
 	Civilization(
 		iZapotec,
 		iGold=100,
 		techs=techs.column(2).including(iAgriculture, iMythology, iTanning).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing)
-	),
-	Civilization(
-		iNative,
-		techs=techs.column(2).including(iTanning, iMythology)
 	),
 	Civilization(
 		iIndependent,
@@ -30,9 +26,8 @@ lCivilizations = [
 		iIndependent3
 	),
 	Civilization(
-		iNative,
-		iGold=0,
-		techs=techs.column(1)
+		iIndigenous,
+		techs=techs.column(2).including(iTanning, iMythology)
 	),
 	Civilization(
 		iBarbarian,

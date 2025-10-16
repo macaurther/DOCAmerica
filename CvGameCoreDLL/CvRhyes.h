@@ -22,21 +22,18 @@ typedef list<char*> LISTCHAR;
 
 #define BUILDINGCLASS_PALACE	  ((BuildingClassTypes)GC.getInfoTypeForString("BUILDINGCLASS_PALACE"))				// MacAurther
 
-#define UNIT_IMMIGRANT			  ((UnitTypes)GC.getInfoTypeForString("UNIT_IMMIGRANT"))								// MacAurther
+#define UNIT_IMMIGRANT			  ((UnitTypes)GC.getInfoTypeForString("UNIT_IMMIGRANT"))							// MacAurther
 #define UNIT_TIWANAKU_SISQENO	  ((UnitTypes)GC.getInfoTypeForString("UNIT_TIWANAKU_SISQENO"))						// MacAurther
 #define UNIT_HAWAIIAN_WAA_KAULUA  ((UnitTypes)GC.getInfoTypeForString("UNIT_HAWAIIAN_WAA_KAULUA"))					// MacAurther
 #define UNIT_AMERICAN_AGENT		  ((UnitTypes)GC.getInfoTypeForString("UNIT_AMERICAN_AGENT"))						// MacAurther
 #define UNIT_CANNON				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANNON"))								// MacAurther
 #define UNIT_CANOE				  ((UnitTypes)GC.getInfoTypeForString("UNIT_CANOE"))								// MacAurther
-#define UNIT_TRACKMAN		  ((UnitTypes)GC.getInfoTypeForString("UNIT_TRACKMAN"))						// MacAurther
-#define UNIT_NATIVE_SLAVE_COLONY  ((UnitTypes)GC.getInfoTypeForString("UNIT_NATIVE_SLAVE_COLONY"))					// MacAurther
+#define UNIT_TRACKMAN			  ((UnitTypes)GC.getInfoTypeForString("UNIT_TRACKMAN"))								// MacAurther
 
 #define UNITCLASS_SETTLER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SETTLER"))					// MacAurther
 #define UNITCLASS_PIONEER		  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PIONEER"))					// MacAurther
-#define UNITCLASS_NATIVE_SLAVE	  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE"))				// MacAurther
-#define UNITCLASS_AFRICAN_SLAVE	  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))				// MacAurther
+#define UNITCLASS_SLAVE			  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))						// MacAurther
 #define UNITCLASS_GREAT_STATESMAN ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_GREAT_STATESMAN"))			// MacAurther
-#define UNITCLASS_SLAVE_REVOLT	  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE_REVOLT"))				// MacAurther
 
 #define NUM_NATIVE_TECHS		  ((TechTypes)FISHING + 1)															// MacAurther
 

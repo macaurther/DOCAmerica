@@ -442,6 +442,10 @@ class CvGameUtils:
 		# Leoreth: Byzantine UP: bribe button
 		if iData1 == 10001:
 			return CyTranslator().getText("TXT_KEY_ACTION_BRIBE_UNITS", ())
+	
+		# MacAurther: Despotism Civic
+		if iData1 == 10002:
+			return CyTranslator().getText("TXT_KEY_BUTTON_HURRY", (turns(20), turns(10)))
 		
 ## Religion Screen ##
 #		if eWidgetType == WidgetTypes.WIDGET_HELP_RELIGION:

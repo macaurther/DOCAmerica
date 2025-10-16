@@ -114,39 +114,6 @@ def firstCityOnCityAcquiredAndKept(iPlayer, city):
 		events.fireEvent("firstCity", city)
 
 
-@handler("cityAcquiredAndKept")
-def nativeCityConquered(iPlayer, pCity):
-	# Check if city was taken from a Native
-	if pCity.getPreviousCiv() in dCivGroups[iCivGroupNative] + [iNative] and plot(pCity).getBirthProtected() == -1:	# Don't give native tech for rise flipped cities
-		# Give a Native Tech
-		lPossibleTechs = []
-		for iTech in lNativeTechs:
-			if not team(iPlayer).isHasTech(iTech):
-				lPossibleTechs.append(iTech)
-		
-		if len(lPossibleTechs) > 0:
-			team(iPlayer).setHasTech(random.choice(lPossibleTechs), true, iPlayer, False, True)
-			
-		# If the conquerer has the Plunder Civic, give some Immigration for conquerer
-		if player(iPlayer).hasCivic(iPlunder2):
-			iConquerImmigration = scale(20 + pCity.getPopulation() * 5)
-			
-			# England UP
-			if civ(iPlayer) == iEngland:
-				iConquerImmigration *= 2
-			
-			gc.getPlayer(iPlayer).changeImmigration(iConquerImmigration)
-			message(iPlayer, "TXT_KEY_CONQUER_IMMIGRATION", iConquerImmigration)
-		
-		# If the conquerer has the Captives or Encomienda Civic, give Native Slave 
-		iSlave = getNativeSlaveType(iPlayer)
-		
-		if iSlave > -1:
-			makeUnits(iPlayer, iSlave, pCity, 1, UnitAITypes.UNITAI_WORKER)
-			events.fireEvent("enslave", iPlayer, None)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=pCity)
-
-
 @handler("BeginGameTurn")
 def giveAINativeTechs(iGameTurn):
 	# If European AI hasn't gotten Native Techs by 1700, help them out

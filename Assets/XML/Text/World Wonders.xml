@@ -711,19 +711,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city and convert Slave Revolts into Great Statesmen.</English>
-		<French>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city and convert Slave Revolts into Great Statesmen.</French>
-		<German>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city and convert Slave Revolts into Great Statesmen.</German>
-		<Italian>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city and convert Slave Revolts into Great Statesmen.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city and convert Slave Revolts into Great Statesmen.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_MONTICELLO_HELP</Tag>
-		<English>[ICON_BULLET]When a Slave Revolt would happen in this city, a Great Statesman is born instead.</English>
-		<French>[ICON_BULLET]When a Slave Revolt would happen in this city, a Great Statesman is born instead.</French>
-		<German>[ICON_BULLET]When a Slave Revolt would happen in this city, a Great Statesman is born instead.</German>
-		<Italian>[ICON_BULLET]When a Slave Revolt would happen in this city, a Great Statesman is born instead.</Italian>
-		<Spanish>[ICON_BULLET]When a Slave Revolt would happen in this city, a Great Statesman is born instead.</Spanish>
+		<English>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</English>
+		<French>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</French>
+		<German>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</German>
+		<Italian>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</Italian>
+		<Spanish>[COLOR_BUILDING_TEXT]Monticello[COLOR_REVERT] removes all unhappiness from its city.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MOUNT_VERNON</Tag>

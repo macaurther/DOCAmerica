@@ -46,7 +46,7 @@ lCivilizations = [
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iAristocracy1, iClans1, iCaptives1, iRaiding1, iOrganizedReligion1, iSacrifice1],
+		lCivics=[iAristocracy1, iClans1, iTlacotin1, iRaiding1, iOrganizedReligion1, iSacrifice1],
 		techs=techs.column(7).including(iNobility).without(iAstronomy, iScholarship, iNavigation, *lImmigraitonTechs)
 	),
 	Civilization(
@@ -84,7 +84,7 @@ lCivilizations = [
 		techs=techs.column(9).without(*lImmigraitonTechs)
 	),
 	Civilization(
-		iNative,
+		iIndigenous,
 		iGold=300,
 		techs=techs.column(5).without(*lImmigraitonTechs)
 	),

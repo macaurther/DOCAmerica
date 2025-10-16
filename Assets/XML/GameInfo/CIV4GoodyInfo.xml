@@ -261,7 +261,7 @@
 			<iDamagePrereq>0</iDamagePrereq>
 			<bTech>1</bTech>
 			<bBad>0</bBad>
-			<UnitClass>UNITCLASS_NATIVE_SLAVE</UnitClass>
+			<UnitClass>UNITCLASS_SLAVE</UnitClass>
 			<BarbarianClass>NONE</BarbarianClass>
 			<iBarbarianUnitProb>0</iBarbarianUnitProb>
 			<iMinBarbarians>0</iMinBarbarians>

@@ -91,7 +91,7 @@
 			<bWhiteFlag>0</bWhiteFlag>
 		</CivilizationArtInfo>
 		<CivilizationArtInfo>
-			<Type>ART_DEF_CIVILIZATION_NATIVE</Type>
+			<Type>ART_DEF_CIVILIZATION_INDIGENOUS</Type>
 			<Button>,Art/Interface/Buttons/Civilizations/Native.dds,Art/Interface/Buttons/Warlords_Atlas_2.dds,6,1</Button>
 			<Path>Art/Interface/TeamColor/FlagDECAL_ZuluShield.dds</Path>
 			<bWhiteFlag>0</bWhiteFlag>

@@ -40,28 +40,6 @@ def reproduceTribes():
 		pPlot.setImprovementType(iTribe)
 		data.iTribeGenerationTurn = turn()'''
 
-# MacAurther: Pillaging Tribes generates warriors
-@handler("unitPillage")
-def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
-	# If pillage a tribe, get uprising
-	if iImprovement == iTribe or iImprovement == iContactedTribe:
-		# MacAurther: Sometimes the Native player pillages a tribe. Don't try to declare war in that case, but do still spawn defenders
-		if team(pUnit.getOwner()) != player(iNative).getTeam():
-			team(pUnit.getOwner()).declareWar(player(iNative).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
-		iX = pUnit.getX()
-		iY = pUnit.getY()
-		spawnTribeDefenders(iX, iY)
-	
-		# If pillage a tribe with the Encomienda or Captives Civics, get Native Slaves
-		iPlayer = pUnit.getOwner()
-		iSlave = getNativeSlaveType(iPlayer)
-		
-		if iSlave > -1:
-			makeUnit(iPlayer, iSlave, pUnit, UnitAITypes.UNITAI_WORKER)
-			events.fireEvent("enslave", iPlayer, None)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=pUnit)
-
-
 @handler("BeginGameTurn")
 def spawnBarbarians(iGameTurn):
 	iHandicap = infos.handicap().getBarbarianSpawnModifier()
@@ -267,13 +245,13 @@ def spawnTribeDefenders(iX, iY):
 	tTL = (iX - iRange, iY - iRange)
 	tBR = (iX + iRange, iY + iRange)
 	
-	spawnDefenders(iNative, iWarrior, 1 + iHandicap, tTL, tBR)
-	spawnDefenders(iNative, iArcher, 1 + iHandicap, tTL, tBR)
+	spawnDefenders(iIndigenous, iWarrior, 1 + iHandicap, tTL, tBR)
+	spawnDefenders(iIndigenous, iArcher, 1 + iHandicap, tTL, tBR)
 	if year() <= year(1650):
-		spawnDefenders(iNative, iAtlatlist, iHandicap, tTL, tBR)
-		spawnDefenders(iNative, iSpearman, iHandicap, tTL, tBR)
+		spawnDefenders(iIndigenous, iAtlatlist, iHandicap, tTL, tBR)
+		spawnDefenders(iIndigenous, iSpearman, iHandicap, tTL, tBR)
 	elif year() <= year(1800):
-		spawnDefenders(iNative, iArquebusier, 1 + iHandicap, tTL, tBR)
+		spawnDefenders(iIndigenous, iArquebusier, 1 + iHandicap, tTL, tBR)
 	else:
-		spawnDefenders(iNative, iCuirassier, 1 + iHandicap, tTL, tBR)
+		spawnDefenders(iIndigenous, iCuirassier, 1 + iHandicap, tTL, tBR)
 		

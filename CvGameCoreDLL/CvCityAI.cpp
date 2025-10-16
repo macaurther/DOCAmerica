@@ -2578,7 +2578,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, AdvisorTypes eIgnoreAdvisor, UnitAI
 	case CANADA:
 		aiUnitAIVal[UNITAI_SETTLE] *= 6;
 		break;
-	case NATIVE:
+	case INDIGENOUS:
 		aiUnitAIVal[UNITAI_CITY_DEFENSE] /= 5;
 		aiUnitAIVal[UNITAI_CITY_COUNTER] /= 2;
 		aiUnitAIVal[UNITAI_PILLAGE] *= 2;

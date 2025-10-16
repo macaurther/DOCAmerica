@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indigenous -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDIGENOUS_SHORT_DESC</Tag>
+		<English>Indigenous</English>
+		<French>Indigenous</French>
+		<German>Indigenous</German>
+		<Italian>Indigenous</Italian>
+		<Spanish>Indigenous</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INDIGENOUS_ADJECTIVE</Tag>
+		<English>Indigenous</English>
+		<French>Indigenous</French>
+		<German>Indigenous</German>
+		<Italian>Indigenous</Italian>
+		<Spanish>Indigenous</Spanish>
+	</TEXT>
+</Civ4GameText>

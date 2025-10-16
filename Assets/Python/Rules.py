@@ -16,17 +16,6 @@ dRelocatedCapitals = {
 def resetSlaves(iOwner, iPlayer, city):
 	freeSlaves(city, iPlayer)
 
-# MacAurther: Don't let non-Natives keep all the settled Native great people on conquest (Spain becomes mega buff)
-@handler("cityAcquired")
-def resetGreatPeople(iOldOwner, iPlayer, city, bConquest, bTrade):
-	if civ(iOldOwner) not in dCivGroups[iCivGroupNative]:
-		return
-	if civ(iPlayer) in dCivGroups[iCivGroupNative]:
-		return
-	
-	for iGreatSpecialist in lGreatSpecialists:
-		city.setFreeSpecialistCount(iGreatSpecialist, 0)
-
 @handler("cityAcquired")
 def resetAdminCenter(iOwner, iPlayer, city):
 	if city.isCapital() and city.isHasRealBuilding(iAdministrativeCenter):
@@ -59,6 +48,55 @@ def resetNationalWonders(iOwner, iPlayer, city, bConquest, bTrade):
 def downgradeCottages(iOwner, iPlayer, city, bConquest, bTrade):
 	if bConquest and player(iPlayer).getCurrentEra() <= iRevolutionaryEra:
 		downgradeCityCottages(city)
+
+# MacAurther: Don't let non-Natives keep all the settled Native great people on conquest (Spain becomes mega buff)
+@handler("cityAcquired")
+def resetGreatPeople(iOldOwner, iPlayer, city, bConquest, bTrade):
+	if civ(iOldOwner) not in dCivGroups[iCivGroupNative]:
+		return
+	if civ(iPlayer) in dCivGroups[iCivGroupNative]:
+		return
+	
+	for iGreatSpecialist in lGreatSpecialists:
+		city.setFreeSpecialistCount(iGreatSpecialist, 0)
+
+@handler("cityAcquired")
+def nativeCityConquered(iOldOwner, iNewOwner, pCity, bConquest, bTrade):
+	if not bConquest:
+		return
+	
+	# Check if city was taken from a Native
+	if not civ(iOldOwner) in lNativeCivs:
+		return
+	
+	# MacAurther TODO: Rework
+	# Give a Native Tech
+	lPossibleTechs = []
+	for iTech in lNativeTechs:
+		if not team(iNewOwner).isHasTech(iTech):
+			lPossibleTechs.append(iTech)
+	
+	if len(lPossibleTechs) > 0:
+		team(iNewOwner).setHasTech(random.choice(lPossibleTechs), true, iNewOwner, False, True)
+		
+	# If the conquerer has the Plunder Civic, give some Immigration for conquerer
+	if player(iNewOwner).hasCivic(iPlunder2):
+		iConquerImmigration = scale(20 + pCity.getPopulation() * 5)
+		
+		# England UP
+		if civ(iNewOwner) == iEngland:
+			iConquerImmigration *= 2
+		
+		gc.getPlayer(iNewOwner).changeImmigration(iConquerImmigration)
+		message(iNewOwner, "TXT_KEY_CONQUER_IMMIGRATION", iConquerImmigration)
+	
+	# Check for any slave capturing
+	# Need to somehow get conquering unit, just get the first unit on the plot and hope it's right?
+	# MacAurther TODO: Improve this?
+	pPlot = pCity.plot()
+	if pPlot.getNumUnits() > 0:
+		pConqueringUnit = pPlot.getUnit(0)
+		enslaveUnit(pConqueringUnit)
 
 
 ### CITY ACQUIRED AND KEPT ###
@@ -160,38 +198,13 @@ def captureSlaves(winningUnit, losingUnit):
 	if plot(winningUnit).isWater() and freeCargo(winningUnit, winningUnit) <= 0:
 		return
 	
-	iSlave = getNativeSlaveType(winningUnit.getOwner())
-	
-	# Jaguar Ability
-	if winningUnit.getUnitType() == iAztecJaguar:
-		captureUnit(losingUnit, winningUnit, iNativeSlaveMeso, 100)
-		return
-	
-	# Captives Civic
-	if player(winningUnit.getOwner()).getCivics(iCivicsLabor) == iCaptives1:
-		captureUnit(losingUnit, winningUnit, iSlave, 50)
-		return
-	
-	# Bandeirante Ability
-	if civ(losingUnit) == iNative and winningUnit.getUnitType() == iBandeirante:
-		captureUnit(losingUnit, winningUnit, iNativeSlave2, 100)
-		return
-	
-	# Encomienda Civic
-	if civ(losingUnit) == iNative and player(winningUnit.getOwner()).getCivics(iCivicsLabor) == iEncomienda2:
-		captureUnit(losingUnit, winningUnit, iSlave, 50)
-		return
+	enslaveUnit(winningUnit, losingUnit)
 
 @handler("combatResult")
-def captureCannon(winningUnit, losingUnit):
-	if losingUnit.getUnitType() in [iBombard, iCannon, iHeavyCannon, iRifledCannon, iArtillery, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]:
-		captureUnit(losingUnit, winningUnit, losingUnit.getUnitType(), 50)
-
-@handler("combatResult")
-def captureAdvancedWeapons(pWinningUnit, pLosingUnit):
+def captureWeapons(pWinningUnit, pLosingUnit):
 	# Capture cannon
 	if infos.unit(pLosingUnit).getUnitCombatType() in [UnitCombatTypes.UNITCOMBAT_SIEGE]:
-		captureUnit(pLosingUnit, pWinningUnit, pLosingUnit.getUnitType(), 50)
+		captureUnit(pLosingUnit, pWinningUnit, pLosingUnit.getUnitType(), 25)
 		return
 	
 	# Upgrade melee and archery units when winning against horses and guns
@@ -207,7 +220,6 @@ def captureAdvancedWeapons(pWinningUnit, pLosingUnit):
 		
 		if pNewUnit:
 			pNewUnit.convert(pWinningUnit)
-		
 
 @handler("combatResult")
 def animalHunting(winningUnit, losingUnit):
@@ -259,7 +271,7 @@ def validateSlaves(iPlayer):
 			if player(iPlayer).getCivics(iCivicsSociety) in [iEmancipation2, iEmancipation3]:
 				city.changePopulation(iNumSlaves)
 				
-		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) in [iAfricanSlave2, iAfricanSlave3]):
+		for slave in units.owner(iPlayer).where(lambda unit: base_unit(unit) in [iSlave, iChattleSlave]):
 			slave.kill(False, iPlayer)
 
 
@@ -543,7 +555,7 @@ def isBribableUnit(iPlayer, unit):
 
 def getPossibleBribes(iPlayer, location):
 	iTreasury = player(iPlayer).getGold()
-	targets = [(unit, infos.unit(unit).getProductionCost() * 3 / 2) for unit in units.at(location).owner(iNative)]	# MacAurther: Can bribe Natives instead of Barbs
+	targets = [(unit, infos.unit(unit).getProductionCost() * 3 / 2) for unit in units.at(location).owner(iIndigenous)]	# MacAurther: Can bribe indigenous instead of Barbs
 	print("Targets: " + str(targets))
 	return [(unit, iCost) for unit, iCost in targets if isBribableUnit(iPlayer, unit) and iCost <= iTreasury]
 

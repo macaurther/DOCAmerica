@@ -36,19 +36,19 @@ BeginPlot
 	x=28,y=67
 	BeginUnit
 		UnitType=UNIT_MILITIA_SPEARMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_SPEARMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_NATIVE
+		CityOwner=CIVILIZATION_INDIGENOUS
 		CityName=La Venta
 		CityPopulation=1
 		YearFounded=-1800
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE
+			Civilization=CIVILIZATION_INDIGENOUS
 		EndCulture
 	EndCity
 EndPlot

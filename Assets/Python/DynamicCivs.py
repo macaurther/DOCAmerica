@@ -154,7 +154,7 @@ dStartingLeaders = [
 	iIndependent : iIndependentLeader,
 	iIndependent2 : iIndependentLeader,
 	iIndependent3 : iIndependentLeader,
-	iNative : iNativeLeader,
+	iIndigenous : iNativeLeader,
 	iMaya : iPacal,
 	iZapotec : iCosijoeza,
 	iTeotihuacan : iAtlatlCauac,

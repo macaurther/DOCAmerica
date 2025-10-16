@@ -43,7 +43,6 @@ g_gpBarList = (
 	"UNIT_GREAT_GENERAL",
 # MOD: specify the unit type (XML key) for each new great person (1)
 	#"UNIT_DOCTOR",
-	"UNIT_SLAVE_REVOLT",	# MacAurther: Slave Revolt
 )
 
 # Named constants for each great person and total number of GP types
@@ -60,7 +59,6 @@ NUM_GP = len(g_gpBarList)
 	GP_GENERAL,
 # MOD: define a constant for each new great person in same order as above (2)
 	#GP_DOCTOR,
-	GP_SLAVE_REVOLT,	# MacAurther: Slave Revolt
 ) = range(NUM_GP)
 
 # Map each GP type to unit ID, color, and icon to show in GP Bar
@@ -92,7 +90,6 @@ def init():
 	g_gpColors[GP_GENERAL] = gc.getInfoTypeForString("COLOR_GREY")	# MacAurther: Changed color from Red
 	# MOD: specify color for each new great person (3)
 	#g_gpColors[GP_DOCTOR] = gc.getInfoTypeForString("COLOR_WHITE")
-	g_gpColors[GP_GENERAL] = gc.getInfoTypeForString("COLOR_RED")	# MacAurther: Slave Revolt
 	
 	global g_unitIcons
 	g_unitIcons = {}
@@ -106,7 +103,6 @@ def init():
 	g_unitIcons[g_gpUnitTypes[GP_GENERAL]] = FontUtil.getChar(FontSymbols.GREAT_GENERAL_CHAR)
 	# MOD: specify icon (font glyph) for each new great person (4)
 	#g_unitIcons[g_gpUnitTypes[GP_DOCTOR]] = FontUtil.getChar(FontSymbols.HEALTHY_CHAR)
-	g_unitIcons[g_gpUnitTypes[GP_SLAVE_REVOLT]] = FontUtil.getChar(FontSymbols.OCCUPATION_CHAR)	# MacAurther: Slave Revolt
 	
 def getUnitType(gpType):
 	return g_gpUnitTypes[gpType]

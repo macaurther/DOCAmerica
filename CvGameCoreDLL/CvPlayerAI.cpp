@@ -2900,7 +2900,7 @@ int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreA
 	}
 
 	// Leoreth: help target natives in the new world
-	if (pCity->getCivilizationType() == NATIVE)
+	if (pCity->getCivilizationType() == INDIGENOUS)
 	{
 		if (pCity->getRegionGroup() == REGION_GROUP_NORTH_AMERICA || pCity->getRegionGroup() == REGION_GROUP_SOUTH_AMERICA)
 		{

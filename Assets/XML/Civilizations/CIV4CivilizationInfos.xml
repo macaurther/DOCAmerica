@@ -84,10 +84,6 @@
 					<UnitClassType>UNITCLASS_SPY</UnitClassType>
 					<UnitType>UNIT_AMERICAN_AGENT</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -219,10 +215,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_GREAT_GENERAL</UnitClassType>
 					<UnitType>UNIT_ARGENTINE_GREAT_GENERAL</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -451,14 +443,6 @@
 					<UnitClassType>UNITCLASS_LABORER</UnitClassType>
 					<UnitType>UNIT_BRAZILIAN_MADEIREIRO</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -582,10 +566,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_RANGER</UnitClassType>
 					<UnitType>UNIT_CANADIAN_FACTOR</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -780,10 +760,6 @@
 					<UnitClassType>UNITCLASS_DRAGOON</UnitClassType>
 					<UnitType>UNIT_COLOMBIAN_LLANERO</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -895,14 +871,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
 					<UnitType>UNIT_ENGLISH_MAN_OF_WAR</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1119,14 +1087,6 @@
 					<UnitClassType>UNITCLASS_MUSKETMAN</UnitClassType>
 					<UnitType>UNIT_FRENCH_COMPAGNIES</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -1243,10 +1203,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_GRENADIER</UnitClassType>
 					<UnitType>UNIT_HAITIAN_CACOS</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -1421,7 +1377,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDIGENOUS</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -1737,7 +1693,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDIGENOUS</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -1837,7 +1793,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDIGENOUS</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -2032,10 +1988,6 @@
 					<UnitClassType>UNITCLASS_CAVALRY</UnitClassType>
 					<UnitType>UNIT_MEXICAN_RURAL</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses/>
 			<FreeBuildingClasses>
@@ -2189,7 +2141,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDIGENOUS</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -2405,14 +2357,6 @@
 					<UnitClassType>UNITCLASS_INDIAMAN</UnitClassType>
 					<UnitType>UNIT_DUTCH_FLUYT</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2568,14 +2512,6 @@
 					<UnitClassType>UNITCLASS_CANOE</UnitClassType>
 					<UnitType>UNIT_VIKING_LONGSHIP</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2679,10 +2615,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_FUSILIER</UnitClassType>
 					<UnitType>UNIT_PERUVIAN_GUARDIA</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -2807,14 +2739,6 @@
 					<UnitClassType>UNITCLASS_CARAVEL</UnitClassType>
 					<UnitType>UNIT_PORTUGUESE_CARRACK</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -2936,7 +2860,7 @@
 					<bLeaderAvailability>1</bLeaderAvailability>
 				</Leader>
 			</Leaders>
-			<DerivativeCiv>CIVILIZATION_NATIVE</DerivativeCiv>
+			<DerivativeCiv>CIVILIZATION_INDIGENOUS</DerivativeCiv>
 			<CivilizationSelectionSound>AS3D_NATIVE_AMERICA_SELECT</CivilizationSelectionSound>
 			<CivilizationActionSound>AS3D_NATIVE_AMERICA_ORDER</CivilizationActionSound>
 		</CivilizationInfo>
@@ -3132,14 +3056,6 @@
 					<UnitClassType>UNITCLASS_WORKER</UnitClassType>
 					<UnitType>UNIT_RUSSIAN_PROMYSHLENNIKI</UnitType>
 				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
-				</Unit>
 			</Units>
 			<FreeUnitClasses>
 				<FreeUnitClass>
@@ -3253,14 +3169,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_INDIAMAN</UnitClassType>
 					<UnitType>UNIT_SPANISH_GALLEON</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-					<UnitType>UNIT_NATIVE_SLAVE_COLONY</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_COLONY</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -3567,10 +3475,6 @@
 				<Unit>
 					<UnitClassType>UNITCLASS_RIFLEMAN</UnitClassType>
 					<UnitType>UNIT_VENEZUELAN_VENCEDORES</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-					<UnitType>UNIT_AFRICAN_SLAVE_NATION</UnitType>
 				</Unit>
 			</Units>
 			<FreeUnitClasses>
@@ -4279,10 +4183,10 @@
 			<CivilizationActionSound/>
 		</CivilizationInfo>
 		<CivilizationInfo>
-			<Type>CIVILIZATION_NATIVE</Type>
+			<Type>CIVILIZATION_INDIGENOUS</Type>
 			<Description>TXT_KEY_CIV_NATIVE_AMERICA_DESC</Description>
-			<ShortDescription>TXT_KEY_CIV_NATIVE_AMERICA_SHORT_DESC</ShortDescription>
-			<Adjective>TXT_KEY_CIV_NATIVE_AMERICA_ADJECTIVE</Adjective>
+			<ShortDescription>TXT_KEY_CIV_INDIGENOUS_SHORT_DESC</ShortDescription>
+			<Adjective>TXT_KEY_CIV_INDIGENOUS_ADJECTIVE</Adjective>
 			<Civilopedia>TXT_KEY_CIV_NATIVE_AMERICA_PEDIA</Civilopedia>
 			<DefaultPlayerColor>PLAYERCOLOR_LIGHT_BROWN</DefaultPlayerColor>
 			<ArtDefineTag>ART_DEF_CIVILIZATION_NATIVE_AMERICA</ArtDefineTag>

@@ -18,7 +18,7 @@ iNumCivs = 38
 (iAmerica, 		iArgentina, 	iAztecs, 		iBrazil, 		iCanada, 		iChimu,			iColombia, 		iEngland, 		iFrance, 		iHaiti,			
 iHaudenosaunee,	iHawaii,		iInca,			iInuit,			iLakota,		iMaya,			iMexico, 		iMississippi,	iMuisca,		iNetherlands, 	
 iNorse,			iPeru,			iPortugal, 		iPuebloan,		iPurepecha,		iRussia,		iSpain, 		iTeotihuacan,	iTiwanaku,		iVenezuela,		
-iWari,			iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iNative,		iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
+iWari,			iZapotec,		iIndependent, 	iIndependent2, 	iIndependent3,	iIndigenous,	iMinor, 		iBarbarian) = tuple(Civ(i) for i in range(iNumCivs))
 
 lBirthOrder = [
 	iMaya,
@@ -59,7 +59,7 @@ lCivOrder = lBirthOrder + [
 	iIndependent,
 	iIndependent2,
 	iIndependent3,
-	iNative,
+	iIndigenous,
 	iBarbarian
 ]
 
@@ -76,6 +76,8 @@ iCivGroupNATO : [iAmerica, iCanada, iNorse, iEngland, iFrance, iSpain, iPortugal
 iCivGroupMesoamerica : [iMaya, iAztecs, iTeotihuacan, iZapotec, iPurepecha],
 iCivGroupAndes : [iInca, iTiwanaku, iWari, iMuisca, iChimu],
 }
+
+lNativeCivs = dCivGroups[iCivGroupNative] + [iIndigenous]
 
 # used in: Stability
 # tech groups share techs within each other on respawn
@@ -281,7 +283,7 @@ dResurrections = CivDict({
 dEnemyCivsOnSpawn = CivDict({
 iAztecs : [iTeotihuacan],
 iInca : [iTiwanaku, iWari],
-iAmerica : [iEngland, iHaudenosaunee, iIndependent, iIndependent2, iNative],
+iAmerica : [iEngland, iHaudenosaunee, iIndependent, iIndependent2, iIndigenous],
 iHaiti : [iFrance],
 iArgentina : [iSpain, iIndependent, iIndependent2],
 iMexico : [iSpain, iIndependent, iIndependent2],
@@ -451,7 +453,7 @@ lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSib
 
 # initialise unit variables to unit indices from XML
 
-iNumUnits = 154
+iNumUnits = 151
 # Land Units (101)
 # 0				1				2				3				4				5				6				7				8				9
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
@@ -478,12 +480,12 @@ iBiplane,		iFighter,		iBomber,		iNuclearBomber,
 # 0				1				2				3				4				5				6				7				8				9
 iGreatProphet, 	iGreatArtist, 	iGreatScientist,iGreatMerchant, iGreatEngineer, iGreatStatesman,iGreatGeneral,	iArgentineGreatGeneral,iGreatSpy,iFeGreatProphet,
 iFeGreatArtist,iFeGreatScientist,iFeGreatMerchant,iFeGreatEngineer,iFeGreatStatesman,iFeGreatGeneral,iFeGreatSpy,
-# Other Units (5)
+# Other Units (2)
 # 0				1				2				3				4				5				6				7				8				9
-iAfricanSlave2,	iAfricanSlave3,	iNativeSlave1,	iNativeSlaveMeso,iNativeSlave2) = range(iNumUnits)
+iSlave,			iChattleSlave) = range(iNumUnits)
 
 lAnimalUnits = [iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote]
-
+lSlaveUnits = [iSlave, iChattleSlave]
 lGreatPeopleUnits = [iGreatProphet, iGreatArtist, iGreatScientist, iGreatMerchant, iGreatEngineer, iGreatStatesman]
 
 dFemaleGreatPeople = {
@@ -582,7 +584,7 @@ iNumCivics = 126
 # Native (Culture Group 1)
 (iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iAristocracy1,	iGodKing1,		iCouncil1,		
 iDecentralization1,iClans1,		iCityStates1,	iTribalConfederacy1,iBureaucracy1,iVassalage1,	iFirstNation1,
-iTraditionalism1,iSubsistance1,	iCaptives1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iSlavery1,	
+iTraditionalism1,iSubsistance1,	iTlacotin1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iSlavery1,	
 iReciprocity1,	iCalpulli1,		iRedistribution1,iMerchants1,	iRaiding1,		iDependency1,	iTourism1,
 iAnimism1,		iHarmony1,		iSacrifice1,	iOrganizedReligion1,iCosmopolitans1,iAcculturation1,iGhostDance1,
 iSettlement1,	iNomads1,		iIsolationism1,	iConquest1,		iIntegration1,	iTributaries1,	iAncestralLands1,
@@ -803,7 +805,6 @@ lSettlers = [iSettler, iPioneer]
 lWorkers = [iWorker, iPromyshlenniki, iLaborer, iMadeireiro]
 lMissionaries = [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrigantine, iSteamship, iTransport]
-lAfricanSlaves = [iAfricanSlave2, iAfricanSlave3]
 lColonists = [iImmigrant]
 lMigrantWorkers = [iTrackman]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
@@ -825,19 +826,17 @@ lGPEngineer = [iGreatEngineer]
 lGPStatesman = [iGreatStatesman]
 lGPGeneral = [iGreatGeneral]
 
-lNativeSlaves = [iNativeSlave1, iNativeSlaveMeso, iNativeSlave2]	# Not used for Immigration
-lSlaves = lAfricanSlaves + lNativeSlaves							# Not used for Immigration
 
 lGreatPeople = lGPProphet + lGPArtist + lGPScientist + lGPMerchant + lGPEngineer + lGPStatesman + lGPGeneral
 
-lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lAfricanSlaves, lColonists, lMigrantWorkers]
+lPossibleColonists = [lSettlers, lWorkers, lMissionaries, lTransports, lColonists, lMigrantWorkers]
 
 lPossibleMercenariesLand = [lExplorers, lMilitia, lMainlineMercs, lEliteMercs, lCollateralMercs, lSkirmishMercs, lCavalryMercs, lSiegeMercs]
 lPossibleMercenariesSea = [lMainlineShips, lSkirmishShips, lCapitalShips]
 lPossibleMercenaries = lPossibleMercenariesLand + lPossibleMercenariesSea
 
 lPossibleImmigrants = lPossibleColonists + lPossibleMercenaries
-lNoTrainingNeeded = lAfricanSlaves + lColonists + lMigrantWorkers
+lNoTrainingNeeded = lColonists + lMigrantWorkers
 
 # A goal number of cities for an AI to build, used in Immigration Manager
 dNumCitiesGoal = CivDict({
@@ -968,41 +967,3 @@ iManOfWar : 			[(1750, 1875), 		[iHomelandNorthEurope]],
 iCruiser : 				[(1875, 1930), 		lHomelandsEuropePlus],
 iBattleship : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
 }
-
-
-
-# Homelands for each civ
-dHomeland = CivDict({
-iMaya : None,
-iZapotec : None,
-iTeotihuacan : None,
-iTiwanaku : None,
-iWari : None,
-iMississippi : None,
-iPuebloan : None,
-iMuisca : None,
-iNorse : iHomelandNorthEurope,
-iChimu : None,
-iInuit : None,
-iInca : None,
-iPurepecha : None,
-iAztecs : None,
-iHaudenosaunee : None,
-iLakota : None,
-iSpain : iHomelandSouthEurope,
-iPortugal : iHomelandSouthEurope,
-iEngland : iHomelandNorthEurope,
-iFrance : iHomelandSouthEurope,
-iNetherlands : iHomelandNorthEurope,
-iHawaii : iHomelandAsia,
-iRussia: iHomelandSiberia,
-iAmerica : iHomelandNorthEurope,
-iHaiti : iHomelandAfrica,
-iArgentina : iHomelandSouthEurope,
-iMexico : iHomelandSouthEurope,
-iColombia : iHomelandSouthEurope,
-iPeru : iHomelandSouthEurope,
-iBrazil : iHomelandSouthEurope,
-iVenezuela : iHomelandSouthEurope,
-iCanada : iHomelandNorthEurope,
-}, 0)

@@ -104,7 +104,7 @@ class Civilization(object):
 		self.iAdvancedStartPoints = kwargs.get("iAdvancedStartPoints")
 		
 		self.lCivics = kwargs.get("lCivics", [])
-		self.lEnemies = kwargs.get("lEnemies", []) + [iNative, iBarbarian]
+		self.lEnemies = kwargs.get("lEnemies", []) + [iIndigenous, iBarbarian]
 		#self.iMasterCiv = kwargs.get("iMasterCiv")
 		
 		self.dAttitudes = kwargs.get("dAttitudes", {})
@@ -194,7 +194,7 @@ lCivilizations = [
 	Civilization(
 		iTeotihuacan,
 		iGold=50,
-		lCivics=[iCaptives1, iRedistribution1],
+		lCivics=[iTlacotin1, iRedistribution1],
 		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
 	),
 	Civilization(
@@ -245,20 +245,20 @@ lCivilizations = [
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iDespotism1, iClans1, iCaptives1, iMerchants1],
+		lCivics=[iDespotism1, iClans1, iTlacotin1, iMerchants1],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(5).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing, *lImmigraitonTechs)
 	),
 	Civilization(
 		iPurepecha,
 		iGold=500,
-		lCivics=[iDespotism1, iCaptives1, iRedistribution1],
+		lCivics=[iDespotism1, iTlacotin1, iRedistribution1],
 		techs=techs.column(5).including(iAlloys, iConstruction, iMathematics, iWriting).without(iTrapping, *lImmigraitonTechs)
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism1, iCaptives1, iRaiding1, iOrganizedReligion1],
+		lCivics=[iDespotism1, iTlacotin1, iRaiding1, iOrganizedReligion1],
 		lEnemies=[iTeotihuacan],
 		techs=techs.column(5).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing)
 	),
@@ -316,7 +316,7 @@ lCivilizations = [
 	Civilization(
 		iHawaii,
 		iGold=200,
-		lCivics=[iCaptives1],
+		lCivics=[iTlacotin1],
 		techs=techs.column(4).including(iSeafaring, iArithmetics, iCeremony, iAstronomy, iTrade, iNavigation).without(iHunting, iTrapping, iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iSpiritualism, iHerbalism, iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess)
 	),
 	Civilization(

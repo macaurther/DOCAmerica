@@ -4886,14 +4886,9 @@ Your stability level can change during a stability check. As long it is higher t
 [ICON_BULLET]Melee and Archery units have a chance to equip advanced weapons and mounts from defeated Gunpowder and Cavalry units.
 [ICON_BULLET]Defeated siege units have a chance to be captured.
 [ICON_BULLET][LINK=UNIT_MILITIA_SPEARMAN]Militia[\LINK] is now its own upgrade path. Each Era has its own Militia. They are generally cheap to build and weak, with bonus defense in Cities.
-[H2]Slave Revolts[\H2]
-[ICON_BULLET]Slave specialists no longer generate [ICON_UNHAPPY], but instead generate Slave Revolts, sending a city into revolt and wiping out any [ICON_GREATPEOPLE] progress.
-[ICON_BULLET]Slave revolts will last 1 turn for each Slave in the city, minus 1 turn for each of its defenders.
-[ICON_BULLET]Mechanically, Slave specialists generate 2 [ICON_GREATPEOPLE] towards a Slave Revolt, as if Slave Revolts were a Great Person. 
-[ICON_BULLET]The same random select that takes place between different Great People upon a Great Person birth occurs, with one of the chances being a Slave Revolt; however, Great Person threshold is not increased when a Slave Revolt resolves.
-[ICON_BULLET]It might be a good idea to keep Slave cities separate from Great Person cities, as they can interfere. 
-[ICON_BULLET]Cities with a lot of slaves can build [LINK=BUILDING_STOCKS]Stocks[\LINK] to slow down [ICON_GREATPEOPLE] generation, therefore slowing Slave Revolts.
-[ICON_BULLET]The Slave Revolt random event has been removed.
+[H2]Slaves[\H2]
+[ICON_BULLET]TODO
+][ICON_BULLET]The Slave Revolt random event has been removed.
 [H2]Terrain[\H2]
 [ICON_BULLET]New Terrains have been added, including [LINK=TERRAIN_PRAIRIE]Prairie[\LINK] and [LINK=TERRAIN_WIDE_RIVER]Wide River[\LINK].
 [ICON_BULLET]The [LINK=TERRAIN_MARSH]Marsh[\LINK] Terrain has been reworked. It has a graphical update, and the Marsh Feature has been removed. Units are no longer restricted to moving into Marsh. Instead, a new feature, [LINK=FEATURE_BOG]Bog[\LINK], has been added. Bogs appear on Marshes and prevent most unit movements. [LINK=TERRAIN_SEMIDESERT]Swamps[\LINK] are another new feature type on Swamps that can be chopped like Forests.

@@ -4169,14 +4169,6 @@
 		<Spanish>Asia</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MISC_SLAVE_REVOLT_IN_CITY</Tag>
-		<English>A slave revolt has taken place in %s1_CityName!</English>
-		<French>A slave revolt has taken place in %s1_CityName!</French>
-		<German>A slave revolt has taken place in %s1_CityName!</German>
-		<Italian>A slave revolt has taken place in %s1_CityName!</Italian>
-		<Spanish>A slave revolt has taken place in %s1_CityName!</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_MISC_MONTICELLO</Tag>
 		<English>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</English>
 		<French>Slave unrest in %s1_CityName has been quelled by the Master of Monticello!</French>

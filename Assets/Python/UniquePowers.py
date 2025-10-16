@@ -78,8 +78,8 @@ def onImprovementBuilt(iImprovement, iOldImprovement, iX, iY):	# MacAurther: Add
 	if iImprovement > -1 and iOldImprovement == iContactedTribe:
 		iPlayer = plot(iX, iY).getOwner()
 		if iPlayer > -1 and civ(iPlayer) == iRussia:
-			makeUnit(iPlayer, iNativeSlave2, (iX, iY), UnitAITypes.UNITAI_WORKER)
-			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iNativeSlave2).getButton(), color=8, location=(iX, iY))
+			makeUnit(iPlayer, iSlave, (iX, iY), UnitAITypes.UNITAI_WORKER)
+			message(iPlayer, 'TXT_KEY_UP_ENSLAVE_WIN', sound='SND_REVOLTEND', event=1, button=infos.unit(iSlave).getButton(), color=8, location=(iX, iY))
 
 # MacAurther: Inuit UP
 @handler("cityBuilt")

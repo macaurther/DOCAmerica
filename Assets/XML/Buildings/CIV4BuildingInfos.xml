@@ -1684,7 +1684,6 @@
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iGreatPeopleRateModifier>-50</iGreatPeopleRateModifier>
 			<iHappiness>1</iHappiness>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
@@ -8661,7 +8660,6 @@
 			<Description>TXT_KEY_BUILDING_MONTICELLO</Description>
 			<Civilopedia>TXT_KEY_BUILDING_MONTICELLO_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_BUILDING_MONTICELLO_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_MONTICELLO_HELP</Help>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_MONTICELLO</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>

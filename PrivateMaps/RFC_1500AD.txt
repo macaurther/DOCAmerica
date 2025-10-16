@@ -609,14 +609,14 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_GREAT_PRIEST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=333
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=333
 			Civilization=CIVILIZATION_TEOTIHUACAN, Culture=292
 			Civilization=CIVILIZATION_AZTEC, Culture=208
 		EndCulture
 		YearFounded=-200
 		YearAcquired=1480
 		PreviousOwner=CIVILIZATION_TEOTIHUACAN
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -691,7 +691,7 @@ BeginPlot
 	x=15,y=14
 	BeginUnit
 		UnitType=UNIT_WORKER
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 EndPlot
 BeginPlot
@@ -699,7 +699,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_TRIBE
 	BeginUnit
 		UnitType=UNIT_NATIVE_SLAVE_NATIVE
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 EndPlot
 BeginPlot
@@ -824,24 +824,24 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_MILITIA_SPEARMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_SPEARMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_NATIVE
+		CityOwner=CIVILIZATION_INDIGENOUS
 		CityName=Mapuches
 		CityPopulation=1
 		BuildingType=BUILDING_GRANARY
 		BuildingType=BUILDING_BARRACKS
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=10
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=10
 		EndCulture
 		YearFounded=950
 		YearAcquired=950
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -1375,13 +1375,13 @@ BeginPlot
 		BuildingType=BUILDING_GREAT_GEOGLYPH
 		BuildingType=BUILDING_INTI_TEMPLE
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=8
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=8
 			Civilization=CIVILIZATION_TIWANAKU, Culture=91
 			Civilization=CIVILIZATION_INCA, Culture=1716
 		EndCulture
 		YearFounded=440
 		YearAcquired=1430
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 		PreviousOwner=CIVILIZATION_TIWANAKU
 	EndCity
 EndPlot
@@ -1447,10 +1447,10 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_ZAPOTEC_LIGHTNING
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_NATIVE
+		CityOwner=CIVILIZATION_INDIGENOUS
 		CityName=Tikal
 		CityPopulation=3
 		BuildingType=BUILDING_GRANARY
@@ -1467,12 +1467,12 @@ BeginPlot
 		BeginCulture
 			Civilization=CIVILIZATION_MAYA, Culture=479
 			Civilization=CIVILIZATION_ZAPOTEC, Culture=407
-			Civilization=CIVILIZATION_NATIVE, Culture=742
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=742
 		EndCulture
 		YearFounded=-500
 		YearAcquired=1495
 		PreviousOwner=CIVILIZATION_MAYA
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -1588,14 +1588,14 @@ BeginPlot
 		BuildingType=BUILDING_AQUEDUCT
 		BuildingType=BUILDING_INTI_TEMPLE
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=42
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=42
 			Civilization=CIVILIZATION_CHIMU, Culture=6
 			Civilization=CIVILIZATION_INCA, Culture=45
 		EndCulture
 		YearFounded=910
 		YearAcquired=1340
 		PreviousOwner=CIVILIZATION_CHIMU
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -1775,18 +1775,18 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_MILITIA_SPEARMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_NATIVE_SLAVE_NATIVE
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_NATIVE_SLAVE_NATIVE
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_NATIVE
+		CityOwner=CIVILIZATION_INDIGENOUS
 		CityName=Chichen Itza
 		CityPopulation=4
 		BuildingType=BUILDING_GRANARY
@@ -1803,7 +1803,7 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
 			Civilization=CIVILIZATION_MAYA, Culture=252
-			Civilization=CIVILIZATION_NATIVE, Culture=463
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=463
 		EndCulture
 		YearFounded=220
 		YearAcquired=1405

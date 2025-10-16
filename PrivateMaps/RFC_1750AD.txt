@@ -1124,15 +1124,15 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_MILITIA_SPEARMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 EndPlot
 BeginPlot
@@ -1286,26 +1286,26 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_ARCHER
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_NATIVE_SLAVE_NATIVE
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_NATIVE_SLAVE_NATIVE
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginCity
-		CityOwner=CIVILIZATION_NATIVE
+		CityOwner=CIVILIZATION_INDIGENOUS
 		CityName=Mapuches
 		CityPopulation=1
 		BuildingType=BUILDING_GRANARY
@@ -1315,11 +1315,11 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_GREAT_SCIENTIST
 		FreeSpecialistType=SPECIALIST_GREAT_GENERAL
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=10
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=10
 		EndCulture
 		YearFounded=950
 		YearAcquired=950
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -1405,7 +1405,7 @@ BeginPlot
 	x=17,y=18
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 EndPlot
 BeginPlot
@@ -1474,14 +1474,14 @@ BeginPlot
 		BuildingType=BUILDING_CATHOLIC_TEMPLE
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=116
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=116
 			Civilization=CIVILIZATION_SPAIN, Culture=233
 		EndCulture
 		YearFounded=420
 		YearAcquired=1566
 		PreviousOwner=CIVILIZATION_ZAPOTEC
 		PreviousOwner=CIVILIZATION_MAYA
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -1795,19 +1795,19 @@ BeginPlot
 	x=21,y=20
 	BeginUnit
 		UnitType=UNIT_MACEMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_SPEARMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_WARRIOR
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 EndPlot
 BeginPlot
@@ -1899,13 +1899,13 @@ BeginPlot
 		BuildingType=BUILDING_SPANISH_MISSION
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=441
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=441
 			Civilization=CIVILIZATION_SPAIN, Culture=696
 		EndCulture
 		YearFounded=-120
 		YearAcquired=1562
 		PreviousOwner=CIVILIZATION_MAYA
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -2056,13 +2056,13 @@ BeginPlot
 		BuildingType=BUILDING_GREAT_GEOGLYPH
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=10
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=10
 			Civilization=CIVILIZATION_INCA, Culture=741
 			Civilization=CIVILIZATION_SPAIN, Culture=183
 		EndCulture
 		YearFounded=440
 		YearAcquired=1528
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 		PreviousOwner=CIVILIZATION_INCA
 		PreviousOwner=CIVILIZATION_TIWANAKU
 	EndCity
@@ -2761,14 +2761,14 @@ BeginPlot
 		BuildingType=BUILDING_TEMPLE_OF_KUKULKAN
 		ReligionType=RELIGION_CATHOLICISM
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=418
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=418
 			Civilization=CIVILIZATION_SPAIN, Culture=413
 		EndCulture
 		YearFounded=260
 		YearAcquired=1572
 		PreviousOwner=CIVILIZATION_MAYA
 		PreviousOwner=CIVILIZATION_ZAPOTEC
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -2869,7 +2869,7 @@ BeginPlot
 	x=25,y=18
 	BeginUnit
 		UnitType=UNIT_MACEMAN
-		UnitOwner=CIVILIZATION_NATIVE
+		UnitOwner=CIVILIZATION_INDIGENOUS
 	EndUnit
 EndPlot
 BeginPlot
@@ -3242,13 +3242,13 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=2475
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=2475
 			Civilization=CIVILIZATION_SPAIN, Culture=6039
 		EndCulture
 		YearFounded=100
 		YearAcquired=1528
 		PreviousOwner=CIVILIZATION_TIWANAKU
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
@@ -3290,13 +3290,13 @@ BeginPlot
 		FreeSpecialistType=SPECIALIST_SLAVE
 		FreeSpecialistType=SPECIALIST_SLAVE
 		BeginCulture
-			Civilization=CIVILIZATION_NATIVE, Culture=859
+			Civilization=CIVILIZATION_INDIGENOUS, Culture=859
 			Civilization=CIVILIZATION_SPAIN, Culture=4143
 		EndCulture
 		YearFounded=1544
 		YearAcquired=1649
 		PreviousOwner=CIVILIZATION_INCA
-		PreviousOwner=CIVILIZATION_NATIVE
+		PreviousOwner=CIVILIZATION_INDIGENOUS
 	EndCity
 EndPlot
 BeginPlot
