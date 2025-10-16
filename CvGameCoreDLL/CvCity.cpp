@@ -7831,8 +7831,8 @@ int CvCity::getReligionHappiness(ReligionTypes eReligion) const
 		}
 		else
 		{
-			// Leoreth: no religion unhappiness from syncretic pairs Hinduism/Buddhism and Confucianism/Taoism
-			bool bSyncretism = ((eStateReligion == HINDUISM && eReligion == BUDDHISM) || (eStateReligion == BUDDHISM && eReligion == HINDUISM) || (eStateReligion == CONFUCIANISM && eReligion == TAOISM) || (eStateReligion == TAOISM && eReligion == CONFUCIANISM));
+			// Leoreth: no religion unhappiness from syncretic pairs Hinduism/Buddhism
+			bool bSyncretism = ((eStateReligion == HINDUISM && eReligion == BUDDHISM) || (eStateReligion == BUDDHISM && eReligion == HINDUISM));
 			if (!bSyncretism)
 				iHappiness += GET_PLAYER(getOwnerINLINE()).getNonStateReligionHappiness();
 		}
@@ -10478,7 +10478,7 @@ void CvCity::changeSpecialistCommerce(CommerceTypes eIndex, int iChange)
 	if (iChange != 0)
 	{
 		m_aiSpecialistCommerce[eIndex] = (m_aiSpecialistCommerce[eIndex] + iChange);
-		FAssert(getSpecialistCommerce(eIndex) >= 0);
+		//FAssert(getSpecialistCommerce(eIndex) >= 0);	// MacAurther: Some specialists have negative commerce change now, fogetabotit
 
 		updateCommerce(eIndex);
 	}
@@ -14916,8 +14916,6 @@ int CvCity::getTurnsToSpread(ReligionTypes eReligion) const
 
 bool CvCity::isHasPrecursor(ReligionTypes eReligion) const
 {
-	if (eReligion == CONFUCIANISM) return isHasReligion(TAOISM);
-	if (eReligion == TAOISM) return isHasReligion(CONFUCIANISM);
 	if (eReligion == BUDDHISM) return isHasReligion(HINDUISM);
 
 	if (GET_PLAYER(getOwnerINLINE()).getStateReligion() == eReligion)

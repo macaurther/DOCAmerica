@@ -79,25 +79,4 @@ tSpreadFactors = (
 	iPeriphery :	[],
 	iMinority :		[rCalifornia],
 },
-# Confucianism
-{
-	iCore :			[rOldWorld],
-	iHistorical :	[],
-	iPeriphery :	[],
-	iMinority :		[],
-},
-# Taoism
-{
-	iCore :			[rOldWorld],
-	iHistorical :	[],
-	iPeriphery :	[],
-	iMinority :		[],
-},
-# Zoroastrianism
-{
-	iCore :			[rOldWorld],
-	iHistorical :	[],
-	iPeriphery :	[],
-	iMinority :		[],
-},
 )

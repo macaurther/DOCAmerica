@@ -4366,8 +4366,6 @@ TechTypes CvPlayerAI::AI_bestTech(int iMaxPathLength, bool bIgnoreCost, bool bAs
 												if (!(GC.getGameINLINE().isReligionSlotTaken((ReligionTypes)iJ)))
 												{
 													if (iJ == JUDAISM) continue;
-													if (iJ == CONFUCIANISM || iJ == TAOISM) continue;
-													if (iJ == ZOROASTRIANISM) continue;
 
 													int iRoll = 2400;
 													if (!GC.getGame().isOption(GAMEOPTION_PICK_RELIGION))
@@ -5325,12 +5323,6 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 	// Leoreth: if state religion, even have negative relations with non-state religion civs
 	if ((GET_PLAYER(ePlayer).getStateReligion() != NO_RELIGION) && (getStateReligion() != GET_PLAYER(ePlayer).getStateReligion()))
 	{
-		// Leoreth: no penalties between Confucianism and Taoism
-		if (((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)))
-		{
-			return 0;
-		}
-
 		iAttitude += GC.getLeaderHeadInfo(getPersonalityType()).getDifferentReligionAttitudeChange();
 
 		// Leoreth: halved penalty if other civ has no state religion
@@ -5351,16 +5343,8 @@ int CvPlayerAI::AI_getDifferentReligionAttitude(PlayerTypes ePlayer) const
 		}
 	}
 
-	//Leoreth: Halved penalty for Buddhism to Confucianism, Taoism, Hinduism
-	if (((getStateReligion() == BUDDHISM) && (GET_PLAYER(ePlayer).getStateReligion() == CONFUCIANISM)) || ((getStateReligion() == CONFUCIANISM) && (GET_PLAYER(ePlayer).getStateReligion() == BUDDHISM)))
-	{
-		iAttitude /= 2;
-	}
-	if (((getStateReligion() == BUDDHISM) && (GET_PLAYER(ePlayer).getStateReligion() == TAOISM)) || ((getStateReligion() == TAOISM) && (GET_PLAYER(ePlayer).getStateReligion() == BUDDHISM)))
-	{
-		iAttitude /= 2;
-	}
-	else if (((getStateReligion() == HINDUISM) && (GET_PLAYER(ePlayer).getStateReligion() == BUDDHISM)) || ((getStateReligion() == BUDDHISM) && (GET_PLAYER(ePlayer).getStateReligion() == HINDUISM)))
+	//Leoreth: Halved penalty for Buddhism to Hinduism
+	if (((getStateReligion() == HINDUISM) && (GET_PLAYER(ePlayer).getStateReligion() == BUDDHISM)) || ((getStateReligion() == BUDDHISM) && (GET_PLAYER(ePlayer).getStateReligion() == HINDUISM)))
 	{
 		iAttitude /= 2;
 	}

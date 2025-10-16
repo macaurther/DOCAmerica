@@ -20,25 +20,10 @@ dGoals = {
 		GoldenAges(3),
 		BestPopulationCities(5, subject=STATE_RELIGION, iReligion=iHinduism)
 	),
-	iZoroastrianism: (
-		ResourceCount(iIncense, 6),
-		ReligionSpreadPercent(iZoroastrianism, 10),
-		CityCultureLevel(holy_city(iZoroastrianism), iCultureLevelLegendary),
-	),
 	iJudaism: (
 		SpecialistCount(sum(iSpecialistGreatProphet, iSpecialistGreatScientist, iSpecialistGreatStatesman), 15, subject=STATE_RELIGION, iReligion=iJudaism),
 		CityCultureLevel(holy_city(iJudaism), iCultureLevelLegendary),
 		AttitudeCount(AttitudeTypes.ATTITUDE_FRIENDLY, 6, iReligion=iJudaism),
-	),
-	iConfucianism: (
-		AttitudeCount(AttitudeTypes.ATTITUDE_FRIENDLY, 5),
-		CityBuildingCount(holy_city(iConfucianism), wonders(), 5),
-		UnitCombatCount(sum(UnitCombatTypes.UNITCOMBAT_MELEE, UnitCombatTypes.UNITCOMBAT_GUN), 200),
-	),
-	iTaoism: (
-		HealthiestTurns(100),
-		ShrineIncome(sum(iConfucianism, iTaoism), 40),
-		CityCultureLevel(holy_city(iTaoism), iCultureLevelLegendary),
 	),
 	iBuddhism: (
 		PeaceTurns(100),

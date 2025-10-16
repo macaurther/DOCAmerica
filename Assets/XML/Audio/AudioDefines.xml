@@ -3626,34 +3626,6 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>SND_BUILD_CONFUCIAN</SoundID>
-			<Filename>Sounds/Buildings/ConfucianistDink</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SND_BUILD_CONFUCIAN_MOVIE</SoundID>
-			<Filename>Sounds/Buildings/Confuscianist</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SND_BUILD_TAOIST</SoundID>
-			<Filename>Sounds/Buildings/TaoistDink</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SND_BUILD_TAOIST_MOVIE</SoundID>
-			<Filename>Sounds/Buildings/Taoist</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
 			<SoundID>SND_BUILD_PYRAMID</SoundID>
 			<Filename>Sounds/Buildings/Pyramid</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
@@ -5462,13 +5434,6 @@
 		<SoundData>
 			<SoundID>SND_CHRIST_MISSIONARY_ACTIVATE</SoundID>
 			<Filename>Sounds/Units/ChristMissionaryActivate</Filename>
-			<LoadType>DYNAMIC_RES</LoadType>
-			<bIsCompressed>1</bIsCompressed>
-			<bInGeneric>1</bInGeneric>
-		</SoundData>
-		<SoundData>
-			<SoundID>SND_CONFUCIAN_MISS_ACTIVATE</SoundID>
-			<Filename>Sounds/Units/ConfucianMissActivate</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>

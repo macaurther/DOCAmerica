@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from Consts import iAncientEra, iClassicalEra, iExplorationEra, iColonialEra, iRevolutionaryEra, iIndustrialEra, iModernEra
-from Consts import iHinduism, iZoroastrianism, iBuddhism, iConfucianism, iTaoism, iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam
+from Consts import iHinduism, iBuddhism, iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam
 from Core import player, is_minor, cities, listify, none, game, city_
 from StoredData import data
 from Civics import isCommunist, isFascist, isRepublic, isAutocratic

@@ -12221,18 +12221,6 @@
 					<BuildingType>BUILDING_BUDDHIST_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
-				<Building>
-					<BuildingType>BUILDING_CONFUCIAN_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_TAOIST_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_ZOROASTRIAN_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
 			</Buildings>
 			<Flavors>
 				<Flavor>
@@ -12961,18 +12949,6 @@
 				</Building>
 				<Building>
 					<BuildingType>BUILDING_BUDDHIST_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_CONFUCIAN_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_TAOIST_SHRINE</BuildingType>
-					<bBuilding>1</bBuilding>
-				</Building>
-				<Building>
-					<BuildingType>BUILDING_ZOROASTRIAN_SHRINE</BuildingType>
 					<bBuilding>1</bBuilding>
 				</Building>
 			</Buildings>

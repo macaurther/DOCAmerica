@@ -3487,12 +3487,6 @@ BeginPlot
 		HolyCityReligionType=RELIGION_HINDUISM
 		ReligionType=RELIGION_BUDDHISM
 		HolyCityReligionType=RELIGION_BUDDHISM
-		ReligionType=RELIGION_CONFUCIANISM
-		HolyCityReligionType=RELIGION_CONFUCIANISM
-		ReligionType=RELIGION_TAOISM
-		HolyCityReligionType=RELIGION_TAOISM
-		ReligionType=RELIGION_ZOROASTRIANISM
-		HolyCityReligionType=RELIGION_ZOROASTRIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDEPENDENT3, Culture=1627
 		EndCulture

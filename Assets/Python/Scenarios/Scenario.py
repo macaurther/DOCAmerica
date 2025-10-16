@@ -116,9 +116,6 @@ RELIGION_FOUNDING_DATES = {
 	iIslam: 622,
 	iHinduism: -1500,
 	iBuddhism: 80,
-	iConfucianism: -500,
-	iTaoism: -400,
-	iZoroastrianism: -600
 }
 
 WONDER_ORIGINAL_BUILDERS = {

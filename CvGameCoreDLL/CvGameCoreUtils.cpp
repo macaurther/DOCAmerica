@@ -1842,7 +1842,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 				// MacAurther: Strait Feature: Ships can move through corners
 				if (!(pFromPlot->isStrait()) && !(pToPlot->isStrait()))
 				{
-					return FALSE;
+					return false;
 				}
 			}
 		}
@@ -1859,7 +1859,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 			{
 				if (!GET_TEAM(GET_PLAYER(pSelectionGroup->getHeadUnit()->getOwner()).getTeam()).isHasTech((TechTypes)PATHFINDING))
 				{
-					return FALSE;
+					return false;
 				}
 			}
 			// MacAurther: Straits: Can't cross straits as a land unit unless has Amphibious or there is a bridge
@@ -1869,7 +1869,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 				if (!pSelectionGroup->getHeadUnit()->isHasPromotion(PROMOTION_AMPHIBIOUS) &&
 					!(GET_TEAM(pSelectionGroup->getHeadUnit()->getTeam()).isBridgeBuilding() && pFromPlot->isRoute() && pToPlot->isRoute()))
 				{
-					return FALSE;
+					return false;
 				}
 			}
 			// MacAurther: Canyons: Can't cross a river with a canyon
@@ -1878,7 +1878,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 				const DirectionTypes eDir = directionXY(pFromPlot, pToPlot);
 				if(pFromPlot->isRiverCrossing(eDir))
 				{
-					return FALSE;
+					return false;
 				}
 			}
 		}
@@ -2724,8 +2724,6 @@ UnitTypes getUniqueUnit(CivilizationTypes eCivilization, UnitTypes eUnit)
 
 bool isPrecursor(ReligionTypes ePrecursor, ReligionTypes eReligion)
 {
-	if (ePrecursor == CONFUCIANISM && eReligion == TAOISM) return true;
-	if (ePrecursor == TAOISM && eReligion == CONFUCIANISM) return true;
 	if (ePrecursor == HINDUISM && eReligion == BUDDHISM) return true;
 	if ((ePrecursor == CATHOLICISM || ePrecursor == ORTHODOXY) && eReligion == ISLAM) return true;
 	if (ePrecursor == JUDAISM && (eReligion == CATHOLICISM || eReligion == ORTHODOXY)) return true;

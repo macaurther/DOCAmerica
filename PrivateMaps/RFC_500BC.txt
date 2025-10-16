@@ -94,9 +94,6 @@ BeginPlot
 		HolyCityReligionType=RELIGION_JUDAISM
 		HolyCityReligionType=RELIGION_HINDUISM
 		HolyCityReligionType=RELIGION_BUDDHISM
-		HolyCityReligionType=RELIGION_CONFUCIANISM
-		HolyCityReligionType=RELIGION_TAOISM
-		HolyCityReligionType=RELIGION_ZOROASTRIANISM
 		BeginCulture
 			Civilization=CIVILIZATION_INDEPENDENT3, Culture=10
 		EndCulture

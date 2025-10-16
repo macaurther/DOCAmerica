@@ -1831,8 +1831,6 @@ def isTolerated(iPlayer, iReligion):
 	if pPlayer.getCivics(4) in [iOpportunity2, iOpportunity3, iEgalitarianism3]: return True
 	
 	# Exceptions
-	if iStateReligion == iConfucianism and iReligion == iTaoism: return True
-	if iStateReligion == iTaoism and iReligion == iConfucianism: return True
 	if iStateReligion == iHinduism and iReligion == iBuddhism: return True
 	if iStateReligion == iBuddhism and iReligion == iHinduism: return True
 	

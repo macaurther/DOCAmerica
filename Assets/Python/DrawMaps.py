@@ -25,8 +25,8 @@ rMesoamerica,   rCaribbean, 	rHawaii, 		rColombia, 		rVenezuela, 	rGuyana, 		rPe
 rBahia,         rMinasGerais,   rMatoGrosso,    rParana,        rChile, 		rParaguay, 		rUruguay, 		rChaco,         rCuyo,          rPampas, 		
 rPatagonia, 	rOldWorld		) = range(iNumRegions)
 
-iNumReligions = 10
-(iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam, iHinduism, iBuddhism, iConfucianism, iTaoism, iZoroastrianism) = range(iNumReligions)
+iNumReligions = 7
+(iJudaism, iOrthodoxy, iCatholicism, iProtestantism, iIslam, iHinduism, iBuddhism) = range(iNumReligions)
 
 iNumReligionMapTypes = 5
 (iNone, iMinority, iPeriphery, iHistorical, iCore) = range(iNumReligionMapTypes)
@@ -75,9 +75,6 @@ dReligionNames = {
 	iIslam: "Islam",
 	iHinduism: "Hinduism",
 	iBuddhism: "Buddhism",
-	iConfucianism: "Confucianism",
-	iTaoism: "Taoism",
-	iZoroastrianism: "Zoroastrianism",
 }
 
 
@@ -194,27 +191,6 @@ tSpreadFactors = (
 	iHistorical :	[],
 	iPeriphery :	[],
 	iMinority :		[rCalifornia],
-},
-# Confucianism
-{
-	iCore :			[rOldWorld],
-	iHistorical :	[],
-	iPeriphery :	[],
-	iMinority :		[],
-},
-# Taoism
-{
-	iCore :			[rOldWorld],
-	iHistorical :	[],
-	iPeriphery :	[],
-	iMinority :		[],
-},
-# Zoroastrianism
-{
-	iCore :			[rOldWorld],
-	iHistorical :	[],
-	iPeriphery :	[],
-	iMinority :		[],
 },
 )
 

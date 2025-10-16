@@ -8490,7 +8490,7 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 			iValue += pLoopCity->getPopulation();
 			iValue += GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("FOUND_RELIGION_CITY_RAND"), "Found Religion");
 
-            if (eReligion != BUDDHISM && eReligion != TAOISM)
+            if (eReligion != BUDDHISM)
 			{
                 iValue /= (pLoopCity->getReligionCount() + 1);
 			}
@@ -8507,31 +8507,6 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 				iValue *= 3;
 				iValue /= 5;
 			}
-			if ((pLoopCity->getX() == 60 && pLoopCity->getY() == 44) || (pLoopCity->getX() == 73 && pLoopCity->getY() == 38)) //Rome or Jerusalem
-			{
-				if (eReligion == CATHOLICISM || eReligion == ORTHODOXY || eReligion == ISLAM)
-					iValue *= 2;
-				//iValue /= 3;
-			}
-			if (pLoopCity->getX() == 59 && pLoopCity->getY() == 47) //Milan
-			{
-				iValue /= 2;
-			}
-			if (pLoopCity->getX() == 71 && pLoopCity->getY() == 43) //Gordium
-			{
-				iValue /= 8;
-			}
-			if (pLoopCity->getX() == 94 && pLoopCity->getY() == 40) // Pataliputra
-			{
-				if (eReligion == HINDUISM || eReligion == BUDDHISM)
-				{
-					iValue *= 4;
-				}
-			}
-			if (eReligion == ZOROASTRIANISM && pLoopCity->getX() == 82 && pLoopCity->getY() == 39) //Parsa
-			{
-				iValue *= 8;
-			}
 
 			if (eReligion == ORTHODOXY)
 			{
@@ -8542,10 +8517,6 @@ void CvPlayer::foundReligion(ReligionTypes eReligion, ReligionTypes eSlotReligio
 			if (eReligion == (ReligionTypes)PROTESTANTISM)
 			{
 				int iRegion = pLoopCity->getRegionID();
-				/*if (iRegion != REGION_BRITAIN && iRegion != REGION_IBERIA && iRegion != REGION_ITALY && iRegion != REGION_BALKANS && iRegion != REGION_EUROPE && iRegion != REGION_SCANDINAVIA && iRegion != REGION_RUSSIA)
-				{
-					iValue = 5;
-				}*/
 
 				int iCapitalRegion = getCapitalCity()->getRegionID();
 				if (iRegion == iCapitalRegion)
@@ -24905,8 +24876,6 @@ bool CvPlayer::isTolerating(ReligionTypes eReligion) const
 
 	if (eStateReligion == HINDUISM && eReligion == BUDDHISM) return true;
 	if (eStateReligion == BUDDHISM && eReligion == HINDUISM) return true;
-	if (eStateReligion == CONFUCIANISM && eReligion == TAOISM) return true;
-	if (eStateReligion == TAOISM && eReligion == CONFUCIANISM) return true;
 
 	return false;
 }

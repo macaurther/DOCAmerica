@@ -6170,6 +6170,15 @@ bool CvUnit::canJoin(const CvPlot* pPlot, SpecialistTypes eSpecialist) const
 		}
 	}
 
+	// MacAurther: Make sure Immigrants can't join if not enough immigration
+	if (eSpecialist == SPECIALIST_IMMIGRANT)
+	{
+		if(pCity->getCommerceRate(COMMERCE_IMMIGRATION) + GC.getSpecialistInfo(SPECIALIST_IMMIGRANT).getCommerceChange(COMMERCE_IMMIGRATION) < 0)
+		{
+			return false;
+		}
+	}
+
 	return true;
 }
 
