@@ -144,7 +144,7 @@ def giftedCityDefenders(city):
 @handler("goodyReceived")
 def cooperationAbility(iPlayer, pPlot, pUnit, iGoodyType):
 	iExpansionCivic = player(iPlayer).getCivics(iCivicsExpansion)
-	if iExpansionCivic == iCooperation1:
+	if iExpansionCivic == iIntegration1:
 		if player(iPlayer).getNumCities() > 0:
 			pCity = closestCity(pPlot, iPlayer)
 			if pCity and distance(pPlot, pCity) <= 10:
@@ -543,7 +543,8 @@ def isBribableUnit(iPlayer, unit):
 
 def getPossibleBribes(iPlayer, location):
 	iTreasury = player(iPlayer).getGold()
-	targets = [(unit, infos.unit(unit).getProductionCost() * 3 / 2) for unit in units.at(location).owner(iBarbarian)]
+	targets = [(unit, infos.unit(unit).getProductionCost() * 3 / 2) for unit in units.at(location).owner(iNative)]	# MacAurther: Can bribe Natives instead of Barbs
+	print("Targets: " + str(targets))
 	return [(unit, iCost) for unit, iCost in targets if isBribableUnit(iPlayer, unit) and iCost <= iTreasury]
 
 
@@ -591,7 +592,7 @@ def doUnitBribes(spy):
 
 @handler("civicChanged")
 def onCivicChanged(iPlayer, iOldCivic, iNewCivic):
-	if iNewCivic == iConfederacy1:
+	if iNewCivic == iTribalConfederacy1:
 		for pPlot in plots.all().owner(iPlayer):
 			# Convert Tribes to Allied Tribe
 			if pPlot.getImprovementType() == iTribe:

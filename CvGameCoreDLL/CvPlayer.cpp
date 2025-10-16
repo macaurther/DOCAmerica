@@ -5709,7 +5709,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 				receiveGoody(pPlot, eGoody, pUnit);
 
 				// MacAurther: Native Confederacy Power
-				if (hasCivic(CIVIC_CONFEDERACY_NATIVE))
+				if (hasCivic(CIVIC_TRIBAL_CONFEDERACY_NATIVE))
 				{
 					pPlot->improveTile();
 				}
@@ -8127,7 +8127,7 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	// Haudenosaunee UP: starts with Confederacy
 	if (getCivilizationType() == HAUDENOSAUNEE)
 	{
-		if (eCivic == CIVIC_CONFEDERACY_NATIVE)
+		if (eCivic == CIVIC_TRIBAL_CONFEDERACY_NATIVE)
 		{
 			return true;
 		}

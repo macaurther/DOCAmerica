@@ -580,12 +580,12 @@ iNumBuildingsPaganTemples = iNumBuildingsPlague + iNumPaganTemples
 iNumCivics = 126
 #				2				3				4				5				6				7				
 # Native (Culture Group 1)
-(iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iAristocracy1,	iCouncil1,		iGodKing1,
-iAuthority1,	iCustomaryLaw1,	iCityStates1,	iConfederacy1,	iBureaucracy1,	iVassalage1,	iFirstNation1,
+(iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iAristocracy1,	iGodKing1,		iCouncil1,		
+iDecentralization1,iClans1,		iCityStates1,	iTribalConfederacy1,iBureaucracy1,iVassalage1,	iFirstNation1,
 iTraditionalism1,iSubsistance1,	iCaptives1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iSlavery1,	
-iReciprocity1,	iCommune1,		iRedistribution1,iMerchants1,	iPlunder1,		iDependency1,	iTourism1,
-iAnimism1,		iHarmony1,		iIsolationism1,	iOrganizedReligion1,iCosmopolis1,iAcculturation1,iSovereignty1,
-iSettlement1,	iNomads1,		iDiffusion1,	iCooperation1,	iConquest1,		iTributaries1,	iAncestralLands1,
+iReciprocity1,	iCalpulli1,		iRedistribution1,iMerchants1,	iRaiding1,		iDependency1,	iTourism1,
+iAnimism1,		iHarmony1,		iSacrifice1,	iOrganizedReligion1,iCosmopolitans1,iAcculturation1,iGhostDance1,
+iSettlement1,	iNomads1,		iIsolationism1,	iConquest1,		iIntegration1,	iTributaries1,	iAncestralLands1,
 # Colony
 iCaptains2,		iProprietaries2,iViceroyalty2,	iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
 iExpedition2,	iAdmiralty2,	iCharterColony2,iTradingCompany2,iRoyalColony2,	iCommonLaw2,	iProvinces2,

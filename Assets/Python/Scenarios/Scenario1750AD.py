@@ -16,19 +16,19 @@ lCivilizations = [
 	Civilization(
 		iInuit,
 		iGold=50,
-		lCivics=[iDespotism1, iHarmony1, iDiffusion1],
+		lCivics=[iDespotism1, iHarmony1, iSacrifice1],
 		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
 	),
 	Civilization(
 		iHaudenosaunee,
 		iGold=300,
-		lCivics=[iCouncil1, iConfederacy1, iCaptives1, iMerchants1, iAcculturation1, iCooperation1],
+		lCivics=[iCouncil1, iTribalConfederacy1, iCaptives1, iMerchants1, iAcculturation1, iIntegration1],
 		techs=techs.column(7).without(*lImmigraitonTechs),
 	),
 	Civilization(
 		iLakota,
 		iGold=100,
-		lCivics=[iChiefdom1, iCustomaryLaw1, iCaptives1, iMerchants1, iHarmony1, iNomads1],
+		lCivics=[iChiefdom1, iClans1, iCaptives1, iMerchants1, iHarmony1, iNomads1],
 		techs=techs.column(7).without(*lImmigraitonTechs),
 	),
 	Civilization(
@@ -84,7 +84,7 @@ lCivilizations = [
 	Civilization(
 		iHawaii,
 		iGold=150,
-		lCivics=[iMonarchy1, iCustomaryLaw1, iCaptives1, iMerchants1, iIsolationism1, iConquest1],
+		lCivics=[iMonarchy1, iClans1, iCaptives1, iMerchants1, iIsolationism1, iConquest1],
 		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess),
 	),
 	Civilization(

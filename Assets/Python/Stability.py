@@ -946,713 +946,713 @@ def getCivicStability(iPlayer, civics=None):
 		civics = Civics.player(iPlayer)
     
     # Confederacy doesn't care about synergies or antisynergies
-	if iConfederacy3 in civics:
-		return 0
-	
+	# if iConfederacy3 in civics:
+	# 	return 0
+	# MacAurther TODO
 	iCurrentEra = player(iPlayer).getCurrentEra()
 	iStability = 0
 	
-	# Native
-	#	Executive
-	if iChiefdom1 in civics:
-		if iCustomaryLaw1 in civics: iStability += 2
-		if iBureaucracy1 in civics: iStability -= 2
-		if iSubsistance1 in civics: iStability += 2
-		if iMita1 in civics: iStability -= 2
-		if iCommune1 in civics: iStability += 2
-		if iPlunder1 in civics: iStability -= 2
-		if iHarmony1 in civics: iStability += 2
-		if iCosmopolis1 in civics: iStability -= 2
-		if iNomads1 in civics: iStability += 2
-		if iTributaries1 in civics: iStability -= 2
+	# # Native
+	# #	Executive
+	# if iChiefdom1 in civics:
+	# 	if iClans1 in civics: iStability += 2
+	# 	if iBureaucracy1 in civics: iStability -= 2
+	# 	if iSubsistance1 in civics: iStability += 2
+	# 	if iMita1 in civics: iStability -= 2
+	# 	if iCalpulli1 in civics: iStability += 2
+	# 	if iRaiding1 in civics: iStability -= 2
+	# 	if iHarmony1 in civics: iStability += 2
+	# 	if iCosmopolitans1 in civics: iStability -= 2
+	# 	if iNomads1 in civics: iStability += 2
+	# 	if iTributaries1 in civics: iStability -= 2
 	
-	if iDespotism1 in civics:
-		if iCustomaryLaw1 in civics: iStability -= 2
-		if iConfederacy1 in civics: iStability -= 2
-		if iMita1 in civics: iStability += 2
-		if iSlavery1 in civics: iStability += 2
-		if iCommune1 in civics: iStability -= 2
-		if iRedistribution1 in civics: iStability += 2
-		if iAcculturation1 in civics: iStability -= 2
-		if iSovereignty1 in civics: iStability += 2
-		if iConquest1 in civics: iStability += 2
-		if iCooperation1 in civics: iStability -= 2
+	# if iDespotism1 in civics:
+	# 	if iClans1 in civics: iStability -= 2
+	# 	if iTribalConfederacy1 in civics: iStability -= 2
+	# 	if iMita1 in civics: iStability += 2
+	# 	if iSlavery1 in civics: iStability += 2
+	# 	if iCalpulli1 in civics: iStability -= 2
+	# 	if iRedistribution1 in civics: iStability += 2
+	# 	if iAcculturation1 in civics: iStability -= 2
+	# 	if iSovereignty1 in civics: iStability += 2
+	# 	if iConquest1 in civics: iStability += 2
+	# 	if iIntegration1 in civics: iStability -= 2
 	
-	if iMonarchy1 in civics:
-		if iCityStates1 in civics: iStability -= 2
-		if iFirstNation1 in civics: iStability += 2
-		if iCraftsmen1 in civics: iStability += 2
-		if iCasteSystem1 in civics: iStability += 2
-		if iRedistribution1 in civics: iStability += 2
-		if iDependency1 in civics: iStability += 2
-		if iIsolationism1 in civics: iStability += 2
-		if iAcculturation1 in civics: iStability += 2
-		if iDiffusion1 in civics: iStability += 2
-		if iConquest1 in civics: iStability -= 2
+	# if iMonarchy1 in civics:
+	# 	if iCityStates1 in civics: iStability -= 2
+	# 	if iFirstNation1 in civics: iStability += 2
+	# 	if iCraftsmen1 in civics: iStability += 2
+	# 	if iCasteSystem1 in civics: iStability += 2
+	# 	if iRedistribution1 in civics: iStability += 2
+	# 	if iDependency1 in civics: iStability += 2
+	# 	if iIsolationism1 in civics: iStability += 2
+	# 	if iAcculturation1 in civics: iStability += 2
+	# 	if iSacrifice1 in civics: iStability += 2
+	# 	if iConquest1 in civics: iStability -= 2
 	
-	if iCouncil1 in civics:
-		if iConfederacy1 in civics: iStability += 2
-		if iVassalage1 in civics: iStability -= 2
-		if iCaptives1 in civics: iStability -= 2
-		if iCraftsmen1 in civics: iStability += 2
-		if iMerchants1 in civics: iStability += 2
-		if iTourism1 in civics: iStability += 2
-		if iHarmony1 in civics: iStability += 2
-		if iOrganizedReligion1 in civics: iStability -= 2
-		if iDiffusion1 in civics: iStability -= 2
-		if iAncestralLands1 in civics: iStability += 2
+	# if iCouncil1 in civics:
+	# 	if iTribalConfederacy1 in civics: iStability += 2
+	# 	if iVassalage1 in civics: iStability -= 2
+	# 	if iCaptives1 in civics: iStability -= 2
+	# 	if iCraftsmen1 in civics: iStability += 2
+	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iTourism1 in civics: iStability += 2
+	# 	if iHarmony1 in civics: iStability += 2
+	# 	if iOrganizedReligion1 in civics: iStability -= 2
+	# 	if iSacrifice1 in civics: iStability -= 2
+	# 	if iAncestralLands1 in civics: iStability += 2
 	
-	if iAristocracy1 in civics:
-		if iCityStates1 in civics: iStability += 2
-		if iBureaucracy1 in civics: iStability += 2
-		if iSubsistance1 in civics: iStability -= 2
-		if iCasteSystem1 in civics: iStability += 2
-		if iMerchants1 in civics: iStability += 2
-		if iDependency1 in civics: iStability -= 2
-		if iCosmopolis1 in civics: iStability += 2
-		if iIsolationism1 in civics: iStability -= 2
-		if iNomads1 in civics: iStability -= 2
-		if iCooperation1 in civics: iStability += 2
+	# if iAristocracy1 in civics:
+	# 	if iCityStates1 in civics: iStability += 2
+	# 	if iBureaucracy1 in civics: iStability += 2
+	# 	if iSubsistance1 in civics: iStability -= 2
+	# 	if iCasteSystem1 in civics: iStability += 2
+	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iDependency1 in civics: iStability -= 2
+	# 	if iCosmopolitans1 in civics: iStability += 2
+	# 	if iIsolationism1 in civics: iStability -= 2
+	# 	if iNomads1 in civics: iStability -= 2
+	# 	if iIntegration1 in civics: iStability += 2
 	
-	if iGodKing1 in civics:
-		if iVassalage1 in civics: iStability += 2
-		if iFirstNation1 in civics: iStability -= 2
-		if iCaptives1 in civics: iStability += 2
-		if iSlavery1 in civics: iStability += 2
-		if iPlunder1 in civics: iStability += 2
-		if iTourism1 in civics: iStability -= 2
-		if iOrganizedReligion1 in civics: iStability += 2
-		if iSovereignty1 in civics: iStability += 2
-		if iTributaries1 in civics: iStability += 2
-		if iAncestralLands1 in civics: iStability -= 2
+	# if iGodKing1 in civics:
+	# 	if iVassalage1 in civics: iStability += 2
+	# 	if iFirstNation1 in civics: iStability -= 2
+	# 	if iCaptives1 in civics: iStability += 2
+	# 	if iSlavery1 in civics: iStability += 2
+	# 	if iRaiding1 in civics: iStability += 2
+	# 	if iTourism1 in civics: iStability -= 2
+	# 	if iOrganizedReligion1 in civics: iStability += 2
+	# 	if iSovereignty1 in civics: iStability += 2
+	# 	if iTributaries1 in civics: iStability += 2
+	# 	if iAncestralLands1 in civics: iStability -= 2
 	
-	#	Administration
-	if iCustomaryLaw1 in civics:
-		if iCraftsmen1 in civics: iStability += 2
-		if iSlavery1 in civics: iStability -= 2
-		if iCommune1 in civics: iStability += 2
-		if iPlunder1 in civics: iStability -= 2
-		if iAcculturation1 in civics: iStability += 2
-		if iSovereignty1 in civics: iStability -= 2
-		if iNomads1 in civics: iStability += 2
-		if iTributaries1 in civics: iStability -= 2
+	# #	Administration
+	# if iClans1 in civics:
+	# 	if iCraftsmen1 in civics: iStability += 2
+	# 	if iSlavery1 in civics: iStability -= 2
+	# 	if iCalpulli1 in civics: iStability += 2
+	# 	if iRaiding1 in civics: iStability -= 2
+	# 	if iAcculturation1 in civics: iStability += 2
+	# 	if iSovereignty1 in civics: iStability -= 2
+	# 	if iNomads1 in civics: iStability += 2
+	# 	if iTributaries1 in civics: iStability -= 2
 	
-	if iCityStates1 in civics:
-		if iSubsistance1 in civics: iStability -= 2
-		if iCaptives1 in civics: iStability += 2
-		if iRedistribution1 in civics: iStability += 2
-		if iTourism1 in civics: iStability -= 2
-		if iHarmony1 in civics: iStability -= 2
-		if iCosmopolis1 in civics: iStability += 2
-		if iNomads1 in civics: iStability -= 2
-		if iDiffusion1 in civics: iStability += 2
+	# if iCityStates1 in civics:
+	# 	if iSubsistance1 in civics: iStability -= 2
+	# 	if iCaptives1 in civics: iStability += 2
+	# 	if iRedistribution1 in civics: iStability += 2
+	# 	if iTourism1 in civics: iStability -= 2
+	# 	if iHarmony1 in civics: iStability -= 2
+	# 	if iCosmopolitans1 in civics: iStability += 2
+	# 	if iNomads1 in civics: iStability -= 2
+	# 	if iSacrifice1 in civics: iStability += 2
 	
-	if iConfederacy1 in civics:
-		if iSubsistance1 in civics: iStability += 2
-		if iCasteSystem1 in civics: iStability -= 2
-		if iMerchants1 in civics: iStability -= 2
-		if iDependency1 in civics: iStability += 2
-		if iHarmony1 in civics: iStability += 2
-		if iIsolationism1 in civics: iStability -= 2
-		if iConquest1 in civics: iStability -= 2
-		if iCooperation1 in civics: iStability += 2
+	# if iTribalConfederacy1 in civics:
+	# 	if iSubsistance1 in civics: iStability += 2
+	# 	if iCasteSystem1 in civics: iStability -= 2
+	# 	if iMerchants1 in civics: iStability -= 2
+	# 	if iDependency1 in civics: iStability += 2
+	# 	if iHarmony1 in civics: iStability += 2
+	# 	if iIsolationism1 in civics: iStability -= 2
+	# 	if iConquest1 in civics: iStability -= 2
+	# 	if iIntegration1 in civics: iStability += 2
 	
-	if iBureaucracy1 in civics:
-		if iCaptives1 in civics: iStability -= 2
-		if iMita1 in civics: iStability += 2
-		if iMerchants1 in civics: iStability += 2
-		if iDependency1 in civics: iStability -= 2
-		if iCosmopolis1 in civics: iStability -= 2
-		if iIsolationism1 in civics: iStability += 2
-		if iTributaries1 in civics: iStability += 2
-		if iAncestralLands1 in civics: iStability -= 2
+	# if iBureaucracy1 in civics:
+	# 	if iCaptives1 in civics: iStability -= 2
+	# 	if iMita1 in civics: iStability += 2
+	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iDependency1 in civics: iStability -= 2
+	# 	if iCosmopolitans1 in civics: iStability -= 2
+	# 	if iIsolationism1 in civics: iStability += 2
+	# 	if iTributaries1 in civics: iStability += 2
+	# 	if iAncestralLands1 in civics: iStability -= 2
 	
-	if iVassalage1 in civics:
-		if iCraftsmen1 in civics: iStability -= 2
-		if iSlavery1 in civics: iStability += 2
-		if iCommune1 in civics: iStability -= 2
-		if iPlunder1 in civics: iStability += 2
-		if iOrganizedReligion1 in civics: iStability += 2
-		if iAcculturation1 in civics: iStability -= 2
-		if iConquest1 in civics: iStability += 2
-		if iCooperation1 in civics: iStability -= 2
+	# if iVassalage1 in civics:
+	# 	if iCraftsmen1 in civics: iStability -= 2
+	# 	if iSlavery1 in civics: iStability += 2
+	# 	if iCalpulli1 in civics: iStability -= 2
+	# 	if iRaiding1 in civics: iStability += 2
+	# 	if iOrganizedReligion1 in civics: iStability += 2
+	# 	if iAcculturation1 in civics: iStability -= 2
+	# 	if iConquest1 in civics: iStability += 2
+	# 	if iIntegration1 in civics: iStability -= 2
 	
-	if iFirstNation1 in civics:
-		if iMita1 in civics: iStability -= 2
-		if iCasteSystem1 in civics: iStability += 2
-		if iRedistribution1 in civics: iStability -= 2
-		if iTourism1 in civics: iStability += 2
-		if iOrganizedReligion1 in civics: iStability -= 2
-		if iSovereignty1 in civics: iStability += 2
-		if iDiffusion1 in civics: iStability -= 2
-		if iAncestralLands1 in civics: iStability += 2
+	# if iFirstNation1 in civics:
+	# 	if iMita1 in civics: iStability -= 2
+	# 	if iCasteSystem1 in civics: iStability += 2
+	# 	if iRedistribution1 in civics: iStability -= 2
+	# 	if iTourism1 in civics: iStability += 2
+	# 	if iOrganizedReligion1 in civics: iStability -= 2
+	# 	if iSovereignty1 in civics: iStability += 2
+	# 	if iSacrifice1 in civics: iStability -= 2
+	# 	if iAncestralLands1 in civics: iStability += 2
 	
-	#	Labor
-	if iSubsistance1 in civics:
-		if iCommune1 in civics: iStability += 2
-		if iRedistribution1 in civics: iStability -= 2
-		if iHarmony1 in civics: iStability += 2
-		if iCosmopolis1 in civics: iStability -= 2
-		if iNomads1 in civics: iStability += 2
-		if iTributaries1 in civics: iStability -= 2
+	# #	Labor
+	# if iSubsistance1 in civics:
+	# 	if iCalpulli1 in civics: iStability += 2
+	# 	if iRedistribution1 in civics: iStability -= 2
+	# 	if iHarmony1 in civics: iStability += 2
+	# 	if iCosmopolitans1 in civics: iStability -= 2
+	# 	if iNomads1 in civics: iStability += 2
+	# 	if iTributaries1 in civics: iStability -= 2
 	
-	if iCaptives1 in civics:
-		if iMerchants1 in civics: iStability -= 2
-		if iPlunder1 in civics: iStability += 2
-		if iOrganizedReligion1 in civics: iStability += 2
-		if iIsolationism1 in civics: iStability += 2
-		if iDiffusion1 in civics: iStability += 2
-		if iAncestralLands1 in civics: iStability -= 2
+	# if iCaptives1 in civics:
+	# 	if iMerchants1 in civics: iStability -= 2
+	# 	if iRaiding1 in civics: iStability += 2
+	# 	if iOrganizedReligion1 in civics: iStability += 2
+	# 	if iIsolationism1 in civics: iStability += 2
+	# 	if iSacrifice1 in civics: iStability += 2
+	# 	if iAncestralLands1 in civics: iStability -= 2
 	
-	if iMita1 in civics:
-		if iRedistribution1 in civics: iStability += 2
-		if iTourism1 in civics: iStability -= 2
-		if iHarmony1 in civics: iStability -= 2
-		if iAcculturation1 in civics: iStability -= 2
-		if iNomads1 in civics: iStability -= 2
-		if iConquest1 in civics: iStability += 2
+	# if iMita1 in civics:
+	# 	if iRedistribution1 in civics: iStability += 2
+	# 	if iTourism1 in civics: iStability -= 2
+	# 	if iHarmony1 in civics: iStability -= 2
+	# 	if iAcculturation1 in civics: iStability -= 2
+	# 	if iNomads1 in civics: iStability -= 2
+	# 	if iConquest1 in civics: iStability += 2
 	
-	if iCraftsmen1 in civics:
-		if iMerchants1 in civics: iStability += 2
-		if iPlunder1 in civics: iStability -= 2
-		if iCosmopolis1 in civics: iStability += 2
-		if iSovereignty1 in civics: iStability += 2
-		if iConquest1 in civics: iStability -= 2
-		if iCooperation1 in civics: iStability += 2
+	# if iCraftsmen1 in civics:
+	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iRaiding1 in civics: iStability -= 2
+	# 	if iCosmopolitans1 in civics: iStability += 2
+	# 	if iSovereignty1 in civics: iStability += 2
+	# 	if iConquest1 in civics: iStability -= 2
+	# 	if iIntegration1 in civics: iStability += 2
 	
-	if iCasteSystem1 in civics:
-		if iCommune1 in civics: iStability -= 2
-		if iDependency1 in civics: iStability -= 2
-		if iOrganizedReligion1 in civics: iStability += 2
-		if iAcculturation1 in civics: iStability -= 2
-		if iDiffusion1 in civics: iStability -= 2
-		if iTributaries1 in civics: iStability += 2
+	# if iCasteSystem1 in civics:
+	# 	if iCalpulli1 in civics: iStability -= 2
+	# 	if iDependency1 in civics: iStability -= 2
+	# 	if iOrganizedReligion1 in civics: iStability += 2
+	# 	if iAcculturation1 in civics: iStability -= 2
+	# 	if iSacrifice1 in civics: iStability -= 2
+	# 	if iTributaries1 in civics: iStability += 2
 	
-	if iSlavery1 in civics:
-		if iDependency1 in civics: iStability -= 2
-		if iTourism1 in civics: iStability -= 2
-		if iIsolationism1 in civics: iStability -= 2
-		if iSovereignty1 in civics: iStability -= 2
-		if iCooperation1 in civics: iStability -= 2
-		if iAncestralLands1 in civics: iStability += 2
+	# if iSlavery1 in civics:
+	# 	if iDependency1 in civics: iStability -= 2
+	# 	if iTourism1 in civics: iStability -= 2
+	# 	if iIsolationism1 in civics: iStability -= 2
+	# 	if iSovereignty1 in civics: iStability -= 2
+	# 	if iIntegration1 in civics: iStability -= 2
+	# 	if iAncestralLands1 in civics: iStability += 2
 	
-	#	Economy
-	if iCommune1 in civics:
-		if iHarmony1 in civics: iStability += 2
-		if iAcculturation1 in civics: iStability -= 2
-		if iDiffusion1 in civics: iStability += 2
-		if iTributaries1 in civics: iStability -= 2
+	# #	Economy
+	# if iCalpulli1 in civics:
+	# 	if iHarmony1 in civics: iStability += 2
+	# 	if iAcculturation1 in civics: iStability -= 2
+	# 	if iSacrifice1 in civics: iStability += 2
+	# 	if iTributaries1 in civics: iStability -= 2
 		
-	if iRedistribution1 in civics:
-		if iOrganizedReligion1 in civics: iStability += 2
-		if iSovereignty1 in civics: iStability -= 2
-		if iTributaries1 in civics: iStability += 2
-		if iAncestralLands1 in civics: iStability -= 2
+	# if iRedistribution1 in civics:
+	# 	if iOrganizedReligion1 in civics: iStability += 2
+	# 	if iSovereignty1 in civics: iStability -= 2
+	# 	if iTributaries1 in civics: iStability += 2
+	# 	if iAncestralLands1 in civics: iStability -= 2
 		
-	if iMerchants1 in civics:
-		if iCosmopolis1 in civics: iStability += 2
-		if iIsolationism1 in civics: iStability -= 2
-		if iNomads1 in civics: iStability += 2
-		if iCooperation1 in civics: iStability -= 2
+	# if iMerchants1 in civics:
+	# 	if iCosmopolitans1 in civics: iStability += 2
+	# 	if iIsolationism1 in civics: iStability -= 2
+	# 	if iNomads1 in civics: iStability += 2
+	# 	if iIntegration1 in civics: iStability -= 2
 		
-	if iPlunder1 in civics:
-		if iHarmony1 in civics: iStability -= 2
-		if iCosmopolis1 in civics: iStability -= 2
-		if iDiffusion1 in civics: iStability -= 2
-		if iConquest1 in civics: iStability += 2
+	# if iRaiding1 in civics:
+	# 	if iHarmony1 in civics: iStability -= 2
+	# 	if iCosmopolitans1 in civics: iStability -= 2
+	# 	if iSacrifice1 in civics: iStability -= 2
+	# 	if iConquest1 in civics: iStability += 2
 		
-	if iDependency1 in civics:
-		if iIsolationism1 in civics: iStability -= 2
-		if iAcculturation1 in civics: iStability += 2
-		if iConquest1 in civics: iStability -= 2
-		if iCooperation1 in civics: iStability += 2
+	# if iDependency1 in civics:
+	# 	if iIsolationism1 in civics: iStability -= 2
+	# 	if iAcculturation1 in civics: iStability += 2
+	# 	if iConquest1 in civics: iStability -= 2
+	# 	if iIntegration1 in civics: iStability += 2
 		
-	if iTourism1 in civics:
-		if iOrganizedReligion1 in civics: iStability -= 2
-		if iSovereignty1 in civics: iStability += 2
-		if iNomads1 in civics: iStability -= 2
-		if iAncestralLands1 in civics: iStability += 2
+	# if iTourism1 in civics:
+	# 	if iOrganizedReligion1 in civics: iStability -= 2
+	# 	if iSovereignty1 in civics: iStability += 2
+	# 	if iNomads1 in civics: iStability -= 2
+	# 	if iAncestralLands1 in civics: iStability += 2
 	
-	#	Society
-	if iHarmony1 in civics:
-		if iNomads1 in civics: iStability += 2
-		if iTributaries1 in civics: iStability -= 2
+	# #	Society
+	# if iHarmony1 in civics:
+	# 	if iNomads1 in civics: iStability += 2
+	# 	if iTributaries1 in civics: iStability -= 2
 		
-	if iOrganizedReligion1 in civics:
-		if iCooperation1 in civics: iStability -= 2
-		if iTributaries1 in civics: iStability += 2
+	# if iOrganizedReligion1 in civics:
+	# 	if iIntegration1 in civics: iStability -= 2
+	# 	if iTributaries1 in civics: iStability += 2
 		
-	if iCosmopolis1 in civics:
-		if iNomads1 in civics: iStability -= 2
-		if iDiffusion1 in civics: iStability += 2
+	# if iCosmopolitans1 in civics:
+	# 	if iNomads1 in civics: iStability -= 2
+	# 	if iSacrifice1 in civics: iStability += 2
 		
-	if iIsolationism1 in civics:
-		if iConquest1 in civics: iStability -= 2
-		if iAncestralLands1 in civics: iStability += 2
+	# if iIsolationism1 in civics:
+	# 	if iConquest1 in civics: iStability -= 2
+	# 	if iAncestralLands1 in civics: iStability += 2
 		
-	if iAcculturation1 in civics:
-		if iCooperation1 in civics: iStability += 2
-		if iAncestralLands1 in civics: iStability -= 2
+	# if iAcculturation1 in civics:
+	# 	if iIntegration1 in civics: iStability += 2
+	# 	if iAncestralLands1 in civics: iStability -= 2
 		
-	if iSovereignty1 in civics:
-		if iDiffusion1 in civics: iStability -= 2
-		if iConquest1 in civics: iStability += 2
+	# if iSovereignty1 in civics:
+	# 	if iSacrifice1 in civics: iStability -= 2
+	# 	if iConquest1 in civics: iStability += 2
 	
 	
-	# Colony
-	#	Executive
-	if iViceroyalty2 in civics:
-		if iCharterColony2 in civics: iStability -= 2
-		if iCommonLaw2 in civics: iStability -= 2
-		if iEncomienda2 in civics: iStability += 2
-		if iSlavery2 in civics: iStability += 2
-		if iPlunder2 in civics: iStability += 2
-		if iConsumerism2 in civics: iStability -= 2
-		if iJesuits2 in civics: iStability += 2
-		if iEmancipation2 in civics: iStability -= 2
-		if iConquest2 in civics: iStability += 2
-		if iCommonwealth2 in civics: iStability -= 2
+	# # Colony
+	# #	Executive
+	# if iViceroyalty2 in civics:
+	# 	if iCharterColony2 in civics: iStability -= 2
+	# 	if iCommonLaw2 in civics: iStability -= 2
+	# 	if iEncomienda2 in civics: iStability += 2
+	# 	if iSlavery2 in civics: iStability += 2
+	# 	if iPlunder2 in civics: iStability += 2
+	# 	if iConsumerism2 in civics: iStability -= 2
+	# 	if iJesuits2 in civics: iStability += 2
+	# 	if iEmancipation2 in civics: iStability -= 2
+	# 	if iConquest2 in civics: iStability += 2
+	# 	if iCommonwealth2 in civics: iStability -= 2
 	
-	if iProprietaries2 in civics:
-		if iAdmiralty2 in civics: iStability += 2
-		if iProvinces2 in civics: iStability -= 2
-		if iPenalColony2 in civics: iStability += 2
-		if iImmigrantLabor2 in civics: iStability -= 2
-		if iPlunder2 in civics: iStability += 2
-		if iConsumerism2 in civics: iStability -= 2
-		if iHaven2 in civics: iStability -= 2
-		if iProfiteering2 in civics: iStability += 2
-		if iOutposts2 in civics: iStability += 2
-		if iHomesteads2 in civics: iStability -= 2
+	# if iProprietaries2 in civics:
+	# 	if iAdmiralty2 in civics: iStability += 2
+	# 	if iProvinces2 in civics: iStability -= 2
+	# 	if iPenalColony2 in civics: iStability += 2
+	# 	if iImmigrantLabor2 in civics: iStability -= 2
+	# 	if iPlunder2 in civics: iStability += 2
+	# 	if iConsumerism2 in civics: iStability -= 2
+	# 	if iHaven2 in civics: iStability -= 2
+	# 	if iProfiteering2 in civics: iStability += 2
+	# 	if iOutposts2 in civics: iStability += 2
+	# 	if iHomesteads2 in civics: iStability -= 2
 	
-	if iTrustees2 in civics:
-		if iAdmiralty2 in civics: iStability -= 2
-		if iTradingCompany2 in civics: iStability += 2
-		if iEncomienda2 in civics: iStability -= 2
-		if iSlavery2 in civics: iStability -= 2
-		if iFactory2 in civics: iStability += 2
-		if iPublicWelfare2 in civics: iStability -= 2
-		if iZealotry2 in civics: iStability -= 2
-		if iHaven2 in civics: iStability += 2
-		if iProvidence2 in civics: iStability += 2
-		if iOutposts2 in civics: iStability -= 2
+	# if iTrustees2 in civics:
+	# 	if iAdmiralty2 in civics: iStability -= 2
+	# 	if iTradingCompany2 in civics: iStability += 2
+	# 	if iEncomienda2 in civics: iStability -= 2
+	# 	if iSlavery2 in civics: iStability -= 2
+	# 	if iFactory2 in civics: iStability += 2
+	# 	if iPublicWelfare2 in civics: iStability -= 2
+	# 	if iZealotry2 in civics: iStability -= 2
+	# 	if iHaven2 in civics: iStability += 2
+	# 	if iProvidence2 in civics: iStability += 2
+	# 	if iOutposts2 in civics: iStability -= 2
 	
-	if iGovernors2 in civics:
-		if iTradingCompany2 in civics: iStability -= 2
-		if iRoyalColony2 in civics: iStability += 2
-		if iIndenturedServitude2 in civics: iStability += 2
-		if iIndustrialism2 in civics: iStability -= 2
-		if iMercantilism2 in civics: iStability += 2
-		if iCustomsUnion2 in civics: iStability -= 2
-		if iProfiteering2 in civics: iStability -= 2
-		if iOpportunity2 in civics: iStability -= 2
-		if iProvidence2 in civics: iStability -= 2
-		if iHomesteads2 in civics: iStability += 2
+	# if iGovernors2 in civics:
+	# 	if iTradingCompany2 in civics: iStability -= 2
+	# 	if iRoyalColony2 in civics: iStability += 2
+	# 	if iIndenturedServitude2 in civics: iStability += 2
+	# 	if iIndustrialism2 in civics: iStability -= 2
+	# 	if iMercantilism2 in civics: iStability += 2
+	# 	if iCustomsUnion2 in civics: iStability -= 2
+	# 	if iProfiteering2 in civics: iStability -= 2
+	# 	if iOpportunity2 in civics: iStability -= 2
+	# 	if iProvidence2 in civics: iStability -= 2
+	# 	if iHomesteads2 in civics: iStability += 2
 	
-	if iColonialAssembly2 in civics:
-		if iCharterColony2 in civics: iStability += 2
-		if iCommonLaw2 in civics: iStability += 2
-		if iIndenturedServitude2 in civics: iStability -= 2
-		if iIndustrialism2 in civics: iStability += 2
-		if iFactory2 in civics: iStability -= 2
-		if iCustomsUnion2 in civics: iStability += 2
-		if iZealotry2 in civics: iStability += 2
-		if iOpportunity2 in civics: iStability += 2
-		if iConquest2 in civics: iStability -= 2
-		if iIntervention2 in civics: iStability += 2
+	# if iColonialAssembly2 in civics:
+	# 	if iCharterColony2 in civics: iStability += 2
+	# 	if iCommonLaw2 in civics: iStability += 2
+	# 	if iIndenturedServitude2 in civics: iStability -= 2
+	# 	if iIndustrialism2 in civics: iStability += 2
+	# 	if iFactory2 in civics: iStability -= 2
+	# 	if iCustomsUnion2 in civics: iStability += 2
+	# 	if iZealotry2 in civics: iStability += 2
+	# 	if iOpportunity2 in civics: iStability += 2
+	# 	if iConquest2 in civics: iStability -= 2
+	# 	if iIntervention2 in civics: iStability += 2
 	
-	if iHomeRule2 in civics:
-		if iRoyalColony2 in civics: iStability -= 2
-		if iProvinces2 in civics: iStability += 2
-		if iPenalColony2 in civics: iStability -= 2
-		if iImmigrantLabor2 in civics: iStability += 2
-		if iMercantilism2 in civics: iStability -= 2
-		if iPublicWelfare2 in civics: iStability += 2
-		if iJesuits2 in civics: iStability -= 2
-		if iEmancipation2 in civics: iStability += 2
-		if iIntervention2 in civics: iStability -= 2
-		if iCommonwealth2 in civics: iStability += 2
+	# if iHomeRule2 in civics:
+	# 	if iRoyalColony2 in civics: iStability -= 2
+	# 	if iProvinces2 in civics: iStability += 2
+	# 	if iPenalColony2 in civics: iStability -= 2
+	# 	if iImmigrantLabor2 in civics: iStability += 2
+	# 	if iMercantilism2 in civics: iStability -= 2
+	# 	if iPublicWelfare2 in civics: iStability += 2
+	# 	if iJesuits2 in civics: iStability -= 2
+	# 	if iEmancipation2 in civics: iStability += 2
+	# 	if iIntervention2 in civics: iStability -= 2
+	# 	if iCommonwealth2 in civics: iStability += 2
 	
-	#	Administration
-	if iAdmiralty2 in civics:
-		if iEncomienda2 in civics: iStability += 2
-		if iIndustrialism2 in civics: iStability -= 2
-		if iPlunder2 in civics: iStability += 2
-		if iCustomsUnion2 in civics: iStability -= 2
-		if iJesuits2 in civics: iStability += 2
-		if iEmancipation2 in civics: iStability -= 2
-		if iConquest2 in civics: iStability += 2
-		if iCommonwealth2 in civics: iStability -= 2
+	# #	Administration
+	# if iAdmiralty2 in civics:
+	# 	if iEncomienda2 in civics: iStability += 2
+	# 	if iIndustrialism2 in civics: iStability -= 2
+	# 	if iPlunder2 in civics: iStability += 2
+	# 	if iCustomsUnion2 in civics: iStability -= 2
+	# 	if iJesuits2 in civics: iStability += 2
+	# 	if iEmancipation2 in civics: iStability -= 2
+	# 	if iConquest2 in civics: iStability += 2
+	# 	if iCommonwealth2 in civics: iStability -= 2
 	
-	if iCharterColony2 in civics:
-		if iIndenturedServitude2 in civics: iStability += 2
-		if iImmigrantLabor2 in civics: iStability += 2
-		if iMercantilism2 in civics: iStability += 2
-		if iConsumerism2 in civics: iStability -= 2
-		if iHaven2 in civics: iStability += 2
-		if iProfiteering2 in civics: iStability -= 2
-		if iProvidence2 in civics: iStability += 2
-		if iIntervention2 in civics: iStability -= 2
+	# if iCharterColony2 in civics:
+	# 	if iIndenturedServitude2 in civics: iStability += 2
+	# 	if iImmigrantLabor2 in civics: iStability += 2
+	# 	if iMercantilism2 in civics: iStability += 2
+	# 	if iConsumerism2 in civics: iStability -= 2
+	# 	if iHaven2 in civics: iStability += 2
+	# 	if iProfiteering2 in civics: iStability -= 2
+	# 	if iProvidence2 in civics: iStability += 2
+	# 	if iIntervention2 in civics: iStability -= 2
 	
-	if iTradingCompany2 in civics:
-		if iSlavery2 in civics: iStability += 2
-		if iPenalColony2 in civics: iStability -= 2
-		if iFactory2 in civics: iStability += 2
-		if iMercantilism2 in civics: iStability -= 2
-		if iProfiteering2 in civics: iStability += 2
-		if iOpportunity2 in civics: iStability -= 2
-		if iOutposts2 in civics: iStability += 2
-		if iHomesteads2 in civics: iStability -= 2
+	# if iTradingCompany2 in civics:
+	# 	if iSlavery2 in civics: iStability += 2
+	# 	if iPenalColony2 in civics: iStability -= 2
+	# 	if iFactory2 in civics: iStability += 2
+	# 	if iMercantilism2 in civics: iStability -= 2
+	# 	if iProfiteering2 in civics: iStability += 2
+	# 	if iOpportunity2 in civics: iStability -= 2
+	# 	if iOutposts2 in civics: iStability += 2
+	# 	if iHomesteads2 in civics: iStability -= 2
 	
-	if iRoyalColony2 in civics:
-		if iIndenturedServitude2 in civics: iStability += 2
-		if iPenalColony2 in civics: iStability += 2
-		if iCustomsUnion2 in civics: iStability += 2
-		if iPublicWelfare2 in civics: iStability -= 2
-		if iZealotry2 in civics: iStability += 2
-		if iHaven2 in civics: iStability -= 2
-		if iOutposts2 in civics: iStability -= 2
-		if iIntervention2 in civics: iStability += 2
+	# if iRoyalColony2 in civics:
+	# 	if iIndenturedServitude2 in civics: iStability += 2
+	# 	if iPenalColony2 in civics: iStability += 2
+	# 	if iCustomsUnion2 in civics: iStability += 2
+	# 	if iPublicWelfare2 in civics: iStability -= 2
+	# 	if iZealotry2 in civics: iStability += 2
+	# 	if iHaven2 in civics: iStability -= 2
+	# 	if iOutposts2 in civics: iStability -= 2
+	# 	if iIntervention2 in civics: iStability += 2
 	
-	if iCommonLaw2 in civics:
-		if iEncomienda2 in civics: iStability -= 2
-		if iImmigrantLabor2 in civics: iStability += 2
-		if iPlunder2 in civics: iStability -= 2
-		if iConsumerism2 in civics: iStability += 2
-		if iJesuits2 in civics: iStability -= 2
-		if iOpportunity2 in civics: iStability += 2
-		if iConquest2 in civics: iStability -= 2
-		if iHomesteads2 in civics: iStability += 2
+	# if iCommonLaw2 in civics:
+	# 	if iEncomienda2 in civics: iStability -= 2
+	# 	if iImmigrantLabor2 in civics: iStability += 2
+	# 	if iPlunder2 in civics: iStability -= 2
+	# 	if iConsumerism2 in civics: iStability += 2
+	# 	if iJesuits2 in civics: iStability -= 2
+	# 	if iOpportunity2 in civics: iStability += 2
+	# 	if iConquest2 in civics: iStability -= 2
+	# 	if iHomesteads2 in civics: iStability += 2
 	
-	if iProvinces2 in civics:
-		if iSlavery2 in civics: iStability -= 2
-		if iIndustrialism2 in civics: iStability += 2
-		if iFactory2 in civics: iStability -= 2
-		if iPublicWelfare2 in civics: iStability += 2
-		if iZealotry2 in civics: iStability -= 2
-		if iEmancipation2 in civics: iStability += 2
-		if iProvidence2 in civics: iStability -= 2
-		if iCommonwealth2 in civics: iStability += 2
+	# if iProvinces2 in civics:
+	# 	if iSlavery2 in civics: iStability -= 2
+	# 	if iIndustrialism2 in civics: iStability += 2
+	# 	if iFactory2 in civics: iStability -= 2
+	# 	if iPublicWelfare2 in civics: iStability += 2
+	# 	if iZealotry2 in civics: iStability -= 2
+	# 	if iEmancipation2 in civics: iStability += 2
+	# 	if iProvidence2 in civics: iStability -= 2
+	# 	if iCommonwealth2 in civics: iStability += 2
 	
-	#	Labor
-	if iEncomienda2 in civics:
-		if iPlunder2 in civics: iStability += 2
-		if iMercantilism2 in civics: iStability -= 2
-		if iJesuits2 in civics: iStability += 2
-		if iConquest2 in civics: iStability += 2
-		if iOutposts2 in civics: iStability -= 2
+	# #	Labor
+	# if iEncomienda2 in civics:
+	# 	if iPlunder2 in civics: iStability += 2
+	# 	if iMercantilism2 in civics: iStability -= 2
+	# 	if iJesuits2 in civics: iStability += 2
+	# 	if iConquest2 in civics: iStability += 2
+	# 	if iOutposts2 in civics: iStability -= 2
 	
-	if iIndenturedServitude2 in civics:
-		if iFactory2 in civics: iStability += 2
-		if iConsumerism2 in civics: iStability -= 2
-		if iZealotry2 in civics: iStability -= 2
-		if iHaven2 in civics: iStability += 2
-		if iConquest2 in civics: iStability -= 2
-		if iProvidence2 in civics: iStability += 2
+	# if iIndenturedServitude2 in civics:
+	# 	if iFactory2 in civics: iStability += 2
+	# 	if iConsumerism2 in civics: iStability -= 2
+	# 	if iZealotry2 in civics: iStability -= 2
+	# 	if iHaven2 in civics: iStability += 2
+	# 	if iConquest2 in civics: iStability -= 2
+	# 	if iProvidence2 in civics: iStability += 2
 	
-	if iSlavery2 in civics:
-		if iCustomsUnion2 in civics: iStability += 2
-		if iPublicWelfare2 in civics: iStability -= 2
-		if iProfiteering2 in civics: iStability += 2
-		if iEmancipation2 in civics: iStability -= 2
-		if iHomesteads2 in civics: iStability += 2
-		if iCommonwealth2 in civics: iStability -= 2
+	# if iSlavery2 in civics:
+	# 	if iCustomsUnion2 in civics: iStability += 2
+	# 	if iPublicWelfare2 in civics: iStability -= 2
+	# 	if iProfiteering2 in civics: iStability += 2
+	# 	if iEmancipation2 in civics: iStability -= 2
+	# 	if iHomesteads2 in civics: iStability += 2
+	# 	if iCommonwealth2 in civics: iStability -= 2
 	
-	if iPenalColony2 in civics:
-		if iMercantilism2 in civics: iStability += 2
-		if iCustomsUnion2 in civics: iStability -= 2
-		if iHaven2 in civics: iStability += 2
-		if iOpportunity2 in civics: iStability -= 2
-		if iHomesteads2 in civics: iStability -= 2
-		if iIntervention2 in civics: iStability += 2
+	# if iPenalColony2 in civics:
+	# 	if iMercantilism2 in civics: iStability += 2
+	# 	if iCustomsUnion2 in civics: iStability -= 2
+	# 	if iHaven2 in civics: iStability += 2
+	# 	if iOpportunity2 in civics: iStability -= 2
+	# 	if iHomesteads2 in civics: iStability -= 2
+	# 	if iIntervention2 in civics: iStability += 2
 	
-	if iIndustrialism2 in civics:
-		if iFactory2 in civics: iStability -= 2
-		if iConsumerism2 in civics: iStability += 2
-		if iJesuits2 in civics: iStability -= 2
-		if iOpportunity2 in civics: iStability += 2
-		if iOutposts2 in civics: iStability -= 2
-		if iCommonwealth2 in civics: iStability += 2
+	# if iIndustrialism2 in civics:
+	# 	if iFactory2 in civics: iStability -= 2
+	# 	if iConsumerism2 in civics: iStability += 2
+	# 	if iJesuits2 in civics: iStability -= 2
+	# 	if iOpportunity2 in civics: iStability += 2
+	# 	if iOutposts2 in civics: iStability -= 2
+	# 	if iCommonwealth2 in civics: iStability += 2
 	
-	if iImmigrantLabor2 in civics:
-		if iPlunder2 in civics: iStability -= 2
-		if iPublicWelfare2 in civics: iStability += 2
-		if iZealotry2 in civics: iStability -= 2
-		if iEmancipation2 in civics: iStability += 2
-		if iProvidence2 in civics: iStability -= 2
-		if iIntervention2 in civics: iStability += 2
+	# if iImmigrantLabor2 in civics:
+	# 	if iPlunder2 in civics: iStability -= 2
+	# 	if iPublicWelfare2 in civics: iStability += 2
+	# 	if iZealotry2 in civics: iStability -= 2
+	# 	if iEmancipation2 in civics: iStability += 2
+	# 	if iProvidence2 in civics: iStability -= 2
+	# 	if iIntervention2 in civics: iStability += 2
 	
-	#	Economy
-	if iPlunder2 in civics:
-		if iZealotry2 in civics: iStability += 2
-		if iOpportunity2 in civics: iStability -= 2
-		if iConquest2 in civics: iStability += 2
-		if iHomesteads2 in civics: iStability -= 2
+	# #	Economy
+	# if iPlunder2 in civics:
+	# 	if iZealotry2 in civics: iStability += 2
+	# 	if iOpportunity2 in civics: iStability -= 2
+	# 	if iConquest2 in civics: iStability += 2
+	# 	if iHomesteads2 in civics: iStability -= 2
 	
-	if iFactory2 in civics:
-		if iJesuits2 in civics: iStability += 2
-		if iHaven2 in civics: iStability -= 2
-		if iOutposts2 in civics: iStability += 2
-		if iIntervention2 in civics: iStability -= 2
+	# if iFactory2 in civics:
+	# 	if iJesuits2 in civics: iStability += 2
+	# 	if iHaven2 in civics: iStability -= 2
+	# 	if iOutposts2 in civics: iStability += 2
+	# 	if iIntervention2 in civics: iStability -= 2
 	
-	if iMercantilism2 in civics:
-		if iProfiteering2 in civics: iStability += 2
-		if iEmancipation2 in civics: iStability -= 2
-		if iIntervention2 in civics: iStability += 2
-		if iCommonwealth2 in civics: iStability -= 2
+	# if iMercantilism2 in civics:
+	# 	if iProfiteering2 in civics: iStability += 2
+	# 	if iEmancipation2 in civics: iStability -= 2
+	# 	if iIntervention2 in civics: iStability += 2
+	# 	if iCommonwealth2 in civics: iStability -= 2
 	
-	if iCustomsUnion2 in civics:
-		if iHaven2 in civics: iStability += 2
-		if iProfiteering2 in civics: iStability -= 2
-		if iOutposts2 in civics: iStability -= 2
-		if iHomesteads2 in civics: iStability += 2
+	# if iCustomsUnion2 in civics:
+	# 	if iHaven2 in civics: iStability += 2
+	# 	if iProfiteering2 in civics: iStability -= 2
+	# 	if iOutposts2 in civics: iStability -= 2
+	# 	if iHomesteads2 in civics: iStability += 2
 	
-	if iConsumerism2 in civics:
-		if iJesuits2 in civics: iStability -= 2
-		if iOpportunity2 in civics: iStability += 2
-		if iProvidence2 in civics: iStability -= 2
-		if iCommonwealth2 in civics: iStability += 2
+	# if iConsumerism2 in civics:
+	# 	if iJesuits2 in civics: iStability -= 2
+	# 	if iOpportunity2 in civics: iStability += 2
+	# 	if iProvidence2 in civics: iStability -= 2
+	# 	if iCommonwealth2 in civics: iStability += 2
 	
-	if iPublicWelfare2 in civics:
-		if iZealotry2 in civics: iStability -= 2
-		if iEmancipation2 in civics: iStability += 2
-		if iConquest2 in civics: iStability -= 2
-		if iProvidence2 in civics: iStability += 2
+	# if iPublicWelfare2 in civics:
+	# 	if iZealotry2 in civics: iStability -= 2
+	# 	if iEmancipation2 in civics: iStability += 2
+	# 	if iConquest2 in civics: iStability -= 2
+	# 	if iProvidence2 in civics: iStability += 2
 	
-	#	Society
-	if iZealotry2 in civics:
-		if iConquest2 in civics: iStability += 2
-		if iOutposts2 in civics: iStability -= 2
+	# #	Society
+	# if iZealotry2 in civics:
+	# 	if iConquest2 in civics: iStability += 2
+	# 	if iOutposts2 in civics: iStability -= 2
 	
-	if iJesuits2 in civics:
-		if iProvidence2 in civics: iStability += 2
-		if iHomesteads2 in civics: iStability -= 2
+	# if iJesuits2 in civics:
+	# 	if iProvidence2 in civics: iStability += 2
+	# 	if iHomesteads2 in civics: iStability -= 2
 	
-	if iHaven2 in civics:
-		if iHomesteads2 in civics: iStability += 2
-		if iIntervention2 in civics: iStability -= 2
+	# if iHaven2 in civics:
+	# 	if iHomesteads2 in civics: iStability += 2
+	# 	if iIntervention2 in civics: iStability -= 2
 	
-	if iProfiteering2 in civics:
-		if iOutposts2 in civics: iStability += 2
-		if iCommonwealth2 in civics: iStability -= 2
+	# if iProfiteering2 in civics:
+	# 	if iOutposts2 in civics: iStability += 2
+	# 	if iCommonwealth2 in civics: iStability -= 2
 	
-	if iOpportunity2 in civics:
-		if iProvidence2 in civics: iStability -= 2
-		if iCommonwealth2 in civics: iStability += 2
+	# if iOpportunity2 in civics:
+	# 	if iProvidence2 in civics: iStability -= 2
+	# 	if iCommonwealth2 in civics: iStability += 2
 	
-	if iEmancipation2 in civics:
-		if iConquest2 in civics: iStability -= 2
-		if iIntervention2 in civics: iStability += 2
+	# if iEmancipation2 in civics:
+	# 	if iConquest2 in civics: iStability -= 2
+	# 	if iIntervention2 in civics: iStability += 2
 	
 	
-	# Nation
-	#	Executive
-	if iJunta3 in civics:
-		if iCommonLaw3 in civics: iStability -= 2
-		if iSlavery3 in civics: iStability += 2
-		if iIndustrialism3 in civics: iStability -= 2
-		if iAgrarianism3 in civics: iStability += 2
-		if iConsumerism3 in civics: iStability -= 2
-		if iOpportunity3 in civics: iStability -= 2
-		if iAssimilation3 in civics: iStability -= 2
+	# # Nation
+	# #	Executive
+	# if iJunta3 in civics:
+	# 	if iCommonLaw3 in civics: iStability -= 2
+	# 	if iSlavery3 in civics: iStability += 2
+	# 	if iIndustrialism3 in civics: iStability -= 2
+	# 	if iAgrarianism3 in civics: iStability += 2
+	# 	if iConsumerism3 in civics: iStability -= 2
+	# 	if iOpportunity3 in civics: iStability -= 2
+	# 	if iAssimilation3 in civics: iStability -= 2
 	
-	if iMonarchy3 in civics:
-		if iCommonLaw3 in civics: iStability += 2
-		if iMandate3 in civics: iStability -= 2
-		if iApprenticeship3 in civics: iStability += 2
-		if iExtraction3 in civics: iStability += 2
-		if iProfiteering3 in civics: iStability += 2
-		if iDecolonization3 in civics: iStability -= 2
+	# if iMonarchy3 in civics:
+	# 	if iCommonLaw3 in civics: iStability += 2
+	# 	if iMandate3 in civics: iStability -= 2
+	# 	if iApprenticeship3 in civics: iStability += 2
+	# 	if iExtraction3 in civics: iStability += 2
+	# 	if iProfiteering3 in civics: iStability += 2
+	# 	if iDecolonization3 in civics: iStability -= 2
 	
-	if iPlutocracy3 in civics:
-		if iKleptocracy3 in civics: iStability += 2
-		if iPoliceState3 in civics: iStability -= 2
-		if iIndustrialism3 in civics: iStability += 2
-		if iLaborUnions3 in civics: iStability -= 2
-		if iProtectionism3 in civics: iStability += 2
-		if iLibertarianism3 in civics: iStability += 2
-		if iEmancipation3 in civics: iStability -= 2
-		if iManifestDestiny3 in civics: iStability += 2
+	# if iPlutocracy3 in civics:
+	# 	if iKleptocracy3 in civics: iStability += 2
+	# 	if iPoliceState3 in civics: iStability -= 2
+	# 	if iIndustrialism3 in civics: iStability += 2
+	# 	if iLaborUnions3 in civics: iStability -= 2
+	# 	if iProtectionism3 in civics: iStability += 2
+	# 	if iLibertarianism3 in civics: iStability += 2
+	# 	if iEmancipation3 in civics: iStability -= 2
+	# 	if iManifestDestiny3 in civics: iStability += 2
 	
-	if iDemocracy3 in civics:
-		if iFederalism3 in civics: iStability += 2
-		if iKleptocracy3 in civics: iStability -= 2
-		if iSlavery3 in civics: iStability -= 2
-		if iImmigrantLabor3 in civics: iStability += 2
-		if iFreeEnterprise3 in civics: iStability += 2
-		if iProtectionism3 in civics: iStability -= 2
-		if iOpportunity3 in civics: iStability += 2
-		if iNativism3 in civics: iStability -= 2
-		if iDecolonization3 in civics: iStability += 2
-		if iNationhood3 in civics: iStability -= 2
+	# if iDemocracy3 in civics:
+	# 	if iFederalism3 in civics: iStability += 2
+	# 	if iKleptocracy3 in civics: iStability -= 2
+	# 	if iSlavery3 in civics: iStability -= 2
+	# 	if iImmigrantLabor3 in civics: iStability += 2
+	# 	if iFreeEnterprise3 in civics: iStability += 2
+	# 	if iProtectionism3 in civics: iStability -= 2
+	# 	if iOpportunity3 in civics: iStability += 2
+	# 	if iNativism3 in civics: iStability -= 2
+	# 	if iDecolonization3 in civics: iStability += 2
+	# 	if iNationhood3 in civics: iStability -= 2
 	
-	if iDictatorship3 in civics:
-		if iFederalism3 in civics: iStability -= 2
-		if iPoliceState3 in civics: iStability += 2
-		if iSubsistance3 in civics: iStability += 2
-		if iImmigrantLabor3 in civics: iStability -= 2
-		if iExtraction3 in civics: iStability += 2
-		if iPublicWelfare3 in civics: iStability -= 2
-		if iNativism3 in civics: iStability += 2
-		if iEgalitarianism3 in civics: iStability -= 2
-		if iNationhood3 in civics: iStability += 2
+	# if iDictatorship3 in civics:
+	# 	if iFederalism3 in civics: iStability -= 2
+	# 	if iPoliceState3 in civics: iStability += 2
+	# 	if iSubsistance3 in civics: iStability += 2
+	# 	if iImmigrantLabor3 in civics: iStability -= 2
+	# 	if iExtraction3 in civics: iStability += 2
+	# 	if iPublicWelfare3 in civics: iStability -= 2
+	# 	if iNativism3 in civics: iStability += 2
+	# 	if iEgalitarianism3 in civics: iStability -= 2
+	# 	if iNationhood3 in civics: iStability += 2
 	
-	if iStateParty3 in civics:
-		if iMandate3 in civics: iStability += 2
-		if iSubsistance3 in civics: iStability -= 2
-		if iLaborUnions3 in civics: iStability += 2
-		if iAgrarianism3 in civics: iStability -= 2
-		if iPublicWelfare3 in civics: iStability += 2
-		if iLibertarianism3 in civics: iStability -= 2
-		if iHegemony3 in civics: iStability += 2
+	# if iStateParty3 in civics:
+	# 	if iMandate3 in civics: iStability += 2
+	# 	if iSubsistance3 in civics: iStability -= 2
+	# 	if iLaborUnions3 in civics: iStability += 2
+	# 	if iAgrarianism3 in civics: iStability -= 2
+	# 	if iPublicWelfare3 in civics: iStability += 2
+	# 	if iLibertarianism3 in civics: iStability -= 2
+	# 	if iHegemony3 in civics: iStability += 2
 	
-	#	Administration
-	if iCommonLaw3 in civics:
-		if iApprenticeship3 in civics: iStability += 2
-		if iAgrarianism3 in civics: iStability += 2
-		if iProtectionism3 in civics: iStability -= 2
-		if iLibertarianism3 in civics: iStability += 2
-		if iProfiteering3 in civics: iStability -= 2
-		if iAssimilation3 in civics: iStability += 2
-		if iManifestDestiny3 in civics: iStability -= 2
+	# #	Administration
+	# if iCommonLaw3 in civics:
+	# 	if iApprenticeship3 in civics: iStability += 2
+	# 	if iAgrarianism3 in civics: iStability += 2
+	# 	if iProtectionism3 in civics: iStability -= 2
+	# 	if iLibertarianism3 in civics: iStability += 2
+	# 	if iProfiteering3 in civics: iStability -= 2
+	# 	if iAssimilation3 in civics: iStability += 2
+	# 	if iManifestDestiny3 in civics: iStability -= 2
 	
-	if iKleptocracy3 in civics:
-		if iImmigrantLabor3 in civics: iStability += 2
-		if iLaborUnions3 in civics: iStability -= 2
-		if iExtraction3 in civics: iStability += 2
-		if iProfiteering3 in civics: iStability += 2
-		if iEgalitarianism3 in civics: iStability -= 2
-		if iHomesteads3 in civics: iStability -= 2
-		if iManifestDestiny3 in civics: iStability += 2
+	# if iKleptocracy3 in civics:
+	# 	if iImmigrantLabor3 in civics: iStability += 2
+	# 	if iLaborUnions3 in civics: iStability -= 2
+	# 	if iExtraction3 in civics: iStability += 2
+	# 	if iProfiteering3 in civics: iStability += 2
+	# 	if iEgalitarianism3 in civics: iStability -= 2
+	# 	if iHomesteads3 in civics: iStability -= 2
+	# 	if iManifestDestiny3 in civics: iStability += 2
 	
-	if iFederalism3 in civics:
-		if iSlavery3 in civics: iStability -= 2
-		if iExtraction3 in civics: iStability -= 2
-		if iProtectionism3 in civics: iStability += 2
-		if iOpportunity3 in civics: iStability += 2
-		if iNativism3 in civics: iStability -= 2
-		if iEgalitarianism3 in civics: iStability += 2
-		if iNationhood3 in civics: iStability -= 2
-		if iHegemony3 in civics: iStability += 2
+	# if iFederalism3 in civics:
+	# 	if iSlavery3 in civics: iStability -= 2
+	# 	if iExtraction3 in civics: iStability -= 2
+	# 	if iProtectionism3 in civics: iStability += 2
+	# 	if iOpportunity3 in civics: iStability += 2
+	# 	if iNativism3 in civics: iStability -= 2
+	# 	if iEgalitarianism3 in civics: iStability += 2
+	# 	if iNationhood3 in civics: iStability -= 2
+	# 	if iHegemony3 in civics: iStability += 2
 	
-	if iMandate3 in civics:
-		if iIndustrialism3 in civics: iStability += 2
-		if iConsumerism3 in civics: iStability += 2
-		if iEmancipation3 in civics: iStability += 2
-		if iDecolonization3 in civics: iStability += 2
-		if iHegemony3 in civics: iStability -= 2
+	# if iMandate3 in civics:
+	# 	if iIndustrialism3 in civics: iStability += 2
+	# 	if iConsumerism3 in civics: iStability += 2
+	# 	if iEmancipation3 in civics: iStability += 2
+	# 	if iDecolonization3 in civics: iStability += 2
+	# 	if iHegemony3 in civics: iStability -= 2
 	
-	if iPoliceState3 in civics:
-		if iSlavery3 in civics: iStability += 2
-		if iPublicWelfare3 in civics: iStability -= 2
-		if iEmancipation3 in civics: iStability -= 2
-		if iNativism3 in civics: iStability += 2
-		if iAssimilation3 in civics: iStability -= 2
-		if iNationhood3 in civics: iStability += 2
+	# if iPoliceState3 in civics:
+	# 	if iSlavery3 in civics: iStability += 2
+	# 	if iPublicWelfare3 in civics: iStability -= 2
+	# 	if iEmancipation3 in civics: iStability -= 2
+	# 	if iNativism3 in civics: iStability += 2
+	# 	if iAssimilation3 in civics: iStability -= 2
+	# 	if iNationhood3 in civics: iStability += 2
 	
-	#	Labor
-	if iSubsistance3 in civics:
-		if iAgrarianism3 in civics: iStability += 2
-		if iExtraction3 in civics: iStability -= 2
-		if iLibertarianism3 in civics: iStability += 2
-		if iOpportunity3 in civics: iStability -= 2
-		if iHomesteads3 in civics: iStability += 2
-		if iHegemony3 in civics: iStability -= 2
+	# #	Labor
+	# if iSubsistance3 in civics:
+	# 	if iAgrarianism3 in civics: iStability += 2
+	# 	if iExtraction3 in civics: iStability -= 2
+	# 	if iLibertarianism3 in civics: iStability += 2
+	# 	if iOpportunity3 in civics: iStability -= 2
+	# 	if iHomesteads3 in civics: iStability += 2
+	# 	if iHegemony3 in civics: iStability -= 2
 	
-	if iApprenticeship3 in civics:
-		if iFreeEnterprise3 in civics: iStability += 2
-		if iProtectionism3 in civics: iStability -= 2
-		if iOpportunity3 in civics: iStability += 2
+	# if iApprenticeship3 in civics:
+	# 	if iFreeEnterprise3 in civics: iStability += 2
+	# 	if iProtectionism3 in civics: iStability -= 2
+	# 	if iOpportunity3 in civics: iStability += 2
 	
-	if iSlavery3 in civics:
-		if iExtraction3 in civics: iStability += 2
-		if iPublicWelfare3 in civics: iStability -= 2
-		if iProfiteering3 in civics: iStability += 2
-		if iEmancipation3 in civics: iStability -= 2
-		if iAssimilation3 in civics: iStability -= 2
-		if iManifestDestiny3 in civics: iStability += 2
+	# if iSlavery3 in civics:
+	# 	if iExtraction3 in civics: iStability += 2
+	# 	if iPublicWelfare3 in civics: iStability -= 2
+	# 	if iProfiteering3 in civics: iStability += 2
+	# 	if iEmancipation3 in civics: iStability -= 2
+	# 	if iAssimilation3 in civics: iStability -= 2
+	# 	if iManifestDestiny3 in civics: iStability += 2
 	
-	if iIndustrialism3 in civics:
-		if iAgrarianism3 in civics: iStability -= 2
-		if iProtectionism3 in civics: iStability += 2
-		if iEgalitarianism3 in civics: iStability -= 2
-		if iHomesteads3 in civics: iStability -= 2
-		if iNationhood3 in civics: iStability += 2
+	# if iIndustrialism3 in civics:
+	# 	if iAgrarianism3 in civics: iStability -= 2
+	# 	if iProtectionism3 in civics: iStability += 2
+	# 	if iEgalitarianism3 in civics: iStability -= 2
+	# 	if iHomesteads3 in civics: iStability -= 2
+	# 	if iNationhood3 in civics: iStability += 2
 	
-	if iImmigrantLabor3 in civics:
-		if iProtectionism3 in civics: iStability -= 2
-		if iConsumerism3 in civics: iStability += 2
-		if iEmancipation3 in civics: iStability += 2
-		if iNativism3 in civics: iStability -= 2
-		if iNationhood3 in civics: iStability -= 2
-		if iHegemony3 in civics: iStability += 2
+	# if iImmigrantLabor3 in civics:
+	# 	if iProtectionism3 in civics: iStability -= 2
+	# 	if iConsumerism3 in civics: iStability += 2
+	# 	if iEmancipation3 in civics: iStability += 2
+	# 	if iNativism3 in civics: iStability -= 2
+	# 	if iNationhood3 in civics: iStability -= 2
+	# 	if iHegemony3 in civics: iStability += 2
 	
-	if iLaborUnions3 in civics:
-		if iFreeEnterprise3 in civics: iStability -= 2
-		if iPublicWelfare3 in civics: iStability += 2
-		if iProfiteering3 in civics: iStability -= 2
-		if iEgalitarianism3 in civics: iStability += 2
-		if iManifestDestiny3 in civics: iStability -= 2
+	# if iLaborUnions3 in civics:
+	# 	if iFreeEnterprise3 in civics: iStability -= 2
+	# 	if iPublicWelfare3 in civics: iStability += 2
+	# 	if iProfiteering3 in civics: iStability -= 2
+	# 	if iEgalitarianism3 in civics: iStability += 2
+	# 	if iManifestDestiny3 in civics: iStability -= 2
 	
-	#	Economy
-	if iAgrarianism3 in civics:
-		if iLibertarianism3 in civics: iStability += 2
-		if iOpportunity3 in civics: iStability -= 2
-		if iHomesteads3 in civics: iStability += 2
-		if iHegemony3 in civics: iStability -= 2
+	# #	Economy
+	# if iAgrarianism3 in civics:
+	# 	if iLibertarianism3 in civics: iStability += 2
+	# 	if iOpportunity3 in civics: iStability -= 2
+	# 	if iHomesteads3 in civics: iStability += 2
+	# 	if iHegemony3 in civics: iStability -= 2
 	
-	if iExtraction3 in civics:
-		if iProfiteering3 in civics: iStability += 2
-		if iEgalitarianism3 in civics: iStability -= 2
-		if iAssimilation3 in civics: iStability -= 2
-		if iManifestDestiny3 in civics: iStability += 2
+	# if iExtraction3 in civics:
+	# 	if iProfiteering3 in civics: iStability += 2
+	# 	if iEgalitarianism3 in civics: iStability -= 2
+	# 	if iAssimilation3 in civics: iStability -= 2
+	# 	if iManifestDestiny3 in civics: iStability += 2
 	
-	if iFreeEnterprise3 in civics:
-		if iOpportunity3 in civics: iStability += 2
-		if iEmancipation3 in civics: iStability -= 2
-		if iAssimilation3 in civics: iStability += 2
-		if iDecolonization3 in civics: iStability -= 2
+	# if iFreeEnterprise3 in civics:
+	# 	if iOpportunity3 in civics: iStability += 2
+	# 	if iEmancipation3 in civics: iStability -= 2
+	# 	if iAssimilation3 in civics: iStability += 2
+	# 	if iDecolonization3 in civics: iStability -= 2
 	
-	if iProtectionism3 in civics:
-		if iLibertarianism3 in civics: iStability -= 2
-		if iNativism3 in civics: iStability += 2
-		if iDecolonization3 in civics: iStability += 2
+	# if iProtectionism3 in civics:
+	# 	if iLibertarianism3 in civics: iStability -= 2
+	# 	if iNativism3 in civics: iStability += 2
+	# 	if iDecolonization3 in civics: iStability += 2
 	
-	if iConsumerism3 in civics:
-		if iEmancipation3 in civics: iStability += 2
-		if iNativism3 in civics: iStability -= 2
-		if iHomesteads3 in civics: iStability -= 2
-		if iHegemony3 in civics: iStability += 2
+	# if iConsumerism3 in civics:
+	# 	if iEmancipation3 in civics: iStability += 2
+	# 	if iNativism3 in civics: iStability -= 2
+	# 	if iHomesteads3 in civics: iStability -= 2
+	# 	if iHegemony3 in civics: iStability += 2
 	
-	if iPublicWelfare3 in civics:
-		if iProfiteering3 in civics: iStability -= 2
-		if iEgalitarianism3 in civics: iStability += 2
-		if iManifestDestiny3 in civics: iStability -= 2
-		if iNationhood3 in civics: iStability += 2
+	# if iPublicWelfare3 in civics:
+	# 	if iProfiteering3 in civics: iStability -= 2
+	# 	if iEgalitarianism3 in civics: iStability += 2
+	# 	if iManifestDestiny3 in civics: iStability -= 2
+	# 	if iNationhood3 in civics: iStability += 2
 	
-	#	Society
-	if iLibertarianism3 in civics:
-		if iHomesteads3 in civics: iStability += 2
-		if iHegemony3 in civics: iStability -= 2
+	# #	Society
+	# if iLibertarianism3 in civics:
+	# 	if iHomesteads3 in civics: iStability += 2
+	# 	if iHegemony3 in civics: iStability -= 2
 	
-	if iProfiteering3 in civics:
-		if iManifestDestiny3 in civics: iStability += 2
+	# if iProfiteering3 in civics:
+	# 	if iManifestDestiny3 in civics: iStability += 2
 	
-	if iOpportunity3 in civics:
-		if iHomesteads3 in civics: iStability += 2
-		if iAssimilation3 in civics: iStability += 2
+	# if iOpportunity3 in civics:
+	# 	if iHomesteads3 in civics: iStability += 2
+	# 	if iAssimilation3 in civics: iStability += 2
 	
-	if iEmancipation3 in civics:
-		if iManifestDestiny3 in civics: iStability -= 2
-		if iDecolonization3 in civics: iStability += 2
+	# if iEmancipation3 in civics:
+	# 	if iManifestDestiny3 in civics: iStability -= 2
+	# 	if iDecolonization3 in civics: iStability += 2
 	
-	if iNativism3 in civics:
-		if iAssimilation3 in civics: iStability -= 2
-		if iNationhood3 in civics: iStability += 2
+	# if iNativism3 in civics:
+	# 	if iAssimilation3 in civics: iStability -= 2
+	# 	if iNationhood3 in civics: iStability += 2
 	
-	if iEgalitarianism3 in civics:
-		if iManifestDestiny3 in civics: iStability -= 2
-		if iHegemony3 in civics: iStability += 2
+	# if iEgalitarianism3 in civics:
+	# 	if iManifestDestiny3 in civics: iStability -= 2
+	# 	if iHegemony3 in civics: iStability += 2
 	
 	
 	return iStability

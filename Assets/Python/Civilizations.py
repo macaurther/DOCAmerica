@@ -205,13 +205,13 @@ lCivilizations = [
 	Civilization(
 		iWari,
 		iGold=100,
-		lCivics=[iChiefdom1, iCustomaryLaw1, iMita1, iRedistribution1],
+		lCivics=[iChiefdom1, iClans1, iMita1, iRedistribution1],
 		techs=techs.column(4).including(iMasonry, iArithmetics).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
 	),
 	Civilization(
 		iMississippi,
 		iGold=25,
-		lCivics=[iChiefdom1, iCustomaryLaw1, iDiffusion1],
+		lCivics=[iChiefdom1, iClans1, iSacrifice1],
 		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning, iDivination, iSeafaring).without(iLandmarks, iPathfinding, iLinguistics, iLocalization, *lImmigraitonTechs)
 	),
 	Civilization(
@@ -245,7 +245,7 @@ lCivilizations = [
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iDespotism1, iCustomaryLaw1, iCaptives1, iMerchants1],
+		lCivics=[iDespotism1, iClans1, iCaptives1, iMerchants1],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(5).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing, *lImmigraitonTechs)
 	),
@@ -258,14 +258,14 @@ lCivilizations = [
 	Civilization(
 		iAztecs,
 		iGold=600,
-		lCivics=[iDespotism1, iCaptives1, iPlunder1, iOrganizedReligion1],
+		lCivics=[iDespotism1, iCaptives1, iRaiding1, iOrganizedReligion1],
 		lEnemies=[iTeotihuacan],
 		techs=techs.column(5).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing)
 	),
 	Civilization(
 		iHaudenosaunee,
 		iGold=200,
-		lCivics=[iChiefdom1, iConfederacy1, iHarmony1, iCooperation1],
+		lCivics=[iChiefdom1, iTribalConfederacy1, iHarmony1, iIntegration1],
 		techs=techs.column(4).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, *lImmigraitonTechs)
 	),
 	Civilization(
