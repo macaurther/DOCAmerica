@@ -12,18 +12,34 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CONDITIONAL_SPAWNS</Tag>
 		<English>2c) Conditional Spawns</English>
+		<French>2c) Naissances conditionnelles</French>
+		<German>2c) Conditional Spawns</German>
+		<Italian>2c) Conditional Spawns</Italian>
+		<Spanish>2c) Conditional Spawns</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CONGRESSES</Tag>
 		<English>1f) Congresses</English>
+		<French>1f) Congr&#232;s</French>
+		<German>1f) Congresses</German>
+		<Italian>1f) Congresses</Italian>
+		<Spanish>1f) Congresses</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CONTINENTS</Tag>
 		<English>1c) Continents, Countries and Unique Historical Victories</English>
+		<French>1c) Continents, pays et victoires historiques uniques</French>
+		<German>1c) Kontinente, L&#228;nder und Einzigartige Historische Siege</German>
+		<Italian>1c) Continenti, paesi e Vittorie Storiche uniche</Italian>
+		<Spanish>1c) Continentes, pa&#237;ses y victorias hist&#243;ricas &#250;nicas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DIPLOMATIC_INSTITUTIONS</Tag>
 		<English>2f) Diplomatic Institutions</English>
+		<French>2f) Institutions diplomatiques</French>
+		<German>2f) Diplomatic Institutions</German>
+		<Italian>2f) Diplomatic Institutions</Italian>
+		<Spanish>2f) Diplomatic Institutions</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_LIMITED_RESOURCE_EFFECTS</Tag>
@@ -31,31 +47,59 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOC_ODDS</Tag>
-		<English>2k) Odds and Ends in DoC</English>
+		<English>2l) Odds and Ends in DoC</English>
+		<French>2l) Pr&#233;cisions de DoC</French>
+		<German>2l) Odds and Ends in DoC</German>
+		<Italian>2l) Odds and Ends in DoC</Italian>
+		<Spanish>2l) Odds and Ends in DoC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_HISTORICALSTARTS</Tag>
 		<English>1a) Historical Starts</English>
+		<French>1a) D&#233;buts historiques</French>
+		<German>1a) Historische Starts</German>
+		<Italian>1a) Avvii storici</Italian>
+		<Spanish>1a) Comienzos hist&#243;ricos</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NEW_CORPORATIONS</Tag>
-		<English>2a)Corporations in DoC</English>
+		<English>2a) Corporations in DoC</English>
+		<French>2a) Soci&#233;t&#233;s commerciales dans DoC</French>
+		<German>2a) Corporations in DoC</German>
+		<Italian>2a) Corporations in DoC</Italian>
+		<Spanish>2a) Corporations in DoC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_ODDS</Tag>
 		<English>1h) Odds and Ends</English>
+		<French>1h) Pr&#233;cisions</French>
+		<German>1h) Odds and Ends</German>
+		<Italian>1h) Odds and Ends</Italian>
+		<Spanish>1h) Odds and Ends</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PLAGUE</Tag>
 		<English>1g) Plague</English>
+		<French>1g) Peste</French>
+		<German>1g) Pest</German>
+		<Italian>1g) Peste</Italian>
+		<Spanish>1g) Peste</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_RESPAWNS</Tag>
 		<English>2b) Respawns in DoC</English>
+		<French>2b) R&#233;apparition dans DoC</French>
+		<German>2b) Respawns in DoC</German>
+		<Italian>2b) Respawns in DoC</Italian>
+		<Spanish>2b) Respawns in DoC</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_RFCINTRO</Tag>
 		<English>1) Rhye's and Fall of Civilization</English>
+		<French>1) Bienvenue &#224; "Rhye's and Fall of Civilization"</French>
+		<German>1) Willkommen zu Rhye's and Fall of Civilization</German>
+		<Italian>1) Benvenuto a Rhye's and Fall</Italian>
+		<Spanish>1) Bienvenido a &amp;quot;Rhye's and Fall of Civilization&amp;quot;</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCINTRO</Tag>
@@ -64,34 +108,74 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_SLAVERY</Tag>
 		<English>2d) Slavery</English>
+		<French>2d) Esclavage</French>
+		<German>2d) Slavery</German>
+		<Italian>2d) Slavery</Italian>
+		<Spanish>2d) Slavery</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_STABILITY</Tag>
 		<English>1d) Stability</English>
+		<French>1d) Stabilit&#233;</French>
+		<German>1d) Stability</German>
+		<Italian>1d) Stability</Italian>
+		<Spanish>1d) Stability</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_STABILITY_INFLUENCES</Tag>
 		<English>2e) Stability Influence Factors</English>
+		<French>2e) Facteurs influen&#231;ant la stabilit&#233;</French>
+		<German>2e) Stability Influence Factors</German>
+		<Italian>2e) Stability Influence Factors</Italian>
+		<Spanish>2e) Stability Influence Factors</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_STABILITY_TOOLTIP</Tag>
 		<English>1e) Tile Stability Display</English>
+		<French>1e) Affichage de la stabilit&#233; par case</French>
+		<German>1e) Tile Stability Display</German>
+		<Italian>1e) Tile Stability Display</Italian>
+		<Spanish>1e) Tile Stability Display</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_UP_UHV</Tag>
 		<English>1b) Unique Powers and Historical Victories</English>
+		<French>1b) Victoires historiques et pouvoirs uniques </French>
+		<German>1b) Einzigartige M&#228;chte und Historische Siege</German>
+		<Italian>1b) Poteri Unici e Vittorie Storiche</Italian>
+		<Spanish>1b) Poderes &#250;nicos y victorias hist&#243;ricas</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PAGAN_RELIGIONS</Tag>
 		<English>2h) Pagan Religions</English>
+		<French>2h) Pagan Religions</French>
+		<German>2h) Heidnische Religionen</German>
+		<Italian>2h) Pagan Religions</Italian>
+		<Spanish>2h) Pagan Religions</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_BIRTH_OF_A_CIVILIZATION</Tag>
 		<English>2i) Birth of a Civilization</English>
+		<French>2i) Birth of a Civilization</French>
+		<German>2i) Geburt einer Zivilisation</German>
+		<Italian>2i) Birth of a Civilization</Italian>
+		<Spanish>2i) Birth of a Civilization</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_HISTORICAL_IMPACT</Tag>
 		<English>2j) Historical Impact</English>
+		<French>2j) Historical Impact</French>
+		<German>2j) Historischer Einfluss</German>
+		<Italian>2j) Historical Impact</Italian>
+		<Spanish>2j) Historical Impact</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_CITY_CONQUEST</Tag>
+		<English>2k) City Conquest</English>
+		<French>2k) City Conquest</French>
+		<German>2k) Stadteroberung</German>
+		<Italian>2k) City Conquest</Italian>
+		<Spanish>2k) City Conquest</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCAINTRO</Tag>
@@ -118,8 +202,8 @@
 		<English>3e) Forts in DOCA</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CONCEPT_IMMIGRATION</Tag>
-		<English>3f) Expeditions</English>
+		<Tag>TXT_KEY_CONCEPT_TERRAIN_OBSTACLES</Tag>
+		<English>3f) Terrain Obstacles</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DOCA_CULTURE_GROUPS</Tag>

@@ -9108,7 +9108,7 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 
 	for (iI = 0; iI < GC.getNumFeatureInfos(); ++iI)
 	{
-		if (iI == FEATURE_JUNGLE || iI == FEATURE_BOG)
+		if (iI == FEATURE_JUNGLE || iI == FEATURE_RAINFOREST || iI == FEATURE_BOG || iI == FEATURE_SWAMP)
 		{
 			continue;
 		}
@@ -9152,7 +9152,7 @@ void CvGameTextMgr::setBasicUnitHelpWithCity(CvWStringBuffer &szBuffer, UnitType
 
 		for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
 		{
-			if (iI == FEATURE_JUNGLE || iI == FEATURE_BOG)
+			if (iI == FEATURE_JUNGLE || iI == FEATURE_RAINFOREST || iI == FEATURE_BOG || iI == FEATURE_SWAMP)
 			{
 				if (!GC.getUnitInfo(eUnit).getFeatureImpassable(iI))
 				{
@@ -16340,7 +16340,7 @@ void CvGameTextMgr::setFeatureHelp(CvWStringBuffer &szBuffer, FeatureTypes eFeat
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_IMPASSABLE"));
 	}
 
-	if (eFeature == FEATURE_JUNGLE || eFeature == FEATURE_BOG)
+	if (eFeature == FEATURE_JUNGLE || eFeature == FEATURE_BOG || eFeature == FEATURE_RAINFOREST || eFeature == FEATURE_SWAMP)
 	{
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_IMPASSABLE_MOST_UNITS"));
 	}

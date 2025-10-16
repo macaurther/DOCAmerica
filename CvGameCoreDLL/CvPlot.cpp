@@ -11814,7 +11814,7 @@ int CvPlot::getWarValue(CivilizationTypes eCivilization) const
 int CvPlot::getWarValue(PlayerTypes ePlayer) const
 {
 	FAssertMsg(ePlayer >= 0, "ePlayer is expected to be non-negative");
-	FAssertMsg(ePlayer < NUM_CIVS, "ePlayer is expected to be within maximum bounds");
+	//FAssertMsg(ePlayer < NUM_CIVS, "ePlayer is expected to be within maximum bounds");	// MacAurther: Disabling this assert because independents kept wanting to check their war map
 
 	CivilizationTypes eCivilization = GET_PLAYER(ePlayer).getCivilizationType();
 	if (eCivilization != NO_CIVILIZATION && eCivilization < NUM_CIVS)

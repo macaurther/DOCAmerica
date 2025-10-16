@@ -506,6 +506,7 @@
 		<PromotionInfo>
 			<Type>PROMOTION_AMPHIBIOUS</Type>
 			<Description>TXT_KEY_PROMOTION_AMPHIBIOUS</Description>
+			<Help>TXT_KEY_PROMOTION_AMPHIBIOUS_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
 			<TechPrereq>TECH_SHALLOW_FISHING</TechPrereq>

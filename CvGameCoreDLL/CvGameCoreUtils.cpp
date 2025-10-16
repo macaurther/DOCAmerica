@@ -1839,7 +1839,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 			if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && 
 				!(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
 			{
-				// MacAurther: Straight Feature: Ships can move through corners
+				// MacAurther: Strait Feature: Ships can move through corners
 				if (!(pFromPlot->isStrait()) && !(pToPlot->isStrait()))
 				{
 					return FALSE;
@@ -1862,11 +1862,21 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 					return FALSE;
 				}
 			}
-			// MacAurther: Straits: Can't cross straits as a land unit unless has Amphibious
+			// MacAurther: Straits: Can't cross straits as a land unit unless has Amphibious or there is a bridge
 			if ((GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isStrait()) && 
 				(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isStrait()))
 			{
-				if (!pSelectionGroup->getHeadUnit()->isHasPromotion(PROMOTION_AMPHIBIOUS))
+				if (!pSelectionGroup->getHeadUnit()->isHasPromotion(PROMOTION_AMPHIBIOUS) &&
+					!(GET_TEAM(pSelectionGroup->getHeadUnit()->getTeam()).isBridgeBuilding() && pFromPlot->isRoute() && pToPlot->isRoute()))
+				{
+					return FALSE;
+				}
+			}
+			// MacAurther: Canyons: Can't cross a river with a canyon
+			if (pFromPlot->getFeatureType() == FEATURE_CANYON || pToPlot->getFeatureType() == FEATURE_CANYON)
+			{
+				const DirectionTypes eDir = directionXY(pFromPlot, pToPlot);
+				if(pFromPlot->isRiverCrossing(eDir))
 				{
 					return FALSE;
 				}

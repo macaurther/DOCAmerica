@@ -125,7 +125,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-100</iHealthPercent>
+			<iHealthPercent>-25</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -592,7 +592,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-100</iHealthPercent>
+			<iHealthPercent>-25</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -705,7 +705,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-100</iHealthPercent>
+			<iHealthPercent>-25</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>10</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -1026,7 +1026,7 @@
 			<HillsYieldChange/>
 			<iMovement>2</iMovement>
 			<iSeeThrough>1</iSeeThrough>
-			<iHealthPercent>-50</iHealthPercent>
+			<iHealthPercent>-25</iHealthPercent>
 			<iDefense>50</iDefense>
 			<iCultureCost>5</iCultureCost>
 			<iAppearance>0</iAppearance>
@@ -2014,6 +2014,7 @@
 			<EffectType>EFFECT_BIRDSCATTER_GULLS</EffectType>
 			<iEffectProbability>80</iEffectProbability>
 			<iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
+			<bGraphicalOnly>1</bGraphicalOnly>
 		</FeatureInfo>
 		<FeatureInfo>
 			<Type>FEATURE_TRADEWINDS_NORTH_EUROPE</Type>
