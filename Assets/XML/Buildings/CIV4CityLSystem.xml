@@ -341,6 +341,13 @@
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
 		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_KILN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Ancient/potteryshop.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.6</Scale>
+		</ArtRef>
 		<!-- LEAF 1x1 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_1x1">
 			<Scale>1.0</Scale>
@@ -1206,6 +1213,51 @@
 			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_GRECO_ROMAN</Attribute>
 			<Attribute Class="Scalar">iBatchGroup:1</Attribute>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_KILN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Medieval/bronzeshop.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_KILN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Kiln/Industrial/plastic_plant.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ALL</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_TAVERN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_native.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN</Attribute>
+			<Attribute Class="Era">ERA_ANCIENT,ERA_CLASSICAL</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_TAVERN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_europe.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN</Attribute>
+			<Attribute Class="Era">ERA_EXPLORATION,ERA_COLONIAL,ERA_REVOLUTIONARY</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_TAVERN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/Tavern_industrial.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_EUROPEAN</Attribute>
+			<Attribute Class="Era">ERA_INDUSTRIAL,ERA_MODERN</Attribute>
+			<Scale>0.9</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_TAVERN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_africa.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_AFRICAN</Attribute>
+			<Attribute Class="Era">ERA_ALL</Attribute>
+			<Attribute Class="Scalar">bHasNoShadow:1</Attribute>
+			<Scale>1.0</Scale>
+		</ArtRef>
+		<ArtRef Name="building:LSYSTEM_TAVERN">
+			<Attribute Class="Scalar">szNIF:Art/Structures/Buildings/Tavern/tavern_native.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SOUTH_AMERICA,ARTSTYLE_BARBARIAN</Attribute>
+			<Attribute Class="Era">ERA_ALL</Attribute>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<!-- LEAF 2x2 BUILDINGS -->
 		<ArtRef Name="building:LSYSTEM_2x2">

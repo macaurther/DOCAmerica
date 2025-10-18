@@ -40,12 +40,12 @@
 					get="getClassicalEraColor" set="setClassicalEraColor" dirtyBit="GameData" 
 					label="Classical Era" 
 					help="Color to use for the Classical era."/>
-			<list   id="Color_ERA_MEDIEVAL" key="ERA_MEDIEVAL" 
+			<list   id="Color_ERA_EXPLORATION" key="ERA_EXPLORATION" 
 					type="color" default="COLOR_GREEN" 
 					get="getMedievalEraColor" set="setMedievalEraColor" dirtyBit="GameData" 
 					label="Medieval Era" 
 					help="Color to use for the Medieval era."/>
-			<list   id="Color_ERA_RENAISSANCE" key="ERA_RENAISSANCE" 
+			<list   id="Color_ERA_COLONIAL" key="ERA_COLONIAL" 
 					type="color" default="COLOR_CYAN" 
 					get="getRenaissanceEraColor" set="setRenaissanceEraColor" dirtyBit="GameData" 
 					label="Renaissance Era" 

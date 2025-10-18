@@ -6736,7 +6736,7 @@ int CvPlayer::getProductionNeeded(UnitTypes eUnit) const
 	{
 		iEraModifier += 5 * getCurrentEra();
 
-		if (getCurrentEra() > ERA_RENAISSANCE) iEraModifier += 5 * getCurrentEra();
+		if (getCurrentEra() > ERA_COLONIAL) iEraModifier += 5 * getCurrentEra();
 	}
 	else
 	{

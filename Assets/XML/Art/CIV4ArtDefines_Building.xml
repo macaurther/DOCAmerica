@@ -1008,14 +1008,14 @@
 			<Button>Art/Interface/Buttons/Buildings/Constabulary.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_COFFEEHOUSE</Type>
-			<LSystem>LSYSTEM_2x1</LSystem>
+			<Type>ART_DEF_BUILDING_TAVERN</Type>
+			<LSystem>LSYSTEM_TAVERN</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>1.0</fScale>
-			<fInterfaceScale>3.0</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Tavern/greco-roman_tavern.nif</NIF>
+			<fInterfaceScale>3.5</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tavern/tavern_mediterranean.nif</NIF>
 			<KFM/>
-			<Button>Art/Structures/Buildings/Tavern/Button_Tavern.dds</Button>
+			<Button>Art/Interface/Buttons/Buildings/Tavern.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_POST_OFFICE</Type>
@@ -1378,7 +1378,7 @@
 			<Button>Art/Structures/Buildings/Kalasasaya/DruidCathedral_Button.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_WARI_COLCAS</Type>
+			<Type>ART_DEF_BUILDING_WARI_QOLLQA</Type>
 			<LSystem>LSYSTEM_1x1</LSystem>
 			<bAnimated>0</bAnimated>
 			<fScale>2.2</fScale>
@@ -1828,16 +1828,6 @@
 			<Button>Art/Interface/Buttons/Buildings/Tzompantli.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_STOCKS</Type>
-			<LSystem>LSYSTEM_3x1</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Camp/Camp.nif</NIF>
-			<KFM>Art/Structures/Improvements/Camp/Camp.kfm</KFM>
-			<Button>Art/Interface/Buttons/Buildings/Stocks.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_DUTCH_FACTORIJ</Type>
 			<LSystem>LSYSTEM_3x1</LSystem>
 			<bAnimated>0</bAnimated>
@@ -1886,16 +1876,6 @@
 			<NIF>Art/Structures/Buildings/Thermae/bad_giebel.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Well.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_SLAVE_MARKET</Type>
-			<LSystem>LSYSTEM_4x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>0.5</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Souk/arab_col.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Buildings/Slave_Market.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_WHEELWRIGHT</Type>
@@ -2089,11 +2069,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_VENEZUELAN_REFINERY</Type>
-			<LSystem>LSYSTEM_4x2</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>2.09</fScale>
+			<LSystem>LSYSTEM_3x3</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>15</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/Factory/Factory.nif</NIF>
+			<NIF>Art/Structures/Buildings/Refinery/oilrefinery.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Refinery.dds</Button>
 		</BuildingArtInfo>
@@ -2428,6 +2408,26 @@
 			<Button>Art/Interface/Buttons/Wonders/HooverDam.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_TANNERY</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>0.6</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Tannery/Tannery.nif</NIF>
+			<KFM/>
+			<Button>Art/Structures/Buildings/Tannery/Tannery.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_KILN</Type>
+			<LSystem>LSYSTEM_KILN</LSystem>
+			<bAnimated>1</bAnimated>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.3</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Kiln/Ancient/potteryshop.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Kiln.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_JEWELLER</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>1</bAnimated>
@@ -2486,6 +2486,16 @@
 			<NIF>Art/Structures/Buildings/Factory/Factory.nif</NIF>
 			<KFM/>
 			<Button>Art/Interface/Buttons/Buildings/Maquiladora.dds</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_COMPOUND</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<fScale>1.37</fScale>
+			<fInterfaceScale>0.52</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/Barracks/Barracks.nif</NIF>
+			<KFM/>
+			<Button>Art/Interface/Buttons/Buildings/Compound.dds</Button>
 		</BuildingArtInfo>
 	</BuildingArtInfos>
 </Civ4ArtDefines>

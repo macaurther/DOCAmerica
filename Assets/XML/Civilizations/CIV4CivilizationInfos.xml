@@ -70,10 +70,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -201,10 +197,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -433,10 +425,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -553,10 +541,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -647,7 +631,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_WALLS</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_COMPOUND</BuildingClassType>
 					<BuildingType>BUILDING_CHIMU_KANCHA</BuildingType>
 				</Building>
 				<Building>
@@ -745,10 +729,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -857,10 +837,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -1073,10 +1049,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -1193,10 +1165,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -1335,7 +1303,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_PLAZA</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_TANNERY</BuildingClassType>
 					<BuildingType>BUILDING_HAUDENOSAUNEE_LONGHOUSE</BuildingType>
 				</Building>
 				<Building>
@@ -1647,7 +1615,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_TANNERY</BuildingClassType>
 					<BuildingType>BUILDING_INUIT_IGLOO</BuildingType>
 				</Building>
 				<Building>
@@ -1751,7 +1719,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_SMOKEHOUSE</BuildingClassType>
 					<BuildingType>BUILDING_LAKOTA_TIPI</BuildingType>
 				</Building>
 				<Building>
@@ -1977,10 +1945,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -2347,10 +2311,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -2502,10 +2462,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -2605,10 +2561,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -2724,10 +2676,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -3046,10 +2994,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -3155,10 +3099,6 @@
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_GOVERNORS_MANSION</BuildingType>
-				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_COLONY</BuildingType>
 				</Building>
 			</Buildings>
 			<Units>
@@ -3466,10 +3406,6 @@
 					<BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
 					<BuildingType>BUILDING_CAPITOL</BuildingType>
 				</Building>
-				<Building>
-					<BuildingClassType>BUILDINGCLASS_SLAVE_MARKET</BuildingClassType>
-					<BuildingType>BUILDING_SLAVE_MARKET_NATION</BuildingType>
-				</Building>
 			</Buildings>
 			<Units>
 				<Unit>
@@ -3552,7 +3488,7 @@
 			<Buildings>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_GRANARY</BuildingClassType>
-					<BuildingType>BUILDING_WARI_COLCAS</BuildingType>
+					<BuildingType>BUILDING_WARI_QOLLQA</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingClassType>
@@ -3662,7 +3598,7 @@
 			</Cities>
 			<Buildings>
 				<Building>
-					<BuildingClassType>BUILDINGCLASS_ALTAR</BuildingClassType>
+					<BuildingClassType>BUILDINGCLASS_COMPOUND</BuildingClassType>
 					<BuildingType>BUILDING_ZAPOTEC_TOMB</BuildingType>
 				</Building>
 				<Building>

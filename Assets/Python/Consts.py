@@ -534,21 +534,21 @@ iNumBonusVarieties = 10
 (iDyeCochineal, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds,	iGemsEmeralds,	iSheepBlack,	iCowBrown,		iPigFurry,		iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 211
-# Buildings (117)
+iNumBuildings = 210
+# Buildings (116)
 # 0				1				2				3				4				5				6				7				8				9
-(iPalace,		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iColcas,		iIgloo,			iTipi,			iMarket,		iWeaver,		
-iStoneworks,	iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			iAltar,			iTomb,			
-iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iSukaQullu,		iBath,			iTemazcal,		iJeweller,		iGoldsmith,		iWalls,			
-iKancha,		iPlaza,			iPlatformMound,	iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			iStocks,		iTradingPost,	
-iHuntingPost,	iForge,			iTavern,		iStable,		iPalisade,		iFactorij,		iMonument,		iSchoolhouse,	iCalmecac,		iGrocer, 		
-iConstabulary,	iRoyalMountedPolice,iSlaveMarket2,iSlaveMarket3,iWharf,			iLighthouse,	iWarehouse,		iSilversmith,	iMagazine,		iStarFort,		
-iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	iWheelwright,	
-iPostOffice,	iTambo,			iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iShipyard,		iObservatory,	
-iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,	
-iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iNewspaper,		iSupermarket,	iHospital,		
-iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	iCoalPlant,		iHydroPlant,	
-iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
+(iPalace,		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iQollqa,		iSmokehouse,	iLuau,			iTipi,			iTannery,		
+iIgloo,			iLonghouse,		iKiln,			iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			
+iWeaver,		iPaganTemple,	iAqueduct,		iSukaQullu,		iBath,			iTemazcal,		iCompound,		iKancha,		iTomb,			iMarket,		
+iStoneworks,	iJeweller,		iGoldsmith,		iPlaza,			iPlatformMound,	iKiva,			iAltar,			iTzompantli,	iYacatas,		iHarbor,		
+iConstabulary,	iRoyalMountedPolice,iTradingPost,iHuntingPost,	iForge,			iTavern,		iStable,		iPalisade,		iFactorij,		iMonument,		
+iSchoolhouse,	iCalmecac,		iGrocer, 		iCourthouse,	iAssembly,		iThingvellir,	iWharf,			iLighthouse,	iWarehouse,		iSilversmith,	
+iMagazine,		iStarFort,		iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iPostOffice,	iTambo,			
+iWheelwright,	iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iShipyard,		iObservatory,	iPrintingPress,	
+iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,iWoolMill,		
+iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iNewspaper,		iSupermarket,	iHospital,		iIntelligenceAgency,
+iAirport,		iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	iCoalPlant,		iHydroPlant,	iIndustrialPark,
+iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
 # Religious Buildings (29)
 # 0				1				2				3				4				5				6				7				8				9
 iJewishTemple, iJewishCathedral,iJewishMonastery,iJewishShrine, iOrthodoxTemple,iOrthodoxCathedral,iOrthodoxMonastery,iOrthodoxShrine,iCatholicTemple,iCatholicCathedral, 
