@@ -341,4 +341,12 @@
 		<Italian>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</Italian>
 		<Spanish>Contact a [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_TRIBE</Tag>
+		<English>Create [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</English>
+		<French>Create [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</French>
+		<German>Create [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</German>
+		<Italian>Create [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</Italian>
+		<Spanish>Create [LINK=ROUTE_HIGHWAY]Tribe[\LINK]</Spanish>
+	</TEXT>
 </Civ4GameText>

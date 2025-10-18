@@ -233,7 +233,7 @@ lCivilizations = [
 	Civilization(
 		iChimu,
 		iGold=300,
-		lCivics=[iDespotism1, iMerchants1],
+		lCivics=[iDespotism1, iMindalaes1],
 		techs=techs.column(5).including(iConstruction, iTrade).without(iHunting, iTrapping, *lImmigraitonTechs)
 	),
 	Civilization(
@@ -245,7 +245,7 @@ lCivilizations = [
 	Civilization(
 		iInca,
 		iGold=700,
-		lCivics=[iDespotism1, iClans1, iTlacotin1, iMerchants1],
+		lCivics=[iDespotism1, iClans1, iTlacotin1, iMindalaes1],
 		lEnemies=[iWari, iTiwanaku],
 		techs=techs.column(5).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing, *lImmigraitonTechs)
 	),

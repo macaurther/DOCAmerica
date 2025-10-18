@@ -271,7 +271,10 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits, 
 	{
 		if (pPlot->getFeatureType() != NO_FEATURE && pPlot->getFeatureType() != FEATURE_FLOOD_PLAINS && pPlot->getFeatureType() != FEATURE_CANYON) //Leoreth: flood plains are not removed by cities -> MacAurther: neither are Canyons
 		{
-			pPlot->setFeatureType(NO_FEATURE);
+			if (!GET_PLAYER(eOwner).hasCivic(CIVIC_HARMONY_NATIVE))	// MacAurther: Harmony civic
+			{
+				pPlot->setFeatureType(NO_FEATURE);
+			}
 		}
 	}
 
@@ -17448,6 +17451,22 @@ bool CvCity::isAutoRaze() const
 	}
 
 	if (GC.getGameINLINE().isOption(GAMEOPTION_ONE_CITY_CHALLENGE) && isHuman())
+	{
+		return true;
+	}
+
+	// MacAurther: Harmony civic
+	PlayerTypes ePreviousPlayer = NO_PLAYER;
+	for (int i = 0; i < MAX_CIV_PLAYERS; ++i)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)i);
+		if (kPlayer.isAlive() && kPlayer.getCivilizationType() == getPreviousCiv())
+		{
+			ePreviousPlayer = (PlayerTypes)i;
+			break;
+		}
+	}
+	if (ePreviousPlayer != NO_PLAYER && GET_PLAYER(ePreviousPlayer).hasCivic(CIVIC_HARMONY_NATIVE))
 	{
 		return true;
 	}

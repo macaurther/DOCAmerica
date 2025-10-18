@@ -784,15 +784,16 @@
 	<ElementType name="SpecialistValids" content="eltOnly">
 		<element type="SpecialistValid" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
-	<!-- Leoreth -->
-	<ElementType name="iMinimalSpecialistCount" content="textOnly" dt:type="int"/>
-	<ElementType name="MinimalSpecialist" content="eltOnly">
+	<!-- Leoreth start -->
+	<ElementType name="iCount" content="textOnly" dt:type="int"/>
+	<ElementType name="SpecialistCount" content="eltOnly">
 		<element type="SpecialistType"/>
-		<element type="iMinimalSpecialistCount"/>
+		<element type="iCount"/>
 	</ElementType>
-	<ElementType name="MinimalSpecialists" content="eltOnly">
-		<element type="iMinimalSpecialistCount" minOccurs="0" maxOccurs="*"/>
+	<ElementType name="SpecialistCounts" content="eltOnly">
+		<element type="SpecialistCount" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<!-- Leoreth end -->
 	<ElementType name="BuildingType" content="textOnly"/>
 	<ElementType name="iHappinessChange" content="textOnly" dt:type="int"/>
 	<ElementType name="BuildingHappinessChange" content="eltOnly">
@@ -978,7 +979,6 @@
 		<element type="Hurrys" minOccurs="0"/>
 		<element type="SpecialBuildingNotRequireds" minOccurs="0"/>
 		<element type="SpecialistValids" minOccurs="0"/>
-		<element type="MinimalSpecialists" minOccurs="0"/> <!-- Leoreth -->
 		<element type="BuildingHappinessChanges" minOccurs="0"/>
 		<element type="BuildingHealthChanges" minOccurs="0"/>
 		<element type="BuildingProductionModifiers" minOccurs="0"/> <!-- Leoreth -->

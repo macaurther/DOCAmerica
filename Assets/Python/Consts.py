@@ -504,9 +504,21 @@ iNumUnitRoles = 23
 # 0				1				2				3				4				5				6				7				8				9
 (iSettle,		iWork,			iRecon,			iMissionary,	iMilitia,		iBase,			iCounter,		iDefend,		iSkirmish,		iCav,			
 iSiege,			iSiegeCity,		iWorkSea,		iFerrySea,		iEscortSea,		iHarassSea,		iCapitalSea,	iColonistSettle,iColonistSupport,iColonistExplore, 
-iColonistConquer, iColonistDefend, iColonistSlave) = range(iNumUnitRoles)
+iColonistConquer,iColonistDefend,iColonistSlave) = range(iNumUnitRoles)
 
 lColonistRoles = [iColonistSettle, iColonistSupport, iColonistExplore, iColonistConquer, iColonistDefend, iColonistSlave]
+
+iNumPromotions = 85
+# 0				1				2				3				4				5				6				7				8				9
+(iCombat1,		iCombat2,		iCombat3,		iCombat4,		iCombat5,		iCombat6,		iCover,			iShock,			iPinch,			iGuerilla,
+iCharge,		iFlanking,		iAmphibious,	iMarch,			iBlitz,			iCommando,		iMedic1,		iMedic2,		iMedic3,		iMountaineer1,
+iMountaineer2,	iMountaineer3,	iWoodsman1,		iWoodsman2,		iWoodsman3,		iFormation1,	iFormation2,	iFormation3,	iRaider1,		iRaider2,
+iRaider3,		iGarrison1,		iGarrison2,		iGarrison3,		iDrill1,		iDrill2,		iDrill3,		iDrill4,		iBarrage1,		iBarrage2,
+iBarrage3,		iAccuracy,		iFeint1,		iFeint2,		iRiverCombat,	iSentry,		iMobility,		iNavigation1,	iNavigation2,	iRange1,
+iRange2,		iInterception1,	iInterception2,	iAce,			iLogistics1,	iLogistics2,	iLogistics3,	iDeception1,	iDeception2,	iDeception3,
+iSecurity1,		iSecurity2,		iSecurity3,		iImprovise1,	iImprovise2,	iImprovise3,	iImprovise4,	iImprovise5,	iLoyalty,		iInstigator1,
+iInsitgator2,	iInstigator3,	iAlchemist1,	iAlchemist2,	iEscape1,		iEscape2,		iLeader,		iLeadership,	iTactics,		iMorale,
+iMercenary,		iDesertAdaptation,iPrairieAdaptation,iVolunteer,iReconnaissance) = range(iNumPromotions)
 
 # initialise bonuses variables to bonuses IDs from WBS
 iNumBonuses = 49
@@ -522,21 +534,21 @@ iNumBonusVarieties = 10
 (iDyeCochineal, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds,	iGemsEmeralds,	iSheepBlack,	iCowBrown,		iPigFurry,		iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 212
-# Buildings (118)
+iNumBuildings = 211
+# Buildings (117)
 # 0				1				2				3				4				5				6				7				8				9
 (iPalace,		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iColcas,		iIgloo,			iTipi,			iMarket,		iWeaver,		
 iStoneworks,	iArena,			iBallCourt,		iSambadrome,	iBarracks,		iKallanka,		iHerbalist,		iKuna,			iAltar,			iTomb,			
 iTzompantli,	iYacatas,		iPaganTemple,	iAqueduct,		iSukaQullu,		iBath,			iTemazcal,		iJeweller,		iGoldsmith,		iWalls,			
 iKancha,		iPlaza,			iPlatformMound,	iKiva,			iLonghouse,		iHarbor,		iSmokehouse,	iLuau,			iStocks,		iTradingPost,	
 iHuntingPost,	iForge,			iTavern,		iStable,		iPalisade,		iFactorij,		iMonument,		iSchoolhouse,	iCalmecac,		iGrocer, 		
-iConstabulary,	iRoyalMountedPolice,iSlaveMarket1,iSlaveMarket2,iSlaveMarket3,	iWharf,			iLighthouse,	iWarehouse,		iSilversmith,	iMagazine,		
-iStarFort,		iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	
-iWheelwright,	iPostOffice,	iTambo,			iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iShipyard,		
-iObservatory,	iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,
-iTextileMill,	iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iNewspaper,		iSupermarket,	
-iHospital,		iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	iCoalPlant,		
-iHydroPlant,	iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
+iConstabulary,	iRoyalMountedPolice,iSlaveMarket2,iSlaveMarket3,iWharf,			iLighthouse,	iWarehouse,		iSilversmith,	iMagazine,		iStarFort,		
+iCitadelle,		iEstate,		iHacienda,		iUniversity,	iPharmacy,		iDistillery,	iCourthouse,	iAssembly,		iThingvellir,	iWheelwright,	
+iPostOffice,	iTambo,			iCustomsHouse,	iFeitoria,		iBank,			iLevee,			iSeigneur,		iTheatre,		iShipyard,		iObservatory,	
+iPrintingPress,	iMeetingHall,	iStateHouse,	iSlaughterhouse,iColdStoragePlant,iSewer,		iJail,			iImmigrationOffice,iRailwayStation,iTextileMill,	
+iWoolMill,		iSteelMill,		iRefinery,		iRodeo,			iCharreada,		iArsenal,		iDrydock,		iNewspaper,		iSupermarket,	iHospital,		
+iIntelligenceAgency,iAirport,	iHotel,			iDepartmentStore,iMall,			iElectricalGrid,iFactory,		iMaquiladora,	iCoalPlant,		iHydroPlant,	
+iIndustrialPark,iNuclearPlant,	iPark,			iStadium,		iBunker,		iLaboratory,	iBroadcastTower,
 # Religious Buildings (29)
 # 0				1				2				3				4				5				6				7				8				9
 iJewishTemple, iJewishCathedral,iJewishMonastery,iJewishShrine, iOrthodoxTemple,iOrthodoxCathedral,iOrthodoxMonastery,iOrthodoxShrine,iCatholicTemple,iCatholicCathedral, 
@@ -584,8 +596,8 @@ iNumCivics = 126
 # Native (Culture Group 1)
 (iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iAristocracy1,	iGodKing1,		iCouncil1,		
 iDecentralization1,iClans1,		iCityStates1,	iTribalConfederacy1,iBureaucracy1,iVassalage1,	iFirstNation1,
-iTraditionalism1,iSubsistance1,	iTlacotin1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iSlavery1,	
-iReciprocity1,	iCalpulli1,		iRedistribution1,iMerchants1,	iRaiding1,		iDependency1,	iTourism1,
+iTraditionalism1,iSubsistance1,	iTlacotin1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iGuilds1,	
+iReciprocity1,	iCalpulli1,		iRedistribution1,iMindalaes1,	iRaiding1,		iDependency1,	iTourism1,
 iAnimism1,		iHarmony1,		iSacrifice1,	iOrganizedReligion1,iCosmopolitans1,iAcculturation1,iGhostDance1,
 iSettlement1,	iNomads1,		iIsolationism1,	iConquest1,		iIntegration1,	iTributaries1,	iAncestralLands1,
 # Colony
@@ -746,8 +758,8 @@ iFjord,			iDeepOcean) = range(iNumTerrains)
 iImmunity = 20
 
 # Victory
-iVictoryPaganism = 10
-iVictorySecularism = 11
+iVictoryPaganism = 7
+iVictorySecularism = 8
 
 
 #leaders

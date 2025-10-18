@@ -41,6 +41,7 @@ typedef list<char*> LISTCHAR;
 
 #define BUILD_ROAD				  ((BuildTypes)GC.getInfoTypeForString("BUILD_ROAD"))								// MacAurther
 #define BUILD_CONTACT_TRIBE		  ((BuildTypes)GC.getInfoTypeForString("BUILD_CONTACT_TRIBE"))						// MacAurther
+#define BUILD_TRIBE				  ((BuildTypes)GC.getInfoTypeForString("BUILD_TRIBE"))								// MacAurther
 #define BUILD_FORT				  ((BuildTypes)GC.getInfoTypeForString("BUILD_FORT"))								// MacAurther
 #define BUILD_PLANTATION		  ((BuildTypes)GC.getInfoTypeForString("BUILD_PLANTATION"))							// MacAurther
 

@@ -1127,14 +1127,6 @@
 		<Spanish>Your unit has defeated a %s1, acquiring %d2 [ICON_FOOD] for %s3.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_COOPERATION_EFFECT</Tag>
-		<English>Converted tribespeople settle in %s1.</English>
-		<French>Converted tribespeople settle in %s1.</French>
-		<German>Converted tribespeople settle in %s1.</German>
-		<Italian>Converted tribespeople settle in %s1.</Italian>
-		<Spanish>Converted tribespeople settle in %s1.</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EXTRACTION_FEATURE</Tag>
 		<English>Overextraction has removed a feature!</English>
 		<French>Overextraction has removed a feature!</French>

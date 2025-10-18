@@ -25480,7 +25480,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_INDUSTRIAL)
 	{
-		if (eCivic == CIVIC_SLAVERY_NATIVE || eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
+		if (eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
 		{
 			return true;
 		}
@@ -25504,7 +25504,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)ECONOMICS))
 	{
-		if (eCivic == CIVIC_RECIPROCITY_NATIVE || eCivic == CIVIC_MERCHANTS_NATIVE || eCivic == CIVIC_CRAFTSMEN_NATIVE)
+		if (eCivic == CIVIC_RECIPROCITY_NATIVE || eCivic == CIVIC_MINDALAES_NATIVE || eCivic == CIVIC_CRAFTSMEN_NATIVE)
 		{
 			return true;
 		}
@@ -25512,7 +25512,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (GET_TEAM(getTeam()).isHasTech((TechTypes)CIVIL_RIGHTS))
 	{
-		if (eCivic == CIVIC_SLAVERY_NATIVE || eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
+		if (eCivic == CIVIC_SLAVERY_COLONY || eCivic == CIVIC_SLAVERY_NATION || eCivic == CIVIC_CASTE_SYSTEM_NATIVE)
 		{
 			return true;
 		}

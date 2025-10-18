@@ -5856,7 +5856,6 @@ CvCivicInfo::~CvCivicInfo()
 	SAFE_DELETE_ARRAY(m_paiSpecialistCounts); // Leoreth
 	SAFE_DELETE_ARRAY(m_paiDomainProductionModifiers); // Leoreth
 	SAFE_DELETE_ARRAY(m_paiDomainExperienceModifiers); // Leoreth
-	SAFE_DELETE_ARRAY(m_paiMinimalSpecialistCounts); // Leoreth
 	SAFE_DELETE_ARRAY(m_pabHurry);
 	SAFE_DELETE_ARRAY(m_pabSpecialBuildingNotRequired);
 	SAFE_DELETE_ARRAY(m_pabSpecialistValid);
@@ -6414,18 +6413,6 @@ int CvCivicInfo::getImprovementYieldChanges(int i, int j) const
 	return m_ppiImprovementYieldChanges[i][j];
 }
 
-int* CvCivicInfo::getMinimalSpecialistCountsArray() const
-{
-	return m_paiMinimalSpecialistCounts;
-}
-
-int CvCivicInfo::getMinimalSpecialistCount(int i) const
-{
-	FAssertMsg(i < GC.getNumSpecialistInfos(), "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paiMinimalSpecialistCounts ? m_paiMinimalSpecialistCounts[i] : -1;
-}
-
 int CvCivicInfo::getUnhappinessDecayModifier() const
 {
 	return m_iUnhappinessDecayModifier;
@@ -6643,11 +6630,6 @@ void CvCivicInfo::read(FDataStreamBase* stream)
 	m_paiDomainExperienceModifiers = new int[NUM_DOMAIN_TYPES];
 	stream->Read(NUM_DOMAIN_TYPES, m_paiDomainExperienceModifiers);
 
-	// Leoreth
-	SAFE_DELETE_ARRAY(m_paiMinimalSpecialistCounts);
-	m_paiMinimalSpecialistCounts = new int[GC.getNumSpecialistInfos()];
-	stream->Read(GC.getNumSpecialistInfos(), m_paiMinimalSpecialistCounts);
-
 	SAFE_DELETE_ARRAY(m_pabHurry);
 	m_pabHurry = new bool[GC.getNumHurryInfos()];
 	stream->Read(GC.getNumHurryInfos(), m_pabHurry);
@@ -6790,7 +6772,6 @@ void CvCivicInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumSpecialistInfos(), m_paiSpecialistCounts); // Leoreth
 	stream->Write(NUM_DOMAIN_TYPES, m_paiDomainProductionModifiers); // Leoreth
 	stream->Write(NUM_DOMAIN_TYPES, m_paiDomainExperienceModifiers); // Leoreth
-	stream->Write(GC.getNumSpecialistInfos(), m_paiMinimalSpecialistCounts); // Leoreth
 	stream->Write(GC.getNumHurryInfos(), m_pabHurry);
 	stream->Write(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingNotRequired);
 	stream->Write(GC.getNumSpecialistInfos(), m_pabSpecialistValid);
@@ -7017,9 +6998,6 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->SetVariableListTagPair(&m_paiBuildingHappinessChanges, "BuildingHappinessChanges", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
 	pXML->SetVariableListTagPair(&m_paiBuildingHealthChanges, "BuildingHealthChanges", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());
-
-	// Leoreth
-	pXML->SetVariableListTagPair(&m_paiMinimalSpecialistCounts, "MinimalSpecialists", sizeof(GC.getSpecialistInfo((SpecialistTypes)0)), GC.getNumSpecialistInfos());
 
 	// Leoreth
 	pXML->SetVariableListTagPair(&m_paiBuildingProductionModifiers, "BuildingProductionModifiers", sizeof(GC.getBuildingClassInfo((BuildingClassTypes)0)), GC.getNumBuildingClassInfos());

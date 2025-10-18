@@ -59,7 +59,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_MONARCHY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Strategy>
 			<TechPrereq>TECH_DIVINATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/MonarchyNative.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -127,15 +127,6 @@
 					<iHappinessChange>2</iHappinessChange>
 				</BuildingHappinessChange>
 			</BuildingHappinessChanges>
-			<SpecialistTypeExtraYields>
-				<SpecialistTypeExtraYield>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<YieldChanges>
-						<iYield>0</iYield>
-						<iYield>2</iYield>
-					</YieldChanges>
-				</SpecialistTypeExtraYield>
-			</SpecialistTypeExtraYields>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_COUNCIL</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -144,7 +135,7 @@
 			<Description>TXT_KEY_CIVIC_DECENTRALIZATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DECENTRALIZATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DECENTRALIZATION_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civics/Authority.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Decentralization.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,7,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -370,7 +361,7 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<iWonderProductionModifier>50</iWonderProductionModifier>
+			<iWonderProductionModifier>25</iWonderProductionModifier>
 			<HappinessExtraYields>
 				<iYield>0</iYield>
 				<iYield>1</iYield>
@@ -386,43 +377,98 @@
 			<Button>,Art/Interface/Buttons/Civics/Deification.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
-			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<MinimalSpecialists>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-				<MinimalSpecialist>
+			<iLargestCityHappiness>1</iLargestCityHappiness>
+			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<SpecialistCounts>
+				<SpecialistCount>
 					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-				<MinimalSpecialist>
+					<iCount>2</iCount>
+				</SpecialistCount>
+				<SpecialistCount>
 					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-				<MinimalSpecialist>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-				<MinimalSpecialist>
+					<iCount>2</iCount>
+				</SpecialistCount>
+				<SpecialistCount>
 					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-			</MinimalSpecialists>
+					<iCount>2</iCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_SCIENTIST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>1</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
-			<Type>CIVIC_SLAVERY_NATIVE</Type>
-			<Description>TXT_KEY_CIVIC_SLAVERY</Description>
-			<Civilopedia>TXT_KEY_CIVIC_SLAVERY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_SLAVERY_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_SLAVERY_HELP</Help>
+			<Type>CIVIC_GUILDS_NATIVE</Type>
+			<Description>TXT_KEY_CIVIC_GUILDS</Description>
+			<Civilopedia>TXT_KEY_CIVIC_GUILDS_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_GUILDS_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_GUILDS_HELP</Help>
 			<TechPrereq>TECH_MEDIEVAL_TACTICS</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Slavery.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Guilds.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<bSlavery>1</bSlavery>
+			<SpecialistCounts>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<iCount>2</iCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<iCount>2</iCount>
+				</SpecialistCount>
+				<SpecialistCount>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<iCount>2</iCount>
+				</SpecialistCount>
+			</SpecialistCounts>
+			<SpecialistTypeExtraYields>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+				<SpecialistTypeExtraYield>
+					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
+					<YieldChanges>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>2</iYield>
+					</YieldChanges>
+				</SpecialistTypeExtraYield>
+			</SpecialistTypeExtraYields>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -485,10 +531,10 @@
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
-			<Type>CIVIC_MERCHANT_TRADE_NATIVE</Type>
-			<Description>TXT_KEY_CIVIC_MERCHANT_TRADE</Description>
-			<Civilopedia>TXT_KEY_CIVIC_MERCHANT_TRADE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_CIVIC_MERCHANT_TRADE_STRATEGY</Strategy>
+			<Type>CIVIC_MINDALAES_NATIVE</Type>
+			<Description>TXT_KEY_CIVIC_MINDALAES</Description>
+			<Civilopedia>TXT_KEY_CIVIC_MINDALAES_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_CIVIC_MINDALAES_STRATEGY</Strategy>
 			<TechPrereq>TECH_TRADE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Merchants.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -511,6 +557,7 @@
 			<Description>TXT_KEY_CIVIC_RAIDING</Description>
 			<Civilopedia>TXT_KEY_CIVIC_RAIDING_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_RAIDING_NATIVE_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_RAIDING_NATIVE_HELP</Help>
 			<TechPrereq>TECH_ALLOYS</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/PlunderNative.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
@@ -549,12 +596,6 @@
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
-			<SpecialistValids>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
 					<SpecialistType>SPECIALIST_ARTIST</SpecialistType>
@@ -565,6 +606,29 @@
 					</YieldChanges>
 				</SpecialistTypeExtraYield>
 			</SpecialistTypeExtraYields>
+			<TradeYieldModifiers>
+				<iYield>0</iYield>
+				<iYield>0</iYield>
+				<iYield>50</iYield>
+			</TradeYieldModifiers>
+			<FeatureHappinessChanges>
+				<FeatureHappinessChange>
+					<FeatureType>FEATURE_ISLANDS</FeatureType>
+					<iHappinessChange>1</iHappinessChange>
+				</FeatureHappinessChange>
+				<FeatureHappinessChange>
+					<FeatureType>FEATURE_STRAIT_ISLANDS</FeatureType>
+					<iHappinessChange>1</iHappinessChange>
+				</FeatureHappinessChange>
+				<FeatureHappinessChange>
+					<FeatureType>FEATURE_CANYON</FeatureType>
+					<iHappinessChange>1</iHappinessChange>
+				</FeatureHappinessChange>
+				<FeatureHappinessChange>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<iHappinessChange>1</iHappinessChange>
+				</FeatureHappinessChange>
+			</FeatureHappinessChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -584,10 +648,10 @@
 			<Description>TXT_KEY_CIVIC_HARMONY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_HARMONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_HARMONY_STRATEGY</Strategy>
+			<Help>TXT_KEY_CIVIC_HARMONY_HELP</Help>
 			<TechPrereq>TECH_MYTHOLOGY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Harmony.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iLargestCityHappiness>2</iLargestCityHappiness>
 			<iExtraHealth>2</iExtraHealth>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -634,12 +698,6 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
-			<SpecialistValids>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_PRIEST</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
 			<SpecialistTypeExtraYields>
 				<SpecialistTypeExtraYield>
 					<SpecialistType>SPECIALIST_GREAT_PRIEST</SpecialistType>
@@ -650,6 +708,12 @@
 					</YieldChanges>
 				</SpecialistTypeExtraYield>
 			</SpecialistTypeExtraYields>
+			<BuildingHappinessChanges>
+				<BuildingHappinessChange>
+					<BuildingType>BUILDINGCLASS_PAGAN_TEMPLE</BuildingType>
+					<iHappinessChange>1</iHappinessChange>
+				</BuildingHappinessChange>
+			</BuildingHappinessChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_SOCIETY</CivicOptionType>
@@ -717,7 +781,7 @@
 			<bStateReligion>1</bStateReligion>
 			<bNoNonStateReligionSpread>1</bNoNonStateReligionSpread>
 			<iWarWearinessModifier>-100</iWarWearinessModifier>
-			<iMilitaryProductionModifier>25</iMilitaryProductionModifier>
+			<iMilitaryProductionModifier>100</iMilitaryProductionModifier>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -755,7 +819,6 @@
 			<TechPrereq>TECH_WRITING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Isolationism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
-			<iStateReligionHappiness>-1</iStateReligionHappiness>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
 			<bNoForeignTrade>1</bNoForeignTrade>
 			<CommerceModifiers>
@@ -763,6 +826,17 @@
 				<iCommerce>0</iCommerce>
 				<iCommerce>50</iCommerce>
 			</CommerceModifiers>
+			<TradeYieldModifiers>
+				<iYield>50</iYield>
+			</TradeYieldModifiers>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
+					<ImprovementYields>
+						<iYield>3</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -787,6 +861,15 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>3</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -794,11 +877,11 @@
 			<Description>TXT_KEY_CIVIC_INTEGRATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_INTEGRATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INTEGRATION_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_INTEGRATION_NATIVE_HELP</Help>
 			<TechPrereq>TECH_CEREMONY</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Cooperation.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Integration.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
+			<iOccupationTimeChange>-2</iOccupationTimeChange>
 			<Upkeep>UPKEEP_LOW</Upkeep>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
@@ -818,22 +901,24 @@
 			<Civilopedia>TXT_KEY_CIVIC_TRIBUTARIES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TRIBUTARIES_STRATEGY</Strategy>
 			<TechPrereq>TECH_SUBJUGATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Tributaries.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,4,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
-			<ImprovementYieldChanges>
-				<ImprovementYieldChange>
-					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
-					<ImprovementYields>
-						<iYield>2</iYield>
-					</ImprovementYields>
-				</ImprovementYieldChange>
-			</ImprovementYieldChanges>
 			<TradeYieldModifiers>
 				<iYield>0</iYield>
 				<iYield>100</iYield>
 			</TradeYieldModifiers>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
+					<ImprovementYields>
+						<iYield>0</iYield>
+						<iYield>0</iYield>
+						<iYield>5</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXPANSION</CivicOptionType>
@@ -848,6 +933,16 @@
 			<iCultureGroup>0</iCultureGroup>
 			<iDomesticGreatGeneralRateModifier>50</iDomesticGreatGeneralRateModifier>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
+			<ImprovementYieldChanges>
+				<ImprovementYieldChange>
+					<ImprovementType>IMPROVEMENT_TRIBE</ImprovementType>
+					<ImprovementYields>
+						<iYield>4</iYield>
+						<iYield>0</iYield>
+						<iYield>4</iYield>
+					</ImprovementYields>
+				</ImprovementYieldChange>
+			</ImprovementYieldChanges>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_EXECUTIVE</CivicOptionType>
@@ -935,12 +1030,12 @@
 			<CapitalCommerceModifiers>
 				<iCommerce>50</iCommerce>
 			</CapitalCommerceModifiers>
-			<MinimalSpecialists>
-				<MinimalSpecialist>
+			<SpecialistCounts>
+				<SpecialistCount>
 					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<iMinimalSpecialistCount>1</iMinimalSpecialistCount>
-				</MinimalSpecialist>
-			</MinimalSpecialists>
+					<iCount>1</iCount>
+				</SpecialistCount>
+			</SpecialistCounts>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_GOVERNOR</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -961,12 +1056,6 @@
 					<iProductionModifier>100</iProductionModifier>
 				</BuildingProductionModifier>
 			</BuildingProductionModifiers>
-			<SpecialistValids>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_STATESMAN</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
 			<WeLoveTheKing>TXT_KEY_CIVIC_WE_LOVE_DELEGATE</WeLoveTheKing>
 		</CivicInfo>
 		<CivicInfo>
@@ -1067,7 +1156,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_ROYAL_COLONY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ROYAL_COLONY_STRATEGY</Strategy>
 			<TechPrereq>TECH_HERITAGE</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Citizenship.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,3</Button>
+			<Button>,Art/Interface/Buttons/Civics/RoyalColony.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,3,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_HIGH</Upkeep>
@@ -1226,12 +1315,6 @@
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</SpecialistExtraYields>
-			<SpecialistValids>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_LABOR</CivicOptionType>
@@ -1427,7 +1510,7 @@
 			<Description>TXT_KEY_CIVIC_DIVINE_RIGHT</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DIVINE_RIGHT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DIVINE_RIGHT_STRATEGY</Strategy>
-			<Button>,Art/Interface/Buttons/Civics/Monarchy.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/DivineRight.dds,Art/Interface/Buttons/TechTree_Atlas.dds,1,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
 			<Upkeep>UPKEEP_LOW</Upkeep>
@@ -1843,7 +1926,7 @@
 			<Strategy>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_DEMOCRACY_HELP</Help>
 			<TechPrereq>TECH_REPRESENTATION</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Democracy.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Democracy.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,8,3</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -2108,12 +2191,6 @@
 				<iYield>0</iYield>
 				<iYield>1</iYield>
 			</SpecialistExtraYields>
-			<SpecialistValids>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_ENGINEER</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
 			<ImprovementYieldChanges>
 				<ImprovementYieldChange>
 					<ImprovementType>IMPROVEMENT_TOWN</ImprovementType>
@@ -2308,12 +2385,6 @@
 				<iYield>0</iYield>
 				<iYield>50</iYield>
 			</TradeYieldModifiers>
-			<SpecialistValids>
-				<SpecialistValid>
-					<SpecialistType>SPECIALIST_MERCHANT</SpecialistType>
-					<bValid>1</bValid>
-				</SpecialistValid>
-			</SpecialistValids>
 		</CivicInfo>
 		<CivicInfo>
 			<CivicOptionType>CIVICOPTION_ECONOMY</CivicOptionType>
@@ -2513,7 +2584,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_NATIVISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_NATIVISM_STRATEGY</Strategy>
 			<TechPrereq>TECH_JOURNALISM</TechPrereq>
-			<Button>,Art/Interface/Buttons/Civics/Nativism.dds</Button>
+			<Button>,Art/Interface/Buttons/Civics/Nativism.dds,Art/Interface/Buttons/Civics_Civilizations_Religions_Atlas.dds,5,1</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
 			<iLargestCityHappiness>-1</iLargestCityHappiness>

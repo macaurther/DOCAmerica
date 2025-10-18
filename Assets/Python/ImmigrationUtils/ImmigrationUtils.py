@@ -442,7 +442,7 @@ class ImmigrationUtils:
 		lCategoryDesire[iTransportsCat] = min(iNumCities / 2, 5) - lNumUnitsInCategories[iTransportsCat]	# Want 1 Transport per 2 cities, max 5
 		
 		# Slave Category
-		if iSlavery1 in civics or iSlavery2 in civics or iSlavery3 in civics:
+		if iGuilds1 in civics or iSlavery2 in civics or iSlavery3 in civics:
 			# Get excess happiness in cities that can have slaves
 			iExcessHappiness = 0
 			for pCity in lCities:

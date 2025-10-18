@@ -2400,10 +2400,10 @@
 				<iYieldChange>-2</iYieldChange>
 				<iYieldChange>-1</iYieldChange>
 			</YieldChanges>
-			<bActsAsCity>0</bActsAsCity>
+			<bActsAsCity>1</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
-			<bFreshWaterMakesValid>0</bFreshWaterMakesValid>
-			<bRiverSideMakesValid>0</bRiverSideMakesValid>
+			<bFreshWaterMakesValid>1</bFreshWaterMakesValid>
+			<bRiverSideMakesValid>1</bRiverSideMakesValid>
 			<bNoFreshWater>0</bNoFreshWater>
 			<bRequiresFlatlands>0</bRequiresFlatlands>
 			<bRequiresRiverSide>0</bRequiresRiverSide>
@@ -2420,12 +2420,98 @@
 			<iFeatureGrowth>0</iFeatureGrowth>
 			<iUpgradeTime>0</iUpgradeTime>
 			<iAirBombDefense>-1</iAirBombDefense>
-			<iDefenseModifier>0</iDefenseModifier>
+			<iDefenseModifier>25</iDefenseModifier>
 			<iHappinessPercent>0</iHappinessPercent>
 			<iPillageGold>50</iPillageGold>
-			<bOutsideBorders>1</bOutsideBorders>
-			<TerrainMakesValids/>
-			<FeatureMakesValids/>
+			<bOutsideBorders>0</bOutsideBorders>
+			<TerrainMakesValids>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_GRASS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PLAINS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_DESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_TUNDRA</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SNOW</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MARSH</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_LAGOON</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SEMIDESERT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_PRAIRIE</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_MOORLAND</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SALTFLAT</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_SAVANNA</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+			</TerrainMakesValids>
+			<FeatureMakesValids>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_JUNGLE</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_RAINFOREST</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_FOREST</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_CENOTE</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_BOG</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_SWAMP</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_TAIGA</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_PALM_FOREST</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
+			</FeatureMakesValids>
 			<ImprovementPillage/>
 			<ImprovementUpgrade/>
 			<TechYieldChanges/>
@@ -2443,7 +2529,7 @@
 				<iYieldChange>-2</iYieldChange>
 				<iYieldChange>-1</iYieldChange>
 			</YieldChanges>
-			<bActsAsCity>0</bActsAsCity>
+			<bActsAsCity>1</bActsAsCity>
 			<bHillsMakesValid>0</bHillsMakesValid>
 			<bFreshWaterMakesValid>0</bFreshWaterMakesValid>
 			<bRiverSideMakesValid>0</bRiverSideMakesValid>
@@ -2463,7 +2549,7 @@
 			<iFeatureGrowth>0</iFeatureGrowth>
 			<iUpgradeTime>0</iUpgradeTime>
 			<iAirBombDefense>-1</iAirBombDefense>
-			<iDefenseModifier>0</iDefenseModifier>
+			<iDefenseModifier>25</iDefenseModifier>
 			<iHappinessPercent>0</iHappinessPercent>
 			<iPillageGold>50</iPillageGold>
 			<bOutsideBorders>1</bOutsideBorders>

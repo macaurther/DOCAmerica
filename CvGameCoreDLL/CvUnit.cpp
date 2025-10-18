@@ -5058,6 +5058,14 @@ bool CvUnit::pillage()
 
 			iPillageGold = (int)lPillageGold;
 
+			//Rhye - start UP (Viking) -> MacAurther: Raiding civic
+			if (GET_PLAYER(getOwnerINLINE()).hasCivic(CIVIC_RAIDING_NATIVE))
+			{
+				iPillageGold *= 3;
+				iPillageGold /= 2;
+			}
+			//Rhye - end UP
+
 
 			if (iPillageGold > 0)
 			{
@@ -7249,6 +7257,12 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 
 	// MacAurther: Cannot contact tribe on a tile where there is no Tribe
 	if (eBuild == BUILD_CONTACT_TRIBE && pPlot->getImprovementType() != IMPROVEMENT_TRIBE)
+	{
+		return false;
+	}
+
+	// MacAurther: Cannot build tribe unless using Ancestral Lands civic
+	if (eBuild == BUILD_TRIBE && !GET_PLAYER(getOwner()).hasCivic(CIVIC_ANCESTRAL_LANDS_NATIVE))
 	{
 		return false;
 	}

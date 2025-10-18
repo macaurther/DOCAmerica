@@ -702,7 +702,7 @@ def calculateStability(iPlayer):
 	if iIsolationism1 in civics:
 		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= (iCurrentEra - iRevolutionaryEra) * 3
 	
-	if iSlavery1 in civics or iSlavery2 in civics or iSlavery3 in civics:
+	if iGuilds1 in civics or iSlavery2 in civics or iSlavery3 in civics:
 		if iCurrentEra >= iIndustrialEra: iCivicEraTechStability -= 5
 	
 	if iCasteSystem1 in civics:
@@ -727,7 +727,7 @@ def calculateStability(iPlayer):
 		if iCurrentEra >= iRevolutionaryEra: iCivicEraTechStability -= 5
 	
 	if tPlayer.isHasTech(iCivilRights):
-		if iSlavery1 in civics or iSlavery2 in civics or iSlavery3 in civics or iCasteSystem1 in civics: iCivicEraTechStability -= 5
+		if iGuilds1 in civics or iSlavery2 in civics or iSlavery3 in civics or iCasteSystem1 in civics: iCivicEraTechStability -= 5
 	
 	if tPlayer.isHasTech(iNationalism):
 		if iConquest1 in civics or iConquest2 in civics or iTributaries1 in civics: iCivicEraTechStability -= 5
@@ -970,7 +970,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iClans1 in civics: iStability -= 2
 	# 	if iTribalConfederacy1 in civics: iStability -= 2
 	# 	if iMita1 in civics: iStability += 2
-	# 	if iSlavery1 in civics: iStability += 2
+	# 	if iGuilds1 in civics: iStability += 2
 	# 	if iCalpulli1 in civics: iStability -= 2
 	# 	if iRedistribution1 in civics: iStability += 2
 	# 	if iAcculturation1 in civics: iStability -= 2
@@ -995,7 +995,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iVassalage1 in civics: iStability -= 2
 	# 	if iTlacotin1 in civics: iStability -= 2
 	# 	if iCraftsmen1 in civics: iStability += 2
-	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iMindalaes1 in civics: iStability += 2
 	# 	if iTourism1 in civics: iStability += 2
 	# 	if iHarmony1 in civics: iStability += 2
 	# 	if iOrganizedReligion1 in civics: iStability -= 2
@@ -1007,7 +1007,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iBureaucracy1 in civics: iStability += 2
 	# 	if iSubsistance1 in civics: iStability -= 2
 	# 	if iCasteSystem1 in civics: iStability += 2
-	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iMindalaes1 in civics: iStability += 2
 	# 	if iDependency1 in civics: iStability -= 2
 	# 	if iCosmopolitans1 in civics: iStability += 2
 	# 	if iIsolationism1 in civics: iStability -= 2
@@ -1018,7 +1018,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iVassalage1 in civics: iStability += 2
 	# 	if iFirstNation1 in civics: iStability -= 2
 	# 	if iTlacotin1 in civics: iStability += 2
-	# 	if iSlavery1 in civics: iStability += 2
+	# 	if iGuilds1 in civics: iStability += 2
 	# 	if iRaiding1 in civics: iStability += 2
 	# 	if iTourism1 in civics: iStability -= 2
 	# 	if iOrganizedReligion1 in civics: iStability += 2
@@ -1029,7 +1029,7 @@ def getCivicStability(iPlayer, civics=None):
 	# #	Administration
 	# if iClans1 in civics:
 	# 	if iCraftsmen1 in civics: iStability += 2
-	# 	if iSlavery1 in civics: iStability -= 2
+	# 	if iGuilds1 in civics: iStability -= 2
 	# 	if iCalpulli1 in civics: iStability += 2
 	# 	if iRaiding1 in civics: iStability -= 2
 	# 	if iAcculturation1 in civics: iStability += 2
@@ -1050,7 +1050,7 @@ def getCivicStability(iPlayer, civics=None):
 	# if iTribalConfederacy1 in civics:
 	# 	if iSubsistance1 in civics: iStability += 2
 	# 	if iCasteSystem1 in civics: iStability -= 2
-	# 	if iMerchants1 in civics: iStability -= 2
+	# 	if iMindalaes1 in civics: iStability -= 2
 	# 	if iDependency1 in civics: iStability += 2
 	# 	if iHarmony1 in civics: iStability += 2
 	# 	if iIsolationism1 in civics: iStability -= 2
@@ -1060,7 +1060,7 @@ def getCivicStability(iPlayer, civics=None):
 	# if iBureaucracy1 in civics:
 	# 	if iTlacotin1 in civics: iStability -= 2
 	# 	if iMita1 in civics: iStability += 2
-	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iMindalaes1 in civics: iStability += 2
 	# 	if iDependency1 in civics: iStability -= 2
 	# 	if iCosmopolitans1 in civics: iStability -= 2
 	# 	if iIsolationism1 in civics: iStability += 2
@@ -1069,7 +1069,7 @@ def getCivicStability(iPlayer, civics=None):
 	
 	# if iVassalage1 in civics:
 	# 	if iCraftsmen1 in civics: iStability -= 2
-	# 	if iSlavery1 in civics: iStability += 2
+	# 	if iGuilds1 in civics: iStability += 2
 	# 	if iCalpulli1 in civics: iStability -= 2
 	# 	if iRaiding1 in civics: iStability += 2
 	# 	if iOrganizedReligion1 in civics: iStability += 2
@@ -1097,7 +1097,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iTributaries1 in civics: iStability -= 2
 	
 	# if iTlacotin1 in civics:
-	# 	if iMerchants1 in civics: iStability -= 2
+	# 	if iMindalaes1 in civics: iStability -= 2
 	# 	if iRaiding1 in civics: iStability += 2
 	# 	if iOrganizedReligion1 in civics: iStability += 2
 	# 	if iIsolationism1 in civics: iStability += 2
@@ -1113,7 +1113,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iConquest1 in civics: iStability += 2
 	
 	# if iCraftsmen1 in civics:
-	# 	if iMerchants1 in civics: iStability += 2
+	# 	if iMindalaes1 in civics: iStability += 2
 	# 	if iRaiding1 in civics: iStability -= 2
 	# 	if iCosmopolitans1 in civics: iStability += 2
 	# 	if iSovereignty1 in civics: iStability += 2
@@ -1128,7 +1128,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iSacrifice1 in civics: iStability -= 2
 	# 	if iTributaries1 in civics: iStability += 2
 	
-	# if iSlavery1 in civics:
+	# if iGuilds1 in civics:
 	# 	if iDependency1 in civics: iStability -= 2
 	# 	if iTourism1 in civics: iStability -= 2
 	# 	if iIsolationism1 in civics: iStability -= 2
@@ -1149,7 +1149,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iTributaries1 in civics: iStability += 2
 	# 	if iAncestralLands1 in civics: iStability -= 2
 		
-	# if iMerchants1 in civics:
+	# if iMindalaes1 in civics:
 	# 	if iCosmopolitans1 in civics: iStability += 2
 	# 	if iIsolationism1 in civics: iStability -= 2
 	# 	if iNomads1 in civics: iStability += 2

@@ -1010,6 +1010,10 @@
 					<BuildType>BUILD_NATURE_RESERVE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_TRIBE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<PrereqTech>TECH_AGRICULTURE</PrereqTech>
 			<iCost>60</iCost>
@@ -1160,6 +1164,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_NATURE_RESERVE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_TRIBE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
@@ -1319,6 +1327,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_NATURE_RESERVE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_TRIBE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
@@ -1542,6 +1554,10 @@
 					<BuildType>BUILD_SCRUB_FALLOUT</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_TRIBE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -1699,6 +1715,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_NATURE_RESERVE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_TRIBE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>

@@ -7855,33 +7855,6 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 		}
 	}
 	
-	// Minimal specialists
-	bFirst = true;
-	int iMinimalSpecialistCount;
-	for (iI = 0; iI < GC.getNumSpecialistInfos(); ++iI)
-	{
-		if (GC.getCivicInfo(eCivic).getMinimalSpecialistCount(iI) > 0)
-		{
-			if (bFirst) 
-			{
-				iMinimalSpecialistCount = GC.getCivicInfo(eCivic).getMinimalSpecialistCount(iI);
-				if (iMinimalSpecialistCount == 1)
-				{
-					szFirstBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_CIVIC_AT_LEAST_ONE_SPECIALIST").c_str());
-				} 
-				else 
-				{
-					szFirstBuffer.Format(L"%s%s", NEWLINE, gDLL->getText("TXT_KEY_CIVIC_MINIMAL_SPECIALISTS", iMinimalSpecialistCount).c_str());
-				}
-			}
-
-			CvWString szSpecialist;
-			szSpecialist.Format(L"<link=literal>%s</link>", GC.getSpecialistInfo((SpecialistTypes)iI).getDescription());
-			setListHelp(szHelpText, szFirstBuffer, szSpecialist, L", ", bFirst);
-			bFirst = false;
-		}
-	}
-	
 	// Leoreth: excess happiness yield
 	setYieldChangeHelp(szHelpText, L"", L"", gDLL->getText("TXT_KEY_CIVIC_PER_EXCESS_HAPPINESS").GetCString(), GC.getCivicInfo(eCivic).getHappinessExtraYieldArray());
 

@@ -179,16 +179,6 @@ def giftedCityDefenders(city):
 
 ### GOODY RECEIVED ###
 
-@handler("goodyReceived")
-def cooperationAbility(iPlayer, pPlot, pUnit, iGoodyType):
-	iExpansionCivic = player(iPlayer).getCivics(iCivicsExpansion)
-	if iExpansionCivic == iIntegration1:
-		if player(iPlayer).getNumCities() > 0:
-			pCity = closestCity(pPlot, iPlayer)
-			if pCity and distance(pPlot, pCity) <= 10:
-				pCity.changePopulation(1)
-				
-				message(iPlayer, 'TXT_KEY_COOPERATION_EFFECT', pCity.getName())
 
 
 ### COMBAT RESULT ###

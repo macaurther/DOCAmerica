@@ -22,13 +22,13 @@ lCivilizations = [
 	Civilization(
 		iHaudenosaunee,
 		iGold=300,
-		lCivics=[iCouncil1, iTribalConfederacy1, iTlacotin1, iMerchants1, iAcculturation1, iIntegration1],
+		lCivics=[iCouncil1, iTribalConfederacy1, iTlacotin1, iMindalaes1, iAcculturation1, iIntegration1],
 		techs=techs.column(7).without(*lImmigraitonTechs),
 	),
 	Civilization(
 		iLakota,
 		iGold=100,
-		lCivics=[iChiefdom1, iClans1, iTlacotin1, iMerchants1, iHarmony1, iNomads1],
+		lCivics=[iChiefdom1, iClans1, iTlacotin1, iMindalaes1, iHarmony1, iNomads1],
 		techs=techs.column(7).without(*lImmigraitonTechs),
 	),
 	Civilization(
@@ -84,7 +84,7 @@ lCivilizations = [
 	Civilization(
 		iHawaii,
 		iGold=150,
-		lCivics=[iMonarchy1, iClans1, iTlacotin1, iMerchants1, iIsolationism1, iConquest1],
+		lCivics=[iMonarchy1, iClans1, iTlacotin1, iMindalaes1, iIsolationism1, iConquest1],
 		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess),
 	),
 	Civilization(
