@@ -195,19 +195,15 @@
 [ICON_BULLET]Can build Slave Markets</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CHIEFDOM</Tag>
-		<English>Chiefdom</English>
-		<French>
-			<Text>Chefferie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Chiefdom</German>
-		<Italian>Chiefdom</Italian>
-		<Spanish>Chiefdom</Spanish>
+		<Tag>TXT_KEY_CIVIC_CHIEF</Tag>
+		<English>Chief</English>
+		<French>Chief</French>
+		<German>Chief</German>
+		<Italian>Chief</Italian>
+		<Spanish>Chief</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_CHIEFDOM_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_CHIEF_STRATEGY</Tag>
 		<English>Extra [ICON_FOOD] converted to [ICON_PRODUCTION]; fewer trade routes</English>
 		<French>Extra [ICON_FOOD] converted to [ICON_PRODUCTION]; fewer trade routes</French>
 		<German>Extra [ICON_FOOD] converted to [ICON_PRODUCTION]; fewer trade routes</German>
@@ -215,15 +211,31 @@
 		<Spanish>Extra [ICON_FOOD] converted to [ICON_PRODUCTION]; fewer trade routes</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MONARCHY</Tag>
-		<English>Monarchy</English>
-		<French>Monarchy</French>
-		<German>Monarchy</German>
-		<Italian>Monarchy</Italian>
-		<Spanish>Monarchy</Spanish>
+		<Tag>TXT_KEY_CIVIC_MONARCH</Tag>
+		<English>Monarch</English>
+		<French>Monarch</French>
+		<German>Monarch</German>
+		<Italian>Monarch</Italian>
+		<Spanish>Monarch</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_MONARCHY_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_MONARCH_STRATEGY</Tag>
+		<English>Military garrisons provide [ICON_HAPPY]</English>
+		<French>Military garrisons provide [ICON_HAPPY]</French>
+		<German>Military garrisons provide [ICON_HAPPY]</German>
+		<Italian>Military garrisons provide [ICON_HAPPY]</Italian>
+		<Spanish>Military garrisons provide [ICON_HAPPY]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SOVEREIGN</Tag>
+		<English>Sovereign</English>
+		<French>Sovereign</French>
+		<German>Sovereign</German>
+		<Italian>Sovereign</Italian>
+		<Spanish>Sovereign</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_SOVEREIGN_STRATEGY</Tag>
 		<English>Military garrisons provide [ICON_HAPPY]</English>
 		<French>Military garrisons provide [ICON_HAPPY]</French>
 		<German>Military garrisons provide [ICON_HAPPY]</German>
@@ -247,19 +259,15 @@
 		<Spanish>The most primitive Administration civic</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DEMOCRACY</Tag>
-		<English>Democracy</English>
-		<French>
-			<Text>D&#233;mocratie</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Democracy</German>
-		<Italian>Democracy</Italian>
-		<Spanish>Democracy</Spanish>
+		<Tag>TXT_KEY_CIVIC_REPRESENTATIVES</Tag>
+		<English>Representatives</English>
+		<French>Representatives</French>
+		<German>Representatives</German>
+		<Italian>Representatives</Italian>
+		<Spanish>Representatives</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DEMOCRACY_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_REPRESENTATIVES_STRATEGY</Tag>
 		<English>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</English>
 		<French>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</French>
 		<German>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</German>
@@ -267,7 +275,7 @@
 		<Spanish>Increased great people birth rate; Faster growth for Cottages, Hamlets, Villages; double instability from unhappiness and religious disunity</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DEMOCRACY_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_REPRESENTATIVES_HELP</Tag>
 		<English>[ICON_BULLET]Double instability from unhappiness and religious disunity</English>
 		<French>[ICON_BULLET]Double instability from unhappiness and religious disunity</French>
 		<German>[ICON_BULLET]Double instability from unhappiness and religious disunity</German>
@@ -275,19 +283,15 @@
 		<Spanish>[ICON_BULLET]Double instability from unhappiness and religious disunity</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DICTATORSHIP</Tag>
-		<English>Dictatorship</English>
-		<French>
-			<Text>Dictatorship</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Dictatorship</German>
-		<Italian>Dictatorship</Italian>
-		<Spanish>Dictatorship</Spanish>
+		<Tag>TXT_KEY_CIVIC_DICTATOR</Tag>
+		<English>Dictator</English>
+		<French>Dictator</French>
+		<German>Dictator</German>
+		<Italian>Dictator</Italian>
+		<Spanish>Dictator</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DICTATORSHIP_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_DICTATOR_STRATEGY</Tag>
 		<English>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</English>
 		<French>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</French>
 		<German>Extra [ICON_PRODUCTION] from Angry Citizens; faster decay of temporary [ICON_UNHAPPY]</German>
@@ -507,7 +511,15 @@
 		<Spanish>Can draft units; increased Great General emergence</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DESPOTISM_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_DESPOT</Tag>
+		<English>Despot</English>
+		<French>Despot</French>
+		<German>Despot</German>
+		<Italian>Despot</Italian>
+		<Spanish>Despot</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_DESPOT_STRATEGY</Tag>
 		<English>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</English>
 		<French>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</French>
 		<German>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</German>
@@ -515,7 +527,7 @@
 		<Spanish>Can hurry [ICON_PRODUCTION] by sacrificing population or slaves</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_DESPOTISM_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_DESPOT_HELP</Tag>
 		<English>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</English>
 		<French>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</French>
 		<German>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</German>
@@ -571,15 +583,15 @@
 		<Spanish>Extra experience for naval units; double [ICON_PRODUCTION] speed for Harbor, Lighthouse</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PROPRIETARIES</Tag>
-		<English>Proprietaries</English>
-		<French>Proprietaries</French>
-		<German>Proprietaries</German>
-		<Italian>Proprietaries</Italian>
-		<Spanish>Proprietaries</Spanish>
+		<Tag>TXT_KEY_CIVIC_PROPRIETORS</Tag>
+		<English>Proprietors</English>
+		<French>Proprietors</French>
+		<German>Proprietors</German>
+		<Italian>Proprietors</Italian>
+		<Spanish>Proprietors</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_PROPRIETORS_STRATEGY</Tag>
 		<English>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</English>
 		<French>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</French>
 		<German>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</German>
@@ -587,7 +599,7 @@
 		<Spanish>No extra maintenance for Mercenaries; reduced cost for hiring Expeditionaries</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PROPRIETARIES_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_PROPRIETORS_HELP</Tag>
 		<English>[ICON_BULLET]Mercenaries do not cost additional upkeep
 [ICON_BULLET]-50% [ICON_COMMERCE] required to hire Immigrants</English>
 		<French>[ICON_BULLET]Mercenaries do not cost additional upkeep
@@ -817,15 +829,15 @@
 		<Spanish>Faster production of Constabulary, Jail, Courthouse, Schoolhouse</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_ARISTOCRACY</Tag>
-		<English>Aristocracy</English>
-		<French>Aristocracy</French>
-		<German>Aristocracy</German>
-		<Italian>Aristocracy</Italian>
-		<Spanish>Aristocracy</Spanish>
+		<Tag>TXT_KEY_CIVIC_ARISTOCRATS</Tag>
+		<English>Aristocrats</English>
+		<French>Aristocrats</French>
+		<German>Aristocrats</German>
+		<Italian>Aristocrats</Italian>
+		<Spanish>Aristocrats</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_ARISTOCRACY_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_ARISTOCRATS_STRATEGY</Tag>
 		<English>Extra [ICON_COMMERCE] yields in capital; faster production of Market</English>
 		<French>Extra [ICON_COMMERCE] yields in capital; faster production of Market</French>
 		<German>Extra [ICON_COMMERCE] yields in capital; faster production of Market</German>
@@ -833,15 +845,15 @@
 		<Spanish>Extra [ICON_COMMERCE] yields in capital; faster production of Market</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_VICEROYALTY</Tag>
-		<English>Viceroyalty</English>
-		<French>Viceroyalty</French>
-		<German>Viceroyalty</German>
-		<Italian>Viceroyalty</Italian>
-		<Spanish>Viceroyalty</Spanish>
+		<Tag>TXT_KEY_CIVIC_VICEROYS</Tag>
+		<English>Viceroys</English>
+		<French>Viceroys</French>
+		<German>Viceroys</German>
+		<Italian>Viceroys</Italian>
+		<Spanish>Viceroys</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_VICEROYALTY_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_VICEROYS_STRATEGY</Tag>
 		<English>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</English>
 		<French>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</French>
 		<German>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</German>
@@ -849,7 +861,7 @@
 		<Spanish>Extra [ICON_PRODUCTION] from Angry Population; can sacrifice slaves for [ICON_PRODUCTION]</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_VICEROYALTY_HELP</Tag>
+		<Tag>TXT_KEY_CIVIC_VICEROYS_HELP</Tag>
 		<English>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</English>
 		<French>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</French>
 		<German>[ICON_BULLET]Can Sacrifice Slaves for [ICON_PRODUCTION]</German>
@@ -1769,15 +1781,15 @@
 		<Spanish>Extra [ICON_HAPPY] from Barracks, Magazine, Arsenal; extra yields from Great Generals</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PLUTOCRACY</Tag>
-		<English>Plutocracy</English>
-		<French>Plutocracy</French>
-		<German>Plutocracy</German>
-		<Italian>Plutocracy</Italian>
-		<Spanish>Plutocracy</Spanish>
+		<Tag>TXT_KEY_CIVIC_PLUTOCRATS</Tag>
+		<English>Plutocrats</English>
+		<French>Plutocrats</French>
+		<German>Plutocrats</German>
+		<Italian>Plutocrats</Italian>
+		<Spanish>Plutocrats</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIVIC_PLUTOCRACY_STRATEGY</Tag>
+		<Tag>TXT_KEY_CIVIC_PLUTOCRATS_STRATEGY</Tag>
 		<English>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</English>
 		<French>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</French>
 		<German>faster production of Bank, Universitie; extra [ICON_HAPPY] from Bank</German>

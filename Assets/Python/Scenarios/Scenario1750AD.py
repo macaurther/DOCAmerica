@@ -16,7 +16,7 @@ lCivilizations = [
 	Civilization(
 		iInuit,
 		iGold=50,
-		lCivics=[iDespotism1, iHarmony1, iSacrifice1],
+		lCivics=[iDespot1, iHarmony1, iSacrifice1],
 		techs=techs.column(7).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
 	),
 	Civilization(
@@ -28,7 +28,7 @@ lCivilizations = [
 	Civilization(
 		iLakota,
 		iGold=100,
-		lCivics=[iChiefdom1, iClans1, iTlacotin1, iMindalaes1, iHarmony1, iNomads1],
+		lCivics=[iChief1, iClans1, iTlacotin1, iMindalaes1, iHarmony1, iNomads1],
 		techs=techs.column(7).without(*lImmigraitonTechs),
 	),
 	Civilization(
@@ -37,7 +37,7 @@ lCivilizations = [
 		iGold=400,
 		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iViceroyalty2, iRoyalColony2, iEncomienda2, iPlunder2, iJesuits2, iConquest2],
+		lCivics=[iViceroys2, iRoyalColony2, iEncomienda2, iPlunder2, iJesuits2, iConquest2],
 		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iPortugal: 2}
 	),
@@ -47,7 +47,7 @@ lCivilizations = [
 		iGold=450,
 		iImmigration=300,
 		iStateReligion=iCatholicism,
-		lCivics=[iProprietaries2, iAdmiralty2, iSlavery2, iFactory2, iProfiteering2, iHomesteads2],
+		lCivics=[iProprietors2, iAdmiralty2, iSlavery2, iFactory2, iProfiteering2, iHomesteads2],
 		techs=techs.column(15).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess),
 		dAttitudes={iSpain: 2, iEngland: 2, iNetherlands: -2}
 	),

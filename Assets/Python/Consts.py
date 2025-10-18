@@ -594,21 +594,21 @@ iNumBuildingsPaganTemples = iNumBuildingsPlague + iNumPaganTemples
 iNumCivics = 126
 #				2				3				4				5				6				7				
 # Native (Culture Group 1)
-(iElders1,		iChiefdom1,		iDespotism1,	iMonarchy1,		iAristocracy1,	iGodKing1,		iCouncil1,		
+(iElders1,		iChief1,		iDespot1,		iMonarchy1,		iAristocrats1,	iGodKing1,		iCouncil1,		
 iDecentralization1,iClans1,		iCityStates1,	iTribalConfederacy1,iBureaucracy1,iVassalage1,	iFirstNation1,
 iTraditionalism1,iSubsistance1,	iTlacotin1,		iMita1,			iCraftsmen1,	iCasteSystem1,	iGuilds1,	
 iReciprocity1,	iCalpulli1,		iRedistribution1,iMindalaes1,	iRaiding1,		iDependency1,	iTourism1,
 iAnimism1,		iHarmony1,		iSacrifice1,	iOrganizedReligion1,iCosmopolitans1,iAcculturation1,iGhostDance1,
 iSettlement1,	iNomads1,		iIsolationism1,	iConquest1,		iIntegration1,	iTributaries1,	iAncestralLands1,
 # Colony
-iCaptains2,		iProprietaries2,iViceroyalty2,	iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
+iCaptains2,		iProprietors2,	iViceroys2,		iTrustees2,		iGovernors2,	iColonialAssembly2,iHomeRule2,
 iExpedition2,	iAdmiralty2,	iCharterColony2,iTradingCompany2,iRoyalColony2,	iCommonLaw2,	iProvinces2,
 iSerfdom2,		iEncomienda2,	iIndenturedServitude2,iSlavery2,iPenalColony2,	iIndustrialism2,iImmigrantLabor2,
 iGoldRush2,		iPlunder2,		iFactory2,		iMercantilism2,	iCustomsUnion2,	iConsumerism2,	iPublicWelfare2,
 iDivineRight2,	iJesuits2,		iZealotry2,		iHaven2,		iProfiteering2,	iOpportunity2,	iEmancipation2,
 iClaims2,		iConquest2,		iProvidence2,	iOutposts2,		iHomesteads2,	iIntervention2,	iCommonwealth2,
 # Nation
-iStrongman3,	iJunta3,		iMonarchy3,		iPlutocracy3,	iDemocracy3,	iDictatorship3,	iStateParty3,
+iStrongman3,	iJunta3,		iSovereign3,	iPlutocrats3,	iRepresentatives3,iDictator3,	iStateParty3,
 iMinarchy3,		iCommonLaw3,	iConfederacy3,	iKleptocracy3,	iFederalism3,	iMandate3,		iPoliceState3,
 iTraditionalism3,iSubsistance3,	iApprenticeship3,iSlavery3,		iIndustrialism3,iImmigrantLabor3,iLaborUnions3,
 iLaissezFaire3,	iAgrarianism3,	iExtraction3,	iFreeEnterprise3,iProtectionism3,iConsumerism3,	iPublicWelfare3,

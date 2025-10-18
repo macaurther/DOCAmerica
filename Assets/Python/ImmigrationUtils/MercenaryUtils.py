@@ -145,7 +145,7 @@ class Mercenary:
 		# 	iCurrentImmigration = player.getImmigration()
 		# 	bDecolonization = iDecolonization3 in civics
 		# 	bIntervention = iIntervention2 in civics
-		# 	bProprietaries = iProprietaries2 in civics
+		# 	bProprietaries = iProprietors2 in civics
 		# 	bIndenturedServitude = iIndenturedServitude2 in civics
 		# 	bPenalColony = iPenalColony2 in civics
 		# 	bEuropeanRP = civ(iPlayer) in dCivGroups[iCivGroupEurope]

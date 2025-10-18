@@ -3884,8 +3884,8 @@ It is fine for a human player mouse-over (which is what it is used for).
 void createTestFontString(CvWStringBuffer& szString)
 {
 	int iI;
-	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[Ч]^_`abcdefghijklmnopqrstuvwxyz\n");
-	szString.append(L"{}~\\ЯАБВГДЕЖЗИЙКЛМНОПРСТУФХЦШЩЪЫЬЭЮџЯабвгдежзийклмнопрстуфхцчшщъыьэюяїЎ«»°ЉЊЋљњћ™©®ЂЈў”‘“…’");
+	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[пїЅ]^_`abcdefghijklmnopqrstuvwxyz\n");
+	szString.append(L"{}~\\пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅЮџпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 	for (iI=0;iI<NUM_YIELD_TYPES;++iI)
 		szString.append(CvWString::format(L"%c", GC.getYieldInfo((YieldTypes) iI).getChar()));
 
@@ -8187,7 +8187,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	/*if (eCivic == UNIVERSAL_SUFFRAGE) //Leoreth - Parliament
 	{
 		szHelpText.append(NEWLINE);
-		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_DEMOCRACY"));
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_REPRESENTATIVES"));
 	}
 	if (eCivic == CAPITALISM) //Leoreth - Capitalism
 	{

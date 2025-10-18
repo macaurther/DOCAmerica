@@ -682,7 +682,7 @@ def calculateStability(iPlayer):
 		iHappinessStability /= 3
 	
 	# MacAurther: Democracy effect
-	if iDemocracy3 in civics and iHappinessStability < 0: iHappinessStability *= 2
+	if iRepresentatives3 in civics and iHappinessStability < 0: iHappinessStability *= 2
 	
 	lParameters[iParameterHappiness] = iHappinessStability
 	
@@ -720,7 +720,7 @@ def calculateStability(iPlayer):
 	if iAnimism1 in civics:
 		if iCurrentEra >= iRevolutionaryEra: iCivicEraTechStability -= 4
 	
-	if iChiefdom1 in civics:
+	if iChief1 in civics:
 		if iCurrentEra >= iRevolutionaryEra: iCivicEraTechStability -= 5
 	
 	if iTraditionalism1 in civics:
@@ -774,7 +774,7 @@ def calculateStability(iPlayer):
 			
 	
 	# MacAurther: Democracy effect
-	if iDemocracy3 in civics and iReligionStability < 0: iReligionStability *= 2
+	if iRepresentatives3 in civics and iReligionStability < 0: iReligionStability *= 2
 	
 	lParameters[iParameterReligion] = iReligionStability
 		
@@ -954,7 +954,7 @@ def getCivicStability(iPlayer, civics=None):
 	
 	# # Native
 	# #	Executive
-	# if iChiefdom1 in civics:
+	# if iChief1 in civics:
 	# 	if iClans1 in civics: iStability += 2
 	# 	if iBureaucracy1 in civics: iStability -= 2
 	# 	if iSubsistance1 in civics: iStability += 2
@@ -966,7 +966,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iNomads1 in civics: iStability += 2
 	# 	if iTributaries1 in civics: iStability -= 2
 	
-	# if iDespotism1 in civics:
+	# if iDespot1 in civics:
 	# 	if iClans1 in civics: iStability -= 2
 	# 	if iTribalConfederacy1 in civics: iStability -= 2
 	# 	if iMita1 in civics: iStability += 2
@@ -1002,7 +1002,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iSacrifice1 in civics: iStability -= 2
 	# 	if iAncestralLands1 in civics: iStability += 2
 	
-	# if iAristocracy1 in civics:
+	# if iAristocrats1 in civics:
 	# 	if iCityStates1 in civics: iStability += 2
 	# 	if iBureaucracy1 in civics: iStability += 2
 	# 	if iSubsistance1 in civics: iStability -= 2
@@ -1201,7 +1201,7 @@ def getCivicStability(iPlayer, civics=None):
 	
 	# # Colony
 	# #	Executive
-	# if iViceroyalty2 in civics:
+	# if iViceroys2 in civics:
 	# 	if iCharterColony2 in civics: iStability -= 2
 	# 	if iCommonLaw2 in civics: iStability -= 2
 	# 	if iEncomienda2 in civics: iStability += 2
@@ -1213,7 +1213,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iConquest2 in civics: iStability += 2
 	# 	if iCommonwealth2 in civics: iStability -= 2
 	
-	# if iProprietaries2 in civics:
+	# if iProprietors2 in civics:
 	# 	if iAdmiralty2 in civics: iStability += 2
 	# 	if iProvinces2 in civics: iStability -= 2
 	# 	if iPenalColony2 in civics: iStability += 2
@@ -1456,7 +1456,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iOpportunity3 in civics: iStability -= 2
 	# 	if iAssimilation3 in civics: iStability -= 2
 	
-	# if iMonarchy3 in civics:
+	# if iSovereign3 in civics:
 	# 	if iCommonLaw3 in civics: iStability += 2
 	# 	if iMandate3 in civics: iStability -= 2
 	# 	if iApprenticeship3 in civics: iStability += 2
@@ -1464,7 +1464,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iProfiteering3 in civics: iStability += 2
 	# 	if iDecolonization3 in civics: iStability -= 2
 	
-	# if iPlutocracy3 in civics:
+	# if iPlutocrats3 in civics:
 	# 	if iKleptocracy3 in civics: iStability += 2
 	# 	if iPoliceState3 in civics: iStability -= 2
 	# 	if iIndustrialism3 in civics: iStability += 2
@@ -1474,7 +1474,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iEmancipation3 in civics: iStability -= 2
 	# 	if iManifestDestiny3 in civics: iStability += 2
 	
-	# if iDemocracy3 in civics:
+	# if iRepresentatives3 in civics:
 	# 	if iFederalism3 in civics: iStability += 2
 	# 	if iKleptocracy3 in civics: iStability -= 2
 	# 	if iSlavery3 in civics: iStability -= 2
@@ -1486,7 +1486,7 @@ def getCivicStability(iPlayer, civics=None):
 	# 	if iDecolonization3 in civics: iStability += 2
 	# 	if iNationhood3 in civics: iStability -= 2
 	
-	# if iDictatorship3 in civics:
+	# if iDictator3 in civics:
 	# 	if iFederalism3 in civics: iStability -= 2
 	# 	if iPoliceState3 in civics: iStability += 2
 	# 	if iSubsistance3 in civics: iStability += 2

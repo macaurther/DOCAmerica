@@ -7474,7 +7474,7 @@ int CvPlayer::calculateUnitCost(int& iFreeUnits, int& iFreeMilitaryUnits, int& i
 	iMilitaryCost = iPaidMilitaryUnits * getGoldPerMilitaryUnit();
 
 	// MacAurther: Proprietaries Civic
-	iExtraCost = hasCivic(CIVIC_PROPRIETARIES_COLONY) ? 0 : getExtraUnitCost();
+	iExtraCost = hasCivic(CIVIC_PROPRIETORS_COLONY) ? 0 : getExtraUnitCost();
 
 	iSupport = iMilitaryCost + iBaseUnitCost + iExtraCost;
 
@@ -25496,7 +25496,7 @@ bool CvPlayer::isUnstableCivic(CivicTypes eCivic) const
 
 	if (getCurrentEra() >= ERA_REVOLUTIONARY)
 	{
-		if (eCivic == CIVIC_ANIMISM_NATIVE || eCivic == CIVIC_CHIEFDOM_NATIVE || eCivic == CIVIC_TRADITIONALISM_NATIVE)
+		if (eCivic == CIVIC_ANIMISM_NATIVE || eCivic == CIVIC_CHIEF_NATIVE || eCivic == CIVIC_TRADITIONALISM_NATIVE)
 		{
 			return true;
 		}

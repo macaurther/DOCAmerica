@@ -2577,7 +2577,7 @@ def canApplyEliteSwordsDone2(argsList):
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 		
-	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_MONARCHY')
+	iCivic = CvUtil.findInfoTypeNum(gc.getCivicInfo,gc.getNumCivicInfos(),'CIVIC_MONARCH')
 	
 	if not player.isCivic(iCivic):
 		return false
@@ -3226,4 +3226,4 @@ def canTriggerWedding(argsList):
 	kTriggeredData = argsList[0]
 	iPlayer = kTriggeredData.ePlayer
 	
-	return gc.getPlayer(iPlayer).getCivics(iCivicsExecutive) not in [iDemocracy3]
+	return gc.getPlayer(iPlayer).getCivics(iCivicsExecutive) not in [iRepresentatives3]

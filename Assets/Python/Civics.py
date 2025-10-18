@@ -80,10 +80,10 @@ def isAmerican(iPlayer):
 def isFascist(iPlayer):
 	civic = civics(iPlayer)
 
-	if civic.iExecutive == iDictatorship3:
+	if civic.iExecutive == iDictator3:
 		return True
 
-	if civic.iAdministration == iPoliceState3 and civic.iExecutive not in [iMonarchy3, iStateParty3]:
+	if civic.iAdministration == iPoliceState3 and civic.iExecutive not in [iSovereign3, iStateParty3]:
 		return True
 		
 	return False
@@ -91,7 +91,7 @@ def isFascist(iPlayer):
 def isRepublic(iPlayer):
 	civic = civics(iPlayer)
 	
-	if civic.iExecutive == iDemocracy3:
+	if civic.iExecutive == iRepresentatives3:
 		return True
 	
 	return False

@@ -2601,7 +2601,7 @@ class CvMainInterface:
 							iCount = iCount + 1
 					
 					# MacAurther: Despotism Civic
-					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).getCivics(iCivicsExecutive) == iDespotism1 and pUnit.movesLeft() > 0:
+					if pUnit.getUnitType() in lSlaveUnits and player(iPlayer).getCivics(iCivicsExecutive) == iDespot1 and pUnit.movesLeft() > 0:
 						city = city_(pUnit)
 						if city:
 							if civ(city) == civ(iPlayer) and city.isProductionBuilding():
