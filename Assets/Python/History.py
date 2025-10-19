@@ -30,6 +30,86 @@ def updateCulture():
 	for plot in plots.all():
 		plot.updateCulture()
 
+@handler("GameStart")
+def placeTribes():
+	iScore = 0
+	iThreshold = 100
+	iQueuedTribes = 0	# Number of tribes to place ASAP
+
+	# Aggregate prohibited tiles
+	lProhibitedPlots = []
+
+	# no Tribes in Iceland
+	for pPlot in plots.region(rIceland):
+		lProhibitedPlots.append(pPlot)
+
+	# Make sure capital vicinity is clear for all civs
+	for iCiv in dCapitals.keys():
+		for i in range(-1,2):
+			for j in range(-1,2):
+				if dCapitals[iCiv][0]+i > iWorldX or dCapitals[iCiv][0]+i < 0 or dCapitals[iCiv][1]+j > iWorldY or dCapitals[iCiv][1]+j < 0:
+					continue
+				lProhibitedPlots.append(plot((dCapitals[iCiv][0]+i, dCapitals[iCiv][1]+j)))
+
+	# Look at 3 rows and 3 cols at a time
+	for y in range(0, iWorldY, 3):
+		for x in range(0, iWorldX, 3):
+			for y_ in range(y, min(y+3, iWorldY)):
+				for x_ in range(x, min(x+3, iWorldX)):
+					pPlot = plot(x_,y_)
+
+					# Skip over owned tiles and water, and peaks
+					if pPlot.getOwner() != PlayerTypes.NO_PLAYER or pPlot.isWater() or pPlot.isImpassable():
+						continue
+
+					# Skip over capital tiles
+					bProhibited = False
+					for pNoPlot in lProhibitedPlots:
+						if pPlot.getX() == pNoPlot.getX() and pPlot.getY() == pNoPlot.getY():
+							bProhibited = True
+							break
+
+					# Accumulate
+					iCurrScore = pPlot.calculateNatureYield(YieldTypes.YIELD_FOOD, TeamTypes.NO_TEAM, False) * 3
+					iCurrScore += pPlot.calculateNatureYield(YieldTypes.YIELD_PRODUCTION, TeamTypes.NO_TEAM, False) * 2
+					iCurrScore += pPlot.calculateNatureYield(YieldTypes.YIELD_COMMERCE, TeamTypes.NO_TEAM, False)
+					if pPlot.getBonusType(TeamTypes.NO_TEAM) != BonusTypes.NO_BONUS: iCurrScore += 5		# Incentivize bonuses
+
+					iScore += iCurrScore
+					
+					iScore += CyGame().getSorenRandNum(2, "Tribe Placement")	# Random score insertion
+
+					# If prohibited, still accumulate, but skip placement		
+					if bProhibited:
+						continue
+
+					# Check if queue tribe
+					if iQueuedTribes > 0:
+						if not isTribeAdjacent(x_, y_):
+							pPlot.setImprovementType(iTribe)
+							iQueuedTribes -= 1
+						continue
+
+					# Check if Tribe is earned if the current score is nonzero
+					if iScore >= iThreshold and iCurrScore > 0:
+						if isTribeAdjacent(x_, y_):
+							iQueuedTribes += 1
+						else:
+							pPlot.setImprovementType(iTribe)
+						
+						iScore -= iThreshold
+			
+
+def isTribeAdjacent(x, y):
+	for i in range(-1,2):
+		for j in range(-1,2):
+			if x+i > iWorldX or x+i < 0 or y+j > iWorldY or y+j < 0:
+				continue
+			if plot(x+i,y+j).getImprovementType() in [iTribe, iContactedTribe]:
+				return True
+	return False
+
+
 ### CITY ACQUIRED ###
 
 @handler("cityAcquired")

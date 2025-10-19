@@ -3521,6 +3521,16 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
+				// MacAurther: Tribes and Contacted Tribes own their tiles
+				if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == INDIGENOUS)
+				{
+					if(getImprovementType() == IMPROVEMENT_TRIBE || getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+					{
+						eBestPlayer = (PlayerTypes)iI;
+						break;
+					}
+				}
+
 				iCulture = bActual ? getActualCulture((PlayerTypes)iI) : getCulture((PlayerTypes)iI);
 
 				if (iCulture > 0)
@@ -6468,6 +6478,12 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		// MacAurther: Forts
 		// Make sure to update Fort Claims before reporting event, so that any callbacks know who owns the fort
 		if (eOldImprovement == IMPROVEMENT_FORT || eNewValue == IMPROVEMENT_FORT) updateFortClaims(NO_PLAYER);	// The NO_PLAYER argument will make this method search for the owner
+
+		// MacAurther: Tribes - update culture
+		if (eOldImprovement == IMPROVEMENT_TRIBE || eOldImprovement == IMPROVEMENT_CONTACTED_TRIBE || eNewValue == IMPROVEMENT_TRIBE || eNewValue == IMPROVEMENT_CONTACTED_TRIBE)
+		{
+			updateCulture(true, false);
+		}
 
 		if (getImprovementType() != NO_IMPROVEMENT)
 		{
