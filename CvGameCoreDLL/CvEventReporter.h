@@ -162,6 +162,8 @@ public:
 	void globalWarmingEffect(CvPlot* pPlot, bool bChanged, TerrainTypes ePreviousTerrain, TerrainTypes eNewTerrain, FeatureTypes ePreviousFeature); // Leoreth
 	void buildingProcessed(CvCity* pCity, BuildingTypes eBuilding, int iChange); // Leoreth
 
+	void tribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker);	// MacAurther
+
 	DllExport void preSave();
 
 	DllExport void getGameStatistics(std::vector<CvStatBase*>& aStats);

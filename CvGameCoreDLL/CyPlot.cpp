@@ -1260,3 +1260,18 @@ void CyPlot::updateFortClaims(int ePlayer)
 {
 	if (m_pPlot) m_pPlot->updateFortClaims((PlayerTypes)ePlayer);
 }
+
+int CyPlot::getTribeStoredUnits()
+{
+	return m_pPlot ? m_pPlot->getTribeStoredUnits() : 0;
+}
+
+void CyPlot::setTribeStoredUnits(int iNumUnits)
+{
+	if (m_pPlot) m_pPlot->setTribeStoredUnits(iNumUnits);
+}
+
+int CyPlot::getTribeThreatenTurn()
+{
+	return m_pPlot ? m_pPlot->getTribeThreatenTurn() : 0;
+}

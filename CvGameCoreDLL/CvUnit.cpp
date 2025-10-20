@@ -3070,6 +3070,17 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 {
 	FAssert(canMoveOrAttackInto(pPlot) || isMadeAttack());
 
+	// MacAurther: Tribes. Spawn protectors (if any) if units that can't normally move through closed borders move in
+	if (!getUnitInfo().isRivalTerritory() && pPlot->getTribeStoredUnits() > 0 && GC.getUnitInfo(getUnitType()).isPillage())
+	{
+		CvEventReporter::getInstance().tribeAttacked(pPlot, getOwner());
+		pPlot->setTribeThreatenTurn(GC.getGame().getGameTurn());
+
+		// Clear mission and return to have player reconsider whether to attack or not
+		getGroup()->clearMissionQueue();
+		return;
+	}
+
 	CvPlot* pOldPlot = plot();
 
 	changeMoves(pPlot->movementCost(this, plot()));

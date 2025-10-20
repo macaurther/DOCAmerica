@@ -253,7 +253,7 @@ def validateSlaves(iPlayer):
 			for plot in plots.owner(iPlayer).where(lambda plot: plot.getImprovementType() == iSlaveMine):
 				plot.setImprovementType(iMine)
 		
-		for city in cities.owner(iPlayer):	# MacAurther TODO: Consolidate slaves
+		for city in cities.owner(iPlayer):
 			iNumSlaves = city.getFreeSpecialistCount(iSpecialistSlave)
 			city.setFreeSpecialistCount(iSpecialistSlave, 0)
 			

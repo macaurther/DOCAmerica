@@ -1506,6 +1506,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_STATESMAN:
 	case UNITAI_COLONIST:
 	case UNITAI_SLAVE:
+	case UNITAI_SIT_FOREVER:
 	case UNITAI_SPY:
 	case UNITAI_ATTACK_CITY_LEMMING:
 		return DOMAIN_LAND;
@@ -8582,6 +8583,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 		case UNITAI_STATESMAN:
 		case UNITAI_COLONIST:
 		case UNITAI_SLAVE:
+		case UNITAI_SIT_FOREVER:
 		case UNITAI_SPY:
 			break;
 
@@ -9011,6 +9013,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 	case UNITAI_STATESMAN:
 	case UNITAI_COLONIST:
 	case UNITAI_SLAVE:
+	case UNITAI_SIT_FOREVER:
 		break;
 
 	case UNITAI_SPY:
@@ -15269,6 +15272,7 @@ bool CvPlayerAI::AI_disbandUnit(int iExpThreshold, bool bObsolete)
 							case UNITAI_ENGINEER:
 							case UNITAI_COLONIST:
 							case UNITAI_SLAVE:
+							case UNITAI_SIT_FOREVER:
 								break;
 
 							case UNITAI_SPY:
@@ -19412,6 +19416,7 @@ int CvPlayerAI::AI_getUnitEnabledValue(UnitTypes eUnit,
 		case UNITAI_STATESMAN:
 		case UNITAI_COLONIST:
 		case UNITAI_SLAVE:
+		case UNITAI_SIT_FOREVER:
 			break;
 
 		case UNITAI_SPY:

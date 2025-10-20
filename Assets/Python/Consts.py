@@ -459,8 +459,8 @@ iNumUnits = 151
 (iGrizzlyBear, 	iPolarBear,		iPanther, 		iJaguar,		iCougar,		iWolf, 			iCoyote,		iClawdius,		iSettler, 		iDogSled,		
 iPioneer,		iWorker, 		iArtisan,		iPromyshlenniki,iTrackman,		iLaborer, 		iMadeireiro, 	iSpy, 			iSisqeno,       iAgent,			
 iInquisitor,	iOrthodoxMiss, 	iCatholicMiss, 	iProtestantMiss,iImmigrant,		iScout, 		iPathfinder,	iExplorer, 		iBandeirante, 	iCoureurDesBois,
-iRanger,		iFactor,		iParatrooper,	iMilitia1,		iFalconDancer,	iMilitia2,		iMilitia3,		iMilitia4,		iMinuteman,		iMilitia5,		
-iMilitia6,		iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			iAztecJaguar,	iMacana,		iArquebusier,	iArmedSlave,	
+iRanger,		iFactor,		iParatrooper,	iMilitiaSpearman,iFalconDancer,	iMilitiaPikeman,iMilitiaArquebusier,iMilitiaMusketman,iMinuteman,iMilitiaRifleman,		
+iMilitiaInfantry,iWarrior, 		iKoa,			iMohawk,		iMaceman,		iAucac,			iAztecJaguar,	iMacana,		iArquebusier,	iArmedSlave,	
 iMusketman,		iCompagnies,	iFusilier,		iGuardia,		iRifleman,		iVencedores,	iInfantry,		iFARs,			iSpearman,		iSuchucChiqui,	
 iLightningWarrior,iPikeman,		iEagle,			iPikeAndShot,	iLineInfantry,	iRedcoat,		iAntiTank,		iArcher,		iPicta,			iGuecha,		
 iCrossbowman,	iGatlingGun,	iMachineGun,	iAtlatlist,		iHolkan,		iSlinger,		iLongbowman,	iSkirmisher,	iGrenadier,		iCacos,			
@@ -820,7 +820,7 @@ lTransports = [iLongship, iCaravel, iCarrack, iIndiaman, iGalleon, iFluyt, iBrig
 lColonists = [iImmigrant]
 lMigrantWorkers = [iTrackman]
 lExplorers = [iExplorer, iBandeirante, iCoureurDesBois, iRanger, iFactor]
-lMilitia = [iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
+lMilitia = [iMilitiaPikeman, iMilitiaArquebusier, iMilitiaMusketman, iMilitiaRifleman, iMilitiaInfantry]
 lMainlineMercs = [iArquebusier, iMusketman, iCompagnies, iFusilier, iRifleman, iInfantry]
 lEliteMercs = [iPikeman, iPikeAndShot, iLineInfantry, iRedcoat, iAntiTank]
 lCollateralMercs = [iCrossbowman, iLightCannon, iFieldGun, iGatlingGun, iMachineGun]
@@ -916,11 +916,11 @@ iCoureurDesBois : 		[(1620, 1800), 		[iHomelandSouthEurope]],
 iRanger : 				[(1800, 1930), 		lHomelands],
 iFactor : 				[(1800, 1930), 		[iHomelandNorthEurope]],
 iParatrooper : 			[(1930, iEndDate), 	lHomelandsEuropePlus],
-iMilitia2 : 			[(1500, 1550), 		lHomelandsEurope],
-iMilitia3 : 			[(1550, 1700), 		lHomelandsEurope],
-iMilitia4 : 			[(1700, 1800), 		lHomelandsEuropePlus],
-iMilitia5 : 			[(1800, 1900), 		lHomelandsEuropePlus],
-iMilitia6 : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
+iMilitiaPikeman : 			[(1500, 1550), 		lHomelandsEurope],
+iMilitiaArquebusier : 			[(1550, 1700), 		lHomelandsEurope],
+iMilitiaMusketman : 			[(1700, 1800), 		lHomelandsEuropePlus],
+iMilitiaRifleman : 			[(1800, 1900), 		lHomelandsEuropePlus],
+iMilitiaInfantry : 			[(1900, iEndDate), 	lHomelandsEuropePlus],
 iKoa : 					[(0, 	1800), 		[iHomelandAsia]],
 iArquebusier : 			[(1500, 1550), 		lHomelandsEurope],
 iMusketman : 			[(1550, 1700), 		lHomelandsEurope],

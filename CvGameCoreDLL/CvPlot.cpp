@@ -219,6 +219,8 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	m_iFortClaimerX = -1;
 	m_iFortClaimerY = -1;
 	m_eFortOwner = NO_PLAYER;
+	m_iTribeStoredUnits = 0;
+	m_iTribeThreatenTurn = -1;
 
 	m_bStartingPlot = false;
 	m_bHills = false;
@@ -3501,6 +3503,21 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 	int iPriority;
 	int iBestPriority;
 	int iI;
+	
+	// MacAurther: Tribes and Contacted Tribes own their tiles
+	if(getImprovementType() == IMPROVEMENT_TRIBE || getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
+	{
+		for (iI = 0; iI < MAX_PLAYERS; ++iI)
+		{
+			if (GET_PLAYER((PlayerTypes)iI).isAlive())
+			{
+				if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == INDIGENOUS)
+				{
+					return (PlayerTypes)iI;
+				}
+			}
+		}
+	}
 
 	if (isForceUnowned())
 	{
@@ -3521,16 +3538,6 @@ PlayerTypes CvPlot::calculateCulturalOwner(bool bActual) const
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
-				// MacAurther: Tribes and Contacted Tribes own their tiles
-				if (GET_PLAYER((PlayerTypes)iI).getCivilizationType() == INDIGENOUS)
-				{
-					if(getImprovementType() == IMPROVEMENT_TRIBE || getImprovementType() == IMPROVEMENT_CONTACTED_TRIBE)
-					{
-						eBestPlayer = (PlayerTypes)iI;
-						break;
-					}
-				}
-
 				iCulture = bActual ? getActualCulture((PlayerTypes)iI) : getCulture((PlayerTypes)iI);
 
 				if (iCulture > 0)
@@ -10029,6 +10036,8 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iFortClaimerX);
 	pStream->Read(&m_iFortClaimerY);
 	pStream->Read(&m_eFortOwner);
+	pStream->Read(&m_iTribeStoredUnits);
+	pStream->Read(&m_iTribeThreatenTurn);
 
 	pStream->Read(&bVal);
 	m_bStartingPlot = bVal;
@@ -10339,6 +10348,8 @@ void CvPlot::write(FDataStreamBase* pStream)
 	pStream->Write(m_iFortClaimerX);
 	pStream->Write(m_iFortClaimerY);
 	pStream->Write(m_eFortOwner);
+	pStream->Write(m_iTribeStoredUnits);
+	pStream->Write(m_iTribeThreatenTurn);
 
 	pStream->Write(m_bStartingPlot);
 	pStream->Write(m_bHills);
@@ -12429,4 +12440,24 @@ bool CvPlot::isTradewinds()
 		getFeatureType() == FEATURE_TRADEWINDS_AFRICA ||
 		getFeatureType() == FEATURE_TRADEWINDS_SIBERIA ||
 		getFeatureType() == FEATURE_TRADEWINDS_ASIA);
+}
+
+int CvPlot::getTribeStoredUnits()
+{
+	return m_iTribeStoredUnits;
+}
+
+void CvPlot::setTribeStoredUnits(int iNumUnits)
+{
+	m_iTribeStoredUnits = iNumUnits;
+}
+
+int CvPlot::getTribeThreatenTurn()
+{
+	return m_iTribeThreatenTurn;
+}
+
+void CvPlot::setTribeThreatenTurn(int iTurn)
+{
+	m_iTribeThreatenTurn = iTurn;
 }

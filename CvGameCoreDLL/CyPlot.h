@@ -316,6 +316,9 @@ public:
 	int getContinentArea();
 	
 	void updateFortClaims(int ePlayer);	// MacAurther
+	int getTribeStoredUnits();	// MacAurther
+	void setTribeStoredUnits(int iNumUnits);	// MacAurther
+	int getTribeThreatenTurn();	// MacAurther
 
 private:
 	CvPlot* m_pPlot;

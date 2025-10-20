@@ -83,6 +83,7 @@ events.addEvent("freedSlaves")
 events.addEvent("migration")
 events.addEvent("combatResult")
 events.addEvent("immigrationSpent")
+events.addEvent("tribeAttacked")
 
 
 @handler("buildingBuilt")

@@ -300,5 +300,8 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 
 		// MacAurther
 		.def("updateFortClaims", &CyPlot::updateFortClaims, "void (int ePlayer)")
+		.def("getTribeStoredUnits", &CyPlot::getTribeStoredUnits, "int ()")
+		.def("setTribeStoredUnits", &CyPlot::setTribeStoredUnits, "void (int iNumUnits)")
+		.def("getTribeThreatenTurn", &CyPlot::getTribeThreatenTurn, "int ()")
 	;
 }

@@ -72,6 +72,12 @@ void CvUnitAI::AI_reset(UnitAITypes eUnitAI)
 // AI_update returns true when we should abort the loop and wait until next slice
 bool CvUnitAI::AI_update()
 {
+	// MacAurther: if UNITAI_SIT_FOREVER, return as soon as possible
+	if (AI_getUnitAIType() == UNITAI_SIT_FOREVER)
+	{
+		return false;
+	}
+
 	PROFILE_FUNC();
 
 	CvUnit* pTransportUnit;
@@ -678,6 +684,7 @@ int CvUnitAI::AI_groupFirstVal()
 	case UNITAI_STATESMAN:
 	case UNITAI_COLONIST:
 	case UNITAI_SLAVE:
+	case UNITAI_SIT_FOREVER:
 		return 11;
 		break;
 

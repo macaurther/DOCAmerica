@@ -591,6 +591,11 @@ void CvEventReporter::buildingProcessed(CvCity* pCity, BuildingTypes eBuilding, 
 	m_kPythonEventMgr.reportBuildingProcessed(pCity, eBuilding, iChange);
 }
 
+void CvEventReporter::tribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker)
+{
+	m_kPythonEventMgr.reportTribeAttacked(pPlot, eAttacker);
+}
+
 void CvEventReporter::preSave()
 {
 	m_kPythonEventMgr.preSave();

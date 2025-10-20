@@ -2654,6 +2654,7 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	case UNITAI_SATELLITE: szString = L"satellite"; break;
 	case UNITAI_COLONIST: szString = L"colonist"; break;
 	case UNITAI_SLAVE: szString = L"slave"; break;
+	case UNITAI_SIT_FOREVER: szString = L"sit forever"; break;
 
 	default: szString = CvWString::format(L"unknown(%d)", eUnitAI); break;
 	}

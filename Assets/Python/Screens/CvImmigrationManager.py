@@ -891,9 +891,6 @@ def onEndPlayerTurn(iGameTurn, iPlayer):
 	# and provide the logic to make the computer players think.
 	pPlayer = gc.getPlayer(iPlayer)
 	
-	# TEMP DEBUG
-	#return
-	
 	if pPlayer != None and objImmigrationUtils.canEarnImmigrants(iPlayer):
 
 		if g_bDebug:

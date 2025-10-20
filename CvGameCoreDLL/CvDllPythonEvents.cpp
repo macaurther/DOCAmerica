@@ -1616,6 +1616,22 @@ void CvDllPythonEvents::reportBuildingProcessed(CvCity* pCity, BuildingTypes eBu
 	}
 }
 
+// MacAurther: Tribe attacked
+void CvDllPythonEvents::reportTribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker)
+{
+	if (preEvent())
+	{
+		CyArgsList eventData;
+		eventData.add("tribeAttacked");
+
+		CyPlot* pCyPlot = new CyPlot(pPlot);
+		eventData.add(gDLL->getPythonIFace()->makePythonObject(pCyPlot));
+
+		eventData.add(eAttacker);
+		postEvent(eventData);
+	}
+}
+
 void CvDllPythonEvents::reportGenericEvent(const char* szEventName, void *pyArgs)
 {
 	if (preEvent())

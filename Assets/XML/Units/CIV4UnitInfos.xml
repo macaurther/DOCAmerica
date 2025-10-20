@@ -2170,6 +2170,7 @@
 			<bOnlyDefensive>1</bOnlyDefensive>
 			<bMilitarySupport>1</bMilitarySupport>
 			<bMilitaryProduction>1</bMilitaryProduction>
+			<bRivalTerritory>1</bRivalTerritory>
 			<UnitClassUpgrades>
 				<UnitClassUpgrade>
 					<UnitClassUpgradeType>UNITCLASS_EXPLORER</UnitClassUpgradeType>
@@ -2731,7 +2732,6 @@
 			<bPillage>1</bPillage>
 			<bIgnoreBuildingDefense>1</bIgnoreBuildingDefense>
 			<bIgnoreTerrainCost>1</bIgnoreTerrainCost>
-			<bRivalTerritory>1</bRivalTerritory>
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_PARADROP</UnitAIType>

@@ -86,7 +86,7 @@ def placeTribes():
 					# Check if queue tribe
 					if iQueuedTribes > 0:
 						if not isTribeAdjacent(x_, y_):
-							pPlot.setImprovementType(iTribe)
+							spawnTribe(pPlot)
 							iQueuedTribes -= 1
 						continue
 
@@ -95,10 +95,15 @@ def placeTribes():
 						if isTribeAdjacent(x_, y_):
 							iQueuedTribes += 1
 						else:
-							pPlot.setImprovementType(iTribe)
+							spawnTribe(pPlot)
 						
 						iScore -= iThreshold
 			
+def spawnTribe(pPlot):
+	pPlot.setImprovementType(iTribe)
+	# Give some initial defenders
+	pPlot.setTribeStoredUnits(2)
+	pPlot.setCulture(slot(iIndigenous), 100, True)
 
 def isTribeAdjacent(x, y):
 	for i in range(-1,2):
@@ -137,6 +142,41 @@ def setupMexicoCity(city):
 
 
 ### BEGIN GAME TURN ###
+
+@handler("BeginGameTurn")
+def defendTribes(iGameTurn):
+	# Every 5 turns, attempt to replenish tribes' forces
+	if iGameTurn % scale(5) == 0 and iGameTurn > 0:
+		iHandicap = infos.handicap().getBarbarianSpawnModifier()
+		iMaxUnits = 2 + iHandicap
+		if year() > year(1): iMaxUnits += 1
+		if year() > year(1000): iMaxUnits += 1
+		if year() > year(1500): iMaxUnits += 1
+		if year() > year(1750): iMaxUnits += 1
+
+		for y in range(0, iWorldY):
+			for x in range(0, iWorldX):
+				pPlot = plot(x,y)
+				if pPlot.getImprovementType() in [iTribe, iContactedTribe]:
+					replenishTribe(pPlot, iMaxUnits)
+
+					# If it has been a while since the tribe was threatened, pack units back in
+					if(pPlot.getTribeThreatenTurn() + 8 < iGameTurn):
+						for i in range(pPlot.getNumUnits()-1, -1, -1):
+							pUnit = pPlot.getUnit(i)
+							if civ(pUnit) == iIndigenous:
+								pUnit.kill(False, -1)
+								pPlot.setTribeStoredUnits(pPlot.getTribeStoredUnits() + 1)
+
+def replenishTribe(pPlot, iMaxUnits):
+	iNumIndigenous = 0
+	for i in range(pPlot.getNumUnits()):
+		pUnit = pPlot.getUnit(i)
+		if player(pUnit.getOwner()).getCivilizationType() == iIndigenous:
+			iNumIndigenous += 1
+	if iNumIndigenous + pPlot.getTribeStoredUnits() < iMaxUnits:
+		pPlot.setTribeStoredUnits(pPlot.getTribeStoredUnits() + 1)
+
 
 @handler("BeginGameTurn")
 def expeditionaryForce(iGameTurn):

@@ -433,6 +433,10 @@ def interleave(*iterables):
 def move(unit, destination):
 	if destination is None:
 		return
+
+	# MacAurther: Don't move units that just want to sit forever
+	if unit.getUnitAIType() == UnitAITypes.UNITAI_SIT_FOREVER:
+		return
 		
 	if location(unit) >= (0, 0) and location(unit) != location(destination):
 		x, y = _parse_tile(destination)

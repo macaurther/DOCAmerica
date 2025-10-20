@@ -104,7 +104,7 @@ class Civilization(object):
 		self.iAdvancedStartPoints = kwargs.get("iAdvancedStartPoints")
 		
 		self.lCivics = kwargs.get("lCivics", [])
-		self.lEnemies = kwargs.get("lEnemies", []) + [iIndigenous, iBarbarian]
+		self.lEnemies = kwargs.get("lEnemies", []) + [iBarbarian]	# MacAurther: Inidigenous player is not automatically an enemy
 		#self.iMasterCiv = kwargs.get("iMasterCiv")
 		
 		self.dAttitudes = kwargs.get("dAttitudes", {})
@@ -195,7 +195,7 @@ lCivilizations = [
 		iTeotihuacan,
 		iGold=50,
 		lCivics=[iTlacotin1, iRedistribution1],
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology).without(iPathfinding, iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
+		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology).without(iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
 	),
 	Civilization(
 		iTiwanaku,

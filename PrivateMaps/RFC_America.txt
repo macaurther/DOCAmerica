@@ -23446,7 +23446,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=67
-	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
+	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,
@@ -24112,7 +24112,7 @@ BeginPlot
 	RiverWEDirection=1
 	BonusType=BONUS_CITRUS
 	BonusVarietyType=BONUS_CITRUS_ORANGES
-	FeatureType=FEATURE_PALM_FOREST, FeatureVariety=0
+	FeatureType=FEATURE_RAINFOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,

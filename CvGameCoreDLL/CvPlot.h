@@ -600,6 +600,12 @@ public:
 
 	bool isTradewinds();
 
+	// MacAurther Tribes
+	DllExport int getTribeStoredUnits();							// Exposed to Python
+	DllExport void setTribeStoredUnits(int iNumUnits);				// Exposed to Python
+	DllExport int getTribeThreatenTurn();							// Exposed to Python
+	void setTribeThreatenTurn(int iTurn);
+
 	// Leoreth: graphics paging
 	static void EvictGraphicsIfNecessary();
 	void pageGraphicsOut();
@@ -635,6 +641,10 @@ protected:
 	int m_iFortClaimerX;				// x coord of the tile where the fort that exerts control over this tile (I wanted these to be pointers, but I couldn't figure out how to properly READ and WRITE tile pointers to the save file)
 	int m_iFortClaimerY;
 	char /*PlayerTypes*/ m_eFortOwner;	// the player ID of who owns this tile via Forts
+
+	// MacAurther: Tribes
+	int m_iTribeStoredUnits;
+	int m_iTribeThreatenTurn;
 
 	bool m_bStartingPlot:1;
 	bool m_bHills:1;

@@ -521,7 +521,7 @@ def isUnitOfRole(iUnit, iRole):
 	elif iRole == iMissionary:
 		return base_unit(iUnit) in [iOrthodoxMiss, iCatholicMiss, iProtestantMiss]
 	elif iRole == iMilitia:
-		return base_unit(iUnit) in [iMilitia1, iMilitia2, iMilitia3, iMilitia4, iMilitia5, iMilitia6]
+		return base_unit(iUnit) in [iMilitiaSpearman, iMilitiaPikeman, iMilitiaArquebusier, iMilitiaMusketman, iMilitiaRifleman, iMilitiaInfantry]
 	elif iRole == iBase:
 		return base_unit(iUnit) in [iWarrior, iMaceman, iArquebusier, iMusketman, iFusilier, iRifleman, iInfantry]
 	elif iRole == iCounter:

@@ -190,5 +190,9 @@
 			<Type>UNITAI_SLAVE</Type>
 			<Description>UNITAI_SLAVE</Description>
 		</UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_SIT_FOREVER</Type>
+			<Description>UNITAI_SIT_FOREVER</Description>
+		</UnitAIInfo>
 	</UnitAIInfos>
 </Civ4UnitAIInfos>

@@ -60,16 +60,17 @@ def initWars(iPlayer):
 	iCiv = player(iPlayer).getCivilizationType()
 	iTeam = player(iPlayer).getTeam()
 	
-	if iCiv == iIndigenous:
-		for iOtherPlayer in players.all().alive():
-			if not player(iOtherPlayer).isBarbarian():
-				team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
+	# MacAurther: Indigenous is not automatically enemy
+	# if iCiv == iIndigenous:
+	# 	for iOtherPlayer in players.all().alive():
+	# 		if not player(iOtherPlayer).isBarbarian():
+	# 			team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
 	
-	else:
-		team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
+	# else:
+	team(gc.getBARBARIAN_TEAM()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
 		
-		if player(iIndigenous).isExisting():
-			team(player(iIndigenous).getTeam()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
+		# if player(iIndigenous).isExisting():
+		# 	team(player(iIndigenous).getTeam()).declareWar(iTeam, False, WarPlanTypes.WARPLAN_LIMITED)
 
 def getImpact(iCiv):
 	iActiveCiv = civ()

@@ -132,6 +132,8 @@ public:
 	void reportGlobalWarmingEffect(CvPlot* pPlot, bool bChanged, TerrainTypes ePreviousTerrain, TerrainTypes eNewTerrain, FeatureTypes ePreviousFeature); // Leoreth
 	void reportBuildingProcessed(CvCity* pCity, BuildingTypes eBuilding, int iChange); // Leoreth
 
+	void reportTribeAttacked(CvPlot* pPlot, PlayerTypes eAttacker);	// MacAurther
+
 	void reportSetPlayerAlive(PlayerTypes ePlayerID, bool bNewValue);
 	void reportPlayerChangeStateReligion(PlayerTypes ePlayerID, ReligionTypes eNewReligion, ReligionTypes eOldReligion);
 	void reportPlayerGoldTrade(PlayerTypes eFromPlayer, PlayerTypes eToPlayer, int iAmount);

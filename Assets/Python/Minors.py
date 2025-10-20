@@ -539,113 +539,32 @@ def maintainFallenCivilizations():
 					if iNumCurrentUnits < iNumDesiredUnits:
 						makeUnits(city.getOwner(), iDefender, city, iNumDesiredUnits-iNumCurrentUnits, iDefenseAI)
 
-# MacAurther: Pillaging Tribes generates warriors
+# MacAurther: Tribes
+@handler("tribeAttacked")
+def spawnTribeDefenders(pPlot, iAttacker):
+	iNumDefenders = pPlot.getTribeStoredUnits()
+
+	iUnit = iMilitiaSpearman
+	for iI in range(iNumDefenders):
+		# MacAurther TODO: Made this more sophisticated?
+		if iI > 1: iUnit = iArcher
+		elif iI > 3: iUnit = iMaceman
+
+		# Upgrade archers to horse archers given certain conditions
+		if year() > year(1600) and pPlot.getTerrainType() in [iPlains, iPrairie] and pPlot.getFeatureType() == FeatureTypes.NO_FEATURE and iUnit == iArcher:
+			iUnit = iHorseArcher
+
+		makeUnits(slot(iIndigenous), iUnit, pPlot, 1, UnitAITypes.UNITAI_SIT_FOREVER)
+	
+	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
+	pPlot.setTribeStoredUnits(0)
+
 @handler("unitPillage")
 def tribePillage(pUnit, iImprovement, iRoute, iOwner, iGold):
 	# If pillage a tribe, get uprising
 	if iImprovement == iTribe or iImprovement == iContactedTribe:
-		# MacAurther: Sometimes the Native player pillages a tribe. Don't try to declare war in that case, but do still spawn defenders
-		if team(pUnit.getOwner()) != player(iIndigenous).getTeam():
-			team(pUnit.getOwner()).declareWar(player(iIndigenous).getTeam(), False, WarPlanTypes.WARPLAN_LIMITED)
-		iX = pUnit.getX()
-		iY = pUnit.getY()
-		spawnTribeDefenders(iX, iY)
-	
+		# Reset any leftover stored units
+		pUnit.plot().setTribeStoredUnits(0)
+
 		# Check for any slave capturing
 		enslaveUnit(pUnit)
-
-# MacAurther: Temporary - copied from old Barbs.py
-def possibleTiles(tTL, tBR, bWater=False, bTerritory=False, bBorder=False, bImpassable=False, bNearCity=False, bForceSpawn=False, bTribeSpawn=False):
-	return plots.start(tTL).end(tBR).where(lambda p: possibleTile(p, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn, bTribeSpawn))
-	
-def possibleTile(plot, bWater, bTerritory, bBorder, bImpassable, bNearCity, bForceSpawn, bTribeSpawn):
-	# never on peaks
-	if plot.isPeak(): return False
-	
-	# only land or water
-	if bWater != plot.isWater(): return False
-	
-	# only inside territory if specified
-	if not bTerritory and plot.isOwned(): return False
-	
-	# never directly next to cities, MacAurther: unless Force Spawn
-	if not bForceSpawn and cities.surrounding(plot): return False
-	
-	# never on tiles with units
-	if plot.isUnit(): return False
-	
-	# never in bog (impassable)
-	if plot.getFeatureType() == iBog: return False
-	
-	# allow other impassable terrain (ocean, jungle)
-	if not bImpassable:
-		if plot.getTerrainType() == iOcean: return False
-		if plot.getFeatureType() == iJungle: return False
-	
-	# restrict to borders if specified
-	if bBorder and not plots.surrounding(plot).notowner(plot.getOwner()): return False
-	
-	# near a city if specified (next to cities excluded above)
-	if bNearCity and not plots.surrounding(plot, radius=2).where(lambda p: not p.isCity()): return False
-	
-	# not on landmasses without cities, MacAurther: except if Force Spawn
-	if not bForceSpawn and not bWater and map.getArea(plot.getArea()).getNumCities() == 0: return False
-	
-	# MacAurther: Extra check for Tribe spawning
-	# Commenting this out. It just doesn't work very well. 
-	'''if bTribeSpawn:
-		if (plot.isImpassable()) or (plot.getImprovementType() != ImprovementTypes.NO_IMPROVEMENT) or \
-			(plot.getTerrainType() in [iSnow, iSaltflat, iLagoon, iAtoll]) or (plot.getBonusType(-1) != BonusTypes.NO_BONUS):
-			return False
-	
-		# MacAurther: Don't spawn a Tribe next to another Tribe
-		for iX in range(-1, 2):
-			iCheckX = plot.getX() + iX
-			if iCheckX < 0 or iCheckX >= iWorldX:
-				continue
-			for iY in range(-1, 2):
-				iCheckY = plot.getY() + iY
-				if iCheckY < 0 or iCheckY >= iWorldY:
-					continue
-				pCheckPlot = gc.getMap().plot(iCheckX, iCheckY)
-				if pCheckPlot.getImprovementType() in [iTribe, iContactedTribe]:
-					return False
-		
-		# Make sure to not cover up an AI's desired spot
-		iX = plot.getX()
-		iY = plot.getY()
-		for iCiv in dSettlerMaps:
-			if dSettlerMaps[iCiv][iY][iX] > 90:
-				return False'''
-	
-	return True
-
-def spawnDefenders(iPlayer, iUnitType, iNumUnits, tTL, tBR, sAdj=""):
-	''' MacAurther: represents Native defenders against tribe pillagers. CAN be next to cities,
-	in territory, and in areas with no cities present'''
-	plot = possibleTiles(tTL, tBR, bTerritory=True, bForceSpawn=True).random()
-	
-	if plot and plot.getX() != -1 and plot.getY() != -1:
-		makeUnits(iPlayer, iUnitType, plot, iNumUnits, UnitAITypes.UNITAI_ATTACK).adjective(sAdj)
-
-# MacAurther
-def spawnTribeDefenders(iX, iY):
-	iHandicap = infos.handicap().getBarbarianSpawnModifier()
-	
-	iRange = 1
-	if year() >= year(1650):
-		iRange += 1
-	if year() >= year(1800):
-		iRange += 1
-	tTL = (iX - iRange, iY - iRange)
-	tBR = (iX + iRange, iY + iRange)
-	
-	spawnDefenders(iIndigenous, iWarrior, 1 + iHandicap, tTL, tBR)
-	spawnDefenders(iIndigenous, iArcher, 1 + iHandicap, tTL, tBR)
-	if year() <= year(1650):
-		spawnDefenders(iIndigenous, iAtlatlist, iHandicap, tTL, tBR)
-		spawnDefenders(iIndigenous, iSpearman, iHandicap, tTL, tBR)
-	elif year() <= year(1800):
-		spawnDefenders(iIndigenous, iArquebusier, 1 + iHandicap, tTL, tBR)
-	else:
-		spawnDefenders(iIndigenous, iCuirassier, 1 + iHandicap, tTL, tBR)
