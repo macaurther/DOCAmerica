@@ -8384,6 +8384,12 @@ void CvCityAI::AI_bestPlotBuild(CvPlot* pPlot, int* piBestValue, BuildTypes* peB
 					eFinalImprovement = eImprovement;
 				}
 
+				// MacAurther: Slave improvements degrade, which kind of breaks the below logic. Just trick the worker into ignoring that fact
+				if (eImprovement == IMPROVEMENT_SLAVE_PLANTATION || eImprovement == IMPROVEMENT_SLAVE_MINE)
+				{
+					eFinalImprovement = eImprovement;
+				}
+
 				iValue = 0;
 
 				if (eBonus != NO_BONUS)

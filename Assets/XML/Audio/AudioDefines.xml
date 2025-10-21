@@ -11529,6 +11529,13 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_LOUVERTURE</SoundID>
+			<Filename>Sounds/Diplomacy/FrenchColonistLeader1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SONG_ANCIENT_SOUNDTRACK_1</SoundID>
 			<Filename>Sounds/Soundtrack/Ancient/AncientSoundtrack1</Filename>
 			<LoadType>STREAMED</LoadType>
