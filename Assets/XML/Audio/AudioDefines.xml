@@ -1113,6 +1113,13 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>DIPLO_WARDRUMS_NATIVE</SoundID>
+			<Filename>Sounds/Diplomacy/NADiploWar1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>DIPLO_WASHINGTON_EARLY_INTRO</SoundID>
 			<Filename>Sounds/Diplomacy/Washington_Early_Intro</Filename>
 			<LoadType>STREAMED</LoadType>
@@ -11529,8 +11536,29 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
-			<SoundID>DIPLO_LOUVERTURE</SoundID>
+			<SoundID>DIPLO_LOUVERTURE_MIDDLE</SoundID>
 			<Filename>Sounds/Diplomacy/FrenchColonistLeader1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_LOUVERTURE_LATE</SoundID>
+			<Filename>Sounds/Diplomacy/FrenchColonistLeader2</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_JACKSON_MIDDLE</SoundID>
+			<Filename>Sounds/Diplomacy/EnglishColonistLeader1</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>DIPLO_JACKSON_LATE</SoundID>
+			<Filename>Sounds/Diplomacy/EnglishColonistLeader2</Filename>
 			<LoadType>STREAMED</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>
