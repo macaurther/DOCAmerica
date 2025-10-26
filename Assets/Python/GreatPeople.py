@@ -114,6 +114,8 @@ def getName(unit):
 	return random_entry(lAvailableNames)
 
 # MacAurther TODO: Add mod-specific great people :)
+# WARNING: AI-GENERATED TABLES - I KNOW IT'S BAD AND HALLUCINATES PEOPLE WHO NEVER EXISTED BUT WHAT AM I GOING TO DO MY OWN RESEARCH I DON'T THINK SO
+#  They're the ones with detail on where the names are from, details that are unverifiable at times...
 dGreatPeople = {
 	iMaya : {
 		iGreatProphet : (
@@ -223,646 +225,308 @@ dGreatPeople = {
 		),
 	},
 	iAztecs : {
-		iGreatProphet : [
+		iGreatProphet : (
 			"Tenoch", # 14th
 			"Tlacateotl", # 15th
 			"fPapantzin", # 15th
 			"Ixtlilxochitl", # 15th
 			"fYacotzin", # 16th
-		],
-		iGreatArtist : [
+		),
+		iGreatArtist : (
 			"Cuacuauhtzin", # 15th
 			"Nezahualcoyotl", # 15th
 			"Xayacamach", # 15th
 			"fMacuilxochitzin", # 15th
-		],
-		iGreatScientist : [
+		),
+		iGreatScientist : (
 			"Axayacatl", # 15th
 			"Ixtlilxochitl", # 16th
 			"Coanacochtzin", # 16th
-		],
-		iGreatMerchant : [
+		),
+		iGreatMerchant : (
 			"Cuauhtemoc", # 16th
 			"Tlacotzin", # 16th
 			"fTecuichpoch Ixcaxochitzin", # 16th
-		],
-		iGreatEngineer : [
+		),
+		iGreatEngineer : (
 			"Itzcatl", # 15th
 			"Tlacaelel", # 15th
 			"Moquihuix", # 15th
-		],
-		iGreatStatesman : [
+		),
+		iGreatStatesman : (
 			"Acamapichtli", # 14th
 			"Quaquapitzahuac", # 15th
 			"Tezozomoctli", # 15th
 			"Nezahualcoyotl", # 15th
 			"Nezahualpilli", # 15th
-		],
-		iGreatGeneral : [
+		),
+		iGreatGeneral : (
 			"Tezozomoc", # 14th
 			"Ahuitzotl", # 15th
 			"Itzcoatl", # 15th
 			"Maxtla", # 15th
 			"Huitzilhuitl", # 15th
 			"Chimalpopoca", # 15th
-		],
+		),
 	},
 	iSpain : {
-		iGreatProphet : [
-			"Juan de Ortega", # 11th
-			u"Domingo de Guzmán", # 12th
-			iRevolutionaryEra,
-			"Ignacio de Loyola", # 16th
-			u"Juan de Sepúlveda", # 16th
-			u"fTeresa de Ávila", # 16th
-			u"Francisco Suárez", # 16th
-			u"Bartolomé de Las Casas", # 16th
-			iIndustrialEra,
-			u"Junípero Serra", # 18th
-			"fJoaquima de Vedruna", # 19th
-		],
-		iGreatArtist : [
-			"Gonzalo de Berceo", # 13th
-			"Juan Manuel", # 14th
-			iRevolutionaryEra,
-			"Miguel de Cervantes", # 16th
-			"Garcilaso de la Vega", # 16th
-			"Lope de Vega", # 17th
-			u"Diego de Silva Velázquez", # 17th
-			u"fJuana Inés de la Cruz", # 17th
-			"Francisco de Goya", # 18th
-			iIndustrialEra,
-			u"fGertrudis Gómez de Avellaneda", # 19th
-			u"Gustavo Adolfo Bécquer", # 19th
-			u"fRosalía de Castro", # 19th
-			u"Isaac Albéniz", # 19th
-			u"Benito Pérez Galdós", # 19th
-		],
-		iGreatScientist : [
-			"Gerardo de Cremona", # 12th
-			"Yehuda ben Moshe", # 13th
-			"Ramon Llull", # 13th
-			iRevolutionaryEra,
-			"Miguel Serveto", # 16th
-			u"Carlos de Sigüenza y Góngora", # 17th
-			"Antonio de Ulloa", # 18th
-			iIndustrialEra,
-			u"José Celestino Mutis", # 18th
-			u"Santiago Ramón y Cajal", # 19th
-		],
-		iGreatMerchant : [
-			u"Cristóbal Colón", # 15th
-			"Fernando de Magallanes", # 15th
-			u"Martín de Azpilcueta", # 16th
-			"Hernando de Soto", # 16th
-			u"José Penso de la Vega", # 17th
-			iIndustrialEra,
-			"Salvador Fidalgo", # 18th
-		],
-		iGreatEngineer : [
-			"Juan Bautista de Toledo", # 16th
-			"Juan de Herrera", # 16th
-			iIndustrialEra,
-			u"Agustín de Betancourt", # 18th
-			"Alberto de Palacio y Elissague", # 19th
-			"Esteban Terradas i Illa", # 19th
-			u"Antoni Gaudí", # 19th
-		],
-		iGreatStatesman : [
-			"Alfonso el Sabio", # 13th
-			iRevolutionaryEra,
-			u"Francisco Jiménez de Cisneros", # 15th
-			"Francisco de Vitoria", # 16th
-			iIndustrialEra,
-			u"José de Gálvez", # 18th
-			u"José Moniño", # 18th
-			"Juan Prim", # 19th
-		],
-		iGreatGeneral : [
-			"El Cid", # 11th
-			"Alfonso el Bravo", # 11th
-			"Jaume el Conqueridor", # 13th
-			iRevolutionaryEra,
-			"Francisco Coronado", # 16th
-			u"Hernán Cortés", # 16th
-			"Francisco Pizarro", # 16th
-			u"Álvaro de Bazán", # 16th
-			u"fMaría Pacheco", # 16th
-			u"Fernando Álvarez de Toledo", # 16th
-			u"Ambrosio Spínola Doria", # 17th
-			u"Bernardo de Gálvez", # 18th
-			iIndustrialEra, 
-			u"fAgustina de Aragón", # 19th
-			"Fernando Villaamil", # 19th
-		],
-		iGreatSpy : [
-			u"Tomás de Torquemada", # 15th
-			"Bernardino de Mendoza", # 17th
-			u"fManuela Desvalls Vergós", # 18th
-			"Ali Bey el Abbassi", # 18th 
-		],
+		iGreatProphet : (
+			"Juan de Zumárraga",   # 16th – first bishop of Mexico, protector of indigenous peoples
+			"Pedro de Gante",       # 16th – Franciscan missionary, educator of natives
+			"Toribio de Benavente Motolinia", # 16th – early missionary chronicler
+			"fJuana Inés de la Cruz", # 17th – nun, theologian, and poet-scholar
+			"Alonso de Montúfar",    # 16th – Archbishop of Mexico, promoted Marian devotion (Our Lady of Guadalupe)
+		),
+		iGreatArtist : (
+			"Sebastián López de Arteaga",  # 17th – painter of early colonial Mexico
+			"Cristóbal de Villalpando",    # 17th – major baroque painter in New Spain
+			"Miguel Cabrera",              # 18th – leading painter, known for casta paintings
+			"Manuel Tolsá",                # 18th–19th – sculptor and architect of the Mexico City cathedral façade
+			"Juan Correa",                 # 17th – Afro-Mexican painter of religious works
+		),
+		iGreatScientist : (
+			"Carlos de Sigüenza y Góngora", # 17th – polymath, astronomer, cartographer
+			"José Antonio Alzate",          # 18th – naturalist, physicist, and journalist
+			"Francisco Hernández de Toledo",# 16th – royal physician, documented New World plants
+			"Andrés Manuel del Río",        # 18th – mineralogist, discovered vanadium in Mexico
+			"José Longinos Martínez",       # 18th – naturalist who catalogued flora and fauna of New Spain
+		),
+		iGreatMerchant : (
+			"Simón de Haro",               # 16th – early merchant in Veracruz trade
+			"Juan de la Torre",            # 17th – Mexico City merchant tied to Manila Galleons
+			"Manuel Fernández de Jáuregui",# 18th – prominent colonial entrepreneur
+			"Antonio de Ulloa",            # 18th – explorer and administrator involved in colonial commerce
+			"Tomás de la Barrera",         # 18th – mine owner and silver trader
+		),
+		iGreatEngineer : (
+			"Enrico Martínez",             # 17th – hydraulic engineer, drained Mexico Valley lakes
+			"Manuel Tolsá",                # 18th–19th – also as architect/engineer, built Palacio de Minería
+			"José de la Cruz",             # 18th – fortifications engineer in New Spain
+			"Agustín de Betancourt",       # 18th – Spanish engineer involved in colonial projects
+			"Lorenzo Rodríguez",           # 18th – architect of the Sagrario Metropolitano
+		),
+		iGreatStatesman : (
+			"Antonio de Mendoza",          # 16th – first viceroy of New Spain
+			"Luis de Velasco",             # 16th – viceroy, advocate for indigenous welfare
+			"José de Gálvez",              # 18th – reformer, Bourbon administrative overhaul
+			"Juan de Palafox y Mendoza",   # 17th – bishop and viceroy, reformer of colonial church and state
+			"Francisco Javier de Lizana y Beaumont", # 19th – viceroy during Napoleonic crisis
+		),
+		iGreatGeneral : (
+			"Hernán Cortés",               # 16th – conqueror and first governor of New Spain
+			"Pedro de Alvarado",           # 16th – conquistador in Mexico and Guatemala
+			"Gonzalo de Sandoval",         # 16th – key commander under Cortés
+			"Nuño de Guzmán",              # 16th – conqueror of western Mexico
+			"Antonio de Leyva",            # 16th – Spanish general linked to colonial defense
+			"Melchor Portocarrero",        # 17th – viceroy and military commander
+		),
 	},
 	iPortugal : {
-		iGreatProphet : [
-			u"António de Lisboa", # 13th
-			u"fIsabel de Aragão", # 14th
-			iRevolutionaryEra,
-			u"João de Deus", # 16th
-			u"João de Brito", # 17th
-			iIndustrialEra, 
-			"fRita Lopes de Almeida", # 19th
-		],
-		iGreatArtist : [
-			u"Fernão Lopes", # 15th
-			u"Nuno Gonçalves", # 15th
-			iRevolutionaryEra,
-			u"Luís de Camões", # 16th
-			u"António Ferreira", # 16th
-			u"João de Barros", # 16th
-			"Machado de Castro", # 18th
-			iIndustrialEra, 
-			"Antero de Quental", # 19th
-			u"José Maria de Eça de Queirós", # 19th
-		],
-		iGreatScientist : [
-			"Garcia de Orta", # 16th
-			"Pedro Nunes", # 16th
-			"Amato Lusitano", # 16th
-			"Jacob de Castro Sarmento", # 18th
-		],
-		iGreatMerchant : [
-			"Vasco da Gama", # 15th
-			"Francisco de Almeida", # 15th
-			"Henrique o Navegador", # 15th
-			"Bartolomeu Dias", # 15th
-			iRevolutionaryEra,
-			u"Pedro Álvares Cabral", # 15th
-			u"Fernão Pires de Andrade", # 16th
-			"fGracia Mendes Nasi", # 16th
-			u"Fernão Mendes Pinto", # 16th
-			iIndustrialEra, 
-			"fAntonia Ferreira", # 19th
-		],
-		iGreatEngineer : [
-			"Mateus Fernandes", # 15th
-			iRevolutionaryEra,
-			"Diogo de Arruda", # 16th
-			"Diogo de Boitaca", # 16th
-			u"João Antunes", # 17th
-			u"Bartolomeu de Gusmão", # 18th
-			iIndustrialEra,
-			"Carlos Amarante", # 18th
-		],
-		iGreatStatesman : [
-			"Henrique de Avis", # 15th
-			iRevolutionaryEra,
-			u"Tristão da Cunha", # 16th
-			u"João o Restaurador", # 17th
-			u"fLuisa de Guzmán", # 17th
-			u"Alexandre de Gusmão", # 18th
-			u"Sebastião José de Carvalho e Melo", # 18th
-			iIndustrialEra,
-			"Mouzinho da Silveira", # 19th
-			u"António Luís de Seabra", # 19th
-		],
-		iGreatGeneral : [
-			"Geraldo sem Pavor", # 12th
-			u"Nuno Álvares Pereira", # 14th
-			u"Álvaro Vaz de Almada", # 15th
-			iRevolutionaryEra,
-			"Afonso de Albuquerque", # 15th
-			"Matias de Albuquerque", # 17th
-			iIndustrialEra, 
-			u"António José Severim de Noronha", # 19th
-		],
-		iGreatSpy : [
-			"Roderigo Lopez", # 16th
-		],
+		iGreatProphet : (
+			"José de Anchieta",           # 16th – Jesuit missionary, co-founder of São Paulo and Rio de Janeiro
+			"Manuel da Nóbrega",          # 16th – Jesuit provincial, early defender of indigenous rights
+			"Antônio Vieira",             # 17th – Jesuit priest, orator, and royal adviser advocating for native and Afro-Brazilian peoples
+			"fMaria do Céu",              # 17th – Portuguese nun-writer whose works circulated in Brazil
+			"Frei Vicente do Salvador",   # 17th – Franciscan historian and theologian of colonial Brazil
+		),
+		iGreatArtist : (
+			"Aleijadinho",                # 18th – master sculptor and architect of Minas Gerais baroque churches
+			"Manuel da Costa Ataíde",     # 18th – painter of vivid baroque ceiling frescos
+			"fBárbara Heliodora",         # 18th – poet and playwright of Minas Gerais’ literary circles
+			"Gregório de Matos",          # 17th – satirical poet of colonial Bahia
+			"Manuel Botelho de Oliveira", # 17th – early Brazilian baroque poet and musician
+		),
+		iGreatScientist : (
+			"Alexandre Rodrigues Ferreira", # 18th – naturalist, led Amazon and Maranhão expeditions
+			"José Bonifácio de Andrada e Silva", # 18th – mineralogist and natural scientist (pre-independence career)
+			"Domingos Vandelli",             # 18th – Italian-born naturalist directing studies on Brazil’s flora
+			"Francisco de Melo Franco",      # 18th – physician and Enlightenment writer in colonial Brazil
+			"João Manso Pereira",            # 18th – inventor and early chemist in Bahia
+		),
+		iGreatMerchant : (
+			"Fernão Cardim",               # 16th – Jesuit chronicler involved in trade logistics for missions
+			"Francisco Pinheiro",          # 17th – Lisbon-Bahia merchant financier
+			"João Fernandes Vieira",       # 17th – sugar planter and administrator (also soldier against Dutch)
+			"Antônio Rodrigues Bravo",     # 18th – Rio de Janeiro merchant in the transatlantic trade
+			"Sebastião Ferreira Santos",   # 18th – Minas Gerais mine operator and trader
+		),
+		iGreatEngineer : (
+			"Francisco França e Silva",    # 18th – engineer of colonial fortifications in Bahia
+			"José Fernandes Pinto Alpoim", # 18th – military engineer, architect of royal buildings in Rio
+			"Manuel Pereira Ramos",        # 18th – designer of bridges and aqueducts in Minas Gerais
+			"Vicente Gomes Ferreira",      # 18th – hydraulic engineer of Recife improvements
+			"Antônio Landim",              # 18th – architect-builder in Salvador
+		),
+		iGreatStatesman : (
+			"Tomé de Sousa",               # 16th – first governor-general of Brazil, founded Salvador
+			"Mem de Sá",                   # 16th – third governor-general, consolidated Portuguese control
+			"Marquês de Pombal",           # 18th – reformer whose policies transformed colonial administration
+			"Luís de Vasconcelos e Sousa", # 18th – viceroy of Brazil, improved defenses and infrastructure
+			"Conde de Resende",            # 18th – last viceroy of colonial Brazil before independence
+		),
+		iGreatGeneral : (
+			"Estácio de Sá",               # 16th – founded Rio de Janeiro, fought French invaders
+			"Francisco Barreto",           # 16th – led military expeditions in Brazil and Angola
+			"Salvador Correia de Sá e Benevides", # 17th – expelled the Dutch from Luanda and supported Brazil’s defense
+			"Matias de Albuquerque",       # 17th – commander during Dutch invasions
+			"Francisco Xavier de Mendonça Furtado", # 18th – colonial governor and military administrator in the Amazon
+		),
 	},
 	iEngland : {
-		iGreatProphet : [
-			"Bede the Venerable", # 8th
-			"Anselm of Canterbury", # 11th
-			"Thomas Becket", # 12th
-			iRevolutionaryEra,
-			"Thomas More", # 16th
-			"fAnne Hutchinson", # 17th
-			"John Newton", # 18th
-			"William Penn", # 18th
-			"Jonathan Edwards", # 18th
-			"fAnn Lee", # 18th
-			"John Wesley", # 18th
-			iIndustrialEra,
-			"William Booth", # 19th
-			"David Livingstone", # 19th
-			iModernEra,
-			"Gerald Gardner", # 20th
-			"Aleister Crowley", # 20th
-			"John Stott", # 20th
-		],
-		iGreatArtist : [
-			u"Ælfric of Eynsham", # 10th
-			"Geoffrey Chaucer", # 14th
-			"Thomas Malory", # 15th
-			iRevolutionaryEra,
-			"William Shakespeare", # 17th
-			"John Milton", # 17th
-			"John Vanbrugh", # 17th
-			"George Frideric Handel", # 18th
-			"fJane Austen", # 18th
-			iIndustrialEra,
-			"William Blake", # 18th
-			"fMary Shelley", # 19th
-			"Alfred Tennyson", # 19th
-			"Charles Dickens", # 19th
-			"fGeorge Eliot", # 19th
-			"Arthur Conan Doyle", # 19th
-			iModernEra,
-			"fVirginia Woolf", # 20th
-			"James Joyce", # 20th
-			"fAgatha Christie", # 20th
-			"John R. R. Tolkien", # 20th
-			"Alfred Hitchcock", # 20th
-			"John Lennon", # 20th
-		],
-		iGreatScientist : [
-			"Byrhtferth", # 10th
-			"Robert Grosseteste", # 13th
-			"Roger Bacon", # 13th
-			"William of Ockham", # 14th
-			iRevolutionaryEra,
-			"Francis Bacon", # 16th
-			"Robert Boyle", # 17th
-			"Isaac Newton", # 17th
-			"David Hume", # 18th
-			"William Herschel", # 18th
-			iIndustrialEra,
-			"John Dalton", # 19th
-			"fMary Somerville", # 19th
-			"Michael Faraday", # 19th
-			"fMary Anning", # 19th
-			"Charles Darwin", # 19th
-			"fAda Lovelace", # 19th
-			"James Clerk Maxwell", # 19th
-			iModernEra,
-			"Ernest Rutherford", # 20th
-			"Alexander Fleming", # 20th
-			"Alan Turing", # 20th
-			"fRosalind Franklin", # 20th
-			"Stephen Hawking", # 20th
-		],
-		iGreatMerchant : [
-			"Alan Rufus", # 11th
-			"Aaron of Lincoln", # 12th
-			"William Caxton", # 15th
-			iRevolutionaryEra,
-			"Francis Drake", # 16th
-			"William Petty", # 17th
-			"James Cook", # 18th
-			"Adam Smith", # 18th
-			iIndustrialEra,
-			"David Ricardo", # 18th
-			"George Hudson", # 19th
-			"Richard Francis Burton", # 19th
-			"Thomas Sutherland", # 19th
-			"Cecil Rhodes", # 19th
-			iModernEra,
-			"John Maynard Keynes", # 20th
-		],
-		iGreatEngineer : [
-			"Henry Yevele", # 14th
-			iRevolutionaryEra,
-			"Inigo Jones", # 17th
-			"Robert Hooke", # 17th
-			"Christopher Wren", # 17th
-			"William Adam", # 18th
-			"John Harrison", # 18th
-			iIndustrialEra,
-			"James Watt", # 18th
-			"George Stephenson", # 19th
-			"Charles Babbage", # 19th
-			"Isambard Kingdom Brunel", # 19th
-			"Henry Bessemer", # 19th
-			"William Thomson Kelvin", # 19th
-			iModernEra,
-			"John Logie Baird", # 20th
-			"fVictoria Drummond", # 20th
-			"Frank Whittle", # 20th
-			"Tim Berners-Lee", # 20th
-		],
-		iGreatStatesman : [
-			"Thomas Becket", # 12th
-			iRevolutionaryEra,
-			"William Cecil", # 16th
-			"John Locke", # 17th
-			"Thomas Hobbes", # 17th
-			"Robert Walpole", # 18th
-			"William Pitt", # 18th
-			"fMary Wollstonecraft", # 18th
-			iIndustrialEra,
-			"Jeremy Bentham", # 18th
-			"John Stuart Mill", # 19th
-			"William Gladstone", # 19th
-			"Benjamin Disraeli", # 19th
-			"Robert Gascoyne-Cecil Salisbury", # 19th
-			iModernEra,
-			"Thomas Edward Lawrence", # 20th
-			"fEmmeline Pankhurst", # 20th
-			"Clement Atlee", # 20th
-			"fDiana Spencer", # 20th
-		],
-		iGreatGeneral : [
-			"William the Conqueror", # 11th
-			"Richard the Lionheart", # 12th
-			"Edward III", # 14th
-			"fMargaret of Anjou", # 15th
-			iRevolutionaryEra,
-			"Oliver Cromwell", # 17th
-			"John Churchill Marlborough", # 17th
-			"Jeffery Amherst", # 18th
-			"Horatio Nelson", # 18th
-			iIndustrialEra,
-			"John Jervis", # 18th
-			"Arthur Wellesley Wellington", # 19th
-			"Edmund Lyons", # 19th
-			iModernEra,
-			"Edmund Allenby", # 19th
-			"Hugh Dowding", # 20th
-			"Bernard Law Montgomery", # 20th
-			"William Slim", # 20th
-			"Harold Alexander", # 20th
-		],
-		iGreatSpy : [
-			"Francis Walsingham", # 16th
-			"Guy Fawkes", # 16th
-			"Robert Poley", # 16th
-			"fElizabeth Alkin", # 17th
-			u"John André", # 18th
-			"Edward Bancroft", # 18th
-			iIndustrialEra,
-			"William Wickham", # 19th
-			"William Melville", # 19th
-			"Mansfield Smith-Cumming", # 19th
-			iModernEra,
-			"Sidney Reilly", #, 20th
-			"fVera Atkins", #, 20th
-			"fLise de Baissac", # 20th
-			"fMelita Norwood", # 20th
-			"Ian Fleming", # 20th
-			"Kim Philby", # 20th
-		],
+		iGreatProphet : (
+			"John Winthrop",              # 17th – Puritan leader, founder of Massachusetts Bay Colony
+			"Cotton Mather",              # 17th–18th – influential Puritan minister and theologian
+			"Roger Williams",             # 17th – theologian, advocate of religious freedom, founded Providence
+			"Jonathan Edwards",           # 18th – Great Awakening preacher and philosopher
+			"George Whitefield",          # 18th – English evangelist, central to the Great Awakening
+		),
+		iGreatArtist : (
+			"John Smibert",               # 18th – early colonial portrait painter from Scotland
+			"John Singleton Copley",      # 18th – leading American colonial painter, loyalist in England
+			"William Byrd II",            # 18th – Virginia planter and writer, founder of Richmond
+			"fAnne Bradstreet",           # 17th – Puritan poet, first published writer in British America
+			"John Trumbull",              # 18th – painter of colonial and imperial subjects before independence
+		),
+		iGreatScientist : (
+			"John Winthrop the Younger",  # 17th – governor and early scientist/alchemist
+			"Benjamin Thompson",          # 18th – loyalist scientist (Count Rumford), pioneer in thermodynamics
+			"John Bartram",               # 18th – botanist, royal botanist for the American colonies
+			"Cadwallader Colden",         # 18th – scientist and colonial administrator, studied natural philosophy
+			"Alexander Garden",           # 18th – naturalist and physician in South Carolina
+		),
+		iGreatMerchant : (
+			"Peter Faneuil",              # 18th – wealthy Boston merchant and philanthropist
+			"Robert Livingston the Elder",# 17th–18th – New York merchant and land magnate
+			"Elihu Yale",                 # 17th–18th – Boston-born merchant and governor of Madras (namesake of Yale)
+			"Humphrey Morice",            # 18th – London merchant involved in colonial trade
+			"Henry Darnall",              # 17th – Maryland merchant and planter
+		),
+		iGreatEngineer : (
+			"John Harrison",              # 18th – horologist whose inventions aided colonial navigation
+			"Peter Harrison",             # 18th – architect of colonial public buildings, e.g., Newport and King’s Chapel
+			"Benjamin Henry Latrobe",     # 18th – British-born architect active in colonial America
+			"Robert Livingston",          # 18th – engineer and land developer in New York colonies
+			"William Strickland",         # 18th – architect of early colonial buildings
+		),
+		iGreatStatesman : (
+			"William Penn",               # 17th – founder of Pennsylvania, proponent of self-governance and tolerance
+			"John Rolfe",                 # 17th – Jamestown planter and tobacco pioneer
+			"Edmund Andros",              # 17th – royal governor, Dominion of New England
+			"Francis Nicholson",          # 17th–18th – colonial governor of multiple provinces
+			"Cadwallader Colden",         # 18th – scientist and acting governor of New York
+		),
+		iGreatGeneral : (
+			"John Smith",                 # 17th – soldier, explorer, leader of Jamestown Colony
+			"Miles Standish",             # 17th – military officer for Plymouth Colony
+			"Edward Braddock",            # 18th – British commander in North America during the French and Indian War
+			"James Wolfe",                # 18th – captured Quebec in the Seven Years’ War
+			"William Shirley",            # 18th – governor and commander-in-chief during French and Indian War
+		),
 	},
 	iFrance : {
-		iGreatProphet : [
-			u"Pierre Abélard", # 12th
-			u"Pierre Vaudès", # 12th
-			"Louis IX", # 13th
-			"fJeanne d'Arc", # 15th
-			iRevolutionaryEra,
-			"Jean Calvin", # 16th
-			"Vincent de Paul", # 17th
-			"fJeanne Mance", # 17th
-			"fMarguerite Bourgeoys", # 17th
-			u"Jacques-Bénigne Bossuet", # 17th
-			iIndustrialEra,
-			u"fThérèse de Lisieux", # 19th
-			"Auguste Comte", # 19th
-		],
-		iGreatArtist : [
-			u"Pérotin", # 12th
-			u"Chrétien de Troyes", # 12th
-			"fChristine de Pizan", # 15th
-			"Jean Fouquet", # 15th
-			iRevolutionaryEra,
-			u"François Rabelais", # 16th
-			"Charles Le Brun", # 17th
-			"Jean-Baptiste Lully", # 17th
-			"Jean Racine", # 17th
-			u"Molière", # 17th
-			"Antoine Watteau", # 18th
-			"Voltaire", # 18th
-			u"fÉlisabeth Vigée Le Brun", # 18th
-			iIndustrialEra,
-			u"Honoré de Balzac", # 19th
-			"Alexandre Dumas", # 19th
-			"Victor Hugo", # 19th
-			"fGeorge Sand", # 19th
-			"Charles Baudelaire", # 19th
-			"Auguste Rodin", # 19th
-			"Claude Monet", # 19th
-			"Claude Debussy", # 19th
-		],
-		iGreatScientist : [
-			"Gerbert d'Aurillac", # 10th
-			"Guy de Chauliac", # 14th
-			"Nicole Oresme", # 14th
-			iRevolutionaryEra,
-			"Marin Mersenne", # 17th
-			u"René Descartes", # 17th
-			"Pierre de Fermat", # 17th
-			"Blaise Pascal", # 17th
-			"Antoine Lavoisier", # 18th
-			u"fÉmilie du Châtelet", # 18th
-			iIndustrialEra,
-			"Pierre-Simon Laplace", # 18th
-			"Georges Cuvier", # 19th
-			"Louis Pasteur", # 19th
-			"fMarie-Sophie Germain", # 19th
-			"fMarie Curie", # 19th
-			"Antoine Henri Becquerel", # 19th
-		],
-		iGreatMerchant : [
-			u"Éloi de Noyon", # 7th
-			u"fJeanne la Fouacière", # 13th
-			iRevolutionaryEra,
-			"Jacques Cartier", # 16th
-			"Samuel de Champlain", # 17th
-			"Pierre Le Moyne d'Iberville", # 17th
-			"Antoine de Lamothe-Cadillac", # 18th
-			u"fThérèse de Couagne", # 18th
-			iIndustrialEra,
-			u"Frédéric Bastiat", # 19th
-			"Ferdinand de Lesseps", # 19th
-			"Louis Vuitton", # 19th
-		],
-		iGreatEngineer : [
-			"Suger", # 12th
-			"Villard de Honnecourt", # 13th
-			"Pierre de Montreuil", # 13th
-			iRevolutionaryEra,
-			u"Sébastien Le Prestre de Vauban", # 17th
-			"Jules Hardouin-Mansart", # 17th
-			"Claude Perrault", # 17th
-			"Charles-Augustin Coulomb", # 18th
-			"Joseph-Michel Montgolfier", # 18th
-			iIndustrialEra,
-			"Joseph Marie Jacquard", # 18th
-			"Sadi Carnot", # 19th
-			"Louis Daguerre", # 19th
-			"Norbert Rillieux", # 19th
-			"Alexandre Gustave Eiffel", # 19th
-		],
-		iGreatStatesman : [
-			u"fAliénor d'Aquitaine", # 12th
-			"Philippe de Beaumanoir", # 13th
-			iRevolutionaryEra,
-			"Jean Bodin", # 16th
-			"Armand Jean du Plessis de Richelieu", # 17th
-			"Jean-Baptiste Colbert", # 17th
-			u"fAnne-Marie-Louise d'Orléans", # 17th
-			u"Charles-Maurice de Talleyrand-Périgord", # 18th
-			"Montesquieu", # 18th
-			"Maximilien Robespierre", # 18th
-			iIndustrialEra,
-			"Adolphe Thiers", # 19th
-			"Alexis de Tocqueville", # 19th
-			"Pierre-Joseph Proudhon", # 19th
-		],
-		iGreatGeneral : [
-			"Charles Martel", # 8th
-			"Godefroy de Bouillon", # 11th
-			"fJeanne de Flandre", # 14th
-			"Charles V", # 14th
-			"fJeanne d'Arc", # 15th
-			iRevolutionaryEra,
-			u"Louis de Bourbon-Condé", # 17th
-			"Turenne", # 17th
-			"Maurice de Saxe", # 18th
-			"Louis-Joseph de Montcalm", # 18th
-			u"Louis-René de Latouche-Tréville", # 18th
-			iIndustrialEra,
-			u"André Masséna", # 18th
-			"Louis-Nicolas Davout", # 18th
-			"Joachim Murat", # 18th
-			"Louis-Alexandre Berthier", # 19th
-			"Gilbert de Lafayette", # 19th
-			"Patrice de MacMahon", # 19th
-		],
-		iGreatSpy : [
-			u"Bertrandon de la Broquière", # 15th
-			"fAntoinette de Maignelais", # 15th
-			iRevolutionaryEra,
-			"fCharlotte de Sauve", # 16th
-			u"fMarie Anne de La Trémoille", # 17th
-			"fCharlotte Corday", # 18th
-			"Pierre Beaumarchais", # 18th
-			u"Chevalier d'Éon", # 18th
-			iIndustrialEra,
-			"fMichelle de Bonneuil", # 19th
-			"Charles Schulmeister", # 19th
-		],
+		iGreatProphet : (
+			"Paul Le Jeune",              # 17th – Jesuit missionary, early chronicler of New France
+			"Jean de Brébeuf",            # 17th – Jesuit missionary, martyr among the Huron
+			"fMarie de l’Incarnation",    # 17th – Ursuline nun, founder of the first girls’ school in New France
+			"François de Laval",          # 17th – first bishop of Quebec, organized the colonial church
+			"Antoine Daniel",             # 17th – Jesuit missionary, early convert educator
+		),
+		iGreatArtist : (
+			"Pierre Le Moyne d’Iberville",# 17th – explorer and writer, founder of Louisiana settlements
+			"Claude François",            # 18th – painter and map illustrator in New France
+			"fÉlisabeth Bégon",           # 18th – letter writer offering vivid accounts of colonial life
+			"fMarie-Catherine d’Aulnoy",  # 17th – author of travel-inspired stories about the New World
+			"fJeanne Le Ber",             # 17th – Montreal recluse and patron of religious art
+		),
+		iGreatScientist : (
+			"Pierre Gaultier de Varennes et de La Vérendrye", # 18th – explorer and cartographer of western Canada
+			"Michel Sarrazin",            # 17th–18th – physician and naturalist, described Canadian flora and fauna
+			"Charles-Marie de La Condamine", # 18th – explorer and geodesist, studied the Amazon and equator
+			"Louis Nicolas",              # 17th – missionary-naturalist, compiled early Canadian fauna illustrations
+			"Joseph-François Lafitau",    # 18th – Jesuit ethnographer, described Iroquois society
+		),
+		iGreatMerchant : (
+			"Samuel de Champlain",        # 17th – founder of Quebec, geographer, and fur trade organizer
+			"Charles Aubert de La Chesnaye", # 17th – leading fur trader and entrepreneur in New France
+			"René Auguste Chouteau",      # 18th – co-founder of St. Louis, trader in Louisiana
+			"fBarbe Céléron",             # 18th – businesswoman in Montreal’s fur trade networks
+			"Jean Talon",                 # 17th – intendant of New France, promoted commerce and population growth
+		),
+		iGreatEngineer : (
+			"Sébastien Le Prestre de Vauban", # 17th – France’s chief engineer, whose fortification models influenced Quebec
+			"Gaspard-Joseph Chaussegros de Léry", # 18th – chief engineer of New France, designed Quebec fortifications
+			"Louis de Buade de Frontenac",  # 17th – governor and builder of defensive works
+			"François de Chenneville",      # 18th – engineer for Montreal’s early defenses
+			"fMarguerite d’Youville",       # 18th – founder of Grey Nuns, improved colonial hospitals and social works
+		),
+		iGreatStatesman : (
+			"Jean Talon",                  # 17th – first intendant, established industry and census
+			"Louis de Buade de Frontenac", # 17th – governor and defender of New France
+			"Pierre de Rigaud de Vaudreuil", # 18th – last governor of New France
+			"Charles de la Boische de Beauharnois", # 18th – long-serving governor, supported exploration
+			"Roland-Michel Barrin de La Galissonière", # 18th – naval officer, acted as governor of New France
+		),
+		iGreatGeneral : (
+			"Charles de Montmagny",        # 17th – first governor of New France, established fortifications
+			"Louis-Joseph de Montcalm",    # 18th – commander at Quebec during Seven Years’ War
+			"Pierre Le Moyne d’Iberville", # 17th – naval officer, founder of Louisiana settlements
+			"Jean-Baptiste Le Moyne de Bienville", # 18th – co-founder and governor of New Orleans
+			"Daniel de Rémy de Courcelle",  # 17th – governor and military leader against Iroquois
+		),
 	},
 	iNetherlands : {
-		iGreatProphet : [
-			"Geert Grote", # 14th
-			iRevolutionaryEra,
-			"Desiderius Erasmus", # 16th
-			"Menno Simons", # 16th
-			"Jakob Hermanszoon", # 16th
-			"Baruch Spinoza", # 17th
-			iIndustrialEra,
-			"Abraham Kuyper", # 19th
-			iModernEra,
-			"fAlida Bosshardt", # 20th
-		],
-		iGreatArtist : [
-			"Hendrick de Keyser", # 16th
-			"Rembrandt van Rijn", # 17th
-			"Johannes Vermeer", # 17th
-			"Pieter Corneliszoon Hooft", # 17th
-			"fTitia Bergsma", # 18th
-			iIndustrialEra,
-			"Multatuli", # 19th
-			"Vincent van Gogh", # 19th
-			iModernEra,
-			"Piet Mondrian", # 20th
-			"Maurits Cornelis Escher", # 20th
-			"fAnna Maria Geertruida Schmidt", # 20th
-		],
-		iGreatScientist : [
-			"Willebrord Snel van Royen", # 16th
-			"Christiaan Huygens", # 17th
-			"Antonie van Leeuwenhoek", # 17th
-			"Govert Bidloo", # 17th
-			"fAnna Maria van Schurman", # 18th
-			iIndustrialEra, 
-			"Johannes Diderik van der Waals", # 19th
-			"Hendrik Antoon Lorentz", # 19th
-			iModernEra,
-			"Jan Hendrik Oort", # 20th
-			"Gerrit Pieter Kuiper", # 20th
-			"Edsger Wybe Dijkstra", # 20th
-			"Willem Johan Kolff", # 20th
-		],
-		iGreatMerchant : [
-			"Willem Barentsz", # 16th
-			"Cornelis de Houtman", # 16th
-			"fKenau Simonsdochter Hasselaer", # 16th
-			"Antony van Diemen", # 17th
-			"Abel Tasman", # 17th
-			"Pieter Stuyvesant", # 17th
-			"Jan van Riebeeck", # 17th
-			"Jan Coen", # 17th
-			iIndustrialEra,
-			"Clemens Brenninkmeijer", # 19th
-			"August Kessler", # 19th
-			iModernEra,
-			"Jan Tinbergen", # 20th
-			"Freddy Heineken", # 20th
-		],
-		iGreatEngineer : [
-			"Simon Stevin", # 16th
-			"Cornelis Corneliszoon", # 16th
-			"Hendrick de Keyser", # 16th
-			"Cornelis Drebbel", # 17th
-			"Jan Leeghwater", # 17th
-			"Menno van Coehoorn", # 17th
-			iIndustrialEra,
-			"Adolphe Sax", # 19th
-			"Cornelis Lely", # 19th
-			"Hendrik Petrus Berlage", # 19th
-			"Anthony Fokker", # 19th
-			iModernEra,
-			"Anton Philips", # 20th
-			"Gerrit Rietveld", # 20th
-		],
-		iGreatStatesman : [
-			"Desiderius Erasmus", # 16th
-			"Johan van Oldenbarnevelt", # 16th
-			"Johan de Witt", # 17th
-			"Adriaen van der Donck", # 17th
-			"Hugo Grotius", # 17th
-			"Cornelis de Graeff", # 17th
-			iIndustrialEra,
-			"Johan Thorbecke", # 19th
-			"fAletta Jacobs", # 19th
-			iModernEra,
-			"Willem Drees", # 20th
-		],
-		iGreatGeneral : [
-			"Maurits van Nassau", # 16th
-			"Piet Pieterszoon Hein", # 16th
-			"Michiel de Ruyter", # 17th
-			"Frederik Hendrik", # 17th
-			"Cornelis Tromp", # 17th
-			iIndustrialEra,
-			"Joannes Benedictus van Heutsz", # 19th
-			"Henri Winkelman", # 20th
-		],
-		iGreatSpy : [
-			"fSophie Harmansdochter", # 16th
-			"fEtta Palm d'Aelders", # 18th
-			iIndustrialEra,
-			"fJohanna Brandt", # 19th
-			"Christiaan Snouck Hurgronje", # 19th
-			iModernEra,
-			"fMata Hari", # 20th
-			"Dirk Klop", # 20th
-			u"François van 't Sant", # 20th
-		],
+		iGreatProphet : (
+			"Johannes Megapolensis",      # 17th – Reformed minister in New Netherland, mediator with Native peoples
+			"Franciscus Gomarus",         # 17th – theologian whose followers influenced colonial clergy
+			"fMaria Sibylla Merian",      # 17th–18th – naturalist and illustrator who studied Suriname’s insects
+			"Willem Usselincx",           # 17th – founder of the Dutch West India Company, Protestant visionary for colonization
+			"Abraham Calovius",           # 17th – theologian whose writings circulated in Dutch colonial missions
+		),
+		iGreatArtist : (
+			"Albert Eckhout",             # 17th – painter in Dutch Brazil, depicted local peoples and fauna
+			"Frans Post",                 # 17th – landscape painter of Dutch Brazil under Nassau-Siegen
+			"fRachel Ruysch",             # 17th–18th – still-life painter, works sent to colonies and trade patrons
+			"fMaria Schalcken",           # 17th – portraitist connected to merchant families with American ties
+			"Dirck Valkenburg",           # 17th – painted Suriname plantations and slave life
+		),
+		iGreatScientist : (
+			"Georg Marcgraf",             # 17th – astronomer and naturalist, surveyed Brazil under Nassau-Siegen
+			"Willem Piso",                # 17th – physician, co-author of *Historia Naturalis Brasiliae*
+			"Anton de Kom",               # 20th – Surinamese intellectual and ethnographer (non-revolutionary scholar)
+			"Nikolaas Laurens Burman",    # 18th – botanist studying Caribbean flora
+			"François Valentijn",         # 18th – chronicler and geographer of Dutch colonial regions
+		),
+		iGreatMerchant : (
+			"Peter Stuyvesant",           # 17th – last director-general of New Netherland, expanded trade and defenses
+			"Johannes de Laet",           # 17th – historian and director of Dutch West India Company
+			"fElisabeth Heijns",          # 17th – merchant widow active in West India Company trade
+			"Benjamin Cohen Henriques",   # 18th – Amsterdam merchant with Caribbean trade networks
+			"Cornelis Lampsins",          # 17th – Zeeland shipowner, colonial trader, governor of Tobago
+		),
+		iGreatEngineer : (
+			"Johan Maurits van Nassau-Siegen", # 17th – governor of Dutch Brazil, built Recife’s fortifications
+			"Hendrick van Reede tot Drakenstein", # 17th – colonial official and engineer-naturalist
+			"Dirck Corneliszoon Rijk",     # 17th – naval architect for colonial fleets
+			"Jacob Binckes",               # 17th – naval officer, rebuilt forts in Suriname and Tobago
+			"fElisabeth Samson",           # 18th – wealthy free woman of color in Suriname, funded civic projects
+		),
+		iGreatStatesman : (
+			"Willem Usselincx",            # 17th – founder and theorist of Dutch West India Company
+			"Johan Maurits van Nassau-Siegen", # 17th – governor of Dutch Brazil, enlightened administrator
+			"Laurens Reael",               # 17th – governor of Dutch possessions, advocated fair treatment of natives
+			"Cornelis van Aerssen van Sommelsdijck", # 17th – governor of Suriname, reorganized colony
+			"Isaac Lamoureux",             # 17th – merchant-politician in New Netherland’s council
+		),
+		iGreatGeneral : (
+			"Piet Pieterszoon Hein",       # 17th – naval commander, captured Spanish treasure fleet in Caribbean
+			"Adriaen Banckert",            # 17th – admiral active in West Indies campaigns
+			"Johan Maurits van Nassau-Siegen", # 17th – also served as military commander in Dutch Brazil
+			"Michiel de Ruyter",           # 17th – admiral, fought in Caribbean and North American waters
+			"Hendrick Lonck",              # 17th – captured Salvador, Brazil from the Portuguese
+		),
 	},
 	iAmerica : {
-		iGreatProphet : [
+		iGreatProphet : (
 			"Joseph Smith", # 19th
 			"fMary Baker Eddy", # 19th
 			"fEllen G. White", # 19th
@@ -872,8 +536,8 @@ dGreatPeople = {
 			"L. Ron Hubbard", # 20th
 			"Billy Graham", # 20th
 			"Malcolm Little", # 20th
-		],
-		iGreatArtist : [
+		),
+		iGreatArtist : (
 			"Edgar Allan Poe", # 19th
 			"Mark Twain", # 19th
 			"fEmily Dickinson", # 19th
@@ -888,8 +552,8 @@ dGreatPeople = {
 			"Andy Warhol", # 20th
 			"Miles Davis", # 20th
 			"Jimi Hendrix", # 20th
-		],
-		iGreatScientist : [
+		),
+		iGreatScientist : (
 			"Benjamin Franklin", # 18th
 			"fNettie Stevens", # 19th
 			iModernEra,
@@ -901,8 +565,8 @@ dGreatPeople = {
 			"Richard Feynman", # 20th
 			"fBarbara McClintock", # 20th
 			"fGrace Hopper", # 20th
-		],
-		iGreatMerchant : [
+		),
+		iGreatMerchant : (
 			"Stephen Girard", # 18th
 			"Nathaniel Bowditch", # 18th
 			iIndustrialEra,
@@ -921,8 +585,8 @@ dGreatPeople = {
 			"Thomas Watson", # 20th
 			"Sam Walton", # 20th
 			"Bill Gates", # 20th
-		],
-		iGreatEngineer : [
+		),
+		iGreatEngineer : (
 			"Samuel Morse", # 19th
 			"Charles Goodyear", # 19th
 			"Thomas Edison", # 19th
@@ -938,8 +602,8 @@ dGreatPeople = {
 			"fMargaret Hutchinson Rousseau", # 20th
 			"fHedy Lamarr", # 20th
 			"Frank Gehry", # 20th
-		],
-		iGreatStatesman : [
+		),
+		iGreatStatesman : (
 			"Thomas Paine", # 18th
 			"Thomas Jefferson", # 18th
 			"Benjamin Franklin", # 18th
@@ -955,8 +619,8 @@ dGreatPeople = {
 			"George Kennan", # 20th
 			"Martin Luther King", # 20th
 			"Henry Kissinger", # 20th
-		],
-		iGreatGeneral : [
+		),
+		iGreatGeneral : (
 			"Winfield Scott", # 19th
 			"Ulysses S. Grant", # 19th
 			"Robert E. Lee", # 19th
@@ -967,8 +631,8 @@ dGreatPeople = {
 			"Douglas MacArthur", # 20th
 			"Matthew Ridgway", # 20th
 			"Norman Schwarzkopf", # 20th
-		],
-		iGreatSpy : [
+		),
+		iGreatSpy : (
 			"Benjamin Tallmadge", # 18th
 			"Allan Pinkerton", # 19th
 			"fBelle Boyd", # 19th
@@ -979,10 +643,10 @@ dGreatPeople = {
 			"James Jesus Angleton", # 20th
 			"fVirginia Hall", # 20th
 			"fElizabeth Friedman", # 20th
-		],
+		),
 	},
 	iMexico : {
-		iGreatProphet : [
+		iGreatProphet : (
 			"Juan Diego", # 16th
 			"Francisco Javier Clavijero", # 18th
 			u"Cristóbal Magallanes Jara", # 19th
@@ -991,8 +655,8 @@ dGreatPeople = {
 			"Miguel Pro", # 20th
 			"Samuel Ruiz", # 20th
 			u"Javier Lozano Barragán", # 20th
-		],
-		iGreatArtist : [
+		),
+		iGreatArtist : (
 			u"fÁngela Peralta", # 19th
 			iModernEra,
 			u"José Clemente Orozco", # 20th
@@ -1004,8 +668,8 @@ dGreatPeople = {
 			"Pedro Infante", # 20th
 			"Carlos Fuentes", # 20th
 			u"Vicente Fernández", # 20th
-		],
-		iGreatScientist : [
+		),
+		iGreatScientist : (
 			"Gabino Barreda", # 19th
 			u"Lucas Alamán", # 19th
 			iModernEra,
@@ -1013,24 +677,24 @@ dGreatPeople = {
 			"Ricardo Miledi", # 20th
 			u"Mario José Molina", # 20th
 			"Rodolfo Neri Vela", # 20th
-		],
-		iGreatMerchant : [
+		),
+		iGreatMerchant : (
 			u"Víctor Urquidi", # 20th
 			u"Jerónimo Arango", # 20th
 			"Carlos Slim", # 20th
 			"Everardo Elizondo", # 20th
 			u"Alberto Baillères", # 20th
 			u"Emilio Azcárraga Jean", # 20th
-		],
-		iGreatEngineer : [
+		),
+		iGreatEngineer : (
 			u"José Villagrán García", # 20th
 			u"Luis Barragán", # 20th
 			"Juan O'Gorman", # 20th
 			"Mario Pani", # 20th
 			u"Pedro Ramírez Vázquez", # 20th
 			"Bernardo Quintana Arrioja", # 20th
-		],
-		iGreatStatesman : [
+		),
+		iGreatStatesman : (
 			u"José María Pino Suárez", # 19th
 			"Pascual Orozco", # 19th
 			iModernEra,
@@ -1040,28 +704,28 @@ dGreatPeople = {
 			"fRosario Castellanos", # 20th
 			u"Alfonso García Robles", # 20th
 			u"Gilberto Bosques Saldívar", # 20th
-		],
-		iGreatGeneral : [
+		),
+		iGreatGeneral : (
 			"Miguel Hidalgo", # 18th
 			u"Agustín de Iturbide", # 19th
 			u"fJosefa Ortiz de Domínguez", # 19th
 			u"Porfirio Díaz", # 19th
 			"Pancho Villa", # 19th
 			"Emiliano Zapata Salazar", # 19th
-		],
-		iGreatSpy : [
+		),
+		iGreatSpy : (
 			"fMargarita Ortega", # 19th
-		],
+		),
 	},
 	iArgentina : {
-		iGreatProphet : [
+		iGreatProphet : (
 			"Gauchito Gil", # 19th
 			iModernEra,
 			"Enrique Angelelli", # 20th
 			"Carlos Mugica", # 20th
 			"Jorge Mario Bergoglio", # 20th
-		],
-		iGreatArtist : [
+		),
+		iGreatArtist : (
 			u"José Hernández", # 19th
 			"fLola Mora", # 19th
 			iModernEra,
@@ -1072,16 +736,16 @@ dGreatPeople = {
 			"Daniel Barenboim", # 20th
 			u"Juan José Campanella", # 20th
 			"Gustavo Cerati", # 20th
-		],
-		iGreatScientist : [
+		),
+		iGreatScientist : (
 			"Francisco Moreno", # 19th
 			"Florentino Ameghino", # 19th
 			iModernEra,
 			"Luis Federico Leloir", # 20th
 			u"László Bíró", # 20th
 			u"René Favaloro", # 20th
-		],
-		iGreatMerchant : [
+		),
+		iGreatMerchant : (
 			"Juan Las Heras", # 19th
 			"Otto Bemberg", # 19th
 			"Ernesto Tornquist", # 19th
@@ -1091,8 +755,8 @@ dGreatPeople = {
 			"Jorge Wehbe", # 20th
 			"Aldo Ferrer", # 20th
 			"Antonio Cafiero", # 20th
-		],
-		iGreatEngineer : [
+		),
+		iGreatEngineer : (
 			"Luis Huergo", # 19th
 			"Jorge Newbery", # 19th
 			iModernEra,
@@ -1100,8 +764,8 @@ dGreatPeople = {
 			"Livio Dante Porta", # 20th
 			"Clorindo Testa", # 20th
 			u"César Pelli", # 20th
-		],
-		iGreatStatesman : [
+		),
+		iGreatStatesman : (
 			"Juan Manuel de Rosas", # 19th
 			"Domingo Faustino Sarmiento", # 19th
 			"Estanislao Zeballos", # 19th
@@ -1112,8 +776,8 @@ dGreatPeople = {
 			"Ernesto Guevara", # 20th
 			u"fIsabel Martínez de Perón", # 20th
 			"fEstela Barnes de Carlotto", # 20th
-		],
-		iGreatGeneral : [
+		),
+		iGreatGeneral : (
 			"Cornelio Saavedra", # 18th
 			"Manuel Belgrano", # 18th
 			u"Juan José Castelli", # 18th
@@ -1124,14 +788,14 @@ dGreatPeople = {
 			"Jorge Rafael Videla", # 20th
 			"Leopoldo Galtieri", # 20th
 			"Jorge Anaya", # 20th
-		],
-		iGreatSpy : [
+		),
+		iGreatSpy : (
 			"Emilio Eduardo Massera", # 20th
 			"Guillermo Gaede", # 20th
-		],
+		),
 	},
 	iColombia : {
-		iGreatProphet : [
+		iGreatProphet : (
 			"fLaura Montoya", # 20th
 			u"Félix Restrepo Mejía", # 20th
 			"Camilo Torres Restrepo", # 20th
@@ -1139,8 +803,8 @@ dGreatPeople = {
 			u"Julio Enrique Dávila", # 20th
 			u"fMaría Luisa Piraquive", # 20th
 			u"César Castellanos", # 20th
-		],
-		iGreatArtist : [
+		),
+		iGreatArtist : (
 			"Jorge Isaacs", # 19th
 			u"Andrés de Santa Maria", # 19th
 			iModernEra,
@@ -1151,56 +815,56 @@ dGreatPeople = {
 			"Rafael Orozco", # 20th
 			u"Rodrigo García", # 20th
 			"fShakira", # 20th
-		],
-		iGreatScientist : [
+		),
+		iGreatScientist : (
 			u"José Jéronimo Triana", # 19th
 			"Julio Garavito Armero", # 19th
 			iModernEra,
 			u"Rodolfo Llinás", # 20th
 			"Jorge Reynolds Pombo", # 20th
-		],
-		iGreatMerchant : [
+		),
+		iGreatMerchant : (
 			"James Martin Eder", # 19th
 			iModernEra,
 			"Julio Mario Santo Domingo", # 20th
 			u"Carlos Ardila Lülle", # 20th
 			"Luis Carlos Sarmiento Angulo", # 20th
 			"Pablo Escobar", # 20th
-		],
-		iGreatEngineer : [
+		),
+		iGreatEngineer : (
 			u"Carlos Albán", # 19th
 			iModernEra, 
 			u"Carlos Raúl Villanueva", # 20th
 			"Rogelio Salmona", # 20th
-		],
-		iGreatStatesman : [
+		),
+		iGreatStatesman : (
 			u"Tomás Cipriano de Mosquera", # 19th
 			u"Rafael Núñez", # 19th
 			iModernEra,
 			u"Jorge Eliécer Gaitán", # 20th
 			u"Nicolás Gómez Dávila", # 20th
 			u"Mario Lanserna Pinzón", # 20th
-		],
-		iGreatGeneral : [
+		),
+		iGreatGeneral : (
 			"fAntonia Santos", # 19th
 			u"Antonio Nariño", # 19th
 			"Francisco de Paula Santander", # 19th
-		],
-		iGreatSpy :  [
+		),
+		iGreatSpy : (
 			"fPolicarpa Salavarrieta", # 19th
 			u"fManuela Sáenz", # 19th
-		]
+		),
 	},
 	iBrazil : {
-		iGreatProphet : [
+		iGreatProphet : (
 			u"António Conselheiro", # 19th
 			iModernEra,
 			u"Hélder Câmara", # 20th
 			u"fIrmã Dulce Pontes", # 20th
 			"Chico Xavier", # 20th
 			"Edir Macedo", # 20th
-		],
-		iGreatArtist : [
+		),
+		iGreatArtist : (
 			"Aleijadinho", # 18th
 			u"António Carlos Gomes", # 19th
 			"Machado de Assis", # 19th
@@ -1209,8 +873,8 @@ dGreatPeople = {
 			"fCarmen Miranda", # 20th
 			"Tom Jobim", # 20th
 			"Romero Britto", # 20th
-		],
-		iGreatScientist : [
+		),
+		iGreatScientist : (
 			"Oswaldo Cruz", # 19th
 			"Carlos Chagas", # 19th
 			iModernEra,
@@ -1218,20 +882,20 @@ dGreatPeople = {
 			"Urbano Ernesto Stumpf", # 20th
 			u"Aziz Ab'Sáber", # 20th
 			"Marcelo Gleiser", # 20th
-		],
-		iGreatMerchant : [
+		),
+		iGreatMerchant : (
 			"Roberto Marinho", # 20th
 			"Jorge Lemann", # 20th
 			"Eike Batista", # 20th
-		],
-		iGreatEngineer : [
+		),
+		iGreatEngineer : (
 			u"André Rebouças", # 19th
 			iModernEra,
 			u"Cândido Rondon", # 20th
 			"Oscar Niemeyer", # 20th
 			"Norberto Odebrecht", # 20th
-		],
-		iGreatStatesman : [
+		),
+		iGreatStatesman : (
 			u"José Bonifácio de Andrada", # 18th
 			iIndustrialEra,
 			"Rodrigo Augusto da Silva", # 19th
@@ -1240,8 +904,8 @@ dGreatPeople = {
 			"Miguel Reale", # 19th
 			iModernEra,
 			"Roberto Mangabeira Unger", # 20th
-		],
-		iGreatGeneral : [
+		),
+		iGreatGeneral : (
 			u"Luís Alves de Lima e Silva", # 19th
 			"Joaquim Marques Lisboa", # 19th
 			u"fMaria Quitéria", # 19th
@@ -1249,10 +913,10 @@ dGreatPeople = {
 			u"João Baptista Mascarenhas de Morais", # 20th
 			"Eurico Gaspar Dutra", # 20th
 			"Artur da Costa e Silva", # 20th
-		],
+		),
 	},
 	iCanada : {
-		iGreatProphet : [
+		iGreatProphet : (
 			"Ignace Bourget", # 19th
 			u"André Bessette", # 20th
 			iModernEra,
@@ -1260,8 +924,8 @@ dGreatPeople = {
 			"George C. Pidgeon", # 20th
 			u"fRúhíyyih Khánum", # 20th
 			"Marshall McLuhan", # 20th
-		],
-		iGreatArtist : [
+		),
+		iGreatArtist : (
 			"Cornelius Krieghoff", # 19th
 			u"Calixa Lavallée", # 19th
 			"Tom Thomson", # 19th
@@ -1274,8 +938,8 @@ dGreatPeople = {
 			"Neil Young", # 20th
 			"fGabrielle Roy", # 20th
 			"fAlice Munro", # 20th
-		],
-		iGreatScientist : [
+		),
+		iGreatScientist : (
 			"John William Dawson", # 19th
 			"fMaude Abbott", # 19th
 			iModernEra,
@@ -1285,8 +949,8 @@ dGreatPeople = {
 			"Pierre Dansereau", # 20th
 			"fShirley Tilghman", # 20th
 			"David Suzuki", # 20th
-		],
-		iGreatMerchant : [
+		),
+		iGreatMerchant : (
 			"William McMaster", # 19th
 			"Timothy Eaton", # 19th
 			"Alphonse Desjardins", # 19th
@@ -1295,8 +959,8 @@ dGreatPeople = {
 			"Max Aitken", # 20th
 			"Ted Rogers", # 20th
 			u"Guy Laliberté", # 20th
-		],
-		iGreatEngineer : [
+		),
+		iGreatEngineer : (
 			"Sandford Fleming", # 19th
 			"William Cornelius Van Horne", # 19th
 			"Alexander Graham Bell", # 19th
@@ -1305,8 +969,8 @@ dGreatPeople = {
 			"Ernest Cormier", # 20th
 			"Joseph-Armand Bombardier", # 20th
 			"fElsie MacGill", # 20th
-		],
-		iGreatStatesman : [
+		),
+		iGreatStatesman : (
 			u"George-Étienne Cartier", # 19th
 			"Louis Riel", # 19th
 			"Henri Bourassa", # 19th
@@ -1317,18 +981,18 @@ dGreatPeople = {
 			"Tommy Douglas", # 20th
 			u"René Lévesque", # 20th
 			"fLouise Arbour", # 20th
-		],
-		iGreatGeneral : [
+		),
+		iGreatGeneral : (
 			"Arthur Currie", # 20th
 			"Andrew McNaughton", # 20th
 			"Billy Bishop", # 20th
 			u"Roméo Dallaire", # 20th
-		],
-		iGreatSpy : [
+		),
+		iGreatSpy : (
 			"William Stephenson", # 20th
 			"Guy D'Artois", # 20th
 			"Igor Gouzenko", # 20th
-		],
+		),
 	},
 }
 

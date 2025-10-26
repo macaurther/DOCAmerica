@@ -237,7 +237,7 @@ iFrance : 1608,
 iNetherlands : 1625,
 iHawaii : 1650,
 iRussia: 1743,
-iAmerica : 1775,
+iAmerica : -450,#1775,
 iHaiti : 1804,
 iArgentina : 1810,
 iMexico : 1810,
@@ -706,14 +706,14 @@ dCivGroupRegions = {
 # Revealed Tile Lists
 lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, \
                            rVeracruz, rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, \
-                           rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia] #rBaffinB, rLabradorS, rNorthAtlanticO, rGOfMexico, \
-                           #rCaribbeanS, rSouthAtlanticO, rAtlanticO]
+                           rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia, rBaffinB, rLabradorS, rNorthAtlanticO, rGOfMexico, 
+                           rCaribbeanS, rSouthAtlanticO, rAtlanticO]
 lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, \
                            rMaryland, rAppalachia, rCoastalPlain, rDeepSouth, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, \
                            rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rBahia, \
-                           rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia]
-                           #rArcticO, rBaffinB, rNorthwestPassage, rHudsonB, rLabradorS,	rNorthAtlanticO, rGOfMexico, rCaribbeanS, rSouthAtlanticO, rSouthPacificO, \
-						   #rNorthPacificO, rGOfCalifornia, rGOfAlaska, rBeringS]
+                           rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia, \
+                           rArcticO, rBaffinB, rNorthwestPassage, rHudsonB, rLabradorS,	rNorthAtlanticO, rGOfMexico, rCaribbeanS, rSouthAtlanticO, rSouthPacificO, \
+						   rNorthPacificO, rGOfCalifornia, rGOfAlaska, rBeringS, rAtlanticO, rPacificO]
 lEuropeanRevealed1850AD = lWest
 
 

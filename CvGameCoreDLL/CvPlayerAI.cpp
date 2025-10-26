@@ -1803,7 +1803,9 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	{
 		for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 		{
-			if (plotDirection(iX, iY, (DirectionTypes)iI)->isCity())
+			// MacAurther: Check if plot is NULL first
+			CvPlot* pAdjacentPlot = plotDirection(iX, iY, (DirectionTypes)iI);
+			if (pAdjacentPlot != NULL && pAdjacentPlot->isCity())
 			{
 				return 0;
 			}
