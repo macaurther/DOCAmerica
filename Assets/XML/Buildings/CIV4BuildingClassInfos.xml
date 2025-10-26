@@ -1347,15 +1347,6 @@
 			<DefaultBuilding>BUILDING_CHAPULTEPEC_CASTLE</DefaultBuilding>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_WEST_POINT</Type>
-			<Description>TXT_KEY_BUILDING_WEST_POINT</Description>
-			<iMaxGlobalInstances>1</iMaxGlobalInstances>
-			<iMaxTeamInstances>-1</iMaxTeamInstances>
-			<iMaxPlayerInstances>-1</iMaxPlayerInstances>
-			<iExtraPlayerInstances>0</iExtraPlayerInstances>
-			<DefaultBuilding>BUILDING_WEST_POINT</DefaultBuilding>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_FORT_MCHENRY</Type>
 			<Description>TXT_KEY_BUILDING_FORT_MCHENRY</Description>
 			<iMaxGlobalInstances>1</iMaxGlobalInstances>

@@ -4426,10 +4426,10 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 							{
 								FAssertMsg(item.m_iData >= 0, "item.m_iData is expected to be non-negative (invalid Index)");
 
-								if (GET_PLAYER(eWhoTo).canResearch(((TechTypes)item.m_iData), true) || (TechTypes)item.m_iData < NUM_NATIVE_TECHS) // MacAurther: Can always trade Native Techs
-								{
-									return true;
-								}
+								//if (GET_PLAYER(eWhoTo).canResearch(((TechTypes)item.m_iData), true)) // MacAurther: Don't need to be able to research a tech to trade it, to let natives get guns and such. let's see how this works out
+								//{
+								return true;
+								//}
 							}
 						}
 					}
@@ -5383,8 +5383,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		}
 	}
 
-	// MacAurther: Because every goody now comes with a Native Tech, disable this check so you can still receive a goody after researching all the native techs
-	/*if (GC.getGoodyInfo(eGoody).isTech())
+	if (GC.getGoodyInfo(eGoody).isTech())
 	{
 		bTechFound = false;
 
@@ -5392,11 +5391,12 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		{
 			if (GC.getTechInfo((TechTypes) iI).isGoodyTech())
 			{
-				if (canResearch((TechTypes)iI))
-				{
-					bTechFound = true;
-					break;
-				}
+				// MacAurther: You don't need to be able to research for goody techs in this mod! Huzzah
+				//if (canResearch((TechTypes)iI))
+				//{
+				bTechFound = true;
+				break;
+				//}
 			}
 		}
 
@@ -5404,7 +5404,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit) 
 		{
 			return false;
 		}
-	}*/
+	}
 
 	if (GC.getGoodyInfo(eGoody).isBad())
 	{
@@ -7850,10 +7850,13 @@ bool CvPlayer::canEverResearch(TechTypes eTech) const
 		}
 	}
 
-	// MacAurther: Native Techs cannot be researched, they have to be known from spawn, traded, or gifted
-	if (eTech < NUM_NATIVE_TECHS)
+	// MacAurther: Technologies can only be researched by those in its culture group if it has one
+	if (GC.getTechInfo(eTech).getCultureGroup() != NO_CULTURE_GROUP)
 	{
-		return false;
+		if (GC.getTechInfo(eTech).getCultureGroup() != GC.getCivilizationInfo(getCivilizationType()).getCultureGroup())
+		{
+			return false;
+		}
 	}
 
 	return true;
@@ -22915,9 +22918,18 @@ bool CvPlayer::canStealTech(PlayerTypes eTarget, TechTypes eTech) const
 {
 	if (GET_TEAM(GET_PLAYER(eTarget).getTeam()).isHasTech(eTech))
 	{
-		if (canResearch(eTech) || eTech < NUM_NATIVE_TECHS) // MacAurther: Can steal Native Techs
+		if (canResearch(eTech))
 		{
 			return true;
+		}
+
+		// MacAurther: Can steal tech from other culture groups so long as they can be traded; otherwise, you can't
+		if (GC.getTechInfo(eTech).getCultureGroup() != GC.getCivilizationInfo(getCivilizationType()).getCultureGroup())
+		{
+			if (GC.getTechInfo(eTech).isTrade())
+			{
+				return true;
+			}
 		}
 	}
 

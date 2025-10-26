@@ -4232,6 +4232,30 @@
 		<Italian>Local tribespeople have taken up arms against your aggression!</Italian>
 		<Spanish>Local tribespeople have taken up arms against your aggression!</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_NATIVE</Tag>
+		<English>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_ORANGE]Can only be used by Natives[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_COLONY</Tag>
+		<English>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_ORANGE]Can only be used by Colonies[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVIC_CULTURE_GROUP_NATION</Tag>
+		<English>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_ORANGE]Can only be used by Nations[COLOR_REVERT]</Spanish>
+	</TEXT>
 	
 	
 	<TEXT>

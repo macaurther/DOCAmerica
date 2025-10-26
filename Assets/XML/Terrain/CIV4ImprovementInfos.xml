@@ -2286,6 +2286,10 @@
 					<FeatureType>FEATURE_TAIGA</FeatureType>
 					<bMakesValid>1</bMakesValid>
 				</FeatureMakesValid>
+				<FeatureMakesValid>
+					<FeatureType>FEATURE_CANYON</FeatureType>
+					<bMakesValid>1</bMakesValid>
+				</FeatureMakesValid>
 			</FeatureMakesValids>
 			<BonusTypeStructs>
 				<BonusTypeStruct>

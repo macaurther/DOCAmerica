@@ -1249,6 +1249,7 @@ m_iHappiness(0),
 m_iFirstFreeTechs(0),
 m_iAssetValue(0),
 m_iPowerValue(0),
+m_iCultureGroup(NO_CULTURE_GROUP),
 m_iGridX(0),
 m_iGridY(0),
 m_bRepeat(false),
@@ -1374,6 +1375,11 @@ int CvTechInfo::getAssetValue() const
 int CvTechInfo::getPowerValue() const
 {
 	return m_iPowerValue;
+}
+
+int CvTechInfo::getCultureGroup() const
+{
+	return m_iCultureGroup;
 }
 
 int CvTechInfo::getGridX() const
@@ -1570,6 +1576,7 @@ void CvTechInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iFirstFreeTechs);
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_iPowerValue);
+	stream->Read(&m_iCultureGroup);
 	stream->Read(&m_bRepeat);
 	stream->Read(&m_bTrade);
 	stream->Read(&m_bDisable);
@@ -1644,6 +1651,7 @@ void CvTechInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iFirstFreeTechs);
 	stream->Write(m_iAssetValue);
 	stream->Write(m_iPowerValue);
+	stream->Write(m_iCultureGroup);
 	stream->Write(m_bRepeat);
 	stream->Write(m_bTrade);
 	stream->Write(m_bDisable);
@@ -1709,6 +1717,7 @@ bool CvTechInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iFirstFreeTechs, "iFirstFreeTechs");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
+	pXML->GetChildXmlValByName(&m_iCultureGroup, "iCultureGroup");
 	pXML->GetChildXmlValByName(&m_bRepeat, "bRepeat");
 	pXML->GetChildXmlValByName(&m_bTrade, "bTrade");
 	pXML->GetChildXmlValByName(&m_bDisable, "bDisable");
@@ -5782,7 +5791,7 @@ m_iStateReligionFreeExperience(0),
 m_iExpInBorderModifier(0),
 m_iLevelExperienceModifier(0), // Leoreth
 m_iVassalTradeModifier(0), // Leoreth
-m_iCivicCultureGroup(0), // FoB
+m_iCivicCultureGroup(NO_CULTURE_GROUP), // FoB
 m_iFoodProductionModifier(0), // Leoreth
 m_iCulturedCityFreeSpecialists(0), // Leoreth
 m_iCapitalBuildingProductionModifier(0), // Leoreth
@@ -10610,7 +10619,7 @@ m_iSelectionSoundScriptId(0),
 m_iActionSoundScriptId(0),
 m_iDerivativeCiv(NO_CIVILIZATION),
 m_iStartingYear(0), // Leoreth
-m_iCultureGroup(0), // FoB
+m_iCultureGroup(NO_CULTURE_GROUP), // FoB
 m_iPaganReligion(0), // Leoreth
 m_iImpact(0), // Leoreth
 m_bPlayable(false),

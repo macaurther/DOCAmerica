@@ -99,6 +99,37 @@
 		<Italian>Receive Immigrants from Africa</Italian>
 		<Spanish>Receive Immigrants from Africa</Spanish>
 	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALLOYS</Tag>
+		<English>Alloys</English>
+		<French>
+			<Text>Alliages</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Alloys</German>
+		<Italian>Alloys</Italian>
+		<Spanish>Alloys</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALLOYS_QUOTE</Tag>
+		<English>"It is entirely seemly for a young man killed in battle to lie mangled by the bronze spear. In his death all things appear fair."[PARAGRAPH:2]- Homer, The Iliad</English>
+		<French>"&#192; un jeune guerrier, tu&#233; par Ar&#232;s, d&#233;chir&#233; par le bronze ac&#233;r&#233;, il convient sans r&#233;serve de rester &#233;tendu. Jusque dans la mort, tout en lui reste beau."[PARAGRAPH:2]- Hom&#232;re, l'Iliade</French>
+		<German>"So mancher J&#252;ngling f&#228;llt in der Schlacht, zermalmt von bronzenem Speer. Im Tode so scheint sein Schicksal vollbracht."[PARAGRAPH:2]- Homer</German>
+		<Italian>"Per un giovane &#232; decoroso morire in battaglia trafitto da una lancia di bronzo. Nella morte, tutte le cose sembrano giuste."[PARAGRAPH:2]- Omero</Italian>
+		<Spanish>"Yacer en el suelo, habiendo sido atravesado en la lid por el agudo bronce, es decoroso para un joven, y cuanto de &#233;l pueda verse todo es bello, a pesar de la muerte."[PARAGRAPH:2]- Homero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ALLOYS_PEDIA</Tag>
+		<English>Evidence of the use of bronze, an alloy of copper and tin, dates back to Thailand in 4500 BC. Several hundred years later, bronze working was discovered in the Middle East. Artifacts from this period show that bronze was initially used for decorative purposes only. This is because tin was not readily available. It wasn't until approximately 2000 BC, when tin was regularly imported from neighboring regions, that bronze replaced copper in the construction of larger items. Bronze was harder and less brittle than copper, and it held a sharper edge. Tools, weapons, and armor made from bronze were also cheaper to produce and more durable. The period of time when bronze was the metal of choice for such items was known as the Bronze Age. The Bronze Age lasted until iron working became prevalent in approximately 1200 BC.</English>
+		<French>L'utilisation du bronze, un alliage de cuivre et d'&#233;tain, remonte au moins &#224; 4 500 av. J.-C., en Tha&#239;lande. Des si&#232;cles plus tard, le travail du bronze a &#233;t&#233; d&#233;couvert au Moyen-Orient. Les objets datant de cette p&#233;riode montrent que le bronze &#233;tait uniquement utilis&#233; &#224; l'origine dans un but d&#233;coratif. Il rempla&#231;ait l'&#233;tain, plus difficile &#224; obtenir. Ce n'est que vers 2 000 av. J.-C., quand l'&#233;tain a &#233;t&#233; r&#233;guli&#232;rement import&#233; des r&#233;gions voisines, que le bronze a remplac&#233; le cuivre dans la fabrication d'objets de plus grande taille. Le bronze &#233;tait plus solide et moins cassant que le cuivre et permettait de produire des lames plus tranchantes. Les outils, armes, et armures en bronze &#233;taient aussi moins chers &#224; produire et plus r&#233;sistants. La p&#233;riode au cours de laquelle le bronze a &#233;t&#233; le m&#233;tal privil&#233;gi&#233; pour ce genre d'objets est connue sous le nom de l'&#194;ge de Bronze, p&#233;riode qui a perdur&#233; jusqu'au d&#233;veloppement du travail de fer, vers 1200 av. J.-C.</French>
+		<German>Es wird vermutet, dass Bronze, eine Legierung aus Kupfer und Zinn, bereits im Jahre 4500 vor Christus in Thailand verwendet wurde. Mehrere Jahrhunderte sp&#228;ter wurde die Bronzeverarbeitung im Nahen Osten entdeckt. Kunstwerke dieser Periode zeigen, dass Bronze anfangs nur zu Dekorationszwecken genutzt wurde, weil Zinn schwer zu beschaffen war. Erst um etwa 2000 vor Christus wurde Zinn regelm&#228;&#223;ig von den benachbarten L&#228;ndern importiert. In der Folgezeit wurde das bis dahin verwendete Kupfer bei der Herstellung gr&#246;&#223;erer Objekte durch Bronze ersetzt, die h&#228;rter und weniger spr&#246;de war als Kupfer, so dass sich damit sch&#228;rfere Kanten formen lie&#223;en - dar&#252;ber hinaus waren Werkzeuge, Waffen und R&#252;stungen aus Bronze auch preiswerter und langlebiger. Die Zeit, in der Bronze das bevorzugte Metall f&#252;r die Fertigung dieser Ger&#228;te war, ist als Bronzezeitalter bekannt. Diese Periode dauerte bis etwa 1200 vor Christus, als das noch hochwertigere Eisen verf&#252;gbar wurde.</German>
+		<Italian>Le prime testimonianze sull'uso del bronzo, una lega di rame e stagno, risalgono alla Thailandia del 4500 a. C. Diversi secoli pi&#249; tardi, la lavorazione del bronzo venne scoperta nel Medio Oriente. Gli oggetti risalenti a questo periodo dimostrano che il bronzo veniva inizialmente utilizzato solo a scopo decorativo, questo perch&#233; lo stagno non era facilmente reperibile. Bisogner&#224; aspettare pi&#249; o meno il 2000 a. C. perch&#233;, con l'importazione regolare di stagno dalle regioni confinanti, il bronzo sostituisca il rame nella fabbricazione di oggetti pi&#249; grandi, offrendo anche una maggior resistenza rispetto al rame e la possibilit&#224; di produrre punte pi&#249; acuminate. Strumenti, armi e armature di bronzo erano anche meno costosi da realizzare e pi&#249; duraturi. Il periodo di tempo in cui si preferiva il bronzo per tali prodotti &#232; noto come l'Et&#224; del Bronzo, che dur&#242; fino al 1200 a. C. circa, quando fu soppiantato dalla lavorazione del ferro.</Italian>
+		<Spanish>Las primeras evidencias del uso del bronce, una aleaci&#243;n de cobre y esta&#241;o, se remontan al a&#241;o 4500 a. C. en Tailandia. Varios siglos despu&#233;s, se descubri&#243; la forja del bronce en Oriente Medio. Los artefactos de este periodo demuestran que inicialmente el bronce solo se usaba con fines decorativos, debido a que el esta&#241;o escaseaba. No fue hasta aproximadamente el a&#241;o 2000 a. C., con la importaci&#243;n regular de esta&#241;o de regiones vecinas, que el bronce sustituy&#243; al cobre en la fabricaci&#243;n de objetos grandes. El bronce era m&#225;s duro y menos quebradizo que el cobre, y se pod&#237;a afilar mejor. Las armas y armaduras hechas de bronce tambi&#233;n eran m&#225;s baratas de producir, y m&#225;s resistentes. El periodo que hizo del bronce el metal preferido para dichos objetos se conoce como Edad del Bronce, y dur&#243; hasta el triunfo de la forja del hierro, en torno al 1200 a. C.</Spanish>
+	</TEXT>
 
 
 
@@ -164,37 +195,6 @@
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
 		<Spanish>No Translation</Spanish>
-	</TEXT>
-	
-	
-	
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALLOYS</Tag>
-		<English>Alloys</English>
-		<French>
-			<Text>Alliages</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</French>
-		<German>Alloys</German>
-		<Italian>Alloys</Italian>
-		<Spanish>Alloys</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALLOYS_QUOTE</Tag>
-		<English>"It is entirely seemly for a young man killed in battle to lie mangled by the bronze spear. In his death all things appear fair."[PARAGRAPH:2]- Homer, The Iliad</English>
-		<French>"&#192; un jeune guerrier, tu&#233; par Ar&#232;s, d&#233;chir&#233; par le bronze ac&#233;r&#233;, il convient sans r&#233;serve de rester &#233;tendu. Jusque dans la mort, tout en lui reste beau."[PARAGRAPH:2]- Hom&#232;re, l'Iliade</French>
-		<German>"So mancher J&#252;ngling f&#228;llt in der Schlacht, zermalmt von bronzenem Speer. Im Tode so scheint sein Schicksal vollbracht."[PARAGRAPH:2]- Homer</German>
-		<Italian>"Per un giovane &#232; decoroso morire in battaglia trafitto da una lancia di bronzo. Nella morte, tutte le cose sembrano giuste."[PARAGRAPH:2]- Omero</Italian>
-		<Spanish>"Yacer en el suelo, habiendo sido atravesado en la lid por el agudo bronce, es decoroso para un joven, y cuanto de &#233;l pueda verse todo es bello, a pesar de la muerte."[PARAGRAPH:2]- Homero</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ALLOYS_PEDIA</Tag>
-		<English>Evidence of the use of bronze, an alloy of copper and tin, dates back to Thailand in 4500 BC. Several hundred years later, bronze working was discovered in the Middle East. Artifacts from this period show that bronze was initially used for decorative purposes only. This is because tin was not readily available. It wasn't until approximately 2000 BC, when tin was regularly imported from neighboring regions, that bronze replaced copper in the construction of larger items. Bronze was harder and less brittle than copper, and it held a sharper edge. Tools, weapons, and armor made from bronze were also cheaper to produce and more durable. The period of time when bronze was the metal of choice for such items was known as the Bronze Age. The Bronze Age lasted until iron working became prevalent in approximately 1200 BC.</English>
-		<French>L'utilisation du bronze, un alliage de cuivre et d'&#233;tain, remonte au moins &#224; 4 500 av. J.-C., en Tha&#239;lande. Des si&#232;cles plus tard, le travail du bronze a &#233;t&#233; d&#233;couvert au Moyen-Orient. Les objets datant de cette p&#233;riode montrent que le bronze &#233;tait uniquement utilis&#233; &#224; l'origine dans un but d&#233;coratif. Il rempla&#231;ait l'&#233;tain, plus difficile &#224; obtenir. Ce n'est que vers 2 000 av. J.-C., quand l'&#233;tain a &#233;t&#233; r&#233;guli&#232;rement import&#233; des r&#233;gions voisines, que le bronze a remplac&#233; le cuivre dans la fabrication d'objets de plus grande taille. Le bronze &#233;tait plus solide et moins cassant que le cuivre et permettait de produire des lames plus tranchantes. Les outils, armes, et armures en bronze &#233;taient aussi moins chers &#224; produire et plus r&#233;sistants. La p&#233;riode au cours de laquelle le bronze a &#233;t&#233; le m&#233;tal privil&#233;gi&#233; pour ce genre d'objets est connue sous le nom de l'&#194;ge de Bronze, p&#233;riode qui a perdur&#233; jusqu'au d&#233;veloppement du travail de fer, vers 1200 av. J.-C.</French>
-		<German>Es wird vermutet, dass Bronze, eine Legierung aus Kupfer und Zinn, bereits im Jahre 4500 vor Christus in Thailand verwendet wurde. Mehrere Jahrhunderte sp&#228;ter wurde die Bronzeverarbeitung im Nahen Osten entdeckt. Kunstwerke dieser Periode zeigen, dass Bronze anfangs nur zu Dekorationszwecken genutzt wurde, weil Zinn schwer zu beschaffen war. Erst um etwa 2000 vor Christus wurde Zinn regelm&#228;&#223;ig von den benachbarten L&#228;ndern importiert. In der Folgezeit wurde das bis dahin verwendete Kupfer bei der Herstellung gr&#246;&#223;erer Objekte durch Bronze ersetzt, die h&#228;rter und weniger spr&#246;de war als Kupfer, so dass sich damit sch&#228;rfere Kanten formen lie&#223;en - dar&#252;ber hinaus waren Werkzeuge, Waffen und R&#252;stungen aus Bronze auch preiswerter und langlebiger. Die Zeit, in der Bronze das bevorzugte Metall f&#252;r die Fertigung dieser Ger&#228;te war, ist als Bronzezeitalter bekannt. Diese Periode dauerte bis etwa 1200 vor Christus, als das noch hochwertigere Eisen verf&#252;gbar wurde.</German>
-		<Italian>Le prime testimonianze sull'uso del bronzo, una lega di rame e stagno, risalgono alla Thailandia del 4500 a. C. Diversi secoli pi&#249; tardi, la lavorazione del bronzo venne scoperta nel Medio Oriente. Gli oggetti risalenti a questo periodo dimostrano che il bronzo veniva inizialmente utilizzato solo a scopo decorativo, questo perch&#233; lo stagno non era facilmente reperibile. Bisogner&#224; aspettare pi&#249; o meno il 2000 a. C. perch&#233;, con l'importazione regolare di stagno dalle regioni confinanti, il bronzo sostituisca il rame nella fabbricazione di oggetti pi&#249; grandi, offrendo anche una maggior resistenza rispetto al rame e la possibilit&#224; di produrre punte pi&#249; acuminate. Strumenti, armi e armature di bronzo erano anche meno costosi da realizzare e pi&#249; duraturi. Il periodo di tempo in cui si preferiva il bronzo per tali prodotti &#232; noto come l'Et&#224; del Bronzo, che dur&#242; fino al 1200 a. C. circa, quando fu soppiantato dalla lavorazione del ferro.</Italian>
-		<Spanish>Las primeras evidencias del uso del bronce, una aleaci&#243;n de cobre y esta&#241;o, se remontan al a&#241;o 4500 a. C. en Tailandia. Varios siglos despu&#233;s, se descubri&#243; la forja del bronce en Oriente Medio. Los artefactos de este periodo demuestran que inicialmente el bronce solo se usaba con fines decorativos, debido a que el esta&#241;o escaseaba. No fue hasta aproximadamente el a&#241;o 2000 a. C., con la importaci&#243;n regular de esta&#241;o de regiones vecinas, que el bronce sustituy&#243; al cobre en la fabricaci&#243;n de objetos grandes. El bronce era m&#225;s duro y menos quebradizo que el cobre, y se pod&#237;a afilar mejor. Las armas y armaduras hechas de bronce tambi&#233;n eran m&#225;s baratas de producir, y m&#225;s resistentes. El periodo que hizo del bronce el metal preferido para dichos objetos se conoce como Edad del Bronce, y dur&#243; hasta el triunfo de la forja del hierro, en torno al 1200 a. C.</Spanish>
 	</TEXT>
 
 
@@ -344,6 +344,33 @@
 	
 	
 	<TEXT>
+		<Tag>TXT_KEY_TECH_AUTONOMY</Tag>
+		<English>Autonomy</English>
+		<French>Autonomy</French>
+		<German>Autonomy</German>
+		<Italian>Autonomy</Italian>
+		<Spanish>Autonomy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AUTONOMY_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_AUTONOMY_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
 		<Tag>TXT_KEY_TECH_AVIATION</Tag>
 		<English>Aviation</English>
 		<French>
@@ -436,33 +463,6 @@
 		<German>"Nicht die st&#228;rksten Spezies werden &#252;berleben, sondern jene, die sich Ver&#228;nderungen am besten anpassen k&#246;nnen."[PARAGRAPH:2]- Charles Darwin</German>
 		<Italian>"Non sopravvive la specie pi&#249; forte, ma quella pi&#249; adatta al cambiamento."[PARAGRAPH:2]- Charles Darwin</Italian>
 		<Spanish>"No sobrevive la especie m&#225;s fuerte, sino la m&#225;s adaptable al cambio."[PARAGRAPH:2]- Charles Darwin</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_BONDS</Tag>
-		<English>Bonds</English>
-		<French>Bonds</French>
-		<German>Bonds</German>
-		<Italian>Bonds</Italian>
-		<Spanish>Bonds</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_BONDS_QUOTE</Tag>
-		<English>"A government, to afford the needful protection and exercise proper care for the welfare of a great people, must be strong, energetic, and efficient."[PARAGRAPH:2]- Andrew Johnson</English>
-		<French>"A government, to afford the needful protection and exercise proper care for the welfare of a great people, must be strong, energetic, and efficient."[PARAGRAPH:2]- Andrew Johnson</French>
-		<German>"A government, to afford the needful protection and exercise proper care for the welfare of a great people, must be strong, energetic, and efficient."[PARAGRAPH:2]- Andrew Johnson</German>
-		<Italian>"A government, to afford the needful protection and exercise proper care for the welfare of a great people, must be strong, energetic, and efficient."[PARAGRAPH:2]- Andrew Johnson</Italian>
-		<Spanish>"A government, to afford the needful protection and exercise proper care for the welfare of a great people, must be strong, energetic, and efficient."[PARAGRAPH:2]- Andrew Johnson</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_BONDS_PEDIA</Tag>
-		<English>In finance, a bond is a type of security under which the issuer (debtor) owes the holder (creditor) a debt, and is obliged - depending on the terms - to provide cash flow to the creditor (e.g. repay the principal (i.e. amount borrowed) of the bond at the maturity date as well as interest (called the coupon) over a specified amount of time). The timing and the amount of cash flow provided varies, depending on the economic value that is emphasized upon, thus giving rise to different types of bonds. The interest is usually payable at fixed intervals: semiannual, annual, and less often at other periods. Thus, a bond is a form of loan or IOU. Bonds provide the borrower with external funds to finance long-term investments or, in the case of government bonds, to finance current expenditure.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -1004,27 +1004,54 @@
 		<Spanish>"Y en el pedestal se leen estas palabras: 'Mi nombre es Ozymandias, rey de reyes: &#161;Contemplad mis obras, poderosos, y perded la esperanza!' "[PARAGRAPH:2]- Percy Bysshe Shelley</Spanish>
 	</TEXT>
 	
-
-
+	
+	
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMMERCIALISM</Tag>
-		<English>Commercialism</English>
-		<French>Commercialism</French>
-		<German>Commercialism</German>
-		<Italian>Commercialism</Italian>
-		<Spanish>Commercialism</Spanish>
+		<Tag>TXT_KEY_TECH_CONTACT</Tag>
+		<English>Contact</English>
+		<French>Contact</French>
+		<German>Contact</German>
+		<Italian>Contact</Italian>
+		<Spanish>Contact</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMMERCIALISM_QUOTE</Tag>
-		<English>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</English>
-		<French>"Plus d'une chose insignifiante a pris de l'ampleur gr&#226;ce &#224; une bonne publicit&#233;."[PARAGRAPH:2]- Mark Twain</French>
-		<German>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</German>
-		<Italian>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</Italian>
-		<Spanish>"Many a small thing has been made large by the right kind of advertising."[PARAGRAPH:2]- Mark Twain</Spanish>
+		<Tag>TXT_KEY_TECH_CONTACT_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_COMMERCIALISM_PEDIA</Tag>
-		<English>Marketing is the practice of persuading people that an object, idea, or behavior is desirable (and worth paying for). Marketing has existed in some form since prehistoric times; one may speculate that the first marketing activities were invented within five minutes of the first invention of commerce.  The development of mass media such as broadcast radio, print journalism, and film made it possible to market on a larger scale. The rise of a working and middle class in developed societies with enough disposable income to buy luxury goods made it desirable to do so. The growth of modern industrial corporations that could produce goods in immense quantities made it necessary to do so.[PARAGRAPH:2]Common practices in modern marketing include direct personal approaches, flattery of the customer, praise of the product (intellectually honest or otherwise), and efforts to make the seller appear sympathetic and likeable to the prospective buyer. The main difference is that all these things are now transmitted from the individual advertiser to the mass of the population through new communications technology such as printing, broadcasts, or the Internet.[PARAGRAPH:2]The practice of marketing is often criticized for dishonesty, for misleading people into paying for that which is useless to them, for encouraging people to go into debt, and for discouraging people from thrift and from building up savings for the future. It is also criticized for the increasingly intrusive way in which, in the modern computerized era, marketers use "big data" to analyze individuals' purchasing habits and tailor advertisements to them. This is widely regarded as intrusive, and as having ominous implications for the individual's privacy and control over their own life in the future.</English>
+		<Tag>TXT_KEY_TECH_CONTACT_PEDIA</Tag>
+		<English>TODO</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CONTINUANCE</Tag>
+		<English>Continuance</English>
+		<French>Continuance</French>
+		<German>Continuance</German>
+		<Italian>Continuance</Italian>
+		<Spanish>Continuance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CONTINUANCE_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_CONTINUANCE_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1118,6 +1145,87 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_DIVINATION_PEDIA</Tag>
 		<English>People of the ancient world were fascinated and awed by the forces of nature surrounding them. Earthquakes, storms and other phenomena were generally regarded as signs from heaven. Individuals and groups arose to formulate explanations for these events, and pass the knowledge along to the tribe. The priests and priestesses of mysticism, often called oracles, claimed union with the divine through meditation and trance-like contemplation.[PARAGRAPH:2]Oracles across the world developed complex rites and rituals to appease and interact with gods and spirits. One of the most common forms of supernatural power invoked was divination - the ability to foretell the future using signs and portents such as dreams, the motions of the stars, the guts of sacrificial animals, the fracture lines in a tortoise's shell, visions experienced while under the influence of various drugs, and so on. Divination served the common human need to obtain information about the unknown future.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIVING</Tag>
+		<English>Diving</English>
+		<French>Diving</French>
+		<German>Diving</German>
+		<Italian>Diving</Italian>
+		<Spanish>Diving</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIVING_QUOTE</Tag>
+		<English>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</English>
+		<French>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</French>
+		<German>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</German>
+		<Italian>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</Italian>
+		<Spanish>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DIVING_PEDIA</Tag>
+		<English>In the tapestry of Pre-Columbian America, the practice of shallow fishing wove a vital thread in the fabric of daily life. Indigenous communities across the continent engaged in the art of extracting sustenance from rivers, lakes, and coastal waters, employing methods that reflected a profound understanding of aquatic ecosystems.[PARAGRAPH:2]In the lush waterways of Mesoamerica, civilizations like the Maya demonstrated a nuanced approach to shallow fishing. Nets and weirs, crafted from local materials, became extensions of human ingenuity, seamlessly integrated into the ebb and flow of rivers and wetlands. These fishing techniques were not mere survival strategies but rather a harmonious dance with the aquatic realm, sustaining communities and fostering a deep respect for the interconnectedness of life.[PARAGRAPH:2]On the expansive coastal stretches of North America, indigenous peoples honed their skills in shallow fishing. From the Aleutian Islands to the Gulf of Mexico, communities devised traps, hooks, and spears tailored to the diverse marine life that graced their shores. These coastal societies navigated the delicate balance between human sustenance and ecological preservation, understanding that the bounty of the sea was a gift that required thoughtful stewardship.[PARAGRAPH:2]In the heartland of the continent, where rivers carved through the landscape, Native American cultures embraced shallow fishing as a seasonal rhythm. Techniques like dip netting and fish weirs, ingeniously positioned in river currents, allowed for efficient catches while demonstrating an intimate knowledge of fish behavior and migratory patterns. The rivers, teeming with life, became both a source of nourishment and a sacred conduit linking earthly existence with spiritual realms.[PARAGRAPH:2]The history of shallow fishing in Pre-Columbian America is a tale of resourcefulness and symbiosis. It narrates the stories of communities who, attuned to the rhythms of nature, cast their nets upon the waters with a profound understanding that sustenance was not extracted from the environment but coaxed from a relationship built on reciprocity. In these ancient practices, the echoes of a sustainable coexistence with the natural world resonate across the ages.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DOCTRINE</Tag>
+		<English>Doctrine</English>
+		<French>Doctrine</French>
+		<German>Doctrine</German>
+		<Italian>Doctrine</Italian>
+		<Spanish>Doctrine</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DOCTRINE_QUOTE</Tag>
+		<English>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</English>
+		<French>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</French>
+		<German>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</German>
+		<Italian>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</Italian>
+		<Spanish>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DOCTRINE_PEDIA</Tag>
+		<English>After the initial wave of European imperialism and colonization in the Americas, there was a shift towards post-European imperialism in the 19th and 20th centuries. This period was marked by the expansion of United States' influence in the region, including the annexation of territories such as Hawaii and Puerto Rico, and the establishment of economic and political domination in countries like Cuba and Panama. The United States' Monroe Doctrine, first proclaimed in 1823, declared that any European attempt to extend their colonial control over any part of the Americas would be considered a hostile act against the United States. This policy helped to secure American influence in the region and prevent European expansion.[PARAGRAPH:2]In the late 19th and early 20th centuries, the United States' economic interests in the region led to interventions in various Latin American countries, including Mexico, Nicaragua, and Haiti. These interventions were often justified as efforts to promote stability and democracy, but in reality, they were often motivated by economic interests and a desire to maintain American control over the region. In the mid-20th century, the Cold War played a significant role in shaping American foreign policy towards the Americas. The United States supported anti-communist regimes and movements throughout the region, often at the expense of democracy and human rights. This led to a number of brutal dictatorships, such as those in Chile, Argentina, and Brazil, which were supported by the United States.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DUGOUTS</Tag>
+		<English>Dugouts</English>
+		<French>Dugouts</French>
+		<German>Dugouts</German>
+		<Italian>Dugouts</Italian>
+		<Spanish>Dugouts</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DUGOUTS_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_DUGOUTS_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -1374,37 +1482,6 @@
 		<German>"Perfektion ist nicht dann erreicht, wenn es nichts mehr hinzuzuf&#252;gen gibt, sondern wenn man nichts mehr weglassen kann."[PARAGRAPH:2]- Antoine de Saint-Exup&#233;ry</German>
 		<Italian>"Un progettista sa di aver raggiunto la perfezione non quando non c'&#232; pi&#249; niente da aggiungere, ma quando non c'&#232; pi&#249; nulla da eliminare."[PARAGRAPH:2]- Antoine de Saint-Exupry</Italian>
 		<Spanish>"Un dise&#241;ador sabe que ha alcanzado la perfecci&#243;n no cuando ya no tiene nada m&#225;s que a&#241;adir, sino cuando no le queda nada m&#225;s que quitar."[PARAGRAPH:2]- Antoine de Saint-Exup&#233;ry</Spanish>
-	</TEXT>
-	
-	
-	
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ETHICS</Tag>
-		<English>Ethics</English>
-		<French>
-			<Text>&#201;thique</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>Ethics</German>
-		<Italian>Ethics</Italian>
-		<Spanish>Ethics</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ETHICS_QUOTE</Tag>
-		<English>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</English>
-		<French>"Agis uniquement d'apr&#232;s la maxime qui fait que tu peux vouloir en m&#234;me temps qu'elle devienne une loi universelle."[PARAGRAPH:2]- Emmanuel Kant, Fondements de la m&#233;taphysique des m&#339;urs</French>
-		<German>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</German>
-		<Italian>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</Italian>
-		<Spanish>"Act only according to that maxim whereby you can, at the same time, will that it should become universal law."[PARAGRAPH:2]- Immanuel Kant, Groundwork of the Metaphysics of Morals</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_ETHICS_PEDIA</Tag>
-		<English>Ethics is the philosophical study which addresses moral questions - matters of right and wrong, virtue and vice, justice and injustice. This has preoccupied thinkers since ancient times, but formal discussion and contemplation of ethics as a logic-based endeavour, as distinct from traditions of religious or secular law, are mostly a product of the classical and medieval periods.[PARAGRAPH:2]Different cultures produce widely divergent schools of ethics, ranging from the law-oriented systems common in China to the relatively individualist virtue-ethical schools of the ancient Greeks. Ethics may be highly abstract or applied as a practical matter to questions of professional conduct and personal behavior. They may emphasize the intent of the moral actor, the fulfillment of certain laws and precepts, the consequences of the action itself, or any combination of the above.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -2149,33 +2226,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_IMPERIALISM</Tag>
-		<English>Imperialism</English>
-		<French>Imperialism</French>
-		<German>Imperialism</German>
-		<Italian>Imperialism</Italian>
-		<Spanish>Imperialism</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_IMPERIALISM_QUOTE</Tag>
-		<English>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</English>
-		<French>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</French>
-		<German>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</German>
-		<Italian>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</Italian>
-		<Spanish>"The American continents ... are henceforth not to be considered as subjects for future colonization by any European powers."[PARAGRAPH:2]- James Monroe</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_IMPERIALISM_PEDIA</Tag>
-		<English>After the initial wave of European imperialism and colonization in the Americas, there was a shift towards post-European imperialism in the 19th and 20th centuries. This period was marked by the expansion of United States' influence in the region, including the annexation of territories such as Hawaii and Puerto Rico, and the establishment of economic and political domination in countries like Cuba and Panama. The United States' Monroe Doctrine, first proclaimed in 1823, declared that any European attempt to extend their colonial control over any part of the Americas would be considered a hostile act against the United States. This policy helped to secure American influence in the region and prevent European expansion.[PARAGRAPH:2]In the late 19th and early 20th centuries, the United States' economic interests in the region led to interventions in various Latin American countries, including Mexico, Nicaragua, and Haiti. These interventions were often justified as efforts to promote stability and democracy, but in reality, they were often motivated by economic interests and a desire to maintain American control over the region. In the mid-20th century, the Cold War played a significant role in shaping American foreign policy towards the Americas. The United States supported anti-communist regimes and movements throughout the region, often at the expense of democracy and human rights. This led to a number of brutal dictatorships, such as those in Chile, Argentina, and Brazil, which were supported by the United States.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_INDEPENDENCE</Tag>
 		<English>Independence</English>
 		<French>Independence</French>
@@ -2376,24 +2426,24 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ORGANIZED_LABOR</Tag>
-		<English>Organized Labor</English>
-		<French>Organized Labor</French>
-		<German>Organized Labor</German>
-		<Italian>Organized Labor</Italian>
-		<Spanish>Organized Labor</Spanish>
+		<Tag>TXT_KEY_TECH_KNAPPING</Tag>
+		<English>Knapping</English>
+		<French>Knapping</French>
+		<German>Knapping</German>
+		<Italian>Knapping</Italian>
+		<Spanish>Knapping</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ORGANIZED_LABOR_QUOTE</Tag>
-		<English>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</English>
-		<French>"Que les ouvriers s'organisent, que les travailleurs s'assemblent ! Que leur voix cristallis&#233;e d&#233;nonce l'injustice et exige des privil&#232;ges ! Que chaque citoyen charitable les soutienne !"[PARAGRAPH:2]- John L. Lewis</French>
-		<German>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</German>
-		<Italian>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</Italian>
-		<Spanish>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</Spanish>
+		<Tag>TXT_KEY_TECH_KNAPPING_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_ORGANIZED_LABOR_PEDIA</Tag>
-		<English>Labour unions arose in the 18th and 19th century in response to the poor working conditions brought on by an intense competition for jobs, and the increasing dependence of the working class on their employers created by the move toward industrialization. Early labour unions, formed by skilled labourers in specific fields, met with opposition from both employers and the government. In the 19th century, laws were passed legalizing labour unions, and by the 20th century unions were formed in semi- or unskilled fields such as mining, transportation, and dock working. Binding their interests together and bargaining collectively, labour unions forced factory and business owners to provide better working conditions and economic status for their workers.</English>
+		<Tag>TXT_KEY_TECH_KNAPPING_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -2690,41 +2740,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_MEDICINE</Tag>
-		<English>Medicine</English>
-		<French>
-			<Text>M&#233;decine</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Medizin</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Medicina</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Medicina</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_MEDICINE_QUOTE</Tag>
-		<English>"As to diseases make a habit of two things - to help, or at least, to do no harm."[PARAGRAPH:2]- Hippocrates</English>
-		<French>"Il faut s'exercer, dans le domaine des maladies, &#224; deux choses : &#234;tre utile, sinon ne pas nuire."[PARAGRAPH:2]- Hippocrate</French>
-		<German>"Was Krankheiten betrifft, so hat man zwei M&#246;glichkeiten: zu heilen oder wenigstens nicht zu schaden."[PARAGRAPH:2]- Hippokrates</German>
-		<Italian>"Per debellare le malattie ci vogliono cose in grado di aiutare o, al massimo, non nuocere."[PARAGRAPH:2]- Ippocrate</Italian>
-		<Spanish>"En cuanto a las enfermedades, ten por costumbre dos cosas: ayudar o, al menos, no hacer m&#225;s da&#241;o."[PARAGRAPH:2]- Hip&#243;crates</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_METALLURGY</Tag>
 		<English>Metallurgy</English>
 		<French>
@@ -2813,6 +2828,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_MYTHOLOGY_PEDIA</Tag>
 		<English>Mythology refers variously to the collected myths of a group of people. Myths are the stories people tell to explain nature, history and customs. Myth is a feature of every culture. Many sources for myths have been proposed, ranging from personification of nature or personification of natural phenomena, to truthful or hyperbolic accounts of historical events to explanations of existing rituals. A culture's collective mythology helps convey belonging, shared and religious experiences, behavioral models and moral and practical lessons.[PARAGRAPH:2]One theory claims that myths are distorted accounts of historical events. According to this theory, storytellers repeatedly elaborate upon historical accounts until the figures in those accounts gain the status of gods. Other theories propose that myths began as allegories for natural phenomena: Apollo represents the sun, Poseidon represents water, and so on. According to another theory, myths began as allegories for philosophical or spiritual concepts: Athena represents wise judgment, Aphrodite desire, and so on. Some thinkers claimed that myths result from the personification of inanimate objects and forces. According to these thinkers, the ancients worshiped natural phenomena, such as fire and air, gradually deifying them. According to the myth-ritual theory, myth is tied to ritual. In its most extreme form, this theory claims myths arose to explain rituals.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MODERNIZATION</Tag>
+		<English>Modernization</English>
+		<French>Modernization</French>
+		<German>Modernization</German>
+		<Italian>Modernization</Italian>
+		<Spanish>Modernization</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MODERNIZATION_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_MODERNIZATION_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -3050,6 +3092,33 @@
 		<German>"We do not see the lens through which we look."[PARAGRAPH:2]- Ruth Benedict, Patterns of Culture</German>
 		<Italian>"We do not see the lens through which we look."[PARAGRAPH:2]- Ruth Benedict, Patterns of Culture</Italian>
 		<Spanish>"We do not see the lens through which we look."[PARAGRAPH:2]- Ruth Benedict, Patterns of Culture</Spanish>
+	</TEXT>
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORGANIZED_LABOR</Tag>
+		<English>Organized Labor</English>
+		<French>Organized Labor</French>
+		<German>Organized Labor</German>
+		<Italian>Organized Labor</Italian>
+		<Spanish>Organized Labor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORGANIZED_LABOR_QUOTE</Tag>
+		<English>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</English>
+		<French>"Que les ouvriers s'organisent, que les travailleurs s'assemblent ! Que leur voix cristallis&#233;e d&#233;nonce l'injustice et exige des privil&#232;ges ! Que chaque citoyen charitable les soutienne !"[PARAGRAPH:2]- John L. Lewis</French>
+		<German>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</German>
+		<Italian>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</Italian>
+		<Spanish>"Let the workers organize. Let the toilers assemble. Let their crystallized voice proclaim their injustices and demand their privileges. Let all thoughtful citizens sustain them."[PARAGRAPH:2]- John L. Lewis</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_ORGANIZED_LABOR_PEDIA</Tag>
+		<English>Labour unions arose in the 18th and 19th century in response to the poor working conditions brought on by an intense competition for jobs, and the increasing dependence of the working class on their employers created by the move toward industrialization. Early labour unions, formed by skilled labourers in specific fields, met with opposition from both employers and the government. In the 19th century, laws were passed legalizing labour unions, and by the 20th century unions were formed in semi- or unskilled fields such as mining, transportation, and dock working. Binding their interests together and bargaining collectively, labour unions forced factory and business owners to provide better working conditions and economic status for their workers.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -3466,33 +3535,6 @@
 		<Italian>"Nothing on this earth lasts forever. Except maybe plastic."[PARAGRAPH:2]- Patricia Dunn</Italian>
 		<Spanish>"Nothing on this earth lasts forever. Except maybe plastic."[PARAGRAPH:2]- Patricia Dunn</Spanish>
 	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TARIFFS</Tag>
-		<English>Tariffs</English>
-		<French>Tariffs</French>
-		<German>Tariffs</German>
-		<Italian>Tariffs</Italian>
-		<Spanish>Tariffs</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TARIFFS_QUOTE</Tag>
-		<English>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</English>
-		<French>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</French>
-		<German>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</German>
-		<Italian>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</Italian>
-		<Spanish>"The evils flowing from a disordered currency, and uncertain measures of value, are not of themselves of very long duration. Paper currency, depreciation, and excessive taxation, when those who suffer by them are not oppressed with a military occupation, or the fear of it, soon produce a correction either in the measures or the men who manage them."[PARAGRAPH:2]- Thomas Jefferson</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_TARIFFS_PEDIA</Tag>
-		<English>Protectionism in the Americas can be traced back to the colonial era when European powers imposed mercantilist policies on their colonies, prohibiting them from trading with other countries and limiting their economic opportunities. After achieving independence, many Latin American countries continued to follow protectionist policies as a means of building up their domestic industries and protecting them from foreign competition. In the United States, protectionism emerged as a political issue in the 19th century, with advocates calling for tariffs to protect American industries from foreign competition. This protectionist sentiment continued through the early 20th century, with the passage of the Smoot-Hawley Tariff Act in 1930, which raised tariffs on imported goods to record levels, contributing to the Great Depression.[PARAGRAPH:2]In the mid-20th century, however, a shift towards free trade began, with the signing of the General Agreement on Tariffs and Trade (GATT) in 1947, which aimed to reduce trade barriers between participating countries. The GATT was later replaced by the World Trade Organization (WTO) in 1995, which continues to promote free trade policies. Despite this shift towards free trade, protectionism remains a controversial issue in the Americas, with some advocating for increased protectionism to protect domestic industries and others pushing for greater free trade policies to promote economic growth and international cooperation.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
 	
 	
 	
@@ -3625,33 +3667,6 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_REGIMENTS</Tag>
-		<English>Regiments</English>
-		<French>Regiments</French>
-		<German>Regiments</German>
-		<Italian>Regiments</Italian>
-		<Spanish>Regiments</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_REGIMENTS_QUOTE</Tag>
-		<English>"The difficulty of forming and establishing regular troops is much greater than is generally conceived. It requires time, attention, and patience. And it is not every officer, let his merit be what it will, that can accomplish it."[PARAGRAPH:2]- George Washington</English>
-		<French>"The difficulty of forming and establishing regular troops is much greater than is generally conceived. It requires time, attention, and patience. And it is not every officer, let his merit be what it will, that can accomplish it."[PARAGRAPH:2]- George Washington</French>
-		<German>"The difficulty of forming and establishing regular troops is much greater than is generally conceived. It requires time, attention, and patience. And it is not every officer, let his merit be what it will, that can accomplish it."[PARAGRAPH:2]- George Washington</German>
-		<Italian>"The difficulty of forming and establishing regular troops is much greater than is generally conceived. It requires time, attention, and patience. And it is not every officer, let his merit be what it will, that can accomplish it."[PARAGRAPH:2]- George Washington</Italian>
-		<Spanish>"The difficulty of forming and establishing regular troops is much greater than is generally conceived. It requires time, attention, and patience. And it is not every officer, let his merit be what it will, that can accomplish it."[PARAGRAPH:2]- George Washington</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_REGIMENTS_PEDIA</Tag>
-		<English>The history of military regiments in the Americas is a complex and varied one, reflecting the different colonial powers and their respective military traditions. In the early years of colonization, the Spanish conquistadors often relied on local indigenous warriors to supplement their own forces. Similarly, the French colonial armies in North America worked closely with Native American tribes, forming alliances and recruiting indigenous fighters into their ranks. As the colonies grew and developed their own militaries, they began to establish organized regiments based on European models. The British, in particular, were known for their highly regimented military organization, which was based on a hierarchical system of officers and enlisted men. British colonial regiments were often made up of both British soldiers and colonial recruits, and were instrumental in many of the key battles of the colonial period, including the French and Indian War and the American Revolution.[PARAGRAPH:2]During the American Revolution, the Continental Army was established as a centralized military force for the fledgling United States. The army was organized into a series of regiments, each of which was made up of several companies. The regiments were commanded by colonels, who were responsible for overseeing the training and discipline of their troops. The Continental Army regiments played a key role in the defeat of the British, and their legacy can be seen in the organization of modern military units. After the Revolutionary War, the United States continued to expand and develop its military capabilities, with regiments playing an important role in the War of 1812, the Mexican-American War, and the Civil War. In each of these conflicts, regiments were organized along strict hierarchical lines, with officers commanding enlisted men, and strict discipline enforced to maintain order on the battlefield. In the modern era, the organization of military regiments in the Americas has continued to evolve, reflecting changes in military </English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
 		<Tag>TXT_KEY_TECH_REPLACEABLE_PARTS</Tag>
 		<English>Replaceable Parts</English>
 		<French>
@@ -3718,36 +3733,32 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SAILING</Tag>
-		<English>Sailing</English>
+		<Tag>TXT_KEY_TECH_RIDING</Tag>
+		<English>Riding</English>
 		<French>
-			<Text>Voile</Text>
+			<Text>&#201;quitation</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
-		<German>
-			<Text>Segeln</Text>
-			<Gender>Neuter</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Navigazione</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Navegaci&#243;n a vela</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
+		<German>Riding</German>
+		<Italian>Riding</Italian>
+		<Spanish>Riding</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_SAILING_QUOTE</Tag>
-		<English>"You cannot direct the wind, but you can adjust your sails."[PARAGRAPH:2]- Unknown</English>
-		<French>"On ne peut pas faire tourner le vent, mais on peut faire tourner ses voiles."[PARAGRAPH:2]- Inconnu</French>
-		<German>"Den Wind vermagst du nicht zu lenken, deine Segel wohl."[PARAGRAPH:2]- Unbekannt</German>
-		<Italian>"Non puoi cambiare la direzione del vento, ma puoi orientare le tue vele."[PARAGRAPH:2]- Rhye</Italian>
-		<Spanish>"No puedes dirigir el viento, pero puedes mover las velas de tu barco."[PARAGRAPH:2]- Proverbio chino</Spanish>
+		<Tag>TXT_KEY_TECH_RIDING_QUOTE</Tag>
+		<English>"If you speak the truth, have a foot in the stirrup."[PARAGRAPH:2]- Turkish proverb</English>
+		<French>"Si tu dis vrai, mets le pied &#224; l'&#233;trier."[PARAGRAPH:2]- Proverbe turc</French>
+		<German>"Wer die Wahrheit spricht, sollte besser einen Fu&#223; im Steigb&#252;gel haben."[PARAGRAPH:2]- Arabisches Sprichwort</German>
+		<Italian>"Se dici il vero, metti un piede nella staffa."[PARAGRAPH:2]- Proverbio Turco</Italian>
+		<Spanish>"Si dices la verdad, ya tienes un pie en el estribo."[PARAGRAPH:2]- Proverbio turco</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_RIDING_PEDIA</Tag>
+		<English>The horse was first domesticated for transportation and warfare by tribesmen on the Asian steppes. These tribesmen used their superior mobility and speed to overwhelm the proto-civilizations just rising in southeast Europe and the Middle East. In approximately 2000 BCE, domestic horses were introduced into Mesopotamia. Within the next several centuries, horses had spread throughout much of Europe and northern Africa. It was not long before nearly every civilization had put horses to work as field animals and as a means of transportation. Horses also went on to play an important role in the military conflicts of nearly every civilization in the world, both as mounts for horsemen and cavalry, and as draft animals for pulling war chariots and heavy weapons into battle.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
 	</TEXT>
 
 
@@ -3841,33 +3852,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_SEAFARING_PEDIA</Tag>
 		<English>Seafaring is the art of directing, maintaining, and preserving ships that travel across the ocean. The earliest human vessels such as rafts, small canoes, and reed boats would have been extremely unsafe on the open ocean. However, there is extensive evidence for the practice of seafaring stretching back to the Bronze Age, or the Neolithic in the case of Polynesian long-distance sailing canoes.[PARAGRAPH:2]In general, successful seafarers must make use of some source of power other than their own muscles (in the early days of navigation, a sail) to ensure they were not trapped by ocean currents. They must know how to construct reasonably sturdy craft that would resist ocean waves. They had to make use of a great knowledge of weather conditions to ensure the craft was not caught by a storm too powerful to be survived - which in premodern times weather could be predicted only by experience.[PARAGRAPH:2]All this represented a significant advance over the earliest Stone Age boats and their operations... and yet, all these things were necessary in order for coastal civilizations to make any serious use of maritime travel for trade or exploration.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SHALLOW_FISHING</Tag>
-		<English>Shallow Fishing</English>
-		<French>Shallow Fishing</French>
-		<German>Shallow Fishing</German>
-		<Italian>Shallow Fishing</Italian>
-		<Spanish>Shallow Fishing</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SHALLOW_FISHING_QUOTE</Tag>
-		<English>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</English>
-		<French>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</French>
-		<German>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</German>
-		<Italian>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</Italian>
-		<Spanish>"Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime."[PARAGRAPH:2]-Lao Tzu</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SHALLOW_FISHING_PEDIA</Tag>
-		<English>In the tapestry of Pre-Columbian America, the practice of shallow fishing wove a vital thread in the fabric of daily life. Indigenous communities across the continent engaged in the art of extracting sustenance from rivers, lakes, and coastal waters, employing methods that reflected a profound understanding of aquatic ecosystems.[PARAGRAPH:2]In the lush waterways of Mesoamerica, civilizations like the Maya demonstrated a nuanced approach to shallow fishing. Nets and weirs, crafted from local materials, became extensions of human ingenuity, seamlessly integrated into the ebb and flow of rivers and wetlands. These fishing techniques were not mere survival strategies but rather a harmonious dance with the aquatic realm, sustaining communities and fostering a deep respect for the interconnectedness of life.[PARAGRAPH:2]On the expansive coastal stretches of North America, indigenous peoples honed their skills in shallow fishing. From the Aleutian Islands to the Gulf of Mexico, communities devised traps, hooks, and spears tailored to the diverse marine life that graced their shores. These coastal societies navigated the delicate balance between human sustenance and ecological preservation, understanding that the bounty of the sea was a gift that required thoughtful stewardship.[PARAGRAPH:2]In the heartland of the continent, where rivers carved through the landscape, Native American cultures embraced shallow fishing as a seasonal rhythm. Techniques like dip netting and fish weirs, ingeniously positioned in river currents, allowed for efficient catches while demonstrating an intimate knowledge of fish behavior and migratory patterns. The rivers, teeming with life, became both a source of nourishment and a sacred conduit linking earthly existence with spiritual realms.[PARAGRAPH:2]The history of shallow fishing in Pre-Columbian America is a tale of resourcefulness and symbiosis. It narrates the stories of communities who, attuned to the rhythms of nature, cast their nets upon the waters with a profound understanding that sustenance was not extracted from the environment but coaxed from a relationship built on reciprocity. In these ancient practices, the echoes of a sustainable coexistence with the natural world resonate across the ages.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4063,33 +4047,6 @@
 		<Italian>Receive Immigrants from South Europe</Italian>
 		<Spanish>Receive Immigrants from South Europe</Spanish>
 	</TEXT>
-
-
-
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SPIRITUALISM</Tag>
-		<English>Spiritualism</English>
-		<French>Spiritualism</French>
-		<German>Spiritualism</German>
-		<Italian>Spiritualism</Italian>
-		<Spanish>Spiritualism</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SPIRITUALISM_QUOTE</Tag>
-		<English>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</English>
-		<French>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</French>
-		<German>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</German>
-		<Italian>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</Italian>
-		<Spanish>"True spiritualism is not a quest for answers but a search for the right questions, a journey that transcends the boundaries of the self and explores the boundless possibilities of the soul."[PARAGRAPH:2]-Deepak Chopra</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TECH_SPIRITUALISM_PEDIA</Tag>
-		<English>In the ancient civilizations of Pre-Columbian America, spirituality permeated every aspect of life. From the sophisticated rituals of the Maya to the complex pantheon of the Aztecs, and the reverence for nature among various Native American cultures, a profound connection to the spiritual realm shaped these societies.[PARAGRAPH:2]The Maya, dwelling in the dense jungles of Mesoamerica, conducted intricate ceremonies and rituals to honor a diverse array of deities. Their belief system incorporated ancestor veneration and a profound connection to the cosmos. Across the Valley of Mexico, the Aztecs engaged in elaborate religious practices, including human sacrifice, to appease their numerous gods. The cosmic order, intertwined with the calendar and celestial events, played a pivotal role in their spiritual beliefs. In the Andean region, the Inca civilization worshipped the sun god Inti. The Sapa Inca, their ruler, held a divine status as the son of Inti. Ancestor worship and mummification were integral aspects of Inca spirituality.[PARAGRAPH:2]Native American cultures, dispersed across the continent, shared a deep respect for nature and the spiritual significance of animals. Rituals, dances, and ceremonies were vital for maintaining harmony within the community and acknowledging spiritual forces. In the southeastern United States, the Mississippian culture constructed monumental earthen mounds for ceremonial purposes, underscoring the spiritual significance of the landscape. While the term "spiritualism" may not precisely capture the essence of these indigenous belief systems, the profound spiritual practices of Pre-Columbian America were interwoven into the fabric of daily life, influencing social structures, governance, and community cohesion.</English>
-		<French>No Translation</French>
-		<German>No Translation</German>
-		<Italian>No Translation</Italian>
-		<Spanish>No Translation</Spanish>
-	</TEXT>
 	
 	
 	
@@ -4178,6 +4135,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_TECH_STATECRAFT_PEDIA</Tag>
 		<English>Statecraft refers to the administration of the internal and external affairs of a state in a professionalised fashion. In the Middle Ages, states were usually administered by feudal rulers who attained their position through birthright, so their approach to administration was mostly guided by tradition and personal experience.[PARAGRAPH:2]The increasing centralisation and bureaucracy of the early modern state meant that rulers increasingly relied on government officials like governors and diplomats. The highest of these officials formed the cabinet or council of their monarch.[PARAGRAPH:2]Internally, this meant that the state was much more effective in accomplishing its goals, such as levying taxes, enforcing laws and raising armies. It also revolutionised international relations. States would transition to maintain ongoing diplomatic contacts and formalise their relationship through a series of treaties.</English>
+		<French>No Translation</French>
+		<German>No Translation</German>
+		<Italian>No Translation</Italian>
+		<Spanish>No Translation</Spanish>
+	</TEXT>
+	
+	
+	
+	<TEXT>
+		<Tag>TXT_KEY_TECH_STEWARDSHIP</Tag>
+		<English>Stewardship</English>
+		<French>Stewardship</French>
+		<German>Stewardship</German>
+		<Italian>Stewardship</Italian>
+		<Spanish>Stewardship</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_STEWARDSHIP_QUOTE</Tag>
+		<English>TODO</English>
+		<French>TODO</French>
+		<German>TODO</German>
+		<Italian>TODO</Italian>
+		<Spanish>TODO</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TECH_STEWARDSHIP_PEDIA</Tag>
+		<English>TODO</English>
 		<French>No Translation</French>
 		<German>No Translation</German>
 		<Italian>No Translation</Italian>
@@ -4419,15 +4403,15 @@
 
 
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TRADE</Tag>
-		<English>Trade</English>
-		<French>Trade</French>
-		<German>Trade</German>
-		<Italian>Trade</Italian>
-		<Spanish>Trade</Spanish>
+		<Tag>TXT_KEY_TECH_TRADE_ROUTES</Tag>
+		<English>Trade Routes</English>
+		<French>Trade Routes</French>
+		<German>Trade Routes</German>
+		<Italian>Trade Routes</Italian>
+		<Spanish>Trade Routes</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TRADE_QUOTE</Tag>
+		<Tag>TXT_KEY_TECH_TRADE_ROUTES_QUOTE</Tag>
 		<English>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</English>
 		<French>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</French>
 		<German>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</German>
@@ -4435,7 +4419,7 @@
 		<Spanish>"Trade is the silent dialogue between distant lands, where goods become ambassadors, forging connections, and cultures intertwine in the shared dance of commerce."[PARAGRAPH:2]-ChatGPT</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TECH_TRADE_PEDIA</Tag>
+		<Tag>TXT_KEY_TECH_TRADE_ROUTES_PEDIA</Tag>
 		<English>The history of trade in Pre-Columbian America is a rich tapestry woven by the diverse cultures that populated the continent long before the arrival of Europeans. These indigenous societies engaged in intricate networks of exchange, connecting distant regions and fostering economic, social, and cultural interactions.[PARAGRAPH:2]In Mesoamerica, the Aztec civilization established a vast and sophisticated trade network. The city of Tenochtitlan, situated in the middle of Lake Texcoco, became a bustling hub of commerce. The Aztecs traded a wide array of goods, including agricultural products, textiles, obsidian, and luxury items like cacao and feathers. The extensive road systems and waterways facilitated the flow of goods within the empire. The ancient Maya, located in present-day Mexico and Central America, were active participants in long-distance trade. They exchanged products such as jade, obsidian, and cacao with distant regions. Coastal trade routes connected the Maya to other Mesoamerican cultures, and overland trade routes reached as far as the highlands of present-day Guatemala and Honduras.[PARAGRAPH:2]In the American Southwest, the Ancestral Puebloans engaged in trade networks that spanned the region. They exchanged goods such as pottery, turquoise, and cotton with neighboring communities. The famous Chaco Canyon was a central trading hub, linking various Puebloan villages across the arid landscape. On the Pacific Coast, indigenous peoples such as the Chinook in the Northwest were skilled maritime traders. They navigated the coastal waters and rivers, exchanging goods like salmon, cedar, and shells. The intricate network of waterways facilitated trade among coastal and inland communities.[PARAGRAPH:2]In the Eastern Woodlands, extensive trade networks existed among Native American tribes. The Hopewell and Adena cultures engaged in long-distance trade, exchanging materials like copper, mica, and marine shells. These trade routes facilitated cultural exchange and the movement of ideas. Trade in Pre-Columbian America was not merely an economic activity but also a mechanism for cultural diffusion. It facilitated the exchange of ideas, technologies, and artistic influences, contributing to the rich tapestry of indigenous cultures. These trade networks underscore the complexity and sophistication of Pre-Columbian societies, dispelling the notion of a pristine, isolated existence before the arrival of Europeans.</English>
 		<French>No Translation</French>
 		<German>No Translation</German>

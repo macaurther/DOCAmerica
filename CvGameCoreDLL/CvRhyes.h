@@ -35,8 +35,6 @@ typedef list<char*> LISTCHAR;
 #define UNITCLASS_SLAVE			  ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_SLAVE"))						// MacAurther
 #define UNITCLASS_GREAT_STATESMAN ((UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_GREAT_STATESMAN"))			// MacAurther
 
-#define NUM_NATIVE_TECHS		  ((TechTypes)FISHING + 1)															// MacAurther
-
 #define ESPIONAGEMISSION_COUP	  ((EspionageMissionTypes)GC.getInfoTypeForString("ESPIONAGEMISSION_COUP"))			// MacAurther
 
 #define BUILD_ROAD				  ((BuildTypes)GC.getInfoTypeForString("BUILD_ROAD"))								// MacAurther
@@ -114,6 +112,7 @@ enum RegionGroup
 	NUM_REGION_GROUPS,
 };
 
+// FoB/MacAurther
 enum CultureGroups
 {
 	NO_CULTURE_GROUP = -1,

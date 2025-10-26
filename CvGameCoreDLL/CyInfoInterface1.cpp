@@ -71,6 +71,7 @@ void CyInfoPythonInterface1()
 		.def("getFirstFreeTechs", &CvTechInfo::getFirstFreeTechs, "int ()")
 		.def("getAssetValue", &CvTechInfo::getAssetValue, "int ()")
 		.def("getPowerValue", &CvTechInfo::getPowerValue, "int ()")
+		.def("getCultureGroup", &CvTechInfo::getCultureGroup, "int ()")	// MacAurther
 
 		.def("getGridX", &CvTechInfo::getGridX, "int ()")
 		.def("getGridY", &CvTechInfo::getGridY, "int ()")

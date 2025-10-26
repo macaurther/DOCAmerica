@@ -122,7 +122,7 @@ def giveAINativeTechs(iGameTurn):
 		for iPlayer in dCivGroups[iCivGroupEurope]:
 			for iTech in lNativeTechs:
 				if not team(iPlayer).isHasTech(iTech):
-					team(iPlayer).setHasTech(iTech, true, iPlayer, False, True)
+					team(iPlayer).setHasTech(iTech, True, iPlayer, False, True)
 
 
 @handler("cityAcquiredAndKept")

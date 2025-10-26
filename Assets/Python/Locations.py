@@ -26,6 +26,7 @@ tColonistNewNetherlands =((49, 79), (42, 83))
 tColonistSuriname = 	((52, 45), (47, 40))
 #  Russia
 tColonistAlaska = 		((4, 106), (12, 108))
+
 # Companies
 
 # Congresses

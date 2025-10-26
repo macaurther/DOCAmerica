@@ -509,7 +509,7 @@
 			<Help>TXT_KEY_PROMOTION_AMPHIBIOUS_HELP</Help>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT2</PromotionPrereqOr1>
-			<TechPrereq>TECH_SHALLOW_FISHING</TechPrereq>
+			<TechPrereq>TECH_DIVING</TechPrereq>
 			<bAmphib>1</bAmphib>
 			<bRiver>1</bRiver>
 			<UnitCombats>
@@ -647,7 +647,6 @@
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_COMBAT1</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_DRILL1</PromotionPrereqOr2>
-			<TechPrereq>TECH_HERBALISM</TechPrereq>
 			<iSameTileHealChange>10</iSameTileHealChange>
 			<UnitCombats>
 				<UnitCombat>
@@ -690,7 +689,7 @@
 			<Description>TXT_KEY_PROMOTION_MEDIC2</Description>
 			<Sound>AS2D_IF_LEVELUP</Sound>
 			<PromotionPrereqOr1>PROMOTION_MEDIC1</PromotionPrereqOr1>
-			<TechPrereq>TECH_MEDICINE</TechPrereq>
+			<TechPrereq>TECH_HERBALISM</TechPrereq>
 			<iAdjacentTileHealChange>10</iAdjacentTileHealChange>
 			<UnitCombats>
 				<UnitCombat>

@@ -918,30 +918,6 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Independence Hall[COLOR_REVERT] provides a free [COLOR_BUILDING_TEXT]Courthouse[COLOR_REVERT] in every city.</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_WEST_POINT</Tag>
-		<English>West Point</English>
-		<French>West Point</French>
-		<German>West Point</German>
-		<Italian>West Point</Italian>
-		<Spanish>West Point</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_WEST_POINT_STRATEGY</Tag>
-		<English>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</English>
-		<French>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</French>
-		<German>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</German>
-		<Italian>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</Italian>
-		<Spanish>[COLOR_BUILDING_TEXT]West Point[COLOR_REVERT]  resets the [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] threshold when a [COLOR_UNIT_TEXT]Great General[COLOR_REVERT] dies.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_WEST_POINT_HELP</Tag>
-		<English>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</English>
-		<French>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</French>
-		<German>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</German>
-		<Italian>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Italian>
-		<Spanish>[ICON_BULLET]Great General threshold is reset when one of your Generals dies in battle</Spanish>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDING_PUEBLO_BONITO</Tag>
 		<English>Pueblo Bonito</English>
 		<French>Pueblo Bonito</French>

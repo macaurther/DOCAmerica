@@ -227,6 +227,7 @@
 			<Civilopedia>TXT_KEY_BONUS_HORSE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_RUSH</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_HORSE</ArtDefineTag>
+			<TechReveal>TECH_RIDING</TechReveal>
 			<TechCityTrade>TECH_PASTORALISM</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -583,7 +584,7 @@
 			<Civilopedia>TXT_KEY_BONUS_CLAM_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CLAM</ArtDefineTag>
-			<TechReveal>TECH_SHALLOW_FISHING</TechReveal>
+			<TechReveal>TECH_DIVING</TechReveal>
 			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -694,7 +695,7 @@
 			<Civilopedia>TXT_KEY_BONUS_CRAB_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_CRAB</ArtDefineTag>
-			<TechReveal>TECH_SHALLOW_FISHING</TechReveal>
+			<TechReveal>TECH_DIVING</TechReveal>
 			<TechPlayerTrade>TECH_BIOLOGY</TechPlayerTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
@@ -1425,7 +1426,7 @@
 			<Civilopedia>TXT_KEY_BONUS_JADE_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_JADE</ArtDefineTag>
-			<TechReveal>TECH_SPIRITUALISM</TechReveal>
+			<TechReveal>TECH_KNAPPING</TechReveal>
 			<TechCityTrade>TECH_MASONRY</TechCityTrade>
 			<TechObsolete>TECH_SYNTHETICS</TechObsolete>
 			<YieldChanges>
@@ -1475,7 +1476,7 @@
 			<Civilopedia>TXT_KEY_BONUS_OBSIDIAN_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_OBSIDIAN</ArtDefineTag>
-			<TechReveal>TECH_SPIRITUALISM</TechReveal>
+			<TechReveal>TECH_KNAPPING</TechReveal>
 			<TechCityTrade>TECH_MINING</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1514,7 +1515,7 @@
 			<Civilopedia>TXT_KEY_BONUS_PEARL_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_PEARL</ArtDefineTag>
-			<TechReveal>TECH_SHALLOW_FISHING</TechReveal>
+			<TechReveal>TECH_DIVING</TechReveal>
 			<TechObsolete>TECH_SYNTHETICS</TechObsolete>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
@@ -1631,7 +1632,7 @@
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_SEAL</ArtDefineTag>
 			<TechReveal>TECH_TRAPPING</TechReveal>
-			<TechCityTrade>TECH_SAILING</TechCityTrade>
+			<TechCityTrade>TECH_DUGOUTS</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>1</iYieldChange>
 				<iYieldChange>0</iYieldChange>
@@ -1865,7 +1866,7 @@
 			<Civilopedia>TXT_KEY_BONUS_TIMBER_PEDIA</Civilopedia>
 			<BonusClassType>BONUSCLASS_GENERAL</BonusClassType>
 			<ArtDefineTag>ART_DEF_BONUS_TIMBER</ArtDefineTag>
-			<TechCityTrade>TECH_SAILING</TechCityTrade>
+			<TechCityTrade>TECH_DUGOUTS</TechCityTrade>
 			<YieldChanges>
 				<iYieldChange>0</iYieldChange>
 				<iYieldChange>2</iYieldChange>

@@ -19,13 +19,6 @@ def mountVernonEffect(unit, iPlayer):
 			if iGreatPerson >= 0:
 				player(iPlayer).createGreatPeople(iGreatPerson, False, False, city.getX(), city.getY())
 
-# West Point effect: Great General threshold is reset when one of your Greneals dies in battle
-@handler("combatResult")
-def westPointEffect(winningUnit, losingUnit):
-	if player(losingUnit).isHasBuildingEffect(iWestPoint):
-		if any(infos.promotion(iPromotion).isLeader() and losingUnit.isHasPromotion(iPromotion) for iPromotion in infos.promotions()):
-			player(losingUnit).restoreGeneralThreshold()
-
 # Empire State Building effect: +1 Gold per population
 @handler("cityGrowth")
 def empireStateBuildingOnGrowth(city):

@@ -540,7 +540,6 @@
 			<iConquestProb>80</iConquestProb>
 			<iAsset>2</iAsset>
 			<iPower>3</iPower>
-			<iGreatPeopleRateModifier>25</iGreatPeopleRateModifier>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<ConstructSound>AS2D_BUILD_TANNERY</ConstructSound>
 			<ObsoleteSafeCommerceChanges>
@@ -562,6 +561,10 @@
 					<UnitCombatType>UNITCOMBAT_ARCHER</UnitCombatType>
 					<iExperience>2</iExperience>
 				</UnitCombatFreeExperience>
+				<UnitCombatFreeExperience>
+					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
+					<iExperience>2</iExperience>
+				</UnitCombatFreeExperience>
 			</UnitCombatFreeExperiences>
 			<BonusHappinessChanges>
 				<BonusHappinessChange>
@@ -575,12 +578,6 @@
 					<iHealthChange>1</iHealthChange>
 				</BonusHealthChange>
 			</BonusHealthChanges>
-			<UnitCombatFreeExperiences>
-				<UnitCombatFreeExperience>
-					<UnitCombatType>UNITCOMBAT_RECON</UnitCombatType>
-					<iExperience>2</iExperience>
-				</UnitCombatFreeExperience>
-			</UnitCombatFreeExperiences>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_GROWTH</FlavorType>
@@ -1072,7 +1069,7 @@
 			<Strategy>TXT_KEY_BUILDING_BATH_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_BATH</ArtDefineTag>
-			<PrereqTech>TECH_MEDICINE</PrereqTech>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -1118,7 +1115,7 @@
 			<Strategy>TXT_KEY_BUILDING_TEOTIHUACAN_TEMAZCAL_STRATEGY</Strategy>
 			<Advisor>ADVISOR_GROWTH</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_TEOTIHUACAN_TEMAZCAL</ArtDefineTag>
-			<PrereqTech>TECH_MEDICINE</PrereqTech>
+			<PrereqTech>TECH_CONSTRUCTION</PrereqTech>
 			<ObsoleteTech>TECH_MEDIEVAL_CULTURE</ObsoleteTech>
 			<iCost>80</iCost>
 			<iConquestProb>70</iConquestProb>
@@ -2697,7 +2694,7 @@
 					<iProductionModifier>25</iProductionModifier>
 				</DomainProductionModifier>
 			</DomainProductionModifiers>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_ARMOURY</ConstructSound>
 			<BuildingClassNeededs>
 				<BuildingClassNeeded>
 					<BuildingClassType>BUILDINGCLASS_BARRACKS</BuildingClassType>
@@ -3154,7 +3151,7 @@
 			<Strategy>TXT_KEY_BUILDING_CUSTOMS_HOUSE_STRATEGY</Strategy>
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CUSTOMS_HOUSE</ArtDefineTag>
-			<PrereqTech>TECH_TARIFFS</PrereqTech>
+			<PrereqTech>TECH_POSTAL_SERVICE</PrereqTech>
 			<bWater>1</bWater>
 			<iCost>180</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -3727,7 +3724,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_JAIL</ArtDefineTag>
 			<FreeStartEra>ERA_MODERN</FreeStartEra>
-			<PrereqTech>TECH_IMPERIALISM</PrereqTech>
+			<PrereqTech>TECH_DOCTRINE</PrereqTech>
 			<iCost>120</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -4270,7 +4267,7 @@
 					<iProductionModifier>50</iProductionModifier>
 				</DomainProductionModifier>
 			</DomainProductionModifiers>
-			<ConstructSound>AS2D_BUILD_BARRACKS</ConstructSound>
+			<ConstructSound>AS2D_BUILD_MILITARY_ACADEMY</ConstructSound>
 			<Flavors>
 				<Flavor>
 					<FlavorType>FLAVOR_MILITARY</FlavorType>
@@ -7429,7 +7426,7 @@
 			<Advisor>ADVISOR_ECONOMY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_CENTRAL_BANK</ArtDefineTag>
 			<MovieDefineTag>ART_DEF_MOVIE_CENTRAL_BANK</MovieDefineTag>
-			<PrereqTech>TECH_BONDS</PrereqTech>
+			<PrereqTech>TECH_FREE_MARKET</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_MERCHANT</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>1</iGreatPeopleRateChange>
 			<iCost>500</iCost>
@@ -8302,7 +8299,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_LA_FORTALEZA</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_TREATIES</PrereqTech>
+			<PrereqTech>TECH_OFFICIALS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>
@@ -8808,47 +8805,6 @@
 			</Flavors>
 		</BuildingInfo>
 		<BuildingInfo>
-			<BuildingClass>BUILDINGCLASS_WEST_POINT</BuildingClass>
-			<Type>BUILDING_WEST_POINT</Type>
-			<Description>TXT_KEY_BUILDING_WEST_POINT</Description>
-			<Civilopedia>TXT_KEY_BUILDING_WEST_POINT_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_BUILDING_WEST_POINT_STRATEGY</Strategy>
-			<Help>TXT_KEY_BUILDING_WEST_POINT_HELP</Help>
-			<Advisor>ADVISOR_MILITARY</Advisor>
-			<ArtDefineTag>ART_DEF_BUILDING_WEST_POINT</ArtDefineTag>
-			<PrereqTech>TECH_REGIMENTS</PrereqTech>
-			<GreatPeopleUnitClass>UNITCLASS_GREAT_STATESMAN</GreatPeopleUnitClass>
-			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
-			<bTeamShare>1</bTeamShare>
-			<bNukeImmune>1</bNukeImmune>
-			<iAIWeight>200</iAIWeight>
-			<iCost>600</iCost>
-			<iHurryCostModifier>100</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iConquestProb>100</iConquestProb>
-			<iAsset>12</iAsset>
-			<iPower>8</iPower>
-			<fVisibilityPriority>1.0</fVisibilityPriority>
-			<ObsoleteSafeCommerceChanges>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>6</iCommerce>
-			</ObsoleteSafeCommerceChanges>
-			<CommerceChangeDoubleTimes>
-				<iCommerce>0</iCommerce>
-				<iCommerce>0</iCommerce>
-				<iCommerce>1000</iCommerce>
-			</CommerceChangeDoubleTimes>
-			<ConstructSound>AS2D_BUILD_STONEHENGE</ConstructSound>
-			<Flavors>
-				<Flavor>
-					<FlavorType>FLAVOR_MILITARY</FlavorType>
-					<iFlavor>10</iFlavor>
-				</Flavor>
-			</Flavors>
-		</BuildingInfo>
-		<BuildingInfo>
 			<BuildingClass>BUILDINGCLASS_FORT_MCHENRY</BuildingClass>
 			<Type>BUILDING_FORT_MCHENRY</Type>
 			<Description>TXT_KEY_BUILDING_FORT_MCHENRY</Description>
@@ -8857,7 +8813,7 @@
 			<Advisor>ADVISOR_MILITARY</Advisor>
 			<ArtDefineTag>ART_DEF_BUILDING_FORT_MCHENRY</ArtDefineTag>
 			<MaxStartEra>ERA_INDUSTRIAL</MaxStartEra>
-			<PrereqTech>TECH_TARIFFS</PrereqTech>
+			<PrereqTech>TECH_PHYSICS</PrereqTech>
 			<GreatPeopleUnitClass>UNITCLASS_GREAT_ARTIST</GreatPeopleUnitClass>
 			<iGreatPeopleRateChange>2</iGreatPeopleRateChange>
 			<bTeamShare>1</bTeamShare>

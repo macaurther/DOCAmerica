@@ -7198,6 +7198,23 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 		szHelpText.append(GC.getCivicInfo(eCivic).getDescription());
 	}
 
+	// MacAurther: Culture groups
+	if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_NATIVE)
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_NATIVE"));
+	}
+	else if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_COLONY)
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_COLONY"));
+	}
+	else if (GC.getCivicInfo(eCivic).getCultureGroup() == CULTURE_GROUP_NATION)
+	{
+		szHelpText.append(NEWLINE);
+		szHelpText.append(gDLL->getText("TXT_KEY_CIVIC_CULTURE_GROUP_NATION"));
+	}
+
 	if (!bCivilopediaText)
 	{
 		if (!bPlayerContext || !(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canDoCivics(eCivic)))
@@ -8286,6 +8303,23 @@ void CvGameTextMgr::setTechTradeHelp(CvWStringBuffer &szBuffer, TechTypes eTech,
 	if (bTreeInfo && (NO_TECH != eFromTech))
 	{
 		buildTechTreeString(szBuffer, eTech, bPlayerContext, eFromTech);
+	}
+
+	// MacAurther: Culture groups
+	if (GC.getTechInfo(eTech).getCultureGroup() == CULTURE_GROUP_NATIVE)
+	{
+		szTempBuffer.Format( SETCOLR L"\nCan only be researched by Natives" ENDCOLR , TEXT_COLOR("COLOR_PLAYER_ORANGE"));
+		szBuffer.append(szTempBuffer);
+	}
+	else if (GC.getTechInfo(eTech).getCultureGroup() == CULTURE_GROUP_COLONY)
+	{
+		szTempBuffer.Format( SETCOLR L"\nCan only be researched by Colonies" ENDCOLR , TEXT_COLOR("COLOR_PLAYER_ORANGE"));
+		szBuffer.append(szTempBuffer);
+	}
+	else if (GC.getTechInfo(eTech).getCultureGroup() == CULTURE_GROUP_NATION)
+	{
+		szTempBuffer.Format( SETCOLR L"\nCan only be researched by Nations" ENDCOLR , TEXT_COLOR("COLOR_PLAYER_ORANGE"));
+		szBuffer.append(szTempBuffer);
 	}
 
 	//	Obsolete Buildings

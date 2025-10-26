@@ -211,7 +211,7 @@
 		<BuildInfo>
 			<Type>BUILD_WHALING_BOATS</Type>
 			<Description>TXT_KEY_BUILD_WHALING_BOATS</Description>
-			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<PrereqTech>TECH_SEAFARING</PrereqTech>
 			<iTime>0</iTime>
 			<bKill>1</bKill>
 			<ImprovementType>IMPROVEMENT_WHALING_BOATS</ImprovementType>

@@ -556,7 +556,7 @@ def spawnTribeDefenders(pPlot, iAttacker):
 
 		makeUnits(slot(iIndigenous), iUnit, pPlot, 1, UnitAITypes.UNITAI_SIT_FOREVER)
 	
-	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='SND_UNITCAPTURE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
+	message(iAttacker, 'TXT_KEY_TRIBE_DEFENDERS', sound='SND_GOODY_HOSTILE', event=1, button=infos.unit(iUnit).getButton(), color=7, location=pPlot)
 	pPlot.setTribeStoredUnits(0)
 
 @handler("unitPillage")

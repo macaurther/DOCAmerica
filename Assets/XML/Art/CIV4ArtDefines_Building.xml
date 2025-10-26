@@ -1728,16 +1728,6 @@
 			<Button>Art/Interface/Buttons/Wonders/Monticello.dds</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
-			<Type>ART_DEF_BUILDING_WEST_POINT</Type>
-			<LSystem>LSYSTEM_2x4</LSystem>
-			<bAnimated>0</bAnimated>
-			<fScale>1.4</fScale>
-			<fInterfaceScale>0.5</fInterfaceScale>
-			<NIF>Art/Structures/Buildings/WestPoint/WestPoint.nif</NIF>
-			<KFM/>
-			<Button>Art/Interface/Buttons/Wonders/WestPoint.dds</Button>
-		</BuildingArtInfo>
-		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_FORT_MCHENRY</Type>
 			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>

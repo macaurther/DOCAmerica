@@ -75,7 +75,7 @@
 			<Type>CORPORATION_CEREAL_INDUSTRY</Type>
 			<Description>TXT_KEY_CORPORATION_CEREAL_INDUSTRY</Description>
 			<Civilopedia>TXT_KEY_CORPORATION_CEREAL_INDUSTRY_PEDIA</Civilopedia>
-			<TechPrereq>TECH_TARIFFS</TechPrereq>
+			<TechPrereq>TECH_PIONEERING</TechPrereq>
 			<FreeUnitClass>NONE</FreeUnitClass>
 			<iSpreadFactor>200</iSpreadFactor>
 			<iSpreadCost>50</iSpreadCost>

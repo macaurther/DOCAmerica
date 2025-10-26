@@ -11,6 +11,7 @@ from Collapse import completeCollapse
 from Popups import popup
 
 import Logging as log
+import history
 
 import BugCore
 import CvScreensInterface
@@ -321,6 +322,43 @@ def preserveCivilizationAttributes(iPlayer):
 
 def getBirth(iCiv):
 	return next(birth for birth in data.births if birth.iCiv == iCiv)
+
+
+# MacAurther TODO: Clean this up, maybe make AI able to spawn at sea
+# Colonists - Europeans spawn at sea
+dColonistSpawns = CivDict({
+iNorse :		[dBirth[iNorse], tColonistReykjavik, [iColonistSettle]],
+iSpain : 		[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
+iPortugal : 	[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSettle, iColonistExplore]],
+iEngland : 		[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 
+iFrance :		[dBirth[iFrance], tColonistQuebec, [iColonistSettle, iColonistSupport]],
+iNetherlands : 	[dBirth[iNetherlands], tColonistNewNetherlands, [iColonistSettle, iColonistSupport]],
+iRussia : 		[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]],
+})
+
+def giveColonists(iPlayer):
+	pPlayer = player(iPlayer)
+	pTeam = team(iPlayer)
+	iCiv = civ(iPlayer)
+	
+	# MacAurther: This covers starting European colonists and later colonists as well
+	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dColonistSpawns:
+		if pPlayer.isHuman():
+			tPlot = dColonistSpawns[iCiv][1][0]
+		else:
+			# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
+			tPlot = dColonistSpawns[iCiv][1][1]
+		
+		# European starter units spawn on edge of map at Capital's Y value (Not Using because AI can't handle it on spawn)
+		'''tPlotX = iWorldX - 1
+		if iCiv == iRussia:
+			tPlotX = 0
+		tPlotY = dCapitals[iCiv][1]
+		tPlot = (tPlotX, tPlotY)'''
+		
+		for iRole in dColonistSpawns[iCiv][2]:
+			units = createRoleUnit(iPlayer, tPlot, iRole, 1)
+			#units.promotion(infos.type("PROMOTION_MERCENARY"))
 	
 
 class Birth(object):
@@ -1024,13 +1062,6 @@ class Birth(object):
 			self.bFlip = True
 	
 	def flippedArea(self):
-		if self.iCiv == iEngland and not self.isHuman():
-			area = plots.birth(self.iPlayer) + plots.region(rBritain).where(lambda p: not p.isOwned() or is_minor(p.getOwner()))
-			return area.unique()
-		
-		if self.iCiv == iRussia and (player(iRussia).isHuman() or player(iRus).isHuman()):
-			return plots.birth(self.iPlayer).without(plots.rectangle(tNovgorod))
-	
 		return self.isIndependence() and self.area or plots.birth(self.iPlayer)
 	
 	def flip(self):

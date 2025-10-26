@@ -299,8 +299,7 @@ class CvTechChooser:
 		for iCivic in xrange(gc.getNumCivicInfos()):
 			iTech = gc.getCivicInfo(iCivic).getTechPrereq()
 			if iTech > -1:
-				if player.isCivicValid(iCivic):		# MacAurther: Don't show Civics to players who can't use them
-					self.TechEffects[iTech].append(("Civic", iCivic))
+				self.TechEffects[iTech].append(("Civic", iCivic))
 
 		# Corporations
 		for iCorporation in xrange(gc.getNumCorporationInfos()):
@@ -878,19 +877,22 @@ class CvTechChooser:
 				screen.setPanelColor(szTechBox, 200, 175, 0)
 			elif player.canEverResearch(tech):
 				if TechInfo.getEra() == 0:
-					screen.setPanelColor(szTechBox, 40, 100, 35)
+					screen.setPanelColor(szTechBox, 158, 133, 72)
 				if TechInfo.getEra() == 1:
-					screen.setPanelColor(szTechBox, 150, 100, 35)
+					screen.setPanelColor(szTechBox, 103, 47, 132)
 				if TechInfo.getEra() == 2:
-					screen.setPanelColor(szTechBox, 80, 70, 60)
+					screen.setPanelColor(szTechBox, 38, 66, 105)
 				if TechInfo.getEra() == 3:
-					screen.setPanelColor(szTechBox, 40, 40, 115)
+					screen.setPanelColor(szTechBox, 120, 141, 109)
 				if TechInfo.getEra() == 4:
-					screen.setPanelColor(szTechBox, 100, 100, 100)
+					screen.setPanelColor(szTechBox, 165, 50, 45)
 				if TechInfo.getEra() == 5:
-					screen.setPanelColor(szTechBox, 80, 40, 100)
+					screen.setPanelColor(szTechBox, 94, 99, 105)
 				if TechInfo.getEra() == 6:
-					screen.setPanelColor(szTechBox, 40, 40, 100)
+					screen.setPanelColor(szTechBox, 72, 160, 170)
+			else:	# MacAurther: Set to black if tech is unresearchable (i.e. it's in another culture group)
+					screen.setPanelColor(szTechBox, 0, 0, 0)
+
 
 			# Progress Bars
 			szProgress = "Progress" + str(tech)

@@ -412,41 +412,45 @@ iTeotlAztec, 	iWocekiya,		iYoruba) = range(iNumPaganReligions)
 iPaganVictory = iNumReligions
 iSecularVictory = iNumReligions + 1
 
+# Culture Groups
+iNumCultureGroups = 3
+iCultureGroupNone = -1
+(iCultureGroupNative, iCultureGroupColony, iCultureGroupNation) = range(iNumCultureGroups)
+
 # corporations
 iNumCorporations = 8
 (iFurTrade, iTradingCompany, iCerealIndustry, iFishingIndustry, iTextileIndustry, iSteelIndustry, iOilIndustry, iLuxuryIndustry) = range(iNumCorporations)
 
 # initialise tech variables to unit indices from XML
 
-iNumTechs = 152
+iNumTechs = 153
 #				2				3				4				5				6				7
-(iHunting,		iLandmarks,		iIrrigation,	iLinguistics,	iCultivation,	iSpiritualism,	iShallowFishing,
-iTrapping,      iPathfinding,   iEarthworks,    iLocalization,  iCompanionPlanting,iHerbalism,  iFishing,
-iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess,
-iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iSailing,
-iSmelting,      iMasonry,       iProperty,      iArithmetics,   iCeremony,      iDivination,    iSeafaring,
-iAlloys,        iConstruction,  iMathematics,   iAstronomy,     iWriting,       iCalendar,      iTrade,
-iGeneralship,   iCement,        iAesthetics,    iScholarship,   iCodices,       iPriesthood,    iNavigation,
-iNobility,      iSubjugation,   iArtisanry,     iMedicine,      iLaw,           iEthics,        iPhilosophy,
-iMedievalTactics,iMedievalScience,iMedievalCulture,
+(iHunting,		iLandmarks,		iIrrigation,	iCultivation,	iLinguistics,	iKnapping,		iDiving,
+iTrapping,      iPathfinding,   iEarthworks,    iCompanionPlanting,iLocalization, iHerbalism,  	iFishing,
+iTanning, 		iMining, 		iPottery, 		iAgriculture, 	iPastoralism, 	iMythology, 	iDugouts,
+iSmelting,      iMasonry,       iProperty,      iArithmetics,   iCeremony,      iDivination,    iNavigation,
+iGeneralship,	iConstruction,  iMathematics,   iAstronomy,     iWriting,       iPriesthood,    iTradeRoutes,
+iAlloys,   		iCement,        iAesthetics,    iCalendar,   	iCodices,       iPhilosophy,    iSeafaring,
+iNorthEuropeAccess,iSubjugation,iArtisanry,     iScholarship,	iLaw,           iNobility,      iContact,
+iSouthEuropeAccess,iMedievalTactics,iContinuance,iMedievalScience,iStewardship,iMedievalCulture,iRiding,
 iGunpowder, 	iCompanies, 	iFinance, 		iCartography, 	iExchange, 		iReductions,	iEvangelism,
 iFirearms, 		iTriangularTrade,iExploration, 	iOptics, 		iTreaties, 		iOfficials, 	iIndoctrination,
 iFortification,	iEconomics, 	iColonization, 	iShipbuilding, 	iEducation,		iCharter, 		iIndentures,
-iCombinedArms, 	iLogistics,		iExploitation, iTimekeeping, 	iCommunity, 	iPolitics, 		iHorticulture,
+iCombinedArms, 	iLogistics,		iExploitation, 	iTimekeeping, 	iCommunity, 	iPolitics, 		iHorticulture,
 iTactics,		iCurrency,		iGeography,		iScientificMethod,iUrbanPlanning,iStatecraft,	iSocialContract,
-iReplaceableParts, iFreeMarket,	iNewspapers,	iAcademia, 		iArchitecture, 	iSociology,		iHeritage,
-iRegiments, 	iBonds,			iPostalService,	iMeteorology,	iSurveying,		iRepresentation,iIndependence,
-iMetallurgy,	iProtectionism,	iHydrology,		iPhysics,		iPioneering,	iJudiciary,		iHumanities,
+iSiberiaAccess, iFreeMarket,	iAutonomy,		iAcademia, 		iModernization,	iIndependence,	iJudiciary,		
+iReplaceableParts,iNewspapers,	iMeteorology,	iSociology,		iSurveying,		iRepresentation,iHeritage,
+iMetallurgy,	iPostalService,	iHydrology,		iPhysics,		iPioneering,	iArchitecture, 	iHumanities,
 iMachineTools, 	iThermodynamics, iEngineeing, 	iChemistry, 	iGeology,		iNationalism, 	iCivilLiberties,
 iMeasurement, 	iEngine, 		iRailroad, 		iElectricity, 	iConservation, 	iImperialism, 	iEmancipation,
 iBallistics,	iAssemblyLine,	iCombustion,	iTelegraph,		iBiology,		iLaborUnions,	iJournalism,
 iFlight,		iMacroeconomics,iInfrastructure,iRadio,			iEcology,		iPowerProjection,iPsychology,
 iAviation,		iGlobalism,		iFission,		iSynthetics,	iSocialServices,iCivilRights,	iTelevision,
-iRocketry,		iNuclearPower,	iRadar,
+iRocketry,		iNuclearPower,	iAfricaAccess,	iRadar,			iAsiaAccess,
 iMultilateralism) = range(iNumTechs)
 
 # Techs that Natives start the game with, but Europeans have to trade for
-lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing,
+lNativeTechs = [iHunting, iLandmarks, iIrrigation, iLinguistics, iCultivation, iKnapping, iDiving,
                 iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism, iFishing]
 # Techs that allow immigration in certain regions
 lImmigraitonTechs = [iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess]
@@ -534,7 +538,7 @@ iNumBonusVarieties = 10
 (iDyeCochineal, iSpicesVanilla, iGemsTurquoise, iGemsDiamonds,	iGemsEmeralds,	iSheepBlack,	iCowBrown,		iPigFurry,		iCitrusOranges, iCrabShrimp) = range(iNumBonuses, iNumBonuses + iNumBonusVarieties)
 
 # Buildings
-iNumBuildings = 210
+iNumBuildings = 209
 # Buildings (116)
 # 0				1				2				3				4				5				6				7				8				9
 (iPalace,		iChieftansHut,	iGovernorsMansion,iCapitol,		iGranary,		iQollqa,		iSmokehouse,	iLuau,			iTipi,			iTannery,		
@@ -561,13 +565,13 @@ iAcademy, 		iAdministrativeCenter, iManufactory, iArmoury, 	iMuseum, 		iStockExc
 # 0				1				2				3				4				5				6				7				8				9
 iNationalMonument,iNationalTheatre,iNationalGallery,iNationalCollege,iMilitaryAcademy,iSecretService,iIronworks,iRedCross,		iNationalPark,	iCentralBank, 	
 iGrandCentralStation,iSupremeCourt,
-# Great Wonders (47)
+# Great Wonders (46)
 # 0				1				2				3				4				5				6				7				8				9
 iFloatingGardens,iTempleOfKukulkan,iMachuPicchu,iPuebloBonito,	iSacsayhuaman,	iHueyTeocalli,	iTlachihualtepetl,iYachaywasi,	iGateOfTheSun,	iGreatGeoglyph,	
 iKalasasaya,	iPyramidOfTheSun,iSerpentMound,	iTemblequeAqueduct,iLaFortaleza,iSaoFranciscoSquare,iGuadalupeBasilica,iManzanaJesuitica,iIndendenceHall,iHospicioCabanas,
-iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iWestPoint,	iFortMcHenry,	iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	
-iEllisIsland,	iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,iHooverDam,
-iAlcatraz,		iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
+iMountVernon,	iMonticello,	iSlaterMill,	iChapultepecCastle,iFortMcHenry,iWashingtonMonument,iFaneuilHall,iStatueOfLiberty,iCentralPark,	iEllisIsland,	
+iBrooklynBridge,iChateauFrontenac,iMenloPark,	iBiltmoreEstate,iFrenchQuarter, iLeagueOfNations,iEmpireStateBuilding,iGoldenGateBridge,iHooverDam,iAlcatraz,		
+iMountRushmore,	iHollywood,		iSaltCathedral,iCristoRedentor,	iLasLajasSanctuary,iPentagon	) = range(iNumBuildings)
 
 
 iBeginWonders = iFloatingGardens # different from DLL constant because that includes national wonders
@@ -700,11 +704,16 @@ dCivGroupRegions = {
 }
 
 # Revealed Tile Lists
-lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, \
-						   rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia]
-lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, rMaryland, rAppalachia, \
-						   rCoastalPlain, rDeepSouth, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, \
-						   rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rBahia, rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia]
+lEuropeanRevealed1600AD = [rIceland, rNewFoundland, rNewEngland, rMidAtlantic, rMaryland, rCoastalPlain, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, \
+                           rVeracruz, rOaxaca, rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, \
+                           rBolivia, rMinasGerais, rChile, rUruguay, rPampas, rPatagonia] #rBaffinB, rLabradorS, rNorthAtlanticO, rGOfMexico, \
+                           #rCaribbeanS, rSouthAtlanticO, rAtlanticO]
+lEuropeanRevealed1750AD = [rGreenland, rIceland, rOntario, rQuebec, rNewFoundland, rCalifornia, rTexas, rGreatLakes, rNewEngland, rMidAtlantic, \
+                           rMaryland, rAppalachia, rCoastalPlain, rDeepSouth, rFlorida, rBajaCalifornia, rSierraMadres, rBajio, rVeracruz, rOaxaca, \
+                           rYucatan, rMesoamerica, rCaribbean, rColombia, rEcuador, rVenezuela, rGuyana, rPeru, rBolivia, rBahia, \
+                           rMinasGerais, rMatoGrosso, rParana, rChile, rParaguay, rUruguay, rChaco, rCuyo, rPampas, rPatagonia]
+                           #rArcticO, rBaffinB, rNorthwestPassage, rHudsonB, rLabradorS,	rNorthAtlanticO, rGOfMexico, rCaribbeanS, rSouthAtlanticO, rSouthPacificO, \
+						   #rNorthPacificO, rGOfCalifornia, rGOfAlaska, rBeringS]
 lEuropeanRevealed1850AD = lWest
 
 

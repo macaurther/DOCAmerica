@@ -273,7 +273,7 @@
 			<Description>TXT_KEY_CIVIC_FIRST_NATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_FIRST_NATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_FIRST_NATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_JUDICIARY</TechPrereq>
+			<TechPrereq>TECH_CONTACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/FirstNation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<Upkeep>UPKEEP_MEDIUM</Upkeep>
@@ -423,8 +423,7 @@
 			<Description>TXT_KEY_CIVIC_GUILDS</Description>
 			<Civilopedia>TXT_KEY_CIVIC_GUILDS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_GUILDS_STRATEGY</Strategy>
-			<Help>TXT_KEY_CIVIC_GUILDS_HELP</Help>
-			<TechPrereq>TECH_MEDIEVAL_TACTICS</TechPrereq>
+			<TechPrereq>TECH_ARTISANRY</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Guilds.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -535,7 +534,7 @@
 			<Description>TXT_KEY_CIVIC_MINDALAES</Description>
 			<Civilopedia>TXT_KEY_CIVIC_MINDALAES_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_MINDALAES_STRATEGY</Strategy>
-			<TechPrereq>TECH_TRADE</TechPrereq>
+			<TechPrereq>TECH_TRADE_ROUTES</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Merchants.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -573,7 +572,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_DEPENDENCY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DEPENDENCY_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_DEPENDENCY_HELP</Help>
-			<TechPrereq>TECH_MEDIEVAL_SCIENCE</TechPrereq>
+			<TechPrereq>TECH_CONTACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Dependency.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -591,7 +590,7 @@
 			<Description>TXT_KEY_CIVIC_TOURISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_TOURISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_TOURISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_REDUCTIONS</TechPrereq>
+			<TechPrereq>TECH_RIDING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Tourism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -758,7 +757,7 @@
 			<Description>TXT_KEY_CIVIC_ACCULTURATION</Description>
 			<Civilopedia>TXT_KEY_CIVIC_ACCULTURATION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ACCULTURATION_STRATEGY</Strategy>
-			<TechPrereq>TECH_MEDIEVAL_CULTURE</TechPrereq>
+			<TechPrereq>TECH_CONTACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Acculturation.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -773,7 +772,7 @@
 			<Description>TXT_KEY_CIVIC_GHOST_DANCE</Description>
 			<Civilopedia>TXT_KEY_CIVIC_GHOST_DANCE_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_GHOST_DANCE_STRATEGY</Strategy>
-			<TechPrereq>TECH_GUNPOWDER</TechPrereq>
+			<TechPrereq>TECH_RIDING</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Sovereignty.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -927,7 +926,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_ANCESTRAL_LANDS_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_ANCESTRAL_LANDS_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_ANCESTRAL_LANDS_HELP</Help>
-			<TechPrereq>TECH_HUMANITIES</TechPrereq>
+			<TechPrereq>TECH_CONTACT</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/AncestralLands.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>0</iCultureGroup>
@@ -1787,7 +1786,7 @@
 			<Civilopedia>TXT_KEY_CIVIC_INTERVENTION_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_INTERVENTION_STRATEGY</Strategy>
 			<Help>TXT_KEY_CIVIC_INTERVENTION_HELP</Help>
-			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
+			<TechPrereq>TECH_DOCTRINE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Intervention.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>1</iCultureGroup>
@@ -1936,7 +1935,7 @@
 			<Description>TXT_KEY_CIVIC_DICTATOR</Description>
 			<Civilopedia>TXT_KEY_CIVIC_DICTATOR_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_DICTATOR_STRATEGY</Strategy>
-			<TechPrereq>TECH_IMPERIALISM</TechPrereq>
+			<TechPrereq>TECH_DOCTRINE</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Dictatorship.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -2029,7 +2028,7 @@
 			<Description>TXT_KEY_CIVIC_KLEPTOCRACY</Description>
 			<Civilopedia>TXT_KEY_CIVIC_KLEPTOCRACY_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_KLEPTOCRACY_STRATEGY</Strategy>
-			<TechPrereq>TECH_BONDS</TechPrereq>
+			<TechPrereq>TECH_FREE_MARKET</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Kleptocracy.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>
@@ -2388,7 +2387,7 @@
 			<Description>TXT_KEY_CIVIC_PROTECTIONISM</Description>
 			<Civilopedia>TXT_KEY_CIVIC_PROTECTIONISM_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_CIVIC_PROTECTIONISM_STRATEGY</Strategy>
-			<TechPrereq>TECH_TARIFFS</TechPrereq>
+			<TechPrereq>TECH_NATIONALISM</TechPrereq>
 			<Button>,Art/Interface/Buttons/Civics/Protectionism.dds</Button>
 			<iAnarchyLength>1</iAnarchyLength>
 			<iCultureGroup>2</iCultureGroup>

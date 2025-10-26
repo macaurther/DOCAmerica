@@ -430,7 +430,7 @@
 	<ElementType name="Identifier" content="textOnly"/>
 	<ElementType name="Region" content="textOnly"/>
 	<ElementType name="Impact" content="textOnly"/>
-	<ElementType name="CultureGroup" content="textOnly" dt:type="int"/>
+	<ElementType name="CultureGroup" content="textOnly" dt:type="int"/> <!-- FoB -->
 	<ElementType name="StartingYear" content="textOnly" dt:type="int"/>
 	<ElementType name="LoadingTime" content="textOnly" dt:type="int"/>
 	<ElementType name="LoadingTimes" content="eltOnly">

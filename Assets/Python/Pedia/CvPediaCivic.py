@@ -70,15 +70,8 @@ class CvPediaCivic:
 		screen.enableSelect(panel, False)
 		screen.appendListBoxString(panel, u"<font=4b>" + CivicInfo.getDescription() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 		screen.appendListBoxString(panel, u"<font=3>" + CategoryInfo.getDescription() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		
-		# MacAurther: Add info on who can enable this Civics (Natives, Colonies, or Nations)
-		iCultureGroup = CivicInfo.getCultureGroup();
-		if iCultureGroup == 0:
-			screen.appendListBoxString(panel, u"<font=3>Natives Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		elif iCultureGroup == 1:
-			screen.appendListBoxString(panel, u"<font=3>Colonies Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-		elif iCultureGroup == 2:
-			screen.appendListBoxString(panel, u"<font=3>Nations Only</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+
+
 
 	def placeRequires(self):
 		screen = self.top.getScreen()

@@ -13,18 +13,6 @@ dRelocatedCapitals = CivDict({
 dCapitalInfrastructure = CivDict({
 })
 
-# Colonists - Europeans spawn at sea
-dColonistSpawns = CivDict({
-iNorse :		[dBirth[iNorse], tColonistReykjavik, [iColonistSettle]],
-iSpain : 		[dBirth[iSpain], tColonistCaribbean, [iColonistSettle, iColonistSupport, iColonistExplore]], 
-iPortugal : 	[dBirth[iPortugal], tColonistBrazil1, [iColonistSettle, iColonistSettle, iColonistExplore]],
-iEngland : 		[dBirth[iEngland], tColonistVirginia, [iColonistSettle, iColonistSupport]], 
-iFrance :		[dBirth[iFrance], tColonistQuebec, [iColonistSettle, iColonistSupport]],
-iNetherlands : 	[dBirth[iNetherlands], tColonistNewNetherlands, [iColonistSettle, iColonistSupport]],
-iRussia : 		[dBirth[iRussia], tColonistAlaska, [iColonistSettle, iColonistSupport]],
-})
-
-
 @handler("GameStart")
 def updateCulture():
 	for plot in plots.all():
@@ -425,32 +413,6 @@ def buildCapitalInfrastructure(iPlayer, city):
 			if iStateReligion >= 0:
 				for religiosBuilding in lReligiousBuildings:
 					city.setHasRealBuilding(religiosBuilding(iStateReligion), True)
-
-
-def giveColonists(iPlayer):
-	pPlayer = player(iPlayer)
-	pTeam = team(iPlayer)
-	iCiv = civ(iPlayer)
-	
-	# MacAurther: This covers starting European colonists and later colonists as well
-	if (pPlayer.isAlive() or (year() <= year(dBirth[iCiv]) + 1 and year() >= year(dBirth[iCiv]) - 1)) and iCiv in dColonistSpawns:
-		if pPlayer.isHuman():
-			tPlot = dColonistSpawns[iCiv][1][0]
-		else:
-			# MacAurther: Unfortunately, the AI has a hard time with spawning at sea. So they get to spawn on land
-			tPlot = dColonistSpawns[iCiv][1][1]
-		
-		# European starter units spawn on edge of map at Capital's Y value (Not Using because AI can't handle it on spawn)
-		'''tPlotX = iWorldX - 1
-		if iCiv == iRussia:
-			tPlotX = 0
-		tPlotY = dCapitals[iCiv][1]
-		tPlot = (tPlotX, tPlotY)'''
-		
-		for iRole in dColonistSpawns[iCiv][2]:
-			units = createRoleUnit(iPlayer, tPlot, iRole, 1)
-			#units.promotion(infos.type("PROMOTION_MERCENARY"))
-
 
 def giveRaiders(iCiv):
 	pPlayer = player(iCiv)

@@ -6134,7 +6134,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqTech>TECH_TACTICS</PrereqTech>
 			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>115</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -6240,7 +6240,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqTech>TECH_TACTICS</PrereqTech>
 			<PrereqBuilding>BUILDING_BARRACKS</PrereqBuilding>
 			<iCost>115</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -7559,7 +7559,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqTech>TECH_TACTICS</PrereqTech>
 			<iCost>100</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -7767,7 +7767,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_REGIMENTS</PrereqTech>
+			<PrereqTech>TECH_TACTICS</PrereqTech>
 			<iCost>80</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -8688,7 +8688,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_IMPERIALISM</PrereqTech>
+			<PrereqTech>TECH_DOCTRINE</PrereqTech>
 			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>150</iCost>
@@ -8818,7 +8818,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_IMPERIALISM</PrereqTech>
+			<PrereqTech>TECH_DOCTRINE</PrereqTech>
 			<PrereqBuilding>BUILDING_STABLE</PrereqBuilding>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>150</iCost>
@@ -8953,7 +8953,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_IMPERIALISM</PrereqTech>
+			<PrereqTech>TECH_DOCTRINE</PrereqTech>
 			<BonusType>BONUS_HORSE</BonusType>
 			<iCost>150</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
@@ -10147,7 +10147,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<PrereqTech>TECH_SEAFARING</PrereqTech>
+			<PrereqTech>TECH_NAVIGATION</PrereqTech>
 			<iCost>30</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -10225,7 +10225,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_SAILING</PrereqTech>
+			<PrereqTech>TECH_DUGOUTS</PrereqTech>
 			<iCost>25</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -10325,7 +10325,7 @@
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
-			<PrereqTech>TECH_NAVIGATION</PrereqTech>
+			<PrereqTech>TECH_SEAFARING</PrereqTech>
 			<iCost>60</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -10430,7 +10430,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<PrereqTech>TECH_SAILING</PrereqTech>
+			<PrereqTech>TECH_DUGOUTS</PrereqTech>
 			<iCost>25</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>
@@ -10508,7 +10508,7 @@
 					<bBuild>1</bBuild>
 				</Build>
 			</Builds>
-			<PrereqTech>TECH_SAILING</PrereqTech>
+			<PrereqTech>TECH_DUGOUTS</PrereqTech>
 			<iCost>25</iCost>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iMinAreaSize>20</iMinAreaSize>

@@ -1,6 +1,7 @@
 from Core import *
 
 from Events import events, handler
+import GreatPeople as gp
 
 
 ### Unit spawn functions ###
@@ -112,6 +113,7 @@ class Civilization(object):
 		self.sLeaderName = kwargs.get("sLeaderName")
 		
 		self.techs = kwargs.get("techs", techs.none())
+		self.extraTechs = kwargs.get("extraTechs", techs.none())
 	
 	@property
 	def player(self):
@@ -158,9 +160,25 @@ class Civilization(object):
 		
 		if self.techs:
 			for iTech in self.techs:
+				iTechCultureGroup = gc.getTechInfo(iTech).getCultureGroup()
+				iCivCultureGroup = gc.getCivilizationInfo(self.iCiv).getCultureGroup()
+				# MacAurther: do give native and colony techs that are not repeatable to nations
+				if iCivCultureGroup == iCultureGroupNation and not gc.getTechInfo(iTech).isRepeat():
+					pass
+				# MacAurther: Don't give native techs to natives, they have to research them, unless explicitly stated
+				elif iCivCultureGroup == iCultureGroupNative and iTechCultureGroup == iCultureGroupNative:
+					continue
+				# MacAurther: otherwise don't give tech here if it doesn't belong to a civ's culture group
+				elif not iTechCultureGroup in [iCultureGroupNone, iCivCultureGroup]:
+					continue
 				self.team.setHasTech(iTech, True, self.player.getID(), False, False)
-			
-			self.player.setStartingEra(self.player.getCurrentEra())
+
+		if self.extraTechs:		# Extra techs are where things like culture group restrictions can be overridden
+			for iTech in self.extraTechs:
+				self.team.setHasTech(iTech, True, self.player.getID(), False, False)
+
+
+		self.player.setStartingEra(self.player.getCurrentEra())
 		
 		for iCivic in self.lCivics:
 			self.player.setCivics(infos.civic(iCivic).getCivicOptionType(), iCivic)
@@ -195,91 +213,106 @@ lCivilizations = [
 		iTeotihuacan,
 		iGold=50,
 		lCivics=[iTlacotin1, iRedistribution1],
-		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology).without(iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
+		techs=techs.column(2).including(iTanning, iPottery, iAgriculture, iMining, iSmelting, iMythology),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
 	Civilization(
 		iTiwanaku,
 		iGold=50,
-		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining, iMasonry).without(iHunting, iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
+		techs=techs.column(2).including(iAgriculture, iPottery, iPastoralism, iMythology, iArithmetics, iMining, iMasonry),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
 	Civilization(
 		iWari,
 		iGold=100,
 		lCivics=[iChief1, iClans1, iMita1, iRedistribution1],
-		techs=techs.column(4).including(iMasonry, iArithmetics).without(iTrapping, iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
+		techs=techs.column(3).including(iMasonry, iArithmetics),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
 	Civilization(
 		iMississippi,
 		iGold=25,
 		lCivics=[iChief1, iClans1, iSacrifice1],
-		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iSailing, iTanning, iDivination, iSeafaring).without(iLandmarks, iPathfinding, iLinguistics, iLocalization, *lImmigraitonTechs)
+		techs=techs.column(2).including(iPottery, iAgriculture, iMythology, iDugouts, iTanning, iDivination, iSeafaring),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iDiving, iFishing),
 	),
 	Civilization(
 		iPuebloan,
 		iGold=50,
-		techs=techs.column(4).including(iMasonry).without(iTrapping, iLinguistics, iLocalization, iHerbalism, iShallowFishing, iFishing, *lImmigraitonTechs)
+		techs=techs.column(3).including(iMasonry),
+		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting),
 	),
 	Civilization(
 		iMuisca,
 		iGold=200,
-		techs=techs.column(4).including(iAlloys, iMasonry, iSmelting).without(iTrapping, iEarthworks, iLinguistics, iLocalization, iShallowFishing, iFishing, *lImmigraitonTechs)
+		techs=techs.column(3).including(iMasonry, iSmelting),
+		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCultivation, iCompanionPlanting, iKnapping),
 	),
 	Civilization(
 		iNorse,
 		iGold=50,
 		lCivics=[iExpedition2, iSerfdom2],
-		techs=techs.column(9).without(iLandmarks, iIrrigation, iLinguistics, iCultivation, iSpiritualism, iShallowFishing, iTrapping, iPathfinding, iEarthworks, iLocalization, iCompanionPlanting, iHerbalism, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(8),
+		extraTechs=techs.column(0).including(iNorthEuropeAccess),
 	),
 	Civilization(
 		iChimu,
 		iGold=300,
 		lCivics=[iDespot1, iMindalaes1],
-		techs=techs.column(5).including(iConstruction, iTrade).without(iHunting, iTrapping, *lImmigraitonTechs)
+		techs=techs.column(4).including(iConstruction, iTradeRoutes),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iCultivation, iCompanionPlanting, iDiving, iFishing),
 	),
 	Civilization(
 		iInuit,
 		iGold=25,
 		lCivics=[iHarmony1],
-		techs=techs.column(2).including(iTanning, iMythology, iSailing, iSeafaring).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iHerbalism, iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
+		techs=techs.column(2).including(iTanning, iMythology, iDugouts, iSeafaring),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iFishing),
 	),
 	Civilization(
 		iInca,
 		iGold=700,
 		lCivics=[iDespot1, iClans1, iTlacotin1, iMindalaes1],
 		lEnemies=[iWari, iTiwanaku],
-		techs=techs.column(5).including(iConstruction, iMathematics, iWriting, iTrade).without(iHunting, iTrapping, iShallowFishing, iFishing, *lImmigraitonTechs)
+		techs=techs.column(4).including(iConstruction, iMathematics, iWriting, iTradeRoutes).without(iHunting, iTrapping, iDiving, iFishing),
+		extraTechs=techs.column(0).including(iLandmarks, iPathfinding, iIrrigation, iEarthworks, iCultivation, iCompanionPlanting, iLinguistics, iLocalization),
 	),
 	Civilization(
 		iPurepecha,
 		iGold=500,
 		lCivics=[iDespot1, iTlacotin1, iRedistribution1],
-		techs=techs.column(5).including(iAlloys, iConstruction, iMathematics, iWriting).without(iTrapping, *lImmigraitonTechs)
+		techs=techs.column(4).including(iConstruction, iMathematics, iWriting),
+		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCompanionPlanting, iKnapping, iDiving, iFishing),
 	),
 	Civilization(
 		iAztecs,
 		iGold=600,
 		lCivics=[iDespot1, iTlacotin1, iRaiding1, iOrganizedReligion1],
 		lEnemies=[iTeotihuacan],
-		techs=techs.column(5).including(iWriting, iCalendar, iTrade, iPriesthood, iAlloys, iMathematics).without(iTrapping, iShallowFishing)
+		techs=techs.column(4).including(iWriting, iCalendar, iTradeRoutes, iPriesthood, iAlloys, iMathematics),
+		extraTechs=techs.column(0).including(iHunting, iLandmarks, iPathfinding, iIrrigation, iCompanionPlanting, iKnapping, iFishing),
 	),
 	Civilization(
 		iHaudenosaunee,
 		iGold=200,
 		lCivics=[iChief1, iTribalConfederacy1, iHarmony1, iIntegration1],
-		techs=techs.column(4).including(iProperty, iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, *lImmigraitonTechs)
+		techs=techs.column(3).including(iProperty, iCeremony),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization, iFishing),
 	),
 	Civilization(
 		iLakota,
 		iGold=100,
 		lCivics=[iSubsistance1, iHarmony1, iNomads1],
-		techs=techs.column(4).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks, *lImmigraitonTechs)
+		techs=techs.column(3).including(iCeremony).without(iLandmarks, iPathfinding, iIrrigation, iEarthworks),
+		extraTechs=techs.column(0).including(iHunting, iTrapping, iCompanionPlanting, iLinguistics, iLocalization),
 	),
 	Civilization(
 		iSpain,
 		iGold=500,
 		iStateReligion=iCatholicism,
 		lCivics=[iCaptains2, iExpedition2, iSerfdom2, iPlunder2, iJesuits2, iConquest2],
-		techs=techs.column(9).including(iGunpowder, iCompanies, iCartography, iEvangelism).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
+		techs=techs.column(8).including(iGunpowder, iCompanies, iCartography, iEvangelism),
+		extraTechs=techs.column(0).including(iSouthEuropeAccess),
 	),
 	Civilization(
 		iPortugal,
@@ -287,7 +320,8 @@ lCivilizations = [
 		iImmigration=10,
 		iStateReligion=iCatholicism,
 		lCivics=[iProprietors2, iAdmiralty2, iSlavery2],
-		techs=techs.column(9).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
+		techs=techs.column(8).including(iGunpowder, iCompanies, iFinance, iCartography, iExchange, iExploration, iOptics, iTriangularTrade),
+		extraTechs=techs.column(0).including(iSouthEuropeAccess),
 	),
 	Civilization(
 		iEngland,
@@ -295,7 +329,8 @@ lCivilizations = [
 		iImmigration=30,
 		iStateReligion=iProtestantism,
 		lCivics=[iProprietors2, iCharterColony2, iIndenturedServitude2, iMercantilism2, iDivineRight2, iProvidence2],
-		techs=techs.column(11).including(iShipbuilding, iCharter, iIndentures).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
+		techs=techs.column(10).including(iShipbuilding, iCharter, iIndentures),
+		extraTechs=techs.column(0).including(iNorthEuropeAccess),
 	),
 	Civilization(
 		iFrance,
@@ -303,7 +338,8 @@ lCivilizations = [
 		iImmigration=20,
 		iStateReligion=iCatholicism,
 		lCivics=[iExpedition2, iAdmiralty2, iSerfdom2, iFactory2, iJesuits2, iOutposts2],
-		techs=techs.column(11).including(iShipbuilding, iFortification).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
+		techs=techs.column(10).including(iShipbuilding, iFortification),
+		extraTechs=techs.column(0).including(iSouthEuropeAccess),
 	),
 	Civilization(
 		iNetherlands,
@@ -311,13 +347,15 @@ lCivilizations = [
 		iImmigration=15,
 		iStateReligion=iProtestantism,
 		lCivics=[iTrustees2, iTradingCompany2, iSerfdom2, iFactory2, iDivineRight2, iOutposts2],
-		techs=techs.column(11).including(iFortification, iEconomics, iShipbuilding, iEducation).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess, *lNativeTechs)
+		techs=techs.column(10).including(iFortification, iEconomics, iShipbuilding, iEducation),
+		extraTechs=techs.column(0).including(iNorthEuropeAccess),
 	),
 	Civilization(
 		iHawaii,
 		iGold=200,
 		lCivics=[iTlacotin1],
-		techs=techs.column(4).including(iSeafaring, iArithmetics, iCeremony, iAstronomy, iTrade, iNavigation).without(iHunting, iTrapping, iLandmarks, iPathfinding, iIrrigation, iEarthworks, iLinguistics, iLocalization, iCultivation, iCompanionPlanting, iSpiritualism, iHerbalism, iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess)
+		techs=techs.column(3).including(iSeafaring, iArithmetics, iCeremony, iAstronomy, iTradeRoutes, iNavigation),
+		extraTechs=techs.column(0).including(iKnapping, iDiving, iFishing, iAsiaAccess),
 	),
 	Civilization(
 		iRussia,
@@ -325,7 +363,8 @@ lCivilizations = [
 		iImmigration=20,
 		iStateReligion=iOrthodoxy,
 		lCivics=[iTrustees2, iTradingCompany2, iIndenturedServitude2, iFactory2, iProfiteering2, iOutposts2],
-		techs=techs.column(13).without(iLandmarks, iLinguistics, iPathfinding, iCultivation, iHerbalism, iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iAsiaAccess)
+		techs=techs.column(12),
+		extraTechs=techs.column(0).including(iSiberiaAccess),
 	),
 	Civilization(
 		iAmerica,
@@ -333,14 +372,14 @@ lCivilizations = [
 		iImmigration=150,
 		iStateReligion=iProtestantism,
 		lCivics=[iPlutocrats3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
-		techs=techs.column(16).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(14).without(iSouthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iHaiti,
 		iGold=100,
 		lCivics=[iSovereign3, iApprenticeship3, iAgrarianism3],
 		lEnemies=[iFrance],
-		techs=techs.column(16).without(iNorthEuropeAccess, iSouthEuropeAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(14).without(iNorthEuropeAccess, iSouthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iArgentina,
@@ -349,7 +388,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign3, iConfederacy3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
-		techs=techs.column(16).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(14).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iMexico,
@@ -358,7 +397,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign3, iCommonLaw3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
-		techs=techs.column(16).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(14).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iColombia,
@@ -367,7 +406,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
-		techs=techs.column(16).including(iJudiciary).without(iNorthEuropeAccess, iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(14).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iPeru,
@@ -376,7 +415,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iSpain],
-		techs=techs.column(16).including(iGeology).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(15).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iBrazil,
@@ -384,7 +423,7 @@ lCivilizations = [
 		iImmigration=50,
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
-		techs=techs.column(16).including(iMetallurgy, iProtectionism, iHydrology).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(15).including(iMetallurgy, iHydrology).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iVenezuela,
@@ -393,7 +432,7 @@ lCivilizations = [
 		iStateReligion=iCatholicism,
 		lCivics=[iSovereign3, iFederalism3, iSlavery3, iAgrarianism3, iProfiteering3, iHomesteads3],
 		lEnemies=[iColombia],
-		techs=techs.column(16).including(iGeology).without(iNorthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(15).without(iNorthEuropeAccess, iSiberiaAccess),
 	),
 	Civilization(
 		iCanada,
@@ -402,7 +441,7 @@ lCivilizations = [
 		iStateReligion=iProtestantism,
 		#iMasterCiv=iEngland,
 		lCivics=[iIndustrialism3, iFreeEnterprise3, iOpportunity3, iHomesteads3],
-		techs=techs.column(19).without(iSouthEuropeAccess, iAfricaAccess, iSiberiaAccess, iAsiaAccess)
+		techs=techs.column(18),
 	),
 ]
 
@@ -730,15 +769,15 @@ def createSpecificUnits(iPlayer, tile):
 			makeUnit(iPlayer, iSettler, tile)
 	elif iCiv == iAmerica:	# American UP
 		unit = makeUnit(iPlayer, iGreatStatesman, tile)
-		GP.assignGreatPersonName(unit, iPlayer, None, False)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatGeneral, tile)
-		GP.assignGreatPersonName(unit, iPlayer, None, False)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatScientist, tile)
-		GP.assignGreatPersonName(unit, iPlayer, None, False)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatMerchant, tile)
-		GP.assignGreatPersonName(unit, iPlayer, None, False)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
 		unit = makeUnit(iPlayer, iGreatArtist, tile)
-		GP.assignGreatPersonName(unit, iPlayer, None, False)
+		gp.assignGreatPersonName(unit, iPlayer, None, False)
 	elif iCiv == iColombia:
 		makeUnits(iPlayer, iAlbionLegion, tile, 5).experience(2)
 
@@ -955,7 +994,6 @@ dBuildingPreferences = {
 		iIndendenceHall: 40,
 		iMountVernon: 20,
 		iMonticello: 20,
-		iWestPoint: 20,
 		iFortMcHenry: 20,
 		iWashingtonMonument: 40,
 		iFaneuilHall: 20,

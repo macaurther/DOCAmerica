@@ -672,7 +672,7 @@
 		<element type="CivicOptionInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="iAnarchyLength" content="textOnly" dt:type="int"/>
-	<ElementType name="iCultureGroup" content="textOnly" dt:type="int"/>
+	<ElementType name="iCultureGroup" content="textOnly" dt:type="int"/> <!-- FoB -->
 	<ElementType name="iAIWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iGreatPeopleRateModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iGreatGeneralRateModifier" content="textOnly" dt:type="int"/>
